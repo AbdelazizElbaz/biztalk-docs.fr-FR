@@ -1,0 +1,35 @@
+---
+title: Envoi de journaux | Documents Microsoft
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- backing up, log shipping
+- log shipping
+ms.assetid: 25bc9724-1c99-43d0-8cd1-3ed8eaa60268
+caps.latest.revision: "15"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 5bd90e23fc99988bb134a77befe3195ca507037d
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="log-shipping"></a><span data-ttu-id="b55a9-102">Copie des journaux de transaction</span><span class="sxs-lookup"><span data-stu-id="b55a9-102">Log Shipping</span></span>
+<span data-ttu-id="b55a9-103">L'envoi de journaux offre des fonctionnalités de serveur de secours, parfois appelées « sauvegardes à chaud », ce qui réduit le temps mort en cas de défaillance du système.</span><span class="sxs-lookup"><span data-stu-id="b55a9-103">Log shipping provides standby server capabilities, sometimes called a warm backup, which reduces downtime in the event of a system failure.</span></span>  
+  
+ <span data-ttu-id="b55a9-104">En raison de la conception de la base de données distribuée de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], vous devez vous assurer de fournir un point cohérent pour la restauration des sauvegardes.</span><span class="sxs-lookup"><span data-stu-id="b55a9-104">Due to the distributed database design of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], when you produce backups you must be certain to provide a consistent point to which the backups can be restored.</span></span> <span data-ttu-id="b55a9-105">Les transactions peuvent s'étendre sur plusieurs bases de données ; si une base de données est déconnectée et doit être restaurée, toutes les bases de données associées doivent être restaurées à temps vers un seul point pour garantir que l'état du système reste cohérent.</span><span class="sxs-lookup"><span data-stu-id="b55a9-105">Transactions can span multiple databases; if one database goes offline and must be restored, then all related databases must be restored to a single point in time to ensure that the system is in a consistent state.</span></span> <span data-ttu-id="b55a9-106">Certaines bases de données ne sont pas impliquées dans les transactions distribuées.</span><span class="sxs-lookup"><span data-stu-id="b55a9-106">Not all databases participate in distributed transactions.</span></span> <span data-ttu-id="b55a9-107">Pour plus d’informations, consultez [sauvegarde et restauration des bases de données BizTalk Server](../core/backing-up-and-restoring-the-biztalk-server-databases.md).</span><span class="sxs-lookup"><span data-stu-id="b55a9-107">For more information, see [Backing Up and Restoring the BizTalk Server Databases](../core/backing-up-and-restoring-the-biztalk-server-databases.md).</span></span>  
+  
+ <span data-ttu-id="b55a9-108">Le travail de sauvegarde de BizTalk Server utilise le marquage de journal Microsoft SQL Server pour fournir un processus automatisé qui produit des jeux de sauvegarde des bases de données.</span><span class="sxs-lookup"><span data-stu-id="b55a9-108">The Backup BizTalk Server job uses Microsoft SQL Server log marking to provide an automated process that produces database backup sets.</span></span> <span data-ttu-id="b55a9-109">Ceux-ci incluent des points synchronisés utilisés lors du processus de restauration.</span><span class="sxs-lookup"><span data-stu-id="b55a9-109">These backup sets include synchronized points that are used during the restoration process.</span></span> <span data-ttu-id="b55a9-110">Lors du processus de restauration d'un jeu de bases de données, le travail de sauvegarde de BizTalk Server restaure le dernier fichier de sauvegarde du journal de chaque base de données vers une marque de journal spécifique à l'aide de l'avant-dernière marque.</span><span class="sxs-lookup"><span data-stu-id="b55a9-110">As part of the process of restoring a set of databases produced by the Backup BizTalk Server job, the last log backup file for each database is restored to a specific log mark, using the second to last mark.</span></span> <span data-ttu-id="b55a9-111">Ceci vous permet de restaurer vos bases de données dans un état cohérent et de réduire considérablement la quantité de données perdues.</span><span class="sxs-lookup"><span data-stu-id="b55a9-111">This enables you to restore your databases to a consistent state and significantly reduce the amount of data lost.</span></span> <span data-ttu-id="b55a9-112">L'avant-dernière marque du journal doit être utilisée.</span><span class="sxs-lookup"><span data-stu-id="b55a9-112">The log mark before the last one should be used.</span></span> <span data-ttu-id="b55a9-113">Même si SQL Server inclut une fonctionnalité d'envoi de journaux, vous devez utiliser uniquement la fonctionnalité d'envoi de journaux BizTalk Server lors de la sauvegarde et de la restauration des bases de données BizTalk Server.</span><span class="sxs-lookup"><span data-stu-id="b55a9-113">Although SQL Server includes a log shipping feature, you should only use the BizTalk Server log shipping feature when backing up and restoring BizTalk Server databases.</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="b55a9-114">Le modèle de récupération SQL Server pour serveur unique n'est pas pris en charge lors d'une utilisation avec les bases de données [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] car il ne sauvegarde pas le journal des transactions et ne conserve aucun enregistrement d'activité depuis la dernière sauvegarde.</span><span class="sxs-lookup"><span data-stu-id="b55a9-114">The SQL Server simple recovery model is not supported for use with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] databases because the simple recovery model does not backup the transaction log and therefore does not maintain a record of activity since the most recent backup.</span></span>  <span data-ttu-id="b55a9-115">Configurez SQL Server pour utiliser le modèle de récupération complète afin de garantir l'intégrité des données dans les jeux de sauvegarde de bases de données [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span><span class="sxs-lookup"><span data-stu-id="b55a9-115">Configure SQL Server to use the full recovery model to ensure the integrity of data in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] database backup sets.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="b55a9-116">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="b55a9-116">See Also</span></span>  
+ [<span data-ttu-id="b55a9-117">Informations avancées sur la sauvegarde et restauration</span><span class="sxs-lookup"><span data-stu-id="b55a9-117">Advanced Information About Backup and Restore</span></span>](../core/advanced-information-about-backup-and-restore1.md)

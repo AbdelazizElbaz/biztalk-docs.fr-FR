@@ -1,0 +1,1 @@
+<span data-ttu-id="a1a44-101">Gestion des partenaires commerciaux (GPC)</span><span class="sxs-lookup"><span data-stu-id="a1a44-101">Trading Partner Management (TPM)</span></span>

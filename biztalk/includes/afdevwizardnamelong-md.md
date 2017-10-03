@@ -1,0 +1,1 @@
+<span data-ttu-id="bcc9e-101">Assistant de développement de l'adaptateur WCF LOB</span><span class="sxs-lookup"><span data-stu-id="bcc9e-101">WCF LOB Adapter Development Wizard</span></span>

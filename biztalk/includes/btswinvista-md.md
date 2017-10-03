@@ -1,0 +1,1 @@
+<span data-ttu-id="cacfc-101">Windows 7</span><span class="sxs-lookup"><span data-stu-id="cacfc-101">Windows 7</span></span>

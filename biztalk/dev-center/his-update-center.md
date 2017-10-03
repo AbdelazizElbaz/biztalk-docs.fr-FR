@@ -1,0 +1,92 @@
+---
+title: "Centre de mise à jour pour Host Integration Server | Documents Microsoft"
+description: "Consultez toutes les mises à jour cumulatives et les service packs disponibles pour son et le fournisseur OLE DB pour DB2"
+author: MandiOhlinger
+manager: anneta
+ms.date: 08/10/2017
+ms.prod: biztalk-server
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.author: mandia
+ms.openlocfilehash: 56bd0740b98752dcfac0b963acf25b74e7ac94a4
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="update-center-for-host-integration-server-and-ole-db-provider-for-db2"></a><span data-ttu-id="d48f0-103">Centre de mise à jour de Host Integration Server et le fournisseur OLE DB pour DB2</span><span class="sxs-lookup"><span data-stu-id="d48f0-103">Update Center for Host Integration Server and OLE DB Provider for DB2</span></span>
+
+<span data-ttu-id="d48f0-104">Rechercher et gérer des mises à jour pour Host Integration Server (HIS) et le fournisseur Microsoft OLE DB pour DB2 (inclus dans Microsoft SQL Server Feature Packs).</span><span class="sxs-lookup"><span data-stu-id="d48f0-104">Find and manage updates for Host Integration Server (HIS), and the Microsoft OLE DB Provider for DB2 (included in Microsoft SQL Server Feature Packs).</span></span>
+
+## <a name="overview"></a><span data-ttu-id="d48f0-105">Vue d'ensemble</span><span class="sxs-lookup"><span data-stu-id="d48f0-105">Overview</span></span>
+<span data-ttu-id="d48f0-106">Cette page répertorie les dernières mises à jour pour les différentes versions de Host Integration Server et le fournisseur Microsoft OLE DB pour DB2.</span><span class="sxs-lookup"><span data-stu-id="d48f0-106">This page lists the latest updates for the different versions Host Integration Server and Microsoft OLE DB Provider for DB2.</span></span> 
+
+> [!NOTE]
+> <span data-ttu-id="d48f0-107">Le [Microsoft Lifecycle Page produit](http://support.microsoft.com/lifecycle/) indique l’état de prise en charge pour les différentes versions HIS.</span><span class="sxs-lookup"><span data-stu-id="d48f0-107">The [Microsoft Product Lifecycle Page](http://support.microsoft.com/lifecycle/) lists the supported state for the different HIS versions.</span></span>
+
+## <a name="biztalk-adapters-for-host-systems"></a><span data-ttu-id="d48f0-108">BizTalk Adapters for Host Systems</span><span class="sxs-lookup"><span data-stu-id="d48f0-108">BizTalk Adapters for Host Systems</span></span>
+<span data-ttu-id="d48f0-109">Il existe quatre adaptateurs BizTalk pour les systèmes hôtes qui sont inclus dans son :</span><span class="sxs-lookup"><span data-stu-id="d48f0-109">There are four BizTalk Adapters for Host Systems that are included with HIS:</span></span>
+
+* <span data-ttu-id="d48f0-110">Adaptateur BizTalk pour DB2</span><span class="sxs-lookup"><span data-stu-id="d48f0-110">BizTalk Adapter for DB2</span></span>
+* <span data-ttu-id="d48f0-111">Adaptateur BizTalk pour héberger des Applications</span><span class="sxs-lookup"><span data-stu-id="d48f0-111">BizTalk Adapter for Host Applications</span></span>
+* <span data-ttu-id="d48f0-112">Adaptateur BizTalk pour fichiers hôtes</span><span class="sxs-lookup"><span data-stu-id="d48f0-112">BizTalk Adapter for Host Files</span></span>
+* <span data-ttu-id="d48f0-113">Adaptateur BizTalk pour MQ Series Client (MQSC)</span><span class="sxs-lookup"><span data-stu-id="d48f0-113">BizTalk Adapter for MQ Series Client (MQSC)</span></span>
+
+<span data-ttu-id="d48f0-114">Ces adaptateurs sont mis à jour par les mises à jour cumulatives pour son.</span><span class="sxs-lookup"><span data-stu-id="d48f0-114">These adapters are updated by the cumulative updates for HIS.</span></span>
+
+## <a name="his-latest-updates"></a><span data-ttu-id="d48f0-115">SES dernières mises à jour</span><span class="sxs-lookup"><span data-stu-id="d48f0-115">HIS latest updates</span></span>
+
+| <span data-ttu-id="d48f0-116">Version du produit</span><span class="sxs-lookup"><span data-stu-id="d48f0-116">Product Version</span></span> | <span data-ttu-id="d48f0-117">Dernier Service Pack</span><span class="sxs-lookup"><span data-stu-id="d48f0-117">Latest Service Pack</span></span> | <span data-ttu-id="d48f0-118">Dernière mise à jour Cumulative</span><span class="sxs-lookup"><span data-stu-id="d48f0-118">Latest Cumulative Update</span></span> |
+| --- | --- | --- |
+| <span data-ttu-id="d48f0-119">HIS 2013</span><span class="sxs-lookup"><span data-stu-id="d48f0-119">HIS 2013</span></span> | <span data-ttu-id="d48f0-120">n/a</span><span class="sxs-lookup"><span data-stu-id="d48f0-120">n/a</span></span> | <span data-ttu-id="d48f0-121">CU 3 ([KO 3019572](https://support.microsoft.com/kb/3019572))</span><span class="sxs-lookup"><span data-stu-id="d48f0-121">CU 3 ([KB 3019572](https://support.microsoft.com/kb/3019572))</span></span> |
+|  <span data-ttu-id="d48f0-122">HIS 2010</span><span class="sxs-lookup"><span data-stu-id="d48f0-122">HIS 2010</span></span> | <span data-ttu-id="d48f0-123">n/a</span><span class="sxs-lookup"><span data-stu-id="d48f0-123">n/a</span></span> | <span data-ttu-id="d48f0-124">CU 10 ([KO 2917398](https://support.microsoft.com/kb/2917398))</span><span class="sxs-lookup"><span data-stu-id="d48f0-124">CU 10 ([KB 2917398](https://support.microsoft.com/kb/2917398))</span></span> |
+|  <span data-ttu-id="d48f0-125">HIS 2009</span><span class="sxs-lookup"><span data-stu-id="d48f0-125">HIS 2009</span></span> | <span data-ttu-id="d48f0-126">n/a</span><span class="sxs-lookup"><span data-stu-id="d48f0-126">n/a</span></span> | <span data-ttu-id="d48f0-127">CU 7 ([KO 2975320](http://support.microsoft.com/kb/2975320))</span><span class="sxs-lookup"><span data-stu-id="d48f0-127">CU 7 ([KB 2975320](http://support.microsoft.com/kb/2975320))</span></span> |
+|  <span data-ttu-id="d48f0-128">HIS 2006</span><span class="sxs-lookup"><span data-stu-id="d48f0-128">HIS 2006</span></span> | <span data-ttu-id="d48f0-129">SP1 ([KO 979238](http://support.microsoft.com/kb/979238))</span><span class="sxs-lookup"><span data-stu-id="d48f0-129">SP1 ([KB 979238](http://support.microsoft.com/kb/979238))</span></span>  | <span data-ttu-id="d48f0-130">n/a</span><span class="sxs-lookup"><span data-stu-id="d48f0-130">n/a</span></span> |
+|  <span data-ttu-id="d48f0-131">SON 2004</span><span class="sxs-lookup"><span data-stu-id="d48f0-131">HIS 2004</span></span> |  <span data-ttu-id="d48f0-132">SP1 ([KO 940312](http://support.microsoft.com/kb/940312))</span><span class="sxs-lookup"><span data-stu-id="d48f0-132">SP1 ([KB 940312](http://support.microsoft.com/kb/940312))</span></span> | <span data-ttu-id="d48f0-133">n/a</span><span class="sxs-lookup"><span data-stu-id="d48f0-133">n/a</span></span> |
+
+## <a name="ole-db-provider-for-db2-latest-updates"></a><span data-ttu-id="d48f0-134">Fournisseur OLE DB pour DB2 dernières mises à jour</span><span class="sxs-lookup"><span data-stu-id="d48f0-134">OLE DB Provider for DB2 latest updates</span></span>
+
+| <span data-ttu-id="d48f0-135">Version du produit</span><span class="sxs-lookup"><span data-stu-id="d48f0-135">Product Version</span></span> | <span data-ttu-id="d48f0-136">Version</span><span class="sxs-lookup"><span data-stu-id="d48f0-136">Version</span></span> | <span data-ttu-id="d48f0-137">Dernière mise à jour et Version</span><span class="sxs-lookup"><span data-stu-id="d48f0-137">Latest Update & Version</span></span> |
+| --- | --- | --- |
+| [<span data-ttu-id="d48f0-138">Fournisseur Microsoft OLEDB pour DB2 v5.0 pour Microsoft SQL Server 2014</span><span class="sxs-lookup"><span data-stu-id="d48f0-138">Microsoft OLEDB Provider for DB2 v5.0 for Microsoft SQL Server 2014</span></span>](https://www.microsoft.com/download/details.aspx?id=42295) | <span data-ttu-id="d48f0-139">9.0.2148.0</span><span class="sxs-lookup"><span data-stu-id="d48f0-139">9.0.2148.0</span></span> |<span data-ttu-id="d48f0-140">[KO 3104962](https://support.microsoft.com/kb/3104962) (9.0.2343.0)</span><span class="sxs-lookup"><span data-stu-id="d48f0-140">[KB 3104962](https://support.microsoft.com/kb/3104962) (9.0.2343.0)</span></span> <br/><br/><span data-ttu-id="d48f0-141">Voir la Remarque</span><span class="sxs-lookup"><span data-stu-id="d48f0-141">See Note</span></span> |
+| [<span data-ttu-id="d48f0-142">Fournisseur Microsoft OLEDB pour DB2 version 4.0 d’actualisation de Microsoft SQL Server 2012 SP1</span><span class="sxs-lookup"><span data-stu-id="d48f0-142">Microsoft OLEDB Provider for DB2 v4.0 Refresh for Microsoft SQL Server 2012 SP1</span></span>](https://www.microsoft.com/download/details.aspx?id=35580) | <span data-ttu-id="d48f0-143">9.0.1390.0</span><span class="sxs-lookup"><span data-stu-id="d48f0-143">9.0.1390.0</span></span>  | <span data-ttu-id="d48f0-144">[KO 2913611](http://support.microsoft.com/kb/2913611) (9.0.1404.2)</span><span class="sxs-lookup"><span data-stu-id="d48f0-144">[KB 2913611](http://support.microsoft.com/kb/2913611) (9.0.1404.2)</span></span> <br/><br/><span data-ttu-id="d48f0-145">Voir la Remarque</span><span class="sxs-lookup"><span data-stu-id="d48f0-145">See Note</span></span> |
+| [<span data-ttu-id="d48f0-146">Fournisseur Microsoft OLEDB pour DB2 version 4.0 de Microsoft SQL Server 2012</span><span class="sxs-lookup"><span data-stu-id="d48f0-146">Microsoft OLEDB Provider for DB2 v4.0 for Microsoft SQL Server 2012</span></span>](https://www.microsoft.com/download/details.aspx?id=29065) | <span data-ttu-id="d48f0-147">9.0.1356.0</span><span class="sxs-lookup"><span data-stu-id="d48f0-147">9.0.1356.0</span></span> | <span data-ttu-id="d48f0-148">[KO 2913611](http://support.microsoft.com/kb/2913611) (9.0.1404.2)</span><span class="sxs-lookup"><span data-stu-id="d48f0-148">[KB 2913611](http://support.microsoft.com/kb/2913611) (9.0.1404.2)</span></span> <br/><br/><span data-ttu-id="d48f0-149">Voir la Remarque</span><span class="sxs-lookup"><span data-stu-id="d48f0-149">See Note</span></span> |
+| [<span data-ttu-id="d48f0-150">Fournisseur Microsoft OLE DB pour DB2 Version 3.0 pour Microsoft SQL Server 2008 R2</span><span class="sxs-lookup"><span data-stu-id="d48f0-150">Microsoft OLE DB Provider for DB2 Version 3.0 for Microsoft SQL Server 2008 R2</span></span>](https://www.microsoft.com/download/details.aspx?id=26728) | <span data-ttu-id="d48f0-151">8.0.4294.0</span><span class="sxs-lookup"><span data-stu-id="d48f0-151">8.0.4294.0</span></span> | <span data-ttu-id="d48f0-152">[KO 2827515](http://support.microsoft.com/kb/2827515) (8.0.4329.2)</span><span class="sxs-lookup"><span data-stu-id="d48f0-152">[KB 2827515](http://support.microsoft.com/kb/2827515) (8.0.4329.2)</span></span> |
+
+> [!NOTE]
+> <span data-ttu-id="d48f0-153">Mises à jour le fournisseur Microsoft OLE DB pour DB2 version 4.0 et versions ultérieures sont publiées en tant que de nouveaux packages d’installation de MSI.</span><span class="sxs-lookup"><span data-stu-id="d48f0-153">Updates to the Microsoft OLE DB Provider for DB2 v4.0 and later are released as new MSI installation packages.</span></span> <span data-ttu-id="d48f0-154">Cela nécessite que la version précédente du fournisseur Microsoft OLE DB pour DB2 fournisseur supprimée avant d’installer la version mise à jour.</span><span class="sxs-lookup"><span data-stu-id="d48f0-154">This requires that the previous version of the Microsoft OLE DB Provider for DB2 provider be removed before installing the updated version.</span></span>
+
+## <a name="cumulative-update-list"></a><span data-ttu-id="d48f0-155">Liste de mise à jour cumulative</span><span class="sxs-lookup"><span data-stu-id="d48f0-155">Cumulative update list</span></span>
+
+#### <a name="his-2016"></a><span data-ttu-id="d48f0-156">SON 2016</span><span class="sxs-lookup"><span data-stu-id="d48f0-156">HIS 2016</span></span>
+[<span data-ttu-id="d48f0-157">Mise à jour cumulative 1</span><span class="sxs-lookup"><span data-stu-id="d48f0-157">Cumulative Update 1</span></span>](https://support.microsoft.com/help/3216544) 
+
+#### <a name="his-2013"></a><span data-ttu-id="d48f0-158">HIS 2013</span><span class="sxs-lookup"><span data-stu-id="d48f0-158">HIS 2013</span></span>
+
+-   [<span data-ttu-id="d48f0-159">Package de mise à jour cumulative 3 pour Host Integration Server 2013</span><span class="sxs-lookup"><span data-stu-id="d48f0-159">Cumulative update package 3 for Host Integration Server 2013</span></span>](https://support.microsoft.com/kb/3019572)
+-   [<span data-ttu-id="d48f0-160">Package de mise à jour cumulative 2 pour Host Integration Server 2013</span><span class="sxs-lookup"><span data-stu-id="d48f0-160">Cumulative update package 2 for Host Integration Server 2013</span></span>](https://support.microsoft.com/kb/2929767)
+-   [<span data-ttu-id="d48f0-161">Package de mise à jour cumulative 1 pour Host Integration Server 2013</span><span class="sxs-lookup"><span data-stu-id="d48f0-161">Cumulative update package 1 for Host Integration Server 2013</span></span>](https://support.microsoft.com/kb/2908834)
+
+#### <a name="his-2010"></a><span data-ttu-id="d48f0-162">HIS 2010</span><span class="sxs-lookup"><span data-stu-id="d48f0-162">HIS 2010</span></span>
+
+-   [<span data-ttu-id="d48f0-163">Package de mise à jour cumulative 10 pour Host Integration Server 2010 (2917398)</span><span class="sxs-lookup"><span data-stu-id="d48f0-163">Cumulative update package 10 for Host Integration Server 2010 (2917398)</span></span>](https://support.microsoft.com/kb/2917398)
+-   [<span data-ttu-id="d48f0-164">Package de mise à jour cumulative 9 pour Host Integration Server 2010 (2897923)</span><span class="sxs-lookup"><span data-stu-id="d48f0-164">Cumulative update package 9 for Host Integration Server 2010 (2897923)</span></span>](https://support.microsoft.com/kb/2897923)
+-   [<span data-ttu-id="d48f0-165">Package de mise à jour cumulative 8 pour Host Integration Server 2010 (2850493)</span><span class="sxs-lookup"><span data-stu-id="d48f0-165">Cumulative update package 8 for Host Integration Server 2010 (2850493)</span></span>](https://support.microsoft.com/kb/2850493)
+-   [<span data-ttu-id="d48f0-166">Package de mise à jour cumulative 7 pour Host Integration Server 2010 (2783797)</span><span class="sxs-lookup"><span data-stu-id="d48f0-166">Cumulative update package 7 for Host Integration Server 2010 (2783797)</span></span>](https://support.microsoft.com/kb/2783797)
+-   [<span data-ttu-id="d48f0-167">Package de mise à jour cumulative 6 pour Host Integration Server 2010 (2752426)</span><span class="sxs-lookup"><span data-stu-id="d48f0-167">Cumulative update package 6 for Host Integration Server 2010 (2752426)</span></span>](https://support.microsoft.com/kb/2752426)
+-   [<span data-ttu-id="d48f0-168">Package de mise à jour cumulative 5 pour Host Integration Server 2010 (2728515)</span><span class="sxs-lookup"><span data-stu-id="d48f0-168">Cumulative update package 5 for Host Integration Server 2010 (2728515)</span></span>](https://support.microsoft.com/kb/2728515)
+-   [<span data-ttu-id="d48f0-169">Le package de mise à jour cumulative 4 est disponible pour Host Integration Server 2010 (2691943)</span><span class="sxs-lookup"><span data-stu-id="d48f0-169">Cumulative update package 4 is available for Host Integration Server 2010 (2691943)</span></span>](https://support.microsoft.com/?id=2691943)
+-   [<span data-ttu-id="d48f0-170">Mise à jour cumulative 3 pour Host Integration Server 2010 (2654652)</span><span class="sxs-lookup"><span data-stu-id="d48f0-170">Cumulative update 3 for Host Integration Server 2010 (2654652)</span></span>](https://support.microsoft.com/kb/2654652)
+-   [<span data-ttu-id="d48f0-171">Mise à jour cumulative 2 pour Host Integration Server 2010 (2616519)</span><span class="sxs-lookup"><span data-stu-id="d48f0-171">Cumulative update 2 for Host Integration Server 2010 (2616519)</span></span>](https://support.microsoft.com/kb/2616519)
+-   [<span data-ttu-id="d48f0-172">Mise à jour cumulative 1 pour Host Integration Server 2010 (2533330)</span><span class="sxs-lookup"><span data-stu-id="d48f0-172">Cumulative update 1 for Host Integration Server 2010 (2533330)</span></span>](https://support.microsoft.com/kb/2533330)
+
+#### <a name="his-2009"></a><span data-ttu-id="d48f0-173">HIS 2009</span><span class="sxs-lookup"><span data-stu-id="d48f0-173">HIS 2009</span></span>
+
+-   [<span data-ttu-id="d48f0-174">Package de mise à jour cumulative 7 pour Host Integration Server 2009 (2975320)</span><span class="sxs-lookup"><span data-stu-id="d48f0-174">Cumulative update package 7 for Host Integration Server 2009 (2975320)</span></span>](https://support.microsoft.com/kb/2975320)
+-   [<span data-ttu-id="d48f0-175">Package de mise à jour cumulative 6 pour Host Integration Server 2009 (2851596)</span><span class="sxs-lookup"><span data-stu-id="d48f0-175">Cumulative update package 6 for Host Integration Server 2009 (2851596)</span></span>](https://support.microsoft.com/kb/2851596)
+-   [<span data-ttu-id="d48f0-176">Package de mise à jour cumulative 5 pour Host Integration Server 2009 (2814103)</span><span class="sxs-lookup"><span data-stu-id="d48f0-176">Cumulative update package 5 for Host Integration Server 2009 (2814103)</span></span>](https://support.microsoft.com/kb/2814103)
+-   [<span data-ttu-id="d48f0-177">4 de mise à jour cumulative pour Host Integration Server 2009 est disponible (2765212)</span><span class="sxs-lookup"><span data-stu-id="d48f0-177">Cumulative Update 4 for Host Integration Server 2009 is available (2765212)</span></span>](https://support.microsoft.com/kb/2765212)
+-   [<span data-ttu-id="d48f0-178">À jour cumulative 3 pour Host Integration Server 2009 est disponible (2667632)</span><span class="sxs-lookup"><span data-stu-id="d48f0-178">Cumulative Update 3 for Host Integration Server 2009 is available (2667632)</span></span>](https://support.microsoft.com/kb/2667632)
+-   [<span data-ttu-id="d48f0-179">Mise à jour cumulative 2 pour Host Integration Server 2009 (2645939)</span><span class="sxs-lookup"><span data-stu-id="d48f0-179">Cumulative update 2 for Host Integration Server 2009 (2645939)</span></span>](https://support.microsoft.com/kb/2645939)
+-   [<span data-ttu-id="d48f0-180">Mise à jour cumulative 1 pour Host Integration Server 2009 (2587090)</span><span class="sxs-lookup"><span data-stu-id="d48f0-180">Cumulative update 1 for Host Integration Server 2009 (2587090)</span></span>](https://support.microsoft.com/kb/2587090)

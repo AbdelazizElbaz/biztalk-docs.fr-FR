@@ -1,0 +1,63 @@
+---
+title: "Analyse les définitions de l’état | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: aa2c8247-5e25-4624-9f0d-c7fe621ffba2
+caps.latest.revision: "7"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 97007535e67a4c3540278cee7ff82fec18d492c4
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="state-monitoring-definitions"></a><span data-ttu-id="3c8ac-102">Définitions de l’analyse d’état</span><span class="sxs-lookup"><span data-stu-id="3c8ac-102">State Monitoring Definitions</span></span>
+<span data-ttu-id="3c8ac-103">Analyse de l’état aident à répondre à la question si un ordinateur contrôlé fonctionne correctement à un moment donné à partir de la perspective d’une application particulière.</span><span class="sxs-lookup"><span data-stu-id="3c8ac-103">State monitoring helps answer the question of whether a monitored computer is healthy at a given time from the perspective of a particular application.</span></span> <span data-ttu-id="3c8ac-104">System Center Operations Manager (SCOM) met à jour l’état des différentes entités gérées présentées à l’utilisateur et affiche l’état en tant que partie de l’état d’affichage d’analyse.</span><span class="sxs-lookup"><span data-stu-id="3c8ac-104">System Center Operations Manager (SCOM) updates the status of different managed entities exposed to the user and presents the status as part of the state monitoring view.</span></span>  
+  
+ <span data-ttu-id="3c8ac-105">Pour comprendre la [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] état d’affichage d’analyse, vous devez comprendre les concepts d’analyse de l’état SCOM.</span><span class="sxs-lookup"><span data-stu-id="3c8ac-105">To understand the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] State Monitoring view, you must understand the concepts behind SCOM state monitoring.</span></span> <span data-ttu-id="3c8ac-106">La terminologie répertoriée ci-dessous est utilisée pour décrire les composants clés de la surveillance de l'état :</span><span class="sxs-lookup"><span data-stu-id="3c8ac-106">The following terminology is used to describe the key components of state monitoring:</span></span>  
+  
+-   <span data-ttu-id="3c8ac-107">**Rôle** -un rôle qui effectue un serveur dans un environnement, tel que déterminé par la découverte de service.</span><span class="sxs-lookup"><span data-stu-id="3c8ac-107">**Role** - A role that a server is performing in an environment as determined by service discovery.</span></span> <span data-ttu-id="3c8ac-108">Par exemple, le rôle d’exécution BizTalk encapsule les artefacts de runtime et les instances dans BizTalk Server.</span><span class="sxs-lookup"><span data-stu-id="3c8ac-108">For example, the BizTalk run-time role encapsulates the runtime artifacts and instances in BizTalk Server.</span></span>  
+  
+-   <span data-ttu-id="3c8ac-109">**Composant** -un rôle secondaire qui est utilisé dans le cadre de l’évolution de l’intégrité pour mesurer l’intégrité globale du rôle de serveur.</span><span class="sxs-lookup"><span data-stu-id="3c8ac-109">**Component** - A sub-role that is used as part of the health roll-up to measure the overall health of the server role.</span></span> <span data-ttu-id="3c8ac-110">Par exemple, le composant d’alerte BAM est utilisé pour générer des alertes pour indiquer l’état de santé.</span><span class="sxs-lookup"><span data-stu-id="3c8ac-110">For example, the BAM alert component is used to generate alerts to indicate the status of overall health.</span></span>  
+  
+-   <span data-ttu-id="3c8ac-111">**Instance** -un ordinateur donné peut héberger une ou plusieurs instances du rôle de serveur.</span><span class="sxs-lookup"><span data-stu-id="3c8ac-111">**Instance** - A particular computer may host instance(s) of the server role.</span></span>  
+  
+ <span data-ttu-id="3c8ac-112">En bref, voici les principes essentiels de l’analyse de l’état SCOM :</span><span class="sxs-lookup"><span data-stu-id="3c8ac-112">In brief, the following are the important principles of SCOM state monitoring:</span></span>  
+  
+-   <span data-ttu-id="3c8ac-113">Contrôle d’intégrité d’un groupe d’ordinateurs est dérivé de l’intégrité des ordinateurs qui sont contenus dans le groupe d’ordinateurs.</span><span class="sxs-lookup"><span data-stu-id="3c8ac-113">Health of a computer group is derived from the health of the computers that are contained in the computer group.</span></span>  
+  
+-   <span data-ttu-id="3c8ac-114">L’état de l’ordinateur indique si les applications (désignées comme rôles de serveur) en cours d’exécution sur l’ordinateur sont sains, et l’état d’intégrité est dérivé de l’intégrité des applications hébergées.</span><span class="sxs-lookup"><span data-stu-id="3c8ac-114">The status of the computer shows whether applications (referred as server roles) running on the computer are healthy, and the health is derived from the health of the hosted applications.</span></span>  
+  
+-   <span data-ttu-id="3c8ac-115">Au niveau de l'application (rôle de serveur), l'état du rôle de serveur correspond à l'état général de toutes les instances d'application de ce rôle de serveur.</span><span class="sxs-lookup"><span data-stu-id="3c8ac-115">At the application level (server role), the status of the server role is the overall status of all application instances of that server role.</span></span> <span data-ttu-id="3c8ac-116">Par exemple, l’intégrité d’un ou plusieurs des artefacts tels que des orchestrations, reçoit des emplacements, reçoit les ports et ainsi de suite affecte l’état et l’intégrité globale d’une application BizTalk.</span><span class="sxs-lookup"><span data-stu-id="3c8ac-116">For example, health of one or more artifacts like orchestrations, receives locations, receives ports and so on affects the status and overall health of a BizTalk application.</span></span>  
+  
+-   <span data-ttu-id="3c8ac-117">Au niveau instance application (instance de rôle de serveur), l’intégrité de l’instance d’application est dérivée de l’intégrité des différentes zones de l’instance d’application (connue en tant que composants).</span><span class="sxs-lookup"><span data-stu-id="3c8ac-117">At the application instance level (server role instance), the health of the application instance is derived from the health of different areas of the application instance (known as components).</span></span>  
+  
+-   <span data-ttu-id="3c8ac-118">Alertes SCOM sont associés à l’intégrité d’un composant.</span><span class="sxs-lookup"><span data-stu-id="3c8ac-118">SCOM alerts are associated with the health of a component.</span></span> <span data-ttu-id="3c8ac-119">État d’un composant est défini sur rouge, jaune ou vert lorsque des alertes sont déclenchées pour indiquer l’état global.</span><span class="sxs-lookup"><span data-stu-id="3c8ac-119">Status of a component is set to red, yellow, or green when alerts are triggered to indicate overall health.</span></span>  
+  
+-   <span data-ttu-id="3c8ac-120">Le fonctionnement d'un composant contribue au fonctionnement du rôle de serveur.</span><span class="sxs-lookup"><span data-stu-id="3c8ac-120">Health of a component contributes to the health of the server role.</span></span>  
+  
+ <span data-ttu-id="3c8ac-121">Dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]:</span><span class="sxs-lookup"><span data-stu-id="3c8ac-121">In [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]:</span></span>  
+  
+-   <span data-ttu-id="3c8ac-122">Chaque serveur BizTalk Server est considéré comme une instance de rôle BizTalk Server.</span><span class="sxs-lookup"><span data-stu-id="3c8ac-122">Each BizTalk Server is considered an instance of the BizTalk Server role.</span></span>  
+  
+-   <span data-ttu-id="3c8ac-123">Le rôle BizTalk Server dans un ordinateur est donc calculé comme le résultat de tous les événements/activités de l'ensemble des processus BizTalk Server de cet ordinateur.</span><span class="sxs-lookup"><span data-stu-id="3c8ac-123">The BizTalk Server role in a computer will therefore be computed as a result of all events/activities of all the BizTalk Server processes in that computer.</span></span>  
+  
+ <span data-ttu-id="3c8ac-124">Le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Pack d’administration fournit une analyse de l’état des artefacts BizTalk Server qui inclut</span><span class="sxs-lookup"><span data-stu-id="3c8ac-124">The [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Management Pack provides state monitoring for BizTalk Server artifacts which includes</span></span>  
+  
+-   <span data-ttu-id="3c8ac-125">Artefacts tels que les orchestrations de l’application.</span><span class="sxs-lookup"><span data-stu-id="3c8ac-125">Application artifacts such as orchestrations.</span></span> <span data-ttu-id="3c8ac-126">Composants de messagerie telles que ports de réception, emplacements de réception et ports d’envoi.</span><span class="sxs-lookup"><span data-stu-id="3c8ac-126">Messaging components such as receive ports, receive locations, and send ports.</span></span>  
+  
+-   <span data-ttu-id="3c8ac-127">Artefacts de déploiement tels que les serveurs, instances de l’hôte, l’authentification unique et ainsi de suite.</span><span class="sxs-lookup"><span data-stu-id="3c8ac-127">Deployment artifacts such as servers, host instances, SSO and so on.</span></span>  
+  
+ <span data-ttu-id="3c8ac-128">Le tableau suivant répertorie les trois États qui expriment de l’état d’intégrité de toutes les plates-formes et applications niveau artefacts de BizTalk Server.</span><span class="sxs-lookup"><span data-stu-id="3c8ac-128">The following table lists the three states that visually represent the health status of all BizTalk Server platform and application level artifacts.</span></span> <span data-ttu-id="3c8ac-129">Cela fournit à l’opérateur SCOM une vue d’ensemble d’un déploiement de plusieurs serveurs afin de vous concentrer sur les problèmes importants rapidement.</span><span class="sxs-lookup"><span data-stu-id="3c8ac-129">This provides the SCOM operator a high-level view of a multi-server deployment in order to focus on important problems quickly.</span></span>  
+  
+|<span data-ttu-id="3c8ac-130">Artefacts</span><span class="sxs-lookup"><span data-stu-id="3c8ac-130">Artifacts</span></span>|<span data-ttu-id="3c8ac-131">Vert</span><span class="sxs-lookup"><span data-stu-id="3c8ac-131">Green</span></span>|<span data-ttu-id="3c8ac-132">Jaune</span><span class="sxs-lookup"><span data-stu-id="3c8ac-132">Yellow</span></span>|<span data-ttu-id="3c8ac-133">Rouge</span><span class="sxs-lookup"><span data-stu-id="3c8ac-133">Red</span></span>|  
+|---------------|-----------|------------|---------|  
+|<span data-ttu-id="3c8ac-134">Artefacts de niveau application</span><span class="sxs-lookup"><span data-stu-id="3c8ac-134">Application level artifacts</span></span>|<span data-ttu-id="3c8ac-135">Sont en cours d’exécution.</span><span class="sxs-lookup"><span data-stu-id="3c8ac-135">Are in a running state.</span></span>|<span data-ttu-id="3c8ac-136">Inférieur à 70 % des instances sont défectueux.</span><span class="sxs-lookup"><span data-stu-id="3c8ac-136">Less than 70% of the   instances are faulted.</span></span>|<span data-ttu-id="3c8ac-137">Plus de 70 % des instances sont défaillantes ou ont engendré des erreurs critiques.</span><span class="sxs-lookup"><span data-stu-id="3c8ac-137">More than 70% of the instances are faulted or have resulted in critical errors.</span></span>|  
+|<span data-ttu-id="3c8ac-138">Artefacts de niveau de déploiement</span><span class="sxs-lookup"><span data-stu-id="3c8ac-138">Deployment level artifacts</span></span>|<span data-ttu-id="3c8ac-139">Sont en cours d’exécution.</span><span class="sxs-lookup"><span data-stu-id="3c8ac-139">Are in a running state.</span></span>|<span data-ttu-id="3c8ac-140">Non applicable</span><span class="sxs-lookup"><span data-stu-id="3c8ac-140">Not applicable</span></span>|<span data-ttu-id="3c8ac-141">Ne sont pas en cours d’exécution ou est arrêté.</span><span class="sxs-lookup"><span data-stu-id="3c8ac-141">Are not in a running state or have stopped.</span></span>|
