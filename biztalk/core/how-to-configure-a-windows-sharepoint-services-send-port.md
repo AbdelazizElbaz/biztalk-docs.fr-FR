@@ -1,0 +1,61 @@
+---
+title: "Comment configurer un Port d’envoi Windows SharePoint Services | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Windows SharePoint Services adapters, send ports
+- configuring [Windows SharePoint Services adapters], send ports
+- send ports, Windows SharePoint Services adapters
+ms.assetid: 7713d3cc-cd8d-43db-8dac-2a7442632b87
+caps.latest.revision: "24"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: a7e41aca0c55170de7f8e1514e5a4c77796f48cc
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="how-to-configure-a-windows-sharepoint-services-send-port"></a>Comment configurer un Port d’envoi Windows SharePoint Services
+Cette rubrique décrit la création et la configuration d'un port d'envoi Windows SharePoint Services à l'aide de la console Administration de BizTalk Server.  
+  
+### <a name="to-create-and-configure-a-windows-sharepoint-services-send-port"></a>Pour créer et configurer un port d'envoi Windows SharePoint Services  
+  
+1.  Dans la console Administration de BizTalk Server, créez un port d'envoi ou double-cliquez sur un port d'envoi existant pour le modifier. Pour plus d’informations, consultez [la création d’un Port d’envoi](../core/how-to-create-a-send-port2.md). Configurez toutes les options de port d’envoi et spécifiez **propriétés du Transport Windows SharePoint Services** pour le **Type** option dans le **Transport** section de la  **Général** onglet.  
+  
+2.  Sur le **général** sous l’onglet le **Transport** section regard **Type**, cliquez sur **configurer**.  
+  
+3.  Dans le **propriétés du Transport Windows SharePoint Services** boîte de dialogue zone, procédez comme suit :  
+  
+    |Utiliser|Pour effectuer cette opération|  
+    |--------------|----------------|  
+    |Port de service Web d'adaptateur|Port HTTP du site Web IIS sur lequel est installé le service Web de l'adaptateur Windows SharePoint Services. Par défaut, il s’agit du Site Web par défaut configuré sur le port 80. Si vous avez configuré le service Web de Windows SharePoint Services sur un autre site Web IIS que le Site Web par défaut, vous devez mettre à jour cette valeur.|  
+    |Délai d'expiration|Il s'agit du délai d'expiration, en millisecondes, des appels du service Web d'exécution de l'adaptateur adressés au service Web de l'adaptateur Windows SharePoint Services. Vous devrez éventuellement augmenter cette valeur si la taille du message ou du lot est supérieure à la valeur moyenne attendue par l'adaptateur.|  
+    |URL Dossier de destination|URL du dossier de destination Windows SharePoint Services, relative au site SharePoint, par exemple, Documents partagés, Documents partagés/Bons de commande ou Listes/Tâches. Vous pouvez envoyer des messages à une liste SharePoint en spécifiant l'URL de la liste, par exemple Listes/Tâches. Si vous spécifiez une liste comme destination, le corps du message ne sera pas enregistré avec l'élément de la liste, mais les valeurs extraites du message seront promues dans les colonnes SharePoint. **Remarque :** l’URL de dossier, liste ou bibliothèque de documents SharePoint est parfois différente du nom de cet élément. Consultez la barre d'adresses d'Internet Explorer pour connaître l'URL correcte.|  
+    |Nom du fichier|(Facultatif) Le nom de fichier Windows SharePoint Services. Vous pouvez entrer une valeur littérale comme 'PurchaseOrder0001.xml' ou une expression. Les expressions peuvent inclure toute combinaison de littéraux, macros et requêtes XPATH, ex : « PurchOrd-%XPATH=//po:PurchaseOrderId%-%MessageID%.xml ». Si aucun nom de fichier n'est fourni, le nom du fichier prend le nom du fichier d'origine, la valeur fournie par l'orchestration est utilisée ou 'Msg-%MessageID%.xml' si l'orchestration ne définit pas le nom du fichier. **Remarque :** lors de l’envoi de messages à une liste, la valeur spécifiée dans la propriété de nom de fichier est ignorée et ne seront pas enregistrée dans une colonne SharePoint. Les listes SharePoint n’ont pas de colonne Nom de fichier. Vous devez donc mettre à jour la colonne 'Titre' en utilisant l'une des 16 colonnes disponibles. <br /><br /> Pour plus d’informations sur les expressions, consultez [Expressions de l’adaptateur Windows SharePoint Services](../core/windows-sharepoint-services-adapter-expressions.md).|  
+    |Alias d'espaces de noms|(Facultatif) Liste, séparée par des virgules ou des points-virgules, des définitions des alias d'espaces de noms. Ce champ permet de définir les alias espaces de noms utilisés par les requêtes XPATH introduites dans le champ 'Nom de fichier' ou 'Valeur de colonne', par exemple po='http://OrderProcess/POrder', conf='http://OrderProcess/Confirmation' xmlns=""; ipsol='{D8217CF1-4EF7-4bb5-A30D-765ECB09E0D9}'. **Remarque :** cette propriété ne remplace pas le WSS. Propriété de contexte de message de ConfigNamespacesAliases définie par l’orchestration. Les deux valeurs sont fusionnées.|  
+    |Remplacer|Détermine si un fichier existant est remplacé. Sélectionnez 'Oui' pour remplacer les fichiers existants. Sélectionnez 'Non' pour générer une erreur et suspendre le message lorsqu'un fichier portant le même nom existe déjà. Sélectionnez 'Renommer' pour renommer le fichier. Sélectionnez 'Orchestration' pour utiliser la valeur définie par l'orchestration. **Attention :** envoyer un grand nombre de messages avec le même nom, alors que la propriété de remplacement est définie sur « Oui » peut entraîner des erreurs de SharePoint la consignation de l’événement visionneuse. Ces erreurs n'affectent pas les fonctionnalités de l'adaptateur. Les messages ayant échoué feront l'objet d'une nouvelle tentative.|  
+    |URL de site SharePoint|URL complète du site Web Windows SharePoint Services. Par exemple, http://BizTalkServer/sites/TestSite. **Remarque :** l’URI pour un envoi de port ou de réception emplacement ne peut pas dépasser 256 caractères.|  
+    |Intégration de Microsoft Office|'Facultatif' pour modifier le document de sorte qu'il s'ouvre automatiquement dans une application Office comme InfoPath ou pour l'enregistrer en l'état si aucune solution InfoPath n'est trouvée. 'Oui' pour modifier le document de sorte qu'il s'ouvre automatiquement dans une application Office comme InfoPath ou pour l'interrompre si aucune solution InfoPath n'est trouvée. 'Oui (bibliothèque de formulaires InfoPath)' pour modifier le document de sorte qu'il s'ouvre automatiquement dans une application Office comme InfoPath à l'aide de la solution InfoPath se trouvant dans la bibliothèque de formulaires si le message est envoyé à une bibliothèque de formulaires InfoPath de Windows SharePoint Services. Si aucune solution InfoPath n'existe dans la bibliothèque de formulaires, le message sera interrompu. 'Non' pour enregistrer le document en l'état, sans modifications. 'Orchestration' pour utiliser la valeur définie par l'orchestration. Pour les messages binaires, vous devez utiliser l'option Non ou Facultatif. **Remarque :** au moins une des propriétés des paires bibliothèque de documents modèles et colonne Namespace de modèles ou bibliothèque de documents modèles de secours et modèles de secours Namespace colonne est requise lors de l’intégration de Microsoft Office est définie sur Oui.|  
+    |Bibliothèque de documents Modèles|Entrez le nom d'une bibliothèque de documents SharePoint où sont stockées les solutions InfoPath.  Par exemple, `My Solutions`. Il s'agit du premier emplacement dans lequel l'adaptateur recherche une solution InfoPath correspondante. En cas d'échec, l'adaptateur recherche ensuite dans la bibliothèque de documents Modèles de secours. **Remarque :** ce champ est obligatoire lorsque le champ colonne Namespace de modèles n’est pas vide. **Remarque :** la bibliothèque de documents doit avoir au moins une colonne SharePoint de type « une seule ligne de texte' renseignée avec l’espace de noms et le nœud racine des documents XML qui peuvent être ouverts avec cette solution InfoPath, ou le nœud racine uniquement. Pour plus d’informations, consultez [procédure pas à pas : Module 2 - intégration d’Office avec l’adaptateur Windows SharePoint Services](../core/walkthrough-module-2--integrate-office-with-the-sharepoint-adapter-in-biztalk.md).|  
+    |Bibliothèque de documents Modèles de secours|Entrez le nom d'une bibliothèque de documents SharePoint où sont stockées les solutions InfoPath.  par exemple Modèles. L'adaptateur recherche une solution InfoPath correspondante uniquement dans cette bibliothèque de documents lorsqu'aucune solution n'est trouvée dans la bibliothèque des documents Modèles. Les champs 'Bibliothèque de documents Modèles de secours' et 'Bibliothèque de documents Modèles' peuvent être utilisés avec deux ensembles de solutions InfoPath. Il existe des solutions InfoPath génériques à usage universel et des solutions InfoPath spécialisées qui sont utilisées uniquement pour un partenaire spécifique. Le champ 'Bibliothèque de documents Modèles de secours' doit pointer vers les solutions génériques et le champ 'Bibliothèque de documents Modèles' doit pointer sur les solutions spécialisées pour ce partenaire spécifique. **Remarque :** ce champ est obligatoire lorsque le champ de la colonne modèles de secours Namespace n’est pas vide. **Remarque :** la bibliothèque de documents doit avoir au moins une colonne SharePoint de type « une seule ligne de texte' renseignée avec l’espace de noms et le nœud racine des documents XML qui peuvent être ouverts avec cette solution InfoPath, ou le nœud racine uniquement. Pour plus d’informations, consultez [procédure pas à pas : Module 2 - intégration d’Office avec l’adaptateur Windows SharePoint Services](../core/walkthrough-module-2--integrate-office-with-the-sharepoint-adapter-in-biztalk.md).|  
+    |Colonne espaces de noms Modèles de secours|Nom de la colonne SharePoint de la bibliothèque de documents Modèles de secours qui contient l'espace de noms de la solution InfoPath, par exemple Espace de noms. **Remarque :** ce champ est obligatoire lorsque le champ de la bibliothèque de documents modèles de secours n’est pas vide. **Remarque :** ce champ respecte la casse.|  
+    |Colonne d'espace de noms des modèles|Nom de la colonne SharePoint de la bibliothèque de documents Modèles qui contient l'espace de noms de la solution InfoPath, par exemple Espace de noms. **Remarque :** ce champ est obligatoire lorsque le champ de la bibliothèque de documents modèles n’est pas vide. **Remarque :** ce champ respecte la casse.|  
+    |Colonne `n`|Nom de la colonne Windows SharePoint Services qui existe dans la bibliothèque de documents de destination. Il s'agit de la colonne qui doit être mise à jour avec la valeur extraite du message ou spécifiée dans le champ 'Valeur colonne'. **Remarque :** vous pouvez spécifier jusqu'à 16 colonnes. **Remarque :** ce champ respecte la casse.|  
+    |Valeur de la colonne `n`|Entrez la valeur de colonne à définir pour ce message. Vous pouvez entrer une valeur littérale comme « Bon de commande » ou une expression. Les expressions peuvent se composer d'un mélange de littéraux, macros et requêtes XPATH, par exemple, « %XPATH=//po:POAmount% », « %SendingOrchestrationID% ». **Remarque :** vous pouvez spécifier jusqu'à 16 valeurs de colonne.|  
+  
+4.  Cliquez sur **OK** et **OK** pour enregistrer les paramètres.  
+  
+## <a name="see-also"></a>Voir aussi  
+ [Pour configurer Windows SharePoint Services emplacement de réception](../core/how-to-configure-a-windows-sharepoint-services-receive-location.md)   
+ [Comment configurer un gestionnaire d’envoi Windows SharePoint Services](../core/how-to-configure-a-windows-sharepoint-services-send-handler.md)   
+ [Comment créer un Port d’envoi](../core/how-to-create-a-send-port2.md)   
+ [Référence des propriétés de l’adaptateur Windows SharePoint Services](../core/windows-sharepoint-services-adapter-properties-reference.md)   
+ [Expressions de l’adaptateur de Windows SharePoint Services](../core/windows-sharepoint-services-adapter-expressions.md)   
+ [Prise en charge des Types de colonnes Windows SharePoint Services](../core/supported-windows-sharepoint-services-column-types.md)

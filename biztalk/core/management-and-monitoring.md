@@ -1,0 +1,63 @@
+---
+title: Gestion et surveillance | Documents Microsoft
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 92724f79-32bb-40d3-a0af-147aba00d87e
+caps.latest.revision: "17"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 9b24c5bd1fcc1d2e81f50221c6c1e148d22394d2
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="management-and-monitoring"></a>Gestion et surveillance
+Les applications basées sur le moteur [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] nécessitent diverses tâches de gestion. Comment les nouvelles applications sont-elles installées ? Quelles sont les configurations possibles ? Que se passe-t-il à l'intérieur du système ? Cette section présente les outils disponibles pour répondre à ces questions.  
+  
+## <a name="installing-biztalk-server"></a>Installation de BizTalk Server  
+ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] inclut divers composants et dépend de plusieurs aspects de l'environnement Windows. Vérifier que la version correcte des éléments nécessaires au produit est disponible, puis installer tous les composants du produit peut être un processus complexe.  
+  
+ L'installation est relativement simple. La mise à niveau de BizTalk Server 2009 est automatique et les éléments créés pour cette version précédente (orchestrations, mappages, etc.) continuent à fonctionner. Pour s'assurer que l'environnement approprié existe, l'administrateur qui procède à une nouvelle installation de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] peut télécharger un fichier .CAB standard ou référencer un fichier .CAB téléchargé plus tôt. Dans les deux cas, ce fichier contient les composants redistribuables requis par le produit pour l'installation. Cela inclut les versions correctes des composants Microsoft Data Access (MDAC), l'analyseur XML de Microsoft (MSXML), les derniers correctifs de sécurité et d'autres logiciels nécessaires.  
+  
+ Une fois le contenu du fichier .CAB installé, deux alternatives sont disponibles pour l'installation de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. L'approche par défaut, généralement adoptée par les développeurs créant un environnement [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] pour leur propre utilisation, consiste à installer les composants du produit sous un seul compte sur un ordinateur. Une fois le processus commencé, le développeur doit seulement surveiller l'installation de ces composants. En revanche, un administrateur configurant un environnement [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] de production peut utiliser l'option de configuration personnalisée. Ce choix permet de déployer le produit sur différents ordinateurs, de définir et d'utiliser différents comptes et d'autres configurations plus détaillées.  
+  
+## <a name="creating-scalable-configurations"></a>Création de configurations évolutives  
+ Si la haute disponibilité et la redondance ne sont pas impératives, le moteur [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] peut être installé sur un seul ordinateur. Cette configuration n'est toutefois pas adaptée à toutes les situations. Ainsi, il se peut que le nombre de messages que le moteur doit gérer soit trop important pour un ordinateur ou que la redondance soit requise pour accroître la fiabilité du système. Pour tenir compte de tels impératifs, le moteur [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] peut être déployé de diverses manières.  
+  
+ L'hôte est un concept fondamental pour le déploiement du moteur. Un hôte peut contenir divers éléments, notamment des orchestrations, des adaptateurs et des pipelines. Les hôtes ne sont toutefois que des constructions logiques. Pour les utiliser, l'administrateur BizTalk Server doit créer des instances d'hôte. Chaque instance d'hôte est un processus Windows qui peut contenir divers éléments, comme indiqué dans le diagramme ci-dessous. Dans l'exemple suivant, l'ordinateur A héberge deux instances de l'hôte. L'une contient un adaptateur de réception et un pipeline de réception, tandis que l'autre contient les orchestrations P et Q. L'ordinateur B exécute une seule instance de l'hôte, contenant également les deux orchestrations P et Q. L'ordinateur C (comme l'ordinateur A) héberge deux instances de l'hôte, sans orchestration. Ces instances contiennent en revanche un pipeline d'envoi et un adaptateur d'envoi différents. Enfin, l'ordinateur D héberge la base de données MessageBox utilisée par toutes les instances de l'hôte dans cette configuration.  
+  
+ ![](../core/media/understandingbts-09-hosts.gif "UnderstandingBTS_09_Hosts")  
+  
+ Cet exemple illustre plusieurs utilisations des hôtes. Par exemple, comme les ordinateurs A et B hébergent les orchestrations P et Q, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] peut automatiquement équilibrer la charge des demandes envoyées à ces orchestrations en fonction de la disponibilité et de la charge actuelle sur chaque ordinateur. Cela permet à une application BizTalk de s'adapter aux processus impliquant des volumes importants. Notez également que l'ordinateur C inclut deux modes de gestion des messages sortants. L'un d'eux peut dépendre d'un adaptateur [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] standard, tel que l'adaptateur HTTP, tandis que l'autre utilise un adaptateur personnalisé pour communiquer avec un système particulier. Le regroupement du traitement de sortie sur un ordinateur tel que celui-ci peut convenir dans certaines situations. Par ailleurs, chaque instance de l'hôte étant isolée des autres (il s'agit de processus différents), il est plus sûr d'exécuter du code partiellement approuvé, tel qu’un nouvel adaptateur personnalisé, au sein d'une instance distincte. Même si cet exemple ne contient qu’une instance de la base de données MessageBox, celle-ci peut-être répliquée ou placée dans un cluster pour éviter de créer un point faible.  
+  
+ L'abstraction des applications BizTalk introduite dans la version actuelle de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] n'est pas associée de manière intrinsèque aux hôtes. Les composants d'une simple application BizTalk peuvent être contenus dans un seul hôte et installés sur le même ordinateur. Pour les cas plus complexes, les artefacts constituant l'application (orchestrations, adaptateurs, pipelines, etc.) peuvent être répartis sur des hôtes situés sur plusieurs ordinateurs, comme dans la figure ci-dessus. Par conséquent, le processus de mappage des artefacts aux ordinateurs physiques ne dépend pas de la notion d'une application BizTalk.  
+  
+## <a name="managing-applications"></a>Gestion des applications  
+ Le principal outil de gestion du moteur [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] est la console Administration de BizTalk Server, un composant logiciel enfichable MMC (Microsoft Management Console) qui inclut une interface utilisateur pour les administrateurs [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Cet outil offre aux administrateurs diverses possibilités, notamment en relation avec les aspects suivants :  
+  
+-   **Déployer des applications BizTalk.** [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]permet aux administrateurs de travailler avec une application BizTalk complète en tant qu’unité. La console Administration de BizTalk Server permet aux administrateurs de créer une application BizTalk, et de déployer celle-ci sur un ou plusieurs serveurs.  
+  
+-   **Configurer les applications BizTalk.** Lorsque les développeurs créent des orchestrations, ils fonctionnent essentiellement en termes logiques. Pour définir les modalités de communication entre le moteur [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] et une application particulière par exemple, ils peuvent sélectionner un adaptateur HTTP sans se préoccuper de l'URL spécifique qui sera utilisée. De même, le développeur peut spécifier que le pipeline d'envoi doit inclure un composant qui ajoute une signature numérique aux messages sortants sans se préoccuper de la clé utilisée pour créer cette signature. Ces détails doivent être définis pour que l'application fonctionne. La console Administration de BizTalk Server permet à un administrateur de créer et de modifier des configurations telles que celles-ci.  
+  
+-   **Surveillance des applications BizTalk.** À l’aide de la **Hub du groupe** page sur la console Administration de BizTalk Server, un administrateur peut surveiller le fonctionnement des applications BizTalk. Le Hub du groupe présente des informations sur l'état actuel de ces applications qui peuvent être examinées de différentes façons. Au lieu de l’intervention d’un administrateur rechercher des problèmes, par exemple, le **Hub du groupe** page utilise des indicateurs de couleur pour afficher ces problèmes. Les administrateurs peuvent ainsi adopter une approche plus proactive dans le cadre de la surveillance des applications.  
+  
+ La console Administration de BizTalk, qui repose sur la base de données de gestion de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], fournit également d'autres services. Les administrateurs peuvent ajouter des ordinateurs et spécifier les hôtes qui doivent leur être affectés de façon dynamique lors de l'exécution d'une application. Il n’est pas nécessaire d'arrêter l'application pour effectuer ces modifications. Les fonctions de la console Administration sont également accessibles par programme via Windows Management Instrumentation (WMI), qui permet aux administrateurs de créer des scripts d'automatisation des fonctions de gestion.  
+  
+## <a name="reporting-on-and-debugging-applications"></a>Création de rapports sur les applications et débogage  
+ Les applications BizTalk effectuent des opérations variées : envoyer et recevoir des messages, traiter ces messages dans les orchestrations, communication avec des systèmes utilisant différents protocoles et bien plus encore. Conserver un enregistrement de l'activité des applications, notamment en cas de défaillance, est très utile. De même, il est essentiel de pouvoir déboguer les orchestrations et autres composants des applications. Ces deux fonctionnalités sont accessibles via la page Hub du groupe dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+  
+-   La page Hub du groupe fournit un accès graphique aux informations relatives aux applications exécutées sur le moteur. Ces informations ont trait au démarrage et à la fin des orchestrations, à l'exécution des formes contenues dans celles-ci, à l'envoi et la réception de leurs messages, au contenu de ces messages, etc. Le développeur ou l'administrateur peut définir des points d'arrêt pour arrêter et examiner l'orchestration à des emplacements prédéterminés. La page Hub du groupe permet également d'examiner des données archivées, en recherchant les modèles et tendances relatifs à l'exécution d'un processus d'entreprise. Ces informations sont utiles pour déboguer, répondre aux questions commerciales (par exemple, vérifier qu'un message a bien été envoyé à un client) et conserver des statistiques actualisées susceptibles d'améliorer les performances.  
+  
+## <a name="see-also"></a>Voir aussi  
+ [Le moteur de messagerie BizTalk Server](../core/the-biztalk-server-messaging-engine.md)   
+Installer [BizTalk Server 2016](../install-and-config-guides/biztalk-server-2016-what-s-new-and-installation.md) ou [BizTalk Server 2013 ou R2](../install-and-config-guides/biztalk-server-2013-and-2013-r2-what-s-new-install-and-upgrade.md)    
+[Configuration de BizTalk Server](../install-and-config-guides/configure-biztalk-server.md)  
+ [Déploiement et gestion des Applications BizTalk](../core/deploying-and-managing-biztalk-applications.md)   
+ [À l’aide de la Page Hub du groupe](../core/using-the-group-hub-page.md)
