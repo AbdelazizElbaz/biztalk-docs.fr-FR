@@ -18,5 +18,5 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="sso-events-and-errors"></a>Erreurs et événements de l'authentification unique
-Cette section contient des informations sur les événements de l'authentification unique (SSO).
+# <a name="sso-events-and-errors"></a><span data-ttu-id="8893c-102">Erreurs et événements de l'authentification unique</span><span class="sxs-lookup"><span data-stu-id="8893c-102">SSO Events and Errors</span></span>
+<span data-ttu-id="8893c-103">Cette section contient des informations sur les événements de l'authentification unique (SSO).</span><span class="sxs-lookup"><span data-stu-id="8893c-103">This section contains information for Single Sign-On (SSO) events.</span></span>
