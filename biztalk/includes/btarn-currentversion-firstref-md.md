@@ -1,0 +1,1 @@
+BizTalk Accelerator pour RosettaNet (BTARN)

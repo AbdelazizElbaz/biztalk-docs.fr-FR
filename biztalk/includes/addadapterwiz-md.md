@@ -1,0 +1,1 @@
+Assistant Ajouter les métadonnées de l'adaptateur

@@ -1,0 +1,1 @@
+Complément Consume Adapter Service BizTalk Project Add-in

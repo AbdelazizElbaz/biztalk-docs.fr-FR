@@ -1,0 +1,1 @@
+dans les instructions de l’interface utilisateur et de la référence du développeur

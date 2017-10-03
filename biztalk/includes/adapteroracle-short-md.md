@@ -1,0 +1,1 @@
+Adaptateur de base de données Oracle

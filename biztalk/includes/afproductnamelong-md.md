@@ -1,0 +1,1 @@
+Kit de développement logiciel (SDK) de l’adaptateur Microsoft Windows Communication Foundation (WCF) Line of Business (LOB)
