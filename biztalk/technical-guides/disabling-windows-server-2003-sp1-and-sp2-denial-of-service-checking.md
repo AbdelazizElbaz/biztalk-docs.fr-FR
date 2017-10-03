@@ -1,0 +1,46 @@
+---
+title: "La désactivation de Windows Server 2003 SP1 et SP2 des attaques de déni de Service de la vérification de la | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 8822c1e4-d146-4361-b25a-7b81cd5cdd3b
+caps.latest.revision: "2"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: b33333efd055a659557513ecc8e0b53a42bc30ad
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="disabling-windows-server-2003-sp1-and-sp2-denial-of-service-checking"></a><span data-ttu-id="84d20-102">La désactivation de Windows Server 2003 SP1 et SP2 des attaques de déni de Service de la vérification de la</span><span class="sxs-lookup"><span data-stu-id="84d20-102">Disabling Windows Server 2003 SP1 and SP2 Denial of Service Checking</span></span>
+> [!NOTE]  
+>  <span data-ttu-id="84d20-103">Cette rubrique s’applique uniquement pour Windows Server 2003.</span><span class="sxs-lookup"><span data-stu-id="84d20-103">This topic is applicable only for Windows Server 2003.</span></span>  
+  
+ <span data-ttu-id="84d20-104">Vous devez désactiver le refus de Windows Server 2003 Service Pack 1 et Service Pack 2 de vérification du service.</span><span class="sxs-lookup"><span data-stu-id="84d20-104">You should disable the Windows Server 2003 Service Pack 1 and Service Pack 2 denial of service checking.</span></span> <span data-ttu-id="84d20-105">Il s’agit, car dans certains cas de forte charge, Windows Server 2003 SP1 et SP2 déni de service recherche peut identifier de manière incorrecte les connexions TCP/IP valides comme une attaque par déni de service.</span><span class="sxs-lookup"><span data-stu-id="84d20-105">This is because under certain high-load scenarios, Windows Server 2003 SP1 and SP2 denial of service checking may incorrectly identify valid TCP/IP connections as a denial of service attack.</span></span>  
+  
+> [!IMPORTANT]  
+>  <span data-ttu-id="84d20-106">Vous devez désactiver cette fonction uniquement dans un scénario intranet lorsque vous êtes sûr que vous ne seront pas affectées à partir de réel attaques par déni de service.</span><span class="sxs-lookup"><span data-stu-id="84d20-106">You should disable this feature only in an intranet scenario when you are sure you will not suffer from actual denial of service attacks.</span></span>  
+  
+## <a name="how-denial-of-service-can-affect-tcpip-connections"></a><span data-ttu-id="84d20-107">Comment les attaques de déni de Service peuvent affecter les connexions TCP/IP</span><span class="sxs-lookup"><span data-stu-id="84d20-107">How Denial of Service Can Affect TCP/IP Connections</span></span>  
+ <span data-ttu-id="84d20-108">Windows Server 2003 SP1 et SP2 implémentent une fonctionnalité de sécurité qui réduit la taille de la file d’attente pour les connexions TCP/IP simultanées au serveur.</span><span class="sxs-lookup"><span data-stu-id="84d20-108">Windows Server 2003 SP1 and SP2 implement a security feature that reduces the size of the queue for concurrent TCP/IP connections to the server.</span></span> <span data-ttu-id="84d20-109">Ce composant a pour but d'empêcher les attaques de type refus de service.</span><span class="sxs-lookup"><span data-stu-id="84d20-109">This feature helps prevent denial of service attacks.</span></span> <span data-ttu-id="84d20-110">Conditions de charge importante, le protocole TCP/IP dans Windows Server 2003 SP1 ou version ultérieure peut identifier de manière incorrecte les connexions TCP/IP valides comme une attaque par déni de service.</span><span class="sxs-lookup"><span data-stu-id="84d20-110">Under heavy load conditions, the TCP/IP protocol in Windows Server 2003 SP1 or later may incorrectly identify valid TCP/IP connections as a denial of service attack.</span></span> <span data-ttu-id="84d20-111">Cela peut se produire lorsque [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] est surchargé.</span><span class="sxs-lookup"><span data-stu-id="84d20-111">This may occur when [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] is under heavy load.</span></span>  
+  
+## <a name="modifying-the-registry-entry"></a><span data-ttu-id="84d20-112">Modification de l’entrée de Registre</span><span class="sxs-lookup"><span data-stu-id="84d20-112">Modifying the Registry Entry</span></span>  
+ <span data-ttu-id="84d20-113">Pour plus d’informations, consultez l’article de la Base de connaissances Microsoft 899599, [« une instance d’hôte BizTalk Server échoue et une erreur de « Réseau générale » est consignée dans le journal des applications lorsque le serveur BizTalk Server traite un volume important de documents » ](http://go.microsoft.com/fwlink/?LinkId=158860) (http://go.microsoft.com/fwlink/?LinkId=158860).</span><span class="sxs-lookup"><span data-stu-id="84d20-113">For more information, see Microsoft Knowledge Base article 899599, ["A BizTalk Server Host instance fails, and a 'General Network' error is written to the Application log when the BizTalk Server-based server processes a high volume of documents"](http://go.microsoft.com/fwlink/?LinkId=158860) (http://go.microsoft.com/fwlink/?LinkId=158860).</span></span> <span data-ttu-id="84d20-114">Suivez les instructions de cet article pour créer le **SynAttackProtect** entrée de Registre sur les ordinateurs exécutant SQL Server qui hébergent [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] bases de données et sur tous les ordinateurs exécutant [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] qui exécutent Windows Server 2003 SP1 ou version ultérieure.</span><span class="sxs-lookup"><span data-stu-id="84d20-114">Follow the instructions in this article to create the **SynAttackProtect** registry entry on computers running SQL Server that host [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] databases and on any computers running [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] that are running Windows Server 2003 SP1 or later.</span></span>  
+  
+## <a name="tuning-registry-settings-that-govern-the-level-of-denial-of-service-attack-protection"></a><span data-ttu-id="84d20-115">Réglage des paramètres de Registre qui régissent le niveau de refus de la protection contre les attaques de Service</span><span class="sxs-lookup"><span data-stu-id="84d20-115">Tuning Registry Settings that Govern the Level of Denial of Service Attack Protection</span></span>  
+ <span data-ttu-id="84d20-116">Dans certains scénarios, vous souhaiterez refus de protection de service sont conservées, mais réduit la rapidité avec laquelle le refus d’une fonctionnalité de service est appliqué.</span><span class="sxs-lookup"><span data-stu-id="84d20-116">In certain scenarios you may want to maintain denial of service protection but reduce how aggressively the denial of service functionality is applied.</span></span> <span data-ttu-id="84d20-117">Il est possible de paramétrer le comportement par défaut du refus de la fonctionnalité de protection de service en procédant comme suit :</span><span class="sxs-lookup"><span data-stu-id="84d20-117">It is possible to tune the default behavior of the denial of service protection feature by following these steps:</span></span>  
+  
+1.  <span data-ttu-id="84d20-118">Vérifiez que le **SynAttackProtect** entrée de Registre est définie sur une valeur REG_DWORD de **1** comme décrit dans [http://go.microsoft.com/fwlink/?LinkId=111477](http://go.microsoft.com/fwlink/?LinkId=111477).</span><span class="sxs-lookup"><span data-stu-id="84d20-118">Ensure that the **SynAttackProtect** registry entry is set to a REG_DWORD value of **1** as described at [http://go.microsoft.com/fwlink/?LinkId=111477](http://go.microsoft.com/fwlink/?LinkId=111477).</span></span>  
+  
+2.  <span data-ttu-id="84d20-119">Configurer le **TcpMaxHalfOpen** entrée de Registre comme décrit dans [http://go.microsoft.com/fwlink/?LinkId=111478](http://go.microsoft.com/fwlink/?LinkId=111478).</span><span class="sxs-lookup"><span data-stu-id="84d20-119">Configure the **TcpMaxHalfOpen** registry entry as described at [http://go.microsoft.com/fwlink/?LinkId=111478](http://go.microsoft.com/fwlink/?LinkId=111478).</span></span>  
+  
+3.  <span data-ttu-id="84d20-120">Configurer le **TcpMaxHalfOpenRetried** entrée de Registre comme décrit dans [http://go.microsoft.com/fwlink/?LinkId=111479](http://go.microsoft.com/fwlink/?LinkId=111479).</span><span class="sxs-lookup"><span data-stu-id="84d20-120">Configure the **TcpMaxHalfOpenRetried** registry entry as described at [http://go.microsoft.com/fwlink/?LinkId=111479](http://go.microsoft.com/fwlink/?LinkId=111479).</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="84d20-121">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="84d20-121">See Also</span></span>  
+ [<span data-ttu-id="84d20-122">Listes de vérification de disponibilité opérationnelle</span><span class="sxs-lookup"><span data-stu-id="84d20-122">Operational Readiness Checklists</span></span>](../technical-guides/operational-readiness-checklists.md)

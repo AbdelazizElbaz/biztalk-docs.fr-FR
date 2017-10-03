@@ -1,0 +1,1 @@
+<span data-ttu-id="1e711-101">Gestion des partenaires commerciaux</span><span class="sxs-lookup"><span data-stu-id="1e711-101">Trading Partner Management</span></span>

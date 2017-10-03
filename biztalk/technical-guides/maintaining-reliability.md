@@ -1,0 +1,140 @@
+---
+title: "La fiabilité | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 09cdce13-a75b-44d7-8388-7a868bb51c69
+caps.latest.revision: "5"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: eb1f956c0f3b09ee51d3dd9d05f64dbd3eeeab3d
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="maintaining-reliability"></a><span data-ttu-id="f3525-102">La fiabilité</span><span class="sxs-lookup"><span data-stu-id="f3525-102">Maintaining Reliability</span></span>
+<span data-ttu-id="f3525-103">Cette section fournit des informations sur la façon dont vous pouvez résoudre les problèmes de fiabilité avec un [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] système.</span><span class="sxs-lookup"><span data-stu-id="f3525-103">This section provides information about how you can resolve reliability issues with a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system.</span></span> <span data-ttu-id="f3525-104">Ces problèmes peuvent être détectés par les vérifications de maintenance de routine qui sont exécutées dans le [Maintenance de Routine des listes de contrôle](../technical-guides/routine-maintenance-checklists.md) section de ce document.</span><span class="sxs-lookup"><span data-stu-id="f3525-104">These issues may be discovered by the routine maintenance checks that are performed in the [Routine Maintenance Checklists](../technical-guides/routine-maintenance-checklists.md) section of this document.</span></span>  
+  
+ <span data-ttu-id="f3525-105">Outre les rubriques de cette section, les autres rubriques de ce document résoudre les problèmes de fiabilité.</span><span class="sxs-lookup"><span data-stu-id="f3525-105">In addition to the topics in this section, other topics in this document address reliability issues.</span></span> <span data-ttu-id="f3525-106">Ces rubriques sont répertoriées dans [rubriques connexes](../technical-guides/maintaining-reliability.md#BKMK_Related) ci-dessous.</span><span class="sxs-lookup"><span data-stu-id="f3525-106">These topics are listed in [Related Sections](../technical-guides/maintaining-reliability.md#BKMK_Related) below.</span></span>  
+  
+## <a name="testing-group-failover"></a><span data-ttu-id="f3525-107">Test de basculement de groupe</span><span class="sxs-lookup"><span data-stu-id="f3525-107">Testing Group Failover</span></span>  
+ <span data-ttu-id="f3525-108">Effectuez les procédures de cette section dans le cadre des vérifications de fiabilité qui doit être effectuée chaque mois.</span><span class="sxs-lookup"><span data-stu-id="f3525-108">Perform the procedures in this section as part of the reliability checks that should be performed monthly.</span></span> <span data-ttu-id="f3525-109">Ces procédures incluent test de la stratégie de basculement de groupe et vérifier si les ressources du groupe peuvent basculer.</span><span class="sxs-lookup"><span data-stu-id="f3525-109">These procedures include testing the group failover policy, and testing whether the group resources can fail over.</span></span>  
+  
+> [!NOTE]  
+>  <span data-ttu-id="f3525-110">Si l’ordinateur est joint à un domaine, les membres du groupe Admins du domaine doivent être en mesure d’effectuer cette procédure.</span><span class="sxs-lookup"><span data-stu-id="f3525-110">If the computer is joined to a domain, members of the Domain Admins group should be able to perform this procedure.</span></span>  
+  
+> [!NOTE]  
+>  <span data-ttu-id="f3525-111">Pour effectuer les procédures de cette section, vous devez être connecté en tant que membre du groupe Administrateurs sur l’ordinateur local, ou avoir reçu l’autorisation appropriée.</span><span class="sxs-lookup"><span data-stu-id="f3525-111">To perform the procedures in this section, you must be logged on as a member of the Administrators group on the local computer, or you must have been delegated the appropriate authority.</span></span>  
+  
+ <span data-ttu-id="f3525-112">Procédez comme suit pour tester le basculement du groupe sur les ordinateurs exécutant Windows Server 2008.</span><span class="sxs-lookup"><span data-stu-id="f3525-112">Perform the following steps to test group failover on computers running Windows Server 2008.</span></span>  
+  
+#### <a name="to-test-a-group-failover-policy"></a><span data-ttu-id="f3525-113">Pour tester une stratégie de basculement de groupe</span><span class="sxs-lookup"><span data-stu-id="f3525-113">To test a group failover policy</span></span>  
+  
+1.  <span data-ttu-id="f3525-114">Vérifiez que vous avez installé le **le Clustering de basculement** fonctionnalité au moins deux ordinateurs exécutant Windows Server 2008 afin de créer un Cluster de basculement Windows à deux nœuds.</span><span class="sxs-lookup"><span data-stu-id="f3525-114">Make sure you have installed the **Failover Clustering** feature on at least two computer running Windows Server 2008 so as to create a two node Windows Failover Cluster.</span></span> <span data-ttu-id="f3525-115">Pour obtenir des instructions sur la façon d’installer cette fonctionnalité, consultez [installer la fonctionnalité de Clustering de basculement](http://go.microsoft.com/fwlink/?LinkId=157259) (http://go.microsoft.com/fwlink/?LinkId=157259).</span><span class="sxs-lookup"><span data-stu-id="f3525-115">For instructions on how to install this feature, see [Install the Failover Clustering Feature](http://go.microsoft.com/fwlink/?LinkId=157259) (http://go.microsoft.com/fwlink/?LinkId=157259).</span></span>  
+  
+2.  <span data-ttu-id="f3525-116">Ouvrez Gestion du Cluster de basculement en cliquant sur **Démarrer**, puis sur **outils d’administration**, puis en cliquant sur **gestion du Cluster de basculement**.</span><span class="sxs-lookup"><span data-stu-id="f3525-116">Open Failover Cluster Management by clicking **Start**, clicking **Administrative Tools**, and then clicking **Failover Cluster Management**.</span></span>  
+  
+3.  <span data-ttu-id="f3525-117">Dans l’arborescence de la console, développez le nœud de cluster, le **Services et Applications** nœud, cliquez sur l’instance en cluster de l’application à l’échec du basculement, puis cliquez sur **propriétés**.</span><span class="sxs-lookup"><span data-stu-id="f3525-117">In the console tree, expand the cluster node, expand the **Services and Applications** node, right-click the clustered instance of the application to be failed over, and then click **Properties**.</span></span>  
+  
+4.  <span data-ttu-id="f3525-118">Sur le **basculement** onglet, définissez **nombre maximal d’échecs dans la période spécifiée** sur 0, puis cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="f3525-118">On the **Failover** tab, set **Maximum failures in the specified period** to 0, and then click **OK**.</span></span>  
+  
+5.  <span data-ttu-id="f3525-119">Dans l’arborescence de la console, développez le **Services et Applications** nœud.</span><span class="sxs-lookup"><span data-stu-id="f3525-119">In the console tree, expand the **Services and Applications** node.</span></span>  
+  
+6.  <span data-ttu-id="f3525-120">Dans le volet de détails, cliquez sur une ressource, puis cliquez sur **propriétés**.</span><span class="sxs-lookup"><span data-stu-id="f3525-120">In the details pane, right-click a resource, and then click **Properties**.</span></span>  
+  
+7.  <span data-ttu-id="f3525-121">Sur le **stratégies** onglet, définissez **nombre maximal de redémarrages dans la période spécifiée** sur 0, puis cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="f3525-121">On the **Policies** tab, set **Maximum restarts in the specified period** to 0, and then click **OK**.</span></span>  
+  
+8.  <span data-ttu-id="f3525-122">Avec le bouton droit de la ressource, cliquez sur **autres Actions**, puis cliquez sur **simuler une panne de cette ressource**.</span><span class="sxs-lookup"><span data-stu-id="f3525-122">Right-click the resource, click **More Actions**, and then click **Simulate Failure of this resource**.</span></span> <span data-ttu-id="f3525-123">Vérifiez si le groupe réagit en fonction de la stratégie que vous avez spécifié à l’étape précédente.</span><span class="sxs-lookup"><span data-stu-id="f3525-123">Verify whether the group reacts based on the policy you specified in the previous step.</span></span>  
+  
+9. <span data-ttu-id="f3525-124">Cliquez sur l’instance en cluster de l’application à l’échec du basculement, puis cliquez sur **propriétés**.</span><span class="sxs-lookup"><span data-stu-id="f3525-124">Right-click the clustered instance of the application to be failed over, and then click **Properties**.</span></span>  
+  
+10. <span data-ttu-id="f3525-125">Sur le **basculement** onglet, définissez **nombre maximal d’échecs dans la période spécifiée** sur 1, puis cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="f3525-125">On the **Failover** tab, set **Maximum failures in the specified period** to 1, and then click **OK**.</span></span>  
+  
+11. <span data-ttu-id="f3525-126">Avec le bouton droit de la ressource et sélectionnez **mettre cette ressource en ligne**.</span><span class="sxs-lookup"><span data-stu-id="f3525-126">Right-click the resource and select **Bring this resource online**.</span></span>  
+  
+#### <a name="to-test-whether-group-resources-can-fail-over"></a><span data-ttu-id="f3525-127">Pour vérifier si les ressources du groupe peuvent basculer</span><span class="sxs-lookup"><span data-stu-id="f3525-127">To test whether group resources can fail over</span></span>  
+  
+1.  <span data-ttu-id="f3525-128">Vérifiez que vous avez installé le **le Clustering de basculement** fonctionnalité sur l’ordinateur exécutant Windows Server 2008.</span><span class="sxs-lookup"><span data-stu-id="f3525-128">Make sure you have installed the **Failover Clustering** feature on the computer running Windows Server 2008.</span></span> <span data-ttu-id="f3525-129">Pour obtenir des instructions sur la façon d’installer cette fonctionnalité, consultez [installer la fonctionnalité de Clustering de basculement](http://go.microsoft.com/fwlink/?LinkId=157259) (http://go.microsoft.com/fwlink/?LinkId=157259).</span><span class="sxs-lookup"><span data-stu-id="f3525-129">For instructions on how to install this feature, see [Install the Failover Clustering Feature](http://go.microsoft.com/fwlink/?LinkId=157259) (http://go.microsoft.com/fwlink/?LinkId=157259).</span></span>  
+  
+2.  <span data-ttu-id="f3525-130">Ouvrez Gestion du Cluster de basculement en cliquant sur **Démarrer**, puis sur **outils d’administration**, puis en cliquant sur **gestion du Cluster de basculement**.</span><span class="sxs-lookup"><span data-stu-id="f3525-130">Open Failover Cluster Management by clicking **Start**, clicking **Administrative Tools**, and then clicking **Failover Cluster Management**.</span></span>  
+  
+3.  <span data-ttu-id="f3525-131">Dans l’arborescence de la console, développez le nœud de cluster, le **Services et Applications** nœud, puis cliquez sur l’instance en cluster de l’application à être basculé.</span><span class="sxs-lookup"><span data-stu-id="f3525-131">In the console tree, expand the cluster node, expand the **Services and Applications** node, and then click the clustered instance of the application to be failed over.</span></span>  
+  
+4.  <span data-ttu-id="f3525-132">Sur le **Action** menu, cliquez sur **déplacer ce service ou cette application vers un autre nœud**, puis cliquez sur le nœud auquel l’application doit être effectuée.</span><span class="sxs-lookup"><span data-stu-id="f3525-132">On the **Action** menu, click **Move this service or application to another node**, and then click the node to which the application will be failed over.</span></span>  
+  
+5.  <span data-ttu-id="f3525-133">Dans le **Confirmez action** boîte de dialogue zone, choisissez de déplacer vers le nœud sélectionné.</span><span class="sxs-lookup"><span data-stu-id="f3525-133">In the **Please confirm action** dialog box, choose to move the application to selected node.</span></span>  
+  
+6.  <span data-ttu-id="f3525-134">Assurez-vous que le nœud auquel vous avez déplacé l’application est répertorié sur la **propriétaire actuel** dans le volet de détails de l’application.</span><span class="sxs-lookup"><span data-stu-id="f3525-134">Make sure that the node to which you moved the application to is listed against the **Current Owner** in the details pane of the application.</span></span>  
+  
+##  <span data-ttu-id="f3525-135"><a name="BKMK_BTSGrp"></a>Vous être assuré de plusieurs serveurs appartiennent à un groupe BizTalk</span><span class="sxs-lookup"><span data-stu-id="f3525-135"><a name="BKMK_BTSGrp"></a> Ensuring Multiple Servers Are Part of a BizTalk Group</span></span>  
+ <span data-ttu-id="f3525-136">Pour garantir la fiabilité d’un système, au moins deux serveurs BizTalk physiques doivent être membre du groupe BizTalk.</span><span class="sxs-lookup"><span data-stu-id="f3525-136">To ensure the reliability of a system, at least two physical BizTalk servers should be part of the BizTalk group.</span></span>  <span data-ttu-id="f3525-137">Si vous avez besoin ajouter un serveur à un groupe BizTalk, tenez compte les éléments suivants :</span><span class="sxs-lookup"><span data-stu-id="f3525-137">If you need to add a server to a BizTalk group, keep the following in mind:</span></span>  
+  
+-   <span data-ttu-id="f3525-138">Un serveur peut uniquement être associé à un groupe BizTalk.</span><span class="sxs-lookup"><span data-stu-id="f3525-138">A server can only be associated with one BizTalk group.</span></span> <span data-ttu-id="f3525-139">Si un serveur appartient déjà à un autre groupe, vous devez le supprimer de son groupe actuel avant de l'ajouter à un nouveau groupe.</span><span class="sxs-lookup"><span data-stu-id="f3525-139">If a server already belongs to another group, you must first remove that server from its current group before you can add it to a new group.</span></span> <span data-ttu-id="f3525-140">Pour plus d’informations sur la suppression d’un serveur à partir d’un groupe BizTalk, consultez « Pour supprimer un serveur d’un groupe » dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] à l’adresse [http://go.microsoft.com/fwlink/?LinkId=155577](http://go.microsoft.com/fwlink/?LinkId=155577).</span><span class="sxs-lookup"><span data-stu-id="f3525-140">For more information about removing a server from a BizTalk group, see "How to Remove a Server from a Group" in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Help at [http://go.microsoft.com/fwlink/?LinkId=155577](http://go.microsoft.com/fwlink/?LinkId=155577).</span></span>  
+  
+-   <span data-ttu-id="f3525-141">Il n'y a pas d'interaction entre les groupes BizTalk associés à différents serveurs dans un environnement BizTalk Server, excepté dans le cadre d'échanges de message.</span><span class="sxs-lookup"><span data-stu-id="f3525-141">BizTalk groups associated with different servers in a BizTalk Server environment do not interact except to exchange messages.</span></span>  
+  
+-   <span data-ttu-id="f3525-142">Le composant d'exécution de BizTalk Server doit être installé sur l'ordinateur que vous voulez ajouter au groupe BizTalk.</span><span class="sxs-lookup"><span data-stu-id="f3525-142">The BizTalk Server runtime must be installed on the computer you want to add to the BizTalk group.</span></span>  
+  
+> [!NOTE]  
+>  <span data-ttu-id="f3525-143">Pour effectuer les procédures décrites dans cette rubrique, vous devez être connecté en tant que membre du groupe Administrateurs de l’authentification unique et en tant que membre du groupe Administrateurs Windows.</span><span class="sxs-lookup"><span data-stu-id="f3525-143">To perform the procedures in this topic, you must be logged on as a member of the SSO Administrators group and as a member of the Windows Administrators group.</span></span>  
+  
+#### <a name="to-determine-whether-at-least-two-physical-biztalk-servers-are-part-of-the-biztalk-group"></a><span data-ttu-id="f3525-144">Pour déterminer si au moins deux serveurs BizTalk physiques font partie du groupe BizTalk</span><span class="sxs-lookup"><span data-stu-id="f3525-144">To determine whether at least two physical BizTalk servers are part of the BizTalk group</span></span>  
+  
+1.  <span data-ttu-id="f3525-145">Ouvrez le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] console d’Administration en cliquant sur **Démarrer**, en pointant sur **tous les programmes**, en pointant sur **Microsoft [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]** , puis en cliquant sur **Administration de BizTalk Server**.</span><span class="sxs-lookup"><span data-stu-id="f3525-145">Open the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console by clicking **Start**, pointing to **All Programs**, pointing to **Microsoft [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]**, and then clicking **BizTalk Server Administration**.</span></span>  
+  
+2.  <span data-ttu-id="f3525-146">Développez le [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] nœud, développez le **groupe BizTalk** nœud, puis développez le **paramètres de plateforme** nœud.</span><span class="sxs-lookup"><span data-stu-id="f3525-146">Expand the [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] node, expand the **BizTalk Group** node, and then expand the **Platform Settings** node.</span></span>  
+  
+3.  <span data-ttu-id="f3525-147">Cliquez sur le **serveurs** nœud.</span><span class="sxs-lookup"><span data-stu-id="f3525-147">Click the **Servers** node.</span></span> <span data-ttu-id="f3525-148">Vérifiez que plus d’un serveur est répertorié dans le **serveurs** volet.</span><span class="sxs-lookup"><span data-stu-id="f3525-148">Verify that more than one server is listed in the **Servers** pane.</span></span>  
+  
+    > [!NOTE]  
+    >  <span data-ttu-id="f3525-149">Pour afficher des informations sur le serveur, cliquez sur le serveur, pointez sur **vue**, puis cliquez sur **Page Hub du groupe**.</span><span class="sxs-lookup"><span data-stu-id="f3525-149">To view information about the server, right-click the server, point to **View**, and then click **Group Hub Page**.</span></span>  
+  
+#### <a name="to-add-a-server-to-a-biztalk-group"></a><span data-ttu-id="f3525-150">Pour ajouter un serveur à un groupe BizTalk</span><span class="sxs-lookup"><span data-stu-id="f3525-150">To add a server to a BizTalk group</span></span>  
+  
+1.  <span data-ttu-id="f3525-151">Sur l’ordinateur que vous souhaitez ajouter à un groupe BizTalk, cliquez sur **Démarrer**, cliquez sur **tous les programmes**, cliquez sur **Microsoft [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]** , puis cliquez sur  **Configuration de BizTalk Server**.</span><span class="sxs-lookup"><span data-stu-id="f3525-151">On the computer that you want to add to a BizTalk group, click **Start**, click **All Programs**, click **Microsoft [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]**, and then click **BizTalk Server Configuration**.</span></span>  
+  
+2.  <span data-ttu-id="f3525-152">Dans **Configuration de Microsoft BizTalk Server 2010**, sélectionnez **configuration personnalisée**.</span><span class="sxs-lookup"><span data-stu-id="f3525-152">In **Microsoft BizTalk Server 2010 Configuration**, select **Custom configuration**.</span></span>  
+  
+3.  <span data-ttu-id="f3525-153">Dans **nom du serveur de base de données**, tapez le nom du serveur SQL pour le groupe BizTalk auquel associer le serveur.</span><span class="sxs-lookup"><span data-stu-id="f3525-153">In **Database server name**, type the name of the SQL server for the BizTalk group that the server is joining.</span></span>  
+  
+4.  <span data-ttu-id="f3525-154">Dans **informations d’identification du Service**, tapez le nom d’utilisateur et un mot de passe que les services utilisera, puis cliquez sur **configurer**.</span><span class="sxs-lookup"><span data-stu-id="f3525-154">In **Service credential**, type the appropriate user name and password that the services will use, and then click **Configure**.</span></span>  
+  
+5.  <span data-ttu-id="f3525-155">Dans l’arborescence de navigation sur le côté gauche de l’écran, cliquez sur **Enterprise SSO**.</span><span class="sxs-lookup"><span data-stu-id="f3525-155">In the navigation tree on the left side of the screen, click **Enterprise SSO**.</span></span>  
+  
+6.  <span data-ttu-id="f3525-156">Sur le **Enterprise Single Sign-On** , cliquez sur **joindre un système SSO existant**.</span><span class="sxs-lookup"><span data-stu-id="f3525-156">On the **Enterprise Single Sign-On** page, click **Join an existing SSO system**.</span></span>  
+  
+    > [!NOTE]  
+    >  <span data-ttu-id="f3525-157">Assurez-vous que le nom du serveur et le nom de la base de données pointent vers le serveur de base de données SSO principal pour le groupe BizTalk auquel associer le serveur.</span><span class="sxs-lookup"><span data-stu-id="f3525-157">Ensure that the server name and database name point to the master SSO database server for the BizTalk group that the server is joining.</span></span>  
+  
+7.  <span data-ttu-id="f3525-158">Dans l’arborescence de navigation sur le côté gauche de l’écran, cliquez sur **groupe**.</span><span class="sxs-lookup"><span data-stu-id="f3525-158">In the navigation tree on the left side of the screen, click **Group**.</span></span>  
+  
+8.  <span data-ttu-id="f3525-159">Sur le **groupe** , cliquez sur **joindre un groupe BizTalk existant**.</span><span class="sxs-lookup"><span data-stu-id="f3525-159">On the **Group** page, click **Join an existing BizTalk Group**.</span></span>  
+  
+    > [!NOTE]  
+    >  <span data-ttu-id="f3525-160">Assurez-vous que le nom du serveur et le nom de la base de données pointent vers les bases de données pour le groupe BizTalk auquel associer le serveur.</span><span class="sxs-lookup"><span data-stu-id="f3525-160">Ensure that the server name and database name point to the databases for the BizTalk group that the server is joining.</span></span>  
+  
+9. <span data-ttu-id="f3525-161">Dans la barre de menus, cliquez sur **appliquer la Configuration** pour configurer Enterprise Single Sign-On et que le groupe sur cet ordinateur.</span><span class="sxs-lookup"><span data-stu-id="f3525-161">On the menu bar, click **Apply Configuration** to configure both Enterprise Single Sign-On and the group on this computer.</span></span>  
+  
+##  <span data-ttu-id="f3525-162"><a name="BKMK_Related"></a> Sections connexes</span><span class="sxs-lookup"><span data-stu-id="f3525-162"><a name="BKMK_Related"></a> Related Sections</span></span>  
+  
+-   <span data-ttu-id="f3525-163">Pour plus d’informations sur la vérification de disques défaillants dans le matériel RAID, consultez « Affichage Propriétés du disque » dans l’aide du produit Windows Server 2003 à [http://go.microsoft.com/fwlink/?linkid=104161](http://go.microsoft.com/fwlink/?linkid=104161).</span><span class="sxs-lookup"><span data-stu-id="f3525-163">For information about checking for failed disks in the hardware RAID, see "View Disk Properties" in the Windows Server 2003 product Help at [http://go.microsoft.com/fwlink/?linkid=104161](http://go.microsoft.com/fwlink/?linkid=104161).</span></span>  
+  
+-   <span data-ttu-id="f3525-164">Pour plus d’informations sur la vérification de manuellement pour les messages suspendus, consultez « Investigating Orchestration, Port et échecs de messages » dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] à l’adresse [http://go.microsoft.com/fwlink/?LinkID=154512](http://go.microsoft.com/fwlink/?LinkID=154512).</span><span class="sxs-lookup"><span data-stu-id="f3525-164">For information about manually checking for suspended messages, see "Investigating Orchestration, Port, and Message Failures" in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Help at [http://go.microsoft.com/fwlink/?LinkID=154512](http://go.microsoft.com/fwlink/?LinkID=154512).</span></span>  
+  
+-   <span data-ttu-id="f3525-165">Pour plus d’informations sur vous assurant que chaque hôte dispose d’une instance en cours d’exécution au moins deux serveurs physiques de BizTalk, consultez [haute disponibilité pour les hôtes BizTalk](../technical-guides/high-availability-for-biztalk-hosts.md).</span><span class="sxs-lookup"><span data-stu-id="f3525-165">For information about ensuring that each host has an instance running on at least two physical BizTalk servers, see [High Availability for BizTalk Hosts](../technical-guides/high-availability-for-biztalk-hosts.md).</span></span>  
+  
+-   <span data-ttu-id="f3525-166">Pour plus d’informations sur vous assurant que chaque hôte dispose d’une instance en cours d’exécution au moins deux serveurs physiques de BizTalk, consultez [mise à l’échelle des hôtes de réception](../technical-guides/scaling-out-receiving-hosts.md).</span><span class="sxs-lookup"><span data-stu-id="f3525-166">For information about ensuring that each host has an instance running on at least two physical BizTalk servers, see [Scaling Out Receiving Hosts](../technical-guides/scaling-out-receiving-hosts.md).</span></span>  
+  
+-   <span data-ttu-id="f3525-167">Pour plus d’informations sur vous être assuré que le basculement pour les services cluster tout a été testés, consultez [Clustering du serveur de secret principal](../technical-guides/clustering-the-master-secret-server.md).</span><span class="sxs-lookup"><span data-stu-id="f3525-167">For information about ensuring that failover for all clustered services has been tested, see [Clustering the Master Secret Server](../technical-guides/clustering-the-master-secret-server.md).</span></span>  
+  
+-   <span data-ttu-id="f3525-168">Pour plus d’informations à propos de s’assurer que les bases de données BizTalk sont mis en cluster sous les Services SQL, consultez [Clustering le Databases2 serveur BizTalk](../technical-guides/clustering-the-biztalk-server-databases2.md).</span><span class="sxs-lookup"><span data-stu-id="f3525-168">For information about ensuring that the BizTalk databases are clustered under SQL Services, see [Clustering the BizTalk Server Databases2](../technical-guides/clustering-the-biztalk-server-databases2.md).</span></span>  
+  
+-   <span data-ttu-id="f3525-169">Pour plus d’informations sur la détermination de si n’importe quel code instable est utilisé (nécessitant des hôtes distincts), consultez [haute disponibilité pour les hôtes BizTalk](../technical-guides/high-availability-for-biztalk-hosts.md).</span><span class="sxs-lookup"><span data-stu-id="f3525-169">For information about determining whether any unstable code is being used (requiring separate hosts), see [High Availability for BizTalk Hosts](../technical-guides/high-availability-for-biztalk-hosts.md).</span></span>  
+  
+-   <span data-ttu-id="f3525-170">Pour plus d’informations sur l’exécution du test fonctionnel de toutes les nouvelles applications BizTalk, consultez [tester une Application](../technical-guides/testing-an-application.md)</span><span class="sxs-lookup"><span data-stu-id="f3525-170">For information about performing functional testing of all new BizTalk applications, see [Testing an Application](../technical-guides/testing-an-application.md)</span></span>

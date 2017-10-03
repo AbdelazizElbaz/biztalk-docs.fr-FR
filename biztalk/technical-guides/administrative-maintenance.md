@@ -1,0 +1,54 @@
+---
+title: "Maintenance d’administration | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 67cdf9d7-5448-40c5-8c5f-eae0e281d22c
+caps.latest.revision: "2"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: ed53236352831d3ae920263d57b89ed4789be0ec
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="administrative-maintenance"></a><span data-ttu-id="3ee6b-102">Maintenance d’administration</span><span class="sxs-lookup"><span data-stu-id="3ee6b-102">Administrative Maintenance</span></span>
+<span data-ttu-id="3ee6b-103">Cette section fournit des informations sur comment vous pouvez résoudre les problèmes d’administration avec un [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] système.</span><span class="sxs-lookup"><span data-stu-id="3ee6b-103">This section provides information about how you can resolve administration issues with a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system.</span></span> <span data-ttu-id="3ee6b-104">Ces problèmes peuvent être détectés par les vérifications de maintenance de routine qui sont exécutées dans le [Maintenance de Routine des listes de contrôle](../technical-guides/routine-maintenance-checklists.md) section.</span><span class="sxs-lookup"><span data-stu-id="3ee6b-104">These issues may be discovered by the routine maintenance checks that are performed in the [Routine Maintenance Checklists](../technical-guides/routine-maintenance-checklists.md) section.</span></span>  
+  
+ <span data-ttu-id="3ee6b-105">Outre les rubriques de cette section, les autres rubriques de ce document résoudre des problèmes de l’administration.</span><span class="sxs-lookup"><span data-stu-id="3ee6b-105">In addition to the topics in this section, other topics in this document address administration issues.</span></span> <span data-ttu-id="3ee6b-106">Ces rubriques sont répertoriées dans les rubriques connexes ci-dessous.</span><span class="sxs-lookup"><span data-stu-id="3ee6b-106">These topics are listed in Related Sections below.</span></span>  
+  
+## <a name="in-this-section"></a><span data-ttu-id="3ee6b-107">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="3ee6b-107">In This Section</span></span>  
+  
+-   [<span data-ttu-id="3ee6b-108">Meilleures pratiques pour la Maintenance d’administration</span><span class="sxs-lookup"><span data-stu-id="3ee6b-108">Best Practices for Administrative Maintenance</span></span>](../technical-guides/best-practices-for-administrative-maintenance.md)  
+  
+-   [<span data-ttu-id="3ee6b-109">Comment démarrer l’Agent SQL Server</span><span class="sxs-lookup"><span data-stu-id="3ee6b-109">How to Start the SQL Server Agent</span></span>](../technical-guides/how-to-start-the-sql-server-agent.md)  
+  
+-   [<span data-ttu-id="3ee6b-110">Comment planifier un travail de sauvegarde de BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="3ee6b-110">How to Schedule a Backup BizTalk Server Job</span></span>](../technical-guides/how-to-schedule-a-backup-biztalk-server-job.md)  
+  
+-   [<span data-ttu-id="3ee6b-111">Comment configurer un travail de sauvegarde de BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="3ee6b-111">How to Configure a Backup BizTalk Server Job</span></span>](../technical-guides/how-to-configure-a-backup-biztalk-server-job.md)  
+  
+## <a name="related-sections"></a><span data-ttu-id="3ee6b-112">Sections connexes</span><span class="sxs-lookup"><span data-stu-id="3ee6b-112">Related Sections</span></span>  
+  
+-   <span data-ttu-id="3ee6b-113">Pour plus d’informations sur la vérification de la [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] service de l’Agent s’exécute sur le [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]et vous être assuré que tous BizTalk associées travaux SQL Server fonctionnent correctement, consultez [analyse les travaux de l’Agent SQL Server](../technical-guides/monitoring-sql-server-agent-jobs.md).</span><span class="sxs-lookup"><span data-stu-id="3ee6b-113">For information about ensuring that the [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Agent service is running on the [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)], and ensuring that all BizTalk related SQL Server jobs are working properly, see [Monitoring SQL Server Agent Jobs](../technical-guides/monitoring-sql-server-agent-jobs.md).</span></span>  
+  
+-   <span data-ttu-id="3ee6b-114">Pour plus d’informations sur la suppression d’une application BizTalk ou un artefact à l’aide de l’outil de ligne de commande BTSTask, consultez « Commande RemoveApp » dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] à l’adresse [http://go.microsoft.com/fwlink/?LinkID=154687](http://go.microsoft.com/fwlink/?LinkID=154687).</span><span class="sxs-lookup"><span data-stu-id="3ee6b-114">For information about removing a BizTalk application or artifact using the BTSTask command-line tool, see "RemoveApp Command" in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Help at [http://go.microsoft.com/fwlink/?LinkID=154687](http://go.microsoft.com/fwlink/?LinkID=154687).</span></span>  
+  
+-   <span data-ttu-id="3ee6b-115">Pour plus d’informations sur la suppression d’un artefact à partir d’une application à l’aide de la console Administration de BizTalk Server ou l’outil de ligne de commande BTSTask, consultez « Comment vers supprimer un artefact d’une Application » dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] à l’adresse [http:// go.Microsoft.com/fwlink/ ? LinkID = 154688](http://go.microsoft.com/fwlink/?LinkID=154688).</span><span class="sxs-lookup"><span data-stu-id="3ee6b-115">For information about removing an artifact from an application using either the BizTalk Server Administration console or the BTSTask command-line tool, see "How to Remove an Artifact from an Application" in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Help at [http://go.microsoft.com/fwlink/?LinkID=154688](http://go.microsoft.com/fwlink/?LinkID=154688).</span></span>  
+  
+-   <span data-ttu-id="3ee6b-116">Pour plus d’informations sur la vérification de la configuration de la Console Administration de BizTalk, consultez « À l’aide de la Console Administration BizTalk Server » dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] à l’adresse [http://go.microsoft.com/fwlink/?LinkID=154689](http://go.microsoft.com/fwlink/?LinkID=154689).</span><span class="sxs-lookup"><span data-stu-id="3ee6b-116">For information about verifying the configuration in the BizTalk Administration Console, see "Using the BizTalk Server Administration Console" in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Help at [http://go.microsoft.com/fwlink/?LinkID=154689](http://go.microsoft.com/fwlink/?LinkID=154689).</span></span>  
+  
+-   <span data-ttu-id="3ee6b-117">Pour plus d’informations sur la vérification du fichier BTSNTSvc.exe.config, consultez « Fichier BTSNTSvc.exe.config » dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] à l’adresse [http://go.microsoft.com/fwlink/?LinkID=154690](http://go.microsoft.com/fwlink/?LinkID=154690).</span><span class="sxs-lookup"><span data-stu-id="3ee6b-117">For information about verifying the BTSNTSvc.exe.config file, see "BTSNTSvc.exe.config File" in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Help at [http://go.microsoft.com/fwlink/?LinkID=154690](http://go.microsoft.com/fwlink/?LinkID=154690).</span></span>  
+  
+-   <span data-ttu-id="3ee6b-118">Pour plus d’informations sur la vérification de BizTalk les clés de Registre associées, consultez « Windows des informations de Registre pour les utilisateurs expérimentés » dans le site Web de support technique et de Microsoft Help à [http://go.microsoft.com/fwlink/?LinkId=155583](http://go.microsoft.com/fwlink/?LinkId=155583).</span><span class="sxs-lookup"><span data-stu-id="3ee6b-118">For information about verifying the BizTalk related registry keys, see "Windows registry information for advanced users" in the Microsoft Help and Support Web site at [http://go.microsoft.com/fwlink/?LinkId=155583](http://go.microsoft.com/fwlink/?LinkId=155583).</span></span>  
+  
+-   <span data-ttu-id="3ee6b-119">Pour plus d’informations sur l’exécution de BizTalk Best Practices Analyzer, consultez « BizTalk Server Best Practices Analyzer » dans la Center Download Microsoft à [http://go.microsoft.com/fwlink/?LinkId=83317](http://go.microsoft.com/fwlink/?LinkId=83317).</span><span class="sxs-lookup"><span data-stu-id="3ee6b-119">For information about running the BizTalk Best Practices Analyzer, see "BizTalk Server Best Practices Analyzer" in the Microsoft Download Center at [http://go.microsoft.com/fwlink/?LinkId=83317](http://go.microsoft.com/fwlink/?LinkId=83317).</span></span>  
+  
+-   <span data-ttu-id="3ee6b-120">Pour plus d’informations sur la maintenance des bases de données BAM, consultez « Gestion des bases de BAM » dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] à l’adresse [http://go.microsoft.com/fwlink/?LinkId=155584](http://go.microsoft.com/fwlink/?LinkId=155584).</span><span class="sxs-lookup"><span data-stu-id="3ee6b-120">For information about maintaining BAM databases, see "Managing BAM Databases" in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Help at [http://go.microsoft.com/fwlink/?LinkId=155584](http://go.microsoft.com/fwlink/?LinkId=155584).</span></span>  
+  
+-   <span data-ttu-id="3ee6b-121">Pour plus d’informations à propos de s’assurer que les derniers service packs et correctifs logiciels sont installés, consultez le site Web Microsoft Update à l’adresse [http://go.microsoft.com/fwlink/?LinkID=47813](http://go.microsoft.com/fwlink/?LinkID=47813).</span><span class="sxs-lookup"><span data-stu-id="3ee6b-121">For information about ensuring that the latest service packs and hotfixes are installed, see the Microsoft Update Web site at [http://go.microsoft.com/fwlink/?LinkID=47813](http://go.microsoft.com/fwlink/?LinkID=47813).</span></span>

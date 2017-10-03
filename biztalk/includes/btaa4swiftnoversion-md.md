@@ -1,0 +1,1 @@
+<span data-ttu-id="8308d-101">BizTalk Accelerator pour SWIFT</span><span class="sxs-lookup"><span data-stu-id="8308d-101">BizTalk Accelerator for SWIFT</span></span>
