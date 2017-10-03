@@ -1,0 +1,1 @@
+Version du pack d'adaptateurs de BizTalk

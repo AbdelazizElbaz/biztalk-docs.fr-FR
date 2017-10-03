@@ -1,0 +1,1 @@
+Plug-in Add Adapter Service Reference Visual Studio
