@@ -1,0 +1,51 @@
+---
+title: "Liste de vérification : Effectuer des vérifications de Maintenance mensuelle | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 588b74fa-6bf5-43ad-aa15-3595adde76d1
+caps.latest.revision: "3"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 35b7b3aa9a9d6dfcea7dfc40f740defdeff2d45f
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="checklist-performing-monthly-maintenance-checks"></a>Liste de vérification : Effectuer des vérifications de Maintenance mensuelle
+Cette rubrique décrit les étapes nécessaires pour effectuer des vérifications de maintenance de la fiabilité, administration, sécurité et des performances de tous les mois un [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] système.  
+  
+|Étapes|Référence|  
+|-----------|---------------|  
+|Vérifiez que la clé de secret principal est sauvegardée et disponibles sur le stockage hors connexion (vérification de la fiabilité).|[Comment sauvegarder le Secret principal](http://go.microsoft.com/fwlink/?LinkId=151395) (http://go.microsoft.com/fwlink/?LinkId=151395).|  
+|Vérifiez que le basculement de tous les services de cluster a été testé (vérification de la fiabilité).|[Revue de test SQL Server de Configuration du Cluster pour les scénarios de basculement](../technical-guides/reviewing-and-testing-sql-server-cluster-configuration-for-failover-scenarios.md)test de basculement de groupe|  
+|Assurez-vous que le service SSO est en cluster (vérification de la fiabilité).|[Clustering du serveur de secret principal](../technical-guides/clustering-the-master-secret-server.md)|  
+|Assurez-vous que les bases de données BizTalk Server sont en cluster sous services de SQL Server (vérification de la fiabilité).|[Clustering du Databases2 de BizTalk Server](../technical-guides/clustering-the-biztalk-server-databases2.md)|  
+|Assurez-vous qu’au moins deux serveurs BizTalk physiques font partie du groupe BizTalk (vérification de la fiabilité).|[Vous être assuré de plusieurs serveurs appartiennent à un groupe BizTalk](../technical-guides/maintaining-reliability.md#BKMK_BTSGrp)|  
+|Déterminer si n’importe quel code instable est utilisé et si tel est le cas, utilisez des hôtes distincts (vérification de la fiabilité).|[Haute disponibilité pour les hôtes BizTalk](../technical-guides/high-availability-for-biztalk-hosts.md)|  
+|Effectuez un test fonctionnel de toutes les applications BizTalk nouveau (vérification de la fiabilité).|-   [Test d’une Application](../technical-guides/testing-an-application.md)<br />-   [Tâches de mise en lots pour le déploiement d’applications BizTalk](http://go.microsoft.com/fwlink/?LinkId=154686) (http://go.microsoft.com/fwlink/?LinkId=154686).|  
+|Configurer et planifier des travaux de sauvegarde BizTalk Server (vérification de la fiabilité).|-   [Comment configurer le travail de sauvegarde de BizTalk Server](http://go.microsoft.com/fwlink/?LinkID=153813) (http://go.microsoft.com/fwlink/?LinkID=153813)<br />-   [Comment planifier le travail de sauvegarde de BizTalk Server](http://go.microsoft.com/fwlink/?LinkId=154674) (http://go.microsoft.com/fwlink/?LinkId=154674)|  
+|Vérifiez que la version correcte d’un jeu d’assemblys est installée sur chaque ordinateur BizTalk (contrôle d’intégrité).|Utilisez le **vérificateur d’Assembly BizTalk et à distance GAC** outil (BTSAssemblyChecker.exe) pour vérifier les versions des assemblys déployés dans la base de données de gestion BizTalk et pour vérifier qu’ils sont inscrits correctement dans le GAC sur tous les [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ordinateurs. Vous pouvez utiliser cet outil pour vérifier que tous les assemblys contenant les artefacts d’une certaine application BizTalk sont installés sur tous les nœuds de BizTalk. L’outil est particulièrement utile en conjonction avec une stratégie de contrôle de version solide pour vérifier que la version correcte d’un jeu d’assemblys est installée sur chaque ordinateur BizTalk, en particulier lorsque l’approche de déploiement de côte à côte est utilisé. L’outil est disponible avec le [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] Support\Tools\x86\BTSAssemblyChecker.exe support d’installation.|  
+|Déterminer s’il existe des inutiles BizTalk applications, les artefacts et configurations (vérification de l’administration).|-Supprimez tous les inutiles BizTalk applications, les artefacts et les configurations.<br />-Pour plus d’informations sur la suppression d’une application BizTalk ou un artefact à l’aide de l’outil de ligne de commande BTSTask consultez [commande RemoveApp](http://go.microsoft.com/fwlink/?LinkId=154687) (http://go.microsoft.com/fwlink/?LinkId=154687).<br />-Pour plus d’informations sur la suppression d’un artefact à partir d’une application à l’aide de la console Administration de BizTalk Server ou l’outil de ligne de commande BTSTask, consultez [comment supprimer un artefact d’une Application](http://go.microsoft.com/fwlink/?LinkId=154688) (http:// go.Microsoft.com/fwlink/ ? LinkId = 154688).|  
+|Vérifiez la console Administration de BizTalk Server pour toutes les modifications non approuvé (vérification de l’administration).|[À l’aide de la Console Administration de BizTalk Server](http://go.microsoft.com/fwlink/?LinkId=154689) (http://go.microsoft.com/fwlink/?LinkId=154689).|  
+|Vérifiez BTSNTSvc.exe.config pour toutes les modifications non approuvé (vérification de l’administration).|[Fichier BTSNTSvc.exe.config](http://go.microsoft.com/fwlink/?LinkId=154690) (http://go.microsoft.com/fwlink/?LinkId=154690).|  
+|Vérifiez les clés de Registre liés à BizTalk Server pour toutes les modifications non approuvé (vérification de l’administration).|L’article 256986 de la Base de connaissances Microsoft[« Informations de Registre Windows pour les utilisateurs expérimentés »](http://go.microsoft.com/fwlink/?LinkId=158859) (http://go.microsoft.com/fwlink/?LinkId=158859).|  
+|Exécuter le Best Practices Analyzer pour BizTalk Server (vérification de l’administration).|[BizTalk Server Best Practices Analyzer](http://go.microsoft.com/fwlink/?LinkId=83317) (http://go.microsoft.com/fwlink/?LinkId=83317).|  
+|Assurez-vous que les derniers service packs et mises à jour sont installés (vérification de l’administration et de sécurité).|[Mise à jour Microsoft](http://go.microsoft.com/fwlink/?LinkId=154691) (http://go.microsoft.com/fwlink/?LinkId=154691).|  
+|Assurez-vous que les artefacts pour différents partenaires commerciaux ne sont pas installés sur le même hôte (vérification de sécurité).|[Configuration des ordinateurs hôtes et les Instances d’hôte](../technical-guides/configuring-hosts-and-host-instances.md)|  
+|Assurez-vous que BizTalk Server utilise uniquement au niveau du domaine utilisateurs et groupes (vérification de sécurité).|[Groupes de domaine](http://go.microsoft.com/fwlink/?LinkId=154692) (http://go.microsoft.com/fwlink/?LinkId=154692).|  
+|Vérifiez que la Configuration de sécurité MSDTC est activée (vérification de sécurité).|Suivez les instructions dans la section « Définir les options de Configuration de la sécurité MSDTC appropriées sur Windows Server 2003 SP1, Windows XP SP2, Windows Server 2008 et Windows Vista » de [Troubleshooting Problems with MSDTC](http://go.microsoft.com/fwlink/?LinkId=154693) (http:// go.Microsoft.com/fwlink/ ? LinkId = 154693).|  
+|Déterminer si l’intervalle d’actualisation du cache BizTalk Server doit être augmentée (vérification de performances).|[Comment régler l’intervalle d’actualisation du Cache Configuration](../technical-guides/how-to-adjust-the-configuration-cache-refresh-interval.md)|  
+|Déterminer si les options de limitation de chaque ordinateur hôte doivent être ajustement (vérification de performances).|-Pour plus d’informations sur la limitation de l’hôte entrant et sortant, consultez [quelle est la limitation des hôtes ?](http://go.microsoft.com/fwlink/?LinkId=154694) (http://go.microsoft.com/fwlink/?LinkId=154694).<br />-Pour plus d’informations sur les déclencheurs, les actions et les stratégies de prévention de limitation du trafic entrant et sortant, consultez la section « Limitation des déclencheurs de condition, les actions et les stratégies d’atténuation » de [comment BizTalk Server implémente la limitation des hôtes ](http://go.microsoft.com/fwlink/?LinkId=154695) (http://go.microsoft.com/fwlink/?LinkId=154695).|  
+|Déterminer si le suivi inutile est activé, telles que l’orchestration, la forme et du moteur de règles d’entreprise (BRE) suivi d’événements (vérification de performances).|-   [Comment désactiver le suivi de](../technical-guides/how-to-disable-tracking.md)<br />-   [Planification pour le suivi](../technical-guides/planning-for-tracking.md)<br />-   [Meilleures pratiques pour le suivi](../technical-guides/planning-for-tracking.md#BKMK_TrackingBP)|  
+|Déterminez si vous utilisez un hôte dédié pour le suivi de maintenance (vérification de performances).|[Configuration d’un hôte de suivi dédié](../technical-guides/configuring-a-dedicated-tracking-host.md)|  
+|Vérifiez la taille de la base de données BizTalk Server pour une tendance haussière (vérification de performances).|-Pour plus d’informations sur le dimensionnement de la base de données de suivi, consultez [instructions dimensionnement de bases de données de suivi](http://go.microsoft.com/fwlink/?LinkId=154677) (http://go.microsoft.com/fwlink/?LinkId=154677).<br />-Pour plus d’informations sur les bases de données MessageBox, BizTalkDTADb et BAMPrimaryImport de dimensionnement, consultez [identifier les goulots d’étranglement au niveau de la base de données](http://go.microsoft.com/fwlink/?LinkId=154678) (http://go.microsoft.com/fwlink/?LinkId=154678).|  
+  
+## <a name="see-also"></a>Voir aussi  
+ [Maintenance de routine des listes de contrôle](../technical-guides/routine-maintenance-checklists.md)

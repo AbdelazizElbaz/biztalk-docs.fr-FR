@@ -1,0 +1,1 @@
+Assistant de développement de l'adaptateur WCF LOB

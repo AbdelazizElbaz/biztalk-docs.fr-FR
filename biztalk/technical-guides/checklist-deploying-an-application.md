@@ -1,0 +1,46 @@
+---
+title: "Liste de vérification : Déploiement d’une Application | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 5e699ac3-7998-48d6-96b7-2f8f1a3d52e5
+caps.latest.revision: "5"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 713eef12a06cb8331faf39acede7c14143a45032
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="checklist-deploying-an-application"></a>Liste de vérification : Déploiement d’une Application
+Cette rubrique décrit les étapes impliquées dans le déploiement d’une application BizTalk et ses artefacts dans un environnement de production. Il montre comment déployer une application dans l’environnement de développement, l’exporter dans un fichier .msi, puis l’importer dans l’environnement de production à partir du fichier .msi.  
+  
+ Déploiement de l’application se compose de l’importation de l’application dans un groupe et installation de l’application sur des serveurs individuels (instances de l’hôte) dans le groupe. Pour plus d’informations sur l’importation et l’installation d’applications, consultez [comment importer une Application à partir d’un fichier .msi](../technical-guides/how-to-import-an-application-from-an-msi-file.md).  
+  
+ Pour plus d’informations sur le déploiement d’application, consultez [le processus de déploiement d’Application](http://go.microsoft.com/fwlink/p/?LinkId=154716) (http://go.microsoft.com/fwlink/p/?LinkId=154716).  
+  
+|Étapes|Référence|  
+|-----------|---------------|  
+|Assurez-vous que vous disposez des autorisations appropriées pour effectuer le déploiement.|[Autorisations permettant de gérer une Application](../technical-guides/permissions-for-managing-an-application.md)|  
+|Définir les propriétés de déploiement dans Visual Studio pour chaque projet dans la solution BizTalk Server, y compris l’application à l’assembly sera déployé.<br /><br /> Déployer ou redéployer les assemblys BizTalk Server requis dans l’application BizTalk dans l’environnement de développement.|-   [Comment définir des propriétés de déploiement dans Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=154718) (http://go.microsoft.com/fwlink/p/?LinkId=154718).<br />-   [Déploiement d’assemblys BizTalk à partir de Visual Studio dans une Application BizTalk](http://go.microsoft.com/fwlink/p/?LinkId=154719) (http://go.microsoft.com/fwlink/p/?LinkId=154719).<br />-   [Comment redéployer un Assembly BizTalk à partir de Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=154720) (http://go.microsoft.com/fwlink/p/?LinkId=154720).<br />-   [Déploiement d’un Assembly](../technical-guides/deploying-an-assembly.md)<br />-« Déploiement d’une Application BizTalk », « Création d’une Application BizTalk » et « Déploiement d’un Assembly BizTalk » sections de [meilleures pratiques pour le déploiement d’une Application](http://msdn.microsoft.com/library/gg634504.aspx).<br />-Section « Déploiement d’une Application BizTalk » [problèmes connus avec le déploiement d’une Application](../technical-guides/known-issues-with-deploying-an-application.md).|  
+|Ajouter des artefacts à l’application BizTalk et configurer les artefacts dans l’environnement de développement.<br /><br /> Cela peut inclure la factorisation des artefacts dans plusieurs Applications BizTalk.|-   [Comment créer ou ajouter un artefact](http://go.microsoft.com/fwlink/p/?LinkId=154724) (http://go.microsoft.com/fwlink/p/?LinkId=154724).<br />-   [La gestion des artefacts](http://go.microsoft.com/fwlink/p/?LinkId=154725) (http://go.microsoft.com/fwlink/p/?LinkId=154725).<br />-   [Fichiers de liaison et déploiement d’applications](http://go.microsoft.com/fwlink/p/?LinkId=154726) (http://go.microsoft.com/fwlink/p/?LinkId=154726).<br />-   [Ajout d’artefacts à une Application](../technical-guides/adding-artifacts-to-an-application.md)<br />-Section « Ajout d’artefacts à une Application BizTalk » [meilleures pratiques pour le déploiement d’une Application](http://msdn.microsoft.com/library/gg634504.aspx).<br />-Section « Ajout d’artefacts à une Application BizTalk » [problèmes connus avec le déploiement d’une Application](../technical-guides/known-issues-with-deploying-an-application.md).|  
+|Exportez l’application BizTalk dans un fichier .msi dans l’environnement de développement.|-   [Comment exporter une Application vers un fichier .msi](../technical-guides/how-to-export-an-application-to-an-msi-file.md)<br />-Section « Exportation d’une Application BizTalk » [meilleures pratiques pour le déploiement d’une Application](http://msdn.microsoft.com/library/gg634504.aspx).<br />-Section « Exportation d’une Application BizTalk » [problèmes connus avec le déploiement d’une Application](../technical-guides/known-issues-with-deploying-an-application.md).|  
+|Importer l’application BizTalk dans l’environnement de production à partir du fichier .msi. (Cette opération se compose de l’importation de l’application dans le groupe et si l’application inclut des artefacts basés sur le fichier, l’installation de l’application sur chaque serveur dans le groupe).|-   [Comment exporter une Application vers un fichier .msi](../technical-guides/how-to-export-an-application-to-an-msi-file.md)<br />-   [Comment installer une Application](http://go.microsoft.com/fwlink/p/?LinkId=154728) (http://go.microsoft.com/fwlink/p/?LinkId=154728).<br />-« L’importation d’une Application BizTalk » de section de [meilleures pratiques pour le déploiement d’une Application](http://msdn.microsoft.com/library/gg634504.aspx)<br />-« L’importation d’une Application BizTalk » de section de [problèmes connus avec le déploiement d’une Application](../technical-guides/known-issues-with-deploying-an-application.md)|  
+|Apportez les modifications supplémentaires à l’application BizTalk dans l’environnement de production pour qu’il fonctionne dans cet environnement, telles que la modification des configurations de port. Si vous procédez ainsi, l’exporter dans un fichier .msi.|-   [Comment exporter une Application vers un fichier .msi](../technical-guides/how-to-export-an-application-to-an-msi-file.md)<br />-   [Création et modification des Applications BizTalk](http://go.microsoft.com/fwlink/p/?LinkId=154727) (http://go.microsoft.com/fwlink/p/?LinkId=154727).<br />-   [L’ajout d’un fichier de liaison à un Application1](../technical-guides/how-to-add-a-binding-file-to-an-application1.md)<br />-Section « Exportation d’une Application BizTalk » [meilleures pratiques pour le déploiement d’une Application](http://msdn.microsoft.com/library/gg634504.aspx)<br />-Section « Exportation d’une Application BizTalk » [problèmes connus avec le déploiement d’une Application](../technical-guides/known-issues-with-deploying-an-application.md)|  
+|Si vous avez apporté des modifications supplémentaires à l’application BizTalk dans l’environnement de production, vous pouvez installer l’application BizTalk à partir du fichier .msi dans tous les autres ordinateurs dans l’environnement de production qui sera exécuté.<br /><br /> En outre, importer l’application dans les autres groupes BizTalk dans lequel vous souhaitez déployer et si l’application inclut des artefacts basés sur des fichiers, installez l’application sur les serveurs de ces groupes.|-   [Comment installer une Application BizTalk](http://go.microsoft.com/fwlink/p/?LinkId=154728) (http://go.microsoft.com/fwlink/p/?LinkId=154728).<br />-   [Comment importer une Application à partir d’un fichier .msi](../technical-guides/how-to-import-an-application-from-an-msi-file.md)<br />-« L’importation d’une Application BizTalk » de section de [meilleures pratiques pour le déploiement d’une Application](http://msdn.microsoft.com/library/gg634504.aspx)<br />-« L’importation d’une Application BizTalk » de section de [problèmes connus avec le déploiement d’une Application](../technical-guides/known-issues-with-deploying-an-application.md)|  
+|Démarrer l’application BizTalk dans l’environnement de production à partir de la console Administration de BizTalk Server et vérifiez qu’il fonctionne correctement.|-   [Comment démarrer et arrêter une Application BizTalk](http://go.microsoft.com/fwlink/p/?LinkId=154729) (http://go.microsoft.com/fwlink/p/?LinkId=154729).<br />-   [Test d’une Application](../technical-guides/testing-an-application.md)|  
+  
+## <a name="see-also"></a>Voir aussi  
+ [Déploiement d’un Assembly](../technical-guides/deploying-an-assembly.md)   
+ [Ajout d’artefacts à une Application](../technical-guides/adding-artifacts-to-an-application.md)   
+ [Comment exporter une Application vers un fichier .msi](../technical-guides/how-to-export-an-application-to-an-msi-file.md)   
+ [Comment exporter des liaisons vers un fichier de liaison](../technical-guides/how-to-export-bindings-to-a-binding-file.md)   
+ [Comment importer une Application à partir d’un fichier .msi](../technical-guides/how-to-import-an-application-from-an-msi-file.md)   
+ [Comment installer une Application](../technical-guides/how-to-install-an-application.md)   
+ [Comment importer des liaisons à partir d’un fichier de liaison](../technical-guides/how-to-import-bindings-from-a-binding-file.md)
