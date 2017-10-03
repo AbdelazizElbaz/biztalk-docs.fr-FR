@@ -18,15 +18,15 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---the-output-xml-type-blob-is-stored-in-the-following-file-ltfile---0gt-error-1"></a>Erreur - le Blob de Type XML est stockée dans le fichier de sortie (&lt;file:---{0}&gt;). Erreur : {{1}
-**Code d’erreur**  
+# <a name="error---the-output-xml-type-blob-is-stored-in-the-following-file-ltfile---0gt-error-1"></a><span data-ttu-id="26e33-103">Erreur - le Blob de Type XML est stockée dans le fichier de sortie (&lt;file:---{0}&gt;).</span><span class="sxs-lookup"><span data-stu-id="26e33-103">Error - The output XML Type Blob is stored in the following file (&lt;file:---{0}&gt;).</span></span> <span data-ttu-id="26e33-104">Erreur : {{1}</span><span class="sxs-lookup"><span data-stu-id="26e33-104">Error: {1}</span></span>
+<span data-ttu-id="26e33-105">**Code d’erreur**</span><span class="sxs-lookup"><span data-stu-id="26e33-105">**Error Code**</span></span>  
   
- btm1061  
+ <span data-ttu-id="26e33-106">btm1061</span><span class="sxs-lookup"><span data-stu-id="26e33-106">btm1061</span></span>  
   
- **Explication**  
+ <span data-ttu-id="26e33-107">**Explication**</span><span class="sxs-lookup"><span data-stu-id="26e33-107">**Explanation**</span></span>  
   
- Il s'agit simplement d'un message d'information. Cliquez sur le lien pour afficher le fichier de sortie.  
+ <span data-ttu-id="26e33-108">Il s'agit simplement d'un message d'information.</span><span class="sxs-lookup"><span data-stu-id="26e33-108">This is just an information message.</span></span> <span data-ttu-id="26e33-109">Cliquez sur le lien pour afficher le fichier de sortie.</span><span class="sxs-lookup"><span data-stu-id="26e33-109">Click on the link to view the output file.</span></span>  
   
- **Action de l’utilisateur**  
+ <span data-ttu-id="26e33-110">**Action de l’utilisateur**</span><span class="sxs-lookup"><span data-stu-id="26e33-110">**User Action**</span></span>  
   
- Aucun.
+ <span data-ttu-id="26e33-111">Aucun.</span><span class="sxs-lookup"><span data-stu-id="26e33-111">None.</span></span>

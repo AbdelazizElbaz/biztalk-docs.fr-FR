@@ -23,18 +23,18 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-add-and-remove-correlation-sets"></a>Comment ajouter et supprimer des ensembles de corrélations
-La fenêtre Vue Orchestration vous permet d'ajouter des ensembles de corrélations ou de les supprimer de votre orchestration. Un ensemble de corrélations est une instance d'un type de corrélation.  
+# <a name="how-to-add-and-remove-correlation-sets"></a><span data-ttu-id="1e2a5-102">Comment ajouter et supprimer des ensembles de corrélations</span><span class="sxs-lookup"><span data-stu-id="1e2a5-102">How to Add and Remove Correlation Sets</span></span>
+<span data-ttu-id="1e2a5-103">La fenêtre Vue Orchestration vous permet d'ajouter des ensembles de corrélations ou de les supprimer de votre orchestration.</span><span class="sxs-lookup"><span data-stu-id="1e2a5-103">You can use the Orchestration View window to add correlation sets to or remove them from your orchestration.</span></span> <span data-ttu-id="1e2a5-104">Un ensemble de corrélations est une instance d'un type de corrélation.</span><span class="sxs-lookup"><span data-stu-id="1e2a5-104">A correlation set is an instance of a correlation type.</span></span>  
   
-### <a name="to-add-and-configure-a-correlation-set"></a>Pour ajouter et configurer un ensemble de corrélations  
+### <a name="to-add-and-configure-a-correlation-set"></a><span data-ttu-id="1e2a5-105">Pour ajouter et configurer un ensemble de corrélations</span><span class="sxs-lookup"><span data-stu-id="1e2a5-105">To add and configure a correlation set</span></span>  
   
--   Dans la fenêtre Vue Orchestration, cliquez sur **des ensembles de corrélations** puis cliquez sur **nouvel ensemble de corrélations**.  
+-   <span data-ttu-id="1e2a5-106">Dans la fenêtre Vue Orchestration, cliquez sur **des ensembles de corrélations** puis cliquez sur **nouvel ensemble de corrélations**.</span><span class="sxs-lookup"><span data-stu-id="1e2a5-106">In the Orchestration View window, right-click **Correlation Sets** and then click **New Correlation Set**.</span></span>  
   
-     Le **propriétés de corrélation** boîte de dialogue s’affiche. Ajoutez les propriétés à inclure dans votre ensemble de corrélations. L'ensemble de corrélations et le type de corrélation correspondant seront créés.  
+     <span data-ttu-id="1e2a5-107">Le **propriétés de corrélation** boîte de dialogue s’affiche.</span><span class="sxs-lookup"><span data-stu-id="1e2a5-107">The **Correlation Properties** dialog box appears.</span></span> <span data-ttu-id="1e2a5-108">Ajoutez les propriétés à inclure dans votre ensemble de corrélations.</span><span class="sxs-lookup"><span data-stu-id="1e2a5-108">Add properties that you want to include in your correlation set.</span></span> <span data-ttu-id="1e2a5-109">L'ensemble de corrélations et le type de corrélation correspondant seront créés.</span><span class="sxs-lookup"><span data-stu-id="1e2a5-109">The correlation set and a corresponding correlation type will be created.</span></span>  
   
-### <a name="to-remove-a-correlation-set"></a>Pour supprimer un ensemble de corrélations  
+### <a name="to-remove-a-correlation-set"></a><span data-ttu-id="1e2a5-110">Pour supprimer un ensemble de corrélations</span><span class="sxs-lookup"><span data-stu-id="1e2a5-110">To remove a correlation set</span></span>  
   
--   Dans la fenêtre Vue Orchestration, cliquez sur l’ensemble de corrélations que vous souhaitez supprimer, puis cliquez sur **supprimer**.  
+-   <span data-ttu-id="1e2a5-111">Dans la fenêtre Vue Orchestration, cliquez sur l’ensemble de corrélations que vous souhaitez supprimer, puis cliquez sur **supprimer**.</span><span class="sxs-lookup"><span data-stu-id="1e2a5-111">In the Orchestration View window, right-click the correlation set you want to remove and then click **Delete**.</span></span>  
   
-## <a name="see-also"></a>Voir aussi  
- [À l’aide de corrélations dans les Orchestrations](../core/using-correlations-in-orchestrations.md)
+## <a name="see-also"></a><span data-ttu-id="1e2a5-112">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="1e2a5-112">See Also</span></span>  
+ [<span data-ttu-id="1e2a5-113">À l’aide de corrélations dans les Orchestrations</span><span class="sxs-lookup"><span data-stu-id="1e2a5-113">Using Correlations in Orchestrations</span></span>](../core/using-correlations-in-orchestrations.md)

@@ -19,15 +19,15 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---generic-input-validation"></a>Erreur : Validation d’entrée générique
-**Code d’erreur**  
+# <a name="error---generic-input-validation"></a><span data-ttu-id="ae25f-102">Erreur : Validation d’entrée générique</span><span class="sxs-lookup"><span data-stu-id="ae25f-102">Error - Generic Input Validation</span></span>
+<span data-ttu-id="ae25f-103">**Code d’erreur**</span><span class="sxs-lookup"><span data-stu-id="ae25f-103">**Error Code**</span></span>  
   
- btm1045  
+ <span data-ttu-id="ae25f-104">btm1045</span><span class="sxs-lookup"><span data-stu-id="ae25f-104">btm1045</span></span>  
   
- **Explication**  
+ <span data-ttu-id="ae25f-105">**Explication**</span><span class="sxs-lookup"><span data-stu-id="ae25f-105">**Explanation**</span></span>  
   
- Le fichier de message de l'instance d'entrée défini pour l'opération Test Map n'a pas été validé avec le schéma source en raison d'une erreur indéterminée.  
+ <span data-ttu-id="ae25f-106">Le fichier de message de l'instance d'entrée défini pour l'opération Test Map n'a pas été validé avec le schéma source en raison d'une erreur indéterminée.</span><span class="sxs-lookup"><span data-stu-id="ae25f-106">The input instance message file specified for the Test Map operation could not be validated against the source schema for an unspecified reason.</span></span>  
   
- **Action de l’utilisateur**  
+ <span data-ttu-id="ae25f-107">**Action de l’utilisateur**</span><span class="sxs-lookup"><span data-stu-id="ae25f-107">**User Action**</span></span>  
   
- Ouvrir le schéma source dans l’Éditeur BizTalk et utiliser le **valider le schéma** et **générer l’Instance** commandes, disponibles lorsque vous cliquez sur un schéma dans l’Explorateur de solutions, pour isoler le problème.
+ <span data-ttu-id="ae25f-108">Ouvrir le schéma source dans l’Éditeur BizTalk et utiliser le **valider le schéma** et **générer l’Instance** commandes, disponibles lorsque vous cliquez sur un schéma dans l’Explorateur de solutions, pour isoler le problème.</span><span class="sxs-lookup"><span data-stu-id="ae25f-108">Open the source schema in BizTalk Editor and use the **Validate Schema** and **Generate Instance** commands, available when you right-click a schema in Solution Explorer, to isolate the problem.</span></span>

@@ -21,17 +21,17 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="troubleshooting-issues-and-resolutions"></a>Résolution des problèmes : Problèmes et résolutions
-Cette rubrique traite des problèmes liés à l’exécution [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]. Chaque problème décrit en détail un problème spécifique, des causes possibles et une solution.  
+# <a name="troubleshooting-issues-and-resolutions"></a><span data-ttu-id="6787b-102">Résolution des problèmes : Problèmes et résolutions</span><span class="sxs-lookup"><span data-stu-id="6787b-102">Troubleshooting: Issues and Resolutions</span></span>
+<span data-ttu-id="6787b-103">Cette rubrique traite des problèmes liés à l’exécution [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)].</span><span class="sxs-lookup"><span data-stu-id="6787b-103">This topic addresses issues related to running [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)].</span></span> <span data-ttu-id="6787b-104">Chaque problème décrit en détail un problème spécifique, des causes possibles et une solution.</span><span class="sxs-lookup"><span data-stu-id="6787b-104">Each issue details a specific symptom, a possible cause, and a solution.</span></span>  
   
- Les problèmes et résolutions sont regroupées dans les domaines suivants :  
+ <span data-ttu-id="6787b-105">Les problèmes et résolutions sont regroupées dans les domaines suivants :</span><span class="sxs-lookup"><span data-stu-id="6787b-105">The issues and resolutions are grouped into the following areas:</span></span>  
   
--   [Installation et la résolution des problèmes de Configuration](../../adapters-and-accelerators/accelerator-swift/installation-and-configuration-troubleshooting.md)  
+-   [<span data-ttu-id="6787b-106">Installation et la résolution des problèmes de Configuration</span><span class="sxs-lookup"><span data-stu-id="6787b-106">Installation and Configuration Troubleshooting</span></span>](../../adapters-and-accelerators/accelerator-swift/installation-and-configuration-troubleshooting.md)  
   
--   [Migration et la résolution des problèmes de mise à niveau](../../adapters-and-accelerators/accelerator-swift/migration-and-upgrade-troubleshooting.md)  
+-   [<span data-ttu-id="6787b-107">Migration et la résolution des problèmes de mise à niveau</span><span class="sxs-lookup"><span data-stu-id="6787b-107">Migration and Upgrade Troubleshooting</span></span>](../../adapters-and-accelerators/accelerator-swift/migration-and-upgrade-troubleshooting.md)  
   
--   [Réparation de message et le dépannage de la nouvelle soumission](../../adapters-and-accelerators/accelerator-swift/message-repair-and-new-submission-troubleshooting.md)  
+-   [<span data-ttu-id="6787b-108">Réparation de message et le dépannage de la nouvelle soumission</span><span class="sxs-lookup"><span data-stu-id="6787b-108">Message Repair and New Submission Troubleshooting</span></span>](../../adapters-and-accelerators/accelerator-swift/message-repair-and-new-submission-troubleshooting.md)  
   
--   [Réponse de la FIN la résolution des problèmes de rapprochement](../../adapters-and-accelerators/accelerator-swift/fin-response-reconciliation-troubleshooting.md)  
+-   [<span data-ttu-id="6787b-109">Réponse de la FIN la résolution des problèmes de rapprochement</span><span class="sxs-lookup"><span data-stu-id="6787b-109">FIN Response Reconciliation Troubleshooting</span></span>](../../adapters-and-accelerators/accelerator-swift/fin-response-reconciliation-troubleshooting.md)  
   
--   [Résolution des problèmes divers](../../adapters-and-accelerators/accelerator-swift/miscellaneous-troubleshooting.md)
+-   [<span data-ttu-id="6787b-110">Résolution des problèmes divers</span><span class="sxs-lookup"><span data-stu-id="6787b-110">Miscellaneous Troubleshooting</span></span>](../../adapters-and-accelerators/accelerator-swift/miscellaneous-troubleshooting.md)

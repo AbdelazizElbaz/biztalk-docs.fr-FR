@@ -18,10 +18,10 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="custom-modal-dialog-editor-for-adapter-configuration"></a>Éditeur de boîte de dialogue modales personnalisé pour la Configuration de l’adaptateur
-Le code de l’éditeur personnalisé montre un éditeur dérivé de la **System.Drawing.Design.UITypeEditor** classe qui affiche une boîte de dialogue contextuelle modale pour l’entrée d’un mot de passe. Le **GetEditStyle** substitution de méthode retourne **UIEditorEditStyle.Modal** pour indiquer un sous-contrôle de formulaire modal. La méthode de service **ShowDialog** gère le contrôle créé avec **CreatePassword**. **ShowDialog** retourne un **DialogResult** qui est géré de manière habituelle (par exemple, une instruction switch) avec le **DialogResult.OK** cas de modification de valeur uniquement.  
+# <a name="custom-modal-dialog-editor-for-adapter-configuration"></a><span data-ttu-id="468e7-102">Éditeur de boîte de dialogue modales personnalisé pour la Configuration de l’adaptateur</span><span class="sxs-lookup"><span data-stu-id="468e7-102">Custom Modal Dialog Editor for Adapter Configuration</span></span>
+<span data-ttu-id="468e7-103">Le code de l’éditeur personnalisé montre un éditeur dérivé de la **System.Drawing.Design.UITypeEditor** classe qui affiche une boîte de dialogue contextuelle modale pour l’entrée d’un mot de passe.</span><span class="sxs-lookup"><span data-stu-id="468e7-103">The code for the custom editor shows an editor derived from the **System.Drawing.Design.UITypeEditor** class that displays a modal pop-up dialog box for entering a password.</span></span> <span data-ttu-id="468e7-104">Le **GetEditStyle** substitution de méthode retourne **UIEditorEditStyle.Modal** pour indiquer un sous-contrôle de formulaire modal.</span><span class="sxs-lookup"><span data-stu-id="468e7-104">The **GetEditStyle** method override returns **UIEditorEditStyle.Modal** to indicate a modal form subcontrol.</span></span> <span data-ttu-id="468e7-105">La méthode de service **ShowDialog** gère le contrôle créé avec **CreatePassword**.</span><span class="sxs-lookup"><span data-stu-id="468e7-105">The service method **ShowDialog** manages the control created with **CreatePassword**.</span></span> <span data-ttu-id="468e7-106">**ShowDialog** retourne un **DialogResult** qui est géré de manière habituelle (par exemple, une instruction switch) avec le **DialogResult.OK** cas de modification de valeur uniquement.</span><span class="sxs-lookup"><span data-stu-id="468e7-106">**ShowDialog** returns a **DialogResult** that is handled in the usual way (for example, a switch statement) with the **DialogResult.OK** case changing value only.</span></span>  
   
- Le code suivant correspond à la définition de classe pour l'éditeur modal personnalisé :  
+ <span data-ttu-id="468e7-107">Le code suivant correspond à la définition de classe pour l'éditeur modal personnalisé :</span><span class="sxs-lookup"><span data-stu-id="468e7-107">The following code is the class definition for the custom modal editor:</span></span>  
   
 ```  
 /*************************************************************************  
@@ -99,7 +99,7 @@ namespace AdapterManagement.ComponentModel
             return new PasswordForm(PasswordUITypeEditor.PasswordChar);  
 ```  
   
- Le code suivant correspond à la définition de classe pour la boîte de dialogue personnalisée :  
+ <span data-ttu-id="468e7-108">Le code suivant correspond à la définition de classe pour la boîte de dialogue personnalisée :</span><span class="sxs-lookup"><span data-stu-id="468e7-108">The following code is the class definition for the custom dialog box:</span></span>  
   
 ```  
 /*************************************************************************  
@@ -306,8 +306,8 @@ namespace Microsoft.BizTalk.Samples.CustomUITypeEditors
 }  
 ```  
   
-## <a name="see-also"></a>Voir aussi  
- [Concepteur de Configuration d’adaptateur personnalisé](../core/custom-adapter-configuration-designer.md)   
- [Éditeur de liste déroulante personnalisé pour la Configuration de l’adaptateur](../core/custom-drop-down-editor-for-adapter-configuration.md)   
- [Convertisseur de Type personnalisé pour la Configuration de l’adaptateur](../core/custom-type-converter-for-adapter-configuration.md)   
- [Composants de Configuration avancée pour les cartes](../core/advanced-configuration-components-for-adapters.md)
+## <a name="see-also"></a><span data-ttu-id="468e7-109">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="468e7-109">See Also</span></span>  
+ <span data-ttu-id="468e7-110">[Concepteur de Configuration d’adaptateur personnalisé](../core/custom-adapter-configuration-designer.md) </span><span class="sxs-lookup"><span data-stu-id="468e7-110">[Custom Adapter Configuration Designer](../core/custom-adapter-configuration-designer.md) </span></span>  
+ <span data-ttu-id="468e7-111">[Éditeur de liste déroulante personnalisé pour la Configuration de l’adaptateur](../core/custom-drop-down-editor-for-adapter-configuration.md) </span><span class="sxs-lookup"><span data-stu-id="468e7-111">[Custom Drop-Down Editor for Adapter Configuration](../core/custom-drop-down-editor-for-adapter-configuration.md) </span></span>  
+ <span data-ttu-id="468e7-112">[Convertisseur de Type personnalisé pour la Configuration de l’adaptateur](../core/custom-type-converter-for-adapter-configuration.md) </span><span class="sxs-lookup"><span data-stu-id="468e7-112">[Custom Type Converter for Adapter Configuration](../core/custom-type-converter-for-adapter-configuration.md) </span></span>  
+ [<span data-ttu-id="468e7-113">Composants de Configuration avancée pour les cartes</span><span class="sxs-lookup"><span data-stu-id="468e7-113">Advanced Configuration Components for Adapters</span></span>](../core/advanced-configuration-components-for-adapters.md)

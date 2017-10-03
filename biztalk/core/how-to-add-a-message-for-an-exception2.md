@@ -23,20 +23,20 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-add-a-message-for-an-exception"></a>L’ajout d’un Message pour une Exception
-Lorsque vous commencez par créer un port menant au système principal, il contient une demande et une réponse. Vous devez ajouter un message afin de pouvoir l'affecter à l'erreur.  
+# <a name="how-to-add-a-message-for-an-exception"></a><span data-ttu-id="2f640-102">L’ajout d’un Message pour une Exception</span><span class="sxs-lookup"><span data-stu-id="2f640-102">How to Add a Message for an Exception</span></span>
+<span data-ttu-id="2f640-103">Lorsque vous commencez par créer un port menant au système principal, il contient une demande et une réponse.</span><span class="sxs-lookup"><span data-stu-id="2f640-103">When you first create a port to the back-end system, it contains a request and a response.</span></span> <span data-ttu-id="2f640-104">Vous devez ajouter un message afin de pouvoir l'affecter à l'erreur.</span><span class="sxs-lookup"><span data-stu-id="2f640-104">You must add a message so that you can assign it to the fault.</span></span>  
   
-### <a name="to-add-a-fault-message"></a>Pour ajouter un message d'erreur  
+### <a name="to-add-a-fault-message"></a><span data-ttu-id="2f640-105">Pour ajouter un message d'erreur</span><span class="sxs-lookup"><span data-stu-id="2f640-105">To add a fault message</span></span>  
   
-1.  Dans le **Vue Orchestration** fenêtre, avec le bouton droit **Messages**, puis sélectionnez **nouveau Message**.  
+1.  <span data-ttu-id="2f640-106">Dans le **Vue Orchestration** fenêtre, avec le bouton droit **Messages**, puis sélectionnez **nouveau Message**.</span><span class="sxs-lookup"><span data-stu-id="2f640-106">In the **Orchestration View** window, right-click **Messages**, and then select **New Message**.</span></span>  
   
-     Ceci crée le message Message_3, que vous pouvez affecter spécifiquement à l'erreur.  
+     <span data-ttu-id="2f640-107">Ceci crée le message Message_3, que vous pouvez affecter spécifiquement à l'erreur.</span><span class="sxs-lookup"><span data-stu-id="2f640-107">This creates Message_3, which you can assign specifically to the fault.</span></span>  
   
-2.  Avec le bouton droit **Message_3**, puis sélectionnez **propriétés**.  
+2.  <span data-ttu-id="2f640-108">Avec le bouton droit **Message_3**, puis sélectionnez **propriétés**.</span><span class="sxs-lookup"><span data-stu-id="2f640-108">Right-click **Message_3**, and select **Properties**.</span></span>  
   
-3.  Définir le **Type de Message** comme suit : sélectionnez **Classes .NET**, puis sélectionnez **System, String**  
+3.  <span data-ttu-id="2f640-109">Définir le **Type de Message** comme suit : sélectionnez **Classes .NET**, puis sélectionnez **System, String**</span><span class="sxs-lookup"><span data-stu-id="2f640-109">Set the **Message Type** as follows: select **.NET Classes**, and then select **System,String**</span></span>  
   
  ![](../core/media/jdeoneworld-03-addscope.gif "JdeOneWorld_03_addscope")  
   
-## <a name="see-also"></a>Voir aussi  
- [À l’aide de la gestion des exceptions de BizTalk Server](../core/using-biztalk-server-exception-handling1.md)
+## <a name="see-also"></a><span data-ttu-id="2f640-110">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="2f640-110">See Also</span></span>  
+ [<span data-ttu-id="2f640-111">À l’aide de la gestion des exceptions de BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="2f640-111">Using BizTalk Server Exception Handling</span></span>](../core/using-biztalk-server-exception-handling1.md)

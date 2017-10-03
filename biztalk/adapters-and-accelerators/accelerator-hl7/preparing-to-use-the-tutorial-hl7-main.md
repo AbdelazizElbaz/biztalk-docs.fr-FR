@@ -19,13 +19,13 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="preparing-to-use-the-tutorialhl7main"></a>Préparation à l’utilisation de la Tutorial_hl7_main
-Vous devez effectuer les tâches de cette section avant d’utiliser le didacticiel.  
+# <a name="preparing-to-use-the-tutorialhl7main"></a><span data-ttu-id="44936-102">Préparation à l’utilisation de la Tutorial_hl7_main</span><span class="sxs-lookup"><span data-stu-id="44936-102">Preparing to Use the Tutorial_hl7_main</span></span>
+<span data-ttu-id="44936-103">Vous devez effectuer les tâches de cette section avant d’utiliser le didacticiel.</span><span class="sxs-lookup"><span data-stu-id="44936-103">You need to perform the tasks in this section before you use the tutorial.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="44936-104">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="44936-104">In This Section</span></span>  
   
--   [Créer le dossier du didacticiel](../../adapters-and-accelerators/accelerator-hl7/create-the-tutorial-folder.md)  
+-   [<span data-ttu-id="44936-105">Créer le dossier du didacticiel</span><span class="sxs-lookup"><span data-stu-id="44936-105">Create the Tutorial Folder</span></span>](../../adapters-and-accelerators/accelerator-hl7/create-the-tutorial-folder.md)  
   
--   [Créer le fichier QRY^Q01.txt](../../adapters-and-accelerators/accelerator-hl7/create-the-qry-q01-txt-file.md)  
+-   [<span data-ttu-id="44936-106">Créer le fichier QRY^Q01.txt</span><span class="sxs-lookup"><span data-stu-id="44936-106">Create the QRY^Q01.txt File</span></span>](../../adapters-and-accelerators/accelerator-hl7/create-the-qry-q01-txt-file.md)  
   
--   [Créer le fichier DSR.txt](../../adapters-and-accelerators/accelerator-hl7/create-the-dsr-txt-file.md)
+-   [<span data-ttu-id="44936-107">Créer le fichier DSR.txt</span><span class="sxs-lookup"><span data-stu-id="44936-107">Create the DSR.txt File</span></span>](../../adapters-and-accelerators/accelerator-hl7/create-the-dsr-txt-file.md)

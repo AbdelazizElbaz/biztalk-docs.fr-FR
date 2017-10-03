@@ -18,8 +18,8 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-configure-native-pipeline-components"></a>Configuration des composants de pipeline natifs
-Le code suivant décrit la configuration des composants de pipeline natifs à l'aide de l'interface `IPersistPropertyBag`.  
+# <a name="how-to-configure-native-pipeline-components"></a><span data-ttu-id="7dfef-102">Configuration des composants de pipeline natifs</span><span class="sxs-lookup"><span data-stu-id="7dfef-102">How to Configure Native Pipeline Components</span></span>
+<span data-ttu-id="7dfef-103">Le code suivant décrit la configuration des composants de pipeline natifs à l'aide de l'interface `IPersistPropertyBag`.</span><span class="sxs-lookup"><span data-stu-id="7dfef-103">The following code shows how to configure native pipeline components using the `IPersistPropertyBag` interface.</span></span>  
   
 ```  
     [ComponentCategory(CategoryTypes.CATID_PipelineComponent)]  

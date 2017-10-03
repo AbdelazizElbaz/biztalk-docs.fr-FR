@@ -18,11 +18,11 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---exception-stack-trace-0"></a>Erreur - Trace de pile d'exceptions : {0}
-**Code d’erreur**  
+# <a name="error---exception-stack-trace-0"></a><span data-ttu-id="89249-102">Erreur - Trace de pile d'exceptions : {0}</span><span class="sxs-lookup"><span data-stu-id="89249-102">Error - Exception Stack Trace: {0}</span></span>
+<span data-ttu-id="89249-103">**Code d’erreur**</span><span class="sxs-lookup"><span data-stu-id="89249-103">**Error Code**</span></span>  
   
- btm1024  
+ <span data-ttu-id="89249-104">btm1024</span><span class="sxs-lookup"><span data-stu-id="89249-104">btm1024</span></span>  
   
- **Action de l’utilisateur**  
+ <span data-ttu-id="89249-105">**Action de l’utilisateur**</span><span class="sxs-lookup"><span data-stu-id="89249-105">**User Action**</span></span>  
   
- Aucun.
+ <span data-ttu-id="89249-106">Aucun.</span><span class="sxs-lookup"><span data-stu-id="89249-106">None.</span></span>

@@ -23,20 +23,20 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-update-bam-artifacts"></a>Mise à jour des artefacts BAM
-Les administrateurs utilisent la **mise à jour-all** commande pour mettre à jour des artefacts déployés dans la base de données d’importation principale BAM. La définition d'analyse BAM fournie est soit un fichier XML soit un classeur Excel contenant des informations sur les artefacts à mettre à jour.  
+# <a name="how-to-update-bam-artifacts"></a><span data-ttu-id="1e68a-102">Mise à jour des artefacts BAM</span><span class="sxs-lookup"><span data-stu-id="1e68a-102">How to Update BAM Artifacts</span></span>
+<span data-ttu-id="1e68a-103">Les administrateurs utilisent la **mise à jour-all** commande pour mettre à jour des artefacts déployés dans la base de données d’importation principale BAM.</span><span class="sxs-lookup"><span data-stu-id="1e68a-103">Administrators use the **update-all** command to update artifacts deployed in the BAM Primary Import database.</span></span> <span data-ttu-id="1e68a-104">La définition d'analyse BAM fournie est soit un fichier XML soit un classeur Excel contenant des informations sur les artefacts à mettre à jour.</span><span class="sxs-lookup"><span data-stu-id="1e68a-104">The supplied BAM definition is either an XML file or an Excel Workbook containing information about the artifacts to be updated.</span></span>  
   
-### <a name="to-update-bam-artifacts"></a>Pour mettre à jour des artefacts BAM  
+### <a name="to-update-bam-artifacts"></a><span data-ttu-id="1e68a-105">Pour mettre à jour des artefacts BAM</span><span class="sxs-lookup"><span data-stu-id="1e68a-105">To update BAM Artifacts</span></span>  
   
-1.  Ouvrez une invite de commandes comme suit : cliquez sur **Démarrer**, cliquez sur **exécuter**, type **cmd**, puis cliquez sur **OK**.  
+1.  <span data-ttu-id="1e68a-106">Ouvrez une invite de commandes comme suit : cliquez sur **Démarrer**, cliquez sur **exécuter**, type **cmd**, puis cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="1e68a-106">Open a command prompt as follows: Click **Start**, click **Run**, type **cmd**, and then click **OK**.</span></span>  
   
-2.  Accédez à [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking.  
+2.  <span data-ttu-id="1e68a-107">Accédez à [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking.</span><span class="sxs-lookup"><span data-stu-id="1e68a-107">Navigate to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking.</span></span>  
   
-3.  Type **bm update-all - DefinitionFile :\<fichier def >**.  
+3.  <span data-ttu-id="1e68a-108">Type **bm update-all - DefinitionFile :\<fichier def >**.</span><span class="sxs-lookup"><span data-stu-id="1e68a-108">Type **bm update-all -DefinitionFile:\<def file>**.</span></span>  
   
-4.  Appuyez sur **Entrée**.  
+4.  <span data-ttu-id="1e68a-109">Appuyez sur **Entrée**.</span><span class="sxs-lookup"><span data-stu-id="1e68a-109">Press **ENTER**.</span></span>  
   
-## <a name="see-also"></a>Voir aussi  
- [Gestion de l’Infrastructure dynamique BAM](../core/managing-the-bam-dynamic-infrastructure.md)   
- [Recommandations de sécurité BAM](../core/bam-security-recommendations.md)   
- [Utilitaire de gestion BAM](../core/bam-management-utility.md)
+## <a name="see-also"></a><span data-ttu-id="1e68a-110">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="1e68a-110">See Also</span></span>  
+ <span data-ttu-id="1e68a-111">[Gestion de l’Infrastructure dynamique BAM](../core/managing-the-bam-dynamic-infrastructure.md) </span><span class="sxs-lookup"><span data-stu-id="1e68a-111">[Managing the BAM Dynamic Infrastructure](../core/managing-the-bam-dynamic-infrastructure.md) </span></span>  
+ <span data-ttu-id="1e68a-112">[Recommandations de sécurité BAM](../core/bam-security-recommendations.md) </span><span class="sxs-lookup"><span data-stu-id="1e68a-112">[BAM Security Recommendations](../core/bam-security-recommendations.md) </span></span>  
+ [<span data-ttu-id="1e68a-113">Utilitaire de gestion BAM</span><span class="sxs-lookup"><span data-stu-id="1e68a-113">BAM Management Utility</span></span>](../core/bam-management-utility.md)

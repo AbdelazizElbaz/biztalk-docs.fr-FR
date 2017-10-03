@@ -18,11 +18,11 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="describe-the-wsdl-porttype-documentation-schema-with-the-wcf-lob-adapter-sdk"></a>Décrire le schéma de Documentation WSDL PortType avec le Kit de développement logiciel de l’adaptateur LOB WCF
-Le fichier WSDL qui le [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] génère contient des informations descriptives supplémentaires pour chaque type de port. Le schéma pour plus d’informations est décrite dans cette rubrique.  
+# <a name="describe-the-wsdl-porttype-documentation-schema-with-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="402ac-102">Décrire le schéma de Documentation WSDL PortType avec le Kit de développement logiciel de l’adaptateur LOB WCF</span><span class="sxs-lookup"><span data-stu-id="402ac-102">Describe the WSDL PortType Documentation Schema with the WCF LOB Adapter SDK</span></span>
+<span data-ttu-id="402ac-103">Le fichier WSDL qui le [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] génère contient des informations descriptives supplémentaires pour chaque type de port.</span><span class="sxs-lookup"><span data-stu-id="402ac-103">The WSDL that the  [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] generates contains additional descriptive information for each portType.</span></span> <span data-ttu-id="402ac-104">Le schéma pour plus d’informations est décrite dans cette rubrique.</span><span class="sxs-lookup"><span data-stu-id="402ac-104">The schema for this additional information is described in this topic.</span></span>  
   
-## <a name="documentation-xml-schema"></a>Schéma XML de documentation  
- La documentation de l’opération est implémentée à l’aide de l’annotation de type de port pour ajouter un nœud qui représente la documentation de l’adaptateur pour l’opération. Ce nœud contient des sous-nœuds qui décrivent plus précisément l’opération et les paramètres. Ce schéma est défini comme suit.  
+## <a name="documentation-xml-schema"></a><span data-ttu-id="402ac-105">Schéma XML de documentation</span><span class="sxs-lookup"><span data-stu-id="402ac-105">Documentation XML Schema</span></span>  
+ <span data-ttu-id="402ac-106">La documentation de l’opération est implémentée à l’aide de l’annotation de type de port pour ajouter un nœud qui représente la documentation de l’adaptateur pour l’opération.</span><span class="sxs-lookup"><span data-stu-id="402ac-106">The operation documentation is implemented using annotation of the portType to add a node that represents the adapter documentation for the operation.</span></span> <span data-ttu-id="402ac-107">Ce nœud contient des sous-nœuds qui décrivent plus précisément l’opération et les paramètres.</span><span class="sxs-lookup"><span data-stu-id="402ac-107">This node contains subnodes that further describe the operation and parameters.</span></span> <span data-ttu-id="402ac-108">Ce schéma est défini comme suit.</span><span class="sxs-lookup"><span data-stu-id="402ac-108">This schema is defined as follows.</span></span>  
   
 ```  
 \<?xml version="1.0" encoding="utf-8"?>  
@@ -47,7 +47,7 @@ Le fichier WSDL qui le [!INCLUDE[afproductnameshort](../../includes/afproductnam
 \</xs:schema>  
 ```  
   
- Lorsque WSDL est généré pour une opération donnée, le schéma précédent est utilisé pour fournir des informations descriptives supplémentaires dans un format lisible. Par exemple, les informations de portType suivantes sont retournées pour l’opération EchoString de l’adaptateur de l’écho.  
+ <span data-ttu-id="402ac-109">Lorsque WSDL est généré pour une opération donnée, le schéma précédent est utilisé pour fournir des informations descriptives supplémentaires dans un format lisible.</span><span class="sxs-lookup"><span data-stu-id="402ac-109">When WSDL is generated for a given operation, the preceding schema is used to provide additional descriptive information in human readable format.</span></span> <span data-ttu-id="402ac-110">Par exemple, les informations de portType suivantes sont retournées pour l’opération EchoString de l’adaptateur de l’écho.</span><span class="sxs-lookup"><span data-stu-id="402ac-110">For example, the following portType information is returned for the EchoString operation of the Echo Adapter.</span></span>  
   
 ```  
 \<wsdl:portType name="EchoService">  
@@ -65,7 +65,7 @@ Le fichier WSDL qui le [!INCLUDE[afproductnameshort](../../includes/afproductnam
 \</wsdl:portType>  
 ```  
   
- Les valeurs pour les éléments de la documentation sont obtenues à partir de `Microsoft.ServiceModel.Channels.Common.ParameterizedOperationMetadata` pour l’opération. L’exemple précédent a été générée en raison de l’exemple suivant.  
+ <span data-ttu-id="402ac-111">Les valeurs pour les éléments de la documentation sont obtenues à partir de `Microsoft.ServiceModel.Channels.Common.ParameterizedOperationMetadata` pour l’opération.</span><span class="sxs-lookup"><span data-stu-id="402ac-111">The values for the documentation elements are obtained from `Microsoft.ServiceModel.Channels.Common.ParameterizedOperationMetadata` for the operation.</span></span> <span data-ttu-id="402ac-112">L’exemple précédent a été générée en raison de l’exemple suivant.</span><span class="sxs-lookup"><span data-stu-id="402ac-112">The preceding example was generated as a result of the following example.</span></span>  
   
 ```csharp  
 ParameterizedOperationMetadata om = new ParameterizedOperationMetadata(operationId, operationId);  
@@ -90,5 +90,5 @@ switch (operationId)
        return om;   
 ```  
   
-## <a name="see-also"></a>Voir aussi  
- [Recommandées de développement à l’aide de WCF LOB Adapter SDK](../../adapters-and-accelerators/wcf-lob-adapter-sdk/development-best-practices-using-the-wcf-lob-adapter-sdk.md)
+## <a name="see-also"></a><span data-ttu-id="402ac-113">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="402ac-113">See Also</span></span>  
+ [<span data-ttu-id="402ac-114">Recommandées de développement à l’aide de WCF LOB Adapter SDK</span><span class="sxs-lookup"><span data-stu-id="402ac-114">Development best practices using the WCF LOB Adapter SDK</span></span>](../../adapters-and-accelerators/wcf-lob-adapter-sdk/development-best-practices-using-the-wcf-lob-adapter-sdk.md)

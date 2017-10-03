@@ -18,21 +18,21 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="batch-message-cannot-be-serialized-as-there-is-no-party-associated-with-send-port"></a>Le message de traitement par lot ne peut pas être sérialisé car il n'y a aucun tiers associé au port d'envoi
-## <a name="details"></a>Détails  
+# <a name="batch-message-cannot-be-serialized-as-there-is-no-party-associated-with-send-port"></a><span data-ttu-id="21939-102">Le message de traitement par lot ne peut pas être sérialisé car il n'y a aucun tiers associé au port d'envoi</span><span class="sxs-lookup"><span data-stu-id="21939-102">Batch message cannot be serialized as there is no party associated with send port</span></span>
+## <a name="details"></a><span data-ttu-id="21939-103">Détails</span><span class="sxs-lookup"><span data-stu-id="21939-103">Details</span></span>  
   
 |||  
 |-|-|  
-|Nom du produit|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|Version du produit|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|ID d'événement|-|  
-|Source de l'événement|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|Composant|Moteur de traitement par lot|  
-|Nom symbolique|BatchMessageSerializationFailureDueToMissingParty|  
-|Texte du message|Le message de traitement par lot ne peut pas être sérialisé car il n'y a aucun tiers associé au port d'envoi {0}. Assurez-vous qu'un tiers est associé à ce port|  
+|<span data-ttu-id="21939-104">Nom du produit</span><span class="sxs-lookup"><span data-stu-id="21939-104">Product Name</span></span>|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
+|<span data-ttu-id="21939-105">Version du produit</span><span class="sxs-lookup"><span data-stu-id="21939-105">Product Version</span></span>|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
+|<span data-ttu-id="21939-106">ID d'événement</span><span class="sxs-lookup"><span data-stu-id="21939-106">Event ID</span></span>|-|  
+|<span data-ttu-id="21939-107">Source de l'événement</span><span class="sxs-lookup"><span data-stu-id="21939-107">Event Source</span></span>|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="21939-108"> EDI</span><span class="sxs-lookup"><span data-stu-id="21939-108"> EDI</span></span>|  
+|<span data-ttu-id="21939-109">Composant</span><span class="sxs-lookup"><span data-stu-id="21939-109">Component</span></span>|<span data-ttu-id="21939-110">Moteur de traitement par lot</span><span class="sxs-lookup"><span data-stu-id="21939-110">Batching Engine</span></span>|  
+|<span data-ttu-id="21939-111">Nom symbolique</span><span class="sxs-lookup"><span data-stu-id="21939-111">Symbolic Name</span></span>|<span data-ttu-id="21939-112">BatchMessageSerializationFailureDueToMissingParty</span><span class="sxs-lookup"><span data-stu-id="21939-112">BatchMessageSerializationFailureDueToMissingParty</span></span>|  
+|<span data-ttu-id="21939-113">Texte du message</span><span class="sxs-lookup"><span data-stu-id="21939-113">Message Text</span></span>|<span data-ttu-id="21939-114">Le message de traitement par lot ne peut pas être sérialisé car il n'y a aucun tiers associé au port d'envoi {0}.</span><span class="sxs-lookup"><span data-stu-id="21939-114">Batch message can not be serialized as there is no party associated with send port {0}.</span></span> <span data-ttu-id="21939-115">Assurez-vous qu'un tiers est associé à ce port</span><span class="sxs-lookup"><span data-stu-id="21939-115">Make sure that a party is associated with the port</span></span>|  
   
-## <a name="explanation"></a>Explication  
- Cet événement d'erreur/d'avertissement/d'informations indique que le pipeline d'envoi n'a pas pu traiter un échange conservé, car il n'a pas réussi à déterminer le tiers auquel le message doit être envoyé. Il n'a pas pu identifier le tiers, car la propriété de contexte DestinationPartyName n'était pas définie. Par conséquent, le pipeline d'envoi n'a pas réussi à déterminer les paramètres de l'enveloppe.  
+## <a name="explanation"></a><span data-ttu-id="21939-116">Explication</span><span class="sxs-lookup"><span data-stu-id="21939-116">Explanation</span></span>  
+ <span data-ttu-id="21939-117">Cet événement d'erreur/d'avertissement/d'informations indique que le pipeline d'envoi n'a pas pu traiter un échange conservé, car il n'a pas réussi à déterminer le tiers auquel le message doit être envoyé.</span><span class="sxs-lookup"><span data-stu-id="21939-117">This Error/Warning/Information event indicates that the send pipeline could not process a preserved interchange because it could not determine the party that the message should be sent to.</span></span> <span data-ttu-id="21939-118">Il n'a pas pu identifier le tiers, car la propriété de contexte DestinationPartyName n'était pas définie.</span><span class="sxs-lookup"><span data-stu-id="21939-118">It could not determine the party because the DestinationPartyName context property was not set.</span></span> <span data-ttu-id="21939-119">Par conséquent, le pipeline d'envoi n'a pas réussi à déterminer les paramètres de l'enveloppe.</span><span class="sxs-lookup"><span data-stu-id="21939-119">As a result, the send pipeline could not determine the envelope settings.</span></span>  
   
-## <a name="user-action"></a>Action de l'utilisateur  
- Pour résoudre cette erreur, transmettez le message via un pipeline d'envoi PassThrough, puis déterminez la propriété de contexte DestinationPartyName pour le message. Vérifiez également que le tiers existe. Si ce n'est pas le cas, créez-le, puis renvoyez le message.
+## <a name="user-action"></a><span data-ttu-id="21939-120">Action de l'utilisateur</span><span class="sxs-lookup"><span data-stu-id="21939-120">User Action</span></span>  
+ <span data-ttu-id="21939-121">Pour résoudre cette erreur, transmettez le message via un pipeline d'envoi PassThrough, puis déterminez la propriété de contexte DestinationPartyName pour le message.</span><span class="sxs-lookup"><span data-stu-id="21939-121">To resolve this error, pass the message through a passthrough send pipeline, and then determine the DestinationPartyName context property for the message.</span></span> <span data-ttu-id="21939-122">Vérifiez également que le tiers existe.</span><span class="sxs-lookup"><span data-stu-id="21939-122">Verify that the party exists.</span></span> <span data-ttu-id="21939-123">Si ce n'est pas le cas, créez-le, puis renvoyez le message.</span><span class="sxs-lookup"><span data-stu-id="21939-123">If not, create the party, and then resend the message.</span></span>

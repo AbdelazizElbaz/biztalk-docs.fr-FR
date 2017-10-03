@@ -19,15 +19,15 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---generic-native-serialization"></a>Erreur : sérialisation Native générique
-**Code d’erreur**  
+# <a name="error---generic-native-serialization"></a><span data-ttu-id="5534e-102">Erreur : sérialisation Native générique</span><span class="sxs-lookup"><span data-stu-id="5534e-102">Error - Generic Native Serialization</span></span>
+<span data-ttu-id="5534e-103">**Code d’erreur**</span><span class="sxs-lookup"><span data-stu-id="5534e-103">**Error Code**</span></span>  
   
- btm1049  
+ <span data-ttu-id="5534e-104">btm1049</span><span class="sxs-lookup"><span data-stu-id="5534e-104">btm1049</span></span>  
   
- **Explication**  
+ <span data-ttu-id="5534e-105">**Explication**</span><span class="sxs-lookup"><span data-stu-id="5534e-105">**Explanation**</span></span>  
   
- Le message de l'instance de sortie XML généré par la transformation du mappage ne peut pas être converti au format natif spécifié par le schéma de destination en raison d'une erreur inconnue.  
+ <span data-ttu-id="5534e-106">Le message de l'instance de sortie XML généré par la transformation du mappage ne peut pas être converti au format natif spécifié par le schéma de destination en raison d'une erreur inconnue.</span><span class="sxs-lookup"><span data-stu-id="5534e-106">The XML output instance message produced by the transformation specified by the map could not be converted to the native format specified by the destination schema due to an unspecified error.</span></span>  
   
- **Action de l’utilisateur**  
+ <span data-ttu-id="5534e-107">**Action de l’utilisateur**</span><span class="sxs-lookup"><span data-stu-id="5534e-107">**User Action**</span></span>  
   
- Ouvrir le schéma de destination dans l’Éditeur BizTalk et utiliser le **valider le schéma**, **valider l’Instance**, et **générer l’Instance** commandes, disponibles lorsque vous cliquez sur un schéma dans l’Explorateur de solutions, pour isoler le problème.
+ <span data-ttu-id="5534e-108">Ouvrir le schéma de destination dans l’Éditeur BizTalk et utiliser le **valider le schéma**, **valider l’Instance**, et **générer l’Instance** commandes, disponibles lorsque vous cliquez sur un schéma dans l’Explorateur de solutions, pour isoler le problème.</span><span class="sxs-lookup"><span data-stu-id="5534e-108">Open the destination schema in BizTalk Editor and use the **Validate Schema**, **Validate Instance**, and **Generate Instance** commands, available when you right-click a schema in Solution Explorer, to isolate the problem.</span></span>

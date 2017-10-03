@@ -18,11 +18,11 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error--a-nil-value-functoid-is-connected-to-a-target-node-39039-which-has-child-links"></a>Fonctoid valeur erreur - A Nil est connecté à un nœud cible &#39; {0} &#39; qui a un ou plusieurs liens enfants.
-**Code d’erreur**  
+# <a name="error--a-nil-value-functoid-is-connected-to-a-target-node-39039-which-has-child-links"></a><span data-ttu-id="4b980-103">Fonctoid valeur erreur - A Nil est connecté à un nœud cible &#39; {0} &#39; qui a un ou plusieurs liens enfants.</span><span class="sxs-lookup"><span data-stu-id="4b980-103">Error- A Nil Value functoid is connected to a target node &#39;{0}&#39; which has child link(s).</span></span>
+<span data-ttu-id="4b980-104">**Code d’erreur**</span><span class="sxs-lookup"><span data-stu-id="4b980-104">**Error Code**</span></span>  
   
- btm1081  
+ <span data-ttu-id="4b980-105">btm1081</span><span class="sxs-lookup"><span data-stu-id="4b980-105">btm1081</span></span>  
   
- **Action de l’utilisateur**  
+ <span data-ttu-id="4b980-106">**Action de l’utilisateur**</span><span class="sxs-lookup"><span data-stu-id="4b980-106">**User Action**</span></span>  
   
- Supprimer les liens vers les nœuds enfants du nœud cible ou supprimer le lien vers le fonctoid Valeur nil.
+ <span data-ttu-id="4b980-107">Supprimer les liens vers les nœuds enfants du nœud cible ou supprimer le lien vers le fonctoid Valeur nil.</span><span class="sxs-lookup"><span data-stu-id="4b980-107">Either delete the links to the child nodes of the target node or remove the link to the nil value functoid.</span></span>

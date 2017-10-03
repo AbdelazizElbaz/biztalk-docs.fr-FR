@@ -19,15 +19,15 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---functoid-has-no-output"></a>Erreur : le fonctoid ne comporte aucune sortie.
-**Code d’erreur**  
+# <a name="error---functoid-has-no-output"></a><span data-ttu-id="bf0ae-102">Erreur : le fonctoid ne comporte aucune sortie.</span><span class="sxs-lookup"><span data-stu-id="bf0ae-102">Error - Functoid Has No Output</span></span>
+<span data-ttu-id="bf0ae-103">**Code d’erreur**</span><span class="sxs-lookup"><span data-stu-id="bf0ae-103">**Error Code**</span></span>  
   
- btm1013  
+ <span data-ttu-id="bf0ae-104">btm1013</span><span class="sxs-lookup"><span data-stu-id="bf0ae-104">btm1013</span></span>  
   
- **Explication**  
+ <span data-ttu-id="bf0ae-105">**Explication**</span><span class="sxs-lookup"><span data-stu-id="bf0ae-105">**Explanation**</span></span>  
   
- Aucun lien de sortie n'existe pour le fonctoid indiqué, rendant ce dernier inutile.  
+ <span data-ttu-id="bf0ae-106">Aucun lien de sortie n'existe pour le fonctoid indiqué, rendant ce dernier inutile.</span><span class="sxs-lookup"><span data-stu-id="bf0ae-106">There is no output link for the indicated functoid, rendering it useless.</span></span>  
   
- **Action de l’utilisateur**  
+ <span data-ttu-id="bf0ae-107">**Action de l’utilisateur**</span><span class="sxs-lookup"><span data-stu-id="bf0ae-107">**User Action**</span></span>  
   
- Créez un lien de sortie correct pour le fonctoid spécifié.
+ <span data-ttu-id="bf0ae-108">Créez un lien de sortie correct pour le fonctoid spécifié.</span><span class="sxs-lookup"><span data-stu-id="bf0ae-108">Create an appropriate output link for the indicated functoid.</span></span>

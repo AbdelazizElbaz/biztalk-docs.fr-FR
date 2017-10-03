@@ -18,9 +18,9 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="additional-adapter-information"></a>Informations supplémentaires sur l’adaptateur
-Voici des informations supplémentaires sur l’adaptateur :  
+# <a name="additional-adapter-information"></a><span data-ttu-id="7e429-102">Informations supplémentaires sur l’adaptateur</span><span class="sxs-lookup"><span data-stu-id="7e429-102">Additional Adapter Information</span></span>
+<span data-ttu-id="7e429-103">Voici des informations supplémentaires sur l’adaptateur :</span><span class="sxs-lookup"><span data-stu-id="7e429-103">Additional adapter information includes:</span></span>  
   
- [X12 jeu de caractères EDI](../core/x12-edi-character-set.md)  
+ [<span data-ttu-id="7e429-104">X12 jeu de caractères EDI</span><span class="sxs-lookup"><span data-stu-id="7e429-104">X12 EDI Character Set</span></span>](../core/x12-edi-character-set.md)  
   
- [Accélérateur d’A4SWIFT](../core/a4swift-accelerator.md)
+ [<span data-ttu-id="7e429-105">Accélérateur d’A4SWIFT</span><span class="sxs-lookup"><span data-stu-id="7e429-105">A4SWIFT Accelerator</span></span>](../core/a4swift-accelerator.md)

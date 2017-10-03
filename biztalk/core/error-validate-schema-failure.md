@@ -19,11 +19,11 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---validate-schema-failure"></a>Erreur : échec du schéma de la validation
-**Explication**  
+# <a name="error---validate-schema-failure"></a><span data-ttu-id="39704-102">Erreur : échec du schéma de la validation</span><span class="sxs-lookup"><span data-stu-id="39704-102">Error - Validate Schema Failure</span></span>
+<span data-ttu-id="39704-103">**Explication**</span><span class="sxs-lookup"><span data-stu-id="39704-103">**Explanation**</span></span>  
   
- La validation du schéma indiqué a échoué.  
+ <span data-ttu-id="39704-104">La validation du schéma indiqué a échoué.</span><span class="sxs-lookup"><span data-stu-id="39704-104">The indicated schema was not successfully validated.</span></span>  
   
- **Action de l’utilisateur**  
+ <span data-ttu-id="39704-105">**Action de l’utilisateur**</span><span class="sxs-lookup"><span data-stu-id="39704-105">**User Action**</span></span>  
   
- Examinez les messages d’erreur associés afin de déterminer la cause de l’échec de validation de schéma.
+ <span data-ttu-id="39704-106">Examinez les messages d’erreur associés afin de déterminer la cause de l’échec de validation de schéma.</span><span class="sxs-lookup"><span data-stu-id="39704-106">Examine the accompanying error messages to determine the cause of the schema validation failure.</span></span>

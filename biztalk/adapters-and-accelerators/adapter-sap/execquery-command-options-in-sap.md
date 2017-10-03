@@ -18,14 +18,14 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="execquery-command-options-in-sap"></a>Options de commande EXECQUERY dans SAP
-Le [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] permet aux clients d’appeler les requêtes SAP à partir d’applications ADO.NET à l’aide de la commande EXECQUERY. Cette section fournit des informations sur la syntaxe de commande EXECQUERY et comment l’utiliser. Cette section fournit également des informations sur la manière de limiter la syntaxe EXECQUERY en examinant la définition de la requête dans le système SAP.  
+# <a name="execquery-command-options-in-sap"></a><span data-ttu-id="1cec3-102">Options de commande EXECQUERY dans SAP</span><span class="sxs-lookup"><span data-stu-id="1cec3-102">EXECQUERY command options in SAP</span></span>
+<span data-ttu-id="1cec3-103">Le [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] permet aux clients d’appeler les requêtes SAP à partir d’applications ADO.NET à l’aide de la commande EXECQUERY.</span><span class="sxs-lookup"><span data-stu-id="1cec3-103">The [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] enables clients to invoke SAP queries from ADO.NET applications by using the EXECQUERY command.</span></span> <span data-ttu-id="1cec3-104">Cette section fournit des informations sur la syntaxe de commande EXECQUERY et comment l’utiliser.</span><span class="sxs-lookup"><span data-stu-id="1cec3-104">This section provides information on the syntax of EXECQUERY command and how to use it.</span></span> <span data-ttu-id="1cec3-105">Cette section fournit également des informations sur la manière de limiter la syntaxe EXECQUERY en examinant la définition de la requête dans le système SAP.</span><span class="sxs-lookup"><span data-stu-id="1cec3-105">This section also provides information on how to frame EXECQUERY syntax by looking at the definition of the query in the SAP system.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="1cec3-106">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="1cec3-106">In This Section</span></span>  
   
--   [Syntaxe pour une instruction EXECQUERY dans SAP](../../adapters-and-accelerators/adapter-sap/syntax-for-an-execquery-statement-in-sap.md)  
+-   [<span data-ttu-id="1cec3-107">Syntaxe pour une instruction EXECQUERY dans SAP</span><span class="sxs-lookup"><span data-stu-id="1cec3-107">Syntax for an EXECQUERY Statement in SAP</span></span>](../../adapters-and-accelerators/adapter-sap/syntax-for-an-execquery-statement-in-sap.md)  
   
--   [Paramètres de requête SAP se traduire par des commandes EXECQUERY](../../adapters-and-accelerators/adapter-sap/translate-sap-query-parameters-into-execquery-command.md)  
+-   [<span data-ttu-id="1cec3-108">Paramètres de requête SAP se traduire par des commandes EXECQUERY</span><span class="sxs-lookup"><span data-stu-id="1cec3-108">Translate SAP query parameters into EXECQUERY command</span></span>](../../adapters-and-accelerators/adapter-sap/translate-sap-query-parameters-into-execquery-command.md)  
   
-## <a name="see-also"></a>Voir aussi  
- [Utiliser le fournisseur de données .NET Framework pour mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/use-the-net-framework-data-provider-for-mysap-business-suite.md)
+## <a name="see-also"></a><span data-ttu-id="1cec3-109">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="1cec3-109">See Also</span></span>  
+ [<span data-ttu-id="1cec3-110">Utiliser le fournisseur de données .NET Framework pour mySAP Business Suite</span><span class="sxs-lookup"><span data-stu-id="1cec3-110">Use the .NET Framework Data Provider for mySAP Business Suite</span></span>](../../adapters-and-accelerators/adapter-sap/use-the-net-framework-data-provider-for-mysap-business-suite.md)

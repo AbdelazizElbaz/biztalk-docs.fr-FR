@@ -18,11 +18,11 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---the-quot0quot-functoid-has-an-invalid-xpath-statement-1"></a>Erreur - le &quot;{0}&quot; le fonctoid ne comporte une instruction xpath non valide : {1}.
-**Code d’erreur**  
+# <a name="error---the-quot0quot-functoid-has-an-invalid-xpath-statement-1"></a><span data-ttu-id="d6c09-103">Erreur - le &quot;{0}&quot; le fonctoid ne comporte une instruction xpath non valide : {1}.</span><span class="sxs-lookup"><span data-stu-id="d6c09-103">Error - The &quot;{0}&quot; functoid has an invalid xpath statement: {1}.</span></span>
+<span data-ttu-id="d6c09-104">**Code d’erreur**</span><span class="sxs-lookup"><span data-stu-id="d6c09-104">**Error Code**</span></span>  
   
- btm1018  
+ <span data-ttu-id="d6c09-105">btm1018</span><span class="sxs-lookup"><span data-stu-id="d6c09-105">btm1018</span></span>  
   
- **Action de l’utilisateur**  
+ <span data-ttu-id="d6c09-106">**Action de l’utilisateur**</span><span class="sxs-lookup"><span data-stu-id="d6c09-106">**User Action**</span></span>  
   
- Aucune
+ <span data-ttu-id="d6c09-107">Aucune</span><span class="sxs-lookup"><span data-stu-id="d6c09-107">None</span></span>

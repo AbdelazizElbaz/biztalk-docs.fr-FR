@@ -19,9 +19,9 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="completing-the-exception-message"></a>Exécution du message d'exception
-Pour exécuter le flux de l'exception, créez une forme Envoi pour rediriger le message d'erreur Message_3 vers un dossier surveillé.  
+# <a name="completing-the-exception-message"></a><span data-ttu-id="c02ba-102">Exécution du message d'exception</span><span class="sxs-lookup"><span data-stu-id="c02ba-102">Completing the Exception Message</span></span>
+<span data-ttu-id="c02ba-103">Pour exécuter le flux de l'exception, créez une forme Envoi pour rediriger le message d'erreur Message_3 vers un dossier surveillé.</span><span class="sxs-lookup"><span data-stu-id="c02ba-103">To complete the flow of the exception, create a Send shape to redirect the fault Message_3 to a monitored folder.</span></span>  
   
-## <a name="see-also"></a>Voir aussi  
- [L’ajout d’un bloc intercepter l’Exception](../core/how-to-add-a-catch-exception-block1.md)   
- [À l’aide de la gestion des exceptions de BizTalk Server](../core/using-biztalk-server-exception-handling3.md)
+## <a name="see-also"></a><span data-ttu-id="c02ba-104">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="c02ba-104">See Also</span></span>  
+ <span data-ttu-id="c02ba-105">[L’ajout d’un bloc intercepter l’Exception](../core/how-to-add-a-catch-exception-block1.md) </span><span class="sxs-lookup"><span data-stu-id="c02ba-105">[How to Add a Catch Exception Block](../core/how-to-add-a-catch-exception-block1.md) </span></span>  
+ [<span data-ttu-id="c02ba-106">À l’aide de la gestion des exceptions de BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="c02ba-106">Using BizTalk Server Exception Handling</span></span>](../core/using-biztalk-server-exception-handling3.md)

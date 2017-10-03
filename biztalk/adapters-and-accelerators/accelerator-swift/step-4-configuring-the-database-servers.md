@@ -21,5 +21,5 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="step-4-configuring-the-database-servers"></a>Étape 4 : Configuration des serveurs de base de données
-Consultez la documentation de SQL server pour obtenir des instructions d’installation et de configuration.
+# <a name="step-4-configuring-the-database-servers"></a><span data-ttu-id="8a1d1-102">Étape 4 : Configuration des serveurs de base de données</span><span class="sxs-lookup"><span data-stu-id="8a1d1-102">Step 4: Configuring the Database Servers</span></span>
+<span data-ttu-id="8a1d1-103">Consultez la documentation de SQL server pour obtenir des instructions d’installation et de configuration.</span><span class="sxs-lookup"><span data-stu-id="8a1d1-103">Refer to the SQL server documentation for installation and configuration instructions.</span></span>

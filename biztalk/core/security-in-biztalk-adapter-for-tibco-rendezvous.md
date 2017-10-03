@@ -19,11 +19,11 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="security-in-biztalk-adapter-for-tibco-rendezvous"></a>Sécurité de l'adaptateur BizTalk pour TIBCO Rendezvous
-Cette section fournit des instructions relatives au déploiement d'un adaptateur Microsoft BizTalk Server pour TIBCO Rendezvous dans un environnement sécurisé.  
+# <a name="security-in-biztalk-adapter-for-tibco-rendezvous"></a><span data-ttu-id="40e8c-102">Sécurité de l'adaptateur BizTalk pour TIBCO Rendezvous</span><span class="sxs-lookup"><span data-stu-id="40e8c-102">Security in BizTalk Adapter for TIBCO Rendezvous</span></span>
+<span data-ttu-id="40e8c-103">Cette section fournit des instructions relatives au déploiement d'un adaptateur Microsoft BizTalk Server pour TIBCO Rendezvous dans un environnement sécurisé.</span><span class="sxs-lookup"><span data-stu-id="40e8c-103">This section provides guidelines about how to deploy Microsoft BizTalk Server Adapter for TIBCO Rendezvous in a secure environment.</span></span>  
   
 > [!CAUTION]
->  Il est vivement recommandé de limiter l'utilisation de l'adaptateur BizTalk pour les applications d'entreprise aux utilisateurs autorisés, car les fichiers client sont directement connectés aux applications sectorielles.  
+>  <span data-ttu-id="40e8c-104">Il est vivement recommandé de limiter l'utilisation de l'adaptateur BizTalk pour les applications d'entreprise aux utilisateurs autorisés, car les fichiers client sont directement connectés aux applications sectorielles.</span><span class="sxs-lookup"><span data-stu-id="40e8c-104">It is highly recommended that you restrict the use of BizTalk Adapter for Enterprise Applications to authorized users only, because the client files directly connect to the line-of-business applications.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
- [À l’aide de l’authentification unique](../core/using-single-sign-on5.md)
+## <a name="in-this-section"></a><span data-ttu-id="40e8c-105">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="40e8c-105">In This Section</span></span>  
+ [<span data-ttu-id="40e8c-106">À l’aide de l’authentification unique</span><span class="sxs-lookup"><span data-stu-id="40e8c-106">Using Single Sign-On</span></span>](../core/using-single-sign-on5.md)

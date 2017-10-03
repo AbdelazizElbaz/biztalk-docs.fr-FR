@@ -21,11 +21,11 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="developing-applications"></a>Développement d’Applications
-Cette section contient des informations destinées aux développeurs qui souhaitent créer des applications BizTalk Server. Lorsque ces applications sont créées, ils sont généralement gérés par un administrateur qui utilise les informations trouvées dans le [administration de l’adaptateur BizTalk pour PeopleSoft Enterprise](../core/administering-biztalk-adapter-for-peoplesoft-enterprise.md) section.  
+# <a name="developing-applications"></a><span data-ttu-id="8e346-102">Développement d’Applications</span><span class="sxs-lookup"><span data-stu-id="8e346-102">Developing Applications</span></span>
+<span data-ttu-id="8e346-103">Cette section contient des informations destinées aux développeurs qui souhaitent créer des applications BizTalk Server.</span><span class="sxs-lookup"><span data-stu-id="8e346-103">This section contains information for developers who want to create BizTalk Server applications.</span></span> <span data-ttu-id="8e346-104">Lorsque ces applications sont créées, ils sont généralement gérés par un administrateur qui utilise les informations trouvées dans le [administration de l’adaptateur BizTalk pour PeopleSoft Enterprise](../core/administering-biztalk-adapter-for-peoplesoft-enterprise.md) section.</span><span class="sxs-lookup"><span data-stu-id="8e346-104">When these applications are created, they are usually managed by an administrator who uses information found in the [Administering BizTalk Adapter for PeopleSoft Enterprise](../core/administering-biztalk-adapter-for-peoplesoft-enterprise.md) section.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="8e346-105">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="8e346-105">In This Section</span></span>  
   
--   [Création de gestionnaires d’envoi PeopleSoft](../core/creating-peoplesoft-send-handlers.md)  
+-   [<span data-ttu-id="8e346-106">Création de gestionnaires d’envoi PeopleSoft</span><span class="sxs-lookup"><span data-stu-id="8e346-106">Creating PeopleSoft Send Handlers</span></span>](../core/creating-peoplesoft-send-handlers.md)  
   
--   [Réception de PeopleSoft](../core/receiving-from-peoplesoft.md)
+-   [<span data-ttu-id="8e346-107">Réception de PeopleSoft</span><span class="sxs-lookup"><span data-stu-id="8e346-107">Receiving from PeopleSoft</span></span>](../core/receiving-from-peoplesoft.md)

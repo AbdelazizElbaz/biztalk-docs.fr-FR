@@ -21,10 +21,10 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="use-expressions-to-assign-values-to-dynamic-ports"></a>Utiliser des Expressions pour affecter des valeurs à des Ports dynamiques
+# <a name="use-expressions-to-assign-values-to-dynamic-ports"></a><span data-ttu-id="25047-102">Utiliser des Expressions pour affecter des valeurs à des Ports dynamiques</span><span class="sxs-lookup"><span data-stu-id="25047-102">Use Expressions to Assign Values to Dynamic Ports</span></span>
 
-## <a name="assign-values"></a>Affecter des valeurs
-Si un port d'envoi est marqué comme dynamique, vous pouvez lui affecter la valeur d'une variable quelconque de type chaîne contenant l'URI du port que vous souhaitez utiliser dans la forme Expression. Par exemple :  
+## <a name="assign-values"></a><span data-ttu-id="25047-103">Affecter des valeurs</span><span class="sxs-lookup"><span data-stu-id="25047-103">Assign values</span></span>
+<span data-ttu-id="25047-104">Si un port d'envoi est marqué comme dynamique, vous pouvez lui affecter la valeur d'une variable quelconque de type chaîne contenant l'URI du port que vous souhaitez utiliser dans la forme Expression.</span><span class="sxs-lookup"><span data-stu-id="25047-104">If a send port is marked as dynamic, you can assign to it the value of some variable of type string that contains the URI of the port you want to use in the Expression shape.</span></span> <span data-ttu-id="25047-105">Par exemple :</span><span class="sxs-lookup"><span data-stu-id="25047-105">For example,</span></span>  
   
 ```  
 DynamicSendPort(Microsoft.XLANGs.BaseTypes.Address)="mailto:johnd@contoso.com";  
@@ -34,7 +34,7 @@ DynamicSendPort(Microsoft.XLANGs.BaseTypes.Address)="http://MyOrder.contoso.com"
 DynamicSendPort(Microsoft.XLANGs.BaseTypes.Address)="ftp://MyServer/MyDirectory/%MessageID%.xml";  
 ```  
   
- Vous pouvez ensuite poursuivre l'attribution des propriétés aux messages sortants. Par exemple :  
+ <span data-ttu-id="25047-106">Vous pouvez ensuite poursuivre l'attribution des propriétés aux messages sortants.</span><span class="sxs-lookup"><span data-stu-id="25047-106">Then you can further assign the properties to the outgoing messages.</span></span> <span data-ttu-id="25047-107">Par exemple :</span><span class="sxs-lookup"><span data-stu-id="25047-107">For example,</span></span>  
   
 ```  
 MyOutgoingMessage(SMTP.Subject)="Purcahse Order Received";  
@@ -44,5 +44,5 @@ MyOutgoingMessage(FTP.Password)="MyPassword";
 MyOutgoingMessage((MSMQ.Transactional)=true;  
 ```  
   
-## <a name="see-also"></a>Voir aussi  
-[Restrictions relatives à la configuration de l’adaptateur de fichier](restrictions-when-configuring-the-file-adapter.md)
+## <a name="see-also"></a><span data-ttu-id="25047-108">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="25047-108">See Also</span></span>  
+[<span data-ttu-id="25047-109">Restrictions relatives à la configuration de l’adaptateur de fichier</span><span class="sxs-lookup"><span data-stu-id="25047-109">Restrictions when configuring the File adapter</span></span>](restrictions-when-configuring-the-file-adapter.md)

@@ -28,235 +28,235 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-administer-password-synchronization"></a>Comment administrer la synchronisation de mot de passe
-Vous pouvez administrer la synchronisation de mot de passe via le composant logiciel enfichable MMC ou la ligne de commande.  
+# <a name="how-to-administer-password-synchronization"></a><span data-ttu-id="2affd-102">Comment administrer la synchronisation de mot de passe</span><span class="sxs-lookup"><span data-stu-id="2affd-102">How to Administer Password Synchronization</span></span>
+<span data-ttu-id="2affd-103">Vous pouvez administrer la synchronisation de mot de passe via le composant logiciel enfichable MMC ou la ligne de commande.</span><span class="sxs-lookup"><span data-stu-id="2affd-103">You can administer Password Synchronization through either the MMC Snap-In or the command line.</span></span>  
   
- Le composant logiciel enfichable MMC affiche une liste des adaptateurs et de leurs propriétés. Vous pouvez cliquer avec le bouton droit sur un adaptateur et utiliser le menu pour exécuter les commandes suivantes :  
+ <span data-ttu-id="2affd-104">Le composant logiciel enfichable MMC affiche une liste des adaptateurs et de leurs propriétés.</span><span class="sxs-lookup"><span data-stu-id="2affd-104">The MMC Snap-In displays a list of adapters and their properties.</span></span> <span data-ttu-id="2affd-105">Vous pouvez cliquer avec le bouton droit sur un adaptateur et utiliser le menu pour exécuter les commandes suivantes :</span><span class="sxs-lookup"><span data-stu-id="2affd-105">You can right-click an adapter and use the menu to perform the following commands:</span></span>  
   
--   Créer des adaptateurs  
+-   <span data-ttu-id="2affd-106">Créer des adaptateurs</span><span class="sxs-lookup"><span data-stu-id="2affd-106">Create adapters</span></span>  
   
--   Définir les propriétés  
+-   <span data-ttu-id="2affd-107">Définir les propriétés</span><span class="sxs-lookup"><span data-stu-id="2affd-107">Set properties</span></span>  
   
--   Update  
+-   <span data-ttu-id="2affd-108">Update</span><span class="sxs-lookup"><span data-stu-id="2affd-108">Update</span></span>  
   
--   DELETE  
+-   <span data-ttu-id="2affd-109">DELETE</span><span class="sxs-lookup"><span data-stu-id="2affd-109">Delete</span></span>  
   
--   Activer  
+-   <span data-ttu-id="2affd-110">Activer</span><span class="sxs-lookup"><span data-stu-id="2affd-110">Enable</span></span>  
   
--   Désactiver  
+-   <span data-ttu-id="2affd-111">Désactiver</span><span class="sxs-lookup"><span data-stu-id="2affd-111">Disable</span></span>  
   
--   Ajouter des applications à un adaptateur  
+-   <span data-ttu-id="2affd-112">Ajouter des applications à un adaptateur</span><span class="sxs-lookup"><span data-stu-id="2affd-112">Add applications to an adapter</span></span>  
   
--   Supprimer des applications d'un adaptateur  
+-   <span data-ttu-id="2affd-113">Supprimer des applications d'un adaptateur</span><span class="sxs-lookup"><span data-stu-id="2affd-113">Delete applications from an adapter</span></span>  
   
--   Réinitialiser la notification  
+-   <span data-ttu-id="2affd-114">Réinitialiser la notification</span><span class="sxs-lookup"><span data-stu-id="2affd-114">Reset notification</span></span>  
   
--   Ajouter un adaptateur à un groupe d'adaptateurs  
+-   <span data-ttu-id="2affd-115">Ajouter un adaptateur à un groupe d'adaptateurs</span><span class="sxs-lookup"><span data-stu-id="2affd-115">Add an adapter to an adapter group</span></span>  
   
--   Supprimer une carte à partir d’un groupe d’adaptateurs  
+-   <span data-ttu-id="2affd-116">Supprimer une carte à partir d’un groupe d’adaptateurs</span><span class="sxs-lookup"><span data-stu-id="2affd-116">Delete an adapter from an adapter group</span></span>  
   
- Vous pouvez également utiliser l'utilitaire de ligne de commande SSOPS pour administrer la synchronisation de votre mot de passe. La plupart des commandes de cette section sont destinées à être utilisées par un administrateur uniquement.  
+ <span data-ttu-id="2affd-117">Vous pouvez également utiliser l'utilitaire de ligne de commande SSOPS pour administrer la synchronisation de votre mot de passe.</span><span class="sxs-lookup"><span data-stu-id="2affd-117">You can also use the SSOPS command line utility to administer your password synchronization.</span></span> <span data-ttu-id="2affd-118">La plupart des commandes de cette section sont destinées à être utilisées par un administrateur uniquement.</span><span class="sxs-lookup"><span data-stu-id="2affd-118">Most of commands in this section are intended for use by an administrator only.</span></span>  
   
- Pour de nombreuses commandes, le résultat de la commande s'affiche à l'écran en deux colonnes. Comme les paramètres de certains écrans peuvent tronquer les données, pour des résultats optimaux, vous devez passer la taille de la mémoire tampon écran / taille Windows à 120 caractères.  
+ <span data-ttu-id="2affd-119">Pour de nombreuses commandes, le résultat de la commande s'affiche à l'écran en deux colonnes.</span><span class="sxs-lookup"><span data-stu-id="2affd-119">For many commands, the command output is displayed on the screen in two columns.</span></span> <span data-ttu-id="2affd-120">Comme les paramètres de certains écrans peuvent tronquer les données, pour des résultats optimaux, vous devez passer la taille de la mémoire tampon écran / taille Windows à 120 caractères.</span><span class="sxs-lookup"><span data-stu-id="2affd-120">As certain screen settings may cause truncation of data, for best results you should change the screen buffer size/Windows size to 120 characters.</span></span>  
   
- Les commandes SSOPS sont répertoriées dans le tableau suivant. Les procédures et des explications supplémentaires sont situées dans le reste de cette rubrique.  
+ <span data-ttu-id="2affd-121">Les commandes SSOPS sont répertoriées dans le tableau suivant.</span><span class="sxs-lookup"><span data-stu-id="2affd-121">The SSOPS commands are listed in the following table.</span></span> <span data-ttu-id="2affd-122">Les procédures et des explications supplémentaires sont situées dans le reste de cette rubrique.</span><span class="sxs-lookup"><span data-stu-id="2affd-122">Procedures and further explanation are located throughout the rest of this topic.</span></span>  
   
-|Command|Fonction|  
+|<span data-ttu-id="2affd-123">Command</span><span class="sxs-lookup"><span data-stu-id="2affd-123">Command</span></span>|<span data-ttu-id="2affd-124">Fonction</span><span class="sxs-lookup"><span data-stu-id="2affd-124">Function</span></span>|  
 |-------------|--------------|  
-|-list|Répertorie les adaptateurs existants.|  
-|-display|Affiche les informations relatives aux adaptateurs|  
-|-create|Crée des adaptateurs|  
-|-setprops|Définit les propriétés de l'adaptateur|  
-|-update|Met à jour le ou les adaptateurs existants|  
-|-delete|Supprime un adaptateur existant|  
-|-enable|Active l'adaptateur|  
-|-disable|Désactive l'adaptateur|  
-|-addapp|Ajoute l'application à l'adaptateur|  
-|-deleteapp|Supprime l'application de l'adaptateur|  
-|-reset|Réinitialise la notification ou les files d'attente d'amortissement|  
-|-addtogroup|Ajoute l'adaptateur au groupe d'adaptateurs|  
-|-deletefromgroup|Supprime l'adaptateur du groupe d'adaptateurs|  
+|<span data-ttu-id="2affd-125">-list</span><span class="sxs-lookup"><span data-stu-id="2affd-125">-list</span></span>|<span data-ttu-id="2affd-126">Répertorie les adaptateurs existants.</span><span class="sxs-lookup"><span data-stu-id="2affd-126">Lists existing adapters</span></span>|  
+|<span data-ttu-id="2affd-127">-display</span><span class="sxs-lookup"><span data-stu-id="2affd-127">-display</span></span>|<span data-ttu-id="2affd-128">Affiche les informations relatives aux adaptateurs</span><span class="sxs-lookup"><span data-stu-id="2affd-128">Displays adapter information</span></span>|  
+|<span data-ttu-id="2affd-129">-create</span><span class="sxs-lookup"><span data-stu-id="2affd-129">-create</span></span>|<span data-ttu-id="2affd-130">Crée des adaptateurs</span><span class="sxs-lookup"><span data-stu-id="2affd-130">Creates new adapter(s)</span></span>|  
+|<span data-ttu-id="2affd-131">-setprops</span><span class="sxs-lookup"><span data-stu-id="2affd-131">-setprops</span></span>|<span data-ttu-id="2affd-132">Définit les propriétés de l'adaptateur</span><span class="sxs-lookup"><span data-stu-id="2affd-132">Sets properties for adapter</span></span>|  
+|<span data-ttu-id="2affd-133">-update</span><span class="sxs-lookup"><span data-stu-id="2affd-133">-update</span></span>|<span data-ttu-id="2affd-134">Met à jour le ou les adaptateurs existants</span><span class="sxs-lookup"><span data-stu-id="2affd-134">Updates existing adapter(s)</span></span>|  
+|<span data-ttu-id="2affd-135">-delete</span><span class="sxs-lookup"><span data-stu-id="2affd-135">-delete</span></span>|<span data-ttu-id="2affd-136">Supprime un adaptateur existant</span><span class="sxs-lookup"><span data-stu-id="2affd-136">Deletes an existing adapter</span></span>|  
+|<span data-ttu-id="2affd-137">-enable</span><span class="sxs-lookup"><span data-stu-id="2affd-137">-enable</span></span>|<span data-ttu-id="2affd-138">Active l'adaptateur</span><span class="sxs-lookup"><span data-stu-id="2affd-138">Enables adapter</span></span>|  
+|<span data-ttu-id="2affd-139">-disable</span><span class="sxs-lookup"><span data-stu-id="2affd-139">-disable</span></span>|<span data-ttu-id="2affd-140">Désactive l'adaptateur</span><span class="sxs-lookup"><span data-stu-id="2affd-140">Disables adapter</span></span>|  
+|<span data-ttu-id="2affd-141">-addapp</span><span class="sxs-lookup"><span data-stu-id="2affd-141">-addapp</span></span>|<span data-ttu-id="2affd-142">Ajoute l'application à l'adaptateur</span><span class="sxs-lookup"><span data-stu-id="2affd-142">Adds application for adapter</span></span>|  
+|<span data-ttu-id="2affd-143">-deleteapp</span><span class="sxs-lookup"><span data-stu-id="2affd-143">-deleteapp</span></span>|<span data-ttu-id="2affd-144">Supprime l'application de l'adaptateur</span><span class="sxs-lookup"><span data-stu-id="2affd-144">Deletes application for adapter</span></span>|  
+|<span data-ttu-id="2affd-145">-reset</span><span class="sxs-lookup"><span data-stu-id="2affd-145">-reset</span></span>|<span data-ttu-id="2affd-146">Réinitialise la notification ou les files d'attente d'amortissement</span><span class="sxs-lookup"><span data-stu-id="2affd-146">Resets notification or damping queues</span></span>|  
+|<span data-ttu-id="2affd-147">-addtogroup</span><span class="sxs-lookup"><span data-stu-id="2affd-147">-addtogroup</span></span>|<span data-ttu-id="2affd-148">Ajoute l'adaptateur au groupe d'adaptateurs</span><span class="sxs-lookup"><span data-stu-id="2affd-148">Adds adapter to adapter group</span></span>|  
+|<span data-ttu-id="2affd-149">-deletefromgroup</span><span class="sxs-lookup"><span data-stu-id="2affd-149">-deletefromgroup</span></span>|<span data-ttu-id="2affd-150">Supprime l'adaptateur du groupe d'adaptateurs</span><span class="sxs-lookup"><span data-stu-id="2affd-150">Deletes adapter from adapter group</span></span>|  
   
-### <a name="to-list-existing-adapters"></a>Pour répertorier les adaptateurs existants  
+### <a name="to-list-existing-adapters"></a><span data-ttu-id="2affd-151">Pour répertorier les adaptateurs existants</span><span class="sxs-lookup"><span data-stu-id="2affd-151">To list existing adapters</span></span>  
   
-1.  Dans le menu **Démarrer** , cliquez sur **Exécuter**.  
+1.  <span data-ttu-id="2affd-152">Dans le menu **Démarrer** , cliquez sur **Exécuter**.</span><span class="sxs-lookup"><span data-stu-id="2affd-152">On the **Start** menu, click **Run**.</span></span>  
   
-2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
+2.  <span data-ttu-id="2affd-153">Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="2affd-153">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  <span data-ttu-id="2affd-154">Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise.</span><span class="sxs-lookup"><span data-stu-id="2affd-154">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="2affd-155">La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.</span><span class="sxs-lookup"><span data-stu-id="2affd-155">The default is \<drive>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-4.  Type **ssops-liste** et appuyez sur ENTRÉE.  
+4.  <span data-ttu-id="2affd-156">Type **ssops-liste** et appuyez sur ENTRÉE.</span><span class="sxs-lookup"><span data-stu-id="2affd-156">Type **ssops -list** and press Enter.</span></span>  
   
-     Les adaptateurs et leurs descriptions sont répertoriés. (E) indique que l'adaptateur est activé, (D) indique qu'il est désactivé.  
+     <span data-ttu-id="2affd-157">Les adaptateurs et leurs descriptions sont répertoriés.</span><span class="sxs-lookup"><span data-stu-id="2affd-157">Adapters and descriptions will be listed.</span></span> <span data-ttu-id="2affd-158">(E) indique que l'adaptateur est activé, (D) indique qu'il est désactivé.</span><span class="sxs-lookup"><span data-stu-id="2affd-158">(E) denotes that the adapter is enabled, (D) denotes that it is disabled.</span></span>  
   
-### <a name="to-display-adapter-information"></a>Pour afficher les informations sur l'adaptateur  
+### <a name="to-display-adapter-information"></a><span data-ttu-id="2affd-159">Pour afficher les informations sur l'adaptateur</span><span class="sxs-lookup"><span data-stu-id="2affd-159">To display adapter information</span></span>  
   
-1.  Dans le menu **Démarrer** , cliquez sur **Exécuter**.  
+1.  <span data-ttu-id="2affd-160">Dans le menu **Démarrer** , cliquez sur **Exécuter**.</span><span class="sxs-lookup"><span data-stu-id="2affd-160">On the **Start** menu, click **Run**.</span></span>  
   
-2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
+2.  <span data-ttu-id="2affd-161">Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="2affd-161">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  <span data-ttu-id="2affd-162">Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise.</span><span class="sxs-lookup"><span data-stu-id="2affd-162">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="2affd-163">La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.</span><span class="sxs-lookup"><span data-stu-id="2affd-163">The default is \<drive>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-4.  Type **ssops-afficher \<nom de l’adaptateur >** et appuyez sur ENTRÉE.  
+4.  <span data-ttu-id="2affd-164">Type **ssops-afficher \<nom de l’adaptateur >** et appuyez sur ENTRÉE.</span><span class="sxs-lookup"><span data-stu-id="2affd-164">Type **ssops -display \<adapter name>** and press Enter.</span></span>  
   
-     La sortie écran affiche les informations concernant l'adaptateur spécifié.  
+     <span data-ttu-id="2affd-165">La sortie écran affiche les informations concernant l'adaptateur spécifié.</span><span class="sxs-lookup"><span data-stu-id="2affd-165">The screen output will display information for the specified adapter.</span></span>  
   
-     En plus du nom, du type, de la description, de l'ordinateur et des comptes, les informations suivantes s'affichent.  
+     <span data-ttu-id="2affd-166">En plus du nom, du type, de la description, de l'ordinateur et des comptes, les informations suivantes s'affichent.</span><span class="sxs-lookup"><span data-stu-id="2affd-166">In addition to name, type, description, computer, and accounts, the following information is displayed.</span></span>  
   
-    |Indicateur de l'adaptateur|Détails|  
+    |<span data-ttu-id="2affd-167">Indicateur de l'adaptateur</span><span class="sxs-lookup"><span data-stu-id="2affd-167">Adapter Flag</span></span>|<span data-ttu-id="2affd-168">Détails</span><span class="sxs-lookup"><span data-stu-id="2affd-168">Details</span></span>|  
     |------------------|-------------|  
-    |Adaptateur activé|Détermine si l'adaptateur est activé.<br /><br /> Indicateur : SSO_FLAG_ENABLED<br /><br /> Nom d’attribut : enableApp<br /><br /> Par défaut : aucun|  
-    |Autoriser les comptes locaux|Détermine si les comptes des administrateurs et des utilisateurs d'application (App Admin et App Users) peuvent être des comptes locaux.<br /><br /> Indicateur : SSO_FLAG_APP_ALLOW_LOCAL<br /><br /> Nom d’attribut : allowLocalAccounts<br /><br /> Par défaut : aucun|  
-    |Recevoir les modifications du mot de passe de l'adaptateur|Détermine si l'adaptateur est autorisé à recevoir des modifications de mot de passe externes.<br /><br /> Indicateur : (sso_flag_partial_sync_from_external_to_db)<br /><br /> Nom d’attribut : syncFromAdapter<br /><br /> Par défaut : aucun|  
-    |Vérifier l'ancien mot de passe|Détermine si l'adaptateur doit vérifier l'ancien mot de passe lorsqu'une modification de mot de passe externe est reçue. Lorsqu'un mot de passe externe est modifié et que cet indicateur est défini, l'adaptateur externe doit fournir l'ancien mot de passe externe ainsi que le nouveau. L'ancien mot de passe externe est ensuite comparé au mot de passe externe existant pour ce compte externe dans la base de données SSO. S'ils correspondent, la modification est acceptée. Sinon, la modification est rejetée.<br /><br /> Indicateur : SSO_FLAG_SYNC_VERIFY_EXTERNAL_CREDS<br /><br /> Nom d’attribut : verifyOldPassword<br /><br /> Par défaut : Oui|  
-    |Modifier le mot de passe Windows|Détermine si le mot de passe Windows doit également être modifié lorsqu'une modification de mot de passe externe est reçue (synchronisation complète). ENTSSO utilise toujours l'ancien mot de passe Windows stocké dans la base de données SSO pour remplacer le mot de passe Windows par la nouvelle valeur (Windows requiert les nouveau et ancien mots de passe pour modifier le mot de passe d'un utilisateur). Il doit donc être initialisé afin que la modification de mot de passe Windows puisse réussir. Si la synchronisation de mot de passe est configurée pour un mappage particulier, lorsque les informations d’identification externes sont définies via des outils administratifs (ssomanage ou ssoclient - setcredentials) le mot de passe Windows stocké dans la base de données SSO est également défini. Indicateur : SSO_FLAG_FULL_SYNC_FROM_EXTERNAL_TO_WINDOWS<br /><br /> Nom d’attribut : changeWindowsPassword<br /><br /> Par défaut : aucun|  
-    |Envoyer les modifications du mot de passe Windows à l'adaptateur|Détermine si la modification de mot de passe Windows doit être envoyée à l'adaptateur externe.<br /><br /> Indicateur : SSO_FLAG_FULL_SYNC_FROM_WINDOWS_TO_EXTERNAL<br /><br /> Nom d’attribut : syncToAdapter<br /><br /> Par défaut : aucun|  
-    |Envoyer l'ancien mot de passe à l'adaptateur|Si Oui, la valeur entrée pour l'ancien mot de passe (dans la base de données SSO) est envoyée à l'adaptateur externe, de même que la valeur entrée pour le nouveau mot de passe. Certains systèmes externes requièrent en effet les deux mots de passe (le nouveau et l'ancien) pour réaliser la modification.<br /><br /> Indicateur : SSO_FLAG_SYNC_PROVIDE_OLD_EXTERNAL_CREDS<br /><br /> Nom d’attribut : sendOldPassword<br /><br /> Par défaut : aucun|  
-    |Autoriser les conflits de mappage|Détermine si l'adaptateur autorise les conflits de mappage.<br /><br /> Un conflit survient lorsque les mappages ne sont pas uniques. Dans une seule application SSO individuels, les mappages sont toujours un à un : un compte Windows est mappé à un seul compte externe et vice versa.<br /><br /> En revanche, il est possible d'affecter plusieurs applications à un adaptateur. Par conséquent, il se peut qu'un mappage d'une application entre en conflit avec un mappage d'une autre application.<br /><br /> La fonction de cet indicateur vise à éviter que cela ne se produise. Il est conseillé de ne pas autoriser les conflits de mappage sauf si une condition particulière bien maîtrisée l'exige.<br /><br /> Indicateur : SSO_FLAG_SYNC_ALLOW_MAPPING_CONFLICTS<br /><br /> Nom d’attribut : allowMappingConflicts<br /><br /> Par défaut : aucun|  
+    |<span data-ttu-id="2affd-169">Adaptateur activé</span><span class="sxs-lookup"><span data-stu-id="2affd-169">Adapter enabled</span></span>|<span data-ttu-id="2affd-170">Détermine si l'adaptateur est activé.</span><span class="sxs-lookup"><span data-stu-id="2affd-170">Determines whether or not the adapter is enabled.</span></span><br /><br /> <span data-ttu-id="2affd-171">Indicateur : SSO_FLAG_ENABLED</span><span class="sxs-lookup"><span data-stu-id="2affd-171">Flag: SSO_FLAG_ENABLED</span></span><br /><br /> <span data-ttu-id="2affd-172">Nom d’attribut : enableApp</span><span class="sxs-lookup"><span data-stu-id="2affd-172">Attribute Name: enableApp</span></span><br /><br /> <span data-ttu-id="2affd-173">Par défaut : aucun</span><span class="sxs-lookup"><span data-stu-id="2affd-173">Default: No</span></span>|  
+    |<span data-ttu-id="2affd-174">Autoriser les comptes locaux</span><span class="sxs-lookup"><span data-stu-id="2affd-174">Allow local accounts</span></span>|<span data-ttu-id="2affd-175">Détermine si les comptes des administrateurs et des utilisateurs d'application (App Admin et App Users) peuvent être des comptes locaux.</span><span class="sxs-lookup"><span data-stu-id="2affd-175">Determines whether or not the App Admin or App Users accounts can be local accounts.</span></span><br /><br /> <span data-ttu-id="2affd-176">Indicateur : SSO_FLAG_APP_ALLOW_LOCAL</span><span class="sxs-lookup"><span data-stu-id="2affd-176">Flag: SSO_FLAG_APP_ALLOW_LOCAL</span></span><br /><br /> <span data-ttu-id="2affd-177">Nom d’attribut : allowLocalAccounts</span><span class="sxs-lookup"><span data-stu-id="2affd-177">Attribute Name: allowLocalAccounts</span></span><br /><br /> <span data-ttu-id="2affd-178">Par défaut : aucun</span><span class="sxs-lookup"><span data-stu-id="2affd-178">Default: No</span></span>|  
+    |<span data-ttu-id="2affd-179">Recevoir les modifications du mot de passe de l'adaptateur</span><span class="sxs-lookup"><span data-stu-id="2affd-179">Receive password changes from adapter</span></span>|<span data-ttu-id="2affd-180">Détermine si l'adaptateur est autorisé à recevoir des modifications de mot de passe externes.</span><span class="sxs-lookup"><span data-stu-id="2affd-180">Determines whether or not the adapter is allowed to receive external password changes.</span></span><br /><br /> <span data-ttu-id="2affd-181">Indicateur : (sso_flag_partial_sync_from_external_to_db)</span><span class="sxs-lookup"><span data-stu-id="2affd-181">Flag: SSO_FLAG_PARTIAL_SYNC_FROM_EXTERNAL_TO_DB</span></span><br /><br /> <span data-ttu-id="2affd-182">Nom d’attribut : syncFromAdapter</span><span class="sxs-lookup"><span data-stu-id="2affd-182">Attribute Name: syncFromAdapter</span></span><br /><br /> <span data-ttu-id="2affd-183">Par défaut : aucun</span><span class="sxs-lookup"><span data-stu-id="2affd-183">Default: No</span></span>|  
+    |<span data-ttu-id="2affd-184">Vérifier l'ancien mot de passe</span><span class="sxs-lookup"><span data-stu-id="2affd-184">Verify old password</span></span>|<span data-ttu-id="2affd-185">Détermine si l'adaptateur doit vérifier l'ancien mot de passe lorsqu'une modification de mot de passe externe est reçue.</span><span class="sxs-lookup"><span data-stu-id="2affd-185">Determines whether the adapter will verify the old password when an external password change is received.</span></span> <span data-ttu-id="2affd-186">Lorsqu'un mot de passe externe est modifié et que cet indicateur est défini, l'adaptateur externe doit fournir l'ancien mot de passe externe ainsi que le nouveau.</span><span class="sxs-lookup"><span data-stu-id="2affd-186">If this flag is set then with an external password change the external adapter must supply the old external password as well as the new external password.</span></span> <span data-ttu-id="2affd-187">L'ancien mot de passe externe est ensuite comparé au mot de passe externe existant pour ce compte externe dans la base de données SSO.</span><span class="sxs-lookup"><span data-stu-id="2affd-187">The old external password is then compared with the existing external password in the SSO database for that external account.</span></span> <span data-ttu-id="2affd-188">S'ils correspondent, la modification est acceptée.</span><span class="sxs-lookup"><span data-stu-id="2affd-188">If they match, the password change is accepted.</span></span> <span data-ttu-id="2affd-189">Sinon, la modification est rejetée.</span><span class="sxs-lookup"><span data-stu-id="2affd-189">If they do not match, the password change is rejected.</span></span><br /><br /> <span data-ttu-id="2affd-190">Indicateur : SSO_FLAG_SYNC_VERIFY_EXTERNAL_CREDS</span><span class="sxs-lookup"><span data-stu-id="2affd-190">Flag: SSO_FLAG_SYNC_VERIFY_EXTERNAL_CREDS</span></span><br /><br /> <span data-ttu-id="2affd-191">Nom d’attribut : verifyOldPassword</span><span class="sxs-lookup"><span data-stu-id="2affd-191">Attribute Name: verifyOldPassword</span></span><br /><br /> <span data-ttu-id="2affd-192">Par défaut : Oui</span><span class="sxs-lookup"><span data-stu-id="2affd-192">Default: Yes</span></span>|  
+    |<span data-ttu-id="2affd-193">Modifier le mot de passe Windows</span><span class="sxs-lookup"><span data-stu-id="2affd-193">Change Windows password</span></span>|<span data-ttu-id="2affd-194">Détermine si le mot de passe Windows doit également être modifié lorsqu'une modification de mot de passe externe est reçue (synchronisation complète).</span><span class="sxs-lookup"><span data-stu-id="2affd-194">Determines whether or not the Windows password will also be changed when an external password change is received (full sync).</span></span> <span data-ttu-id="2affd-195">ENTSSO utilise toujours l'ancien mot de passe Windows stocké dans la base de données SSO pour remplacer le mot de passe Windows par la nouvelle valeur (Windows requiert les nouveau et ancien mots de passe pour modifier le mot de passe d'un utilisateur). Il doit donc être initialisé afin que la modification de mot de passe Windows puisse réussir.</span><span class="sxs-lookup"><span data-stu-id="2affd-195">ENTSSO always uses the old Windows password stored in the SSO database to change the Windows password to the new value (Windows requires both the old and new password to change a users password), so this must be initialized before the Windows password change can succeed.</span></span> <span data-ttu-id="2affd-196">Si la synchronisation de mot de passe est configurée pour un mappage particulier, lorsque les informations d’identification externes sont définies via des outils administratifs (ssomanage ou ssoclient - setcredentials) le mot de passe Windows stocké dans la base de données SSO est également défini. Indicateur : SSO_FLAG_FULL_SYNC_FROM_EXTERNAL_TO_WINDOWS</span><span class="sxs-lookup"><span data-stu-id="2affd-196">If password sync is configured for a particular mapping, then when the external credentials are set via administrative tools (ssomanage or ssoclient -setcredentials) the Windows password stored in the SSO database will also be set.Flag: SSO_FLAG_FULL_SYNC_FROM_EXTERNAL_TO_WINDOWS</span></span><br /><br /> <span data-ttu-id="2affd-197">Nom d’attribut : changeWindowsPassword</span><span class="sxs-lookup"><span data-stu-id="2affd-197">Attribute Name: changeWindowsPassword</span></span><br /><br /> <span data-ttu-id="2affd-198">Par défaut : aucun</span><span class="sxs-lookup"><span data-stu-id="2affd-198">Default: No</span></span>|  
+    |<span data-ttu-id="2affd-199">Envoyer les modifications du mot de passe Windows à l'adaptateur</span><span class="sxs-lookup"><span data-stu-id="2affd-199">Send Windows password changes to adapter</span></span>|<span data-ttu-id="2affd-200">Détermine si la modification de mot de passe Windows doit être envoyée à l'adaptateur externe.</span><span class="sxs-lookup"><span data-stu-id="2affd-200">Determines whether or not Windows password changes will be sent to the external adapter.</span></span><br /><br /> <span data-ttu-id="2affd-201">Indicateur : SSO_FLAG_FULL_SYNC_FROM_WINDOWS_TO_EXTERNAL</span><span class="sxs-lookup"><span data-stu-id="2affd-201">Flag: SSO_FLAG_FULL_SYNC_FROM_WINDOWS_TO_EXTERNAL</span></span><br /><br /> <span data-ttu-id="2affd-202">Nom d’attribut : syncToAdapter</span><span class="sxs-lookup"><span data-stu-id="2affd-202">Attribute Name: syncToAdapter</span></span><br /><br /> <span data-ttu-id="2affd-203">Par défaut : aucun</span><span class="sxs-lookup"><span data-stu-id="2affd-203">Default: No</span></span>|  
+    |<span data-ttu-id="2affd-204">Envoyer l'ancien mot de passe à l'adaptateur</span><span class="sxs-lookup"><span data-stu-id="2affd-204">Send old password to adapter</span></span>|<span data-ttu-id="2affd-205">Si Oui, la valeur entrée pour l'ancien mot de passe (dans la base de données SSO) est envoyée à l'adaptateur externe, de même que la valeur entrée pour le nouveau mot de passe.</span><span class="sxs-lookup"><span data-stu-id="2affd-205">If Yes, the old password value (from the SSO database) will also be sent to the external adapter as well as the new password value.</span></span> <span data-ttu-id="2affd-206">Certains systèmes externes requièrent en effet les deux mots de passe (le nouveau et l'ancien) pour réaliser la modification.</span><span class="sxs-lookup"><span data-stu-id="2affd-206">Some external systems might require both the old and new password values to change the password.</span></span><br /><br /> <span data-ttu-id="2affd-207">Indicateur : SSO_FLAG_SYNC_PROVIDE_OLD_EXTERNAL_CREDS</span><span class="sxs-lookup"><span data-stu-id="2affd-207">Flag: SSO_FLAG_SYNC_PROVIDE_OLD_EXTERNAL_CREDS</span></span><br /><br /> <span data-ttu-id="2affd-208">Nom d’attribut : sendOldPassword</span><span class="sxs-lookup"><span data-stu-id="2affd-208">Attribute Name: sendOldPassword</span></span><br /><br /> <span data-ttu-id="2affd-209">Par défaut : aucun</span><span class="sxs-lookup"><span data-stu-id="2affd-209">Default: No</span></span>|  
+    |<span data-ttu-id="2affd-210">Autoriser les conflits de mappage</span><span class="sxs-lookup"><span data-stu-id="2affd-210">Allow mapping conflicts</span></span>|<span data-ttu-id="2affd-211">Détermine si l'adaptateur autorise les conflits de mappage.</span><span class="sxs-lookup"><span data-stu-id="2affd-211">Determines whether or not the adapter will allow mapping conflicts.</span></span><br /><br /> <span data-ttu-id="2affd-212">Un conflit survient lorsque les mappages ne sont pas uniques.</span><span class="sxs-lookup"><span data-stu-id="2affd-212">A mapping conflict occurs when mappings are not unique.</span></span> <span data-ttu-id="2affd-213">Dans une seule application SSO individuels, les mappages sont toujours un à un : un compte Windows est mappé à un seul compte externe et vice versa.</span><span class="sxs-lookup"><span data-stu-id="2affd-213">In a single SSO Individual application, mappings are always one-to-one: one Windows account is mapped to exactly one external account and vice versa.</span></span><br /><br /> <span data-ttu-id="2affd-214">En revanche, il est possible d'affecter plusieurs applications à un adaptateur.</span><span class="sxs-lookup"><span data-stu-id="2affd-214">However, it is possible to assign more than one application to an adapter.</span></span> <span data-ttu-id="2affd-215">Par conséquent, il se peut qu'un mappage d'une application entre en conflit avec un mappage d'une autre application.</span><span class="sxs-lookup"><span data-stu-id="2affd-215">Thus, it is possible to have a mapping in one application that conflicts with a mapping in the other.</span></span><br /><br /> <span data-ttu-id="2affd-216">La fonction de cet indicateur vise à éviter que cela ne se produise.</span><span class="sxs-lookup"><span data-stu-id="2affd-216">This purpose of this flag is to prevent this from occurring.</span></span> <span data-ttu-id="2affd-217">Il est conseillé de ne pas autoriser les conflits de mappage sauf si une condition particulière bien maîtrisée l'exige.</span><span class="sxs-lookup"><span data-stu-id="2affd-217">It is more secure to not allow mapping conflicts unless there is a specific, well understood requirement for this behavior.</span></span><br /><br /> <span data-ttu-id="2affd-218">Indicateur : SSO_FLAG_SYNC_ALLOW_MAPPING_CONFLICTS</span><span class="sxs-lookup"><span data-stu-id="2affd-218">Flag: SSO_FLAG_SYNC_ALLOW_MAPPING_CONFLICTS</span></span><br /><br /> <span data-ttu-id="2affd-219">Nom d’attribut : allowMappingConflicts</span><span class="sxs-lookup"><span data-stu-id="2affd-219">Attribute Name: allowMappingConflicts</span></span><br /><br /> <span data-ttu-id="2affd-220">Par défaut : aucun</span><span class="sxs-lookup"><span data-stu-id="2affd-220">Default: No</span></span>|  
   
-    |Description de l'adaptateur|Détails|  
+    |<span data-ttu-id="2affd-221">Description de l'adaptateur</span><span class="sxs-lookup"><span data-stu-id="2affd-221">Adapter Description</span></span>|<span data-ttu-id="2affd-222">Détails</span><span class="sxs-lookup"><span data-stu-id="2affd-222">Details</span></span>|  
     |-------------------------|-------------|  
-    |Nombre de tentatives de notification|Valeur par défaut est 1.|  
-    |Délai de nouvelle tentative de notification (en minutes)|La valeur par défaut est 5.|  
-    |Nombre maximal de notifications en attente|Valeur par défaut est 8.|  
-    |Stocker les notifications (hors connexion)|True/False.|  
-    |Nom du serveur|Nom du serveur.|  
-    |Numéro de port|Numéro du port.|  
-    |Applications pour cet adaptateur|Liste des applications actuellement affectées à l'adaptateur.|  
+    |<span data-ttu-id="2affd-223">Nombre de tentatives de notification</span><span class="sxs-lookup"><span data-stu-id="2affd-223">Notification retry count</span></span>|<span data-ttu-id="2affd-224">Valeur par défaut est 1.</span><span class="sxs-lookup"><span data-stu-id="2affd-224">Default is 1.</span></span>|  
+    |<span data-ttu-id="2affd-225">Délai de nouvelle tentative de notification (en minutes)</span><span class="sxs-lookup"><span data-stu-id="2affd-225">Notification retry delay (in mins)</span></span>|<span data-ttu-id="2affd-226">La valeur par défaut est 5.</span><span class="sxs-lookup"><span data-stu-id="2affd-226">Default is 5.</span></span>|  
+    |<span data-ttu-id="2affd-227">Nombre maximal de notifications en attente</span><span class="sxs-lookup"><span data-stu-id="2affd-227">Maximum pending notifications</span></span>|<span data-ttu-id="2affd-228">Valeur par défaut est 8.</span><span class="sxs-lookup"><span data-stu-id="2affd-228">Default is 8.</span></span>|  
+    |<span data-ttu-id="2affd-229">Stocker les notifications (hors connexion)</span><span class="sxs-lookup"><span data-stu-id="2affd-229">Store notifications (when offline)</span></span>|<span data-ttu-id="2affd-230">True/False.</span><span class="sxs-lookup"><span data-stu-id="2affd-230">True/False.</span></span>|  
+    |<span data-ttu-id="2affd-231">Nom du serveur</span><span class="sxs-lookup"><span data-stu-id="2affd-231">Server name</span></span>|<span data-ttu-id="2affd-232">Nom du serveur.</span><span class="sxs-lookup"><span data-stu-id="2affd-232">Server name.</span></span>|  
+    |<span data-ttu-id="2affd-233">Numéro de port</span><span class="sxs-lookup"><span data-stu-id="2affd-233">Port number</span></span>|<span data-ttu-id="2affd-234">Numéro du port.</span><span class="sxs-lookup"><span data-stu-id="2affd-234">Port number.</span></span>|  
+    |<span data-ttu-id="2affd-235">Applications pour cet adaptateur</span><span class="sxs-lookup"><span data-stu-id="2affd-235">Applications for this adapter</span></span>|<span data-ttu-id="2affd-236">Liste des applications actuellement affectées à l'adaptateur.</span><span class="sxs-lookup"><span data-stu-id="2affd-236">List of applications currently assigned to the adapter.</span></span>|  
   
-### <a name="to-create-new-adapters"></a>Pour créer des adaptateurs  
+### <a name="to-create-new-adapters"></a><span data-ttu-id="2affd-237">Pour créer des adaptateurs</span><span class="sxs-lookup"><span data-stu-id="2affd-237">To create new adapters</span></span>  
   
-1.  Dans le menu **Démarrer** , cliquez sur **Exécuter**.  
+1.  <span data-ttu-id="2affd-238">Dans le menu **Démarrer** , cliquez sur **Exécuter**.</span><span class="sxs-lookup"><span data-stu-id="2affd-238">On the **Start** menu, click **Run**.</span></span>  
   
-2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
+2.  <span data-ttu-id="2affd-239">Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="2affd-239">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  <span data-ttu-id="2affd-240">Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise.</span><span class="sxs-lookup"><span data-stu-id="2affd-240">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="2affd-241">La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.</span><span class="sxs-lookup"><span data-stu-id="2affd-241">The default is \<drive>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-4.  Type **ssops-créer \<fichier d’adaptateur >** et appuyez sur ENTRÉE.  
+4.  <span data-ttu-id="2affd-242">Type **ssops-créer \<fichier d’adaptateur >** et appuyez sur ENTRÉE.</span><span class="sxs-lookup"><span data-stu-id="2affd-242">Type **ssops -create \<adapter file>** and press Enter.</span></span>  
   
-     La sortie écran affiche les informations concernant l'adaptateur créé.  
+     <span data-ttu-id="2affd-243">La sortie écran affiche les informations concernant l'adaptateur créé.</span><span class="sxs-lookup"><span data-stu-id="2affd-243">The screen output will display information for the newly created adapter.</span></span>  
   
-### <a name="to-set-properties-for-an-adapter"></a>Pour définir les propriétés d'un adaptateur  
+### <a name="to-set-properties-for-an-adapter"></a><span data-ttu-id="2affd-244">Pour définir les propriétés d'un adaptateur</span><span class="sxs-lookup"><span data-stu-id="2affd-244">To set properties for an adapter</span></span>  
   
-1.  Dans le menu **Démarrer** , cliquez sur **Exécuter**.  
+1.  <span data-ttu-id="2affd-245">Dans le menu **Démarrer** , cliquez sur **Exécuter**.</span><span class="sxs-lookup"><span data-stu-id="2affd-245">On the **Start** menu, click **Run**.</span></span>  
   
-2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
+2.  <span data-ttu-id="2affd-246">Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="2affd-246">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  <span data-ttu-id="2affd-247">Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise.</span><span class="sxs-lookup"><span data-stu-id="2affd-247">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="2affd-248">La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.</span><span class="sxs-lookup"><span data-stu-id="2affd-248">The default is \<drive>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-4.  Type **ssops - setprops \<nom de l’adaptateur >** et appuyez sur ENTRÉE.  
+4.  <span data-ttu-id="2affd-249">Type **ssops - setprops \<nom de l’adaptateur >** et appuyez sur ENTRÉE.</span><span class="sxs-lookup"><span data-stu-id="2affd-249">Type **ssops -setprops \<adapter name>** and press Enter.</span></span>  
   
-     La sortie écran affiche les propriétés de l'adaptateur spécifié. Vous pouvez les modifier si nécessaire, mais les nouvelles valeurs ne sont pas validées.  
+     <span data-ttu-id="2affd-250">La sortie écran affiche les propriétés de l'adaptateur spécifié.</span><span class="sxs-lookup"><span data-stu-id="2affd-250">The screen output will display the properties for the specified adapter.</span></span> <span data-ttu-id="2affd-251">Vous pouvez les modifier si nécessaire, mais les nouvelles valeurs ne sont pas validées.</span><span class="sxs-lookup"><span data-stu-id="2affd-251">You can edit them if necessary, but new values are not validated.</span></span>  
   
-### <a name="to-update-existing-adapters"></a>Pour mettre à jour des adaptateurs existants  
+### <a name="to-update-existing-adapters"></a><span data-ttu-id="2affd-252">Pour mettre à jour des adaptateurs existants</span><span class="sxs-lookup"><span data-stu-id="2affd-252">To update existing adapters</span></span>  
   
-1.  Dans le menu **Démarrer** , cliquez sur **Exécuter**.  
+1.  <span data-ttu-id="2affd-253">Dans le menu **Démarrer** , cliquez sur **Exécuter**.</span><span class="sxs-lookup"><span data-stu-id="2affd-253">On the **Start** menu, click **Run**.</span></span>  
   
-2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
+2.  <span data-ttu-id="2affd-254">Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="2affd-254">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  <span data-ttu-id="2affd-255">Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise.</span><span class="sxs-lookup"><span data-stu-id="2affd-255">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="2affd-256">La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.</span><span class="sxs-lookup"><span data-stu-id="2affd-256">The default is \<drive>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-4.  Type **ssops-mettre à jour \<fichier d’adaptateur >** et appuyez sur ENTRÉE.  
+4.  <span data-ttu-id="2affd-257">Type **ssops-mettre à jour \<fichier d’adaptateur >** et appuyez sur ENTRÉE.</span><span class="sxs-lookup"><span data-stu-id="2affd-257">Type **ssops -update \<adapter file>** and press Enter.</span></span>  
   
-     Utilisez cette commande pour mettre à jour les paramètres et indicateurs pour un adaptateur spécifié. N'utilisez pas cette commande pour définir les propriétés. Utilisez plutôt la commande -setprops.  
+     <span data-ttu-id="2affd-258">Utilisez cette commande pour mettre à jour les paramètres et indicateurs pour un adaptateur spécifié.</span><span class="sxs-lookup"><span data-stu-id="2affd-258">Use this command to update the settings and flags for a specified adapter.</span></span> <span data-ttu-id="2affd-259">N'utilisez pas cette commande pour définir les propriétés. Utilisez plutôt la commande -setprops.</span><span class="sxs-lookup"><span data-stu-id="2affd-259">Do not use this command to set properties; use instead the -setprops command.</span></span>  
   
-### <a name="to-delete-an-existing-adapter"></a>Pour supprimer un adaptateur existant  
+### <a name="to-delete-an-existing-adapter"></a><span data-ttu-id="2affd-260">Pour supprimer un adaptateur existant</span><span class="sxs-lookup"><span data-stu-id="2affd-260">To delete an existing adapter</span></span>  
   
-1.  Dans le menu **Démarrer** , cliquez sur **Exécuter**.  
+1.  <span data-ttu-id="2affd-261">Dans le menu **Démarrer** , cliquez sur **Exécuter**.</span><span class="sxs-lookup"><span data-stu-id="2affd-261">On the **Start** menu, click **Run**.</span></span>  
   
-2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
+2.  <span data-ttu-id="2affd-262">Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="2affd-262">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  <span data-ttu-id="2affd-263">Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise.</span><span class="sxs-lookup"><span data-stu-id="2affd-263">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="2affd-264">La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.</span><span class="sxs-lookup"><span data-stu-id="2affd-264">The default is \<drive>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-4.  Type **ssops-supprimer \<nom de l’adaptateur >** et appuyez sur ENTRÉE.  
+4.  <span data-ttu-id="2affd-265">Type **ssops-supprimer \<nom de l’adaptateur >** et appuyez sur ENTRÉE.</span><span class="sxs-lookup"><span data-stu-id="2affd-265">Type **ssops -delete \<adapter name>** and press Enter.</span></span>  
   
-     L'adaptateur spécifié est supprimé.  
+     <span data-ttu-id="2affd-266">L'adaptateur spécifié est supprimé.</span><span class="sxs-lookup"><span data-stu-id="2affd-266">The specified adapter will be deleted.</span></span>  
   
-### <a name="to-enable-an-adapter"></a>Pour activer un adaptateur  
+### <a name="to-enable-an-adapter"></a><span data-ttu-id="2affd-267">Pour activer un adaptateur</span><span class="sxs-lookup"><span data-stu-id="2affd-267">To enable an adapter</span></span>  
   
-1.  Dans le menu **Démarrer** , cliquez sur **Exécuter**.  
+1.  <span data-ttu-id="2affd-268">Dans le menu **Démarrer** , cliquez sur **Exécuter**.</span><span class="sxs-lookup"><span data-stu-id="2affd-268">On the **Start** menu, click **Run**.</span></span>  
   
-2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
+2.  <span data-ttu-id="2affd-269">Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="2affd-269">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  <span data-ttu-id="2affd-270">Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise.</span><span class="sxs-lookup"><span data-stu-id="2affd-270">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="2affd-271">La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.</span><span class="sxs-lookup"><span data-stu-id="2affd-271">The default is \<drive>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-4.  Type **ssops-activer \<nom de l’adaptateur >** et appuyez sur ENTRÉE.  
+4.  <span data-ttu-id="2affd-272">Type **ssops-activer \<nom de l’adaptateur >** et appuyez sur ENTRÉE.</span><span class="sxs-lookup"><span data-stu-id="2affd-272">Type **ssops -enable \<adapter name>** and press Enter.</span></span>  
   
-     L'adaptateur spécifié est activé.  
+     <span data-ttu-id="2affd-273">L'adaptateur spécifié est activé.</span><span class="sxs-lookup"><span data-stu-id="2affd-273">The specified adapter will be enabled.</span></span>  
   
-### <a name="to-disable-an-adapter"></a>Pour désactiver un adaptateur  
+### <a name="to-disable-an-adapter"></a><span data-ttu-id="2affd-274">Pour désactiver un adaptateur</span><span class="sxs-lookup"><span data-stu-id="2affd-274">To disable an adapter</span></span>  
   
-1.  Dans le menu **Démarrer** , cliquez sur **Exécuter**.  
+1.  <span data-ttu-id="2affd-275">Dans le menu **Démarrer** , cliquez sur **Exécuter**.</span><span class="sxs-lookup"><span data-stu-id="2affd-275">On the **Start** menu, click **Run**.</span></span>  
   
-2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
+2.  <span data-ttu-id="2affd-276">Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="2affd-276">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  <span data-ttu-id="2affd-277">Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise.</span><span class="sxs-lookup"><span data-stu-id="2affd-277">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="2affd-278">La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.</span><span class="sxs-lookup"><span data-stu-id="2affd-278">The default is \<drive>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-4.  Type **ssops-désactiver \<nom de l’adaptateur >** et appuyez sur ENTRÉE.  
+4.  <span data-ttu-id="2affd-279">Type **ssops-désactiver \<nom de l’adaptateur >** et appuyez sur ENTRÉE.</span><span class="sxs-lookup"><span data-stu-id="2affd-279">Type **ssops -disable \<adapter name>** and press Enter.</span></span>  
   
-     L'adaptateur spécifié est désactivé.  
+     <span data-ttu-id="2affd-280">L'adaptateur spécifié est désactivé.</span><span class="sxs-lookup"><span data-stu-id="2affd-280">The specified adapter will be disabled.</span></span>  
   
-### <a name="to-add-an-application-to-an-adapter"></a>Pour ajouter une application à un adaptateur  
+### <a name="to-add-an-application-to-an-adapter"></a><span data-ttu-id="2affd-281">Pour ajouter une application à un adaptateur</span><span class="sxs-lookup"><span data-stu-id="2affd-281">To add an application to an adapter</span></span>  
   
-1.  Dans le menu **Démarrer** , cliquez sur **Exécuter**.  
+1.  <span data-ttu-id="2affd-282">Dans le menu **Démarrer** , cliquez sur **Exécuter**.</span><span class="sxs-lookup"><span data-stu-id="2affd-282">On the **Start** menu, click **Run**.</span></span>  
   
-2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
+2.  <span data-ttu-id="2affd-283">Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="2affd-283">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  <span data-ttu-id="2affd-284">Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise.</span><span class="sxs-lookup"><span data-stu-id="2affd-284">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="2affd-285">La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.</span><span class="sxs-lookup"><span data-stu-id="2affd-285">The default is \<drive>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-4.  Type **ssops - addapp \<nom de l’adaptateur > \<nom de l’application >** et appuyez sur ENTRÉE.  
+4.  <span data-ttu-id="2affd-286">Type **ssops - addapp \<nom de l’adaptateur > \<nom de l’application >** et appuyez sur ENTRÉE.</span><span class="sxs-lookup"><span data-stu-id="2affd-286">Type **ssops -addapp \<adapter name> \<application name>** and press Enter.</span></span>  
   
-     L'application SSO spécifiée est affectée à l'adaptateur spécifié. Cela signifie que les mots de passe pour les mappages dans cette application sont désormais synchronisés à l'aide de cet adaptateur.  
+     <span data-ttu-id="2affd-287">L'application SSO spécifiée est affectée à l'adaptateur spécifié.</span><span class="sxs-lookup"><span data-stu-id="2affd-287">The specified SSO application will be assigned to the specified adapter.</span></span> <span data-ttu-id="2affd-288">Cela signifie que les mots de passe pour les mappages dans cette application sont désormais synchronisés à l'aide de cet adaptateur.</span><span class="sxs-lookup"><span data-stu-id="2affd-288">This means that the passwords for the mappings in that application will now be synchronized using this adapter.</span></span>  
   
-     Alors que plusieurs applications peuvent être affectées à un seul adaptateur, une application donnée peut uniquement être affectée à un seul adaptateur.  
+     <span data-ttu-id="2affd-289">Alors que plusieurs applications peuvent être affectées à un seul adaptateur, une application donnée peut uniquement être affectée à un seul adaptateur.</span><span class="sxs-lookup"><span data-stu-id="2affd-289">While multiple applications can be assigned to one adapter, any given application can only be assigned to one adapter.</span></span>  
   
-### <a name="to-delete-an-application-from-an-adapter"></a>Pour supprimer une application d'un adaptateur  
+### <a name="to-delete-an-application-from-an-adapter"></a><span data-ttu-id="2affd-290">Pour supprimer une application d'un adaptateur</span><span class="sxs-lookup"><span data-stu-id="2affd-290">To delete an application from an adapter</span></span>  
   
-1.  Dans le menu **Démarrer** , cliquez sur **Exécuter**.  
+1.  <span data-ttu-id="2affd-291">Dans le menu **Démarrer** , cliquez sur **Exécuter**.</span><span class="sxs-lookup"><span data-stu-id="2affd-291">On the **Start** menu, click **Run**.</span></span>  
   
-2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
+2.  <span data-ttu-id="2affd-292">Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="2affd-292">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  <span data-ttu-id="2affd-293">Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise.</span><span class="sxs-lookup"><span data-stu-id="2affd-293">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="2affd-294">La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.</span><span class="sxs-lookup"><span data-stu-id="2affd-294">The default is \<drive>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-4.  Type **ssops - deleteapp \<nom de l’application >** et appuyez sur ENTRÉE.  
+4.  <span data-ttu-id="2affd-295">Type **ssops - deleteapp \<nom de l’application >** et appuyez sur ENTRÉE.</span><span class="sxs-lookup"><span data-stu-id="2affd-295">Type **ssops -deleteapp \<application name>** and press Enter.</span></span>  
   
-     L'application SSO spécifiée est supprimée d'un adaptateur. (Comme une application peut uniquement être affectée à un seul adaptateur, il n'est pas nécessaire de spécifier le nom de l'adaptateur.)  
+     <span data-ttu-id="2affd-296">L'application SSO spécifiée est supprimée d'un adaptateur.</span><span class="sxs-lookup"><span data-stu-id="2affd-296">The specified SSO application will be removed from an adapter.</span></span> <span data-ttu-id="2affd-297">(Comme une application peut uniquement être affectée à un seul adaptateur, il n'est pas nécessaire de spécifier le nom de l'adaptateur.)</span><span class="sxs-lookup"><span data-stu-id="2affd-297">(Since an application can only be assigned to one adapter, it is not necessary to specify the adapter name.)</span></span>  
   
-### <a name="to-reset-notification"></a>Pour réinitialiser la notification  
+### <a name="to-reset-notification"></a><span data-ttu-id="2affd-298">Pour réinitialiser la notification</span><span class="sxs-lookup"><span data-stu-id="2affd-298">To reset notification</span></span>  
   
-1.  Dans le menu **Démarrer** , cliquez sur **Exécuter**.  
+1.  <span data-ttu-id="2affd-299">Dans le menu **Démarrer** , cliquez sur **Exécuter**.</span><span class="sxs-lookup"><span data-stu-id="2affd-299">On the **Start** menu, click **Run**.</span></span>  
   
-2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
+2.  <span data-ttu-id="2affd-300">Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="2affd-300">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  <span data-ttu-id="2affd-301">Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise.</span><span class="sxs-lookup"><span data-stu-id="2affd-301">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="2affd-302">La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.</span><span class="sxs-lookup"><span data-stu-id="2affd-302">The default is \<drive>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-4.  Type **ssops-réinitialiser \<nom de l’adaptateur &#124; tous les &#124; amortissement >** et appuyez sur ENTRÉE.  
+4.  <span data-ttu-id="2affd-303">Type **ssops-réinitialiser \<nom de l’adaptateur &#124; tous les &#124; amortissement >** et appuyez sur ENTRÉE.</span><span class="sxs-lookup"><span data-stu-id="2affd-303">Type **ssops -reset \<adapter name &#124; all &#124; damping>** and press Enter.</span></span>  
   
-     Cette commande efface le tableau d'amortissement et/ou les files d'attente de notification pour un seul adaptateur ou pour tous les adaptateurs, tel que spécifié. Le tableau d'amortissement stocke un historique de 10 minutes de modifications de mot de passe. Avant que le système de l'authentification unique de l'entreprise accepte ou envoie une modification de mot de passe, il vérifie le tableau d'amortissement pour voir s'il a effectué la même modification récemment. Si tel est le cas, la nouvelle modification est ignorée.  
+     <span data-ttu-id="2affd-304">Cette commande efface le tableau d'amortissement et/ou les files d'attente de notification pour un seul adaptateur ou pour tous les adaptateurs, tel que spécifié.</span><span class="sxs-lookup"><span data-stu-id="2affd-304">This command clears the damping table and/or notification queues for a single adapter or all adapters, as specified.</span></span> <span data-ttu-id="2affd-305">Le tableau d'amortissement stocke un historique de 10 minutes de modifications de mot de passe.</span><span class="sxs-lookup"><span data-stu-id="2affd-305">The damping table stores a 10-minute history of password changes.</span></span> <span data-ttu-id="2affd-306">Avant que le système de l'authentification unique de l'entreprise accepte ou envoie une modification de mot de passe, il vérifie le tableau d'amortissement pour voir s'il a effectué la même modification récemment.</span><span class="sxs-lookup"><span data-stu-id="2affd-306">Before the Enterprise SSO system accepts or sends a password change, it checks the damping table to see if it has performed the same change recently.</span></span> <span data-ttu-id="2affd-307">Si tel est le cas, la nouvelle modification est ignorée.</span><span class="sxs-lookup"><span data-stu-id="2affd-307">If it has, the new change is discarded.</span></span>  
   
-### <a name="to-add-an-adapter-to-an-adapter-group"></a>Pour ajouter un adaptateur à un groupe d'adaptateurs  
+### <a name="to-add-an-adapter-to-an-adapter-group"></a><span data-ttu-id="2affd-308">Pour ajouter un adaptateur à un groupe d'adaptateurs</span><span class="sxs-lookup"><span data-stu-id="2affd-308">To add an adapter to an adapter group</span></span>  
   
-1.  Dans le menu **Démarrer** , cliquez sur **Exécuter**.  
+1.  <span data-ttu-id="2affd-309">Dans le menu **Démarrer** , cliquez sur **Exécuter**.</span><span class="sxs-lookup"><span data-stu-id="2affd-309">On the **Start** menu, click **Run**.</span></span>  
   
-2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
+2.  <span data-ttu-id="2affd-310">Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="2affd-310">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  <span data-ttu-id="2affd-311">Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise.</span><span class="sxs-lookup"><span data-stu-id="2affd-311">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="2affd-312">La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.</span><span class="sxs-lookup"><span data-stu-id="2affd-312">The default is \<drive>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-4.  Type **ssops - addtogroup \<nom de l’adaptateur > \<groupe d’adaptateurs >** et appuyez sur ENTRÉE.  
+4.  <span data-ttu-id="2affd-313">Type **ssops - addtogroup \<nom de l’adaptateur > \<groupe d’adaptateurs >** et appuyez sur ENTRÉE.</span><span class="sxs-lookup"><span data-stu-id="2affd-313">Type **ssops -addtogroup \<adapter name> \<adapter group>** and press Enter.</span></span>  
   
-     Cette commande ajoute l'adaptateur spécifié au groupe d'adaptateurs spécifié. Alors qu'un adaptateur ne peut appartenir qu'à un seul groupe d'adaptateurs, un groupe d'adaptateurs peut contenir plusieurs adaptateurs.  
+     <span data-ttu-id="2affd-314">Cette commande ajoute l'adaptateur spécifié au groupe d'adaptateurs spécifié.</span><span class="sxs-lookup"><span data-stu-id="2affd-314">This command adds the specified adapter to the specified adapter group.</span></span> <span data-ttu-id="2affd-315">Alors qu'un adaptateur ne peut appartenir qu'à un seul groupe d'adaptateurs, un groupe d'adaptateurs peut contenir plusieurs adaptateurs.</span><span class="sxs-lookup"><span data-stu-id="2affd-315">While an adapter can belong to only one adapter group, an adapter group can contain multiple adapters.</span></span>  
   
-### <a name="to-delete-an-adapter-from-an-adapter-group"></a>Supprimer un adaptateur d'un groupe d'adaptateurs  
+### <a name="to-delete-an-adapter-from-an-adapter-group"></a><span data-ttu-id="2affd-316">Supprimer un adaptateur d'un groupe d'adaptateurs</span><span class="sxs-lookup"><span data-stu-id="2affd-316">To delete an adapter from an adapter group</span></span>  
   
-1.  Dans le menu **Démarrer** , cliquez sur **Exécuter**.  
+1.  <span data-ttu-id="2affd-317">Dans le menu **Démarrer** , cliquez sur **Exécuter**.</span><span class="sxs-lookup"><span data-stu-id="2affd-317">On the **Start** menu, click **Run**.</span></span>  
   
-2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
+2.  <span data-ttu-id="2affd-318">Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="2affd-318">In the **Run** dialog box, type **cmd**, and then click **OK**.</span></span>  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  <span data-ttu-id="2affd-319">Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise.</span><span class="sxs-lookup"><span data-stu-id="2affd-319">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="2affd-320">La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.</span><span class="sxs-lookup"><span data-stu-id="2affd-320">The default is \<drive>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-4.  Type **ssops - deletefromgroup, \<nom de l’adaptateur > \<groupe d’adaptateurs >** et appuyez sur ENTRÉE.  
+4.  <span data-ttu-id="2affd-321">Type **ssops - deletefromgroup, \<nom de l’adaptateur > \<groupe d’adaptateurs >** et appuyez sur ENTRÉE.</span><span class="sxs-lookup"><span data-stu-id="2affd-321">Type **ssops -deletefromgroup \<adapter name> \<adapter group>** and press Enter.</span></span>  
   
-     Cette commande supprime l'adaptateur spécifié du groupe d'adaptateurs spécifié.  
+     <span data-ttu-id="2affd-322">Cette commande supprime l'adaptateur spécifié du groupe d'adaptateurs spécifié.</span><span class="sxs-lookup"><span data-stu-id="2affd-322">This command deletes the specified adapter from the specified adapter group.</span></span>  
   
-## <a name="see-also"></a>Voir aussi  
- [Synchronisation de mot de passe](../core/password-synchronization2.md)
+## <a name="see-also"></a><span data-ttu-id="2affd-323">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="2affd-323">See Also</span></span>  
+ [<span data-ttu-id="2affd-324">Synchronisation de mot de passe</span><span class="sxs-lookup"><span data-stu-id="2affd-324">Password Synchronization</span></span>](../core/password-synchronization2.md)

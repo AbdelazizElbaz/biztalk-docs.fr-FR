@@ -18,24 +18,24 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="edi-document-schema-support"></a>Prise en charge du schéma de document EDI
-Cette section répertorie les schémas de document informatisé EDI spécifiques inclus dans [!INCLUDE[prague](../includes/prague-md.md)].  
+# <a name="edi-document-schema-support"></a><span data-ttu-id="c66d5-102">Prise en charge du schéma de document EDI</span><span class="sxs-lookup"><span data-stu-id="c66d5-102">EDI Document Schema Support</span></span>
+<span data-ttu-id="c66d5-103">Cette section répertorie les schémas de document informatisé EDI spécifiques inclus dans [!INCLUDE[prague](../includes/prague-md.md)].</span><span class="sxs-lookup"><span data-stu-id="c66d5-103">This section lists the specific EDI transaction set schemas that are provided with [!INCLUDE[prague](../includes/prague-md.md)].</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="c66d5-104">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="c66d5-104">In This Section</span></span>  
   
--   [X12 les documents informatisés 100-250](../core/x12-transaction-sets-100-250.md)  
+-   [<span data-ttu-id="c66d5-105">X12 les documents informatisés 100-250</span><span class="sxs-lookup"><span data-stu-id="c66d5-105">X12 Transaction Sets 100-250</span></span>](../core/x12-transaction-sets-100-250.md)  
   
--   [X12 les documents informatisés 251-503](../core/x12-transaction-sets-251-503.md)  
+-   [<span data-ttu-id="c66d5-106">X12 les documents informatisés 251-503</span><span class="sxs-lookup"><span data-stu-id="c66d5-106">X12 Transaction Sets 251-503</span></span>](../core/x12-transaction-sets-251-503.md)  
   
--   [X12 les documents informatisés 504-999](../core/x12-transaction-sets-504-999.md)  
+-   [<span data-ttu-id="c66d5-107">X12 les documents informatisés 504-999</span><span class="sxs-lookup"><span data-stu-id="c66d5-107">X12 Transaction Sets 504-999</span></span>](../core/x12-transaction-sets-504-999.md)  
   
--   [Documents informatisés HIPAA](../core/hipaa-transaction-sets.md)  
+-   [<span data-ttu-id="c66d5-108">Documents informatisés HIPAA</span><span class="sxs-lookup"><span data-stu-id="c66d5-108">HIPAA Transaction Sets</span></span>](../core/hipaa-transaction-sets.md)  
   
--   [Jeux de transactions EDIFACT APERAK-IFTRIN](../core/edifact-transaction-sets-aperak-iftrin.md)  
+-   [<span data-ttu-id="c66d5-109">Jeux de transactions EDIFACT APERAK-IFTRIN</span><span class="sxs-lookup"><span data-stu-id="c66d5-109">EDIFACT Transaction Sets APERAK-IFTRIN</span></span>](../core/edifact-transaction-sets-aperak-iftrin.md)  
   
--   [EDIFACT informatisés IFTSAI-WKGRRE](../core/edifact-transaction-sets-iftsai-wkgrre.md)  
+-   [<span data-ttu-id="c66d5-110">EDIFACT informatisés IFTSAI-WKGRRE</span><span class="sxs-lookup"><span data-stu-id="c66d5-110">EDIFACT Transaction Sets IFTSAI-WKGRRE</span></span>](../core/edifact-transaction-sets-iftsai-wkgrre.md)  
   
--   [EANCOM](../core/eancom.md)  
+-   [<span data-ttu-id="c66d5-111">EANCOM</span><span class="sxs-lookup"><span data-stu-id="c66d5-111">EANCOM</span></span>](../core/eancom.md)  
   
-## <a name="see-also"></a>Voir aussi  
- [Problèmes de prise en charge EDI](../core/edi-support-issues.md)
+## <a name="see-also"></a><span data-ttu-id="c66d5-112">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="c66d5-112">See Also</span></span>  
+ [<span data-ttu-id="c66d5-113">Problèmes de prise en charge EDI</span><span class="sxs-lookup"><span data-stu-id="c66d5-113">EDI Support Issues</span></span>](../core/edi-support-issues.md)

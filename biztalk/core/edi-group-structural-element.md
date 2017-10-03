@@ -18,98 +18,98 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="edi-group-structural-element"></a>Élément structurel d'un groupe EDI
-Ce groupe contient un ou plusieurs documents informatisés. Un groupe EDIFACT doit contenir des documents informatisés du même type. Un groupe X12 peut contenir des documents informatisés de type semblable (basés sur le document informatisé : groupe (GS01-ST01) mappage) ou de même type. Le tableau ci-dessous répertorie similaire X12 documents informatisés (ST01), qui peuvent être regroupés dans un seul groupe (GS01).  
+# <a name="edi-group-structural-element"></a><span data-ttu-id="b7662-102">Élément structurel d'un groupe EDI</span><span class="sxs-lookup"><span data-stu-id="b7662-102">EDI Group Structural Element</span></span>
+<span data-ttu-id="b7662-103">Ce groupe contient un ou plusieurs documents informatisés.</span><span class="sxs-lookup"><span data-stu-id="b7662-103">The group contains one or more transaction sets.</span></span> <span data-ttu-id="b7662-104">Un groupe EDIFACT doit contenir des documents informatisés du même type.</span><span class="sxs-lookup"><span data-stu-id="b7662-104">An EDIFACT group must contain transaction sets of the same type.</span></span> <span data-ttu-id="b7662-105">Un groupe X12 peut contenir des documents informatisés de type semblable (basés sur le document informatisé : groupe (GS01-ST01) mappage) ou de même type.</span><span class="sxs-lookup"><span data-stu-id="b7662-105">An X12 group may contain transaction sets of similar type (based on the transaction set – group (GS01-ST01) mapping) or transaction sets of the same type.</span></span> <span data-ttu-id="b7662-106">Le tableau ci-dessous répertorie similaire X12 documents informatisés (ST01), qui peuvent être regroupés dans un seul groupe (GS01).</span><span class="sxs-lookup"><span data-stu-id="b7662-106">The table below lists similar X12 transaction sets (ST01), which can occur together in a single group (GS01).</span></span>  
   
-|GS01|ST01|  
+|<span data-ttu-id="b7662-107">GS01</span><span class="sxs-lookup"><span data-stu-id="b7662-107">GS01</span></span>|<span data-ttu-id="b7662-108">ST01</span><span class="sxs-lookup"><span data-stu-id="b7662-108">ST01</span></span>|  
 |----------|----------|  
-|CF|844|  
-|CF|849|  
-|DX|894|  
-|DX|895|  
-|FR|821|  
-|FR|827|  
-|GC|920|  
-|GC|924|  
-|GC|925|  
-|GC|926|  
-|HC|837|  
-|HC|837_D|  
-|HC|837_I|  
-|HC|837_P|  
-|IA|110|  
-|IA|980|  
-|E/S|310|  
-|E/S|312|  
-|ME|198|  
-|ME|200|  
-|ME|201|  
-|ME|245|  
-|ME|261|  
-|ME|262|  
-|ME|263|  
-|ME|833|  
-|ME|872|  
-|MG|203|  
-|MG|206|  
-|MG|259|  
-|MG|260|  
-|MG|264|  
-|MG|266|  
-|OG|875|  
-|OG|876|  
-|PK|196|  
-|PK|839|  
-|QG|878|  
-|QG|879|  
-|QG|888|  
-|QG|889|  
-|QG|896|  
-|QO|313|  
-|QO|315|  
-|RO|300|  
-|RO|301|  
-|RO|303|  
-|RQ|836|  
-|RQ|840|  
-|RS|869|  
-|RS|870|  
-|SL|135|  
-|SL|139|  
-|SO|302|  
-|SO|311|  
-|SO|317|  
-|SO|319|  
-|SO|322|  
-|SO|323|  
-|SO|324|  
-|SO|325|  
-|SO|326|  
-|SO|361|  
-|TO|197|  
-|TO|199|  
-|TO|265|  
-|TO|485|  
-|TO|486|  
-|TP|460|  
-|TP|463|  
-|TP|466|  
-|TP|468|  
-|TP|490|  
-|TP|492|  
-|TP|494|  
-|WA|140|  
-|WA|141|  
-|WA|142|  
-|WA|143|  
+|<span data-ttu-id="b7662-109">CF</span><span class="sxs-lookup"><span data-stu-id="b7662-109">CF</span></span>|<span data-ttu-id="b7662-110">844</span><span class="sxs-lookup"><span data-stu-id="b7662-110">844</span></span>|  
+|<span data-ttu-id="b7662-111">CF</span><span class="sxs-lookup"><span data-stu-id="b7662-111">CF</span></span>|<span data-ttu-id="b7662-112">849</span><span class="sxs-lookup"><span data-stu-id="b7662-112">849</span></span>|  
+|<span data-ttu-id="b7662-113">DX</span><span class="sxs-lookup"><span data-stu-id="b7662-113">DX</span></span>|<span data-ttu-id="b7662-114">894</span><span class="sxs-lookup"><span data-stu-id="b7662-114">894</span></span>|  
+|<span data-ttu-id="b7662-115">DX</span><span class="sxs-lookup"><span data-stu-id="b7662-115">DX</span></span>|<span data-ttu-id="b7662-116">895</span><span class="sxs-lookup"><span data-stu-id="b7662-116">895</span></span>|  
+|<span data-ttu-id="b7662-117">FR</span><span class="sxs-lookup"><span data-stu-id="b7662-117">FR</span></span>|<span data-ttu-id="b7662-118">821</span><span class="sxs-lookup"><span data-stu-id="b7662-118">821</span></span>|  
+|<span data-ttu-id="b7662-119">FR</span><span class="sxs-lookup"><span data-stu-id="b7662-119">FR</span></span>|<span data-ttu-id="b7662-120">827</span><span class="sxs-lookup"><span data-stu-id="b7662-120">827</span></span>|  
+|<span data-ttu-id="b7662-121">GC</span><span class="sxs-lookup"><span data-stu-id="b7662-121">GC</span></span>|<span data-ttu-id="b7662-122">920</span><span class="sxs-lookup"><span data-stu-id="b7662-122">920</span></span>|  
+|<span data-ttu-id="b7662-123">GC</span><span class="sxs-lookup"><span data-stu-id="b7662-123">GC</span></span>|<span data-ttu-id="b7662-124">924</span><span class="sxs-lookup"><span data-stu-id="b7662-124">924</span></span>|  
+|<span data-ttu-id="b7662-125">GC</span><span class="sxs-lookup"><span data-stu-id="b7662-125">GC</span></span>|<span data-ttu-id="b7662-126">925</span><span class="sxs-lookup"><span data-stu-id="b7662-126">925</span></span>|  
+|<span data-ttu-id="b7662-127">GC</span><span class="sxs-lookup"><span data-stu-id="b7662-127">GC</span></span>|<span data-ttu-id="b7662-128">926</span><span class="sxs-lookup"><span data-stu-id="b7662-128">926</span></span>|  
+|<span data-ttu-id="b7662-129">HC</span><span class="sxs-lookup"><span data-stu-id="b7662-129">HC</span></span>|<span data-ttu-id="b7662-130">837</span><span class="sxs-lookup"><span data-stu-id="b7662-130">837</span></span>|  
+|<span data-ttu-id="b7662-131">HC</span><span class="sxs-lookup"><span data-stu-id="b7662-131">HC</span></span>|<span data-ttu-id="b7662-132">837_D</span><span class="sxs-lookup"><span data-stu-id="b7662-132">837_D</span></span>|  
+|<span data-ttu-id="b7662-133">HC</span><span class="sxs-lookup"><span data-stu-id="b7662-133">HC</span></span>|<span data-ttu-id="b7662-134">837_I</span><span class="sxs-lookup"><span data-stu-id="b7662-134">837_I</span></span>|  
+|<span data-ttu-id="b7662-135">HC</span><span class="sxs-lookup"><span data-stu-id="b7662-135">HC</span></span>|<span data-ttu-id="b7662-136">837_P</span><span class="sxs-lookup"><span data-stu-id="b7662-136">837_P</span></span>|  
+|<span data-ttu-id="b7662-137">IA</span><span class="sxs-lookup"><span data-stu-id="b7662-137">IA</span></span>|<span data-ttu-id="b7662-138">110</span><span class="sxs-lookup"><span data-stu-id="b7662-138">110</span></span>|  
+|<span data-ttu-id="b7662-139">IA</span><span class="sxs-lookup"><span data-stu-id="b7662-139">IA</span></span>|<span data-ttu-id="b7662-140">980</span><span class="sxs-lookup"><span data-stu-id="b7662-140">980</span></span>|  
+|<span data-ttu-id="b7662-141">E/S</span><span class="sxs-lookup"><span data-stu-id="b7662-141">IO</span></span>|<span data-ttu-id="b7662-142">310</span><span class="sxs-lookup"><span data-stu-id="b7662-142">310</span></span>|  
+|<span data-ttu-id="b7662-143">E/S</span><span class="sxs-lookup"><span data-stu-id="b7662-143">IO</span></span>|<span data-ttu-id="b7662-144">312</span><span class="sxs-lookup"><span data-stu-id="b7662-144">312</span></span>|  
+|<span data-ttu-id="b7662-145">ME</span><span class="sxs-lookup"><span data-stu-id="b7662-145">ME</span></span>|<span data-ttu-id="b7662-146">198</span><span class="sxs-lookup"><span data-stu-id="b7662-146">198</span></span>|  
+|<span data-ttu-id="b7662-147">ME</span><span class="sxs-lookup"><span data-stu-id="b7662-147">ME</span></span>|<span data-ttu-id="b7662-148">200</span><span class="sxs-lookup"><span data-stu-id="b7662-148">200</span></span>|  
+|<span data-ttu-id="b7662-149">ME</span><span class="sxs-lookup"><span data-stu-id="b7662-149">ME</span></span>|<span data-ttu-id="b7662-150">201</span><span class="sxs-lookup"><span data-stu-id="b7662-150">201</span></span>|  
+|<span data-ttu-id="b7662-151">ME</span><span class="sxs-lookup"><span data-stu-id="b7662-151">ME</span></span>|<span data-ttu-id="b7662-152">245</span><span class="sxs-lookup"><span data-stu-id="b7662-152">245</span></span>|  
+|<span data-ttu-id="b7662-153">ME</span><span class="sxs-lookup"><span data-stu-id="b7662-153">ME</span></span>|<span data-ttu-id="b7662-154">261</span><span class="sxs-lookup"><span data-stu-id="b7662-154">261</span></span>|  
+|<span data-ttu-id="b7662-155">ME</span><span class="sxs-lookup"><span data-stu-id="b7662-155">ME</span></span>|<span data-ttu-id="b7662-156">262</span><span class="sxs-lookup"><span data-stu-id="b7662-156">262</span></span>|  
+|<span data-ttu-id="b7662-157">ME</span><span class="sxs-lookup"><span data-stu-id="b7662-157">ME</span></span>|<span data-ttu-id="b7662-158">263</span><span class="sxs-lookup"><span data-stu-id="b7662-158">263</span></span>|  
+|<span data-ttu-id="b7662-159">ME</span><span class="sxs-lookup"><span data-stu-id="b7662-159">ME</span></span>|<span data-ttu-id="b7662-160">833</span><span class="sxs-lookup"><span data-stu-id="b7662-160">833</span></span>|  
+|<span data-ttu-id="b7662-161">ME</span><span class="sxs-lookup"><span data-stu-id="b7662-161">ME</span></span>|<span data-ttu-id="b7662-162">872</span><span class="sxs-lookup"><span data-stu-id="b7662-162">872</span></span>|  
+|<span data-ttu-id="b7662-163">MG</span><span class="sxs-lookup"><span data-stu-id="b7662-163">MG</span></span>|<span data-ttu-id="b7662-164">203</span><span class="sxs-lookup"><span data-stu-id="b7662-164">203</span></span>|  
+|<span data-ttu-id="b7662-165">MG</span><span class="sxs-lookup"><span data-stu-id="b7662-165">MG</span></span>|<span data-ttu-id="b7662-166">206</span><span class="sxs-lookup"><span data-stu-id="b7662-166">206</span></span>|  
+|<span data-ttu-id="b7662-167">MG</span><span class="sxs-lookup"><span data-stu-id="b7662-167">MG</span></span>|<span data-ttu-id="b7662-168">259</span><span class="sxs-lookup"><span data-stu-id="b7662-168">259</span></span>|  
+|<span data-ttu-id="b7662-169">MG</span><span class="sxs-lookup"><span data-stu-id="b7662-169">MG</span></span>|<span data-ttu-id="b7662-170">260</span><span class="sxs-lookup"><span data-stu-id="b7662-170">260</span></span>|  
+|<span data-ttu-id="b7662-171">MG</span><span class="sxs-lookup"><span data-stu-id="b7662-171">MG</span></span>|<span data-ttu-id="b7662-172">264</span><span class="sxs-lookup"><span data-stu-id="b7662-172">264</span></span>|  
+|<span data-ttu-id="b7662-173">MG</span><span class="sxs-lookup"><span data-stu-id="b7662-173">MG</span></span>|<span data-ttu-id="b7662-174">266</span><span class="sxs-lookup"><span data-stu-id="b7662-174">266</span></span>|  
+|<span data-ttu-id="b7662-175">OG</span><span class="sxs-lookup"><span data-stu-id="b7662-175">OG</span></span>|<span data-ttu-id="b7662-176">875</span><span class="sxs-lookup"><span data-stu-id="b7662-176">875</span></span>|  
+|<span data-ttu-id="b7662-177">OG</span><span class="sxs-lookup"><span data-stu-id="b7662-177">OG</span></span>|<span data-ttu-id="b7662-178">876</span><span class="sxs-lookup"><span data-stu-id="b7662-178">876</span></span>|  
+|<span data-ttu-id="b7662-179">PK</span><span class="sxs-lookup"><span data-stu-id="b7662-179">PK</span></span>|<span data-ttu-id="b7662-180">196</span><span class="sxs-lookup"><span data-stu-id="b7662-180">196</span></span>|  
+|<span data-ttu-id="b7662-181">PK</span><span class="sxs-lookup"><span data-stu-id="b7662-181">PK</span></span>|<span data-ttu-id="b7662-182">839</span><span class="sxs-lookup"><span data-stu-id="b7662-182">839</span></span>|  
+|<span data-ttu-id="b7662-183">QG</span><span class="sxs-lookup"><span data-stu-id="b7662-183">QG</span></span>|<span data-ttu-id="b7662-184">878</span><span class="sxs-lookup"><span data-stu-id="b7662-184">878</span></span>|  
+|<span data-ttu-id="b7662-185">QG</span><span class="sxs-lookup"><span data-stu-id="b7662-185">QG</span></span>|<span data-ttu-id="b7662-186">879</span><span class="sxs-lookup"><span data-stu-id="b7662-186">879</span></span>|  
+|<span data-ttu-id="b7662-187">QG</span><span class="sxs-lookup"><span data-stu-id="b7662-187">QG</span></span>|<span data-ttu-id="b7662-188">888</span><span class="sxs-lookup"><span data-stu-id="b7662-188">888</span></span>|  
+|<span data-ttu-id="b7662-189">QG</span><span class="sxs-lookup"><span data-stu-id="b7662-189">QG</span></span>|<span data-ttu-id="b7662-190">889</span><span class="sxs-lookup"><span data-stu-id="b7662-190">889</span></span>|  
+|<span data-ttu-id="b7662-191">QG</span><span class="sxs-lookup"><span data-stu-id="b7662-191">QG</span></span>|<span data-ttu-id="b7662-192">896</span><span class="sxs-lookup"><span data-stu-id="b7662-192">896</span></span>|  
+|<span data-ttu-id="b7662-193">QO</span><span class="sxs-lookup"><span data-stu-id="b7662-193">QO</span></span>|<span data-ttu-id="b7662-194">313</span><span class="sxs-lookup"><span data-stu-id="b7662-194">313</span></span>|  
+|<span data-ttu-id="b7662-195">QO</span><span class="sxs-lookup"><span data-stu-id="b7662-195">QO</span></span>|<span data-ttu-id="b7662-196">315</span><span class="sxs-lookup"><span data-stu-id="b7662-196">315</span></span>|  
+|<span data-ttu-id="b7662-197">RO</span><span class="sxs-lookup"><span data-stu-id="b7662-197">RO</span></span>|<span data-ttu-id="b7662-198">300</span><span class="sxs-lookup"><span data-stu-id="b7662-198">300</span></span>|  
+|<span data-ttu-id="b7662-199">RO</span><span class="sxs-lookup"><span data-stu-id="b7662-199">RO</span></span>|<span data-ttu-id="b7662-200">301</span><span class="sxs-lookup"><span data-stu-id="b7662-200">301</span></span>|  
+|<span data-ttu-id="b7662-201">RO</span><span class="sxs-lookup"><span data-stu-id="b7662-201">RO</span></span>|<span data-ttu-id="b7662-202">303</span><span class="sxs-lookup"><span data-stu-id="b7662-202">303</span></span>|  
+|<span data-ttu-id="b7662-203">RQ</span><span class="sxs-lookup"><span data-stu-id="b7662-203">RQ</span></span>|<span data-ttu-id="b7662-204">836</span><span class="sxs-lookup"><span data-stu-id="b7662-204">836</span></span>|  
+|<span data-ttu-id="b7662-205">RQ</span><span class="sxs-lookup"><span data-stu-id="b7662-205">RQ</span></span>|<span data-ttu-id="b7662-206">840</span><span class="sxs-lookup"><span data-stu-id="b7662-206">840</span></span>|  
+|<span data-ttu-id="b7662-207">RS</span><span class="sxs-lookup"><span data-stu-id="b7662-207">RS</span></span>|<span data-ttu-id="b7662-208">869</span><span class="sxs-lookup"><span data-stu-id="b7662-208">869</span></span>|  
+|<span data-ttu-id="b7662-209">RS</span><span class="sxs-lookup"><span data-stu-id="b7662-209">RS</span></span>|<span data-ttu-id="b7662-210">870</span><span class="sxs-lookup"><span data-stu-id="b7662-210">870</span></span>|  
+|<span data-ttu-id="b7662-211">SL</span><span class="sxs-lookup"><span data-stu-id="b7662-211">SL</span></span>|<span data-ttu-id="b7662-212">135</span><span class="sxs-lookup"><span data-stu-id="b7662-212">135</span></span>|  
+|<span data-ttu-id="b7662-213">SL</span><span class="sxs-lookup"><span data-stu-id="b7662-213">SL</span></span>|<span data-ttu-id="b7662-214">139</span><span class="sxs-lookup"><span data-stu-id="b7662-214">139</span></span>|  
+|<span data-ttu-id="b7662-215">SO</span><span class="sxs-lookup"><span data-stu-id="b7662-215">SO</span></span>|<span data-ttu-id="b7662-216">302</span><span class="sxs-lookup"><span data-stu-id="b7662-216">302</span></span>|  
+|<span data-ttu-id="b7662-217">SO</span><span class="sxs-lookup"><span data-stu-id="b7662-217">SO</span></span>|<span data-ttu-id="b7662-218">311</span><span class="sxs-lookup"><span data-stu-id="b7662-218">311</span></span>|  
+|<span data-ttu-id="b7662-219">SO</span><span class="sxs-lookup"><span data-stu-id="b7662-219">SO</span></span>|<span data-ttu-id="b7662-220">317</span><span class="sxs-lookup"><span data-stu-id="b7662-220">317</span></span>|  
+|<span data-ttu-id="b7662-221">SO</span><span class="sxs-lookup"><span data-stu-id="b7662-221">SO</span></span>|<span data-ttu-id="b7662-222">319</span><span class="sxs-lookup"><span data-stu-id="b7662-222">319</span></span>|  
+|<span data-ttu-id="b7662-223">SO</span><span class="sxs-lookup"><span data-stu-id="b7662-223">SO</span></span>|<span data-ttu-id="b7662-224">322</span><span class="sxs-lookup"><span data-stu-id="b7662-224">322</span></span>|  
+|<span data-ttu-id="b7662-225">SO</span><span class="sxs-lookup"><span data-stu-id="b7662-225">SO</span></span>|<span data-ttu-id="b7662-226">323</span><span class="sxs-lookup"><span data-stu-id="b7662-226">323</span></span>|  
+|<span data-ttu-id="b7662-227">SO</span><span class="sxs-lookup"><span data-stu-id="b7662-227">SO</span></span>|<span data-ttu-id="b7662-228">324</span><span class="sxs-lookup"><span data-stu-id="b7662-228">324</span></span>|  
+|<span data-ttu-id="b7662-229">SO</span><span class="sxs-lookup"><span data-stu-id="b7662-229">SO</span></span>|<span data-ttu-id="b7662-230">325</span><span class="sxs-lookup"><span data-stu-id="b7662-230">325</span></span>|  
+|<span data-ttu-id="b7662-231">SO</span><span class="sxs-lookup"><span data-stu-id="b7662-231">SO</span></span>|<span data-ttu-id="b7662-232">326</span><span class="sxs-lookup"><span data-stu-id="b7662-232">326</span></span>|  
+|<span data-ttu-id="b7662-233">SO</span><span class="sxs-lookup"><span data-stu-id="b7662-233">SO</span></span>|<span data-ttu-id="b7662-234">361</span><span class="sxs-lookup"><span data-stu-id="b7662-234">361</span></span>|  
+|<span data-ttu-id="b7662-235">TO</span><span class="sxs-lookup"><span data-stu-id="b7662-235">TO</span></span>|<span data-ttu-id="b7662-236">197</span><span class="sxs-lookup"><span data-stu-id="b7662-236">197</span></span>|  
+|<span data-ttu-id="b7662-237">TO</span><span class="sxs-lookup"><span data-stu-id="b7662-237">TO</span></span>|<span data-ttu-id="b7662-238">199</span><span class="sxs-lookup"><span data-stu-id="b7662-238">199</span></span>|  
+|<span data-ttu-id="b7662-239">TO</span><span class="sxs-lookup"><span data-stu-id="b7662-239">TO</span></span>|<span data-ttu-id="b7662-240">265</span><span class="sxs-lookup"><span data-stu-id="b7662-240">265</span></span>|  
+|<span data-ttu-id="b7662-241">TO</span><span class="sxs-lookup"><span data-stu-id="b7662-241">TO</span></span>|<span data-ttu-id="b7662-242">485</span><span class="sxs-lookup"><span data-stu-id="b7662-242">485</span></span>|  
+|<span data-ttu-id="b7662-243">TO</span><span class="sxs-lookup"><span data-stu-id="b7662-243">TO</span></span>|<span data-ttu-id="b7662-244">486</span><span class="sxs-lookup"><span data-stu-id="b7662-244">486</span></span>|  
+|<span data-ttu-id="b7662-245">TP</span><span class="sxs-lookup"><span data-stu-id="b7662-245">TP</span></span>|<span data-ttu-id="b7662-246">460</span><span class="sxs-lookup"><span data-stu-id="b7662-246">460</span></span>|  
+|<span data-ttu-id="b7662-247">TP</span><span class="sxs-lookup"><span data-stu-id="b7662-247">TP</span></span>|<span data-ttu-id="b7662-248">463</span><span class="sxs-lookup"><span data-stu-id="b7662-248">463</span></span>|  
+|<span data-ttu-id="b7662-249">TP</span><span class="sxs-lookup"><span data-stu-id="b7662-249">TP</span></span>|<span data-ttu-id="b7662-250">466</span><span class="sxs-lookup"><span data-stu-id="b7662-250">466</span></span>|  
+|<span data-ttu-id="b7662-251">TP</span><span class="sxs-lookup"><span data-stu-id="b7662-251">TP</span></span>|<span data-ttu-id="b7662-252">468</span><span class="sxs-lookup"><span data-stu-id="b7662-252">468</span></span>|  
+|<span data-ttu-id="b7662-253">TP</span><span class="sxs-lookup"><span data-stu-id="b7662-253">TP</span></span>|<span data-ttu-id="b7662-254">490</span><span class="sxs-lookup"><span data-stu-id="b7662-254">490</span></span>|  
+|<span data-ttu-id="b7662-255">TP</span><span class="sxs-lookup"><span data-stu-id="b7662-255">TP</span></span>|<span data-ttu-id="b7662-256">492</span><span class="sxs-lookup"><span data-stu-id="b7662-256">492</span></span>|  
+|<span data-ttu-id="b7662-257">TP</span><span class="sxs-lookup"><span data-stu-id="b7662-257">TP</span></span>|<span data-ttu-id="b7662-258">494</span><span class="sxs-lookup"><span data-stu-id="b7662-258">494</span></span>|  
+|<span data-ttu-id="b7662-259">WA</span><span class="sxs-lookup"><span data-stu-id="b7662-259">WA</span></span>|<span data-ttu-id="b7662-260">140</span><span class="sxs-lookup"><span data-stu-id="b7662-260">140</span></span>|  
+|<span data-ttu-id="b7662-261">WA</span><span class="sxs-lookup"><span data-stu-id="b7662-261">WA</span></span>|<span data-ttu-id="b7662-262">141</span><span class="sxs-lookup"><span data-stu-id="b7662-262">141</span></span>|  
+|<span data-ttu-id="b7662-263">WA</span><span class="sxs-lookup"><span data-stu-id="b7662-263">WA</span></span>|<span data-ttu-id="b7662-264">142</span><span class="sxs-lookup"><span data-stu-id="b7662-264">142</span></span>|  
+|<span data-ttu-id="b7662-265">WA</span><span class="sxs-lookup"><span data-stu-id="b7662-265">WA</span></span>|<span data-ttu-id="b7662-266">143</span><span class="sxs-lookup"><span data-stu-id="b7662-266">143</span></span>|  
   
 > [!NOTE]
->  Un groupe HIPAA 5010 autorise également le regroupement de documents informatisés de versions différentes dans un même groupe.  
+>  <span data-ttu-id="b7662-267">Un groupe HIPAA 5010 autorise également le regroupement de documents informatisés de versions différentes dans un même groupe.</span><span class="sxs-lookup"><span data-stu-id="b7662-267">A HIPAA 5010 group also allows transaction sets of different versions within a single group.</span></span>  
   
- Si une exception est rencontrée lors du traitement d'un document informatisé, les propriétés de tiers EDI permettent de déterminer si l'échange entier ou seulement le document informatisé est interrompu.  
+ <span data-ttu-id="b7662-268">Si une exception est rencontrée lors du traitement d'un document informatisé, les propriétés de tiers EDI permettent de déterminer si l'échange entier ou seulement le document informatisé est interrompu.</span><span class="sxs-lookup"><span data-stu-id="b7662-268">If an exception is encountered when processing a transaction set, EDI party properties are used to determine if the entire interchange or only the failing transaction set is suspended.</span></span>  
   
- Un groupe doit commencer par un en-tête de groupe fonctionnel (GS dans X12 ou UNG dans EDIFACT) et doit se terminer par un code de fin de groupe fonctionnel (GE dans X12 ou UNE dans EDIFACT). L'en-tête du groupe contient les codes de l'expéditeur et du destinataire, une date/heure, un numéro de contrôle correspondant à l'en-tête et au code de fin, un identificateur de groupe définissant les documents informatisés pouvant être inclus dans le groupe fonctionnel, et d'autres informations. Le code de fin du groupe est associé à un élément qui indique le nombre de documents informatisés au sein du groupe.  
+ <span data-ttu-id="b7662-269">Un groupe doit commencer par un en-tête de groupe fonctionnel (GS dans X12 ou UNG dans EDIFACT) et doit se terminer par un code de fin de groupe fonctionnel (GE dans X12 ou UNE dans EDIFACT).</span><span class="sxs-lookup"><span data-stu-id="b7662-269">A group must start with a Functional Group Header (GS in X12 or UNG in EDIFACT), and it must end with a Functional Group Trailer (GE in X12 or UNE in EDIFACT).</span></span> <span data-ttu-id="b7662-270">L'en-tête du groupe contient les codes de l'expéditeur et du destinataire, une date/heure, un numéro de contrôle correspondant à l'en-tête et au code de fin, un identificateur de groupe définissant les documents informatisés pouvant être inclus dans le groupe fonctionnel, et d'autres informations.</span><span class="sxs-lookup"><span data-stu-id="b7662-270">The Group Header contains sender and receiver codes, a date and time, a control number that matches the header and trailer, a group identifier that defines the collection of transaction sets that may be included within the functional group, and other information.</span></span> <span data-ttu-id="b7662-271">Le code de fin du groupe est associé à un élément qui indique le nombre de documents informatisés au sein du groupe.</span><span class="sxs-lookup"><span data-stu-id="b7662-271">The Group Trailer has an element that indicates the number of transaction sets within the group.</span></span>  
   
- Un groupe est facultatif dans un échange EDIFACT. Un échange EDIFACT peut contenir plusieurs documents informatisés même si aucun groupe n'est présent (segment UNG absent). Dans ce cas, les documents informatisés doivent être du même type, tout comme les documents informatisés d'un groupe doivent être du même type. Par exemple, les documents informatisés APERAK et ORDERS ne peuvent pas être réunis dans un même groupe ou dans un échange n'incluant pas plusieurs groupes.  
+ <span data-ttu-id="b7662-272">Un groupe est facultatif dans un échange EDIFACT.</span><span class="sxs-lookup"><span data-stu-id="b7662-272">A group is optional in an EDIFACT interchange.</span></span> <span data-ttu-id="b7662-273">Un échange EDIFACT peut contenir plusieurs documents informatisés même si aucun groupe n'est présent (segment UNG absent).</span><span class="sxs-lookup"><span data-stu-id="b7662-273">An EDIFACT interchange can contain multiple transaction sets even if no group is present (the UNG segment is not present).</span></span> <span data-ttu-id="b7662-274">Dans ce cas, les documents informatisés doivent être du même type, tout comme les documents informatisés d'un groupe doivent être du même type.</span><span class="sxs-lookup"><span data-stu-id="b7662-274">In this case, the transaction sets must all be of the same type, as transaction sets in a single group must be of the same type.</span></span> <span data-ttu-id="b7662-275">Par exemple, les documents informatisés APERAK et ORDERS ne peuvent pas être réunis dans un même groupe ou dans un échange n'incluant pas plusieurs groupes.</span><span class="sxs-lookup"><span data-stu-id="b7662-275">For example, APERAK and ORDERS transaction sets could not both be present in a single group or in an interchange that does not have multiple groups.</span></span>  
   
- Un groupe est requis dans un échange X12.
+ <span data-ttu-id="b7662-276">Un groupe est requis dans un échange X12.</span><span class="sxs-lookup"><span data-stu-id="b7662-276">A group is required in an X12 interchange.</span></span>

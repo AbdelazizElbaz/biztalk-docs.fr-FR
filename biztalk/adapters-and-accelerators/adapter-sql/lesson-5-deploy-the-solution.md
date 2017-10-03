@@ -18,17 +18,17 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="lesson-5-deploy-the-solution"></a>Leçon 5 : Déployer la Solution
-Dans cette leçon, vous déployez la solution BizTalk à l’aide du [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] console d’Administration. Dans le Concepteur d’orchestration BizTalk, vous avez créé des ports logiques. Vous serez maintenant créer les ports physiques, puis configurez l’application BizTalk en mappant les ports logiques aux ports physiques.  
+# <a name="lesson-5-deploy-the-solution"></a><span data-ttu-id="76071-102">Leçon 5 : Déployer la Solution</span><span class="sxs-lookup"><span data-stu-id="76071-102">Lesson 5: Deploy the Solution</span></span>
+<span data-ttu-id="76071-103">Dans cette leçon, vous déployez la solution BizTalk à l’aide du [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] console d’Administration.</span><span class="sxs-lookup"><span data-stu-id="76071-103">In this lesson, you deploy the BizTalk solution using the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span> <span data-ttu-id="76071-104">Dans le Concepteur d’orchestration BizTalk, vous avez créé des ports logiques.</span><span class="sxs-lookup"><span data-stu-id="76071-104">In the BizTalk orchestration designer, you created logical ports.</span></span> <span data-ttu-id="76071-105">Vous serez maintenant créer les ports physiques, puis configurez l’application BizTalk en mappant les ports logiques aux ports physiques.</span><span class="sxs-lookup"><span data-stu-id="76071-105">You will now create the physical ports and then configure the BizTalk application by mapping the logical ports to the physical ports.</span></span>  
   
- Une fois que vous avez configuré l’application, vous démarrez et tester l’application.  
+ <span data-ttu-id="76071-106">Une fois que vous avez configuré l’application, vous démarrez et tester l’application.</span><span class="sxs-lookup"><span data-stu-id="76071-106">After you have configured the application, you will start and test the application.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="76071-107">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="76071-107">In This Section</span></span>  
   
--   [Étape 1 : Déployer l’Orchestration](../../adapters-and-accelerators/adapter-sql/step-1-deploy-the-orchestration.md)  
+-   [<span data-ttu-id="76071-108">Étape 1 : Déployer l’Orchestration</span><span class="sxs-lookup"><span data-stu-id="76071-108">Step 1: Deploy the Orchestration</span></span>](../../adapters-and-accelerators/adapter-sql/step-1-deploy-the-orchestration.md)  
   
--   [Étape 2 : Configurer les Ports](../../adapters-and-accelerators/adapter-sql/step-2-configure-the-ports.md)  
+-   [<span data-ttu-id="76071-109">Étape 2 : Configurer les Ports</span><span class="sxs-lookup"><span data-stu-id="76071-109">Step 2: Configure the Ports</span></span>](../../adapters-and-accelerators/adapter-sql/step-2-configure-the-ports.md)  
   
--   [Étape 3 : Configurer et démarrer l’Application](../../adapters-and-accelerators/adapter-sql/step-3-configure-and-start-the-application.md)  
+-   [<span data-ttu-id="76071-110">Étape 3 : Configurer et démarrer l’Application</span><span class="sxs-lookup"><span data-stu-id="76071-110">Step 3: Configure and Start the Application</span></span>](../../adapters-and-accelerators/adapter-sql/step-3-configure-and-start-the-application.md)  
   
--   [Étape 4 : Tester l’Application](../../adapters-and-accelerators/adapter-sql/step-4-test-the-application.md)
+-   [<span data-ttu-id="76071-111">Étape 4 : Tester l’Application</span><span class="sxs-lookup"><span data-stu-id="76071-111">Step 4: Test the Application</span></span>](../../adapters-and-accelerators/adapter-sql/step-4-test-the-application.md)

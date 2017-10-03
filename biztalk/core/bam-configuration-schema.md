@@ -23,20 +23,20 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="bam-configuration-schema"></a>Schéma de configuration BAM
-Le schéma de configuration BAM définit un document XML qui contient des informations à propos de votre infrastructure, informations que l'utilitaire de gestion BAM utilise pour le développement. Vous pouvez déployer vos bases de données sur plusieurs serveurs à des fins d'évolutivité. Dans l'optique de cette évolutivité, assurez-vous que le document XML de configuration BAM contient les différents noms de serveur et paramètres de configuration des bases de données suivantes :  
+# <a name="bam-configuration-schema"></a><span data-ttu-id="6e561-102">Schéma de configuration BAM</span><span class="sxs-lookup"><span data-stu-id="6e561-102">BAM Configuration Schema</span></span>
+<span data-ttu-id="6e561-103">Le schéma de configuration BAM définit un document XML qui contient des informations à propos de votre infrastructure, informations que l'utilitaire de gestion BAM utilise pour le développement.</span><span class="sxs-lookup"><span data-stu-id="6e561-103">The BAM configuration schema defines an XML document that contains information about your infrastructure that the BAM Manager Utility uses for deployment.</span></span> <span data-ttu-id="6e561-104">Vous pouvez déployer vos bases de données sur plusieurs serveurs à des fins d'évolutivité.</span><span class="sxs-lookup"><span data-stu-id="6e561-104">You can deploy your databases to multiple servers for scalability.</span></span> <span data-ttu-id="6e561-105">Dans l'optique de cette évolutivité, assurez-vous que le document XML de configuration BAM contient les différents noms de serveur et paramètres de configuration des bases de données suivantes :</span><span class="sxs-lookup"><span data-stu-id="6e561-105">To support this scalability, ensure that the BAM configuration XML document contains the different server names and configuration settings for the following databases:</span></span>  
   
--   BAMPrimaryImport  
+-   <span data-ttu-id="6e561-106">BAMPrimaryImport</span><span class="sxs-lookup"><span data-stu-id="6e561-106">BAMPrimaryImport</span></span>  
   
--   BAMStarSchema  
+-   <span data-ttu-id="6e561-107">BAMStarSchema</span><span class="sxs-lookup"><span data-stu-id="6e561-107">BAMStarSchema</span></span>  
   
--   BAMAnalysis  
+-   <span data-ttu-id="6e561-108">BAMAnalysis</span><span class="sxs-lookup"><span data-stu-id="6e561-108">BAMAnalysis</span></span>  
   
--   BAMArchive  
+-   <span data-ttu-id="6e561-109">BAMArchive</span><span class="sxs-lookup"><span data-stu-id="6e561-109">BAMArchive</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="6e561-110">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="6e561-110">In This Section</span></span>  
   
--   [Lots DTS BAM](../core/bam-dts-packages.md)  
+-   [<span data-ttu-id="6e561-111">Lots DTS BAM</span><span class="sxs-lookup"><span data-stu-id="6e561-111">BAM DTS Packages</span></span>](../core/bam-dts-packages.md)  
   
-## <a name="see-also"></a>Voir aussi  
- [Modification des paramètres d’exécution BAM](../core/changing-bam-runtime-settings.md)
+## <a name="see-also"></a><span data-ttu-id="6e561-112">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="6e561-112">See Also</span></span>  
+ [<span data-ttu-id="6e561-113">Modification des paramètres d’exécution BAM</span><span class="sxs-lookup"><span data-stu-id="6e561-113">Changing BAM Runtime Settings</span></span>](../core/changing-bam-runtime-settings.md)

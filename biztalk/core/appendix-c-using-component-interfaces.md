@@ -22,30 +22,30 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="appendix-c-using-component-interfaces"></a>Annexe c : à l’aide des Interfaces de composant
-Les rubriques de cette section décrivent la création des interfaces de composant (et la modification des interfaces de composant existantes) pour les utiliser avec l'adaptateur Microsoft BizTalk pour PeopleSoft Enterprise. Elles décrivent également l'application de la sécurité à ces interfaces de composant et leur test.  
+# <a name="appendix-c-using-component-interfaces"></a><span data-ttu-id="bd0d9-102">Annexe c : à l’aide des Interfaces de composant</span><span class="sxs-lookup"><span data-stu-id="bd0d9-102">Appendix C: Using Component Interfaces</span></span>
+<span data-ttu-id="bd0d9-103">Les rubriques de cette section décrivent la création des interfaces de composant (et la modification des interfaces de composant existantes) pour les utiliser avec l'adaptateur Microsoft BizTalk pour PeopleSoft Enterprise.</span><span class="sxs-lookup"><span data-stu-id="bd0d9-103">The topics in this section describe how to create new component interfaces—and how to modify existing component interfaces—for use with Microsoft BizTalk Adapter for PeopleSoft Enterprise.</span></span> <span data-ttu-id="bd0d9-104">Elles décrivent également l'application de la sécurité à ces interfaces de composant et leur test.</span><span class="sxs-lookup"><span data-stu-id="bd0d9-104">They also describe how to apply security to those component interfaces and how to test them.</span></span>  
   
- Vous pouvez effectuer les opérations suivantes :  
+ <span data-ttu-id="bd0d9-105">Vous pouvez effectuer les opérations suivantes :</span><span class="sxs-lookup"><span data-stu-id="bd0d9-105">You can do the following:</span></span>  
   
--   utiliser les interfaces de composant fournies par PeopleSoft avec votre application ;  
+-   <span data-ttu-id="bd0d9-106">utiliser les interfaces de composant fournies par PeopleSoft avec votre application ;</span><span class="sxs-lookup"><span data-stu-id="bd0d9-106">Use component interfaces supplied by PeopleSoft with your application.</span></span>  
   
-     Les interfaces de composant sont également appelées points d'intégration d'entreprise (EIP, Enterprise Integration Points).  
+     <span data-ttu-id="bd0d9-107">Les interfaces de composant sont également appelées points d'intégration d'entreprise (EIP, Enterprise Integration Points).</span><span class="sxs-lookup"><span data-stu-id="bd0d9-107">Component interfaces also are known as Enterprise Integration Points (EIP).</span></span>  
   
--   modifier une interface de composant existante ;  
+-   <span data-ttu-id="bd0d9-108">modifier une interface de composant existante ;</span><span class="sxs-lookup"><span data-stu-id="bd0d9-108">Modify an existing component interface.</span></span>  
   
--   créer une interface de composant.  
+-   <span data-ttu-id="bd0d9-109">créer une interface de composant.</span><span class="sxs-lookup"><span data-stu-id="bd0d9-109">Create a new component interface.</span></span>  
   
- Avant d'utiliser votre interface de composant, vous devez appliquer et tester la sécurité.  
+ <span data-ttu-id="bd0d9-110">Avant d'utiliser votre interface de composant, vous devez appliquer et tester la sécurité.</span><span class="sxs-lookup"><span data-stu-id="bd0d9-110">Before using your component interface, you must apply and test security.</span></span>  
   
 > [!NOTE]
->  Cette section est conçue comme un complément utile. Elle n'est pas destinée à remplacer la documentation PeopleSoft. Pour obtenir des informations complètes et actualisées sur les interfaces de composant PeopleSoft, consultez la bibliothèque en ligne PeopleSoft.  
+>  <span data-ttu-id="bd0d9-111">Cette section est conçue comme un complément utile. Elle n'est pas destinée à remplacer la documentation PeopleSoft.</span><span class="sxs-lookup"><span data-stu-id="bd0d9-111">This section is intended as a helpful supplement; it is not a substitute for PeopleSoft documentation.</span></span> <span data-ttu-id="bd0d9-112">Pour obtenir des informations complètes et actualisées sur les interfaces de composant PeopleSoft, consultez la bibliothèque en ligne PeopleSoft.</span><span class="sxs-lookup"><span data-stu-id="bd0d9-112">For complete and up-to-date information about PeopleSoft component interfaces, see the PeopleSoft Online Library.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="bd0d9-113">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="bd0d9-113">In This Section</span></span>  
   
--   [Comment créer des Interfaces de composant](../core/how-to-create-component-interfaces.md)  
+-   [<span data-ttu-id="bd0d9-114">Comment créer des Interfaces de composant</span><span class="sxs-lookup"><span data-stu-id="bd0d9-114">How to Create Component Interfaces</span></span>](../core/how-to-create-component-interfaces.md)  
   
--   [Méthodes standard dans les Interfaces de composant](../core/standard-methods-in-component-interfaces.md)  
+-   [<span data-ttu-id="bd0d9-115">Méthodes standard dans les Interfaces de composant</span><span class="sxs-lookup"><span data-stu-id="bd0d9-115">Standard Methods in Component Interfaces</span></span>](../core/standard-methods-in-component-interfaces.md)  
   
--   [Comment sécuriser les Interfaces de composant](../core/how-to-help-secure-component-interfaces.md)  
+-   [<span data-ttu-id="bd0d9-116">Comment sécuriser les Interfaces de composant</span><span class="sxs-lookup"><span data-stu-id="bd0d9-116">How to Help Secure Component Interfaces</span></span>](../core/how-to-help-secure-component-interfaces.md)  
   
--   [Comment tester des Interfaces de composant](../core/how-to-test-component-interfaces.md)
+-   [<span data-ttu-id="bd0d9-117">Comment tester des Interfaces de composant</span><span class="sxs-lookup"><span data-stu-id="bd0d9-117">How to Test Component Interfaces</span></span>](../core/how-to-test-component-interfaces.md)

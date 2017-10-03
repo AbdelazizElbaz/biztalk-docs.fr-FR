@@ -21,9 +21,9 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="administering-biztalk-adapter-for-peoplesoft-enterprise"></a>Administration de l'adaptateur BizTalk pour PeopleSoft Enterprise
-Cette section fournit des informations sur l'administration de l'adaptateur BizTalk pour PeopleSoft Enterprise.  
+# <a name="administering-biztalk-adapter-for-peoplesoft-enterprise"></a><span data-ttu-id="93b2b-102">Administration de l'adaptateur BizTalk pour PeopleSoft Enterprise</span><span class="sxs-lookup"><span data-stu-id="93b2b-102">Administering BizTalk Adapter for PeopleSoft Enterprise</span></span>
+<span data-ttu-id="93b2b-103">Cette section fournit des informations sur l'administration de l'adaptateur BizTalk pour PeopleSoft Enterprise.</span><span class="sxs-lookup"><span data-stu-id="93b2b-103">This section provides information about administering BizTalk Adapter for PeopleSoft Enterprise.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="93b2b-104">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="93b2b-104">In This Section</span></span>  
   
--   [À l’aide de la gestion des exceptions de BizTalk Server](../core/using-biztalk-server-exception-handling2.md)
+-   [<span data-ttu-id="93b2b-105">À l’aide de la gestion des exceptions de BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="93b2b-105">Using BizTalk Server Exception Handling</span></span>](../core/using-biztalk-server-exception-handling2.md)

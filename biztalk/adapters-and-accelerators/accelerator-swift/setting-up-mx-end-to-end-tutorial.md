@@ -18,11 +18,11 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="setting-up-mx-end-to-end-tutorial"></a>Configuration d’un didacticiel de bout en bout MX
-Les étapes ci-dessous en surbrillance les étapes requises pour exécuter le didacticiel de bout en bout MX.  
+# <a name="setting-up-mx-end-to-end-tutorial"></a><span data-ttu-id="c1df9-102">Configuration d’un didacticiel de bout en bout MX</span><span class="sxs-lookup"><span data-stu-id="c1df9-102">Setting up MX End-to-End Tutorial</span></span>
+<span data-ttu-id="c1df9-103">Les étapes ci-dessous en surbrillance les étapes requises pour exécuter le didacticiel de bout en bout MX.</span><span class="sxs-lookup"><span data-stu-id="c1df9-103">The steps below highlight the steps required to execute the MX End-to-End tutorial.</span></span>  
   
--   [Configuration de l’environnement](../../adapters-and-accelerators/accelerator-swift/setting-the-environment.md)  
+-   [<span data-ttu-id="c1df9-104">Configuration de l’environnement</span><span class="sxs-lookup"><span data-stu-id="c1df9-104">Setting the Environment</span></span>](../../adapters-and-accelerators/accelerator-swift/setting-the-environment.md)  
   
--   [Création de projets BizTalk](../../adapters-and-accelerators/accelerator-swift/creating-biztalk-projects.md)  
+-   [<span data-ttu-id="c1df9-105">Création de projets BizTalk</span><span class="sxs-lookup"><span data-stu-id="c1df9-105">Creating BizTalk Projects</span></span>](../../adapters-and-accelerators/accelerator-swift/creating-biztalk-projects.md)  
   
--   [Création de Ports d’envoi/réception](../../adapters-and-accelerators/accelerator-swift/creating-receive-send-ports.md)
+-   [<span data-ttu-id="c1df9-106">Création de Ports d’envoi/réception</span><span class="sxs-lookup"><span data-stu-id="c1df9-106">Creating Receive/Send Ports</span></span>](../../adapters-and-accelerators/accelerator-swift/creating-receive-send-ports.md)

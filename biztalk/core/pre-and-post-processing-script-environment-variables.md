@@ -22,26 +22,26 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="pre--and-post-processing-script-environment-variables"></a>Variables d'environnement des scripts de pré-traitement et de post-traitement
-Les rubriques de cette section décrivent les variables d'environnement accessibles par les scripts de pré-traitement et post-traitement.  
+# <a name="pre--and-post-processing-script-environment-variables"></a><span data-ttu-id="a3428-102">Variables d'environnement des scripts de pré-traitement et de post-traitement</span><span class="sxs-lookup"><span data-stu-id="a3428-102">Pre- and Post-processing Script Environment Variables</span></span>
+<span data-ttu-id="a3428-103">Les rubriques de cette section décrivent les variables d'environnement accessibles par les scripts de pré-traitement et post-traitement.</span><span class="sxs-lookup"><span data-stu-id="a3428-103">The topics in this section describe the environment variables that pre- and post-processing scripts can access.</span></span>  
   
 > [!NOTE]
->  Conformément aux standards Windows, il n'est pas nécessaire de respecter la casse du nom de la variable d'environnement, contrairement aux valeurs de variable, pour lesquelles il faut tenir compte de la casse.  
+>  <span data-ttu-id="a3428-104">Conformément aux standards Windows, il n'est pas nécessaire de respecter la casse du nom de la variable d'environnement,</span><span class="sxs-lookup"><span data-stu-id="a3428-104">Per Windows standards, the name of the environment variable is not case-sensitive.</span></span> <span data-ttu-id="a3428-105">contrairement aux valeurs de variable, pour lesquelles il faut tenir compte de la casse.</span><span class="sxs-lookup"><span data-stu-id="a3428-105">Variable values, however, are case-sensitive.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="a3428-106">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="a3428-106">In This Section</span></span>  
   
--   [BTAD_ChangeRequestAction](../core/btad-changerequestaction.md)  
+-   [<span data-ttu-id="a3428-107">BTAD_ChangeRequestAction</span><span class="sxs-lookup"><span data-stu-id="a3428-107">BTAD_ChangeRequestAction</span></span>](../core/btad-changerequestaction.md)  
   
--   [BTAD_HostClass](../core/btad-hostclass.md)  
+-   [<span data-ttu-id="a3428-108">BTAD_HostClass</span><span class="sxs-lookup"><span data-stu-id="a3428-108">BTAD_HostClass</span></span>](../core/btad-hostclass.md)  
   
--   [BTAD_InstallMode](../core/btad-installmode.md)  
+-   [<span data-ttu-id="a3428-109">BTAD_InstallMode</span><span class="sxs-lookup"><span data-stu-id="a3428-109">BTAD_InstallMode</span></span>](../core/btad-installmode.md)  
   
--   [BTAD_InstallDir](../core/btad-installdir.md)  
+-   [<span data-ttu-id="a3428-110">BTAD_InstallDir</span><span class="sxs-lookup"><span data-stu-id="a3428-110">BTAD_InstallDir</span></span>](../core/btad-installdir.md)  
   
--   [BTAD_ApplicationName](../core/btad-applicationname.md)  
+-   [<span data-ttu-id="a3428-111">BTAD_ApplicationName</span><span class="sxs-lookup"><span data-stu-id="a3428-111">BTAD_ApplicationName</span></span>](../core/btad-applicationname.md)  
   
--   [BTAD_SilentMode](../core/btad-silentmode.md)  
+-   [<span data-ttu-id="a3428-112">BTAD_SilentMode</span><span class="sxs-lookup"><span data-stu-id="a3428-112">BTAD_SilentMode</span></span>](../core/btad-silentmode.md)  
   
--   [BTAD_Server](../core/btad-server.md)  
+-   [<span data-ttu-id="a3428-113">BTAD_Server</span><span class="sxs-lookup"><span data-stu-id="a3428-113">BTAD_Server</span></span>](../core/btad-server.md)  
   
--   [BTAD_Database](../core/btad-database.md)
+-   [<span data-ttu-id="a3428-114">BTAD_Database</span><span class="sxs-lookup"><span data-stu-id="a3428-114">BTAD_Database</span></span>](../core/btad-database.md)

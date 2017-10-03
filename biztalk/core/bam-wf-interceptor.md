@@ -18,23 +18,23 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="bam-wf-interceptor"></a>Intercepteur WF BAM
-L'intercepteur WF BAM fournit une prise en charge complète des données de suivi au sein de votre application WF.  
+# <a name="bam-wf-interceptor"></a><span data-ttu-id="44606-102">Intercepteur WF BAM</span><span class="sxs-lookup"><span data-stu-id="44606-102">BAM WF Interceptor</span></span>
+<span data-ttu-id="44606-103">L'intercepteur WF BAM fournit une prise en charge complète des données de suivi au sein de votre application WF.</span><span class="sxs-lookup"><span data-stu-id="44606-103">The BAM WF interceptor provides comprehensive support for tracking data within your WF application.</span></span>  
   
- L'intercepteur WF BAM permet d'effectuer les actions suivantes :  
+ <span data-ttu-id="44606-104">L'intercepteur WF BAM permet d'effectuer les actions suivantes :</span><span class="sxs-lookup"><span data-stu-id="44606-104">You can use the BAM WF interceptor to:</span></span>  
   
--   Transférer des données d'application de flux de travail vers l'analyse BAM de façon transparente, sans avoir à recompiler votre application WF.  
+-   <span data-ttu-id="44606-105">Transférer des données d'application de flux de travail vers l'analyse BAM de façon transparente, sans avoir à recompiler votre application WF.</span><span class="sxs-lookup"><span data-stu-id="44606-105">Transparently deliver workflow application data to BAM without having to recompile your WF application.</span></span>  
   
--   Cibler des activités spécifiques au sein d'un flux de travail pour transmettre des données d'application de flux de travail de façon sélective vers l'analyse BAM.  
+-   <span data-ttu-id="44606-106">Cibler des activités spécifiques au sein d'un flux de travail pour transmettre des données d'application de flux de travail de façon sélective vers l'analyse BAM.</span><span class="sxs-lookup"><span data-stu-id="44606-106">Target specific activities within a workflow to selectively deliver workflow application data to BAM.</span></span>  
   
--   Respecter la sémantique transactionnelle du flux de travail. Les données ne sont transmises vers l'analyse BAM que si la transaction propriétaire est validée.  
+-   <span data-ttu-id="44606-107">Respecter la sémantique transactionnelle du flux de travail.</span><span class="sxs-lookup"><span data-stu-id="44606-107">Honor the transactional semantics of the workflow.</span></span> <span data-ttu-id="44606-108">Les données ne sont transmises vers l'analyse BAM que si la transaction propriétaire est validée.</span><span class="sxs-lookup"><span data-stu-id="44606-108">Data will be delivered to BAM only if the owning transaction commits.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="44606-109">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="44606-109">In This Section</span></span>  
   
--   [Comment configurer une Application de Workflow Foundation pour l’Interception](../core/how-to-configure-a-workflow-foundation-application-for-interception.md)  
+-   [<span data-ttu-id="44606-110">Comment configurer une Application de Workflow Foundation pour l’Interception</span><span class="sxs-lookup"><span data-stu-id="44606-110">How to Configure a Workflow Foundation Application for Interception</span></span>](../core/how-to-configure-a-workflow-foundation-application-for-interception.md)  
   
--   [Schéma Windows Workflow Foundation](../core/windows-workflow-foundation-schema.md)  
+-   [<span data-ttu-id="44606-111">Schéma Windows Workflow Foundation</span><span class="sxs-lookup"><span data-stu-id="44606-111">Windows Workflow Foundation Schema</span></span>](../core/windows-workflow-foundation-schema.md)  
   
--   [Modèles de filtre des événements courants](../core/common-event-filter-patterns.md)  
+-   [<span data-ttu-id="44606-112">Modèles de filtre des événements courants</span><span class="sxs-lookup"><span data-stu-id="44606-112">Common Event Filter Patterns</span></span>](../core/common-event-filter-patterns.md)  
   
--   [Opérations de Windows Workflow Foundation](../core/operations-in-windows-workflow-foundation.md)
+-   [<span data-ttu-id="44606-113">Opérations de Windows Workflow Foundation</span><span class="sxs-lookup"><span data-stu-id="44606-113">Operations in Windows Workflow Foundation</span></span>](../core/operations-in-windows-workflow-foundation.md)

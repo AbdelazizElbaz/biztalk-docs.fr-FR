@@ -18,21 +18,21 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="creation-of-control-message-failed-for-batch-id"></a>Échec de la création du message de contrôle pour l'ID de lot
-## <a name="details"></a>Détails  
+# <a name="creation-of-control-message-failed-for-batch-id"></a><span data-ttu-id="6ae02-102">Échec de la création du message de contrôle pour l'ID de lot</span><span class="sxs-lookup"><span data-stu-id="6ae02-102">Creation of Control Message failed for Batch id</span></span>
+## <a name="details"></a><span data-ttu-id="6ae02-103">Détails</span><span class="sxs-lookup"><span data-stu-id="6ae02-103">Details</span></span>  
   
 |||  
 |-|-|  
-|Nom du produit|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|Version du produit|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|ID d'événement|-|  
-|Source de l'événement|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|Composant|Moteur EDI|  
-|Nom symbolique|CreateControlMessageFailed|  
-|Texte du message|Échec de la création du message de contrôle pour l'ID de lot {0}.|  
+|<span data-ttu-id="6ae02-104">Nom du produit</span><span class="sxs-lookup"><span data-stu-id="6ae02-104">Product Name</span></span>|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
+|<span data-ttu-id="6ae02-105">Version du produit</span><span class="sxs-lookup"><span data-stu-id="6ae02-105">Product Version</span></span>|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
+|<span data-ttu-id="6ae02-106">ID d'événement</span><span class="sxs-lookup"><span data-stu-id="6ae02-106">Event ID</span></span>|-|  
+|<span data-ttu-id="6ae02-107">Source de l'événement</span><span class="sxs-lookup"><span data-stu-id="6ae02-107">Event Source</span></span>|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="6ae02-108"> EDI</span><span class="sxs-lookup"><span data-stu-id="6ae02-108"> EDI</span></span>|  
+|<span data-ttu-id="6ae02-109">Composant</span><span class="sxs-lookup"><span data-stu-id="6ae02-109">Component</span></span>|<span data-ttu-id="6ae02-110">Moteur EDI</span><span class="sxs-lookup"><span data-stu-id="6ae02-110">EDI Engine</span></span>|  
+|<span data-ttu-id="6ae02-111">Nom symbolique</span><span class="sxs-lookup"><span data-stu-id="6ae02-111">Symbolic Name</span></span>|<span data-ttu-id="6ae02-112">CreateControlMessageFailed</span><span class="sxs-lookup"><span data-stu-id="6ae02-112">CreateControlMessageFailed</span></span>|  
+|<span data-ttu-id="6ae02-113">Texte du message</span><span class="sxs-lookup"><span data-stu-id="6ae02-113">Message Text</span></span>|<span data-ttu-id="6ae02-114">Échec de la création du message de contrôle pour l'ID de lot {0}.</span><span class="sxs-lookup"><span data-stu-id="6ae02-114">Creation of Control Message failed for Batch id {0}.</span></span>|  
   
-## <a name="explanation"></a>Explication  
- Cet événement d'erreur/d'avertissement/d'informations indique que BizTalk Server a arrêté ou démarré un lot.  
+## <a name="explanation"></a><span data-ttu-id="6ae02-115">Explication</span><span class="sxs-lookup"><span data-stu-id="6ae02-115">Explanation</span></span>  
+ <span data-ttu-id="6ae02-116">Cet événement d'erreur/d'avertissement/d'informations indique que BizTalk Server a arrêté ou démarré un lot.</span><span class="sxs-lookup"><span data-stu-id="6ae02-116">This Error/Warning/Information event indicates BizTalk Server was start/stop a batch.</span></span>  
   
-## <a name="user-action"></a>Action de l'utilisateur  
- Pour résoudre cette erreur, assurez-vous qu'un lot doté d'un ID donné est présent dans les propriétés de l'accord dans lequel il est contenu et que la base de données est active.
+## <a name="user-action"></a><span data-ttu-id="6ae02-117">Action de l'utilisateur</span><span class="sxs-lookup"><span data-stu-id="6ae02-117">User Action</span></span>  
+ <span data-ttu-id="6ae02-118">Pour résoudre cette erreur, assurez-vous qu'un lot doté d'un ID donné est présent dans les propriétés de l'accord dans lequel il est contenu et que la base de données est active.</span><span class="sxs-lookup"><span data-stu-id="6ae02-118">To resolve this error, ensure that a batch with the given Id is present in the Agreement properties of the containing Agreement and the database is up.</span></span>

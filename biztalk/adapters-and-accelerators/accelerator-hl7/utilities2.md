@@ -21,13 +21,13 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="utilities"></a>Utilitaires
-Cette section fournit des instructions sur l’utilisation de plusieurs utilitaires précieux dans le [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] Kit de développement logiciel (SDK).  
+# <a name="utilities"></a><span data-ttu-id="86e42-102">Utilitaires</span><span class="sxs-lookup"><span data-stu-id="86e42-102">Utilities</span></span>
+<span data-ttu-id="86e42-103">Cette section fournit des instructions sur l’utilisation de plusieurs utilitaires précieux dans le [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] Kit de développement logiciel (SDK).</span><span class="sxs-lookup"><span data-stu-id="86e42-103">This section provides instructions for using several useful utilities included in the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] Software Development Kit (SDK).</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="86e42-104">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="86e42-104">In This Section</span></span>  
   
--   [Outil de MllpSend](../../adapters-and-accelerators/accelerator-hl7/mllpsend-tool.md)  
+-   [<span data-ttu-id="86e42-105">Outil de MllpSend</span><span class="sxs-lookup"><span data-stu-id="86e42-105">MllpSend Tool</span></span>](../../adapters-and-accelerators/accelerator-hl7/mllpsend-tool.md)  
   
--   [Outil de MllpReceive](../../adapters-and-accelerators/accelerator-hl7/mllpreceive-tool.md)  
+-   [<span data-ttu-id="86e42-106">Outil de MllpReceive</span><span class="sxs-lookup"><span data-stu-id="86e42-106">MllpReceive Tool</span></span>](../../adapters-and-accelerators/accelerator-hl7/mllpreceive-tool.md)  
   
--   [Outil de Update2XMLSchema](../../adapters-and-accelerators/accelerator-hl7/update2xmlschema-tool.md)
+-   [<span data-ttu-id="86e42-107">Outil de Update2XMLSchema</span><span class="sxs-lookup"><span data-stu-id="86e42-107">Update2XMLSchema Tool</span></span>](../../adapters-and-accelerators/accelerator-hl7/update2xmlschema-tool.md)

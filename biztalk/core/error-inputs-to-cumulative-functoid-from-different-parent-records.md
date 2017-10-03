@@ -19,15 +19,15 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---inputs-to-cumulative-functoid-from-different-parent-records"></a>Erreur : les entrées du fonctoid cumulé proviennent différents enregistrements parents.
-**Code d’erreur**  
+# <a name="error---inputs-to-cumulative-functoid-from-different-parent-records"></a><span data-ttu-id="8324e-102">Erreur : les entrées du fonctoid cumulé proviennent différents enregistrements parents.</span><span class="sxs-lookup"><span data-stu-id="8324e-102">Error - Inputs to Cumulative Functoid from Different Parent Records</span></span>
+<span data-ttu-id="8324e-103">**Code d’erreur**</span><span class="sxs-lookup"><span data-stu-id="8324e-103">**Error Code**</span></span>  
   
- btm1032  
+ <span data-ttu-id="8324e-104">btm1032</span><span class="sxs-lookup"><span data-stu-id="8324e-104">btm1032</span></span>  
   
- **Explication**  
+ <span data-ttu-id="8324e-105">**Explication**</span><span class="sxs-lookup"><span data-stu-id="8324e-105">**Explanation**</span></span>  
   
- Pour le fonctoid **Cumulative** fonctoid, le deuxième paramètre d’entrée (étendue d’accumulation) provient d’une autre partie du schéma source que le nœud agissant comme le premier paramètre d’entrée (nœud à cumuler).  
+ <span data-ttu-id="8324e-106">Pour le fonctoid **Cumulative** fonctoid, le deuxième paramètre d’entrée (étendue d’accumulation) provient d’une autre partie du schéma source que le nœud agissant comme le premier paramètre d’entrée (nœud à cumuler).</span><span class="sxs-lookup"><span data-stu-id="8324e-106">For the indicated **Cumulative** functoid, the second input parameter (the accumulation scope) is from a different part of the source schema than the node serving as the first input parameter (the node to accumulate).</span></span>  
   
- **Action de l’utilisateur**  
+ <span data-ttu-id="8324e-107">**Action de l’utilisateur**</span><span class="sxs-lookup"><span data-stu-id="8324e-107">**User Action**</span></span>  
   
- Assurez-vous que les deux paramètres d’entrée aux indiqué **Cumulative** fonctoid partagent le même enregistrement parent, ou que le deuxième paramètre d’entrée (étendue d’accumulation) comporte un paramètre d’entrée constant.
+ <span data-ttu-id="8324e-108">Assurez-vous que les deux paramètres d’entrée aux indiqué **Cumulative** fonctoid partagent le même enregistrement parent, ou que le deuxième paramètre d’entrée (étendue d’accumulation) comporte un paramètre d’entrée constant.</span><span class="sxs-lookup"><span data-stu-id="8324e-108">Ensure that both input parameters to the indicated **Cumulative** functoid share the same parent record, or that the second input parameter (the accumulation scope) you provide has a constant input parameter.</span></span>

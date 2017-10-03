@@ -18,24 +18,24 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="receive-pipeline"></a>Pipeline de réception
-Cet exemple fournit un [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] pipeline que vous pouvez personnaliser pour votre application de réception.  
+# <a name="receive-pipeline"></a><span data-ttu-id="6c6a9-102">Pipeline de réception</span><span class="sxs-lookup"><span data-stu-id="6c6a9-102">Receive Pipeline</span></span>
+<span data-ttu-id="6c6a9-103">Cet exemple fournit un [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] pipeline que vous pouvez personnaliser pour votre application de réception.</span><span class="sxs-lookup"><span data-stu-id="6c6a9-103">This sample provides a working [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] receive pipeline that you can customize for your application.</span></span>  
   
-## <a name="demonstrates"></a>Montre  
- Cet exemple montre comment traiter un message RNIF entrant en message XML équivalent à l'aide du pipeline de réception BTARN (PipelineReceive.btp). PipelineReceive.btp se trouve dans  *\<lecteur >*: \Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\SDK\RNPipelines. Il comprend les étapes suivantes :  
+## <a name="demonstrates"></a><span data-ttu-id="6c6a9-104">Montre</span><span class="sxs-lookup"><span data-stu-id="6c6a9-104">Demonstrates</span></span>  
+ <span data-ttu-id="6c6a9-105">Cet exemple montre comment traiter un message RNIF entrant en message XML équivalent à l'aide du pipeline de réception BTARN (PipelineReceive.btp).</span><span class="sxs-lookup"><span data-stu-id="6c6a9-105">This sample demonstrates how to process an incoming RNIF message into the equivalent XML message using the BTARN receive pipeline (PipelineReceive.btp).</span></span> <span data-ttu-id="6c6a9-106">PipelineReceive.btp se trouve dans  *\<lecteur >*: \Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\SDK\RNPipelines.</span><span class="sxs-lookup"><span data-stu-id="6c6a9-106">PipelineReceive.btp is located in *\<drive>*:\Program Files\Microsoft BizTalk \<version> Accelerator for RosettaNet\SDK\RNPipelines.</span></span> <span data-ttu-id="6c6a9-107">Il comprend les étapes suivantes :</span><span class="sxs-lookup"><span data-stu-id="6c6a9-107">It includes the following stages:</span></span>  
   
--   ReceiveMessageNonRepudiate  
+-   <span data-ttu-id="6c6a9-108">ReceiveMessageNonRepudiate</span><span class="sxs-lookup"><span data-stu-id="6c6a9-108">ReceiveMessageNonRepudiate</span></span>  
   
--   RNMimeDecoder (préprocesseur/décodeur MIME)  
+-   <span data-ttu-id="6c6a9-109">RNMimeDecoder (préprocesseur/décodeur MIME)</span><span class="sxs-lookup"><span data-stu-id="6c6a9-109">RNMimeDecoder (MIME Preprocessor/Decoder)</span></span>  
   
--   RNDAsm (désassembleur XML)  
+-   <span data-ttu-id="6c6a9-110">RNDAsm (désassembleur XML)</span><span class="sxs-lookup"><span data-stu-id="6c6a9-110">RNDAsm (XML Disassembler)</span></span>  
   
--   RNPartyRes (composant Résolution du tiers)  
+-   <span data-ttu-id="6c6a9-111">RNPartyRes (composant Résolution du tiers)</span><span class="sxs-lookup"><span data-stu-id="6c6a9-111">RNPartyRes (Party Resolution component)</span></span>  
   
--   MessageUpdater  
+-   <span data-ttu-id="6c6a9-112">MessageUpdater</span><span class="sxs-lookup"><span data-stu-id="6c6a9-112">MessageUpdater</span></span>  
   
- Pour plus d’informations sur les composants de ce pipeline et le flux de messages dans ce pipeline, consultez [le Pipeline de réception BTARN](../../adapters-and-accelerators/accelerator-rosettanet/btarn-receive-pipeline.md).  
+ <span data-ttu-id="6c6a9-113">Pour plus d’informations sur les composants de ce pipeline et le flux de messages dans ce pipeline, consultez [le Pipeline de réception BTARN](../../adapters-and-accelerators/accelerator-rosettanet/btarn-receive-pipeline.md).</span><span class="sxs-lookup"><span data-stu-id="6c6a9-113">For more information about the components of this pipeline, and the message flow in this pipeline, see [BTARN Receive Pipeline](../../adapters-and-accelerators/accelerator-rosettanet/btarn-receive-pipeline.md).</span></span>  
   
-## <a name="see-also"></a>Voir aussi  
- [Exemples de pipeline](../../adapters-and-accelerators/accelerator-rosettanet/pipeline-samples.md)   
- [Pipeline de réception BTARN](../../adapters-and-accelerators/accelerator-rosettanet/btarn-receive-pipeline.md)
+## <a name="see-also"></a><span data-ttu-id="6c6a9-114">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="6c6a9-114">See Also</span></span>  
+ <span data-ttu-id="6c6a9-115">[Exemples de pipeline](../../adapters-and-accelerators/accelerator-rosettanet/pipeline-samples.md) </span><span class="sxs-lookup"><span data-stu-id="6c6a9-115">[Pipeline Samples](../../adapters-and-accelerators/accelerator-rosettanet/pipeline-samples.md) </span></span>  
+ [<span data-ttu-id="6c6a9-116">Pipeline de réception BTARN</span><span class="sxs-lookup"><span data-stu-id="6c6a9-116">BTARN Receive Pipeline</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/btarn-receive-pipeline.md)

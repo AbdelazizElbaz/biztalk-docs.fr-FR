@@ -18,28 +18,28 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="single-sign-on-event-10667"></a>Single Sign-On : Événement 10667
-## <a name="details"></a>Détails  
+# <a name="single-sign-on-event-10667"></a><span data-ttu-id="535a3-102">Single Sign-On : Événement 10667</span><span class="sxs-lookup"><span data-stu-id="535a3-102">Single Sign-On: Event 10667</span></span>
+## <a name="details"></a><span data-ttu-id="535a3-103">Détails</span><span class="sxs-lookup"><span data-stu-id="535a3-103">Details</span></span>  
   
 |||  
 |-|-|  
-|Nom du produit|Enterprise Single Sign-On|  
-|Version du produit|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|ID d'événement|10667|  
-|Source de l'événement|ENTSSO|  
-|Composant|N\A|  
-|Nom symbolique|SSO_INFO_SUPPRESSED_DUPLICATE_WINDOWS_PASSWORD_CHANGE|  
-|Texte du message|Modification de mot de passe Windows en double supprimée.%r<br /><br /> ID de suivi : %1 %r<br /><br /> Carte : %2 %r<br /><br /> Compte Windows : %3|  
+|<span data-ttu-id="535a3-104">Nom du produit</span><span class="sxs-lookup"><span data-stu-id="535a3-104">Product Name</span></span>|<span data-ttu-id="535a3-105">Enterprise Single Sign-On</span><span class="sxs-lookup"><span data-stu-id="535a3-105">Enterprise Single Sign-On</span></span>|  
+|<span data-ttu-id="535a3-106">Version du produit</span><span class="sxs-lookup"><span data-stu-id="535a3-106">Product Version</span></span>|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
+|<span data-ttu-id="535a3-107">ID d'événement</span><span class="sxs-lookup"><span data-stu-id="535a3-107">Event ID</span></span>|<span data-ttu-id="535a3-108">10667</span><span class="sxs-lookup"><span data-stu-id="535a3-108">10667</span></span>|  
+|<span data-ttu-id="535a3-109">Source de l'événement</span><span class="sxs-lookup"><span data-stu-id="535a3-109">Event Source</span></span>|<span data-ttu-id="535a3-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="535a3-110">ENTSSO</span></span>|  
+|<span data-ttu-id="535a3-111">Composant</span><span class="sxs-lookup"><span data-stu-id="535a3-111">Component</span></span>|<span data-ttu-id="535a3-112">N\A</span><span class="sxs-lookup"><span data-stu-id="535a3-112">N\A</span></span>|  
+|<span data-ttu-id="535a3-113">Nom symbolique</span><span class="sxs-lookup"><span data-stu-id="535a3-113">Symbolic Name</span></span>|<span data-ttu-id="535a3-114">SSO_INFO_SUPPRESSED_DUPLICATE_WINDOWS_PASSWORD_CHANGE</span><span class="sxs-lookup"><span data-stu-id="535a3-114">SSO_INFO_SUPPRESSED_DUPLICATE_WINDOWS_PASSWORD_CHANGE</span></span>|  
+|<span data-ttu-id="535a3-115">Texte du message</span><span class="sxs-lookup"><span data-stu-id="535a3-115">Message Text</span></span>|<span data-ttu-id="535a3-116">Modification de mot de passe Windows en double supprimée.%r</span><span class="sxs-lookup"><span data-stu-id="535a3-116">Suppressed duplicate Windows password change.%r</span></span><br /><br /> <span data-ttu-id="535a3-117">ID de suivi : %1 %r</span><span class="sxs-lookup"><span data-stu-id="535a3-117">Tracking ID: %1%r</span></span><br /><br /> <span data-ttu-id="535a3-118">Carte : %2 %r</span><span class="sxs-lookup"><span data-stu-id="535a3-118">Adapter: %2%r</span></span><br /><br /> <span data-ttu-id="535a3-119">Compte Windows : %3</span><span class="sxs-lookup"><span data-stu-id="535a3-119">Windows Account: %3</span></span>|  
   
-## <a name="explanation"></a>Explication  
- Cet événement d'informations indique que l'authentification unique a supprimé une modification de mot de passe Windows en double.  
+## <a name="explanation"></a><span data-ttu-id="535a3-120">Explication</span><span class="sxs-lookup"><span data-stu-id="535a3-120">Explanation</span></span>  
+ <span data-ttu-id="535a3-121">Cet événement d'informations indique que l'authentification unique a supprimé une modification de mot de passe Windows en double.</span><span class="sxs-lookup"><span data-stu-id="535a3-121">This Information event indicates that SSO has suppressed a duplicate Windows password change.</span></span>  
   
-## <a name="user-action"></a>Action de l'utilisateur  
+## <a name="user-action"></a><span data-ttu-id="535a3-122">Action de l'utilisateur</span><span class="sxs-lookup"><span data-stu-id="535a3-122">User Action</span></span>  
   
--   Aucune action utilisateur n’est nécessaire.  
+-   <span data-ttu-id="535a3-123">Aucune action utilisateur n’est nécessaire.</span><span class="sxs-lookup"><span data-stu-id="535a3-123">No user action is necessary.</span></span>  
   
-## <a name="more-info"></a>En savoir plus
+## <a name="more-info"></a><span data-ttu-id="535a3-124">En savoir plus</span><span class="sxs-lookup"><span data-stu-id="535a3-124">More info</span></span>
   
--   [Synchronisation de mot de passe](../core/password-synchronization2.md)  
+-   [<span data-ttu-id="535a3-125">Synchronisation de mot de passe</span><span class="sxs-lookup"><span data-stu-id="535a3-125">Password Synchronization</span></span>](../core/password-synchronization2.md)  
   
--   **Propriétés de l’adaptateur de synchronisation de mot de passe : Options**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
+-   <span data-ttu-id="535a3-126">**Propriétés de l’adaptateur de synchronisation de mot de passe : Options**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]</span><span class="sxs-lookup"><span data-stu-id="535a3-126">**Password Sync Adapter Properties: Options** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]</span></span>

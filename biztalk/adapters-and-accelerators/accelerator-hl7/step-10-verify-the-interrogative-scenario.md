@@ -19,36 +19,36 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="step-10-verify-the-interrogative-scenario"></a>Étape 10 : Vérifier que le scénario Interrogative
-Dans cette étape, vous vérifiez le scénario de bout en bout pour ce didacticiel.  
+# <a name="step-10-verify-the-interrogative-scenario"></a><span data-ttu-id="25df4-102">Étape 10 : Vérifier que le scénario Interrogative</span><span class="sxs-lookup"><span data-stu-id="25df4-102">Step 10: Verify the Interrogative Scenario</span></span>
+<span data-ttu-id="25df4-103">Dans cette étape, vous vérifiez le scénario de bout en bout pour ce didacticiel.</span><span class="sxs-lookup"><span data-stu-id="25df4-103">In this step, you verify the end-to-end scenario for this tutorial.</span></span>  
   
-### <a name="to-send-the-query-message"></a>Pour envoyer le message de requête  
+### <a name="to-send-the-query-message"></a><span data-ttu-id="25df4-104">Pour envoyer le message de requête</span><span class="sxs-lookup"><span data-stu-id="25df4-104">To send the query message</span></span>  
   
-1.  Ouvrez une invite de commandes.  
+1.  <span data-ttu-id="25df4-105">Ouvrez une invite de commandes.</span><span class="sxs-lookup"><span data-stu-id="25df4-105">Open a command prompt.</span></span>  
   
-2.  Dans l’invite de commandes, accédez à  **\<* lecteur*> : \Program Files\Microsoft BizTalk \<version > Accelerator HL7\SDK\MLLP utilitaires **.  
+2.  <span data-ttu-id="25df4-106">Dans l’invite de commandes, accédez à  **\<* lecteur*> : \Program Files\Microsoft BizTalk \<version > Accelerator HL7\SDK\MLLP utilitaires **.</span><span class="sxs-lookup"><span data-stu-id="25df4-106">In the command prompt, move to **\<*drive*>:\Program Files\Microsoft BizTalk \<version> Accelerator for HL7\SDK\MLLP Utilities**.</span></span>  
   
-3.  Dans l’invite de commandes, tapez **MllpReceive /P 24000**, puis appuyez sur **entrée**. Cela exécute l’application d’écouteur MLLP écouter le port 24000 et affiche tous les messages reçus à l’écran. Cette application simule un système d’informations.  
+3.  <span data-ttu-id="25df4-107">Dans l’invite de commandes, tapez **MllpReceive /P 24000**, puis appuyez sur **entrée**.</span><span class="sxs-lookup"><span data-stu-id="25df4-107">In the command prompt, type **MllpReceive /P 24000**, and then press **Enter**.</span></span> <span data-ttu-id="25df4-108">Cela exécute l’application d’écouteur MLLP écouter le port 24000 et affiche tous les messages reçus à l’écran.</span><span class="sxs-lookup"><span data-stu-id="25df4-108">This runs the MLLP listener application listening to port 24000 and displays any messages received to the screen.</span></span> <span data-ttu-id="25df4-109">Cette application simule un système d’informations.</span><span class="sxs-lookup"><span data-stu-id="25df4-109">This application is simulating the Hospital Information System.</span></span>  
   
-4.  Ouvrez une invite de commandes supplémentaire.  
+4.  <span data-ttu-id="25df4-110">Ouvrez une invite de commandes supplémentaire.</span><span class="sxs-lookup"><span data-stu-id="25df4-110">Open an additional command prompt.</span></span>  
   
-5.  Dans la deuxième fenêtre d’invite de commandes, accédez à  **\<* lecteur*> : \Program Files\Microsoft BizTalk \<version > Accelerator HL7\SDK\MLLP utilitaires **.  
+5.  <span data-ttu-id="25df4-111">Dans la deuxième fenêtre d’invite de commandes, accédez à  **\<* lecteur*> : \Program Files\Microsoft BizTalk \<version > Accelerator HL7\SDK\MLLP utilitaires **.</span><span class="sxs-lookup"><span data-stu-id="25df4-111">In the second Command Prompt window, move to **\<*drive*>:\Program Files\Microsoft BizTalk \<version> Accelerator for HL7\SDK\MLLP Utilities**.</span></span>  
   
-6.  Dans la seconde invite de commandes, tapez  **MllpSend/SB 11 /EB 28 /CR 13/TwoWay (bidirectionnel) /P 22000 /F «\<*lecteur*> : \Program Files\Microsoft BizTalk \<version > Accelerator for HL7\ SDK\Interrogative Tutorial\QRY^Q01.txt**, puis appuyez sur **entrée.**  
+6.  <span data-ttu-id="25df4-112">Dans la seconde invite de commandes, tapez  **MllpSend/SB 11 /EB 28 /CR 13/TwoWay (bidirectionnel) /P 22000 /F «\<*lecteur*> : \Program Files\Microsoft BizTalk \<version > Accelerator for HL7\ SDK\Interrogative Tutorial\QRY^Q01.txt**, puis appuyez sur **entrée.**</span><span class="sxs-lookup"><span data-stu-id="25df4-112">In the second command prompt, type **MllpSend /SB 11 /EB 28 /CR 13 /TWOWAY /P 22000 /F "\<*drive*>:\Program Files\Microsoft BizTalk \<version> Accelerator for HL7\SDK\Interrogative Tutorial\QRY^Q01.txt**, and then press **Enter.**</span></span>  
   
     > [!NOTE]
-    >  Cette commande envoie le message de requête que vous avez créé au début de ce didacticiel pour le port MLLP 22000 et attend une réponse (accusé de réception). Le ADT récupère ce message port de réception et le traite.  
+    >  <span data-ttu-id="25df4-113">Cette commande envoie le message de requête que vous avez créé au début de ce didacticiel pour le port MLLP 22000 et attend une réponse (accusé de réception).</span><span class="sxs-lookup"><span data-stu-id="25df4-113">This command sends the query message you created at the beginning of this tutorial to MLLP port 22000 and waits for a response (acknowledgment).</span></span> <span data-ttu-id="25df4-114">Le ADT récupère ce message port de réception et le traite.</span><span class="sxs-lookup"><span data-stu-id="25df4-114">The ADT receive port picks up this message and processes it.</span></span>  
   
-7.  Vérifiez que vous disposez les résultats suivants :  
+7.  <span data-ttu-id="25df4-115">Vérifiez que vous disposez les résultats suivants :</span><span class="sxs-lookup"><span data-stu-id="25df4-115">Verify that you have the following results:</span></span>  
   
-    -   L’application du récepteur MLLP doit afficher un message avec les valeurs suivantes :  
+    -   <span data-ttu-id="25df4-116">L’application du récepteur MLLP doit afficher un message avec les valeurs suivantes :</span><span class="sxs-lookup"><span data-stu-id="25df4-116">The MLLP listener application should display a message with the following values:</span></span>  
   
         ```  
         MSH|^~\&|ADT||HIS||19990303||QRY^Q01|MSG00001|P|2.4  
         QRD|200307231012|D|I|4387|||20^LI|12233|RES|ALL  
         ```  
   
-    -   En outre, l’utilitaire MllpSend crée un fichier de l’accusé de réception dans le \< *lecteur*> : \Program Files\Microsoft BizTalk \<version > Accelerator pour le dossier du didacticiel de HL7\SDK\Interrogative nommé req ^ Q01.txt.RESPONSE. Ce fichier contient les informations suivantes en tant que l’accusé de réception :  
+    -   <span data-ttu-id="25df4-117">En outre, l’utilitaire MllpSend crée un fichier de l’accusé de réception dans le \< *lecteur*> : \Program Files\Microsoft BizTalk \<version > Accelerator pour le dossier du didacticiel de HL7\SDK\Interrogative nommé req ^ Q01.txt.RESPONSE.</span><span class="sxs-lookup"><span data-stu-id="25df4-117">In addition, the MllpSend utility creates an acknowledgment file in the \<*drive*>:\Program Files\Microsoft BizTalk \<version> Accelerator for HL7\SDK\Interrogative Tutorial folder named QRY^Q01.txt.RESPONSE.</span></span> <span data-ttu-id="25df4-118">Ce fichier contient les informations suivantes en tant que l’accusé de réception :</span><span class="sxs-lookup"><span data-stu-id="25df4-118">This file contains the following information as the acknowledgment:</span></span>  
   
         ```  
         MSH|^~\&|HIS||ADT||20040331154031.2222-0800||ACK^Q01^ACK|10000GSM|P|2.4  
@@ -56,23 +56,23 @@ Dans cette étape, vous vérifiez le scénario de bout en bout pour ce didactici
         ****END ACK****  
         ```  
   
-### <a name="to-send-the-response-message"></a>Pour envoyer le message de réponse  
+### <a name="to-send-the-response-message"></a><span data-ttu-id="25df4-119">Pour envoyer le message de réponse</span><span class="sxs-lookup"><span data-stu-id="25df4-119">To send the response message</span></span>  
   
-1.  Dans l’invite de commandes qui exécute l’application MllpReceive, appuyez sur **Ctrl-C** pour annuler l’opération précédente.  
+1.  <span data-ttu-id="25df4-120">Dans l’invite de commandes qui exécute l’application MllpReceive, appuyez sur **Ctrl-C** pour annuler l’opération précédente.</span><span class="sxs-lookup"><span data-stu-id="25df4-120">In the command prompt running the MllpReceive application, press **Ctrl-C** to cancel the previous operation.</span></span>  
   
-2.  À l’invite de commandes, tapez **MllpReceive /P 25000**, puis appuyez sur **entrée**.  
-  
-    > [!NOTE]
-    >  Étape 2 s’exécute l’application du récepteur MLLP écouter le port 25000 et affiche tous les messages reçus à l’écran. Cette application simule le système ADT.  
-  
-3.  Dans la seconde invite de commandes, tapez  **MllpSend/SB 11 /EB 28 /CR 13 /P 23000 /F «\<*lecteur*> : \Program Files\Microsoft BizTalk \<version > Accelerator for HL7\SDK\ Tutorial\DSR.txt"** interrogative, puis appuyez sur **entrée**.  
+2.  <span data-ttu-id="25df4-121">À l’invite de commandes, tapez **MllpReceive /P 25000**, puis appuyez sur **entrée**.</span><span class="sxs-lookup"><span data-stu-id="25df4-121">At the command prompt, type **MllpReceive /P 25000**, and then press **Enter**.</span></span>  
   
     > [!NOTE]
-    >  Étape 3 envoie le message de réponse que vous avez créé au début de ce didacticiel pour le port MLLP 23000. LE port récupère ce message de réception et le traite.  
+    >  <span data-ttu-id="25df4-122">Étape 2 s’exécute l’application du récepteur MLLP écouter le port 25000 et affiche tous les messages reçus à l’écran.</span><span class="sxs-lookup"><span data-stu-id="25df4-122">Step 2 runs the MLLP listener application listening to port 25000 and displays any messages received to the screen.</span></span> <span data-ttu-id="25df4-123">Cette application simule le système ADT.</span><span class="sxs-lookup"><span data-stu-id="25df4-123">This application is simulating the ADT system.</span></span>  
   
-4.  Vérifiez que vous disposez les résultats suivants :  
+3.  <span data-ttu-id="25df4-124">Dans la seconde invite de commandes, tapez  **MllpSend/SB 11 /EB 28 /CR 13 /P 23000 /F «\<*lecteur*> : \Program Files\Microsoft BizTalk \<version > Accelerator for HL7\SDK\ Tutorial\DSR.txt"** interrogative, puis appuyez sur **entrée**.</span><span class="sxs-lookup"><span data-stu-id="25df4-124">In the second command prompt, type **MllpSend /SB 11 /EB 28 /CR 13 /P 23000 /F "\<*drive*>:\Program Files\Microsoft BizTalk \<version> Accelerator for HL7\SDK\Interrogative Tutorial\DSR.txt"**, then press **Enter**.</span></span>  
   
-    -   L’application du récepteur MLLP doit afficher un message avec les valeurs suivantes :  
+    > [!NOTE]
+    >  <span data-ttu-id="25df4-125">Étape 3 envoie le message de réponse que vous avez créé au début de ce didacticiel pour le port MLLP 23000.</span><span class="sxs-lookup"><span data-stu-id="25df4-125">Step 3 sends the response message you created at the beginning of this tutorial to MLLP port 23000.</span></span> <span data-ttu-id="25df4-126">LE port récupère ce message de réception et le traite.</span><span class="sxs-lookup"><span data-stu-id="25df4-126">The HIS receive port picks up this message and processes it.</span></span>  
+  
+4.  <span data-ttu-id="25df4-127">Vérifiez que vous disposez les résultats suivants :</span><span class="sxs-lookup"><span data-stu-id="25df4-127">Verify that you have the following results:</span></span>  
+  
+    -   <span data-ttu-id="25df4-128">L’application du récepteur MLLP doit afficher un message avec les valeurs suivantes :</span><span class="sxs-lookup"><span data-stu-id="25df4-128">The MLLP listener application should display a message with the following values:</span></span>  
   
         ```  
         MSH|^~\&|HIS||ADT||19990505||DSR^Q01|ZXT23469|P|2.4  
@@ -89,11 +89,11 @@ Dans cette étape, vous vérifiez le scénario de bout en bout pour ce didactici
         ```  
   
     > [!NOTE]
-    >  Si les messages ci-dessus ne s’affichent pas correctement, utilisez l’outil de contrôle d’intégrité et l’activité de suivi du fonctionnement (HAT) pour résoudre l’erreur.  
+    >  <span data-ttu-id="25df4-129">Si les messages ci-dessus ne s’affichent pas correctement, utilisez l’outil de contrôle d’intégrité et l’activité de suivi du fonctionnement (HAT) pour résoudre l’erreur.</span><span class="sxs-lookup"><span data-stu-id="25df4-129">If the messages above do not appear correctly, use the Health and Activity Tracking (HAT) tool to troubleshoot the error.</span></span>  
   
- Félicitations ! Vous avez terminé le didacticiel Interrogative BTAHL7.  
+ <span data-ttu-id="25df4-130">Félicitations !</span><span class="sxs-lookup"><span data-stu-id="25df4-130">Congratulations!</span></span> <span data-ttu-id="25df4-131">Vous avez terminé le didacticiel Interrogative BTAHL7.</span><span class="sxs-lookup"><span data-stu-id="25df4-131">You have successfully completed the BTAHL7 Interrogative Tutorial.</span></span>  
   
-## <a name="see-also"></a>Voir aussi  
- [Didacticiel de traitement par lot](../../adapters-and-accelerators/accelerator-hl7/batching-tutorial.md)   
- [Didacticiel de bout en bout](../../adapters-and-accelerators/accelerator-hl7/end-to-end-tutorial1.md)   
- [Didacticiel d’enrichissement de message](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)
+## <a name="see-also"></a><span data-ttu-id="25df4-132">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="25df4-132">See Also</span></span>  
+ <span data-ttu-id="25df4-133">[Didacticiel de traitement par lot](../../adapters-and-accelerators/accelerator-hl7/batching-tutorial.md) </span><span class="sxs-lookup"><span data-stu-id="25df4-133">[Batching Tutorial](../../adapters-and-accelerators/accelerator-hl7/batching-tutorial.md) </span></span>  
+ <span data-ttu-id="25df4-134">[Didacticiel de bout en bout](../../adapters-and-accelerators/accelerator-hl7/end-to-end-tutorial1.md) </span><span class="sxs-lookup"><span data-stu-id="25df4-134">[End-to-End Tutorial](../../adapters-and-accelerators/accelerator-hl7/end-to-end-tutorial1.md) </span></span>  
+ [<span data-ttu-id="25df4-135">Didacticiel d’enrichissement de message</span><span class="sxs-lookup"><span data-stu-id="25df4-135">Message Enrichment Tutorial</span></span>](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

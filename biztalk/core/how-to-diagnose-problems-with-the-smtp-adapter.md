@@ -18,21 +18,21 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-diagnose-problems-with-the-smtp-adapter"></a>Diagnostic des problèmes relatifs à l'adaptateur SMTP
-Cette rubrique présente la procédure de diagnostic des problèmes relatifs à l'adaptateur SMTP.  
+# <a name="how-to-diagnose-problems-with-the-smtp-adapter"></a><span data-ttu-id="5900d-102">Diagnostic des problèmes relatifs à l'adaptateur SMTP</span><span class="sxs-lookup"><span data-stu-id="5900d-102">How to Diagnose Problems with the SMTP Adapter</span></span>
+<span data-ttu-id="5900d-103">Cette rubrique présente la procédure de diagnostic des problèmes relatifs à l'adaptateur SMTP.</span><span class="sxs-lookup"><span data-stu-id="5900d-103">This section contains steps that can be followed to help diagnose problems with the SMTP adapter.</span></span>  
   
-### <a name="check-the-smtp-log-files-of-the-smtp-server-for-errors"></a>Recherche des erreurs dans les fichiers journaux SMTP du serveur SMTP  
+### <a name="check-the-smtp-log-files-of-the-smtp-server-for-errors"></a><span data-ttu-id="5900d-104">Recherche des erreurs dans les fichiers journaux SMTP du serveur SMTP</span><span class="sxs-lookup"><span data-stu-id="5900d-104">Check the SMTP log files of the SMTP Server for errors</span></span>  
   
--   Les fichiers journaux du serveur SMTP cible contiennent des informations qui peuvent s'avérer utiles pour résoudre les problèmes relatifs à l'adaptateur SMTP. Les fichiers journaux SMTP sur [!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] se trouvent par défaut dans le répertoire suivant :  
+-   <span data-ttu-id="5900d-105">Les fichiers journaux du serveur SMTP cible contiennent des informations qui peuvent s'avérer utiles pour résoudre les problèmes relatifs à l'adaptateur SMTP.</span><span class="sxs-lookup"><span data-stu-id="5900d-105">The target SMTP server log files can contain information that is helpful for troubleshooting problems with the SMTP adapter.</span></span> <span data-ttu-id="5900d-106">Les fichiers journaux SMTP sur [!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] se trouvent par défaut dans le répertoire suivant :</span><span class="sxs-lookup"><span data-stu-id="5900d-106">By default the SMTP log files on [!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] are located in the following directory:</span></span>  
   
-     *%Windir%\\*system32\LogFiles\SMTPSVC1\  
-  
-    > [!NOTE]
-    >  *%Windir%* est un espace réservé pour l’emplacement du répertoire Windows sur le serveur SMTP.  
+     <span data-ttu-id="5900d-107">*%Windir%\\*system32\LogFiles\SMTPSVC1\\</span><span class="sxs-lookup"><span data-stu-id="5900d-107">*%WinDir%\\*system32\LogFiles\SMTPSVC1\\</span></span>  
   
     > [!NOTE]
-    >  La journalisation SMTP est désactivée par défaut sur [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]. Pour plus d'informations sur l'activation de la journalisation pour SMTP, consultez la documentation Windows Server.  
+    >  <span data-ttu-id="5900d-108">*%Windir%* est un espace réservé pour l’emplacement du répertoire Windows sur le serveur SMTP.</span><span class="sxs-lookup"><span data-stu-id="5900d-108">*%WinDir%* is a placeholder for the location of the Windows directory on the SMTP server.</span></span>  
   
-## <a name="see-also"></a>Voir aussi  
- [Outils et utilitaires à utiliser pour la résolution des problèmes](../core/tools-and-utilities-to-use-for-troubleshooting.md)   
- [Dépannage de l’adaptateur SMTP](../core/troubleshooting-the-smtp-adapter.md)
+    > [!NOTE]
+    >  <span data-ttu-id="5900d-109">La journalisation SMTP est désactivée par défaut sur [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)].</span><span class="sxs-lookup"><span data-stu-id="5900d-109">SMTP logging is disabled by default on [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)].</span></span> <span data-ttu-id="5900d-110">Pour plus d'informations sur l'activation de la journalisation pour SMTP, consultez la documentation Windows Server.</span><span class="sxs-lookup"><span data-stu-id="5900d-110">For information about enabling logging for SMTP, see the Windows Server documentation.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="5900d-111">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="5900d-111">See Also</span></span>  
+ <span data-ttu-id="5900d-112">[Outils et utilitaires à utiliser pour la résolution des problèmes](../core/tools-and-utilities-to-use-for-troubleshooting.md) </span><span class="sxs-lookup"><span data-stu-id="5900d-112">[Tools and Utilities to Use for Troubleshooting](../core/tools-and-utilities-to-use-for-troubleshooting.md) </span></span>  
+ [<span data-ttu-id="5900d-113">Dépannage de l’adaptateur SMTP</span><span class="sxs-lookup"><span data-stu-id="5900d-113">Troubleshooting the SMTP Adapter</span></span>](../core/troubleshooting-the-smtp-adapter.md)

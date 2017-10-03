@@ -21,11 +21,11 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="configuring-the-wcf-netmsmq-adapter"></a>Configuration de l'adaptateur WCF-NetMsmq
-Cette section décrit la configuration d'un adaptateur WCF-NetMsmq.  
+# <a name="configuring-the-wcf-netmsmq-adapter"></a><span data-ttu-id="8367e-102">Configuration de l'adaptateur WCF-NetMsmq</span><span class="sxs-lookup"><span data-stu-id="8367e-102">Configuring the WCF-NetMsmq Adapter</span></span>
+<span data-ttu-id="8367e-103">Cette section décrit la configuration d'un adaptateur WCF-NetMsmq.</span><span class="sxs-lookup"><span data-stu-id="8367e-103">This section describes how to configure a WCF-NetMsmq adapter.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="8367e-104">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="8367e-104">In This Section</span></span>  
   
--   [Comment configurer un Port d’envoi WCF-NetMsmq](../core/how-to-configure-a-wcf-netmsmq-send-port.md)  
+-   [<span data-ttu-id="8367e-105">Comment configurer un Port d’envoi WCF-NetMsmq</span><span class="sxs-lookup"><span data-stu-id="8367e-105">How to Configure a WCF-NetMsmq Send Port</span></span>](../core/how-to-configure-a-wcf-netmsmq-send-port.md)  
   
--   [Pour configurer les emplacement de réception WCF-NetMsmq](../core/how-to-configure-a-wcf-netmsmq-receive-location.md)
+-   [<span data-ttu-id="8367e-106">Pour configurer les emplacement de réception WCF-NetMsmq</span><span class="sxs-lookup"><span data-stu-id="8367e-106">How to Configure a WCF-NetMsmq Receive Location</span></span>](../core/how-to-configure-a-wcf-netmsmq-receive-location.md)

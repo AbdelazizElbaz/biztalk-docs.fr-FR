@@ -19,15 +19,15 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---property-schema-structure-not-valid"></a>Erreur : Structure du schéma de propriété non valide
-**Code d’erreur**  
+# <a name="error---property-schema-structure-not-valid"></a><span data-ttu-id="74ead-102">Erreur : Structure du schéma de propriété non valide</span><span class="sxs-lookup"><span data-stu-id="74ead-102">Error - Property Schema Structure Not Valid</span></span>
+<span data-ttu-id="74ead-103">**Code d’erreur**</span><span class="sxs-lookup"><span data-stu-id="74ead-103">**Error Code**</span></span>  
   
- BEC2007  
+ <span data-ttu-id="74ead-104">BEC2007</span><span class="sxs-lookup"><span data-stu-id="74ead-104">BEC2007</span></span>  
   
- **Explication**  
+ <span data-ttu-id="74ead-105">**Explication**</span><span class="sxs-lookup"><span data-stu-id="74ead-105">**Explanation**</span></span>  
   
- La structure du schéma de propriété est non valide. La structure des schémas de propriété est limitée à un ou plusieurs **Fieldelement** nœuds en tant qu’enfants de le **schéma** nœud.  
+ <span data-ttu-id="74ead-106">La structure du schéma de propriété est non valide.</span><span class="sxs-lookup"><span data-stu-id="74ead-106">This property schema was found to have a structure that is not valid.</span></span> <span data-ttu-id="74ead-107">La structure des schémas de propriété est limitée à un ou plusieurs **Fieldelement** nœuds en tant qu’enfants de le **schéma** nœud.</span><span class="sxs-lookup"><span data-stu-id="74ead-107">The structure of property schemas is limited to one or more **Field Element** nodes as children of the **Schema** node.</span></span>  
   
- **Action de l’utilisateur**  
+ <span data-ttu-id="74ead-108">**Action de l’utilisateur**</span><span class="sxs-lookup"><span data-stu-id="74ead-108">**User Action**</span></span>  
   
- Corriger la structure de ce schéma de propriété afin que la **schéma** nœud possède uniquement **élément de champ** nœuds en tant qu’enfants.
+ <span data-ttu-id="74ead-109">Corriger la structure de ce schéma de propriété afin que la **schéma** nœud possède uniquement **élément de champ** nœuds en tant qu’enfants.</span><span class="sxs-lookup"><span data-stu-id="74ead-109">Correct the structure of this property schema so that the **Schema** node only has **Field Element** nodes as children.</span></span>

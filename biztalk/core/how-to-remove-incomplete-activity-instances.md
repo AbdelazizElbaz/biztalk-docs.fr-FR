@@ -18,94 +18,94 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-remove-incomplete-activity-instances"></a>Suppression d'instances d'activités incomplètes
-Lorsqu'un fichier de définition d'analyse BAM est déployé, cinq tables sont créées dans la base de données d'importation principale BAM pour chaque activité définie dans ce fichier. Ces tables sont les suivantes :  
+# <a name="how-to-remove-incomplete-activity-instances"></a><span data-ttu-id="36d7e-102">Suppression d'instances d'activités incomplètes</span><span class="sxs-lookup"><span data-stu-id="36d7e-102">How to Remove Incomplete Activity Instances</span></span>
+<span data-ttu-id="36d7e-103">Lorsqu'un fichier de définition d'analyse BAM est déployé, cinq tables sont créées dans la base de données d'importation principale BAM pour chaque activité définie dans ce fichier.</span><span class="sxs-lookup"><span data-stu-id="36d7e-103">When a BAM definition file is deployed, five tables are created in the BAM Primary Import database for each activity defined in the definition file.</span></span> <span data-ttu-id="36d7e-104">Ces tables sont les suivantes :</span><span class="sxs-lookup"><span data-stu-id="36d7e-104">These tables are:</span></span>  
   
--   bam_`ActivityName`_Active  
+-   <span data-ttu-id="36d7e-105">bam_`ActivityName`_Active</span><span class="sxs-lookup"><span data-stu-id="36d7e-105">bam_`ActivityName`_Active</span></span>  
   
--   bam_`ActivityName`_Completed  
+-   <span data-ttu-id="36d7e-106">bam_`ActivityName`_Completed</span><span class="sxs-lookup"><span data-stu-id="36d7e-106">bam_`ActivityName`_Completed</span></span>  
   
--   bam_`ActivityName`_ActiveRelationships  
+-   <span data-ttu-id="36d7e-107">bam_`ActivityName`_ActiveRelationships</span><span class="sxs-lookup"><span data-stu-id="36d7e-107">bam_`ActivityName`_ActiveRelationships</span></span>  
   
--   bam_`ActivityName`_CompletedRelationships  
+-   <span data-ttu-id="36d7e-108">bam_`ActivityName`_CompletedRelationships</span><span class="sxs-lookup"><span data-stu-id="36d7e-108">bam_`ActivityName`_CompletedRelationships</span></span>  
   
--   bam_`ActivityName`_Continuations  
+-   <span data-ttu-id="36d7e-109">bam_`ActivityName`_Continuations</span><span class="sxs-lookup"><span data-stu-id="36d7e-109">bam_`ActivityName`_Continuations</span></span>  
   
- Où `ActivityName` est le nom de l'activité définie par l'utilisateur.  
+ <span data-ttu-id="36d7e-110">Où `ActivityName` est le nom de l'activité définie par l'utilisateur.</span><span class="sxs-lookup"><span data-stu-id="36d7e-110">Where `ActivityName` is the name of the activity that the user has defined.</span></span>  
   
- Au cours du fonctionnement normal, les données incomplètes restent dans la table bam_`ActivityName`_Active. Si les données ont des relations et des références, puis il seront des données dans l’analyse bam\_`ActivityName`_ActiveRelationships table.  
+ <span data-ttu-id="36d7e-111">Au cours du fonctionnement normal, les données incomplètes restent dans la table bam_`ActivityName`_Active.</span><span class="sxs-lookup"><span data-stu-id="36d7e-111">During normal execution, incomplete data remains in the bam_`ActivityName`_Active table.</span></span> <span data-ttu-id="36d7e-112">Si les données ont des relations et des références, puis il seront des données dans l’analyse bam\_`ActivityName`_ActiveRelationships table.</span><span class="sxs-lookup"><span data-stu-id="36d7e-112">If the data has relations and references, then there will be data in the bam\_`ActivityName`_ActiveRelationships table.</span></span>  
   
- Pendant le suivi d'activités qui utilisent des continuations, il peut y avoir des instances dans lesquelles une activité est restée à l'état non terminé dans les bases de données de l'analyse BAM. Vous pouvez utiliser le script de création des procédures stockées à la fin de cette rubrique pour créer une procédure stockée qui purgera les enregistrements incomplets.  
+ <span data-ttu-id="36d7e-113">Pendant le suivi d'activités qui utilisent des continuations, il peut y avoir des instances dans lesquelles une activité est restée à l'état non terminé dans les bases de données de l'analyse BAM.</span><span class="sxs-lookup"><span data-stu-id="36d7e-113">During the tracking of activities that use continuations, there may be instances in which an activity is left in an incomplete state in the BAM databases.</span></span> <span data-ttu-id="36d7e-114">Vous pouvez utiliser le script de création des procédures stockées à la fin de cette rubrique pour créer une procédure stockée qui purgera les enregistrements incomplets.</span><span class="sxs-lookup"><span data-stu-id="36d7e-114">You can use the stored procedure creation script at the end of this topic to create a stored procedure that will purge the incomplete records.</span></span>  
   
- Pour créer la procédure stockée, copiez le script et exécutez-le sur la base de données d'importation principale BAM en utilisant SQL Server Management. Le script va générer une procédure stockée nommée **RemoveDanglingInstances** dans la base de données.  
+ <span data-ttu-id="36d7e-115">Pour créer la procédure stockée, copiez le script et exécutez-le sur la base de données d'importation principale BAM en utilisant SQL Server Management.</span><span class="sxs-lookup"><span data-stu-id="36d7e-115">To create the stored procedure, copy the script and execute it against the BAM Primary Import database by using SQL Server Management.</span></span> <span data-ttu-id="36d7e-116">Le script va générer une procédure stockée nommée **RemoveDanglingInstances** dans la base de données.</span><span class="sxs-lookup"><span data-stu-id="36d7e-116">The script will generate a stored procedure named **RemoveDanglingInstances** in the database.</span></span>  
   
-### <a name="to-create-the-removedanglinginstances-stored-procedure"></a>Pour créer la procédure stockée RemoveDanglingInstances  
+### <a name="to-create-the-removedanglinginstances-stored-procedure"></a><span data-ttu-id="36d7e-117">Pour créer la procédure stockée RemoveDanglingInstances</span><span class="sxs-lookup"><span data-stu-id="36d7e-117">To create the RemoveDanglingInstances stored procedure</span></span>  
   
-1.  Cliquez sur **Démarrer**, cliquez sur **tous les programmes**, cliquez sur **Microsoft SQL Server 2008 SP1** ou **Microsoft SQL Server 2008 R2**, puis cliquez sur  **SQL Server Management Studio**.  
+1.  <span data-ttu-id="36d7e-118">Cliquez sur **Démarrer**, cliquez sur **tous les programmes**, cliquez sur **Microsoft SQL Server 2008 SP1** ou **Microsoft SQL Server 2008 R2**, puis cliquez sur  **SQL Server Management Studio**.</span><span class="sxs-lookup"><span data-stu-id="36d7e-118">Click **Start**, click **All Programs**, click **Microsoft SQL Server 2008 SP1** or **Microsoft SQL Server 2008 R2**, and then click **SQL Server Management Studio**.</span></span>  
   
-2.  Dans le **se connecter au serveur** boîte de dialogue, sélectionnez le serveur SQL server et la méthode d’authentification appropriée, puis cliquez sur **connexion**.  
+2.  <span data-ttu-id="36d7e-119">Dans le **se connecter au serveur** boîte de dialogue, sélectionnez le serveur SQL server et la méthode d’authentification appropriée, puis cliquez sur **connexion**.</span><span class="sxs-lookup"><span data-stu-id="36d7e-119">In the **Connect to Server** dialog box, select the SQL server and the appropriate authentication method, and then click **Connect**.</span></span>  
   
-3.  Développez le nom du serveur, **bases de données**, puis sélectionnez la base de données d’importation principale BAM.  
+3.  <span data-ttu-id="36d7e-120">Développez le nom du serveur, **bases de données**, puis sélectionnez la base de données d’importation principale BAM.</span><span class="sxs-lookup"><span data-stu-id="36d7e-120">Expand the server name, expand **Databases**, and then select the BAM Primary Import database.</span></span>  
   
-4.  Cliquez sur **Nouvelle requête**.  
+4.  <span data-ttu-id="36d7e-121">Cliquez sur **Nouvelle requête**.</span><span class="sxs-lookup"><span data-stu-id="36d7e-121">Click **New Query**.</span></span>  
   
-5.  Copiez le script de création de la procédure stockée et collez-le dans le volet droit.  
+5.  <span data-ttu-id="36d7e-122">Copiez le script de création de la procédure stockée et collez-le dans le volet droit.</span><span class="sxs-lookup"><span data-stu-id="36d7e-122">Copy the stored procedure creation script and paste it into the right pane.</span></span>  
   
-6.  Cliquez sur **Execute** pour exécuter le script. La procédure stockée résultante peut être affichée dans la liste des procédures stockées en tant que dbo. RemoveDanglingInstances.  
+6.  <span data-ttu-id="36d7e-123">Cliquez sur **Execute** pour exécuter le script.</span><span class="sxs-lookup"><span data-stu-id="36d7e-123">Click **Execute** to run the script.</span></span> <span data-ttu-id="36d7e-124">La procédure stockée résultante peut être affichée dans la liste des procédures stockées en tant que dbo. RemoveDanglingInstances.</span><span class="sxs-lookup"><span data-stu-id="36d7e-124">The resulting stored procedure can be viewed in the list of stored procedures as dbo.RemoveDanglingInstances.</span></span>  
   
-### <a name="to-remove-incomplete-activity-instances"></a>Pour supprimer les instances d'activité incomplètes  
+### <a name="to-remove-incomplete-activity-instances"></a><span data-ttu-id="36d7e-125">Pour supprimer les instances d'activité incomplètes</span><span class="sxs-lookup"><span data-stu-id="36d7e-125">To remove incomplete activity instances</span></span>  
   
-1.  Cliquez sur **Démarrer**, cliquez sur **tous les programmes**, cliquez sur **Microsoft SQL Server 2008 SP1** ou **Microsoft SQL Server 2008 R2**, puis cliquez sur  **SQL Server Management Studio**.  
+1.  <span data-ttu-id="36d7e-126">Cliquez sur **Démarrer**, cliquez sur **tous les programmes**, cliquez sur **Microsoft SQL Server 2008 SP1** ou **Microsoft SQL Server 2008 R2**, puis cliquez sur  **SQL Server Management Studio**.</span><span class="sxs-lookup"><span data-stu-id="36d7e-126">Click **Start**, click **All Programs**, click **Microsoft SQL Server 2008 SP1** or **Microsoft SQL Server 2008 R2**, and then click **SQL Server Management Studio**.</span></span>  
   
-2.  Dans le **se connecter au serveur** boîte de dialogue, sélectionnez le serveur SQL server et la méthode d’authentification appropriée, puis cliquez sur **connexion**.  
+2.  <span data-ttu-id="36d7e-127">Dans le **se connecter au serveur** boîte de dialogue, sélectionnez le serveur SQL server et la méthode d’authentification appropriée, puis cliquez sur **connexion**.</span><span class="sxs-lookup"><span data-stu-id="36d7e-127">In the **Connect to Server** dialog box, select the SQL server and the appropriate authentication method, and then click **Connect**.</span></span>  
   
-3.  Développez le nom du serveur, **bases de données**, puis sélectionnez la base de données d’importation principale BAM.  
+3.  <span data-ttu-id="36d7e-128">Développez le nom du serveur, **bases de données**, puis sélectionnez la base de données d’importation principale BAM.</span><span class="sxs-lookup"><span data-stu-id="36d7e-128">Expand the server name, expand **Databases**, and then select the BAM Primary Import database.</span></span>  
   
-4.  Cliquez sur **Nouvelle requête**.  
+4.  <span data-ttu-id="36d7e-129">Cliquez sur **Nouvelle requête**.</span><span class="sxs-lookup"><span data-stu-id="36d7e-129">Click **New Query**.</span></span>  
   
-5.  Dans le volet droit, tapez `exec RemoveDanglingInstances` et les paramètres appropriés pour l’opération de suppression que vous effectuez. Par exemple, pour supprimer toutes les instances incomplètes de l’activité de bon de commande, tapez `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder'`.  
+5.  <span data-ttu-id="36d7e-130">Dans le volet droit, tapez `exec RemoveDanglingInstances` et les paramètres appropriés pour l’opération de suppression que vous effectuez.</span><span class="sxs-lookup"><span data-stu-id="36d7e-130">In the right pane, type `exec RemoveDanglingInstances` and the appropriate parameters for the remove operation you are performing.</span></span> <span data-ttu-id="36d7e-131">Par exemple, pour supprimer toutes les instances incomplètes de l’activité de bon de commande, tapez `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder'`.</span><span class="sxs-lookup"><span data-stu-id="36d7e-131">For example, to remove all incomplete instances of the Purchase Order activity, type `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder'`.</span></span>  
   
-6.  Cliquez sur **Execute** pour exécuter le script.  
+6.  <span data-ttu-id="36d7e-132">Cliquez sur **Execute** pour exécuter le script.</span><span class="sxs-lookup"><span data-stu-id="36d7e-132">Click **Execute** to run the script.</span></span>  
   
-## <a name="removedanglinginstances-usage-examples"></a>Exemples d'utilisation de RemoveDanglingInstances  
- La procédure stockée peut recevoir quatre paramètres :  
+## <a name="removedanglinginstances-usage-examples"></a><span data-ttu-id="36d7e-133">Exemples d'utilisation de RemoveDanglingInstances</span><span class="sxs-lookup"><span data-stu-id="36d7e-133">RemoveDanglingInstances Usage Examples</span></span>  
+ <span data-ttu-id="36d7e-134">La procédure stockée peut recevoir quatre paramètres :</span><span class="sxs-lookup"><span data-stu-id="36d7e-134">The stored procedure can receive four parameters:</span></span>  
   
-|Paramètre| Description|  
+|<span data-ttu-id="36d7e-135">Paramètre</span><span class="sxs-lookup"><span data-stu-id="36d7e-135">Parameter</span></span>|<span data-ttu-id="36d7e-136"> Description</span><span class="sxs-lookup"><span data-stu-id="36d7e-136">Description</span></span>|  
 |---------------|-----------------|  
-|@ActivityName nvarchar(128)|Spécifie le nom de l'instance d'activité incomplète à supprimer.|  
-|@ActivityId nvarchar(128)|(Facultatif) Spécifie que la procédure stockée doit supprimer uniquement l'instance en suspens portant l'identificateur d'instance indiqué.|  
-|@DateThresholddate/heure|(Facultatif) Spécifie que les instances de tous les actifs de la table active antérieures (non égal à et plus anciennes et plus que des anciennes) à la date donnée sont supprimés.|  
-|@NewTableExtensionnvarchar (30)|(Facultatif) Spécifie que la procédure stockée crée de nouvelles tables en concaténant l'extension fournie et le nom des tables d'activités existantes.<br /><br /> Les tables résultantes seront les suivantes :<br /><br /> bam_ActivityName_Active_\<Extension ><br /><br /> bam_ActivityName_ActiveRelationships_\<Extension ><br /><br /> bam_ActivityName_Continuations_\<Extension ><br /><br /> Les instances incomplètes sont déplacées vers les nouvelles tables au lieu d'être purgées de la base de données.<br /><br /> Si les tables existent déjà, la procédure stockée les réutilise ; sinon, elles sont créées. **Important :** si les tables existent déjà, la procédure stockée suppose que leurs schémas correspondent à ceux qui serait utilisé si elles ont été créées. Si un schéma ne correspond pas, la procédure stockée ne pourra pas insérer les enregistrements et l'opération de suppression échouera.|  
+|<span data-ttu-id="36d7e-137">@ActivityName nvarchar(128)</span><span class="sxs-lookup"><span data-stu-id="36d7e-137">@ActivityName nvarchar(128)</span></span>|<span data-ttu-id="36d7e-138">Spécifie le nom de l'instance d'activité incomplète à supprimer.</span><span class="sxs-lookup"><span data-stu-id="36d7e-138">Specifies the name of the incomplete activity instance to remove.</span></span>|  
+|<span data-ttu-id="36d7e-139">@ActivityId nvarchar(128)</span><span class="sxs-lookup"><span data-stu-id="36d7e-139">@ActivityId nvarchar(128)</span></span>|<span data-ttu-id="36d7e-140">(Facultatif) Spécifie que la procédure stockée doit supprimer uniquement l'instance en suspens portant l'identificateur d'instance indiqué.</span><span class="sxs-lookup"><span data-stu-id="36d7e-140">(Optional) Specifies that the stored procedure remove only the dangling instance with the specified instance identifier.</span></span>|  
+|<span data-ttu-id="36d7e-141">@DateThresholddate/heure</span><span class="sxs-lookup"><span data-stu-id="36d7e-141">@DateThreshold datetime</span></span>|<span data-ttu-id="36d7e-142">(Facultatif) Spécifie que les instances de tous les actifs de la table active antérieures (non égal à et plus anciennes et plus que des anciennes) à la date donnée sont supprimés.</span><span class="sxs-lookup"><span data-stu-id="36d7e-142">(Optional) Specifies that all the active instances in the active table that are older (not equal to and older, only older) than the given date are removed.</span></span>|  
+|<span data-ttu-id="36d7e-143">@NewTableExtensionnvarchar (30)</span><span class="sxs-lookup"><span data-stu-id="36d7e-143">@NewTableExtension nvarchar(30)</span></span>|<span data-ttu-id="36d7e-144">(Facultatif) Spécifie que la procédure stockée crée de nouvelles tables en concaténant l'extension fournie et le nom des tables d'activités existantes.</span><span class="sxs-lookup"><span data-stu-id="36d7e-144">(Optional) Specifies that the stored procedure creates three new tables by concatenating the supplied extension to the existing activity tables.</span></span><br /><br /> <span data-ttu-id="36d7e-145">Les tables résultantes seront les suivantes :</span><span class="sxs-lookup"><span data-stu-id="36d7e-145">The resulting tables will be:</span></span><br /><br /> <span data-ttu-id="36d7e-146">bam_ActivityName_Active_\<Extension ></span><span class="sxs-lookup"><span data-stu-id="36d7e-146">bam_ActivityName_Active_\<Extension></span></span><br /><br /> <span data-ttu-id="36d7e-147">bam_ActivityName_ActiveRelationships_\<Extension ></span><span class="sxs-lookup"><span data-stu-id="36d7e-147">bam_ActivityName_ActiveRelationships_\<Extension></span></span><br /><br /> <span data-ttu-id="36d7e-148">bam_ActivityName_Continuations_\<Extension ></span><span class="sxs-lookup"><span data-stu-id="36d7e-148">bam_ActivityName_Continuations_\<Extension></span></span><br /><br /> <span data-ttu-id="36d7e-149">Les instances incomplètes sont déplacées vers les nouvelles tables au lieu d'être purgées de la base de données.</span><span class="sxs-lookup"><span data-stu-id="36d7e-149">The incomplete instances are moved to the new tables rather than being purged from the database.</span></span><br /><br /> <span data-ttu-id="36d7e-150">Si les tables existent déjà, la procédure stockée les réutilise ; sinon, elles sont créées.</span><span class="sxs-lookup"><span data-stu-id="36d7e-150">If the tables already exist, the stored procedure reuses them; otherwise they are created.</span></span> <span data-ttu-id="36d7e-151">**Important :** si les tables existent déjà, la procédure stockée suppose que leurs schémas correspondent à ceux qui serait utilisé si elles ont été créées.</span><span class="sxs-lookup"><span data-stu-id="36d7e-151">**Important:**  If the tables already exist, the stored procedure assumes that their schemas match the ones that would be used if they were created.</span></span> <span data-ttu-id="36d7e-152">Si un schéma ne correspond pas, la procédure stockée ne pourra pas insérer les enregistrements et l'opération de suppression échouera.</span><span class="sxs-lookup"><span data-stu-id="36d7e-152">If a schema does not match, the stored procedure will fail to insert the records and the remove operation will fail.</span></span>|  
   
  `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder'`  
   
- Supprime toutes les instances actives de l'activité 'PurchaseOrder' dans les tables actives, relations actives et continuations.  
+ <span data-ttu-id="36d7e-153">Supprime toutes les instances actives de l'activité 'PurchaseOrder' dans les tables actives, relations actives et continuations.</span><span class="sxs-lookup"><span data-stu-id="36d7e-153">Removes all active instances of the 'PurchaseOrder' activity in the active, active relationships, and continuations tables.</span></span>  
   
  `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder', @ActivityId = 'PO220567'`  
   
- Supprime uniquement l'instance d'activité portant l'ID d'activité 'PO220567' dans les tables actives, relations actives et continuations pour l'activité 'PurchaseOrder'.  
+ <span data-ttu-id="36d7e-154">Supprime uniquement l'instance d'activité portant l'ID d'activité 'PO220567' dans les tables actives, relations actives et continuations pour l'activité 'PurchaseOrder'.</span><span class="sxs-lookup"><span data-stu-id="36d7e-154">Removes only the activity instance that has an Activity ID of 'PO220567' from the active, active relationships, and continuations tables for the 'PurchaseOrder' activity.</span></span>  
   
  `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder', @DateThreshold='2005-02-02 19:27:03:533'`  
   
- Supprime toutes les instances d'activité dont l'heure de dernière modification (LastModified) est antérieure au 2 février 2005 19:27:03.533 dans les tables actives, relations actives et continuations pour l'activité   
+ <span data-ttu-id="36d7e-155">Supprime toutes les instances d'activité dont l'heure de dernière modification (LastModified) est antérieure au 2 février 2005 19:27:03.533 dans les tables actives, relations actives et continuations pour l'activité </span><span class="sxs-lookup"><span data-stu-id="36d7e-155">Removes all the activity instances that have a LastModified time that is older than Feb 2nd, 2005 7:27:03.533 PM from the active, active relationships, and continuations tables for the 'PurchaseOrder' activity.</span></span>  
   
  `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder', @ActivityId = 'PO220567', @DateThreshold='2005-02-02 19:27:03:533'`  
   
- Supprime l'instance d'activité dont l'ID d'activité est PO220567 uniquement si la valeur de la colonne LastModified est antérieure au 2 février 2005 19:27:03.533.  
+ <span data-ttu-id="36d7e-156">Supprime l'instance d'activité dont l'ID d'activité est PO220567 uniquement si la valeur de la colonne LastModified est antérieure au 2 février 2005 19:27:03.533.</span><span class="sxs-lookup"><span data-stu-id="36d7e-156">Removes the activity instance whose activity ID is PO220567 only if its LastModified column is older than Feb 2nd, 2005 7:27:03.533 PM.</span></span>  
   
  `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder', @DateThreshold='2005-02-02 19:27:03:533', @NewTableExtension=N'Dangling'`  
   
- Crée les tables suivantes dans la base de données :  
+ <span data-ttu-id="36d7e-157">Crée les tables suivantes dans la base de données :</span><span class="sxs-lookup"><span data-stu-id="36d7e-157">Creates the following tables in the database:</span></span>  
   
- bam_PurchaseOrder_Active_Dangling  
+ <span data-ttu-id="36d7e-158">bam_PurchaseOrder_Active_Dangling</span><span class="sxs-lookup"><span data-stu-id="36d7e-158">bam_PurchaseOrder_Active_Dangling</span></span>  
   
- bam_PurchaseOrder_ActiveRelationships_Dangling  
+ <span data-ttu-id="36d7e-159">bam_PurchaseOrder_ActiveRelationships_Dangling</span><span class="sxs-lookup"><span data-stu-id="36d7e-159">bam_PurchaseOrder_ActiveRelationships_Dangling</span></span>  
   
- bam_PurchaseOrder_Continuations_Dangling  
+ <span data-ttu-id="36d7e-160">bam_PurchaseOrder_Continuations_Dangling</span><span class="sxs-lookup"><span data-stu-id="36d7e-160">bam_PurchaseOrder_Continuations_Dangling</span></span>  
   
- La procédure stockée copie toutes les instances d'activité incomplètes antérieures au 2 février 2005 19:27:03.533 dans les tables actives, relations actives et continuations pour l'activité 'PurchaseOrder', et les insère dans les tables nouvellement créées  Les instances d'activité copiées sont ensuite supprimées des tables actives, relations actives et continuations.  
+ <span data-ttu-id="36d7e-161">La procédure stockée copie toutes les instances d'activité incomplètes antérieures au 2 février 2005 19:27:03.533 dans les tables actives, relations actives et continuations pour l'activité 'PurchaseOrder', et les insère dans les tables nouvellement créées </span><span class="sxs-lookup"><span data-stu-id="36d7e-161">The stored procedure copies all incomplete activity instances that are older than Feb 2nd, 2005 7:27:03.533 PM from the active, active relationships, and continuations tables for the 'PurchaseOrder' activity, and inserts them into the newly created tables.</span></span> <span data-ttu-id="36d7e-162">Les instances d'activité copiées sont ensuite supprimées des tables actives, relations actives et continuations.</span><span class="sxs-lookup"><span data-stu-id="36d7e-162">The copied activity instances are then removed from the active, active relationships, and continuations tables.</span></span>  
   
-## <a name="stored-procedure-creation-script"></a>Script de création de la procédure stockée  
+## <a name="stored-procedure-creation-script"></a><span data-ttu-id="36d7e-163">Script de création de la procédure stockée</span><span class="sxs-lookup"><span data-stu-id="36d7e-163">Stored Procedure Creation Script</span></span>  
   
 ```  
 EXEC sp_stored_procedures @sp_name = 'RemoveDanglingInstances'  
@@ -236,5 +236,5 @@ AS
 GO  
 ```  
   
-## <a name="see-also"></a>Voir aussi  
- [Gestion des bases de données BAM](../core/managing-bam-databases.md)
+## <a name="see-also"></a><span data-ttu-id="36d7e-164">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="36d7e-164">See Also</span></span>  
+ [<span data-ttu-id="36d7e-165">Gestion des bases de données BAM</span><span class="sxs-lookup"><span data-stu-id="36d7e-165">Managing BAM Databases</span></span>](../core/managing-bam-databases.md)

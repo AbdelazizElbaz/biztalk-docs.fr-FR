@@ -24,19 +24,19 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="hl7-2x-subfolders-and-events"></a>Les événements et les sous-dossiers 2.X HL7
-Les sous-sections suivantes répertorient les sous-dossiers créés par l’Assistant Installation pour chaque version de HL7 2.X et les événements au sein de chaque sous-dossier.  
+# <a name="hl7-2x-subfolders-and-events"></a><span data-ttu-id="a4a02-102">Les événements et les sous-dossiers 2.X HL7</span><span class="sxs-lookup"><span data-stu-id="a4a02-102">HL7 2.X Subfolders and Events</span></span>
+<span data-ttu-id="a4a02-103">Les sous-sections suivantes répertorient les sous-dossiers créés par l’Assistant Installation pour chaque version de HL7 2.X et les événements au sein de chaque sous-dossier.</span><span class="sxs-lookup"><span data-stu-id="a4a02-103">The following subsections list the subfolders created by the setup wizard for each version of HL7 2.X, and the events within each subfolder.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="a4a02-104">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="a4a02-104">In This Section</span></span>  
   
--   [HL7 2.1 dossiers et événements](../../adapters-and-accelerators/accelerator-hl7/hl7-2-1-folders-and-events.md)  
+-   [<span data-ttu-id="a4a02-105">HL7 2.1 dossiers et événements</span><span class="sxs-lookup"><span data-stu-id="a4a02-105">HL7 2.1 Folders and Events</span></span>](../../adapters-and-accelerators/accelerator-hl7/hl7-2-1-folders-and-events.md)  
   
--   [HL7 2.2 dossiers et les événements](../../adapters-and-accelerators/accelerator-hl7/hl7-2-2-folders-and-events.md)  
+-   [<span data-ttu-id="a4a02-106">HL7 2.2 dossiers et les événements</span><span class="sxs-lookup"><span data-stu-id="a4a02-106">HL7 2.2 Folders and Events</span></span>](../../adapters-and-accelerators/accelerator-hl7/hl7-2-2-folders-and-events.md)  
   
--   [HL7 2.3 dossiers et les événements](../../adapters-and-accelerators/accelerator-hl7/hl7-2-3-folders-and-events.md)  
+-   [<span data-ttu-id="a4a02-107">HL7 2.3 dossiers et les événements</span><span class="sxs-lookup"><span data-stu-id="a4a02-107">HL7 2.3 Folders and Events</span></span>](../../adapters-and-accelerators/accelerator-hl7/hl7-2-3-folders-and-events.md)  
   
--   [HL7 2.3.1 dossiers et des événements](../../adapters-and-accelerators/accelerator-hl7/hl7-2-3-1-folders-and-events.md)  
+-   [<span data-ttu-id="a4a02-108">HL7 2.3.1 dossiers et des événements</span><span class="sxs-lookup"><span data-stu-id="a4a02-108">HL7 2.3.1 Folders and Events</span></span>](../../adapters-and-accelerators/accelerator-hl7/hl7-2-3-1-folders-and-events.md)  
   
--   [HL7 2,4 dossiers et les événements](../../adapters-and-accelerators/accelerator-hl7/hl7-2-4-folders-and-events.md)  
+-   [<span data-ttu-id="a4a02-109">HL7 2,4 dossiers et les événements</span><span class="sxs-lookup"><span data-stu-id="a4a02-109">HL7 2.4 Folders and Events</span></span>](../../adapters-and-accelerators/accelerator-hl7/hl7-2-4-folders-and-events.md)  
   
--   [HL7 2,5 dossiers et les événements](../../adapters-and-accelerators/accelerator-hl7/hl7-2-5-folders-and-events.md)
+-   [<span data-ttu-id="a4a02-110">HL7 2,5 dossiers et les événements</span><span class="sxs-lookup"><span data-stu-id="a4a02-110">HL7 2.5 Folders and Events</span></span>](../../adapters-and-accelerators/accelerator-hl7/hl7-2-5-folders-and-events.md)

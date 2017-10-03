@@ -18,8 +18,8 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="interceptor-configuration-schema"></a>Schéma de configuration de l'intercepteur
-Cette section contient le schéma de configuration de l'intercepteur commun.  
+# <a name="interceptor-configuration-schema"></a><span data-ttu-id="53e44-102">Schéma de configuration de l'intercepteur</span><span class="sxs-lookup"><span data-stu-id="53e44-102">Interceptor Configuration Schema</span></span>
+<span data-ttu-id="53e44-103">Cette section contient le schéma de configuration de l'intercepteur commun.</span><span class="sxs-lookup"><span data-stu-id="53e44-103">This section contains the common interceptor configuration schema.</span></span>  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -199,7 +199,7 @@ Cette section contient le schéma de configuration de l'intercepteur commun.
 </xs:schema>  
 ```  
   
-## <a name="see-also"></a>Voir aussi  
- [Fichier de Configuration de l’intercepteur](../core/interceptor-configuration-file.md)   
- [Schéma Windows Workflow Foundation](../core/windows-workflow-foundation-schema.md)   
- [Schéma Windows Communication Foundation](../core/windows-communication-foundation-schema.md)
+## <a name="see-also"></a><span data-ttu-id="53e44-104">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="53e44-104">See Also</span></span>  
+ <span data-ttu-id="53e44-105">[Fichier de Configuration de l’intercepteur](../core/interceptor-configuration-file.md) </span><span class="sxs-lookup"><span data-stu-id="53e44-105">[Interceptor Configuration File](../core/interceptor-configuration-file.md) </span></span>  
+ <span data-ttu-id="53e44-106">[Schéma Windows Workflow Foundation](../core/windows-workflow-foundation-schema.md) </span><span class="sxs-lookup"><span data-stu-id="53e44-106">[Windows Workflow Foundation Schema](../core/windows-workflow-foundation-schema.md) </span></span>  
+ [<span data-ttu-id="53e44-107">Schéma Windows Communication Foundation</span><span class="sxs-lookup"><span data-stu-id="53e44-107">Windows Communication Foundation Schema</span></span>](../core/windows-communication-foundation-schema.md)

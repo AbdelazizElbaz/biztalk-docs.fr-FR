@@ -18,23 +18,23 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-manage-the-properties-window"></a>Gestion de la fenêtre Propriétés
-L'Éditeur BizTalk utilise la fenêtre Propriétés de Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] pour afficher les valeurs des propriétés associées à des nœuds de l'arborescence de schéma et fournit une interface permettant de modifier ces valeurs. Cette rubrique fournit des instructions étape par étape pour gérer certaines caractéristiques de la fenêtre Propriétés.  
+# <a name="how-to-manage-the-properties-window"></a><span data-ttu-id="3cf1f-102">Gestion de la fenêtre Propriétés</span><span class="sxs-lookup"><span data-stu-id="3cf1f-102">How to Manage the Properties Window</span></span>
+<span data-ttu-id="3cf1f-103">L'Éditeur BizTalk utilise la fenêtre Propriétés de Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] pour afficher les valeurs des propriétés associées à des nœuds de l'arborescence de schéma et fournit une interface permettant de modifier ces valeurs.</span><span class="sxs-lookup"><span data-stu-id="3cf1f-103">BizTalk Editor uses the Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window to display the values of the properties associated with nodes in the schema tree view, and provides an interface for changing those values.</span></span> <span data-ttu-id="3cf1f-104">Cette rubrique fournit des instructions étape par étape pour gérer certaines caractéristiques de la fenêtre Propriétés.</span><span class="sxs-lookup"><span data-stu-id="3cf1f-104">This topic provides step-by-step instructions for managing certain characteristics of the Properties window.</span></span>  
   
-### <a name="to-turn-property-descriptions-on-and-off"></a>Pour activer et désactiver les descriptions de propriété  
+### <a name="to-turn-property-descriptions-on-and-off"></a><span data-ttu-id="3cf1f-105">Pour activer et désactiver les descriptions de propriété</span><span class="sxs-lookup"><span data-stu-id="3cf1f-105">To turn property descriptions on and off</span></span>  
   
--   Dans la fenêtre Propriétés, cliquez sur n’importe quel nom de propriété, puis cliquez sur **Descriptions**.  
+-   <span data-ttu-id="3cf1f-106">Dans la fenêtre Propriétés, cliquez sur n’importe quel nom de propriété, puis cliquez sur **Descriptions**.</span><span class="sxs-lookup"><span data-stu-id="3cf1f-106">In the Properties window, right-click any property name, and then click **Descriptions**.</span></span>  
   
     > [!NOTE]
-    >  Servez-vous de cette procédure pour activer et désactiver l'affichage des propriétés.  
+    >  <span data-ttu-id="3cf1f-107">Servez-vous de cette procédure pour activer et désactiver l'affichage des propriétés.</span><span class="sxs-lookup"><span data-stu-id="3cf1f-107">Use this procedure to toggle the display of properties on and off.</span></span>  
   
-### <a name="to-arrange-properties-alphabetically-within-their-categories"></a>Pour organiser les propriétés dans l'ordre alphabétique dans leurs catégories  
+### <a name="to-arrange-properties-alphabetically-within-their-categories"></a><span data-ttu-id="3cf1f-108">Pour organiser les propriétés dans l'ordre alphabétique dans leurs catégories</span><span class="sxs-lookup"><span data-stu-id="3cf1f-108">To arrange properties alphabetically within their categories</span></span>  
   
--   Cliquez sur le **par catégorie** bouton de barre d’outils au-dessus de la liste de propriétés dans la fenêtre Propriétés.  
+-   <span data-ttu-id="3cf1f-109">Cliquez sur le **par catégorie** bouton de barre d’outils au-dessus de la liste de propriétés dans la fenêtre Propriétés.</span><span class="sxs-lookup"><span data-stu-id="3cf1f-109">Click the **Categorized** toolbar button above the list of properties in the Properties window.</span></span>  
   
-### <a name="to-arrange-properties-alphabetically-without-regard-to-their-categories"></a>Pour organiser les propriétés dans l'ordre alphabétique sans tenir compte de leurs catégories  
+### <a name="to-arrange-properties-alphabetically-without-regard-to-their-categories"></a><span data-ttu-id="3cf1f-110">Pour organiser les propriétés dans l'ordre alphabétique sans tenir compte de leurs catégories</span><span class="sxs-lookup"><span data-stu-id="3cf1f-110">To arrange properties alphabetically without regard to their categories</span></span>  
   
--   Cliquez sur le **alphabétique** bouton de barre d’outils au-dessus de la liste de propriétés dans la fenêtre Propriétés.  
+-   <span data-ttu-id="3cf1f-111">Cliquez sur le **alphabétique** bouton de barre d’outils au-dessus de la liste de propriétés dans la fenêtre Propriétés.</span><span class="sxs-lookup"><span data-stu-id="3cf1f-111">Click the **Alphabetic** toolbar button above the list of properties in the Properties window.</span></span>  
   
-## <a name="see-also"></a>Voir aussi  
- [À l’aide de l’Éditeur BizTalk](../core/using-biztalk-editor.md)
+## <a name="see-also"></a><span data-ttu-id="3cf1f-112">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="3cf1f-112">See Also</span></span>  
+ [<span data-ttu-id="3cf1f-113">À l’aide de l’Éditeur BizTalk</span><span class="sxs-lookup"><span data-stu-id="3cf1f-113">Using BizTalk Editor</span></span>](../core/using-biztalk-editor.md)

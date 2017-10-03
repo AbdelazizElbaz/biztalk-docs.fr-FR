@@ -18,19 +18,19 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="field-considerations"></a>Considérations relatives aux champs
-Il existe un certain nombre de considérations vous gardez à l’esprit lorsque vous travaillez avec **Fieldelement** et **attribut de champ** nœuds au sein de vos schémas. Il convient notamment d'observer des distinctions de base pour déterminer quand utiliser l'un ou l'autre de ces types de nœuds. Par ailleurs, des considérations plus spécifiques s'appliquent à la spécification de longueurs, de justification et de remplissage de champ. Cette section contient des informations sur ces points :  
+# <a name="field-considerations"></a><span data-ttu-id="44ec7-102">Considérations relatives aux champs</span><span class="sxs-lookup"><span data-stu-id="44ec7-102">Field Considerations</span></span>
+<span data-ttu-id="44ec7-103">Il existe un certain nombre de considérations vous gardez à l’esprit lorsque vous travaillez avec **Fieldelement** et **attribut de champ** nœuds au sein de vos schémas.</span><span class="sxs-lookup"><span data-stu-id="44ec7-103">There are a number of considerations that you should keep in mind when working with **Field Element** and **Field Attribute** nodes within your schemas.</span></span> <span data-ttu-id="44ec7-104">Il convient notamment d'observer des distinctions de base pour déterminer quand utiliser l'un ou l'autre de ces types de nœuds. Par ailleurs, des considérations plus spécifiques s'appliquent à la spécification de longueurs, de justification et de remplissage de champ.</span><span class="sxs-lookup"><span data-stu-id="44ec7-104">This includes the basic distinctions regarding when to use each of these nodes types, as well as more specific considerations related to the specification of field lengths, field justification, and field padding.</span></span> <span data-ttu-id="44ec7-105">Cette section contient des informations sur ces points :</span><span class="sxs-lookup"><span data-stu-id="44ec7-105">This section provides information about these considerations.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="44ec7-106">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="44ec7-106">In This Section</span></span>  
   
--   [Nœuds élément de champ vs. Nœuds attribut de champ](../core/field-element-nodes-vs-field-attribute-nodes.md)  
+-   [<span data-ttu-id="44ec7-107">Nœuds élément de champ vs. Nœuds attribut de champ</span><span class="sxs-lookup"><span data-stu-id="44ec7-107">Field Element Nodes vs. Field Attribute Nodes</span></span>](../core/field-element-nodes-vs-field-attribute-nodes.md)  
   
--   [Formats de Date et d’heure personnalisés](../core/custom-date-time-formats.md)  
+-   [<span data-ttu-id="44ec7-108">Formats de Date et d’heure personnalisés</span><span class="sxs-lookup"><span data-stu-id="44ec7-108">Custom Date-Time Formats</span></span>](../core/custom-date-time-formats.md)  
   
--   [Remplissage des champs](../core/field-padding.md)  
+-   [<span data-ttu-id="44ec7-109">Remplissage des champs</span><span class="sxs-lookup"><span data-stu-id="44ec7-109">Field Padding</span></span>](../core/field-padding.md)  
   
--   [Justification des champs](../core/field-justification.md)  
+-   [<span data-ttu-id="44ec7-110">Justification des champs</span><span class="sxs-lookup"><span data-stu-id="44ec7-110">Field Justification</span></span>](../core/field-justification.md)  
   
--   [Spécification des Positions de champ dans les enregistrements positionnels](../core/specification-of-field-positions-within-positional-records.md)  
+-   [<span data-ttu-id="44ec7-111">Spécification des Positions de champ dans les enregistrements positionnels</span><span class="sxs-lookup"><span data-stu-id="44ec7-111">Specification of Field Positions within Positional Records</span></span>](../core/specification-of-field-positions-within-positional-records.md)  
   
--   [Longueur minimale des champs dans les enregistrements délimités](../core/minimum-field-lengths-within-delimited-records.md)
+-   [<span data-ttu-id="44ec7-112">Longueur minimale des champs dans les enregistrements délimités</span><span class="sxs-lookup"><span data-stu-id="44ec7-112">Minimum Field Lengths Within Delimited Records</span></span>](../core/minimum-field-lengths-within-delimited-records.md)

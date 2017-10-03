@@ -18,19 +18,19 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="install-and-configure-fileact-and-interact-adapter-in-biztalk-server"></a>Installer et configurer FileAct et interagir adaptateur dans BizTalk Server
-Installer et configurer le [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)] pour SWIFT.  Consultez également certains messages d’exemples et les problèmes connus avec l’installation.
+# <a name="install-and-configure-fileact-and-interact-adapter-in-biztalk-server"></a><span data-ttu-id="3a1af-102">Installer et configurer FileAct et interagir adaptateur dans BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="3a1af-102">Install and configure FileAct and InterAct adapter in BizTalk Server</span></span>
+<span data-ttu-id="3a1af-103">Installer et configurer le [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)] pour SWIFT.</span><span class="sxs-lookup"><span data-stu-id="3a1af-103">Install and configure the [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)] for SWIFT.</span></span>  <span data-ttu-id="3a1af-104">Consultez également certains messages d’exemples et les problèmes connus avec l’installation.</span><span class="sxs-lookup"><span data-stu-id="3a1af-104">Also see some samples messages, and known issues with the installation.</span></span>
   
-## <a name="topics-in-this-section"></a>Rubriques de cette section
+## <a name="topics-in-this-section"></a><span data-ttu-id="3a1af-105">Rubriques de cette section</span><span class="sxs-lookup"><span data-stu-id="3a1af-105">Topics in this section</span></span>
 
-- [Installer l’adaptateur FileAct et InterAct](../../adapters-and-accelerators/fileact-interact/install-the-fileact-and-interact-adapter.md)  
+- [<span data-ttu-id="3a1af-106">Installer l’adaptateur FileAct et InterAct</span><span class="sxs-lookup"><span data-stu-id="3a1af-106">Install the FileAct and InterAct adapter</span></span>](../../adapters-and-accelerators/fileact-interact/install-the-fileact-and-interact-adapter.md)  
 
-- [Configurer l’adaptateur FileAct et InterAct](../../adapters-and-accelerators/fileact-interact/configure-the-fileact-and-interact-adapter.md)
+- [<span data-ttu-id="3a1af-107">Configurer l’adaptateur FileAct et InterAct</span><span class="sxs-lookup"><span data-stu-id="3a1af-107">Configure the FileAct and InterAct adapter</span></span>](../../adapters-and-accelerators/fileact-interact/configure-the-fileact-and-interact-adapter.md)
 
-- [Messages exemple interagir et FileAct](../../adapters-and-accelerators/fileact-interact/sample-interact-and-fileact-messages.md)
+- [<span data-ttu-id="3a1af-108">Messages exemple interagir et FileAct</span><span class="sxs-lookup"><span data-stu-id="3a1af-108">Sample InterAct and FileAct messages</span></span>](../../adapters-and-accelerators/fileact-interact/sample-interact-and-fileact-messages.md)
 
-- [Désinstaller ou réparer l’adaptateur FileAct et InterAct](../../adapters-and-accelerators/fileact-interact/uninstall-or-repair-the-fileact-and-interact-adapter.md)
+- [<span data-ttu-id="3a1af-109">Désinstaller ou réparer l’adaptateur FileAct et InterAct</span><span class="sxs-lookup"><span data-stu-id="3a1af-109">Uninstall or repair the FileAct and InterAct adapter</span></span>](../../adapters-and-accelerators/fileact-interact/uninstall-or-repair-the-fileact-and-interact-adapter.md)
 
-- [Lecture de l’installation des problèmes connus](../../adapters-and-accelerators/fileact-interact/read-the-installation-known-issues.md)
+- [<span data-ttu-id="3a1af-110">Lecture de l’installation des problèmes connus</span><span class="sxs-lookup"><span data-stu-id="3a1af-110">Read the installation known issues</span></span>](../../adapters-and-accelerators/fileact-interact/read-the-installation-known-issues.md)
 
   

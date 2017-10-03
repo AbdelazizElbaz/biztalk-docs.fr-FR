@@ -18,14 +18,14 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="configuring-edi-acknowledgments"></a>Configuration des accusés de réception EDI
-Les rubriques de cette section présentent l'activation de l'envoi et de la réception des accusés de réception EDI.  
+# <a name="configuring-edi-acknowledgments"></a><span data-ttu-id="2acdb-102">Configuration des accusés de réception EDI</span><span class="sxs-lookup"><span data-stu-id="2acdb-102">Configuring EDI Acknowledgments</span></span>
+<span data-ttu-id="2acdb-103">Les rubriques de cette section présentent l'activation de l'envoi et de la réception des accusés de réception EDI.</span><span class="sxs-lookup"><span data-stu-id="2acdb-103">The topics in this section describe how to enable sending and receiving of EDI acknowledgments.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="2acdb-104">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="2acdb-104">In This Section</span></span>  
   
--   [Configuration de l’envoi et la réception des accusés de réception EDI](../core/configuring-the-sending-and-receiving-of-edi-acknowledgments.md)  
+-   [<span data-ttu-id="2acdb-105">Configuration de l’envoi et la réception des accusés de réception EDI</span><span class="sxs-lookup"><span data-stu-id="2acdb-105">Configuring the Sending and Receiving of EDI Acknowledgments</span></span>](../core/configuring-the-sending-and-receiving-of-edi-acknowledgments.md)  
   
--   [Configuration de la réception des accusés de réception EDI](../core/configuring-the-receiving-of-edi-acknowledgments.md)  
+-   [<span data-ttu-id="2acdb-106">Configuration de la réception des accusés de réception EDI</span><span class="sxs-lookup"><span data-stu-id="2acdb-106">Configuring the Receiving of EDI Acknowledgments</span></span>](../core/configuring-the-receiving-of-edi-acknowledgments.md)  
   
-## <a name="see-also"></a>Voir aussi  
- [Développement et la configuration des Solutions EDI BizTalk Server](../core/developing-and-configuring-biztalk-server-edi-solutions.md)
+## <a name="see-also"></a><span data-ttu-id="2acdb-107">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="2acdb-107">See Also</span></span>  
+ [<span data-ttu-id="2acdb-108">Développement et la configuration des Solutions EDI BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="2acdb-108">Developing and Configuring BizTalk Server EDI Solutions</span></span>](../core/developing-and-configuring-biztalk-server-edi-solutions.md)

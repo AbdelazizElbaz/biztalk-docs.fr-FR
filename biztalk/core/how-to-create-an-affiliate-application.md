@@ -22,8 +22,8 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-create-an-affiliate-application"></a>Comment créer une Application associée
-Le composant logiciel enfichable MMC ou cette commande permet de créer une ou plusieurs applications, comme spécifié dans le fichier XML. Voici un exemple de fichier XML pour l'authentification unique initiée par Windows :  
+# <a name="how-to-create-an-affiliate-application"></a><span data-ttu-id="1b73b-102">Comment créer une Application associée</span><span class="sxs-lookup"><span data-stu-id="1b73b-102">How to Create an Affiliate Application</span></span>
+<span data-ttu-id="1b73b-103">Le composant logiciel enfichable MMC ou cette commande permet de créer une ou plusieurs applications, comme spécifié dans le fichier XML.</span><span class="sxs-lookup"><span data-stu-id="1b73b-103">You can use the MMC Snap-In or this command to create one or more applications, as specified by the XML file.</span></span> <span data-ttu-id="1b73b-104">Voici un exemple de fichier XML pour l'authentification unique initiée par Windows :</span><span class="sxs-lookup"><span data-stu-id="1b73b-104">An example XML file for Windows Initiated SSO is:</span></span>  
   
 ```  
 <sso>  
@@ -40,48 +40,48 @@ Le composant logiciel enfichable MMC ou cette commande permet de créer une ou p
   
 ```  
   
- Après avoir créé une application associée, il est impossible de modifier les propriétés suivantes :  
+ <span data-ttu-id="1b73b-105">Après avoir créé une application associée, il est impossible de modifier les propriétés suivantes :</span><span class="sxs-lookup"><span data-stu-id="1b73b-105">After you create an affiliate application, you cannot modify the following properties:</span></span>  
   
--   Nom de l’application associée  
+-   <span data-ttu-id="1b73b-106">Nom de l’application associée</span><span class="sxs-lookup"><span data-stu-id="1b73b-106">Name of the affiliate application</span></span>  
   
--   Champs liés à l'application associée  
+-   <span data-ttu-id="1b73b-107">Champs liés à l'application associée</span><span class="sxs-lookup"><span data-stu-id="1b73b-107">Fields associated with the affiliate application</span></span>  
   
--   Type de l'application associée (groupe d'hôtes, individuelle ou magasin de configuration)  
+-   <span data-ttu-id="1b73b-108">Type de l'application associée (groupe d'hôtes, individuelle ou magasin de configuration)</span><span class="sxs-lookup"><span data-stu-id="1b73b-108">Affiliate application type (host group, individual, or configuration store)</span></span>  
   
--   Compte d'administration identique au groupe des administrateurs d'applications associées (si vous spécifiez cet indicateur, le groupe Administrateurs associés sera toujours utilisé comme compte d'administrateurs pour cette application associée)  
-  
-> [!IMPORTANT]
->  Vous pouvez utiliser les comptes locaux pour le compte d'administration et le compte d'utilisateur en définissant l'indicateur allowLocalAccounts sur Oui. Vous devez toutefois sélectionner cet indicateur uniquement dans des scénarios impliquant un seul ordinateur.  
+-   <span data-ttu-id="1b73b-109">Compte d'administration identique au groupe des administrateurs d'applications associées</span><span class="sxs-lookup"><span data-stu-id="1b73b-109">Administration account same as affiliate administrators group.</span></span> <span data-ttu-id="1b73b-110">(si vous spécifiez cet indicateur, le groupe Administrateurs associés sera toujours utilisé comme compte d'administrateurs pour cette application associée)</span><span class="sxs-lookup"><span data-stu-id="1b73b-110">(Specifying this flag will always use the affiliate administrators group as the administrator account for this affiliate application)</span></span>  
   
 > [!IMPORTANT]
->  Pour effectuer cette tâche, vous devez être un administrateur SSO ou un administrateur d'applications associées à SSO.  
+>  <span data-ttu-id="1b73b-111">Vous pouvez utiliser les comptes locaux pour le compte d'administration et le compte d'utilisateur en définissant l'indicateur allowLocalAccounts sur Oui.</span><span class="sxs-lookup"><span data-stu-id="1b73b-111">You can use local accounts for the administration account and user account by setting the allowLocalAccounts flag to yes.</span></span> <span data-ttu-id="1b73b-112">Vous devez toutefois sélectionner cet indicateur uniquement dans des scénarios impliquant un seul ordinateur.</span><span class="sxs-lookup"><span data-stu-id="1b73b-112">However, you should only use this flag in single-computer scenarios.</span></span>  
   
- Après avoir créé l'application associée, vous devez l'activer. Pour plus d’informations, consultez [comment activer une Application associée](../core/how-to-enable-an-affiliate-application.md).  
+> [!IMPORTANT]
+>  <span data-ttu-id="1b73b-113">Pour effectuer cette tâche, vous devez être un administrateur SSO ou un administrateur d'applications associées à SSO.</span><span class="sxs-lookup"><span data-stu-id="1b73b-113">You must be an SSO administrator or SSO affiliate administrator to perform this task.</span></span>  
   
-### <a name="to-create-an-affiliate-application-using-the-mmc-snap-in"></a>Pour créer une application associée à l'aide du composant logiciel enfichable MMC  
+ <span data-ttu-id="1b73b-114">Après avoir créé l'application associée, vous devez l'activer.</span><span class="sxs-lookup"><span data-stu-id="1b73b-114">After you create the affiliate application, you must enable it.</span></span> <span data-ttu-id="1b73b-115">Pour plus d’informations, consultez [comment activer une Application associée](../core/how-to-enable-an-affiliate-application.md).</span><span class="sxs-lookup"><span data-stu-id="1b73b-115">For more information, see [How to Enable an Affiliate Application](../core/how-to-enable-an-affiliate-application.md).</span></span>  
   
-1.  Sur le **Démarrer** menu, cliquez sur **programmes**, cliquez sur **Microsoft Enterprise Single Sign-On**, puis cliquez sur **Administration SSO**.  
+### <a name="to-create-an-affiliate-application-using-the-mmc-snap-in"></a><span data-ttu-id="1b73b-116">Pour créer une application associée à l'aide du composant logiciel enfichable MMC</span><span class="sxs-lookup"><span data-stu-id="1b73b-116">To create an affiliate application using the MMC Snap-In</span></span>  
   
-2.  Dans le volet d'étendue du composant logiciel enfichable MMC ENTSSO, développez le nœud **Authentification unique de l'entreprise** .  
+1.  <span data-ttu-id="1b73b-117">Sur le **Démarrer** menu, cliquez sur **programmes**, cliquez sur **Microsoft Enterprise Single Sign-On**, puis cliquez sur **Administration SSO**.</span><span class="sxs-lookup"><span data-stu-id="1b73b-117">On the **Start** menu, click **Programs**, click **Microsoft Enterprise Single Sign-On**, and then click **SSO Administration**.</span></span>  
   
-3.  Avec le bouton droit **Applications associées**, puis cliquez sur **créer une Application**.  
+2.  <span data-ttu-id="1b73b-118">Dans le volet d'étendue du composant logiciel enfichable MMC ENTSSO, développez le nœud **Authentification unique de l'entreprise** .</span><span class="sxs-lookup"><span data-stu-id="1b73b-118">In the scope pane of the ENTSSO MMC Snap-In, expand the **Enterprise Single Sign-On** node.</span></span>  
   
-4.  Suivez les instructions de la **unique Sign-On Assistant Application d’entreprise**.  
+3.  <span data-ttu-id="1b73b-119">Avec le bouton droit **Applications associées**, puis cliquez sur **créer une Application**.</span><span class="sxs-lookup"><span data-stu-id="1b73b-119">Right-click **Affiliate Applications**, and then click **Create Application**.</span></span>  
   
-### <a name="to-create-an-affiliate-application-using-the-command-line"></a>Pour créer une application associée à l'aide de la ligne de commande  
+4.  <span data-ttu-id="1b73b-120">Suivez les instructions de la **unique Sign-On Assistant Application d’entreprise**.</span><span class="sxs-lookup"><span data-stu-id="1b73b-120">Follow the instructions in the **Enterprise Single Sign-On Application Wizard**.</span></span>  
   
-1.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
+### <a name="to-create-an-affiliate-application-using-the-command-line"></a><span data-ttu-id="1b73b-121">Pour créer une application associée à l'aide de la ligne de commande</span><span class="sxs-lookup"><span data-stu-id="1b73b-121">To create an affiliate application using the command line</span></span>  
   
-2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur >*: \Program Files\Enterprise Single Sign-On.  
+1.  <span data-ttu-id="1b73b-122">Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.</span><span class="sxs-lookup"><span data-stu-id="1b73b-122">On the **Start** menu, click **run**, and then type **cmd**.</span></span>  
   
-3.  Type **ssomanage – createapps  *\<nom de fichier d’application >***, où  *\<nom de fichier d’application >* est le fichier XML.  
+2.  <span data-ttu-id="1b73b-123">Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise.</span><span class="sxs-lookup"><span data-stu-id="1b73b-123">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="1b73b-124">Le répertoire d’installation par défaut est  *\<lecteur >*: \Program Files\Enterprise Single Sign-On.</span><span class="sxs-lookup"><span data-stu-id="1b73b-124">The default installation directory is *\<drive>*:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
+  
+3.  <span data-ttu-id="1b73b-125">Type **ssomanage – createapps  *\<nom de fichier d’application >***, où  *\<nom de fichier d’application >* est le fichier XML.</span><span class="sxs-lookup"><span data-stu-id="1b73b-125">Type **ssomanage –createapps *\<application file name>***, where *\<application file name>* is the XML file.</span></span>  
   
     > [!NOTE]
-    >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
+    >  <span data-ttu-id="1b73b-126">Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.</span><span class="sxs-lookup"><span data-stu-id="1b73b-126">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
   
-## <a name="see-also"></a>Voir aussi  
- [Applications associées SSO](../core/sso-affiliate-applications.md)   
- [Comment activer une Application associée](../core/how-to-enable-an-affiliate-application.md)   
- [Comment supprimer une Application associée](../core/how-to-delete-an-affiliate-application.md)   
- [Gestion des mappages utilisateur](../core/managing-user-mappings.md)   
- [Gestion des Applications associées](../core/managing-affiliate-applications.md)
+## <a name="see-also"></a><span data-ttu-id="1b73b-127">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="1b73b-127">See Also</span></span>  
+ <span data-ttu-id="1b73b-128">[Applications associées SSO](../core/sso-affiliate-applications.md) </span><span class="sxs-lookup"><span data-stu-id="1b73b-128">[SSO Affiliate Applications](../core/sso-affiliate-applications.md) </span></span>  
+ <span data-ttu-id="1b73b-129">[Comment activer une Application associée](../core/how-to-enable-an-affiliate-application.md) </span><span class="sxs-lookup"><span data-stu-id="1b73b-129">[How to Enable an Affiliate Application](../core/how-to-enable-an-affiliate-application.md) </span></span>  
+ <span data-ttu-id="1b73b-130">[Comment supprimer une Application associée](../core/how-to-delete-an-affiliate-application.md) </span><span class="sxs-lookup"><span data-stu-id="1b73b-130">[How to Delete an Affiliate Application](../core/how-to-delete-an-affiliate-application.md) </span></span>  
+ <span data-ttu-id="1b73b-131">[Gestion des mappages utilisateur](../core/managing-user-mappings.md) </span><span class="sxs-lookup"><span data-stu-id="1b73b-131">[Managing User Mappings](../core/managing-user-mappings.md) </span></span>  
+ [<span data-ttu-id="1b73b-132">Gestion des Applications associées</span><span class="sxs-lookup"><span data-stu-id="1b73b-132">Managing Affiliate Applications</span></span>](../core/managing-affiliate-applications.md)

@@ -18,11 +18,11 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="creating-a-single-sign-on-application"></a>Création d’une Application de l’authentification unique
-Cette section fournit des informations concernant la technologie d'authentification unique de l'entreprise.  
+# <a name="creating-a-single-sign-on-application"></a><span data-ttu-id="89b73-102">Création d’une Application de l’authentification unique</span><span class="sxs-lookup"><span data-stu-id="89b73-102">Creating a Single Sign-On Application</span></span>
+<span data-ttu-id="89b73-103">Cette section fournit des informations concernant la technologie d'authentification unique de l'entreprise.</span><span class="sxs-lookup"><span data-stu-id="89b73-103">This section provides information about Enterprise Single Sign-On (SSO) technology.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="89b73-104">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="89b73-104">In This Section</span></span>  
   
--   [Présentation de l’authentification unique de programmation](../core/programming-single-sign-on-overview.md)  
+-   [<span data-ttu-id="89b73-105">Présentation de l’authentification unique de programmation</span><span class="sxs-lookup"><span data-stu-id="89b73-105">Programming Single Sign-On Overview</span></span>](../core/programming-single-sign-on-overview.md)  
   
--   [Programmation avec Enterprise Single Sign-On](../core/programming-with-enterprise-single-sign-on.md)
+-   [<span data-ttu-id="89b73-106">Programmation avec Enterprise Single Sign-On</span><span class="sxs-lookup"><span data-stu-id="89b73-106">Programming with Enterprise Single Sign-On</span></span>](../core/programming-with-enterprise-single-sign-on.md)

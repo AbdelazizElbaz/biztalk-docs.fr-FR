@@ -18,15 +18,15 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error--testmap-used-the-following-file-ltfile---0gt-as-input-to-the-map"></a>Erreur - TestMap a utilisé le fichier suivant : &lt;file:---{0}&gt; en tant qu’entrée à la carte.
-**Code d’erreur**  
+# <a name="error--testmap-used-the-following-file-ltfile---0gt-as-input-to-the-map"></a><span data-ttu-id="5ca80-103">Erreur - TestMap a utilisé le fichier suivant : &lt;file:---{0}&gt; en tant qu’entrée à la carte.</span><span class="sxs-lookup"><span data-stu-id="5ca80-103">Error- TestMap used the following file: &lt;file:---{0}&gt; as input to the map.</span></span>
+<span data-ttu-id="5ca80-104">**Code d’erreur**</span><span class="sxs-lookup"><span data-stu-id="5ca80-104">**Error Code**</span></span>  
   
- btm1079  
+ <span data-ttu-id="5ca80-105">btm1079</span><span class="sxs-lookup"><span data-stu-id="5ca80-105">btm1079</span></span>  
   
- **Explication**  
+ <span data-ttu-id="5ca80-106">**Explication**</span><span class="sxs-lookup"><span data-stu-id="5ca80-106">**Explanation**</span></span>  
   
- Il s'agit simplement d'un message d'information. Cliquez sur le lien pour afficher le fichier utilisé comme entrée pour l'opération Tester le mappage.  
+ <span data-ttu-id="5ca80-107">Il s'agit simplement d'un message d'information.</span><span class="sxs-lookup"><span data-stu-id="5ca80-107">This is just an information message.</span></span> <span data-ttu-id="5ca80-108">Cliquez sur le lien pour afficher le fichier utilisé comme entrée pour l'opération Tester le mappage.</span><span class="sxs-lookup"><span data-stu-id="5ca80-108">Click on the link to view the file being used as input for test map operation.</span></span>  
   
- **Action de l’utilisateur**  
+ <span data-ttu-id="5ca80-109">**Action de l’utilisateur**</span><span class="sxs-lookup"><span data-stu-id="5ca80-109">**User Action**</span></span>  
   
- Aucune
+ <span data-ttu-id="5ca80-110">Aucune</span><span class="sxs-lookup"><span data-stu-id="5ca80-110">None</span></span>

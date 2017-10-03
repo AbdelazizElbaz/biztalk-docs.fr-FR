@@ -19,122 +19,122 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="configure-a-port-using-the-wcf-custom-adapter-and-sql-adapter"></a>Configurer un port à l’aide de l’adaptateur WCF-custom et l’adaptateur SQL
-Étapes de configuration d’envoi WCF-Custom et de ports de réception pour effectuer des opérations de trafic entrantes et sortantes sur SQL Server à l’aide du [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].  
+# <a name="configure-a-port-using-the-wcf-custom-adapter-and-sql-adapter"></a><span data-ttu-id="8d40b-103">Configurer un port à l’aide de l’adaptateur WCF-custom et l’adaptateur SQL</span><span class="sxs-lookup"><span data-stu-id="8d40b-103">Configure a port using the WCF-custom adapter and SQL adapter</span></span>
+<span data-ttu-id="8d40b-104">Étapes de configuration d’envoi WCF-Custom et de ports de réception pour effectuer des opérations de trafic entrantes et sortantes sur SQL Server à l’aide du [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span><span class="sxs-lookup"><span data-stu-id="8d40b-104">Steps to configure WCF-Custom send and receive ports to perform outbound and inbound operations on SQL Server using the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span>  
   
-## <a name="prerequisites"></a>Conditions préalables  
-Connectez-vous avec un compte qui est membre de la [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] groupe Administrateurs ou opérateurs BizTalk. Pour plus d’informations sur les autorisations, consultez [autorisations requises pour déployer et gérer une Application BizTalk](../../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md), et [de sécurité minimales ](https://social.technet.microsoft.com/wiki/contents/articles/24590.minimum-security-rights-for-biztalk-server-2006-to-2016.aspx). 
+## <a name="prerequisites"></a><span data-ttu-id="8d40b-105">Conditions préalables</span><span class="sxs-lookup"><span data-stu-id="8d40b-105">Prerequisites</span></span>  
+<span data-ttu-id="8d40b-106">Connectez-vous avec un compte qui est membre de la [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] groupe Administrateurs ou opérateurs BizTalk.</span><span class="sxs-lookup"><span data-stu-id="8d40b-106">Sign in with an account that is a member of the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administrators or BizTalk Operators group.</span></span> <span data-ttu-id="8d40b-107">Pour plus d’informations sur les autorisations, consultez [autorisations requises pour déployer et gérer une Application BizTalk](../../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md), et [de sécurité minimales ](https://social.technet.microsoft.com/wiki/contents/articles/24590.minimum-security-rights-for-biztalk-server-2006-to-2016.aspx).</span><span class="sxs-lookup"><span data-stu-id="8d40b-107">For more detailed information about permissions, see [Permissions Required for Deploying and Managing a BizTalk Application](../../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md), and [Minimum Security Rights ](https://social.technet.microsoft.com/wiki/contents/articles/24590.minimum-security-rights-for-biztalk-server-2006-to-2016.aspx).</span></span> 
   
-## <a name="deploy-adapters-to-send-messages-to-sql-server"></a>Déployer des adaptateurs pour envoyer des messages à SQL Server  
- Procédez comme suit pour configurer un port d’envoi WCF-Custom pour envoyer des messages à l’aide de SQL Server le [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] console d’Administration.    
+## <a name="deploy-adapters-to-send-messages-to-sql-server"></a><span data-ttu-id="8d40b-108">Déployer des adaptateurs pour envoyer des messages à SQL Server</span><span class="sxs-lookup"><span data-stu-id="8d40b-108">Deploy adapters to send messages to SQL Server</span></span>  
+ <span data-ttu-id="8d40b-109">Procédez comme suit pour configurer un port d’envoi WCF-Custom pour envoyer des messages à l’aide de SQL Server le [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] console d’Administration.</span><span class="sxs-lookup"><span data-stu-id="8d40b-109">Perform the following steps to configure a WCF-Custom send port for sending messages to SQL Server using the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>    
  
-1.  Démarrer le [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] console d’Administration.  
+1.  <span data-ttu-id="8d40b-110">Démarrer le [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] console d’Administration.</span><span class="sxs-lookup"><span data-stu-id="8d40b-110">Start the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>  
   
-2.  Dans l’arborescence de la console, développez **groupe BizTalk**, puis développez **Applications**.  
+2.  <span data-ttu-id="8d40b-111">Dans l’arborescence de la console, développez **groupe BizTalk**, puis développez **Applications**.</span><span class="sxs-lookup"><span data-stu-id="8d40b-111">In the console tree, expand **BizTalk Group**, and then expand **Applications**.</span></span>  
   
-3.  Développez l’application sous lequel vous souhaitez déployer le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].  
+3.  <span data-ttu-id="8d40b-112">Développez l’application sous lequel vous souhaitez déployer le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span><span class="sxs-lookup"><span data-stu-id="8d40b-112">Expand the application under which you want to deploy the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span>  
   
-4.  Avec le bouton droit **Ports d’envoi**, pointez sur **nouveau**, puis pointez sur le type de port que vous souhaitez configurer en fonction du mode de communication entre [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] et SQL Server.  
+4.  <span data-ttu-id="8d40b-113">Avec le bouton droit **Ports d’envoi**, pointez sur **nouveau**, puis pointez sur le type de port que vous souhaitez configurer en fonction du mode de communication entre [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] et SQL Server.</span><span class="sxs-lookup"><span data-stu-id="8d40b-113">Right-click **Send Ports**, point to **New**, and then point to the type of port you want to configure depending on the mode of communication between [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] and SQL Server.</span></span>  
   
-5.  Dans le **propriétés de Port d’envoi** boîte de dialogue le **général** , tapez un nom pour le port d’envoi.  
+5.  <span data-ttu-id="8d40b-114">Dans le **propriétés de Port d’envoi** boîte de dialogue le **général** , tapez un nom pour le port d’envoi.</span><span class="sxs-lookup"><span data-stu-id="8d40b-114">In the **Send Port Properties** dialog box, on the **General** tab, type a name for the send port.</span></span>  
   
-6.  À partir de la **Type** la liste déroulante, sélectionnez **WCF-Custom**, puis cliquez sur **configurer**.  
+6.  <span data-ttu-id="8d40b-115">À partir de la **Type** la liste déroulante, sélectionnez **WCF-Custom**, puis cliquez sur **configurer**.</span><span class="sxs-lookup"><span data-stu-id="8d40b-115">From the **Type** drop-down list, select **WCF-Custom**, and then click **Configure**.</span></span>  
   
-7.  Dans le **propriétés du Transport WCF-Custom** boîte de dialogue zone, procédez comme suit :  
+7.  <span data-ttu-id="8d40b-116">Dans le **propriétés du Transport WCF-Custom** boîte de dialogue zone, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="8d40b-116">In the **WCF-Custom Transport Properties** dialog box, do the following:</span></span>  
   
-    1.  Cliquez sur le **général** onglet et dans le **adresse (URI)** champ, spécifiez l’URI de connexion pour SQL Server. Pour plus d’informations sur l’URI de connexion, consultez [créer l’URI de connexion SQL Server](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md).  
+    1.  <span data-ttu-id="8d40b-117">Cliquez sur le **général** onglet et dans le **adresse (URI)** champ, spécifiez l’URI de connexion pour SQL Server.</span><span class="sxs-lookup"><span data-stu-id="8d40b-117">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI for SQL Server.</span></span> <span data-ttu-id="8d40b-118">Pour plus d’informations sur l’URI de connexion, consultez [créer l’URI de connexion SQL Server](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md).</span><span class="sxs-lookup"><span data-stu-id="8d40b-118">For more information about the connection URI, see [Create the SQL Server connection URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md).</span></span>  
   
-    2.  Sur le **général** sous l’onglet du **Action** texte, tapez l’action pour l’opération. Consultez [Messages et des schémas de message](messages-and-message-schemas-for-biztalk-adapter-for-sql-server.md) pour obtenir la liste des actions pour chaque opération. Par exemple, l’action à appeler l’opération d’insertion sur une table dans une base de données SQL Server est :  
+    2.  <span data-ttu-id="8d40b-119">Sur le **général** sous l’onglet du **Action** texte, tapez l’action pour l’opération.</span><span class="sxs-lookup"><span data-stu-id="8d40b-119">On the **General** tab, in the **Action** text box, type the action for the operation.</span></span> <span data-ttu-id="8d40b-120">Consultez [Messages et des schémas de message](messages-and-message-schemas-for-biztalk-adapter-for-sql-server.md) pour obtenir la liste des actions pour chaque opération.</span><span class="sxs-lookup"><span data-stu-id="8d40b-120">See [Messages and message schemas](messages-and-message-schemas-for-biztalk-adapter-for-sql-server.md) for a list of actions for each operation.</span></span> <span data-ttu-id="8d40b-121">Par exemple, l’action à appeler l’opération d’insertion sur une table dans une base de données SQL Server est :</span><span class="sxs-lookup"><span data-stu-id="8d40b-121">For example, the action to invoke the Insert operation on a table in a SQL Server database is:</span></span>  
   
         ```  
         TableOp/Insert/dbo/Employee  
         ```  
   
         > [!NOTE]
-        >  Employé est le nom d’une table de base de données SQL Server.  
+        >  <span data-ttu-id="8d40b-122">Employé est le nom d’une table de base de données SQL Server.</span><span class="sxs-lookup"><span data-stu-id="8d40b-122">Employee is the name of a table in SQL Server database.</span></span>  
   
-    3.  Cliquez sur le **liaison** onglet et à partir de la **Type de liaison** liste, sélectionnez **sqlBinding**. Vous pouvez spécifier les propriétés de liaison différentes exposées par le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]. Pour plus d’informations sur les propriétés de liaison, consultez [en savoir plus sur l’adaptateur BizTalk pour les propriétés de liaison de l’adaptateur SQL Server](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md).  
+    3.  <span data-ttu-id="8d40b-123">Cliquez sur le **liaison** onglet et à partir de la **Type de liaison** liste, sélectionnez **sqlBinding**.</span><span class="sxs-lookup"><span data-stu-id="8d40b-123">Click the **Binding** tab, and from the **Binding Type** list, select **sqlBinding**.</span></span> <span data-ttu-id="8d40b-124">Vous pouvez spécifier les propriétés de liaison différentes exposées par le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span><span class="sxs-lookup"><span data-stu-id="8d40b-124">You can specify the different binding properties exposed by the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span> <span data-ttu-id="8d40b-125">Pour plus d’informations sur les propriétés de liaison, consultez [en savoir plus sur l’adaptateur BizTalk pour les propriétés de liaison de l’adaptateur SQL Server](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md).</span><span class="sxs-lookup"><span data-stu-id="8d40b-125">For more information about binding properties, see [Read about the BizTalk Adapter for SQL Server adapter binding properties](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md).</span></span>  
   
-    4.  Cliquez sur le **informations d’identification** onglet, puis effectuez l’une des opérations suivantes :  
+    4.  <span data-ttu-id="8d40b-126">Cliquez sur le **informations d’identification** onglet, puis effectuez l’une des opérations suivantes :</span><span class="sxs-lookup"><span data-stu-id="8d40b-126">Click the **Credentials** tab, and then do one of the following:</span></span>  
   
-        -   Sélectionnez le **n’utilisez pas l’authentification unique sur** option et spécifiez le nom d’utilisateur et mot de passe pour se connecter à SQL Server. Notez que le nom d’utilisateur et le mot de passe respectent la casse.  
-  
-            > [!NOTE]
-            >  Si vous souhaitez vous connecter à SQL Server à l’aide de l’authentification Windows, spécifiez un nom d’utilisateur vide et un mot de passe. Avant cela, l’utilisateur Windows avec lequel vous êtes connecté doit être ajouté à SQL Server, comme décrit dans [se connecter à SQL Server à l’aide de l’authentification Windows avec l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-using-windows-authentication-with-the-sql-adapter.md).  
-  
-        -   Sélectionnez le **utilisez Single Sign-On** option et spécifiez une Enterprise Single Sign-on (SSO de) l’application associée.  
-  
-             Pour plus d’informations sur la sécurité par rapport à BizTalk Server, consultez [sécurité avec l’adaptateur SQL et BizTalk Server](../../adapters-and-accelerators/adapter-sql/security-with-the-sql-adapter-and-biztalk-server.md).  
-  
-    5.  Pour revenir à la **propriétés de Port d’envoi** boîte de dialogue, cliquez sur **OK**.  
-  
-8.  À partir de la **Gestionnaire d’envoi** liste, sélectionnez **BizTalkServerApplication**.  
-  
-9. Si vous avez choisi **Port d’envoi unidirectionnel statique** à l’étape 4, spécifiez un pipeline d’envoi. À partir de la **pipeline d’envoi** , sélectionnez le pipeline qui correspond à XMLTransmit.  
-  
-10. Si vous avez choisi **Port statique avec sollicitation-réponse** à l’étape 4, spécifiez l’envoi et les pipelines de réception.  
-  
-    1.  À partir de la **pipeline d’envoi** liste déroulante, sélectionnez le pipeline qui correspond à XMLTransmit.  
-  
-    2.  À partir de la **pipeline de réception** liste déroulante, sélectionnez le pipeline qui correspond à XMLReceive.  
-  
-11. Cliquez sur **OK**.  
-  
-## <a name="deploy-adapters-to-receive-messages-from-sql-server"></a>Déployer des adaptateurs pour recevoir des messages à partir de SQL Server
- Effectuez les tâches suivantes étapes de configuration WCF-Custom port de réception pour recevoir des messages à partir de SQL Server à l’aide de la [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] console d’Administration.  
-  
-1.  Démarrer le [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] console d’Administration.  
-  
-2.  Dans l’arborescence de la console, développez **groupe BizTalk**, puis développez **Applications**.  
-  
-3.  Développez l’application sous lequel vous souhaitez déployer le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].  
-  
-4.  Avec le bouton droit **Ports de réception**, pointez sur **nouveau**, puis cliquez sur **Port de réception unidirectionnel** ou **Receive Port requête-réponse**, en fonction de la mode de communication entre [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] et SQL Server.  
-  
-5.  Dans le **propriétés du Port de réception** boîte de dialogue le **général** , tapez un nom pour le port de réception.  
-  
-6.  Sur le **emplacements de réception** , cliquez sur **nouveau**. Le **propriétés de l’emplacement de réception** boîte de dialogue s’affiche.  
-  
-7.  Dans le **propriétés de l’emplacement de réception** boîte de dialogue zone, procédez comme suit :  
-  
-    1.  Spécifiez un nom pour l’emplacement de réception.  
-  
-    2.  À partir de la **Type** la liste déroulante, sélectionnez **WCF-Custom**, puis cliquez sur **configurer**.  
-  
-8.  Dans le **propriétés du Transport WCF-Custom** boîte de dialogue zone, procédez comme suit :  
-  
-    1.  Cliquez sur le **général** onglet et dans le **adresse (URI)** champ, spécifiez l’URI de connexion pour SQL Server. Pour plus d’informations sur l’URI de connexion, consultez [créer l’URI de connexion SQL Server](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md).  
-  
-    2.  Cliquez sur le **liaison** onglet et à partir de la **Type de liaison** la liste déroulante, sélectionnez **sqlBinding**. Vous pouvez spécifier les propriétés de liaison différentes exposées par le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]. Pour plus d’informations sur les propriétés de liaison, consultez [en savoir plus sur l’adaptateur BizTalk pour les propriétés de liaison de l’adaptateur SQL Server](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md).  
-  
-    3.  Cliquez sur le **comportement** onglet pour définir le niveau d’isolation de transaction. Pour plus d’informations sur la définition du niveau d’isolation de transaction, consultez [configurer Transaction Isolation Level et délai de Transaction SQL](../../adapters-and-accelerators/adapter-sql/configure-transaction-isolation-level-and-transaction-timeout-with-sql.md).  
-  
-    4.  Cliquez sur le **autres** onglet, puis effectuez l’une des opérations suivantes :  
-  
-        -   Sélectionnez **compte d’utilisateur**et spécifiez le nom d’utilisateur et un mot de passe pour se connecter à SQL Server. Notez que le nom d’utilisateur et le mot de passe respectent la casse.  
+        -   <span data-ttu-id="8d40b-127">Sélectionnez le **n’utilisez pas l’authentification unique sur** option et spécifiez le nom d’utilisateur et mot de passe pour se connecter à SQL Server.</span><span class="sxs-lookup"><span data-stu-id="8d40b-127">Select the **Do not use Single Sign-On** option, and the specify the user name and password to connect to SQL Server.</span></span> <span data-ttu-id="8d40b-128">Notez que le nom d’utilisateur et le mot de passe respectent la casse.</span><span class="sxs-lookup"><span data-stu-id="8d40b-128">Note that the user name and password are case-sensitive.</span></span>  
   
             > [!NOTE]
-            >  Si vous souhaitez vous connecter à SQL Server à l’aide de l’authentification Windows, spécifiez un nom d’utilisateur vide et un mot de passe. Avant cela, l’utilisateur Windows avec lequel vous êtes connecté doit être ajouté à SQL Server, comme décrit dans [se connecter à SQL Server à l’aide de l’authentification Windows avec l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-using-windows-authentication-with-the-sql-adapter.md).  
+            >  <span data-ttu-id="8d40b-129">Si vous souhaitez vous connecter à SQL Server à l’aide de l’authentification Windows, spécifiez un nom d’utilisateur vide et un mot de passe.</span><span class="sxs-lookup"><span data-stu-id="8d40b-129">If you want to connect to SQL Server using Windows authentication, specify a blank user name and password.</span></span> <span data-ttu-id="8d40b-130">Avant cela, l’utilisateur Windows avec lequel vous êtes connecté doit être ajouté à SQL Server, comme décrit dans [se connecter à SQL Server à l’aide de l’authentification Windows avec l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-using-windows-authentication-with-the-sql-adapter.md).</span><span class="sxs-lookup"><span data-stu-id="8d40b-130">Before you do this, the Windows user with which you are logged in must be added to SQL Server as described in [Connect to SQL Server using Windows Authentication with the SQL adapter](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-using-windows-authentication-with-the-sql-adapter.md).</span></span>  
   
-        -   Sélectionnez **obtenir les informations d’identification d’applications associées à l’application** option et spécifiez une application d’authentification unique associée.  
+        -   <span data-ttu-id="8d40b-131">Sélectionnez le **utilisez Single Sign-On** option et spécifiez une Enterprise Single Sign-on (SSO de) l’application associée.</span><span class="sxs-lookup"><span data-stu-id="8d40b-131">Select the **Use Single Sign-On** option, and then specify an affiliate Enterprise Single Sign-on (SSO) application.</span></span>  
   
-             Pour plus d’informations sur la sécurité au niveau [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], consultez [sécurité avec l’adaptateur SQL et BizTalk Server](../../adapters-and-accelerators/adapter-sql/security-with-the-sql-adapter-and-biztalk-server.md).  
+             <span data-ttu-id="8d40b-132">Pour plus d’informations sur la sécurité par rapport à BizTalk Server, consultez [sécurité avec l’adaptateur SQL et BizTalk Server](../../adapters-and-accelerators/adapter-sql/security-with-the-sql-adapter-and-biztalk-server.md).</span><span class="sxs-lookup"><span data-stu-id="8d40b-132">For more information about security with respect to BizTalk Server, see [Security with the SQL adapter and BizTalk Server](../../adapters-and-accelerators/adapter-sql/security-with-the-sql-adapter-and-biztalk-server.md).</span></span>  
   
-    5.  Pour revenir à la **propriétés de l’emplacement de réception** boîte de dialogue, cliquez sur **OK**.  
+    5.  <span data-ttu-id="8d40b-133">Pour revenir à la **propriétés de Port d’envoi** boîte de dialogue, cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="8d40b-133">To return to the **Send Port Properties** dialog box, click **OK**.</span></span>  
   
-9. À partir de la **Gestionnaire de réception** la liste déroulante, sélectionnez **BizTalkServerApplication**.  
+8.  <span data-ttu-id="8d40b-134">À partir de la **Gestionnaire d’envoi** liste, sélectionnez **BizTalkServerApplication**.</span><span class="sxs-lookup"><span data-stu-id="8d40b-134">From the **Send handler** list, select **BizTalkServerApplication**.</span></span>  
   
-10. Si vous avez choisi **Port de réception unidirectionnel** à l’étape 4, spécifiez un pipeline de réception. À partir de la **pipeline de réception** , sélectionnez le pipeline XMLReceive correspondant.  
+9. <span data-ttu-id="8d40b-135">Si vous avez choisi **Port d’envoi unidirectionnel statique** à l’étape 4, spécifiez un pipeline d’envoi.</span><span class="sxs-lookup"><span data-stu-id="8d40b-135">If you chose **Static One-Way Send Port** in step 4, specify a send pipeline.</span></span> <span data-ttu-id="8d40b-136">À partir de la **pipeline d’envoi** , sélectionnez le pipeline qui correspond à XMLTransmit.</span><span class="sxs-lookup"><span data-stu-id="8d40b-136">From the **Send pipeline** list, select the pipeline that corresponds to XMLTransmit.</span></span>  
   
-11. Si vous avez choisi **Receive Port requête-réponse** à l’étape 4, spécifiez l’envoi et les pipelines de réception.  
+10. <span data-ttu-id="8d40b-137">Si vous avez choisi **Port statique avec sollicitation-réponse** à l’étape 4, spécifiez l’envoi et les pipelines de réception.</span><span class="sxs-lookup"><span data-stu-id="8d40b-137">If you chose **Static Solicit-Response Port** in step 4, specify send and receive pipelines.</span></span>  
   
-    1.  À partir de la **pipeline de réception** liste déroulante, sélectionnez le pipeline qui correspond à XMLReceive.  
+    1.  <span data-ttu-id="8d40b-138">À partir de la **pipeline d’envoi** liste déroulante, sélectionnez le pipeline qui correspond à XMLTransmit.</span><span class="sxs-lookup"><span data-stu-id="8d40b-138">From the **Send pipeline** drop-down list, select the pipeline that corresponds to XMLTransmit.</span></span>  
   
-    2.  À partir de la **pipeline d’envoi** liste déroulante, sélectionnez le pipeline qui correspond à XMLTransmit.  
+    2.  <span data-ttu-id="8d40b-139">À partir de la **pipeline de réception** liste déroulante, sélectionnez le pipeline qui correspond à XMLReceive.</span><span class="sxs-lookup"><span data-stu-id="8d40b-139">From the **Receive pipeline** drop-down list, select the pipeline that corresponds to XMLReceive.</span></span>  
   
-12. Dans le **propriétés de l’emplacement de réception** boîte de dialogue, cliquez sur **OK**.  
+11. <span data-ttu-id="8d40b-140">Cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="8d40b-140">Click **OK**.</span></span>  
   
-13. Dans le **propriétés du Port de réception** boîte de dialogue, cliquez sur **OK**.  
+## <a name="deploy-adapters-to-receive-messages-from-sql-server"></a><span data-ttu-id="8d40b-141">Déployer des adaptateurs pour recevoir des messages à partir de SQL Server</span><span class="sxs-lookup"><span data-stu-id="8d40b-141">Deploy adapters to receive messages from SQL Server</span></span>
+ <span data-ttu-id="8d40b-142">Effectuez les tâches suivantes étapes de configuration WCF-Custom port de réception pour recevoir des messages à partir de SQL Server à l’aide de la [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] console d’Administration.</span><span class="sxs-lookup"><span data-stu-id="8d40b-142">Perform the following steps to configure a WCF-Custom receive port for receiving messages from SQL Server using the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>  
   
-## <a name="see-also"></a>Voir aussi  
-[Configurer manuellement une liaison de port physique à l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/manually-configure-a-physical-port-binding-to-the-sql-adapter.md)
+1.  <span data-ttu-id="8d40b-143">Démarrer le [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] console d’Administration.</span><span class="sxs-lookup"><span data-stu-id="8d40b-143">Start the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>  
+  
+2.  <span data-ttu-id="8d40b-144">Dans l’arborescence de la console, développez **groupe BizTalk**, puis développez **Applications**.</span><span class="sxs-lookup"><span data-stu-id="8d40b-144">In the console tree, expand **BizTalk Group**, and then expand **Applications**.</span></span>  
+  
+3.  <span data-ttu-id="8d40b-145">Développez l’application sous lequel vous souhaitez déployer le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span><span class="sxs-lookup"><span data-stu-id="8d40b-145">Expand the application under which you want to deploy the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span>  
+  
+4.  <span data-ttu-id="8d40b-146">Avec le bouton droit **Ports de réception**, pointez sur **nouveau**, puis cliquez sur **Port de réception unidirectionnel** ou **Receive Port requête-réponse**, en fonction de la mode de communication entre [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] et SQL Server.</span><span class="sxs-lookup"><span data-stu-id="8d40b-146">Right-click **Receive Ports**, point to **New**, and click **One-way Receive Port** or **Request Response Receive Port**, depending on the mode of communication between [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] and SQL Server.</span></span>  
+  
+5.  <span data-ttu-id="8d40b-147">Dans le **propriétés du Port de réception** boîte de dialogue le **général** , tapez un nom pour le port de réception.</span><span class="sxs-lookup"><span data-stu-id="8d40b-147">In the **Receive Port Properties** dialog box, on the **General** tab, type a name for the receive port.</span></span>  
+  
+6.  <span data-ttu-id="8d40b-148">Sur le **emplacements de réception** , cliquez sur **nouveau**.</span><span class="sxs-lookup"><span data-stu-id="8d40b-148">On the **Receive Locations** tab, click **New**.</span></span> <span data-ttu-id="8d40b-149">Le **propriétés de l’emplacement de réception** boîte de dialogue s’affiche.</span><span class="sxs-lookup"><span data-stu-id="8d40b-149">The **Receive Location Properties** dialog box appears.</span></span>  
+  
+7.  <span data-ttu-id="8d40b-150">Dans le **propriétés de l’emplacement de réception** boîte de dialogue zone, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="8d40b-150">In the **Receive Location Properties** dialog box, do the following:</span></span>  
+  
+    1.  <span data-ttu-id="8d40b-151">Spécifiez un nom pour l’emplacement de réception.</span><span class="sxs-lookup"><span data-stu-id="8d40b-151">Specify a name for the receive location.</span></span>  
+  
+    2.  <span data-ttu-id="8d40b-152">À partir de la **Type** la liste déroulante, sélectionnez **WCF-Custom**, puis cliquez sur **configurer**.</span><span class="sxs-lookup"><span data-stu-id="8d40b-152">From the **Type** drop-down list, select **WCF-Custom**, and then click **Configure**.</span></span>  
+  
+8.  <span data-ttu-id="8d40b-153">Dans le **propriétés du Transport WCF-Custom** boîte de dialogue zone, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="8d40b-153">In the **WCF-Custom Transport Properties** dialog box, do the following:</span></span>  
+  
+    1.  <span data-ttu-id="8d40b-154">Cliquez sur le **général** onglet et dans le **adresse (URI)** champ, spécifiez l’URI de connexion pour SQL Server.</span><span class="sxs-lookup"><span data-stu-id="8d40b-154">Click the **General** tab, and in the **Address (URI)** field, specify the connection URI for SQL Server.</span></span> <span data-ttu-id="8d40b-155">Pour plus d’informations sur l’URI de connexion, consultez [créer l’URI de connexion SQL Server](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md).</span><span class="sxs-lookup"><span data-stu-id="8d40b-155">For more information about the connection URI, see [Create the SQL Server connection URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md).</span></span>  
+  
+    2.  <span data-ttu-id="8d40b-156">Cliquez sur le **liaison** onglet et à partir de la **Type de liaison** la liste déroulante, sélectionnez **sqlBinding**.</span><span class="sxs-lookup"><span data-stu-id="8d40b-156">Click the **Binding** tab, and from the **Binding Type** drop-down list, select **sqlBinding**.</span></span> <span data-ttu-id="8d40b-157">Vous pouvez spécifier les propriétés de liaison différentes exposées par le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span><span class="sxs-lookup"><span data-stu-id="8d40b-157">You can specify the different binding properties exposed by the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span> <span data-ttu-id="8d40b-158">Pour plus d’informations sur les propriétés de liaison, consultez [en savoir plus sur l’adaptateur BizTalk pour les propriétés de liaison de l’adaptateur SQL Server](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md).</span><span class="sxs-lookup"><span data-stu-id="8d40b-158">For more information about binding properties, see [Read about the BizTalk Adapter for SQL Server adapter binding properties](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md).</span></span>  
+  
+    3.  <span data-ttu-id="8d40b-159">Cliquez sur le **comportement** onglet pour définir le niveau d’isolation de transaction.</span><span class="sxs-lookup"><span data-stu-id="8d40b-159">Click the **Behavior** tab to set the transaction isolation level.</span></span> <span data-ttu-id="8d40b-160">Pour plus d’informations sur la définition du niveau d’isolation de transaction, consultez [configurer Transaction Isolation Level et délai de Transaction SQL](../../adapters-and-accelerators/adapter-sql/configure-transaction-isolation-level-and-transaction-timeout-with-sql.md).</span><span class="sxs-lookup"><span data-stu-id="8d40b-160">For more information about setting transaction isolation level, see [Configure Transaction Isolation Level and Transaction Timeout with SQL](../../adapters-and-accelerators/adapter-sql/configure-transaction-isolation-level-and-transaction-timeout-with-sql.md).</span></span>  
+  
+    4.  <span data-ttu-id="8d40b-161">Cliquez sur le **autres** onglet, puis effectuez l’une des opérations suivantes :</span><span class="sxs-lookup"><span data-stu-id="8d40b-161">Click the **Other** tab, and do one of the following:</span></span>  
+  
+        -   <span data-ttu-id="8d40b-162">Sélectionnez **compte d’utilisateur**et spécifiez le nom d’utilisateur et un mot de passe pour se connecter à SQL Server.</span><span class="sxs-lookup"><span data-stu-id="8d40b-162">Select **User account**, and specify the user name and password to connect to SQL Server.</span></span> <span data-ttu-id="8d40b-163">Notez que le nom d’utilisateur et le mot de passe respectent la casse.</span><span class="sxs-lookup"><span data-stu-id="8d40b-163">Note that the user name and password are case-sensitive.</span></span>  
+  
+            > [!NOTE]
+            >  <span data-ttu-id="8d40b-164">Si vous souhaitez vous connecter à SQL Server à l’aide de l’authentification Windows, spécifiez un nom d’utilisateur vide et un mot de passe.</span><span class="sxs-lookup"><span data-stu-id="8d40b-164">If you want to connect to SQL Server using Windows authentication, specify a blank user name and password.</span></span> <span data-ttu-id="8d40b-165">Avant cela, l’utilisateur Windows avec lequel vous êtes connecté doit être ajouté à SQL Server, comme décrit dans [se connecter à SQL Server à l’aide de l’authentification Windows avec l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-using-windows-authentication-with-the-sql-adapter.md).</span><span class="sxs-lookup"><span data-stu-id="8d40b-165">Before you do this, the Windows user with which you are logged in must be added to SQL Server as described in [Connect to SQL Server using Windows Authentication with the SQL adapter](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-using-windows-authentication-with-the-sql-adapter.md).</span></span>  
+  
+        -   <span data-ttu-id="8d40b-166">Sélectionnez **obtenir les informations d’identification d’applications associées à l’application** option et spécifiez une application d’authentification unique associée.</span><span class="sxs-lookup"><span data-stu-id="8d40b-166">Select **Get credentials from affiliate application** option, and specify an affiliate SSO application.</span></span>  
+  
+             <span data-ttu-id="8d40b-167">Pour plus d’informations sur la sécurité au niveau [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], consultez [sécurité avec l’adaptateur SQL et BizTalk Server](../../adapters-and-accelerators/adapter-sql/security-with-the-sql-adapter-and-biztalk-server.md).</span><span class="sxs-lookup"><span data-stu-id="8d40b-167">For more information about security with respect to [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], see [Security with the SQL adapter and BizTalk Server](../../adapters-and-accelerators/adapter-sql/security-with-the-sql-adapter-and-biztalk-server.md).</span></span>  
+  
+    5.  <span data-ttu-id="8d40b-168">Pour revenir à la **propriétés de l’emplacement de réception** boîte de dialogue, cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="8d40b-168">To return to the **Receive Location Properties** dialog box, click **OK**.</span></span>  
+  
+9. <span data-ttu-id="8d40b-169">À partir de la **Gestionnaire de réception** la liste déroulante, sélectionnez **BizTalkServerApplication**.</span><span class="sxs-lookup"><span data-stu-id="8d40b-169">From the **Receive handler** drop-down list, select **BizTalkServerApplication**.</span></span>  
+  
+10. <span data-ttu-id="8d40b-170">Si vous avez choisi **Port de réception unidirectionnel** à l’étape 4, spécifiez un pipeline de réception.</span><span class="sxs-lookup"><span data-stu-id="8d40b-170">If you chose **One-way Receive Port** in step 4, specify a receive pipeline.</span></span> <span data-ttu-id="8d40b-171">À partir de la **pipeline de réception** , sélectionnez le pipeline XMLReceive correspondant.</span><span class="sxs-lookup"><span data-stu-id="8d40b-171">From the **Receive pipeline** list, select the pipeline corresponding to XMLReceive.</span></span>  
+  
+11. <span data-ttu-id="8d40b-172">Si vous avez choisi **Receive Port requête-réponse** à l’étape 4, spécifiez l’envoi et les pipelines de réception.</span><span class="sxs-lookup"><span data-stu-id="8d40b-172">If you chose **Request Response Receive Port** in step 4, specify send and receive pipelines.</span></span>  
+  
+    1.  <span data-ttu-id="8d40b-173">À partir de la **pipeline de réception** liste déroulante, sélectionnez le pipeline qui correspond à XMLReceive.</span><span class="sxs-lookup"><span data-stu-id="8d40b-173">From the **Receive pipeline** drop-down list, select the pipeline that corresponds to XMLReceive.</span></span>  
+  
+    2.  <span data-ttu-id="8d40b-174">À partir de la **pipeline d’envoi** liste déroulante, sélectionnez le pipeline qui correspond à XMLTransmit.</span><span class="sxs-lookup"><span data-stu-id="8d40b-174">From the **Send pipeline** drop-down list, select the pipeline that corresponds to XMLTransmit.</span></span>  
+  
+12. <span data-ttu-id="8d40b-175">Dans le **propriétés de l’emplacement de réception** boîte de dialogue, cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="8d40b-175">In the **Receive Location Properties** dialog box, click **OK**.</span></span>  
+  
+13. <span data-ttu-id="8d40b-176">Dans le **propriétés du Port de réception** boîte de dialogue, cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="8d40b-176">In the **Receive Port Properties** dialog box, click **OK**.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="8d40b-177">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="8d40b-177">See Also</span></span>  
+[<span data-ttu-id="8d40b-178">Configurer manuellement une liaison de port physique à l’adaptateur SQL</span><span class="sxs-lookup"><span data-stu-id="8d40b-178">Manually configure a physical port binding to the SQL adapter</span></span>](../../adapters-and-accelerators/adapter-sql/manually-configure-a-physical-port-binding-to-the-sql-adapter.md)

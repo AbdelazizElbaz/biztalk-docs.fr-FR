@@ -19,15 +19,15 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---test-map-failure"></a>Erreur : Échec de Test Map
-**Code d’erreur**  
+# <a name="error---test-map-failure"></a><span data-ttu-id="c320b-102">Erreur : Échec de Test Map</span><span class="sxs-lookup"><span data-stu-id="c320b-102">Error - Test Map Failure</span></span>
+<span data-ttu-id="c320b-103">**Code d’erreur**</span><span class="sxs-lookup"><span data-stu-id="c320b-103">**Error Code**</span></span>  
   
- btm1054  
+ <span data-ttu-id="c320b-104">btm1054</span><span class="sxs-lookup"><span data-stu-id="c320b-104">btm1054</span></span>  
   
- **Explication**  
+ <span data-ttu-id="c320b-105">**Explication**</span><span class="sxs-lookup"><span data-stu-id="c320b-105">**Explanation**</span></span>  
   
- L'opération Test Map a échoué sur le mappage indiqué.  
+ <span data-ttu-id="c320b-106">L'opération Test Map a échoué sur le mappage indiqué.</span><span class="sxs-lookup"><span data-stu-id="c320b-106">The Test Map operation failed for the indicated map.</span></span>  
   
- **Action de l’utilisateur**  
+ <span data-ttu-id="c320b-107">**Action de l’utilisateur**</span><span class="sxs-lookup"><span data-stu-id="c320b-107">**User Action**</span></span>  
   
- En fonction du ou des messages d'erreur indiqués, déterminez la cause de l'échec de l'opération Test Map et effectuez les modifications nécessaires au mappage ou à ses schémas source et de destination, ou bien aux deux.
+ <span data-ttu-id="c320b-108">En fonction du ou des messages d'erreur indiqués, déterminez la cause de l'échec de l'opération Test Map et effectuez les modifications nécessaires au mappage ou à ses schémas source et de destination, ou bien aux deux.</span><span class="sxs-lookup"><span data-stu-id="c320b-108">Using the accompanying error message(s), determine the cause of failure for the Test Map operation, make the necessary changes to the map or its associated source and destination schemas, or both.</span></span>

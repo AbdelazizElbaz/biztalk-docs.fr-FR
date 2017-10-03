@@ -22,20 +22,20 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-list-bam-views"></a>Génération de listes de vues BAM
-Les administrateurs utilisent la **get-views** commande pour répertorier les vues BAM déployées dans la base de données d’importation principale BAM sur l’ordinateur sur lequel la commande est exécutée.  
+# <a name="how-to-list-bam-views"></a><span data-ttu-id="e8cdc-102">Génération de listes de vues BAM</span><span class="sxs-lookup"><span data-stu-id="e8cdc-102">How to List BAM Views</span></span>
+<span data-ttu-id="e8cdc-103">Les administrateurs utilisent la **get-views** commande pour répertorier les vues BAM déployées dans la base de données d’importation principale BAM sur l’ordinateur sur lequel la commande est exécutée.</span><span class="sxs-lookup"><span data-stu-id="e8cdc-103">Administrators use the **get-views** command to list the BAM views deployed in the BAM Primary Import database on the computer on which the command is run.</span></span>  
   
-### <a name="to-list-bam-views"></a>Pour répertorier les vues BAM  
+### <a name="to-list-bam-views"></a><span data-ttu-id="e8cdc-104">Pour répertorier les vues BAM</span><span class="sxs-lookup"><span data-stu-id="e8cdc-104">To list BAM views</span></span>  
   
-1.  Ouvrez une invite de commandes comme suit : cliquez sur **Démarrer**, cliquez sur **exécuter**, type **cmd**, puis cliquez sur **OK**.  
+1.  <span data-ttu-id="e8cdc-105">Ouvrez une invite de commandes comme suit : cliquez sur **Démarrer**, cliquez sur **exécuter**, type **cmd**, puis cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="e8cdc-105">Open a command prompt as follows: Click **Start**, click **Run**, type **cmd**, and then click **OK**.</span></span>  
   
-2.  Accédez à [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)].  
+2.  <span data-ttu-id="e8cdc-106">Accédez à [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)].</span><span class="sxs-lookup"><span data-stu-id="e8cdc-106">Navigate to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)].</span></span>  
   
-3.  Type **bm get-views**.  
+3.  <span data-ttu-id="e8cdc-107">Type **bm get-views**.</span><span class="sxs-lookup"><span data-stu-id="e8cdc-107">Type **bm get-views**.</span></span>  
   
-4.  Appuyez sur **Entrée**.  
+4.  <span data-ttu-id="e8cdc-108">Appuyez sur **Entrée**.</span><span class="sxs-lookup"><span data-stu-id="e8cdc-108">Press **ENTER**.</span></span>  
   
-## <a name="see-also"></a>Voir aussi  
- [Gestion de l’Infrastructure dynamique BAM](../core/managing-the-bam-dynamic-infrastructure.md)   
- [Recommandations de sécurité BAM](../core/bam-security-recommendations.md)   
- [Utilitaire de gestion BAM](../core/bam-management-utility.md)
+## <a name="see-also"></a><span data-ttu-id="e8cdc-109">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="e8cdc-109">See Also</span></span>  
+ <span data-ttu-id="e8cdc-110">[Gestion de l’Infrastructure dynamique BAM](../core/managing-the-bam-dynamic-infrastructure.md) </span><span class="sxs-lookup"><span data-stu-id="e8cdc-110">[Managing the BAM Dynamic Infrastructure](../core/managing-the-bam-dynamic-infrastructure.md) </span></span>  
+ <span data-ttu-id="e8cdc-111">[Recommandations de sécurité BAM](../core/bam-security-recommendations.md) </span><span class="sxs-lookup"><span data-stu-id="e8cdc-111">[BAM Security Recommendations](../core/bam-security-recommendations.md) </span></span>  
+ [<span data-ttu-id="e8cdc-112">Utilitaire de gestion BAM</span><span class="sxs-lookup"><span data-stu-id="e8cdc-112">BAM Management Utility</span></span>](../core/bam-management-utility.md)

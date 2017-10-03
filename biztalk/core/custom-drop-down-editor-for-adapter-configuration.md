@@ -18,10 +18,10 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="custom-drop-down-editor-for-adapter-configuration"></a>Éditeur de liste déroulante personnalisé pour la Configuration de l’adaptateur
-Le code de l’éditeur personnalisé montre un éditeur dérivé de la **System.Drawing.Design.UITypeEditor** classe qui affiche une zone de texte de la liste déroulante pour entrer un mot de passe. Le **GetEditStyle** supplante **UIEditorEditStyle.DropDown** pour indiquer un sous-contrôle de liste déroulante. Les méthodes de service **DropDownControl** et **CloseDropDown** gèrent le contrôle créé avec **CreatePassword**.  
+# <a name="custom-drop-down-editor-for-adapter-configuration"></a><span data-ttu-id="ebdea-102">Éditeur de liste déroulante personnalisé pour la Configuration de l’adaptateur</span><span class="sxs-lookup"><span data-stu-id="ebdea-102">Custom Drop-Down Editor for Adapter Configuration</span></span>
+<span data-ttu-id="ebdea-103">Le code de l’éditeur personnalisé montre un éditeur dérivé de la **System.Drawing.Design.UITypeEditor** classe qui affiche une zone de texte de la liste déroulante pour entrer un mot de passe.</span><span class="sxs-lookup"><span data-stu-id="ebdea-103">The code for the custom editor shows an editor derived from the **System.Drawing.Design.UITypeEditor** class that displays a drop-down text box for entering a password.</span></span> <span data-ttu-id="ebdea-104">Le **GetEditStyle** supplante **UIEditorEditStyle.DropDown** pour indiquer un sous-contrôle de liste déroulante.</span><span class="sxs-lookup"><span data-stu-id="ebdea-104">The **GetEditStyle** override returns **UIEditorEditStyle.DropDown** to indicate a drop-down subcontrol.</span></span> <span data-ttu-id="ebdea-105">Les méthodes de service **DropDownControl** et **CloseDropDown** gèrent le contrôle créé avec **CreatePassword**.</span><span class="sxs-lookup"><span data-stu-id="ebdea-105">The service methods **DropDownControl** and **CloseDropDown** manage the control created with **CreatePassword**.</span></span>  
   
- Le code suivant correspond à la définition de classe pour l'éditeur déroulant personnalisé :  
+ <span data-ttu-id="ebdea-106">Le code suivant correspond à la définition de classe pour l'éditeur déroulant personnalisé :</span><span class="sxs-lookup"><span data-stu-id="ebdea-106">The following code is the class definition for the custom drop-down editor:</span></span>  
   
 ```  
 /*************************************************************************  
@@ -93,8 +93,8 @@ namespace AdapterManagement.ComponentModel {
 } // Microsoft.BizTalk.Adapter.Framework.ComponentModel  
 ```  
   
-## <a name="see-also"></a>Voir aussi  
- [Concepteur de Configuration d’adaptateur personnalisé](../core/custom-adapter-configuration-designer.md)   
- [Éditeur de boîte de dialogue modales personnalisé pour la Configuration de l’adaptateur](../core/custom-modal-dialog-editor-for-adapter-configuration.md)   
- [Convertisseur de Type personnalisé pour la Configuration de l’adaptateur](../core/custom-type-converter-for-adapter-configuration.md)   
- [Composants de Configuration avancée pour les cartes](../core/advanced-configuration-components-for-adapters.md)
+## <a name="see-also"></a><span data-ttu-id="ebdea-107">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="ebdea-107">See Also</span></span>  
+ <span data-ttu-id="ebdea-108">[Concepteur de Configuration d’adaptateur personnalisé](../core/custom-adapter-configuration-designer.md) </span><span class="sxs-lookup"><span data-stu-id="ebdea-108">[Custom Adapter Configuration Designer](../core/custom-adapter-configuration-designer.md) </span></span>  
+ <span data-ttu-id="ebdea-109">[Éditeur de boîte de dialogue modales personnalisé pour la Configuration de l’adaptateur](../core/custom-modal-dialog-editor-for-adapter-configuration.md) </span><span class="sxs-lookup"><span data-stu-id="ebdea-109">[Custom Modal Dialog Editor for Adapter Configuration](../core/custom-modal-dialog-editor-for-adapter-configuration.md) </span></span>  
+ <span data-ttu-id="ebdea-110">[Convertisseur de Type personnalisé pour la Configuration de l’adaptateur](../core/custom-type-converter-for-adapter-configuration.md) </span><span class="sxs-lookup"><span data-stu-id="ebdea-110">[Custom Type Converter for Adapter Configuration](../core/custom-type-converter-for-adapter-configuration.md) </span></span>  
+ [<span data-ttu-id="ebdea-111">Composants de Configuration avancée pour les cartes</span><span class="sxs-lookup"><span data-stu-id="ebdea-111">Advanced Configuration Components for Adapters</span></span>](../core/advanced-configuration-components-for-adapters.md)

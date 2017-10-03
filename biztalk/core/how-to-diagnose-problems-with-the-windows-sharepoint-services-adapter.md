@@ -18,25 +18,25 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-diagnose-problems-with-the-windows-sharepoint-services-adapter"></a>Comment faire pour diagnostiquer des problèmes avec l’adaptateur Windows SharePoint Services
-Cette rubrique présente la procédure de diagnostic des problèmes relatifs à l'adaptateur Windows Sharepoint Services.  
+# <a name="how-to-diagnose-problems-with-the-windows-sharepoint-services-adapter"></a><span data-ttu-id="5b2dd-102">Comment faire pour diagnostiquer des problèmes avec l’adaptateur Windows SharePoint Services</span><span class="sxs-lookup"><span data-stu-id="5b2dd-102">How to Diagnose Problems with the Windows SharePoint Services Adapter</span></span>
+<span data-ttu-id="5b2dd-103">Cette rubrique présente la procédure de diagnostic des problèmes relatifs à l'adaptateur Windows Sharepoint Services.</span><span class="sxs-lookup"><span data-stu-id="5b2dd-103">This section contains steps that can be followed to help diagnose problems with the Windows Sharepoint Services adapter.</span></span>  
   
-### <a name="check-the-iis-and-httperr-log-files-of-the-iis-server-for-errors"></a>Recherche des erreurs dans les fichiers journaux IIS et HTTPERR du serveur IIS  
+### <a name="check-the-iis-and-httperr-log-files-of-the-iis-server-for-errors"></a><span data-ttu-id="5b2dd-104">Recherche des erreurs dans les fichiers journaux IIS et HTTPERR du serveur IIS</span><span class="sxs-lookup"><span data-stu-id="5b2dd-104">Check the IIS and HTTPERR log files of the IIS Server for errors</span></span>  
   
--   Les fichiers journaux du serveur IIS source ou cible contiennent des informations qui peuvent s'avérer utiles pour la résolution de problèmes relatifs à l'adaptateur Windows Sharepoint Services. Les fichiers journaux IIS d'un ordinateur [!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] se trouvent par défaut dans le répertoire suivant :  
+-   <span data-ttu-id="5b2dd-105">Les fichiers journaux du serveur IIS source ou cible contiennent des informations qui peuvent s'avérer utiles pour la résolution de problèmes relatifs à l'adaptateur Windows Sharepoint Services.</span><span class="sxs-lookup"><span data-stu-id="5b2dd-105">The source or target IIS server log files can contain information that is helpful for troubleshooting problems with the Windows Sharepoint Services adapter.</span></span> <span data-ttu-id="5b2dd-106">Les fichiers journaux IIS d'un ordinateur [!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] se trouvent par défaut dans le répertoire suivant :</span><span class="sxs-lookup"><span data-stu-id="5b2dd-106">By default the IIS log files on a [!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] computer are located in the following directory:</span></span>  
   
-     *%Windir%\\*system32\LogFiles\W3SVC1\  
-  
-    > [!NOTE]
-    >  *%Windir%* est un espace réservé pour l’emplacement du répertoire Windows sur le serveur IIS.  
-  
--   Les fichiers journaux HTTPERR d'un ordinateur [!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] se trouvent par défaut dans le répertoire suivant :  
-  
-     *%Windir%\\*system32\LogFiles\HTTPERR\  
+     <span data-ttu-id="5b2dd-107">*%Windir%\\*system32\LogFiles\W3SVC1\\</span><span class="sxs-lookup"><span data-stu-id="5b2dd-107">*%WinDir%\\*system32\LogFiles\W3SVC1\\</span></span>  
   
     > [!NOTE]
-    >  Le fichier journal HTTPERR est uniquement disponible sur les ordinateurs [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)].  
+    >  <span data-ttu-id="5b2dd-108">*%Windir%* est un espace réservé pour l’emplacement du répertoire Windows sur le serveur IIS.</span><span class="sxs-lookup"><span data-stu-id="5b2dd-108">*%WinDir%* is a placeholder for the location of the Windows directory on the IIS server.</span></span>  
   
-## <a name="see-also"></a>Voir aussi  
- [Outils et utilitaires à utiliser pour la résolution des problèmes](../core/tools-and-utilities-to-use-for-troubleshooting.md)   
- [Résolution des problèmes de l’adaptateur Windows SharePoint Services](../core/troubleshooting-the-windows-sharepoint-services-adapter.md)
+-   <span data-ttu-id="5b2dd-109">Les fichiers journaux HTTPERR d'un ordinateur [!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] se trouvent par défaut dans le répertoire suivant :</span><span class="sxs-lookup"><span data-stu-id="5b2dd-109">By default the HTTPERR log files on a [!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] based computer are located in the following directory:</span></span>  
+  
+     <span data-ttu-id="5b2dd-110">*%Windir%\\*system32\LogFiles\HTTPERR\\</span><span class="sxs-lookup"><span data-stu-id="5b2dd-110">*%WinDir%\\*system32\LogFiles\HTTPERR\\</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="5b2dd-111">Le fichier journal HTTPERR est uniquement disponible sur les ordinateurs [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)].</span><span class="sxs-lookup"><span data-stu-id="5b2dd-111">The HTTPERR log file is only available on [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] computers.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="5b2dd-112">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="5b2dd-112">See Also</span></span>  
+ <span data-ttu-id="5b2dd-113">[Outils et utilitaires à utiliser pour la résolution des problèmes](../core/tools-and-utilities-to-use-for-troubleshooting.md) </span><span class="sxs-lookup"><span data-stu-id="5b2dd-113">[Tools and Utilities to Use for Troubleshooting](../core/tools-and-utilities-to-use-for-troubleshooting.md) </span></span>  
+ [<span data-ttu-id="5b2dd-114">Résolution des problèmes de l’adaptateur Windows SharePoint Services</span><span class="sxs-lookup"><span data-stu-id="5b2dd-114">Troubleshooting the Windows SharePoint Services Adapter</span></span>](../core/troubleshooting-the-windows-sharepoint-services-adapter.md)

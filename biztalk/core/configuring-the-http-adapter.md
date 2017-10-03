@@ -21,21 +21,21 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="configuring-the-http-adapter"></a>Configuration de l’adaptateur HTTP
-Cette section décrit la configuration d'un adaptateur HTTP.  
+# <a name="configuring-the-http-adapter"></a><span data-ttu-id="318a5-102">Configuration de l’adaptateur HTTP</span><span class="sxs-lookup"><span data-stu-id="318a5-102">Configuring the HTTP Adapter</span></span>
+<span data-ttu-id="318a5-103">Cette section décrit la configuration d'un adaptateur HTTP.</span><span class="sxs-lookup"><span data-stu-id="318a5-103">This section describes how to configure an HTTP adapter.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="318a5-104">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="318a5-104">In This Section</span></span>  
   
--   [Pour configurer les Gestionnaire de réception HTTP](../core/how-to-configure-an-http-receive-handler.md)  
+-   [<span data-ttu-id="318a5-105">Pour configurer les Gestionnaire de réception HTTP</span><span class="sxs-lookup"><span data-stu-id="318a5-105">How to Configure an HTTP Receive Handler</span></span>](../core/how-to-configure-an-http-receive-handler.md)  
   
--   [Comment configurer IIS pour l’emplacement de réception HTTP](../core/how-to-configure-iis-for-an-http-receive-location.md)  
+-   [<span data-ttu-id="318a5-106">Comment configurer IIS pour l’emplacement de réception HTTP</span><span class="sxs-lookup"><span data-stu-id="318a5-106">How to Configure IIS for an HTTP Receive Location</span></span>](../core/how-to-configure-iis-for-an-http-receive-location.md)  
   
--   [Pour configurer les emplacement de réception HTTP](../core/how-to-configure-an-http-receive-location.md)  
+-   [<span data-ttu-id="318a5-107">Pour configurer les emplacement de réception HTTP</span><span class="sxs-lookup"><span data-stu-id="318a5-107">How to Configure an HTTP Receive Location</span></span>](../core/how-to-configure-an-http-receive-location.md)  
   
--   [Comment configurer un gestionnaire d’envoi HTTP](../core/how-to-configure-an-http-send-handler.md)  
+-   [<span data-ttu-id="318a5-108">Comment configurer un gestionnaire d’envoi HTTP</span><span class="sxs-lookup"><span data-stu-id="318a5-108">How to Configure an HTTP Send Handler</span></span>](../core/how-to-configure-an-http-send-handler.md)  
   
--   [Configuration d’un Port d’envoi HTTP](../core/configuring-an-http-send-port.md)  
+-   [<span data-ttu-id="318a5-109">Configuration d’un Port d’envoi HTTP</span><span class="sxs-lookup"><span data-stu-id="318a5-109">Configuring an HTTP Send Port</span></span>](../core/configuring-an-http-send-port.md)  
   
--   [Paramètres de réglage et de Configuration de l’adaptateur HTTP](../core/http-adapter-configuration-and-tuning-parameters.md)  
+-   [<span data-ttu-id="318a5-110">Paramètres de réglage et de Configuration de l’adaptateur HTTP</span><span class="sxs-lookup"><span data-stu-id="318a5-110">HTTP Adapter Configuration and Tuning Parameters</span></span>](../core/http-adapter-configuration-and-tuning-parameters.md)  
   
--   [Propriétés et schéma de propriété de l’adaptateur HTTP](../core/http-adapter-property-schema-and-properties.md)
+-   [<span data-ttu-id="318a5-111">Propriétés et schéma de propriété de l’adaptateur HTTP</span><span class="sxs-lookup"><span data-stu-id="318a5-111">HTTP Adapter Property Schema and Properties</span></span>](../core/http-adapter-property-schema-and-properties.md)

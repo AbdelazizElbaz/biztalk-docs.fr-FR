@@ -24,19 +24,19 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="configuring-a4swift-site-groups"></a>Configuration des groupes de Site A4SWIFT
-Vous devez créer les groupes de sites correspondante pour verrouiller les autorisations sur les bibliothèques de documents créés lors de la configuration de Message Repair et New Submission. Pour ce faire, dans l’exemple dans la section précédente, un administrateur A4SWIFT serait accédez au site MRSR et configurer les groupes de site suivants :  
+# <a name="configuring-a4swift-site-groups"></a><span data-ttu-id="c703f-102">Configuration des groupes de Site A4SWIFT</span><span class="sxs-lookup"><span data-stu-id="c703f-102">Configuring A4SWIFT Site Groups</span></span>
+<span data-ttu-id="c703f-103">Vous devez créer les groupes de sites correspondante pour verrouiller les autorisations sur les bibliothèques de documents créés lors de la configuration de Message Repair et New Submission.</span><span class="sxs-lookup"><span data-stu-id="c703f-103">You need to create the corresponding site groups to lock down the permissions on the document libraries created during Message Repair and New Submission configuration.</span></span> <span data-ttu-id="c703f-104">Pour ce faire, dans l’exemple dans la section précédente, un administrateur A4SWIFT serait accédez au site MRSR et configurer les groupes de site suivants :</span><span class="sxs-lookup"><span data-stu-id="c703f-104">To do so with the example in the preceding section, an A4SWIFT Administrator would go to the MRSR site and set up the following site groups:</span></span>  
   
--   Payments_Creators  
+-   <span data-ttu-id="c703f-105">Payments_Creators</span><span class="sxs-lookup"><span data-stu-id="c703f-105">Payments_Creators</span></span>  
   
--   Payments_Repairers  
+-   <span data-ttu-id="c703f-106">Payments_Repairers</span><span class="sxs-lookup"><span data-stu-id="c703f-106">Payments_Repairers</span></span>  
   
--   Payments_Approvers  
+-   <span data-ttu-id="c703f-107">Payments_Approvers</span><span class="sxs-lookup"><span data-stu-id="c703f-107">Payments_Approvers</span></span>  
   
- Pour chacun de ces groupes de site, les autorisations suivantes doivent s’appliquer :  
+ <span data-ttu-id="c703f-108">Pour chacun de ces groupes de site, les autorisations suivantes doivent s’appliquer :</span><span class="sxs-lookup"><span data-stu-id="c703f-108">For each of these site groups the following permissions should be applied:</span></span>  
   
--   **Afficher les éléments.** Afficher les éléments dans les listes, bibliothèques de documents, afficher les commentaires de discussion Web et configurer des alertes par courrier électronique pour les listes.  
+-   <span data-ttu-id="c703f-109">**Afficher les éléments.**</span><span class="sxs-lookup"><span data-stu-id="c703f-109">**View Items.**</span></span> <span data-ttu-id="c703f-110">Afficher les éléments dans les listes, bibliothèques de documents, afficher les commentaires de discussion Web et configurer des alertes par courrier électronique pour les listes.</span><span class="sxs-lookup"><span data-stu-id="c703f-110">View items in lists, documents in document libraries, view Web discussion comments, and set up e-mail alerts for lists.</span></span>  
   
--   **Afficher les Pages.** Afficher les pages d’un site Web.  
+-   <span data-ttu-id="c703f-111">**Afficher les Pages.**</span><span class="sxs-lookup"><span data-stu-id="c703f-111">**View Pages.**</span></span> <span data-ttu-id="c703f-112">Afficher les pages d’un site Web.</span><span class="sxs-lookup"><span data-stu-id="c703f-112">View pages in a Web site.</span></span>  
   
- Pour chaque utilisateur qui participe dans les rôles pour le service des paiements, vous devez créer un nouvel utilisateur de site et affectez cet utilisateur au groupe de sites qui correspond à [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] rôles créés lors de la configuration de la console MMC.
+ <span data-ttu-id="c703f-113">Pour chaque utilisateur qui participe dans les rôles pour le service des paiements, vous devez créer un nouvel utilisateur de site et affectez cet utilisateur au groupe de sites qui correspond à [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] rôles créés lors de la configuration de la console MMC.</span><span class="sxs-lookup"><span data-stu-id="c703f-113">For each user who participates in the roles for the Payments department, you need to create a new site user and assign that user to the site group that corresponds to [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] roles created during MMC configuration.</span></span>

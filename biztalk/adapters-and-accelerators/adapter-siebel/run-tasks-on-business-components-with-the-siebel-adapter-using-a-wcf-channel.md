@@ -21,8 +21,8 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="run-operations-on-business-components-with-the-siebel-adapter-using-the-wcf-channel-model"></a>Exécuter des opérations sur les composants d’entreprise avec l’adaptateur Siebel à l’aide du modèle de canal WCF
-Cette section montre comment effectuer des opérations sur Siebel en utilisant le canal créé dans [créer un canal à l’aide de Siebel](../../adapters-and-accelerators/adapter-siebel/create-a-channel-using-siebel.md).  
+# <a name="run-operations-on-business-components-with-the-siebel-adapter-using-the-wcf-channel-model"></a><span data-ttu-id="0ccfd-102">Exécuter des opérations sur les composants d’entreprise avec l’adaptateur Siebel à l’aide du modèle de canal WCF</span><span class="sxs-lookup"><span data-stu-id="0ccfd-102">Run Operations on Business Components with the Siebel adapter using the WCF Channel Model</span></span>
+<span data-ttu-id="0ccfd-103">Cette section montre comment effectuer des opérations sur Siebel en utilisant le canal créé dans [créer un canal à l’aide de Siebel](../../adapters-and-accelerators/adapter-siebel/create-a-channel-using-siebel.md).</span><span class="sxs-lookup"><span data-stu-id="0ccfd-103">This section demonstrates how to perform operations on Siebel using the channel created in [Create a Channel using Siebel](../../adapters-and-accelerators/adapter-siebel/create-a-channel-using-siebel.md).</span></span>  
   
 ```  
 // create binding  
@@ -62,6 +62,6 @@ channel.Close();
 factory.Close();  
 ```  
   
-## <a name="see-also"></a>Voir aussi  
- [Développer des Applications Siebel à l’aide du modèle de canal WCF](../../adapters-and-accelerators/adapter-siebel/develop-siebel-applications-using-the-wcf-channel-model3.md)   
- [Exécuter des opérations sur les composants d’entreprise avec l’adaptateur Siebel à l’aide du modèle de Service WCF](../../adapters-and-accelerators/adapter-siebel/run-operations-on-business-components-with-the-siebel-adapter-using-wcf-service.md)
+## <a name="see-also"></a><span data-ttu-id="0ccfd-104">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="0ccfd-104">See Also</span></span>  
+ <span data-ttu-id="0ccfd-105">[Développer des Applications Siebel à l’aide du modèle de canal WCF](../../adapters-and-accelerators/adapter-siebel/develop-siebel-applications-using-the-wcf-channel-model3.md) </span><span class="sxs-lookup"><span data-stu-id="0ccfd-105">[Develop Siebel Applications Using the WCF Channel Model](../../adapters-and-accelerators/adapter-siebel/develop-siebel-applications-using-the-wcf-channel-model3.md) </span></span>  
+ [<span data-ttu-id="0ccfd-106">Exécuter des opérations sur les composants d’entreprise avec l’adaptateur Siebel à l’aide du modèle de Service WCF</span><span class="sxs-lookup"><span data-stu-id="0ccfd-106">Run Operations on Business Components with the Siebel adapter Using the WCF Service Model</span></span>](../../adapters-and-accelerators/adapter-siebel/run-operations-on-business-components-with-the-siebel-adapter-using-wcf-service.md)

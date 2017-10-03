@@ -18,14 +18,14 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="configuring-edifact-fallback-agreement-properties-for-transaction-set-settings"></a>Configuration des propriétés d'accord de secours EDIFACT pour les paramètres des documents informatisés
-Les paramètres des documents informatisés EDIFACT définissent la façon dont [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] traite les documents informatisés échangés entre tiers.  
+# <a name="configuring-edifact-fallback-agreement-properties-for-transaction-set-settings"></a><span data-ttu-id="44738-102">Configuration des propriétés d'accord de secours EDIFACT pour les paramètres des documents informatisés</span><span class="sxs-lookup"><span data-stu-id="44738-102">Configuring EDIFACT Fallback Agreement Properties for Transaction Set Settings</span></span>
+<span data-ttu-id="44738-103">Les paramètres des documents informatisés EDIFACT définissent la façon dont [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] traite les documents informatisés échangés entre tiers.</span><span class="sxs-lookup"><span data-stu-id="44738-103">EDIFACT transaction set settings define how [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] processes the transaction sets being exchanged between two parties.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="44738-104">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="44738-104">In This Section</span></span>  
   
--   [Configuration des paramètres de secours de l’hôte Local (EDIFACT-informatisés paramètres)](../core/configuring-fallback-local-host-settings-edifact-transaction-set-settings.md)  
+-   [<span data-ttu-id="44738-105">Configuration des paramètres de secours de l’hôte Local (EDIFACT-informatisés paramètres)</span><span class="sxs-lookup"><span data-stu-id="44738-105">Configuring Fallback Local Host Settings (EDIFACT-Transaction Set Settings)</span></span>](../core/configuring-fallback-local-host-settings-edifact-transaction-set-settings.md)  
   
--   [Configuration des propriétés de l’enveloppe de secours (EDIFACT-informatisés paramètres)](../core/configuring-fallback-envelope-properties-edifact-transaction-set-settings.md)  
+-   [<span data-ttu-id="44738-106">Configuration des propriétés de l’enveloppe de secours (EDIFACT-informatisés paramètres)</span><span class="sxs-lookup"><span data-stu-id="44738-106">Configuring Fallback Envelope Properties (EDIFACT-Transaction Set Settings)</span></span>](../core/configuring-fallback-envelope-properties-edifact-transaction-set-settings.md)  
   
-## <a name="see-also"></a>Voir aussi  
- [Configuration des propriétés d’accord de secours EDIFACT](../core/configuring-edifact-fallback-agreement-properties.md)
+## <a name="see-also"></a><span data-ttu-id="44738-107">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="44738-107">See Also</span></span>  
+ [<span data-ttu-id="44738-108">Configuration des propriétés d’accord de secours EDIFACT</span><span class="sxs-lookup"><span data-stu-id="44738-108">Configuring EDIFACT Fallback Agreement Properties</span></span>](../core/configuring-edifact-fallback-agreement-properties.md)

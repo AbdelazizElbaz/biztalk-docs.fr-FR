@@ -18,16 +18,16 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="create-the-tutorial-folders"></a>Créer les dossiers du didacticiels
-Créez les dossiers suivants à l’aide de [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorer :  
+# <a name="create-the-tutorial-folders"></a><span data-ttu-id="a5761-102">Créer les dossiers du didacticiels</span><span class="sxs-lookup"><span data-stu-id="a5761-102">Create the Tutorial Folders</span></span>
+<span data-ttu-id="a5761-103">Créez les dossiers suivants à l’aide de [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorer :</span><span class="sxs-lookup"><span data-stu-id="a5761-103">Create the following folders using [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorer:</span></span>  
   
--   \<*lecteur*: > \Batching didacticiel  
+-   <span data-ttu-id="a5761-104">\<*lecteur*: > \Batching didacticiel</span><span class="sxs-lookup"><span data-stu-id="a5761-104">\<*drive*:>\Batching Tutorial</span></span>  
   
--   \<*lecteur*: > \Batching Tutorial\Instances  
+-   <span data-ttu-id="a5761-105">\<*lecteur*: > \Batching Tutorial\Instances</span><span class="sxs-lookup"><span data-stu-id="a5761-105">\<*drive*:>\Batching Tutorial\Instances</span></span>  
   
--   \<*lecteur*: > \Program Files\Microsoft BizTalk \<version > Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_BatchACKDrop  
+-   <span data-ttu-id="a5761-106">\<*lecteur*: > \Program Files\Microsoft BizTalk \<version > Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_BatchACKDrop</span><span class="sxs-lookup"><span data-stu-id="a5761-106">\<*drive*:>\Program Files\Microsoft BizTalk \<version> Accelerator for HL7\SDK\End-to-End Tutorial\Tutorial_BatchACKDrop</span></span>  
   
--   \<*lecteur*: > \Program Files\Microsoft BizTalk \<version > Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_BatchMsgDrop  
+-   <span data-ttu-id="a5761-107">\<*lecteur*: > \Program Files\Microsoft BizTalk \<version > Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_BatchMsgDrop</span><span class="sxs-lookup"><span data-stu-id="a5761-107">\<*drive*:>\Program Files\Microsoft BizTalk \<version> Accelerator for HL7\SDK\End-to-End Tutorial\Tutorial_BatchMsgDrop</span></span>  
   
-## <a name="see-also"></a>Voir aussi  
- [Préparation à l’utilisation du didacticiel de traitement par lot](../../adapters-and-accelerators/accelerator-hl7/preparing-to-use-the-batching-tutorial.md)
+## <a name="see-also"></a><span data-ttu-id="a5761-108">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="a5761-108">See Also</span></span>  
+ [<span data-ttu-id="a5761-109">Préparation à l’utilisation du didacticiel de traitement par lot</span><span class="sxs-lookup"><span data-stu-id="a5761-109">Preparing to Use the Batching Tutorial</span></span>](../../adapters-and-accelerators/accelerator-hl7/preparing-to-use-the-batching-tutorial.md)

@@ -18,13 +18,13 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="identity-errors"></a>Erreurs en relation avec les identités
-Cette section inclut des informations détaillées sur le diagnostic et la résolution des erreurs en relation avec les identités WCF.  
+# <a name="identity-errors"></a><span data-ttu-id="829f2-102">Erreurs en relation avec les identités</span><span class="sxs-lookup"><span data-stu-id="829f2-102">Identity Errors</span></span>
+<span data-ttu-id="829f2-103">Cette section inclut des informations détaillées sur le diagnostic et la résolution des erreurs en relation avec les identités WCF.</span><span class="sxs-lookup"><span data-stu-id="829f2-103">This section contains detailed information for diagnosing and resolving WCF Identity errors.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="829f2-104">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="829f2-104">In This Section</span></span>  
   
--   [Impossible de créer l’identité](../core/failed-to-create-identity.md)  
+-   [<span data-ttu-id="829f2-105">Impossible de créer l’identité</span><span class="sxs-lookup"><span data-stu-id="829f2-105">Failed to create identity</span></span>](../core/failed-to-create-identity.md)  
   
--   [Échec de création de X509CertificateIdentity à partir du certificat codé en base-64](../core/failed-to-create-x509certificateidentity-from-base-64-encoded-certificate.md)  
+-   [<span data-ttu-id="829f2-106">Échec de création de X509CertificateIdentity à partir du certificat codé en base-64</span><span class="sxs-lookup"><span data-stu-id="829f2-106">Failed to create X509CertificateIdentity from base-64 encoded certificate</span></span>](../core/failed-to-create-x509certificateidentity-from-base-64-encoded-certificate.md)  
   
--   [Échec de création de X509CertificateIdentity à partir de la référence du certificat](../core/failed-to-create-x509certificateidentity-from-certificate-reference.md)
+-   [<span data-ttu-id="829f2-107">Échec de création de X509CertificateIdentity à partir de la référence du certificat</span><span class="sxs-lookup"><span data-stu-id="829f2-107">Failed to create X509CertificateIdentity from certificate reference</span></span>](../core/failed-to-create-x509certificateidentity-from-certificate-reference.md)

@@ -21,30 +21,30 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-test-the-http-node"></a>Tester du nœud HTTP
-Pour tester le nœud HTTP, procédez comme suit :  
+# <a name="how-to-test-the-http-node"></a><span data-ttu-id="836d0-102">Tester du nœud HTTP</span><span class="sxs-lookup"><span data-stu-id="836d0-102">How to Test the HTTP Node</span></span>
+<span data-ttu-id="836d0-103">Pour tester le nœud HTTP, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="836d0-103">Follow these steps to test the HTTP node.</span></span>  
   
-### <a name="to-test-the-http-node"></a>Pour tester le nœud HTTP  
+### <a name="to-test-the-http-node"></a><span data-ttu-id="836d0-104">Pour tester le nœud HTTP</span><span class="sxs-lookup"><span data-stu-id="836d0-104">To test the HTTP node</span></span>  
   
-1.  Dans PeopleSoft Enterprise, accédez à **PeopleTools**, **Integration Broker**, **moniteur**, **Message moniteur**.  
+1.  <span data-ttu-id="836d0-105">Dans PeopleSoft Enterprise, accédez à **PeopleTools**, **Integration Broker**, **moniteur**, **Message moniteur**.</span><span class="sxs-lookup"><span data-stu-id="836d0-105">In PeopleSoft Enterprise, navigate to **PeopleTools**, **Integration Broker**, **Monitor**, **Monitor Message**.</span></span>  
   
      ![](../core/media/psadapter-40-task-gatewaytestnode.gif "PSAdapter_40_Task_GatewayTestNode")  
   
-2.  Cliquez sur le **état du nœud** onglet.  
+2.  <span data-ttu-id="836d0-106">Cliquez sur le **état du nœud** onglet.</span><span class="sxs-lookup"><span data-stu-id="836d0-106">Click the **Node Status** tab.</span></span>  
   
-3.  Dans le **nom de nœud de Message** , entrez `MSEXTERNAL`, puis cliquez sur le **recherche** icône.  
+3.  <span data-ttu-id="836d0-107">Dans le **nom de nœud de Message** , entrez `MSEXTERNAL`, puis cliquez sur le **recherche** icône.</span><span class="sxs-lookup"><span data-stu-id="836d0-107">In the **Message Node Name** field, enter `MSEXTERNAL`, and then click the **Lookup** icon.</span></span>  
   
-4.  Sous **nom de nœud de Message**, sélectionnez **MSEXTERNAL**.  
+4.  <span data-ttu-id="836d0-108">Sous **nom de nœud de Message**, sélectionnez **MSEXTERNAL**.</span><span class="sxs-lookup"><span data-stu-id="836d0-108">Under **Message Node Name**, select **MSEXTERNAL**.</span></span>  
   
-     Le message qui s'affiche indique que PeopleSoft communique via HTTP.  
+     <span data-ttu-id="836d0-109">Le message qui s'affiche indique que PeopleSoft communique via HTTP.</span><span class="sxs-lookup"><span data-stu-id="836d0-109">A message appears and indicates that PeopleSoft is communicating through HTTP.</span></span>  
   
      ![](../core/media/psadapter-41-task-gatewaytestsuccess.gif "PSAdapter_41_Task_GatewayTestSuccess")  
   
-     Si vous ne recevez aucun message, vérifiez ce qui suit :  
+     <span data-ttu-id="836d0-110">Si vous ne recevez aucun message, vérifiez ce qui suit :</span><span class="sxs-lookup"><span data-stu-id="836d0-110">If you do not receive the message, verify the following:</span></span>  
   
-    1.  Les adresses IP et les ports du port de réception et du nœud correspondent.  
+    1.  <span data-ttu-id="836d0-111">Les adresses IP et les ports du port de réception et du nœud correspondent.</span><span class="sxs-lookup"><span data-stu-id="836d0-111">The IP addresses and ports match between the receive port and the node.</span></span>  
   
-    2.  BizTalk Server est en cours d'exécution.  
+    2.  <span data-ttu-id="836d0-112">BizTalk Server est en cours d'exécution.</span><span class="sxs-lookup"><span data-stu-id="836d0-112">BizTalk Server is running.</span></span>  
   
-## <a name="see-also"></a>Voir aussi  
- [Création d’un Port et l’hôte de HTTP PeopleSoft](../core/creating-a-peoplesoft-http-host-and-port.md)
+## <a name="see-also"></a><span data-ttu-id="836d0-113">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="836d0-113">See Also</span></span>  
+ [<span data-ttu-id="836d0-114">Création d’un Port et l’hôte de HTTP PeopleSoft</span><span class="sxs-lookup"><span data-stu-id="836d0-114">Creating a PeopleSoft HTTP Host and Port</span></span>](../core/creating-a-peoplesoft-http-host-and-port.md)

@@ -18,10 +18,10 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="sample-interact-and-fileact-messages"></a>Exemple interagir et les Messages de FileAct
-Exemples de messages en temps réel d’interagir et FileAct sont fournis ci-dessous.  
+# <a name="sample-interact-and-fileact-messages"></a><span data-ttu-id="cf15b-102">Exemple interagir et les Messages de FileAct</span><span class="sxs-lookup"><span data-stu-id="cf15b-102">Sample InterAct and FileAct Messages</span></span>
+<span data-ttu-id="cf15b-103">Exemples de messages en temps réel d’interagir et FileAct sont fournis ci-dessous.</span><span class="sxs-lookup"><span data-stu-id="cf15b-103">Samples of InterAct and FileAct real-time messages are given below.</span></span>  
   
- **Exemple de message d’interagir en temps réel**  
+ <span data-ttu-id="cf15b-104">**Exemple de message d’interagir en temps réel**</span><span class="sxs-lookup"><span data-stu-id="cf15b-104">**Sample InterAct real-time message**</span></span>  
   
 ```  
 <SwInt-ExchangeRequest>  
@@ -33,7 +33,7 @@ TestPayloadRequestSnF
 </SwInt-ExchangeRequest>  
 ```  
   
- **Exemple FileAct en temps réel de message (requête put)**  
+ <span data-ttu-id="cf15b-105">**Exemple FileAct en temps réel de message (requête put)**</span><span class="sxs-lookup"><span data-stu-id="cf15b-105">**Sample FileAct real-time message (put request)**</span></span>  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -48,7 +48,7 @@ TestPayloadRequestSnF
 </Sw-ExchangeFileRequest>  
 ```  
   
- **Exemple FileAct en temps réel de message (requête get)**  
+ <span data-ttu-id="cf15b-106">**Exemple FileAct en temps réel de message (requête get)**</span><span class="sxs-lookup"><span data-stu-id="cf15b-106">**Sample FileAct real-time message (get request)**</span></span>  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  

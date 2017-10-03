@@ -18,5 +18,5 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="edi-and-as2-events"></a>Événements EDI et AS2
-Cette rubrique contient des informations sur les événements et les erreurs pour EDI. Elle inclut une description de l'erreur et des actions qui vous permettront de la corriger.
+# <a name="edi-and-as2-events"></a><span data-ttu-id="22616-102">Événements EDI et AS2</span><span class="sxs-lookup"><span data-stu-id="22616-102">EDI and AS2 Events</span></span>
+<span data-ttu-id="22616-103">Cette rubrique contient des informations sur les événements et les erreurs pour EDI.</span><span class="sxs-lookup"><span data-stu-id="22616-103">This section contains event and error information for EDI.</span></span> <span data-ttu-id="22616-104">Elle inclut une description de l'erreur et des actions qui vous permettront de la corriger.</span><span class="sxs-lookup"><span data-stu-id="22616-104">It includes a description of the error and actions you can take to help correct the error.</span></span>

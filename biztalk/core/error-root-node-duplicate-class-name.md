@@ -19,15 +19,15 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---root-node-duplicate-class-name"></a>Erreur : nom de classe dupliqué du nœud racine
-**Code d’erreur**  
+# <a name="error---root-node-duplicate-class-name"></a><span data-ttu-id="362b6-102">Erreur : nom de classe dupliqué du nœud racine</span><span class="sxs-lookup"><span data-stu-id="362b6-102">Error - Root Node Duplicate Class Name</span></span>
+<span data-ttu-id="362b6-103">**Code d’erreur**</span><span class="sxs-lookup"><span data-stu-id="362b6-103">**Error Code**</span></span>  
   
- BEC2013  
+ <span data-ttu-id="362b6-104">BEC2013</span><span class="sxs-lookup"><span data-stu-id="362b6-104">BEC2013</span></span>  
   
- **Explication**  
+ <span data-ttu-id="362b6-105">**Explication**</span><span class="sxs-lookup"><span data-stu-id="362b6-105">**Explanation**</span></span>  
   
- Le **RootNode TypeName** propriété de tous les nœuds racine dans un schéma doit être unique. Deux ou plusieurs nœuds racine dans ce schéma ont été trouvés pour avoir la même valeur pour leur **RootNode TypeName** propriétés.  
+ <span data-ttu-id="362b6-106">Le **RootNode TypeName** propriété de tous les nœuds racine dans un schéma doit être unique.</span><span class="sxs-lookup"><span data-stu-id="362b6-106">The **RootNode TypeName** property of all of the root nodes in a schema must be unique.</span></span> <span data-ttu-id="362b6-107">Deux ou plusieurs nœuds racine dans ce schéma ont été trouvés pour avoir la même valeur pour leur **RootNode TypeName** propriétés.</span><span class="sxs-lookup"><span data-stu-id="362b6-107">Two or more of the root nodes in this schema have been found to have the same value for their **RootNode TypeName** properties.</span></span>  
   
- **Action de l’utilisateur**  
+ <span data-ttu-id="362b6-108">**Action de l’utilisateur**</span><span class="sxs-lookup"><span data-stu-id="362b6-108">**User Action**</span></span>  
   
- Sélectionnez les nœuds concernés tour, en s’assurant que les valeurs que vous fournissez pour leurs **RootNode TypeName** propriétés sont valides et uniques.
+ <span data-ttu-id="362b6-109">Sélectionnez les nœuds concernés tour, en s’assurant que les valeurs que vous fournissez pour leurs **RootNode TypeName** propriétés sont valides et uniques.</span><span class="sxs-lookup"><span data-stu-id="362b6-109">Select the relevant root nodes in turn, ensuring that the values you supply for their **RootNode TypeName** properties are valid and unique.</span></span>

@@ -19,15 +19,15 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---unspecified-fatal-error"></a>Erreur - Erreur irrécupérable non spécifiée
-**Code d’erreur**  
+# <a name="error---unspecified-fatal-error"></a><span data-ttu-id="b5f95-102">Erreur - Erreur irrécupérable non spécifiée</span><span class="sxs-lookup"><span data-stu-id="b5f95-102">Error - Unspecified Fatal Error</span></span>
+<span data-ttu-id="b5f95-103">**Code d’erreur**</span><span class="sxs-lookup"><span data-stu-id="b5f95-103">**Error Code**</span></span>  
   
- BEC1001, BEC2004, BEC3001  
+ <span data-ttu-id="b5f95-104">BEC1001, BEC2004, BEC3001</span><span class="sxs-lookup"><span data-stu-id="b5f95-104">BEC1001, BEC2004, BEC3001</span></span>  
   
- **Explication**  
+ <span data-ttu-id="b5f95-105">**Explication**</span><span class="sxs-lookup"><span data-stu-id="b5f95-105">**Explanation**</span></span>  
   
- Une erreur irrécupérable non spécifiée s'est produite lors de la compilation d'un schéma.  
+ <span data-ttu-id="b5f95-106">Une erreur irrécupérable non spécifiée s'est produite lors de la compilation d'un schéma.</span><span class="sxs-lookup"><span data-stu-id="b5f95-106">An unspecified fatal error has occurred during schema compilation.</span></span>  
   
- **Action de l’utilisateur**  
+ <span data-ttu-id="b5f95-107">**Action de l’utilisateur**</span><span class="sxs-lookup"><span data-stu-id="b5f95-107">**User Action**</span></span>  
   
- Vérifiez que le fichier de schéma est valide et n'est pas endommagé.
+ <span data-ttu-id="b5f95-108">Vérifiez que le fichier de schéma est valide et n'est pas endommagé.</span><span class="sxs-lookup"><span data-stu-id="b5f95-108">Make sure the schema file is valid and not corrupted.</span></span>

@@ -19,11 +19,11 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="creating-the-fabrikam-solution"></a>Création de la solution Fabrikam
-Cette section contient les étapes à suivre pour créer la solution Fabrikam. Une fois que vous créez les organisations et accord de partenariat commercial, vous utilisez un exemple de kit de développement logiciel fourni dans [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)] pour communiquer avec l’application de métier (LOB) de Contoso.  
+# <a name="creating-the-fabrikam-solution"></a><span data-ttu-id="a8674-102">Création de la solution Fabrikam</span><span class="sxs-lookup"><span data-stu-id="a8674-102">Creating the Fabrikam Solution</span></span>
+<span data-ttu-id="a8674-103">Cette section contient les étapes à suivre pour créer la solution Fabrikam.</span><span class="sxs-lookup"><span data-stu-id="a8674-103">This section contains the steps that you have to follow to create the Fabrikam solution.</span></span> <span data-ttu-id="a8674-104">Une fois que vous créez les organisations et accord de partenariat commercial, vous utilisez un exemple de kit de développement logiciel fourni dans [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)] pour communiquer avec l’application de métier (LOB) de Contoso.</span><span class="sxs-lookup"><span data-stu-id="a8674-104">After you create the organizations and trading partner agreement, you use a SDK sample provided in [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)] to communicate with the Contoso line-of-business (LOB) application.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="a8674-105">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="a8674-105">In This Section</span></span>  
   
--   [Étape 1 : Création d’organisations et l’accord de partenariat commercial](../../adapters-and-accelerators/accelerator-rosettanet/step-1-creating-the-organizations-and-trading-partner-agreement.md)  
+-   [<span data-ttu-id="a8674-106">Étape 1 : Création d’organisations et l’accord de partenariat commercial</span><span class="sxs-lookup"><span data-stu-id="a8674-106">Step 1: Creating the Organizations and Trading Partner Agreement</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/step-1-creating-the-organizations-and-trading-partner-agreement.md)  
   
--   [Étape 2 : Création de Fabrikam LOBWebApplication](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-the-fabrikam-lobwebapplication.md)
+-   [<span data-ttu-id="a8674-107">Étape 2 : Création de Fabrikam LOBWebApplication</span><span class="sxs-lookup"><span data-stu-id="a8674-107">Step 2: Creating the Fabrikam LOBWebApplication</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-the-fabrikam-lobwebapplication.md)

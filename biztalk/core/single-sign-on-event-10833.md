@@ -18,21 +18,21 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="single-sign-on-event-10833"></a>Single Sign-On : Événement 10833
-## <a name="details"></a>Détails  
+# <a name="single-sign-on-event-10833"></a><span data-ttu-id="08fe8-102">Single Sign-On : Événement 10833</span><span class="sxs-lookup"><span data-stu-id="08fe8-102">Single Sign-On: Event 10833</span></span>
+## <a name="details"></a><span data-ttu-id="08fe8-103">Détails</span><span class="sxs-lookup"><span data-stu-id="08fe8-103">Details</span></span>  
   
 |||  
 |-|-|  
-|Nom du produit|Enterprise Single Sign-On|  
-|Version du produit|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|ID d'événement|10833|  
-|Source de l'événement|ENTSSO|  
-|Composant|Néant|  
-|Nom symbolique|ENTSSO_E_SSO_DATABASE_NOT_CONFIGURED|  
-|Texte du message|La base de données SSO spécifiée n'est pas configurée.|  
+|<span data-ttu-id="08fe8-104">Nom du produit</span><span class="sxs-lookup"><span data-stu-id="08fe8-104">Product Name</span></span>|<span data-ttu-id="08fe8-105">Enterprise Single Sign-On</span><span class="sxs-lookup"><span data-stu-id="08fe8-105">Enterprise Single Sign-On</span></span>|  
+|<span data-ttu-id="08fe8-106">Version du produit</span><span class="sxs-lookup"><span data-stu-id="08fe8-106">Product Version</span></span>|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
+|<span data-ttu-id="08fe8-107">ID d'événement</span><span class="sxs-lookup"><span data-stu-id="08fe8-107">Event ID</span></span>|<span data-ttu-id="08fe8-108">10833</span><span class="sxs-lookup"><span data-stu-id="08fe8-108">10833</span></span>|  
+|<span data-ttu-id="08fe8-109">Source de l'événement</span><span class="sxs-lookup"><span data-stu-id="08fe8-109">Event Source</span></span>|<span data-ttu-id="08fe8-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="08fe8-110">ENTSSO</span></span>|  
+|<span data-ttu-id="08fe8-111">Composant</span><span class="sxs-lookup"><span data-stu-id="08fe8-111">Component</span></span>|<span data-ttu-id="08fe8-112">Néant</span><span class="sxs-lookup"><span data-stu-id="08fe8-112">N/A</span></span>|  
+|<span data-ttu-id="08fe8-113">Nom symbolique</span><span class="sxs-lookup"><span data-stu-id="08fe8-113">Symbolic Name</span></span>|<span data-ttu-id="08fe8-114">ENTSSO_E_SSO_DATABASE_NOT_CONFIGURED</span><span class="sxs-lookup"><span data-stu-id="08fe8-114">ENTSSO_E_SSO_DATABASE_NOT_CONFIGURED</span></span>|  
+|<span data-ttu-id="08fe8-115">Texte du message</span><span class="sxs-lookup"><span data-stu-id="08fe8-115">Message Text</span></span>|<span data-ttu-id="08fe8-116">La base de données SSO spécifiée n'est pas configurée.</span><span class="sxs-lookup"><span data-stu-id="08fe8-116">The specified SSO database is not configured.</span></span>|  
   
-## <a name="explanation"></a>Explication  
- Le système ne parvient pas à trouver la base de données SSO que vous avez spécifiée.  
+## <a name="explanation"></a><span data-ttu-id="08fe8-117">Explication</span><span class="sxs-lookup"><span data-stu-id="08fe8-117">Explanation</span></span>  
+ <span data-ttu-id="08fe8-118">Le système ne parvient pas à trouver la base de données SSO que vous avez spécifiée.</span><span class="sxs-lookup"><span data-stu-id="08fe8-118">The system cannot find the SSO database you have specified.</span></span>  
   
-## <a name="user-action"></a>Action de l'utilisateur  
- Vérifiez que vous spécifiez les noms corrects de la base de données SSO et du serveur SQL Server.
+## <a name="user-action"></a><span data-ttu-id="08fe8-119">Action de l'utilisateur</span><span class="sxs-lookup"><span data-stu-id="08fe8-119">User Action</span></span>  
+ <span data-ttu-id="08fe8-120">Vérifiez que vous spécifiez les noms corrects de la base de données SSO et du serveur SQL Server.</span><span class="sxs-lookup"><span data-stu-id="08fe8-120">Confirm that you are specifying the correct names for the SSO database and SQL Server.</span></span>

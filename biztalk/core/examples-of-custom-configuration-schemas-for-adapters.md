@@ -18,19 +18,19 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="examples-of-custom-configuration-schemas-for-adapters"></a>Exemples de schémas de Configuration personnalisée pour les adaptateurs
-Cette section fournit les exemples suivants de personnalisation de schémas de configuration pour les adaptateurs :   
+# <a name="examples-of-custom-configuration-schemas-for-adapters"></a><span data-ttu-id="79780-102">Exemples de schémas de Configuration personnalisée pour les adaptateurs</span><span class="sxs-lookup"><span data-stu-id="79780-102">Examples of Custom Configuration Schemas for Adapters</span></span>
+<span data-ttu-id="79780-103">Cette section fournit les exemples suivants de personnalisation de schémas de configuration pour les adaptateurs : </span><span class="sxs-lookup"><span data-stu-id="79780-103">This section provides the following examples for how to customize configuration schemas for adapters:</span></span>  
   
--   **Exemple 1** montre un fichier de schéma XSD personnalisé complet représentant une page de propriétés de l’adaptateur avec les extensions baf : Designer et baf : description.  
+-   <span data-ttu-id="79780-104">**Exemple 1** montre un fichier de schéma XSD personnalisé complet représentant une page de propriétés de l’adaptateur avec les extensions baf : Designer et baf : description.</span><span class="sxs-lookup"><span data-stu-id="79780-104">**Example 1** shows a complete custom XSD schema file representing an adapter property page using the baf:designer and baf:description extensions.</span></span>  
   
--   **Exemple 2** utilise également les extensions baf : Designer et baf : description pour montrer comment créer une fenêtre de valeur de propriété personnalisée pour le **BatchSize** propriété qui accepte uniquement les valeurs comprises entre 1 et 99 inclus.  
+-   <span data-ttu-id="79780-105">**Exemple 2** utilise également les extensions baf : Designer et baf : description pour montrer comment créer une fenêtre de valeur de propriété personnalisée pour le **BatchSize** propriété qui accepte uniquement les valeurs comprises entre 1 et 99 inclus.</span><span class="sxs-lookup"><span data-stu-id="79780-105">**Example 2** also uses the baf:designer and baf:description extensions to show how to create a custom property value window for the **BatchSize** property that only accepts values between 1 and 99, inclusive.</span></span>  
   
--   **Exemple 3** montre comment limiter baf : Password à 8 caractères. Par défaut, 22 caractères sont possibles.  
+-   <span data-ttu-id="79780-106">**Exemple 3** montre comment limiter baf : Password à 8 caractères.</span><span class="sxs-lookup"><span data-stu-id="79780-106">**Example 3** shows how to limit the baf:Password to 8 characters.</span></span> <span data-ttu-id="79780-107">Par défaut, 22 caractères sont possibles.</span><span class="sxs-lookup"><span data-stu-id="79780-107">By default, it allows 22 characters.</span></span>  
   
--   **Exemple 4** montre comment implémenter des contraintes de critères spéciaux sur les valeurs de propriété, car les modèles XSD ne sont pas pris en charge.  
+-   <span data-ttu-id="79780-108">**Exemple 4** montre comment implémenter des contraintes de critères spéciaux sur les valeurs de propriété, car les modèles XSD ne sont pas pris en charge.</span><span class="sxs-lookup"><span data-stu-id="79780-108">**Example 4** shows how to implement pattern-matching constraints on property values because XSD patterns are not supported.</span></span>  
   
-## <a name="example-1"></a>Exemple 1  
- Cet exemple illustre un schéma XSD personnalisé complet. Il représente une page de propriété d'adaptateur avec les extensions baf:designer et baf:description.  
+## <a name="example-1"></a><span data-ttu-id="79780-109">Exemple 1</span><span class="sxs-lookup"><span data-stu-id="79780-109">Example 1</span></span>  
+ <span data-ttu-id="79780-110">Cet exemple illustre un schéma XSD personnalisé complet.</span><span class="sxs-lookup"><span data-stu-id="79780-110">This example shows a complete custom XSD schema.</span></span> <span data-ttu-id="79780-111">Il représente une page de propriété d'adaptateur avec les extensions baf:designer et baf:description.</span><span class="sxs-lookup"><span data-stu-id="79780-111">It represents an adapter property page using the baf:designer and baf:description extensions.</span></span>  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -88,8 +88,8 @@ Cette section fournit les exemples suivants de personnalisation de schémas de c
 </xs:schema>  
 ```  
   
-## <a name="example-2"></a>Exemple 2  
- Cet exemple utilise les extensions baf : Designer et baf : description pour montrer comment créer une fenêtre de valeur de propriété personnalisée pour le **BatchSize** propriété qui accepte uniquement les valeurs comprises entre 1 et 99 inclus.  
+## <a name="example-2"></a><span data-ttu-id="79780-112">Exemple 2</span><span class="sxs-lookup"><span data-stu-id="79780-112">Example 2</span></span>  
+ <span data-ttu-id="79780-113">Cet exemple utilise les extensions baf : Designer et baf : description pour montrer comment créer une fenêtre de valeur de propriété personnalisée pour le **BatchSize** propriété qui accepte uniquement les valeurs comprises entre 1 et 99 inclus.</span><span class="sxs-lookup"><span data-stu-id="79780-113">This example uses the baf:designer and baf:description extensions to show how to create a custom property value window for the **BatchSize** property that only accepts values between 1 and 99, inclusive.</span></span>  
   
 ```  
    <xs:element name="BatchSize">  
@@ -110,8 +110,8 @@ Cette section fournit les exemples suivants de personnalisation de schémas de c
         </xs:element>  
 ```  
   
-## <a name="example-3"></a>Exemple 3  
- Cet exemple montre comment limiter baf:Password à 8 caractères. Par défaut, 22 caractères sont possibles.  
+## <a name="example-3"></a><span data-ttu-id="79780-114">Exemple 3</span><span class="sxs-lookup"><span data-stu-id="79780-114">Example 3</span></span>  
+ <span data-ttu-id="79780-115">Cet exemple montre comment limiter baf:Password à 8 caractères.</span><span class="sxs-lookup"><span data-stu-id="79780-115">This example shows how to limit the baf:Password to 8 characters.</span></span> <span data-ttu-id="79780-116">Par défaut, 22 caractères sont possibles.</span><span class="sxs-lookup"><span data-stu-id="79780-116">By default, it allows 22 characters.</span></span>  
   
 ```  
 <xs:element name="AdapterPassword">  
@@ -133,12 +133,12 @@ Cette section fournit les exemples suivants de personnalisation de schémas de c
         </xs:element>  
 ```  
   
-## <a name="example-4"></a>Exemple 4  
- Cet exemple montre comment implémenter des contraintes de critères spéciaux sur les valeurs de propriété car les modèles XSD ne sont pas pris en charge.  
+## <a name="example-4"></a><span data-ttu-id="79780-117">Exemple 4</span><span class="sxs-lookup"><span data-stu-id="79780-117">Example 4</span></span>  
+ <span data-ttu-id="79780-118">Cet exemple montre comment implémenter des contraintes de critères spéciaux sur les valeurs de propriété car les modèles XSD ne sont pas pris en charge.</span><span class="sxs-lookup"><span data-stu-id="79780-118">This example shows how to implement pattern-matching constraints on property values because XSD patterns are not supported.</span></span>  
   
- Les champs tels que **ClientIdentifier** sont toujours une chaîne de trois caractères numérique. La valeur de propriété 10 ne sera pas correcte, mais la valeur 010 si. Le fragment de schéma de configuration suivant définit un **ClientIdentifier** propriété. Le **ClientIdentifierConverter** (classe), implémentée dans votre assembly d’adaptateur, implémente la recherche de correspondance. Dans le cas présent, le convertisseur de type personnalisé restreint les valeurs à une chaîne d'exactement trois chiffres (000 à 999). Dans le schéma de configuration, assurez-vous que l'assembly et le nom complet du type pour le nœud baf:converter sont correctement définis. Si l'utilisateur tente d'entrer une valeur incorrecte, un message s'affiche dès qu'une erreur de validation se produit dans la page de propriétés.  
+ <span data-ttu-id="79780-119">Les champs tels que **ClientIdentifier** sont toujours une chaîne de trois caractères numérique.</span><span class="sxs-lookup"><span data-stu-id="79780-119">Fields such as **ClientIdentifier** are always a three-character numeric string.</span></span> <span data-ttu-id="79780-120">La valeur de propriété 10 ne sera pas correcte, mais la valeur 010 si.</span><span class="sxs-lookup"><span data-stu-id="79780-120">A property value of 10 is not valid, whereas 010 is valid.</span></span> <span data-ttu-id="79780-121">Le fragment de schéma de configuration suivant définit un **ClientIdentifier** propriété.</span><span class="sxs-lookup"><span data-stu-id="79780-121">The following configuration schema fragment defines a **ClientIdentifier** property.</span></span> <span data-ttu-id="79780-122">Le **ClientIdentifierConverter** (classe), implémentée dans votre assembly d’adaptateur, implémente la recherche de correspondance.</span><span class="sxs-lookup"><span data-stu-id="79780-122">The **ClientIdentifierConverter** class, implemented in your adapter assembly, implements pattern matching.</span></span> <span data-ttu-id="79780-123">Dans le cas présent, le convertisseur de type personnalisé restreint les valeurs à une chaîne d'exactement trois chiffres (000 à 999).</span><span class="sxs-lookup"><span data-stu-id="79780-123">In this case, the custom type converter restricts values to a string of exactly three digits (000 to 999).</span></span> <span data-ttu-id="79780-124">Dans le schéma de configuration, assurez-vous que l'assembly et le nom complet du type pour le nœud baf:converter sont correctement définis.</span><span class="sxs-lookup"><span data-stu-id="79780-124">In the configuration schema, make sure the baf:converter node has the assembly and type full name set correctly.</span></span> <span data-ttu-id="79780-125">Si l'utilisateur tente d'entrer une valeur incorrecte, un message s'affiche dès qu'une erreur de validation se produit dans la page de propriétés.</span><span class="sxs-lookup"><span data-stu-id="79780-125">If the user attempts to enter a value that is not valid, an exception message pops up when a validation error occurs in the property page.</span></span>  
   
- Vous pouvez employer le code suivant dans les schémas de configuration de la page de propriétés de l'adaptateur.  
+ <span data-ttu-id="79780-126">Vous pouvez employer le code suivant dans les schémas de configuration de la page de propriétés de l'adaptateur.</span><span class="sxs-lookup"><span data-stu-id="79780-126">You can use the following code in the adapter property page configuration schemas.</span></span>  
   
 ```  
         <xs:element name="ClientIdentifier" type="xs:string">  
@@ -154,7 +154,7 @@ Cette section fournit les exemples suivants de personnalisation de schémas de c
         </xs:element>  
 ```  
   
- Vous pouvez intégrer le code suivant dans l'assembly de votre adaptateur.  
+ <span data-ttu-id="79780-127">Vous pouvez intégrer le code suivant dans l'assembly de votre adaptateur.</span><span class="sxs-lookup"><span data-stu-id="79780-127">You can place the following code in your adapter assembly.</span></span>  
   
 ```  
 using System;  
@@ -200,5 +200,5 @@ namespace Microsoft.BizTalk.TestAdapter
 }  
 ```  
   
-## <a name="see-also"></a>Voir aussi  
- [Extensions de schéma de Configuration Framework adaptateur](../core/adapter-framework-configuration-schema-extensions.md)
+## <a name="see-also"></a><span data-ttu-id="79780-128">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="79780-128">See Also</span></span>  
+ [<span data-ttu-id="79780-129">Extensions de schéma de Configuration Framework adaptateur</span><span class="sxs-lookup"><span data-stu-id="79780-129">Adapter Framework Configuration Schema Extensions</span></span>](../core/adapter-framework-configuration-schema-extensions.md)

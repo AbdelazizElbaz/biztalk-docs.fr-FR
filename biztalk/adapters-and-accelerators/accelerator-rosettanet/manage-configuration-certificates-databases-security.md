@@ -19,19 +19,19 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="manage-configuration-certificates-databases-and-security"></a>Gérer la configuration, les certificats, les bases de données et la sécurité
-Cette section fournit des informations conceptuelles et des procédures qui vous permet de configurer, surveiller et gérer efficacement vos [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] environnement d’application.  
+# <a name="manage-configuration-certificates-databases-and-security"></a><span data-ttu-id="28f3c-103">Gérer la configuration, les certificats, les bases de données et la sécurité</span><span class="sxs-lookup"><span data-stu-id="28f3c-103">Manage configuration, certificates, databases, and security</span></span>
+<span data-ttu-id="28f3c-104">Cette section fournit des informations conceptuelles et des procédures qui vous permet de configurer, surveiller et gérer efficacement vos [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] environnement d’application.</span><span class="sxs-lookup"><span data-stu-id="28f3c-104">This section provides conceptual and procedural information that lets you effectively configure, monitor, and maintain your [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] application environment.</span></span>  
   
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a><span data-ttu-id="28f3c-105">Étapes suivantes</span><span class="sxs-lookup"><span data-stu-id="28f3c-105">Next steps</span></span>
   
--   [Administration de la Configuration de BTARN](../../adapters-and-accelerators/accelerator-rosettanet/administering-the-btarn-configuration.md)  
+-   [<span data-ttu-id="28f3c-106">Administration de la Configuration de BTARN</span><span class="sxs-lookup"><span data-stu-id="28f3c-106">Administering the BTARN Configuration</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/administering-the-btarn-configuration.md)  
   
--   [La gestion des certificats](../../adapters-and-accelerators/accelerator-rosettanet/managing-certificates1.md)  
+-   [<span data-ttu-id="28f3c-107">La gestion des certificats</span><span class="sxs-lookup"><span data-stu-id="28f3c-107">Managing Certificates</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/managing-certificates1.md)  
   
--   [Maintenance des bases de données BTARN](../../adapters-and-accelerators/accelerator-rosettanet/maintaining-btarn-databases.md)  
+-   [<span data-ttu-id="28f3c-108">Maintenance des bases de données BTARN</span><span class="sxs-lookup"><span data-stu-id="28f3c-108">Maintaining BTARN Databases</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/maintaining-btarn-databases.md)  
   
--   [Sécurisation de la Page ASPX expéditeur](../../adapters-and-accelerators/accelerator-rosettanet/securing-the-sender-aspx-page.md)  
+-   [<span data-ttu-id="28f3c-109">Sécurisation de la Page ASPX expéditeur</span><span class="sxs-lookup"><span data-stu-id="28f3c-109">Securing the Sender ASPX Page</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/securing-the-sender-aspx-page.md)  
   
--   [Protection contre les attaques par déni de Service](../../adapters-and-accelerators/accelerator-rosettanet/defending-against-denial-of-service-attacks.md)  
+-   [<span data-ttu-id="28f3c-110">Protection contre les attaques par déni de Service</span><span class="sxs-lookup"><span data-stu-id="28f3c-110">Defending Against Denial-of-Service Attacks</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/defending-against-denial-of-service-attacks.md)  
   
--   [Utilisation avec le fichier de définition des activités de suivi](../../adapters-and-accelerators/accelerator-rosettanet/working-with-the-tracking-activity-definition-file.md)
+-   [<span data-ttu-id="28f3c-111">Utilisation avec le fichier de définition des activités de suivi</span><span class="sxs-lookup"><span data-stu-id="28f3c-111">Working with the Tracking Activity Definition File</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/working-with-the-tracking-activity-definition-file.md)

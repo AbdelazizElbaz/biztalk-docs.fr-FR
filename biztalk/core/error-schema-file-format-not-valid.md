@@ -19,11 +19,11 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---schema-file-format-not-valid"></a>Erreur : Format de fichier de schéma non valide
-**Explication**  
+# <a name="error---schema-file-format-not-valid"></a><span data-ttu-id="48d1c-102">Erreur : Format de fichier de schéma non valide</span><span class="sxs-lookup"><span data-stu-id="48d1c-102">Error - Schema File Format Not Valid</span></span>
+<span data-ttu-id="48d1c-103">**Explication**</span><span class="sxs-lookup"><span data-stu-id="48d1c-103">**Explanation**</span></span>  
   
- Le fichier de schéma ne contient pas de syntaxe XSD (XML Schema Definition language) valide.  
+ <span data-ttu-id="48d1c-104">Le fichier de schéma ne contient pas de syntaxe XSD (XML Schema Definition language) valide.</span><span class="sxs-lookup"><span data-stu-id="48d1c-104">The schema file does not contain valid XML Schema Definition language (XSD) syntax.</span></span>  
   
- **Action de l’utilisateur**  
+ <span data-ttu-id="48d1c-105">**Action de l’utilisateur**</span><span class="sxs-lookup"><span data-stu-id="48d1c-105">**User Action**</span></span>  
   
- Vérifiez l'origine du fichier de schéma pour déterminer la cause du problème.
+ <span data-ttu-id="48d1c-106">Vérifiez l'origine du fichier de schéma pour déterminer la cause du problème.</span><span class="sxs-lookup"><span data-stu-id="48d1c-106">Verify the origin of the schema file to determine the cause of the problem.</span></span>

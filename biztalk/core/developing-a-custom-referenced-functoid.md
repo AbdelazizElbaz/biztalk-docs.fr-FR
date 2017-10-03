@@ -18,11 +18,11 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="developing-a-custom-referenced-functoid"></a>Développement d'un fonctoid référencé personnalisé
-Les fonctoids référencés personnalisés ne copient pas le code inline d'implémentation dans le mappage. À la place, une référence à l’assembly, à la classe et à la méthode est placée dans le fichier de l'objet d'extension associé à la feuille de style générée et appelé au moment de l’exécution.  
+# <a name="developing-a-custom-referenced-functoid"></a><span data-ttu-id="f84f3-102">Développement d'un fonctoid référencé personnalisé</span><span class="sxs-lookup"><span data-stu-id="f84f3-102">Developing a Custom Referenced Functoid</span></span>
+<span data-ttu-id="f84f3-103">Les fonctoids référencés personnalisés ne copient pas le code inline d'implémentation dans le mappage.</span><span class="sxs-lookup"><span data-stu-id="f84f3-103">Custom referenced functoids do not copy implementation code inline into the map.</span></span> <span data-ttu-id="f84f3-104">À la place, une référence à l’assembly, à la classe et à la méthode est placée dans le fichier de l'objet d'extension associé à la feuille de style générée et appelé au moment de l’exécution.</span><span class="sxs-lookup"><span data-stu-id="f84f3-104">Instead, a reference to the assembly, class, and method is placed in the extension object file associated with the generated style sheet and called at run time.</span></span>  
   
-## <a name="example"></a>Exemple  
- L'exemple suivant montre comment créer un fonctoid référencé personnalisé pour concaténer deux chaînes. Il repose sur un fichier de ressources contenant trois ressources de chaîne et une ressource bitmap 16 x 16 pixels.  
+## <a name="example"></a><span data-ttu-id="f84f3-105">Exemple</span><span class="sxs-lookup"><span data-stu-id="f84f3-105">Example</span></span>  
+ <span data-ttu-id="f84f3-106">L'exemple suivant montre comment créer un fonctoid référencé personnalisé pour concaténer deux chaînes.</span><span class="sxs-lookup"><span data-stu-id="f84f3-106">The following example illustrates how to create a custom referenced functoid for concatenating two strings.</span></span> <span data-ttu-id="f84f3-107">Il repose sur un fichier de ressources contenant trois ressources de chaîne et une ressource bitmap 16 x 16 pixels.</span><span class="sxs-lookup"><span data-stu-id="f84f3-107">It relies on a resource file containing three string resources and a 16x16-pixel bitmap resource.</span></span>  
   
 ```  
 using System;  
@@ -83,8 +83,8 @@ namespace Microsoft.Samples.BizTalk.CustomFunctoid
 }  
 ```  
   
-## <a name="see-also"></a>Voir aussi  
- [Utilisation de BaseFunctoid](../core/using-basefunctoid.md)   
- [Développement d’un fonctoid Inline personnalisé](../core/developing-a-custom-inline-functoid.md)   
- [Développement d’un fonctoid cumulé personnalisé](../core/developing-a-custom-cumulative-functoid.md)   
- [Fonctoid personnalisé (exemple BizTalk Server)](../core/custom-functoid-biztalk-server-sample.md)
+## <a name="see-also"></a><span data-ttu-id="f84f3-108">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="f84f3-108">See Also</span></span>  
+ <span data-ttu-id="f84f3-109">[Utilisation de BaseFunctoid](../core/using-basefunctoid.md) </span><span class="sxs-lookup"><span data-stu-id="f84f3-109">[Using BaseFunctoid](../core/using-basefunctoid.md) </span></span>  
+ <span data-ttu-id="f84f3-110">[Développement d’un fonctoid Inline personnalisé](../core/developing-a-custom-inline-functoid.md) </span><span class="sxs-lookup"><span data-stu-id="f84f3-110">[Developing a Custom Inline Functoid](../core/developing-a-custom-inline-functoid.md) </span></span>  
+ <span data-ttu-id="f84f3-111">[Développement d’un fonctoid cumulé personnalisé](../core/developing-a-custom-cumulative-functoid.md) </span><span class="sxs-lookup"><span data-stu-id="f84f3-111">[Developing a Custom Cumulative Functoid](../core/developing-a-custom-cumulative-functoid.md) </span></span>  
+ [<span data-ttu-id="f84f3-112">Fonctoid personnalisé (exemple BizTalk Server)</span><span class="sxs-lookup"><span data-stu-id="f84f3-112">Custom Functoid (BizTalk Server Sample)</span></span>](../core/custom-functoid-biztalk-server-sample.md)

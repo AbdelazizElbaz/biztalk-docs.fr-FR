@@ -18,11 +18,11 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error--the-target-node-39039-has-more-than-one-unconditional-nil-value-functoid-connected-to-it-reduce-the-number-to-one"></a>Nœud cible de l’erreur : le &#39; {0} &#39; a plusieurs des fonctoids valeur Nil inconditionnels connectés. Réduisez leur nombre à un.
-**Code d’erreur**  
+# <a name="error--the-target-node-39039-has-more-than-one-unconditional-nil-value-functoid-connected-to-it-reduce-the-number-to-one"></a><span data-ttu-id="161e2-104">Nœud cible de l’erreur : le &#39; {0} &#39; a plusieurs des fonctoids valeur Nil inconditionnels connectés.</span><span class="sxs-lookup"><span data-stu-id="161e2-104">Error- The target node &#39;{0}&#39; has more than one unconditional Nil-Value functoid connected to it.</span></span> <span data-ttu-id="161e2-105">Réduisez leur nombre à un.</span><span class="sxs-lookup"><span data-stu-id="161e2-105">Reduce the number to one.</span></span>
+<span data-ttu-id="161e2-106">**Code d’erreur**</span><span class="sxs-lookup"><span data-stu-id="161e2-106">**Error Code**</span></span>  
   
- btm1084  
+ <span data-ttu-id="161e2-107">btm1084</span><span class="sxs-lookup"><span data-stu-id="161e2-107">btm1084</span></span>  
   
- **Action de l’utilisateur**  
+ <span data-ttu-id="161e2-108">**Action de l’utilisateur**</span><span class="sxs-lookup"><span data-stu-id="161e2-108">**User Action**</span></span>  
   
- Ajouter des conditions aux fonctoids valeur Nil (ajoutez une entrée à partir d’un fonctoid logique ou une valeur booléenne) pour plus d’informations, consultez le lien [comment ajouter des fonctoids valeur Nil à un mappage](http://go.microsoft.com/fwlink/?LinkId=196675).
+ <span data-ttu-id="161e2-109">Ajouter des conditions aux fonctoids valeur Nil (ajoutez une entrée à partir d’un fonctoid logique ou une valeur booléenne) pour plus d’informations, consultez le lien [comment ajouter des fonctoids valeur Nil à un mappage](http://go.microsoft.com/fwlink/?LinkId=196675).</span><span class="sxs-lookup"><span data-stu-id="161e2-109">Add conditions to the Nil-Value functoids (add an input from either a logical functoid or some boolean)For additional details check this link [How to Add Nil Value Functoids to a Map](http://go.microsoft.com/fwlink/?LinkId=196675).</span></span>

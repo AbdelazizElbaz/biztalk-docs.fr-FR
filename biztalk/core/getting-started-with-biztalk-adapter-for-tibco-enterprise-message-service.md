@@ -19,19 +19,19 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="getting-started-with-biztalk-adapter-for-tibco-enterprise-message-service"></a>Mise en route de l'adaptateur Microsoft BizTalk pour TIBCO Enterprise Message Service
-Cette section décrit la configuration et l'utilisation de l'adaptateur Microsoft BizTalk pour que TIBCO Enterprise Message Service puisse accéder aux messages TIBCO Enterprise Message Service.  
+# <a name="getting-started-with-biztalk-adapter-for-tibco-enterprise-message-service"></a><span data-ttu-id="f9a9d-102">Mise en route de l'adaptateur Microsoft BizTalk pour TIBCO Enterprise Message Service</span><span class="sxs-lookup"><span data-stu-id="f9a9d-102">Getting Started with BizTalk Adapter for TIBCO Enterprise Message Service</span></span>
+<span data-ttu-id="f9a9d-103">Cette section décrit la configuration et l'utilisation de l'adaptateur Microsoft BizTalk pour que TIBCO Enterprise Message Service puisse accéder aux messages TIBCO Enterprise Message Service.</span><span class="sxs-lookup"><span data-stu-id="f9a9d-103">This section describes how to configure and use Microsoft BizTalk Adapter for TIBCO Enterprise Message Service to access TIBCO Enterprise Message Service messages.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="f9a9d-104">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="f9a9d-104">In This Section</span></span>  
   
--   [Préparation de TIBCO Enterprise Message Service](../core/preparing-tibco-enterprise-message-service.md)  
+-   [<span data-ttu-id="f9a9d-105">Préparation de TIBCO Enterprise Message Service</span><span class="sxs-lookup"><span data-stu-id="f9a9d-105">Preparing TIBCO Enterprise Message Service</span></span>](../core/preparing-tibco-enterprise-message-service.md)  
   
--   [Fonctionnalités de l’adaptateur](../core/adapter-features.md)  
+-   [<span data-ttu-id="f9a9d-106">Fonctionnalités de l’adaptateur</span><span class="sxs-lookup"><span data-stu-id="f9a9d-106">Adapter Features</span></span>](../core/adapter-features.md)  
   
--   [Character Encoding](../core/character-encoding.md)  
+-   [<span data-ttu-id="f9a9d-107">Character Encoding</span><span class="sxs-lookup"><span data-stu-id="f9a9d-107">Character Encoding</span></span>](../core/character-encoding.md)  
   
--   [Messages](../core/messages.md)  
+-   [<span data-ttu-id="f9a9d-108">Messages</span><span class="sxs-lookup"><span data-stu-id="f9a9d-108">Messages</span></span>](../core/messages.md)  
   
--   [L’installation de l’adaptateur BizTalk pour TIBCO Enterprise Message Service](../core/installing-biztalk-adapter-for-tibco-enterprise-message-service.md)  
+-   [<span data-ttu-id="f9a9d-109">L’installation de l’adaptateur BizTalk pour TIBCO Enterprise Message Service</span><span class="sxs-lookup"><span data-stu-id="f9a9d-109">Installing BizTalk Adapter for TIBCO Enterprise Message Service</span></span>](../core/installing-biztalk-adapter-for-tibco-enterprise-message-service.md)  
   
--   [Didacticiels : À l’aide de l’adaptateur Microsoft BizTalk pour TIBCO Enterprise Message Service](../core/tutorials-use-the-microsoft-biztalk-adapter-for-tibco-message-service.md)
+-   [<span data-ttu-id="f9a9d-110">Didacticiels : À l’aide de l’adaptateur Microsoft BizTalk pour TIBCO Enterprise Message Service</span><span class="sxs-lookup"><span data-stu-id="f9a9d-110">Tutorials: Using the Microsoft BizTalk Adapter for TIBCO Enterprise Message Service</span></span>](../core/tutorials-use-the-microsoft-biztalk-adapter-for-tibco-message-service.md)

@@ -22,16 +22,16 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-set-receive-pipelines-for-tibco-rendezvous"></a>Configuration des pipelines de réception pour TIBCO Rendezvous
-L'adaptateur Microsoft BizTalk pour TIBCO Rendezvous requiert la définition du gestionnaire de réception et du pipeline de réception.  
+# <a name="how-to-set-receive-pipelines-for-tibco-rendezvous"></a><span data-ttu-id="7fac3-102">Configuration des pipelines de réception pour TIBCO Rendezvous</span><span class="sxs-lookup"><span data-stu-id="7fac3-102">How to Set Receive Pipelines for TIBCO Rendezvous</span></span>
+<span data-ttu-id="7fac3-103">L'adaptateur Microsoft BizTalk pour TIBCO Rendezvous requiert la définition du gestionnaire de réception et du pipeline de réception.</span><span class="sxs-lookup"><span data-stu-id="7fac3-103">Microsoft BizTalk Adapter for TIBCO Rendezvous requires that you set the receive handler and receive pipeline.</span></span>  
   
-### <a name="to-set-the-pipeline"></a>Pour définir le pipeline  
+### <a name="to-set-the-pipeline"></a><span data-ttu-id="7fac3-104">Pour définir le pipeline</span><span class="sxs-lookup"><span data-stu-id="7fac3-104">To set the pipeline</span></span>  
   
-1.  Définir le **Gestionnaire de réception** à **BizTalkServerIsolatedHost** dans la liste.  
+1.  <span data-ttu-id="7fac3-105">Définir le **Gestionnaire de réception** à **BizTalkServerIsolatedHost** dans la liste.</span><span class="sxs-lookup"><span data-stu-id="7fac3-105">Set the **Receive Handler** to **BizTalkServerIsolatedHost** in the list.</span></span>  
   
-2.  Définir le **Pipeline de réception** à **XMLReceive** ou tout pipeline équivalent.  
+2.  <span data-ttu-id="7fac3-106">Définir le **Pipeline de réception** à **XMLReceive** ou tout pipeline équivalent.</span><span class="sxs-lookup"><span data-stu-id="7fac3-106">Set the **Receive Pipeline** to **XMLReceive** or any equivalent pipeline.</span></span>  
   
-3.  Cliquez sur **OK**.  
+3.  <span data-ttu-id="7fac3-107">Cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="7fac3-107">Click **OK**.</span></span>  
   
-## <a name="see-also"></a>Voir aussi  
- [Gestionnaires de réception création TIBCO Rendezvous](../core/creating-tibco-rendezvous-receive-handlers.md)
+## <a name="see-also"></a><span data-ttu-id="7fac3-108">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="7fac3-108">See Also</span></span>  
+ [<span data-ttu-id="7fac3-109">Gestionnaires de réception création TIBCO Rendezvous</span><span class="sxs-lookup"><span data-stu-id="7fac3-109">Creating TIBCO Rendezvous Receive Handlers</span></span>](../core/creating-tibco-rendezvous-receive-handlers.md)

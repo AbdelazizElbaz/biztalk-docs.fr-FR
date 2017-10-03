@@ -19,15 +19,15 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="information---display-xslt-file"></a>Information : affichage fichier XSLT
-**Code d’erreur**  
+# <a name="information---display-xslt-file"></a><span data-ttu-id="0e0b2-102">Information : affichage fichier XSLT</span><span class="sxs-lookup"><span data-stu-id="0e0b2-102">Information - Display XSLT File</span></span>
+<span data-ttu-id="0e0b2-103">**Code d’erreur**</span><span class="sxs-lookup"><span data-stu-id="0e0b2-103">**Error Code**</span></span>  
   
- btm1055  
+ <span data-ttu-id="0e0b2-104">btm1055</span><span class="sxs-lookup"><span data-stu-id="0e0b2-104">btm1055</span></span>  
   
- **Explication**  
+ <span data-ttu-id="0e0b2-105">**Explication**</span><span class="sxs-lookup"><span data-stu-id="0e0b2-105">**Explanation**</span></span>  
   
- L'élément XSLT destiné à effectuer le mappage indiqué à partir de messages de l'instance correspondant au schéma source vers des messages de l'instance correspondant au schéma de destination a été écrit dans le fichier.  
+ <span data-ttu-id="0e0b2-106">L'élément XSLT destiné à effectuer le mappage indiqué à partir de messages de l'instance correspondant au schéma source vers des messages de l'instance correspondant au schéma de destination a été écrit dans le fichier.</span><span class="sxs-lookup"><span data-stu-id="0e0b2-106">The XSLT produced to perform the specified mapping from instance messages that conform to the source schema into instance messages that conform to the destination schema has been written to the indicated file.</span></span>  
   
- **Action de l’utilisateur**  
+ <span data-ttu-id="0e0b2-107">**Action de l’utilisateur**</span><span class="sxs-lookup"><span data-stu-id="0e0b2-107">**User Action**</span></span>  
   
- Cliquez sur le lien correspondant pour ouvrir le fichier XSLT résultant et utilisez ce dernier pour effectuer diverses tâches dans d'autres outils, notamment le débogueur XSLT.
+ <span data-ttu-id="0e0b2-108">Cliquez sur le lien correspondant pour ouvrir le fichier XSLT résultant et utilisez ce dernier pour effectuer diverses tâches dans d'autres outils, notamment le débogueur XSLT.</span><span class="sxs-lookup"><span data-stu-id="0e0b2-108">You can access the resulting XSLT using the provided link, and use it to perform various tasks in other tools, such as an XSLT debugger.</span></span>

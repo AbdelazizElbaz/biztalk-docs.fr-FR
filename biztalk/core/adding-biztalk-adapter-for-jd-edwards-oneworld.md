@@ -22,11 +22,11 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="adding-biztalk-adapter-for-jd-edwards-oneworld"></a>Ajout de l'adaptateur Microsoft BizTalk pour JD Edwards OneWorld
-Cette section décrit l'ajout de l'adaptateur Microsoft BizTalk pour JD Edwards OneWorld à l'administrateur BizTalk Server.  
+# <a name="adding-biztalk-adapter-for-jd-edwards-oneworld"></a><span data-ttu-id="5d8f1-102">Ajout de l'adaptateur Microsoft BizTalk pour JD Edwards OneWorld</span><span class="sxs-lookup"><span data-stu-id="5d8f1-102">Adding BizTalk Adapter for JD Edwards OneWorld</span></span>
+<span data-ttu-id="5d8f1-103">Cette section décrit l'ajout de l'adaptateur Microsoft BizTalk pour JD Edwards OneWorld à l'administrateur BizTalk Server.</span><span class="sxs-lookup"><span data-stu-id="5d8f1-103">This section explains how to add Microsoft BizTalk Adapter for JD Edwards OneWorld to the BizTalk Server Administrator.</span></span>  
   
- Si vous avez déjà ajouté cet adaptateur à Microsoft BizTalk Server, il n'est pas nécessaire de l'ajouter à nouveau.  
+ <span data-ttu-id="5d8f1-104">Si vous avez déjà ajouté cet adaptateur à Microsoft BizTalk Server, il n'est pas nécessaire de l'ajouter à nouveau.</span><span class="sxs-lookup"><span data-stu-id="5d8f1-104">If you have already added the adapter to Microsoft BizTalk Server, you do not need to add it again.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="5d8f1-105">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="5d8f1-105">In This Section</span></span>  
   
--   [Ajout de l’adaptateur à BizTalk Server](../core/adding-the-adapter-to-biztalk-server.md)
+-   [<span data-ttu-id="5d8f1-106">Ajout de l’adaptateur à BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="5d8f1-106">Adding the Adapter to BizTalk Server</span></span>](../core/adding-the-adapter-to-biztalk-server.md)

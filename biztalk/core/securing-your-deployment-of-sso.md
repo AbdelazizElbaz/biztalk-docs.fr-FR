@@ -21,11 +21,11 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="securing-your-deployment-of-sso"></a>Sécurisation de votre déploiement de l’authentification unique
-Cette section présente un scénario type permettant de déployer l'authentification unique de l'entreprise en toute sécurité. Pour obtenir des procédures détaillées relatives aux actions à effectuer dans SQL Server, consultez la documentation SQL Server.  
+# <a name="securing-your-deployment-of-sso"></a><span data-ttu-id="97f0c-102">Sécurisation de votre déploiement de l’authentification unique</span><span class="sxs-lookup"><span data-stu-id="97f0c-102">Securing Your Deployment of SSO</span></span>
+<span data-ttu-id="97f0c-103">Cette section présente un scénario type permettant de déployer l'authentification unique de l'entreprise en toute sécurité.</span><span class="sxs-lookup"><span data-stu-id="97f0c-103">This section outlines a typical scenario for secure deployment of Enterprise Single Sign-On.</span></span> <span data-ttu-id="97f0c-104">Pour obtenir des procédures détaillées relatives aux actions à effectuer dans SQL Server, consultez la documentation SQL Server.</span><span class="sxs-lookup"><span data-stu-id="97f0c-104">For detailed procedures on the actions to take in SQL Server, see your SQL Server documentation.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="97f0c-105">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="97f0c-105">In This Section</span></span>  
   
--   [Vue d’ensemble du déploiement de l’authentification unique](../core/sso-deployment-overview.md)  
+-   [<span data-ttu-id="97f0c-106">Vue d’ensemble du déploiement de l’authentification unique</span><span class="sxs-lookup"><span data-stu-id="97f0c-106">SSO Deployment Overview</span></span>](../core/sso-deployment-overview.md)  
   
--   [Processus de déploiement](../core/deployment-process.md)
+-   [<span data-ttu-id="97f0c-107">Processus de déploiement</span><span class="sxs-lookup"><span data-stu-id="97f0c-107">Deployment Process</span></span>](../core/deployment-process.md)

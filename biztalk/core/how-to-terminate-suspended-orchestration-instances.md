@@ -25,34 +25,34 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-terminate-suspended-orchestration-instances"></a>Arrêt des instances de l'orchestration suspendues
-Vous pouvez terminer des instances d'orchestration suspendues ou des ports à partir des résultats de la requête ou du volet de visualisation dans la console Administration de BizTalk Server.  
+# <a name="how-to-terminate-suspended-orchestration-instances"></a><span data-ttu-id="e28c8-102">Arrêt des instances de l'orchestration suspendues</span><span class="sxs-lookup"><span data-stu-id="e28c8-102">How to Terminate Suspended Orchestration Instances</span></span>
+<span data-ttu-id="e28c8-103">Vous pouvez terminer des instances d'orchestration suspendues ou des ports à partir des résultats de la requête ou du volet de visualisation dans la console Administration de BizTalk Server.</span><span class="sxs-lookup"><span data-stu-id="e28c8-103">You can terminate any suspended orchestration instances or ports from the Query results or preview pane in the BizTalk Server Administration Console.</span></span>  
   
 > [!NOTE]
->  Chaque instance d’un livraison chronologique des messages un port d’envoi peut avoir plusieurs messages sont associés. Afin d'éviter une perte des données ou un arrêt accidentel, vérifiez l'ensemble de ces associations avant de mettre fin à une instance.  
+>  <span data-ttu-id="e28c8-104">Chaque instance d’un livraison chronologique des messages un port d’envoi peut avoir plusieurs messages sont associés.</span><span class="sxs-lookup"><span data-stu-id="e28c8-104">Each instance of an ordered delivery a send port may have several messages associated with it.</span></span> <span data-ttu-id="e28c8-105">Afin d'éviter une perte des données ou un arrêt accidentel, vérifiez l'ensemble de ces associations avant de mettre fin à une instance.</span><span class="sxs-lookup"><span data-stu-id="e28c8-105">To prevent accidental termination or data loss, be sure you have reviewed all such associations before terminating an instance.</span></span>  
   
-## <a name="prerequisites"></a>Conditions préalables  
- Vous devez être connecté en tant que membre du groupe opérateurs BizTalk Server pour effectuer cette procédure.  
+## <a name="prerequisites"></a><span data-ttu-id="e28c8-106">Conditions préalables</span><span class="sxs-lookup"><span data-stu-id="e28c8-106">Prerequisites</span></span>  
+ <span data-ttu-id="e28c8-107">Vous devez être connecté en tant que membre du groupe opérateurs BizTalk Server pour effectuer cette procédure.</span><span class="sxs-lookup"><span data-stu-id="e28c8-107">You must be logged on as a member of the BizTalk Server Operators group to perform this procedure.</span></span>  
   
-### <a name="to-terminate-suspended-orchestration-instances"></a>Pour terminer les instances de l'orchestration suspendues  
+### <a name="to-terminate-suspended-orchestration-instances"></a><span data-ttu-id="e28c8-108">Pour terminer les instances de l'orchestration suspendues</span><span class="sxs-lookup"><span data-stu-id="e28c8-108">To terminate suspended orchestration instances</span></span>  
   
-1.  Cliquez sur **Démarrer**, cliquez sur **programmes**, cliquez sur [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], puis cliquez sur **Administration de BizTalk Server**.  
+1.  <span data-ttu-id="e28c8-109">Cliquez sur **Démarrer**, cliquez sur **programmes**, cliquez sur [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], puis cliquez sur **Administration de BizTalk Server**.</span><span class="sxs-lookup"><span data-stu-id="e28c8-109">Click **Start**, click **Programs**, click [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and then click **BizTalk Server Administration**.</span></span>  
   
-2.  Dans l'arborescence de la console, développez [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], puis cliquez sur le groupe BizTalk.  
+2.  <span data-ttu-id="e28c8-110">Dans l'arborescence de la console, développez [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], puis cliquez sur le groupe BizTalk.</span><span class="sxs-lookup"><span data-stu-id="e28c8-110">In the console tree, expand [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], and then click the BizTalk group.</span></span>  
   
-3.  Dans le volet détails, cliquez sur le **nouvelle requête** onglet.  
+3.  <span data-ttu-id="e28c8-111">Dans le volet détails, cliquez sur le **nouvelle requête** onglet.</span><span class="sxs-lookup"><span data-stu-id="e28c8-111">In the details pane, click the **New Query** tab.</span></span>  
   
-4.  Dans le **Expression de requête** groupe, dans le **valeur** colonne, sélectionnez **Instances de Service suspendues** dans la zone de liste déroulante.  
+4.  <span data-ttu-id="e28c8-112">Dans le **Expression de requête** groupe, dans le **valeur** colonne, sélectionnez **Instances de Service suspendues** dans la zone de liste déroulante.</span><span class="sxs-lookup"><span data-stu-id="e28c8-112">In the **Query Expression** group, in the **Value** column, select **Suspended Service Instances** from the drop-down list box.</span></span>  
   
-5.  Procédez de l'une des manières suivantes :  
+5.  <span data-ttu-id="e28c8-113">Procédez de l'une des manières suivantes :</span><span class="sxs-lookup"><span data-stu-id="e28c8-113">Do one of the following:</span></span>  
   
-    -   Pour mettre fin à une instance unique, dans le **nom de champ** colonne, dans la zone de liste déroulante vide en regard de l’astérisque (**\***), sélectionnez le **nom du Service** filtre puis, dans le **valeur** colonne, spécifiez le nom du service.  
+    -   <span data-ttu-id="e28c8-114">Pour mettre fin à une instance unique, dans le **nom de champ** colonne, dans la zone de liste déroulante vide en regard de l’astérisque (**\***), sélectionnez le **nom du Service** filtre puis, dans le **valeur** colonne, spécifiez le nom du service.</span><span class="sxs-lookup"><span data-stu-id="e28c8-114">To terminate a single instance, in the **Field Name** column, in the empty drop-down list box next to the asterisk (**\***), select the **Service Name** filter and then in the **Value** column, specify the service name.</span></span>  
   
-    -   Pour arrêter les instances en bloc, dans le **nom de champ** colonne, dans la zone de liste déroulante vide en regard de l’astérisque (**\***), sélectionnez **grouper les résultats selon** , puis dans le **valeur** colonne, spécifiez le nom du service.  
+    -   <span data-ttu-id="e28c8-115">Pour arrêter les instances en bloc, dans le **nom de champ** colonne, dans la zone de liste déroulante vide en regard de l’astérisque (**\***), sélectionnez **grouper les résultats selon** , puis dans le **valeur** colonne, spécifiez le nom du service.</span><span class="sxs-lookup"><span data-stu-id="e28c8-115">To terminate instances in bulk, in the **Field Name** column, in the empty drop-down list box next to the asterisk (**\***), select **Group Results By** and then in the **Value** column, specify the service name.</span></span>  
   
-6.  Cliquez sur **exécuter la requête**.  
+6.  <span data-ttu-id="e28c8-116">Cliquez sur **exécuter la requête**.</span><span class="sxs-lookup"><span data-stu-id="e28c8-116">Click **Run Query**.</span></span>  
   
-7.  Dans la liste de résultats de requête, cliquez sur l’instance d’orchestration ou le groupe d’instances que vous souhaitez terminer, puis cliquez sur **arrêter l’Instance** ou **arrêter les Instances**.  
+7.  <span data-ttu-id="e28c8-117">Dans la liste de résultats de requête, cliquez sur l’instance d’orchestration ou le groupe d’instances que vous souhaitez terminer, puis cliquez sur **arrêter l’Instance** ou **arrêter les Instances**.</span><span class="sxs-lookup"><span data-stu-id="e28c8-117">In the query results list, right-click the orchestration instance or group of instances you want to terminate, and then click **Terminate Instance** or **Terminate Instances**.</span></span>  
   
-## <a name="see-also"></a>Voir aussi  
- [Enquête sur les échecs de messages, de Port et d’Orchestration](../core/investigating-orchestration-port-and-message-failures.md)
+## <a name="see-also"></a><span data-ttu-id="e28c8-118">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="e28c8-118">See Also</span></span>  
+ [<span data-ttu-id="e28c8-119">Enquête sur les échecs de messages, de Port et d’Orchestration</span><span class="sxs-lookup"><span data-stu-id="e28c8-119">Investigating Orchestration, Port, and Message Failures</span></span>](../core/investigating-orchestration-port-and-message-failures.md)

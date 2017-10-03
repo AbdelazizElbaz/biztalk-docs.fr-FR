@@ -27,26 +27,26 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-add-custom-compensation-to-an-orchestration"></a>L’ajout d’une Compensation personnalisée à une Orchestration
-Une transaction d'orchestration configurée comme à long terme peut avoir un code de compensation personnalisé qui inverse ou annule ses effets. Si l’orchestration est terminée avec succès et a été appelée par une autre orchestration, l’orchestration d’appel peut appeler son bloc de compensation à l’aide un **compenser** forme.  
+# <a name="how-to-add-custom-compensation-to-an-orchestration"></a><span data-ttu-id="7e835-102">L’ajout d’une Compensation personnalisée à une Orchestration</span><span class="sxs-lookup"><span data-stu-id="7e835-102">How to Add Custom Compensation to an Orchestration</span></span>
+<span data-ttu-id="7e835-103">Une transaction d'orchestration configurée comme à long terme peut avoir un code de compensation personnalisé qui inverse ou annule ses effets.</span><span class="sxs-lookup"><span data-stu-id="7e835-103">An orchestration transaction that is configured as long running can have custom compensation code to reverse or undo the effects of the transaction.</span></span> <span data-ttu-id="7e835-104">Si l’orchestration est terminée avec succès et a été appelée par une autre orchestration, l’orchestration d’appel peut appeler son bloc de compensation à l’aide un **compenser** forme.</span><span class="sxs-lookup"><span data-stu-id="7e835-104">If the orchestration has completed successfully and has been called by another orchestration, the calling orchestration can invoke its compensation block using a **Compensate** shape.</span></span>  
   
-### <a name="to-specify-that-an-orchestration-will-use-custom-compensation"></a>Spécification qu'une orchestration utilisera une compensation personnalisée  
+### <a name="to-specify-that-an-orchestration-will-use-custom-compensation"></a><span data-ttu-id="7e835-105">Spécification qu'une orchestration utilisera une compensation personnalisée</span><span class="sxs-lookup"><span data-stu-id="7e835-105">To specify that an orchestration will use custom compensation</span></span>  
   
-1.  Dans la fenêtre Vue Orchestration, sélectionnez **propriétés d’Orchestration**.  
+1.  <span data-ttu-id="7e835-106">Dans la fenêtre Vue Orchestration, sélectionnez **propriétés d’Orchestration**.</span><span class="sxs-lookup"><span data-stu-id="7e835-106">In the Orchestration View window, select **Orchestration Properties**.</span></span>  
   
-2.  Dans la fenêtre Propriétés, sélectionnez **personnalisé** dans la liste déroulante pour le **Compensation** propriété.  
+2.  <span data-ttu-id="7e835-107">Dans la fenêtre Propriétés, sélectionnez **personnalisé** dans la liste déroulante pour le **Compensation** propriété.</span><span class="sxs-lookup"><span data-stu-id="7e835-107">In the Properties window, select **Custom** in the drop-down for the **Compensation** property.</span></span>  
   
-     Le **Compensation** onglet s’affiche en regard du **Orchestration** onglet en bas de l’aire de conception.  
+     <span data-ttu-id="7e835-108">Le **Compensation** onglet s’affiche en regard du **Orchestration** onglet en bas de l’aire de conception.</span><span class="sxs-lookup"><span data-stu-id="7e835-108">The **Compensation** tab appears next to the **Orchestration** tab at the bottom of the Design Surface.</span></span>  
   
-### <a name="to-design-custom-compensation-for-an-orchestration"></a>Conception d'une compensation personnalisée pour une orchestration  
+### <a name="to-design-custom-compensation-for-an-orchestration"></a><span data-ttu-id="7e835-109">Conception d'une compensation personnalisée pour une orchestration</span><span class="sxs-lookup"><span data-stu-id="7e835-109">To design custom compensation for an orchestration</span></span>  
   
-1.  Cliquez sur le **Compensation** onglet en bas de l’aire de conception.  
+1.  <span data-ttu-id="7e835-110">Cliquez sur le **Compensation** onglet en bas de l’aire de conception.</span><span class="sxs-lookup"><span data-stu-id="7e835-110">Click the **Compensation** tab at the bottom of the Design Surface.</span></span>  
   
-     Le **aire de conception de Compensation** s’affiche.  
+     <span data-ttu-id="7e835-111">Le **aire de conception de Compensation** s’affiche.</span><span class="sxs-lookup"><span data-stu-id="7e835-111">The **Compensation Design Surface** appears.</span></span>  
   
-2.  Ajouter des formes pour le **aire de conception de Compensation** tout comme vous le feriez dans le **aire de conception d’Orchestration**.  
+2.  <span data-ttu-id="7e835-112">Ajouter des formes pour le **aire de conception de Compensation** tout comme vous le feriez dans le **aire de conception d’Orchestration**.</span><span class="sxs-lookup"><span data-stu-id="7e835-112">Add shapes to the **Compensation Design Surface** just as you would in the **Orchestration Design Surface**.</span></span>  
   
-     Pour plus d’informations, consultez [Ajout de formes aux Orchestrations](../core/how-to-add-shapes-to-orchestrations.md).  
+     <span data-ttu-id="7e835-113">Pour plus d’informations, consultez [Ajout de formes aux Orchestrations](../core/how-to-add-shapes-to-orchestrations.md).</span><span class="sxs-lookup"><span data-stu-id="7e835-113">For more information, see [Adding Shapes to Orchestrations](../core/how-to-add-shapes-to-orchestrations.md).</span></span>  
   
-## <a name="see-also"></a>Voir aussi  
- [Rendre les Orchestrations transactionnelles](../core/making-orchestrations-transactional.md)
+## <a name="see-also"></a><span data-ttu-id="7e835-114">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="7e835-114">See Also</span></span>  
+ [<span data-ttu-id="7e835-115">Rendre les Orchestrations transactionnelles</span><span class="sxs-lookup"><span data-stu-id="7e835-115">Making Orchestrations Transactional</span></span>](../core/making-orchestrations-transactional.md)

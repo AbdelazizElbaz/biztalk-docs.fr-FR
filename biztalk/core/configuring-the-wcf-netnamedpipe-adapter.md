@@ -21,15 +21,15 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="configuring-the-wcf-netnamedpipe-adapter"></a>Configuration de l'adaptateur WCF-NetNamedPipe
-Cette section décrit la configuration d'un adaptateur WCF-NetNamedPipe.  
+# <a name="configuring-the-wcf-netnamedpipe-adapter"></a><span data-ttu-id="ceeaf-102">Configuration de l'adaptateur WCF-NetNamedPipe</span><span class="sxs-lookup"><span data-stu-id="ceeaf-102">Configuring the WCF-NetNamedPipe Adapter</span></span>
+<span data-ttu-id="ceeaf-103">Cette section décrit la configuration d'un adaptateur WCF-NetNamedPipe.</span><span class="sxs-lookup"><span data-stu-id="ceeaf-103">This section describes how to configure a WCF-NetNamedPipe adapter.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="ceeaf-104">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="ceeaf-104">In This Section</span></span>  
   
--   [Comment configurer un Port d’envoi WCF-NetNamedPipe](../core/how-to-configure-a-wcf-netnamedpipe-send-port.md)  
+-   [<span data-ttu-id="ceeaf-105">Comment configurer un Port d’envoi WCF-NetNamedPipe</span><span class="sxs-lookup"><span data-stu-id="ceeaf-105">How to Configure a WCF-NetNamedPipe Send Port</span></span>](../core/how-to-configure-a-wcf-netnamedpipe-send-port.md)  
   
--   [Pour configurer les emplacement de réception WCF-NetNamedPipe](../core/how-to-configure-a-wcf-netnamedpipe-receive-location.md)  
+-   [<span data-ttu-id="ceeaf-106">Pour configurer les emplacement de réception WCF-NetNamedPipe</span><span class="sxs-lookup"><span data-stu-id="ceeaf-106">How to Configure a WCF-NetNamedPipe Receive Location</span></span>](../core/how-to-configure-a-wcf-netnamedpipe-receive-location.md)  
   
--   [Comment configurer un gestionnaire d’envoi WCF-NetNamedPipe](../core/how-to-configure-a-wcf-netnamedpipe-send-handler.md)  
+-   [<span data-ttu-id="ceeaf-107">Comment configurer un gestionnaire d’envoi WCF-NetNamedPipe</span><span class="sxs-lookup"><span data-stu-id="ceeaf-107">How to Configure a WCF-NetNamedPipe Send Handler</span></span>](../core/how-to-configure-a-wcf-netnamedpipe-send-handler.md)  
   
--   [Pour configurer les Gestionnaire de réception WCF-NetNamedPipe](../core/how-to-configure-a-wcf-netnamedpipe-receive-handler.md)
+-   [<span data-ttu-id="ceeaf-108">Pour configurer les Gestionnaire de réception WCF-NetNamedPipe</span><span class="sxs-lookup"><span data-stu-id="ceeaf-108">How to Configure a WCF-NetNamedPipe Receive Handler</span></span>](../core/how-to-configure-a-wcf-netnamedpipe-receive-handler.md)

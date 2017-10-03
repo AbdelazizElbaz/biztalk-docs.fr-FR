@@ -18,13 +18,13 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="edi-acknowledgment-structure"></a>Structure des accusés de réception EDI
-Cette section contient des rubriques qui décrivent la structure d'un message d'accusé de réception X12 et EDIFACT.  
+# <a name="edi-acknowledgment-structure"></a><span data-ttu-id="c210e-102">Structure des accusés de réception EDI</span><span class="sxs-lookup"><span data-stu-id="c210e-102">EDI Acknowledgment Structure</span></span>
+<span data-ttu-id="c210e-103">Cette section contient des rubriques qui décrivent la structure d'un message d'accusé de réception X12 et EDIFACT.</span><span class="sxs-lookup"><span data-stu-id="c210e-103">This section contains topics describing the structure of X12- and EDIFACT-encoded acknowledgment messages.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="c210e-104">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="c210e-104">In This Section</span></span>  
   
--   [X12 accusé de réception TA1](../core/x12-ta1-acknowledgment.md)  
+-   [<span data-ttu-id="c210e-105">X12 accusé de réception TA1</span><span class="sxs-lookup"><span data-stu-id="c210e-105">X12 TA1 Acknowledgment</span></span>](../core/x12-ta1-acknowledgment.md)  
   
--   [X12 accusé de réception 997](../core/x12-997-acknowledgment.md)  
+-   [<span data-ttu-id="c210e-106">X12 accusé de réception 997</span><span class="sxs-lookup"><span data-stu-id="c210e-106">X12 997 Acknowledgment</span></span>](../core/x12-997-acknowledgment.md)  
   
--   [Accusé de réception EDIFACT CONTRL](../core/edifact-contrl-acknowledgment.md)
+-   [<span data-ttu-id="c210e-107">Accusé de réception EDIFACT CONTRL</span><span class="sxs-lookup"><span data-stu-id="c210e-107">EDIFACT CONTRL Acknowledgment</span></span>](../core/edifact-contrl-acknowledgment.md)

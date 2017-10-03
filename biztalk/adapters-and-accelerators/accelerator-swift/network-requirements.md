@@ -21,7 +21,7 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="network-requirements"></a>Configuration réseau requise
-Vous avez besoin pour générer l’architecture de déploiement prescrites composants réseau suivants :  
+# <a name="network-requirements"></a><span data-ttu-id="a09c4-102">Configuration réseau requise</span><span class="sxs-lookup"><span data-stu-id="a09c4-102">Network Requirements</span></span>
+<span data-ttu-id="a09c4-103">Vous avez besoin pour générer l’architecture de déploiement prescrites composants réseau suivants :</span><span class="sxs-lookup"><span data-stu-id="a09c4-103">You will need the following network components to build the prescribed deployment architecture:</span></span>  
   
--   Un serveur de pare-feu, comme le [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] Internet Security and Acceleration (ISA) Server.
+-   <span data-ttu-id="a09c4-104">Un serveur de pare-feu, comme le [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] Internet Security and Acceleration (ISA) Server.</span><span class="sxs-lookup"><span data-stu-id="a09c4-104">A firewall server such as the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] Internet Security and Acceleration (ISA) Server.</span></span>

@@ -18,29 +18,29 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="single-sign-on-event-10537"></a>Single Sign-On : Événement 10537
-## <a name="details"></a>Détails  
+# <a name="single-sign-on-event-10537"></a><span data-ttu-id="20d1a-102">Single Sign-On : Événement 10537</span><span class="sxs-lookup"><span data-stu-id="20d1a-102">Single Sign-On: Event 10537</span></span>
+## <a name="details"></a><span data-ttu-id="20d1a-103">Détails</span><span class="sxs-lookup"><span data-stu-id="20d1a-103">Details</span></span>  
   
 |||  
 |-|-|  
-|Nom du produit|Enterprise Single Sign-On|  
-|Version du produit|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|ID d'événement|10537|  
-|Source de l'événement|ENTSSO|  
-|Composant|CO|  
-|Nom symbolique|SSO_WARN_SSO_DISABLED|  
-|Texte du message|Le système SSO est actuellement désactivé.|  
+|<span data-ttu-id="20d1a-104">Nom du produit</span><span class="sxs-lookup"><span data-stu-id="20d1a-104">Product Name</span></span>|<span data-ttu-id="20d1a-105">Enterprise Single Sign-On</span><span class="sxs-lookup"><span data-stu-id="20d1a-105">Enterprise Single Sign-On</span></span>|  
+|<span data-ttu-id="20d1a-106">Version du produit</span><span class="sxs-lookup"><span data-stu-id="20d1a-106">Product Version</span></span>|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
+|<span data-ttu-id="20d1a-107">ID d'événement</span><span class="sxs-lookup"><span data-stu-id="20d1a-107">Event ID</span></span>|<span data-ttu-id="20d1a-108">10537</span><span class="sxs-lookup"><span data-stu-id="20d1a-108">10537</span></span>|  
+|<span data-ttu-id="20d1a-109">Source de l'événement</span><span class="sxs-lookup"><span data-stu-id="20d1a-109">Event Source</span></span>|<span data-ttu-id="20d1a-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="20d1a-110">ENTSSO</span></span>|  
+|<span data-ttu-id="20d1a-111">Composant</span><span class="sxs-lookup"><span data-stu-id="20d1a-111">Component</span></span>|<span data-ttu-id="20d1a-112">CO</span><span class="sxs-lookup"><span data-stu-id="20d1a-112">CO</span></span>|  
+|<span data-ttu-id="20d1a-113">Nom symbolique</span><span class="sxs-lookup"><span data-stu-id="20d1a-113">Symbolic Name</span></span>|<span data-ttu-id="20d1a-114">SSO_WARN_SSO_DISABLED</span><span class="sxs-lookup"><span data-stu-id="20d1a-114">SSO_WARN_SSO_DISABLED</span></span>|  
+|<span data-ttu-id="20d1a-115">Texte du message</span><span class="sxs-lookup"><span data-stu-id="20d1a-115">Message Text</span></span>|<span data-ttu-id="20d1a-116">Le système SSO est actuellement désactivé.</span><span class="sxs-lookup"><span data-stu-id="20d1a-116">The SSO system is currently disabled.</span></span>|  
   
-## <a name="explanation"></a>Explication  
- Cet événement d'avertissement indique que le système SSO a été désactivé par un administrateur de l'authentification unique.  
+## <a name="explanation"></a><span data-ttu-id="20d1a-117">Explication</span><span class="sxs-lookup"><span data-stu-id="20d1a-117">Explanation</span></span>  
+ <span data-ttu-id="20d1a-118">Cet événement d'avertissement indique que le système SSO a été désactivé par un administrateur de l'authentification unique.</span><span class="sxs-lookup"><span data-stu-id="20d1a-118">This Warning event indicates that the SSO system has been disabled by an SSO Administrator.</span></span>  
   
-## <a name="user-action"></a>Action de l'utilisateur  
- Pour résoudre cet avertissement, procédez comme suit :  
+## <a name="user-action"></a><span data-ttu-id="20d1a-119">Action de l'utilisateur</span><span class="sxs-lookup"><span data-stu-id="20d1a-119">User Action</span></span>  
+ <span data-ttu-id="20d1a-120">Pour résoudre cet avertissement, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="20d1a-120">To resolve this warning, do the following:</span></span>  
   
--   Contactez votre administrateur de l'authentification unique pour activer le système SSO. Pour ce faire, il peut utiliser les outils d'administration de l'authentification unique (interface utilisateur ou ligne de commande).  
+-   <span data-ttu-id="20d1a-121">Contactez votre administrateur de l'authentification unique pour activer le système SSO.</span><span class="sxs-lookup"><span data-stu-id="20d1a-121">Contact your SSO Administrator to enable the SSO system.</span></span> <span data-ttu-id="20d1a-122">Pour ce faire, il peut utiliser les outils d'administration de l'authentification unique (interface utilisateur ou ligne de commande).</span><span class="sxs-lookup"><span data-stu-id="20d1a-122">Enabling SSO can be done using the SSO administration tools (GUI or command line).</span></span>  
   
- Pour plus d'informations, consultez les ressources suivantes dans l'aide de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] :  
+ <span data-ttu-id="20d1a-123">Pour plus d'informations, consultez les ressources suivantes dans l'aide de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] :</span><span class="sxs-lookup"><span data-stu-id="20d1a-123">For more information, see the following resources in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Help:</span></span>  
   
--   [Comment activer l’authentification unique](../core/how-to-enable-sso.md)  
+-   [<span data-ttu-id="20d1a-124">Comment activer l’authentification unique</span><span class="sxs-lookup"><span data-stu-id="20d1a-124">How to Enable SSO</span></span>](../core/how-to-enable-sso.md)  
   
--   [Comment désactiver l’authentification unique](../core/how-to-disable-sso.md)
+-   [<span data-ttu-id="20d1a-125">Comment désactiver l’authentification unique</span><span class="sxs-lookup"><span data-stu-id="20d1a-125">How to Disable SSO</span></span>](../core/how-to-disable-sso.md)

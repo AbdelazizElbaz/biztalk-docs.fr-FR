@@ -19,15 +19,15 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="information---using-custom-extension-xml"></a>Informations - à l’aide de XML avec extensions personnalisées
-**Code d’erreur**  
+# <a name="information---using-custom-extension-xml"></a><span data-ttu-id="325f9-102">Informations - à l’aide de XML avec extensions personnalisées</span><span class="sxs-lookup"><span data-stu-id="325f9-102">Information - Using Custom Extension XML</span></span>
+<span data-ttu-id="325f9-103">**Code d’erreur**</span><span class="sxs-lookup"><span data-stu-id="325f9-103">**Error Code**</span></span>  
   
- btm1074  
+ <span data-ttu-id="325f9-104">btm1074</span><span class="sxs-lookup"><span data-stu-id="325f9-104">btm1074</span></span>  
   
- **Explication**  
+ <span data-ttu-id="325f9-105">**Explication**</span><span class="sxs-lookup"><span data-stu-id="325f9-105">**Explanation**</span></span>  
   
- Le Mappeur BizTalk a généré son propre fichier XML avec extension et l'a ajouté au fichier XML avec extension personnalisée de l'utilisateur.  
+ <span data-ttu-id="325f9-106">Le Mappeur BizTalk a généré son propre fichier XML avec extension et l'a ajouté au fichier XML avec extension personnalisée de l'utilisateur.</span><span class="sxs-lookup"><span data-stu-id="325f9-106">BizTalk Mapper has generated its own Extension XML and appended it to the Custom Extension XML specified by the user.</span></span>  
   
- **Action de l’utilisateur**  
+ <span data-ttu-id="325f9-107">**Action de l’utilisateur**</span><span class="sxs-lookup"><span data-stu-id="325f9-107">**User Action**</span></span>  
   
- Informations données à titre indicatif. Aucune action n'est requise.
+ <span data-ttu-id="325f9-108">Informations données à titre indicatif.</span><span class="sxs-lookup"><span data-stu-id="325f9-108">Informational.</span></span> <span data-ttu-id="325f9-109">Aucune action n'est requise.</span><span class="sxs-lookup"><span data-stu-id="325f9-109">No action required.</span></span>

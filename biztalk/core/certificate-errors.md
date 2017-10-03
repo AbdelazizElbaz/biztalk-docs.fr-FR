@@ -18,21 +18,21 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="certificate-errors"></a>Erreurs en relation avec les certificats
-Cette section inclut des informations détaillées sur le diagnostic et la résolution des erreurs en relation avec les certificats WCF.  
+# <a name="certificate-errors"></a><span data-ttu-id="1ca26-102">Erreurs en relation avec les certificats</span><span class="sxs-lookup"><span data-stu-id="1ca26-102">Certificate Errors</span></span>
+<span data-ttu-id="1ca26-103">Cette section inclut des informations détaillées sur le diagnostic et la résolution des erreurs en relation avec les certificats WCF.</span><span class="sxs-lookup"><span data-stu-id="1ca26-103">This section contains detailed information for diagnosing and resolving WCF Certificate errors.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="1ca26-104">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="1ca26-104">In This Section</span></span>  
   
--   [Référence de certificat ambiguë](../core/ambiguous-certificate-reference.md)  
+-   [<span data-ttu-id="1ca26-105">Référence de certificat ambiguë</span><span class="sxs-lookup"><span data-stu-id="1ca26-105">Ambiguous certificate reference</span></span>](../core/ambiguous-certificate-reference.md)  
   
--   [Certificat introuvable](../core/certificate-not-found.md)  
+-   [<span data-ttu-id="1ca26-106">Certificat introuvable</span><span class="sxs-lookup"><span data-stu-id="1ca26-106">Certificate not found</span></span>](../core/certificate-not-found.md)  
   
--   [Certificat non valide trouvé](../core/invalid-certificate-found.md)  
+-   [<span data-ttu-id="1ca26-107">Certificat non valide trouvé</span><span class="sxs-lookup"><span data-stu-id="1ca26-107">Invalid certificate found</span></span>](../core/invalid-certificate-found.md)  
   
--   [Empreinte de certificat client non valide](../core/invalid-client-certificate-thumbprint.md)  
+-   [<span data-ttu-id="1ca26-108">Empreinte de certificat client non valide</span><span class="sxs-lookup"><span data-stu-id="1ca26-108">Invalid client certificate thumbprint</span></span>](../core/invalid-client-certificate-thumbprint.md)  
   
--   [Empreinte numérique du certificat de service non valide](../core/invalid-service-certificate-thumbprint.md)  
+-   [<span data-ttu-id="1ca26-109">Empreinte numérique du certificat de service non valide</span><span class="sxs-lookup"><span data-stu-id="1ca26-109">Invalid service certificate thumbprint</span></span>](../core/invalid-service-certificate-thumbprint.md)  
   
--   [Empreinte numérique du certificat client requis ne pas spécifié](../core/required-client-certificate-thumbprint-not-specified.md)  
+-   [<span data-ttu-id="1ca26-110">Empreinte numérique du certificat client requis ne pas spécifié</span><span class="sxs-lookup"><span data-stu-id="1ca26-110">Required client certificate thumbprint not specified</span></span>](../core/required-client-certificate-thumbprint-not-specified.md)  
   
--   [Empreinte numérique du certificat de service requis non spécifié](../core/required-service-certificate-thumbprint-not-specified.md)
+-   [<span data-ttu-id="1ca26-111">Empreinte numérique du certificat de service requis non spécifié</span><span class="sxs-lookup"><span data-stu-id="1ca26-111">Required service certificate thumbprint not specified</span></span>](../core/required-service-certificate-thumbprint-not-specified.md)

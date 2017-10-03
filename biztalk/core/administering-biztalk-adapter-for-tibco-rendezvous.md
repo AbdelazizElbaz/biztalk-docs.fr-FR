@@ -21,9 +21,9 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="administering-biztalk-adapter-for-tibco-rendezvous"></a>Administration de l'adaptateur BizTalk pour TIBCO Rendezvous
-Cette section fournit des informations sur l'administration de l'adaptateur BizTalk pour TIBCO Rendezvous.  
+# <a name="administering-biztalk-adapter-for-tibco-rendezvous"></a><span data-ttu-id="8d2c8-102">Administration de l'adaptateur BizTalk pour TIBCO Rendezvous</span><span class="sxs-lookup"><span data-stu-id="8d2c8-102">Administering BizTalk Adapter for TIBCO Rendezvous</span></span>
+<span data-ttu-id="8d2c8-103">Cette section fournit des informations sur l'administration de l'adaptateur BizTalk pour TIBCO Rendezvous.</span><span class="sxs-lookup"><span data-stu-id="8d2c8-103">This section provides information about administering BizTalk Adapter for TIBCO Rendezvous.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="8d2c8-104">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="8d2c8-104">In This Section</span></span>  
   
--   [À l’aide de la gestion des exceptions de BizTalk Server](../core/using-biztalk-server-exception-handling4.md)
+-   [<span data-ttu-id="8d2c8-105">À l’aide de la gestion des exceptions de BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="8d2c8-105">Using BizTalk Server Exception Handling</span></span>](../core/using-biztalk-server-exception-handling4.md)

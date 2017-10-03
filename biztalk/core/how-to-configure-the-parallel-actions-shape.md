@@ -27,23 +27,23 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-configure-the-parallel-actions-shape"></a>Configuration de la forme Actions parallèles
+# <a name="how-to-configure-the-parallel-actions-shape"></a><span data-ttu-id="2710c-102">Configuration de la forme Actions parallèles</span><span class="sxs-lookup"><span data-stu-id="2710c-102">How to Configure the Parallel Actions Shape</span></span>
 ![](../core/media/ebiz-orch-paralactions.gif "ebiz_orch_paralactions")  
-Forme Actions parallèle  
+<span data-ttu-id="2710c-103">Forme Actions parallèle</span><span class="sxs-lookup"><span data-stu-id="2710c-103">Parallel Actions shape</span></span>  
   
 > [!CAUTION]
->  Si vous placez un **Terminate** mettre en forme à l’intérieur d’un **Actions parallèles** forme et la branche avec la **Terminate** son exécution, l’instance se termine immédiatement, indépendamment du Indique si des autres branches en cours d’exécution. En fonction de votre conception, les résultats peuvent être imprévisibles.  
+>  <span data-ttu-id="2710c-104">Si vous placez un **Terminate** mettre en forme à l’intérieur d’un **Actions parallèles** forme et la branche avec la **Terminate** son exécution, l’instance se termine immédiatement, indépendamment du Indique si des autres branches en cours d’exécution.</span><span class="sxs-lookup"><span data-stu-id="2710c-104">If you place a **Terminate** shape inside a **Parallel Actions** shape, and the branch with the **Terminate** on it is run, the instance completes immediately, regardless of whether other branches have finished running.</span></span> <span data-ttu-id="2710c-105">En fonction de votre conception, les résultats peuvent être imprévisibles.</span><span class="sxs-lookup"><span data-stu-id="2710c-105">Depending on your design, results might be unpredictable in this case.</span></span>  
   
-## <a name="synchronization-of-data-access"></a>Synchronisation de l'accès aux données  
- Il est possible que plusieurs branches d’un **Actions parallèles** forme va tenter d’accéder aux mêmes données. Pour éviter la génération d'erreurs, placez toutes les formes accédant aux données dans des étendues synchronisées. Vous pouvez spécifier dans les propriétés d’un **étendue** forme qu’elle est synchronisée ou pas. Pour plus d’informations, consultez [étendues](../core/scopes.md).  
+## <a name="synchronization-of-data-access"></a><span data-ttu-id="2710c-106">Synchronisation de l'accès aux données</span><span class="sxs-lookup"><span data-stu-id="2710c-106">Synchronization of data access</span></span>  
+ <span data-ttu-id="2710c-107">Il est possible que plusieurs branches d’un **Actions parallèles** forme va tenter d’accéder aux mêmes données.</span><span class="sxs-lookup"><span data-stu-id="2710c-107">It is possible that more than one branch of a **Parallel Actions** shape will attempt to access the same data.</span></span> <span data-ttu-id="2710c-108">Pour éviter la génération d'erreurs, placez toutes les formes accédant aux données dans des étendues synchronisées.</span><span class="sxs-lookup"><span data-stu-id="2710c-108">To avoid errors, place any shapes that access the data inside synchronized scopes.</span></span> <span data-ttu-id="2710c-109">Vous pouvez spécifier dans les propriétés d’un **étendue** forme qu’elle est synchronisée ou pas.</span><span class="sxs-lookup"><span data-stu-id="2710c-109">You can specify in the properties of a **Scope** shape that it is synchronized or not synchronized.</span></span> <span data-ttu-id="2710c-110">Pour plus d’informations, consultez [étendues](../core/scopes.md).</span><span class="sxs-lookup"><span data-stu-id="2710c-110">For more information, see [Scopes](../core/scopes.md).</span></span>  
   
-#### <a name="to-add-a-branch-to-a-parallel-actions-shape"></a>Pour ajouter une branche à une forme Actions parallèles  
+#### <a name="to-add-a-branch-to-a-parallel-actions-shape"></a><span data-ttu-id="2710c-111">Pour ajouter une branche à une forme Actions parallèles</span><span class="sxs-lookup"><span data-stu-id="2710c-111">To add a branch to a Parallel Actions shape</span></span>  
   
-1.  Cliquez sur le **Actions parallèles** mettre en forme, puis cliquez sur **nouvelle branche parallèle**.  
+1.  <span data-ttu-id="2710c-112">Cliquez sur le **Actions parallèles** mettre en forme, puis cliquez sur **nouvelle branche parallèle**.</span><span class="sxs-lookup"><span data-stu-id="2710c-112">Right-click the **Parallel Actions** shape, and then click **New Parallel Branch**.</span></span>  
   
-     — Ou :  
+     <span data-ttu-id="2710c-113">— Ou :</span><span class="sxs-lookup"><span data-stu-id="2710c-113">—Or—</span></span>  
   
-2.  Faites glisser une nouvelle forme entre deux branches existantes.  
+2.  <span data-ttu-id="2710c-114">Faites glisser une nouvelle forme entre deux branches existantes.</span><span class="sxs-lookup"><span data-stu-id="2710c-114">Drag a new shape between two existing branches.</span></span>  
   
 > [!NOTE]
->  Pour supprimer une branche d’un **Actions parallèles** mettre en forme, cliquez sur la branche que vous souhaitez supprimer, puis cliquez sur **supprimer**.
+>  <span data-ttu-id="2710c-115">Pour supprimer une branche d’un **Actions parallèles** mettre en forme, cliquez sur la branche que vous souhaitez supprimer, puis cliquez sur **supprimer**.</span><span class="sxs-lookup"><span data-stu-id="2710c-115">To remove a branch from a **Parallel Actions** shape, right-click the branch you want to remove, and then click **Delete**.</span></span>

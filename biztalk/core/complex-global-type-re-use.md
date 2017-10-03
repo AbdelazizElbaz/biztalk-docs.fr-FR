@@ -18,12 +18,12 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="complex-global-type-re-use"></a>Réutilisation de types globaux complexes
-Pour utiliser un type complexe type global est dans un autre emplacement dans l’arborescence du schéma, commencez par insérer un nouveau **enregistrement** nœud à l’emplacement souhaité. Définissez ensuite sa **Data Structure Type** nom à la propriété d’un type global complexe.  
+# <a name="complex-global-type-re-use"></a><span data-ttu-id="a8934-102">Réutilisation de types globaux complexes</span><span class="sxs-lookup"><span data-stu-id="a8934-102">Complex Global Type Re-use</span></span>
+<span data-ttu-id="a8934-103">Pour utiliser un type complexe type global est dans un autre emplacement dans l’arborescence du schéma, commencez par insérer un nouveau **enregistrement** nœud à l’emplacement souhaité.</span><span class="sxs-lookup"><span data-stu-id="a8934-103">To use a complex global type as is, in another location in the schema tree, begin by inserting a new **Record** node at the desired location.</span></span> <span data-ttu-id="a8934-104">Définissez ensuite sa **Data Structure Type** nom à la propriété d’un type global complexe.</span><span class="sxs-lookup"><span data-stu-id="a8934-104">Then set its **Data Structure Type** property to the name of a complex global type.</span></span>  
   
- Dans l’exemple suivant, **BillingAddress** est le nom de récemment insérées **enregistrement** nœud, et **GlobalAddrType** est le nom du type global complexe qu’il adopte. Dans l’arborescence du schéma, une structure de nœud en double sera affichée sous le nœud nommé **BillingAddress**, identique à la structure de nœuds adjacents sous le nœud nommé **ShippingAddress**.  
+ <span data-ttu-id="a8934-105">Dans l’exemple suivant, **BillingAddress** est le nom de récemment insérées **enregistrement** nœud, et **GlobalAddrType** est le nom du type global complexe qu’il adopte.</span><span class="sxs-lookup"><span data-stu-id="a8934-105">In the following example, **BillingAddress** is the name of the newly inserted **Record** node, and **GlobalAddrType** is the name of the complex global type that it adopts.</span></span> <span data-ttu-id="a8934-106">Dans l’arborescence du schéma, une structure de nœud en double sera affichée sous le nœud nommé **BillingAddress**, identique à la structure de nœuds adjacents sous le nœud nommé **ShippingAddress**.</span><span class="sxs-lookup"><span data-stu-id="a8934-106">In the schema tree view, a duplicate node structure would be displayed below the node named **BillingAddress**, identical to the adjacent node structure under the node named **ShippingAddress**.</span></span>  
   
--   Avant, avec un nœud nouvellement inséré nommé **BillingAddress**.  
+-   <span data-ttu-id="a8934-107">Avant, avec un nœud nouvellement inséré nommé **BillingAddress**.</span><span class="sxs-lookup"><span data-stu-id="a8934-107">Before, with a newly inserted node named **BillingAddress**.</span></span>  
   
     ```  
     <xs:schema>  
@@ -43,7 +43,7 @@ Pour utiliser un type complexe type global est dans un autre emplacement dans l�
     </xs:schema>  
     ```  
   
--   Après avoir utilisé le type complex de base **GlobalAddrType**, comme l’est.  
+-   <span data-ttu-id="a8934-108">Après avoir utilisé le type complex de base **GlobalAddrType**, comme l’est.</span><span class="sxs-lookup"><span data-stu-id="a8934-108">After using the complex base type **GlobalAddrType**, as is.</span></span>  
   
     ```  
     <xs:schema>  
@@ -61,5 +61,5 @@ Pour utiliser un type complexe type global est dans un autre emplacement dans l�
     </xs:schema>  
     ```  
   
-## <a name="see-also"></a>Voir aussi  
- [Modes d’utilisation des Types globaux complexes](../core/ways-to-use-complex-global-types.md)
+## <a name="see-also"></a><span data-ttu-id="a8934-109">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="a8934-109">See Also</span></span>  
+ [<span data-ttu-id="a8934-110">Modes d’utilisation des Types globaux complexes</span><span class="sxs-lookup"><span data-stu-id="a8934-110">Ways to Use Complex Global Types</span></span>](../core/ways-to-use-complex-global-types.md)

@@ -21,19 +21,19 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="managing-certificates"></a>La gestion des certificats
-Les communications sécurisées dans RosettaNet requièrent l'utilisation de certificats. [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] utilise des certificats pour chiffrer les messages sortants, signer des messages sortants, déchiffrer les messages entrants et vérifier la signature dans les messages entrants.  
+# <a name="managing-certificates"></a><span data-ttu-id="a298f-102">La gestion des certificats</span><span class="sxs-lookup"><span data-stu-id="a298f-102">Managing Certificates</span></span>
+<span data-ttu-id="a298f-103">Les communications sécurisées dans RosettaNet requièrent l'utilisation de certificats.</span><span class="sxs-lookup"><span data-stu-id="a298f-103">Secure communications in RosettaNet require using certificates.</span></span> [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="a298f-104">® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] utilise des certificats pour chiffrer les messages sortants, signer des messages sortants, déchiffrer les messages entrants et vérifier la signature dans les messages entrants.</span><span class="sxs-lookup"><span data-stu-id="a298f-104">® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] uses certificates to encrypt outgoing messages, sign outgoing messages, decrypt incoming messages, and verify the signature in incoming messages.</span></span>  
   
- Pour utiliser des certificats, vous devez effectuer une partie ou l'ensemble des étapes suivantes :  
+ <span data-ttu-id="a298f-105">Pour utiliser des certificats, vous devez effectuer une partie ou l'ensemble des étapes suivantes :</span><span class="sxs-lookup"><span data-stu-id="a298f-105">To use certificates, you must perform some or all of the following steps:</span></span>  
   
--   Importer des certificats dans le magasin de certificats du serveur  
+-   <span data-ttu-id="a298f-106">Importer des certificats dans le magasin de certificats du serveur</span><span class="sxs-lookup"><span data-stu-id="a298f-106">Import certificates into the certificates store for the server</span></span>  
   
--   Configurer l'utilisation de certificats dans les messages  
+-   <span data-ttu-id="a298f-107">Configurer l'utilisation de certificats dans les messages</span><span class="sxs-lookup"><span data-stu-id="a298f-107">Configure the use of certificates in messages</span></span>  
   
--   Exporter des certificats vers des partenaires  
+-   <span data-ttu-id="a298f-108">Exporter des certificats vers des partenaires</span><span class="sxs-lookup"><span data-stu-id="a298f-108">Export certificates to partners</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="a298f-109">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="a298f-109">In This Section</span></span>  
   
--   [L’importation de certificats](../../adapters-and-accelerators/accelerator-rosettanet/importing-certificates.md)  
+-   [<span data-ttu-id="a298f-110">L’importation de certificats</span><span class="sxs-lookup"><span data-stu-id="a298f-110">Importing Certificates</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/importing-certificates.md)  
   
--   [Exportation de certificats](../../adapters-and-accelerators/accelerator-rosettanet/exporting-certificates.md)
+-   [<span data-ttu-id="a298f-111">Exportation de certificats</span><span class="sxs-lookup"><span data-stu-id="a298f-111">Exporting Certificates</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/exporting-certificates.md)

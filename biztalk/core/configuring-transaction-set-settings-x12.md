@@ -18,18 +18,18 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="configuring-transaction-set-settings-x12"></a>Configuration des paramètres des documents informatisés (X12)
-Les paramètres des documents informatisés X12 définissent la façon dont [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] traite les documents informatisés échangés entre deux tiers.  
+# <a name="configuring-transaction-set-settings-x12"></a><span data-ttu-id="635a6-102">Configuration des paramètres des documents informatisés (X12)</span><span class="sxs-lookup"><span data-stu-id="635a6-102">Configuring Transaction Set Settings (X12)</span></span>
+<span data-ttu-id="635a6-103">Les paramètres des documents informatisés X12 définissent la façon dont [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] traite les documents informatisés échangés entre deux tiers.</span><span class="sxs-lookup"><span data-stu-id="635a6-103">X12 transaction set settings define how [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] processes the transaction sets being exchanged between two parties.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="635a6-104">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="635a6-104">In This Section</span></span>  
   
--   [Configuration de la liste (X12) informatisés](../core/configuring-transaction-set-list-x12.md)  
+-   [<span data-ttu-id="635a6-105">Configuration de la liste (X12) informatisés</span><span class="sxs-lookup"><span data-stu-id="635a6-105">Configuring Transaction Set List (X12)</span></span>](../core/configuring-transaction-set-list-x12.md)  
   
--   [Configuration de la Validation (paramètres de Transaction de X12)](../core/configuring-validation-x12-transaction-set-settings.md)  
+-   [<span data-ttu-id="635a6-106">Configuration de la Validation (paramètres de Transaction de X12)</span><span class="sxs-lookup"><span data-stu-id="635a6-106">Configuring Validation (X12-Transaction Set Settings)</span></span>](../core/configuring-validation-x12-transaction-set-settings.md)  
   
--   [Configuration des paramètres de l’hôte Local (X12-paramètres)](../core/configuring-local-host-settings-x12-transaction-set-settings.md)  
+-   [<span data-ttu-id="635a6-107">Configuration des paramètres de l’hôte Local (X12-paramètres)</span><span class="sxs-lookup"><span data-stu-id="635a6-107">Configuring Local Host Settings (X12-Transaction Set Settings)</span></span>](../core/configuring-local-host-settings-x12-transaction-set-settings.md)  
   
--   [Configuration d’enveloppes (paramètres de Transaction de X12)](../core/configuring-envelopes-x12-transaction-set-settings.md)  
+-   [<span data-ttu-id="635a6-108">Configuration d’enveloppes (paramètres de Transaction de X12)</span><span class="sxs-lookup"><span data-stu-id="635a6-108">Configuring Envelopes (X12-Transaction Set Settings)</span></span>](../core/configuring-envelopes-x12-transaction-set-settings.md)  
   
-## <a name="see-also"></a>Voir aussi  
- [Configuration des propriétés d’accord spécifique X12](../core/configuring-x12-specific-agreement-properties.md)
+## <a name="see-also"></a><span data-ttu-id="635a6-109">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="635a6-109">See Also</span></span>  
+ [<span data-ttu-id="635a6-110">Configuration des propriétés d’accord spécifique X12</span><span class="sxs-lookup"><span data-stu-id="635a6-110">Configuring X12-Specific Agreement Properties</span></span>](../core/configuring-x12-specific-agreement-properties.md)

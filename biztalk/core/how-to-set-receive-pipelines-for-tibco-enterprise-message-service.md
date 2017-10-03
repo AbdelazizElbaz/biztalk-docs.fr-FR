@@ -22,16 +22,16 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-set-receive-pipelines-for-tibco-enterprise-message-service"></a>Configuration des pipelines de réception pour TIBCO Enterprise Message Service
-L'adaptateur Microsoft BizTalk pour TIBCO Enterprise Message Service requiert la définition du gestionnaire de réception et du pipeline de réception.  
+# <a name="how-to-set-receive-pipelines-for-tibco-enterprise-message-service"></a><span data-ttu-id="09af0-102">Configuration des pipelines de réception pour TIBCO Enterprise Message Service</span><span class="sxs-lookup"><span data-stu-id="09af0-102">How to Set Receive Pipelines for TIBCO Enterprise Message Service</span></span>
+<span data-ttu-id="09af0-103">L'adaptateur Microsoft BizTalk pour TIBCO Enterprise Message Service requiert la définition du gestionnaire de réception et du pipeline de réception.</span><span class="sxs-lookup"><span data-stu-id="09af0-103">Microsoft BizTalk Adapter for TIBCO Enterprise Message Service requires that you set the receive handler and receive pipeline.</span></span>  
   
-### <a name="to-set-the-pipeline"></a>Pour définir le pipeline  
+### <a name="to-set-the-pipeline"></a><span data-ttu-id="09af0-104">Pour définir le pipeline</span><span class="sxs-lookup"><span data-stu-id="09af0-104">To set the pipeline</span></span>  
   
-1.  Dans le **Gestionnaire de réception** liste, sélectionnez **BizTalkServerApplication**.  
+1.  <span data-ttu-id="09af0-105">Dans le **Gestionnaire de réception** liste, sélectionnez **BizTalkServerApplication**.</span><span class="sxs-lookup"><span data-stu-id="09af0-105">In the **Receive Handler** list, select **BizTalkServerApplication**.</span></span>  
   
-2.  Dans le **Pipeline de réception** , sélectionnez le pipeline souhaité.  
+2.  <span data-ttu-id="09af0-106">Dans le **Pipeline de réception** , sélectionnez le pipeline souhaité.</span><span class="sxs-lookup"><span data-stu-id="09af0-106">In the **Receive Pipeline** list, select the desired pipeline.</span></span>  
   
-3.  Cliquez sur **OK**.  
+3.  <span data-ttu-id="09af0-107">Cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="09af0-107">Click **OK**.</span></span>  
   
-## <a name="see-also"></a>Voir aussi  
- [Gestionnaires de réception TIBCO Enterprise Message Service de création](../core/creating-tibco-enterprise-message-service-receive-handlers.md)
+## <a name="see-also"></a><span data-ttu-id="09af0-108">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="09af0-108">See Also</span></span>  
+ [<span data-ttu-id="09af0-109">Gestionnaires de réception TIBCO Enterprise Message Service de création</span><span class="sxs-lookup"><span data-stu-id="09af0-109">Creating TIBCO Enterprise Message Service Receive Handlers</span></span>](../core/creating-tibco-enterprise-message-service-receive-handlers.md)

@@ -18,19 +18,19 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="developing-a-send-adapter"></a>Développement d'un adaptateur d'envoi
-Cette section décrit les interactions d'objets qui se produisent dans les adaptateurs d'envoi. Ces informations vous serviront à développer des adaptateurs d'envoi personnalisés ou à comprendre le fonctionnement des adaptateurs natifs.  
+# <a name="developing-a-send-adapter"></a><span data-ttu-id="837bc-102">Développement d'un adaptateur d'envoi</span><span class="sxs-lookup"><span data-stu-id="837bc-102">Developing a Send Adapter</span></span>
+<span data-ttu-id="837bc-103">Cette section décrit les interactions d'objets qui se produisent dans les adaptateurs d'envoi.</span><span class="sxs-lookup"><span data-stu-id="837bc-103">This section describes the object interactions that occur within send adapters.</span></span> <span data-ttu-id="837bc-104">Ces informations vous serviront à développer des adaptateurs d'envoi personnalisés ou à comprendre le fonctionnement des adaptateurs natifs.</span><span class="sxs-lookup"><span data-stu-id="837bc-104">You can use this information to guide custom adapter development when creating send adapters, or to learn about how the native adapters work.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="837bc-105">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="837bc-105">In This Section</span></span>  
   
--   [Modèles d’échange pour les adaptateurs d’envoi](../core/exchange-patterns-for-send-adapters.md)  
+-   [<span data-ttu-id="837bc-106">Modèles d’échange pour les adaptateurs d’envoi</span><span class="sxs-lookup"><span data-stu-id="837bc-106">Exchange Patterns for Send Adapters</span></span>](../core/exchange-patterns-for-send-adapters.md)  
   
--   [Instanciation et initialisation d’un adaptateur d’envoi](../core/instantiating-and-initializing-a-send-adapter.md)  
+-   [<span data-ttu-id="837bc-107">Instanciation et initialisation d’un adaptateur d’envoi</span><span class="sxs-lookup"><span data-stu-id="837bc-107">Instantiating and Initializing a Send Adapter</span></span>](../core/instantiating-and-initializing-a-send-adapter.md)  
   
--   [Opérations de l’adaptateur d’envoi](../core/send-adapter-operations.md)  
+-   [<span data-ttu-id="837bc-108">Opérations de l’adaptateur d’envoi</span><span class="sxs-lookup"><span data-stu-id="837bc-108">Send Adapter Operations</span></span>](../core/send-adapter-operations.md)  
   
--   [Traitement par lot des Messages pour le traitement d’envoi](../core/batching-messages-for-send-processing.md)  
+-   [<span data-ttu-id="837bc-109">Traitement par lot des Messages pour le traitement d’envoi</span><span class="sxs-lookup"><span data-stu-id="837bc-109">Batching Messages for Send Processing</span></span>](../core/batching-messages-for-send-processing.md)  
   
--   [Interfaces pour adaptateurs d’envoi](../core/interfaces-for-send-adapters.md)  
+-   [<span data-ttu-id="837bc-110">Interfaces pour adaptateurs d’envoi</span><span class="sxs-lookup"><span data-stu-id="837bc-110">Interfaces for Send Adapters</span></span>](../core/interfaces-for-send-adapters.md)  
   
--   [Prise en charge de l’authentification unique pour les adaptateurs d’envoi](../core/sso-support-for-send-adapters.md)
+-   [<span data-ttu-id="837bc-111">Prise en charge de l’authentification unique pour les adaptateurs d’envoi</span><span class="sxs-lookup"><span data-stu-id="837bc-111">SSO Support for Send Adapters</span></span>](../core/sso-support-for-send-adapters.md)

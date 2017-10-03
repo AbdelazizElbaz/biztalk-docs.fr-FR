@@ -21,11 +21,11 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="business-process-management-solution-reference"></a>Référence de la Solution de gestion du processus métier
-Cette section fournit des listes répertoriant les fichiers de la solution et les messages des orchestrations.  
+# <a name="business-process-management-solution-reference"></a><span data-ttu-id="89e99-102">Référence de la Solution de gestion du processus métier</span><span class="sxs-lookup"><span data-stu-id="89e99-102">Business Process Management Solution Reference</span></span>
+<span data-ttu-id="89e99-103">Cette section fournit des listes répertoriant les fichiers de la solution et les messages des orchestrations.</span><span class="sxs-lookup"><span data-stu-id="89e99-103">This section provides lists of the files in the solution and the messages in the orchestrations.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="89e99-104">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="89e99-104">In This Section</span></span>  
   
--   [Inventaire des fichiers de la Solution gestion des processus d’entreprise](../core/file-inventory-for-the-business-process-management-solution.md)  
+-   [<span data-ttu-id="89e99-105">Inventaire des fichiers de la Solution gestion des processus d’entreprise</span><span class="sxs-lookup"><span data-stu-id="89e99-105">File Inventory for the Business Process Management Solution</span></span>](../core/file-inventory-for-the-business-process-management-solution.md)  
   
--   [Référence du message pour la Solution gestion des processus d’entreprise](../core/message-reference-for-the-business-process-management-solution.md)
+-   [<span data-ttu-id="89e99-106">Référence du message pour la Solution gestion des processus d’entreprise</span><span class="sxs-lookup"><span data-stu-id="89e99-106">Message Reference for the Business Process Management Solution</span></span>](../core/message-reference-for-the-business-process-management-solution.md)

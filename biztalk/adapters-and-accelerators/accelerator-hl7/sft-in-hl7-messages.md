@@ -18,20 +18,20 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="sft-in-hl7-messages"></a>SFT dans les Messages de HL7
-[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]prend en charge l’ajout des segments de logiciels (SFT) à des messages. Les segments SFT fournissent des informations supplémentaires sur les produits logiciels utilisés en tant qu’applications émettrices. SFT segments sont principalement utilisés pour les diagnostics. Dans le cadre de la norme HL7 2.5, les segments SFT sont affichent dans l’accusé de réception d’application.  
+# <a name="sft-in-hl7-messages"></a><span data-ttu-id="608eb-102">SFT dans les Messages de HL7</span><span class="sxs-lookup"><span data-stu-id="608eb-102">SFT in HL7 Messages</span></span>
+[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]<span data-ttu-id="608eb-103">prend en charge l’ajout des segments de logiciels (SFT) à des messages.</span><span class="sxs-lookup"><span data-stu-id="608eb-103"> supports adding software segments (SFT) to messages.</span></span> <span data-ttu-id="608eb-104">Les segments SFT fournissent des informations supplémentaires sur les produits logiciels utilisés en tant qu’applications émettrices.</span><span class="sxs-lookup"><span data-stu-id="608eb-104">SFT segments provide additional information about the software products used as sending applications.</span></span> <span data-ttu-id="608eb-105">SFT segments sont principalement utilisés pour les diagnostics.</span><span class="sxs-lookup"><span data-stu-id="608eb-105">SFT segments are primarily used for diagnostics.</span></span> <span data-ttu-id="608eb-106">Dans le cadre de la norme HL7 2.5, les segments SFT sont affichent dans l’accusé de réception d’application.</span><span class="sxs-lookup"><span data-stu-id="608eb-106">As a part of the HL7 v2.5 standard, SFT segments are displayed in the application acknowledgement.</span></span>  
   
-## <a name="message-instance-with-sft-segment"></a>Instance de message avec un segment SFT  
- Utilisez la procédure suivante pour créer un message ADT^A01.txt avec un segment SFT.  
+## <a name="message-instance-with-sft-segment"></a><span data-ttu-id="608eb-107">Instance de message avec un segment SFT</span><span class="sxs-lookup"><span data-stu-id="608eb-107">Message instance with SFT segment</span></span>  
+ <span data-ttu-id="608eb-108">Utilisez la procédure suivante pour créer un message ADT^A01.txt avec un segment SFT.</span><span class="sxs-lookup"><span data-stu-id="608eb-108">Use the following procedure to create an ADT^A01.txt message with an SFT segment.</span></span>  
   
 > [!NOTE]
->  Lorsque vous créez ce message dans le bloc-notes, supprimez le retour à la suite de la dernière ligne.  
+>  <span data-ttu-id="608eb-109">Lorsque vous créez ce message dans le bloc-notes, supprimez le retour à la suite de la dernière ligne.</span><span class="sxs-lookup"><span data-stu-id="608eb-109">When you create this message in Notepad, delete the carriage return following the last line.</span></span>  
   
-#### <a name="to-create-an-adta01txt-message-with-an-sft-segment"></a>Pour créer un message ADT^A01.txt avec un segment SFT  
+#### <a name="to-create-an-adta01txt-message-with-an-sft-segment"></a><span data-ttu-id="608eb-110">Pour créer un message ADT^A01.txt avec un segment SFT</span><span class="sxs-lookup"><span data-stu-id="608eb-110">To create an ADT^A01.txt message with an SFT segment</span></span>  
   
-1.  Ouvrez le bloc-notes.  
+1.  <span data-ttu-id="608eb-111">Ouvrez le bloc-notes.</span><span class="sxs-lookup"><span data-stu-id="608eb-111">Open Notepad.</span></span>  
   
-2.  Dans le bloc-notes, copiez le texte suivant :  
+2.  <span data-ttu-id="608eb-112">Dans le bloc-notes, copiez le texte suivant :</span><span class="sxs-lookup"><span data-stu-id="608eb-112">Copy the following text into Notepad:</span></span>  
   
     ```  
     MSH|^~\&|Tutorial_ADTSystem|MCM|Tutorial_BatchDest||199112311501||  
@@ -101,11 +101,11 @@ ms.lasthandoff: 09/20/2017
     ST^surnamr&prefix&own&partner&spouse|N  
     ```  
   
-3.  Enregistrez le fichier et fermez le bloc-notes.  
+3.  <span data-ttu-id="608eb-113">Enregistrez le fichier et fermez le bloc-notes.</span><span class="sxs-lookup"><span data-stu-id="608eb-113">Save the file, and then close Notepad.</span></span>  
   
-4.  Accédez au dossier de l’accusé de réception de la partie de la source.  
+4.  <span data-ttu-id="608eb-114">Accédez au dossier de l’accusé de réception de la partie de la source.</span><span class="sxs-lookup"><span data-stu-id="608eb-114">Check the Acknowledgement folder of the source party.</span></span>  
   
-     L’accusé de réception du corps du message contient les segments SFT du message. L’accusé de réception pour le message ci-dessus est la suivante :  
+     <span data-ttu-id="608eb-115">L’accusé de réception du corps du message contient les segments SFT du message.</span><span class="sxs-lookup"><span data-stu-id="608eb-115">The body acknowledgement of this message contains the SFT segments of the message.</span></span> <span data-ttu-id="608eb-116">L’accusé de réception pour le message ci-dessus est la suivante :</span><span class="sxs-lookup"><span data-stu-id="608eb-116">The ACK for the above message is:</span></span>  
   
     ```  
     MSH|^~\&|Tutorial_BatchDest||Tutorial_ADTSystem|MCM|20070508175311||ACK^A01^ACK|000001|P|2.5|||AL  
@@ -113,6 +113,6 @@ ms.lasthandoff: 09/20/2017
     SFT|ST^A^1^2^ISO^String&String&DNS^AM^String&String&DNS^P^String|String|String|String|String|DTM^H  
     ```  
   
-## <a name="see-also"></a>Voir aussi  
- [La messagerie HL7](../../adapters-and-accelerators/accelerator-hl7/hl7-messaging.md)   
-[Découvrez l’accélérateur HL7 et les outils BizTalk disponibles](../../adapters-and-accelerators/accelerator-hl7/learn-the-hl7-accelerator-and-the-biztalk-tools-available.md)
+## <a name="see-also"></a><span data-ttu-id="608eb-117">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="608eb-117">See Also</span></span>  
+ <span data-ttu-id="608eb-118">[La messagerie HL7](../../adapters-and-accelerators/accelerator-hl7/hl7-messaging.md) </span><span class="sxs-lookup"><span data-stu-id="608eb-118">[HL7 Messaging](../../adapters-and-accelerators/accelerator-hl7/hl7-messaging.md) </span></span>  
+[<span data-ttu-id="608eb-119">Découvrez l’accélérateur HL7 et les outils BizTalk disponibles</span><span class="sxs-lookup"><span data-stu-id="608eb-119">Learn the HL7 accelerator and the BizTalk tools available</span></span>](../../adapters-and-accelerators/accelerator-hl7/learn-the-hl7-accelerator-and-the-biztalk-tools-available.md)

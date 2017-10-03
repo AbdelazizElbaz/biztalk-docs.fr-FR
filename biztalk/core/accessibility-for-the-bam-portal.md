@@ -21,8 +21,8 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="accessibility-for-the-bam-portal"></a>Conditions d'accessibilité au portail BAM
-Le portail BAM prend en charge les fonctionnalités d'accessibilité standard de Microsoft Internet Explorer. Pour plus d’informations sur les fonctionnalités d’accessibilité d’Internet Explorer, consultez [accessibilité dans Internet Explorer 7](https://www.microsoft.com/en-us/Accessibility/windows).  
+# <a name="accessibility-for-the-bam-portal"></a><span data-ttu-id="1769b-102">Conditions d'accessibilité au portail BAM</span><span class="sxs-lookup"><span data-stu-id="1769b-102">Accessibility for the BAM Portal</span></span>
+<span data-ttu-id="1769b-103">Le portail BAM prend en charge les fonctionnalités d'accessibilité standard de Microsoft Internet Explorer.</span><span class="sxs-lookup"><span data-stu-id="1769b-103">The BAM portal supports standard accessibility features for Microsoft Internet Explorer.</span></span> <span data-ttu-id="1769b-104">Pour plus d’informations sur les fonctionnalités d’accessibilité d’Internet Explorer, consultez [accessibilité dans Internet Explorer 7](https://www.microsoft.com/en-us/Accessibility/windows).</span><span class="sxs-lookup"><span data-stu-id="1769b-104">For more information about the accessibility features of Internet Explorer, see [Accessibility in Internet Explorer 7](https://www.microsoft.com/en-us/Accessibility/windows).</span></span>  
   
-## <a name="see-also"></a>Voir aussi  
- [Portail BAM](../core/bam-portal.md)
+## <a name="see-also"></a><span data-ttu-id="1769b-105">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="1769b-105">See Also</span></span>  
+ [<span data-ttu-id="1769b-106">Portail BAM</span><span class="sxs-lookup"><span data-stu-id="1769b-106">BAM Portal</span></span>](../core/bam-portal.md)

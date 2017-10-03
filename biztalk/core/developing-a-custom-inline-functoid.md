@@ -18,45 +18,45 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="developing-a-custom-inline-functoid"></a>Développement d'un fonctoid Inline personnalisé
-Les fonctoids Inline personnalisés fonctionnent en copiant le code d'implémentation directement dans un mappage et non pas en référençant un assembly, une classe et un nom de méthode comme le ferait un fonctoid référencé personnalisé.  
+# <a name="developing-a-custom-inline-functoid"></a><span data-ttu-id="98e97-102">Développement d'un fonctoid Inline personnalisé</span><span class="sxs-lookup"><span data-stu-id="98e97-102">Developing a Custom Inline Functoid</span></span>
+<span data-ttu-id="98e97-103">Les fonctoids Inline personnalisés fonctionnent en copiant le code d'implémentation directement dans un mappage et non pas en référençant un assembly, une classe et un nom de méthode comme le ferait un fonctoid référencé personnalisé.</span><span class="sxs-lookup"><span data-stu-id="98e97-103">Custom inline functoids provide functionality by copying implementation code directly into a map and not by referencing an assembly, class, and method name like a custom referenced functoid.</span></span>  
   
-## <a name="building-inline-script"></a>Création d’un script Inline   
- Il existe deux manières de créer du script afin de l'inclure dans le mappage. Choisissez parmi les méthodes suivantes, en fonction du nombre variable de paramètres que votre fonctoid personnalisé prend en charge ou non :  
+## <a name="building-inline-script"></a><span data-ttu-id="98e97-104">Création d’un script Inline </span><span class="sxs-lookup"><span data-stu-id="98e97-104">Building Inline Script</span></span>  
+ <span data-ttu-id="98e97-105">Il existe deux manières de créer du script afin de l'inclure dans le mappage.</span><span class="sxs-lookup"><span data-stu-id="98e97-105">There are two ways to provide script for inclusion into the map.</span></span> <span data-ttu-id="98e97-106">Choisissez parmi les méthodes suivantes, en fonction du nombre variable de paramètres que votre fonctoid personnalisé prend en charge ou non :</span><span class="sxs-lookup"><span data-stu-id="98e97-106">Choose from the following methods, based on whether your custom functoid supports a variable number of parameters:</span></span>  
   
--   Substituer **GetInlineScriptBuffer** lorsque votre fonctoid personnalisé accepte un nombre variable de paramètres d’entrée et que vous avez défini le **HasVariableInputs** propriété `true`. Par exemple, utilisez cette méthode si vous voulez concaténer un nombre variable de chaînes ou trouver la valeur la plus grande dans une série de valeurs.  
+-   <span data-ttu-id="98e97-107">Substituer **GetInlineScriptBuffer** lorsque votre fonctoid personnalisé accepte un nombre variable de paramètres d’entrée et que vous avez défini le **HasVariableInputs** propriété `true`.</span><span class="sxs-lookup"><span data-stu-id="98e97-107">Override **GetInlineScriptBuffer** when your custom functoid accepts a variable number of input parameters and you have set the **HasVariableInputs** property to `true`.</span></span> <span data-ttu-id="98e97-108">Par exemple, utilisez cette méthode si vous voulez concaténer un nombre variable de chaînes ou trouver la valeur la plus grande dans une série de valeurs.</span><span class="sxs-lookup"><span data-stu-id="98e97-108">For example, use this method if you want to concatenate a variable number of strings or find the largest value in a set of values.</span></span>  
   
--   Utilisez **SetScriptBuffer** lorsque vous n’avez pas besoin de prendre en charge un nombre variable de paramètres d’entrée. Vous pouvez toujours utiliser des paramètres facultatifs, mais le nombre total de paramètres est fixe.  
+-   <span data-ttu-id="98e97-109">Utilisez **SetScriptBuffer** lorsque vous n’avez pas besoin de prendre en charge un nombre variable de paramètres d’entrée.</span><span class="sxs-lookup"><span data-stu-id="98e97-109">Use **SetScriptBuffer** when you do not need to support a variable number of input parameters.</span></span> <span data-ttu-id="98e97-110">Vous pouvez toujours utiliser des paramètres facultatifs, mais le nombre total de paramètres est fixe.</span><span class="sxs-lookup"><span data-stu-id="98e97-110">You can still use optional parameters, but the total number of parameters is fixed.</span></span>  
   
- Ces deux méthodes impliquent des implémentations différentes.  
+ <span data-ttu-id="98e97-111">Ces deux méthodes impliquent des implémentations différentes.</span><span class="sxs-lookup"><span data-stu-id="98e97-111">These two methods require different implementations.</span></span>  
   
-### <a name="providing-inline-code-with-setscriptbuffer"></a>Code Inline avec SetScriptBuffer  
- Pour configurer votre fonctoid personnalisé de sorte qu’il utilise le script Inline :  
+### <a name="providing-inline-code-with-setscriptbuffer"></a><span data-ttu-id="98e97-112">Code Inline avec SetScriptBuffer</span><span class="sxs-lookup"><span data-stu-id="98e97-112">Providing Inline Code with SetScriptBuffer</span></span>  
+ <span data-ttu-id="98e97-113">Pour configurer votre fonctoid personnalisé de sorte qu’il utilise le script Inline :</span><span class="sxs-lookup"><span data-stu-id="98e97-113">To configure your custom functoid to use inline script:</span></span>  
   
-1.  Appelez **AddScriptTypeSupport** avec [Microsoft.BizTalk.BaseFunctoids.ScriptType](http://msdn.microsoft.com/library/microsoft.biztalk.basefunctoids.scripttype.aspx) pour activer le code inline et définir le type de script pris en charge.  
+1.  <span data-ttu-id="98e97-114">Appelez **AddScriptTypeSupport** avec [Microsoft.BizTalk.BaseFunctoids.ScriptType](http://msdn.microsoft.com/library/microsoft.biztalk.basefunctoids.scripttype.aspx) pour activer le code inline et définir le type de script pris en charge.</span><span class="sxs-lookup"><span data-stu-id="98e97-114">Call **AddScriptTypeSupport** with [Microsoft.BizTalk.BaseFunctoids.ScriptType](http://msdn.microsoft.com/library/microsoft.biztalk.basefunctoids.scripttype.aspx) to enable inline code and set the supported script type.</span></span>  
   
-2.  Appeler **SetScriptBuffer** pour définir le code à utiliser pour le fonctoid personnalisé. Vous appellerez cette fonction trois fois avec le paramètre `functionNumber` pour les fonctoids cumulés personnalisés et une fois pour les fonctoids non cumulés personnalisés.  
+2.  <span data-ttu-id="98e97-115">Appeler **SetScriptBuffer** pour définir le code à utiliser pour le fonctoid personnalisé.</span><span class="sxs-lookup"><span data-stu-id="98e97-115">Invoke **SetScriptBuffer** to set the code to use for the custom functoid.</span></span> <span data-ttu-id="98e97-116">Vous appellerez cette fonction trois fois avec le paramètre `functionNumber` pour les fonctoids cumulés personnalisés et une fois pour les fonctoids non cumulés personnalisés.</span><span class="sxs-lookup"><span data-stu-id="98e97-116">You will call this function three times with the `functionNumber` parameter for custom cumulative functoids and once for custom noncumulative functoids.</span></span>  
   
-3.  Utilisez **SetScriptGlobalBuffer** pour déclarer des variables globales que votre code inline utilise.  
+3.  <span data-ttu-id="98e97-117">Utilisez **SetScriptGlobalBuffer** pour déclarer des variables globales que votre code inline utilise.</span><span class="sxs-lookup"><span data-stu-id="98e97-117">Use **SetScriptGlobalBuffer** to declare any global variables that your inline code uses.</span></span>  
   
-4.  Utilisez **RequiredGlobalHelperFunctions** pour indiquer les fonctions d’assistance nécessitant votre fonctoid inline personnalisé.  
+4.  <span data-ttu-id="98e97-118">Utilisez **RequiredGlobalHelperFunctions** pour indiquer les fonctions d’assistance nécessitant votre fonctoid inline personnalisé.</span><span class="sxs-lookup"><span data-stu-id="98e97-118">Use **RequiredGlobalHelperFunctions** to indicate the helper functions that your custom inline functoid requires.</span></span>  
   
- Vous pouvez générer votre script en utilisant StringBuilder ou des constantes. Pour écrire du code de script, une des possibilités consiste à écrire d'abord un fonctoid référencé personnalisé puis, lorsque tous les bogues sont éliminés, à le convertir en un fonctoid Inline en copiant toutes vos fonctions dans des constantes de chaîne.  
+ <span data-ttu-id="98e97-119">Vous pouvez générer votre script en utilisant StringBuilder ou des constantes.</span><span class="sxs-lookup"><span data-stu-id="98e97-119">You can build your script by using StringBuilder or constants.</span></span> <span data-ttu-id="98e97-120">Pour écrire du code de script, une des possibilités consiste à écrire d'abord un fonctoid référencé personnalisé puis, lorsque tous les bogues sont éliminés, à le convertir en un fonctoid Inline en copiant toutes vos fonctions dans des constantes de chaîne.</span><span class="sxs-lookup"><span data-stu-id="98e97-120">One approach to writing script code is to write a custom referenced functoid first and, when all bugs are eliminated, convert it to inline by copying your functions into string constants.</span></span>  
   
-### <a name="providing-inline-code-with-getinlinescriptbuffer"></a>Code Inline avec GetInlineScriptBuffer  
- Si votre fonctoid inline personnalisé prend en charge un nombre variable de paramètres, vous remplacera **GetInlineScriptBuffer**. Pour configurer votre fonctoid personnalisé de sorte qu’il utilise le script Inline :  
+### <a name="providing-inline-code-with-getinlinescriptbuffer"></a><span data-ttu-id="98e97-121">Code Inline avec GetInlineScriptBuffer</span><span class="sxs-lookup"><span data-stu-id="98e97-121">Providing Inline Code with GetInlineScriptBuffer</span></span>  
+ <span data-ttu-id="98e97-122">Si votre fonctoid inline personnalisé prend en charge un nombre variable de paramètres, vous remplacera **GetInlineScriptBuffer**.</span><span class="sxs-lookup"><span data-stu-id="98e97-122">If your custom inline functoid supports a variable number of parameters, you will override **GetInlineScriptBuffer**.</span></span> <span data-ttu-id="98e97-123">Pour configurer votre fonctoid personnalisé de sorte qu’il utilise le script Inline :</span><span class="sxs-lookup"><span data-stu-id="98e97-123">To configure your custom functoid to use inline script:</span></span>  
   
-1.  Dans le constructeur, déclarez que votre fonctoid personnalisé dispose d’entrées variables en définissant **HasVariableInputs** à `true`.  
+1.  <span data-ttu-id="98e97-124">Dans le constructeur, déclarez que votre fonctoid personnalisé dispose d’entrées variables en définissant **HasVariableInputs** à `true`.</span><span class="sxs-lookup"><span data-stu-id="98e97-124">In the constructor, declare that your custom functoid has variable inputs by setting **HasVariableInputs** to `true`.</span></span>  
   
-2.  Dans le constructeur, appelez **AddScriptTypeSupport** avec [Microsoft.BizTalk.BaseFunctoids.ScriptType](http://msdn.microsoft.com/library/microsoft.biztalk.basefunctoids.scripttype.aspx) pour activer le code inline et définir le type de script pris en charge.  
+2.  <span data-ttu-id="98e97-125">Dans le constructeur, appelez **AddScriptTypeSupport** avec [Microsoft.BizTalk.BaseFunctoids.ScriptType](http://msdn.microsoft.com/library/microsoft.biztalk.basefunctoids.scripttype.aspx) pour activer le code inline et définir le type de script pris en charge.</span><span class="sxs-lookup"><span data-stu-id="98e97-125">In the constructor, call **AddScriptTypeSupport** with [Microsoft.BizTalk.BaseFunctoids.ScriptType](http://msdn.microsoft.com/library/microsoft.biztalk.basefunctoids.scripttype.aspx) to enable inline code and set the supported script type.</span></span>  
   
-3.  Substituer **GetInlineScriptBuffer** pour construire et renvoyer le code à utiliser dans le mappage de votre fonctoid personnalisé. Utilisez les paramètres pour créer le code correct en vérifiant le `scriptType` et le `numParams`. Le dernier paramètre, `functionNumber`, doit être 0. Il s’agit, car les fonctions cumulées ont un nombre fixe d’entrées et n’utilisent pas ce mécanisme.  
+3.  <span data-ttu-id="98e97-126">Substituer **GetInlineScriptBuffer** pour construire et renvoyer le code à utiliser dans le mappage de votre fonctoid personnalisé.</span><span class="sxs-lookup"><span data-stu-id="98e97-126">Override **GetInlineScriptBuffer** to construct and return the code to use in the map for your custom functoid.</span></span> <span data-ttu-id="98e97-127">Utilisez les paramètres pour créer le code correct en vérifiant le `scriptType` et le `numParams`.</span><span class="sxs-lookup"><span data-stu-id="98e97-127">Use the parameters to build the correct code by checking the `scriptType` and `numParams`.</span></span> <span data-ttu-id="98e97-128">Le dernier paramètre, `functionNumber`, doit être 0.</span><span class="sxs-lookup"><span data-stu-id="98e97-128">The final parameter, `functionNumber`, should be 0.</span></span> <span data-ttu-id="98e97-129">Il s’agit, car les fonctions cumulées ont un nombre fixe d’entrées et n’utilisent pas ce mécanisme.</span><span class="sxs-lookup"><span data-stu-id="98e97-129">This is because cumulative functions have a fixed number of inputs and do not use this mechanism.</span></span>  
   
-4.  Utilisez **SetScriptGlobalBuffer** pour déclarer des variables globales que votre code inline utilise.  
+4.  <span data-ttu-id="98e97-130">Utilisez **SetScriptGlobalBuffer** pour déclarer des variables globales que votre code inline utilise.</span><span class="sxs-lookup"><span data-stu-id="98e97-130">Use **SetScriptGlobalBuffer** to declare global variables that your inline code uses.</span></span>  
   
-5.  Utilisez **RequiredGlobalHelperFunctions** pour indiquer les fonctions d’assistance nécessitant votre fonctoid inline personnalisé.  
+5.  <span data-ttu-id="98e97-131">Utilisez **RequiredGlobalHelperFunctions** pour indiquer les fonctions d’assistance nécessitant votre fonctoid inline personnalisé.</span><span class="sxs-lookup"><span data-stu-id="98e97-131">Use **RequiredGlobalHelperFunctions** to indicate the helper functions that your custom inline functoid requires.</span></span>  
   
- Le fragment de code suivant crée une fonction C# avec le nombre de paramètres transmis dans `numParams`, mais sans corps. Pour utiliser ce fragment de code, copiez l'exemple dans votre solution et ajoutez du code avec les paramètres pour qu'une valeur soit renvoyée.  
+ <span data-ttu-id="98e97-132">Le fragment de code suivant crée une fonction C# avec le nombre de paramètres transmis dans `numParams`, mais sans corps.</span><span class="sxs-lookup"><span data-stu-id="98e97-132">The following code fragment builds a C# function with the number of parameters passed in `numParams` but with no function body.</span></span> <span data-ttu-id="98e97-133">Pour utiliser ce fragment de code, copiez l'exemple dans votre solution et ajoutez du code avec les paramètres pour qu'une valeur soit renvoyée.</span><span class="sxs-lookup"><span data-stu-id="98e97-133">To use this code fragment, copy the example to your solution and add code to do something with the parameters and return a value.</span></span>  
   
 ```  
 // Override GetInlineScriptBuffer  
@@ -90,38 +90,38 @@ protected override string GetInlineScriptBuffer(ScriptType scriptType, int numPa
 }  
 ```  
   
-## <a name="testing-an-inline-script"></a>Test d’un script Inline  
- Le test est un aspect important de tout effort de développement. Les fonctoids Inline personnalisés peuvent être soumis à un test. Pour simplifier le processus, utilisez l'une des techniques suivantes ou les deux :  
+## <a name="testing-an-inline-script"></a><span data-ttu-id="98e97-134">Test d’un script Inline</span><span class="sxs-lookup"><span data-stu-id="98e97-134">Testing an Inline Script</span></span>  
+ <span data-ttu-id="98e97-135">Le test est un aspect important de tout effort de développement.</span><span class="sxs-lookup"><span data-stu-id="98e97-135">Testing is an important consideration in any development effort.</span></span> <span data-ttu-id="98e97-136">Les fonctoids Inline personnalisés peuvent être soumis à un test.</span><span class="sxs-lookup"><span data-stu-id="98e97-136">Custom inline functoids can be challenging to test.</span></span> <span data-ttu-id="98e97-137">Pour simplifier le processus, utilisez l'une des techniques suivantes ou les deux :</span><span class="sxs-lookup"><span data-stu-id="98e97-137">To simplify the process, use one or both of the following techniques:</span></span>  
   
--   Examinez le XSLT d’un mappage qui utilise le fonctoid inline personnalisé.  
+-   <span data-ttu-id="98e97-138">Examinez le XSLT d’un mappage qui utilise le fonctoid inline personnalisé.</span><span class="sxs-lookup"><span data-stu-id="98e97-138">Examine the XSLT of a map that uses the custom inline functoid.</span></span>  
   
--   Vérifiez l'entrée et la sortie d'un mappage qui utilise le fonctoid Inline personnalisé.  
+-   <span data-ttu-id="98e97-139">Vérifiez l'entrée et la sortie d'un mappage qui utilise le fonctoid Inline personnalisé.</span><span class="sxs-lookup"><span data-stu-id="98e97-139">Verify the input and output of a map that uses the custom inline functoid.</span></span>  
   
-### <a name="examine-the-xslt-of-a-map-that-uses-the-custom-inline-functoid"></a>Examinez le XSLT d'un mappage qui utilise le fonctoid Inline personnalisé.  
- Cette technique révèle souvent des problèmes de syntaxe subtiles ou de logique. Elle vous aide également à comprendre ce qui se passe dans le mappage.  
+### <a name="examine-the-xslt-of-a-map-that-uses-the-custom-inline-functoid"></a><span data-ttu-id="98e97-140">Examinez le XSLT d'un mappage qui utilise le fonctoid Inline personnalisé.</span><span class="sxs-lookup"><span data-stu-id="98e97-140">Examine the XSLT of a Map That Uses the Custom Inline Functoid</span></span>  
+ <span data-ttu-id="98e97-141">Cette technique révèle souvent des problèmes de syntaxe subtiles ou de logique.</span><span class="sxs-lookup"><span data-stu-id="98e97-141">This technique often reveals problems with logic or subtle syntax issues.</span></span> <span data-ttu-id="98e97-142">Elle vous aide également à comprendre ce qui se passe dans le mappage.</span><span class="sxs-lookup"><span data-stu-id="98e97-142">It also helps you to understand what happens in the map.</span></span>  
   
- Pour afficher le XSLT pour un mappage  
+ <span data-ttu-id="98e97-143">Pour afficher le XSLT pour un mappage</span><span class="sxs-lookup"><span data-stu-id="98e97-143">To view the XSLT for a map:</span></span>  
   
-1.  À partir d’un projet BizTalk Visual Studio, cliquez sur le **l’Explorateur de solutions** onglet, cliquez sur un mappage qui utilise votre fonctoid inline personnalisé, puis cliquez sur **valider le mappage**.  
+1.  <span data-ttu-id="98e97-144">À partir d’un projet BizTalk Visual Studio, cliquez sur le **l’Explorateur de solutions** onglet, cliquez sur un mappage qui utilise votre fonctoid inline personnalisé, puis cliquez sur **valider le mappage**.</span><span class="sxs-lookup"><span data-stu-id="98e97-144">From a Visual Studio BizTalk project, click the **Solution Explorer** tab, right-click a map that uses your custom inline functoid, and then click **Validate Map**.</span></span>  
   
-2.  Faites défiler la fenêtre Sortie pour rechercher l'URL du fichier XSLT. Appuyez sur CTRL et cliquez sur l'URL pour afficher le fichier.  
+2.  <span data-ttu-id="98e97-145">Faites défiler la fenêtre Sortie pour rechercher l'URL du fichier XSLT.</span><span class="sxs-lookup"><span data-stu-id="98e97-145">Scroll the Output window to find the URL for the XSLT file.</span></span> <span data-ttu-id="98e97-146">Appuyez sur CTRL et cliquez sur l'URL pour afficher le fichier.</span><span class="sxs-lookup"><span data-stu-id="98e97-146">Press CTRL and click the URL to view the file.</span></span>  
   
 > [!NOTE]
->  Gardez à l’esprit qu'aucune modification apportée au fichier XSLT ne sera répercutée dans votre fonctoid personnalisé.  
+>  <span data-ttu-id="98e97-147">Gardez à l’esprit qu'aucune modification apportée au fichier XSLT ne sera répercutée dans votre fonctoid personnalisé.</span><span class="sxs-lookup"><span data-stu-id="98e97-147">Remember that any changes made to the XSLT file will not be reflected in your custom functoid.</span></span>  
   
-### <a name="test-a-map-that-uses-the-custom-inline-functoid"></a>Test d'un mappage qui utilise le fonctoid Inline personnalisé  
- Ce test permet de vérifier que le mappage et le fonctoid Inline personnalisé fonctionnent comme prévu.  
+### <a name="test-a-map-that-uses-the-custom-inline-functoid"></a><span data-ttu-id="98e97-148">Test d'un mappage qui utilise le fonctoid Inline personnalisé</span><span class="sxs-lookup"><span data-stu-id="98e97-148">Test a Map That Uses the Custom Inline Functoid</span></span>  
+ <span data-ttu-id="98e97-149">Ce test permet de vérifier que le mappage et le fonctoid Inline personnalisé fonctionnent comme prévu.</span><span class="sxs-lookup"><span data-stu-id="98e97-149">This tests whether the map and custom inline functoid work as expected.</span></span>  
   
- Pour tester un mappage  
+ <span data-ttu-id="98e97-150">Pour tester un mappage</span><span class="sxs-lookup"><span data-stu-id="98e97-150">To test a map:</span></span>  
   
-1.  À partir d’un projet BizTalk Visual Studio, cliquez sur le **l’Explorateur de solutions** onglet, cliquez sur un mappage qui utilise votre fonctoid inline personnalisé, puis cliquez sur **Test Map**.  
+1.  <span data-ttu-id="98e97-151">À partir d’un projet BizTalk Visual Studio, cliquez sur le **l’Explorateur de solutions** onglet, cliquez sur un mappage qui utilise votre fonctoid inline personnalisé, puis cliquez sur **Test Map**.</span><span class="sxs-lookup"><span data-stu-id="98e97-151">From a Visual Studio BizTalk project, click the **Solution Explorer** tab, right-click a map that uses your custom inline functoid, and then click **Test Map**.</span></span>  
   
-2.  Faites défiler la fenêtre Sortie pour rechercher l'URL du fichier de sortie. Appuyez sur CTRL et cliquez sur l'URL pour afficher le fichier.  
+2.  <span data-ttu-id="98e97-152">Faites défiler la fenêtre Sortie pour rechercher l'URL du fichier de sortie.</span><span class="sxs-lookup"><span data-stu-id="98e97-152">Scroll the Output window to find the URL for the output file.</span></span> <span data-ttu-id="98e97-153">Appuyez sur CTRL et cliquez sur l'URL pour afficher le fichier.</span><span class="sxs-lookup"><span data-stu-id="98e97-153">Press CTRL and click the URL to view the file.</span></span>  
   
- Vous pouvez vérifier les valeurs d’entrée et de sortie pour vous assurer que le mappage s'est comporté comme prévu.  
+ <span data-ttu-id="98e97-154">Vous pouvez vérifier les valeurs d’entrée et de sortie pour vous assurer que le mappage s'est comporté comme prévu.</span><span class="sxs-lookup"><span data-stu-id="98e97-154">You can check input and output values to verify that the map behaved as expected.</span></span>  
   
-## <a name="example"></a>Exemple  
- L'exemple suivant montre comment créer un fonctoid Inline personnalisé pour concaténer deux chaînes. Il repose sur un fichier de ressources contenant trois ressources de chaîne et une ressource bitmap 16 x 16 pixels.  
+## <a name="example"></a><span data-ttu-id="98e97-155">Exemple</span><span class="sxs-lookup"><span data-stu-id="98e97-155">Example</span></span>  
+ <span data-ttu-id="98e97-156">L'exemple suivant montre comment créer un fonctoid Inline personnalisé pour concaténer deux chaînes.</span><span class="sxs-lookup"><span data-stu-id="98e97-156">The following example illustrates how to create a custom inline functoid for concatenating two strings.</span></span> <span data-ttu-id="98e97-157">Il repose sur un fichier de ressources contenant trois ressources de chaîne et une ressource bitmap 16 x 16 pixels.</span><span class="sxs-lookup"><span data-stu-id="98e97-157">It relies on a resource file containing three string resources and a 16x16-pixel bitmap resource.</span></span>  
   
 ```  
 using System;  
@@ -188,7 +188,7 @@ namespace Microsoft.Samples.BizTalk.CustomFunctoid
 }  
 ```  
   
-## <a name="see-also"></a>Voir aussi  
- [Utilisation de BaseFunctoid](../core/using-basefunctoid.md)   
- [Développement personnalisé référencé fonctoid](../core/developing-a-custom-referenced-functoid.md)   
- [Fonctoid personnalisé (exemple BizTalk Server)](../core/custom-functoid-biztalk-server-sample.md)
+## <a name="see-also"></a><span data-ttu-id="98e97-158">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="98e97-158">See Also</span></span>  
+ <span data-ttu-id="98e97-159">[Utilisation de BaseFunctoid](../core/using-basefunctoid.md) </span><span class="sxs-lookup"><span data-stu-id="98e97-159">[Using BaseFunctoid](../core/using-basefunctoid.md) </span></span>  
+ <span data-ttu-id="98e97-160">[Développement personnalisé référencé fonctoid](../core/developing-a-custom-referenced-functoid.md) </span><span class="sxs-lookup"><span data-stu-id="98e97-160">[Developing a Custom Referenced Functoid](../core/developing-a-custom-referenced-functoid.md) </span></span>  
+ [<span data-ttu-id="98e97-161">Fonctoid personnalisé (exemple BizTalk Server)</span><span class="sxs-lookup"><span data-stu-id="98e97-161">Custom Functoid (BizTalk Server Sample)</span></span>](../core/custom-functoid-biztalk-server-sample.md)

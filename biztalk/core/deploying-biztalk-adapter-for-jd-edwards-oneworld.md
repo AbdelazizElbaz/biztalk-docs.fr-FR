@@ -19,9 +19,9 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="deploying-biztalk-adapter-for-jd-edwards-oneworld"></a>Déploiement de l'adaptateur Microsoft BizTalk pour JD Edwards OneWorld
-Cette section fournit des informations sur le déploiement de l'adaptateur Microsoft BizTalk pour JD Edwards OneWorld.  
+# <a name="deploying-biztalk-adapter-for-jd-edwards-oneworld"></a><span data-ttu-id="25db9-102">Déploiement de l'adaptateur Microsoft BizTalk pour JD Edwards OneWorld</span><span class="sxs-lookup"><span data-stu-id="25db9-102">Deploying BizTalk Adapter for JD Edwards OneWorld</span></span>
+<span data-ttu-id="25db9-103">Cette section fournit des informations sur le déploiement de l'adaptateur Microsoft BizTalk pour JD Edwards OneWorld.</span><span class="sxs-lookup"><span data-stu-id="25db9-103">This section provides information about deploying Microsoft BizTalk Adapter for JD Edwards OneWorld.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="25db9-104">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="25db9-104">In This Section</span></span>  
   
--   [Déploiement de Ports et assemblys](../core/deploying-ports-and-assemblies4.md)
+-   [<span data-ttu-id="25db9-105">Déploiement de Ports et assemblys</span><span class="sxs-lookup"><span data-stu-id="25db9-105">Deploying Ports and Assemblies</span></span>](../core/deploying-ports-and-assemblies4.md)

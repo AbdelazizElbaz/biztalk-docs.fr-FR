@@ -18,17 +18,17 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="assembly-errors"></a>Erreurs en relation avec les assemblys
-Cette section inclut des informations détaillées sur le diagnostic et la résolution des erreurs en relation avec les assemblys WCF.  
+# <a name="assembly-errors"></a><span data-ttu-id="8d978-102">Erreurs en relation avec les assemblys</span><span class="sxs-lookup"><span data-stu-id="8d978-102">Assembly Errors</span></span>
+<span data-ttu-id="8d978-103">Cette section inclut des informations détaillées sur le diagnostic et la résolution des erreurs en relation avec les assemblys WCF.</span><span class="sxs-lookup"><span data-stu-id="8d978-103">This section contains detailed information for diagnosing and resolving WCF Assembly errors.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="8d978-104">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="8d978-104">In This Section</span></span>  
   
--   [Un fichier introuvable exception s’est produite durant la réflexion d’un assembly BizTalk](../core/a-file-not-found-exception-occurred-while-reflecting-a-biztalk-assembly.md)  
+-   [<span data-ttu-id="8d978-105">Un fichier introuvable exception s’est produite durant la réflexion d’un assembly BizTalk</span><span class="sxs-lookup"><span data-stu-id="8d978-105">A file not found exception occurred while reflecting a BizTalk assembly</span></span>](../core/a-file-not-found-exception-occurred-while-reflecting-a-biztalk-assembly.md)  
   
--   [Une exception de sécurité s’est produite durant la réflexion d’un assembly BizTalk](../core/a-security-exception-occurred-while-reflecting-a-biztalk-assembly.md)  
+-   [<span data-ttu-id="8d978-106">Une exception de sécurité s’est produite durant la réflexion d’un assembly BizTalk</span><span class="sxs-lookup"><span data-stu-id="8d978-106">A security exception occurred while reflecting a BizTalk assembly</span></span>](../core/a-security-exception-occurred-while-reflecting-a-biztalk-assembly.md)  
   
--   [Erreur lors du chargement d’assembly](../core/error-loading-assembly.md)  
+-   [<span data-ttu-id="8d978-107">Erreur lors du chargement d’assembly</span><span class="sxs-lookup"><span data-stu-id="8d978-107">Error loading assembly</span></span>](../core/error-loading-assembly.md)  
   
--   [Il n’y aucune orchestration avec public les ports de réception dans cet assembly BizTalk](../core/there-are-no-orchestrations-with-public-receive-ports-in-this-biztalk-assembly.md)  
+-   [<span data-ttu-id="8d978-108">Il n’y aucune orchestration avec public les ports de réception dans cet assembly BizTalk</span><span class="sxs-lookup"><span data-stu-id="8d978-108">There are no orchestrations with public receive ports in this BizTalk assembly</span></span>](../core/there-are-no-orchestrations-with-public-receive-ports-in-this-biztalk-assembly.md)  
   
--   [Impossible de charger l’assembly](../core/unable-to-load-assembly.md)
+-   [<span data-ttu-id="8d978-109">Impossible de charger l’assembly</span><span class="sxs-lookup"><span data-stu-id="8d978-109">Unable to load assembly</span></span>](../core/unable-to-load-assembly.md)

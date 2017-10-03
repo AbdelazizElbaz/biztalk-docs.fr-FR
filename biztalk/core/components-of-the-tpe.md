@@ -19,15 +19,15 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="components-of-the-tpe"></a>Composants de l'Éditeur de modèle de suivi
-Cette section contient des informations sur l'interface utilisateur de l'Éditeur de modèle de suivi et sur ses fonctions.  
+# <a name="components-of-the-tpe"></a><span data-ttu-id="08187-102">Composants de l'Éditeur de modèle de suivi</span><span class="sxs-lookup"><span data-stu-id="08187-102">Components of the TPE</span></span>
+<span data-ttu-id="08187-103">Cette section contient des informations sur l'interface utilisateur de l'Éditeur de modèle de suivi et sur ses fonctions.</span><span class="sxs-lookup"><span data-stu-id="08187-103">This section contains information about the TPE user interface and the functions it performs.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="08187-104">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="08187-104">In This Section</span></span>  
   
--   [Options de Menu de l’éditeur](../core/tpe-menu-options.md)  
+-   [<span data-ttu-id="08187-105">Options de Menu de l’éditeur</span><span class="sxs-lookup"><span data-stu-id="08187-105">TPE Menu Options</span></span>](../core/tpe-menu-options.md)  
   
--   [Qu’est une vue d’activité ?](../core/what-is-an-activity-view.md)  
+-   [<span data-ttu-id="08187-106">Qu’est une vue d’activité ?</span><span class="sxs-lookup"><span data-stu-id="08187-106">What Is an Activity View?</span></span>](../core/what-is-an-activity-view.md)  
   
--   [Nouveautés de la vue ?](../core/what-is-the-source-event-view.md)  
+-   [<span data-ttu-id="08187-107">Nouveautés de la vue ?</span><span class="sxs-lookup"><span data-stu-id="08187-107">What Is the Source Event View?</span></span>](../core/what-is-the-source-event-view.md)  
   
--   [Nœuds de l’activité TPE](../core/tpe-activity-view-nodes.md)
+-   [<span data-ttu-id="08187-108">Nœuds de l’activité TPE</span><span class="sxs-lookup"><span data-stu-id="08187-108">TPE Activity View Nodes</span></span>](../core/tpe-activity-view-nodes.md)

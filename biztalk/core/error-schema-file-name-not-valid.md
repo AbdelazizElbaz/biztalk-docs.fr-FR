@@ -19,11 +19,11 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---schema-file-name-not-valid"></a>Erreur : nom de fichier du schéma non valide
-**Explication**  
+# <a name="error---schema-file-name-not-valid"></a><span data-ttu-id="48df1-102">Erreur : nom de fichier du schéma non valide</span><span class="sxs-lookup"><span data-stu-id="48df1-102">Error - Schema File Name Not Valid</span></span>
+<span data-ttu-id="48df1-103">**Explication**</span><span class="sxs-lookup"><span data-stu-id="48df1-103">**Explanation**</span></span>  
   
- Le nom du fichier de schéma indiqué n'est pas valide.  
+ <span data-ttu-id="48df1-104">Le nom du fichier de schéma indiqué n'est pas valide.</span><span class="sxs-lookup"><span data-stu-id="48df1-104">The indicated schema file name is not valid.</span></span>  
   
- **Action de l’utilisateur**  
+ <span data-ttu-id="48df1-105">**Action de l’utilisateur**</span><span class="sxs-lookup"><span data-stu-id="48df1-105">**User Action**</span></span>  
   
- Vérifiez que le fichier de schéma existe et qu'il est accessible à partir de l'emplacement spécifié.
+ <span data-ttu-id="48df1-106">Vérifiez que le fichier de schéma existe et qu'il est accessible à partir de l'emplacement spécifié.</span><span class="sxs-lookup"><span data-stu-id="48df1-106">Verify that the schema file exists and is accessible at the specified location.</span></span>

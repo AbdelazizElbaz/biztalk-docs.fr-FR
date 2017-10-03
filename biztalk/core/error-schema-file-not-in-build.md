@@ -19,11 +19,11 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---schema-file-not-in-build"></a>Erreur : le fichier de schéma dans la Build
-**Explication**  
+# <a name="error---schema-file-not-in-build"></a><span data-ttu-id="cf0cb-102">Erreur : le fichier de schéma dans la Build</span><span class="sxs-lookup"><span data-stu-id="cf0cb-102">Error - Schema File Not In Build</span></span>
+<span data-ttu-id="cf0cb-103">**Explication**</span><span class="sxs-lookup"><span data-stu-id="cf0cb-103">**Explanation**</span></span>  
   
- La commande (**valider l’Instance**, **générer l’Instance**, ou **valider le schéma**) ne peut pas être effectuée car le **Action de génération** propriété du fichier de schéma est définie sur **aucun**, empêchant ainsi le schéma de participer à ces commandes.  
+ <span data-ttu-id="cf0cb-104">La commande (**valider l’Instance**, **générer l’Instance**, ou **valider le schéma**) ne peut pas être effectuée car le **Action de génération** propriété du fichier de schéma est définie sur **aucun**, empêchant ainsi le schéma de participer à ces commandes.</span><span class="sxs-lookup"><span data-stu-id="cf0cb-104">The command (**Validate Instance**, **Generate Instance**, or **Validate Schema**) could not be performed because the **Build Action** property of the schema file is set to **None**, preventing this schema from participating in these commands.</span></span>  
   
- **Action de l’utilisateur**  
+ <span data-ttu-id="cf0cb-105">**Action de l’utilisateur**</span><span class="sxs-lookup"><span data-stu-id="cf0cb-105">**User Action**</span></span>  
   
- Sélectionnez le fichier de schéma approprié dans Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] l’Explorateur de solutions, puis, dans la fenêtre Propriétés, modifiez la **Action de génération** propriété un **compiler**. Tentez ensuite la **valider l’Instance**, **générer l’Instance**, ou **valider le schéma** réexécutez la commande.
+ <span data-ttu-id="cf0cb-106">Sélectionnez le fichier de schéma approprié dans Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] l’Explorateur de solutions, puis, dans la fenêtre Propriétés, modifiez la **Action de génération** propriété un **compiler**.</span><span class="sxs-lookup"><span data-stu-id="cf0cb-106">Select the relevant schema file in Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Solution Explorer, and then in the Properties window, change the **Build Action** property to a **Compile**.</span></span> <span data-ttu-id="cf0cb-107">Tentez ensuite la **valider l’Instance**, **générer l’Instance**, ou **valider le schéma** réexécutez la commande.</span><span class="sxs-lookup"><span data-stu-id="cf0cb-107">Then attempt the **Validate Instance**, **Generate Instance**, or **Validate Schema** command again.</span></span>

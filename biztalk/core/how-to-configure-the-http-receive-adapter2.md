@@ -21,22 +21,22 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-configure-the-http-receive-adapter"></a>Comment faire pour configurer l’adaptateur de réception HTTP
-Vous pouvez utiliser l'adaptateur de réception HTTP pour envoyer les messages à BizTalk Server. Cet adaptateur est une extension ISAPI IIS (Internet Information Services) hébergée dans le processus IIS.  
+# <a name="how-to-configure-the-http-receive-adapter"></a><span data-ttu-id="bea92-102">Comment faire pour configurer l’adaptateur de réception HTTP</span><span class="sxs-lookup"><span data-stu-id="bea92-102">How to Configure the HTTP Receive Adapter</span></span>
+<span data-ttu-id="bea92-103">Vous pouvez utiliser l'adaptateur de réception HTTP pour envoyer les messages à BizTalk Server.</span><span class="sxs-lookup"><span data-stu-id="bea92-103">You can use the HTTP receive adapter to submit messages to BizTalk Server.</span></span> <span data-ttu-id="bea92-104">Cet adaptateur est une extension ISAPI IIS (Internet Information Services) hébergée dans le processus IIS.</span><span class="sxs-lookup"><span data-stu-id="bea92-104">The HTTP receive adapter is an Internet Information Services (IIS) ISAPI extension that is hosted in the IIS process.</span></span>  
   
-### <a name="to-configure-the-http-receive-adapter"></a>Pour configurer l'adaptateur de réception HTTP  
+### <a name="to-configure-the-http-receive-adapter"></a><span data-ttu-id="bea92-105">Pour configurer l'adaptateur de réception HTTP</span><span class="sxs-lookup"><span data-stu-id="bea92-105">To configure the HTTP receive adapter</span></span>  
   
-1.  Copiez la réception HTTP (BTSHTTPReceive.dll) de l’adaptateur à partir de  **\<BizTalk2010 > \HttpReceive >** au dossier contenant votre projet Single Sign-On (SSO) (par exemple, **< Adapter_install > \ biztalk2010\SSO\mySSODemo**).  
+1.  <span data-ttu-id="bea92-106">Copiez la réception HTTP (BTSHTTPReceive.dll) de l’adaptateur à partir de  **\<BizTalk2010 > \HttpReceive >** au dossier contenant votre projet Single Sign-On (SSO) (par exemple, **< Adapter_install > \ biztalk2010\SSO\mySSODemo**).</span><span class="sxs-lookup"><span data-stu-id="bea92-106">Copy the HTTP receive adapter (BTSHTTPReceive.dll) from **\<BizTalk2010>\HttpReceive>** to the folder containing your Single Sign-On (SSO) project (for example, **<Adapter_install>\biztalk2010\SSO\mySSODemo**).</span></span>  
   
-    1.  Ajoutez une nouvelle extension de service Web mySSODemo.  
+    1.  <span data-ttu-id="bea92-107">Ajoutez une nouvelle extension de service Web mySSODemo.</span><span class="sxs-lookup"><span data-stu-id="bea92-107">Add a new Web service extension mySSODemo.</span></span>  
   
-    2.  Accédez au fichier <BizTalk_install>\HttpReceive et copiez-le dans le dossier contenant votre projet d'authentification unique (par exemple,  
+    2.  <span data-ttu-id="bea92-108">Accédez au fichier <BizTalk_install>\HttpReceive et copiez-le dans le dossier contenant votre projet d'authentification unique (par exemple,</span><span class="sxs-lookup"><span data-stu-id="bea92-108">Browse to and copy <BizTalk_install>\HttpReceive to the folder containing your SSO project, for example,</span></span>  
   
-         <Installation_adaptateur>\biztalk2010\SSO\mySSODemo\BTSHTTPReceive.dll.  
+         <span data-ttu-id="bea92-109"><Installation_adaptateur>\biztalk2010\SSO\mySSODemo\BTSHTTPReceive.dll.</span><span class="sxs-lookup"><span data-stu-id="bea92-109"><Adapter_install>\biztalk2010\SSO\mySSODemo\BTSHTTPReceive.dll.</span></span>  
   
-    3.  Définir le statut de l’extension du service Web mySSODemo à **autorisées**.  
+    3.  <span data-ttu-id="bea92-110">Définir le statut de l’extension du service Web mySSODemo à **autorisées**.</span><span class="sxs-lookup"><span data-stu-id="bea92-110">Set status of mySSODemo Web service extension to **Allowed**.</span></span>  
   
-2.  Redémarrez IIS pour que ces modifications prennent effet.  
+2.  <span data-ttu-id="bea92-111">Redémarrez IIS pour que ces modifications prennent effet.</span><span class="sxs-lookup"><span data-stu-id="bea92-111">Restart IIS to ensure that all changes are in effect.</span></span>  
   
-## <a name="see-also"></a>Voir aussi  
- [À l’aide de l’authentification unique](../core/using-single-sign-on3.md)
+## <a name="see-also"></a><span data-ttu-id="bea92-112">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="bea92-112">See Also</span></span>  
+ [<span data-ttu-id="bea92-113">À l’aide de l’authentification unique</span><span class="sxs-lookup"><span data-stu-id="bea92-113">Using Single Sign-On</span></span>](../core/using-single-sign-on3.md)

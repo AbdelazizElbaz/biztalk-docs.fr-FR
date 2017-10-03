@@ -18,21 +18,21 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="during-serialization-root-node-is-not-placed-at-start-element"></a>Lors de la sérialisation, le nœud racine n'est pas placé au niveau de l'élément de départ
-## <a name="details"></a>Détails  
+# <a name="during-serialization-root-node-is-not-placed-at-start-element"></a><span data-ttu-id="c5da9-102">Lors de la sérialisation, le nœud racine n'est pas placé au niveau de l'élément de départ</span><span class="sxs-lookup"><span data-stu-id="c5da9-102">During serialization root node is not placed at start element</span></span>
+## <a name="details"></a><span data-ttu-id="c5da9-103">Détails</span><span class="sxs-lookup"><span data-stu-id="c5da9-103">Details</span></span>  
   
 |||  
 |-|-|  
-|Nom du produit|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|Version du produit|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|ID d'événement|-|  
-|Source de l'événement|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|Composant|Moteur EDI|  
-|Nom symbolique|-|  
-|Texte du message|Lors de la sérialisation, le nœud racine n'est pas placé au niveau de l'élément de départ|  
+|<span data-ttu-id="c5da9-104">Nom du produit</span><span class="sxs-lookup"><span data-stu-id="c5da9-104">Product Name</span></span>|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
+|<span data-ttu-id="c5da9-105">Version du produit</span><span class="sxs-lookup"><span data-stu-id="c5da9-105">Product Version</span></span>|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
+|<span data-ttu-id="c5da9-106">ID d'événement</span><span class="sxs-lookup"><span data-stu-id="c5da9-106">Event ID</span></span>|-|  
+|<span data-ttu-id="c5da9-107">Source de l'événement</span><span class="sxs-lookup"><span data-stu-id="c5da9-107">Event Source</span></span>|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="c5da9-108"> EDI</span><span class="sxs-lookup"><span data-stu-id="c5da9-108"> EDI</span></span>|  
+|<span data-ttu-id="c5da9-109">Composant</span><span class="sxs-lookup"><span data-stu-id="c5da9-109">Component</span></span>|<span data-ttu-id="c5da9-110">Moteur EDI</span><span class="sxs-lookup"><span data-stu-id="c5da9-110">EDI Engine</span></span>|  
+|<span data-ttu-id="c5da9-111">Nom symbolique</span><span class="sxs-lookup"><span data-stu-id="c5da9-111">Symbolic Name</span></span>|-|  
+|<span data-ttu-id="c5da9-112">Texte du message</span><span class="sxs-lookup"><span data-stu-id="c5da9-112">Message Text</span></span>|<span data-ttu-id="c5da9-113">Lors de la sérialisation, le nœud racine n'est pas placé au niveau de l'élément de départ</span><span class="sxs-lookup"><span data-stu-id="c5da9-113">During serialization root node is not placed at start element</span></span>|  
   
-## <a name="explanation"></a>Explication  
- Cet événement d'erreur/d'avertissement/d'informations indique que le pipeline de réception n'a pas pu traiter un échange entrant car le document informatisé ne commence pas par un en-tête ST ou UNH.  
+## <a name="explanation"></a><span data-ttu-id="c5da9-114">Explication</span><span class="sxs-lookup"><span data-stu-id="c5da9-114">Explanation</span></span>  
+ <span data-ttu-id="c5da9-115">Cet événement d'erreur/d'avertissement/d'informations indique que le pipeline de réception n'a pas pu traiter un échange entrant car le document informatisé ne commence pas par un en-tête ST ou UNH.</span><span class="sxs-lookup"><span data-stu-id="c5da9-115">This Error/Warning/Information event indicates that the receive pipeline could not process an incoming interchange because the transaction set does not start with an ST or UNH header.</span></span>  
   
-## <a name="user-action"></a>Action de l'utilisateur  
- Pour résoudre cette erreur, assurez-vous que chaque document informatisé d'un échange commence par un segment ST (échanges X12) ou un segment UNH (échanges EDIFACT), puis renvoyez l'échange.
+## <a name="user-action"></a><span data-ttu-id="c5da9-116">Action de l'utilisateur</span><span class="sxs-lookup"><span data-stu-id="c5da9-116">User Action</span></span>  
+ <span data-ttu-id="c5da9-117">Pour résoudre cette erreur, assurez-vous que chaque document informatisé d'un échange commence par un segment ST (échanges X12) ou un segment UNH (échanges EDIFACT), puis renvoyez l'échange.</span><span class="sxs-lookup"><span data-stu-id="c5da9-117">To resolve this error, ensure that each of the transaction sets in an interchange starts with an ST segment (for X12 interchanges) or an UNH segment (for EDIFACT interchanges), and then resubmit the interchange.</span></span>

@@ -22,8 +22,8 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="implementing-character-encoding-in-a-pipeline-component"></a>Implémentation d’encodage de caractères dans un composant de Pipeline
-Pour prendre en charge le codage des caractères personnalisés, vous devez implémenter une classe de codage personnalisée en dérivant de Microsoft .NET Framework **codage** classe, puis créer un composant de pipeline de fichier plat personnalisé en héritant de la plate standard Composant désassembleur de fichier ou l’assembleur de fichier plat. Vous pouvez fournir une nouvelle instance de codage au moteur d’analyse en substituant la méthode virtuelle protégée **FFDasmComp.GetDataReader** comme indiqué dans l’exemple suivant.  
+# <a name="implementing-character-encoding-in-a-pipeline-component"></a><span data-ttu-id="040de-102">Implémentation d’encodage de caractères dans un composant de Pipeline</span><span class="sxs-lookup"><span data-stu-id="040de-102">Implementing Character Encoding in a Pipeline Component</span></span>
+<span data-ttu-id="040de-103">Pour prendre en charge le codage des caractères personnalisés, vous devez implémenter une classe de codage personnalisée en dérivant de Microsoft .NET Framework **codage** classe, puis créer un composant de pipeline de fichier plat personnalisé en héritant de la plate standard Composant désassembleur de fichier ou l’assembleur de fichier plat.</span><span class="sxs-lookup"><span data-stu-id="040de-103">To support custom character encoding, you must implement a custom encoding class by deriving from the Microsoft .NET Framework **Encoding** class, then create a custom flat file pipeline component by inheriting from the standard Flat File Disassembler or Flat File Assembler component.</span></span> <span data-ttu-id="040de-104">Vous pouvez fournir une nouvelle instance de codage au moteur d’analyse en substituant la méthode virtuelle protégée **FFDasmComp.GetDataReader** comme indiqué dans l’exemple suivant.</span><span class="sxs-lookup"><span data-stu-id="040de-104">You can supply a new encoding instance to the parsing engine by overriding the protected virtual method **FFDasmComp.GetDataReader** as shown in the following example.</span></span>  
   
 ```  
 /// <summary>  
@@ -40,31 +40,31 @@ Pour prendre en charge le codage des caractères personnalisés, vous devez impl
       }  
 ```  
   
-## <a name="using-predefined-encoding-classes"></a>Utilisation des classes de codage prédéfinies  
- Les types de codage suivants sont prédéfinis par Microsoft .NET Framework et permettent de construire l'analyseur :  
+## <a name="using-predefined-encoding-classes"></a><span data-ttu-id="040de-105">Utilisation des classes de codage prédéfinies</span><span class="sxs-lookup"><span data-stu-id="040de-105">Using predefined encoding classes</span></span>  
+ <span data-ttu-id="040de-106">Les types de codage suivants sont prédéfinis par Microsoft .NET Framework et permettent de construire l'analyseur :</span><span class="sxs-lookup"><span data-stu-id="040de-106">The following encoding types are predefined by the Microsoft .NET Framework and can be used to construct the parser:</span></span>  
   
--   ASCII  
+-   <span data-ttu-id="040de-107">ASCII</span><span class="sxs-lookup"><span data-stu-id="040de-107">ASCII</span></span>  
   
--   UTF7  
+-   <span data-ttu-id="040de-108">UTF7</span><span class="sxs-lookup"><span data-stu-id="040de-108">UTF7</span></span>  
   
--   UTF8  
+-   <span data-ttu-id="040de-109">UTF8</span><span class="sxs-lookup"><span data-stu-id="040de-109">UTF8</span></span>  
   
--   Unicode (UTF16)  
+-   <span data-ttu-id="040de-110">Unicode (UTF16)</span><span class="sxs-lookup"><span data-stu-id="040de-110">Unicode (UTF16)</span></span>  
   
 ```  
 XmlReader xr = docspec.Parse(new DataReader(System.Text.Encoding.UTF8));  
 ```  
   
-## <a name="using-supported-code-pages"></a>Utilisation des pages de code prises en charge  
- Utilisez le code suivant pour prendre en charge Shift-JIS (codepage 932).  
+## <a name="using-supported-code-pages"></a><span data-ttu-id="040de-111">Utilisation des pages de code prises en charge</span><span class="sxs-lookup"><span data-stu-id="040de-111">Using supported code pages</span></span>  
+ <span data-ttu-id="040de-112">Utilisez le code suivant pour prendre en charge Shift-JIS (codepage 932).</span><span class="sxs-lookup"><span data-stu-id="040de-112">Use the following code to support Shift-JIS (codepage 932).</span></span>  
   
 
 ```  
 XmlReader xr = docspec.Parse(new DataReader(System.Text.Encoding.GetEncoding(932)));  
 ```  
   
-## <a name="using-a-private-encoding-class"></a>Utilisation d'une classe de codage privée  
- Vous pouvez créer votre propre classe d’encodage qui dérive de la **System.Text.Encoding** classe abstraite et effectuer votre propre codage et décodage.  
+## <a name="using-a-private-encoding-class"></a><span data-ttu-id="040de-113">Utilisation d'une classe de codage privée</span><span class="sxs-lookup"><span data-stu-id="040de-113">Using a private encoding class</span></span>  
+ <span data-ttu-id="040de-114">Vous pouvez créer votre propre classe d’encodage qui dérive de la **System.Text.Encoding** classe abstraite et effectuer votre propre codage et décodage.</span><span class="sxs-lookup"><span data-stu-id="040de-114">You can create your own encoding class that derives from the **System.Text.Encoding** abstract class and perform your own encoding and decoding.</span></span>  
   
 ```  
 class MyEncoding : System.Text.Encoding  
@@ -75,9 +75,9 @@ class MyEncoding : System.Text.Encoding
 XmlReader xr = docspec.Parser(new DataReader(new MyEncoding()));  
 ```  
   
-## <a name="using-a-private-datareader-class"></a>Utilisation d'une classe DataReader privée  
+## <a name="using-a-private-datareader-class"></a><span data-ttu-id="040de-115">Utilisation d'une classe DataReader privée</span><span class="sxs-lookup"><span data-stu-id="040de-115">Using a private DataReader class</span></span>  
 
- Vous pouvez créer vos propres [DataReader](https://msdn.microsoft.com/library/microsoft.biztalk.parsingengine.datareader.aspx) classe qui implémente le `IDataReader` de l’interface et effectue la lecture sans créer n’importe quel encodage classes.  
+ <span data-ttu-id="040de-116">Vous pouvez créer vos propres [DataReader](https://msdn.microsoft.com/library/microsoft.biztalk.parsingengine.datareader.aspx) classe qui implémente le `IDataReader` de l’interface et effectue la lecture sans créer n’importe quel encodage classes.</span><span class="sxs-lookup"><span data-stu-id="040de-116">You can create your own [DataReader](https://msdn.microsoft.com/library/microsoft.biztalk.parsingengine.datareader.aspx) class that implements the `IDataReader` interface and performs reading without creating any encoding classes.</span></span>  
   
 ```  
 class MyDataReader : IDataReader  
@@ -89,5 +89,5 @@ class MyDataReader : IDataReader
 XmlReader xr = docspec.Parse(new MyDataReader());  
 ```  
   
-## <a name="see-also"></a>Voir aussi  
- [À l’aide de moteurs d’analyse et de sérialisation](../core/using-the-parsing-and-serializing-engines.md)
+## <a name="see-also"></a><span data-ttu-id="040de-117">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="040de-117">See Also</span></span>  
+ [<span data-ttu-id="040de-118">À l’aide de moteurs d’analyse et de sérialisation</span><span class="sxs-lookup"><span data-stu-id="040de-118">Using the Parsing and Serializing Engines</span></span>](../core/using-the-parsing-and-serializing-engines.md)

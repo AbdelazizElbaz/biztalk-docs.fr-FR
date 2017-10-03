@@ -23,12 +23,12 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="document-validation-in-the-xml-disassembler-pipeline-component"></a>Validation de document dans le composant de Pipeline désassembleur XML
-Par défaut, le Désassembleur XML ne valide pas les documents XML par rapport à un schéma, Toutefois, vous pouvez configurer le désassembleur XML pour valider un document XML en définissant le **valider la Structure du Document** propriété.  
+# <a name="document-validation-in-the-xml-disassembler-pipeline-component"></a><span data-ttu-id="04b99-102">Validation de document dans le composant de Pipeline désassembleur XML</span><span class="sxs-lookup"><span data-stu-id="04b99-102">Document Validation in the XML Disassembler Pipeline Component</span></span>
+<span data-ttu-id="04b99-103">Par défaut, le Désassembleur XML ne valide pas les documents XML par rapport à un schéma,</span><span class="sxs-lookup"><span data-stu-id="04b99-103">By default, the XML Disassembler does not validate XML documents against a schema.</span></span> <span data-ttu-id="04b99-104">Toutefois, vous pouvez configurer le désassembleur XML pour valider un document XML en définissant le **valider la Structure du Document** propriété.</span><span class="sxs-lookup"><span data-stu-id="04b99-104">However, you can configure the XML Disassembler to validate an XML document by setting the **Validate Document Structure** property.</span></span>  
   
 > [!CAUTION]
->  Si un champ à promouvoir est déclaré avec un type de données simples, alors qu'il contient des données complexes, la promotion des propriétés générera des résultats imprévisibles. Pour éviter ce scénario, configurez le désassembleur XML pour effectuer la validation de documents en définissant le **valider la Structure du Document** propriété **True**.  
+>  <span data-ttu-id="04b99-105">Si un champ à promouvoir est déclaré avec un type de données simples, alors qu'il contient des données complexes, la promotion des propriétés générera des résultats imprévisibles.</span><span class="sxs-lookup"><span data-stu-id="04b99-105">If a field for promotion is declared with a simple data type but contains complex data, the property promotion will cause unpredictable results.</span></span> <span data-ttu-id="04b99-106">Pour éviter ce scénario, configurez le désassembleur XML pour effectuer la validation de documents en définissant le **valider la Structure du Document** propriété **True**.</span><span class="sxs-lookup"><span data-stu-id="04b99-106">To avoid this scenario, configure the XML Disassembler to perform document validation by setting the **Validate Document Structure** property to **True**.</span></span>  
   
-## <a name="see-also"></a>Voir aussi  
- [Composant de Pipeline désassembleur XML](../core/xml-disassembler-pipeline-component.md)   
- [Comment configurer le composant de Pipeline désassembleur XML](../core/how-to-configure-the-xml-disassembler-pipeline-component.md)
+## <a name="see-also"></a><span data-ttu-id="04b99-107">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="04b99-107">See Also</span></span>  
+ <span data-ttu-id="04b99-108">[Composant de Pipeline désassembleur XML](../core/xml-disassembler-pipeline-component.md) </span><span class="sxs-lookup"><span data-stu-id="04b99-108">[XML Disassembler Pipeline Component](../core/xml-disassembler-pipeline-component.md) </span></span>  
+ [<span data-ttu-id="04b99-109">Comment configurer le composant de Pipeline désassembleur XML</span><span class="sxs-lookup"><span data-stu-id="04b99-109">How to Configure the XML Disassembler Pipeline Component</span></span>](../core/how-to-configure-the-xml-disassembler-pipeline-component.md)

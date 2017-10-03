@@ -19,15 +19,15 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---exception-caught"></a>Erreur : Exception détectée
-**Code d’erreur**  
+# <a name="error---exception-caught"></a><span data-ttu-id="d3c0d-102">Erreur : Exception détectée</span><span class="sxs-lookup"><span data-stu-id="d3c0d-102">Error - Exception Caught</span></span>
+<span data-ttu-id="d3c0d-103">**Code d’erreur**</span><span class="sxs-lookup"><span data-stu-id="d3c0d-103">**Error Code**</span></span>  
   
- btm1023  
+ <span data-ttu-id="d3c0d-104">btm1023</span><span class="sxs-lookup"><span data-stu-id="d3c0d-104">btm1023</span></span>  
   
- **Explication**  
+ <span data-ttu-id="d3c0d-105">**Explication**</span><span class="sxs-lookup"><span data-stu-id="d3c0d-105">**Explanation**</span></span>  
   
- Exception signalant qu'une erreur irrécupérable s'est produite lors du test ou de la validation du mappage.  
+ <span data-ttu-id="d3c0d-106">Exception signalant qu'une erreur irrécupérable s'est produite lors du test ou de la validation du mappage.</span><span class="sxs-lookup"><span data-stu-id="d3c0d-106">The identified exception was encountered, indicating a fatal error during map validation or testing.</span></span>  
   
- **Action de l’utilisateur**  
+ <span data-ttu-id="d3c0d-107">**Action de l’utilisateur**</span><span class="sxs-lookup"><span data-stu-id="d3c0d-107">**User Action**</span></span>  
   
- En fonction de l'exception indiquée, effectuez les actions correctives nécessaires.
+ <span data-ttu-id="d3c0d-108">En fonction de l'exception indiquée, effectuez les actions correctives nécessaires.</span><span class="sxs-lookup"><span data-stu-id="d3c0d-108">Take corrective action based on the nature of the identified exception.</span></span>

@@ -18,19 +18,19 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="monitoring-edi-and-as2-solutions"></a>Surveillance des solutions EDI et AS2
-L'interface utilisateur des rapports d'état EDI et AS2 vous permet d'afficher l'état des messages EDI et AS2 entrants et sortants. Rapports d’état peuvent être consultés dans le **vue d’ensemble du groupe** volet accessible lorsque l’utilisateur clique sur le nœud groupe BizTalk, les liens vers l’EDI, AS2 et rapport d’état du traitement par lot figurent au bas de la **vue d’ensemble du groupe**volet.  
+# <a name="monitoring-edi-and-as2-solutions"></a><span data-ttu-id="54bf2-102">Surveillance des solutions EDI et AS2</span><span class="sxs-lookup"><span data-stu-id="54bf2-102">Monitoring EDI and AS2 Solutions</span></span>
+<span data-ttu-id="54bf2-103">L'interface utilisateur des rapports d'état EDI et AS2 vous permet d'afficher l'état des messages EDI et AS2 entrants et sortants.</span><span class="sxs-lookup"><span data-stu-id="54bf2-103">The EDI and AS2 status reporting UI enables you to display the status of incoming and outgoing EDI and AS2 messages.</span></span> <span data-ttu-id="54bf2-104">Rapports d’état peuvent être consultés dans le **vue d’ensemble du groupe** volet accessible lorsque l’utilisateur clique sur le nœud groupe BizTalk, les liens vers l’EDI, AS2 et rapport d’état du traitement par lot figurent au bas de la **vue d’ensemble du groupe**volet.</span><span class="sxs-lookup"><span data-stu-id="54bf2-104">Status Reports can be viewed from the **Group Overview** pane accessible when BizTalk Group Node is clicked, the links to the EDI, AS2 and Batching Status Reporting are present at the bottom of the **Group Overview** pane.</span></span>  
   
-## <a name="next-steps"></a>Étapes suivantes 
+## <a name="next-steps"></a><span data-ttu-id="54bf2-105">Étapes suivantes</span><span class="sxs-lookup"><span data-stu-id="54bf2-105">Next steps</span></span> 
   
--   [L’activation des rapports d’état AS2 et EDI](../core/enabling-edi-and-as2-status-reports.md)  
+-   [<span data-ttu-id="54bf2-106">L’activation des rapports d’état AS2 et EDI</span><span class="sxs-lookup"><span data-stu-id="54bf2-106">Enabling EDI and AS2 Status Reports</span></span>](../core/enabling-edi-and-as2-status-reports.md)  
   
--   [Configuration d’un EDI et le rapport d’état AS2](../core/configuring-an-edi-and-as2-status-report.md)  
+-   [<span data-ttu-id="54bf2-107">Configuration d’un EDI et le rapport d’état AS2</span><span class="sxs-lookup"><span data-stu-id="54bf2-107">Configuring an EDI and AS2 Status Report</span></span>](../core/configuring-an-edi-and-as2-status-report.md)  
   
--   [Configuration d’un EDI et le rapport d’état AS2](../core/configuring-an-edi-and-as2-status-report.md)  
+-   [<span data-ttu-id="54bf2-108">Configuration d’un EDI et le rapport d’état AS2</span><span class="sxs-lookup"><span data-stu-id="54bf2-108">Configuring an EDI and AS2 Status Report</span></span>](../core/configuring-an-edi-and-as2-status-report.md)  
   
--   [L’activation de rapport d’erreurs](../core/enabling-error-reporting.md)  
+-   [<span data-ttu-id="54bf2-109">L’activation de rapport d’erreurs</span><span class="sxs-lookup"><span data-stu-id="54bf2-109">Enabling Error Reporting</span></span>](../core/enabling-error-reporting.md)  
   
-## <a name="see-also"></a>Voir aussi  
- [Analyse de BizTalk Server](../core/monitoring-biztalk-server.md)   
- [EDI et AS2 le rapport d’état](../core/edi-and-as2-status-reporting.md)   
+## <a name="see-also"></a><span data-ttu-id="54bf2-110">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="54bf2-110">See Also</span></span>  
+ <span data-ttu-id="54bf2-111">[Analyse de BizTalk Server](../core/monitoring-biztalk-server.md) </span><span class="sxs-lookup"><span data-stu-id="54bf2-111">[Monitoring BizTalk Server](../core/monitoring-biztalk-server.md) </span></span>  
+ [<span data-ttu-id="54bf2-112">EDI et AS2 le rapport d’état</span><span class="sxs-lookup"><span data-stu-id="54bf2-112">EDI and AS2 Status Reporting</span></span>](../core/edi-and-as2-status-reporting.md)   

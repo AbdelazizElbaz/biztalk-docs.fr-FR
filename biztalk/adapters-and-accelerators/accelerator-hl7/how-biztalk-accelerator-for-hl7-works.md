@@ -21,15 +21,15 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-biztalk-accelerator-for-hl7-works"></a>Fonctionne de BizTalk Accelerator pour HL7
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator pour HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) fournit une solution de soins de santé en s’appuyant sur [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]. Il le fait en fournissant la prise en charge pour les messages de soins de santé et en ajoutant des composants spécifiques de soins de santé qui personnalisent le traitement des messages à des applications de soins de santé.  
+# <a name="how-biztalk-accelerator-for-hl7-works"></a><span data-ttu-id="3d734-102">Fonctionne de BizTalk Accelerator pour HL7</span><span class="sxs-lookup"><span data-stu-id="3d734-102">How BizTalk Accelerator for HL7 Works</span></span>
+[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="3d734-103">BizTalk Accelerator pour HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) fournit une solution de soins de santé en s’appuyant sur [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].</span><span class="sxs-lookup"><span data-stu-id="3d734-103"> BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) provides a health care solution by building on [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="3d734-104">Il le fait en fournissant la prise en charge pour les messages de soins de santé et en ajoutant des composants spécifiques de soins de santé qui personnalisent le traitement des messages à des applications de soins de santé.</span><span class="sxs-lookup"><span data-stu-id="3d734-104">It does so by providing support for health care messages, and adding health care-specific components that tailor the message processing to health care applications.</span></span>  
   
- Pour plus d’informations, consultez [que BizTalk Accelerator pour HL7 ajoute à BizTalk Server](../../adapters-and-accelerators/accelerator-hl7/what-biztalk-accelerator-for-hl7-adds-to-biztalk-server.md).  
+ <span data-ttu-id="3d734-105">Pour plus d’informations, consultez [que BizTalk Accelerator pour HL7 ajoute à BizTalk Server](../../adapters-and-accelerators/accelerator-hl7/what-biztalk-accelerator-for-hl7-adds-to-biztalk-server.md).</span><span class="sxs-lookup"><span data-stu-id="3d734-105">For more information, see [What BizTalk Accelerator for HL7 Adds to BizTalk Server](../../adapters-and-accelerators/accelerator-hl7/what-biztalk-accelerator-for-hl7-adds-to-biztalk-server.md).</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="3d734-106">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="3d734-106">In This Section</span></span>  
   
--   [Flux de messages](../../adapters-and-accelerators/accelerator-hl7/message-flow.md)  
+-   [<span data-ttu-id="3d734-107">Flux de messages</span><span class="sxs-lookup"><span data-stu-id="3d734-107">Message Flow</span></span>](../../adapters-and-accelerators/accelerator-hl7/message-flow.md)  
   
--   [BizTalk Accelerator pour HL7 composants](../../adapters-and-accelerators/accelerator-hl7/biztalk-accelerator-for-hl7-components.md)  
+-   [<span data-ttu-id="3d734-108">BizTalk Accelerator pour HL7 composants</span><span class="sxs-lookup"><span data-stu-id="3d734-108">BizTalk Accelerator for HL7 Components</span></span>](../../adapters-and-accelerators/accelerator-hl7/biztalk-accelerator-for-hl7-components.md)  
   
--   [Traitement des messages](../../adapters-and-accelerators/accelerator-hl7/message-processing.md)
+-   [<span data-ttu-id="3d734-109">Traitement des messages</span><span class="sxs-lookup"><span data-stu-id="3d734-109">Message Processing</span></span>](../../adapters-and-accelerators/accelerator-hl7/message-processing.md)

@@ -18,19 +18,19 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="address-errors"></a>Erreurs en relation avec les adresses
-Cette section inclut des informations détaillées sur le diagnostic et la résolution des erreurs en relation avec les adresses WCF.  
+# <a name="address-errors"></a><span data-ttu-id="272b7-102">Erreurs en relation avec les adresses</span><span class="sxs-lookup"><span data-stu-id="272b7-102">Address Errors</span></span>
+<span data-ttu-id="272b7-103">Cette section inclut des informations détaillées sur le diagnostic et la résolution des erreurs en relation avec les adresses WCF.</span><span class="sxs-lookup"><span data-stu-id="272b7-103">This section contains detailed information for diagnosing and resolving WCF Address errors.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="272b7-104">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="272b7-104">In This Section</span></span>  
   
--   [Adresse non valide (uri absolu)](../core/invalid-address-absolute-uri.md)  
+-   [<span data-ttu-id="272b7-105">Adresse non valide (uri absolu)</span><span class="sxs-lookup"><span data-stu-id="272b7-105">Invalid address (absolute uri)</span></span>](../core/invalid-address-absolute-uri.md)  
   
--   [Adresse non valide (uri relatif a besoin d’une barre oblique (« / »))](../core/invalid-address-relative-uri-needs-slash.md)  
+-   [<span data-ttu-id="272b7-106">Adresse non valide (uri relatif a besoin d’une barre oblique (« / »))</span><span class="sxs-lookup"><span data-stu-id="272b7-106">Invalid address (relative uri needs slash ("/"))</span></span>](../core/invalid-address-relative-uri-needs-slash.md)  
   
--   [Adresse non valide (uri relatif)](../core/invalid-address-relative-uri.md)  
+-   [<span data-ttu-id="272b7-107">Adresse non valide (uri relatif)</span><span class="sxs-lookup"><span data-stu-id="272b7-107">Invalid address (relative uri)</span></span>](../core/invalid-address-relative-uri.md)  
   
--   [Longueur d’adresse non valide](../core/invalid-address-length.md)  
+-   [<span data-ttu-id="272b7-108">Longueur d’adresse non valide</span><span class="sxs-lookup"><span data-stu-id="272b7-108">Invalid address length</span></span>](../core/invalid-address-length.md)  
   
--   [Schéma d’adresse non valide](../core/invalid-address-scheme.md)  
+-   [<span data-ttu-id="272b7-109">Schéma d’adresse non valide</span><span class="sxs-lookup"><span data-stu-id="272b7-109">Invalid address scheme</span></span>](../core/invalid-address-scheme.md)  
   
--   [Adresse de proxy non valide](../core/invalid-proxy-address-for-send-handler-and-send-port.md)
+-   [<span data-ttu-id="272b7-110">Adresse de proxy non valide</span><span class="sxs-lookup"><span data-stu-id="272b7-110">Invalid proxy address</span></span>](../core/invalid-proxy-address-for-send-handler-and-send-port.md)

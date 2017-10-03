@@ -21,11 +21,11 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="security-considerations-for-adapters"></a>Considérations sur la sécurité pour les cartes
-Cette section contient des informations sur la création et le maintien de la sécurité de l'adaptateur.  
+# <a name="security-considerations-for-adapters"></a><span data-ttu-id="88822-102">Considérations sur la sécurité pour les cartes</span><span class="sxs-lookup"><span data-stu-id="88822-102">Security Considerations for Adapters</span></span>
+<span data-ttu-id="88822-103">Cette section contient des informations sur la création et le maintien de la sécurité de l'adaptateur.</span><span class="sxs-lookup"><span data-stu-id="88822-103">This section contains information about creating and maintaining adapter security.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="88822-104">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="88822-104">In This Section</span></span>  
   
--   [Meilleures pratiques pour sécuriser les adaptateurs](../core/best-practices-for-securing-adapters.md)  
+-   [<span data-ttu-id="88822-105">Meilleures pratiques pour sécuriser les adaptateurs</span><span class="sxs-lookup"><span data-stu-id="88822-105">Best Practices for Securing Adapters</span></span>](../core/best-practices-for-securing-adapters.md)  
   
--   [Authentification unique pour les adaptateurs natifs](../core/sso-for-native-adapters.md)
+-   [<span data-ttu-id="88822-106">Authentification unique pour les adaptateurs natifs</span><span class="sxs-lookup"><span data-stu-id="88822-106">SSO for Native Adapters</span></span>](../core/sso-for-native-adapters.md)

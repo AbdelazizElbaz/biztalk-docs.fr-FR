@@ -21,8 +21,8 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-cluster-the-sql-server"></a>Mise en Cluster SQL Server
-Pour plus d'informations sur la mise en cluster du serveur SQL Server, consultez la documentation SQL Server.  
+# <a name="how-to-cluster-the-sql-server"></a><span data-ttu-id="fa852-102">Mise en Cluster SQL Server</span><span class="sxs-lookup"><span data-stu-id="fa852-102">How to Cluster the SQL Server</span></span>
+<span data-ttu-id="fa852-103">Pour plus d'informations sur la mise en cluster du serveur SQL Server, consultez la documentation SQL Server.</span><span class="sxs-lookup"><span data-stu-id="fa852-103">For information about clustering the SQL server, see your SQL Server documentation.</span></span>  
   
-## <a name="see-also"></a>Voir aussi  
- [Options d’Installation de l’authentification unique de la haute disponibilité](../core/high-availability-sso-installation-options.md)
+## <a name="see-also"></a><span data-ttu-id="fa852-104">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="fa852-104">See Also</span></span>  
+ [<span data-ttu-id="fa852-105">Options d’Installation de l’authentification unique de la haute disponibilité</span><span class="sxs-lookup"><span data-stu-id="fa852-105">High-Availability SSO Installation Options</span></span>](../core/high-availability-sso-installation-options.md)

@@ -22,20 +22,20 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-list-bam-activities"></a>Affichage de la liste des activités BAM
-Les administrateurs utilisent la **get-activities** commande de l’utilitaire de gestion BAM pour répertorier les activités dans la base de données d’importation principale BAM locale.  
+# <a name="how-to-list-bam-activities"></a><span data-ttu-id="1e158-102">Affichage de la liste des activités BAM</span><span class="sxs-lookup"><span data-stu-id="1e158-102">How to List BAM Activities</span></span>
+<span data-ttu-id="1e158-103">Les administrateurs utilisent la **get-activities** commande de l’utilitaire de gestion BAM pour répertorier les activités dans la base de données d’importation principale BAM locale.</span><span class="sxs-lookup"><span data-stu-id="1e158-103">Administrators use the **get-activities** command of the BAM Management utility to list the activities in the local BAM Primary Import database.</span></span>  
   
-### <a name="to-list-bam-activities"></a>Pour affichage la liste des activités BAM  
+### <a name="to-list-bam-activities"></a><span data-ttu-id="1e158-104">Pour affichage la liste des activités BAM</span><span class="sxs-lookup"><span data-stu-id="1e158-104">To list BAM Activities</span></span>  
   
-1.  Ouvrez une invite de commandes comme suit : cliquez sur **Démarrer**, cliquez sur **exécuter**, type **cmd**, puis cliquez sur **OK**.  
+1.  <span data-ttu-id="1e158-105">Ouvrez une invite de commandes comme suit : cliquez sur **Démarrer**, cliquez sur **exécuter**, type **cmd**, puis cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="1e158-105">Open a command prompt as follows: Click **Start**, click **Run**, type **cmd**, and then click **OK**.</span></span>  
   
-2.  Accédez au dossier des suivis en tapant **C:\Program Files\Microsoft BizTalk Server \<version > \Tracking** à l’invite de commandes. Appuyez sur **Entrée**.  
+2.  <span data-ttu-id="1e158-106">Accédez au dossier des suivis en tapant **C:\Program Files\Microsoft BizTalk Server \<version > \Tracking** à l’invite de commandes.</span><span class="sxs-lookup"><span data-stu-id="1e158-106">Navigate to the tracking folder by typing **C:\Program Files\Microsoft BizTalk Server \<version>\Tracking** at the command prompt.</span></span> <span data-ttu-id="1e158-107">Appuyez sur **Entrée**.</span><span class="sxs-lookup"><span data-stu-id="1e158-107">Press **ENTER**.</span></span>  
   
-3.  Type **bm get-activities**.  
+3.  <span data-ttu-id="1e158-108">Type **bm get-activities**.</span><span class="sxs-lookup"><span data-stu-id="1e158-108">Type **bm get-activities**.</span></span>  
   
-4.  Appuyez sur **Entrée**.  
+4.  <span data-ttu-id="1e158-109">Appuyez sur **Entrée**.</span><span class="sxs-lookup"><span data-stu-id="1e158-109">Press **ENTER**.</span></span>  
   
-## <a name="see-also"></a>Voir aussi  
- [Gestion de l’Infrastructure dynamique BAM](../core/managing-the-bam-dynamic-infrastructure.md)   
- [Recommandations de sécurité BAM](../core/bam-security-recommendations.md)   
- [Utilitaire de gestion BAM](../core/bam-management-utility.md)
+## <a name="see-also"></a><span data-ttu-id="1e158-110">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="1e158-110">See Also</span></span>  
+ <span data-ttu-id="1e158-111">[Gestion de l’Infrastructure dynamique BAM](../core/managing-the-bam-dynamic-infrastructure.md) </span><span class="sxs-lookup"><span data-stu-id="1e158-111">[Managing the BAM Dynamic Infrastructure](../core/managing-the-bam-dynamic-infrastructure.md) </span></span>  
+ <span data-ttu-id="1e158-112">[Recommandations de sécurité BAM](../core/bam-security-recommendations.md) </span><span class="sxs-lookup"><span data-stu-id="1e158-112">[BAM Security Recommendations](../core/bam-security-recommendations.md) </span></span>  
+ [<span data-ttu-id="1e158-113">Utilitaire de gestion BAM</span><span class="sxs-lookup"><span data-stu-id="1e158-113">BAM Management Utility</span></span>](../core/bam-management-utility.md)

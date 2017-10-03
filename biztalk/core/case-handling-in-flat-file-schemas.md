@@ -18,12 +18,12 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="case-handling-in-flat-file-schemas"></a>Cas de gestion des schémas de fichier plat
+# <a name="case-handling-in-flat-file-schemas"></a><span data-ttu-id="1860f-102">Cas de gestion des schémas de fichier plat</span><span class="sxs-lookup"><span data-stu-id="1860f-102">Case Handling in Flat File Schemas</span></span>
 
-## <a name="overview"></a>Vue d'ensemble
-Vous pouvez utiliser la **cas** propriété pour effectuer la conversion de casse des données de fichier plat lorsqu’elles sont converties à partir de son format XML équivalent. Lorsque l’assembleur de fichier plat convertit un message XML dans son format de fichier plat équivalent et le **cas** propriété a la valeur **majuscules** ou **minuscules**, toutes les données régie par correspondant sera converti en majuscules ou minuscules, schéma respectivement, lors de la traduction.  
+## <a name="overview"></a><span data-ttu-id="1860f-103">Vue d'ensemble</span><span class="sxs-lookup"><span data-stu-id="1860f-103">Overview</span></span>
+<span data-ttu-id="1860f-104">Vous pouvez utiliser la **cas** propriété pour effectuer la conversion de casse des données de fichier plat lorsqu’elles sont converties à partir de son format XML équivalent.</span><span class="sxs-lookup"><span data-stu-id="1860f-104">You can use the **Case** property to perform case conversion of flat file data when being translated from its equivalent XML format.</span></span> <span data-ttu-id="1860f-105">Lorsque l’assembleur de fichier plat convertit un message XML dans son format de fichier plat équivalent et le **cas** propriété a la valeur **majuscules** ou **minuscules**, toutes les données régie par correspondant sera converti en majuscules ou minuscules, schéma respectivement, lors de la traduction.</span><span class="sxs-lookup"><span data-stu-id="1860f-105">When the flat file assembler translates an XML message into its equivalent flat file format, and the **Case** property is set to either **Uppercase** or **Lowercase**, all data governed by the corresponding schema will be converted to uppercase or lowercase, respectively, during the translation.</span></span>  
   
- Lorsque le **cas** est définie sur **(par défaut)**, aucune conversion de casse n’est effectuée.  
+ <span data-ttu-id="1860f-106">Lorsque le **cas** est définie sur **(par défaut)**, aucune conversion de casse n’est effectuée.</span><span class="sxs-lookup"><span data-stu-id="1860f-106">When the **Case** property is set to **(Default)**, no case conversion is performed.</span></span>  
   
-## <a name="see-also"></a>Voir aussi  
- **Schémas de Message de fichier de considérations relatives à la création de plat** et **cas (propriété de nœud des schémas de fichier plat)**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
+## <a name="see-also"></a><span data-ttu-id="1860f-107">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="1860f-107">See Also</span></span>  
+ <span data-ttu-id="1860f-108">**Schémas de Message de fichier de considérations relatives à la création de plat** et **cas (propriété de nœud des schémas de fichier plat)**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]</span><span class="sxs-lookup"><span data-stu-id="1860f-108">**Considerations When Creating Flat File Message Schemas** and **Case (Node Property of Flat File Schemas)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]</span></span>

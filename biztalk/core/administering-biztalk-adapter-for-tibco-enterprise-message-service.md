@@ -21,9 +21,9 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="administering-biztalk-adapter-for-tibco-enterprise-message-service"></a>Administration de l'adaptateur BizTalk pour TIBCO Enterprise Message Service
-Cette section fournit des informations sur l'adminstration de l'adaptateur BizTalk pour IBCO Enterprise Message Service.  
+# <a name="administering-biztalk-adapter-for-tibco-enterprise-message-service"></a><span data-ttu-id="d76f9-102">Administration de l'adaptateur BizTalk pour TIBCO Enterprise Message Service</span><span class="sxs-lookup"><span data-stu-id="d76f9-102">Administering BizTalk Adapter for TIBCO Enterprise Message Service</span></span>
+<span data-ttu-id="d76f9-103">Cette section fournit des informations sur l'adminstration de l'adaptateur BizTalk pour IBCO Enterprise Message Service.</span><span class="sxs-lookup"><span data-stu-id="d76f9-103">This section provides information about administering BizTalk Adapter for TIBCO Enterprise Message Service.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="d76f9-104">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="d76f9-104">In This Section</span></span>  
   
--   [À l’aide de la gestion des exceptions de BizTalk Server](../core/using-biztalk-server-exception-handling5.md)
+-   [<span data-ttu-id="d76f9-105">À l’aide de la gestion des exceptions de BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="d76f9-105">Using BizTalk Server Exception Handling</span></span>](../core/using-biztalk-server-exception-handling5.md)

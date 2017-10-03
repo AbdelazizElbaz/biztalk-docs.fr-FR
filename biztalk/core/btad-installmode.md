@@ -19,18 +19,18 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="btadinstallmode"></a>BTAD_InstallMode
-BTAD_InstallMode décrit le mode d'installation pour le déploiement d'applications BizTalk.  
+# <a name="btadinstallmode"></a><span data-ttu-id="5873b-102">BTAD_InstallMode</span><span class="sxs-lookup"><span data-stu-id="5873b-102">BTAD_InstallMode</span></span>
+<span data-ttu-id="5873b-103">BTAD_InstallMode décrit le mode d'installation pour le déploiement d'applications BizTalk.</span><span class="sxs-lookup"><span data-stu-id="5873b-103">BTAD_InstallMode describes the installation mode for BizTalk application deployment.</span></span>  
   
-## <a name="remarks"></a>Notes  
- Le tableau suivant répertorie les valeurs possibles de BTAD_InstallMode.  
+## <a name="remarks"></a><span data-ttu-id="5873b-104">Notes</span><span class="sxs-lookup"><span data-stu-id="5873b-104">Remarks</span></span>  
+ <span data-ttu-id="5873b-105">Le tableau suivant répertorie les valeurs possibles de BTAD_InstallMode.</span><span class="sxs-lookup"><span data-stu-id="5873b-105">The following table describes the possible values for BTAD_InstallMode.</span></span>  
   
-|Valeur|Description|  
+|<span data-ttu-id="5873b-106">Valeur</span><span class="sxs-lookup"><span data-stu-id="5873b-106">Value</span></span>|<span data-ttu-id="5873b-107">Description</span><span class="sxs-lookup"><span data-stu-id="5873b-107">Description</span></span>|  
 |-----------|-----------------|  
-|Install|Créer ou mettre à jour BizTalkHostInstance (ordinateur local)|  
-|Importer|Créer ou mettre à jour ConfigurationDb (base de données de gestion BizTalk associée au groupe)|  
-|Désinstaller|Supprimer de BizTalkHostInstance (ordinateur local)|  
+|<span data-ttu-id="5873b-108">Install</span><span class="sxs-lookup"><span data-stu-id="5873b-108">Install</span></span>|<span data-ttu-id="5873b-109">Créer ou mettre à jour BizTalkHostInstance (ordinateur local)</span><span class="sxs-lookup"><span data-stu-id="5873b-109">Create or update to BizTalkHostInstance (the local computer)</span></span>|  
+|<span data-ttu-id="5873b-110">Importer</span><span class="sxs-lookup"><span data-stu-id="5873b-110">Import</span></span>|<span data-ttu-id="5873b-111">Créer ou mettre à jour ConfigurationDb (base de données de gestion BizTalk associée au groupe)</span><span class="sxs-lookup"><span data-stu-id="5873b-111">Create or update to ConfigurationDb (the BizTalk Management database for the group)</span></span>|  
+|<span data-ttu-id="5873b-112">Désinstaller</span><span class="sxs-lookup"><span data-stu-id="5873b-112">Uninstall</span></span>|<span data-ttu-id="5873b-113">Supprimer de BizTalkHostInstance (ordinateur local)</span><span class="sxs-lookup"><span data-stu-id="5873b-113">Delete from BizTalkHostInstance (the local computer)</span></span>|  
   
-## <a name="see-also"></a>Voir aussi  
- [Variables d’environnement de Script de pré-traitement et de post-traitement](../core/pre-and-post-processing-script-environment-variables.md)   
- [Comment les Variables d’environnement indiquent état du déploiement](../core/how-environment-variables-indicate-deployment-state.md)
+## <a name="see-also"></a><span data-ttu-id="5873b-114">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="5873b-114">See Also</span></span>  
+ <span data-ttu-id="5873b-115">[Variables d’environnement de Script de pré-traitement et de post-traitement](../core/pre-and-post-processing-script-environment-variables.md) </span><span class="sxs-lookup"><span data-stu-id="5873b-115">[Pre- and Post-processing Script Environment Variables](../core/pre-and-post-processing-script-environment-variables.md) </span></span>  
+ [<span data-ttu-id="5873b-116">Comment les Variables d’environnement indiquent état du déploiement</span><span class="sxs-lookup"><span data-stu-id="5873b-116">How Environment Variables Indicate Deployment State</span></span>](../core/how-environment-variables-indicate-deployment-state.md)

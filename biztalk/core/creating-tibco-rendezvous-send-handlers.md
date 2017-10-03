@@ -19,23 +19,23 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="creating-tibco-rendezvous-send-handlers"></a>Création des gestionnaires d'envoi TIBCO Rendezvous
-Cette section décrit la création d'un schéma pour utiliser TIBCO Rendezvous dans une orchestration BizTalk Server.  
+# <a name="creating-tibco-rendezvous-send-handlers"></a><span data-ttu-id="c5a31-102">Création des gestionnaires d'envoi TIBCO Rendezvous</span><span class="sxs-lookup"><span data-stu-id="c5a31-102">Creating TIBCO Rendezvous Send Handlers</span></span>
+<span data-ttu-id="c5a31-103">Cette section décrit la création d'un schéma pour utiliser TIBCO Rendezvous dans une orchestration BizTalk Server.</span><span class="sxs-lookup"><span data-stu-id="c5a31-103">This section explains how to create a schema to use TIBCO Rendezvous in a BizTalk Server orchestration.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="c5a31-104">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="c5a31-104">In This Section</span></span>  
   
--   [Gestion](../core/management.md)  
+-   [<span data-ttu-id="c5a31-105">Gestion</span><span class="sxs-lookup"><span data-stu-id="c5a31-105">Management</span></span>](../core/management.md)  
   
--   [Comment créer des Ports d’envoi pour TIBCO Rendezvous](../core/how-to-create-send-ports-for-tibco-rendezvous.md)  
+-   [<span data-ttu-id="c5a31-106">Comment créer des Ports d’envoi pour TIBCO Rendezvous</span><span class="sxs-lookup"><span data-stu-id="c5a31-106">How to Create Send Ports for TIBCO Rendezvous</span></span>](../core/how-to-create-send-ports-for-tibco-rendezvous.md)  
   
--   [Comment définir les propriétés du Transport TIBCO Rendezvous](../core/how-to-set-tibco-rendezvous-transport-properties.md)  
+-   [<span data-ttu-id="c5a31-107">Comment définir les propriétés du Transport TIBCO Rendezvous</span><span class="sxs-lookup"><span data-stu-id="c5a31-107">How to Set TIBCO Rendezvous Transport Properties</span></span>](../core/how-to-set-tibco-rendezvous-transport-properties.md)  
   
--   [Comment définir les Pipelines d’envoi pour TIBCO Rendezvous](../core/how-to-set-send-pipelines-for-tibco-rendezvous.md)  
+-   [<span data-ttu-id="c5a31-108">Comment définir les Pipelines d’envoi pour TIBCO Rendezvous</span><span class="sxs-lookup"><span data-stu-id="c5a31-108">How to Set Send Pipelines for TIBCO Rendezvous</span></span>](../core/how-to-set-send-pipelines-for-tibco-rendezvous.md)  
   
--   [À l’aide de Ports d’envoi TIBCO Rendezvous à partir de BizTalk Server](../core/using-tibco-rendezvous-send-ports-from-biztalk-server.md)  
+-   [<span data-ttu-id="c5a31-109">À l’aide de Ports d’envoi TIBCO Rendezvous à partir de BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="c5a31-109">Using TIBCO Rendezvous Send Ports from BizTalk Server</span></span>](../core/using-tibco-rendezvous-send-ports-from-biztalk-server.md)  
   
--   [À l’aide de BizTalk Server à partir de TIBCO Rendezvous pour envoyer des Messages](../core/using-biztalk-server-from-tibco-rendezvous-to-send-messages.md)  
+-   [<span data-ttu-id="c5a31-110">À l’aide de BizTalk Server à partir de TIBCO Rendezvous pour envoyer des Messages</span><span class="sxs-lookup"><span data-stu-id="c5a31-110">Using BizTalk Server from TIBCO Rendezvous to Send Messages</span></span>](../core/using-biztalk-server-from-tibco-rendezvous-to-send-messages.md)  
   
--   [Mappage de Type de données pour les gestionnaires d’envoi dans TIBCO Rendezvous](../core/data-type-mapping-for-send-handlers-in-tibco-rendezvous.md)  
+-   [<span data-ttu-id="c5a31-111">Mappage de Type de données pour les gestionnaires d’envoi dans TIBCO Rendezvous</span><span class="sxs-lookup"><span data-stu-id="c5a31-111">Data Type Mapping for Send Handlers in TIBCO Rendezvous</span></span>](../core/data-type-mapping-for-send-handlers-in-tibco-rendezvous.md)  
   
--   [Propriétés de contexte du Message BizTalk Server (gestionnaires d’envoi)](../core/biztalk-server-message-context-properties-send-handlers.md)
+-   [<span data-ttu-id="c5a31-112">Propriétés de contexte du Message BizTalk Server (gestionnaires d’envoi)</span><span class="sxs-lookup"><span data-stu-id="c5a31-112">BizTalk Server Message Context Properties (Send Handlers)</span></span>](../core/biztalk-server-message-context-properties-send-handlers.md)

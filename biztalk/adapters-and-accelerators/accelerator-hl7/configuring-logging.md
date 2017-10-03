@@ -23,17 +23,17 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="configuring-logging"></a>Configuration de la journalisation
-Soins de santé applications requièrent la journalisation complète de messages. Étant donné que ces applications gèrent critiques, temps sensibles et monétaires journalisation des données, devient un élément essentiel de l’application. Les administrateurs système doivent être en mesure d’effectuer les opérations suivantes :  
+# <a name="configuring-logging"></a><span data-ttu-id="bef49-102">Configuration de la journalisation</span><span class="sxs-lookup"><span data-stu-id="bef49-102">Configuring Logging</span></span>
+<span data-ttu-id="bef49-103">Soins de santé applications requièrent la journalisation complète de messages.</span><span class="sxs-lookup"><span data-stu-id="bef49-103">Health care applications require complete logging of messages.</span></span> <span data-ttu-id="bef49-104">Étant donné que ces applications gèrent critiques, temps sensibles et monétaires journalisation des données, devient un élément essentiel de l’application.</span><span class="sxs-lookup"><span data-stu-id="bef49-104">Since these applications handle critical, time sensitive and monetary data, logging becomes a critical part of the application.</span></span> <span data-ttu-id="bef49-105">Les administrateurs système doivent être en mesure d’effectuer les opérations suivantes :</span><span class="sxs-lookup"><span data-stu-id="bef49-105">System administrators need to be able to do the following:</span></span>  
   
--   Stocker les messages dans un emplacement configuré  
+-   <span data-ttu-id="bef49-106">Stocker les messages dans un emplacement configuré</span><span class="sxs-lookup"><span data-stu-id="bef49-106">Store messages in a configured place</span></span>  
   
--   Mettre en corrélation les messages enregistrés pour le message réel  
+-   <span data-ttu-id="bef49-107">Mettre en corrélation les messages enregistrés pour le message réel</span><span class="sxs-lookup"><span data-stu-id="bef49-107">Correlate the logged messages to the actual message</span></span>  
   
--   Liste, le message par le partenaire ou par type de processus  
+-   <span data-ttu-id="bef49-108">Liste, le message par le partenaire ou par type de processus</span><span class="sxs-lookup"><span data-stu-id="bef49-108">List the message per partner or per process type</span></span>  
   
--   Exécuter des rapports à un moment prédéterminé sur ces messages enregistrés  
+-   <span data-ttu-id="bef49-109">Exécuter des rapports à un moment prédéterminé sur ces messages enregistrés</span><span class="sxs-lookup"><span data-stu-id="bef49-109">Run reports at a predetermined time on these logged messages</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="bef49-110">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="bef49-110">In This Section</span></span>  
   
--   [Sélection de la banque de journalisation](../../adapters-and-accelerators/accelerator-hl7/selecting-the-logging-store.md)
+-   [<span data-ttu-id="bef49-111">Sélection de la banque de journalisation</span><span class="sxs-lookup"><span data-stu-id="bef49-111">Selecting the Logging Store</span></span>](../../adapters-and-accelerators/accelerator-hl7/selecting-the-logging-store.md)

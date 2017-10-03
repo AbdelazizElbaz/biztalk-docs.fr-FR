@@ -22,8 +22,8 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="how-to-execute-policies"></a>L’exécution des stratégies
-L’exemple de code suivant montre comment appeler le moteur de règles pour une stratégie d’exécution par programme à l’aide de la **stratégie** classe dans le **Microsoft.RuleEngine** assembly.  
+# <a name="how-to-execute-policies"></a><span data-ttu-id="295b7-102">L’exécution des stratégies</span><span class="sxs-lookup"><span data-stu-id="295b7-102">How to Execute Policies</span></span>
+<span data-ttu-id="295b7-103">L’exemple de code suivant montre comment appeler le moteur de règles pour une stratégie d’exécution par programme à l’aide de la **stratégie** classe dans le **Microsoft.RuleEngine** assembly.</span><span class="sxs-lookup"><span data-stu-id="295b7-103">The following sample code shows how to invoke the rule engine to execute a policy programmatically by using the **Policy** class in the **Microsoft.RuleEngine** assembly.</span></span>  
   
 ```  
 xmlDocument = IncomingXMLMessage.XMLCase;  
@@ -34,14 +34,14 @@ OutgoingXMLMessage.XMLCase = xmlDocument;
 policy.Dispose();  
 ```  
   
-## <a name="important-methods-of-the-policy-class"></a>Méthodes importantes de la classe Stratégie  
- Le tableau suivant présente les méthodes importantes de la classe Stratégie et leurs descriptions.  
+## <a name="important-methods-of-the-policy-class"></a><span data-ttu-id="295b7-104">Méthodes importantes de la classe Stratégie</span><span class="sxs-lookup"><span data-stu-id="295b7-104">Important methods of the Policy class</span></span>  
+ <span data-ttu-id="295b7-105">Le tableau suivant présente les méthodes importantes de la classe Stratégie et leurs descriptions.</span><span class="sxs-lookup"><span data-stu-id="295b7-105">Here are the important methods of the Policy class and their descriptions.</span></span>  
   
-|Méthode de la classe Stratégie| Description|  
+|<span data-ttu-id="295b7-106">Méthode de la classe Stratégie</span><span class="sxs-lookup"><span data-stu-id="295b7-106">Method in the Policy class</span></span>|<span data-ttu-id="295b7-107"> Description</span><span class="sxs-lookup"><span data-stu-id="295b7-107">Description</span></span>|  
 |--------------------------------|-----------------|  
-|Execute|Ajoute les faits à court terme spécifiés dans la mémoire de travail du moteur de règles et exécute la stratégie à l'aide de l'algorithme correspondance-résolution des conflits-action. Pour plus d’informations sur l’algorithme de l’Action de résolution de conflit de correspondance, consultez [évaluation de Condition et exécution d’Action](../core/condition-evaluation-and-action-execution.md) .|  
-|Dispose|Libère les ressources utilisées par le moteur de règles pour l'exécution de la stratégie.|  
-|Désactiver|Efface ou réinitialise la mémoire de travail et l'agenda de l'instance de moteur de règles créée pour l'exécution de la stratégie.|  
+|<span data-ttu-id="295b7-108">Execute</span><span class="sxs-lookup"><span data-stu-id="295b7-108">Execute</span></span>|<span data-ttu-id="295b7-109">Ajoute les faits à court terme spécifiés dans la mémoire de travail du moteur de règles et exécute la stratégie à l'aide de l'algorithme correspondance-résolution des conflits-action.</span><span class="sxs-lookup"><span data-stu-id="295b7-109">Adds the specified short-term facts into the rule engine's working memory and executes the policy using Match-Conflict Resolution-Action algorithm.</span></span> <span data-ttu-id="295b7-110">Pour plus d’informations sur l’algorithme de l’Action de résolution de conflit de correspondance, consultez [évaluation de Condition et exécution d’Action](../core/condition-evaluation-and-action-execution.md) .</span><span class="sxs-lookup"><span data-stu-id="295b7-110">For more information on Match-Conflict Resolution-Action algorithm, see [Condition Evaluation and Action Execution](../core/condition-evaluation-and-action-execution.md) .</span></span>|  
+|<span data-ttu-id="295b7-111">Dispose</span><span class="sxs-lookup"><span data-stu-id="295b7-111">Dispose</span></span>|<span data-ttu-id="295b7-112">Libère les ressources utilisées par le moteur de règles pour l'exécution de la stratégie.</span><span class="sxs-lookup"><span data-stu-id="295b7-112">Releases the resources used by the rule engine for executing the policy.</span></span>|  
+|<span data-ttu-id="295b7-113">Désactiver</span><span class="sxs-lookup"><span data-stu-id="295b7-113">Clear</span></span>|<span data-ttu-id="295b7-114">Efface ou réinitialise la mémoire de travail et l'agenda de l'instance de moteur de règles créée pour l'exécution de la stratégie.</span><span class="sxs-lookup"><span data-stu-id="295b7-114">Clears or resets the working memory and the agenda of the rule engine instance created for executing the policy.</span></span>|  
   
-## <a name="see-also"></a>Voir aussi  
- [Méthode Policy.Dispose](../core/policy-dispose-method.md)
+## <a name="see-also"></a><span data-ttu-id="295b7-115">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="295b7-115">See Also</span></span>  
+ [<span data-ttu-id="295b7-116">Méthode Policy.Dispose</span><span class="sxs-lookup"><span data-stu-id="295b7-116">Policy.Dispose Method</span></span>](../core/policy-dispose-method.md)

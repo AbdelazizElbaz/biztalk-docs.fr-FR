@@ -19,13 +19,13 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="debugging-published-web-services"></a>Débogage des services web publiés
-Cette section fournit des informations sur le débogage de vos services Web publiés.  
+# <a name="debugging-published-web-services"></a><span data-ttu-id="c9313-102">Débogage des services web publiés</span><span class="sxs-lookup"><span data-stu-id="c9313-102">Debugging Published Web Services</span></span>
+<span data-ttu-id="c9313-103">Cette section fournit des informations sur le débogage de vos services Web publiés.</span><span class="sxs-lookup"><span data-stu-id="c9313-103">This section provides information about debugging your published Web services.</span></span>  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a><span data-ttu-id="c9313-104">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="c9313-104">In This Section</span></span>  
   
--   [Comment activer le suivi de Message SOAP](../core/how-to-enable-soap-message-tracing.md)  
+-   [<span data-ttu-id="c9313-105">Comment activer le suivi de Message SOAP</span><span class="sxs-lookup"><span data-stu-id="c9313-105">How to Enable SOAP Message Tracing</span></span>](../core/how-to-enable-soap-message-tracing.md)  
   
--   [Modification du fichier BTSWebSvcWiz.exe.config](../core/how-to-modify-btswebsvcwiz-exe-config.md)  
+-   [<span data-ttu-id="c9313-106">Modification du fichier BTSWebSvcWiz.exe.config</span><span class="sxs-lookup"><span data-stu-id="c9313-106">How to Modify BTSWebSvcWiz.exe.config</span></span>](../core/how-to-modify-btswebsvcwiz-exe-config.md)  
   
--   [L’utilisation du commutateur ThrowDetailedError](../core/how-to-use-the-throwdetailederror-switch.md)
+-   [<span data-ttu-id="c9313-107">L’utilisation du commutateur ThrowDetailedError</span><span class="sxs-lookup"><span data-stu-id="c9313-107">How to Use the ThrowDetailedError Switch</span></span>](../core/how-to-use-the-throwdetailederror-switch.md)
