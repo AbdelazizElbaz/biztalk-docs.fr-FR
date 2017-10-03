@@ -1,0 +1,46 @@
+---
+title: "Assemblys et artefacts installés par l’exemple de composant de Namespace | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: df4a0a73-6b60-4006-ab9a-74354c972507
+caps.latest.revision: "2"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 53c08e14b682131414bc458ea6f4f3776438b69c
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="assemblies-and-artifacts-installed-by-the-namespace-component-sample"></a><span data-ttu-id="d194c-102">Assemblys et artefacts installés par l’exemple de composant de Namespace</span><span class="sxs-lookup"><span data-stu-id="d194c-102">Assemblies and Artifacts Installed by the Namespace Component Sample</span></span>
+<span data-ttu-id="d194c-103">Le tableau suivant répertorie les assemblys et les artefacts installés par le [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] exemple de composant de Namespace.</span><span class="sxs-lookup"><span data-stu-id="d194c-103">The following table lists the assemblies and artifacts installed by the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] Namespace Component sample.</span></span>  
+  
+|<span data-ttu-id="d194c-104">Emplacement</span><span class="sxs-lookup"><span data-stu-id="d194c-104">Location</span></span>|<span data-ttu-id="d194c-105">Catégorie</span><span class="sxs-lookup"><span data-stu-id="d194c-105">Category</span></span>|<span data-ttu-id="d194c-106">Nom et la version du composant</span><span class="sxs-lookup"><span data-stu-id="d194c-106">Name and version of the component</span></span>|  
+|--------------|--------------|---------------------------------------|  
+|<span data-ttu-id="d194c-107">Application BizTalk GlobalBank.ESB</span><span class="sxs-lookup"><span data-stu-id="d194c-107">BizTalk application GlobalBank.ESB</span></span>|<span data-ttu-id="d194c-108">Orchestrations</span><span class="sxs-lookup"><span data-stu-id="d194c-108">Orchestrations</span></span>|<span data-ttu-id="d194c-109">(aucun)</span><span class="sxs-lookup"><span data-stu-id="d194c-109">(none)</span></span>|  
+|<span data-ttu-id="d194c-110">Application BizTalk GlobalBank.ESB</span><span class="sxs-lookup"><span data-stu-id="d194c-110">BizTalk application GlobalBank.ESB</span></span>|<span data-ttu-id="d194c-111">Ports d'envoi</span><span class="sxs-lookup"><span data-stu-id="d194c-111">Send Ports</span></span>|<span data-ttu-id="d194c-112">NamespaceSendPortAdd_to_Remove</span><span class="sxs-lookup"><span data-stu-id="d194c-112">NamespaceSendPortAdd_to_Remove</span></span>|  
+|||<span data-ttu-id="d194c-113">NamespaceSendPortAdd_to_PassThrough</span><span class="sxs-lookup"><span data-stu-id="d194c-113">NamespaceSendPortAdd_to_PassThrough</span></span>|  
+|||<span data-ttu-id="d194c-114">NamespaceSendPortPassthrough_to_Remove</span><span class="sxs-lookup"><span data-stu-id="d194c-114">NamespaceSendPortPassthrough_to_Remove</span></span>|  
+|||<span data-ttu-id="d194c-115">NamespaceSendPortAddViaExtraction_to_PassThrough</span><span class="sxs-lookup"><span data-stu-id="d194c-115">NamespaceSendPortAddViaExtraction_to_PassThrough</span></span>|  
+|<span data-ttu-id="d194c-116">Application BizTalk GlobalBank.ESB</span><span class="sxs-lookup"><span data-stu-id="d194c-116">BizTalk application GlobalBank.ESB</span></span>|<span data-ttu-id="d194c-117">Ports de réception</span><span class="sxs-lookup"><span data-stu-id="d194c-117">Receive Ports</span></span>|<span data-ttu-id="d194c-118">NamespaceReceivePortAdd_to_PassThrough</span><span class="sxs-lookup"><span data-stu-id="d194c-118">NamespaceReceivePortAdd_to_PassThrough</span></span>|  
+|||<span data-ttu-id="d194c-119">NamespaceReceivePortAdd_to_Remove</span><span class="sxs-lookup"><span data-stu-id="d194c-119">NamespaceReceivePortAdd_to_Remove</span></span>|  
+|||<span data-ttu-id="d194c-120">NamespaceReceivePortPassThrough_to_Remove</span><span class="sxs-lookup"><span data-stu-id="d194c-120">NamespaceReceivePortPassThrough_to_Remove</span></span>|  
+|||<span data-ttu-id="d194c-121">NamespaceReceivePortAddViaExtraction_to_PassThrough</span><span class="sxs-lookup"><span data-stu-id="d194c-121">NamespaceReceivePortAddViaExtraction_to_PassThrough</span></span>|  
+|<span data-ttu-id="d194c-122">Application BizTalk GlobalBank.ESB</span><span class="sxs-lookup"><span data-stu-id="d194c-122">BizTalk application GlobalBank.ESB</span></span>|<span data-ttu-id="d194c-123">Emplacements de réception</span><span class="sxs-lookup"><span data-stu-id="d194c-123">Receive Locations</span></span>|<span data-ttu-id="d194c-124">NamespaceReceivePortAdd_to_PassThrough</span><span class="sxs-lookup"><span data-stu-id="d194c-124">NamespaceReceivePortAdd_to_PassThrough</span></span>|  
+|||<span data-ttu-id="d194c-125">NamespaceReceivePortAdd_to_Remove</span><span class="sxs-lookup"><span data-stu-id="d194c-125">NamespaceReceivePortAdd_to_Remove</span></span>|  
+|||<span data-ttu-id="d194c-126">NamespaceReceivePortPassThrough_to_Remove</span><span class="sxs-lookup"><span data-stu-id="d194c-126">NamespaceReceivePortPassThrough_to_Remove</span></span>|  
+|||<span data-ttu-id="d194c-127">NamespaceReceivePortAddViaExtraction_to_PassThrough</span><span class="sxs-lookup"><span data-stu-id="d194c-127">NamespaceReceivePortAddViaExtraction_to_PassThrough</span></span>|  
+|<span data-ttu-id="d194c-128">Application BizTalk GlobalBank.ESB</span><span class="sxs-lookup"><span data-stu-id="d194c-128">BizTalk application GlobalBank.ESB</span></span>|<span data-ttu-id="d194c-129">Schémas</span><span class="sxs-lookup"><span data-stu-id="d194c-129">Schemas</span></span>|<span data-ttu-id="d194c-130">(aucun)</span><span class="sxs-lookup"><span data-stu-id="d194c-130">(none)</span></span>|  
+|<span data-ttu-id="d194c-131">Application BizTalk GlobalBank.ESB</span><span class="sxs-lookup"><span data-stu-id="d194c-131">BizTalk application GlobalBank.ESB</span></span>|<span data-ttu-id="d194c-132">Pipelines</span><span class="sxs-lookup"><span data-stu-id="d194c-132">Pipelines</span></span>|<span data-ttu-id="d194c-133">GlobalBank.ESB.Namespace.Pipelines.NamespaceSampleReceivePipeline Version 2.0.0.0</span><span class="sxs-lookup"><span data-stu-id="d194c-133">GlobalBank.ESB.Namespace.Pipelines.NamespaceSampleReceivePipeline Version 2.0.0.0</span></span>|  
+|||<span data-ttu-id="d194c-134">GlobalBank.ESB.Namespace.Pipelines.NamespaceSampleSendPipeline Version 2.0.0.0</span><span class="sxs-lookup"><span data-stu-id="d194c-134">GlobalBank.ESB.Namespace.Pipelines.NamespaceSampleSendPipeline Version 2.0.0.0</span></span>|  
+|<span data-ttu-id="d194c-135">Application BizTalk GlobalBank.ESB</span><span class="sxs-lookup"><span data-stu-id="d194c-135">BizTalk application GlobalBank.ESB</span></span>|<span data-ttu-id="d194c-136">Ressources</span><span class="sxs-lookup"><span data-stu-id="d194c-136">Resources</span></span>|<span data-ttu-id="d194c-137">GlobalBank.ESB.Namespace.Pipelines Version 2.0.0.0</span><span class="sxs-lookup"><span data-stu-id="d194c-137">GlobalBank.ESB.Namespace.Pipelines Version 2.0.0.0</span></span>|  
+|<span data-ttu-id="d194c-138">Application BizTalk GlobalBank.ESB</span><span class="sxs-lookup"><span data-stu-id="d194c-138">BizTalk application GlobalBank.ESB</span></span>|<span data-ttu-id="d194c-139">Stratégies</span><span class="sxs-lookup"><span data-stu-id="d194c-139">Policies</span></span>|<span data-ttu-id="d194c-140">(aucun)</span><span class="sxs-lookup"><span data-stu-id="d194c-140">(none)</span></span>|  
+|<span data-ttu-id="d194c-141">Application BizTalk GlobalBank.ESB</span><span class="sxs-lookup"><span data-stu-id="d194c-141">BizTalk application GlobalBank.ESB</span></span>|<span data-ttu-id="d194c-142">Cartes</span><span class="sxs-lookup"><span data-stu-id="d194c-142">Maps</span></span>|<span data-ttu-id="d194c-143">(aucun)</span><span class="sxs-lookup"><span data-stu-id="d194c-143">(none)</span></span>|  
+|<span data-ttu-id="d194c-144">Cache d’assembly global</span><span class="sxs-lookup"><span data-stu-id="d194c-144">Global assembly cache</span></span>|<span data-ttu-id="d194c-145">Assemblys</span><span class="sxs-lookup"><span data-stu-id="d194c-145">Assemblies</span></span>|<span data-ttu-id="d194c-146">GlobalBank.ESB.Namespace.Pipelines Version 2.0.0.0</span><span class="sxs-lookup"><span data-stu-id="d194c-146">GlobalBank.ESB.Namespace.Pipelines Version 2.0.0.0</span></span>|  
+|<span data-ttu-id="d194c-147">Composants de pipeline</span><span class="sxs-lookup"><span data-stu-id="d194c-147">Pipeline components</span></span>|<span data-ttu-id="d194c-148">(aucun)</span><span class="sxs-lookup"><span data-stu-id="d194c-148">(none)</span></span>|<span data-ttu-id="d194c-149">(aucun)</span><span class="sxs-lookup"><span data-stu-id="d194c-149">(none)</span></span>|

@@ -1,0 +1,1 @@
+<span data-ttu-id="76610-101">Complément Consume Adapter Service Add-in</span><span class="sxs-lookup"><span data-stu-id="76610-101">Consume Adapter Service Add-in</span></span>

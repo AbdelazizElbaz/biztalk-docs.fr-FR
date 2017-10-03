@@ -1,0 +1,42 @@
+---
+title: "Modes d’utilisation des Types globaux complexes | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: ddea1c7b-eb0e-4521-8576-0ea6f9460847
+caps.latest.revision: "5"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 5f84b8b872d047a62a913514a695b4bba2d482c0
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="ways-to-use-complex-global-types"></a><span data-ttu-id="81f84-102">Utilisations des types globaux complexes</span><span class="sxs-lookup"><span data-stu-id="81f84-102">Ways to Use Complex Global Types</span></span>
+<span data-ttu-id="81f84-103">Une fois que vous avez converti un type complexe en un type complexe global, il devient disponible pour une éventuelle réutilisation dans d'autres emplacements de votre schéma.</span><span class="sxs-lookup"><span data-stu-id="81f84-103">After you have converted a complex type to a global complex type, it becomes available for reuse in other locations within your schema.</span></span> <span data-ttu-id="81f84-104">Pour plus d’informations sur la définition d’un type complex et sur sa conversion en un type complex global, consultez [définition de Type Global complexe et attribution de nom](../core/complex-global-type-definition-and-naming.md).</span><span class="sxs-lookup"><span data-stu-id="81f84-104">For more information about defining a complex type and then converting it to a global complex type, see [Complex Global Type Definition and Naming](../core/complex-global-type-definition-and-naming.md).</span></span>  
+  
+ <span data-ttu-id="81f84-105">Tout d’abord, vous insérez une nouvelle **enregistrement** nœud.</span><span class="sxs-lookup"><span data-stu-id="81f84-105">First, you insert a new **Record** node.</span></span> <span data-ttu-id="81f84-106">Ensuite, vous devez sélectionner le nœud inséré et définir l'une des deux propriétés de nœud suivantes dans la fenêtre Propriétés. Chacune a un effet différent :</span><span class="sxs-lookup"><span data-stu-id="81f84-106">Then you select the inserted node and set one of the following two node properties in the Properties window, each for a different effect:</span></span>  
+  
+-   <span data-ttu-id="81f84-107">**Propriété Data Structure Type**.</span><span class="sxs-lookup"><span data-stu-id="81f84-107">**Data Structure Type property**.</span></span> <span data-ttu-id="81f84-108">si vous voulez utiliser le type global complexe sans le modifier de quelque façon, définissez cette propriété sur le nom de type que vous avez donné au type global complexe en le sélectionnant dans la liste déroulante.</span><span class="sxs-lookup"><span data-stu-id="81f84-108">If you want to use the complex global type without modifying it in any way, set this property to the type name you gave to the complex global type, which is available as a choice in the drop-down list.</span></span> <span data-ttu-id="81f84-109">Dans l'arborescence de schéma, la structure de nœuds globale choisie sera dupliquée graphiquement au nouvel emplacement et toute modification apportée ultérieurement à la structure dans n'importe lequel de ses emplacements dans l'arborescence de schéma sera automatiquement appliquée à tous les emplacements qui utilisent ce type global complexe.</span><span class="sxs-lookup"><span data-stu-id="81f84-109">In the schema tree, the chosen global node structure will be graphically duplicated in the new location, and any subsequent changes to the node structure in any of its locations in the schema tree are automatically made to all locations that use that complex global type.</span></span>  
+  
+-   <span data-ttu-id="81f84-110">**Propriété de Type de données de base**.</span><span class="sxs-lookup"><span data-stu-id="81f84-110">**Base Data Type property**.</span></span> <span data-ttu-id="81f84-111">si vous voulez utiliser une variation du type global complexe, soit en l'étendant soit le restreignant de quelque façon, définissez cette propriété sur le nom de type que vous avez donné au type global complexe, sélectionnable dans la liste déroulante.</span><span class="sxs-lookup"><span data-stu-id="81f84-111">If you want to use a variation on the complex global type, either extending it or restricting it in some way, set this property to the type name you gave to the complex global type, which is available as a choice in the drop-down list.</span></span> <span data-ttu-id="81f84-112">Lorsque vous définissez cette propriété, le **Derived By** modifications apportées aux propriétés de nœud **Extension** (et **le Type de contenu** modifications apportées aux propriétés **ComplexContent**), qui indique que l’extension du type global complexe est le type de dérivation par défaut.</span><span class="sxs-lookup"><span data-stu-id="81f84-112">When you set this property, the **Derived By** node property changes to **Extension** (and the **Content Type** property changes to **ComplexContent**), indicating that extending the complex global type is the default derivation type.</span></span> <span data-ttu-id="81f84-113">Vous pouvez le remplacer par **Restriction** si vos modifications sont de cette nature.</span><span class="sxs-lookup"><span data-stu-id="81f84-113">You can change it to **Restriction** if your modifications are of that nature.</span></span> <span data-ttu-id="81f84-114">Les modifications apportées au type global de base complexe à partir duquel vous effectuez la dérivation sont automatiquement reflétées dans le type dérivé, mais les modifications apportées au type dérivé ne sont jamais reflétées dans le type de base.</span><span class="sxs-lookup"><span data-stu-id="81f84-114">Changes to the base complex global type from which you are deriving are automatically reflected in the derived type, but changes in the derived type are never reflected in the base type.</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="81f84-115">Si vous définissez l'une de ces propriétés, tout paramétrage de l'autre propriété sera automatiquement supprimé.</span><span class="sxs-lookup"><span data-stu-id="81f84-115">Setting either one of these properties automatically causes the other one to have any existing setting removed.</span></span> <span data-ttu-id="81f84-116">En outre, vous remarquerez les autres interactions automatiques entre les propriétés associées, telles que la définition du **Derived By** propriété **(par défaut)** supprime tout paramétrage existant à partir de la **Base Type de données** propriété.</span><span class="sxs-lookup"><span data-stu-id="81f84-116">Further, you will notice other automatic interactions between the related properties, such as setting the **Derived By** property to **(Default)** removes any existing setting from the **Base Data Type** property.</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="81f84-117">Vous pouvez créer un schéma de test et utiliser des valeurs différentes pour ces propriétés, en observant les modifications dans l'affichage XSD.</span><span class="sxs-lookup"><span data-stu-id="81f84-117">You can create a test schema and use different values for these properties, observing the changes in the XSD view.</span></span>  
+  
+ <span data-ttu-id="81f84-118">Cette section décrit l'utilisation de types globaux complexes tels quels, mais aussi en les étendant ou les restreignant, comme s'ils étaient contrôlés par les paramètres des propriétés décrites dans cette rubrique.</span><span class="sxs-lookup"><span data-stu-id="81f84-118">This section describes using complex global types, both as is, and by extending and restricting them, as controlled by the settings of the properties described in this topic.</span></span>  
+  
+## <a name="in-this-section"></a><span data-ttu-id="81f84-119">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="81f84-119">In This Section</span></span>  
+  
+-   [<span data-ttu-id="81f84-120">Réutilisation de types globaux complexes</span><span class="sxs-lookup"><span data-stu-id="81f84-120">Complex Global Type Re-use</span></span>](../core/complex-global-type-re-use.md)  
+  
+-   [<span data-ttu-id="81f84-121">Dérivation de Type Global complexe</span><span class="sxs-lookup"><span data-stu-id="81f84-121">Complex Global Type Derivation</span></span>](../core/complex-global-type-derivation.md)

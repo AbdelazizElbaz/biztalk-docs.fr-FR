@@ -1,0 +1,128 @@
+---
+title: "À l’aide des Interfaces de Pipeline | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 4bb88d0d-23ab-4fdb-bcd2-56050456cf69
+caps.latest.revision: "17"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: c365a8d7bdf37564d3d9b2dceac1c8615e126ebc
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="using-pipeline-interfaces"></a><span data-ttu-id="1d5dd-102">À l’aide des Interfaces de Pipeline</span><span class="sxs-lookup"><span data-stu-id="1d5dd-102">Using Pipeline Interfaces</span></span>
+<span data-ttu-id="1d5dd-103">Un composant de pipeline est un composant .NET ou COM qui implémente un ensemble d'interfaces prédéfinies en vue d'interagir avec le moteur de messagerie BizTalk.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-103">A pipeline component is a .NET or COM component that implements a set of predefined interfaces for interaction with the BizTalk Messaging Engine.</span></span> <span data-ttu-id="1d5dd-104">Suivant la fonctionnalité du composant, différentes interfaces doivent être implémentées.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-104">Depending on the functionality of the component, different interfaces must be implemented.</span></span> <span data-ttu-id="1d5dd-105">Cette rubrique présente ces interfaces et certaines de leurs méthodes.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-105">This topic discusses these interfaces and some of their methods.</span></span>  
+  
+> [!WARNING]
+>  <span data-ttu-id="1d5dd-106">Si vous créez un composant de pipeline personnalisé avec COM, vous devez configurer votre composant de sorte qu'il utilise le modèle MTA (Multi-Threaded Apartment).</span><span class="sxs-lookup"><span data-stu-id="1d5dd-106">If you are building a custom pipeline component using COM, you must configure your component to use the Multi-Threaded Apartment (MTA) model.</span></span> <span data-ttu-id="1d5dd-107">Faute de quoi, l'appel de votre composant échouera avec une erreur E_NOINTERFACE.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-107">If you do not, invocation of your component will fail with an E_NOINTERFACE error.</span></span>  
+  
+## <a name="ipipelinecontext"></a><span data-ttu-id="1d5dd-108">IPipelineContext</span><span class="sxs-lookup"><span data-stu-id="1d5dd-108">IPipelineContext</span></span>  
+ <span data-ttu-id="1d5dd-109">Tous les composants de pipeline peuvent utiliser **IPipelineContext** méthodes pour accéder à tous les documents des interfaces de traitement.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-109">All pipeline components can use **IPipelineContext** methods to access all document processing-specific interfaces.</span></span> <span data-ttu-id="1d5dd-110">Le **IPipelineContext** interface fournit les fonctionnalités suivantes :</span><span class="sxs-lookup"><span data-stu-id="1d5dd-110">The **IPipelineContext** interface provides the following functionalities:</span></span>  
+  
+-   <span data-ttu-id="1d5dd-111">Elle permet aux composants d'extraire les paramètres d'étape et de pipeline ambiants.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-111">Allows components to retrieve the ambient pipeline and stage settings.</span></span>  
+  
+-   <span data-ttu-id="1d5dd-112">Elle permet aux composants de récupérer les usines de messages et les messages.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-112">Allows components to retrieve message and message factories.</span></span> <span data-ttu-id="1d5dd-113">Grâce à ces usines, les composants peuvent créer divers objets nécessaires à leur exécution.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-113">With these factories, components can create various objects required for the execution of the component.</span></span>  
+  
+-   <span data-ttu-id="1d5dd-114">Elle permet aux composants de récupérer les spécifications de document,</span><span class="sxs-lookup"><span data-stu-id="1d5dd-114">Allows components to retrieve the document specifications.</span></span> <span data-ttu-id="1d5dd-115">à savoir un schéma XSD et des annotations.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-115">A document specification is an XSD schema plus additional annotations.</span></span>  
+  
+## <a name="ibasecomponent"></a><span data-ttu-id="1d5dd-116">IBaseComponent</span><span class="sxs-lookup"><span data-stu-id="1d5dd-116">IBaseComponent</span></span>  
+ <span data-ttu-id="1d5dd-117">Cette interface est obligatoire pour tous les composants afin de fournir les informations de base les concernant.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-117">All pipeline components need to implement this interface to provide basic information about the component.</span></span>  
+  
+## <a name="icomponent"></a><span data-ttu-id="1d5dd-118">IComponent</span><span class="sxs-lookup"><span data-stu-id="1d5dd-118">IComponent</span></span>  
+ <span data-ttu-id="1d5dd-119">Cette interface est implémentée par tous les composants de pipeline, à l'exception des assembleurs et des désassembleurs, afin de récupérer des messages du moteur [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] en vue de leur traitement et de les retransmettre une fois traités au moteur.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-119">All pipeline components except assemblers and disassemblers implement this interface to get messages from the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] engine for processing and to pass processed messages back to the engine.</span></span>  
+  
+ <span data-ttu-id="1d5dd-120">**Exécutez.**</span><span class="sxs-lookup"><span data-stu-id="1d5dd-120">**Execute.**</span></span> <span data-ttu-id="1d5dd-121">méthode appelée par le moteur pour transmettre le message d'entrée au composant et récupérer le message traité depuis le composant.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-121">Method called by the engine to pass the input message to the component and retrieve the processed message from the component.</span></span>  
+  
+## <a name="ipropertybag-ipersistpropertybag"></a><span data-ttu-id="1d5dd-122">IPropertyBag, IPersistPropertyBag</span><span class="sxs-lookup"><span data-stu-id="1d5dd-122">IPropertyBag, IPersistPropertyBag</span></span>  
+ <span data-ttu-id="1d5dd-123">Composants de pipeline doivent implémenter **IPersistPropertyBag** pour recevoir ses informations de configuration.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-123">Pipeline components need to implement **IPersistPropertyBag** to receive its configuration information.</span></span> <span data-ttu-id="1d5dd-124">Cette interface et **IPropertyBag** sont des interfaces standard.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-124">This interface and **IPropertyBag** are the standard interfaces.</span></span> <span data-ttu-id="1d5dd-125">Pour plus d'informations sur ces interfaces, reportez-vous à la documentation du kit de développement (SDK) Microsoft .NET Framework.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-125">For more information about these interfaces, refer to the Microsoft .NET Framework Software Development Kit (SDK) documentation.</span></span>  
+  
+## <a name="idisassemblercomponent"></a><span data-ttu-id="1d5dd-126">IDisassemblerComponent</span><span class="sxs-lookup"><span data-stu-id="1d5dd-126">IDisassemblerComponent</span></span>  
+ <span data-ttu-id="1d5dd-127">Un composant de désassemblage est un composant de pipeline qui reçoit un message en entrée et produit zéro ou plusieurs messages en sortie.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-127">A disassembling component is a pipeline component that receives one message on input and produces zero or more messages on output.</span></span> <span data-ttu-id="1d5dd-128">Les composants de désassemblage sont utilisés pour fractionner des échanges de messages en documents individuels.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-128">Disassembling components are used to split interchanges of messages into individual documents.</span></span> <span data-ttu-id="1d5dd-129">Un composant désassembleur doit implémenter les méthodes de la **IDisassemblerComponent** interface récupère les messages [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] pour le traitement et à passer désassemblé documents revenir [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span><span class="sxs-lookup"><span data-stu-id="1d5dd-129">A disassembler component must implement the methods of the **IDisassemblerComponent** interface to get messages from [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] for processing and to pass disassembled documents back to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
+  
+|<span data-ttu-id="1d5dd-130">Méthode</span><span class="sxs-lookup"><span data-stu-id="1d5dd-130">Method</span></span>|<span data-ttu-id="1d5dd-131"> Description</span><span class="sxs-lookup"><span data-stu-id="1d5dd-131">Description</span></span>|  
+|------------|-----------------|  
+|<span data-ttu-id="1d5dd-132">**Désassembler**</span><span class="sxs-lookup"><span data-stu-id="1d5dd-132">**Disassemble**</span></span>|<span data-ttu-id="1d5dd-133">Effectue le désassemblage du document entrant **pInMsg**.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-133">Performs the disassembling of the incoming document **pInMsg**.</span></span>|  
+|<span data-ttu-id="1d5dd-134">**GetNext**</span><span class="sxs-lookup"><span data-stu-id="1d5dd-134">**GetNext**</span></span>|<span data-ttu-id="1d5dd-135">Obtient le message suivant dans l'ensemble de messages résultant de l'exécution du désassembleur.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-135">Gets the next message from the message set that resulted from disassembler execution.</span></span> <span data-ttu-id="1d5dd-136">Retourne **NULL** s’il n’existe plus aucun message.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-136">Returns **NULL** if there are no more messages.</span></span>|  
+  
+ <span data-ttu-id="1d5dd-137">Si vous souhaitez écrire un composant de désassembleur qui prenne en charge le traitement des échanges récupérables, vous devez suivre les points suivants :</span><span class="sxs-lookup"><span data-stu-id="1d5dd-137">If you are writing a disassembler component that will support Recoverable Interchange Processing, you must do the following:</span></span>  
+  
+1.  <span data-ttu-id="1d5dd-138">Rendez les flux d'entrée aptes à une recherche en les enveloppant dans un flux VirtualStream().</span><span class="sxs-lookup"><span data-stu-id="1d5dd-138">Make the input streams seekable by wrapping them in a VirtualStream().</span></span>  
+  
+2.  <span data-ttu-id="1d5dd-139">Dans GetNext(), créez une logique permettant de déterminer un message incorrect.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-139">In GetNext(), have logic to determine when a message is bad.</span></span> <span data-ttu-id="1d5dd-140">Lorsqu'un message est incorrect, définissez BTS.MessageDestination = "SuspendQueue" et renvoyez le message dans GetNext().</span><span class="sxs-lookup"><span data-stu-id="1d5dd-140">If a message is bad, set BTS.MessageDestination = "SuspendQueue" and return the message in GetNext().</span></span>  
+  
+3.  <span data-ttu-id="1d5dd-141">Si le message est correct, définissez BTS.SuspendMessageOnRoutingFailure = True et renvoyez le message dans GetNext().</span><span class="sxs-lookup"><span data-stu-id="1d5dd-141">If the message is good, set BTS.SuspendMessageOnRoutingFailure = True and return the message in GetNext().</span></span>  
+  
+## <a name="iassemblercomponent"></a><span data-ttu-id="1d5dd-142">IAssemblerComponent</span><span class="sxs-lookup"><span data-stu-id="1d5dd-142">IAssemblerComponent</span></span>  
+ <span data-ttu-id="1d5dd-143">Un composant d'assemblage est un composant de pipeline qui reçoit plusieurs messages en entrée et produit un message en sortie.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-143">An assembling component is a pipeline component that receives several messages on input and produces one message on output.</span></span> <span data-ttu-id="1d5dd-144">Les composants d’assemblage sont utilisés pour collecter des documents individuels dans le lot d'échange de messages.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-144">Assembling components are used to collect individual documents into the message interchange batch.</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="1d5dd-145">Dans cette version de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], la fonctionnalité d'assemblage n'est pas utilisée, par conséquent [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] transmet toujours un document à la sortie de composant.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-145">In this release of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], assembling functionality is not used, so [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] always passes one document to the component input.</span></span>  
+  
+ <span data-ttu-id="1d5dd-146">Un composant d’assembleur implémente les **IAssemblerComponent** méthodes sont appelées par le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] moteur au moment de l’exécution.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-146">An assembler component implements the **IAssemblerComponent** methods that are called by the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] engine at run time.</span></span>  
+  
+|<span data-ttu-id="1d5dd-147">Méthode</span><span class="sxs-lookup"><span data-stu-id="1d5dd-147">Method</span></span>|<span data-ttu-id="1d5dd-148"> Description</span><span class="sxs-lookup"><span data-stu-id="1d5dd-148">Description</span></span>|  
+|------------|-----------------|  
+|<span data-ttu-id="1d5dd-149">**AddDocument**</span><span class="sxs-lookup"><span data-stu-id="1d5dd-149">**AddDocument**</span></span>|<span data-ttu-id="1d5dd-150">Ajoute le document **pInMsg** à la liste des messages qui seront inclus dans l’échange.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-150">Adds the document **pInMsg** to the list of messages that will be included in the interchange.</span></span>|  
+|<span data-ttu-id="1d5dd-151">**Assembler**</span><span class="sxs-lookup"><span data-stu-id="1d5dd-151">**Assemble**</span></span>|<span data-ttu-id="1d5dd-152">Construit l'échange à partir des messages ajoutés par la méthode précédente.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-152">Builds the interchange from the messages that were added by the previous method.</span></span> <span data-ttu-id="1d5dd-153">Retourne un pointeur vers le message assemblé.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-153">Returns a pointer to the assembled message.</span></span>|  
+  
+## <a name="iprobemessage"></a><span data-ttu-id="1d5dd-154">IProbeMessage</span><span class="sxs-lookup"><span data-stu-id="1d5dd-154">IProbeMessage</span></span>  
+ <span data-ttu-id="1d5dd-155">Tout composant de pipeline (général, assemblage ou désassemblage) peut implémenter **IProbeMessage** s’il requiert la fonctionnalité de sondage des messages.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-155">Any pipeline component (general, assembling, or disassembling) can implement **IProbeMessage** if it requires message probing functionality.</span></span> <span data-ttu-id="1d5dd-156">Un composant de sonde est utilisé dans les étapes du pipeline qui ont **PremièreCorrespondance** mode d’exécution.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-156">A probing component is used in the pipeline stages that have **FirstMatch** execution mode.</span></span> <span data-ttu-id="1d5dd-157">Dans ces étapes, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] transmet le message au composant et le **sonde** méthode examine le début du message afin de déterminer si le composant reconnaît le format du message.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-157">In such stages, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] gives the message to the component, and the **Probe** method examines the beginning of the message to determine if the component recognizes the format of the message.</span></span>  
+  
+|<span data-ttu-id="1d5dd-158">Méthode</span><span class="sxs-lookup"><span data-stu-id="1d5dd-158">Method</span></span>|<span data-ttu-id="1d5dd-159"> Description</span><span class="sxs-lookup"><span data-stu-id="1d5dd-159">Description</span></span>|  
+|------------|-----------------|  
+|<span data-ttu-id="1d5dd-160">**Sonde**</span><span class="sxs-lookup"><span data-stu-id="1d5dd-160">**Probe**</span></span>|<span data-ttu-id="1d5dd-161">Cette méthode prend **pInMsg** message et retourne **True** si le format est reconnu ou **False** dans le cas contraire.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-161">This method takes **pInMsg** message, and returns **True** if the format is recognized or **False** otherwise.</span></span>|  
+  
+## <a name="inameditem"></a><span data-ttu-id="1d5dd-162">INamedItem</span><span class="sxs-lookup"><span data-stu-id="1d5dd-162">INamedItem</span></span>  
+ <span data-ttu-id="1d5dd-163">Il s'agit de l'interface d'aide permettant d'accéder aux schémas de document à partir du code géré et non géré.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-163">This is a helper interface for accessing document schemas from managed and unmanaged code.</span></span>  
+  
+## <a name="inameditemlist"></a><span data-ttu-id="1d5dd-164">INamedItemList</span><span class="sxs-lookup"><span data-stu-id="1d5dd-164">INamedItemList</span></span>  
+ <span data-ttu-id="1d5dd-165">Il s'agit de l'interface d'aide permettant d'accéder aux schémas de document à partir du code géré et non géré.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-165">This is a helper interface for accessing document schemas from managed and unmanaged code.</span></span>  
+  
+## <a name="idocumentspec"></a><span data-ttu-id="1d5dd-166">IDocumentSpec</span><span class="sxs-lookup"><span data-stu-id="1d5dd-166">IDocumentSpec</span></span>  
+ <span data-ttu-id="1d5dd-167">Composants de pipeline peuvent utiliser les méthodes de la **IDocumentSpec** de l’interface pour effectuer des actions spécifiques au document, tels que le déplacement des propriétés de contenu pour le contexte et vice-versa, l’accès à des schémas de document et ainsi de suite.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-167">Pipeline components can use methods of the **IDocumentSpec** interface to perform document-specific actions, such as moving content properties to context and back, accessing document schemas, and so on.</span></span>  
+  
+|<span data-ttu-id="1d5dd-168">Méthode</span><span class="sxs-lookup"><span data-stu-id="1d5dd-168">Method</span></span>|<span data-ttu-id="1d5dd-169"> Description</span><span class="sxs-lookup"><span data-stu-id="1d5dd-169">Description</span></span>|  
+|------------|-----------------|  
+|<span data-ttu-id="1d5dd-170">**Type de document**</span><span class="sxs-lookup"><span data-stu-id="1d5dd-170">**DocType**</span></span>|<span data-ttu-id="1d5dd-171">Retourne le type du document actuel.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-171">Returns the type of the current document.</span></span>|  
+|<span data-ttu-id="1d5dd-172">**DocSpecName**</span><span class="sxs-lookup"><span data-stu-id="1d5dd-172">**DocSpecName**</span></span>|<span data-ttu-id="1d5dd-173">Retourne le nom de la spécification du document actuel.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-173">Returns the specification name of the current document.</span></span>|  
+|<span data-ttu-id="1d5dd-174">**GetSchemaCollection**</span><span class="sxs-lookup"><span data-stu-id="1d5dd-174">**GetSchemaCollection**</span></span>|<span data-ttu-id="1d5dd-175">Retourne la liste des schémas du document actuel.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-175">Returns the list of document schemas for the current document.</span></span>|  
+|<span data-ttu-id="1d5dd-176">**GetBodyPath**</span><span class="sxs-lookup"><span data-stu-id="1d5dd-176">**GetBodyPath**</span></span>|<span data-ttu-id="1d5dd-177">Retourne le chemin XPath du nœud dans le document où débute le corps.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-177">Returns the XPath to the node in the document where the body part begins.</span></span>|  
+|<span data-ttu-id="1d5dd-178">**GetDistinguishedPropertyAnnotationEnumerator**</span><span class="sxs-lookup"><span data-stu-id="1d5dd-178">**GetDistinguishedPropertyAnnotationEnumerator**</span></span>|<span data-ttu-id="1d5dd-179">Retourne un énumérateur de dictionnaire de toutes les annotations de propriété de champ distinctif.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-179">Returns a dictionary enumerator of all distinguished field property annotations.</span></span>|  
+|<span data-ttu-id="1d5dd-180">**GetPropertyAnnotationEnumerator**</span><span class="sxs-lookup"><span data-stu-id="1d5dd-180">**GetPropertyAnnotationEnumerator**</span></span>|<span data-ttu-id="1d5dd-181">Retourne un énumérateur de toutes les annotations de propriété.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-181">Returns an enumerator of all property annotations.</span></span>|  
+  
+## <a name="icomponentui"></a><span data-ttu-id="1d5dd-182">IComponentUI</span><span class="sxs-lookup"><span data-stu-id="1d5dd-182">IComponentUI</span></span>  
+ <span data-ttu-id="1d5dd-183">Les composants de pipeline doivent implémenter cette interface afin d'être utilisés dans l'environnement du Concepteur de pipeline.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-183">Pipeline components must implement this interface to be used within the Pipeline Designer environment.</span></span>  
+  
+|<span data-ttu-id="1d5dd-184">Méthode</span><span class="sxs-lookup"><span data-stu-id="1d5dd-184">Method</span></span>|<span data-ttu-id="1d5dd-185"> Description</span><span class="sxs-lookup"><span data-stu-id="1d5dd-185">Description</span></span>|  
+|------------|-----------------|  
+|<span data-ttu-id="1d5dd-186">**Icône**</span><span class="sxs-lookup"><span data-stu-id="1d5dd-186">**Icon**</span></span>|<span data-ttu-id="1d5dd-187">Fournit l'icône associée au composant.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-187">Provides the icon that is associated with this component.</span></span>|  
+|<span data-ttu-id="1d5dd-188">**Valider**</span><span class="sxs-lookup"><span data-stu-id="1d5dd-188">**Validate**</span></span>|<span data-ttu-id="1d5dd-189">Le Concepteur de pipeline appelle cette méthode avant la compilation du pipeline afin de s'assurer que toutes les propriétés de configuration sont correctement définies.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-189">Pipeline Designer calls this method before pipeline compilation to verify that all the configuration properties are set correctly.</span></span>|  
+  
+ <span data-ttu-id="1d5dd-190">Le **icône** propriété retourne un **IntPtr**.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-190">The **Icon** property returns an **IntPtr**.</span></span> <span data-ttu-id="1d5dd-191">L’exemple c# suivant montre comment retourner un **IntPtr**.</span><span class="sxs-lookup"><span data-stu-id="1d5dd-191">The following C# example shows how to return an **IntPtr**.</span></span>  
+  
+```csharp  
+static   ResourceManager resManager = new ResourceManager("ResourceManager", Assembly.GetExecutingAssembly());  
+...  
+[Browsable(false)]  
+public IntPtr Icon  
+{  
+   get  
+   {  
+      return ((Bitmap)resManager.GetObject("MyIcon")).GetHicon();  
+   }  
+}  
+```  
+  
+ <span data-ttu-id="1d5dd-192">Pour plus d’informations, consultez **Interface IComponentUI (COM)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].</span><span class="sxs-lookup"><span data-stu-id="1d5dd-192">For more information, see **IComponentUI Interface (COM)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].</span></span> 
+  
+## <a name="see-also"></a><span data-ttu-id="1d5dd-193">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="1d5dd-193">See Also</span></span>  
+ <span data-ttu-id="1d5dd-194">[Développement de composants de Pipeline personnalisé](../core/developing-custom-pipeline-components.md) </span><span class="sxs-lookup"><span data-stu-id="1d5dd-194">[Developing Custom Pipeline Components](../core/developing-custom-pipeline-components.md) </span></span>  
+ [<span data-ttu-id="1d5dd-195">CustomComponent (exemple BizTalk Server)</span><span class="sxs-lookup"><span data-stu-id="1d5dd-195">CustomComponent (BizTalk Server Sample)</span></span>](../core/customcomponent-biztalk-server-sample.md)

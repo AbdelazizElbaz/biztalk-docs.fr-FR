@@ -1,0 +1,58 @@
+---
+title: "Définition des mesures et des dimensions | Microsoft Docs"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: e6b12a4c-9be5-4cac-b5b9-ece376d28cb1
+caps.latest.revision: "3"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: bdbbd270b5241d25e7ba227c2db886c112f3f4c4
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="what-are-measures-and-dimensions"></a><span data-ttu-id="ab2f9-103">Définition des mesures et des dimensions</span><span class="sxs-lookup"><span data-stu-id="ab2f9-103">What Are Measures and Dimensions?</span></span>
+<span data-ttu-id="ab2f9-104">Les dimensions et les mesures sont les aspects physiques de l'agrégation de données.</span><span class="sxs-lookup"><span data-stu-id="ab2f9-104">Dimensions and measures are the physical aspects of data aggregation.</span></span> <span data-ttu-id="ab2f9-105">Cette rubrique décrit les mesures et les dimensions à l'aide d'un scénario d'analyse BAM faisant office de contexte.</span><span class="sxs-lookup"><span data-stu-id="ab2f9-105">This topic describes what measures and dimensions are, using a BAM scenario to provide context.</span></span>  
+  
+## <a name="measures"></a><span data-ttu-id="ab2f9-106">mesures</span><span class="sxs-lookup"><span data-stu-id="ab2f9-106">Measures</span></span>  
+ <span data-ttu-id="ab2f9-107">Supposons qu'une activité BAM soit définie pour un processus de gestion des commandes en termes extrêmement simples se composant de trois éléments :</span><span class="sxs-lookup"><span data-stu-id="ab2f9-107">Suppose that you define a BAM activity for an order management process in extremely simple terms consisting of three items:</span></span>  
+  
+1.  <span data-ttu-id="ab2f9-108">heure de début du processus (événement du monde réel) ;</span><span class="sxs-lookup"><span data-stu-id="ab2f9-108">Process start time (an event in the real world)</span></span>  
+  
+2.  <span data-ttu-id="ab2f9-109">heure de fin du processus (également événement du monde réel) ;</span><span class="sxs-lookup"><span data-stu-id="ab2f9-109">Process end time (also a real-world event)</span></span>  
+  
+3.  <span data-ttu-id="ab2f9-110">durée du processus (deuxième élément - premier élément).</span><span class="sxs-lookup"><span data-stu-id="ab2f9-110">Process duration (a calculation of #2 - #1)</span></span>  
+  
+ <span data-ttu-id="ab2f9-111">L'agrégation des données, dans ce cas, consiste simplement à appliquer une fonction d'agrégation (par exemple, moyenne, minimum, maximum, etc.) à une série de valeurs de durée individuelles (c'est-à-dire, la durée du traitement de chaque commande).</span><span class="sxs-lookup"><span data-stu-id="ab2f9-111">Aggregating data in this case is simply a matter of applying an aggregation function (for example, average, minimum, maximum, etc.) to a series of individual duration values (that is, the processing duration for each order).</span></span>  
+  
+ <span data-ttu-id="ab2f9-112">Le concept de « durée moyenne » est une mesure. Il s'agit en outre d'une valeur unique.</span><span class="sxs-lookup"><span data-stu-id="ab2f9-112">The concept of "average duration" is a measure, and it is a single value.</span></span> <span data-ttu-id="ab2f9-113">Cette mesure seule génère des informations relatives à la gestion des processus, car elle indique si, globalement, le processus se comporte comme prévu (en termes d'opportunité ou de débit).</span><span class="sxs-lookup"><span data-stu-id="ab2f9-113">By itself, this measure yields information relevant to process management in that it indicates whether or not the process overall is behaving (in terms of timliness/throughput) as expected.</span></span> <span data-ttu-id="ab2f9-114">Toutefois, en l'absence d'autres données (la « durée moyenne » étant une valeur unique), l'interprétation du sens de la valeur réelle de cette mesure est plus difficile. Par exemple, pourquoi la durée moyenne a-t-elle enregistré un pic au cours de la semaine ?</span><span class="sxs-lookup"><span data-stu-id="ab2f9-114">However, in the absence of any other data (because "average duration" is a single value), understanding the meaning of the measure's actual value is harder For example, why did we have a spike in average duration this week?</span></span> <span data-ttu-id="ab2f9-115">Était-ce dû à un partenaire, à un programme ou à un produit particulier ?</span><span class="sxs-lookup"><span data-stu-id="ab2f9-115">Was it due to a particular partner, program, product?</span></span>  
+  
+## <a name="dimensions"></a><span data-ttu-id="ab2f9-116">Dimensions</span><span class="sxs-lookup"><span data-stu-id="ab2f9-116">Dimensions</span></span>  
+ <span data-ttu-id="ab2f9-117">Les dimensions constituent le contexte qui aide l'utilisateur des mesures à comprendre la signification de ces dernières.</span><span class="sxs-lookup"><span data-stu-id="ab2f9-117">Dimensions are the context that help the consumer of measures understand the meaning of those measures.</span></span>  
+  
+ <span data-ttu-id="ab2f9-118">À la suite de l'exemple ci-dessus, supposons que trois éléments supplémentaires sont ajoutés à l'activité BAM pour le processus de gestion des commandes :</span><span class="sxs-lookup"><span data-stu-id="ab2f9-118">Continuing the above example, suppose you add three additional items to the BAM activity for the order management process:</span></span>  
+  
+1.  <span data-ttu-id="ab2f9-119">nom du partenaire commercial (qui a envoyé la commande) ;</span><span class="sxs-lookup"><span data-stu-id="ab2f9-119">trading partner name (who sent the order)</span></span>  
+  
+2.  <span data-ttu-id="ab2f9-120">nom du gestionnaire de compte (qui est le contact commercial) ;</span><span class="sxs-lookup"><span data-stu-id="ab2f9-120">account manager name (who is the sales contact)</span></span>  
+  
+3.  <span data-ttu-id="ab2f9-121">région de vente.</span><span class="sxs-lookup"><span data-stu-id="ab2f9-121">sales region</span></span>  
+  
+ <span data-ttu-id="ab2f9-122">L'activité incluant maintenant trois tableaux croisés dynamiques de données possibles (partenaire, gestionnaire de compte, région), l'agrégation de ces données résulte littéralement en la création d'un cube tridimensionnel lors de l'exécution.</span><span class="sxs-lookup"><span data-stu-id="ab2f9-122">Since the activity now includes three possible data pivots (partner, account manager, region), aggregating this data now literally results in the creation of a three-dimensional cube at run-time.</span></span>  
+  
+ <span data-ttu-id="ab2f9-123">Elle commence toujours par la première tâche, résultant en la création d'une mesure de « durée moyenne » unique.</span><span class="sxs-lookup"><span data-stu-id="ab2f9-123">It still begins with the first item of work, resulting in the creation of a single "average duration" measure.</span></span> <span data-ttu-id="ab2f9-124">Lorsque la prochaine tâche (lancée par l'arrivée d'un autre bon de commande) est exécutée, si le partenaire commercial, le gestionnaire de compte et la région sont inchangés par rapport à la première tâche, la mesure de « durée moyenne » est recalculée sur la base de deux tâches (par exemple, la moyenne des deux durées) pour produire une valeur de mesure de « durée moyenne » unique.</span><span class="sxs-lookup"><span data-stu-id="ab2f9-124">When the next item of work (initiated by the arrival of another purchase order) completes, if trading partner, account manager, and region are all the same as they were for the first item of work, then all that happens is that the "average duration" measure is recalculated, based now on two items (for example, the average of the two durations), to achieve a single "average duration" measure value.</span></span>  
+  
+ <span data-ttu-id="ab2f9-125">Si, dans une tâche, le partenaire commercial, le gestionnaire de compte ou la région sont différents des valeurs rencontrées jusqu'à présent, une nouvelle valeur de mesure de « durée moyenne » est créée et mise à jour séparément de la première.</span><span class="sxs-lookup"><span data-stu-id="ab2f9-125">As soon as an item comes where any of trading partner, account manager, or region are different than the set encountered so far, a new "average duration" measure value is created and maintained separate from the first one.</span></span>  
+  
+ <span data-ttu-id="ab2f9-126">Par exemple, si le partenaire commercial pour la troisième tâche est différent de celui des deux premières tâches, une seconde valeur de mesure de « durée moyenne » est créée avec la dimension de partenaire commercial.</span><span class="sxs-lookup"><span data-stu-id="ab2f9-126">For example, if the trading partner on the third item of work was different than the previous two, the result is creation of a second "average duration" measure value along the trading partner dimension.</span></span> <span data-ttu-id="ab2f9-127">Il est maintenant possible de consulter les valeurs de « durée moyenne » avec la dimension de partenaire commercial et de constater, par exemple que « cela prend presque deux fois plus de temps en moyenne de traiter les commandes émanant du PartenaireCommercialX que du PartenaireCommercialY. »</span><span class="sxs-lookup"><span data-stu-id="ab2f9-127">Now you can review "average duration" values along the trading partner dimension and see things like "it takes us almost twice as long on average to process the orders from TradingPartnerX as it does for TradingPartnerY."</span></span> <span data-ttu-id="ab2f9-128">Les dimensions peuvent en outre être réduites de sorte qu'il reste possible de voir la « durée moyenne » globale pour le processus, indépendamment d'une dimension de partenaire commercial ou autre.</span><span class="sxs-lookup"><span data-stu-id="ab2f9-128">And dimensions can be collapsed for viewing so that one can still see the overall "average duration" for the process independent of any trading partner or other dimension.</span></span>  
+  
+ <span data-ttu-id="ab2f9-129">Enfin, si les dimensions de partenaire commercial, de gestionnaire de compte et de région sont dotées chacune de trois, et seulement de trois, valeurs distinctes, une fois les permutations effectuées, il en résulte un « Rubik® Cube » de données, où les utilisateurs peuvent afficher chacune des 27 valeurs de « durée moyenne » mises à jour de façon indépendante, les dimensions étant représentées par trois côtés du cube.</span><span class="sxs-lookup"><span data-stu-id="ab2f9-129">Finally, if trading partner, account manager, and region each have three and only three distinct values, once all permutations have occurred, the result is a Rubik's® Cube of data, where users can view each of 27 independently maintained "average duration" values, and the dimensions are each of three edges on the cube.</span></span>  
+  
+ <span data-ttu-id="ab2f9-130">Pour plus d'informations sur les dimensions et les mesures, consultez la rubrique « À propos des données source OLAP dans les rapports de tableau ou de graphique croisé dynamique » de l'Aide d'Excel.</span><span class="sxs-lookup"><span data-stu-id="ab2f9-130">For additional information about dimensions and measures, see "About OLAP source data in PivotTable and PivotChart reports" in Excel Help.</span></span>

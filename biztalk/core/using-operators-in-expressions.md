@@ -1,0 +1,64 @@
+---
+title: "Utilisation d’opérateurs dans des Expressions | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- orchestrations, operators
+- XLANG/s, operators
+- orchestrations, XLANG/s
+ms.assetid: f0948ce2-c508-48aa-af79-d207f577b22f
+caps.latest.revision: "10"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 155aad11ecddd021b8e16892b5a5294087fedd4d
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="using-operators-in-expressions"></a><span data-ttu-id="f5d86-102">Utilisation d'opérateurs dans les expressions</span><span class="sxs-lookup"><span data-stu-id="f5d86-102">Using Operators in Expressions</span></span>
+<span data-ttu-id="f5d86-103">Les opérateurs XLANG/s suivants peuvent être utilisés dans les expressions des orchestrations.</span><span class="sxs-lookup"><span data-stu-id="f5d86-103">The following XLANG/s operators are available for use in orchestration expressions.</span></span> <span data-ttu-id="f5d86-104">Ils sont strictement conformes à la fonction des opérateurs correspondants en C#.</span><span class="sxs-lookup"><span data-stu-id="f5d86-104">They adhere closely to the functionality of the corresponding operators in C#.</span></span>  
+  
+|<span data-ttu-id="f5d86-105">Opérateur</span><span class="sxs-lookup"><span data-stu-id="f5d86-105">Operator</span></span>|<span data-ttu-id="f5d86-106"> Description</span><span class="sxs-lookup"><span data-stu-id="f5d86-106">Description</span></span>|<span data-ttu-id="f5d86-107">Exemple</span><span class="sxs-lookup"><span data-stu-id="f5d86-107">Example</span></span>|  
+|--------------|-----------------|-------------|  
+|<span data-ttu-id="f5d86-108">checked()</span><span class="sxs-lookup"><span data-stu-id="f5d86-108">checked()</span></span>|<span data-ttu-id="f5d86-109">signale une erreur de dépassement arithmétique positif</span><span class="sxs-lookup"><span data-stu-id="f5d86-109">raise error on arithmetic overflow</span></span>|<span data-ttu-id="f5d86-110">checked(x = y * 1000)</span><span class="sxs-lookup"><span data-stu-id="f5d86-110">checked(x = y * 1000)</span></span>|  
+|<span data-ttu-id="f5d86-111">unchecked()</span><span class="sxs-lookup"><span data-stu-id="f5d86-111">unchecked()</span></span>|<span data-ttu-id="f5d86-112">ignore l'erreur de dépassement arithmétique positif</span><span class="sxs-lookup"><span data-stu-id="f5d86-112">ignore arithmetic overflow</span></span>|<span data-ttu-id="f5d86-113">unchecked(x = y * 1000)</span><span class="sxs-lookup"><span data-stu-id="f5d86-113">unchecked(x = y * 1000)</span></span>|  
+|<span data-ttu-id="f5d86-114">new</span><span class="sxs-lookup"><span data-stu-id="f5d86-114">new</span></span>|<span data-ttu-id="f5d86-115">créer une instance d'une classe</span><span class="sxs-lookup"><span data-stu-id="f5d86-115">create an instance of a class</span></span>|<span data-ttu-id="f5d86-116">myObject = new MyClass;</span><span class="sxs-lookup"><span data-stu-id="f5d86-116">myObject = new MyClass;</span></span>|  
+|<span data-ttu-id="f5d86-117">typeof</span><span class="sxs-lookup"><span data-stu-id="f5d86-117">typeof</span></span>|<span data-ttu-id="f5d86-118">récupération de type</span><span class="sxs-lookup"><span data-stu-id="f5d86-118">Type retrieval</span></span>|<span data-ttu-id="f5d86-119">myMapType = typeof(myMap)</span><span class="sxs-lookup"><span data-stu-id="f5d86-119">myMapType = typeof(myMap)</span></span>|  
+|<span data-ttu-id="f5d86-120">succeeded()</span><span class="sxs-lookup"><span data-stu-id="f5d86-120">succeeded()</span></span>|<span data-ttu-id="f5d86-121">test de réussite d'étendue transactionnelle ou d'orchestration</span><span class="sxs-lookup"><span data-stu-id="f5d86-121">test for successful completion of transactional scope or orchestration</span></span>|<span data-ttu-id="f5d86-122">a réussi (\<ID de transaction enfant de l’étendue actuelle ou de service >)</span><span class="sxs-lookup"><span data-stu-id="f5d86-122">succeeded(\<transaction ID for child transaction of current scope or service>)</span></span>|  
+|<span data-ttu-id="f5d86-123">existe</span><span class="sxs-lookup"><span data-stu-id="f5d86-123">exists</span></span>|<span data-ttu-id="f5d86-124">vérifie l'existence d'une propriété de contexte de message</span><span class="sxs-lookup"><span data-stu-id="f5d86-124">test for the existence of a message context property</span></span>|<span data-ttu-id="f5d86-125">BTS.RetryCount exists Message_In</span><span class="sxs-lookup"><span data-stu-id="f5d86-125">BTS.RetryCount exists Message_In</span></span>|  
+|+|<span data-ttu-id="f5d86-126">plus unaire</span><span class="sxs-lookup"><span data-stu-id="f5d86-126">unary plus</span></span>|<span data-ttu-id="f5d86-127">+(int x)</span><span class="sxs-lookup"><span data-stu-id="f5d86-127">+(int x)</span></span>|  
+|-|<span data-ttu-id="f5d86-128">moins unaire</span><span class="sxs-lookup"><span data-stu-id="f5d86-128">unary minus</span></span>|<span data-ttu-id="f5d86-129">-(int x)</span><span class="sxs-lookup"><span data-stu-id="f5d86-129">-(int x)</span></span>|  
+|<span data-ttu-id="f5d86-130">!</span><span class="sxs-lookup"><span data-stu-id="f5d86-130">!</span></span>|<span data-ttu-id="f5d86-131">négation logique</span><span class="sxs-lookup"><span data-stu-id="f5d86-131">logical negation</span></span>|<span data-ttu-id="f5d86-132">!myBool</span><span class="sxs-lookup"><span data-stu-id="f5d86-132">!myBool</span></span>|  
+|~|<span data-ttu-id="f5d86-133">complément de bits</span><span class="sxs-lookup"><span data-stu-id="f5d86-133">bitwise complement</span></span>|<span data-ttu-id="f5d86-134">x = ~y</span><span class="sxs-lookup"><span data-stu-id="f5d86-134">x = ~y</span></span>|  
+|<span data-ttu-id="f5d86-135">()</span><span class="sxs-lookup"><span data-stu-id="f5d86-135">()</span></span>|<span data-ttu-id="f5d86-136">Cast</span><span class="sxs-lookup"><span data-stu-id="f5d86-136">cast</span></span>|<span data-ttu-id="f5d86-137">(bool) myInt</span><span class="sxs-lookup"><span data-stu-id="f5d86-137">(bool) myInt</span></span>|  
+|*|<span data-ttu-id="f5d86-138">times</span><span class="sxs-lookup"><span data-stu-id="f5d86-138">times</span></span>|<span data-ttu-id="f5d86-139">Poids = MyMsg.numOrders * 20</span><span class="sxs-lookup"><span data-stu-id="f5d86-139">Weight = MyMsg.numOrders * 20</span></span>|  
+|/|<span data-ttu-id="f5d86-140">divisé par</span><span class="sxs-lookup"><span data-stu-id="f5d86-140">divided by</span></span>|<span data-ttu-id="f5d86-141">x / y</span><span class="sxs-lookup"><span data-stu-id="f5d86-141">x / y</span></span>|  
+|+|<span data-ttu-id="f5d86-142">plus</span><span class="sxs-lookup"><span data-stu-id="f5d86-142">plus</span></span>|<span data-ttu-id="f5d86-143">x + y</span><span class="sxs-lookup"><span data-stu-id="f5d86-143">x + y</span></span>|  
+|-|<span data-ttu-id="f5d86-144">moins</span><span class="sxs-lookup"><span data-stu-id="f5d86-144">minus</span></span>|<span data-ttu-id="f5d86-145">x - y</span><span class="sxs-lookup"><span data-stu-id="f5d86-145">x - y</span></span>|  
+|<<|<span data-ttu-id="f5d86-146">décalage vers la gauche</span><span class="sxs-lookup"><span data-stu-id="f5d86-146">shift left</span></span>|<span data-ttu-id="f5d86-147">x <\< 2</span><span class="sxs-lookup"><span data-stu-id="f5d86-147">x <\< 2</span></span>|  
+|>>|<span data-ttu-id="f5d86-148">décalage vers la droite</span><span class="sxs-lookup"><span data-stu-id="f5d86-148">shift right</span></span>|<span data-ttu-id="f5d86-149">x >> 2</span><span class="sxs-lookup"><span data-stu-id="f5d86-149">x >> 2</span></span>|  
+|<|<span data-ttu-id="f5d86-150">inférieur à</span><span class="sxs-lookup"><span data-stu-id="f5d86-150">less than</span></span>|<span data-ttu-id="f5d86-151">Si (MyMsg.numOrders \< 10)...</span><span class="sxs-lookup"><span data-stu-id="f5d86-151">If (MyMsg.numOrders \< 10)...</span></span>|  
+|>|<span data-ttu-id="f5d86-152">supérieur à</span><span class="sxs-lookup"><span data-stu-id="f5d86-152">greater than</span></span>|<span data-ttu-id="f5d86-153">Si (MyMsg.numOrders > 10)...</span><span class="sxs-lookup"><span data-stu-id="f5d86-153">If (MyMsg.numOrders > 10)...</span></span>|  
+|<=|<span data-ttu-id="f5d86-154">inférieur ou égal à</span><span class="sxs-lookup"><span data-stu-id="f5d86-154">less than or equal to</span></span>|<span data-ttu-id="f5d86-155">Si (MyMsg.numOrders \<= 10)...</span><span class="sxs-lookup"><span data-stu-id="f5d86-155">If (MyMsg.numOrders \<= 10)...</span></span>|  
+|>=|<span data-ttu-id="f5d86-156">supérieur ou égal à</span><span class="sxs-lookup"><span data-stu-id="f5d86-156">greater than or equal to</span></span>|<span data-ttu-id="f5d86-157">Si (MyMsg.numOrders > = 10)...</span><span class="sxs-lookup"><span data-stu-id="f5d86-157">If (MyMsg.numOrders >= 10)...</span></span>|  
+|==|<span data-ttu-id="f5d86-158">égal à</span><span class="sxs-lookup"><span data-stu-id="f5d86-158">equal to</span></span>|<span data-ttu-id="f5d86-159">If (MyMsg.numOrders == 10)...</span><span class="sxs-lookup"><span data-stu-id="f5d86-159">If (MyMsg.numOrders == 10)...</span></span>|  
+|<span data-ttu-id="f5d86-160">!=</span><span class="sxs-lookup"><span data-stu-id="f5d86-160">!=</span></span>|<span data-ttu-id="f5d86-161">différent de</span><span class="sxs-lookup"><span data-stu-id="f5d86-161">not equal to</span></span>|<span data-ttu-id="f5d86-162">If (MyMsg.numOrders != 10)...</span><span class="sxs-lookup"><span data-stu-id="f5d86-162">If (MyMsg.numOrders != 10)...</span></span>|  
+|&|<span data-ttu-id="f5d86-163">et</span><span class="sxs-lookup"><span data-stu-id="f5d86-163">and</span></span>|<span data-ttu-id="f5d86-164">If (myByte & 255)...</span><span class="sxs-lookup"><span data-stu-id="f5d86-164">If (myByte & 255)...</span></span>|  
+|^|<span data-ttu-id="f5d86-165">or exclusif</span><span class="sxs-lookup"><span data-stu-id="f5d86-165">exclusive or</span></span>|<span data-ttu-id="f5d86-166">If (myByte ^ 1)...</span><span class="sxs-lookup"><span data-stu-id="f5d86-166">If (myByte ^ 1)...</span></span>|  
+|<span data-ttu-id="f5d86-167">&#124;</span><span class="sxs-lookup"><span data-stu-id="f5d86-167">&#124;</span></span>|<span data-ttu-id="f5d86-168">ou</span><span class="sxs-lookup"><span data-stu-id="f5d86-168">or</span></span>|<span data-ttu-id="f5d86-169">Si (myByte &#124; 1)...</span><span class="sxs-lookup"><span data-stu-id="f5d86-169">If (myByte &#124; 1)...</span></span>|  
+|&&|<span data-ttu-id="f5d86-170">and conditionnel</span><span class="sxs-lookup"><span data-stu-id="f5d86-170">conditional and</span></span>|<span data-ttu-id="f5d86-171">If (MyMsg.numOrders > 10) && (MyMsg.numOrders < 100)</span><span class="sxs-lookup"><span data-stu-id="f5d86-171">If (MyMsg.numOrders > 10) && (MyMsg.numOrders < 100)</span></span>|  
+|<span data-ttu-id="f5d86-172">&#124;&#124;</span><span class="sxs-lookup"><span data-stu-id="f5d86-172">&#124;&#124;</span></span>|<span data-ttu-id="f5d86-173">or conditionnel</span><span class="sxs-lookup"><span data-stu-id="f5d86-173">conditional or</span></span>|<span data-ttu-id="f5d86-174">Si (MyMsg.numOrders \< 10) &#124; &#124; (MyMsg.numOrders > 100)</span><span class="sxs-lookup"><span data-stu-id="f5d86-174">If (MyMsg.numOrders \< 10) &#124;&#124; (MyMsg.numOrders > 100)</span></span>|  
+|//|<span data-ttu-id="f5d86-175">commentaire</span><span class="sxs-lookup"><span data-stu-id="f5d86-175">commenting</span></span>|<span data-ttu-id="f5d86-176">//Ceci est le commentaire</span><span class="sxs-lookup"><span data-stu-id="f5d86-176">//This is the comment</span></span>|  
+  
+> [!NOTE]
+>  <span data-ttu-id="f5d86-177">Les règles diffèrent entre les expressions générales et les expressions de filtre qui sont utilisées avec la **réception** forme.</span><span class="sxs-lookup"><span data-stu-id="f5d86-177">The rules differ between general expressions and filter expressions that are used with the **Receive** shape.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="f5d86-178">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="f5d86-178">See Also</span></span>  
+ [<span data-ttu-id="f5d86-179">Utilisation des filtres avec la forme d’un Message de réception</span><span class="sxs-lookup"><span data-stu-id="f5d86-179">Using Filters With the Receive Message Shape</span></span>](../core/using-filters-with-the-receive-message-shape.md)

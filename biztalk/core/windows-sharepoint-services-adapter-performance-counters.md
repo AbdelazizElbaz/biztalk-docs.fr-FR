@@ -1,0 +1,54 @@
+---
+title: "Compteurs de performances de l’adaptateur de Windows SharePoint Services | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 41583fde-530a-4070-9647-f1ab6273aadf
+caps.latest.revision: "9"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 80340fd8479b8bf1a0e431e90778f7501763fe4f
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="windows-sharepoint-services-adapter-performance-counters"></a><span data-ttu-id="4546b-102">Compteurs de performances de l'adaptateur Windows SharePoint Services</span><span class="sxs-lookup"><span data-stu-id="4546b-102">Windows SharePoint Services Adapter Performance Counters</span></span>
+<span data-ttu-id="4546b-103">Les compteurs de performance permettent d'analyser des aspects spécifiques du travail effectué sur le site ou le système par un service.</span><span class="sxs-lookup"><span data-stu-id="4546b-103">Performance counters allow you to monitor specific aspects of work performed on the site or system by service.</span></span> <span data-ttu-id="4546b-104">Ils peuvent vous aider à identifier et à résoudre des problèmes de performances de serveur.</span><span class="sxs-lookup"><span data-stu-id="4546b-104">Performance counters can help you identify and troubleshoot server performance issues.</span></span>  
+  
+ <span data-ttu-id="4546b-105">Les compteurs de performances suivants sont accessibles pour chaque instance d’hôte sous le **adaptateur Windows Sharepoint Services** catégorie d’objet de performances :</span><span class="sxs-lookup"><span data-stu-id="4546b-105">The following performance counters are accessible for each host instance under the **BizTalk:Windows Sharepoint Services Adapter** performance object category:</span></span>  
+  
+|<span data-ttu-id="4546b-106">**Catégorie**</span><span class="sxs-lookup"><span data-stu-id="4546b-106">**Category**</span></span>|<span data-ttu-id="4546b-107">**Compteur**</span><span class="sxs-lookup"><span data-stu-id="4546b-107">**Counter**</span></span>|<span data-ttu-id="4546b-108">**Description**</span><span class="sxs-lookup"><span data-stu-id="4546b-108">**Description**</span></span>|  
+|------------------|-----------------|---------------------|  
+|<span data-ttu-id="4546b-109">BizTalk:adaptateur Windows SharePoint Services</span><span class="sxs-lookup"><span data-stu-id="4546b-109">BizTalk:Windows Sharepoint Services Adapter</span></span>|<span data-ttu-id="4546b-110">% d'échecs de réception de messages</span><span class="sxs-lookup"><span data-stu-id="4546b-110">% Receive Message Failures</span></span>|<span data-ttu-id="4546b-111">Pourcentage des fichiers Windows SharePoint Services non traités par BizTalk Server en raison d'erreurs lors de la réception.</span><span class="sxs-lookup"><span data-stu-id="4546b-111">The percentage of Windows SharePoint Services files that have not been processed by BizTalk Server due to receive errors.</span></span>|  
+||<span data-ttu-id="4546b-112">% d'échecs d'envoi de messages</span><span class="sxs-lookup"><span data-stu-id="4546b-112">% Send Message Failures</span></span>|<span data-ttu-id="4546b-113">Pourcentage de messages dont l'envoi par BizTalk Server à Windows SharePoint Services a échoué.</span><span class="sxs-lookup"><span data-stu-id="4546b-113">The percentage of failed messages BizTalk Server attempted to send to Windows SharePoint Services.</span></span>|  
+||<span data-ttu-id="4546b-114">% d'échecs d'appel du service Web</span><span class="sxs-lookup"><span data-stu-id="4546b-114">% Web Service Call Failures</span></span>|<span data-ttu-id="4546b-115">Pourcentage des appels du service Web de l'adaptateur Windows SharePoint Services qui ont échoué.</span><span class="sxs-lookup"><span data-stu-id="4546b-115">The percentage of Windows SharePoint Services adapter Web service calls that have failed.</span></span>|  
+||<span data-ttu-id="4546b-116">Total d'échecs de validation des réceptions</span><span class="sxs-lookup"><span data-stu-id="4546b-116">Total Receive Commit Failures</span></span>|<span data-ttu-id="4546b-117">Nombre total d'erreurs Windows SharePoint Services détectées lors de la mise à jour de l'état des documents SharePoint.</span><span class="sxs-lookup"><span data-stu-id="4546b-117">The total number of Windows SharePoint Services errors that were raised when updating the status of the SharePoint documents.</span></span>|  
+||<span data-ttu-id="4546b-118">Total d'échecs de réception de messages</span><span class="sxs-lookup"><span data-stu-id="4546b-118">Total Receive Message Failures</span></span>|<span data-ttu-id="4546b-119">Nombre total des fichiers Windows SharePoint Services reçus qui n'ont pas été traités par BizTalk Server en raison d'erreurs.</span><span class="sxs-lookup"><span data-stu-id="4546b-119">The total number of Windows SharePoint Services files received that have not been processed by BizTalk Server due to errors.</span></span>|  
+||<span data-ttu-id="4546b-120">Total de messages reçus</span><span class="sxs-lookup"><span data-stu-id="4546b-120">Total Received Messages</span></span>|<span data-ttu-id="4546b-121">Nombre total des fichiers Windows SharePoint Services reçus par l'adaptateur Windows SharePoint Services, comprenant les fichiers dont le traitement a échoué.</span><span class="sxs-lookup"><span data-stu-id="4546b-121">The total number of Windows SharePoint Services files received by the Windows SharePoint Services adapter, including files that failed to process.</span></span>|  
+||<span data-ttu-id="4546b-122">Total d'échecs d'envoi de messages</span><span class="sxs-lookup"><span data-stu-id="4546b-122">Total Send Message Failures</span></span>|<span data-ttu-id="4546b-123">Nombre total de messages dont l'envoi par BizTalk Server à Windows SharePoint Services a échoué.</span><span class="sxs-lookup"><span data-stu-id="4546b-123">The total number of failed messages BizTalk Server attempted to send to Windows SharePoint Services.</span></span>|  
+||<span data-ttu-id="4546b-124">Total de messages envoyés</span><span class="sxs-lookup"><span data-stu-id="4546b-124">Total Sent Messages</span></span>|<span data-ttu-id="4546b-125">Nombre total de messages envoyés par BizTalk Server à Windows SharePoint Services, comprenant les fichiers dont le traitement a échoué.</span><span class="sxs-lookup"><span data-stu-id="4546b-125">The total number of messages BizTalk Server sent to Windows SharePoint Services, including files that failed to process.</span></span>|  
+||<span data-ttu-id="4546b-126">Total d'échecs d'appel du service Web</span><span class="sxs-lookup"><span data-stu-id="4546b-126">Total Web Service Call Failures</span></span>|<span data-ttu-id="4546b-127">Nombre total des appels du service Web de l'adaptateur Windows SharePoint Services qui ont échoué.</span><span class="sxs-lookup"><span data-stu-id="4546b-127">The total number of Windows SharePoint Services adapter Web service calls that have failed.</span></span>|  
+||<span data-ttu-id="4546b-128">Appels du service Web par seconde</span><span class="sxs-lookup"><span data-stu-id="4546b-128">Web Service Calls per Second</span></span>|<span data-ttu-id="4546b-129">Nombre total des appels du service Web de l'adaptateur Windows SharePoint Services par seconde.</span><span class="sxs-lookup"><span data-stu-id="4546b-129">The number of Windows SharePoint Services adapter Web service calls per second.</span></span>|  
+  
+## <a name="to-access-performance-counters"></a><span data-ttu-id="4546b-130">Pour accéder aux compteurs de performance</span><span class="sxs-lookup"><span data-stu-id="4546b-130">To access performance counters</span></span>  
+ <span data-ttu-id="4546b-131">Utilisez la procédure suivante pour accéder aux compteurs de performances.</span><span class="sxs-lookup"><span data-stu-id="4546b-131">Use the following steps to access the performance counters.</span></span>  
+  
+#### <a name="if-you-are-using-windows-2008"></a><span data-ttu-id="4546b-132">Si vous exécutez Windows 2008</span><span class="sxs-lookup"><span data-stu-id="4546b-132">If you are using Windows 2008</span></span>  
+  
+1.  <span data-ttu-id="4546b-133">Cliquez sur **Démarrer**, pointez sur **outils d’administration**, puis cliquez sur **l’Analyseur de performances**.</span><span class="sxs-lookup"><span data-stu-id="4546b-133">Click **Start**, point to **Administrative Tools**, and then click **Performance Monitor**.</span></span>  
+  
+2.  <span data-ttu-id="4546b-134">Dans le **l’Analyseur de performances** boîte de dialogue, développez **outils d’analyse**, sélectionnez **l’Analyseur de performances**, puis cliquez sur **ajouter**.</span><span class="sxs-lookup"><span data-stu-id="4546b-134">In the **Performance Monitor** dialog box, expand **Monitoring Tools**, select **Performance Monitor**, and then click **Add**.</span></span>  
+  
+3.  <span data-ttu-id="4546b-135">Dans le **ajouter des compteurs** boîte de dialogue, à partir de la **compteurs disponibles** liste, développez le **adaptateur Windows Sharepoint Services** objet compteur de performance et sélectionnez les compteurs à surveiller</span><span class="sxs-lookup"><span data-stu-id="4546b-135">In the **Add Counters** dialog box, from the **Available Counters** list, expand the **BizTalk:Windows Sharepoint Services Adapter** performance counter object and select the counters to be monitored</span></span>  
+  
+4.  <span data-ttu-id="4546b-136">Dans le **Instances de l’objet sélectionné** , sélectionnez les instances spécifiques à surveiller pour les compteurs sélectionnés, puis cliquez sur **ajouter**.</span><span class="sxs-lookup"><span data-stu-id="4546b-136">In the **Instances of Selected object** list, select the specific instances to be monitored for the selected counters and then click **Add**.</span></span>  <span data-ttu-id="4546b-137">Pour sélectionner toutes les instances de compteur disponibles, sélectionnez \< **toutes les instances**>.</span><span class="sxs-lookup"><span data-stu-id="4546b-137">To select all available counter instances, select \<**All instances**>.</span></span>  
+  
+5.  <span data-ttu-id="4546b-138">Après avoir ajouté les compteurs, cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="4546b-138">After adding the counters, click **OK**.</span></span>  
+  
+     <span data-ttu-id="4546b-139">Les compteurs de performances sélectionnés s’affichent sur le **l’Analyseur de performances** écran.</span><span class="sxs-lookup"><span data-stu-id="4546b-139">The selected performance counters appear on the **Performance Monitor** screen.</span></span>

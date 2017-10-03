@@ -1,0 +1,51 @@
+---
+title: CIDX normes de messagerie | Documents Microsoft
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- CIDX, RosettaNet
+- RosettaNet, CIDX
+ms.assetid: 6f70fa56-1fc3-4016-ac9e-6af18026292a
+caps.latest.revision: "3"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 4d37cd02f92a8a13857071d0b3d84ab40c480787
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="cidx-messaging-standards"></a><span data-ttu-id="7bfd3-102">Normes de messagerie CIDX</span><span class="sxs-lookup"><span data-stu-id="7bfd3-102">CIDX Messaging Standards</span></span>
+<span data-ttu-id="7bfd3-103">CIDX (Chemical Industry Data Exchange) fonctionne comme une organisation de normes qui prend en charge et gère les normes chem pour l’échange de messages standard.</span><span class="sxs-lookup"><span data-stu-id="7bfd3-103">CIDX (Chemical Industry Data Exchange) operates as a standards organization that supports and maintains the Chem eStandards for standardized message exchange.</span></span> <span data-ttu-id="7bfd3-104">Les entreprises dans l’industrie chimique utilisent ces normes pour leurs besoins de messagerie spécifiques.</span><span class="sxs-lookup"><span data-stu-id="7bfd3-104">Companies in the chemical industry use these standards for their industry-specific messaging needs.</span></span>  
+  
+ <span data-ttu-id="7bfd3-105">CIDX a arrêté le Framework RNIF (RosettaNet Implementation) au niveau de la couche de messagerie pour permettre l’échange de documents XML.</span><span class="sxs-lookup"><span data-stu-id="7bfd3-105">CIDX has adopted the RosettaNet Implementation Framework (RNIF) at the messaging layer to enable the exchange of XML documents.</span></span> <span data-ttu-id="7bfd3-106">CIDX n’a pas adopté la couche de processus publics des normes RNIF.</span><span class="sxs-lookup"><span data-stu-id="7bfd3-106">CIDX has not adopted the public-process layer of the RNIF standards.</span></span>  
+  
+ <span data-ttu-id="7bfd3-107">Normes chem définissent des définitions de type document (DTD) XML décrivent le contenu du service d’un message qui échangent des systèmes.</span><span class="sxs-lookup"><span data-stu-id="7bfd3-107">Chem eStandards define XML document type definitions (DTDs) that describe the service content of a message that systems exchange.</span></span> <span data-ttu-id="7bfd3-108">Le message est identique à un objet de RNIF 1.1 RosettaNet dans la structure, avec les différences dans le contenu de service et de certaines valeurs d’en-tête.</span><span class="sxs-lookup"><span data-stu-id="7bfd3-108">The message is the same as an RNIF 1.1 RosettaNet object in structure, with differences in the service content and some header values.</span></span> <span data-ttu-id="7bfd3-109">Lorsqu’il existe une correspondance entre les normes CIDX et messages RosettaNet, la norme CIDX adopte RosettaNet les noms d’éléments et les structures de données.</span><span class="sxs-lookup"><span data-stu-id="7bfd3-109">When there is a match between CIDX standards and RosettaNet messages, the CIDX standard adopts RosettaNet element names and data structures.</span></span>  
+  
+ <span data-ttu-id="7bfd3-110">CIDX a utilisé traditionnellement d’échange de document informatisé (EDI) pour l’échange de messages, mais il a créé un nouveau jeu de documents basés sur les technologies XML.</span><span class="sxs-lookup"><span data-stu-id="7bfd3-110">CIDX has traditionally used electronic document interchange (EDI) for message exchange, but has formed a new set of documents based on XML technologies.</span></span> <span data-ttu-id="7bfd3-111">Normes chem fournit des réplicas XML des messages EDI.</span><span class="sxs-lookup"><span data-stu-id="7bfd3-111">Chem eStandards provide XML replicas of EDI messages.</span></span>  
+  
+ <span data-ttu-id="7bfd3-112">Normes chem créer des messages individuels pour chaque transaction commerciale.</span><span class="sxs-lookup"><span data-stu-id="7bfd3-112">Chem eStandards create individual messages for every business transaction.</span></span> <span data-ttu-id="7bfd3-113">Normes chem utilisent deux types de réponses : réponses techniques et les réponses de la transaction.</span><span class="sxs-lookup"><span data-stu-id="7bfd3-113">Chem eStandards use two types of message responses: technical responses and transaction responses.</span></span> <span data-ttu-id="7bfd3-114">Pour la messagerie sécurisée et fiable, les normes chem utilisez uniquement des processus de type de Notification de RNIF 1.1.</span><span class="sxs-lookup"><span data-stu-id="7bfd3-114">For secure and reliable messaging, Chem eStandards only use Notification type processes of RNIF 1.1.</span></span> <span data-ttu-id="7bfd3-115">Normes chem n’utilisez pas de 0 a 1 processus PIP (Partner Interface).</span><span class="sxs-lookup"><span data-stu-id="7bfd3-115">Chem eStandards do not use Partner Interface Process (PIP) 0A1.</span></span>  
+  
+## <a name="cidx-and-rosettanet-differences"></a><span data-ttu-id="7bfd3-116">CIDX et les différences de RosettaNet</span><span class="sxs-lookup"><span data-stu-id="7bfd3-116">CIDX and RosettaNet Differences</span></span>  
+ <span data-ttu-id="7bfd3-117">Le tableau suivant répertorie certaines des différences entre RosettaNet et CIDX.</span><span class="sxs-lookup"><span data-stu-id="7bfd3-117">The following table shows some of the differences between RosettaNet and CIDX.</span></span>  
+  
+|<span data-ttu-id="7bfd3-118">Implémentation de RosettaNet</span><span class="sxs-lookup"><span data-stu-id="7bfd3-118">RosettaNet implementation</span></span>|<span data-ttu-id="7bfd3-119">Implémentation de CIDX</span><span class="sxs-lookup"><span data-stu-id="7bfd3-119">CIDX implementation</span></span>|  
+|-------------------------------|-------------------------|  
+|<span data-ttu-id="7bfd3-120">RosettaNet utilise le « Application/x-RosettaNet » comme type MIME Multipurpose Internet Mail Extensions ().</span><span class="sxs-lookup"><span data-stu-id="7bfd3-120">RosettaNet uses the "Application/x-RosettaNet" as the Multipurpose Internet Mail Extensions (MIME) type.</span></span>|<span data-ttu-id="7bfd3-121">CIDX utilise « Application/x-ChemXML » comme type MIME.</span><span class="sxs-lookup"><span data-stu-id="7bfd3-121">CIDX uses "Application/x-ChemXML" as the MIME type.</span></span>|  
+|<span data-ttu-id="7bfd3-122">Pour les en-têtes de RosettaNet, RosettaNet utilise GlobalAdministeringAuthorityCode = RosettaNet</span><span class="sxs-lookup"><span data-stu-id="7bfd3-122">For RosettaNet headers, RosettaNet uses GlobalAdministeringAuthorityCode = RosettaNet</span></span>|<span data-ttu-id="7bfd3-123">CIDX utilise GlobalAdministeringAuthorityCode = CIDX</span><span class="sxs-lookup"><span data-stu-id="7bfd3-123">CIDX uses GlobalAdministeringAuthorityCode = CIDX</span></span>|  
+|<span data-ttu-id="7bfd3-124">RosettaNet prend en charge les messages d’action unique et double action.</span><span class="sxs-lookup"><span data-stu-id="7bfd3-124">RosettaNet supports single-action and double-action messages.</span></span>|<span data-ttu-id="7bfd3-125">CIDX prend en charge uniquement les messages d’action unique.</span><span class="sxs-lookup"><span data-stu-id="7bfd3-125">CIDX supports only single-action messages.</span></span>|  
+|<span data-ttu-id="7bfd3-126">Prend en charge de RosettaNet PIP 0 a 1 (Notification d’échec).</span><span class="sxs-lookup"><span data-stu-id="7bfd3-126">RosettaNet supports PIP 0A1 (Notification of Failure).</span></span>|<span data-ttu-id="7bfd3-127">CIDX ne prend pas en charge le PIP 0 a 1.</span><span class="sxs-lookup"><span data-stu-id="7bfd3-127">CIDX does not support PIP 0A1.</span></span>|  
+|<span data-ttu-id="7bfd3-128">Messages RosettaNet peuvent être de la Transaction ou de Notification de type.</span><span class="sxs-lookup"><span data-stu-id="7bfd3-128">RosettaNet messages can be of Transaction or Notification type.</span></span>|<span data-ttu-id="7bfd3-129">Tous les messages CIDX sont du type de Notification.</span><span class="sxs-lookup"><span data-stu-id="7bfd3-129">All CIDX messages are of the Notification type.</span></span>|  
+|<span data-ttu-id="7bfd3-130">Dans RosettaNet, vous devez dériver les paramètres de Configuration PIP les spécifications PIP.</span><span class="sxs-lookup"><span data-stu-id="7bfd3-130">In RosettaNet, you must derive PIP Configuration Settings from the PIP specifications.</span></span>|<span data-ttu-id="7bfd3-131">Dans CIDX, vous devez dériver les paramètres de Configuration PIP CIDX normes chem spécifications.</span><span class="sxs-lookup"><span data-stu-id="7bfd3-131">In CIDX, you must derive PIP Configuration Settings from the CIDX Chem eStandards specifications.</span></span>|  
+  
+## <a name="see-also"></a><span data-ttu-id="7bfd3-132">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="7bfd3-132">See Also</span></span>  
+ <span data-ttu-id="7bfd3-133">[RosettaNet et CIDX normes de messagerie](../../adapters-and-accelerators/accelerator-rosettanet/rosettanet-and-cidx-messaging-standards.md) </span><span class="sxs-lookup"><span data-stu-id="7bfd3-133">[RosettaNet and CIDX Messaging Standards](../../adapters-and-accelerators/accelerator-rosettanet/rosettanet-and-cidx-messaging-standards.md) </span></span>  
+ <span data-ttu-id="7bfd3-134">[Norme RNIF](../../adapters-and-accelerators/accelerator-rosettanet/rnif-standard.md) </span><span class="sxs-lookup"><span data-stu-id="7bfd3-134">[RNIF Standard](../../adapters-and-accelerators/accelerator-rosettanet/rnif-standard.md) </span></span>  
+ <span data-ttu-id="7bfd3-135">[PIP de RosettaNet](../../adapters-and-accelerators/accelerator-rosettanet/rosettanet-pips.md) </span><span class="sxs-lookup"><span data-stu-id="7bfd3-135">[RosettaNet PIPs](../../adapters-and-accelerators/accelerator-rosettanet/rosettanet-pips.md) </span></span>  
+ [<span data-ttu-id="7bfd3-136">Prise en charge CIDX</span><span class="sxs-lookup"><span data-stu-id="7bfd3-136">CIDX Support</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/cidx-support.md)

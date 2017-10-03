@@ -1,0 +1,68 @@
+---
+title: "À l’aide d’un système PeopleSoft | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: c228ac23-184f-4c08-922b-ba84f5f2c52f
+caps.latest.revision: "18"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: c93e025ddb2ccec4b0088c20837a4f307f40aada
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="using-a-peoplesoft-system"></a><span data-ttu-id="e01bc-102">Utilisation d'un système PeopleSoft</span><span class="sxs-lookup"><span data-stu-id="e01bc-102">Using a PeopleSoft System</span></span>
+<span data-ttu-id="e01bc-103">Le système PeopleSoft est accessible à partir de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] à l'aide de l'adaptateur PeopleSoft.</span><span class="sxs-lookup"><span data-stu-id="e01bc-103">The PeopleSoft system is accessible from a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system by using the PeopleSoft adapter.</span></span> <span data-ttu-id="e01bc-104">Ce dernier fait partie des 8 adaptateurs sectoriels fournis par Microsoft à des fins d'utilisation avec [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span><span class="sxs-lookup"><span data-stu-id="e01bc-104">This adapter is one of a group of eight line-of-business (LOB) adapters shipped by Microsoft for use with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
+  
+ <span data-ttu-id="e01bc-105">L'atelier PeopleSoft est divisé en deux parties.</span><span class="sxs-lookup"><span data-stu-id="e01bc-105">The PeopleSoft lab work is divided into two parts.</span></span> <span data-ttu-id="e01bc-106">Le premier atelier (Atelier 1) permet d'utiliser le système PeopleSoft sans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ou produit Microsoft (sauf éventuellement Internet Explorer ou tout autre navigateur).</span><span class="sxs-lookup"><span data-stu-id="e01bc-106">This first lab (Lab 1) allows you to use the PeopleSoft system without needing [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] or any Microsoft products (except perhaps Internet Explorer, but you can use any browser).</span></span> <span data-ttu-id="e01bc-107">Au cours de cet atelier, vous allez vous connecter au système PeopleSoft pour rechercher et modifier un enregistrement de données.</span><span class="sxs-lookup"><span data-stu-id="e01bc-107">In this lab, you will connect to the PeopleSoft system to locate and modify a simple data record.</span></span>  
+  
+ <span data-ttu-id="e01bc-108">Dans le cadre du deuxième atelier (Atelier 2), vous allez créer un projet et une orchestration BizTalk.</span><span class="sxs-lookup"><span data-stu-id="e01bc-108">In the second lab (Lab 2), you will create a BizTalk project and orchestration.</span></span> <span data-ttu-id="e01bc-109">Une fois l'application créée, vous allez la déployer et l'utiliser pour vous connecter au système PeopleSoft à l'aide de l'adaptateur associé.</span><span class="sxs-lookup"><span data-stu-id="e01bc-109">After you create the application, you will deploy it and use it to connect to a PeopleSoft system by using the PeopleSoft adapter.</span></span> <span data-ttu-id="e01bc-110">Celui-ci vous permettra d'accéder aux données via l'application BizTalk.</span><span class="sxs-lookup"><span data-stu-id="e01bc-110">The goal is to access data through the BizTalk application by using the adapter.</span></span>  
+  
+## <a name="prerequisites"></a><span data-ttu-id="e01bc-111">Conditions préalables</span><span class="sxs-lookup"><span data-stu-id="e01bc-111">Prerequisites</span></span>  
+ <span data-ttu-id="e01bc-112">Pour exécuter les procédures de cet atelier, vous devez disposer d'un navigateur et d'une connexion à Internet, ainsi que d'un compte d'utilisateur sur le système PeopleSoft.</span><span class="sxs-lookup"><span data-stu-id="e01bc-112">To perform the procedures for this lab, you need a browser and an Internet connection, along with a user account on a PeopleSoft system.</span></span> <span data-ttu-id="e01bc-113">Vous devez connaître l'emplacement à partir duquel vous pourrez bénéficier d'un accès Web au système PeopleSoft.</span><span class="sxs-lookup"><span data-stu-id="e01bc-113">You need to know the location to browse to for gaining Web access to your PeopleSoft system.</span></span> <span data-ttu-id="e01bc-114">Vous n'avez besoin ni de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ni d'autres technologies Microsoft.</span><span class="sxs-lookup"><span data-stu-id="e01bc-114">You do not need [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] or any other Microsoft technologies.</span></span>  
+  
+## <a name="lab-1---using-a-peoplesoft-system"></a><span data-ttu-id="e01bc-115">Atelier 1 : utilisation d’un système PeopleSoft</span><span class="sxs-lookup"><span data-stu-id="e01bc-115">Lab 1 - Using a PeopleSoft System</span></span>  
+ <span data-ttu-id="e01bc-116">Au cours de cet atelier, vous allez utiliser le système PeopleSoft uniquement. Vous n'aurez besoin d'aucun composant de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span><span class="sxs-lookup"><span data-stu-id="e01bc-116">In this lab, you will use the PeopleSoft system without using any components of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="e01bc-117">Vous allez tester la connectivité à PeopleSoft pour vous assurer que l'Atelier 2 fonctionne correctement.</span><span class="sxs-lookup"><span data-stu-id="e01bc-117">The goal is to test your connectivity to PeopleSoft to ensure that the second lab will work correctly.</span></span> <span data-ttu-id="e01bc-118">Pour commencer, vous allez vous connecter au système PeopleSoft via son interface Web qui vous permettra de vous connecter à l'aide d'un navigateur tel qu'Internet Explorer.</span><span class="sxs-lookup"><span data-stu-id="e01bc-118">Initially you connect to the PeopleSoft system through its Web interface that allows you to log on by using a browser such as Internet Explorer.</span></span>  
+  
+## <a name="procedures-for-lab-1---using-a-peoplesoft-system"></a><span data-ttu-id="e01bc-119">Atelier 1 : utilisation d'un système PeopleSoft</span><span class="sxs-lookup"><span data-stu-id="e01bc-119">Procedures for Lab 1 - Using a PeopleSoft System</span></span>  
+  
+#### <a name="to-log-on-to-peoplesoft-by-using-a-browser"></a><span data-ttu-id="e01bc-120">Pour vous connecter à PeopleSoft à l'aide d'un navigateur</span><span class="sxs-lookup"><span data-stu-id="e01bc-120">To log on to PeopleSoft by using a browser</span></span>  
+  
+-   <span data-ttu-id="e01bc-121">Connectez-vous au système PeopleSoft en accédant à la page de connexion à PeopleSoft.</span><span class="sxs-lookup"><span data-stu-id="e01bc-121">Log on to the PeopleSoft system by browsing to a PeopleSoft logon page.</span></span> <span data-ttu-id="e01bc-122">Entrez votre **ID utilisateur** et **mot de passe** puis cliquez sur **connexion**.</span><span class="sxs-lookup"><span data-stu-id="e01bc-122">Enter your **User ID** and **Password** and then click **Sign In**.</span></span>  
+  
+     ![](../core/media/1e3e5c0f-316b-4aa3-946e-3bb3665b0ddb.gif "1e3e5c0f-316b-4aa3-946e-3bb3665b0ddb")  
+  
+#### <a name="to-locate-and-modify-peoplesoft-data"></a><span data-ttu-id="e01bc-123">Pour rechercher et modifier des données PeopleSoft</span><span class="sxs-lookup"><span data-stu-id="e01bc-123">To locate and modify PeopleSoft data</span></span>  
+  
+1.  <span data-ttu-id="e01bc-124">Une fois connecté, la page qui s'affiche permet de personnaliser le contenu affiché en modifiant sa mise en forme.</span><span class="sxs-lookup"><span data-stu-id="e01bc-124">A successful logon places you at the page to personalize the content you see by choosing its layout.</span></span> <span data-ttu-id="e01bc-125">Faites défiler vers le bas et développez **définir des finances**, cliquez sur **des définitions communes**, cliquez sur **emplacement**, puis cliquez sur **emplacement** à nouveau.</span><span class="sxs-lookup"><span data-stu-id="e01bc-125">Scroll down and expand **Set Up Financials/Supply Chain**, click **Common Definitions**, click **Location**, and then click **Location** again.</span></span> <span data-ttu-id="e01bc-126">Ceci vous amène à la **emplacement** interface de recherche.</span><span class="sxs-lookup"><span data-stu-id="e01bc-126">This brings you to the **Location** search interface.</span></span>  
+  
+     ![](../core/media/62a89cd4-464c-42fd-91cd-60ceeab5b006.gif "62a89cd4-464c-42fd-91cd-60ceeab5b006")  
+  
+2.  <span data-ttu-id="e01bc-127">Pour commencer la recherche, définissez **SetID** à  **=** , définissez **Code de l’emplacement** à **commence par**, entrez **un**, puis cliquez sur **recherche**.</span><span class="sxs-lookup"><span data-stu-id="e01bc-127">To begin the search, set **SetID** to **=**, set **Location Code** to **begins with**, enter **A**, and then click **Search**.</span></span> <span data-ttu-id="e01bc-128">Cela permet d’afficher les villes dont le nom commence par A dans le **résultats de la recherche** section de l’interface.</span><span class="sxs-lookup"><span data-stu-id="e01bc-128">This displays cities whose names start with A in the **Search Results** section of the interface.</span></span>  
+  
+     ![](../core/media/86661144-c666-4d72-9227-9f17df715ba4.gif "86661144-c666-4d72-9227-9f17df715ba4")  
+  
+3.  <span data-ttu-id="e01bc-129">Cliquez sur l'un des emplacements pour obtenir les informations associées.</span><span class="sxs-lookup"><span data-stu-id="e01bc-129">Click one of the locations to get its detail information.</span></span> <span data-ttu-id="e01bc-130">Par exemple, dans la figure ci-dessous, l’utilisateur a cliqué sur le **AUS01** lien dans le **Code de l’emplacement** colonne.</span><span class="sxs-lookup"><span data-stu-id="e01bc-130">For example, in the figure below, the user clicked the **AUS01** link in the **Location Code** column.</span></span>  
+  
+4.  <span data-ttu-id="e01bc-131">Entrez de nouvelles données dans un des champs (tels que les **adresse 2** champ) et cliquez sur **enregistrer** dans le coin inférieur gauche.</span><span class="sxs-lookup"><span data-stu-id="e01bc-131">Enter some new data into one of the fields (such as the **Address 2** field) and click **Save** in the lower-left corner.</span></span> <span data-ttu-id="e01bc-132">Les données entrées sont sauvegardées dans un enregistrement.</span><span class="sxs-lookup"><span data-stu-id="e01bc-132">This saves the newly entered data into the record.</span></span>  
+  
+     ![](../core/media/b6eb137c-c0b0-4906-8fbd-1bc036069fb0.gif "b6eb137c-c0b0-4906-8fbd-1bc036069fb0")  
+  
+5.  <span data-ttu-id="e01bc-133">Pour vérifier l'application des modifications, répétez ce processus à partir de l'étape 2, recherchez de nouveau ce même enregistrement, puis observez les modifications qui y ont été apportées.</span><span class="sxs-lookup"><span data-stu-id="e01bc-133">To verify the success of this change, repeat the process from step 2, find this same record again, and observe the changes made to the record.</span></span>  
+  
+6.  <span data-ttu-id="e01bc-134">Dans la partie supérieure droite de la fenêtre, cliquez sur **se déconnecter** mettre fin à votre session de PeopleSoft.</span><span class="sxs-lookup"><span data-stu-id="e01bc-134">In the upper-right portion of the window, click **Sign out** to end your PeopleSoft session.</span></span>  
+  
+     ![](../core/media/7760b541-5155-453e-a682-4780412f3c13.gif "7760b541-5155-453e-a682-4780412f3c13")  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="e01bc-135">Les instructions indiquées dans l'atelier suivant vous permettront d'utiliser l'adaptateur PeopleSoft pour extraire les informations de l'enregistrement d'emplacement (AUS01) que vous avez modifié.</span><span class="sxs-lookup"><span data-stu-id="e01bc-135">In the next lab there are instructions for using the PeopleSoft adapter to retrieve the information for the location record (AUS01) that you modified.</span></span>  
+  
+## <a name="summary"></a><span data-ttu-id="e01bc-136">Résumé</span><span class="sxs-lookup"><span data-stu-id="e01bc-136">Summary</span></span>  
+ <span data-ttu-id="e01bc-137">Au cours de cet atelier, vous vous êtes connecté au système PeopleSoft via un navigateur.</span><span class="sxs-lookup"><span data-stu-id="e01bc-137">In this lab you logged on to the PeopleSoft system through a browser.</span></span> <span data-ttu-id="e01bc-138">Vous avez ensuite recherché des données, puis manipulé et mis à jour le champ Adresse de l'enregistrement.</span><span class="sxs-lookup"><span data-stu-id="e01bc-138">After you were connected, you searched for data, and then manipulated and updated a record's address field.</span></span> <span data-ttu-id="e01bc-139">Une fois les modifications apportées, vous avez consulté les données modifiées dans le navigateur pour vérifier que les modifications ont été prises en compte.</span><span class="sxs-lookup"><span data-stu-id="e01bc-139">After committing the change, you could view the modified data in the browser to verify that the change executed properly.</span></span>

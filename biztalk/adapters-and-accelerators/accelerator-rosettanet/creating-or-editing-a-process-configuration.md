@@ -1,0 +1,45 @@
+---
+title: "Création ou modification d’une Configuration de processus | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- process configuration, modifying
+- process configuration, creating
+- creating, process configuration
+- modifying, process configuration
+ms.assetid: 39cc2c93-0986-48d3-8c6f-4280ec9af4e0
+caps.latest.revision: "4"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: d9130ab7370f8f6e1fcbe75bc7a85a6c74dfe328
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="creating-or-editing-a-process-configuration"></a><span data-ttu-id="01034-102">Création ou modification d’une Configuration de processus</span><span class="sxs-lookup"><span data-stu-id="01034-102">Creating or Editing a Process Configuration</span></span>
+<span data-ttu-id="01034-103">Cette section décrit comment créer ou modifier une configuration de processus pour implémenter un processus PIP (Partner Interface) dans [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)].</span><span class="sxs-lookup"><span data-stu-id="01034-103">This section describes how to create or edit a process configuration to implement a Partner Interface Process (PIP) in [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)].</span></span> <span data-ttu-id="01034-104">Une adresse PIP RosettaNet définit une boîte de dialogue du processus d’entreprise entre deux partenaires commerciaux.</span><span class="sxs-lookup"><span data-stu-id="01034-104">A RosettaNet PIP defines a business-process dialog between two trading partners.</span></span> <span data-ttu-id="01034-105">Dans [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)], pour créer une adresse PIP avec un partenaire, vous devez d’abord créer une configuration de processus.</span><span class="sxs-lookup"><span data-stu-id="01034-105">In [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)], to create a PIP with a partner, you must first create a process configuration.</span></span> [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]<span data-ttu-id="01034-106">utilise ce profil pour stocker toutes les caractéristiques de configuration du PIP.</span><span class="sxs-lookup"><span data-stu-id="01034-106"> uses this profile to store all configuration characteristics of the PIP.</span></span> <span data-ttu-id="01034-107">Vous pouvez ensuite utiliser cette configuration pour créer un accord avec le partenaire.</span><span class="sxs-lookup"><span data-stu-id="01034-107">You can then use this configuration to create an agreement with the partner.</span></span>  
+  
+ <span data-ttu-id="01034-108">Pour plus d’informations sur les propriétés de configuration de processus et procédures pour créer ou modifier une configuration de processus, consultez [comment créer ou modifier une Configuration de processus](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md).</span><span class="sxs-lookup"><span data-stu-id="01034-108">For information about process configuration properties, and procedures for creating or editing a process configuration, see [How to Create or Edit a Process Configuration](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md).</span></span>  
+  
+ <span data-ttu-id="01034-109">Pour créer une nouvelle configuration de processus, vous devez baser les paramètres sur le document de spécification PIP gérées par l’organisation RosettaNet.</span><span class="sxs-lookup"><span data-stu-id="01034-109">In creating a new process configuration, you must base the settings on the PIP specification document maintained by the RosettaNet organization.</span></span> <span data-ttu-id="01034-110">Configuration de processus de tous les paramètres proviennent de spécifications PIP, et [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] remplit la plupart des paramètres avec les valeurs par défaut qui sont les valeurs généralement utilisées pour les champs.</span><span class="sxs-lookup"><span data-stu-id="01034-110">All process configuration settings come from the PIP specifications, and [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] populates most of the settings with default values that are the most typically used values for the fields.</span></span> <span data-ttu-id="01034-111">Vous devez vérifier que les paramètres correspondent aux valeurs dans la spécification PIP appropriée.</span><span class="sxs-lookup"><span data-stu-id="01034-111">You must verify that the settings correspond to the values in the appropriate PIP specification.</span></span> <span data-ttu-id="01034-112">Pour plus d’informations sur la façon dont les paramètres PIP que vous entrez mappent à l’aide de la spécification PIP, consultez [à l’aide de la spécification PIP pour créer une Configuration de processus](../../adapters-and-accelerators/accelerator-rosettanet/using-the-pip-specification-to-create-a-process-configuration.md).</span><span class="sxs-lookup"><span data-stu-id="01034-112">For more information about how the PIP settings that you enter map to the guidance in the PIP specification, see [Using the PIP Specification to Create a Process Configuration](../../adapters-and-accelerators/accelerator-rosettanet/using-the-pip-specification-to-create-a-process-configuration.md).</span></span>  
+  
+ <span data-ttu-id="01034-113">La configuration de processus peut être de RosettaNet ou CIDX (Chemical Industry Data Exchange).</span><span class="sxs-lookup"><span data-stu-id="01034-113">The process configuration can be for either RosettaNet or CIDX (Chemical Industry Data Exchange).</span></span> <span data-ttu-id="01034-114">Pour plus d’informations sur une configuration CIDX, consultez [paramètre des CIDX chem échange de messages](../../adapters-and-accelerators/accelerator-rosettanet/setting-up-cidx-estandards-message-exchange.md).</span><span class="sxs-lookup"><span data-stu-id="01034-114">For information about a CIDX configuration, see [Setting Up CIDX eStandards Message Exchange](../../adapters-and-accelerators/accelerator-rosettanet/setting-up-cidx-estandards-message-exchange.md).</span></span>  
+  
+ [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]<span data-ttu-id="01034-115">ne prend pas en charge la modification d’une configuration de processus lorsqu’il y a les processus actifs.</span><span class="sxs-lookup"><span data-stu-id="01034-115"> does not support changing a process configuration while there are active processes.</span></span> <span data-ttu-id="01034-116">Si vous le faites, les processus actifs terminera avec des erreurs.</span><span class="sxs-lookup"><span data-stu-id="01034-116">If you do so, the active processes will complete with failures.</span></span> <span data-ttu-id="01034-117">Tous les nouveaux processus reprendra correctement les nouveaux paramètres de configuration.</span><span class="sxs-lookup"><span data-stu-id="01034-117">All new processes will successfully pick up the new configuration settings.</span></span>  
+  
+## <a name="in-this-section"></a><span data-ttu-id="01034-118">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="01034-118">In This Section</span></span>  
+  
+-   [<span data-ttu-id="01034-119">Comment créer ou modifier une Configuration de processus</span><span class="sxs-lookup"><span data-stu-id="01034-119">How to Create or Edit a Process Configuration</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)  
+  
+-   [<span data-ttu-id="01034-120">Pour créer une Configuration de processus à l’aide de la spécification PIP</span><span class="sxs-lookup"><span data-stu-id="01034-120">Using the PIP Specification to Create a Process Configuration</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/using-the-pip-specification-to-create-a-process-configuration.md)  
+  
+-   [<span data-ttu-id="01034-121">Propriétés d’autorisation et de non-répudiation</span><span class="sxs-lookup"><span data-stu-id="01034-121">Authorization and Non-Repudiation Properties</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/authorization-and-non-repudiation-properties.md)  
+  
+-   [<span data-ttu-id="01034-122">Paramètre des CIDX chem échange de messages</span><span class="sxs-lookup"><span data-stu-id="01034-122">Setting Up CIDX eStandards Message Exchange</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/setting-up-cidx-estandards-message-exchange.md)

@@ -1,0 +1,1 @@
+<span data-ttu-id="cd75a-101">Complément Consume Adapter Service BizTalk Project Add-in</span><span class="sxs-lookup"><span data-stu-id="cd75a-101">Consume Adapter Service BizTalk Project Add-in</span></span>

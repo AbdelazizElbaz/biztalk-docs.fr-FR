@@ -1,0 +1,46 @@
+---
+title: Zombies dans BizTalk Server | Documents Microsoft
+description: Causes courantes des messages zombies dans BizTalk Server
+ms.custom: 
+ms.date: 03/23/2016
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 0c684891-e984-442f-b5fd-de5f7cf32b44
+caps.latest.revision: "7"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 9764522d2ff5265b6f28f2f125cb33b2982a7605
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="zombies-in-biztalk-server"></a><span data-ttu-id="dc434-103">Zombies dans BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="dc434-103">Zombies in BizTalk Server</span></span>
+
+## <a name="what-is-a-zombie"></a><span data-ttu-id="dc434-104">Qu'est-ce qu'un zombie ?</span><span class="sxs-lookup"><span data-stu-id="dc434-104">What is a zombie?</span></span>  
+  
+-   <span data-ttu-id="dc434-105">Un message zombie est un message qui a été acheminé vers une orchestration en cours d'exécution depuis la MessageBox et qui se trouve "en vol" au moment où l'orchestration prend fin.</span><span class="sxs-lookup"><span data-stu-id="dc434-105">A zombie message is a message that was routed to a running orchestration from the messagebox and was "in flight" when the orchestration ended.</span></span> <span data-ttu-id="dc434-106">Un message "en vol" est un message qui a été acheminé vers une instance de service et qui se trouve donc dans une file d'attente de la MessageBox dédiée à cette instance de service.</span><span class="sxs-lookup"><span data-stu-id="dc434-106">An "in flight" message is a message that has been routed to a service instance and so is in a messagebox queue destined for the service instance.</span></span> <span data-ttu-id="dc434-107">Puisque le message ne peut plus être utilisée par l'instance d'orchestration d'abonnement, il est suspendu et reçoit la valeur Instance de service/État "Suspendu (ne peut être repris)".</span><span class="sxs-lookup"><span data-stu-id="dc434-107">Since the message can no longer be consumed by the subscribing orchestration instance, the message is suspended and marked with a ServiceInstance/State value of "Suspended (Non-resumable)".</span></span>  
+  
+-   <span data-ttu-id="dc434-108">Une instance de service zombie est une instance d'orchestration qui a pris fin pendant qu'un message en cours d'acheminement vers l'instance d'orchestration à partir la MessageBox se trouvait encore "en vol".</span><span class="sxs-lookup"><span data-stu-id="dc434-108">A zombie service instance is an instance of an orchestration which has completed while a message that was routed to the orchestration instance from the messagebox was still "in flight".</span></span> <span data-ttu-id="dc434-109">Puisque l'instance d'orchestration est terminée, elle ne peut plus utiliser les messages "en vol" ; elle est donc suspendue et reçoit la valeur Instance de service/État "Suspendu (ne peut être repris)".</span><span class="sxs-lookup"><span data-stu-id="dc434-109">Since the orchestration instance has ended, it cannot consume the "in flight" messages and so is suspended and marked with a ServiceInstance/State value of "Suspended (Non-resumable)".</span></span>  
+  
+## <a name="typical-causes"></a><span data-ttu-id="dc434-110">Causes courantes</span><span class="sxs-lookup"><span data-stu-id="dc434-110">Typical causes</span></span>
+<span data-ttu-id="dc434-111">Les occurrences de zombies appartiennent en général à l'une des catégories suivantes :</span><span class="sxs-lookup"><span data-stu-id="dc434-111">The occurrence of zombies typically falls into one of the following categories:</span></span>  
+  
+1.  <span data-ttu-id="dc434-112">**Messages de contrôle d’arrêt** – le moteur d’orchestration permet l’utilisation des messages de contrôle pour annuler tout le travail en cours d’exécution dans une instance d’orchestration spécifique.</span><span class="sxs-lookup"><span data-stu-id="dc434-112">**Terminate control messages** – The orchestration engine allows the use of control messages to cancel all currently running work in a specific orchestration instance.</span></span> <span data-ttu-id="dc434-113">Puisque le message de contrôle stoppe immédiatement l'orchestration en cours d'exécution, les instances zombies ne sont impossibles.</span><span class="sxs-lookup"><span data-stu-id="dc434-113">Since the control message immediately halts the running orchestration, zombie instances are not unexpected.</span></span> <span data-ttu-id="dc434-114">Plusieurs conceptions relatives au Human Workflow, entre autres, ont tendance à utiliser ce mécanisme.</span><span class="sxs-lookup"><span data-stu-id="dc434-114">A number of Human Workflow related designs tend to use this mechanism as well as some other designs.</span></span>  
+  
+2.  <span data-ttu-id="dc434-115">**Réceptions en écoute parallèle** : dans ce scénario de l’instance de service attend 1 sur n messages et lorsqu’il reçoit certains messages il effectue certaines tâches et se termine.</span><span class="sxs-lookup"><span data-stu-id="dc434-115">**Parallel listen receives** – In this scenario the service instance waits for 1 of n messages and when it receives certain messages it does some work and terminates.</span></span> <span data-ttu-id="dc434-116">Si des messages sont reçus sur une branche parallèle au moment où l'instance de service prend fin, des zombies sont créés.</span><span class="sxs-lookup"><span data-stu-id="dc434-116">If messages are received on a parallel branch just as the service instance is terminating, zombies are created.</span></span>  
+  
+3.  <span data-ttu-id="dc434-117">**Convois séquentiels avec points de terminaison non déterministes** – dans ce scénario, une planification d’orchestration principale est conçue pour gérer tous les messages d’un certain type afin de satisfaire à un type d’exigence de conception de système.</span><span class="sxs-lookup"><span data-stu-id="dc434-117">**Sequential convoys with non-deterministic endpoints** – In this scenario, a master orchestration schedule is designed to handle all messages of a certain type in order to meet some type of system design requirement.</span></span> <span data-ttu-id="dc434-118">Ces exigences de conception incluent la livraison chronologique des messages, les distributeurs de ressources et le traitement par lot.</span><span class="sxs-lookup"><span data-stu-id="dc434-118">These design requirements may include ordered delivery, resource dispenser, and batching.</span></span> <span data-ttu-id="dc434-119">Pour ce scénario, il est question de définir une boucle while d'écoute, avec une branche de la forme Réception et l'autre de la forme Attente, suivies d'une certaine construction contenant des variables gouvernant l'arrêt de la boucle while.</span><span class="sxs-lookup"><span data-stu-id="dc434-119">For this scenario, the tendency is to define a while loop surrounding a listen with one branch having a receive and the other having a delay shape followed by some construct which sets some variable to indicate that the while loop should stop.</span></span> <span data-ttu-id="dc434-120">Il n'est pas question de déterminisme car un message peut être livré même si l'attente est déclenchée.</span><span class="sxs-lookup"><span data-stu-id="dc434-120">This is non-deterministic since the delay could be triggered, but a message could still be delivered.</span></span> <span data-ttu-id="dc434-121">Les points de terminaison non déterministes de ce type ont tendance à générer des zombies.</span><span class="sxs-lookup"><span data-stu-id="dc434-121">Non-deterministic endpoints like this are prone to generating zombies.</span></span>  
+  
+ <span data-ttu-id="dc434-122">Lorsqu’une instance de service zombie est suspendue, le message d’erreur suivant est généré :</span><span class="sxs-lookup"><span data-stu-id="dc434-122">When a zombie service instance is suspended,  the following error message is generated:</span></span>  
+  
+`0xC0C01B4C The instance completed without consuming all of its messages. The instance and its unconsumed messages have been suspended.`  
+  
+ <span data-ttu-id="dc434-123">Vous pouvez utiliser la [BizTalk Terminator](https://www.microsoft.com/download/details.aspx?id=2846) pour supprimer les zombies.</span><span class="sxs-lookup"><span data-stu-id="dc434-123">You can use the [BizTalk Terminator](https://www.microsoft.com/download/details.aspx?id=2846) to help remove zombies.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="dc434-124">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="dc434-124">See Also</span></span>  
+ <span data-ttu-id="dc434-125">**Suppression d’Instances de Service suspendues**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]</span><span class="sxs-lookup"><span data-stu-id="dc434-125">**Removing Suspended Service Instances** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]</span></span>

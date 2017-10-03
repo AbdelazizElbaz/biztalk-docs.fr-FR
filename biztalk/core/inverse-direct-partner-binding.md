@@ -1,0 +1,40 @@
+---
+title: "Liaison directe de partenaires inversée | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- bindings, partners
+- process management solution tutorial, partner binding
+ms.assetid: 4cf8717a-2098-46f4-8f58-9d05fb562e2a
+caps.latest.revision: "10"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: a6c9fe5e51f9f63ea098fa623dafbceeb670e75f
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="inverse-direct-partner-binding"></a><span data-ttu-id="644c7-102">Liaison directe de partenaires inversée</span><span class="sxs-lookup"><span data-stu-id="644c7-102">Inverse Direct Partner Binding</span></span>
+<span data-ttu-id="644c7-103">La solution de gestion des processus d'entreprise est conçue afin que vous puissiez modifier les étapes de traitement des commandes sans arrêter l'application.</span><span class="sxs-lookup"><span data-stu-id="644c7-103">The Business Process Management solution is designed so that you can change the order processing stages without stopping the application.</span></span> <span data-ttu-id="644c7-104">Pour séparer les étapes de traitement (**CableOrder1**, **CableOrder2**) à partir du Gestionnaire de processus (**OrderManager**), la solution utilise une technique différente pour lier les ports parmi ces orchestrations.</span><span class="sxs-lookup"><span data-stu-id="644c7-104">In order to decouple the processing stages (**CableOrder1**, **CableOrder2**) from the process manager (**OrderManager**), the solution uses a different technique for binding ports among these orchestrations.</span></span>  
+  
+ <span data-ttu-id="644c7-105">Dans la forme de liaison habituelle, diriger la liaison, la **OrderManager** orchestration utiliseriez l’orchestration étape du processus comme valeur pour la propriété Port d’Orchestration des partenaires.</span><span class="sxs-lookup"><span data-stu-id="644c7-105">In the usual form of binding, direct binding, the **OrderManager** orchestration would use the process stage orchestration as the value for the Partner Orchestration Port property.</span></span> <span data-ttu-id="644c7-106">Dans la liaison directe ainsi le **OrderManager** orchestration dépend des noms forts (qui incluent les versions) des étapes de traitement.</span><span class="sxs-lookup"><span data-stu-id="644c7-106">In direct binding like this the **OrderManager** orchestration depends on the strong names (which include the versions) of the process stages.</span></span> <span data-ttu-id="644c7-107">Cela rend impossible de modifier les étapes de traitement sans redéployer le **OrderManager** orchestration.</span><span class="sxs-lookup"><span data-stu-id="644c7-107">This makes it impossible to alter the process stages without re-deploying the **OrderManager** orchestration.</span></span> <span data-ttu-id="644c7-108">Pour plus d’informations sur la liaison directe, consultez [liaisons de Port](../core/port-bindings.md).</span><span class="sxs-lookup"><span data-stu-id="644c7-108">For more information about direct binding, see [Port Bindings](../core/port-bindings.md).</span></span> <span data-ttu-id="644c7-109">La liaison directe peut être illustrée comme suit :</span><span class="sxs-lookup"><span data-stu-id="644c7-109">Direct Binding might be illustrated this way:</span></span>  
+  
+ <span data-ttu-id="644c7-110">![Diagramme de liaison directe de partenaires inversée](../core/media/bpm-inverse-direct-binding.gif "BPM_Inverse_Direct_Binding")</span><span class="sxs-lookup"><span data-stu-id="644c7-110">![Diagram of Inverse Direct Partner Binding](../core/media/bpm-inverse-direct-binding.gif "BPM_Inverse_Direct_Binding")</span></span>  
+  
+ <span data-ttu-id="644c7-111">Dans la liaison directe de partenaires inversée, l'orchestration de réception spécifie la liaison, au lieu de l'orchestration d'origine.</span><span class="sxs-lookup"><span data-stu-id="644c7-111">In inverse direct partner binding, the receiving orchestration specifies the binding, rather than the originating orchestration.</span></span> <span data-ttu-id="644c7-112">Le port sur le **OrderManager** est simplement lié à lui-même.</span><span class="sxs-lookup"><span data-stu-id="644c7-112">The port on the **OrderManager** is simply bound to itself.</span></span> <span data-ttu-id="644c7-113">Autrement dit, le port sur le **OrderManager** est spécifié pour le **PartnerOrchestrationPort** propriété.</span><span class="sxs-lookup"><span data-stu-id="644c7-113">That is, the port on the **OrderManager** is specified for the **PartnerOrchestrationPort** property.</span></span> <span data-ttu-id="644c7-114">Toutefois, les orchestrations d’étape de processus utilisent approprié **OrderManager** port comme valeur pour le **PartnerOrchestrationPort** propriété.</span><span class="sxs-lookup"><span data-stu-id="644c7-114">However, the process stage orchestrations use the appropriate **OrderManager** port as the value for the **PartnerOrchestrationPort** property.</span></span> <span data-ttu-id="644c7-115">Ceci permet de séparer le **OrderManager** à partir des versions des orchestrations d’étape de processus et leur permet d’être modifiées sans redéployer le **OrderManager**.</span><span class="sxs-lookup"><span data-stu-id="644c7-115">This decouples the **OrderManager** from the versions of the process stage orchestrations and allows them to be changed without redeploying the **OrderManager**.</span></span> <span data-ttu-id="644c7-116">La liaison directe n'autoriserait pas cette séparation.</span><span class="sxs-lookup"><span data-stu-id="644c7-116">Direct binding would not allow this decoupling.</span></span> <span data-ttu-id="644c7-117">La liaison directe de partenaires inversée peut être illustrée comme suit :</span><span class="sxs-lookup"><span data-stu-id="644c7-117">Inverse direct partner binding might be shown this way:</span></span>  
+  
+ <span data-ttu-id="644c7-118">![Diagramme de la liaison directe](../core/media/bpm-direct-binding.gif "BPM_Direct_Binding")</span><span class="sxs-lookup"><span data-stu-id="644c7-118">![Diagram of Direct Binding](../core/media/bpm-direct-binding.gif "BPM_Direct_Binding")</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="644c7-119">La liaison directe inversée permet également de communiquer avec les orchestrations des partenaires comme avec une liste de distribution.</span><span class="sxs-lookup"><span data-stu-id="644c7-119">Inverse direct binding also allows for communicating with partner orchestrations in a distribution-list like way.</span></span> <span data-ttu-id="644c7-120">Le **OrderManger** peut utiliser un port unique pour communiquer avec toutes les étapes.</span><span class="sxs-lookup"><span data-stu-id="644c7-120">The **OrderManger** can use a single port to communicate with all stages.</span></span> <span data-ttu-id="644c7-121">Ceci vous permet d'ajouter et de supprimer des étapes sans recréer l'orchestration.</span><span class="sxs-lookup"><span data-stu-id="644c7-121">This enables you to add and remove stages without redesigning the orchestration.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="644c7-122">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="644c7-122">See Also</span></span>  
+ <span data-ttu-id="644c7-123">[Caractéristiques de l’implémentation de la Solution gestion des processus d’entreprise](../core/implementation-highlights-of-the-business-process-management-solution.md) </span><span class="sxs-lookup"><span data-stu-id="644c7-123">[Implementation Highlights of the Business Process Management Solution](../core/implementation-highlights-of-the-business-process-management-solution.md) </span></span>  
+ [<span data-ttu-id="644c7-124">Logique du Gestionnaire de processus</span><span class="sxs-lookup"><span data-stu-id="644c7-124">Process Manager Logic</span></span>](../core/process-manager-logic.md)

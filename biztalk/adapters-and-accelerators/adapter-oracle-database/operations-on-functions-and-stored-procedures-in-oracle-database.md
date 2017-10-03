@@ -1,0 +1,54 @@
+---
+title: "Opérations sur les fonctions et procédures stockées dans la base de données Oracle | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- REF CURSOR
+- packaged functions and procedures
+- operations, on functions and stored procedures
+- stored procedure
+- RECORD type
+- overloaded functions and procedures
+ms.assetid: 18072b58-65b2-4da5-9433-ea0da4e2d4f4
+caps.latest.revision: "3"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 78181aae7921cad3996e4bd408e604857a2bd15e
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="operations-on-functions-and-stored-procedures-in-oracle-database"></a><span data-ttu-id="68f3e-102">Opérations sur les fonctions et procédures stockées dans la base de données Oracle</span><span class="sxs-lookup"><span data-stu-id="68f3e-102">Operations on functions and stored procedures in Oracle Database</span></span>
+<span data-ttu-id="68f3e-103">Le [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] prend en charge des fonctions, des procédures et des packages Oracle dans la manière suivante :</span><span class="sxs-lookup"><span data-stu-id="68f3e-103">The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] supports Oracle functions, procedures, and packages in the following manner:</span></span>  
+  
+-   <span data-ttu-id="68f3e-104">**Fonctions** sont signalées en tant qu’opérations.</span><span class="sxs-lookup"><span data-stu-id="68f3e-104">**Functions** are surfaced as operations.</span></span> <span data-ttu-id="68f3e-105">Le nom de l’opération est le nom de la fonction d’Oracle.</span><span class="sxs-lookup"><span data-stu-id="68f3e-105">The name of the operation is the name of the Oracle function.</span></span> <span data-ttu-id="68f3e-106">IN, OUT et dans les paramètres sont pris en charge, ainsient, les valeurs de retour.</span><span class="sxs-lookup"><span data-stu-id="68f3e-106">IN, OUT, and IN OUT parameters are supported, as well as, RETURN values.</span></span>  
+  
+-   <span data-ttu-id="68f3e-107">**Procédures** sont signalées en tant qu’opérations.</span><span class="sxs-lookup"><span data-stu-id="68f3e-107">**Procedures** are surfaced as operations.</span></span> <span data-ttu-id="68f3e-108">Le nom de l’opération est le nom de la procédure d’Oracle.</span><span class="sxs-lookup"><span data-stu-id="68f3e-108">The name of the operation is the name of the Oracle procedure.</span></span> <span data-ttu-id="68f3e-109">IN, OUT et dans les paramètres sont pris en charge.</span><span class="sxs-lookup"><span data-stu-id="68f3e-109">IN, OUT, and IN OUT parameters are supported.</span></span>  
+  
+-   <span data-ttu-id="68f3e-110">**Empaqueté des fonctions et procédures** sont signalées en tant qu’opérations.</span><span class="sxs-lookup"><span data-stu-id="68f3e-110">**Packaged functions and procedures** are surfaced as operations.</span></span> <span data-ttu-id="68f3e-111">Le nom et l’espace de noms de l’opération (fonction ou procédure) est qualifié par le nom du package Oracle.</span><span class="sxs-lookup"><span data-stu-id="68f3e-111">The name and namespace of the operation (function or procedure) is qualified by the name of the Oracle package.</span></span> <span data-ttu-id="68f3e-112">Surcharges sont prises en charge dans les packages (voir ci-après).</span><span class="sxs-lookup"><span data-stu-id="68f3e-112">Overloads are supported in packages (see next bullet).</span></span>  
+  
+-   <span data-ttu-id="68f3e-113">**Surcharge des fonctions et procédures** dans les packages sont signalées en tant qu’opérations.</span><span class="sxs-lookup"><span data-stu-id="68f3e-113">**Overloaded functions and procedures** in packages are surfaced as operations.</span></span> <span data-ttu-id="68f3e-114">Chaque fonction surchargée ou apparaît avec une chaîne ajoutée à son nom qui identifie la surcharge de procédure.</span><span class="sxs-lookup"><span data-stu-id="68f3e-114">Each overloaded function or procedure is surfaced with a string appended to its name that identifies the overload.</span></span> <span data-ttu-id="68f3e-115">Cette chaîne est la partie de la séquence « overload1 », « overload2 », « overload3 » et ainsi de suite.</span><span class="sxs-lookup"><span data-stu-id="68f3e-115">This string is part of the sequence "overload1", "overload2", "overload3", and so on.</span></span>  
+  
+-   <span data-ttu-id="68f3e-116">**Types de REF CURSOR** sont pris en charge pour IN, OUT et dans les paramètres des procédures et des fonctions, ainsi que pour la fonction valeurs de retour.</span><span class="sxs-lookup"><span data-stu-id="68f3e-116">**REF CURSOR types** are supported for IN, OUT, and IN OUT parameters for procedures and functions, as well as for function RETURN values.</span></span> <span data-ttu-id="68f3e-117">Pour plus d’informations, consultez [opérations sur les fonctions et procédures avec des paramètres REF CURSOR](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-functions-and-procedures-with-ref-cursor-parameters1.md).</span><span class="sxs-lookup"><span data-stu-id="68f3e-117">For more information, see [Operations on Functions and Procedures with REF CURSOR Parameters](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-functions-and-procedures-with-ref-cursor-parameters1.md).</span></span>  
+  
+-   <span data-ttu-id="68f3e-118">**Types d’enregistrements** sont pris en charge pour IN, OUT et dans les paramètres des procédures et des fonctions, ainsi que pour la fonction valeurs de retour.</span><span class="sxs-lookup"><span data-stu-id="68f3e-118">**RECORD types** are supported for IN, OUT, and IN OUT parameters for procedures and functions, as well as for function RETURN values.</span></span> <span data-ttu-id="68f3e-119">Types d’enregistrements (imbriquées) à la fois simples et complexes sont pris en charge.</span><span class="sxs-lookup"><span data-stu-id="68f3e-119">Both simple and complex (nested) RECORD types are supported.</span></span> [<span data-ttu-id="68f3e-120">Opérations sur les fonctions et procédures avec des Types d’enregistrements</span><span class="sxs-lookup"><span data-stu-id="68f3e-120">Operations on Functions and Procedures with RECORD Types</span></span>](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-functions-and-procedures-with-record-types1.md)  
+  
+ <span data-ttu-id="68f3e-121">Pour plus d’informations sur :</span><span class="sxs-lookup"><span data-stu-id="68f3e-121">For more information about:</span></span>  
+  
+-   <span data-ttu-id="68f3e-122">Appeler une procédure Oracle ou une fonction à l’aide de [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], consultez [appeler les fonctions et les procédures de base de données Oracle à l’aide de BizTalk Server](../../adapters-and-accelerators/adapter-oracle-database/invoke-functions-and-procedures-in-oracle-database-using-biztalk-server.md) et [appeler les fonctions de surcharge et les procédures de base de données Oracle à l’aide BizTalk Server](../../adapters-and-accelerators/adapter-oracle-database/run-overloaded-functions-and-procedures-in-oracle-database-using-biztalk-server.md).</span><span class="sxs-lookup"><span data-stu-id="68f3e-122">Invoking an Oracle procedure or function by using [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], see [Invoke Functions and Procedures in Oracle Database using BizTalk Server](../../adapters-and-accelerators/adapter-oracle-database/invoke-functions-and-procedures-in-oracle-database-using-biztalk-server.md) and [Invoke Overload Functions and Procedures in Oracle Database using BizTalk Server](../../adapters-and-accelerators/adapter-oracle-database/run-overloaded-functions-and-procedures-in-oracle-database-using-biztalk-server.md).</span></span>  
+  
+-   <span data-ttu-id="68f3e-123">Appeler une procédure Oracle ou une fonction en utilisant le modèle de service WCF, consultez [appeler les fonctions et les procédures de base de données Oracle à l’aide du modèle de Service WCF](../../adapters-and-accelerators/adapter-oracle-database/invoke-functions-and-procedures-in-oracle-database-using-the-wcf-service-model.md).</span><span class="sxs-lookup"><span data-stu-id="68f3e-123">Invoking an Oracle procedure or function by using the WCF service model, see [Invoke Functions and Procedures in Oracle Database using the WCF Service model](../../adapters-and-accelerators/adapter-oracle-database/invoke-functions-and-procedures-in-oracle-database-using-the-wcf-service-model.md).</span></span>  
+  
+-   <span data-ttu-id="68f3e-124">Appeler une procédure Oracle ou une fonction en utilisant le modèle de canal WCF, consultez [appeler une fonction dans la base de données Oracle à l’aide du modèle de canal WCF](../../adapters-and-accelerators/adapter-oracle-database/invoke-a-function-in-oracle-database-using-the-wcf-channel-model.md).</span><span class="sxs-lookup"><span data-stu-id="68f3e-124">Invoking an Oracle procedure or function by using the WCF channel model, see [Invoke a Function in Oracle Database using the WCF Channel Model](../../adapters-and-accelerators/adapter-oracle-database/invoke-a-function-in-oracle-database-using-the-wcf-channel-model.md).</span></span>  
+  
+-   <span data-ttu-id="68f3e-125">Message de structure et les actions de SOAP utilisées pour appeler des fonctions et procédures d’Oracle, consultez [des schémas de Message pour les fonctions et procédures](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-functions-and-procedures.md).</span><span class="sxs-lookup"><span data-stu-id="68f3e-125">Message structure and SOAP actions used to invoke Oracle procedures and functions, see [Message Schemas for Functions and Procedures](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-functions-and-procedures.md).</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="68f3e-126">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="68f3e-126">See Also</span></span>  
+ <span data-ttu-id="68f3e-127">[Quelles opérations peuvent être effectuées à l’aide de la carte ?](https://msdn.microsoft.com/library/cc185219(v=bts.10).aspx)</span><span class="sxs-lookup"><span data-stu-id="68f3e-127">[What Operations Can be Performed Using the Adapter?](https://msdn.microsoft.com/library/cc185219(v=bts.10).aspx)</span></span>

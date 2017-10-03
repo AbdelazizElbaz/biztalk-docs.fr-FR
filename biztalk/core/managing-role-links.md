@@ -1,0 +1,49 @@
+---
+title: "Gestion des liens de rôle | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: b8860e11-3d2c-450f-a7d2-cc116478999c
+caps.latest.revision: "22"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 07f85bfe0d16b3963b0ba18585220f508f679346
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="manage-role-links"></a><span data-ttu-id="a00f3-102">Gérer les liens de rôle</span><span class="sxs-lookup"><span data-stu-id="a00f3-102">Manage Role Links</span></span>
+
+## <a name="overview"></a><span data-ttu-id="a00f3-103">Vue d'ensemble</span><span class="sxs-lookup"><span data-stu-id="a00f3-103">Overview</span></span>
+<span data-ttu-id="a00f3-104">Cette section fournit des instructions sur la gestion des liens de rôle dans une application BizTalk à l'aide de la console Administration de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span><span class="sxs-lookup"><span data-stu-id="a00f3-104">This section provides instructions on using the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console to manage role links in a BizTalk application.</span></span> <span data-ttu-id="a00f3-105">Un lien de rôle définit la relation entre les tiers impliqués dans une transaction commerciale et spécifie les types de messages et de ports utilisés dans l'interaction dans les deux sens.</span><span class="sxs-lookup"><span data-stu-id="a00f3-105">A role link defines the relationship between parties involved in a business transaction and specifies the message and port types used in the interaction in both directions.</span></span> <span data-ttu-id="a00f3-106">Pour plus d’informations sur les liens de rôle, consultez [à l’aide des liens de rôle dans les Orchestrations](../core/using-role-links-in-orchestrations.md).</span><span class="sxs-lookup"><span data-stu-id="a00f3-106">For background information on role links, see [Using Role Links in Orchestrations](../core/using-role-links-in-orchestrations.md).</span></span>  
+
+## <a name="added-to-application"></a><span data-ttu-id="a00f3-107">Ajouté à l’application</span><span class="sxs-lookup"><span data-stu-id="a00f3-107">Added to application</span></span>  
+ <span data-ttu-id="a00f3-108">Les liens de rôle sont créés dans [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] et compilés dans les assemblys BizTalk.</span><span class="sxs-lookup"><span data-stu-id="a00f3-108">Role links are built in [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] and compiled into BizTalk assemblies.</span></span> <span data-ttu-id="a00f3-109">Vous ne pouvez pas ajouter un lien de rôle de manière individuelle à une application. Son ajout s'effectue dans les cas suivants :</span><span class="sxs-lookup"><span data-stu-id="a00f3-109">You cannot add role links to an application individually; a role link is added to an application as follows:</span></span>  
+  
+-   <span data-ttu-id="a00f3-110">Lorsque vous ajoutez un assembly BizTalk contenant un lien de rôle à l’application, comme décrit dans [l’ajout d’un BizTalk Assembly à une Application](../core/how-to-add-a-biztalk-assembly-to-an-application.md).</span><span class="sxs-lookup"><span data-stu-id="a00f3-110">When you add a BizTalk assembly containing a role link to the application, as described in [How to Add a BizTalk Assembly to an Application](../core/how-to-add-a-biztalk-assembly-to-an-application.md).</span></span>  
+  
+-   <span data-ttu-id="a00f3-111">Lorsque vous importez un fichier .msi dans une application qui comprend un assembly BizTalk contenant un lien de rôle, comme décrit dans [comment importer une Application BizTalk](../core/how-to-import-a-biztalk-application.md).</span><span class="sxs-lookup"><span data-stu-id="a00f3-111">When you import an .msi file into an application that includes a BizTalk assembly containing a role link, as described in [How to Import a BizTalk Application](../core/how-to-import-a-biztalk-application.md).</span></span>  
+  
+-   <span data-ttu-id="a00f3-112">Lorsqu’un développeur déploie dans une application d’un assembly contenant un lien de rôle à partir de [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], comme décrit dans [déploiement des assemblys BizTalk à partir de Visual Studio dans une Application BizTalk](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md).</span><span class="sxs-lookup"><span data-stu-id="a00f3-112">When a developer deploys into an application an assembly containing a role link from [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], as described in [Deploying BizTalk Assemblies from Visual Studio into a BizTalk Application](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md).</span></span>  
+
+## <a name="deploy-to-production"></a><span data-ttu-id="a00f3-113">Déployer en production</span><span class="sxs-lookup"><span data-stu-id="a00f3-113">Deploy to production</span></span>  
+ <span data-ttu-id="a00f3-114">Le développeur BizTalk crée des liens de rôle pour implémenter des communications entre deux ou plusieurs tiers impliqués dans une transaction commerciale, tels que votre organisation et un fournisseur.</span><span class="sxs-lookup"><span data-stu-id="a00f3-114">The BizTalk application developer creates role links to implement communications between two or more parties involved in a business transaction, such as your organization and a supplier.</span></span> <span data-ttu-id="a00f3-115">Il ne spécifie pas nécessairement les tiers impliqués, seulement leurs rôles.</span><span class="sxs-lookup"><span data-stu-id="a00f3-115">The developer does not necessarily specify the parties that are involved in the transaction, only their roles.</span></span> <span data-ttu-id="a00f3-116">Pour déployer une application comportant un lien de rôle dans un environnement de production et permettre aux tiers de communiquer, vous devez effectuer la configuration suivante :</span><span class="sxs-lookup"><span data-stu-id="a00f3-116">To deploy an application that includes a role link to a production environment and enable actual communication between the parties, the following configuration must be performed, as described in this section:</span></span>  
+  
+-   <span data-ttu-id="a00f3-117">Si cela n'a pas été fait au cours du processus de développement, vous devez attribuer un tiers à chaque rôle défini dans le lien de rôle.</span><span class="sxs-lookup"><span data-stu-id="a00f3-117">If it wasn't done during the development process, a party must be assigned to each role defined in the role link.</span></span> <span data-ttu-id="a00f3-118">Cette opération s'appelle « inscrire » un tiers dans un rôle.</span><span class="sxs-lookup"><span data-stu-id="a00f3-118">This is called "enlisting" a party for a role.</span></span> <span data-ttu-id="a00f3-119">Si cette inscription devait ne plus être nécessaire par la suite, vous avez la possibilité de l'annuler.</span><span class="sxs-lookup"><span data-stu-id="a00f3-119">You can later unenlist the party if you no longer want the party to have the assigned role.</span></span>  
+  
+-   <span data-ttu-id="a00f3-120">Vous devez lier les ports logiques de chaque tiers défini dans le lien de rôle aux ports physiques sur les instances d'hôte BizTalk qui hébergeront l'application.</span><span class="sxs-lookup"><span data-stu-id="a00f3-120">The logical ports for each party defined within the role link must be bound to physical ports on the BizTalk host instances that will host the application.</span></span>  
+  
+ <span data-ttu-id="a00f3-121">Pour plus d’informations sur le développement des liens de rôle, consultez [à l’aide des liens de rôle dans les Orchestrations](../core/using-role-links-in-orchestrations.md).</span><span class="sxs-lookup"><span data-stu-id="a00f3-121">For more information about developing role links, see [Using Role Links in Orchestrations](../core/using-role-links-in-orchestrations.md).</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="a00f3-122">Vous pouvez utiliser le Modèle objet de Microsoft Windows Management Instrumentation (WMI) pour créer et exécuter des scripts automatisant certaines tâches administratives.</span><span class="sxs-lookup"><span data-stu-id="a00f3-122">You can use Microsoft Windows Management Instrumentation (WMI) Object Model to create and run scripts that automate administrative tasks.</span></span> <span data-ttu-id="a00f3-123">Pour plus d’informations sur l’utilisation de WMI, consultez le **référence de classe WMI** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].</span><span class="sxs-lookup"><span data-stu-id="a00f3-123">For information about using WMI, see the **WMI Class Reference** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].</span></span>  
+  
+## <a name="next-step"></a><span data-ttu-id="a00f3-124">Étape suivante</span><span class="sxs-lookup"><span data-stu-id="a00f3-124">Next step</span></span>
+  
+-   [<span data-ttu-id="a00f3-125">Comment inscrire ou désinscrire un tiers pour un rôle</span><span class="sxs-lookup"><span data-stu-id="a00f3-125">How to Enlist or Unenlist a Party for a Role</span></span>](../core/how-to-enlist-or-unenlist-a-party-for-a-role.md)

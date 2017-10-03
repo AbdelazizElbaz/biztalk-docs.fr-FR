@@ -1,0 +1,55 @@
+---
+title: "Problèmes connus de l’adaptateur MLLP | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- MLLP adapters, known issues
+- known issues, MLLP adapters
+ms.assetid: 66af8fcc-981a-4a77-80b7-84824bfae608
+caps.latest.revision: "9"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 5cbae1bf4bf04e2ecf4e643ad5107b9e0fd70f70
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="mllp-adapter-known-issues"></a><span data-ttu-id="0dd1f-102">Problèmes connus de l’adaptateur MLLP</span><span class="sxs-lookup"><span data-stu-id="0dd1f-102">MLLP Adapter Known Issues</span></span>
+<span data-ttu-id="0dd1f-103">Cette section contient des informations utiles qui peuvent vous aider à éviter les erreurs de protocole de couche inférieure minimale (MLLP) l’adaptateur.</span><span class="sxs-lookup"><span data-stu-id="0dd1f-103">This section contains useful information that may help you avoid Minimal Lower Layer Protocol (MLLP) adapter errors.</span></span>  
+  
+## <a name="two-way-mllp-adapter-might-not-detect-a-problem-with-an-ack"></a><span data-ttu-id="0dd1f-104">L’adaptateur MLLP bidirectionnelle peut ne pas détecte un problème avec un accusé de réception</span><span class="sxs-lookup"><span data-stu-id="0dd1f-104">Two-way MLLP adapter might not detect a problem with an ACK</span></span>  
+ <span data-ttu-id="0dd1f-105">Lorsque [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator pour HL7 ([!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]) reçoit un accusé de réception (ACK) sur une carte MLLP bidirectionnelle, l’adaptateur effectue une validation léger sur l’accusé de réception pour déterminer sa validité.</span><span class="sxs-lookup"><span data-stu-id="0dd1f-105">When [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator for HL7 ([!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]) receives an acknowledgment (ACK) on a two-way MLLP adapter, the adapter performs a lightweight validation on the ACK to determine its validity.</span></span> <span data-ttu-id="0dd1f-106">Si elle n’est pas valide, le champ MSA1 est extrait et en fonction de sa valeur, l’adaptateur effectue une nouvelle tentative, suspend ou supprime le message d’origine auquel l’accusé de réception a été répond.</span><span class="sxs-lookup"><span data-stu-id="0dd1f-106">If it is found to be valid, the MSA1 field is extracted, and depending on its value, the adapter retries, suspends, or deletes the original message to which the ACK was responding.</span></span> <span data-ttu-id="0dd1f-107">Toutefois, étant donné que la validation effectuée par l’adaptateur n’est pas une validation complète, il est possible que l’adaptateur ne détecte pas un problème avec les accusés de réception.</span><span class="sxs-lookup"><span data-stu-id="0dd1f-107">However, since the validation performed by the adapter is not a complete validation, it is possible that the adapter will not detect a problem with the ACK.</span></span> <span data-ttu-id="0dd1f-108">Par exemple, l’adaptateur peut déterminer que l’accusé de réception est valide et supprimer le message d’origine, tandis que le pipeline est déterminer que l’accusé de réception n’était pas correctement formé et suspendre le message d’accusé de réception.</span><span class="sxs-lookup"><span data-stu-id="0dd1f-108">For instance, the adapter could determine that the ACK is valid, and delete the original message, whereas the pipeline would determine that the ACK was not well-formed, and suspend the ACK message.</span></span>  
+  
+## <a name="mllp-performance-counters-do-not-count-acks"></a><span data-ttu-id="0dd1f-109">Les compteurs de performance MLLP ne comptent pas les accusés de réception</span><span class="sxs-lookup"><span data-stu-id="0dd1f-109">MLLP performance counters do not count ACKs</span></span>  
+ <span data-ttu-id="0dd1f-110">Une mesure de performances est le nombre de messages traités par un adaptateur MLLP, comme indiqué par les compteurs de performance MLLP.</span><span class="sxs-lookup"><span data-stu-id="0dd1f-110">One measure of performance is the number of messages processed by an MLLP adapter, as indicated by MLLP performance counters.</span></span> <span data-ttu-id="0dd1f-111">Ce compteur mesure le nombre de messages reçus ou transmis.</span><span class="sxs-lookup"><span data-stu-id="0dd1f-111">This count measures the number of messages received or transmitted.</span></span> <span data-ttu-id="0dd1f-112">Toutefois, le nombre ne mesure pas le nombre d’accusés de réception reçus ou envoyés.</span><span class="sxs-lookup"><span data-stu-id="0dd1f-112">However, the count does not measure the number of ACKs either received or sent.</span></span>  
+  
+## <a name="mllp-adapter-connection-names-are-not-guaranteed-to-be-unique"></a><span data-ttu-id="0dd1f-113">Noms de connexion de l’adaptateur MLLP ne sont pas garantis pour être unique</span><span class="sxs-lookup"><span data-stu-id="0dd1f-113">MLLP adapter connection names are not guaranteed to be unique</span></span>  
+ [!INCLUDE[HL7_CurrentVersion_abbrev](../../includes/hl7-currentversion-abbrev-md.md)]<span data-ttu-id="0dd1f-114">ne garantit pas l’unicité du nom de connexion entré dans les pages de propriétés d’un adaptateur MLLP.</span><span class="sxs-lookup"><span data-stu-id="0dd1f-114"> does not guarantee the uniqueness of the connection name entered in the property pages of an MLLP adapter.</span></span> <span data-ttu-id="0dd1f-115">Vérifiez que cette connexion descriptive et applique des noms sont entrés dans ce champ obligatoire.</span><span class="sxs-lookup"><span data-stu-id="0dd1f-115">Ensure that descriptive and relevant connection names are entered in this required field.</span></span> <span data-ttu-id="0dd1f-116">Les noms de connexion qui représentent les applications line-of-business peut s’avérer utile lors de la tentative de comprendre le comportement de la connexion.</span><span class="sxs-lookup"><span data-stu-id="0dd1f-116">Using connection names that represent line-of-business applications can be useful when trying to understand the behavior of the connection.</span></span> <span data-ttu-id="0dd1f-117">Par exemple, les compteurs PerfMon utilisent le nom de connexion.</span><span class="sxs-lookup"><span data-stu-id="0dd1f-117">For example, PerfMon counters use the connection name.</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="0dd1f-118">BTAHL7 garantit l’unicité des emplacements de réception ou de noms de ports d’envoi.</span><span class="sxs-lookup"><span data-stu-id="0dd1f-118">BTAHL7 does ensure the uniqueness of receive locations or send port names.</span></span>  
+  
+## <a name="two-way-mllp-adapters-do-not-send-commit-acks-for-all-messages-in-a-batch"></a><span data-ttu-id="0dd1f-119">Les adaptateurs MLLP bidirectionnelles n’envoient pas de valider les accusés de réception pour tous les messages dans un lot</span><span class="sxs-lookup"><span data-stu-id="0dd1f-119">Two-way MLLP adapters do not send Commit ACKs for all messages in a batch</span></span>  
+ <span data-ttu-id="0dd1f-120">Lorsque vous configurez chaque message dans un lot pour générer un accusé de réception de validation, le système envoie le lot à l’adaptateur de réception un MLLP bidirectionnelle, l’adaptateur envoie uniquement la valider l’accusé de réception correspondant au premier message dans le lot.</span><span class="sxs-lookup"><span data-stu-id="0dd1f-120">When you configure each message in a batch to generate a Commit ACK, and the system sends the batch to a two-way MLLP receive adapter, the adapter will only send the Commit ACK corresponding to the first message in the batch.</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="0dd1f-121">Il est recommandé d’utiliser un adaptateur MLLP unidirectionnel pour transporter des lots.</span><span class="sxs-lookup"><span data-stu-id="0dd1f-121">It is recommended that you use a one-way MLLP adapter to transport batches.</span></span>  
+  
+## <a name="nak-generated-by-two-way-mllp-adapter"></a><span data-ttu-id="0dd1f-122">NAK généré par l’adaptateur MLLP bidirectionnelle</span><span class="sxs-lookup"><span data-stu-id="0dd1f-122">NAK generated by two-way MLLP adapter</span></span>  
+ <span data-ttu-id="0dd1f-123">Lorsqu’un adaptateur MLLP bidirectionnels suspend tous les messages, l’adaptateur MLLP génère un NAK (accusé de réception négatif) et le place dans la base de données MessageBox.</span><span class="sxs-lookup"><span data-stu-id="0dd1f-123">When a two-way MLLP adapter suspends any message, the MLLP adapter generates a NAK (negative acknowledgment) and places it in the MessageBox database.</span></span> <span data-ttu-id="0dd1f-124">Cela peut être un comportement inattendu.</span><span class="sxs-lookup"><span data-stu-id="0dd1f-124">This may be unexpected behavior.</span></span> <span data-ttu-id="0dd1f-125">Il pouvez vous souhaitez supprimer le NAK à partir de la base de données MessageBox ou mapper vers un autre message.</span><span class="sxs-lookup"><span data-stu-id="0dd1f-125">You may want to remove the NAK from the MessageBox database or map it into another message.</span></span>  
+  
+## <a name="two-way-mllp-adapter-only-supports-the-2x-message-format"></a><span data-ttu-id="0dd1f-126">L’adaptateur MLLP bidirectionnelle prend uniquement en charge le format du message 2.X</span><span class="sxs-lookup"><span data-stu-id="0dd1f-126">Two-way MLLP adapter only supports the 2.X message format</span></span>  
+ <span data-ttu-id="0dd1f-127">L’adaptateur MLLP bidirectionnelle prend actuellement en charge uniquement le format du message 2.X.</span><span class="sxs-lookup"><span data-stu-id="0dd1f-127">The two-way MLLP adapter currently supports only the 2.X message format.</span></span>  
+  
+## <a name="two-way-mllp-adapter-does-not-support-static-acknowledgments"></a><span data-ttu-id="0dd1f-128">Adaptateur MLLP bidirectionnelle ne prend pas en charge les accusés de réception statiques</span><span class="sxs-lookup"><span data-stu-id="0dd1f-128">Two-way MLLP adapter does not support static acknowledgments</span></span>  
+ <span data-ttu-id="0dd1f-129">Envoi bidirectionnel adaptateur ne prend pas en charge le traitement des accusés de réception statiques.</span><span class="sxs-lookup"><span data-stu-id="0dd1f-129">The two-way send adapter does not support processing static acknowledgments.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="0dd1f-130">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="0dd1f-130">See Also</span></span>  
+ [<span data-ttu-id="0dd1f-131">Problèmes connus</span><span class="sxs-lookup"><span data-stu-id="0dd1f-131">Known Issues</span></span>](../../adapters-and-accelerators/accelerator-hl7/known-issues1.md)
