@@ -1,0 +1,33 @@
+---
+title: "EncryptionCert (nœud ReceiveLocation) | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: EncryptionCert node [binding file]
+ms.assetid: 04dc4021-8cd9-45e7-8339-8f22e29f4be6
+caps.latest.revision: "7"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: ec4d0ff769c7a8ca297800f427c4ebbae48a8640
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="encryptioncert-receivelocation-node"></a><span data-ttu-id="ed467-102">EncryptionCert (nœud ReceiveLocation)</span><span class="sxs-lookup"><span data-stu-id="ed467-102">EncryptionCert (ReceiveLocation Node)</span></span>
+<span data-ttu-id="ed467-103">Le nœud EncryptionCert du nœud ReceiveLocation d'un fichier de liaison contient des informations sur le certificat de chiffrement utilisé avec un port de réception exporté avec le fichier de liaison.</span><span class="sxs-lookup"><span data-stu-id="ed467-103">The EncryptionCert node of the ReceiveLocation node of a binding file contains information about the encryption certificate used with a receive location that is exported with the binding file.</span></span>  
+  
+## <a name="nodes-in-the-encryptioncert-node"></a><span data-ttu-id="ed467-104">Nœuds du nœud EncryptionCert</span><span class="sxs-lookup"><span data-stu-id="ed467-104">Nodes in the EncryptionCert node</span></span>  
+ <span data-ttu-id="ed467-105">Le tableau suivant répertorie les propriétés que vous pouvez définir pour ce nœud d'un fichier de liaison :</span><span class="sxs-lookup"><span data-stu-id="ed467-105">The following table lists the properties that can be set for this node of a binding file:</span></span>  
+  
+|<span data-ttu-id="ed467-106">**Nom**</span><span class="sxs-lookup"><span data-stu-id="ed467-106">**Name**</span></span>|<span data-ttu-id="ed467-107">**Type de nœud**</span><span class="sxs-lookup"><span data-stu-id="ed467-107">**Node Type**</span></span>|<span data-ttu-id="ed467-108">**Type de données**</span><span class="sxs-lookup"><span data-stu-id="ed467-108">**Data Type**</span></span>|<span data-ttu-id="ed467-109">**Description**</span><span class="sxs-lookup"><span data-stu-id="ed467-109">**Description**</span></span>|<span data-ttu-id="ed467-110">**Restrictions**</span><span class="sxs-lookup"><span data-stu-id="ed467-110">**Restrictions**</span></span>|<span data-ttu-id="ed467-111">**Commentaires**</span><span class="sxs-lookup"><span data-stu-id="ed467-111">**Comments**</span></span>|  
+|--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
+|<span data-ttu-id="ed467-112">LongName</span><span class="sxs-lookup"><span data-stu-id="ed467-112">LongName</span></span>|<span data-ttu-id="ed467-113">Attribut</span><span class="sxs-lookup"><span data-stu-id="ed467-113">Attribute</span></span>|<span data-ttu-id="ed467-114">xs:string</span><span class="sxs-lookup"><span data-stu-id="ed467-114">xs:string</span></span>|<span data-ttu-id="ed467-115">Spécifie le nom long du certificat.</span><span class="sxs-lookup"><span data-stu-id="ed467-115">Specifies the long name of the certificate.</span></span>|<span data-ttu-id="ed467-116">Facultatif</span><span class="sxs-lookup"><span data-stu-id="ed467-116">Not required</span></span>|<span data-ttu-id="ed467-117">Valeur par défaut : vide</span><span class="sxs-lookup"><span data-stu-id="ed467-117">Default value: empty</span></span>|  
+|<span data-ttu-id="ed467-118">NomCourt</span><span class="sxs-lookup"><span data-stu-id="ed467-118">ShortName</span></span>|<span data-ttu-id="ed467-119">Attribut</span><span class="sxs-lookup"><span data-stu-id="ed467-119">Attribute</span></span>|<span data-ttu-id="ed467-120">xs:string</span><span class="sxs-lookup"><span data-stu-id="ed467-120">xs:string</span></span>|<span data-ttu-id="ed467-121">Spécifie le nom court du certificat.</span><span class="sxs-lookup"><span data-stu-id="ed467-121">Specifies the short name of the certificate.</span></span>|<span data-ttu-id="ed467-122">Facultatif</span><span class="sxs-lookup"><span data-stu-id="ed467-122">Not required</span></span>|<span data-ttu-id="ed467-123">Valeur par défaut : vide</span><span class="sxs-lookup"><span data-stu-id="ed467-123">Default value: empty</span></span>|  
+|<span data-ttu-id="ed467-124">UsageType</span><span class="sxs-lookup"><span data-stu-id="ed467-124">UsageType</span></span>|<span data-ttu-id="ed467-125">Attribut</span><span class="sxs-lookup"><span data-stu-id="ed467-125">Attribute</span></span>|<span data-ttu-id="ed467-126">CertUsageType (SimpleType)</span><span class="sxs-lookup"><span data-stu-id="ed467-126">CertUsageType (SimpleType)</span></span>|<span data-ttu-id="ed467-127">Indique l'utilisation prévue du certificat.</span><span class="sxs-lookup"><span data-stu-id="ed467-127">Specifies the intended usage of this certificate</span></span>|<span data-ttu-id="ed467-128">Requis</span><span class="sxs-lookup"><span data-stu-id="ed467-128">Required</span></span>|<span data-ttu-id="ed467-129">Valeur par défaut : Aucun</span><span class="sxs-lookup"><span data-stu-id="ed467-129">Default value: none</span></span><br /><br /> <span data-ttu-id="ed467-130">Les valeurs possibles sont celles qui sont disponibles dans le [Microsoft.BizTalk.ExplorerOM.CertUsageType](http://msdn.microsoft.com/library/microsoft.biztalk.explorerom.certusagetype.aspx) énumération.</span><span class="sxs-lookup"><span data-stu-id="ed467-130">Possible values include those available in the [Microsoft.BizTalk.ExplorerOM.CertUsageType](http://msdn.microsoft.com/library/microsoft.biztalk.explorerom.certusagetype.aspx) enumeration.</span></span>|  
+|<span data-ttu-id="ed467-131">ThumbPrint</span><span class="sxs-lookup"><span data-stu-id="ed467-131">ThumbPrint</span></span>|<span data-ttu-id="ed467-132">Attribut</span><span class="sxs-lookup"><span data-stu-id="ed467-132">Attribute</span></span>|<span data-ttu-id="ed467-133">xs:string</span><span class="sxs-lookup"><span data-stu-id="ed467-133">xs:string</span></span>|<span data-ttu-id="ed467-134">Indique l'empreinte, ou l'ID unique, du certificat.</span><span class="sxs-lookup"><span data-stu-id="ed467-134">Specifies the thumbprint, or unique ID, of the certificate.</span></span>|<span data-ttu-id="ed467-135">Facultatif</span><span class="sxs-lookup"><span data-stu-id="ed467-135">Not required</span></span>|<span data-ttu-id="ed467-136">Valeur par défaut : vide</span><span class="sxs-lookup"><span data-stu-id="ed467-136">Default value: empty</span></span>|

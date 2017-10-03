@@ -1,0 +1,51 @@
+---
+title: "Comment configurer la planification pour un emplacement de réception | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- configuring, receive locations
+- managing [receive locations], scheduling
+- scheduling, receive locations
+- managing [receive locations], configuring
+ms.assetid: 2653e1c3-ddbd-4d3f-be64-2a5fcd7cf267
+caps.latest.revision: "13"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: ea43814d6b7c23875bc222f6d6bd4aee5468b60f
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="how-to-configure-scheduling-for-a-receive-location"></a><span data-ttu-id="4eb0e-102">Configuration de la planification pour un emplacement de réception</span><span class="sxs-lookup"><span data-stu-id="4eb0e-102">How to Configure Scheduling for a Receive Location</span></span>
+<span data-ttu-id="4eb0e-103">La présente rubrique explique comment configurer les propriétés de planification pour un emplacement de réception à l'aide de la console Administration de BizTalk Server.</span><span class="sxs-lookup"><span data-stu-id="4eb0e-103">This topic describes how to use the BizTalk Server Administration console to configure scheduling properties for a receive location.</span></span> <span data-ttu-id="4eb0e-104">Vous pouvez configurer les dates auxquelles vous voulez que l'emplacement de réception démarre et arrête le traitement des messages.</span><span class="sxs-lookup"><span data-stu-id="4eb0e-104">You can specify the dates when you want the receive location to start and stop processing messages.</span></span> <span data-ttu-id="4eb0e-105">Vous pouvez également définir certains moments de la journée auxquels vous voulez que l'emplacement de réception traite les messages.</span><span class="sxs-lookup"><span data-stu-id="4eb0e-105">You can also specify certain times of the day during which you want the receive location to process messages.</span></span>  
+  
+## <a name="prerequisites"></a><span data-ttu-id="4eb0e-106">Conditions préalables</span><span class="sxs-lookup"><span data-stu-id="4eb0e-106">Prerequisites</span></span>  
+ <span data-ttu-id="4eb0e-107">Pour exécuter la procédure décrite dans cette rubrique, vous devez être connecté avec un compte membre du groupe d'administrateurs BizTalk Server.</span><span class="sxs-lookup"><span data-stu-id="4eb0e-107">To perform the procedure in this topic, you must be logged on with an account that is a member of the BizTalk Server Administrators group.</span></span> <span data-ttu-id="4eb0e-108">Pour plus d’informations sur les autorisations, consultez [autorisations requises pour déployer et gérer une Application BizTalk](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md).</span><span class="sxs-lookup"><span data-stu-id="4eb0e-108">For more detailed information on permissions, see [Permissions Required for Deploying and Managing a BizTalk Application](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md).</span></span>  
+  
+### <a name="to-configure-scheduling-for-a-receive-location"></a><span data-ttu-id="4eb0e-109">Pour configurer la planification pour un emplacement de réception</span><span class="sxs-lookup"><span data-stu-id="4eb0e-109">To configure scheduling for a receive location</span></span>  
+  
+1.  <span data-ttu-id="4eb0e-110">Cliquez sur **Démarrer**, cliquez sur **tous les programmes**, cliquez sur [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], puis cliquez sur **Administration de BizTalk Server**.</span><span class="sxs-lookup"><span data-stu-id="4eb0e-110">Click **Start**, click **All Programs**, click [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and then click **BizTalk Server Administration**.</span></span>  
+  
+2.  <span data-ttu-id="4eb0e-111">Dans l'arborescence de la console, développez successivement le groupe BizTalk, puis l'application BizTalk dont dépend l'emplacement de réception pour lequel vous voulez configurer la planification.</span><span class="sxs-lookup"><span data-stu-id="4eb0e-111">In the console tree, expand the BizTalk group and the BizTalk application for which you want to configure scheduling for a receive location.</span></span>  
+  
+3.  <span data-ttu-id="4eb0e-112">Cliquez sur **emplacements de réception**, avec le bouton droit à l’emplacement de réception, puis cliquez sur **propriétés**.</span><span class="sxs-lookup"><span data-stu-id="4eb0e-112">Click **Receive Locations**, right-click the receive location, and click **Properties**.</span></span>  
+  
+4.  <span data-ttu-id="4eb0e-113">Dans le volet gauche, cliquez sur **planification**, configurez les propriétés de planification comme décrit dans le tableau suivant, puis cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="4eb0e-113">In the left pane, click **Schedule**, configure scheduling properties as described in the following table, and then click **OK**.</span></span>  
+  
+    |<span data-ttu-id="4eb0e-114">Utiliser</span><span class="sxs-lookup"><span data-stu-id="4eb0e-114">Use this</span></span>|<span data-ttu-id="4eb0e-115">Pour effectuer cette opération</span><span class="sxs-lookup"><span data-stu-id="4eb0e-115">To do this</span></span>|  
+    |--------------|----------------|  
+    |<span data-ttu-id="4eb0e-116">**Date de début**</span><span class="sxs-lookup"><span data-stu-id="4eb0e-116">**Start date**</span></span>|<span data-ttu-id="4eb0e-117">Activez cette case à cocher et sélectionnez la date de début du traitement des messages par l'emplacement de réception en cliquant sur la date voulue dans le calendrier.</span><span class="sxs-lookup"><span data-stu-id="4eb0e-117">Select this check box, and then from the pull-down calendar, select the date on which the receive location starts processing messages.</span></span> <span data-ttu-id="4eb0e-118">Pour changer l'année, cliquez sur l'année affichée.</span><span class="sxs-lookup"><span data-stu-id="4eb0e-118">To change the year, click the displayed year.</span></span>|  
+    |<span data-ttu-id="4eb0e-119">**Date de fin**</span><span class="sxs-lookup"><span data-stu-id="4eb0e-119">**Stop date**</span></span>|<span data-ttu-id="4eb0e-120">Activez cette case à cocher et sélectionnez la date de fin du traitement des messages par l'emplacement de réception en cliquant sur la date voulue dans le calendrier.</span><span class="sxs-lookup"><span data-stu-id="4eb0e-120">Select this check box, and then from the pull-down calendar, select the date on which the receive location stops processing messages.</span></span> <span data-ttu-id="4eb0e-121">Cette propriété est facultative.</span><span class="sxs-lookup"><span data-stu-id="4eb0e-121">This property is optional.</span></span> <span data-ttu-id="4eb0e-122">Si vous n'indiquez pas de date de fin, l'emplacement de réception demeure actif jusqu'à ce que vous le désactiviez.</span><span class="sxs-lookup"><span data-stu-id="4eb0e-122">If you do not specify a stop date, the receive location remains active until it is disabled.</span></span>|  
+    |<span data-ttu-id="4eb0e-123">**Activer la fenêtre de service**</span><span class="sxs-lookup"><span data-stu-id="4eb0e-123">**Enable service window**</span></span>|<span data-ttu-id="4eb0e-124">Cette case à cocher pour configurer l’emplacement de réception pour recevoir les messages uniquement à certaines heures de la journée, puis spécifiez les heures dans le **heure de début et l’heure d’arrêt** cases.</span><span class="sxs-lookup"><span data-stu-id="4eb0e-124">Select this check box to configure the receive location to receive messages only at specified times of the day, then specify the times in the **Start time and Stop time** boxes.</span></span> <span data-ttu-id="4eb0e-125">Si cette case à cocher est désactivée, l'emplacement de réception reçoit des messages quelle que soit l'heure.</span><span class="sxs-lookup"><span data-stu-id="4eb0e-125">If the check box is cleared, the receive location receives messages at any time.</span></span> <span data-ttu-id="4eb0e-126">La valeur par défaut est False (désactivé).</span><span class="sxs-lookup"><span data-stu-id="4eb0e-126">The default value is false (cleared).</span></span>|  
+    |<span data-ttu-id="4eb0e-127">**Heure de début**</span><span class="sxs-lookup"><span data-stu-id="4eb0e-127">**Start time**</span></span>|<span data-ttu-id="4eb0e-128">Indiquer l'heure à laquelle l'emplacement de réception doit commencer à recevoir des messages.</span><span class="sxs-lookup"><span data-stu-id="4eb0e-128">Specify the time when the receive location should begin to receive messages.</span></span> <span data-ttu-id="4eb0e-129">Cette case est disponible uniquement lorsque le **activer la fenêtre de service** case à cocher est activée.</span><span class="sxs-lookup"><span data-stu-id="4eb0e-129">This box is available only when the **Enable service window** check box is selected.</span></span>|  
+    |<span data-ttu-id="4eb0e-130">**Heure de fin**</span><span class="sxs-lookup"><span data-stu-id="4eb0e-130">**Stop time**</span></span>|<span data-ttu-id="4eb0e-131">Indiquer l'heure à laquelle l'emplacement de réception doit cesser de recevoir des messages.</span><span class="sxs-lookup"><span data-stu-id="4eb0e-131">Specify the time when the receive location should cease to receive messages.</span></span> <span data-ttu-id="4eb0e-132">Cette case est disponible uniquement lorsque le **activer la fenêtre de service** case à cocher est activée.</span><span class="sxs-lookup"><span data-stu-id="4eb0e-132">This box is available only when the **Enable service window** check box is selected.</span></span>|  
+  
+## <a name="see-also"></a><span data-ttu-id="4eb0e-133">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="4eb0e-133">See Also</span></span>  
+ [<span data-ttu-id="4eb0e-134">La gestion des emplacements de réception</span><span class="sxs-lookup"><span data-stu-id="4eb0e-134">Managing Receive Locations</span></span>](../core/managing-receive-locations.md)

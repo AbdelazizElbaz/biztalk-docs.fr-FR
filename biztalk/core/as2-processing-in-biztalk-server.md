@@ -1,0 +1,132 @@
+---
+title: AS2 Traitement dans BizTalk Server | Documents Microsoft
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 0027d3db-24a5-459d-9f4e-a75f49d31d82
+caps.latest.revision: "15"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 11a5bb12d9a7b21a18b92162370d7be14feda8dc
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="as2-processing-in-biztalk-server"></a><span data-ttu-id="5d9fa-102">Traitement AS2 dans BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="5d9fa-102">AS2 Processing in BizTalk Server</span></span>
+<span data-ttu-id="5d9fa-103">Cette rubrique offre un aperçu du traitement des messages AS2 côté réception et côté envoi et décrit l'application de la messagerie AS2 grâce aux accords de partenariat commercial.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-103">This topic provides an overview of receive-side and send-side processing of AS2 messages, and how trading partner agreements can help achieve AS2 messaging.</span></span>  
+  
+## <a name="trading-partner-agreements-for-as2-processing"></a><span data-ttu-id="5d9fa-104">Accords de partenariat commercial pour le traitement AS2</span><span class="sxs-lookup"><span data-stu-id="5d9fa-104">Trading Partner Agreements for AS2 Processing</span></span>  
+ <span data-ttu-id="5d9fa-105">Ce type d'accord joue un rôle important dans la prise en charge AS2 dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span><span class="sxs-lookup"><span data-stu-id="5d9fa-105">Trading partner agreements play a key role in AS2 support in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="5d9fa-106">La plupart des fonctions de configuration et d'administration liées au traitement AS2 dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] sont exécutées via la configuration des accords de partenariat commercial entre des profils commerciaux.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-106">Most configuration and administrative functions related to AS2 processing in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] are performed by configuring the trading partner agreements between business profiles.</span></span> <span data-ttu-id="5d9fa-107">Les accords combinent les propriétés de traitement des messages bidirectionnelles à partir des profils commerciaux spécifiques des deux partenaires.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-107">Agreements bring together common bi-directional message processing properties from specific business profiles of both partners.</span></span> <span data-ttu-id="5d9fa-108">Les accords reposent sur les paramètres de protocole définis pour chaque profil commercial.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-108">Agreements are built upon the protocol settings defined for each business profile.</span></span> <span data-ttu-id="5d9fa-109">Un accord de partenariat commercial entre deux profils commerciaux est appliqué via la définition des propriétés des profils commerciaux impliqués dans l'échange de messages.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-109">You implement a trading partner agreement between two business profiles by defining properties for each business profile that will be exchanging messages.</span></span> <span data-ttu-id="5d9fa-110">Les propriétés des profils commerciaux sont définies sous la forme d'un récepteur des messages AS2 et d'un expéditeur des messages AS2 dans l'interface utilisateur de gestion des partenaires commerciaux.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-110">You set properties for each business profile as an AS2 message receiver and an AS2 message sender in the Trading Partner Management (TPM) user interface.</span></span> <span data-ttu-id="5d9fa-111">Les écrans du module de plateforme sécurisée se trouvent dans le **Parties** nœud de la [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Console d’Administration.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-111">The TPM screens are in the **Parties** node of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console.</span></span> <span data-ttu-id="5d9fa-112">Il n'est pas nécessaire d'être un développeur pour configurer le traitement AS2 dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span><span class="sxs-lookup"><span data-stu-id="5d9fa-112">You do not have to be a developer to configure AS2 processing in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
+  
+ <span data-ttu-id="5d9fa-113">Vous pouvez définir les propriétés AS2 via les paramètres du protocole de transfert d'un profil commercial ou en spécifiant directement les paramètres AS2 dans l'accord de partenariat commercial.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-113">You can specify the AS2 properties as part of the “transport protocol settings” for a business profile or by directly specifying the AS2 settings in the trading partner agreement.</span></span> <span data-ttu-id="5d9fa-114">Pour plus d’informations sur les paramètres de protocole, consultez [paramètres de protocole](../core/protocol-settings.md).</span><span class="sxs-lookup"><span data-stu-id="5d9fa-114">For more information about the protocol settings, see [Protocol Settings](../core/protocol-settings.md).</span></span> <span data-ttu-id="5d9fa-115">Pour plus d’informations sur les contrats, consultez [accord de partenariat commercial](../core/trading-partner-agreement.md).</span><span class="sxs-lookup"><span data-stu-id="5d9fa-115">For more information about agreements, see [Trading Partner Agreement](../core/trading-partner-agreement.md).</span></span>  <span data-ttu-id="5d9fa-116">Les fonctionnalités AS2 suivantes sont configurées via la définition des propriétés AS2 spécifiques :</span><span class="sxs-lookup"><span data-stu-id="5d9fa-116">You configure the following AS2 functionality by setting the AS2-specific properties:</span></span>  
+  
+-   <span data-ttu-id="5d9fa-117">Sélectionnez des options de stockage de non-répudiation</span><span class="sxs-lookup"><span data-stu-id="5d9fa-117">Select non-repudiation storage options</span></span>  
+  
+-   <span data-ttu-id="5d9fa-118">Spécifiez des propriétés de signature, compression ou chiffrement pour les messages sortants</span><span class="sxs-lookup"><span data-stu-id="5d9fa-118">Specify signing, compression, or encryption properties for outgoing messages</span></span>  
+  
+-   <span data-ttu-id="5d9fa-119">Exigez les MDN pour les messages sortants</span><span class="sxs-lookup"><span data-stu-id="5d9fa-119">Request MDNs for outgoing messages</span></span>  
+  
+-   <span data-ttu-id="5d9fa-120">Définissez les propriétés pour les MDN entrants en remplaçant les propriétés de signature, compression, chiffrement et MDN dans l'en-tête du message AS2.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-120">Set properties for incoming MDNs by overriding the signing, compression, encryption, and MDN properties in the header of the AS2 message.</span></span>  
+  
+ <span data-ttu-id="5d9fa-121">Pour plus d’informations sur les accords de partenariat commercial comment dans le traitement AS2, consultez [rôle des accords dans le traitement AS2](../core/the-role-of-agreements-in-as2-processing.md).</span><span class="sxs-lookup"><span data-stu-id="5d9fa-121">For more information about how trading partner agreements help in AS2 processing, see [The Role of Agreements in AS2 Processing](../core/the-role-of-agreements-in-as2-processing.md).</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="5d9fa-122">Contrairement au traitement EDI, il n'y a pas de propriétés globales pour le traitement AS2.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-122">There are no global properties for AS2 processing, as there are for EDI processing.</span></span>  
+  
+## <a name="as2-receive-side-processing"></a><span data-ttu-id="5d9fa-123">Traitement AS2 côté réception</span><span class="sxs-lookup"><span data-stu-id="5d9fa-123">AS2 Receive-Side Processing</span></span>  
+ <span data-ttu-id="5d9fa-124">Les messages AS2 reçus par [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] sont traités via un pipeline de réception AS2.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-124">When [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] receives an AS2 message, it processes the message in an AS2 receive pipeline.</span></span> <span data-ttu-id="5d9fa-125">Il existe un pipeline pour recevoir un message EDI sur AS2 (AS2EdiReceive), qui se charge du traitement AS2 et EDI.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-125">There is a pipeline for receiving an EDI message over AS2 (AS2EdiReceive), which performs both AS2 and EDI processing.</span></span> <span data-ttu-id="5d9fa-126">Un autre pipeline (AS2Receive) ne se charge que du traitement AS2 pour les messages non-EDI reçus sur AS2.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-126">Another pipeline (AS2Receive) performs only AS2 processing for non-EDI messages received over AS2.</span></span>  
+  
+ <span data-ttu-id="5d9fa-127">Le traitement AS2 côté réception inclut les éléments suivants :</span><span class="sxs-lookup"><span data-stu-id="5d9fa-127">AS2 receive-side processing includes the following:</span></span>  
+  
+-   <span data-ttu-id="5d9fa-128">recherche de l'accord de partenariat commercial ;</span><span class="sxs-lookup"><span data-stu-id="5d9fa-128">Trading partner agreement lookup</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="5d9fa-129">Dans les versions précédentes de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], les définitions de tiers incluaient également la définition d'accord.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-129">In the previous versions of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], a party definition also included the agreement definition.</span></span> <span data-ttu-id="5d9fa-130">Dans le cadre de la recherche des propriétés d'un tiers, le pipeline de réception effectuait une recherche interne de la définition d'accord au sein de la définition de tiers, puis traitait les messages en conséquence.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-130">So, when the receive pipeline looked up the party properties, it would internally look for the agreement definition within the party definition and then process the messages accordingly.</span></span> <span data-ttu-id="5d9fa-131">Dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], le tiers (ou partenaire commercial) étant distinct de l'accord de partenariat commercial, le pipeline de réception recherche spécifiquement l'accord de partenariat commercial.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-131">With [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], because the party (or trading partner) is distinct from the trading partner agreement, the receive pipeline looks for the trading partner agreement specifically.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="5d9fa-132">Si tous les accords en fonction desquels un message effectue la résolution sont désactivés, le message sera suspendu.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-132">If all the agreements that a message resolves to are disabled, the message will be suspended.</span></span>  <span data-ttu-id="5d9fa-133">Un événement est également consigné dans le journal des événements.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-133">A warning is also logged in the Event log.</span></span>  
+  
+-   <span data-ttu-id="5d9fa-134">Enregistrement de copie du message dans la base de données de non-répudiation</span><span class="sxs-lookup"><span data-stu-id="5d9fa-134">Saving copies of the message in the non-repudiation database</span></span>  
+  
+-   <span data-ttu-id="5d9fa-135">Vérifier les messages en double</span><span class="sxs-lookup"><span data-stu-id="5d9fa-135">Check for duplicate messages</span></span>  
+  
+-   <span data-ttu-id="5d9fa-136">traitement des messages contenant plusieurs documents ;</span><span class="sxs-lookup"><span data-stu-id="5d9fa-136">Processing messages containing multiple documents</span></span>  
+  
+-   <span data-ttu-id="5d9fa-137">récupération du nom de fichier des documents à partir de l'enveloppe MIME ;</span><span class="sxs-lookup"><span data-stu-id="5d9fa-137">Retrieving a documents file name from the MIME envelope</span></span>  
+  
+-   <span data-ttu-id="5d9fa-138">Déchiffrement du message</span><span class="sxs-lookup"><span data-stu-id="5d9fa-138">Decrypting the message</span></span>  
+  
+-   <span data-ttu-id="5d9fa-139">Décompression du message</span><span class="sxs-lookup"><span data-stu-id="5d9fa-139">Decompressing the message</span></span>  
+  
+-   <span data-ttu-id="5d9fa-140">Vérification de la signature numérique du message</span><span class="sxs-lookup"><span data-stu-id="5d9fa-140">Verifying the digital signature of the message</span></span>  
+  
+-   <span data-ttu-id="5d9fa-141">Génération d'une réponse HTTP</span><span class="sxs-lookup"><span data-stu-id="5d9fa-141">Generating an HTTP response</span></span>  
+  
+-   <span data-ttu-id="5d9fa-142">Génération d'une réponse MDN</span><span class="sxs-lookup"><span data-stu-id="5d9fa-142">Generating an MDN response</span></span>  
+  
+ <span data-ttu-id="5d9fa-143">Vous devez tenir compte des considérations suivantes dans le cadre de l'utilisation du traitement AS2 côté réception :</span><span class="sxs-lookup"><span data-stu-id="5d9fa-143">Following are some considerations that you must make while using AS2 receive-side processing:</span></span>  
+  
+-   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="5d9fa-144"> renvoie une MDN en mode synchrone ou asynchrone.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-144"> returns an MDN in either synchronous or asynchronous mode.</span></span> <span data-ttu-id="5d9fa-145">Si le MDN est renvoyé en mode asynchrone, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] doit utiliser un port d'envoi distinct.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-145">If the MDN will be returned asynchronously, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] must send it over a separate send port.</span></span>  
+  
+-   <span data-ttu-id="5d9fa-146">Lorsque vous recevez un fichier non-EDI (non XML) sur AS2 et que vous devez effectuer le désassemblage de la charge non-EDI, vous devez utiliser un mécanisme de bouclage avec un second pipeline de réception.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-146">When you receive a non-EDI file (not XML) over AS2, and you need to perform disassembly of the non-EDI payload, you will need to use requires a loopback mechanism with a second receive pipeline.</span></span> <span data-ttu-id="5d9fa-147">Pour plus d’informations, consultez [de traitement côté réception d’un Message Non-EDI entrant via AS2](../core/receive-side-processing-of-an-incoming-non-edi-message-over-as2.md).</span><span class="sxs-lookup"><span data-stu-id="5d9fa-147">For more information, see [Receive-Side Processing of an Incoming Non-EDI Message over AS2](../core/receive-side-processing-of-an-incoming-non-edi-message-over-as2.md).</span></span>  
+  
+-   <span data-ttu-id="5d9fa-148">L'emplacement de réception ne peut utiliser que l'adaptateur HTTP.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-148">The receive location can only use the HTTP adapter.</span></span>  
+  
+-   <span data-ttu-id="5d9fa-149">Pour plus d’informations sur le traitement AS2 côté réception, consultez [comment BizTalk Server reçoit les Messages AS2](../core/how-biztalk-server-receives-as2-messages.md).</span><span class="sxs-lookup"><span data-stu-id="5d9fa-149">For more information about AS2 receive-side processing, see [How BizTalk Server Receives AS2 Messages](../core/how-biztalk-server-receives-as2-messages.md).</span></span>  
+  
+-   <span data-ttu-id="5d9fa-150">Pour plus d’informations sur le traitement spécifique effectué par le désassembleur AS2 dans le pipeline de réception, consultez [du traitement d’un Message AS2 entrant](../core/processing-an-incoming-as2-message.md).</span><span class="sxs-lookup"><span data-stu-id="5d9fa-150">For more information about the specific processing performed by the AS2 Disassembler in the receive pipeline, see [Processing an Incoming AS2 Message](../core/processing-an-incoming-as2-message.md).</span></span>  
+  
+## <a name="as2-send-side-processing"></a><span data-ttu-id="5d9fa-151">Traitement AS2 côté envoi</span><span class="sxs-lookup"><span data-stu-id="5d9fa-151">AS2 Send-Side Processing</span></span>  
+ <span data-ttu-id="5d9fa-152">Les messages AS2 sortants générés et envoyés par [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] sont traités via un pipeline d'envoi AS2.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-152">When [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] generates and sends an outgoing AS2 message, it processes the message in an AS2 send pipeline.</span></span> <span data-ttu-id="5d9fa-153">Il existe un pipeline pour envoyer un message EDI sur AS2 (AS2EdiSend), qui se charge du traitement AS2 et EDI.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-153">There is a pipeline for sending an EDI message over AS2 (AS2EdiSend), which performs both AS2 and EDI processing.</span></span> <span data-ttu-id="5d9fa-154">Un autre pipeline (AS2Send) ne se charge que du traitement AS2 pour les messages non-EDI envoyés sur AS2.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-154">Another pipeline (AS2Send) performs only AS2 processing for non-EDI messages sent over AS2.</span></span>  
+  
+ <span data-ttu-id="5d9fa-155">Le traitement AS2 côté envoi inclut les éléments suivants :</span><span class="sxs-lookup"><span data-stu-id="5d9fa-155">AS2 send-side processing includes the following:</span></span>  
+  
+-   <span data-ttu-id="5d9fa-156">recherche de l'accord de partenariat commercial ;</span><span class="sxs-lookup"><span data-stu-id="5d9fa-156">Trading partner agreement lookup</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="5d9fa-157">Dans les versions précédentes de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], les définitions de tiers incluaient également la définition d'accord.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-157">In the previous versions of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], a party definition also included the agreement definition.</span></span> <span data-ttu-id="5d9fa-158">Dans le cadre de la recherche des propriétés d'un tiers, le pipeline d'envoi effectuait une recherche interne de la définition d'accord au sein de la définition de tiers, puis traitait les messages en conséquence.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-158">So, when the send pipeline looked up the party properties, it would internally look for the agreement definition within the party definition and then process the messages accordingly.</span></span> <span data-ttu-id="5d9fa-159">Dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], le tiers (ou partenaire commercial) étant distinct de l'accord de partenariat commercial, le pipeline d'envoi recherche spécifiquement l'accord de partenariat commercial.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-159">With [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], because the party (or trading partner) is distinct from the trading partner agreement, the send pipeline looks for the trading partner agreement specifically.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="5d9fa-160">Si tous les accords en fonction desquels un message effectue la résolution sont désactivés, le message sera suspendu.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-160">If all the agreements that a message resolves to are disabled, the message will be suspended.</span></span>  <span data-ttu-id="5d9fa-161">Un événement est également consigné dans le journal des événements.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-161">A warning is also logged in the Event log.</span></span>  
+  
+-   <span data-ttu-id="5d9fa-162">Enregistrement de copie du message dans la base de données de non-répudiation</span><span class="sxs-lookup"><span data-stu-id="5d9fa-162">Saving copies of the message in the non-repudiation database</span></span>  
+  
+-   <span data-ttu-id="5d9fa-163">Application d'une enveloppe AS2</span><span class="sxs-lookup"><span data-stu-id="5d9fa-163">Applying an AS2 envelope</span></span>  
+  
+-   <span data-ttu-id="5d9fa-164">envoi de plusieurs documents ;</span><span class="sxs-lookup"><span data-stu-id="5d9fa-164">Sending multiple documents</span></span>  
+  
+-   <span data-ttu-id="5d9fa-165">stockage du nom de fichier des documents dans l'enveloppe MIME ;</span><span class="sxs-lookup"><span data-stu-id="5d9fa-165">Storing each documents filename as part of the MIME envelope</span></span>  
+  
+-   <span data-ttu-id="5d9fa-166">Signature du message</span><span class="sxs-lookup"><span data-stu-id="5d9fa-166">Signing the message</span></span>  
+  
+    > [!NOTE]
+    >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="5d9fa-167"> permet de remplacer le certificat de signature par défaut par un certificat convenu dans l'accord.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-167"> enables you to override the default signing certificate and instead use a certificate agreed upon in the agreement.</span></span> <span data-ttu-id="5d9fa-168">Pour obtenir des instructions sur la substitution de certificat par défaut pour la signature des messages sortants, consultez [configuration des propriétés AS2](../core/configuring-as2-properties.md).</span><span class="sxs-lookup"><span data-stu-id="5d9fa-168">For instructions on overriding default certificate for signing outgoing messages, see [Configuring AS2 Properties](../core/configuring-as2-properties.md).</span></span>  
+  
+-   <span data-ttu-id="5d9fa-169">Compression du message</span><span class="sxs-lookup"><span data-stu-id="5d9fa-169">Compressing the message</span></span>  
+  
+-   <span data-ttu-id="5d9fa-170">Chiffrement du message</span><span class="sxs-lookup"><span data-stu-id="5d9fa-170">Encrypting the message</span></span>  
+  
+-   <span data-ttu-id="5d9fa-171">Calcul d'une valeur MIC pour le MDN</span><span class="sxs-lookup"><span data-stu-id="5d9fa-171">Computing an MIC value for the MDN</span></span>  
+  
+-   <span data-ttu-id="5d9fa-172">traitement d'un MDN entrant (dans le cas d'un MDN synchrone) ;</span><span class="sxs-lookup"><span data-stu-id="5d9fa-172">Processing an incoming MDN (in the case of a synchronous MDN)</span></span>  
+  
+-   <span data-ttu-id="5d9fa-173">renvoi du message si aucun MDN n'est reçu.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-173">Resending the message if no MDN is received</span></span>  
+  
+ <span data-ttu-id="5d9fa-174">Vous devez tenir compte des considérations suivantes dans le cadre de l'utilisation du traitement AS2 côté réception :</span><span class="sxs-lookup"><span data-stu-id="5d9fa-174">Following are some considerations that you must make while using AS2 receive-side processing:</span></span>  
+  
+-   <span data-ttu-id="5d9fa-175">Le port d'envoi ne peut utiliser que l'adaptateur HTTP.</span><span class="sxs-lookup"><span data-stu-id="5d9fa-175">The send port can only use the HTTP adapter.</span></span>  
+  
+-   <span data-ttu-id="5d9fa-176">Pour plus d’informations sur le traitement AS2 côté envoi, consultez [comment BizTalk Server envoie les Messages AS2](../core/how-biztalk-server-sends-as2-messages.md).</span><span class="sxs-lookup"><span data-stu-id="5d9fa-176">For more information about AS2 send-side processing, see [How BizTalk Server Sends AS2 Messages](../core/how-biztalk-server-sends-as2-messages.md).</span></span>  
+  
+-   <span data-ttu-id="5d9fa-177">Pour plus d’informations sur le traitement spécifique effectué dans le pipeline d’envoi, consultez [génération d’un Message AS2 sortant](../core/generating-an-outgoing-as2-message.md).</span><span class="sxs-lookup"><span data-stu-id="5d9fa-177">For more information about the specific processing performed in the send pipeline, see [Generating an Outgoing AS2 Message](../core/generating-an-outgoing-as2-message.md).</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="5d9fa-178">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="5d9fa-178">See Also</span></span>  
+ <span data-ttu-id="5d9fa-179">[Rôle des accords AS2 de traitement](../core/the-role-of-agreements-in-as2-processing.md) </span><span class="sxs-lookup"><span data-stu-id="5d9fa-179">[The Role of Agreements in AS2 Processing](../core/the-role-of-agreements-in-as2-processing.md) </span></span>  
+ <span data-ttu-id="5d9fa-180">[Réception des Messages AS2 par BizTalk Server](../core/how-biztalk-server-receives-as2-messages.md) </span><span class="sxs-lookup"><span data-stu-id="5d9fa-180">[How BizTalk Server Receives AS2 Messages](../core/how-biztalk-server-receives-as2-messages.md) </span></span>  
+ [<span data-ttu-id="5d9fa-181">Envoi des Messages AS2 par BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="5d9fa-181">How BizTalk Server Sends AS2 Messages</span></span>](../core/how-biztalk-server-sends-as2-messages.md)

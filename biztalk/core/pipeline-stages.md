@@ -1,0 +1,84 @@
+---
+title: Canalisation | Documents Microsoft
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- pipelines, properties
+- CATID_AssemblingSerializer component category
+- CATID_Encoder component category
+- pipelines, stages
+- CATID_DisassemblingParser component category
+- CATID_Validate component category
+- ComponentCategory class attribute
+- CATID_Decoder component category
+- CATID_Any component category
+- CATID_PartyResolver component category
+- Execution Mode property
+ms.assetid: ac50c48c-6ed5-4322-95cc-af55df6bcd1c
+caps.latest.revision: "8"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: aeb675f39cb39ade4230e6e39f798e95115aaf78
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="pipeline-stages"></a><span data-ttu-id="1d3c9-102">Étapes d'un pipeline</span><span class="sxs-lookup"><span data-stu-id="1d3c9-102">Pipeline Stages</span></span>
+<span data-ttu-id="1d3c9-103">Cette rubrique décrit la **Mode d’exécution** affinité d’étape et de la propriété.</span><span class="sxs-lookup"><span data-stu-id="1d3c9-103">This topic discusses the **Execution Mode** property and stage affinity.</span></span>  
+  
+## <a name="execution-mode-property"></a><span data-ttu-id="1d3c9-104">propriété Mode Exécution</span><span class="sxs-lookup"><span data-stu-id="1d3c9-104">Execution Mode property</span></span>  
+ <span data-ttu-id="1d3c9-105">Pendant l'exécution d'un pipeline, les étapes d'un pipeline peuvent exécuter uniquement le premier composant qui reconnaît le format du message, ou tous les composants.</span><span class="sxs-lookup"><span data-stu-id="1d3c9-105">During the execution of a pipeline, the pipeline stages can run only the first component that recognizes the message format, or all components.</span></span> <span data-ttu-id="1d3c9-106">La propriété qui détermine le modèle d’exécution est **Mode d’exécution**.</span><span class="sxs-lookup"><span data-stu-id="1d3c9-106">The property that determines the execution pattern is **Execution Mode**.</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="1d3c9-107">Elle est en lecture seule dans les étapes incluses dans les modèles de pipeline, mais il est important de comprendre son fonctionnement.</span><span class="sxs-lookup"><span data-stu-id="1d3c9-107">This property is read-only on the stages included in the pipeline templates, but understanding how it works is an important concept.</span></span>  
+  
+ <span data-ttu-id="1d3c9-108">Lorsque le **Mode d’exécution** est définie sur **tous les**, tous les composants dans l’étape sont exécutés dans la séquence configurée.</span><span class="sxs-lookup"><span data-stu-id="1d3c9-108">When the **Execution Mode** property is set to **All**, all the components within the stage are run in the configured sequence.</span></span> <span data-ttu-id="1d3c9-109">Ce mode exécute plusieurs composants pour terminer une tâche logique.</span><span class="sxs-lookup"><span data-stu-id="1d3c9-109">This mode runs several components to complete a logical task.</span></span> <span data-ttu-id="1d3c9-110">Une erreur d'exécution se produit si un composant rencontre une erreur lors du traitement d'un message pendant cette étape de pipeline.</span><span class="sxs-lookup"><span data-stu-id="1d3c9-110">In this case, a run-time error results if any component encounters an error while processing a message during this pipeline stage.</span></span>  
+  
+ <span data-ttu-id="1d3c9-111">Lorsqu’un pipeline est utilisé pour recevoir des messages dans plusieurs formats, puis le **Mode d’exécution** est définie sur **PremièreCorrespondance**.</span><span class="sxs-lookup"><span data-stu-id="1d3c9-111">When a pipeline is used to receive messages in several formats, then the **Execution Mode** property is set to **FirstMatch**.</span></span> <span data-ttu-id="1d3c9-112">Dans ce mode, seul le premier composant qui reconnaît le message est exécuté.</span><span class="sxs-lookup"><span data-stu-id="1d3c9-112">In this mode, only the first component that recognizes the message is run.</span></span> <span data-ttu-id="1d3c9-113">Si aucun composant de l'étape ne reconnaît le message, une erreur d'exécution est générée.</span><span class="sxs-lookup"><span data-stu-id="1d3c9-113">If no components in the stage recognize the message, a run-time error results.</span></span>  
+  
+ <span data-ttu-id="1d3c9-114">Notez que chaque étape peut avoir son propre **Mode d’exécution** , les différentes étapes d’un pipeline peuvent avoir des modes d’exécution différents.</span><span class="sxs-lookup"><span data-stu-id="1d3c9-114">Note that each stage can have its own **Execution Mode** setting, so different stages within a pipeline can have different execution modes.</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="1d3c9-115">Dans cette version de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], toutes les étapes dans un envoi de pipeline et toutes les étapes sauf désassembler dans un pipeline de réception ont la valeur de la **Mode d’exécution** propriété **tous les**.</span><span class="sxs-lookup"><span data-stu-id="1d3c9-115">In this release of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], all the stages in a send pipeline and all stages except Disassemble in a receive pipeline have the value of the **Execution Mode** property set to **All**.</span></span> <span data-ttu-id="1d3c9-116">La valeur de la **Mode d’exécution** dans l’étape de désassemblage est définie sur **PremièreCorrespondance**.</span><span class="sxs-lookup"><span data-stu-id="1d3c9-116">The value of the **Execution Mode** property in the Disassemble stage is set to **FirstMatch**.</span></span> <span data-ttu-id="1d3c9-117">Vous ne pouvez pas modifier le **Mode d’exécution** propriété d’une étape.</span><span class="sxs-lookup"><span data-stu-id="1d3c9-117">You cannot change the **Execution Mode** property of a stage.</span></span>  
+  
+#### <a name="to-read-pipeline-stage-properties"></a><span data-ttu-id="1d3c9-118">Pour lire les propriétés des étapes d'un pipeline</span><span class="sxs-lookup"><span data-stu-id="1d3c9-118">To read pipeline stage properties</span></span>  
+  
+1.  <span data-ttu-id="1d3c9-119">Dans le Concepteur de pipeline, cliquez sur une forme d'étape.</span><span class="sxs-lookup"><span data-stu-id="1d3c9-119">In Pipeline Designer, click a stage shape.</span></span>  
+  
+2.  <span data-ttu-id="1d3c9-120">Dans la fenêtre Propriétés, dans le **général** section, lisez les propriétés suivantes :</span><span class="sxs-lookup"><span data-stu-id="1d3c9-120">In the Properties window, in the **General** section, read the following properties:</span></span>  
+  
+    |<span data-ttu-id="1d3c9-121">Utiliser</span><span class="sxs-lookup"><span data-stu-id="1d3c9-121">Use this</span></span>|<span data-ttu-id="1d3c9-122">Pour effectuer cette opération</span><span class="sxs-lookup"><span data-stu-id="1d3c9-122">To do this</span></span>|  
+    |--------------|----------------|  
+    |<span data-ttu-id="1d3c9-123">**Nom**</span><span class="sxs-lookup"><span data-stu-id="1d3c9-123">**Name**</span></span>|<span data-ttu-id="1d3c9-124">Indique le nom de l'étape.</span><span class="sxs-lookup"><span data-stu-id="1d3c9-124">Indicates the name of the stage.</span></span>|  
+    |<span data-ttu-id="1d3c9-125">**Mode d'exécution**</span><span class="sxs-lookup"><span data-stu-id="1d3c9-125">**Execution Mode**</span></span>|<span data-ttu-id="1d3c9-126">Indique le modèle d'exécution de l'étape.</span><span class="sxs-lookup"><span data-stu-id="1d3c9-126">Indicates the execution pattern of the stage.</span></span><br /><br /> <span data-ttu-id="1d3c9-127">Valeurs valides : **tous les** ou **PremièreCorrespondance**</span><span class="sxs-lookup"><span data-stu-id="1d3c9-127">Valid values: **All** or **FirstMatch**</span></span>|  
+    |<span data-ttu-id="1d3c9-128">**Nombre minimal de composants**</span><span class="sxs-lookup"><span data-stu-id="1d3c9-128">**Minimum Number of Components**</span></span>|<span data-ttu-id="1d3c9-129">Indique le nombre minimal de composants de pipeline pouvant être ajoutés à l'étape.</span><span class="sxs-lookup"><span data-stu-id="1d3c9-129">Indicates the minimum number of pipeline components that can be added to the stage.</span></span>|  
+    |<span data-ttu-id="1d3c9-130">**Nombre maximal de composants**</span><span class="sxs-lookup"><span data-stu-id="1d3c9-130">**Maximum Number of Components**</span></span>|<span data-ttu-id="1d3c9-131">Indique le nombre maximal de composants de pipeline pouvant être ajoutés à l'étape.</span><span class="sxs-lookup"><span data-stu-id="1d3c9-131">Indicates the maximum number of pipeline components that can be added to the stage.</span></span>|  
+    |<span data-ttu-id="1d3c9-132">**StageID**</span><span class="sxs-lookup"><span data-stu-id="1d3c9-132">**StageID**</span></span>|<span data-ttu-id="1d3c9-133">Indique l'identificateur unique de l'étape.</span><span class="sxs-lookup"><span data-stu-id="1d3c9-133">Indicates the unique identifier for the stage.</span></span>|  
+  
+## <a name="stage-affinity"></a><span data-ttu-id="1d3c9-134">Affinité d'étape</span><span class="sxs-lookup"><span data-stu-id="1d3c9-134">Stage affinity</span></span>  
+ <span data-ttu-id="1d3c9-135">Les composants de pipeline ont une affinité d'étape, ce qui veut dire qu'ils sont créés pour être utilisés dans une ou plusieurs étapes particulières d'un pipeline.</span><span class="sxs-lookup"><span data-stu-id="1d3c9-135">Pipeline components have stage affinity, meaning that they are created for use within a particular stage or stages in a pipeline.</span></span>  
+  
+ <span data-ttu-id="1d3c9-136">Composants de pipeline COM express leur affinité d’étape en s’inscrivant avec l’ID d’étape comme catégorie d’implémentation, tandis que. Composants de pipeline NET spécifient leur affinité d’étape à l’aide de la **ComponentCategory** attribut de classe.</span><span class="sxs-lookup"><span data-stu-id="1d3c9-136">COM-based pipeline components express their stage affinity by registering themselves using the stage ID as the implementation category, while .NET-based pipeline components specify their stage affinity by using the **ComponentCategory** class attribute.</span></span> <span data-ttu-id="1d3c9-137">Notez qu’il est possible qu’un composant s’associer à plusieurs étapes : composants peuvent avoir plusieurs catégories de mise en œuvre ou **ComponentCategory** attribut.</span><span class="sxs-lookup"><span data-stu-id="1d3c9-137">Note that it is possible for a component to associate itself with more than one stage—components can have more than one implementation category or **ComponentCategory** attribute.</span></span>  
+  
+ <span data-ttu-id="1d3c9-138">Le tableau suivant présente les catégories de composants disponibles et les étapes associées.</span><span class="sxs-lookup"><span data-stu-id="1d3c9-138">The following table shows the available component categories and their associated stages.</span></span>  
+  
+|<span data-ttu-id="1d3c9-139">Catégorie de composant</span><span class="sxs-lookup"><span data-stu-id="1d3c9-139">Component category</span></span>|<span data-ttu-id="1d3c9-140">Étape où le composant peut être placé</span><span class="sxs-lookup"><span data-stu-id="1d3c9-140">Stage where component can be placed</span></span>|<span data-ttu-id="1d3c9-141"> Description</span><span class="sxs-lookup"><span data-stu-id="1d3c9-141">Description</span></span>|  
+|------------------------|-----------------------------------------|-----------------|  
+|<span data-ttu-id="1d3c9-142">CATID_Decoder {9d0e4103-4cce-4536-83fa-4a5040674ad6}</span><span class="sxs-lookup"><span data-stu-id="1d3c9-142">CATID_Decoder {9d0e4103-4cce-4536-83fa-4a5040674ad6}</span></span>|<span data-ttu-id="1d3c9-143">Décoder</span><span class="sxs-lookup"><span data-stu-id="1d3c9-143">Decode</span></span>|<span data-ttu-id="1d3c9-144">Tous les composants de décodage doivent implémenter cette catégorie.</span><span class="sxs-lookup"><span data-stu-id="1d3c9-144">All decoding components should implement this category.</span></span>|  
+|<span data-ttu-id="1d3c9-145">CATID_DisassemblingParser {9d0e4105-4cce-4536-83fa-4a5040674ad6}</span><span class="sxs-lookup"><span data-stu-id="1d3c9-145">CATID_DisassemblingParser {9d0e4105-4cce-4536-83fa-4a5040674ad6}</span></span>|<span data-ttu-id="1d3c9-146">Désassembler</span><span class="sxs-lookup"><span data-stu-id="1d3c9-146">Disassemble</span></span>|<span data-ttu-id="1d3c9-147">Tous les composants de désassemblage et d'analyse doivent implémenter cette catégorie.</span><span class="sxs-lookup"><span data-stu-id="1d3c9-147">All disassembling and parsing components should implement this category.</span></span>|  
+|<span data-ttu-id="1d3c9-148">CATID_Validate {9d0e410d-4cce-4536-83fa-4a5040674ad6}</span><span class="sxs-lookup"><span data-stu-id="1d3c9-148">CATID_Validate {9d0e410d-4cce-4536-83fa-4a5040674ad6}</span></span>|<span data-ttu-id="1d3c9-149">Valider</span><span class="sxs-lookup"><span data-stu-id="1d3c9-149">Validate</span></span>|<span data-ttu-id="1d3c9-150">Les composants de validation doivent implémenter cette catégorie.</span><span class="sxs-lookup"><span data-stu-id="1d3c9-150">Validation components should implement this category.</span></span>|  
+|<span data-ttu-id="1d3c9-151">CATID_PartyResolver {9d0e410e-4cce-4536-83fa-4a5040674ad6}</span><span class="sxs-lookup"><span data-stu-id="1d3c9-151">CATID_PartyResolver {9d0e410e-4cce-4536-83fa-4a5040674ad6}</span></span>|<span data-ttu-id="1d3c9-152">RésoudreTiers</span><span class="sxs-lookup"><span data-stu-id="1d3c9-152">ResolveParty</span></span>|<span data-ttu-id="1d3c9-153">Étape utilisée pour le composant Résolution du tiers</span><span class="sxs-lookup"><span data-stu-id="1d3c9-153">Stage used for Party Resolution component.</span></span>|  
+|<span data-ttu-id="1d3c9-154">CATID_Encoder {9d0e4108-4cce-4536-83fa-4a5040674ad6}</span><span class="sxs-lookup"><span data-stu-id="1d3c9-154">CATID_Encoder {9d0e4108-4cce-4536-83fa-4a5040674ad6}</span></span>|<span data-ttu-id="1d3c9-155">Encoder</span><span class="sxs-lookup"><span data-stu-id="1d3c9-155">Encode</span></span>|<span data-ttu-id="1d3c9-156">Tous les composants de codage doivent implémenter cette catégorie.</span><span class="sxs-lookup"><span data-stu-id="1d3c9-156">All encoding components should implement this category.</span></span>|  
+|<span data-ttu-id="1d3c9-157">CATID_AssemblingSerializer {9d0e4107-4cce-4536-83fa-4a5040674ad6}</span><span class="sxs-lookup"><span data-stu-id="1d3c9-157">CATID_AssemblingSerializer {9d0e4107-4cce-4536-83fa-4a5040674ad6}</span></span>|<span data-ttu-id="1d3c9-158">Sérialiser</span><span class="sxs-lookup"><span data-stu-id="1d3c9-158">Serialize</span></span>|<span data-ttu-id="1d3c9-159">Tous les composants de sérialisation et d'assemblage doivent implémenter cette catégorie.</span><span class="sxs-lookup"><span data-stu-id="1d3c9-159">All serializing and assembling components should implement this category.</span></span>|  
+|<span data-ttu-id="1d3c9-160">CATID_Any {9d0e4101-4cce-4536-83fa-4a5040674ad6}</span><span class="sxs-lookup"><span data-stu-id="1d3c9-160">CATID_Any {9d0e4101-4cce-4536-83fa-4a5040674ad6}</span></span>|<span data-ttu-id="1d3c9-161">N'importe laquelle de ces étapes</span><span class="sxs-lookup"><span data-stu-id="1d3c9-161">Any of these stages</span></span>|<span data-ttu-id="1d3c9-162">Si un composant de pipeline implémente cette catégorie, cela signifie que le composant peut être placé à n'importe quelle étape d'un pipeline.</span><span class="sxs-lookup"><span data-stu-id="1d3c9-162">If a pipeline component implements this category, it means that the component can be placed into any stage of a pipeline.</span></span>|  
+  
+## <a name="see-also"></a><span data-ttu-id="1d3c9-163">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="1d3c9-163">See Also</span></span>  
+ <span data-ttu-id="1d3c9-164">[Création de Pipelines à l’aide du Concepteur de Pipeline](../core/creating-pipelines-using-pipeline-designer.md) </span><span class="sxs-lookup"><span data-stu-id="1d3c9-164">[Creating Pipelines Using Pipeline Designer](../core/creating-pipelines-using-pipeline-designer.md) </span></span>  
+ [<span data-ttu-id="1d3c9-165">À propos des Pipelines, des étapes et des composants</span><span class="sxs-lookup"><span data-stu-id="1d3c9-165">About Pipelines, Stages, and Components</span></span>](../core/about-pipelines-stages-and-components.md)

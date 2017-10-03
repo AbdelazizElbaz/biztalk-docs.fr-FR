@@ -1,0 +1,89 @@
+---
+title: Comment supprimer une Application BizTalk du groupe BizTalk | Documents Microsoft
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- undeploying, applications
+- applications, deleting
+- applications, groups
+- undeploying, deleting
+- managing [applications], deleting
+- deleting, applications
+- applications, undeploying
+- managing [applications], groups
+- groups, applications
+ms.assetid: 968a6436-ae1a-4f85-bb44-e704826a0197
+caps.latest.revision: "28"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 269ef99a3244d0aba55d9dad856c0262d0d14ba0
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="how-to-delete-a-biztalk-application-from-the-biztalk-group"></a><span data-ttu-id="ac91e-102">Suppression d'une application BizTalk du groupe BizTalk</span><span class="sxs-lookup"><span data-stu-id="ac91e-102">How to Delete a BizTalk Application from the BizTalk Group</span></span>
+<span data-ttu-id="ac91e-103">Vous pouvez supprimer une application BizTalk du groupe BizTalk.</span><span class="sxs-lookup"><span data-stu-id="ac91e-103">You can delete an application from the BizTalk group.</span></span> <span data-ttu-id="ac91e-104">Cette opération supprime l'ensemble des données de l'application des bases BizTalk du groupe, et celle-ci ne s'affiche plus dans la console Administration de BizTalk Server.</span><span class="sxs-lookup"><span data-stu-id="ac91e-104">This removes all of its data from the BizTalk databases for the group, and the application no longer displays in the BizTalk Server Administration console.</span></span> <span data-ttu-id="ac91e-105">L'application n'en est pas pour autant désinstallée.</span><span class="sxs-lookup"><span data-stu-id="ac91e-105">It does not uninstall the application.</span></span>  
+  
+ <span data-ttu-id="ac91e-106">Avant de supprimer une application, gardez les points suivants à l'esprit :</span><span class="sxs-lookup"><span data-stu-id="ac91e-106">Before you delete an application, bear in mind the following points:</span></span>  
+  
+-   <span data-ttu-id="ac91e-107">Vous devez arrêter l'exécution de l'application avant de pouvoir la supprimer.</span><span class="sxs-lookup"><span data-stu-id="ac91e-107">The application must be stopped before you can delete it.</span></span> <span data-ttu-id="ac91e-108">Vous devez utiliser l’option arrêt complet de l’arrêt de l’application, comme décrit dans [comment démarrer et arrêter une Application BizTalk](../core/how-to-start-and-stop-a-biztalk-application.md).</span><span class="sxs-lookup"><span data-stu-id="ac91e-108">You should use the Full Stop option for stopping the application, as described in [How to Start and Stop a BizTalk Application](../core/how-to-start-and-stop-a-biztalk-application.md).</span></span>  
+  
+-   <span data-ttu-id="ac91e-109">Vous pouvez supprimer une application uniquement si aucune autre application ne contient de référence à celle-ci.</span><span class="sxs-lookup"><span data-stu-id="ac91e-109">You can delete an application only if no other applications contain references to it.</span></span> <span data-ttu-id="ac91e-110">Si d'autres applications contiennent des références à l'application que vous souhaitez supprimer, vous devez d'abord supprimer les références dans les autres applications.</span><span class="sxs-lookup"><span data-stu-id="ac91e-110">If other applications contain references to the application you want to remove, you must first remove the references from the other applications.</span></span> <span data-ttu-id="ac91e-111">Pour obtenir des instructions, consultez [comment supprimer une référence à une autre Application](../core/how-to-remove-a-reference-to-another-application.md).</span><span class="sxs-lookup"><span data-stu-id="ac91e-111">For instructions, see [How to Remove a Reference to Another Application](../core/how-to-remove-a-reference-to-another-application.md).</span></span>  
+  
+-   <span data-ttu-id="ac91e-112">Vous ne pouvez pas supprimer une application si elle contient un groupe de ports d'envoi dont un des ports d'envoi d'une autre application est membre.</span><span class="sxs-lookup"><span data-stu-id="ac91e-112">You cannot delete an application if it contains a send port group of which a send port in another application is a member.</span></span> <span data-ttu-id="ac91e-113">Dans ce cas, vous devez désinscrire le port d'envoi membre avant de supprimer l'application.</span><span class="sxs-lookup"><span data-stu-id="ac91e-113">You must unenlist the member send port before you can delete the application.</span></span> <span data-ttu-id="ac91e-114">Pour obtenir des instructions, consultez [comment désinscrire un Port d’envoi ou un groupe de ports d’envoi](../core/how-to-unenlist-a-send-port-or-send-port-group.md).</span><span class="sxs-lookup"><span data-stu-id="ac91e-114">For instructions, see [How to Unenlist a Send Port or Send Port Group](../core/how-to-unenlist-a-send-port-or-send-port-group.md).</span></span>  
+  
+-   <span data-ttu-id="ac91e-115">Vous ne pouvez pas supprimer une application contenant un port d'envoi référencé par un tiers.</span><span class="sxs-lookup"><span data-stu-id="ac91e-115">You cannot delete an application if it contains a send port that is referenced by a party.</span></span> <span data-ttu-id="ac91e-116">Vous pouvez supprimer la référence du tiers, supprimer le port d'envoi ou déplacer le port d'envoi vers une autre application.</span><span class="sxs-lookup"><span data-stu-id="ac91e-116">You can delete the reference from the party, delete the send port, or move the send port to a different application.</span></span> <span data-ttu-id="ac91e-117">Pour obtenir des instructions sur la réalisation de ces tâches, consultez [comment afficher ou modifier un tiers](http://msdn.microsoft.com/library/42e6f3a0-8f7d-4f6c-ab05-a1fab7bf46ca), [comment supprimer un Port d’envoi](../core/how-to-delete-a-send-port.md), ou [comment déplacer un artefact vers une autre Application](../core/how-to-move-an-artifact-to-a-different-application.md).</span><span class="sxs-lookup"><span data-stu-id="ac91e-117">For instructions on performing these tasks, see [How to View or Edit a Party](http://msdn.microsoft.com/library/42e6f3a0-8f7d-4f6c-ab05-a1fab7bf46ca), [How to Delete a Send Port](../core/how-to-delete-a-send-port.md), or [How to Move an Artifact to a Different Application](../core/how-to-move-an-artifact-to-a-different-application.md).</span></span>  
+  
+-   <span data-ttu-id="ac91e-118">Vous ne pouvez pas supprimer l'application par défaut.</span><span class="sxs-lookup"><span data-stu-id="ac91e-118">You cannot delete the default application.</span></span> <span data-ttu-id="ac91e-119">Si vous souhaitez la supprimer, vous devez d'abord définir une autre application en tant qu'application par défaut.</span><span class="sxs-lookup"><span data-stu-id="ac91e-119">If you want to delete it, you must first make another application the default.</span></span> <span data-ttu-id="ac91e-120">Pour obtenir des instructions, consultez [la modification de l’Application par défaut](../core/how-to-change-the-default-application.md).</span><span class="sxs-lookup"><span data-stu-id="ac91e-120">For instructions, see [How to Change the Default Application](../core/how-to-change-the-default-application.md).</span></span>  
+  
+-   <span data-ttu-id="ac91e-121">Vous ne pouvez pas supprimer une application comprenant une orchestration dont une instance a été interrompue.</span><span class="sxs-lookup"><span data-stu-id="ac91e-121">You cannot delete an application if an orchestration in the application has a suspended instance.</span></span>  
+  
+-   <span data-ttu-id="ac91e-122">Pour annuler complètement le déploiement d’une application BizTalk, vous devez également prendre les étapes décrites dans [comment désinstaller une Application BizTalk](../core/how-to-uninstall-a-biztalk-application.md), et vous devez également supprimer les autres fichiers et paramètres, comme décrit dans [comment supprimer Autres fichiers et paramètres d’une Application BizTalk](../core/how-to-remove-other-files-and-settings-for-a-biztalk-application.md).</span><span class="sxs-lookup"><span data-stu-id="ac91e-122">To completely undeploy a BizTalk application, you must also take the steps described in [How to Uninstall a BizTalk Application](../core/how-to-uninstall-a-biztalk-application.md), and you may also need to remove other files and settings, as described in [How to Remove Other Files and Settings for a BizTalk Application](../core/how-to-remove-other-files-and-settings-for-a-biztalk-application.md).</span></span>  
+  
+## <a name="prerequisites"></a><span data-ttu-id="ac91e-123">Conditions préalables</span><span class="sxs-lookup"><span data-stu-id="ac91e-123">Prerequisites</span></span>  
+ <span data-ttu-id="ac91e-124">Pour effectuer les procédures décrites dans cette rubrique, vous devez être connecté avec un compte qui est membre du groupe Administrateurs de BizTalk Server.</span><span class="sxs-lookup"><span data-stu-id="ac91e-124">To perform the procedures in this topic, you must be logged on with an account that is a member of the BizTalk Server Administrators group.</span></span> <span data-ttu-id="ac91e-125">Pour plus d’informations sur les autorisations, consultez [autorisations requises pour déployer et gérer une Application BizTalk](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md).</span><span class="sxs-lookup"><span data-stu-id="ac91e-125">For more detailed information on permissions, see [Permissions Required for Deploying and Managing a BizTalk Application](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md).</span></span>  
+  
+## <a name="to-delete-a-biztalk-application"></a><span data-ttu-id="ac91e-126">Pour supprimer une application BizTalk</span><span class="sxs-lookup"><span data-stu-id="ac91e-126">To delete a BizTalk application</span></span>  
+  
+#### <a name="using-the-biztalk-server-administration-console"></a><span data-ttu-id="ac91e-127">Utilisation de la console Administration de BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="ac91e-127">Using the BizTalk Server Administration console</span></span>  
+  
+1.  <span data-ttu-id="ac91e-128">Cliquez sur **Démarrer**, cliquez sur **tous les programmes**, cliquez sur [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], puis cliquez sur **Administration de BizTalk Server**.</span><span class="sxs-lookup"><span data-stu-id="ac91e-128">Click **Start**, click **All Programs**, click [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and then click **BizTalk Server Administration**.</span></span>  
+  
+2.  <span data-ttu-id="ac91e-129">Dans l’arborescence de la console, développez **Administration de BizTalk Server**, développez le groupe BizTalk et **Applications**.</span><span class="sxs-lookup"><span data-stu-id="ac91e-129">In the console tree, expand  **BizTalk Server Administration**, expand the BizTalk group, and expand **Applications**.</span></span>  
+  
+3.  <span data-ttu-id="ac91e-130">Cliquez sur le dossier d’application, puis cliquez sur **supprimer**.</span><span class="sxs-lookup"><span data-stu-id="ac91e-130">Right-click the application folder, and then click **Delete**.</span></span>  
+  
+4.  <span data-ttu-id="ac91e-131">Cliquez sur **Oui** pour confirmer la suppression.</span><span class="sxs-lookup"><span data-stu-id="ac91e-131">Click **Yes** to confirm the deletion.</span></span>  
+  
+     <span data-ttu-id="ac91e-132">BizTalk Server supprime l'ensemble des données de l'application des bases BizTalk et supprime l'application de la console d'administration.</span><span class="sxs-lookup"><span data-stu-id="ac91e-132">BizTalk Server deletes all of the application data from the BizTalk databases and removes the application from the administration console.</span></span>  
+  
+     <span data-ttu-id="ac91e-133">Si BizTalk Server ne parvient à supprimer aucun des artefacts de l'application, l'opération échoue.</span><span class="sxs-lookup"><span data-stu-id="ac91e-133">If BizTalk Server cannot delete any of the application artifacts, the delete operation fails.</span></span> <span data-ttu-id="ac91e-134">Dans ce cas, BizTalk Server tente d'annuler la suppression.</span><span class="sxs-lookup"><span data-stu-id="ac91e-134">In this case, BizTalk Server attempts to roll back the delete operation.</span></span>  
+  
+#### <a name="using-the-command-line"></a><span data-ttu-id="ac91e-135">À l’aide de la ligne de commande</span><span class="sxs-lookup"><span data-stu-id="ac91e-135">Using the command line</span></span>  
+  
+1.  <span data-ttu-id="ac91e-136">Ouvrez une invite de commandes comme suit : cliquez sur **Démarrer**, cliquez sur **exécuter**, type `cmd`, puis cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="ac91e-136">Open a command prompt as follows: Click **Start**, click **Run**, type `cmd`, and then click **OK**.</span></span>  
+  
+2.  <span data-ttu-id="ac91e-137">Tapez la commande suivante en utilisant les valeurs appropriées, comme décrit dans le tableau suivant :</span><span class="sxs-lookup"><span data-stu-id="ac91e-137">Type the following command, substituting the appropriate values, as described in the following table:</span></span>  
+  
+     <span data-ttu-id="ac91e-138">**« ApplicationName » BTSTask RemoveApp :** *valeur* [**/Server :***valeur*] [**/Database :**  *valeur*]</span><span class="sxs-lookup"><span data-stu-id="ac91e-138">**BTSTask RemoveApp /ApplicationName:** *value* [**/Server:***value*] [**/Database:***value*]</span></span>  
+  
+     <span data-ttu-id="ac91e-139">Exemple :</span><span class="sxs-lookup"><span data-stu-id="ac91e-139">Example:</span></span>  
+  
+     <span data-ttu-id="ac91e-140">**BTSTask RemoveApp /ApplicationName:MyApplication**</span><span class="sxs-lookup"><span data-stu-id="ac91e-140">**BTSTask RemoveApp /ApplicationName:MyApplication**</span></span>  
+  
+    |<span data-ttu-id="ac91e-141">Paramètre</span><span class="sxs-lookup"><span data-stu-id="ac91e-141">Parameter</span></span>|<span data-ttu-id="ac91e-142">Valeur</span><span class="sxs-lookup"><span data-stu-id="ac91e-142">Value</span></span>|  
+    |---------------|-----------|  
+    |<span data-ttu-id="ac91e-143">**/ ApplicationName**</span><span class="sxs-lookup"><span data-stu-id="ac91e-143">**/ApplicationName**</span></span>|<span data-ttu-id="ac91e-144">Nom de l'application BizTalk à supprimer.</span><span class="sxs-lookup"><span data-stu-id="ac91e-144">Name of the BizTalk application to delete.</span></span> <span data-ttu-id="ac91e-145">Si le nom comprend des espaces, vous devez le placer entre guillemets doubles («).</span><span class="sxs-lookup"><span data-stu-id="ac91e-145">If the name includes spaces, you must enclose it in double quotation marks (").</span></span>|  
+    |<span data-ttu-id="ac91e-146">**/ Serveur**</span><span class="sxs-lookup"><span data-stu-id="ac91e-146">**/Server**</span></span>|<span data-ttu-id="ac91e-147">Nom de l'instance SQL Server hébergeant la base de données de gestion BizTalk.</span><span class="sxs-lookup"><span data-stu-id="ac91e-147">Name of the SQL Server instance hosting the BizTalk Management database.</span></span> <span data-ttu-id="ac91e-148">Obligatoire si vous spécifiez le paramètre Database.</span><span class="sxs-lookup"><span data-stu-id="ac91e-148">Required if you specify the Database parameter.</span></span> <span data-ttu-id="ac91e-149">Si les paramètres Database et Server ne sont pas spécifiés, la base de données de gestion BizTalk du groupe par défaut est utilisée.</span><span class="sxs-lookup"><span data-stu-id="ac91e-149">If Server and Database parameters are not specified, the default BizTalk Management database for the group is used.</span></span>|  
+    |<span data-ttu-id="ac91e-150">**/ Base de données**</span><span class="sxs-lookup"><span data-stu-id="ac91e-150">**/Database**</span></span>|<span data-ttu-id="ac91e-151">Nom de la base de données de gestion BizTalk.</span><span class="sxs-lookup"><span data-stu-id="ac91e-151">Name of the BizTalk Management database.</span></span> <span data-ttu-id="ac91e-152">Obligatoire si vous spécifiez le paramètre Server.</span><span class="sxs-lookup"><span data-stu-id="ac91e-152">Required if you specify the Server parameter.</span></span> <span data-ttu-id="ac91e-153">Si les paramètres Database et Server ne sont pas spécifiés, la base de données de gestion BizTalk du groupe par défaut est utilisée.</span><span class="sxs-lookup"><span data-stu-id="ac91e-153">If Server and Database parameters are not specified, the default BizTalk Management database for the group is used.</span></span>|  
+  
+## <a name="see-also"></a><span data-ttu-id="ac91e-154">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="ac91e-154">See Also</span></span>  
+ <span data-ttu-id="ac91e-155">[Annulation du déploiement des Applications BizTalk](../core/undeploying-biztalk-applications.md) </span><span class="sxs-lookup"><span data-stu-id="ac91e-155">[Undeploying BizTalk Applications](../core/undeploying-biztalk-applications.md) </span></span>  
+ [<span data-ttu-id="ac91e-156">Déploiement d’Applications BizTalk</span><span class="sxs-lookup"><span data-stu-id="ac91e-156">Deploying BizTalk Applications</span></span>](../core/deploying-biztalk-applications.md)

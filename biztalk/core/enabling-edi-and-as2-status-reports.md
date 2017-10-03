@@ -1,0 +1,121 @@
+---
+title: "L’activation des rapports d’état AS2 et EDI | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: aa40fbad-51ad-40e0-9fe3-68e54beb11a5
+caps.latest.revision: "21"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: cef3d25040c253badd0f517326cc7830b6962df8
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="enabling-edi-and-as2-status-reports"></a><span data-ttu-id="7246f-102">Activation des rapports d'état EDI et AS2</span><span class="sxs-lookup"><span data-stu-id="7246f-102">Enabling EDI and AS2 Status Reports</span></span>
+<span data-ttu-id="7246f-103">Cette rubrique décrit comment configurer les rapports d’état EDI et AS2 dans le **vue d’ensemble du groupe** page de la [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Console d’Administration.</span><span class="sxs-lookup"><span data-stu-id="7246f-103">This topic describes how to configure the EDI and AS2 status reports in the **Group Overview** page of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console.</span></span>  
+  
+ <span data-ttu-id="7246f-104">Les données de suivi des rapports d'état sont conservées dans la base des suivis BizTalk (BizTalkDTADb), conformément aux propriétés de stockage choisies dans les procédures ci-dessous.</span><span class="sxs-lookup"><span data-stu-id="7246f-104">Status reporting tracking data is stored in the BizTalk tracking database (BizTalkDTADb) in accordance with the storage properties selected in the procedures below.</span></span> <span data-ttu-id="7246f-105">Vous pouvez configurer [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] pour activer les rapports d'état de chaque accord :</span><span class="sxs-lookup"><span data-stu-id="7246f-105">You can configure [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to enable status reporting for each agreement.</span></span> <span data-ttu-id="7246f-106">Selon la quantité de données conservées, vous devrez régulièrement archiver les données depuis le magasin actif et, le cas échéant, les supprimer à terme du magasin d'archivage.</span><span class="sxs-lookup"><span data-stu-id="7246f-106">Depending upon the amount of data that you store, you should routinely archive the data from the active store and ultimately clean it out from the archival store, as appropriate.</span></span> <span data-ttu-id="7246f-107">Pour plus d’informations sur la gestion de la base de données BizTalkDTADb, consultez [l’archivage et la purge de la base de données de suivi BizTalk](../core/archiving-and-purging-the-biztalk-tracking-database.md).</span><span class="sxs-lookup"><span data-stu-id="7246f-107">For more information about managing the BizTalkDTADb database, see [Archiving and Purging the BizTalk Tracking Database](../core/archiving-and-purging-the-biztalk-tracking-database.md).</span></span>  
+  
+ <span data-ttu-id="7246f-108">Les rapports d'état peuvent être activés de trois manières différentes :</span><span class="sxs-lookup"><span data-stu-id="7246f-108">You can enable status reports in three ways:</span></span>  
+  
+-   <span data-ttu-id="7246f-109">Activez les rapports d'état pour les échanges EDI entrants ou sortants auxquels correspond un accord.</span><span class="sxs-lookup"><span data-stu-id="7246f-109">Enable status reports for inbound or outbound EDI interchanges that resolved to an agreement.</span></span>  
+  
+-   <span data-ttu-id="7246f-110">Activez les rapports d'état pour les propriétés de l'accord EDI de secours, afin que les rapports d'état soient activés pour les échanges EDI pour lesquels [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] n'a pas pu trouver d'accord.</span><span class="sxs-lookup"><span data-stu-id="7246f-110">Enable status reports for EDI fallback agreement properties, so status reporting is activated for EDI interchanges that [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] could not determine an agreement for.</span></span>  
+  
+-   <span data-ttu-id="7246f-111">Activez les rapports d'état pour les messages AS2.</span><span class="sxs-lookup"><span data-stu-id="7246f-111">Enable status reports for AS2 messages.</span></span>  
+  
+## <a name="prerequisites"></a><span data-ttu-id="7246f-112">Conditions préalables</span><span class="sxs-lookup"><span data-stu-id="7246f-112">Prerequisites</span></span>  
+ <span data-ttu-id="7246f-113">Vous devez ouvrir une session en tant que membre du groupe Administrateurs de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ou Opérateurs B2B de BizTalk Server.</span><span class="sxs-lookup"><span data-stu-id="7246f-113">You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators group or BizTalk Server B2B Operators group.</span></span>  
+  
+### <a name="to-enable-edi-status-reports-for-an-agreement"></a><span data-ttu-id="7246f-114">Pour activer la création de rapports d'état EDI pour un accord</span><span class="sxs-lookup"><span data-stu-id="7246f-114">To enable EDI status reports for an agreement</span></span>  
+  
+1.  <span data-ttu-id="7246f-115">Dans le  **[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration** Console, cliquez sur le **Parties** nœud sous la [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)] et **groupe BizTalk** nœuds.</span><span class="sxs-lookup"><span data-stu-id="7246f-115">In the **[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration** Console, click the **Parties** node under the [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)] and **BizTalk Group** nodes.</span></span>  
+  
+2.  <span data-ttu-id="7246f-116">Dans le **tiers et profils d’entreprise** volet, cliquez sur le tiers qui a l’accord X12 ou EDIFACT pour lequel vous souhaitez activer le rapport d’état.</span><span class="sxs-lookup"><span data-stu-id="7246f-116">In the **Parties and Business Profiles** pane, click the party that has the X12 or EDIFACT agreement for which you want to enable status reporting.</span></span>  
+  
+3.  <span data-ttu-id="7246f-117">Dans le **accords** section, avec le bouton droit de l’accord pour lequel vous souhaitez activer le rapport d’état, puis cliquez sur **propriétés**.</span><span class="sxs-lookup"><span data-stu-id="7246f-117">In the **Agreements** section, right-click the agreement for which you want to enable status reporting and then click **Properties**.</span></span>  
+  
+4.  <span data-ttu-id="7246f-118">Dans le **général** sous l’onglet du **paramètres d’hôte communs** , cliquez sur **activer la création de rapports**.</span><span class="sxs-lookup"><span data-stu-id="7246f-118">In the **General** tab, in the **Common Host Settings** section, click **Turn ON Reporting**.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="7246f-119">Cette étape inscrit les entrées de message dans l'interface de rapport d'état dans la console Administration de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span><span class="sxs-lookup"><span data-stu-id="7246f-119">This step causes message entries to be entered in the status report UI in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console.</span></span>  
+  
+5.  <span data-ttu-id="7246f-120">Sélectionnez **stocker les transactions/données utiles pour les rapports** pour stocker les documents des jeux dans les tables EDI de la base de données des suivis (BizTalk BizTalkDTADb).</span><span class="sxs-lookup"><span data-stu-id="7246f-120">Select **Store transaction set/payload for reporting** to store transaction sets in the EDI tables of the tracking (BizTalkDTADb) database.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="7246f-121">Si vous activez le stockage des documents informatisés alors qu'une instance de l'orchestration de traitement par lot est activée, aucun document informatisé n'est stocké pour le lot en cours de création.</span><span class="sxs-lookup"><span data-stu-id="7246f-121">If you enable storage of transaction sets while an instance of the batching orchestration is activated, transaction sets will not be stored for the batch being created.</span></span> <span data-ttu-id="7246f-122">En revanche, si vous désactivez le stockage des documents informatisés alors qu'une instance de l'orchestration de traitement par lot est activée, le stockage sera désactivé au milieu du traitement par lot.</span><span class="sxs-lookup"><span data-stu-id="7246f-122">However, if you disable storage of transaction sets while an instance of the batching orchestration is activated, the storage will be disabled in the middle of the batching.</span></span>  
+  
+6.  <span data-ttu-id="7246f-123">Cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="7246f-123">Click **OK**.</span></span>  
+  
+7.  <span data-ttu-id="7246f-124">Redémarrez le service BizTalk (dans la boîte de dialogue Gestion de l'ordinateur).</span><span class="sxs-lookup"><span data-stu-id="7246f-124">Restart the BizTalk Service (in the Computer Management dialog box).</span></span> <span data-ttu-id="7246f-125">Si le pipeline AS2EdiReceive ou AS2EdiSend est utilisé dans votre solution, redémarrez le service d’administration IIS (à l’aide de la *iisreset* commande), ainsi que.</span><span class="sxs-lookup"><span data-stu-id="7246f-125">If the AS2EdiReceive pipeline or the AS2EdiSend pipeline is being used in your solution, restart the IIS Admin service (using the *iisreset* command), as well.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="7246f-126">Le service BizTalk doit être redémarré après l'activation ou la désactivation de la création de rapports d'état EDI pour que la modification prenne effet.</span><span class="sxs-lookup"><span data-stu-id="7246f-126">The BizTalk Service needs to be restarted after EDI status reporting has been activated or deactivated for the change to take effect.</span></span> <span data-ttu-id="7246f-127">Si le pipeline AS2EdiReceive ou AS2EdiSend est utilisé dans votre solution, les services BizTalk et IIS doivent être redémarrés pour que la modification prenne effet.</span><span class="sxs-lookup"><span data-stu-id="7246f-127">If the AS2EdiReceive or AS2EdiSend pipeline is being used in your solution, both the BizTalk Service and the IIS service need to be restarted for the change to take effect.</span></span> <span data-ttu-id="7246f-128">Notez que cela n'est pas nécessaire en cas d'activation de la création de rapports d'état AS2.</span><span class="sxs-lookup"><span data-stu-id="7246f-128">Note that this is not necessary when enabling AS2 status reporting.</span></span>  
+  
+### <a name="to-enable-edi-status-reports-for-fallback-agreements"></a><span data-ttu-id="7246f-129">Pour activer la création de rapports d'état EDI pour les accords de secours</span><span class="sxs-lookup"><span data-stu-id="7246f-129">To enable EDI status reports for fallback agreements</span></span>  
+  
+1.  <span data-ttu-id="7246f-130">Dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Console d’Administration, développez [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], développez **groupe BizTalk** avec le bouton droit de nœuds, **Parties**, puis sélectionnez **X12 paramètres de secours**ou **paramètres de secours EDIFACT**.</span><span class="sxs-lookup"><span data-stu-id="7246f-130">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console, expand [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], expand **BizTalk Group** nodes, right-click **Parties**, and select **X12 Fallback Settings** or **EDIFACT Fallback Settings**.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="7246f-131">Lorsque vous configurez les rapports d'état dans les accords de secours, la configuration ne s'applique que lorsqu'aucun accord n'a été identifié pour un message.</span><span class="sxs-lookup"><span data-stu-id="7246f-131">When you configure status reports in the fallback agreements, the configuration only applies when no agreement has been determined for a message.</span></span>  
+  
+2.  <span data-ttu-id="7246f-132">Dans le **paramètres de secours** , cliquez sur **création de rapports EDI d’activer**.</span><span class="sxs-lookup"><span data-stu-id="7246f-132">In the **Fallback Settings General Pages** tab, click **Activate EDI reporting**.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="7246f-133">Cette étape inscrit les entrées de message dans l'interface de rapport d'état dans la console Administration de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span><span class="sxs-lookup"><span data-stu-id="7246f-133">This step causes message entries to be entered in the status report UI in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console.</span></span>  
+  
+3.  <span data-ttu-id="7246f-134">Sélectionnez **stocker les transactions/données utiles pour les rapports** pour stocker les documents des jeux dans les tables EDI de la base de données des suivis (BizTalk BizTalkDTADb).</span><span class="sxs-lookup"><span data-stu-id="7246f-134">Select **Store transaction set/payload for reporting** to store transaction sets in the EDI tables of the tracking (BizTalkDTADb) database.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="7246f-135">**Pour les messages encodés en EDIFACT**: Si vous sélectionnez cette propriété, vous devez également sélectionner une valeur pour le champ UNB3.2 (qualificateur du Code) dans la page Définition du Segment UNB de la boîte de dialogue Propriétés globales EDI.</span><span class="sxs-lookup"><span data-stu-id="7246f-135">**For EDIFACT-encoded messages**: If you select this property, you must also select a value for the UNB3.2 field (Code qualifier) in the UNB Segment Definition page of the EDI Global Properties dialog box.</span></span> <span data-ttu-id="7246f-136">Cette propriété n’est pas définie par défaut, et l’échange sera suspendu si **stocker les transactions/données utiles pour les rapports** est sélectionnée, mais aucune valeur n’est pas sélectionnée pour UNB3.2.</span><span class="sxs-lookup"><span data-stu-id="7246f-136">This property is not set by default, and the interchange will be suspended if **Store transaction set/payload for reporting** is selected, but a value is not selected for UNB3.2.</span></span>  
+  
+4.  <span data-ttu-id="7246f-137">Cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="7246f-137">Click **OK**.</span></span>  
+  
+### <a name="to-enable-as2-status-reports"></a><span data-ttu-id="7246f-138">Pour activer les rapports d'état AS2</span><span class="sxs-lookup"><span data-stu-id="7246f-138">To enable AS2 status reports</span></span>  
+  
+1.  <span data-ttu-id="7246f-139">Dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration de la Console, sous le [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)] et **groupe BizTalk** nœuds, cliquez sur le **Parties** nœud.</span><span class="sxs-lookup"><span data-stu-id="7246f-139">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console, under the [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)] and **BizTalk Group** nodes, click the **Parties** node.</span></span>  
+  
+2.  <span data-ttu-id="7246f-140">Dans le **tiers et profils d’entreprise** volet, cliquez sur le tiers qui a l’accord X12 ou EDIFACT pour lequel vous souhaitez activer le rapport d’état.</span><span class="sxs-lookup"><span data-stu-id="7246f-140">In the **Parties and Business Profiles** pane, click the party that has the X12 or EDIFACT agreement for which you want to enable status reporting.</span></span>  
+  
+3.  <span data-ttu-id="7246f-141">Dans le **accords** section, avec le bouton droit de l’accord pour lequel vous souhaitez activer le rapport d’état, puis cliquez sur **propriétés**.</span><span class="sxs-lookup"><span data-stu-id="7246f-141">In the **Agreements** section, right-click the agreement for which you want to enable status reporting and then click **Properties**.</span></span>  
+  
+4.  <span data-ttu-id="7246f-142">Dans le **paramètres d’hôte communs** , cliquez sur **activer la création de rapports**.</span><span class="sxs-lookup"><span data-stu-id="7246f-142">In the **Common Host Settings** section, click **Turn ON Reporting**.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="7246f-143">Cette étape inscrit les entrées de message dans l'interface de rapport d'état dans la console Administration de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span><span class="sxs-lookup"><span data-stu-id="7246f-143">This step causes message entries to be entered in the status report UI in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console.</span></span>  
+  
+5.  <span data-ttu-id="7246f-144">Dans l’onglet d’accord unidirectionnel de la **propriétés de l’accord** boîte de dialogue, cliquez sur le **le suivi des messages du récepteur (NRR)** page.</span><span class="sxs-lookup"><span data-stu-id="7246f-144">In the one-way agreement tab of the **Agreement Properties** dialog box, click the **Receiver Message Tracking (NRR)** page.</span></span>  
+  
+6.  <span data-ttu-id="7246f-145">Dans le **le suivi des messages du récepteur (NRR)** , cliquez sur **NRR activé pour les messages AS2 encodés entrants** pour permettre l’affichage du format câble des messages entrants.</span><span class="sxs-lookup"><span data-stu-id="7246f-145">In the **Receiver Message Tracking (NRR)** page, click **NRR enabled for inbound encoded AS2 messages** to enable display of the wire format of incoming messages.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="7246f-146">Le format de transmission du message s’affichera lorsque vous cliquez sur le message dans le Message AS2 et la Page d’état MDN corrélé, puis cliquez sur **Message au Format câble**.</span><span class="sxs-lookup"><span data-stu-id="7246f-146">The wire format of the message will be displayed when you right-click the message in the AS2 Message and Correlated MDN Status Page, and then click **Message Wire Format**.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="7246f-147">Le **activer la création de rapports** propriété doit être sélectionnée pour activer le stockage de données dans la base de données de non-répudiation.</span><span class="sxs-lookup"><span data-stu-id="7246f-147">The **Turn ON Reporting** property must be selected for you to enable storage of any data in the non-repudiation database.</span></span> <span data-ttu-id="7246f-148">Si vous choisissez cette propriété, ou d'autres propriétés permettant de stocker des données dans la base de données de non-répudiation, une fenêtre contextuelle s'affiche pour vous inviter à activer la création de rapports AS2.</span><span class="sxs-lookup"><span data-stu-id="7246f-148">If you select this or any of the other properties enabling storage in the non-repudiation database, a popup will be displayed prompting you to activate AS2 reporting.</span></span> <span data-ttu-id="7246f-149">Si vous cliquez sur **Oui**, création de rapports AS2 sera activée pour vous.</span><span class="sxs-lookup"><span data-stu-id="7246f-149">If you click **Yes**, AS2 reporting will be activated for you.</span></span>  
+  
+7.  <span data-ttu-id="7246f-150">Dans le **le suivi des messages du récepteur (NRR)** , cliquez sur **NRR activé pour les messages AS2 décodés entrants** pour permettre l’affichage du format décodé des messages entrants.</span><span class="sxs-lookup"><span data-stu-id="7246f-150">In the **Receiver Message Tracking (NRR)** page, click **NRR enabled for inbound decoded AS2 messages** to enable display of the decoded format of incoming messages.</span></span>  
+  
+8.  <span data-ttu-id="7246f-151">Dans le **le suivi des messages du récepteur (NRR)** , cliquez sur **NRR activé pour les MDN sortants** pour permettre l’affichage des réponses MDN aux messages entrants.</span><span class="sxs-lookup"><span data-stu-id="7246f-151">In the **Receiver Message Tracking (NRR)** page, click **NRR enabled for outbound MDN** to enable display of MDN responses to incoming messages.</span></span>  
+  
+9. <span data-ttu-id="7246f-152">Dans l’onglet d’accord unidirectionnel de la **propriétés de l’accord** boîte de dialogue, cliquez sur le **de suivi des messages de l’expéditeur (NRR)** page.</span><span class="sxs-lookup"><span data-stu-id="7246f-152">In the one-way agreement tab of the **Agreement Properties** dialog box, click the **Sender Message Tracking (NRR)** page.</span></span>  
+  
+10. <span data-ttu-id="7246f-153">Dans le **de suivi des messages de l’expéditeur (NRR)** , cliquez sur **NRR activé pour les messages AS2 encodés sortants** pour permettre l’affichage du format câble des messages sortants.</span><span class="sxs-lookup"><span data-stu-id="7246f-153">In the **Sender Message Tracking (NRR)** page, click **NRR enabled for outbound encoded AS2 messages** to enable display of the wire format of outgoing messages.</span></span>  
+  
+11. <span data-ttu-id="7246f-154">Dans le **de suivi des messages de l’expéditeur (NRR)** , cliquez sur **NRR activé pour les messages AS2 décodés sortants** pour permettre l’affichage du format décodé des messages sortants.</span><span class="sxs-lookup"><span data-stu-id="7246f-154">In the **Sender Message Tracking (NRR)** page, click **NRR enabled for outbound decoded AS2 messages** to enable display of the decoded format of outgoing messages.</span></span>  
+  
+12. <span data-ttu-id="7246f-155">Dans le **de suivi des messages de l’expéditeur (NRR)** , cliquez sur **NRR activé pour les MDN entrants** pour permettre l’affichage des réponses MDN aux messages sortants.</span><span class="sxs-lookup"><span data-stu-id="7246f-155">In the **Sender Message Tracking (NRR)** page, click **NRR enabled for inbound MDN** to enable display of MDN responses to outgoing messages.</span></span>  
+  
+13. <span data-ttu-id="7246f-156">Cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="7246f-156">Click **OK**.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="7246f-157">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="7246f-157">See Also</span></span>  
+ <span data-ttu-id="7246f-158">[Surveillance des Solutions EDI et AS2](../core/monitoring-edi-and-as2-solutions.md) </span><span class="sxs-lookup"><span data-stu-id="7246f-158">[Monitoring EDI and AS2 Solutions](../core/monitoring-edi-and-as2-solutions.md) </span></span>  
+ <span data-ttu-id="7246f-159">[Configuration d’un EDI et le rapport d’état AS2](../core/configuring-an-edi-and-as2-status-report.md) </span><span class="sxs-lookup"><span data-stu-id="7246f-159">[Configuring an EDI and AS2 Status Report](../core/configuring-an-edi-and-as2-status-report.md) </span></span>  
+ [<span data-ttu-id="7246f-160">EDI et AS2 le rapport d’état</span><span class="sxs-lookup"><span data-stu-id="7246f-160">EDI and AS2 Status Reporting</span></span>](../core/edi-and-as2-status-reporting.md)   

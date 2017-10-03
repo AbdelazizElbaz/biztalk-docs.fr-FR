@@ -1,0 +1,57 @@
+---
+title: "Nœuds Activity et ActivityID | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- ActivityID nodes [Tracking Profile Editor]
+- Activity nodes [Tracking Profile Editor]
+- Tracking Profile Editor, node descriptions
+- activities [BAM], definitions
+ms.assetid: 94d4130a-53c5-4cd5-916a-4a6bd9acbf23
+caps.latest.revision: "9"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: d100c88eec5f5a05db2bb651968aa987e3ec4e33
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="activity-and-activityid-nodes"></a><span data-ttu-id="54127-102">Nœuds Activity et ActivityID</span><span class="sxs-lookup"><span data-stu-id="54127-102">Activity and ActivityID Nodes</span></span>
+<span data-ttu-id="54127-103">Les nœuds Activity et ActivityID sont utilisés pour contenir et identifier une définition d'activité.</span><span class="sxs-lookup"><span data-stu-id="54127-103">Activity and ActivityID nodes are used to contain and identify an activity definition.</span></span> <span data-ttu-id="54127-104">Le nœud Activity est le dossier parent destiné aux éléments de la définition d'activité.</span><span class="sxs-lookup"><span data-stu-id="54127-104">The Activity node is the parent folder for the items in the activity definition.</span></span> <span data-ttu-id="54127-105">L'ensemble des éléments de donnée et des nœuds d'événements commerciaux figurent dans le nœud d'activité associé et lui sont subordonnés.</span><span class="sxs-lookup"><span data-stu-id="54127-105">All data items and business event nodes are subordinate to and contained within the associated activity node.</span></span> <span data-ttu-id="54127-106">Le nom du nœud Activity doit refléter le nom de l'activité elle-même.</span><span class="sxs-lookup"><span data-stu-id="54127-106">The name of the Activity node should reflect the name of the activity itself.</span></span>  
+  
+ <span data-ttu-id="54127-107">Le nœud ActivityID est un élément généré automatiquement dans la définition d'activité et sert à contenir un identificateur unique pour l'activité.</span><span class="sxs-lookup"><span data-stu-id="54127-107">The ActivityID node is an automatically generated item in the activity definition and is intended to hold a unique identifier for the activity.</span></span> <span data-ttu-id="54127-108">Il peut être utilisé pour effectuer le suivi des identificateurs fournis par l'utilisateur ou générés par le système.</span><span class="sxs-lookup"><span data-stu-id="54127-108">The ActivityID node can be used to track user supplied identifiers or identifiers that are system generated.</span></span> <span data-ttu-id="54127-109">À titre d'exemple, dans un scénario dans lequel un numéro de bon de commande est l'identificateur unique de tous les bons de commande dans l'ensemble du système, vous pouvez utiliser ce numéro en tant qu'ActivityID et donc mapper la valeur de l'ActivityID à partir de n'importe quelle source d'événement, par exemple le champ de numéro de bon de commande figurant dans le schéma de bon de commande.</span><span class="sxs-lookup"><span data-stu-id="54127-109">For example, in a scenario in which you have purchase order number as a unique identifier across all purchase orders in the system, you can use it as the ActivityID, in which case you will map the value of the ActivityID from some event source, such as the PO number field in the purchase order schema.</span></span> <span data-ttu-id="54127-110">Si la valeur de bon de commande n'est pas unique, vous n'êtes pas obligé de mapper le nœud et l'analyse BAM génèrera automatiquement des identificateurs uniques lors de l'exécution.</span><span class="sxs-lookup"><span data-stu-id="54127-110">On the other hand, if the purchase order value is not unique, then you can leave the node unmapped, and BAM will automatically generate unique identifiers at run-time.</span></span>  
+  
+ <span data-ttu-id="54127-111">Les activités peuvent être associées à d'autres activités.</span><span class="sxs-lookup"><span data-stu-id="54127-111">Activities can be related to other activities.</span></span> <span data-ttu-id="54127-112">Dans certains scénarios, ces relations font explicitement partie du modèle observation.</span><span class="sxs-lookup"><span data-stu-id="54127-112">In some scenarios these relationships are explicitly part of the observation model.</span></span>  <span data-ttu-id="54127-113">Plus particulièrement, lorsqu'une vue utilisateur comprend au moins deux activités, il existe une relation automatique entre ces activités.</span><span class="sxs-lookup"><span data-stu-id="54127-113">Specifically, when any user view includes two or more activities, there is an automatic relationship between those activities.</span></span>  <span data-ttu-id="54127-114">Quand une telle relation existe, un nœud de relation est automatiquement créé dans l'arborescence d'activité sous le nœud Activity, pour chaque activité homologue connue.</span><span class="sxs-lookup"><span data-stu-id="54127-114">When such a relationship exists, a relationship node is automatically created in the activity tree, under the Activity node, for each known peer activity.</span></span> <span data-ttu-id="54127-115">Dans les scénarios où l'on trouve une relation de données mais pas de vue d'ensemble, vous pouvez ajouter manuellement un nœud de relation à l'arborescence d'activité.</span><span class="sxs-lookup"><span data-stu-id="54127-115">In scenarios where there  is a data relationship and no spanning view exists, you can manually add a relationship node to  the activity tree.</span></span>  
+  
+ <span data-ttu-id="54127-116">Dans les deux cas, le rôle du nœud de relation est de fournir un identificateur à l'activité associée.</span><span class="sxs-lookup"><span data-stu-id="54127-116">In either case, the purpose of the relationship node is to provide an identifier for the related activity.</span></span> <span data-ttu-id="54127-117">Par exemple, une relation plusieurs à plusieurs peut exister entre les bons de commandes et les livraisons (un seul bon de commande est honoré par plusieurs livraisons ; une livraison peut comporter un produit correspondant à plusieurs bons de commande).</span><span class="sxs-lookup"><span data-stu-id="54127-117">For example, purchase orders and shipments can have a many-to-many relationship (one PO is fulfilled by multiple shipments; one shipment can carry a product satisfying many POs).</span></span>  <span data-ttu-id="54127-118">L'enregistrement d'activité de chaque bon de commande peut contenir plusieurs pointeurs liés aux livraisons associées tandis que chaque enregistrement d'activité de livraison peut être pointé sur un ou plusieurs bons de commandes.</span><span class="sxs-lookup"><span data-stu-id="54127-118">The activity record for each purchase order can have multiple pointers to related shipments, and each shipment activity record could point to one or more Purchase Orders.</span></span>  <span data-ttu-id="54127-119">En termes de base de données, la valeur du nœud de relation est la clé étrangère de la table pour l'autre activité.</span><span class="sxs-lookup"><span data-stu-id="54127-119">In database terms, the value of the relationship node is the foreign key into the table for the other activity.</span></span>  
+  
+## <a name="working-with-activity-id-nodes"></a><span data-ttu-id="54127-120">Utilisation des nœuds ActivityID</span><span class="sxs-lookup"><span data-stu-id="54127-120">Working with Activity ID nodes</span></span>  
+ <span data-ttu-id="54127-121">Par exemple, considérez le scénario suivant : l’orchestration EquityLoan contient le dossier d’activité LoanProcess.</span><span class="sxs-lookup"><span data-stu-id="54127-121">For example, consider the following scenario: the EquityLoan orchestration contains the activity folder LoanProcess.</span></span> <span data-ttu-id="54127-122">Elle fait référence à des événements commerciaux dont :</span><span class="sxs-lookup"><span data-stu-id="54127-122">It references business events including the following:</span></span>  
+  
+-   <span data-ttu-id="54127-123">LoanApplicationReceived                   </span><span class="sxs-lookup"><span data-stu-id="54127-123">LoanApplicationReceived</span></span>  
+  
+-   <span data-ttu-id="54127-124">CHRequest</span><span class="sxs-lookup"><span data-stu-id="54127-124">CHRequest</span></span>  
+  
+-   <span data-ttu-id="54127-125">CHResponse</span><span class="sxs-lookup"><span data-stu-id="54127-125">CHResponse</span></span>  
+  
+-   <span data-ttu-id="54127-126">AppraisalRequest</span><span class="sxs-lookup"><span data-stu-id="54127-126">AppraisalRequest</span></span>  
+  
+-   <span data-ttu-id="54127-127">AppraisalResponse</span><span class="sxs-lookup"><span data-stu-id="54127-127">AppraisalResponse</span></span>  
+  
+-   <span data-ttu-id="54127-128">Approved</span><span class="sxs-lookup"><span data-stu-id="54127-128">Approved</span></span>  
+  
+-   <span data-ttu-id="54127-129">Refusées</span><span class="sxs-lookup"><span data-stu-id="54127-129">Denied</span></span>  
+  
+ <span data-ttu-id="54127-130">Le nœud ActivityID permet au développeur de solutions d'extraire les données qui identifient de manière unique l'activité, un numéro de bon de commande par exemple ou, dans le cas du scénario proposé, le champ SSN (social security number, numéro de sécurité sociale) du message.</span><span class="sxs-lookup"><span data-stu-id="54127-130">The ActivityID node enables the solution developer to extract data that uniquely identifies the activity, such as a purchase order number, or, in the case of the sample scenario, the SSN field of the message.</span></span> <span data-ttu-id="54127-131">Si vous ne faites glisser aucune donnée vers le nœud ActivityID, un GUID généré automatiquement identifie les activités d'entreprise.</span><span class="sxs-lookup"><span data-stu-id="54127-131">If you do not drag any data to the ActivityID node, an automatically generated GUID identifies the business activities.</span></span>  
+  
+ <span data-ttu-id="54127-132">Pour définir la relation entre des événements commerciaux ou des étapes majeures dans diverses orchestrations, l'orchestration cible doit faire référence au nœud ActivityID.</span><span class="sxs-lookup"><span data-stu-id="54127-132">To define the relationship between business events or milestones in different orchestrations, the target orchestration must reference the ActivityID.</span></span> <span data-ttu-id="54127-133">Pour plus d’informations sur l’implémentation des relations à l’aide de l’éditeur, consultez [nœuds de relation](../core/relationship-nodes.md).</span><span class="sxs-lookup"><span data-stu-id="54127-133">For more information about how to implement relationships using TPE, see [Relationship Nodes](../core/relationship-nodes.md).</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="54127-134">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="54127-134">See Also</span></span>  
+ [<span data-ttu-id="54127-135">Nœuds de l’activité TPE</span><span class="sxs-lookup"><span data-stu-id="54127-135">TPE Activity View Nodes</span></span>](../core/tpe-activity-view-nodes.md)

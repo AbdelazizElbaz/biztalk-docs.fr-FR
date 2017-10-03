@@ -1,0 +1,46 @@
+---
+title: Comment configurer le composant de Pipeline assembleur fichier plat | Documents Microsoft
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- pipeline components, Flat File Assembler
+- Flat File Assembler [pipeline component], configuring
+- messages, flat files
+ms.assetid: 5af61bba-4eb2-4bb9-a655-394a76d08d3b
+caps.latest.revision: "8"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 7fe9c7a0720db68d8e629410dd3f0a443a99d7a4
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="how-to-configure-the-flat-file-assembler-pipeline-component"></a><span data-ttu-id="b0c3f-102">Comment configurer le composant de Pipeline d’assembleur de fichier plat</span><span class="sxs-lookup"><span data-stu-id="b0c3f-102">How to Configure the Flat File Assembler Pipeline Component</span></span>
+<span data-ttu-id="b0c3f-103">Le composant de pipeline Assembleur de fichier plat sert à sérialiser les documents XML dans un format de fichier plat délimité ou positionnel avant de les envoyer à partir du serveur.</span><span class="sxs-lookup"><span data-stu-id="b0c3f-103">The Flat File Assembler pipeline component is used to serialize an XML document into delimited or positional flat file format before sending it out of the server.</span></span>  
+  
+### <a name="to-configure-the-properties-for-the-flat-file-assembler-pipeline-component"></a><span data-ttu-id="b0c3f-104">Pour configurer les propriétés du composant de pipeline Assembleur de fichier plat</span><span class="sxs-lookup"><span data-stu-id="b0c3f-104">To configure the properties for the Flat File Assembler pipeline component</span></span>  
+  
+1.  <span data-ttu-id="b0c3f-105">Faites glisser le composant de pipeline Assembleur de fichier plat dans la phase d'assemblage du pipeline d'envoi.</span><span class="sxs-lookup"><span data-stu-id="b0c3f-105">Drag the Flat File Assembler pipeline component into the Assemble stage of the send pipeline.</span></span>  
+  
+2.  <span data-ttu-id="b0c3f-106">Dans la fenêtre Propriétés, dans le **propriétés du composant de Pipeline** section, procédez comme suit.</span><span class="sxs-lookup"><span data-stu-id="b0c3f-106">In the Properties window, in the **Pipeline Component Properties** section, do the following.</span></span>  
+  
+    |<span data-ttu-id="b0c3f-107">Utiliser</span><span class="sxs-lookup"><span data-stu-id="b0c3f-107">Use this</span></span>|<span data-ttu-id="b0c3f-108">Pour effectuer cette opération</span><span class="sxs-lookup"><span data-stu-id="b0c3f-108">To do this</span></span>|  
+    |--------------|----------------|  
+    |<span data-ttu-id="b0c3f-109">**Schéma de document**</span><span class="sxs-lookup"><span data-stu-id="b0c3f-109">**Document schema**</span></span>|<span data-ttu-id="b0c3f-110">Sélectionner un schéma de document de fichier plat à utiliser pour convertir le message XML au format de fichier plat.</span><span class="sxs-lookup"><span data-stu-id="b0c3f-110">Select a flat file document schema to use for serializing the message from XML to the flat file format.</span></span> <span data-ttu-id="b0c3f-111">Si aucun schéma n'est spécifié, la fonction de détection de schéma d'exécution est utilisée.</span><span class="sxs-lookup"><span data-stu-id="b0c3f-111">If no schema is specified, run-time schema discovery is done.</span></span> <span data-ttu-id="b0c3f-112">Vous pouvez créer le schéma de document de fichier plat dans l'Éditeur BizTalk.</span><span class="sxs-lookup"><span data-stu-id="b0c3f-112">You can create the flat file document schema in BizTalk Editor.</span></span><br /><br /> <span data-ttu-id="b0c3f-113">Valeur par défaut : Aucun</span><span class="sxs-lookup"><span data-stu-id="b0c3f-113">Default value: None</span></span>|  
+    |<span data-ttu-id="b0c3f-114">**Schéma d’en-tête**</span><span class="sxs-lookup"><span data-stu-id="b0c3f-114">**Header schema**</span></span>|<span data-ttu-id="b0c3f-115">Sélectionner un schéma pour l'en-tête du message de fichier plat.</span><span class="sxs-lookup"><span data-stu-id="b0c3f-115">Select a schema for the header part of the flat file message.</span></span> <span data-ttu-id="b0c3f-116">Un schéma d’en-tête peut également être spécifié dans la propriété de contexte de message nommée **HeaderSpecName** sous l’espace de noms xmlnorm.</span><span class="sxs-lookup"><span data-stu-id="b0c3f-116">A header schema can also be specified in the message context property named **HeaderSpecName** under the xmlnorm namespace.</span></span> <span data-ttu-id="b0c3f-117">Dans ce cas, il remplacera le schéma d'en-tête spécifié dans le Concepteur de pipeline.</span><span class="sxs-lookup"><span data-stu-id="b0c3f-117">In this case, it will override the header schema specified in Pipeline Designer.</span></span><br /><br /> <span data-ttu-id="b0c3f-118">Vous pouvez créer le schéma de l'en-tête du message de fichier plat avec l'Éditeur BizTalk.</span><span class="sxs-lookup"><span data-stu-id="b0c3f-118">You can create the schema for the header part of the flat file message with BizTalk Editor.</span></span><br /><br /> <span data-ttu-id="b0c3f-119">Valeur par défaut : Aucun</span><span class="sxs-lookup"><span data-stu-id="b0c3f-119">Default value: None</span></span>|  
+    |<span data-ttu-id="b0c3f-120">**Conserver la marque d’ordre d’octet**</span><span class="sxs-lookup"><span data-stu-id="b0c3f-120">**Preserve byte order mark**</span></span>|<span data-ttu-id="b0c3f-121">Indiquer si une marque d'ordre de tri doit être ajoutée au documents généré par le composant Assembleur.</span><span class="sxs-lookup"><span data-stu-id="b0c3f-121">Specifies whether to add a byte order mark (BOM) to the document produced by the assembler component.</span></span><br /><br /> <span data-ttu-id="b0c3f-122">Valeur par défaut : **False**</span><span class="sxs-lookup"><span data-stu-id="b0c3f-122">Default Value: **False**</span></span>|  
+    |<span data-ttu-id="b0c3f-123">**Jeu de caractères cible**</span><span class="sxs-lookup"><span data-stu-id="b0c3f-123">**Target charset**</span></span>|<span data-ttu-id="b0c3f-124">Spécifier le jeu de caractères cible utilisé pour le codage des messages sortants.</span><span class="sxs-lookup"><span data-stu-id="b0c3f-124">Specifies the target character set used for encoding of outgoing messages.</span></span><br /><br /> <span data-ttu-id="b0c3f-125">Valeur par défaut : Aucun</span><span class="sxs-lookup"><span data-stu-id="b0c3f-125">Default value: None</span></span>|  
+    |<span data-ttu-id="b0c3f-126">**Schéma de code de fin**</span><span class="sxs-lookup"><span data-stu-id="b0c3f-126">**Trailer schema**</span></span>|<span data-ttu-id="b0c3f-127">Sélectionner un schéma pour la partie « code de fin » du message d'un fichier plat.</span><span class="sxs-lookup"><span data-stu-id="b0c3f-127">Select a schema for the trailer part of the flat file message.</span></span> <span data-ttu-id="b0c3f-128">Vous pouvez créer le schéma de la partie « code de fin » du message d'un fichier plat dans l'Éditeur BizTalk.</span><span class="sxs-lookup"><span data-stu-id="b0c3f-128">You can create the schema for the trailer part of the flat file message in BizTalk Editor.</span></span><br /><br /> <span data-ttu-id="b0c3f-129">Valeur par défaut : Aucun</span><span class="sxs-lookup"><span data-stu-id="b0c3f-129">Default value: None</span></span>|  
+  
+## <a name="see-also"></a><span data-ttu-id="b0c3f-130">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="b0c3f-130">See Also</span></span>  
+ <span data-ttu-id="b0c3f-131">[Composant de Pipeline assembleur de fichier plat](../core/flat-file-assembler-pipeline-component.md) </span><span class="sxs-lookup"><span data-stu-id="b0c3f-131">[Flat File Assembler Pipeline Component](../core/flat-file-assembler-pipeline-component.md) </span></span>  
+ <span data-ttu-id="b0c3f-132">[Configuration des composants de Pipeline natifs](../core/configuring-native-pipeline-components.md) </span><span class="sxs-lookup"><span data-stu-id="b0c3f-132">[Configuring Native Pipeline Components](../core/configuring-native-pipeline-components.md) </span></span>  
+ <span data-ttu-id="b0c3f-133">[Propriétés et schéma de propriété de fichier plat et XML](../core/xml-and-flat-file-property-schema-and-properties.md) </span><span class="sxs-lookup"><span data-stu-id="b0c3f-133">[XML and Flat File Property Schema and Properties](../core/xml-and-flat-file-property-schema-and-properties.md) </span></span>  
+ [<span data-ttu-id="b0c3f-134">Pipelines-AssemblerDisassembler (dossier d’exemples BizTalk Server)</span><span class="sxs-lookup"><span data-stu-id="b0c3f-134">Pipelines-AssemblerDisassembler (BizTalk Server Samples Folder)</span></span>](../core/pipelines-assemblerdisassembler-biztalk-server-samples-folder.md)

@@ -1,0 +1,68 @@
+---
+title: Configuration de la Validation (AS2) | Documents Microsoft
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 1ff22dc8-a544-46f9-86fb-f6845e2dfe46
+caps.latest.revision: "8"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: e135d048f7dede032803b5830faec4570fa1f4d4
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="configuring-validation-as2"></a><span data-ttu-id="8495d-102">Configuration de la validation (AS2)</span><span class="sxs-lookup"><span data-stu-id="8495d-102">Configuring Validation (AS2)</span></span>
+<span data-ttu-id="8495d-103">Dans l'accord de partenaire, vous devez spécifier les paramètres de validation du message AS2 entrant.</span><span class="sxs-lookup"><span data-stu-id="8495d-103">In the partner agreement, you must specify the validation settings to validate the inbound AS2 message.</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="8495d-104">Aucuns propriétés ne sont désactivées sur **tiers A -> tiers B** onglet d’accord unidirectionnel si vous avez désactivé la **BizTalk Local traite les messages reçus par le tiers ou prend en charge l’envoi de messages à partir de ce tiers** case à cocher pour le tiers A. Toutefois, les propriétés suivantes sont désactivées sur la même page dans le **tiers B -> tiers A** onglet si vous avez sélectionné la case à cocher lors de la création du tiers A.</span><span class="sxs-lookup"><span data-stu-id="8495d-104">No properties are disabled on **Party A->Party B** one-way agreement tab if you cleared the **Local BizTalk processes messages received by the party or supports sending messages from this party** check box for Party A. However, the following properties are disabled on the same page in the **Party B->Party A** tab if you selected the check box while creating Party A.</span></span>  
+>   
+>  -   <span data-ttu-id="8495d-105">**Utilisez les paramètres de l’accord pour validation et MDN au lieu de l’en-tête de message**</span><span class="sxs-lookup"><span data-stu-id="8495d-105">**Use agreement settings for validation and MDN instead of message header**</span></span>  
+  
+## <a name="prerequisites"></a><span data-ttu-id="8495d-106">Conditions préalables</span><span class="sxs-lookup"><span data-stu-id="8495d-106">Prerequisites</span></span>  
+ <span data-ttu-id="8495d-107">Vous devez être connecté en tant que membre du groupe d'administrateurs [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ou du groupe Opérateurs B2B de  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span><span class="sxs-lookup"><span data-stu-id="8495d-107">You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators or [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators group.</span></span>  
+  
+### <a name="to-configure-validation-properties"></a><span data-ttu-id="8495d-108">Pour configurer les propriétés de validation</span><span class="sxs-lookup"><span data-stu-id="8495d-108">To configure validation properties</span></span>  
+  
+1.  <span data-ttu-id="8495d-109">Créer un accord AS2, comme décrit dans [configuration des paramètres généraux (AS2)](../core/configuring-general-settings-as2.md).</span><span class="sxs-lookup"><span data-stu-id="8495d-109">Create an AS2 agreement as described in [Configuring General Settings (AS2)](../core/configuring-general-settings-as2.md).</span></span> <span data-ttu-id="8495d-110">Pour mettre à jour un accord AS2 existant, cliquez sur l’accord dans le **tiers et profils d’entreprise** page, puis cliquez sur **propriétés**.</span><span class="sxs-lookup"><span data-stu-id="8495d-110">To update an existing AS2 agreement, right-click the agreement in the **Parties and Business Profiles** page, and click **Properties**.</span></span>  
+  
+2.  <span data-ttu-id="8495d-111">Sous l’onglet accord unidirectionnel, cliquez sur **Validation**.</span><span class="sxs-lookup"><span data-stu-id="8495d-111">On a one-way agreement tab, click **Validation**.</span></span>  
+  
+3.  <span data-ttu-id="8495d-112">Sélectionnez le **utiliser les paramètres de l’accord pour validation et MDN au lieu de l’en-tête de message** case à cocher si vous souhaitez [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] valider la signature numérique, la compression et le chiffrement du message entrant, basé sur les paramètres de l’accord.</span><span class="sxs-lookup"><span data-stu-id="8495d-112">Select the **Use agreement settings for validation and MDN instead of message header** check box if you want [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] validate the digital signature, compression, and encryption of the incoming message, based upon the settings in the agreement.</span></span> <span data-ttu-id="8495d-113">Si la case à cocher est désactivée, les messages sont validés par rapport aux propriétés de l'en-tête AS2 du message, plutôt que par rapport aux propriétés de l'accord, pour déterminer ce traitement.</span><span class="sxs-lookup"><span data-stu-id="8495d-113">If the check box is cleared, the messages will be validated against the properties in the message AS2 header instead of the agreement properties to determine this processing.</span></span> <span data-ttu-id="8495d-114">Pour obtenir la liste des en-têtes AS2, consultez [les Messages AS2](../core/as2-messages.md).</span><span class="sxs-lookup"><span data-stu-id="8495d-114">For a list of AS2 headers, see [AS2 Messages](../core/as2-messages.md).</span></span>  
+  
+4.  <span data-ttu-id="8495d-115">Sélectionnez le **Message doit être signé** case à cocher pour vous assurer que le message entrant est signé.</span><span class="sxs-lookup"><span data-stu-id="8495d-115">Select the **Message should be signed** check box to ensure that the inbound message is signed.</span></span>  
+  
+5.  <span data-ttu-id="8495d-116">Sélectionnez le **Message doit être compressé** case à cocher pour vous assurer que le message entrant est compressé.</span><span class="sxs-lookup"><span data-stu-id="8495d-116">Select the **Message should be compressed** check box to ensure that the inbound message is compressed.</span></span>  
+  
+6.  <span data-ttu-id="8495d-117">Sélectionnez le **Message doit être chiffré** case à cocher pour vous assurer que le message entrant est chiffré.</span><span class="sxs-lookup"><span data-stu-id="8495d-117">Select the **Message should be encrypted** check box to ensure that the inbound message is encrypted.</span></span> <span data-ttu-id="8495d-118">Sélectionnez l’algorithme de chiffrement à partir de la **algorithme de chiffrement** liste déroulante.</span><span class="sxs-lookup"><span data-stu-id="8495d-118">Select the encryption algorithm from the **Encryption Algorithm** drop-down list.</span></span> 
+
+    <span data-ttu-id="8495d-119">**En commençant par [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] et les versions plus récentes**, prise en charge AES est automatiquement inclus.</span><span class="sxs-lookup"><span data-stu-id="8495d-119">**Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] and newer versions**, AES support is automatically included.</span></span> <span data-ttu-id="8495d-120">Les options sont DES3, RC2, AES128 (par défaut), AES192 et AES256.</span><span class="sxs-lookup"><span data-stu-id="8495d-120">Options include DES3, RC2, AES128 (default), AES192, and AES256.</span></span>
+    
+    <span data-ttu-id="8495d-121">Pour précédente [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] versions, les options sont DES3 et RC2.</span><span class="sxs-lookup"><span data-stu-id="8495d-121">For previous [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] versions, the options are DES3 and RC2.</span></span>
+  
+    > [!NOTE]
+    >  <span data-ttu-id="8495d-122">Le pipeline de réception AS2 vérifie la signature numérique, décompresse le message ou le déchiffre uniquement si la propriété appropriée est définie.</span><span class="sxs-lookup"><span data-stu-id="8495d-122">Only if the appropriate property is set, the AS2 receive pipeline verifies the digital signature, decompresses the message, or decrypts the message.</span></span> <span data-ttu-id="8495d-123">Si le **utiliser les paramètres de l’accord pour validation et MDN au lieu de l’en-tête de message** propriété est sélectionnée et que le message a des propriétés de transport pour la signature, compression et chiffrement différentes de celles sélectionnées dans l’accord propriétés, puis le décodeur AS2 interrompre le message et publie une erreur.</span><span class="sxs-lookup"><span data-stu-id="8495d-123">If the **Use agreement settings for validation and MDN instead of message header** property is selected and the message has different transport properties for signing, compression, and encryption than those selected on the agreement properties, then the AS2 Decoder will suspend the message and post an error.</span></span>  
+  
+7.  <span data-ttu-id="8495d-124">Sélectionnez le **vérifier la liste de révocation** case à cocher pour déterminer si le certificat à utiliser pour valider un message entrant a été inclus dans la liste de révocation de Certification, indiquant qu’il a été révoqué ou, si la date d’expiration est passée.</span><span class="sxs-lookup"><span data-stu-id="8495d-124">Select the **Check Certification Revocation List** check box to determine whether the certificate to be used in validating an incoming message has been included in the Certification Revocation List, indicating that it has been revoked, or whether the expiration date has passed.</span></span> <span data-ttu-id="8495d-125">Le cas échéant, BizTalk Server ne déchiffrera pas le message, mais l'interrompra.</span><span class="sxs-lookup"><span data-stu-id="8495d-125">If so, BizTalk Server will not decrypt the message, but will suspend it.</span></span> <span data-ttu-id="8495d-126">Si cette propriété est désactivée, BizTalk Server ne procédera pas à cette vérification.</span><span class="sxs-lookup"><span data-stu-id="8495d-126">If this property is cleared, BizTalk Server will not perform this check.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="8495d-127">L'extraction et la recherche d'un certificat dans la liste de révocation des certificats nécessitent un certain délai.</span><span class="sxs-lookup"><span data-stu-id="8495d-127">There is a latency involved with retrieving and searching the certificate revocation list.</span></span>  
+  
+8.  <span data-ttu-id="8495d-128">Sélectionnez le **vérifier les messages en double** case à cocher pour déterminer si le message entrant est un doublon de messages précédemment reçus.</span><span class="sxs-lookup"><span data-stu-id="8495d-128">Select the **Check for duplicate messages within** check box to determine if the incoming message is a duplicate of previously received messages.</span></span>  
+  
+     <span data-ttu-id="8495d-129">Si vous avez coché la **vérifier les messages en double** propriété, définissez la **jours** propriété pour indiquer l’intervalle des messages précédemment reçus à utiliser lors de la vérification des doublons ; Vérifiez le **Suspendre les messages en double** propriété pour indiquer que les messages en double doivent être suspendus.</span><span class="sxs-lookup"><span data-stu-id="8495d-129">If you checked the **Check for duplicate messages within** property, set the **days** property to indicate the span of previously received messages to use when checking for duplicates; check the **Suspend duplicate messages** property to indicate that duplicate messages should be suspended.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="8495d-130">Le **AS2-de** et **AS2-pour** champs sont utilisés pour déterminer si un message est un doublon.</span><span class="sxs-lookup"><span data-stu-id="8495d-130">The **AS2-From** and **AS2-To** fields are used to determine if a message is a duplicate.</span></span> <span data-ttu-id="8495d-131">S'ils contiennent des valeurs identiques à celles du message précédent, le message est marqué comme doublon, même si les autres en-têtes ou la charge sont différents.</span><span class="sxs-lookup"><span data-stu-id="8495d-131">If the message contains the same values for these fields as a previously received message, it will be marked as duplicate even if the other headers or the payload is different.</span></span>  
+  
+9. <span data-ttu-id="8495d-132">Cliquez sur **appliquer** pour accepter les modifications avant de poursuivre la configuration, ou cliquez sur **OK** pour valider les modifications, puis fermez la boîte de dialogue.</span><span class="sxs-lookup"><span data-stu-id="8495d-132">Click **Apply** to accept the changes before continuing with the configuration, or click **OK** to validate the changes and then close the dialog box.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="8495d-133">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="8495d-133">See Also</span></span>  
+ [<span data-ttu-id="8495d-134">Configuration des propriétés d’accord AS2</span><span class="sxs-lookup"><span data-stu-id="8495d-134">Configuring AS2 Agreement Properties</span></span>](../core/configuring-as2-agreement-properties.md)

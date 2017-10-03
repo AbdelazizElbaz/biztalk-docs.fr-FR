@@ -1,0 +1,36 @@
+---
+title: "Les en-têtes de Message de fichier plat | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 1981daaf-149a-426d-9a2f-5fcf64bce185
+caps.latest.revision: "6"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 271e9fe74d0a55f4b3ff5271861d24474fffaf37
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="flat-file-message-headers"></a><span data-ttu-id="76092-102">En-têtes de message de fichier plat</span><span class="sxs-lookup"><span data-stu-id="76092-102">Flat File Message Headers</span></span>
+<span data-ttu-id="76092-103">L’analyse de l’en-tête de message d’instance fichier plat facultatif par le désassembleur de fichier plat est contrôlée par le schéma de fichier plat que vous avez configuré dans le **schéma d’en-tête** propriété au moment du design du désassembleur de fichier plat ou **XMLNORM. HeaderSpecName** propriété de contexte de message.</span><span class="sxs-lookup"><span data-stu-id="76092-103">The parsing of the optional flat file instance message header by the flat file disassembler is controlled by the flat file schema that you have configured in the **Header schema** design-time property of the flat file disassembler or the **XMLNORM.HeaderSpecName** message context property.</span></span> <span data-ttu-id="76092-104">Si vous n'avez pas spécifié de schéma utilisant une de ces deux méthodes, le désassembleur de fichier plat suppose que le message d'instance de fichier plat ne contient pas d’en-tête.</span><span class="sxs-lookup"><span data-stu-id="76092-104">If you have not specified a schema using one of these two methods, the flat file disassembler assumes that the flat file instance message does not contain a header.</span></span>  
+
+## <a name="outbound-messages"></a><span data-ttu-id="76092-105">Messages sortants</span><span class="sxs-lookup"><span data-stu-id="76092-105">Outbound messages</span></span>  
+ <span data-ttu-id="76092-106">Pour les messages d’instance de fichier plat sortants, vous pouvez configurer l’assembleur de fichier plat pour produire un en-tête en spécifiant le schéma approprié dans son **nom de la spécification en-tête** propriété au moment du design ou **XMLNORM. HeaderSpecName** propriété de contexte de message.</span><span class="sxs-lookup"><span data-stu-id="76092-106">For outbound flat file instance messages, you can configure the flat file assembler to produce a header by specifying the appropriate schema in its **Header Specification Name** design-time property or the **XMLNORM.HeaderSpecName** message context property.</span></span> <span data-ttu-id="76092-107">Pour plus d’informations sur la définition des propriétés de contexte de message, consultez **propriétés de contexte de Message** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].</span><span class="sxs-lookup"><span data-stu-id="76092-107">For more information about setting message context properties, see **Message Context Properties** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].</span></span>  
+
+## <a name="inbound-messages"></a><span data-ttu-id="76092-108">Les messages entrants</span><span class="sxs-lookup"><span data-stu-id="76092-108">Inbound messages</span></span>  
+ <span data-ttu-id="76092-109">Les données figurant dans les en-têtes de message d'instance de fichier plat entrants peuvent être conservées et utilisées de deux façons différentes.</span><span class="sxs-lookup"><span data-stu-id="76092-109">Data found in inbound flat file instance message headers can be preserved and utilized in two different ways.</span></span> <span data-ttu-id="76092-110">D’abord, les en-têtes de message d’instance de fichier plat peuvent être intégralement enregistrés au sein du contexte de message du corps pour être ensuite restaurés en tant qu'en-têtes d'un message d'instance de fichier plat sortant correspondant.</span><span class="sxs-lookup"><span data-stu-id="76092-110">First, flat file instance message headers can be saved in their entirety within the message context of the body for later restoration as the header of a corresponding outbound flat file instance message.</span></span> <span data-ttu-id="76092-111">Vous pouvez utiliser la **Preserve en-tête** propriété du pipeline de réception pour spécifier que l’en-tête doit être conservé.</span><span class="sxs-lookup"><span data-stu-id="76092-111">You can use the **Preserve header** property of the receive pipeline to specify that the header should be preserved.</span></span> <span data-ttu-id="76092-112">Si un en-tête est spécifié dans l'assembleur de fichier plat, l'en-tête préservé sera utilisé dans les messages sortants.</span><span class="sxs-lookup"><span data-stu-id="76092-112">And if a header is specified in the flat file assembler, the preserved header will be used on the outbound message.</span></span>  
+  
+ <span data-ttu-id="76092-113">Sinon, vous pouvez copier les éléments de données individuels d’un en-tête de message d'instance de fichier plat dans le contexte de message associé au corps du message de fichier plat en spécifiant la promotion de propriété d'un ou plusieurs champs du schéma correspondant.</span><span class="sxs-lookup"><span data-stu-id="76092-113">Second, individual items of data from a flat file instance message header can be copied to the message context associated with the flat file message body by specifying property promotion for one or more of the fields in the corresponding schema.</span></span> <span data-ttu-id="76092-114">Pour plus d’informations sur la promotion des propriétés, consultez [promotion des propriétés](../core/promoting-properties.md).</span><span class="sxs-lookup"><span data-stu-id="76092-114">For more information about promoting properties, see [Promoting Properties](../core/promoting-properties.md).</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="76092-115">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="76092-115">See Also</span></span>  
+ <span data-ttu-id="76092-116">[Corps de Message de fichier plat](../core/flat-file-message-bodies.md) </span><span class="sxs-lookup"><span data-stu-id="76092-116">[Flat File Message Bodies](../core/flat-file-message-bodies.md) </span></span>  
+ <span data-ttu-id="76092-117">[Codes de Message de fichier plat](../core/flat-file-message-trailers.md) </span><span class="sxs-lookup"><span data-stu-id="76092-117">[Flat File Message Trailers](../core/flat-file-message-trailers.md) </span></span>  
+ <span data-ttu-id="76092-118">[Structure d’un Message de fichier plat](../core/structure-of-a-flat-file-message.md) </span><span class="sxs-lookup"><span data-stu-id="76092-118">[Structure of a Flat File Message](../core/structure-of-a-flat-file-message.md) </span></span>  
+ [<span data-ttu-id="76092-119">Comment créer des schémas pour les Messages de fichier plat</span><span class="sxs-lookup"><span data-stu-id="76092-119">How to Create Schemas for Flat File Messages</span></span>](../core/how-to-create-schemas-for-flat-file-messages.md)
