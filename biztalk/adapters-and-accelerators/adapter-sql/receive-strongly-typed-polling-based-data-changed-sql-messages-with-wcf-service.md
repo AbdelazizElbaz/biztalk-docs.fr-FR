@@ -1,7 +1,8 @@
 ---
 title: "Recevoir des fortement typée d’interrogation de modification de données de Messages à partir de SQL Server à l’aide du modèle de Service WCF | Documents Microsoft"
+description: "Utiliser une application .NET pour configurer l’interrogation typée ou interrogation fortement typée à l’aide du Service WCF avec l’adaptateur WCF-SQL dans BizTalk Server"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 10/09/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -12,11 +13,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4a56ed382f6fa9c106b091b62406feba2dffe704
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c616d2a9f10aae5dbf822676174a0de0d4816c19
+ms.sourcegitcommit: f9c6ea3c9cfb8a43f765c0d3b8b07dacaa21fc51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="receive-strongly-typed-polling-based-data-changed-messages-from-sql-server-using-wcf-service-model"></a>Recevoir des fortement typée d’interrogation de modification de données de Messages à partir de SQL Server à l’aide du modèle de Service WCF
 Vous pouvez configurer le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] pour recevoir des messages de l’interrogation fortement typée à partir de SQL Server. Vous pouvez spécifier une instruction d’interrogation de l’adaptateur s’exécute pour interroger la base de données. L’instruction d’interrogation peut être une instruction SELECT ou une procédure stockée qui retourne un jeu de résultats. Vous devez utiliser interrogation fortement typée dans un scénario où vous souhaitez recevoir un jeu de résultats de fortement typée. Pour plus d’informations sur la façon dont l’adaptateur prend en charge l’interrogation fortement typée, consultez [prise en charge de trafic entrant appels à l’aide de l’interrogation](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-inbound-calls-using-polling.md).  
@@ -68,7 +69,7 @@ SELECT * FROM Employee;EXEC MOVE_EMP_DATA;EXEC ADD_EMP_DETAILS John, Tester, 100
   
  Pour obtenir une description plus complète de ces propriétés, consultez [en savoir plus sur l’adaptateur BizTalk pour les propriétés de liaison de l’adaptateur SQL Server](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md). Pour obtenir une description complète de l’utilisation de la [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] pour interroger le SQL Server, poursuivre la lecture.  
   
-## <a name="configuring-strongly-typed-polling-in-the-wcf-service-model"></a>Configuration d’interrogation fortement typée dans le modèle de Service WCF  
+## <a name="configure-strongly-typed-polling-in-the-wcf-service-model"></a>Configurer l’interrogation fortement typée dans le modèle de Service WCF  
  Pour recevoir le **d’interrogation** opération lorsque vous utilisez le modèle de service WCF, vous devez :  
   
 1.  Générer un contrat de service WCF (interface) pour le **TypedPolling** opération à partir des métadonnées exposées par l’adaptateur. Pour ce faire, vous pouvez utiliser la [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]. Lors de la génération du contrat de service WCF pour cet exemple, assurez-vous que :  
@@ -148,10 +149,8 @@ namespace SqlAdapterBindingNamespace {
 }  
 ```  
   
-## <a name="receiving-strongly-typed-inbound-messages-for-polling-operation"></a>Réception fortement typée les Messages entrants pour l’opération d’interrogation  
+## <a name="receive-strongly-typed-inbound-messages-for-polling-operation"></a>Réception fortement typée de Messages entrants pour l’opération d’interrogation  
  Cette section fournit des instructions sur la façon d’écrire une application .NET pour recevoir des messages d’interrogation entrant fortement typée à l’aide de la [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].  
-  
-#### <a name="to-receive-polling-messages-from-the-sql-adapter"></a>Pour recevoir des messages de l’interrogation de l’adaptateur SQL  
   
 1.  Utilisez le [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] pour générer un contrat de service WCF (interface) et des classes d’assistance pour le **TypedPolling** opération. Assurez-vous que vous spécifiez ce qui suit lors de la génération du contrat de service WCF pour cet exemple :  
   
@@ -268,7 +267,7 @@ namespace SqlAdapterBindingNamespace {
   
     ```  
     // Add service endpoint: be sure to specify TypedPolling_Employee as the contract  
-    Uri ConnectionUri = new Uri("mssql://mysqlserver//mydatabase?InboundID=Empliyee");  
+    Uri ConnectionUri = new Uri("mssql://mysqlserver//mydatabase?InboundID=Employee");  
     serviceHost.AddServiceEndpoint("TypedPolling_Employee", binding, ConnectionUri);  
     ```  
   
