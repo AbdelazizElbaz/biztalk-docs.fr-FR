@@ -13,11 +13,11 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4d3febbda1799c1f002ed352caecc5d9d838db00
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 82bfb1782c6bccdafe4f69326cddff0f49974386
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="troubleshoot-operational-issues-with-the-sql-adapter"></a>Résoudre les problèmes opérationnels avec l’adaptateur SQL
 Cette section présente l’utilisation de techniques de dépannage pour résoudre les erreurs de fonctionnement que vous pouvez rencontrer lorsque vous utilisez [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)].  
@@ -203,7 +203,7 @@ System.Data.SqlClient.SqlException: Invalid object name '<temp_table_name>'.
 ###  <a name="BKMK_SQLVS2008"></a>Avertissement de liaison non valide lors de l’utilisation de l’adaptateur dans Visual Studio  
  **Problème**  
   
- Lorsque vous utilisez l’adaptateur pour créer une application dans [!INCLUDE[vs2010](../../includes/vs2010-md.md)] et que vous ouvrez le fichier de configuration (app.config) généré par l’adaptateur, vous voyez un avertissement similaire au suivant :  
+ Lorsque vous utilisez l’adaptateur pour créer une application dans Visual Studio et que vous ouvrez le fichier de configuration (app.config) généré par l’adaptateur, vous voyez un avertissement similaire au suivant :  
   
 ```  
 The element 'bindings' has invalid child element 'sqlBinding'. List of possible elements expected: 'basicHttpBinding, customBinding, ...  

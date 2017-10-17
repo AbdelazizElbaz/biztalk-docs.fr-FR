@@ -12,11 +12,11 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 929a83ae28ed85da3c06c1e03b98677e0fca7f82
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1dc83a0531460f513d146e2d03d0ef7e0a7c529f
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="step-1-publish-the-siebel-business-component-operations-as-a-wcf-service"></a>Étape 1 : Publier les opérations de composant d’entreprise Siebel comme Service WCF
 ![Étape 1 sur 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
@@ -36,7 +36,7 @@ ms.lasthandoff: 09/20/2017
   
  Pour plus d’informations sur ces conditions préalables, consultez le [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] guide d’installation. Le guide d’installation est généralement installé sur \<lecteur d’installation > : \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents.  
   
-### <a name="to-publish-the-siebel-business-components-as-a-wcf-service"></a>Pour publier les composants d’entreprise Siebel sous la forme d’un Service WCF  
+## <a name="publish-the-siebel-business-components-as-a-wcf-service"></a>Publier les composants d’entreprise Siebel sous la forme d’un Service WCF  
   
 1.  Démarrer [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], puis créez un projet.  
   
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
      Également, dans le **types de projet** volet, développez **Visual C#**, puis sélectionnez **Web**. À partir de la **modèles** volet, sélectionnez **Service d’adaptateur WCF**.  
   
     > [!NOTE]
-    >  Si vous avez installé [!INCLUDE[vs2010](../../includes/vs2010-md.md)] avec le composant développement Web, le **Service d’adaptateur WCF** modèle est également disponible à partir de la **nouveau site Web** option.  
+    >  Si vous avez installé Visual Studio avec le composant développement Web, le **Service d’adaptateur WCF** modèle est également disponible à partir de la **nouveau site Web** option.  
   
 3.  Spécifiez un nom et l’emplacement de la solution, puis cliquez sur **OK**. L’Assistant développement d’adaptateurs WCF démarre.  
   
@@ -98,7 +98,7 @@ ms.lasthandoff: 09/20/2017
         |X509FindType|Le type de recherche X.509 à exécuter.<br /><br /> **Remarque :** spécifier une valeur pour cette propriété uniquement si **UseServiceCertificate** a la valeur **True**.|  
   
         > [!NOTE]
-        >  Pour plus d’informations sur les certificats et les propriétés associées, consultez « Propriétés X509ClientCertificateCredentialsElement » à [http://go.microsoft.com/fwlink/?LinkId=103771](http://go.microsoft.com/fwlink/?LinkId=103771).  
+        >  Pour plus d’informations sur les certificats et les propriétés associées, consultez [X509ClientCertificateCredentialsElement propriétés](https://msdn.microsoft.com/library/system.servicemodel.configuration.x509clientcertificatecredentialselement_properties.aspx).
   
     2.  Dans le **Configuration de comportement de point de terminaison** , spécifiez des valeurs pour les éléments suivants :  
   
@@ -121,7 +121,7 @@ ms.lasthandoff: 09/20/2017
   
     |Pour la propriété|Spécifiez la valeur|  
     |----------------------|-----------------------|  
-    |Configuration de la liaison|L’Assistant prend uniquement en charge la liaison HTTP de base. Par conséquent, le champ de configuration de liaison est automatiquement rempli pour *System.ServiceModel.Configuration.BasicHttpBindingElement*.<br /><br /> Cliquez sur le bouton de sélection **(...)**  pour modifier les propriétés pour la liaison HTTP. Pour utiliser un canal de communication sécurisé, vous devez toujours définir la **Mode** propriété **Transport**. L’Assistant définit la valeur par défaut pour le **Mode** propriété en tant que **Transport**.<br /><br /> Pour plus d’informations sur les autres liaisons exposé, consultez « Membres BasicHttpBindingElement » à [http://go.microsoft.com/fwlink/?LinkId=103773](http://go.microsoft.com/fwlink/?LinkId=103773).|  
+    |Configuration de la liaison|L’Assistant prend uniquement en charge la liaison HTTP de base. Par conséquent, le champ de configuration de liaison est automatiquement rempli pour *System.ServiceModel.Configuration.BasicHttpBindingElement*.<br /><br /> Cliquez sur le bouton de sélection **(...)**  pour modifier les propriétés pour la liaison HTTP. Pour utiliser un canal de communication sécurisé, vous devez toujours définir la **Mode** propriété **Transport**. L’Assistant définit la valeur par défaut pour le **Mode** propriété en tant que **Transport**.<br /><br /> Pour plus d’informations sur les autres liaisons exposé, consultez [BasicHttpBindingElement classe](https://msdn.microsoft.com/library/system.servicemodel.configuration.basichttpbindingelement.aspx).|  
     |Nom du point de terminaison|Spécifiez un nom de point de terminaison pour le contrat.|  
   
      Les autres champs de cette page sont remplis automatiquement selon les valeurs spécifiées dans les pages précédentes.  
@@ -149,7 +149,7 @@ ms.lasthandoff: 09/20/2017
   
 16. Publier le service WCF.  
   
-    1.  Vérifiez que SSL est activé pour Internet Information Services (IIS). Pour obtenir des instructions sur l’activation de SSL pour IIS, consultez [http://go.microsoft.com/fwlink/?LinkId=197170](http://go.microsoft.com/fwlink/?LinkId=197170).  
+    1.  Vérifiez que SSL est activé pour Internet Information Services (IIS). Consultez [comment faire pour configurer SSL](https://docs.microsoft.com/iis/manage/configuring-security/how-to-set-up-ssl-on-iis).
   
     2.  Cliquez sur le projet dans l’Explorateur de solutions, puis cliquez sur **publier**.  
   
@@ -181,4 +181,4 @@ ms.lasthandoff: 09/20/2017
  Vous disposez maintenant d’un service WCF pour le composant d’entreprise Siebel. Utilisez l’éditeur de définition de catalogue de données métier pour créer un fichier de définition d’application pour les opérations de composant d’entreprise Siebel. Consultez [étape 2 : créer un fichier de définition d’Application pour les opérations de composant d’entreprise Siebel](../../adapters-and-accelerators/adapter-siebel/step-2-create-an-application-definition-file-for-siebel-business-component.md) pour obtenir des instructions. Le fichier de définition d’application identifie où sont stockées les données LOB et le format dans lequel il est stocké.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Didacticiel 1 : Présentation des données à partir d’un système Siebel sur un Site SharePoint](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)
+ [Didacticiel 1 : Présentation de données provenant d’un système Siebel sur un site SharePoint](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)

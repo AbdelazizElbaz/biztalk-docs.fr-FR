@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5c0cc9a3cbae11fd18cbe9a91249cf5d3cf42925
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4f3b2888b21c2c59b01ddaf920d55ccadb79e326
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="how-to-use-a-custom-web-part-with-oracle-e-business-suite"></a>L’utilisation d’un composant WebPart personnalisé avec Oracle E-Business Suite
 Cette section fournit des informations sur l’utilisation d’un composant WebPart personnalisé avec Microsoft Office SharePoint Server. Pour utiliser un composant WebPart personnalisé, vous devez procédez comme suit :  
@@ -35,9 +35,8 @@ Cette section fournit des informations sur l’utilisation d’un composant WebP
 -   Créer un fichier de définition d’application pour les artefacts d’Oracle E-Business Suite à l’aide du catalogue de données métiers dans Microsoft Office SharePoint Server. Pour plus d’informations, consultez [étape 2 : créer un fichier de définition d’application pour les artefacts d’Oracle E-Business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/step-2-create-an-application-definition-file-for-the-oracle-ebs-artifacts.md) dans [didacticiel : présenter les données à partir d’Oracle E-Business Suite sur un SharePoint Site](Tutorial:%20Present%20data%20from%20Oracle%20E-Business%20Suite%20on%20a%20SharePoint%20Site.md).  
   
 ##  <a name="Create_a_Custom_Web_Part"></a>Étape 1 : Créer un composant WebPart personnalisé  
- Pour créer un composant WebPart personnalisé à l’aide de Visual Studio, procédez comme suit :  
   
-1.  Démarrer[!INCLUDE[vs2010](../../includes/vs2010-md.md)], puis créez un projet.  
+1.  Démarrez Visual Studio et puis créer un projet.  
   
 2.  Dans le **nouveau projet** boîte de dialogue, à partir de la **types de projet** volet, sélectionnez **Visual C#**. À partir de la **modèles** volet, sélectionnez **bibliothèque de classes**.  
   

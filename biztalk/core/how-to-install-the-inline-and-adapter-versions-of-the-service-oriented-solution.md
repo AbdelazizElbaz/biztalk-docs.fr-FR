@@ -1,5 +1,5 @@
 ---
-title: "Comment installer le Inline et les Versions d’adaptateur du Service orienté solutions | Documents Microsoft"
+title: "Installation en ligne et la Solution orientée services des Versions d’adaptateur du Service | Documents Microsoft"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,81 +7,25 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- certificate services
-- service solution tutorial, affiliat applications [SSO]
-- service solution tutorial, adapter version
-- service solution tutorial, Web services
-- service solution tutorial, definition files [BAM]
-- service solution tutorial, COM+ applications
-- service solution tutorial, virtual directories
-- service solution tutorial, testing connectivity
-- TI components
-- MQSeries queues, creating
-- service solution tutorial, deploying
-- service solution tutorial, MQSeries adapters
-- service solution tutorial, mainframe CICS applications
-- service solution tutorial, certificate services
-- service solution tutorial, back-end systems
-- service solution tutorial, MQSeries queues
-- service solution tutorial, remote environments
-- certificates, creating requests
-- service solution tutorial, starting service
-- service solution tutorial, TI components
-- service solution tutorial, inline version
-- CICS application
-- service solution tutorial, installing
-- service solution tutorial, deleting stub version
-- service solution tutorial, certificates
 ms.assetid: 6050cfe9-4e94-4a55-8b24-fbcc74d9e8f4
 caps.latest.revision: "97"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cb7de8939037f9e7647c62c1164e3c3de3ab378c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dbf374b4efb219f1221275819713787565a325b0
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="how-to-install-the-inline-and-adapter-versions-of-the-service-oriented-solution"></a>Installation des versions Inline et d'adaptateur de la solution orientée services
 La procédure suivante décrit la préparation de votre ordinateur pour l'installation des versions d'adaptateur et Inline de la solution orientée services, puis l'installation de la solution sur votre ordinateur.  
   
--   [Préparer l’ordinateur pour l’installation des versions d’adaptateur et inline de la Solution orientée services](#step1)  
-  
--   [Supprimer la version stub de la Solution orientée services](#step3)  
-  
--   [Préparation des systèmes principaux pour la Solution orientée services pour accéder à](#step5)  
-  
--   [Configurer le serveur Web pour SSL Secure Socket Layers)](#step7)  
-  
--   [Créer des services Web pour les systèmes back-end](#step9)  
-  
--   [Créer le composant TI pour la Solution orientée services](#step11)  
-  
--   [Créer les répertoires virtuels pour l’orchestration des services Web](#step13)  
-  
--   [Générez la Solution orientée services](#step15)  
-  
--   [Créer des applications associées SSO](#step17)  
-  
--   [Déployer le fichier de définition BAM pour la Solution orientée services](#step19)  
-  
--   [Déployer la Solution orientée services](#step21)  
-  
--   [Configurer le Services Web Pending Transactions stub lorsqu’un macroordinateur n’est pas disponible](#step23)  
-  
--   [Démarrer le Service orienté solutions](#step25)  
-  
 > [!NOTE]
->  Le service de solution orientée services se trouve dans le dossier \< *dossier d’Installation de BizTalk Server*> \SDK\Scenarios\SO.  
-  
-> [!NOTE]
->  Si vous ne disposez pas d'un macroordinateur pour la solution, vous pouvez modifier la liaison du port de manière à utiliser le service Web Pending Transactions stub. Le service Web génère des transactions localement pour émuler celles du macroordinateur.  
+>  - Le service de solution orientée services se trouve dans le dossier \< *dossier d’Installation de BizTalk Server*> \SDK\Scenarios\SO.  
+>  - Si vous ne disposez pas d'un macroordinateur pour la solution, vous pouvez modifier la liaison du port de manière à utiliser le service Web Pending Transactions stub. Le service Web génère des transactions localement pour émuler celles du macroordinateur.  
   
 ##  <a name="step1"></a>Préparer l’ordinateur pour l’installation des versions d’adaptateur et inline de la Solution orientée services  
-  
-#### <a name="to-prepare-the-computer-for-installing-the-adapter-and-inline-versions-of-the-service-oriented-solution"></a>Pour préparer l'ordinateur pour l'installation des versions d'adaptateur et Inline de la solution orientée services  
   
 1.  Si vous avez installé Windows SharePoint Services, excluez la (racine) du Site Web par défaut à partir de Windows SharePoint Services de chemins d’accès gérés comme suit : cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur  **Outils d’administration**, puis cliquez sur **Administration centrale de SharePoint**.  
   
@@ -110,8 +54,6 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
         >  Pour plus d’informations sur la commande SETX, consultez le site Web Microsoft TechNet à l’adresse [http://go.microsoft.com/fwlink/?LinkId=67831](http://go.microsoft.com/fwlink/?LinkId=67831).  
   
 ##  <a name="step3"></a>Supprimer la version stub de la Solution orientée services  
-  
-#### <a name="to-remove-the-stub-version-of-the-service-oriented-solution"></a>Pour supprimer la version stub de la solution orientée services  
   
 1.  Ouvrez le **Console d’Administration de BizTalk Server** comme suit : cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)], puis cliquez sur  **Administration de BizTalk Server**.  
   
@@ -175,9 +117,7 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
   
 ##  <a name="step5"></a>Préparation des systèmes principaux pour la Solution orientée services pour accéder à  
   
-#### <a name="to-install-the-required-applications-for-the-back-end-systems-for-the-service-oriented-solution-to-access"></a>Pour installer les applications requises par les systèmes principaux pour l'accès de la solution orientée services  
-  
-1.  Installez IBM WebSphere MQ pour Windows Version 5.3 Server sur l'ordinateur local.  
+1.  Installez IBM WebSphere MQ pour Windows Server sur l’ordinateur local.  
   
     1.  Conservez tous les paramètres par défaut. Configurer le **Configuration par défaut** à la fin de la **préparation de WebSphere MQ Assistant**. Le Gestionnaire de file d’attente est nommé QM_\<*nom de votre ordinateur*>.  
   
@@ -207,7 +147,7 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
   
 5.  Installez et configurez Microsoft Host Integration Server 2004 si vous avez un macroordinateur accessible. Conservez tous les paramètres par défaut.  
   
-#### <a name="to-create-the-mqseries-queues"></a>Pour créer les files d'attente MQSeries  
+#### <a name="create-the-mqseries-queues"></a>Créer les files d’attente MQSeries  
   
 1.  Ouvrez WebSphere MQ Explorer, développez **gestionnaires de file d’attente**, puis développez le Gestionnaire de file d’attente dans laquelle vous souhaitez créer les files d’attente. En règle générale, un gestionnaire de file d’attente est nommé QM_\<*nom de votre ordinateur*>.  
   
@@ -235,7 +175,7 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
   
     -   LastPaymentsOutputQueue  
   
-#### <a name="to-complete-configuration-of-the-mqseries-adapter"></a>Pour terminer la configuration de l'adaptateur MQSeries  
+#### <a name="complete-configuration-of-the-mqseries-adapter"></a>Terminer la configuration de l’adaptateur MQSeries  
   
 1.  Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], puis cliquez sur **Assistant Configuration de BizTalk MQSeries Agent**.  
   
@@ -249,7 +189,7 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
   
 6.  Sur le **création de l’Application MQSAgent COM +** , cliquez sur **suivant**, puis cliquez sur **Terminer** sur la **achèvement** page.  
   
-#### <a name="to-configure-the-mainframe-cics-application"></a>Pour configurer l'application CICS du macroordinateur  
+#### <a name="configure-the-mainframe-cics-application"></a>Configurer l’application CICS du macroordinateur.  
   
 1.  À l'aide du Bloc-notes, ouvrez le fichier bizcbl.txt, ainsi que le fichier associé MainFrameProgramVTCS2Description.txt, dans le dossier %BTSSolutionsPath%\SO\MFAccess\HISTIComponent, puis passez en revue leur contenu.  
   
@@ -258,7 +198,7 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
     -   Le fichier MainFrameProgramVTCS2Description.txt contient la COMMAREA qui décrit les informations des données d'entrée et de sortie. La COMMAREA constitue un bloc de mémoire contiguë servant à échanger des données entre les programmes appelés et les programmes appelants.  
   
     > [!NOTE]
-    >  Vous pouvez également utiliser le fichier associé pour générer le fichier de métadonnées de l'intégrateur de transactions (TI) à l'aide du plug-in Concepteur TI de [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
+    >  Vous pouvez également utiliser le livre de copie pour générer le fichier de métadonnées de Transaction Integrator (TI) à l’aide de Visual Studio avec le concepteur TI plug-in.  
   
     > [!NOTE]
     >  Bien que les étapes suivantes soient essentielles à la réussite du déploiement, elles ne sont généralement pas effectuées par un développeur BizTalk Server. Il revient au personnel chargé de l'administration du macroordinateur de configurer correctement l'environnement du macroordinateur. Les logiciels requis dans le cadre de cette procédure pas à pas sont généralement installés dans la plupart des environnements de macroordinateur. Pour plus d’informations sur l’environnement de système d’exploitation minimale macroordinateur, consultez la documentation de Host Integration Server.  
@@ -321,7 +261,7 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
   
 ##  <a name="step7"></a>Configurer le serveur Web pour SSL Secure Socket Layers)  
   
-#### <a name="to-install-certificate-services"></a>Pour installer les services de certificats  
+#### <a name="install-certificate-services"></a>Installer les Services de certificats  
   
 1.  Cliquez sur **Démarrer**, pointez sur **le panneau de configuration**, puis cliquez sur **Ajout / Suppression de programmes**.  
   
@@ -329,7 +269,7 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
   
 3.  Dans le **Assistant Composants de Windows**, sélectionnez le **les Services de certificats**, cliquez sur **suivant**, puis suivez l’à l’écran des instructions pour terminer l’installation.  
   
-#### <a name="to-create-a-certificate-request"></a>Pour créer une demande de certificat  
+#### <a name="create-a-certificate-request"></a>Créer une demande de certificat  
   
 1.  Dans le **Gestionnaire des Services Internet (IIS)**, développez **Sites Web**, avec le bouton droit le **Site Web par défaut**, cliquez sur **propriétés** , cliquez sur le **sécurité du répertoire** onglet, puis cliquez sur **certificat de serveur**.  
   
@@ -351,7 +291,7 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
   
 10. Sur le **résumé du fichier de demande** , cliquez sur **suivant**, puis cliquez sur **Terminer** sur la **achèvement** page.  
   
-#### <a name="to-submit-the-certificate-request-to-the-certification-authority"></a>Pour transmettre la demande de certificat à l'Autorité de certification  
+#### <a name="submit-the-certificate-request-to-the-certification-authority"></a>Soumettre la demande de certificat de l’autorité de Certification  
   
 1.  Dans Internet Explorer, dans la zone Adresse, tapez `http://localhost/certsrvt`, puis appuyez sur ENTRÉE.  
   
@@ -361,7 +301,7 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
   
 4.  Copiez le texte à partir de la c:\certreq.txt que vous avez créé dans la procédure « pour créer d’une demande de certificat », collez-le dans le **demande enregistrée** zone sur le **soumettre une demande de certificat ou une demande de renouvellement** page, puis cliquez sur **Submit**.  
   
-#### <a name="to-issue-a-certificate-using-certification-authority-management-tool"></a>Pour émettre un certificat à l'aide de l'outil de gestion de l'Autorité de certification  
+#### <a name="issue-a-certificate-using-certification-authority-management-tool"></a>Émettre un certificat à l’aide d’outil de gestion d’autorité de Certification  
   
 1.  Cliquez sur **Démarrer**, pointez sur **outils d’administration**, puis cliquez sur **autorité de Certification**.  
   
@@ -369,7 +309,7 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
   
 3.  Fermer le **autorité de Certification** console.  
   
-#### <a name="to-download-the-certificate-to-the-web-server"></a>Pour télécharger le certificat sur le serveur Web  
+#### <a name="download-the-certificate-to-the-web-server"></a>Téléchargez le certificat sur le serveur Web  
   
 1.  Dans Internet Explorer, dans la zone Adresse, tapez `http://localhost/certsrvt`, puis appuyez sur ENTRÉE.  
   
@@ -381,7 +321,7 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
   
 5.  Sur le **avertissement de sécurité** boîte de dialogue, cliquez sur **enregistrer**, puis enregistrez le certificat sous c:\certnew.cer.  
   
-#### <a name="to-install-the-certificate-to-the-web-server"></a>Pour installer le certificat sur le serveur Web  
+#### <a name="install-the-certificate-to-the-web-server"></a>Installez le certificat pour le serveur Web  
   
 1.  Dans le **Gestionnaire des Services Internet (IIS)**, développez **Sites Web**, avec le bouton droit le **Site Web par défaut** pour lequel vous avez créé la demande de certificat, puis Cliquez sur **propriétés**.  
   
@@ -400,8 +340,6 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
   
 ##  <a name="step9"></a>Créer des services Web pour les systèmes back-end  
   
-#### <a name="to-create-a-new-iis-application-pool-for-the-pending-transaction-web-services"></a>Pour créer un pool d'applications IIS pour les services Web Pending Transactions  
-  
 1.  Dans le **Gestionnaire des Services Internet (IIS)**, avec le bouton droit **Pools d’applications**, sélectionnez **nouveau**, puis sélectionnez **Poold’applications**.  
   
     > [!NOTE]
@@ -413,7 +351,7 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
   
 4.  Sur le **propriétés** , cliquez sur le **identité** onglet, sélectionnez **Configurable**, entrez la **nom d’utilisateur** et **mot de passe** , puis cliquez sur **OK**. Dans le cadre de cette procédure pas à pas, vous devez utiliser le même compte d'utilisateur que celui utilisé par le service BizTalk.  
   
-#### <a name="to-create-the-pendingtransactions-web-service-for-runtime"></a>Pour créer le service Web PendingTransactions à des fins d'exécution  
+#### <a name="create-the-pendingtransactions-web-service-for-runtime"></a>Créer le service PendingTransactions Web pour l’exécution  
   
 1.  Dans le **Gestionnaire des Services Internet (IIS)**, développez **Sites Web**, avec le bouton droit le **Site Web par défaut**, pointez sur **nouveau**, et puis cliquez sur **répertoire virtuel** pour exécuter **Assistant de création de répertoire virtuel**.  
   
@@ -433,7 +371,7 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
   
     3.  Dans le **répertoire virtuel** onglet, définissez la **Pool d’applications** au pool d’applications que vous avez créé dans la procédure « pour créer un nouveau pool d’applications IIS pour les services Web Pending transactions ».  
   
-#### <a name="to-create-the-pendingtransactions-web-service-for-development-environment"></a>Pour créer le service Web PendingTransactions pour l'environnement de développement  
+#### <a name="create-the-pendingtransactions-web-service-for-development-environment"></a>Créer le service PendingTransactions Web pour l’environnement de développement  
   
 1.  Dans le **Gestionnaire des Services Internet (IIS)**, développez **Sites Web**, avec le bouton droit le **Site Web par défaut**, pointez sur **nouveau**, et puis cliquez sur **répertoire virtuel** pour exécuter **Assistant de création de répertoire virtuel**.  
   
@@ -454,7 +392,7 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
   
     2.  Dans le **répertoire virtuel** onglet, définissez la **Pool d’applications** au pool d’applications que vous avez créé dans la procédure « pour créer un nouveau pool d’applications IIS pour les services Web Pending transactions ».  
   
-#### <a name="to-create-the-stub-sap-web-service"></a>Pour créer le service Web SAP stub  
+#### <a name="create-the-stub-sap-web-service"></a>Créer le service Web SAP Stub  
   
 1.  Dans le **Gestionnaire des Services Internet (IIS)**, développez **Sites Web**, avec le bouton droit le **Site Web par défaut**, pointez sur **nouveau**, et puis cliquez sur **répertoire virtuel** pour exécuter **Assistant de création de répertoire virtuel**.  
   
@@ -474,7 +412,7 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
   
 ##  <a name="step11"></a>Créer le composant TI pour la Solution orientée services  
   
-#### <a name="to-create-a-com-application-for-the-ti-component"></a>Pour créer une application COM+ pour le composant TI  
+#### <a name="create-a-com-application-for-the-ti-component"></a>Créer une application COM + pour le composant TI  
   
 1.  Ouvrez une invite de commandes, puis exécutez %systemroot%\system32\com\comexp.msc.  
   
@@ -497,7 +435,7 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
   
     7.  Sur le **achèvement** , cliquez sur **Terminer**.  
   
-#### <a name="to-create-a-remote-environment-to-access-the-mainframe"></a>Pour créer un environnement distant permettant d'accéder au macroordinateur  
+#### <a name="create-a-remote-environment-to-access-the-mainframe"></a>Créer un environnement à distance pour accéder au macroordinateur  
   
 1.  Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Microsoft Host Integration Server 2004**, puis cliquez sur **Gestionnaire TI**.  
   
@@ -513,7 +451,7 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
   
     5.  Sur le **achèvement** , cliquez sur **Terminer**.  
   
-#### <a name="to-create-the-ti-component-for-the-service-oriented-solution"></a>Pour créer le composant TI de la solution orientée services  
+#### <a name="create-the-ti-component-for-the-service-oriented-solution"></a>Créer le composant TI pour la Solution orientée services  
   
 1.  Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Microsoft Host Integration Server 2004**, puis cliquez sur **Gestionnaire TI**.  
   
@@ -529,7 +467,7 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
   
     5.  Sur le **création d’objets WIP** , cliquez sur **suivant**, puis cliquez sur **Terminer** sur la **achèvement** page.  
   
-#### <a name="to-test-the-connectivity-to-the-mainframe"></a>Pour tester la connectivité au macroordinateur  
+#### <a name="test-the-connectivity-to-the-mainframe"></a>Tester la connectivité au macroordinateur  
   
 1.  Dans l'Explorateur Windows, accédez au dossier %BTSSolutionsPath%\SO\MFAccess\HISTISimpleTester, puis double-cliquez sur le fichier Interop.SOHISTIUsingCOM.dll.reg. Cette action a pour effet d'ajouter des valeurs correspondant à l'application HISTISimpleTester au Registre afin d'appeler le composant TI via le wrapper RCW (Runtime Callable Wrapper).  
   
@@ -540,8 +478,6 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
     -   Dans l’application HISTISimpleTester, cliquez sur **appeler le programme du macroordinateur - utiliser COM**. Cinq enregistrements sont renvoyés de l'application COBOL exécutée sur le macroordinateur.  
   
 ##  <a name="step13"></a>Créer les répertoires virtuels pour l’orchestration des services Web  
-  
-#### <a name="to-create-the-virtual-directories-for-the-orchestration-web-services"></a>Pour créer les répertoires virtuels des services Web d'orchestration  
   
 1.  Dans le **Gestionnaire des Services Internet (IIS)**, avec le bouton droit **Pools d’applications**, sélectionnez **nouveau**, puis sélectionnez **Poold’applications**.  
   
@@ -588,8 +524,6 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
   
 ##  <a name="step15"></a>Générez la Solution orientée services  
   
-#### <a name="to-build-the-service-oriented-solution"></a>Pour créer la solution orientée services  
-  
 -   À l’invite de commandes, accédez au répertoire % BTSSolutionsPath%\SO\BTSSoln, tapez `SetupBTSSoln.bat`, puis appuyez sur ENTRÉE. La commande SetupBTSSoln.bat effectue les tâches suivantes :  
   
     -   Crée une clé de nom fort unique (SNK) pour signer les assemblys de la solution orientée services.  
@@ -601,8 +535,6 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
     -   création de SSOApplicationConfig dans le dossier %BTSSolutionsPath%\Common.  
   
 ##  <a name="step17"></a>Créer des applications associées SSO  
-  
-#### <a name="to-create-the-sso-affiliate-applications"></a>Pour créer les applications associées SSO  
   
 1.  Ouvrez une invite de commandes, puis accédez au répertoire %BTSSolutionsPath%\SO\BTSSoln\Scripts.  
   
@@ -726,8 +658,6 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
   
 ##  <a name="step19"></a>Déployer le fichier de définition BAM pour la Solution orientée services  
   
-#### <a name="to-deploy-the-bam-definition-file-for-the-service-oriented-solution"></a>Pour déployer le fichier de définition BAM pour la solution orientée services  
-  
 1.  Ouvrez une invite de commandes, tapez la commande suivante, puis appuyez sur ENTRÉE pour définir le chemin d'accès des utilitaires BAM :  
   
     -   SET PATH=%PATH%;[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking"  
@@ -738,7 +668,7 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
   
 ##  <a name="step21"></a>Déployer la Solution orientée services  
   
-#### <a name="to-edit-the-binding-files-for-the-service-oriented-solution"></a>Pour modifier les fichiers de liaison de la solution orientée services  
+#### <a name="update-the-binding-files-for-the-service-oriented-solution"></a>Mettre à jour les fichiers de liaison pour la Solution orientée services  
   
 1.  Ouvrez une invite de commandes, accédez au répertoire %BTSSolutionsPath%\SO\BTSSoln\Scripts, ouvrez le fichier Deployallbinding.xml à l'aide du Bloc-notes, puis effectuez les modifications suivantes :  
   
@@ -771,7 +701,7 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
   
     -   Remplacez toutes les occurrences de __MQ_QMANAGER_NAME\_ \_ avec le nom du Gestionnaire de file d’attente MQSeries.  
   
-#### <a name="to-deploy-the-service-oriented-solution"></a>Pour déployer la solution orientée services  
+#### <a name="deploy-the-service-oriented-solution"></a>Déployer la solution orientée services  
   
 -   À l’invite de commandes, accédez au répertoire dans le dossier %BTSSolutionsPath%\SO\BTSSoln\Scripts, tapez la commande suivante, puis appuyez sur ENTRÉE.  
   
@@ -782,7 +712,7 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
   
 ##  <a name="step23"></a>Configurer le Services Web Pending Transactions stub lorsqu’un macroordinateur n’est pas disponible  
   
-#### <a name="to-configure-the-stub-pending-transactions-web-service-for-using-the-adapter-version-without-a-mainframe"></a>Pour configurer le service Web Pending Transactions stub (pour utiliser la version d'adaptateur sans macroordinateur)  
+#### <a name="configure-the-stub-pending-transactions-web-service-for-using-the-adapter-version-without-a-mainframe"></a>Configurer le service Web Pending Transactions (pour utiliser la version d’adaptateur sans macroordinateur) stub  
   
 1.  Dans le **Gestionnaire des Services Internet (IIS)**, développez **Sites Web**, avec le bouton droit le **Site Web par défaut**, pointez sur **nouveau**, et puis cliquez sur **répertoire virtuel** pour exécuter **Assistant de création de répertoire virtuel**.  
   
@@ -808,7 +738,7 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
   
     2.  Fermez toutes les boîtes de dialogue.  
   
-#### <a name="to-configure-the-stub-pending-transactions-web-service-for-using-the-inline-version-without-a-mainframe"></a>Pour configurer le service Web Pending Transactions stub (pour utiliser la version Inline sans macroordinateur)  
+#### <a name="configure-the-stub-pending-transactions-web-service-for-using-the-inline-version-without-a-mainframe"></a>Configurer le service Web Pending Transactions (pour utiliser la version inline sans macroordinateur) stub  
   
 1.  Dans le **Gestionnaire des Services Internet (IIS)**, développez **Sites Web**, avec le bouton droit le **Site Web par défaut**, pointez sur **nouveau**, et puis cliquez sur **répertoire virtuel** pour exécuter **Assistant de création de répertoire virtuel**.  
   
@@ -836,8 +766,6 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
   
 ##  <a name="step25"></a>Démarrer le Service orienté solutions  
   
-#### <a name="to-start-the-service-oriented-solution"></a>Pour démarrer la solution orientée services  
-  
 1.  Ouvrez une invite de commandes, accédez au répertoire %BTSSolutionsPath%\SO\BTSSoln\Scripts, tapez la commande suivante, puis appuyez sur ENTRÉE pour démarrer toutes les orchestrations des versions d'adaptateur et Inline.  
   
     -   `startAll.vbs`  
@@ -850,4 +778,4 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
 ## <a name="see-also"></a>Voir aussi  
  [Avant d’installer la Solution orientée services](../core/before-installing-the-service-oriented-solution.md)   
  [Pour installer la Version Stub de Service de la Solution orientée services](../core/how-to-install-the-stub-version-of-the-service-oriented-solution.md)   
- [Installation d’ordinateur de développeur pour le Service orienté solutions](../core/developer-machine-setup-for-the-service-oriented-solution.md)
+ [Configuration de l’ordinateur de développement pour la solution orientée services](../core/developer-machine-setup-for-the-service-oriented-solution.md)

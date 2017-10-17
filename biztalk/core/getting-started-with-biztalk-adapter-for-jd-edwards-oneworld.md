@@ -1,31 +1,31 @@
 ---
-title: "Prise en main de l’adaptateur BizTalk pour JD Edwards OneWorld | Documents Microsoft"
+title: "Prise en main l’adaptateur BizTalk pour JD Edwards OneWorld | Documents Microsoft"
+description: "Installer et de parcourir un didacticiel pour l’adaptateur BizTalk pour JD Edwards OneWorld dans BizTalk Server"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 10/16/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: getting started
 ms.assetid: 79f2c176-bc61-4998-b21f-e5082fd977bb
 caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c425ee8c30dd3871e5320ad12f49d9dea68386f5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3bfae9bd57e79f49fef2d318b88e4f1b43d44301
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
-# <a name="getting-started-with-biztalk-adapter-for-jd-edwards-oneworld"></a>Mise en route de l'adaptateur BizTalk pour JD Edwards OneWorld
+# <a name="get-started-with-biztalk-adapter-for-jd-edwards-oneworld"></a>Prise en main l’adaptateur BizTalk pour JD Edwards OneWorld
+
+## <a name="overview"></a>Vue d'ensemble
 L'adaptateur Microsoft BizTalk pour JD Edwards OneWorld vous permet d'utiliser les fonctions commerciales de JD Edwards OneWorld avec BizTalk Server. Cette section présente l'adaptateur, décrit ses principales fonctionnalités, détaille sa configuration pour accéder aux informations spécifiques à JD Edwards EnterpriseOne et inclut un bref didacticiel.  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="next-steps"></a>Étapes suivantes
   
--   [Préparation de JD Edwards OneWorld](../core/preparing-jd-edwards-oneworld.md)  
+-   [Installation de l’adaptateur BizTalk pour JD Edwards OneWorld](../core/installing-biztalk-adapter-for-jd-edwards-oneworld.md)  
   
--   [L’installation de l’adaptateur BizTalk pour JD Edwards OneWorld](../core/installing-biztalk-adapter-for-jd-edwards-oneworld.md)  
-  
--   [Didacticiel : Utilisation de l’adaptateur BizTalk pour JD Edwards OneWorld](../core/tutorial-using-the-biztalk-adapter-for-jd-edwards-oneworld.md)
+-   [Didacticiel : Utilisation de l’adaptateur BizTalk pour JD Edwards OneWorld](../core/tutorial-using-the-biztalk-adapter-for-jd-edwards-oneworld.md)

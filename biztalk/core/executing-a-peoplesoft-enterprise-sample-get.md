@@ -12,29 +12,29 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3ae2233e1d98ff3fde5e27f54e8877fb4b73a96b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 101124b5992ba2fb6948ca2722700bb01bdc2a95
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
-# <a name="executing-a-peoplesoft-enterprise-sample-get"></a>Exécution d'un exemple d'opération Get de PeopleSoft Enterprise
-Le système PeopleSoft est accessible à partir de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] à l'aide de l'adaptateur PeopleSoft. Ce dernier fait partie des 8 adaptateurs sectoriels fournis par Microsoft à des fins d'utilisation avec [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)].  
+# <a name="execute-a-peoplesoft-enterprise-sample-get"></a>Exécuter un exemple d’opération Get PeopleSoft Enterprise
+Le système PeopleSoft est accessible à partir de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] à l'aide de l'adaptateur PeopleSoft. Cette carte est incluse avec [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].
   
  Il s'agit de la deuxième partie de l'atelier PeopleSoft. Au cours de la première partie (Atelier 1), vous avez consulté et modifié les données du système PeopleSoft sans utiliser [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ou d'autres technologies Microsoft. Dans la deuxième partie (Atelier 2), vous allez créer une orchestration BizTalk au sein d'un projet BizTalk [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]. Vous allez configurer les ports de cette orchestration de manière à ce qu'ils utilisent l'adaptateur PeopleSoft pour extraire des données du système PeopleSoft.  
   
 ## <a name="prerequisites"></a>Conditions préalables  
   
--   Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]  
+-   Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]
   
 -   Adaptateurs Microsoft BizTalk pour les applications d'entreprise  
   
--   Microsoft [!INCLUDE[vs2010](../includes/vs2010-md.md)]  
+-   Microsoft Visual Studio  
   
 -   Sun Systems Java Development Kit (JDK) version 1.4 ou ultérieure  
   
 > [!NOTE]
->  Pour plus d'informations sur l'installation et la configuration des adaptateurs Microsoft BizTalk pour les applications d'entreprise, consultez la page [http://go.microsoft.com/fwlink/?LinkId=56392](http://go.microsoft.com/fwlink/?LinkId=56392)(en anglais). Ce document inclut des informations de configuration importantes pour les adaptateurs sectoriels JD Edwards, PeopleSoft, Oracle, Tibco et Siebel.  
+>  Consultez [installer et configurer les adaptateurs pour les applications d’entreprise](../adapters-and-accelerators/install-configure-biztalk-adapters-enterprise-applications.md) pour des informations de configuration de la clé pour les adaptateurs JD Edwards, PeopleSoft et TIBCO.  
   
 ## <a name="lab-2---executing-a-peoplesoft-sample-get"></a>Atelier 2 : exécution d'un exemple d'opération Get PeopleSoft  
  Au cours de cet atelier, vous allez exécuter une opération **Get** sur le système PeopleSoft. Vous allez effectuer les tâches suivantes :  
@@ -58,29 +58,23 @@ Le système PeopleSoft est accessible à partir de [!INCLUDE[btsBizTalkServerNoV
   
  **C:\Program Files\Microsoft BizTalk Adapters pour Enterprise \Config**  
   
- Pour obtenir des instructions sur l'installation de l'interface de composant GET_CI_INFO dans le système PeopleSoft, consultez le guide d'installation des adaptateurs ou la page [http://go.microsoft.com/fwlink/?LinkId=56392](http://go.microsoft.com/fwlink/?LinkId=56392)(en anglais). Ces instructions sont destinées à un administrateur PeopleSoft expérimenté.  
+ Fournit des instructions générales sur l’installation de l’interface de composant GET_CI_INFO PeopleSoft [installer et configurer les adaptateurs pour les applications d’entreprise](../adapters-and-accelerators/install-configure-biztalk-adapters-enterprise-applications.md). Ces instructions sont destinées à un administrateur PeopleSoft expérimenté.  
   
-### <a name="verifying-the-peoplesoft-prerequisites"></a>Vérification de la configuration requise de PeopleSoft  
+## <a name="step-1-confirm-the-peoplesoft-rerequisites"></a>Étape 1 : Vérifier la rérequis PeopleSoft  
  Avant de commencer la création d'un projet BizTalk à des fins d'utilisation avec l'adaptateur PeopleSoft, vous devez vous assurer que tous les composants permettant d'accéder à PeopleSoft sont correctement configurés.  
   
-##### <a name="to-verify-the-peoplesoft-prerequisites"></a>Pour vérifier la configuration requise de PeopleSoft  
+1.  Vérifiez que le PSJOA. Fichier JAR existe sur le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ordinateur dans le dossier C:\psjars\ver841. Bien que ce fichier puisse exister dans un autre emplacement sous [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], la configuration indiquée ci-dessous part du principe que le fichier se trouve à cet emplacement.  
   
-1.  Vérifiez que le fichier PSJOA.JAR existe sur l'ordinateur [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] dans le dossier C:\psjars\ver841. Bien que ce fichier puisse exister dans un autre emplacement sous [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], la configuration indiquée ci-dessous part du principe que le fichier se trouve à cet emplacement.  
+2.  Vérifier que le fichier get_ci_info.pc existe dans le C:\Program Files\Microsoft dossier BizTalk Adapters for Enterprise \Config.  
   
-2.  Assurez-vous que le fichier get_ci_info.pc existe dans le dossier C:\Program Files\Microsoft BizTalk Adapters for Enterprise Applications\PeopleSoft Enterprise(r)\Config.  
+3.  Dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration de la console, développez **racine de la Console**, développez [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] **Administration**, développez **groupe BizTalk**, développez **Paramètres de plateforme**, puis développez **cartes**. Vérifiez que l'adaptateur PeopleSoft est installé et qu'il figure dans la liste.  
   
-3.  Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)], puis cliquez sur **Administration de BizTalk Server**.  
+     S'il n'est pas installé, installez les adaptateurs BizTalk pour les applications d'entreprise (voir la section « Configuration requise » ci-dessus). Une fois ceux-ci installés, cliquez avec le bouton droit sur **Adaptateurs** , puis cliquez sur **Nouveau - Adaptateur** pour installer l'adaptateur PeopleSoft. Redémarrez l’instance d’hôte pour que cela prenne effet.  
   
-4.  Dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration de la console, développez **racine de la Console**, développez [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **Administration**, développez **groupe BizTalk**, développez **Paramètres de plateforme**, puis développez **cartes**. Vérifiez que l'adaptateur PeopleSoft est installé et qu'il figure dans la liste.  
-  
-     S'il n'est pas installé, installez les adaptateurs BizTalk pour les applications d'entreprise (voir la section « Configuration requise » ci-dessus). Une fois ceux-ci installés, cliquez avec le bouton droit sur **Adaptateurs** , puis cliquez sur **Nouveau - Adaptateur** pour installer l'adaptateur PeopleSoft. Pour que cette opération soit prise en compte, vous devez redémarrer l'instance d'hôte.  
-  
-### <a name="creating-a-send-port-for-peoplesoft"></a>Création d'un port d'envoi pour PeopleSoft  
+## <a name="step-2-create-a-send-port-for-peoplesoft"></a>Étape 2 : Créer un Port d’envoi pour PeopleSoft  
  Pour communiquer avec le système PeopleSoft, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] doit disposer d'un port d'envoi, qui est généralement lié aux ports logiques de l'orchestration.  
   
-##### <a name="to-create-the-peoplesoft-send-port"></a>Pour créer le port d'envoi PeopleSoft  
-  
-1.  Dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration de la console, développez **racine de la Console**, développez[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **Administration**, développez **groupe BizTalk**, développez **Applications**, puis développez **BizTalk.EnterpriseApplication.**  
+1.  Dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration de la console, développez **racine de la Console**, développez **Administration de BizTalk Server**, développez **groupe BizTalk**, développez  **Applications**, puis développez **BizTalk.EnterpriseApplication.**  
   
 2.  Cliquez avec le bouton droit sur **Ports d'envoi**, cliquez sur **Nouveau**, puis sélectionnez **Port d'envoi statique avec sollicitation-réponse**. Dans la boîte de dialogue **Propriétés de port d'envoi** , entrez les valeurs de propriété suivantes :  
   
@@ -114,10 +108,8 @@ Le système PeopleSoft est accessible à partir de [!INCLUDE[btsBizTalkServerNoV
   
 4.  Cliquez sur **OK** à deux reprises pour fermer les boîtes de dialogue.  
   
-### <a name="creating-a-biztalk-orchestration-project"></a>Création d'un projet d'orchestration BizTalk  
+## <a name="step-3-create-a-biztalk-orchestration-project"></a>Étape 3 : Créer un projet d’Orchestration BizTalk  
  Vous allez à présent créer un projet BizTalk dans [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] et y configurer une orchestration pour gérer les communications entre [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] et le système PeopleSoft. Vous allez ajouter des ports d'envoi et de réception, créer le projet, puis le déployer.  
-  
-##### <a name="to-create-the-biztalk-orchestration-project-in-visual-studio"></a>Pour créer le projet d'orchestration BizTalk dans Visual Studio  
   
 1.  Ouvrez [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], puis créez un projet BizTalk dans le dossier C:\LABS. Dans le menu **Fichier** , cliquez sur **Nouveau**. La boîte de dialogue **Nouveau projet** s'affiche. Dans la boîte de dialogue **Modèles** , sélectionnez **Projet BizTalk Server vide** . Entrez `PS_Test` comme nom unique du projet, puis cliquez sur **OK**.  
   
@@ -148,7 +140,7 @@ Le système PeopleSoft est accessible à partir de [!INCLUDE[btsBizTalkServerNoV
   
  Pour terminer l'orchestration, vous devez créer et configurer les ports pour recevoir et envoyer les fichiers XML. Commencez par configurer un nouveau port de réception pour accepter le fichier d'entrée XML initial contenant la méthode **Get** pour démarrer l'orchestration.  
   
-##### <a name="to-configure-a-receive-port"></a>Pour configurer un port de réception  
+#### <a name="configure-a-receive-port"></a>Configurer un port de réception  
   
 1.  Dans le fichier BizTalk Orchestration.odx ouvert à l'étape précédente, cliquez avec le bouton droit sur la surface du port de gauche, puis cliquez sur **Nouveau port configuré**. L'Assistant Configuration du port démarre. Dans la page **Bienvenue dans l'Assistant Configuration du port** , cliquez sur **Suivant**.  
   
@@ -172,7 +164,7 @@ Le système PeopleSoft est accessible à partir de [!INCLUDE[btsBizTalkServerNoV
   
  Créez ensuite un port d'envoi pour accepter le fichier XML contenant les résultats de l'emplacement provenant de l'appel à la méthode **Get** PeopleSoft. L'orchestration utilise l'adaptateur FILE pour enregistrer le fichier XML sur le disque via ce port d'envoi.  
   
-##### <a name="to-configure-a-send-port"></a>Pour configurer un port d'envoi  
+#### <a name="configure-a-send-port"></a>Configurer un port d’envoi  
   
 1.  Dans le fichier BizTalk Orchestration.odx, cliquez avec le bouton droit sur la surface du port de gauche, puis cliquez sur **Nouveau port configuré**. L'Assistant Configuration du port démarre. Dans la page **Bienvenue dans l'Assistant Configuration du port** , cliquez sur **Suivant**.  
   
@@ -196,7 +188,7 @@ Le système PeopleSoft est accessible à partir de [!INCLUDE[btsBizTalkServerNoV
   
  Pour terminer, créez un port d'envoi/réception pour envoyer le fichier d'entrée XML initial contenant la méthode **Get** au système PeopleSoft. Ce port reçoit également un fichier XML contenant les informations d'emplacement issues de l'appel de la méthode **Get** auprès du système PeopleSoft.  
   
-##### <a name="to-configure-a-sendreceive-port"></a>Pour configurer un port d'envoi/réception  
+#### <a name="configure-a-sendreceive-port"></a>Configurer un port d’envoi/réception  
   
 1.  Dans le fichier BizTalk Orchestration.odx, cliquez avec le bouton droit sur la surface du port de droite, puis cliquez sur **Nouveau port configuré**. L'Assistant Configuration du port démarre. Dans la page **Bienvenue dans l'Assistant Configuration du port** , cliquez sur **Suivant**.  
   
@@ -218,7 +210,7 @@ Le système PeopleSoft est accessible à partir de [!INCLUDE[btsBizTalkServerNoV
   
  Insérez deux formes **Envoi** et deux formes **Réception** dans l'orchestration afin de les lier aux ports que vous venez de créer.  
   
-##### <a name="to-add-send-and-receive-shapes"></a>Pour ajouter des formes Envoi et Réception  
+#### <a name="add-send-and-receive-shapes"></a>Ajouter d’envoyer et recevoir des formes  
   
 1.  Faites glisser un composant **Réception** à partir de la Boîte à outils, puis déposez-le sous le début de l'orchestration (cercle vert). Cliquez sur la forme **Réception** , puis dans la fenêtre Propriétés, définissez `FromDisk` sur **FileIn**, puis **Activer** sur `true`. Cette opération permet d'activer l'orchestration lorsque ce port de réception reçoit un document entrant.  
   
@@ -232,7 +224,7 @@ Le système PeopleSoft est accessible à partir de [!INCLUDE[btsBizTalkServerNoV
   
  Dans cette orchestration, vous utiliserez uniquement des messages **Get-Request** et **Get-Response** . Si l'orchestration met à jour les données, par exemple à l'aide de la méthode **UpdateEx** , différents messages Request/Response sont nécessaires.  
   
-##### <a name="to-define-and-assign-messages-to-ports"></a>Pour définir et affecter des messages aux ports  
+#### <a name="define-and-assign-messages-to-ports"></a>Définir et affecter des messages aux ports  
   
 1.  Sur la surface du port de gauche, cliquez sur **Request** sur le port **FileIn** . Dans la fenêtre Propriétés, développez **Type de message**et **Messages à parties multiples**, puis cliquez sur **PS_Test.Get**.  
   
@@ -260,12 +252,10 @@ Le système PeopleSoft est accessible à partir de [!INCLUDE[btsBizTalkServerNoV
   
      ![](../core/media/d16e02bc-954c-4aa2-99d6-3fee1222c730.gif "d16e02bc-954c-4aa2-99d6-3fee1222c730")  
   
-### <a name="building-and-deploying-the-project"></a>Création et déploiement du projet  
+## <a name="step-4-build-and-deploy-the-project"></a>Étape 4 : Créer et déployer le projet  
  Le projet BizTalk étant à présent terminé, vous pouvez le créer et le déployer dans [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].  
   
-##### <a name="to-build-and-deploy-the-project"></a>Pour créer et déployer le projet  
-  
-1.  Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Microsoft [!INCLUDE[vs2010](../includes/vs2010-md.md)]** , pointez sur **Visual Studio Tools**, puis cliquez sur  **[!INCLUDE[vs2010](../includes/vs2010-md.md)] Invite de commandes**.  
+1.  Dans Visual Studio, pointez sur **Visual Studio Tools**, puis sélectionnez Visual Studio invite **.  
   
 2.  Pour créer le projet, un fichier de clé de nom fort est nécessaire. Pour en créer un, à l'invite de commandes, entrez le code suivant :  
   
@@ -287,10 +277,10 @@ Le système PeopleSoft est accessible à partir de [!INCLUDE[btsBizTalkServerNoV
   
 10. Une fois la génération correctement terminée, cliquez avec le bouton droit sur le projet **PS_Test** , puis cliquez sur **Déployer**.  
   
-### <a name="testing-the-application-and-viewing-the-xml-output"></a>Test de l'application et affichage de la sortie XML  
+## <a name="step-5-test-the-application-and-viewing-the-xml-output"></a>Étape 5 : Tester l’Application et afficher la sortie XML  
  Vous allez à présent tester l'application que vous avez créée et déployée. Vous allez créer le fichier XML qui démarre le processus d'orchestration, puis vous allez configurer les dossiers afin qu'ils reçoivent et envoient des fichiers XML au sein de l'application. Une fois l'application configurée, vous allez l'exécuter et afficher les fichiers XML qu'elle renvoie.  
   
-##### <a name="to-generate-the-xml-file-for-the-query"></a>Pour générer le fichier XML pour la requête  
+#### <a name="generate-the-xml-file-for-the-query"></a>Générer le fichier XML de la requête  
   
 1.  Dans l'Explorateur de solutions, double-cliquez sur **LOCATIONService_LOCATION_x5d.xsd** pour ouvrir le fichier.  
   
@@ -304,11 +294,11 @@ Le système PeopleSoft est accessible à partir de [!INCLUDE[btsBizTalkServerNoV
   
      ![](../core/media/ef65a96c-2daa-44db-ab95-d18b1fda934e.gif "ef65a96c-2daa-44db-ab95-d18b1fda934e")  
   
-##### <a name="to-configure-and-start-the-biztalk-application"></a>Pour configurer et démarrer l'application BizTalk  
+#### <a name="configure-and-start-the-biztalk-application"></a>Configurer et démarrer l’application BizTalk  
   
 1.  Configurez les dossiers afin qu'ils reçoivent les fichiers entrants et envoient les fichiers sortants. Accédez au répertoire **C:\LABS\PS_TEST** , puis créez deux sous-dossiers nommés `FileIn` et `FileOut`.  
   
-2.  Dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration de la console, développez **racine de la Console**, développez[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **Administration**, développez **groupe BizTalk**, développez **Applications**, avec le bouton droit **PS_Test** puis cliquez sur **configurer**.  
+2.  Dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration de la console, développez **racine de la Console**, développez  **[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration**, développez **groupe BizTalk**, développez **Applications**, avec le bouton droit **PS_Test** puis cliquez sur **configurer**.  
   
      ![](../core/media/e45f4c8b-fc8a-492a-9824-5232eb728d95.gif "e45f4c8b-fc8a-492a-9824-5232eb728d95")  
   
@@ -386,7 +376,7 @@ Le système PeopleSoft est accessible à partir de [!INCLUDE[btsBizTalkServerNoV
   
      ![](../core/media/7bf30707-c7c6-409f-af18-9c9dfeb0de58.gif "7bf30707-c7c6-409f-af18-9c9dfeb0de58")  
   
-##### <a name="to-test-the-orchestration"></a>Pour tester l'orchestration  
+#### <a name="test-the-orchestration"></a>Tester l’orchestration  
   
 1.  Dans le répertoire **C:\Labs\PS_Test** , modifiez le fichier **Samplequery.xml** comme suit :  
   

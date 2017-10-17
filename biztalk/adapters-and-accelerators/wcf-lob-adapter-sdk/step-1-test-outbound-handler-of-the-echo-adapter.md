@@ -12,18 +12,18 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0bf419a8ae3e6611f3d071cc94d274a5f2b0e00f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ba2b1d6586588d17c58c0ca9a74cb11a7a9bd9f2
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="step-1-test-outbound-handler-of-the-echo-adapter"></a>Étape 1 : Tester le gestionnaire sortant de l’adaptateur d’écho
 ![Étape 1 sur 2](../../adapters-and-accelerators/adapter-sql/media/step-1of2.gif "Step_1of2")  
   
  **Heure à finaliser :** 15 minutes  
   
- Dans cette étape, vous allez tester les trois opérations sortantes fournies par l’adaptateur de l’écho. Vous effectuerez les opérations à l’aide de [!INCLUDE[vs2010](../../includes/vs2010-md.md)], l’ajouter adaptateur Service référence Visual Studio plug-in et le code personnalisé.  
+ Dans cette étape, vous allez tester les trois opérations sortantes fournies par l’adaptateur de l’écho. Vous effectuerez les opérations à l’aide de Visual Studio, l’ajouter adaptateur Service référence Visual Studio plug-in et le code personnalisé.  
   
 ## <a name="prerequisites"></a>Conditions préalables  
  Pour effectuer cette étape, vous devez avoir terminé [didacticiel 1 : développer l’adaptateur Echo](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md).  
@@ -188,7 +188,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  Dans l’EchoCustomGreetingsFromFile code de test, assurez-vous que le message d’accueil personnalisée utilise le fichier que vous avez créé dans une procédure précédente. Modifier le code pour refléter l’emplacement de votre fichier.  
   
-8.  Dans [!INCLUDE[vs2010](../../includes/vs2010-md.md)], dans le **fichier** menu, cliquez sur **Enregistrer tout**.  
+8.  Dans Visual Studio, sur le **fichier** menu, cliquez sur **Enregistrer tout**.  
   
 9. Exécutez l'application. Vous devez voir une sortie similaire à ce qui suit :  
   
@@ -230,4 +230,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>Voir aussi  
   [Didacticiel 2 : Utiliser l’adaptateur d’écho à partir de .NET](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-2-consume-the-echo-adapter-from-net.md)   
- [Étape 2 : Tester le Gestionnaire d’entrée de l’adaptateur d’écho](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-test-inbound-handler-of-the-echo-adapter.md)
+ [Étape 2 : Tester le gestionnaire de trafic entrant de l’adaptateur Echo](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-test-inbound-handler-of-the-echo-adapter.md)

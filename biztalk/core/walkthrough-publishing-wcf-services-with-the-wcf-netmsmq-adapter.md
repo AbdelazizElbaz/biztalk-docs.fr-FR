@@ -12,11 +12,11 @@ caps.latest.revision: "46"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e7c80859e83d915d835aa99b0456ca763ed267f4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 38530cfdbde78e96fb41093c79b6a5d1bb8fd132
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="walkthrough-publishing-wcf-services-with-the-wcf-netmsmq-adapter"></a>Procédure pas à pas : Publication de Services WCF avec l’adaptateur WCF-NetMsmq
   
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
   
  Une fois cette procédure pas à pas terminée, vous saurez comment effectuer les tâches suivantes :  
   
--   Depuis [!INCLUDE[vs2010](../includes/vs2010-md.md)], utilisez le **déployer** commande pour déployer des assemblys BizTalk à une instance locale de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Vous créerez ainsi une application BizTalk contenant ces assemblys. Un assembly BizTalk contient des informations sur les ressources utilisées dans une solution BizTalk Server (par exemple, des orchestrations, des pipelines, des schémas et des mappages).  
+-   Depuis Visual Studio, utilisez le **déployer** commande pour déployer des assemblys BizTalk à une instance locale de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Vous créerez ainsi une application BizTalk contenant ces assemblys. Un assembly BizTalk contient des informations sur les ressources utilisées dans une solution BizTalk Server (par exemple, des orchestrations, des pipelines, des schémas et des mappages).  
   
 -   À partir de la console Administration de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], configurez un emplacement de réception WCF-NetMsmq de manière à héberger le service [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] publié.  
   
@@ -42,9 +42,9 @@ ms.lasthandoff: 09/20/2017
 ## <a name="prerequisites"></a>Conditions préalables  
  Pour exécuter la procédure décrite dans cet exemple, assurez-vous que votre environnement est conforme à la configuration requise décrite ci-dessous :  
   
--   L’ordinateur qui génère les assemblys et exécute le processus de déploiement et l’ordinateur qui exécute l’exemple, requièrent Microsoft [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)], Microsoft [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]et Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)].  
+-   L’ordinateur qui génère les assemblys et exécute le processus de déploiement et de l’ordinateur qui exécute l’exemple, requièrent Microsoft Windows Server, .NET Framework et BizTalk Server.  
   
--   L'ordinateur utilisé pour générer les assemblys et exécuter le processus de déploiement requiert Microsoft [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
+-   L’ordinateur utilisé pour générer les assemblys et exécuter le processus de déploiement requiert Microsoft Visual Studio.  
   
 -   L'ordinateur qui exécute l'exemple requiert les adaptateurs [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] et les outils d'administration de [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]. Il s'agit d'options à installer lors de l'installation de Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)].  
   
@@ -60,7 +60,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  Extrayez WCFNetMsmqAdapterPublishing.exe à **C:\WCFNetMsmqAdapterPublishing**.  
   
-2.  Dans [!INCLUDE[vs2010](../includes/vs2010-md.md)], ouvrez le **WCFNetMsmqAdapterPublishing.sln** fichier.  
+2.  Dans Visual Studio, ouvrez le **WCFNetMsmqAdapterPublishing.sln** fichier.  
   
 3.  Dans l’Explorateur de solutions, développez **BizTalkApp**, puis ouvrez **OrderProcess.odx** pour passer en revue. L'exemple d'orchestration reçoit des messages de demande de commande et renvoie simplement des messages de réponse de commande.  
   
@@ -197,7 +197,7 @@ ms.lasthandoff: 09/20/2017
   
     5.  Dans le Gestionnaire des services Internet, dans le volet central, cliquez sur **affichage du contenu** pour afficher les fichiers de l’application.  
   
-    6.  Avec le bouton droit le **Microsoft_Samples_BizTalk_WCF_NetMsmqPublishing_BizTalkApp_OrderProcess_PurchaseOrderRequestPort.svc** service de fichiers qui le **Assistant Publication du Service WCF BizTalk** créé, puis cliquez sur **Parcourir**. S’ouvre Internet Explorer pour afficher le **BizTalkServerInstance Service** page indiquant qu’une instance de la [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] service est en cours d’exécution. Cette page affiche une adresse WSDL complète, que vous pouvez copier et utiliser avec l'outil de métadonnées de service (svcutil.exe) ou dans [!INCLUDE[vs2010](../includes/vs2010-md.md)], pour extraire un code proxy et un fichier de configuration utilisables pour créer une application cliente pour le service.  
+    6.  Avec le bouton droit le **Microsoft_Samples_BizTalk_WCF_NetMsmqPublishing_BizTalkApp_OrderProcess_PurchaseOrderRequestPort.svc** service de fichiers qui le **Assistant Publication du Service WCF BizTalk** créé, puis cliquez sur **Parcourir**. S’ouvre Internet Explorer pour afficher le **BizTalkServerInstance Service** page indiquant qu’une instance de la [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] service est en cours d’exécution. La page affiche une adresse WSDL complète que vous pouvez copier et utiliser avec l’outil de métadonnées de Service (svcutil.exe) ou à partir de Visual Studio, pour récupérer le proxy code et une fichier de configuration qui peut être utilisé pour créer une application cliente pour le service.  
   
     7.  Copier dans le Presse-papiers la ligne de commande avec l’adresse WSDL complète à partir de **BizTalkServerInstance Service** page Internet Explorer s’affiche à l’étape précédente.  
   
@@ -205,11 +205,11 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="build-the-client-application"></a>Générez l’application cliente  
   
-1.  Ouvrir un [!INCLUDE[vs2010](../includes/vs2010-md.md)] invite de commandes en tant qu’administrateur et accédez à la **C:\WCFNetMsmqAdapterPublishing\WCFClient** dossier. Il s'agit de l'emplacement où vous allez placer la classe de proxy et le fichier de configuration de l'application.  
+1.  Ouvrez une invite de commandes de Visual Studio en tant qu’administrateur et accédez à la **C:\WCFNetMsmqAdapterPublishing\WCFClient** dossier. Il s'agit de l'emplacement où vous allez placer la classe de proxy et le fichier de configuration de l'application.  
   
 2.  Collez la ligne de commande svcutil.exe entière contenant l'adresse WSDL complète que vous avez copiée dans la procédure précédente, puis appuyez sur ENTRÉE. Cela crée la classe proxy, **BizTalkServiceInstance.cs**et le fichier de configuration d’application, **output.config**. Conservez la fenêtre de l'invite de commandes ouverte pour l'utiliser dans la dernière section.  
   
-3.  Dans [!INCLUDE[vs2010](../includes/vs2010-md.md)], dans l’Explorateur de solutions, cliquez sur **WCFClient**, pointez sur **ajouter**, puis cliquez sur **élément existant**.  
+3.  Dans Visual Studio, dans l’Explorateur de solutions, cliquez sur **WCFClient**, pointez sur **ajouter**, puis cliquez sur **élément existant**.  
   
 4.  Dans le **ajouter un élément existant** boîte de dialogue, cliquez sur Parcourir pour le **WCFClient** dossier, sélectionnez **tous les fichiers (\*.\*)**  dans les **types de fichiers** la liste déroulante, sélectionnez le **BizTalkServiceInstance.cs** et **output.config** fichiers, puis cliquez sur  **Ajouter**.  
   
@@ -219,7 +219,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  Développez **références**et assurez-vous que le **WCFClient** projet a **System.ServiceModel.dll** référencé.  
   
-8.  Avec le bouton droit le **WCFClient** de projet et sélectionnez **Build**. Conservez [!INCLUDE[vs2010](../includes/vs2010-md.md)] ouvert et passez à la section suivante.  
+8.  Avec le bouton droit le **WCFClient** de projet et sélectionnez **Build**. Laissez Visual Studio ouvert et passez à la section suivante.  
   
 ## <a name="test-the-sample-solution-with-the-wcf-netmsmq-adapter"></a>Tester l’exemple de solution avec l’adaptateur WCF-NetMsmq  
   
@@ -227,7 +227,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  Dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration de la console, développez **paramètres de plateforme**, développez **Instances d’hôte**, avec le bouton droit **BizTalkServerApplication** ou un autre approprié d’instance d’hôte, puis cliquez sur **redémarrer**. Si cette étape n'est pas obligatoire, il est conseillé de vérifier que l'exemple fonctionne correctement à ce stade.  
   
-3.  Dans [!INCLUDE[vs2010](../includes/vs2010-md.md)], dans le **déboguer** menu, cliquez sur **démarrer sans débogage** pour exécuter l’application WCFClient. Cela envoie un exemple de message vers l'emplacement de réception WCF-NetMsmq. Vous visualiserez le message sortant ci-dessous indiquant que le message a été envoyé.  
+3.  Dans Visual Studio, sur le **déboguer** menu, cliquez sur **démarrer sans débogage** pour exécuter l’application WCFClient. Cela envoie un exemple de message vers l'emplacement de réception WCF-NetMsmq. Vous visualiserez le message sortant ci-dessous indiquant que le message a été envoyé.  
   
      **Emplacement de réception de l’appel de l’opération d’envoi WCF-NetMsmq**  
   
@@ -235,11 +235,11 @@ ms.lasthandoff: 09/20/2017
   
 4.  Appuyez sur n'importe quelle touche pour fermer l'application WCFClient.  
   
-5.  Dans le [!INCLUDE[vs2010](../includes/vs2010-md.md)] invite de commandes, accédez à la **C:\WCFNetMsmqAdapterPublishing\Out** dossier, puis assurez-vous que le message de réponse que l’application WCFClient a renvoyé existe.  
+5.  Dans le Visual Studio invite de commandes, accédez à la **C:\WCFNetMsmqAdapterPublishing\Out** dossier, puis assurez-vous que le message de réponse que l’application WCFClient a renvoyé existe.  
   
 6.  Double-cliquez sur le fichier {GUID} .xml pour l’ouvrir dans Internet Explorer et afficher la **OrderID** valeur traitée par le service.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Configurer un WCF-NetMsmq emplacement de réception](../core/how-to-configure-a-wcf-netmsmq-receive-location.md)   
  [Procédures pas à pas l’adaptateur WCF](../core/wcf-adapter-walkthroughs.md)   
- [Publication des métadonnées de Service WCF pour les adaptateurs de réception](../core/publishing-service-metadata-for-the-wcf-receive-adapters.md)
+ [Publication des métadonnées de service pour les adaptateurs de réception WCF](../core/publishing-service-metadata-for-the-wcf-receive-adapters.md)

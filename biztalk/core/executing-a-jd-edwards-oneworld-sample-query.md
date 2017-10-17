@@ -1,5 +1,5 @@
 ---
-title: "L’exécution de JD Edwards OneWorld requête | Documents Microsoft"
+title: "Exécutez JD Edwards OneWorld requête | Documents Microsoft"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 35d05dfe719a9b199d7422f99ef80e888126f01f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 58e06eb1b606217aea6fe5e40ac645a2eaf623c2
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
-# <a name="executing-a-jd-edwards-oneworld-sample-query"></a>Exécution d'un exemple de requête JD Edwards OneWorld
-Le système JD Edwards OneWorld (JDEOW) est accessible à partir d'un système [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] à l'aide de l'adaptateur JD Edwards OneWorld. Ce dernier fait partie des 8 adaptateurs sectoriels fournis par Microsoft à des fins d'utilisation avec [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)].  
+# <a name="execute-a-jd-edwards-oneworld-sample-query"></a>Exécuter une requête d’exemple de OneWorld de JD Edwards
+Le système JD Edwards OneWorld (JDEOW) est accessible à partir d'un système [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] à l'aide de l'adaptateur JD Edwards OneWorld. Cette carte est incluse avec [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].
   
  Il s'agit de la deuxième partie de l'atelier JD Edwards OneWorld. Au cours de la première partie (Atelier 1), vous avez consulté les données du système JD Edwards OneWorld sans utiliser [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ou d'autres technologies Microsoft. Dans la deuxième partie (Atelier 2), vous allez créer une orchestration BizTalk au sein d'un projet BizTalk [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]. Vous allez configurer les ports de cette orchestration de manière à ce qu'ils utilisent l'adaptateur JD Edwards OneWorld pour extraire des données du système JD Edwards OneWorld.  
   
 ## <a name="prerequisites"></a>Conditions préalables  
   
--   Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]  
+-   Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]
   
--   Microsoft [!INCLUDE[vs2010](../includes/vs2010-md.md)]  
+-   Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 
   
 -   Logiciel client JD Edwards OneWorld  
   
@@ -36,7 +36,7 @@ Le système JD Edwards OneWorld (JDEOW) est accessible à partir d'un système 
 -   Adaptateurs Microsoft BizTalk pour les applications d'entreprise  
   
 > [!NOTE]
->  Pour plus d’informations sur l’installation et la configuration des adaptateurs Microsoft BizTalk pour les Applications d’entreprise, consultez [lien hypertexte « http://go.microsoft.com/fwlink/?LinkId=196039 » \t « _blank » http://go.microsoft.com/fwlink/?LinkId=196039](http://go.microsoft.com/fwlink/?LinkId=196039). Ce document inclut des informations de configuration importantes pour les adaptateurs sectoriels JD Edwards, PeopleSoft, JD Edwards OneWorld, TIBCO et Siebel.  
+>  Consultez [installer et configurer les adaptateurs pour les applications d’entreprise](../adapters-and-accelerators/install-configure-biztalk-adapters-enterprise-applications.md) pour des informations de configuration de la clé pour les adaptateurs JD Edwards, PeopleSoft et TIBCO.  
   
 ## <a name="lab-2---executing-a-jd-edwards-oneworld-sample-query"></a>Atelier 2 : l’exécution de JD Edwards OneWorld requête  
  Dans cet atelier, vous allez exécuter un **obtenir** opération sur le système JD Edwards OneWorld. Vous allez effectuer les tâches suivantes :  
@@ -57,43 +57,31 @@ Le système JD Edwards OneWorld (JDEOW) est accessible à partir d'un système 
   
  Avant d'exécuter une requête de service, vous devez créer des schémas associés aux requêtes et aux réponses de service pour l'objet JD Edwards OneWorld spécifique. L'Assistant Ajouter les éléments générés/Ajout d'adaptateur crée ces schémas en interrogeant directement l'objet de métadonnées de support dans JD Edwards OneWorld. Cet atelier présente les étapes requises pour créer des schémas pour le **Address Book MBF** (méthode) et de traiter une requête.  
   
-## <a name="procedures-for-lab-2--executing-a-jd-edwards-oneworld-sample-query"></a>Atelier 2 : exécution d'un exemple de requête JD Edwards OneWorld  
+## <a name="step-1-verify-the-jd-edwards-oneworld-prerequisites"></a>Étape 1 : Vérifier les conditions préalables de JD Edwards OneWorld  
+ Avant de commencer la création d'un projet BizTalk à des fins d'utilisation avec l'adaptateur JD Edwards OneWorld, vous devez vous assurer que les fichiers et l'adaptateur permettant d'accéder au système JD Edwards OneWorld sont configurés correctement. Sur l'ordinateur exécutant [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], l'adaptateur JD Edwards OneWorld communique avec le système JD Edwards OneWorld à l'aide de l'interface Java.    
+
+1. Quatre fichiers sont nécessaires pour l’accès de l’interface appropriée pour un système JD Edwards OneWorld à l’aide de l’adaptateur JD Edwards OneWorld : Connector.jar, Kernel.jar, BTSLIBinterop.jar et JDEJAccess.jar.  
   
-### <a name="verifying-the-jd-edwards-oneworld-prerequisites"></a>Vérification des composants requis pour JD Edwards OneWorld  
- Avant de commencer la création d'un projet BizTalk à des fins d'utilisation avec l'adaptateur JD Edwards OneWorld, vous devez vous assurer que les fichiers et l'adaptateur permettant d'accéder au système JD Edwards OneWorld sont configurés correctement. Sur l'ordinateur exécutant [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], l'adaptateur JD Edwards OneWorld communique avec le système JD Edwards OneWorld à l'aide de l'interface Java.  
+    -   Les fichiers Connector.jar et Kernel.jar sont fournis avec le système JD Edwards OneWorld et sont obtenus auprès d'un administrateur JD Edwards OneWorld. Ces fichiers se trouvent dans le dossier C:\JDEOWJars.  
   
- Quatre fichiers sont nécessaires pour l’accès de l’interface appropriée pour un système JD Edwards OneWorld à l’aide de l’adaptateur JD Edwards OneWorld : Connector.jar, Kernel.jar, BTSLIBinterop.jar et JDEJAccess.jar.  
+    -   Le fichier BTSLIBinterop.jar est généré par le système JD Edwards OneWorld en suivant les instructions indiquées dans le guide d'installation associé aux adaptateurs. Il se trouve dans le dossier C:\JDEOWJars.  
   
--   Les fichiers Connector.jar et Kernel.jar sont fournis avec le système JD Edwards OneWorld et sont obtenus auprès d'un administrateur JD Edwards OneWorld. Ces fichiers se trouvent dans le dossier C:\JDEOWJars.  
+    -   Le fichier JDEJAccess.jar fait partie de l'adaptateur JDEOW et est inclus dans l'installation de l'adaptateur. Par défaut, il se trouve dans le C:\Program Files\Microsoft BizTalk Adapters pour applications\j.d d’entreprise. Dossier de \Classes Edwards.  
   
--   Le fichier BTSLIBinterop.jar est généré par le système JD Edwards OneWorld en suivant les instructions indiquées dans le guide d'installation associé aux adaptateurs. Il se trouve dans le dossier C:\JDEOWJars.  
+2. Confirmer la Connector.jar, Kernel.jar, et BTSLIBinterop.jar fichiers existent sur le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ordinateur dans le dossier C:\JDEOWJars.  
   
--   Le fichier JDEJAccess.jar fait partie de l'adaptateur JDEOW et est inclus dans l'installation de l'adaptateur. Par défaut, il se trouve dans le C:\Program Files\Microsoft BizTalk Adapters pour applications\j.d d’entreprise. Dossier de \Classes Edwards.  
+3. Vérifiez que le fichier JDEJAccess.jar existe sur le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ordinateur dans le C:\Program Files\Microsoft BizTalk Adapters pour applications\j.d d’entreprise. Edwards OneWorld\Classes dossier.  
   
-##### <a name="to-verify-the-jd-edwards-oneworld-prerequisites"></a>Pour vérifier les composants requis pour JD Edwards OneWorld  
+## <a name="step-2-configure-biztalk-send-ports"></a>Étape 2 : Configurer les ports d’envoi BizTalk  
+Ensuite, vérifiez que l’adaptateur JD Edwards OneWorld est installé et créer le port d’envoi.  
+
+1.  Ouvrez **Administration de BizTalk Server**, développez **racine de la Console**, développez **Administration de BizTalk Server**, développez **groupe BizTalk**, Développez **paramètres de plateforme**, puis développez **cartes**.  
   
-1.  Assurez-vous que les fichiers Connector.jar, Kernel.jar et BTSLIBinterop.jar sont présents dans le dossier C:\JDEOWJars de l'ordinateur exécutant [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+    Confirmer la **JDE_OneWorld** carte est répertorié. Si l’adaptateur JD Edwards OneWorld n’est pas installé, installez les adaptateurs BizTalk pour les Applications d’entreprise (voir la section « Conditions préalables » plus haut). Une fois que les adaptateurs sont installés, cliquez sur **cartes** puis cliquez sur **nouveau - adaptateur** pour installer l’adaptateur JD Edwards OneWorld. Redémarrez l’instance d’hôte pour que cela prenne effet.  
   
-2.  Vérifiez que le fichier JDEJAccess.jar existe sur le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ordinateur dans le C:\Program Files\Microsoft BizTalk Adapters pour applications\j.d d’entreprise. Dossier de \Classes Edwards.  
+2. Développez **Applications**, puis développez **BizTalk Application 1**.  
   
-3.  Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)], puis cliquez sur **Administration de BizTalk Server**.  
-  
-### <a name="configuring-biztalk-send-ports"></a>Configuration des ports d'envoi de BizTalk  
- À présent, vous allez vérifier que l'adaptateur JD Edwards OneWorld est installé et vous allez créer le port d'envoi de JD Edwards OneWorld.  
-  
-##### <a name="to-verify-that-the-jd-edwards-oneworld-adapter-is-installed-in-includepragueincludesprague-mdmd"></a>Pour vérifier que l'adaptateur JD Edwards OneWorld est installé dans [!INCLUDE[prague](../includes/prague-md.md)]  
-  
-1.  Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)], puis cliquez sur **Administration de BizTalk Server**.  
-  
-2.  Dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration de la console, développez **racine de la Console**, développez **Administration de BizTalk Server**, développez **groupe BizTalk**, développez  **Paramètres de plateforme**, puis développez **cartes**.  
-  
-     Vérifiez que le **JDE_OneWorld** adaptateur est installé et sur la liste. Si l’adaptateur JD Edwards OneWorld n’est pas installé, installez les adaptateurs BizTalk pour les Applications d’entreprise (voir la section « Conditions préalables » plus haut). Une fois que les adaptateurs sont installés, cliquez sur **cartes** puis cliquez sur **nouveau - adaptateur** pour installer l’adaptateur JD Edwards OneWorld. Pour que cette opération soit prise en compte, vous devez redémarrer l'instance d'hôte.  
-  
-##### <a name="to-create-the-jd-edwards-oneworld-send-port"></a>Pour créer le port d'envoi de JD Edwards OneWorld  
-  
-1.  Dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration de la console, développez **racine de la Console**, développez **Administration de BizTalk Server**, développez **groupe BizTalk**, développez  **Applications**, puis développez **BizTalk Application 1**.  
-  
-2.  Avec le bouton droit **Ports d’envoi**, cliquez sur **nouveau**, puis cliquez sur **Port d’envoi statique avec sollicitation-réponse**. Pour ces champs, entrez les valeurs suivantes :  
+3.  Avec le bouton droit **Ports d’envoi**, cliquez sur **nouveau**, puis cliquez sur **Port d’envoi statique avec sollicitation-réponse**. Pour ces champs, entrez les valeurs suivantes :  
   
     1.  **Nom :**  `JDE_OneWorldPort`  
   
@@ -105,7 +93,7 @@ Le système JD Edwards OneWorld (JDEOW) est accessible à partir d'un système 
   
     5.  **Pipeline de réception :**  `XMLReceive`  
   
-3.  Cliquez sur **Configurer**, puis entrez les valeurs de propriété suivantes :  
+4.  Cliquez sur **Configurer**, puis entrez les valeurs de propriété suivantes :  
   
     1.  **Hôte :** \<Entrez votre nom d’hôte JDEOW >  
   
@@ -125,14 +113,13 @@ Le système JD Edwards OneWorld (JDEOW) est accessible à partir d'un système 
   
      ![](../core/media/jdeow-transportproperties-configurebutton.gif "JDEOW_TransportProperties_ConfigureButton")  
   
-4.  Cliquez sur **OK** à deux reprises pour fermer la **propriétés de Port d’envoi** boîte de dialogue.  
+5.  Sélectionnez **OK** pour fermer la **propriétés de Port d’envoi**.  
   
-### <a name="creating-a-biztalk-orchestration-project"></a>Création d'un projet d'orchestration BizTalk  
- Vous allez à présent créer un projet BizTalk dans [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] et y configurer une orchestration pour gérer les communications entre [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] et le système JD Edwards OneWorld. Vous allez ajouter des ports d'envoi et de réception, créer le projet, puis le déployer.  
+## <a name="step-3-create-a-biztalk-orchestration-project"></a>Étape 3 : Créer un projet d’Orchestration BizTalk  
+Ensuite, créez un projet BizTalk dans [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]et configurer une orchestration dans le projet pour gérer les communications entre [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] et le système JD Edwards OneWorld. Vous allez ajouter des ports d'envoi et de réception, créer le projet, puis le déployer.  
+
   
-##### <a name="to-create-the-biztalk-orchestration-project-in-visual-studio"></a>Pour créer le projet d'orchestration BizTalk dans Visual Studio  
-  
-1.  Ouvrez [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], puis créez un projet BizTalk dans le dossier C:\LABS. Dans le menu **Fichier** , cliquez sur **Nouveau**. La boîte de dialogue **Nouveau projet** s'affiche. Dans la boîte de dialogue **Modèles** , sélectionnez **Projet BizTalk Server vide** Entrez `JDE_OW_Test` comme le nom unique du projet, puis cliquez sur **OK**.  
+1.  Ouvrez [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]et créer un nouveau projet BizTalk dans le dossier C:\LABS. Dans le menu **Fichier** , cliquez sur **Nouveau**. La boîte de dialogue **Nouveau projet** s'affiche. Dans la boîte de dialogue **Modèles** , sélectionnez **Projet BizTalk Server vide** Entrez `JDE_OW_Test` comme le nom unique du projet, puis cliquez sur **OK**.  
   
 2.  Dans l'Explorateur de solutions, cliquez avec le bouton droit sur le projet, cliquez sur **Ajouter**, puis sur **Ajouter les éléments générés**. Dans le volet des catégories, sélectionnez **ajouter les métadonnées de l’adaptateur**, dans le volet Modèles, sélectionnez **ajouter les métadonnées de l’adaptateur**, puis cliquez sur **ajouter**.  
   
@@ -154,7 +141,7 @@ Le système JD Edwards OneWorld (JDEOW) est accessible à partir d'un système 
   
  Pour terminer l'orchestration, vous devez créer et configurer les ports pour recevoir et envoyer les fichiers XML. Commencez par configurer un port de réception que l'adaptateur FILE utilisera pour entrer le XML contenant la requête dans l'orchestration sur le disque.  
   
-##### <a name="to-configure-a-receive-port-to-accept-the-input-xml-file"></a>Pour configurer un port de réception afin d'accepter le fichier d'entrée XML  
+#### <a name="configure-a-receive-port-to-accept-the-input-xml-file"></a>Configurer un port de réception pour accepter le fichier XML d’entrée  
   
 1.  Double-cliquez sur le fichier **BizTalk Orchestration.odx** pour ouvrir l'orchestration.  
   
@@ -180,7 +167,7 @@ Le système JD Edwards OneWorld (JDEOW) est accessible à partir d'un système 
   
  Créez ensuite un port d'envoi/réception pour envoyer le fichier d'entrée XML initial contenant la requête passée au système JD Edwards OneWorld. Ce port reçoit également un fichier XML de sortie contenant les résultats de la requête issus de l'appel auprès du système JD Edwards OneWorld.  
   
-##### <a name="to-configure-a-sendreceive-port-to-interface-with-jd-edwards-oneworld"></a>Pour configurer un port d'envoi/réception pour interagir avec JD Edwards OneWorld  
+#### <a name="configure-a-sendreceive-port-to-interface-with-jd-edwards-oneworld"></a>Configurer un port d’envoi/réception pour interagir avec JD Edwards OneWorld  
   
 1.  Dans le fichier Biztalkorchestration.odx, avec le bouton droit de la surface du port de droite, puis **nouveau Port configuré**. L'Assistant Configuration du port démarre. Dans la page **Bienvenue dans l'Assistant Configuration du port** , cliquez sur **Suivant**.  
   
@@ -198,7 +185,7 @@ Le système JD Edwards OneWorld (JDEOW) est accessible à partir d'un système 
   
  Pour terminer, configurez un port d'envoi que l'adaptateur FILE utilisera pour transmettre en sortie le XML contenant les résultats de la requête vers le disque.  
   
-##### <a name="to-configure-a-send-port-to-output-the-xml-file-to-disk"></a>Pour configurer un port d'envoi pour transmettre en sortie le fichier XML vers le disque  
+#### <a name="configure-a-send-port-to-output-the-xml-file-to-disk"></a>Configurer un port d’envoi pour générer le fichier XML sur le disque  
   
 1.  Dans le fichier Biztalkorchestration.odx, avec le bouton droit de la surface du port de gauche, puis **nouveau Port configuré**. L'Assistant Configuration du port démarre. Dans la page **Bienvenue dans l'Assistant Configuration du port** , cliquez sur **Suivant**.  
   
@@ -224,7 +211,7 @@ Le système JD Edwards OneWorld (JDEOW) est accessible à partir d'un système 
   
  Le **JDE_File_In** et **JDE_File_Out** ports que vous venez de créer nécessitent des types de messages associés.  
   
-##### <a name="to-assign-message-types-to-the-ports"></a>Pour attribuer des types de messages aux ports  
+#### <a name="assign-message-types-to-the-ports"></a>Assigner des types de messages aux ports  
   
 1.  Sur la surface du port de gauche, sur le **JDE_File_In** de port, cliquez sur **demande**. Dans la fenêtre Propriétés, développez **Type de Message**, développez **messages à parties multiples**, puis cliquez sur **JDE_OW_TestAddressBookMasterMBF**.  
   
@@ -232,7 +219,7 @@ Le système JD Edwards OneWorld (JDEOW) est accessible à partir d'un système 
   
  Insérez deux **envoyer** formes et deux **réception** formes dans l’orchestration à lier aux ports.  
   
-##### <a name="to-add-send-and-receive-shapes"></a>Pour ajouter des formes Envoi et Réception  
+#### <a name="add-send-and-receive-shapes"></a>Ajouter d’envoyer et recevoir des formes  
   
 1.  Faites glisser un composant **Réception** à partir de la Boîte à outils, puis déposez-le sous le début de l'orchestration (cercle vert). Cliquez sur le **réception** mettre en forme et dans la fenêtre Propriétés, entrez `Get_File` pour le **nom**et la valeur **activer** à `true`. Cette opération permet d'activer l'orchestration lorsque ce port de réception reçoit un document entrant.  
   
@@ -260,10 +247,8 @@ Le système JD Edwards OneWorld (JDEOW) est accessible à partir d'un système 
   
      ![](../core/media/jdeow-portsurface-connectcomponentstoports.gif "JDEOW_PortSurface_ConnectComponentsToPorts")  
   
-### <a name="building-and-deploying-the-project"></a>Création et déploiement du projet  
+## <a name="step-4-build-and-deploy-the-project"></a>Étape 4 : Créer et déployer le projet  
  Le projet BizTalk étant à présent terminé, vous pouvez le créer et le déployer dans [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].  
-  
-##### <a name="to-build-and-deploy-the-project"></a>Pour créer et déployer le projet  
   
 1.  Démarrer **invite de commandes Visual Studio**.  
   
@@ -291,10 +276,10 @@ Le système JD Edwards OneWorld (JDEOW) est accessible à partir d'un système 
   
      ![](../core/media/jdeow-deployoutput.gif "JDEOW_DeployOutput")  
   
-### <a name="testing-the-application-and-viewing-the-xml-output"></a>Test de l'application et affichage de la sortie XML  
+## <a name="step-5-test-the-application-and-viewing-the-xml-output"></a>Étape 5 : Tester l’Application et afficher la sortie XML  
  Vous allez à présent tester l'application que vous avez créée et déployée. Vous allez créer le fichier XML qui démarre le processus d'orchestration, puis vous allez configurer les dossiers afin qu'ils reçoivent et envoient des fichiers XML au sein de l'application. Une fois l'application configurée, vous allez l'exécuter et afficher les fichiers XML qu'elle renvoie.  
   
-##### <a name="to-generate-the-xml-file-for-the-query"></a>Pour générer le fichier XML pour la requête  
+#### <a name="generate-the-xml-file-for-the-query"></a>Générer le fichier XML de la requête  
   
 1.  Dans l’Explorateur de solutions, double-cliquez sur **N0100041Service_N0100041.xsd** pour ouvrir le fichier.  
   
@@ -308,7 +293,7 @@ Le système JD Edwards OneWorld (JDEOW) est accessible à partir d'un système 
   
 4.  Avec le bouton droit **N0100041Service_N0100041.xsd** puis cliquez sur **générer l’Instance**. Cette opération génère le **Sample.xml** fichier. Ce fichier sera transmis à l'emplacement de réception en tant qu'entrée de l'adaptateur pour démarrer le processus d'orchestration.  
   
-##### <a name="to-configure-and-start-the-biztalk-application"></a>Pour configurer et démarrer l'application BizTalk  
+#### <a name="configure-and-start-the-biztalk-application"></a>Configurer et démarrer l’application BizTalk  
   
 1.  Configurez les dossiers afin qu'ils reçoivent les fichiers entrants et envoient les fichiers sortants. Accédez à **C:\LABS\JDE_OW_Test** et créez deux sous-dossiers nommés `FileIn` et `FileOut`.  
   
@@ -396,7 +381,7 @@ Le système JD Edwards OneWorld (JDEOW) est accessible à partir d'un système 
   
 17. Dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] console d’Administration, cliquez à droite la **JDE_OW_Test** application, puis sur **Démarrer**.  
   
-##### <a name="to-test-the-orchestration"></a>Pour tester l'orchestration  
+#### <a name="test-the-orchestration"></a>Tester l’orchestration  
   
 1.  Dans le **C:\Labs\JDE_OW_Test** Active le **Sample.xml** fichier apparaîtront en tant que :  
   
