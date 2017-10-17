@@ -1,24 +1,13 @@
 ---
-title: Adaptateur SAP | Documents Microsoft
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 7db97c39-39e7-4046-ba0c-b552107bc3be
-caps.latest.revision: "7"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 88e106ffbf2678f03bc3001ab2786c22d87dabea
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/adapters-and-accelerators/adapter-sap/microsoft-biztalk-adapter-for-mysap-business-suite-documentation
+redirect_document_id: True
+ms.openlocfilehash: 44ed138010c1fa14acf7e44c5cb9ff879629812b
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
-# <a name="sap-adapter"></a><span data-ttu-id="84b52-102">Adaptateur SAP</span><span class="sxs-lookup"><span data-stu-id="84b52-102">SAP Adapter</span></span>
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="84b52-103"> ne prend plus en charge l'adaptateur SAP.</span><span class="sxs-lookup"><span data-stu-id="84b52-103"> no longer supports the SAP Adapter.</span></span> <span data-ttu-id="84b52-104">Il est recommandé d'utiliser [!INCLUDE[adaptersap](../includes/adaptersap-md.md)] pour accéder aux mêmes fonctionnalités.</span><span class="sxs-lookup"><span data-stu-id="84b52-104">We recommend you use [!INCLUDE[adaptersap](../includes/adaptersap-md.md)] to achieve the same functionality.</span></span>  
+# <a name="sap-adapter"></a><span data-ttu-id="c4465-101">Adaptateur SAP</span><span class="sxs-lookup"><span data-stu-id="c4465-101">SAP Adapter</span></span>
+[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="c4465-102"> ne prend plus en charge l'adaptateur SAP.</span><span class="sxs-lookup"><span data-stu-id="c4465-102"> no longer supports the SAP Adapter.</span></span> <span data-ttu-id="c4465-103">Il est recommandé d'utiliser [!INCLUDE[adaptersap](../includes/adaptersap-md.md)] pour accéder aux mêmes fonctionnalités.</span><span class="sxs-lookup"><span data-stu-id="c4465-103">We recommend you use [!INCLUDE[adaptersap](../includes/adaptersap-md.md)] to achieve the same functionality.</span></span>  
   
- <span data-ttu-id="84b52-105">Pour plus d’informations, consultez [aide Microsoft BizTalk Adapter Pack](http://go.microsoft.com/fwlink/?LinkId=188969) (http://go.microsoft.com/fwlink/?LinkId=188969).</span><span class="sxs-lookup"><span data-stu-id="84b52-105">For more information, see [Microsoft BizTalk Adapter Pack Help](http://go.microsoft.com/fwlink/?LinkId=188969) (http://go.microsoft.com/fwlink/?LinkId=188969).</span></span>
+ 

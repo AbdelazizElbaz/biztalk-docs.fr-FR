@@ -1,26 +1,29 @@
 ---
-title: "L’installation de l’adaptateur BizTalk pour JD Edwards OneWorld | Documents Microsoft"
+title: "Installer l’adaptateur BizTalk pour JD Edwards OneWorld | Documents Microsoft"
+description: "Lien rapide vers la vue d’ensemble de l’installation et de configuration de l’adaptateur BizTalk pour JD Edwards OneWorld dans BizTalk Server"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 10/16/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: installation
 ms.assetid: e870f12d-5c83-4056-8066-0647706a2cfd
 caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a8c565afa4d46c88868c3452ad3d541a1a81e8e7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3338c110698c4dc4cb803fa527fb67598095c110
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
-# <a name="installing-biztalk-adapter-for-jd-edwards-oneworld"></a><span data-ttu-id="20c18-102">Installation de l'adaptateur BizTalk pour JD Edwards OneWorld</span><span class="sxs-lookup"><span data-stu-id="20c18-102">Installing BizTalk Adapter for JD Edwards OneWorld</span></span>
-<span data-ttu-id="20c18-103">Pour plus d'informations sur l'installation de l'adaptateur Microsoft BizTalk pour JD Edwards OneWorld, consultez le guide d'installation des adaptateurs Microsoft BizTalk pour les applications d'entreprise.</span><span class="sxs-lookup"><span data-stu-id="20c18-103">For information about installing Microsoft BizTalk Adapter for JD Edwards OneWorld, see the Microsoft BizTalk Adapters for Enterprise Applications installation guide.</span></span> <span data-ttu-id="20c18-104">Pour vous assurer que vous lisez les informations les plus récentes, téléchargez la dernière version de ce guide à [lien hypertexte « http://go.microsoft.com/fwlink/?LinkId=196039 » \t « _blank » http://go.microsoft.com/fwlink/?LinkId=196039](http://go.microsoft.com/fwlink/?LinkId=196039).</span><span class="sxs-lookup"><span data-stu-id="20c18-104">To ensure that you are reading the most up-to-date information, download the latest version of the guide at [HYPERLINK "http://go.microsoft.com/fwlink/?LinkId=196039" \t "_blank" http://go.microsoft.com/fwlink/?LinkId=196039](http://go.microsoft.com/fwlink/?LinkId=196039).</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="20c18-105">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="20c18-105">See Also</span></span>  
- [<span data-ttu-id="20c18-106">Bien démarrer</span><span class="sxs-lookup"><span data-stu-id="20c18-106">Getting Started</span></span>](../core/getting-started-with-biztalk-adapter-for-jd-edwards-oneworld.md)
+# <a name="install-biztalk-adapter-for-jd-edwards-oneworld"></a><span data-ttu-id="96265-103">Installer l’adaptateur BizTalk pour JD Edwards OneWorld</span><span class="sxs-lookup"><span data-stu-id="96265-103">Install BizTalk Adapter for JD Edwards OneWorld</span></span>
+
+## <a name="install-and-setup"></a><span data-ttu-id="96265-104">Installer et configurer</span><span class="sxs-lookup"><span data-stu-id="96265-104">Install and setup</span></span>
+
+<span data-ttu-id="96265-105">[Installer et configurer les adaptateurs pour les applications d’entreprise](../adapters-and-accelerators/install-configure-biztalk-adapters-enterprise-applications.md) inclut les étapes pour installer les adaptateurs d’entreprise et inclut également des informations clées à connaître avant d’installer l’adaptateur, et après l’installation de l’adaptateur.</span><span class="sxs-lookup"><span data-stu-id="96265-105">[Install and configure the adapters for enterprise applications](../adapters-and-accelerators/install-configure-biztalk-adapters-enterprise-applications.md) includes the steps to install the enterprise adapters, and also includes key information to know before you install the adapter, and after you install the adapter.</span></span> 
+
+## <a name="next-step"></a><span data-ttu-id="96265-106">Étape suivante</span><span class="sxs-lookup"><span data-stu-id="96265-106">Next step</span></span>
+[<span data-ttu-id="96265-107">Didacticiel : Utilisation de l’adaptateur BizTalk pour JD Edwards OneWorld</span><span class="sxs-lookup"><span data-stu-id="96265-107">Tutorial: Using the BizTalk Adapter for JD Edwards OneWorld</span></span>](../core/tutorial-using-the-biztalk-adapter-for-jd-edwards-oneworld.md)
