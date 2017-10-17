@@ -1,7 +1,8 @@
 ---
-title: "Entreprise de l’authentification unique-On2 | Documents Microsoft"
+title: "Présentation d’authentification unique de l’entreprise | Documents Microsoft"
+description: "En savoir plus sur les applications affilicate, à l’aide des tickets SSO pour traiter les messages et administrer SSO dans BizTalk Server"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 10/11/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -12,18 +13,18 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4cf73307cc3b22beec8a3b8c10b232506fc674e1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8f242e11e31de957fee0c6cbf228094f7e40010d
+ms.sourcegitcommit: 5e6ef63416e8885a5ee91bd65618a842b3a0cc54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/12/2017
 ---
-# <a name="enterprise-single-sign-on"></a>Enterprise Single Sign-On
+# <a name="enterprise-single-sign-on-overview"></a>Présentation l’authentification unique de l’entreprise
 Un processus d'entreprise qui repose sur diverses applications peut être confronté au défi que représentent plusieurs domaines de sécurité différents. L'accès à une application sous un système Microsoft Windows peut requérir un ensemble particulier d'informations d'identification, tandis que l'accès à une application située sur un macroordinateur IBM est susceptible d'être dépendant d'autres informations d'identification, telles qu'un nom d'utilisateur et un mot de passe RACF. Cette profusion d'informations d'identification n'est pas simple pour les utilisateurs et peut poser des problèmes encore plus importants à l'automatisation de processus. Pour résoudre ce problème, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] propose la fonction d'authentification unique de l'entreprise.  
   
  Attention : ce mécanisme n'autorise pas les utilisateurs à posséder un seul compte de connexion pour accéder à toutes les applications. Cette fonction d'authentification unique de l'entreprise permet plutôt de mapper un ID utilisateur Windows avec les informations d'identification d'un utilisateur non-Windows. Bien qu'il ne résolve pas tous les problèmes de connexion de l'entreprise, ce service peut simplifier les processus d'entreprise utilisant des applications sur différents systèmes.  
   
-## <a name="creating-affiliate-application-for-non-windows-systems"></a>Création d'une application associée pour les systèmes non-Windows  
+## <a name="create-affiliate-application-for-non-windows-systems"></a>Créer l’Application associée pour les systèmes non-Windows  
  Pour employer l'authentification unique de l'entreprise, un administrateur définit des applications associées représentant chacune un système ou une application non-Windows. Par exemple, il peut s'agir d'une application CICS (Customer Information Control System) exécutée sur un macroordinateur IBM, d'un système ERP SAP fonctionnant sous UNIX ou de tout autre type de logiciel. Chacune de ces applications possède son propre mécanisme d'authentification et nécessite donc des informations d'identification uniques et personnalisées.  
   
  La fonction d'authentification unique de l'entreprise stocke un mappage chiffré entre l'ID utilisateur Windows d'un utilisateur et les informations d'identification correspondantes d'une ou plusieurs applications associées dans une base de données SSO. Lorsque cet utilisateur doit accéder à une application associée, les informations d'identification de cette dernière peuvent être recherchées dans la base de données SSO par un serveur SSO. Le schéma ci-dessous illustre le fonctionnement de ce processus.  
@@ -44,4 +45,4 @@ Un processus d'entreprise qui repose sur diverses applications peut être confro
   
 ## <a name="see-also"></a>Voir aussi  
  [Le moteur de messagerie BizTalk Server](../core/the-biztalk-server-messaging-engine.md)   
- [Mise en œuvre Enterprise Single Sign-On](../core/implementing-enterprise-single-sign-on.md)
+ [Implémentation de l’authentification unique de l’entreprise](../core/implementing-enterprise-single-sign-on.md)

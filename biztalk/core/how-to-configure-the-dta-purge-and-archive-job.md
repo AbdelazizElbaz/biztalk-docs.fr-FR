@@ -1,50 +1,45 @@
 ---
-title: Comment faire pour configurer la DTA Purge et archivage du projet | Documents Microsoft
+title: Configurer la Purge DTA et archiver le travail | Documents Microsoft
+description: "Définir les paramètres du travail DTA Purge and Archive dans SQL Server Agent pour maintenir la base de données de suivi dans BizTalk Server"
 ms.custom: 
-ms.date: 2015-11-09
+ms.date: 10/11/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- purging, configuring
-- DTA Purge and Archive job, configuring
-- archiving [Tracking database], DTA Purge and Archive job
-- archiving [Tracking database], configuring
-- purging, DTA Purge and Archive job
 ms.assetid: 156ccf9b-284f-4b96-a395-92936e8cebcf
 caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6f4985e657f26945aa2fdc168b273dbfdb159efc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 149719b7eea50ce53c14298597c94729162d43b0
+ms.sourcegitcommit: 1fb633fcf919ce3124405420a5d9faa79d9d508e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/11/2017
 ---
-# <a name="how-to-configure-the-dta-purge-and-archive-job"></a>Configuration du travail de purge et d'archivage DTA
+# <a name="configure-the-dta-purge-and-archive-job"></a>Configurer la Purge DTA et les travaux d’archivage
 Avant d'archiver ou de purger des données de la base de données des suivis BizTalk (BizTalkDTADb), vous devez configurer le travail de purge et d'archivage DTA (BizTalkDTADb). Cette tâche est configurée pour appeler la procédure stockée dtasp_BackupAndPurgeTrackingDatabase, qui utilise les six paramètres que vous devez configurer.  
   
 ## <a name="prerequisites"></a>Conditions préalables  
- Vous devez être connecté avec un compte qui est membre du rôle serveur fixé sysadmin SQL Server comme suit.  
+ Connectez-vous avec un compte qui est membre du rôle serveur fixé sysadmin SQL Server.  
   
-### <a name="to-configure-the-dta-purge-and-archive-job"></a>Pour configurer le travail de purge et d'archivage DTA  
+## <a name="configure-the-dta-purge-and-archive-job"></a>Configurer la purge DTA et les travaux d’archivage  
   
 1.  Sur le serveur SQL qui héberge la base de données des suivis BizTalk (BizTalkDTADb), ouvrez **SQL Server Management Studio**.  
   
 2.  Dans **se connecter au serveur**, entrez le nom du serveur SQL server où le suivi BizTalk (BizTalkDTADb) de base de données réside, entrez le type d’authentification, puis sélectionnez **connexion** pour se connecter à SQL server.  
   
-3.  Dans **Microsoft SQL Server Management Studio**, double-cliquez sur **l’Agent SQL Server**, puis cliquez sur **travaux**.  
+3. Double-cliquez sur **l’Agent SQL Server**, puis sélectionnez **travaux**.  
   
-4.  Dans le **détails de l’Explorateur d’objets** volet, avec le bouton droit **DTA Purge and Archive (BizTalkDTADb)**, puis cliquez sur **propriétés**.  
+4.  Dans **détails de l’Explorateur d’objets**, avec le bouton droit **DTA Purge and Archive (BizTalkDTADb)**, puis sélectionnez **propriétés**.  
   
-5.  Dans le **propriétés du travail - DTA Purge and Archive (BizTalkDTADb)** boîte de dialogue **sélectionner une page**, cliquez sur **étapes**.  
+5.  Dans **propriétés du travail - DTA Purge and Archive (BizTalkDTADb)**, sous **sélectionner une page**, sélectionnez **étapes**.  
   
-6.  Dans le **liste des étapes du travail**, cliquez sur **archiver et purger**, puis cliquez sur **modifier**.  
+6.  Dans le **liste des étapes du travail**, sélectionnez **archiver et purger**, puis sélectionnez **modifier**.  
   
-7.  Sur le **général** page, dans le **commande** zone, modifiez les paramètres ci-dessous comme il convient, puis cliquez sur **OK**.  
+7.  Dans **général**, dans le **commande** zone, mettre à jour les paramètres suivants, puis sélectionnez **OK**.  
   
     -   @nLiveHourstinyint : toute instance terminée datant que les (heures) + (jours) seront supprimées avec toutes les données associées. Il s’agit d’un paramètre obligatoire sans valeur par défaut.  
   
@@ -61,13 +56,18 @@ Avant d'archiver ou de purger des données de la base de données des suivis Biz
   
     -   @fForceBackupint, valeur par défaut est 0. Elle est réservée à un usage ultérieur.  
   
-     La commande modifiée doit ressembler à ce qui suit. Dans l’exemple suivant, il est de 1 heure, une fenêtre active et de purge de 1 jour :  
+    -   @fHardDeleteRunningInstancesint - valeur par défaut est 0. Lorsque cette propriété a la valeur 1, il supprime toutes les exécutant des instances de service antérieures à la @nHardDeleteDays valeur. 
+    
+        > [!NOTE]
+        > Le @fHardDeleteRunningInstances propriété est disponible à partir de [BizTalk Server 2016 Cumulative Update 1](https://support.microsoft.com/help/3208238/cumulative-update-1-for-microsoft-biztalk-server-2016), [BizTalk Server 2013 R2 Cumulative Update 6](https://support.microsoft.com/en-us/help/4020020/cumulative-update-package-6-for-biztalk-server-2013-r2), et [cumulés de BizTalk Server 2013 Mettre à jour 5](https://support.microsoft.com/help/3194301/cumulative-update-5-for-biztalk-server-2013).  
+  
+    Votre commande modifiée doit ressembler à ce qui suit. Dans l’exemple suivant, il est de 1 heure, une fenêtre active, de purge de 1 jour et suppressions en cours d’exécution plus de 1 jour des instances de service :  
   
     ```  
-    exec dtasp_BackupAndPurgeTrackingDatabase 1, 0, 1, '\\MyBizTalkServer\backup', null, 0  
+    exec dtasp_BackupAndPurgeTrackingDatabase 1, 0, 1, '\\MyBizTalkServer\backup', null, 0, 1  
     ```  
   
-8.  Sur le **propriétés du travail - DTA Purge and Archive (BizTalkDTADb)** boîte de dialogue **sélectionner une page**, cliquez sur **général**, sélectionnez le **activé**case à cocher, puis cliquez sur **OK**.  
+8.  Sur le **propriétés du travail - DTA Purge and Archive (BizTalkDTADb)** boîte de dialogue **sélectionner une page**, sélectionnez **général**, sélectionnez le **activé**case à cocher, puis sélectionnez **OK**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Archivage et purge de la base de données de suivi BizTalk](../core/archiving-and-purging-the-biztalk-tracking-database.md)
