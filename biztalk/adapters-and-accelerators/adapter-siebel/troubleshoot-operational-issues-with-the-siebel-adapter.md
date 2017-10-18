@@ -13,11 +13,11 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 62d1ffae1318f4d04f7bd61ef27dd24fd1d5a2b7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8a7fd507b301d20d84680cb626953d21b8a6e201
+ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="troubleshoot-operational-issues-with-the-siebel-adapter"></a>Résoudre les problèmes opérationnels avec l’adaptateur Siebel
 Cette section fournit un emplacement centralisé pour plus d’informations sur les problèmes opérationnels, vous pouvez rencontrer en utilisant le [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)].  
@@ -239,7 +239,7 @@ Microsoft.ServiceModel.Channels.Common.UnsupportedOperationException: Incorrect 
   
  **Cause**  
   
- Lorsque vous créez des ports logiques dans une orchestration BizTalk, vous spécifiez certains noms pour les opérations sur ces ports ou vous utilisez simplement les noms par défaut comme Operation_1, Operation_2, etc.. Toutefois, dans le fichier de liaison généré par le [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], le nom de l’opération est identique au nom de l’opération pour laquelle générer des métadonnées. Par exemple, si vous générez des métadonnées pour l’opération d’insertion sur le composant de gestion de compte, l’action est fixée à ce qui suit :  
+ Lorsque vous créez des ports logiques dans une orchestration BizTalk, vous spécifiez certains noms pour les opérations sur ces ports ou vous utilisez simplement les noms par défaut comme Operation_1, Operation_2, etc. Toutefois, dans le fichier de liaison généré par le [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], le nom de l’opération est identique au nom de l’opération pour laquelle générer des métadonnées. Par exemple, si vous générez des métadonnées pour l’opération d’insertion sur le composant de gestion de compte, l’action est fixée à ce qui suit :  
   
 ```  
 <Operation Name="Insert" Action="http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert" />  
@@ -287,7 +287,7 @@ The current .NET type name of this root node is invalid (it is a reserved BizTal
 ###  <a name="BKMK_SiebelVS2008"></a>Avertissement de liaison non valide lors de l’utilisation de l’adaptateur dans Visual Studio  
  **Problème**  
   
- Lorsque vous utilisez l’adaptateur pour créer une application dans [!INCLUDE[vs2010](../../includes/vs2010-md.md)] et que vous ouvrez le fichier de configuration (app.config) généré par l’adaptateur, vous voyez un avertissement similaire au suivant :  
+ Lorsque vous utilisez l’adaptateur pour créer une application dans Visual Studio et que vous ouvrez le fichier de configuration (app.config) généré par l’adaptateur, vous voyez un avertissement similaire au suivant :  
   
 ```  
 The element 'bindings' has invalid child element 'siebelBinding'. List of possible elements expected: 'basicHttpBinding, customBinding, ...  
