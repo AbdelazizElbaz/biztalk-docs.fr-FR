@@ -67,7 +67,7 @@ Les champs distinctifs définis dans un schéma sont consignés selon le format 
   
  le Désassembleur XML consigne un champ distinctif dans un contexte de message de la façon suivante :  
   
- Nom de la propriété du contexte : « / * [local-name () = 'PO' et namespace-uri() = 'http://SendHtmlMessage.PO'] /\*[local-name () = « Price » et namespace-uri() =''] »  
+ Nom de la propriété du contexte : «/*[local-name()='PO'et namespace-uri()='http://SendHtmlMessage.PO']/\*[local-name()=«Price»et namespace-uri()='']»  
   
  Namespace de la propriété : http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields  
   

@@ -39,7 +39,7 @@ Vous pouvez exécuter l'exemple sous Internet Explorer.
   
      Exemple :  
   
-     http://localhost/SSODemo/BTSHTTPReceive.dll? \<ns0:method_list_method % 20xmlns : ns0 = « http://microsoft.com/exposed/object/object1 » >\<ns0:method_list_method >\<ns1:method_list % 20xmlns : ns1 = « http://microsoft.com/exposed/object » >\<ns1:comp_code >\</ns1:comp_code >\<ns1:comp_name >\</ns1:comp_name >\< /ns1:object_1 >\</ns0:method_list >\</ns0 : method_list_method >  
+     http://localhost/SSODemo/BTSHTTPReceive.dll?\<ns0:method_list_method%20xmlns:ns0="http://microsoft.com/exposed/object/object1">\<ns0:method_list_method>\<ns1:method_list%20xmlns:ns1="http://microsoft.com/exposed/object">\<ns1:comp_code>\</ns1:comp_code>\<ns1:comp_name>\</ns1:comp_name>\< /ns1:object_1>\</ns0:method_list>\</ns0:method_list_method>  
   
      Dans ce cas, il n'est pas nécessaire de fournir des informations d'identification.  
   
