@@ -23,16 +23,16 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="distinguished-fields-in-disassembler-pipeline-components"></a><span data-ttu-id="22ccd-102">Composants de Pipeline désassembleur les champs distinctifs</span><span class="sxs-lookup"><span data-stu-id="22ccd-102">Distinguished Fields in Disassembler Pipeline Components</span></span>
-<span data-ttu-id="22ccd-103">Les champs distinctifs définis dans un schéma sont consignés selon le format suivant dans le contexte de message par les composants de pipeline Désassembleur XML, Désassembleur BizTalk Framework ou Désassembleur de fichier plat :</span><span class="sxs-lookup"><span data-stu-id="22ccd-103">Distinguished fields defined in a schema are written to the message context by the XML Disassembler, BizTalk Framework Disassembler, or Flat File Disassembler pipeline components in the following format:</span></span>  
+# <a name="distinguished-fields-in-disassembler-pipeline-components"></a><span data-ttu-id="ca902-102">Composants de Pipeline désassembleur les champs distinctifs</span><span class="sxs-lookup"><span data-stu-id="ca902-102">Distinguished Fields in Disassembler Pipeline Components</span></span>
+<span data-ttu-id="ca902-103">Les champs distinctifs définis dans un schéma sont consignés selon le format suivant dans le contexte de message par les composants de pipeline Désassembleur XML, Désassembleur BizTalk Framework ou Désassembleur de fichier plat :</span><span class="sxs-lookup"><span data-stu-id="ca902-103">Distinguished fields defined in a schema are written to the message context by the XML Disassembler, BizTalk Framework Disassembler, or Flat File Disassembler pipeline components in the following format:</span></span>  
   
- <span data-ttu-id="22ccd-104">*nom utilisé* est le champ distinctif dans XPath</span><span class="sxs-lookup"><span data-stu-id="22ccd-104">*name used* is the distinguished field in XPath</span></span>  
+ <span data-ttu-id="ca902-104">*nom utilisé* est le champ distinctif dans XPath</span><span class="sxs-lookup"><span data-stu-id="ca902-104">*name used* is the distinguished field in XPath</span></span>  
   
- <span data-ttu-id="22ccd-105">*URI de l’espace de noms* est « http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields »</span><span class="sxs-lookup"><span data-stu-id="22ccd-105">*namespace URI* is "http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields"</span></span>  
+ <span data-ttu-id="ca902-105">*URI de l’espace de noms* est « http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields »</span><span class="sxs-lookup"><span data-stu-id="ca902-105">*namespace URI* is "http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields"</span></span>  
   
- <span data-ttu-id="22ccd-106">La valeur de la propriété est la **System.String** valeur extraite du document XML à l’aide de XPath spécifié.</span><span class="sxs-lookup"><span data-stu-id="22ccd-106">The value of the property is the **System.String** value extracted from the XML document using specified XPath.</span></span>  
+ <span data-ttu-id="ca902-106">La valeur de la propriété est la **System.String** valeur extraite du document XML à l’aide de XPath spécifié.</span><span class="sxs-lookup"><span data-stu-id="ca902-106">The value of the property is the **System.String** value extracted from the XML document using specified XPath.</span></span>  
   
- <span data-ttu-id="22ccd-107">Le schéma d'exemple suivant comporte un champ distinctif Price.</span><span class="sxs-lookup"><span data-stu-id="22ccd-107">The following example schema has a distinguished field Price.</span></span>  
+ <span data-ttu-id="ca902-107">Le schéma d'exemple suivant comporte un champ distinctif Price.</span><span class="sxs-lookup"><span data-stu-id="ca902-107">The following example schema has a distinguished field Price.</span></span>  
   
 ```  
 <?xml version="1.0" encoding="utf-16" ?>   
@@ -56,7 +56,7 @@ ms.lasthandoff: 09/20/2017
 </xs:schema>  
 ```  
   
- <span data-ttu-id="22ccd-108">Pour l'instance de document</span><span class="sxs-lookup"><span data-stu-id="22ccd-108">For the document instance</span></span>  
+ <span data-ttu-id="ca902-108">Pour l'instance de document</span><span class="sxs-lookup"><span data-stu-id="ca902-108">For the document instance</span></span>  
   
 ```  
 <PO>  
@@ -65,17 +65,17 @@ ms.lasthandoff: 09/20/2017
 <PO>  
 ```  
   
- <span data-ttu-id="22ccd-109">le Désassembleur XML consigne un champ distinctif dans un contexte de message de la façon suivante :</span><span class="sxs-lookup"><span data-stu-id="22ccd-109">the XML Disassembler writes a distinguished field on a message context as follows:</span></span>  
+ <span data-ttu-id="ca902-109">le Désassembleur XML consigne un champ distinctif dans un contexte de message de la façon suivante :</span><span class="sxs-lookup"><span data-stu-id="ca902-109">the XML Disassembler writes a distinguished field on a message context as follows:</span></span>  
   
- <span data-ttu-id="22ccd-110">Nom de la propriété du contexte : « / * [local-name () = 'PO' et namespace-uri() = 'http://SendHtmlMessage.PO'] /\*[local-name () = « Price » et namespace-uri() =''] »</span><span class="sxs-lookup"><span data-stu-id="22ccd-110">Name of the property on the context: "/*[local-name()='PO' and namespace-uri()='http://SendHtmlMessage.PO']/\*[local-name()='Price' and namespace-uri()='']"</span></span>  
+ <span data-ttu-id="ca902-110">Nom de la propriété du contexte : «/*[local-name()='PO'et namespace-uri()='http://SendHtmlMessage.PO']/\*[local-name()=«Price»et namespace-uri()='']»</span><span class="sxs-lookup"><span data-stu-id="ca902-110">Name of the property on the context: "/*[local-name()='PO' and namespace-uri()='http://SendHtmlMessage.PO']/\*[local-name()='Price' and namespace-uri()='']"</span></span>  
   
- <span data-ttu-id="22ccd-111">Namespace de la propriété : http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields</span><span class="sxs-lookup"><span data-stu-id="22ccd-111">Namespace of the property: http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields</span></span>  
+ <span data-ttu-id="ca902-111">Namespace de la propriété : http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields</span><span class="sxs-lookup"><span data-stu-id="ca902-111">Namespace of the property: http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields</span></span>  
   
- <span data-ttu-id="22ccd-112">Valeur de la propriété : 10</span><span class="sxs-lookup"><span data-stu-id="22ccd-112">Value of the property: 10</span></span>  
+ <span data-ttu-id="ca902-112">Valeur de la propriété : 10</span><span class="sxs-lookup"><span data-stu-id="ca902-112">Value of the property: 10</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="22ccd-113">Si la taille de l'une des valeurs des éléments des documents XML dépasse 85 Ko, les performances de traitement de ces documents risquent de se dégrader.</span><span class="sxs-lookup"><span data-stu-id="22ccd-113">If the size of any XML document element values exceeds 85KB, a degradation in the performance of processing those documents may occur.</span></span>  
+>  <span data-ttu-id="ca902-113">Si la taille de l'une des valeurs des éléments des documents XML dépasse 85 Ko, les performances de traitement de ces documents risquent de se dégrader.</span><span class="sxs-lookup"><span data-stu-id="ca902-113">If the size of any XML document element values exceeds 85KB, a degradation in the performance of processing those documents may occur.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="22ccd-114">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="22ccd-114">See Also</span></span>  
- <span data-ttu-id="22ccd-115">[Composant de Pipeline désassembleur de fichier plat](../core/flat-file-disassembler-pipeline-component.md) </span><span class="sxs-lookup"><span data-stu-id="22ccd-115">[Flat File Disassembler Pipeline Component](../core/flat-file-disassembler-pipeline-component.md) </span></span>  
- [<span data-ttu-id="22ccd-116">Comment configurer le composant de Pipeline de désassembleur de fichier plat</span><span class="sxs-lookup"><span data-stu-id="22ccd-116">How to Configure the Flat File Disassembler Pipeline Component</span></span>](../core/how-to-configure-the-flat-file-disassembler-pipeline-component.md)
+## <a name="see-also"></a><span data-ttu-id="ca902-114">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="ca902-114">See Also</span></span>  
+ <span data-ttu-id="ca902-115">[Composant de Pipeline désassembleur de fichier plat](../core/flat-file-disassembler-pipeline-component.md) </span><span class="sxs-lookup"><span data-stu-id="ca902-115">[Flat File Disassembler Pipeline Component](../core/flat-file-disassembler-pipeline-component.md) </span></span>  
+ [<span data-ttu-id="ca902-116">Comment configurer le composant de Pipeline de désassembleur de fichier plat</span><span class="sxs-lookup"><span data-stu-id="ca902-116">How to Configure the Flat File Disassembler Pipeline Component</span></span>](../core/how-to-configure-the-flat-file-disassembler-pipeline-component.md)
