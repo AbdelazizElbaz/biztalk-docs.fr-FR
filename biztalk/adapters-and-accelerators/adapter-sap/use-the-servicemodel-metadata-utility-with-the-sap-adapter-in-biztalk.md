@@ -91,15 +91,15 @@ Vous pouvez utiliser le service Model Metadata Utility Tool (svcutil.exe) pour g
   
  Cet exemple crée une classe de client WCF pour RFC_CALCULATE_TAXES.  
   
- **. \svcutil sap://User=YourUserName; » Mot de passe = votreMotdePasse ; Client = 800 ; Lang = fr ; @a/YourSAPHost/00? wsdl & op = http://Microsoft.LobServices.Sap/2007/03/Rfc/RFC_CALCULATE_TAXES »**  
+ **.\svcutil «sap://User=YourUserName;MotDePasse=votreMotdePasse;Client=800;Lang=FR;@a/YourSAPHost/00?wsdl&op=http://Microsoft.LobServices.Sap/2007/03/Rfc/RFC_CALCULATE_TAXES»**  
   
  Cet exemple crée une classe de client WCF pour les SALESORDER_CREATEFROMDAT201 et SALESORDER_CREATEFROMDAT202 IDOC.  
   
- **. \svcutil sap://User=YourUserName; » Mot de passe = votreMotdePasse ; Client = 800 ; Lang = fr ; @a/YourSAPHost/00? wsdl & op = http://Microsoft.LobServices.Sap/2007/03/Idoc/3/SALESORDER_CREATEFROMDAT201//620/Send & op = http://Microsoft.LobServices.Sap/2007/03/Idoc/3/SALESORDER_CREATEFROMDAT202//620/Send »**  
+ **.\svcutil «sap://User=YourUserName;Motdepasse=votreMotdePasse;Client=800;Lang=fr;@a/YourSAPHost/00?wsdl&op=http://Microsoft.LobServices.Sap/2007/03/Idoc/3/SALESORDER_CREATEFROMDAT201//620/Send&op=http://Microsoft.LobServices.Sap/2007/03/Idoc/3/SALESORDER_CREATEFROMDAT202//620/Send»**  
   
  Cet exemple crée un contrat de service WCF pour recevoir l’IDOC SALESORDER_CREATEFROMDAT201 à partir du système SAP. L’ID de nœud spécifie une opération de réception. Cet exemple porte sur la récupération des métadonnées, il n’est pas nécessaire de spécifier les paramètres de l’écouteur dans query_string de l’URI de connexion.  
   
- **. \svcutil sap://User=YourUserName; » Mot de passe = votreMotdePasse ; Client = 800 ; Lang = fr ; @a/YourSAPHost/00? wsdl & op = http://Microsoft.LobServices.Sap/2007/03/Idoc/3/SALESORDER_CREATEFROMDAT201//620/Receive »**  
+ **.\svcutil «sap://User=YourUserName;Motdepasse=votreMotdePasse;Client=800;Lang=fr;@a/YourSAPHost/00?wsdl&op=http://Microsoft.LobServices.Sap/2007/03/Idoc/3/SALESORDER_CREATEFROMDAT201//620/Receive»**  
   
 > [!IMPORTANT]
 >  Vous devez placer l’URI de connexion dans des guillemets sur la ligne de commande. Sinon, svcutil.exe essaie de récupérer les métadonnées pour les opérations qui les [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] ne prend pas en charge. Les résultats d’une tentative de ce type ne sont pas définis.  
