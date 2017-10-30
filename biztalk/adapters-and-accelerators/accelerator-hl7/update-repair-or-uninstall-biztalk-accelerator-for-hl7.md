@@ -35,7 +35,7 @@ Modifier, réparer ou désinstaller le [!INCLUDE[btaBTAHL7NoNumber](../../includ
 > [!NOTE]
 >  Lorsque vous modifiez votre installation de [!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)], le didacticiel de bout en bout ne s’exécute pas automatiquement. 
 > 
-> Pour exécuter le didacticiel et vérifier que l’installation modifiée exécutées correctement, exécutez le didacticiel manuellement à partir de la *** \<lecteur >*** **\Program Files\Microsoft BizTalk \<version > Accelerator pour le didacticiel de bout en HL7\SDK\End** dossier.
+> Pour exécuter le didacticiel et vérifier que l’installation modifiée exécutées correctement, exécutez le didacticiel manuellement à partir de la  ***\<lecteur >*** **\Program Files\Microsoft BizTalk \<version > Accelerator pour le didacticiel de bout en HL7\SDK\End** dossier.
   
 1. Exécutez le [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)] **setup.exe** en tant qu’administrateur 
   

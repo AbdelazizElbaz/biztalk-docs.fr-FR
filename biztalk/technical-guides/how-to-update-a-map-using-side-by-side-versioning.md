@@ -41,7 +41,7 @@ Certains artefacts BizTalk, tels que des cartes, sont choisis par nom fort quali
   
     3.  Dans le volet droit, cliquez sur **informations de l’Assembly**.  
   
-    4.  Dans le **informations d’Assembly** boîte de dialogue, spécifiez les valeurs pour le **Version de l’Assembly** champ pour modifier le numéro de version d’assembly. Vous devez modifier uniquement le numéro de version majeure ou mineure. Le numéro de version majeure est le premier chiffre de la séquence (***n***.0.0.0).) ; le numéro de version mineure est le deuxième chiffre de la séquence (0.*** n ***. 0.0).  
+    4.  Dans le **informations d’Assembly** boîte de dialogue, spécifiez les valeurs pour le **Version de l’Assembly** champ pour modifier le numéro de version d’assembly. Vous devez modifier uniquement le numéro de version majeure ou mineure. Le numéro de version majeure est le premier chiffre de la séquence (***n***.0.0.0).) ; le numéro de version mineure est le deuxième chiffre de la séquence (0. ***n*** . 0.0).  
   
     5.  Cliquez sur **OK** pour fermer la **informations d’Assembly** boîte de dialogue.  
   

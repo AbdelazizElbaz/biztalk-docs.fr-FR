@@ -37,7 +37,7 @@ Cette rubrique décrit comment mettre à jour la version d’un assembly et l’
   
 3.  Dans le volet droit, cliquez sur **informations de l’Assembly**.  
   
-4.  Dans le **informations d’Assembly** boîte de dialogue, spécifiez les valeurs pour le **Version de l’Assembly** champ pour augmenter le numéro de version d’assembly. Vous ne devez augmenter que le numéro de version majeure ou mineure. Le numéro de version majeure est le premier chiffre de la séquence (***n***.0.0.0).) ; le numéro de version mineure est le deuxième chiffre de la séquence (0.*** n ***. 0.0). BizTalk Server ne reconnaît pas une modification de numéro de version plus loin dans la séquence, telles que 0.0. *** n ***.0 ou 0.0.0.*** n***.  
+4.  Dans le **informations d’Assembly** boîte de dialogue, spécifiez les valeurs pour le **Version de l’Assembly** champ pour augmenter le numéro de version d’assembly. Vous ne devez augmenter que le numéro de version majeure ou mineure. Le numéro de version majeure est le premier chiffre de la séquence (***n***.0.0.0).) ; le numéro de version mineure est le deuxième chiffre de la séquence (0. ***n*** . 0.0). BizTalk Server ne reconnaît pas une modification de numéro de version plus loin dans la séquence, telles que 0.0.  ***n*** .0 ou 0.0.0. ***n***.  
   
 5.  Cliquez sur **OK** pour fermer la **informations d’Assembly** boîte de dialogue.  
   

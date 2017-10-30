@@ -27,7 +27,7 @@ Vous pouvez définir les propriétés du gestionnaire d'envoi SMTP dans la conso
   
 ### <a name="to-change-global-variables-for-an-smtp-send-handler"></a>Pour modifier des variables globales d'un gestionnaire d'envoi SMTP  
   
-1.  Dans la Console Administration de BizTalk Server, développez [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] **Administration**, développez **groupe BizTalk**, développez **paramètres de plateforme**, puis développez ** Adaptateurs**.  
+1.  Dans la Console Administration de BizTalk Server, développez [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] **Administration**, développez **groupe BizTalk**, développez **paramètres de plateforme**, puis développez  **Adaptateurs**.  
   
 2.  Dans la liste développée des adaptateurs, cliquez sur **SMTP**, dans le volet de droite, avec le bouton du Gestionnaire d’envoi que vous souhaitez configurer, puis cliquez sur **propriétés**.  
   
@@ -37,7 +37,7 @@ Vous pouvez définir les propriétés du gestionnaire d'envoi SMTP dans la conso
   
     |Utiliser|Pour effectuer cette opération|  
     |--------------|----------------|  
-    |**Nom du serveur SMTP et le port TCP**|**[!INCLUDE[bts2013r2](../includes/bts2013r2-md.md)]**<br /><br /> Obligatoire. Entrez le nom du serveur SMTP et le numéro de port TCP (facultatif) à utiliser lors de l’envoi de messages. Par exemple, vous pouvez entrer :<br /><br /> -mySMTPserver<br />-mySMTPserver.internet.com:2525<br /><br /> **Dans les versions précédentes de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ** (y compris de BizTalk Server 2013), entrez uniquement le nom du serveur SMTP. Port TCP 25 est codé en dur.<br /><br /> Longueur maximale : 256|  
+    |**Nom du serveur SMTP et le port TCP**|**[!INCLUDE[bts2013r2](../includes/bts2013r2-md.md)]**<br /><br /> Obligatoire. Entrez le nom du serveur SMTP et le numéro de port TCP (facultatif) à utiliser lors de l’envoi de messages. Par exemple, vous pouvez entrer :<br /><br /> -mySMTPserver<br />-mySMTPserver.internet.com:2525<br /><br /> **Dans les versions précédentes de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]**  (y compris de BizTalk Server 2013), entrez uniquement le nom du serveur SMTP. Port TCP 25 est codé en dur.<br /><br /> Longueur maximale : 256|  
     |**À partir de (adresse de messagerie)**|Obligatoire. Entrez l’adresse de messagerie à placer sur le protocole SMTP **de** en-tête.<br /><br /> Longueur maximale : 256|  
     |**Type d'authentification**|Entrez le type d’authentification à utiliser avec le serveur SMTP.<br /><br /> Options :<br /><br /> -   **Aucune authentification**<br />-   **Authentification de base**<br />-   **Compte du processus (NTLM)**<br /><br /> Valeur par défaut : compte (NTLM) de processus|  
     |**Nom d'utilisateur**|Entrez le nom d’utilisateur à utiliser pour l’authentification avec le serveur SMTP.<br /><br /> Cette propriété exige une valeur si **type d’authentification** est **l’authentification de base**.<br /><br /> Longueur minimale : 0<br /><br /> Longueur maximale : 256|  

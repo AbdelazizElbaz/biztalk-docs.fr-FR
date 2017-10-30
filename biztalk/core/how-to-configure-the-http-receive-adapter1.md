@@ -26,7 +26,7 @@ L'adaptateur de réception HTTP permet d'envoyer des messages à [!INCLUDE[btsBi
   
 ### <a name="to-configure-the-http-receive-adapter"></a>Pour configurer l'adaptateur de réception HTTP  
   
-1.  Copiez la réception HTTP (BTSHTTPReceive.dll) de l’adaptateur à partir de ** \<BizTalk > \HttpReceive >** vers le dossier qui contient votre projet Single Sign-On (SSO), par exemple :  
+1.  Copiez la réception HTTP (BTSHTTPReceive.dll) de l’adaptateur à partir de  **\<BizTalk > \HttpReceive >** vers le dossier qui contient votre projet Single Sign-On (SSO), par exemple :  
   
      **< Adapter_install > \biztalk\SSO\mySSODemo**  
   
