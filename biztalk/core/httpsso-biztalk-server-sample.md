@@ -142,7 +142,7 @@ L'exemple HTTPSSO montre comment utiliser la fonction d'authentification unique 
   
 8.  Consultez les messages d'état correspondant à la configuration IIS, SSO et BizTalk en cours d'exécution. Vous pouvez trouver le code exécuté durant cette phase dans le **IisConfigurator**, **SsoConfigurator**, et **BtsConfigurator** classes définies dans le fichier SsoSample.cs. Une fois la configuration terminée, cliquez sur **suivant**.  
   
-9. Dans la dernière page de l’Assistant, acceptez les paramètres par défaut **démarrer le navigateur à** (case à cocher et une zone de texte avec l’URL http://localhost/SsoSampleBizTalkHttpReceive/BTSHttpReceive.dll?\< message / >), puis cliquez sur **Terminer**.  
+9. Dans la dernière page de l’Assistant, acceptez les paramètres par défaut **démarrer le navigateur à** (case à cocher et une zone de texte avec l’URL http://localhost/SsoSampleBizTalkHttpReceive/BTSHttpReceive.dll?\<message/>), puis cliquez sur **Terminer**.  
   
      Une instance d'Internet Explorer s'ouvre et affiche les exemples de données employé que vous avez ajoutés à la table Employés de la base de données SQL Northwind.  
   
@@ -171,7 +171,7 @@ L'exemple HTTPSSO montre comment utiliser la fonction d'authentification unique 
   
 -   Accédez directement à l'URL suivante dans Internet Explorer :  
   
-     http://localhost/SsoSampleBizTalkHttpReceive/BTSHttpReceive.dll? \<message / >  
+     http://localhost/SsoSampleBizTalkHttpReceive/BTSHttpReceive.dll?\<message/>  
   
 -   Exécutez de nouveau l'Assistant mais désactivez toutes les cases à cocher de configuration dans la première page.  
   
