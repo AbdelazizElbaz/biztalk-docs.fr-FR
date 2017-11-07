@@ -1,5 +1,6 @@
 ---
-title: "Didacticiel : Utilisation des propriétés de contexte de Message | Documents Microsoft"
+title: "Didacticiel : Utiliser des propriétés de contexte de Message TIBCO EMS | Documents Microsoft"
+description: "guide pas à pas pour utiliser les champs de descripteur de message TIBCO Enterprise Message Service dans l’orchestration de BizTalk Server"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,28 +8,27 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- messages, changing priority
-- message context properties, tutorial
 ms.assetid: 6e52593b-5001-4740-89fb-e003e12d8e69
 caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f122215baa5660294e159e4f1d6967a2df5ba9b3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f17b45afb28a497c0443f788a44d05307103c547
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="tutorial-using-message-context-properties"></a>Didacticiel : Utilisation des propriétés de contexte de Message
+# <a name="tutorial-use-tibco-ems-message-descriptors"></a>Didacticiel : Descripteurs de message utilisation TIBCO EMS
+
+## <a name="overview"></a>Vue d'ensemble
 Ce didacticiel présente l'utilisation des propriétés de contexte de BizTalk Server pour définir les champs du descripteur de message de TIBCO Enterprise Message Service (EMS) dans votre orchestration. Ce didacticiel suppose que vous disposez d'une orchestration qui reçoit un message en provenance d'un port de réception et qui l'envoie vers un port d'envoi lié à l'adaptateur Microsoft BizTalk pour TIBCO Enterprise Message Service.  
   
  La procédure suivante décrit la manière de modifier la priorité du message TIBCO EMS en modifiant la valeur de la propriété de contexte TibcoEMS.Priority. Dans BizTalk Server, les messages sont immuables. Par conséquent, pour modifier une valeur de propriété, vous devez créer et modifier un nouveau message. Pour ce faire, insérez une forme Assignation de message entre les formes Réception et Envoi. Toutefois, vous devez commencer par référencer le fichier DLL du schéma pour accéder aux propriétés TIBCO EMS.  
   
-### <a name="to-reference-the-schema-dll"></a>Pour référencer le fichier DLL du schéma  
+## <a name="reference-the-schema-dll"></a>Référence le fichier DLL du schéma  
   
-1.  Ouvrez **l’Explorateur de solutions** dans Visual Studio.  
+1.  Dans Visual Studio, ouvrez votre projet BizTalk Server et ouvrez **l’Explorateur de solutions** .  
   
 2.  Avec le bouton droit **références**, puis sélectionnez **ajouter une référence**.  
   
@@ -90,4 +90,4 @@ Ce didacticiel présente l'utilisation des propriétés de contexte de BizTalk S
 21. Sélectionnez **lier**, **Enlist**, et **Démarrer** dans l’Explorateur BizTalk pour tester votre orchestration.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Propriétés de contexte de message](../core/message-context-properties2.md)
+[Propriétés de contexte de message TIBCO EMS](../core/message-context-properties-in-biztalk-server.md)
