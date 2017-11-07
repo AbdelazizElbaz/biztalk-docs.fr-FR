@@ -1,28 +1,12 @@
 ---
-title: "Définition des propriétés de JD Edwards EnterpriseOne Transport | Documents Microsoft"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- Max Concurrent Calls parameter
-- JD Edwards EnterpriseOne adapters, transport properties
-- transport properties, configuring [JD Edwards EnterpriseOne adapters]
-- adapters [JD Edwards EnterpriseOne adapters], transport properties
-- Bootstrap Data Source properties
-ms.assetid: 7d258ee6-1cb3-4b88-ac41-49e639833574
-caps.latest.revision: "17"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 4ed3118230f2e4ae48676b297ac444da9c392221
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/adding-biztalk-adapter-for-jd-edwards-enterpriseone/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 71a1b75c9a602b196504fa9f06984f0ed9d52e05
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="setting-jd-edwards-enterpriseone-transport-properties"></a>Définition des propriétés du transport JD Edwards EnterpriseOne.
 Les propriétés de transport de JD Edwards EnterpriseOne sont utilisées au moment de la conception et de l'exécution. Dans le **propriétés du Transport** boîte de dialogue, vous définissez les paramètres de connexion et les informations d’identification spécifique sur le système du serveur et les objets que vous essayez d’accéder.  
@@ -34,7 +18,7 @@ Les propriétés de transport de JD Edwards EnterpriseOne sont utilisées au mo
 > [!NOTE]
 >  Les valeurs par défaut du port et du nom du serveur d'entreprise sont configurées dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Elles sont également lues à partir du fichier jdeinterop.ini. En cas d'échec d'ouverture de session, vérifiez avec attention les informations d'identification et les valeurs.  
   
-### <a name="to-specify-transport-properties"></a>Pour spécifier les propriétés de transport  
+## <a name="enter-transport-properties"></a>Entrez les propriétés du transport  
   
 1.  Dans la Console Administration de BizTalk Server, développez **Administration de BizTalk Server**, développez **groupe BizTalk**, développez **Applications**, puis développez souhaité application.  
   
@@ -124,7 +108,7 @@ Les propriétés de transport de JD Edwards EnterpriseOne sont utilisées au mo
 ### <a name="single-sign-on"></a>authentification unique (SSO, Single Sign-On)  
  Vous pouvez utiliser deux méthodes pour accéder au système JD Edwards EnterpriseOne. Vous pouvez utiliser les informations d'identification (paramètres de connexion des propriétés de transport) ou l'authentification unique (SSO). Sélectionnez **Oui** dans les **utiliser SSO** champ à utiliser l’authentification unique.  
   
- Pour plus d’informations et des instructions de base sur la configuration de l’authentification unique, consultez [à l’aide de l’authentification unique sur](../core/using-single-sign-on1.md).  
+ Pour plus d’informations et des instructions de base sur la configuration de l’authentification unique, consultez [sécurité de l’adaptateur BizTalk pour JD Edwards EnterpriseOne](../core/security-in-biztalk-adapter-for-jd-edwards-enterpriseone.md).
   
  Vous devez également sélectionner une application associée dans la liste déroulante. Une application associée qui a été créée par des outils de l'authentification unique de l'entreprise représente une application telle que JD Edwards EnterpriseOne. L'adaptateur BizTalk pour JD Edwards EnterpriseOne utilise les informations d'identification d'un utilisateur de l'application.  
   
@@ -133,5 +117,4 @@ Les propriétés de transport de JD Edwards EnterpriseOne sont utilisées au mo
  Pour plus d’informations sur la création d’une application associée, consultez [création d’Applications associées](../core/creating-affiliate-applications4.md). Vous pouvez également consulter l'aide en ligne de Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
 ## <a name="see-also"></a>Voir aussi  
- [Single Sign-On et adaptateur BizTalk pour JD Edwards EnterpriseOne](../core/single-sign-on-and-biztalk-adapter-for-jd-edwards-enterpriseone.md)   
- [Création de gestionnaires d’envoi de EnterpriseOne JD Edwards](../core/creating-jd-edwards-enterpriseone-send-handlers.md)
+ [Authentification unique et adaptateur BizTalk pour JD Edwards EnterpriseOne](../core/single-sign-on-and-biztalk-adapter-for-jd-edwards-enterpriseone.md)   

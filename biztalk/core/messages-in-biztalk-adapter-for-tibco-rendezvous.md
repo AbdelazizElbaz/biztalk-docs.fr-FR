@@ -1,5 +1,5 @@
 ---
-title: "Messages de l’adaptateur BizTalk pour TIBCO Rendezvous | Documents Microsoft"
+title: "Messages dans l’adaptateur TIBCO Rendezvous | Documents Microsoft"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,30 +7,24 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- passing messages
-- TIBCO Rendezvous
-- messages
-- message passing
-- messages, passing
 ms.assetid: 12699550-22e7-4a11-a024-2302570970af
 caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f4bc1eadbefdeb5c59df9a1b999ffdd3e530587a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8b9c3aa4aeb613ea65f7e0d7385871c639afb6d8
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="messages-in-biztalk-adapter-for-tibco-rendezvous"></a>Messages dans l'adaptateur BizTalk pour TIBCO Rendezvous
 L'adaptateur BizTalk pour TIBCO Rendezvous assure la connectivité bidirectionnelle entre [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] et TIBCO Rendezvous. Il utilise l'API TIBCO Rendezvous et l'API d'infrastructure d'adaptateurs BizTalk pour offrir une intégration étroite.  
   
 ## <a name="about-tibco-rendezvous"></a>À propos de TIBCO Rendezvous  
- TIBCO Rendezvous est un logiciel qui inclut un bus de messages pour l'intégration des applications d'entreprise (IAE). Il inclut des API de messagerie en C, C++, Java, Visual Basic et pour Microsoft .NET Framework recevoir des flux de données sur des feuilles de calcul Microsoft Office Excel et d’autres applications de choix. Pour plus d’informations, consultez [TIBCO Rendezvous Concepts](../core/tibco-rendezvous-concepts.md).  
+ TIBCO Rendezvous est un programme qui fournit un bus de messages pour l’intégration d’application d’entreprise (IAE). Il inclut des API de messagerie en C, C++, Java, Visual Basic et pour Microsoft .NET Framework recevoir des flux de données sur des feuilles de calcul Microsoft Office Excel et d’autres applications de choix. Pour plus d’informations, consultez [TIBCO Rendezvous Concepts](../core/tibco-rendezvous-concepts.md).  
   
-### <a name="message-passing"></a>Transmission de messages  
+## <a name="message-passing"></a>Transmission de messages  
  Le concept de base de la transmission de messages est relativement simple :  
   
 -   Un message inclut un sujet unique constitué d'éléments séparés par des points. Un message est envoyé à un démon Rendezvous (même s'il peut être transmis à d'autres démons).  
@@ -53,16 +47,16 @@ L'adaptateur BizTalk pour TIBCO Rendezvous assure la connectivité bidirectionne
   
 -   Tous les niveaux de message, y compris les messages de niveau Débogage, sont envoyés au journal des suivis Windows.  
   
-#### <a name="transmitter"></a>Émetteur  
+## <a name="transmitter"></a>Émetteur  
  L'adaptateur BizTalk pour TIBCO Rendezvous lance un agent d'exécution par port d'envoi. L'API .NET Framework TIBCO Rendezvous permet uniquement de définir le codage des caractères sur une étendue globale. Aussi, l'une des options de configuration des ports est un numéro de page de codes. En démarrant un autre processus pour chaque page de codes, l'adaptateur offre une prise en charge optimisée de la globalisation.  
   
-#### <a name="receiver"></a>Récepteur  
+## <a name="receiver"></a>Récepteur  
  L'adaptateur BizTalk pour TIBCO Rendezvous lance un agent d'exécution par emplacement de réception.  
   
-#### <a name="transactions"></a>Transactions  
+## <a name="transactions"></a>Transactions  
  Le produit TIBCO Rendezvous n'est pas transactionnel. Un produit distinct, TIBCO Rendezvous TX, est requis. Cette version de l'adaptateur BizTalk pour TIBCO Rendezvous ne prend pas en charge les transactions.  
   
-#### <a name="security"></a>Sécurité  
+## <a name="security"></a>Sécurité  
  TIBCO Rendezvous prend uniquement en charge l'authentification entre les programmes et démons TIBCO Rendezvous. Il n'utilise pas l'autorisation ou le chiffrement. Un produit distinct, TIBCO Rendezvous DataSecurity, est requis.  
   
 ## <a name="see-also"></a>Voir aussi  

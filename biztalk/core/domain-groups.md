@@ -7,21 +7,21 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: domain groups
 ms.assetid: 9adc090e-e18c-46b6-b985-49b200d42966
 caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 52fc5cc05718aa6d9e0ca89bc48467052fb916a5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 42833e24ee4b0ad8f78a8f60139d66ceb41a5f8f
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="domain-groups"></a>Groupes de domaine
-BizTalk Server prend en charge les comptes d'utilisateur et de groupe de domaine dans des configurations comprenant un ou plusieurs ordinateurs. Pour les configurations multiserveurs, vous devez respecter les prérequis répertoriés dans cette section et dans la rubrique « Considérations relatives aux environnements multiserveurs » (Considerations for Multiserver Environments) du guide d'installation. Pour plus d’informations, consultez [vue d’ensemble de l’Installation de BizTalk Server 2013 et 2013 R2](http://msdn.microsoft.com/library/8041926c-cfc9-4eaf-9c28-a2c6e8015bc5).  
+# <a name="domain-groups-in-biztalk"></a>Groupes de domaine dans BizTalk Server
+BizTalk Server prend en charge les comptes d'utilisateur et de groupe de domaine dans des configurations comprenant un ou plusieurs ordinateurs. Pour les configurations multiserveurs, vous devez respecter les prérequis répertoriés dans cette section et dans la rubrique « Considérations relatives aux environnements multiserveurs » (Considerations for Multiserver Environments) du guide d'installation. Pour plus d’informations, consultez la [vue d’ensemble de l’installation](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md).  
   
+## <a name="before-you-begin"></a>Avant de commencer
 -   Si vous utilisez des groupes de domaine pour configurer BizTalk Server, vous devez créer manuellement les groupes avant de configurer BizTalk Server. Le Gestionnaire de configuration ne peut pas créer de groupes de domaine.  
   
 -   Après avoir créé des groupes de domaine ou des comptes d’utilisateur, ajoutez les comptes d’utilisateur aux groupes appropriés en fonction des affiliations de groupe dans [groupes Windows et les comptes d’utilisateur de BizTalk Server](../core/windows-groups-and-user-accounts-in-biztalk-server.md).  
@@ -37,5 +37,5 @@ BizTalk Server prend en charge les comptes d'utilisateur et de groupe de domaine
   
 ## <a name="see-also"></a>Voir aussi  
  [Groupes locaux](../core/local-groups.md)   
- [Vue d’ensemble de l’installation de BizTalk Server 2013 et 2013 R2](http://msdn.microsoft.com/library/8041926c-cfc9-4eaf-9c28-a2c6e8015bc5)   
+ [Vue d’ensemble de l’installation](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md)   
  [Groupes et comptes d’utilisateur Windows dans BizTalk Server](../core/windows-groups-and-user-accounts-in-biztalk-server.md)

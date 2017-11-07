@@ -7,23 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- XML schemas, mapping to Redevous types
-- message mapping, examples
-- XML schemas, schema types
-- data type mapping, send handlers
-- examples, message mapping
-- send handlers, data type mapping
 ms.assetid: fa1a9233-8781-45a8-9c55-a18ecaa0f456
 caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b6c54cb7ae684aa2f617ca615ed55703e331de46
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bda336d149d373477b26efeb2e4b05de4aac7554
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="data-type-mapping-for-send-handlers-in-tibco-rendezvous"></a>Mappage de types de données pour les gestionnaires d'envoi dans TIBCO Rendezvous
 Le mappage des types de schémas XML aux types TIBCO Rendezvous est possible seulement si TIBCO Rendezvous fournit les informations relatives aux types (xsi:type=). Les types non pris en charge sont mappés à des chaînes dans la mesure du possible. Si le mappage est impossible ou si l'option est désactivée dans la configuration du port, une erreur est générée.  
@@ -111,4 +104,4 @@ xmlns:ns="some namespace for this message [value not important, unless the schem
  Une fois le message précédent généré sous la forme d'un message TIBCO Rendezvous structuré, il devient une instance TibcoMsg de niveau supérieur avec six champs. Les derniers champs sont un sous-message, constitué de deux champs de types de tableaux (les éléments « item » ne sont pas mappés aux champs Message TIBCO Rendezvous mais aux éléments d'un champ Message de type `array`). Le champ MarketCap, dont le type n'est pas spécifié, est envoyé en tant que champ de message de type chaîne.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Création gestionnaires d’envoi TIBCO Rendezvous](../core/creating-tibco-rendezvous-send-handlers.md)
+ [Création de gestionnaires d’envoi TIBCO Rendezvous](../core/creating-tibco-rendezvous-send-handlers.md)

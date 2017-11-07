@@ -1,7 +1,8 @@
 ---
-title: "Configuration des journaux de BizTalk Server pour les bases de données supplémentaires | Documents Microsoft"
+title: "Configurer les journaux de BizTalk pour les bases de données supplémentaires | Documents Microsoft"
+description: "Ajouter des bases de données personnalisées à la tâche de sauvegarde de BizTalk Server et pour l’envoi de journaux de BizTalk Server"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 11/01/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -12,14 +13,16 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4b16b1d262b07ecaa62e87456f10bece225b3b34
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1f4eb0b690f81b16d739183633c6507b2ad87226
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="configuring-biztalk-server-log-shipping-for-additional-databases"></a>Configuration des journaux de BizTalk Server pour les bases de données supplémentaires
-Dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], travaux ajouté à la tâche de sauvegarde de BizTalk Server est automatiquement ajoutés à [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] journaux de transaction. Vous n’avez pas à effectuer des étapes supplémentaires pour configurer l’envoi de journaux pour les nouvelles bases de données sont ajoutées à la tâche de sauvegarde de BizTalk Server. Toutefois, veillez à ajouter des bases de données personnalisées comme approprié sous le \<OtherDatabases > section du fichier SampleUpdateInfo.xml, comme décrit à l’étape 22 de [comment configurer le système de Destination pour l’envoi de journaux](http://go.microsoft.com/fwlink/?LinkId=151402) (http : / / go.microsoft.com/fwlink/ ? LinkId = 151402) dans [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] aide.  
+
+## <a name="overview"></a>Vue d'ensemble
+Dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], travaux ajouté à la tâche de sauvegarde de BizTalk Server est automatiquement ajoutés à [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] journaux de transaction. Vous n’avez pas à effectuer des étapes supplémentaires pour configurer l’envoi de journaux pour les nouvelles bases de données sont ajoutées à la tâche de sauvegarde de BizTalk Server. Toutefois, veillez à ajouter des bases de données personnalisées comme approprié sous le \<OtherDatabases > section du fichier SampleUpdateInfo.xml. [Configurer le système de Destination pour l’envoi de journaux](../core/how-to-configure-the-destination-system-for-log-shipping.md) et [sauvegarde des personnalisé bases de données](../core/how-to-back-up-custom-databases.md) fournit quelques conseils.
   
 ## <a name="see-also"></a>Voir aussi  
- [Journaux de configuration de BizTalk Server](../technical-guides/configuring-biztalk-server-log-shipping.md)
+ [Configuration de la copie des journaux de transaction BizTalk Server](../technical-guides/configuring-biztalk-server-log-shipping.md)

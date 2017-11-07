@@ -16,11 +16,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 182e73ed45a1473286a301cf859e619cc5d21287
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f8daa94a49be4d120180fca9fb82c07b3603cf95
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="single-sign-on-and-biztalk-adapter-for-jd-edwards-enterpriseone"></a>Authentification unique et adaptateur BizTalk pour JD Edwards EnterpriseOne
 Lorsque vous utilisez l'authentification unique (SSO) avec l'adaptateur Microsoft BizTalk pour JD Edwards EnterpriseOne, ce dernier récupère les informations d'identification dans la base de données des informations d'identification SSO. Par conséquent, vous n’avez pas besoin d’entrer les informations d’identification d’ouverture de session pour le système serveur dans le **propriétés du Transport** boîte de dialogue.  
@@ -37,4 +37,4 @@ Lorsque vous utilisez l'authentification unique (SSO) avec l'adaptateur Microsof
   
 ## <a name="see-also"></a>Voir aussi  
  [Création d’Applications associées](../core/creating-affiliate-applications4.md)   
- [À l’aide de l’authentification unique](../core/using-single-sign-on1.md)
+ [Sécurité de l’adaptateur BizTalk pour JD Edwards EnterpriseOne](../core/security-in-biztalk-adapter-for-jd-edwards-enterpriseone.md)

@@ -15,11 +15,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 61c82b199f7b8686556f2cbb53a90b0d4b59536e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cf49b16da34c5341059db34d6874b7099ab54df6
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-create-a-send-port"></a>Comment créer un Port d’envoi
 La procédure suivante permet de créer des ports d'envoi BizTalk Server pour JD Edwards EnterpriseOne.  
@@ -54,4 +54,4 @@ La procédure suivante permet de créer des ports d'envoi BizTalk Server pour JD
   
 ## <a name="see-also"></a>Voir aussi  
  [Création d’Applications associées](../core/creating-affiliate-applications4.md)   
- [À l’aide de l’authentification unique](../core/using-single-sign-on1.md)
+ [Sécurité de l’adaptateur BizTalk pour JD Edwards EnterpriseOne](../core/security-in-biztalk-adapter-for-jd-edwards-enterpriseone.md)

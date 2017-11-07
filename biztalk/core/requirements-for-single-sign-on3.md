@@ -1,5 +1,5 @@
 ---
-title: "Configuration requise pour l’authentification unique sur | Documents Microsoft"
+title: "Configuration requise de l’authentification unique pour l’adaptateur TIBCO Rendevous | Documents Microsoft"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,13 +12,15 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 61932b44364670515f02f89a1441a5d54030bc94
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: 40cf27a3b96534239fa871bd04b90febee9beafe
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="requirements-for-single-sign-on"></a>Configuration requise pour l'authentification unique
+
+## <a name="prerequisites"></a>Conditions préalables
 Pour utiliser l'authentification unique (SSO), vous devez disposer des éléments suivants :  
   
 -   Microsoft BizTalk Server
@@ -43,4 +45,4 @@ Pour utiliser l'authentification unique (SSO), vous devez disposer des élément
 >  Après avoir effectué un travail à l’aide de l’authentification unique, n’oubliez pas de réinitialiser tout dossier partage Web **ne partagent pas**. Les applications qui utilisent ce dossier ne seront pas mise à jour ou désinstaller correctement si le dossier est partagé, car il est considéré comme en cours d’utilisation.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilisation de l’authentification unique](../core/using-single-sign-on5.md)
+[Sécurité](../core/security-in-biztalk-adapter-for-tibco-rendezvous.md)

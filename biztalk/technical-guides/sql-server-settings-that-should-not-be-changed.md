@@ -1,5 +1,6 @@
 ---
-title: "Les paramètres de SQL Server qui ne doivent pas être modifiées | Documents Microsoft"
+title: "Ne pas pour modifier les paramètres de SQL Server | Documents Microsoft"
+description: "Max Degree of Parallelism, de création automatique des statistiques de mise à jour automatique des statistiques et la reconstruction d’index dans BizTalk Server"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,11 +13,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d2fb6e2553c005d3ba8651c860ff844e8cc74106
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 32186bc9487dc71900c98467a45bc3e67e915f35
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="sql-server-settings-that-should-not-be-changed"></a>Paramètres de SQL Server qui ne doivent pas être modifiés.
 Lorsque vous configurez [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] au cours des procédures opérationnelle pour [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], vous ne devez pas modifier pour les paramètres suivants.  
@@ -28,7 +29,7 @@ Lorsque vous configurez [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlserve
   
  Le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] des procédures stockées fournissent les jointures corrects et indicateurs de verrouillage chaque fois que possible afin de tenter de maintenir l’optimiseur de requête d’effectuant la quantité de travail et de modifier le plan. Ces procédures stockées fournissent les exécutions de requête cohérente en créant les requêtes de telle sorte que l’optimiseur de requête est extraite de l’image autant que possible.  
   
- Pour plus d’informations, consultez l’article de la Base de connaissances Microsoft 899000, [« Pour l’instance de SQL Server lorsque vous configurez BizTalk Server le paramétrage du parallélisme »](http://go.microsoft.com/fwlink/?LinkId=153432) (http://go.microsoft.com/fwlink/?LinkId=153432).  
+ Pour plus d’informations, consultez [Ko 899000 : paramètre de parallélisme pour une instance de SQL Server utilisée par BizTalk Server](https://support.microsoft.com/help/899000/the-parallelism-setting-for-the-instance-of-sql-server-when-you-config).  
   
 ## <a name="sql-server-statistics-on-the-messagebox-database"></a>Statistiques de SQL Server sur la base de données MessageBox  
  Les options suivantes sont désactivées par défaut dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] base de données MessageBox lors de sa création :  
@@ -43,26 +44,20 @@ Lorsque vous configurez [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlserve
   
  Pour plus d'informations, consultez les articles suivants de la Base de connaissances Microsoft :  
   
--   **912262**:[« l’option de statistiques de mise à jour automatique, création automatique des statistiques, et le paramétrage du parallélisme sont désactivés dans l’instance de base de données SQL Server qui héberge la base de données BizTalkMsgBoxDB de BizTalk Server »](http://go.microsoft.com/fwlink/?LinkId=153430) (http://go.microsoft.com/fwlink/?LinkId=153430).  
+-   **912262**:[« l’option de statistiques de mise à jour automatique, création automatique des statistiques, et le paramétrage du parallélisme sont désactivés dans l’instance de base de données SQL Server qui héberge la base de données BizTalkMsgBoxDB de BizTalk Server »](https://support.microsoft.com/help/912262/the-auto-update-statistics-option-the-auto-create-statistics-option-an) .  
   
--   **917845**:[« Vous rencontrez blocage, blocage des conditions ou autres problèmes SQL Server lorsque vous essayez de vous connecter à la base de données BizTalkMsgBoxDb de BizTalk Server »](http://go.microsoft.com/fwlink/?LinkId=153429) (http://go.microsoft.com/fwlink/?LinkId=153429).  
+-   **917845**:[« Vous rencontrez blocage, blocage des conditions ou autres problèmes SQL Server lorsque vous essayez de vous connecter à la base de données BizTalkMsgBoxDb de BizTalk Server »](https://support.microsoft.com/help/917845/you-experience-blocking--deadlock-conditions--or-other-sql-server-issu).  
   
 ## <a name="changes-to-the-messagebox-database"></a>Modifications apportées à la base de données MessageBox  
- La base de données MessageBox doit être traité comme une application non Microsoft source code. Autrement dit, vous ne devez pas « modifier » la base de données MessageBox via les modifications apportées aux tables, index, procédures stockées et la plupart des paramètres de base de données SQL Server. Pour plus d’informations, dans le blog du moteur de base de BizTalk, consultez l’entrée [« Que vous pouvez et ne peut pas faire avec le serveur de base de données MessageBox »](http://go.microsoft.com/fwlink/?LinkId=101577) (http://go.microsoft.com/fwlink/?LinkId=101577).  
+ La base de données MessageBox doit être traité comme une application non Microsoft source code. Autrement dit, vous ne devez pas « modifier » la base de données MessageBox via les modifications apportées aux tables, index, procédures stockées et la plupart des paramètres de base de données SQL Server. Pour plus d’informations, dans le blog du moteur de base de BizTalk, consultez [peuvent et ne peut pas faire avec le serveur de base de données MessageBox](http://go.microsoft.com/fwlink/p/?LinkId=101577).  
   
 ## <a name="default-settings-for-the-database-index-rebuilds-and-defragmentation"></a>Paramètres par défaut pour les reconstructions d’Index de base de données et de défragmentation  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ne prend pas en charge la défragmentation d’index. « DBCC INDEXDEFRAG » et « ALTER INDEX... REORGANIZE... » ne sont pas pris en charge, car ils utilisent la page de verrouillage, ce qui peut entraîner le blocage et les blocages à l’aide [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]reconstruit les index de base de données est prise en charge (« DBCC DBREINDEX » et « ALTER INDEX... REBUILD... »), mais ils ne doivent être effectuées pendant les fenêtres de maintenance lorsque [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ne traite pas les données. Les reconstructions d’index lors de la [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] traite les données ne sont pas prises en charge.  
   
- Pour plus d’informations, consultez l’article de la Base de connaissances Microsoft 917845 [« Vous rencontrez blocage, blocage des conditions ou autres problèmes SQL Server lorsque vous essayez de vous connecter à la base de données BizTalkMsgBoxDb de BizTalk Server »](http://go.microsoft.com/fwlink/?LinkId=153429) (http:// go.Microsoft.com/fwlink/ ? LinkId = 153429).  
+ Pour plus d’informations, consultez [917845 de la base de connaissances : expérience de blocage, de blocage des conditions ou autres problèmes de SQL Server lorsque vous essayez de vous connecter à la base de données BizTalkMsgBoxDb de BizTalk Server »](https://support.microsoft.com/help/917845/you-experience-blocking--deadlock-conditions--or-other-sql-server-issu).  
   
  La fragmentation d’index n’est pas autant d’un problème de performances pour [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] comme pour un système DSS ou un système OLTP qui effectue des analyses d’index. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]effectue des requêtes très sélectifs et les mises à jour et [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] des procédures stockées ne devraient pas provoquer de table ou d’analyses d’index.  
   
- Pour plus d’informations sur les types de charge de travail et de fragmentation d’index, consultez [« Microsoft SQL Server 2000 Index meilleures pratiques de défragmentation »](http://go.microsoft.com/fwlink/?LinkId=101580) (http://go.microsoft.com/fwlink/?LinkId=101580). Un guillemet à partir de l’article :  
-  
- « Comme indiqué dans la Figure 1, il est peu de différence entre les performances des procédures stockées avant et après la défragmentation. Étant donné que les requêtes sous-jacent émis par ces procédures stockées réactions très sélectifs portions de données, les performances de la charge de travail a été pas affectées par les index fragmentés. »  
-  
-> [!NOTE]  
->  Le contenu de l’article s’appliquent également aux [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)] et [!INCLUDE[btsSQLServer2005](../includes/btssqlserver2005-md.md)].  
-  
+ 
 ## <a name="see-also"></a>Voir aussi  
- [Liste de vérification : Configuration de SQL Server](~/technical-guides/checklist-configuring-sql-server.md)
+ [Liste de contrôle : Configuration de SQL Server](~/technical-guides/checklist-configuring-sql-server.md)

@@ -1,26 +1,12 @@
 ---
-title: "Comment créer des Ports d’envoi pour TIBCO Rendezvous | Documents Microsoft"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- creating send ports
-- ports, send
-- send ports, creating
-ms.assetid: 0c8d9fdc-b273-4876-9f93-b5a85539a3c1
-caps.latest.revision: "8"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 7d0b6e7dbb1a3b32979c94ec1af9483bd9fcb7cb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/creating-tibco-rendezvous-send-handlers/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 44da7839f0bee96db332dada214bdbc503067f56
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-create-send-ports-for-tibco-rendezvous"></a>Création de ports d'envoi pour TIBCO Rendezvous
 Les étapes suivantes permettent de créer un port d'envoi à l'aide de [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].  
@@ -39,9 +25,7 @@ Les étapes suivantes permettent de créer un port d'envoi à l'aide de [!INCLUD
   
     3.  À partir de la **Gestionnaire d’envoi** liste déroulante, sélectionnez l’URI.  
   
-    4.  Dans la liste déroulante Pipeline d’envoi, sélectionnez **Microsoft.BizTalk.DefaultPipelines.XMLTransmit**.  
-  
-    5.  À partir de la **Pipeline de réception** la liste déroulante, sélectionnez **Microsoft.BizTalk.DefaultPiplelines.XMLReceive**.  
+    4.  À partir de la **Pipeline d’envoi** la liste déroulante, sélectionnez **Microsoft.BizTalk.DefaultPipelines.XMLTransmit**. À partir de la **Pipeline de réception** la liste déroulante, sélectionnez **Microsoft.BizTalk.DefaultPiplelines.XMLReceive**.  
   
     6.  Cliquez sur **configurer** pour configurer le port d’envoi.  
   
@@ -60,4 +44,4 @@ Les étapes suivantes permettent de créer un port d'envoi à l'aide de [!INCLUD
 5.  Cliquez sur **OK**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Création gestionnaires d’envoi TIBCO Rendezvous](../core/creating-tibco-rendezvous-send-handlers.md)
+ [Création de gestionnaires d’envoi TIBCO Rendezvous](../core/creating-tibco-rendezvous-send-handlers.md)

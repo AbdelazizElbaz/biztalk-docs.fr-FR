@@ -1,27 +1,16 @@
 ---
-title: "Comment définir les propriétés de JD Edwards OneWorld Transport | Documents Microsoft"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- setting transport properties
-- transport properties, setting
-ms.assetid: 6d38088b-a496-414e-aae6-d28c5d6398b6
-caps.latest.revision: "13"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 7abac3b468b8c76b8214e400366144b39f1e2741
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/adding-biztalk-adapter-for-jd-edwards-oneworld/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 5290f424bbeb5cf54e78c903c50a6c2d945bc8cc
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-set-jd-edwards-oneworld-transport-properties"></a>Comment définir les propriétés de JD Edwards OneWorld Transport
+
+## <a name="overview"></a>Vue d'ensemble
 La définition de système de propriétés du transport JD Edwards OneWorld est utilisée pour la connexion au moment de la conception et de l'exécution. Vous définissez ces informations d'identification pour accéder aux fonctions commerciales de JD Edwards OneWorld au moment de la conception et effectuer des appels au moment de l'exécution.  
   
  Lorsqu'une connexion est établie avec JD Edwards OneWorld, les paramètres sont transmis à l'objet de connexion (utilisateur, mot de passe, environnement). Il renvoie une instance de la fonction d'entreprise de l'application JD Edwards OneWorld. Les informations d'identification sont ensuite définies par le nom du serveur de l'entreprise/application et le port TCP/IP défini sur lequel le service écoute.  
@@ -31,12 +20,8 @@ La définition de système de propriétés du transport JD Edwards OneWorld est 
 > [!NOTE]
 >  Toutes les entrées respectent la casse.  
   
-## <a name="setting-properties"></a>Définition de propriétés  
+## <a name="set-the-transport-properties"></a>Définir les propriétés de transport  
  Dans le **propriétés du Transport** boîte de dialogue, vous définissez les paramètres de connexion et les informations d’identification qui sont spécifiques au système du serveur et les objets que vous essayez d’accéder.  
-  
- Les étapes de ce processus sont les suivantes :  
-  
-#### <a name="to-set-transport-properties"></a>Pour définir les propriétés du transport  
   
 1.  Fournissez des informations d'identification.  
   
@@ -48,7 +33,7 @@ La définition de système de propriétés du transport JD Edwards OneWorld est 
   
 2.  Pour utiliser l’authentification unique (SSO), sélectionnez **Oui** dans les **utiliser SSO**.  
   
-     Pour plus d’informations sur la façon de configurer l’authentification unique, consultez [à l’aide de l’authentification unique sur](../core/using-single-sign-on3.md).  
+     Pour plus d’informations sur la façon de configurer l’authentification unique, consultez [sécurité dans l’adaptateur](../core/security-in-biztalk-adapter-for-jd-edwards-oneworld.md)  
   
 3.  Sélectionnez une application associée sur la liste.  
   
@@ -81,7 +66,7 @@ La définition de système de propriétés du transport JD Edwards OneWorld est 
   
      Vous devez définir des paramètres de connexion de l'adaptateur BizTalk pour JD Edwards OneWorld afin d'accéder à JD Edwards OneWorld.  
   
-### <a name="adapter-required-properties"></a>Propriétés obligatoires de l'adaptateur  
+## <a name="adapter-required-properties"></a>Propriétés de la carte requis  
  Si vous n'avez pas défini de variables d'environnement globales dans le Panneau de configuration, vous pouvez le faire dans cette section.  
   
 |Paramètre| Description|  
@@ -94,5 +79,3 @@ La définition de système de propriétés du transport JD Edwards OneWorld est 
 |Port|Tapez le numéro de port qui échange des données (par exemple, `6009`).|  
 |Nom d'utilisateur|Tapez un nom d'utilisateur JD Edwards OneWorld utilisé pour se connecter au système JD Edwards OneWorld.|  
   
-## <a name="see-also"></a>Voir aussi  
- [Création de gestionnaires de JD Edwards OneWorld envoi](../core/creating-jd-edwards-oneworld-send-handlers.md)

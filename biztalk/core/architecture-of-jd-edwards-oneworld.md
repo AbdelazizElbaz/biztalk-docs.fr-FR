@@ -1,5 +1,6 @@
 ---
 title: Architecture de JD Edwards OneWorld | Documents Microsoft
+description: "Décrit les services entrants au moment du design et moment de l’exécution, les événements sortants au moment du design et le moment de l’exécution dans l’adaptateur JD Edwards OneWorld dans BizTalk Server"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,20 +8,19 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: architecture
 ms.assetid: 9200a090-a587-4b60-9447-d281580f2078
 caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1daee7d44152817da1ac536dd98cbaf898e2ac7c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0f866e5d72e392136d19c155785aaf6b71db2ce3
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="architecture-of-jd-edwards-oneworld"></a>Architecture de JD Edwards OneWorld
-L'adaptateur Microsoft BizTalk pour JD Edwards OneWorld permet d'accéder aux fonctions commerciales de JD Edwards OneWorld. JD Edwards OneWorld communique entre les ordinateurs client et serveur à l'aide d'une architecture de messagerie propriétaire nommée JDENet. Celle-ci est implémentée par les classes de connecteur JD Edwards OneWorld figurant dans les fichiers JAR, Connector.jar et Kernel.jar. La communication est implémentée à l’aide de TCP/IP comme protocole de transport, avec le port par défaut 6009 ou 6010. Pour obtenir une description de l’emplacement où cette valeur est définie, consultez [comment définir les propriétés Transport JD Edwards OneWorld](../core/how-to-set-jd-edwards-oneworld-transport-properties.md).  
+L'adaptateur Microsoft BizTalk pour JD Edwards OneWorld permet d'accéder aux fonctions commerciales de JD Edwards OneWorld. JD Edwards OneWorld communique entre les ordinateurs client et serveur à l'aide d'une architecture de messagerie propriétaire nommée JDENet. Celle-ci est implémentée par les classes de connecteur JD Edwards OneWorld figurant dans les fichiers JAR, Connector.jar et Kernel.jar. La communication est implémentée à l’aide de TCP/IP comme protocole de transport, avec le port par défaut 6009 ou 6010. Pour obtenir une description de l’emplacement où cette valeur est définie, consultez [ajouter les artefacts à l’Administration de BizTalk](../core/adding-biztalk-adapter-for-jd-edwards-oneworld.md).  
   
  **Architecture de l’adaptateur BizTalk pour JD Edwards OneWorld**  
   
@@ -83,5 +83,5 @@ L'adaptateur Microsoft BizTalk pour JD Edwards OneWorld permet d'accéder aux fo
 -   Le port de réception envoie le document XML à BizTalk Server.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment définir les propriétés de JD Edwards OneWorld Transport](../core/how-to-set-jd-edwards-oneworld-transport-properties.md)   
- [Planification et Architecture](../core/planning-and-architecture17.md)
+ [Ajouter les artefacts à l’Administration de BizTalk](../core/adding-biztalk-adapter-for-jd-edwards-oneworld.md)   
+ [Planification et architecture](../core/planning-and-architecture17.md)

@@ -18,11 +18,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 82ee1a01fafad93fe324e6c6a940944ceeb4bbfb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 87aa9be716e437e80c0e85bd9e462713e48090ad
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="creating-affiliate-applications"></a>Création d’Applications associées
 Les étapes suivantes décrivent la mise en route des applications associées à l'aide de l'authentification unique (SSO).  
@@ -118,4 +118,4 @@ Les étapes suivantes décrivent la mise en route des applications associées à
      L’application associée apparaît dans l’adaptateur BizTalk pour JD Edwards EnterpriseOne **propriétés du Transport** boîte de dialogue.  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide de l’authentification unique](../core/using-single-sign-on1.md)
+ [Sécurité de l’adaptateur BizTalk pour JD Edwards EnterpriseOne](../core/security-in-biztalk-adapter-for-jd-edwards-enterpriseone.md)

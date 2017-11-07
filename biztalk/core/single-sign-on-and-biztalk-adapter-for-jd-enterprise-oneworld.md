@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6a9d3d102c3ab79ea719587fdb3632612e75faa7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e3b0fbe7aa671d543a0fd6cd7da78e05d18c63c3
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="single-sign-on-and-biztalk-adapter-for-jd-enterprise-oneworld"></a>Authentification unique et adaptateur BizTalk pour JD Enterprise OneWorld
 Informations d’identification unique de Sign-On (SSO) sont obtenues à partir de la base de données d’informations d’identification de l’authentification unique ; Par conséquent, vous n’avez pas besoin d’entrer des informations d’identification du système du serveur dans le **propriétés du Transport** fenêtre.  
@@ -35,4 +35,4 @@ Informations d’identification unique de Sign-On (SSO) sont obtenues à partir 
   
 ## <a name="see-also"></a>Voir aussi  
  [Création d’Applications associées](../core/creating-affiliate-applications3.md)   
- [À l’aide de l’authentification unique](../core/using-single-sign-on3.md)
+ [Sécurité de la carte](../core/security-in-biztalk-adapter-for-jd-edwards-oneworld.md)

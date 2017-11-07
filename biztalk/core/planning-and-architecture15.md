@@ -1,23 +1,12 @@
 ---
-title: Planification et Architecture15 | Documents Microsoft
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: planning
-ms.assetid: 380ab7e7-3208-4cc8-be57-96a145cdb1f1
-caps.latest.revision: "6"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 037f5621783da545b3bc0413851af913954b9da8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/architecture-of-biztalk-adapter-for-tibco-rendezvous/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 293620a9f706f753eb3e6ac3d57ce2b1b091ac53
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="planning-and-architecture"></a>Planification et architecture
 Cette section décrit les problèmes de planification et d'architecture que vous pouvez rencontrer lors de la configuration de TIBCO Rendezvous pour une utilisation avec l'adaptateur Microsoft BizTalk pour TIBCO Rendezvous.  

@@ -17,11 +17,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e42f93c6598f9b0a073b3e6a8a4530bfb5aefc27
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a2793ead474dc50eb3983d469752d3c03942e73e
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="running-sso-projects"></a>Exécution de projets SSO
 Vous pouvez exécuter un exemple de projet de l'authentification unique (SSO) dans Internet Explorer.  
@@ -34,9 +34,9 @@ Vous pouvez exécuter un exemple de projet de l'authentification unique (SSO) da
   
 2.  Accédez à l'URL suivante :  
   
-     http://localhost/SSODemo/BTSHTTPReceive.dll? \<ns0:method_list_method % 20xmlns : ns0 = « http://microsoft.com/exposed/object/object1 » >\<ns0:method_list_method >\<ns1:method_list % 20xmlns : ns1 = « http://microsoft.com/exposed/object » >\<ns1:comp_code >\</ns1:comp_code >\<ns1:comp_name >\</ns1:comp_name >\< /ns1:object_1 >\</ns0:method_list >\</ns0 : method_list_method >  
+     http://localhost/SSODemo/BTSHTTPReceive.dll?\<ns0:method_list_method%20xmlns:ns0=«http://microsoft.com/exposed/object/object1»>\<ns0:method_list_method>\<ns1:method_list%20xmlns:ns1=«http://microsoft.com/exposed/object»>\<ns1:comp_code>\</ns1:comp_code>\<ns1:comp_name>\</ns1:comp_name>\</ns1:object_1>\</ns0:method_list>\</ns0:method_list_method>  
   
      Dans ce cas, vous n'avez pas besoin de fournir les informations d'identification.  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide de l’authentification unique](../core/using-single-sign-on3.md)
+ [Sécurité de la carte](../core/security-in-biztalk-adapter-for-jd-edwards-oneworld.md)

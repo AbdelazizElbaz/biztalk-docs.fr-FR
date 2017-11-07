@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 472893a2a65d762f17747dac78b67b373165c0cf
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: e0dc92e4492d36ca8204f61354f8422d7eb47631
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="requirements-for-single-sign-on"></a>Configuration requise pour l'authentification unique
 Pour utiliser l’authentification unique (SSO), vous devez :  
@@ -44,4 +44,4 @@ Pour utiliser l’authentification unique (SSO), vous devez :
   
 ## <a name="see-also"></a>Voir aussi  
  [Exécution de projets SSO](../core/running-sso-projects1.md)   
- [Utilisation de l’authentification unique](../core/using-single-sign-on2.md)
+ [Sécuriser l’adaptateur](../core/security-in-biztalk-adapter-for-peoplesoft-enterprise.md)

@@ -1,5 +1,6 @@
 ---
 title: "Architecture de l’adaptateur BizTalk pour JD Edwards EnterpriseOne | Documents Microsoft"
+description: "Décrit les services entrants au moment du design et moment de l’exécution, les événements sortants au moment du design et le moment de l’exécution dans l’adaptateur JD Edwards EnterpriseOne dans BizTalk Server"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,20 +8,19 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: architecture
 ms.assetid: 0441c5d2-6a46-45b6-8ab5-0bdac3590f56
 caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 828d0ed6affc44edbf49beb204cd4afe21196747
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b495ee9a34cf464bd5cc11caed53c5df54948a49
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="architecture-of-biztalk-adapter-for-jd-edwards-enterpriseone"></a>Architecture de l'adaptateur BizTalk pour JD Edwards EnterpriseOne
-L'adaptateur Microsoft BizTalk pour Edwards EnterpriseOne permet d'accéder aux fonctions commerciales de JD Edwards EnterpriseOne. JD Edwards EnterpriseOne communique entre les ordinateurs client et serveur à l'aide d'une architecture de messagerie propriétaire nommée JDENet. Celle-ci est implémentée par les classes de connecteur JD Edwards EnterpriseOne figurant dans les fichiers JAR, Connector.jar et Kernel.jar. La communication est implémentée à l’aide de TCP/IP comme protocole de transport, avec le port par défaut 6009 ou 6010. Pour obtenir une description de l’emplacement où cette valeur est définie, consultez [comment définir les propriétés Transport JD Edwards OneWorld](../core/how-to-set-jd-edwards-oneworld-transport-properties.md).  
+L'adaptateur Microsoft BizTalk pour Edwards EnterpriseOne permet d'accéder aux fonctions commerciales de JD Edwards EnterpriseOne. JD Edwards EnterpriseOne communique entre les ordinateurs client et serveur à l'aide d'une architecture de messagerie propriétaire nommée JDENet. Celle-ci est implémentée par les classes de connecteur JD Edwards EnterpriseOne figurant dans les fichiers JAR, Connector.jar et Kernel.jar. La communication est implémentée à l’aide de TCP/IP comme protocole de transport, avec le port par défaut 6009 ou 6010. Pour obtenir une description de l’emplacement où cette valeur est définie, consultez [ajouter les artefacts à l’Administration de BizTalk](../core/adding-biztalk-adapter-for-jd-edwards-oneworld.md).  
   
  L'architecture de l'adaptateur BizTalk pour JD Edwards EnterpriseOne est représentée dans la figure suivante.  
   
@@ -74,5 +74,9 @@ L'adaptateur Microsoft BizTalk pour Edwards EnterpriseOne permet d'accéder aux 
   
 -   Le port de réception envoie le document XML dans BizTalk Server.  
   
-## <a name="see-also"></a>Voir aussi  
- [Planification et Architecture](../core/planning-and-architecture8.md)
+## <a name="more-good-stuff"></a>Autre contenu intéressant
+[Sécurité de l’adaptateur BizTalk pour JD Edwards EnterpriseOne](../core/security-in-biztalk-adapter-for-jd-edwards-enterpriseone.md)  
+[Créer les artefacts de l’application](../core/developing-applications2.md)  
+[Importer votre JD Edwards EnterpriseOne application](../core/deploying-biztalk-adapter-for-jd-edwards-enterpriseone.md)  
+[Utiliser la gestion des exceptions BizTalk Server](../core/using-biztalk-server-exception-handling3.md)  
+[Dépanner](../core/troubleshooting-jd-edwards-enterpriseone.md)  

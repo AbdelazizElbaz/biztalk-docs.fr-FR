@@ -7,21 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- transaction support
-- character encoding
-- encoding characters
-- messages, character encoding
 ms.assetid: 0a0c21c8-3318-4533-9734-89302527cb67
 caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 19d3204cae7b82e9d18325b223e5c3b7a2d40808
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 319ddd649e47e053fe2896d577f28b72602593e3
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="character-encoding"></a>Codage des caractères
 TIBCO Enterprise Message Service (EMS) prend en charge plusieurs codages de caractères dans les messages qui lui sont transmis par les adaptateurs BizTalk pour TIBCO EMS. Les messages sont codés à l'aide du codage UTF-8 par défaut. Lorsqu'un adaptateur reçoit un message, il détermine le codage de celui-ci et convertit les chaînes appropriées au format UTF-8 avant de l'envoyer à [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Toutes les opérations de conversion exploitant les classes Microsoft .NET Framework; l'adaptateur prend en charge la conversion des caractères fournie par ce même cadre.  

@@ -7,37 +7,24 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- encryption
-- messages, compression
-- EMS limitations
-- message compression
-- API, adding to GAC
-- global assembly cache, adding API
-- GAC, adding TIBCO EMS API
-- system requirements
-- TIBCO.EMS.dll
-- EMS requirements
-- messages, encryption
 ms.assetid: 6e4c022c-e6a8-4ac5-b998-b0465002a31e
 caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 81e49f4a74cce4414fd9d0b069a382d9facb03d0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fcd386245ba06c2e3b5a5b92df7b7a7f01a1a749
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="tibco-enterprise-message-service-requirements-and-limitations"></a>Impératifs et restrictions de TIBCO Enterprise Message Service
+
 ## <a name="system-requirements"></a>Configuration système requise  
- L'adaptateur Microsoft BizTalk pour TIBCO Enterprise Message Service prend en charge TIBCO Enterprise Message Service (EMS) version 4.2. Un client SDK est inclus avec TIBCO EMS version 4.2 (via l'API TIBCO EMS C# ). L'adaptateur BizTalk pour TIBCO EMS utilise cette API pour communiquer avec TIBCO EMS.  
+Inclus avec TIBCO Enterprise Message Service inclut un client SDK (à l’aide de l’API TIBCO EMS c#). L'adaptateur BizTalk pour TIBCO EMS utilise cette API pour communiquer avec TIBCO EMS.  
   
-## <a name="adding-the-api-to-the-gac"></a>Ajout de l'API au GAC  
+## <a name="add-the-api-to-the-gac"></a>Ajout de l’API dans le GAC  
  L'adaptateur BizTalk pour TIBCO EMS requiert l'ajout de l'API TIBCO EMS C#, TIBCO.EMS.dll, au GAC (Global Assembly Cache). Si cet assembly n'est pas installé, l'adaptateur déclenche une exception et consigne un message approprié.  
-  
-#### <a name="to-add-the-tibco-ems-c-api-to-the-gac"></a>Pour ajouter l'API TIBCO EMS C# au GAC  
   
 1.  Copiez l'API TIBCO EMS C# sur votre ordinateur exécutant [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
@@ -65,4 +52,4 @@ ms.lasthandoff: 09/20/2017
 -   L'adaptateur BizTalk pour TIBCO EMS ne peut ni envoyer ni recevoir les messages dont la taille dépasse 50 Mo. Au-delà de cette taille, l'environnement rencontre des exceptions System.OutOfMemoryException.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Planification et Architecture](../core/planning-and-architecture16.md)
+ [Planification et architecture](../core/planning-and-architecture16.md)

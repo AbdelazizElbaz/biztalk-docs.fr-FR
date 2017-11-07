@@ -18,11 +18,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dd1d7cf18d35825b9291cf85546f3a9dc157fe1b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 857ee7edd623332e72176ac09082f0ec9fc460f4
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="creating-affiliate-applications"></a>Création d’Applications associées
 Les procédures suivantes décrivent l'utilisation des applications associées à l'aide de l'authentification unique (SSO).  
@@ -122,4 +122,4 @@ Les procédures suivantes décrivent l'utilisation des applications associées �
 5.  L'application associée s'affiche dans la liste déroulante de la boîte de dialogue Propriétés du transport de l'adaptateur BizTalk pour JD Edwards OneWorld.  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide de l’authentification unique](../core/using-single-sign-on3.md)
+ [Sécurité de la carte](../core/security-in-biztalk-adapter-for-jd-edwards-oneworld.md)

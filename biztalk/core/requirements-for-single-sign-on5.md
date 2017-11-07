@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f2abd36879428c9d775251e20dd63f8778aa7b63
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: fd2a1fb342911c904044c8099901c5056f17ac9f
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="requirements-for-single-sign-on"></a>Configuration requise pour l'authentification unique
 Pour utiliser l’authentification unique (SSO), vous devez :  
@@ -43,4 +43,4 @@ Pour utiliser l’authentification unique (SSO), vous devez :
     >  Après avoir effectué un travail à l’aide de l’authentification unique, n’oubliez pas de réinitialiser les **partage Web** dossier **ne partagent pas**. La mise à jour ou la désinstallation d'applications utilisant ce dossier ne pourra pas s'effectuer correctement car, s'il est partagé, il est considéré comme en cours d'utilisation.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilisation de l’authentification unique](../core/using-single-sign-on3.md)
+ [Sécurité de la carte](../core/security-in-biztalk-adapter-for-jd-edwards-oneworld.md)

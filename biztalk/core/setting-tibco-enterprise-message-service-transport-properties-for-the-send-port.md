@@ -1,33 +1,19 @@
 ---
-title: "Définition des propriétés du Transport TIBCO Enterprise Message Service pour le Port d’envoi | Documents Microsoft"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- send ports, setting transport properties
-- transport properties, setting for send port
-- setting transport properties, send port
-ms.assetid: 156fa3d1-6c47-442b-9c5d-5bcd838115f8
-caps.latest.revision: "14"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: eba9a07a6b5991d832a0815a4eb63706c3bbbd3c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/creating-tibco-enterprise-message-service-send-handlers/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 24e73be3b953cbd7f597a34a06f09d364ec0f4f4
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="setting-tibco-enterprise-message-service-transport-properties-for-the-send-port"></a>Configuration des propriétés de transport de l'adaptateur TIBCO Enterprise Message Service pour le port d'envoi
+# <a name="set-send-port-transport-properties-for-the-send-port-for-tibco-enterprise-message-service"></a>Définir le port d’envoi des propriétés de Transport du Port d’envoi pour TIBCO Enterprise Message Service
 Les propriétés de transport de l'adaptateur TIBCO Enterprise Message Service sont configurées au moment de la conception et utilisées lors de l'exécution. Dans le **propriétés du Transport** boîte de dialogue, vous définissez les paramètres de connexion et les informations d’identification spécifique sur le système du serveur et les objets que vous essayez d’accéder.  
   
  ![](../core/media/tib-tibcoemssendtransportpropertiess.gif "TIB_TIBCOEMSSendTransportPropertiess")  
   
-### <a name="to-specify-transport-properties"></a>Pour spécifier les propriétés de transport  
+## <a name="enter-transport-properties"></a>Entrez les propriétés du transport  
   
 1.  Dans le **propriétés du Transport** boîte de dialogue, développez **définition système**et entrez les informations requises pour la connexion au serveur TIBCO EMS.  
   
@@ -75,5 +61,5 @@ Les propriétés de transport de l'adaptateur TIBCO Enterprise Message Service s
 7.  Cliquez sur **appliquer**, puis cliquez sur **OK**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide de l’authentification unique](../core/using-single-sign-on4.md)   
- [Création de gestionnaires d’envoi TIBCO Enterprise Message Service](../core/creating-tibco-enterprise-message-service-send-handlers.md)
+ [Sécuriser l’adaptateur](../core/security-in-biztalk-adapter-for-tibco-ems.md)  
+ [Créer les artefacts d’envoi](../core/creating-tibco-enterprise-message-service-send-handlers.md)

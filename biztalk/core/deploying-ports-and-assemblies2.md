@@ -1,27 +1,12 @@
 ---
-title: "Déploiement de Ports et Assemblies2 | Documents Microsoft"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- ports, deploying
-- deployment, ports
-- deployment, assemblies
-- assemblies, deploying
-ms.assetid: abbc1391-2b90-42a5-a747-416bc517bb39
-caps.latest.revision: "11"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 74c3cc840b9dca222d1b55e9277b1ffd6cf326db
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/deploying-biztalk-adapter-for-tibco-enterprise-message-service/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 23bb71717ef4af8596eaed5f0bd8be10d900adf7
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="deploying-ports-and-assemblies"></a>Déploiement des ports et assemblys
 Avec [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], vous pouvez dupliquer des ports et des assemblys sur un ordinateur cible. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]configuration de l’emplacement de réception/ports d’envoi exporte dans un fichier XML.  
@@ -39,10 +24,3 @@ Avec [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-
 > [!NOTE]
 >  L'adaptateur Microsoft BizTalk pour TIBCO Enterprise Message Service requiert l'installation de Visual Studio sur un ordinateur (de développement) source. Visual Studio n'est pas requis sur l'ordinateur de production.  
   
-## <a name="in-this-section"></a>Dans cette section  
-  
--   [Vérification de la configuration du déploiement](../core/verifying-the-deployment-setup2.md)  
-  
--   [Comment nettoyer l’ordinateur cible](../core/how-to-clean-the-target-computer2.md)  
-  
--   [Limitations concernant le déploiement](../core/deployment-limitations1.md)

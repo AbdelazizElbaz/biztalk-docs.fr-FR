@@ -12,13 +12,13 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 74b7cbe23a6fc818428478859ea021d4fbf38546
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 337883ce2ca3b7f28def19898930d872928a8ce4
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="planning-the-biztalk-solution"></a>Planification de la Solution BizTalk
+# <a name="plan-for-your-biztalk-solution"></a>Planifier votre Solution BizTalk
 Un des principaux objectifs de création de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] est d’offrir une flexibilité maximale pour la prise en charge des scénarios de traitement autant que possible. En raison de cette avec une grande souplesse, un des principaux défis aux développeurs d’une solution BizTalk est pour déterminer comment exploiter les fonctionnalités disponibles dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] pour mieux répondre à leurs besoins. Planification de la [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] peut être décomposée en plusieurs phases distinctes qui sont résumés ci-dessous.  
   
 ## <a name="scoping-the-solution"></a>L’étendue de la Solution  
@@ -186,7 +186,7 @@ Un des principaux objectifs de création de [!INCLUDE[btsBizTalkServerNoVersion]
 -   Valeurs de configuration pour toutes les fonctionnalités de système d’exploitation et les logiciels utilisées si elles diffèrent des valeurs par défaut  
   
 ## <a name="building-out-the-environment-for-the-solution"></a>Création de l’environnement de la Solution  
- Instructions détaillées pour l’installation de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] et le logiciel de dépendance requis se trouve dans les Guides d’Installation BizTalk Server disponible pour téléchargement à l’adresse [Documentation de BizTalk Server 2010](http://go.microsoft.com/fwlink/?LinkId=183138) (http:// go.Microsoft.com/fwlink/ ? LinkId = 183138).  
+ Instructions détaillées pour l’installation de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] et la configuration logicielle requise est dans le [Guides d’Installation de BizTalk Server](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md).
   
 ## <a name="see-also"></a>Voir aussi  
  [Planification du niveau BizTalk Server](../technical-guides/planning-the-biztalk-server-tier.md)

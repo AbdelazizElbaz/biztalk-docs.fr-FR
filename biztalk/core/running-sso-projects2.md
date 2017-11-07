@@ -1,5 +1,5 @@
 ---
-title: "En cours d’exécution SSO Projects2 | Documents Microsoft"
+title: "Exécuter des projets de l’authentification unique avec TIBCO EMS | Documents Microsoft"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,28 +7,21 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- running SSO projects
-- Single Sign-On, samples
-- SSO, samples
-- sample applications, SSO project
 ms.assetid: a44a96e8-c83d-42a7-ad25-e2fa48804712
 caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3f117990c4374b57b9219e34ece0549901123461
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ac5d08a22ceac96a9ca34a3527d5c68ea5120ca2
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="running-sso-projects"></a>Exécution de projets SSO
 Vous pouvez exécuter un exemple de projet de l'authentification unique (SSO) dans Internet Explorer.  
   
-## <a name="running-a-sample-from-internet-explorer"></a>Exécution de l'exemple sous Internet Explorer  
-  
-#### <a name="to-run-the-sample-from-the-internet-explorer"></a>Pour exécuter l'exemple sous Internet Explorer  
+## <a name="run-a-sample-from-a-web-browser"></a>Exécuter un exemple à partir d’un navigateur web
   
 1.  Ouvrez votre navigateur.  
   
@@ -39,4 +32,4 @@ Vous pouvez exécuter un exemple de projet de l'authentification unique (SSO) da
      Dans ce cas, vous n'avez pas besoin de fournir les informations d'identification.  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide de l’authentification unique](../core/using-single-sign-on4.md)
+ [Utilisation de l’authentification unique](../core/using-single-sign-on4.md)

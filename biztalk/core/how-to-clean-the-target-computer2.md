@@ -1,23 +1,12 @@
 ---
-title: Comment nettoyer les Ordinateur2 cible | Documents Microsoft
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: cleaning target computer
-ms.assetid: 0d25930e-0bee-4658-80e7-4a1ab4a8131d
-caps.latest.revision: "10"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: b15614af9a42489693d535896245254208379d76
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/deploying-biztalk-adapter-for-tibco-enterprise-message-service/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 93cb3a1420b60183ff42108c32224cf4707b9cd7
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-clean-the-target-computer"></a>Comment nettoyer l’ordinateur cible
 Déploiement remplace la configuration d’emplacement de réception. Lorsque vous déployez un fichier de liaison (et un assembly) sur un ordinateur cible, les ports d’envoi et emplacements de réception sont remplacés par ceux dans le fichier de liaison XML lorsqu’ils sont importés.  
@@ -36,5 +25,3 @@ Déploiement remplace la configuration d’emplacement de réception. Lorsque vo
   
      **cscript RemoveSendPort.vbs \<nom du port d’envoi >**  
   
-## <a name="see-also"></a>Voir aussi  
- [Déploiement de Ports et assemblys](../core/deploying-ports-and-assemblies2.md)

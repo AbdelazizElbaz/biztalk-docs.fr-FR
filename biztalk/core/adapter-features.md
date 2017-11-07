@@ -1,5 +1,5 @@
 ---
-title: "Fonctionnalités de l’adaptateur | Documents Microsoft"
+title: "Fonctionnalités de l’adaptateur TIBCO Enterprise Message Service | Documents Microsoft"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,23 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- TIBCO Enterprise adapters, message delivery
-- architecture, TIBCO Enterprise adapters
-- TIBCO Enterprise adapters, architecture
-- TIBCO Enterprise adapters, data validation
 ms.assetid: ede748ce-3f28-4942-b2bd-e38e5f1b0f54
 caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ffa789837973f8c8c7bb6c5bd428e36c562df96c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ce63950ea9fca42969a7d8574fec76f438ed5f8f
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="adapter-features"></a>Fonctionnalités de l’adaptateur
+# <a name="tibco-ems-adapter-features"></a>Fonctionnalités de l’adaptateur TIBCO EMS
 L'adaptateur Microsoft BizTalk pour TIBCO Enterprise Message Service permet la publication et l'abonnement aux files d'attentes et aux rubriques gérées par TIBCO EMS à l'aide de BizTalk Server et du Kit de développement logiciel TIBCO. L'adaptateur intègre les messages TIBCO EMS de manière rapide, simple et fiable. Il échange des formats de données XML entre les serveurs TIBCO EMS et Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] pour fournir une infrastructure d'applications étroitement intégrée et fiable. Il fournit des opérations d'intégration d'adaptateur de réception et de transmission offrant une gestion des processus d'entreprise de bout en bout à l'aide de schémas XML.  
   
 ## <a name="data-validation"></a>Validation des données  

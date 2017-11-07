@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 11c5add7e71e56f250b95736d97f0434adf72282
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cca87df1875f648abe2a986fb0d94b16865ee72f
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="receiving-from-peoplesoft"></a>Réception à partir de PeopleSoft
 L'adaptateur Microsoft pour PeopleSoft Enterprise est un adaptateur d'envoi. Il prend en charge les échanges de type sollicitation-réponse et permet d'envoyer une requête et d'obtenir une réponse. Cependant, si vous souhaitez seulement recevoir des données de PeopleSoft, procédez comme suit :  
@@ -25,7 +25,7 @@ L'adaptateur Microsoft pour PeopleSoft Enterprise est un adaptateur d'envoi. Il 
   
 2.  Créez un port de réception accessible à partir de PeopleSoft, tel qu'un port utilisant un adaptateur HTTP. Utilisez le pipeline de réception personnalisé avec le port de réception.  
   
-## <a name="the-set-namespace-pipeline-component"></a>Composant de pipeline Set Namespace  
+## <a name="set-namespace-pipeline-component"></a>Composant de Pipeline de Namespace Set  
  Les messages reçus de PeopleSoft n'incluent pas d'espaces de noms. Le composant de pipeline Set Namespace permet d'ajouter un espace de noms à un message entrant.  
   
  L'emplacement par défaut de ce composant de pipeline est C:\Program Files\Microsoft BizTalk Adapters for Enterprise Applications\Pipeline Component. Vous devez copier le composant Microsoft.BizTalk.Adapters.Pipeline.SetNSForMsg.dll vers le répertoire Composant de pipeline utilisé par BizTalk. Vous devez également ajouter le composant à la boîte à outils de Visual Studio pour pouvoir l'utiliser dans le Concepteur de pipeline.  
@@ -34,7 +34,7 @@ L'adaptateur Microsoft pour PeopleSoft Enterprise est un adaptateur d'envoi. Il 
   
  Pour plus d’informations sur l’ajout du composant à la boîte à outils Visual Studio, consultez [l’utilisation de la boîte à outils](../core/how-to-use-the-toolbox.md).  
   
-## <a name="configuring-the-set-namespace-pipeline-component"></a>Configuration du composant de pipeline Set Namespace  
+## <a name="configure-the-set-namespace-pipeline-component"></a>Configurer le composant de Pipeline de Namespace de jeu  
  Vous pouvez définir deux propriétés pour ce composant :  
   
 |Utiliser|Pour effectuer cette opération|  

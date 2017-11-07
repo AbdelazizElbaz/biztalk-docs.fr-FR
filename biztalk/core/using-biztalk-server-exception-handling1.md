@@ -1,38 +1,40 @@
 ---
-title: "À l’aide de BizTalk Server Exception Handling1 | Documents Microsoft"
+title: Utiliser des exceptions de BizTalk Server dans JD Edwards OneWorld | Documents Microsoft
+description: "Vue d’ensemble de la gestion des exceptions et la mise à jour le fichier jdearglist.txt pour vos orchestrations qui utilisent l’adaptateur JD Edwards OneWorld dans BizTalk Server"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 10/18/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- exception handling
-- BizTalk Server exception handling
-- exceptions, handling
 ms.assetid: d16ad8c2-f85a-4068-91ba-67623692df26
 caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 375f37023bae0dfdf35117a6233b93dba596a326
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d4284b1bfbab9edbb959bdacb2db0f7f842c6e11
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="using-biztalk-server-exception-handling"></a>À l’aide de la gestion des exceptions de BizTalk Server
-Cette section décrit l'utilisation des objets de gestion des exceptions de BizTalk Server pour l'interception des exceptions provenant des serveurs principaux.  
+# <a name="use-biztalk-server-exception-handling"></a>Utilisez la gestion des exceptions de BizTalk Server
+
+## <a name="overview"></a>Vue d'ensemble
+Au sein de votre orchestration, ajouter des formes pour gérer les erreurs et exceptions à partir de vos serveurs principaux. En outre, veillez à définir la justification des chaînes dans le fichier jdearglist.txt. 
+
+ 
+## <a name="next-steps"></a>Étapes suivantes
+
+-   [Définir la Justification des chaînes dans Jdearglist](../core/setting-string-justification-in-jdearglist.md)
   
-## <a name="in-this-section"></a>Dans cette section  
+-   [Conception d’une orchestration de base](../core/basic-orchestration-design1.md)  
   
--   [Conception de l’Orchestration de base](../core/basic-orchestration-design1.md)  
+-   [Ajouter un message pour une exception](../core/how-to-add-a-message-for-an-exception2.md)  
   
--   [L’ajout d’un Message pour une Exception](../core/how-to-add-a-message-for-an-exception2.md)  
+-   [Ajouter une forme Étendue](../core/how-to-add-a-scope-shape3.md)  
   
--   [Comment ajouter une forme étendue](../core/how-to-add-a-scope-shape3.md)  
+-   [Ajouter un bloc Intercepter l’exception](../core/how-to-add-a-catch-exception-block4.md)  
   
--   [L’ajout d’un bloc intercepter l’Exception](../core/how-to-add-a-catch-exception-block4.md)  
-  
--   [Exécution du Message d’Exception](../core/completing-the-exception-message2.md)
+-   [Terminer le Message d’Exception](../core/completing-the-exception-message2.md)

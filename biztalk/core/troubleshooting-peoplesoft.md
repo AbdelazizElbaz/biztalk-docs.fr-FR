@@ -1,5 +1,5 @@
 ---
-title: "Résolution des problèmes de PeopleSoft | Documents Microsoft"
+title: "Résoudre les problèmes d’adaptateur PeopleSoft | Documents Microsoft"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,25 +7,24 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: troubleshooting PeopleSoft
 ms.assetid: 357fa9a5-35d1-4667-a957-c0cefcce9c37
 caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 470f7a7a39b465d253432bee007c0260b419357f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 974e9adc0aaa673587d0b7ce2a26df978f604117
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="troubleshooting-peoplesoft"></a>Résolution des problèmes de PeopleSoft
+# <a name="troubleshoot-peoplesoft"></a>Résoudre les problèmes de PeopleSoft
 Cette section répertorie les messages d'erreur du système PeopleSoft Enterprise, leurs descriptions et les corrections possibles. Elle décrit également l'utilisation du Suivi d'événements pour Windows et répertorie des problèmes courants.  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="next-steps"></a>Étapes suivantes
   
 -   [Messages d’erreur](../core/error-messages3.md)  
   
--   [À l’aide d’événements de suivi pour Windows](../core/using-event-tracing-for-windows5.md)  
+-   [Utilisation de l’outil Suivi des événements pour Windows](../core/using-event-tracing-for-windows5.md)  
   
 -   [Dépannage de l’adaptateur](../core/troubleshooting-the-adapter2.md)

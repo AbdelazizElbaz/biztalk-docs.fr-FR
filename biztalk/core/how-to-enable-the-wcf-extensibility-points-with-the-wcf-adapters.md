@@ -1,5 +1,6 @@
 ---
-title: "Comment activer les Points d’extensibilité WCF avec les adaptateurs WCF | Documents Microsoft"
+title: "Activer les Points d’extensibilité WCF avec les adaptateurs WCF | Documents Microsoft"
+description: "Installer des assemblys, configurer le fichier machine.config, ajouter l’extension à l’administrateur de BizTalk, créez emplacement de réception pour activer les points d’extensibilité WCF pour les adaptateurs WCF dans BizTalk Server"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,31 +8,27 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- ports, WCF adapters
-- WCF adapters, extensibility ports
 ms.assetid: 0c2af105-5272-4a6a-95d2-066312ab788e
 caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e481521ba651fe8c1e66ea4f730d05375451f111
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: be2980f3235552f263efbd4fce92c0042216b88c
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-enable-the-wcf-extensibility-points-with-the-wcf-adapters"></a>Procédure d'activation des points d'extensibilité WCF avec les adaptateurs WCF
-Cette rubrique décrit l'activation de trois points d'extensibilité WCF (extension de comportement, extension d'élément de liaison et extension de liaison) avec les adaptateurs WCF-Custom et WCF-CustomIsolated. Pour ce faire, installez tout d'abord les assemblys implémentant les points d'extensibilité WCF dans le Global Assembly Cache (GAC), modifiez le fichier machine.config sur vos ordinateurs, puis configurez l'adaptateur WCF-Custom ou WCF-CustomIsolated à l'aide de la console Administration de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+Activer les trois points d’extensibilité WCF : extension de comportement, extension d’élément de liaison et extension de liaison, avec les adaptateurs WCF-Custom et WCF-CustomIsolated. Pour ce faire, installez tout d'abord les assemblys implémentant les points d'extensibilité WCF dans le Global Assembly Cache (GAC), modifiez le fichier machine.config sur vos ordinateurs, puis configurez l'adaptateur WCF-Custom ou WCF-CustomIsolated à l'aide de la console Administration de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
- Pour plus d’informations sur les points d’extensibilité WCF, consultez « Extending WCF » à [http://go.microsoft.com/fwlink/?LinkId=86380](http://go.microsoft.com/fwlink/?LinkId=86380).  
+Consultez [extension de WCF](https://docs.microsoft.com/dotnet/framework/wcf/extending/extending-wcf) pour plus d’informations sur les points d’extensibilité WCF.
   
- Pour plus d’informations sur la façon d’activer les points d’extensibilité WCF, consultez « Kit de développement logiciel exemple : à l’aide personnalisée liaison Extensions avec le WCF-Custom adaptateurs » à [http://go.microsoft.com/fwlink/?LinkId=65185](http://go.microsoft.com/fwlink/?LinkId=65185).  
-  
+ 
 ## <a name="prerequisites"></a>Conditions préalables  
- Pour exécuter les procédures décrites dans cette rubrique, vous devez ouvrir une session à l'aide d'un compte membre du groupe Administrateurs de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Pour plus d’informations sur les autorisations, consultez [autorisations requises pour déployer et gérer une Application BizTalk](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md).  
+Connectez-vous avec un compte qui est membre de la [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] groupe Administrateurs. [Autorisations requises pour déployer et gérer une Application BizTalk](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md) fournit plus d’informations.  
   
-### <a name="to-install-assemblies-implementing-a-wcf-extensibility-point-in-the-gac"></a>Pour installer les assemblys implémentant un point d'extensibilité WCF dans le GAC  
+## <a name="install-assemblies-implementing-a-wcf-extensibility-point-in-the-gac"></a>Installer les assemblys implémentant un point d’extensibilité WCF dans le GAC  
   
 1.  Copiez les assemblys implémentant le point d'extensibilité WCF dans un dossier sur votre ordinateur local.  
   
@@ -52,7 +49,7 @@ Cette rubrique décrit l'activation de trois points d'extensibilité WCF (extens
     > [!NOTE]
     >  Pour activer les points d'extensibilité WCF pour les adaptateurs WCF, l'instance de l'hôte BizTalk exécutant l'adaptateur doit être capable de charger, au moment de l'exécution, les assemblys où les points d'extensibilité WCF sont implémentés.  
   
-### <a name="to-configure-the-machineconfig-file-for-a-wcf-binding-extension"></a>Pour configurer le fichier machine.config pour une extension de liaison WCF  
+## <a name="configure-the-machineconfig-file-for-a-wcf-binding-extension"></a>Configurer le fichier machine.config pour une extension de liaison WCF  
   
 1.  À une invite de commandes, accédez au répertoire % FrameworkDir%\v4. X.XXXXX\CONFIG, puis ouvrez le **machine.config** fichier à l’aide du bloc-notes.  
   
@@ -69,10 +66,8 @@ Cette rubrique décrit l'activation de trois points d'extensibilité WCF (extens
     ```  
   
     > [!NOTE]
-    >  Vous pouvez obtenir les informations pour les assemblys à inscrire à l’aide de la commande, **gacutil /lr** *< assembly_name>*.  
-  
-    > [!NOTE]
-    >  Pour plus d’informations sur la  **<bindingExtensions>**  élément, consultez «<bindingExtensions>» à [http://go.microsoft.com/fwlink/?LinkID=86180](http://go.microsoft.com/fwlink/?LinkID=86180).  
+    >  - Vous pouvez obtenir les informations pour les assemblys à inscrire à l’aide de la commande, **gacutil /lr** *< assembly_name>*.  
+    >  - Consultez [bindingExtensions](https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/wcf/bindingextensions) sur cet élément.
   
 3.  Dans le Bloc-notes, enregistrez le fichier machine.config.  
   
@@ -81,9 +76,9 @@ Cette rubrique décrit l'activation de trois points d'extensibilité WCF (extens
     > [!NOTE]
     >  Vous devez répéter ces étapes sur tous les ordinateurs pour l'infrastructure WCF afin de traiter le point d'extensibilité WCF pour l'instance de l'hôte BizTalk et la console Administration de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]  
   
-### <a name="to-configure-a-wcf-binding-extension-by-using-the-biztalk-administration-console"></a>Pour configurer une extension de liaison WCF à l'aide de la console Administration de BizTalk  
+## <a name="configure-a-wcf-binding-extension-by-using-the-biztalk-administration-console"></a>Configurer une extension de liaison WCF à l’aide de la console Administration de BizTalk  
   
-1.  Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)], puis cliquez sur **Administration de BizTalk Server**.  
+1.  Ouvrez **Administration de BizTalk Server.**  
   
     > [!NOTE]
     >  Si le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] console d’Administration est déjà ouverte, redémarrez le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] console d’Administration.  
@@ -104,7 +99,7 @@ Cette rubrique décrit l'activation de trois points d'extensibilité WCF (extens
   
 7.  Dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration de la console, fermez toutes les boîtes de dialogue ouvertes en cliquant sur le **OK** boutons et assurez-vous qu’aucun messages d’erreur et le journal des événements erroné s’affichent.  
   
-### <a name="to-configure-the-machineconfig-file-for-a-wcf-binding-element-extension"></a>Pour configurer le fichier machine.config pour une extension d'élément de liaison WCF  
+## <a name="configure-the-machineconfig-file-for-a-wcf-binding-element-extension"></a>Configurer le fichier machine.config pour une extension d’élément de liaison WCF  
   
 1.  À une invite de commandes, accédez au répertoire % FrameworkDir%\v4. X.XXXXX\CONFIG, puis ouvrez le **machine.config** fichier à l’aide du bloc-notes.  
   
@@ -121,10 +116,8 @@ Cette rubrique décrit l'activation de trois points d'extensibilité WCF (extens
     ```  
   
     > [!NOTE]
-    >  Vous pouvez obtenir les informations pour les assemblys à inscrire à l’aide de la commande, **gacutil /lr** *< assembly_name>*.  
-  
-    > [!NOTE]
-    >  Pour plus d’informations sur la  **<bindingElementExtensions>**  élément, consultez «<bindingElementExtensions>» à [http://go.microsoft.com/fwlink/?LinkId=86381](http://go.microsoft.com/fwlink/?LinkId=86381).  
+    > - Vous pouvez obtenir les informations pour les assemblys à inscrire à l’aide de la commande, **gacutil /lr** *< assembly_name>*.  
+    > - Consultez [bindingElementExtensions](https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/wcf/bindingelementextensions) sur cet élément.
   
 3.  Dans le Bloc-notes, enregistrez le fichier machine.config.  
   
@@ -133,9 +126,9 @@ Cette rubrique décrit l'activation de trois points d'extensibilité WCF (extens
     > [!NOTE]
     >  Vous devez répéter ces étapes sur tous les ordinateurs pour l'infrastructure WCF afin de traiter le point d'extensibilité WCF pour l'instance de l'hôte BizTalk et la console Administration de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]  
   
-### <a name="to-configure-a-wcf-binding-element-extension-by-using-the-biztalk-administration-console"></a>Pour configurer une extension d'élément de liaison WCF à l'aide de la console Administration de BizTalk  
+## <a name="configure-a-wcf-binding-element-extension-by-using-the-biztalk-administration-console"></a>Configurer une extension d’élément de liaison WCF à l’aide de la console Administration de BizTalk  
   
-1.  Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)], puis cliquez sur **Administration de BizTalk Server**.  
+1.  Ouvrez **Administration de BizTalk Server.**  
   
     > [!NOTE]
     >  Si le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] console d’Administration est déjà ouverte, redémarrez le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] console d’Administration.  
@@ -163,13 +156,13 @@ Cette rubrique décrit l'activation de trois points d'extensibilité WCF (extens
     -   Dans le **liaison** liste, cliquez sur une extension d’élément de liaison, puis cliquez sur **monter l’extension** ou **descendre l’extension**. L’extension d’élément de liaison la plus faible dans le **liaison** liste correspond au composant du bas de la pile de canaux. L’élément de liaison la plus élevée dans la **liaison** liste correspond à un composant en haut de la pile de communication.  
   
         > [!NOTE]
-        >  Pour plus d’informations sur l’ordre spécifique des éléments de liaison pour la liaison personnalisée, consultez « Custom Bindings » à [http://go.microsoft.com/fwlink/?LinkId=86383](http://go.microsoft.com/fwlink/?LinkId=86383).  
+        >  Consultez [des liaisons personnalisées](https://docs.microsoft.com/dotnet/framework/wcf/extending/custom-bindings) pour plus d’informations sur l’ordre spécifique des éléments de liaison pour la liaison personnalisée.
   
 10. Dans la boîte de dialogue Propriétés du transport, configurez le reste des paramètres de transport.  
   
 11. Dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration de la console, fermez toutes les boîtes de dialogue ouvertes en cliquant sur le **OK** boutons et assurez-vous qu’aucun messages d’erreur et le journal des événements erroné s’affichent.  
   
-### <a name="to-configure-the-machineconfig-file-for-a-wcf-behavior-extension"></a>Pour configurer le fichier machine.config pour une extension de comportement WCF  
+## <a name="configure-the-machineconfig-file-for-a-wcf-behavior-extension"></a>Configurer le fichier machine.config pour une extension de comportement WCF  
   
 1.  À une invite de commandes, accédez au répertoire % FrameworkDir%\v4. X.XXXXX\CONFIG, puis ouvrez le **machine.config** fichier à l’aide du bloc-notes.  
   
@@ -186,10 +179,8 @@ Cette rubrique décrit l'activation de trois points d'extensibilité WCF (extens
     ```  
   
     > [!NOTE]
-    >  Vous pouvez obtenir les informations pour les assemblys à inscrire à l’aide de la commande, **gacutil /lr** *< assembly_name>*.  
-  
-    > [!NOTE]
-    >  Pour plus d’informations sur la  **<behaviorExtensions>**  élément, consultez «<behaviorExtensions>» à [http://go.microsoft.com/fwlink/?LinkId=86382](http://go.microsoft.com/fwlink/?LinkId=86382).  
+    >  - Vous pouvez obtenir les informations pour les assemblys à inscrire à l’aide de la commande, **gacutil /lr** *< assembly_name>*.  
+    >  - Consultez [behaviorExtensions](https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/wcf/behaviorextensions) sur cet élément.
   
 3.  Dans le Bloc-notes, enregistrez le fichier machine.config.  
   
@@ -198,9 +189,9 @@ Cette rubrique décrit l'activation de trois points d'extensibilité WCF (extens
     > [!NOTE]
     >  Vous devez répéter ces étapes sur tous les ordinateurs pour l'infrastructure WCF afin de traiter le point d'extensibilité WCF pour l'instance de l'hôte BizTalk et la console Administration de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]  
   
-### <a name="to-configure-a-wcf-behavior-extension-by-using-the-biztalk-administration-console"></a>Pour configurer une extension de comportement WCF à l'aide de la console Administration de BizTalk  
+## <a name="configure-a-wcf-behavior-extension-by-using-the-biztalk-administration-console"></a>Configurer une extension de comportement WCF à l’aide de la console Administration de BizTalk  
   
-1.  Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)], puis cliquez sur **Administration de BizTalk Server**.  
+1.  Ouvrez **Administration de BizTalk Server.**  
   
     > [!NOTE]
     >  Si le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] console d’Administration est déjà ouverte, redémarrez le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] console d’Administration.  
@@ -223,6 +214,6 @@ Cette rubrique décrit l'activation de trois points d'extensibilité WCF (extens
   
 8.  Dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration de la console, fermez toutes les boîtes de dialogue ouvertes en cliquant sur le **OK** boutons et assurez-vous qu’aucun messages d’erreur et le journal des événements erroné s’affichent.  
   
-### <a name="to-configure-a-wcf-custom-receive-location-with-an-ssl-certificate"></a>Pour configurer un emplacement de réception WCF-Custom avec un certificat SSL  
+## <a name="configure-a-wcf-custom-receive-location-with-an-ssl-certificate"></a>Configurer un WCF-Custom emplacement de réception avec un certificat SSL  
   
--   Si un emplacement de réception WCF-Custom se produit à utiliser le pilote du noyau HTTP (HTTP.sys) tels que les **httpsTransport** élément de liaison pour les communications Secure Sockets Layer (SSL), l’emplacement de réception doit disposer d’un certificat inscrit pour chaque socket (combinaison adresse IP/port). Utilisez l'outil HttpCfg.exe pour lier un certificat SSL à un port sur l'ordinateur. Pour plus d’informations, consultez « Comment à : configurer un Port avec un certificat SSL » à [http://go.microsoft.com/fwlink/?LinkId=86384](http://go.microsoft.com/fwlink/?LinkId=86384).
+-   Si un emplacement de réception WCF-Custom se produit à utiliser le pilote du noyau HTTP (HTTP.sys) tels que les **httpsTransport** élément de liaison pour les communications Secure Sockets Layer (SSL), l’emplacement de réception doit disposer d’un certificat inscrit pour chaque socket (combinaison adresse IP/port). Utilisez l'outil HttpCfg.exe pour lier un certificat SSL à un port sur l'ordinateur. Pour plus d’informations, consultez [comment faire : configurer un Port avec un certificat SSL](https://docs.microsoft.com/dotnet/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate).

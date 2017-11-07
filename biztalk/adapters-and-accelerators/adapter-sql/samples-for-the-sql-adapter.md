@@ -1,7 +1,8 @@
 ---
-title: "Exemples de l’adaptateur SQL | Documents Microsoft"
+title: "Exemples d’adaptateur SQL | Documents Microsoft"
+description: "Exemples d’adaptateur SQL WCF qui peuvent être utilisés avec BizTalk Server, modèle de service WCF et modèle de canal WCF"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 10/18/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -12,13 +13,14 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bf0e5f82bee9e13d9e19633f2c8ac6b62ce19e27
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0729b18dc900800ed39ccae31acfdd37b38b4573
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="samples-for-the-sql-adapter"></a>Exemples de l’adaptateur SQL
+
 Exemples de [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] sont classés ainsi :  
   
 -   Les exemples [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]  
@@ -27,9 +29,12 @@ Exemples de [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] sont classé
   
 -   Exemples de modèle de canal WCF  
   
- Les exemples sont disponibles sur le [centre de développement BizTalk](https://msdn.microsoft.com/biztalk/biztalk-codesamples). Les scripts SQL pour la création d’objets utilisés dans les exemples, telles que la base de données, des tables, des procédures, etc., sont également disponibles, ainsi que les exemples.  
+Les exemples sont disponibles au [Pack adaptateurs BizTalk 2010 : exemples d’adaptateur SQL](https://www.microsoft.com/download/details.aspx?id=22455). Les scripts SQL pour la création des objets utilisés dans les exemples, telles que la base de données, tables, les procédures sont inclus. 
+
+> [!NOTE]
+> [!INCLUDE[files-need-updated](../../includes/files-need-updated.md)]
   
- La liste suivante contient les noms et descriptions des exemples pour le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].  
+La liste suivante décrit les exemples.
   
 ## <a name="biztalk-server-samples"></a>Exemples de BizTalk Server  
   
@@ -41,9 +46,9 @@ Exemples de [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] sont classé
 |TypedPolling|Montre comment effectuer l’interrogation fortement typée sur une base de données SQL Server à l’aide de l’adaptateur avec [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].|  
 |FILESTREAMOperation|Montre comment effectuer des opérations FILESTREAM sur une base de données SQL Server 2008 à l’aide de l’adaptateur avec [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].|  
 |IncrementalNotification|Montre comment recevoir une notification incrémentielle à partir d’une base de données SQL Server à l’aide de l’adaptateur avec [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].|  
-|Employee_PurchaseOrder|Exemple basé sur [didacticiel 2 : employé - processus de bon de commande à l’aide de l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md).|  
+|Employee_PurchaseOrder|Exemple basé sur [didacticiel 2 : employé - processus de bon de commande à l’aide de l’adaptateur SQL](tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md).|  
   
-## <a name="wcf-service-model-samples"></a>Exemples de modèle de Service WCF  
+## <a name="wcf-service-model-samples"></a>Exemples de modèle de service WCF   
   
 |Exemple de nom de répertoire| Description|  
 |---------------------------|-----------------|  
@@ -58,7 +63,7 @@ Exemples de [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] sont classé
 |TypedPolling_ServiceModel|Montre comment recevoir des fortement typée d’interrogation de modification de données de messages à partir d’une base de données SQL Server à l’aide de l’adaptateur.|  
 |Notification_ServiceModel|Montre comment recevoir des notifications de requête à partir d’une base de données SQL Server à l’aide de l’adaptateur.|  
   
-## <a name="wcf-channel-model-samples"></a>Exemples de modèle de canal WCF  
+## <a name="wcf-channel-model-samples"></a>Exemples de modèle de canal WCF 
   
 |Exemple de nom de répertoire| Description|  
 |---------------------------|-----------------|  
@@ -66,4 +71,4 @@ Exemples de [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] sont classé
 |Polling_ChannelModel|Montre comment recevoir des messages d’interrogation de données modifiées à partir d’une base de données SQL Server à l’aide de l’adaptateur.|  
   
 ## <a name="see-also"></a>Voir aussi  
-[Développer vos applications SQL](../../adapters-and-accelerators/adapter-sql/develop-your-sql-applications.md)
+[Développer vos applications SQL](develop-your-sql-applications.md)

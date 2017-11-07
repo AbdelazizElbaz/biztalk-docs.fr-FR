@@ -1,5 +1,6 @@
 ---
 title: Message de mappage dans TIBCO Rendezvous | Documents Microsoft
+description: "Champs de message et mappage des messages au format XML dans l’adaptateur BizTalk pour TIBCO Rendezvous"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,20 +8,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- messages, mapping
-- message mapping
-- message field elements
 ms.assetid: 62793bec-f076-425c-b25e-c4be5bd93cc8
 caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bc5b3559067dbb998240a3fc814d890701e2591c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fb80ea4f908aa50dc32755c333aa3ccf2ea4db91
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="message-mapping-in-tibco-rendezvous"></a>Mappage des messages dans TIBCO Rendezvous
 Les messages TIBCO Rendezvous sont constitués d'informations d'en-tête et d'un ensemble de champs de message. Les informations d'en-tête sont directement mappées aux propriétés de contexte du message.  
@@ -53,4 +50,4 @@ Les messages TIBCO Rendezvous sont constitués d'informations d'en-tête et d'un
   
 ## <a name="see-also"></a>Voir aussi  
  [Concepts de TIBCO Rendezvous](../core/tibco-rendezvous-concepts.md)   
- [Gestionnaires de réception création TIBCO Rendezvous](../core/creating-tibco-rendezvous-receive-handlers.md)
+ [Création de gestionnaires de réception TIBCO Rendezvous](../core/creating-tibco-rendezvous-receive-handlers.md)

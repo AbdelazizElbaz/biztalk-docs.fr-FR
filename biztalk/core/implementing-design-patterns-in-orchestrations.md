@@ -1,5 +1,6 @@
 ---
 title: "Implémenter des modèles de conception dans les Orchestrations | Documents Microsoft"
+description: "Aggregator, le routage basé sur le contenu, routeur dynamique, la gestion des erreurs, service broker de message et plusieurs modèles de conception dans BizTalk Server"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,39 +8,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Aggregator pattern, orchestrations
-- Error Handling pattern [orchestrations]
-- patterns, orchestrations
-- designing, orchestrations
-- orchestrations, designing
-- Exception Handling and Compensation pattern [orchestrations]
-- Parallel Convoy pattern [orchestrations]
-- Dynamic Router pattern [orchestrations]
-- orchestrations, patterns
-- patterns
-- Composed Message Processor pattern [orchestrations]
-- Suspend with Retry pattern, orchestrations
-- Calling Pipelines from Orchestration pattern [orchestrations]
-- Message Filter pattern [orchestrations]
-- Message Broker pattern [orchestrations]
-- Content-Based Router pattern [orchestrations]
-- Sequential Convoy pattern [orchestrations]
-- Scatter and Gather pattern [orchestrations]
-- Splitter pattern, orchestrations
-- Message Translator pattern [orchestrations]
 ms.assetid: f62ba955-018a-40e7-b303-497acc906019
 caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1a4837ddf1199425a76a6fa82bbfd6e44615b6c7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 290b31e8d5494c7a00eb02517e910fc877da9124
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="implementing-design-patterns-in-orchestrations"></a>Implémentation de modèles de conception dans des orchestrations
+# <a name="implement-design-patterns-in-orchestrations"></a>Implémenter des modèles de conception dans les Orchestrations
 Cette rubrique décrit les modèles communs en matière de programmation BizTalk Server, ainsi que les modèles d'intégration d'entreprise. Vous pouvez utiliser un modèle unique ou associer plusieurs modèles afin de concevoir votre processus d'entreprise, puis d'implémenter cette conception à l'aide de formes dans le Concepteur d'orchestration BizTalk.  
   
 ## <a name="design-patterns"></a>Modèles de conception  
@@ -83,13 +63,13 @@ throw(excp);
  Le modèle de conversion de messages convertit un message d'une forme à une autre. Vous pouvez implémenter ce modèle à l’aide d’un mappage BizTalk avec un **transformer** forme dans une orchestration. Pour obtenir un exemple de ce modèle, voir helloorchestration.odx dans la rubrique [HelloWorld (exemple BizTalk Server)](../core/helloworld-biztalk-server-sample.md).  
   
 ### <a name="parallel-convoy"></a>Convoi parallèle  
- Le modèle de convoi parallèle permet à plusieurs éléments uniques d'être reliés de façon à obtenir une chose qu'un élément individuel ne peut pas accomplir seul. L'ensemble des éléments liés peut arriver dans n'importe quel ordre, mais BizTalk Server doit tous les recevoir avant de commencer le traitement. Pour obtenir un exemple de ce modèle, consultez [http://go.microsoft.com/fwlink/?LinkId=56035](http://go.microsoft.com/fwlink/?LinkId=56035).  
+ Le modèle de convoi parallèle permet à plusieurs éléments uniques d'être reliés de façon à obtenir une chose qu'un élément individuel ne peut pas accomplir seul. L'ensemble des éléments liés peut arriver dans n'importe quel ordre, mais BizTalk Server doit tous les recevoir avant de commencer le traitement. 
   
 ### <a name="scatter-and-gather"></a>Ventilation et regroupement  
- Le modèle de ventilation et de regroupement permet d'envoyer des messages à plusieurs destinataires et de recevoir des messages de la part de chaque destinataire. Vous pouvez implémenter ce modèle à l'aide des modèles de séparation et d'agrégation. Vous utilisez le modèle d’agrégation pour assembler les résultats obtenus à l’aide du modèle de séparation et de les placer dans un **Actions parallèles** forme. Pour obtenir un exemple du modèle de séparation, consultez Kit de développement logiciel exemple Implementing Scatter nommés et le motif de recueillir à [http://go.microsoft.com/fwlink/?LinkId=65185](http://go.microsoft.com/fwlink/?LinkId=65185).  
+ Le modèle de ventilation et de regroupement permet d'envoyer des messages à plusieurs destinataires et de recevoir des messages de la part de chaque destinataire. Vous pouvez implémenter ce modèle à l'aide des modèles de séparation et d'agrégation. Vous utilisez le modèle d’agrégation pour assembler les résultats obtenus à l’aide du modèle de séparation et de les placer dans un **Actions parallèles** forme. 
   
 ### <a name="sequential-convoy"></a>Convoi séquentiel  
- Le modèle de convoi séquentiel permet à plusieurs éléments uniques d'être reliés de façon à obtenir une chose qu'un élément individuel ne peut pas accomplir seul. Un convoi séquentiel est un ensemble d'éléments associés présentant un ordre prédéfini. Bien que ces éléments n'aient pas à être exactement identiques, BizTalk Server doit les recevoir dans un ordre séquentiel. Pour obtenir un exemple de ce modèle, consultez [http://go.microsoft.com/fwlink/?LinkId=56035](http://go.microsoft.com/fwlink/?LinkId=56035).  
+ Le modèle de convoi séquentiel permet à plusieurs éléments uniques d'être reliés de façon à obtenir une chose qu'un élément individuel ne peut pas accomplir seul. Un convoi séquentiel est un ensemble d'éléments associés présentant un ordre prédéfini. Bien que ces éléments n'aient pas à être exactement identiques, BizTalk Server doit les recevoir dans un ordre séquentiel. 
   
 ### <a name="splitter"></a>Splitter  
  Le modèle de séparation fractionne un messages unique en plusieurs messages.  
@@ -98,4 +78,4 @@ throw(excp);
  Le modèle de suspension avec relance permet à l'orchestration de suspendre un message en cas d'erreur. La suspension se produit dans le cadre d'une boucle dans laquelle l'orchestration suspend le message, demande l'intervention, puis effectue un nombre de relances prédéfini de l'opération.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Conception du flux d’Orchestration](../core/designing-orchestration-flow.md)
+ [Conception d’un flux d’orchestration](../core/designing-orchestration-flow.md)

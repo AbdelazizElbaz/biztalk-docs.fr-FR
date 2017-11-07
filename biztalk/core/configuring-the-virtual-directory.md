@@ -15,11 +15,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7a879fe776956c290fb895c7f0feb39b6088e268
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a5e74e297eba5dcc92d2008bcca90fdc7b325814
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="configuring-the-virtual-directory"></a>Configuration du répertoire virtuel
 Cette rubrique indique les procédures de configuration du répertoire virtuel et la vérification de l’application pour un utilisateur.  
@@ -60,4 +60,4 @@ Cette rubrique indique les procédures de configuration du répertoire virtuel e
 4.  Cliquez sur **identifier** et modifier l’identité sous laquelle cette application COM + s’exécute à un utilisateur qui est membre d’un groupe BizTalk Server.  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide de l’authentification unique](../core/using-single-sign-on3.md)
+ [Sécurité de la carte](../core/security-in-biztalk-adapter-for-jd-edwards-oneworld.md)

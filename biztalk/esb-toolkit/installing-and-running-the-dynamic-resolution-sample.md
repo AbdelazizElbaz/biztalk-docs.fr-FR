@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 04d697028eb76cf922cf4bf5e5db85c561c67d00
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0f93396fc71c9e765104ac67835e006e57ca0ade
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="installing-and-running-the-dynamic-resolution-sample"></a>Installer et exécuter l’exemple de résolution dynamique
 L’exemple de résolution dynamique illustre des scénarios d’utilisation classiques pour le répartiteur d’ESB et les composants de pipeline désassembleur de répartiteur ESB. Il montre comment vous pouvez utiliser les composants de dynamiquement résoudre l’emplacement du point de terminaison, définir des propriétés de routage et résoudre et exécuter des mappages de Microsoft BizTalk au niveau de la messagerie sans l’aide d’une orchestration. Il montre également les modèles de messagerie unidirectionnels ou bidirectionnels.  
@@ -30,7 +30,7 @@ L’exemple de résolution dynamique illustre des scénarios d’utilisation cla
  Tous les unidirectionnel de la messagerie scénarios (à l’exception de celle qui utilise le programme de résolution XPATH) le fichier NAOrderDoc.xml, situé dans le dossier \Source\Samples\DynamicResolution\Test\Data, en tant qu’entrée à la réception, emplacement nommé par DynamicResolution_FILE. Il existe sept exemples de messagerie unidirectionnels, tous représentés par une liaison unique de fichier que vous devez importer avant d’exécuter chaque exemple.  
   
 ## <a name="two-way-messaging-scenarios"></a>Scénarios de messagerie bidirectionnelles  
- Tous les scénarios de messagerie bidirectionnelles utilisent l’exemple ESB. Service de NorthAmericanServices Web situé à http://localhost/ESB.NorthAmericanServices/CustomerOrder.asmx pour publier le message de demande dans BizTalk. Vous pouvez exécuter ce service Web à l’aide de Microsoft InfoPath ou via un utilitaire tel que le Storm disponible à partir [CodePlex](http://go.microsoft.com/fwlink/?LinkID=187762&clcid=0x409) ([http://go.microsoft.com/fwlink/?LinkID=187762&clcid=0x409](http://go.microsoft.com/fwlink/?LinkID=187762&clcid=0x409)).  
+ Tous les scénarios de messagerie bidirectionnelles utilisent l’exemple ESB. Service de NorthAmericanServices Web situé à http://localhost/ESB.NorthAmericanServices/CustomerOrder.asmx pour publier le message de demande dans BizTalk. Vous pouvez exécuter ce service Web à l’aide de Microsoft InfoPath ou via un utilitaire tel que le Storm disponible à partir [CodePlex](http://go.microsoft.com/fwlink/?LinkID=187762&clcid=0x409).  
   
  Chaque exemple résout dynamiquement l’URL de point de terminaison pour envoyer le message à l’exemple ESB. Service Web de CanadianServices à http://localhost/ESB.CanadianServices/SubmitPOService.asmx. L’exemple exécutera la **submitOrder** action ou le **submitPurchase** action, selon les résultats du processus de résolution. L’emplacement de réception pour les scénarios de messagerie bidirectionnelles est DynamicResolutionReqResp_SOAP. Il existe des exemples de messagerie bidirectionnelles 10, tous représentés par une liaison unique de fichier que vous devez importer avant d’exécuter chaque exemple.  
   

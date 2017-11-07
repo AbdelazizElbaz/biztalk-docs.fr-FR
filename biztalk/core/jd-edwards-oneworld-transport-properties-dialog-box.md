@@ -14,11 +14,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9dd6f1be076a8d5bc02942e55dc5e5fa88640ae6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 625479ef124aad6d7c0b10cde34b45a142ff9f90
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="jd-edwards-oneworld-transport-properties-dialog-box"></a>Boîte de dialogue Propriétés du transport JD Edwards OneWorld.
 La boîte de dialogue Propriétés du transport JD Edwards OneWorld permet de définir les propriétés obligatoires de l'adaptateur.  
@@ -39,6 +39,6 @@ La boîte de dialogue Propriétés du transport JD Edwards OneWorld permet de d
 |Utiliser SSO|Sélectionnez **Oui** si vous utilisez l’authentification unique ; un mot de passe n’est pas obligatoire dans ce cas.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide de l’authentification unique](../core/using-single-sign-on3.md)   
+ [Sécurité de la carte](../core/security-in-biztalk-adapter-for-jd-edwards-oneworld.md)   
  [Création d’Applications associées](../core/creating-affiliate-applications3.md)   
- [Référence de l’interface utilisateur de l’adaptateur BizTalk pour JDE OneWorld](../core/ui-reference-for-biztalk-adapter-for-jde-oneworld.md)
+ [Référence de l’interface utilisateur pour l’adaptateur BizTalk pour JDE OneWorld](../core/ui-reference-for-biztalk-adapter-for-jde-oneworld.md)

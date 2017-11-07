@@ -23,11 +23,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 55d8e16b7af574a73dc8fc813c29ecd5917ce4d6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5a2d6ef6752965c1f20c695dacb06ff348089054
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="running-orchestrations"></a>Orchestrations en cours d’exécution
 Les procédures suivantes expliquent comment construire, déployer, lier et démarrer une orchestration.  
@@ -94,4 +94,4 @@ Les procédures suivantes expliquent comment construire, déployer, lier et dém
      Pour modifier l’état à **en cours d’exécution** et cliquez sur **Actualiser**, ou cliquez sur l’instance d’hôte, puis cliquez **Actualiser**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide de l’authentification unique](../core/using-single-sign-on2.md)
+ [Sécuriser l’adaptateur](../core/security-in-biztalk-adapter-for-peoplesoft-enterprise.md)

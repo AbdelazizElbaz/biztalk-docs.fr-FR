@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b830e955b54ae8e3ba7fc05f21f22acd97f290a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9a462ab04aad857bf87b189cafce14bb9c3747e8
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="known-issues-with-schema-generation-and-validation"></a>Problèmes connus avec la Validation et génération de schéma
 Cette rubrique fournit des informations concernant les problèmes connus en matière de génération et de validation de schéma.  
@@ -35,7 +35,7 @@ Cette rubrique fournit des informations concernant les problèmes connus en mati
  Votre schéma peut contenir une boucle infinie lorsqu’elle contient une référence circulaire à un nœud avec un **Min Occurs** valeur supérieure ou égale à un, empêchant essentiellement une condition d’arrêt de la propriété. La génération du message d'instance s'arrêtera artificiellement afin que l'opération de génération puisse se terminer, mais le message d'instance produit ne sera par conséquent pas conforme au schéma à partir duquel il a été généré. Ce type de schéma est généralement suspect.  
   
 ## <a name="validation-of-xml-instance-fails-for-document-schema-which-has-the-target-namespacehttpwwww3orgxml1998namespace"></a>La validation de l'instance XML a échoué pour le schéma de document dont l'espace de noms cible est « http://www.w3.org/XML/1998/namespace ».  
- Le « HYPERLINK « http://www.w3.org/XML/1998/namespace » http://www.w3.org/XML/1998/namespace » est un espace de noms réservé dont le préfixe doit être « XML ». Vous pouvez modifier manuellement le préfixe et utiliser « XML ».
+ Le lien hypertexte « http://www.w3.org/XML/1998/namespace » est un espace de noms réservé dont le préfixe doit être « XML ». Vous pouvez modifier manuellement le préfixe et utiliser « XML ».
 
 ## <a name="see-also"></a>Voir aussi
 Plus d’informations sur ces propriétés [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].

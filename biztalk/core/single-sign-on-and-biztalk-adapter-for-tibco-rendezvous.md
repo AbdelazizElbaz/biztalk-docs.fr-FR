@@ -7,22 +7,20 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- SSO, using with the adapter
-- Single Sign-On, using with the adapter
-- HTTP requests, processing
 ms.assetid: 52e698bb-38ba-4a12-b15a-d1581061d62f
 caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 54529d8eefb351471ea1c2bd7278c744737b66f2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 310a3448acd8bd70e617a9a5af650b55a12c9007
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="single-sign-on-and-biztalk-adapter-for-tibco-rendezvous"></a>Authentification unique et adaptateur BizTalk pour TIBCO Rendezvous
+
+## <a name="overview"></a>Vue d'ensemble
 Lorsque vous utilisez Single Sign-On (SSO) avec l’adaptateur Microsoft BizTalk pour TIBCO Rendezvous, l’adaptateur obtient les informations d’identification à partir de la base de données des informations d’identification de l’authentification unique ; Par conséquent, vous n’avez pas à entrer les informations d’identification d’ouverture de session pour le système serveur dans le **propriétés du Transport** fenêtre.  
   
  Au moment de la conception, l'adaptateur récupère les informations d'identification pour le système (pour l'application associée SSO spécifiée) dans le contexte de l'utilisateur qui a démarré le projet BizTalk Server. Cet utilisateur doit être un utilisateur d'applications. Au moment de l'exécution, utilisez l'adaptateur de réception HTTP [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] comme un emplacement de réception dans les scénarios de transfert pour lesquels vous faites appel à SSO.  
@@ -37,4 +35,4 @@ Lorsque vous utilisez Single Sign-On (SSO) avec l’adaptateur Microsoft BizTalk
   
 ## <a name="see-also"></a>Voir aussi  
  [Création d’Applications associées](../core/creating-affiliate-applications1.md)   
- [À l’aide de l’authentification unique](../core/using-single-sign-on5.md)
+[Sécurité](../core/security-in-biztalk-adapter-for-tibco-rendezvous.md)

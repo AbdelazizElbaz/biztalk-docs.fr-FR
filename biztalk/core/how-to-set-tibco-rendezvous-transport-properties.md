@@ -1,30 +1,17 @@
 ---
-title: "Comment définir les propriétés du Transport TIBCO Rendezvous | Documents Microsoft"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- setting transport properties
-- transport properties, setting
-ms.assetid: db8e8a57-a942-44d7-a651-623aa614c6be
-caps.latest.revision: "13"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 9c9ff40d5319daa0a71d67aa3fd132c3d115923e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/creating-tibco-rendezvous-send-handlers/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: b4fabb9146b4f559dd1a41b6e3b7da5ce9489d1f
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-set-tibco-rendezvous-transport-properties"></a>Définition des propriétés de transport TIBCO Rendezvous
 La boîte de dialogue Propriétés du transport TIBCO Rendezvous est utilisée pour l'exécution. Dans le **propriétés du Transport** écran, vous définissez les paramètres de connexion qui identifient le domaine TIBCO Rendezvous où vous souhaitez publier les messages générés.  
   
-### <a name="to-specify-tibco-rendezvous-transport-properties"></a>Pour spécifier les propriétés de transport TIBCO Rendezvous  
+## <a name="enter-tibco-rendezvous-transport-properties"></a>Entrez les propriétés du Transport TIBCO Rendezvous  
   
 1.  Sur le **propriétés du Transport TIBCO Rendezvous** écran, développez **propriétés d’expéditeur certifié** et entrez les informations suivantes.  
   
@@ -71,7 +58,7 @@ La boîte de dialogue Propriétés du transport TIBCO Rendezvous est utilisée p
     1.  Sélectionnez **Oui** dans les **utiliser SSO** à utiliser l’authentification unique.  
   
         > [!NOTE]
-        >  Consultez [à l’aide de l’authentification unique sur](../core/using-single-sign-on5.md) pour plus d’informations sur la façon de configurer l’authentification unique.  
+        >  Consultez [sécurité](../core/security-in-biztalk-adapter-for-tibco-rendezvous.md) pour plus d’informations sur la façon de configurer l’authentification unique.  
   
     2.  Sélectionnez une application associée dans la liste.  
   
@@ -85,4 +72,4 @@ La boîte de dialogue Propriétés du transport TIBCO Rendezvous est utilisée p
      Vous devez définir les paramètres de connexion pour l’adaptateur BizTalk pour TIBCO Rendezvous pour accéder à TIBCO Rendezvous.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Création gestionnaires d’envoi TIBCO Rendezvous](../core/creating-tibco-rendezvous-send-handlers.md)
+ [Création de gestionnaires d’envoi TIBCO Rendezvous](../core/creating-tibco-rendezvous-send-handlers.md)

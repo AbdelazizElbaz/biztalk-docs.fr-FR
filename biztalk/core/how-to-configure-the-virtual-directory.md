@@ -17,11 +17,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1b1461ac2ea0ef9cfee71965fc2cc800d617d1d4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 97af99271a4d63046d2a95a47caed7f145eaef24
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-configure-the-virtual-directory"></a>Comment configurer le répertoire virtuel
 Cette rubrique décrit les procédures de configuration du répertoire virtuel et de vérification de l'application pour un utilisateur.  
@@ -47,4 +47,4 @@ Cette rubrique décrit les procédures de configuration du répertoire virtuel e
 9. Dans le **ajouter une Application** boîte de dialogue, cliquez sur **OK**. Le dossier est converti en application (l'icône de dossier devient une icône de site Web).  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide de l’authentification unique](../core/using-single-sign-on2.md)
+ [Sécuriser l’adaptateur](../core/security-in-biztalk-adapter-for-peoplesoft-enterprise.md)

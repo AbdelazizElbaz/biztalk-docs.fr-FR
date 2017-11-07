@@ -1,25 +1,12 @@
 ---
-title: "Comment configurer l’envoi de Pipelines pour TIBCO Rendezvous | Documents Microsoft"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- send pipelines
-- pipelines, send
-ms.assetid: a28a02c1-6f30-4749-b819-c1e707757680
-caps.latest.revision: "8"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 48d3a72c2282e335f2d3e020ec0e77a8b7afbd35
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/creating-tibco-rendezvous-send-handlers/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 72cdd3553289df39442b71730a61e3271db381e7
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-set-send-pipelines-for-tibco-rendezvous"></a>Définition de pipelines d'envoi pour TIBCO Rendezvous
 L'adaptateur Microsoft BizTalk pour TIBCO Rendezvous requiert la sélection des options XMLTransmit et XMLReceive pour les pipelines d'envoi et de réception, respectivement.  
@@ -46,4 +33,4 @@ L'adaptateur Microsoft BizTalk pour TIBCO Rendezvous requiert la sélection des 
   
 ## <a name="see-also"></a>Voir aussi  
  [Création gestionnaires d’envoi TIBCO Rendezvous](../core/creating-tibco-rendezvous-send-handlers.md)   
- [Gestionnaires de réception création TIBCO Rendezvous](../core/creating-tibco-rendezvous-receive-handlers.md)
+ [Création de gestionnaires de réception TIBCO Rendezvous](../core/creating-tibco-rendezvous-receive-handlers.md)

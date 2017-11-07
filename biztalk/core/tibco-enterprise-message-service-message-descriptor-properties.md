@@ -1,5 +1,5 @@
 ---
-title: "Propriétés du descripteur Message TIBCO Enterprise Message Service | Documents Microsoft"
+title: "Propriétés du descripteur de Message TIBCO EMS | Documents Microsoft"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,19 +7,20 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: message descriptor properties
 ms.assetid: fc164c12-6dc3-4b74-9aa9-024e18faf80a
 caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 80c75875c44c4d082089fc9394fef390a0f91571
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c1a2a7d6529cffba6afa3969964d1ea436d7fcda
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="tibco-enterprise-message-service-message-descriptor-properties"></a>Propriétés du descripteur de message TIBCO Enterprise Message Service
+
+## <a name="descriptor-properties-and-values"></a>Propriétés du descripteur et valeurs
 Le tableau suivant répertorie l'intégralité des propriétés du descripteur de message (structure TibcoEMSMD), ainsi que les types et les valeurs qui leur correspondent.  
   
 |Nom|Type|Valeur|Remarques|  
@@ -61,4 +62,4 @@ Le tableau suivant répertorie l'intégralité des propriétés du descripteur d
  Vérifiez que l'espace de noms cible est utilisé. Seules les propriétés qui utilisent cet espace de noms sont copiées dans le message BizTalk Server ou le message EMS. Pour plus d'informations sur les propriétés de contexte de message, consultez la documentation de BizTalk Server.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Propriétés de contexte de message](../core/message-context-properties2.md)
+[Propriétés de contexte de message TIBCO EMS](../core/message-context-properties-in-biztalk-server.md)

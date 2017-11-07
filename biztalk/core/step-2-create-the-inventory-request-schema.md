@@ -12,11 +12,11 @@ caps.latest.revision: "45"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5199b20a75b82e12ad76b96903538487a3128668
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 06000a734856c7b9f22e78a2d5a78c4585021a21
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="step-2-create-the-inventory-request-schema"></a>Étape 2 : création du schéma de demande de stock
 ![Étape 2 sur 5](../core/media/step-2of5.gif "Step_2of5")  
@@ -76,13 +76,15 @@ ms.lasthandoff: 09/20/2017
   
 7.  Type `ReqID` comme nouveau nom pour l’élément et appuyez sur ENTRÉE.  
   
-8.  Élément de champ Répétez l’étape 6 et 7 pour créer un deuxième enfant pour le **en-tête** nœud et nommez-le `OrderDate`.  
+8.  Élément de champ Répétez l’étape 6 et 7 pour créer un deuxième enfant pour le **en-tête** nœud et nommez-le `OrderDate`.
+
+9.  Élément de champ enfant Répétez l’étape 6 et 7 pour créer un tiers pour le **en-tête** nœud et nommez-le `GrandTotal`.
   
-9. Dans l’arborescence du schéma, cliquez sur le **éléments** nœud **insérer un nœud de schémas**, puis cliquez sur **enregistrement enfant**.  
+10. Dans l’arborescence du schéma, cliquez sur le **éléments** nœud **insérer un nœud de schémas**, puis cliquez sur **enregistrement enfant**.  
   
-10. Type `Item` comme nouveau nom de l’enregistrement enfant, puis appuyez sur ENTRÉE.  
+11. Type `Item` comme nouveau nom de l’enregistrement enfant, puis appuyez sur ENTRÉE.  
   
-11. Dans l’arborescence du schéma, cliquez sur le **élément** nœud et ajoutez les éléments de champ enfant suivants :  
+12. Dans l’arborescence du schéma, cliquez sur le **élément** nœud et ajoutez les éléments de champ enfant suivants :  
   
     -   `Description`  
   
@@ -135,4 +137,4 @@ ms.lasthandoff: 09/20/2017
  [Étape 4 : Créer la carte](../core/step-4-create-the-map.md)   
  [Étape 5 : Créer le projet EAISchemas](../core/step-5-build-the-eaischemas-project.md)   
  [Création de schémas à l’aide de l’Éditeur BizTalk](../core/creating-schemas-using-biztalk-editor.md)   
- [À propos des propriétés de contexte de Message BizTalk](../core/about-biztalk-message-context-properties.md)
+ [À propos des propriétés de contexte de message BizTalk](../core/about-biztalk-message-context-properties.md)

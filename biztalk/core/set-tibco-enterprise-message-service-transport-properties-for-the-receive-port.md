@@ -1,26 +1,12 @@
 ---
-title: "Définition des propriétés du Transport TIBCO Enterprise Message Service pour le Port de réception | Documents Microsoft"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- receive ports, setting transport properties
-- transport properties, setting for receive port
-- setting transport properties, receive port
-ms.assetid: bccddf84-d92e-469f-aa6f-4234c91a0be9
-caps.latest.revision: "12"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: d94229364e3bed8faaf1407603f17db76c70e6bd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/creating-tibco-enterprise-message-service-receive-handlers/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 1a32564f9e0e9e81624b39ab0ba156e76b109497
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="setting-tibco-enterprise-message-service-transport-properties-for-the-receive-port"></a>Configuration des propriétés de transport de l'adaptateur TIBCO Enterprise Message Service pour le port de réception
 Emplacement de réception pour un système d’exploitation TIBCO Enterprise Message System (EMS) le **URL** et **cible Namespace** au système TIBCO EMS sont les seules valeurs de configuration requises.  
@@ -67,5 +53,4 @@ Emplacement de réception pour un système d’exploitation TIBCO Enterprise Mes
 6.  Cliquez sur **appliquer**, puis cliquez sur **OK**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Création de Ports d’envoi](../core/creating-send-ports1.md)   
- [Gestionnaires de réception TIBCO Enterprise Message Service de création](../core/creating-tibco-enterprise-message-service-receive-handlers.md)
+  [Création de gestionnaires de réception TIBCO Enterprise Message Service](../core/creating-tibco-enterprise-message-service-receive-handlers.md)

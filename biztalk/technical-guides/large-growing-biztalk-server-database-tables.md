@@ -1,5 +1,5 @@
 ---
-title: "Tables de base de données BizTalk Server grand croissance | Documents Microsoft"
+title: "Grand croissance des Tables de base de données | Documents Microsoft"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,16 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f427862d90c119c831bffc59e1a6e55a25700a68
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1253f57a38ea0658d15e536a4f7b614cc52aed7f
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="large-growing-biztalk-server-database-tables"></a>Grand croissance des Tables de base de données BizTalk Server
 Le tableau suivant répertorie les [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] tables généralement la croissance la plus grande. Vous pouvez utiliser ces données pour déterminer l’origine d’un problème potentiel.  
-  
+
+## <a name="tables-list"></a>Liste des tables
 |Table| Description|Commentaires|  
 |-----------|-----------------|--------------|  
 |*HostNameQ*_Suspended table|Cette table contient une référence à des messages dans la table de mise en attente qui sont associés à des instances suspendues pour cet hôte. Cette table est dans la base de données BizTalkMsgBoxDb.|Si le *HostNameQ*_Suspended tables ont plusieurs enregistrements, les tables pourraient être contenant les instances suspendues valides qui s’affichent dans le **Hub du groupe** page. Vous pouvez mettre fin à ces instances. Si ces instances n’apparaissent pas dans le **Hub du groupe**, les instances sont probablement la mise en cache instances ou orphelins des rapports d’échec de routage. Lorsque vous terminez les instances suspendues, vous nettoyer les éléments dans cette table et de leurs lignes associées dans les tables du spouleur et des Instances.|  
@@ -30,6 +31,6 @@ Le tableau suivant répertorie les [!INCLUDE[btsBizTalkServerNoVersion](../inclu
 |TrackingData*_x_x* table|Cette table stocke les événements suivis dans la base de données BizTalkMsgBoxDb pour le suivi des données décoder Service TDDS (service) pour déplacer les événements de la base de données BizTalkDTADb.|Si le TrackingData_*x_x* tables sont grandes, soit le service TDDS n’est pas en cours d’exécution ou ne fonctionne pas correctement. Si le service TDDS est en cours d’exécution, passez en revue les journaux des événements et la table TDDS_FailedTrackingData dans la base de données BizTalkDTADb pour des informations sur l’erreur.|  
 |Tracking_Fragments*x*, Tracking_Parts*x*, Tracking_Spool*x* tables|Deux de chacune de ces tables est dans les bases de données BizTalkMsgBoxDb et BizTalkDTADb. Est en ligne, et l’autre est hors connexion.|Le **TrackedMessages_Copy_BizTalkMsgBoxDb** travail de l’Agent SQL Server déplace les corps des messages suivis directement à ces tables dans la base de données BizTalkDTADb.|  
 |table de dta_ServiceInstances|Cette table stocke les événements suivis pour les instances de service dans la base de données BizTalkDTADb.|Si cette table est volumineuse, la base de données BizTalkDTADb est probablement volumineux.|  
-|table de dta_DebugTrace|Cette table stocke les événements de débogueur Orchestration dans la base de données BizTalkDTADb.|Si la table dta_DebugTrace possède un nombre d’enregistrements, forme de l’orchestration de suivi est utilisé ou a été utilisée. Si le débogage d’orchestration n’est pas nécessaire pour les opérations courantes, désactiver la forme de l’orchestration de suivi pour toutes les orchestrations. Si la forme de l’orchestration de suivi est déjà désactivé et une file d’attente existe dans la base de données BizTalkMsgBoxDb, la table dta_DebugTrace peut-être continuer à croître car le service TDDS continue de déplacer ces données dans la table dta_DebugTrace.<br /><br /> Pour contrôler la taille de la base de données BizTalkDTADb, vous pouvez choisir de désactiver le suivi global. Pour plus d’informations, consultez [la désactivation du suivi Global](http://go.microsoft.com/fwlink/p/?LinkId=153687) (http://go.microsoft.com/fwlink/p/?LinkId=153687). Pour plus d’informations sur les instructions de dimensionnement de base de données de suivi, consultez [instructions dimensionnement de bases de données de suivi](http://go.microsoft.com/fwlink/p/?LinkId=153688) (http://go.microsoft.com/fwlink/p/?LinkId=153688).|  
-|table de dta_MessageInOutEvents|Cette table stocke les messages d’événements de suivi dans la base de données BizTalkDTADb. Ces messages d’événement suivi incluent des informations de contexte de message.|Si les tables dta_DebugTrace et dta_MessageInOutEvents dans la base de données BizTalkTrackingDb sont trop volumineux, vous pouvez tronquer les tables manuellement après l’arrêt de l’hôte de suivi. Pour obtenir des instructions sur la façon de tronquer les tables, les procédures décrites dans la section « table dta_DebugTrace » de l’article de la Base de connaissances Microsoft 952555, [comment gérer et dépanner les bases de données BizTalk Server](http://go.microsoft.com/fwlink/p/?LinkId=158847) (http:// go.Microsoft.com/fwlink/p/ ? LinkId = 158847).|  
+|table de dta_DebugTrace|Cette table stocke les événements de débogueur Orchestration dans la base de données BizTalkDTADb.|Si la table dta_DebugTrace possède un nombre d’enregistrements, forme de l’orchestration de suivi est utilisé ou a été utilisée. Si le débogage d’orchestration n’est pas nécessaire pour les opérations courantes, désactiver la forme de l’orchestration de suivi pour toutes les orchestrations. Si la forme de l’orchestration de suivi est déjà désactivé et une file d’attente existe dans la base de données BizTalkMsgBoxDb, la table dta_DebugTrace peut-être continuer à croître car le service TDDS continue de déplacer ces données dans la table dta_DebugTrace.<br /><br /> Pour contrôler la taille de la base de données BizTalkDTADb, vous pouvez choisir de désactiver le suivi global. Consultez [comment désactiver le suivi Global](../core/how-to-turn-off-global-tracking.md) et [suivi les instructions de dimensionnement de la base de données](../core/tracking-database-sizing-guidelines.md).|  
+|table de dta_MessageInOutEvents|Cette table stocke les messages d’événements de suivi dans la base de données BizTalkDTADb. Ces messages d’événement suivi incluent des informations de contexte de message.|Si les tables dta_DebugTrace et dta_MessageInOutEvents dans la base de données BizTalkTrackingDb sont trop volumineux, vous pouvez tronquer les tables manuellement après l’arrêt de l’hôte de suivi. Pour obtenir des instructions sur la façon de tronquer les tables, consultez les détails de « table dta_DebugTrace » dans [952555 de la base de connaissances : comment gérer et dépanner les bases de données BizTalk Server](https://support.microsoft.com/help/952555/how-to-maintain-and-troubleshoot-biztalk-server-databases).|  
 |table de dta_ServiceInstanceExceptions|Cette table stocke des informations d’erreur pour toute instance de service suspendue dans la base de données BizTalkDTADb.|En général, la table dta_ServiceInstanceExceptions devient volumineuse dans un environnement qui a régulièrement suspendu des instances.|

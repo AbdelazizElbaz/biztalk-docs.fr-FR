@@ -1,27 +1,12 @@
 ---
-title: "Déploiement de Ports et Assemblies1 | Documents Microsoft"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- ports, deploying
-- deployment, ports
-- deployment, assemblies
-- assemblies, deploying
-ms.assetid: e259f7fe-c443-4015-a630-f08220e5437a
-caps.latest.revision: "8"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: cf2515cd5ee80f62a55e0b26b33bb93c3685ce6b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/deploying-biztalk-adapter-for-tibco-rendezvous/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: f62ecefcaa3a5b536f1f534d1b15eff350baf3f9
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="deploying-ports-and-assemblies"></a>Déploiement des ports et assemblys
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] permet de dupliquer des ports et des assemblys sur un ordinateur cible. L'Assistant exporte la configuration des ports d'envoi/emplacements de réception dans un fichier XML.  
@@ -39,8 +24,3 @@ ms.lasthandoff: 09/20/2017
 > [!NOTE]
 >  L'adaptateur Microsoft BizTalk pour TIBCO Rendezvous requiert l'installation de Visual Studio sur un ordinateur (de développement) source. Visual Studio n'est pas requis sur l'ordinateur de production.  
   
-## <a name="in-this-section"></a>Dans cette section  
-  
--   [Vérification de la configuration du déploiement](../core/verifying-the-deployment-setup3.md)  
-  
--   [Comment nettoyer l’ordinateur cible](../core/how-to-clean-the-target-computer1.md)

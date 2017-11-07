@@ -1,29 +1,14 @@
 ---
-title: Optimisation de la Configuration | Documents Microsoft
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- Max Concurrent Calls parameter
-- optimizing, configuration
-- configuring, optimizing
-- messages, overload protection
-ms.assetid: df0ae17b-fcfa-4e00-893c-63f4972d3822
-caps.latest.revision: "10"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 72b185d7738ac48d9a1dc3631c7c9faec9ac4b60
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/creating-peoplesoft-send-handlers/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 2b0a1aa81971e3e086881e23bcfd6d7ba5d5799d
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="optimizing-configuration"></a>Optimisation de la Configuration
+# <a name="optimize-configuration"></a>Optimisation de la configuration
 Cette section contient des informations sur l'optimisation de la configuration de l'adaptateur BizTalk pour PeopleSoft Enterprise ainsi que des descriptions de paramètres permettant de configurer celui-ci.  
   
 ## <a name="message-overload-protection"></a>Protection contre la surcharge du message  
@@ -31,7 +16,7 @@ Cette section contient des informations sur l'optimisation de la configuration d
   
  Lorsque BizTalk Server envoie des messages à l'adaptateur de transmission, il reçoit tout d'abord un lot de l'adaptateur, puis appelle `TransmitMessage()` sur le lot pour transmettre chaque message. Ensuite, BizTalk Server appelle `Done()` sur le lot et l'adaptateur commence à transmettre les messages au système principal. Si BizTalk Server obtient plusieurs lots avant l'appel de `Done`, la commande `Done` ne peut jamais se produire. En définissant le nombre maximal de messages dans un lot, vous pouvez contrôler les messages transmis au système principal. La modification de ce paramètre entre en vigueur dans une minute. BizTalk Server doit récupérer les modifications de la configuration de l'adaptateur enregistrée dans la base de données SQL.  
   
-#### <a name="to-change-the-max-concurrent-calls-parameter"></a>Pour modifier le paramètre Nombre maximal d'appels simultanés  
+## <a name="change-the-max-concurrent-calls-parameter"></a>Modifiez le paramètre nombre maximal d’appels simultanés  
   
 1.  Dans le **propriétés de Port d’envoi** boîte de dialogue, entrez un **connexion** valeur.  
   
@@ -54,7 +39,7 @@ Cette section contient des informations sur l'optimisation de la configuration d
 4.  Sélectionnez **Oui** pour **utiliser SSO** à utiliser l’authentification unique.  
   
     > [!NOTE]
-    >  Pour plus d’informations, consultez [à l’aide de l’authentification unique sur](../core/using-single-sign-on2.md).  
+    >  Pour plus d’informations, consultez [sécuriser l’adaptateur](../core/security-in-biztalk-adapter-for-peoplesoft-enterprise.md). 
   
 5.  Sélectionnez une application associée sur la liste.  
   

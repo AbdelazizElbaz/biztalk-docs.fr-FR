@@ -1,27 +1,12 @@
 ---
-title: "Déploiement de Ports et Assemblies3 | Documents Microsoft"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- ports, deploying
-- Deployment Wizard
-- assemblies, deploying
-- deployment, ports and assemblies
-ms.assetid: 92de8d9f-79d4-4c7a-a66a-12928bce350f
-caps.latest.revision: "8"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 3c37a677904143d4a925d035c409f485f43958ec
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/deploying-biztalk-adapter-for-jd-edwards-enterpriseone/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 9e3c0ee8d4aa3e6e3bfaf48db04019cf8680d3ab
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="deploying-ports-and-assemblies"></a>Déploiement des ports et assemblys
 Avec [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], vous pouvez dupliquer des ports et des assemblys sur un ordinateur cible. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Exporte la configuration des emplacements de réception/ports envoi dans un fichier XML.  
@@ -39,10 +24,3 @@ Avec [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-
 > [!NOTE]
 >  L'adaptateur Microsoft BizTalk pour JD Edwards EnterpriseOne requiert l'installation de Visual Studio sur un ordinateur (de développement) source. Visual Studio n'est pas requis sur l'ordinateur de production.  
   
-## <a name="in-this-section"></a>Dans cette section  
-  
--   [Vérification de la configuration du déploiement](../core/verifying-the-deployment-setup1.md)  
-  
--   [L’importation de fichiers de liaison](../core/importing-binding-files2.md)  
-  
--   [Limitations concernant le déploiement](../core/deployment-limitations4.md)

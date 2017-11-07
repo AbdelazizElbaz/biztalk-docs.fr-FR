@@ -1,26 +1,12 @@
 ---
-title: "Déploiement de Ports et Assemblies5 | Documents Microsoft"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- ports, deploying
-- assemblies, deploying
-- deployment, ports and assemblies
-ms.assetid: 11d980c4-2502-4da2-b505-d7326aae619a
-caps.latest.revision: "11"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 31df94e2a659fa29e6f21d2bd705de31da3c6b9a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/deploying-biztalk-adapter-for-peoplesoft-enterprise/
+redirect_document_id: True
+ROBOTS: NOINDEX
+ms.openlocfilehash: 7f7cb75d48afd407d580bbd7b02b788c6864d8e0
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="deploying-ports-and-assemblies"></a>Déploiement des ports et assemblys
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] permet de dupliquer des ports et des assemblys sur un ordinateur cible. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Exporte la configuration des emplacements de réception/ports envoi dans un fichier XML.  
@@ -38,8 +24,3 @@ ms.lasthandoff: 09/20/2017
 > [!NOTE]
 >  L'adaptateur Microsoft BizTalk pour PeopleSoft Enterprise requiert l'installation de Visual Studio sur un ordinateur (de développement) source. Visual Studio n'est pas requis sur l'ordinateur de production.  
   
-## <a name="in-this-section"></a>Dans cette section  
-  
--   [L’importation de fichiers de liaison](../core/importing-binding-files1.md)  
-  
--   [Limitations concernant le déploiement](../core/deployment-limitations3.md)
