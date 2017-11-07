@@ -1,32 +1,155 @@
 ---
-title: "Ajout de l’adaptateur BizTalk pour JD Edwards OneWorld | Documents Microsoft"
+title: "Ajouter l’adaptateur BizTalk pour JD Edwards OneWorld | Documents Microsoft"
+description: "Ajouter JD Edwards OneWorld à l’Administration de BizTalk, créer le port d’envoi, configurez les propriétés de transport et utiliser les pipelines XMLReceive et XMLTransmit lors de l’utilisation de l’adaptateur JD Edwards OneWorld dans BizTalk Server"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 10/18/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- adapters [JD Edwards OneWorld adapters], installing
-- installing, JD Edwards OneWorld adapters
-- JD Edwards OneWorld adapters, installing
 ms.assetid: 03126f4e-9156-4c0c-ab5c-0627f0c05263
 caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ddbad0776d414ffdffa59f9d1908b2fbe93ea635
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 784323634d3084efd0b56aac1d5dbc97f2b4329f
+ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="adding-biztalk-adapter-for-jd-edwards-oneworld"></a><span data-ttu-id="5d8f1-102">Ajout de l'adaptateur Microsoft BizTalk pour JD Edwards OneWorld</span><span class="sxs-lookup"><span data-stu-id="5d8f1-102">Adding BizTalk Adapter for JD Edwards OneWorld</span></span>
-<span data-ttu-id="5d8f1-103">Cette section décrit l'ajout de l'adaptateur Microsoft BizTalk pour JD Edwards OneWorld à l'administrateur BizTalk Server.</span><span class="sxs-lookup"><span data-stu-id="5d8f1-103">This section explains how to add Microsoft BizTalk Adapter for JD Edwards OneWorld to the BizTalk Server Administrator.</span></span>  
+# <a name="configure-jd-edwards-enterpriseone-artifacts-in-biztalk-administration"></a><span data-ttu-id="d9500-103">Configurer les artefacts de JD Edwards EnterpriseOne dans Administration de BizTalk</span><span class="sxs-lookup"><span data-stu-id="d9500-103">Configure JD Edwards EnterpriseOne artifacts in BizTalk Administration</span></span>
+<span data-ttu-id="d9500-104">L'adaptateur Microsoft BizTalk pour JD Edwards OneWorld contient les dossiers du gestionnaire de réception et du gestionnaire d'envoi.</span><span class="sxs-lookup"><span data-stu-id="d9500-104">Microsoft BizTalk Adapter for JD Edwards OneWorld contains both the Receive Handler and Send Handler folders.</span></span> <span data-ttu-id="d9500-105">Le dossier du gestionnaire d'envoi contient BizTalkServerApplication.</span><span class="sxs-lookup"><span data-stu-id="d9500-105">The Send Handler folder contains BizTalkServerApplication.</span></span> <span data-ttu-id="d9500-106">L'adaptateur BizTalk pour JD Edwards OneWorld peut être créé. Il est exécuté de façon In-process avec BizTalk Server et n'est pas exécuté dans un processus d'hôte isolé.</span><span class="sxs-lookup"><span data-stu-id="d9500-106">BizTalk Adapter for JD Edwards OneWorld is creatable; it runs in-process with BizTalk Server and does not run in an isolated host process.</span></span>  
+
+## <a name="add-the-adapter-to-biztalk-administration"></a><span data-ttu-id="d9500-107">Ajouter l’adaptateur à l’Administration de BizTalk</span><span class="sxs-lookup"><span data-stu-id="d9500-107">Add the adapter to BizTalk Administration</span></span> 
+
+1.  <span data-ttu-id="d9500-108">Ouvrez **Administration de BizTalk Server**, développez **Administration de BizTalk Server**, développez **groupe BizTalk**, puis développez **paramètres de plateforme**.</span><span class="sxs-lookup"><span data-stu-id="d9500-108">Open **BizTalk Server Administration**, expand **BizTalk Server Administration**, expand **BizTalk Group**, and then expand **Platform Settings**.</span></span>  
   
- <span data-ttu-id="5d8f1-104">Si vous avez déjà ajouté cet adaptateur à Microsoft BizTalk Server, il n'est pas nécessaire de l'ajouter à nouveau.</span><span class="sxs-lookup"><span data-stu-id="5d8f1-104">If you have already added the adapter to Microsoft BizTalk Server, you do not need to add it again.</span></span>  
+2.  <span data-ttu-id="d9500-109">Avec le bouton droit **cartes**, sélectionnez **nouveau**, puis sélectionnez **carte**.</span><span class="sxs-lookup"><span data-stu-id="d9500-109">Right-click **Adapters**, select **New**, and select **Adapter**.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="5d8f1-105">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="5d8f1-105">In This Section</span></span>  
+3.  <span data-ttu-id="d9500-110">Entrez un nom pour la carte.</span><span class="sxs-lookup"><span data-stu-id="d9500-110">Enter a name for the adapter.</span></span> <span data-ttu-id="d9500-111">Par exemple, entrez`JDEOneWorld`.</span><span class="sxs-lookup"><span data-stu-id="d9500-111">For example, enter`JDEOneWorld`.</span></span>  
   
--   [<span data-ttu-id="5d8f1-106">Ajout de l’adaptateur à BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="5d8f1-106">Adding the Adapter to BizTalk Server</span></span>](../core/adding-the-adapter-to-biztalk-server.md)
+4.  <span data-ttu-id="d9500-112">Sélectionnez **JDEOneWorld** à partir de la **carte** liste, puis sélectionnez **OK**.</span><span class="sxs-lookup"><span data-stu-id="d9500-112">Select **JDEOneWorld** from the **Adapter** list, and select **OK**.</span></span>  
+
+  
+### <a name="check-if-the-adapter-is-working"></a><span data-ttu-id="d9500-113">Vérifiez si l’adaptateur fonctionne</span><span class="sxs-lookup"><span data-stu-id="d9500-113">Check if the adapter is working</span></span> 
+ <span data-ttu-id="d9500-114">Dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Console d’Administration, vous pouvez vérifier que l’adaptateur fonctionne correctement en examinant le **système logique** fenêtre.</span><span class="sxs-lookup"><span data-stu-id="d9500-114">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console, you can verify that the adapter is functioning correctly by looking at the **Logical System** window.</span></span> <span data-ttu-id="d9500-115">Lors de l'installation initiale, cette fenêtre est vide car vous n'avez pas encore établi de connexion au système serveur, ni créé de système logique.</span><span class="sxs-lookup"><span data-stu-id="d9500-115">On initial installation, this window is empty because you have not yet established a connection to the server system, nor have you created any logical systems.</span></span>  
+  
+ 
+1.  <span data-ttu-id="d9500-116">Dans **Administration de BizTalk Server**, développez **paramètres de plateforme**, développez **cartes**, puis sélectionnez **JDEOneWorld**.</span><span class="sxs-lookup"><span data-stu-id="d9500-116">In **BizTalk Server Administration**, expand **Platform Settings**, expand **Adapters**, and then select **JDEOneWorld**.</span></span>  
+  
+2.  <span data-ttu-id="d9500-117">Dans le volet détails, cliquez sur **BizTalkServerApplication**, puis sélectionnez **propriétés**.</span><span class="sxs-lookup"><span data-stu-id="d9500-117">In the details pane, right-click **BizTalkServerApplication**, and select **Properties**.</span></span>  
+  
+3.  <span data-ttu-id="d9500-118">Sélectionnez le **propriétés** onglet.</span><span class="sxs-lookup"><span data-stu-id="d9500-118">Select the **Properties** tab.</span></span>  
+  
+4.  <span data-ttu-id="d9500-119">Définissez les paramètres de connexion SQL.</span><span class="sxs-lookup"><span data-stu-id="d9500-119">Set the SQL Connection parameters.</span></span>  
+  
+    -   <span data-ttu-id="d9500-120">**Définir des paramètres de base de données SQL -** le nom du serveur SQL et la base de données sont ceux que vous définissez lors de l’installation.</span><span class="sxs-lookup"><span data-stu-id="d9500-120">**Define SQL Database Parameters -** The SQL Server Name and Database are those you set at installation.</span></span> <span data-ttu-id="d9500-121">Il s'agit de la zone de texte dans laquelle vous pouvez redéfinir le serveur et la base de données pour cet adaptateur.</span><span class="sxs-lookup"><span data-stu-id="d9500-121">This is the text area that you can redefine the server and database for this adapter.</span></span>  
+  
+5.  <span data-ttu-id="d9500-122">Sélectionnez **fermer** pour quitter le **système logique** fenêtre.</span><span class="sxs-lookup"><span data-stu-id="d9500-122">Select **Close** to exit the **Logical System** window.</span></span>  
+  
+     <span data-ttu-id="d9500-123">La prochaine étape consiste à ajouter un système logique à l'aide de [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].</span><span class="sxs-lookup"><span data-stu-id="d9500-123">Your next step is to add a logical system using [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].</span></span>  
+
+## <a name="create-the-send-port"></a><span data-ttu-id="d9500-124">Pour créer un port d'envoi</span><span class="sxs-lookup"><span data-stu-id="d9500-124">Create the send port</span></span>  
+  
+1.  <span data-ttu-id="d9500-125">Dans **Administration de BizTalk Server**, développez **groupe BizTalk**, développez **Applications**, puis développez votre application.</span><span class="sxs-lookup"><span data-stu-id="d9500-125">In **BizTalk Server Administration**, expand **BizTalk Group**, expand **Applications**, and then expand your application.</span></span>  
+  
+2.  <span data-ttu-id="d9500-126">Avec le bouton droit **Ports d’envoi**, sélectionnez **nouveau**, puis sélectionnez **Port d’envoi statique avec sollicitation-réponse**.</span><span class="sxs-lookup"><span data-stu-id="d9500-126">Right-click **Send Ports**, select **New**, and then select **Static Solicit-Response Send Port**.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="d9500-127">Vous pouvez également utiliser **Port statique unidirectionnel**.</span><span class="sxs-lookup"><span data-stu-id="d9500-127">You can also use **Static One-Way Port**.</span></span>  
+  
+3.  <span data-ttu-id="d9500-128">Dans le **propriétés de Port d’envoi**, sélectionnez le **nom** et entrez le nom du port d’envoi.</span><span class="sxs-lookup"><span data-stu-id="d9500-128">In the **Send Port Properties**, select the **Name** field, and enter a send port name.</span></span> <span data-ttu-id="d9500-129">Par exemple, entrez **SendToJDE**.</span><span class="sxs-lookup"><span data-stu-id="d9500-129">For example, enter **SendToJDE**.</span></span>  
+  
+4.  <span data-ttu-id="d9500-130">Dans le **Type** la liste déroulante, sélectionnez **JDEOneWorld**.</span><span class="sxs-lookup"><span data-stu-id="d9500-130">In the **Type** drop-down list, select **JDEOneWorld**.</span></span>  
+  
+5.  <span data-ttu-id="d9500-131">Dans le **URI** liste déroulante, sélectionnez le Gestionnaire d’envoi.</span><span class="sxs-lookup"><span data-stu-id="d9500-131">In the **URI** drop-down list, select the send handler.</span></span>  
+  
+6.  <span data-ttu-id="d9500-132">Sélectionnez **OK**.</span><span class="sxs-lookup"><span data-stu-id="d9500-132">Select **OK**.</span></span> 
+
+## <a name="configure-the-transport-properties"></a><span data-ttu-id="d9500-133">Configurer les propriétés de transport</span><span class="sxs-lookup"><span data-stu-id="d9500-133">Configure the transport properties</span></span>
+<span data-ttu-id="d9500-134">La définition de système de propriétés du transport JD Edwards OneWorld est utilisée pour la connexion au moment de la conception et de l'exécution.</span><span class="sxs-lookup"><span data-stu-id="d9500-134">The JD Edwards OneWorld Transport Property System Definition is used for design and run-time logon.</span></span> <span data-ttu-id="d9500-135">Vous définissez ces informations d'identification pour accéder aux fonctions commerciales de JD Edwards OneWorld au moment de la conception et effectuer des appels au moment de l'exécution.</span><span class="sxs-lookup"><span data-stu-id="d9500-135">You set these credentials to browse JD Edwards OneWorld business functions at design time and make calls at run time.</span></span>  
+  
+ <span data-ttu-id="d9500-136">Lorsqu'une connexion est établie avec JD Edwards OneWorld, les paramètres sont transmis à l'objet de connexion (utilisateur, mot de passe, environnement).</span><span class="sxs-lookup"><span data-stu-id="d9500-136">When a connection is made to JD Edwards OneWorld, parameters are passed to the connection object (User, Password, Environment).</span></span> <span data-ttu-id="d9500-137">Il renvoie une instance de la fonction d'entreprise de l'application JD Edwards OneWorld.</span><span class="sxs-lookup"><span data-stu-id="d9500-137">It returns an instance of the JD Edwards OneWorld aApplication business function.</span></span> <span data-ttu-id="d9500-138">Les informations d'identification sont ensuite définies par le nom du serveur de l'entreprise/application et le port TCP/IP défini sur lequel le service écoute.</span><span class="sxs-lookup"><span data-stu-id="d9500-138">The credentials are further defined by the name of the enterprise/application server, and the defined TCP/IP port on which the service listens.</span></span>  
+  
+ <span data-ttu-id="d9500-139">Le nom du serveur de l'entreprise et le port sont lus à partir d'un fichier nommé jdeinterop.ini.</span><span class="sxs-lookup"><span data-stu-id="d9500-139">The enterprise server name and port are read from a file that is named jdeinterop.ini.</span></span> <span data-ttu-id="d9500-140">Ces valeurs doivent être les mêmes que celles des paramètres Définition de système.</span><span class="sxs-lookup"><span data-stu-id="d9500-140">These values must be the same as those that are in the System Definition settings.</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="d9500-141">Toutes les entrées respectent la casse.</span><span class="sxs-lookup"><span data-stu-id="d9500-141">All entries are case sensitive.</span></span>  
+  
+### <a name="set-the-properties"></a><span data-ttu-id="d9500-142">Définir les propriétés</span><span class="sxs-lookup"><span data-stu-id="d9500-142">Set the properties</span></span>  
+ <span data-ttu-id="d9500-143">Dans le **propriétés du Transport** boîte de dialogue, vous définissez les paramètres de connexion et les informations d’identification qui sont spécifiques au système du serveur et les objets que vous essayez d’accéder.</span><span class="sxs-lookup"><span data-stu-id="d9500-143">In the **Transport Properties** dialog box, you set the connection and credential parameters that are specific to the server system and the objects you are trying to access.</span></span>  
+  
+1.  <span data-ttu-id="d9500-144">Fournissez des informations d'identification.</span><span class="sxs-lookup"><span data-stu-id="d9500-144">Provide credentials.</span></span> <span data-ttu-id="d9500-145">Vous pouvez accéder au système JD Edwards OneWorld à l'aide de l'une des méthodes suivantes :</span><span class="sxs-lookup"><span data-stu-id="d9500-145">You can access the JD Edwards OneWorld system using one of the following methods:</span></span>  
+  
+    -   <span data-ttu-id="d9500-146">D’informations d’identification (mot de passe, nom d’utilisateur) : Si vous utilisez cette méthode, passez à l’étape 5.</span><span class="sxs-lookup"><span data-stu-id="d9500-146">Logon credentials (Password, User name): If you use this method, go to step 5.</span></span>  
+  
+    -   <span data-ttu-id="d9500-147">Authentification unique.</span><span class="sxs-lookup"><span data-stu-id="d9500-147">Single Sign-On.</span></span>  
+  
+2.  <span data-ttu-id="d9500-148">Pour utiliser l’authentification unique (SSO), sélectionnez **Oui** dans les **utiliser SSO**.</span><span class="sxs-lookup"><span data-stu-id="d9500-148">To use Single Sign-On (SSO), select **Yes** in the **Use SSO**.</span></span>  
+  
+     <span data-ttu-id="d9500-149">Pour plus d’informations sur la façon de configurer l’authentification unique, consultez [sécurité dans l’adaptateur](../core/security-in-biztalk-adapter-for-jd-edwards-oneworld.md)</span><span class="sxs-lookup"><span data-stu-id="d9500-149">For more information about how to set up SSO, see [Security in the adapter](../core/security-in-biztalk-adapter-for-jd-edwards-oneworld.md)</span></span>  
+  
+3.  <span data-ttu-id="d9500-150">Sélectionnez une application associée sur la liste.</span><span class="sxs-lookup"><span data-stu-id="d9500-150">Select an affiliate application in the list.</span></span>  
+  
+     <span data-ttu-id="d9500-151">Une application associée (créée par les outils d'authentification unique de l'entreprise) représente une application telle que JD Edwards OneWorld.</span><span class="sxs-lookup"><span data-stu-id="d9500-151">An affiliate application, created by Enterprise Single Sign-On tools, represents an application such as JD Edwards OneWorld.</span></span> <span data-ttu-id="d9500-152">L'adaptateur Microsoft BizTalk pour JD Edwards OneWorld utilise les informations d'identification de l'utilisateur d'une application.</span><span class="sxs-lookup"><span data-stu-id="d9500-152">Microsoft BizTalk Adapter for JD Edwards OneWorld uses the credentials of an application user.</span></span> <span data-ttu-id="d9500-153">Celles-ci sont extraites de la base de données d'informations d'identification SSO pour le système de serveur pour une application associée spécifiée.</span><span class="sxs-lookup"><span data-stu-id="d9500-153">These credentials are retrieved from the SSO Credentials database for the server system for a specified affiliate application.</span></span> <span data-ttu-id="d9500-154">Les informations d'identification sont celles de l'utilisateur de l'application qui a lancé le projet BizTalk Server.</span><span class="sxs-lookup"><span data-stu-id="d9500-154">The credentials are those of the application user who launched the BizTalk Server project.</span></span>  
+  
+     <span data-ttu-id="d9500-155">Pour plus d’informations, consultez [création d’Applications associées](../core/creating-affiliate-applications3.md).</span><span class="sxs-lookup"><span data-stu-id="d9500-155">For more information, see [Creating Affiliate Applications](../core/creating-affiliate-applications3.md).</span></span>  
+  
+4.  <span data-ttu-id="d9500-156">Développez le **système JD Edwards OneWorld** nœud et entrez les informations requises pour la connexion au serveur JD Edwards OneWorld.</span><span class="sxs-lookup"><span data-stu-id="d9500-156">Expand the **JD Edwards OneWorld system** node and enter all required information for connection to the JD Edwards OneWorld server.</span></span>  
+  
+     ![](../core/media/jdedadapter-02-jdesystem.gif "JDEdAdapter_02_JDESystem")  
+  
+     <span data-ttu-id="d9500-157">Après avoir défini les paramètres de connexion, vous pouvez accéder à un système JD Edwards OneWorld.</span><span class="sxs-lookup"><span data-stu-id="d9500-157">After you set the connection parameters, you can browse a JD Edwards OneWorld system.</span></span> <span data-ttu-id="d9500-158">Pour plus d’informations, consultez [l’importation des schémas JD Edwards OneWorld dans des projets de BizTalk Server](../core/importing-jd-edwards-oneworld-schemas-into-biztalk-server-projects.md).</span><span class="sxs-lookup"><span data-stu-id="d9500-158">For more information, see [Importing JD Edwards OneWorld Schemas into BizTalk Server Projects](../core/importing-jd-edwards-oneworld-schemas-into-biztalk-server-projects.md).</span></span>  
+  
+5.  <span data-ttu-id="d9500-159">Entrez une valeur représentant le nombre d’appels, par exemple 200, dans **nombre maximal d’appels simultanés** si nécessaire.</span><span class="sxs-lookup"><span data-stu-id="d9500-159">Enter a value representing the number of calls, for example 200, in **Max Concurrent Calls** if it is required.</span></span>  
+  
+     <span data-ttu-id="d9500-160">Le `Max Concurrent Calls` paramètre vous permet d’optimiser votre configuration.</span><span class="sxs-lookup"><span data-stu-id="d9500-160">The `Max Concurrent Calls` parameter lets you optimize your configuration.</span></span> <span data-ttu-id="d9500-161">Vous utilisez ce paramètre dans des instances où le débit dépasse les capacités du traitement principal pour activer la protection contre la surcharge du message.</span><span class="sxs-lookup"><span data-stu-id="d9500-161">You use this parameter in instances where the throughput exceeds back-end processing capabilities, to activate message-overload protection.</span></span> <span data-ttu-id="d9500-162">La valeur par défaut est -1, ce qui signifie que les appels sont illimités.</span><span class="sxs-lookup"><span data-stu-id="d9500-162">The default is -1, which means that the calls are unlimited.</span></span>  
+  
+     <span data-ttu-id="d9500-163">Lorsque BizTalk Server envoie des messages à l'adaptateur de transmission, il reçoit tout d'abord un lot de l'adaptateur.</span><span class="sxs-lookup"><span data-stu-id="d9500-163">When BizTalk Server submits messages to the transmit adapter, it first receives a batch from the adapter.</span></span> <span data-ttu-id="d9500-164">Il appelle `TransmitMessage` sur le lot pour transmettre chaque message.</span><span class="sxs-lookup"><span data-stu-id="d9500-164">It invokes `TransmitMessage` on the batch to transmit each message.</span></span> <span data-ttu-id="d9500-165">Ensuite, BizTalk Server appelle `Done` sur le lot et l'adaptateur commence à transmettre les messages au système principal.</span><span class="sxs-lookup"><span data-stu-id="d9500-165">When done, BizTalk Server invokes `Done` on the batch, and the adapter starts transmitting the messages to the back-end.</span></span> <span data-ttu-id="d9500-166">Si BizTalk Server obtient plusieurs lots avant l'appel de `Done`, il ne peut jamais se produire.</span><span class="sxs-lookup"><span data-stu-id="d9500-166">If BizTalk Server obtains multiple batches before invoking `Done`, it might never occur.</span></span> <span data-ttu-id="d9500-167">En définissant le nombre maximal de messages dans un lot, vous pouvez contrôler les messages transmis au système principal.</span><span class="sxs-lookup"><span data-stu-id="d9500-167">By setting the maximum number of messages in a batch, you can control messages to the back-end.</span></span>  
+  
+     <span data-ttu-id="d9500-168">Les modifications apportées au paramètre prennent effet en une minute. BizTalk Server doit récupérer les modifications de la configuration de l'adaptateur enregistrée dans la base de données SQL.</span><span class="sxs-lookup"><span data-stu-id="d9500-168">Changing this parameter takes effect within one minute; BizTalk Server must retrieve the changes to the adapter configuration saved in the SQL database.</span></span>  
+  
+6.  <span data-ttu-id="d9500-169">Sélectionnez **Oui** pour **actualiser l’Agent** pour forcer le processus runtimeagent.exe et browsingagent.exe à redémarrer automatiquement à la demande.</span><span class="sxs-lookup"><span data-stu-id="d9500-169">Select **Yes** for **Refresh Agent** to force the runtimeagent.exe and the browsingagent.exe processes to restart automatically when required.</span></span>  
+  
+     <span data-ttu-id="d9500-170">Par exemple, si vous souhaitez que le processus redémarre automatiquement lors de la perte de la connexion au serveur ou si vous ajoutez un élément au serveur et que celui-ci ne s'affiche pas pour sélection dans l'Assistant Adaptateur Microsoft.</span><span class="sxs-lookup"><span data-stu-id="d9500-170">For example, you want the process to restart automatically if it loses connection with the server, or if you add something to the server and it does not appear in the Microsoft Adapter Wizard for selection.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="d9500-171">Le processus browsingagent.exe n'effectue aucune actualisation jusqu'à ce que vous terminiez la session de navigation en cours.</span><span class="sxs-lookup"><span data-stu-id="d9500-171">The browsingagent.exe does not refresh until you exit the current browsing session.</span></span> <span data-ttu-id="d9500-172">Par exemple, vous devez quitter la **ajouter généré un élément** navigation session et pour actualiser le browsingagent.exe.</span><span class="sxs-lookup"><span data-stu-id="d9500-172">For example, you must exit the **Add generated item** browsing session and reenter to update the browsingagent.exe.</span></span>  
+  
+7.  <span data-ttu-id="d9500-173">Après avoir entré toutes les informations requises, cliquez sur **appliquer**, puis cliquez sur **OK** pour accepter les informations de connexion.</span><span class="sxs-lookup"><span data-stu-id="d9500-173">After providing all required information, click **Apply**, and then click **OK** to accept the connection information.</span></span>  
+  
+     <span data-ttu-id="d9500-174">Vous devez définir des paramètres de connexion de l'adaptateur BizTalk pour JD Edwards OneWorld afin d'accéder à JD Edwards OneWorld.</span><span class="sxs-lookup"><span data-stu-id="d9500-174">You must set connection parameters for BizTalk Adapter for JD Edwards OneWorld to access JD Edwards OneWorld.</span></span>  
+  
+### <a name="adapter-required-properties"></a><span data-ttu-id="d9500-175">Propriétés de la carte requis</span><span class="sxs-lookup"><span data-stu-id="d9500-175">Adapter required properties</span></span>  
+ <span data-ttu-id="d9500-176">Si vous n'avez pas défini de variables d'environnement globales dans le Panneau de configuration, vous pouvez le faire dans cette section.</span><span class="sxs-lookup"><span data-stu-id="d9500-176">If you did not set global environment variables in Control Panel, you can do so in this section.</span></span>  
+  
+|<span data-ttu-id="d9500-177">Paramètre</span><span class="sxs-lookup"><span data-stu-id="d9500-177">Parameter</span></span>|<span data-ttu-id="d9500-178"> Description</span><span class="sxs-lookup"><span data-stu-id="d9500-178">Description</span></span>|  
+|---------------|-----------------|  
+|`Host`|<span data-ttu-id="d9500-179">Tapez le nom du nom d’ordinateur du serveur hôte (par exemple, `actsvr1`) ; ou l’adresse IP de l’ordinateur (par exemple, `123.456.0.789`).</span><span class="sxs-lookup"><span data-stu-id="d9500-179">Type the name of the host server computer name (for example, `actsvr1`); or the IP address of the computer (for example, `123.456.0.789`).</span></span>|  
+|<span data-ttu-id="d9500-180">JAVA_HOME</span><span class="sxs-lookup"><span data-stu-id="d9500-180">JAVA_HOME</span></span>|<span data-ttu-id="d9500-181">Tapez le chemin d'accès complet à votre installation JDK.</span><span class="sxs-lookup"><span data-stu-id="d9500-181">Type the complete path of your JDK installation.</span></span>|  
+|<span data-ttu-id="d9500-182">Environnement JDE Edwards</span><span class="sxs-lookup"><span data-stu-id="d9500-182">JDE Edwards Environment</span></span>|<span data-ttu-id="d9500-183">Tapez le nom d’un environnement de JD Edwards OneWorld, par exemple, `DV7333`.</span><span class="sxs-lookup"><span data-stu-id="d9500-183">Type the name of an environment in JD Edwards OneWorld, for example, `DV7333`.</span></span><br /><br /> <span data-ttu-id="d9500-184">DV7333 correspond à un nom commun d'environnement de développement, PY7333 au nom commun de l'environnement de prototype et PD7333 au nom commun de l'environnement de production.</span><span class="sxs-lookup"><span data-stu-id="d9500-184">DV7333 is a common name for the development environment, PY7333 is common for the prototype environment, and PD7333 is common for the production environment.</span></span>|  
+|<span data-ttu-id="d9500-185">Fichiers JAR JDEdwards</span><span class="sxs-lookup"><span data-stu-id="d9500-185">JDEdwards JAR Files</span></span>|<span data-ttu-id="d9500-186">Entrez le chemin d’accès et le nom complet pour chaque fichier JAR :</span><span class="sxs-lookup"><span data-stu-id="d9500-186">Enter the complete path and file name for each JAR file:</span></span><br /><br /> <span data-ttu-id="d9500-187">-Connector.jar</span><span class="sxs-lookup"><span data-stu-id="d9500-187">-   Connector.jar</span></span><br /><span data-ttu-id="d9500-188">-Kernel.jar</span><span class="sxs-lookup"><span data-stu-id="d9500-188">-   Kernel.jar</span></span><br /><span data-ttu-id="d9500-189">-JDEJAccess.jar</span><span class="sxs-lookup"><span data-stu-id="d9500-189">-   JDEJAccess.jar</span></span><br /><span data-ttu-id="d9500-190">-JDEActionalInterop.jar</span><span class="sxs-lookup"><span data-stu-id="d9500-190">-   JDEActionalInterop.jar</span></span><br /><br /> <span data-ttu-id="d9500-191">Chaque fichier JAR doit être séparé par un point-virgule (;) et ne doit comporter aucun espace.</span><span class="sxs-lookup"><span data-stu-id="d9500-191">Each jar file must be separated with a semi-colon (;) and no space.</span></span> <span data-ttu-id="d9500-192">Exemple :</span><span class="sxs-lookup"><span data-stu-id="d9500-192">For example:</span></span><br /><br /> `<drive>\Connector.jar;<drive>\Kernel.jar;`|  
+|<span data-ttu-id="d9500-193">Mot de passe</span><span class="sxs-lookup"><span data-stu-id="d9500-193">Password</span></span>|<span data-ttu-id="d9500-194">Tapez le mot de passe de l'utilisateur spécifié.</span><span class="sxs-lookup"><span data-stu-id="d9500-194">Type the password of the specified user.</span></span>|  
+|<span data-ttu-id="d9500-195">Port</span><span class="sxs-lookup"><span data-stu-id="d9500-195">Port</span></span>|<span data-ttu-id="d9500-196">Tapez le numéro de port qui échange des données (par exemple, `6009`).</span><span class="sxs-lookup"><span data-stu-id="d9500-196">Type the port number that will exchange data (for example, `6009`).</span></span>|  
+|<span data-ttu-id="d9500-197">Nom d'utilisateur</span><span class="sxs-lookup"><span data-stu-id="d9500-197">User Name</span></span>|<span data-ttu-id="d9500-198">Tapez un nom d'utilisateur JD Edwards OneWorld utilisé pour se connecter au système JD Edwards OneWorld.</span><span class="sxs-lookup"><span data-stu-id="d9500-198">Type a JD Edwards OneWorld user name that will be used to log on to the JD Edwards OneWorld system.</span></span>|  
+
+## <a name="use-the-xmltransmit-and-xmlreceive-pipelines"></a><span data-ttu-id="d9500-199">Utilisez les pipelines XMLTransmit et XMLReceive</span><span class="sxs-lookup"><span data-stu-id="d9500-199">Use the XMLTransmit and XMLReceive pipelines</span></span>
+<span data-ttu-id="d9500-200">L’adaptateur Microsoft BizTalk pour JD Edwards OneWorld requiert que vous sélectionnez XMLTransmit et XMLReceive pour l’envoi et les pipelines de réception.</span><span class="sxs-lookup"><span data-stu-id="d9500-200">Microsoft BizTalk Adapter for JD Edwards OneWorld requires that you select XMLTransmit and XMLReceive for the send and receive pipelines.</span></span>  
+  
+1.  <span data-ttu-id="d9500-201">Dans **Administration de BizTalk Server**, développez **Applications**, puis développez votre application.</span><span class="sxs-lookup"><span data-stu-id="d9500-201">In **BizTalk Server Administration**, expand **Applications**, and then expand your application.</span></span>  
+  
+2.  <span data-ttu-id="d9500-202">Sélectionnez **Ports d’envoi**, avec le bouton droit de votre port d’envoi, puis sélectionnez **propriétés**.</span><span class="sxs-lookup"><span data-stu-id="d9500-202">Select **Send Ports**, right-click your send port, and select **Properties**.</span></span>  
+  
+3.  <span data-ttu-id="d9500-203">Dans le **propriétés des Ports d’envoi**, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="d9500-203">In the **Send Ports Properties**, do the following:</span></span>  
+  
+    1.  <span data-ttu-id="d9500-204">Sélectionnez le pipeline d’envoi à partir de la **Pipeline d’envoi** liste déroulante.</span><span class="sxs-lookup"><span data-stu-id="d9500-204">Select the send pipeline from the **Send Pipeline** drop-down list.</span></span>  
+  
+    2.  <span data-ttu-id="d9500-205">Sélectionnez le pipeline de réception à partir de la **Pipeline de réception** liste déroulante.</span><span class="sxs-lookup"><span data-stu-id="d9500-205">Select the Receive pipeline from the **Receive Pipeline** drop-down list.</span></span>  
+  
+4.  <span data-ttu-id="d9500-206">Sélectionnez **OK**.</span><span class="sxs-lookup"><span data-stu-id="d9500-206">Select **OK**.</span></span>  
+
+## <a name="next-steps"></a><span data-ttu-id="d9500-207">Étapes suivantes</span><span class="sxs-lookup"><span data-stu-id="d9500-207">Next steps</span></span>
+[<span data-ttu-id="d9500-208">Importer des schémas d’adaptateur dans Visual Studio</span><span class="sxs-lookup"><span data-stu-id="d9500-208">Import adapter schemas into Visual Studio</span></span>](importing-jd-edwards-oneworld-schemas-into-biztalk-server-projects.md)  
+[<span data-ttu-id="d9500-209">Utiliser des propriétés de contexte de message</span><span class="sxs-lookup"><span data-stu-id="d9500-209">Use Message Context Properties</span></span>](using-message-context-properties2.md)
