@@ -12,11 +12,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c3d8cadb82cd6233c84566aa6a0bea55d90b08c7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 10ce63081fa3b392df3f900fb6a08ecfc7de4cae
+ms.sourcegitcommit: a0165ec2f1e8b58545638666b7bfa2bf440036fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="configure-the-feature-pack"></a>Configurer le pack de fonctionnalités
 ## <a name="overview"></a>Vue d'ensemble
@@ -25,11 +25,12 @@ ms.lasthandoff: 09/20/2017
 
 > [!NOTE]
 > [!INCLUDE[featurepack1](../includes/featurepack1.md)]est disponible dans les éditions Enterprise et Developer de [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] lorsque : 
-> * Utilisé avec Software Assurance (SA)  
 > 
->     ou
+> - Utilisé avec Software Assurance (SA)  
 > 
-> * En cours d’exécution [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] dans Azure à l’aide d’un contrat entreprise
+>  ou
+> 
+> - En cours d’exécution [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] dans Azure à l’aide d’un contrat entreprise
 > 
 > [!INCLUDE[featurepack1](../includes/featurepack1.md)]n’est pas disponible pour n’importe quel autre [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] Édition ou tout autre [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] version. 
 

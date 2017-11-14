@@ -1,4 +1,7 @@
 ---
+redirect_url: /biztalk/core/feature-pack-add-build-release-definitions/
+redirect_document_id: True
+ROBOTS: NOINDEX
 title: "Configurer Visual Studio Team Services pour déployer des solutions BizTalk Server ou des projets | Documents Microsoft"
 ms.custom: 
 ms.date: 06/08/2017
@@ -12,11 +15,11 @@ caps.latest.revision: "6"
 author: tordgladnordahl
 ms.author: tonordah
 manager: anneta
-ms.openlocfilehash: 6368300c714811d5b3c42e07ebb804d26362bf85
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 95d8e9fc274793471335fc03bc38c82c1b3e3469
+ms.sourcegitcommit: a0165ec2f1e8b58545638666b7bfa2bf440036fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="configure-visual-studio-team-services-to-deploy-biztalk-server-solutions-or-projects"></a>Configurer Visual Studio Team Services pour déployer des solutions BizTalk Server ou des projets
 Configurer VSTS pour déployer automatiquement [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] projets. 
@@ -130,6 +133,3 @@ Ensuite, créez la définition de déploiement d’Application BizTalk Server.
 
 12. Nommez le nouveau **définition**et définissez le chemin d’accès correct. 
 13. Une fois que la définition est enregistrée, sélectionnez **la nouvelle build en file d’attente**. Ensuite, sélectionnez le **agent file d’attente**et ajouter un commentaire à la validation.
-
-## <a name="next-step"></a>Étape suivante
-[Configurer le modèle JSON pour le déploiement automatique](../core/configure-the-json-template-for-automatic-deployment.md)

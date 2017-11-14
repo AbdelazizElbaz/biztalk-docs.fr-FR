@@ -1,7 +1,8 @@
 ---
-title: "Configurer des jetons de l’environnement et les variables pour un déploiement automatique | Documents Microsoft"
+title: "Créer des jetons de l’environnement et des variables | Documents Microsoft »"
+description: "Mettre à jour le fichier de liaison pour utiliser des jetons de l’environnement et créer des variables dans VSTS pour automatiser le déploiement d’applications BizTalk Server"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 11/08/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -10,13 +11,13 @@ ms.topic: article
 ms.assetid: 28bb2d4a-f45c-466d-ba65-0ca8cad0bffd
 caps.latest.revision: "4"
 author: tordgladnordahl
-ms.author: tonordah
+ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7d148f79fceb68b24feb45882ab89767369ed7e6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6d84fa393410e3084c87e762140530a45b0b78b5
+ms.sourcegitcommit: a0165ec2f1e8b58545638666b7bfa2bf440036fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="configure-environmental-tokens-and-variables-for-automatic-deployment"></a>Configurer des jetons de l’environnement et les variables pour un déploiement automatique
 Utiliser des variables Visual Studio Team Services (VSTS) dans votre [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] fichiers de liaison.
@@ -28,42 +29,38 @@ Dans la [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernove
 
 Ces variables sont spécifiques à votre environnement de VSTS et peut être utilisés pour déployer la même application à plusieurs [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] environnements. 
 
-Dans cette rubrique, nous montrons comment ajouter de la variable VSTS dans votre fichier de liaison et la création de la variable dans VSTS. 
+Nous vous montrent comment ajouter la variable VSTS dans votre fichier de liaison et la création de la variable dans VSTS. 
 
-## <a name="configure-the-variables-in-your-biztalk-binding-file"></a>Configurer les variables dans votre fichier de liaison BizTalk
-
-L’exemple suivant fait partie d’un [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] fichier de liaison et montre comment appliquer les jetons.
+## <a name="add-variables-to-the-binding-file"></a>Ajouter des variables dans le fichier de liaison
 
 1. Ouvrez le fichier de liaison d’application :
 
-    ![Pack de fonctionnalités de BizTalk 1 liaison 1](../core/media/biztalk-feature-pack-1-binding-1.png)
+    ![Ouvrez le fichier de liaison](../core/media/biztalk-feature-pack-1-binding-1.png)
 
 2. Recherchez l’élément que vous souhaitez modifier :
 
-    ![Pack de fonctionnalités de BizTalk 1 liaison 2](../core/media/biztalk-feature-pack-1-binding-2.png)
+    ![Sélectionnez l’élément](../core/media/biztalk-feature-pack-1-binding-2.png)
     
 3. Supprimer la valeur par défaut et remplacez-la par vous variables : `$(YourValue)`. Par exemple, entrez `$(SendPort1)`: 
 
-    ![Pack de 1 à 3 de liaison BizTalk](../core/media/biztalk-feature-pack-1-binding-3.png)
+    ![Fichier de liaison](../core/media/biztalk-feature-pack-1-binding-3.png)
 
+4. Lorsque vous avez terminé, enregistrez le fichier de liaison et l’ajouter à votre modèle de génération JSON (étapes de [étape 1 : modèle de .json & mise à jour du projet Ajouter une Application](feature-pack-add-application-project.md)).
 
-4. Lorsque vous avez terminé, enregistrez le fichier de liaison et l’appliquer à votre modèle de génération JSON.
-5. Connectez-vous à votre solution de Service d’équipe Visual Studio, puis sélectionnez **créer et libérer**.
-6. Accédez à **version**. Sélectionnez votre **définition de la version**, ou créez-en un.
-7. Sous **environnements**, sélectionnez **ajouter un nouvel environnement**, ou modifier dans un environnement existant : 
+## <a name="create-the-variables-in-vsts"></a>Créez les variables dans VSTS
 
-    ![Ajouter un nouvel environnement](../core/media/add-a-new-environment.png)
+1. Dans votre compte VSTS, sélectionnez **créer et libérer**, puis sélectionnez **versions**.
 
-8. Cliquez sur le bouton de sélection, puis sélectionnez **configurer les variables**:
+2. Sélectionnez votre **définition de la version**, puis sélectionnez **Variables**:  
 
-    ![configurer les variables](../core/media/configure-variables.png)
+    ![Fichier de liaison](../core/media/vsts-release-variables.png)
 
-9. En ajoutant les variables pour chaque environnement, en utilisant les noms de jeton créés dans le fichier de liaison, vous pouvez déployer vos applications dans plusieurs environnements avec des valeurs différentes :
+3. Sélectionnez **ajouter**et créer les noms de variables et les valeurs :   
 
-    ![variables d’environnement spécifiques](../core/media/environment-specific-variables.png)
-    
-10. Sélectionnez **OK** pour enregistrer les nouvelles variables.
-11. Une fois la build est lancée, les valeurs sont ajoutées à partir du fichier de liaison.
+    ![configurer les variables](../core/media/environment-specific-variables.png)
 
-## <a name="next-step"></a>Étape suivante
-[Ajouter une application BizTalk dans VSTS](../core/add-a-biztalk-server-application-to-visual-studio-team-services.md)
+4. **Enregistrer** vos modifications. Lorsque le déploiement est initialisé, les valeurs sont ajoutées à partir du fichier de liaison.
+
+## <a name="see-also"></a>Voir aussi
+[Configurer le déploiement automatique avec Visual Studio Team Services](configure-automatic-deployment-with-visual-studio-team-services-in-biztalk.md)  
+[Télécharger le Feature Pack](configure-the-feature-pack.md)
