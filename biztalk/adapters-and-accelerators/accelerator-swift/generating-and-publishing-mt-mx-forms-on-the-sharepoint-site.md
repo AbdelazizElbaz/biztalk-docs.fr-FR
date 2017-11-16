@@ -64,7 +64,7 @@ ms.lasthandoff: 09/20/2017
   
     -   Si vous générez des formulaires InfoPath de MT, tapez : **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMTxxx**  
   
-    -   Si vous générez des formulaires InfoPath de MX, tapez : **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMX _\<MessageName >**  
+    -   Si vous générez des formulaires InfoPath de MX, tapez : **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMX_\<MessageName >**  
   
          Cela permet d’identifier l’instance de message par le modèle correspondant.  
   
