@@ -2,7 +2,7 @@
 title: "Étape 1 : ajouter json mise à jour et de projet d’Application | Documents Microsoft"
 description: "Ajouter le projet d’Application BizTalk Server dans Visual Studio et mettre à jour le fichier BizTalkServerInventory.json aux DLL, de fichiers de liaison et de séquence de déploiement de vos applications - Visual Studio Team Services"
 ms.custom: 
-ms.date: 11/08/2017
+ms.date: 11/20/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -11,11 +11,11 @@ ms.topic: article
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 46cb8a2072280e62cd8c3438521531f8cf3b55aa
-ms.sourcegitcommit: a0165ec2f1e8b58545638666b7bfa2bf440036fd
+ms.openlocfilehash: a8d4b9773c9c7b23715b5ddae29c3c97f381da5e
+ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="step-1-add-the-biztalk-server-application-project-in-visual-studio"></a>Étape 1 : Ajouter le projet d’Application BizTalk Server dans Visual Studio
 
@@ -29,7 +29,7 @@ Le projet d’Application BizTalk inclut le `BizTalkServerInventory.json` fichie
 * Avoir le chemin d’accès au fichier de liaison XML à votre projet BizTalk prêt. 
 * Connaître votre compte VSTS, votre collection et détails de votre projet d’équipe.
 * Être familiarisé avec les concepts de git, y compris le clonage et l’utilisation de référentiels. 
-* Veillez [Feature Pack 1](https://www.microsoft.com/download/details.aspx?id=55100) est installé
+* Veillez [Feature Pack 2](https://aka.ms/bts2016fp2) est installé.
 
 ## <a name="add-the-application-project"></a>Ajouter le projet d’application
 
@@ -52,6 +52,9 @@ Le projet d’Application BizTalk inclut le `BizTalkServerInventory.json` fichie
 
     ![Propriétés du fichier de liaison](../core/media/xml-binding-file-properties.png)
 
+8. Ce paramètre est facultatif. Avec le bouton droit de votre projet nouvellement ajouté l’application, puis sélectionnez **propriétés**. Personnaliser le **nom de l’Application** que vous souhaitez afficher dans la console Administration de BizTalk :  
+
+    ![Nom de l'application](../core/media/application-project-name.png)
 
 ## <a name="configure-the-json-template"></a>Configurer le modèle JSON
 
@@ -159,7 +162,7 @@ Une fois terminé, la tâche de déploiement de Service Visual Studio Team honor
 
 ## <a name="what-you-did"></a>Ce que vous avez fait
 
-Dans votre projet BizTalk, vous avez ajouté un projet d’Application de BizTalk (.btaproj). Ce projet est utilisé pour automatiser les déploiements de vos projets BizTalk Server à l’aide de VSTS. Une fois que vous avez créé le projet d’application, vous avez ajouté une référence à votre projet d’application BizTalk. Ensuite, de mise à jour un fichier JSON qui indique le déploiement automatisé, les DLL à déployer, le fichier de liaison à utiliser et la commande pour déployer les applications. 
+Dans votre projet BizTalk, vous avez ajouté un projet d’Application de BizTalk (.btaproj). Ce projet est utilisé pour automatiser les déploiements de vos projets BizTalk Server à l’aide de VSTS. Une fois que vous avez créé le projet d’application, vous avez ajouté une référence à votre projet BizTalk. Ensuite, de mise à jour un fichier JSON qui indique le déploiement automatisé, les DLL à déployer, le fichier de liaison à utiliser et la commande pour déployer les applications. 
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Étape 2 : Créer le jeton VSTS](feature-pack-create-vsts-token.md)  

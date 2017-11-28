@@ -1,8 +1,8 @@
 ---
-title: "Envoyer des données de suivi à Azure Application Insights | Documents Microsoft"
-description: "Installer le feature pack pour permettre l’analytique des données suivies avec Azure Application Insights dans BizTalk Server"
-ms.custom: fp1
-ms.date: 11/06/2017
+title: "Suivre les données à Application Insights ou concentrateurs d’événements | Documents Microsoft"
+description: "Installer le feature pack pour permettre l’analytique des données suivies avec Azure Application Insights ou Azure Event Hubs dans BizTalk Server"
+ms.custom: fp1, fp2
+ms.date: 11/16/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -13,52 +13,67 @@ caps.latest.revision: "10"
 author: tordgladnordahl
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4a65ffd2c5ee76d857effde6ab82dddf17b3de4b
-ms.sourcegitcommit: 30189176c44873e3de42cc5f2b8951da51ffd251
+ms.openlocfilehash: 7a6fe0c50527f51b599bca5f51c7b8ed8fb7313e
+ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/21/2017
 ---
-# <a name="send-tracking-data-to-azure-application-insights-using-biztalk-server"></a>Envoyer des données de suivi à Azure Application Insights à l’aide de BizTalk Server
+# <a name="send-biztalk-tracking-data-to-azure-application-insights-or-event-hubs"></a>Envoyer des données de suivi pour Azure Application Insights ou concentrateurs d’événements de BizTalk
 
-**En commençant par [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] [!INCLUDE[featurepack1](../includes/featurepack1.md)]** , vous pouvez traiter et envoyer vos données de suivi à Azure Application Insights. Utiliser les fonctionnalités de l’Application Insights pour effectuer le suivi de vos instances à partir des orchestrations, ports d’envoi et ports de réception.
+**En commençant par [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] [!INCLUDE[featurepack1](../includes/featurepack1.md)]** , vous pouvez traiter et envoyer vos données de suivi à Azure Application Insights. 
           
-> [!IMPORTANT]
-> Actuellement, cette fonctionnalité ne fonctionne pas avec des Instances nommées de SQL.
+**En commençant par [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] Feature Pack 2**:
+
+* Application Insights prend en charge les instances par défaut SQL et les instances nommées de SQL
+* Vous pouvez traiter et envoyer des données de suivi vers Azure Event Hubs
+
+Utilisez ces services Azure pour effectuer le suivi de vos instances à partir des orchestrations, ports d’envoi et ports de réception.
 
 ## <a name="prerequisites"></a>Conditions préalables
-* Créer une nouvelle instance de [Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-create-new-resource). Dans ses propriétés, copiez la **clé d’Instrumentation**. Collez-le dans un autre fichier afin que vous ayez prêt. Nous utilisons cette clé dans BizTalk Server. 
-* Installer [Feature Pack 1](https://www.microsoft.com/download/details.aspx?id=55100) sur votre[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
+* Créer une nouvelle instance de [Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-create-new-resource). BizTalk Server utilise le **clé d’Instrumentation** pour s’authentifier.
+* Créer un [hub d’espace de noms et événements Azure Event Hubs](https://docs.microsoft.com/azure/event-hubs/event-hubs-create). BizTalk Server utilise le SAS (espace de noms de niveau) ou la stratégie au niveau du concentrateur d’événements pour l’authentification.
+* Installer [Feature Pack 2](https://aka.ms/bts2016fp2) sur votre[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
 
 ## <a name="enable-analytics-for-your-environment"></a>Activer analytique pour votre environnement
 
 1. Ouvrir le **Administration de BizTalk Server** de la console, cliquez sur le **groupe BizTalk**, puis sélectionnez **paramètres**. 
 2. Vérifiez **activer au niveau du groupe analytique**.
-3. Pour le **type cible**, sélectionnez **Application Insight** dans la liste.
-4. Pour le **les paramètres de connexion**, entrez votre Application Insights  **[clé d’instrumentation](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-create-new-resource)**  (disponible dans le portail Azure). Paramètres de votre groupe se présenter comme suit : 
-
+3. Pour le **type cible**, sélectionnez **Application Insight** ou **concentrateur d’événements** dans la liste.
     ![Activer analytique pour votre environnement](../core/media/environmentsettingapplicationinishgt.PNG)
+
+4. Pour le **les paramètres de connexion**, sélectionnez le **...**  bouton, et **connexion** à votre compte Azure.  
+
+    **Pour Application Insights**  
+    Sélectionnez votre **abonnement**, **groupe de ressources**et l’instance de votre Application Insights.
+
+    ![Activer analytique pour votre environnement](../core/media/analytics-group-application-insights.png)
+
+    **Pour le concentrateur d’événements**  
+    Sélectionnez votre **abonnement**, **groupe de ressources**, espace de noms de concentrateur d’événements et concentrateur d’événements. Pour l’authentification, vous pouvez utiliser une signature d’accès (SAS) sur le niveau de l’espace de noms, ou la signature d’entité à l’événement au niveau du concentrateur. Vos clés disponibles sont remplis automatiquement avec les valeurs précédemment configurées dans [Azure](https://portal.azure.com).
+
+    ![Activer analytique pour votre environnement](../core/media/send-tracking-data-to-azure.png)
 
 5. Sélectionnez **OK** pour enregistrer vos modifications. 
 
-Une fois activé, [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] est prêt à transmettre des données à Application Insights. Ensuite, activez l’analytique sur vos orchestrations et les ports. 
+Une fois activé, [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] est prêt à transmettre des données à vos ressources Azure. Ensuite, activez l’analytique sur vos orchestrations et les ports. 
 
 ## <a name="enable-analytics-on-your-artifacts"></a>Activer l’analytique sur vos artefacts
 
 1. Dans la console Administration de BizTalk Server, cliquez sur un **port de réception**, **port d’envoi** ou **orchestration**, puis sélectionnez **suivi**.
-2. Sous **Analytique**, vérifiez **activer l’Analytique**, semblable au suivant. Ce paramètre lance le suivi et la transmission de données à partir de l’artefact à Application Insights.
+2. Sous **Analytique**, vérifiez **activer l’Analytique**, semblable au suivant. Ce paramètre lance le suivi et la transmission de données à partir de l’artefact à vos ressources Azure.
     
     ![Données de suivi pour l’Orchestration](../core/media/orchestrationsettingsapplicationinsight.PNG)
 
 3. Sélectionnez **OK** pour enregistrer vos modifications.
 4. Redémarrez l’Instance d’hôte de suivi et confirmer le que démarrage de l’Application BizTalk.
 
-Ensuite, exécutez les requêtes dans Application Insights pour afficher vos données.  
-
 > [!TIP]
 > Se connecter à votre Analytique du serveur BizTalk avec les autres systèmes pour avoir une idée davantage de données de votre organisation.
 
 ## <a name="view-your-data"></a>Afficher vos données
+
+#### <a name="use-application-insights"></a>Utilisez Application Insights
 Une fois que les données sont envoyées à Application Insights, vous pouvez utiliser les outils d’analytique dans Azure pour créer des requêtes avancées et analyser vos données.
 
 1. Se connecter à la [portail Azure](https://portal.azure.com).
@@ -72,9 +87,14 @@ Une fois que les données sont envoyées à Application Insights, vous pouvez ut
 > [!TIP]
 > Azure Application Insights est un outil puissant. Il existe des ressources pour vous aider à écrire des requêtes dans Application Insights à [Analytique dans Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-analytics)et même de commencer à utiliser [Nouveautés d’Application Insights ?](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-overview).
 
+#### <a name="use-event-hubs"></a>Utiliser des concentrateurs d’événements
+Une fois que les données sont envoyées à des concentrateurs d’événements, il existe deux manières d’afficher les données. De nombreux utilisateurs de concentrateurs d’événements sont à l’aide de capturer des concentrateurs d’événements pour charger des données de diffusion en continu dans Azure. Le but est pour vous concentrer sur le traitement des données, plutôt que sur la capture de données. [Capturer des concentrateurs d’événements](https://docs.microsoft.com/azure/event-hubs/event-hubs-capture-overview) explique comment il fonctionne et comment la configurer.
+
+Une autre option consiste à créer un port de réception et un emplacement de réception à l’aide de l’adaptateur de concentrateur d’événements. Ensuite, vous pouvez exporter les données dans un dossier. Cette idée est préférable si vous souhaitez tester le scénario. [Adaptateur de concentrateurs d’événements](event-hubs-adapter.md) présente les étapes permettant de recevoir des messages dans BizTalk Server à partir de concentrateurs d’événements.
+
 ## <a name="where-the-data-is-stored"></a>Où les données sont stockées.
 
-Vos données de suivi doivent s’afficher assez rapidement (dans quelques minutes) au sein de l’Application Insights. Si ce n’est pas le cas, il peut y être un problème avec l’hôte de suivi. Dans SQL Server, les données Analytique sont stockées dans la base de données BizTalkMsgBoxDb, dans le TrackingData_2_*x* tables. Dans SQL Server Management Studio, retourner les 1000 lignes du haut sur ces quatre tables. Si les données, l’hôte de suivi ne bouge pas les données de la base de données BizTalkDTADb. 
+Vos données de suivi doivent s’afficher assez rapidement (dans quelques minutes) au sein de vos ressources Azure. Si ce n’est pas le cas, il peut y être un problème avec l’hôte de suivi. Dans SQL Server, les données Analytique sont stockées dans la base de données BizTalkMsgBoxDb, dans le TrackingData_2_*x* tables. Dans SQL Server Management Studio, retourner les 1000 lignes du haut sur ces quatre tables. Si les données, l’hôte de suivi ne bouge pas les données de la base de données BizTalkDTADb. 
 
 Certaines solutions possibles :
 
@@ -88,4 +108,4 @@ Certaines solutions possibles :
 À présent, interroger les tables BizTalkMsgBoxDb TrackingData_2_x à nouveau. Si les tables sont vides, les données a été déplacées et il doivent commencer à afficher dans Application Insights.
     
 ## <a name="see-also"></a>Voir aussi
- [Configurer le Pack de fonctionnalités](../core/configure-the-feature-pack.md)
+ [Installer et configurer le Pack de fonctionnalités](../core/configure-the-feature-pack.md)

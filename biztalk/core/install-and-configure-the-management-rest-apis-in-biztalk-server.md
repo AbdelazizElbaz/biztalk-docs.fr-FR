@@ -13,11 +13,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e05b122047d7e303ed4e187fec19725cce9ae398
-ms.sourcegitcommit: 30189176c44873e3de42cc5f2b8951da51ffd251
+ms.openlocfilehash: c207b0aca5f2673e615167f75f7f1c7c3fb0e042
+ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="install-and-configure-the-management-rest-apis-in-biztalk-server"></a>Installer et configurer l’API REST de gestion dans BizTalk Server
 
@@ -27,7 +27,7 @@ API de données de gestion est des points de terminaison qui vous permettent de 
 **En commençant par [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] [!INCLUDE[featurepack1](../includes/featurepack1.md)]** , il existe un script Windows PowerShell qui installe ces API REST et leurs définitions swagger. Ces API effectuer des appels REST pour gérer à distance des ports, orchestrations, partenaires, accords, pipelines et bien plus encore. 
 
 ## <a name="prerequisites"></a>Conditions préalables
-* Installer [Feature Pack 1](https://www.microsoft.com/download/details.aspx?id=55100) sur votre[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
+* Installer [Feature Pack 2](https://aka.ms/bts2016fp2) sur votre[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
 
 * Installer IIS sur le [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]. Dans la plupart des [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] environnements, IIS est déjà installé. Consultez [matérielle et logicielle requise pour BizTalk Server 2016](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md). Vérifier IIS est installé sur le serveur BizTalk en ouvrant **Gestionnaire des Services Internet**. 
 

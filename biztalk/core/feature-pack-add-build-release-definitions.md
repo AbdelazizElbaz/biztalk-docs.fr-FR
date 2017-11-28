@@ -2,7 +2,7 @@
 title: "Étape 3 : créer les définitions de build et de version | Documents Microsoft"
 description: "Dans VSTS, créez une définition de build pour générer les projets de votre git ou le référentiel TFS, puis créer une définition de mise en production pour déployer l’application BizTalk Server"
 ms.custom: 
-ms.date: 11/08/2017
+ms.date: 11/20/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -11,15 +11,18 @@ ms.topic: article
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: de86d35fd615d8c0f1eee1127804645067c4bf6e
-ms.sourcegitcommit: a0165ec2f1e8b58545638666b7bfa2bf440036fd
+ms.openlocfilehash: 5ce84071fbc105fd9faddd794792273aae2e76b9
+ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="step-3-create-the-build-and-release-definition"></a>Étape 3 : Créer la version et définition de version
 
 Les définitions de build et de mise en production sont des tâches de Visual Studio Team Services et probablement doivent être effectuées que par un administrateur de VSTS. La définition de build génère votre projet au sein de votre référentiel git et les définitions de mise en production déploie sur votre environnement BizTalk Server. 
+
+## <a name="before-you-begin"></a>Avant de commencer
+Complète [étape 2 : jeton de VSTS de créer et installer l’agent](feature-pack-create-vsts-token.md).
 
 ## <a name="add-the-build-tasks"></a>Ajouter les tâches de génération
 1. Dans votre projet, sélectionnez **créer et libérer**. L’onglet de Builds s’ouvre. Créer un **nouveau** définition :
@@ -88,7 +91,11 @@ Lorsque la build réussit, la définition de la mise en production déploie votr
 
 7. Sélectionnez le **déployer** , entrez les valeurs et de la tâche : 
 
-    **Nom de l’opération**: sélectionnez **créer la nouvelle Application BizTalk**. Cette option déploie une nouvelle application. Si l’application existe déjà, il désinstalle les applications actuelles (point) et installe la nouvelle application. Si l’intégration continue est activée, elle automatiquement redéploie l’application lorsqu’elle est mise à jour dans le référentiel. **Mettre à jour une Application BizTalk existante** ajoute des modifications, tels que des schémas à une application déjà en cours d’exécution. Il ne nécessite pas un redéploiement complet de l’application.
+    **Nom de l’opération**: les options disponibles : * **créer la nouvelle Application BizTalk**: déploie une nouvelle application. Si l’application existe déjà, il désinstalle les applications actuelles (point) et installe la nouvelle application. Si l’intégration continue est activée, elle automatiquement redéploie l’application lorsqu’elle est mise à jour dans le référentiel. 
+        * **Mettre à jour une Application BizTalk existante**: ajoute des modifications, tels que des schémas à une application déjà en cours d’exécution. Il ne nécessite pas un redéploiement complet de l’application.
+        * **Installer l’Application BizTalk Server**: [installer les applications](../core/how-to-install-a-biztalk-application.md), et que vous entrez le nom d’ordinateur de gestion BizTalk et le chemin d’accès du package de déploiement.
+
+        ![Deploy operations](../core/media/vsts-deploy-operations.png)
 
     **Nom de l’application**: le texte que vous entrez sera le nom de l’application dans l’Administration de BizTalk. Faire **pas** Entrez BizTalk Application 1.
 

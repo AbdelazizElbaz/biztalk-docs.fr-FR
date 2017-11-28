@@ -1,28 +1,25 @@
 ---
-title: "Quel &#39; s nouveauté de BizTalk Accelerator pour HL7 | Documents Microsoft"
+title: "Nouveauté de BizTalk Accelerator pour HL7 | Documents Microsoft"
+description: "Modifications et mises à jour avec différentes versions de l’accélérateur HL7 dans BizTalk Server"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 11/22/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- what's new
-- BizTalk Accelerator for HL7, what's new
-- getting started, what's new
 ms.assetid: e98595a1-2d1e-488e-8a97-7cd561948b3b
 caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c350ef616acf61cab7910c5381cca02d68c919f5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 507f2c3561747d9abb3ad3f1bfbd86c4738fbefd
+ms.sourcegitcommit: f4c0d7bc4b617688c643101a34062db90014851a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/23/2017
 ---
-# <a name="what39s-new-in-biztalk-accelerator-for-hl7"></a>Quel &#39; s nouveauté de BizTalk Accelerator pour HL7
+# <a name="whats-new-in-biztalk-accelerator-for-hl7"></a>Nouveautés de BizTalk Accelerator pour HL7
 Modifications et mises à jour avec le [!INCLUDE[HL7_CurrentVersion_FirstRef_md](../../includes/hl7-currentversion-firstref-md.md)]. 
 
 ## <a name="biztalk-server-2016"></a>BizTalk Server 2016

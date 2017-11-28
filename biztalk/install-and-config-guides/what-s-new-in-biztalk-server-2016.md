@@ -1,8 +1,9 @@
 ---
-title: "Quel &#39; nouveauté dans BizTalk Server 2016 | Documents Microsoft"
+title: "Nouveautés de BizTalk Server 2016 | Documents Microsoft"
+description: "Modifications et des améliorations, y compris les packs de fonctionnalités, cartes, sécurité, le suivi, performances, etc. dans BizTalk Server 2016"
 ms.custom: 
 ms.prod: biztalk-server
-ms.date: 06/08/2017
+ms.date: 11/15/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -12,22 +13,23 @@ caps.latest.revision: "28"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0f4b4b9d7f06bb74e0270d8d1bb232067c37ef12
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fa8e28b3c54afd130176e9bb19b2e0b1a59415d0
+ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/21/2017
 ---
-# <a name="what39s-new-in-biztalk-server-2016"></a>Quel &#39; nouveauté dans BizTalk Server 2016
+# <a name="whats-new-in-biztalk-server-2016"></a>Nouveautés de BizTalk Server 2016
 Découvrez les nouveautés introduites dans [!INCLUDE[bts2016](../includes/bts2016-md.md)]. 
   
-## <a name="whats-new-in-biztalk-server-2016"></a>Nouveautés de BizTalk Server 2016  
+## <a name="new-in-biztalk-server-2016"></a>Nouveauté de BizTalk Server 2016  
   
 |Fonctionnalité|Description|  
 |-------------|-----------------|  
 |Prise en charge de plateformes plus récentes|[!INCLUDE[bts2016](../includes/bts2016-md.md)] intègre la prise en charge des plateformes Microsoft suivantes :<br /><br /> -   Visual Studio 2015<br />-   Windows Server 2016<br />-   [!INCLUDE[sqlserver2016](../includes/sqlserver2016-md.md)]<br />-   Office 2016<br/><br/>[Configurations logicielle et matérielle pour BizTalk Server 2016](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md)|  
+| Feature Pack 2 | Améliorations apportées incluent une intégration plus étroite avec la gestion des API, un adaptateur de concentrateurs d’événements Azure, la sauvegarde pour le compte de stockage d’objets blob Azure, la prise en charge pour les partitions de Service Bus et bien plus encore. <br/><br/>[Installer le Feature Pack](https://www.microsoft.com/download/details.aspx?id=55100)<br/>[Consultez ce qui est inclus et configurer ses fonctionnalités](../core/configure-the-feature-pack.md) |
 | Feature Pack 1 | Prend en charge le déploiement automatique à l’aide de VSTS, l’envoi des données de suivi à Azure Application Insights et Power BI, les options de planification avancées sur les emplacements récepteurs, et plus encore.<br/><br/>[Installer le Feature Pack](https://www.microsoft.com/download/details.aspx?id=55100)<br/>[Consultez ce qui est inclus et configurer ses fonctionnalités](../core/configure-the-feature-pack.md) |
-|Groupes de disponibilité AlwaysOn de [!INCLUDE[sqlserver2016](../includes/sqlserver2016-md.md)]|La prise en charge inclut :<br /><br /> -   Une utilisation sur site et sur des machines virtuelles [!INCLUDE[winazure](../includes/winazure-md.md)] IaaS<br />-   Une utilisation pour des charges de travail de production<br />-   Une solution hautement disponible dans [!INCLUDE[winazure](../includes/winazure-md.md)] <br/><br/>[Haute disponibilité à l’aide de SQL Server AlwaysOn](../core/high-availability-using-sql-server-always-on-availability-groups.md)<br/><br/> Consultez les [transactions distribuées pour Always On AG](https://msdn.microsoft.com/library/ms366279.aspx) (dans la documentation de SQL Server) pour connaître toutes les fonctionnalités et exigences propres à SQL.|  
+|Groupes de disponibilité AlwaysOn de [!INCLUDE[sqlserver2016](../includes/sqlserver2016-md.md)]|La prise en charge inclut :<br /><br /> -   Une utilisation sur site et sur des machines virtuelles [!INCLUDE[winazure](../includes/winazure-md.md)] IaaS<br />-   Une utilisation pour des charges de travail de production<br />-   Une solution hautement disponible dans [!INCLUDE[winazure](../includes/winazure-md.md)] <br/><br/>[Haute disponibilité à l’aide de SQL Server AlwaysOn](../core/high-availability-using-sql-server-always-on-availability-groups.md)<br/><br/> Consultez [des transactions distribuées pour toujours AG](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/transactions-always-on-availability-and-database-mirroring) pour toutes les fonctionnalités et des exigences spécifiques de SQL.|  
 |Machines virtuelles Azure [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] en production|Les machines virtuelles Azure [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] sont désormais totalement prises en charge pour les environnements de production. L’utilisation de [!INCLUDE[sqlserver2016](../includes/sqlserver2016-md.md)] AlwaysOn, solution hautement disponible, est désormais possible.<br/><br/>[Haute disponibilité à l’aide de SQL Server AlwaysOn](../core/high-availability-using-sql-server-always-on-availability-groups.md)|  
 |Adaptateur d’applications logiques|Connectez-vous à vos applications logiques hébergées dans Azure et accédez à tous les connecteurs, notamment Salesforce, SharePoint, CRM Online, etc. Par exemple, vous pouvez recevoir une commande dans BizTalk Server, vous connecter à votre application logique et mettre à jour Salesforce.<br/><br/>[Adaptateur d’applications logiques](../core/logic-app-adapter.md)|  
 | Adaptateur de fichier | Connectez-vous à un partage de fichiers de stockage Azure. Vous pouvez recevoir des fichiers du partage de fichiers Azure et envoyer des messages à un partage de fichiers Azure. <br/><br/>[Configurer l’adaptateur de fichier](../core/configure-the-file-adapter.md)|
@@ -44,7 +46,7 @@ Découvrez les nouveautés introduites dans [!INCLUDE[bts2016](../includes/bts20
 |Administration de BizTalk|Outre une apparence plus moderne, d’autres modifications ont été apportées :<br /><br /> -   Configuration simultanée des paramètres de plusieurs hôtes/instances d’hôte. Par exemple, vous pouvez définir les paramètres .NET CLR pour plusieurs instances d’hôte simultanément.<br />-   Utilisez la nouvelle fonctionnalité de recherche pour filtrer et rechercher des artefacts dans votre application, tels que des schémas, des ressources, etc.<br />-   Lors de la résolution de problèmes liés à des messages suspendus, vous pouvez enregistrer simultanément plusieurs messages suspendus dans un fichier.<br /><br />[Utilisation de la console Administration de BizTalk Server](../core/using-the-biztalk-server-administration-console.md)|  
 |Mises à jour supplémentaires|<ul><li>Le [!INCLUDE[HL7_CurrentVersion_FirstRef_md](../includes/hl7-currentversion-firstref-md.md)] démarre la connexion à un serveur métier (LOB) et transmet les messages en mode push par le biais de la connexion. Le serveur métier attend la connexion, puis envoie les messages. <br/><br/>Dans les précédentes versions de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], l'adaptateur de réception MLLP HL7 attend que le serveur métier se connecte à HL7, puis envoie des messages. Le serveur métier se connecte à HL7, puis envoie des messages. </li><br/><li>Office Web Components (OWC) est désormais facultatif dans l’installation et répertorié séparément dans les programmes</li><br/><li>L’ID d’instance d’orchestration est ajoutée à la sortie de trace XLANG FireEvent</li></ul>|   
   
-### <a name="deprecated--removed-list"></a>Liste des fonctionnalités dépréciées ou supprimées  
+## <a name="deprecated--removed-list"></a>Liste des fonctionnalités dépréciées ou supprimées  
   
 |Programme|État|Remplacement|  
 |-------------|------------|-----------------|  
@@ -58,5 +60,10 @@ Découvrez les nouveautés introduites dans [!INCLUDE[bts2016](../includes/bts20
 > [!IMPORTANT]
 >  Certaines de ces fonctionnalités déconseillées peuvent apparaître dans les versions plus récentes de BizTalk. Dans ces scénarios, considérez les points suivants :  
 >   
->  -   La fonctionnalité est peut-être utilisée en interne dans BizTalk et n'est pas destinée à être utilisée par les solutions des clients. Elle n'est pas prise en charge dans les solutions des clients.  
-> -   Les interfaces ont peut-être été modifiées par Microsoft et ne sont peut-être pas publiquement disponibles.
+> -   La fonctionnalité peut être utilisée en interne dans BizTalk et n’est pas destinée à être utilisée par les solutions des clients. Elle n'est pas prise en charge dans les solutions des clients.  
+> -   Les interfaces ont peut-être été modifiées par Microsoft et ne peuvent pas être publiquement disponibles.
+
+## <a name="next-steps"></a>Étapes suivantes
+[Configuration requise du matériel et logiciel](hardware-and-software-requirements-for-biztalk-server-2016.md)  
+[Le programme d’installation et installez les composants requis](set-up-and-install-prerequisites-for-biztalk-server-2016.md)  
+[Installer BizTalk](install-biztalk-server-2016.md)

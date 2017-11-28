@@ -1,7 +1,7 @@
 ---
 title: "Configurer le fuseau horaire et la planification de périodicité dans BizTalk Server | Documents Microsoft"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 11/20/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -9,14 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: d60ae7be-747e-4034-8b99-46bd7e25fe67
 caps.latest.revision: "5"
-author: tordgladnordahl
-ms.author: tonordah
+author: MandiOhlinger
+ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 918d12e2dc96723327f4d0b0d2b0f0d435d6e42e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1ab4cd85af0d15d7b089b106dc33aa77f1a10639
+ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="configure-the-time-zone-and-recurrence-scheduling-in-biztalk-server"></a>Configurer le fuseau horaire et la planification de périodicité dans BizTalk Server
 Le fuseau horaire et configurez une planification périodique sur vos emplacements de réception dans [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]. 
@@ -26,7 +26,7 @@ Le fuseau horaire et configurez une planification périodique sur vos emplacemen
 Cette rubrique vous montre comment configurer ces fonctionnalités.
 
 ## <a name="prerequisites"></a>Conditions préalables
-Installer [Feature Pack 1](https://www.microsoft.com/download/details.aspx?id=55100) sur votre [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)].
+Installer [Feature Pack 2](https://aka.ms/bts2016fp2) sur votre [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)].
 
 ## <a name="time-zone"></a>Fuseau horaire
 

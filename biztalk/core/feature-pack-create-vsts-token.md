@@ -2,7 +2,7 @@
 title: "Étape 2 : créer un jeton VSTS et installer l’agent | Documents Microsoft"
 description: "Créer le clone de jeton, l’accès de sécurité VSTS à votre projet VSTS dans Visual Studio et installez l’agent de build pour automatiser le déploiement de vos projets BizTalk Server"
 ms.custom: 
-ms.date: 11/08/2017
+ms.date: 11/20/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -11,11 +11,11 @@ ms.topic: article
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 46047f0bb6a536642d503d68bb4f9161ecdf7fc5
-ms.sourcegitcommit: a0165ec2f1e8b58545638666b7bfa2bf440036fd
+ms.openlocfilehash: 77296d9f2325bebaba4f4fa1ce7c55034ef1ead6
+ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="step-2-create-the-token--install-the-agent"></a>Étape 2 : Créer le jeton et installer l’agent
 
@@ -24,6 +24,9 @@ Un jeton d’accès personnel (PAT) est créé dans Visual Studio Team Services.
 Plus d’informations sur PAT à [authentifier l’accès avec des jetons d’accès personnels pour VSTS et TFS](https://docs.microsoft.com/vsts/accounts/use-personal-access-tokens-to-authenticate). 
 
 Après avoir créé le jeton, vous installez l’agent de build et configurez pour utiliser ce jeton. 
+
+## <a name="before-you-begin"></a>Avant de commencer
+Complète [l’étape 1 - projet d’ajouter une Application et de mettre à jour de json](feature-pack-add-application-project.md).
 
 ## <a name="sign-into-vsts-and-create-the-token"></a>Se connecter dans VSTS et créer le jeton
 1. Accédez à [https://app.vsaex.visualstudio.com/go/profile](https://app.vsaex.visualstudio.com/go/profile)et connectez-vous avec votre compte professionnel ou scolaire. Une fois que vous vous connectez, votre compte VSTS est répertorié. Dans l’exemple suivant, le compte est **mandiaprojects.visualstudio.com**.  
@@ -61,7 +64,7 @@ Après avoir créé le jeton, vous installez l’agent de build et configurez po
 
 ## <a name="install-the-build-agent"></a>Installer l’Agent de Build
 
-L’agent de build est installé sur l’ordinateur de développement de BizTalk. 
+L’agent de build est installé sur l’ordinateur de développement de BizTalk. Si vous utilisez des groupes de déploiement, l’agent de build est installé sur tous les serveurs BizTalk que vous voulez procéder au déploiement. Les étapes suivantes vous montrent comment installer l’agent de build sur un ordinateur unique. Pour plus d’informations sur l’utilisation de groupes de déploiement, consultez [groupes de déploiement](https://docs.microsoft.com/vsts/build-release/concepts/definitions/release/deployment-groups/index).
 
 1. Ouvrez votre compte VSTS et le projet, qui est un élément comme *https://YourAccountName.visualstudio.com/MyFirstProject*. Sélectionnez l’icône des paramètres, puis sélectionnez **files d’attente de l’Agent**:  
 

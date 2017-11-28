@@ -1,7 +1,8 @@
 ---
-title: Adaptateur SB-Messaging | Documents Microsoft
+title: Adaptateur de messagerie Service Bus | Documents Microsoft
+description: "Envoyer et recevoir des messages à l’aide de l’adaptateur Azure SB-Messaging dans BizTalk Server"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 11/21/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -12,17 +13,24 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2fb2eb8f532d72708dfca199f0eef794afdf77df
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1775606a911d8ce23fd2999ad367053c4f8f72de
+ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="sb-messaging-adapter"></a>Adaptateur SB-Messaging
-Le Bus de Service (**SB-Messaging**) carte est utilisée pour recevoir et envoyer des entités Service Bus, comme les files d’attente, rubriques et les relais. Vous pouvez utiliser la **SB-Messaging** pour établir la connectivité entre les cartes [!INCLUDE[winazure](../includes/winazure-md.md)] et locales [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], ce qui permettant aux utilisateurs de créer une application hybride typique. Les rubriques de cette section fournissent des instructions sur la façon de configurer un **SB-Messaging** emplacement de réception et un port d’envoi pour recevoir et envoyer des messages à partir des entités Service Bus.  
+Le Bus de Service (**SB-Messaging**) carte est utilisée pour recevoir et envoyer des entités Service Bus, comme les files d’attente, rubriques et les relais. Vous pouvez utiliser la **SB-Messaging** adaptateur pour se connecter à votre site [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] vers Azure.
 
-## <a name="before-you-get-started"></a>Avant de commencer
-Service Bus fournit deux méthodes d’authentification : Service de contrôle d’accès (ACS) et la Signature d’accès partagé (SAS). Notre recommandation est d’utiliser la Signature d’accès partagé (SAS) lors de l’authentification avec Service Bus. La valeur de clé d’accès partagé est répertoriée dans le [portail Azure](https://portal.azure.com).
+**En commençant par [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] Feature Pack 2**, Service Bus Premium est prise en charge. Lorsque vous configurez un port d’envoi à l’aide de cette carte, vous pouvez envoyer des messages vers des rubriques et files d’attente partitionnées. 
+
+## <a name="authenticating-with-service-bus"></a>L’authentification avec Service Bus
+Service Bus fournit deux méthodes d’authentification : 
+
+- Service de contrôle d’accès (ACS) 
+- Signature d’accès partagé (SAS)
+
+Nous vous recommandons de s’authentifier auprès de Service Bus à l’aide de la Signature d’accès partagé (SAS). La valeur de clé d’accès partagé est répertoriée dans le [portail Azure](https://portal.azure.com).
 
 Lorsque vous créez un espace de noms Service Bus, l’espace de noms Access Control (ACS) n’est pas créé automatiquement. Pour utiliser le contrôle d’accès, vous devez les valeurs de nom de l’émetteur et la clé de l’émetteur de cet espace de noms. Ces valeurs sont disponibles lorsque vous créez un nouvel espace de noms ACS à l’aide de Windows PowerShell. Ces valeurs ne sont pas répertoriées dans le portail Azure.
 
@@ -49,25 +57,20 @@ Pour utiliser des services ACS pour l’authentification et obtenir les valeurs 
     ConnectionString      : Endpoint=sb://biztalksbnamespace.servicebus.windows.net/;SharedSecretIssuer=owner;SharedSecretValue=abcdefghijklmnopqrstuvwxyz
     NamespaceType         : Messaging
     ```
-[Nouveau-AzureSBNamespace](https://msdn.microsoft.com/library/dn495165.aspx)
+
+Consultez [New-AzureSBNamespace](https://docs.microsoft.com/powershell/module/Azure/New-AzureSBNamespace) pour obtenir des conseils.
 
 ## <a name="receive-messages-from-service-bus"></a>Recevoir des messages de Service Bus
   
-Cette section fournit des informations sur la façon de configurer un **SB-Messaging** à l’aide de l’emplacement de réception le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Console d’Administration.  
-  
-> [!NOTE]
->  Avant d’exécuter la procédure suivante, vous devez avoir déjà ajouté un unidirectionnel port de réception. Consultez [la création d’un port de réception](../core/how-to-create-a-receive-port.md).  
+1. Dans la console Administration de BizTalk Server, développez **groupe BizTalk**, développez **Applications**, puis développez votre application. 
 
- 
-1.  Dans la console Administration de BizTalk Server, développez [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], développez **groupe BizTalk**, développez **Applications**, puis développez l’application sous laquelle créer un emplacement de réception.  
+2. Avec le bouton droit **Ports de réception**, sélectionnez **nouveau**, puis sélectionnez **unidirectionnel port de réception**. 
+
+3. Donnez-lui un nom, puis sélectionnez **emplacements de réception**. 
+
+4. Sélectionnez **nouveau**, lui donner un **nom**. Dans le **Transport** section, sélectionnez **SB-Messaging** à partir de la **Type** liste déroulante et sélectionnez **configurer**.  
   
-2.  Dans le volet gauche, cliquez sur le nœud **Ports de réception** . Dans le volet droit, cliquez avec le bouton droit sur le port de réception auquel vous souhaitez associer le nouvel emplacement de réception, puis cliquez sur **Propriétés**.  
-  
-3.  Dans le volet gauche de la boîte de dialogue **Propriétés des ports de réception** , sélectionnez **Emplacements de réception**, puis dans le volet droit, cliquez sur **Nouveau** pour créer un emplacement de réception.  
-  
-4.  Dans le **propriétés de l’emplacement de réception** boîte de dialogue le **Transport** section, sélectionnez **SB-Messaging** à partir de la **Type** liste déroulante , puis cliquez sur **configurer** pour configurer les propriétés de transport pour l’emplacement de réception.  
-  
-5.  Dans le **propriétés du Transport SB-Messaging** boîte de dialogue le **général** onglet, procédez comme suit :  
+5. Configurer le **général** propriétés :  
   
     |Utiliser|Pour effectuer cette opération|  
     |--------------|----------------|  
@@ -78,27 +81,28 @@ Cette section fournit des informations sur la façon de configurer un **SB-Messa
     |**Nombre de prérécupérations**|Spécifie le nombre de messages reçus simultanément en provenance de la file d’attente Service Bus ou d’une rubrique. Le préchargement permet au client de la file d’attente ou de l’abonnement de charger des messages supplémentaires à partir du service lorsque celui-ci effectue une opération de réception. Le client stocke ces messages dans un cache local. La taille du cache est déterminée par la valeur spécifiée ici pour la propriété Nombre de préchargements.<br /><br /> Pour plus d’informations, reportez-vous à la section « Préchargement » à [https://azure.microsoft.com/documentation/articles/service-bus-performance-improvements/](https://azure.microsoft.com/documentation/articles/service-bus-performance-improvements/)<br /><br /> **Valeur par défaut :** -1|  
     |**Utiliser la Session**|Activer cette case à cocher pour utiliser une session Service Bus afin de recevoir des messages en provenance d’une file d’attente ou d’un abonnement.|  
   
-6.  Dans le **authentification** onglet, procédez comme suit :  
+6.  Configurer le **authentification** propriétés :  
   
     |Utiliser|Pour effectuer cette opération|  
     |--------------|----------------|  
     |**Service de contrôle d’accès**|Sélectionnez cette option afin d'utiliser ACS pour l'authentification et fournir les valeurs suivantes :<br /><br /> -Entrez l’URI STS du Service de contrôle Service Bus accès. En règle générale, l’URI est au format suivant :<br /><br /> `https://<namespace>-sb.accesscontrol.windows.net/`<br /><br /> -Entrez le nom de l’émetteur pour l’espace de noms Service Bus.<br /><br /> -Entrez la clé de l’émetteur pour l’espace de noms Service Bus.|  
     |**Signature d’accès partagé** (new compter [!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)])|Sélectionnez cette option pour utiliser la signature d'accès partagé (SAP) pour l'authentification, et fournissez la valeur de clé et le nom de clé SAS.|  
   
-7.  Dans le **propriétés** sous l’onglet du **Namespace pour les propriétés du Message réparti** Indiquez l’espace de noms que l’adaptateur utilise pour écrire les propriétés de message réparti en tant que propriétés de contexte de message sur le message reçu par [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. En outre, si vous souhaitez promouvoir les propriétés de message réparti, sélectionnez le **promouvoir les propriétés de Message réparti** case à cocher.  
+7.  Dans le **propriétés** sous l’onglet du **Namespace pour les propriétés du Message réparti**, entrez l’espace de noms que l’adaptateur utilise pour écrire les propriétés de message réparti en tant que propriétés de contexte de message sur le message reçu par [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Si vous souhaitez promouvoir les propriétés de message réparti, sélectionnez le **promouvoir les propriétés de Message réparti** case à cocher.  
   
-8.  Cliquez sur **OK**.  
+8.  Sélectionnez **OK**.  
   
-9. Entrez les valeurs appropriées dans la boîte de dialogue **Propriétés de l'emplacement de réception** pour terminer la configuration de l'emplacement de réception, puis cliquez sur **OK** pour enregistrer les paramètres. Pour plus d’informations sur la **propriétés des emplacements de réception** boîte de dialogue, consultez [la création d’un emplacement de réception](../core/how-to-create-a-receive-location.md).  
+9. Sélectionnez votre **Gestionnaire de réception**et le **pipeline de réception**. Sélectionnez **OK** pour enregistrer vos modifications. [Créer un emplacement de réception](../core/how-to-create-a-receive-location.md) fournit quelques conseils.  
   
 ## <a name="send-messages-to-service-bus"></a>Envoyer des messages à Service Bus
-Cette section fournit des informations sur la façon de configurer un **SB-Messaging** port d’envoi utilisant le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Console d’Administration.  
   
-1.  Dans la console Administration de BizTalk Server, créez un port d’envoi ou double-cliquez sur un port d’envoi existant pour le modifier. Pour plus d’informations, consultez [la création d’un Port d’envoi](../core/how-to-create-a-send-port2.md). Configurez toutes les options de port d’envoi et spécifiez **SB-Messaging** pour le **Type** option dans le **Transport** section de la **général** onglet.  
+1.  Dans la console Administration de BizTalk Server, cliquez sur **Ports d’envoi**, sélectionnez **nouveau**, puis sélectionnez **port d’envoi unidirectionnel statique**.
+
+    [Créer un Port d’envoi](../core/how-to-create-a-send-port2.md) fournit quelques conseils.
+
+2. Entrez un **nom**. Dans **Transport**, définissez le **Type** à **SB-Messaging**, puis sélectionnez **configurer**. 
   
-2.  Sur le **général** sous l’onglet du **Transport** , cliquez sur le **configurer** bouton.  
-  
-3.  Dans le **propriétés du Transport SB-Messaging** boîte de dialogue le **général** onglet, spécifiez les éléments suivants :  
+3.  Configurer le **général** propriétés :  
   
     |Utiliser|Pour effectuer cette opération|  
     |--------------|----------------|  
@@ -108,18 +112,18 @@ Cette section fournit des informations sur la façon de configurer un **SB-Messa
     |**Un délai d’envoi**|Spécifie une valeur de période indiquant le temps nécessaire pour qu’une opération d’envoi soit réalisée.<br /><br /> **Valeur par défaut :** 1 minute|  
     |**Fermer le délai d’attente**|Spécifie une valeur de période indiquant le temps nécessaire pour qu’une opération de fermeture soit réalisée.<br /><br /> **Valeur par défaut :** 1 minute|  
   
-4.  Dans le **authentification** onglet, procédez comme suit :  
+4.  Configurer le **authentification** propriétés : 
   
     |Utiliser|Pour effectuer cette opération|  
     |--------------|----------------|  
     |**Service de contrôle d’accès**|Sélectionnez cette option afin d'utiliser ACS pour l'authentification et fournir les valeurs suivantes :<br /><br /> -Entrez l’URI STS du Service de contrôle Service Bus accès. En règle générale, l’URI est au format suivant :<br /><br /> `https://<namespace>-sb.accesscontrol.windows.net/`<br /><br /> -Entrez le nom de l’émetteur pour l’espace de noms Service Bus.<br /><br /> -Entrez la clé de l’émetteur pour l’espace de noms Service Bus.|  
     |**Signature d’accès partagé** (new compter [!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)])|Sélectionnez cette option pour utiliser la signature d'accès partagé (SAP) pour l'authentification, et fournissez la valeur de clé et le nom de clé SAS.|  
   
-5.  Dans le **propriétés** sous l’onglet du **Namespace de l’utilisateur défini les propriétés du Message réparti** Indiquez l’espace de noms qui contient les propriétés de contexte de message BizTalk que vous souhaitez écrire en tant que propriétés de Message réparti définies par l’utilisateur sur le message sortant envoyé à la file d’attente du Bus de Service. Toutes les propriétés appartenant à l’espace de noms sont écrites dans le message comme propriétés de message réparti définies par l’utilisateur. L’adaptateur ignore l’espace de noms lors de l’écriture des propriétés comme propriétés de message réparti. Il utilise l’espace de noms uniquement pour déterminer quelles propriétés écrire.  
+5.  Dans le **propriétés** , entrez la **Namespace de l’utilisateur défini les propriétés du Message réparti** qui contient les propriétés de contexte de message BizTalk que vous souhaitez écrire sur le message sortant vers Bus de service. Toutes les propriétés de l’espace de noms sont écrites dans le message en tant que propriétés de Message réparti définies par l’utilisateur. L’adaptateur ignore l’espace de noms lors de l’écriture des propriétés comme propriétés de message réparti. Il utilise l’espace de noms uniquement pour déterminer quelles propriétés écrire.  
   
-     Vous pouvez également spécifier les valeurs pour les propriétés BrokeredMessage. Pour plus d’informations sur les propriétés, consultez [propriétés BrokeredMessage](https://msdn.microsoft.com/library/azure/microsoft.servicebus.messaging.brokeredmessage_properties.aspx).  
+     Vous pouvez également entrer les valeurs pour les propriétés BrokeredMessage. Ces propriétés sont décrites sur [propriétés BrokeredMessage](https://docs.microsoft.com/dotnet/api/microsoft.servicebus.messaging.brokeredmessage), y compris le **clé de Partition**.
   
-6.  Cliquez sur **OK** et **OK** pour enregistrer les paramètres.  
+6.  Sélectionnez **OK** pour enregistrer vos modifications.  
   
 ## <a name="see-also"></a>Voir aussi
 [À l’aide des adaptateurs](../core/using-adapters.md)
