@@ -17,11 +17,11 @@ ms.devlang: na
 ms.topic: article
 ms.date: 06/19/2017
 ms.author: mandia
-ms.openlocfilehash: f8e2f3113234ccd8f55a8b4a316348f015144069
-ms.sourcegitcommit: 28bf5fc184cf8cba620741421c919d52b8383997
+ms.openlocfilehash: 46c086b7c0281b84bd234be773f063269197c9dc
+ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 11/21/2017
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -125,7 +125,7 @@ ms.lasthandoff: 10/17/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Découvrir</h3>
-                                                    <p>Que vous soyez sans expérience avec BizTalk Server ou occupé à définir l’architecture d’une solution, ou encore un professionnel expérimenté, laissez-nous vous aider à bien démarrer.</p>
+                                                    <p>Que vous soyez débutant sur BizTalk Server, architecte de solution ou professionnel expérimenté, laissez-nous vous aider à bien démarrer.</p>
                                                 </div>
                                             </div>
                                         </div>
