@@ -1,0 +1,54 @@
+---
+title: "L’aire de conception d’Orchestration | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: c5fb190b-60d7-45e4-9883-7b3d2ed6b0c0
+caps.latest.revision: "7"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: f943c1543cf50e4ecb1f25627cbccd7b4d72eab5
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="the-orchestration-design-surface"></a><span data-ttu-id="6b222-102">La surface de conception de l'orchestration</span><span class="sxs-lookup"><span data-stu-id="6b222-102">The Orchestration Design Surface</span></span>
+<span data-ttu-id="6b222-103">La surface de conception de l'orchestration est un concepteur visuel que vous pouvez utiliser pour créer une orchestration BizTalk. Elle constitue également un composant essentiel de Concepteur d'Orchestration.</span><span class="sxs-lookup"><span data-stu-id="6b222-103">The Orchestration Design Surface is a visual designer that you can use to create a BizTalk Orchestration, and is the central component of Orchestration Designer.</span></span> <span data-ttu-id="6b222-104">On peut le comparer à un canevas dans lequel vous pouvez glisser des formes de la Boîte à outils avant de les configurer.</span><span class="sxs-lookup"><span data-stu-id="6b222-104">It is a canvas that you can drag shapes onto from the Toolbox, and then configure the shapes.</span></span> <span data-ttu-id="6b222-105">En tant que fenêtre d'éditeur Visual Studio, il occupe la principale zone de fenêtre utilisée par les autres fenêtres d'éditeur Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="6b222-105">As a Visual Studio editor window, it occupies the main window area used by other Visual Studio editor windows.</span></span>  
+  
+ <span data-ttu-id="6b222-106">![Concepteurs d’orchestration](../core/media/b96c16e5-58a2-4d8e-b66c-485864846cec.gif "b96c16e5-58a2-4d8e-b66c-485864846cec")</span><span class="sxs-lookup"><span data-stu-id="6b222-106">![Orchestration Designers](../core/media/b96c16e5-58a2-4d8e-b66c-485864846cec.gif "b96c16e5-58a2-4d8e-b66c-485864846cec")</span></span>  
+<span data-ttu-id="6b222-107">Surface de conception de l'orchestration</span><span class="sxs-lookup"><span data-stu-id="6b222-107">Orchestration Design Surface</span></span>  
+  
+ <span data-ttu-id="6b222-108">Le nom de l'orchestration est affiché sur l'onglet supérieur de la fenêtre de la surface de conception de l'orchestration ainsi que dans la barre de titre de la fenêtre Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="6b222-108">The name of the orchestration is displayed on the top tab of the Orchestration Design Surface window and in the Visual Studio window title bar.</span></span>  
+  
+ <span data-ttu-id="6b222-109">L’aire de conception elle-même est divisé en trois zones : la zone de processus et deux Surfaces du Port.</span><span class="sxs-lookup"><span data-stu-id="6b222-109">The design surface itself is divided into three areas: the Process Area and two Port Surfaces.</span></span> <span data-ttu-id="6b222-110">La zone de processus centrale contient des formes qui décrivent le flux du processus proprement dit de l'orchestration. </span><span class="sxs-lookup"><span data-stu-id="6b222-110">The central Process Area contains shapes that describe the actual process flow of the orchestration.</span></span> <span data-ttu-id="6b222-111">Il est flanked des deux côtés par Surfaces du Port, qui contiennent des formes Port et le lien de rôle uniquement interagissant avec le **envoyer** et **réception** formes dans la zone de processus.</span><span class="sxs-lookup"><span data-stu-id="6b222-111">It is flanked on both sides by Port Surfaces, which contain only Port and Role Link shapes that interact with the **Send** and **Receive** shapes in the Process Area.</span></span>  
+  
+ <span data-ttu-id="6b222-112">**Zone de processus**</span><span class="sxs-lookup"><span data-stu-id="6b222-112">**Process Area**</span></span>  
+  
+ <span data-ttu-id="6b222-113">La zone de processus est la partie principale de la surface de conception de l'orchestration du Concepteur d'Orchestration, elle y est toujours centrée horizontalement.</span><span class="sxs-lookup"><span data-stu-id="6b222-113">The Process Area is the main part of the Orchestration Design Surface of Orchestration Designer, and is always horizontally centered in the Orchestration Design Surface.</span></span>  
+  
+ <span data-ttu-id="6b222-114">Des deux côtés de la zone de processus apparaissent les surfaces du port.</span><span class="sxs-lookup"><span data-stu-id="6b222-114">On either side of the Process Area you see Port Surfaces.</span></span> <span data-ttu-id="6b222-115">Le **commencer** forme est placée en haut de l’aire de conception et de l’orchestration se développe vers le bas lorsque vous ajoutez des formes.</span><span class="sxs-lookup"><span data-stu-id="6b222-115">The **Begin** shape is placed at the top of the design surface and the orchestration grows downward as you add shapes.</span></span>  
+  
+ <span data-ttu-id="6b222-116">**Surfaces du port**</span><span class="sxs-lookup"><span data-stu-id="6b222-116">**Port Surfaces**</span></span>  
+  
+ <span data-ttu-id="6b222-117">Deux surfaces du port sont affichées dans la surface de conception de l'orchestration, une de chaque côté de la zone de processus.</span><span class="sxs-lookup"><span data-stu-id="6b222-117">Two Port Surfaces are displayed in the Orchestration Design Surface, one on either side of the Process Area.</span></span> <span data-ttu-id="6b222-118">Les Surfaces de port peuvent contenir deux types de formes : **Ports** et **des liens de rôle**.</span><span class="sxs-lookup"><span data-stu-id="6b222-118">Port Surfaces can contain two kinds of shapes: **Ports** and **Role Links**.</span></span> <span data-ttu-id="6b222-119">Ces formes interagissent avec le **envoyer** et **réception** formes dans la zone de processus.</span><span class="sxs-lookup"><span data-stu-id="6b222-119">These shapes interact with the **Send** and **Receive** shapes in the Process Area.</span></span>  
+  
+ <span data-ttu-id="6b222-120">Les surfaces du port peuvent être utilisées indifféremment avec les formes : ces dernières fonctionnent de manière identique que ce soit dans la surface du port de droite ou dans la surface du port de gauche.</span><span class="sxs-lookup"><span data-stu-id="6b222-120">It makes no difference which Port Surface you use for a shape; that is, the shape functions identically on either the right or the left Port Surface.</span></span> <span data-ttu-id="6b222-121">Avoir deux surfaces du port sur lesquelles placer de nouveaux ports vous permet de créer des orchestrations en entrecroisant moins les connecteurs, qui s'en trouvent alors plus lisibles.</span><span class="sxs-lookup"><span data-stu-id="6b222-121">Having two Port Surfaces on which to place new ports lets you create orchestrations with fewer crisscrossing connectors that therefore are easier to read.</span></span>  
+  
+ <span data-ttu-id="6b222-122">Pour réduire ou développer les surfaces du port, il suffit de cliquer dessus ou de cliquer sur l'icône de double flèche.</span><span class="sxs-lookup"><span data-stu-id="6b222-122">Both Port Surfaces can be collapsed or expanded by double-clicking on them or by clicking on the double arrow icon.</span></span>  
+  
+> [!IMPORTANT]
+>  <span data-ttu-id="6b222-123">De nombreuses tâches du Concepteur d'Orchestration requièrent que vous sélectionniez divers éléments tels que des schémas ou des orchestrations.</span><span class="sxs-lookup"><span data-stu-id="6b222-123">Many Orchestration Designer tasks require you to select various items such as schemas or orchestrations.</span></span> <span data-ttu-id="6b222-124">Si ces éléments ne figurent pas dans le projet actuel, vous devez vous rappeler d'ajouter à votre projet une référence à l'assembly qui contient l'élément que vous désirez sélectionner.</span><span class="sxs-lookup"><span data-stu-id="6b222-124">If these items are not in the current project, you must remember to add a reference in your project to the assembly that contains the item that you want to select.</span></span> <span data-ttu-id="6b222-125">Pour ce faire, cliquez sur le projet et sélectionnez **ajouter une référence**.</span><span class="sxs-lookup"><span data-stu-id="6b222-125">To do this, right-click the project and select **Add Reference**.</span></span>  
+  
+ <span data-ttu-id="6b222-126">**Prise en charge du zoom**</span><span class="sxs-lookup"><span data-stu-id="6b222-126">**Zoom Support**</span></span>  
+  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="6b222-127"> permet d'effectuer des zooms avant ou arrière sur la surface de conception de l'orchestration.</span><span class="sxs-lookup"><span data-stu-id="6b222-127"> provides the ability to zoom in or zoom out of the Orchestration designer surface.</span></span> <span data-ttu-id="6b222-128">Vous pouvez tirer parti de la prise en charge du zoom en suivant l'une des étapes suivantes :</span><span class="sxs-lookup"><span data-stu-id="6b222-128">You can use zoom support by completing one of the following steps:</span></span>  
+  
+-   <span data-ttu-id="6b222-129">Cliquez sur l’aire du Concepteur d’Orchestration, sur le **Zoom** option de menu.</span><span class="sxs-lookup"><span data-stu-id="6b222-129">Right-click the Orchestration designer surface and click the **Zoom** menu option.</span></span> <span data-ttu-id="6b222-130">Vous pouvez ensuite sélectionner le pourcentage d'agrandissement que vous désirez appliquer.</span><span class="sxs-lookup"><span data-stu-id="6b222-130">You can then select the percentage of magnification that you would like to apply.</span></span>  
+  
+-   <span data-ttu-id="6b222-131">Utilisez la touche CTRL et la roulette de la souris pour effectuer des zooms avant ou arrière : pour cela, maintenez la touche CTRL enfoncée tout en tournant la roulette vers le haut ou le bas.</span><span class="sxs-lookup"><span data-stu-id="6b222-131">Use the CTRL + MWHEEL combination to zoom in or zoom out. Hold down the CTRL button and simultaneously rotate the mouse wheel up or down.</span></span> <span data-ttu-id="6b222-132">Tournez vers le haut pour réaliser un zoom arrière et tournez vers le bas pour réaliser un zoom avant.</span><span class="sxs-lookup"><span data-stu-id="6b222-132">Use the CTRL+MWHEELUP combination to zoom out and the CTRL+MWHEELDOWN combination to zoom in.</span></span>

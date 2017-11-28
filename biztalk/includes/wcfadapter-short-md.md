@@ -1,0 +1,1 @@
+<span data-ttu-id="cfa83-101">Adaptateur WCF-Custom</span><span class="sxs-lookup"><span data-stu-id="cfa83-101">WCF-Custom adapter</span></span>

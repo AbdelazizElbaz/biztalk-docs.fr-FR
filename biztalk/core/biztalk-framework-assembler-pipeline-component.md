@@ -1,0 +1,43 @@
+---
+title: Composant de Pipeline assembleur BizTalk Framework | Documents Microsoft
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- pipeline components, BizTalk Framework Assembler
+- BizTalk Framework Assembler [pipeline component]
+ms.assetid: 116dff8d-b7f8-4564-a7fb-6440682683dc
+caps.latest.revision: "6"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 777e3d98ade5b4e0c54744cea6d37b1e43717e66
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="biztalk-framework-assembler-pipeline-component"></a><span data-ttu-id="85882-102">Composant de Pipeline assembleur BizTalk Framework</span><span class="sxs-lookup"><span data-stu-id="85882-102">BizTalk Framework Assembler Pipeline Component</span></span>
+<span data-ttu-id="85882-103">BizTalk Framework constitue une approche permettant d’effectuer une livraison garantie unique à l'aide des protocoles de transport tels que HTTP ou SMTP.</span><span class="sxs-lookup"><span data-stu-id="85882-103">The BizTalk Framework is one approach for doing exactly-once guaranteed delivery using over-the-wire transport protocols such as HTTP or SMTP.</span></span> <span data-ttu-id="85882-104">Cette infrastructure existe depuis 1998 et peut être considérée comme un précurseur des initiatives en matière de normes en cours basées sur les services Web, en particulier WSReliable.</span><span class="sxs-lookup"><span data-stu-id="85882-104">This framework has existed since 1998, and can be thought of as a precursor to pending standards initiatives based on Web services, specifically WSReliable.</span></span> <span data-ttu-id="85882-105">Le problème de livraison unique garantie des données relevait principalement du domaine de technologies telles que Message Queuing (connu également sous le sigle MSMQ).</span><span class="sxs-lookup"><span data-stu-id="85882-105">Typically, the problem of guaranteed exactly-once delivery of data has been the domain of technologies like Message Queuing (also known as MSMQ).</span></span> <span data-ttu-id="85882-106">Toutefois, de telles technologies exigent généralement un logiciel commun aux deux points de terminaison d’un flux de données, et ne gèrent pas l'utilisation des protocoles de transport ouverts basés sur les réseaux publics, par exemple les données qui franchissent les limites de l'entreprise par le biais d'Internet.</span><span class="sxs-lookup"><span data-stu-id="85882-106">However, such technologies usually require common software at the two endpoints of a data flow, and also do nothing to address the use of open transport protocols based on public networks, for example, data that flows across enterprise boundaries by using the Internet.</span></span>  
+  
+ <span data-ttu-id="85882-107">L’infrastructure BizTalk Framework met en œuvre certains des mécanismes qui étaient déjà utilisés lors des premières tentatives de résolution du problème de garantie de livraison unique des données.</span><span class="sxs-lookup"><span data-stu-id="85882-107">Not surprisingly, the BizTalk Framework implements some of the same mechanisms present in earlier attempts to solve this problem of guaranteed exactly-once delivery of data.</span></span> <span data-ttu-id="85882-108">D'autres solutions existent, comme l’échange de données informatisé (EDI). Dans les échanges EDI, les numéros de contrôle ANSI X12 et les notifications de transactions opérationnelles 997 standard forment la base de la garantie que les données sont reçues une seule fois, et que l’expéditeur est averti en cas de problèmes survenus à la réception.</span><span class="sxs-lookup"><span data-stu-id="85882-108">A good example of other solutions to the problem is electronic data interchange (EDI), where ANSI X12 control numbers and standard 997 functional acknowledgment documents form the basis of guaranteeing that data is received only one time, and that the sender is notified of any problems on the receiving end.</span></span>  
+  
+ <span data-ttu-id="85882-109">BizTalk Framework considère que, malgré la disparité des systèmes et des données d'échange, tous comprennent les exigences suivantes du protocole BizTalk Framework :</span><span class="sxs-lookup"><span data-stu-id="85882-109">The BizTalk Framework assumes that, however disparate the systems trading data, they both understand the BizTalk Framework protocol requirements of:</span></span>  
+  
+-   <span data-ttu-id="85882-110">utiliser un format d'enveloppe prévisible pour les transmissions ;</span><span class="sxs-lookup"><span data-stu-id="85882-110">Using a predictable envelope format for wrapping transmissions.</span></span>  
+  
+-   <span data-ttu-id="85882-111">identifier toutes les transmissions sortantes avec un identificateur unique global ;</span><span class="sxs-lookup"><span data-stu-id="85882-111">Tagging every outbound transmission with a globally unique identifier.</span></span>  
+  
+-   <span data-ttu-id="85882-112">toujours renvoyer à l’expéditeur un accusé de réception comprenant l'identificateur unique global, même pour les données qui ont déjà été reçues, fait l’objet d’un accusé de réception et traitées ;</span><span class="sxs-lookup"><span data-stu-id="85882-112">Always returning to the sender an acknowledgment of receipt that includes the globally unique identifier, even for data already received, acknowledged, and processed.</span></span>  
+  
+-   <span data-ttu-id="85882-113">existence de moyens par lesquels l'expéditeur peut renouveler la transmission jusqu’à réception d'un accusé de réception, ou d'une certaine durée après laquelle la transmission n’est plus valide.</span><span class="sxs-lookup"><span data-stu-id="85882-113">Some means by which the sender can repeat transmission until either a receipt arrives from the receiver, or some time period passes beyond which the transmission is no longer valid.</span></span>  
+  
+ <span data-ttu-id="85882-114">Le composant de pipeline Assembleur BizTalk Framework doit sérialiser l'enveloppe et le contenu BizTalk Framework dans le message avant sa transmission et renvoyer le message lorsque aucun accusé de réception n'est reçu dans les délais impartis.</span><span class="sxs-lookup"><span data-stu-id="85882-114">The BizTalk Framework Assembler pipeline component is responsible for serializing the BizTalk Framework envelope and contents onto the message before transmission and resending in the event that a receipt does not arrive in the allotted time period.</span></span> <span data-ttu-id="85882-115">Il est également responsable de la réception et du traitement des accusés ainsi que de la suppression de l'instance du message.</span><span class="sxs-lookup"><span data-stu-id="85882-115">It is also responsible for receiving and processing the receipts and deleting the message instance.</span></span> <span data-ttu-id="85882-116">(Une copie de l’instance du message envoyé est conservée dans la base de données MessageBox jusqu’à ce que BizTalk reçoive une confirmation de réception du destinataire.</span><span class="sxs-lookup"><span data-stu-id="85882-116">(A copy of the message instance of the sent message is kept in the MessageBox database until BizTalk receives a confirmation receipt from the destination.</span></span> <span data-ttu-id="85882-117">Une fois la confirmation de réception reçue, l'instance du message est détruite par le moteur de messagerie.)</span><span class="sxs-lookup"><span data-stu-id="85882-117">After the confirmation receipt is received, the message instance is deleted by the Messaging Engine.)</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="85882-118">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="85882-118">See Also</span></span>  
+ <span data-ttu-id="85882-119">[Comment configurer le composant de Pipeline assembleur BizTalk Framework](../core/how-to-configure-the-biztalk-framework-assembler-pipeline-component.md) </span><span class="sxs-lookup"><span data-stu-id="85882-119">[How to Configure the BizTalk Framework Assembler Pipeline Component](../core/how-to-configure-the-biztalk-framework-assembler-pipeline-component.md) </span></span>  
+ [<span data-ttu-id="85882-120">Composants de pipeline</span><span class="sxs-lookup"><span data-stu-id="85882-120">Pipeline Components</span></span>](../core/pipeline-components.md)

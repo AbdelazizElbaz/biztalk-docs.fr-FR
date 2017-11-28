@@ -1,0 +1,44 @@
+---
+title: "Création d’une Application | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 7b6e325c-a86f-419d-9a27-864f4f035507
+caps.latest.revision: "2"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 4caf0531ee6cf952bfd343605b9b470c04c636d6
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="creating-an-application"></a><span data-ttu-id="fc9da-102">Création d’une Application</span><span class="sxs-lookup"><span data-stu-id="fc9da-102">Creating an Application</span></span>
+<span data-ttu-id="fc9da-103">Il existe trois façons de créer une application BizTalk.</span><span class="sxs-lookup"><span data-stu-id="fc9da-103">There are three ways to create a BizTalk application.</span></span> <span data-ttu-id="fc9da-104">Il existe également plusieurs options de nom, faisant référence à et déploiement des artefacts aux applications.</span><span class="sxs-lookup"><span data-stu-id="fc9da-104">There are also several options for naming, referencing, and deploying artifacts to applications.</span></span>  
+  
+## <a name="creating-a-biztalk-application"></a><span data-ttu-id="fc9da-105">Création d’une Application BizTalk</span><span class="sxs-lookup"><span data-stu-id="fc9da-105">Creating a BizTalk Application</span></span>  
+ <span data-ttu-id="fc9da-106">Les trois méthodes sont les suivantes :</span><span class="sxs-lookup"><span data-stu-id="fc9da-106">The three ways are as follows:</span></span>  
+  
+1.  <span data-ttu-id="fc9da-107">Vous pouvez créer l'application BizTalk en utilisant la commande Nouvelle application de la console Administration de BizTalk Server ou la commande AddApp de l'outil de ligne de commande BTSTask.</span><span class="sxs-lookup"><span data-stu-id="fc9da-107">Create the BizTalk application by using the New Application command of the BizTalk Server Administration console or the AddApp command of the BTSTask command-line tool.</span></span> <span data-ttu-id="fc9da-108">Pour plus d’informations sur l’utilisation de ces commandes, consultez [la création d’une Application](http://go.microsoft.com/fwlink/?LinkId=155007) (http://go.microsoft.com/fwlink/?LinkId=155007).</span><span class="sxs-lookup"><span data-stu-id="fc9da-108">For more information about using these commands, see [How to Create an Application](http://go.microsoft.com/fwlink/?LinkId=155007) (http://go.microsoft.com/fwlink/?LinkId=155007).</span></span>  
+  
+2.  <span data-ttu-id="fc9da-109">Vous pouvez importer un fichier .msi exporté d'une autre application.</span><span class="sxs-lookup"><span data-stu-id="fc9da-109">Import an .msi file that was exported from another application.</span></span> <span data-ttu-id="fc9da-110">Si l'application n'existe pas déjà dans le groupe BizTalk actuel, l'application et ses artefacts sont automatiquement créés dans le groupe BizTalk.</span><span class="sxs-lookup"><span data-stu-id="fc9da-110">If the application does not already exist in the current BizTalk group, the application, including its artifacts, is automatically created in the current BizTalk group.</span></span> <span data-ttu-id="fc9da-111">Pour plus d’informations sur l’importation d’applications, consultez [comment importer une Application BizTalk](http://go.microsoft.com/fwlink/?LinkID=154827) (http://go.microsoft.com/fwlink/?LinkID=154827).</span><span class="sxs-lookup"><span data-stu-id="fc9da-111">For more information about importing applications, see [How to Import a BizTalk Application](http://go.microsoft.com/fwlink/?LinkID=154827) (http://go.microsoft.com/fwlink/?LinkID=154827).</span></span>  
+  
+3.  <span data-ttu-id="fc9da-112">Vous pouvez déployer des assemblys BizTalk à partir de Visual Studio dans une application BizTalk.</span><span class="sxs-lookup"><span data-stu-id="fc9da-112">Deploy BizTalk assemblies from Visual Studio into a BizTalk application.</span></span> <span data-ttu-id="fc9da-113">Si l’application spécifiée dans les propriétés de déploiement pour un projet dans Visual Studio n’existe pas dans le groupe BizTalk actuel, il sera automatiquement créé.</span><span class="sxs-lookup"><span data-stu-id="fc9da-113">If the application specified in the deployment properties for a project in Visual Studio does not exist in the current BizTalk group, it will be automatically created.</span></span> <span data-ttu-id="fc9da-114">Pour plus d’informations sur le déploiement d’un assembly à partir de Visual Studio, consultez [déploiement des assemblys BizTalk à partir de Visual Studio dans une Application BizTalk](http://go.microsoft.com/fwlink/?LinkID=154719) (http://go.microsoft.com/fwlink/?LinkID=154719).</span><span class="sxs-lookup"><span data-stu-id="fc9da-114">For more information about deploying an assembly from Visual Studio, see [Deploying BizTalk Assemblies from Visual Studio into a BizTalk Application](http://go.microsoft.com/fwlink/?LinkID=154719) (http://go.microsoft.com/fwlink/?LinkID=154719).</span></span>  
+  
+ <span data-ttu-id="fc9da-115">Pour déployer une application à l’aide d’un fichier .msi, l’application de destination n’avez pas besoin d’exister, mais est automatiquement créé.</span><span class="sxs-lookup"><span data-stu-id="fc9da-115">To deploy an application using an .msi file, the destination application does not need to exist, but will be automatically created.</span></span> <span data-ttu-id="fc9da-116">Toutefois, pour importer les liaisons d’une application vers un autre, l’application de destination doit déjà exister.</span><span class="sxs-lookup"><span data-stu-id="fc9da-116">However, to import bindings from one application to another, the destination application must already exist.</span></span> <span data-ttu-id="fc9da-117">Si ce n’est pas le cas, vous devez le créer en effectuant l’une des procédures répertoriées ci-dessus.</span><span class="sxs-lookup"><span data-stu-id="fc9da-117">If not, you need to create it by performing one of the procedures listed above.</span></span>  
+  
+ <span data-ttu-id="fc9da-118">Pour plus d’informations sur les étapes spécifiques requises pour créer une application, consultez [la création d’une Application](http://go.microsoft.com/fwlink/?LinkId=155007) (http://go.microsoft.com/fwlink/?LinkId=155007).</span><span class="sxs-lookup"><span data-stu-id="fc9da-118">For more information about the specific steps required to create an application, see [How to Create an Application](http://go.microsoft.com/fwlink/?LinkId=155007) (http://go.microsoft.com/fwlink/?LinkId=155007).</span></span>  
+  
+## <a name="application-options"></a><span data-ttu-id="fc9da-119">Options de l’application</span><span class="sxs-lookup"><span data-stu-id="fc9da-119">Application Options</span></span>  
+ <span data-ttu-id="fc9da-120">Avant de créer une nouvelle application, vous devez procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="fc9da-120">Before creating a new application, you should do the following:</span></span>  
+  
+-   <span data-ttu-id="fc9da-121">Déterminer un nom qui est unique au sein du groupe BizTalk pour l’application.</span><span class="sxs-lookup"><span data-stu-id="fc9da-121">Determine a name that is unique within the BizTalk group for the application.</span></span>  
+  
+-   <span data-ttu-id="fc9da-122">Ajoutez une référence à partir de la nouvelle application à toute application contenant des artefacts que vous souhaitez réutiliser dans la nouvelle application.</span><span class="sxs-lookup"><span data-stu-id="fc9da-122">Add a reference from the new application to any application containing artifacts that you want to reuse in the new application.</span></span> <span data-ttu-id="fc9da-123">Pour plus d’informations sur les dépendances entre les applications, consultez [des dépendances et déploiement d’applications](http://go.microsoft.com/fwlink/?LinkId=155008) (http://go.microsoft.com/fwlink/?LinkId=155008).</span><span class="sxs-lookup"><span data-stu-id="fc9da-123">For more information about dependencies between applications, see [Dependencies and Application Deployment](http://go.microsoft.com/fwlink/?LinkId=155008) (http://go.microsoft.com/fwlink/?LinkId=155008).</span></span>  
+  
+-   <span data-ttu-id="fc9da-124">Déterminez si vous souhaitez déployer certains artefacts dans des applications distinctes, par exemple, les artefacts partagés doivent être déployés dans leur propre application distincte.</span><span class="sxs-lookup"><span data-stu-id="fc9da-124">Determine whether you want to deploy some artifacts into separate applications, for example, shared artifacts that should be deployed into their own separate application.</span></span>

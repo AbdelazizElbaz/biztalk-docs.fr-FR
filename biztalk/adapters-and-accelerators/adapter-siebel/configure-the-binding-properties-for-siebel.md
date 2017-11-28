@@ -1,0 +1,114 @@
+---
+title: "Configurer les propriétés de liaison pour Siebel | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- binding properties, specifying at design time
+- binding properties, specifying at run time
+- how to, specify binding properties at design time
+- how to, specify binding properties at run time
+ms.assetid: 063e9507-8172-4fb0-8b9f-2f95e8a82f21
+caps.latest.revision: "8"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: b26e9e89319a14317113b730adb189f2f17587f9
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="configure-the-binding-properties-for-siebel"></a><span data-ttu-id="66c3a-102">Configurer les propriétés de liaison pour Siebel</span><span class="sxs-lookup"><span data-stu-id="66c3a-102">Configure the binding properties for Siebel</span></span>
+<span data-ttu-id="66c3a-103">Le [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] expose plusieurs propriétés de liaison qui vous permettent de contrôler certaines de ses caractéristiques de comportement.</span><span class="sxs-lookup"><span data-stu-id="66c3a-103">The [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] surfaces several binding properties that enable you to control some of its behavioral characteristics.</span></span> <span data-ttu-id="66c3a-104">Cette section fournit des informations sur la définition des propriétés de liaison à partir de Visual Studio (conception) et de la [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Console d’Administration (temps d’exécution).</span><span class="sxs-lookup"><span data-stu-id="66c3a-104">This section provides information about setting the binding properties from Visual Studio (design time) and from the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration Console (run time).</span></span> <span data-ttu-id="66c3a-105">Au moment du design, vous devez spécifier les propriétés de liaison pour générer le schéma pour des opérations spécifiques.</span><span class="sxs-lookup"><span data-stu-id="66c3a-105">At design time, you must specify the binding properties to generate schema for specific operations.</span></span> <span data-ttu-id="66c3a-106">Au moment de l’exécution, vous devez spécifier les propriétés de liaison en tant que partie du port d’envoi pour envoyer des messages au système Siebel.</span><span class="sxs-lookup"><span data-stu-id="66c3a-106">At run time, you must specify the binding properties as part of the send port for sending messages to the Siebel system.</span></span>  
+  
+ <span data-ttu-id="66c3a-107">Pour plus d’informations sur les propriétés de liaison, notamment une liste de propriétés de liaison pour [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)], consultez [en savoir plus sur l’adaptateur BizTalk pour les propriétés de liaison de Siebel](../../adapters-and-accelerators/adapter-siebel/read-about-biztalk-adapter-for-siebel-binding-properties.md).</span><span class="sxs-lookup"><span data-stu-id="66c3a-107">For information about the binding properties, including a list of binding properties for [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)], see [Read about BizTalk Adapter for Siebel Binding Properties](../../adapters-and-accelerators/adapter-siebel/read-about-biztalk-adapter-for-siebel-binding-properties.md).</span></span>  
+  
+## <a name="enter-the-binding-properties-at-design-time"></a><span data-ttu-id="66c3a-108">Entrez les propriétés de liaison au moment du design</span><span class="sxs-lookup"><span data-stu-id="66c3a-108">Enter the binding properties at design time</span></span>  
+ <span data-ttu-id="66c3a-109">Pour le moment du design, vous devez spécifier les propriétés de liaison à partir de la [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] ou [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] boîte de dialogue.</span><span class="sxs-lookup"><span data-stu-id="66c3a-109">For design time, you must specify the binding properties from the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] or the [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] dialog box.</span></span>  
+  
+#### <a name="enter-binding-properties-using-consume-adapter-service-add-in"></a><span data-ttu-id="66c3a-110">Entrez les propriétés de liaison à l’aide de complément Consume Adapter Service</span><span class="sxs-lookup"><span data-stu-id="66c3a-110">Enter binding properties using Consume Adapter Service Add-in</span></span>  
+  
+1.  <span data-ttu-id="66c3a-111">Avec le bouton droit de votre projet BizTalk, pointez sur **ajouter**, puis sélectionnez **ajouter les éléments générés**.</span><span class="sxs-lookup"><span data-stu-id="66c3a-111">Right-click your BizTalk project, point to **Add**, and then select **Add Generated Items**.</span></span>  
+  
+2.  <span data-ttu-id="66c3a-112">Dans le **ajouter les éléments générés** boîte de dialogue zone, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="66c3a-112">In the **Add Generated Items** dialog box, do the following:</span></span>  
+  
+    |<span data-ttu-id="66c3a-113">Utiliser</span><span class="sxs-lookup"><span data-stu-id="66c3a-113">Use this</span></span>|<span data-ttu-id="66c3a-114">Pour effectuer cette opération</span><span class="sxs-lookup"><span data-stu-id="66c3a-114">To do this</span></span>|  
+    |--------------|----------------|  
+    |<span data-ttu-id="66c3a-115">**Catégories**</span><span class="sxs-lookup"><span data-stu-id="66c3a-115">**Categories**</span></span>|<span data-ttu-id="66c3a-116">Cliquez sur **Consume Adapter Service**.</span><span class="sxs-lookup"><span data-stu-id="66c3a-116">Click **Consume Adapter Service**.</span></span>|  
+    |<span data-ttu-id="66c3a-117">**Modèles**</span><span class="sxs-lookup"><span data-stu-id="66c3a-117">**Templates**</span></span>|<span data-ttu-id="66c3a-118">Cliquez sur **Consume Adapter Service**.</span><span class="sxs-lookup"><span data-stu-id="66c3a-118">Click **Consume Adapter Service**.</span></span>|  
+  
+3.  <span data-ttu-id="66c3a-119">Pour démarrer le **Consume Adapter Service** boîte de dialogue, cliquez sur **ajouter**.</span><span class="sxs-lookup"><span data-stu-id="66c3a-119">To start the **Consume Adapter Service** dialog box, click **Add**.</span></span>  
+  
+4.  <span data-ttu-id="66c3a-120">Dans le **Consume Adapter Service** boîte de dialogue, à partir de la **sélectionner une liaison** liste déroulante, sélectionnez **siebelBinding**, puis cliquez sur **configurer**.</span><span class="sxs-lookup"><span data-stu-id="66c3a-120">In the **Consume Adapter Service** dialog box, from the **Select a binding** drop-down list select **siebelBinding**, and click **Configure**.</span></span>  
+  
+5.  <span data-ttu-id="66c3a-121">Dans le **configurer l’adaptateur** boîte de dialogue, cliquez sur le **propriétés de liaison** onglet et spécifier les valeurs de liaison, si elle existe, qui sont nécessaires pour être spécifié avant de générer le schéma.</span><span class="sxs-lookup"><span data-stu-id="66c3a-121">In the **Configure Adapter** dialog box, click the **Binding Properties** tab and specify the binding values, if any, which are required to be specified before generating the schema.</span></span> <span data-ttu-id="66c3a-122">Pour plus d’informations sur les propriétés de liaison, consultez [en savoir plus sur l’adaptateur BizTalk pour les propriétés de liaison de Siebel](../../adapters-and-accelerators/adapter-siebel/read-about-biztalk-adapter-for-siebel-binding-properties.md).</span><span class="sxs-lookup"><span data-stu-id="66c3a-122">For more information about binding properties, see [Read about BizTalk Adapter for Siebel Binding Properties](../../adapters-and-accelerators/adapter-siebel/read-about-biztalk-adapter-for-siebel-binding-properties.md).</span></span>  
+  
+6.  <span data-ttu-id="66c3a-123">Cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="66c3a-123">Click **OK**.</span></span>  
+  
+#### <a name="enter-binding-properties-using-add-adapter-metadata-wizard"></a><span data-ttu-id="66c3a-124">Entrez les propriétés de liaison à l’aide d’Assistant Ajouter les métadonnées de l’adaptateur</span><span class="sxs-lookup"><span data-stu-id="66c3a-124">Enter binding properties using Add Adapter Metadata Wizard</span></span>  
+  
+1.  <span data-ttu-id="66c3a-125">Avec le bouton droit de votre projet BizTalk, pointez sur **ajouter**, puis sélectionnez **ajouter les éléments générés**.</span><span class="sxs-lookup"><span data-stu-id="66c3a-125">Right-click your BizTalk project, point to **Add**, and then select **Add Generated Items**.</span></span>  
+  
+2.  <span data-ttu-id="66c3a-126">Dans le **ajouter les éléments générés** boîte de dialogue zone, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="66c3a-126">In the **Add Generated Items** dialog box, do the following:</span></span>  
+  
+    |<span data-ttu-id="66c3a-127">Utiliser</span><span class="sxs-lookup"><span data-stu-id="66c3a-127">Use this</span></span>|<span data-ttu-id="66c3a-128">Pour effectuer cette opération</span><span class="sxs-lookup"><span data-stu-id="66c3a-128">To do this</span></span>|  
+    |--------------|----------------|  
+    |<span data-ttu-id="66c3a-129">**Catégories**</span><span class="sxs-lookup"><span data-stu-id="66c3a-129">**Categories**</span></span>|<span data-ttu-id="66c3a-130">Cliquez sur **ajouter l’adaptateur**.</span><span class="sxs-lookup"><span data-stu-id="66c3a-130">Click **Add Adapter**.</span></span>|  
+    |<span data-ttu-id="66c3a-131">**Modèles**</span><span class="sxs-lookup"><span data-stu-id="66c3a-131">**Templates**</span></span>|<span data-ttu-id="66c3a-132">Cliquez sur **ajouter les métadonnées de l’adaptateur**.</span><span class="sxs-lookup"><span data-stu-id="66c3a-132">Click **Add Adapter Metadata**.</span></span>|  
+  
+3.  <span data-ttu-id="66c3a-133">Cliquez sur **Ajouter**.</span><span class="sxs-lookup"><span data-stu-id="66c3a-133">Click **Add**.</span></span> <span data-ttu-id="66c3a-134">Le [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] s’ouvre.</span><span class="sxs-lookup"><span data-stu-id="66c3a-134">The [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] opens.</span></span>  
+  
+4.  <span data-ttu-id="66c3a-135">Dans l’Assistant Ajout d’adaptateur, sélectionnez **WCF-Siebel**.</span><span class="sxs-lookup"><span data-stu-id="66c3a-135">In the Add Adapter Wizard, select **WCF-Siebel**.</span></span> <span data-ttu-id="66c3a-136">Sélectionnez l’ordinateur sur lequel [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] est installé et le nom de la base de données BizTalk.</span><span class="sxs-lookup"><span data-stu-id="66c3a-136">Select the computer on which [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] is installed and the name of the BizTalk database.</span></span>  
+  
+    > [!IMPORTANT]
+    >  <span data-ttu-id="66c3a-137">Si vous disposez déjà d’un port WCF-Siebel configuré dans BizTalk, sélectionnez le port à partir de la **Port** liste.</span><span class="sxs-lookup"><span data-stu-id="66c3a-137">If you already have a WCF-Siebel port configured in BizTalk, select the port from the **Port** list.</span></span>  
+  
+5.  <span data-ttu-id="66c3a-138">Cliquez sur **Suivant**.</span><span class="sxs-lookup"><span data-stu-id="66c3a-138">Click **Next**.</span></span>  
+  
+6.  <span data-ttu-id="66c3a-139">Dans le **Consume Adapter Service** boîte de dialogue, à partir de la **sélectionner une liaison** liste déroulante, sélectionnez **siebelBinding**, puis cliquez sur **configurer**.</span><span class="sxs-lookup"><span data-stu-id="66c3a-139">In the **Consume Adapter Service** dialog box, from the **Select a binding** drop-down list select **siebelBinding**, and click **Configure**.</span></span>  
+  
+7.  <span data-ttu-id="66c3a-140">Dans le **configurer l’adaptateur** boîte de dialogue, cliquez sur le **propriétés de liaison** onglet et spécifier les valeurs de liaison, si elle existe, qui sont nécessaires pour être spécifié avant de générer le schéma.</span><span class="sxs-lookup"><span data-stu-id="66c3a-140">In the **Configure Adapter** dialog box, click the **Binding Properties** tab and specify the binding values, if any, which are required to be specified before generating the schema.</span></span> <span data-ttu-id="66c3a-141">Pour plus d’informations sur les propriétés de liaison, consultez [en savoir plus sur l’adaptateur BizTalk pour les propriétés de liaison de Siebel](../../adapters-and-accelerators/adapter-siebel/read-about-biztalk-adapter-for-siebel-binding-properties.md).</span><span class="sxs-lookup"><span data-stu-id="66c3a-141">For more information about binding properties, see [Read about BizTalk Adapter for Siebel Binding Properties](../../adapters-and-accelerators/adapter-siebel/read-about-biztalk-adapter-for-siebel-binding-properties.md).</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="66c3a-142">Si vous avez sélectionné un port d’envoi WCF-Siebel existant, vous ne devez pas spécifier les propriétés de liaison.</span><span class="sxs-lookup"><span data-stu-id="66c3a-142">If you selected an existing WCF-Siebel send port, you need not specify the binding properties.</span></span> <span data-ttu-id="66c3a-143">Les propriétés de liaison sont récupérées à partir de la configuration du port d’envoi.</span><span class="sxs-lookup"><span data-stu-id="66c3a-143">The binding properties are picked from the send port configuration.</span></span> <span data-ttu-id="66c3a-144">Toutefois, vous pouvez choisir de spécifier les propriétés de liaison qui sont nécessaires au moment du design, le cas échéant.</span><span class="sxs-lookup"><span data-stu-id="66c3a-144">However, you may choose to specify the binding properties that are required at design-time, if any.</span></span> <span data-ttu-id="66c3a-145">Dans ce cas, les nouvelles valeurs des propriétés de liaison seront utilisées au moment du design lors de la génération de métadonnées.</span><span class="sxs-lookup"><span data-stu-id="66c3a-145">In such case, the new values for binding properties will be used at design-time while generating the metadata.</span></span> <span data-ttu-id="66c3a-146">Toutefois, au moment de l’exécution les valeurs spécifiées pour les propriétés de liaison dans la configuration du port d’envoi sera appliquées.</span><span class="sxs-lookup"><span data-stu-id="66c3a-146">However, at run-time the values specified for binding properties in the send port configuration will be applicable.</span></span>  
+  
+8.  <span data-ttu-id="66c3a-147">Cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="66c3a-147">Click **OK**.</span></span>  
+  
+## <a name="enter-binding-properties-at-run-time"></a><span data-ttu-id="66c3a-148">Entrez les propriétés de liaison au moment de l’exécution</span><span class="sxs-lookup"><span data-stu-id="66c3a-148">Enter binding properties at run time</span></span>  
+ <span data-ttu-id="66c3a-149">Temps d’exécution, vous devez spécifier les propriétés de liaison dans le cadre de WCF-Custom ou la configuration du port WCF-Siebel dans le [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] console d’Administration.</span><span class="sxs-lookup"><span data-stu-id="66c3a-149">For run time, you must specify the binding properties as part of the WCF-Custom or the WCF-Siebel port configuration in the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>  
+  
+#### <a name="enter-binding-properties-for-the-wcf-custom-port"></a><span data-ttu-id="66c3a-150">Entrez les propriétés de liaison de port WCF-Custom</span><span class="sxs-lookup"><span data-stu-id="66c3a-150">Enter binding properties for the WCF-Custom port</span></span>  
+  
+1.  <span data-ttu-id="66c3a-151">Démarrer le [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] console d’Administration.</span><span class="sxs-lookup"><span data-stu-id="66c3a-151">Start the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>  
+  
+2.  <span data-ttu-id="66c3a-152">Dans l’arborescence de la console, développez **groupe BizTalk**, puis développez **Applications**, puis développez l’application sous lequel vous souhaitez créer un port, puis cliquez sur **Ports d’envoi** .</span><span class="sxs-lookup"><span data-stu-id="66c3a-152">In the console tree, expand **BizTalk Group**, then expand **Applications**, and then expand the application under which you want to create a port, and then click **Send Ports**.</span></span> <span data-ttu-id="66c3a-153">Dans le volet droit, vous pouvez choisir de créer un port ou de sélectionner un port existant.</span><span class="sxs-lookup"><span data-stu-id="66c3a-153">In the right pane, you can choose to create a port or select an existing port.</span></span>  
+  
+3.  <span data-ttu-id="66c3a-154">Dans le **propriétés de Port** boîte de dialogue, à partir de la **Type** la liste déroulante, sélectionnez **WCF-Custom**, puis cliquez sur **configurer**.</span><span class="sxs-lookup"><span data-stu-id="66c3a-154">In the **Port Properties** dialog box, from the **Type** drop-down list, select **WCF-Custom**, and then click **Configure**.</span></span>  
+  
+4.  <span data-ttu-id="66c3a-155">Dans le **propriétés du Transport WCF-Custom** boîte de dialogue, cliquez sur le **liaison** onglet.</span><span class="sxs-lookup"><span data-stu-id="66c3a-155">In the **WCF-Custom Transport Properties** dialog box, click the **Binding** tab.</span></span>  
+  
+5.  <span data-ttu-id="66c3a-156">À partir de la **Type de liaison** la liste déroulante, sélectionnez **siebelBinding**.</span><span class="sxs-lookup"><span data-stu-id="66c3a-156">From the **Binding Type** drop-down list, select **siebelBinding**.</span></span>  
+  
+6.  <span data-ttu-id="66c3a-157">Dans le **Configuration** zone, spécifiez les valeurs pour les propriétés de liaison différente, cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="66c3a-157">In the **Configuration** box, specify the values for the different binding properties and click **OK**.</span></span>  
+  
+#### <a name="enter-binding-properties-for-the-wcf-siebel-port"></a><span data-ttu-id="66c3a-158">Entrez les propriétés de liaison de port WCF-Siebel</span><span class="sxs-lookup"><span data-stu-id="66c3a-158">Enter binding properties for the WCF-Siebel port</span></span>  
+  
+1.  <span data-ttu-id="66c3a-159">Démarrer le [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] console d’Administration.</span><span class="sxs-lookup"><span data-stu-id="66c3a-159">Start the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>  
+  
+2.  <span data-ttu-id="66c3a-160">Ajouter l’adaptateur WCF-Siebel à la [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] console d’Administration.</span><span class="sxs-lookup"><span data-stu-id="66c3a-160">Add the WCF-Siebel adapter to the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span> <span data-ttu-id="66c3a-161">Pour obtenir des instructions, consultez [ajouter l’adaptateur Siebel à la Console Administration de BizTalk Server](../../adapters-and-accelerators/adapter-siebel/add-the-siebel-adapter-to-biztalk-server-administration-console.md).</span><span class="sxs-lookup"><span data-stu-id="66c3a-161">For instructions, see [Add the Siebel Adapter to BizTalk Server Administration Console](../../adapters-and-accelerators/adapter-siebel/add-the-siebel-adapter-to-biztalk-server-administration-console.md).</span></span>  
+  
+3.  <span data-ttu-id="66c3a-162">Dans l’arborescence de la console, développez **groupe BizTalk**, puis développez **Applications**, puis développez l’application sous lequel vous souhaitez créer un port, puis cliquez sur **Ports d’envoi** .</span><span class="sxs-lookup"><span data-stu-id="66c3a-162">In the console tree, expand **BizTalk Group**, then expand **Applications**, and then expand the application under which you want to create a port, and then click **Send Ports**.</span></span> <span data-ttu-id="66c3a-163">Dans le volet droit, vous pouvez choisir de créer un port ou de sélectionner un port existant.</span><span class="sxs-lookup"><span data-stu-id="66c3a-163">In the right pane, you can choose to create a port or select an existing port.</span></span>  
+  
+4.  <span data-ttu-id="66c3a-164">Dans le **propriétés de Port** boîte de dialogue, à partir de la **Type** la liste déroulante, sélectionnez le port WCF-Siebel que vous avez ajouté précédemment, puis cliquez sur **configurer**.</span><span class="sxs-lookup"><span data-stu-id="66c3a-164">In the **Port Properties** dialog box, from the **Type** drop-down list, select the WCF-Siebel port you added earlier, and then click **Configure**.</span></span>  
+  
+5.  <span data-ttu-id="66c3a-165">Dans la boîte de dialogue Propriétés du transport, cliquez sur le **liaison** onglet et spécifier des valeurs pour les propriétés de liaison.</span><span class="sxs-lookup"><span data-stu-id="66c3a-165">In the transport properties dialog box, click the **Binding** tab and specify values for the binding properties.</span></span>  
+  
+6.  <span data-ttu-id="66c3a-166">Cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="66c3a-166">Click **OK**.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="66c3a-167">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="66c3a-167">See Also</span></span>  
+[<span data-ttu-id="66c3a-168">Blocs de construction pour créer des applications BizTalk avec l’adaptateur Siebel</span><span class="sxs-lookup"><span data-stu-id="66c3a-168">Building blocks to create BizTalk applications with the Siebel adapter</span></span>](../../adapters-and-accelerators/adapter-siebel/building-blocks-to-create-biztalk-applications-with-the-siebel-adapter.md)

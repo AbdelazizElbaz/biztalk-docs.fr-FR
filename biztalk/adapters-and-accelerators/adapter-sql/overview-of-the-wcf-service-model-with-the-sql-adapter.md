@@ -1,0 +1,66 @@
+---
+title: "Vue d’ensemble du modèle de service WCF avec l’adaptateur SQL | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 7641bcc7-3845-4914-9b1b-cb86b998ea6d
+caps.latest.revision: "10"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 3afbf1822945f0a47b09a93b3ac3cc2f8ac8653d
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="overview-of-the-wcf-service-model-with-the-sql-adapter"></a><span data-ttu-id="d94ec-102">Vue d’ensemble du modèle de service WCF avec l’adaptateur SQL</span><span class="sxs-lookup"><span data-stu-id="d94ec-102">Overview of the WCF service model with the SQL adapter</span></span>
+<span data-ttu-id="d94ec-103">Le [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] expose une opération SQL Server comme un service WCF.</span><span class="sxs-lookup"><span data-stu-id="d94ec-103">The [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] exposes a SQL Server operation as a WCF service.</span></span> <span data-ttu-id="d94ec-104">Pour effectuer des opérations sur les artefacts de SQL Server, par exemple, pour appeler une procédure stockée, vous appelez une opération sur la carte, qui, à son tour, exécute l’opération sur le serveur SQL Server.</span><span class="sxs-lookup"><span data-stu-id="d94ec-104">To perform operations on SQL Server artifacts, for example to invoke a stored procedure, you invoke an operation on the adapter, which, in turn, performs the operation on the SQL Server.</span></span> <span data-ttu-id="d94ec-105">Votre code est par conséquent agit comme un client au service WCF présenté par l’adaptateur.</span><span class="sxs-lookup"><span data-stu-id="d94ec-105">Your code therefore acts as a client to the WCF service presented by the adapter.</span></span>  
+  
+ <span data-ttu-id="d94ec-106">Dans la [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] modèle de service, le contrat de service qui existe entre un client et un service est représenté sous la forme d’une interface .NET et les opérations sont représentées en tant que méthodes sur cette interface.</span><span class="sxs-lookup"><span data-stu-id="d94ec-106">In the [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] service model, the service contract that exists between a client and a service is represented as a .NET interface, and operations are represented as methods on this interface.</span></span> <span data-ttu-id="d94ec-107">Le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] et WCF fournissent des outils qui vous permettent de générer cette interface pour les opérations ciblées à partir des métadonnées qui expose de l’adaptateur.</span><span class="sxs-lookup"><span data-stu-id="d94ec-107">The [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] and WCF provide tools that enable you to generate this interface for targeted operations from the metadata that the adapter exposes.</span></span> <span data-ttu-id="d94ec-108">Ces outils créent également une classe de client WCF qui peut être utilisée pour appeler les opérations exposées dans l’interface de service.</span><span class="sxs-lookup"><span data-stu-id="d94ec-108">These tools also create a WCF client class that can be used to invoke the operations exposed in the service interface.</span></span> <span data-ttu-id="d94ec-109">Une application cliente peut appeler les méthodes de la classe de client WCF pour appeler des opérations sur la carte.</span><span class="sxs-lookup"><span data-stu-id="d94ec-109">A client application can call the methods of the WCF client class to invoke operations on the adapter.</span></span> <span data-ttu-id="d94ec-110">Pour implémenter un service pour recevoir les opérations entrantes à partir de la [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)], vous implémentez l’interface généré pour les opérations entrantes.</span><span class="sxs-lookup"><span data-stu-id="d94ec-110">To implement a service to receive inbound operations from the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)], you implement the interface generated for the inbound operations.</span></span>  
+  
+ <span data-ttu-id="d94ec-111">La section suivante explique comment utiliser le modèle de service WCF pour appeler des opérations avec un client WCF.</span><span class="sxs-lookup"><span data-stu-id="d94ec-111">The following section explains how to use the WCF service model to invoke operations with a WCF client.</span></span>  
+  
+## <a name="invoking-operations-on-the-sql-server-with-a-wcf-client"></a><span data-ttu-id="d94ec-112">Appel d’opérations sur le serveur SQL Server avec un Client WCF</span><span class="sxs-lookup"><span data-stu-id="d94ec-112">Invoking Operations on the SQL Server with a WCF Client</span></span>  
+ <span data-ttu-id="d94ec-113">Pour utiliser le modèle de service WCF pour appeler des opérations sur le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)], vous devez commencer par générer une classe de client WCF pour les opérations de la cible.</span><span class="sxs-lookup"><span data-stu-id="d94ec-113">To use the WCF service model to invoke operations on the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)], you must first generate a WCF client class for the target operations.</span></span> <span data-ttu-id="d94ec-114">Vous pouvez ensuite créer une instance de cette classe, un client WCF et appeler ses méthodes pour effectuer ces opérations sur le système SQL Server.</span><span class="sxs-lookup"><span data-stu-id="d94ec-114">You can then create an instance of this class, a WCF client, and call its methods to perform these operations on the SQL Server system.</span></span> <span data-ttu-id="d94ec-115">Cette section fournit une description de la façon dont une application de client de carte .NET classique ressemble à.</span><span class="sxs-lookup"><span data-stu-id="d94ec-115">This section provides an outline of how a typical .NET adapter client application looks like.</span></span> <span data-ttu-id="d94ec-116">Des explications détaillées sur la façon d’effectuer différentes opérations sur la base de données SQL Server à l’aide de l’adaptateur sont fournies dans les rubriques spécifiques.</span><span class="sxs-lookup"><span data-stu-id="d94ec-116">Detailed explanations on how to perform different operations on the SQL Server database using the adapter are provided in specific topics.</span></span>  
+  
+#### <a name="to-invoke-operations-on-the-sql-adapter"></a><span data-ttu-id="d94ec-117">Pour appeler des opérations sur l’adaptateur SQL</span><span class="sxs-lookup"><span data-stu-id="d94ec-117">To invoke operations on the SQL adapter</span></span>  
+  
+1.  <span data-ttu-id="d94ec-118">Générer un code de classe et d’assistance de client WCF.</span><span class="sxs-lookup"><span data-stu-id="d94ec-118">Generate a WCF client class and helper code.</span></span> <span data-ttu-id="d94ec-119">Utilisez le [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]pour générer une classe de client WCF ciblé sur les artefacts de base de données SQL Server avec lequel vous souhaitez travailler.</span><span class="sxs-lookup"><span data-stu-id="d94ec-119">Use the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]to generate a WCF client class targeted at the SQL Server database artifacts with which you want to work.</span></span> <span data-ttu-id="d94ec-120">Pour plus d’informations sur la façon de générer un client WCF, consultez [générer un Client WCF ou le contrat de Service WCF pour les artefacts de SQL Server](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md).</span><span class="sxs-lookup"><span data-stu-id="d94ec-120">For more information about how to generate a WCF client, see [Generate a WCF Client or WCF Service Contract for SQL Server Artifacts](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md).</span></span>  
+  
+2.  <span data-ttu-id="d94ec-121">Créer une instance de client WCF et configurer le client WCF.</span><span class="sxs-lookup"><span data-stu-id="d94ec-121">Create a WCF client instance and configure the WCF client.</span></span> <span data-ttu-id="d94ec-122">Configuration du client WCF implique la spécification de la liaison et l’adresse de point de terminaison (URI de connexion) utilisé par le client.</span><span class="sxs-lookup"><span data-stu-id="d94ec-122">Configuring the WCF client involves specifying the binding and endpoint address (connection URI) that the client will use.</span></span> <span data-ttu-id="d94ec-123">Ce faire, vous pouvez soit impérativement dans du code ou de façon déclarative dans la configuration.</span><span class="sxs-lookup"><span data-stu-id="d94ec-123">You can do this either imperatively in code or declaratively in configuration.</span></span> <span data-ttu-id="d94ec-124">Le code suivant crée un client WCF qui cible le **sélectionnez** opération sur le **employé** table dans une base de données SQL Server.</span><span class="sxs-lookup"><span data-stu-id="d94ec-124">The following code creates a WCF client that targets the **Select** operation on the **Employee** table in a SQL Server database.</span></span> <span data-ttu-id="d94ec-125">Il définit également les informations d’identification pour la base de données SQL Server.</span><span class="sxs-lookup"><span data-stu-id="d94ec-125">It also sets the credentials for the SQL Server database.</span></span> <span data-ttu-id="d94ec-126">Le client WCF est initialisé à partir de la configuration.</span><span class="sxs-lookup"><span data-stu-id="d94ec-126">The WCF client is initialized from configuration.</span></span>  
+  
+    ```  
+    TableOp_dbo_EmployeeClient client = new TableOp_dbo_EmployeeClient("SqlAdapterBinding_TableOp_dbo_Employee"); //picking the binding and address from the app.config  
+  
+    client.ClientCredentials.UserName.UserName = "myuser";  
+    client.ClientCredentials.UserName.Password = "mypassword";  
+    ```  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="d94ec-127">Vous pouvez spécifier l’adresse de liaison et le point de terminaison client dans le code ou déclarer dans le fichier de configuration app.config.</span><span class="sxs-lookup"><span data-stu-id="d94ec-127">You can either specify the client binding and endpoint address in the code or declare it in the app.config configuration file.</span></span> <span data-ttu-id="d94ec-128">L’extrait de code précédent utilise ce dernier.</span><span class="sxs-lookup"><span data-stu-id="d94ec-128">The preceding code snippet uses the latter.</span></span> <span data-ttu-id="d94ec-129">Pour plus d’informations sur l’utilisation des deux approches, consultez [configurer une liaison de Client de l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/configure-a-client-binding-for-the-sql-adapter.md).</span><span class="sxs-lookup"><span data-stu-id="d94ec-129">For more information on how to use either approaches, see [Configure a Client Binding for the SQL Adapter](../../adapters-and-accelerators/adapter-sql/configure-a-client-binding-for-the-sql-adapter.md).</span></span>  
+  
+3.  <span data-ttu-id="d94ec-130">Ouvrez le client WCF.</span><span class="sxs-lookup"><span data-stu-id="d94ec-130">Open the WCF client.</span></span>  
+  
+    ```  
+    client.Open();  
+    ```  
+  
+4.  <span data-ttu-id="d94ec-131">Appeler des méthodes sur le client WCF créé à l’étape précédente pour effectuer une opération Select sur la base de données SQL server.</span><span class="sxs-lookup"><span data-stu-id="d94ec-131">Invoke methods on the WCF client created in preceding step to perform a Select operation on the SQL server database.</span></span> <span data-ttu-id="d94ec-132">Le code suivant appelle la méthode de sélection du client WCF pour appeler l’instruction SELECT sur une table de base de données SQL Server.</span><span class="sxs-lookup"><span data-stu-id="d94ec-132">The following code invokes the Select method of the WCF client to invoke the SELECT statement on a SQL Server database table.</span></span>  
+  
+    ```  
+    client.Select("*", "where [Name] = ‘John Smith’");  
+    ```  
+  
+5.  <span data-ttu-id="d94ec-133">Fermez le client WCF.</span><span class="sxs-lookup"><span data-stu-id="d94ec-133">Close the WCF client.</span></span>  
+  
+    ```  
+    client.Close();  
+    ```  
+  
+## <a name="see-also"></a><span data-ttu-id="d94ec-134">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="d94ec-134">See Also</span></span>  
+[<span data-ttu-id="d94ec-135">Développer des applications SQL à l’aide du modèle de Service WCF</span><span class="sxs-lookup"><span data-stu-id="d94ec-135">Develop SQL applications using the WCF Service model</span></span>](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-service-model.md)

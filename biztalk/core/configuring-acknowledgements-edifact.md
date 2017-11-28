@@ -1,0 +1,51 @@
+---
+title: "Configuration des accusés de réception (EDIFACT) | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 9436feb7-4c29-4b7c-b5c2-991660e6c1a9
+caps.latest.revision: "21"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 4fe376437c2d6657acb98d548c2c1373b050d599
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="configuring-acknowledgements-edifact"></a><span data-ttu-id="669a6-102">Configuration des accusés de réception (EDIFACT)</span><span class="sxs-lookup"><span data-stu-id="669a6-102">Configuring Acknowledgements (EDIFACT)</span></span>
+<span data-ttu-id="669a6-103">Dans l'accord de partenariat, vous pouvez spécifier le type d'accusé de réception renvoyé à un tiers et le type de port d'envoi utilisé pour envoyer l'accusé de réception.</span><span class="sxs-lookup"><span data-stu-id="669a6-103">In the partner agreement, you can specify what type of acknowledgment to return to a party and what kind of send port to use in sending the acknowledgment.</span></span> <span data-ttu-id="669a6-104">Vous spécifiez également si l'accusé de réception doit être traité par lot, le premier numéro de référence du document informatisé pour l'accusé de réception et si des boucles SG1/SG4 sont générées pour les documents informatisés acceptés.</span><span class="sxs-lookup"><span data-stu-id="669a6-104">You also specify whether to batch an acknowledgment, what the starting transaction set reference number is for the acknowledgment, and whether SG1/SG4 loops are generated for accepted transaction sets.</span></span>  
+  
+> [!IMPORTANT]
+>  <span data-ttu-id="669a6-105">Les propriétés suivantes sont désactivées dans cette page si vous avez désactivé la **BizTalk Local traite les messages reçus par le tiers ou prend en charge l’envoi de messages à partir de ce tiers** case à cocher lors de la création du tiers pour lequel vous créez le accord.</span><span class="sxs-lookup"><span data-stu-id="669a6-105">The following properties are disabled on this page if you cleared the **Local BizTalk processes messages received by the party or supports sending messages from this party** check box while creating the party for which you are creating the agreement.</span></span>  
+>   
+>  -   <span data-ttu-id="669a6-106">**Générer une boucle SG1/SG4 pour les documents informatisés acceptés (si elle est désactivée, boucle sera générée seulement si UCM.5 n’est pas égal à 7)**.</span><span class="sxs-lookup"><span data-stu-id="669a6-106">**Generate SG1/SG4 loop for accepted transaction sets (If unchecked, loop will be generated only if UCM.5 is not equal to 7)**.</span></span>  
+>   
+>  <span data-ttu-id="669a6-107">Cependant, les propriétés seront désactivées uniquement sous l'onglet d'accord unidirectionnel qui correspond aux propriétés des échanges envoyés par le tiers.</span><span class="sxs-lookup"><span data-stu-id="669a6-107">The properties are disabled only on the one-way agreement tab that corresponds to the properties for interchanges being sent from the party.</span></span> <span data-ttu-id="669a6-108">Par exemple, si vous créez deux tiers tiers A et tiers B et pour le tiers A, vous avez désactivé la case à cocher, la liste des propriétés ci-dessus sont désactivés sur le **tiers A -> tiers B** onglet d’accord unidirectionnel.</span><span class="sxs-lookup"><span data-stu-id="669a6-108">For example, if you create two parties Party A and Party B and for Party A, you cleared the check box, the above list of properties are disabled on the **Party A->Party B** one-way agreement tab.</span></span>  
+  
+## <a name="prerequisites"></a><span data-ttu-id="669a6-109">Conditions préalables</span><span class="sxs-lookup"><span data-stu-id="669a6-109">Prerequisites</span></span>  
+ <span data-ttu-id="669a6-110">Vous devez être connecté en tant que membre du groupe d'administrateurs [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ou du groupe Opérateurs B2B de  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span><span class="sxs-lookup"><span data-stu-id="669a6-110">You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators or [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators group.</span></span>  
+  
+### <a name="to-configure-edifact-ack-contrl-properties"></a><span data-ttu-id="669a6-111">Pour configurer les propriétés d'accusé de réception EDIFACT (CONTRL)</span><span class="sxs-lookup"><span data-stu-id="669a6-111">To configure EDIFACT ACK (CONTRL) properties</span></span>  
+  
+1.  <span data-ttu-id="669a6-112">Créer un accord le codage comme décrit dans EDIFACT, [paramètres généraux configuration (EDIFACT)](../core/configuring-general-settings-edifact.md).</span><span class="sxs-lookup"><span data-stu-id="669a6-112">Create an EDIFACT encoding agreement as described in [Configuring General Settings (EDIFACT)](../core/configuring-general-settings-edifact.md).</span></span> <span data-ttu-id="669a6-113">Pour mettre à jour un accord existant, cliquez sur l’accord dans le **tiers et profils d’entreprise** page, puis cliquez sur **propriétés**.</span><span class="sxs-lookup"><span data-stu-id="669a6-113">To update an existing agreement, right-click the agreement in the **Parties and Business Profiles** page, and click **Properties**.</span></span>  
+  
+2.  <span data-ttu-id="669a6-114">Sous l’onglet accord unidirectionnel, sous **paramètres de l’échange** , cliquez sur **accusés de réception**.</span><span class="sxs-lookup"><span data-stu-id="669a6-114">On a one-way agreement tab, under **Interchange Settings** section, click **Acknowledgements**.</span></span>  
+  
+3.  <span data-ttu-id="669a6-115">Dans le **section d’EDIFACT ACK (contrôle)**, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="669a6-115">In the **EDIFACT ACK (Control) section**, do the following:</span></span>  
+  
+    1.  <span data-ttu-id="669a6-116">Sélectionnez **réception du message (CONTRL) attendu** pour renvoyer un accusé de réception (CONTRL) technique à l’expéditeur des échanges.</span><span class="sxs-lookup"><span data-stu-id="669a6-116">Select **Receipt of message (CONTRL) expected** to return a technical (CONTRL) acknowledgment to the interchange sender.</span></span> <span data-ttu-id="669a6-117">Si **réception du message (CONTRL) attendu** est sélectionnée, sélectionnez **ne pas traiter par lot reçu de message du message (CONTRL)** pour envoyer chaque accusé de réception séparément ou laissez cette option désactivée pour les accusés de réception du lot.</span><span class="sxs-lookup"><span data-stu-id="669a6-117">If **Receipt of message (CONTRL) expected** is selected, select **Do not batch receipt of message (CONTRL) message** to send each acknowledgment separately, or leave cleared to batch the acknowledgments.</span></span>  
+  
+    2.  <span data-ttu-id="669a6-118">Sélectionnez **accusé de réception (CONTRL) attendu** pour renvoyer un accusé de réception (CONTRL) fonctionnel à l’expéditeur des échanges.</span><span class="sxs-lookup"><span data-stu-id="669a6-118">Select **Acknowledgement (CONTRL) expected** to return a functional (CONTRL) acknowledgment to the interchange sender.</span></span> <span data-ttu-id="669a6-119">Si **accusé de réception (CONTRL) attendu** est sélectionnée, sélectionnez **ne pas traiter par lot accusé de réception (CONTRL)** pour envoyer chaque accusé de réception fonctionnel séparément ou laissez cette option désactivée pour traiter par lot fonctionnelle accusés de réception.</span><span class="sxs-lookup"><span data-stu-id="669a6-119">If **Acknowledgement (CONTRL) expected** is selected, select **Do not batch Acknowledgement (CONTRL)** to send each functional acknowledgment separately, or leave cleared to batch the functional acknowledgments.</span></span>  
+  
+4.  <span data-ttu-id="669a6-120">Dans le **le rapport d’état acceptation du jeu de transactions** section, pour forcer la génération de boucles SG1/SG4 dans les accusés de réception CONTRL fonctionnels pour les documents informatisés acceptés, sélectionnez **une boucle SG1/SG4 générer pour accepté documents informatisés (si elle est désactivée, boucle sera générée seulement si UCM.5 n’est pas égal à 7)**.</span><span class="sxs-lookup"><span data-stu-id="669a6-120">In the **Transaction set status acceptance reporting** section, to force generation of SG1/SG4 loops in functional CONTRL acknowledgments for accepted transaction sets, select **Generate SG1/SG4 loop for accepted transaction sets (If unchecked, loop will be generated only if UCM.5 is not equal to 7)**.</span></span> <span data-ttu-id="669a6-121">Pour plus d’informations sur les boucles SG1/SG4, consultez [Message de CONTRL EDIFACT comme accusé de réception fonctionnel](../core/edifact-contrl-message-as-functional-acknowledgment.md).</span><span class="sxs-lookup"><span data-stu-id="669a6-121">For more information about SG1/SG4 loops, see [EDIFACT CONTRL Message as Functional Acknowledgment](../core/edifact-contrl-message-as-functional-acknowledgment.md).</span></span>  
+  
+5.  <span data-ttu-id="669a6-122">Cliquez sur **appliquer** pour accepter les modifications avant de poursuivre la configuration, ou cliquez sur **OK** pour valider les modifications, puis fermez la boîte de dialogue.</span><span class="sxs-lookup"><span data-stu-id="669a6-122">Click **Apply** to accept the changes before continuing with the configuration, or click **OK** to validate the changes and then close the dialog box.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="669a6-123">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="669a6-123">See Also</span></span>  
+ [<span data-ttu-id="669a6-124">Configuration des paramètres d’échange (EDIFACT)</span><span class="sxs-lookup"><span data-stu-id="669a6-124">Configuring Interchange Settings (EDIFACT)</span></span>](../core/configuring-interchange-settings-edifact.md)

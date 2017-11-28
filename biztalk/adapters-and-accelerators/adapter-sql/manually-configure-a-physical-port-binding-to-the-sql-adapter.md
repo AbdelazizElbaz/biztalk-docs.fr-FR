@@ -1,0 +1,49 @@
+---
+title: "Configurer manuellement une liaison de port physique à l’adaptateur SQL | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: d3f0bb78-c85f-4629-9e2d-cce180ff78ae
+caps.latest.revision: "12"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: ac72d914539eabc9b129985c2b9335270e561d18
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="manually-configure-a-physical-port-binding-to-the-sql-adapter"></a><span data-ttu-id="3cbce-102">Configurer manuellement une liaison de port physique à l’adaptateur SQL</span><span class="sxs-lookup"><span data-stu-id="3cbce-102">Manually configure a physical port binding to the SQL adapter</span></span>
+<span data-ttu-id="3cbce-103">Cette section fournit des informations sur la configuration de la [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] sous la forme d’une liaison WCF personnalisée ou un port WCF-SQL à l’aide de la [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] console d’Administration.</span><span class="sxs-lookup"><span data-stu-id="3cbce-103">This section provides information about configuring the [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] as a WCF custom binding or as a WCF-SQL port by using the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span> <span data-ttu-id="3cbce-104">Après le déploiement de la carte, vous serez en mesure d’envoyer et recevoir des messages à partir de SQL Server à l’aide de la [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] console d’Administration.</span><span class="sxs-lookup"><span data-stu-id="3cbce-104">After deploying the adapter, you will be able to send and receive messages from SQL Server by using the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span> <span data-ttu-id="3cbce-105">Les étapes de déploiement de l’adaptateur varient en fonction de :</span><span class="sxs-lookup"><span data-stu-id="3cbce-105">The steps for deploying the adapter vary depending on:</span></span>  
+  
+-   <span data-ttu-id="3cbce-106">La direction de communication entre [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] et [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span><span class="sxs-lookup"><span data-stu-id="3cbce-106">The direction of communication between [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] and the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span> <span data-ttu-id="3cbce-107">Vous pouvez choisir de configurer un envoi, réception, ou un port d’envoi / réception.</span><span class="sxs-lookup"><span data-stu-id="3cbce-107">You may choose to configure a send, receive, or a send-receive port.</span></span> <span data-ttu-id="3cbce-108">Les choix disponibles sont résumées dans le tableau suivant.</span><span class="sxs-lookup"><span data-stu-id="3cbce-108">Your choices are summarized in the following table.</span></span>  
+  
+    |<span data-ttu-id="3cbce-109">Direction du port</span><span class="sxs-lookup"><span data-stu-id="3cbce-109">Port direction</span></span>|<span data-ttu-id="3cbce-110">Modèle de communication</span><span class="sxs-lookup"><span data-stu-id="3cbce-110">Communication pattern</span></span>|<span data-ttu-id="3cbce-111">Direction de communication sélectionnables</span><span class="sxs-lookup"><span data-stu-id="3cbce-111">Direction of communication to choose from</span></span>|  
+    |--------------------|---------------------------|-----------------------------------------------|  
+    |<span data-ttu-id="3cbce-112">Send</span><span class="sxs-lookup"><span data-stu-id="3cbce-112">Send</span></span>|<span data-ttu-id="3cbce-113">Unidirectionnel</span><span class="sxs-lookup"><span data-stu-id="3cbce-113">One-way</span></span>|<span data-ttu-id="3cbce-114">Toujours envoyer les messages sur ce port.</span><span class="sxs-lookup"><span data-stu-id="3cbce-114">I will always be sending messages on this port.</span></span>|  
+    |<span data-ttu-id="3cbce-115">Recevoir</span><span class="sxs-lookup"><span data-stu-id="3cbce-115">Receive</span></span>|<span data-ttu-id="3cbce-116">Unidirectionnel</span><span class="sxs-lookup"><span data-stu-id="3cbce-116">One-way</span></span>|<span data-ttu-id="3cbce-117">Toujours recevoir les messages sur ce port.</span><span class="sxs-lookup"><span data-stu-id="3cbce-117">I will always be receiving messages on this port.</span></span>|  
+    |<span data-ttu-id="3cbce-118">Envoi / réception</span><span class="sxs-lookup"><span data-stu-id="3cbce-118">Send-receive</span></span>|<span data-ttu-id="3cbce-119">Requête-réponse</span><span class="sxs-lookup"><span data-stu-id="3cbce-119">Request-response</span></span>|<span data-ttu-id="3cbce-120">J’ai sera envoyer une requête et recevoir une réponse.</span><span class="sxs-lookup"><span data-stu-id="3cbce-120">I will be sending a request and receiving a response.</span></span>|  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="3cbce-121">Bidirectionnel recevoir des ports ne sont pas pris en charge par le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span><span class="sxs-lookup"><span data-stu-id="3cbce-121">Two-way receive ports are not supported by the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span>  
+  
+     <span data-ttu-id="3cbce-122">Pour plus d’informations, consultez [la création d’un Port d’envoi](../../core/how-to-create-a-send-port2.md), ou [la création d’un Port de réception](../../core/how-to-create-a-receive-port.md).</span><span class="sxs-lookup"><span data-stu-id="3cbce-122">For more information, see [How to Create a Send Port](../../core/how-to-create-a-send-port2.md), or [How to Create a Receive Port](../../core/how-to-create-a-receive-port.md).</span></span> 
+  
+-   <span data-ttu-id="3cbce-123">Indique si l’adaptateur envoie des messages vers le serveur SQL Server (opérations sortantes) ou reçoit des messages à partir de SQL Server (opérations entrantes).</span><span class="sxs-lookup"><span data-stu-id="3cbce-123">Whether the adapter sends messages to the SQL Server (outbound operations) or receives messages from SQL Server (inbound operations).</span></span> <span data-ttu-id="3cbce-124">Selon que vous souhaitez envoyer ou recevoir des messages, vous créez un envoi ou port de réception, respectivement.</span><span class="sxs-lookup"><span data-stu-id="3cbce-124">Depending on whether you want to send or receive messages, you will create a send or receive port, respectively.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="3cbce-125">Vous pouvez également configurer l’envoi ou les ports de réception en important un fichier de configuration de liaison qui est créé par le [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] dans le cadre de la génération de métadonnées.</span><span class="sxs-lookup"><span data-stu-id="3cbce-125">You can also configure the send or receive ports by importing a binding configuration file that is created by the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] as part of metadata generation.</span></span> <span data-ttu-id="3cbce-126">Pour obtenir des instructions sur la configuration des ports à l’aide de ce fichier de liaison, consultez [configurer une liaison de port physique à l’aide d’un fichier de liaison de port à utiliser l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/configure-a-physical-port-binding-using-a-port-binding-file-to-sql-adapter.md).</span><span class="sxs-lookup"><span data-stu-id="3cbce-126">For instructions on configuring ports using this binding file, see [Configure a physical port binding using a port binding file to use the SQL adapter](../../adapters-and-accelerators/adapter-sql/configure-a-physical-port-binding-using-a-port-binding-file-to-sql-adapter.md).</span></span>
+  
+## <a name="in-this-section"></a><span data-ttu-id="3cbce-127">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="3cbce-127">In This Section</span></span>  
+  
+-   [<span data-ttu-id="3cbce-128">Configurer un port à l’aide de l’adaptateur WCF-custom et l’adaptateur SQL</span><span class="sxs-lookup"><span data-stu-id="3cbce-128">Configure a port using the WCF-custom adapter and SQL adapter</span></span>](../../adapters-and-accelerators/adapter-sql/configure-a-port-using-the-wcf-custom-adapter-and-sql-adapter.md)  
+  
+-   [<span data-ttu-id="3cbce-129">Configurer un port à l’aide de l’adaptateur WCF-SQL</span><span class="sxs-lookup"><span data-stu-id="3cbce-129">Configure a port using the WCF-SQL adapter</span></span>](../../adapters-and-accelerators/adapter-sql/configure-a-port-using-the-wcf-sql-adapter.md)  
+  
+## <a name="see-also"></a><span data-ttu-id="3cbce-130">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="3cbce-130">See Also</span></span>  
+[<span data-ttu-id="3cbce-131">Blocs de construction pour développer des applications BizTalk à l’adaptateur SQL</span><span class="sxs-lookup"><span data-stu-id="3cbce-131">Building blocks to develop BizTalk applications with the SQL adapter</span></span>](../../adapters-and-accelerators/adapter-sql/building-blocks-to-develop-biztalk-applications-with-the-sql-adapter.md)

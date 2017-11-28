@@ -1,0 +1,1 @@
+<span data-ttu-id="fa917-101">Microsoft BizTalk Adapter pour Oracle E-Business Suite</span><span class="sxs-lookup"><span data-stu-id="fa917-101">Microsoft BizTalk Adapter for Oracle E-Business Suite</span></span>

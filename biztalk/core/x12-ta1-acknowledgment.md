@@ -1,0 +1,36 @@
+---
+title: "X12 accusé de réception TA1 | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 68568a1a-3669-46f4-8edc-8d057b012544
+caps.latest.revision: "5"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 8547175461732e41248e1e94bf961f95e655890f
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="x12-ta1-acknowledgment"></a><span data-ttu-id="a94b0-102">Accusé de réception X12 TA1</span><span class="sxs-lookup"><span data-stu-id="a94b0-102">X12 TA1 Acknowledgment</span></span>
+<span data-ttu-id="a94b0-103">L'accusé de réception X12 TA1 indique l'état du traitement de l'en-tête et du code de fin d'un échange par le récepteur d'adresse.</span><span class="sxs-lookup"><span data-stu-id="a94b0-103">The X12 TA1 technical acknowledgment reports the status of the processing of an interchange header and trailer by the address receiver.</span></span> <span data-ttu-id="a94b0-104">Si l'en-tête ISA et le code de fin IEA du message X12 sont valides, un accusé de réception TA1 positif est envoyé, quel que soit l'état du contenu restant.</span><span class="sxs-lookup"><span data-stu-id="a94b0-104">When the ISA and IEA of the X12-encoded message are valid, a positive TA1 ACK is sent, whatever the status of the other content is.</span></span> <span data-ttu-id="a94b0-105">Dans le cas contraire, un accusé de réception TA1 contenant un code d'erreur est envoyé.</span><span class="sxs-lookup"><span data-stu-id="a94b0-105">If not, TA1 ACK with an error code is sent.</span></span>  
+  
+ <span data-ttu-id="a94b0-106">L’accusé de réception TA1 est conforme à la X12_ de X12\<numéro de version > _TA1.xsd schéma.</span><span class="sxs-lookup"><span data-stu-id="a94b0-106">The X12 TA1 acknowledgment conforms to the X12_\<version number>_TA1.xsd schema.</span></span> <span data-ttu-id="a94b0-107">L'accusé de réception TA1 est envoyé dans une enveloppe ISA/IEA.</span><span class="sxs-lookup"><span data-stu-id="a94b0-107">The TA1 ACK is sent inside an ISA/IEA envelope.</span></span> <span data-ttu-id="a94b0-108">L'en-tête ISA et le code de fin IEA sont les mêmes que ceux des autres échanges.</span><span class="sxs-lookup"><span data-stu-id="a94b0-108">The ISA and IEA are no different than any other interchange.</span></span>  
+  
+ <span data-ttu-id="a94b0-109">Les segments dans l'échange d'un accusé de réception TA1 sont indiqués dans le tableau suivant.</span><span class="sxs-lookup"><span data-stu-id="a94b0-109">The segments within the interchange of a TA1 ACK are shown in the following table.</span></span>  
+  
+|<span data-ttu-id="a94b0-110">Champ de TA1</span><span class="sxs-lookup"><span data-stu-id="a94b0-110">Field in TA1</span></span>|<span data-ttu-id="a94b0-111">Nom du champ</span><span class="sxs-lookup"><span data-stu-id="a94b0-111">Name of Field</span></span>|<span data-ttu-id="a94b0-112">Mappé à l'échange entrant</span><span class="sxs-lookup"><span data-stu-id="a94b0-112">Mapped to Incoming Interchange</span></span>|<span data-ttu-id="a94b0-113">Valeur</span><span class="sxs-lookup"><span data-stu-id="a94b0-113">Value</span></span>|  
+|------------------|-------------------|------------------------------------|-----------|  
+|<span data-ttu-id="a94b0-114">TA101</span><span class="sxs-lookup"><span data-stu-id="a94b0-114">TA101</span></span>|<span data-ttu-id="a94b0-115">Numéro de contrôle de l'échange</span><span class="sxs-lookup"><span data-stu-id="a94b0-115">Interchange control number</span></span>|<span data-ttu-id="a94b0-116">ISA13 - Numéro de contrôle de l'échange</span><span class="sxs-lookup"><span data-stu-id="a94b0-116">ISA13 - Interchange control number</span></span>|-|  
+|<span data-ttu-id="a94b0-117">TA102</span><span class="sxs-lookup"><span data-stu-id="a94b0-117">TA102</span></span>|<span data-ttu-id="a94b0-118">Date de l'échange</span><span class="sxs-lookup"><span data-stu-id="a94b0-118">Interchange Date</span></span>|<span data-ttu-id="a94b0-119">ISA09 - Date de l'échange</span><span class="sxs-lookup"><span data-stu-id="a94b0-119">ISA09 Interchange Date</span></span>|-|  
+|<span data-ttu-id="a94b0-120">TA103</span><span class="sxs-lookup"><span data-stu-id="a94b0-120">TA103</span></span>|<span data-ttu-id="a94b0-121">Heure de l'échange</span><span class="sxs-lookup"><span data-stu-id="a94b0-121">Interchange Time</span></span>|<span data-ttu-id="a94b0-122">ISA10 - Heure de l'échange</span><span class="sxs-lookup"><span data-stu-id="a94b0-122">ISA10 – Interchange Time</span></span>|-|  
+|<span data-ttu-id="a94b0-123">TA104</span><span class="sxs-lookup"><span data-stu-id="a94b0-123">TA104</span></span>|<span data-ttu-id="a94b0-124">Code de l'accusé de réception de l'échange*</span><span class="sxs-lookup"><span data-stu-id="a94b0-124">Interchange ACK Code*</span></span>|<span data-ttu-id="a94b0-125">Néant</span><span class="sxs-lookup"><span data-stu-id="a94b0-125">N/A</span></span>|<span data-ttu-id="a94b0-126">Comportement du moteur : A, E ou R</span><span class="sxs-lookup"><span data-stu-id="a94b0-126">Engine behavior: A, E, or R</span></span><br /><br /> <span data-ttu-id="a94b0-127">A = accepter</span><span class="sxs-lookup"><span data-stu-id="a94b0-127">A = Accept</span></span><br /><br /> <span data-ttu-id="a94b0-128">E = échange accepté avec des erreurs</span><span class="sxs-lookup"><span data-stu-id="a94b0-128">E = Interchange accepted with errors</span></span><br /><br /> <span data-ttu-id="a94b0-129">R = échange rejeté/interrompu</span><span class="sxs-lookup"><span data-stu-id="a94b0-129">R = Interchange rejected/suspended</span></span>|  
+|<span data-ttu-id="a94b0-130">TA105</span><span class="sxs-lookup"><span data-stu-id="a94b0-130">TA105</span></span>|<span data-ttu-id="a94b0-131">Code de note de l'échange</span><span class="sxs-lookup"><span data-stu-id="a94b0-131">Interchange Note Code</span></span>|<span data-ttu-id="a94b0-132">Néant</span><span class="sxs-lookup"><span data-stu-id="a94b0-132">N/A</span></span>|<span data-ttu-id="a94b0-133">Code d'erreur de résultat du traitement.</span><span class="sxs-lookup"><span data-stu-id="a94b0-133">Processing result error code.</span></span> <span data-ttu-id="a94b0-134">**Remarque :** reportez-vous au tableau dans [X12 Codes d’erreur d’accusé de réception TA1](../core/x12-ta1-acknowledgment-error-codes.md).</span><span class="sxs-lookup"><span data-stu-id="a94b0-134">**Note:**  See table in [X12 TA1 Acknowledgment Error Codes](../core/x12-ta1-acknowledgment-error-codes.md).</span></span>|  
+  
+ <span data-ttu-id="a94b0-135">\*Comportement du moteur repose sur la validation d’élément de données ; à l’exception des informations de sécurité et d’authentification, lequel sera basée comparaisons de chaînes dans les informations de configuration.</span><span class="sxs-lookup"><span data-stu-id="a94b0-135">\* Engine behavior is based off data element validation; except for security and authentication information, which will be based off string comparisons in configuration information.</span></span>

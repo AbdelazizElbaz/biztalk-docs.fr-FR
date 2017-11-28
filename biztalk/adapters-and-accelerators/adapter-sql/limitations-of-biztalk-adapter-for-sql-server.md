@@ -1,0 +1,33 @@
+---
+title: "Limitations de l’adaptateur BizTalk pour SQL Server | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 5a19b109-a6b7-452f-a544-48627fa52f36
+caps.latest.revision: "15"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: c5a80990a9e3f417b64a06d8823300d53b2c4f3b
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="limitations-of-biztalk-adapter-for-sql-server"></a><span data-ttu-id="f6c80-102">Limitations de l’adaptateur BizTalk pour SQL Server</span><span class="sxs-lookup"><span data-stu-id="f6c80-102">Limitations of BizTalk Adapter for SQL Server</span></span>
+<span data-ttu-id="f6c80-103">Les éléments suivants sont connus limitations pour [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]:</span><span class="sxs-lookup"><span data-stu-id="f6c80-103">The following are known limitations for [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]:</span></span>  
+  
+-   <span data-ttu-id="f6c80-104">Le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] ne prend pas en charge les synonymes créés dans la base de données SQL Server.</span><span class="sxs-lookup"><span data-stu-id="f6c80-104">The [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] does not support synonyms created in the SQL Server database.</span></span> <span data-ttu-id="f6c80-105">Pour plus d’informations sur les synonymes dans SQL Server, consultez [http://go.microsoft.com/fwlink/?LinkId=120111](http://go.microsoft.com/fwlink/?LinkId=120111).</span><span class="sxs-lookup"><span data-stu-id="f6c80-105">For information about synonyms in SQL Server, see [http://go.microsoft.com/fwlink/?LinkId=120111](http://go.microsoft.com/fwlink/?LinkId=120111).</span></span>  
+  
+-   <span data-ttu-id="f6c80-106">Si vous modifiez l’heure système de l’ordinateur qui exécute le [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] hôte, l’heure n’est pas actualisé automatiquement dans le [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] hôte.</span><span class="sxs-lookup"><span data-stu-id="f6c80-106">If you change the system time of the computer running the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] host, the time is not updated automatically in the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] host.</span></span> <span data-ttu-id="f6c80-107">Cela peut entraîner un comportement incorrect des opérations entrantes qui utilisent le port de réception de [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].</span><span class="sxs-lookup"><span data-stu-id="f6c80-107">This could lead to incorrect behavior of the inbound operations that use the receive port of [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="f6c80-108">Pour résoudre ce problème, vous devez redémarrer l’instance d’hôte qui possède un port de réception après avoir modifié l’heure système de l’ordinateur exécutant.</span><span class="sxs-lookup"><span data-stu-id="f6c80-108">As a workaround, you must restart the host instance that has a receive port after you have changed the system time of the computer running it.</span></span>  
+  
+-   <span data-ttu-id="f6c80-109">Si un nom de paramètre dans une procédure stockée contient moins de 127 caractères, vous ne pouvez pas exécuter la procédure stockée à l’aide du [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span><span class="sxs-lookup"><span data-stu-id="f6c80-109">If a parameter name in a stored procedure contains 127 or more characters, you cannot execute the stored procedure using the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span> <span data-ttu-id="f6c80-110">Il s’agit en raison de la limitation d’ADO.NET.</span><span class="sxs-lookup"><span data-stu-id="f6c80-110">This is due to the limitation of ADO.NET.</span></span>  
+  
+-   <span data-ttu-id="f6c80-111">Le WSDL le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] génère, lorsque converti en un proxy, expose la colonne DateTimeOffset en tant que System.DateTime.</span><span class="sxs-lookup"><span data-stu-id="f6c80-111">The WSDL the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] generates, when converted to a proxy, exposes the DateTimeOffset column as System.DateTime.</span></span> <span data-ttu-id="f6c80-112">Ce type de données ne peut pas stocker les informations de fuseau horaire.</span><span class="sxs-lookup"><span data-stu-id="f6c80-112">This data type cannot store time zone information.</span></span> <span data-ttu-id="f6c80-113">Par conséquent, toute valeur de date/heure que l’adaptateur envoie au proxy sera convertie en heure locale de l’application .NET.</span><span class="sxs-lookup"><span data-stu-id="f6c80-113">As a consequence, any date/time value the adapter sends to the proxy will be converted into local time in the .NET application.</span></span> <span data-ttu-id="f6c80-114">Si vous souhaitez conserver les informations de fuseau horaire, vous devez modifier l’interface de votre proxy à utiliser le type de chaîne au lieu de System.DateTime.</span><span class="sxs-lookup"><span data-stu-id="f6c80-114">If you wish to keep the time zone information, you must change the interface of your proxy to use the String type instead of System.DateTime.</span></span> <span data-ttu-id="f6c80-115">Ensuite, utilisez XmlConvert.ToDateTimeOffset pour créer un objet Sytstem.DateTimeOffset, qui peut stocker les informations de fuseau horaire.</span><span class="sxs-lookup"><span data-stu-id="f6c80-115">Then, use XmlConvert.ToDateTimeOffset to create a Sytstem.DateTimeOffset object, which can store the timezone information.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="f6c80-116">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="f6c80-116">See Also</span></span>  
+ [<span data-ttu-id="f6c80-117">Comprendre l’adaptateur BizTalk pour SQL Server</span><span class="sxs-lookup"><span data-stu-id="f6c80-117">UNderstand BizTalk Adapter for SQL Server</span></span>](../../adapters-and-accelerators/adapter-sql/understand-biztalk-adapter-for-sql-server.md)

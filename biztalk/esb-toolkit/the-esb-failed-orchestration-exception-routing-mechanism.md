@@ -1,0 +1,32 @@
+---
+title: "Mécanisme de routage d’Orchestration Exception d’échec de l’architecture ESB | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: aa05f44b-7fb2-48fd-886d-c6d179904e6d
+caps.latest.revision: "2"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: afda61ea19587b327f0fe773b150eeb8f88a4f7a
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="the-esb-failed-orchestration-exception-routing-mechanism"></a><span data-ttu-id="3b698-102">Échec de l’architecture ESB mécanisme de routage d’Orchestration (Exception)</span><span class="sxs-lookup"><span data-stu-id="3b698-102">The ESB Failed Orchestration Exception Routing Mechanism</span></span>
+<span data-ttu-id="3b698-103">Le mécanisme d’ESB Échec de l’Orchestration Exception routage offre les fonctionnalités suivantes :</span><span class="sxs-lookup"><span data-stu-id="3b698-103">The ESB Failed Orchestration Exception Routing mechanism provides the following features:</span></span>  
+  
+-   <span data-ttu-id="3b698-104">**Création de messages d’erreur qui capturent les propriétés ambiantes.**</span><span class="sxs-lookup"><span data-stu-id="3b698-104">**Creating fault messages that capture ambient properties.**</span></span> <span data-ttu-id="3b698-105">Le **CreateFaultMessage** méthode génère un message d’erreur qui contient l’orchestration nom du service et l’ID d’instance de service, la forme d’orchestration actuellement activée, le nom de l’application à laquelle l’orchestration est déployé, le nom du serveur de traitement de l’orchestration, la date de l’exception et l’heure (format UTC).</span><span class="sxs-lookup"><span data-stu-id="3b698-105">The **CreateFaultMessage** method generates a fault message that contains the orchestration service name and service instance ID, the currently activated orchestration shape, the name of the application to which the orchestration is deployed, the name of the server processing the orchestration, and the exception date and time (UTC format).</span></span> <span data-ttu-id="3b698-106">Il ajoute également implicitement actuel **System.Exception** objet généré dans le Gestionnaire d’exceptions de la forme d’orchestration en cours.</span><span class="sxs-lookup"><span data-stu-id="3b698-106">It also implicitly adds the current **System.Exception** object generated in the exception handler of the current orchestration shape.</span></span>  
+  
+-   <span data-ttu-id="3b698-107">**Ajout de messages d’orchestration existante à un message d’erreur**.</span><span class="sxs-lookup"><span data-stu-id="3b698-107">**Adding existing orchestration messages to a fault message**.</span></span> <span data-ttu-id="3b698-108">Le **AddMessage** méthode conserve le paramètre XLANG du message d’orchestration et de toutes les propriétés de contexte de message dans le message d’erreur.</span><span class="sxs-lookup"><span data-stu-id="3b698-108">The **AddMessage** method preserves the XLANG setting of the orchestration message and all the message context properties in the fault message.</span></span>  
+  
+-   <span data-ttu-id="3b698-109">**Ajouter explicitement un objet d’Exception existant à un message d’erreur**.</span><span class="sxs-lookup"><span data-stu-id="3b698-109">**Explicitly adding an existing Exception object to a fault message**.</span></span> <span data-ttu-id="3b698-110">Le **SetFaultMsgException** méthode sérialise l’objet comme un **System.Exception** et la conserve dans le message d’erreur.</span><span class="sxs-lookup"><span data-stu-id="3b698-110">The **SetFaultMsgException** method serializes the object as a **System.Exception** and preserves it in the fault message.</span></span>  
+  
+-   <span data-ttu-id="3b698-111">**La récupération d’une collection énumérée de type sans les messages à partir d’un message d’erreur reçu par un abonné**.</span><span class="sxs-lookup"><span data-stu-id="3b698-111">**Retrieving an enumerated collection of type-less messages from a fault message received by a subscriber**.</span></span> <span data-ttu-id="3b698-112">Le **GetMessages** méthode récupère tous les messages persistants à partir de l’orchestration a échoué en tant que messages XLANG.</span><span class="sxs-lookup"><span data-stu-id="3b698-112">The **GetMessages** method retrieves all persisted messages from the failed orchestration as XLANG messages.</span></span> <span data-ttu-id="3b698-113">Il retourne toutes les propriétés de contexte d’origine de chaque message persistante dans chaque message XLANG.</span><span class="sxs-lookup"><span data-stu-id="3b698-113">It returns all the original context properties of each persisted message in each XLANG message.</span></span>  
+  
+-   <span data-ttu-id="3b698-114">**La récupération d’un message d’orchestration XLANG fortement typé à partir d’un message d’erreur reçu par un abonné**.</span><span class="sxs-lookup"><span data-stu-id="3b698-114">**Retrieving a strongly typed XLANG orchestration message from a fault message received by a subscriber**.</span></span> <span data-ttu-id="3b698-115">Le **GetMessage** méthode récupère un message persistant d’un type spécifique à partir du message d’erreur sous forme de message XLANG.</span><span class="sxs-lookup"><span data-stu-id="3b698-115">The **GetMessage** method retrieves a persisted message of a specific type from the fault message as an XLANG message.</span></span> <span data-ttu-id="3b698-116">Il retourne toutes les propriétés de contexte d’origine du message persistante dans le message XLANG.</span><span class="sxs-lookup"><span data-stu-id="3b698-116">It returns all the original context properties of the persisted message in the XLANG message.</span></span> <span data-ttu-id="3b698-117">Prend également en charge la récupération de la **System.Exception** objet généré par l’orchestration a échoué et récupère un persistante **System.Exception** objet à partir du message d’erreur.</span><span class="sxs-lookup"><span data-stu-id="3b698-117">It also supports retrieval of the **System.Exception** object generated by the failed orchestration and retrieves a persisted **System.Exception** object from the fault message.</span></span>

@@ -1,0 +1,46 @@
+---
+title: "En détail les Instructions de traitement | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: ed5d92fb-d53b-49a2-b2c7-8558708d6554
+caps.latest.revision: "2"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 532721c347189f2e3d4db9e57b2afc3aa45b76db
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="processing-instructions-in-detail"></a><span data-ttu-id="c89bb-102">Instructions de traitement en détail</span><span class="sxs-lookup"><span data-stu-id="c89bb-102">Processing Instructions in Detail</span></span>
+<span data-ttu-id="c89bb-103">Cette rubrique décrit le format et la structure du schéma de propriété système-.xsd, qui définit plusieurs propriétés de contexte pour le traitement d’itinéraire.</span><span class="sxs-lookup"><span data-stu-id="c89bb-103">This topic describes the format and structure of the System-Properties.xsd property schema, which defines several context properties required for itinerary processing.</span></span> <span data-ttu-id="c89bb-104">Ces propriétés sont promues lorsqu’un message est reçu et traité par le biais [!INCLUDE[prague](../includes/prague-md.md)] pipelines ; car ils sont des propriétés promues, elles sont accessibles aux composants BizTalk Server.</span><span class="sxs-lookup"><span data-stu-id="c89bb-104">These properties are promoted when a message is received and processed through [!INCLUDE[prague](../includes/prague-md.md)] pipelines; because they are promoted properties, they are accessible to BizTalk Server components.</span></span> <span data-ttu-id="c89bb-105">Les propriétés suivantes sont définies dans le schéma de propriété système-.xsd :</span><span class="sxs-lookup"><span data-stu-id="c89bb-105">The following properties are defined in the System-Properties.xsd property schema:</span></span>  
+  
+-   <span data-ttu-id="c89bb-106">**ItineraryHeader.**</span><span class="sxs-lookup"><span data-stu-id="c89bb-106">**ItineraryHeader.**</span></span> <span data-ttu-id="c89bb-107">Cette propriété contient toutes les informations d’itinéraire et une liste des services d’itinéraire à être appelée par une séquence d’étapes d’itinéraire.</span><span class="sxs-lookup"><span data-stu-id="c89bb-107">This property contains all the itinerary information and a list of itinerary services to be invoked through a sequence of itinerary steps.</span></span> <span data-ttu-id="c89bb-108">L’API de l’itinéraire utilise cette propriété en interne.</span><span class="sxs-lookup"><span data-stu-id="c89bb-108">The Itinerary API uses this property internally.</span></span>  
+  
+-   <span data-ttu-id="c89bb-109">**ServiceName.**</span><span class="sxs-lookup"><span data-stu-id="c89bb-109">**ServiceName.**</span></span> <span data-ttu-id="c89bb-110">Cette propriété contient le nom du service en cours d’itinéraire à traiter.</span><span class="sxs-lookup"><span data-stu-id="c89bb-110">This property contains the name of the current itinerary service to process.</span></span>  
+  
+-   <span data-ttu-id="c89bb-111">**ServiceState.**</span><span class="sxs-lookup"><span data-stu-id="c89bb-111">**ServiceState.**</span></span> <span data-ttu-id="c89bb-112">Cette propriété contient l’état du service en cours d’itinéraire : **en attente**, **Complete**, ou **Active**.</span><span class="sxs-lookup"><span data-stu-id="c89bb-112">This property contains the state of the current itinerary service: **Pending**, **Complete**, or **Active**.</span></span> <span data-ttu-id="c89bb-113">Tous les services s’abonner à une étape de l’itinéraire contenant un **ServiceState** valeur **en attente**.</span><span class="sxs-lookup"><span data-stu-id="c89bb-113">All services subscribe to an itinerary step that contains a **ServiceState** value of **Pending**.</span></span>  
+  
+-   <span data-ttu-id="c89bb-114">**ServiceType.**</span><span class="sxs-lookup"><span data-stu-id="c89bb-114">**ServiceType.**</span></span> <span data-ttu-id="c89bb-115">Cette propriété définit le type de l’étape de l’itinéraire (**messagerie** ou **Orchestration**).</span><span class="sxs-lookup"><span data-stu-id="c89bb-115">This property defines the type of the itinerary step (**Messaging** or **Orchestration**).</span></span>  
+  
+-   <span data-ttu-id="c89bb-116">**IsRequestResponse.**</span><span class="sxs-lookup"><span data-stu-id="c89bb-116">**IsRequestResponse.**</span></span> <span data-ttu-id="c89bb-117">Cette propriété définit le type de messagerie (unidirectionnel ou requête-réponse).</span><span class="sxs-lookup"><span data-stu-id="c89bb-117">This property defines the messaging type (one-way or request-response).</span></span>  
+  
+ <span data-ttu-id="c89bb-118">Le service itinéraire exécute les étapes d’itinéraire dans un des deux façons, selon la valeur de la **ServiceType** propriété :</span><span class="sxs-lookup"><span data-stu-id="c89bb-118">The Itinerary service executes itinerary steps in one of two ways, depending on the value of the **ServiceType** property:</span></span>  
+  
+-   <span data-ttu-id="c89bb-119">Composants de pipeline d’itinéraire exécutent toutes les étapes d’itinéraire avec une **ServiceType** propriété du **messagerie**.</span><span class="sxs-lookup"><span data-stu-id="c89bb-119">Itinerary pipeline components execute all itinerary steps with a **ServiceType** property of **Messaging**.</span></span> <span data-ttu-id="c89bb-120">Les développeurs peuvent étendre ce processus à l’aide d’un pipeline personnalisé et l’API de l’itinéraire.</span><span class="sxs-lookup"><span data-stu-id="c89bb-120">Developers can extend this process using a custom pipeline and the Itinerary API.</span></span>  
+  
+-   <span data-ttu-id="c89bb-121">Lorsque le **ServiceType** propriété **Orchestration**, une orchestration, activée par un abonnement à des propriétés de contexte d’itinéraire, exécute l’étape de l’itinéraire.</span><span class="sxs-lookup"><span data-stu-id="c89bb-121">When the **ServiceType** property is **Orchestration**, an orchestration, activated by a subscription to itinerary context properties, executes the itinerary step.</span></span>  
+  
+ <span data-ttu-id="c89bb-122">Lorsqu’un service de l’itinéraire traite une étape de l’itinéraire, le service est responsable de l’avancement de la feuille de route et distribuer le message avec un nouveau contexte d’itinéraire pour le traitement à l’aide de la publication-abonnement des fonctionnalités de BizTalk Server.</span><span class="sxs-lookup"><span data-stu-id="c89bb-122">When an Itinerary service processes an itinerary step, the service is responsible for advancing the itinerary and dispatching the message with a new itinerary context for further processing using the publish-subscribe functionality of BizTalk Server.</span></span> <span data-ttu-id="c89bb-123">Un itinéraire service dispose du contrôle total de la feuille de route dans le contexte du message et pouvez passer à l’étape appropriée en fonction de sa logique interne et le contenu du message.</span><span class="sxs-lookup"><span data-stu-id="c89bb-123">An itinerary service has full control of the itinerary in the message context and can advance to the appropriate step based on its internal logic and the message content.</span></span>  
+  
+ <span data-ttu-id="c89bb-124">Le mécanisme de traitement d’itinéraire prend en charge la combinaison de la messagerie et orchestration des étapes d’itinéraire dans un seul itinéraire.</span><span class="sxs-lookup"><span data-stu-id="c89bb-124">The itinerary processing mechanism supports the combination of messaging and orchestration itinerary steps within a single itinerary.</span></span> <span data-ttu-id="c89bb-125">Les développeurs peuvent également définir des services personnalisés d’itinéraire et configurer les étapes d’itinéraire personnalisées.</span><span class="sxs-lookup"><span data-stu-id="c89bb-125">Developers can also define custom itinerary services and configure custom itinerary steps.</span></span>  
+  
+ <span data-ttu-id="c89bb-126">Pour plus d’informations sur les itinéraires, consultez [l’installation et l’exécution de l’exemple de rampe d’entrée d’itinéraire](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md).</span><span class="sxs-lookup"><span data-stu-id="c89bb-126">For more information about itineraries, see [Installing and Running the Itinerary On-Ramp Sample](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md).</span></span>  
+  
+ <span data-ttu-id="c89bb-127">Pour plus d’informations sur les services d’itinéraire personnalisées et des étapes d’itinéraire personnalisées, consultez [création d’un Service personnalisé de la feuille de route](../esb-toolkit/creating-a-custom-itinerary-service.md).</span><span class="sxs-lookup"><span data-stu-id="c89bb-127">For more information about custom itinerary services and custom itinerary steps, see [Creating a Custom Itinerary Service](../esb-toolkit/creating-a-custom-itinerary-service.md).</span></span>

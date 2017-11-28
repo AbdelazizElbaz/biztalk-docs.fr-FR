@@ -1,0 +1,54 @@
+---
+title: "Création de liens enregistrement à enregistrement | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 9a3fa4d7-5689-4f55-af1b-369defa37037
+caps.latest.revision: "8"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: ac6abc3d27ad3ee2f135e3ff5c8c1749fcae5f4a
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="record-to-record-linking"></a><span data-ttu-id="a0f74-102">Création de liens enregistrement à enregistrement</span><span class="sxs-lookup"><span data-stu-id="a0f74-102">Record-to-Record Linking</span></span>
+
+## <a name="overview"></a><span data-ttu-id="a0f74-103">Vue d'ensemble</span><span class="sxs-lookup"><span data-stu-id="a0f74-103">Overview</span></span>
+<span data-ttu-id="a0f74-104">Dans Microsoft® [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], vous pouvez utiliser le Mappeur BizTalk pour créer plusieurs liens à la fois entre des portions similaires des schémas source et de destination.</span><span class="sxs-lookup"><span data-stu-id="a0f74-104">In Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], you can use BizTalk Mapper to create multiple links between similar portions of the source and destination schemas at the same time.</span></span> <span data-ttu-id="a0f74-105">Avec les versions précédentes de BizTalk Server, vous deviez créer ces liens un par un.</span><span class="sxs-lookup"><span data-stu-id="a0f74-105">In previous versions of BizTalk Server, you had to create such links individually, one at a time.</span></span> <span data-ttu-id="a0f74-106">Il existe deux méthodes de création de liens enregistrement à enregistrement, chacune étant adaptée à des scénarios différents basés sur le degré de similarité de la structure des enregistrements des schémas source et de destination pour lesquels des liens sont créés, comme décrit ci-dessous :</span><span class="sxs-lookup"><span data-stu-id="a0f74-106">There are two distinct types of record-to-record linking, each appropriate to different scenarios based on the degree of similarity of the structures of the source and destination schema records being linked, as follows:</span></span>  
+  
+-   <span data-ttu-id="a0f74-107">**Structure de liaison.**</span><span class="sxs-lookup"><span data-stu-id="a0f74-107">**Structure linking.**</span></span> <span data-ttu-id="a0f74-108">utilisez cette méthode quand les enregistrements pour lesquels des liens sont créés dans vos schémas source et de destination possèdent une structure identique ou très similaire.</span><span class="sxs-lookup"><span data-stu-id="a0f74-108">Use structure linking when the structure of the records being linked in your source and destination schemas are the same or very similar.</span></span>  
+  
+-   <span data-ttu-id="a0f74-109">**Mise en correspondance de nom de liaison.**</span><span class="sxs-lookup"><span data-stu-id="a0f74-109">**Name-matching linking.**</span></span> <span data-ttu-id="a0f74-110">utilisez cette méthode quand les enregistrements pour lesquels des liens sont créés dans vos schémas source et de destination ont une structure très similaire ainsi que des noms d'enregistrement et de champ identiques, mais plus de différences structurelles que la création de liens de type structure n'est capable d'en gérer.</span><span class="sxs-lookup"><span data-stu-id="a0f74-110">Use name-matching linking when the structure of the records being linked in your source and destination schemas are still similar, and with matching record and field names, but with more structural exceptions than are workable with structure linking.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="a0f74-111">Création de liens enregistrement à enregistrement s’applique à la copie de la valeur de liaison uniquement, comme configuré à l’aide du **liaisons sources** propriété.</span><span class="sxs-lookup"><span data-stu-id="a0f74-111">Record-to-record linking applies to value-copy linking only, as configured using the **Source Links** property.</span></span>  
+  
+## <a name="record-to-record-linking-structure-links"></a><span data-ttu-id="a0f74-112">Enregistrement à l’autre liaison : Les liens de Structure</span><span class="sxs-lookup"><span data-stu-id="a0f74-112">Record-to-Record Linking: Structure Links</span></span>  
+ <span data-ttu-id="a0f74-113">Utilisez cette méthode quand les enregistrements pour lesquels vous souhaitez créer des liens dans vos schémas source et de destination ont une structure identique ou très similaire.</span><span class="sxs-lookup"><span data-stu-id="a0f74-113">Use structure linking when the structure of the records that you want to link in your source and destination schemas is the same or almost exactly the same.</span></span>  
+  
+ <span data-ttu-id="a0f74-114">Si vos schémas ont la même structure exactement, il suffit d'ajouter un lien au nœud racine de chaque schéma.</span><span class="sxs-lookup"><span data-stu-id="a0f74-114">If the structure of your schemas is exactly the same, you need only add one link at the root node of each schema.</span></span> <span data-ttu-id="a0f74-115">Dans le menu contextuel, sélectionnez le mode de liaison souhaité.</span><span class="sxs-lookup"><span data-stu-id="a0f74-115">In the shortcut menu, select the desired mode of linking.</span></span>  
+  
+ <span data-ttu-id="a0f74-116">Si certains enregistrements de vos schémas ont la même structure exactement, il suffit d'ajouter un lien entre ces enregistrements dans chaque schéma.</span><span class="sxs-lookup"><span data-stu-id="a0f74-116">If the structure of particular records in your schemas is exactly the same, you need only add one link between those records in each schema.</span></span> <span data-ttu-id="a0f74-117">Dans le menu contextuel, sélectionnez le mode de liaison souhaité.</span><span class="sxs-lookup"><span data-stu-id="a0f74-117">In the shortcut menu, select the desired mode of linking.</span></span>  
+  
+ <span data-ttu-id="a0f74-118">Pour plus d’informations sur la façon de configurer l’enregistrement à l’autre liaison comme à l’aide de liens de type structure ou correspondance de noms, consultez la rubrique [enregistrements lien automatiquement](../core/how-to-link-records-automatically.md).</span><span class="sxs-lookup"><span data-stu-id="a0f74-118">For information about how to configure record-to-record linking as using either structure linking or name-matching linking, see [Link Records Automatically](../core/how-to-link-records-automatically.md).</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="a0f74-119">Les liens de structure constituent le type par défaut de création de liens enregistrement à enregistrement.</span><span class="sxs-lookup"><span data-stu-id="a0f74-119">Structure links are the default type of record-to-record linking.</span></span>  
+  
+## <a name="record-to-record-linking-name-matching-links"></a><span data-ttu-id="a0f74-120">Liaison de l’enregistrement à l’autre : Correspondance des noms des liens</span><span class="sxs-lookup"><span data-stu-id="a0f74-120">Record-to-Record Linking: Name-Matching Links</span></span>  
+ <span data-ttu-id="a0f74-121">Utilisez cette méthode quand les enregistrements pour lesquels vous souhaitez créer des liens dans vos schémas source et de destination ont une structure très similaire mais pas rigoureusement identique.</span><span class="sxs-lookup"><span data-stu-id="a0f74-121">Use name-matching links when the structure of the records that you want to link in your source and destination schemas is very similar, but not exactly the same.</span></span> <span data-ttu-id="a0f74-122">Par exemple, les nœuds à relier d'un des schémas source ou de destination pourront comporter plus d'enregistrements ou de champs subordonnés que ceux de l'autre schéma.</span><span class="sxs-lookup"><span data-stu-id="a0f74-122">For example, the source or destination schema might have more subordinate records or fields within the nodes to be linked than in the other schema.</span></span>  
+  
+ <span data-ttu-id="a0f74-123">Pour créer un lien de type correspondance de noms entre des parties des schémas source et de destination (voire des schémas entiers, le cas échéant) de structure presque identique, créez un lien partant d'un nœud parent de sous-hiérarchie et se terminant au niveau d'un autre nœud parent de sous-hiérarchie.</span><span class="sxs-lookup"><span data-stu-id="a0f74-123">To create a name-matching link between portions of your source and destination schemas that have nearly matching structures, including the entire schemas where applicable, create a link originating from a sub-hierarchy parent node and ending on another sub-hierarchy parent node.</span></span> <span data-ttu-id="a0f74-124">Dans le menu contextuel, sélectionnez le mode souhaité.</span><span class="sxs-lookup"><span data-stu-id="a0f74-124">In the shortcut menu, select the desired mode.</span></span> <span data-ttu-id="a0f74-125">Quand vous avez relié les nœuds, des liens sont créés automatiquement pour tous les enregistrements et champs subordonnés dans les schémas source et de destination qui portent le même nom et possèdent la même sous-structure.</span><span class="sxs-lookup"><span data-stu-id="a0f74-125">After you link the nodes, links are automatically created for all of the subordinate records and fields in the source and destination schemas that are named the same and have the same substructure.</span></span>  
+  
+ <span data-ttu-id="a0f74-126">Pour plus d’informations sur la façon de configurer l’enregistrement à l’autre liaison comme à l’aide de liens de type structure ou correspondance de noms, consultez la rubrique [enregistrements lien automatiquement](../core/how-to-link-records-automatically.md).</span><span class="sxs-lookup"><span data-stu-id="a0f74-126">For information about how to configure record-to-record linking as using either structure linking or name-matching linking, see [Link Records Automatically](../core/how-to-link-records-automatically.md).</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="a0f74-127">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="a0f74-127">See Also</span></span>  
+ <span data-ttu-id="a0f74-128">[Lier automatiquement des enregistrements](../core/how-to-link-records-automatically.md) </span><span class="sxs-lookup"><span data-stu-id="a0f74-128">[Link Records Automatically](../core/how-to-link-records-automatically.md) </span></span>  
+ [<span data-ttu-id="a0f74-129">Modifier les propriétés de lien</span><span class="sxs-lookup"><span data-stu-id="a0f74-129">Edit Link Properties</span></span>](../core/how-to-edit-link-properties.md)

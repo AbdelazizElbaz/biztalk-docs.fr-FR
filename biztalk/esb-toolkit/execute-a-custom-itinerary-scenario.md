@@ -1,0 +1,38 @@
+---
+title: "Exécuter un scénario d’itinéraire personnalisé | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 6fd69e29-e853-4b16-9966-29ab98dd5bea
+caps.latest.revision: "2"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 8659c5b37cba0520fb4a4c0f4c63c8d6ecff37be
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="execute-a-custom-itinerary-scenario"></a><span data-ttu-id="da081-102">Exécuter un scénario d’itinéraire personnalisé</span><span class="sxs-lookup"><span data-stu-id="da081-102">Execute a Custom Itinerary Scenario</span></span>
+<span data-ttu-id="da081-103">Vous pouvez utiliser le Client de Test itinéraire application exécuter des scénarios d’itinéraire personnalisées.</span><span class="sxs-lookup"><span data-stu-id="da081-103">You can use the Itinerary Test Client application execute custom itinerary scenarios.</span></span>  
+  
+### <a name="to-execute-a-custom-itinerary-scenario-using-the-itinerary-test-client-application"></a><span data-ttu-id="da081-104">Pour exécuter un scénario d’itinéraire personnalisé à l’aide de l’application cliente de Test d’itinéraire</span><span class="sxs-lookup"><span data-stu-id="da081-104">To execute a custom itinerary scenario using the Itinerary Test Client application</span></span>  
+  
+1.  <span data-ttu-id="da081-105">Dans l’Explorateur Windows, ouvrez le dossier \Source\Samples\Itinerary\Source\ESB. Itinerary.Test\bin\Debug où vous avez installé le [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] échantillonne et démarrer l’application nommée Esb.Itinerary.Test.exe.</span><span class="sxs-lookup"><span data-stu-id="da081-105">In Windows Explorer, open the folder \Source\Samples\Itinerary\Source\ESB.Itinerary.Test\bin\Debug where you installed the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] samples and start the application named Esb.Itinerary.Test.exe.</span></span>  
+  
+2.  <span data-ttu-id="da081-106">Sélectionnez un type de service dans le **ServiceType** la liste déroulante, spécifiez un nom pour la demande, puis sélectionnez le **IsRequestResponse** case à cocher s’il s’agit d’une opération de demande/réponse.</span><span class="sxs-lookup"><span data-stu-id="da081-106">Select a service type in the **ServiceType** drop-down list, specify a name for the request, and then select the **IsRequestResponse** check box if this is a request/response operation.</span></span> <span data-ttu-id="da081-107">Vous pouvez spécifier une opération bidirectionnelle et choisir d’utiliser la version WCF du service Web de l’itinéraire ; Pour ce faire, activez les cases à cocher dans la **Options du Service Web** section en haut de la fenêtre d’application.</span><span class="sxs-lookup"><span data-stu-id="da081-107">You can specify a two-way operation and choose to use the WCF version of the Itinerary Web service; to do this, select the check boxes in the **Web Service Options** section at the top of the application window.</span></span>  
+  
+3.  <span data-ttu-id="da081-108">Pour spécifier la résolution à utiliser avec le service sélectionné dans le **AddResolversfortheService** section de la fenêtre, sélectionnez un programme de résolution de type dans la liste déroulante, puis cliquez sur **AddResolver**.</span><span class="sxs-lookup"><span data-stu-id="da081-108">To specify the resolvers to use with the selected service in the **AddResolversfortheService** section of the window, select a resolver type from the drop-down list, and then click **AddResolver**.</span></span> <span data-ttu-id="da081-109">Vous pouvez ajouter plus d’un programme de résolution si nécessaire.</span><span class="sxs-lookup"><span data-stu-id="da081-109">You can add more than one resolver if required.</span></span> <span data-ttu-id="da081-110">Après avoir ajouté tous les programmes de résolution requis, cliquez sur le **AddService** pour ajouter cet appel de service à l’itinéraire.</span><span class="sxs-lookup"><span data-stu-id="da081-110">After you add all the required resolvers, click the **AddService** button to add this service invocation to the itinerary.</span></span>  
+  
+4.  <span data-ttu-id="da081-111">Si vous souhaitez ajouter plus d’appels de service pour l’itinéraire, répétez les étapes 2 et 3.</span><span class="sxs-lookup"><span data-stu-id="da081-111">If you want to add more service invocations to the itinerary, repeat steps 2 and 3.</span></span> <span data-ttu-id="da081-112">Vous pouvez également utiliser le **RemoveService** et **ClearServices** boutons pour modifier la liste des services dans l’itinéraire.</span><span class="sxs-lookup"><span data-stu-id="da081-112">You can also use the **RemoveService** and **ClearServices** buttons to modify the list of services in the itinerary.</span></span>  
+  
+5.  <span data-ttu-id="da081-113">Si vous souhaitez répéter l’itinéraire actuel à un autre moment, enregistrez la feuille de route en cours terminée sur le disque en cliquant sur le **SaveItinerary** bouton.</span><span class="sxs-lookup"><span data-stu-id="da081-113">If you want to repeat the current itinerary at another time, save the complete current itinerary to disk by clicking the **SaveItinerary** button.</span></span> <span data-ttu-id="da081-114">Vous pouvez le charger à nouveau en cliquant sur le **LoadItinerary** bouton.</span><span class="sxs-lookup"><span data-stu-id="da081-114">You can load it again by clicking the **LoadItinerary** button.</span></span> <span data-ttu-id="da081-115">Cela signifie que vous n’avez pas à spécifier les services et les programmes de résolution dans l’itinéraire, chaque fois que vous exécutez ce scénario avec différents messages ou les paramètres du service Web de l’itinéraire.</span><span class="sxs-lookup"><span data-stu-id="da081-115">This means that you do not have to specify the services and resolvers in the itinerary every time you execute this scenario with different messages or Itinerary Web service settings.</span></span>  
+  
+6.  <span data-ttu-id="da081-116">Charger un message approprié.</span><span class="sxs-lookup"><span data-stu-id="da081-116">Load a suitable message.</span></span> <span data-ttu-id="da081-117">Pour ce faire, tapez le chemin d’accès et le nom du message dans le **LoadMessage** texte zone ou cliquez sur le bouton de sélection (...), puis sélectionnez le fichier de message requis.</span><span class="sxs-lookup"><span data-stu-id="da081-117">To do this, either type the path and name of the message in the **LoadMessage** text box or click the ellipsis button (...), and then select the required message file.</span></span>  
+  
+7.  <span data-ttu-id="da081-118">Cliquez sur le **SubmitRequest** pour envoyer le message pour le traitement avec les paramètres d’itinéraire spécifiés.</span><span class="sxs-lookup"><span data-stu-id="da081-118">Click the **SubmitRequest** button to submit the message for processing with the itinerary settings you specified.</span></span> <span data-ttu-id="da081-119">Si le traitement retourne un résultat, il apparaît dans le **résultat** zone de texte.</span><span class="sxs-lookup"><span data-stu-id="da081-119">If the processing returns a result, this will appear in the **Result** text box.</span></span>

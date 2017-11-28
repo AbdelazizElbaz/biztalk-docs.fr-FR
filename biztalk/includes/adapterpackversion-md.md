@@ -1,0 +1,1 @@
+<span data-ttu-id="bbdee-101">Version du pack d'adaptateurs de BizTalk</span><span class="sxs-lookup"><span data-stu-id="bbdee-101">BizTalk Adapter Pack version</span></span>

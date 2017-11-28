@@ -1,0 +1,45 @@
+---
+title: Les facteurs qui affectent les performances maximales admissibles | Documents Microsoft
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- maximum sustainable throughput (MST), maintenance
+- monitoring, maximum sustainable thoughput (MST)
+- maintaining, maximum sustainable thoughput (MST)
+- maximum sustainable throughput (MST), monitoring
+- maximum sustainable throughput (MST), load patterns
+- maximum sustainable throughput (MST), sustainable load test
+- sustainable performance
+ms.assetid: 99b99655-bc77-425c-a133-204781d7c430
+caps.latest.revision: "10"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: be96ad552abef66e2a401e334da1c27ee0e08cd5
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="factors-that-affect-maximum-sustainable-performance"></a><span data-ttu-id="7857e-102">Facteurs affectant les performances maximales admissibles</span><span class="sxs-lookup"><span data-stu-id="7857e-102">Factors that Affect Maximum Sustainable Performance</span></span>
+<span data-ttu-id="7857e-103">Le débit maximal admissible dépend directement d'un large éventail de facteurs comme les ressources serveur disponibles, le type des composants utilisés dans la solution, la taille des messages et la charge globale que représentent les messages.</span><span class="sxs-lookup"><span data-stu-id="7857e-103">Maximum sustainable throughput is directly impacted by a wide range of factors such as available server resources, the type of features used in the solution, message size, and overall message load.</span></span> <span data-ttu-id="7857e-104">D'autres facteurs auxquels on ne pense pas forcément doivent être pris en compte.</span><span class="sxs-lookup"><span data-stu-id="7857e-104">There are other factors to be considered though that may not be immediately obvious.</span></span> <span data-ttu-id="7857e-105">Les facteurs suivants doivent être considérés lors de l'estimation des performances maximales admissibles :</span><span class="sxs-lookup"><span data-stu-id="7857e-105">The following factors should also be considered when estimating maximum sustainable performance:</span></span>  
+  
+## <a name="load-patterns"></a><span data-ttu-id="7857e-106">Modèles de charge</span><span class="sxs-lookup"><span data-stu-id="7857e-106">Load Patterns</span></span>  
+ <span data-ttu-id="7857e-107">En général, les messages ne sont pas acheminés dans un environnement BizTalk Server de production à un rythme prévisible et constant.</span><span class="sxs-lookup"><span data-stu-id="7857e-107">Messages do not typically flow into a production BizTalk Server environment at a predictable, consistent rate.</span></span> <span data-ttu-id="7857e-108">Souvent, ce sont les besoins de l'entreprise qui imposent à BizTalk Server de traiter les messages selon un rythme variable avec des pics et des creux.</span><span class="sxs-lookup"><span data-stu-id="7857e-108">More typically, business needs dictate that BizTalk Server process messages at a variable rate which exhibits peaks and valleys.</span></span> <span data-ttu-id="7857e-109">Quand un pic survient, les besoins de BizTalk Server en matière de traitement peuvent évoluer très vite et, alors qu'ils étaient négligeables, entraîner soudain une suractivité quand les messages sont reçus plus rapidement qu'ils ne sont traités.</span><span class="sxs-lookup"><span data-stu-id="7857e-109">When peaks occur, the BizTalk Server processing requirements may quickly jump from negligible to an overdrive condition where messages are received faster than they are processed.</span></span> <span data-ttu-id="7857e-110">Dans ce scénario, les messages publiés s'accumulent dans la base de données MessageBox jusqu'à ce que BizTalk les remette aux abonnés appropriés.</span><span class="sxs-lookup"><span data-stu-id="7857e-110">In this scenario, published messages are backlogged in the MessageBox database until BizTalk delivers the backlogged messages to the appropriate subscribers.</span></span> <span data-ttu-id="7857e-111">Tant que BizTalk Server est capable de traiter les messages accumulés entre des pics, il n'y a pas de problème.</span><span class="sxs-lookup"><span data-stu-id="7857e-111">As long as BizTalk Server is able to process the backlog of messages accumulated between peak load periods then this is not problematic.</span></span>  
+  
+ <span data-ttu-id="7857e-112">Le modèle de flux des messages étant variable dans un environnement BizTalk Server, il convient d'exécuter des scénarios de test sur une longue durée pour s'assurer que la solution peut absorber les pics et fournir le débit souhaité indéfiniment.</span><span class="sxs-lookup"><span data-stu-id="7857e-112">Because of the typically variable pattern of message flow into a BizTalk Server environment, testing scenarios should be run for an extended period of time to ensure that the solution can sustain the desired throughput indefinitely, recovering from all peak loads over time.</span></span>  
+  
+## <a name="monitoring-and-maintenance-activities"></a><span data-ttu-id="7857e-113">Activités de surveillance et de maintenance</span><span class="sxs-lookup"><span data-stu-id="7857e-113">Monitoring and Maintenance activities</span></span>  
+ <span data-ttu-id="7857e-114">Pendant la vie d'une solution de production, une multitude d'activités de surveillance et de maintenance peuvent avoir un impact sur les performances de BizTalk et doivent être prises en compte dans les scénarios de test.</span><span class="sxs-lookup"><span data-stu-id="7857e-114">During the life of a production solution, there is a host of monitoring and maintenance activities that can impact BizTalk performance and so should be factored into any testing scenarios.</span></span> <span data-ttu-id="7857e-115">Il s'agit notamment des activités suivantes :</span><span class="sxs-lookup"><span data-stu-id="7857e-115">These activities include:</span></span>  
+  
+-   <span data-ttu-id="7857e-116">**Requêtes de la Console Administration de BizTalk** ces requêtes consomment des ressources et affectent le débit global, selon le type et la fréquence des requêtes.</span><span class="sxs-lookup"><span data-stu-id="7857e-116">**BizTalk Administration Console queries** These queries consume resources and affect overall throughput depending on the type and frequency of the query.</span></span>  
+  
+-   <span data-ttu-id="7857e-117">**Sauvegarde, l’archivage et la purge des activités** également, ces activités consomment des ressources et doivent être prises en compte dans les scénarios de test.</span><span class="sxs-lookup"><span data-stu-id="7857e-117">**Backup, archiving, and purging activities** These activities also consume resources and should be factored into any testing scenarios.</span></span> <span data-ttu-id="7857e-118">Toutes les bases de données BizTalk Server doivent être sauvegardées régulièrement et leurs journaux des transactions doivent être réduits.</span><span class="sxs-lookup"><span data-stu-id="7857e-118">All BizTalk Server databases should be backed up periodically and their transaction logs truncated.</span></span> <span data-ttu-id="7857e-119">Sinon, la taille de ces journaux risque d'augmenter de manière incontrôlée, ce qui consommera tout l'espace disque disponible pour la base de données de transactions.</span><span class="sxs-lookup"><span data-stu-id="7857e-119">If this is not performed the transaction log may grow un-checked and consume all of the available disk space for the transaction database.</span></span> <span data-ttu-id="7857e-120">Si le suivi est utilisé, la base de données des suivis doit être purgée régulièrement et éventuellement archivée pour éviter que sa taille augmente trop.</span><span class="sxs-lookup"><span data-stu-id="7857e-120">If tracking is being used, the tracking database must periodically be purged and optionally archived to keep it from growing too large.</span></span> <span data-ttu-id="7857e-121">Pour plus d’informations sur la maintenance des bases de données BizTalk Server, consultez [sauvegarde et restauration de bases de données BizTalk Server](../core/backing-up-and-restoring-biztalk-server-databases.md).</span><span class="sxs-lookup"><span data-stu-id="7857e-121">For more information about maintaining BizTalk Server databases, please see [Backing Up and Restoring BizTalk Server Databases](../core/backing-up-and-restoring-biztalk-server-databases.md).</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="7857e-122">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="7857e-122">See Also</span></span>  
+ [<span data-ttu-id="7857e-123">Mesurer le débit de suivi maximal acceptable</span><span class="sxs-lookup"><span data-stu-id="7857e-123">Measuring Maximum Sustainable Tracking Throughput</span></span>](../core/measuring-maximum-sustainable-tracking-throughput.md)

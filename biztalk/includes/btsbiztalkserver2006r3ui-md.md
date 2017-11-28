@@ -1,0 +1,1 @@
+<span data-ttu-id="e4e4b-101">**BizTalk Server**</span><span class="sxs-lookup"><span data-stu-id="e4e4b-101">**BizTalk Server**</span></span>

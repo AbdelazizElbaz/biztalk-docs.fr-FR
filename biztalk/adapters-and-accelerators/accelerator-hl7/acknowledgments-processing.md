@@ -1,0 +1,43 @@
+---
+title: "Traitement des accusés de réception | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: acknowledgements, processing
+ms.assetid: 705bc12d-69ac-4641-a45e-4f1fab507e4a
+caps.latest.revision: "3"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: b726eb4698eaa9887703d7df01dc0f6cadf5eefc
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="acknowledgments-processing"></a><span data-ttu-id="4f506-102">Traitement des accusés de réception</span><span class="sxs-lookup"><span data-stu-id="4f506-102">Acknowledgments Processing</span></span>
+<span data-ttu-id="4f506-103">La spécification HL7 prend en charge l’échange de messages dans deux formats :</span><span class="sxs-lookup"><span data-stu-id="4f506-103">The HL7 specification supports exchange of messages in two formats:</span></span>  
+  
+-   <span data-ttu-id="4f506-104">Mise à jour non sollicitée et son accusé de réception (ACK)</span><span class="sxs-lookup"><span data-stu-id="4f506-104">Unsolicited update and its acknowledgment (ACK)</span></span>  
+  
+-   <span data-ttu-id="4f506-105">Requête et la réponse</span><span class="sxs-lookup"><span data-stu-id="4f506-105">Query and its response</span></span>  
+  
+ <span data-ttu-id="4f506-106">En réponse à un message à partir d’une application à l’origine, l’application répondre répond avec un message qui inclut des données ou une indication des erreurs.</span><span class="sxs-lookup"><span data-stu-id="4f506-106">In response to a message from an initiating application, the responding application responds with a message that includes data or an error indication.</span></span> <span data-ttu-id="4f506-107">L’application d’origine peut s’afficher un état de rejet de l’application de répondeur indiquant que l’application de répondeur n’a pas reçu le message correctement.</span><span class="sxs-lookup"><span data-stu-id="4f506-107">The initiating application may receive a reject status from the responder application indicating that the responder application did not receive the message correctly.</span></span> <span data-ttu-id="4f506-108">Dans les deux cas, le processus d’échange de messages implique deux entités, les applications de l’initiateur et répondre.</span><span class="sxs-lookup"><span data-stu-id="4f506-108">In both cases, the process of message exchange involves two entities, the initiating and responding applications.</span></span> <span data-ttu-id="4f506-109">Chacun est un expéditeur et le récepteur de messages.</span><span class="sxs-lookup"><span data-stu-id="4f506-109">Each is both a sender and receiver of messages.</span></span> <span data-ttu-id="4f506-110">L’application d’origine envoie tout d’abord et reçoit ensuite pendant que le système répond reçoit et envoie ensuite.</span><span class="sxs-lookup"><span data-stu-id="4f506-110">The initiating application sends first and then receives, while the responding system receives and then sends.</span></span>  
+  
+## <a name="unsolicited-updates"></a><span data-ttu-id="4f506-111">Mises à jour non sollicités</span><span class="sxs-lookup"><span data-stu-id="4f506-111">Unsolicited updates</span></span>  
+ <span data-ttu-id="4f506-112">Une mise à jour non sollicité se produit lorsqu’une application métier de line-of-business publie un message, ou démarre un transfert d’informations lorsqu’un événement déclencheur se produit.</span><span class="sxs-lookup"><span data-stu-id="4f506-112">An unsolicited update occurs when a line-of-business (LOB) application publishes a message, or initiates a transfer of information when a trigger event occurs.</span></span> <span data-ttu-id="4f506-113">Par exemple, lorsque les résultats de laboratoire pour un patient sont disponibles, il peut être nécessaire pour envoyer les résultats de laboratoire à plusieurs autres systèmes.</span><span class="sxs-lookup"><span data-stu-id="4f506-113">For example, when the laboratory results for a patient are available, there may be a need to send the laboratory results to several other systems.</span></span> <span data-ttu-id="4f506-114">Ces mises à jour sont mises à jour non sollicitées, auquel répond un accusé de réception.</span><span class="sxs-lookup"><span data-stu-id="4f506-114">These updates are unsolicited updates to which an ACK responds.</span></span>  
+  
+## <a name="queries"></a><span data-ttu-id="4f506-115">Requêtes</span><span class="sxs-lookup"><span data-stu-id="4f506-115">Queries</span></span>  
+ <span data-ttu-id="4f506-116">Dans le cas d’une requête, une application qui nécessite des informations envoie une requête vers une autre application, et l’application réceptrice répond à la requête.</span><span class="sxs-lookup"><span data-stu-id="4f506-116">In the case of a query, an application that requires information sends a query to another application, and the receiving application responds to the query.</span></span> <span data-ttu-id="4f506-117">Par exemple, une application de pharmacie peut envoyer un message de demande qui contient le numéro d’ID du patient dans le système d’entrée de commande (CPOE) et recevoir une réponse contenant les données nécessaires pour permettre le traitement de la commande.</span><span class="sxs-lookup"><span data-stu-id="4f506-117">For example, a pharmacy application may send a request message containing the ID number of the patient to the Order Entry (CPOE) system and receive a response containing the necessary data to permit processing of the order.</span></span> <span data-ttu-id="4f506-118">Cette opération de demande est une requête et diffère d’une mise à jour non sollicitée.</span><span class="sxs-lookup"><span data-stu-id="4f506-118">This requesting transaction is a query, and is different from an unsolicited update.</span></span> <span data-ttu-id="4f506-119">Les informations qui circulent entre les deux applications sont contenues dans la réponse.</span><span class="sxs-lookup"><span data-stu-id="4f506-119">The information that flows between the two applications is contained in the response.</span></span> <span data-ttu-id="4f506-120">La réponse elle-même ne nécessite pas un accusé de réception avec un quatrième message.</span><span class="sxs-lookup"><span data-stu-id="4f506-120">The response itself does not require an acknowledgment with a fourth message.</span></span> <span data-ttu-id="4f506-121">Toutefois, vous pouvez modifier cette dans certains environnements de répondre avec un accusé de réception.</span><span class="sxs-lookup"><span data-stu-id="4f506-121">However, you can modify this in some environments to respond with an ACK.</span></span> [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="4f506-122">BizTalk Accelerator pour HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) répond avec un accusé de réception s’ils sont configurés.</span><span class="sxs-lookup"><span data-stu-id="4f506-122"> BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) responds with an ACK if so configured.</span></span> <span data-ttu-id="4f506-123">Pour obtenir un exemple d’un échange de requête/réponse, consultez [Interrogative didacticiel](../../adapters-and-accelerators/accelerator-hl7/interrogative-tutorial.md).</span><span class="sxs-lookup"><span data-stu-id="4f506-123">For an example of a query/response exchange, see [Interrogative Tutorial](../../adapters-and-accelerators/accelerator-hl7/interrogative-tutorial.md).</span></span>  
+  
+## <a name="in-this-section"></a><span data-ttu-id="4f506-124">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="4f506-124">In This Section</span></span>  
+  
+-   [<span data-ttu-id="4f506-125">Validation des Messages</span><span class="sxs-lookup"><span data-stu-id="4f506-125">Validating Messages</span></span>](../../adapters-and-accelerators/accelerator-hl7/validating-messages.md)  
+  
+-   [<span data-ttu-id="4f506-126">Modes d’accusé de réception du Message</span><span class="sxs-lookup"><span data-stu-id="4f506-126">ACK Message Modes</span></span>](../../adapters-and-accelerators/accelerator-hl7/ack-message-modes.md)  
+  
+-   [<span data-ttu-id="4f506-127">Modèle de processus de l’accusé de réception</span><span class="sxs-lookup"><span data-stu-id="4f506-127">ACK Process Model</span></span>](../../adapters-and-accelerators/accelerator-hl7/ack-process-model.md)

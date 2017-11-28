@@ -1,0 +1,61 @@
+---
+title: "Les fonctionnalités de l’adaptateur Siebel clés | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- features, performance-related
+- adapter features, new
+- features, technology-related
+- features, metadata-related
+- adapter features, operations-related
+- adapter features, performance-related
+- features, new
+- features, operations-related
+- adapter features, metadata-related
+ms.assetid: 4612c9ab-810e-4c69-9168-a25c58682e71
+caps.latest.revision: "8"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 295ff8b13358109a5d4737fb5f9325b3c9caa0f8
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="key-features-in-the-siebel-adapter"></a><span data-ttu-id="1e018-102">Fonctionnalités clés de l’adaptateur Siebel</span><span class="sxs-lookup"><span data-stu-id="1e018-102">Key features in the Siebel Adapter</span></span>
+<span data-ttu-id="1e018-103">Cette section répertorie les nouvelles fonctionnalités dans [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)].</span><span class="sxs-lookup"><span data-stu-id="1e018-103">This section lists the new features in [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)].</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="1e018-104">Cette rubrique a été utilisée à partir de la version précédente de [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)] aide.</span><span class="sxs-lookup"><span data-stu-id="1e018-104">This topic has been used from the previous version of [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)] Help.</span></span>  
+  
+## <a name="new-features-in-the-siebel-adapter"></a><span data-ttu-id="1e018-105">Nouvelles fonctionnalités de l’adaptateur Siebel</span><span class="sxs-lookup"><span data-stu-id="1e018-105">New Features in the Siebel Adapter</span></span>  
+ <span data-ttu-id="1e018-106">Voici les nouvelles fonctionnalités introduites dans cette version de la [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].</span><span class="sxs-lookup"><span data-stu-id="1e018-106">The following are the new features introduced in this release of the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].</span></span>  
+  
+### <a name="technology-related-features"></a><span data-ttu-id="1e018-107">Fonctionnalités liées à la technologie</span><span class="sxs-lookup"><span data-stu-id="1e018-107">Technology-Related Features</span></span>  
+  
+|<span data-ttu-id="1e018-108">Fonctionnalité</span><span class="sxs-lookup"><span data-stu-id="1e018-108">Feature</span></span>|<span data-ttu-id="1e018-109">Commentaire</span><span class="sxs-lookup"><span data-stu-id="1e018-109">Comment</span></span>|  
+|-------------|-------------|  
+|<span data-ttu-id="1e018-110">Prise en charge pour l’utilisation de la [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] avec Microsoft Office SharePoint Server (MOSS)</span><span class="sxs-lookup"><span data-stu-id="1e018-110">Support for using the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] with Microsoft Office SharePoint Server (MOSS)</span></span>|<span data-ttu-id="1e018-111">Vous pouvez utiliser les adaptateurs de présenter des données à partir du système Siebel sur un portail MOSS.</span><span class="sxs-lookup"><span data-stu-id="1e018-111">You can use the adapters to present data from the Siebel system onto a MOSS portal.</span></span> <span data-ttu-id="1e018-112">Pour plus d’informations, consultez [à l’aide de l’adaptateur Siebel avec Microsoft Office SharePoint Server](https://msdn.microsoft.com/library/dd788017.aspx).</span><span class="sxs-lookup"><span data-stu-id="1e018-112">For more information, see [Using the Siebel Adapter with Microsoft Office SharePoint Server](https://msdn.microsoft.com/library/dd788017.aspx).</span></span>|  
+  
+### <a name="operations-related-features"></a><span data-ttu-id="1e018-113">Liées aux opérations de fonctionnalités</span><span class="sxs-lookup"><span data-stu-id="1e018-113">Operations-Related Features</span></span>  
+  
+|<span data-ttu-id="1e018-114">Fonctionnalité</span><span class="sxs-lookup"><span data-stu-id="1e018-114">Feature</span></span>|<span data-ttu-id="1e018-115">Commentaire</span><span class="sxs-lookup"><span data-stu-id="1e018-115">Comment</span></span>|  
+|-------------|-------------|  
+|<span data-ttu-id="1e018-116">Prise en charge pour l’opération d’association sur des composants d’entreprise</span><span class="sxs-lookup"><span data-stu-id="1e018-116">Support for ASSOCIATE operation on business components</span></span>|<span data-ttu-id="1e018-117">Les clients de l’adaptateur peuvent associer des enregistrements en spécifiant les expressions de recherche pour le parent et enfant.</span><span class="sxs-lookup"><span data-stu-id="1e018-117">Adapter clients can associate records by specifying search expressions for parent and child records.</span></span> <span data-ttu-id="1e018-118">Cela s’applique uniquement aux composants d’entreprise avec des champs de groupe à valeurs multiples (multiples).</span><span class="sxs-lookup"><span data-stu-id="1e018-118">This is applicable only for business components with multivalued group (MVG) fields.</span></span> <span data-ttu-id="1e018-119">Notez que les expressions de recherche doivent filtrer un seul enregistrement de composants d’entreprise à la fois parent et enfant.</span><span class="sxs-lookup"><span data-stu-id="1e018-119">Note that the search expressions should filter exactly one record for both the parent and child business components.</span></span>|  
+|<span data-ttu-id="1e018-120">Prise en charge pour dissocier une opération sur les composants d’entreprise</span><span class="sxs-lookup"><span data-stu-id="1e018-120">Support for DISASSOCIATE operation on business components</span></span>|<span data-ttu-id="1e018-121">Les clients de l’adaptateur peuvent dissocier les enregistrements en spécifiant les expressions de recherche pour le parent et enfant.</span><span class="sxs-lookup"><span data-stu-id="1e018-121">Adapter clients can dissociate records by specifying search expressions for parent and child records.</span></span> <span data-ttu-id="1e018-122">Cela s’applique uniquement aux composants d’entreprise avec des champs de groupe à valeurs multiples (multiples).</span><span class="sxs-lookup"><span data-stu-id="1e018-122">This is applicable only for business components with multivalued group (MVG) fields.</span></span> <span data-ttu-id="1e018-123">Notez que les expressions de recherche doivent filtrer un seul enregistrement de composants d’entreprise à la fois parent et enfant.</span><span class="sxs-lookup"><span data-stu-id="1e018-123">Note that the search expressions must filter exactly one record for both the parent and child business components.</span></span>|  
+|<span data-ttu-id="1e018-124">Prise en charge des requêtes de lien à valeurs multiples</span><span class="sxs-lookup"><span data-stu-id="1e018-124">Support for multivalue link queries</span></span>|<span data-ttu-id="1e018-125">Les clients de l’adaptateur peuvent interroger les enregistrements enfants associés à un enregistrement parent en spécifiant l’enregistrement parent et le nom du champ à valeurs multiples.</span><span class="sxs-lookup"><span data-stu-id="1e018-125">Adapter clients can query the child records associated with a parent record by specifying the parent record and the multivalued field name.</span></span> <span data-ttu-id="1e018-126">Cela s’applique uniquement aux composants d’entreprise avec des champs de groupe à valeurs multiples (multiples).</span><span class="sxs-lookup"><span data-stu-id="1e018-126">This is applicable only for business components with multivalued group (MVG) fields.</span></span>|  
+  
+### <a name="other-features"></a><span data-ttu-id="1e018-127">Autres fonctionnalités</span><span class="sxs-lookup"><span data-stu-id="1e018-127">Other Features</span></span>  
+  
+|<span data-ttu-id="1e018-128">Fonctionnalité</span><span class="sxs-lookup"><span data-stu-id="1e018-128">Feature</span></span>|<span data-ttu-id="1e018-129">Commentaire</span><span class="sxs-lookup"><span data-stu-id="1e018-129">Comment</span></span>|  
+|-------------|-------------|  
+|<span data-ttu-id="1e018-130">Nouvelle façon d’utiliser l’adaptateur dans[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]</span><span class="sxs-lookup"><span data-stu-id="1e018-130">New way of using the adapter in [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]</span></span>|<span data-ttu-id="1e018-131">Le [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] peut être utilisé en tant qu’un port WCF-Custom ou WCF-Siebel dans BizTalk.</span><span class="sxs-lookup"><span data-stu-id="1e018-131">The [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] can be used in BizTalk either as a WCF-Custom port or a WCF-Siebel port.</span></span> <span data-ttu-id="1e018-132">Si vous souhaitez utiliser le [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] via un port personnalisé WCF, vous n’avez pas besoin ajouter le port WCF-Custom à la [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] console d’Administration, car le port WCF-Custom est ajouté à la [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] console d’Administration par défaut.</span><span class="sxs-lookup"><span data-stu-id="1e018-132">If you want to use the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] through a WCF-Custom port, you do not need to add the WCF-Custom port to the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console because the WCF-Custom port is added to the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console by default.</span></span> <span data-ttu-id="1e018-133">Toutefois, si vous souhaitez utiliser le [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] via un port WCF-Siebel, vous devez d’abord ajouter l’adaptateur WCF-Siebel à la [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] console d’Administration.</span><span class="sxs-lookup"><span data-stu-id="1e018-133">However, if you want to use the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] through a WCF-Siebel port, you must first add the WCF-Siebel adapter to the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span> <span data-ttu-id="1e018-134">Pour plus d’informations, consultez [ajouter l’adaptateur Siebel à la Console Administration de BizTalk Server](../../adapters-and-accelerators/adapter-siebel/add-the-siebel-adapter-to-biztalk-server-administration-console.md).</span><span class="sxs-lookup"><span data-stu-id="1e018-134">For more information, see [Add the Siebel Adapter to BizTalk Server Administration Console](../../adapters-and-accelerators/adapter-siebel/add-the-siebel-adapter-to-biztalk-server-administration-console.md).</span></span>|  
+  
+## <a name="see-also"></a><span data-ttu-id="1e018-135">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="1e018-135">See Also</span></span>  
+ [<span data-ttu-id="1e018-136">Comprendre l’adaptateur BizTalk pour Siebel eBusiness Applications</span><span class="sxs-lookup"><span data-stu-id="1e018-136">Understand BizTalk Adapter for Siebel eBusiness Applications</span></span>](../../adapters-and-accelerators/adapter-siebel/understand-biztalk-adapter-for-siebel-ebusiness-applications.md)

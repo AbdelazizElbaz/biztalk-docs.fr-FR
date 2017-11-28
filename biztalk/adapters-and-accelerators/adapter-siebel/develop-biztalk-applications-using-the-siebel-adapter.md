@@ -1,0 +1,45 @@
+---
+title: "Développer des applications BizTalk à l’aide de l’adaptateur Siebel | Documents Microsoft"
+ms.custom: 
+ms.date: 08/02/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- BizTalk applications, developing
+- developing, BizTalk applications
+- CBR
+- Content-Based Routing
+ms.assetid: 1a2a9765-305c-44b2-aed7-5437725e4c19
+caps.latest.revision: "12"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: c8267c07027d9994b0115ebaf49fde96e76f2716
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="develop-biztalk-applications-using-the-siebel-adapter"></a><span data-ttu-id="b0095-102">Développer des applications BizTalk à l’aide de l’adaptateur Siebel</span><span class="sxs-lookup"><span data-stu-id="b0095-102">Develop BizTalk applications using the Siebel adapter</span></span>
+
+## <a name="overview"></a><span data-ttu-id="b0095-103">Vue d'ensemble</span><span class="sxs-lookup"><span data-stu-id="b0095-103">Overview</span></span>
+<span data-ttu-id="b0095-104">Développement d’applications BizTalk implique la création d’un projet BizTalk dans [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] et à l’aide de la [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] pour générer le schéma XML.</span><span class="sxs-lookup"><span data-stu-id="b0095-104">Developing BizTalk applications involves creating a BizTalk project in [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] and using the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] to generate XML schema.</span></span> <span data-ttu-id="b0095-105">Une fois que vous avez généré le schéma, vous pouvez utiliser le routage basé sur le contenu (CBR) ou créer des orchestrations BizTalk pour envoyer et recevoir des messages conformes au schéma généré.</span><span class="sxs-lookup"><span data-stu-id="b0095-105">Once you have generated the schema, you can either use Content-Based Routing (CBR) or create BizTalk orchestrations to send and receive messages that conform to the generated schema.</span></span>  
+  
+ <span data-ttu-id="b0095-106">CBR peut être utilisé dans les scénarios où les messages envoyés à un système Siebel nécessitent un traitement intensif.</span><span class="sxs-lookup"><span data-stu-id="b0095-106">CBR can be used in scenarios where the messages being sent to a Siebel system do not require any intensive processing.</span></span> <span data-ttu-id="b0095-107">Par exemple, si vous savez que le port de réception recevra les messages uniquement d’un certain type, vous pouvez ajouter un filtre au port d’envoi pour acheminer les messages correspondant à l’expression de filtre pour le port d’envoi.</span><span class="sxs-lookup"><span data-stu-id="b0095-107">For example, if you know that the receive port will be receiving messages only of a certain type, you can add a filter to the send port to route the messages matching the filter expression to the send port.</span></span>  
+  
+ <span data-ttu-id="b0095-108">Dans les orchestrations BizTalk, vous créez envoi et ports de réception pour envoyer et recevoir des messages vers et depuis le [!INCLUDE[wcfadapter_short](../../includes/wcfadapter-short-md.md)], qui à son tour envoie des messages à [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].</span><span class="sxs-lookup"><span data-stu-id="b0095-108">In BizTalk orchestrations, you create send and receive ports to send and receive messages to and from the [!INCLUDE[wcfadapter_short](../../includes/wcfadapter-short-md.md)], which in turn sends the messages to [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="b0095-109">Cette section fournit des informations sur l’utilisation des orchestrations BizTalk pour effectuer des opérations sur un système Siebel à l’aide du [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].</span><span class="sxs-lookup"><span data-stu-id="b0095-109">This section provides information about using BizTalk orchestrations to perform operations on a Siebel system using the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].</span></span> <span data-ttu-id="b0095-110">Le [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] à son tour utilise le [!INCLUDE[wcfadapter_short](../../includes/wcfadapter-short-md.md)] capable d’interagir avec une liaison WCF.</span><span class="sxs-lookup"><span data-stu-id="b0095-110">The [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] in turn uses the [!INCLUDE[wcfadapter_short](../../includes/wcfadapter-short-md.md)] that can interact with a WCF binding.</span></span>  
+
+## <a name="before-you-begin"></a><span data-ttu-id="b0095-111">Avant de commencer</span><span class="sxs-lookup"><span data-stu-id="b0095-111">Before you begin</span></span>  
+
+* <span data-ttu-id="b0095-112">Pour utiliser le [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] avec Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], affectez toujours la **EnableBizTalkCompatibilityMode** liaison de propriété **True**.</span><span class="sxs-lookup"><span data-stu-id="b0095-112">To use the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] with Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], always set the **EnableBizTalkCompatibilityMode** binding property to **True**.</span></span> <span data-ttu-id="b0095-113">Pour connaître les étapes, consultez [configurer les propriétés de liaison pour Siebel](../../adapters-and-accelerators/adapter-siebel/configure-the-binding-properties-for-siebel.md).</span><span class="sxs-lookup"><span data-stu-id="b0095-113">For the steps, see [Configure the binding properties for Siebel](../../adapters-and-accelerators/adapter-siebel/configure-the-binding-properties-for-siebel.md).</span></span>
+  
+* <span data-ttu-id="b0095-114">Le [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] livré avec [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] ne figure pas automatiquement dans la console Administration de BizTalk Server.</span><span class="sxs-lookup"><span data-stu-id="b0095-114">The [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] shipped with [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] is not automatically listed in the BizTalk Server Administration console.</span></span> <span data-ttu-id="b0095-115">C’est parce que le [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] est une liaison WCF personnalisée.</span><span class="sxs-lookup"><span data-stu-id="b0095-115">This is because the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] is a WCF custom binding.</span></span> 
+
+* <span data-ttu-id="b0095-116">Pour générer des métadonnées, utilisez le [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)].</span><span class="sxs-lookup"><span data-stu-id="b0095-116">To generate metadata, use the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)].</span></span> <span data-ttu-id="b0095-117">N’utilisez pas le [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)].</span><span class="sxs-lookup"><span data-stu-id="b0095-117">Do not use the [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)].</span></span> <span data-ttu-id="b0095-118">Pour obtenir des instructions sur l’utilisation de la [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], consultez [obtenir les métadonnées pour les opérations Siebel dans Visual Studio](../../adapters-and-accelerators/adapter-siebel/get-metadata-for-siebel-operations-in-visual-studio.md).</span><span class="sxs-lookup"><span data-stu-id="b0095-118">For instructions on using the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], see [Get Metadata for Siebel Operations in Visual Studio](../../adapters-and-accelerators/adapter-siebel/get-metadata-for-siebel-operations-in-visual-studio.md).</span></span>   
+
+  
+## <a name="see-also"></a><span data-ttu-id="b0095-119">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="b0095-119">See Also</span></span>  
+[<span data-ttu-id="b0095-120">Développer vos applications Siebel</span><span class="sxs-lookup"><span data-stu-id="b0095-120">Develop your Siebel applications</span></span>](../../adapters-and-accelerators/adapter-siebel/develop-your-siebel-applications.md)

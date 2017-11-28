@@ -1,0 +1,59 @@
+---
+title: "Partie 3 : Créer de lot scénario | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- batching, creating
+- creating, batching
+ms.assetid: 02247186-5b21-4738-9110-f0ca0304f0fd
+caps.latest.revision: "3"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 0949d45fc70ead14338e30b554e0cb4b9694b5d5
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="part-3-create-batch-scenario"></a><span data-ttu-id="b31dd-102">Partie 3 : Scénario de traitement par lots Créer</span><span class="sxs-lookup"><span data-stu-id="b31dd-102">Part 3: Create-Batch Scenario</span></span>
+<span data-ttu-id="b31dd-103">Dans cette partie du scénario, vous recevez deux messages entrants, les combinez en un message traité par lot et envoyez le lot vers une destination.</span><span class="sxs-lookup"><span data-stu-id="b31dd-103">In this part of the scenario, you receive two incoming messages, combine them into a batched message, and send the batch to a destination.</span></span> <span data-ttu-id="b31dd-104">BizTalk Accelerator pour HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) renvoie un lot d’accusé de réception contenant deux accusés de réception générés pour les messages à partir de la destination à la source.</span><span class="sxs-lookup"><span data-stu-id="b31dd-104">BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) returns an acknowledgment batch containing the two acknowledgments generated for the messages from the destination to the source.</span></span> <span data-ttu-id="b31dd-105">La figure suivante illustre le processus de cette partie du didacticiel.</span><span class="sxs-lookup"><span data-stu-id="b31dd-105">The following figure shows the process flow of this part of the tutorial.</span></span>  
+  
+ ![](../../adapters-and-accelerators/accelerator-hl7/media/hl7-create-batch-scenario.gif "hl7_create_batch_scenario")  
+  
+ <span data-ttu-id="b31dd-106">**Le flux des messages dans le scénario de traitement par lots de créer**</span><span class="sxs-lookup"><span data-stu-id="b31dd-106">**How messages flow in the Create-Batch scenario**</span></span>  
+  
+ <span data-ttu-id="b31dd-107">Ce scénario inclut le workflow suivant :</span><span class="sxs-lookup"><span data-stu-id="b31dd-107">This scenario includes the following workflow:</span></span>  
+  
+-   [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]<span data-ttu-id="b31dd-108">intercepte tous les messages conformes à la définition de lot dans la base de données MessageBox.</span><span class="sxs-lookup"><span data-stu-id="b31dd-108"> traps all messages conforming to the batch definition in the MessageBox database.</span></span> <span data-ttu-id="b31dd-109">Vous entrez cette définition dans le **définition de lot** onglet de [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] l’Explorateur de Configuration.</span><span class="sxs-lookup"><span data-stu-id="b31dd-109">You enter this definition in the **Batch Definition** tab of [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer.</span></span> <span data-ttu-id="b31dd-110">Dans ce didacticiel, [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] sera intercepter et traiter par lot de tous les messages à envoyer à Tutorial_BatchDest avec un schéma de ADT ^ A03 et tous les accusés de réception à envoyer au Tutorial_BatchSource à la suite ADT ^ A03 messages.</span><span class="sxs-lookup"><span data-stu-id="b31dd-110">In this tutorial, [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] will trap and batch all messages to be sent to Tutorial_BatchDest with a schema of ADT^A03, and all acknowledgments to be sent to Tutorial_BatchSource as a result of ADT^A03 messages.</span></span>  
+  
+-   <span data-ttu-id="b31dd-111">Lorsque l’heure d’envoi de traitement par lots planifié se produit, [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] envoie un message de contrôle de traitement par lots qui déclenche la transaction par lot sortant.</span><span class="sxs-lookup"><span data-stu-id="b31dd-111">When the scheduled batch send time occurs, [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] sends a batch control message that triggers the outbound batch transaction.</span></span> <span data-ttu-id="b31dd-112">Vous définissez la planification sur la **planification par lot** onglet de [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] l’Explorateur de Configuration.</span><span class="sxs-lookup"><span data-stu-id="b31dd-112">You define the schedule on the **Batch Schedule** tab of [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer.</span></span> <span data-ttu-id="b31dd-113">Vous pouvez également déclencher le processus en cliquant sur **envoyer maintenant** sur le même onglet.</span><span class="sxs-lookup"><span data-stu-id="b31dd-113">You can also trigger the process by clicking **Send Now** on the same tab.</span></span>  
+  
+-   <span data-ttu-id="b31dd-114">L’orchestration de traitement par lots constitue le lot de messages à partir des prise au piège dans la base de données MessageBox de messages.</span><span class="sxs-lookup"><span data-stu-id="b31dd-114">The batch orchestration forms the message batch out of the messages trapped in the MessageBox database.</span></span> <span data-ttu-id="b31dd-115">L’orchestration inclut également le lot dans un en-tête de fichier et le code de fin et un en-tête de lot et le code de fin.</span><span class="sxs-lookup"><span data-stu-id="b31dd-115">The orchestration also wraps the batch in a file header and trailer, and a batch header and trailer.</span></span> <span data-ttu-id="b31dd-116">Cette orchestration est natif [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] orchestration ajoutée par [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] le programme d’installation à votre ensemble d’orchestrations BizTalk, afin qu’il est répertorié sous le nœud Orchestrations dans l’Explorateur BizTalk ou de la Console Administration de BizTalk Server.</span><span class="sxs-lookup"><span data-stu-id="b31dd-116">This orchestration is a native [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] orchestration added by [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] setup to your set of BizTalk orchestrations, so it is listed under the Orchestrations node in BizTalk Explorer or the BizTalk Server Administration Console.</span></span>  
+  
+-   <span data-ttu-id="b31dd-117">Si accusés de réception sont définis pour le tiers source (comme c’est dans ce cas pour Tutorial_BatchSource), BizTalk traite les accusés de réception et les renvoie dans un lot (vers le dossier \Tutorial_BatchACKDrop).</span><span class="sxs-lookup"><span data-stu-id="b31dd-117">If acknowledgments are defined for the source party (as they are in this case for Tutorial_BatchSource), BizTalk batches the acknowledgments and returns them in a batch (to the \Tutorial_BatchACKDrop folder).</span></span> <span data-ttu-id="b31dd-118">Dans ce didacticiel, les accusés de réception par lot sont envoyées après un court délai.</span><span class="sxs-lookup"><span data-stu-id="b31dd-118">In this tutorial, the batched acknowledgments are sent after a short delay.</span></span>  
+  
+-   <span data-ttu-id="b31dd-119">L’orchestration achemine le message vers le port d’envoi (Tutorial_BatchDest), qui envoie le message traité par lot à la destination (dans ce cas, le dossier \Tutorial_BatchMsgDrop sur votre disque dur).</span><span class="sxs-lookup"><span data-stu-id="b31dd-119">The orchestration routes the message to the send port (Tutorial_BatchDest), which sends the batched message to the destination (in this case, the \Tutorial_BatchMsgDrop folder on your hard drive).</span></span> <span data-ttu-id="b31dd-120">Dans ce didacticiel, les messages traités par lot sont envoyées après une heure.</span><span class="sxs-lookup"><span data-stu-id="b31dd-120">In this tutorial, the batched messages are sent after one hour.</span></span>  
+  
+## <a name="in-this-section"></a><span data-ttu-id="b31dd-121">Dans cette section</span><span class="sxs-lookup"><span data-stu-id="b31dd-121">In This Section</span></span>  
+  
+-   [<span data-ttu-id="b31dd-122">Étape 1 : Configurer et activer le BatchControlPort Port de réception</span><span class="sxs-lookup"><span data-stu-id="b31dd-122">Step 1: Configure and Enable the BatchControlPort Receive Port</span></span>](../../adapters-and-accelerators/accelerator-hl7/step-1-configure-and-enable-the-batchcontrolport-receive-port.md)  
+  
+-   [<span data-ttu-id="b31dd-123">Étape 2 : Activer l’Orchestration de traitement par lots</span><span class="sxs-lookup"><span data-stu-id="b31dd-123">Step 2: Enable the Batch Orchestration</span></span>](../../adapters-and-accelerators/accelerator-hl7/step-2-enable-the-batch-orchestration.md)  
+  
+-   [<span data-ttu-id="b31dd-124">Étape 3 : Créer et configurer un tiers de Destination</span><span class="sxs-lookup"><span data-stu-id="b31dd-124">Step 3: Create and Configure a Destination Party</span></span>](../../adapters-and-accelerators/accelerator-hl7/step-3-create-and-configure-a-destination-party.md)  
+  
+-   [<span data-ttu-id="b31dd-125">Étape 4 : Configurez la partie de la Source pour le scénario de traitement par lots Créer</span><span class="sxs-lookup"><span data-stu-id="b31dd-125">Step 4: Configure the Source Party for the Create-Batch Scenario</span></span>](../../adapters-and-accelerators/accelerator-hl7/step-4-configure-the-source-party-for-the-create-batch-scenario.md)  
+  
+-   [<span data-ttu-id="b31dd-126">Étape 5 : Créer le Port d’envoi pour le lot de messages</span><span class="sxs-lookup"><span data-stu-id="b31dd-126">Step 5: Create the Send Port for the Message Batch</span></span>](../../adapters-and-accelerators/accelerator-hl7/step-5-create-the-send-port-for-the-message-batch.md)  
+  
+-   [<span data-ttu-id="b31dd-127">Étape 6 : Créer le Port d’envoi pour le traitement de l’accusé de réception</span><span class="sxs-lookup"><span data-stu-id="b31dd-127">Step 6: Create the Send Port for the Acknowledgment Batch</span></span>](../../adapters-and-accelerators/accelerator-hl7/step-6-create-the-send-port-for-the-acknowledgment-batch.md)  
+  
+-   [<span data-ttu-id="b31dd-128">Étape 7 : Démarrer l’Orchestration et redémarrez le serveur BizTalk</span><span class="sxs-lookup"><span data-stu-id="b31dd-128">Step 7: Start the Orchestration and Restart BizTalk Server</span></span>](../../adapters-and-accelerators/accelerator-hl7/step-7-start-the-orchestration-and-restart-biztalk-server.md)  
+  
+-   [<span data-ttu-id="b31dd-129">Étape 8 : Tester le scénario de traitement par lots Créer</span><span class="sxs-lookup"><span data-stu-id="b31dd-129">Step 8: Test the Create-Batch Scenario</span></span>](../../adapters-and-accelerators/accelerator-hl7/step-8-test-the-create-batch-scenario.md)

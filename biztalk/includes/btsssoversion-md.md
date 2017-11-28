@@ -1,0 +1,1 @@
+<span data-ttu-id="db455-101">6.0</span><span class="sxs-lookup"><span data-stu-id="db455-101">6.0</span></span>

@@ -1,0 +1,34 @@
+---
+title: Communication entre OrderBroker et OrderManager | Documents Microsoft
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- process management solution tutorial, publishing [MessageBox database]
+- MessageBox database, publishing
+ms.assetid: 1b77dcd2-f7a5-4013-b9a2-c06ace161792
+caps.latest.revision: "10"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 3f438b0dfe744aae5867943f4b1493bb163994f4
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="communication-between-orderbroker-and-ordermanager"></a><span data-ttu-id="75abd-102">Communication entre OrderBroker et OrderManager</span><span class="sxs-lookup"><span data-stu-id="75abd-102">Communication between OrderBroker and OrderManager</span></span>
+<span data-ttu-id="75abd-103">Le courtier de commandes et les orchestrations du Gestionnaire de commandes (**OrderBroker**, **OrderManager**) communiquent via la MessageBox de base de données plutôt que liaison directe entre partenaires.</span><span class="sxs-lookup"><span data-stu-id="75abd-103">The order broker and the order manager orchestrations (**OrderBroker**, **OrderManager**) communicate through the MessageBox database rather than being direct partner bound.</span></span> <span data-ttu-id="75abd-104">Le courtier et le gestionnaire sont ainsi faiblement couplés de sorte qu'ils puissent, le cas échéant, se trouver dans des groupes BizTalk et des emplacements géographiques distincts.</span><span class="sxs-lookup"><span data-stu-id="75abd-104">This ensures that the broker and manager are loosely coupled so that they can, if necessary, be located in separate BizTalk groups and in geographically-separated locations.</span></span> <span data-ttu-id="75abd-105">Une telle séparation des orchestrations demande uniquement une configuration administrative et ne requiert aucune modification au niveau du code.</span><span class="sxs-lookup"><span data-stu-id="75abd-105">Separating the orchestrations this way requires only administrative configuration and does not require any code changes.</span></span>  
+  
+ <span data-ttu-id="75abd-106">La configuration actuelle de la solution permet au courtier de commandes de marquer les messages destinés à un gestionnaire de commandes particulier et de les envoyer vers MessageBox.</span><span class="sxs-lookup"><span data-stu-id="75abd-106">In the solution as presently configured, the order broker marks messages for a particular order manager and sends them to the MessageBox.</span></span> <span data-ttu-id="75abd-107">Le gestionnaire de commandes effectue ensuite un filtrage des messages pour obtenir ceux qui lui sont destinés, puis il les récupère dans MessageBox.</span><span class="sxs-lookup"><span data-stu-id="75abd-107">In turn, the order manager filters for messages intended for it and takes those messages from the MessageBox.</span></span> <span data-ttu-id="75abd-108">Ce détour (à savoir la communication via MessageBox plutôt que par une liaison directe) simplifie le déplacement du courtier et du gestionnaire dans des groupes distincts.</span><span class="sxs-lookup"><span data-stu-id="75abd-108">This indirection—communicating through the MessageBox rather than direct binding—makes it easy to move the broker and manager to separate groups.</span></span>  
+  
+ <span data-ttu-id="75abd-109">Si la gestion du courtier et du gestionnaire est effectuée par plusieurs groupes ou si ces deux éléments doivent être situés dans des emplacements géographiques distincts, une telle conception permet répondre facilement à cette exigence.</span><span class="sxs-lookup"><span data-stu-id="75abd-109">If there are different groups responsible for maintaining the broker and manager or if they need to be in geographically separate locations, the design makes it easy to accommodate this.</span></span> <span data-ttu-id="75abd-110">Il vous suffit simplement de déplacer les orchestrations dans des groupes BizTalk distincts.</span><span class="sxs-lookup"><span data-stu-id="75abd-110">All you need to do is move the orchestrations to different BizTalk groups.</span></span> <span data-ttu-id="75abd-111">Après avoir séparé les orchestrations, vous devez les reconnecter en créant des ports.</span><span class="sxs-lookup"><span data-stu-id="75abd-111">After the orchestrations are in separate groups, reconnecting them only requires creating ports.</span></span> <span data-ttu-id="75abd-112">Dans le groupe du courtier de commandes, vous devez créer un port d'envoi qui dispose du même filtre que celui du gestionnaire de commandes ; cette opération permet de transférer un message vers le nouveau groupe.</span><span class="sxs-lookup"><span data-stu-id="75abd-112">In the order broker group, you must create a send port that has the same filter as the order manager, but that forwards the message to the new group.</span></span> <span data-ttu-id="75abd-113">Dans le groupe du gestionnaire de commandes, vous devez créer un port de réception pour ce message chargé de placer ce dernier dans la base de données MessageBox.</span><span class="sxs-lookup"><span data-stu-id="75abd-113">In the order manager group, you must create a receive port that receives the message and puts it in the MessageBox database.</span></span>  
+  
+ <span data-ttu-id="75abd-114">Vous pouvez déplacer les applications en les exportant dans deux fichiers MSI, un pour le courtier et un pour le gestionnaire.</span><span class="sxs-lookup"><span data-stu-id="75abd-114">You can move the applications by exporting them to create MSI files, one each for the broker and manager.</span></span> <span data-ttu-id="75abd-115">Pour plus d’informations sur l’exportation d’applications, consultez [comment exporter une Application BizTalk](../core/how-to-export-a-biztalk-application.md).</span><span class="sxs-lookup"><span data-stu-id="75abd-115">For more information about exporting applications, see [How to Export a BizTalk Application](../core/how-to-export-a-biztalk-application.md).</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="75abd-116">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="75abd-116">See Also</span></span>  
+ [<span data-ttu-id="75abd-117">Caractéristiques de l’implémentation de la Solution gestion des processus d’entreprise</span><span class="sxs-lookup"><span data-stu-id="75abd-117">Implementation Highlights of the Business Process Management Solution</span></span>](../core/implementation-highlights-of-the-business-process-management-solution.md)

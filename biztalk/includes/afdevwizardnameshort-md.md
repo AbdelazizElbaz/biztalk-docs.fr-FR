@@ -1,0 +1,1 @@
+<span data-ttu-id="f6d17-101">Assistant de développement d'adaptateurs</span><span class="sxs-lookup"><span data-stu-id="f6d17-101">Adapter Development Wizard</span></span>

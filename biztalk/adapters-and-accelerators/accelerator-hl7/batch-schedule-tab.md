@@ -1,0 +1,37 @@
+---
+title: Onglet Calendrier du lot | Documents Microsoft
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: btahl7.configurationexplorer.tab.batchschedule
+helpviewer_keywords:
+- batching, scheduling
+- Batch Schedule tab [Configuration Explorer]
+- scheduling batching
+ms.assetid: 3792388b-6af2-41c2-8f41-bdfda7e17b2b
+caps.latest.revision: "6"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: d870abad399dcca76c32a3a8d0e8c6637fc93284
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="batch-schedule-tab"></a><span data-ttu-id="1d374-102">Onglet Planification de traitement par lots</span><span class="sxs-lookup"><span data-stu-id="1d374-102">Batch Schedule Tab</span></span>
+<span data-ttu-id="1d374-103">Vous utilisez la **planification par lot** pour activer, de demander ou d’arrêter un lot sortant.</span><span class="sxs-lookup"><span data-stu-id="1d374-103">You use the **Batch Schedule** tab to activate, request, or terminate an outbound batch.</span></span> <span data-ttu-id="1d374-104">Activation d’un lot sortant comprend deux étapes : configuration temporels ou message compter les critères et avant de démarrer l’orchestration de traitement par lot sortante.</span><span class="sxs-lookup"><span data-stu-id="1d374-104">Activating an outbound batch consists of two steps: configuring time-based or message count criteria and then starting the outbound batching orchestration.</span></span>  
+  
+ <span data-ttu-id="1d374-105">Vous pouvez configurer [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] pour créer un lot sortant à l’aide basée sur le temps ou message critères de nombre ou une combinaison des deux.</span><span class="sxs-lookup"><span data-stu-id="1d374-105">You can configure [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] to create an outbound batch using time-based or message count criteria or a combination of both.</span></span> <span data-ttu-id="1d374-106">Définition des critères d’activation du lot est facultative.</span><span class="sxs-lookup"><span data-stu-id="1d374-106">Setting batch activation criteria is optional.</span></span> <span data-ttu-id="1d374-107">Si non spécifié, vous pouvez activer un lot manuellement.</span><span class="sxs-lookup"><span data-stu-id="1d374-107">If not specified, you can activate a batch manually.</span></span> <span data-ttu-id="1d374-108">Si vous souhaitez activer un lot à l’aide de temps ou les critères de nombre de messages, vous devez spécifier ces critères avant d’activer le traitement par lots.</span><span class="sxs-lookup"><span data-stu-id="1d374-108">If you want to activate a batch using time-based or message count criteria, you must specify these criteria before activating the batch.</span></span>  
+  
+ <span data-ttu-id="1d374-109">Dans le **BTAHL7 Configuration Explorer** boîte de dialogue le **planification par lot** onglet, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="1d374-109">In the **BTAHL7 Configuration Explorer** dialog box, on the **Batch Schedule** tab, do the following:</span></span>  
+  
+|<span data-ttu-id="1d374-110">Utiliser</span><span class="sxs-lookup"><span data-stu-id="1d374-110">Use this</span></span>|<span data-ttu-id="1d374-111">Pour effectuer cette opération</span><span class="sxs-lookup"><span data-stu-id="1d374-111">To do this</span></span>|  
+|--------------|----------------|  
+|<span data-ttu-id="1d374-112">**Heures avant tout d’abord du lot**</span><span class="sxs-lookup"><span data-stu-id="1d374-112">**Hours before first batch**</span></span>|<span data-ttu-id="1d374-113">Tapez le nombre d’heures avant de commencer le premier lot.</span><span class="sxs-lookup"><span data-stu-id="1d374-113">Type the number of hours before starting the first batch.</span></span><br /><br /> <span data-ttu-id="1d374-114">Cette option n’est pas disponible lorsque vous sélectionnez le nombre de messages que le contrôle de traitement par lots.</span><span class="sxs-lookup"><span data-stu-id="1d374-114">This option is not available when you select message count as the batch control.</span></span>|  
+|<span data-ttu-id="1d374-115">**Répétez le traitement par lots après**</span><span class="sxs-lookup"><span data-stu-id="1d374-115">**Repeat Batch After**</span></span>|<span data-ttu-id="1d374-116">Sélectionnez l'une des options suivantes :</span><span class="sxs-lookup"><span data-stu-id="1d374-116">Select one of the following options:</span></span><br /><br /> <span data-ttu-id="1d374-117">-                   **Heures**.</span><span class="sxs-lookup"><span data-stu-id="1d374-117">-                   **Hours**.</span></span> <span data-ttu-id="1d374-118">Tapez le nombre d’heures à attendre avant de répéter le processus de traitement par lots.</span><span class="sxs-lookup"><span data-stu-id="1d374-118">Type the number of hours to wait before repeating the batch process.</span></span><br /><br /> <span data-ttu-id="1d374-119">-                   **Messages**.</span><span class="sxs-lookup"><span data-stu-id="1d374-119">-                   **Messages**.</span></span> <span data-ttu-id="1d374-120">Tapez le nombre de messages que vous souhaitez traiter avant de lancer le lot suivant.</span><span class="sxs-lookup"><span data-stu-id="1d374-120">Type the number of messages that you want to process before initiating the next batch.</span></span>|  
+|<span data-ttu-id="1d374-121">**Contrôle de traitement par lots**</span><span class="sxs-lookup"><span data-stu-id="1d374-121">**Batch Control**</span></span>|<span data-ttu-id="1d374-122">Utilisez les options suivantes :</span><span class="sxs-lookup"><span data-stu-id="1d374-122">Use the following options:</span></span><br /><br /> <span data-ttu-id="1d374-123">-                   **Démarrer la planification**: sélectionnez cette option pour démarrer votre planification par lot.</span><span class="sxs-lookup"><span data-stu-id="1d374-123">-                   **Start Schedule**: Select this option to start your batch schedule.</span></span><br /><br /> <span data-ttu-id="1d374-124">-                   **Envoyer maintenant**: sélectionnez cette option pour démarrer le traitement par lots immédiatement.</span><span class="sxs-lookup"><span data-stu-id="1d374-124">-                   **Send Now**: Select this option to start the batch process immediately.</span></span> <span data-ttu-id="1d374-125">Cela remplace le **heures avant le premier lot** et **Répétez le traitement par lots après** paramètres.</span><span class="sxs-lookup"><span data-stu-id="1d374-125">This overrides the **Hours before first batch** and **Repeat Batch After** settings.</span></span><br /><br /> <span data-ttu-id="1d374-126">-                   **Arrêter planification**: sélectionnez cette option pour arrêter la planification du lot actuel.</span><span class="sxs-lookup"><span data-stu-id="1d374-126">-                   **Stop Schedule**: Select this option to stop the current batch schedule.</span></span> <span data-ttu-id="1d374-127">Cela termine le traitement par lots actuel et arrête l’orchestration de traitement par lots.</span><span class="sxs-lookup"><span data-stu-id="1d374-127">This completes the current batch and then stops the batch orchestration.</span></span>|

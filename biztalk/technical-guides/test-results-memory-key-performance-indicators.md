@@ -1,0 +1,39 @@
+---
+title: "Résultats des tests : Indicateurs de Performance clés de mémoire | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 224c40e5-08a7-4d30-b03a-4b6add5cde1f
+caps.latest.revision: "7"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: f4edf88023ee9e30e7fd0c808346b6231112f8ed
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="test-results-memory-key-performance-indicators"></a><span data-ttu-id="eace5-102">Résultats des tests : Indicateurs de Performance clés de mémoire</span><span class="sxs-lookup"><span data-stu-id="eace5-102">Test Results: Memory Key Performance Indicators</span></span>
+<span data-ttu-id="eace5-103">Cette rubrique résume la mémoire performances indicateurs clés (KPI) observé sur les scénarios de test.</span><span class="sxs-lookup"><span data-stu-id="eace5-103">This topic summarizes Memory Key Performance Indicators (KPI) observed during the test scenarios.</span></span> <span data-ttu-id="eace5-104">Ces tests évaluée la mémoire disponible en tant que mesurée par le **\Memory\Available Mo** compteur Perfmon.</span><span class="sxs-lookup"><span data-stu-id="eace5-104">These tests evaluated available memory as measured by the **\Memory\Available Mbytes** performance monitor counter.</span></span>  
+  
+## <a name="summary-of-memory-key-performance-indicators"></a><span data-ttu-id="eace5-105">Résumé des indicateurs de Performance clés de mémoire</span><span class="sxs-lookup"><span data-stu-id="eace5-105">Summary of Memory Key Performance Indicators</span></span>  
+ <span data-ttu-id="eace5-106">**Comparaison des indicateurs de Performance clé mémoire –** mémoire totale disponible pour SQL Server et BizTalk Server, telle que mesurée par le **\Memory\Available Mo** compteur Analyseur de performances a été relativement homogène pour tous les scénarios de test.</span><span class="sxs-lookup"><span data-stu-id="eace5-106">**Comparison of Memory Key Performance Indicators –** Total memory available to SQL Server and BizTalk Server as measured by the **\Memory\Available Mbytes** performance monitor counter was fairly consistent across all test scenarios.</span></span> <span data-ttu-id="eace5-107">La différence dans la mémoire moyenne disponible pour les ordinateurs physiques de BizTalk Server et la moyenne de la mémoire disponible pour les ordinateurs BizTalk Server en cours d’exécution sur des ordinateurs virtuels est dû au fait que deux ordinateurs physiques de BizTalk Server ont été utilisés pour le test lors de trois ordinateurs BizTalk Server en cours d’exécution sur des machines virtuelles ont été utilisés pour le test.</span><span class="sxs-lookup"><span data-stu-id="eace5-107">The difference in the average memory available to the physical BizTalk Server computers and the average memory available to the BizTalk Server computers running on virtual machines is due to the fact that two physical BizTalk Server computers were used for testing while three BizTalk Server computers running on virtual machines were used for testing.</span></span>  
+  
+ <span data-ttu-id="eace5-108">Le graphique ci-dessous illustre les performances de la mémoire sur les différentes plateformes de test :</span><span class="sxs-lookup"><span data-stu-id="eace5-108">The graphic below illustrates Memory performance on the various test platforms:</span></span>  
+  
+ <span data-ttu-id="eace5-109">![Indicateurs de Performance clés mémoire](../technical-guides/media/memorykpi.gif "MemoryKPI")</span><span class="sxs-lookup"><span data-stu-id="eace5-109">![Memory Key Performance Indicators](../technical-guides/media/memorykpi.gif "MemoryKPI")</span></span>  
+  
+ <span data-ttu-id="eace5-110">Le tableau ci-dessous illustre les performances relatives de l’indicateur collectées pour chaque configuration.</span><span class="sxs-lookup"><span data-stu-id="eace5-110">The table below illustrates the relative performance of the collected KPI’s for each configuration.</span></span> <span data-ttu-id="eace5-111">Chaque jeu de résultats est calculée en pourcentage de la configuration de base indicateur de performance clé</span><span class="sxs-lookup"><span data-stu-id="eace5-111">Each result set is calculated as a percentage of the Baseline configuration KPI</span></span>  
+  
+|<span data-ttu-id="eace5-112">Indicateur de performance clé</span><span class="sxs-lookup"><span data-stu-id="eace5-112">KPI</span></span>|<span data-ttu-id="eace5-113">Virtuel BizTalk/physiques SQL</span><span class="sxs-lookup"><span data-stu-id="eace5-113">Virtual BizTalk/Physical SQL</span></span>|<span data-ttu-id="eace5-114">Virtuel BizTalk/virtuel SQL sur des hôtes distincts</span><span class="sxs-lookup"><span data-stu-id="eace5-114">Virtual BizTalk/Virtual SQL on separate Hosts</span></span>|<span data-ttu-id="eace5-115">Virtuel SQL BizTalk/virtuel dans l’environnement de consolidé</span><span class="sxs-lookup"><span data-stu-id="eace5-115">Virtual BizTalk/Virtual SQL on Consolidated environment</span></span>|  
+|---------|-----------------------------------|----------------------------------------------------|--------------------------------------------------------------|  
+|<span data-ttu-id="eace5-116">Mémoire SQL Server disponible (Mo) par serveur</span><span class="sxs-lookup"><span data-stu-id="eace5-116">SQL Server Available Memory (Mbytes) Per Server</span></span>|<span data-ttu-id="eace5-117">100.1%</span><span class="sxs-lookup"><span data-stu-id="eace5-117">100.1%</span></span>|<span data-ttu-id="eace5-118">97.1%</span><span class="sxs-lookup"><span data-stu-id="eace5-118">97.1%</span></span>|<span data-ttu-id="eace5-119">103.2%</span><span class="sxs-lookup"><span data-stu-id="eace5-119">103.2%</span></span>|  
+|<span data-ttu-id="eace5-120">BizTalk totale de mémoire disponible (Mo)</span><span class="sxs-lookup"><span data-stu-id="eace5-120">Total BizTalk Available Memory (Mbytes)</span></span>|<span data-ttu-id="eace5-121">88.3%</span><span class="sxs-lookup"><span data-stu-id="eace5-121">88.3%</span></span>|<span data-ttu-id="eace5-122">95.9%</span><span class="sxs-lookup"><span data-stu-id="eace5-122">95.9%</span></span>|<span data-ttu-id="eace5-123">96%</span><span class="sxs-lookup"><span data-stu-id="eace5-123">96%</span></span>|  
+|<span data-ttu-id="eace5-124">Moyenne par serveur / BizTalk de mémoire disponible (Mo)</span><span class="sxs-lookup"><span data-stu-id="eace5-124">Average Per Server / BizTalk Available Memory (Mbytes)</span></span>|<span data-ttu-id="eace5-125">58.9%</span><span class="sxs-lookup"><span data-stu-id="eace5-125">58.9%</span></span>|<span data-ttu-id="eace5-126">63.9%</span><span class="sxs-lookup"><span data-stu-id="eace5-126">63.9%</span></span>|<span data-ttu-id="eace5-127">64%</span><span class="sxs-lookup"><span data-stu-id="eace5-127">64%</span></span>|  
+  
+ <span data-ttu-id="eace5-128">Pour plus d’informations sur la façon d’évaluer les performances de la mémoire, consultez le **mesure les performances de mémoire** section de la rubrique [liste de vérification : mesure des performances sur Hyper-V](../technical-guides/checklist-measuring-performance-on-hyper-v.md).</span><span class="sxs-lookup"><span data-stu-id="eace5-128">For more information about how to evaluate Memory performance, see the **Measuring Memory Performance** section of the topic [Checklist: Measuring Performance on Hyper-V](../technical-guides/checklist-measuring-performance-on-hyper-v.md).</span></span>

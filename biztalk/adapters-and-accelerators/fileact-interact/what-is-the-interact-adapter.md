@@ -1,0 +1,64 @@
+---
+title: "Quelle est l’interagir adaptateur ? | Microsoft Docs"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: a09063df-c6c4-41b9-96a1-e5059777fa72
+caps.latest.revision: "7"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 25877b95a440faef802d3d2ba7861687d7e4b108
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="what-is-the-interact-adapter"></a><span data-ttu-id="c7145-103">Quelle est l’interagir adaptateur ?</span><span class="sxs-lookup"><span data-stu-id="c7145-103">What Is the InterAct Adapter?</span></span>
+<span data-ttu-id="c7145-104">L’adaptateur interagissent pour SWIFTNet fournit la connectivité entre BizTalk Server et SWIFT Secure IP réseau (SIPN) pour le transfert des messages.</span><span class="sxs-lookup"><span data-stu-id="c7145-104">The InterAct Adapter for SWIFTNet provides connectivity between BizTalk Server and the SWIFT Secure IP Network (SIPN) for the transfer of messages.</span></span> <span data-ttu-id="c7145-105">Le SIPN transfère des messages et des fichiers sur un réseau privé sécurisé qui relie les établissements financiers, les infrastructures financiers et les clients.</span><span class="sxs-lookup"><span data-stu-id="c7145-105">The SIPN transfers messages and files over a secure private network which interconnects financial institutions, financial industry infrastructures, and customers.</span></span> <span data-ttu-id="c7145-106">L’adaptateur InterAct utilise l’interface de programmation d’application (API) s pour se connecter à la SIPN SWIFTNet lien (SNL).</span><span class="sxs-lookup"><span data-stu-id="c7145-106">The InterAct adapter uses the SWIFTNet Link (SNL) application programming interface (API)s to connect to the SIPN.</span></span>  
+  
+ <span data-ttu-id="c7145-107">SWIFTNet interagir fournit exchange sécurisée et fiable des messages financières structurés individuels.</span><span class="sxs-lookup"><span data-stu-id="c7145-107">SWIFTNet InterAct provides secure and reliable exchange of individual structured financial messages.</span></span> <span data-ttu-id="c7145-108">Clients SWIFT messagerie varient, les clients, mais également à partir du message à.</span><span class="sxs-lookup"><span data-stu-id="c7145-108">SWIFT customers’ messaging requirements vary from customer to customer but also from message to message.</span></span>  
+  
+ <span data-ttu-id="c7145-109">Il prend en charge les fonctionnalités suivantes :</span><span class="sxs-lookup"><span data-stu-id="c7145-109">It supports the following functionality:</span></span>  
+  
+-   <span data-ttu-id="c7145-110">Sécurité de l’infrastructure à clé publique</span><span class="sxs-lookup"><span data-stu-id="c7145-110">PKI security</span></span>  
+  
+-   <span data-ttu-id="c7145-111">Validation de message</span><span class="sxs-lookup"><span data-stu-id="c7145-111">Message validation</span></span>  
+  
+-   <span data-ttu-id="c7145-112">Routage centrale configurable</span><span class="sxs-lookup"><span data-stu-id="c7145-112">Configurable central routing</span></span>  
+  
+-   <span data-ttu-id="c7145-113">Priorité du message</span><span class="sxs-lookup"><span data-stu-id="c7145-113">Message priority</span></span>  
+  
+-   <span data-ttu-id="c7145-114">Accusé de réception pour le magasin et transmettre les messages</span><span class="sxs-lookup"><span data-stu-id="c7145-114">Delivery notification for store and forward messages</span></span>  
+  
+-   <span data-ttu-id="c7145-115">Non répudiation d’émission et de réception.</span><span class="sxs-lookup"><span data-stu-id="c7145-115">Non-repudiation of emission and receipt.</span></span>  
+  
+ <span data-ttu-id="c7145-116">Utilisez l’adaptateur interagir pour SWIFTNet avec les applications fournies en externe à utiliser les fonctionnalités d’interagir.</span><span class="sxs-lookup"><span data-stu-id="c7145-116">You use the InterAct Adapter for SWIFTNet with externally supplied applications to utilize the features of InterAct.</span></span> <span data-ttu-id="c7145-117">Cette carte ne connaît pas le contenu des messages à être transféré et ne sera ne pas audit ni valider le contenu des messages, sauf pour les primitives d’exchange.</span><span class="sxs-lookup"><span data-stu-id="c7145-117">This adapter has no knowledge of the contents of the messages to be transferred, and will not audit nor validate the contents of the messages, except for the exchange primitives.</span></span>  
+  
+## <a name="interact-message-exchange"></a><span data-ttu-id="c7145-118">Échange de messages interAct</span><span class="sxs-lookup"><span data-stu-id="c7145-118">InterAct Message Exchange</span></span>  
+ <span data-ttu-id="c7145-119">SWIFTNet interagir fournit exchange sécurisée et fiable des messages financières structurés individuels.</span><span class="sxs-lookup"><span data-stu-id="c7145-119">SWIFTNet InterAct provides secure and reliable exchange of individual structured financial messages.</span></span> <span data-ttu-id="c7145-120">Clients SWIFT messagerie varient, les clients, mais également à partir du message à.</span><span class="sxs-lookup"><span data-stu-id="c7145-120">SWIFT customers’ messaging requirements vary from customer to customer but also from message to message.</span></span> <span data-ttu-id="c7145-121">SWIFTNet interagir vous offre un large éventail de modes de télécommunication :</span><span class="sxs-lookup"><span data-stu-id="c7145-121">SWIFTNet InterAct offers you a broad range of telecommunication modes:</span></span>  
+  
+-   <span data-ttu-id="c7145-122">**Mémorisation de messagerie.**</span><span class="sxs-lookup"><span data-stu-id="c7145-122">**Store-and-forward messaging.**</span></span> <span data-ttu-id="c7145-123">La capacité de stockage et transfert de SWIFTNet interagissent est conçue pour les messages destinés à un grand nombre de correspondants, qui peut ne pas être en ligne au moment de la transmission.</span><span class="sxs-lookup"><span data-stu-id="c7145-123">SWIFTNet InterAct’s store-and-forward capability is designed for messages destined for a large number of correspondents, many of whom may not be online at the time of transmission.</span></span> <span data-ttu-id="c7145-124">Il supprime l’incertitude et les problèmes de préoccuper ou non vos correspondants sont en ligne au moment de que vous envoyez le message.</span><span class="sxs-lookup"><span data-stu-id="c7145-124">It removes the uncertainty and inconvenience of worrying about whether or not your correspondents are on-line at the time you send the message.</span></span> <span data-ttu-id="c7145-125">Le message est remis dès que le destinataire est prêt à le recevoir.</span><span class="sxs-lookup"><span data-stu-id="c7145-125">The message is delivered as soon as the recipient is ready to receive it.</span></span> <span data-ttu-id="c7145-126">Par conséquent, il fournit un moyen idéal pour envoyer les instructions individuelles, confirmations et des rapports à un grand nombre de correspondants, dont certaines peuvent être dans des fuseaux horaires différents.</span><span class="sxs-lookup"><span data-stu-id="c7145-126">As a result, it provides an ideal way to send individual instructions, confirmations and reports to large numbers of correspondents, some of which may be in different time zones.</span></span>  
+  
+-   <span data-ttu-id="c7145-127">**La messagerie en temps réel.**</span><span class="sxs-lookup"><span data-stu-id="c7145-127">**Real-time messaging.**</span></span> <span data-ttu-id="c7145-128">Messagerie en temps réel offre une solution économique pour stocker et transmettre des messages qui sont destinés à correspondants qui sont en ligne au moment de la transmission.</span><span class="sxs-lookup"><span data-stu-id="c7145-128">Real-time messaging offers a low-cost alternative to store and forward for messages which are destined for correspondents that are online at the time of transmission.</span></span> <span data-ttu-id="c7145-129">Par conséquent, il est idéal pour l’envoi des instructions individuelles, les confirmations et les rapports, à quelques correspondants volumineux ou des messages sur le marché des infrastructures.</span><span class="sxs-lookup"><span data-stu-id="c7145-129">As a result, it is ideal for sending individual instructions, confirmations and reports, to a few large correspondents or for messages to market infrastructures.</span></span>  
+  
+ <span data-ttu-id="c7145-130">Les fonctionnalités facultatives SWIFTNet interagir (sur une base de message par message) sont les suivantes :</span><span class="sxs-lookup"><span data-stu-id="c7145-130">The optional SWIFTNet InterAct features (on a message by message basis) include:</span></span>  
+  
+-   <span data-ttu-id="c7145-131">**Priorité du message.**</span><span class="sxs-lookup"><span data-stu-id="c7145-131">**Message priority.**</span></span> <span data-ttu-id="c7145-132">Messages peuvent être marquées comme « Urgente » dans le message afin de permettre approprié de traitement par vos correspondants.</span><span class="sxs-lookup"><span data-stu-id="c7145-132">Messages can be flagged as “Urgent” in the message, to allow for appropriate processing by your correspondents.</span></span>  
+  
+-   <span data-ttu-id="c7145-133">**Accusé de réception (mode de stockage et transfert).**</span><span class="sxs-lookup"><span data-stu-id="c7145-133">**Delivery notification (store-and-forward mode).**</span></span> <span data-ttu-id="c7145-134">Confirme que votre correspondant reçu votre message</span><span class="sxs-lookup"><span data-stu-id="c7145-134">Provides confirmation that your correspondent received your message</span></span>  
+  
+-   <span data-ttu-id="c7145-135">**Non-répudiation de réception et d’émission.**</span><span class="sxs-lookup"><span data-stu-id="c7145-135">**Non-repudiation of emission and reception.**</span></span> <span data-ttu-id="c7145-136">En cas de litige, permet de SWIFT confirmer que l’échange de messages n’a eu lieu comme demandé.</span><span class="sxs-lookup"><span data-stu-id="c7145-136">In case of dispute, allows SWIFT to confirm that the message exchange did take place as claimed.</span></span>  
+  
+ <span data-ttu-id="c7145-137">Les fonctionnalités de SWIFTNet interagir standards incluent la sécurité de SWIFTNet PKI.</span><span class="sxs-lookup"><span data-stu-id="c7145-137">The standard SWIFTNet InterAct features include SWIFTNet PKI security.</span></span> <span data-ttu-id="c7145-138">SWIFTNet FileAct est sécurisé avec SWIFTNet PKI et offre l’authentification des messages et contrôle d’intégrité.</span><span class="sxs-lookup"><span data-stu-id="c7145-138">SWIFTNet FileAct is secured with SWIFTNet PKI and offers message authentication and integrity control.</span></span>  
+  
+ <span data-ttu-id="c7145-139">Tous les messages et les fichiers échangés sur SWIFTNet subissent un ensemble commun de contrôles pour s’assurer qu’aucun utilisateur ne peut contourner la sécurité, de validation et de règles de routage de la plateforme.</span><span class="sxs-lookup"><span data-stu-id="c7145-139">All messages and files exchanged on SWIFTNet undergo a common set of checks to ensure that no user can bypass the security, validation and routing rules of the platform.</span></span> <span data-ttu-id="c7145-140">Ces vérifications sont effectuées par l’application de la passerelle SWIFTAlliance (trous).</span><span class="sxs-lookup"><span data-stu-id="c7145-140">These checks are performed by the SWIFTAlliance Gateway (SAG) application.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="c7145-141">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="c7145-141">See Also</span></span>  
+ <span data-ttu-id="c7145-142">[Mise en route avec l’Adaptateurs FileAct et interagir de cartes](../../adapters-and-accelerators/fileact-interact/getting-started-with-the-fileact-and-interact-adapters.md) </span><span class="sxs-lookup"><span data-stu-id="c7145-142">[Getting Started with the FileAct and InterAct Adapters](../../adapters-and-accelerators/fileact-interact/getting-started-with-the-fileact-and-interact-adapters.md) </span></span>  
+ <span data-ttu-id="c7145-143">[Qu’est SWIFTNet ?](../../adapters-and-accelerators/fileact-interact/what-is-swiftnet.md) </span><span class="sxs-lookup"><span data-stu-id="c7145-143">[What Is SWIFTNet?](../../adapters-and-accelerators/fileact-interact/what-is-swiftnet.md) </span></span>  
+ [<span data-ttu-id="c7145-144">Nouveautés de l’adaptateur FileAct ?</span><span class="sxs-lookup"><span data-stu-id="c7145-144">What Is the FileAct Adapter?</span></span>](../../adapters-and-accelerators/fileact-interact/what-is-the-fileact-adapter.md)

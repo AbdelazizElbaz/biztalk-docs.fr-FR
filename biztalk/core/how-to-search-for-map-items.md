@@ -1,0 +1,49 @@
+---
+title: "Comment rechercher des éléments de la carte | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: bts10.mapper.search
+ms.assetid: 3dbb089a-6aa8-4921-a82d-81d3a193e933
+caps.latest.revision: "11"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: ee61bccfae53a79d8fba6bd0aa5af2c537d98270
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="how-to-search-for-map-items"></a><span data-ttu-id="60215-102">Recherche d'éléments de mappage</span><span class="sxs-lookup"><span data-stu-id="60215-102">How to Search for Map Items</span></span>
+<span data-ttu-id="60215-103">Le Mappeur BizTalk permet de rechercher des éléments dans le schéma source, le schéma de destination et la surface de la grille.</span><span class="sxs-lookup"><span data-stu-id="60215-103">The BizTalk Mapper enables you to search for items in the source schema, the destination schema, and the grid surface.</span></span> <span data-ttu-id="60215-104">Cette rubrique fournit les informations vous permettant d'effectuer cette opération.</span><span class="sxs-lookup"><span data-stu-id="60215-104">This topic provides information about how to perform this operation.</span></span>  
+  
+## <a name="prerequisites"></a><span data-ttu-id="60215-105">Conditions préalables</span><span class="sxs-lookup"><span data-stu-id="60215-105">Prerequisites</span></span>  
+ <span data-ttu-id="60215-106">Les instructions suivantes requièrent que le Mappeur BizTalk est en cours d’exécution.</span><span class="sxs-lookup"><span data-stu-id="60215-106">These instructions require that BizTalk Mapper is running.</span></span>  
+  
+## <a name="to-search-for-items"></a><span data-ttu-id="60215-107">Pour rechercher des éléments</span><span class="sxs-lookup"><span data-stu-id="60215-107">To search for items</span></span>  
+ <span data-ttu-id="60215-108">Sélectionnez le schéma dans lequel effectuer une recherche.</span><span class="sxs-lookup"><span data-stu-id="60215-108">Select the schema where you want to search.</span></span> <span data-ttu-id="60215-109">Si vous sélectionnez le schéma source, le Mappeur BizTalk effectue la recherche dans le seul schéma source.</span><span class="sxs-lookup"><span data-stu-id="60215-109">If you select source schema, the BizTalk Mapper searches and looks for the match only in the source schema.</span></span> <span data-ttu-id="60215-110">Vous pouvez toutefois sélectionner le schéma source et le schéma de destination.</span><span class="sxs-lookup"><span data-stu-id="60215-110">However, you can select both source and destination schemas.</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="60215-111">Pour confirmer la sélection, recherchez la marque en regard du schéma ou de l'élément de schéma.</span><span class="sxs-lookup"><span data-stu-id="60215-111">To confirm selection, look for the mark before the schema or the schema item.</span></span>  
+  
+ <span data-ttu-id="60215-112">![Recherche d’éléments de la carte](../core/media/searching-map-items.gif "Searching_map_items")</span><span class="sxs-lookup"><span data-stu-id="60215-112">![Searching for map items](../core/media/searching-map-items.gif "Searching_map_items")</span></span>  
+  
+ <span data-ttu-id="60215-113">Dans le **recherche** sur le ruban de l’utilitaire mappeur, tapez le nom de l’élément que vous souhaitez rechercher.</span><span class="sxs-lookup"><span data-stu-id="60215-113">In the **Search** box on the Mapper utility ribbon, type the name of the item you want to search.</span></span> <span data-ttu-id="60215-114">Vous pouvez rechercher une chaîne dans le nom d'un nœud du schéma source ou du schéma de destination, ainsi que dans le nom, l'étiquette, le commentaire, les entrées ou les scripts d'un fonctoid.</span><span class="sxs-lookup"><span data-stu-id="60215-114">You can search for a string in the name of a node in the source or destination schema, as well as in the name, label, comment, inputs, or scripts for functoids.</span></span>  
+  
+ <span data-ttu-id="60215-115">Lorsque vous entrez la chaîne de recherche, les objets qui correspondent aux critères de recherche sont mis en surbrillance.</span><span class="sxs-lookup"><span data-stu-id="60215-115">As you enter the search string, the objects that meet the search criteria are highlighted.</span></span> <span data-ttu-id="60215-116">Vous pouvez ensuite parcourir les résultats de recherche soit à l’aide de la flèche de touches du clavier ou ![déplacer vers le haut dans la liste](../core/media/move-up-button.gif "Move_up_button") et ![déplacement vers le bas dans une liste] (../core/media/move-down-button.gif " Move_down_button") les icônes sur le ruban de l’utilitaire.</span><span class="sxs-lookup"><span data-stu-id="60215-116">You can then traverse through the search results either using the arrow keys on the keyboard or the ![Move up in the list](../core/media/move-up-button.gif "Move_up_button") and ![Moving down in a list](../core/media/move-down-button.gif "Move_down_button") icons on the utility ribbon.</span></span> <span data-ttu-id="60215-117">Si les résultats de la recherche sont répartis entre les trois vues, ils sont parcourus dans l'ordre suivant : schéma source, vue de relation et schéma de destination.</span><span class="sxs-lookup"><span data-stu-id="60215-117">If the search results are spread across all three views, the search results are traversed in the order of the source schema, relationship view, and the destination schema.</span></span> <span data-ttu-id="60215-118">Après avoir examiné les résultats de recherche, vous pouvez fermer la recherche en supprimant la chaîne de recherche ou en cliquant sur le (![dans le Mappeur clair](../core/media/mapper-search-cancel.gif "Mapper_Search_Cancel")) icône en regard de la chaîne de recherche.</span><span class="sxs-lookup"><span data-stu-id="60215-118">After going through the search results, you can close the search either by deleting the search string or by clicking the (![Clear Mapper search](../core/media/mapper-search-cancel.gif "Mapper_Search_Cancel")) icon next to the search string.</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="60215-119">Vous pouvez également utiliser les combinaisons de touches CTRL+M, CTRL+J ou CTRL+M, CTRL+K pour faire défiler les résultats de la rcherche vers le haut ou le bas, respectivement.</span><span class="sxs-lookup"><span data-stu-id="60215-119">You can also press CTRL+M, CTRL+J or CTRL+M, CTRL+K to traverse through the search results upwards or downwards, respectively.</span></span> <span data-ttu-id="60215-120">Pour obtenir la liste des raccourcis du mappeur, consultez [raccourcis clavier de Mappeur BizTalk](../core/biztalk-mapper-keyboard-shortcuts.md).</span><span class="sxs-lookup"><span data-stu-id="60215-120">For a list of Mapper keyboard shortcuts, see [BizTalk Mapper Keyboard Shortcuts](../core/biztalk-mapper-keyboard-shortcuts.md).</span></span>  
+  
+> [!IMPORTANT]
+>  <span data-ttu-id="60215-121">Si les résultats de la recherche pour la vue de relation ne sont pas visibles dans une seule vue de mappage, le Mappeur BizTalk affiche des flèches clignotantes pointant vers les autres résultats.</span><span class="sxs-lookup"><span data-stu-id="60215-121">If the search results for the relationship view are not visible in a single map view, the BizTalk Mapper displays blinking arrows in the direction where there are additional hits.</span></span> <span data-ttu-id="60215-122">Par exemple, l’icône de flèche vers le haut (![Direction pour les résultats de recherche supplémentaires](../core/media/mapper-search-direction.gif "Mapper_Search_Direction")) indique qu’il existe des résultats de recherche supplémentaires qui peuvent être affichées par défilement vers le haut.</span><span class="sxs-lookup"><span data-stu-id="60215-122">For example, the top arrow icon (![Direction for additional search results](../core/media/mapper-search-direction.gif "Mapper_Search_Direction")) denotes that there are additional search results that can be viewed by scrolling up.</span></span> <span data-ttu-id="60215-123">De même, si les résultats de la recherche sont situés dans d'autres pages de mappage, les onglets de ces pages sont mis en surbrillance, en jaune.</span><span class="sxs-lookup"><span data-stu-id="60215-123">Similarly, if there are search results in different map pages, the page tabs for those pages are highlighted, in yellow.</span></span> <span data-ttu-id="60215-124">Lors du déplacement de la souris sur la page en surbrillance, l'info-bulle indique le nombre de correspondances de la recherche dans cette page.</span><span class="sxs-lookup"><span data-stu-id="60215-124">On moving the mouse over the highlighted page, the tooltip displays the number of search matches on that page.</span></span> <span data-ttu-id="60215-125">La barre d'état affiche les résultats de la recherche.</span><span class="sxs-lookup"><span data-stu-id="60215-125">The status bar displays the search results.</span></span>  
+  
+ <span data-ttu-id="60215-126">![Afficher les résultats de recherche de la barre d’état](../core/media/searching-map-items-statusbar.jpg "Searching_map_items_statusbar")</span><span class="sxs-lookup"><span data-stu-id="60215-126">![Status bar displaying the search results](../core/media/searching-map-items-statusbar.jpg "Searching_map_items_statusbar")</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="60215-127">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="60215-127">See Also</span></span>  
+ [<span data-ttu-id="60215-128">À l’aide du Mappeur BizTalk</span><span class="sxs-lookup"><span data-stu-id="60215-128">Using BizTalk Mapper</span></span>](../core/using-biztalk-mapper.md)

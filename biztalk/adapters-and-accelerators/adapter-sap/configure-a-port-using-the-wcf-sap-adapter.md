@@ -1,0 +1,139 @@
+---
+title: "Configurer un port à l’aide de l’adaptateur WCF-SAP dans BizTalk | Documents Microsoft"
+description: "Créer un port de SAP de WCF pour envoyer ou recevoir des messages à partir de SAP à l’aide de l’adaptateur mySAP dans le Pack de l’adaptateur BizTalk (LOB)"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 420683f8-2516-4c65-895d-fe535824d450
+caps.latest.revision: "8"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 967ad68fb32cb8787ae02d4e6fe878c5bb78da2f
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="configure-a-port-using-the-wcf-sap-adapter"></a><span data-ttu-id="55570-103">Configurer un port à l’aide de l’adaptateur WCF-SAP</span><span class="sxs-lookup"><span data-stu-id="55570-103">Configure a port using the WCF-SAP adapter</span></span>
+<span data-ttu-id="55570-104">Cette rubrique fournit des instructions sur la configuration WCF SAP d’envoi et ports de réception pour effectuer des opérations entrantes et sortantes sur le système SAP à l’aide du [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].</span><span class="sxs-lookup"><span data-stu-id="55570-104">This topic provides instructions on how to configure WCF-SAP send and receive ports to perform outbound and inbound operations on SAP system using the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].</span></span>  
+  
+## <a name="prerequisites"></a><span data-ttu-id="55570-105">Conditions préalables</span><span class="sxs-lookup"><span data-stu-id="55570-105">Prerequisites</span></span>  
+<span data-ttu-id="55570-106">Connectez-vous avec un compte qui est membre de la [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] groupe Administrateurs ou opérateurs BizTalk.</span><span class="sxs-lookup"><span data-stu-id="55570-106">Sign in with an account that is a member of the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administrators or BizTalk Operators group.</span></span> <span data-ttu-id="55570-107">Pour plus d’informations sur les autorisations, consultez [autorisations requises pour déployer et gérer une Application BizTalk](../../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md), et [de sécurité minimales ](https://social.technet.microsoft.com/wiki/contents/articles/24590.minimum-security-rights-for-biztalk-server-2006-to-2016.aspx).</span><span class="sxs-lookup"><span data-stu-id="55570-107">For more detailed information about permissions, see [Permissions Required for Deploying and Managing a BizTalk Application](../../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md), and [Minimum Security Rights ](https://social.technet.microsoft.com/wiki/contents/articles/24590.minimum-security-rights-for-biztalk-server-2006-to-2016.aspx).</span></span>
+  
+## <a name="deploy-adapters-to-send-messages-to-sap"></a><span data-ttu-id="55570-108">Déployer des adaptateurs pour envoyer des messages à SAP</span><span class="sxs-lookup"><span data-stu-id="55570-108">Deploy adapters to send messages to SAP</span></span>  
+<span data-ttu-id="55570-109">Complète les étapes suivantes pour configurer un SAP de WCF un port d’envoi pour envoyer des messages à l’aide de système SAP le [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] console d’Administration.</span><span class="sxs-lookup"><span data-stu-id="55570-109">Complete the following steps to configure a WCF-SAP send port for sending messages to SAP system using the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>  
+  
+1.  <span data-ttu-id="55570-110">Démarrer le [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] console d’Administration.</span><span class="sxs-lookup"><span data-stu-id="55570-110">Start the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>  
+  
+2.  <span data-ttu-id="55570-111">Ajouter l’adaptateur WCF-SAP pour le [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] console d’Administration.</span><span class="sxs-lookup"><span data-stu-id="55570-111">Add the WCF-SAP adapter to the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span> <span data-ttu-id="55570-112">Pour obtenir des instructions, consultez [ajouter l’adaptateur SAP à la Console Administration de BizTalk Server](../../adapters-and-accelerators/adapter-sap/add-the-sap-adapter-to-biztalk-server-administration-console.md).</span><span class="sxs-lookup"><span data-stu-id="55570-112">For instructions, see [Add the SAP Adapter to BizTalk Server Administration Console](../../adapters-and-accelerators/adapter-sap/add-the-sap-adapter-to-biztalk-server-administration-console.md).</span></span>  
+  
+3.  <span data-ttu-id="55570-113">Dans l’arborescence de la console, développez **groupe BizTalk**, puis développez **Applications**.</span><span class="sxs-lookup"><span data-stu-id="55570-113">In the console tree, expand **BizTalk Group**, and then expand **Applications**.</span></span>  
+  
+4.  <span data-ttu-id="55570-114">Développez l’application sous lequel vous souhaitez déployer le [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].</span><span class="sxs-lookup"><span data-stu-id="55570-114">Expand the application under which you want to deploy the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].</span></span>  
+  
+5.  <span data-ttu-id="55570-115">Avec le bouton droit **Ports d’envoi**, pointez sur **nouveau**, pointez sur un type de port que vous souhaitez configurer en fonction du mode de communication entre BizTalk Server et le système SAP.</span><span class="sxs-lookup"><span data-stu-id="55570-115">Right-click **Send Ports**, point to **New**, and point to a type of port you want to configure depending on the mode of communication between BizTalk Server and the SAP system.</span></span>  
+  
+6.  <span data-ttu-id="55570-116">Dans le **propriétés de Port d’envoi** boîte de dialogue le **général** , tapez un nom pour le port d’envoi.</span><span class="sxs-lookup"><span data-stu-id="55570-116">In the **Send Port Properties** dialog box, on the **General** tab, type a name for the send port.</span></span>  
+  
+7.  <span data-ttu-id="55570-117">À partir de la **Type** la liste déroulante, sélectionnez l’adaptateur WCF-SAP que vous avez ajouté précédemment, puis cliquez sur **configurer**.</span><span class="sxs-lookup"><span data-stu-id="55570-117">From the **Type** drop-down list, select the WCF-SAP adapter you added earlier, and then click **Configure**.</span></span>  
+  
+8.  <span data-ttu-id="55570-118">Dans la boîte de dialogue Propriétés du transport, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="55570-118">In the transport properties dialog box, do the following:</span></span>  
+  
+    1.  <span data-ttu-id="55570-119">Cliquez sur le **général** , cliquez sur le **configurer** bouton et fournir des valeurs pour les paramètres de connexion.</span><span class="sxs-lookup"><span data-stu-id="55570-119">Click the **General** tab, click the **Configure** button, and provide values for the connection parameters.</span></span> <span data-ttu-id="55570-120">Pour plus d’informations sur l’URI de connexion, consultez [créer l’URI de connexion au système SAP](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md).</span><span class="sxs-lookup"><span data-stu-id="55570-120">For more information about the connection URI, see [Create the SAP system connection URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md).</span></span>  
+  
+    2.  <span data-ttu-id="55570-121">Sur le **général** sous l’onglet du **Action** texte, tapez l’action pour l’opération.</span><span class="sxs-lookup"><span data-stu-id="55570-121">On the **General** tab, in the **Action** text box, type the action for the operation.</span></span> <span data-ttu-id="55570-122">Consultez [Messages et des schémas de message](messages-and-message-schemas-for-biztalk-adapter-for-mysap-business-suite.md) pour obtenir la liste des actions pour chaque opération.</span><span class="sxs-lookup"><span data-stu-id="55570-122">See [Messages and message schemas](messages-and-message-schemas-for-biztalk-adapter-for-mysap-business-suite.md) for a list of actions for each operation.</span></span> <span data-ttu-id="55570-123">Par exemple, l’action à appeler le RFC_CUSTOMER_GET serait :</span><span class="sxs-lookup"><span data-stu-id="55570-123">For example, the action to invoke the RFC_CUSTOMER_GET would be:</span></span>  
+  
+        ```  
+        http://Microsoft.LobServices.Sap/2007/03/Rfc/RFC_CUSTOMER_GET  
+        ```  
+  
+    3.  <span data-ttu-id="55570-124">Cliquez sur le **liaison** onglet et spécifier des valeurs pour la liaison des propriétés exposées par le [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].</span><span class="sxs-lookup"><span data-stu-id="55570-124">Click the **Binding** tab and specify values for binding properties exposed by the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].</span></span> <span data-ttu-id="55570-125">Pour plus d’informations sur les propriétés de liaison, consultez [en savoir plus sur l’adaptateur BizTalk pour les propriétés de liaison mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md).</span><span class="sxs-lookup"><span data-stu-id="55570-125">For more information about binding properties, see [Read about BizTalk Adapter for mySAP Business Suite binding properties](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md).</span></span>  
+  
+        > [!NOTE]
+        >  <span data-ttu-id="55570-126">Les propriétés de liaison sont affichées selon que vous configurez un port d’envoi ou un port de réception.</span><span class="sxs-lookup"><span data-stu-id="55570-126">The binding properties are displayed based on whether you are configuring a send port or a receive port.</span></span> <span data-ttu-id="55570-127">Par exemple, les opérations associées à des messages de propriétés de liaison ne sont pas disponibles lors de la configuration d’un port d’envoi, car les opérations entrantes nécessitent une configuration de port de réception.</span><span class="sxs-lookup"><span data-stu-id="55570-127">For example, binding properties related to inbound operations are not available while configuring a send port because inbound operations require a receive port configuration.</span></span>  
+  
+    4.  <span data-ttu-id="55570-128">Cliquez sur le **informations d’identification** onglet, effectuez l’une des opérations suivantes :</span><span class="sxs-lookup"><span data-stu-id="55570-128">Click the **Credentials** tab and do one of the following:</span></span>  
+  
+    -   <span data-ttu-id="55570-129">Sélectionnez le **n’utilisez pas l’authentification unique sur** option et spécifiez le nom d’utilisateur et un mot de passe pour se connecter à un système SAP.</span><span class="sxs-lookup"><span data-stu-id="55570-129">Select the **Do not use Single Sign-On** option, and specify the user name and password to connect to an SAP system.</span></span>  
+  
+    -   <span data-ttu-id="55570-130">Sélectionnez le **utilisez Single Sign-On** option et spécifiez une application d’authentification unique associée.</span><span class="sxs-lookup"><span data-stu-id="55570-130">Select the **Use Single Sign-On** option, and specify an affiliate SSO application.</span></span>  
+  
+         <span data-ttu-id="55570-131">Pour plus d’informations sur la sécurité par rapport à BizTalk Server, consultez [sécurité avec l’adaptateur SAP et de BizTalk Server](../../adapters-and-accelerators/adapter-sap/security-with-the-sap-adapter-and-biztalk-server.md).</span><span class="sxs-lookup"><span data-stu-id="55570-131">For more information about security with respect to BizTalk Server, see [Security with the SAP adapter and BizTalk Server](../../adapters-and-accelerators/adapter-sap/security-with-the-sap-adapter-and-biztalk-server.md).</span></span>  
+  
+         <span data-ttu-id="55570-132">Pour revenir à la **propriétés de Port d’envoi** boîte de dialogue, cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="55570-132">To return to the **Send Port Properties** dialog box, click **OK**.</span></span>  
+  
+9. <span data-ttu-id="55570-133">À partir de la **Gestionnaire d’envoi** la liste déroulante, sélectionnez **BizTalkServerApplication**.</span><span class="sxs-lookup"><span data-stu-id="55570-133">From the **Send handler** drop-down list, select **BizTalkServerApplication**.</span></span>  
+  
+10. <span data-ttu-id="55570-134">Si vous avez choisi de créer un **Port d’envoi unidirectionnel statique** à l’étape 5, spécifiez un pipeline d’envoi.</span><span class="sxs-lookup"><span data-stu-id="55570-134">If you chose to create a **Static One-Way Send Port** in step 5, specify a send pipeline.</span></span> <span data-ttu-id="55570-135">À partir de la **pipeline d’envoi** liste déroulante, sélectionnez le pipeline XMLTransmit correspondant.</span><span class="sxs-lookup"><span data-stu-id="55570-135">From the **Send pipeline** drop-down list, select the pipeline corresponding to XMLTransmit.</span></span>  
+  
+11. <span data-ttu-id="55570-136">Si vous avez choisi de créer un **Port statique avec sollicitation-réponse** à l’étape 5, spécifiez l’envoi et les pipelines de réception.</span><span class="sxs-lookup"><span data-stu-id="55570-136">If you chose to create a **Static Solicit-Response Port** in step 5, specify send and receive pipelines.</span></span>  
+  
+    1.  <span data-ttu-id="55570-137">À partir de la **pipeline d’envoi** liste déroulante, sélectionnez le pipeline XMLTransmit correspondant.</span><span class="sxs-lookup"><span data-stu-id="55570-137">From the **Send pipeline** drop-down list, select the pipeline corresponding to XMLTransmit.</span></span>  
+  
+    2.  <span data-ttu-id="55570-138">À partir de la **pipeline de réception** liste déroulante, sélectionnez le pipeline XMLReceive correspondant.</span><span class="sxs-lookup"><span data-stu-id="55570-138">From the **Receive pipeline** drop-down list, select the pipeline corresponding to XMLReceive.</span></span>  
+  
+12. <span data-ttu-id="55570-139">Cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="55570-139">Click **OK**.</span></span>  
+  
+## <a name="deploy-adapters-to-receive-messages-from-sap"></a><span data-ttu-id="55570-140">Déployer des adaptateurs pour recevoir des messages à partir de SAP</span><span class="sxs-lookup"><span data-stu-id="55570-140">Deploy adapters to receive messages from SAP</span></span>  
+<span data-ttu-id="55570-141">Complète les étapes suivantes pour configurer un SAP de WCF port de réception pour recevoir des messages de système SAP à l’aide du [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] console d’Administration.</span><span class="sxs-lookup"><span data-stu-id="55570-141">Complete the following steps to configure a WCF-SAP receive port for receiving messages from SAP system using the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>  
+  
+1.  <span data-ttu-id="55570-142">Démarrer le [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] console d’Administration.</span><span class="sxs-lookup"><span data-stu-id="55570-142">Start the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>  
+  
+2.  <span data-ttu-id="55570-143">Ajouter l’adaptateur WCF-SAP pour le [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] console d’Administration.</span><span class="sxs-lookup"><span data-stu-id="55570-143">Add the WCF-SAP adapter to the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span> <span data-ttu-id="55570-144">Pour obtenir des instructions, consultez [ajouter l’adaptateur SAP à la Console Administration de BizTalk Server](../../adapters-and-accelerators/adapter-sap/add-the-sap-adapter-to-biztalk-server-administration-console.md).</span><span class="sxs-lookup"><span data-stu-id="55570-144">For instructions, see [Add the SAP Adapter to BizTalk Server Administration Console](../../adapters-and-accelerators/adapter-sap/add-the-sap-adapter-to-biztalk-server-administration-console.md).</span></span>  
+  
+3.  <span data-ttu-id="55570-145">Dans l’arborescence de la console, développez **groupe BizTalk**, puis développez **Applications**.</span><span class="sxs-lookup"><span data-stu-id="55570-145">In the console tree, expand **BizTalk Group**, and then expand **Applications**.</span></span>  
+  
+4.  <span data-ttu-id="55570-146">Développez l’application sous lequel vous souhaitez déployer le [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].</span><span class="sxs-lookup"><span data-stu-id="55570-146">Expand the application under which you want to deploy the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].</span></span>  
+  
+5.  <span data-ttu-id="55570-147">Avec le bouton droit **Ports de réception**, pointez sur **nouveau**, puis cliquez sur **Port de réception unidirectionnel** ou **Receive Port requête-réponse** en fonction de la mode de communication entre BizTalk Server et le système SAP.</span><span class="sxs-lookup"><span data-stu-id="55570-147">Right-click **Receive Ports**, point to **New**, and click **One-way Receive Port** or **Request Response Receive Port** depending on the mode of communication between BizTalk Server and the SAP system.</span></span>  
+  
+6.  <span data-ttu-id="55570-148">Dans le **propriétés du Port de réception** boîte de dialogue le **général** , tapez un nom pour le port de réception.</span><span class="sxs-lookup"><span data-stu-id="55570-148">In the **Receive Port Properties** dialog box, on the **General** tab, type a name for the receive port.</span></span>  
+  
+7.  <span data-ttu-id="55570-149">Sur le **emplacements de réception** , cliquez sur **nouveau**.</span><span class="sxs-lookup"><span data-stu-id="55570-149">On the **Receive Locations** tab, click **New**.</span></span> <span data-ttu-id="55570-150">Le **propriétés de l’emplacement de réception** boîte de dialogue s’affiche.</span><span class="sxs-lookup"><span data-stu-id="55570-150">The **Receive Location Properties** dialog box appears.</span></span>  
+  
+8.  <span data-ttu-id="55570-151">Dans le **propriétés de l’emplacement de réception** boîte de dialogue zone, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="55570-151">In the **Receive Location Properties** dialog box, do the following:</span></span>  
+  
+    1.  <span data-ttu-id="55570-152">Spécifiez un nom pour l’emplacement de réception.</span><span class="sxs-lookup"><span data-stu-id="55570-152">Specify a name for the receive location.</span></span>  
+  
+    2.  <span data-ttu-id="55570-153">À partir de la **Type** la liste déroulante, sélectionnez l’adaptateur WCF-SAP que vous avez ajouté précédemment, puis cliquez sur **configurer**.</span><span class="sxs-lookup"><span data-stu-id="55570-153">From the **Type** drop-down list, select the WCF-SAP adapter you added earlier, and then click **Configure**.</span></span>  
+  
+9. <span data-ttu-id="55570-154">Dans la boîte de dialogue Propriétés du transport, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="55570-154">In the transport properties dialog box, do the following:</span></span>  
+  
+    1.  <span data-ttu-id="55570-155">Cliquez sur le **général** , cliquez sur le **configurer** bouton et fournir des valeurs pour les paramètres de connexion.</span><span class="sxs-lookup"><span data-stu-id="55570-155">Click the **General** tab, click the **Configure** button, and provide values for the connection parameters.</span></span> <span data-ttu-id="55570-156">Pour plus d’informations sur l’URI de connexion, consultez [créer l’URI de connexion au système SAP](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md).</span><span class="sxs-lookup"><span data-stu-id="55570-156">For more information about the connection URI, see [Create the SAP system connection URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md).</span></span>  
+  
+    2.  <span data-ttu-id="55570-157">Cliquez sur le **liaison** onglet et à partir de la **Type de liaison** la liste déroulante, sélectionnez **sapBinding**.</span><span class="sxs-lookup"><span data-stu-id="55570-157">Click the **Binding** tab, and from the **Binding Type** drop-down list, select **sapBinding**.</span></span> <span data-ttu-id="55570-158">Pour plus d’informations sur les propriétés de liaison, consultez [en savoir plus sur l’adaptateur BizTalk pour les propriétés de liaison mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md).</span><span class="sxs-lookup"><span data-stu-id="55570-158">For more information about binding properties, see [Read about BizTalk Adapter for mySAP Business Suite binding properties](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md).</span></span>  
+  
+        > [!NOTE]
+        >  <span data-ttu-id="55570-159">Les propriétés de liaison sont affichées selon que vous configurez un port d’envoi ou un port de réception.</span><span class="sxs-lookup"><span data-stu-id="55570-159">The binding properties are displayed based on whether you are configuring a send port or a receive port.</span></span> <span data-ttu-id="55570-160">Par exemple, les opérations associées à des messages de propriétés de liaison ne sont pas disponibles lors de la configuration d’un port d’envoi, car les opérations entrantes nécessitent une configuration de port de réception.</span><span class="sxs-lookup"><span data-stu-id="55570-160">For example, binding properties related to inbound operations are not available while configuring a send port because inbound operations require a receive port configuration.</span></span>  
+  
+    3.  <span data-ttu-id="55570-161">Cliquez sur le **autres** onglet, puis effectuez l’une des opérations suivantes :</span><span class="sxs-lookup"><span data-stu-id="55570-161">Click the **Other** tab, and do one of the following:</span></span>  
+  
+    -   <span data-ttu-id="55570-162">Sélectionnez **compte d’utilisateur**et spécifiez le nom d’utilisateur et un mot de passe pour se connecter à un système SAP.</span><span class="sxs-lookup"><span data-stu-id="55570-162">Select **User account**, and specify the user name and password to connect to an SAP system.</span></span>  
+  
+    -   <span data-ttu-id="55570-163">Sélectionnez **obtenir les informations d’identification d’applications associées à l’application** option et spécifiez une application associée.</span><span class="sxs-lookup"><span data-stu-id="55570-163">Select **Get credentials from affiliate application** option, and specify an affiliate application.</span></span>  
+  
+         <span data-ttu-id="55570-164">Pour plus d’informations sur la sécurité par rapport à BizTalk Server, consultez [sécurité avec l’adaptateur SAP et de BizTalk Server](../../adapters-and-accelerators/adapter-sap/security-with-the-sap-adapter-and-biztalk-server.md).</span><span class="sxs-lookup"><span data-stu-id="55570-164">For more information about security with respect to BizTalk Server, see [Security with the SAP adapter and BizTalk Server](../../adapters-and-accelerators/adapter-sap/security-with-the-sap-adapter-and-biztalk-server.md).</span></span>  
+  
+         <span data-ttu-id="55570-165">Cliquez sur **OK** pour revenir à la **propriétés de l’emplacement de réception** boîte de dialogue.</span><span class="sxs-lookup"><span data-stu-id="55570-165">Click **OK** to return to the **Receive Location Properties** dialog box.</span></span>  
+  
+10. <span data-ttu-id="55570-166">À partir de la **Gestionnaire de réception** la liste déroulante, sélectionnez **BizTalkServerApplication**.</span><span class="sxs-lookup"><span data-stu-id="55570-166">From the **Receive handler** drop-down list, select **BizTalkServerApplication**.</span></span>  
+  
+11. <span data-ttu-id="55570-167">Si vous avez choisi de créer **Port de réception unidirectionnel** à l’étape 5, spécifiez un pipeline de réception.</span><span class="sxs-lookup"><span data-stu-id="55570-167">If you chose to create **One-way Receive Port** in step 5, specify a receive pipeline.</span></span> <span data-ttu-id="55570-168">À partir de la **pipeline de réception** liste déroulante, sélectionnez le pipeline XMLReceive correspondant.</span><span class="sxs-lookup"><span data-stu-id="55570-168">From the **Receive pipeline** drop-down list, select the pipeline corresponding to XMLReceive.</span></span>  
+  
+12. <span data-ttu-id="55570-169">Si vous avez choisi de créer **Receive Port requête-réponse** à l’étape 5, spécifiez l’envoi et les pipelines de réception.</span><span class="sxs-lookup"><span data-stu-id="55570-169">If you chose to create **Request Response Receive Port** in step 5, specify send and receive pipelines.</span></span>  
+  
+    1.  <span data-ttu-id="55570-170">À partir de la **pipeline de réception** liste déroulante, sélectionnez le pipeline XMLReceive correspondant.</span><span class="sxs-lookup"><span data-stu-id="55570-170">From the **Receive pipeline** drop-down list, select the pipeline corresponding to XMLReceive.</span></span>  
+  
+    2.  <span data-ttu-id="55570-171">À partir de la **pipeline d’envoi** liste déroulante, sélectionnez le pipeline XMLTransmit correspondant.</span><span class="sxs-lookup"><span data-stu-id="55570-171">From the **Send pipeline** drop-down list, select the pipeline corresponding to XMLTransmit.</span></span>  
+  
+13. <span data-ttu-id="55570-172">Cliquez sur **OK** dans les **propriétés de l’emplacement de réception** boîte de dialogue.</span><span class="sxs-lookup"><span data-stu-id="55570-172">Click **OK** in the **Receive Location Properties** dialog box.</span></span>  
+  
+14. <span data-ttu-id="55570-173">Cliquez sur **OK** dans les **propriétés du Port de réception** boîte de dialogue.</span><span class="sxs-lookup"><span data-stu-id="55570-173">Click **OK** in the **Receive Port Properties** dialog box.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="55570-174">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="55570-174">See also</span></span>
+[<span data-ttu-id="55570-175">Configurer manuellement une liaison de port physique à l’adaptateur SAP</span><span class="sxs-lookup"><span data-stu-id="55570-175">Manually configure a physical port binding to the SAP adapter</span></span>](manually-configure-a-physical-port-binding-to-the-sap-adapter.md)

@@ -1,0 +1,50 @@
+---
+title: "Messages de réparation et de soumission des nouveaux Messages | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- repairing messages
+- Message Repair and New Submission
+- submitting, messages
+- submitting, Message Repair and New Submission
+- messages, Message Repair and New Submission
+- messages, submitting
+- Message Repair and New Submission. about Message Repair and New Submission
+ms.assetid: 6abcce90-f611-422a-b3c8-e25f1e75b039
+caps.latest.revision: "4"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 59ece524ce06430492a3927c0cd1437eef4b216d
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="repairing-messages-and-submitting-new-messages"></a><span data-ttu-id="bdea3-102">Messages de réparation et de soumission des nouveaux Messages</span><span class="sxs-lookup"><span data-stu-id="bdea3-102">Repairing Messages and Submitting New Messages</span></span>
+[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]<span data-ttu-id="bdea3-103">Message Repair et New Submission vous permet de réparer un message d’échec de la validation XML ou le moteur des règles d’entreprise.</span><span class="sxs-lookup"><span data-stu-id="bdea3-103"> Message Repair and New Submission enables you to repair a message that has failed XML or Business Rules Engine validation.</span></span> <span data-ttu-id="bdea3-104">Le processus de réparation inclut des étapes de vérification et approbation qui garantissent la précision et la pertinence de la réparation de message.</span><span class="sxs-lookup"><span data-stu-id="bdea3-104">The repair process includes verification and approval steps that ensure the accuracy and appropriateness of the message repair.</span></span> <span data-ttu-id="bdea3-105">Ce processus est exécuté à l’aide de [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsOfficeNoVersion](../../includes/btsofficenoversion-md.md)] [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] formulaires au sein du site MRSR.</span><span class="sxs-lookup"><span data-stu-id="bdea3-105">This process is performed using [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsOfficeNoVersion](../../includes/btsofficenoversion-md.md)][!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] forms within MRSR site.</span></span>  
+  
+ [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]<span data-ttu-id="bdea3-106">vous permet également à envoyer un message à l’aide de ce processus.</span><span class="sxs-lookup"><span data-stu-id="bdea3-106"> also enables you to submit a new message using this process.</span></span> <span data-ttu-id="bdea3-107">Un créateur d’envoie le message et le flux de travail peut inclure un réparateur, un vérificateur et un approbateur effectuer les mêmes tâches que dans réparation de message.</span><span class="sxs-lookup"><span data-stu-id="bdea3-107">A creator submits the message, and the workflow can include a repairer, a verifier, and an approver performing the same tasks as in message repair.</span></span>  
+  
+ [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]<span data-ttu-id="bdea3-108">permet de garantir la sécurité de ce processus en attribuant différents utilisateurs pour effectuer chaque tâche.</span><span class="sxs-lookup"><span data-stu-id="bdea3-108"> ensures the security of this process by assigning different users to perform each task.</span></span> <span data-ttu-id="bdea3-109">Vous affectez la réparation appropriée, vérifiez ou approuvez le rôle de chacun de ces utilisateurs, et chaque utilisateur doit utiliser un certificat spécifique pour effectuer la tâche.</span><span class="sxs-lookup"><span data-stu-id="bdea3-109">You assign the appropriate repair, verify, or approve role to each of these users, and each user must use a specific certificate to perform the task.</span></span> [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]<span data-ttu-id="bdea3-110">Il prend également en charge l’utilisation des services dans le traitement des messages réparés et soumis.</span><span class="sxs-lookup"><span data-stu-id="bdea3-110"> also supports the use of departments in processing repaired and submitted messages.</span></span> <span data-ttu-id="bdea3-111">Chaque service implique un workflow spécifique des tâches effectuées sur un ensemble spécifique de messages.</span><span class="sxs-lookup"><span data-stu-id="bdea3-111">Each department involves a specific workflow of tasks performed on a specific set of messages.</span></span> <span data-ttu-id="bdea3-112">Dans toute la créer, réparer, vérifiez ou approuver des étapes, lorsque vous envoyez le message, [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] appelle la validation BRE et vérifie que l’utilisateur est un membre du service approprié.</span><span class="sxs-lookup"><span data-stu-id="bdea3-112">In any of the create, repair, verify, or approve steps, when you submit the message, [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] calls BRE validation and verifies that the user is a member of the appropriate department.</span></span> <span data-ttu-id="bdea3-113">Pour plus d’informations sur message repair et new submission, consultez [Message réparer et New Submission](../../adapters-and-accelerators/accelerator-swift/message-repair-and-new-submission.md).</span><span class="sxs-lookup"><span data-stu-id="bdea3-113">For more information about message repair and new submission, see [Message Repair and New Submission](../../adapters-and-accelerators/accelerator-swift/message-repair-and-new-submission.md).</span></span>  
+  
+ <span data-ttu-id="bdea3-114">Si vous recevez un message non analysé, Message Repair et New Submission affiche le message et une description de l’échec dans un [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] écran et vous permet d’afficher le message ou l’enregistrer dans un fichier.</span><span class="sxs-lookup"><span data-stu-id="bdea3-114">If you receive an unparsed message, Message Repair and New Submission displays the message and a description of the failure in an [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] form, and enables you to print the message or save it to a file.</span></span> <span data-ttu-id="bdea3-115">Vous pouvez réparer et renvoyez le message.</span><span class="sxs-lookup"><span data-stu-id="bdea3-115">You can then repair and resubmit the message.</span></span> <span data-ttu-id="bdea3-116">Toutefois, [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] ne pas appeler la validation de BRE ou vérifier l’appartenance à un service quand vous envoyez un message non analysé que vous avez réparé.</span><span class="sxs-lookup"><span data-stu-id="bdea3-116">However, [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] does not call BRE validation or check membership in a department when you submit an unparsed message that you have repaired.</span></span> <span data-ttu-id="bdea3-117">En outre, un message non analysé soumise à nouveau n'est pas vérifié ou approuvé.</span><span class="sxs-lookup"><span data-stu-id="bdea3-117">In addition, a resubmitted unparsed message is not verified or approved.</span></span> <span data-ttu-id="bdea3-118">Pour plus d’informations sur les messages non analysées, consultez [la réparation des Messages non analysée](../../adapters-and-accelerators/accelerator-swift/repairing-unparsed-messages.md).</span><span class="sxs-lookup"><span data-stu-id="bdea3-118">For more information about unparsed messages, see [Repairing Unparsed Messages](../../adapters-and-accelerators/accelerator-swift/repairing-unparsed-messages.md).</span></span>  
+  
+ <span data-ttu-id="bdea3-119">Contenu de cette section :</span><span class="sxs-lookup"><span data-stu-id="bdea3-119">This section contains:</span></span>  
+  
+-   [<span data-ttu-id="bdea3-120">La réparation d’un Message</span><span class="sxs-lookup"><span data-stu-id="bdea3-120">Repairing a Message</span></span>](../../adapters-and-accelerators/accelerator-swift/repairing-a-message.md)  
+  
+-   [<span data-ttu-id="bdea3-121">Vérification d’un Message</span><span class="sxs-lookup"><span data-stu-id="bdea3-121">Verifying a Message</span></span>](../../adapters-and-accelerators/accelerator-swift/verifying-a-message.md)  
+  
+-   [<span data-ttu-id="bdea3-122">L’approbation d’un Message</span><span class="sxs-lookup"><span data-stu-id="bdea3-122">Approving a Message</span></span>](../../adapters-and-accelerators/accelerator-swift/approving-a-message.md)  
+  
+-   [<span data-ttu-id="bdea3-123">Gestion d’un Message non analysé</span><span class="sxs-lookup"><span data-stu-id="bdea3-123">Handling an Unparsed Message</span></span>](../../adapters-and-accelerators/accelerator-swift/handling-an-unparsed-message.md)  
+  
+-   [<span data-ttu-id="bdea3-124">Création et envoi d’un nouveau Message</span><span class="sxs-lookup"><span data-stu-id="bdea3-124">Creating and Submitting a New Message</span></span>](../../adapters-and-accelerators/accelerator-swift/creating-and-submitting-a-new-message.md)  
+  
+-   [<span data-ttu-id="bdea3-125">Création d’un modèle de Message</span><span class="sxs-lookup"><span data-stu-id="bdea3-125">Creating a New Message Template</span></span>](../../adapters-and-accelerators/accelerator-swift/creating-a-new-message-template.md)

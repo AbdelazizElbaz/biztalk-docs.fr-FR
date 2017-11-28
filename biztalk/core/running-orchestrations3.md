@@ -1,0 +1,42 @@
+---
+title: "En cours d’exécution Orchestrations3 | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- orchestrations, running
+- Receive shape [Orchestration Designer], starting orchestrations
+- Start Orchestration shape [Orchestration Designer], starting orchestrations
+- Call Orchestration shape [Orchestration Designer], starting orchestrations
+- Receive shape [Orchestration Designer], activating orchestrations
+ms.assetid: 5bfe61c9-80e0-4a0a-b6b1-ab48037e665e
+caps.latest.revision: "9"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 550fc1e03f3583215a817028917000c9a9c3074a
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="running-orchestrations"></a><span data-ttu-id="abfb2-102">Orchestrations en cours d’exécution</span><span class="sxs-lookup"><span data-stu-id="abfb2-102">Running Orchestrations</span></span>
+<span data-ttu-id="abfb2-103">Instances d’orchestration sont conçus pour être déclenchées soit par un appel explicite à partir d’une autre orchestration, à l’aide un **appeler Orchestration** forme ou **démarrer Orchestration** forme, ou à la réception d’un message d’activation.</span><span class="sxs-lookup"><span data-stu-id="abfb2-103">Orchestration instances are designed to be triggered either by an explicit call from another orchestration—using a **Call Orchestration** shape or **Start Orchestration** shape—or by receipt of an activation message.</span></span> <span data-ttu-id="abfb2-104">Le schéma du message d’activation est spécifié dans le **Message** propriété.</span><span class="sxs-lookup"><span data-stu-id="abfb2-104">The activation message schema is specified in the **Message** property.</span></span> <span data-ttu-id="abfb2-105">Vous devez concevoir votre orchestration en conséquence, et définissez la **activer** propriété sur un **réception** forme sur true ou assurez-vous qu’une orchestration d’appel existe et qu’il est configurée correctement pour exécuter le nouvelle orchestration.</span><span class="sxs-lookup"><span data-stu-id="abfb2-105">You should design your orchestration accordingly, and either set the **Activate** property on a **Receive** shape to true, or make sure that a calling orchestration exists and is configured properly to run the new orchestration.</span></span>  
+  
+ <span data-ttu-id="abfb2-106">Avant qu'une instance puisse s'exécuter, vous devez lier et déployer l'assembly BizTalk, puis inscrire et démarrer le moteur d'orchestration afin de mettre en route le traitement.</span><span class="sxs-lookup"><span data-stu-id="abfb2-106">Before any instances can run, you must first bind and deploy the BizTalk assembly, and then enlist and start the orchestration engine to begin processing.</span></span> <span data-ttu-id="abfb2-107">Pour plus d’informations, consultez [déploiement des assemblys BizTalk à partir de Visual Studio dans une Application BizTalk](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md) et [déploiement et la gestion des Applications BizTalk](../core/deploying-and-managing-biztalk-applications.md).</span><span class="sxs-lookup"><span data-stu-id="abfb2-107">For more information, see [Deploying BizTalk Assemblies from Visual Studio into a BizTalk Application](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md) and [Deploying and Managing BizTalk Applications](../core/deploying-and-managing-biztalk-applications.md).</span></span> <span data-ttu-id="abfb2-108">Lorsqu'une orchestration est appelée à partir d'une autre orchestration, ou qu'un message est présenté au moteur qui correspond aux critères d'une réception avec activation, le moteur crée une nouvelle instance de l'orchestration et l'exécute.</span><span class="sxs-lookup"><span data-stu-id="abfb2-108">When an orchestration is invoked from another orchestration, or a message is presented to the engine that matches the criteria in an activation receive, the engine creates a new instance of the orchestration and runs that instance.</span></span> <span data-ttu-id="abfb2-109">Le moteur peut exécuter de nombreuses instances différentes simultanément.</span><span class="sxs-lookup"><span data-stu-id="abfb2-109">It can run many different instances concurrently.</span></span>  
+  
+## <a name="calling-and-starting-orchestrations"></a><span data-ttu-id="abfb2-110">Appel et démarrage d'orchestrations</span><span class="sxs-lookup"><span data-stu-id="abfb2-110">Calling and starting orchestrations</span></span>  
+ <span data-ttu-id="abfb2-111">Le **appeler Orchestration** forme et **démarrer Orchestration** forme peut être utilisée pour activer une autre orchestration.</span><span class="sxs-lookup"><span data-stu-id="abfb2-111">The **Call Orchestration** shape and **Start Orchestration** shape can be used to activate another orchestration.</span></span> <span data-ttu-id="abfb2-112">Dans les deux cas, l'appelant peut transmettre des paramètres pour échanger des informations avec l'autre orchestration.</span><span class="sxs-lookup"><span data-stu-id="abfb2-112">In both cases, the caller can pass in parameters to exchange information with the other orchestration.</span></span> <span data-ttu-id="abfb2-113">Pour plus d’informations, consultez [comment ajouter des paramètres aux Orchestrations](../core/how-to-add-parameters-to-orchestrations.md).</span><span class="sxs-lookup"><span data-stu-id="abfb2-113">For more information, see [How to Add Parameters to Orchestrations](../core/how-to-add-parameters-to-orchestrations.md).</span></span>  
+  
+## <a name="using-activation-receives-with-filter-expression"></a><span data-ttu-id="abfb2-114">Utilisation des réceptions avec activation avec une expression de filtre</span><span class="sxs-lookup"><span data-stu-id="abfb2-114">Using activation receives with filter expression</span></span>  
+ <span data-ttu-id="abfb2-115">Le **réception** forme peut-être également utiliser une expression de filtre pour requérir d’autres critères pour l’activation.</span><span class="sxs-lookup"><span data-stu-id="abfb2-115">The **Receive** shape might also use a filter expression to require further criteria for activation.</span></span> <span data-ttu-id="abfb2-116">Si le message est du type approprié et une ou plusieurs propriétés du message de répondre à tous les critères dans l’expression de filtre, le **réception** forme accepte le message et l’orchestration est activée.</span><span class="sxs-lookup"><span data-stu-id="abfb2-116">If the message is of the correct type and some property or properties of the message meet all of the criteria in the filter expression, the **Receive** shape accepts the message and the orchestration is activated.</span></span> <span data-ttu-id="abfb2-117">Une telle forme réception est appelée un *réception avec activation*.</span><span class="sxs-lookup"><span data-stu-id="abfb2-117">Such a Receive shape is referred to as an *activation receive*.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="abfb2-118">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="abfb2-118">See Also</span></span>  
+ <span data-ttu-id="abfb2-119">[Comment configurer la forme appeler Orchestration](../core/how-to-configure-the-call-orchestration-shape.md) </span><span class="sxs-lookup"><span data-stu-id="abfb2-119">[How to Configure the Call Orchestration Shape](../core/how-to-configure-the-call-orchestration-shape.md) </span></span>  
+ <span data-ttu-id="abfb2-120">[Comment configurer la forme Démarrer Orchestration](../core/how-to-configure-the-start-orchestration-shape.md) </span><span class="sxs-lookup"><span data-stu-id="abfb2-120">[How to Configure the Start Orchestration Shape](../core/how-to-configure-the-start-orchestration-shape.md) </span></span>  
+ <span data-ttu-id="abfb2-121">[Comment configurer la forme réception](../core/how-to-configure-the-receive-shape.md) </span><span class="sxs-lookup"><span data-stu-id="abfb2-121">[How to Configure the Receive Shape](../core/how-to-configure-the-receive-shape.md) </span></span>  
+ [<span data-ttu-id="abfb2-122">Création et l’exécution des Orchestrations</span><span class="sxs-lookup"><span data-stu-id="abfb2-122">Building and Running Orchestrations</span></span>](../core/building-and-running-orchestrations.md)

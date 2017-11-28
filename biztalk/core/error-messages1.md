@@ -1,0 +1,34 @@
+---
+title: Erreur Messages1 | Documents Microsoft
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: error messages
+ms.assetid: db9c9634-3f4b-4b38-b3ba-388e587fccd8
+caps.latest.revision: "6"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 80a44049c43c499ac05a8a6f296d11add934267a
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="error-messages"></a><span data-ttu-id="0d037-102">Messages d'erreur</span><span class="sxs-lookup"><span data-stu-id="0d037-102">Error Messages</span></span>
+<span data-ttu-id="0d037-103">Le tableau suivant décrit les messages d'erreur dans le système JD Edwards EnterpriseOne et les corrections possibles.</span><span class="sxs-lookup"><span data-stu-id="0d037-103">The following table describes error messages in the JD Edwards EnterpriseOne system and provides possible corrections for them.</span></span>  
+  
+|<span data-ttu-id="0d037-104">ID d'erreur</span><span class="sxs-lookup"><span data-stu-id="0d037-104">Error ID</span></span>|<span data-ttu-id="0d037-105">Cause possible/Description de l'erreur</span><span class="sxs-lookup"><span data-stu-id="0d037-105">Possible Cause / Error Description</span></span>|<span data-ttu-id="0d037-106">Correction possible</span><span class="sxs-lookup"><span data-stu-id="0d037-106">Possible Correction</span></span>|  
+|--------------|-----------------------------------------|-------------------------|  
+|<span data-ttu-id="0d037-107">E-JDE0027</span><span class="sxs-lookup"><span data-stu-id="0d037-107">E-JDE0027</span></span>|<span data-ttu-id="0d037-108">Fichiers JAR JD Edwards EnterpriseOne manquants.</span><span class="sxs-lookup"><span data-stu-id="0d037-108">JD Edwards EnterpriseOne JAR files missing.</span></span> <span data-ttu-id="0d037-109">Impossible d'acquérir l'objet de connexion JD Edwards EnterpriseOne.</span><span class="sxs-lookup"><span data-stu-id="0d037-109">Unable to acquire JD Edwards EnterpriseOne connection object.</span></span>|<span data-ttu-id="0d037-110">Vérifiez vos informations d’identification.</span><span class="sxs-lookup"><span data-stu-id="0d037-110">Verify your credentials.</span></span> <span data-ttu-id="0d037-111">Vérifiez vos paramètres et informations d'identification CLASSPATH.</span><span class="sxs-lookup"><span data-stu-id="0d037-111">Verify your CLASSPATH settings and logon credentials.</span></span> <span data-ttu-id="0d037-112">Reportez-vous à la variable d'environnement.</span><span class="sxs-lookup"><span data-stu-id="0d037-112">Refer to Environment variable.</span></span>|  
+|<span data-ttu-id="0d037-113">I-JDE0043</span><span class="sxs-lookup"><span data-stu-id="0d037-113">I-JDE0043</span></span>|<span data-ttu-id="0d037-114">Serveur d'applications, port, environnement, chemin d'accès du fichier de configuration, utilisateur, mot de passe erronés.</span><span class="sxs-lookup"><span data-stu-id="0d037-114">Wrong App Server, Port, Environment, Path for Configuration File, User, Password.</span></span> <span data-ttu-id="0d037-115">Échec de la connexion.</span><span class="sxs-lookup"><span data-stu-id="0d037-115">Log in failed.</span></span>|<span data-ttu-id="0d037-116">Vérifiez vos informations d'identification.</span><span class="sxs-lookup"><span data-stu-id="0d037-116">Verify your log in credentials.</span></span> <span data-ttu-id="0d037-117">Reportez-vous à la variable d'environnement.</span><span class="sxs-lookup"><span data-stu-id="0d037-117">Refer to Environment variable.</span></span>|  
+|<span data-ttu-id="0d037-118">I-JDE0048</span><span class="sxs-lookup"><span data-stu-id="0d037-118">I-JDE0048</span></span>|<span data-ttu-id="0d037-119">Si le fichier jdearglist.txt est inexistant ou vide, un message d'information s'affiche dans le journal lors de l'ouverture de l'adaptateur Microsoft BizTalk pour JD Edwards EnterpriseOne.</span><span class="sxs-lookup"><span data-stu-id="0d037-119">If the jdearglist.txt file does not exist or is empty, an informational message appears in the log when Microsoft BizTalk Adapter for JD Edwards EnterpriseOne opens.</span></span>|<span data-ttu-id="0d037-120">Mettez à jour le fichier jdearglist.txt pour entrer une liste de paramètres afin qu'ils soient automatiquement alignés à droite et complétés d'espaces à gauche.</span><span class="sxs-lookup"><span data-stu-id="0d037-120">Update the jdearglist.txt file to enter a list of parameters so that they are automatically right justified and padded on the left with blanks.</span></span> <span data-ttu-id="0d037-121">Pour plus d’informations, consultez [gestion des valeurs de chaîne](../core/handling-string-values2.md).</span><span class="sxs-lookup"><span data-stu-id="0d037-121">For more information, see  [Handling String Values](../core/handling-string-values2.md).</span></span> <span data-ttu-id="0d037-122">Chaque fois que vous modifiez jdearglist, vous devez régénérer les schémas pour cet objet d'entreprise.</span><span class="sxs-lookup"><span data-stu-id="0d037-122">Every time you change the jdearglist, you must regenerate the schemas for that business object.</span></span>|  
+|<span data-ttu-id="0d037-123">E-JDE0027</span><span class="sxs-lookup"><span data-stu-id="0d037-123">E-JDE0027</span></span>|<span data-ttu-id="0d037-124">Impossible d'acquérir l'objet de connexion JD Edwards EnterpriseOne.</span><span class="sxs-lookup"><span data-stu-id="0d037-124">Unable to acquire JD Edwards EnterpriseOne connection object.</span></span> <span data-ttu-id="0d037-125">Vérifiez votre variable CLASSPATH et vos informations d'identification.</span><span class="sxs-lookup"><span data-stu-id="0d037-125">Please check your CLASSPATH and credentials.</span></span>|<span data-ttu-id="0d037-126">Vérifiez l'emplacement du fichier jdeinterop.ini.</span><span class="sxs-lookup"><span data-stu-id="0d037-126">Verify the location of jdeinterop.ini.</span></span>|  
+  
+## <a name="see-also"></a><span data-ttu-id="0d037-127">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="0d037-127">See Also</span></span>  
+ <span data-ttu-id="0d037-128">[Résolution des problèmes de JD Edwards EnterpriseOne](../core/troubleshooting-jd-edwards-enterpriseone.md) </span><span class="sxs-lookup"><span data-stu-id="0d037-128">[Troubleshooting JD Edwards EnterpriseOne](../core/troubleshooting-jd-edwards-enterpriseone.md) </span></span>  
+ [<span data-ttu-id="0d037-129">Informations techniques de référence</span><span class="sxs-lookup"><span data-stu-id="0d037-129">Technical Reference</span></span>](../core/technical-reference6.md)

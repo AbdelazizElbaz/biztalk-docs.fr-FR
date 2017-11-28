@@ -1,0 +1,45 @@
+---
+title: "Limitation des attaques de déni de Service des attaques par | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IPSec, message protection
+- messages, size
+- security, configuring
+- Authentication Required property
+- security, Internet Information Services (IIS) Lockdown Tool
+- security, Denial of Service attacks
+- discretionary access control lists (DACLs)
+- IPSec, data protection
+- Internet Information Services (IIS) Lockdown Tool
+- Denial of Service attacks
+ms.assetid: f39c0d0a-b890-4c48-874d-5cafbc71473c
+caps.latest.revision: "15"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 94fe45a2882d85164ab81c13e78fca2ac26d0ec4
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="mitigating-denial-of-service-attacks"></a><span data-ttu-id="8c567-102">Limitation des attaques de déni de Service des attaques par</span><span class="sxs-lookup"><span data-stu-id="8c567-102">Mitigating Denial of Service Attacks</span></span>
+<span data-ttu-id="8c567-103">Il est recommandé d'utiliser les techniques de prévention suivantes pour protéger les services et les serveurs BizTalk contre les attaques par déni de service.</span><span class="sxs-lookup"><span data-stu-id="8c567-103">It is recommended to use the following mitigation techniques to help protect your BizTalk servers and services against Denial of Service attacks.</span></span> <span data-ttu-id="8c567-104">Vous devez choisir les techniques adaptées à votre environnement.</span><span class="sxs-lookup"><span data-stu-id="8c567-104">You must decide which of these mitigation techniques are appropriate for your environment.</span></span>  
+  
+-   <span data-ttu-id="8c567-105">**Utilisez la propriété authentification requise dans le port de réception.**</span><span class="sxs-lookup"><span data-stu-id="8c567-105">**Use the Authentication Required property in the receive port.**</span></span> <span data-ttu-id="8c567-106">Par défaut, BizTalk envoie les messages qu'il reçoit vers la base de données MessageBox, même ceux provenant d'un tiers inconnu ou non résolu (invité). Pour réduire le risque d’une personne malveillante envoyer un grand nombre de messages à BizTalk Server et inonde (remplisse) la base de données MessageBox, vous pouvez utiliser la **authentification requise** propriété du port de réception pour recevoir uniquement messages qui proviennent de tiers que BizTalk Server connus.</span><span class="sxs-lookup"><span data-stu-id="8c567-106">By default, BizTalk sends all the messages it receives to the MessageBox database, even if they come from an unknown or unresolved party (Guest.) To mitigate the potential of an attacker sending a large number of messages to BizTalk Server and flooding (filling) the MessageBox database, you can use the **Authentication Required** property in the receive port to only receive messages that come from parties BizTalk Server knows.</span></span> <span data-ttu-id="8c567-107">Vous pouvez soit abandonner les messages envoyés par un tiers inconnu, soit les suspendre.</span><span class="sxs-lookup"><span data-stu-id="8c567-107">You can choose either to drop the messages coming from an unknown party or to suspend them.</span></span> <span data-ttu-id="8c567-108">Pour plus d’informations sur la **authentification requise** propriété, consultez [authentification de l’expéditeur d’un Message](../core/authenticating-the-sender-of-a-message.md).</span><span class="sxs-lookup"><span data-stu-id="8c567-108">For more information about the **Authentication Required** property, see [Authenticating the Sender of a Message](../core/authenticating-the-sender-of-a-message.md).</span></span> <span data-ttu-id="8c567-109">Outre la **authentification requise** propriété, vous devez envisager l’utilisation d’un mécanisme externe tel que le filtrage de port de pare-feu ou de blocage pour vous protéger contre les attaques par déni de Service d’adresses IP.</span><span class="sxs-lookup"><span data-stu-id="8c567-109">In addition to the **Authentication Required** property, you should consider the use of an external mechanism such as firewall port filtering or IP-address blocking to protect against Denial of Service attacks.</span></span>  
+  
+-   <span data-ttu-id="8c567-110">**Limiter la taille des messages reçus par BizTalk.**</span><span class="sxs-lookup"><span data-stu-id="8c567-110">**Limit the size of the messages that BizTalk can receive.**</span></span> <span data-ttu-id="8c567-111">Par exemple, lorsque vous utilisez l’adaptateur de réception SOAP, vous pouvez éviter de recevoir des messages très volumineux en définissant l’attribut maxRequestLength dans le \<httpRuntime > élément à une taille acceptable.</span><span class="sxs-lookup"><span data-stu-id="8c567-111">For example, when you use the SOAP receive adapter, you can avoid receiving very large messages size by setting the maxRequestLength attribute in the \<httpRuntime> element to an acceptable size.</span></span> <span data-ttu-id="8c567-112">Le \<httpRuntime > élément est défini dans le fichier Machine.config, situé dans le \< *lecteur*> :\\<*répertoire Windows* > \Microsoft.NET\Framework\vX.X.XXXXX\CONFIG active.</span><span class="sxs-lookup"><span data-stu-id="8c567-112">The \<httpRuntime> element is defined in the Machine.config file, which is located in the \<*drive*>:\\<*Windows directory*>\Microsoft.NET\Framework\vX.X.XXXXX\CONFIG directory.</span></span> <span data-ttu-id="8c567-113">Pour plus d’informations sur \<httpRuntime > élément, consultez le site Web Microsoft MSDN à l’adresse [http://go.microsoft.com/fwlink/?LinkId=60948](http://go.microsoft.com/fwlink/?LinkId=60948).</span><span class="sxs-lookup"><span data-stu-id="8c567-113">For more information about \<httpRuntime> element, see the Microsoft MSDN Web site at [http://go.microsoft.com/fwlink/?LinkId=60948](http://go.microsoft.com/fwlink/?LinkId=60948).</span></span>  
+  
+-   <span data-ttu-id="8c567-114">**Utilisation des listes DACL fort pour les emplacements de réception.**</span><span class="sxs-lookup"><span data-stu-id="8c567-114">**Use strong DACLs for receive locations.**</span></span> <span data-ttu-id="8c567-115">Il est recommandé d'utiliser des listes de contrôle d'accès discrétionnaire renforcées dans les emplacements de dépôt des emplacements de réception.</span><span class="sxs-lookup"><span data-stu-id="8c567-115">It is recommended that you use strong discretionary access control lists (DACLs) in the drop locations for the receive locations.</span></span> <span data-ttu-id="8c567-116">Par exemple, vous devez utiliser des listes de contrôle d'accès discrétionnaire renforcées pour le répertoire dans lequel l'emplacement de réception des fichiers sélectionne des messages, afin que seuls les utilisateurs autorisés puissent déposer des messages dans cet emplacement.</span><span class="sxs-lookup"><span data-stu-id="8c567-116">For example, you must use strong DACLs in the directory from which the file receive location picks up messages, so that only authorized users can drop messages in this location.</span></span>  
+  
+-   <span data-ttu-id="8c567-117">**Utilisez IPSec.**</span><span class="sxs-lookup"><span data-stu-id="8c567-117">**Use IPSec.**</span></span> <span data-ttu-id="8c567-118">Si vous n'utilisez aucun pare-feu logiciel ou matériel, utilisez le protocole IPSec (Internet Protocol security) pour protéger les messages et les données lorsque BizTalk Server les transfère entre deux serveurs.</span><span class="sxs-lookup"><span data-stu-id="8c567-118">If you do not use hardware or software firewalls, use Internet Protocol security (IPSec) to help protect the messages and data as BizTalk Server transfers it from one server to another.</span></span> <span data-ttu-id="8c567-119">Pour plus d’informations sur IPSec, consultez le Center Download Microsoft à [http://go.microsoft.com/fwlink/?LinkId=60949](http://go.microsoft.com/fwlink/?LinkId=60949).</span><span class="sxs-lookup"><span data-stu-id="8c567-119">For more information about IPSec, see the Microsoft Download Center at [http://go.microsoft.com/fwlink/?LinkId=60949](http://go.microsoft.com/fwlink/?LinkId=60949).</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="8c567-120">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="8c567-120">See Also</span></span>  
+ <span data-ttu-id="8c567-121">[Identifier les menaces potentielles](../core/identifying-potential-threats.md) </span><span class="sxs-lookup"><span data-stu-id="8c567-121">[Identifying Potential Threats](../core/identifying-potential-threats.md) </span></span>  
+ [<span data-ttu-id="8c567-122">Planification de la sécurité</span><span class="sxs-lookup"><span data-stu-id="8c567-122">Planning for Security</span></span>](../core/planning-for-security.md)

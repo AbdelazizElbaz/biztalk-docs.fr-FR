@@ -1,0 +1,33 @@
+---
+title: "Rôle (nœud rôles) | Documents Microsoft"
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Role node [binding file]
+ms.assetid: dfe2a579-7090-4d85-87e5-d627598c4ee8
+caps.latest.revision: "6"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 8d70e99568db262ef5abd5b0885cb814c722347f
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="role-roles-node"></a><span data-ttu-id="f5342-102">Rôle (nœud Rôles)</span><span class="sxs-lookup"><span data-stu-id="f5342-102">Role (Roles Node)</span></span>
+<span data-ttu-id="f5342-103">Le nœud Role du nœud Roles d'un fichier de liaison spécifie des informations sur un rôle lié à un service exporté avec le fichier de liaison.</span><span class="sxs-lookup"><span data-stu-id="f5342-103">The Role node of the Roles node of a binding file specifies information about a role that is bound to a service that is exported with the binding file.</span></span>  
+  
+## <a name="nodes-in-the-role-node"></a><span data-ttu-id="f5342-104">Nœuds du nœud Role</span><span class="sxs-lookup"><span data-stu-id="f5342-104">Nodes in the Role node</span></span>  
+ <span data-ttu-id="f5342-105">Le tableau suivant répertorie les propriétés que vous pouvez définir pour ce nœud d'un fichier de liaison :</span><span class="sxs-lookup"><span data-stu-id="f5342-105">The following table lists the properties that can be set for this node of a binding file:</span></span>  
+  
+|<span data-ttu-id="f5342-106">**Nom**</span><span class="sxs-lookup"><span data-stu-id="f5342-106">**Name**</span></span>|<span data-ttu-id="f5342-107">**Type de nœud**</span><span class="sxs-lookup"><span data-stu-id="f5342-107">**Node Type**</span></span>|<span data-ttu-id="f5342-108">**Type de données**</span><span class="sxs-lookup"><span data-stu-id="f5342-108">**Data Type**</span></span>|<span data-ttu-id="f5342-109">**Description**</span><span class="sxs-lookup"><span data-stu-id="f5342-109">**Description**</span></span>|<span data-ttu-id="f5342-110">**Restrictions**</span><span class="sxs-lookup"><span data-stu-id="f5342-110">**Restrictions**</span></span>|<span data-ttu-id="f5342-111">**Commentaires**</span><span class="sxs-lookup"><span data-stu-id="f5342-111">**Comments**</span></span>|  
+|--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
+|<span data-ttu-id="f5342-112">Nom</span><span class="sxs-lookup"><span data-stu-id="f5342-112">Name</span></span>|<span data-ttu-id="f5342-113">Attribut</span><span class="sxs-lookup"><span data-stu-id="f5342-113">Attribute</span></span>|<span data-ttu-id="f5342-114">xs:string</span><span class="sxs-lookup"><span data-stu-id="f5342-114">xs:string</span></span>|<span data-ttu-id="f5342-115">Spécifie le nom du rôle.</span><span class="sxs-lookup"><span data-stu-id="f5342-115">Specifies the name of the role.</span></span>|<span data-ttu-id="f5342-116">Facultatif</span><span class="sxs-lookup"><span data-stu-id="f5342-116">Not required</span></span>|<span data-ttu-id="f5342-117">Valeur par défaut : vide</span><span class="sxs-lookup"><span data-stu-id="f5342-117">Default value: empty</span></span>|  
+|<span data-ttu-id="f5342-118">RoleLinkTypeName</span><span class="sxs-lookup"><span data-stu-id="f5342-118">RoleLinkTypeName</span></span>|<span data-ttu-id="f5342-119">Attribut</span><span class="sxs-lookup"><span data-stu-id="f5342-119">Attribute</span></span>|<span data-ttu-id="f5342-120">xs:string</span><span class="sxs-lookup"><span data-stu-id="f5342-120">xs:string</span></span>|<span data-ttu-id="f5342-121">Spécifie le nom du type de lien de rôle associé au rôle.</span><span class="sxs-lookup"><span data-stu-id="f5342-121">Specifies the name of the role link type associated with the role</span></span>|<span data-ttu-id="f5342-122">Facultatif</span><span class="sxs-lookup"><span data-stu-id="f5342-122">Not required</span></span>|<span data-ttu-id="f5342-123">Valeur par défaut : vide</span><span class="sxs-lookup"><span data-stu-id="f5342-123">Default value: empty</span></span>|  
+|<span data-ttu-id="f5342-124">RoleType</span><span class="sxs-lookup"><span data-stu-id="f5342-124">RoleType</span></span>|<span data-ttu-id="f5342-125">Attribut</span><span class="sxs-lookup"><span data-stu-id="f5342-125">Attribute</span></span>|<span data-ttu-id="f5342-126">RoleRefType (SimpleType)</span><span class="sxs-lookup"><span data-stu-id="f5342-126">RoleRefType (SimpleType)</span></span>|<span data-ttu-id="f5342-127">Spécifie le type de rôle associé au rôle.</span><span class="sxs-lookup"><span data-stu-id="f5342-127">Specifies the role type associated with the role.</span></span>|<span data-ttu-id="f5342-128">Requis</span><span class="sxs-lookup"><span data-stu-id="f5342-128">Required</span></span>|<span data-ttu-id="f5342-129">Valeur par défaut : Aucun</span><span class="sxs-lookup"><span data-stu-id="f5342-129">Default value: none</span></span><br /><br /> <span data-ttu-id="f5342-130">Les valeurs possibles sont :</span><span class="sxs-lookup"><span data-stu-id="f5342-130">Possible values include:</span></span><br /><br /> <span data-ttu-id="f5342-131">-Inconnu</span><span class="sxs-lookup"><span data-stu-id="f5342-131">-   Unknown</span></span><br /><span data-ttu-id="f5342-132">-Implémente</span><span class="sxs-lookup"><span data-stu-id="f5342-132">-   Implements</span></span><br /><span data-ttu-id="f5342-133">-Utilise</span><span class="sxs-lookup"><span data-stu-id="f5342-133">-   Uses</span></span>|  
+|[<span data-ttu-id="f5342-134">Tiers inscrits</span><span class="sxs-lookup"><span data-stu-id="f5342-134">Enlisted Parties</span></span>](../core/enlisted-parties-role-node.md)|<span data-ttu-id="f5342-135">Record</span><span class="sxs-lookup"><span data-stu-id="f5342-135">Record</span></span>|<span data-ttu-id="f5342-136">ArrayOfEnlistedParty (ComplexType)</span><span class="sxs-lookup"><span data-stu-id="f5342-136">ArrayOfEnlistedParty (ComplexType)</span></span>|<span data-ttu-id="f5342-137">Nœud du conteneur des tiers inscrits liés au rôle.</span><span class="sxs-lookup"><span data-stu-id="f5342-137">Container node for the enlisted parties bound to this role.</span></span>|<span data-ttu-id="f5342-138">Facultatif</span><span class="sxs-lookup"><span data-stu-id="f5342-138">Not required</span></span>|<span data-ttu-id="f5342-139">Valeur par défaut : Aucun</span><span class="sxs-lookup"><span data-stu-id="f5342-139">Default value: none</span></span>|

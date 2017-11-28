@@ -1,0 +1,1 @@
+<span data-ttu-id="957b6-101">ordinateur virtuel</span><span class="sxs-lookup"><span data-stu-id="957b6-101">virtual machine</span></span>

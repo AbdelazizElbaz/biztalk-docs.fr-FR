@@ -1,0 +1,75 @@
+---
+title: Configuration des identificateurs (EDIFACT) | Documents Microsoft
+ms.custom: 
+ms.date: 06/08/2017
+ms.prod: biztalk-server
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 097292f2-1aa5-42e4-aeee-c7d4cbdae17c
+caps.latest.revision: "23"
+author: MandiOhlinger
+ms.author: mandia
+manager: anneta
+ms.openlocfilehash: 673501923385c956169670eb1dc61e667e611734
+ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/20/2017
+---
+# <a name="configuring-identifiers-edifact"></a><span data-ttu-id="26e6c-102">Configuration d'identificateurs (EDIFACT)</span><span class="sxs-lookup"><span data-stu-id="26e6c-102">Configuring Identifiers (EDIFACT)</span></span>
+<span data-ttu-id="26e6c-103">Dans l'accord partenaire, vous devez définir le mot de passe du destinataire pour vérifier que l'échange n'est pas reçu par des destinataires non autorisés.</span><span class="sxs-lookup"><span data-stu-id="26e6c-103">In the partner agreement, you must set the recipient reference password, in order to verify that the interchange is not being received by unauthorized recipients.</span></span>  
+  
+> [!IMPORTANT]
+>  <span data-ttu-id="26e6c-104">Les propriétés suivantes sont désactivées dans cette page si vous avez désactivé la **BizTalk Local traite les messages reçus par le tiers ou prend en charge l’envoi de messages à partir de ce tiers** case à cocher lors de la création du tiers pour lequel vous créez le accord.</span><span class="sxs-lookup"><span data-stu-id="26e6c-104">The following properties are disabled on this page if you cleared the **Local BizTalk processes messages received by the party or supports sending messages from this party** check box while creating the party for which you are creating the agreement.</span></span>  
+>   
+>  -   <span data-ttu-id="26e6c-105">**DestinationPartyName** sous **supplémentaires de résolution d’accord** section.</span><span class="sxs-lookup"><span data-stu-id="26e6c-105">**DestinationPartyName** under **Additional Agreement Resolvers** section.</span></span>  
+>   
+>  <span data-ttu-id="26e6c-106">Cependant, les propriétés seront désactivées uniquement sous l'onglet d'accord unidirectionnel qui correspond aux propriétés des échanges envoyés par le tiers.</span><span class="sxs-lookup"><span data-stu-id="26e6c-106">The properties are disabled only on the one-way agreement tab that corresponds to the properties for interchanges being sent from the party.</span></span> <span data-ttu-id="26e6c-107">Par exemple, si vous créez deux tiers tiers A et tiers B et pour le tiers A, vous avez désactivé la case à cocher, la liste des propriétés ci-dessus sont désactivés sur le **tiers A -> tiers B** onglet d’accord unidirectionnel.</span><span class="sxs-lookup"><span data-stu-id="26e6c-107">For example, if you create two parties Party A and Party B and for Party A, you cleared the check box, the above list of properties are disabled on the **Party A->Party B** one-way agreement tab.</span></span>  
+  
+## <a name="prerequisites"></a><span data-ttu-id="26e6c-108">Conditions préalables</span><span class="sxs-lookup"><span data-stu-id="26e6c-108">Prerequisites</span></span>  
+ <span data-ttu-id="26e6c-109">Vous devez être connecté en tant que membre du groupe d'administrateurs [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ou du groupe Opérateurs B2B de  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span><span class="sxs-lookup"><span data-stu-id="26e6c-109">You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators or [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators group.</span></span>  
+  
+### <a name="to-set-the-sender-recipient-and-recipient-password"></a><span data-ttu-id="26e6c-110">Pour définir l'expéditeur, le destinataire et le mot de passe du destinataire</span><span class="sxs-lookup"><span data-stu-id="26e6c-110">To set the sender, recipient, and recipient password</span></span>  
+  
+1.  <span data-ttu-id="26e6c-111">Créer un accord le codage comme décrit dans EDIFACT, [paramètres généraux configuration (EDIFACT)](../core/configuring-general-settings-edifact.md).</span><span class="sxs-lookup"><span data-stu-id="26e6c-111">Create an EDIFACT encoding agreement as described in [Configuring General Settings (EDIFACT)](../core/configuring-general-settings-edifact.md).</span></span> <span data-ttu-id="26e6c-112">Pour mettre à jour un accord existant, cliquez sur l’accord dans le **tiers et profils d’entreprise** page, puis cliquez sur **propriétés**.</span><span class="sxs-lookup"><span data-stu-id="26e6c-112">To update an existing agreement, right-click the agreement in the **Parties and Business Profiles** page, and click **Properties**.</span></span>  
+  
+2.  <span data-ttu-id="26e6c-113">Sous l’onglet accord unidirectionnel, sous **paramètres de l’échange** , cliquez sur **identificateurs**.</span><span class="sxs-lookup"><span data-stu-id="26e6c-113">On a one-way agreement tab, under **Interchange Settings** section, click **Identifiers**.</span></span>  
+  
+3.  <span data-ttu-id="26e6c-114">Dans le **expéditeur (UNB2)** section, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="26e6c-114">In the **Sender (UNB2)** section, do the following:</span></span>  
+  
+    1.  <span data-ttu-id="26e6c-115">Pour **d’Identification (UNB2.1)**, entrez une valeur alphanumérique contenant au minimum 1 et 35 caractères au maximum.</span><span class="sxs-lookup"><span data-stu-id="26e6c-115">For **Identification (UNB2.1)**, enter an alphanumeric value with a minimum of one and a maximum of 35.</span></span> <span data-ttu-id="26e6c-116">Ce champ est obligatoire.</span><span class="sxs-lookup"><span data-stu-id="26e6c-116">This is a required field.</span></span>  
+  
+    2.  <span data-ttu-id="26e6c-117">Pour **qualificateur de Code (UNB2.2)**, sélectionnez une valeur dans la liste déroulante.</span><span class="sxs-lookup"><span data-stu-id="26e6c-117">For **Code qualifier (UNB2.2)**, select a value from the drop-down list.</span></span> <span data-ttu-id="26e6c-118">Il s’agit d’un champ facultatif.</span><span class="sxs-lookup"><span data-stu-id="26e6c-118">This is an optional field.</span></span>  
+  
+    3.  <span data-ttu-id="26e6c-119">Pour **(UNB2.3) adresse de routage inverse**, entrez une valeur alphanumérique comportant un caractère au minimum et maximum 14 caractères.</span><span class="sxs-lookup"><span data-stu-id="26e6c-119">For **Reverse routing address (UNB2.3)**, enter an alphanumeric value with a minimum of one character and a maximum of 14 characters.</span></span> <span data-ttu-id="26e6c-120">Il s’agit d’un champ facultatif.</span><span class="sxs-lookup"><span data-stu-id="26e6c-120">This is an optional field.</span></span>  
+  
+4.  <span data-ttu-id="26e6c-121">Dans le **destinataire (UNB3)** section, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="26e6c-121">In the **Recipient (UNB3)** section, do the following:</span></span>  
+  
+    1.  <span data-ttu-id="26e6c-122">Pour **d’Identification (UNB3.1)**, entrez une valeur alphanumérique contenant au minimum 1 et 35 caractères au maximum.</span><span class="sxs-lookup"><span data-stu-id="26e6c-122">For **Identification (UNB3.1)**, enter an alphanumeric value with a minimum of one and a maximum of 35.</span></span> <span data-ttu-id="26e6c-123">Ce champ est obligatoire.</span><span class="sxs-lookup"><span data-stu-id="26e6c-123">This is a required field.</span></span>  
+  
+    2.  <span data-ttu-id="26e6c-124">Pour **qualificateur de Code (UNB3.2)**, sélectionnez une valeur dans la liste déroulante.</span><span class="sxs-lookup"><span data-stu-id="26e6c-124">For **Code qualifier (UNB3.2)**, select a value from the drop-down list.</span></span> <span data-ttu-id="26e6c-125">Il s’agit d’un champ facultatif.</span><span class="sxs-lookup"><span data-stu-id="26e6c-125">This is an optional field.</span></span>  
+  
+    3.  <span data-ttu-id="26e6c-126">Pour **(UNB3.3) adresse de routage inverse**, entrez une valeur alphanumérique comportant un caractère au minimum et maximum 14 caractères.</span><span class="sxs-lookup"><span data-stu-id="26e6c-126">For **Reverse routing address (UNB3.3)**, enter an alphanumeric value with a minimum of one character and a maximum of 14 characters.</span></span> <span data-ttu-id="26e6c-127">Il s’agit d’un champ facultatif.</span><span class="sxs-lookup"><span data-stu-id="26e6c-127">This is an optional field.</span></span>  
+  
+    4.  <span data-ttu-id="26e6c-128">Si nécessaire, dans le **mot de passe du destinataire (UNB6)** section, entrez des valeurs pour le mot de passe du destinataire.</span><span class="sxs-lookup"><span data-stu-id="26e6c-128">If required, in the **Recipient reference password (UNB6)** section, enter values for the recipient reference password.</span></span> <span data-ttu-id="26e6c-129">Pour **valeur (UNB6.1)**, entrez une valeur alphanumérique contenant au moins un et un maximum de 14.</span><span class="sxs-lookup"><span data-stu-id="26e6c-129">For **Value (UNB6.1)**, enter an alphanumeric value with a minimum of one and a maximum of 14.</span></span> <span data-ttu-id="26e6c-130">Pour **qualificateur (UNB6.2)**, entrez une valeur alphanumérique comportant un caractère au minimum et un maximum de deux caractères.</span><span class="sxs-lookup"><span data-stu-id="26e6c-130">For **Qualifier (UNB6.2)**, enter an alphanumeric value with a minimum of one character and a maximum of two characters.</span></span> <span data-ttu-id="26e6c-131">Ces champs sont facultatifs.</span><span class="sxs-lookup"><span data-stu-id="26e6c-131">These are optional fields.</span></span> <span data-ttu-id="26e6c-132">Si ces valeurs ne correspondent pas aux champs UNB6.1 et UNB6.2 dans un échange reçu, BizTalk Server interrompt l'échange.</span><span class="sxs-lookup"><span data-stu-id="26e6c-132">If these values do not match the UNB6.1 and UNB6.2 fields in a received interchange, BizTalk Server will suspend the interchange.</span></span>  
+  
+        > [!NOTE]
+        >  <span data-ttu-id="26e6c-133">La combinaison de **UNB6.1** et **UNB6.2** doit être unique.</span><span class="sxs-lookup"><span data-stu-id="26e6c-133">The combination of **UNB6.1** and **UNB6.2** must be unique.</span></span>  
+  
+        > [!NOTE]
+        >  <span data-ttu-id="26e6c-134">Si vous entrez des valeurs pour les champs UNB6.1 et UNB6.2, que vous appliquez les modifications et que vous videz à nouveau le champ UNB6.1, la valeur du champ UNB6.2 sera également supprimée et le champ désactivé.</span><span class="sxs-lookup"><span data-stu-id="26e6c-134">If you enter values for both UNB6.1 and UNB6.2, apply the changes and then blank out UNB6.1, the value in UNB6.2 will also be deleted and the field will be disabled.</span></span>  
+  
+5.  <span data-ttu-id="26e6c-135">Dans le **supplémentaires de résolution d’accord** section, pour **DestinationPartyName** propriété, spécifiez une valeur pour le tiers de destination.</span><span class="sxs-lookup"><span data-stu-id="26e6c-135">In the **Additional Agreement Resolvers** section, for **DestinationPartyName** property, specify a value for the destination party.</span></span> <span data-ttu-id="26e6c-136">Cette valeur est également utilisée pour la résolution des messages sortants en accord.</span><span class="sxs-lookup"><span data-stu-id="26e6c-136">This value is also used to resolve outbound messages to an agreement.</span></span> <span data-ttu-id="26e6c-137">Pour plus d’informations, consultez [résolution de l’accord et détermination du schéma pour les Messages EDI sortants](../core/agreement-resolution-and-schema-determination-for-outgoing-edi-messages.md).</span><span class="sxs-lookup"><span data-stu-id="26e6c-137">For more information see, [Agreement Resolution and Schema Determination for Outgoing EDI Messages](../core/agreement-resolution-and-schema-determination-for-outgoing-edi-messages.md).</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="26e6c-138">En règle générale, vous n’avez pas besoin définir le **DestinationPartyName** propriété.</span><span class="sxs-lookup"><span data-stu-id="26e6c-138">You typically do not need to set the **DestinationPartyName** property.</span></span> <span data-ttu-id="26e6c-139">Cette propriété est disponible dans le cadre des propriétés de l'accord pour la prise en charge des scénarios de mise à niveau.</span><span class="sxs-lookup"><span data-stu-id="26e6c-139">This property is available as part of the agreement properties to support upgrade scenarios.</span></span> <span data-ttu-id="26e6c-140">Lors de la mise à niveau à partir de BizTalk Server 2006 R2 ou BizTalk Server 2009, le **DestinationPartyName** est définie sur le nom du tiers dans BizTalk Server 2006 R2 ou BizTalk Server 2009.</span><span class="sxs-lookup"><span data-stu-id="26e6c-140">When upgrading from BizTalk Server 2006 R2 or BizTalk Server 2009, the **DestinationPartyName** property is set to the name of the party in BizTalk Server 2006 R2 or BizTalk Server 2009.</span></span>  
+  
+6.  <span data-ttu-id="26e6c-141">Cliquez sur **appliquer** pour accepter les modifications avant de poursuivre la configuration, ou cliquez sur **OK** pour valider les modifications, puis fermez la boîte de dialogue.</span><span class="sxs-lookup"><span data-stu-id="26e6c-141">Click **Apply** to accept the changes before continuing with the configuration, or click **OK** to validate the changes and then close the dialog box.</span></span>  
+  
+    > [!IMPORTANT]
+    >  <span data-ttu-id="26e6c-142">Si vous cliquez sur **OK** ou **appliquer** à ce stade, vous obtiendrez une erreur.</span><span class="sxs-lookup"><span data-stu-id="26e6c-142">If you click **OK** or **Apply** at this stage, you will get an error.</span></span> <span data-ttu-id="26e6c-143">C’est parce que vous devez toujours fournir des valeurs UNB2 et UNB3 sur la **identificateurs** onglet pour l’autre onglet d’accord unidirectionnel.</span><span class="sxs-lookup"><span data-stu-id="26e6c-143">That is because you still need to provide UNB2 and UNB3 values on the **Identifiers** tab for the other one-way agreement tab.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="26e6c-144">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="26e6c-144">See Also</span></span>  
+ [<span data-ttu-id="26e6c-145">Configuration des paramètres d’échange (EDIFACT)</span><span class="sxs-lookup"><span data-stu-id="26e6c-145">Configuring Interchange Settings (EDIFACT)</span></span>](../core/configuring-interchange-settings-edifact.md)
