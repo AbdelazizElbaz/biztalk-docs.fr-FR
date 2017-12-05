@@ -23,75 +23,75 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5a2d6ef6752965c1f20c695dacb06ff348089054
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 47496b875297e6c16141780979fda933f3968c6b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
-# <a name="running-orchestrations"></a><span data-ttu-id="2536d-102">Orchestrations en cours d’exécution</span><span class="sxs-lookup"><span data-stu-id="2536d-102">Running Orchestrations</span></span>
-<span data-ttu-id="2536d-103">Les procédures suivantes expliquent comment construire, déployer, lier et démarrer une orchestration.</span><span class="sxs-lookup"><span data-stu-id="2536d-103">The following procedures describe how to build, deploy, bind, and start an orchestration.</span></span>  
+# <a name="running-orchestrations"></a><span data-ttu-id="04867-102">Orchestrations en cours d’exécution</span><span class="sxs-lookup"><span data-stu-id="04867-102">Running Orchestrations</span></span>
+<span data-ttu-id="04867-103">Les procédures suivantes expliquent comment construire, déployer, lier et démarrer une orchestration.</span><span class="sxs-lookup"><span data-stu-id="04867-103">The following procedures describe how to build, deploy, bind, and start an orchestration.</span></span>  
   
-## <a name="creating-a-strong-name-key"></a><span data-ttu-id="2536d-104">Création d'une clé de nom fort</span><span class="sxs-lookup"><span data-stu-id="2536d-104">Creating a Strong Name Key</span></span>  
+## <a name="creating-a-strong-name-key"></a><span data-ttu-id="04867-104">Création d'une clé de nom fort</span><span class="sxs-lookup"><span data-stu-id="04867-104">Creating a Strong Name Key</span></span>  
   
-#### <a name="to-create-a-strong-name-key"></a><span data-ttu-id="2536d-105">Pour créer une clé de nom fort</span><span class="sxs-lookup"><span data-stu-id="2536d-105">To create a strong name key</span></span>  
+#### <a name="to-create-a-strong-name-key"></a><span data-ttu-id="04867-105">Pour créer une clé de nom fort</span><span class="sxs-lookup"><span data-stu-id="04867-105">To create a strong name key</span></span>  
   
-1.  <span data-ttu-id="2536d-106">Ouvrir un [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] invite de commandes.</span><span class="sxs-lookup"><span data-stu-id="2536d-106">Open a [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Command Prompt.</span></span>  
+1.  <span data-ttu-id="04867-106">Ouvrir un [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] invite de commandes.</span><span class="sxs-lookup"><span data-stu-id="04867-106">Open a [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Command Prompt.</span></span>  
   
-2.  <span data-ttu-id="2536d-107">Accédez aux répertoires d'un projet existant, puis appuyez sur ENTRÉE.</span><span class="sxs-lookup"><span data-stu-id="2536d-107">Change directories to an existing project and press ENTER.</span></span>  
+2.  <span data-ttu-id="04867-107">Accédez aux répertoires d'un projet existant, puis appuyez sur ENTRÉE.</span><span class="sxs-lookup"><span data-stu-id="04867-107">Change directories to an existing project and press ENTER.</span></span>  
   
-     <span data-ttu-id="2536d-108">Exemple :</span><span class="sxs-lookup"><span data-stu-id="2536d-108">For example:</span></span>  
+     <span data-ttu-id="04867-108">Exemple :</span><span class="sxs-lookup"><span data-stu-id="04867-108">For example:</span></span>  
   
-     <span data-ttu-id="2536d-109">**\<lecteur > : \Adapter_Install\biztalk\my_project**</span><span class="sxs-lookup"><span data-stu-id="2536d-109">**\<drive>:\Adapter_Install\biztalk\my_project**</span></span>  
+     <span data-ttu-id="04867-109">**\<lecteur\>: \Adapter_Install\biztalk\my_project**</span><span class="sxs-lookup"><span data-stu-id="04867-109">**\<drive\>:\Adapter_Install\biztalk\my_project**</span></span>  
   
-3.  <span data-ttu-id="2536d-110">Tapez ce qui suit à l'invite de commandes, puis appuyez sur ENTRÉE :</span><span class="sxs-lookup"><span data-stu-id="2536d-110">Type the following at the command prompt and press ENTER:</span></span>  
+3.  <span data-ttu-id="04867-110">Tapez ce qui suit à l'invite de commandes, puis appuyez sur ENTRÉE :</span><span class="sxs-lookup"><span data-stu-id="04867-110">Type the following at the command prompt and press ENTER:</span></span>  
   
      `sn -k SSOSchedule.snk`  
   
-## <a name="compiling-and-deploying-an-orchestration"></a><span data-ttu-id="2536d-111">Compilation et déploiement d'une orchestration</span><span class="sxs-lookup"><span data-stu-id="2536d-111">Compiling and Deploying an Orchestration</span></span>  
+## <a name="compiling-and-deploying-an-orchestration"></a><span data-ttu-id="04867-111">Compilation et déploiement d'une orchestration</span><span class="sxs-lookup"><span data-stu-id="04867-111">Compiling and Deploying an Orchestration</span></span>  
   
-#### <a name="to-compile-and-deploy-an-orchestration"></a><span data-ttu-id="2536d-112">Pour compiler et déployer une orchestration</span><span class="sxs-lookup"><span data-stu-id="2536d-112">To compile and deploy an orchestration</span></span>  
+#### <a name="to-compile-and-deploy-an-orchestration"></a><span data-ttu-id="04867-112">Pour compiler et déployer une orchestration</span><span class="sxs-lookup"><span data-stu-id="04867-112">To compile and deploy an orchestration</span></span>  
   
-1.  <span data-ttu-id="2536d-113">Dans [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Explorateur de solutions, cliquez sur le **SSOSchedule** le projet, puis sélectionnez **propriétés**.</span><span class="sxs-lookup"><span data-stu-id="2536d-113">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Solution Explorer, right-click the **SSOSchedule** project, and select **Properties**.</span></span>  
+1.  <span data-ttu-id="04867-113">Dans [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Explorateur de solutions, cliquez sur le **SSOSchedule** le projet, puis sélectionnez **propriétés**.</span><span class="sxs-lookup"><span data-stu-id="04867-113">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Solution Explorer, right-click the **SSOSchedule** project, and select **Properties**.</span></span>  
   
-2.  <span data-ttu-id="2536d-114">Cliquez sur **propriétés communes**, puis développez le **Assembly** nœud.</span><span class="sxs-lookup"><span data-stu-id="2536d-114">Click **Common Properties**, and expand the **Assembly** node.</span></span>  
+2.  <span data-ttu-id="04867-114">Cliquez sur **propriétés communes**, puis développez le **Assembly** nœud.</span><span class="sxs-lookup"><span data-stu-id="04867-114">Click **Common Properties**, and expand the **Assembly** node.</span></span>  
   
-3.  <span data-ttu-id="2536d-115">Entrez le chemin d’accès à SSOSchedule.snk dans les **fichier de clé d’Assembly** zone de texte.</span><span class="sxs-lookup"><span data-stu-id="2536d-115">Enter the path to SSOSchedule.snk in the **Assembly Key File** text box.</span></span>  
+3.  <span data-ttu-id="04867-115">Entrez le chemin d’accès à SSOSchedule.snk dans les **fichier de clé d’Assembly** zone de texte.</span><span class="sxs-lookup"><span data-stu-id="04867-115">Enter the path to SSOSchedule.snk in the **Assembly Key File** text box.</span></span>  
   
-4.  <span data-ttu-id="2536d-116">Vérifiez que configuration\déploiement\serveur est un point (.) ou le nom de votre ordinateur, puis cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="2536d-116">Verify that Configuration Properties\Deployment\Server is a dot (.) or your computer name, and then click **OK**.</span></span>  
+4.  <span data-ttu-id="04867-116">Vérifiez que configuration\déploiement\serveur est un point (.) ou le nom de votre ordinateur, puis cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="04867-116">Verify that Configuration Properties\Deployment\Server is a dot (.) or your computer name, and then click **OK**.</span></span>  
   
-5.  <span data-ttu-id="2536d-117">Dans l’Explorateur de solutions, cliquez sur **SSOSchedule**, puis cliquez sur **reconstruire**.</span><span class="sxs-lookup"><span data-stu-id="2536d-117">In Solution Explorer, right-click **SSOSchedule**, and then click **Rebuild**.</span></span>  
+5.  <span data-ttu-id="04867-117">Dans l’Explorateur de solutions, cliquez sur **SSOSchedule**, puis cliquez sur **reconstruire**.</span><span class="sxs-lookup"><span data-stu-id="04867-117">In Solution Explorer, right-click **SSOSchedule**, and then click **Rebuild**.</span></span>  
   
-6.  <span data-ttu-id="2536d-118">Avec le bouton droit **SSOSchedule**, puis cliquez sur **déployer**.</span><span class="sxs-lookup"><span data-stu-id="2536d-118">Right-click **SSOSchedule**, and then click **Deploy**.</span></span>  
+6.  <span data-ttu-id="04867-118">Avec le bouton droit **SSOSchedule**, puis cliquez sur **déployer**.</span><span class="sxs-lookup"><span data-stu-id="04867-118">Right-click **SSOSchedule**, and then click **Deploy**.</span></span>  
   
-## <a name="starting-the-orchestration"></a><span data-ttu-id="2536d-119">Démarrage de l'orchestration</span><span class="sxs-lookup"><span data-stu-id="2536d-119">Starting the Orchestration</span></span>  
+## <a name="starting-the-orchestration"></a><span data-ttu-id="04867-119">Démarrage de l'orchestration</span><span class="sxs-lookup"><span data-stu-id="04867-119">Starting the Orchestration</span></span>  
   
-#### <a name="to-start-the-orchestration"></a><span data-ttu-id="2536d-120">Pour démarrer l'orchestration</span><span class="sxs-lookup"><span data-stu-id="2536d-120">To start the orchestration</span></span>  
+#### <a name="to-start-the-orchestration"></a><span data-ttu-id="04867-120">Pour démarrer l'orchestration</span><span class="sxs-lookup"><span data-stu-id="04867-120">To start the orchestration</span></span>  
   
-1.  <span data-ttu-id="2536d-121">Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)], puis cliquez sur **Administration de BizTalk Server.**</span><span class="sxs-lookup"><span data-stu-id="2536d-121">Click **Start**, point to **All Programs**, point to **Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)], and then click **BizTalk Server Administration.**</span></span>  
+1.  <span data-ttu-id="04867-121">Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)], puis cliquez sur **Administration de BizTalk Server.**</span><span class="sxs-lookup"><span data-stu-id="04867-121">Click **Start**, point to **All Programs**, point to **Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)], and then click **BizTalk Server Administration.**</span></span>  
   
-2.  <span data-ttu-id="2536d-122">Dans la Console Administration de BizTalk Server, développez **Administration de BizTalk Server**, développez **groupe BizTalk**, développez **Applications**, développez l’élément application, puis sur **Orchestrations**.</span><span class="sxs-lookup"><span data-stu-id="2536d-122">In the BizTalk Server Administration Console, expand **BizTalk Server Administration**, expand **BizTalk Group**, expand **Applications**, expand the desired application, and then click **Orchestrations**.</span></span>  
+2.  <span data-ttu-id="04867-122">Dans la Console Administration de BizTalk Server, développez **Administration de BizTalk Server**, développez **groupe BizTalk**, développez **Applications**, développez l’élément application, puis sur **Orchestrations**.</span><span class="sxs-lookup"><span data-stu-id="04867-122">In the BizTalk Server Administration Console, expand **BizTalk Server Administration**, expand **BizTalk Group**, expand **Applications**, expand the desired application, and then click **Orchestrations**.</span></span>  
   
-3.  <span data-ttu-id="2536d-123">Dans le volet de détails, cliquez sur l’orchestration, sur **Démarrer**.</span><span class="sxs-lookup"><span data-stu-id="2536d-123">In the details pane, right-click the orchestration and click **Start**.</span></span>  
+3.  <span data-ttu-id="04867-123">Dans le volet de détails, cliquez sur l’orchestration, sur **Démarrer**.</span><span class="sxs-lookup"><span data-stu-id="04867-123">In the details pane, right-click the orchestration and click **Start**.</span></span>  
   
-## <a name="stopping-and-restarting-a-host-instance"></a><span data-ttu-id="2536d-124">Arrêt et redémarrage d'une instance de l'hôte</span><span class="sxs-lookup"><span data-stu-id="2536d-124">Stopping and Restarting a Host Instance</span></span>  
- <span data-ttu-id="2536d-125">Une l'exemple déployé, vous devez redémarrer l'instance de l'hôte.</span><span class="sxs-lookup"><span data-stu-id="2536d-125">After you deploy the sample, you must restart the host instance.</span></span>  
+## <a name="stopping-and-restarting-a-host-instance"></a><span data-ttu-id="04867-124">Arrêt et redémarrage d'une instance de l'hôte</span><span class="sxs-lookup"><span data-stu-id="04867-124">Stopping and Restarting a Host Instance</span></span>  
+ <span data-ttu-id="04867-125">Une l'exemple déployé, vous devez redémarrer l'instance de l'hôte.</span><span class="sxs-lookup"><span data-stu-id="04867-125">After you deploy the sample, you must restart the host instance.</span></span>  
   
-#### <a name="to-stop-and-restart-a-host-instance"></a><span data-ttu-id="2536d-126">Pour arrêter et redémarrer une instance de l'hôte</span><span class="sxs-lookup"><span data-stu-id="2536d-126">To stop and restart a host instance</span></span>  
+#### <a name="to-stop-and-restart-a-host-instance"></a><span data-ttu-id="04867-126">Pour arrêter et redémarrer une instance de l'hôte</span><span class="sxs-lookup"><span data-stu-id="04867-126">To stop and restart a host instance</span></span>  
   
-1.  <span data-ttu-id="2536d-127">Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)], puis cliquez sur **Administration de BizTalk Server.**</span><span class="sxs-lookup"><span data-stu-id="2536d-127">Click **Start**, point to **All Programs**, point to **Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)], and then click **BizTalk Server Administration.**</span></span>  
+1.  <span data-ttu-id="04867-127">Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)], puis cliquez sur **Administration de BizTalk Server.**</span><span class="sxs-lookup"><span data-stu-id="04867-127">Click **Start**, point to **All Programs**, point to **Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)], and then click **BizTalk Server Administration.**</span></span>  
   
-2.  <span data-ttu-id="2536d-128">Dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration de la console, développez **Administration de BizTalk Server**, développez **groupe BizTalk**, développez **paramètres de plateforme**, puis cliquez sur  **Instances de l’hôte**.</span><span class="sxs-lookup"><span data-stu-id="2536d-128">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, expand **BizTalk Server Administration**, expand **BizTalk Group**, expand **Platform Settings**, and then click **Host Instances**.</span></span>  
+2.  <span data-ttu-id="04867-128">Dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration de la console, développez **Administration de BizTalk Server**, développez **groupe BizTalk**, développez **paramètres de plateforme**, puis cliquez sur  **Instances de l’hôte**.</span><span class="sxs-lookup"><span data-stu-id="04867-128">In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, expand **BizTalk Server Administration**, expand **BizTalk Group**, expand **Platform Settings**, and then click **Host Instances**.</span></span>  
   
-3.  <span data-ttu-id="2536d-129">Dans le volet droit, cliquez sur l’instance d’hôte (par exemple, le nom d’ordinateur), puis cliquez sur **arrêter**.</span><span class="sxs-lookup"><span data-stu-id="2536d-129">In the right pane, right-click the host instance (for example, the computer name), and click **Stop**.</span></span>  
+3.  <span data-ttu-id="04867-129">Dans le volet droit, cliquez sur l’instance d’hôte (par exemple, le nom d’ordinateur), puis cliquez sur **arrêter**.</span><span class="sxs-lookup"><span data-stu-id="04867-129">In the right pane, right-click the host instance (for example, the computer name), and click **Stop**.</span></span>  
   
-     <span data-ttu-id="2536d-130">L’état de l’instance d’hôte devient **arrêté**.</span><span class="sxs-lookup"><span data-stu-id="2536d-130">The status of the host instance changes to **Stopped**.</span></span>  
+     <span data-ttu-id="04867-130">L’état de l’instance d’hôte devient **arrêté**.</span><span class="sxs-lookup"><span data-stu-id="04867-130">The status of the host instance changes to **Stopped**.</span></span>  
   
-4.  <span data-ttu-id="2536d-131">Dans le volet droit, cliquez sur l’instance d’hôte, puis cliquez sur **Démarrer**.</span><span class="sxs-lookup"><span data-stu-id="2536d-131">In the right pane, right-click the host instance and click **Start**.</span></span>  
+4.  <span data-ttu-id="04867-131">Dans le volet droit, cliquez sur l’instance d’hôte, puis cliquez sur **Démarrer**.</span><span class="sxs-lookup"><span data-stu-id="04867-131">In the right pane, right-click the host instance and click **Start**.</span></span>  
   
-     <span data-ttu-id="2536d-132">L’état de l’instance d’hôte devient **attente de démarrage**.</span><span class="sxs-lookup"><span data-stu-id="2536d-132">The status of the host instance changes to **Start pending**.</span></span>  
+     <span data-ttu-id="04867-132">L’état de l’instance d’hôte devient **attente de démarrage**.</span><span class="sxs-lookup"><span data-stu-id="04867-132">The status of the host instance changes to **Start pending**.</span></span>  
   
-     <span data-ttu-id="2536d-133">Pour modifier l’état à **en cours d’exécution** et cliquez sur **Actualiser**, ou cliquez sur l’instance d’hôte, puis cliquez **Actualiser**.</span><span class="sxs-lookup"><span data-stu-id="2536d-133">To change the status to **Running** and click **Refresh**, or right-click the host instance and then click **Refresh**.</span></span>  
+     <span data-ttu-id="04867-133">Pour modifier l’état à **en cours d’exécution** et cliquez sur **Actualiser**, ou cliquez sur l’instance d’hôte, puis cliquez **Actualiser**.</span><span class="sxs-lookup"><span data-stu-id="04867-133">To change the status to **Running** and click **Refresh**, or right-click the host instance and then click **Refresh**.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="2536d-134">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="2536d-134">See Also</span></span>  
- [<span data-ttu-id="2536d-135">Sécuriser l’adaptateur</span><span class="sxs-lookup"><span data-stu-id="2536d-135">Secure the adapter</span></span>](../core/security-in-biztalk-adapter-for-peoplesoft-enterprise.md)
+## <a name="see-also"></a><span data-ttu-id="04867-134">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="04867-134">See Also</span></span>  
+ [<span data-ttu-id="04867-135">Sécuriser l’adaptateur</span><span class="sxs-lookup"><span data-stu-id="04867-135">Secure the adapter</span></span>](../core/security-in-biztalk-adapter-for-peoplesoft-enterprise.md)

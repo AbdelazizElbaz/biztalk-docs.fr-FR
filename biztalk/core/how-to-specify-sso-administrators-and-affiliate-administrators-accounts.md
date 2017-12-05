@@ -22,20 +22,20 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c588f476cca366f139a359bfccd28413a6057fe4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6c96e2d99bd6071098a65b3635bb466de44a455d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
-# <a name="how-to-specify-sso-administrators-and-affiliate-administrators-accounts"></a><span data-ttu-id="1bead-102">Comment spécifier les administrateurs de l’authentification unique et les applications associées à des administrateurs de comptes</span><span class="sxs-lookup"><span data-stu-id="1bead-102">How to Specify SSO Administrators and Affiliate Administrators Accounts</span></span>
-<span data-ttu-id="1bead-103">Les comptes Administrateurs SSO de l'entreprise et Administrateurs d'applications associées à SSO peuvent être des comptes de groupe d'hôtes ou individuels.</span><span class="sxs-lookup"><span data-stu-id="1bead-103">The Enterprise Single Sign-On (SSO) Administrators and Affiliate Administrators accounts can be host group or individual accounts.</span></span> <span data-ttu-id="1bead-104">Vous devez créer ces comptes avant de configurer le système SSO.</span><span class="sxs-lookup"><span data-stu-id="1bead-104">You must create these accounts before you configure the SSO system.</span></span>  
+# <a name="how-to-specify-sso-administrators-and-affiliate-administrators-accounts"></a><span data-ttu-id="a8ca4-102">Comment spécifier les administrateurs de l’authentification unique et les applications associées à des administrateurs de comptes</span><span class="sxs-lookup"><span data-stu-id="a8ca4-102">How to Specify SSO Administrators and Affiliate Administrators Accounts</span></span>
+<span data-ttu-id="a8ca4-103">Les comptes Administrateurs SSO de l'entreprise et Administrateurs d'applications associées à SSO peuvent être des comptes de groupe d'hôtes ou individuels.</span><span class="sxs-lookup"><span data-stu-id="a8ca4-103">The Enterprise Single Sign-On (SSO) Administrators and Affiliate Administrators accounts can be host group or individual accounts.</span></span> <span data-ttu-id="a8ca4-104">Vous devez créer ces comptes avant de configurer le système SSO.</span><span class="sxs-lookup"><span data-stu-id="a8ca4-104">You must create these accounts before you configure the SSO system.</span></span>  
   
- <span data-ttu-id="1bead-105">Si vous utilisez des comptes de domaine, vous devez créer ces deux comptes en tant que groupes de sécurité globale de domaine au sein du contrôleur de domaine.</span><span class="sxs-lookup"><span data-stu-id="1bead-105">When using domain accounts, you must create the SSO Administrators and SSO Affiliate Administrators accounts as a domain global security groups in the domain controller.</span></span> <span data-ttu-id="1bead-106">La création de ces comptes incombe à l'administrateur de domaine.</span><span class="sxs-lookup"><span data-stu-id="1bead-106">The domain administrator must create these accounts.</span></span>  
+ <span data-ttu-id="a8ca4-105">Si vous utilisez des comptes de domaine, vous devez créer ces deux comptes en tant que groupes de sécurité globale de domaine au sein du contrôleur de domaine.</span><span class="sxs-lookup"><span data-stu-id="a8ca4-105">When using domain accounts, you must create the SSO Administrators and SSO Affiliate Administrators accounts as a domain global security groups in the domain controller.</span></span> <span data-ttu-id="a8ca4-106">La création de ces comptes incombe à l'administrateur de domaine.</span><span class="sxs-lookup"><span data-stu-id="a8ca4-106">The domain administrator must create these accounts.</span></span>  
   
- <span data-ttu-id="1bead-107">Vous devez spécifier les comptes Administrateurs SSO et Administrateurs d'applications associées à SSO dans la base de données SSO.</span><span class="sxs-lookup"><span data-stu-id="1bead-107">You must specify the Single Sign-On Administrators and Affiliate Administrators accounts in the SSO database.</span></span> <span data-ttu-id="1bead-108">Vous devez désactiver le système SSO avant de mettre à jour la base de données SSO avec le groupe Administrateurs SSO.</span><span class="sxs-lookup"><span data-stu-id="1bead-108">You must disable the Single Sign-On system before you update the SSO database with the SSO Administrators group.</span></span>  
+ <span data-ttu-id="a8ca4-107">Vous devez spécifier les comptes Administrateurs SSO et Administrateurs d'applications associées à SSO dans la base de données SSO.</span><span class="sxs-lookup"><span data-stu-id="a8ca4-107">You must specify the Single Sign-On Administrators and Affiliate Administrators accounts in the SSO database.</span></span> <span data-ttu-id="a8ca4-108">Vous devez désactiver le système SSO avant de mettre à jour la base de données SSO avec le groupe Administrateurs SSO.</span><span class="sxs-lookup"><span data-stu-id="a8ca4-108">You must disable the Single Sign-On system before you update the SSO database with the SSO Administrators group.</span></span>  
   
- <span data-ttu-id="1bead-109">Voici un exemple de code XML permettant de mettre à jour la base de données SSO :</span><span class="sxs-lookup"><span data-stu-id="1bead-109">The following XML code shows a sample XML for updating the SSO database:</span></span>  
+ <span data-ttu-id="a8ca4-109">Voici un exemple de code XML permettant de mettre à jour la base de données SSO :</span><span class="sxs-lookup"><span data-stu-id="a8ca4-109">The following XML code shows a sample XML for updating the SSO database:</span></span>  
   
 ```  
 <sso>  
@@ -47,67 +47,67 @@ ms.lasthandoff: 09/20/2017
 ```  
   
 > [!NOTE]
->  <span data-ttu-id="1bead-110">L'Assistant Configuration spécifie automatiquement les groupes Administrateurs SSO et Administrateurs d'applications associées à SSO dans la base de données SSO.</span><span class="sxs-lookup"><span data-stu-id="1bead-110">The Configuration Wizard automatically specifies the SSO administrator and SSO affiliate administrator groups in the SSO database.</span></span>  
+>  <span data-ttu-id="a8ca4-110">L'Assistant Configuration spécifie automatiquement les groupes Administrateurs SSO et Administrateurs d'applications associées à SSO dans la base de données SSO.</span><span class="sxs-lookup"><span data-stu-id="a8ca4-110">The Configuration Wizard automatically specifies the SSO administrator and SSO affiliate administrator groups in the SSO database.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="1bead-111">S'il est impossible de configurer l'authentification unique, il est recommandé de vérifier l'utilisation des comptes de domaine locaux dans un domaine en mode mixte.</span><span class="sxs-lookup"><span data-stu-id="1bead-111">If SSO does not configure, users should check whether Domain Local Accounts are being used in a mixed-mode domain.</span></span>  
+>  <span data-ttu-id="a8ca4-111">S'il est impossible de configurer l'authentification unique, il est recommandé de vérifier l'utilisation des comptes de domaine locaux dans un domaine en mode mixte.</span><span class="sxs-lookup"><span data-stu-id="a8ca4-111">If SSO does not configure, users should check whether Domain Local Accounts are being used in a mixed-mode domain.</span></span>  
   
-### <a name="to-disable-the-enterprise-single-sign-on-system-using-the-mmc-snap-in"></a><span data-ttu-id="1bead-112">Pour désactiver le système d'authentification unique de l'entreprise à l'aide du composant logiciel enfichable MMC</span><span class="sxs-lookup"><span data-stu-id="1bead-112">To disable the Enterprise Single Sign-On system using the MMC Snap-In</span></span>  
+### <a name="to-disable-the-enterprise-single-sign-on-system-using-the-mmc-snap-in"></a><span data-ttu-id="a8ca4-112">Pour désactiver le système d'authentification unique de l'entreprise à l'aide du composant logiciel enfichable MMC</span><span class="sxs-lookup"><span data-stu-id="a8ca4-112">To disable the Enterprise Single Sign-On system using the MMC Snap-In</span></span>  
   
-1.  <span data-ttu-id="1bead-113">Dans le menu **Démarrer** , cliquez sur **Tous les programmes**, **Authentification unique de l'entreprise Microsoft**, puis sur **Administration SSO**.</span><span class="sxs-lookup"><span data-stu-id="1bead-113">On the **Start** menu, click **All Programs**, click **Microsoft Enterprise Single Sign-On**, and then click **SSO Administration**.</span></span>  
+1.  <span data-ttu-id="a8ca4-113">Dans le menu **Démarrer** , cliquez sur **Tous les programmes**, **Authentification unique de l'entreprise Microsoft**, puis sur **Administration SSO**.</span><span class="sxs-lookup"><span data-stu-id="a8ca4-113">On the **Start** menu, click **All Programs**, click **Microsoft Enterprise Single Sign-On**, and then click **SSO Administration**.</span></span>  
   
-2.  <span data-ttu-id="1bead-114">Dans le volet d'étendue du composant logiciel enfichable MMC ENTSSO, développez le nœud **Authentification unique de l'entreprise** .</span><span class="sxs-lookup"><span data-stu-id="1bead-114">In the scope pane of the ENTSSO MMC Snap-In, expand the **Enterprise Single Sign-On** node.</span></span>  
+2.  <span data-ttu-id="a8ca4-114">Dans le volet d'étendue du composant logiciel enfichable MMC ENTSSO, développez le nœud **Authentification unique de l'entreprise** .</span><span class="sxs-lookup"><span data-stu-id="a8ca4-114">In the scope pane of the ENTSSO MMC Snap-In, expand the **Enterprise Single Sign-On** node.</span></span>  
   
-3.  <span data-ttu-id="1bead-115">Avec le bouton droit **système**, puis cliquez sur **désactiver**.</span><span class="sxs-lookup"><span data-stu-id="1bead-115">Right-click **System**, and then click **Disable**.</span></span>  
+3.  <span data-ttu-id="a8ca4-115">Avec le bouton droit **système**, puis cliquez sur **désactiver**.</span><span class="sxs-lookup"><span data-stu-id="a8ca4-115">Right-click **System**, and then click **Disable**.</span></span>  
   
-### <a name="to-disable-the-enterprise-single-sign-on-system-using-the-command-line"></a><span data-ttu-id="1bead-116">Pour désactiver le système d'authentification unique de l'entreprise à l'aide de la ligne de commande</span><span class="sxs-lookup"><span data-stu-id="1bead-116">To disable the Enterprise Single Sign-On system using the command line</span></span>  
+### <a name="to-disable-the-enterprise-single-sign-on-system-using-the-command-line"></a><span data-ttu-id="a8ca4-116">Pour désactiver le système d'authentification unique de l'entreprise à l'aide de la ligne de commande</span><span class="sxs-lookup"><span data-stu-id="a8ca4-116">To disable the Enterprise Single Sign-On system using the command line</span></span>  
   
-1.  <span data-ttu-id="1bead-117">Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.</span><span class="sxs-lookup"><span data-stu-id="1bead-117">On the **Start** menu, click **run**, and then type **cmd**.</span></span>  
+1.  <span data-ttu-id="a8ca4-117">Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.</span><span class="sxs-lookup"><span data-stu-id="a8ca4-117">On the **Start** menu, click **run**, and then type **cmd**.</span></span>  
   
-2.  <span data-ttu-id="1bead-118">Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise.</span><span class="sxs-lookup"><span data-stu-id="1bead-118">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="1bead-119">Le répertoire d’installation par défaut est \< *lecteur*> : \Program Files\Enterprise Single Sign-On.</span><span class="sxs-lookup"><span data-stu-id="1bead-119">The default installation directory is \<*drive*>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
+2.  <span data-ttu-id="a8ca4-118">Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise.</span><span class="sxs-lookup"><span data-stu-id="a8ca4-118">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="a8ca4-119">Le répertoire d’installation par défaut est \< *lecteur*\>: \Program Files\Enterprise Single Sign-On.</span><span class="sxs-lookup"><span data-stu-id="a8ca4-119">The default installation directory is \<*drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="1bead-120">Type **ssomanage** –**disablesso**.</span><span class="sxs-lookup"><span data-stu-id="1bead-120">Type **ssomanage** –**disablesso**.</span></span>  
-  
-    > [!NOTE]
-    >  <span data-ttu-id="1bead-121">Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.</span><span class="sxs-lookup"><span data-stu-id="1bead-121">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
-  
-### <a name="to-update-the-sso-database-using-the-mmc-snap-in"></a><span data-ttu-id="1bead-122">Pour mettre à jour la base de données SSO à l'aide du composant logiciel enfichable MMC</span><span class="sxs-lookup"><span data-stu-id="1bead-122">To update the SSO database using the MMC Snap-In</span></span>  
-  
-1.  <span data-ttu-id="1bead-123">Sur le **Démarrer** menu, cliquez sur **tous les programmes**, **Microsoft Enterprise Single Sign-On**, puis **Administration SSO**.</span><span class="sxs-lookup"><span data-stu-id="1bead-123">On the **Start** menu, click **All Programs**, **Microsoft Enterprise Single Sign-On**, and then **SSO Administration**.</span></span>  
-  
-2.  <span data-ttu-id="1bead-124">Dans le volet d'étendue du composant logiciel enfichable MMC ENTSSO, développez le nœud **Authentification unique de l'entreprise** .</span><span class="sxs-lookup"><span data-stu-id="1bead-124">In the scope pane of the ENTSSO MMC Snap-In, expand the **Enterprise Single Sign-On** node.</span></span>  
-  
-3.  <span data-ttu-id="1bead-125">Avec le bouton droit **système**, puis cliquez sur **mise à jour**.</span><span class="sxs-lookup"><span data-stu-id="1bead-125">Right-click **System**, and then click **Update**.</span></span>  
-  
-### <a name="to-update-the-sso-database-using-the-command-line"></a><span data-ttu-id="1bead-126">Pour mettre à jour la base de données SSO à l'aide de la ligne de commande</span><span class="sxs-lookup"><span data-stu-id="1bead-126">To update the SSO database using the command line</span></span>  
-  
-1.  <span data-ttu-id="1bead-127">Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.</span><span class="sxs-lookup"><span data-stu-id="1bead-127">On the **Start** menu, click **run**, and then type **cmd**.</span></span>  
-  
-2.  <span data-ttu-id="1bead-128">Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise.</span><span class="sxs-lookup"><span data-stu-id="1bead-128">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="1bead-129">Le répertoire d’installation par défaut est  *\<lecteur >*: \Program Files\Enterprise Single Sign-On.</span><span class="sxs-lookup"><span data-stu-id="1bead-129">The default installation directory is *\<drive>*:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
-  
-3.  <span data-ttu-id="1bead-130">Type **ssomanage-updatedb  *\<mise à jour de fichier >***, où  *\<mise à jour de fichier >* est le chemin d’accès et le nom du fichier XML.</span><span class="sxs-lookup"><span data-stu-id="1bead-130">Type **ssomanage –updatedb *\<update file>***, where *\<update file>* is the path and name of the XML file.</span></span>  
+3.  <span data-ttu-id="a8ca4-120">Type **ssomanage** –**disablesso**.</span><span class="sxs-lookup"><span data-stu-id="a8ca4-120">Type **ssomanage** –**disablesso**.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="1bead-131">Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.</span><span class="sxs-lookup"><span data-stu-id="1bead-131">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
+    >  <span data-ttu-id="a8ca4-121">Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.</span><span class="sxs-lookup"><span data-stu-id="a8ca4-121">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
   
-### <a name="to-enable-the-enterprise-single-sign-on-system-using-the-mmc-snap-in"></a><span data-ttu-id="1bead-132">Pour activer le système d'authentification unique de l'entreprise à l'aide du composant logiciel enfichable MMC</span><span class="sxs-lookup"><span data-stu-id="1bead-132">To enable the Enterprise Single Sign-On system using the MMC Snap-In</span></span>  
+### <a name="to-update-the-sso-database-using-the-mmc-snap-in"></a><span data-ttu-id="a8ca4-122">Pour mettre à jour la base de données SSO à l'aide du composant logiciel enfichable MMC</span><span class="sxs-lookup"><span data-stu-id="a8ca4-122">To update the SSO database using the MMC Snap-In</span></span>  
   
-1.  <span data-ttu-id="1bead-133">Sur le **Démarrer** menu, cliquez sur **tous les programmes**, **Microsoft Enterprise Single Sign-On**, puis **Administration SSO**.</span><span class="sxs-lookup"><span data-stu-id="1bead-133">On the **Start** menu, click **All Programs**, **Microsoft Enterprise Single Sign-On**, and then **SSO Administration**.</span></span>  
+1.  <span data-ttu-id="a8ca4-123">Sur le **Démarrer** menu, cliquez sur **tous les programmes**, **Microsoft Enterprise Single Sign-On**, puis **Administration SSO**.</span><span class="sxs-lookup"><span data-stu-id="a8ca4-123">On the **Start** menu, click **All Programs**, **Microsoft Enterprise Single Sign-On**, and then **SSO Administration**.</span></span>  
   
-2.  <span data-ttu-id="1bead-134">Dans le volet d'étendue du composant logiciel enfichable MMC ENTSSO, développez le nœud **Authentification unique de l'entreprise** .</span><span class="sxs-lookup"><span data-stu-id="1bead-134">In the scope pane of the ENTSSO MMC Snap-In, expand the **Enterprise Single Sign-On** node.</span></span>  
+2.  <span data-ttu-id="a8ca4-124">Dans le volet d'étendue du composant logiciel enfichable MMC ENTSSO, développez le nœud **Authentification unique de l'entreprise** .</span><span class="sxs-lookup"><span data-stu-id="a8ca4-124">In the scope pane of the ENTSSO MMC Snap-In, expand the **Enterprise Single Sign-On** node.</span></span>  
   
-3.  <span data-ttu-id="1bead-135">Avec le bouton droit **système**, puis cliquez sur **activer**.</span><span class="sxs-lookup"><span data-stu-id="1bead-135">Right-click **System**, and then click **Enable**.</span></span>  
+3.  <span data-ttu-id="a8ca4-125">Avec le bouton droit **système**, puis cliquez sur **mise à jour**.</span><span class="sxs-lookup"><span data-stu-id="a8ca4-125">Right-click **System**, and then click **Update**.</span></span>  
   
-### <a name="to-enable-the-enterprise-single-sign-on-system-using-the-command-line"></a><span data-ttu-id="1bead-136">Pour activer le système d'authentification unique de l'entreprise à l'aide de la ligne de commande</span><span class="sxs-lookup"><span data-stu-id="1bead-136">To enable the Enterprise Single Sign-On system using the command line</span></span>  
+### <a name="to-update-the-sso-database-using-the-command-line"></a><span data-ttu-id="a8ca4-126">Pour mettre à jour la base de données SSO à l'aide de la ligne de commande</span><span class="sxs-lookup"><span data-stu-id="a8ca4-126">To update the SSO database using the command line</span></span>  
   
-1.  <span data-ttu-id="1bead-137">Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.</span><span class="sxs-lookup"><span data-stu-id="1bead-137">On the **Start** menu, click **run**, and then type **cmd**.</span></span>  
+1.  <span data-ttu-id="a8ca4-127">Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.</span><span class="sxs-lookup"><span data-stu-id="a8ca4-127">On the **Start** menu, click **run**, and then type **cmd**.</span></span>  
   
-2.  <span data-ttu-id="1bead-138">Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise.</span><span class="sxs-lookup"><span data-stu-id="1bead-138">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="1bead-139">Le répertoire d’installation par défaut est  *\<lecteur >*: \Program Files\Enterprise Single Sign-On.</span><span class="sxs-lookup"><span data-stu-id="1bead-139">The default installation directory is *\<drive>*:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
+2.  <span data-ttu-id="a8ca4-128">Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise.</span><span class="sxs-lookup"><span data-stu-id="a8ca4-128">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="a8ca4-129">Le répertoire d’installation par défaut est  *\<lecteur\>*: \Program Files\Enterprise Single Sign-On.</span><span class="sxs-lookup"><span data-stu-id="a8ca4-129">The default installation directory is *\<drive\>*:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3.  <span data-ttu-id="1bead-140">Type **ssomanage – enablesso**.</span><span class="sxs-lookup"><span data-stu-id="1bead-140">Type **ssomanage –enablesso**.</span></span>  
+3.  <span data-ttu-id="a8ca4-130">Type **ssomanage-updatedb  *\<fichier de mise à jour\>***, où  *\<fichier de mise à jour\>*  est le chemin d’accès et le nom de la Fichier XML.</span><span class="sxs-lookup"><span data-stu-id="a8ca4-130">Type **ssomanage –updatedb *\<update file\>***, where *\<update file\>* is the path and name of the XML file.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="1bead-141">Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.</span><span class="sxs-lookup"><span data-stu-id="1bead-141">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
+    >  <span data-ttu-id="a8ca4-131">Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.</span><span class="sxs-lookup"><span data-stu-id="a8ca4-131">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="1bead-142">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="1bead-142">See Also</span></span>  
- [<span data-ttu-id="1bead-143">Groupes d’utilisateurs de l’authentification unique</span><span class="sxs-lookup"><span data-stu-id="1bead-143">SSO User Groups</span></span>](../core/sso-user-groups.md)
+### <a name="to-enable-the-enterprise-single-sign-on-system-using-the-mmc-snap-in"></a><span data-ttu-id="a8ca4-132">Pour activer le système d'authentification unique de l'entreprise à l'aide du composant logiciel enfichable MMC</span><span class="sxs-lookup"><span data-stu-id="a8ca4-132">To enable the Enterprise Single Sign-On system using the MMC Snap-In</span></span>  
+  
+1.  <span data-ttu-id="a8ca4-133">Sur le **Démarrer** menu, cliquez sur **tous les programmes**, **Microsoft Enterprise Single Sign-On**, puis **Administration SSO**.</span><span class="sxs-lookup"><span data-stu-id="a8ca4-133">On the **Start** menu, click **All Programs**, **Microsoft Enterprise Single Sign-On**, and then **SSO Administration**.</span></span>  
+  
+2.  <span data-ttu-id="a8ca4-134">Dans le volet d'étendue du composant logiciel enfichable MMC ENTSSO, développez le nœud **Authentification unique de l'entreprise** .</span><span class="sxs-lookup"><span data-stu-id="a8ca4-134">In the scope pane of the ENTSSO MMC Snap-In, expand the **Enterprise Single Sign-On** node.</span></span>  
+  
+3.  <span data-ttu-id="a8ca4-135">Avec le bouton droit **système**, puis cliquez sur **activer**.</span><span class="sxs-lookup"><span data-stu-id="a8ca4-135">Right-click **System**, and then click **Enable**.</span></span>  
+  
+### <a name="to-enable-the-enterprise-single-sign-on-system-using-the-command-line"></a><span data-ttu-id="a8ca4-136">Pour activer le système d'authentification unique de l'entreprise à l'aide de la ligne de commande</span><span class="sxs-lookup"><span data-stu-id="a8ca4-136">To enable the Enterprise Single Sign-On system using the command line</span></span>  
+  
+1.  <span data-ttu-id="a8ca4-137">Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.</span><span class="sxs-lookup"><span data-stu-id="a8ca4-137">On the **Start** menu, click **run**, and then type **cmd**.</span></span>  
+  
+2.  <span data-ttu-id="a8ca4-138">Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise.</span><span class="sxs-lookup"><span data-stu-id="a8ca4-138">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="a8ca4-139">Le répertoire d’installation par défaut est  *\<lecteur\>*: \Program Files\Enterprise Single Sign-On.</span><span class="sxs-lookup"><span data-stu-id="a8ca4-139">The default installation directory is *\<drive\>*:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
+  
+3.  <span data-ttu-id="a8ca4-140">Type **ssomanage – enablesso**.</span><span class="sxs-lookup"><span data-stu-id="a8ca4-140">Type **ssomanage –enablesso**.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="a8ca4-141">Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.</span><span class="sxs-lookup"><span data-stu-id="a8ca4-141">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="a8ca4-142">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="a8ca4-142">See Also</span></span>  
+ [<span data-ttu-id="a8ca4-143">Groupes d’utilisateurs de l’authentification unique</span><span class="sxs-lookup"><span data-stu-id="a8ca4-143">SSO User Groups</span></span>](../core/sso-user-groups.md)

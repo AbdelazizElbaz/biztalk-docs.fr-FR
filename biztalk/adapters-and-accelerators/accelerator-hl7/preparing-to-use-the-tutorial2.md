@@ -13,18 +13,18 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a957bd18fd6defad40d6b04e91bc3028802da1c0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c8688e84f7913dbc32a0629d21f29ed2578c43b1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
-# <a name="preparing-to-use-the-tutorial"></a><span data-ttu-id="b1a07-102">Préparation à l’utilisation du didacticiel</span><span class="sxs-lookup"><span data-stu-id="b1a07-102">Preparing to Use the Tutorial</span></span>
-<span data-ttu-id="b1a07-103">Avant d’utiliser le didacticiel, vous devez créer un fichier ADT^A03.txt.</span><span class="sxs-lookup"><span data-stu-id="b1a07-103">Before you use the tutorial, you need to create an ADT^A03.txt file.</span></span>  
+# <a name="preparing-to-use-the-tutorial"></a><span data-ttu-id="bc5b8-102">Préparation à l’utilisation du didacticiel</span><span class="sxs-lookup"><span data-stu-id="bc5b8-102">Preparing to Use the Tutorial</span></span>
+<span data-ttu-id="bc5b8-103">Avant d’utiliser le didacticiel, vous devez créer un fichier ADT^A03.txt.</span><span class="sxs-lookup"><span data-stu-id="bc5b8-103">Before you use the tutorial, you need to create an ADT^A03.txt file.</span></span>  
   
-### <a name="to-create-the-adta03txt-file"></a><span data-ttu-id="b1a07-104">Pour créer le fichier ADT^A03.txt</span><span class="sxs-lookup"><span data-stu-id="b1a07-104">To create the ADT^A03.txt file</span></span>  
+### <a name="to-create-the-adta03txt-file"></a><span data-ttu-id="bc5b8-104">Pour créer le fichier ADT^A03.txt</span><span class="sxs-lookup"><span data-stu-id="bc5b8-104">To create the ADT^A03.txt file</span></span>  
   
-1.  <span data-ttu-id="b1a07-105">Ouvrir un éditeur tel que le bloc-notes et copiez le texte suivant dans l’éditeur :</span><span class="sxs-lookup"><span data-stu-id="b1a07-105">Open an editor such as Notepad and copy the following text into the editor:</span></span>  
+1.  <span data-ttu-id="bc5b8-105">Ouvrir un éditeur tel que le bloc-notes et copiez le texte suivant dans l’éditeur :</span><span class="sxs-lookup"><span data-stu-id="bc5b8-105">Open an editor such as Notepad and copy the following text into the editor:</span></span>  
   
     ```  
     MSH|^~\&|Tutorial_ADTSystem|MCM|BTAHL7InterfaceEngine||199601121005||ADT^A03|000001|P|2.3.1  
@@ -40,8 +40,8 @@ ms.lasthandoff: 09/20/2017
     ```  
   
     > [!NOTE]
-    >  <span data-ttu-id="b1a07-106">Il doit y avoir cinq lignes dans le .txt un fichier, chacune commençant par « MSH », « EVN », « Ci », « PD1 » et « PV1 ».</span><span class="sxs-lookup"><span data-stu-id="b1a07-106">There should be five lines in the .txt file, one each starting with "MSH", "EVN", "PID", "PD1", and "PV1".</span></span> <span data-ttu-id="b1a07-107">Vous devez supprimer les espaces dans la ligne « Ci » et la ligne « PD1 ».</span><span class="sxs-lookup"><span data-stu-id="b1a07-107">You will need to remove the spaces within the "PID" line and the "PD1" line.</span></span> <span data-ttu-id="b1a07-108">Si nécessaire, désactivez le retour automatique à la ligne dans le bloc-notes.</span><span class="sxs-lookup"><span data-stu-id="b1a07-108">If necessary, turn off word wrap in Notepad.</span></span>  
+    >  <span data-ttu-id="bc5b8-106">Il doit y avoir cinq lignes dans le .txt un fichier, chacune commençant par « MSH », « EVN », « Ci », « PD1 » et « PV1 ».</span><span class="sxs-lookup"><span data-stu-id="bc5b8-106">There should be five lines in the .txt file, one each starting with "MSH", "EVN", "PID", "PD1", and "PV1".</span></span> <span data-ttu-id="bc5b8-107">Vous devez supprimer les espaces dans la ligne « Ci » et la ligne « PD1 ».</span><span class="sxs-lookup"><span data-stu-id="bc5b8-107">You will need to remove the spaces within the "PID" line and the "PD1" line.</span></span> <span data-ttu-id="bc5b8-108">Si nécessaire, désactivez le retour automatique à la ligne dans le bloc-notes.</span><span class="sxs-lookup"><span data-stu-id="bc5b8-108">If necessary, turn off word wrap in Notepad.</span></span>  
   
-2.  <span data-ttu-id="b1a07-109">Enregistrez le fichier sous **ADT^A03.txt** dans les \< *lecteur*> : \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version > Accelerator for HL7\SDK\End en bout Dossier Tutorial, puis fermez le bloc-notes.</span><span class="sxs-lookup"><span data-stu-id="b1a07-109">Save the file as **ADT^A03.txt** in the \<*drive*>:\Program Files\\[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version> Accelerator for HL7\SDK\End-to-End Tutorial folder, and then close Notepad.</span></span>  
+2.  <span data-ttu-id="bc5b8-109">Enregistrez le fichier sous **ADT^A03.txt** dans les \< *lecteur*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version\> Accelerator pour le dossier Tutorial de bout en HL7\SDK\End, puis fermez le bloc-notes.</span><span class="sxs-lookup"><span data-stu-id="bc5b8-109">Save the file as **ADT^A03.txt** in the \<*drive*\>:\Program Files\\[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version\> Accelerator for HL7\SDK\End-to-End Tutorial folder, and then close Notepad.</span></span>  
   
- <span data-ttu-id="b1a07-110">Passez à [étape 1 : créer et déployer des schémas d’en-tête et d’accusé de réception](../../adapters-and-accelerators/accelerator-hl7/step-1-create-and-deploy-header-and-acknowledgment-schemas.md).</span><span class="sxs-lookup"><span data-stu-id="b1a07-110">Proceed to [Step 1: Create and Deploy Header and Acknowledgment Schemas](../../adapters-and-accelerators/accelerator-hl7/step-1-create-and-deploy-header-and-acknowledgment-schemas.md).</span></span>
+ <span data-ttu-id="bc5b8-110">Passez à [étape 1 : créer et déployer des schémas d’en-tête et d’accusé de réception](../../adapters-and-accelerators/accelerator-hl7/step-1-create-and-deploy-header-and-acknowledgment-schemas.md).</span><span class="sxs-lookup"><span data-stu-id="bc5b8-110">Proceed to [Step 1: Create and Deploy Header and Acknowledgment Schemas](../../adapters-and-accelerators/accelerator-hl7/step-1-create-and-deploy-header-and-acknowledgment-schemas.md).</span></span>

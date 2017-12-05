@@ -13,11 +13,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ebdd37a1e343ae801ab21eff7bc8c6c7c7f3c6d0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2f3ad1f52da4affec2f366d6b20e28a58d7b8069
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
-# <a name="setting-a4swift-properties"></a><span data-ttu-id="bfb09-102">Définition des propriétés A4SWIFT</span><span class="sxs-lookup"><span data-stu-id="bfb09-102">Setting A4SWIFT Properties</span></span>
-<span data-ttu-id="bfb09-103">Pour définir les propriétés d’A4SWIFT, reportez-vous à la Documentation de Client de Web profil situé dans \<lecteur > : \Program Files\Microsoft BizTalk Accelerator pour SWIFT\SDK\Samples\CustomMRSRModel.</span><span class="sxs-lookup"><span data-stu-id="bfb09-103">To set A4SWIFT Properties, refer to the Profile Web Client Documentation located in \<drive>:\Program Files\Microsoft BizTalk Accelerator for SWIFT\SDK\Samples\CustomMRSRModel.</span></span>
+# <a name="setting-a4swift-properties"></a><span data-ttu-id="b5894-102">Définition des propriétés A4SWIFT</span><span class="sxs-lookup"><span data-stu-id="b5894-102">Setting A4SWIFT Properties</span></span>
+<span data-ttu-id="b5894-103">Pour définir les propriétés d’A4SWIFT, reportez-vous à la Documentation de Client de Web profil situé dans \<lecteur\>: \Program Files\Microsoft BizTalk Accelerator pour SWIFT\SDK\Samples\CustomMRSRModel.</span><span class="sxs-lookup"><span data-stu-id="b5894-103">To set A4SWIFT Properties, refer to the Profile Web Client Documentation located in \<drive\>:\Program Files\Microsoft BizTalk Accelerator for SWIFT\SDK\Samples\CustomMRSRModel.</span></span>

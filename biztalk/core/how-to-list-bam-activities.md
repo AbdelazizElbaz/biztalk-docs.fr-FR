@@ -16,26 +16,26 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 29b9b6c8b84111e227ad2cd2b26bac4d33c2b200
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a3fd2447c9e3b5313bfac7b36b7373acd8f227b4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
-# <a name="how-to-list-bam-activities"></a><span data-ttu-id="1e158-102">Affichage de la liste des activités BAM</span><span class="sxs-lookup"><span data-stu-id="1e158-102">How to List BAM Activities</span></span>
-<span data-ttu-id="1e158-103">Les administrateurs utilisent la **get-activities** commande de l’utilitaire de gestion BAM pour répertorier les activités dans la base de données d’importation principale BAM locale.</span><span class="sxs-lookup"><span data-stu-id="1e158-103">Administrators use the **get-activities** command of the BAM Management utility to list the activities in the local BAM Primary Import database.</span></span>  
+# <a name="how-to-list-bam-activities"></a><span data-ttu-id="31b92-102">Affichage de la liste des activités BAM</span><span class="sxs-lookup"><span data-stu-id="31b92-102">How to List BAM Activities</span></span>
+<span data-ttu-id="31b92-103">Les administrateurs utilisent la **get-activities** commande de l’utilitaire de gestion BAM pour répertorier les activités dans la base de données d’importation principale BAM locale.</span><span class="sxs-lookup"><span data-stu-id="31b92-103">Administrators use the **get-activities** command of the BAM Management utility to list the activities in the local BAM Primary Import database.</span></span>  
   
-### <a name="to-list-bam-activities"></a><span data-ttu-id="1e158-104">Pour affichage la liste des activités BAM</span><span class="sxs-lookup"><span data-stu-id="1e158-104">To list BAM Activities</span></span>  
+### <a name="to-list-bam-activities"></a><span data-ttu-id="31b92-104">Pour affichage la liste des activités BAM</span><span class="sxs-lookup"><span data-stu-id="31b92-104">To list BAM Activities</span></span>  
   
-1.  <span data-ttu-id="1e158-105">Ouvrez une invite de commandes comme suit : cliquez sur **Démarrer**, cliquez sur **exécuter**, type **cmd**, puis cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="1e158-105">Open a command prompt as follows: Click **Start**, click **Run**, type **cmd**, and then click **OK**.</span></span>  
+1.  <span data-ttu-id="31b92-105">Ouvrez une invite de commandes comme suit : cliquez sur **Démarrer**, cliquez sur **exécuter**, type **cmd**, puis cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="31b92-105">Open a command prompt as follows: Click **Start**, click **Run**, type **cmd**, and then click **OK**.</span></span>  
   
-2.  <span data-ttu-id="1e158-106">Accédez au dossier des suivis en tapant **C:\Program Files\Microsoft BizTalk Server \<version > \Tracking** à l’invite de commandes.</span><span class="sxs-lookup"><span data-stu-id="1e158-106">Navigate to the tracking folder by typing **C:\Program Files\Microsoft BizTalk Server \<version>\Tracking** at the command prompt.</span></span> <span data-ttu-id="1e158-107">Appuyez sur **Entrée**.</span><span class="sxs-lookup"><span data-stu-id="1e158-107">Press **ENTER**.</span></span>  
+2.  <span data-ttu-id="31b92-106">Accédez au dossier des suivis en tapant **C:\Program Files\Microsoft BizTalk Server \<version\>\Tracking** à l’invite de commandes.</span><span class="sxs-lookup"><span data-stu-id="31b92-106">Navigate to the tracking folder by typing **C:\Program Files\Microsoft BizTalk Server \<version\>\Tracking** at the command prompt.</span></span> <span data-ttu-id="31b92-107">Appuyez sur **Entrée**.</span><span class="sxs-lookup"><span data-stu-id="31b92-107">Press **ENTER**.</span></span>  
   
-3.  <span data-ttu-id="1e158-108">Type **bm get-activities**.</span><span class="sxs-lookup"><span data-stu-id="1e158-108">Type **bm get-activities**.</span></span>  
+3.  <span data-ttu-id="31b92-108">Type **bm get-activities**.</span><span class="sxs-lookup"><span data-stu-id="31b92-108">Type **bm get-activities**.</span></span>  
   
-4.  <span data-ttu-id="1e158-109">Appuyez sur **Entrée**.</span><span class="sxs-lookup"><span data-stu-id="1e158-109">Press **ENTER**.</span></span>  
+4.  <span data-ttu-id="31b92-109">Appuyez sur **Entrée**.</span><span class="sxs-lookup"><span data-stu-id="31b92-109">Press **ENTER**.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="1e158-110">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="1e158-110">See Also</span></span>  
- <span data-ttu-id="1e158-111">[Gestion de l’Infrastructure dynamique BAM](../core/managing-the-bam-dynamic-infrastructure.md) </span><span class="sxs-lookup"><span data-stu-id="1e158-111">[Managing the BAM Dynamic Infrastructure](../core/managing-the-bam-dynamic-infrastructure.md) </span></span>  
- <span data-ttu-id="1e158-112">[Recommandations de sécurité BAM](../core/bam-security-recommendations.md) </span><span class="sxs-lookup"><span data-stu-id="1e158-112">[BAM Security Recommendations](../core/bam-security-recommendations.md) </span></span>  
- [<span data-ttu-id="1e158-113">Utilitaire de gestion BAM</span><span class="sxs-lookup"><span data-stu-id="1e158-113">BAM Management Utility</span></span>](../core/bam-management-utility.md)
+## <a name="see-also"></a><span data-ttu-id="31b92-110">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="31b92-110">See Also</span></span>  
+ <span data-ttu-id="31b92-111">[Gestion de l’Infrastructure dynamique BAM](../core/managing-the-bam-dynamic-infrastructure.md) </span><span class="sxs-lookup"><span data-stu-id="31b92-111">[Managing the BAM Dynamic Infrastructure](../core/managing-the-bam-dynamic-infrastructure.md) </span></span>  
+ <span data-ttu-id="31b92-112">[Recommandations de sécurité BAM](../core/bam-security-recommendations.md) </span><span class="sxs-lookup"><span data-stu-id="31b92-112">[BAM Security Recommendations](../core/bam-security-recommendations.md) </span></span>  
+ [<span data-ttu-id="31b92-113">Utilitaire de gestion de l’analyse BAM</span><span class="sxs-lookup"><span data-stu-id="31b92-113">BAM Management Utility</span></span>](../core/bam-management-utility.md)
