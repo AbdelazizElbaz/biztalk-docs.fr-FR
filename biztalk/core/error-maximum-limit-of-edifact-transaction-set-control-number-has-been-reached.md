@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1879d55de163615d5a4fab19cd50839e7ab2b17f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 81b1095f4d8f3fa69e30e9e0af89b0010175d185
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="acknowledgement-generation-has-failed-as-maximum-limit-of-edifact-transaction-set-control-number-has-been-reached-for-party-settings"></a>Un accusé de réception n'a pas pu être généré car la limite maximale du numéro de contrôle d'un document informatisé EDIFACT a été atteinte pour les paramètres du tiers
 ## <a name="details"></a>Détails  
@@ -26,7 +26,7 @@ ms.lasthandoff: 09/20/2017
 |Nom du produit|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
 |Version du produit|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
 |ID d'événement|-|  
-|Source de l'événement|[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] EDI|  
+|Source de l'événement|EDI de BizTalk Server|  
 |Composant|Moteur EDI|  
 |Nom symbolique|-|  
 |Texte du message|Un accusé de réception n'a pas pu être généré car la limite maximale du nombre de contrôle d'ensembles de transactions Edifact a été atteinte pour le tiers {0}. Pour réinitialiser le compteur, accédez au tiers dans l'écran du rôle d'émetteur, champ UNH 1 dans le gestionnaire d'accord partenaire.|  
@@ -37,4 +37,4 @@ ms.lasthandoff: 09/20/2017
  La valeur maximale du numéro de référence du document informatisé dépend du nombre de chiffres utilisés pour le numéro de référence. Le numéro de référence peut comporter jusqu'à 14 caractères, le préfixe et le suffixe 13. Les trois champs combinés peuvent contenir jusqu'à 14 caractères.  
   
 ## <a name="user-action"></a>Action de l'utilisateur  
- Pour résoudre cette erreur, dans la page Définition des segments UNG et UNH, rétablissez le champ du numéro de référence (UNH1.2) du numéro de référence du document informatisé (UNH1) sur une valeur inférieure à la limite maximale. Définissez cette propriété dans la boîte de dialogue Propriétés EDI dans la console Administration de [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)].
+ Pour résoudre cette erreur, dans la page Définition des segments UNG et UNH, rétablissez le champ du numéro de référence (UNH1.2) du numéro de référence du document informatisé (UNH1) sur une valeur inférieure à la limite maximale. Définissez cette propriété dans la boîte de dialogue Propriétés EDI dans la Console Administration de BizTalk Server.

@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3fd80934cef17f930f5dc587bbdbf3f4b87c67e6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a325a561017c6efaf6d6aefe2e271c834c13a363
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="validationadapter"></a>ValidationAdapter
 L’exemple ValidationAdapter montre comment exécuter des règles de validation spéciales sur un message dans un processus public répondeur. [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] en mode natif effectue la validation de l’envoi ou réception de pipeline et dans les orchestrations. Si vous souhaitez effectuer une validation supplémentaire, vous pouvez créer un adaptateur de validation. La validation supplémentaire peut inclure la validation de champ croisé ou des règles de validation spécifique à l’entreprise que vous ne pouvez pas implémenter à l’aide d’un fichier XSD.  
@@ -25,7 +25,7 @@ L’exemple ValidationAdapter montre comment exécuter des règles de validation
   
  Étant donné que le ValidationAdapter est utilisé par l’orchestration de processus public, il s’exécute sous les mêmes informations d’identification que le service d’hôte BizTalk qui héberge cette orchestration.  
   
- L’exemple de ValidationAdapter se trouve dans \< *lecteur*> : \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version > Accelerator for RosettaNet\SDK\ValidationAdapter.  
+ L’exemple de ValidationAdapter se trouve dans \< *lecteur*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version\> Accelerator for RosettaNet\SDK\ ValidationAdapter.  
   
 ## <a name="demonstrates"></a>Montre  
  L’exemple ValidationAdapter illustre la validation de l’adresse de messagerie dans le contenu du service. L’exemple implémente la `IValidateRNIFMessageParts` interface. Elle retourne un `RNIFException` si l’adresse de messagerie n’est pas dans le format correct. Les documents XML **preambleToValidate**, **serviceHeaderToValidate**, **deliveryHeaderToValidate**, et **serviceContentToValidate**définir la validation.  

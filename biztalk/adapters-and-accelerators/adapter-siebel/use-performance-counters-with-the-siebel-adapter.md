@@ -16,11 +16,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2540801af6c30632250602b45c21e7b57cd2bc22
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bebbd605df52e023c78112b78ad51db13d896cc7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="use-performance-counters-with-the-siebel-adapter"></a>Utiliser des compteurs de Performance avec l’adaptateur Siebel
 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]les clients peuvent utiliser les compteurs de performance pour évaluer les performances des adaptateurs. Le [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] programme d’installation crée la catégorie de compteur de performances «[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]», ainsi que l’installation du Pack d’adaptateurs.  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
 <process id>:<app domain id>:<endpoint id>:<action id>  
 ```  
   
- Dans le cas de la [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)], l’id de point de terminaison est le nom du serveur Siebel, comme spécifié dans l’URI de connexion. L’id d’action peut être toute action effectuée par le [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] telles que la connexion, de fermeture de session, de métadonnées, \<nom de composant d’entreprise >.\< opération >, \<nom de service d’entreprise >.\< méthode de service d’entreprise >. Si la convention d’affectation de noms précédente se traduit par un nom qui dépasse 127 caractères uniquement l’ID de l’action est affiché dans le format suivant :  
+ Dans le cas de la [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)], l’id de point de terminaison est le nom du serveur Siebel, comme spécifié dans l’URI de connexion. L’id d’action peut être toute action effectuée par le [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] telles que la connexion, de fermeture de session, de métadonnées, \<nom du composant métier\>.\< opération\>, \<nom de service d’entreprise\>.\< méthode de service Business\>. Si la convention d’affectation de noms précédente se traduit par un nom qui dépasse 127 caractères uniquement l’ID de l’action est affiché dans le format suivant :  
   
 ```  
 :::<action id>  

@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 36e881f8449e7aaac7aeade12c36c3c6d942ef12
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 87a47c5b2ee432059365c6f9046a75bb5775fc02
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="debugging-orchestration-runtime-errors"></a>Débogage des erreurs d'exécution d'une orchestration
 Cette section présente un certain nombre de questions et réponses conçues pour vous aider à résoudre les problèmes d'exécution liés aux orchestrations.  
@@ -62,7 +62,7 @@ Cette section présente un certain nombre de questions et réponses conçues pou
 ## <a name="multipart-mime-message-part-cannot-be-found"></a>Une partie d'un message MIME à plusieurs parties est introuvable  
   
 ### <a name="problem"></a>Problème  
- Tente de récupérer un MIME du message partie avec une valeur d’index supérieure à 0 entraîne l’exécution de BizTalk Server qui lève une erreur semblable à « Impossible de trouver le message à parties multiples avec index = \<valeur > ».  
+ Tente de récupérer un MIME du message partie avec une valeur d’index supérieure à 0 entraîne l’exécution de BizTalk Server qui lève une erreur semblable à « Impossible de trouver le message à parties multiples avec index = \<valeur\>».  
   
 ### <a name="cause"></a>Cause  
  Les principales causes de cette erreur sont les suivantes :  
@@ -77,7 +77,7 @@ Cette section présente un certain nombre de questions et réponses conçues pou
 ## <a name="you-receive-a-the-file-send-adapter-cannot-open-file-for-writing-error-when-sending-using-a-dynamic-send-port"></a>Vous recevez l'erreur « L'adaptateur d'envoi FILE ne peut pas ouvrir le fichier pour écriture » lors d'un envoi à l'aide d'un port d'envoi dynamique  
   
 ### <a name="problem"></a>Problème  
- Vous recevez un « l’adaptateur d’envoi de fichier ne peut pas ouvrir le fichier  *\<filename >* en écriture « erreur dans le journal des événements BizTalk Server lors de l’envoi à l’aide d’un dynamique un port d’envoi.  
+ Vous recevez un « l’adaptateur d’envoi de fichier ne peut pas ouvrir le fichier  *\<nom de fichier\>*  pour l’écriture « erreur dans le journal des événements BizTalk Server lors de l’envoi à l’aide d’un dynamique un port d’envoi.  
   
  Ce problème se produit lorsque le **BTS. OutBoundTransportLocation** propriété est définie dans une expression d’orchestration et le transport de fichier est spécifié, par exemple les expressions suivantes provoquent cette erreur lors de l’exécution :  
   
@@ -87,7 +87,7 @@ Message2(BTS.OutboundTransportLocation) = "file:///c:/test/out";
 MySendPort(Microsoft.XLANGs.BaseTypes.Address)=Message2(BTS.OutboundTransportLocation);  
 ```  
   
- \-Ou -  
+ \- Ou -  
   
 ```  
 Message2=Message1;  

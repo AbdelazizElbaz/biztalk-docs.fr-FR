@@ -20,18 +20,18 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 72f9769a571eb9b04cee21e42f5e75afbbadfafa
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5fac30a9b884bc769752623003d16e7089b140d4
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="migrating-functoids"></a>Migration des fonctoids
-Lorsque vous migrez un mappage de versions précédentes de BizTalk Server vers [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], les fonctoids inclus dans le mappage sont également migrés. Si les fonctoids que vous migrez n’incluent pas **script** fonctoids, aucune tâche de migration supplémentaires n’est nécessaires. Toutefois si votre mappage comprend **script** fonctoids ou des fonctoids personnalisés, vous avez peut-être des étapes supplémentaires à effectuer.  
+Lorsque vous migrez un mappage à partir de versions précédentes de BizTalk Server à BizTalk Server, les fonctoids inclus dans le mappage sont également migrés. Si les fonctoids que vous migrez n’incluent pas **script** fonctoids, aucune tâche de migration supplémentaires n’est nécessaires. Toutefois si votre mappage comprend **script** fonctoids ou des fonctoids personnalisés, vous avez peut-être des étapes supplémentaires à effectuer.  
   
  Dans les versions précédentes de BizTalk Server, tout le script personnalisé inclus dans un **script** fonctoid était écrit inline. Autrement dit, lorsque vous créiez le fonctoid, tout le script appelé par le fonctoid lors de l’exécution était stocké avec le fonctoid. Si vous souhaitez utiliser le même script avec un autre fonctoid, vous soit copié et collé à partir d’un **script** fonctoid à un autre, ou vous réécriviez le script à partir de zéro.  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] copie les scripts inline existants avec les fonctoids lors de la migration d’un mappage. Toutefois, tous les scripts ne fonctionnent pas correctement. [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]utilise Visual Basic .NET et JScript .NET plutôt que du VBScript et JScript utilisés dans les versions précédentes. Les versions .NET des langages incluent des modifications de la syntaxe.  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] copie les scripts inline existants avec les fonctoids lors de la migration d’un mappage. Toutefois, tous les scripts ne fonctionnent pas correctement. BizTalk Server utilise Visual Basic .NET et JScript .NET plutôt que le code VBScript et JScript utilisés dans les versions précédentes. Les versions .NET des langages incluent des modifications de la syntaxe.  
   
 > [!NOTE]
 >  Veillez à tester votre **script** fonctoids après la migration.  
@@ -61,4 +61,4 @@ Lorsque vous migrez un mappage de versions précédentes de BizTalk Server vers 
   
 ## <a name="see-also"></a>Voir aussi  
  [Modification des propriétés des fonctoids et des paramètres d’entrée](../core/editing-functoid-properties-and-input-parameters.md)   
- [Fonctoid script](../core/scripting-functoid.md)
+ [Fonctoid Script](../core/scripting-functoid.md)

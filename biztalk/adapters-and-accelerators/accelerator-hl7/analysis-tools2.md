@@ -19,14 +19,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 947796495a321a4b3b9cabbc01db1610223c034f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 78dd748febee568513c6138b036aab89369fcafc
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="analysis-tools"></a>Outils d’analyse
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] fournit un ensemble d’outils d’analyse pour les analystes d’entreprise et les travailleurs. Pour plus d’informations sur ces outils, consultez [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] aide.  
+[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server fournit un ensemble d’outils d’analyse pour les analystes d’entreprise et les travailleurs. Pour plus d’informations sur ces outils, consultez [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]à l’aide de BizTalk Server.  
   
 ## <a name="business-activity-monitoring"></a>Analyse BAM (Business Activity Monitoring)  
  BizTalk Business Activity Monitoring (BAM) fournit aux utilisateurs une vue en temps réel des processus d’entreprise hétérogènes. Il vous donne les données que vous avez besoin de prendre des décisions professionnelles.  
@@ -40,4 +40,4 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>Voir aussi  
  [Outils et fonctionnalités](../../adapters-and-accelerators/accelerator-hl7/tools-and-features.md)   
  [Outils de conception](../../adapters-and-accelerators/accelerator-hl7/design-time-tools.md)   
- [Outils d’administration et moment de l’exécution](../../adapters-and-accelerators/accelerator-hl7/administration-and-run-time-tools.md)
+ [Outils d’administration et d’exécution](../../adapters-and-accelerators/accelerator-hl7/administration-and-run-time-tools.md)

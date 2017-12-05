@@ -17,11 +17,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f910dd6bbe95579e0c2be8f3957333d6e78d7938
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b3566e40deaa05886ead701e1871634cf6fb94e2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-create-a-custom-analysis-task"></a>Création d'une tâche d'analyse personnalisée
 Le moyen le plus simple de créer une tâche DTS personnalisée pour traiter des données BAM consiste à démarrer à partir du lot généré automatiquement par BAM et à remplacer l'ensemble du processus existant.  
@@ -30,7 +30,7 @@ Le moyen le plus simple de créer une tâche DTS personnalisée pour traiter des
   
 1.  Créez une définition BAM nécessitant un cube OLAP. Utilisez par exemple les Assistants Excel et gardez un rapport de tableau croisé dynamique sous la forme d'une vue non-RTA.  
   
-2.  Ouvrez le lot DTS de traitement des cubes créé par BAM. BAM crée un tel package pour chaque vue, intitulé BAM_AN_\<*nom de la vue*>.  
+2.  Ouvrez le lot DTS de traitement des cubes créé par BAM. BAM crée un tel package pour chaque vue, intitulé BAM_AN_\<*nom de la vue*\>.  
   
 3.  Ouvrez le lot dans le Concepteur DTS, puis supprimez toutes les étapes à l'exception des deux premières et de la dernière. Peut-être voudrez-vous aussi conserver la connexion avec la base de données d'importation principale.  
   

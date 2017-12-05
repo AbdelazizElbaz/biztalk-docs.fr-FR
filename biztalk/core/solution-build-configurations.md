@@ -20,14 +20,14 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e537ca4bc2dd85722ddf3afd4eaba443aab7a25b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9c48791d26842b7224bb950334d6b184452a54d6
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="solution-build-configurations"></a>Configurations de version de solution
-Comme c'est le cas avec d'autres projets que vous créez dans [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], vous pouvez utiliser le Gestionnaire de configuration pour spécifier des configurations de version de solution. Celles-ci vous permettent de déterminer les projets à inclure dans les différentes versions d'une solution et si elles seront déployées ou non. [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]prend en charge les **déboguer** et **version** configurations de build.  
+Comme c'est le cas avec d'autres projets que vous créez dans [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], vous pouvez utiliser le Gestionnaire de configuration pour spécifier des configurations de version de solution. Celles-ci vous permettent de déterminer les projets à inclure dans les différentes versions d'une solution et si elles seront déployées ou non. BizTalk Server prend en charge les deux **déboguer** et **version** configurations de build.  
   
  Une solution de générer la configuration avec une coche dans le **générer** colonne vous permet de créer une solution et générer un assembly lorsque vous avez terminé. Si la case à cocher correspondante est également présente dans le **déployer** colonne, puis l’application sera déployée en fonction des paramètres de déploiement dans le Concepteur de projet.  
   

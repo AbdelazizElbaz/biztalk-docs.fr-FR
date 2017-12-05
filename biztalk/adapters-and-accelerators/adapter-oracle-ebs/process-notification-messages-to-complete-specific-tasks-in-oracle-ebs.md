@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 97b3cf9f99a4a7a2151b9b4f07d076ffb4bc1ec9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dcd2b531dd3486967f28df733d1e5dbbc510f924
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="process-notification-messages-to-complete-specific-tasks-in-oracle-e-business-suite"></a>Traiter les messages de notification pour effectuer des tâches spécifiques dans Oracle E-Business Suite
 Vous pouvez utiliser la [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] pour recevoir des notifications de modifications apportées aux tables de base de données Oracle. Toutefois, l’adaptateur seulement vous envoie une notification que certains enregistrements ont été insérées, mises à jour ou supprimées dans une table de base de données donnée. Tout traitement sur ces enregistrements doit être gérée par les applications clientes eux-mêmes. Cette rubrique présente une description de scénario basé sur la façon de traiter les enregistrements dans la table en fonction du type de notification reçue à partir de la base de données Oracle.  
@@ -156,7 +156,7 @@ Vous pouvez utiliser la [!INCLUDE[adapteroraclebusinessshort](../../includes/ada
  L’objectif d’intégration d’une forme Expression dans l’orchestration est d’avoir une requête xpath pour extraire le type de message de notification reçue. Avant de créer une requête xpath, examinons le format d’un message de notification. Un message de notification classique ressemble à ceci :  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <Notification xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/Notification/">  
   <Details>  
     <NotificationDetails>  
@@ -180,7 +180,7 @@ Vous pouvez utiliser la [!INCLUDE[adapteroraclebusinessshort](../../includes/ada
   
      Pour cette rubrique, nom de la variable en tant que **NotificationType**.  
   
--   Créer une requête xpath pour extraire la valeur de la \<Info > balise. La requête xpath ressemble à ceci :  
+-   Créer une requête xpath pour extraire la valeur de la \<Info\> balise. La requête xpath ressemble à ceci :  
   
     ```  
     NotificationType = xpath(NotifyReceive,"string(/*[local-name()='Notification']/*[local-name()='Info']/text())");  
@@ -279,7 +279,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
 -   Étant donné que la **NotifyOnListenerStart** liaison de la propriété est définie sur **True**, le message d’erreur suivant :  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <Notification xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/Notification/">  
       <Info>ListenerStarted</Info>   
       <Source>OracleEBSBinding</Source>   
@@ -292,7 +292,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
 -   Insérer un enregistrement dans la table ACCOUNTACTIVITY. Vous recevez un message de notification qui ressemble à la suivante :  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <Notification xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/Notification/">  
       <Details>  
         <NotificationDetails>  
@@ -315,7 +315,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
 -   Mettre à jour un enregistrement dans la table ACCOUNTACTIVITY. Vous recevez un message de notification qui ressemble à la suivante :  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <Notification xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/Notification/">  
       <Details>  
         <NotificationDetails>  
@@ -338,7 +338,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
 -   Supprimer un enregistrement de la table ACCOUNTACTIVITY. Vous recevez un message de notification qui ressemble à la suivante :  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <Notification xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/Notification/">  
       <Details>  
         <NotificationDetails>  

@@ -16,11 +16,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 80c0909a5544334cd9f0f8540ff5a4c357b851e2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e598dc13abb40a4b15d0624d68280c8f5279630a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-remove-accounts-from-a-view"></a>Suppression de comptes d'une vue
 Les administrateurs utilisent la **remove-account** commande pour supprimer des utilisateurs à partir de vues BAM et protéger les vues de la feuille de calcul Excel BAM à partir de tout accès non autorisé.  
@@ -33,7 +33,7 @@ Les administrateurs utilisent la **remove-account** commande pour supprimer des 
   
 2.  Accédez à [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]de suivi  
   
-3.  Type **bm remove-account - AccountName :\<nom du compte >-affichage :\<nom de la vue >**.  
+3.  Type **bm remove-account - AccountName :\<nom de compte\> -View :\<nom de la vue\>**.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -42,4 +42,4 @@ Les administrateurs utilisent la **remove-account** commande pour supprimer des 
   
 ## <a name="see-also"></a>Voir aussi  
  [Gestion de l’Infrastructure dynamique BAM](../core/managing-the-bam-dynamic-infrastructure.md)   
- [Utilitaire de gestion BAM](../core/bam-management-utility.md)
+ [Utilitaire de gestion de l’analyse BAM](../core/bam-management-utility.md)

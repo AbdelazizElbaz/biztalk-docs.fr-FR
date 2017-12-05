@@ -12,11 +12,11 @@ caps.latest.revision: "38"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e550a80cf8a7bbd6ae5e2b214c57d15427f919f9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 537a0591ba45a209fd3f22c0a993a99baac58d7f
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues-with-edi-batching"></a>Problèmes connus avec le traitement par lot EDI
 Cette rubrique décrit les problèmes connus relatifs au traitement par lot dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
@@ -51,7 +51,7 @@ Cette rubrique décrit les problèmes connus relatifs au traitement par lot dans
  Lors de l'exécution de l'emplacement de réception BatchControlMessageRecvLoc en mode WOW sur un ordinateur 64 bits, vous devez exécuter les orchestrations de traitement par lot sur un autre hôte. Si celles-ci sont exécutées sur le même hôte que l'emplacement de réception, les orchestrations de traitement par lot sont également exécutées en mode WOW et vous perdez les avantages liés à l'utilisation d'un ordinateur 64 bits.  
   
 ## <a name="a-batch-can-be-picked-up-by-an-unintended-send-port"></a>Un lot peut être récupéré par un port d'envoi inattendu  
- Lorsque l’orchestration de traitement par lot publie un échange, elle promeut deux propriétés : ToBeBatched = False et DestinationPartyName = \< *Nom_tiers*>. Un port d'envoi qui s'abonne à l'une ou l'autre de ces propriétés peut récupérer ces échanges traités par lot. Assurez-vous que les filtres d’un port d’envoi sont configurés pour que le port d’envoi récupère celles traitées par lot des échanges qu’elle est destinée à récupérer.  
+ Lorsque l’orchestration de traitement par lot publie un échange, elle promeut deux propriétés : ToBeBatched = False et DestinationPartyName = \< *Nom_tiers*\>. Un port d'envoi qui s'abonne à l'une ou l'autre de ces propriétés peut récupérer ces échanges traités par lot. Assurez-vous que les filtres d’un port d’envoi sont configurés pour que le port d’envoi récupère celles traitées par lot des échanges qu’elle est destinée à récupérer.  
   
 ## <a name="a-batch-element-count-greater-than-the-required-number-of-transaction-sets-for-a-batch-may-not-prompt-batch-release"></a>Il se peut qu'un nombre d'éléments dans un lot supérieur au nombre de documents informatisés requis pour un lot ne provoque pas le déclenchement du lot  
  Si les critères de déclenchement d'un lot reposent sur le nombre de documents informatisés par groupe ou échange, il se peut que le lot ne soit pas déclenché, même si le nombre d'éléments dans le lot est supérieur au nombre de documents informatisés requis pour le déclenchement du lot. Ce problème peut survenir si vous activez les accusés de réception et définissez les critères de filtre du lot de façon à ajouter ces accusés de réception au lot. Dans ce cas, le nombre d'éléments de lot dans le groupe (ou l'échange) est supérieur au nombre de documents informatisés par groupe (ou échange). Un lot n'est pas déclenché si le nombre de documents informatisés par groupe (ou échange) est inférieur au nombre requis pour le déclenchement du lot. Le nombre d'éléments dans le lot peut toutefois être supérieur au nombre de documents informatisés requis pour le déclenchement du lot.  
@@ -113,7 +113,7 @@ Cette rubrique décrit les problèmes connus relatifs au traitement par lot dans
   
  Dans les versions précédentes de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], lorsqu'un message devait être traité par plusieurs configurations de lot, vous deviez définir la propriété EDI.DestinationParties sur une liste d'ID de tiers délimités par des espaces. L'orchestration de routage est abonnée aux messages possédant les propriétés EDI.ToBeBatched = True et EDI.DestinationParties ; elle devrait utiliser la liste d'ID de tiers contenue dans la propriété EDI.DestinationParties afin de créer un message pour chaque ID et transmettre les messages à l'orchestration de traitement par lot.  L'identification du lot à l'aide de l'ID du tiers était utilisée car chaque configuration de tiers ne pouvait avoir qu'une seule configuration de lot.  
   
- Dans [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], chaque tiers peut avoir plusieurs configurations de lot. L'utilisation du seul ID de tiers pour déterminer la configuration du lot à utiliser ne suffit donc plus.  Pour indiquer qu'un message doit être traité par plusieurs configurations de lot, la propriété EDI.BatchIDs du message doit être définie sur une liste d'ID de lot délimités par des espaces auxquels le message doit être envoyé.  
+ Dans BizTalk Server, chaque tiers peut avoir plusieurs configurations de lot, donc il n’est plus suffisante pour utiliser uniquement l’ID suffit pour déterminer la configuration du lot à utiliser.  Pour indiquer qu'un message doit être traité par plusieurs configurations de lot, la propriété EDI.BatchIDs du message doit être définie sur une liste d'ID de lot délimités par des espaces auxquels le message doit être envoyé.  
   
 > [!NOTE]
 >  Lors du traitement des messages marqués avec un seul ID de tiers à l'aide de la propriété EDI.DestinationPartyId, le message est traité par l'orchestration de traitement par lot de mise à niveau. Pour plus d’informations, consultez [assembler un échange EDI par lot](../core/assembling-a-batched-edi-interchange.md).  

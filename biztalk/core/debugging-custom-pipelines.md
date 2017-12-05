@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8a0f701518714aaf28d0ae07867c8c490c140fa0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: be0c8714f0349ad415beca010795d2cb0b57aabb
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="debugging-custom-pipelines"></a>Débogage des pipelines personnalisés
 Lorsque le traitement d'un message dans votre pipeline personnalisé échoue, utilisez les outils de débogage au niveau du code source pour identifier et corriger les problèmes. Le débogage au niveau du code source s'effectue par l'intermédiaire du débogueur  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] en joignant BTSNTSVC.exe (si le pipeline personnalisé est déployé) ou Pipeline.exe (en cas d'utilisation de l'outil pipeline autonome).  
@@ -31,7 +31,7 @@ Lorsque le traitement d'un message dans votre pipeline personnalisé échoue, ut
   
 1.  Chargez la solution de projet du pipeline personnalisé dans [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].  
   
-2.  Modifiez le chemin de sortie pour votre solution à  *\<dossier d’Installation >*\Pipeline Components. Dans l’Explorateur de solutions, cliquez sur votre projet et cliquez sur l’onglet Générer, puis modifiez le chemin de sortie en cliquant sur le **Parcourir** bouton et en sélectionnant le  *\<dossier d’Installation >*\ Répertoire de composants de pipeline.  
+2.  Modifiez le chemin de sortie pour votre solution à  *\<dossier d’Installation\>*\Pipeline Components. Dans l’Explorateur de solutions, cliquez sur votre projet et cliquez sur l’onglet Générer, puis modifiez le chemin de sortie en cliquant sur le **Parcourir** bouton et en sélectionnant le  *\<dossier d’Installation\>* Répertoire \Pipeline components.  
   
 3.  Depuis [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], déployez la solution en cliquant sur **générer** &#124; **Déployer**.  
   
@@ -56,9 +56,9 @@ Lorsque le traitement d'un message dans votre pipeline personnalisé échoue, ut
   
 1.  Chargez la solution de projet du pipeline personnalisé dans [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].  
   
-2.  Modifiez le chemin de sortie pour votre solution à  *\<dossier d’Installation >*\Pipeline Components. Dans l’Explorateur de solutions, cliquez sur votre projet et cliquez sur l’onglet Générer, puis modifiez le chemin de sortie en cliquant sur le **Parcourir** bouton et en sélectionnant le  *\<dossier d’Installation >*\ Répertoire de composants de pipeline.  
+2.  Modifiez le chemin de sortie pour votre solution à  *\<dossier d’Installation\>*\Pipeline Components. Dans l’Explorateur de solutions, cliquez sur votre projet et cliquez sur l’onglet Générer, puis modifiez le chemin de sortie en cliquant sur le **Parcourir** bouton et en sélectionnant le  *\<dossier d’Installation\>* Répertoire \Pipeline components.  
   
-3.  Modifiez l'action de démarrage pour votre solution. Dans l’Explorateur de solutions, cliquez sur votre projet, cliquez sur l’onglet Déboguer, cliquez sur Démarrer le programme externe, puis cliquez sur **...** Accédez à  *\<dossier d’Installation >*\SDK\Utilities\PipelineTools et choisissez Pipeline.exe. Sous les Options de démarrage, entrez les arguments de ligne de commande appropriées pour votre composant. Pour plus d’informations sur Pipeline.exe, voir [outils de Pipeline](../core/pipeline-tools.md). La configuration typique spécifie le pipeline et un exemple de fichier :  
+3.  Modifiez l'action de démarrage pour votre solution. Dans l’Explorateur de solutions, cliquez sur votre projet, cliquez sur l’onglet Déboguer, cliquez sur Démarrer le programme externe, puis cliquez sur **...** Accédez à  *\<dossier d’Installation\>*\SDK\Utilities\PipelineTools et choisissez Pipeline.exe. Sous les Options de démarrage, entrez les arguments de ligne de commande appropriées pour votre composant. Pour plus d’informations sur Pipeline.exe, voir [outils de Pipeline](../core/pipeline-tools.md). La configuration typique spécifie le pipeline et un exemple de fichier :  
   
     ```  
     <Path>\YourPipeline.btp -d <Path>\YourTestFile.txt -c  

@@ -16,18 +16,18 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9c25a348fb739f4558f1507eda0d46d209cd44c8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 62581310d4260ecb5b1162df1f52b0170d791d57
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="step-6-create-a-send-port-to-deliver-the-adta03-message-to-the-rx-system-using-the-file-adapter"></a>Étape 6 : Créer un Port d’envoi pour remettre le ADT ^ Message A03 dans le système de réception à l’aide de l’adaptateur de fichier
 Dans cette étape, vous créez le port d’envoi pour le système pharmacie (RX) à l’aide de l’adaptateur File.  
   
 ### <a name="to-create-the-tutorialsendmsgrx-send-port"></a>Pour créer le port d’envoi Tutorial_sendMsg_RX  
   
-1.  Dans le [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] Console d’Administration, avec le bouton droit **Ports d’envoi**, pointez sur **nouveau**, puis cliquez sur **Port d’envoi unidirectionnel statique**.  
+1.  Dans la Console Administration de BizTalk Server, cliquez sur **Ports d’envoi**, pointez sur **nouveau**, puis cliquez sur **Port d’envoi unidirectionnel statique**.  
   
 2.  Dans le **propriétés de Port d’envoi** boîte de dialogue zone, effectuez les actions suivantes, puis sur **OK**.  
   
@@ -41,7 +41,7 @@ Dans cette étape, vous créez le port d’envoi pour le système pharmacie (RX)
   
     |Utiliser|Pour effectuer cette opération|  
     |--------------|----------------|  
-    |**Dossier de destination**|Accédez à  **\<**  *lecteur***: > \Program Files\Microsoft BizTalk \<version > Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_sendMsg_RX** .|  
+    |**Dossier de destination**|Accédez à  **\<**  *lecteur***:\>\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_sendMsg_RX**.|  
     |**Nom de fichier**|Type **%MessageID%.txt** (remplacez l’extension .xml avec l’extension .txt).|  
   
 4.  Dans le **propriétés de Port d’envoi** boîte de dialogue, pour **Pipeline d’envoi**, sélectionnez **BTAHL72XPipelines.BTAHL72XSendPipeline**.  
@@ -66,7 +66,7 @@ Dans cette étape, vous créez le port d’envoi pour le système pharmacie (RX)
     >  Le premier filtre signifie que le système d’informations hôpital (HIS) s’abonnant à un message, pas un accusé de réception. Le deuxième filtre signifie que son s’abonne aux messages dont la source est la décharge d’admission et le système de transfert (ADT).  
   
     > [!NOTE]
-    >  BTAHL7 dépose le message à l’emplacement de dépôt du fichier \< *lecteur*> : programme FilesMicrosoft BizTalk <version> Accelerator for HL7SDKEnd en bout TutorialTutorial_sendMsg_RX.  
+    >  BTAHL7 dépose le message à l’emplacement de dépôt du fichier \< *lecteur*\>: programme FilesMicrosoft BizTalk <version> Accelerator for HL7SDKEnd en bout TutorialTutorial_sendMsg_RX.  
   
 6.  Cliquez sur **appliquer**, puis cliquez sur **OK.**  
   

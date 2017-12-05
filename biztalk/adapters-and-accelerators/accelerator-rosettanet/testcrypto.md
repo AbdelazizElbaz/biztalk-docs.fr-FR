@@ -16,11 +16,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9e9d3314b5564ab7619744e97f8e63df55683117
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 632ad57a8bb8a32c8f579a07980480dbd3bf0087
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="testcrypto"></a>TestCrypto
 Vous utilisez l’utilitaire TestCrypto pour résoudre les échecs de déchiffrement des messages. L’utilitaire indique si le déchiffrement échoue. Si le déchiffrement réussisse, l’utilitaire indique que le certificat est et affiche le message déchiffré.  
@@ -30,7 +30,7 @@ Vous utilisez l’utilitaire TestCrypto pour résoudre les échecs de déchiffre
  Pour plus d’informations sur la récupération d’un message à partir de `MessageStorageIn`, consultez [GetMessages exemple](../../adapters-and-accelerators/accelerator-rosettanet/getmessages-sample.md).  
   
 ## <a name="location-in-sdk"></a>Emplacement dans le kit de développement logiciel (SDK)  
- \<*lecteur*> \Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\SDK  
+ \<*lecteur*\>\Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK  
   
 ## <a name="running-testcrypto"></a>TestCrypto en cours d’exécution  
   
@@ -38,9 +38,9 @@ Vous utilisez l’utilitaire TestCrypto pour résoudre les échecs de déchiffre
   
 1.  Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Accessoires**, puis cliquez sur **invite de commandes**.  
   
-2.  Déplacer vers \< *lecteur*> \Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\SDK.  
+2.  Déplacer vers \< *lecteur*\>\Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK.  
   
-3.  À l’invite de commandes, tapez **TestCrypto.exe \<nom de fichier >**, puis appuyez sur ENTRÉE.  
+3.  À l’invite de commandes, tapez **TestCrypto.exe \<nom de fichier\>**, puis appuyez sur ENTRÉE.  
   
 ## <a name="remarks"></a>Notes  
  Le déchiffrement échoue si le certificat que l’utilitaire de recherche n’est pas le certificat requis et valid, ou si l’utilitaire ne peut pas trouver le certificat.  

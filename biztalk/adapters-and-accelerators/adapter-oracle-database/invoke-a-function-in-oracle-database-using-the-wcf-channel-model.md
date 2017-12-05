@@ -17,11 +17,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bc38e0ce4dc1f6ae184b51ee157fb4461364a85e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 115e7e2421ed31ed20db9cbec5abdaa26a3639e8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-a-function-in-oracle-database-using-the-wcf-channel-model"></a>Appeler une fonction dans la base de données Oracle à l’aide du modèle de canal WCF
 Cette section montre comment exécuter une fonction dans une base de données Oracle à l’aide du canal créé dans [créer un canal à l’aide de la base de données Oracle](../../adapters-and-accelerators/adapter-oracle-database/create-a-channel-using-oracle-database.md).  
@@ -30,13 +30,13 @@ Cette section montre comment exécuter une fonction dans une base de données Or
  Vous pouvez exécuter une fonction sur une base de données Oracle en transmettant un message XML pour [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]. Le code XML d’entrée ressemble à ceci :  
   
 ```  
-\<CREATE_ACCOUNT xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG" xmlns:ns0="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG/CREATE_ACCOUNT">  
+<CREATE_ACCOUNT xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG" xmlns:ns0="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG/CREATE_ACCOUNT">  
   <REC xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG">  
-    \<ns0:ID>1\</ns0:ID>  
-    \<ns0:NAME>Scott\</ns0:NAME>  
-    \<ns0:BANKNAME>CitiBank\</ns0:BANKNAME>  
-    \<ns0:BRANCH>NY\</ns0:BRANCH>  
-    \<ns0:ENABLED>Y\</ns0:ENABLED>  
+    <ns0:ID>1</ns0:ID>  
+    <ns0:NAME>Scott</ns0:NAME>  
+    <ns0:BANKNAME>CitiBank</ns0:BANKNAME>  
+    <ns0:BRANCH>NY</ns0:BRANCH>  
+    <ns0:ENABLED>Y</ns0:ENABLED>  
   </REC>  
 </CREATE_ACCOUNT>  
 ```  

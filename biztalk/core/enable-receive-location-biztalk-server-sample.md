@@ -16,11 +16,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 99923c3029b72dae660bee4b4089336e90e2e4e7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fd2df85f051285e999660dc3765855d22c708939
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="enable-receive-location-biztalk-server-sample"></a>Activer la réception emplacement (exemple BizTalk Server)
 L'exemple d'activation d'un emplacement de réception (Enable Receive Location) décrit l'activation d'un emplacement de réception, et éventuellement, la définition de l'URL de transport entrant pour cet emplacement de réception.  
@@ -42,7 +42,7 @@ L'exemple d'activation d'un emplacement de réception (Enable Receive Location) 
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
  L'exemple se trouve dans l'emplacement SDK suivant :  
   
- \<*Exemples de chemin d’accès*> \Admin\WMI\Enable Location\ de réception  
+ \<*Exemples de chemin d’accès*\>\Admin\WMI\Enable Location\ de réception  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -59,18 +59,15 @@ L'exemple d'activation d'un emplacement de réception (Enable Receive Location) 
   
 1.  Dans une fenêtre de commande, accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \Admin\WMI\Enable Location\VBScript\ de réception  
+     \<*Exemples de chemin d’accès*\>\Admin\WMI\Enable Location\VBScript\ de réception  
   
 2.  Exécutez le fichier EnableRecLoc.vbs à l'aide du programme cscript en transmettant les arguments de ligne de commande suivants (le troisième argument est facultatif) :  
   
-    -   **\<**   
-         ***ReceivePortName* >.** Nom du port de réception contenant l'emplacement de réception à activer. Si le nom du port de réception contient des espaces, placez-le entre guillemets.  
+    -   **\<** ***ReceivePortName* \>.** Nom du port de réception contenant l'emplacement de réception à activer. Si le nom du port de réception contient des espaces, placez-le entre guillemets.  
   
-    -   **\<**   
-         ***ReceiveLocationName* >.** Nom de l'emplacement de réception à activer au sein du port de réception spécifié. Si le nom de l'emplacement de réception contient des espaces, placez-le entre guillemets.  
+    -   **\<** ***ReceiveLocationName* \>.** Nom de l'emplacement de réception à activer au sein du port de réception spécifié. Si le nom de l'emplacement de réception contient des espaces, placez-le entre guillemets.  
   
-    -   **\<**   
-         ***InboundTransportURI* >.** URI d'adaptateur de réception, relative à l'emplacement d'installation du produit, que vous pouvez modifier en spécifiant cet argument. Si l'URI de l'adaptateur entrant contient des espaces, placez-le entre guillemets.  
+    -   **\<** ***InboundTransportURI* \>.** URI d'adaptateur de réception, relative à l'emplacement d'installation du produit, que vous pouvez modifier en spécifiant cet argument. Si l'URI de l'adaptateur entrant contient des espaces, placez-le entre guillemets.  
   
          Exemple :  
   

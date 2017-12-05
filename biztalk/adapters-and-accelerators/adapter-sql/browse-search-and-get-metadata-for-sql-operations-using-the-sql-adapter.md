@@ -12,11 +12,11 @@ caps.latest.revision: "30"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4a8d82a69b342c278e7cb17de8759d4986a71cd6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fab8d26f7f4da3c60587bd7d2863941080c69953
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="browse-search-and-get-metadata-for-sql-operations-using-the-sql-adapter"></a>Parcourir, rechercher et obtenir des métadonnées pour les opérations SQL à l’aide de l’adaptateur SQL
 Cette section fournit des informations sur l’utilisation de la [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)], le [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]et le [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]. À l’aide de ces [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] composants, vous pouvez :  
@@ -215,7 +215,7 @@ Cette section fournit des informations sur l’utilisation de la [!INCLUDE[consu
 6.  Cliquez sur **OK**. Le fichier de schéma est enregistré avec une extension .xsd dans le même emplacement que le projet BizTalk.  
   
     > [!NOTE]
-    >  Si vous utilisez le [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] pour générer des métadonnées pour les artefacts de SQL Server, par défaut, les fichiers sont créés avec une convention d’affectation de noms spécifique. Le fichier WSDL généré contient un **fileNameHint** balise annotation qui inclut le nom qui doit être affecté au fichier XSD. Par exemple, un indicateur de nom de fichier pour un fichier de schéma pour l’opération de table suit la convention TableOperation. \<schéma >. \<tablename >. Si vous souhaitez personnaliser le nom du fichier XSD généré, vous pouvez fournir un préfixe dans le **préfixe de nom de fichier** boîte. Enfin, le nom d’un fichier XSD est arrivé à en tant que préfixe du nom de fichier + fileNameHint + entier unique (si nécessaire, pour vous assurer que le nom de fichier est unique).  
+    >  Si vous utilisez le [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] pour générer des métadonnées pour les artefacts de SQL Server, par défaut, les fichiers sont créés avec une convention d’affectation de noms spécifique. Le fichier WSDL généré contient un **fileNameHint** balise annotation qui inclut le nom qui doit être affecté au fichier XSD. Par exemple, un indicateur de nom de fichier pour un fichier de schéma pour l’opération de table suit la convention TableOperation. \<schéma\>.\< TableName\>. Si vous souhaitez personnaliser le nom du fichier XSD généré, vous pouvez fournir un préfixe dans le **préfixe de nom de fichier** boîte. Enfin, le nom d’un fichier XSD est arrivé à en tant que préfixe du nom de fichier + fileNameHint + entier unique (si nécessaire, pour vous assurer que le nom de fichier est unique).  
   
     > [!NOTE]
     >  Le [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] crée également un fichier de liaison (un fichier XML) qui contient les propriétés de liaison que vous avez spécifié quand générer le schéma pour une opération et l’action SOAP pour appeler l’opération. Vous pouvez importer ce fichier de liaison dans le [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] set de la console d’Administration pour créer un port personnalisé WCF ou BizTalk SQL port de l’adaptateur avec l’URI de connexion, les propriétés de liaison et l’action SOAP. Pour plus d’informations, consultez [configurer une liaison de port physique à l’aide d’un fichier de liaison de port à utiliser l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/configure-a-physical-port-binding-using-a-port-binding-file-to-sql-adapter.md).

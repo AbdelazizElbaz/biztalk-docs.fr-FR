@@ -15,11 +15,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 28afb0b029924a49dfd9a1bff87c5c847157d669
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a8ff979c7b6915f53ebc7144cf0774ab1ffb779a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="lesson-2-creating-a-strong-named-biztalk-assembly-for-the-swiftschemas-project"></a>Leçon 2 : Création d’un Assembly BizTalk avec nom fort pour le projet SWIFTSchemas
 Dans cette leçon, vous créez un nom fort sur lequel les assemblys BizTalk sont compilés et déployés. Un assembly avec nom fort présente plusieurs avantages de sécurité :  
@@ -36,7 +36,7 @@ Dans cette leçon, vous créez un nom fort sur lequel les assemblys BizTalk sont
   
 1.  Démarrez l’invite de commandes de Visual Studio.  
   
-2.  À l’invite de commandes Visual Studio, accédez à la \< *lecteur*> : \labs dossier.  
+2.  À l’invite de commandes Visual Studio, accédez à la \< *lecteur*\>: \labs dossier.  
   
 3.  À l’invite de commandes, tapez **sn – k swift.snk**, puis appuyez sur ENTRÉE. Vérifiez qu’un message de réussite s’affiche dans la fenêtre Sortie.  
   
@@ -49,7 +49,7 @@ Dans cette leçon, vous créez un nom fort sur lequel les assemblys BizTalk sont
   
 6.  Défilement vers le bas les propriétés de l’assembly dans le volet droit et dans le **nom fort** , cliquez sur la zone à droite de **fichier de clé d’Assembly**. Cliquez sur le bouton de sélection.  
   
-7.  Dans la boîte de dialogue de fichier de clé d’Assembly, accédez à  **\<* lecteur*: > \labs**.  
+7.  Dans la boîte de dialogue de fichier de clé d’Assembly, accédez à  **\<* lecteur*:\>\labs**.  
   
 8.  Sélectionnez le **swift.snk** de fichiers en tant que le fichier de clé, puis cliquez sur **ouvrir**.  
   

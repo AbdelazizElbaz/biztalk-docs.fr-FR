@@ -12,11 +12,11 @@ caps.latest.revision: "36"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 67128880233a04b6b1573f11ff5229cebe328b25
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9fcbce54a488cb687ad0fb2c7a1931243c8cd882
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-4-create-the-map"></a>Étape 4 : création du mappage
 ![L’étape 4 de 5](../core/media/step-4of5.gif "Step_4of5")  
@@ -60,13 +60,13 @@ ms.lasthandoff: 09/20/2017
   
 5.  Dans le **sélecteur de Type BizTalk** boîte de dialogue, développez **EAISchemas**, développez **schémas**, cliquez sur **EAISchemas.Request**, puis cliquez sur  **OK**.  
   
-6.  Dans le **schéma Source** volet, avec le bouton droit  **\<schéma >**, puis cliquez sur **développer le nœud d’arborescence**.  
+6.  Dans le **schéma Source** volet, avec le bouton droit  **\<schéma\>**, puis cliquez sur **développer le nœud d’arborescence**.  
   
 7.  Dans le **schéma de Destination** volet, cliquez sur **ouvrir le schéma de Destination**.  
   
 8.  Dans le **sélecteur de Type BizTalk** boîte de dialogue, développez **EAISchemas**, développez **schémas**, cliquez sur **EAISchemas.RequestDecline**, puis Cliquez sur **OK**.  
   
-9. Dans le **schéma de Destination** volet, avec le bouton droit  **\<schéma >**, puis cliquez sur **développer le nœud d’arborescence**.  
+9. Dans le **schéma de Destination** volet, avec le bouton droit  **\<schéma\>**, puis cliquez sur **développer le nœud d’arborescence**.  
   
 10. Dans le **schéma Source** volet, faites glisser le **ReqID** au champ la **ReqID** dans les **schéma de Destination** volet. Une ligne reliant les deux éléments apparaît.  
   

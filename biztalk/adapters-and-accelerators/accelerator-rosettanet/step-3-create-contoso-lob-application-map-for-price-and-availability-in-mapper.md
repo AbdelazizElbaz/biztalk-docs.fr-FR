@@ -13,11 +13,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3478997abd4e5bb15bfeb977e05ca3edc7348e0a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fef0f6e951798dd2453aa387d8dcde9853968f3a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3-creating-the-contoso-lob-application-maps-for-the-price-and-availability-project-using-biztalk-mapper"></a>Étape 3 : Créer les mappages d’applications métier Contoso pour le prix et le projet de disponibilité à l’aide du Mappeur BizTalk
 Dans cette étape, vous créez deux mappages qui définissent la transformation nécessaire pour échanger les messages entre les deux partenaires commerciaux. Pour ce scénario, le système ERP de Contoso a déjà standardisé en un format de message pour une demande de prix et de disponibilité. Les deux cartes mappera les messages de demande et de réponse du partenaire commercial, Fabrikam, vers et depuis ces messages définies par l’utilisateur de Contoso, respectivement.  
@@ -28,7 +28,7 @@ Dans cette étape, vous créez deux mappages qui définissent la transformation 
   
 2.  Dans la boîte de dialogue Ajouter une référence, cliquez sur **Parcourir**.  
   
-3.  Déplacer vers le dossier  *\<lecteur >*: \Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\Bin, puis sélectionnez le **Microsoft.Solutions.BTARN.Schemas.RNPIPs.dll**  assembly.  
+3.  Déplacer vers le dossier  *\<lecteur\>*: \Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\Bin, puis sélectionnez le  **Microsoft.Solutions.BTARN.Schemas.RNPIPs.dll** assembly.  
   
 4.  Cliquez sur **ajouter**, puis cliquez sur **OK**.  
   
@@ -58,9 +58,9 @@ Dans cette étape, vous créez deux mappages qui définissent la transformation 
   
 ### <a name="to-link-schema-fields-in-the-pip3a2requesttocontosopricerequest-map"></a>Pour lier des champs de schéma dans le mappage de PIP3A2RequestToContosoPriceRequest  
   
-1.  Dans le volet Schéma de Destination, cliquez sur le  **\<schéma >** nœud, puis cliquez sur **développer le nœud d’arborescence**.  
+1.  Dans le volet Schéma de Destination, cliquez sur le  **\<schéma\>**  nœud, puis cliquez sur **développer le nœud d’arborescence**.  
   
-2.  Dans le volet Schéma Source, cliquez sur le  **\<schéma >** nœud, puis cliquez sur **développer le nœud d’arborescence**.  
+2.  Dans le volet Schéma Source, cliquez sur le  **\<schéma\>**  nœud, puis cliquez sur **développer le nœud d’arborescence**.  
   
 3.  Faites glisser le **GlobalProductIdentifier** au champ la **ProductID** champ dans le volet Schéma de Destination.  
   
@@ -74,4 +74,4 @@ Dans cette étape, vous créez deux mappages qui définissent la transformation 
 4.  Sur le **fichier** menu, cliquez sur **Enregistrer tout** pour enregistrer vos modifications.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Création et configuration des Ports BizTalk pour Contoso](../../adapters-and-accelerators/accelerator-rosettanet/creating-and-configuring-biztalk-ports-for-contoso.md)
+ [Création et configuration de ports BizTalk pour Contoso](../../adapters-and-accelerators/accelerator-rosettanet/creating-and-configuring-biztalk-ports-for-contoso.md)

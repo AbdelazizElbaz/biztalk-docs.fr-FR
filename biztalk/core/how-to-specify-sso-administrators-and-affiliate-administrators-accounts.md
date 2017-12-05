@@ -22,11 +22,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c588f476cca366f139a359bfccd28413a6057fe4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6c96e2d99bd6071098a65b3635bb466de44a455d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-specify-sso-administrators-and-affiliate-administrators-accounts"></a>Comment spécifier les administrateurs de l’authentification unique et les applications associées à des administrateurs de comptes
 Les comptes Administrateurs SSO de l'entreprise et Administrateurs d'applications associées à SSO peuvent être des comptes de groupe d'hôtes ou individuels. Vous devez créer ces comptes avant de configurer le système SSO.  
@@ -64,7 +64,7 @@ Les comptes Administrateurs SSO de l'entreprise et Administrateurs d'application
   
 1.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est \< *lecteur*> : \Program Files\Enterprise Single Sign-On.  
+2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est \< *lecteur*\>: \Program Files\Enterprise Single Sign-On.  
   
 3.  Type **ssomanage** –**disablesso**.  
   
@@ -83,9 +83,9 @@ Les comptes Administrateurs SSO de l'entreprise et Administrateurs d'application
   
 1.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur >*: \Program Files\Enterprise Single Sign-On.  
+2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur\>*: \Program Files\Enterprise Single Sign-On.  
   
-3.  Type **ssomanage-updatedb  *\<mise à jour de fichier >***, où  *\<mise à jour de fichier >* est le chemin d’accès et le nom du fichier XML.  
+3.  Type **ssomanage-updatedb  *\<fichier de mise à jour\>***, où  *\<fichier de mise à jour\>*  est le chemin d’accès et le nom de la Fichier XML.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -102,7 +102,7 @@ Les comptes Administrateurs SSO de l'entreprise et Administrateurs d'application
   
 1.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur >*: \Program Files\Enterprise Single Sign-On.  
+2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur\>*: \Program Files\Enterprise Single Sign-On.  
   
 3.  Type **ssomanage – enablesso**.  
   

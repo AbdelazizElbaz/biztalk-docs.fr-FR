@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9a032070876df6bea0579a159d527a6ad903e2ed
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6309da02c84b9c317e0743a8ca2199237e835abb
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="apply-iis-configuration-settings"></a>Appliquer les paramètres de Configuration IIS
 Par défaut, le protocole SOAP, HTTP, et basées sur HTTP WCF adaptateurs (et .NET en général) ouvert uniquement deux connexions HTTP simultanées à partir de chaque instance d’hôte BizTalk à n’importe quel serveur de destination spécifique. Par exemple, si vous disposez d’un envoi de port d’envoi SOAP messages **http://www.contoso.com/SomeWebService.asmx**, puis par défaut, chaque instance d’hôte en cours d’exécution sur chaque [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] s’ouvre uniquement deux connexions HTTP simultanées à **www.contoso.com**, quel que soit le nombre de messages doivent être envoyés.  
@@ -58,7 +58,7 @@ Par défaut, le protocole SOAP, HTTP, et basées sur HTTP WCF adaptateurs (et .N
   
 4.  Si nécessaire, cliquez sur **appliquer** dans les **Actions** volet.  
   
- Désactiver le débogage des Applications ASP.NET et les Services Web en spécifiant le \<débogage de compilation = « false » / > section dans le fichier web.config de l’application web.  
+ Désactiver le débogage des Applications ASP.NET et les Services Web en spécifiant le \<débogage de compilation = « false »\> section dans le fichier web.config de l’application web.  
   
 ## <a name="tune-the-value-of-the-asp-threads-per-processor-limit-property"></a>Régler la valeur de la propriété limite ASP de Threads par processeur  
  ASP **limite de Threads par processeur** propriété spécifie le nombre maximal de threads de travail par processeur créés par IIS. Augmentez la valeur de la limite de Threads par processeur jusqu'à ce que l’utilisation du processeur soit au moins 50 pour cent ou version ultérieure. Ce paramètre peut affecter fortement l’évolutivité de vos applications Web et les performances de votre serveur en général. Étant donné que cette propriété définit le nombre maximal de demandes ASP pouvant s’exécuter simultanément, ce paramètre doit conserver la valeur par défaut, sauf si vos applications ASP effectuent des appels de longue durée vers des composants externes. Dans ce cas, vous pouvez augmenter la valeur de limite de Threads par processeur. Ainsi, le serveur pour créer des threads supplémentaires pour gérer plus de demandes simultanées. La valeur par défaut de la limite de Threads par processeur est 25. La valeur maximale recommandée pour cette propriété est 100.  
@@ -71,7 +71,7 @@ Par défaut, le protocole SOAP, HTTP, et basées sur HTTP WCF adaptateurs (et .N
   
 3.  Cliquez pour développer **propriétés relatives aux limites** sous **comportement**, cliquez sur **limite de Threads par processeur**, entrez la valeur souhaitée pour **limite de Threads par processeur**  et cliquez sur **appliquer** dans les **Actions** volet.  
   
- Pour plus d’informations sur la façon de modifier les propriétés dans le \<limites > élément d’IIS 7.0 \<asp > élément, consultez [limites d’ASP. \<limites >](http://go.microsoft.com/fwlink/?LinkId=157483) (http://go.microsoft.com/fwlink/?LinkId=157483).  
+ Pour plus d’informations sur la façon de modifier les propriétés dans le \<limites\> élément d’IIS 7.0 \<asp\> élément, consultez [limites d’ASP. \<limites\> ](http://go.microsoft.com/fwlink/?LinkId=157483)(http://go.microsoft.com/fwlink/?LinkId=157483).  
   
 > [!NOTE]  
 >  Cette propriété peut uniquement être appliqué au niveau du serveur, la modification de cette propriété affecte tous les sites Web qui s’exécutent sur le serveur.  
@@ -90,7 +90,7 @@ Par défaut, le protocole SOAP, HTTP, et basées sur HTTP WCF adaptateurs (et .N
   
 3.  Cliquez pour développer **propriétés relatives aux limites** sous **comportement**, cliquez sur **longueur de file d’attente**, entrez la valeur souhaitée pour **longueur de file d’attente** , puis Cliquez sur **appliquer** dans les **Actions** volet.  
   
- Pour plus d’informations sur la façon de modifier les propriétés dans le \<limites > élément d’IIS 7.0 \<asp > élément, consultez [limites d’ASP. \<limites >](http://go.microsoft.com/fwlink/?LinkId=157483) (http://go.microsoft.com/fwlink/?LinkId=157483).  
+ Pour plus d’informations sur la façon de modifier les propriétés dans le \<limites\> élément d’IIS 7.0 \<asp\> élément, consultez [limites d’ASP. \<limites\> ](http://go.microsoft.com/fwlink/?LinkId=157483)(http://go.microsoft.com/fwlink/?LinkId=157483).  
   
 > [!NOTE]  
 >  Cette propriété peut uniquement être appliqué au niveau du serveur, la modification de cette propriété affecte tous les sites Web qui s’exécutent sur le serveur.  
@@ -105,4 +105,4 @@ Par défaut, le protocole SOAP, HTTP, et basées sur HTTP WCF adaptateurs (et .N
  Utilisez l’outil Éditeur de Configuration (SvcConfigEditor.exe) pour désactiver les services WCF de traçage dans un environnement de production. Pour plus d’informations sur l’outil Éditeur de Configuration, consultez [l’outil Éditeur de Configuration (SvcConfigEditor.exe)](http://go.microsoft.com/fwlink/?LinkID=127070) (http://go.microsoft.com/fwlink/?LinkID=127070).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Liste de vérification : Configuration de BizTalk Server](../technical-guides/checklist-configuring-biztalk-server.md)
+ [Liste de contrôle : Configuration de BizTalk Server](../technical-guides/checklist-configuring-biztalk-server.md)

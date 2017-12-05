@@ -12,17 +12,17 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ec6edafcb01e2c0ce155585e4fbe2f9d61b1cf1c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 21d3007897343b7d517c11599a271b72e92d3710
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="choice-group-nodes"></a>Nœuds Groupe Choix
 Dans l’Éditeur BizTalk, vous pouvez insérer un **groupe choix** nœud destiné à contenir les autres nœuds (ou des sous-arborescences entières de nœuds), un seul d'entre eux peut s’afficher dans un message d’instance. Un message d’instance donné, s’il est valide, ne comportera que l'un des choix présents. Les nœuds contenus doivent correspondre à des éléments XML, et non à des attributs XML.  
   
 > [!NOTE]
->  Dans l’Éditeur BizTalk, le **groupe choix** nœud est représenté par la chaîne \<choix > dans l’arborescence de schéma. Si vous définissez une référence à un **groupe choix** nœud, tel que x, elle est représentée en tant que \<Group : x > dans l’arborescence de schéma.  
+>  Dans l’Éditeur BizTalk, le **groupe choix** nœud est représenté par la chaîne \<choix\> dans l’arborescence de schéma. Si vous définissez une référence à un **groupe choix** nœud, tel que x, elle est représentée en tant que \<Group : x\> dans l’arborescence de schéma.  
   
 ## <a name="xsd-representation"></a>Représentation XSD  
  Quand un **groupe choix** nœud est inséré dans un **enregistrement** nœud, il est inséré à la fin de n’importe quel autre nœud enfant au sein de la **séquence**, **choix**, ou **tous les** élément dans le **enregistrement** nœud. L’exemple suivant montre, en caractères gras, un nouveau **groupe choix** nœud est représenté dans le langage de XML Schema definition (XSD) en tant qu’un **choix** élément inséré à la fin de la **séquence**  élément dans une **enregistrement** nœud (les nœuds nommés pour clarifier leur identité).  

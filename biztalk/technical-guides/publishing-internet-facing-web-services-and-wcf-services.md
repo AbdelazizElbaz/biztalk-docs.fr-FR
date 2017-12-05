@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 38ee916aaa5e158160f2096b0ba9b2678dd6b8d0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e466c4fc2a5f83f5a8445601235b53f44404a912
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="publishing-internet-facing-web-services-and-wcf-services"></a>Publication de Services Web exposés à Internet et les Services WCF
 Vous pouvez utiliser plusieurs approches pour la publication [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] services Web et les services WCF à Internet :  
@@ -25,12 +25,12 @@ Vous pouvez utiliser plusieurs approches pour la publication [!INCLUDE[btsBizTal
   
 -   Placer les ordinateurs exécutant [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] qui permettent de publier les services Web ou les services WCF dans le domaine de réseau de périmètre.  
   
--   Utilisez [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] cloud des fonctionnalités d’activation pour publier les services Web ou les services WCF sous la forme d’un point de terminaison de relais Azure AppFabric Service Bus.  
+-   Fonctionnalités de BizTalk Server cloud activation permet de publier les services Web ou les services WCF sous la forme d’un point de terminaison de relais Azure AppFabric Service Bus.  
   
 ## <a name="using-a-reverse-proxy"></a>À l’aide d’un Proxy inverse  
  Il s’agit de l’approche traditionnelle pour la publication [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] services Web et les services WCF. À l’aide des règles de proxy inverse dans le réseau de périmètre évite la nécessité de disposer de serveurs BizTalk Server situés dans le réseau de périmètre. Les règles de proxy inverse pour transférer simplement les demandes HTTP et SOAP à partir du réseau de périmètre vers les ordinateurs exécutant [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] dans le domaine de l’intranet.  
   
- Pour plus d’informations sur l’utilisation d’un proxy inverse, consultez les rubriques suivantes dans [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] aider à :  
+ Pour plus d’informations sur l’utilisation d’un proxy inverse, consultez les rubriques suivantes dans l’aide de BizTalk Server :  
   
 -   [« Exemple d’Architecture : adaptateurs HTTP et SOAP «](http://go.microsoft.com/fwlink/?LinkId=153339) (http://go.microsoft.com/fwlink/?LinkId=153339).  
   

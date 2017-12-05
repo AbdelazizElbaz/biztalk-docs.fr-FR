@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eb49cdff18e880c91034aaf7d2ab81500c40dbab
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e5b4fa1dba322e830114a76a0ca69134edbb1d06
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="update-repair-or-uninstall-biztalk-accelerator-for-hl7"></a>Mettre à jour, réparer ou désinstaller BizTalk Accelerator pour HL7
 
@@ -35,7 +35,7 @@ Modifier, réparer ou désinstaller le [!INCLUDE[btaBTAHL7NoNumber](../../includ
 > [!NOTE]
 >  Lorsque vous modifiez votre installation de [!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)], le didacticiel de bout en bout ne s’exécute pas automatiquement. 
 > 
-> Pour exécuter le didacticiel et vérifier que l’installation modifiée exécutées correctement, exécutez le didacticiel manuellement à partir de la  ***\<lecteur >*** **\Program Files\Microsoft BizTalk \<version > Accelerator pour le didacticiel de bout en HL7\SDK\End** dossier.
+> Pour exécuter le didacticiel et vérifier que l’installation modifiée exécutées correctement, exécutez le didacticiel manuellement à partir de la  ***\<lecteur\>***  **\Program Files\Microsoft BizTalk \< version\> Accelerator pour le didacticiel de bout en HL7\SDK\End** dossier.
   
 1. Exécutez le [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)] **setup.exe** en tant qu’administrateur 
   
@@ -101,4 +101,4 @@ Pour poursuivre la désinstallation, procédez comme suit :
 3.  Désinstallez [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)].  
   
 ## <a name="see-also"></a>Voir aussi  
-[Installer ou mettre à niveau de Microsoft BizTalk Accelerator pour HL7](../../adapters-and-accelerators/accelerator-hl7/install-or-upgrade-microsoft-biztalk-accelerator-for-hl7.md)
+[Installer ou mettre à niveau Microsoft BizTalk Accelerator pour HL7](../../adapters-and-accelerators/accelerator-hl7/install-or-upgrade-microsoft-biztalk-accelerator-for-hl7.md)

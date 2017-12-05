@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d2999ce9a188b2d9b94df11328485e8b7440ecec
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5e1e57a3c4d3c035069c550cdc540de1c88e8880
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-capture-a-memory-dump-of-a-process-that-is-leaking-memory"></a>Capture de l'image mémoire d'un processus subissant des fuites de mémoire
 On considère que le processus BizTalk BTSNTSvc.exe subit une fuite de mémoire lorsqu'il ne parvient pas à libérer la mémoire dont il n'a plus besoin, ce qui entraîne avec le temps une réduction de la quantité de mémoire disponible. L’utilisation de la mémoire du processus peut être déterminée en consultant la valeur sous la **util** colonne de la **processus** onglet disponible dans **le Gestionnaire des tâches**. Si le processus continue à consommer de la mémoire dans le temps sans la libérer, les performances globales du système en seront affectées.  
@@ -50,7 +50,7 @@ On considère que le processus BizTalk BTSNTSvc.exe subit une fuite de mémoire 
   
 7.  Dans le **règle terminée** boîte de dialogue cliquez **Terminer** pour accepter la valeur par défaut de **activer la règle maintenant**.  
   
-8.  Par défaut, une image mémoire du processus sera enregistrée à la Files\IIS Resources\DebugDiag\Logs\\<*nom de règle de blocage*> répertoire de l’ordinateur local après les intervalles de temps spécifié dans le **configurer la durée du suivi** boîte de dialogue s’est écoulé.  
+8.  Par défaut, une image mémoire du processus sera enregistrée à la Files\IIS Resources\DebugDiag\Logs\\<*nom de la règle d’arrêt* \> répertoire de l’ordinateur local après les intervalles de temps spécifié dans le **configurer la durée du suivi** boîte de dialogue s’est écoulé.  
   
 ### <a name="to-manually-capture-a-memory-dump-of-a-process-that-is-leaking-memory"></a>Pour capturer manuellement l'image mémoire d'un processus subissant des fuites de mémoire  
   

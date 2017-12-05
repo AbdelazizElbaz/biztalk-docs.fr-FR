@@ -16,24 +16,24 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 417a28dd117a51d0bb1d45238f0efc96417c391a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6b17ab68356d5d39f3f839f736261d4a7ef79c78
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-disable-a-user-mapping"></a>Comment désactiver un mappage utilisateur
 Vous pouvez désactiver un mappage utilisateur pour désactiver les opérations qui lui sont associées. Vous devez désactiver un mappage utilisateur avant de le supprimer.  
   
- Lorsque vous désactivez un mappage utilisateur, il apparaît comme (D)  *\<domaine >\\< nom d’utilisateur\>*  lorsque vous répertoriez les mappages utilisateur.  
+ Lorsque vous désactivez un mappage utilisateur, il apparaît comme (D)  *\<domaine\>\\< nom d’utilisateur\>*  lorsque vous répertoriez les mappages utilisateur.  
   
 ### <a name="to-disable-a-user-mapping-using-the-administration-utility"></a>Pour désactiver un mappage utilisateur à l'aide de l'utilitaire d'administration  
   
 1.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur >*: \Program Files\Enterprise Single Sign-On.  
+2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur\>*: \Program Files\Enterprise Single Sign-On.  
   
-3.  Type  **ssomanage-disablemapping  *\<domaine >*\\*\<nom d’utilisateur > \<nom de l’application >** *, où  *\<domaine >* correspond au domaine Windows pour le compte d’utilisateur, et  *\<nom d’utilisateur >* est le nom d’utilisateur Windows pour lequel vous souhaitez désactiver le informations d’identification, et  *\<nom de l’application >* est le nom de l’application associée que vous souhaitez supprimer le mappage utilisateur.  
+3.  Type  **ssomanage-disablemapping  *\<domaine\>*\\*\<nom d’utilisateur\> \<application nom\>***, où  *\<domaine\>*  correspond au domaine Windows pour le compte d’utilisateur, et  *\<nom d’utilisateur\>*  est le nom d’utilisateur Windows pour lequel vous souhaitez désactiver les informations d’identification, et  *\<nom de l’application\>*  est le nom de l’application associée que vous souhaitez supprimer le mappage utilisateur.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -42,9 +42,9 @@ Vous pouvez désactiver un mappage utilisateur pour désactiver les opérations 
   
 1.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur >*: \Program Files\Enterprise Single Sign-On.  
+2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur\>*: \Program Files\Enterprise Single Sign-On.  
   
-3.  Type **ssoclient – disablemapping  *\<nom de l’application >***, où  *\<nom de l’application >* est le nom de la filiale vous souhaitez supprimer le mappage de l’application.  
+3.  Type **ssoclient – disablemapping  *\<nom de l’application\>***, où  *\<nom de l’application\>*  est le nom de l’application associée que vous souhaitez supprimer le mappage utilisateur.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  

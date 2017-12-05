@@ -13,11 +13,11 @@ caps.latest.revision: "36"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9d7e611996e58291cdf6ed5d6b38b2b2fe5c299d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 23f326a6fe028c5b7ea5edf60216c1933eccbdb6
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="before-installing-the-service-oriented-solution"></a>Avant l'installation de la solution orientée services
 Les composants suivants doivent être disponibles pour installer la version stub de la solution orientée services sur un seul ordinateur :  
@@ -46,7 +46,7 @@ Les composants suivants doivent être disponibles pour installer la version stub
 -   MQSeries Server sur l'ordinateur local ou l'accès à l'ordinateur exécutant MQSeries Server. Pour la version Inline, les API du client MQSeries doivent être accessibles sur le serveur BizTalk Server exécutant les orchestrations de la solution.  
   
     > [!NOTE]
-    >  La version de MQSeries Server doit correspondre à celle requise par l'adaptateur [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] MQSeries. Ceci peut inclure IBM WebSphere MQ pour Windows Version 5.3 with Fix Pack 10 (CSD10) ou une version ultérieure.  
+    >  La version de MQSeries Server doit correspondre à la version requise par l’adaptateur MQSeries de BizTalk Server. Ceci peut inclure IBM WebSphere MQ pour Windows Version 5.3 with Fix Pack 10 (CSD10) ou une version ultérieure.  
   
     > [!NOTE]
     >  Lors de l'utilisation de fonctionnalités telles que MQSeries qui effectuent des appels DCOM (Distributed Component Object Model) au serveur, vérifiez que vous n'avez pas de pare-feu de traduction d'adresses réseau (NAT, Network Address Translation) activé. Le client doit pouvoir accéder au serveur par son adresse IP réelle, or les pare-feu NAT convertissent cette adresse en un élément non reconnu par le client.  
@@ -58,7 +58,7 @@ Les composants suivants doivent être disponibles pour installer la version stub
 -   Host Integration Server est requis pour se connecter au macroordinateur.  
   
     > [!NOTE]
-    >  Host Integration Server est inclus dans [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)].  
+    >  Host Integration Server est inclus dans BizTalk Server.  
   
 -   Serveur Web configuré avec un certificat pour les connexions HTTPS.  
   
@@ -66,4 +66,4 @@ Les composants suivants doivent être disponibles pour installer la version stub
  [Pour installer la Version Stub de Service de la Solution orientée services](../core/how-to-install-the-stub-version-of-the-service-oriented-solution.md)   
  [Pour installer le Inline et les Versions du Service d’adaptateur Solution orientée services](../core/how-to-install-the-inline-and-adapter-versions-of-the-service-oriented-solution.md)   
  [Pour exécuter le Service Solution orientée services](../core/how-to-run-the-service-oriented-solution.md)   
- [Installation d’ordinateur de développeur pour le Service orienté solutions](../core/developer-machine-setup-for-the-service-oriented-solution.md)
+ [Configuration de l’ordinateur de développement pour la solution orientée services](../core/developer-machine-setup-for-the-service-oriented-solution.md)

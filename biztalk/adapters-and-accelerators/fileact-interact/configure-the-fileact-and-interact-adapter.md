@@ -12,11 +12,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d8c847165eb61b6ba9044a95584de7be8f9999d1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ca2bc3aa739bf6914ea9943d84d58d44b1506323
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configure-the-fileact-and-interact-adapter"></a>Configurer l’Adaptateurs FileAct et interagir de carte
 Configurer les différents artefacts utilisés par le [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)] runtime. 
@@ -92,7 +92,7 @@ Ensuite, entrez les partenaires de message de serveur dans le paramfile SWIFTNet
   
 ## <a name="step-4-configure-the-swiftnet-param-file"></a>Étape 4 : Configurer le fichier param SWIFTNet
 
-Pour activer les adaptateurs FileAct et InterAct adaptateurs de réception pour initialiser les valeurs, le message de serveur partenaires créés dans les trous doivent être entrés dans le paramfile SWIFTNet. Le paramfile se trouve généralement dans `c:\SWIFTAlliance\RA\<remote access instance name>\cfg\paramfile`. Après avoir configuré le paramfile, démarrer **SnlReceiver.exe**.  
+Pour activer les adaptateurs FileAct et InterAct adaptateurs de réception pour initialiser les valeurs, le message de serveur partenaires créés dans les trous doivent être entrés dans le paramfile SWIFTNet. Le paramfile se trouve généralement dans `c:\SWIFTAlliance\RA\<remote access instance name\>\cfg\paramfile`. Après avoir configuré le paramfile, démarrer **SnlReceiver.exe**.  
   
 1. Ouvrez le **SWIFTNet paramfile**. Dans l’emplacement marqué avec « *** « ajoutez le code suivant. Notez que la `AdapterType` valeur peut être `Interact` ou `Fileact`.  
   
@@ -172,6 +172,6 @@ Pour obtenir des exemples de messages des adaptateurs FileAct et InterAct, consu
   
 ## <a name="see-also"></a>Voir aussi  
 
-[Installer le FileAct et interagir de carte](../../adapters-and-accelerators/fileact-interact/install-the-fileact-and-interact-adapter.md)  
+[Installer les adaptateurs FileAct et InterAct](../../adapters-and-accelerators/fileact-interact/install-the-fileact-and-interact-adapter.md)  
 [Désinstaller ou réparer l’adaptateur FileAct et InterAct](../../adapters-and-accelerators/fileact-interact/uninstall-or-repair-the-fileact-and-interact-adapter.md)  
-[Lecture de l’installation des problèmes connus](../../adapters-and-accelerators/fileact-interact/read-the-installation-known-issues.md)
+[Découvrir les problèmes d’installation connus](../../adapters-and-accelerators/fileact-interact/read-the-installation-known-issues.md)

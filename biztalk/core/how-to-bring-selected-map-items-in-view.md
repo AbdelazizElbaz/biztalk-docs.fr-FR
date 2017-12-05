@@ -12,14 +12,14 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3e10a4b54688c59991f25bb69a3251bee2f4607b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b1dff8e981b65b6b91c744ce26648a5f4e06adea
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-bring-selected-map-items-in-view"></a>Placement des éléments de mappage sélectionnés dans la vue
-Dans les versions précédentes du Mappeur BizTalk, si un mappage incluait de grands schémas, vous deviez faire défiler manuellement le volet du schéma source, la page de grille et le volet du schéma cible pour afficher tous les éléments de mappage appropriés dans une vue unique. Le Mappeur BizTalk dans [!INCLUDE[prague](../includes/prague-md.md)] permet d'afficher tous les éléments de mappage appropriés du lien/fonctoid sélectionné dans une vue unique en faisant défiler automatiquement la page de grille. Cette rubrique fournit des informations sur l'exécution de cette opération.  
+Dans les versions précédentes du Mappeur BizTalk, si un mappage incluait de grands schémas, vous deviez faire défiler manuellement le volet du schéma source, la page de grille et le volet du schéma cible pour afficher tous les éléments de mappage appropriés dans une vue unique. Le Mappeur BizTalk dans BizTalk Server vous permet de mettre tous les éléments de mappage appropriés du fonctoid/lien sélectionné dans une vue unique en faisant défiler automatiquement de la page de grille. Cette rubrique fournit des informations sur l'exécution de cette opération.  
   
  En fonction de votre sélection (un nœud de schéma source, un élément dans la vue de relation ou un nœud de schéma cible), le Mappeur BizTalk fait défiler automatiquement les vues de schéma et de relation de manière synchronisée, tout en affichant la vue de l'ensemble des relations de l'élément sélectionné.  
   
@@ -54,4 +54,4 @@ Dans les versions précédentes du Mappeur BizTalk, si un mappage incluait de gr
     >  Vous pouvez également utiliser les combinaisons de touches CTRL+M, CTRL+U. Pour obtenir la liste des raccourcis du mappeur, consultez [raccourcis clavier de Mappeur BizTalk](../core/biztalk-mapper-keyboard-shortcuts.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide des fonctionnalités améliorées dans le Mappeur BizTalk](../core/using-enhanced-features-in-biztalk-mapper.md)
+ [Utilisation de fonctionnalités améliorées dans le Mappeur BizTalk](../core/using-enhanced-features-in-biztalk-mapper.md)

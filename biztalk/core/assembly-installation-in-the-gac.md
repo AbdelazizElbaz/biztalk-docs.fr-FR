@@ -12,11 +12,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e48ec0dddcf17be70b915d2beb058f1ab2f6f576
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 25af22c85602c323b87340cce8b740fe5b68accb
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="assembly-installation-in-the-gac"></a>Installation de l’assembly dans le GAC
 Chaque ordinateur dispose d'un GAC (Global Assembly Cache), qui contient les assemblys qu'une ou plusieurs applications de cet ordinateur partagent. Pour que [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] puisse traiter les messages lors de l'exécution, les assemblys inclus dans une application BizTalk doivent figurer dans les GAC des ordinateurs exécutant l'application.  
@@ -37,7 +37,7 @@ Chaque ordinateur dispose d'un GAC (Global Assembly Cache), qui contient les ass
   
      En outre, vous pouvez configurer des options de déploiement à tout moment une fois un assembly a été déployé ou ajouté à une application, comme décrit dans [comment modifier les Options de déploiement d’un BizTalk Assembly](../core/how-to-modify-the-deployment-options-of-a-biztalk-assembly.md). Lorsque les assemblys sont déployés dans [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] de [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] pour la première fois, les options de déploiement dans la console d’Administration sont définies comme suit : GAC lors de l’installation est activé et GAC lors de l’importation est désactivé. Si vous apportez des modifications à ces paramètres, vos modifications seront toujours en vigueur si l’assembly est redéployé à partir de [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].  
   
--   **Glisser -déplacer.** À l’aide de l’Explorateur Windows, vous pouvez glisser -déplacer le fichier d’assembly dans le \< *dossier Windows*> \assembly.  
+-   **Glisser -déplacer.** À l’aide de l’Explorateur Windows, vous pouvez glisser -déplacer le fichier d’assembly dans le \< *dossier Windows*\>\assembly.  
   
 -   **Autres méthodes.** il existe d'autres méthodes et outils permettant d'installer un assembly dans le GAC, notamment le programme d'installation Windows ou les outils créés par des fournisseurs tiers.  
   
@@ -49,4 +49,4 @@ Chaque ordinateur dispose d'un GAC (Global Assembly Cache), qui contient les ass
   
 ## <a name="see-also"></a>Voir aussi  
  [Déploiement d’assemblys BizTalk à partir de Visual Studio dans une Application BizTalk](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)   
- [Présentation de gestion et déploiement d’applications BizTalk](../core/understanding-biztalk-application-deployment-and-management.md)
+ [Présentation de la gestion et du déploiement d’une application BizTalk](../core/understanding-biztalk-application-deployment-and-management.md)

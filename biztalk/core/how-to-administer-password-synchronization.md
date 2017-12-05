@@ -22,11 +22,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b85fd34a016fe013f10dd618dd551c9467d4b530
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ddd696da8b4cab24a8de6a4b5d8ac8f26856f7e1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-administer-password-synchronization"></a>Comment administrer la synchronisation de mot de passe
 Vous pouvez administrer la synchronisation de mot de passe via le composant logiciel enfichable MMC ou la ligne de commande.  
@@ -83,7 +83,7 @@ Vous pouvez administrer la synchronisation de mot de passe via le composant logi
   
 2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
 4.  Type **ssops-liste** et appuyez sur ENTRÉE.  
   
@@ -95,9 +95,9 @@ Vous pouvez administrer la synchronisation de mot de passe via le composant logi
   
 2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
-4.  Type **ssops-afficher \<nom de l’adaptateur >** et appuyez sur ENTRÉE.  
+4.  Type **ssops-afficher \<nom de l’adaptateur\>**  et appuyez sur ENTRÉE.  
   
      La sortie écran affiche les informations concernant l'adaptateur spécifié.  
   
@@ -130,9 +130,9 @@ Vous pouvez administrer la synchronisation de mot de passe via le composant logi
   
 2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
-4.  Type **ssops-créer \<fichier d’adaptateur >** et appuyez sur ENTRÉE.  
+4.  Type **ssops-créer \<fichier d’adaptateur\>**  et appuyez sur ENTRÉE.  
   
      La sortie écran affiche les informations concernant l'adaptateur créé.  
   
@@ -142,9 +142,9 @@ Vous pouvez administrer la synchronisation de mot de passe via le composant logi
   
 2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
-4.  Type **ssops - setprops \<nom de l’adaptateur >** et appuyez sur ENTRÉE.  
+4.  Type **ssops - setprops \<nom de l’adaptateur\>**  et appuyez sur ENTRÉE.  
   
      La sortie écran affiche les propriétés de l'adaptateur spécifié. Vous pouvez les modifier si nécessaire, mais les nouvelles valeurs ne sont pas validées.  
   
@@ -154,9 +154,9 @@ Vous pouvez administrer la synchronisation de mot de passe via le composant logi
   
 2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
-4.  Type **ssops-mettre à jour \<fichier d’adaptateur >** et appuyez sur ENTRÉE.  
+4.  Type **ssops-mettre à jour \<fichier d’adaptateur\>**  et appuyez sur ENTRÉE.  
   
      Utilisez cette commande pour mettre à jour les paramètres et indicateurs pour un adaptateur spécifié. N'utilisez pas cette commande pour définir les propriétés. Utilisez plutôt la commande -setprops.  
   
@@ -166,9 +166,9 @@ Vous pouvez administrer la synchronisation de mot de passe via le composant logi
   
 2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
-4.  Type **ssops-supprimer \<nom de l’adaptateur >** et appuyez sur ENTRÉE.  
+4.  Type **ssops-supprimer \<nom de l’adaptateur\>**  et appuyez sur ENTRÉE.  
   
      L'adaptateur spécifié est supprimé.  
   
@@ -178,9 +178,9 @@ Vous pouvez administrer la synchronisation de mot de passe via le composant logi
   
 2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
-4.  Type **ssops-activer \<nom de l’adaptateur >** et appuyez sur ENTRÉE.  
+4.  Type **ssops-activer \<nom de l’adaptateur\>**  et appuyez sur ENTRÉE.  
   
      L'adaptateur spécifié est activé.  
   
@@ -190,9 +190,9 @@ Vous pouvez administrer la synchronisation de mot de passe via le composant logi
   
 2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
-4.  Type **ssops-désactiver \<nom de l’adaptateur >** et appuyez sur ENTRÉE.  
+4.  Type **ssops-désactiver \<nom de l’adaptateur\>**  et appuyez sur ENTRÉE.  
   
      L'adaptateur spécifié est désactivé.  
   
@@ -202,9 +202,9 @@ Vous pouvez administrer la synchronisation de mot de passe via le composant logi
   
 2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
-4.  Type **ssops - addapp \<nom de l’adaptateur > \<nom de l’application >** et appuyez sur ENTRÉE.  
+4.  Type **ssops - addapp \<nom de l’adaptateur\> \<nom de l’application\>**  et appuyez sur ENTRÉE.  
   
      L'application SSO spécifiée est affectée à l'adaptateur spécifié. Cela signifie que les mots de passe pour les mappages dans cette application sont désormais synchronisés à l'aide de cet adaptateur.  
   
@@ -216,9 +216,9 @@ Vous pouvez administrer la synchronisation de mot de passe via le composant logi
   
 2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
-4.  Type **ssops - deleteapp \<nom de l’application >** et appuyez sur ENTRÉE.  
+4.  Type **ssops - deleteapp \<nom de l’application\>**  et appuyez sur ENTRÉE.  
   
      L'application SSO spécifiée est supprimée d'un adaptateur. (Comme une application peut uniquement être affectée à un seul adaptateur, il n'est pas nécessaire de spécifier le nom de l'adaptateur.)  
   
@@ -228,9 +228,9 @@ Vous pouvez administrer la synchronisation de mot de passe via le composant logi
   
 2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
-4.  Type **ssops-réinitialiser \<nom de l’adaptateur &#124; tous les &#124; amortissement >** et appuyez sur ENTRÉE.  
+4.  Type **ssops-réinitialiser \<nom de l’adaptateur &#124; tous les &#124; amortissement\>**  et appuyez sur ENTRÉE.  
   
      Cette commande efface le tableau d'amortissement et/ou les files d'attente de notification pour un seul adaptateur ou pour tous les adaptateurs, tel que spécifié. Le tableau d'amortissement stocke un historique de 10 minutes de modifications de mot de passe. Avant que le système de l'authentification unique de l'entreprise accepte ou envoie une modification de mot de passe, il vérifie le tableau d'amortissement pour voir s'il a effectué la même modification récemment. Si tel est le cas, la nouvelle modification est ignorée.  
   
@@ -240,9 +240,9 @@ Vous pouvez administrer la synchronisation de mot de passe via le composant logi
   
 2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
-4.  Type **ssops - addtogroup \<nom de l’adaptateur > \<groupe d’adaptateurs >** et appuyez sur ENTRÉE.  
+4.  Type **ssops - addtogroup \<nom de l’adaptateur\> \<groupe d’adaptateurs\>**  et appuyez sur ENTRÉE.  
   
      Cette commande ajoute l'adaptateur spécifié au groupe d'adaptateurs spécifié. Alors qu'un adaptateur ne peut appartenir qu'à un seul groupe d'adaptateurs, un groupe d'adaptateurs peut contenir plusieurs adaptateurs.  
   
@@ -252,9 +252,9 @@ Vous pouvez administrer la synchronisation de mot de passe via le composant logi
   
 2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
-4.  Type **ssops - deletefromgroup, \<nom de l’adaptateur > \<groupe d’adaptateurs >** et appuyez sur ENTRÉE.  
+4.  Type **ssops - deletefromgroup, \<nom de l’adaptateur\> \<groupe d’adaptateurs\>**  et appuyez sur ENTRÉE.  
   
      Cette commande supprime l'adaptateur spécifié du groupe d'adaptateurs spécifié.  
   

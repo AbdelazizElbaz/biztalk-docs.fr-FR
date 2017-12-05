@@ -15,11 +15,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 42173fa0ccb01b3ced42965af74e1fcc01d12aba
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 465946f15d11f087995b8000231796c5e204c077
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="restrictions-on-the-smtp-host-property"></a>Restrictions relatives à la propriété hôte SMTP
 La propriété d'hôte SMTP est une chaîne qui spécifie le serveur SMTP que l'adaptateur utilise pour envoyer des messages à partir du serveur BizTalk.  
@@ -28,7 +28,7 @@ La propriété d'hôte SMTP est une chaîne qui spécifie le serveur SMTP que l'
   
 -   Cette propriété doit être configurée au niveau du gestionnaire de l'adaptateur, au niveau du point de terminaison ou aux niveaux des deux emplacements.  
   
--   La propriété du serveur SMTP ne peut pas contenir les caractères suivants : ' ~ ! @ # $ ^ & * ( ) = + [ ] { } \ &#124; ; : ' " , \< > /, ?;  
+-   La propriété du serveur SMTP ne peut pas contenir les caractères suivants : ' ~ ! @ # $ ^ & * ( ) = + [ ] { } \ &#124; ; : ' " , \< \> /, ?;  
   
 -   La longueur du nom du serveur SMTP ne doit pas dépasser 256 caractères.  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 847dd40bc7d0e8fe9ec225ad8af45d06c92d7b63
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0dba1e1a4f54b3b33ebca8297cfe9beef7c4f868
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="deployment-of-bam-definition-observation-model-commands"></a>Commandes de déploiement de définitions BAM (modèle d'observation)
 Les commandes de déploiement de l'utilitaire de gestion de l'analyse BAM vous permettent d'appliquer, de modifier et de supprimer des définitions.  
@@ -40,15 +40,15 @@ Les commandes de déploiement de l'utilitaire de gestion de l'analyse BAM vous p
 ## <a name="deploy-all-command"></a>Commande deploy-all  
  **Utilisation**  
   
- **BM.exe déployer-all - DefinitionFile :\<fichier def > [-Server :\<serveur >] [-base de données :\<base de données >]**  
+ **BM.exe déployer-all - DefinitionFile :\<fichier def\>[-Server :\<server\> ] [-base de données :\<base de données\> ]**  
   
  **Paramètres**  
   
 |Paramètre| Description|  
 |---------------|-----------------|  
-|DefinitionFile :\<fichier def >|Chemin d'accès et nom du fichier contenant les définitions à déployer.|  
-|Serveur :\<server >|Facultatif : Le nom du serveur auquel vous souhaitez déployer les définitions. Le serveur doit se trouver dans le même domaine que l'ordinateur à partir duquel bm.exe est exécuté. Si le nom du serveur n'est pas spécifié, bm.exe utilise le nom par défaut de l'hôte local.|  
-|Base de données :\<base de données >|Facultatif : Le nom de la base de données auquel vous souhaitez déployer les définitions. Si le nom n'est pas spécifié, bm.exe utilise le nom par défaut BamPrimaryImport.|  
+|DefinitionFile :\<fichier def\>|Chemin d'accès et nom du fichier contenant les définitions à déployer.|  
+|Serveur :\<server\>|Facultatif : Le nom du serveur auquel vous souhaitez déployer les définitions. Le serveur doit se trouver dans le même domaine que l'ordinateur à partir duquel bm.exe est exécuté. Si le nom du serveur n'est pas spécifié, bm.exe utilise le nom par défaut de l'hôte local.|  
+|Base de données :\<base de données\>|Facultatif : Le nom de la base de données auquel vous souhaitez déployer les définitions. Si le nom n'est pas spécifié, bm.exe utilise le nom par défaut BamPrimaryImport.|  
   
  Déploie tous les artefacts du fichier XML de définitions BAM sur le serveur et la base de données spécifiés. Le fichier peut être un fichier texte contenant les instructions XML de définition BAM ou un classeur Excel BAM. Le fichier de définitions doit comporter des nouveaux artefacts exclusivement. Si le fichier contient des artefacts déjà déployés, le déploiement échouera et génèrera une erreur.  
   
@@ -98,15 +98,15 @@ bm.exe deploy-all -DefinitionFile:MyWorkbook.xls -Server:machine1
 ## <a name="update-all-command"></a>Commande update-all  
  **Utilisation**  
   
- **BM.exe update-all - DefinitionFile :\<fichier def > [-Server :\<serveur >] [-base de données :\<base de données >]**  
+ **BM.exe update-all - DefinitionFile :\<fichier def\>[-Server :\<server\> ] [-base de données :\<base de données\> ]**  
   
  **Paramètres**  
   
 |Paramètre| Description|  
 |---------------|-----------------|  
-|DefinitionFile :\<fichier def >|Chemin d'accès et nom du fichier contenant les définitions à partir desquelles effectuer la mise à jour.|  
-|Serveur :\<server >|Facultatif : Le nom du serveur sur lequel déployer les mises à jour de définition. Le serveur doit se trouver dans le même domaine que l'ordinateur à partir duquel bm.exe est exécuté. Si le nom du serveur n'est pas spécifié, bm.exe utilise le nom par défaut de l'hôte local.|  
-|Base de données :\<base de données >|Facultatif : Le nom de la base de données auquel vous souhaitez déployer les mises à jour de définition. Si le nom n'est pas spécifié, bm.exe utilise le nom par défaut BamPrimaryImport.|  
+|DefinitionFile :\<fichier def\>|Chemin d'accès et nom du fichier contenant les définitions à partir desquelles effectuer la mise à jour.|  
+|Serveur :\<server\>|Facultatif : Le nom du serveur sur lequel déployer les mises à jour de définition. Le serveur doit se trouver dans le même domaine que l'ordinateur à partir duquel bm.exe est exécuté. Si le nom du serveur n'est pas spécifié, bm.exe utilise le nom par défaut de l'hôte local.|  
+|Base de données :\<base de données\>|Facultatif : Le nom de la base de données auquel vous souhaitez déployer les mises à jour de définition. Si le nom n'est pas spécifié, bm.exe utilise le nom par défaut BamPrimaryImport.|  
   
  Met à jour certains artefacts du fichier XML de définition BAM. Le fichier peut être un fichier texte contenant les instructions XML de définition BAM ou un classeur Excel BAM. La mise à jour ne supprime pas les artefacts non décrits dans le fichier de définitions actuel. Elle peut ajouter de nouveaux points de contrôle aux activités, mais ne peut pas supprimer des points de contrôle sur les activités déployées. La mise à jour ne peut pas non plus renommer les points de contrôle ni modifier leurs propriétés.  
   
@@ -125,15 +125,15 @@ bm.exe update-all -DefinitionFile:MyWorkbook.xls -Server:machine1
 ## <a name="remove-all-command"></a>Commande remove-all  
  **Utilisation**  
   
- **BM.exe remove-all DefinitionFile :\<fichier def > [-Server :\<serveur >] [-base de données :\<base de données >]**  
+ **BM.exe remove-all DefinitionFile :\<fichier def\> [-Server :\<server\> ] [-base de données :\<base de données\> ]**  
   
  **Paramètres**  
   
 |Paramètre| Description|  
 |---------------|-----------------|  
-|DefinitionFile :\<fichier def >|Chemin d'accès et nom du fichier contenant les définitions à supprimer.|  
-|Serveur :\<server >|Facultatif : Le nom du serveur à partir de laquelle les définitions doivent être supprimées. Le serveur doit se trouver dans le même domaine que l'ordinateur à partir duquel bm.exe est exécuté. Si le nom du serveur n'est pas spécifié, bm.exe utilise le nom par défaut de l'hôte local.|  
-|Base de données :\<base de données >|Facultatif : Le nom de la base de données à partir de laquelle les définitions doivent être supprimées. Si le nom n'est pas spécifié, bm.exe utilise le nom par défaut BamPrimaryImport.|  
+|DefinitionFile :\<fichier def\>|Chemin d'accès et nom du fichier contenant les définitions à supprimer.|  
+|Serveur :\<server\>|Facultatif : Le nom du serveur à partir de laquelle les définitions doivent être supprimées. Le serveur doit se trouver dans le même domaine que l'ordinateur à partir duquel bm.exe est exécuté. Si le nom du serveur n'est pas spécifié, bm.exe utilise le nom par défaut de l'hôte local.|  
+|Base de données :\<base de données\>|Facultatif : Le nom de la base de données à partir de laquelle les définitions doivent être supprimées. Si le nom n'est pas spécifié, bm.exe utilise le nom par défaut BamPrimaryImport.|  
   
  Supprime tous les artefacts spécifiés dans le fichier XML de définition BAM. Le fichier peut être un fichier texte contenant les instructions XML de définition BAM ou un classeur Excel BAM. La définition de chaque artefact doit correspondre exactement à la définition d'origine utilisée pour le déploiement.  
   
@@ -147,15 +147,15 @@ bm.exe remove-all -DefinitionFile:MyWorkbook.xls -Server:machine1
 ## <a name="update-livedataworkbook-command"></a>Commande update-livedataworkbook  
  **Utilisation**  
   
- **BM.exe update-livedataworkbook-nom :\<nom de fichier de classeur de données actives > [-Server :\<serveur >] [-base de données :\<base de données >]**  
+ **BM.exe update-livedataworkbook-nom :\<nom de fichier de classeur de données actives\>[-Server :\<server\> ] [-base de données :\<base de données\> ]**  
   
  **Paramètres**  
   
 |Paramètre| Description|  
 |---------------|-----------------|  
-|Nom :\<classeur des données actives >|Nom du classeur de données actives à mettre à jour.|  
-|Serveur :\<server >|Facultatif : Le nom du serveur sur lequel réside le classeur. Le serveur doit se trouver dans le même domaine que l'ordinateur à partir duquel bm.exe est exécuté. Si le nom du serveur n'est pas spécifié, bm.exe utilise le nom par défaut de l'hôte local.|  
-|Base de données :\<base de données >|Facultatif : Le nom de la base de données sur lequel réside le classeur. Si le nom n'est pas spécifié, bm.exe utilise le nom par défaut BamPrimaryImport.|  
+|Nom :\<classeur des données actives\>|Nom du classeur de données actives à mettre à jour.|  
+|Serveur :\<server\>|Facultatif : Le nom du serveur sur lequel réside le classeur. Le serveur doit se trouver dans le même domaine que l'ordinateur à partir duquel bm.exe est exécuté. Si le nom du serveur n'est pas spécifié, bm.exe utilise le nom par défaut de l'hôte local.|  
+|Base de données :\<base de données\>|Facultatif : Le nom de la base de données sur lequel réside le classeur. Si le nom n'est pas spécifié, bm.exe utilise le nom par défaut BamPrimaryImport.|  
   
  Met à jour les informations de connexion à la base de données d'importation principale BAM du classeur de données actives BAM spécifié.  
   
@@ -172,15 +172,15 @@ bm.exe update-livedataworkbook -Name:SalesManager_Live.xls -Server:SalesSrv
 ## <a name="regenerate-livedataworkbook-command"></a>Commande regenerate-livedataworkbook  
  **Utilisation**  
   
- **BM.exe regenerate-livedataworkbook - WorkbookName :\<nom de fichier de classeur de données actives > [-Server :\<serveur >] [-base de données :\<base de données >]**  
+ **BM.exe regenerate-livedataworkbook - WorkbookName :\<nom de fichier de classeur de données actives\>[-Server :\<server\> ] [-base de données :\<base de données\> ]**  
   
  **Paramètres**  
   
 |Paramètre| Description|  
 |---------------|-----------------|  
-|WorkbookName :\<nom de fichier de classeur de données actives >|Nom du classeur à mettre à jour.|  
-|Serveur :\<server >|Facultatif : Le nom du serveur sur lequel réside le classeur. Le serveur doit se trouver dans le même domaine que l'ordinateur à partir duquel bm.exe est exécuté. Si le nom du serveur n'est pas spécifié, bm.exe utilise le nom par défaut de l'hôte local.|  
-|Base de données :\<base de données >|Facultatif : Le nom de la base de données sur lequel réside le classeur. Si le nom n'est pas spécifié, bm.exe utilise le nom par défaut BamPrimaryImport.|  
+|WorkbookName :\<nom de fichier de classeur de données actives\>|Nom du classeur à mettre à jour.|  
+|Serveur :\<server\>|Facultatif : Le nom du serveur sur lequel réside le classeur. Le serveur doit se trouver dans le même domaine que l'ordinateur à partir duquel bm.exe est exécuté. Si le nom du serveur n'est pas spécifié, bm.exe utilise le nom par défaut de l'hôte local.|  
+|Base de données :\<base de données\>|Facultatif : Le nom de la base de données sur lequel réside le classeur. Si le nom n'est pas spécifié, bm.exe utilise le nom par défaut BamPrimaryImport.|  
   
  Génère un classeur BAM de données actives, mais sans le déployer.  
   
@@ -192,4 +192,4 @@ bm.exe regenerate-livedataworkbook -WorkbookName:SM_Live.xls -Server:S1
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilitaire de gestion BAM](../core/bam-management-utility.md)
+ [Utilitaire de gestion de l’analyse BAM](../core/bam-management-utility.md)

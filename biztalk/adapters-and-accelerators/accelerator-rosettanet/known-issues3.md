@@ -13,11 +13,11 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: 335eb3c9-b565-470f-b69c-2a771ef8b476
 ms.author: mandia
-ms.openlocfilehash: 59c6aabd6adf584bb27f5487ca31f852a0d11384
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bbb7ddc2028383f8ac346e7876459f322d2dd96b
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues"></a>Problèmes connus
 Cette section contient des informations utiles qui peuvent vous aider à éviter les erreurs avec [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]. Les problèmes connus sont regroupées dans les domaines suivants :  
@@ -49,7 +49,7 @@ Cette section contient des informations utiles qui peuvent vous aider à éviter
  [!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]prend en charge l’ajout d’un groupe pour le groupe d’utilisateurs d’applications BizTalk ou le groupe Administrateurs BizTalk Server. Toutefois, les comptes d’utilisateur individuels et les groupes qui appartiennent au groupe utilisateurs d’applications BizTalk ou au groupe d’administrateurs BizTalk Server doivent faire partie du même domaine.  
   
 ### <a name="uninstallation-of-btarn-fails-if-biztalk-server-is-removed-first"></a>La désinstallation de BTARN échoue si BizTalk Server est supprimé en premier  
- Si vous supprimez [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] avant de supprimer [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)], le [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] processus de suppression échoue sans erreurs. Pour résoudre ce problème, réinstaller et reconfigurer [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] , puis supprimez [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)].  
+ Si vous supprimez BizTalk Server avant de supprimer [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)], le [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] processus de suppression échoue sans erreurs. Pour résoudre ce problème, réinstaller et reconfigurer BizTalk Server et ensuite supprimer [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)].  
   
 ### <a name="distributed-deployment-requires-a-domain-controller"></a>Déploiement distribué nécessite un contrôleur de domaine  
  Déploiement [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] dans un environnement multiserveur nécessite un contrôleur de domaine, par exemple, lorsque vous avez installé [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] sur un serveur et le [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] bases de données utilisées pour la configuration sur un autre serveur.  
@@ -110,7 +110,7 @@ Cette section contient des informations utiles qui peuvent vous aider à éviter
  Lorsque vous créez un profil de configuration de processus et ensuite créer un accord, [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] effectue la validation de champ croisé pour vous assurer que les propriétés de l’accord et le profil sont compatibles. Par exemple, il vérifie que pour un profil dont la propriété Standard est définie sur « CIDX », les propriétés de l’accord 0 a 1 de l’accord sont définie à « Aucune 0 a 1 ». Toutefois, si vous modifiez un profil de configuration de processus après avoir créé un accord, [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] n’effectue pas de validation de champ croisé. Si vous modifiez la propriété Standard de « RosettaNet » à « CIDX », [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] ne vérifie pas que les propriétés de l’accord 0 a 1 de l’accord sont définie à « Aucune 0 a 1 ».  
   
 ### <a name="errors-will-result-if-all-orchestrations-are-not-started"></a>Erreurs se produira si toutes les orchestrations ne sont pas démarrées.  
- Le [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] programme d’installation installe les neuf orchestrations. Pour [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] pour traiter correctement les messages, vous devez lier, inscrire et démarrer neuf toutes ces orchestrations avant de lancer le traitement. Pour plus d’informations, consultez les rubriques « Gestion d’Orchestration dans BizTalk Explorer » ou « Gestion des Orchestrations » dans [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] aide.  
+ Le [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] programme d’installation installe les neuf orchestrations. Pour [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] pour traiter correctement les messages, vous devez lier, inscrire et démarrer neuf toutes ces orchestrations avant de lancer le traitement. Pour plus d’informations, consultez les rubriques « Gestion d’Orchestration dans BizTalk Explorer » ou « Gestion des Orchestrations » dans l’aide de BizTalk Server.  
   
 ### <a name="rnifreceiveaspx-does-not-remove-the-mime-bottom-boundary-from-a-message"></a>Fichier RNIFReceive.aspx ne supprime pas la limite inférieure MIME d’un message  
  Lorsque la page RNIFReceive.aspx reçoit un message à partir d’une page de fichier RNIFSend.aspx d’un partenaire, le message inclut un en-tête MIME et une limite de haut et bas MIME, un nombre à base 64. Fichier RNIFSend.aspx ajoute l’en-tête et les limites de message pour la transmission de RNIF. Fichier RNIFReceive.aspx doit supprimer l’en-tête MIME et les limites du message avant d’envoyer le message pour le processus public. Fichier RNIFReceive.aspx supprime l’en-tête MIME et la limite supérieure, mais elle ne supprime pas la limite inférieure. La présence de la limite inférieure n’affecte pas le traitement du message dans le processus public.  
@@ -128,7 +128,7 @@ Cette section contient des informations utiles qui peuvent vous aider à éviter
  Si une erreur de transmission se produit lorsqu’une orchestration de processus publics traite le message final, le journal des événements et du fonctionnement affichent l’erreur, mais n’est pas le cas de l’analyse BAM. BAM ne peut pas afficher le message parce que l’orchestration a arrêté.  
   
 ### <a name="the-pipelineexe-tool-cannot-be-used-to-debug-a-btarn-receive-pipeline"></a>L’outil pipeline.exe ne peut pas être utilisé pour déboguer un BTARN pipeline de réception  
- Si vous souhaitez déboguer un pipeline de réception, vous devez créer un port hébergeant le pipeline. Vous ne pouvez pas déboguer à l’aide de la pipeline.exe outil [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] fournit.  
+ Si vous souhaitez déboguer un pipeline de réception, vous devez créer un port hébergeant le pipeline. Vous ne pouvez pas déboguer à l’aide de l’outil pipeline.exe par BizTalk Server.  
   
 ### <a name="an-error-may-be-generated-for-a-retried-message-that-is-successfully-processed-after-the-orchestration-finishes"></a>Une erreur peut être générée pour un message de nouvelle tentative qui a été correctement traité une fois l’orchestration terminée  
  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]utilise des orchestrations pour représenter des flux de processus. Dans certains cas, dans lequel plusieurs messages de nouvelle tentative sont retentées, l’orchestration peut terminer correctement avant l’arrivée d’un message de nouvelle tentative dans la BizTalk MessageBox. Lorsque ce comportement survient, [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] génère un message d’erreur correspondant » s’est terminée mais ignorées ». Vous devez examiner votre application de métier (LOB) pour déterminer si le processus est terminé ou non. Si l’application métier indique l’exécution réussie, vous pouvez ignorer le message « terminé mais ignoré ».  
@@ -203,4 +203,4 @@ txtOutput.Text = plainText;
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
-[Problèmes connus et dépannage](troubleshooting-and-known-issues-in-rosettanet.md)
+[Dépannage et problèmes connus](troubleshooting-and-known-issues-in-rosettanet.md)

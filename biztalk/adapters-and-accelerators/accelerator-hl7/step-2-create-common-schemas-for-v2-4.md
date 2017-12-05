@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 07260c5f0d161698545ff7fd5b5177a5374f3d04
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 60b199bcd350a3341640baa05b875347c4f04bb5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-create-common-schemas-for-v24"></a>Étape 2 : Créer des schémas courants pour V2.4
 Les schémas V2.4 sont communément référencés schémas, ce qui vous permet de valider les instances de message de requête et de réponse.  
@@ -42,7 +42,7 @@ Les schémas V2.4 sont communément référencés schémas, ce qui vous permet d
   
 8.  Dans le volet droit, faites défiler jusqu'à la **nom fort** , cliquez sur le champ situé à droite de **fichier de clé d’Assembly**, puis cliquez sur le bouton de sélection (...).  
   
-9. Dans le **fichier de clé d’Assembly** boîte de dialogue, accédez à \< *lecteur*> : \Program Files\Microsoft BizTalk \<version > Accelerator for HL7\SDK\Interrogative didacticiel, cliquez sur **key.snk**, puis cliquez sur **ouvrir**.  
+9. Dans le **fichier de clé d’Assembly** boîte de dialogue, accédez à \< *lecteur*\>: \Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\ Cliquez (didacticiel), interrogative **key.snk**, puis cliquez sur **ouvrir**.  
   
 10. Dans la boîte de dialogue Pages de propriétés Interrogative_24Schemas, cliquez sur **OK** pour enregistrer vos modifications.  
   

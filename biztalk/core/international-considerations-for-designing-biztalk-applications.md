@@ -12,11 +12,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 94c1c3c6430b049d98444349394eff05eeb21561
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7ef22467c18580219e8587d63017d8bf146090d4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="international-considerations-for-designing-biztalk-applications"></a>Observations à caractère international pour la conception d’Applications BizTalk
 Nous vous recommandons vivement d'analyser les problèmes connus suivants lorsque vous développez vos applications [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] internationales.  
@@ -45,7 +45,7 @@ Nous vous recommandons vivement d'analyser les problèmes connus suivants lorsqu
   
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] prend en charge un grand nombre de codages différents pour les documents de fichier plat et XML, par exemple UTF-16, UTF-8, chinois simplifié GBK, chinois simplifié GB18030, etc.  
   
- Pour les documents entrants, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] reconnaît la déclaration de codage dans les documents XML, tel que «\<? xml version = « 1.0 » encoding = « GB2312 » ? > ». Le schéma de fichier plat possède un **Page de codes** propriété pour indiquer le codage des documents de fichier plat entrant.  
+ Pour les documents entrants, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] reconnaît la déclaration de codage dans les documents XML, tel que «\<? xml version = « 1.0 » encoding = « GB2312 » ?\>». Le schéma de fichier plat possède un **Page de codes** propriété pour indiquer le codage des documents de fichier plat entrant.  
   
  Pour les documents sortants, XML et les assembleurs de fichier plat, utilisez le **jeu de caractères cible** propriété. Si cette propriété est spécifiée, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] convertit les documents sortants dans le jeu de caractères spécifié sans tenir compte du jeu d'origine. Si aucun **jeu de caractères cible** propriété est définie, XML utilise le protocole UTF-8 et fichiers plats utilisent la page de codes spécifiée dans le schéma de fichier plat.  
   
@@ -84,4 +84,4 @@ Nous vous recommandons vivement d'analyser les problèmes connus suivants lorsqu
  [Encodage de caractères dans le composant de Pipeline de désassembleur de fichier plat](../core/character-encoding-in-the-flat-file-disassembler-pipeline-component.md)   
  [Encodage de caractères dans le composant de Pipeline d’assembleur de fichier plat](../core/character-encoding-in-the-flat-file-assembler-pipeline-component.md)   
  [Encodage de caractères dans le composant de Pipeline assembleur XML](../core/character-encoding-in-the-xml-assembler-pipeline-component.md)   
- [Encodage de caractères dans le composant de Pipeline désassembleur XML](../core/character-encoding-in-xml-disassembler-pipeline-component.md)
+ [Codage des caractères dans le composant de pipeline Désassembleur XML](../core/character-encoding-in-xml-disassembler-pipeline-component.md)

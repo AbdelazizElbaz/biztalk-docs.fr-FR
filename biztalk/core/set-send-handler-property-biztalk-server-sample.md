@@ -16,11 +16,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a0e14f58cbdd07a8c13dec6cd44fbc95584f2ecc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f783f465feff207ae1759ea358b0b848ccc0f4c3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="set-send-handler-property-biztalk-server-sample"></a>Définir la propriété du Gestionnaire d’envoi (exemple BizTalk Server)
 L'exemple de définition des propriétés du gestionnaire d'envoi (Set Send Handler Property) illustre la définition des informations de configuration XML pour un gestionnaire d'envoi SMTP (Simple Mail Transfer Protocol).  
@@ -40,7 +40,7 @@ L'exemple de définition des propriétés du gestionnaire d'envoi (Set Send Hand
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
  Les fichiers de l'exemple se trouvent dans l'emplacement SDK suivant :  
   
- \<*Exemples de chemin d’accès*> \Admin\WMI\Set Property\ du Gestionnaire d’envoi  
+ \<*Exemples de chemin d’accès*\>\Admin\WMI\Set Property\ de gestionnaire d’envoi  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -57,15 +57,13 @@ L'exemple de définition des propriétés du gestionnaire d'envoi (Set Send Hand
   
 1.  Dans une fenêtre de commande, accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \Admin\WMI\Set Property\VBScript\ du Gestionnaire d’envoi  
+     \<*Exemples de chemin d’accès*\>\Admin\WMI\Set Property\VBScript\ de gestionnaire d’envoi  
   
 2.  Exécutez le fichier ConfigureSMTP.vbs à l'aide du programme cscript en transmettant l'argument de ligne de commande suivant :  
   
-    -   **\<**   
-         ***SMTPServerName* >.** Nom du serveur SMTP à utiliser pour envoyer le message.  
+    -   **\<** ***SMTPServerName* \>.** Nom du serveur SMTP à utiliser pour envoyer le message.  
   
-    -   **\<**   
-         ***FromEmailAddress* >.** Adresse de messagerie qui sera utilisée comme adresse d'expéditeur.  
+    -   **\<** ***FromEmailAddress* \>.** Adresse de messagerie qui sera utilisée comme adresse d'expéditeur.  
   
          Exemple :  
   

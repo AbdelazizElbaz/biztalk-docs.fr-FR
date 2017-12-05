@@ -12,18 +12,18 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b26c483568e1ceb05679d7548721c1cce818fde
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 69659359af123af7d9239241128cae06934d9a54
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="running-the-designer-extensibility-sample"></a>L’exemple de l’extensibilité du concepteur en cours d’exécution
 L’exemple de l’extensibilité du concepteur utilise deux unités d’exemple pour illustrer comment vous pouvez fournir des options de configuration au moment du design pour les programmes de résolution personnalisés et pour les services d’itinéraire.  
   
  **Pour exécuter l’exemple de l’extensibilité du Concepteur**  
   
-1.  Démarrez [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
+1.  Démarrez Visual Studio.  
   
 2.  Dans Visual Studio, pointez sur **nouveau** sur la **fichier** menu, puis sur **projet**.  
   

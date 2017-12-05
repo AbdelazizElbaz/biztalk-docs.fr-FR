@@ -12,11 +12,11 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 62b6137964c493ae8dff3c0ab635a3145f2d9348
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6fc9eda3ba1bee61b4737428f41870fc31504e3a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="receive-query-notifications-incrementally-from-sql-using-biztalk-server"></a>Recevoir des Notifications de requête par incréments de SQL à l’aide de BizTalk Server
 > [!IMPORTANT]
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
 |Propriété de liaison| Description|  
 |----------------------|-----------------|  
 |**InboundOperationType**|Spécifie l’opération entrante que vous souhaitez effectuer. Pour recevoir des messages de notification, affectez la valeur **Notification**.|  
-|**NotificationStatement**|Spécifie l’instruction SQL (SELECT ou EXEC \<procédure stockée >) permet de s’inscrire aux notifications de requête. L’adaptateur reçoit un message de notification de SQL Server que lorsque le jeu de résultats pour que les modifications d’instruction SQL spécifiées.|  
+|**NotificationStatement**|Spécifie l’instruction SQL (SELECT ou EXEC \<procédure stockée\>) permet de s’inscrire aux notifications de requête. L’adaptateur reçoit un message de notification de SQL Server que lorsque le jeu de résultats pour que les modifications d’instruction SQL spécifiées.|  
 |**NotifyOnListenerStart**|Spécifie si l’adaptateur envoie une notification pour les clients de la carte au démarrage de l’écouteur.|  
   
  Pour obtenir une description plus complète de ces propriétés, consultez [en savoir plus sur l’adaptateur BizTalk pour les propriétés de liaison de l’adaptateur SQL Server](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md). Pour obtenir une description complète de l’utilisation de la [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] pour recevoir des notifications à partir de SQL Server, poursuivre la lecture.  
@@ -317,7 +317,7 @@ Salary = 100000
 -   L’adaptateur reçoit un message de notification qui ressemble à ceci :  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <Notification xmlns="http://schemas.microsoft.com/Sql/2008/05/Notification/">  
       <Info>Insert</Info>   
       <Source>Data</Source>   
@@ -330,7 +330,7 @@ Salary = 100000
 -   L’adaptateur exécute l’opération de sélection. Étant donné que l’opération Select XML inclut également une instruction Update, l’instruction de mise à jour est également exécutée. La réponse suivante à partir de SQL Server est de l’instruction Select.  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <SelectResponse xmlns="http://schemas.microsoft.com/Sql/2008/05/TableOp/dbo/Employee">  
       <SelectResult>  
         <Employee xmlns="http://schemas.microsoft.com/Sql/2008/05/Types/Tables/dbo">  
@@ -347,7 +347,7 @@ Salary = 100000
 -   Dans le cadre de l’instruction Select, l’instruction de mise à jour est également exécutée et la colonne d’état pour le nouvel enregistrement est remplacée par 1. Cette option force à nouveau une autre notification à partir de SQL Server et l’adaptateur reçoit un message de notification correspondant, qui ressemble à ceci :  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <Notification xmlns="http://schemas.microsoft.com/Sql/2008/05/Notification/">  
       <Info>Update</Info>   
       <Source>Data</Source>   
@@ -360,7 +360,7 @@ Salary = 100000
 -   Après la deuxième notification, l’adaptateur exécute l’instruction Select. Toutefois, comme il n’existe aucun enregistrement qui ont l’état en tant que 0, l’adaptateur reçoit une réponse vide qui ressemble à la suivante.  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <SelectResponse xmlns="http://schemas.microsoft.com/Sql/2008/05/TableOp/dbo/Employee">  
       <SelectResult />   
     </SelectResponse>  

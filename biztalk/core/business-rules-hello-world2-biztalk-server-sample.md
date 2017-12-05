@@ -15,11 +15,11 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 48d92d3de6b4ef6b4d541d7f64e0d483feb9c30f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: eed1c0c83432417b53debcf523eeec91f85e5c2b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="business-rules-hello-world2-biztalk-server-sample"></a>Exemple Hello World2 de règles d’entreprise (exemple BizTalk Server)
 L’exemple d’entreprise règles « Hello World2 » étend l’exemple de Business règles « Hello world1 » en montrant comment vers la version, publier et déployer l’ensemble pour le magasin de règles SQL partagé et l’exécution de la stratégie à l’aide de règles XML le **stratégie** objet fourni par l’infrastructure des règles d’entreprise. L'exemple illustre également les stratégies de mise à jour dynamiques en action.  
@@ -55,7 +55,7 @@ L’exemple d’entreprise règles « Hello World2 » étend l’exemple de Bu
 >  Pour obtenir des informations importantes sur tous les exemples dans ce SDK, consultez [exemples](../core/samples-in-the-sdk.md).  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
- *\<Exemples de chemin d’accès >*\Business Rules\Business règles Hello World2\  
+ *\<Exemples de chemin d’accès\>*\Business Rules\Business règles Hello World2\  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -74,7 +74,7 @@ L’exemple d’entreprise règles « Hello World2 » étend l’exemple de Bu
   
 1.  Dans une fenêtre de commande, accédez au dossier suivant :  
   
-     *\<Exemples de chemin d’accès >*\Business Rules\Business règles Hello World2\  
+     *\<Exemples de chemin d’accès\>*\Business Rules\Business règles Hello World2\  
   
 2.  Exécutez le fichier Setup.bat, qui effectue les actions suivantes :  
   
@@ -93,7 +93,7 @@ L’exemple d’entreprise règles « Hello World2 » étend l’exemple de Bu
   
 1.  Dans une fenêtre de commande, accédez au dossier suivant :  
   
-     *\<Exemples de chemin d’accès >*\Business Rules\Business règles Hello World2\bin\Debug\  
+     *\<Exemples de chemin d’accès\>*\Business Rules\Business règles Hello World2\bin\Debug\  
   
 2.  Dans la fenêtre de commande, tapez le nom du fichier pour cet exemple (**BusinessRulesHelloWorld2.exe**), puis appuyez sur ENTRÉE.  
   

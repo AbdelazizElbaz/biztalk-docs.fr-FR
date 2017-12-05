@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: db79e5e4421719a936f68c409c166f9eac38605c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2b96089f7f76af1183f457202bb2e22b5be7f146
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="edi-document-schemas"></a>Schémas de document EDI
 Les schémas de document définissent le corps d'un type de document de transaction EDI.  
@@ -31,7 +31,7 @@ Les schémas de document définissent le corps d'un type de document de transact
 -   Pour EDIFACT : `http://schemas.microsoft.com/BizTalk/EDI/EDIFACT/2006`  
   
 ## <a name="schema-naming-convention"></a>Convention d'affectation de noms de schémas  
- La convention d’affectation de noms pour le X12 et type de codage EDIFACT est \<codage > _\<Version >\<version >\_\<Doctype >. En voici quelques exemples : le schéma X12_00401_864.xsd pour le type de document X12 864 (version d'origine 004, version finale 01) et le schéma EDIFACT_D01C_AUTHOR.xsd pour le type de document EDIFACT AUTHOR (version d'origine D01, version finale C).  
+ La convention d’affectation de noms pour le X12 et type de codage EDIFACT est \<codage\>_\<Version\>\<version\>\_\<Doctype\>. En voici quelques exemples : le schéma X12_00401_864.xsd pour le type de document X12 864 (version d'origine 004, version finale 01) et le schéma EDIFACT_D01C_AUTHOR.xsd pour le type de document EDIFACT AUTHOR (version d'origine D01, version finale C).  
   
 > [!NOTE]
 >  Le nom d'un schéma EDIFACT est sensible à la casse. Par exemple, EFACT_D98B_ORDERS et EFACT_d98B_Orders désignent deux schémas différents.  

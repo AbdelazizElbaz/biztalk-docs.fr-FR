@@ -2,11 +2,11 @@
 redirect_url: /biztalk/core/troubleshooting-tibco-rendezvous/
 redirect_document_id: True
 ROBOTS: NOINDEX
-ms.openlocfilehash: 5c29b21ea36efe3fe0a63c5994b771e36e570ed3
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: cce9ad685bc4b0bc8a0d97e0645573c5e2db1cf5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-event-tracing-for-windows"></a>À l’aide d’événements de suivi pour Windows
 L'adaptateur Microsoft BizTalk pour TIBCO Rendezvous consigne des messages d'erreur, d'avertissement et d'informations dans l'Observateur d'événements Windows. Vous pouvez visualiser des messages de suivi supplémentaires à l'aide de l'outil Suivi d’événements pour Windows (ETW). Lorsqu'il est activé, cet outil crée un fichier *.etl pour recevoir les messages. Ce fichier au format binaire doit être converti pour être lu. Pour ce faire, vous devez disposer d’une application consommateur capable d’interpréter le \*fichier .etl, par exemple, tracerpt.exe ou tracedmp.exe. Par exemple, l’application tracerpt.exe convertira la \*fichier .etl dans deux fichiers texte : summary.txt et dumpfile.csv.  
@@ -25,7 +25,7 @@ L'adaptateur Microsoft BizTalk pour TIBCO Rendezvous consigne des messages d'err
   
      Pour que l'application consommateur puisse lire les événements dans le fichier .etl, l'outil Suivi d'événements pour Windows doit les vider dans ce fichier. Généralement, cette opération est effectuée lorsque le contrôleur désactive le suivi.  
   
-     Pour utiliser l’application consommateur sans désactiver le suivi, le contrôleur doit activer le suivi avec l’option en temps réel, \<en temps réel > = -rt.  
+     Pour utiliser l’application consommateur sans désactiver le suivi, le contrôleur doit activer le suivi avec l’option en temps réel, \<en temps réel\> = -rt.  
   
 -   **Fournisseur**: fournit l’événement.  
   
@@ -33,15 +33,15 @@ L'adaptateur Microsoft BizTalk pour TIBCO Rendezvous consigne des messages d'err
   
  L'adaptateur BizTalk pour TIBCO Rendezvous inclut trois fournisseurs. Vous pouvez ainsi consigner différents types de messages :  
   
--   **Fournisseur de journalisation de récepteur**: le \<Trace element > commutateur est **-récepteur**.  
+-   **Fournisseur de journalisation de récepteur**: le \<élément Trace\> commutateur est **-récepteur**.  
   
 -   Utilisez **-récepteur** pour récupérer tous les messages du journal qui ont été reçus par l’adaptateur lors de l’exécution.  
   
--   **Fournisseur de journalisation de l’émetteur**: le \<Trace element > commutateur est **-émetteur**.  
+-   **Fournisseur de journalisation de l’émetteur**: le \<élément Trace\> commutateur est **-émetteur**.  
   
      Utilisez **-émetteur** pour récupérer tous les messages du journal qui ont été transmis par l’adaptateur au moment de l’exécution.  
   
--   **Fournisseur de journalisation de gestion —**le \<Trace element > commutateur est **-gestion**.  
+-   **Fournisseur de journalisation de gestion —**le \<élément Trace\> commutateur est **-gestion**.  
   
      Utilisez **-gestion**pour récupérer tous les messages du journal qui ont été générés pendant la navigation du système du serveur.  
   
@@ -54,7 +54,7 @@ BTATIBCORVTrace <Trace element> -start [-cir <MB>|
 BTATIBCORVTrace <Trace element> -stop  
 ```  
   
- Où :  **\<Trace element >** (obligatoire) est le type de fournisseur.  
+ Où :  **\<élément Trace\>**  (obligatoire) est le type de fournisseur.  
   
  Les options associées sont les suivantes :  
   
@@ -66,9 +66,9 @@ BTATIBCORVTrace <Trace element> -stop
   
 -   **-start, - stop**: activer ou désactiver le fournisseur.  
   
--   **-cir \<Mo >**: taille et type de fichier. **-cir** est un fichier circulaire. **\<Mo >**: taille en mégaoctets.  
+-   **-cir \<Mo\>**: taille et type de fichier. **-cir** est un fichier circulaire. **\<Mo\>**: taille en mégaoctets.  
   
--   **-seq \<Mo >**: taille et type de fichier. **-seq** est un fichier séquentiel. **\<Mo >**: taille en mégaoctets.  
+-   **-seq \<Mo\>**: taille et type de fichier. **-seq** est un fichier séquentiel. **\<Mo\>**: taille en mégaoctets.  
   
 -   **-rt**: définir le mode temps réel sur.  
   

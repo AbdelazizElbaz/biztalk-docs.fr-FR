@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 17ae913ddbcdd0b87b6ebfc1a4f38790ecdb67bc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ea0cd71c22fdd614d2e49c996939b785ecadf8bd
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="installing-the-designer-extensibility-sample"></a>Installation de l’exemple de l’extensibilité du Concepteur
 Cette section décrit le processus d’installation de l’exemple de l’extensibilité du concepteur. Vous devez installer les exemples de [l’installation et l’exécution de l’exemple de rampe d’entrée d’itinéraire](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md) et [l’installation et l’exécution de l’exemple de résolution dynamique](../esb-toolkit/installing-and-running-the-dynamic-resolution-sample.md) avant d’installer et utiliser cet exemple.  
@@ -25,13 +25,13 @@ Cette section décrit le processus d’installation de l’exemple de l’extens
   
 1.  Dans l’Explorateur Windows, ouvrez le dossier \Source\Samples\Designer Extensibility Samples\Extenders.Itinerary.OrchestrationSample, où vous avez installé le [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] exemples et ouvrez le fichier de solution Microsoft Visual Studio nommé Extenders.Itinerary.OrchestrationSample.sln.  
   
-2.  Dans [!INCLUDE[vs2010](../includes/vs2010-md.md)], cliquez sur **générer la Solution** sur la **générer** menu.  
+2.  Dans Visual Studio, cliquez sur **générer la Solution** sur la **générer** menu.  
   
 3.  Fermez Visual Studio.  
   
 4.  Dans l’Explorateur Windows, ouvrez le dossier \Source\Samples\Designer Extensibility Samples\Extenders.Resolvers.ResolverSample, où vous avez installé le [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] exemples et ouvrez le fichier de solution Visual Studio nommé Extenders.Resolvers.ResolverSample.sln.  
   
-5.  Dans [!INCLUDE[vs2010](../includes/vs2010-md.md)], cliquez sur **générer la Solution** sur la **générer** menu.  
+5.  Dans Visual Studio, cliquez sur **générer la Solution** sur la **générer** menu.  
   
 6.  Fermez Visual Studio.  
   

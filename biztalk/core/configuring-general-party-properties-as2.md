@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: deba3ae710b916552095ce66d53813797d8da8da
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 62d947baa1a3f9ea867f1b3a85a8b60129d31ee3
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="configuring-general-party-properties-as2"></a>Configuration des propriétés de tiers générales (AS2)
 Un tiers ou un partenaire commercial représente une organisation participant à une relation commerciale. Les propriétés du tiers contiennent les informations suivantes :  
@@ -48,7 +48,7 @@ Un tiers ou un partenaire commercial représente une organisation participant à
 3.  Sur le **Ports d’envoi** page de la **propriétés de tiers** boîte de dialogue zone, procédez comme suit :  
   
     > [!NOTE]
-    >  Dans [!INCLUDE[prague](../includes/prague-md.md)], l'association de ports d'envoi est effectuée au niveau de l'accord. Le **Ports d’envoi** page est disponible dans le cadre des propriétés du tiers uniquement pour la compatibilité descendante. Chaque fois que vous associez un port d'envoi à un accord, le paramètre de port d'envoi est propagé au paramètre du tiers et l'association de ports d'envoi est visible dans cette page. L'inverse n'est toutefois pas vrai. Vous ne pouvez pas associer un port d'envoi à un tiers, puis rendre ce port d'envoi automatiquement disponible dans le cadre des paramètres de l'accord. Pour plus d'informations sur l'association des ports d'envoi à l'accord, voir ici.  
+    >  Dans BizTalk Server, l’association de ports d’envoi est effectuée au niveau de l’accord. Le **Ports d’envoi** page est disponible dans le cadre des propriétés du tiers uniquement pour la compatibilité descendante. Chaque fois que vous associez un port d'envoi à un accord, le paramètre de port d'envoi est propagé au paramètre du tiers et l'association de ports d'envoi est visible dans cette page. L'inverse n'est toutefois pas vrai. Vous ne pouvez pas associer un port d'envoi à un tiers, puis rendre ce port d'envoi automatiquement disponible dans le cadre des paramètres de l'accord. Pour plus d'informations sur l'association des ports d'envoi à l'accord, voir ici.  
   
     |Utiliser|Pour effectuer cette opération|  
     |--------------|----------------|  

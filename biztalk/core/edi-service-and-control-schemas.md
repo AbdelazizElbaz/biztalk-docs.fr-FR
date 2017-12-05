@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4e9911322693f4c495925ce52bdfe62a65bf850f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 25e4ee4eb51d56aaeb4f433fa523e416a8c908e0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="edi-service-and-control-schemas"></a>Schémas de service et de contrôle EDI
 Les schémas de contrôle sont requis pour traiter les enveloppes de message (schémas de contrôle d'en-tête) et les accusés de réception. Ces schémas sont déployés dans l'assembly Microsoft.BizTalk.Edi.BaseArtifacts.dll par le programme d'installation. Ces schémas n’ont pas à ajouter aux projets BizTalk car ils sont déployés dans BaseArtifacts.dll. Vous devez ajouter une référence à l’assembly BaseArtifacts.dll au projet contenant vos schémas pour ces schémas à utiliser.  
@@ -37,10 +37,10 @@ Les schémas de contrôle sont requis pour traiter les enveloppes de message (sc
 |X12 997|X12_997Schema|http://schemas.microsoft.com/Edi/X12|ST<br /><br /> SE<br /><br /> X12_997_Root|  
 |EDIFACT CONTRL|Edifact_ContrlSchema|http://schemas.microsoft.com/Edi/Edifact|Efact_Contrl_Root<br /><br /> UCD<br /><br /> UCM<br /><br /> UCS|  
   
- Pour le codage X12, le schéma de notification de transactions opérationnelles 997 définit les en-têtes et codes de fin de l'échange, du groupe, du document informatisé/message utilisés dans l'enveloppe d'un message, ainsi que les segments AK1, AK2, AK3, AK4, AK5 et AK9 qui indiquent le résultat de la validation du corps. Le schéma d'accusé de réception technique TA1 définit l'en-tête et le code de fin de l'échange, tandis que le segment d'accusé de réception TA1 indique le résultat de la validation de l'en-tête. La convention d’affectation de noms pour ces schémas est X12_\<numéro de version > _997.xsd et X12\_\<numéro de version > _TA1.xsd. L'espace de noms cible pour ces schémas est http://schemas.microsoft.com/BizTalk/EDI/X12/2006.  
+ Pour le codage X12, le schéma de notification de transactions opérationnelles 997 définit les en-têtes et codes de fin de l'échange, du groupe, du document informatisé/message utilisés dans l'enveloppe d'un message, ainsi que les segments AK1, AK2, AK3, AK4, AK5 et AK9 qui indiquent le résultat de la validation du corps. Le schéma d'accusé de réception technique TA1 définit l'en-tête et le code de fin de l'échange, tandis que le segment d'accusé de réception TA1 indique le résultat de la validation de l'en-tête. La convention d’affectation de noms pour ces schémas est X12_\<numéro de version\>_997.xsd et X12\_\<numéro de version\>_TA1.xsd. L'espace de noms cible pour ces schémas est http://schemas.microsoft.com/BizTalk/EDI/X12/2006.  
   
- EDIFACT prend en charge un paradigme d'accusé de réception en deux phases. Le premier accusé de réception est une réception d'échange créée à l'aide de trois segments du schéma CONTRL. Cet accusé de réception technique indique le résultat de la validation de l'en-tête. Le deuxième accusé de réception utilise les autres segments du schéma CONTRL. La convention d’affectation de noms pour ce schéma est EFACT_\<numéro de Version > _CONTRL.xsd. L’espace de noms cible pour ce schéma est http://schemas.microsoft.com/BizTalk/EDI/EDIFACT/2006.  
+ EDIFACT prend en charge un paradigme d'accusé de réception en deux phases. Le premier accusé de réception est une réception d'échange créée à l'aide de trois segments du schéma CONTRL. Cet accusé de réception technique indique le résultat de la validation de l'en-tête. Le deuxième accusé de réception utilise les autres segments du schéma CONTRL. La convention d’affectation de noms pour ce schéma est EFACT_\<numéro de Version\>_CONTRL.xsd. L’espace de noms cible pour ce schéma est http://schemas.microsoft.com/BizTalk/EDI/EDIFACT/2006.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Réception des Messages EDI dans BizTalk Server](../core/how-biztalk-server-receives-edi-messages.md)   
- [Envoi des Messages EDI dans BizTalk Server](../core/how-biztalk-server-sends-edi-messages.md)
+ [Envoi des messages EDI par BizTalk Server](../core/how-biztalk-server-sends-edi-messages.md)

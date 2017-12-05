@@ -16,11 +16,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e8ce53882b20f6615ef280a38eddc8c3e2ef7ea3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8b0c88bdeb85b8ad493b85d2569061c35bd516e1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="stop-orchestration-biztalk-server-sample"></a>Arrêter l’Orchestration (exemple BizTalk Server)
 L'exemple d'arrêt d'une orchestration (Stop Orchestration) décrit l'arrêt d'une orchestration BizTalk Server et sa désinscription éventuelle.  
@@ -42,7 +42,7 @@ L'exemple d'arrêt d'une orchestration (Stop Orchestration) décrit l'arrêt d'u
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
  Les fichiers de l'exemple se trouvent dans l'emplacement SDK suivant :  
   
- \<*Exemples de chemin d’accès*> \Admin\WMI\Stop Orchestration\  
+ \<*Exemples de chemin d’accès*\>\Admin\WMI\Stop Orchestration\  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -59,15 +59,13 @@ L'exemple d'arrêt d'une orchestration (Stop Orchestration) décrit l'arrêt d'u
   
 1.  Dans une fenêtre de commande, accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \Admin\WMI\Stop Orchestration\VBScript\  
+     \<*Exemples de chemin d’accès*\>\Admin\WMI\Stop Orchestration\VBScript\  
   
 2.  Exécutez le fichier StopOrch.vbs à l'aide du programme cscript en transmettant les arguments de ligne de commande suivants (le troisième argument est facultatif) :  
   
-    -   **\<**   
-         ***OrchestrationName* >.** Nom de l'orchestration BizTalk Server à arrêter et, éventuellement, à désinscrire.  
+    -   **\<** ***OrchestrationName* \>.** Nom de l'orchestration BizTalk Server à arrêter et, éventuellement, à désinscrire.  
   
-    -   **\<**   
-         ***AssemblyName* >.** Nom de l'assembly BizTalk dans lequel l'orchestration spécifiée a été déployée. Si le nom de l'assembly contient des espaces, placez-le entre guillemets.  
+    -   **\<** ***AssemblyName* \>.** Nom de l'assembly BizTalk dans lequel l'orchestration spécifiée a été déployée. Si le nom de l'assembly contient des espaces, placez-le entre guillemets.  
   
     -   **Annuler l’inscription.** Chaîne littérale facultative qui permet d'indiquer que l'orchestration spécifiée doit être arrêtée et désinscrite.  
   

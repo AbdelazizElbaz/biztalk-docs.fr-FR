@@ -16,11 +16,11 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 75cc2fa6a7e4f6318818534f6b3f99323f1d8ddf
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cb8bf8d87f7868367c252cdc75842b234cb06ff9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-manually-purge-data-from-the-biztalk-tracking-database"></a>Purge manuelle des données de la base de données des suivis BizTalk
 Le travail de purge et d'archivage DTA de SQL Server Agent permet de limiter les actions manuelles d'effacement des données de la base de données des suivis BizTalk (BizTalkDTADb), du fait de la purge continue de la base et du compactage des données de suivi stockées. Vous pouvez toutefois être amené à effacer les données manuellement si votre base de données BizTalkDTADb a atteint une taille telle que les performances se dégradent de plus en plus et que, en dépit du travail de purge et d'archivage DTA, la croissance de la base ne peut être contenue.  
@@ -103,9 +103,9 @@ Le travail de purge et d'archivage DTA de SQL Server Agent permet de limiter les
   
 21. À l’invite de commandes, redémarrez chacun des services IIS que vous avez arrêtés à l’étape 4. Type :  
   
-     **Net start**  *\<IISserviceName >*  
+     **Net start**  *\<IISserviceName\>*  
   
-     Où  *\<IISserviceName >* est le nom du service IIS à redémarrer. Vous devez répéter cette commande pour chaque service IIS.  
+     Où  *\<IISserviceName\>*  est le nom du service IIS à redémarrer. Vous devez répéter cette commande pour chaque service IIS.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Archivage et la purge de la base de données de suivi de BizTalk](../core/archiving-and-purging-the-biztalk-tracking-database.md)   

@@ -15,11 +15,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 731f40a75d898369cfc730ba5cb4f25c199e1333
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5868172b566a12ab6299e0eaabe12fa2153bfb97
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="bre-deployment-utility"></a>Utilitaire de déploiement BRE
 Vous pouvez utiliser l’utilitaire de déploiement du moteur BRE à publier et déployer les vocabulaires de moteur de règles d’entreprise (BRE) et les stratégies requises pour un schéma SWIFT. Publication et le déploiement de ces stratégies et les vocabulaires sont requis pour activer la validation BRE pour le type de message.  
@@ -36,13 +36,13 @@ Vous pouvez utiliser l’utilitaire de déploiement du moteur BRE à publier et 
   
 -   Publie et déploie la stratégie principal et la stratégie de validation associée à chaque schéma de message.  
   
--   Génère un fichier journal qui indique toutes les étapes nécessaires. Ce fichier est BREDeploymentLog.txt dans les \< *lecteur*> : \Documents and Settings\All Users\Application et recommencez.  
+-   Génère un fichier journal qui indique toutes les étapes nécessaires. Ce fichier est BREDeploymentLog.txt dans les \< *lecteur*\>: \Documents and Settings\All Users\Application et recommencez.  
   
     > [!NOTE]
     >  L’utilitaire de déploiement du moteur BRE ne déploie pas les stratégies de Master BIC et Validation BIC. Vous devez déployer à l’aide de l’Assistant Déploiement du moteur de règles.  
   
     > [!NOTE]
-    >  Si vous avez installé [!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)] dans un répertoire par défaut (autre que C:\Program Files\Microsoft [!INCLUDE[btaA4SWIFTNoVersion](../../includes/btaa4swiftnoversion-md.md)]), ou que vous travaillez sur un ordinateur 64 bits, l’utilitaire de déploiement du moteur BRE ne fonctionnera pas correctement tant que vous modifiez les chemins d’accès dans le Fichier bredeployment.exe.config modifié. Ce fichier de configuration se trouve dans le \< *lecteur*> : \Program Files\Microsoft [!INCLUDE[btaA4SWIFTNoVersion](../../includes/btaa4swiftnoversion-md.md)]\SDK\Tools dossier. Pour mettre à jour la configuration de l’utilitaire, ouvrez BREDeployment.exe.config dans le bloc-notes et modifier les dossiers pour les stratégies de base, les schémas et les répertoires de vocabulaire.  
+    >  Si vous avez installé [!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)] dans un répertoire par défaut (autre que C:\Program Files\Microsoft [!INCLUDE[btaA4SWIFTNoVersion](../../includes/btaa4swiftnoversion-md.md)]), ou que vous travaillez sur un ordinateur 64 bits, l’utilitaire de déploiement du moteur BRE ne fonctionnera pas correctement tant que vous modifiez les chemins d’accès dans le Fichier bredeployment.exe.config modifié. Ce fichier de configuration se trouve dans le \< *lecteur*\>: \Program Files\Microsoft [!INCLUDE[btaA4SWIFTNoVersion](../../includes/btaa4swiftnoversion-md.md)]\SDK\Tools dossier. Pour mettre à jour la configuration de l’utilitaire, ouvrez BREDeployment.exe.config dans le bloc-notes et modifier les dossiers pour les stratégies de base, les schémas et les répertoires de vocabulaire.  
   
  Vous pouvez également utiliser l’utilitaire de déploiement à l’inverse de ce processus, l’annulation du déploiement et annulation de la publication les stratégies et vocabulaires. L’utilitaire a deux déployer et annuler le déploiement de fonctionnalités.  
   
@@ -62,7 +62,7 @@ Vous pouvez utiliser l’utilitaire de déploiement du moteur BRE à publier et 
     > [!NOTE]
     >  Pour annuler le déploiement de stratégies et des vocabulaires, cliquez sur **annuler le déploiement**. Le processus d’annuler le déploiement n’annulez pas le déploiement vocabulaires A4SWIFT_CodeLists.xml et A4SWIFT_Functions.xml, lequel peuvent être utilisés par d’autres stratégies déployées.  
   
-5.  Recherchez \< *lecteur*> : \Documents and Settings\All Users\Application Data pour confirmer que l’utilitaire créé le journal fichier BREDeploymentLog.txt.  
+5.  Recherchez \< *lecteur*\>: \Documents and Settings\All Users\Application Data pour confirmer que l’utilitaire créé le journal fichier BREDeploymentLog.txt.  
   
     > [!NOTE]
     >  Vous pouvez ouvrir le fichier journal à l’aide d’un éditeur de texte pour vérifier chaque étape de déploiement.  

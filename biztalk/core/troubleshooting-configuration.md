@@ -12,11 +12,11 @@ caps.latest.revision: "37"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2c16e2ee6d09afa3479a0540838086cb92270132
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e523c5c992ea422e6fe81f3c0d948db7007bcdb1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshooting-configuration"></a>Résolution des problèmes de configuration
 Le programme de configuration de Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] crée des bases de données sur un ou plusieurs ordinateurs exécutant [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)], alimente les bases de données à l'aide de tables, rôles et procédures stockées utilisées par [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], et déploie les assemblys .NET utilisés pendant l'exécution vers la base de données de gestion BizTalk.  
@@ -151,7 +151,7 @@ echo %TEMP%
   
  Impossible de se connecter au référentiel.  
   
- Serveur d’analyse : \<nom de l’ordinateur >  
+ Serveur d’analyse : \<nom de l’ordinateur\>  
   
  Erreur :  
   
@@ -175,7 +175,7 @@ echo %TEMP%
   
 4.  Dans le **modifier une chaîne de connexion référentiel** boîte de dialogue zone, vérifiez le nom de serveur dans cette chaîne et mettre à jour vers le nouveau nom d’ordinateur s’il est incorrect.  
   
-5.  Accédez à l’emplacement suivant : \< *répertoire d’installation*> \Program Files\Microsoft Analysis Services\Bin.  
+5.  Accédez à l’emplacement suivant : \< *répertoire d’installation*\>\Program Files\Microsoft Analysis Services\Bin.  
   
 6.  Cliquez sur le **Bin** dossier, puis cliquez sur **partage et sécurité**. Le **propriétés de la Corbeille** boîte de dialogue s’affiche.  
   

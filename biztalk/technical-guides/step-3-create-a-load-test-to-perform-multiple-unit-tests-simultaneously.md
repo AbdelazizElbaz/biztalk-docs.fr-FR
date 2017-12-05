@@ -12,11 +12,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f8c9a99c0efaacac233c339d9279c837744892fb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 76b3d26e9f1dd14463d153c89316b3cf3da0338d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3-create-a-load-test-to-perform-multiple-unit-tests-simultaneously"></a>Étape 3 : Créer un Test de charge pour exécuter plusieurs Tests unitaires simultanément
 Tests de charge exécutent plusieurs instances de l’un ou des tests unitaires plus afin que vous pouvez mesurer les performances et la capacité de gérer la charge de votre application. Les composants principaux d’un test de charge Visual Studio 2010 sont les suivantes :  
@@ -94,7 +94,7 @@ Tests de charge exécutent plusieurs instances de l’un ou des tests unitaires 
   
 12. Cliquez sur **Terminer** pour fermer l’Assistant Nouveau Test de charge.  
   
-13. Cliquez sur le **fichier** menu et sélectionnez **enregistrer \<nom du Test de charge > .loadtest comme**.  
+13. Cliquez sur le **fichier** menu et sélectionnez **enregistrer \<nom du Test de charge\>.loadtest comme**.  
   
     > [!NOTE]  
     >  Dans cet exemple, <Load Test Name> sera le nom attribué au fichier de test de charge par Visual Studio 2010, généralement loadtestx.loadtest, sauf si le nom du fichier a déjà été modifié manuellement.  
@@ -129,7 +129,7 @@ Tests de charge exécutent plusieurs instances de l’un ou des tests unitaires 
     |Catégorie de performance|Compteur de performances|  
     |--------------------------|-------------------------|  
     |Processeur|% Temps processeur pour l’instance _Total du compteur.|  
-    |Boîte de BizTalk : MessageBox : Compteurs généraux|Spool de taille pour le  *\<nom de base de données MessageBox de BizTalk >*:*\<nom de l’instance SQL Server >* instance de compteur. **Remarque :***\<nom de base de données MessageBox de BizTalk >* et  *\<nom de l’instance SQL Server >* sont seulement des espaces réservés pour les noms réels de BizTalk Base de données MessageBox et l’instance de SQL Server qui héberge la base de données MessageBox de BizTalk.   Ces espaces réservés doivent être remplacés par les noms réels de la base de données BizTalk MessageBox et instance associée de SQL Server.|  
+    |Boîte de BizTalk : MessageBox : Compteurs généraux|Spool de taille pour le  *\<nom de base de données BizTalk MessageBox\>*:*\<nom de l’instance SQL Server\>*  instance de compteur. **Remarque :***\<nom de base de données BizTalk MessageBox\>*  et  *\<nom de l’instance SQL Server\>*  sont seulement des espaces réservés pour le noms réels de la base de données BizTalk MessageBox et de l’instance de SQL Server qui héberge la base de données MessageBox de BizTalk.   Ces espaces réservés doivent être remplacés par les noms réels de la base de données BizTalk MessageBox et instance associée de SQL Server.|  
     |BizTalk:messagerie|Documents reçus/s pour l’instance de compteur de hôte de réception.<br /><br /> Documents traités par seconde pour l’instance de compteur de transmission hôte.|  
     |BizTalk:agent des messages|Hôte de réception vitesse entrant de remise de messages pour le document.|  
     |BizTalk:agent des messages|Vitesse de sortie de publication du message pour l’hôte de transmission du document.|  

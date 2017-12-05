@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4566a810489a9f6c46424a525908aa5a2fbb6bee
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9bc96c3b591baf81806182b6c3e988a46dd208ba
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-scripts-to-deploy-applications"></a>À l’aide de Scripts pour déployer des Applications
 Vous devez utiliser des scripts pour déployer des applications BizTalk lorsque cela est possible. Écriture de scripts permet de réduire le risque d’erreur humaine pendant le processus de déploiement. Vous devez également documenter vos procédures de déploiement en détail. Vous devez documenter tout ce que vous ne pas générer de script avec des instructions très détaillées. Cela inclut les documenter les modifications vers des systèmes externes et au déploiement des composants de non Microsoft.  
@@ -31,7 +31,7 @@ Vous devez utiliser des scripts pour déployer des applications BizTalk lorsque 
 -   [Présentation du déploiement d’Application BizTalk Server](http://go.microsoft.com/fwlink/?LinkId=101599) (http://go.microsoft.com/fwlink/?LinkId=101599)  
   
     > [!NOTE]  
-    >  Ce dernier article s’applique également aux [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)].  
+    >  Ce dernier article s’applique également à BizTalk Server.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Liste de vérification : Configuration de BizTalk Server](../technical-guides/checklist-configuring-biztalk-server.md)
+ [Liste de contrôle : Configuration de BizTalk Server](../technical-guides/checklist-configuring-biztalk-server.md)

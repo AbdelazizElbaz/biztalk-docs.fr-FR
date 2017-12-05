@@ -27,11 +27,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 70d845aa99910125a64e8a0744c4b3ef42d40f09
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9eeadda11d70998eff676c38a1d21e618acd2762
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="pip-implementation"></a>Implémentation d’un PIP
 Processus d’Interface RosettaNet partenaires (PIP) définissent des processus d’entreprise entre partenaires commerciaux dans une chaîne d’approvisionnement. [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]fournit un ensemble de PIP out of box et que vous pouvez créer des PIP supplémentaires. [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]prend en charge toutes les adresses PIP défini par l’organisation RosettaNet.  
@@ -39,7 +39,7 @@ Processus d’Interface RosettaNet partenaires (PIP) définissent des processus 
  Pour plus d’informations, consultez [PIP de RosettaNet](../../adapters-and-accelerators/accelerator-rosettanet/rosettanet-pips.md).  
   
 ## <a name="schemas-in-btarn"></a>Schémas de BTARN  
- RosettaNet Spécifie tous les schémas de message PIP sous la forme d’un Type de Document (DTD). Partenaires commerciaux qui participent à l’échange de documents professionnels doivent respecter ces DTD. Toutefois, [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] implémente ces DTD en tant que fichiers de définition de schéma XML (XSD), car Microsoft [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] représente des documents à l’aide de XSD, pas les DTD. XSD remplacent les DTD en termes de fonctionnalités et peuvent représenter la plupart des informations fournies dans les instructions du message en mode natif.  
+ RosettaNet Spécifie tous les schémas de message PIP sous la forme d’un Type de Document (DTD). Partenaires commerciaux qui participent à l’échange de documents professionnels doivent respecter ces DTD. Toutefois, [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] implémente ces DTD en tant que fichiers de définition de schéma XML (XSD), étant donné que Microsoft BizTalk Server représente des documents à l’aide de XSD, pas les DTD. XSD remplacent les DTD en termes de fonctionnalités et peuvent représenter la plupart des informations fournies dans les instructions du message en mode natif.  
   
 > [!NOTE]
 >  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]prend également en charge des PIP de nouvelle génération, récemment publiées par l’organisation RosettaNet, qui utilisent des spécifications de XSD.  
@@ -59,7 +59,7 @@ Processus d’Interface RosettaNet partenaires (PIP) définissent des processus 
 -   Contenu du service pour tous les messages de signal de RNIF 1.1 et RNIF 2.01.  
   
 ## <a name="sample-schemas"></a>Exemples de schémas  
- [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]le programme d’installation installe un ensemble d’adresses PIP dans \< *lecteur*> : \Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\SDK\Schemas. Voici à titre d’exemple uniquement. Avant de les utiliser en production, il est recommandé que vous comparez ces schémas par rapport à la dernière version des spécifications PIP RosettaNet publiées et instructions du message. BTARN prend en charge l’implémentation de toutes les adresses PIP de RosettaNet.  
+ [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]le programme d’installation installe un ensemble d’adresses PIP dans \< *lecteur*\>: \Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\Schemas. Voici à titre d’exemple uniquement. Avant de les utiliser en production, il est recommandé que vous comparez ces schémas par rapport à la dernière version des spécifications PIP RosettaNet publiées et instructions du message. BTARN prend en charge l’implémentation de toutes les adresses PIP de RosettaNet.  
   
 ## <a name="element-level-constraints-in-btarn"></a>Contraintes au niveau de l’élément dans BTARN  
  Dans BTARN, vous implémentez les contraintes au niveau de l’élément spécifiés dans les documents d’indications de message PIP comme paramètres de configuration de processus. Composants d’exécution utilisent la configuration de processus pour déterminer comment traiter un PIP spécifique.  
@@ -71,4 +71,4 @@ Processus d’Interface RosettaNet partenaires (PIP) définissent des processus 
 ## <a name="see-also"></a>Voir aussi  
  [BizTalk Accelerator for RosettaNet ajoutée à BizTalk Server](../../adapters-and-accelerators/accelerator-rosettanet/what-biztalk-accelerator-for-rosettanet-adds-to-biztalk-server.md)   
  [Accords de partenariat commercial](../../adapters-and-accelerators/accelerator-rosettanet/trading-partner-agreements.md)   
- [PIP de RosettaNet](../../adapters-and-accelerators/accelerator-rosettanet/rosettanet-pips.md)
+ [Processus PIP RosettaNet](../../adapters-and-accelerators/accelerator-rosettanet/rosettanet-pips.md)

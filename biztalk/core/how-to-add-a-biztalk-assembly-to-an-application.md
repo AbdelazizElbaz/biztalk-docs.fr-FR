@@ -18,11 +18,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d4bb5435b946ac02b73ce492410af9b4dfe34c8d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9165415ec736c7cf9f4716e8fb183395602a687d
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-add-a-biztalk-assembly-to-an-application"></a>Ajout d'un assembly BizTalk à une application
 Cette rubrique décrit comment ajouter un assembly BizTalk à une application à l'aide de la console Administration de BizTalk Server ou de la ligne de commande.  
@@ -50,7 +50,7 @@ Cette rubrique décrit comment ajouter un assembly BizTalk à une application à
   
 1.  Cliquez sur **Démarrer**, cliquez sur **tous les programmes**, cliquez sur [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], puis cliquez sur **Administration de BizTalk Server**.  
   
-2.  Dans l'arborescence de la console, développez Administration de [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] et le groupe BizTalk contenant l'application à laquelle vous souhaitez ajouter l'assembly BizTalk.  
+2.  Dans l’arborescence de la console, développez Administration de BizTalk Server et le groupe BizTalk contenant l’application à laquelle vous souhaitez ajouter l’assembly BizTalk.  
   
 3.  Développez Applications, ainsi que l'application à laquelle vous souhaitez ajouter l'assembly BizTalk.  
   
@@ -87,4 +87,4 @@ Cette rubrique décrit comment ajouter un assembly BizTalk à une application à
   
 ## <a name="see-also"></a>Voir aussi  
  [Gestion des assemblys BizTalk](../core/managing-biztalk-assemblies.md)   
- [Commande AddResource : L’Assembly BizTalk](../core/addresource-command-biztalk-assembly.md)
+ [Commande AddResource : assembly BizTalk](../core/addresource-command-biztalk-assembly.md)

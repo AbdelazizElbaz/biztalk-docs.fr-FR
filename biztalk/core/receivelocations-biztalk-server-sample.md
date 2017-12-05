@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c907ca8db5b9655d83889b75e7439de46ebeb59c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b5b1a6d6b651ea07430f67667a17029dfe162d4d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="receivelocations-biztalk-server-sample"></a>ReceiveLocations (exemple BizTalk Server)
 L’exemple ReceiveLocations illustre comment créer des emplacements de réception dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environnement à l’aide de la **ExplorerOM** objets d’administration. Pour plus d’informations sur les emplacements de réception en général, consultez [emplacements de réception](../core/receive-locations.md).  
@@ -39,7 +39,7 @@ L’exemple ReceiveLocations illustre comment créer des emplacements de récept
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
  Cet exemple se trouve dans l’emplacement SDK suivant :  
   
- \<*Exemples de chemin d’accès*> \Admin\ExplorerOM\ReceiveLocations  
+ \<*Exemples de chemin d’accès* \> \Admin\ExplorerOM\ReceiveLocations  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -60,7 +60,7 @@ L’exemple ReceiveLocations illustre comment créer des emplacements de récept
   
 1.  Ouvrez une invite de commandes avec des privilèges d'administrateur [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
-2.  Remplacez par le \< *exemples*> \Admin\ExplorerOM\ReceiveLocations\bin\debug active.  
+2.  Remplacez par le \< *exemples*\>\Admin\ExplorerOM\ReceiveLocations\bin\debug active.  
   
 3.  Démarrez ReceiveLocations.exe.  
   

@@ -15,14 +15,14 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4185ea50d86b30df4bb61161bf6927845aff5c09
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9310e9b287f35876a137d13dbcc2d1fa39ba9588
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="step-6-configuring-orchestration-shapes-contoso"></a>Étape 6 : Configuration des formes d’Orchestration (Contoso)
-Dans cette étape, vous configurez les formes orchestration que vous avez ajouté à l’orchestration PrivateResponder que vous avez créé dans [étape 5 : modification de l’Orchestration de processus privé Contoso](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md). Cela inclut la configuration de la communication entre [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] et le système de planification ERP (Enterprise Resource) pour Contoso.  
+Dans cette étape, vous configurez les formes orchestration que vous avez ajouté à l’orchestration PrivateResponder que vous avez créé dans [étape 5 : modification de l’Orchestration de processus privé Contoso](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md). Cela inclut la configuration de la communication entre [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server et le système de planification ERP (Enterprise Resource) pour Contoso.  
   
 ### <a name="to-configure-the-constructmessagepip3a2requestmessage-shape"></a>Pour configurer la forme ConstructMessagePIP3A2RequestMessage  
   
@@ -50,7 +50,7 @@ Dans cette étape, vous configurez les formes orchestration que vous avez ajout�
   
 4.  Dans la fenêtre Propriétés, sélectionnez la propriété **Nom de mappage** , puis cliquez sur le bouton de sélection (**…**) pour ouvrir la boîte de dialogue Configuration de la forme Transformer.  
   
-5.  Dans la boîte de dialogue, cliquez sur **mappage existant**, puis, dans le **zone de nom de mappage complet**, sélectionnez  **\<sélectionner dans l’Assembly référencé >** dans la liste déroulante pour ouvrir la boîte de dialogue Sélectionner le Type d’artefact.  
+5.  Dans la boîte de dialogue, cliquez sur **mappage existant**, puis, dans le **zone de nom de mappage complet**, sélectionnez  **\<sélectionner dans l’Assembly référencé\>**  dans la liste déroulante pour ouvrir la boîte de dialogue Sélectionner le Type d’artefact.  
   
 6.  Dans la boîte de dialogue Sélectionner le type d'artefact, sélectionnez l'assembly **ContosoPriceAndAvailability** dans le volet gauche, sélectionnez le mappage **PIP3A2RequestToContosoPriceRequest** dans le volet droit, puis cliquez sur **OK**.  
   
@@ -177,4 +177,4 @@ Dans cette étape, vous configurez les formes orchestration que vous avez ajout�
 4.  Cliquez sur **OK**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Étape 7 : Création et configuration des Ports](../../adapters-and-accelerators/accelerator-rosettanet/step-7-creating-and-configuring-ports.md)
+ [Étape 7 : Création et configuration des ports](../../adapters-and-accelerators/accelerator-rosettanet/step-7-creating-and-configuring-ports.md)

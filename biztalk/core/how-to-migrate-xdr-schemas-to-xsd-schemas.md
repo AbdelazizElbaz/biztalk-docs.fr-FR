@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7fb0709ca0bd8b67e1549ba740c5810138f61739
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 84bbc42297a10c7d42adb8d778ba19b3b392742c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-migrate-xdr-schemas-to-xsd-schemas"></a>Migration des schémas XDR vers des schémas XSD
 Si vous migrez des schémas à partir d'une version précédente de BizTalk Server, vous devrez convertir vos schémas XDR (XML-Data Reduced) en des schémas de langage XSD (XML Schema Definition). Cette rubrique décrit les étapes nécessaires à cette migration.  
@@ -25,7 +25,7 @@ Si vous migrez des schémas à partir d'une version précédente de BizTalk Serv
   
 1.  Dans **l’Explorateur de solutions**, cliquez sur le projet BizTalk approprié, pointez sur **ajouter**, puis cliquez sur **ajouter les éléments générés**.  
   
-2.  Dans le  **ajouter les éléments générés - \<* BizTalk ProjectName*> ** boîte de dialogue le **modèles** , cliquez sur **générer les schémas**, puis cliquez sur **ajouter**.  
+2.  Dans le  **ajouter les éléments générés - \<* BizTalk ProjectName*\>** boîte de dialogue le **modèles** , cliquez sur **générer Schémas**, puis cliquez sur **ajouter**.  
   
 3.  Dans le **générer les schémas** boîte de dialogue le **type de Document** liste, sélectionnez **schéma XDR**.  
   

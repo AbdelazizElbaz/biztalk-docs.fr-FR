@@ -15,11 +15,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9dab8140c33b5518ec01f28128b5ef15bab0fab6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6d341a7f03c70e1ddcd242d7804b162338798e94
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="message-repair-and-new-submission-troubleshooting"></a>Réparation de message et le dépannage de la nouvelle soumission
 ## <a name="a-repaired-message-cannot-be-submitted-if-the-envelope-schema-is-not-deployed"></a>Impossible de soumettre un message réparé si le schéma d’enveloppe n’est pas déployé.  
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
  Le schéma d’enveloppe n’est pas déployé. Cela est vrai pour n’importe quel MT*xxx* message ou tout message qui a échoué à l’analyse.  
   
 ### <a name="solution"></a>Solution  
- Déployer un schéma d’enveloppe pour chaque schéma de message que vous utilisez (\<lecteur > : \Program Files\Microsoft BizTalk Accelerator pour SWIFT \<version > Message Pack \SWIFT Messages\ A4SWIFT-SRG\<version > \ Catégorie n\MTxxx.xsd) et pour le schéma d’enveloppe non analysé (\<lecteur > : \Program Files\Microsoft BizTalk Accelerator pour SWIFT \<version > Message Pack \SWIFT Messages\ A4SWIFT-SRG\<version > \ Unparsed Message\EnvelopeUnparsedMessage.xsd). Pour plus d’informations, consultez [déploiement des schémas A4SWIFT](../../adapters-and-accelerators/accelerator-swift/deploying-a4swift-schemas.md).  
+ Déployer un schéma d’enveloppe pour chaque schéma de message que vous utilisez (\<lecteur\>: \Program Files\Microsoft BizTalk Accelerator pour SWIFT \<version\> Message Pack \SWIFT Messages\ A4SWIFT-SRG\<version\>\Category n\MTxxx.xsd) et pour le schéma d’enveloppe non analysé (\<lecteur\>: \Program Files\Microsoft BizTalk Accelerator pour SWIFT \<version\> Message Pack \ SWIFT Messages\ A4SWIFT-SRG\<version\>\ Message\EnvelopeUnparsedMessage.xsd non analysée). Pour plus d’informations, consultez [déploiement des schémas A4SWIFT](../../adapters-and-accelerators/accelerator-swift/deploying-a4swift-schemas.md).  
   
 ## <a name="you-cannot-submit-a-fixed-unparsed-message-from-a-mrsr-site-library-named-other-than-unparsed"></a>Vous pouvez envoyer un message non analysé fixe d’une bibliothèque de site MRSR nommé autre que « Unparsed »  
   
@@ -76,7 +76,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  Cliquez sur **Démarrer**, pointez sur **Tous les programmes**, puis sur **Outils d'administration**, puis cliquez sur **Gestionnaire des services Internet (IIS)**.  
   
-2.  Dans le Gestionnaire IIS, développez le   ***\<nom du serveur >* (ordinateur local)** nœud, la **Pools d’applications** nœud et le **Web Sites**nœud. Sous le nœud Sites Web, développez le **Site Web par défaut** nœud.  
+2.  Dans le Gestionnaire IIS, développez le  ***\<nom du serveur\>*  (ordinateur local)** nœud, la **Pools d’applications** nœud et le **Web Sites** nœud. Sous le nœud Sites Web, développez le **Site Web par défaut** nœud.  
   
 3.  Sous le nœud de Site Web par défaut, cliquez sur **A4SWIFT_MRSR**, puis cliquez sur **propriétés**.  
   
@@ -84,7 +84,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  Dans la boîte de dialogue Gestionnaire des services Internet, sous le nœud Pools d’applications, cliquez sur le pool d’applications pour A4SWIFT_MRSR, puis cliquez sur **propriétés**.  
   
-6.  Dans le \<nom pool d’applications > boîte de dialogue Propriétés, cliquez sur le **identité** Remarque. Si **prédéfini** est activé et **Service réseau** est sélectionnée, cliquez sur **Configurable**, entrez votre compte local ou de domaine, puis entrez votre mot de passe. Cliquez sur **OK**.  
+6.  Dans le \<nom du pool\> boîte de dialogue Propriétés, cliquez sur le **identité** Remarque. Si **prédéfini** est activé et **Service réseau** est sélectionnée, cliquez sur **Configurable**, entrez votre compte local ou de domaine, puis entrez votre mot de passe. Cliquez sur **OK**.  
   
 ## <a name="a-message-created-in-mrsr-site-on-a-localized-computer-is-not-processed"></a>Un message créé dans le site MRSR sur un ordinateur localisé n’est pas traité.  
   
@@ -128,7 +128,7 @@ ms.lasthandoff: 09/20/2017
  « Une erreur s’est produite lors de l’exécution de la BicMasterPolicy. Vérifier la stratégie pour les valeurs valides. »  
   
 ### <a name="possible-cause"></a>Cause possible  
- Le nom SQL Server, nom de base de données BIC et valeur de la sécurité intégrée dans le fichier BIC_Master_Policy.xml  *\<lecteur >*: \Program Files\ Microsoft BizTalk Accelerator pour SWIFT \<version > Message Pack\SWIFT Messages\A4SWIFT-SRG\<version > \Base stratégies sont contenus dans des guillemets doubles. Pour activer la validation BIC, vous entrez ces chaînes dans le fichier BIC_Master_Policy.xml par défaut comme décrit dans [l’activation de Validation d’identificateur de Codes de la banque](../../adapters-and-accelerators/accelerator-swift/enabling-validation-of-bank-identifier-codes.md).  
+ Le nom SQL Server, nom de base de données BIC et valeur de la sécurité intégrée dans le fichier BIC_Master_Policy.xml  *\<lecteur\>*: \Program Files\ Microsoft BizTalk Accelerator pour SWIFT \<version \> Message Pack\SWIFT Messages\A4SWIFT-SRG\<version\>\Base stratégies sont contenus dans des guillemets doubles. Pour activer la validation BIC, vous entrez ces chaînes dans le fichier BIC_Master_Policy.xml par défaut comme décrit dans [l’activation de Validation d’identificateur de Codes de la banque](../../adapters-and-accelerators/accelerator-swift/enabling-validation-of-bank-identifier-codes.md).  
   
 ### <a name="solution"></a>Solution  
  Pour réparer la stratégie maître BIC, procédez comme suit :  
@@ -138,7 +138,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  Dans l’éditeur des règles d’entreprise, annuler le déploiement de la Version 1.0 de la BIC_Master_Policy et supprimez le BIC_Master_Policy.  
   
-2.  Dans un éditeur de texte, tel que le bloc-notes, ouvrez BIC_Master_Policy.xml dans  *\<lecteur >*: \Program Files\ Microsoft BizTalk Accelerator pour SWIFT \<version > Message Pack\SWIFT Messages\A4SWIFT-SRG\<version > \Base stratégies. Supprimez les guillemets autour du nom de SQL Server et BIC nom de base de données intégré de valeur de sécurité.  
+2.  Dans un éditeur de texte, tel que le bloc-notes, ouvrez BIC_Master_Policy.xml dans  *\<lecteur\>*: \Program Files\ Microsoft BizTalk Accelerator pour SWIFT \<version\> Pack\SWIFT de Message Messages\A4SWIFT-SRG\<version\>\Base stratégies. Supprimez les guillemets autour du nom de SQL Server et BIC nom de base de données intégré de valeur de sécurité.  
   
 3.  Dans l’Assistant Déploiement du moteur de règles d’entreprise, importer BIC_Master_Policy.xml, puis déployez BIC_Master_Policy.xml.  
   
@@ -220,4 +220,4 @@ ms.lasthandoff: 09/20/2017
  Exécutez le **BTSharePointAdapterWSAppPool** et **DefaultAppPoolApplication** -> et de pool dans Internet Information Services sous le compte d’administrateur.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Résolution des problèmes : Problèmes et résolutions](../../adapters-and-accelerators/accelerator-swift/troubleshooting-issues-and-resolutions1.md)
+ [Dépannage : problèmes et résolutions](../../adapters-and-accelerators/accelerator-swift/troubleshooting-issues-and-resolutions1.md)

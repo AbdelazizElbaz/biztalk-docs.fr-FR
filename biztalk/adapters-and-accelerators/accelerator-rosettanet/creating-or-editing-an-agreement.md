@@ -21,11 +21,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c49ca06bb8177f76344cdb8ff14c612a7aa52a71
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1ea033770504b0e0024a831e0ad8d8727603046e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-or-editing-an-agreement"></a>Création ou modification d’un accord
 Cette rubrique décrit comment créer ou modifier un accord de partenariat commercial. Un accord de partenariat commercial configure la relation entre deux partenaires commerciaux, y compris son identité. le processus d’Interface partenaires (PIP) ; l’action, signaler et synchroniser les URL ; et les protocoles associés.  
@@ -54,9 +54,9 @@ Cette rubrique décrit comment créer ou modifier un accord de partenariat comme
 |**Général**|**Accord de 0 a 1**|Si [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] retournera un message de Notification d’échec (PIP 0 a 1) lorsqu’une défaillance se produit.<br /><br /> Peut être **aucun 0 a 1** (la valeur par défaut) ou **0 a 1**.<br /><br /> Doit être **aucun 0 a 1** pour CIDX.|  
 |**Général**|**Utilisation**|Indique le type de scénario qui utilise le contrat.<br /><br /> Peut être **Test** (la valeur par défaut) ou **Production**.|  
 |**Général**<br /><br /> (**Adaptateur d’application** zone)|**Nom de l’assembly**|Le nom de fichier de la ApplicationAdapter que vous pouvez sélectionner le système de fichiers.<br /><br /> La valeur par défaut est une chaîne vide.|  
-|**Général**<br /><br /> (**Module adaptateur**)|**Nom de classe**|Le nom de la classe qui [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] utilisera à partir de la ApplicationAdapter.<br /><br /> La valeur par défaut est \<none >.|  
+|**Général**<br /><br /> (**Module adaptateur**)|**Nom de classe**|Le nom de la classe qui [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] utilisera à partir de la ApplicationAdapter.<br /><br /> La valeur par défaut est \<aucun\>.|  
 |**Général**<br /><br /> (**Zone de carte de validation**)|**Nom de l’assembly**|Le nom de fichier de la ValidationAdapter que vous pouvez sélectionner le système de fichiers. La valeur par défaut est une chaîne vide.|  
-|**Général**<br /><br /> (**Zone de carte de validation**)|**Nom de classe**|Le nom de la classe qui [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] utilisera à partir de la ValidationAdapter.<br /><br /> La valeur par défaut est \<none >.|  
+|**Général**<br /><br /> (**Zone de carte de validation**)|**Nom de classe**|Le nom de la classe qui [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] utilisera à partir de la ValidationAdapter.<br /><br /> La valeur par défaut est \<aucun\>.|  
 |**Ports**|**URL d’action**|L’URL à laquelle l’organisation d’origine transmet un message d’action. Par exemple : http://FabrikamServer/BTARNApp/RNIFReceive.aspx.<br /><br /> Il s’agit d’un champ obligatoire si les conditions suivantes sont réunies :<br /><br /> -La **est synchrone** paramètre de configuration de processus est `False`.<br /><br /> -La **est la seule Action** paramètre de configuration de processus est `True`.<br /><br /> -La **rôle d’accueil** paramètre d’accord est **initiateur**.<br /><br /> Cela est également un champ obligatoire si les conditions suivantes sont remplies (dans ce cas, le **URL de Signal** est également requis) :<br /><br /> -La **est synchrone** paramètre de configuration de processus est `False`.<br /><br /> -La **est la seule Action** paramètre de configuration de processus est `False`.<br /><br /> -Vous devez entrer un URI valide dans ce champ, qui commence par « http://domain » ou « https://domain ».|  
 |**Ports**|**URL de signal**|L’URL à laquelle l’organisation d’origine transmet un message de signal. Par exemple : http://FabrikamServer/BTARNApp/RNIFReceive.aspx.<br /><br /> Il s’agit d’un champ obligatoire si les conditions suivantes sont réunies :<br /><br /> -La **est synchrone** paramètre de configuration de processus est `False`.<br /><br /> -La **est la seule Action** paramètre de configuration de processus est `True`.<br /><br /> -La **rôle d’accueil** paramètre d’accord est **répondeur**.<br /><br /> Cela est également un champ obligatoire si les conditions suivantes sont remplies (dans ce cas, le **URL d’Action** est également requis) :<br /><br /> -La **est synchrone** paramètre de configuration de processus est `False`.<br /><br /> -La **est la seule Action** paramètre de configuration de processus est `False`.<br /><br /> Vous devez entrer un URI valide dans ce champ, qui commence par « http://domain » ou « https://domain ».|  
 |**Ports**|**URL de synchronisation**|L’URL que l’organisation d’origine utilise pour établir une connexion via l’adaptateur HTTP. Par exemple : http://FabrikamServer/BTARNApp/RNIFReceive.aspx.<br /><br /> Il s’agit d’un champ obligatoire si les conditions suivantes sont réunies :<br /><br /> -La **est synchrone** paramètre de configuration de processus est `True`.<br /><br /> -La **rôle d’accueil** paramètre d’accord est **initiateur**.<br /><br /> Vous devez entrer un URI valide dans ce champ, qui commence par « http://domain » ou « https://domain ».|  
@@ -96,10 +96,10 @@ Cette rubrique décrit comment créer ou modifier un accord de partenariat comme
   
 3.  Avec le bouton droit de l’accord que vous souhaitez modifier, puis cliquez sur **propriétés**.  
   
-4.  Dans le  **\<**  *nom de l’accord*  **>**  boîte de dialogue des propriétés du **général** et  **Propriétés de contact** onglets, modifier les paramètres en fonction des besoins. Pour plus d'informations sur ces paramètres, consultez le tableau précédent.  
+4.  Dans le  **\<**  *nom de l’accord*  **\>**  boîte de dialogue des propriétés du **général** et  **Propriétés de contact** onglets, modifier les paramètres en fonction des besoins. Pour plus d'informations sur ces paramètres, consultez le tableau précédent.  
   
 5.  Cliquez sur **OK**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Gérer la configuration, les certificats, les bases de données et la sécurité](manage-configuration-certificates-databases-security.md)   
- [Administration de la Configuration de BTARN](../../adapters-and-accelerators/accelerator-rosettanet/administering-the-btarn-configuration.md)
+ [Administration de la configuration de BTARN](../../adapters-and-accelerators/accelerator-rosettanet/administering-the-btarn-configuration.md)

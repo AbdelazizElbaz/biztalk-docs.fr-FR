@@ -16,11 +16,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c295834f00781cc92a6aa47d01374c80b485149d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0aff501e5bf59d6ae22d9ad2a00e0e5ff5ad4605
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="install-custom-rfcs-for-the-data-provider-for-sap"></a>Installez les RFC personnalisés pour le fournisseur de données pour SAP
 Installez les RFC personnalisés si vous souhaitez utiliser le fournisseur de données .NET Framework pour mySAP Business Suite pour accéder au système SAP.
@@ -31,7 +31,7 @@ Le [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] req
   
 -   Exécutez l’opération EXECQUERY, le [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] requiert Z_EXECUTE_SAP_QUERY RFC.  
   
-Pour effectuer ces opérations sur le système SAP, vous devez installer ces RFC personnalisés sur le système SAP. Si vous avez choisi d’installer le [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] avec la [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)], le programme d’installation copie le transport RFC pour les [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] comme un fichier compressé (customRFC.zip) sur le système sur lequel vous installez l’adaptateur. Le fichier zip est généralement installé sur  *\<lecteur d’installation > : \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Microsoft .NET Framework Data Provider pour mySAP Business Suite*. 
+Pour effectuer ces opérations sur le système SAP, vous devez installer ces RFC personnalisés sur le système SAP. Si vous avez choisi d’installer le [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] avec la [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)], le programme d’installation copie le transport RFC pour les [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] comme un fichier compressé (customRFC.zip) sur le système sur lequel vous installez l’adaptateur. Le fichier zip est généralement installé sur  *\<lecteur d’installation\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Microsoft .NET Framework Data Provider pour mySAP Business Suite*. 
   
  Après avoir extrait le fichier zip, vous trouverez les quatre fichiers de données, deux après l’attribution de noms de modèle K9 *. BI1 (par exemple, semblable à K900534. BI1) et les deux autres suivant le modèle R9\*. BI1 (par exemple, semblable à R900534. BI1).  
   
@@ -217,11 +217,11 @@ Vérification de l’Installation de la RFC personnalisés
   
     |||  
     |-|-|  
-    |OUT_TABLEHEADER|\<Les métadonnées générales T000 >|  
-    |OUT_TECHNICALSETTINGS|\<Les métadonnées de niveau de base de données techniques T000 >|  
-    |OUT_RECORDLENGTH|\<varie selon la version SAP >|  
-    |OUT_RECORDCOUNT|\<Vérifiez le nombre de clients dans votre système avec SE16 sur T000 >|  
-    |OUT_ZDATATABLE|\<vérifier ce résultat avec les données sources à l’aide de SE 16 sur T000 >|  
+    |OUT_TABLEHEADER|\<Métadonnées générales T000\>|  
+    |OUT_TECHNICALSETTINGS|\<Métadonnées de niveau de base de données techniques T000\>|  
+    |OUT_RECORDLENGTH|\<varie selon la version SAP\>|  
+    |OUT_RECORDCOUNT|\<Vérifiez le nombre de clients dans votre système avec SE16 sur T000\>|  
+    |OUT_ZDATATABLE|\<vérifier ce résultat avec les données sources à l’aide de SE 16 sur T000\>|  
     |OUT_RETURN_TAB|S 001 réussite|  
   
 ## <a name="remove-the-rfc-for-the-data-provider-for-sap"></a>Supprimer la demande de changement pour le fournisseur de données pour SAP  
@@ -241,5 +241,5 @@ Vérification de l’Installation de la RFC personnalisés
      Pour obtenir une assistance, contactez votre administrateur de base de SAP.  
      
 ## <a name="next"></a>Suivant
-[Comprendre l’adaptateur BizTalk pour mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/understand-biztalk-adapter-for-mysap-business-suite.md)  
-[Didacticiels de l’adaptateur SAP](../../adapters-and-accelerators/adapter-sap/sap-adapter-tutorials.md)
+[Présentation de l’adaptateur BizTalk pour mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/understand-biztalk-adapter-for-mysap-business-suite.md)  
+[Didacticiels sur l’adaptateur SAP](../../adapters-and-accelerators/adapter-sap/sap-adapter-tutorials.md)

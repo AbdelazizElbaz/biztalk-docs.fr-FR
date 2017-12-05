@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9912e47f56dcf9c8ccc42af944616858ec9b93fe
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fa1a98f97cba9f46b43b92128a6585ad18afb894
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3b-add-an-interact-receive-location-for-the-interact-real-time-scenario"></a>Étape 3 b : ajouter un interagir emplacement de réception pour l’interaction scénario en temps réel
 Complète [étape 3 a : ajouter un emplacement de réception de fichier pour le scénario en temps réel interagir](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-interact-real-time-scenario.md) avant de commencer cette étape.
@@ -41,14 +41,14 @@ Complète [étape 3 a : ajouter un emplacement de réception de fichier pour le
     |------------------|--------------------|  
     |**Mot de passe**|Tapez le mot de passe que vous utilisez pour vous connecter à des trous. Pour plus d’informations, consultez l’aide d’anti-COULURE.|  
     |**Nom d'utilisateur**|Tapez le nom d’utilisateur que vous utilisez pour vous connecter à des trous.|  
-    |**Nom de l’application**|Le serveur de type \< *nom de l’Interface*> pour les trous zone jeu de routage.|  
+    |**Nom de l’application**|Le serveur de type \< *nom de l’Interface* \> pour les trous zone jeu de routage.|  
     |**Mode de chiffrement**|Dans la liste déroulante, sélectionnez **avancé**.|  
     |**LogMessageBody**|Dans la liste déroulante, sélectionnez **FALSE**. **Remarque :** si vous affectez la valeur TRUE, il conserve le corps du message dans la base de données de suivi. Toutefois, pour des raisons de sécurité, le corps du message ne peut jamais affiché dans le portail BAM.|  
     |**LogMessages**|Dans la liste déroulante, sélectionnez **TRUE**. Ainsi, les événements de message capturées et de suivi dans le portail BAM.|  
     |**Format de message**|Dans la liste déroulante, sélectionnez **InterActMessage**.|  
     |**MemberRef**|Dans la liste déroulante, sélectionnez **ResponseHeader**.|  
     |**Indicateur de non répudiation**|Dans la liste déroulante, sélectionnez **FALSE**.|  
-    |**Répondeur**|Tapez la commande appropriée \< *ResponderDN*> chaîne, en fonction de votre configuration avec SWIFT.|  
+    |**Répondeur**|Tapez la commande appropriée \< *ResponderDN* \> chaîne, en fonction de votre configuration avec SWIFT.|  
     |**ResponseCrypto**|Dans la liste déroulante, sélectionnez **FALSE**.|  
     |**Délai d'expiration**|Type d’un nombre approprié de secondes avant le délai de connexion doit se produire.|  
     |**Acquisition de file d’attente**|Laissez la valeur par défaut de cette propriété. Cette propriété est utilisée pour les scénarios de stockage et de transfert.|  
@@ -74,4 +74,4 @@ Complète [étape 3 a : ajouter un emplacement de réception de fichier pour le
  [Étape 3 a : ajouter un fichier emplacement de réception pour l’interaction du scénario en temps réel](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-interact-real-time-scenario.md)   
  [Étape 3c : ajouter un Port d’envoi FILE pour capturer le Message Sw:HandleRequest pour l’interaction du scénario en temps réel](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-interact-real-time-scenario.md)   
  [Étape 3D : ajouter un Port d’envoi FILE pour capturer le Message Sw:HandleResponse pour l’interaction du scénario en temps réel](../../adapters-and-accelerators/fileact-interact/step-3d-add-file-send-port-to-get-sw-handleresponse-message-for-interact.md)   
- [Étape 3E : ajouter un Port d’envoi interagir pour l’interaction scénario en temps réel](../../adapters-and-accelerators/fileact-interact/step-3e-add-an-interact-send-port-for-the-interact-real-time-scenario.md)
+ [Étape 3E : Ajouter un port d’envoi INTERACT pour le scénario en temps réel InterAct](../../adapters-and-accelerators/fileact-interact/step-3e-add-an-interact-send-port-for-the-interact-real-time-scenario.md)

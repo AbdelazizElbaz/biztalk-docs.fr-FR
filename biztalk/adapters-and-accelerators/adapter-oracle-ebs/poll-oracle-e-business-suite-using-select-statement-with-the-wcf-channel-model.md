@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 71f689b035f926e0fd5bbdaa159e1450fbad92b8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1164cb59bf7fe0e168834f60364cd82f871b3ae0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="poll-oracle-e-business-suite-using-select-statement-with-the-wcf-channel-model"></a>Interrogation Oracle E-Business Suite à l’aide d’une instruction SELECT avec le modèle de canal WCF
 Vous pouvez configurer le [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] pour recevoir des messages de modification de données périodiques à l’aide d’une instruction SELECT pour l’interrogation de façon permanente les tables d’interface, interface, des vues, des tables et des vues dans Oracle E-Business Suite. Vous pouvez spécifier une instruction SELECT comme une instruction d’interrogation de l’adaptateur s’exécute périodiquement pour Oracle E-Business Suite. Vous pouvez également spécifier un bloc de code après interrogation PL/SQL que l’adaptateur s’exécute après l’exécution de l’instruction d’interrogation.  
@@ -184,7 +184,7 @@ Vous pouvez configurer le [!INCLUDE[adapteroraclebusinessshort](../../includes/a
 ### <a name="example"></a>Exemple  
  L’exemple suivant montre une application d’interrogation qui interroge la table d’interface MS_SAMPLE_EMPLOYEE. Le **PollingInput** propriété contient l’instruction select qui lit toutes les données de la table MS_SAMPLE_EMPLOYEE et l’instruction de sondage post supprime toutes les données de la même table. Le message d’interrogation est écrit dans `C:\PollingOutput.xml`.  
   
- Les messages suivants d’interrogation ne contient pas d’enregistrements jusqu'à ce que davantage de données est ajouté à la table d’interface MS_SAMPLE_EMPLOYEE. Vous pouvez le faire en exécutant le script insert_apps_data.sql fourni avec les exemples. Une fois que vous exécutez ce script, l’opération d’interrogation suivante permet d’extraire les nouveaux enregistrements insérés dans la table. La carte continuera d’interroger jusqu'à ce que vous fermez l’hôte de service en appuyant sur \<retourner >.  
+ Les messages suivants d’interrogation ne contient pas d’enregistrements jusqu'à ce que davantage de données est ajouté à la table d’interface MS_SAMPLE_EMPLOYEE. Vous pouvez le faire en exécutant le script insert_apps_data.sql fourni avec les exemples. Une fois que vous exécutez ce script, l’opération d’interrogation suivante permet d’extraire les nouveaux enregistrements insérés dans la table. La carte continuera d’interroger jusqu'à ce que vous fermez l’hôte de service en appuyant sur \<retourner\>.  
   
 ```  
 using System;  

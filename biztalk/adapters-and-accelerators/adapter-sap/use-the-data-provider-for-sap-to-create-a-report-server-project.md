@@ -12,17 +12,17 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: caa006e8c8e22b10d0bdc58a781de30a0623bb79
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e9c7905fc7114feeca8b53589e1aa32a09495ca1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="use-the-data-provider-for-sap-to-create-a-report-server-project"></a>Utiliser le fournisseur de données pour SAP pour créer un projet Report Server
 Vous devez créer un serveur de rapports de projet, à l’aide de la [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)], afin de générer des rapports pour les données disponibles dans un système SAP. Cette rubrique fournit des instructions sur la création d’un projet Report Server.  
   
 ## <a name="prerequisites"></a>Conditions préalables  
- Avant d’effectuer les procédures fournies dans cette rubrique, assurez-vous que vous avez installé le [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] lors de l’installation du [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] dans le cadre de la [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] installation. Pour plus d’informations sur [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] installation, consultez le guide d’installation disponible à l’adresse \< *lecteur d’installation*> : \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents.  
+ Avant d’effectuer les procédures fournies dans cette rubrique, assurez-vous que vous avez installé le [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] lors de l’installation du [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] dans le cadre de la [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] installation. Pour plus d’informations sur [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] installation, consultez le guide d’installation disponible à l’adresse \< *lecteur d’installation*\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents.  
   
 ### <a name="to-create-a-report-server-project"></a>Pour créer un projet Report Server  
   

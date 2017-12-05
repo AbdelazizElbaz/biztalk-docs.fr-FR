@@ -16,11 +16,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e445bc1d2fb4dcea719c33a336eec88554e20962
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d2f2de6a4c4cae93db90f0fb2cfc79321bfc7b3e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configure-the-file-adapter"></a>Configurer l’adaptateur de fichier
 Comment configurer l’adaptateur de fichier, de lire les recommandations de sécurité et d’afficher les autorisations requises.
@@ -84,7 +84,7 @@ Le compte d’utilisateur instance hôte utilisé par le gestionnaire requiert l
     |--------------|----------------|  
     |**Dossier de réception**|Obligatoire. Entrez le chemin d’accès au dossier sur le système de fichiers, le partage réseau, ou le partage de fichiers Azure où le fichier de gestionnaire de réception lit les fichiers. Vous pouvez entrer le chemin d’accès directement dans le **dossier de réception** texte zone, ou sélectionnez-le dans le système de fichiers à l’aide de la **Parcourir** bouton. Lorsque vous recherchez le dossier, vous pouvez également créer un dossier à l’aide **créer un nouveau dossier**.<br /><br /> Si vous utilisez un partage de stockage de fichiers Azure, entrez `\\yourfilestoragename.file.core.windows.net\yourfilesharename`. <br /><br />**Type :** chaîne <br/><br/>**Remarque :** ne définissez pas le **dossier de réception** propriété vers un dossier qui utilise le système de fichiers distribués NT avec un lien symbolique. Si vous utilisez un système de fichiers distribués NT, vous ne pouvez utiliser les dossiers des chemins d’accès direct au réseau dans l’adaptateur File les emplacements de réception. <br /><br /> Pour connaître les restrictions sur cette propriété, consultez [Restrictions relatives à la configuration de l’adaptateur de fichier](../core/restrictions-when-configuring-the-file-adapter.md). <br/><br/>**Remarque :** l’URI pour un envoi de port ou de réception emplacement ne peut pas dépasser 256 caractères.|  
     |**Masque de fichier**|Obligatoire. Indiquer le masque des fichiers. Ce masque peut contenir la valeur générique standard «\*».<br /><br /> **Valeur par défaut :** \*.xml<br /><br /> **Type :** chaîne<br /><br /> Pour connaître les restrictions sur cette propriété, consultez [Restrictions relatives à la configuration de l’adaptateur de fichier](../core/restrictions-when-configuring-the-file-adapter.md).|  
-    |**Adresse publique**|Indiquer l'adresse publique de cet emplacement. BizTalk Server expose cette adresse aux partenaires externes.<br /><br /> Si cette propriété n'est pas spécifiée, le moteur d'exécution la remplace par :<br /><br /> file://\<*dossier de réception*>/\<*masque de fichier*><br /><br /> La valeur de cette propriété exige un préfixe d'adaptateur.<br /><br /> **Type :** chaîne<br /><br /> **Longueur minimale :** 0<br /><br /> **Longueur maximale :** 256|  
+    |**Adresse publique**|Indiquer l'adresse publique de cet emplacement. BizTalk Server expose cette adresse aux partenaires externes.<br /><br /> Si cette propriété n'est pas spécifiée, le moteur d'exécution la remplace par :<br /><br /> file://\<*dossier de réception*\>/\<*masque de fichier*\><br /><br /> La valeur de cette propriété exige un préfixe d'adaptateur.<br /><br /> **Type :** chaîne<br /><br /> **Longueur minimale :** 0<br /><br /> **Longueur maximale :** 256|  
     |**Nombre de tentatives**|Indiquer le nombre de tentatives d'accès à l'emplacement de réception sur le partage réseau en cas d'indisponibilité temporaire.<br /><br /> **Valeur par défaut :** 5<br /><br /> **Type :** Long<br /><br /> **Valeur minimale :** 0<br /><br /> **Valeur maximale :** MAX_LONG|  
     |**Intervalle (min)**|Indiquer l'intervalle (en minutes) devant séparer chaque tentative d'accès à l'emplacement de réception sur le partage réseau en cas d'indisponibilité temporaire.<br /><br /> **Valeur par défaut :** 5 minutes<br /><br /> **Type :** Long<br /><br /> **Valeur minimale :** 0<br /><br /> **Valeur maximale :** MAX_LONG|  
   
@@ -176,4 +176,4 @@ Le compte d’utilisateur instance hôte utilisé par le gestionnaire requiert l
 ## <a name="see-also"></a>Voir aussi
 
  [Ports pour les serveurs de l’envoi et la réception](../core/ports-for-the-receive-and-send-servers.md)   
- [Droits d’utilisateur de sécurité minimales](../core/minimum-security-user-rights.md)
+ [Autorisations de sécurité minimales](../core/minimum-security-user-rights.md)

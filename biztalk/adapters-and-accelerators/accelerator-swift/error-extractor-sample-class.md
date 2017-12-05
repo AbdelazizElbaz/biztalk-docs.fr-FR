@@ -15,11 +15,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0389f2fdb3f9ccb07bcc8ec9e4cdb1ec510927a2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 53ceb305dcd30164e385022f66140fcaa626b133
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="error-extractor-sample-class"></a>Exemple d’erreur extracteur, classe
 Le [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] désassembleur sérialise les erreurs à un objet XML et l’attache l’objet XML à la section de l’erreur d’un message à parties multiples. Le désassembleur publie alors le message ayant échoué sur la base de données MessageBox comme il le ferait un message valide. Par conséquent, Échec de détails de l’erreur transporter les messages dans la base de données MessageBox. Vous pouvez utiliser l’exemple de classe de l’extracteur d’erreur pour extraire les détails de l’erreur à partir d’un message ayant échoué et générer un fichier qui contient les détails de l’erreur et un autre fichier avec le message d’origine.  
@@ -50,7 +50,7 @@ SWIFTErrorExtractor.ErrorExtractor.GetErrorPartAsString(XLANGMessage xm);
 SWIFTErrorExtractor.ErrorExtractor.WriteToFile(string filePath, string message);  
 ```  
   
- Le programme d’installation A4SWIFT installe erreur extracteur exemple de classe (SWIFTErrorExtractor.dll) en tant que partie du Kit de développement A4SWIFT dans \< *lecteur*> : \Program Files\Microsoft BizTalk Accelerator pour SWIFT\SDK\Tutorial\ SWIFTErrorExtractor. Ce dossier inclut également le code source pour l’exemple de classe (ErrorExtractor.cs).  
+ Le programme d’installation A4SWIFT installe erreur extracteur exemple de classe (SWIFTErrorExtractor.dll) en tant que partie du Kit de développement A4SWIFT dans \< *lecteur*\>: \Program Files\Microsoft BizTalk Accelerator pour SWIFT\SDK\Tutorial\ SWIFTErrorExtractor. Ce dossier inclut également le code source pour l’exemple de classe (ErrorExtractor.cs).  
   
  Pour appeler SWIFTErrorExtractor.dll à partir de l’orchestration, vous devez publier le fichier .dll dans le global assembly cache.  
   

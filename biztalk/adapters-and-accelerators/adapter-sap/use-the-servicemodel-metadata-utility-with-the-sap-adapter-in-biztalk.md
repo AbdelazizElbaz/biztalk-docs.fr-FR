@@ -16,11 +16,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ac86d1aa254de81c2778ce1a2c1f0e63c1c1e1ee
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 15c4612db6e3cde4e46385b1c5d1810fbb00eb70
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-the-servicemodel-metadata-utility-tool-with-the-biztalk-adapter-for-mysap-business-suite"></a>À l’aide de l’utilitaire de métadonnées ServiceModel avec l’adaptateur BizTalk pour mySAP Business Suite
 Vous pouvez utiliser le service Model Metadata Utility Tool (svcutil.exe) pour générer une classe de client WCF ou un contrat de service WCF (interface) pour les opérations qui les [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] expose. Après avoir exécuté svcutil.exe pour générer une classe de client WCF ou d’un contrat de service WCF, vous pouvez inclure le fichier généré dans votre code et créer des instances de la classe générée ou implémenter un service WCF à partir de l’interface générée pour effectuer des opérations sur SAP système.  
@@ -43,9 +43,9 @@ Vous pouvez utiliser le service Model Metadata Utility Tool (svcutil.exe) pour g
   
     ```  
     <configuration>  
-      \<system.serviceModel>  
+      <system.serviceModel>  
         <client>  
-          \<!-- the name should match the required scheme of the WS-Metadata Exchange endpoint   
+          <!-- the name should match the required scheme of the WS-Metadata Exchange endpoint   
           and the contract should be "IMetadataExchange" -->  
           <endpoint name="sap"  
                     binding="sapBinding"  
@@ -58,7 +58,7 @@ Vous pouvez utiliser le service Model Metadata Utility Tool (svcutil.exe) pour g
           </sapBinding>  
         </bindings>  
   
-      \</system.serviceModel>  
+      </system.serviceModel>  
   
     </configuration>  
     ```  

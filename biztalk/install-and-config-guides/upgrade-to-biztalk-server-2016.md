@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a139b625ff1c31fb0dce71c08779856f0dc8b685
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 39b5b6b6da7d97d3c763e5f45f215aa03d13c77c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="upgrade-to-biztalk-server-2016"></a>Mise à niveau vers BizTalk Server 2016
 Mise à niveau vers [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] à partir de [!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)] ou de BizTalk Server 2013.
@@ -152,9 +152,9 @@ La fonctionnalité Messagerie de base de données SQL Server est nécessaire pou
 - **Valeur maxTimeout** : Si votre base de données BAM est volumineuse, mettez à jour la valeur `maxTimeout` des transactions distribuées dans le fichier machine.config en spécifiant :  
 
     ```
-    \<system.transactions>
+    <system.transactions>
        <machineSettings maxTimeout="23:59:59" />
-    \</system.transactions>
+    </system.transactions>
     ```
 
 - **Suivi BAM activé avec l’Éditeur de modèle de suivi** : Après la mise à niveau, les modèles de suivi précédemment déployés sont mis à niveau ; cependant, les configurations des intercepteurs associés ne le sont pas. Chaque nouveau message BAM intercepté peut conserver les références à BizTalk Server 2013 R2/2013. Pour mettre à niveau les configurations d'intercepteurs associées, utilisez l'Éditeur de modèle de suivi pour extraire le profil de l'activité, puis réappliquer le profil.
@@ -282,7 +282,7 @@ Vous ne pouvez pas restaurer [!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md
 - **EXE et BRE personnalisés** : Si un fichier exécutable managé personnalisé fait référence à l’assembly du moteur des règles d’entreprise dans BizTalk Server 2010, ajoutez ce qui suit au fichier de configuration de l’application pour exécuter le processus dans .NET Framework 2.0.
 
     ```
-    \<?xml version="1.0" encoding="Windows-1252"?>
+    <?xml version="1.0" encoding="Windows-1252"?>
     <configuration> 
      <startup>
       <supportedRuntime version="v2.0.50727" />

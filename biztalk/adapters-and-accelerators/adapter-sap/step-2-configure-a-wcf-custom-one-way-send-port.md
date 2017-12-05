@@ -15,11 +15,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f332e11aef32285fff84f0fe5f65834b1b20fc04
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8aab14799076d3f774130b357ab90c5ed5335f4a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-configure-a-wcf-custom-one-way-send-port"></a>Étape 2 : Configurer un Port d’envoi unidirectionnel WCF-Custom
 ![Étape 2 sur 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")  
@@ -69,7 +69,7 @@ ms.lasthandoff: 09/20/2017
   
         ```  
         <SendIdoc xmlns="http://Microsoft.LobServices.Sap/2007/03/Idoc/">  
-        <idocData>\<bts-msg-body xmlns="http://www.microsoft.com/schemas/bts2007" encoding="string"/></idocData>  
+        <idocData><bts-msg-body xmlns="http://www.microsoft.com/schemas/bts2007" encoding="string"/></idocData>  
         </SendIdoc>  
         ```  
   
@@ -105,4 +105,4 @@ ms.lasthandoff: 09/20/2017
  Vous avez maintenant terminé la migration de votre projet BizTalk de vPrev à un projet BizTalk qui envoie des IDOC à un système SAP à l’aide de la station de travail WCF [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]. Vous devez maintenant tester l’application migrée de BizTalk en envoyant un IDOC de fichier plat, comme décrit dans [étape 3 : tester l’Application migrée](../../adapters-and-accelerators/adapter-sap/step-3-test-the-migrated-application2.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Didacticiel 3 : Migration d’un projet BizTalk SAP envoi IDOC](../../adapters-and-accelerators/adapter-sap/tutorial-3-migrating-an-sap-send-idoc-biztalk-project.md)
+ [Didacticiel 3 : Migration d’un projet BizTalk SAP d’envoi d’un IDOC](../../adapters-and-accelerators/adapter-sap/tutorial-3-migrating-an-sap-send-idoc-biztalk-project.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6245ec69e1c8224ccbe9a39c3c2be9eea9237ee8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 011de667e06f4275fe75a28b6566a6bc393cf841
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-enable-bam-tracking-in-an-esb-itinerary-service"></a>Comment : activer le suivi BAM sur un Service d’itinéraire ESB
 ## <a name="goal"></a>Objectif  
@@ -46,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-an-esb-itinerary-dsl-model"></a>Pour créer un modèle DSL de la feuille de route ESB  
   
-1.  Dans [!INCLUDE[vs2010](../includes/vs2010-md.md)], ouvrez C:\HowTos\Patterns\Patterns.sln.  
+1.  Dans Visual Studio, ouvrez C:\HowTos\Patterns\Patterns.sln.  
   
 2.  Dans l’Explorateur de solutions, cliquez sur le **ItineraryLibrary** de projet, pointez sur **ajouter**, puis cliquez sur **nouvel itinéraire**.  
   
@@ -145,7 +145,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-modify-the-itinerary"></a>Pour modifier la feuille de route  
   
-1.  Dans [!INCLUDE[vs2010](../includes/vs2010-md.md)], ouvrez C:\HowTos\Patterns\Patterns.sln.  
+1.  Dans Visual Studio, ouvrez C:\HowTos\Patterns\Patterns.sln.  
   
 2.  Dans l’Explorateur de solutions, double-cliquez sur **BamTracking.itinerary**.  
   
@@ -209,6 +209,6 @@ ms.lasthandoff: 09/20/2017
   
 -   [Activités de développement](../esb-toolkit/development-activities.md)  
   
--   [Modèles de routage de messages](../esb-toolkit/message-routing-patterns.md)  
+-   [Modèles de routage des messages](../esb-toolkit/message-routing-patterns.md)  
   
--   [À l’aide de la résolution dynamique et le routage](../esb-toolkit/using-dynamic-resolution-and-routing.md)
+-   [Utilisation de la résolution et du routage dynamiques](../esb-toolkit/using-dynamic-resolution-and-routing.md)

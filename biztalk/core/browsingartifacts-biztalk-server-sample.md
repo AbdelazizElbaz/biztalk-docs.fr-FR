@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 32e29f945d9d20cd2ea998e0fa05eda6b52174ee
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b7a9d88e0a3c765e3bd143b966bf699eb7730d8f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="browsingartifacts-biztalk-server-sample"></a>BrowsingArtifacts (exemple BizTalk Server)
 L'exemple BrowsingArtifacts illustre l'énumération des attributs et artefacts BizTalk.  
@@ -33,7 +33,7 @@ L'exemple BrowsingArtifacts illustre l'énumération des attributs et artefacts 
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
  L'exemple se trouve dans l'emplacement SDK suivant :  
   
- \<*Exemples de chemin d’accès*> \Admin\ExplorerOM\BrowsingArtifacts  
+ \<*Exemples de chemin d’accès*\>\Admin\ExplorerOM\BrowsingArtifacts  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -54,7 +54,7 @@ L'exemple BrowsingArtifacts illustre l'énumération des attributs et artefacts 
   
 1.  Ouvrez une fenêtre de commande, puis accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \Admin\ExplorerOM\BrowsingArtifacts\bin\Debug  
+     \<*Exemples de chemin d’accès*\>\Admin\ExplorerOM\BrowsingArtifacts\bin\Debug  
   
 2.  Exécutez le fichier BrowsingArtifacts.exe.  
   

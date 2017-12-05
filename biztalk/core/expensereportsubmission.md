@@ -15,11 +15,11 @@ caps.latest.revision: "29"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 993d1874a95da2501636f941f1436fec894e87f6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c450e2e39f2498722f9eb8d09430294927cb05f8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="expensereportsubmission"></a>ExpenseReportSubmission
 L'exemple ExpenseReportSubmission montre comment soumettre un document à une orchestration [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] à partir d'une application client riche comme Microsoft Excel.  
@@ -41,7 +41,7 @@ L'exemple ExpenseReportSubmission montre comment soumettre un document à une or
 4.  En pratique, au delà de cet exemple, une autre application, comme un système planification des ressources de l'entreprise (ERP), récupère ensuite le fichier de tableur pour un traitement ultérieur.  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
- \<*Exemples de chemin d’accès*> \AdaptersUsage\ExpenseReportSubmission\  
+ \<*Exemples de chemin d’accès*\>\AdaptersUsage\ExpenseReportSubmission\  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -60,7 +60,7 @@ L'exemple ExpenseReportSubmission montre comment soumettre un document à une or
   
 1.  Dans une fenêtre de commande, accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \AdaptersUsage\ExpenseReportSubmission  
+     \<*Exemples de chemin d’accès*\>\AdaptersUsage\ExpenseReportSubmission  
   
 2.  Exécutez le fichier Setup.bat, qui effectue les actions suivantes :  
   
@@ -126,7 +126,7 @@ L'exemple ExpenseReportSubmission montre comment soumettre un document à une or
   
     4.  Cliquez sur **ajouter** pour afficher les **ajouter le fichier** boîte de dialogue.  
   
-    5.  Cliquez sur **Parcourir** pour afficher les **ouvrir** boîte de dialogue zone et accédez à  *\<dossier d’Installation de BizTalk Server >*\HttpReceive\BTSHTTPReceive.dll et Cliquez sur **ouvrir**, puis cliquez sur **OK**.  
+    5.  Cliquez sur **Parcourir** pour afficher les **ouvrir** boîte de dialogue zone et accédez à  *\<dossier d’Installation de BizTalk Server\>*\HttpReceive\ BTSHTTPReceive.dll, puis cliquez sur **ouvrir**, puis cliquez sur **OK**.  
   
     6.  Activer l’option pour **définir l’état de l’extension à autorisée** et cliquez sur **OK**.  
   
@@ -175,4 +175,4 @@ L'exemple ExpenseReportSubmission montre comment soumettre un document à une or
 |503 Service non disponible, et la plupart des autres codes HTTP dans les plages 400 et 500|Assurez-vous que l'hôte est en cours d'exécution et que le service est déployé, relié au bon port, et démarré.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Exemples d’adaptateurs - utilisation](../core/adapter-samples-usage.md)
+ [Exemples d’adaptateurs- Utilisation](../core/adapter-samples-usage.md)

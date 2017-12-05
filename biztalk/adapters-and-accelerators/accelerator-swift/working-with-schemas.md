@@ -15,16 +15,16 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e1c12936f2883bfdbcdcd80d300d2ab5a9ff58d2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 404beaeb617f7a6c0c5e3fc4ddc40126e6b97990
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="working-with-schemas"></a>Utilisation de schémas
 Les schémas fournis dans [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] sont le [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] représentation XSD de la société pour les messages FIN de télécommunication financières Interbank (SWIFT) dans le monde entier. Chaque type de message possède son propre schéma, y compris l’en-tête SWIFT et le code de fin SWIFT (format d’échange). Ce schéma est suffisant pour envoyer ou recevoir un message SWIFT. Ces schémas sont une combinaison unique des enregistrements délimités et positionnels, en fournissant une représentation XML détaillée des structures FIN de fichier plat.  
   
- La plupart des clients SWIFT utilisent un sous-ensemble relativement faible des messages SWIFT FIN. Pour implémenter une solution pour ces clients, vous pouvez créer un projet de schéma BizTalk (comme dans [Module 2 : ajout d’un nouveau projet de schémas](../../adapters-and-accelerators/accelerator-swift/module-2-adding-a-new-schemas-project.md) du didacticiel A4SWIFT). Ajoutez les schémas de message approprié (MT*xxx*.xsd) à partir de \\\ programme Files\Microsoft BizTalk Accelerator pour SWIFT \<version > MessagePack\SWIFT Messages\A4SWIFT-SRG\<version > \ Répertoire de xyy x\MT catégorie, où x est le premier chiffre de type de message FIN et xyy est le type de message de trois chiffres pour le message.  
+ La plupart des clients SWIFT utilisent un sous-ensemble relativement faible des messages SWIFT FIN. Pour implémenter une solution pour ces clients, vous pouvez créer un projet de schéma BizTalk (comme dans [Module 2 : ajout d’un nouveau projet de schémas](../../adapters-and-accelerators/accelerator-swift/module-2-adding-a-new-schemas-project.md) du didacticiel A4SWIFT). Ajoutez les schémas de message approprié (MT*xxx*.xsd) à partir de \\\ programme Files\Microsoft BizTalk Accelerator pour SWIFT \<version\> MessagePack\SWIFT Messages\A4SWIFT-SRG\< version\>\Category x\MT xyy répertoire, où x est le premier chiffre de la FIN du type de message et xyy est le type de message de trois chiffres pour le message.  
   
  Vous pouvez ajouter plusieurs schémas pour le même projet. Pour maintenir la facilité de gestion, vous devez ajouter des schémas de message plus de 20 par projet. Vous devez également ajouter les schémas courants et de base pour le projet. Si vous avez déjà déployé les schémas courants et de base, vous devez faire référence à leur assembly, plutôt que de les déployer. Cette section décrit ces schémas. Les schémas de message prêts à utiliser comme pour les messages envoyés au réseau SWIFT et messages reçus de SWIFT.  
   
@@ -62,8 +62,8 @@ Les schémas fournis dans [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] 
   
  Contenu de cette section :  
   
--   [Base et des schémas courants](../../adapters-and-accelerators/accelerator-swift/base-and-common-schemas.md)  
+-   [Schémas de base et schémas communs](../../adapters-and-accelerators/accelerator-swift/base-and-common-schemas.md)  
   
--   [SWIFT schémas d’en-tête et code de fin](../../adapters-and-accelerators/accelerator-swift/swift-header-and-trailer-schemas.md)  
+-   [Schémas d’en-tête et de code de fin SWIFT](../../adapters-and-accelerators/accelerator-swift/swift-header-and-trailer-schemas.md)  
   
--   [Conventions d’affectation de noms de schéma SWIFT](../../adapters-and-accelerators/accelerator-swift/swift-schema-naming-conventions.md)
+-   [Conventions de nommage des schémas SWIFT](../../adapters-and-accelerators/accelerator-swift/swift-schema-naming-conventions.md)

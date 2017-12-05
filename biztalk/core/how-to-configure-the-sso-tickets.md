@@ -16,11 +16,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ef78c47c3da88945573a70e85580c90e05b1d225
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c3b19d14a35d42c4a46bf9527a97f5bf749b875f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-the-sso-tickets"></a>Comment configurer les Tickets d’authentification unique
 Vous pouvez utiliser le composant logiciel enfichable MMC ou la ligne de commande pour contrôler entièrement le comportement de ticket du système d'authentification unique, y compris l'autorisation des tickets et leur validation par le système.  
@@ -57,9 +57,9 @@ Vous pouvez utiliser le composant logiciel enfichable MMC ou la ligne de command
   
 1.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur >*: \Program Files\Enterprise Single Sign-On.  
+2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur\>*: \Program Files\Enterprise Single Sign-On.  
   
-3.  Type **ssomanage – tickets \<autorisée Oui/non >  *\<valider oui/non >***, où  *\<autorisée Oui/non >* Indique si les tickets seront autorisés ou non, et  *\<valider oui/non >* indique si les tickets devront être validés après leur échange.  
+3.  Type **ssomanage – tickets \<autorisée Oui/non\>  *\<valider oui/non\>***, où  *\<autorisée Oui/non \>*  indique si les tickets seront autorisés ou non, et  *\<valider oui/non\>*  indique si les tickets devront être validés après leur échange .  
   
     > [!NOTE]
     >  Vous pouvez utiliser les mots Yes, No, On ou Off pour indiquer s'il convient d'autoriser ou de valider des tickets. Ces mots, dont la casse est indifférente, doivent être utilisés indépendamment de vos paramètres de langue.  
@@ -69,4 +69,4 @@ Vous pouvez utiliser le composant logiciel enfichable MMC ou la ligne de command
   
 ## <a name="see-also"></a>Voir aussi  
  [Présentation de l’authentification unique](../core/understanding-sso.md)   
- [À l’aide de l’authentification unique](../core/using-sso.md)
+ [Utilisation de l’authentification unique](../core/using-sso.md)

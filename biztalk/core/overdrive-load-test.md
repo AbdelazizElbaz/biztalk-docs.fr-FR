@@ -7,19 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- overdrive load test
-- LoadGen tool, overdrive load test
 ms.assetid: 0d16d0a8-4255-4f5a-86a2-26cc11bb9a70
 caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 54ea40d17bdb59fa3fcdc2db31a18b3286b70659
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cff4592c58dd165a85d63666958721231cfcbd4c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="overdrive-load-test"></a>Test Overdrive de chargement
 Les informations contenues dans cette rubrique fait référence aux tests décrits dans [des scénarios de Test pour mesurer le débit maximal acceptable du moteur de](../core/test-scenarios-for-measuring-mst-of-the-engine.md).  
@@ -27,7 +24,7 @@ Les informations contenues dans cette rubrique fait référence aux tests décri
  L'outil de génération de charge, LoadGen 2007, vous permet de simuler de lourdes charges sur un système BizTalk Server.  
   
 > [!NOTE]
->  L’outil LoadGen 2007 est disponible pour téléchargement à l’adresse [http://go.microsoft.com/fwlink/?LinkId=59841](http://go.microsoft.com/fwlink/?LinkId=59841). La version précédente de cet outil, l’outil de génération de charge de BizTalk Server 2004 est disponible pour téléchargement à l’adresse [http://go.microsoft.com/fwlink/?linkid=108999](http://go.microsoft.com/fwlink/?linkid=108999).  
+>  Télécharger [LoadGen](https://www.microsoft.com/download/details.aspx?id=14925). La version précédente de cet outil, l’outil de génération de charge de BizTalk Server 2004 est disponible pour téléchargement à l’adresse [http://go.microsoft.com/fwlink/?linkid=108999](http://go.microsoft.com/fwlink/?linkid=108999).  
   
  Pour simuler un système fonctionnant en permanence au-delà de ses capacités, LoadGen 2007 a été configuré de sorte à envoyer environ 410 msgs/s, à savoir 120 msgs/s de plus que le débit maximal acceptable mesuré.  
   

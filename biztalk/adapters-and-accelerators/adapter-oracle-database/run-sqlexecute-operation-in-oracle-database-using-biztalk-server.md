@@ -15,11 +15,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa982b938fc4fcb9096ca30209938b3b635d9fb8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 02a5da0a5c6ff3560d265759d3c5320e55d7d621
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="run-sqlexecute-operation-in-oracle-database-using-biztalk-server"></a>Exécuter l’opération SQLEXECUTE dans la base de données Oracle à l’aide de BizTalk Server
 Le [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] permet aux clients d’exécuter l’instruction SQL paramétrée sur une base de données Oracle. Pour prendre en charge ces opérations, le [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] met en évidence une opération SQLEXECUTE. Opération SQLEXECUTE prend en charge un bloc de paramètre d’entrée composé des jeux de paramètres qui vous permettent d’exécuter la même instruction SQL une fois pour chaque jeu. L’opération SQLEXECUTE renvoie les résultats de l’instruction SQL dans un jeu d’enregistrements générique. Pour plus d’informations sur l’opération, consultez [opération SQLEXECUTE dans la base de données Oracle](../../adapters-and-accelerators/adapter-oracle-database/sqlexecute-operation-in-oracle-database.md). Pour plus d’informations sur la structure du message SOAP pour l’opération SQLEXECUTE, consultez [des schémas de Message pour l’opération SQLEXECUTE](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-the-sqlexecute-operation.md).  
@@ -179,7 +179,7 @@ Le [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] per
  La réponse à partir de la base de données Oracle pour le message de demande ci-dessus est la suivante :  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <SQLEXECUTEResponse xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SQLEXECUTE">  
   <SQLEXECUTEResult>  
     <GenRecordRow xmlns="http://Microsoft.LobServices.OracleDB/2007/03">  

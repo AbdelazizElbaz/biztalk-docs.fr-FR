@@ -16,11 +16,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fc8d369eb24d1a239f1c305ab74230eab0f32d67
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 808d5395452733d43337e0883b306b7757a7da08
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-add-accounts-to-a-view"></a>Ajout de comptes à une vue
 Les administrateurs utilisent la **-ajouter un compte** commande pour associer des utilisateurs à des vues BAM et protéger les vues de la feuille de calcul Excel BAM à partir de tout accès non autorisé. Lorsque les vues BAM sont enregistrées par des utilisateurs, elles référencent une chaîne de connexion SQL masquée dans le classeur. Le classeur est protégé, mais vous devez vous assurer que le document est également protégé.  
@@ -38,7 +38,7 @@ Les administrateurs utilisent la **-ajouter un compte** commande pour associer d
   
 2.  Accédez au dossier des suivis en tapant [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\Tracking lorsque vous y êtes invité. Appuyez sur **Entrée**.  
   
-3.  Type **bm ajouter-account - AccountName :\<nom du compte >-affichage :\<nom de la vue >**.  
+3.  Type **bm ajouter-account - AccountName :\<nom de compte\> -View :\<nom de la vue\>**.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -47,4 +47,4 @@ Les administrateurs utilisent la **-ajouter un compte** commande pour associer d
   
 ## <a name="see-also"></a>Voir aussi  
  [Gestion de l’Infrastructure dynamique BAM](../core/managing-the-bam-dynamic-infrastructure.md)   
- [Utilitaire de gestion BAM](../core/bam-management-utility.md)
+ [Utilitaire de gestion de l’analyse BAM](../core/bam-management-utility.md)

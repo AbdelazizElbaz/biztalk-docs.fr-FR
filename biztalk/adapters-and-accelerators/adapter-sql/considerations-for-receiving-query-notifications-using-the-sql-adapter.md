@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 20bb7019a993e47137ec2e4f71334c5b6b3f663c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 02d7aa9eadc5e639e56cc526bfd5763abc432a4f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="considerations-for-receiving-query-notifications-using-the-sql-adapter"></a>Considérations relatives à la réception de Notifications de requête à l’aide de l’adaptateur SQL
 Cette rubrique fournit quelques considérations et les meilleures pratiques à prendre en compte lors de l’utilisation du [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] pour recevoir des notifications de requête à partir d’une base de données SQL Server.  
@@ -28,7 +28,7 @@ Cette rubrique fournit quelques considérations et les meilleures pratiques à p
   
 -   Le message de notification pour une opération n’est pas affecté par le nombre d’enregistrements concernés par cette opération. Par exemple, quel que soit le nombre d’enregistrements insérés, mis à jour ou supprimées dans une table de base de données SQL Server, le client de l’adaptateur ne reçoit qu’un seul message de notification.  
   
--   Nous recommandons que l’application cliente de carte contiennent la logique pour interpréter le type de notification reçue de SQL Server. Le type de notification peut être déterminé en extrayant les informations à partir, le  **\<Info >** élément du message de notification a été reçue. Voici un exemple d’un message de notification reçu pour une opération d’insertion :  
+-   Nous recommandons que l’application cliente de carte contiennent la logique pour interpréter le type de notification reçue de SQL Server. Le type de notification peut être déterminé en extrayant les informations à partir, le  **\<Info\>**  élément du message de notification a été reçue. Voici un exemple d’un message de notification reçu pour une opération d’insertion :  
   
     ```  
     <Notification xmlns="http://schemas.microsoft.com/Sql/2008/05/Notification/">  
@@ -38,7 +38,7 @@ Cette rubrique fournit quelques considérations et les meilleures pratiques à p
     </Notification>  
     ```  
   
-     Notez la valeur dans la  **\<Info >** élément. Cette valeur fournit des informations sur l’opération pour laquelle le message de notification a été reçu. Votre application doit avoir les fonctionnalités pour extraire la valeur dans la  **\<Info >** élément, puis en fonction de la valeur, effectuez les tâches suivantes. La rubrique [traiter les Messages de Notification pour effectuer des tâches spécifiques dans SQL à l’aide de BizTalk Server](../../adapters-and-accelerators/adapter-sql/process-notification-messages-to-complete-specific-tasks-in-sql-using-biztalk.md) contient des instructions sur la façon d’extraire la valeur dans la  **\<Info >** élément. Un didacticiel détaillé qui effectue des tâches similaires est également disponible à l’adresse [didacticiel 2 : employé - processus de bon de commande à l’aide de l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md).  
+     Notez la valeur dans la  **\<Info\>**  élément. Cette valeur fournit des informations sur l’opération pour laquelle le message de notification a été reçu. Votre application doit avoir les fonctionnalités pour extraire la valeur dans la  **\<Info\>**  élément, puis en fonction de la valeur, effectuez les tâches suivantes. La rubrique [traiter les Messages de Notification pour effectuer des tâches spécifiques dans SQL à l’aide de BizTalk Server](../../adapters-and-accelerators/adapter-sql/process-notification-messages-to-complete-specific-tasks-in-sql-using-biztalk.md) contient des instructions sur la façon d’extraire la valeur dans la  **\<Info\>**  élément . Un didacticiel détaillé qui effectue des tâches similaires est également disponible à l’adresse [didacticiel 2 : employé - processus de bon de commande à l’aide de l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md).  
   
 -   Dans l’idéal, une fois que l’application cliente reçoit une notification pour un enregistrement spécifique, cet enregistrement doit être mis à jour afin que les notifications supplémentaires ne sont pas reçues. Par exemple, considérez un **employé** table qui a un **état** colonne. Pour tous les nouveaux enregistrements insérés dans le **employé** table, la valeur de la **état** colonne est toujours « 0 » et la table ressemblera à ce qui suit :  
   

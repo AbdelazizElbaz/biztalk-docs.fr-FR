@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e0db0f74f7f3799e0058d60b8d30c09c99d99cc3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 891f636a5380eda7db676559194618915213dc37
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="wcf-webhttp-adapter"></a>Adaptateur WCF-WebHttp
 [!INCLUDE[btsCoName](../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] utilise le **WCF-WebHttp** adaptateur pour envoyer des messages aux services RESTful. Le **WCF-WebHttp** envoyer l’adaptateur envoie des messages HTTP à un service à partir d’un message BizTalk. L’emplacement de réception reçoit des messages en provenance d’un service RESTful. Pour les requêtes GET et DELETE, l’adaptateur n’utilise aucune charge. Pour les requêtes POST et PUT, l’adaptateur utilise le corps du message BizTalk dans le contenu et la charge HTTP.  
@@ -118,7 +118,7 @@ Cette rubrique montre comment créer l’emplacement de réception et envoi du p
     |**Certificat client - empreinte**|Spécifier l’empreinte du certificat X.509 pour l’authentification de ce port d’envoi auprès du point de terminaison. Vous pouvez sélectionner l’empreinte numérique en accédant à la **mon** stocker dans le **utilisateur actuel** emplacement avec le **Parcourir** bouton. **Remarque :** vous devez installer le certificat client dans le **utilisateur actuel** emplacement du compte d’utilisateur pour le Gestionnaire d’envoi hébergeant ce port d’envoi. <br /><br /> Longueur minimale : 0<br /><br /> Longueur maximale : 40<br /><br /> La valeur par défaut est une chaîne vide.|  
     |**Certificat de service - empreinte**|Spécifier l’empreinte du certificat X.509 pour l’authentification du service auquel ce port d’envoi envoie des messages. Vous pouvez sélectionner l’empreinte, accédez à la **autres personnes** stocker dans le **ordinateur Local** emplacement avec le **Parcourir** bouton.<br /><br /> Longueur minimale : 0<br /><br /> Longueur maximale : 40<br /><br /> La valeur par défaut est une chaîne vide.|  
     |**Informations d’identification utilisateur**|Spécifiez les informations d'identification pour l'envoi des messages. Vous pouvez spécifier la propriété en cliquant sur le **modifier** bouton. Vous devez définir les informations d’identification si vous avez sélectionné le **nom d’utilisateur** est définie sur **type d’informations d’identification de client de Message**.<br /><br /> La valeur par défaut est **n’utilisez pas l’authentification unique sur**.|  
-    |**Utiliser l’identité du service ACS**|S’applique aux [!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)] et BizTalk Server 2013. <br /><br />Activez cette case à cocher et cliquez sur **modifier** et fournir les valeurs suivantes pour s’authentifier auprès du Service Bus. Cela est nécessaire uniquement lorsque appeler un reste d'interface Bus des services d’entités associées.<br /><br /> -   **Uri STS du Service de contrôle d’accès** – définissez cette propriété sur `https://<Namespace>-sb.accesscontrol.windows.net/`, où \<namespace > est votre espace de noms Service Bus.<br />-   **Nom de l’émetteur** – spécifiez le nom de l’émetteur. Généralement, il s'agit du propriétaire.<br />-   **Clé de l’émetteur** – spécifiez la clé de l’émetteur.|  
+    |**Utiliser l’identité du service ACS**|S’applique aux [!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)] et BizTalk Server 2013. <br /><br />Activez cette case à cocher et cliquez sur **modifier** et fournir les valeurs suivantes pour s’authentifier auprès du Service Bus. Cela est nécessaire uniquement lorsque appeler un reste d'interface Bus des services d’entités associées.<br /><br /> -   **Uri STS du Service de contrôle d’accès** – définissez cette propriété sur `https://<Namespace>-sb.accesscontrol.windows.net/`, où \<espace de noms\> est votre espace de noms Service Bus.<br />-   **Nom de l’émetteur** – spécifiez le nom de l’émetteur. Généralement, il s'agit du propriétaire.<br />-   **Clé de l’émetteur** – spécifiez la clé de l’émetteur.|  
     |**Informations de connexion de service Bus** | Nouveau commençant par [!INCLUDE[bts2016_md](../includes/bts2016-md.md)].<br/><br/>Choisir d’utiliser la Signature d’accès partagé (SAS) ou le Service Access Control (ACS) de l’espace de noms Service Bus. <br/><br/>Sélectionnez une option, puis **modifier** pour entrer les informations de clé :<br/><br/> - **Signature d’accès partagé** : entrez le nom de clé d’accès et la clé d’accès. Les deux valeurs sont répertoriées dans le [portail Azure](https://portal.azure.com).<br/> - **Le Service de contrôle d’accès** : entrez l’URI STS (`https://<yourNamespace>-sb.accesscontrol.windows.net/`), nom de l’émetteur et la clé de l’émetteur. Utilisation de Windows PowerShell pour extraire ces valeurs, comme décrit dans [adaptateur SB-Messaging](../core/sb-messaging-adapter.md). |
   
 6.  Dans le **comportement** onglet, configurez le comportement de point de terminaison pour ce port d’envoi. 
@@ -186,6 +186,6 @@ Vous pouvez ajouter un proxy pour le port d’envoi ou le Gestionnaire d’envoi
 ## <a name="see-also"></a>Voir aussi  
 [Adaptateur SB-Messaging](../core/sb-messaging-adapter.md)
 
-[À l’aide des adaptateurs](../core/using-adapters.md)
+[Utilisation des adaptateurs](../core/using-adapters.md)
 
-[Quelles sont les adaptateurs WCF ?](../core/what-are-the-wcf-adapters.md)
+[Présentation des adaptateurs WCF](../core/what-are-the-wcf-adapters.md)

@@ -12,16 +12,16 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dc85d47da81d2d7425c7db4aad90ea32389f7d84
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dc21b37ae80299bf5ddd78d1ca48331e1e369e78
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="use-namespaces-with-the-wsdl-proxy-in-the-wcf-lob-adapter-sdk"></a>Utiliser des espaces de noms avec le Proxy WSDL dans WCF LOB Adapter SDK
 Le [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)] génère WSDL et des proxys pour un adaptateur à l’aide des valeurs fournies par le développeur à l’aide de la [!INCLUDE[afdevwizardnamelong](../../includes/afdevwizardnamelong-md.md)] ou spécifié dans le code par une modification de la variable privée SERVICENAMESPACE et/ou `Namespace` propriété de l’adaptateur.  
   
- Les types de schéma et les éléments définis dans le \<WSDL : types >\<schéma > utilisent le {OperationNamespace} par défaut. Si un type particulier a un TypeNamespace substituée définie dans le **TypeMetadata** de l’objet, cet espace de noms est utilisé pour le type complexe et/ou ou définition de l’élément.  
+ Les types de schéma et les éléments définis dans le \<WSDL : types\>\<schéma\> utilisent le {OperationNamespace} par défaut. Si un type particulier a un TypeNamespace substituée définie dans le **TypeMetadata** de l’objet, cet espace de noms est utilisé pour le type complexe et/ou ou définition de l’élément.  
   
 ## <a name="impact-on-wsdl"></a>Impact sur WSDL  
  Le tableau suivant montre comment les différents espaces de noms dans un adaptateur personnalisé affectent le WSDL correspondant. Dans la table, ~ {OperationNamespace} est le mappage d’espace de noms de classe d’un URI ; par exemple, si {OperationNamespace} est « myscheme://a.b/c », ~ {OperationNamespace} sera myscheme.a.b.c.  
@@ -29,11 +29,11 @@ Le [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)] génèr
 |Construction WSDL|Syntaxe|  
 |--------------------|------------|  
 |TargetNamespace WSDL,<br /><br /> Xmlns:TS|{Personnalisé} Adapter.Namespace|  
-|\<WSDL : portType >|{schéma de}. ~ {OperationNamespace}|  
+|\<WSDL : portType\>|{schéma de}. ~ {OperationNamespace}|  
 |Nom du Message d’entrée WSDL|{schéma de}. ~ {OperationNamespace} _ {NomOpération} _InputMessage|  
 |Nom de Message de sortie WSDL|{schéma de}. ~ {OperationNamespace} _ {NomOpération} _OutputMessage|  
-|\<WSDL : types >\<schéma > targetNamespace|{schéma}  :// {OperationNamespace}|  
-|\<élément >\<complexType >|Utilisez {TypeNamespace} si sa valeur n’est pas null ou vide.|  
+|\<WSDL\>\<schéma\> targetNamespace|{schéma}  :// {OperationNamespace}|  
+|\<élément\>\<complexType\>|Utilisez {TypeNamespace} si sa valeur n’est pas null ou vide.|  
   
 ## <a name="impact-on-proxy"></a>Impact sur le serveur Proxy  
  Trois attributs différents dans le proxy sont affectées par les espaces de noms :  

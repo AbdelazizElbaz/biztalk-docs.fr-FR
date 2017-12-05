@@ -12,14 +12,14 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 79cfe3ec0a2fa1fdd8f6241d1be9326a396b95cd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 193b47e5c4f918bacbf1b573d6aaed5326d7cfdc
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="admin-operationsom-biztalk-server-samples-folder"></a>Admin-OperationsOM (dossier d’exemples BizTalk Server)
-Le dossier Admin\OperationsOM du Kit de développement logiciel (SDK) de Microsoft [!INCLUDE[prague](../includes/prague-md.md)] inclut plusieurs exemples. Cette section fournit des informations détaillées sur les fonctionnalités utilisées dans chaque exemple d'administration de modèle objet BizTalk Opérations, des instructions sur la création et l'exécution des exemples et les résultats attendus.  
+Microsoft BizTalk Server inclut les exemples dans le dossier Admin\OperationsOM du kit de développement logiciel (SDK). Cette section fournit des informations détaillées sur les fonctionnalités utilisées dans chaque exemple d'administration de modèle objet BizTalk Opérations, des instructions sur la création et l'exécution des exemples et les résultats attendus.  
   
 > [!WARNING]
 >  Les scripts de déploiement devenus inutiles après le déploiement doivent être supprimés. Les scripts d'administration et autres scripts conservés doivent être sécurisés à l'aide de listes de contrôle d'accès et étroitement surveillés.  

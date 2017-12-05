@@ -17,11 +17,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9d181f557d64152ff79f70b09986c05727076121
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1c111a0c10f4316e7b29e873adf53a8e6b9a9acd
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="reporting-errors-from-pipeline-components"></a>Rapports d’erreurs à partir des composants de Pipeline
 Les composants de pipeline signalent les erreurs de deux manières :  
@@ -35,7 +35,7 @@ Les composants de pipeline signalent les erreurs de deux manières :
   
  Le moteur de messagerie utilise le **Message** et **Source** propriétés de la **Exception** objet pour signaler une erreur. Le message suivant est écrit dans le journal des événements :  
   
- « Échec de l’exécution de la [de réception &#124; envoi] pipeline : \<nom du pipeline > Source : \<Source > [emplacement de réception &#124; Port d’envoi :] \<emplacement &#124; nom de port > raison : \<Message >. »  
+ « Échec de l’exécution de la [de réception &#124; envoi] pipeline : \<nom du pipeline\> Source : \<Source\> [emplacement de réception &#124; Port d’envoi :] \<emplacement &#124; nom de port\> raison : \<Message\>. »  
   
 ## <a name="reporting-errors-from-com-pipeline-components"></a>Signalement d'erreurs par les composants de pipeline COM  
  Pou signaler une erreur, les composants de pipeline COM effectuent les actions suivantes :  
@@ -46,7 +46,7 @@ Les composants de pipeline signalent les erreurs de deux manières :
   
  Le moteur de messagerie utilise le **GetSource** et **GetDescription** propriétés de la **IErrorInfo** objet pour signaler une erreur. Si la source n'est pas définie, le nom du composant est utilisé. Si la description n’est pas définie ou la totalité de **ErrorInfo** objet n’est pas défini, le HRESULT retourné est signalé au lieu de la description. Le message suivant est écrit dans le journal des événements :  
   
- « Échec de l’exécution de la [de réception &#124; envoi] pipeline : \<nom du pipeline > Source : \<GetSource > [emplacement de réception &#124; Port d’envoi :] \<emplacement &#124; nom de port > raison : \<GetDescription ou HRESULT >. »  
+ « Échec de l’exécution de la [de réception &#124; envoi] pipeline : \<nom du pipeline\> Source : \<GetSource\> [emplacement de réception &#124; Port d’envoi :] \<emplacement &#124; nom de port\> raison : \<GetDescription ou HRESULT\>. »  
   
 ## <a name="see-also"></a>Voir aussi  
- [Développement de composants de Pipeline personnalisé](../core/developing-custom-pipeline-components.md)
+ [Développement des composants de pipeline personnalisés](../core/developing-custom-pipeline-components.md)

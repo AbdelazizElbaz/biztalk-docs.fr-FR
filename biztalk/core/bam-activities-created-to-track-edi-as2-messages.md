@@ -12,14 +12,14 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f255f2bb71ecef857860fdd5c512f4320b35cc95
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c7da7ac08a8f26e21b2c648670730db136392471
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="bam-activities-created-to-track-edi-as2-messages"></a>Activités BAM créées pour le suivi des Messages EDI-AS2
-[!INCLUDE[prague](../includes/prague-md.md)] inclut les activités BAM qui ont été créées pour les rapports d'état EDI et AS2. Ces activités déterminent les données qui sont affichées dans les rapports d'état. Cette rubrique décrit les activités BAM et les champs qui y sont définis, ainsi que les valeurs d'énumération qui sont définies pour certains champs dans les activités BAM.  
+BizTalk Server inclut les activités BAM qui ont été créées pour les rapports d’état EDI et AS2. Ces activités déterminent les données qui sont affichées dans les rapports d'état. Cette rubrique décrit les activités BAM et les champs qui y sont définis, ainsi que les valeurs d'énumération qui sont définies pour certains champs dans les activités BAM.  
   
  Vous pouvez créer un rapport d'état personnalisé en créant une activité BAM personnalisée. L'activité personnalisée peut reposer sur l'une des activités standard. Vous pouvez aussi afficher le contenu du message dans le rapport d'état personnalisé en interrogeant la table EdiMessageContent dans la base de données BizTalkDTADb. Pour plus d'informations, reportez-vous à la section « Interrogation de la table EdiMessageContent » ci-dessous.  
   

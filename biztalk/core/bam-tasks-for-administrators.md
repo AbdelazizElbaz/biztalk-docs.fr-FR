@@ -12,17 +12,17 @@ caps.latest.revision: "33"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4b529a0510ee56a92d3957a84a91d635666016f1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1b35585d4e3b3ed90df983c8a18f6833ce8aa6bf
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="bam-tasks-for-administrators"></a>Tâches BAM pour les administrateurs 
 Cette rubrique décrit les tâches typiques que les administrateurs BAM sont amenés à effectuer dans le cadre de la gestion de l'infrastructure BAM.  
   
 ## <a name="configuring-bam"></a>Configuration de l'analyse BAM  
- La configuration initiale de l'analyse BAM est effectuée avec l'Assistant Configuration de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Cet Assistant permet aux administrateurs d'effectuer les tâches suivantes :  
+ La configuration initiale de l’analyse BAM est effectuée à l’aide de l’Assistant Configuration de BizTalk Server. Cet Assistant permet aux administrateurs d'effectuer les tâches suivantes :  
   
 -   Activer les outils d'analyse BAM  
   
@@ -52,25 +52,28 @@ Cette rubrique décrit les tâches typiques que les administrateurs BAM sont ame
   
  Pour plus d'informations sur l'utilisation de l'Assistant Configuration, voir les rubriques suivantes :  
   
--   [Configuration des alertes BAM à l’aide de la Configuration de BizTalk Server](http://msdn.microsoft.com/library/04d79f8c-9e7f-4ba8-83ce-f79c33fb8e60)  
+-   [Configurer les alertes BAM](../install-and-config-guides/configure-biztalk-server.md)  
   
--   [Configuration des outils BAM à l’aide de la Configuration de BizTalk Server](http://msdn.microsoft.com/library/075a1627-5bc2-488c-a88c-42c86cc8c3bb)  
+-   [Configurez les outils BAM](../install-and-config-guides/configure-biztalk-server.md)  
   
--   [Configuration du portail BAM à l’aide de la Configuration de BizTalk Server](http://msdn.microsoft.com/library/8af7cccb-823e-48bd-9743-dfbba4bafa11)  
+-   [Configurez le portail BAM](../install-and-config-guides/configure-biztalk-server.md)  
   
-### <a name="distributed-notification-services"></a>Services de notification distribués  
- Configurer l'analyse BAM pour qu'elle s'exécute dans un environnement distribué permet d'améliorer les performances en matière de traitement des alertes et des notifications. Lorsque vous configurez l'analyse BAM, les rôles Fournisseur, Générateur et Distributeur des services de notification doivent se trouver sur des ordinateurs différents. En outre, vous devez installer les services de notification dans un environnement multiserveur.  
+### <a name="distributed-notification-services---sql-server-2008-r2-only"></a>Services de Notification distribués - uniquement SQL Server 2008 R2
+Configurer l'analyse BAM pour qu'elle s'exécute dans un environnement distribué permet d'améliorer les performances en matière de traitement des alertes et des notifications. Lorsque vous configurez l'analyse BAM, les rôles Fournisseur, Générateur et Distributeur des services de notification doivent se trouver sur des ordinateurs différents. En outre, vous devez installer les services de notification dans un environnement multiserveur.  
+
+> [!NOTE]
+> À compter de SQL Server 2012, BizTalk Server utilise la messagerie de base de données SQL. Par conséquent, si vous utilisez SQL Server 2012 ou une version ultérieure, il ne s’applique pas à vous. Consultez [alertes BAM](../install-and-config-guides/prepare-your-computer-for-installation.md#BKMK_BAMAlerts) pour obtenir des conseils.
   
 ##### <a name="to-configure-distributed-notification-services"></a>Pour configurer les services de notification distribués  
   
-1.  Installez [!INCLUDE[btsSQLServer2005](../includes/btssqlserver2005-md.md)] Notification Services. Pour plus d’informations sur les Services de Notification distribués, consultez le [!INCLUDE[btsSQLServer2005](../includes/btssqlserver2005-md.md)] documentation des Services de Notification à l’adresse [http://go.microsoft.com/fwlink/?LinkId=68095](http://go.microsoft.com/fwlink/?LinkId=68095).  
+1.  Installer SQL Server Notification Services. 
   
     > [!NOTE]
-    >  Notification Services n'est pas inclus dans [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]. Si vous utilisez [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)], installez [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Notification Services lorsque vous installez [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] en sélectionnant le **fournisseur d’alertes BAM pour les Services de Notification SQL** sous **supplémentaires Logiciel** sur la **Installation des composants** page de l’Assistant installation.  
+    >  Notification Services n’est pas inclus dans SQL Server. Installer SQL Server Notification Services lorsque vous installez BizTalk Server en sélectionnant le **fournisseur d’alertes BAM pour les Services de Notification SQL** sous **des logiciels supplémentaires** sur la  **Installation des composants** page de l’Assistant installation.  
   
-2.  Pour créer la notification BAM service sur chaque ordinateur dans l’environnement distribué, exécutez C:\Program Files\Microsoft SQL Server\90\NotificationServices\9.0.242\bin\nscontrol register - nom bamalerts-server \<nom du serveur > - service - serviceusername \<compte_utilisateur_alertes > - servicepassword \<mot_de_passe > à partir d’une invite de commandes.  
+2.  Pour créer la notification BAM service sur chaque ordinateur dans l’environnement distribué, exécutez C:\Program Files\Microsoft SQL Server\90\NotificationServices\9.0.242\bin\nscontrol register - nom bamalerts-server \<nom du serveur\> - service - serviceusername \<compte_utilisateur_alertes\> - servicepassword \<mot_de_passe\> à partir d’une invite de commandes.  
   
-3.  Modifiez le fichier de configuration de l'infrastructure BAM sur chaque ordinateur en cours de configuration pour les services de notification distribués. Pour obtenir le fichier de configuration, utilisez la **bm.exe get-config - FileName :\<fichier de sortie >** commande.  
+3.  Modifiez le fichier de configuration de l'infrastructure BAM sur chaque ordinateur en cours de configuration pour les services de notification distribués. Pour obtenir le fichier de configuration, utilisez la **bm.exe get-config - FileName :\<fichier de sortie\>**  commande.  
   
 4.  Modifiez le fichier de configuration pour qu'il référence les serveurs de l'environnement des services de notification distribués :  
   
@@ -80,11 +83,11 @@ Cette rubrique décrit les tâches typiques que les administrateurs BAM sont ame
     <Property Name="DistributorServerName">PFIDWYUK</Property>  
     ```  
   
-5.  Utilisez la mise à jour de bm.exe-config - FileName :\<le fichier de configuration > pour mettre à jour la configuration BAM.  
+5.  Utilisez la mise à jour de bm.exe-config - FileName :\<le fichier de configuration\> pour mettre à jour la configuration BAM.  
   
 6.  Redémarrez les services de notification sur tous les ordinateurs de l'environnement distribué.  
   
- Pour plus d’informations sur l’installation de BAM dans un environnement multiserveur, consultez [Installation Guides Related to BizTalk Server 2013](http://go.microsoft.com/fwlink/p/?LinkID=269582) et [installer et configurer analyse BAM (Business Activity Monitoring) d’un à plusieurs ordinateurs Environnement](http://go.microsoft.com/fwlink/p/?LinkID=208597).  
+ Pour plus d’informations sur l’installation de BAM dans un environnement multiserveur, consultez [installer et configurer analyse BAM (Business Activity Monitoring) dans un environnement multiserveur](http://go.microsoft.com/fwlink/p/?LinkID=208597).  
   
 ### <a name="moving-the-bam-primary-import-database"></a>Déplacement de la base de données importation principale BAM  
  À un moment ou à un autre, il sera nécessaire de déplacer la base de données d'importation principale BAM , par exemple, lorsque vous effectuez une mise à niveau du matériel ou procédez à une évolution verticale. Avant de déplacer la base de données, vous devez effectuer une opération de sauvegarde et de restauration. Pour plus d’informations sur ce processus, consultez [sauvegarde et restauration de BAM](../core/backing-up-and-restoring-bam.md).  
@@ -105,9 +108,9 @@ Cette rubrique décrit les tâches typiques que les administrateurs BAM sont ame
  Pour obtenir une description de toutes les commandes disponibles via l’utilitaire de gestion de l’analyse BAM, consultez [utilitaire de gestion BAM](../core/bam-management-utility.md). Pour obtenir des exemples d’utilisation de l’utilitaire de gestion BAM pour travailler avec les définitions BAM, consultez [gestion de l’Infrastructure dynamique BAM](../core/managing-the-bam-dynamic-infrastructure.md).  
   
 ## <a name="configuring-multiple-biztalk-groups-to-reference-a-single-bam-database"></a>Configuration de plusieurs groupes BizTalk pour qu'ils référencent une seule base de données BAM  
- Lors de la configuration BAM pour utiliser un nouveau ou existant [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] groupe, vous pouvez configurer le groupe pour utiliser les mêmes bases de données BAM qui sont déjà en cours d’utilisation par un autre [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] groupe.  Pour configurer l’analyse BAM de cette manière, vous devez effectuer les tâches suivantes :  
+ Lors de la configuration BAM pour utiliser un nouveau ou un groupe BizTalk Server existant, vous pouvez configurer le groupe pour utiliser les mêmes bases de données BAM qui sont déjà en cours d’utilisation par un autre groupe BizTalk Server.  Pour configurer l’analyse BAM de cette manière, vous devez effectuer les tâches suivantes :  
   
--   Obtenez les informations de configuration à partir de la base de données d'importation principale BAM à l'aide de l'Assistant Configuration de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Ces informations incluent notamment le nom du serveur et le nom de la base de données. Notez l'état des cases à cocher. Veillez à obtenir les informations de configuration figurant sur les pages Outils BAM et Alertes BAM  
+-   Obtenir les informations de configuration à partir de la base de données importation principale BAM existante à l’aide de l’Assistant Configuration de BizTalk Server. Ces informations incluent notamment le nom du serveur et le nom de la base de données. Notez l'état des cases à cocher. Veillez à obtenir les informations de configuration figurant sur les pages Outils BAM et Alertes BAM  
   
 -   Configurez l'analyse BAM pour le nouveau groupe, puis entrez exactement les mêmes informations que celles déjà configurées pour la table d'importation principale cible. Lorsque vous entrez les informations de configuration du nouveau groupe, utilisez toutes les informations recueillies à partir du groupe existant, à l'exception du champ Utilisateur d'alertes BAM, que vous devez laisser vide.  
   
@@ -127,10 +130,10 @@ Cette rubrique décrit les tâches typiques que les administrateurs BAM sont ame
   
 -   Vous pouvez exécuter la commande de l'utilitaire de gestion de l'analyse BAM suivante à partir du nouveau serveur :  
   
-     **BM.exe update-livedataworkbook-nom :\<classeur des données actives à la mise à jour >**  
+     **BM.exe update-livedataworkbook-nom :\<classeur des données actives à la mise à jour\>**  
   
     > [!NOTE]
-    >  Vous pouvez également spécifier le nom du nouveau serveur et/ou le nom de base de données d’importation principale BAM : **bm.exe update-livedataworkbook-nom :\<classeur des données actives à la mise à jour > [-Server :\<serveur >] [-base de données :\< base de données >]**  
+    >  Vous pouvez également spécifier le nom du nouveau serveur et/ou le nom de base de données d’importation principale BAM : **bm.exe update-livedataworkbook-nom :\<classeur des données actives à la mise à jour\> [-Server :\<server\>] [- Base de données :\<base de données\>]**  
   
 -   Vous pouvez aussi mettre à jour le classeur de données Excel dans Excel :  
   
@@ -150,11 +153,11 @@ Cette rubrique décrit les tâches typiques que les administrateurs BAM sont ame
 ### <a name="cleaning-up-the-alerts-chronicle-table"></a>Nettoyage de la table des chroniques des alertes  
  Si des alertes BAM sont configurées, un travail SQL est créé pour chaque vue d'activité créée. Le travail est nommé selon le modèle suivant :  
   
- bam_\<nom de la vue > _\<vue d’activité > _DelAlertHistJob  
+ bam_\<nom de la vue\>_\<vue d’activité\>_DelAlertHistJob  
   
- Ce travail nettoie les données pour les alertes d’instance spécifié d’audit \<vue d’activité > dans la table Bam_Metadata_AlertChronicle. Si vous avez défini des alertes d'instance sur cette vue d'activité en particulier, une nouvelle ligne est ajoutée à cette table à chaque déclenchement de l'alerte.  
+ Ce travail nettoie les données pour les alertes d’instance spécifié d’audit \<vue d’activité\> dans la table Bam_Metadata_AlertChronicle. Si vous avez défini des alertes d'instance sur cette vue d'activité en particulier, une nouvelle ligne est ajoutée à cette table à chaque déclenchement de l'alerte.  
   
  Vous pouvez exécuter ce travail manuellement pour nettoyer la table ou planifier son exécution en fonction des besoins de votre application ou de votre environnement.  
   
 ## <a name="see-also"></a>Voir aussi  
- [La gestion BAM](../core/managing-bam.md)
+ [Gestion de l’analyse BAM](../core/managing-bam.md)

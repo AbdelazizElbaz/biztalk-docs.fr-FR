@@ -12,14 +12,14 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0c1463d8a06ab5da89306aababfe19362d6308dd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: da903e0cde796c6b12c30ea32dfe4012215a231e
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="edi-character-set-support"></a>Prise en charge du jeu de caractères EDI
-Cette rubrique présente les jeux de caractères pris en charge dans les fonctionnalités EDI de [!INCLUDE[prague](../includes/prague-md.md)].  
+Cette rubrique indique les jeux de caractères sont pris en charge dans les fonctionnalités EDI de BizTalk Server.  
   
 |Codage EDI|Jeux de caractères pris en charge|  
 |------------------|------------------------------|  
@@ -43,4 +43,4 @@ Cette rubrique présente les jeux de caractères pris en charge dans les fonctio
   
 ## <a name="see-also"></a>Voir aussi  
  [Configuration des propriétés de Pipeline EDI](../core/configuring-edi-pipeline-properties.md)   
- [Configuration d’enveloppes (EDIFACT-informatisés paramètres)](../core/configuring-envelopes-edifact-transaction-set-settings.md)
+ [Configuration des enveloppes (paramètres des documents informatisés EDIFACT)](../core/configuring-envelopes-edifact-transaction-set-settings.md)

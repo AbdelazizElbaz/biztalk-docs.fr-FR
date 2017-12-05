@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d09bb2fd72d9b1882b4e0a9eb329da7e080e6fe5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 90c59c586f0d7f1d02ad406baec694cf4e22ff24
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="wcf-adapter-faq-wcf-endpoints"></a>FAQ sur les adaptateurs WCF : les points de terminaison WCF
 ## <a name="what-are-two-endpoints-options-can-be-created-by-the-biztalk-wcf-service-publishing-wizard"></a>Quelles sont les deux options de points de terminaison pouvant être créées par l'Assistant Publication de services WCF BizTalk ?  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
  Un point de terminaison WCF comporte une adresse, une liaison et un contrat. Lorsque l'Assistant crée un point de terminaison de métadonnées uniquement, il obtient les détails concernant l'adresse et la liaison dans l'emplacement de réception existant. Les informations relatives au contrat sont définies par les schémas qui peuvent exister dans les orchestrations BizTalk. Vous pouvez également les créer manuellement à l'aide de l'Assistant. Si vous choisissez **publier des orchestrations BizTalk en tant qu’un service WCF**, le point de terminaison de métadonnées uniquement utilise les types de ports et de messages à partir de l’assembly d’orchestration pour définir le contrat.  
   
- Si vous choisissez **publier des schémas en tant que service WCF**, l’Assistant vous permet de définir une définition de service en spécifiant des noms de service et l’opération avec l’entrée existante et les schémas de sortie. L'Assistant crée un fichier .svc ainsi qu'un répertoire virtuel IIS de sorte que les métadonnées puissent être parcourues après avoir été publiées. L’Assistant de publication des services WCF BizTalk crée également un fichier web.config avec l’attribut httpGetEnabled de le \<serviceMetadata > élément défini sur true. Cette option permet de publier les métadonnées de manière à ce qu'elles soient consultées. Si vous choisissez de publier des métadonnées de service pour l’emplacement de réception BizTalk, ces données est accessible via une demande GET via HTTP en utilisant un `?wsdl` à la fin de l’URL pour le service.  
+ Si vous choisissez **publier des schémas en tant que service WCF**, l’Assistant vous permet de définir une définition de service en spécifiant des noms de service et l’opération avec l’entrée existante et les schémas de sortie. L'Assistant crée un fichier .svc ainsi qu'un répertoire virtuel IIS de sorte que les métadonnées puissent être parcourues après avoir été publiées. L’Assistant de publication des services WCF BizTalk crée également un fichier web.config avec l’attribut httpGetEnabled de le \<serviceMetadata\> élément défini sur true. Cette option permet de publier les métadonnées de manière à ce qu'elles soient consultées. Si vous choisissez de publier des métadonnées de service pour l’emplacement de réception BizTalk, ces données est accessible via une demande GET via HTTP en utilisant un `?wsdl` à la fin de l’URL pour le service.  
   
 ## <a name="are-service-endpoints-hosted-in-iis-and-why"></a>Les points de terminaison d'un service sont-ils hébergés dans IIS et, si tel est le cas, pour quelle raison ?  
  Oui, le point de terminaison d'un service est effectivement hébergé dans IIS à l'aide de l'un des trois adaptateurs isolés :  

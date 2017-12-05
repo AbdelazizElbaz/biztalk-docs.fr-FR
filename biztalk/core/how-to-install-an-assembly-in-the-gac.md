@@ -12,11 +12,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0914a41d83f7838211c9fff39e4d0e96b09a6595
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c80e3a5126a56b945b2aa7b53aec71fbe83d678a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-install-an-assembly-in-the-gac"></a>Installation d'un assembly dans le GAC
 Installer et désinstaller un assembly BizTalk dans le global assembly cache (GAC) à l’aide de l’outil Gacutil fourni avec manuellement [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].  
@@ -62,13 +62,13 @@ Désinstallation d’un assembly à partir du global assembly cache (GAC) est n�
   
 2.  Tapez la commande suivante :  
   
-     `gacutil /u`\< *nom d’assembly qualifié complet*>  
+     `gacutil /u`\< *nom d’assembly qualifié complet*\>  
   
      Par exemple, tapez :  
      `gacutil /u "hello,Version=1.0.0.0, Culture=neutral, PublicKeyToken=0123456789ABCDEF"`
        
 ## <a name="see-also"></a>Voir aussi  
- [Déploiement d’assemblys BizTalk à partir de Visual Studio dans une Application BizTalk](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)  
+ [Déploiement des assemblys BizTalk à partir de Visual Studio dans une application BizTalk](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)  
 [Annulation du déploiement des Applications BizTalk](../core/undeploying-biztalk-applications.md)   
  [Comment désinstaller une Application BizTalk](../core/how-to-uninstall-a-biztalk-application.md)   
  [Comment supprimer une Application BizTalk du groupe BizTalk](../core/how-to-delete-a-biztalk-application-from-the-biztalk-group.md)

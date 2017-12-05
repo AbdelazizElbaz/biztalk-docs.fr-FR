@@ -12,11 +12,11 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a531a5d0a2233dba5826f4bff680a3c55403671d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 17d8518a8c74f1fef77cf713852f1dfc87c8ef23
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="scheduling-sql-server-integration-services-packages"></a>Planification des packages SQL Server Integration Services
 Les utilisateurs créent les vues BAM en fonction des données stockées dans un cube OLAP (Online Analytical Processing). Le package Integration Services de mise à jour du cube actualise les données du cube afin que les données affichées dans les vues OLAP soient correctes.  
@@ -60,7 +60,7 @@ Les utilisateurs créent les vues BAM en fonction des données stockées dans un
   
 7.  Dans l’arborescence de la console, développez **Integration Services**, développez **Packages stockés**, puis cliquez sur **MSDB**.  
   
-8.  Cliquez sur le **BAM_AN_\<nom de la vue >** du package, puis cliquez sur **exécuter le Package**.  
+8.  Cliquez sur le **BAM_AN_\<nom de la vue\>**  du package, puis cliquez sur **exécuter le Package**.  
   
 ### <a name="to-run-the-maintaining-bam-data-integration-services-package"></a>Pour exécuter le package Integration Services de maintenance des données BAM  
   
@@ -78,7 +78,7 @@ Les utilisateurs créent les vues BAM en fonction des données stockées dans un
   
 7.  Dans l’arborescence de la console, développez **Integration Services**, développez **Packages stockés**, puis cliquez sur **MSDB**.  
   
-8.  Cliquez sur le **BAM_DM_\<nom de l’activité >** du package, puis cliquez sur **exécuter le Package**.  
+8.  Cliquez sur le **BAM_DM_\<nom de l’activité\>**  du package, puis cliquez sur **exécuter le Package**.  
   
 ### <a name="to-schedule-the-packages-to-run-regularly"></a>Pour planifier l'exécution régulière des packages  
   
@@ -110,7 +110,7 @@ Les utilisateurs créent les vues BAM en fonction des données stockées dans un
   
 14. Dans le **Server** liste déroulante, sélectionnez le serveur sur lequel vous exécutez la tâche.  
   
-15. Cliquez sur le bouton de sélection de fichier pour le **Package** texte, sélectionnez le package que vous planifiez (soit la **BAM_DM_\<nom de l’activité >** ou **BAM_AN_\< Nom de la vue >** package), puis cliquez sur **OK**.  
+15. Cliquez sur le bouton de sélection de fichier pour le **Package** texte, sélectionnez le package que vous planifiez (soit la **BAM_DM_\<nom de l’activité\>**  ou **BAM_AN_ \<Nom de la vue\>**  package), puis cliquez sur **OK**.  
   
 16. Dans le **sélectionner une page** fenêtre, cliquez sur **planifications**, puis cliquez sur **nouveau**. Cette opération ouvre le **nouvelle planification du travail** boîte de dialogue.  
   

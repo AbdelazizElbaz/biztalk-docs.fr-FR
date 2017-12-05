@@ -12,17 +12,17 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 24d1528d5c35c15e777ce1540d42ea4b7066cea2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e464fc26e5a98edd8ee99dad159d5faa068998aa
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="hipaa-document-schema-version-5010"></a>Version de schéma de document HIPAA 5010
-La valeur par défaut Department of Health and Human Services (HHS) a annoncé une règle finale 16 janvier 2009, qui remplace la version actuelle HIPAA 4010 a 1 avec la version 5010. Version 5010 des normes HIPAA inclut des améliorations dans structurelle, liminaires, technique et le contenu des données. Ces améliorations réduira et éliminer les ambiguïtés dans les données lors de l’adressage également quelques besoins précédemment non remplie. [!INCLUDE[prague](../includes/prague-md.md)]prend en charge la version 5010.  
+La valeur par défaut Department of Health and Human Services (HHS) a annoncé une règle finale 16 janvier 2009, qui remplace la version actuelle HIPAA 4010 a 1 avec la version 5010. Version 5010 des normes HIPAA inclut des améliorations dans structurelle, liminaires, technique et le contenu des données. Ces améliorations réduira et éliminer les ambiguïtés dans les données lors de l’adressage également quelques besoins précédemment non remplie. BizTalk Server prend en charge la version 5010.  
   
 > [!NOTE]
->  [!INCLUDE[prague](../includes/prague-md.md)] continue de prendre en charge la version 4010A1 de la loi HIPAA.  
+>  BizTalk Server continue à prendre en charge la version HIPAA 4010 a 1.  
   
 ## <a name="hipaa-5010-version-support"></a>Prise en charge de la version HIPAA 5010  
  Les modifications suivantes ont été introduites dans le cadre de la prise en charge de la loi HIPAA 5010 par [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] :  
@@ -49,9 +49,9 @@ La valeur par défaut Department of Health and Human Services (HHS) a annoncé u
   
 -   **Prise en charge de ICD-10**: ensembles de code de transaction électronique sont utilisés pour la transmission des données de santé. La version 5010 prend en charge l'utilisation des jeux de code ICD-10 (International Classification of Diseases), incompatibles avec la version 4010A1. ICD-10 permet d'identifier divers diagnostics et procédures dans le cadre de la facturation des demandes de remboursement, des transactions associées et de la génération de rapports cliniques. L'utilisation d'ICD-10 accroît la précision des informations relatives aux services des patients, aux diagnostics et aux traitements et améliore la qualité des données incluses dans les rapports.  
   
--   **Nouveaux champs dans les 997 5010**: schéma d’accusé de réception fonctionnel 997 le fourni out-of-the-box par [!INCLUDE[prague](../includes/prague-md.md)] introduit trois nouveaux champs facultatifs à savoir AK103, AK203 et AK41.3. Le moteur EDI est capable de traiter un 5010 entrant message 997 qui contient ces champs, mais ne génèrent pas d’accusé de réception 997 sortant en fonction du nouveau schéma.  
+-   **Nouveaux champs dans les 997 5010**: le 997 accusé de réception fonctionnel schéma fourni out-of-the-box par BizTalk Server introduit trois nouveaux champs facultatifs à savoir AK103, AK203 et AK41.3. Le moteur EDI est capable de traiter un 5010 entrant message 997 qui contient ces champs, mais ne génèrent pas d’accusé de réception 997 sortant en fonction du nouveau schéma.  
   
- Il y avait un problème connu avec les schémas HIPAA 4010A1 dans lequel les longueurs minimale et maximale des éléments du type de données X12_R n'étaient pas vérifiées. Dans [!INCLUDE[prague](../includes/prague-md.md)], ce problème est résolu et les schémas HIPAA 5010 valident les longueurs minimale et maximale des éléments du type de données X12_R.  
+ Il y avait un problème connu avec les schémas HIPAA 4010A1 dans lequel les longueurs minimale et maximale des éléments du type de données X12_R n'étaient pas vérifiées. Dans BizTalk Server ce problème a été résolu et les schémas HIPAA 5010 valident des éléments du type de données X12_R pour les longueurs minimales et maximale.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Prise en charge HIPAA dans BizTalk Server](../core/hipaa-support-in-biztalk-server.md)   

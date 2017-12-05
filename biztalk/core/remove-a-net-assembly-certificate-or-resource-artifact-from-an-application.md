@@ -31,11 +31,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4a82ffc63ff041aec1e9151e8198e2a7c3e74b3d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 12196886285a84b391eb3037064f36f08aa5b1fe
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-remove-a-net-assembly-certificate-or-other-resource-artifact-from-an-application"></a>Suppression d'un assembly .NET, d'un certificat ou d'un autre artefact de ressource d'une application
 Cette rubrique explique comment supprimer les artefacts de ressource suivants d'une application BizTalk à l'aide de la console Administration de BizTalk Server ou de la ligne de commande. L'utilisation des procédures de cette rubrique supprime l'artefact de la base de données de gestion BizTalk. Elle ne supprime pas l'artefact du système de fichiers, du magasin de certificats, des services IIS (Internet Information Services) ou du registre Windows s'il existe à ces emplacements. Par ailleurs, si vous supprimez un fichier de liaison, les liaisons restantes ne sont pas modifiées : seul le fichier de liaison est supprimé.  
@@ -65,7 +65,7 @@ Cette rubrique explique comment supprimer les artefacts de ressource suivants d'
   
 1.  Cliquez sur **Démarrer**, cliquez sur **programmes**, cliquez sur [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], puis cliquez sur **Administration de BizTalk Server**.  
   
-2.  Dans l'arborescence de la console, développez successivement Administration de [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], le groupe BizTalk contenant l'artefact de ressource à supprimer, puis l'application contenant l'artefact.  
+2.  Dans l’arborescence de la console, développez Administration de BizTalk Server, développez le groupe BizTalk contenant l’artefact de ressource à supprimer, puis développez l’application contenant l’artefact.  
   
 3.  Cliquez sur le **ressources** dossier, cliquez sur l’artefact, puis cliquez sur **supprimer**.  
   

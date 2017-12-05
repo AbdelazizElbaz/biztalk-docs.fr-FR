@@ -12,11 +12,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a88b7596772e951a835ffc13874ade7fefab5137
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3d1ffc367e4b87d29e372bc434c0eda18da4363a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configuring-the-sending-and-receiving-of-edi-acknowledgments"></a>Configuration de l'envoi et de la réception des accusés de réception EDI
 Pour configurer l'envoi d'un accusé de réception EDI en réponse à un échange reçu, vous devez procéder comme suit :  
@@ -54,9 +54,9 @@ Pour configurer l'envoi d'un accusé de réception EDI en réponse à un échang
   
     2.  Dans le **accusés de réception** page, sélectionnez les propriétés définissant le type d’accusé de réception que le tiers expéditeur attend :  
   
-         Pour X12 accusés de réception, sélectionnez **TA1 attendu** et/ou **997 attendu** selon les accusés de réception attendus. Pour chaque type d’accusé de réception, sélectionnez **ne ne pas traiter par lot \<type d’accusé de réception >** si vous souhaitez que chaque instance d’un accusé de réception envoyés sous la forme d’un échange distinct.  
+         Pour X12 accusés de réception, sélectionnez **TA1 attendu** et/ou **997 attendu** selon les accusés de réception attendus. Pour chaque type d’accusé de réception, sélectionnez **ne ne pas traiter par lot \<type d’accusé de réception\>**  si vous souhaitez que chaque instance d’un accusé de réception envoyés sous la forme d’un échange distinct.  
   
-         Pour les accusés de réception EDIFACT, sélectionnez **réception du message (CONTRL) attendu** et/ou **accusé de réception (CONTRL) attendu** selon les accusés de réception attendus. Pour chaque type d’accusé de réception, sélectionnez **ne ne pas traiter par lot \<type d’accusé de réception >** si vous souhaitez que chaque instance d’un accusé de réception envoyés sous la forme d’un échange distinct.  
+         Pour les accusés de réception EDIFACT, sélectionnez **réception du message (CONTRL) attendu** et/ou **accusé de réception (CONTRL) attendu** selon les accusés de réception attendus. Pour chaque type d’accusé de réception, sélectionnez **ne ne pas traiter par lot \<type d’accusé de réception\>**  si vous souhaitez que chaque instance d’un accusé de réception envoyés sous la forme d’un échange distinct.  
   
     3.  Dans le **paramètres d’hôte Local** page sous le **paramètres de l’échange** section, désactivez le **port de réception de l’accusé de réception itinéraire un pipeline d’envoi de requête-réponse** pour renvoyer le accusé de réception asynchrone via un port d’envoi unidirectionnel. Gardez cette propriété activée pour renvoyer l'accusé de réception de manière synchrone, sur un port de réception bidirectionnel.  
   

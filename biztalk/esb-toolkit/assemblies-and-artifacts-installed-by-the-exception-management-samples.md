@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 65bcb2681cceb450995b18b7dc00d3d8f5a44d30
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 59bff4a6b5962410b758f73895105eac280fa6c8
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="assemblies-and-artifacts-installed-by-the-exception-management-samples"></a>Assemblys et des artefacts installés par les exemples de gestion des exceptions
 Le tableau suivant répertorie les assemblys et autres artefacts installés pour l’exemple de gestion des exceptions ESB.  
@@ -48,4 +48,4 @@ Le tableau suivant répertorie les assemblys et autres artefacts installés pour
 |||GlobalBank.ESB.ExceptionHandling.Processes Version 2.0.0.0|  
 |||GlobalBank.ESB.ExceptionHandling.Schemas Version 2.0.0.0|  
 |||GlobalBank.ESB.ExceptionHandling.Pipelines Version 2.0.0.0|  
-|%Program Files%\\[!INCLUDE[prague](../includes/prague-md.md)]\Pipeline composants|Composants de pipeline||
+|%Program Files%\\BizTalk Server\Pipeline composants|Composants de pipeline||

@@ -19,11 +19,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a4913dbfa6f3d027d5540234b5af9370eb69f67a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9d6e7f9f70e6f1f0f09ae1d006172fdc00dc1bc0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-deploy-or-undeploy-a-policy"></a>Déploiement ou annulation du déploiement d'une stratégie
 Cette rubrique explique comment déployer ou annuler le déploiement d'une stratégie manuellement à l'aide de la console Administration de BizTalk Server. Par ailleurs, le démarrage d'une application déploie automatiquement les stratégies qu'elle contient, et son arrêt annule automatiquement leur déploiement. Le déploiement d'une stratégie l'applique dans l'application qui l'utilise. L'annulation du déploiement d'une stratégie la rend inactive et celle-ci ne fonctionne donc plus dans les applications qui l'utilisent dans le groupe BizTalk.  
@@ -43,7 +43,7 @@ Cette rubrique explique comment déployer ou annuler le déploiement d'une strat
   
 1.  Cliquez sur **Démarrer**, cliquez sur **tous les programmes**, cliquez sur [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], puis cliquez sur **Administration de BizTalk Server**.  
   
-2.  Dans l’arborescence de la console, développez **Administration de BizTalk Server**, développez le groupe BizTalk contenant la stratégie que vous souhaitez déployer ou annuler le déploiement, puis cliquez sur  **\<tous les artefacts >**.  
+2.  Dans l’arborescence de la console, développez **Administration de BizTalk Server**, développez le groupe BizTalk contenant la stratégie que vous souhaitez déployer ou annuler le déploiement, puis cliquez sur  **\<tous les artefacts\>** .  
   
 3.  Cliquez sur **stratégies**, avec le bouton droit de la stratégie, puis cliquez sur **déployer** ou **annuler le déploiement**.  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f6f47071ee003a896b66120c0fd81a121ab73230
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8358fc1624346b90d98fd1f1707dd2bfb02446dd
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-undo-or-redo-user-operations"></a>Annulation ou rétablissement des opérations de l'utilisateur
 La prise en charge des options Annuler/Rétablir constitue une aide précieuse fournie par le Mappeur BizTalk. Si vous n'êtes pas satisfait des modifications effectuées, ou si vous avez apporté une modification par erreur, vous pouvez utiliser l'option Annuler pour revenir à un état antérieur à partir duquel vous reprendrez l'opération. L'option Rétablir permet de réappliquer les actions de modification que vous avez annulées. Cette rubrique fournit des informations sur les opérations que vous pouvez annuler/rétablir.  
@@ -77,7 +77,7 @@ La prise en charge des options Annuler/Rétablir constitue une aide précieuse f
     > [!NOTE]
     >  Pour plus d’informations, consultez [comment créer des liens](../core/how-to-create-links.md).  
   
--   Exécution de plusieurs modifications dans le **configurer \<fonctoid > fonctoid** boîte de dialogue, qui est traitée comme une seule opération.  
+-   Exécution de plusieurs modifications dans le **configurer \<fonctoid\> fonctoid** boîte de dialogue, qui est traitée comme une seule opération.  
   
 -   Faire glisser des liens et/ou des fonctoids sur la grille du Mappeur.  
   
@@ -94,4 +94,4 @@ La prise en charge des options Annuler/Rétablir constitue une aide précieuse f
 -   En appuyant sur CTRL+Z pour annuler et CTRL+Y pour rétablir.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilisation des Pages de grille](../core/working-with-grid-pages.md)
+ [Utilisation des pages de grille](../core/working-with-grid-pages.md)

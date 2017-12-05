@@ -12,11 +12,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1e1ccddee7bb7b08ec363fabd9b7e061cd41357d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9a2e2679edafd72dc0d64510e7a8566180818f8c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter"></a>Étape 7 : Implémenter le Gestionnaire de sortie synchrone pour l’adaptateur de l’écho
 ![Étape 7 de 9](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-7of9.gif "Step_7of9")  
@@ -64,13 +64,13 @@ public interface IOutboundHandler : IConnectionHandler, IDisposable
   
 -   WCF d’entrée de l’action du message = ID de nœud de l’opération  
   
--   Corps du message entrant = début élément du corps est \<displayname >\<nom de paramètre > {données}\<nom / paramètre >\</displayname >  
+-   Corps du message entrant = début élément du corps est \<displayname\>\<nom de paramètre\>{données}\<nom / paramètre\>\</displayname\>  
   
  Pour le message de réponse WCF sortant :  
   
 -   Action du message de sortie WCF = ID de nœud de l’opération + « / réponse »  
   
--   Sortant du corps du message = début élément du corps est \<displayname + « Réponse » >, suivi par \<displayname + « Result » > et suivie par la \<type de données > données\</datatype >\</ DisplayName + « résultat >\</displayname + « Réponse » >  
+-   Sortant du corps du message = début est de l’élément du corps du \<displayname + « Réponse »\>, suivi par \<displayname + « Result »\>et suivie par la \<type de données\>dedonnées\</datatype\>\</displayname+ « résultat\>\</displayname + « Réponse »\>  
   
  Par exemple, opération **string [] EchoStrings (chaîne de données)**, ID de nœud = Echo/EchoStrings et le nom d’affichage = EchoStrings :  
   
@@ -145,7 +145,7 @@ public interface IOutboundHandler : IConnectionHandler, IDisposable
     return null;              
     ```  
   
-4.  Ajoutez maintenant le **ExecuteEchoStrings** méthode pour gérer la chaîne [] opération de EchoStrings (chaîne de données). Cette fonction d’assistance lit le message de demande WCF, vérifie si l’élément d’URI echoInUpperCase est définie sur true. Dans ce cas, il convertit la chaîne d’entrée en majuscules à chaque fois que la variable nombre indique. Ensuite, il génère le message de réponse WCF au format : \<EchoStringsResponse >\<EchoStringResult >\<chaîne > {données}\</chaîne >\</EchoStringResult >\</EchoStringsResponse >.  
+4.  Ajoutez maintenant le **ExecuteEchoStrings** méthode pour gérer la chaîne [] opération de EchoStrings (chaîne de données). Cette fonction d’assistance lit le message de demande WCF, vérifie si l’élément d’URI echoInUpperCase est définie sur true. Dans ce cas, il convertit la chaîne d’entrée en majuscules à chaque fois que la variable nombre indique. Ensuite, il génère le message de réponse WCF au format : \<EchoStringsResponse\>\<EchoStringResult\>\<chaîne\>{données}\</string\> \</EchoStringResult\>\</EchoStringsResponse\>.  
   
     ```csharp  
     private Message ExecuteEchoStrings(ParameterizedOperationMetadata om, Message message, TimeSpan timeout)  
@@ -187,7 +187,7 @@ public interface IOutboundHandler : IConnectionHandler, IDisposable
     }  
     ```  
   
-5.  Continuer en ajoutant le **ExecuteEchoGreetings** méthode pour gérer l’opération EchoGreetings. Cette fonction d’assistance lit le message de demande WCF, résout l’opération et le type par la `ResolveOperationMetadata` et `ResolveTypeMetadata` méthodes de la `Microsoft.ServiceModel.Channels.Common.IMetadataResolverHandler` de l’interface et génère ensuite le message de réponse WCF en utilisant le format de : \< EchoGreetingsResponse >\<EchoGreetingsResult >... message... \</EchoGreetingsResult >\</EchoGreetingsResponse >.  
+5.  Continuer en ajoutant le **ExecuteEchoGreetings** méthode pour gérer l’opération EchoGreetings. Cette fonction d’assistance lit le message de demande WCF, résout l’opération et le type par la `ResolveOperationMetadata` et `ResolveTypeMetadata` méthodes de la `Microsoft.ServiceModel.Channels.Common.IMetadataResolverHandler` de l’interface et génère ensuite le message de réponse WCF en utilisant le format de : \< EchoGreetingsResponse\>\<EchoGreetingsResult\>... message... \</EchoGreetingsResult\>\</EchoGreetingsResponse\>.  
   
     ```csharp  
     private Message ExecuteEchoGreetings(ParameterizedOperationMetadata om, Message message, TimeSpan timeout)  
@@ -232,7 +232,7 @@ public interface IOutboundHandler : IConnectionHandler, IDisposable
     }  
     ```  
   
-6.  Ajoutez maintenant le **ExecuteEchoCustomGreetingFromFile** méthode pour gérer l’opération EchoCustomGreetingFromFile. Cette fonction d’assistance lit le message de demande WCF, lit le message à partir du fichier spécifié et génère ensuite le message de réponse WCF en utilisant le format de : \<EchoGreetingsFromFileResponse >\<EchoGreetingsFromFileResult >... message... \</EchoGreetingsFromFileResult >\</EchoGreetingsFromFileResponse >.  
+6.  Ajoutez maintenant le **ExecuteEchoCustomGreetingFromFile** méthode pour gérer l’opération EchoCustomGreetingFromFile. Cette fonction d’assistance lit le message de demande WCF, lit le message à partir du fichier spécifié et génère ensuite le message de réponse WCF en utilisant le format de : \<EchoGreetingsFromFileResponse\> \< EchoGreetingsFromFileResult\>... message... \</EchoGreetingsFromFileResult\>\</EchoGreetingsFromFileResponse\>.  
   
     ```csharp  
     private Message ExecuteEchoCustomGreetingFromFile(OperationMetadata om, Message message, TimeSpan timeout)  
@@ -287,4 +287,4 @@ Générez et déployez l’adaptateur de l’écho.
   
 ## <a name="see-also"></a>Voir aussi  
  [Étape 6 : Implémenter le Gestionnaire de résoudre des métadonnées de l’adaptateur d’écho](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-6-implement-the-metadata-resolve-handler-for-the-echo-adapter.md)   
- [Étape 8 : Implémenter le Gestionnaire d’entrée synchrone de l’adaptateur d’écho](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter.md)
+ [Étape 8 : Implémenter le gestionnaire de trafic entrant synchrone pour l’adaptateur Echo](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter.md)

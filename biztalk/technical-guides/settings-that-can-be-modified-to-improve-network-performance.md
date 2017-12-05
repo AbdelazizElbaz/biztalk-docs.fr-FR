@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ab8c4b32a5a5f588e76d155c2f8d052398f1a247
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8557c8bbe8c0b1c785d6da8d87e8950d3779b8d0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="settings-that-can-be-modified-to-improve-network-performance"></a>Paramètres qui peuvent être modifiées pour améliorer les performances réseau
 Cette rubrique fournit une description des valeurs recommandées cet impact sur les performances réseau.  
@@ -27,7 +27,7 @@ Cette rubrique fournit une description des valeurs recommandées cet impact sur 
 ## <a name="adjust-the-maxuserport-and-tcptimedwaitdelay-settings"></a>Ajuster les paramètres MaxUserPort et TcpTimedWaitDelay  
  Le **MaxUserPort** valeur contrôle le nombre maximal de port utilisé lorsqu’une application demande un port utilisateur disponible à partir du système. Normalement, les ports éphémères sont alloués dans la plage de 1025 et 65535. La plage de ports est désormais réellement une plage avec un point de départ et un point de terminaison. Le nouveau port de démarrage par défaut est 49152, et le port de fin par défaut est 65535. Cette plage est en plus des ports connus utilisés par les services et applications. La plage de ports utilisée par les serveurs peut être modifiée sur chaque serveur. Vous réglez cette plage à l’aide de la commande netsh, comme suit :  
   
- **netsh int \<ipv4 &#124; ipv6 > définir dynamiques \<tcp &#124; udp > Démarrer = nombre num = plage**  
+ **netsh int \<ipv4 &#124; ipv6\> définir dynamiques \<tcp &#124; udp\> démarrer = nombre num = plage**  
   
  Cette commande définit la plage de ports dynamiques TCP. Le port de début est **nombre**, et le nombre total de ports est **plage**. Voici des exemples de commandes : vous pouvez afficher la plage de ports dynamiques en utilisant les commandes netsh suivantes :  
   

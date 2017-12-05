@@ -12,15 +12,15 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bb9c2347a989dd59b97125e119ea79a9996c53ec
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d6223ab8d8aa3c8d1c20559a88257dd0dccaa22e
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="create-a-biztalk-server-orchestration"></a>Créer une orchestration BizTalk Server
 > [!NOTE]
->  Ce didacticiel s'applique uniquement à [!INCLUDE[prague](../includes/prague-md.md)].  
+>  Ce didacticiel s’applique uniquement à BizTalk Server.  
   
  Créez une orchestration [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] qui, une fois déployée, reçoit un message de bon de commande JSON, le transforme en facture XML, puis envoie une facture JSON.  
   

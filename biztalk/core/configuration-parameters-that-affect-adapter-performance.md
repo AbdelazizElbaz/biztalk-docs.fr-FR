@@ -12,11 +12,11 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 46bbb5a1c796149f762ce438aed7df5c256bf465
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e48eb329a50dda26555e76dd54dd4f4d33cb2c98
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configuration-parameters-that-affect-adapter-performance"></a>Paramètres de configuration qui affectent les performances des adaptateurs
 Cette section décrit les paramètres de configuration qui peuvent affecter les performances des adaptateurs BizTalk Server.  
@@ -31,13 +31,13 @@ Cette section décrit les paramètres de configuration qui peuvent affecter les 
   
 |**Paramètre**|**Section du fichier de configuration**|**Valeur par défaut**|**Valeur recommandée**|  
 |-------------------|---------------------------------------|-----------------------|---------------------------|  
-|**minFreeThreads**<br /><br /> Nombre minimal de threads libres pour l'exécution de nouvelles demandes. ASP.NET conserve ces threads libres pour les demandes nécessitant davantage de threads pour exécuter leur traitement.|\<httpRuntime >|8|88 * nombre de processeurs sur le serveur qui héberge l’application Web.|  
-|**minFreeLocalRequestFreeThreads**<br /><br /> Nombre minimal de threads libres qu'ASP.NET garde disponibles pour l'exécution de nouvelles demandes locales. Ce nombre de threads est réservé aux demandes de l'hôte local, au cas où certaines demandes émettent des demandes enfants auprès de l'hôte local dans le cadre de leur traitement. Cela permet d'éviter un blocage éventuel avec une nouvelle entrée récursive sur le serveur Web.|\<httpRuntime >|4|76 * nombre de processeurs sur le serveur hébergeant l'application Web.|  
-|**executionTimeout**<br /><br /> Indique le nombre maximal de secondes pendant lequel l'exécution d'une demande est autorisée avant son arrêt automatique par ASP.NET.|\<httpRuntime >|90|90|  
-|**maxconnection**<br /><br /> Détermine le nombre de connexions qui peuvent être effectuées à une adresse IP spécifique.|\<connectionManagement >|2<br /><br /> La valeur 2 pour ce paramètre est conforme à la norme RFC de l'IETF pour la spécification HTTP 1.1 et convient aux scénarios d'utilisateur, mais n'est pas optimisée pour un débit élevé.|12 * nombre de processeurs sur le serveur qui héberge l’application Web.|  
-|**maxWorkerThreads**<br /><br /> Configure le nombre maximal de threads de travail à utiliser pour le processus pour chaque processeur.|\<processModel >|20|100 **Remarque :** cette valeur est implicitement multipliée par le nombre de processeurs sur le serveur.|  
-|**minWorkerThreads**|\<processModel >|1|**maxWorkerThreads** / 2 **Remarque :** le paramètre minWorkerThreads n’est pas dans le fichier de configuration par défaut. Vous devez l'ajouter. **Remarque :** cette valeur est implicitement multipliée par le nombre de processeurs sur le serveur.|  
-|**maxIoThreads**<br /><br /> Utilisé par ASP.NET pour limiter le nombre de threads de terminaison utilisés.|\<processModel >|20|100<br /><br /> Cette valeur est implicitement multipliée par le nombre de processeurs sur le serveur.|  
+|**minFreeThreads**<br /><br /> Nombre minimal de threads libres pour l'exécution de nouvelles demandes. ASP.NET conserve ces threads libres pour les demandes nécessitant davantage de threads pour exécuter leur traitement.|\<httpRuntime\>|8|88 * nombre de processeurs sur le serveur qui héberge l’application Web.|  
+|**minFreeLocalRequestFreeThreads**<br /><br /> Nombre minimal de threads libres qu'ASP.NET garde disponibles pour l'exécution de nouvelles demandes locales. Ce nombre de threads est réservé aux demandes de l'hôte local, au cas où certaines demandes émettent des demandes enfants auprès de l'hôte local dans le cadre de leur traitement. Cela permet d'éviter un blocage éventuel avec une nouvelle entrée récursive sur le serveur Web.|\<httpRuntime\>|4|76 * nombre de processeurs sur le serveur hébergeant l'application Web.|  
+|**executionTimeout**<br /><br /> Indique le nombre maximal de secondes pendant lequel l'exécution d'une demande est autorisée avant son arrêt automatique par ASP.NET.|\<httpRuntime\>|90|90|  
+|**maxconnection**<br /><br /> Détermine le nombre de connexions qui peuvent être effectuées à une adresse IP spécifique.|\<connectionManagement\>|2<br /><br /> La valeur 2 pour ce paramètre est conforme à la norme RFC de l'IETF pour la spécification HTTP 1.1 et convient aux scénarios d'utilisateur, mais n'est pas optimisée pour un débit élevé.|12 * nombre de processeurs sur le serveur qui héberge l’application Web.|  
+|**maxWorkerThreads**<br /><br /> Configure le nombre maximal de threads de travail à utiliser pour le processus pour chaque processeur.|\<processModel\>|20|100 **Remarque :** cette valeur est implicitement multipliée par le nombre de processeurs sur le serveur.|  
+|**minWorkerThreads**|\<processModel\>|1|**maxWorkerThreads** / 2 **Remarque :** le paramètre minWorkerThreads n’est pas dans le fichier de configuration par défaut. Vous devez l'ajouter. **Remarque :** cette valeur est implicitement multipliée par le nombre de processeurs sur le serveur.|  
+|**maxIoThreads**<br /><br /> Utilisé par ASP.NET pour limiter le nombre de threads de terminaison utilisés.|\<processModel\>|20|100<br /><br /> Cette valeur est implicitement multipliée par le nombre de processeurs sur le serveur.|  
   
  Si l’ordinateur qui héberge les services Web exécute ASP.NET 2.0 ou version ultérieure, vous pouvez définir **autoConfig = true** dans la section processModel du fichier Machine.config pour configurer automatiquement les paramètres suivants pour optimiser performances en fonction de la configuration de l’ordinateur :  
   
@@ -49,7 +49,7 @@ Cette section décrit les paramètres de configuration qui peuvent affecter les 
   
 -   Le **minLocalRequestFreeThreads** attribut de l’élément httpRuntime.  
   
--   Le **maxConnection** attribut de la \<connectionManagement > élément (paramètres réseau).  
+-   Le **maxConnection** attribut de la \<connectionManagement\> élément (paramètres réseau).  
   
 > [!NOTE]
 >  Le **processModel** section peut uniquement être définie dans le fichier Machine.config et affecte toutes les applications ASP.NET qui sont exécutent sur le serveur.  

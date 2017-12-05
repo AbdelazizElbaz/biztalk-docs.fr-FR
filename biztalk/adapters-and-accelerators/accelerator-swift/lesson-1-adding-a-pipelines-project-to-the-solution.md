@@ -15,11 +15,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 56818550af21cf8f37d6cdb1551469ba157dde5a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b45fb5e3ebc47bcaa27226be28618269f9da2e55
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="lesson-1-adding-a-pipelines-project-to-the-solution"></a>Leçon 1 : Ajout d’un projet de Pipelines à la Solution
 Dans cette leçon, vous ajoutez qu'un nouveau projet BizTalk pour SWIFT de pipelines à la solution pour vous permettre de personnaliser votre envoi et de pipelines de réception.  
@@ -34,11 +34,11 @@ Dans cette leçon, vous ajoutez qu'un nouveau projet BizTalk pour SWIFT de pipel
   
 4.  Dans le **nom** , tapez **SWIFTPipelines** comme nom du projet.  
   
-5.  Dans le **Solution** boîte, sélectionnez **ajouter à la Solution**. Dans le **emplacement** zone, cliquez sur Parcourir pour sélectionner  **\<* lecteur*: > \labs\SWIFTProject** est sélectionnée.  
+5.  Dans le **Solution** boîte, sélectionnez **ajouter à la Solution**. Dans le **emplacement** zone, cliquez sur Parcourir pour sélectionner  **\<* lecteur*:\>\labs\SWIFTProject** est sélectionnée.  
   
 6.  Cliquez sur **OK** pour ouvrir le nouveau projet.  
   
-     [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]Ajoute un nouveau projet à l’Explorateur de solutions et crée le dossier du projet et les fichiers dans le \< *lecteur*> : \Labs\SWIFTProject dossier.  
+     [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]Ajoute un nouveau projet à l’Explorateur de solutions et crée le dossier du projet et les fichiers dans le \< *lecteur*\>: \Labs\SWIFTProject dossier.  
   
 7.  Appliquer le fichier de clé d’assembly que vous avez créé dans la leçon 2 du module 2 au projet SWIFTPipelines. Pour plus d’informations, consultez [leçon 2 : création d’un Assembly de BizTalk avec nom fort pour le projet SWIFTSchemas](../../adapters-and-accelerators/accelerator-swift/lesson-2-creating-a-strong-named-biztalk-assembly-for-the-swiftschemas-project.md).  
   

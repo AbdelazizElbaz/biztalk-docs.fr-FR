@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa0bacd605908abae984247b3d7ed775ea8f5de4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f7aaba3aa00b15b3e015cbc010901c6d50818c42
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="configuration-error-the-message-signing-doesn39t-match-the-expected-value"></a>Erreur de configuration. Le message de signature ne &#39; t correspond à la valeur attendue.
 ## <a name="details"></a>Détails  
@@ -37,6 +37,6 @@ ms.lasthandoff: 09/20/2017
 ## <a name="user-action"></a>Action de l'utilisateur  
  Pour résoudre cette erreur, vérifiez que le message AS2 entrant est signé si la signature est spécifiée dans les paramètres du tiers, ou qu'il n'est pas signé si la signature est définie comme n'étant pas activée dans ces mêmes paramètres. Procédez de l'une des manières suivantes :  
   
-1.  Si le **remplacer les propriétés du message entrant** propriété est sélectionnée dans la partie en tant que page de l’expéditeur du Message AS2 de la boîte de dialogue propriétés AS2 dans le [!INCLUDE[prague](../includes/prague-md.md)] Console d’Administration, le **Message doit être signé** propriété est sélectionnée, mais le message n’est pas signé, contactez le tiers qui a envoyé le message et demandez-lui de signer le message et le renvoyer. Vous pouvez désactiver le **Message doit être signé** propriété, ou le **remplacer les propriétés du message entrant** propriété.  
+1.  Si le **remplacer les propriétés du message entrant** propriété est sélectionnée dans la partie en tant que page de l’expéditeur du Message AS2 de la boîte de dialogue propriétés AS2 dans la Console Administration de BizTalk Server, le **Message doit être signé** propriété est sélectionnée, mais le message n’est pas signé, contactez le tiers qui a envoyé le message et demandez-lui de signer le message et le renvoyer. Vous pouvez désactiver le **Message doit être signé** propriété, ou le **remplacer les propriétés du message entrant** propriété.  
   
 2.  Si le **remplacer les propriétés du message entrant** propriété est sélectionnée, le **Message doit être signé** propriété est désactivée, mais le message est signé, contactez le tiers qui a envoyé le message et demandez-lui de ne pas signer le message et le renvoyer. Vous pouvez également sélectionner le **Message doit être signé** propriété.

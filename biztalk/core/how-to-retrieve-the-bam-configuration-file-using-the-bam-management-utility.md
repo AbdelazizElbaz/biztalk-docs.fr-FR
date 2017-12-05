@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0eb7dee70d3a5b8dc7226203df9f48aefe1d5fc0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7ef0f4802aa44a042f39adbdc9f169b11a16796d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-retrieve-the-bam-configuration-file-using-the-bam-management-utility"></a>Extraction du fichier de configuration BAM à l'aide de l'utilitaire de gestion de l'analyse BAM
 Les administrateurs et les développeurs peuvent utiliser l'utilitaire de gestion de l'analyse BAM pour récupérer la configuration existante de l'infrastructure BAM. La configuration récupérée peut être utilisée pour migrer une installation BAM sur un nouveau serveur. Elle peut également être modifiée et utilisée pour mettre à jour une installation BAM existante.  
@@ -34,7 +34,7 @@ Les administrateurs et les développeurs peuvent utiliser l'utilitaire de gestio
   
 2.  Accédez à [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking.  
   
-3.  Tapez la commande suivante à l’invite de ligne de commande : **bm get-config - FileName :\<fichier de sortie >**, où \< *fichier de sortie*> est remplacé par le nom de votre configuration d’analyse BAM fichier. Appuyez sur **Entrée**.  
+3.  Tapez la commande suivante à l’invite de ligne de commande : **bm get-config - FileName :\<fichier de sortie\>**, où \< *fichier de sortie* \> est remplacé par le nom de votre fichier de configuration BAM. Appuyez sur **Entrée**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilitaire de gestion BAM](../core/bam-management-utility.md)
+ [Utilitaire de gestion de l’analyse BAM](../core/bam-management-utility.md)

@@ -19,11 +19,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e4c9c9be5e9f3361683e495febbd98a05156399d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c011183c6ba34c9614d1e642916264224def546e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-create-or-edit-a-process-configuration"></a>Comment créer ou modifier une configuration de processus
 Cette rubrique décrit comment créer ou modifier une configuration de processus.  
@@ -93,7 +93,7 @@ Cette rubrique décrit comment créer ou modifier une configuration de processus
   
 4.  Cliquez avec le bouton droit sur la configuration de processus à modifier, puis cliquez sur **Propriétés**.  
   
-5.  Dans le  *\<configuration du processus >* boîte de dialogue de propriétés la **général** et **propriétés Contact** onglets, modifiez les paramètres en fonction des besoins. Pour plus d'informations sur ces paramètres, consultez le tableau précédent.  
+5.  Dans le  *\<configuration du processus\>*  boîte de dialogue de propriétés du **général** et **propriétés Contact** onglets, modifiez les paramètres Obligatoire. Pour plus d'informations sur ces paramètres, consultez le tableau précédent.  
   
 6.  Cliquez sur **OK**.  
   
@@ -101,4 +101,4 @@ Cette rubrique décrit comment créer ou modifier une configuration de processus
  [Pour créer une Configuration de processus à l’aide de la spécification PIP](../../adapters-and-accelerators/accelerator-rosettanet/using-the-pip-specification-to-create-a-process-configuration.md)   
  [Propriétés d’autorisation et de non-répudiation](../../adapters-and-accelerators/accelerator-rosettanet/authorization-and-non-repudiation-properties.md)   
  [Paramètre des CIDX chem échange de messages](../../adapters-and-accelerators/accelerator-rosettanet/setting-up-cidx-estandards-message-exchange.md)   
- [Administration de la Configuration de BTARN](../../adapters-and-accelerators/accelerator-rosettanet/administering-the-btarn-configuration.md)
+ [Administration de la configuration de BTARN](../../adapters-and-accelerators/accelerator-rosettanet/administering-the-btarn-configuration.md)

@@ -17,16 +17,16 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e55e1280f4054c431f53aa21fa16123f11509f7b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c5b8c3a83d75219b9e52fd2ab13124480d772832
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-the-biztalk-project-system"></a>Utilisation du système de projet BizTalk 
 Le système de projet BizTalk® permet de créer, organiser et configurer des solutions BizTalk dans l'environnement Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]. Les rubriques et les procédures de cette section expliquent comment effectuer diverses tâches à l'aide du système de projet BizTalk.  
   
- Les principes et procédures de gestion de projet du système de projet [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] sont identiques à ceux que vous utilisez avec d'autres projets Microsoft Build Engine (MSBuild) dans [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]. Cette section détaille les procédures courantes que vous serez éventuellement amené à utiliser pour créer une application s'exécutant sur Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+ Le système de projet BizTalk Server utilise les mêmes principes de gestion de projet et les procédures que vous utilisez avec d’autres projets Microsoft Build Engine (MSBuild) dans [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]. Cette section détaille les procédures courantes que vous serez éventuellement amené à utiliser pour créer une application s'exécutant sur Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
  Pour plus d’informations sur MSBuild, consultez la section de référence MSBuild dans le [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Collection combinée à [http://go.microsoft.com/fwlink/?LinkId=193567](http://go.microsoft.com/fwlink/?LinkId=193567).  
   

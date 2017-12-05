@@ -21,11 +21,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 26397001014dd1e4d6ad7139e040892c71e22754
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0fa8e448d4799329a798cc7b33f222b42c4a28b4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="btarnclean"></a>BtarnClean
 Vous utilisez l’utilitaire BtarnClean pour nettoyer [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] artefacts sur un ordinateur. Cette opération inclut les actions suivantes :  
@@ -37,7 +37,7 @@ Vous utilisez l’utilitaire BtarnClean pour nettoyer [!INCLUDE[btsCoName](../..
 -   Annulation du déploiement de tous les [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]. Assemblys Solutions.BTARN.*  
   
 ## <a name="location-in-sdk"></a>Emplacement dans le kit de développement logiciel (SDK)  
- \<*lecteur*> \Program Files\ Microsoft BizTalk \<version > Accelerator for RosettaNet\SDK  
+ \<*lecteur*\>\Program Files\ Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK  
   
 ## <a name="running-btarnclean"></a>Exécution de BtarnClean  
   
@@ -45,7 +45,7 @@ Vous utilisez l’utilitaire BtarnClean pour nettoyer [!INCLUDE[btsCoName](../..
   
 1.  Ouvrez une invite de commandes.  
   
-2.  Déplacer vers \< *lecteur*> \ programme Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\SDK\\.  
+2.  Déplacer vers \< *lecteur*\>\ programme Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\\.  
   
 3.  À l'invite de commandes, tapez **BtarnClean**, puis appuyez sur Entrée.  
   

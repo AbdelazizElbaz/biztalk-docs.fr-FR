@@ -16,11 +16,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 95b03da5bf56367e59142a241dada6454a74c459
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6e8d85a49b410f0571e8e9cb0be816f1feda139e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="enlist-orchestration-biztalk-server-sample"></a>Inscrire l’Orchestration (exemple BizTalk Server)
 L'exemple d'inscription de l'orchestration décrit l'inscription d'une orchestration BizTalk Server dans un hôte.  
@@ -40,9 +40,9 @@ L'exemple d'inscription de l'orchestration décrit l'inscription d'une orchestra
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
  Les exemples se trouvent dans les emplacements du Kit de développement logiciel (SDK) suivants :  
   
--   Version VBScript : \< *exemples de chemin*> \Admin\WMI\Enlist Orchestration\VBScript\  
+-   Version VBScript : \< *exemples de chemin*\>\Admin\WMI\Enlist Orchestration\VBScript\  
   
--   Version Visual c# : \< *exemples de chemin*> \Admin\WMI\Enlist Orchestration\CSharp\  
+-   Version Visual c# : \< *exemples de chemin*\>\Admin\WMI\Enlist Orchestration\CSharp\  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -64,17 +64,15 @@ L'exemple d'inscription de l'orchestration décrit l'inscription d'une orchestra
   
 1.  Dans une fenêtre de commandes, accédez à l'un des dossiers suivants, selon que vous envisagiez d'exécuter la version VBScript ou Visual C# de cet exemple, respectivement :  
   
-     \<*Exemples de chemin d’accès*> \Admin\WMI\Enlist Orchestration\VBScript\  
+     \<*Exemples de chemin d’accès*\>\Admin\WMI\Enlist Orchestration\VBScript\  
   
-     \<*Exemples de chemin d’accès*> AdminWMIEnlist OrchestrationCSharpbinDebug  
+     \<*Exemples de chemin d’accès*\>AdminWMIEnlist OrchestrationCSharpbinDebug  
   
 2.  En fonction de votre choix pour l'exécution de cet exemple (à savoir soit la version VBScript soit la version Visual C#), exécutez respectivement le fichier EnlistOrch.vbs à l'aide du programme cscript ou le fichier EnlistOrc.exe. Dans les deux cas, exécutez les arguments de ligne de commande suivants :  
   
-    -   **\<**   
-         ***OrchestrationName* >.** Nom de l'orchestration à inscrire.  
+    -   **\<** ***OrchestrationName* \>.** Nom de l'orchestration à inscrire.  
   
-    -   **\<**   
-         ***AssemblyName* >.** Nom de l'assembly dans lequel l'orchestration a été déployée. Si le nom de l'assembly contient des espaces, placez-le entre guillemets.  
+    -   **\<** ***AssemblyName* \>.** Nom de l'assembly dans lequel l'orchestration a été déployée. Si le nom de l'assembly contient des espaces, placez-le entre guillemets.  
   
          Par exemple : (VBScript) :  
   

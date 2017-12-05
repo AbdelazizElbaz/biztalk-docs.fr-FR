@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9e2bd45c54bfc312a52d199a2f117a108207cdf5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1c8bd8248a916d1e98571551a8561119b6377329
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="generating-and-publishing-mtmx-forms-on-the-sharepoint-site"></a>Génération et publication de formulaires MT/MX sur le Site SharePoint
 **Pour générer et publier des formulaires MT/MX sur un site SharePoint :**  
@@ -27,13 +27,13 @@ ms.lasthandoff: 09/20/2017
   
 3.  À l’invite de commandes, accéder au dossier de l’exécutable compilé (FormGenerator.exe). Par exemple, si vous avez créé l’utilitaire en mode débogage, accéder à la **... \bin\Debug** dossier.  
   
-4.  Tapez FormGenerator.exe [-b] [-\<non. des chemins d’accès du dossier de modèle >]  
+4.  Tapez FormGenerator.exe [-b] [-\<non. des chemins d’accès du dossier de modèle\>]  
   
      `<TemplateFolderPath> <DestinationFolderPath> <DocumentSchemaLocation> {[<SpaceSeparatedDocumentSchemaList>] | [-f <NameOfFileContainingSchemaList>]}`. Remplacez les paramètres avec les noms de dossier nouvellement créé.  
   
 5.  La commande ci-dessus génère également le schéma d’enveloppe à MX message réparation.  
   
-6.  Accédez au dossier de sortie \<DestinationFolderPath >. Dans \<DestinationFolderPath >, ouvrez le dossier du modèle de formulaire InfoPath pour lequel vous souhaitez générer le formulaire. Par exemple, si vous souhaitez générer le formulaire InfoPath de MT103, ouvrez le dossier MT103 à la DestinationFolderPath et ouvrez le TemplateDS.sln.  
+6.  Accédez au dossier de sortie \<DestinationFolderPath\>. Dans \<DestinationFolderPath\>, ouvrez le dossier du modèle de formulaire InfoPath pour lequel vous souhaitez générer le formulaire. Par exemple, si vous souhaitez générer le formulaire InfoPath de MT103, ouvrez le dossier MT103 à la DestinationFolderPath et ouvrez le TemplateDS.sln.  
   
 7.  Dans l’Explorateur de solutions, double-cliquez sur le **manifest.xsf**. Il ouvre le fichier de la conception du formulaire InfoPath qui prend un certain temps à obtenir ouvert.  
   
@@ -50,7 +50,7 @@ ms.lasthandoff: 09/20/2017
   
 12. Dans la fenêtre de l’Assistant Publication, sélectionnez **vers un emplacement réseau** et cliquez sur **suivant**.  
   
-13. Dans le formulaire modèle chemin d’accès et le fichier de zone de texte Nom, tapez **http://localhost/sites/BASSite/Templates/\<MessageType > .xsn** et type  **\<MessageType >** sous la forme Zone de texte Nom du modèle et cliquez sur **suivant**.  
+13. Dans le formulaire modèle chemin d’accès et le fichier de zone de texte Nom, tapez **http://localhost/sites/BASSite/Templates/\<MessageType\>.xsn** et type  **\<MessageType\>**  nom de zone de texte dans le modèle de formulaire et cliquez sur **suivant**.  
   
 14. Cliquez sur **Suivant**.  
   
@@ -58,13 +58,13 @@ ms.lasthandoff: 09/20/2017
   
 16. Dans Internet Explorer, ouvrez votre site SharePoint **http://localhost/sites/bassite/templates**.  
   
-17. Pointez sur  **\<MessageType >**et cliquez sur la flèche bas en regard de celui-ci, puis cliquez sur **modifier les propriétés de**.  
+17. Pointez sur  **\<MessageType\>**et cliquez sur la flèche bas en regard de celui-ci, puis cliquez sur **modifier les propriétés de**.  
   
-18. Dans les modèles :\< MessageType > fenêtre, dans la zone de Namespace :  
+18. Dans les modèles :\< MessageType\> fenêtre, dans la zone de Namespace :  
   
     -   Si vous générez des formulaires InfoPath de MT, tapez : **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMTxxx**  
   
-    -   Si vous générez des formulaires InfoPath de MX, tapez : **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMX_\<MessageName >**  
+    -   Si vous générez des formulaires InfoPath de MX, tapez : **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMX _\<MessageName\>**  
   
          Cela permet d’identifier l’instance de message par le modèle correspondant.  
   

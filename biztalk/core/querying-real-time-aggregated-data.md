@@ -15,24 +15,24 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f02ec8a33fdb050462860efc6c6a0cd5f8fa5650
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2b71c3adbcbe5aaaea4d9fa4bf25b2aa4191c580
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="querying-real-time-aggregated-data"></a>Interrogation des données agrégées en temps réel
 Les données d'agrégation RTA sont disponibles pour d'éventuelles requêtes dans une vue SQL créée dynamiquement dans la base de données d'importation principale BAM.  
   
  Le nom de cette vue est  
   
- **bam_\<**  *ViewName* **> _\<**  *RTAName* **> _RTAView**  
+ **bam_\<**  *ViewName*  **\>_\<**  *RTAName*  **\>_RTAView**  
   
  Où  
   
- **\<***ViewName*  **>**  est l’attribut de nom de l’élément de la vue dans la définition BAM XML, qui est le même que le nom de vue entré dans les Assistants Microsoft Excel associés.  
+ **\<***ViewName*  **\>**  est l’attribut de nom de l’élément de la vue dans la définition BAM XML, qui est le même que le nom de vue entré dans les Assistants Microsoft Excel associés.  
   
- **\<***RTAName*  **>**  est l’attribut Name de l’élément RealTimeAggregation dans le XML de définition BAM, analyse BAM génère unique basé sur le nom de la vue.  
+ **\<***RTAName*  **\>**  est l’attribut Name de l’élément RealTimeAggregation dans le XML de définition BAM, analyse BAM génère unique basé sur le nom de la vue.  
   
  Il est essentiel que vous teniez compte des points suivants quand vous interrogez des données agrégées en temps réel :  
   

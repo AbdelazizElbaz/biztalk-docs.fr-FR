@@ -18,28 +18,28 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1968549cb2417a180ee69dff82f233c43a40318c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d064c06aec2698da1be3824ec709dac1702f8e40
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="lesson-2-submitting-an-mt103-message-that-is-not-valid"></a>Leçon 2 : Envoi d’un Message MT103 qui n’est pas valide
 Dans cette leçon, vous envoyez un message MT103 qui n’est pas valide, et puis vous résolvez l’erreur obtenu à l’aide des outils de votre système.  
   
 ### <a name="to-submit-an-mt103-message-that-is-not-valid"></a>Pour envoyer un message MT103 qui n’est pas valide  
   
-1.  Copiez le fichier MT103_Invalid_Sample.txt à partir de \< *lecteur :*> \Program Files\Microsoft BizTalk Accelerator pour SWIFT\SDK\Tutorial à \< *lecteur*> : \Labs\Inbound\ FlatFile dossier. Notez l’heure que vous déposez le fichier dans le dossier.  
+1.  Copiez le fichier MT103_Invalid_Sample.txt à partir de \< *lecteur :*\>\Program Files\Microsoft BizTalk Accelerator pour SWIFT\SDK\Tutorial à \< *lecteur* \>: \Labs\Inbound\FlatFile dossier. Notez l’heure que vous déposez le fichier dans le dossier.  
   
-2.  Ouvrez \< *lecteur :*> \Labs\Outbound pour vérifier qu’aucun fichier XML correspondant à MT103_Invalid_Sample.txt n’est dans le dossier. (Le fichier XML correspondant au message MT103_Sample.txt valid doit toujours figurer dans ce dossier.)  
+2.  Ouvrez \< *lecteur :*\>\Labs\Outbound pour vérifier qu’aucun fichier XML correspondant à MT103_Invalid_Sample.txt n’est dans le dossier. (Le fichier XML correspondant au message MT103_Sample.txt valid doit toujours figurer dans ce dossier.)  
   
-3.  Dans le bloc-notes, ouvrez le fichier MT103_Invalid_Sample.txt dans \< *lecteur :*> \Program Files\Microsoft BizTalk Accelerator pour SWIFT\SDK\Tutorial.  
+3.  Dans le bloc-notes, ouvrez le fichier MT103_Invalid_Sample.txt dans \< *lecteur :*\>\Program Files\Microsoft BizTalk Accelerator pour SWIFT\SDK\Tutorial.  
   
 4.  Démarrer **Administration de BizTalk Server**.  
   
 5.  Dans la Console Administration de BizTalk Server, développez **l’Observateur d’événements (Local)**, puis cliquez sur **Application**.  
   
-6.  Recherchez une entrée d’erreur qui a une source de BizTalk Accelerator pour SWIFT et une heure qui correspond à lorsque vous déposez le message non valide dans le \< *lecteur*> : \Labs\Inbound\FlatFile dossier. Double-cliquez sur cette entrée de l’erreur.  
+6.  Recherchez une entrée d’erreur qui a une source de BizTalk Accelerator pour SWIFT et une heure qui correspond à lorsque vous déposez le message non valide dans le \< *lecteur*\>: \Labs\Inbound\FlatFile dossier. Double-cliquez sur cette entrée de l’erreur.  
   
 7.  Dans la boîte de dialogue Propriétés de l’événement de l’erreur, vérifiez dans le volet Description que le message ayant échoué a été publié dans la MessageBox et le désassembleur SWIFT marqué **A4SWIFT_Failed** en tant que **True**. Fermez la boîte de dialogue Propriétés de l’événement.  
   

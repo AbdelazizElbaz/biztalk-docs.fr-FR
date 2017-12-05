@@ -13,11 +13,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ab096378820e27c640af3262b0ae39d2fa1c5810
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a6e603643ba1d969534e9954733572dc92acd04a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="node-types-and-ids-for-the-sql-server-adapter"></a>Types de nœuds et ID de l’adaptateur SQL Server
 
@@ -104,7 +104,7 @@ Le [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] surfaces SQL Server d
   
 |Artefact|Caractéristiques des métadonnées|  
 |--------------|------------------------------|  
-|Table ou vue|<ul><li>Nom de la table.</li><li>Noms de champs de table.</li><li>Types de données de champ de table sont mappés aux types WSDL simples ou complexes.</li><li>Longueur de champ de table est mappée à la facette maxLength.</li><li>Contrainte de clé primaire de table champ est mappé à la facette minOccurs = 1.</li><li>Contrainte de table champ NULL est mappée à la facette isNillable = true.</li><li>Opérations de table<br /><br /> <ul><li>INSERT</li><li>SELECT</li><li>UPDATE</li><li>DELETE</li><li>Définissez\<nom de colonne ></li></ul></li></ul>|  
+|Table ou vue|<ul><li>Nom de la table.</li><li>Noms de champs de table.</li><li>Types de données de champ de table sont mappés aux types WSDL simples ou complexes.</li><li>Longueur de champ de table est mappée à la facette maxLength.</li><li>Contrainte de clé primaire de table champ est mappé à la facette minOccurs = 1.</li><li>Contrainte de table champ NULL est mappée à la facette isNillable = true.</li><li>Opérations de table<br /><br /> <ul><li>INSERT</li><li>SELECT</li><li>UPDATE</li><li>DELETE</li><li>Définissez\<nom de la colonne\></li></ul></li></ul>|  
 |Procédure ou fonction|-Nom de fonction ou procédure est mappé au nom de l’opération.<br />-Noms de paramètre procédure ou fonction.<br />-Les types de données de paramètre procédure ou fonction sont mappés aux types WSDL.<br />-Direction du paramètre procédure ou fonction est mappée à la direction du paramètre WSDL.<br />-Procédure paramètre ou une fonction paramètre type longueur des données est mappée à la facette maxLength.<br />-Ordre des paramètres de fonction ou procédure est mappé à la séquence d’éléments.<br />-Fonction retourne le type de données est mappé au type WSDL.<br />-Fonction retourne la longueur du type de données est mappée à la facette maxLength.|  
   
  Pour plus d’informations sur le format des métadonnées qui le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] expose pour les artefacts et les opérations sur la base de données SQL Server, consultez [Messages et des schémas de Message pour l’adaptateur BizTalk pour SQL Server](messages-and-message-schemas-for-biztalk-adapter-for-sql-server.md).  

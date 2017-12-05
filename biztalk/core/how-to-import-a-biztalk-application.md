@@ -20,11 +20,11 @@ caps.latest.revision: "70"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e640a11c709b25336b2a1625c42ce40b49926982
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 65a2e29be82cb55b0c8509eb3adb346f48d5b794
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-import-a-biztalk-application"></a>Comment importer une Application BizTalk
 Cette rubrique décrit l'importation d'une application BizTalk dans un groupe BizTalk à l'aide de la console Administration de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ou de l'invite de commandes. Importer une application BizTalk inscrit les artefacts dans la base de données de gestion BizTalk et écrit les données des artefacts dans les bases de données BizTalk appropriées. Pour plus d’informations, consultez [que se passe-t-il lorsque artefacts sont importés](../core/what-happens-when-artifacts-are-imported.md). Le fait d'importer une application n'installe pas l'application. Vous devez installer une application incluant des artefacts basés sur un fichier pour qu'elle puisse s'exécuter.  
@@ -41,7 +41,7 @@ Cette rubrique décrit l'importation d'une application BizTalk dans un groupe Bi
 ## <a name="considerations-for-importing-applications"></a>Considérations relatives à l'importation d'applications  
  Lors de l'importation d'une application, tenez compte des éléments suivants :  
   
--   **L’importation d’applications à partir de versions précédentes de BizTalk Server**. Si vous importez des applications depuis BizTalk Server 2006 R2 ou BizTalk Server 2009 et que celles-ci contiennent des données de tiers EDI/AS2, l'importation peut échouer car le modèle de gestion des partenaires commerciaux a été considérablement modifié dans [!INCLUDE[prague](../includes/prague-md.md)]. Vous devez plutôt utiliser l'outil de migration de tiers pour migrer les données de tiers depuis les versions précédentes de BizTalk Server. Pour plus d’informations sur l’outil, consultez [migration des artefacts EDI à partir d’une Version précédente de BizTalk Server](http://msdn.microsoft.com/library/b956a97e-03d0-47ea-a2ce-c07a339c0f2c).  
+-   **L’importation d’applications à partir de versions précédentes de BizTalk Server**. Si vous importez des applications à partir de BizTalk Server 2006 R2 ou BizTalk Server 2009 et les applications contiennent des données de tiers EDI/AS2, l’importation peut échouer, car le modèle de gestion des partenaires commerciaux a considérablement changé dans BizTalk Server. Vous devez plutôt utiliser l'outil de migration de tiers pour migrer les données de tiers depuis les versions précédentes de BizTalk Server. Pour plus d’informations sur l’outil, consultez [migration des artefacts EDI à partir d’une Version précédente de BizTalk Server](http://msdn.microsoft.com/library/b956a97e-03d0-47ea-a2ce-c07a339c0f2c).  
   
 -   **Les liaisons existantes sont toujours remplacées par les liaisons importées.** Lorsque vous importez un fichier .msi contenant des liaisons dans une application existante, les liaisons existantes sont remplacées par celles importées portant le même nom, et ce même si vous n'avez pas sélectionné l'option de remplacement des artefacts existants lors de l'importation du fichier .msi. Pour éviter que les liaisons de l'application exportée ne remplacent les liaisons de l'application dans laquelle vous importez le fichier .msi, ne sélectionnez pas le fichier de liaison en tant que ressource à exporter pendant l'opération d'exportation. Pour plus d’informations, consultez [comment exporter une Application BizTalk](../core/how-to-export-a-biztalk-application.md).  
   
@@ -94,7 +94,7 @@ Cette rubrique décrit l'importation d'une application BizTalk dans un groupe Bi
     > [!NOTE]
     >  Si vous ne sélectionnez pas cette option et que le fichier .msi contient un artefact existant déjà dans l'application, l'opération d'importation échoue et est annulée. Certains types d'artefact d'une application ou d'un groupe BizTalk doivent être uniques. Si vous ajoutez un artefact existant déjà dans le groupe BizTalk mais pas dans l'application actuelle, l'opération d'importation échoue, même si vous avez activé l'option de remplacement. Pour plus d’informations sur les artefacts doivent être uniques et de quelle manière ils doivent être uniques, consultez [artefacts que doit être Unique dans une Application ou d’un groupe](../core/artifacts-that-must-be-unique-in-an-application-or-group.md).  
   
-7.  Dans la page Paramètres d’environnement cible Application, dans le **environnement intermédiaire cible** la liste déroulante, sélectionnez l’environnement cible pour cette application, puis cliquez sur **suivant**. Cette liste comprend tous les environnements spécifiés pour les fichiers de liaison ajoutés à cette application. Sélectionnez \<par défaut > Si vous souhaitez appliquer toutes les liaisons dans l’application à l’exception de celles qui ont un environnement cible spécifié. Si le fichier .msi ne contient pas un fichier de liaison que vous souhaitez appliquer explicitement, vous pouvez laisser \<par défaut > sélectionnée.  
+7.  Dans la page Paramètres d’environnement cible Application, dans le **environnement intermédiaire cible** la liste déroulante, sélectionnez l’environnement cible pour cette application, puis cliquez sur **suivant**. Cette liste comprend tous les environnements spécifiés pour les fichiers de liaison ajoutés à cette application. Sélectionnez \<par défaut\> si vous souhaitez appliquer toutes les liaisons dans l’application à l’exception de celles qui ont un environnement cible spécifié. Si le fichier .msi ne contient pas un fichier de liaison que vous souhaitez appliquer explicitement, vous pouvez laisser \<par défaut\> sélectionné.  
   
     > [!NOTE]
     >  Vous spécifiez l'environnement cible des liaisons lorsque vous ajoutez un fichier de liaison à une application. Pour plus d’informations, consultez [déploiement d’applications et des fichiers de liaison](../core/binding-files-and-application-deployment.md). Pour obtenir des instructions sur l’ajout de fichiers de liaison, consultez [l’ajout d’un fichier de liaison à une Application](../core/how-to-add-a-binding-file-to-an-application2.md).  

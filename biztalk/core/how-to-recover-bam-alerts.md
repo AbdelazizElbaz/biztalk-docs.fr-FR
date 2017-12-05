@@ -12,11 +12,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 37c18265712fa2f0dd1bb2d83d756cc9a9bd1505
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ec36491dd7368e0e2fdbcd8fb5abab9d840c6b1e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-recover-bam-alerts"></a>Récupération des alertes BAM
 Si vous utilisez l'analyse BAM, vous devez récupérer les alertes BAM dans le cadre de la récupération de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
@@ -30,7 +30,7 @@ Si vous utilisez l'analyse BAM, vous devez récupérer les alertes BAM dans le c
   
 2.  À l'invite de commandes, tapez :  
   
-     **NSControl register - name BamAlerts-server***\<nom_serveur >***-service - serviceusername «**  *\<ServiceUserName >* **« - servicepassword »**  *\<ServicePassword >* **»**   
+     **NSControl register - name BamAlerts-server***\<nom_serveur\>***-service - serviceusername «**  *\< ServiceUserName\>*  **« - servicepassword »**  *\<ServicePassword\>*  **»**   
   
      Cette commande permet à Notification Services de se connecter à la base de données appropriée (ces informations sont conservées par nscontrol dans le Registre de l'ordinateur du service).  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 793378e25c3ba92170e1da36b0c8276ab13357ae
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: adad4d98be93e17bef4ab5eeb9e49271ffc94b74
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-add-swiftnet-configuration-to-the-paramfile-for-the-fileact-real-time-scenario"></a>Étape 2 : Ajouter SWIFTNet Configuration pour le Paramfile pour le scénario en temps réel FileAct
 Les partenaires message créés dans les trous doivent être spécifiés dans le paramfile SWIFTNet pour activer les récepteurs initialiser avec ces valeurs.  
@@ -44,7 +44,7 @@ Les partenaires message créés dans les trous doivent être spécifiés dans le
   
      subsystem_start :  
   
-     **Création d’un « snlreceiver - SagMessagePartner \<MessagePartnerName de serveur pour fileact RT > - AdapterMode fileact »**  
+     **Création d’un « snlreceiver - SagMessagePartner \<MessagePartnerName de serveur pour fileact RT \> - AdapterMode fileact »**  
   
      * FIN  
   
@@ -92,4 +92,4 @@ Les partenaires message créés dans les trous doivent être spécifiés dans le
  [Scénario en temps réel de FileAct](../../adapters-and-accelerators/fileact-interact/fileact-real-time-scenario.md)   
  [Étape 1 : Configurer l’adaptateur SWIFT pour le scénario en temps réel FileAct](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-fileact-real-time-scenario.md)   
  [Étape 3 : Créer les Ports d’envoi et Ports de réception pour le scénario en temps réel FileAct](../../adapters-and-accelerators/fileact-interact/step-3-create-the-send-ports-and-receive-ports-for-fileact-real-time-scenario.md)   
- [Étape 4 : Tester le scénario de bout en bout FileAct en temps réel](../../adapters-and-accelerators/fileact-interact/step-4-test-fileact-real-time-end-to-end-scenario.md)
+ [Étape 4 : Tester le scénario en temps réel FileAct de bout en bout](../../adapters-and-accelerators/fileact-interact/step-4-test-fileact-real-time-end-to-end-scenario.md)

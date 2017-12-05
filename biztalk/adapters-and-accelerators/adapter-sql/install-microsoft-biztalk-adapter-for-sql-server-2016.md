@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9d4df12cfc9e37ed5deff59051cb483dd092facb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bab2a1edc7f3f19a8f76a041472a8c6d01b7743d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="install-microsoft-biztalk-adapter-for-sql-server---2016"></a>Installez l’adaptateur Microsoft BizTalk pour SQL Server - 2016
 Installer le [!INCLUDE[adaptersql_md](../../includes/adaptersql-md.md)] inclus avec [!INCLUDE[bts2016_md](../../includes/bts2016-md.md)].
@@ -194,7 +194,7 @@ Effectuez les étapes suivantes pour effectuer une installation sans assistance 
 #### <a name="register-the-bindings"></a>Inscrire les liaisons  
 Effectuez ces étapes *uniquement* si l’Assistant installation ne parvient pas à inscrire des liaisons de l’adaptateur dans le fichier machine.config.  
   
-1.  Accédez au fichier machine.config sur l’ordinateur. Par exemple, sur une plateforme 32 bits, le fichier machine.config est disponible sous \<lecteur système > : \WINDOWS\Microsoft.NET\Framework\\< version\>\CONFIG.  
+1.  Accédez au fichier machine.config sur l’ordinateur. Par exemple, sur une plateforme 32 bits, le fichier machine.config est disponible sous \<lecteur système\>: \WINDOWS\Microsoft.NET\Framework\\< version\>\CONFIG.  
   
 2.  Ouvrez le fichier à l’aide d’un éditeur de texte.  
   
@@ -338,11 +338,11 @@ Effectuez les étapes suivantes pour déterminer la clé publique et la version 
   
 Effectuez ces étapes *uniquement* si l’Assistant installation ne parvient pas à supprimer les liaisons de l’adaptateur à partir du fichier machine.config.  
   
-1.  Accédez au fichier machine.config sur l’ordinateur. Par exemple, sur une plateforme 32 bits, le fichier machine.config est disponible sous \<lecteur système > : \WINDOWS\Microsoft.NET\Framework\\< version\>\CONFIG.  
+1.  Accédez au fichier machine.config sur l’ordinateur. Par exemple, sur une plateforme 32 bits, le fichier machine.config est disponible sous \<lecteur système\>: \WINDOWS\Microsoft.NET\Framework\\< version\>\CONFIG.  
   
-    -   Pour Microsoft .NET Framework 3.5 SP1, \< *version*> est le v2.0.50727 version du .NET Framework.  
+    -   Pour Microsoft .NET Framework 3.5 SP1, \< *version* \> est la version v2.0.50727 du .NET Framework.  
   
-    -   Pour Microsoft [!INCLUDE[netfx40_short](../../includes/netfx40-short-md.md)], \< *version*> est le v4.0.30319 de version du .NET Framework.  
+    -   Pour Microsoft [!INCLUDE[netfx40_short](../../includes/netfx40-short-md.md)], \< *version* \> est la version v4.0.30319 du .NET Framework.  
   
 2.  Ouvrez le fichier à l’aide d’un éditeur de texte.  
   
@@ -381,4 +381,4 @@ Effectuez ces étapes *uniquement* si l’Assistant installation ne parvient pas
   
 ## <a name="see-also"></a>Voir aussi
 [Installer l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/install-the-sql-adapter.md)  
-[Comprendre l’adaptateur BizTalk pour SQL Server](../../adapters-and-accelerators/adapter-sql/understand-biztalk-adapter-for-sql-server.md)
+[Présentation de l’adaptateur BizTalk pour SQL Server](../../adapters-and-accelerators/adapter-sql/understand-biztalk-adapter-for-sql-server.md)

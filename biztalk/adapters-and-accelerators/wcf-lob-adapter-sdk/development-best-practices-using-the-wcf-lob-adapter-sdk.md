@@ -12,11 +12,11 @@ caps.latest.revision: "28"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d9786896a4a5983a438dd855dcc858ba4485cbc1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4693d3ae4a443138c078e0da415fb72205dbd528
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="development-best-practices-using-the-wcf-lob-adapter-sdk"></a>Recommandées de développement à l’aide de WCF LOB Adapter SDK
 Vous pouvez utiliser les meilleures pratiques dans cette rubrique afin d’améliorer vos applications et les cartes.  
@@ -103,7 +103,7 @@ public interface ICalculator
 |------------|-----------------|  
 |Moment du design|Lorsque vous utilisez la [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)], vous pouvez spécifier les types d’informations d’identification du client qui prend en charge de la carte.|  
 |Durée d’exécution|Lorsque vous utilisez un proxy .NET CLR généré, vous pouvez définir par programme le client informations d’identification.<br /><br /> `static void Main(string[] args) {    EchoServiceClient client = new EchoServiceClient();    client.ClientCredentials.UserName.UserName = "TestUser";    client.ClientCredentials.UserName.Password = "TestPassword";    string response=client.EchoString("Test String"); }`<br /><br /> Si vous avez besoin d’interagir directement avec le canal, vous pouvez également utiliser le modèle de canal WCF pour spécifier les informations d’identification du client lors de la création d’une fabrique de canaux.<br /><br /> `EchoAdapterBinding binding = new EchoAdapterBinding(); binding.Count = 3; ClientCredentials clientCredentials = new ClientCredentials(); clientCredentials.UserName.UserName = "TestUser"; clientCredentials.UserName.Password = "TestPassword"; BindingParameterCollection bindingParms = new BindingParameterCollection(); bindingParms.Add(clientCredentials); EndpointAddress address = new EndpointAddress("echo://"); IChannelFactory<IRequestChannel> requestChannelFactory = binding.BuildChannelFactory<IRequestChannel>(bindingParms); requestChannelFactory.Open();`|  
-|Configuration WCF|Dans le fichier de configuration client, ajoutez une \<endpointBehaviors > élément inclut \<clientCredentials >.<br /><br /> `<configuration xmlns="http://schemas.microsoft.com/.NetConfiguration/v2.0">       <system.serviceModel>           . . . . .           <behaviors>             <endpointBehaviors>               <behavior name="clientEndpointCredential">                 <clientCredentials>                   <windows allowNtlm="false" allowedImpersonationLevel="Delegation" />                    </clientCredentials>               </behavior>             </endpointBehaviors>           </behaviors>       </system.serviceModel>   </configuration>`|  
+|Configuration WCF|Dans le fichier de configuration client, ajoutez une \<endpointBehaviors\> élément inclut \<clientCredentials\>.<br /><br /> `<configuration xmlns="http://schemas.microsoft.com/.NetConfiguration/v2.0">       <system.serviceModel>           . . . . .           <behaviors>             <endpointBehaviors>               <behavior name="clientEndpointCredential">                 <clientCredentials>                   <windows allowNtlm="false" allowedImpersonationLevel="Delegation" />                    </clientCredentials>               </behavior>             </endpointBehaviors>           </behaviors>       </system.serviceModel>   </configuration>`|  
 |À l’aide de BizTalk|Lorsque vous utilisez l’adaptateur WCF pour consommer votre carte, vous pouvez ajouter la **clientCredentials** extension de comportement sur le **comportement** onglet. Une fois qu’il a été ajouté, vous pouvez définir des informations d’identification du client souhaité dans le comportement de point de terminaison.|  
   
 ## <a name="do-not-return-both-strongdatasettype-and-weakdatasettype"></a>Ne retournent pas les deux StrongDataSetType et WeakDataSetType  
@@ -137,16 +137,16 @@ internal static QualifiedType GetDataSetQualifiedType(MyAdapterBindingProperties
  Par exemple, si `DefaultXsdFileNamePrefix` est défini sur « MyAdapter » et le `fileNameHint` annotation est définie sur « Stream », le schéma XSD créé est nommé MyAdapterStream.xsd.  
   
 ```  
-\<xs:schema elementFormDefault='qualified' targetNamespace='http://schemas.microsoft.com/Message' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:tns='http://schemas.microsoft.com/Message'>  
-\<xs:annotation>  
-\<xs:appinfo>  
-\<fileNameHint xmlns='http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd'>Stream</fileNameHint>  
-\</xs:appinfo>  
-\</xs:annotation>  
-\<xs:simpleType name='StreamBody'>  
-\<xs:restriction base='xs:base64Binary' />  
-\</xs:simpleType>  
-\</xs:schema>  
+<xs:schema elementFormDefault='qualified' targetNamespace='http://schemas.microsoft.com/Message' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:tns='http://schemas.microsoft.com/Message'>  
+<xs:annotation>  
+<xs:appinfo>  
+<fileNameHint xmlns='http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd'>Stream</fileNameHint>  
+</xs:appinfo>  
+</xs:annotation>  
+<xs:simpleType name='StreamBody'>  
+<xs:restriction base='xs:base64Binary' />  
+</xs:simpleType>  
+</xs:schema>  
   
 ```  
   

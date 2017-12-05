@@ -12,11 +12,11 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a63953b0928915a8fea5b357722cd4e34f1b900c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1144b7e6827882b37f6f9991a7315cdc3cdbb88d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-use-the-adapter-service-development-wizard-to-create-the-web-project"></a>Étape 1 : Utiliser l’Assistant développement d’adaptateurs pour créer le projet Web
 ![Étape 1 sur 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
@@ -68,12 +68,12 @@ ms.lasthandoff: 09/20/2017
     |**EchoInUpperCase**|False|  
   
     > [!NOTE]
-    >  Les propriétés de l’URI sélectionnées ici permet de créer le \< **client**>\<**point de terminaison**> dans le fichier web.config.  
+    >  Les propriétés de l’URI sélectionnées ici permet de créer le \< **client**\>\<**point de terminaison** \> éléments dans le fichier web.config.  
   
 4.  Cliquez sur le **propriétés de liaison** onglet. Notez les valeurs par défaut, puis cliquez sur **OK**.  
   
     > [!NOTE]
-    >  Les valeurs de liaison permet de générer le \< **liaisons**>\<**echoAdapterBindingV2**> dans le fichier web.config.  
+    >  Les valeurs de liaison permet de générer le \< **liaisons**\>\<**echoAdapterBindingV2** \> éléments dans le fichier web.config.  
   
 ### <a name="to-select-the-contract-and-operations"></a>Pour sélectionner le contrat et les opérations  
   
@@ -101,7 +101,7 @@ ms.lasthandoff: 09/20/2017
     |**Nom**|customServiceBehavior|  
     |**UseServiceCertificate**|False|  
   
-     Ces valeurs sont utilisées pour remplir la \< **serviceBehaviors**>.  
+     Ces valeurs sont utilisées pour remplir la \< **serviceBehaviors**\>.  
   
 2.  Entrez les valeurs suivantes pour **Configuration de comportement de point de terminaison**:  
   
@@ -135,4 +135,4 @@ ms.lasthandoff: 09/20/2017
  Pour générer et déployer le projet Web, passez à [étape 2 : déployer le projet Web](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-deploy-the-web-project.md)  
   
 ## <a name="see-also"></a>Voir aussi  
- [Didacticiel 1 : Développer l’adaptateur d’écho](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)
+ [Didacticiel 1 : Développer l’adaptateur Echo](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)

@@ -15,11 +15,11 @@ caps.latest.revision: "35"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fad45e80cac2a398507b4288c9ac6f35c887e71b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 549f343818464a8316246f8b6996755ce5fef136
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="httprequestresponse"></a>HTTPRequestResponse
 L'exemple HTTPRequestResponse présente l'utilisation du filtre ISAPI (Internet Server Application Programming Interface) de Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] pour autoriser une application ASP.NET à communiquer avec une orchestration [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
@@ -36,7 +36,7 @@ L'exemple HTTPRequestResponse présente l'utilisation du filtre ISAPI (Internet 
  L'application ASP.NET reçoit l'accusé de réception de bon de commande et actualise le formulaire Web avec des informations d'état extraites de la réponse.  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
- *\<Exemples de chemin d’accès >*\AdaptersUsage\HTTPRequestResponse\  
+ *\<Exemples de chemin d’accès\>*\AdaptersUsage\HTTPRequestResponse\  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -57,7 +57,7 @@ L'exemple HTTPRequestResponse présente l'utilisation du filtre ISAPI (Internet 
   
 1.  Dans une fenêtre de commande, accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \AdaptersUsage\HTTPRequestResponse  
+     \<*Exemples de chemin d’accès*\>\AdaptersUsage\HTTPRequestResponse  
   
 2.  Exécutez le fichier Setup.bat, qui effectue les actions suivantes :  
   
@@ -77,7 +77,7 @@ L'exemple HTTPRequestResponse présente l'utilisation du filtre ISAPI (Internet 
         > [!IMPORTANT]
         >  Vous devez modifier l'exemple de code qui implémente l'application Web (Default.aspx.cs) pour refléter votre environnement :  
         >   
-        >  http://\<*nom du serveur*>/\<*répertoire virtuel*>/BTSHTTPReceive.dll où `<servername>` est le nom du serveur Web que vous publiez et `<` *répertoire virtuel* `>` est le répertoire virtuel où réside ce fichier.  
+        >  http://\<*nom du serveur*\>/\<*répertoire virtuel*\>/BTSHTTPReceive.dll où `<servername>` est le nom du site Web serveur, vous publiez et `<` *répertoire virtuel* `>` est le répertoire virtuel où réside ce fichier.  
   
         > [!NOTE]
         >  Avant de tenter d'exécuter cet exemple, vous devez confirmer que BizTalk n'a signalé aucune erreur durant le processus de création et d'initialisation.  
@@ -127,4 +127,4 @@ L'exemple HTTPRequestResponse présente l'utilisation du filtre ISAPI (Internet 
  Vous pouvez étendre cet exemple aux applications obligatoires pour l'envoi de données à [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] via un formulaire Web, ou via le HTTP en général. L'extension de la portion de l'application ASP.NET de cet exemple permet d'émettre des requêtes pour d'autres informations et d'effectuer d'autres pré-traitements avant l'envoi des données à [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
 ## <a name="see-also"></a>Voir aussi  
- [Exemples d’adaptateur HTTP](../core/http-adapter-samples.md)
+ [Exemples d’adaptateurs HTTP](../core/http-adapter-samples.md)

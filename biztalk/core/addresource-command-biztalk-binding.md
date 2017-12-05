@@ -12,11 +12,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4e19e1961293002e8b4169a6fee55708cf3217d7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 00f9a5eac7d2c6f2be72ba78ee4c538ca505151e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="addresource-command-biztalk-binding"></a>Commande AddResource : Liaison de BizTalk
 Pour ajouter un fichier de liaison à une application BizTalk, vous utilisez la **AddResource** de commandes et spécifiez **System.BizTalk : biztalkbinding** pour le **Type** paramètre. Lorsque vous ajoutez un fichier de liaison, vous pouvez indiquer un environnement de déploiement en particulier. Lorsque vous importerez ensuite l'application, vous pourrez sélectionner cet environnement de déploiement pour y appliquer les liaisons. Vous pouvez ajouter à une application BizTalk autant de fichiers de liaison que vous le souhaitez et définir un environnement de déploiement différent pour chacun. Pour ajouter plusieurs fichiers de liaison, exécutez la commande AddResource sur chaque fichier à ajouter.  
@@ -25,7 +25,7 @@ Pour ajouter un fichier de liaison à une application BizTalk, vous utilisez la 
   
  L'exécution de cette commande entraîne l'ajout du fichier de liaison à la base de données de gestion BizTalk ainsi que l'affichage du fichier dans le dossier Ressources de l'application. En outre, le fichier apparaît lorsque vous utilisez la [commande ListApp](../core/listapp-command.md). Contrairement à l'importation d'un fichier de liaison, l'ajout d'un tel fichier ne modifie pas immédiatement les liaisons existantes. Les liaisons ne sont pas appliquées tant que l'application n'a pas été importée dans un autre groupe BizTalk.  
   
- Lorsque vous ajoutez un fichier de liaison, vous pouvez spécifier son environnement de déploiement à l'aide du paramètre facultatif de la propriété « TargetEnvironment ». La valeur de ce paramètre peut être une chaîne qui représente l'environnement de déploiement dans lequel vous voulez appliquer les liaisons du fichier : « test » ou « production » par exemple. Si vous ne spécifiez pas une valeur pour le paramètre de cette propriété, la valeur  **\<par défaut >** est automatiquement spécifiée, et ce fichier de liaison est appliqué à chaque fois que l’application est importée.  
+ Lorsque vous ajoutez un fichier de liaison, vous pouvez spécifier son environnement de déploiement à l'aide du paramètre facultatif de la propriété « TargetEnvironment ». La valeur de ce paramètre peut être une chaîne qui représente l'environnement de déploiement dans lequel vous voulez appliquer les liaisons du fichier : « test » ou « production » par exemple. Si vous ne spécifiez pas une valeur pour le paramètre de cette propriété, la valeur  **\<par défaut\>**  est automatiquement spécifiée, et ce fichier de liaison est appliqué à chaque fois que l’application est importée.  
   
  Lorsque vous importez une application qui comprend un ou plusieurs fichiers de liaison ainsi ajoutés de manière explicite, vous pouvez sélectionner le ou les fichiers de liaison à appliquer en spécifiant la valeur du paramètre de propriété. Les liaisons sont appliquées lors de l'importation de l'application.  
   
@@ -49,7 +49,7 @@ Pour ajouter un fichier de liaison à une application BizTalk, vous utilisez la 
 |**/ ApplicationName** (ou **/A**, consultez la section Notes)|Non|Nom de l'application BizTalk à laquelle ajouter le fichier de liaison. Si le nom comprend des espaces, vous devez le placer entre guillemets doubles («). Si le nom de l'application n'est pas spécifié, l'application utilisée est l'application BizTalk définie par défaut.|  
 |**/ Type** (ou **/T**, consultez la section Notes)|Oui|**System.BizTalk : biztalkbinding** (cette valeur ne respecte pas la casse).|  
 |**/ Source** (ou **/So**, consultez la section Notes)|Oui|Chemin d'accès complet du fichier de liaison, nom du fichier inclus. Si le chemin d'accès comprend des espaces, vous devez le placer entre guillemets doubles (").|  
-|**/Property:TargetEnvironment =** (ou **/P:TargetEnvironment =**, consultez la section Notes)|Non|Chaîne indiquant l'environnement de déploiement cible. Vous pouvez la chaîne de votre choix (ex. : Production). Exemple : **/Property:TargetEnvironment = « Production »**<br /><br /> Si non spécifié, la valeur  **\<par défaut >** est appliqué automatiquement. La valeur respecte la casse. Si elle comprend des espaces, vous devez la placer entre guillemets doubles ("). La longueur maximale de cette valeur ne doit pas dépasser 128 caractères.|  
+|**/Property:TargetEnvironment =** (ou **/P:TargetEnvironment =**, consultez la section Notes)|Non|Chaîne indiquant l'environnement de déploiement cible. Vous pouvez la chaîne de votre choix (ex. : Production). Exemple : **/Property:TargetEnvironment = « Production »**<br /><br /> Si non spécifié, la valeur  **\<par défaut\>**  est appliqué automatiquement. La valeur respecte la casse. Si elle comprend des espaces, vous devez la placer entre guillemets doubles ("). La longueur maximale de cette valeur ne doit pas dépasser 128 caractères.|  
 |**/ Remplacer** (ou **/Ov**, consultez la section Notes)|Non|Option permettant de mettre à jour un fichier de liaison existant. Si cette option n'est pas spécifiée et qu'un fichier de liaison, dont le nom est le même que celui du fichier à ajouter, existe déjà dans l'application, l'opération AddResource échoue.|  
 |**/ Serveur** (ou **/Se**, consultez la section Notes)|Non|Nom de l'instance SQL Server hébergeant la base de données de gestion BizTalk et indiqué sous la forme NomServeur\NomInstance,Port.<br /><br /> Le nom de l'instance est uniquement requis lorsqu'il est différent du nom du serveur. Le port est uniquement requis lorsque le serveur SQL Server utilise un numéro de port autre que celui par défaut (1433).<br /><br /> Exemples :<br /><br /> Server=MyServer<br /><br /> Server=MyServer\MySQLServer,1533<br /><br /> Si vous n'indiquez pas de nom pour l'instance SQL Server, le nom d'instance utilisé est celui de l'instance SQL Server exécutée sur l'ordinateur local.|  
 |**/ Base de données** (ou **/Da**, consultez la section Notes)|Non|Nom de la base de données de gestion BizTalk. Si n’est fourni, la base de données de gestion BizTalk en cours d’exécution dans l’instance locale de SQL Server est utilisé.|  
@@ -62,4 +62,4 @@ Pour ajouter un fichier de liaison à une application BizTalk, vous utilisez la 
   
 ## <a name="see-also"></a>Voir aussi  
  [Commande AddResource](../core/addresource-command.md)   
- [Comment ajouter un fichier de liaison à une Application](../core/how-to-add-a-binding-file-to-an-application2.md)
+ [Comment ajouter un fichier de liaison à une application](../core/how-to-add-a-binding-file-to-an-application2.md)

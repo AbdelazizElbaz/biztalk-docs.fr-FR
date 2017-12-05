@@ -12,11 +12,11 @@ caps.latest.revision: "47"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 68fc5e0a90fdfcaa6c3b6e5f6ae280d320be5647
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 850d0ee715984c7465063addd778828c727e0233
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="walkthrough-using-the-message-security-mode-with-the-wcf-nettcp-adapter"></a>Procédure pas à pas : À l’aide du Mode de sécurité de Message avec l’adaptateur WCF-NetTcp
   
@@ -40,11 +40,11 @@ ms.lasthandoff: 09/20/2017
 ## <a name="prerequisites"></a>Conditions préalables  
  Pour exécuter la procédure décrite dans cet exemple, assurez-vous que votre environnement installe les composants requis suivants :  
   
--   L’ordinateur qui génère les assemblys et exécute le processus de déploiement et l’ordinateur qui exécute l’exemple, requièrent Microsoft [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)], Microsoft [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]et Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)].  
+-   L’ordinateur qui génère les assemblys et exécute le processus de déploiement et l’ordinateur qui exécute l’exemple, requièrent Microsoft [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)], Microsoft [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]et Microsoft BizTalk Server.  
   
--   L'ordinateur utilisé pour générer les assemblys et exécuter le processus de déploiement requiert Microsoft [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
+-   L’ordinateur utilisé pour générer les assemblys et exécuter le processus de déploiement requiert Microsoft Visual Studio.  
   
--   L'ordinateur qui exécute l'exemple requiert les adaptateurs [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] et les outils d'administration de [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]. Il s'agit d'options à installer lors de l'installation de Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)].  
+-   L'ordinateur qui exécute l'exemple requiert les adaptateurs [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] et les outils d'administration de [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]. Il s’agit des options d’installation lors de l’installation de Microsoft BizTalk Server.  
   
 -   Sur les ordinateurs utilisés pour effectuer des tâches d'administration, vous devez exécuter un compte d'utilisateur membre du groupe Administrateurs [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] pour configurer les paramètres d'application de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] à l'intérieur de la console Administration de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Ce compte d'utilisateur doit également être membre du groupe Administrateurs local pour le déploiement d'application, la gestion d'instances de l'hôte et d'autres tâches éventuellement requises.  
   
@@ -92,7 +92,7 @@ ms.lasthandoff: 09/20/2017
     3.  Sur le **demande de certificat avancée** , tapez `contoso` dans les **nom** zone de texte, sélectionnez **certificat d’authentification Client** à partir de la  **Type de certificat nécessaire** liste déroulante, puis cliquez sur **Submit**.  
   
     > [!NOTE]
-    >  Le certificat d'authentification client est utilisé si vous exécutez [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] sur un ordinateur distinct du contrôleur de domaine. La configuration s'effectue dans la boîte de dialogue des propriétés de l'adaptateur.  
+    >  Le certificat d’authentification client est utilisé si vous exécutez BizTalk Server sur un ordinateur distinct du contrôleur de domaine. La configuration s'effectue dans la boîte de dialogue des propriétés de l'adaptateur.  
   
 4.  Émettez les certificats à l'aide de la console de gestion d’autorité de certification comme suit :  
   

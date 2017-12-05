@@ -15,11 +15,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 26e840148b4a5cfb8b390d5e89ee0e8edc677aad
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2987d58e17ea7ddbd0db5b0a4d242f9ff42afec5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="poll-oracle-database-using-the-select-statement"></a>Base de données Oracle interrogation à l’aide de l’instruction SELECT
 Vous pouvez configurer le [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] pour recevoir des messages de modification de données périodiques à l’aide d’une instruction SELECT pour interroger en permanence des tables et des vues dans la base de données Oracle d’Oracle. Vous pouvez spécifier une instruction SELECT comme une instruction d’interrogation de l’adaptateur s’exécute périodiquement pour interroger la base de données Oracle. Si vous le souhaitez, vous pouvez également spécifier un bloc de code après interrogation PL/SQL qui s’exécute de l’adaptateur s’il existe une modification de données. Ce bloc est souvent utilisé pour mettre à jour un champ sur les enregistrements interrogées dans la cible ou pour déplacer les enregistrements de requête vers une autre table ou vue.  
@@ -126,7 +126,7 @@ SELECT * FROM ACCOUNTACTIVITY FOR UPDATE
     |Utiliser|Pour effectuer cette opération|  
     |--------------|----------------|  
     |Identificateur|Type **réception**.|  
-    |Type de message|Dans la liste déroulante, développez **schémas**, puis sélectionnez *TablePolling.OracleDBBinding*, où *TablePolling* est le nom de votre projet BizTalk. *OracleDBBindingSchema* est le schéma de réponse généré pour le **POLLINGSTMT** opération sur la table ACCOUNTACTIVITY.<br /><br /> **Important** , car l’interrogation est une opération unidirectionnelle, le schéma généré par l’adaptateur ne contient pas un nœud de la réponse, et il n'est qu’un seul nœud racine dans le schéma. Si vous utilisez ce type de schéma pour un type de message, vous devez identifier le schéma par le nom de fichier du schéma généré.<br /><br /> Par exemple, si vous créez le schéma pour une opération bidirectionnelle, les nœuds dans le schéma de fichier avec un nom `OracleDBBindingSchema` peut ressembler à « Requête » et « Réponse ». Si vous souhaitez créer un message dans l’orchestration qui mappe au schéma de requête, vous pouvez identifier le schéma dans la liste en recherchant `OracleDBBindingSchema.Request`. Toutefois, dans le cas d’opération d’interrogation, car le seul nœud est « POLLINGSTMT », il n’est pas facile d’identifier le schéma que vous voulez mapper à, car les schémas avec des nœuds individuels ne sont pas répertoriées en tant que \<schemafilename >.\< rootnodename >. Au lieu de cela, ces schémas sont répertoriées par uniquement le nom de fichier. Dans ce cas, la seule façon d’identifier le schéma est par le nom de fichier de schéma, par exemple, OracleDBBindingSchema.|  
+    |Type de message|Dans la liste déroulante, développez **schémas**, puis sélectionnez *TablePolling.OracleDBBinding*, où *TablePolling* est le nom de votre projet BizTalk. *OracleDBBindingSchema* est le schéma de réponse généré pour le **POLLINGSTMT** opération sur la table ACCOUNTACTIVITY.<br /><br /> **Important** , car l’interrogation est une opération unidirectionnelle, le schéma généré par l’adaptateur ne contient pas un nœud de la réponse, et il n'est qu’un seul nœud racine dans le schéma. Si vous utilisez ce type de schéma pour un type de message, vous devez identifier le schéma par le nom de fichier du schéma généré.<br /><br /> Par exemple, si vous créez le schéma pour une opération bidirectionnelle, les nœuds dans le schéma de fichier avec un nom `OracleDBBindingSchema` peut ressembler à « Requête » et « Réponse ». Si vous souhaitez créer un message dans l’orchestration qui mappe au schéma de requête, vous pouvez identifier le schéma dans la liste en recherchant `OracleDBBindingSchema.Request`. Toutefois, dans le cas d’opération d’interrogation, car le seul nœud est « POLLINGSTMT », il n’est pas facile d’identifier le schéma que vous voulez mapper à, car les schémas avec des nœuds individuels ne sont pas répertoriées en tant que \<schemafilename\>.\< rootnodename\>. Au lieu de cela, ces schémas sont répertoriées par uniquement le nom de fichier. Dans ce cas, la seule façon d’identifier le schéma est par le nom de fichier de schéma, par exemple, OracleDBBindingSchema.|  
   
 ## <a name="setting-up-the-orchestration"></a>Configuration de l’Orchestration  
  Vous devez créer une orchestration BizTalk à utiliser [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] pour recevoir les messages de modification de données reposant sur l’interrogation à partir d’Oracle. Dans cette orchestration, l’adaptateur reçoit la réponse en exécutant l’instruction SELECT spécifiée pour le **PollingStatement** propriété de liaison. Le message de réponse pour l’instruction SELECT est enregistré dans un emplacement de fichier. Contiendrait une orchestration classique de l’interrogation de la base de données Oracle :  
@@ -216,7 +216,7 @@ SELECT * FROM ACCOUNTACTIVITY FOR UPDATE
 -   L’adaptateur exécute l’instruction SELECT pour le **PollingStatement** liaison de propriété et retourne toutes les lignes dans la table ACCOUNTACTIVITY. La réponse à partir de la base de données Oracle ressemble à ceci :  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <POLLINGSTMT xmlns="http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMT">  
       <POLLINGSTMTRECORD>  
         <POLLINGSTMTRECORD>  

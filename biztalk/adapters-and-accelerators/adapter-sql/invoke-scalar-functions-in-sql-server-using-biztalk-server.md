@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e364788c3ade85d575fffcc452ca769f367ca9b6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0eac2bf4da5bae8b3770cd203dfeac45317fec55
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-scalar-functions-in-sql-server-using-biztalk-server"></a>Appeler des fonctions scalaires dans SQL Server à l’aide de BizTalk Server
 Vous pouvez utiliser la [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] avec [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] pour appeler les fonctions scalaires dans SQL Server. L’adaptateur expose les fonctions scalaires comme des opérations qui peuvent être appelées directement sur le serveur SQL Server. Pour plus d’informations sur la façon dont l’adaptateur prend en charge les fonctions scalaires, consultez [exécuter les fonctions scalaires dans SQL Server à l’aide de l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/execute-scalar-functions-in-sql-server-using-the-sql-adapter.md). Pour plus d’informations sur la structure du message SOAP pour appeler des fonctions scalaires, consultez [des schémas de Message pour les procédures et fonctions](../../adapters-and-accelerators/adapter-sql/message-schemas-for-procedures-and-functions.md).  
@@ -157,7 +157,7 @@ Vous pouvez utiliser la [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshor
  L’orchestration consomme le message et l’envoie à la base de données SQL Server. La réponse à partir de la base de données SQL Server est enregistrée dans l’autre emplacement de fichier définie dans le cadre de l’orchestration. Par exemple, la réponse à partir de la base de données SQL Server pour le précédent message de demande est la suivante :  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <GET_EMP_IDResponse xmlns="http://schemas.microsoft.com/Sql/2008/05/ScalarFunctions/dbo">  
   <GET_EMP_IDResult>10072</GET_EMP_IDResult>  
 </GET_EMP_IDResponse>  
@@ -167,4 +167,4 @@ Vous pouvez utiliser la [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshor
  Après avoir déployé et configuré le projet BizTalk, vous pouvez exporter les paramètres de configuration dans un fichier XML appelé le fichier de liaison. Une fois que vous générez un fichier de liaison, vous pouvez importer les paramètres de configuration à partir du fichier, afin que vous n’avez pas besoin de créer des éléments tels que les ports d’envoi et ports de réception d’une même orchestration. Pour plus d’informations sur les fichiers de liaison, consultez [réutiliser les liaisons de l’adaptateur](../../adapters-and-accelerators/adapter-sql/reuse-sql-adapter-bindings.md).
   
 ## <a name="see-also"></a>Voir aussi  
-[Développer des applications BizTalk à l’aide de l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)
+[Développer des applications BizTalk avec l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)

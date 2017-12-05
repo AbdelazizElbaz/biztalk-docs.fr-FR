@@ -15,22 +15,22 @@ caps.latest.revision: "28"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c51f0ff13b06bd57ccdd52ec6e35fdd7e0acf839
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 82476c440f1bae482eff5308f1a5238f8bd85d92
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="loans-processing-using-business-rules-biztalk-server-sample"></a>À l’aide des règles d’entreprise (exemple BizTalk Server) de traitement des prêts
 L'exemple Traitement de prêts à l'aide de règles d'entreprise montre comment utiliser un ensemble de règles gérées à l'intérieur d'une orchestration, ainsi qu'une combinaison d'entrées appelées faits, pour calculer les paramètres de certains champs à l'intérieur d'un document en cours de traitement. Les faits peuvent être le résultat de l'appel d'un assembly basé sur .NET, les valeurs extraites du code XML du message ou les données extraites d'une base de données. L'exemple montre également comment modifier les règles à tout moment, qui affectent les calculs suivants sans nécessiter de redéploiement.  
   
 ## <a name="what-this-sample-does"></a>Fonctions de l'exemple  
- Cet exemple montre ces fonctionnalités dans le contexte d’un scénario de traitement de prêt simplifiée. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]orchestration récupère et traite une demande de prêt, également appelé un cas de prêt, dans le format de message XML. Cette orchestration utilise le Moteur de règles d'entreprises pour évaluer des messages entrants en fonction de règles, modifier certaines messages avec le résultat de l'application des règles, puis les écrire sous forme de fichiers dans un dossier de sortie.  
+ Cet exemple montre ces fonctionnalités dans le contexte d’un scénario de traitement de prêt simplifiée. Orchestration BizTalk Server récupère et traite une demande de prêt, également appelé un cas de prêt, dans le format de message XML. Cette orchestration utilise le Moteur de règles d'entreprises pour évaluer des messages entrants en fonction de règles, modifier certaines messages avec le résultat de l'application des règles, puis les écrire sous forme de fichiers dans un dossier de sortie.  
   
  Basées sur des faits à partir de plusieurs sources, notamment le message en cours de traitement, cet exemple définit le **IncomeStatus**, **CommitmentsStatus**, **EmploymentStatus**et  **ResidencyStatus** éléments du message en cours de traitement.  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
- \<*Exemples de chemin d’accès*> \Business Rules\Loans le traitement à l’aide de Business Rules\  
+ \<*Exemples de chemin d’accès*\>\Business Rules\Loans le traitement à l’aide de Business Rules\  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -54,11 +54,11 @@ L'exemple Traitement de prêts à l'aide de règles d'entreprise montre comment 
 1.  Vérifiez que vous disposez de la base de données Northwind sur votre ordinateur.  
   
     > [!IMPORTANT]
-    >  Pour exécuter cet exemple, vous devez disposer d'une base de données nommée Northwind. [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]et [!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)] ne sont pas fournis avec la base de données Northwind. Pour créer la base de données Northwind, téléchargez le fichier d’installation [http://go.microsoft.com/fwlink/?LinkId=196020](http://go.microsoft.com/fwlink/?LinkId=196020), suivez les instructions.  
+    >  Pour exécuter cet exemple, vous devez disposer de la base de données Northwind SQL Server. [Télécharger](https://www.microsoft.com/download/details.aspx?id=23654)et l’installer. 
   
 2.  Dans une fenêtre de commande, accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \Business Rules\Loans le traitement à l’aide de règles d’entreprise  
+     \<*Exemples de chemin d’accès*\>\Business Rules\Loans le traitement à l’aide de règles d’entreprise  
   
 3.  Exécutez le fichier Setup.bat, qui effectue les actions suivantes :  
   

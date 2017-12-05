@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6c44677d4d488a4770c540ef94c0922579be3184
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: af9f90bf80435b00a0d39e83d2b2293595f6f200
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-the-resolver-service-sample-works"></a>Fonctionne de l’exemple de Service de programme de résolution
 L’exemple de Service de résolution instancie le service de résolution et transmet le message spécifié à ce dernier pour le traitement. L’exemple d’application cliente Service de résolution utilise le premier paramètre en tant que le chemin d’accès au fichier ResolverList.xml, qui contient plusieurs demandes de programme de résolution et envoie ces demandes au service de programme de résolution. Par exemple, voici la requête XPATH utilisée dans l’exemple.  
@@ -49,9 +49,9 @@ L’exemple de Service de résolution instancie le service de résolution et tra
 ```  
   
 > [!NOTE]
->  Le contenu réel de la  **\<contenu >** élément ne contient pas les caractères d’espace blanc utilisés pour encapsuler les lignes dans la liste précédente.  
+>  Le contenu réel de la  **\<contenu\>**  élément ne contient pas les caractères d’espace blanc utilisés pour encapsuler les lignes dans la liste précédente.  
   
- La liste précédente montre que la demande contient la chaîne de connexion de configuration de programme de résolution au sein d’un  **\<contenu >** élément. Le  **\<corps >** élément contient le corps du message.  
+ La liste précédente montre que la demande contient la chaîne de connexion de configuration de programme de résolution au sein d’un  **\<contenu\>**  élément. Le  **\<corps\>**  élément contient le corps du message.  
   
  Le service de programme de résolution utilise le **ResolverMgr** classe à instancier une instance concrète du programme de résolution appropriée, définie par le type de programme de résolution dans la chaîne de connexion. Dans le cas de la requête XPATH, il s’agit de l’outil de résolution XPATH.  
   

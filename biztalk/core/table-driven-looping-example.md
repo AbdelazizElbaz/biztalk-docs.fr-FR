@@ -21,11 +21,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 91e0710a8238075610d98b5897fdc7865f30190f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e6989ac7e64cf28784d08f26aaf9e7af3a166a28
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="table-driven-looping-example"></a>Exemple de bouclage piloté par la table
 Cette section décrit brièvement un mappage à l’aide de la **bouclage de Table** et **extracteur de Table** fonctoids. Pour plus d’informations sur la sélection, la disposition, liaison et la configuration des fonctoids, voir [comment ajouter le bouclage de Table et de fonctoids Extracteur de Table à une carte](../core/how-to-add-table-looping-and-table-extractor-functoids-to-a-map.md).  
@@ -92,7 +92,7 @@ Fonctoids Bouclage de table et Extracteur de table
   
  Notez que la **bouclage de Table** des liens du fonctoid à l’élément au niveau des enregistrements dans les schémas d’entrée et de sortie. Ce lien garantit la création de la structure associée et, par conséquent, la création des éléments au sein de l'enregistrement. Notez également qu’il existe un **extracteur de Table** pour chaque champ dans le schéma de sortie.  
   
- Le lien vers l’enregistrement du schéma d’entrée est le premier paramètre de la **configurer \<fonctoid > fonctoid**boîte de dialogue.  
+ Le lien vers l’enregistrement du schéma d’entrée est le premier paramètre de la **configurer \<fonctoid\> fonctoid**boîte de dialogue.  
   
  Le deuxième paramètre est le nombre de colonnes dans la table de grille du fonctoid : une colonne pour le type d’adresse, nom, rue, ville, état et code postal. Outre le second paramètre, une liste de toutes les valeurs peut apparaître dans la table de grille. Il s'agit des constantes de chaîne pour le type d'adresse (« ShipTo », « BillTo »), ainsi que des liens vers les champs de l'adresse. Notez que les liens vers les champs d'adresse portent des noms. Le fait de nommer les liens du mappage facilite la construction de la table. Dans le cas contraire, les chemins complets apparaissent dans le **configurer le fonctoid Bouclage de Table** boîte de dialogue.  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: efdb0a358b378886b8944c9d3d9428b169bab7a9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dbc79fd31e78581d98ecad34579958ff90f3b1e1
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="prerequisites-for-the-development-activities"></a>Conditions préalables pour les activités de développement
 Cette section décrit comment préparer votre environnement pour effectuer les étapes décrites dans les activités de développement qui sont incluses dans le cadre de la [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]. Terminer la configuration suivante avant de tenter d’une des procédures dans les activités de développement :  
@@ -37,7 +37,7 @@ Cette section décrit comment préparer votre environnement pour effectuer les �
   
     -   C:\HowTos\Out  
   
-4.  Vérifiez que votre [!INCLUDE[prague](../includes/prague-md.md)] compte de service a **contrôle total** des autorisations pour la structure de répertoires C:\HowTos.  
+4.  Assurez-vous que votre compte de service BizTalk Server a **contrôle total** des autorisations pour la structure de répertoires C:\HowTos.  
   
 5.  Assurez-vous que votre compte de service Microsoft BizTalk Server a **écrire** autorisations pour C:\Projects\Microsoft.Practices.ESB\Source\Samples\DynamicResolution\Test\Filedrop\Out.  
   
@@ -51,7 +51,7 @@ Cette section décrit comment préparer votre environnement pour effectuer les �
   
 ## <a name="create-the-visual-studio-solution"></a>Créer la solution Visual Studio  
   
-1.  Dans [!INCLUDE[vs2010](../includes/vs2010-md.md)], dans le menu fichier, pointez sur **nouveau**, puis cliquez sur **projet**.  
+1.  Dans Visual Studio, dans le menu fichier, pointez sur **nouveau**, puis cliquez sur **projet**.  
   
 2.  Dans le **nouveau projet** boîte de dialogue, dans le volet types de projet, cliquez sur **Visual C#**, puis cliquez sur **bibliothèque de classes** dans le volet Modèles.  
   

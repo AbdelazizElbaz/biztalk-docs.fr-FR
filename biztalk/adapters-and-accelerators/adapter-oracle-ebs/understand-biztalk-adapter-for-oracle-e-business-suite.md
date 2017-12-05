@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d1fa12862600cd1d1d5661e278b87c82cc45697b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 342ffbd77434a470e3afdd10ae1c708c8734e85c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="understand-biztalk-adapter-for-oracle-e-business-suite"></a>Comprendre l’adaptateur BizTalk pour Oracle E-Business Suite
 ## <a name="biztalk-adapter-pack-features"></a>Fonctionnalités du Pack d’adaptateurs BizTalk
@@ -28,7 +28,7 @@ Le [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] p
   
 -   **Uniforme d’expérience sur LOB**. Les adaptateurs de normaliser l’utilisation de WCF et [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]et donc fournir une expérience uniforme d’accéder à n’importe quel système LOB.  
   
- Comme indiqué, les adaptateurs sont générés sur le [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]. Ce kit fournit une base commune pour la création d’adaptateurs d’intégration qui consommable une variété d’applications clientes telles que BizTalk Server et Microsoft Office. Le [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] aligne la stratégie de carte avec la stratégie de services Microsoft en exposant des adaptateurs d’intégration en tant que les canaux WCF. Pour plus d’informations sur la [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)], consultez la [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] documentation. Le [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] documentation est installée avec le [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)], généralement sous \< *lecteur d’installation*> : \Program Files\\[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]\Documents.  
+ Comme indiqué, les adaptateurs sont générés sur le [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]. Ce kit fournit une base commune pour la création d’adaptateurs d’intégration qui consommable une variété d’applications clientes telles que BizTalk Server et Microsoft Office. Le [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] aligne la stratégie de carte avec la stratégie de services Microsoft en exposant des adaptateurs d’intégration en tant que les canaux WCF. Pour plus d’informations sur la [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)], consultez la [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] documentation. Le [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] documentation est installée avec le [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)], généralement sous \< *lecteur d’installation*\>: \Program Files\\[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]\Documents.  
 
 ## <a name="overview-of-the-oracle-ebs-adapter"></a>Vue d’ensemble de l’adaptateur Oracle eBusiness Suite
 Le [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] expose Oracle E-Business Suite comme service WCF. Les clients de l’adaptateur peuvent effectuer des opérations sur Oracle E-Business Suite en échangeant des messages SOAP avec l’adaptateur. L’adaptateur utilise le message SOAP et effectue des appels ODP.NET appropriés pour effectuer l’opération. L’adaptateur renvoie la réponse à partir d’Oracle E-Business Suite au client sous la forme des messages SOAP.  
@@ -50,7 +50,7 @@ Le [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslo
   
 ## <a name="more-good-stuff"></a>Autre contenu intéressant  
   
--    [Se connecter à Oracle E-Business Suite à l’aide de l’adaptateur](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-oracle-e-business-suite-using-the-adapter.md)
+-    [Connexion à Oracle E-Business Suite à l’aide de l’adaptateur](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-oracle-e-business-suite-using-the-adapter.md)
 
 - [Parcourir, rechercher et obtenir des métadonnées d’Oracle E-Business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/browse-search-and-get-oracle-e-business-suite-metadata.md)
 
@@ -58,7 +58,7 @@ Le [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslo
 
 - [Gérer des transactions avec l’adaptateur de base de données Oracle](../../adapters-and-accelerators/adapter-oracle-database/handle-transactions-with-the-oracle-database-adapter.md) 
 
-- [Fonctionnalités pour les clients de l’adaptateur Oracle eBusiness Suite](../../adapters-and-accelerators/adapter-oracle-ebs/features-for-oracle-ebs-adapter-clients.md) 
+- [Fonctionnalités pour les clients de l’adaptateur Oracle EBS](../../adapters-and-accelerators/adapter-oracle-ebs/features-for-oracle-ebs-adapter-clients.md) 
 
 -   [Principales fonctionnalités de l’adaptateur BizTalk pour Oracle E-Business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/key-features-in-biztalk-adapter-for-oracle-e-business-suite.md)  
   

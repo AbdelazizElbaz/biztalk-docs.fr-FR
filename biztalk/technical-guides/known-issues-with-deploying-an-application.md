@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 09970e43bd53306a6394eeffc4c2e642a8333dbc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b7fa139469ea8718c3d4430235ffb576195e67a7
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues-with-deploying-an-application"></a>Problèmes connus avec le déploiement d’une Application
 ## <a name="deploying-a-biztalk-application"></a>Déploiement d’une Application BizTalk  
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="exporting-a-biztalk-application"></a>Exportation d’une Application BizTalk  
  **Une erreur incorrecte peut s’afficher lors de l’installation d’un fichier .msi sur Windows Vista**  
   
- Lorsque vous installez un package .msi exporté à l’aide de [!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)] sur [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] en cours d’exécution sur Windows Vista®, vous pouvez recevoir l’erreur incorrecte suivante, « le programme d’installation a rencontré une erreur inattendue, l’installation de ce package. Il s'agit peut-être d'un problème lié au package. Le code d'erreur est 2869. ». Pour corriger cette erreur, d’abord importer le package à l’aide de [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] et puis ré-exportez et installez le package.  
+ Lorsque vous installez un package .msi exporté à l’aide de [!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)] sur BizTalk Server s’exécutant sur Windows Vista®, vous pouvez recevoir l’erreur incorrecte suivante, « le programme d’installation a rencontré une erreur inattendue, l’installation de ce package. Il s'agit peut-être d'un problème lié au package. Le code d'erreur est 2869. ». Pour corriger cette erreur, d’abord importer le package à l’aide de BizTalk Server et puis ré-exportez et installer le package.  
   
 ## <a name="importing-a-biztalk-application"></a>L’importation d’une Application BizTalk  
  **Les mots de passe ne sont pas supprimés à partir de fichiers ajoutés à l’application de liaison**  
@@ -55,4 +55,4 @@ ms.lasthandoff: 09/20/2017
  Si vous créez un filtre pour un port d'envoi dans une application qui utilise un schéma de propriété d'une autre application et que vous importiez ensuite la première application dans un nouveau groupe BizTalk, vous ne recevrez pas de message vous avertissant de l'absence de schéma et le filtrage ne fonctionnera pas une fois l'application installée et démarrée. Vous pouvez corriger ce problème en important l'application qui contient le schéma avant d'installer l'application sans schéma.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Déploiement d’une Application](../technical-guides/deploying-an-application.md)
+ [Déploiement d’une application](../technical-guides/deploying-an-application.md)

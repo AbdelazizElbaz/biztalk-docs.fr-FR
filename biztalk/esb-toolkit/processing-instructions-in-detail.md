@@ -12,14 +12,14 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 532721c347189f2e3d4db9e57b2afc3aa45b76db
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9cf0a726d2c8c4f6242ed19a7dcd1e5430775e63
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="processing-instructions-in-detail"></a>Instructions de traitement en détail
-Cette rubrique décrit le format et la structure du schéma de propriété système-.xsd, qui définit plusieurs propriétés de contexte pour le traitement d’itinéraire. Ces propriétés sont promues lorsqu’un message est reçu et traité par le biais [!INCLUDE[prague](../includes/prague-md.md)] pipelines ; car ils sont des propriétés promues, elles sont accessibles aux composants BizTalk Server. Les propriétés suivantes sont définies dans le schéma de propriété système-.xsd :  
+Cette rubrique décrit le format et la structure du schéma de propriété système-.xsd, qui définit plusieurs propriétés de contexte pour le traitement d’itinéraire. Ces propriétés sont promues lorsqu’un message est reçu et traité via des pipelines de BizTalk Server ; comme ce sont des propriétés promues, elles sont accessibles aux composants BizTalk Server. Les propriétés suivantes sont définies dans le schéma de propriété système-.xsd :  
   
 -   **ItineraryHeader.** Cette propriété contient toutes les informations d’itinéraire et une liste des services d’itinéraire à être appelée par une séquence d’étapes d’itinéraire. L’API de l’itinéraire utilise cette propriété en interne.  
   

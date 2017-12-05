@@ -12,11 +12,11 @@ caps.latest.revision: "34"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 94d1aa31a271f0ed88be42066abdae25be3f3e87
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 95c4bb48805eb0d2b349a8802c0bc8af1d12925a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="walkthrough-x12-receiving-batched-edi-interchanges"></a>Procédure pas à pas (X12) : réception d'échanges EDI reçus traités par lot
 Cette procédure pas à pas fournit des instructions détaillées sur la création d'une solution de réception de lots EDI à l'aide de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Cette solution montre deux manières de recevoir un échange EDI par lot :  
@@ -65,10 +65,10 @@ Cette procédure pas à pas fournit des instructions détaillées sur la créati
   
 2.  Le pipeline de réception traite l'échange sans fractionner les documents informatisés, en convertissant les deux documents informatisés en tant qu'unité au format XML interne.  
   
-3.  Le pipeline de réception promeut les mêmes propriétés que si l'échange n'était pas un lot, à ceci près qu'une balise réservée est appliquée au XML qu'il génère. Cette balise est \<X12InterchangeXml > pour un échange EDI codée au format X12 ou \<EdifactInterchangeXml > pour un échange EDI de type EDIFACT. Le pipeline de réception EDI applique également la propriété de contexte `ReuseEnvelope` pour identifier l'échange comme conservé.  
+3.  Le pipeline de réception promeut les mêmes propriétés que si l'échange n'était pas un lot, à ceci près qu'une balise réservée est appliquée au XML qu'il génère. Cette balise est \<X12InterchangeXml\> pour un échange EDI codée au format X12 ou \<EdifactInterchangeXml\> pour un échange EDI de type EDIFACT. Le pipeline de réception EDI applique également la propriété de contexte `ReuseEnvelope` pour identifier l'échange comme conservé.  
   
     > [!NOTE]
-    >  Le pipeline d’envoi EDI utilise la \<X12InterchangeXml > ou \<EdifactInterchangeXml > balise pour identifier le message comme lot conservé. La propriété de contexte `ReuseEnvelope` vous permet de créer un port d'envoi qui s'abonne à tous les échanges par lot conservés.  
+    >  Le pipeline d’envoi EDI utilise la \<X12InterchangeXml\> ou \<EdifactInterchangeXml\> étiquette pour identifier le message comme lot conservé. La propriété de contexte `ReuseEnvelope` vous permet de créer un port d'envoi qui s'abonne à tous les échanges par lot conservés.  
   
 4.  Le pipeline de réception dépose le fichier XML du message dans la MessageBox.  
   
@@ -129,7 +129,7 @@ Cette procédure pas à pas fournit des instructions détaillées sur la créati
     > [!NOTE]
     >  Cette rubrique part du principe que vous avez déjà ajouté une référence de votre application à l'application BizTalk EDI, qui contient les schémas, pipelines et orchestrations EDI. Dans le cas contraire, consultez [comment ajouter une référence à l’Application EDI de BizTalk Server](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782).  
   
-2.  Avec le bouton droit de votre projet, pointez sur **ajouter**, puis cliquez sur **élément existant**. Déplacer vers  **\<lecteur > : \Program Files\Microsoft 2009\XSD_Schema\EDI\X12\00401 de BizTalk Server**, puis double-cliquez sur le schéma correspondant à votre message de test.  
+2.  Avec le bouton droit de votre projet, pointez sur **ajouter**, puis cliquez sur **élément existant**. Déplacer vers  **\<lecteur\>: \Program Files\Microsoft 2009\XSD_Schema\EDI\X12\00401 de BizTalk Server**, puis double-cliquez sur le schéma correspondant à votre message de test.  
   
     > [!NOTE]
     >  Si les schémas EDI n’ont pas été décompressés dans les dossiers XSD_SchemaEDI, exécutez le **MicrosoftEdiXSDTemplates.exe** fichier dans le dossier XSD_SchemaEDI pour décompresser les schémas dans le dossier par défaut.  
@@ -313,4 +313,4 @@ Cette procédure pas à pas fournit des instructions détaillées sur la créati
  [En conservant un reçu par lot échange EDI](../core/preserving-a-received-batched-edi-interchange.md)   
  [Procédure pas à pas (X12) : Envoi d’échanges EDI par lot](../core/walkthrough-x12-sending-batched-edi-interchanges.md)   
  [Procédure pas à pas (X12) : Réception des échanges EDI et envoi d’un accusé](../core/walkthrough-x12--receive-edi-interchanges-and-send-back-an-acknowledgement.md)   
- [Procédure pas à pas (X12) : Envoi d’échanges EDI](../core/walkthrough-x12-sending-edi-interchanges.md)
+ [Procédure pas à pas (X12) : envoi des échanges EDI](../core/walkthrough-x12-sending-edi-interchanges.md)

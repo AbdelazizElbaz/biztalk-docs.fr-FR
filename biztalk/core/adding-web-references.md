@@ -20,14 +20,14 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6bcdeb4966da4a4b54fea826590f867e4125d2ba
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2cbf8cd4c21009190fc459312467656410dc663a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="adding-web-references"></a>Ajout de références web
-Avant de pouvoir ajouter un port Web, vous devez ajouter une référence Web à votre projet BizTalk. Une référence Web est une description d'un service Web qui est disponible pour votre projet. Lorsque vous ajoutez une référence Web à votre projet, le projet BizTalk crée une orchestration Web type de port, les types de messages Web Reference.map (fichier de mappage), Reference.odx (fichier d’orchestration), \< *WebService*> .disco () fichier de découverte) et \< *WebService*> .wsdl (fichier Web Service Description Language) à votre projet. Si le fichier WSDL contient des types de messages Web de schéma, le projet BizTalk ajoute Reference.xsd à votre projet.  
+Avant de pouvoir ajouter un port Web, vous devez ajouter une référence Web à votre projet BizTalk. Une référence Web est une description d'un service Web qui est disponible pour votre projet. Lorsque vous ajoutez une référence Web à votre projet, le projet BizTalk crée une orchestration Web type de port, les types de messages Web Reference.map (fichier de mappage), Reference.odx (fichier d’orchestration), \< *WebService*\>. disco (fichier de découverte) et \< *WebService*\>.wsdl (fichier Web Service Description Language) à votre projet. Si le fichier WSDL contient des types de messages Web de schéma, le projet BizTalk ajoute Reference.xsd à votre projet.  
   
  Une référence Web inclut les éléments suivants :  
   
@@ -45,4 +45,4 @@ Avant de pouvoir ajouter un port Web, vous devez ajouter une référence Web à 
   
 ## <a name="see-also"></a>Voir aussi  
  [Création de Ports Web](../core/creating-web-ports.md)   
- [Utilisation de Services Web](../core/consuming-web-services.md)
+ [Consommation des services web](../core/consuming-web-services.md)

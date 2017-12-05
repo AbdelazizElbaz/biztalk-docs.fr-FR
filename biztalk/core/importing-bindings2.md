@@ -16,11 +16,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b21d5a3dda5bc53816c608e97063a42f3eafa4db
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2f2c92d5469f88494c77ad062d97c53768572a5b
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="importing-bindings"></a>Importation des liaisons
 Les rubriques de cette section expliquent comment importer des liaisons dans une application ou un groupe BizTalk.  
@@ -45,7 +45,7 @@ Les rubriques de cette section expliquent comment importer des liaisons dans une
   
 -   **L’attribut de nom pour un adaptateur peut être incorrect.** Si le fichier de liaison inclut des paramètres d'adaptateur, vérifiez que l'attribut Nom de l'élément TransportType dans le fichier de liaison est identique à celui configuré pour cet adaptateur dans la console Administration de BizTalk Server (sous Paramètres de plateforme > Adaptateurs).  
   
-     En particulier, vous devez vérifier que c'est le cas lors de l'importation de liaisons de [!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)] dans [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]. Les transports susceptibles de poser problème sont les suivants :  
+     En particulier, vous devez vérifier que c’est le cas lors de l’importation des liaisons à partir de [!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)] à BizTalk Server. Les transports susceptibles de poser problème sont les suivants :  
   
     -   MQS  
   

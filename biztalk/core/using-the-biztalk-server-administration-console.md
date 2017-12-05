@@ -17,11 +17,11 @@ caps.latest.revision: "42"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 079bae61dd4e692e25634414f6ff2e7078235b67
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: de8b806c8a6f39608608a3eabc975cf606410abc
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-the-biztalk-server-administration-console"></a>À l’aide de la Console Administration de BizTalk Server
 La console Administration de BizTalk Server est une console MMC (Microsoft Management Console) que vous pouvez utiliser pour gérer et surveiller BizTalk Server, mais aussi pour déployer et gérer vos applications BizTalk Server.  
@@ -30,7 +30,7 @@ La console Administration de BizTalk Server est une console MMC (Microsoft Manag
   
  Quand vous sélectionnez un nœud dans l'arborescence de la console, le volet des détails qui occupe la partie droite de la console affiche des informations sur les éléments.  
   
- La sélection du nœud Administration de [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] dans l'arborescence de la console entraîne l'affichage de la page d'accueil qui contient les actions que vous pouvez exécuter, par exemple vous connecter à un groupe BizTalk Server existant. Cette page contient aussi des liens vers la documentation de BizTalk Server et les sites Web de la communauté en ligne.  
+ Le nœud Administration de BizTalk Server dans l’arborescence de la console affiche la page de démarrage, qui contient les actions que vous pouvez effectuer, par exemple vous connecter à un groupe BizTalk Server existant. Cette page contient aussi des liens vers la documentation de BizTalk Server et les sites Web de la communauté en ligne.  
   
  Pour plus d’informations sur l’utilisation des raccourcis clavier pour la console d’Administration, consultez [raccourcis clavier la Console Administration](../core/administration-console-keyboard-shortcuts.md).  
   
@@ -127,4 +127,4 @@ En commençant par [!INCLUDE[bts2016_md](../includes/bts2016-md.md)], vous pouve
   
 -   [Configuration du suivi à l’aide de la Console Administration de BizTalk Server](http://msdn.microsoft.com/en-us/49b7f9d3-60b5-41bd-ba8b-029253926bef)  
   
--   [À l’aide de la Page Hub du groupe](../core/using-the-group-hub-page.md)
+-   [Utilisation de la page Hub du groupe](../core/using-the-group-hub-page.md)

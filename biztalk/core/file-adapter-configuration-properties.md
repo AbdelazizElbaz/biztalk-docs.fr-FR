@@ -19,11 +19,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c027d5ab993c2110dbcbd6d992859d0d1d4ac7d9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fe578337d7137f3c9973ec4d57f195ead94ad908
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="file-adapter-configuration-properties"></a>Propriétés de configuration de l'adaptateur FILE
 Le tableau suivant répertorie les propriétés de configuration que vous pouvez définir pour l'emplacement de réception de l'adaptateur FILE :  
@@ -62,7 +62,7 @@ Le tableau suivant répertorie les propriétés de configuration que vous pouvez
   
 |Nom de la propriété|Type| Description|Restrictions|Commentaires|  
 |-------------------|----------|-----------------|------------------|--------------|  
-|Utilisateur|VT_BSTR|Spécifiez les autres informations d’identification lorsque l’instance d’hôte de l’adaptateur File ne dispose pas des droits nécessaires pour un partage réseau.|Aucune|Spécifiez le nom d’utilisateur au format \<domaine > \username.|  
+|Utilisateur|VT_BSTR|Spécifiez les autres informations d’identification lorsque l’instance d’hôte de l’adaptateur File ne dispose pas des droits nécessaires pour un partage réseau.|Aucune|Spécifiez le nom d’utilisateur au format \<domaine\>\username.|  
 |UseTempFileOnWrite|VT_BOOL|Indique qu'il faut utiliser un fichier temporaire lors de l'écriture dans le dossier cible. Une fois l'écriture terminée, le fichier est renommé en fonction de la valeur spécifiée pour la propriété FileName.|Cette propriété peut uniquement être définie sur -1 (true) si la valeur de la propriété CopyMode est égale à 2 (Créer).<br /><br /> Les valeurs valides sont :<br /><br /> -à -1 (true)<br />-0 (faux)|La valeur par défaut est 0 (false).|  
 |CopyMode|VT_UI4|Définir le mode de copie à utiliser lors de l'écriture d'un message dans un fichier.|Les valeurs valides sont :<br /><br /> -0 (ajout)<br />-1 (par écrasement)<br />-2 (créer)|La valeur par défaut est 2 (Créer).|  
 |FileName|VT_BSTR|Indiquer le nom du fichier dans lequel le gestionnaire d'envoi du fichier écrit le message.|Pour plus d’informations sur les restrictions sur cette propriété, consultez [Restrictions sur le masque de fichier et les propriétés du nom de fichier](http://msdn.microsoft.com/library/d8f5afd0-a61f-4c9b-8a57-4792e3054769).|La valeur par défaut est %MessageID%.xml.|  

@@ -15,11 +15,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eb8cd252c9aa5557ea3845e7b6665dc749486f01
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1030e0a743a9b06d856bc593198f4afebc1ffa38
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-operations-on-the-sap-system-using-the-wcf-channel-model"></a>Appeler des opérations sur le système SAP à l’aide du modèle de canal WCF
 Appeler des opérations sur le [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] en utilisant un **IRequestChannel** ou **IOutputChannel** forme pour envoyer des messages à la carte de canal. Le modèle de base consiste à créer une fabrication de canal pour la forme de canal requis à l’aide d’une liaison (**SAPBinding**) et un point de terminaison créé à partir d’un URI de connexion. Vous créez ensuite un **Message** instance qui représente un message SOAP qui est conforme au schéma de message pour votre opération de cible. Vous pouvez alors envoyer ce **Message** à la [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] à l’aide d’un canal créé à partir de la fabrication de canal. Si vous utilisez un **IRequestChannel**, vous recevez une réponse. S’il existe un problème d’exécution de l’opération sur le système SAP, le [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] lève une **Microsoft.ServiceModel.Channels.Common.TargetSystemException**.  
@@ -45,7 +45,7 @@ Appeler des opérations sur le [!INCLUDE[adaptersap_short](../../includes/adapte
   
 #### <a name="how-to-invoke-an-operation-by-using-an-instance-of-irequestchannel"></a>L’appel d’une opération à l’aide d’une instance de IRequestChannel  
   
-1.  Générer une fabrique de canal (**ChannelFactory\<IRequestChannel >**). Pour ce faire, vous devez spécifier une liaison (**SAPBinding**) et une adresse de point de terminaison. Vous pouvez spécifier l’adresse de liaison et le point de terminaison soit impérativement dans votre code ou de façon déclarative dans la configuration. Vous devez définir des liaisons de propriétés nécessaires pour les opérations que vous allez envoyer avant d’ouvrir la fabrique. Pour plus d’informations sur la façon de spécifier la liaison et l’adresse de point de terminaison dans la configuration, consultez [créer un canal à l’aide de SAP](../../adapters-and-accelerators/adapter-sap/create-a-channel-using-sap.md).  
+1.  Générer une fabrique de canal (**ChannelFactory\<IRequestChannel\>**). Pour ce faire, vous devez spécifier une liaison (**SAPBinding**) et une adresse de point de terminaison. Vous pouvez spécifier l’adresse de liaison et le point de terminaison soit impérativement dans votre code ou de façon déclarative dans la configuration. Vous devez définir des liaisons de propriétés nécessaires pour les opérations que vous allez envoyer avant d’ouvrir la fabrique. Pour plus d’informations sur la façon de spécifier la liaison et l’adresse de point de terminaison dans la configuration, consultez [créer un canal à l’aide de SAP](../../adapters-and-accelerators/adapter-sap/create-a-channel-using-sap.md).  
   
     ```  
     // Create a binding  
@@ -79,7 +79,7 @@ Appeler des opérations sur le [!INCLUDE[adaptersap_short](../../includes/adapte
 5.  Créer un **Message** instance pour l’opération de la cible. Assurez-vous que l’action du message pour l’opération de la cible est spécifiée. Dans cet exemple, le corps du message est passé en créant un **XmlReader** sur une chaîne. L’opération cible appelle la RFC SD_RFC_CUSTOMER_GET sur un système SAP.  
   
     ```  
-    string inputXml = "\<SD_RFC_CUSTOMER_GET xmlns=\"http://Microsoft.LobServices.Sap/2007/03/Rfc/\"> \<KUNNR i:nil=\"true\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\"> </KUNNR> <NAME1>AB*</NAME1> <CUSTOMER_T> </CUSTOMER_T> </SD_RFC_CUSTOMER_GET>";  
+    string inputXml = "\<SD_RFC_CUSTOMER_GET xmlns="http://Microsoft.LobServices.Sap/2007/03/Rfc/\"> <KUNNR i:nil=\"true\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\"> </KUNNR> <NAME1>AB*</NAME1> <CUSTOMER_T> </CUSTOMER_T> </SD_RFC_CUSTOMER_GET>";  
   
     //create an XML reader from the input XML  
     XmlReader reader = XmlReader.Create(new MemoryStream(Encoding.Default.GetBytes(inputXml)));  
@@ -125,7 +125,7 @@ Appeler des opérations sur le [!INCLUDE[adaptersap_short](../../includes/adapte
   
  Vous suivez les mêmes étapes pour envoyer un message à l’aide de la **IOutputChannel** mettre en forme, à l’exception :  
   
--   Vous créez un **ChannelFactory\<IOutputChannel >** dans l’étape 1.  
+-   Vous créez un **ChannelFactory\<IOutputChannel\>**  à l’étape 1.  
   
 -   Vous appelez le **envoyer** méthode sur le canal à l’étape 6. `channel.Send(messageIn);`.  
   
@@ -178,7 +178,7 @@ namespace SapRfcClientCM
             //create an XML message to send to the SAP system  
             //We are invoking the SD_RFC_CUSTOMER_GET RFC.  
             //The XML below specifies that we want to search for customers with names starting with "AB"  
-            string inputXml = "\<SD_RFC_CUSTOMER_GET xmlns=\"http://Microsoft.LobServices.Sap/2007/03/Rfc/\"> \<KUNNR i:nil=\"true\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\"> </KUNNR> <NAME1>AB*</NAME1> <CUSTOMER_T> </CUSTOMER_T> </SD_RFC_CUSTOMER_GET>";  
+            string inputXml = "<SD_RFC_CUSTOMER_GET xmlns=\"http://Microsoft.LobServices.Sap/2007/03/Rfc/\"> <KUNNR i:nil=\"true\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\"> </KUNNR> <NAME1>AB*</NAME1> <CUSTOMER_T> </CUSTOMER_T> </SD_RFC_CUSTOMER_GET>";  
   
             //create an XML reader from the input XML  
             XmlReader readerOut = XmlReader.Create(new MemoryStream(Encoding.Default.GetBytes(inputXml)));  
@@ -243,4 +243,4 @@ namespace SapRfcClientCM
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
-[Développer des applications à l’aide du modèle de canal WCF](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)
+[Développer des applications en utilisant le modèle de canal WCF](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)

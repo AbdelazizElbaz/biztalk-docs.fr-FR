@@ -15,11 +15,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7124561b9f842a7cc980c7a54230cd122ae32856
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2d388fc725b8aaeec4cbfa80c23bd5e2a1b42a27
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-assigning-a-strong-name-to-the-contoso-assembly"></a>Étape 1 : Attribution d’un nom fort à l’Assembly Contoso
 Au cours de cette étape, vous allez créer un nom fort et l'affecter à votre assembly BizTalk. Un nom fort affecte une signature numérique et une paire de clés unique à un assembly pour garantir son unicité. Par ailleurs, il est possible de vérifier l'intégrité d'un nom pour s'assurer que le contenu de l'assembly n'a pas changé depuis sa dernière génération.  
@@ -31,7 +31,7 @@ Au cours de cette étape, vous allez créer un nom fort et l'affecter à votre a
 2.  À l'invite de commandes, passez à l'emplacement de la solution Contoso.  
   
     > [!NOTE]
-    >  Par défaut, l’emplacement de la solution Contoso est  *\<lecteur >*: \Documents and Settings\\*\<nom d’utilisateur >*documents\Visual Studio \<version > \Projects.  
+    >  Par défaut, l’emplacement de la solution Contoso est  *\<lecteur\>*: \Documents and Settings\\*\<nom d’utilisateur\>*\My Documents\Visual Studio \<version\>\Projects.  
   
 3.  À l'invite de commandes, tapez **sn -k FabConPriceAvail.snk**, puis appuyez sur **Entrée**.  
   

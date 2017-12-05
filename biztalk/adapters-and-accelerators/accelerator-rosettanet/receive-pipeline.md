@@ -12,17 +12,17 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7461ce357b3fa9cb6216dfce6381876100bb4287
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3d5374c46411e0c4924585647736bfde7f1e4428
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="receive-pipeline"></a>Pipeline de réception
 Cet exemple fournit un [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] pipeline que vous pouvez personnaliser pour votre application de réception.  
   
 ## <a name="demonstrates"></a>Montre  
- Cet exemple montre comment traiter un message RNIF entrant en message XML équivalent à l'aide du pipeline de réception BTARN (PipelineReceive.btp). PipelineReceive.btp se trouve dans  *\<lecteur >*: \Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\SDK\RNPipelines. Il comprend les étapes suivantes :  
+ Cet exemple montre comment traiter un message RNIF entrant en message XML équivalent à l'aide du pipeline de réception BTARN (PipelineReceive.btp). PipelineReceive.btp se trouve dans  *\<lecteur\>*: \Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\RNPipelines. Il comprend les étapes suivantes :  
   
 -   ReceiveMessageNonRepudiate  
   

@@ -18,16 +18,16 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 256b1618313605f0847d9328abfd003f41ac61cd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7c1b18e5b7addf1bae390dd541b84d17bd94023d
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="step-13-create-and-configure-ports"></a>Étape 13 : Créer et configurer des Ports
 Dans cette étape, vous utilisez l’Assistant Configuration du Port pour créer et configurer des ports dans le Concepteur d’Orchestration. Ports indiquent comment votre orchestration envoie et reçoit des messages vers et depuis des processus d’entreprise. Chaque port a un type, une direction et une liaison. Les propriétés déterminent ensemble la direction de communication, le modèle de communication de l’emplacement vers ou à partir de laquelle [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] envoie ou reçoit le message, et comment la communication a lieu. [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]utilise l’adaptateur minimale inférieure couche protocole (MLLP) comme un port d’envoi. L’adaptateur MLLP utilise les communications de sockets TCP pour interagir avec d’autres applications, telles que les applications de laboratoire, des applications d’assurance et les applications héritées line-of-business. L’adaptateur d’envoi MLLP représente un [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] carte :  
   
--   Personnalisé. L’adaptateur est uniquement fourni avec [!INCLUDE[HL7_CurrentVersion_abbrev](../../includes/hl7-currentversion-abbrev-md.md)], par opposition à l’envoi de journaux avec [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)].  
+-   Personnalisé. L’adaptateur est uniquement fourni avec [!INCLUDE[HL7_CurrentVersion_abbrev](../../includes/hl7-currentversion-abbrev-md.md)], par opposition à l’envoi de journaux avec BizTalk Server.  
   
 -   Protocole/Transport. La carte n’est pas un adaptateur de données ou application.  
   
@@ -115,4 +115,4 @@ Dans cette étape, vous utilisez l’Assistant Configuration du Port pour créer
  Passez à [étape 14 : publier l’Orchestration en tant que Service Web](../../adapters-and-accelerators/accelerator-hl7/step-14-publish-the-orchestration-as-a-web-service.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Didacticiel d’enrichissement de message](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)
+ [Didacticiel sur l’enrichissement des messages](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

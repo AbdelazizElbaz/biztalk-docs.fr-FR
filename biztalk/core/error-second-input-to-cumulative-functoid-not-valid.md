@@ -13,11 +13,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a288bdaa9427cd26191571d180d39ad2dde9f9f5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f0228beda57b961d515471e42760abe3ab92db54
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="error---second-input-to-cumulative-functoid-not-valid"></a>Erreur - deuxième entrée du fonctoid cumulé n’est pas valide.
 **Code d’erreur**  
@@ -30,4 +30,4 @@ ms.lasthandoff: 09/20/2017
   
  **Action de l’utilisateur**  
   
- Sélectionnez le **Cumulative** fonctoid, cliquez sur le bouton de sélection (**...** ) associés à la **ordre les entrées de fonctoid** propriété de Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] fenêtre Propriétés, puis, dans le **configurer \<fonctoid > fonctoid** boîte de dialogue zone, vérifiez que le second paramètre d’entrée, le cas échéant, est un entier positif.
+ Sélectionnez le **Cumulative** fonctoid, cliquez sur le bouton de sélection (**...** ) associés à la **ordre les entrées de fonctoid** propriété de Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] fenêtre Propriétés, puis, dans le **configurer \<fonctoid\> Fonctoid** boîte de dialogue zone, vérifiez que le second paramètre d’entrée, le cas échéant, est un entier positif.

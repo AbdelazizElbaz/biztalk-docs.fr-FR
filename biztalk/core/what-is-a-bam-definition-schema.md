@@ -17,11 +17,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3411adf32a15cd2a3b5f11a02dbafcf58f66b184
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0d5780be22259fcd118ab70a0bc80174b53a9f27
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="what-is-a-bam-definition-schema"></a>Description d'un schéma de définition BAM
 Le schéma de définition BAM définit la structure du modèle d'observation créé par l'analyste d'entreprise.  
@@ -43,7 +43,7 @@ Le schéma de définition BAM définit la structure du modèle d'observation cr�
   
  Vous pouvez créer un fichier XML contenant les définitions BAM (instances de ce schéma) avec n’importe quel éditeur de texte ou en utilisant le complément BAM pour Excel pour créer une feuille de calcul qui peut être exporté dans un fichier XML à l’aide de l’analyse BAM dans fonctionnalité Exporter vers XML.  
   
- Une fois les activités et les vues BAM définies, vous n'avez plus besoin d'exporter manuellement les fichiers XML puisque l'utilitaire de gestion de l'analyse BAM (bm.exe) est capable de lire une feuille de calcul et d'en extraire un fichier XML pour ensuite déployer votre infrastructure automatiquement. Le résultat est une autre copie de la feuille de calcul nommée \<le nom de votre classeur > _Livedata.xls. Vous pouvez utiliser cette nouvelle feuille de calcul pour vous connecter à votre source de données actives et afficher les agrégations dans les rapports de tableau croisé dynamique.  
+ Une fois les activités et les vues BAM définies, vous n'avez plus besoin d'exporter manuellement les fichiers XML puisque l'utilitaire de gestion de l'analyse BAM (bm.exe) est capable de lire une feuille de calcul et d'en extraire un fichier XML pour ensuite déployer votre infrastructure automatiquement. Le résultat est une autre copie de la feuille de calcul nommée \<le nom de votre classeur\>_Livedata.xls. Vous pouvez utiliser cette nouvelle feuille de calcul pour vous connecter à votre source de données actives et afficher les agrégations dans les rapports de tableau croisé dynamique.  
   
 > [!NOTE]
 >  Si vous exportez manuellement votre fichier XML à l'aide de l'option de menu BAM située en haut de la feuille de calcul et que vous utilisiez l'utilitaire de gestion de l'analyse BAM pour déployer ce fichier XML au lieu du fichier Microsoft Excel, vous ne pouvez pas afficher vos données actives à l'aide des outils Office.  
@@ -925,4 +925,4 @@ Le schéma de définition BAM définit la structure du modèle d'observation cr�
   
 ## <a name="see-also"></a>Voir aussi  
  [Schéma de Configuration BAM](../core/bam-configuration-schema.md)   
- [Infrastructure dynamique BAM](../core/bam-dynamic-infrastructure.md)
+ [Infrastructure dynamique de l’analyse BAM](../core/bam-dynamic-infrastructure.md)

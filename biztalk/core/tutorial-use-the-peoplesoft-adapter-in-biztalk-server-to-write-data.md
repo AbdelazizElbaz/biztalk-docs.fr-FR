@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f9c4c0714c28f426ccfaa2799bd16463124e6e52
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3b38c1f5a0bd442404e832274d13ace2b0660c2e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="tutorial-using-the-biztalk-adapter-for-peoplesoft-enterprise-to-write-data-to-peoplesoft-enterprise"></a>Didacticiel : écriture de données vers PeopleSoft Enterprise à l'aide de l'adaptateur BizTalk pour PeopleSoft Enterprise
 L'adaptateur BizTalk pour PeopleSoft Enterprise permet d'écrire des données dans un système PeopleSoft à l'aide des informations reçues d'un partenaire commercial ou d'une application interne. Cette procédure pas à pas décrit un exemple de Kit de développement logiciel (SDK) qui illustre ces fonctionnalités.  
@@ -143,7 +143,7 @@ L'adaptateur BizTalk pour PeopleSoft Enterprise permet d'écrire des données da
   
 1.  Double-cliquez sur **LOCATIONService_1.xsd** dans l’Explorateur de solutions pour ouvrir le fichier dans l’éditeur de schéma.  
   
-2.  Avec le bouton droit le  **\<schéma >** nœud dans l’éditeur de schéma, puis cliquez sur **propriétés** pour afficher les propriétés du nœud.  
+2.  Avec le bouton droit le  **\<schéma\>**  nœud dans l’éditeur de schéma, puis cliquez sur **propriétés** pour afficher les propriétés du nœud.  
   
 3.  Sélectionnez **CreateEx** dans la liste des nœuds disponibles dans le **référence de racine** zone de liste déroulante. Cela doit être fait afin que lorsque vous générez un exemple d’instance de document, il sera générée depuis le **CreateEx** nœud du schéma.  
   
@@ -160,7 +160,7 @@ L'adaptateur BizTalk pour PeopleSoft Enterprise permet d'écrire des données da
   
 8.  Cliquez sur LOCATIONService_1.xsd dans l’Explorateur de solutions, puis cliquez sur **générer l’Instance** pour générer une instance de document à l’emplacement spécifié.  
   
-9. Avec le bouton droit le  **\<schéma >** nœud dans l’éditeur de schéma, puis cliquez sur **propriétés** pour afficher les propriétés du nœud.  
+9. Avec le bouton droit le  **\<schéma\>**  nœud dans l’éditeur de schéma, puis cliquez sur **propriétés** pour afficher les propriétés du nœud.  
   
 10. Sélectionnez (**par défaut)** dans la liste des nœuds disponibles dans le **référence de racine** zone de liste déroulante.  
   
@@ -249,4 +249,4 @@ L'adaptateur BizTalk pour PeopleSoft Enterprise permet d'écrire des données da
 6.  L'adaptateur BizTalk pour PeopleSoft Enterprise appelle la méthode CreateEx pour créer un enregistrement à l'aide des données du fichier XML.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Didacticiels : À l’aide de l’adaptateur BizTalk pour PeopleSoft Enterprise](../core/tutorials-using-biztalk-adapter-for-peoplesoft-enterprise.md)
+ [Didacticiels : Utilisation de l’adaptateur BizTalk pour PeopleSoft Enterprise](../core/tutorials-using-biztalk-adapter-for-peoplesoft-enterprise.md)

@@ -13,11 +13,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 339d0bba76c26186fe8356145207462e7ce25ed7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bb6c787219855ca219808fc1e95c0caefbf12a9d
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="biztalk-assemblies"></a>Assemblys BizTalk
 L'aspect le plus important de Microsoft BizTalk Server et de .NET FRAMEWORK est que tous les artefacts BizTalk Server, à savoir les mappages, schémas, orchestrations et pipelines, sont compilés dans des assemblys .NET. Les deux principales implications d'une telle conception sont que ces assemblys doivent avoir des noms forts. De ce fait, ils suivent également les règles d'établissement de versions .NET. La principale implication de tout ceci est qu'un projet BizTalk, une fois élaboré à partir d'une version donnée d'un autre projet .NET ou assembly (incluant des projets BizTalk), continue à utiliser cette version jusqu'à ce qu'il soit reconstruit à partir d'une version plus récente.  
@@ -34,7 +34,7 @@ L'aspect le plus important de Microsoft BizTalk Server et de .NET FRAMEWORK est 
   
  Une autre implication importante des artefacts BizTalk Server déployés dans le Global Assembly Cache et portant par conséquent un nom fort est que les assemblys avec nom fort ne peuvent pas appeler d'autres assemblys qui n'ont pas de nom fort. Cela signifie que tout assembly créé par un développeur et utilisé par ces assemblys BizTalk Server doit également porter un nom fort. De la même manière, les assemblys déployés sur le GAC et qui chargent d'autres assemblys sans utiliser de chemin d'accès spécifique doivent charger ces assemblys à partir du GAC.  
   
- Les composants de pipeline sont ajoutés à la boîte à outils d'un développeur dans [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], ce qui permet de les déplacer par simple glisser sur le Concepteur de pipeline. Lorsqu'un pipeline BizTalk Server est compilé dans un assembly .NET, les informations relatives à tous les composants intervenant aux différentes étapes du pipeline sont compilées dans l'assembly. Lorsque ce pipeline est déployé sur BizTalk Server, les informations relatives aux composants, y compris leur nom de fichier sont insérées dans la base de données de gestion BizTalk et l’assembly de pipeline est déployé dans le GAC. Tous les assemblys qui dépendent de composants de pipeline BizTalk doivent également être déployés dans le GAC pour pouvoir être trouvé lors de l’exécution. Les assemblys de composant de pipeline doivent également être copiés dans le [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]\Pipeline Components directory doit être accessible par un pipeline BizTalk lors de l’exécution. Lorsque le pipeline est exécuté, ces composants sont chargés et les interfaces qu'ils implémentent sont appelées selon le besoin.  
+ Les composants de pipeline sont ajoutés à la boîte à outils d'un développeur dans [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], ce qui permet de les déplacer par simple glisser sur le Concepteur de pipeline. Lorsqu'un pipeline BizTalk Server est compilé dans un assembly .NET, les informations relatives à tous les composants intervenant aux différentes étapes du pipeline sont compilées dans l'assembly. Lorsque ce pipeline est déployé sur BizTalk Server, les informations relatives aux composants, y compris leur nom de fichier sont insérées dans la base de données de gestion BizTalk et l’assembly de pipeline est déployé dans le GAC. Tous les assemblys qui dépendent de composants de pipeline BizTalk doivent également être déployés dans le GAC pour pouvoir être trouvé lors de l’exécution. Les assemblys de composant de pipeline doivent également être copiés dans le répertoire de composants de BizTalk Server\Pipeline doit être accessible par un pipeline BizTalk lors de l’exécution. Lorsque le pipeline est exécuté, ces composants sont chargés et les interfaces qu'ils implémentent sont appelées selon le besoin.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Architecture d’exécution](../core/runtime-architecture.md)

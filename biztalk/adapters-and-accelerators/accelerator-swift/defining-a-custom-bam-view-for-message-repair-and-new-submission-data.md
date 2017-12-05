@@ -15,18 +15,18 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 760865f6f69559031b10bc9f4e609bbb3cfffa33
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e88ec7506a299476dccb6ef9f9d0125768ea80b6
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="defining-a-custom-bam-view-for-message-repair-and-new-submission-data"></a>Définition d’une vue BAM personnalisées pour Message Repair et les nouvelles données de la soumission
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]Le programme d’installation fournit un fichier de définition BAM qui définit une activité d’entreprise et de la vue de l’entreprise. Vous pouvez déployer le fichier de définition BAM pour utiliser cette vue, ou vous pouvez créer un affichage personnalisé que vous pouvez ajouter au fichier de définition BAM.  
   
- Le fichier de définition BAM est MrsrActivities.xml dans  *\<lecteur >*: \Program Files\Microsoft BizTalk Accelerator pour SWIFT\BAMTracking. Il définit une activité de Message et une vue RepairView. Pour plus d’informations sur le déploiement de MrsrActivities.xml à l’aide de la bm utilitaire de déploiement, consultez [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] aide.  
+ Le fichier de définition BAM est MrsrActivities.xml dans  *\<lecteur\>*: \Program Files\Microsoft BizTalk Accelerator pour SWIFT\BAMTracking. Il définit une activité de Message et une vue RepairView. Pour plus d’informations sur le déploiement de MrsrActivities.xml à l’aide de la bm utilitaire de déploiement, consultez l’aide de BizTalk Server.  
   
- Créer la vue personnalisée de l’Assistant Vue BAM à partir du classeur BAM. Pour plus d’informations sur la création d’un affichage personnalisé, consultez « Création d’une vue BAM » dans [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] traitement des informations utiles.  
+ Créer la vue personnalisée de l’Assistant Vue BAM à partir du classeur BAM. Pour plus d’informations sur la création d’un affichage personnalisé, consultez « Création d’une vue BAM » dans [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]aide de BizTalk Server Information Worker.  
   
  L’activité d’un Message dans MrsrActivities.xml inclut les éléments suivants que vous pouvez ajouter à la vue personnalisée :  
   

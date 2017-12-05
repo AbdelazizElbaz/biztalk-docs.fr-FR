@@ -12,14 +12,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7f6b4d9a5aae6c8758d3a6d4f46d18f9a820fabd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a95feac48f7cb5137e95a34bf46c38811bb75c51
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="configuring-transaction-set-list-edifact"></a>Configuration de la liste des documents informatisés (EDIFACT)
-[!INCLUDE[prague](../includes/prague-md.md)] permet de définir la liste des documents informatisés qui doivent toujours être inclus ou exclus lors du traitement d'un échange EDI. Cette section fournit des instructions sur la création de la liste des documents informatisés.  
+BizTalk Server vous permet de définir une liste de documents informatisés qui doivent toujours être inclus ou exclus lors du traitement d’un échange EDI. Cette section fournit des instructions sur la création de la liste des documents informatisés.  
   
 > [!IMPORTANT]
 >  Aucuns propriétés ne sont désactivées dans cette page, même si vous avez désactivé la **BizTalk Local traite les messages reçus par le tiers ou prend en charge l’envoi de messages à partir de ce tiers** case à cocher lors de la création du tiers pour lequel vous créez le accord.  
@@ -50,4 +50,4 @@ ms.lasthandoff: 09/20/2017
 7.  Cliquez sur **appliquer** pour accepter les modifications avant de poursuivre la configuration, ou cliquez sur **OK** pour valider les modifications, puis fermez la boîte de dialogue.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Configuration des documents informatisés (EDIFACT) de paramètres](../core/configuring-transaction-set-settings-edifact.md)
+ [Configuration des paramètres des documents informatisés (EDIFACT)](../core/configuring-transaction-set-settings-edifact.md)

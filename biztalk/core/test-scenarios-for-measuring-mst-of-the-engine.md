@@ -7,22 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- sustainable load test
-- maximum sustainable throughput (MST), testing
-- LoadGen tool
-- LoadGen tool, downloading
-- testing, engine maximum sustainable throughput
 ms.assetid: e54667b9-7262-43c8-a013-9242eb062daf
 caps.latest.revision: "28"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: df522748a2d4522e691fb4f579c3fdd26c788e4f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dd5b9a2697cb96bb2d042b9fee6a15317f35971c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="test-scenarios-for-measuring-mst-of-the-engine"></a>Test des scénarios de mesure du débit maximal acceptable du moteur
 Cette section décrit un scénario de test qui a été implémenté pour mesurer l'effet produit par le fait de porter un système BizTalk à trois niveaux de charge différents :  
@@ -59,7 +53,7 @@ Cette section décrit un scénario de test qui a été implémenté pour mesurer
  Le scénario de test est très simple. L'outil de génération de charge, LoadGen 2007, a été installé sur le serveur du gestionnaire de charge et a été utilisé pour envoyer des copies d'un fichier aux partages surveillés par l'adaptateur FILE. L'outil de génération de charge répartit équitablement des copies de l'instance du fichier d'entrée entre les partages de fichiers.  
   
 > [!NOTE]
->  L’outil LoadGen 2007 est disponible pour téléchargement à l’adresse [http://go.microsoft.com/fwlink/?LinkId=59841](http://go.microsoft.com/fwlink/?LinkId=59841). La version précédente de cet outil, l’outil de génération de charge de BizTalk Server 2004 est disponible pour téléchargement à l’adresse [http://go.microsoft.com/fwlink/?linkid=108999](http://go.microsoft.com/fwlink/?linkid=108999). Pour plus d’informations sur l’utilisation de LoadGen avec l’adaptateur MSMQ, consultez [à l’aide de LoadGen 2007 avec MSMQ](../core/using-loadgen-2007-with-msmq.md).  
+>  Télécharger [LoadGen](https://www.microsoft.com/download/details.aspx?id=14925). La version précédente de cet outil, l’outil de génération de charge de BizTalk Server 2004 est disponible pour téléchargement à l’adresse [http://go.microsoft.com/fwlink/?linkid=108999](http://go.microsoft.com/fwlink/?linkid=108999). Pour plus d’informations sur l’utilisation de LoadGen avec l’adaptateur MSMQ, consultez [à l’aide de LoadGen 2007 avec MSMQ](../core/using-loadgen-2007-with-msmq.md).  
   
  L'adaptateur BizTalk FILE est configuré pour contrôler les partages de fichiers et pour publier les messages dans le MessageBox. Une orchestration simple qui contient seulement une forme Réception et une forme Envoi souscrit au message publié. Les messages qui sont republiés par l'orchestration dans le MessageBox sont récupérés par un port d'envoi de fichier, puis envoyés à un partage commun, défini sur le SAN. Les fichiers arrivant à la sortie du SAN sont supprimés immédiatement pour éviter l'accumulation de fichiers sur le partage pendant des tests longs.  
   
@@ -101,15 +95,13 @@ Cette section décrit un scénario de test qui a été implémenté pour mesurer
 > [!NOTE]
 >  Si vous ne parvenez pas à générer assez de charge pour provoquer un tel accroissement, cela signifie simplement que la partie la plus lente de votre système se trouve sur le côté de réception et non sur le côté de traitement/d'envoi.  
   
-> [!NOTE]
->  SQL Server 2000 a été utilisé pour tester la charge acceptable et la surcharge. SQL Server 2005 a été utilisé pour tester la charge de saturation.  
-  
-## <a name="in-this-section"></a>Dans cette section  
+
+## <a name="next"></a>Suivant
   
 -   [À l’aide de l’outil Microsoft BizTalk LoadGen 2007](../core/using-the-microsoft-biztalk-loadgen-2007-tool.md)  
   
 -   [Test de charge maximale](../core/sustainable-load-test.md)  
   
--   [Test de surcharge](../core/overdrive-load-test.md)  
+-   [Test de surcharge de dépassement](../core/overdrive-load-test.md)  
   
--   [Test de charge de saturation](../core/floodgate-load-test.md)
+-   [Test de surcharge de saturation](../core/floodgate-load-test.md)

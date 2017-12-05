@@ -12,18 +12,18 @@ caps.latest.revision: "26"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9808b43ba07434793403d175885694f67530dae0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 05269411c81aeccdaf1c30e36e47c02787bf044a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="removeapp-command"></a>Commande RemoveApp
 Supprime d'une base de données de gestion BizTalk une application BizTalk ou tous les artefacts que cette base de données contient. Cela ne désinstallera pas l’application. Pour obtenir des instructions à ce sujet, consultez [comment désinstaller une Application BizTalk](../core/how-to-uninstall-a-biztalk-application.md).  
   
  L'opération de suppression échoue dans les cas suivants :  
   
--   **L’application n’est pas arrêtée.** Pour obtenir des instructions sur l’arrêt d’une application, consultez [comment démarrer et arrêter une Application BizTalk](../core/how-to-start-and-stop-a-biztalk-application.md). Le **ApplicationManager** l’exemple de kit de développement logiciel est installé dans le  *\<exemples de chemin >\\*répertoire Admin\ExplorerOM\ montre comment démarrer ou arrêter par programme un [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] application.  
+-   **L’application n’est pas arrêtée.** Pour obtenir des instructions sur l’arrêt d’une application, consultez [comment démarrer et arrêter une Application BizTalk](../core/how-to-start-and-stop-a-biztalk-application.md). Le **ApplicationManager** l’exemple de kit de développement logiciel est installé dans le  *\<exemples de chemin\>\\*répertoire Admin\ExplorerOM\ montre comment par programmation Démarrer ou arrêter un [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] application.  
   
 -   **Autres applications contiennent des références à l’application.** Si d'autres applications contiennent des références à l'application que vous souhaitez supprimer, vous devez d'abord supprimer les références dans les autres applications. Pour obtenir des instructions, consultez [comment supprimer une référence à une autre Application](../core/how-to-remove-a-reference-to-another-application.md).  
   
@@ -36,7 +36,7 @@ Supprime d'une base de données de gestion BizTalk une application BizTalk ou to
 -   **Une orchestration dans l’application est inscrite, démarré, ou a une instance suspendue.** Pour plus d’informations sur les orchestrations, consultez [la gestion des Orchestrations](../core/managing-orchestrations.md).  
   
 > [!NOTE]
->  Si l’application contient une stratégie qui se trouve dans un état déployé, la stratégie n’est pas supprimée de la base de données du moteur de règles et continue à afficher dans le dossier stratégies sous le \<tous les artefacts > nœud d’application de la console Administration de BizTalk console. Si vous ajoutez la stratégie à une autre application, elle reste à l'état déployé.  
+>  Si l’application contient une stratégie qui se trouve dans un état déployé, la stratégie n’est pas supprimée de la base de données du moteur de règles et continue à afficher dans le dossier stratégies sous le \<tous les artefacts\> nœud d’application de BizTalk Console d’administration. Si vous ajoutez la stratégie à une autre application, elle reste à l'état déployé.  
   
 ## <a name="usage"></a>Utilisation  
  **« ApplicationName » BTSTask RemoveApp :** *valeur* [**/Server :***valeur*] [**/Database :**  *valeur*]  
@@ -57,4 +57,4 @@ Supprime d'une base de données de gestion BizTalk une application BizTalk ou to
   
 ## <a name="see-also"></a>Voir aussi  
  [Référence de ligne de commande BTSTask](../core/btstask-command-line-reference.md)   
- [Annulation du déploiement des Applications BizTalk](../core/undeploying-biztalk-applications.md)
+ [Annulation du déploiement des applications BizTalk](../core/undeploying-biztalk-applications.md)

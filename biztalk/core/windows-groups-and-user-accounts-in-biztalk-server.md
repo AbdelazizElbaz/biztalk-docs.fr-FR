@@ -85,11 +85,11 @@ caps.latest.revision: "25"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 77f229c950c3f49eca80810e9702ce021f0e8579
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a04b8e774156acaaa44dc49377bbdd7e3f91b198
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="windows-groups-and-user-accounts-in-biztalk-server"></a>Groupes et comptes d'utilisateur Windows dans BizTalk Server
 Informations sur les comptes BizTalk Server local et le domaine utilisateur et de groupe. Le Gestionnaire de configuration crée les comptes de groupe BizTalk nécessaires par défaut si vous installez BizTalk Server et tous les logiciels requis sur un seul ordinateur. Les informations contenues dans cette section s'appliquent à plusieurs topologies informatiques.  
@@ -131,7 +131,7 @@ Informations sur les comptes BizTalk Server local et le domaine utilisateur et d
 |Compte de l'instance de l'hôte BizTalk|Compte de service utilisé pour exécuter l'instance de l'hôte BizTalk de type In-Process qui accède à l'instance d'hôte BizTalk de type In-Process (BTNTSVC).|Utilisateurs d'applications BizTalk<br /><br /> Administrateurs d'applications associées à authentification unique||  
 |Compte de l'instance de l'hôte BizTalk isolé|Compte de service utilisé pour exécuter l'instance de l'hôte BizTalk isolé (HTTP/SOAP).|Utilisateurs d'hôtes BizTalk isolés<br /><br /> Administrateurs d'applications associées à authentification unique<br /><br /> IIS_WPG||  
 |Service de mise à jour du moteur des règles|Compte de service utilisé pour exécuter le Service de mise à jour du moteur des règles qui reçoit des notifications aux stratégies de déploiement/annulation du déploiement à partir de la base de données du moteur de règles.||Rôle de base de données de serveur SQL Server RE_HOST_USERS dans la base de données BizTalkRuleEngineDb|  
-|Utilisateur des services de notification BAM|Compte de service utilisé pour exécuter les services de notification BAM, qui accède aux bases de données BAM.|SQLServer2008NotificationServicesUser$\<**Nom_Ordinateur**>|Rôle de base de données du serveur SQL Server NSRunService dans les bases de données suivantes :<br /><br /> BAMAlertsApplication<br /><br /> BAMAlertsNSMain<br /><br /> Rôle de serveur SQL Server BAM_ManagementNSReader pour la base de données BAMPrimaryImport|  
+|Utilisateur des services de notification BAM|Compte de service utilisé pour exécuter les services de notification BAM, qui accède aux bases de données BAM.|SQLServer2008NotificationServicesUser$\<**Nom_Ordinateur**\>|Rôle de base de données du serveur SQL Server NSRunService dans les bases de données suivantes :<br /><br /> BAMAlertsApplication<br /><br /> BAMAlertsNSMain<br /><br /> Rôle de serveur SQL Server BAM_ManagementNSReader pour la base de données BAMPrimaryImport|  
 |Utilisateur de service Web de gestion de l'analyse BAM|Compte d'utilisateur pour le service Web de gestion de l'analyse BAM (BAMManagementService) pour l'accès aux diverses ressources BAM. Le portail BAM appelle BAMManagementService avec les informations d’identification de l’utilisateur connectées sur le portail BAM pour gérer les alertes, obtenir des vues BAM et XML de définition BAM|IIS_WPG|Rôle de base de donnés du serveur SQL Server NSSubscriberAdmin dans les bases de données suivantes :<br /><br /> BAMAlertsApplication<br /><br /> BAMAlertsNSMain<br /><br /> Rôle de serveur SQL Server BAM_ManagementWS pour la base de données BAMPrimaryImport|  
 |Compte de Pool d’applications BAM|Compte du pool d'applications BAMAppPool qui héberge le site Web du portail BAM.|IIS_WPG||  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5bd66c9ce3bb104cfb471e725778faab2c4e9528
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5b99d6e60a2a5955a9f0873156dbc5f822b3d519
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="configuring-common-fallback-properties-for-x12-and-edifact-encoded-messages"></a>Configuration des propriétés de secours communes pour les messages X12 et EDIFACT
 Les propriétés de secours s'appliquent aux échanges X12 (notamment HIPAA) et EDIFACT. À l'instar des autres propriétés d'accord de secours, ces propriétés s'appliquent uniquement lorsque [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ne parvient pas à identifier l'accord auquel un message entrant ou sortant correspond.  
@@ -35,7 +35,7 @@ Les propriétés de secours s'appliquent aux échanges X12 (notamment HIPAA) et 
         > [!IMPORTANT]
         >  Si cette option est désactivée, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] n'utilisera pas les propriétés définies dans l'accord de secours.  
   
-    2.  Cliquez sur **activer la création de rapports EDI** pour activer la création de rapports pour tous les messages EDI. Cela garantit que les messages sont affichés dans l’état reporting écrans affichées en cliquant sur les liens en bas de la **Hub du groupe** volet de la [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] Console d’Administration.  
+    2.  Cliquez sur **activer la création de rapports EDI** pour activer la création de rapports pour tous les messages EDI. Cela garantit que les messages sont affichés dans l’état reporting écrans affichées en cliquant sur les liens en bas de la **Hub du groupe** volet de la Console Administration de BizTalk Server.  
   
     3.  Si vous avez cliqué sur **activer la création de rapports EDI**, cliquez sur **stocker les transactions/données utiles pour les rapports** pour stocker les documents des jeux dans les tables EDI de la base de données des suivis (BizTalk BizTalkDTADb).  
   
@@ -47,4 +47,4 @@ Les propriétés de secours s'appliquent aux échanges X12 (notamment HIPAA) et 
 3.  Cliquez sur **appliquer** pour accepter les modifications avant de poursuivre la configuration, ou cliquez sur **OK** pour valider et accepter les modifications et fermez la boîte de dialogue.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Configuration des propriétés de l’accord Global ou de secours](../core/configuring-global-or-fallback-agreement-properties.md)
+ [Configuration des propriétés d’un accord global ou de secours](../core/configuring-global-or-fallback-agreement-properties.md)

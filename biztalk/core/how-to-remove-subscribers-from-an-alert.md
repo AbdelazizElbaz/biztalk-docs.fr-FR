@@ -16,11 +16,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 92855ecc4e4e5ad2f7932327de7da8e19a80d490
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9122b74ecc82e32230d09e2d0e01b553aaa2bd06
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-remove-subscribers-from-an-alert"></a>Suppression d'abonnés d'une alerte
 Les administrateurs utilisent la **remove-subscription** commande pour supprimer l’utilisateur spécifié en tant qu’abonné à partir d’une alerte.  
@@ -31,7 +31,7 @@ Les administrateurs utilisent la **remove-subscription** commande pour supprimer
   
 2.  Accédez à [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking.  
   
-3.  Type **bm remove-subscription-View :\<nom de la vue >-alerte :\<nom de l’alerte > - AccountName :\<nom du compte >**.  
+3.  Type **bm remove-subscription-View :\<nom de la vue\> -alerte :\<nom de l’alerte\> - AccountName :\<nom de compte\>**.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  

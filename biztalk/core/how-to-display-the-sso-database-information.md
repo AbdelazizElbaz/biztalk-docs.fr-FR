@@ -16,11 +16,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1328e6066af0d19c68657728f8dc7777ba62f12d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e834874cb87da598db0bc92e516b58dfe2da9069
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-display-the-sso-database-information"></a>Comment afficher les informations de base de données SSO
 Vous pouvez afficher les informations de la base de données SSO à l'aide du composant logiciel enfichable MMC ou de l'utilitaire de ligne de commande (ssomanage).  
@@ -39,7 +39,7 @@ Vous pouvez afficher les informations de la base de données SSO à l'aide du co
   
 1.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-2.  Dans l'invite de ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  **\<lecteur >**: \Program Files\Enterprise Single Sign-On.  
+2.  Dans l'invite de ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  **\<lecteur\>**: \Program Files\Enterprise Single Sign-On.  
   
 3.  Type **ssomanage – displaydb**.  
   
@@ -50,7 +50,7 @@ Vous pouvez afficher les informations de la base de données SSO à l'aide du co
   
 1.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-2.  Dans l'invite de ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  **\<lecteur >**: \Program Files\Enterprise Single Sign-On.  
+2.  Dans l'invite de ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  **\<lecteur\>**: \Program Files\Enterprise Single Sign-On.  
   
 3.  Type **ssomanage – showdb**.  
   
@@ -61,9 +61,9 @@ Vous pouvez afficher les informations de la base de données SSO à l'aide du co
   
 |Propriété|Valeur|  
 |--------------|-----------|  
-|SQL Server|**\<Nom du serveur SQL >**|  
-|Base de données de l'authentification unique|**\<Nom de base de données SQL Server >**|  
-|Nom du serveur de secret de l'authentification unique|**\<Nom du serveur de l’authentification unique >**|  
+|SQL Server|**\<Nom SQL Server\>**|  
+|Base de données de l'authentification unique|**\<Nom de base de données SQL Server\>**|  
+|Nom du serveur de secret de l'authentification unique|**\<Nom du serveur de l’authentification unique\>**|  
 |Compte des administrateurs de l'authentification unique|Domaine\nom du compte|  
 |Compte des administrateurs d'applications associées à authentification unique|Domaine\nom du compte|  
 |Taille de la table d'audit pour les applications supprimées (nombre d'entrées d'audit)|1 000 (par défaut)|  
@@ -77,4 +77,4 @@ Vous pouvez afficher les informations de la base de données SSO à l'aide du co
   
 ## <a name="see-also"></a>Voir aussi  
  [Comment configurer les Tickets d’authentification unique](../core/how-to-configure-the-sso-tickets.md)   
- [À l’aide de l’authentification unique](../core/using-sso.md)
+ [Utilisation de l’authentification unique](../core/using-sso.md)

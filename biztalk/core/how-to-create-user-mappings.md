@@ -15,11 +15,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5ffbcc0cb5ca00eb0b461f77c36397179f5c91f7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 019adf0cd41c643ac77790c96a3450bb967ddd6b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-create-user-mappings"></a>Comment créer des mappages utilisateur
 Cette commande permet de créer un ou plusieurs mappages utilisateur, comme décrit dans le fichier XML. Voici un exemple de fichier XML.  
@@ -53,9 +53,9 @@ Cette commande permet de créer un ou plusieurs mappages utilisateur, comme déc
   
 1.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est \< *lecteur*> : \Program Files\Enterprise Single Sign-On.  
+2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est \< *lecteur*\>: \Program Files\Enterprise Single Sign-On.  
   
-3.  Type **ssomanage – createmappings  *\<nom de fichier de mappage >***, où  *\<nom de fichier de mappage >* est le nom du fichier qui contient le ou les utilisateurs mappages que vous souhaitez créer.  
+3.  Type **ssomanage – createmappings  *\<nom de fichier de mappage\>***, où  *\<nom de fichier de mappage\>*  est le nom du fichier qui contient les ou les mappages utilisateur que vous souhaitez créer.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -64,9 +64,9 @@ Cette commande permet de créer un ou plusieurs mappages utilisateur, comme déc
   
 1.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est \< *lecteur*> : \Program Files\Enterprise Single Sign-On.  
+2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est \< *lecteur*\>: \Program Files\Enterprise Single Sign-On.  
   
-3.  Type **ssoclient – setcredentials  *\<nom de l’application >***, où  *\<nom de l’application >* est le nom de l’application associée que l’utilisateur souhaite créer un mappage pour.  
+3.  Type **ssoclient – setcredentials  *\<nom de l’application \>*** , où  *\<nom de l’application \>*  est le nom de l’application associée que l’utilisateur souhaite créer un mappage pour.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  

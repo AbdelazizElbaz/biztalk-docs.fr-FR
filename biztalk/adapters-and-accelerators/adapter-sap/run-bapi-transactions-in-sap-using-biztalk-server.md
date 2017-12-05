@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b72574df8cd20b8beb4be7e7eb11e3065d03333
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 79cfa3f1b799c4a96cdad7f4c9b89b4b594dc4d8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="run-bapi-transactions-in-sap-using-biztalk-server"></a>Exécutez BAPI Transactions dans SAP à l’aide de BizTalk Server
 Le [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] permet aux clients d’adaptateur effectuer des transactions sur un système SAP à l’aide de [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]. Avant de créer une orchestration pour une transaction, vous devez d’abord comprendre un scénario de base dans lequel les transactions seront effectuées. Dans un scénario classique de transaction, un message de demande avec plusieurs opérations (par exemple, appeler une commande BAPI) est envoyé au système SAP. Cela est appelé un message « opération ». L’orchestration doit extraire chaque message d’opération à partir du message de demande et envoyer les messages d’opération individuelle au système SAP. L’orchestration envoie les unes après les autres à l’aide de la même connexion. L’orchestration extrait les messages individuels à partir du message « opération » à l’aide d’une transformation XML via un mappage BizTalk.  
@@ -98,7 +98,7 @@ Le [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] permet au
 >  Vous devez vous assurer que tous les schémas requis sont ajoutés au projet BizTalk.  
   
 > [!IMPORTANT]
->  Vous devez ajouter une référence au schéma de propriété BizTalk pour [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] à votre projet BizTalk. Le fichier de schéma, *Microsoft.Adapters.SAP.BiztalkPropertySchema.dll*, est installé par le [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] le programme d’installation, en général au \<lecteur d’installation > : \Program Files\Microsoft Pack\bin de l’adaptateur BizTalk.  
+>  Vous devez ajouter une référence au schéma de propriété BizTalk pour [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] à votre projet BizTalk. Le fichier de schéma, *Microsoft.Adapters.SAP.BiztalkPropertySchema.dll*, est installé par le [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] le programme d’installation, en général au \<lecteur d’installation\>: \Program Files\Microsoft Pack d’adaptateurs BizTalk \Bin.  
   
 ## <a name="defining-messages-and-message-types"></a>Définition des Messages et les Types de messages  
  Le schéma que vous avez généré précédemment décrit les « types » requis pour les messages dans l’orchestration. Un message est généralement une variable, le type est défini par le schéma correspondant. Vous devez lier le schéma généré à la première étape pour les messages à partir de la fenêtre Vue Orchestration du projet BizTalk.  
@@ -324,7 +324,7 @@ BAPIRollbackMessage(Microsoft.Adapters.SAP.BiztalkPropertySchema.ConnectionState
  Pour plus d’informations sur la gestion des exceptions, en général, à l’aide de [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], consultez [à l’aide de Transactions et gestion des Exceptions](../../core/using-transactions-and-handling-exceptions.md).
   
 ## <a name="add-the-biztalk-property-schema-to-biztalk"></a>Ajoutez le schéma de propriété BizTalk à BizTalk  
- Dans votre projet BizTalk, vous avez ajouté une référence d’assembly au schéma de propriété BizTalk pour [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]. Vous devez ajouter le même assembly en tant que ressource dans l’application BizTalk, autrement dit, l’application où sera déployé le projet BizTalk. Le fichier de schéma, *Microsoft.Adapters.SAP.BiztalkPropertySchema.dll*, est installé par le [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] le programme d’installation en général sous \<lecteur d’installation > : \Program Files\Microsoft Pack\bin de l’adaptateur BizTalk. Sans cette ressource, vous ne serez pas en mesure de déployer votre projet.  
+ Dans votre projet BizTalk, vous avez ajouté une référence d’assembly au schéma de propriété BizTalk pour [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]. Vous devez ajouter le même assembly en tant que ressource dans l’application BizTalk, autrement dit, l’application où sera déployé le projet BizTalk. Le fichier de schéma, *Microsoft.Adapters.SAP.BiztalkPropertySchema.dll*, est installé par le [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] le programme d’installation en général sous \<lecteur d’installation\>: \Program Files\Microsoft l’adaptateur BizTalk Pack\bin. Sans cette ressource, vous ne serez pas en mesure de déployer votre projet.  
   
 #### <a name="to-add-an-assembly-as-a-resource-in-biztalk"></a>Pour ajouter un assembly en tant que ressource dans BizTalk Server  
   
@@ -384,7 +384,7 @@ BAPIRollbackMessage(Microsoft.Adapters.SAP.BiztalkPropertySchema.ConnectionState
  Après avoir exécuté l’application, vous devez supprimer un message de demande pour l’orchestration à un emplacement prédéfini. Le message de demande doit être conforme à un schéma spécifique, par exemple, MultipleOrders.xsd schéma. Par exemple, un message de demande pour créer des commandes client dans un système SAP, puis pour valider l’opération est :  
   
 ```  
-\<ns0:Orders xmlns:ns0="http://BAPISend.MultipleOrders">  
+<ns0:Orders xmlns:ns0="http://BAPISend.MultipleOrders">  
   <Order>  
       <ORDER_HEADER_IN>  
         <DOC_TYPE>TA</DOC_TYPE>  
@@ -411,7 +411,7 @@ BAPIRollbackMessage(Microsoft.Adapters.SAP.BiztalkPropertySchema.ConnectionState
   <isCommit>true</isCommit>  
   <BAPI_TRANSACTION_COMMIT>  
   </BAPI_TRANSACTION_COMMIT>  
-\</ns0:Orders>  
+</ns0:Orders>  
 ```  
   
  L’orchestration consomme le message et l’envoie au système SAP. La réponse du système SAP est enregistrée à un autre emplacement de fichier définie dans le cadre de l’orchestration. Pour le message de demande ci-dessus, vous obtenez deux messages de réponse, une pour l’appel de la RFC BAPI_SALESORDER_CREATEFROMDAT2 et l’autre pour l’opération de validation à l’aide de BAPI_TRANSACTION_COMMIT.  
@@ -419,7 +419,7 @@ BAPIRollbackMessage(Microsoft.Adapters.SAP.BiztalkPropertySchema.ConnectionState
  La réponse pour BAPI_SALESORDER_CREATEFROMDAT2 est :  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <BAPI_SALESORDER_CREATEFROMDAT2Response xmlns="http://Microsoft.LobServices.Sap/2007/03/Rfc/">  
   <SALESDOCUMENT />   
   <ORDER_ITEMS_IN>  
@@ -444,7 +444,7 @@ BAPIRollbackMessage(Microsoft.Adapters.SAP.BiztalkPropertySchema.ConnectionState
  La réponse pour BAPI_TRANSACTION_COMMIT est :  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <BAPI_TRANSACTION_COMMITResponse xmlns="http://Microsoft.LobServices.Sap/2007/03/Rfc/">  
   <RETURN>  
     <TYPE xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/" />   

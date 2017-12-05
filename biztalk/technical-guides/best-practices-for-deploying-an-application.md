@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 25d24eda11d9547b545445239e783ac3bfee4057
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: aa55a240669ab9369dd7a1862d3fda055f577edd
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="best-practices-for-deploying-an-application"></a>Meilleures pratiques pour le déploiement d’une Application
 Cette rubrique répertorie les meilleures pratiques à suivre pour déployer des applications BizTalk.  
@@ -33,10 +33,7 @@ Cette rubrique répertorie les meilleures pratiques à suivre pour déployer des
 ## <a name="creating-a-biztalk-application"></a>Création d’une Application BizTalk  
  **Script de la création de fichiers d’application et le fichier .msi BizTalk**  
   
--   BtsTask.exe peut servir à la création d’applications BizTalk de script. Si la création des applications est l’objet d’un script, puis les packages peuvent être créées automatiquement à l’aide d’un processus automatisé sur un serveur de builds. Pour plus d’informations sur la création d’applications de script, consultez [déploiement et la gestion des Applications BizTalk](http://go.microsoft.com/fwlink/?LinkID=154210) (http://go.Microsoft.com/fwlink/?) LinkID = 154210) et le [BizTalk Server 2006 : présentation du déploiement d’Application BizTalk Server](http://go.microsoft.com/fwlink/?LinkID=101599) (http://go.Microsoft.com/fwlink/?) LinkID = 101599) livre blanc.  
-  
-    > [!NOTE]  
-    >  Le livre blanc s’applique également aux [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)].  
+-   BtsTask.exe peut servir à la création d’applications BizTalk de script. Si la création des applications est l’objet d’un script, puis les packages peuvent être créées automatiquement à l’aide d’un processus automatisé sur un serveur de builds. Pour plus d’informations sur la création d’applications de script, consultez [déploiement et la gestion des Applications BizTalk](../core/deploying-and-managing-biztalk-applications.md).
   
 ## <a name="deploying-a-biztalk-assembly"></a>Déploiement d’un Assembly BizTalk  
  **Jamais déployer un assembly à partir de Visual Studio sur un ordinateur de production**  
@@ -54,7 +51,7 @@ Cette rubrique répertorie les meilleures pratiques à suivre pour déployer des
   
 -   Si les artefacts doivent être partagés par plusieurs applications, déployez-les dans une application distincte. Si, par exemple, deux applications partagent le même schéma, placez ce dernier dans une application distincte. Nous le recommandons, car seul l’artefact dans un groupe BizTalk peut avoir un identificateur unique local (LUID). Un LUID se compose du nom d’artefact et éventuellement d’autres attributs. Si vous incluez un artefact dans une application, puis créez une référence à celui-ci à partir d’une autre application, l’application de référence peut ne pas fonctionne correctement lorsque vous arrêtez l’application contenant l’artefact.  
   
-     La méthode conseillée s'applique à tous les types d'artefact sauf pour les fichiers, comme les fichiers Readme (Lisezmoi) et les scripts, qui sont ajoutés à l'application en tant que type Fichier d'artefact, Il s’agit, car plusieurs artefacts de fichier portant le même nom peut être déployé dans un groupe BizTalk. Vous pouvez par conséquent utiliser un fichier ayant le même nom dans plusieurs applications. Dans ce cas, l’arrêt d’une application n’affectera pas l’autre application. Pour plus d’informations sur l’ajout d’artefacts d’un fichier, consultez [l’ajout d’un fichier à une Application](http://go.microsoft.com/fwlink/?LinkId=154997) (http://go.microsoft.com/fwlink/?LinkId=154997).  
+     La méthode conseillée s'applique à tous les types d'artefact sauf pour les fichiers, comme les fichiers Readme (Lisezmoi) et les scripts, qui sont ajoutés à l'application en tant que type Fichier d'artefact, Il s’agit, car plusieurs artefacts de fichier portant le même nom peut être déployé dans un groupe BizTalk. Vous pouvez par conséquent utiliser un fichier ayant le même nom dans plusieurs applications. Dans ce cas, l’arrêt d’une application n’affectera pas l’autre application. Pour plus d’informations sur l’ajout d’artefacts d’un fichier, consultez [l’ajout d’un fichier à une Application](../core/how-to-add-a-file-to-an-application.md).  
   
  **Déployer un site Web partagé dans une application distincte**  
   
@@ -75,7 +72,7 @@ Cette rubrique répertorie les meilleures pratiques à suivre pour déployer des
   
 -   Déployez plusieurs fichiers .msi plus petits au lieu d’un fichier .msi de grande taille.  
   
-    -   Augmenter le délai d’expiration de transaction par défaut de 3 000 secondes associé à la Microsoft.BizTalk.ApplicationDeployment.Group et les composants Microsoft.BizTalk.Deployment.DeployerComponent dans l’interface de gestion des Services de composants. Ces composants appartiennent respectivement aux applications Microsoft.BizTalk.ApplicationDeployment.Engine et Microsoft.Biztalk.Deployment COM +. Pour plus d’informations, consultez l’article de la Base de connaissances Microsoft 287499, [comment modifier la valeur de délai d’attente de Transaction pour MTS ou COM +](http://go.microsoft.com/fwlink/?LinkId=109589) (http://go.microsoft.com/fwlink/?LinkId=109589).  
+    -   Augmenter le délai d’expiration de transaction par défaut de 3 000 secondes associé à la Microsoft.BizTalk.ApplicationDeployment.Group et les composants Microsoft.BizTalk.Deployment.DeployerComponent dans l’interface de gestion des Services de composants. Ces composants appartiennent respectivement aux applications Microsoft.BizTalk.ApplicationDeployment.Engine et Microsoft.Biztalk.Deployment COM +. Pour plus d’informations, consultez l’article de la Base de connaissances Microsoft 287499, [comment modifier la valeur de délai d’attente de Transaction pour MTS ou COM +](https://support.microsoft.com/help/287499/how-to-change-the-transaction-time-out-value-for-mts-or-com).  
   
  **Empêcher les liaisons d’être remplacé**  
   
@@ -83,7 +80,7 @@ Cette rubrique répertorie les meilleures pratiques à suivre pour déployer des
   
  **Assurez-vous que le fichier .msi est sécurisé**  
   
--   Un fichier .msi peut contenir des données sensibles. Veillez à prendre des mesures pour garantir que le fichier est sécurisé. Pour plus d’informations sur la sécurité du fichier .msi, consultez [sécurité et Windows Installer](http://go.microsoft.com/fwlink/?LinkId=154998) (http://go.microsoft.com/fwlink/?LinkId=154998).  
+-   Un fichier .msi peut contenir des données sensibles. Veillez à prendre des mesures pour garantir que le fichier est sécurisé. Pour plus d’informations sur la sécurité du fichier .msi, consultez [sécurité et Windows Installer](../core/security-and-windows-installer.md).  
   
  **Assurez-vous que le fichier de liaison est sécurisé**  
   
@@ -96,12 +93,12 @@ Cette rubrique répertorie les meilleures pratiques à suivre pour déployer des
 ## <a name="importing-a-biztalk-application"></a>L’importation d’une Application BizTalk  
  **Script de l’importation des fichiers .msi**  
   
--   BtsTask.exe peut servir à l’importation des fichiers du fichier .msi BizTalk existants de script. Pour plus d’informations sur les scripts de l’importation de fichier .msi, consultez [déploiement et la gestion des Applications BizTalk](http://go.microsoft.com/fwlink/?LinkID=154210) (http://go.Microsoft.com/fwlink/?) LinkID = 154210) et le [BizTalk Server 2006 : présentation du déploiement d’Application BizTalk Server](http://go.microsoft.com/fwlink/?LinkID=101599) (http://go.Microsoft.com/fwlink/?) LinkID = 101599) livre blanc.  
+-   BtsTask.exe peut servir à l’importation des fichiers du fichier .msi BizTalk existants de script. Pour plus d’informations sur les scripts de l’importation de fichier .msi, consultez [déploiement et la gestion des Applications BizTalk](../core/deploying-and-managing-biztalk-applications.md). 
   
     > [!NOTE]  
-    >  Le livre blanc s’applique également aux [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)].  
+    >  Le livre blanc s’applique également à BizTalk Server.  
   
--   Vous pouvez ajouter des scripts à exécuter en tant que scripts de pré-traitement ou de post-traitement. Toutefois, vous devez inclure une logique dans vos scripts pour vérifier les variables d’environnement pour déterminer le contexte dans lequel le script s’exécute dans (une importation, l’installation ou la désinstallation) et traiter en conséquence. Pour plus d’informations sur l’utilisation de scripts de pré-traitement et post-traitement, voir [à l’aide de Scripts de pré-traitement et post-traitement au déploiement d’Application personnaliser](http://go.microsoft.com/fwlink/?LinkId=154995) (http://go.microsoft.com/fwlink/?LinkId=154995).  
+-   Vous pouvez ajouter des scripts à exécuter en tant que scripts de pré-traitement ou de post-traitement. Toutefois, vous devez inclure une logique dans vos scripts pour vérifier les variables d’environnement pour déterminer le contexte dans lequel le script s’exécute dans (une importation, l’installation ou la désinstallation) et traiter en conséquence. Pour plus d’informations sur l’utilisation de scripts de pré-traitement et post-traitement, voir [à l’aide de Scripts de pré-traitement et post-traitement pour personnaliser le déploiement Application](../core/using-pre-and-post-processing-scripts-to-customize-application-deployment.md). 
   
  **Vérifier l’existence d’artefacts**  
   
@@ -117,4 +114,4 @@ Cette rubrique répertorie les meilleures pratiques à suivre pour déployer des
   
  **Si une opération d’importation expire, fractionnez l’application en fichiers .msi supplémentaires**  
   
--   Une opération d’importation expire si elle dépasse 3 600 secondes. Si vous essayez d’importer un fichier .msi et que l’opération arrive à expiration, vous devez diviser le contenu de l’application en plusieurs fichiers .msi en réexportant l’application et en sélectionnant un sous-ensemble d’artefacts à exporter. Pour plus d’informations sur l’exportation d’une application dans un fichier .msi, consultez [comment exporter une Application BizTalk](http://go.microsoft.com/fwlink/?LinkID=154848) (http://go.microsoft.com/fwlink/?LinkID=154848).
+-   Une opération d’importation expire si elle dépasse 3 600 secondes. Si vous essayez d’importer un fichier .msi et que l’opération arrive à expiration, vous devez diviser le contenu de l’application en plusieurs fichiers .msi en réexportant l’application et en sélectionnant un sous-ensemble d’artefacts à exporter. Pour plus d’informations sur l’exportation d’une application dans un fichier .msi, consultez [exporter une Application BizTalk](../core/how-to-export-a-biztalk-application.md).

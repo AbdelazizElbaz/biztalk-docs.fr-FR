@@ -13,11 +13,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5d362ae262c7b054bd86fda72f8aacd3b5ab1455
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b5f00a0bfe14eeb7d4205973b3fef96e23026616
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="create-msmq-receive-locations-and-send-ports-programmatically"></a>Créer par programme des Ports d’envoi et emplacements de réception MSMQ
 Cette rubrique décrit l'utilisation de WMI afin de créer un port ou un emplacement pour l'adaptateur MSMQ.  
@@ -53,7 +53,7 @@ objReceiveLocation["CustomCfg"] =
   
  Les noms des balises présentes dans l'élément CustomProps représentent les noms internes que l'adaptateur utilise pour les propriétés.  
   
- L'adaptateur MSMQ possède une balise unique, AdapterConfig, qui se trouve à l'intérieur de la balise CustomProps. La balise AdapterConfig contient une chaîne de balises XML pour les valeurs des propriétés personnalisées incluses dans une balise Config. Toutefois, les balises sont codées : «&lt;« remplace »\<« et »&gt;» remplace « > ». Par exemple, le XML d'un sous-ensemble de l'adaptateur associé à des propriétés MSMQ peut s'afficher comme suit :  
+ L'adaptateur MSMQ possède une balise unique, AdapterConfig, qui se trouve à l'intérieur de la balise CustomProps. La balise AdapterConfig contient une chaîne de balises XML pour les valeurs des propriétés personnalisées incluses dans une balise Config. Toutefois, les balises sont codées : «&lt;« remplace »\<« et »&gt;« remplace »\>». Par exemple, le XML d'un sous-ensemble de l'adaptateur associé à des propriétés MSMQ peut s'afficher comme suit :  
   
 ```  
 <Config>  

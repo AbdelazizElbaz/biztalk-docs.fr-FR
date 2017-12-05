@@ -12,14 +12,14 @@ caps.latest.revision: "32"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e6a78b90a3cebb2b812ef68b21c8ea2f99eb0981
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 691a10671c4c8ff5f2ff77065455c100784ddd0e
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues-with-edi-and-as2-status-reporting"></a>Problèmes connus avec la création de rapports d'état EDI et AS2
-Cette rubrique décrit les problèmes connus relatifs à la création de rapports d'état EDI dans [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)].  
+Cette rubrique décrit les problèmes connus avec l’état d’EDI dans BizTalk Server.  
   
 ## <a name="batch-status-reporting-data-may-not-be-updated-if-the-batch-orchestration-is-stopped-outside-of-the-partner-agreement-manager"></a>Il se peut que les données de création de rapports d'état d'un lot ne soient pas mises à jour si l'orchestration de traitement par lot est arrêtée hors du gestionnaire d'accords partenaires  
  Une instance d'orchestration de traitement par lot peut être désactivée via la page Lots de la boîte de dialogue Propriétés EDI pour un tiers. Si vous désactivez une instance d'orchestration de traitement par lot de cette façon, BizTalk Server met à jour les données de création de rapports d'état pour ce lot. En revanche, si vous arrêtez l'orchestration de traitement par lot d'une autre façon (par exemple, depuis l'une des pages de requête associée à la page Présentation du groupe de la console Administration [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]), il se peut que les données de création de rapports d'état ne soient pas mises à jour et que le rapport d'état de lot généré soit obsolète. Par exemple, le rapport d'état peut indiquer que le lot est toujours actif alors que l'instance d'orchestration de traitement par lot a été désactivée.  
@@ -63,9 +63,9 @@ Cette rubrique décrit les problèmes connus relatifs à la création de rapport
 ## <a name="status-reporting-will-not-work-after-an-upgrade-if-the-bam-tools-are-not-configured"></a>La création de rapports d'état ne fonctionne plus après une mise à niveau si les outils BAM ne sont pas configurés  
  Les outils BAM doivent être configurés pour que la création de rapports d'état EDI et AS2 fonctionne correctement. Si vous mettez à niveau une installation de [!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)] vers une version ultérieure sans configurer les outils BAM au cours du processus, la fonctionnalité de création de rapports d'état EDI/AS2 dans l'installation mise à niveau ne fonctionnera pas correctement.  
   
- Pour utiliser cette fonctionnalité après une mise à niveau de [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], assurez-vous que les outils BAM sont configurés avant de procéder à la mise à niveau.  
+ Si vous souhaitez utiliser cette fonctionnalité une fois que vous mettez à niveau vers BizTalk Server, assurez-vous que les outils BAM sont configurés avant d’effectuer la mise à niveau.  
   
- Si la création de rapports d'état ne fonctionne pas après la mise à niveau, consultez les journaux de mise à niveau pour déterminer si les outils BAM ont été configurés avant le lancement du processus. Si non, vous pouvez configurer les outils d’analyse BAM et ensuite déployer l’activité BAM BusinessMessageJournal contenue dans le fichier EdiStatusReportingActivityDefs.xml dans  *\<lecteur >*: \Program Files\Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)].  
+ Si la création de rapports d'état ne fonctionne pas après la mise à niveau, consultez les journaux de mise à niveau pour déterminer si les outils BAM ont été configurés avant le lancement du processus. Si non, vous pouvez configurer les outils d’analyse BAM et ensuite déployer l’activité BAM BusinessMessageJournal contenue dans le fichier EdiStatusReportingActivityDefs.xml dans  *\<lecteur\>*: \Program Files\Microsoft BizTalk Server.  
   
 ## <a name="disabling-transaction-set-storage-affects-an-activated-batch-but-enabling-storage-does-not"></a>La désactivation du stockage des documents informatisés affecte un lot activé, contrairement à son activation  
  Si vous désactivez le stockage des documents informatisés alors qu'une instance de l'orchestration de traitement par lot est activée, la modification prend effet immédiatement. BizTalk Server stocke les documents informatisés du lot tant que le stockage est activé (ce n'est plus le cas une fois que le stockage est désactivé). Pour désactiver le stockage des documents informatisés, désactivez la propriété « Stocker les documents informatisés/données utiles pour la création de rapports » dans le volet Général de la boîte de dialogue Propriétés EDI.  
@@ -89,12 +89,12 @@ Cette rubrique décrit les problèmes connus relatifs à la création de rapport
  Pour contourner ce problème, désactivez la propriété « Stocker les messages AS2 codés sortants dans une base de données de non-répudiation » ou la propriété « Message de requête après le traitement de port ». Il est recommandons de désactiver la propriété « Message de requête après le traitement de port » pour permettre au suivi AS2 de capturer les informations relatives aux corps en même temps que les autres informations nécessaires à la création de rapports d'état AS2.  
   
 ## <a name="edi-and-as2-message-context-properties-are-not-available-after-upgrading-to-biztalk-2009"></a>Les propriétés de contexte des messages EDI et AS2 ne sont pas disponibles après la mise à niveau vers BizTalk 2009  
- Après la mise à niveau vers [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], aucune propriété de contexte n'est affichée dans la création de rapports d'état pour les messages EDI ou AS2 reçus avant le processus.  Les propriétés de contexte des messages reçus après la mise à niveau sont correctement affichées.  
+ Après la mise à niveau vers BizTalk Server, aucune propriété de contexte n’est affichées dans le rapport d’état pour tous les messages EDI ou AS2 reçus avant la mise à niveau s’est produite.  Les propriétés de contexte des messages reçus après la mise à niveau sont correctement affichées.  
   
- Les collections de propriétés de contexte EDI et AS2 n'étaient pas stockées dans les messages dans les versions précédentes de BizTalk Server et sont indisponibles après la mise à niveau. Après la mise à niveau vers [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], les propriétés de contexte AS2 sont stockées dans les messages, contrairement aux propriétés de contexte EDI.  
+ Les collections de propriétés de contexte EDI et AS2 n'étaient pas stockées dans les messages dans les versions précédentes de BizTalk Server et sont indisponibles après la mise à niveau. Après la mise à niveau vers BizTalk Server, AS2, les propriétés de contexte sont stockées en tant que partie du message, les propriétés de contexte EDI sont toutefois pas.  
   
 ## <a name="interchange-date-for-received-documents-may-display-the-wrong-year-in-status-reports"></a>Une année erronée peut être affichée comme date d'échange de documents reçus dans les rapports d'état  
- Si un document reçu spécifie une date au format AAMMJJ, [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] utilise la logique suivante pour déterminer la valeur de l'année :  
+ Si un document reçu spécifié de la date au format AAMMJJ, BizTalk Server utilise la logique suivante pour déterminer la valeur de l’année :  
   
 -   Si AA est supérieur ou égal à 75, l'année est affichée au format 19AA.  
   
@@ -107,4 +107,4 @@ Cette rubrique décrit les problèmes connus relatifs à la création de rapport
   
 ## <a name="see-also"></a>Voir aussi  
  [Dépannage des Solutions EDI et AS2](../core/troubleshooting-edi-and-as2-solutions.md)   
- [EDI et AS2 le rapport d’état](../core/edi-and-as2-status-reporting.md)
+ [Rapports d’état EDI et AS2](../core/edi-and-as2-status-reporting.md)

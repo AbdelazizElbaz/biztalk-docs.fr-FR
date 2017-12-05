@@ -15,11 +15,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: daa14a5eba95b11ac29500dce1d60b60ba608abc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d6fbf9296e56db816277f9a7a348377bfa4b359d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="restrictions-when-configuring-the-file-adapter"></a>Restrictions relatives à la configuration de l’adaptateur de fichier
 Les restrictions et les règles lors de l’utilisation de l’adaptateur file.
@@ -36,9 +36,9 @@ Le masque de fichier est une chaîne qui spécifie le type de fichier que le ges
   
 -   Le masque et le nom de fichier ne respectent pas la casse.  
   
--   Le nom de fichier ne peut contenir aucun des caractères suivants : \< > : / &#124; " ? * ;  
+-   Le nom de fichier ne peut contenir aucun des caractères suivants : \< \> : / &#124; " ? * ;  
   
--   Le masque de fichier ne peut contenir aucun des caractères suivants : \< > : / &#124; " ; 
+-   Le masque de fichier ne peut contenir aucun des caractères suivants : \< \> : / &#124; " ; 
   
 -   Les noms de périphérique réservés suivants ne peut pas être utilisés comme nom d’un fichier : CON, PRN, AUX, CLOCK$, NUL, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8 et LPT9. En outre, toute combinaison de ces éléments avec des extensions n'est pas autorisée.  
   
@@ -118,15 +118,15 @@ L'emplacement de réception FILE est une chaîne contenant le chemin d'accès à
   
 -   Le chemin d'accès au fichier doit toujours être absolu.  
   
--   Vous pouvez spécifier le chemin d’accès à l’aide du format de Universal Naming Convention (UNC) (par exemple, \\ \\ < *server* > \\ <  *partager*>).  
+-   Vous pouvez spécifier le chemin d’accès à l’aide du format de Universal Naming Convention (UNC) (par exemple, \\ \\ < *server* \> \\ <  *partager*\>).  
   
--   Si le chemin d’accès de fichier est au format UNC, le nom du serveur ne doit pas contenir les caractères suivants : ' ~ ! @ # $ ^ & * ( ) = + [ ] { } \ &#124; ; : ' " , \< > / ? ;  
+-   Si le chemin d’accès de fichier est au format UNC, le nom du serveur ne doit pas contenir les caractères suivants : ' ~ ! @ # $ ^ & * ( ) = + [ ] { } \ &#124; ; : ' " , \< \> / ? ;  
   
 -   Vous ne pouvez pas utiliser de parent (\\... \\) et en cours (\\.\\) des symboles de dossier dans n’importe quelle partie du chemin de fichier.  
   
 -   Le chemin d'accès au fichier ne respecte pas la casse.  
   
--   Le chemin d’accès de fichier ne peut contenir aucun des caractères suivants : \< > : / &#124; " ? * ;  
+-   Le chemin d’accès de fichier ne peut contenir aucun des caractères suivants : \< \> : / &#124; " ? * ;  
   
 -   Vous ne pouvez pas utiliser les noms de périphérique réservés suivants dans le chemin d'accès au fichier : CON, PRN, AUX, CLOCK$, NUL, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8 et LPT9.  
   

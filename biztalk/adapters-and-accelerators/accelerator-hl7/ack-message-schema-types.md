@@ -16,11 +16,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6c29657226c993a68b8cd557a39a7837717e2c66
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 09537a9fda34ee1148e3e4d880f17f35f83f761c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="ack-message-schema-types"></a>Types de schémas de Message de l’accusé de réception
 Schémas de message d’accusé de réception se présentent sous deux formes :  
@@ -41,7 +41,7 @@ Schémas de message d’accusé de réception se présentent sous deux formes :
     |COMPTE DE SERVICE ADMINISTRÉ|Accusé de réception de message|2|  
     |[ERREUR]|Erreur|2|  
   
- Messages d’accusé de réception ont le MSH9 champ défini en tant que **l’accusé de réception ^\<***événement déclencheur***> ^ l’accusé de réception** ou **MCF ^\<**  *événement déclencheur***> ^ l’accusé de réception**. Par conséquent, le premier composant du MSH9 est suffisant pour déterminer le schéma de l’accusé de réception. Nom de document par le [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator pour HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) utilise du pipeline contient toujours HL7 en tant que l’espace de noms. Le nom de type est le contenu du champ MSH9_1, qui est de l’accusé de réception ou MCF. Par conséquent, comme dans l’exemple ci-dessus, le [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] pipeline cherche un schéma avec les noms HL7. L’accusé de réception ou HL7. MCF, selon la valeur du champ MSH9_1. Le schéma pour le corps du message est le même pour tous les messages de version 2.X.  
+ Messages d’accusé de réception ont le MSH9 champ défini en tant que **l’accusé de réception ^\<***événement déclencheur***\>^ l’accusé de réception** ou **MCF ^\<**  *événement déclencheur***\>^ l’accusé de réception**. Par conséquent, le premier composant du MSH9 est suffisant pour déterminer le schéma de l’accusé de réception. Nom de document par le [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator pour HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) utilise du pipeline contient toujours HL7 en tant que l’espace de noms. Le nom de type est le contenu du champ MSH9_1, qui est de l’accusé de réception ou MCF. Par conséquent, comme dans l’exemple ci-dessus, le [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] pipeline cherche un schéma avec les noms HL7. L’accusé de réception ou HL7. MCF, selon la valeur du champ MSH9_1. Le schéma pour le corps du message est le même pour tous les messages de version 2.X.  
   
 > [!NOTE]
 >  Dans un lot dans / lots scénario de l’accusé de réception, le contenu de l’en-tête de l’accusé de réception est comme suit :  
@@ -58,4 +58,4 @@ Schémas de message d’accusé de réception se présentent sous deux formes :
  [Création et le traitement des accusés de réception](../../adapters-and-accelerators/accelerator-hl7/creating-and-processing-acknowledgments.md)   
  [Segment de message d’accusé de réception](../../adapters-and-accelerators/accelerator-hl7/message-acknowledgment-segment.md)   
  [Configuration d’un Port d’envoi pour recevoir des accusés de réception](../../adapters-and-accelerators/accelerator-hl7/setting-up-a-send-port-for-receiving-acks.md)   
- [Conditions d’erreur d’accusé de réception](../../adapters-and-accelerators/accelerator-hl7/acknowledgment-error-conditions.md)
+ [Conditions d’erreur des accusés de réception](../../adapters-and-accelerators/accelerator-hl7/acknowledgment-error-conditions.md)

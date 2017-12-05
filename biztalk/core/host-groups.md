@@ -18,11 +18,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6d5e7782dd2e98822d6fc9e51ca08dac2d31f166
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 98e3798e42442e1a6533e4f286d194c8e2474be6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="host-groups"></a>Groupes d'hôtes
 Le groupe d'hôtes est le groupe Windows (appelé groupe Utilisateurs d'applications BizTalk par défaut) que vous utilisez pour vos comptes avec accès aux hôtes BizTalk In-process (processus hôtes dans BizTalk Server). Il est conseillé d'utiliser un groupe d'hôtes pour chaque hôte In-process de votre environnement.  
@@ -54,7 +54,7 @@ Le groupe d'hôtes est le groupe Windows (appelé groupe Utilisateurs d'applicat
   
     -   Importation principale BAM  
   
--   Il doit être un membre de la BTS_\<nom de l’hôte in-process > rôle de SQL Server _USERS pour la base de données MessageBox  
+-   Il doit être un membre de la BTS_\<nom de l’hôte in-process\>rôle SQL Server _USERS pour la base de données MessageBox  
   
 -   Il doit être membre du rôle SQL Server BAM_EVENT_WRITER dans la base de données d'importation principale BAM.  
   

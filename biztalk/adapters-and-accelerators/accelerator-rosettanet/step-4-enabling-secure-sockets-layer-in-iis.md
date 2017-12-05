@@ -17,11 +17,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 05bd6b06ddc54ec0d337dd7dddfff300a625f7df
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2964b6ac26d6685a1c38b88c5bbf98e8119f3502
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-4-enabling-secure-sockets-layer-in-iis"></a>Étape 4 : Sécurisé Sockets Layer dans IIS
 Couche de Sockets sécurisée (SSL) est un protocole conçu pour sécuriser le canal de communication entre un client et un serveur. L’activation de SSL dans Microsoft® Internet Information Services (IIS) 7.5/7.0, les organisations de Contoso et Fabrikam de communiquer à l’aide de l’authentification et le chiffrement pour tous les transferts de données. Dans cette étape, vous allez apprendre à activer le protocole SSL dans IIS 7.5/7.0.  
@@ -33,7 +33,7 @@ Couche de Sockets sécurisée (SSL) est un protocole conçu pour sécuriser le c
   
 1.  Cliquez sur **Démarrer**, pointez sur **outils d’administration**, puis cliquez sur **Gestionnaire des Services Internet (IIS)**.  
   
-2.  Dans le volet gauche de Internet Information Services, développez  **\<**  *Nom_Ordinateur*  **>**  (*ordinateur local*), développez **Sites Web**, avec le bouton droit **Site Web par défaut**, puis cliquez sur **propriétés**.  
+2.  Dans le volet gauche de Internet Information Services, développez  **\<**  *Nom_Ordinateur*  **\>**  (*ordinateur local*), développez **Sites Web**, avec le bouton droit **Site Web par défaut**, puis cliquez sur **propriétés**.  
   
 3.  Dans la boîte de dialogue de Sites Web par défaut sur le **sécurité du répertoire** , cliquez sur **certificat de serveur** pour démarrer le **Assistant certificat IIS**.  
   
@@ -59,10 +59,10 @@ Couche de Sockets sécurisée (SSL) est un protocole conçu pour sécuriser le c
   
 ### <a name="to-generate-a-new-server-certificate"></a>Pour générer un nouveau certificat de serveur  
   
-1.  Dans Internet Explorer, recherchez et ouvrez http://\<*contoso_machine*> / CertSrv.  
+1.  Dans Internet Explorer, recherchez et ouvrez http://\<*contoso_machine*\>/CertSrv.  
   
     > [!NOTE]
-    >  À l’étape 1, ouvrez http://\<*contoso_machine*> / CertSrv sur l’ordinateur Contoso ou Fabrikam.  
+    >  À l’étape 1, ouvrez http://\<*contoso_machine*\>/CertSrv sur l’ordinateur Contoso ou Fabrikam.  
   
 2.  Sur le **Microsoft Services Assistant certificat** , cliquez sur **demander un certificat.**  
   
@@ -77,7 +77,7 @@ Couche de Sockets sécurisée (SSL) est un protocole conçu pour sécuriser le c
   
 6.  Cliquez sur **Parcourir** pour ouvrir le **choisir un fichier** boîte de dialogue.  
   
-7.  Dans le **choisir un fichier** boîte de dialogue, recherchez le  *\<lecteur >*: \ dossier, sélectionnez le fichier certreq.txt, puis cliquez sur **ouvrir**.  
+7.  Dans le **choisir un fichier** boîte de dialogue, recherchez le  *\<lecteur\>*: \ dossier, sélectionnez le fichier certreq.txt, puis cliquez sur **ouvrir**.  
   
 8.  Sur le **soumettre une demande de certificat ou une demande de renouvellement** , cliquez sur **en lecture**.  
   
@@ -87,7 +87,7 @@ Couche de Sockets sécurisée (SSL) est un protocole conçu pour sécuriser le c
   
 11. Dans le **télécharger le fichier** boîte de dialogue, cliquez sur **enregistrer**.  
   
-12. Dans le **enregistrer en tant que** boîte de dialogue, enregistrez le certificat à \<lecteur > : \Certs\SSLCert.cer, puis cliquez sur **enregistrer**.  
+12. Dans le **enregistrer en tant que** boîte de dialogue, enregistrez le certificat à \<lecteur\>: \Certs\SSLCert.cer, puis cliquez sur **enregistrer**.  
   
 13. Cliquez sur **fermer** pour fermer la **téléchargement terminé** boîte de dialogue.  
   
@@ -122,7 +122,7 @@ Couche de Sockets sécurisée (SSL) est un protocole conçu pour sécuriser le c
   
 7.  Dans la boîte de dialogue Téléchargement de fichier, cliquez sur **enregistrer**.  
   
-8.  Dans la boîte de dialogue Enregistrer sous, enregistrer le certificat \<lecteur > : \Certs\SSLCert.cer, puis cliquez sur **enregistrer**.  
+8.  Dans la boîte de dialogue Enregistrer sous, enregistrer le certificat \<lecteur\>: \Certs\SSLCert.cer, puis cliquez sur **enregistrer**.  
   
 ### <a name="to-import-the-server-certificate-into-iis"></a>Pour importer le certificat de serveur dans IIS  
   
@@ -130,7 +130,7 @@ Couche de Sockets sécurisée (SSL) est un protocole conçu pour sécuriser le c
   
 2.  Dans le volet gauche de Internet Information Services, cliquez sur **(ordinateur local)**, double-cliquez sur **des certificats de serveur** dans le volet droit. Sélectionnez **demande de certificat complète** dans le volet Actions.  
   
-3.  Dans le type de boîte de dialogue de réponse de l’autorité spécifier un certificat  **\<lecteur > : \Certs\SSLCert.cer** dans **nom du fichier contenant la réponse de l’autorité de certification** zone de texte. Dans le type de zone de texte Nom convivial **ContosoSSLCert**.  
+3.  Dans le type de boîte de dialogue de réponse de l’autorité spécifier un certificat  **\<lecteur\>: \Certs\SSLCert.cer** dans **nom du fichier contenant la réponse de l’autorité de certification** zone de texte. Dans le type de zone de texte Nom convivial **ContosoSSLCert**.  
   
 ### <a name="to-enable-ssl-bindings-for-iis"></a>Pour activer les liaisons SSL pour IIS  
   
@@ -144,7 +144,7 @@ Couche de Sockets sécurisée (SSL) est un protocole conçu pour sécuriser le c
   
 1.  Cliquez sur **Démarrer**, pointez sur **outils d’administration**, puis cliquez sur **Gestionnaire des Services Internet (IIS)**.  
   
-2.  Dans le volet gauche de Internet Information Services, développez  **\<**  *Nom_Ordinateur*> (*ordinateur local*), développez **desSitesWeb**, avec le bouton droit **Site Web par défaut**, puis cliquez sur **propriétés**.  
+2.  Dans le volet gauche de Internet Information Services, développez  **\<**  *Nom_Ordinateur* \> (*ordinateur local*), développez **Web Sites**, avec le bouton droit **Site Web par défaut**, puis cliquez sur **propriétés**.  
   
 3.  Dans la boîte de dialogue Propriétés du Site Web par défaut sur le **sécurité du répertoire** , cliquez sur **certificat de serveur** pour démarrer le **Assistant certificat IIS**.  
   
@@ -152,7 +152,7 @@ Couche de Sockets sécurisée (SSL) est un protocole conçu pour sécuriser le c
   
 5.  Sur le **demande de certificat en attente** page, sélectionnez **traiter la demande en attente et installer le certificat**, puis cliquez sur **suivant**.  
   
-6.  Sur le **traiter une demande en attente** page, dans le **chemin d’accès et nom de fichier** , tapez  **\<lecteur > : \Certs\SSLCert.cer** (ou accédez au fichier) puis cliquez sur **Suivant**.  
+6.  Sur le **traiter une demande en attente** page, dans le **chemin d’accès et nom de fichier** , tapez  **\<lecteur\>: \Certs\SSLCert.cer** (ou accédez à ce fichier) puis cliquez sur **suivant**.  
   
 7.  Sur le **page Port SSL**, cliquez sur **suivant**.  
   
@@ -161,4 +161,4 @@ Couche de Sockets sécurisée (SSL) est un protocole conçu pour sécuriser le c
 9. Sur le **fin de l’Assistant certificat de serveur Web** , cliquez sur **Terminer**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Création et configuration de la Solution de Contoso](../../adapters-and-accelerators/accelerator-rosettanet/creating-and-configuring-the-contoso-solution.md)
+ [Création et configuration de la solution Contoso](../../adapters-and-accelerators/accelerator-rosettanet/creating-and-configuring-the-contoso-solution.md)

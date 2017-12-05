@@ -12,11 +12,11 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ba7e0c601276779067c1699da1526491dc3f7ca2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 34c25f3837d6eb0c938900b0da9e34246f1c6038
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-import-bindings-for-an-edi-as2-solution"></a>Comment importer des liaisons pour une Solution EDI-AS2
 Cette rubrique décrit l'importation de la configuration d'une solution EDI ou AS2 sur un autre ordinateur. Le déploiement d'une solution EDI/AS2 solution est intégré au déploiement d'application BizTalk. Il est accessible via la console Administration de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] et l'outil de ligne de commande BTSTask.  
@@ -39,7 +39,7 @@ Cette rubrique décrit l'importation de la configuration d'une solution EDI ou A
  Si [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ne parvient pas à importer un ensemble de liaisons, cela peut être dû au fait que, dans le fichier de liaison, la propriété Host Trusted diffère de la propriété Authentication Trusted pour l'hôte. Vous pouvez résoudre ce problème en modifiant la propriété Host Trusted dans le fichier de liaison.  
   
 > [!NOTE]
->  L'importation d'un fichier de liaison d'une version précédente de BizTalk Server dans [!INCLUDE[prague](../includes/prague-md.md)] peut échouer. Comme le modèle de gestion des partenaires de [!INCLUDE[prague](../includes/prague-md.md)] a considérablement changé, il se peut que l'importation d'un fichier de liaison d'une version précédente de BizTalk Server ne crée pas les entités dans [!INCLUDE[prague](../includes/prague-md.md)] conformément au nouveau modèle. Pour plus d’informations, consultez [comment les définitions de tiers dans le précédent BizTalk Server Versions sont converties en nouvelles entités GPC ?](../core/how-to-import-bindings-for-an-edi-as2-solution.md#BKMK_Party).  
+>  Importation d’un fichier de liaison à partir de versions précédentes de BizTalk Server dans BizTalk Server peut échouer. Étant donné que le modèle de gestion de partenaire a considérablement changé pour BizTalk Server, l’importation d’un fichier de liaison à partir de versions précédentes de BizTalk Server ne peut pas créer les entités dans BizTalk Server conformément au nouveau modèle. Pour plus d’informations, consultez [comment les définitions de tiers dans le précédent BizTalk Server Versions sont converties en nouvelles entités GPC ?](../core/how-to-import-bindings-for-an-edi-as2-solution.md#BKMK_Party).  
   
 ### <a name="to-import-the-configuration-from-a-binding-file"></a>Importation de la configuration à partir d'un fichier de liaison  
   
@@ -52,12 +52,12 @@ Cette rubrique décrit l'importation de la configuration d'une solution EDI ou A
 4.  Après avoir importé les liaisons, ouvrez la console Administration de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Définissez manuellement tous les champs de mot de passe EDI sur les valeurs appropriées.  
   
 ##  <a name="BKMK_Party"></a>Comment les définitions de tiers dans le précédent BizTalk Server Versions sont converties en nouvelles entités GPC ?  
- Dans [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], une définition de tiers est essentiellement un accord définissant la manière dont les messages sont échangés entre partenaires commerciaux. Dans [!INCLUDE[prague](../includes/prague-md.md)], la messagerie EDI et AS2 a été considérablement modifiée. Le nouveau modèle de gestion des partenaires commerciaux (GPC) requiert désormais la création d'accords entre deux profils professionnels commerciaux. Ainsi, essentiellement, pour qu'un accord existe, vous devez avoir préalablement défini les deux partenaires commerciaux, ainsi que les profils et les paramètres de protocole pour chacun d'eux. Une fois que vous avez défini ces entités, vous pouvez créer un accord de partenariat commercial.  
+ Dans BizTalk Server, une définition de tiers est essentiellement un accord qui définit la manière dont les messages sont échangés entre deux partenaires commerciaux. Dans BizTalk Server, EDI et AS2 de messagerie a subi un grand nombre de modifications et le nouveau modèle de gestion des partenaires commerciaux (GPC) requiert désormais des accords à créer entre deux profils d’entreprise commercial. Ainsi, essentiellement, pour qu'un accord existe, vous devez avoir préalablement défini les deux partenaires commerciaux, ainsi que les profils et les paramètres de protocole pour chacun d'eux. Une fois que vous avez défini ces entités, vous pouvez créer un accord de partenariat commercial.  
   
 > [!NOTE]
->  Pour plus d’informations relatives aux améliorations du module de plateforme sécurisée dans [!INCLUDE[prague](../includes/prague-md.md)], consultez [blocs de construction d’une Solution de gestion des partenaires commerciaux](../core/building-blocks-of-a-trading-partner-management-solution.md).  
+>  Pour plus d’informations relatives aux améliorations du module de plateforme sécurisée dans BizTalk Server, consultez [blocs de construction d’une Solution de gestion des partenaires commerciaux](../core/building-blocks-of-a-trading-partner-management-solution.md).  
   
- Le nouveau modèle d'objet GPC empêche-t-il la migration des applications EDI que vous avez créées dans [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] vers [!INCLUDE[prague](../includes/prague-md.md)]? La réponse est aucune. Vous pouvez réutiliser les applications existantes à partir de BizTalk Server 2006 R2 ou BizTalk Server 2009 dans [!INCLUDE[prague](../includes/prague-md.md)] à l’aide de l’outil de Migration de tiers pour migrer les données de tiers à partir de versions précédentes de BizTalk Server. Pour plus d’informations sur l’outil, consultez [migration des artefacts EDI à partir d’une Version précédente de BizTalk Server](http://msdn.microsoft.com/library/b956a97e-03d0-47ea-a2ce-c07a339c0f2c).  
+ Étant donné le nouveau modèle d’objet de module de plateforme sécurisée, cela signifie que les applications EDI que vous avez créé dans BizTalk Server ne peut pas être migrées vers BizTalk Server ? La réponse est aucune. Vous pouvez réutiliser les applications existantes à partir de BizTalk Server 2006 R2 ou BizTalk Server 2009 dans BizTalk Server à l’aide de l’outil de Migration de tiers pour migrer les données de tiers à partir de versions précédentes de BizTalk Server. Pour plus d’informations sur l’outil, consultez [migration des artefacts EDI à partir d’une Version précédente de BizTalk Server](http://msdn.microsoft.com/library/b956a97e-03d0-47ea-a2ce-c07a339c0f2c).  
   
 ## <a name="see-also"></a>Voir aussi  
- [L’importation de liaisons](../core/importing-bindings2.md)
+ [Importation des liaisons](../core/importing-bindings2.md)

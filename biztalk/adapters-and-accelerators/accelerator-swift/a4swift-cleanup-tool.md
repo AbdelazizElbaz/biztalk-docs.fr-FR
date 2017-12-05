@@ -13,11 +13,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 34611a463efa19f6fc8e2cb9718748cf90d09e49
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8b2d0e251bf5e8a4169ff0d86cc6635944ca12e1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="a4swift-cleanup-tool"></a>Outil de nettoyage A4SWIFT
 Le [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] outil de nettoyage vous permet de préparer un serveur qui a le [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] installé dessus pour une nouvelle installation de [!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]. L’outil supprime les artefacts de A4SWIFT, tels que les contrats, les services et les stratégies du moteur de règles d’entreprise (BRE) et annule le déploiement des assemblys. Exécution de l’outil vous permet d’éviter la suppression manuelle de nombreux artefacts A4SWIFT et résout les problèmes d’annulation du déploiement des assemblys qui peuvent être référencées à partir d’autres assemblys.  
@@ -67,7 +67,7 @@ Le [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonu
   
 1.  Avant d’exécuter l’outil de nettoyage A4SWIFT, annuler le déploiement d’un projet qui fait référence à des assemblys par défaut A4SWIFT.  
   
-2.  Ouvrez une invite de commandes et la déplacer vers \< *lecteur*> : \Program Files\Microsoft BizTalk Accelerator pour SWIFT\SDK\Tools.  
+2.  Ouvrez une invite de commandes et la déplacer vers \< *lecteur*\>: \Program Files\Microsoft BizTalk Accelerator pour SWIFT\SDK\Tools.  
   
 3.  Type **A4SWIFTCleanupTool.exe** , puis appuyez sur **entrée**.  
   

@@ -13,16 +13,16 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2f18185e4bfaf5502537a68044579b0f7721cd23
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0cd6a281bfca73e74f23ce25bb9fa08761a07789
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="message-schemas-for-the-polling-and-typedpolling-operations"></a>Schémas de message pour l’interrogation et les opérations de TypedPolling
 Le [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] surfaces d’interrogation et de TypedPolling entrant operations pour retourner le jeu de résultats de la requête d’interrogation à un client de carte.  
   
- Vous configurez les opérations d’interrogation et TypedPolling en définissant les propriétés de liaison dans le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]. Pour plus d’informations sur ces propriétés de liaison, consultez [en savoir plus sur l’adaptateur BizTalk pour les propriétés de liaison de l’adaptateur SQL Server](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md). Vous définissez la **PollingStatement** liaison de propriété pour spécifier une instruction SQL (SELECT ou EXEC \<procédure stockée >) pour la requête d’interrogation. Le jeu de résultats de cette requête est retourné sous forme de données à votre code dans l’opération d’interrogation et en tant que données fortement typées dans l’opération TypedPolling. La structure du jeu de résultats est déterminée par les métadonnées que l’adaptateur met en évidence pour la requête spécifiée.  
+ Vous configurez les opérations d’interrogation et TypedPolling en définissant les propriétés de liaison dans le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]. Pour plus d’informations sur ces propriétés de liaison, consultez [en savoir plus sur l’adaptateur BizTalk pour les propriétés de liaison de l’adaptateur SQL Server](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md). Vous définissez la **PollingStatement** liaison de propriété pour spécifier une instruction SQL (SELECT ou EXEC \<procédure stockée\>) pour la requête d’interrogation. Le jeu de résultats de cette requête est retourné sous forme de données à votre code dans l’opération d’interrogation et en tant que données fortement typées dans l’opération TypedPolling. La structure du jeu de résultats est déterminée par les métadonnées que l’adaptateur met en évidence pour la requête spécifiée.  
   
 ## <a name="polling-message-structure"></a>Structure des messages d’interrogation 
   

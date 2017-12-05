@@ -12,14 +12,14 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 843e20e76f7320555a0cfab5af5103ce3fd597d1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8f0a58d7dfa022c3921abb5b426dacdf387095c2
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="scaling-out-receiving-hosts"></a>Montée en puissance parallèle de l’hôte de réception
-Pour que les hôtes de réception hautement disponible, vous devez disposer d’au moins deux [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ordinateurs qui exécutent des instances de chaque hôte de réception. Par la mise à l’échelle des hôtes de réception, vous pouvez augmenter la disponibilité pour [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] déploiements qui sollicitent de messagerie. Bien que son traitement des orchestrations soit minimal, ce modèle de déploiement permet d'acheminer de nombreux messages de types différents de manière rapide et fiable.  
+Pour que les hôtes de réception hautement disponible, vous devez disposer d’au moins deux [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ordinateurs qui exécutent des instances de chaque hôte de réception. Par la mise à l’échelle des hôtes de réception, vous pouvez augmenter la disponibilité pour les déploiements de BizTalk Server qui sollicitent de messagerie. Bien que son traitement des orchestrations soit minimal, ce modèle de déploiement permet d'acheminer de nombreux messages de types différents de manière rapide et fiable.  
   
  Vous pouvez encore améliorer la sécurité et l'évolutivité au sein de votre environnement en séparant l'hôte de réception des hôtes chargés du traitement des orchestrations et de l'envoi des messages, car il est alors possible de sécuriser et de déployer chaque hôte indépendamment des autres. Par exemple, vous pouvez attribuer deux ordinateurs supplémentaires (instances de l'hôte) à l'hôte de réception sans pour autant en ajouter aux hôtes de traitement ou d'envoi.  
   
@@ -39,7 +39,7 @@ Pour que les hôtes de réception hautement disponible, vous devez disposer d’
  Dans la configuration de port de réception, vous spécifiez éventuellement maps. Dans la configuration d’emplacement de réception, vous devez spécifier un pipeline utilisé pour le prétraitement du document. Désigné [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] processus gère tous les éléments à partir de la réception d’un document, le document, en le document de mappage de prétraitement. Ceci est le même pour les instances d’hôte in-process et les instances d’hôte isolé.  
   
 ## <a name="scaling-out-in-process-receiving-hosts"></a>Montée en puissance parallèle In-Process réception héberge  
- L’illustration suivante montre un [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] déploiement qui offre une haute disponibilité pour les instances de l’hôte de réception à un hôte deux chacun sur un autre ordinateur. Notez que dans cette figure l’hôte d’envoi et de traitement n’est pas hautement disponible, étant donné qu’une seule instance d’hôte du traitement des éléments BizTalk affectés à l’hôte.  
+ La figure suivante illustre un déploiement de BizTalk Server qui offre une haute disponibilité pour l’hôte de réception en demandant à chaque deux instances d’hôte sur un autre ordinateur. Notez que dans cette figure l’hôte d’envoi et de traitement n’est pas hautement disponible, étant donné qu’une seule instance d’hôte du traitement des éléments BizTalk affectés à l’hôte.  
   
  ![Plusieurs hôtes de réception de Messages](../core/media/tdi-ha-scalereceive.gif "TDI_HA_ScaleReceive")  
   
@@ -52,13 +52,13 @@ Pour que les hôtes de réception hautement disponible, vous devez disposer d’
  Pour fournir une haute disponibilité dans cette configuration, chaque ordinateur exécute les trois instances d’hôte : une instance pour chacune des trois sociétés. Les instances de l'hôte de chaque société contiennent les emplacements de réception et les pipelines permettant la communication avec ces sociétés. Pendant les opérations classiques, tant que vous avez effectué le travail nécessaire pour la montée en puissance parallèle devant les adaptateurs de réception, la charge de messagerie est répartie entre les trois instances pour chaque hôte. Si l'exécution d'une instance de l'hôte échoue sur un ordinateur, les instances de l'hôte exécutées sur les deux autres ordinateurs constituent une redondance permettant de conserver une disponibilité de service.  
   
 ## <a name="scaling-out-isolated-receiving-hosts"></a>Mise à l’échelle isolé à l’hôte de réception  
- Outre les instances d’hôte, le processus de mise à l’échelle et de fournir une haute disponibilité pour les hôtes de réception dépend également des adaptateurs que vous implémentez dans votre déploiement. Chaque adaptateur possède des caractéristiques de protocole particulières qui rendent la planification et le déploiement différents à chaque fois. Néanmoins, [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] vous permet de mettre en place une solution haute disponibilité identique pour tous les adaptateurs, principalement par l'intermédiaire d'ordinateurs et d'instances d'hôte supplémentaires.  
+ Outre les instances d’hôte, le processus de mise à l’échelle et de fournir une haute disponibilité pour les hôtes de réception dépend également des adaptateurs que vous implémentez dans votre déploiement. Chaque adaptateur possède des caractéristiques de protocole particulières qui rendent la planification et le déploiement différents à chaque fois. Toutefois, BizTalk Server vous permet d’appliquer la même solution de haute disponibilité pour tous les adaptateurs, principalement par le biais d’autres ordinateurs et les instances d’hôte.  
   
- Selon le protocole utilisé, certains adaptateurs de réception nécessitent un mécanisme supplémentaire pour la distribution des messages entrants sur plusieurs ordinateurs afin de fournir une disponibilité élevée. Par exemple, [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] solutions qui utilisent l’adaptateur HTTP ou SOAP (également appelé l’adaptateur de services Web) nécessitent un équilibreur de charge telles que charger équilibrage réseau (NLB) pour distribuer la charge de réception, comme indiqué dans l’illustration suivante.  
+ Selon le protocole utilisé, certains adaptateurs de réception nécessitent un mécanisme supplémentaire pour la distribution des messages entrants sur plusieurs ordinateurs afin de fournir une disponibilité élevée. Par exemple, les solutions BizTalk Server qui utilisent l’adaptateur HTTP ou SOAP (également appelé l’adaptateur de services Web) nécessitent un équilibreur de charge telles que charger équilibrage réseau (NLB) pour distribuer la charge de réception, comme indiqué dans l’illustration suivante.  
   
  ![Hôte de réception montée en puissance parallèle isolé](../technical-guides/media/cb38ec25-bfb0-4a55-8464-b7918b6fc746.gif "cb38ec25-bfb0-4a55-8464-b7918b6fc746")  
   
- Pour plus d’informations sur les directives de haute disponibilité pour les adaptateurs les plus courants dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], consultez la section « Mise à l’échelle les adaptateurs de réception du serveur BizTalk » [hôtes de réception Scaled-Out](http://go.microsoft.com/fwlink/?LinkId=151283) (http://go.microsoft.com/ fwlink / ? LinkId = 151283) dans [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] aide.  
+ Pour plus d’informations sur les directives de haute disponibilité pour les adaptateurs les plus courants dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], consultez la section « Mise à l’échelle les adaptateurs de réception du serveur BizTalk » [hôtes de réception Scaled-Out](http://go.microsoft.com/fwlink/?LinkId=151283) (http://go.microsoft.com/ fwlink / ? LinkId = 151283) dans l’aide de BizTalk Server.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Gestion de clusters hôtes de réception](../technical-guides/clustering-receiving-hosts.md)   

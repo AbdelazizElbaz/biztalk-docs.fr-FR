@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 346a01cee16c2d6a2888f981b6573fc1a0d135b5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d81eee157c84677470e542c5d4ee5f9bf2cb5df5
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="configuring-send-port-association-x12"></a>Configuration de l'association de port d'envoi (X12)
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] utilise l'association de ports d'envoi pour résoudre un accord pour un échange EDI sortant. Pour ce faire, le port d'envoi abonné au message est mappé au port d'envoi associé à un accord. Cette rubrique fournit des instructions sur l'association de ports d'envoi à un accord.  
@@ -25,7 +25,7 @@ ms.lasthandoff: 09/20/2017
 >  Si le même port d'envoi est associé à plusieurs accords, BizTalk Server génère une erreur.  
   
 > [!IMPORTANT]
->  Dans [!INCLUDE[prague](../includes/prague-md.md)], l'association de ports d'envoi est effectuée uniquement au niveau de l'accord. Dans BizTalk Server 2009, les ports d'envoi étaient associés au niveau du tiers. Pour la compatibilité descendante, un **Ports d’envoi** page est également disponible dans le cadre des propriétés du tiers (consultez [configuration des propriétés de tiers générales](../core/configuring-general-party-properties.md)). Chaque fois que vous associez un port d'envoi à un accord, le paramètre de port d'envoi est propagé au paramètre du tiers et l'association de ports d'envoi est visible dans cette page. L'inverse n'est toutefois pas vrai. Vous ne pouvez pas associer un port d'envoi à un tiers, puis rendre ce port d'envoi automatiquement disponible dans le cadre des paramètres de l'accord.  
+>  Dans BizTalk Server, l’association de ports d’envoi est effectuée uniquement au niveau de l’accord. Dans BizTalk Server 2009, les ports d'envoi étaient associés au niveau du tiers. Pour la compatibilité descendante, un **Ports d’envoi** page est également disponible dans le cadre des propriétés du tiers (consultez [configuration des propriétés de tiers générales](../core/configuring-general-party-properties.md)). Chaque fois que vous associez un port d'envoi à un accord, le paramètre de port d'envoi est propagé au paramètre du tiers et l'association de ports d'envoi est visible dans cette page. L'inverse n'est toutefois pas vrai. Vous ne pouvez pas associer un port d'envoi à un tiers, puis rendre ce port d'envoi automatiquement disponible dans le cadre des paramètres de l'accord.  
   
 > [!NOTE]
 >  Les paramètres décrits dans cette rubrique s'appliquent également aux échanges HIPAA.  
@@ -53,4 +53,4 @@ ms.lasthandoff: 09/20/2017
 6.  Cliquez sur **appliquer** pour accepter les modifications avant de poursuivre la configuration, ou cliquez sur **OK** pour valider les modifications, puis fermez la boîte de dialogue.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Configuration des paramètres d’échange (X12)](../core/configuring-interchange-settings-x12.md)
+ [Configuration des paramètres des échanges (X12)](../core/configuring-interchange-settings-x12.md)

@@ -17,11 +17,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e15bc1f9004c79b8d87375d9fe9f6cb805e12e94
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0518b536db16d641b77a61cfeb4851990a7bca0a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="selecting-the-logging-store"></a>Sélection de la banque de journalisation
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] vous offre l’option pour sélectionner une combinaison de journalisation de différents magasins, tel que [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Management Instrumentation (WMI), [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)], et [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] journal des événements.  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-open-btahl7-configuration-explorer"></a>Pour ouvrir l’Explorateur de Configuration de BTAHL7  
   
--   Cliquez sur **Démarrer**, cliquez sur **programmes**, cliquez sur **Microsoft BizTalk \<version > Accelerator pour HL7**, puis cliquez sur **BTAHL7 L’Explorateur de configuration**.  
+-   Cliquez sur **Démarrer**, cliquez sur **programmes**, cliquez sur **Microsoft BizTalk \<version\> Accelerator pour HL7**, puis cliquez sur  **BTAHL7 L’Explorateur de Configuration**.  
   
 ### <a name="to-select-the--logging-store"></a>Pour sélectionner la banque de journalisation  
   
@@ -56,4 +56,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>Voir aussi  
  [Le traitement par lots du message](../../adapters-and-accelerators/accelerator-hl7/message-batching.md)   
- [Configuration de journalisation](../../adapters-and-accelerators/accelerator-hl7/logging-configuration.md)
+ [Configuration de la journalisation](../../adapters-and-accelerators/accelerator-hl7/logging-configuration.md)

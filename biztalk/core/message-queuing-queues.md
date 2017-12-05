@@ -23,11 +23,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a9156b6d6fa1374f532efb354e5816c054b83994
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fa8d2521a8cf434c7a0ea56f749f9df3f032551e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="message-queuing-queues"></a>Files d’attente de file d’attente
 Cette section décrit la spécification de files d'attentes Microsoft Message Queuing (également appelé MSMQ) lors de l'utilisation de l'adaptateur MSMQ. Elle décrit les conventions utilisées lors de la spécification de chemins d'accès ainsi que le rôle joué par les noms de formats dans la conversion de chemins en désignations de file d'attente.  
@@ -60,9 +60,9 @@ Cette section décrit la spécification de files d'attentes Microsoft Message Qu
   
  Si le chemin de la file d'attente d'envoi ou de réception est une URL HTTP ou HTTPS, la syntaxe est la suivante :  
   
- NomFormat : direct = http : / /\<nom du client > /msmq/\<nom de la file d’attente >  
+ NomFormat : direct = http : / /\<nom de client\>/msmq/\<nom de la file d’attente\>  
   
- NomFormat : direct = https : / /\<nom du client > /msmq/\<nom de la file d’attente >  
+ NomFormat : direct = https : / /\<nom de client\>/msmq/\<nom de la file d’attente\>  
   
 > [!NOTE]
 >  « msmq » correspond au répertoire virtuel créé par Message Queuing dans IIS (Internet Information Services).  

@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 996c88ca73fcc8abc450159e1cf26cd24b7aa241
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 345c0bbc2eae3289976738d25e76a8a377f86ea7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="messages-represented-as-xlangmessage"></a>Messages représentés en tant que XLANGMessage
 Un **XLANGMessage** objet représente une instance de message déclarée avec un service XLANG. Cet objet est obtenu en transmettant une référence à un message en tant que paramètre dans un appel de méthode. Un **XLANGPart** objet représente une partie de message contenue dans une instance de message dans un service XLANG. Cet objet est obtenu en transmettant une référence de partie dans un appel de méthode dont le type de paramètre récepteur est **XLANGPart** ou par énumération sur une référence transmise de **XLANGMessage**.  
@@ -58,7 +58,7 @@ public static void AssignStreamFactoryToPart(XLANGMessage msg)
  Il peut arriver que vous souhaitiez créer un nouveau message sans transformer un message source. Vous pouvez pour cela à l’aide d’une variable de type **System.Xml.XmlDocument** et chargez ou construisez le contenu approprié. L’exemple suivant, XML est chargé à partir d’une chaîne à l’aide de la **LoadXml** méthode **XmlDocument**:  
   
 ```  
-XmlVariable.LoadXml("\<ns0:Root PONumber=\"047745351122111\" xmlns:ns0=\"http://BTSHTTPSend.SimpleSchema\">\<MyChildRecord SubAttr1=\"Simple Attribute \" />\</ns0:Root>");  
+XmlVariable.LoadXml("<ns0:Root PONumber="047745351122111" xmlns:ns0="http://BTSHTTPSend.SimpleSchema"><MyChildRecord SubAttr1="Simple Attribute " /></ns0:Root>");  
 XLANGMessage XmlMsg = XmlVariable;  
   
 ```  
@@ -153,4 +153,4 @@ XLANGMessage XmlMsg = XmlVariable;
 ## <a name="see-also"></a>Voir aussi  
  [Messages représentés en tant que schémas XSD](../core/messages-represented-as-xsd-schemas.md)   
  [Messages représentés en tant que Classes .NET](../core/messages-represented-as-net-classes.md)   
- [Construction de Messages dans le Code utilisateur](../core/constructing-messages-in-user-code.md)
+ [Construction de messages dans le code utilisateur](../core/constructing-messages-in-user-code.md)

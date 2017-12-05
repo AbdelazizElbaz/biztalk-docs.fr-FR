@@ -13,11 +13,11 @@ caps.latest.revision: "42"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f1afb4f28584d65401220761dcee626fe63f913b
-ms.sourcegitcommit: f4c0d7bc4b617688c643101a34062db90014851a
+ms.openlocfilehash: 452884062cb9c4cdabbfd4890f590e5f0202b417
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configure-the-backup-biztalk-server-job"></a>Configurer le travail de sauvegarde de BizTalk Server
 Une fois que vous installez et configurez BizTalk Server, configurez la sauvegarde [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] tâche pour sauvegarder vos données. 
@@ -90,12 +90,12 @@ Pour configurer cette tâche, vous devez :
   
     2. **Name**: la valeur par défaut est **BTS**. Cette valeur est utilisée dans le nom du fichier de sauvegarde.  
   
-    3. **Emplacement des fichiers de sauvegarde**: remplacez '*\<chemin d’accès de destination >*» avec le chemin d’accès complet (le chemin d’accès doit inclure les guillemets simples) à l’ordinateur et le dossier dans lequel vous souhaitez sauvegarder le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] bases de données, ou l’URL du point de terminaison de service blob à un compte de stockage d’objets blob Azure.  
+    3. **Emplacement des fichiers de sauvegarde**: remplacez '*\<chemin d’accès de destination\>*» avec le chemin d’accès complet (le chemin d’accès doit inclure les guillemets simples) à l’ordinateur et le dossier où vous souhaitez sauvegarder le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]bases de données, ou l’URL du point de terminaison de service blob à un compte de stockage d’objets blob Azure.  
 
         > [!IMPORTANT]
         > - Si vous entrez un chemin d’accès local, vous devez copier manuellement tous les fichiers dans le même dossier sur le système de destination chaque fois que la sauvegarde [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] travail crée de nouveaux fichiers.  
         >   
-        >      Pour utiliser un chemin d’accès à distance, entrez un partage UNC tel que \\ \\  *\<nom_serveur >*\\*\<SharedDrive >*\\, où  *\<nom_serveur >* est le nom du serveur où vous voulez les fichiers, et  *\<SharedDrive >* est le nom du lecteur partagé ou du dossier.  
+        >      Pour utiliser un chemin d’accès à distance, entrez un partage UNC tel que \\ \\  *\<nom_serveur\>*\\*\<SharedDrive\>*  \\, où  *\<nom_serveur\>*  est le nom du serveur où vous voulez les fichiers, et  *\<SharedDrive\>* est le nom du lecteur partagé ou du dossier.  
         >   
         >      La sauvegarde de données sur un réseau peut faire l’objet d’éventuels problèmes réseau. Si vous utilisez un emplacement distant, vérifiez que la sauvegarde a réussi lorsque le travail de sauvegarde de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] termine.  
         > - Pour éviter de perdre des données, configurez un disque distinct pour la sauvegarde et le stockage des données des bases de données et des journaux. Cette étape est nécessaire afin que vous puissiez accéder aux sauvegardes en cas de défaillance du disque de stockage des données ou des journaux.  
@@ -132,14 +132,14 @@ Pour configurer cette tâche, vous devez :
   
 6.  Sélectionnez le **MarkAndBackupLog** pas à pas, puis sélectionnez **modifier**. Dans le **commande** zone, mettre à jour les valeurs de paramètre :  
   
-    1.  **@MarkName**: Cela fait partie de la convention d’affectation de noms pour les fichiers de sauvegarde : <Server Name>  _<Database Name>  **_journal_**< nom de marque de journal >_<Timestamp>  
+    1.  **@MarkName**: Cela fait partie de la convention d’affectation de noms pour les fichiers de sauvegarde : \<nom du serveur\>\_\<nom de la base de données\>**\_journal\_**  \< Nom de la marque de journal \> \_ \<Timestamp\>  
     
-    2.  **@BackupPath**: Chemin de destination complet (y compris les guillemets simples) à l’ordinateur et le dossier où stocker le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] journaux, ou le compte de stockage d’objets blob Azure et le conteneur de base de données. Le  *\<chemin d’accès de destination >* peut également être local ou un chemin d’accès UNC vers un autre serveur.  
+    2.  **@BackupPath**: Chemin de destination complet (y compris les guillemets simples) à l’ordinateur et le dossier où stocker le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] journaux, ou le compte de stockage d’objets blob Azure et le conteneur de base de données. Le  *\<chemin d’accès de destination\>*  peut également être local ou un chemin d’accès UNC vers un autre serveur.  
   
      L'étape MarkAndBackupLog marque les journaux pour la sauvegarde, puis les sauvegarde.  
   
     > [!IMPORTANT]
-    >  Pour éviter **perdre des données** et **amélioration des performances**, le  *\<chemin d’accès de destination >* doit être défini sur un autre ordinateur ou un disque dur, différente de celle utilisée pour stocker les journaux de base de données d’origine.  
+    >  Pour éviter **perdre des données** et **amélioration des performances**, le  *\<chemin d’accès de destination\>*  doit être défini sur un autre ordinateur, ou un disque dur, différente de celle utilisée pour stocker les journaux de base de données d’origine.  
   
      Sélectionnez **OK**.  
   

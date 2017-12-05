@@ -13,11 +13,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8c0ee3d0905f5ee4205cb5f9e2357573bdbf55b4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d7c7efc6a59e9dd4c163388803763a7b90a13b31
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="message-schemas-for-the-sqlexecute-operation"></a>Schémas de message pour l’opération SQLEXECUTE
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]met en évidence fortement typée de métadonnées pour les artefacts présents dans le système métier et expose des opérations standard sur ces artefacts. Toutefois, il existe des scénarios où une application peut nécessiter l’exécution d’une instruction SQL arbitraire piloté par la logique métier de l’application. Par exemple, vous souhaiterez :  
@@ -58,7 +58,7 @@ ms.lasthandoff: 09/20/2017
   
  [PARAM_VAL_1] = la valeur du premier paramètre.  
   
- Chaque \<PARAMETERDATA > section contient un ensemble complet de \<paramètre > les éléments qui correspondent au schéma dans le \<PARAMETERSCHEMA > section. Le \<PARAMETERSET > peut contenir plusieurs \<PARAMETERDATA > sections. Si c’est le cas, l’instruction SQL est exécutée plusieurs fois, une fois par rapport à chaque jeu de paramètres.  
+ Chaque \<PARAMETERDATA\> section contient un ensemble complet de \<paramètre\> les éléments qui correspondent au schéma dans le \<PARAMETERSCHEMA\> section. Le \<PARAMETERSET\> peut contenir plusieurs \<PARAMETERDATA\> sections. Si c’est le cas, l’instruction SQL est exécutée plusieurs fois, une fois par rapport à chaque jeu de paramètres.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Messages et des schémas de Message pour l’adaptateur BizTalk pour base de données Oracle](../../adapters-and-accelerators/adapter-oracle-database/messages-and-message-schemas-for-biztalk-adapter-for-oracle-database.md)
+ [Messages et schémas de message pour l’adaptateur BizTalk pour Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/messages-and-message-schemas-for-biztalk-adapter-for-oracle-database.md)

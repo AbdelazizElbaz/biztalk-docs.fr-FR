@@ -12,16 +12,16 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8547175461732e41248e1e94bf961f95e655890f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f6a3de45744b40335999c1471165ff851ec60664
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="x12-ta1-acknowledgment"></a>Accusé de réception X12 TA1
 L'accusé de réception X12 TA1 indique l'état du traitement de l'en-tête et du code de fin d'un échange par le récepteur d'adresse. Si l'en-tête ISA et le code de fin IEA du message X12 sont valides, un accusé de réception TA1 positif est envoyé, quel que soit l'état du contenu restant. Dans le cas contraire, un accusé de réception TA1 contenant un code d'erreur est envoyé.  
   
- L’accusé de réception TA1 est conforme à la X12_ de X12\<numéro de version > _TA1.xsd schéma. L'accusé de réception TA1 est envoyé dans une enveloppe ISA/IEA. L'en-tête ISA et le code de fin IEA sont les mêmes que ceux des autres échanges.  
+ L’accusé de réception TA1 est conforme à la X12_ de X12\<numéro de version\>_TA1.xsd schéma. L'accusé de réception TA1 est envoyé dans une enveloppe ISA/IEA. L'en-tête ISA et le code de fin IEA sont les mêmes que ceux des autres échanges.  
   
  Les segments dans l'échange d'un accusé de réception TA1 sont indiqués dans le tableau suivant.  
   

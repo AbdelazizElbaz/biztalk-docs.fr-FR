@@ -16,16 +16,16 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: af4679d277a12335f8a9776695cd829473df460d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dfd87d300314616fe05a033360d84f5d2eb8b8cd
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-enable-a-user-mapping"></a>Comment activer un mappage utilisateur
 Vous devez activer un mappage utilisateur avant d'utiliser le mappage dans le système d'authentification unique.  
   
- Lorsque vous activez un mappage utilisateur, il apparaît sous la forme (E)  **\<domaine >\\< nom d’utilisateur\>**  lorsque vous répertoriez les mappages utilisateur.  
+ Lorsque vous activez un mappage utilisateur, il apparaît sous la forme (E)  **\<domaine\>\\< nom d’utilisateur\>**  lorsque vous répertoriez les mappages utilisateur.  
   
  Notez que si vous avez configuré les informations d'identification à l'aide de la commande -setcredentials, le mappage est déjà activé.  
   
@@ -33,9 +33,9 @@ Vous devez activer un mappage utilisateur avant d'utiliser le mappage dans le sy
   
 1.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  **\<lecteur >**: \Program Files\Enterprise Single Sign-On.  
+2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  **\<lecteur\>**: \Program Files\Enterprise Single Sign-On.  
   
-3.  Type **ssomanage-enablemapping \<domaine >\\< nom d’utilisateur\>\<nom de l’application >**, où  **\<domaine >** est domaine Windows pour le compte d’utilisateur,  **\<nom d’utilisateur >** est le nom d’utilisateur Windows pour lequel vous souhaitez activer les informations d’identification, et  **\<nom de l’application >**est le nom de l’application associée que vous souhaitez supprimer le mappage utilisateur, puis appuyez sur ENTRÉE.  
+3.  Type **ssomanage-enablemapping \<domaine\>\\< nom d’utilisateur\>\<nom de l’application\>**, où  **\< domaine\>**  correspond au domaine Windows pour le compte d’utilisateur,  **\<nom d’utilisateur\>**  est le nom d’utilisateur Windows pour lequel vous souhaitez activer les informations d’identification et  **\<nom de l’application\>**  est le nom de l’application associée que vous souhaitez supprimer le mappage utilisateur, puis appuyez sur ENTRÉE.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -44,9 +44,9 @@ Vous devez activer un mappage utilisateur avant d'utiliser le mappage dans le sy
   
 1.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  **\<lecteur >**: \Program Files\Enterprise Single Sign-On.  
+2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  **\<lecteur\>**: \Program Files\Enterprise Single Sign-On.  
   
-3.  Type **ssoclient – enablemapping \<nom de l’application >**, où  **\<nom de l’application >** est le nom de l’application associée que vous souhaitez supprimer le mappage utilisateur.  
+3.  Type **ssoclient – enablemapping \<nom de l’application\>**, où  **\<nom de l’application\>**  est le nom de l’application associée Pour supprimer le mappage utilisateur.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  

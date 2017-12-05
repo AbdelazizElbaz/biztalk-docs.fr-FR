@@ -15,11 +15,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bb07d262b61bb823202b964ee3dd6e53a92d3a6c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 399c8e02d59a931dbf30bfa31ca28980dfa312be
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="biztalk-message-queuing-large-message-extension"></a>extension de messages volumineux Message Queuing BizTalk
 Natif message queuing ne peut pas traiter un message avec un corps supérieur à 4megabytes (Mo). Cependant, Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] inclut un composant additionnel pour Message Queuing en mode natif qui autorise le traitement des messages de plus de 4 Mo. Ce module complémentaire est fournie en tant que le fichier Mqrtlarge.dll et expose le **MQSendLargeMessage** et **MQReceiveLargeMessage** application programming interfaces (API) et le modèle COM analogue. Ces fonctions sont implémentées en tant qu’API, message queuing standard **MQSendMessage** et **MQReceiveMessage** respectivement.  
@@ -28,7 +28,7 @@ Natif message queuing ne peut pas traiter un message avec un corps supérieur à
   
  **Emplacement dans le Kit de développement logiciel**  
   
- \<*Chemin d’installation*> \SDK\ Mqrtlarge.dll  
+ \<*Chemin d’installation*\>\SDK\ Mqrtlarge.dll  
   
  **Inventaire des fichiers**  
   
@@ -36,7 +36,7 @@ Natif message queuing ne peut pas traiter un message avec un corps supérieur à
   
 |Fichier(s)| Description|  
 |---------------|-----------------|  
-|Mqrtlarge.dll|Une bibliothèque de liens dynamiques Win32 qui expose **MQSendLargeMessage** et **MQReceiveLargeMessage**.<br /><br /> Les fichiers d’en-tête se trouvent dans le  *\<chemin d’Installation >*répertoire \SDK\Include. **Remarque :** vous devez installer [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] sur une version 64 bits de Windows pour accéder à la version 64 bits de Mqrtlarge.dll.|  
+|Mqrtlarge.dll|Une bibliothèque de liens dynamiques Win32 qui expose **MQSendLargeMessage** et **MQReceiveLargeMessage**.<br /><br /> Les fichiers d’en-tête se trouvent dans le  *\<chemin d’Installation\>*répertoire \SDK\Include. **Remarque :** vous devez installer [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] sur une version 64 bits de Windows pour accéder à la version 64 bits de Mqrtlarge.dll.|  
   
  **À l’aide de cet utilitaire**  
   
@@ -45,7 +45,7 @@ Natif message queuing ne peut pas traiter un message avec un corps supérieur à
 ### <a name="to-use-the-mqrtlargedll-file"></a>Pour utiliser le fichier Mqrtlarge.dll  
   
 1.  > [!NOTE]
-    >  Pour une solution MSMQ sans [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], MQRTLarge.dll peut toujours fonctionner correctement. Toutefois, cette configuration n’est pas recommandée qui prend en charge de Microsoft et des résultats inattendus peuvent se produire si utilisé en dehors de la [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] environnement.  
+    >  Une solution MSMQ sans BizTalk Server, MQRTLarge.dll peut toujours fonctionner correctement. Toutefois, cette configuration n’est pas recommandée qui prend en charge de Microsoft et des résultats inattendus peuvent se produire si utilisé en dehors de l’environnement BizTalk Server.  
   
      Ajoutez le fichier Mqrtlarge.dll à l'ordinateur qui ne contient pas d'installation de BizTalk Server. Message Queuing se sert du fichier Mqrtlarge.dll pour envoyer des messages à BizTalk Server ou en recevoir.  
   
@@ -82,4 +82,4 @@ Natif message queuing ne peut pas traiter un message avec un corps supérieur à
  La décision d’utiliser **PROPID_M_EXTENSION** présente d’autres. Le pont MSMQ-MQSeries Microsoft Host Integration Server utilise cette propriété pour transmettre une structure contenant les propriétés qui ne font pas l'objet d'un mappage direct entre les messages MQSeries et Message Queuing. Toutes les applications qui envoient des messages vers et depuis MQSeries utilisent, de manière explicite ou implicite, cette structure. Message Queuing peut générer un accusé de réception lorsqu'un message est reçu depuis une file d'attente par une application réceptrice. Les accusés de réception sont envoyés vers la file d'attente spécifiée par l'application émettrice. Dans le cas de messages volumineux, cet accusé est uniquement envoyé pour la dernière partie du message.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilitaires dans le Kit de développement](../core/utilities-in-the-sdk.md)
+ [Utilitaires du SDK](../core/utilities-in-the-sdk.md)

@@ -17,14 +17,14 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9a90090c55dcbb0f8e55296d2711d5e4b36cd346
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e54a532d33e4f84eb5f1ecea67f957d415344a7c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="important-security-notes-for-the-business-rule-engine"></a>Notes de sécurité importantes pour le moteur de règles d’entreprise
-Cette rubrique récapitule les problèmes de sécurité connus dans Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] et les mesures que vous devez prendre pour réduire les risques de sécurité.  
+Cette rubrique résume les problèmes de sécurité connus dans Microsoft BizTalk Server et les étapes à suivre pour atténuer les risques de sécurité.  
   
 ## <a name="malicious-schema-input-causing-denial-of-service-attack"></a>Entrée de schéma malveillante causant une attaque par refus de service  
  Pendant la déclaration de faits, chaque règle est vérifiée en étant comparée à chaque objet qui correspond aux types pris en charge dans une stratégie. Supposons la présence d'une règle dans une stratégie qui utilise l'un des éléments d'un schéma transmis en utilisant un sélecteur. Si l'instance de cet élément/attribut correspondant au sélecteur est répétée des milliers de fois, toutes les instances de ce type sont déclarées, entraînant une dégradation des performances et un éventuel refus de service (DoS, Denial of Service).  

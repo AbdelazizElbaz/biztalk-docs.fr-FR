@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 60cc8743cd945ad231f3a42f9cbd4f0e76b418d3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f9a395e691835f3e21622ebf5f29c2845361fb36
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-data-is-stored-for-inbound-edi-messages"></a>Stockage des données des messages EDI entrants
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] effectue les opérations suivantes pour générer une entrée de rapport d'état pour un échange entrant et l'accusé de réception envoyé en réponse :  
@@ -69,17 +69,17 @@ ms.lasthandoff: 09/20/2017
   
 -   ID de contrôle de l'échange = données mises à jour (requises à des fins de corrélation)  
   
--   État de l’accusé de réception de l’échange = \< attendu ou non Applicable >. Si l'accusé de réception technique est configuré ou qu'une valeur lui est attribuée dans l'échange entrant, l'état est défini sur Attendu. Sinon, il est défini sur Non applicable.  
+-   État de l’accusé de réception de l’échange = \< attendu ou non Applicable\>. Si l'accusé de réception technique est configuré ou qu'une valeur lui est attribuée dans l'échange entrant, l'état est défini sur Attendu. Sinon, il est défini sur Non applicable.  
   
--   ID de contrôle de l’accusé de réception de l’échange = \<aucune valeur >  
+-   ID de contrôle de l’accusé de réception de l’échange = \<ne pas de valeur\>  
   
--   Date de l’accusé de réception de l’échange = \<aucune valeur >  
+-   Date de l’accusé de réception de l’échange = \<ne pas de valeur\>  
   
--   Heure de l’accusé de réception de l’échange = \<aucune valeur >  
+-   Heure de l’accusé de réception de l’échange = \<ne pas de valeur\>  
   
--   L’accusé de réception/Code d’Action = \<aucune valeur >  
+-   L’accusé de réception/Code d’Action = \<ne pas de valeur\>  
   
--   Code de Note de l’accusé de réception = \<aucune valeur >  
+-   Code de Note de l’accusé de réception = \<ne pas de valeur\>  
   
 ## <a name="data-updated-by-the-send-pipeline-for-each-technical-acknowledgment-generated-in-response-to-inbound-interchanges"></a>Données mises à jour par le pipeline d'envoi pour chaque accusé de réception technique généré en réponse aux échanges entrants  
  Pour chaque accusé de réception technique qu'il envoie, le pipeline d'envoi met à jour l'entrée de rapport d'état pour chaque échange reçu corrélé. La source des données sont les enveloppes d'échange créées par le pipeline d'envoi.  
@@ -128,7 +128,7 @@ ms.lasthandoff: 09/20/2017
   
 -   Direction de l'accusé de réception fonctionnel = réception  
   
--   État de l’accusé de réception fonctionnel = \< attendu ou non Applicable >. Si l'onglet d'accusé de réception fonctionnel dans le Gestionnaire d'accords partenaires est sélectionné, l'état est défini sur Attendu. Dans le cas contraire, l’état est défini à non Applicable.  
+-   État de l’accusé de réception fonctionnel = \< attendu ou non Applicable\>. Si l'onglet d'accusé de réception fonctionnel dans le Gestionnaire d'accords partenaires est sélectionné, l'état est défini sur Attendu. Dans le cas contraire, l’état est défini à non Applicable.  
   
 -   Récepteur de l'échange = données mises à jour (requises à des fins de corrélation)  
   
@@ -144,27 +144,27 @@ ms.lasthandoff: 09/20/2017
   
 -   Nombre de documents informatisés = données (dans EDIFACT, ceci est mappé à UNE.1 si des segments UNG/UNE sont présents ou à UNZ.1 si aucun segment de groupe n'est présent)  
   
--   ID de contrôle de l’échange de l’accusé de réception fonctionnel = \<aucune valeur >  
+-   ID de contrôle de l’échange de l’accusé de réception fonctionnel = \<ne pas de valeur\>  
   
--   Date de l’échange de l’accusé de réception fonctionnel = \<aucune valeur >  
+-   Date de l’échange de l’accusé de réception fonctionnel = \<ne pas de valeur\>  
   
--   Heure de l’échange des accusés de réception fonctionnel = \<aucune valeur >  
+-   Heure de l’échange des accusés de réception fonctionnel = \<ne pas de valeur\>  
   
--   Nombre de documents informatisés remis = \<aucune valeur >  
+-   Nombre de documents informatisés remis = \<ne pas de valeur\>  
   
--   Nombre de documents informatisés acceptés = \<aucune valeur >  
+-   Nombre de documents informatisés acceptés = \<ne pas de valeur\>  
   
--   L’accusé de réception/Code d’Action = \<aucune valeur >  
+-   L’accusé de réception/Code d’Action = \<ne pas de valeur\>  
   
--   Syntaxe de l’erreur/Code d’erreur = \<aucune valeur >  
+-   Syntaxe de l’erreur/Code d’erreur = \<ne pas de valeur\>  
   
--   X12 supplémentaires Code d’erreur l’accusé de réception 2 = \<aucune valeur >  
+-   X12 supplémentaires Code d’erreur l’accusé de réception 2 = \<ne pas de valeur\>  
   
--   X12 supplémentaires l’accusé de réception Code d’erreur 3 = \<aucune valeur >  
+-   X12 supplémentaires l’accusé de réception Code d’erreur 3 = \<ne pas de valeur\>  
   
--   X12 supplémentaires l’accusé de réception Code d’erreur 4 = \<aucune valeur >  
+-   X12 supplémentaires l’accusé de réception Code d’erreur 4 = \<ne pas de valeur\>  
   
--   X12 supplémentaires l’accusé de réception Code d’erreur 5 = \<aucune valeur >  
+-   X12 supplémentaires l’accusé de réception Code d’erreur 5 = \<ne pas de valeur\>  
   
 ## <a name="data-updated-by-the-send-pipeline-for-each-functional-acknowledgment-generated-in-response-to-inbound-interchanges"></a>Données mises à jour par le pipeline d'envoi pour chaque accusé de réception fonctionnel généré en réponse aux échanges entrants  
  Pour chaque accusé de réception fonctionnel qu'il envoie, le pipeline d'envoi met à jour l'entrée de rapport d'état pour chaque échange reçu corrélé. La source des données sont les enveloppes d'échange créées par le pipeline d'envoi.  
@@ -227,4 +227,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>Voir aussi  
  [Stockage des données pour les rapports d’état AS2 et EDI](../core/how-data-is-stored-for-edi-and-as2-status-reports.md)   
- [Stockage des données pour les Messages EDI sortants](../core/how-data-is-stored-for-outbound-edi-messages.md)
+ [Mode de stockage des données pour les messages EDI sortants](../core/how-data-is-stored-for-outbound-edi-messages.md)

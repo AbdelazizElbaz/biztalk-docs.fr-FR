@@ -12,11 +12,11 @@ caps.latest.revision: "40"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa2124425fa97729b1bec692fc1a88e301434c0b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1e9d4dfe5818e28e1ccd73b077c19c9d45ecb8cc
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="install-the-wcf-lob-adapter-sdk"></a>Installer le Kit de développement logiciel de l’adaptateur LOB WCF
 Installer et configurer le [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]. 
@@ -28,7 +28,7 @@ Installer les composants sur le système sur lequel vous installez la suite la [
 > **Pour obtenir la liste des versions prises en charge**, consultez : 
 > 
 > [Configurations logicielle et matérielle pour BizTalk Server 2016](../../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md)  
-> [Configurations matérielle et logicielle requises pour BizTalk Server 2013 et 2013 R2](../../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2013-and-2013-r2.md)
+> [Configuration matérielle et logicielle requise pour BizTalk Server 2013 et 2013 R2](../../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2013-and-2013-r2.md)
  
  | | | 
  | --- | --- |
@@ -103,7 +103,7 @@ Installer les composants sur le système sur lequel vous installez la suite la [
   
 2.  Supprimez les références à la liaison de l’adaptateur personnalisé à partir de machine.config  
   
-    1.  Accédez au fichier machine.config sous \< *lecteur système*> : \WINDOWS\Microsoft.NET\Framework\\< version\>\CONFIG.  
+    1.  Accédez au fichier machine.config sous \< *lecteur système*\>: \WINDOWS\Microsoft.NET\Framework\\< version\>\CONFIG.  
   
     2.  Ouvrez le fichier à l’aide d’un éditeur de texte.  
   

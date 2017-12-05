@@ -1,5 +1,5 @@
 ---
-title: Optimisation des groupes de fichiers pour le Databases1 | Documents Microsoft
+title: "Optimiser les groupes de fichiers de base de données | Documents Microsoft"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a8d7a9feb1f455a24b397c2dbd0084d08f1cf332
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6df4f1213ed35c06b14ae127cf0593abfdd8ff35
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="optimizing-filegroups-for-the-databases"></a>Optimisation des groupes de fichiers pour les bases de données
 Fichier d’entrée/sortie (e/s) contention est souvent un facteur de limitation, ou goulot d’étranglement, dans un environnement BizTalk Server de production. BizTalk Server est une application qui consommée beaucoup les bases de données et à son tour, la base de données SQL Server utilisée par BizTalk Server est e/s de fichier très intensive.  
@@ -26,13 +26,13 @@ Fichier d’entrée/sortie (e/s) contention est souvent un facteur de limitation
 ## <a name="overview"></a>Vue d'ensemble  
  Chaque solution BizTalk Server rencontrent finalement contention d’e/s de fichier augmentation du débit. Le sous-système d’e/s, ou le moteur de stockage, est un composant essentiel de toute base de données relationnelle. L'implémentation réussie d'une base de données requiert généralement une planification soigneuse dès les premières phases d'un projet. Cette planification doit tenir compte des considérations sur les points suivants :  
   
--   Le type de disque à utiliser, tel que les périphériques RAID (Redundant Array of Independent Disks), par exemple. Pour plus d’informations sur l’utilisation d’une solution de matériel RAID, consultez « À propos des solutions matérielles » dans la documentation SQL Server en ligne à [http://go.microsoft.com/fwlink/?LinkID=113944](http://go.microsoft.com/fwlink/?LinkID=113944).  
+-   Le type de disque à utiliser, tel que les périphériques RAID (Redundant Array of Independent Disks), par exemple. 
   
--   Comment répartir les données sur les disques à l’aide de fichiers et groupes de fichiers. Pour plus d’informations sur l’utilisation des fichiers et groupes de fichiers dans SQL Server 2008, consultez « À l’aide de fichiers et groupes de fichiers » dans la documentation en ligne de SQL Server à [http://go.microsoft.com/fwlink/? LinkID = 69369](http://go.microsoft.com/fwlink/?LinkID=69369) et « Présentation des fichiers et groupes de fichiers » dans la documentation en ligne de SQL Server à [http://go.microsoft.com/fwlink/? LinkID = 96447](http://go.microsoft.com/fwlink/?LinkID=96447).  
+-   Comment répartir les données sur les disques à l’aide de fichiers et groupes de fichiers. Pour plus d’informations sur l’utilisation des fichiers et groupes de fichiers dans SQL Server, consultez [base de données et groupes de fichiers](https://docs.microsoft.com/sql/relational-databases/databases/database-files-and-filegroups).
   
--   Implémentation de la conception des index optimaux pour améliorer les performances lors de l’accès aux données. Pour plus d’informations sur la conception d’index, consultez « Conception d’index » dans la documentation en ligne de SQL Server à [http://go.microsoft.com/fwlink/?LinkID=96457](http://go.microsoft.com/fwlink/?LinkID=96457).  
+-   Implémentation de la conception des index optimaux pour améliorer les performances lors de l’accès aux données. Pour plus d’informations sur la conception d’index, consultez [conception des index](https://docs.microsoft.com/sql/relational-databases/sql-server-index-design-guide).
   
--   Comment définir les paramètres de configuration SQL Server pour des performances optimales. Pour plus d’informations sur la définition des paramètres de configuration optimale pour SQL Server, consultez « Optimisation des performances du serveur » dans la documentation en ligne de SQL Server à [http://go.microsoft.com/fwlink/?LinkID=71418](http://go.microsoft.com/fwlink/?LinkID=71418).  
+-   Comment définir les paramètres de configuration SQL Server pour des performances optimales. Pour plus d’informations sur la définition des paramètres de configuration optimale pour SQL Server, consultez [les Options de Configuration de serveur](https://docs.microsoft.com/sql/database-engine/configure-windows/server-configuration-options-sql-server). 
   
  Un des principaux objectifs de création de BizTalk Server est de garantir qu’un message est **jamais** perdues. Afin de limiter le risque de perdre des messages, messages sont souvent écrits dans la base de données MessageBox que le message est traité. Lorsque des messages sont traités par une Orchestration, le message est écrit dans la base de données MessageBox à chaque point de persistance dans l’orchestration. Ces points de persistance provoquent la MessageBox écrire le message et l’état sur le disque physique. À des débits plus importants, cette persistance peut entraîner contention de disque considérable et peut potentiellement devenir un goulot d’étranglement.  
   
@@ -42,15 +42,13 @@ Fichier d’entrée/sortie (e/s) contention est souvent un facteur de limitation
   
  En outre, les fichiers et groupes de fichiers activer placement des données, car les tables peuvent être créés dans les groupes de fichiers spécifiques. Cela améliore les performances, car toutes les e/s de fichier pour une table donnée peuvent être dirigées vers un disque spécifique. Par exemple, une table beaucoup utilisée peut être placée dans un fichier dans un groupe de fichiers situé sur un disque, et les autres tables moins sollicitées dans la base de données peuvent se trouver sur différents fichiers dans un autre groupe stocké sur un deuxième disque.  
   
- Goulots d’étranglement des e/s de fichier considérable en détail dans la rubrique « Identifiant les goulots d’étranglement dans la base de données niveau » sont présentées dans les [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] documentation à l’adresse [http://go.microsoft.com/fwlink/?LinkId=147626](http://go.microsoft.com/fwlink/?LinkId=147626). Le symptôme le plus courant que les e/s de fichier (e/s disque) est un goulot d’étranglement est la valeur du compteur « Longueur de file d’attente de disque : moyenne du disque physique ». Lorsque la valeur du compteur « Longueur de file d’attente de disque : moyenne du disque physique » est supérieure à environ 3 pour tout disque donné sur les serveurs SQL, e/s de fichier est probablement un goulot d’étranglement.  
+ Goulots d’étranglement des e/s de fichier sont décrites en détail considérable dans [les goulots d’étranglement au niveau de la base de données](../technical-guides/bottlenecks-in-the-database-tier.md). Le symptôme le plus courant que les e/s de fichier (e/s disque) est un goulot d’étranglement est la valeur du compteur « Longueur de file d’attente de disque : moyenne du disque physique ». Lorsque la valeur du compteur « Longueur de file d’attente de disque : moyenne du disque physique » est supérieure à environ 3 pour tout disque donné sur les serveurs SQL, e/s de fichier est probablement un goulot d’étranglement.  
   
  Si l’application de l’optimisation de fichier ou groupe de fichiers ne résout pas un problème de goulot d’étranglement d’e/s de fichier, il peut être nécessaire d’augmenter le débit du sous-système de disque en ajoutant physiques supplémentaires ou des lecteurs de SAN.  
   
  Cette rubrique décrit comment appliquer manuellement des fichiers et des optimisations, mais ces optimisations peuvent également être scriptées. Un exemple de script SQL est fourni à la fin de cette rubrique. Il est important de noter que ce script doit être modifiée pour prendre en charge le fichier, le groupe de fichiers et la configuration de disque utilisé par les bases de données SQL Server pour une solution BizTalk Server donnée.  
   
-> [!NOTE]  
->  Cette rubrique décrit comment créer plusieurs fichiers et groupes de fichiers pour la base de données MessageBox de BizTalk. Pour obtenir une liste exhaustive des recommandée et groupes de fichiers pour toutes les bases de données BizTalk Server, consultez **annexe B** de l’excellent livre blanc sur « Optimisation de base de données BizTalk Server » disponible à l’adresse [http:// go.Microsoft.com/fwlink/ ? LinkID = 101578](http://go.microsoft.com/fwlink/?LinkID=101578).  
-  
+ 
 ## <a name="databases-created-with-a-default-biztalk-server-configuration"></a>Bases de données créées avec la configuration de BizTalk Server par défaut  
  Selon les fonctionnalités sont activées lors de la configuration de BizTalk Server, jusqu'à 13 différentes bases de données peut-être être créé dans SQL Server et de toutes ces bases de données sont créés dans le groupe de fichiers par défaut. Le groupe de fichiers par défaut pour SQL Server est le groupe de fichiers primaire, sauf si le groupe de fichiers par défaut est modifié à l’aide de la commande ALTER DATABASE. Le tableau ci-dessous répertorie les bases de données qui sont créés dans SQL Server si toutes les fonctionnalités sont activées lors de la configuration de BizTalk Server.  
   
@@ -80,34 +78,30 @@ Fichier d’entrée/sortie (e/s) contention est souvent un facteur de limitation
  La principale source de conflits dans la plupart des solutions BizTalk Server, soit en raison de la contention d’e/s disque ou de contention de la base de données, est la base de données MessageBox de BizTalk Server. Cela est vrai dans les scénarios à la fois unique et multi-MessageBox. Il est raisonnable de penser que 80 % de la valeur de la distribution des bases de données BizTalk est dérivée d’optimiser les fichiers de données MessageBox et le fichier journal. L’exemple de scénario détaillée ci-dessous est axé sur l’optimisation des fichiers de données de base de données MessageBox. Ces étapes peuvent ensuite être suivis pour les autres bases de données si nécessaire, par exemple, si la solution requiert un suivi complet, alors la base de données de suivi peut également être optimisé.  
   
 ## <a name="manually-adding-files-to-the-messagebox-database-step-by-step"></a>Ajout manuel de fichiers à la base de données MessageBox, étape par étape  
- Cette section décrit les étapes à suivre pour ajouter manuellement des fichiers à la base de données MessageBox. Dans cet exemple, trois groupes de fichiers sont ajoutés et un fichier est ajouté à chaque groupe de fichiers pour distribuer les fichiers de la MessageBox sur plusieurs disques. Dans cet exemple, les étapes sont effectuées sur SQL Server 2005 et SQL Server 2008.  
+ Cette section décrit les étapes à suivre pour ajouter manuellement des fichiers à la base de données MessageBox. Dans cet exemple, trois groupes de fichiers sont ajoutés et un fichier est ajouté à chaque groupe de fichiers pour distribuer les fichiers de la MessageBox sur plusieurs disques.   
   
 > [!NOTE]  
->  À des fins de tests de performances pour ce guide, les groupes de fichiers ont été optimisées via l’utilisation d’un script qui sera publié dans le cadre de la [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] Guide des optimisations des performances. Les étapes ci-dessous sont fournis uniquement à des fins de référence.  
+>  À des fins de tests de performances pour ce guide, les groupes de fichiers ont été optimisées via l’utilisation d’un script qui sera publié dans le cadre du Guide des optimisations de performances de BizTalk Server. Les étapes ci-dessous sont fournis uniquement à des fins de référence.  
   
-### <a name="manually-adding-files-to-the-messagebox-database-on-sql-server-2005-or-sql-server-2008"></a>Ajout manuel de fichiers à la base de données MessageBox sur SQL Server 2005 ou SQL Server 2008  
- **Suivez ces étapes pour ajouter manuellement des fichiers à la base de données MessageBox sur [!INCLUDE[btsSQLServer2005](../includes/btssqlserver2005-md.md)] ou [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]:**  
+### <a name="manually-adding-files-to-the-messagebox-database-on-sql-server"></a>Ajout manuel de fichiers à la base de données MessageBox sur SQL Server
   
-> [!NOTE]  
->  Bien qu’il existe de légères différences dans l’interface utilisateur entre [!INCLUDE[btsSQLServer2005](../includes/btssqlserver2005-md.md)] et [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)], suivez la procédure ci-dessous s’appliquent aux deux versions de [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)].  
+1. Ouvrez **SQL Server Management Studio** pour afficher les **se connecter au serveur** boîte de dialogue.  
   
-1.  Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Microsoft SQL Server 2005** ou **Microsoft SQL Server 2008**, puis cliquez sur  **SQL Server Management Studio** pour afficher les **se connecter au serveur** boîte de dialogue.  
-  
-     ![Écran de connexion d’Administration SQL Server 2005](../technical-guides/media/641a03f4-362c-4dde-8c9d-ac313d8881e3.gif "641a03f4-362c-4dde-8c9d-ac313d8881e3")  
+     ![Écran de connexion d’Administration SQL Server](../technical-guides/media/641a03f4-362c-4dde-8c9d-ac313d8881e3.gif "641a03f4-362c-4dde-8c9d-ac313d8881e3")  
   
 2.  Dans le **nom du serveur** champ le **se connecter au serveur** boîte de dialogue, entrez le nom de l’instance de SQL Server qui héberge les bases de données MessageBox de BizTalk Server, puis cliquez sur le **se connecter**  bouton pour afficher la **Microsoft SQL Server Management Studio** boîte de dialogue.  
   
-     Dans le **l’Explorateur d’objets** volet de SQL Server Management Studio, développez **bases de données** pour afficher les bases de données pour cette instance de [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)].  
+     Dans le **l’Explorateur d’objets** volet de SQL Server Management Studio, développez **bases de données** pour afficher les bases de données pour cette instance de SQL Server.  
   
-     ![SQL Server 2005 Management Studio, l’Explorateur d’objets](../technical-guides/media/81f13912-fedc-48c3-9669-c18863e637b1.gif "81f13912-fedc-48c3-9669-c18863e637b1")  
+     ![SQL Server Management Studio, l’Explorateur d’objets](../technical-guides/media/81f13912-fedc-48c3-9669-c18863e637b1.gif "81f13912-fedc-48c3-9669-c18863e637b1")  
   
 3.  Avec le bouton droit de la base de données pour laquelle ajouter les fichiers, puis cliquez sur **propriétés** pour afficher les **propriétés de la base de données** boîte de dialogue de la base de données.  
   
-     ![Boîte de dialogue Propriétés de base de données SQL Server 2005](../technical-guides/media/82ae7c11-5b3a-4312-876c-70876abdd65c.gif "82ae7c11-5b3a-4312-876c-70876abdd65c")  
+     ![Boîte de dialogue Propriétés de la base de données SQL Server](../technical-guides/media/82ae7c11-5b3a-4312-876c-70876abdd65c.gif "82ae7c11-5b3a-4312-876c-70876abdd65c")  
   
 4.  Dans le **propriétés de la base de données** boîte de dialogue, sélectionnez le **groupes de fichiers** page. Cliquez sur le **ajouter** bouton permettant de créer des groupes de fichiers supplémentaires pour les bases de données BizTalkMsgBoxDb. Dans l’exemple ci-dessous, trois groupes de fichiers supplémentaires sont ajoutés.  
   
-     ![SQL Server 2005, ajout de groupes de fichiers à une base de données](../technical-guides/media/6be47c0e-06c3-45d9-bce2-a42453da7d19.gif "6be47c0e-06c3-45d9-bce2-a42453da7d19")  
+     ![SQL Server, ajout de groupes de fichiers à une base de données](../technical-guides/media/6be47c0e-06c3-45d9-bce2-a42453da7d19.gif "6be47c0e-06c3-45d9-bce2-a42453da7d19")  
   
 5.  Dans la boîte de dialogue **Propriétés de la base de données** , sélectionnez la page **Fichiers** .  
   
@@ -115,7 +109,7 @@ Fichier d’entrée/sortie (e/s) contention est souvent un facteur de limitation
   
      Dans l’exemple ci-dessous, un fichier est créé pour chacun des groupes de fichiers qui ont été créés précédemment et chaque fichier est placé sur un disque distinct.  
   
-     ![SQL Server 2005, ajout de fichiers à un groupe de fichiers](../technical-guides/media/d5d5c5df-d483-4f01-8128-f98228de51b9.gif "d5d5c5df-d483-4f01-8128-f98228de51b9")  
+     ![SQL Server, ajout de fichiers à un groupe de fichiers](../technical-guides/media/d5d5c5df-d483-4f01-8128-f98228de51b9.gif "d5d5c5df-d483-4f01-8128-f98228de51b9")  
   
 ## <a name="sample-sql-script-for-adding-filegroups-and-files-to-the-biztalk-messagebox-database"></a>Exemple de script SQL pour l’ajout de fichiers et groupes de fichiers à la base de données MessageBox de BizTalk  
  L’exemple de script SQL ci-dessous effectue les mêmes tâches qui ont été effectuées manuellement dans la section précédente.  

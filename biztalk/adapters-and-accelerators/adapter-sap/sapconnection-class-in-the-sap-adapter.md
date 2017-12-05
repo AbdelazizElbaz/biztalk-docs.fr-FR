@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b27bb8f88686fe1726aed16113ce227347151996
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cb5a1778fac8577efb3c3c21a10b16f47a026397
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="sapconnection-class-in-the-sap-adapter"></a>Classe SAPConnection dans l’adaptateur SAP
 La section suivante répertorie les méthodes et propriétés pour le **SAPConnection** classe. Représente une connexion ADO.NET pour le serveur d’applications SAP.  
@@ -42,7 +42,7 @@ La section suivante répertorie les méthodes et propriétés pour le **SAPConne
 |**ChangeDatabase(string)**|Non pris en charge.|  
 |**Close()**|Ferme la connexion au système SAP.|  
 |**CreateCommand()**|Retourne un nouveau SAPCommand associé à cette connexion.|  
-|**GetSchema()**|Obtient la liste des tables SAP détectés. Toutes les découvertes de tables sont disponibles dans un fichier XML SAPDiscoveredObjects.xml. Le fichier se trouve dans \<lecteur d’installation > : \Program Files\Microsoft Shared\Adapters\SAP.|  
+|**GetSchema()**|Obtient la liste des tables SAP détectés. Toutes les découvertes de tables sont disponibles dans un fichier XML SAPDiscoveredObjects.xml. Le fichier se trouve dans \<lecteur d’installation\>: \Program Files\Microsoft Shared\Adapters\SAP.|  
 |**GetSchema (String)**|Obtient le schéma basé sur le nom de la collection. Prend en charge le nom de la collection « Tables ».|  
   
 |Nom| Description|  

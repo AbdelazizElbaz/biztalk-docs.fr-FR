@@ -17,11 +17,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5f32e9432800249e6cbc64d36e281fb564648f78
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 315a685f0e289d60e3db9dfbe77bae5a7e2b19f0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="template-application-deployment-sample"></a>Modèle (exemple de déploiement d'une application)
 Cette rubrique décrit l'utilisation de l'exemple de modèle pour le déploiement d'une application.  
@@ -64,7 +64,7 @@ Cette rubrique décrit l'utilisation de l'exemple de modèle pour le déploiemen
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
  L'exemple se trouve dans le dossier d'installation de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], comme suit :  
   
- *\<Exemples de chemin d’accès >*\Application Deployment\Template  
+ *\<Exemples de chemin d’accès\>*\Application Deployment\Template  
   
  Comme indiqué précédemment, l'exemple inclut les deux fichiers suivants :  
   
@@ -81,7 +81,7 @@ Cette rubrique décrit l'utilisation de l'exemple de modèle pour le déploiemen
   
      Exemple :  
   
-     définir le fichier journal = «*\<exemples de chemin >*\ApplicationDeployment\Templates\SampleLogOut.txt »  
+     définir le fichier journal = «*\<exemples de chemin\>*\ApplicationDeployment\Templates\SampleLogOut.txt »  
   
 ### <a name="to-create-a-new-application"></a>Pour créer une application  
   
@@ -172,4 +172,4 @@ Cette rubrique décrit l'utilisation de l'exemple de modèle pour le déploiemen
   
 ## <a name="see-also"></a>Voir aussi  
  [Déploiement d’applications (dossier d’exemples BizTalk Server)](../core/application-deployment-biztalk-server-samples-folder.md)   
- [Déploiement d’Applications BizTalk](../core/deploying-biztalk-applications.md)
+ [Déploiement des applications BizTalk](../core/deploying-biztalk-applications.md)

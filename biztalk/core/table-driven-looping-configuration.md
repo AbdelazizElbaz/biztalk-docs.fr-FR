@@ -21,11 +21,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2563c7f26d2beb0eba33173507989cc85aaabda1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6030c721207e5b7f2c9958a50758c0ed98097c8d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="table-driven-looping-configuration"></a>Configuration de bouclage piloté par la table
 Pour configurer le bouclage piloté par la table dans votre mappage, procédez comme indiqué ci-dessous :  
@@ -34,7 +34,7 @@ Pour configurer le bouclage piloté par la table dans votre mappage, procédez c
   
 -   **Ajouter un fonctoid Extracteur de Table plus à la page de grille affichée.** Ajoutez autant **extracteur de Table** fonctoids que vous avez besoin pour chaque **bouclage de Table** fonctoid. Le nombre de **extracteur de Table** fonctoids varie selon le nombre de champs dans le schéma de destination. Par exemple, si vous disposez d’un **AddressCode** dans votre schéma source et CompanyName, adresse, ville, état, code postal et AttentionName dans votre schéma de destination, vous devez ajouter six **extracteur de Table** fonctoids à la page de grille affichée.  
   
--   **Configurer le fonctoid Bouclage de Table avec les entrées appropriées.** Commencez par lier le **bouclage de Table** fonctoid à l’élément ou un enregistrement d’instance d’entrée. Établissez également un lien avec la structure du message d’instance de sortie. Ensuite, configurez les entrées à l’aide de la **configurer \<fonctoid > fonctoid** boîte de dialogue. Pour plus d’informations sur la façon de configurer cette propriété, consultez [modification des propriétés de fonctoid et les paramètres d’entrée](../core/editing-functoid-properties-and-input-parameters.md) . La liste des entrées doit être complète et exhaustive, car ce sont les données que vous utiliserez pour configurer le **grille de fonctoid de Table** propriété. Les entrées doivent être définies comme suit :  
+-   **Configurer le fonctoid Bouclage de Table avec les entrées appropriées.** Commencez par lier le **bouclage de Table** fonctoid à l’élément ou un enregistrement d’instance d’entrée. Établissez également un lien avec la structure du message d’instance de sortie. Ensuite, configurez les entrées à l’aide de la **configurer \<fonctoid\> fonctoid** boîte de dialogue. Pour plus d’informations sur la façon de configurer cette propriété, consultez [modification des propriétés de fonctoid et les paramètres d’entrée](../core/editing-functoid-properties-and-input-parameters.md) . La liste des entrées doit être complète et exhaustive, car ce sont les données que vous utiliserez pour configurer le **grille de fonctoid de Table** propriété. Les entrées doivent être définies comme suit :  
   
     -   **La première entrée.** le premier paramètre d’entrée est le lien établi avec l’enregistrement ou le champ du message d’instance d’entrée. Le **bouclage de Table** effectue un fonctoid Bouclage pour chaque instance de l’enregistrement ou le champ.  
   

@@ -16,11 +16,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e554de9b00869db4a258f03984fe1ebc71e99c38
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7c5624eb6cf88f45d1ecad0b68fee3f5f7b8a8ba
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="optimizing-performance-of-the-msmq-adapter"></a>Optimisation des performances de l’adaptateur MSMQ
 L'optimisation de l'adaptateur MSMQ diffère entre les côtés envoi et réception. Vous contrôlez l'optimisation côté réception en définissant une propriété sur l'emplacement de réception. Côté envoi, vous pouvez contrôler l'optimisation à l'aide d'une orchestration.  
@@ -42,7 +42,7 @@ L'optimisation de l'adaptateur MSMQ diffère entre les côtés envoi et récepti
  Côté envoi, vous pouvez obtenir un traitement par message unique à l'aide de l'exemple d'orchestration. Celui-ci envoie un message unique, puis attend de recevoir un accusé de réception pour envoyer le message suivant. Pour plus d’informations, consultez [comment créer des emplacements de réception MSMQ et les Ports d’envoi à partir de Code](../core/how-to-create-msmq-receive-locations-and-send-ports-from-code.md).  
   
 ## <a name="remote-transactional-read-operations"></a>Opérations de lectures transactionnelles distantes  
- Avec [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], l'adaptateur MSMQ est capable d'effectuer des opérations de lectures distantes à partir de files d'attente MSMQ transactionnelles.  Cela est dû au fait que MSMQ 4.0 et les versions ultérieures prennent en charge les opérations de lectures transactionnelles distantes.  Cependant, les opérations de lectures transactionnelles sont des opérations généralement lentes. Pour optimiser les performances, elles ne doivent être utilisées qu'en dernier recours.  
+ Adaptateur MSMQ de BizTalk Server est capable d’effectuer des opérations de lecture à distance à partir des files d’attente MSMQ transactionnelles.  Cela est dû au fait que MSMQ 4.0 et les versions ultérieures prennent en charge les opérations de lectures transactionnelles distantes.  Cependant, les opérations de lectures transactionnelles sont des opérations généralement lentes. Pour optimiser les performances, elles ne doivent être utilisées qu'en dernier recours.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Pour configurer un MSMQ emplacement de réception](../core/how-to-configure-an-msmq-receive-location.md)   

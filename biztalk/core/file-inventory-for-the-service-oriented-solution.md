@@ -13,16 +13,16 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ac62241b8c3bf3244bb9e055a5b744acd5080048
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 39d18b32e1b499009e7559a68d7e60e6ba43f28c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="file-inventory-for-the-service-oriented-solution"></a>Solution orientée services l’inventaire des fichiers pour le Service
-Cette section répertorie les sous-répertoires et fichiers sources de la solution orientée services. Le répertoire d'installation par défaut pour les fichiers sources de la solution orientée services est [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Scenarios\SO. Descriptions avant que les tables suivantes remplacement ce chemin d’accès avec \<répertoire d’installation >.  
+Cette section répertorie les sous-répertoires et fichiers sources de la solution orientée services. Le répertoire d'installation par défaut pour les fichiers sources de la solution orientée services est [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Scenarios\SO. Descriptions avant que les tables suivantes remplacement ce chemin d’accès avec \<répertoire d’installation\>.  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -31,14 +31,14 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |ReplacePKToken.wsf|Fichier Windows Script pour le VBScript ReplacePKToken.|  
 |SetupBTSSoln.bat|Crée une clé publique, met à jour les références à la clé publique et compile la solution. Pour plus d’informations sur le déploiement de la solution, consultez [déployer la Solution orientée services](../core/deploying-the-service-oriented-solution.md).|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\BAM  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\BAM  
   
 |Fichier| Description|  
 |----------|-----------------|  
 |ServiceLevelTracking.xls|Feuille de calcul Excel pour les données BAM.|  
 |ServiceLevelTracking.xml|Schéma définissant les types d'éléments de données BAM.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\Bindings  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\Bindings  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -46,7 +46,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |InlineSOAOrchBindings.xml|Fichiers de liaison pour la version Inline de la solution.|  
 |StubSOAOrchBindings.xml|Fichiers de liaison pour la version stub de la solution.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\ConfigHelper  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\ConfigHelper  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -55,21 +55,21 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |ConfigParameters.cs|Fichier de code C# pour les méthodes d'assistance à la configuration de l'authentification unique.|  
 |ConfigPropertyBag.cs|Fichier de code C# pour le jeu de propriétés utilisé par les méthodes d'assistance à la configuration de l'authentification unique.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\ErrorHelper  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\ErrorHelper  
   
 |Fichier| Description|  
 |----------|-----------------|  
 |CustomerServiceErrors.cs|Fichier de code C# pour les erreurs de service client.|  
 |ErrorHelper.csproj|Fichier de projet C#.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\InPipeline  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\InPipeline  
   
 |Fichier| Description|  
 |----------|-----------------|  
 |InPipeline.btp|Pipeline de réception qui ajoute un ticket SSO au message.|  
 |InPipeline.btproj|Fichier de projet BizTalk.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\InPipelineComp  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\InPipelineComp  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -79,7 +79,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |SSOTicketIssuer.resx|Fichier de ressources.|  
 |SSOTicketIssuerIcon.bmp|Fichier d'icônes pour le composant de pipeline.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\Maps  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\Maps  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -94,7 +94,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |CustomerServiceRequest_To_PendingTransactionsRequest.btm|Mappage pour convertir la demande de service client en un message pour demander les informations relatives à la transaction en attente.|  
 |Maps.btproj|Fichier de projet BizTalk.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\Orchestrations\Adapter  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\Orchestrations\Adapter  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -103,7 +103,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |CustomerServiceReceiveSend.odx|Version de l’adaptateur de l’orchestration servant frontale à le **CustomerService** orchestration.|  
 |Orchestrations.Adapter.btproj|Fichier de projet BizTalk.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\Orchestrations\Adapter\Web References\PendTransWS  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\Orchestrations\Adapter\Web References\PendTransWS  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -115,7 +115,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |Reference.xsd|Fichier généré.|  
 |Reference1.xsd|Fichier généré.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\Orchestrations\Adapter\Web References\StubSAPWS  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\Orchestrations\Adapter\Web References\StubSAPWS  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -126,7 +126,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |StubSAPWS.disco|Fichier généré.|  
 |StubSAPWS.wsdl|Fichier généré.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\Orchestrations\Inline  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\Orchestrations\Inline  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -135,7 +135,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |CustomerServiceReceiveSend.odx|Version inline de l’orchestration servant frontale à le **CustomerService** orchestration.|  
 |Orchestrations.Inline.btproj|Fichier de projet BizTalk.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\Orchestrations\Stub  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\Orchestrations\Stub  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -143,7 +143,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |CustomerServiceNativeRequestResponse.odx|Version stub de l’orchestration servant frontale à le **CustomerService** orchestration.|  
 |Orchestrations.Stub.btproj|Fichier de projet BizTalk.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\Orchestrations\Stub\Web References\StubPendTransWS  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\Orchestrations\Stub\Web References\StubPendTransWS  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -155,7 +155,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |StubPendTransWS.disco|Fichier généré.|  
 |StubPendTransWS.wsdl|Fichier généré.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\Orchestrations\Stub\Web References\StubPmntTrckWS  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\Orchestrations\Stub\Web References\StubPmntTrckWS  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -167,7 +167,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |StubPmntTrckWS.disco|Fichier généré.|  
 |StubPmntTrckWS.wsdl|Fichier généré.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\Orchestrations\Stub\Web References\StubSAPWS  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\Orchestrations\Stub\Web References\StubSAPWS  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -178,7 +178,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |StubSAPWS.disco|Fichier généré.|  
 |StubSAPWS.wsdl|Fichier généré.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\OrchProxy\Adapter  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\OrchProxy\Adapter  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -190,7 +190,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |Web.config|Fichier généré.|  
 |WsdlExtension.cs|Fichier généré.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\OrchProxy\Adapter\app_code  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\OrchProxy\Adapter\app_code  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -199,7 +199,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |datatypes.cs|Fichier généré.|  
 |global.asax.cs|Fichier généré.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\OrchProxy\Inline  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\OrchProxy\Inline  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -211,7 +211,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |Web.config|Fichier généré.|  
 |WsdlExtension.cs|Fichier généré.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\OrchProxy\Inline\app_code  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\OrchProxy\Inline\app_code  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -220,7 +220,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |datatypes.cs|Fichier généré.|  
 |global.asax.cs|Fichier généré.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\OrchProxy\Stub  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\OrchProxy\Stub  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -232,7 +232,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |Web.config|Fichier généré.|  
 |WsdlExtension.cs|Fichier généré.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\OrchProxy\Stub\app_code  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\OrchProxy\Stub\app_code  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -241,7 +241,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |datatypes.cs|Fichier généré.|  
 |global.asax.cs|Fichier généré.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\PaymentTracker  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\PaymentTracker  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -253,7 +253,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |PaymentTrackerSimulator.cs|Code C# pour le serveur pour le simulateur Payment Tracker.|  
 |runit.cmd|Fichier de commandes pour démarrer le simulateur Payment Tracker.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\PaymentTrackerCall  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\PaymentTrackerCall  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -262,7 +262,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |PaymentTrackerCall.csproj|Fichier de projet C#.|  
 |PaymentTrackerCaller.cs|Code C# permettant d'appeler le système inline de suivi des paiements à partir des orchestrations.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\PendTransCall  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\PendTransCall  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -274,7 +274,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |PendTransCall.csproj|Fichier de projet C#.|  
 |WebServiceReference.cs|Fichier généré.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\PmTrkPipeline  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\PmTrkPipeline  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -282,7 +282,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |PaymentTrackerSendPipeline.btp|Pipeline d'envoi pour le système Payment Tracking.|  
 |PmTrkPipeline.btproj|Fichier de projet BizTalk.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\PmTrkPipelineComp  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\PmTrkPipelineComp  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -291,7 +291,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |MQSeriesHeaderSetter.resx|Fichier de ressources.|  
 |PmTrkPipelineComp.csproj|Fichier de projet C#.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\SchemaClasses  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\SchemaClasses  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -305,7 +305,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |PendingTransactionsResponse.cs|Généré à partir du fichier de schéma correspondant (.xsd).|  
 |SchemaClasses.csproj|Fichier de projet C#.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\Schemas  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\Schemas  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -319,7 +319,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |PendingTransactionsResponse.xsd|Schéma pour le message de réponse relatif à la transaction en attente.|  
 |Schemas.btproj|Fichier de projet BizTalk.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\Scripts  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\Scripts  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -341,7 +341,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |UnEnlistAll.vbs|Fichier de commandes pour désinscrire toutes les orchestrations.|  
 |UnEnlistStub.vbs|Fichier de commandes pour désinscrire les versions stub des orchestrations.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\ServiceLevelTracking  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\ServiceLevelTracking  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -349,7 +349,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |ServiceLevelTracking.cs|Fonctions d'assistance C# pour le suivi BAM au niveau du service.|  
 |ServiceLevelTracking.csproj|Fichier de projet C#.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\SimpleClient  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\SimpleClient  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -364,7 +364,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |SimpleClient.resx|Fichier de ressources.|  
 |WebServiceReferences.cs|Fichier généré.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\StubWebServices\PaymentTrack  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\StubWebServices\PaymentTrack  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -375,7 +375,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |StubPmntTrckWS.asmx.resx|Fichier généré.|  
 |Web.config|Fichier généré.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\StubWebServices\PaymentTrack\app_code  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\StubWebServices\PaymentTrack\app_code  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -383,7 +383,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |global.asax.cs|Fichier généré.|  
 |StubPmntTrckWS.asmx.cs|Fichier généré.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\StubWebServices\PendingTrans  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\StubWebServices\PendingTrans  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -394,7 +394,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |StubPendTransWS.csproj.webinfo|Fichier généré.|  
 |Web.config|Fichier généré.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\StubWebServices\PendingTrans\app_code  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\StubWebServices\PendingTrans\app_code  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -402,7 +402,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |global.asax.cs|Fichier généré.|  
 |StubPendTransWS.asmx.cs|Fichier généré.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\StubWebServices\SAP  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\StubWebServices\SAP  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -413,7 +413,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |StubSAPWS.asmx.resx|Fichier généré.|  
 |Web.config|Fichier généré.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\StubWebServices\SAP\app_code  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\StubWebServices\SAP\app_code  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -421,7 +421,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |global.asax.cs|Fichier généré.|  
 |stubsapws.asmx.cs|Fichier généré.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\StubWebServices\StubSAPCall  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\StubWebServices\StubSAPCall  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -431,7 +431,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |StubSAPCallHelper.cs|Code C# pour un assembly d'assistance pour appeler le service Web SAP stub.|  
 |StubSAPWSProxy.cs|Code C# pour un assembly d'assistance pour appeler le service Web SAP stub.|  
   
- Dans les fichiers \<répertoire d’installation > \BTSSoln\Utilities  
+ Dans les fichiers \<répertoire d’installation\>\BTSSoln\Utilities  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -440,14 +440,14 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |ReceivePipelineHelper.cs|Code C# pour l'assembly d'assistance pour l'appel de pipelines à partir d'orchestrations.|  
 |Utilities.csproj|Fichier de projet C#.|  
   
- Dans les fichiers \<répertoire d’installation > \MFAccess  
+ Dans les fichiers \<répertoire d’installation\>\MFAccess  
   
 |Fichier| Description|  
 |----------|-----------------|  
 |Microsoft.Samples.BizTalk.WoodgroveBank.MainframeAccess.sln|Fichier solution Visual Studio.|  
 |SetupMFAccess.bat|Fichier de commandes pour créer les composants d'accès au macroordinateur de la solution.|  
   
- Dans les fichiers \<répertoire d’installation > \MFAccess\HISTIComponent  
+ Dans les fichiers \<répertoire d’installation\>\MFAccess\HISTIComponent  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -456,7 +456,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |MainFrameProgramVTCS2Description.txt|Fichier d'exportation Intégrateur de transactions.|  
 |SOHISTIUsingCOM.TLB|Bibliothèque de types.|  
   
- Dans les fichiers \<répertoire d’installation > \MFAccess\HISTISimpleTester  
+ Dans les fichiers \<répertoire d’installation\>\MFAccess\HISTISimpleTester  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -467,7 +467,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |HISTISimpleTester.csproj|Fichier de projet C#.|  
 |Interop.SOHISTIUsingCOM.dll.reg|Fichier d'inscription DLL.|  
   
- Dans les fichiers \<répertoire d’installation > \MFAccess\PendingTransactions  
+ Dans les fichiers \<répertoire d’installation\>\MFAccess\PendingTransactions  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -482,7 +482,7 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
 |PendTransWS.asmx.resx|Fichier généré.|  
 |Web.config|Fichier généré.|  
   
- Dans les fichiers \<répertoire d’installation > \MFAccess\SchemaClasses  
+ Dans les fichiers \<répertoire d’installation\>\MFAccess\SchemaClasses  
   
 |Fichier| Description|  
 |----------|-----------------|  
@@ -498,4 +498,4 @@ Cette section répertorie les sous-répertoires et fichiers sources de la soluti
   
 ## <a name="see-also"></a>Voir aussi  
  [Solution orientée services de composants du Service](../core/components-of-the-service-oriented-solution.md)   
- [Référence de la Solution orientée services](../core/service-oriented-solution-reference.md)
+ [Informations de référence sur la solution orientée services](../core/service-oriented-solution-reference.md)

@@ -20,11 +20,11 @@ caps.latest.revision: "54"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ea377f83f6e9c104d1bbd0b2e59923fb11f8fe65
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 611544e77de738c904fa673b56dbec75fd17d4bd
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-the-destination-system-for-log-shipping"></a>Comment configurer le système de Destination pour l’envoi de journaux
 La copie des journaux de transaction offre des fonctionnalités de serveur de secours, ce qui réduit le temps mort en cas de défaillance du système. L'envoi de journaux vous permet d'envoyer automatiquement des journaux des transactions à partir du système source vers le système de destination. Au niveau du système de destination, les journaux des transactions sont restaurés dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] des bases de données ; les maintenant étroitement synchronisées avec les bases de données source.  
@@ -83,9 +83,9 @@ La copie des journaux de transaction offre des fonctionnalités de serveur de se
   
     1.  Sur le système de destination, activez  **[Ad Hoc Distributed Queries](https://docs.microsoft.com/sql/database-engine/configure-windows/server-configuration-options-sql-server)**.  
   
-    2.  Dans la fenêtre de requête, remplacez  *\<MyLogShippingSolution >* avec une description significative, entourée par des guillemets simples.  
+    2.  Dans la fenêtre de requête, remplacez  *\<MyLogShippingSolution\>*  avec une description significative, entourée par des guillemets simples.  
   
-    3.  Dans la fenêtre de requête, remplacez  *\<BizTalkServerManagementDatabaseName >* et  *\<BizTalkServerManagementDatabaseServer >* avec le nom et l’emplacement de votre données de gestion BizTalk source, entourée de guillemets simples.  
+    3.  Dans la fenêtre de requête, remplacez  *\<BizTalkServerManagementDatabaseName\>*  et  *\<BizTalkServerManagementDatabaseServer\>*  avec le nom et l’emplacement de votre base de données de gestion BizTalk source, entouré de guillemets simples.  
   
     > [!NOTE]
     >  Si vous disposez de plusieurs serveurs sources, vous pouvez restaurer chaque serveur source sur son propre serveur de destination. Sur chaque serveur de destination, dans le  **@SourceServerName = null** paramètre, remplacez *null* par le nom du serveur source approprié, entouré de guillemets simples (par exemple,  **@SourceServerName = 'MySourceServer'**).  
@@ -119,9 +119,9 @@ La copie des journaux de transaction offre des fonctionnalités de serveur de se
   
 10. Dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], accédez au dossier suivant :  
   
-     ordinateur 32 bits : %SystemDrive%\Program Files\Microsoft BizTalk Server \<version > \Schema\Restore  
+     ordinateur 32 bits : %SystemDrive%\Program Files\Microsoft BizTalk Server \<version\>\Schema\Restore  
   
-     ordinateur 64 bits : %SystemDrive%\Program Files (x86) \Microsoft BizTalk Server \<version > \Bins32\Schema\Restore  
+     ordinateur 64 bits : %SystemDrive%\Program Files (x86) \Microsoft BizTalk Server \<version\>\Bins32\Schema\Restore  
   
 11. Avec le bouton droit **SampleUpdateInfo.xml**, puis sélectionnez **modifier**. Procédez comme suit :  
   
@@ -146,7 +146,7 @@ La copie des journaux de transaction offre des fonctionnalités de serveur de se
   
 13. Si vous utilisez l'analyse BAM ou le moteur de règles, supprimez les commentaires dans ces lignes, si nécessaire.  
   
-14. Si vous avez des bases de données personnalisées, ajoutez-les sous la  **\<OtherDatabases >** section. Consultez [comment sauvegarder des bases de données personnalisées](../core/how-to-back-up-custom-databases.md).  
+14. Si vous avez des bases de données personnalisées, ajoutez-les sous la  **\<OtherDatabases\>**  section. Consultez [comment sauvegarder des bases de données personnalisées](../core/how-to-back-up-custom-databases.md).  
   
 15. Lorsque vous avez fini de modifier le fichier, enregistrez-le et fermez-le.  
   

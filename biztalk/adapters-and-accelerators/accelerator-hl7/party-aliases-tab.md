@@ -17,11 +17,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bc22c7e3eafffb035c791b258064e2149f31636b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dec1cde2206f055cbcf97c94a7e2f042aa391f51
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="party-aliases-tab"></a>Onglet alias de tiers
 Vous utilisez la **alias des tiers** onglet pour afficher des informations sur la partie sélectionnée.  
@@ -29,7 +29,7 @@ Vous utilisez la **alias des tiers** onglet pour afficher des informations sur l
 > [!NOTE]
 >  Vous utilisez l’Explorateur BizTalk pour créer des parties.  
   
- Pour plus d’informations sur la création de tiers, consultez « Gestion des tiers à l’aide de l’Explorateur BizTalk » dans [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] aide.  
+ Pour plus d’informations sur la création de tiers, consultez « Gestion des tiers à l’aide de l’Explorateur BizTalk » dans l’aide de BizTalk Server.  
   
  Dans le **BTAHL7 Configuration Explorer** boîte de dialogue le **alias des tiers** onglet, procédez comme suit :  
   

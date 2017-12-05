@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c6c8af93f93e6acba6a0d2cffb69186715ccd49e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b73b4379944db548a30898403239ffcf9704791a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-the-itinerary-on-ramp-sample-works"></a>Fonctionne de l’exemple de rampe d’entrée d’itinéraire
 L’application génère un ensemble d’en-têtes SOAP qui contiennent l’itinéraire que vous créez à l’aide des contrôles dans la fenêtre d’application client, le Client Test itinéraire exemple charge le fichier de message spécifié à partir du disque, ajoute les en-têtes d’itinéraire pour le message, et envoie à l’architecture ESB via un itinéraire rampe d’entrée pour le traitement. Si l’itinéraire génère une réponse, l’application récupère la réponse et l’affiche dans la fenêtre d’application.  
@@ -54,13 +54,13 @@ L’application génère un ensemble d’en-têtes SOAP qui contiennent l’itin
 ```  
   
 > [!NOTE]
->  Le contenu réel de chaque  **\<résolveurs >** élément ne contient pas les caractères d’espace blanc utilisés pour encapsuler les lignes dans la liste précédente.  
+>  Le contenu réel de chaque  **\<résolveurs\>**  élément ne contient pas les caractères d’espace blanc utilisés pour encapsuler les lignes dans la liste précédente.  
   
  Voici les trois étapes définies dans la configuration précédente d’itinéraire :  
   
 1.  Exécutez l’orchestration Microsoft.Practices.ESB.Services.Transform pour transformer le message avec la stratégie de ResolverMap à l’aide du moteur de règles d’entreprise (BRE) BizTalk.  
   
-2.  Exécutez l’orchestration Microsoft.Practices.ESB.Services.Routing pour acheminer le message transformé à plusieurs emplacements à l’aide de la Microsoft.Practices.ESB.Services.Routing1 de routage. Le  **\<ResolverGroups >** section contient un  **\<résolveurs >** élément avec cet identificateur, qui définit les chaînes de connexion.  
+2.  Exécutez l’orchestration Microsoft.Practices.ESB.Services.Routing pour acheminer le message transformé à plusieurs emplacements à l’aide de la Microsoft.Practices.ESB.Services.Routing1 de routage. Le  **\<ResolverGroups\>**  section contient un  **\<résolveurs\>**  élément avec cet identificateur, qui définit les chaînes de connexion.  
   
 3.  Exécutez l’orchestration ProcessAndRespond fournie avec cet exemple. L’implémentation de cette orchestration envoie une copie du message de demande en tant que la réponse au client de Test d’itinéraire.  
   

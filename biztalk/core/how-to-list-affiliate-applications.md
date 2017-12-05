@@ -15,11 +15,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d01ae0a8d94b38583745ba706524c1b02c295b71
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2f6c4d4e4118bfe5f5cab7a9c44e770dd12656c7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-list-affiliate-applications"></a>Comment répertorier les Applications associées
 Cette commande permet de répertorier toutes les applications associées. Si l'utilisateur est membre du compte Administrateurs d’application, cette commande affiche uniquement l'application dont il est administrateur.  
@@ -28,7 +28,7 @@ Cette commande permet de répertorier toutes les applications associées. Si l'u
   
 1.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est \< *lecteur*> : \Program Files\Enterprise Single Sign-On.  
+2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est \< *lecteur*\>: \Program Files\Enterprise Single Sign-On.  
   
 3.  Type **ssomanage - listapps [all]** où **tous les** est un paramètre optionnel qui affiche également des applications à l’aide de la fonctionnalité de magasin de Configuration. Si l'utilisateur exécutant cette commande est un administrateur d'applications, la commande répertorie uniquement les applications dont il est administrateur. Si l’utilisateur qui exécute cette commande est un administrateur d’applications associées ou un administrateur SSO, il répertorie toutes les applications associées.  
   
@@ -39,7 +39,7 @@ Cette commande permet de répertorier toutes les applications associées. Si l'u
   
 1.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est \< *lecteur*> : \Program Files\Enterprise Single Sign-On.  
+2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est \< *lecteur*\>: \Program Files\Enterprise Single Sign-On.  
   
 3.  Type **ssoclient – listapps** pour répertorier les applications associées. Cela a pour effet de répertorier uniquement les applications associées dont l'utilisateur exécutant cette tâche est membre. Par exemple, l'utilisateur doit appartenir au compte du groupe d'utilisateurs de l'application pour cette application associée.  
   
@@ -50,4 +50,4 @@ Cette commande permet de répertorier toutes les applications associées. Si l'u
  [Applications associées SSO](../core/sso-affiliate-applications.md)   
  [Comment créer une Application associée](../core/how-to-create-an-affiliate-application.md)   
  [Gestion des mappages utilisateur](../core/managing-user-mappings.md)   
- [Gestion des Applications associées](../core/managing-affiliate-applications.md)
+ [Gestion des applications associées](../core/managing-affiliate-applications.md)

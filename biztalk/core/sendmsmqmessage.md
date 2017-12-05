@@ -15,11 +15,11 @@ caps.latest.revision: "26"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 39fd92c3d017e9ee88fe60f14c8baf9cb0ff941d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a48cbb333a724d2f60141f0f67ef3feccb1d3954
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="sendmsmqmessage"></a>SendMSMQMessage
 L'exemple SendMSMQMessage montre comment envoyer un message à un port MSMQ à partir d'une application basée sur .NET. Il fournit également des instructions sur la façon de configurer Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] à utiliser un MSMQ emplacement de réception.  
@@ -29,7 +29,7 @@ L'exemple SendMSMQMessage montre comment envoyer un message à un port MSMQ à p
  Dans le cadre de cet exemple, il est important que le code spécifie un type de transaction dans l’appel à **System.Messaging.MessageQueue.Send** qui soit cohérent avec la prise en charge de la transaction spécifiée pour la file d’attente à laquelle le message est envoyé. Si ce n'est pas le cas et si aucune file d'administration n'est spécifiée (comme dans cet exemple), l'API MSMQ écarte le message envoyé sans le signaler (aucun code d'erreur n'est renvoyé à l'application, aucun diagnostic n'est écrit dans le journal des événements, etc.).  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
- \<Exemples de chemin d’accès > \AdaptersUsage\SendMSMQMessage\  
+ \<Exemples de chemin d’accès\>\AdaptersUsage\SendMSMQMessage\  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -128,7 +128,7 @@ L'exemple SendMSMQMessage montre comment envoyer un message à un port MSMQ à p
   
 1.  Dans une fenêtre de commande, accédez au dossier suivant :  
   
-     \<Exemples de chemin d’accès > \AdaptersUsage\SendMSMQMessage\bin\Debug  
+     \<Exemples de chemin d’accès\>\AdaptersUsage\SendMSMQMessage\bin\Debug  
   
 2.  Exécutez le fichier SendMSMQMessage.exe qui démarre l'application graphique qui fournit l'interface utilisateur pour cet exemple.  
   
@@ -163,4 +163,4 @@ L'exemple SendMSMQMessage montre comment envoyer un message à un port MSMQ à p
      Si l'opération échoue, un message d'erreur s'affiche juste au-dessus des boutons.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Exemples d’adaptateurs - utilisation](../core/adapter-samples-usage.md)
+ [Exemples d’adaptateurs- Utilisation](../core/adapter-samples-usage.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c1b1dd0a6e11a1755bb69782f88f1a5a4b8b0067
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 840435ce334863a4b76e6ac7da0d8dd64e7d4937
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="connect-to-the-oracle-database-using-windows-authentication"></a>Se connecter à la base de données Oracle à l’aide de l’authentification Windows
 Le [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] permet aux clients de carte à utiliser l’authentification Windows pour établir une connexion avec la base de données Oracle. Pour utiliser l’authentification Windows, les clients de l’adaptateur doivent spécifier « / » pour le nom d’utilisateur et de ne pas renseigner le mot de passe. Pour plus d’informations sur la connexion à la base de données Oracle à l’aide de l’authentification Windows, consultez [se connecter à la base de données Oracle dans Visual Studio à l’aide de Consume Adapter Service](../../adapters-and-accelerators/adapter-oracle-database/connect-to-oracle-database-in-visual-studio-using-the-consume-adapter-service.md).  
@@ -34,13 +34,13 @@ Le [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] permet aux clie
 3.  Créer l’utilisateur Windows en tant qu’un utilisateur externe dans la base de données Oracle. Notez que le nom d’utilisateur doit être en majuscules.  
   
     ```  
-    CREATE USER “OPS$<DOMAIN_NAME>\<USER_NAME>” IDENTIFIED EXTERNALLY;  
+    CREATE USER “OPS$<DOMAIN_NAME>\<USER_NAME\>” IDENTIFIED EXTERNALLY;  
     ```  
   
 4.  Accorder les privilèges nécessaires pour l’utilisateur.  
   
     ```  
-    GRANT CONNECT,RESOURCE TO “OPS$<DOMAIN_NAME>\<USER_NAME>”;  
+    GRANT CONNECT,RESOURCE TO “OPS$<DOMAIN_NAME>\<USER_NAME\>”;  
     ```  
   
 5.  Pour activer l’utilisateur nouvellement créé, la journalisation à l’aide de l’authentification Windows, pour accéder aux artefacts de base de données Oracle, vous pouvez modifier le schéma de l’utilisateur vers le schéma SCOTT. Vous pouvez ajouter la commande SQL suivante au script d’ouverture de session qui modifie le schéma par défaut de l’utilisateur à SCOTT lorsque l’utilisateur ouvre une session.  
@@ -53,4 +53,4 @@ Le [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] permet aux clie
   
 ## <a name="see-also"></a>Voir aussi  
  [Configurer le Client Oracle pour l’adaptateur de base de données Oracle](../../adapters-and-accelerators/adapter-oracle-database/configure-the-oracle-client-for-the-oracle-database-adapter.md)   
-[Créer une connexion à la base de données Oracle](../../adapters-and-accelerators/adapter-oracle-database/create-a-connection-to-the-oracle-database.md)
+[Créer une connexion à Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/create-a-connection-to-the-oracle-database.md)

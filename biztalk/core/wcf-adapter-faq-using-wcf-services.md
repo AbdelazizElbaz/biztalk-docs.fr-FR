@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ca76426ab461ce12844cde42f4050d3de885d7ad
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 41d02fe0b7be1f53edaac4c18cfd7717a25c3a71
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="wcf-adapter-faq-using-wcf-services"></a>FAQ sur les adaptateurs WCF : utilisation des services WCF
 ## <a name="how-does-biztalk-server-use-its-wcf-adapters-to-access-wcf-services"></a>Comment BizTalk Server utilise-t-il les adaptateurs WCF pour accéder aux services WCF ?  
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
   
  L'adaptateur WCF BizTalk personnalisé permet de déployer une nouvelle liaison à partir des éléments BindingElements, ainsi que de configurer directement une nouvelle liaison. Il permet également de configurer les comportements sur les liaisons standard. Ceci est particulièrement utile car l'écriture de comportements personnalisés est bien plus facile que l'écriture de nouveaux objets BindingElements.  
   
- Création d’un élément BindingElement est un exercice de développement impliquées et la meilleure source d’informations de référence pour qu’il est exemples WCF sur le lien hypertexte « http://go.microsoft.com/fwlink/?LinkId=142449 » \t « _blank » http://go.microsoft.com/fwlink/?LinkId=142449. Pour créer un élément BindingElement personnalisé, vous créez une classe dérivant de BindingElement. Un nouvel élément BindingElement doit se trouver dans un nouvel assembly. Celui-ci doit être installé dans le GAC de l'ordinateur d'administration dans lequel sont configurés l'hôte, le port d'envoi et l'emplacement de réception BizTalk. Pour associer une liaison personnalisée avec un port d’envoi ou emplacement de réception, vous devez d’abord ajouter à la \<bindingElementExtensions > section du fichier machine.config sur le même ordinateur.  
+ Création d’un élément BindingElement est un exercice de développement impliquées et la meilleure source d’informations de référence pour qu’il est exemples WCF sur le lien hypertexte « http://go.microsoft.com/fwlink/?LinkId=142449 » \t « _blank » http://go.microsoft.com/fwlink/?LinkId=142449. Pour créer un élément BindingElement personnalisé, vous créez une classe dérivant de BindingElement. Un nouvel élément BindingElement doit se trouver dans un nouvel assembly. Celui-ci doit être installé dans le GAC de l'ordinateur d'administration dans lequel sont configurés l'hôte, le port d'envoi et l'emplacement de réception BizTalk. Pour associer une liaison personnalisée avec un port d’envoi ou emplacement de réception, vous devez d’abord ajouter à la \<bindingElementExtensions\> section du fichier machine.config sur le même ordinateur.  
   
  Après avoir apporté cette modification, vous pouvez afficher le **Configuration des propriétés de Transport** boîte de dialogue pour configurer la liaison.  
   
@@ -50,6 +50,6 @@ ms.lasthandoff: 09/20/2017
   
  Différents points du flux d'un message WCF interceptent et exécutent un traitement personnalisé avant que le message n'atteigne sa destination finale. Les extensions de comportement personnalisé WCF sont l'un de ces mécanismes d'interception. Elles peuvent permettre d'étendre le service WCF ou la fonctionnalité client à différents niveaux de granularité. Elles peuvent exister aux niveaux du service et du client WCF. La configuration d'un comportement sur la pile d'appels vers un service WCF n'a aucune incidence sur la liaison de communication utilisée pour l'appel. En fait, les comportements sont généralement invisibles au client car ils ne sont pas affichés dans les métadonnées qu'un service publie. Le client ne se rend habituellement pas compte que des comportements sont exécutés lors d'un appel vers une opération WCF.  
   
- La capacité à implémenter facilement un traitement personnalisé dans un appel vers un service WCF est l'une des raisons pour lesquelles WCF est un paradigme de programmation riche, en comparaison avec d'autres méthodes de communication entre les applications Web. Le traitement personnalisé peut prendre la plupart des formes, selon les besoins d'extensibilité de l'application Web. Les développeurs peuvent créer des extensions personnalisées qui inspectent et valident la configuration du service, ou modifient le comportement à l'exécution dans les applications de client et de service WCF. Comportements peuvent compléter le traitement normal des messages, modifiez le message au cours du traitement, vérifier certains critères de configuration et prenez les mesures appropriées, valider les identités de l’appelant et passer le message si elle est réussie, etc.. Car il s’agit réellement personnalisé mécanisme vous implémentez toutes les extensions de traitement votre application a besoin.  
+ La capacité à implémenter facilement un traitement personnalisé dans un appel vers un service WCF est l'une des raisons pour lesquelles WCF est un paradigme de programmation riche, en comparaison avec d'autres méthodes de communication entre les applications Web. Le traitement personnalisé peut prendre la plupart des formes, selon les besoins d'extensibilité de l'application Web. Les développeurs peuvent créer des extensions personnalisées qui inspectent et valident la configuration du service, ou modifient le comportement à l'exécution dans les applications de client et de service WCF. Comportements peuvent compléter le traitement normal des messages, modifiez le message au cours du traitement, vérifier certains critères de configuration et prenez les mesures appropriées, valider les identités de l’appelant et passer le message si elle est réussie, etc. Car il s’agit réellement personnalisé mécanisme vous implémentez toutes les extensions de traitement votre application a besoin.  
   
  Pour utiliser un comportement personnalisé WCF dans BizTalk Server vous allez le configurer à l’aide de la **comportement** onglet de l’adaptateur WCF-Custom ou WCF-CustomIsolated pour un emplacement de réception ou un port d’envoi.

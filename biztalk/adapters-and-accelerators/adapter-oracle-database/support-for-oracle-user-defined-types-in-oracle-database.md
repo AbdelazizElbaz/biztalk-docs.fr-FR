@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c8c4f29ce8b11f74db5ff7a145449f7f212f6f6b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3de61b0659e06ebbf7b95f0b4adcad210c5c986e
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="support-for-oracle-user-defined-types-in-oracle-database"></a>Prise en charge pour les Types définis par l’utilisateur Oracle dans la base de données Oracle
 Le [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] prend en charge l’exécution d’opérations sur les artefacts dans la base de données Oracle qui contiennent des Types de Oracle User-Defined (UDT). Les UDT peuvent être présents dans les artefacts suivants :  
@@ -73,7 +73,7 @@ Le [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] prend en charge
   
  **Dans BizTalk Server**  
   
--   Ajouter manuellement l’assembly UDT d’Oracle créé à l’étape 4 dans le « Temps de conception » pour le Global Assembly Cache (GAC) sur votre ordinateur. Ou bien, vous pouvez copier manuellement l’assembly UDT d’Oracle sous l’emplacement d’installation de BizTalk Server. Pour [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)], il s’agit généralement \<lecteur d’installation > : \Program Files\Microsoft [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)].  
+-   Ajouter manuellement l’assembly UDT d’Oracle créé à l’étape 4 dans le « Temps de conception » pour le Global Assembly Cache (GAC) sur votre ordinateur. Ou bien, vous pouvez copier manuellement l’assembly UDT d’Oracle sous l’emplacement d’installation de BizTalk Server. Pour BizTalk Server, en général, il s’agit \<lecteur d’installation\>: \Program Files\Microsoft BizTalk Server.  
   
 -   Lors de la configuration du [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] WCF-Custom ou WCF-OracleDB de port, dans le **liaison** onglet, spécifiez l’emplacement de l’assembly UDT d’Oracle pour le **UserAssembliesLoadPath** propriété de liaison. Pour plus d’informations sur cette propriété de liaison, consultez [configurer les propriétés de liaison pour la base de données Oracle](../../adapters-and-accelerators/adapter-oracle-database/configure-the-binding-properties-for-oracle-database.md).  
   

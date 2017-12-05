@@ -15,11 +15,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b3ad06768a5156b71d4d0da77b778f22d3d09fbb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 588e135507a2d186d9d8006836f5bdfb2940eb32
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="receive-inbound-trfc-calls-from-sap-using-biztalk-server"></a>Réception entrant tRFC appelle à partir de SAP à l’aide de BizTalk Server
 Un appel de serveur tRFC est un appel de serveur RFC transactionnels. L’orchestration permet de recevoir une commande RFC dans un contexte transactionnel est similaire à l’orchestration de recevoir toutes les autres RFC entrant envoyé à partir d’un système SAP. Toutefois, vous devez effectuer certaines tâches supplémentaires pour vous assurer que les documents RFC sont reçus dans un contexte transactionnel. Pour plus d’informations sur la réception d’une demande de changement de trafic entrant du système SAP à l’aide du [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)], consultez [recevoir les appels RFC entrants à partir de SAP à l’aide de BizTalk Server](../../adapters-and-accelerators/adapter-sap/receive-inbound-rfc-calls-from-sap-using-biztalk-server.md). Pour plus d’informations sur la façon dont [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] prend en charge de recevoir des appels de tRFC entrant à partir d’un système SAP, consultez [opérations sur tRFCs dans SAP](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md).  
@@ -37,7 +37,7 @@ Un appel de serveur tRFC est un appel de serveur RFC transactionnels. L’orches
      Pour plus d’informations sur la propriété de liaison et comment le configurer, consultez [en savoir plus sur l’adaptateur BizTalk pour mySAP Business Suite liaison propriétés](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md).  
   
     > [!IMPORTANT]
-    >  Le [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] Assistant Installation installe SQL script, SapAdapter-DbScript-Install.sql, qui doit être exécutée par l’administrateur SQL Server pour créer une base de données et les objets de base de données dans SQL Server. Le script est généralement installé sur  *\<lecteur d’installation > : programme FilesMicrosoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]* .  
+    >  Le [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] Assistant Installation installe SQL script, SapAdapter-DbScript-Install.sql, qui doit être exécutée par l’administrateur SQL Server pour créer une base de données et les objets de base de données dans SQL Server. Le script est généralement installé sur  *\<lecteur d’installation\>: programme FilesMicrosoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]* .  
     >   
     >  Le [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] utilise ces objets pour conserver le TID. Par conséquent, l’administrateur SQL Server devez vous assurer que le nom d’utilisateur assure que la partie de la chaîne de connexion dispose des privilèges suffisants pour exécuter les procédures stockées. Vous pouvez également choisir pour l’authentification Windows à condition que l’utilisateur Windows dispose des autorisations suffisantes pour exécuter des procédures stockées dans la base de données.  
   

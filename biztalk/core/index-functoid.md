@@ -16,11 +16,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8b777c7883001e0b82bf42e6795e11ead1dbeaef
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a22881e7694fee872b7820b8b99157ef2cf20170
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="index-functoid"></a>Fonctoid Index
 Le **Index** fonctoid vous permet de sélectionner des informations à partir d’un enregistrement spécifique dans une série d’enregistrements. Chaque **Index** fonctoid collecte des informations à partir d’un champ unique.  
@@ -46,7 +46,7 @@ Exemple de fonctoid Index
   
  Pour obtenir un résumé quotidien des informations pour le premier jour, la limite supérieure définie de trois **Index** fonctoids ont leurs valeurs d’index définis sur 1. Pour obtenir les informations de résumé quotidiennes pour le deuxième jour, la limite inférieure définie de trois **Index** fonctoids ont leurs valeurs d’index définis sur 2.  
   
- **Index** fonctoids utilisent la **configurer \<fonctoid > fonctoid** boîte de dialogue pour définir les paramètres d’entrée. Le premier paramètre d'entrée indique un champ au sein d'un enregistrement de boucle dans le schéma source. Le deuxième paramètre ainsi que les suivants précisent l'enregistrement particulier. Vous pouvez spécifier plusieurs valeurs d’index pour sélectionner un enregistrement au sein de structures répétées imbriquées. La valeur d’index pour la structure la plus profonde correspond au deuxième paramètre. La valeur d’index de la structure la plus externe correspond au troisième paramètre, et ainsi de suite. Par exemple, supposons que l’exemple précédent **DailySummary** d’enregistrements qui étaient à l’intérieur de **WeeklyData** enregistrements. Pour récupérer le **pression** à partir de la première **DailySummary** dans la seconde **WeeklyData**, le deuxième paramètre est 1, et le troisième paramètre serait 2.  
+ **Index** fonctoids utilisent la **configurer \<fonctoid\> fonctoid** boîte de dialogue pour définir les paramètres d’entrée. Le premier paramètre d'entrée indique un champ au sein d'un enregistrement de boucle dans le schéma source. Le deuxième paramètre ainsi que les suivants précisent l'enregistrement particulier. Vous pouvez spécifier plusieurs valeurs d’index pour sélectionner un enregistrement au sein de structures répétées imbriquées. La valeur d’index pour la structure la plus profonde correspond au deuxième paramètre. La valeur d’index de la structure la plus externe correspond au troisième paramètre, et ainsi de suite. Par exemple, supposons que l’exemple précédent **DailySummary** d’enregistrements qui étaient à l’intérieur de **WeeklyData** enregistrements. Pour récupérer le **pression** à partir de la première **DailySummary** dans la seconde **WeeklyData**, le deuxième paramètre est 1, et le troisième paramètre serait 2.  
   
  Notez que cet exemple suppose la **pression** champ ne se répète pas. Si le champ se répétait, les index seraient désactivés : le compte démarrerait avec le **pression** champ, plutôt que la **résumé quotidien**.  
   

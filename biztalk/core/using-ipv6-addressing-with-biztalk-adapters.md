@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8e77defa2351bf8e180b63b8da5c6a8c4e0e5a4e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 446125cbe164cfebfe7635975c5fd1825a026081
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-ipv6-addressing-with-biztalk-adapters"></a>Utilisation de l'adressage IPv6 avec des adaptateurs BizTalk
 Les adaptateurs[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] prennent en charge l'utilisation de l'adressage IPv6 lorsque [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] est installé sur les systèmes d'exploitation [!INCLUDE[btsWinVista](../includes/btswinvista-md.md)]. Cette rubrique décrit la nomenclature de spécification d'une adresse IPv6 pour un chemin d'accès UNC, la nomenclature de spécification d'une adresse IPv6 littérale et l'utilisation des identificateurs d'étendue IPv6 avec les adaptateurs HTTP et SOAP.  
@@ -31,10 +31,10 @@ Les adaptateurs[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkserver
  Par exemple, la nomenclature d'un URI pointant vers un partage de fichiers sur un ordinateur avec l'adresse IPv6 2001:DB8:2a:1005:230:48ff:fe73:989d serait comme suit :  
   
 ```  
-\\2001-DB8-2a-1005-230-48ff-fe73-989d.ipv6-literal.net\<sharename>  
+\\2001-DB8-2a-1005-230-48ff-fe73-989d.ipv6-literal.net\<sharename\>  
 ```  
   
- Où \< *nom_partage*> est le nom du partage de fichiers sur l’ordinateur cible.  
+ Où \< *nom_partage* \> est le nom du partage de fichiers sur l’ordinateur cible.  
   
 > [!NOTE]
 >  Assurez-vous que les comptes d'utilisateur pour les instances d'hôte dans lesquelles les gestionnaires d'envoi et de réception FILE sont exécutés disposent des autorisations appropriées sur le partage de fichiers. Pour plus d’informations sur les autorisations de dossier requises pour recevoir des fichiers avec l’adaptateur File, consultez [comment configurer un gestionnaire de réception de fichier](http://msdn.microsoft.com/library/68333bb6-d79b-4a82-9742-230f62d535c4). Pour plus d’informations sur les autorisations de dossier requises lors de l’envoi de fichiers avec l’adaptateur File, consultez [problèmes connus avec l’adaptateur File](../core/known-issues-with-the-file-adapter.md). Pour plus d’informations sur les systèmes de fichiers qui sont pris en charge pour une utilisation avec l’adaptateur File, consultez [http://support.microsoft.com/kb/815070](http://support.microsoft.com/kb/815070).  

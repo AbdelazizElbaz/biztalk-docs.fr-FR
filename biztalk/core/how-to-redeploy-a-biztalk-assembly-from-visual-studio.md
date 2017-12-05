@@ -12,16 +12,16 @@ caps.latest.revision: "41"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 361d2bccc783e7bfc7aa6cb0cd1f3eab51d8e640
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1357cb936c0b6f7f830bf1cc77f3d1670cf326aa
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-redeploy-a-biztalk-assembly-from-visual-studio"></a>Redéploiement d'un assembly BizTalk à partir de Visual Studio
 Au cours du développement d'un assembly, vous êtes amené à déployer l'assembly, à le tester, à le modifier et à le redéployer, et ce de manière répétée. Dans les versions précédentes de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], lorsque vous vouliez redéployer un assembly sans modifier son numéro de version, il vous fallait d'abord l'arrêter manuellement, le désinscrire et annuler la liaison des artefacts qu'il contenait dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] avant de le supprimer de la base de données de gestion (configuration) BizTalk. En outre, après le redéploiement de l'assembly, vous deviez lier, inscrire et démarrer ses artefacts dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
- Avec [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], cependant, lorsque vous activez l'option Redéployer de [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] effectue de manière automatique toutes les étapes nécessaires au redéploiement de l'assembly à votre place. Bien que vous puissiez redéployer un assembly au niveau du projet (par exemple, en cliquant avec le bouton droit sur le projet dans l'Explorateur de solutions, puis en cliquant sur Déployer) pour redéployer un assembly unique, il est vivement recommandé de toujours redéployer les assemblys au niveau de la solution (en cliquant avec le bouton droit sur la solution et en sélectionnant Déployer). Cela permet de redéployer tous les assemblys de la solution d'un coup et de gérer toutes les étapes nécessaires en présence de dépendances (voir plus loin).  
+ Avec BizTalk Server, cependant, lorsque vous activez l’option redéployer de [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] effectue automatiquement toutes les étapes de redéployer l’assembly pour vous. Bien que vous puissiez redéployer un assembly au niveau du projet (par exemple, en cliquant avec le bouton droit sur le projet dans l'Explorateur de solutions, puis en cliquant sur Déployer) pour redéployer un assembly unique, il est vivement recommandé de toujours redéployer les assemblys au niveau de la solution (en cliquant avec le bouton droit sur la solution et en sélectionnant Déployer). Cela permet de redéployer tous les assemblys de la solution d'un coup et de gérer toutes les étapes nécessaires en présence de dépendances (voir plus loin).  
   
 > [!IMPORTANT]
 >  Bien qu'il existe des cas où l'assembly peut être redéployé au niveau du projet, il est de mise de toujours le redéployer au niveau de la solution.  
@@ -83,4 +83,4 @@ Au cours du développement d'un assembly, vous êtes amené à déployer l'assem
     |*SolutionName*|Chemin d'accès complet et nom du fichier de la solution.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Déploiement d’assemblys BizTalk à partir de Visual Studio dans une Application BizTalk](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)
+ [Déploiement des assemblys BizTalk à partir de Visual Studio dans une application BizTalk](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)

@@ -13,11 +13,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 82e10a6800786ae502a6508287581a6a4f827b39
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 94cb4b8cfdb0315b55aa88ddd385396ff967b8f6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="overview-of-the-wcf-channel-model-with-the-oracle-database-adapter"></a>Vue d’ensemble du modèle de canal WCF avec l’adaptateur de base de données Oracle
 Pour appeler des opérations sur le [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)], votre code se comporte comme un client WCF et envoie les opérations sortantes à l’adaptateur. Dans le modèle de canal WCF, votre code appelle les opérations sur la carte en envoyant un message de demande sur un canal.  
@@ -45,11 +45,11 @@ Pour appeler des opérations sur le [!INCLUDE[adapteroracle](../../includes/adap
   
  Comme toute liaison WCF, le [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] utilise un modèle de fabrique pour fournir des canaux pour le code d’application. Vous utilisez un **Microsoft.Adapters.OracleDBBinding** pour créer des instances d’objet :  
   
--   **System.ServiceModel.ChannelFactory\<IRequestChannel >** pour fournir **IRequestChannel** canaux, vous pouvez utiliser pour appeler des opérations de requête-réponse sur la carte.  
+-   **System.ServiceModel.ChannelFactory\<IRequestChannel\>**  pour fournir **IRequestChannel** canaux, vous pouvez utiliser pour appeler des opérations de requête-réponse sur la carte.  
   
--   **System.ServiceModel.ChannelFactory\<IOutputChannel >** pour fournir **IOutputChannel** canaux, vous pouvez utiliser pour appeler des opérations unidirectionnelles sur la carte.  
+-   **System.ServiceModel.ChannelFactory\<IOutputChannel\>**  pour fournir **IOutputChannel** canaux, vous pouvez utiliser pour appeler des opérations unidirectionnelles sur la carte.  
   
--   **System.ServiceModel.IChannelListener\<IInputChannel >** pour fournir **IInputChannel** canaux, vous pouvez utiliser pour recevoir des messages entrants (par exemple, une opération POLLINGSTMT) de l’adaptateur.  
+-   **System.ServiceModel.IChannelListener\<IInputChannel\>**  pour fournir **IInputChannel** canaux, vous pouvez utiliser pour recevoir des messages entrants (par exemple, une opération POLLINGSTMT) de l’adaptateur .  
   
 ### <a name="creating-messages-for-the-oracle-database-adapter-in-the-wcf-channel-model"></a>Création de Messages pour l’adaptateur de base de données Oracle dans le modèle de canal WCF  
  Dans WCF le **System.ServiceModel.Channels.Message** classe fournit une mémoire en représentation sous forme d’un message SOAP. Vous créez un **Message** instance en appelant la méthode statique **Message.Create** (méthode).  
@@ -61,7 +61,7 @@ Pour appeler des opérations sur le [!INCLUDE[adapteroracle](../../includes/adap
 -   Le corps du message contient les données de paramètre pour l’opération. Le corps du message est composé de code XML bien formé qui correspond au schéma de message attendu par le [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] pour l’opération demandée. Le corps du message suivant spécifie une opération Select sur SCOTT. Table EMP (sélectionnez * à partir de EMP).  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>  
+    <?xml version="1.0" encoding="utf-8" ?>  
     <Select xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP">  
         <COLUMN_NAMES>*</COLUMN_NAMES>  
     </Select>  

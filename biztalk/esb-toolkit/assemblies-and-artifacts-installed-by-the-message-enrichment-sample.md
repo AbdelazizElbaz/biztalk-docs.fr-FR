@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5fa0f77fb6b0eee870adb70efdcc155a34f03599
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8b613efe730c51bdac6354f819e544a30f38d8bb
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="assemblies-and-artifacts-installed-by-the-message-enrichment-sample"></a>Assemblys et artefacts installés par l’exemple d’enrichissement de Message
 Le tableau suivant répertorie les assemblys et autres artefacts installés pour l’exemple d’enrichissement de Message.  
@@ -40,4 +40,4 @@ Le tableau suivant répertorie les assemblys et autres artefacts installés pour
 |Cache d’assembly global|Assemblys|MessageEnrichment.Transforms Version 1.0.0.0|  
 |||MessageEnrichment.Orchestrations Version 1.0.0.0|  
 |||MessageEnrichment.Schema Version 1.0.0.0|  
-|%Program Files%\\[!INCLUDE[prague](../includes/prague-md.md)]\Pipeline composants|Composants de pipeline||
+|%Program Files%\\BizTalk Server\Pipeline composants|Composants de pipeline||

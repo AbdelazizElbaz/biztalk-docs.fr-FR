@@ -17,11 +17,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c25615c2efcb37ebfc6083bc09d48c7fc1506217
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b9e3921b8bf83e3e7e775efef77a029bfda2e7e9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="schemavalidator"></a>SchemaValidator
 Vous utilisez l’utilitaire SchemaValidator pour résoudre les problèmes liés à une instance de message. Si vous recevez un message dont la validation échoue, vous pouvez exécuter l’utilitaire SchemaValidator pour déterminer la source de l’échec.  
@@ -29,7 +29,7 @@ Vous utilisez l’utilitaire SchemaValidator pour résoudre les problèmes liés
  Vous utilisez cet utilitaire si vous utilisez un assembly qui inclut un fichier de schéma, et vous n’avez pas d’un fichier .xsd de schéma. L’utilitaire SchemaValidator vous permet de valider à l’aide du fichier .dll de schéma.  
   
 ## <a name="location-in-sdk"></a>Emplacement dans le kit de développement logiciel (SDK)  
- \<*lecteur*> \Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\SDK\SchemaValidator  
+ \<*lecteur*\>\Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\SchemaValidator  
   
 ## <a name="building-and-running-schemavalidator"></a>Génération et exécution SchemaValidator  
   
@@ -37,7 +37,7 @@ Vous utilisez l’utilitaire SchemaValidator pour résoudre les problèmes liés
   
 1.  Ouvrez une invite de commandes.  
   
-2.  Déplacer vers \< *lecteur*> \Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\SDK\SchemaValidator.  
+2.  Déplacer vers \< *lecteur*\>\Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\SchemaValidator.  
   
 3.  À l’invite de commandes, tapez **sn -k SchemaValidator.snk**, puis appuyez sur ENTRÉE.  
   
@@ -45,7 +45,7 @@ Vous utilisez l’utilitaire SchemaValidator pour résoudre les problèmes liés
   
 5.  Sur le **fichier** menu, pointez sur **ouvrir**, puis cliquez sur **ouvrir une Solution**.  
   
-6.  Déplacer vers \< *lecteur*> \Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\SDK\SchemaValidator, sélectionnez **SchemaValidator.sln**, puis Cliquez sur **ouvrir**.  
+6.  Déplacer vers \< *lecteur*\>\Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\SchemaValidator, sélectionnez **SchemaValidator.sln** , puis cliquez sur **ouvrir**.  
   
 7.  Dans l’Explorateur de solutions, cliquez sur **SchemaValidator**, puis cliquez sur **propriétés**.  
   
@@ -67,12 +67,12 @@ Vous utilisez l’utilitaire SchemaValidator pour résoudre les problèmes liés
   
 12. Avec le bouton droit **SchemaValidator**, puis cliquez sur **Build**.  
   
-13. Modifier l’instance de message pour que vous souhaitez tester en supprimant le \< \!DOCTYPE... > balise en spécifiant le fichier DTD à partir de l’en-tête de l’instance XML.  
+13. Modifier l’instance de message pour que vous souhaitez tester en supprimant le \< \!DOCTYPE... \> balise en spécifiant le fichier DTD à partir de l’en-tête de l’instance XML.  
   
 14. Dans le nœud racine de l’instance de message, ajoutez un espace de noms XML du schéma que vous allez valider par rapport à.  
   
     > [!NOTE]
-    >  Pour obtenir un exemple d’un schéma prêt à être validée par l’utilitaire SchemaValidator, consultez Sample3A4.xml dans \< *lecteur*> \Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\SDK\ SchemaValidator.  
+    >  Pour obtenir un exemple d’un schéma prêt à être validée par l’utilitaire SchemaValidator, consultez Sample3A4.xml dans \< *lecteur*\>\Program Files\Microsoft BizTalk \<version\> Accelerator pour RosettaNet\SDK\SchemaValidator.  
   
 15. Dans [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], cliquez sur **SchemaValidator.cs**, puis appuyez sur CTRL et sur F5 pour exécuter l’utilitaire.  
   

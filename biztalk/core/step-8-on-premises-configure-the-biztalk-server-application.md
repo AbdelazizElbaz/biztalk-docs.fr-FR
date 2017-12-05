@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 47332edbf974b7e45d3ab65644f28d9d2bd6a623
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fa411b7ca828a45aa0d5e58212bb48195c48180f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-8-on-premises-configure-the-biztalk-server-application"></a>Étape 8 (en local) : Configurer l’Application BizTalk Server
 Lors de l’étape précédente, vous avez créé une orchestration [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Dans cette étape, vous allez générer, déployer et configurer l’application.  
@@ -31,7 +31,7 @@ Lors de l’étape précédente, vous avez créé une orchestration [!INCLUDE[bt
   
     2.  Cliquez sur le **signature** et sélectionnez le **signer l’assembly** case à cocher.  
   
-    3.  Dans la liste déroulante de la **choisir un fichier de clé de nom fort** boîte, sélectionnez  **\<nouveau... >**.  
+    3.  Dans la liste déroulante de la **choisir un fichier de clé de nom fort** boîte, sélectionnez  **\<nouveau... \>**.  
   
     4.  Dans le **créer une clé de nom fort** boîte de dialogue, entrez un nom pour le fichier de clé, par exemple `OrderProcessingDemo.snk`. Désactivez la case à cocher pour protéger le fichier de clé avec un mot de passe, puis cliquez sur **OK**.  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5abb42ff1cae700077c44c391a1112c7309048c6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ba7a1b7644cc3a2e3e00b7a931250932359ab7b7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="browse-search-and-get-sql-server-metadata"></a>Parcourir, rechercher et obtenir les métadonnées de SQL Server
 Les métadonnées qui [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] surfaces à partir de la base de données SQL Server décrit la structure du message pour la communication avec la base de données SQL Server à l’aide de l’adaptateur. Le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] prend en charge deux interfaces de récupération des métadonnées.  
@@ -45,7 +45,7 @@ Les métadonnées qui [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] su
   
 -   Les opérations sur les tables, vues, procédures, fonctions scalaires et fonctions table. Par exemple, le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] peut surface Insert, Update, Select et les opérations de suppression de la table EMPLOYEE.  
   
--   Le jeu de\<nom de colonne > opération pour les tables et vues qui permet aux clients de carte à écrire des valeurs de données de grande taille en flux continu. L’opération Set est renvoyée uniquement pour les tables et les vues qui contiennent des colonnes avec les types de données suivants : varchar (max), nvarchar (max) ou varbinary (max). Pour plus d’informations, consultez [opérations sur les tables et vues qui contiennent des types de données de grande taille à l’aide de l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/supported-operations-on-tables-and-views-with-large-data-types-with-sql-adapter.md).  
+-   Le jeu de\<nom de la colonne\> opération pour les tables et vues qui permet aux clients de carte à écrire des valeurs de données de grande taille en flux continu. L’opération Set est renvoyée uniquement pour les tables et les vues qui contiennent des colonnes avec les types de données suivants : varchar (max), nvarchar (max) ou varbinary (max). Pour plus d’informations, consultez [opérations sur les tables et vues qui contiennent des types de données de grande taille à l’aide de l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/supported-operations-on-tables-and-views-with-large-data-types-with-sql-adapter.md).  
   
 -   Les opérations ExecuteNonQuery, ExecuteReader et ExecuteScalar qui permettent aux clients d’adaptateur exécuter des instructions SQL arbitraires dans SQL Server. Pour plus d’informations sur ces opérations, consultez [prise en charge de ExecuteNonQuery, ExecuteReader, ExecuteScalar opérations et](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md).  
   

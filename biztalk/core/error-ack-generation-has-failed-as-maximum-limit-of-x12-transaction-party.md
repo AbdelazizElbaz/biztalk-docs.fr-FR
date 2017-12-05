@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c5b82a8251504e1f9ff7b62c4e1cc813d4740a83
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e845960a85ebe2ebf90b8549634a0097676c80c5
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="error-ack-generation-has-failed-as-maximum-limit-of-x12-transaction-party"></a>Génération de l’erreur-accusé de réception a échoué car la limite maximale de X12 transaction tiers
 ## <a name="details"></a>Détails  
@@ -26,7 +26,7 @@ ms.lasthandoff: 09/20/2017
 |Nom du produit|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
 |Version du produit|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
 |ID d'événement|-|  
-|Source de l'événement|[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] EDI|  
+|Source de l'événement|EDI de BizTalk Server|  
 |Composant|Moteur EDI|  
 |Nom symbolique|-|  
 |Texte du message|Un accusé de réception n'a pas pu être généré car la limite maximale du nombre de contrôle d'ensembles de transactions X12 a été atteinte pour le tiers {0}. Pour réinitialiser le compteur, accédez au tiers dans l'écran du rôle d'émetteur, champ ST 2 dans le gestionnaire d'accord partenaire.|  

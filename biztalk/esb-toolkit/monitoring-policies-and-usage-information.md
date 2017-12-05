@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4909b96e74d34d469decd11c1ffba0e49217ff7e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b8ea9c6151b617e2eef2aa5404d6415f8dd71ded
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="monitoring-policies-and-usage-information"></a>Informations d’utilisation et des stratégies de surveillance
 Le Gestionnaire des services SOA fournit un mécanisme qui vous permet de créer et modifier des stratégies de surveillance. Par exemple, la Figure 1 montre l’écran de l’application d’un modèle de stratégie et l’activation d’analyse pour une application.  
@@ -44,4 +44,4 @@ Le Gestionnaire des services SOA fournit un mécanisme qui vous permet de créer
  **Le Gestionnaire des services SOA présentant les détails d’un message individuel**  
   
 > [!NOTE]
->  Gestionnaire des services SOA et le banc d’essai de produits sont des produits SOA Software, Inc. qui s’intègrent à [!INCLUDE[prague](../includes/prague-md.md)]. Pour plus d’informations sur les logiciels de SOA et de leurs produits et pour télécharger les dernières instructions d’installation et opérationnelles, consultez le [SOA logiciel](http://go.microsoft.com/fwlink/?LinkId=188559) site Web.
+>  Gestionnaire des services SOA et le banc d’essai des produits sont de SOA Software, Inc. qui s’intègrent à BizTalk Server. Pour plus d’informations sur les logiciels de SOA et de leurs produits et pour télécharger les dernières instructions d’installation et opérationnelles, consultez le [SOA logiciel](http://go.microsoft.com/fwlink/?LinkId=188559) site Web.

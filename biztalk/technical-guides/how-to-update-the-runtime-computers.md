@@ -12,25 +12,25 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f0fc6423a8918237362636f26322b145a0cbcf26
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ca8edb4da6b59c33f87100ee3669bb2472d4350c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-update-the-runtime-computers"></a>Comment mettre à jour les ordinateurs d’exécution
 Le système de destination [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] runtime ordinateurs sont configurés avec le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Assistant de Configuration en tant que partie du groupe BizTalk de production en cours d’exécution dans l’environnement de production. Lorsque le groupe BizTalk de production est restauré dans l’environnement de récupération d’urgence, les paramètres doivent être mis à jour sur chaque [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ordinateur d’exécution afin qu’il pointe vers la récupération d’urgence [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] instances lorsqu’il tente de se connecter à la restauration groupe BizTalk de production. Une fois le groupe BizTalk est restauré dans le système de destination, utilisez la procédure suivante pour mettre à jour le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ordinateurs d’exécution.  
   
 ### <a name="to-update-the-biztalk-server-runtime-computers"></a>Pour mettre à jour les ordinateurs d’exécution BizTalk Server  
   
-1.  Copiez le fichier SampleUpdateInfo.xml modifié pour le Files\Microsoft [!INCLUDE[prague](../includes/prague-md.md)]\Schema\Restore active sur chaque serveur BizTalk de 32 bits ou en la \Program Files (x86) \Microsoft [!INCLUDE[prague](../includes/prague-md.md)]Active \Bins32\Schema\Restore chaque 64 bits Serveur BizTalk server dans le système de destination.  
+1.  Copiez le fichier SampleUpdateInfo.xml modifié pour le répertoire BizTalk Server\Schema\Restore sur chaque serveur BizTalk de 32 bits Program Files\Microsoft ou pour le répertoire \Program fichiers (x86) \Microsoft BizTalk Server\Bins32\Schema\Restore chaque 64 bits BizTalk serveur du système de destination.  
   
 2.  Sur chaque serveur BizTalk server, ouvrez une invite de commandes. Cliquez sur **Démarrer**, puis sur **Exécuter**, tapez **cmd**, puis cliquez sur **OK**.  
   
     > [!NOTE]  
     >  Sur les ordinateurs 64 bits, vous devez ouvrir une invite de commandes 64 bits.  
   
-3.  À l’invite de commandes, accédez au \Program Files\Microsoft [!INCLUDE[prague](../includes/prague-md.md)]\Schema\Restore (sur les ordinateurs 32 bits) ou \Program Files (x86) \Microsoft [!INCLUDE[prague](../includes/prague-md.md)]\Bins32\Schema\Restore (sur les ordinateurs 64 bits) et tapez la commande suivante :  
+3.  À l’invite de commandes, accédez à \Program Files\Microsoft BizTalk Server\Schema\Restore (sur les ordinateurs 32 bits) ou à \Program fichiers (x86) \Microsoft BizTalk Server\Bins32\Schema\Restore (sur les ordinateurs 64 bits) et tapez la commande suivante :  
   
     ```  
     cscript UpdateRegistry.vbs SampleUpdateInfo.xml  
@@ -56,4 +56,4 @@ Le système de destination [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsb
     -   Instances d’hôte BizTalk  
   
 ## <a name="see-also"></a>Voir aussi  
- [Récupération d’ordinateurs de l’exécution](../technical-guides/recovering-the-runtime-computers.md)
+ [Récupération des ordinateurs d’exécution](../technical-guides/recovering-the-runtime-computers.md)

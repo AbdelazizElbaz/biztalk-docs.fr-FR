@@ -12,14 +12,14 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4ea38086ea98923b05b23ed8c594175e1ce09e4d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fc79413b17343ff7dbf27c90af803e7b22fb0678
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-import-an-application-from-an-msi-file"></a>Comment importer une Application à partir d’un fichier .msi
-Vous pouvez utiliser l’Assistant MSI d’importation dans le [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] Console d’Administration ou de BTSTask pour importer une application BizTalk à partir d’un fichier .msi dans un groupe BizTalk dans l’environnement cible et installer l’application sur les instances d’hôte individuel dans le groupe. Le processus d’importation complète effectue les opérations suivantes :  
+Vous pouvez utiliser l’Assistant MSI d’importation dans la Console Administration de BizTalk Server ou de BTSTask pour importer une application BizTalk à partir d’un fichier .msi dans un groupe BizTalk dans l’environnement cible et installer l’application sur les instances d’hôte individuel dans le groupe. Le processus d’importation complète effectue les opérations suivantes :  
   
 -   Un déploiement au niveau du groupe de l’application  
   

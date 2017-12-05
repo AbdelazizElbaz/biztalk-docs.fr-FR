@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d97c2f58639814bda45a23c115fea0c3708c2579
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1ea9d5e9cab7cedf0a4d83ac19b2e241f6776209
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3b-add-a-fileact-receive-location-for-the-fileact-real-time-scenario"></a>Étape 3 b : ajouter un FILEACT emplacement de réception pour le scénario en temps réel FileAct
 Avant de commencer cette étape, vous devez effectuer [étape 3 a : ajouter un emplacement de réception de fichier pour le scénario en temps réel de FileAct](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-fileact-real-time-scenario.md).  
@@ -41,13 +41,13 @@ Avant de commencer cette étape, vous devez effectuer [étape 3 a : ajouter un 
     |------------------|--------------------|  
     |**Mot de passe**|Tapez le mot de passe que vous utilisez pour vous connecter à des trous. Pour plus d’informations, consultez l’aide d’anti-COULURE.|  
     |**Nom d'utilisateur**|Tapez le nom d’utilisateur que vous utilisez pour vous connecter à des trous.|  
-    |**Nom de l’application**|Le serveur de type \<Interface nom_application > pour les trous zone jeu de routage.|  
+    |**Nom de l’application**|Le serveur de type \<nom de l’Interface\> pour les trous zone jeu de routage.|  
     |**Mode de chiffrement**|Dans la liste déroulante, sélectionnez **avancé**.|  
     |**Mode FACrypto**|Dans la liste déroulante, sélectionnez **avancé**.|  
     |**LogMessages**|Dans la liste déroulante, sélectionnez **TRUE**. Ainsi, les événements de message capturées et de suivi dans le portail BAM.|  
     |**MemberRef**|Dans la liste déroulante, sélectionnez **ResponsePayload**.|  
     |**Indicateur de non répudiation**|Dans la liste déroulante, sélectionnez **FALSE**.|  
-    |**Répondeur**|Tapez la commande appropriée \<répondeur > chaîne, en fonction de votre configuration avec SWIFT.|  
+    |**Répondeur**|Tapez la commande appropriée \<répondeur\> chaîne, en fonction de votre configuration avec SWIFT.|  
     |**ResponseCrypto**|Dans la liste déroulante, sélectionnez **FALSE**.|  
     |**Indicateur d’accusé de réception**|Dans la liste déroulante, sélectionnez **ResponsePayload**.|  
     |**FileCompression**|Dans la liste déroulante, sélectionnez **aucun**.|  
@@ -81,4 +81,4 @@ Avant de commencer cette étape, vous devez effectuer [étape 3 a : ajouter un 
  [Étape 3 a : ajouter un fichier emplacement de réception pour le scénario en temps réel FileAct](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-fileact-real-time-scenario.md)   
  [Étape 3c : ajouter un Port d’envoi FILE pour capturer les messages Sw:HandleRequest pour le scénario en temps réel FileAct](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-message-for-fileact.md)   
  [Étape 3D : ajouter un Port d’envoi FILEACT pour le scénario en temps réel FileAct](../../adapters-and-accelerators/fileact-interact/step-3d-add-a-fileact-send-port-for-the-fileact-real-time-scenario.md)   
- [Étape 3E : ajouter un Port d’envoi FILE pour capturer les messages Sw:ExchangeFileResponse pour le scénario en temps réel FileAct](../../adapters-and-accelerators/fileact-interact/step-3e-add-file-send-port-to-get-sw-exchangefileresponse-message-for-fileact.md)
+ [Étape 3E : Ajouter un port d’envoi FILE pour capturer le message Sw:ExchangeFileResponse pour le scénario en temps réel FileAct](../../adapters-and-accelerators/fileact-interact/step-3e-add-file-send-port-to-get-sw-exchangefileresponse-message-for-fileact.md)

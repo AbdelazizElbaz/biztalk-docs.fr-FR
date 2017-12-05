@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 27b3606d53f692ff52779eeac3505fd8062bed28
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: edb3102fabc84818cb42fcdcba6a034d085bdcc4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="install-the-jms-mqrfh2-sample-using-the-install-scripts"></a>Installer l’exemple de MQRFH2 JMS à l’aide de Scripts d’installation
 Cette section décrit comment vous pouvez installer l’exemple JMS MQRFH2 à l’aide de l’installation de scripts fournis avec le [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)].  
@@ -39,7 +39,7 @@ Cette section décrit comment vous pouvez installer l’exemple JMS MQRFH2 à l�
   
 4.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis appuyez sur ENTRÉE.  
   
-5.  Exécutez la commande suivante, en remplaçant le  *\<chemin d’accès >* paramètre avec le chemin d’accès complet au fichier .cmd à installer (le chemin d’accès par défaut dans cette version est \Source\Samples\JMS\Install\Scripts\\) :  
+5.  Exécutez la commande suivante, en remplaçant le  *\<chemin d’accès\>*  paramètre avec le chemin d’accès complet au fichier .cmd à installer (le chemin d’accès par défaut dans cette version est \Source\Samples\JMS\Install\Scripts\\):  
   
     ```  
     <path>\Setup_bin.cmd  

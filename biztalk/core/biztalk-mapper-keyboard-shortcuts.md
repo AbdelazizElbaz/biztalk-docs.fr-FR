@@ -15,11 +15,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 060a20e9d074017a79f32f2c2cf526394df9c51d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5edc8ed8991920c0da239979386fb264bdbb8610
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="biztalk-mapper-keyboard-shortcuts"></a>Raccourcis clavier du Mappeur BizTalk
 À l'instar de toute application Microsoft Windows standard, vous pouvez utiliser des raccourcis clavier dans le Mappeur BizTalk pour accéder aux options également disponibles par le biais des menus. Le tableau suivant décrit les raccourcis clavier disponibles.  
@@ -48,7 +48,7 @@ ms.lasthandoff: 09/20/2017
 |BizTalk &#124; Actualiser la recherche<br /><br /> Actualise les résultats de la recherche dans le schéma source, le schéma de destination ou la page de grille.|CTRL+M, CTRL+B|  
 |BizTalk &#124; Afficher les nœuds liés (schéma source)<br /><br /> Affiche tous les nœuds liés du schéma source.|Ctrl+M, Ctrl+H|  
 |BizTalk &#124; Afficher les nœuds liés (schéma de destination)<br /><br /> Affiche tous les nœuds liés du schéma de destination.|CTRL+M, CTRL+D|  
-|BizTalk &#124; Configurer les entrées de fonctoid<br /><br /> Ouvre le **configurer \<fonctoid > fonctoid** boîte de dialogue dans laquelle vous pouvez configurer les paramètres d’entrée du fonctoid sélectionné.|CTRL+M, CTRL+I<br /><br /> Sélectionner le fonctoid + ENTRÉE|  
+|BizTalk &#124; Configurer les entrées de fonctoid<br /><br /> Ouvre le **configurer \<fonctoid\> fonctoid** boîte de dialogue dans laquelle vous pouvez configurer les paramètres d’entrée du fonctoid sélectionné.|CTRL+M, CTRL+I<br /><br /> Sélectionner le fonctoid + ENTRÉE|  
 |BizTalk &#124; Recherche<br /><br /> Permet de rechercher des éléments dans le schéma source, le schéma de destination et la surface de la grille.|CTRL+M, CTRL+F|  
 |BizTalk &#124; Options de recherche<br /><br /> Permet de rechercher des éléments spécifiques.|Ctrl+M, Ctrl+O|  
 |BizTalk &#124; Rechercher précédent<br /><br /> Recherche la chaîne de recherche dans les instances précédentes de la recherche.|CTRL+M, CTRL+J<br /><br /> Flèche haut|  
@@ -63,4 +63,4 @@ ms.lasthandoff: 09/20/2017
 |BizTalk &#124; Correspondances à titre indicatif<br /><br /> Permet de parcourir les correspondances à titre indicatif dans l'ordre de préférence.|HAUT, BAS|  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide des commandes du Mappeur BizTalk](../core/using-biztalk-mapper-commands.md)
+ [Utilisation des commandes du Mappeur BizTalk](../core/using-biztalk-mapper-commands.md)

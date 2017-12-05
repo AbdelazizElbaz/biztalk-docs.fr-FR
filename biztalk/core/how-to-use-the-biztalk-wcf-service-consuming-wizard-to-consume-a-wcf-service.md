@@ -17,11 +17,11 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b218fa44b93211fdb51080d68b429744b5aabf72
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 12fb3eca6db9ceafeeab9b0b276bfd6f3cb23b16
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-use-the-biztalk-wcf-service-consuming-wizard-to-consume-a-wcf-service"></a>Utilisation de l'Assistant Consommation de service WCF BizTalk pour utiliser un service WCF
 L'infrastructure d'adaptateurs BizTalk offre un moyen d'ajouter des schémas d'adaptateur et des types BizTalk aux projets BizTalk. L'Assistant Consommation de service WCF BizTalk vous permet d'ajouter des adaptateurs d'envoi WCF à un projet BizTalk. Pour les adaptateurs d'envoi WCF, vous devez sélectionner un point de terminaison MEX (Metadata Exchange) existant pour les ports d'envoi. Vous devez ensuite entrer les informations utilisées pour générer les schémas et les types. Une fois que l'Assistant est fermé, les schémas et types nécessaires à l'utilisation de services WCF sont ajoutés au projet BizTalk.  
@@ -30,7 +30,7 @@ L'infrastructure d'adaptateurs BizTalk offre un moyen d'ajouter des schémas d'a
   
 1.  Dans votre Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] projet BizTalk, dans l’Explorateur de solutions, cliquez sur votre projet, cliquez sur **ajouter**, puis cliquez sur **ajouter les éléments générés**.  
   
-2.  Dans le **ajouter les éléments générés - \<**  *nom du projet*  **>**  boîte de dialogue le **modèles** section, Sélectionnez **utiliser le Service WCF**, puis cliquez sur **ajouter**.  
+2.  Dans le **ajouter les éléments générés - \<**  *nom du projet*  **\>**  boîte de dialogue le **modèles** section, Sélectionnez **utiliser le Service WCF**, puis cliquez sur **ajouter**.  
   
 3.  Sur le **Bienvenue dans l’Assistant de consommation de Service WCF BizTalk** , cliquez sur **suivant**.  
   

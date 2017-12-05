@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4e648a40b11d94ce97b5c327f392585e313de06f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a1eaef5e736ad01a9b49a3b46188b85b85a97e06
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="error-ack-generation-has-failed-as-maximum-limit-of-x12-transaction-global"></a>Génération de l’erreur-accusé de réception a échoué car la limite maximale de X12 transactions globales
 ## <a name="details"></a>Détails  
@@ -26,7 +26,7 @@ ms.lasthandoff: 09/20/2017
 |Nom du produit|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
 |Version du produit|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
 |ID d'événement|-|  
-|Source de l'événement|[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] EDI|  
+|Source de l'événement|EDI de BizTalk Server|  
 |Composant|Moteur EDI|  
 |Nom symbolique|-|  
 |Texte du message|Un accusé de réception n'a pas pu être généré car la limite maximale du numéro de contrôle acceptable du document informatisé X12 a été atteinte pour les paramètres Invité. Réinitialisez le compteur en naviguant jusqu'au champ ST 2 de l'écran du rôle de l'expéditeur de la configuration globale, dans le gestionnaire d'accords partenaires|  
@@ -37,4 +37,4 @@ ms.lasthandoff: 09/20/2017
  La valeur maximale du numéro de contrôle du document informatisé dépend du nombre de chiffres utilisés pour le numéro de contrôle. La longueur maximale des trois champs réunis est de 9. La longueur maximale des champs du préfixe et du suffixe est de 8.  
   
 ## <a name="user-action"></a>Action de l'utilisateur  
- Pour résoudre cette erreur, dans la page Définition des segments GS et ST, rétablissez le champ du numéro de contrôle (ST2.2) du numéro de contrôle du document informatisé (ST2) sur une valeur inférieure à la limite maximale. Définissez cette propriété dans la boîte de dialogue Propriétés globales EDI de la console Administration de [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)].
+ Pour résoudre cette erreur, dans la page Définition des segments GS et ST, rétablissez le champ du numéro de contrôle (ST2.2) du numéro de contrôle du document informatisé (ST2) sur une valeur inférieure à la limite maximale. Définissez cette propriété dans la boîte de dialogue Propriétés globales EDI dans la Console Administration de BizTalk Server.

@@ -16,11 +16,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f308c950d56569c06403df1394580302089a453e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 33d27914dd5d7ae59b0823c2e6009ab307c41b9b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-create-a-send-port-group"></a>Création d'un groupe de ports d'envoi
 Cette rubrique explique comment utiliser la console Administration de BizTalk Server pour créer un groupe de ports d'envoi dans une application BizTalk et pour ajouter des ports d'envoi à cette application. Vous ne pouvez ajouter que des ports d'envoi statiques unidirectionnels à un groupe de ports d'envoi. Un groupe de ports d'envoi doit contenir au moins un port d'envoi permettant d'acheminer les messages.  
@@ -40,7 +40,7 @@ Cette rubrique explique comment utiliser la console Administration de BizTalk Se
   
 4.  Dans le **nom** , tapez un nom pour le groupe de ports d’envoi.  
   
-5.  Dans **ports d’envoi**, cliquez sur la liste déroulante sous **nom**, puis cliquez sur le port d’envoi à ajouter au groupe de ports d’envoi. Répétez cette opération pour chaque port d'envoi que vous souhaitez ajouter au groupe. Pour créer un port d’envoi et l’ajouter, cliquez sur  **\<nouveau port d’envoi >** , puis suivez les instructions de [la création d’un Port d’envoi](../core/how-to-create-a-send-port2.md).  
+5.  Dans **ports d’envoi**, cliquez sur la liste déroulante sous **nom**, puis cliquez sur le port d’envoi à ajouter au groupe de ports d’envoi. Répétez cette opération pour chaque port d'envoi que vous souhaitez ajouter au groupe. Pour créer un port d’envoi et l’ajouter, cliquez sur  **\<nouveau port d’envoi en cours... \>**  , puis suivez les instructions de [la création d’un Port d’envoi](../core/how-to-create-a-send-port2.md).  
   
 6.  Une fois terminé d’ajouter des ports d’envoi pour le groupe de ports d’envoi, cliquez sur **OK**.  
   

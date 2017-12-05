@@ -15,14 +15,14 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8a813634f2fe03d427ef5d0b14688ecca977f571
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b7fc94930ba5ff0851114e36d728ee7f3ffb73ab
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="testing-your-installation"></a>Test de votre Installation
-Vous pouvez configurer votre [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] installation en exécutant manuellement le didacticiel de bout en bout ou en exécutant le programme de didacticiel de bout en bout de test. Pour tester le programme, cliquez sur le **lancer le didacticiel** bouton pendant l’installation ou exécutez EndToEndTutorial.exe dans C:\Program Files\Microsoft BizTalk \<version > Accelerator pour le didacticiel de bout en HL7\SDK\End dossier (après l’exécution de configuration et installation). Une de ces actions automatisées effectue les mêmes étapes que vous devez effectuer manuellement en exécutant le didacticiel. Le programme de didacticiel de bout en bout effectue les opérations suivantes :  
+Vous pouvez configurer votre [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] installation en exécutant manuellement le didacticiel de bout en bout ou en exécutant le programme de didacticiel de bout en bout de test. Pour tester le programme, cliquez sur le **lancer le didacticiel** bouton pendant l’installation ou exécutez EndToEndTutorial.exe dans C:\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\ Dossier didacticiel de bout en bout (après l’exécution de configuration et installation). Une de ces actions automatisées effectue les mêmes étapes que vous devez effectuer manuellement en exécutant le didacticiel. Le programme de didacticiel de bout en bout effectue les opérations suivantes :  
   
 -   Déploie des schémas MSH et l’accusé de réception  
   
@@ -58,16 +58,16 @@ Vous pouvez configurer votre [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includ
   
 ### <a name="to-test-your-installation"></a>Pour tester votre installation  
   
-1.  À l’aide de [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorateur de solutions, cliquez sur Parcourir pour le \< *lecteur*> : \Program Files\Microsoft BizTalk \<version > Accelerator pour le dossier de didacticiel HL7\SDK\End en bout.  
+1.  À l’aide de [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorateur de solutions, cliquez sur Parcourir pour le \< *lecteur*\>: \Program Files\Microsoft BizTalk \<version\> Accelerator pour le dossier de didacticiel HL7\SDK\End en bout.  
   
 2.  Cliquez sur le **TutorialSampleInstance.txt** de fichiers, puis cliquez sur **copie**.  
   
-3.  À l’aide de [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorateur de solutions, cliquez sur Parcourir pour le \< *lecteur*> : \Program Files\Microsoft BizTalk \<version > Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_BTAHL7PickUp dossier.  
+3.  À l’aide de [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorateur de solutions, cliquez sur Parcourir pour le \< *lecteur*\>: \Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_ BTAHL7PickUp dossier.  
   
 4.  Cliquez avec le bouton droit, puis cliquez sur **coller**.  
   
-5.  À l’aide de [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorateur de solutions, cliquez sur Parcourir pour le \< *lecteur*> : \Program Files\Microsoft BizTalk \<version > Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_BTAHL7Drop dossier.  
+5.  À l’aide de [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorateur de solutions, cliquez sur Parcourir pour le \< *lecteur*\>: \Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_ BTAHL7Drop dossier.  
   
-     Vous pouvez vérifier si votre installation a réussi, si l’instance traité s’affiche dans le **Tutorial_BTAHL7Drop** dossier en tant que \< *Guid*> .txt.  
+     Vous pouvez vérifier si votre installation a réussi, si l’instance traité s’affiche dans le **Tutorial_BTAHL7Drop** dossier en tant que \< *Guid*\>.txt.  
   
  Passez à l’étape suivante, [préparation à l’utilisation du didacticiel](../../adapters-and-accelerators/accelerator-hl7/preparing-to-use-the-tutorial2.md).

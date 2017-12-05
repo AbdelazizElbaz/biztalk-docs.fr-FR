@@ -19,11 +19,11 @@ caps.latest.revision: "26"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b2c7895d8f5fc3789a02c72743705a4a03a9f96
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 29124c17603abbc9b38a078238d13cdfb1c992e9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="ftp-adapter-configuration-properties"></a>Propriétés de configuration de l'adaptateur FTP
 Le tableau suivant répertorie les propriétés de configuration que vous pouvez définir pour l'emplacement de réception de l'adaptateur FTP :  
@@ -109,4 +109,4 @@ Le tableau suivant répertorie les propriétés de configuration que vous pouvez
 ```  
   
 > [!NOTE]
->  Lorsque vous spécifiez les données de configuration TransportTypeData pour un adaptateur créé à l’aide de l’infrastructure d’adaptateurs, toutes les paires nom/valeur utilisées doivent être stockés dans le \<AdapterConfig > élément. Étant donné que le \<AdapterConfig > élément spécifie le VT_BSTR (vt = « 8 ») type de données, puis le \< > caractères dans les données doivent être échappés.
+>  Lorsque vous spécifiez les données de configuration TransportTypeData pour un adaptateur créé à l’aide de l’infrastructure d’adaptateurs, toutes les paires nom/valeur utilisées doivent être stockés dans le \<AdapterConfig\> élément. Étant donné que le \<AdapterConfig\> élément spécifie le VT_BSTR (vt = « 8 ») type de données, puis le \< \> caractères dans les données doivent être échappés.

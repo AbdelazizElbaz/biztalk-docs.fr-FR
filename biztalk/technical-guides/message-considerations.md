@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5499c9535ff822dfec8097185ef17d8d7999e1f5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a277149a47fa60dda4df9291ec437ac67c518fdd
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="message-considerations"></a>Considérations de message
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]fournit un ensemble complet de fonctionnalités pour l’envoi, réception, de transformation et le traitement des messages. Certaines de ces fonctionnalités sont les suivantes :  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]  
     >  Consultez [optimisation des performances d’Orchestration](../technical-guides/optimizing-orchestration-performance.md) pour obtenir des conseils sur les meilleures pratiques à suivre lors de l’utilisation d’orchestrations dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Consultez la rubrique [création d’Orchestrations à l’aide de concepteur d’Orchestration](http://go.microsoft.com/fwlink/?LinkId=158997) (http://go.microsoft.com/fwlink/?LinkId=158997) dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] documentation pour obtenir des informations détaillées sur l’utilisation du Concepteur d’Orchestration.  
   
- Le reste de cette rubrique décrit les considérations sur les performances liées au profil de taille, la complexité et la distribution des messages sont traités dans un [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] environnement.  
+ Le reste de cette rubrique décrit les considérations sur les performances liées au profil de taille, la complexité et la distribution des messages sont traités dans un environnement BizTalk Server.  
   
 ## <a name="message-size-considerations"></a>Considérations relatives à la taille du message  
  Pendant que BizTalk Server n’impose aucune restriction de taille des messages, des dépendances et des limites pratiques peuvent vous amener à réduire la taille de vos messages, car les messages volumineux nécessitent plus de ressources de traitement. En tant que message augmentations de taille, le débit global (les messages traités par seconde) diminue. Lorsque vous concevez votre scénario et la planification de capacité, prendre en compte la taille moyenne des messages, le type de message et le nombre de messages BizTalk Server traite. N’utilisez pas l’attribut inutilement long et les noms de balise ; Si possible, conservez la longueur à 50 caractères. Par exemple, n’utilisez pas un nom de balise de 200 caractères pour une taille de message de 1 seul octet.  
@@ -77,4 +77,4 @@ ms.lasthandoff: 09/20/2017
  Les deux facteurs qui ont le meilleur impact sur les performances de l’analyse de fichier plat sont la complexité de taille et le schéma de fichier. Un schéma ambiguë est un schéma qui contient de nombreux champs facultatifs. Lorsque les fichiers volumineux sont utilisées, un schéma avec de nombreux champs facultatif peut dégrader les performances, car les fichiers plus volumineux peuvent correspondre à différentes branches du schéma. Complexité du schéma a moins d’impact sur les fichiers plus petits que sur les fichiers volumineux.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Optimisation des Applications BizTalk Server](../technical-guides/optimizing-biztalk-server-applications.md)
+ [Optimisation des applications BizTalk Server](../technical-guides/optimizing-biztalk-server-applications.md)

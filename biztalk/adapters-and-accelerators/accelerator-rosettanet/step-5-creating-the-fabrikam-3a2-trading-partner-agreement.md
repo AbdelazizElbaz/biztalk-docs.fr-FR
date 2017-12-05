@@ -13,18 +13,18 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5e945223013e80c4f0550a388cbc0811861846ae
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0c0c2de5e4d44ce591eaca1b1e46130132436bf6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-5-creating-the-fabrikam-3a2-trading-partner-agreement"></a>Étape 5 : Création de l’accord de partenariat commercial Fabrikam 3A2
 Dans cette étape, vous créez un accord de partenariat commercial entre Contoso et Fabrikam à l’aide de la [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Console de gestion. Vous créez un accord de partenariat commercial pour le 3A2 processus PIP (Partner Interface).  
   
 ### <a name="to-start-the-btarn-management-console"></a>Pour démarrer la console de gestion BTARN  
   
--   Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Microsoft BizTalk \<version > Accelerator for RosettaNet**, puis cliquez sur  **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]**  Console de gestion.  
+-   Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Microsoft BizTalk \<version\> Accelerator for RosettaNet**, puis cliquez sur  **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]**  Console de gestion.  
   
 ### <a name="to-create-the-3a2-trading-partner-agreement"></a>Pour créer l’accord de partenariat commercial 3A2  
   
@@ -55,4 +55,4 @@ Dans cette étape, vous créez un accord de partenariat commercial entre Contoso
 5.  Cliquez sur le **Fabrikam_To_Contoso_3A2** accord, puis cliquez sur **activer**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Étape 6 : Création de l’accord de partenariat commercial Fabrikam 3 a 4](../../adapters-and-accelerators/accelerator-rosettanet/step-6-creating-the-fabrikam-3a4-trading-partner-agreement.md)
+ [Étape 6 : Création de l’accord de partenariat commercial Fabrikam 3A4](../../adapters-and-accelerators/accelerator-rosettanet/step-6-creating-the-fabrikam-3a4-trading-partner-agreement.md)

@@ -16,18 +16,18 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6b94acad2b71694223b0566f86edfcfa86610099
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c4e49efd8a2fd195c0b5fa912ced3773fa85153e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-4-create-a-trade-agreement"></a>Étape 4 : Créer un accord commercial
 Dans cette étape, vous créez un accord commercial entre le domicile et organisation du partenaire à l’aide du [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Console de gestion.  
   
 ### <a name="to-create-a-trade-agreement"></a>Pour créer un accord commercial  
   
-1.  Dans le  **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]**  Management Console, développez **BizTalk \<version > Accelerator for RosettaNet**, avec le bouton droit **accords**, cliquez sur  **Nouvelle**, puis cliquez sur **accord**.  
+1.  Dans le  **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]**  Management Console, développez **BizTalk \<version\> Accelerator for RosettaNet**, avec le bouton droit **accords**, cliquez sur **nouveau**, puis cliquez sur **accord**.  
   
 2.  Dans le **nouvelles propriétés de l’accord** boîte de dialogue le **général** onglet, procédez comme suit :  
   
@@ -56,4 +56,4 @@ Dans cette étape, vous créez un accord commercial entre le domicile et organis
 -   Dans le [!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)] Management Console, développez [!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)], cliquez sur **accords**, avec le bouton droit **accord commercial** dans le volet de résultats, puis cliquez sur **activer**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Étape 5 : Créer un accord de mise en miroir](../../adapters-and-accelerators/accelerator-rosettanet/step-5-create-a-mirror-agreement.md)
+ [Étape 5 : Créer un accord miroir](../../adapters-and-accelerators/accelerator-rosettanet/step-5-create-a-mirror-agreement.md)

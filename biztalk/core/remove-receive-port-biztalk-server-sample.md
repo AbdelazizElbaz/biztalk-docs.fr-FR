@@ -17,11 +17,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b97c3b6fe5e743e6bf19c979b994cc7eb5a942de
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2d15442da8afd4829245b742bdd45af8f7d1f832
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="remove-receive-port-biztalk-server-sample"></a>Suppression de réception Port (exemple BizTalk Server)
 L'exemple de suppression d'un port de réception (Remove Receive Port) illustre la suppression d'un ou plusieurs ports de réception.  
@@ -44,7 +44,7 @@ L'exemple de suppression d'un port de réception (Remove Receive Port) illustre 
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
  Les exemples se trouvent dans l'emplacement SDK suivant :  
   
- \<*Exemples de chemin d’accès*> \Admin\WMI\Remove LPT1\ de réception  
+ \<*Exemples de chemin d’accès*\>\Admin\WMI\Remove LPT1\ de réception  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -61,12 +61,11 @@ L'exemple de suppression d'un port de réception (Remove Receive Port) illustre 
   
 1.  Dans une fenêtre de commande, accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \Admin\WMI\Remove Port\VBScript\ de réception  
+     \<*Exemples de chemin d’accès*\>\Admin\WMI\Remove Port\VBScript\ de réception  
   
 2.  Exécutez le fichier RemoveReceivePort.vbs à l'aide du programme cscript en transmettant l'argument de ligne de commande suivant :  
   
-     **\<**   
-     ***ReceivePortName* >**. Nom du ou des ports de réception à supprimer. Si le nom du port de réception contient des espaces, placez-le entre guillemets.  
+     **\<** ***ReceivePortName* \>** . Nom du ou des ports de réception à supprimer. Si le nom du port de réception contient des espaces, placez-le entre guillemets.  
   
      Exemple :  
   

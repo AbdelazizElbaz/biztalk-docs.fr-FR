@@ -15,11 +15,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 76e1309012abbaac27e2e0ae6ec9b35f37d88884
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f77d47b2b3ab687f2fd72242f4ddbbc68ae8530c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="configuring-the-swift-assembler"></a>Configuration de l’assembleur SWIFT
 L’assembleur SWIFT exécute les tâches suivantes lorsque vous l’appelez dans un [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] pipeline d’envoi :  
@@ -45,8 +45,8 @@ L’assembleur SWIFT exécute les tâches suivantes lorsque vous l’appelez dan
 > [!NOTE]
 >  Après avoir configuré, compiler et déployer un pipeline personnalisé, modifications de configuration nécessitent la recompilation et redéploiement du pipeline personnalisé.  
   
- Pour plus d’informations sur la création, la création et le déploiement des pipelines personnalisés, consultez [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] aide.  
+ Pour plus d’informations sur la création, créer et déployer des pipelines personnalisés, consultez l’aide de BizTalk Server.  
   
  Contenu de cette section :  
   
--   [Propriétés de Configuration assembleur SWIFT](../../adapters-and-accelerators/accelerator-swift/swift-assembler-configuration-properties.md)
+-   [Propriétés de la configuration de l’assembleur SWIFT](../../adapters-and-accelerators/accelerator-swift/swift-assembler-configuration-properties.md)

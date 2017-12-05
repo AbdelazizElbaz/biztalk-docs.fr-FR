@@ -12,11 +12,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 952db36f794d36bd98af6e5bc31eee78adcc8a35
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 450b2df7ec043dfd4bc775cfec7acdec0fb3ca1f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshooting-enterprise-single-sign-on"></a>Résolution des problèmes Enterprise Single Sign-On
 Cette rubrique fournit des informations sur les problèmes connus susceptibles de se produire lors de l'utilisation de l'authentification unique (SSO) de l'entreprise.  
@@ -32,8 +32,8 @@ Cette rubrique fournit des informations sur les problèmes connus susceptibles d
 |Qu'est-ce que le compte de l'administrateur SSO ?|Utilisez la ligne de commande **ssomanage –displaydb**. Pour plus d’informations sur cette commande, consultez [comment afficher les informations de base de données SSO](../core/how-to-display-the-sso-database-information.md).|  
 |Est-ce que tout a bien été activé ?|Utilisez la ligne de commande **ssomanage –displaydb**. Pour plus d’informations sur cette commande, consultez [comment afficher les informations de base de données SSO](../core/how-to-display-the-sso-database-information.md).|  
 |Les applications associées existent-elles ?|Utilisez la ligne de commande **ssomanage –listapps all**. Pour plus d’informations sur cette commande, consultez [comment répertorier les Applications associées](../core/how-to-list-affiliate-applications.md).|  
-|L'application associée semble-t-elle correcte ?<br /><br /> Quels comptes utilisent cette application ?|Utilisez la ligne de commande **ssomanage-displayapp***\<nom de l’application >*. Pour plus d’informations sur cette commande, consultez [comment répertorier les propriétés d’une Application associée](../core/how-to-list-the-properties-of-an-affiliate-application.md).|  
-|Existe-t-il des mappages pour cette application associée ?|Utilisez la ligne de commande **ssomanage – listmappings***\<nom de l’application >*. Pour plus d’informations sur cette commande, consultez [comment répertorier des mappages utilisateur](../core/how-to-list-user-mappings.md).|  
+|L'application associée semble-t-elle correcte ?<br /><br /> Quels comptes utilisent cette application ?|Utilisez la ligne de commande **ssomanage-displayapp***\<nom de l’application\>*. Pour plus d’informations sur cette commande, consultez [comment répertorier les propriétés d’une Application associée](../core/how-to-list-the-properties-of-an-affiliate-application.md).|  
+|Existe-t-il des mappages pour cette application associée ?|Utilisez la ligne de commande **ssomanage – listmappings***\<nom de l’application\>*. Pour plus d’informations sur cette commande, consultez [comment répertorier des mappages utilisateur](../core/how-to-list-user-mappings.md).|  
 |Quels comptes sont membres des groupes SSO ?|Vérifiez l'appartenance aux groupes SSO de tous les comptes.|  
 |L'application COM+ du serveur SSO s'exécute-t-elle correctement ?|Vérifiez le serveur SSO de l'application COM+. **Remarque :** vous pouvez également vérifier le journal des événements pour plus d’informations, telles que les événements et les messages d’avertissement.|  
   
@@ -75,7 +75,7 @@ Cette rubrique fournit des informations sur les problèmes connus susceptibles d
 #### <a name="rpc-error-occurs-when-connecting-to-a-client-computer"></a>Une erreur RPC se produit lors de la connexion à un ordinateur client  
   
 ##### <a name="problem"></a>Problème  
- Lorsqu’un utilisateur exécute une commande comme **ssomanage - displayapp***\<applicationname >*, où l’ordinateur tente de se connecter à un serveur SSO distant pour récupérer les informations, ils reçoivent l’erreur suivante : erreur : 0x800706BA : le serveur RPC n’est pas disponible.  
+ Lorsqu’un utilisateur exécute une commande comme **ssomanage - displayapp***\<applicationname\>*, où l’ordinateur tente de se connecter à un serveur SSO distant pour récupérer les informations, l’erreur suivante : erreur : 0x800706BA : le serveur RPC n’est pas disponible.  
   
 ##### <a name="cause"></a>Cause  
  Cette erreur se produit quand l'utilisateur ne spécifie pas les informations de serveur correctes ou quand le service SSO n'est pas disponible sur le serveur distant.  
@@ -128,4 +128,4 @@ Cette rubrique fournit des informations sur les problèmes connus susceptibles d
 5.  Restaurez le secret principal. Pour plus d’informations, consultez [comment restaurer le Secret principal](../core/how-to-restore-the-master-secret.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Mise en œuvre Enterprise Single Sign-On](../core/implementing-enterprise-single-sign-on.md)
+ [Implémentation de l’authentification unique de l’entreprise](../core/implementing-enterprise-single-sign-on.md)

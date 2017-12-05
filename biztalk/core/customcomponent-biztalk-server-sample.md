@@ -17,11 +17,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7e178faee3ed05d4d77eec8f4da182c7dcd21a67
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7fd774848dec1ae54541e749a0cc551bf7c42d49
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="customcomponent-biztalk-server-sample"></a>CustomComponent (exemple BizTalk Server)
 L'exemple CustomComponent présente la création et l'utilisation d'un composant de pipeline personnalisé qui modifie un message transmis. Cet exemple illustre également la configuration d'un composant de pipeline personnalisé dans le Concepteur de pipeline.  
@@ -38,7 +38,7 @@ L'exemple CustomComponent présente la création et l'utilisation d'un composant
 4.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] écrit le message texte obtenu dans un fichier dans un dossier spécifique.  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
- \<*Exemples de chemin d’accès*> \Pipelines\CustomComponent\  
+ \<*Exemples de chemin d’accès*\>\Pipelines\CustomComponent\  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -62,13 +62,13 @@ L'exemple CustomComponent présente la création et l'utilisation d'un composant
   
 1.  Dans une fenêtre de commande, accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \Pipelines\CustomComponent  
+     \<*Exemples de chemin d’accès*\>\Pipelines\CustomComponent  
   
 2.  Exécutez le fichier Setup.bat, qui effectue les actions suivantes :  
   
     -   Création des dossiers d'entrée (In) et de sortie (Out) associés à cet exemple dans le dossier :  
   
-         \<*Exemples de chemin d’accès*> \Pipelines\CustomComponent  
+         \<*Exemples de chemin d’accès*\>\Pipelines\CustomComponent  
   
     -   Compilation et déploiement des projets [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] pour cet exemple.  
   
@@ -100,7 +100,7 @@ L'exemple CustomComponent présente la création et l'utilisation d'un composant
   
 1.  Collez une copie du fichier texte Input.txt dans le dossier In.  
   
-2.  Observez le fichier texte créé dans le dossier Out. Ce fichier contient le fichier Input.txt avec un texte supplémentaire inséré au début (par le pipeline de réception) et à la fin (par le pipeline d'envoi). Le format du nom de ce fichier est \< *MessageID*> .xml, où  *\<MessageID >* est le GUID généré pour identifier de façon unique le message.  
+2.  Observez le fichier texte créé dans le dossier Out. Ce fichier contient le fichier Input.txt avec un texte supplémentaire inséré au début (par le pipeline de réception) et à la fin (par le pipeline d'envoi). Le format du nom de ce fichier est \< *MessageID*\>.xml, où  *\<MessageID\>*  est le GUID généré pour identifier de façon unique le message .  
   
 ## <a name="comments"></a>Commentaires  
  Pour afficher les pipelines préconfigurés dans le Concepteur de pipeline, procédez comme suit :  

@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f79fa2e40bd80bb3a4fd8b976aa31a34e4d3c0bb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1c31146310b8c8b559fcd93d19362679b060cb42
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="create-a-channel-using-the-sql-adapter"></a>Créer un canal à l’aide de l’adaptateur SQL
 Dans le modèle de canal WCF, vous appeler des opérations sur la base de données SQL Server et recevoir les résultats en échangeant des messages SOAP avec le [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] sur un canal WCF.  
@@ -128,7 +128,7 @@ channel.Open();
   
 2.  Définissez les propriétés de liaison requises pour l’opération entrante. Par exemple, pour un **d’interrogation** opération, au minimum, vous devez définir le **InboundOperationType**, **PolledDataAvailableStatement**, et  **PollingStatement** pour configurer les propriétés de liaison le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] pour interroger la base de données SQL Server.  
   
-3.  Créer un écouteur de canal en appelant **BuildChannelListener\<IInputChannel >** méthode sur le **SQLBinding**. Vous spécifiez l’URI de connexion SQL Server comme l’un des paramètres pour cette méthode.  
+3.  Créer un écouteur de canal en appelant **BuildChannelListener\<IInputChannel\>**  méthode sur le **SQLBinding**. Vous spécifiez l’URI de connexion SQL Server comme l’un des paramètres pour cette méthode.  
   
 4.  Ouvrez le port d’écoute.  
   
@@ -168,4 +168,4 @@ channel.Open();
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
-[Développer des applications à l’aide du modèle de canal WCF](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-channel-model.md)
+[Développer des applications en utilisant le modèle de canal WCF](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-channel-model.md)

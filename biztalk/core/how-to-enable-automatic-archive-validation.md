@@ -15,11 +15,11 @@ caps.latest.revision: "30"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 258fcb96bbb9bbb045aeb3f48c2b324502d44940
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e654d22a08a7b07210ded9c319953c288065927a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-enable-automatic-archive-validation"></a>Activation de la validation automatique de l'archivage
 La validation d'archivage permet de valider les archives lors de leur création. Avant de pouvoir activer la validation d'archivage automatique, vous devez configurer un serveur de base de données secondaire, également appelé « serveur de validation ». Le processus d'archivage consistant en une simple sauvegarde, l'image réelle stockée sur le disque peut être altérée suite à une défaillance matérielle.  
@@ -89,7 +89,7 @@ La validation d'archivage permet de valider les archives lors de leur création.
   
 13. Sur le **général** page, dans le **commande** zone, dans la commande, **exec dtasp_ValidateArchive null null**, remplacez null, null avec le nom du serveur hébergeant le BizTalk Suivi de base de données, entouré de guillemets, suivis du nom de la base de données des suivis BizTalk, entouré de guillemets, simples, puis cliquez sur **OK**. Exemple :  
   
-     **EXEC dtasp_ValidateArchive '**  *\<TrackingServerName >* **','**  *\<TrackingDatabaseName >* **'**  
+     **EXEC dtasp_ValidateArchive '**  *\<TrackingServerName\>*  **','**  *\<TrackingDatabaseName\>*  **'**  
   
 > [!NOTE]
 >  Le travail ValidateArchive ne comporte pas de planification et vous ne devez pas configurer de planification pour ce travail. Le travail de purge et d'archivage de la base de données des suivis (BizTalkDTADb) démarre ce travail automatiquement lors de la création d'une archive.  

@@ -17,11 +17,11 @@ caps.latest.revision: "69"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5db86f672cd17965ec76877cc3867594bf82b40d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 445dcdf9685d5b4b74f5d1fd9738da838edb5f42
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="walkthrough-deploying-a-basic-biztalk-application"></a>Procédure pas à pas : Déploiement d’une Application de base BizTalk
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] contient des fonctionnalités qui simplifient la gestion et le déploiement des solutions d'entreprise BizTalk. Il fournit désormais un conteneur d'applications pour les éléments qui composent les solutions d'entreprise (orchestrations, pipelines, schémas, mappages et assemblys .NET). Vous pouvez gérer, modifier, déployer et installer tous les éléments d’une application comme une unité unique. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]inclut également des Assistants pour vous aider à automatiser les tâches de déploiement d’application. Pour plus d’informations, consultez [déploiement d’Application et les fonctionnalités de gestion](../core/application-deployment-and-management-features.md) et [déploiement d’Application et les outils de gestion](../core/application-deployment-and-management-tools.md).  
@@ -104,7 +104,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
 #### <a name="2-deploy-the-biztalk-assemblies"></a>2. Déploiement des assemblys BizTalk  
  Suivez les instructions de cette étape pour déployer des assemblys BizTalk dans une application BizTalk à partir de [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] sur l'ordinateur de développement.  
   
- Avant de commencer, vérifiez que vous disposez d'une solution BizTalk dans [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]. Vous pouvez créer votre propre solution ou projet, ou utiliser l'exemple de solution ErrorHandling inclus dans [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]. Vous pouvez utiliser l'exemple de solution ErrorHandling dans [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] en procédant comme suit.  
+ Avant de commencer, vérifiez que vous disposez d'une solution BizTalk dans [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]. Vous pouvez créer votre propre solution ou projet, ou vous pouvez configurer l’exemple ErrorHandling inclus dans BizTalk Server. Vous pouvez utiliser l'exemple de solution ErrorHandling dans [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] en procédant comme suit.  
   
 ###### <a name="to-set-up-the-errorhandling-solution"></a>Pour utiliser la solution ErrorHandling  
   
@@ -132,9 +132,9 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
     |Propriété|Valeur|Explication|  
     |--------------|-----------|-----------------|  
-    |Application Name|\<Name>|Nom de l'application BizTalk dans laquelle déployer les assemblys de ce projet. Si l'application existe déjà, les assemblys seront ajoutés à celle-ci lors du déploiement du projet. Si l'application n'existe pas, elle sera créée. Si ce champ est vide, les assemblys sont déployés dans l'application BizTalk par défaut du groupe courant, soit « BizTalk Application 1 ». Les noms incluant des espaces doivent être placés entre guillemets doubles (").|  
-    |Base de données de configuration|\<Nom de base de données de gestion BizTalk >|Nom de la base de données de gestion BizTalk pour le groupe, BizTalkMgmtDb par défaut.|  
-    |Server|\<Nom du serveur >|Nom de l'instance SQL Server qui héberge la base de données de gestion BizTalk sur l'ordinateur local. Dans le cas d'une installation sur un seul ordinateur, il s'agit généralement du nom de l'ordinateur local. **Remarque :** si vous déplacez ce projet BizTalk vers un autre ordinateur, vous devez modifier la propriété de serveur afin de refléter le nouveau nom d’ordinateur avant de pouvoir déployer l’assembly.|  
+    |Application Name|\<Nom\>|Nom de l'application BizTalk dans laquelle déployer les assemblys de ce projet. Si l'application existe déjà, les assemblys seront ajoutés à celle-ci lors du déploiement du projet. Si l'application n'existe pas, elle sera créée. Si ce champ est vide, les assemblys sont déployés dans l'application BizTalk par défaut du groupe courant, soit « BizTalk Application 1 ». Les noms incluant des espaces doivent être placés entre guillemets doubles (").|  
+    |Base de données de configuration|\<Nom de base de données de gestion BizTalk\>|Nom de la base de données de gestion BizTalk pour le groupe, BizTalkMgmtDb par défaut.|  
+    |Server|\<Nom du serveur\>|Nom de l'instance SQL Server qui héberge la base de données de gestion BizTalk sur l'ordinateur local. Dans le cas d'une installation sur un seul ordinateur, il s'agit généralement du nom de l'ordinateur local. **Remarque :** si vous déplacez ce projet BizTalk vers un autre ordinateur, vous devez modifier la propriété de serveur afin de refléter le nouveau nom d’ordinateur avant de pouvoir déployer l’assembly.|  
     |Redéployer|True ou False|La définition de cette propriété sur True (valeur par défaut) vous permet de redéployer les assemblys BizTalk sans changer le numéro de version.|  
     |Installer dans le Global Assembly Cache|True ou False|La définition de cette propriété sur True (valeur par défaut) installe les assemblys dans le Global Assembly Cache (GAC) de l'ordinateur local lors du déploiement de l'application.|  
     |Redémarrer les instances d’hôte|True ou False|La définition de cette propriété sur True redémarre automatiquement toues les instances d'hôte s'exécutant sur l'ordinateur local lors du redéploiement de l'assembly. Si vous la définissez sur False (valeur par défaut), vous devez redémarrer les instances d'hôte manuellement lors du redéploiement d'un assembly. **Remarque :** si vous redéployez des assemblys de niveau de la solution, les instances d’hôte seront redémarrées une fois pour chaque projet dispose cette option est définie sur True. Cela peut donner lieu à des redémarrages multiples. Si vous prévoyez de redéployer au niveau de la solution, vous pouvez définir cette propriété sur True sur un seul projet de la solution afin d'éviter des redémarrages d'instance d'hôte multiples. Elle doit être définie sur le dernier projet qui sera redéployé dans la solution. Par ailleurs, si une instance d'hôte est arrêtée lors de l'exécution du redéploiement, elle ne sera pas démarrée.|  
@@ -154,7 +154,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
      Exemple : **sn -k ErrorHandling.snk**  
   
-     Un message de confirmation, **paire écrite dans la clé \<**  *nom_fichier***> .snk** `,` affiche sur la ligne de commande.  
+     Un message de confirmation, **paire écrite dans la clé \<**  *nom_fichier***\>.snk** `,` affiche sur la ligne de commande.  
   
  Ensuite, vous devez associer chaque projet de la solution au fichier de clé.  
   
@@ -166,7 +166,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
 3.  Dans le volet droit, activez la **signer l’assembly** boîte.  
   
-4.  Cliquez sur la zone de liste déroulante sous **choisir un fichier de clé de nom fort**, cliquez sur  **\<Parcourir... >**, puis accédez au fichier de clé.  
+4.  Cliquez sur la zone de liste déroulante sous **choisir un fichier de clé de nom fort**, cliquez sur  **\<Parcourir... \>** , puis accédez au fichier de clé.  
   
 5.  Cliquez sur le fichier de clé, puis cliquez sur **ouvrir**.  
   
@@ -324,7 +324,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
      ![Ajouter des références à une application](../core/media/appreferences.gif "AppReferences")  
   
-6.  Sur le **paramètres d’environnement cible Application** page, vérifiez que  **\<par défaut >** est sélectionné, cliquez sur **suivant**.  
+6.  Sur le **paramètres d’environnement cible Application** page, vérifiez que  **\<par défaut\>**  est sélectionné, cliquez sur **suivant**.  
   
 7.  Sur le **résumé d’importation** page, vérifiez que les informations de résumé sont correctes, puis cliquez sur **importation**.  
   
@@ -357,4 +357,4 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
 -   Pour supprimer complètement l’application à partir du groupe BizTalk et de l’ordinateur local, suivez les instructions de [annulation du déploiement des Applications BizTalk](../core/undeploying-biztalk-applications.md).  
   
 ## <a name="see-also"></a>Voir aussi  
-[Présentation de gestion et déploiement d’applications BizTalk](../core/understanding-biztalk-application-deployment-and-management.md)
+[Présentation de la gestion et du déploiement d’une application BizTalk](../core/understanding-biztalk-application-deployment-and-management.md)

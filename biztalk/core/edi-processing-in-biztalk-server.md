@@ -12,17 +12,17 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1a91afb8542284b5c83b19886a417350aebbc0ae
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b68781707211922d7d29958f896608c87358c7c0
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="edi-processing-in-biztalk-server"></a>Traitement EDI dans BizTalk Server
 Cette rubrique offre un aperçu du traitement des messages EDI côté réception et côté envoi et décrit l'application de la messagerie EDI grâce aux accords de partenariat commercial.  
   
 ## <a name="trading-partner-agreements-for-edi-processing"></a>Accords de partenariat commercial pour le traitement EDI  
- Ce type d'accord joue un rôle important dans la prise en charge EDI dans [!INCLUDE[prague](../includes/prague-md.md)]. La plupart des fonctions de configuration et d'administration liées au traitement EDI dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] sont exécutées via la configuration des accords de partenariat commercial entre des profils commerciaux. Les accords combinent les propriétés de traitement des messages bidirectionnelles à partir des profils commerciaux spécifiques des deux partenaires. Les accords reposent sur les paramètres de protocole définis pour chaque profil commercial. Un accord de partenariat commercial entre deux profils commerciaux est appliqué via la définition des propriétés des profils commerciaux impliqués dans l'échange de messages. Les propriétés des profils commerciaux sont définies sous la forme d'un récepteur des échanges et d'un expéditeur des échanges. Pour traiter un message entrant ou générer un message sortant, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] doit connaître l'accord en vertu duquel est effectuée la résolution, et le schéma qui s'applique au message. Si [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] n'arrive pas à déterminer l'accord, il utilisera les propriétés définies dans l'interface TPM pour l'accord de partenariat commercial de secours.  
+ Accords de partenariat commercial jouent un rôle important dans la prise en charge EDI dans BizTalk Server. La plupart des fonctions de configuration et d'administration liées au traitement EDI dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] sont exécutées via la configuration des accords de partenariat commercial entre des profils commerciaux. Les accords combinent les propriétés de traitement des messages bidirectionnelles à partir des profils commerciaux spécifiques des deux partenaires. Les accords reposent sur les paramètres de protocole définis pour chaque profil commercial. Un accord de partenariat commercial entre deux profils commerciaux est appliqué via la définition des propriétés des profils commerciaux impliqués dans l'échange de messages. Les propriétés des profils commerciaux sont définies sous la forme d'un récepteur des échanges et d'un expéditeur des échanges. Pour traiter un message entrant ou générer un message sortant, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] doit connaître l'accord en vertu duquel est effectuée la résolution, et le schéma qui s'applique au message. Si [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] n'arrive pas à déterminer l'accord, il utilisera les propriétés définies dans l'interface TPM pour l'accord de partenariat commercial de secours.  
   
  Il existe deux ensembles principaux de paramètres du protocole de codage dans TPM : un pour les propriétés EDIFACT et un pour les propriétés X12. Les deux ensembles de propriétés fonctionnent en parallèle. Pour plus d’informations sur les paramètres de protocole, consultez [paramètres de protocole](../core/protocol-settings.md). Pour plus d’informations sur les contrats, consultez [accord de partenariat commercial](../core/trading-partner-agreement.md). Vous définissez les paramètres de protocole et l'accord de partenariat commercial dans l'interface utilisateur de gestion des partenaires commerciaux (GPC). Les écrans du module de plateforme sécurisée se trouvent dans le **Parties** nœud de la [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] console d’Administration. Il n'est pas nécessaire d'être un développeur pour configurer le traitement EDI dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
@@ -34,7 +34,7 @@ Cette rubrique offre un aperçu du traitement des messages EDI côté réception
 -   recherche de l'accord de partenariat commercial et détermination du schéma.  
   
     > [!NOTE]
-    >  Dans les versions précédentes de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], les définitions de tiers incluaient également la définition d'accord. Dans le cadre de la recherche des propriétés d'un tiers, le pipeline de réception effectuait une recherche interne de la définition d'accord au sein de la définition de tiers, puis traitait les messages en conséquence. Dans [!INCLUDE[prague](../includes/prague-md.md)], le tiers (ou partenaire commercial) étant distinct de l'accord de partenariat commercial, le pipeline de réception recherche spécifiquement l'accord de partenariat commercial.  
+    >  Dans les versions précédentes de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], les définitions de tiers incluaient également la définition d'accord. Dans le cadre de la recherche des propriétés d'un tiers, le pipeline de réception effectuait une recherche interne de la définition d'accord au sein de la définition de tiers, puis traitait les messages en conséquence. Avec BizTalk Server, le tiers (ou partenaire commercial) étant distinct de l’accord de partenariat commercial, le pipeline de réception recherche l’accord de partenariat commercial en particulier.  
   
     > [!NOTE]
     >  Si tous les accords en fonction desquels un message effectue la résolution sont désactivés, le message sera suspendu. Un événement est également consigné dans le journal des événements.  
@@ -76,7 +76,7 @@ Cette rubrique offre un aperçu du traitement des messages EDI côté réception
 -   recherche de l'accord de partenariat commercial et détermination du schéma.  
   
     > [!NOTE]
-    >  Dans les versions précédentes de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], les définitions de tiers incluaient également la définition d'accord. Dans le cadre de la recherche des propriétés d'un tiers, le pipeline d'envoi effectuait une recherche interne de la définition d'accord au sein de la définition de tiers, puis traitait les messages en conséquence. Dans [!INCLUDE[prague](../includes/prague-md.md)], le tiers (ou partenaire commercial) étant distinct de l'accord de partenariat commercial, le pipeline d'envoi recherche spécifiquement l'accord de partenariat commercial.  
+    >  Dans les versions précédentes de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], les définitions de tiers incluaient également la définition d'accord. Dans le cadre de la recherche des propriétés d'un tiers, le pipeline d'envoi effectuait une recherche interne de la définition d'accord au sein de la définition de tiers, puis traitait les messages en conséquence. Avec BizTalk Server, le tiers (ou partenaire commercial) étant distinct de l’accord de partenariat commercial, le pipeline d’envoi recherche l’accord de partenariat commercial en particulier.  
   
     > [!NOTE]
     >  Si tous les accords en fonction desquels un message effectue la résolution sont désactivés, le message sera suspendu.  Un événement est également consigné dans le journal des événements.  
@@ -107,4 +107,4 @@ Cette rubrique offre un aperçu du traitement des messages EDI côté réception
  [Le rôle des accords dans le traitement EDI](../core/the-role-of-agreements-in-edi-processing.md)   
  [Réception des Messages EDI dans BizTalk Server](../core/how-biztalk-server-receives-edi-messages.md)   
  [Envoi des Messages EDI dans BizTalk Server](../core/how-biztalk-server-sends-edi-messages.md)   
- [Développement et la configuration des Solutions EDI BizTalk Server](../core/developing-and-configuring-biztalk-server-edi-solutions.md)
+ [Développement et configuration de solutions EDI BizTalk Server](../core/developing-and-configuring-biztalk-server-edi-solutions.md)

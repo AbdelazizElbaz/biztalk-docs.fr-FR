@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 32539b1c352ac1fd2b60d2acd4c5ee975e2c3d18
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7ba84bd9a0ab8c6f7d5ccd24b27e90ef9c441b93
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-7-create-and-configure-a-source-party"></a>Étape 7 : Créer et configurer une partie de la Source
 Dans cette étape, créer et configurer une partie de la source et attribuer des ports d’envoi pour activer les transformations d’en-tête de message pour le message sortant.  
@@ -36,7 +36,7 @@ Dans cette étape, créer et configurer une partie de la source et attribuer des
   
 5.  Cliquez sur **OK**.  
   
-6.  Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Microsoft BizTalk \<version > Accelerator pour HL7**, puis cliquez sur **BTAHL7 L’Explorateur de configuration**.  
+6.  Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Microsoft BizTalk \<version\> Accelerator pour HL7**, puis cliquez sur **BTAHL7 Configuration Explorer**.  
   
 7.  Dans l’Explorateur de Configuration de BTAHL7, sur le **Parties** , cliquez sur **Tutorial_BatchSource**.  
   

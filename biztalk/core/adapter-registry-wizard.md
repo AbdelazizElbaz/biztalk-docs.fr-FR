@@ -15,17 +15,17 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f07ef6adc96a4f5819cd5438b4a5d24ce6fc0770
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b721294acb07d4c69c5b2ae7b58b0e135625eee8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="adapter-registry-wizard"></a>Assistant Registre d’adaptateur
 L'Assistant Registre de l'adaptateur permet de créer les fichiers de Registre nécessaires pour configurer et inscrire un adaptateur personnalisé.  
   
 ## <a name="location-in-sdk"></a>Emplacement dans le kit de développement logiciel (SDK)  
- *\<Chemin d’installation >*\SDK\Utilities\AdapterRegistryWizard\  
+ *\<Chemin d’installation\>*\SDK\Utilities\AdapterRegistryWizard\  
   
 ## <a name="to-run-this-utility"></a>Exécution de cet utilitaire  
  Démarrez l'Assistant en exécutant le fichier exécutable AdapterRegistryWizard.exe. Les pages qui suivent vous demandent des informations concernant votre adaptateur et les propriétés qu'il prend en charge. Chacune des pages de l'Assistant Registre de l'adaptateur est décrite dans les sections ci-dessous.  

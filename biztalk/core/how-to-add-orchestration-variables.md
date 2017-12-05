@@ -13,11 +13,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4416534bdd73e8ae6eeeca28165ebc62c11bfc92
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bb8516ceb780e64c4f4a01370de0e7c40098f3da
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-add-orchestration-variables"></a>Ajout de variables d'orchestration
 La fenêtre Vue Orchestration vous permet de gérer les propriétés d’une orchestration (également appelé **Service** propriétés), paramètres, ports, messages et autres variables. En plus des ports et des messages, vous pouvez créer des variables entières, des variables booléennes, des variables de chaînes ou des variables d'une classe .NET.  
@@ -35,7 +35,7 @@ La fenêtre Vue Orchestration vous permet de gérer les propriétés d’une orc
 3.  Associez cette variable à un type, tel qu'une classe .NET.  
   
     > [!NOTE]
-    >  Le **Types** liste déroulante contienne les types de variables prédéfinies suivantes : **booléenne**, **octets**, **datetime**,  **décimal**, **double**, **int16**, **int32**, **int64**, **sbyte** , **unique**, **chaîne**, **timespan**, **uint16**, **uint32**et **uint64**. Vous pouvez également accéder aux classes et les types de données .NET en sélectionnant  **\<.NET classe.. >**, ce qui permet d’afficher le **sélectionner le Type d’artefact** boîte de dialogue.  
+    >  Le **Types** liste déroulante contienne les types de variables prédéfinies suivantes : **booléenne**, **octets**, **datetime**,  **décimal**, **double**, **int16**, **int32**, **int64**, **sbyte** , **unique**, **chaîne**, **timespan**, **uint16**, **uint32**et **uint64**. Vous pouvez également accéder aux classes et les types de données .NET en sélectionnant  **\<classe .NET... \>** , ce qui permet d’afficher le **sélectionner le Type d’artefact** boîte de dialogue.  
   
 4.  Si vous sélectionnez un type de variable prédéfini, vous avez la possibilité de spécifier une valeur initiale pour la variable. Dans la fenêtre Propriétés, définissez la **valeur initiale** propriété.  
   

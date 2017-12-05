@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b03f6f3319e90d4782e1e9e5fd7e2a7e2a27b527
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4cd094feabe1ba23a6a73c89aae3a1042b8f7fc9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="deploying-bre-policies-for-existing-messages"></a>Déploiement de stratégies BRE pour les Messages existants
 **Pour déployer des règles métier connexes :**  
@@ -33,6 +33,6 @@ ms.lasthandoff: 09/20/2017
   
 5.  Fermez la boîte de dialogue Utilitaire de déploiement BRE SWIFT.  
   
-6.  Dans l’Explorateur Windows, accédez à  *\<lecteur >*: \Documents and Settings\All Users\Application Data pour vérifier que le fichier journal BREDeploymentLog.txt figure dans le dossier.  
+6.  Dans l’Explorateur Windows, accédez à  *\<lecteur\>*: \Documents and Settings\All Users\Application Data pour vérifier que le fichier journal BREDeploymentLog.txt figure dans le dossier.  
   
 7.  Cliquez sur **Démarrer**, cliquez sur **exécuter**, type **services.msc**, puis cliquez sur **OK**. Dans la fenêtre Services (Local), cliquez sur **Service de mise à jour du moteur de règles**, puis cliquez sur **redémarrer**.

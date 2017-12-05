@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 34a437cdc306a25d8f5e688880c55530ea9703f3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 49a51244b7033c6cebc978a39ad37dd5732fa38d
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="test-scenario-server-architecture"></a>Architecture de serveur de scénario de test
 Cette rubrique fournit une vue d’ensemble du flux de messages entre les serveurs au cours du test de charge et les architectures de serveur distincts par rapport à laquelle le test de charge a été effectué.  
@@ -65,9 +65,9 @@ Vue d'ensemble du flux de messages
 5.  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]traite la réponse et stocke le message de réponse dans la base de données MessageBox. Le message de réponse du service web Calculator est ensuite récupéré à partir de la base de données MessageBox par le port de requête-réponse de BizTalk, et la remise d’un message de réponse vers les ordinateurs de l’Agent de Test de charge.  
   
 ## <a name="baseline-server-architecture"></a>Architecture de serveur de base  
- Pour l’architecture de serveur de base, le rôle Hyper-V a été pas installé alors que les [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] et [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)] ont été installés sur le système d’exploitation hôte. Cela a été effectué pour établir des métriques de performances « ligne de base » de la [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] solution sur un environnement matériel physique.  
+ Pour l’architecture de serveur de base, le rôle Hyper-V a été pas installé alors que les [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] et SQL Server ont été installés sur le système d’exploitation hôte. Cela a été effectué pour établir des métriques de performances « ligne de base » de la [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] solution sur un environnement matériel physique.  
   
- La figure suivante illustre physique [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] et [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)] niveaux de l’Architecture du serveur de ligne de base.  
+ La figure suivante illustre physique [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] et niveaux de SQL Server pour l’Architecture du serveur de ligne de base.  
   
  ![BizTalk physique &#47; Physiques SQL](../technical-guides/media/archphysicalbts-physicalsql.gif "ArchPhysicalBTS_PhysicalSQL")  
 Serveur BizTalk physique / physique SQL Server (de base)  
@@ -80,7 +80,7 @@ Serveur BizTalk physique / physique SQL Server (de base)
   
     -   Nombre total de 6 + 3 = **9** Go de RAM disponible et 8 + 4 = **12** cœurs de processeurs disponibles pour [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
--   **SQL Server** - 1 [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)] ordinateur configuré comme suit :  
+-   **SQL Server** -1 ordinateur SQL Server configurée comme suit :  
   
     -   **8** Go de RAM disponible.  
   
@@ -92,7 +92,7 @@ Serveur BizTalk physique / physique SQL Server (de base)
  ![BizTalk virtuel &#47; Physiques SQL](../technical-guides/media/archvirtualbts-physicalsql.gif "ArchVirtualBTS_PhysicalSQL")  
 Serveur BizTalk virtuel / physique SQL Server  
   
- Pour ce scénario, le test de charge a été effectué sur [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] en cours d’exécution sur des ordinateurs virtuels Hyper-V et [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)] en cours d’exécution sur un matériel physique.  
+ Pour ce scénario, le test de charge a été effectué sur [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] en cours d’exécution sur des ordinateurs virtuels Hyper-V et SQL Server s’exécutant sur du matériel physique.  
   
 > [!NOTE]  
 >  L’allocation de cœurs de processeur et mémoire RAM décrite ci-dessous était identique pour les scénarios de chaque ligne de base non, la seule différence étant que certains ordinateurs sont en cours d’exécution sur un ordinateur virtuel Hyper-V ou sur du matériel physique.  
@@ -103,14 +103,14 @@ Serveur BizTalk virtuel / physique SQL Server
   
     -   4 cœurs de processeur alloué à chaque [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ordinateur avec un total de 3 x 4 = **12** cœurs de processeurs disponibles pour [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
--   **SQL Server** - 1 [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)] ordinateur configuré comme suit :  
+-   **SQL Server** -1 ordinateur SQL Server configurée comme suit :  
   
     -   **8** Go de RAM disponible.  
   
     -   **4** cœurs de processeurs disponibles.  
   
 ## <a name="virtual-biztalk-server--virtual-sql-server"></a>Serveur BizTalk virtuel / virtuel SQL Server  
- La figure suivante illustre une machine virtuelle, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ordinateur et une machine virtuelle, [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)] ordinateur sur des ordinateurs hôtes Hyper-V distincts.  
+ La figure suivante illustre une machine virtuelle, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ordinateur et un ordinateur virtuel de SQL Server sur Hyper-V distincte des ordinateurs hôtes.  
   
  ![BizTalk virtuel &#47; SQL virtuel](../technical-guides/media/archvirtualbts-virtualsql.gif "ArchVirtualBTS_VirtualSQL")  
 Serveur BizTalk virtuel / virtuel SQL Server  
@@ -121,7 +121,7 @@ Serveur BizTalk virtuel / virtuel SQL Server
 >  L’allocation de cœurs de processeur et de RAM pour ce scénario est identique à l’allocation de cœurs de processeur et de RAM pour le **virtuels BizTalk Server / physique SQL Server** scénario, la seule différence étant que [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] a été configuré pour s’exécuter sur un ordinateur virtuel Hyper-V plutôt que de matériel physique.  
   
 ## <a name="consolidated-environment"></a>Environnement consolidé  
- La figure suivante illustre virtuel [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] une machine virtuelle et les ordinateurs [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)] ordinateur consolidées sur un ordinateur hôte de Hyper-V.  
+ La figure suivante illustre virtuel [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ordinateurs et un ordinateur virtuel de SQL Server consolidées sur un ordinateur hôte de Hyper-V.  
   
  ![BizTalk virtuel &#47; SQL virtuel &#47; Consolidés](../technical-guides/media/archvirtualbts-virtualsql-consolidated.gif "ArchVirtualBTS_VirtualSQL_Consolidated")  
 Environnement consolidé  

@@ -15,11 +15,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1d245742fb89dd9eb91137d3a5f945af13b97161
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0dc2603a2e86d29797919fb51c3985c384ff9580
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshoot-installation-issues-with-the-oracle-database-adapter"></a>Résoudre les problèmes d’installation de l’adaptateur de base de données Oracle
 Installation de Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] copie les fichiers binaires du produit sur l’ordinateur et enregistre les liaisons pour chaque carte. Cette section présente l’utilisation de techniques de dépannage pour résoudre les erreurs d’installation et répertorie certains problèmes connus.  
@@ -44,9 +44,9 @@ Installation de Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapter
   
 Inscrire manuellement le [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] liaison : 
   
-1.  Accédez au fichier machine.config sur l’ordinateur. Par exemple, sur une plateforme 32 bits, le fichier machine.config est disponible sous \<lecteur système > : \WINDOWS\Microsoft.NET\Framework\\< version\>\CONFIG.  
+1.  Accédez au fichier machine.config sur l’ordinateur. Par exemple, sur une plateforme 32 bits, le fichier machine.config est disponible sous \<lecteur système\>: \WINDOWS\Microsoft.NET\Framework\\< version\>\CONFIG.  
   
-     Dans ce chemin d’accès, \<version > correspond à la version du .NET Framework.  
+     Dans ce chemin d’accès, \<version\> est la version du .NET Framework.  
   
 2.  Ouvrez le fichier à l’aide d’un éditeur de texte.  
   

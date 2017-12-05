@@ -16,11 +16,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 099a2b8f3d914297529a192def9e5c23a49d31af
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c80a01aa9b4bd19581cb97f7fee127fc244322d4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-list-user-accounts-with-access-to-a-view"></a>Affichage des comptes d'utilisateur ayant accès à une vue
 Les administrateurs utilisent la **get-accounts** commande d’utilitaire de gestion BAM pour obtenir une liste de tous les comptes d’utilisateur pour un rôle de la vue, ce qui signifie que tous les comptes d’utilisateurs ayant accès à la vue spécifiée.  
@@ -33,7 +33,7 @@ Les administrateurs utilisent la **get-accounts** commande d’utilitaire de ges
   
 2.  Accédez à [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]de suivi  
   
-3.  Type **bm get-accounts-View :\<nom de la vue >**.  
+3.  Type **bm get-accounts-View :\<nom de la vue\>**.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -42,4 +42,4 @@ Les administrateurs utilisent la **get-accounts** commande d’utilitaire de ges
   
 ## <a name="see-also"></a>Voir aussi  
  [Gestion de l’Infrastructure dynamique BAM](../core/managing-the-bam-dynamic-infrastructure.md)   
- [Utilitaire de gestion BAM](../core/bam-management-utility.md)
+ [Utilitaire de gestion de l’analyse BAM](../core/bam-management-utility.md)

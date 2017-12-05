@@ -12,11 +12,11 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6a446f5527bf06164d14079c0bb40f2f41942f38
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c4c2e029e9599143c52577771a313d9810ca6f12
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="add-a-host-instance"></a>Ajouter une Instance d’hôte
 
@@ -78,7 +78,7 @@ La console Administration de [!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
  Si vous essayez de créer une instance d'un hôte BizTalk sur un ordinateur [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] non disponible, une boîte de dialogue s'affiche avec le message d'erreur suivant :  
   
- Installation de l’instance d’hôte \< *nom d’hôte*> sur le serveur \< *nom du serveur*> a échoué.  
+ Installation de l’instance d’hôte \< *nom d’hôte* \> sur le serveur \< *nom du serveur* \> a échoué.  
   
  Informations supplémentaires :  
   
@@ -86,11 +86,11 @@ La console Administration de [!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
   
  Lorsque vous cliquez sur OK pour refermer la boîte de dialogue, une autre s'affiche avec le message d'erreur suivant :  
   
- Nettoyage abandonné l’installation de l’hôte \< *nom d’hôte*> sur le serveur \< *nom du serveur*> a échoué.  
+ Nettoyage abandonné l’installation de l’hôte \< *nom d’hôte* \> sur le serveur \< *nom du serveur* \> a échoué.  
   
  Informations supplémentaires :  
   
- Une erreur s’est produite lors de la suppression du service Windows NT BTSSvc {*\<GUID >*}. (WinMgmt)  
+ Une erreur s’est produite lors de la suppression du service Windows NT BTSSvc {*\<GUID\>*}. (WinMgmt)  
   
  Lorsque vous cliquez sur **OK** pour fermer cette boîte de dialogue, l’instance de l’hôte BizTalk seront visible dans la Console Administration de BizTalk avec un **état** de **échouée de la désinstallation** .  
   

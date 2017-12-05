@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c18dd9bc820b994f53e9f3e157497337e93550c4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 976082fc14eb37d550956ec447eb63938706daa3
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-the-xml-tool-extensions"></a>Utilisation des extensions de l'outil XML
 Les extensions de l'outil XML pour [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] permettent de réaliser des tâches sur les schémas, les mappages et les instances de message. Vous utilisez ces extensions au moment de la conception dans l'environnement [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]. Less tâches que vous pouvez réaliser sont les suivantes :  
@@ -31,7 +31,7 @@ Les extensions de l'outil XML pour [!INCLUDE[btsBizTalkServerNoVersion](../inclu
   
 -   **Validation d’un mappage**. Cette opération a pour effet de générer un fichier contenant le XSLT sous-jacent du mappage ainsi qu'un autre fichier contenant les objets d'extension. Pour plus d’informations, consultez [valider un mappage (EDI)](../core/validating-a-map-edi.md).  
   
- Dans [!INCLUDE[prague](../includes/prague-md.md)], ces extensions fonctionnent sur les schémas, les mappages et les instances de message EDI. Elles vous permettent de travailler plus efficacement avec les schémas, mappages et échanges EDI complexes.  
+ Dans BizTalk Server, ces extensions fonctionnent sur les schémas EDI, les mappages et les instances de message. Elles vous permettent de travailler plus efficacement avec les schémas, mappages et échanges EDI complexes.  
   
  Les extensions de l'outil XML sont activées par défaut par le programme d'installation de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Si vous double-cliquez sur un schéma dans l’Explorateur de solutions de Visual Studio, le **Extensions de l’éditeur de schéma** du schéma est définie sur **Extension de l’éditeur de schéma EDI**. Cette configuration est nécessaire au bon fonctionnement des extensions de l'outil XML. Vous pouvez sélectionner une autre extension d'éditeur de schéma en conservant la sélection des extensions EDI.  
   

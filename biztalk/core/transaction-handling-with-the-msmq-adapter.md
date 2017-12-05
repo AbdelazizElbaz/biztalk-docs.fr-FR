@@ -15,11 +15,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eed4a3b38e4dd328fbbb6099b1bec2c1515b3e5d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1bea79413042ec99cfd1cbc5bc6dee500aef4ac4
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="transaction-handling-with-the-msmq-adapter"></a>La gestion avec l’adaptateur MSMQ de transaction
 Cette section traite de la manière dont les transactions fonctionnent en réception et en envoi.  
@@ -30,7 +30,7 @@ Cette section traite de la manière dont les transactions fonctionnent en récep
  Vous pouvez utiliser des transactions sur l'envoi et la réception avec l'adaptateur MSMQ. Sur les envois traités, l'adaptateur accumule les messages jusqu'à obtenir un lot complet. L'adaptateur soumet ensuite le lot au service Message Queuing local comme une transaction unique. En cas d'échec de l'opération, l'adaptateur réessaie de soumettre le lot. Si la nouvelle tentative échoue, l'adaptateur passe au transport secondaire.  
   
 > [!NOTE]
->  L'adaptateur prend en charge les lectures transactionnelles des files d'attente distantes uniquement avec Message Queuing 4.0 ou une version ultérieure. Dans ce scénario, tant [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] que le serveur Message Queuing distant doivent exécuter Message Queuing 4.0 ou une version ultérieure.  
+>  L'adaptateur prend en charge les lectures transactionnelles des files d'attente distantes uniquement avec Message Queuing 4.0 ou une version ultérieure. Dans ce scénario BizTalk Server et le serveur Message Queuing distant doivent exécuter Message Queuing 4.0 ou version ultérieure.  
   
  Sur les réceptions traitées, l'adaptateur suspend les messages ayant échoué de façon à n'en perdre aucun. Au cours d'une réception traitée, l'adaptateur ajoute des messages à un lot jusqu'à ce que ce dernier soit complet. Il soumet ensuite le lot :  
   
@@ -45,4 +45,4 @@ Cette section traite de la manière dont les transactions fonctionnent en récep
  Si vous exécutez un gestionnaire de réception d'adaptateur MSMQ dans une instance de l'hôte BizTalk en cluster, vous devez mettre en cluster le service MSMQ dans le même groupe de clusters de façon à prendre en charge les lectures traitées locales, car MSMQ ne prend pas en charge les lectures transactionnelles distantes. Pour plus d’informations sur l’exécution des gestionnaires d’adaptateur MSMQ dans une instance en cluster d’un hôte BizTalk, consultez [considérations pour les gestionnaires d’adaptateur en cours d’exécution dans un cluster hôte](../core/considerations-for-running-adapter-handlers-within-a-clustered-host1.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Messagerie fiable avec l’adaptateur MSMQ](../core/reliable-messaging-with-the-msmq-adapter.md)
+ [Messagerie sécurisée à l’aide de l’adaptateur MSMQ](../core/reliable-messaging-with-the-msmq-adapter.md)

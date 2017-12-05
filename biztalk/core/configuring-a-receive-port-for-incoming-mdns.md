@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1d29d35cb4fd98873d83ab6fa8fe2116bc15e764
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8585ae946e15d2677e225d42f6c123d5dd5e8e49
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configuring-a-receive-port-for-incoming-mdns"></a>Configuration d'un port de réception pour les MDN entrants
 Pour recevoir un message AS2, créez un port de réception HTTP unidirectionnel pour recevoir le message et renvoyer une réponse au tiers.  
@@ -33,7 +33,7 @@ Pour recevoir un message AS2, créez un port de réception HTTP unidirectionnel 
 |**Propriétés de l’emplacement de réception : général**|Type de transport|HTTP<br /><br /> **Remarque** uniquement l’adaptateur HTTP peut être utilisé pour le transport des messages MDN, qui sont des messages codés EDIINT/AS2. Ce transport ne fonctionne pas avec les autres types d'adaptateurs.|  
 |**Propriétés de l’emplacement de réception : général**|Gestionnaire de réception|BizTalkServerIsolatedHost|  
 |**Propriétés de l’emplacement de réception : général**|Pipeline de réception|AS2Receive ou AS2EdiReceive|  
-|**Propriétés du Transport HTTP**|Répertoire virtuel assorti de l'extension ISAPI|/\<nom du répertoire virtuel >/BTSHTTPReceive.dll|  
+|**Propriétés du Transport HTTP**|Répertoire virtuel assorti de l'extension ISAPI|/\<nom du répertoire virtuel \> /BTSHTTPReceive.dll|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Configuration des Ports pour une Solution AS2](../core/configuring-ports-for-an-as2-solution.md)
+ [Configuration des ports pour une solution AS2](../core/configuring-ports-for-an-as2-solution.md)

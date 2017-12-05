@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 19dd824322906bdd148b96eb305e88fc35847947
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 31436f7835aa940b86289ae3c80c276f95e0f105
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="connecting-to-sap-in-visual-studio-using-add-adapter-service-reference-plug-in"></a>Connexion à SAP à l’aide de Visual Studio ajouter une référence de Service d’adaptateur plug-in
 Pour vous connecter à un système SAP à l’aide du [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] dans une solution de programmation .NET, vous devez utiliser le [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]. Cette rubrique fournit des instructions sur l’utilisation de la [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].  
@@ -52,7 +52,7 @@ Pour vous connecter à un système SAP à l’aide du [!INCLUDE[adaptersap_short
     > [!IMPORTANT]
     >  Si vous utilisez la bibliothèque SAP SNC pour se connecter à un système SAP, définissez la **SncLibrary** et **SncPartnerName** avec les valeurs appropriées.  
     >   
-    >  Le **SncLibrary** liaison de la propriété prend le chemin d’accès et le nom du fichier DLL requis pour l’utilisation de SNC pour se connecter à un système SAP. Ces DLL doit être présent sur l’ordinateur avec le client SAP et [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] installé. Pour plus d’informations, consultez la [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] guide d’installation disponible à l’adresse \<guide d’installation > : \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents.  
+    >  Le **SncLibrary** liaison de la propriété prend le chemin d’accès et le nom du fichier DLL requis pour l’utilisation de SNC pour se connecter à un système SAP. Ces DLL doit être présent sur l’ordinateur avec le client SAP et [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] installé. Pour plus d’informations, consultez la [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] guide d’installation disponible à l’adresse \<guide d’installation\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents.  
     >   
     >  Le **SncPartnerName** liaison de la propriété prend le nom SNC du partenaire de communication.  
   
@@ -67,4 +67,4 @@ Pour vous connecter à un système SAP à l’aide du [!INCLUDE[adaptersap_short
      Le [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] affiche les différents nœuds contenant différents artefacts pouvant être appelées dans un système SAP. Par exemple, le **RFC** nœud contient tous les documents RFC disponibles dans le système SAP vous connecté à. Pour plus d’informations sur ces nœuds, consultez [ID de nœud de métadonnées](../../adapters-and-accelerators/adapter-sap/metadata-node-ids4.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Se connecter au système SAP dans Visual Studio](../../adapters-and-accelerators/adapter-sap/connect-to-the-sap-system-in-visual-studio.md)
+ [Connexion au système SAP dans Visual Studio](../../adapters-and-accelerators/adapter-sap/connect-to-the-sap-system-in-visual-studio.md)

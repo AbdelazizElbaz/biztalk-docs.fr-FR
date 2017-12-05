@@ -16,11 +16,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f55b4e08fa03380c3361a44b7989301b606732d7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 63355f742f12fbbaf57ccde7a1406dbb694ee073
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-delete-a-send-port"></a>Suppression d'un port d'envoi
 Cette rubrique explique comment supprimer un port d'envoi d'une application BizTalk à l'aide de la console Administration de BizTalk Server. Lors de cette opération, le port d'envoi est également supprimé de la base de données de gestion BizTalk associée au groupe.  
@@ -48,9 +48,9 @@ Cette rubrique explique comment supprimer un port d'envoi d'une application BizT
   
 1.  Cliquez sur **Démarrer**, cliquez sur **tous les programmes**, cliquez sur [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], puis cliquez sur **Administration de BizTalk Server**.  
   
-2.  Dans l'arborescence de la console, développez successivement Administration de [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], le groupe BizTalk, Applications, puis l'application contenant le port d'envoi à supprimer.  
+2.  Dans l’arborescence de la console, développez Administration de BizTalk Server, développez le groupe BizTalk, développez Applications, puis développez l’application contenant le port d’envoi que vous souhaitez supprimer  
   
 3.  Cliquez sur **Ports d’envoi**, cliquez sur le port d’envoi, puis cliquez sur **supprimer**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Création et configuration des Ports d’envoi](../core/creating-and-configuring-send-ports.md)
+ [Création et configuration des ports d’envoi](../core/creating-and-configuring-send-ports.md)

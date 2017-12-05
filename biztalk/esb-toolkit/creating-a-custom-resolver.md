@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ef1d583389189e09a0b9e0e5157ce5466004c03a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 57fb0073437c32c8a8f064a4c77f267ee6806858
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-a-custom-resolver"></a>Création d’un programme de résolution personnalisé
 L’implémentation du programme de résolution et l’infrastructure d’adaptateurs fournisseur [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] utilise un composant de pipeline nommé répartiteur et pipelines nommés ItineraryReceive et ItinerarySend.  
@@ -142,7 +142,7 @@ UDDI:\\serverUrl=http://localhost/uddi;serviceName=OrderPurchaseToOrderPost;serv
 |**TransformType**|Chaîne|**ActionField**|Chaîne|  
 |**Réussi**|Booléen|**EpmRRCorrelationTokenField**|Chaîne|  
 |**TransportNamespace**|Chaîne|**InboundTransportLocationField**|Chaîne|  
-|**Type de transport**|Chaîne|**InterchangeIDField**|Chaîne|  
+|**TransportType**|Chaîne|**InterchangeIDField**|Chaîne|  
 |**TransportLocation**|Chaîne|**ReceiveLocationNameField**|Chaîne|  
 |**Action**|Chaîne|**ReceivePortNameField**|Chaîne|  
 |**MessageExchangePattern**|Chaîne|**InboundTransportTypeField**|Chaîne|  
@@ -172,7 +172,7 @@ UDDI:\\serverUrl=http://localhost/uddi;serviceName=OrderPurchaseToOrderPost;serv
   
 1.  Créer un assembly avec une classe qui implémente le **IResolveProvider** interface et contient un **résoudre** méthode qui retourne les faits de programme de résolution comme une instance de la **dictionnaire**classe.  
   
-2.  Enregistrer le programme de résolution en l’ajoutant au fichier de configuration de Esb.config à l’aide un  **\<résolveur >** élément qui contient le moniker racine en tant que le **nom** attribut et qualifié complet nom de l’assembly en tant que le **type** attribut.  
+2.  Enregistrer le programme de résolution en l’ajoutant au fichier de configuration de Esb.config à l’aide un  **\<programme de résolution\>**  élément qui contient le moniker racine en tant que le **nom** attribut et entièrement nom d’assembly qualifié en tant que le **type** attribut.  
   
 3.  (Facultatif) Créer un schéma qui définit le moniker racine et les paramètres de requête, puis enregistrez-le à l’architecture ESB. Schemas.Resolvers dossier. Le nom doit respecter les conventions d’affectation de noms ESB existantes ; Cela signifie qu’il doit utiliser le nom du moniker racine ajouté avec « _Resolution.xsd ».  
   

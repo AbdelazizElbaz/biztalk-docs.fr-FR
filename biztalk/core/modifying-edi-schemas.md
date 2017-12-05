@@ -12,11 +12,11 @@ caps.latest.revision: "24"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3336d472326dc5ceb8c17e30150039229c18cb77
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: de196288f3f1d4475e6859e2440e4b03b1e521dc
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="modifying-edi-schemas"></a>Modification des schémas EDI
 Vous pouvez modifier un schéma EDI existant, inclus dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Une fois que vos partenaires commerciaux et vous avez convenu des modifications à apporter aux schémas standard et peut-être modifié le fichier MIG (Message Implementation Guideline) pertinent, vous pouvez modifier les schémas dans l'Éditeur BizTalk dans [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].  
@@ -50,7 +50,7 @@ Vous pouvez modifier un schéma EDI existant, inclus dans [!INCLUDE[btsBizTalkSe
 |Ajouter des champs déclencheurs à un document HIPAA|Vous pouvez permettre au Désassembleur EDI de créer des enregistrements XML uniques pour un segment de votre document HIPAA, en fonction d'un élément de qualification nommé champ déclencheur. Vous devez spécifier les attributs décrivant le segment et la valeur de déclenchement qui provoque la création d'un enregistrement XML unique pour le segment. Pour plus d’informations, consultez [Annotations des champs déclencheurs HIPAA schéma](../core/hipaa-schema-trigger-field-annotations.md).|  
 |Ajouter un segment à un document informatisé X12|Lorsque vous ajoutez un nouveau segment à un document informatisé X12, les trois premiers caractères du nom du segment servent d'identificateur de segment. Par conséquent, nous vous recommandons de nommer un segment en veillant à ce que les trois premiers caractères soient uniques.|  
 |Ajouter une boucle à un document informatisé HIPAA|Lorsque vous ajoutez une nouvelle boucle à un document informatisé HIPAA, nous vous recommandons d'inclure « Loop » dans le nom de la boucle. Par exemple, le format d'une boucle est « TS837_2010AB_Loop ». **Remarque :** le premier segment dans une boucle est obligatoire (minOccurs du segment doit être égal à 1) afin d’éviter toute ambiguïté.|  
-|Ajouter une boucle à sens quelconque à un document informatisé HIPAA|Lorsqu'un document informatisé a des segments équivalents avec des sémantiques différentes, vous devez les définir dans une SubLoop. Une SubLoop avec l’annotation XML \<xs : all > permet de segments équivalents à se produire dans n’importe quel ordre.<br /><br /> Nous vous recommandons d'inclure « SubLoop » dans le nom de la boucle à sens quelconque. Un exemple de format est « TS837Q1_2010A_SubLoop » **Remarque :** les éléments d’une boucle à sens quelconque ne doivent se produire qu’une seule fois dans la boucle. Les frères d'une SubLoop doivent avoir un maxOccurs défini sur 1, afin d'éviter toute ambiguïté.|  
+|Ajouter une boucle à sens quelconque à un document informatisé HIPAA|Lorsqu'un document informatisé a des segments équivalents avec des sémantiques différentes, vous devez les définir dans une SubLoop. Une SubLoop avec l’annotation XML \<xs : all\> permet des segments équivalents à se produire dans n’importe quel ordre.<br /><br /> Nous vous recommandons d'inclure « SubLoop » dans le nom de la boucle à sens quelconque. Un exemple de format est « TS837Q1_2010A_SubLoop » **Remarque :** les éléments d’une boucle à sens quelconque ne doivent se produire qu’une seule fois dans la boucle. Les frères d'une SubLoop doivent avoir un maxOccurs défini sur 1, afin d'éviter toute ambiguïté.|  
   
 ### <a name="to-modify-an-existing-edi-schema-in-biztalk-editor"></a>Pour modifier un schéma EDI existant dans l'Éditeur BizTalk  
   
@@ -70,14 +70,14 @@ Vous pouvez modifier un schéma EDI existant, inclus dans [!INCLUDE[btsBizTalkSe
   
 5.  Pour ajouter un enregistrement personnalisé au schéma, cliquez sur un nœud enregistrement dans l’arborescence de la console de l’éditeur de schéma, pointez sur **insérer un nœud de schéma**, puis cliquez sur **enregistrement enfant**. Nommez l'enregistrement, puis faites glisser l'enregistrement sur la position appropriée dans le schéma. Ajoutez au moins un élément de données à l'enregistrement. Définissez les propriétés de l'enregistrement personnalisé comme requises.  
   
-6.  Après avoir apporté les modifications souhaitées au schéma, vous pouvez modifier l’espace de noms cible qui s’applique à la propriété de schéma en cliquant sur le nœud racine (\<schéma >), puis en remplaçant le **cible Namespace** propriété.  
+6.  Après avoir apporté les modifications souhaitées au schéma, vous pouvez modifier l’espace de noms cible qui s’applique à la propriété de schéma en cliquant sur le nœud racine (\<schéma\>), puis en remplaçant le **cible Namespace** propriété.  
   
 7.  Enregistrez le schéma.  
   
 8.  Valider le schéma en cliquant le schéma dans l’Explorateur de solutions et en cliquant sur **valider le schéma**.  
   
     > [!NOTE]
-    >  Le **valider le schéma** commande validera le schéma EDI, car le **Extension de l’éditeur de schéma** propriété du nœud racine (\<schéma >) est définie sur **éditeur de schéma EDI Extension**.  
+    >  Le **valider le schéma** commande validera le schéma EDI, car le **Extension de l’éditeur de schéma** propriété du nœud racine (\<schéma\>) est définie sur **EDI Extension de l’éditeur de schéma**.  
   
 ### <a name="to-modify-annotation-properties-in-an-existing-edi-schema"></a>Pour modifier les propriétés d'annotation dans un schéma EDI existant  
   
@@ -88,7 +88,7 @@ Vous pouvez modifier un schéma EDI existant, inclus dans [!INCLUDE[btsBizTalkSe
     1.  Dans l’annotation appinfo en haut du schéma, définissez l’indicateur de validation de champ croisé (soit **X12ConditionDesignator_Check** pour les schémas X12 ou HIPAA ou **EdifactDependencyRule_Check** pour EDIFACT schémas) pour **Oui**.  
   
         > [!NOTE]
-        >  L’indicateur de validation de champ croisé est **Oui** par défaut pour [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] les schémas HIPAA.  
+        >  L’indicateur de validation de champ croisé est **Oui** par défaut pour les schémas HIPAA de BizTalk Server.  
   
     2.  Dans l'annotation pour un élément spécifique, spécifiez les conditions relationnelles (X12 ou HIPAA) ou les règles de dépendance (EDIFACT) pour l'élément. Pour plus d’informations sur ces paramètres, consultez [Validation croisée du Segment de champ](../core/cross-field-segment-validation.md).  
   

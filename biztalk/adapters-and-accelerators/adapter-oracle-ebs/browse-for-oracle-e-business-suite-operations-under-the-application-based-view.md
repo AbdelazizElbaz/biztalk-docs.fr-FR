@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d06cf551d033614cb75456845e059c6ec4ec8fa8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7d4d4d67df9d7463a699b1ec9448feeea0a9c57a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="browse-for-oracle-e-business-suite-operations-under-the-application-based-view"></a>Rechercher des opérations Oracle E-Business Suite dans la vue basée sur l’application
 Vous pouvez utiliser la [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] ou [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] pour parcourir les opérations entrantes et sortantes qui peuvent être effectuées sur Oracle E-Business Suite à l’aide de la [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]. Cette rubrique fournit des informations sur la façon de rechercher des opérations sortantes et entrantes sous la vue basée sur l’application.  
@@ -55,16 +55,16 @@ Vous pouvez utiliser la [!INCLUDE[consumeadapterservshort](../../includes/consum
      ![Parcourir les tables d’interface dans Oracle E &#45; Business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/media/fcfbe41c-14e0-43b5-aada-c4c686aecff4.gif "fcfbe41c-14e0-43b5-aada-c4c686aecff4")  
   
     > [!NOTE]
-    >  Si une table de l’interface contient des colonnes de type BLOB, CLOB, NCLOB ou BFILE l’adaptateur expose également une opération spécifique pour lire des données à partir de ces colonnes. Le nom de ces opérations sont Read_\<LOBColName >. Par exemple, si la table d’interface possède une colonne, FILE_DATA, de type BLOB, l’adaptateur expose un **Read_FILE_DATA** opération. Si une table d’interface a plus d’une colonne de type BLOB, CLOB, NCLOB et BFILE l’adaptateur expose nombre autant de Read_\<LOBColName > opérations.  
+    >  Si une table de l’interface contient des colonnes de type BLOB, CLOB, NCLOB ou BFILE l’adaptateur expose également une opération spécifique pour lire des données à partir de ces colonnes. Le nom de ces opérations sont Read_\<LOBColName\>. Par exemple, si la table d’interface possède une colonne, FILE_DATA, de type BLOB, l’adaptateur expose un **Read_FILE_DATA** opération. Si une table d’interface a plus d’une colonne de type BLOB, CLOB, NCLOB et BFILE l’adaptateur expose nombre autant de Read_\<LOBColName\> operations.  
     >   
-    >  De même, si une table de l’interface contient des colonnes de type BLOB, CLOB ou NCLOB l’adaptateur expose également une opération spécifique pour mettre à jour des données dans ces colonnes. Le nom de ces opérations sont en attente_\<LOBColName >. Par exemple, si la table d’interface possède une colonne, FILE_DATA, de type BLOB, l’adaptateur expose un **Update_FILE_DATA** opération. Si une table d’interface a plus d’une colonne de type BLOB, CLOB et NCLOB l’adaptateur expose un nombre plus grand nombre d’en attente_\<LOBColName > opérations. Notez que l’opération de mise à jour n’est pas pris en charge sur les colonnes de type BFILE.  
+    >  De même, si une table de l’interface contient des colonnes de type BLOB, CLOB ou NCLOB l’adaptateur expose également une opération spécifique pour mettre à jour des données dans ces colonnes. Le nom de ces opérations sont en attente_\<LOBColName\>. Par exemple, si la table d’interface possède une colonne, FILE_DATA, de type BLOB, l’adaptateur expose un **Update_FILE_DATA** opération. Si une table d’interface a plus d’une colonne de type BLOB, CLOB et NCLOB l’adaptateur expose un nombre plus grand nombre d’en attente_\<LOBColName\> operations. Notez que l’opération de mise à jour n’est pas pris en charge sur les colonnes de type BFILE.  
   
 6.  Développez le **vues de l’Interface** nœud pour afficher les vues de l’interface de l’application Oracle. Cliquez sur une vue de l’interface pour afficher la liste des opérations disponibles pour l’affichage dans le **catégories et opérations disponibles** boîte.  
   
      ![Parcourir les vues de l’interface dans Oracle E &#45; Business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/media/f1dc14cc-ad77-47ed-b0b0-b5fc78ed545b.gif "f1dc14cc-ad77-47ed-b0b0-b5fc78ed545b")  
   
     > [!NOTE]
-    >  Si une vue de l’interface contient des colonnes de type BLOB, CLOB, NCLOB ou BFILE l’adaptateur expose également une opération spécifique pour lire des données à partir de ces colonnes. Le nom de ces opérations sont Read_\<LOBColName >. Par exemple, si la vue de l’interface possède une colonne, FILE_CONTENT, de type BLOB, l’adaptateur expose un **Read_FILE_CONTENT** opération. Si une vue de l’interface possède plus d’une colonne de type BLOB, CLOB, NCLOB ou BFILE l’adaptateur exposera nombre autant de Read_\<LOBColName > opérations. Notez qu’en attente_\<LOBColName > opérations ne sont pas prises en charge sur les vues.  
+    >  Si une vue de l’interface contient des colonnes de type BLOB, CLOB, NCLOB ou BFILE l’adaptateur expose également une opération spécifique pour lire des données à partir de ces colonnes. Le nom de ces opérations sont Read_\<LOBColName\>. Par exemple, si la vue de l’interface possède une colonne, FILE_CONTENT, de type BLOB, l’adaptateur expose un **Read_FILE_CONTENT** opération. Si une vue de l’interface possède plus d’une colonne de type BLOB, CLOB, NCLOB ou BFILE l’adaptateur exposera nombre autant de Read_\<LOBColName\> operations. Notez qu’en attente_\<LOBColName\> opérations ne sont pas prises en charge sur les vues.  
   
 7.  Cliquez sur le **programmes simultanés** nœud pour afficher les programmes simultanés pour une application dans le **catégories et opérations disponibles** boîte.  
   

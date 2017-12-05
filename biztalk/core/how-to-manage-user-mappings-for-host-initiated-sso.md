@@ -15,11 +15,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4dc65f584bdd474314cd976edc586d0ed60f0505
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a0bf65bdb3de30d5b701946215b5c7ae7d40d828
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-manage-user-mappings-for-host-initiated-sso"></a>Authentification unique initiée par le comment gérer des mappages utilisateur pour l’hôte
 Les procédures suivantes permettent de créer des mappages, de définir les informations d'identification et d'activer ou de désactiver le mappage.  
@@ -40,9 +40,9 @@ Les procédures suivantes permettent de créer des mappages, de définir les inf
   
 2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
-4.  Type **ssomanage – createmappings \<fichier de mappage >**, où **fichier de mappage >** est le nom du fichier xml.  
+4.  Type **ssomanage – createmappings \<fichier de mappage\>**, où **fichier de mappage >** est le nom du fichier xml.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -69,9 +69,9 @@ Les procédures suivantes permettent de créer des mappages, de définir les inf
   
 2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
-4.  Type **ssomanage - setcredentials \<nom de compte Windows > \<nom de l’application >**.  
+4.  Type **ssomanage - setcredentials \<nom du compte Windows\> \<nom de l’application\>**.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -82,9 +82,9 @@ Les procédures suivantes permettent de créer des mappages, de définir les inf
   
 2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
-4.  Type **ssomanage - setcredentials \<nom du compte externe > \<nom de l’application >**.  
+4.  Type **ssomanage - setcredentials \<nom du compte externe\> \<nom de l’application\>**.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -95,9 +95,9 @@ Les procédures suivantes permettent de créer des mappages, de définir les inf
   
 2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
-4.  Type **ssomanage - enablemapping \<nom de compte Windows > \<nom de l’application >**.  
+4.  Type **ssomanage - enablemapping \<nom du compte Windows\> \<nom de l’application\>**.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -108,9 +108,9 @@ Les procédures suivantes permettent de créer des mappages, de définir les inf
   
 2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
-4.  Type **ssomanage - disablemapping \<nom de compte Windows > \<nom de l’application >**.  
+4.  Type **ssomanage - disablemapping \<nom du compte Windows\> \<nom de l’application\>**.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -121,9 +121,9 @@ Les procédures suivantes permettent de créer des mappages, de définir les inf
   
 2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
-4.  Type **ssomanage - enablemapping \<nom du compte externe > \<nom de l’application >**.  
+4.  Type **ssomanage - enablemapping \<nom du compte externe\> \<nom de l’application\>**.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -134,12 +134,12 @@ Les procédures suivantes permettent de créer des mappages, de définir les inf
   
 2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
-4.  Type **ssomanage - disablemapping \<nom du compte externe > \<nom de l’application >**.  
+4.  Type **ssomanage - disablemapping \<nom du compte externe\> \<nom de l’application\>**.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
   
 ## <a name="see-also"></a>Voir aussi  
- [L’authentification unique initiée par l’hôte](../core/host-initiated-sso.md)
+ [Authentification unique initiée par l’hôte](../core/host-initiated-sso.md)

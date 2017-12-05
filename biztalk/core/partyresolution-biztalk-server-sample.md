@@ -23,11 +23,11 @@ caps.latest.revision: "33"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: abf8944c3f55422189c0866608a3fd412dafe21d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: be8d7e33cefd2272490bd2f01243ff03b0e7009a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="partyresolution-biztalk-server-sample"></a>PartyResolution (exemple BizTalk Server)
 L'exemple PartyResolution illustre l'utilisation des orchestrations BizTalk avec la résolution de tiers pour acheminer les messages vers l'un des deux destinataires possibles.  
@@ -125,7 +125,7 @@ L'exemple PartyResolution illustre l'utilisation des orchestrations BizTalk avec
 -   Shipper1Process.odx et Shipper2Process.odx sont générés pour recevoir le bordereau de livraison et l'avis d'expédition de SupplierProcess.odx, ainsi que pour renvoyer la réponse à SupplierProcess.odx. Dans les deux orchestrations d'expéditeur, la corrélation est utilisée et son type est basé sur la propriété promue PONo.  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
- *\<Exemples de chemin d’accès >*\Orchestrations\PartyResolution\  
+ *\<Exemples de chemin d’accès\>*\Orchestrations\PartyResolution\  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   

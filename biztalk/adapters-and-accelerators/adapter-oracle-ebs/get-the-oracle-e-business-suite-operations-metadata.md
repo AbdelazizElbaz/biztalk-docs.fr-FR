@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f49bda367f9929d3ab320ac7bbaeee6ed49de2a8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1443219f8562caee53547be3f78df15834ddf4b7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="get-the-oracle-e-business-suite-operations-metadata"></a>Obtenir les métadonnées des opérations Oracle E-Business Suite
 Vous pouvez utiliser la [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] pour générer le schéma pour les artefacts d’Oracle E-Business Suite sélectionnés. Après avoir parcouru et rechercher les artefacts que vous voulez appeler, vous pouvez générer le schéma pour ces artefacts et envoyer des messages, conforme au schéma, pour Oracle E-Business Suite.  
@@ -63,10 +63,10 @@ Vous pouvez utiliser la [!INCLUDE[consumeadapterservshort](../../includes/consum
     >  Si vous utilisez le module additionnel Consume Adapter Service pour générer des métadonnées pour les opérations sur les artefacts d’Oracle, par défaut, les fichiers sont créés avec une convention d’affectation de noms spécifique : le nom de fichier XSD généré a les trois éléments suivants :  
     >   
     >  -   « OracleEBSBinding » ou le préfixe fourni dans le **préfixe de nom de fichier** boîte.  
-    > -   Le nom inclus dans le **fileNameHint** balise d’annotation dans le fichier WSDL généré. Pour les opérations, l’indicateur de nom de fichier est le même que le groupe de l’opération. Pour les types complexes, l’indicateur de nom de fichier est l’espace de noms sans le préfixe « http://schemas.microsoft.com/OracleEBS/2008/05/ ». Par exemple, l’indicateur de nom de fichier pour une opération de table d’interface suit la convention \<InterfaceTables > + < app_short_name > + < interface_table_name >.  
+    > -   Le nom inclus dans le **fileNameHint** balise d’annotation dans le fichier WSDL généré. Pour les opérations, l’indicateur de nom de fichier est le même que le groupe de l’opération. Pour les types complexes, l’indicateur de nom de fichier est l’espace de noms sans le préfixe « http://schemas.microsoft.com/OracleEBS/2008/05/ ». Par exemple, l’indicateur de nom de fichier pour une opération de table d’interface suit la convention \<InterfaceTables\>+ < app_short_name > + < interface_table_name >.  
     > -   (Facultatif) Nombre entier pour vous assurer que le nom de fichier est unique.  
     >   
-    >  Enfin, le nom d’un fichier XSD est arrivé à en tant que < file_name_prefix > +\<fileNameHint > + n, où « n » est un entier unique.  
+    >  Enfin, le nom d’un fichier XSD est arrivé à en tant que < file_name_prefix > +\<fileNameHint\>+ n, où « n » est un entier unique.  
   
     > [!NOTE]
     >  Le [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] crée également un fichier de liaison (un fichier XML) qui contient les propriétés de liaison que vous avez spécifié quand générer le schéma pour une opération et l’action SOAP pour appeler l’opération. Vous pouvez importer ce fichier de liaison dans le [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] set de la console d’Administration pour créer un port personnalisé WCF avec l’URI de connexion, les propriétés de liaison et l’action SOAP. Pour plus d’informations, consultez [configurer une liaison de port physique à l’aide d’un fichier de liaison de port pour la base de données Oracle](../../adapters-and-accelerators/adapter-oracle-database/configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-database.md).  

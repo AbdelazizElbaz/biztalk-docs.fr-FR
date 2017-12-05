@@ -12,14 +12,14 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c550e9953332458fd79f4a3f6b7e29bece9fa127
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c47976873fcdd4efbb63bbceca653802cb8b9962
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="biztalk-server-integration"></a>Intégration de BizTalk Server
-AmberPoint de packages son produit d’intégration de Microsoft BizTalk Server comme un composant de pipeline BizTalk personnalisé. Vous pouvez ajouter ce composant à votre existant à l’aide des pipelines personnalisés [!INCLUDE[vs2010](../includes/vs2010-md.md)], comme illustré dans la Figure 1.  
+AmberPoint de packages son produit d’intégration de Microsoft BizTalk Server comme un composant de pipeline BizTalk personnalisé. Vous pouvez ajouter ce composant à vos pipelines personnalisés existants à l’aide de Visual Studio, comme illustré dans la Figure 1.  
   
  ![Pipeline VisualStudio](../esb-toolkit/media/ch9-visualstudiopipeline.jpg "Ch9-VisualStudioPipeline")  
   
@@ -36,4 +36,4 @@ AmberPoint de packages son produit d’intégration de Microsoft BizTalk Server 
  **Un AmberPoint de liaison le pipeline à un adaptateur de réception**  
   
 > [!NOTE]
->  Le produit de système de gestion AmberPoint SOA (SMS) est un produit de AmberPoint, Inc. qui s’intègre à [!INCLUDE[prague](../includes/prague-md.md)]. Pour plus d’informations sur AmberPoint et leurs produits de gouvernance SOA, consultez le [AmberPoint](http://go.microsoft.com/fwlink/?LinkId=188561) site Web.
+>  Le produit de système de gestion AmberPoint SOA (SMS) est un produit de AmberPoint, Inc. qui s’intègre à BizTalk Server. Pour plus d’informations sur AmberPoint et leurs produits de gouvernance SOA, consultez le [AmberPoint](http://go.microsoft.com/fwlink/?LinkId=188561) site Web.

@@ -16,11 +16,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 17a29c6e00ee56c6869b9d9326d045a2ad8fb5fd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6540259fd6983fd418e57ff700de3f1b550016ec
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="working-with-failed-message-subscriptions"></a>Utilisation des abonnements aux messages ayant échoué
 Lorsque le [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] processus du désassembleur (traite et valide) un message, il promeut les propriétés pour ce message. Ces propriétés promues fournissent des informations sur l’exactitude et la validité du message, ainsi que des informations relatives au traitement par lots si A4SWIFT a reçu le message dans le cadre d’un traitement entrant. Pour obtenir une liste complète de ces propriétés, consultez [propriétés promues A4SWIFT_ *](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md).  
@@ -55,8 +55,8 @@ Lorsque le [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWI
 >  Si les abonnements se chevauchent, A4SWIFT effectuera tous les abonnements. Autrement dit, si plusieurs services (port d’envoi ou d’orchestration) possède des expressions de filtre remplies par un message particulier, tous les services de ce type seront le même message. Par exemple, si un port d’envoi s’abonne à tous les messages ayant échoué et une orchestration s’abonne aux messages uniquement avec des erreurs d’analyse, les deux abonnements soit remplies lorsque A4SWIFT rencontre des erreurs d’analyse lors du traitement d’un message. Veillez à éliminer les chevauchements indésirables dans les abonnements entre les services.  
   
 > [!NOTE]
->  Si A4SWIFT reçoit et traite un message et publie le message à la base de données MessageBox, mais le message ne satisfait pas les abonnements, A4SWIFT suspend le message avec un [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] message d’erreur indiquant un manque d’abonnés. Par exemple, si vous avez un abonnement à tous les messages de service « A4SWIFT_Failed == false », mais aucun service de s’abonner aux messages où « A4SWIFT_Failed == true », puis les messages dont l’analyse a échoué ou la validation est effectivement interrompue en raison d’un manque d’abonnés. Ce scénario réellement vous permet de reproduire traditionnelle suspension des messages ayant échoué. Veillez à vous abonner à tous les messages que vous ne souhaitez pas avoir suspendu. Consultez [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] aide pour plus d’informations sur les abonnements de base de données MessageBox, ports d’envoi, orchestrations et les expressions de filtre.  
+>  Si A4SWIFT reçoit et traite un message et publie le message à la base de données MessageBox, mais le message ne satisfait pas les abonnements, A4SWIFT suspend le message avec un [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] message d’erreur indiquant un manque d’abonnés. Par exemple, si vous avez un abonnement à tous les messages de service « A4SWIFT_Failed == false », mais aucun service de s’abonner aux messages où « A4SWIFT_Failed == true », puis les messages dont l’analyse a échoué ou la validation est effectivement interrompue en raison d’un manque d’abonnés. Ce scénario réellement vous permet de reproduire traditionnelle suspension des messages ayant échoué. Veillez à vous abonner à tous les messages que vous ne souhaitez pas avoir suspendu. Consultez l’aide de BizTalk Server pour plus d’informations sur les abonnements de base de données MessageBox, ports d’envoi, orchestrations et les expressions de filtre.  
   
  Contenu de cette section :  
   
--   [Messages d’échec et les objets ErrorCollection](../../adapters-and-accelerators/accelerator-swift/failed-messages-and-errorcollection-objects.md)
+-   [Échecs de messages et objets ErrorCollection](../../adapters-and-accelerators/accelerator-swift/failed-messages-and-errorcollection-objects.md)

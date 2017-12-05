@@ -12,11 +12,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 09369108d5e122bb8243ac94d2748db7bc1e06f7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4ed4f0961bc80a3fe858caaca1d4aa51644912be
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="known-issues-with-the-windows-sharepoint-services-adapter"></a>Problèmes connus avec l'adaptateur Windows SharePoint Services
 Cette section contient des informations qui peuvent vous permettre d'éviter certaines erreurs.  
@@ -24,7 +24,7 @@ Cette section contient des informations qui peuvent vous permettre d'éviter cer
 ## <a name="known-issues"></a>Problèmes connus  
   
 #### <a name="wss-adapter-fails-to-start-a-workflow-attached-to-a-doc-librarysharepoint-list"></a>L'adaptateur WSS ne démarre pas un workflow associé à une bibliothèque de documents/liste SharePoint  
- Dans le cadre de l'utilisation de l'adaptateur WSS de BizTalk en vue de soumettre un document ou un élément de liste à une bibliothèque de documents/liste SharePoint, celui-ci ne parvient pas à démarrer le workflow associé à cette liste. La solution de contournement consiste à copier le code XML suivant dans le fichier \Program Files\Microsoft BizTalk Server 20xx\Business Activity Services\BTSharePointV3AdapterWS\web.config.  Le ci-dessous XML code doit être inséré à l’intérieur de la \<configuration > élément.  
+ Dans le cadre de l'utilisation de l'adaptateur WSS de BizTalk en vue de soumettre un document ou un élément de liste à une bibliothèque de documents/liste SharePoint, celui-ci ne parvient pas à démarrer le workflow associé à cette liste. La solution de contournement consiste à copier le code XML suivant dans le fichier \Program Files\Microsoft BizTalk Server 20xx\Business Activity Services\BTSharePointV3AdapterWS\web.config.  Le ci-dessous XML code doit être inséré à l’intérieur de la \<configuration\> élément.  
   
 ```  
 <configSections>  

@@ -12,14 +12,14 @@ caps.latest.revision: "29"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f0e76fee8ce74f11ec0f1a14334447114f3c4ed0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 937fcb3618bf3bde4883242d48da2a841f00dea5
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="biztalk-server-2010-hyper-v-guide"></a>Guide de Hyper-V de BizTalk Server 2010
-L’objectif de ce guide est de fournir des conseils pratiques pour l’utilisation de Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] avec Microsoft [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] Hyper-V. L’accent est mis sur [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], mais les méthodes d’évaluation des performances et les scénarios de test de performances sont utiles pour l’analyse des performances des applications de serveur virtualisé en général. Ce guide sera un intérêt pour les Communautés à la fois les professionnels de l’informatique et développeurs.  
+L’objectif de ce guide est de fournir des conseils pratiques pour l’utilisation de Microsoft BizTalk Server avec Microsoft [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] Hyper-V. L’accent est mis sur [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], mais les méthodes d’évaluation des performances et les scénarios de test de performances sont utiles pour l’analyse des performances des applications de serveur virtualisé en général. Ce guide sera un intérêt pour les Communautés à la fois les professionnels de l’informatique et développeurs.  
   
  Pour télécharger une copie de ce guide, accédez à [http://go.microsoft.com/fwlink/?LinkId=149267](http://go.microsoft.com/fwlink/?LinkId=149267).  
   
@@ -66,7 +66,7 @@ L’objectif de ce guide est de fournir des conseils pratiques pour l’utilisat
 -   Développeurs intéressés par l’optimisation des performances et d’identifier les goulots d’étranglement de performances  
   
 ### <a name="goals-of-this-guide"></a>Objectifs de ce Guide  
- Le principal objectif de ce guide est de fournir des indications sur la façon de déterminer si [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] s’exécutant sur Hyper-V est susceptible de répondre aux attentes de performances. Ce guide sera également de valeur comme une aide pour l’optimisation d’un déploiement [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] application.  
+ Le principal objectif de ce guide est de fournir des indications sur la façon de déterminer si BizTalk Server s’exécutant sur Hyper-V est probable répondre aux attentes de performances. Ce guide sera également de valeur comme une aide pour l’optimisation d’un déploiement [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] application.  
   
  Ce projet a été effectué avec les objectifs suivants :  
   

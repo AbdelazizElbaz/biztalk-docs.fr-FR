@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e58b11cff00d4b235a5c14e75663fdf7e581f782
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 58909b0d0cb0a126dd84e21809ca8e8f3941d758
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="wcf-adapter-faq-message-flow-and-mapping"></a>FAQ sur les adaptateurs WCF : Flux de messages et mappage
 ## <a name="what-is-the-message-flow-within-the-wcf-and-biztalk-systems"></a>Qu'est-ce que le flux de messages dans les systèmes WCF et BizTalk ?  
@@ -86,9 +86,9 @@ ms.lasthandoff: 09/20/2017
   
  Un adaptateur WCF attend les propriétés suivantes dans les messages WCF pour écrire ou promouvoir les valeurs d'en-tête SOAP dans le contexte du message BizTalk :  
   
--   Pour promouvoir les valeurs d’en-tête SOAP dans le contexte de message BizTalk, les adaptateurs WCF recherchent la paire de clé **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote** et la valeur **liste < KeyValuePair\<XmlQualifiedName, objet >>**. À l’aide de cette paire, les adaptateurs extraient l’espace de noms, le nom et la valeur de la **XmlQualifiedName** de l’objet et les utilisent pour promouvoir les valeurs d’en-tête.  
+-   Pour promouvoir les valeurs d’en-tête SOAP dans le contexte de message BizTalk, les adaptateurs WCF recherchent la paire de clé **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote** et la valeur **liste < KeyValuePair\<XmlQualifiedName, objet\>>**. À l’aide de cette paire, les adaptateurs extraient l’espace de noms, le nom et la valeur de la **XmlQualifiedName** de l’objet et les utilisent pour promouvoir les valeurs d’en-tête.  
   
--   Pour écrire, mais pas la promotion, les valeurs d’en-tête SOAP dans le contexte de message BizTalk, les adaptateurs WCF recherchent la paire de clé **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/WriteToContext** et la valeur **Liste < KeyValuePair\<XmlQualifiedName, objet >>.** À l'aide de cette paire, les adaptateurs WCF écrivent les valeurs dans le contexte du message.  
+-   Pour écrire, mais pas la promotion, les valeurs d’en-tête SOAP dans le contexte de message BizTalk, les adaptateurs WCF recherchent la paire de clé **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/WriteToContext** et la valeur **Liste < KeyValuePair\<XmlQualifiedName, objet\>>.** À l'aide de cette paire, les adaptateurs WCF écrivent les valeurs dans le contexte du message.  
   
 > [!NOTE]
 >  Les propriétés promues doivent également être spécifiées dans le schéma de propriété BizTalk pour être acceptées par le moteur d'exécution BizTalk.  

@@ -21,11 +21,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8ea715e92f7bfaa2f9d3baf3e82223f95328e3da
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b8361875cf34f14118fb93818c78a6ca7d12a86f
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="high-availability-and-the-microsoft-operations-framework"></a>Haute disponibilité et structure Microsoft Operations Framework (MOF)
 L'utilisation du modèle de processus de la structure MOF pour planifier et implémenter une solution Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] hautement disponible permet de vous assurer que les processus utilisés à chaque étape du cycle de vie de la solution sont appropriés. En faisant vos prévisions pour chaque étape du cycle de vie où la question de la haute disponibilité se pose, il vous est possible de vous faciliter les procédures d'installation, de maintenance et de dépannage touchant à la disponibilité dans votre environnement.  
@@ -59,7 +59,7 @@ L'utilisation du modèle de processus de la structure MOF pour planifier et impl
   
 -   Vous pouvez déterminer un niveau de capacité particulier en matière de disponibilité, de temps de fonctionnement et de traitement de la charge en fonction de l'accord de niveau de service passé avec les partenaires ou les clients.  
   
--   Si vous effectuez une mise à niveau de [!INCLUDE[btsBizTalkServer2000](../includes/btsbiztalkserver2000-md.md)] ou [!INCLUDE[btsBizTalkServer2002](../includes/btsbiztalkserver2002-md.md)] vers [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], vous pouvez vérifier si le matériel existant correspond à la configuration matérielle minimale requise pour [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] et aux exigences liées à l'accord de niveau de service conclu.  
+-   Si vous mettez à niveau à partir de [!INCLUDE[btsBizTalkServer2000](../includes/btsbiztalkserver2000-md.md)] ou [!INCLUDE[btsBizTalkServer2002](../includes/btsbiztalkserver2002-md.md)] à BizTalk Server, vous devez déterminer si votre matériel existant satisfait la configuration matérielle minimale requise pour BizTalk Server et la configuration requise à partir de l’accord de niveau de service.  
   
 -   Il vous est possible de définir la configuration de cluster la mieux adaptée aux bases de données de BizTalk Server et répondant le mieux à vos besoins. Les processus d'exécution écrivent dans la base de données de gestion BizTalk, les bases de données MessageBox, la base de données du composant d'analyse des suivis, celle des schémas en étoile BAM, la base de données d'importation principale BAM et celle des archives BAM. Ces bases de données sont donc particulièrement importantes en cas de sinistre et sont prioritaires lorsqu'il s'agit de déterminer les bases de données à mettre en cluster. Seuls les utilisateurs ou les outils écrivent dans les autres bases de données. Pour les bases de données MessageBox, vous pouvez envisager la constitution d'un cluster de quatre serveurs sur un modèle de type actif/actif/actif/passif afin de réduire le plus possible les besoins en matériel.  
   
@@ -122,4 +122,4 @@ L'utilisation du modèle de processus de la structure MOF pour planifier et impl
  Au cours du processus de gestion de la continuité de service, vous devez déterminer la configuration de haute disponibilité à implémenter de manière à fournir aux clients les services qu'ils demandent et ce, de manière ininterrompue, même lorsqu'un temps d'arrêt planifié ou inattendu se produit. Un temps d'arrêt inattendu peut correspondre à une panne matérielle ou à un événement naturel.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Exemples de scénarios de haute disponibilité BizTalk Server](../core/sample-biztalk-server-high-availability-scenarios.md)
+ [Exemples de scénarios BizTalk Server à haute disponibilité](../core/sample-biztalk-server-high-availability-scenarios.md)

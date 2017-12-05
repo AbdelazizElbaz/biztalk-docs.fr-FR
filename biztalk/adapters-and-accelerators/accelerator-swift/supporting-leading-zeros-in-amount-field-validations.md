@@ -16,11 +16,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1de45b5acbc780fad0847ab207d0d5c72ca2a652
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3559b63ec7588fa2d7451779947a476cf19b7bf0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="supporting-leading-zeros-in-amount-field-validations"></a>Des zéros non significatifs dans les Validations de champ de montant de la prise en charge
 Les stratégies de validation de certains types de message effectue les validations sur les champs de montant. Pour activer les zéros non significatifs dans les champs de montant, vous devez modifier la stratégie de validation pour le type de message. Vous pouvez créer une nouvelle version de la stratégie de validation par défaut et modifier l’argument dans l’éditeur des règles d’entreprise, ou vous pouvez modifier la stratégie par défaut manuellement dans un éditeur de texte avant la stratégie est déployée.  
@@ -41,7 +41,7 @@ Les stratégies de validation de certains types de message effectue les validati
   
 1.  Ouvrez un éditeur de texte, tel que le bloc-notes.  
   
-2.  Dans l’éditeur, accédez à l’emplacement de la stratégie de validation de message dans lequel vous souhaitez activer ou désactiver les zéros non significatifs. Par exemple, vous pouvez trouver dans la stratégie de validation de message pour le type de message MT103, MT103_Validation_Policy.xml,  *\<lecteur >*: / programme ou de fichiers Microsoft BizTalk Accelerator pour SWIFT/SWIFT Messages/catégorie 1 / MT103. Ouvrez la stratégie de validation.  
+2.  Dans l’éditeur, accédez à l’emplacement de la stratégie de validation de message dans lequel vous souhaitez activer ou désactiver les zéros non significatifs. Par exemple, vous pouvez trouver dans la stratégie de validation de message pour le type de message MT103, MT103_Validation_Policy.xml,  *\<lecteur\>*: / programme ou de fichiers Microsoft BizTalk Accelerator pour SWIFT/SWIFT Messages / Catégorie 1/MT103. Ouvrez la stratégie de validation.  
   
 3.  Dans la stratégie, effectuez une recherche sur le **CheckValidAmount** (méthode).  
   

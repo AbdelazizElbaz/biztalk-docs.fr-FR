@@ -15,11 +15,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1e16020afb17d17c8add8e973ade0cd0c5cfcbbc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 040fee5fab56a1e54b777fc7548b8ff28e5b07ec
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-a-well-formed-message-instance-from-a-pip"></a>Création d'une instance de message bien formée à partir d'un processus PIP
 Cette rubrique explique comment produire une instance de message bien formée. Vous pouvez générer un modèle pour une instance de message à partir du processus d'interface entres partenaires (PIP). Après avoir effectué cette opération, vous devez modifier ce modèle, afin qu'il soit bien formé, avant d'ajouter vos données.  
@@ -30,7 +30,7 @@ Cette rubrique explique comment produire une instance de message bien formée. V
   
 2.  Dans le menu **Fichier** , pointez sur **Ouvrir**, puis cliquez sur **Projet**.  
   
-3.  Recherchez \< *lecteur*> \Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNetSDK\Schemas, cliquez sur **RNPIPs.btproj**, puis cliquez sur **Ouvrir**.  
+3.  Recherchez \< *lecteur*\>\Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNetSDK\Schemas, cliquez sur **RNPIPs.btproj**, puis cliquez sur **ouvrir**.  
   
 4.  Dans l'Explorateur de solutions, développez **RNPIPs**, puis cliquez avec le bouton droit sur le PIP pour lequel vous voulez créer une instance.  
   

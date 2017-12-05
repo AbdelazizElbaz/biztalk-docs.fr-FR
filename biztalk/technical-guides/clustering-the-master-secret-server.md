@@ -12,14 +12,14 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 674cbf64e11817c951d3841ebdc9f6ee979c0e8c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6f37997582cbd94d8bbb5eaee829eead0af85ad2
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="clustering-the-master-secret-server"></a>Clustering du serveur de secret principal
-Le [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] service application conserve une dépendance codée en dur sur le service Enterprise Single Sign-On (SSO) qui est installé avec [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Le service d’authentification unique doit être en mesure de communiquer avec le serveur de secret principal à démarrer. Nous vous recommandons de mettre en cluster le service d’authentification unique sur le serveur de secret principal à tolérance de pannes pour le serveur de secret principal. Pour plus d’informations, consultez [Options d’Installation de l’authentification unique de haute disponibilité](http://go.microsoft.com/fwlink/?LinkId=156838) (http://go.microsoft.com/fwlink/?LinkId=156838) dans [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] aide.  
+Le service d’application BizTalk Server conserve une dépendance codée en dur sur le service Enterprise Single Sign-On (SSO) qui est installé avec [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Le service d’authentification unique doit être en mesure de communiquer avec le serveur de secret principal à démarrer. Nous vous recommandons de mettre en cluster le service d’authentification unique sur le serveur de secret principal à tolérance de pannes pour le serveur de secret principal. Pour plus d’informations, consultez [Options d’Installation de l’authentification unique de haute disponibilité](http://go.microsoft.com/fwlink/?LinkId=156838) (http://go.microsoft.com/fwlink/?LinkId=156838) dans l’aide de BizTalk Server.  
   
 ## <a name="preparing-for-clustering-the-master-secret-server"></a>Préparation pour le Clustering du serveur de secret principal  
   
@@ -52,4 +52,4 @@ Le [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] 
  Pour obtenir des instructions détaillées sur le serveur de secret principal de clustering, consultez [mise en Cluster du serveur de secret principal](http://go.microsoft.com/fwlink/?LinkId=156839) (http://go.microsoft.com/fwlink/?LinkId=156839) dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] aide.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Désignation d’un nouveau serveur de secret principal manuellement](../technical-guides/designating-a-new-master-secret-server-manually.md)
+ [Désignation manuelle d’un nouveau serveur de secret principal](../technical-guides/designating-a-new-master-secret-server-manually.md)

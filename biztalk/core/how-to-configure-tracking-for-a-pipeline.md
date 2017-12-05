@@ -24,11 +24,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e933e9b50c99e11013ceaedf65c4f253ad1620c2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f34abe4d9d8b97b1c61bfc6201c3d36b977d0697
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-tracking-for-a-pipeline"></a>Configuration du suivi pour un pipeline
 La présente rubrique explique comment configurer le suivi d'un pipeline à l'aide de la console Administration de BizTalk Server. Vous pouvez configurer le suivi à des fins de dépannage et d'audit. Vous pouvez afficher des propriétés de message, des événements de port et des événements de message. Vous pouvez également suivre des événements de message et des événements de port pour des messages.  
@@ -51,7 +51,7 @@ La présente rubrique explique comment configurer le suivi d'un pipeline à l'ai
   
 3.  Procédez de l'une des manières suivantes :  
   
-    -   Pour configurer le suivi pour l’une de la valeur par défaut de pipelines BizTalk, développez \<tous les artefacts >.  
+    -   Pour configurer le suivi pour l’une de la valeur par défaut de pipelines BizTalk, développez \<tous les artefacts\>.  
   
     -   Pour configurer le suivi pour un pipeline personnalisé déployé dans une application BizTalk, développez l'application contenant le pipeline.  
   
@@ -70,4 +70,4 @@ La présente rubrique explique comment configurer le suivi d'un pipeline à l'ai
     |**Messages d’après le traitement de pipeline**|Activer cette case à cocher pour enregistrer et effectuer le suivi des corps de messages envoyés par le pipeline, qui contient des métadonnées telles que les URL ou les propriétés promues. S'il s'agit d'un pipeline de réception, le corps du message correspond au message traité devant être transmis à la base de données MessageBox. Il peut s'agit d'un message XML, selon l'application. Dans le cas de l'utilisation d'un mappage BizTalk et s'il s'agit d'un pipeline d'envoi, le suivi a lieu avant le traitement du mappage sortant.<br /><br /> Cette case à cocher est disponible uniquement si **Message envoyer et recevoir des événements** est sélectionnée.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Gestion des Pipelines](../core/managing-pipelines.md)
+ [Gestion des pipelines](../core/managing-pipelines.md)

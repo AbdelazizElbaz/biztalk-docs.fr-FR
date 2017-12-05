@@ -16,11 +16,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b3b2b5eadcbdbdc357529f4ad8af47d46840d47e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c1356209f700fc7ceff220f4b0f8fcd3dd67db07
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues"></a>Problèmes connus
 Cette section contient des informations utiles qui peuvent vous aider à éviter les erreurs avec [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]. Les problèmes connus sont regroupées dans les domaines suivants :  
@@ -58,7 +58,7 @@ Cette section contient des informations utiles qui peuvent vous aider à éviter
  Lors de l’orchestration de réparation de messages achemine vers la MessageBox un message non analysé qui a été résolu, il définit le [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_MRSRDepartment propriété vide de chaîne et de le promouvoir. Un port d’envoi ne sera pas en mesure de vous abonner sur cette propriété.  
   
 #### <a name="cannot-save-a-department-if-the-sso-service-has-been-stopped"></a>Impossible d’enregistrer un service si le service d’authentification unique a été arrêté.  
- Si vous essayez d’ajouter un service lorsque le service SSO est arrêté, vous recevrez une erreur indiquant que le serveur SSO principal \<machinename > a échoué. Vérifiez que SSO est configuré et que le service SSO est exécuté sur ce serveur.  
+ Si vous essayez d’ajouter un service lorsque le service SSO est arrêté, vous recevrez une erreur indiquant que le serveur SSO principal \<machinename\> a échoué. Vérifiez que SSO est configuré et que le service SSO est exécuté sur ce serveur.  
   
 #### <a name="a-department-name-must-not-contain-the-character-"></a>Nom d’un service ne doit pas contenir le caractère « ~ »  
  Un nom de service qui contient le caractère « ~ » entraîne des problèmes avec la base de données A4SWIFT.  
@@ -81,7 +81,7 @@ Cette section contient des informations utiles qui peuvent vous aider à éviter
   
  Bien que le [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] programme d’installation définit CacheEntries de 32 à 512, désinstallation [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] ne réinitialise pas CacheEntries comprise entre 512 et 32.  
   
- Pour plus d’informations, consultez la rubrique « Règle moteur et réglage des paramètres de Configuration » dans [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] aide.  
+ Pour plus d’informations, consultez la rubrique « Règle moteur et réglage des paramètres de Configuration » dans l’aide de BizTalk Server.  
   
 #### <a name="building-a-pipeline-project-may-result-in-a-large-number-of-warnings"></a>Génération d’un projet de pipeline peut entraîner un grand nombre d’avertissements  
  Lorsque vous ajoutez l’assembleur SWIFT à un pipeline d’envoi ou le désassembleur SWIFT à un pipeline de réception et puis générez le projet de pipeline contenant ces pipelines, vous pouvez recevoir une série d’avertissements liés aux composants de pipeline. Ces avertissements indiquent que Visual Studio n’a pas trouvé dépendances. Vous pouvez corriger la condition qui est à ces avertissements en modifiant la propriété copie locale de l’assembly SWIFTAsm ou SWIFTDasm dans le dossier de référence, comme suit :  

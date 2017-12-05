@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 22572f01f1e76dae36cbdcb34a4321c2db1c44c6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d5813bb4881535290422e2ba01d20d4370f4e604
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="sending-a-preserved-batch-interchange"></a>Envoi d'un échange de lot préservé
 Quand le pipeline d'envoi EDI traite un échange de lot préservé sortant, il traite l'échange traité par lot comme un tout. Il réutilise normalement les segments (de contrôle) existants de l'enveloppe pour créer l'échange EDI, plutôt que d'appliquer une enveloppe basée sur l'accord. Cela se produit lorsque le **entrants option de traitement par lots** est définie sur **préserver l’échange : suspendre l’échange en cas d’erreur** ou **préserver l’échange : suspendre les documents informatisés sur Erreur**.  
@@ -43,7 +43,7 @@ Quand le pipeline d'envoi EDI traite un échange de lot préservé sortant, il t
 >  Vous pouvez envoyez un lot préservé avec un pipeline d'envoi XML. Cette manière de faire nécessite cependant que vous changiez l'espace de noms pour le schéma de lot. Pour plus d’informations, consultez [envoi d’un lot conservé avec un Pipeline d’envoi XML](../core/sending-a-preserved-batch-with-an-xml-send-pipeline.md).  
   
 ## <a name="error-processing"></a>Erreur lors du traitement  
- Grâce à une balise réservée dans le XML, le pipeline d'envoi EDI identifie un échange EDI en tant que lot préservé. Cette balise soit \<X12InterchangeXml > ou \<EdifactInterchangeXml >, est appliquée au document XML en EDI pipeline de réception.  
+ Grâce à une balise réservée dans le XML, le pipeline d'envoi EDI identifie un échange EDI en tant que lot préservé. Cette balise soit \<X12InterchangeXml\> ou \<EdifactInterchangeXml\>, est appliquée au document XML en EDI pipeline de réception.  
   
  Voici les cas particuliers de suspension des documents informatisés en cas d'erreur :  
   
@@ -54,4 +54,4 @@ Quand le pipeline d'envoi EDI traite un échange de lot préservé sortant, il t
 -   Si les segments de contrôle de groupe ou les segments de contrôle d'échange ne sont pas valides, un échange encodé en EDI n'est pas généré. Un journal est créé dans l'observateur d'événements, et indique si l'échange a été rejeté.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Le traitement par lot des Messages EDI sortants](../core/batching-outgoing-edi-messages.md)
+ [Traitement par lot des messages EDI sortants](../core/batching-outgoing-edi-messages.md)

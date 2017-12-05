@@ -38,11 +38,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b15d21653b9f0d6109487677484506c7a5d6bcc2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bcd1afb4843f68b56228c8e9aaa655d83f70119e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="btahl72x-flat-file-processing"></a>Traitement des fichiers plats BTAHL72X
 Les composants suivants dans [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator pour HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) processus HL7 2.X (HL7 messages codés au format) :  
@@ -85,7 +85,7 @@ Les composants suivants dans [!INCLUDE[btsCoName](../../includes/btsconame-md.md
   
 -   Qu’il n’y a trois caractères dans des segments  
   
--   Que le délimiteur de segment est \<CR > ou \<CR >\<LF > (facultatif pour le dernier segment)  
+-   Que le délimiteur de segment est \<CR\> ou \<CR\>\<LF\> (facultatif pour le dernier segment)  
   
 -   Conviennent de séparateurs de champs  
   
@@ -159,11 +159,11 @@ Les composants suivants dans [!INCLUDE[btsCoName](../../includes/btsconame-md.md
   
 ## <a name="in-this-section"></a>Dans cette section  
   
--   [Détermination du schéma dans le désassembleur 2.X HL7](../../adapters-and-accelerators/accelerator-hl7/schema-determination-in-the-hl7-2-x-disassembler.md)  
+-   [Détermination du schéma dans le désassembleur HL7 2.X](../../adapters-and-accelerators/accelerator-hl7/schema-determination-in-the-hl7-2-x-disassembler.md)  
   
--   [Détermination du schéma dans l’assembleur 2.X HL7](../../adapters-and-accelerators/accelerator-hl7/schema-determination-in-the-hl7-2-x-assembler.md)  
+-   [Détermination du schéma dans l’assembleur HL7 2.X](../../adapters-and-accelerators/accelerator-hl7/schema-determination-in-the-hl7-2-x-assembler.md)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Traitement des messages](../../adapters-and-accelerators/accelerator-hl7/message-processing.md)   
  [Le traitement des Messages HL7](../../adapters-and-accelerators/accelerator-hl7/processing-hl7-messages.md)   
- [L’utilisation des schémas 2.X HL7](../../adapters-and-accelerators/accelerator-hl7/using-hl7-2-x-schemas.md)
+ [Utilisation des schémas HL7 2.X](../../adapters-and-accelerators/accelerator-hl7/using-hl7-2-x-schemas.md)

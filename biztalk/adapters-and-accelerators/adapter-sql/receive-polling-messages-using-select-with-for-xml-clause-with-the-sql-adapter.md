@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 77ac34fb06497f72b778592b3ce4c927b0ca3a07
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 51cd634d7933f7e25de2e742711b1593bf6b6dc1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="receive-polling-messages-using-select-statements-with-for-xml-clause-from-sql-using-biztalk-server"></a>Recevoir des messages d’interrogation à l’aide des instructions SELECT avec la Clause FOR XML à partir de SQL à l’aide de BizTalk Server
 Vous pouvez configurer le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] pour recevoir des messages de modification de données périodiques de tables SQL Server ou des vues à l’aide des instructions SELECT ou des procédures stockées qui incluent une clause FOR XML. Vous pouvez spécifier ces instructions en tant qu’instruction d’interrogation de l’adaptateur s’exécute pour interroger la base de données. L’instruction d’interrogation peut être une instruction SELECT ou une procédure stockée qui retourne un jeu de résultats.  
@@ -86,7 +86,7 @@ SELECT Employee_ID ,Name ,Designation FROM Employee for xml auto, xmlschema
   
          Pour cela, car vous avez déjà ajouté le schéma sqltypes.xsd à votre projet BizTalk.  
   
-    4.  Fournir un espace de noms cible du schéma. Cliquez sur le  **\<schéma >** nœud et dans le volet Propriétés, spécifiez un espace de noms dans le **cible Namespace** propriété. Pour cette rubrique, donnez à l’espace de noms `http://ForXmlPolling/namespace`.  
+    4.  Fournir un espace de noms cible du schéma. Cliquez sur le  **\<schéma\>**  nœud et dans le volet Propriétés, spécifiez un espace de noms dans le **cible Namespace** propriété. Pour cette rubrique, donnez à l’espace de noms `http://ForXmlPolling/namespace`.  
   
 ## <a name="defining-messages-and-message-types"></a>Définition des Messages et les Types de messages  
  Le schéma que vous avez généré précédemment décrit les « types » requis pour les messages dans l’orchestration. Un message est généralement une variable, le type est défini par le schéma correspondant. Une fois que le schéma est généré, vous devez le lier aux messages à partir de la vue de l’Orchestration du projet BizTalk.  
@@ -204,7 +204,7 @@ SELECT Employee_ID ,Name ,Designation FROM Employee for xml auto, xmlschema
 -   L’adaptateur exécute l’instruction d’interrogation et reçoit un message de l’interrogation de la base de données SQL Server. Étant donné que l’instruction d’interrogation se compose d’une instruction SELECT avec une clause FOR XML, le message d’interrogation reçu par l’adaptateur ressemble à ceci :  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <Root xmlns="http://ForXmlPolling/namespace">  
       <Employee Employee_ID="10765" Name="John" Designation="Tester" xmlns="" />   
       <Employee Employee_ID="10766" Name="Sam" Designation="Manager" xmlns="" />   

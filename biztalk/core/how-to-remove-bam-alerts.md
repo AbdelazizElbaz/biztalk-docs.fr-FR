@@ -16,11 +16,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 03bbbade73537dd54a9289d2a107eaf41d0e335e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 644a6f017fee38db684fb0461bd6fa94aed65e15
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-remove-bam-alerts"></a>Suppression d'alertes BAM
 Les administrateurs utilisent la **remove-alerts** commande pour supprimer toutes les alertes à partir d’une vue spécifiée.  
@@ -31,11 +31,11 @@ Les administrateurs utilisent la **remove-alerts** commande pour supprimer toute
   
 2.  Accédez à [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking.  
   
-3.  Type **bm remove-alerts-View :\<nom de la vue >**.  
+3.  Type **bm remove-alerts-View :\<nom de la vue\>**.  
   
 4.  Appuyez sur **Entrée**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Gestion de l’Infrastructure dynamique BAM](../core/managing-the-bam-dynamic-infrastructure.md)   
  [Recommandations de sécurité BAM](../core/bam-security-recommendations.md)   
- [Utilitaire de gestion BAM](../core/bam-management-utility.md)
+ [Utilitaire de gestion de l’analyse BAM](../core/bam-management-utility.md)

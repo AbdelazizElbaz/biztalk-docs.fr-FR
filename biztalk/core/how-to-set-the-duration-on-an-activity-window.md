@@ -16,11 +16,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 50b4aaa0187c10038dde907fa8b5fa8c595d2847
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 66ef0c7200c69cd69a72a5743ca8f14a8950b17d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-set-the-duration-on-an-activity-window"></a>Définition de la durée dans une fenêtre d'activité
 Les administrateurs utilisent la **set-activitywindow** commande pour définir la durée de l’activité spécifiée.  
@@ -31,7 +31,7 @@ Les administrateurs utilisent la **set-activitywindow** commande pour définir l
   
 2.  Accédez au dossier des suivis en tapant [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\Tracking lorsque vous y êtes invité. Appuyez sur **Entrée**.  
   
-3.  Type **bm set-activitywindow-activité :\<nom de l’activité > - TimeLength :\<nombre entier > - TimeUnit : mois &#124; jour &#124; Heure &#124; Minute**.  
+3.  Type **bm set-activitywindow-activité :\<nom de l’activité\> - TimeLength :\<nombre entier\> - TimeUnit : mois &#124; jour &#124; Heure &#124; Minute**.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  

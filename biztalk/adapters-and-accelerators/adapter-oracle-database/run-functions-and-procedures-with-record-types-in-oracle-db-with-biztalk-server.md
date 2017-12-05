@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9994ad36a8048b7430bbfa06338f2473fb0a9a60
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9d8aa9b3202adaf57e7ec213a81384606eb1b8a4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-functions-and-procedures-with-record-types-in-oracle-database-using-biztalk-server"></a>Appeler des fonctions et procédures avec des Types d’enregistrements dans la base de données Oracle à l’aide de BizTalk Server
 Types d’enregistrements Oracle sont utilisés pour représenter des informations hiérarchiques dans les paramètres passés aux procédures et fonctions de PL/SQL. Le [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] met en évidence des types d’enregistrement en tant que types XML complexes. Pour plus d’informations sur la façon dont [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] prend en charge des Types d’enregistrements, consultez [opérations sur les fonctions et procédures avec des Types d’enregistrements dans la base de données Oracle.](../../adapters-and-accelerators/adapter-oracle-database/operations-on-functions-and-procedures-with-record-types-in-oracle-database.md). Pour plus d’informations sur la structure XML des Types d’enregistrements, consultez [des schémas de Message pour les Types d’enregistrements](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-record-types.md).  
@@ -248,7 +248,7 @@ Types d’enregistrements Oracle sont utilisés pour représenter des informatio
  Le premier message de demande appelle la fonction GET_ACCOUNTINFO qui retourne un type d’enregistrement imbriqué. Le message de réponse pour l’appel de la fonction GET_ACCOUNTINFO est la suivante :  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <GET_ACCOUNTINFOResponse xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG">  
   <GET_ACCOUNTINFOResult>  
     <ACCT xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG/GET_ACCOUNTINFO">  
@@ -268,7 +268,7 @@ Types d’enregistrements Oracle sont utilisés pour représenter des informatio
  Le deuxième message de demande appelle la fonction GET_ACCOUNTADDRESS qui retourne un type d’enregistrement simple. Le message de réponse pour l’appel de la fonction GET_ACCOUNTADDRESS est la suivante :  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <GET_ACCOUNTADDRESSResponse mlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG">  
   <GET_ACCOUNTADDRESSResult>  
     <ID xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG/GET_ACCOUNTADDRESS">100004</ID>  

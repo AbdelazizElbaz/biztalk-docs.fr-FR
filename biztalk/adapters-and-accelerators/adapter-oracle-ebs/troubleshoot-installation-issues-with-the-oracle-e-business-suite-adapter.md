@@ -12,11 +12,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 387ca48954fc075e696a8d3b093fbc9f1b5d7259
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 29fbee54262f1b45e3cc9be67c057767a80b325f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshoot-installation-issues-with-the-oracle-e-business-suite-adapter"></a>Résoudre les problèmes d’Installation avec l’adaptateur Oracle E-Business Suite
 Installation de Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] copie les fichiers binaires du produit sur l’ordinateur et enregistre les liaisons pour chaque carte. Cette section aborde l’utilisation de techniques de dépannage pour résoudre les erreurs d’installation.  
@@ -48,9 +48,9 @@ Installation de Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapter
   
 ##### <a name="to-register-the-adapter-binding"></a>Pour inscrire la liaison de la carte  
   
-1.  Accédez au fichier machine.config sur l’ordinateur. Par exemple, sur une plateforme 32 bits, le fichier machine.config est disponible sous \<lecteur système > : \WINDOWS\Microsoft.NET\Framework\\< version\>\CONFIG.  
+1.  Accédez au fichier machine.config sur l’ordinateur. Par exemple, sur une plateforme 32 bits, le fichier machine.config est disponible sous \<lecteur système\>: \WINDOWS\Microsoft.NET\Framework\\< version\>\CONFIG.  
   
-     Dans ce chemin d’accès, \< *version*> est la version du .NET Framework.  
+     Dans ce chemin d’accès, \< *version* \> est la version du .NET Framework.  
   
 2.  Ouvrez le fichier à l’aide d’un éditeur de texte.  
   

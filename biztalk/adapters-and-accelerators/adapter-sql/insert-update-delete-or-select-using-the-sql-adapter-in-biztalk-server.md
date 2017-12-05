@@ -12,11 +12,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f2216116e00e587d8da0d69cea8cd1c364e5786b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 688c4a192a77dbc01de438c20be709dc4b3c378c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="insert-update-delete-or-select-operations-using-biztalk-server-with-the-sql-adapter"></a>Insérer, mettre à jour, supprimer ou sélectionner des opérations à l’aide de BizTalk Server avec l’adaptateur SQL
 Le [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] expose un ensemble d’opérations standards sur les tables de base de données SQL Server et des vues. Il s’agit des opérations data manipulation language (DML). À l’aide des opérations DML, vous pouvez effectuer de simples Insert, Update, Select et opérations Delete sur les tables et les vues. Pour plus d’informations sur la façon dont l’adaptateur prend en charge ces opérations, consultez [Insert, Update, Delete et sélectionnez les opérations sur les Tables et vues à l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/insert-update-delete-and-select-on-tables-and-views-with-the-sql-adapter.md). Pour plus d’informations sur la structure du message SOAP pour ces opérations, consultez [des schémas de Message pour Insert, Update, Delete et sélectionnez les opérations sur les Tables et vues](../../adapters-and-accelerators/adapter-sql/message-schemas-for-insert-update-delete-and-select-on-tables-and-views.md).  
@@ -168,7 +168,7 @@ Le [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] expose un ensemble d�
  L’orchestration consomme le message et l’envoie à la base de données SQL Server. La réponse à partir de la base de données SQL Server est enregistrée dans l’autre emplacement de fichier définie dans le cadre de l’orchestration. Par exemple, la réponse à partir de la base de données SQL Server pour le précédent message de demande est la suivante :  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <SelectResponse xmlns="mssql://Microsoft.LobServices.Sql/2008/01/TVOp/dbo/Employee">  
   <SelectResult>  
     <Employee xmlns="mssql://Microsoft.LobServices.Sql/2008/01/Types/Tables/dbo">  
@@ -193,4 +193,4 @@ Le [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] expose un ensemble d�
 -   Si vous insérez, mettez à jour, ou suppression de grands volumes de données que vous définissez les valeurs de délai d’attente de droite pour l’adaptateur WCF et pour la transaction MS DTC. Pour plus d’informations, consultez le problème de « l’adaptateur ne peut pas insérer, mettre à jour ou supprimer des volumes importants de données en une seule opération à l’aide de BizTalk Server » dans [dépanner les problèmes opérationnels avec l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/troubleshoot-operational-issues-with-the-sql-adapter.md).  
   
 ## <a name="see-also"></a>Voir aussi  
-[Développer des applications BizTalk à l’aide de l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)
+[Développer des applications BizTalk avec l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)

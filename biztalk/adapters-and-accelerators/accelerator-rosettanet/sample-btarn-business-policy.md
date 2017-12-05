@@ -12,16 +12,16 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bfe0bd746894106fc7ac9ebeaae600fe7344ba18
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c85cbb7894f0d8bd1b61b7e7856865b49fd33859
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="sample-btarn-business-policy"></a>Exemple de stratégie d'entreprise BTARN
 Cet exemple est le code XML associé à un [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] stratégie de règles d’entreprise.  
   
- L’exemple de fichier est samplebtarnpolicy.xml dans \< *lecteur*> : \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version > Accelerator for RosettaNet\SDK\PIPAutomation\3A4.  
+ L’exemple de fichier est samplebtarnpolicy.xml dans \< *lecteur*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version\> Accelerator for RosettaNet\SDK\ PIPAutomation\3A4.  
   
 ## <a name="demonstrates"></a>Montre  
  Ce code illustre une stratégie de règles d'entreprise avec la règle suivante :  
@@ -29,4 +29,4 @@ Cet exemple est le code XML associé à un [!INCLUDE[btsCoName](../../includes/b
  IF (AccountNumber dans le message de bon de commande entrant 3A4 = « 111111111 ») et (MonetaryAmount de la commande < 500) THEN envoyer automatiquement un message de réponse  
   
 ## <a name="see-also"></a>Voir aussi  
- [Orchestration de répondeur de 3 a 4 à l’aide d’une règle d’entreprise](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)
+ [Orchestration de répondeur privé 3A4 avec une règle d’entreprise](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)

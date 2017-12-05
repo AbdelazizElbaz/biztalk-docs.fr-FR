@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eafa1831d6f99ef925a79ab7276caea005c2380f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: efd3a0b5f68ded39fbf5cc88a4ba8aac6725602e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="cross-field-segment-validation"></a>Validation de Segment de champ croisée
 Le pipeline de réception EDI et le pipeline d'envoi EDI peuvent exécuter la validation de champ croisé/segment sur les éléments de données de document informatisé dans les messages X12. Dans X12, cette validation est appelée conditions relationnelles. La validation de champ croisé s'exprime via des annotations et, par conséquent, est liée à la validation EDI.  
@@ -32,7 +32,7 @@ Le pipeline de réception EDI et le pipeline d'envoi EDI peuvent exécuter la va
  Dans X12, le caractère facultatif peut être Obligatoire, Facultatif et Relationnel (validation de champ croisé). Lorsque le caractère facultatif est Obligatoire, au moins un élément de données composites des types composites doit être évalué.  
   
 ## <a name="x12-optionality"></a>Caractère facultatif X12  
- Dans X12, la validation de champ croisé/segment pour le caractère facultatif Relationnel comprend une série de vérifications répertoriées dans des règles, dans le schéma. Chaque règle est identifiée par l’élément suivant dans une \<xs : annotation > élément :  
+ Dans X12, la validation de champ croisé/segment pour le caractère facultatif Relationnel comprend une série de vérifications répertoriées dans des règles, dans le schéma. Chaque règle est identifiée par l’élément suivant dans une \<xs : annotation\> élément :  
   
 ```  
 <b:Rule subjects="X12ConditionDesignatorX_<relational_condition>"…>  

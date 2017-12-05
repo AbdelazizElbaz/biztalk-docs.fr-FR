@@ -12,16 +12,16 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3f342030cd016dc0b1ea015a463e8777d498f860
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3619a34c843665750abd4f5d852b0f1af5210e1c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="planning-for-disaster-recovery"></a>Planification de la récupération d’urgence
-Cette rubrique fournit des conseils pour les équipes d’application pour les besoins de récupération d’urgence et les procédures de [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]. Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] stocke les informations de configuration et de traitement dans [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]. [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]haute disponibilité et récupération d’urgence s’effectue via les capacités de récupération d’urgence et disponibilité élevées de [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)].  
+Cette rubrique fournit des conseils pour les équipes d’application pour les besoins de récupération d’urgence et les procédures de BizTalk Server. Microsoft BizTalk Server stocke les informations de configuration et le traitement de [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]. BizTalk Server haute disponibilité et récupération d’urgence s’effectue via les capacités de récupération d’urgence et disponibilité élevées de [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)].  
   
- Un groupe BizTalk est défini par un ensemble de bases de données hébergées dans [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]. L’ensemble des bases de données hébergées dans [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] peuvent être rendues hautement disponibles via l’utilisation d’un cluster Windows Server. Dans un environnement BizTalk, les ordinateurs qui exécutent [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] fournissent des bases de données et de l’environnement d’exécution « » sur les ordinateurs exécutant [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] assurent le magasin persistant de l’environnement. Par conséquent, [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] fortement ciblés sur les procédures de récupération d’urgence, de sauvegarde et de restauration [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)].  
+ Un groupe BizTalk est défini par un ensemble de bases de données hébergées dans [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]. L’ensemble des bases de données hébergées dans [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] peuvent être rendues hautement disponibles via l’utilisation d’un cluster Windows Server. Dans un environnement BizTalk, les ordinateurs qui exécutent [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] fournissent des bases de données et de l’environnement d’exécution « » sur les ordinateurs exécutant [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] assurent le magasin persistant de l’environnement. Par conséquent, les procédures de récupération d’urgence, de restauration et de sauvegarde de BizTalk Server sont fortement focus sur [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)].  
   
 ## <a name="purpose"></a>Fonction  
  Cette rubrique regroupe [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] les informations de récupération d’urgence à partir de la documentation principale, les différents sites Web de Microsoft et les informations du [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] équipe de produit pour définir des procédures de récupération d’urgence pour [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environnements.  
@@ -29,9 +29,9 @@ Cette rubrique fournit des conseils pour les équipes d’application pour les b
  Les équipes d’application doivent tester les procédures de récupération d’urgence, de sauvegarde et de restauration. Vous devez également vous assurer que les procédures sont conçues pour répondre aux exigences de l’application avant de commencer la production.  
   
 ## <a name="scope"></a>Portée  
- Cette section se concentre sur les procédures de récupération d’urgence pour [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] et les procédures à suivre pour [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]. Ce guide s’appuie sur la documentation associée sur la façon de sauvegarder et restaurer BizTalk Server.  
+ Cette section se concentre sur les procédures de récupération d’urgence pour BizTalk Server et les procédures pour [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]. Ce guide s’appuie sur la documentation associée sur la façon de sauvegarder et restaurer BizTalk Server.  
   
- Pour plus d’informations sur la sauvegarde et de restauration, consultez cette documentation et consultez [sauvegarde et restauration de BizTalk Server](http://go.microsoft.com/fwlink/?LinkID=154071) (http://go.microsoft.com/fwlink/?LinkID=154071) dans [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] aide. Chaque équipe de l’application doit augmenter les informations contenues dans cette rubrique avec des procédures supplémentaires spécifiques à leur environnement, par exemple, les noms des ordinateurs de document, les lettres de lecteur, et la configuration de cluster, ainsi que les procédures de récupération d’urgence pour liées applications non-BizTalk qui font partie de la solution.  
+ Pour plus d’informations sur la sauvegarde et de restauration, consultez cette documentation et consultez [sauvegarde et restauration de BizTalk Server](http://go.microsoft.com/fwlink/?LinkID=154071) (http://go.microsoft.com/fwlink/?LinkID=154071) dans l’aide de BizTalk Server. Chaque équipe de l’application doit augmenter les informations contenues dans cette rubrique avec des procédures supplémentaires spécifiques à leur environnement, par exemple, les noms des ordinateurs de document, les lettres de lecteur, et la configuration de cluster, ainsi que les procédures de récupération d’urgence pour liées applications non-BizTalk qui font partie de la solution.  
   
  Cette rubrique ne fournit pas après sinistre détaillée des procédures de récupération pour les domaines suivants :  
   
@@ -47,6 +47,6 @@ Cette rubrique fournit des conseils pour les équipes d’application pour les b
   
 ## <a name="in-this-section"></a>Dans cette section  
   
--   [Meilleures pratiques pour la récupération d’urgence](../technical-guides/best-practices-for-disaster-recovery.md)  
+-   [Bonnes pratiques pour la récupération d’urgence](../technical-guides/best-practices-for-disaster-recovery.md)  
   
--   [Quel est l’envoi de journaux de BizTalk Server ?](../technical-guides/what-is-biztalk-server-log-shipping.md)
+-   [Qu’est-ce que la copie des journaux de transaction BizTalk Server ?](../technical-guides/what-is-biztalk-server-log-shipping.md)

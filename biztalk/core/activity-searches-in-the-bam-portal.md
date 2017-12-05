@@ -23,11 +23,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 617461b104f3188c14bb7c5b6eb5eb0bd329693f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 723848f61294cc710bd2292758383cf674093265
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="activity-searches-in-the-bam-portal"></a>Recherches d'activités dans le portail BAM
 Une recherche d'activité vous permet de lancer des recherches sur des données BAM pour extraire les activités répondant aux critères spécifiés, sur la base des valeurs et des éléments suivis disponibles dans une vue BAM, ou pour afficher des activités à modifier ou créer des alertes relatives à ces activités.  
@@ -65,7 +65,7 @@ Une recherche d'activité vous permet de lancer des recherches sur des données 
 |**AT**|Indique une correspondance exacte. Équivaut à une opération booléenne de type Égal (=). **Remarque :** si vous sélectionnez le **à** opérateur et spécifiez une date sans la partie heure, le portail utilise minuit comme valeur par défaut. Si ce n’est pas votre intention, utilisez le **à ou avant** ou **à ou après** opérateurs pour obtenir les résultats souhaités.|  
 |**L’ou avant**|Indique que seules les transactions ayant lieu à la date spécifiée ou avant sont mises en correspondance. Équivaut à une opération booléenne de type Inférieur ou égal à (=).|  
 |**Sur ou après**|Indique que seules les transactions ayant lieu à la date spécifiée ou après sont mises en correspondance. Équivaut à une opération booléenne de type Supérieur ou égal à (=).|  
-|**Avant**|Indique que seules les transactions ayant lieu avant la date spécifiée sont mises en correspondance. Équivalent à une valeur booléenne inférieur à (\<) opération.|  
+|**Avant**|Indique que seules les transactions ayant lieu avant la date spécifiée sont mises en correspondance. Équivaut à une opération booléenne de type Inférieur à (<).|  
 |**After**|Indique que seules les transactions ayant lieu après la date spécifiée sont mises en correspondance. Équivalent à une opération booléenne de supérieure à (>).|  
 |**Dans le dernier**|Indique que seules les transactions qui ont eu lieu au cours de la dernière période spécifiée sont mises en correspondances. Cette période peut être indiquée en secondes, minutes, heures ou jours.|  
 |**Avant le dernier**|Indique que seules les transactions qui ont eu lieu avant la période spécifiée sont mises en correspondances. Cette période peut être indiquée en secondes, minutes, heures ou jours.|  

@@ -15,11 +15,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 48cdca50620262581469e924fbb2975dde7e91fe
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8da12d090ae0c14f30defc1d65850c609b964704
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-the-transform-shape"></a>Configuration de la forme Transformer
 ![](../core/media/ebiz-orch-transform.gif "ebiz_orch_transform")  
@@ -49,9 +49,9 @@ Forme Transformer
 ### <a name="newexisting-map-file"></a>Fichier de mappage nouveau ou existant  
  Dans cette section, vous pouvez cliquer sur une le **nouveau mappage** ou **mappage existant** case d’option pour sélectionner un mappage à affecter à la **transformer** forme.  
   
- Utilisez le **nom** champ sous la case d’option sélectionnée pour spécifier un mappage. Si vous avez sélectionné **nouveau mappage**, vous pouvez entrer une description de la carte que vous souhaitez affecter. Lorsque vous utilisez la **nouveau mappage** option, vous devez spécifier le nom qualifié complet de la carte dans la zone de texte. La zone de texte affiche un exemple de nom par défaut, car il est préremplie avec un nom d’identificateur unique en fonction de l’espace de noms du projet et **transformer** nom de la forme : \<espace de noms projet >.\< Nom de la forme de transformer > _Map (par exemple, MonProjet.transformer3_map).  
+ Utilisez le **nom** champ sous la case d’option sélectionnée pour spécifier un mappage. Si vous avez sélectionné **nouveau mappage**, vous pouvez entrer une description de la carte que vous souhaitez affecter. Lorsque vous utilisez la **nouveau mappage** option, vous devez spécifier le nom qualifié complet de la carte dans la zone de texte. La zone de texte affiche un exemple de nom par défaut, car il est préremplie avec un nom d’identificateur unique en fonction de l’espace de noms du projet et **transformer** nom de la forme : \<espace de noms de projet\>.\< Nom de la forme de transformation\>_Map (par exemple, MonProjet.transformer3_map).  
   
- Si vous avez sélectionné **mappage existant**, cliquez sur la flèche vers le bas dans la **nom** champ pour sélectionner le fichier de mappage à utiliser. Cette liste, classée par ordre alphabétique, contient tous les mappages existants disponibles pour le projet. Dans cette liste, si vous cliquez sur le texte \<sélectionner dans l’assembly référencé >, le **sélectionner le Type d’artefact** boîte de dialogue s’affiche. Pour plus d’informations sur les sélections disponible, consultez [l’utilisation de la boîte de dialogue du Type d’artefact de sélectionner](../core/how-to-use-the-select-artifact-type-dialog-box.md).  
+ Si vous avez sélectionné **mappage existant**, cliquez sur la flèche vers le bas dans la **nom** champ pour sélectionner le fichier de mappage à utiliser. Cette liste, classée par ordre alphabétique, contient tous les mappages existants disponibles pour le projet. Dans cette liste, si vous cliquez sur le texte \<sélectionner dans l’assembly référencé\>, le **sélectionner le Type d’artefact** boîte de dialogue s’affiche. Pour plus d’informations sur les sélections disponible, consultez [l’utilisation de la boîte de dialogue du Type d’artefact de sélectionner](../core/how-to-use-the-select-artifact-type-dialog-box.md).  
   
 ### <a name="select-source-and-destination-messages"></a>Sélection des messages sources et des messages de destination  
  Cette partie de la **transformer la Configuration** boîte de dialogue pour configurer le mappage que vous avez sélectionné dans le **du fichier de mappage nouveau ou existant ?** section. Si vous avez sélectionné **nouveau mappage** dans cette section, vous créez ce mappage en le configurant dans cette section.  

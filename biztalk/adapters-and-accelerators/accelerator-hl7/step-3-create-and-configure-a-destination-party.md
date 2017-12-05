@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 34fb3ef45123817f747ab9aa956e961c5bb9a1c6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 66d955aeaabe4d7207a07827de04c1c21e4c2c7a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3-create-and-configure-a-destination-party"></a>Étape 3 : Créer et configurer un tiers de Destination
 Dans cette étape, vous créez et configurez un tiers de destination pour le scénario de traitement par lots de créer. Vous sélectionnez également les messages qui [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] lots et le lot planifie, tel que défini pour ce tiers. Vous planifiez l’heure d’envoi lot comme une heure après avoir copié les fichiers dans le dossier. [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]traite les messages reçus par la suite avec une fréquence d’une heure.  
@@ -27,7 +27,7 @@ Dans cette étape, vous créez et configurez un tiers de destination pour le sc�
   
 2.  Dans la boîte de dialogue Propriétés du tiers dans le **nom** , tapez **Tutorial_BatchDest**, puis cliquez sur **OK**.  
   
-3.  Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Microsoft BizTalk \<version > Accelerator pour HL7**, puis cliquez sur **BTAHL7 L’Explorateur de configuration**.  
+3.  Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Microsoft BizTalk \<version\> Accelerator pour HL7**, puis cliquez sur **BTAHL7 Configuration Explorer**.  
   
 4.  Dans l’Explorateur de Configuration de BTAHL7, sur le **Parties** dans l’arborescence de la console, cliquez sur **Tutorial_BatchDest**.  
   

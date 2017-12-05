@@ -19,11 +19,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4676db07025b4395d58df7c24252769ba65ecfb4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2a1e30f1703f554792ce5243414a95965da93670
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-change-the-master-secret-server"></a>Comment modifier le serveur de secret principal
 Après avoir installé le serveur de secret principal et configuré la base de données SSO, vous pouvez modifier le serveur de secret principal d'origine en cas d'échec sans possibilité de le récupérer. Pour modifier le serveur de secret principal, vous devez promouvoir un serveur SSO au rang de serveur de secret principal.  
@@ -43,11 +43,11 @@ Après avoir installé le serveur de secret principal et configuré la base de d
   
 5.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-6.  Dans l'invite de ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur >*: \Program Files\Enterprise Single Sign-On.  
+6.  Dans l'invite de ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur\>*: \Program Files\Enterprise Single Sign-On.  
   
 7.  Redémarrez le nouveau serveur de secret principal.  
   
-8.  Type **ssoconfig – restoreSecret \<restaurer le fichier >**, où  **\<restaurer le fichier >** est le chemin d’accès et le nom du fichier dans lequel le secret est stocké.  
+8.  Type **ssoconfig – restoreSecret \<restaurer le fichier\>**, où  **\<restaurer le fichier\>**  est le chemin d’accès et le nom du fichier où le secret principal stockées.  
   
      Le serveur principal est stocké dans le Registre à l'emplacement suivant :  
   
@@ -73,16 +73,16 @@ Après avoir installé le serveur de secret principal et configuré la base de d
   
 2.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-3.  Dans l'invite de ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur >*: \Program Files\Enterprise Single Sign-On.  
+3.  Dans l'invite de ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur\>*: \Program Files\Enterprise Single Sign-On.  
   
-4.  Type **ssomanage-updatedb** \< **fichier de mise à jour**>, où \< **fichier de mise à jour**> est le nom du fichier XML que vous créez à l’étape 1.  
+4.  Type **ssomanage-updatedb** \< **fichier de mise à jour**\>, où \< **fichier de mise à jour** \> est le nom du fichier XML vous créez à l’étape 1.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
   
 5.  Redémarrez le serveur de secret principal.  
   
-6.  Type **ssoconfig – restoresecret \<restaurer le fichier >**, où  **\<restaurer le fichier >** est le chemin d’accès et le nom du fichier dans lequel le secret est stocké.  
+6.  Type **ssoconfig – restoresecret \<restaurer le fichier\>**, où  **\<restaurer le fichier\>**  est le chemin d’accès et le nom du fichier où le secret principal stockées.  
   
      Le serveur principal est stocké dans le Registre à l'emplacement suivant :  
   
@@ -95,4 +95,4 @@ Après avoir installé le serveur de secret principal et configuré la base de d
  [Serveur de secret principal](../core/master-secret-server.md)   
  [Mise en Cluster du serveur de secret principal](../core/how-to-cluster-the-master-secret-server1.md)   
  [Comment mettre à jour la base de données SSO](../core/how-to-update-the-sso-database.md)   
- [À l’aide de l’authentification unique](../core/using-sso.md)
+ [Utilisation de l’authentification unique](../core/using-sso.md)

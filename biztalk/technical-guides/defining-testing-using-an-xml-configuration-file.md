@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 761f8c0a4480c26240926240cd890c1c68419b58
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f18d6ed5e237a9ee5e9dbe36c58c10ec6f22907d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="defining-testing-using-an-xml-configuration-file"></a>Définition des tests à l’aide d’un fichier de Configuration XML
 BizUnit offre deux façons de définir des tests : via un fichier de configuration XML et une feuille de calcul Excel. Cette rubrique se concentre sur l’utilisation d’un fichier de configuration XML pour définir des tests ; Toutefois, vous devez également examiner le SDK BizUnit, car il fournit un exemple intéressant de la définition des cas de test BizUnit à l’aide d’Excel. En outre, vous pouvez souhaiter examiner l’outil Concepteur de BizUnit, qui fournit une interface utilisateur graphique qui permet de créer rapidement des cas de test BizUnit. Cette rubrique fournit une vue d’ensemble de la définition des cas de test à l’aide de la configuration XML à l’aide d’un scénario très simplifié.  
@@ -60,7 +60,7 @@ Exemple d’application de messagerie BizTalk
 </TestSetup>  
 ```  
   
- Ensuite, nous entrer ce qui correspond à la section plus critique du test, l’étape d’exécution de test. Cette étape peut contenir plusieurs étapes de test. Dans cet exemple, nous utilisons le FileCreateStep pour copier un document (InDoc1.xml qui peuvent être consultés dans le \<SourcePath > balise) à une suppression de fichier qui est utilisée par notre emplacement de réception. Il est important de noter que BizUnit prend en charge à l’aide d’identificateurs uniques pour les noms de fichiers dans cette étape. Ceci peut être observé avec la référence de % Guid dans la balise CreationPath %.  
+ Ensuite, nous entrer ce qui correspond à la section plus critique du test, l’étape d’exécution de test. Cette étape peut contenir plusieurs étapes de test. Dans cet exemple, nous utilisons le FileCreateStep pour copier un document (InDoc1.xml qui peuvent être consultés dans le \<SourcePath\> balise) à une suppression de fichier qui est utilisée par notre emplacement de réception. Il est important de noter que BizUnit prend en charge à l’aide d’identificateurs uniques pour les noms de fichiers dans cette étape. Ceci peut être observé avec la référence de % Guid dans la balise CreationPath %.  
   
  Une fois cette opération terminée, nous devons utiliser la **FileValidateStep** pour valider le message sortant a été créé. Vous remarquerez que cette étape vous permet de spécifier une valeur de délai d’attente (il s’agit en millisecondes), le répertoire et le modèle de recherche. En outre, le **DeleteFile** balise permet de spécifier si vous souhaitez que le fichier doit être supprimée après avoir été validé. Enfin, Notez également que la validation inclut une requête XPath, qui valide le nœud PONumber dans le message XML (il vérifie que la valeur est PONumber_0). Examen et validation de la charge utile de tous les messages sortants est un autre exemple d’un principe de base que vous devez suivre lors de l’utilisation de BizUnit.  
   
@@ -148,4 +148,4 @@ Exemple d’application de messagerie BizTalk
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Pour faciliter les tests automatisés à l’aide de BizUnit](../technical-guides/using-bizunit-to-facilitate-automated-testing.md)
+ [Utilisation de BizUnit pour faciliter les tests automatisés](../technical-guides/using-bizunit-to-facilitate-automated-testing.md)

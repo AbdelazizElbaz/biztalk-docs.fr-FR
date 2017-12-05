@@ -12,14 +12,14 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 806f1efb67205771a1e202c8bafd77a493d584e4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6aefa415bec4b996fa7b5cd4689c48f834dc36a2
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="checklist-measuring-performance-on-hyper-v"></a>Liste de vérification : Mesurer les performances sur Hyper-V
-La plupart des principes de l’analyse des performances d’un système d’exploitation invité sur un performances des machines virtuelles Hyper-V sont le même que l’analyse des performances du système d’exploitation installé sur un ordinateur physique, la plupart des méthodes de collecte sont différents. Les sections ci-dessous doivent être utilisées comme une référence rapide lors de l’évaluation des performances de votre [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] solution en cours d’exécution sur un système d’exploitation invité sur un ordinateur virtuel Hyper-V.  
+La plupart des principes de l’analyse des performances d’un système d’exploitation invité sur un performances des machines virtuelles Hyper-V sont le même que l’analyse des performances du système d’exploitation installé sur un ordinateur physique, la plupart des méthodes de collecte sont différents. Les sections ci-dessous doivent être utilisées comme une référence rapide lors de l’évaluation des performances de votre solution BizTalk Server s’exécutant sur un système d’exploitation invité sur un ordinateur virtuel Hyper-V.  
   
 ## <a name="measuring-disk-io-performance"></a>Mesurer les performances d’e/s disque  
  Utilisez les compteurs du moniteur de performances suivantes pour mesurer les performances d’e/s de disque sur un système d’exploitation invité sur un ordinateur virtuel Hyper-V :  

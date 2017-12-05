@@ -22,11 +22,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b5dc4e65ca778c8e299d8fd14303d3d3da009d39
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e766272f33bf23166ba412a76498e4240ab3343b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-send-ports-using-windows-sharepoint-services-context-properties"></a>Configuration des ports d'envoi à l'aide des propriétés de contexte Windows Sharepoint Services
 Cette rubrique décrit la configuration des ports d'envoi Windows SharePoint Services, au moment de l'exécution, à l'aide des propriétés de contexte Windows SharePoint Services, à partir d'une orchestration BizTalk. Le même mécanisme peut être utilisé pour configurer les ports d'envoi dynamiques et à liaison tardive Windows SharePoint Services. Les propriétés de configuration pour un port d'envoi dynamique sont définies dans une orchestration au moment de l'exécution. Propriétés de l’adaptateur qui sont exposées dans le **propriétés du Transport Windows SharePoint Services** boîte de dialogue peut également être appliquée à un port d’envoi dynamique ou à liaison tardive. Pour définir les propriétés de configuration d'un port d'envoi dynamique ou à liaison tardive à l'aide des propriétés de contexte de l'adaptateur Windows Sharepoint Services, procédez comme suit :  
@@ -51,8 +51,8 @@ Cette rubrique décrit la configuration des ports d'envoi Windows SharePoint Ser
     |Bibliothèque de documents Modèles de secours|WSS.ConfigCustomTemplatesDocLib|Chaîne|Aucune|  
     |Colonne espaces de noms Modèles de secours|WSS.ConfigCustomTemplatesNamespaceCol|Chaîne|Aucune|  
     |Colonne d'espace de noms des modèles|WSS.ConfigTemplatesNamespaceCol|Chaîne|Aucune|  
-    |Colonne `n`|WSS.ConfigPropertiesXml<br /><br /> Nom de la colonne est défini dans \<PropertyName*x*>*columnname*\</ PropertyName*x*> champ.|Chaîne|Aucune|  
-    |Valeur de la colonne `n`|WSS.ConfigPropertiesXml<br /><br /> Valeur de colonne est définie dans \<PropertySource*x*>*columnvalue*\</ PropertySource*x*> champ.|Chaîne|Prend en charge l’utilisation de toutes les macros de nom de fichier qui peut être utilisé dans les propriétés de transport à l’exception de la **%filename%** et **%extension%** macros.|  
+    |Colonne `n`|WSS.ConfigPropertiesXml<br /><br /> Nom de la colonne est défini dans \<PropertyName*x*\>*columnname*\</ PropertyName*x* \> champ.|Chaîne|Aucune|  
+    |Valeur de la colonne `n`|WSS.ConfigPropertiesXml<br /><br /> Valeur de colonne est définie dans \<PropertySource*x*\>*columnvalue*\</ PropertySource*x* \> champ.|Chaîne|Prend en charge l’utilisation de toutes les macros de nom de fichier qui peut être utilisé dans les propriétés de transport à l’exception de la **%filename%** et **%extension%** macros.|  
   
     > [!NOTE]
     >  Les valeurs fournies pour les propriétés de contexte respectent la casse. Lors de la définition de valeurs de configuration pour un port dynamique avec des propriétés de contexte, veillez à utiliser la casse appropriée, sans quoi une erreur se produit quand BizTalk tente de router le document vers le port d'envoi désigné.  

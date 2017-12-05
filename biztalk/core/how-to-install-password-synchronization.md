@@ -15,18 +15,18 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6ecc01ef4bc9d8bf2e82ca3dfe23b13ea0b67be2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a3a6a3f93e600a8e68581f09af8fcdbc77ed57af
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-install-password-synchronization"></a>Comment installer la synchronisation de mot de passe
 À l'instar des autres fonctionnalités d'authentification unique, la synchronisation de mot de passe n'est pas installée par défaut avec [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] et doit être sélectionnée lors de l'installation.  
   
 ### <a name="to-install-password-synchronization"></a>Pour installer la synchronisation de mot de passe  
   
-1.  Sur le CD-ROM de BizTalk Server, accédez à la  **\<CDRoot > \Platforms\SSO** dossier.  
+1.  Sur le CD-ROM de BizTalk Server, accédez à la  **\<CDRoot\>\Platforms\SSO** dossier.  
   
 2.  Exécutez **setup.exe** et suivez les instructions de l’Assistant.  
   

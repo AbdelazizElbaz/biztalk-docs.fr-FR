@@ -17,11 +17,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6fcd41cd38074377fa179e3a414b278521c31f26
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9856e0da6e8a4bc958b5fe08e0e1b5e87494531b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="lesson-1-adding-flat-file-receive-port-and-location"></a>Leçon 1 : Ajout d’un fichier plat Port de réception et emplacement
 Le port de réception a toujours un emplacement de réception associés que vous devez configurer lorsque vous ajoutez le port de réception. Un emplacement de réception définit une adresse spécifique pour un message entrant et le pipeline que vous utilisez pour traiter le message.  
@@ -46,9 +46,9 @@ Le port de réception a toujours un emplacement de réception associés que vous
   
 9. Dans la boîte de dialogue Propriétés du Transport FILE, cliquez sur **Parcourir**.  
   
-10. Dans la boîte de dialogue Rechercher un dossier, déplacer vers le  **\<lecteur > : \Labs\Inbound** dossier, puis cliquez sur **créer un nouveau dossier**.  
+10. Dans la boîte de dialogue Rechercher un dossier, déplacer vers le  **\<lecteur\>: \Labs\Inbound** dossier, puis cliquez sur **créer un nouveau dossier**.  
   
-11. Créer un **FlatFile** dossier  **\<lecteur > : \Labs\Inbound**, puis cliquez sur **OK**.  
+11. Créer un **FlatFile** dossier  **\<lecteur\>: \Labs\Inbound**, puis cliquez sur **OK**.  
   
 12. Dans le **masque de fichier** , tapez  **\*.txt**, puis cliquez sur **OK**.  
   

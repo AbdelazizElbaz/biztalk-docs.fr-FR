@@ -13,11 +13,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed990dd60ab65c7b85284a9eeadd4b27de3136f0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 68c63e7aeab46436e894d43d77b92a2a061d5b60
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="troubleshooting-issues-and-resolutions"></a>Résolution des problèmes : Problèmes et résolutions
 Cette rubrique traite des problèmes liés à l’exécution [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]. La personne émet en détail un problème spécifique, des causes possibles et une solution.  
@@ -70,7 +70,7 @@ Cette rubrique traite des problèmes liés à l’exécution [!INCLUDE[btsCoName
 ## <a name="installing-btarn-on-a-computer-without-biztalk-server-causes-missing-files"></a>Installation de BTARN sur un ordinateur sans BizTalk Server provoque des fichiers manquants  
   
 ### <a name="symptom"></a>Symptôme  
- L’exécution du fichier ConfigFramework.exe aboutit à aucun résultat sur un ordinateur qui n’a pas [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] ou [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] installé. Vous pouvez utiliser uniquement cette [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] configuration comme un client HTTP.  
+ L’exécution du fichier ConfigFramework.exe aboutit à aucun résultat sur un ordinateur qui n’a pas [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server ou [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] installé. Vous pouvez utiliser uniquement cette [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] configuration comme un client HTTP.  
   
 ### <a name="possible-cause"></a>Cause possible  
  Deux fichiers DLL sont manquantes dans l’installation.  
@@ -102,7 +102,7 @@ Cette rubrique traite des problèmes liés à l’exécution [!INCLUDE[btsCoName
   
  -ou-  
   
- Erreur lors de la fin d’activité de message BAM avec l’id  *\<numéro d’identification >*.  
+ Erreur lors de la fin d’activité de message BAM avec l’id  *\<numéro d’identification\>*.  
   
 ### <a name="possible-cause"></a>Cause possible  
  L’outil de suivi d’analyse BAM (Business Activity) n’est pas installé.  
@@ -123,7 +123,7 @@ Cette rubrique traite des problèmes liés à l’exécution [!INCLUDE[btsCoName
   
  Exemple :  
   
- \<schemaInfo document_type = « 4A1 » version = « V02_00 » xmlns = « http://schemas.microsoft.com/BizTalk/2003 » *displayroot_reference = « Pip4A1StrategicForecastNotification »* root_reference = » Pip4A1StrategicForecastNotification » / >  
+ \<schemaInfo document_type = « 4A1 » version = « V02_00 » xmlns = « http://schemas.microsoft.com/BizTalk/2003 » *displayroot_reference = « Pip4A1StrategicForecastNotification »* root_reference = » Pip4A1StrategicForecastNotification »\>  
   
 ## <a name="404-not-found-error-when-sending-a-http-request"></a>Erreur 404 introuvable lors de l’envoi d’une requête HTTP  
   
@@ -144,7 +144,7 @@ Cette rubrique traite des problèmes liés à l’exécution [!INCLUDE[btsCoName
   
 1.  Cliquez sur **Démarrer**, pointez sur **outils d’administration**, puis cliquez sur **Gestionnaire des Services Internet (IIS)**.  
   
-2.  Développez  **\<nom de l’ordinateur > (ordinateur local)**, puis cliquez sur **Extensions du Service Web**.  
+2.  Développez  **\<nom de l’ordinateur\> (ordinateur local)**, puis cliquez sur **Extensions du Service Web**.  
   
 3.  Dans le **Extension du Service Web** volet, vérifiez que l’état de HwsMessages HttpReceive est autorisé. Avec le bouton droit dans le cas contraire, **HwsMessages HttpReceive**, puis cliquez sur **autoriser**.  
   
@@ -154,11 +154,11 @@ Cette rubrique traite des problèmes liés à l’exécution [!INCLUDE[btsCoName
   
 1.  Cliquez sur **Démarrer**, pointez sur **outils d’administration**, puis cliquez sur **Gestionnaire des Services Internet (IIS)**.  
   
-2.  Développez  **\<nom de l’ordinateur > (ordinateur local)**, avec le bouton droit **Extensions du Service Web**, puis cliquez sur **ajouter une nouvelle extension de service Web**.  
+2.  Développez  **\<nom de l’ordinateur\> (ordinateur local)**, avec le bouton droit **Extensions du Service Web**, puis cliquez sur **ajouter une nouvelle extension de service Web** .  
   
 3.  Dans le **nouvelle Extension de Service Web** boîte de dialogue le **nom de l’Extension** , tapez **BizTalk d’Extension ISAPI**, puis cliquez sur **ajouter**.  
   
-4.  Dans le **ajouter un fichier** boîte de dialogue le **chemin d’accès au fichier** , tapez  **\<lecteur > : \Program Files\Microsoft BizTalk Server \<version > \HttpReceive\ BTSHttpReceive.dll**, puis cliquez sur **OK**.  
+4.  Dans le **ajouter un fichier** boîte de dialogue le **chemin d’accès au fichier** , tapez  **\<lecteur\>: \Program Files\Microsoft BizTalk Server \<version\>\HttpReceive\BTSHttpReceive.dll**, puis cliquez sur **OK**.  
   
 5.  Dans le **nouvelle Extension de Service Web** boîte de dialogue, sélectionnez **définir l’état de l’extension à autorisée**, puis cliquez sur **OK**.  
   
@@ -170,10 +170,10 @@ Cette rubrique traite des problèmes liés à l’exécution [!INCLUDE[btsCoName
  Une instance d’hôte BizTalk isolé configurée avec le compte d’utilisateur '\HostSvc' n’est pas exécuté ou n’existe pas sur cet ordinateur. Utilisez la Console Administration de BizTalk pour créer un hôte isolé ou reconfigurer un existant pour s’exécuter en tant que '\hostsvc'.  
   
 ### <a name="possible-cause"></a>Cause possible  
- Pour exécuter l’Assistant Configuration, l’utilisateur doit être configuré comme\<*nom de l’ordinateur*> \hostsvc', pas '\hostsvc'.  
+ Pour exécuter l’Assistant Configuration, l’utilisateur doit être configuré comme\<*nom de l’ordinateur*\>\hostsvc', pas '\hostsvc'.  
   
 ### <a name="solution"></a>Solution  
- Ouvrez la Console Administration de BizTalk et modifier les hôtes qui sont exécutent sous le compte '\hostsvc', afin qu’ils s’exécutent sous le compte '\<*nom de l’ordinateur*> \hostsvc'.  
+ Ouvrez la Console Administration de BizTalk et modifier les hôtes qui sont exécutent sous le compte '\hostsvc', afin qu’ils s’exécutent sous le compte '\<*nom de l’ordinateur*\>\hostsvc'.  
   
 ## <a name="you-receive-an-error-when-importing-and-compiling-a-rosettanet-next-generation-pip-schema"></a>Vous recevez une erreur lors de l’importation et de la compilation d’un schéma d’adresse PIP de RosettaNet prochaine génération  
   
@@ -281,7 +281,7 @@ Cette rubrique traite des problèmes liés à l’exécution [!INCLUDE[btsCoName
   
 1.  Cliquez sur **Démarrer**, pointez sur **outils d’administration**, puis cliquez sur **Gestionnaire des Services Internet (IIS)**.  
   
-2.  Développez  **\<nom de l’ordinateur > (ordinateur local)**, avec le bouton droit **Sites Web**, puis cliquez sur **propriétés**.  
+2.  Développez  **\<nom de l’ordinateur\> (ordinateur local)**, avec le bouton droit **Sites Web**, puis cliquez sur **propriétés**.  
   
 3.  Sélectionnez **filtres ISAPI** onglet.  
   
@@ -303,7 +303,7 @@ Cette rubrique traite des problèmes liés à l’exécution [!INCLUDE[btsCoName
 ## <a name="the-hubscenario-sample-will-not-be-installed-correctly-if-the-assembly-key-files-are-not-entered-for-the-projects"></a>L’exemple HubScenario ne sera pas installé correctement si les fichiers de clé d’assembly ne sont pas entrés pour les projets  
   
 ### <a name="symptom"></a>Symptôme  
- Lorsque vous exécutez setup.bat dans  *\<lecteur >*: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version > Accelerator pour RosettaNet\SDK\HubScenario configurer l’exemple HubScenario, le Échec de l’opération.  
+ Lorsque vous exécutez setup.bat dans  *\<lecteur\>*: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version\> Accelerator pour RosettaNet\SDK\HubScenario configurer le L’exemple HubScenario, l’opération échoue.  
   
 ### <a name="possible-cause"></a>Cause possible  
  Les assemblys HubScenario et HubHelper ont été pas déployés correctement, car les fichiers de clé d’assembly n’ont pas été définies dans les projets.  
@@ -317,7 +317,7 @@ Cette rubrique traite des problèmes liés à l’exécution [!INCLUDE[btsCoName
  Lorsque vous exécutez setup.bat pour créer et initialiser l’exemple d’Orchestration Double Action PIPAutomation, la PipAutomationGetAction procédure stockée dans la base de données n’est pas créé de BTARNData.  
   
 ### <a name="possible-cause"></a>Cause possible  
- Vous avez exécuté le fichier setup.bat sur un ordinateur 64 bits ou un [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] installation est en cours d’exécution sur SQL Server 2008 R2/2008 SP1. Ces deux cas vous amener à exécutez setupx64.bat.  
+ Vous avez exécuté setup.bat sur un ordinateur 64 bits ou sur une installation de BizTalk Server est en cours d’exécution sur SQL Server 2008 R2/2008 SP1. Ces deux cas vous amener à exécutez setupx64.bat.  
   
 ### <a name="solution"></a>Solution  
  Exécutez setupx64.bat pour créer la procédure stockée. Pour plus d’informations, consultez [Orchestration Double Action PIPAutomation](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md).  
@@ -331,4 +331,4 @@ Cette rubrique traite des problèmes liés à l’exécution [!INCLUDE[btsCoName
   
 ## <a name="see-also"></a>Voir aussi  
  [BtarnClean](../../adapters-and-accelerators/accelerator-rosettanet/btarnclean.md)   
- [Bouclage](../../adapters-and-accelerators/accelerator-rosettanet/loopback.md)
+ [Loopback](../../adapters-and-accelerators/accelerator-rosettanet/loopback.md)

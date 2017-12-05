@@ -15,11 +15,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 85585945ae6376e11ddc39e7a1280f69d024c439
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6fc8c09499914dd075fe6a46fbc230a4bed104e0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="message-schemas-for-functions-and-procedures"></a>Schémas de message pour les fonctions et procédures
 Le [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] surfaces Oracle de la base de données des fonctions et procédures stockées en tant qu’opérations. Cette section décrit la structure des messages et les actions utilisées pour appeler des fonctions et des procédures.  
@@ -32,7 +32,7 @@ Le [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] surfaces Oracle
 |Demande de procédure stockée|`<[SP_NAME] xmlns="http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Procedure">   <[PRM1_NAME]>value1</[PRM1_NAME]>   <[PRM2_NAME]>value2</[PRM2_NAME]>   … </[SP_NAME]>`|Prend en charge les paramètres Oracle et IN OUT dans le corps du message|  
 |Réponse de la procédure stockée|`<[SP_NAME]Response xmlns="http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Procedure">   <[PRM1_NAME]>value1<[PRM1_NAME]>   <[PRM2_NAME]>value2</[PRM2_NAME]>   … </[SP_NAME]Response>`|Prend en charge Oracle OUT et dans les paramètres dans le corps du message|  
 |Demande de la fonction|`<[FN_NAME] xmlns="http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Function">   <[PRM1_NAME]>value1</[PRM1_NAME]>   <[PRM2_NAME]>value2</[PRM2_NAME]>   … </[FN_NAME]>`|Prend en charge les paramètres Oracle et IN OUT dans le corps du message|  
-|Réponse de la fonction|`<[FN_NAME]Response xmlns="http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Function">   <[FN_NAME]Result>return_value</[FN_NAME]Result>   <[PRM1_NAME]>value1</[PRM1_NAME]>   <[PRM2_NAME]>value2</[PRM2_NAME]>   …    </[FN_NAME]Response>`|Prend en charge Oracle OUT et dans les paramètres dans le corps du message<br /><br /> -La valeur de retour de fonction est retournée dans le \<[FN_NAME] résultat > élément. Il s’agit du premier élément dans le message de réponse. Il se situe avant tous les paramètres.|  
+|Réponse de la fonction|`<[FN_NAME]Response xmlns="http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Function">   <[FN_NAME]Result>return_value</[FN_NAME]Result>   <[PRM1_NAME]>value1</[PRM1_NAME]>   <[PRM2_NAME]>value2</[PRM2_NAME]>   …    </[FN_NAME]Response>`|Prend en charge Oracle OUT et dans les paramètres dans le corps du message<br /><br /> -La valeur de retour de fonction est retournée dans le \<[FN_NAME] résultat\> élément. Il s’agit du premier élément dans le message de réponse. Il se situe avant tous les paramètres.|  
 |Procédure empaquetée ou demande de la fonction|`<[SP_NAME] xmlns="http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Package/[PACKAGE_NAME]">   <[PRM1_NAME]>value1</[PRM1_NAME]>   <[PRM2_NAME]>value2</[PRM2_NAME]>   … </[SP_NAME]>`|Même en tant que fonction ou procédure stockée|  
 |Procédure empaquetée ou une réponse de la fonction|`<[SP_NAME]Response xmlns="http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Package/[PACKAGE_NAME]">   <[PRM1_NAME]>value1</[PRM1_NAME]>   <[PRM2_NAME]>value2</[PRM2_NAME]>   … </[SP_NAME]Response>`|Même en tant que fonction ou procédure stockée|  
   
@@ -91,4 +91,4 @@ Stored Procedure Overload 2:
  [Surcharge] = le paramètre de surcharger le. Les valeurs possibles sont overload1, overload2 et ainsi de suite.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Messages et des schémas de Message pour l’adaptateur BizTalk pour base de données Oracle](../../adapters-and-accelerators/adapter-oracle-database/messages-and-message-schemas-for-biztalk-adapter-for-oracle-database.md)
+ [Messages et schémas de message pour l’adaptateur BizTalk pour Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/messages-and-message-schemas-for-biztalk-adapter-for-oracle-database.md)

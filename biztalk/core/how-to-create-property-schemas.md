@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 426e98e491ec71a7e430ff6886f5f9820c4b87fe
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ee97f4cb3065fdb201ec19f88a79e7899f03ac49
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-create-property-schemas"></a>Comment créer des schémas de propriété
 Si vous choisissez de promouvoir des champs en tant que champs de propriété, vous devez d'abord définir un schéma de propriété. Ce schéma de propriété spécifie un ensemble de champs non structuré dans lequel vous pouvez promouvoir des champs depuis un message d'instance défini par un schéma associé à votre schéma.  
@@ -41,7 +41,7 @@ Si vous choisissez de promouvoir des champs en tant que champs de propriété, v
   
 5.  Définir le **Type de données** et d’autres propriétés pertinentes, comme il convient pour le **élément de champ** nœud dans la fenêtre Propriétés.  
   
-6.  Si vous souhaitez insérer **Fieldelement** nœuds pour les propriétés supplémentaires, cliquez sur le \<schéma > nœud, cliquez sur **insérer un nœud de schéma**, puis cliquez sur **élément de champ enfant** , puis répétez les étapes 4 et 5. Répétez l’opération pour créer l’ensemble de **élément de champ** nœuds dans lequel vous avez l’intention de promouvoir les valeurs à partir des messages d’instance.  
+6.  Si vous souhaitez insérer **Fieldelement** nœuds pour les propriétés supplémentaires, cliquez sur le \<schéma\> nœud, cliquez sur **insérer un nœud de schéma**, puis cliquez sur  **Élément de champ enfant**, puis répétez les étapes 4 et 5. Répétez l’opération pour créer l’ensemble de **élément de champ** nœuds dans lequel vous avez l’intention de promouvoir les valeurs à partir des messages d’instance.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Gestion des schémas dans des projets](../core/managing-schemas-within-projects.md)

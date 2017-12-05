@@ -18,11 +18,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2d328a1a95b7340520352b32b6d72e1579b9594a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 34cbb94dff7211a157fc492c1157fa379236641e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="unenlistparties-biztalk-server-sample"></a>UnenlistParties (exemple BizTalk Server)
 L'exemple UnenlistParties décrit la désinscription de tous les tiers associés à un assembly BizTalk Server déployé.  
@@ -50,7 +50,7 @@ L'exemple UnenlistParties décrit la désinscription de tous les tiers associés
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
  L'exemple se trouve dans l'emplacement SDK suivant :  
   
- \<*Exemples de chemin d’accès*> \Admin\ExplorerOM\UnenlistParties\  
+ \<*Exemples de chemin d’accès*\>\Admin\ExplorerOM\UnenlistParties\  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -68,12 +68,11 @@ L'exemple UnenlistParties décrit la désinscription de tous les tiers associés
   
 1.  Dans une fenêtre de commande, accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \Admin\ExplorerOM\UnenlistParties\bin\Debug\  
+     \<*Exemples de chemin d’accès*\>\Admin\ExplorerOM\UnenlistParties\bin\Debug\  
   
 2.  Exécutez le fichier UnenlistParties.exe, en passant l'un des deux arguments de ligne de commande suivants :  
   
-    -   **\<**   
-         ***AssemblyName* >**. Nom d'un assembly dont tous les tiers associés doivent être désinscrits. Si le nom de l'assembly contient des espaces, placez-le entre guillemets.  
+    -   **\<** ***AssemblyName* \>** . Nom d'un assembly dont tous les tiers associés doivent être désinscrits. Si le nom de l'assembly contient des espaces, placez-le entre guillemets.  
   
     -   **/?.** Affiche l’aide.  
   
@@ -183,7 +182,7 @@ else
   
 ```  
   
- La sortie de script suivante a été générée à partir de tiers se désinscrivant de l'assembly Supplier qui fait partie de l'exemple PartyResolution. L’exemple PartyResolution se trouve dans le \< *exemples de chemin*> \Admin\Orchestrations\PartyResolution active.  
+ La sortie de script suivante a été générée à partir de tiers se désinscrivant de l'assembly Supplier qui fait partie de l'exemple PartyResolution. L’exemple PartyResolution se trouve dans le \< *exemples de chemin*\>\Admin\Orchestrations\PartyResolution active.  
   
 ```  
 PS C:\> .\UnenlistParties.ps1 Supplier  

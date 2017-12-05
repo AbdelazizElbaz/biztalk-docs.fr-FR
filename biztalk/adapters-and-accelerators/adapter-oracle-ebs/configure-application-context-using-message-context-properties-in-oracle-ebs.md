@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 43f0128b0d1da7ddfb9a29b697d5d5073f69dd33
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 89f08c50036dd070d51a8685dc4d47ceaa231737
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configure-the-application-context-using-message-context-properties-in-oracle-e-business-suite"></a>Configurer le contexte d’application à l’aide des propriétés de contexte de message dans Oracle E-Business Suite
 Pour effectuer des opérations sur les artefacts d’Oracle E-Business Suite à l’aide de la [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)], vous devez définir le contexte d’application de manière appropriée. Vous pouvez définir le contexte d’application comme suit :  
@@ -41,7 +41,7 @@ Pour effectuer des opérations sur les artefacts d’Oracle E-Business Suite à 
   
 3.  Dans le **ajouter une référence** boîte de dialogue, cliquez sur le **Parcourir** onglet, puis accédez à l’emplacement où le fichier DLL du schéma de propriété BizTalk pour le [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] est disponible.  
   
-     Cette DLL, `Microsoft.Adapters.OracleEBS.BiztalkPropertySchema.dll`, est installé par le [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] à \< *lecteur d’installation*> : \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\bin.  
+     Cette DLL, `Microsoft.Adapters.OracleEBS.BiztalkPropertySchema.dll`, est installé par le [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] à \< *lecteur d’installation*\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\bin.  
   
 4.  Sélectionnez le fichier DLL, puis cliquez sur **ajouter**.  
   
@@ -74,7 +74,7 @@ Pour effectuer des opérations sur les artefacts d’Oracle E-Business Suite à 
   
     3.  Avec le bouton droit **ressources**, pointez sur **ajouter**, puis cliquez sur **assemblys BizTalk**.  
   
-    4.  Dans le **ajouter des ressources** boîte de dialogue, cliquez sur **ajouter**, accédez au dossier contenant le fichier d’assembly BizTalk, qui est \< *lecteur d’installation*> : \ Programme Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\bin. Sélectionnez le `Microsoft.Adapters.OracleEBS.BiztalkPropertySchema.dll` de fichiers, puis cliquez sur **ouvrir**.  
+    4.  Dans le **ajouter des ressources** boîte de dialogue, cliquez sur **ajouter**, accédez au dossier contenant le fichier d’assembly BizTalk, qui est \< *lecteur d’installation* \>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\bin. Sélectionnez le `Microsoft.Adapters.OracleEBS.BiztalkPropertySchema.dll` de fichiers, puis cliquez sur **ouvrir**.  
   
     5.  Sur le **Options** onglet, spécifiez les options d’installation de l’assembly BizTalk dans le global assembly cache (GAC), puis cliquez sur **OK**.  
   

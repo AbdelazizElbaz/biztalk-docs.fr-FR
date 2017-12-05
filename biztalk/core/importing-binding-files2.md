@@ -2,11 +2,11 @@
 redirect_url: /biztalk/core/deploying-biztalk-adapter-for-jd-edwards-enterpriseone/
 redirect_document_id: True
 ROBOTS: NOINDEX
-ms.openlocfilehash: 0bc5b29ff129b145d6b55cbe44ea3aa6a97def76
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 7dbc9ef8624404b9fa7bdcb7b6a21b2d2a4c69f2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="importing-binding-files"></a>importation des fichiers de liaison
 Cette rubrique fournit des informations sur le processus d'importation lors du déploiement de l'adaptateur BizTalk pour JD Edwards EnterpriseOne. Lors du redéploiement d'un fichier de liaison (et de l'assembly) sur un ordinateur cible, les ports d'envoi et les emplacements de réception sont remplacés par ceux qui se trouvent dans le fichier de liaison XML lors de leur réimportation.  
@@ -27,7 +27,7 @@ Cette rubrique fournit des informations sur le processus d'importation lors du d
   
      Par exemple, à l'invite de commandes, exécutez :  
   
-     **cscript RemoveSendPort.vbs \<nom du port d’envoi >**  
+     **cscript RemoveSendPort.vbs \<nom du port d’envoi\>**  
   
 ## <a name="see-also"></a>Voir aussi  
  [Importer le JD Edwards EnterpriseOne application](../core/deploying-biztalk-adapter-for-jd-edwards-enterpriseone.md)

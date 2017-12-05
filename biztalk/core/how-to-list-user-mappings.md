@@ -15,36 +15,36 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0f6041b40c2b6a3fa468462478754079d41881bc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 04f988e9f63cccf27c42a33727d86452d34915aa
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-list-user-mappings"></a>Affichage des mappages utilisateur
 Cette commande permet de répertorier tous les mappages existants pour l'utilisateur spécifié.  
   
  Pour effectuer cette tâche, vous devez être un administrateur SSO, un administrateur d'applications, un administrateur d'applications associées à SSO ou un utilisateur.  
   
- Mappages utilisateur activés apparaissent sous la forme (E) \< *domaine*>\\*\<nom d’utilisateur >*, alors que désactivé mappages utilisateur apparaissent en tant que (D) \< *domaine*>\\*\<nom d’utilisateur >*.  
+ Mappages utilisateur activés apparaissent sous la forme (E) \< *domaine*\>\\*\<nom d’utilisateur\>*, alors que désactivé mappages utilisateur apparaissent en tant que (D) \< *domaine*\>\\*\<nom d’utilisateur\>*.  
   
 ### <a name="to-list-user-mappings-using-the-administration-utility"></a>Pour répertorier des mappages utilisateur à l'aide de l'utilitaire d'administration  
   
 1.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est \< *lecteur*> : \Program Files\Enterprise Single Sign-On.  
+2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est \< *lecteur*\>: \Program Files\Enterprise Single Sign-On.  
   
 3.  Procédez de l'une des manières suivantes :  
   
-    -   Type **ssomanage – listmappings  *\<domaine >\\< nom d’utilisateur\>***  pour répertorier tous les mappages d’un utilisateur donné possède dans les applications associées auxquelles il appartient vers l’emplacement où  *\<domaine >* est le domaine Microsoft Windows pour le compte d’utilisateur, et  *\<nom d’utilisateur >* est le nom d’utilisateur Windows pour lequel vous souhaitez répertorier les Mappages utilisateur. Si l'utilisateur est un administrateur d'applications associées ou un administrateur SSO, cette commande répertorie tous les mappages pour cet utilisateur dans toutes les applications associées.  
+    -   Type **ssomanage – listmappings  *\<domaine\>\\< nom d’utilisateur\>***  pour répertorier tous les mappages d’un utilisateur donné possède dans les applications associées Il appartient, où  *\<domaine\>*  est le domaine Microsoft Windows pour le compte d’utilisateur, et  *\<nom d’utilisateur\>*  est le Nom d’utilisateur Windows pour lequel vous souhaitez répertorier les mappages utilisateur. Si l'utilisateur est un administrateur d'applications associées ou un administrateur SSO, cette commande répertorie tous les mappages pour cet utilisateur dans toutes les applications associées.  
   
          Ou  
   
-    -   Type **ssomanage – listmappings  *\<nom de l’application >***  pour répertorier tous les mappages utilisateur pour une application donnée.  
+    -   Type **ssomanage – listmappings  *\<nom de l’application\>***  pour répertorier tous les mappages utilisateur pour une application donnée.  
   
          Ou  
   
-    -   Si vous êtes un administrateur d’application, tapez **ssomanage – listmappings  *\<domaine >\\< nom d’utilisateur\>*   *\<nom de l’application >***  pour répertorier tous les mappages d’un utilisateur donné possède dans les applications associées dont vous êtes un administrateur.  
+    -   Si vous êtes un administrateur d’application, tapez **ssomanage – listmappings  *\<domaine\>\\< nom d’utilisateur\>*   *\< nom de l’application\>***  pour répertorier tous les mappages d’un utilisateur donné possède dans les applications associées dont vous êtes un administrateur.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -53,7 +53,7 @@ Cette commande permet de répertorier tous les mappages existants pour l'utilisa
   
 1.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est \< *lecteur*> : \Program Files\Enterprise Single Sign-On.  
+2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est \< *lecteur*\>: \Program Files\Enterprise Single Sign-On.  
   
 3.  Type **ssoclient – listmappings** pour répertorier tous les mappages que vous avez.  
   

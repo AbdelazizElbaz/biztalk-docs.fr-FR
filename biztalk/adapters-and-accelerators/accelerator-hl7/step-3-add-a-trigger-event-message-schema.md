@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a4eed7ead2f0d50e7841ed6c39ffdcee86c6524f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 439caac8f1da151a9f203a1372039aaeedbfe83c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3-add-a-trigger-event-message-schema"></a>Étape 3 : Ajouter un schéma d’événement (Message) de déclencheur
 Dans cette étape, vous créez un projet basé sur l’Empty [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] modèle de projet. À ce projet, vous ajoutez le schéma qui [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] utilise pour valider les messages dans le traitement par lots entrant (ADT ^ A03). Vous ajoutez une référence au projet contenant les schémas courants v2.3.1, attribuez le nom fort au projet, puis déployez le projet.  
@@ -64,9 +64,9 @@ Dans cette étape, vous créez un projet basé sur l’Empty [!INCLUDE[btaBTAHL7
   
 3.  Vérifiez **signer l’assembly** case à cocher.  
   
-4.  Dans **choisir un fichier de clé de nom fort** dérouler la liste, sélectionnez  **\<Parcourir... >.**  
+4.  Dans **choisir un fichier de clé de nom fort** dérouler la liste, sélectionnez  **\<Parcourir... \>.**  
   
-5.  Accédez à  **\<* lecteur*> : \Batching didacticiel **, sélectionnez **key.snk**, puis cliquez sur **ouvrir**.  
+5.  Accédez à  **\<* lecteur*\>: \Batching didacticiel **, sélectionnez **key.snk**, puis cliquez sur **ouvrir**.  
   
 6.  Dans l’Explorateur de solutions, cliquez sur **BTAHL7V231Body**, puis cliquez sur **déployer**. Vérifiez qu’un message de réussite s’affiche dans la fenêtre Sortie.  
   

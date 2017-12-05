@@ -12,14 +12,14 @@ caps.latest.revision: "37"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5b5edfa2eccfeac9a4d4192b2189877081ddf25a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0e8351420ed8d7815944c3ae619420137a8a61df
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="edi-support-in-biztalk-server"></a>Prise en charge d'EDI dans BizTalk Server
-Cette rubrique fournit une brève présentation générale du traitement EDI et de la manière dont [!INCLUDE[prague](../includes/prague-md.md)] le prend en charge.  
+Cette rubrique fournit une brève présentation générale d’EDI et la façon dont BizTalk Server prend en charge EDI.  
   
 ## <a name="introduction-to-edi"></a>Présentation de EDI  
  L'échange de données informatisé (EDI) est l'une des solutions les plus couramment utilisées en matière d'échange électronique des données entre partenaires commerciaux. Cette solution est largement orientée messagerie. Les documents sont implémentés en tant que fichiers plats pouvant inclure des documents informatisés traités par lot. Les échanges traités par lot peuvent inclure plusieurs groupes qui peuvent eux-mêmes inclure plusieurs messages ou documents informatisés.  
@@ -42,7 +42,7 @@ Cette rubrique fournit une brève présentation générale du traitement EDI et 
 >  Les messages EDI sont distincts de leur transport. Les normes EDI ne définissent pas le transport des messages, de sorte que les messages EDI peuvent être envoyés par différents moyens.  
   
 ## <a name="how-edi-is-implemented-in-biztalk-server"></a>Implémentation d’EDI dans BizTalk Server  
- [!INCLUDE[prague](../includes/prague-md.md)] comprend des fonctionnalités natives assurant la prise en charge d'EDI. EDI est intégré au produit ; Il n’est pas un complément, comme un adaptateur ou d’un accélérateur.  
+ BizTalk Server inclut des fonctionnalités natives qui prend en charge EDI. EDI est intégré au produit ; Il n’est pas un complément, comme un adaptateur ou d’un accélérateur.  
   
  **Traitement des échanges**  
   
@@ -73,7 +73,7 @@ Cette rubrique fournit une brève présentation générale du traitement EDI et 
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] permet la publication de rapports d'état spécifiques à EDI. Ces rapports d'état décrivent complètement le statut d'une transaction d'échange de documents EDI, avec les accusés de réception liés à l'échange.  
   
 ## <a name="edi-components-in-biztalk-server"></a>Composants d’EDI dans BizTalk Server  
- Les composants Microsoft [!INCLUDE[prague](../includes/prague-md.md)] utilisés pour le traitement EDI sont les suivants :  
+ Les composants de Microsoft BizTalk Server utilisés pour le traitement EDI sont les suivants :  
   
 -   L'application EDI BizTalk contenant les artefacts (y compris les pipelines, les orchestrations et les schémas) nécessaires au traitement des documents EDI.  
   
@@ -94,7 +94,7 @@ Cette rubrique fournit une brève présentation générale du traitement EDI et 
   
 -   Un référentiel de schéma inclut les schémas X12, EDIFACT, HIPAA X12N 4010A XSD, EANCOM et de contrôle. Pour plus d’informations, consultez [prise en charge des schémas de Document EDI](../core/edi-document-schema-support.md).  
   
--   Un outil de migration (outil de migration de tiers) permet de migrer les données de tiers BizTalk Server 2006 R2 ou BizTalk Server 2009 dans [!INCLUDE[prague](../includes/prague-md.md)]. Pour plus d’informations, consultez [migration des artefacts EDI à partir d’une Version précédente de BizTalk Server](http://msdn.microsoft.com/library/b956a97e-03d0-47ea-a2ce-c07a339c0f2c).  
+-   Un outil de migration (tiers) permet de migrer des données de tiers EDI de BizTalk Server 2006 R2 ou BizTalk Server 2009 vers BizTalk Server. Pour plus d’informations, consultez [migration des artefacts EDI à partir d’une Version précédente de BizTalk Server](http://msdn.microsoft.com/library/b956a97e-03d0-47ea-a2ce-c07a339c0f2c).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Le traitement EDI dans BizTalk Server](../core/edi-processing-in-biztalk-server.md)   
@@ -102,4 +102,4 @@ Cette rubrique fournit une brève présentation générale du traitement EDI et 
  [Problèmes de prise en charge EDI](../core/edi-support-issues.md)   
  [Architecture de la Solution EDI](../core/edi-solution-architecture.md)   
  [EDI et AS2 le rapport d’état](../core/edi-and-as2-status-reporting.md)   
- [Développement et la configuration des Solutions EDI BizTalk Server](../core/developing-and-configuring-biztalk-server-edi-solutions.md)
+ [Développement et configuration de solutions EDI BizTalk Server](../core/developing-and-configuring-biztalk-server-edi-solutions.md)

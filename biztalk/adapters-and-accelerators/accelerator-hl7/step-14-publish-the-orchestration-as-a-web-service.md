@@ -19,11 +19,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fd7707ded0951eb1141368a91e7fe8f533e8241a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8c742d21dd2f2e1d95f697beea3d5d5dfa0461d2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-14-publish-the-orchestration-as-a-web-service"></a>Étape 14 : Publier l’Orchestration en tant que Service Web
 Dans cette étape, vous utilisez l’Assistant de publication des Services Web BizTalk pour publier une orchestration en tant que service Web.  
@@ -44,7 +44,7 @@ Dans cette étape, vous utilisez l’Assistant de publication des Services Web B
   
 3.  Sur le **créer un Service Web** page, sélectionnez **publier des orchestrations BizTalk en tant que services web**, puis cliquez sur **suivant**.  
   
-4.  Sur le **BizTalk Assembly** page, dans le **fichier d’assembly BizTalk (\*.dll)** champ, tapez ou recherchez  **\<* lecteur*> : \Tutorial\BTAHL7V22Common\BTAHL7 Project\bin\development**, cliquez sur **BTAHL7 Project.dll**, cliquez sur **ouvrir**, puis cliquez sur **suivant**.  
+4.  Sur le **BizTalk Assembly** page, dans le **fichier d’assembly BizTalk (\*.dll)** champ, tapez ou recherchez  **\<* lecteur* \>: \Tutorial\BTAHL7V22Common\BTAHL7 Project\bin\development**, cliquez sur **BTAHL7 Project.dll**, cliquez sur **ouvrir**, puis cliquez sur **suivant**.  
   
 5.  Sur le **Orchestrations et Ports** , vérifiez que tous les nœuds sont sélectionnés, puis cliquez sur **suivant**.  
   
@@ -67,4 +67,4 @@ Dans cette étape, vous utilisez l’Assistant de publication des Services Web B
  Passez à [étape 15 : configurer l’envoi et de Ports de réception](../../adapters-and-accelerators/accelerator-hl7/step-15-configure-the-send-and-receive-ports.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Didacticiel d’enrichissement de message](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)
+ [Didacticiel sur l’enrichissement des messages](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

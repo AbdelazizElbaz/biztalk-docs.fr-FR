@@ -12,14 +12,14 @@ caps.latest.revision: "54"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3ccdc0c0f36f2dca474b962d3f108e4f287e378f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 26c296dfb2ca1f05a2f403aa31a73b67934fb23a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues-for-the-wcf-adapters"></a>Problèmes connus pour les adaptateurs WCF
-Cette rubrique décrit les problèmes connus des adaptateurs WCF inclus avec [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)].  
+Cette rubrique décrit les problèmes connus pour les adaptateurs WCF inclus dans BizTalk Server.  
   
 ## <a name="a-message-that-fails-in-the-inbound-soap-marshaling-processing-is-not-suspended-in-wcf-receive-adapters"></a>Un message échouant au cours du traitement de marshaling SOAP entrant n'est pas interrompu dans les adaptateurs de réception WCF.  
  Lorsqu'un message arrive à un adaptateur de réception WCF, ce dernier crée un message BizTalk à partir du message SOAP entrant, puis transmet le message BizTalk au proxy de transport géré par le Gestionnaire des points de terminaison. Si l'adaptateur ne peut pas lire l'enveloppe et le corps SOAP lors de la création du message BizTalk, le message n'est pas interrompu car l'adaptateur utilise le lecteur rapide, non mis en cache et vers l'avant uniquement, pour accéder au message SOAP.  

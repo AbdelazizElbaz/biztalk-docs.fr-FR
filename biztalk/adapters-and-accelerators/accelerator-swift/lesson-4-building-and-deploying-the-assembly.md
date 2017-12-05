@@ -17,18 +17,18 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5521b5921dbfcc3c8a3c5916fc4d4a2dc96eebbd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3ca5a539fdaea9026a7c18cae6f076e72df9efe2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="lesson-4-building-and-deploying-the-assembly"></a>Leçon 4 : Création et déploiement de l’Assembly
 Dans cette leçon, vous générez et déployez le projet pour générer un assembly qui contient les schémas que vous avez créé dans les leçons précédentes. Cette tâche s’assure aucune erreur de compilation dans le travail que vous avez créé jusqu'à présent.  
   
  Déploiement d’un assembly place une copie de l’assembly dans la base de données de Configuration et l’installe dans le global assembly cache (GAC). Dans la procédure suivante, vous déployez directement à partir de l’Explorateur de solutions.  
   
- Lorsque le projet se compile dans un assembly (fichier DLL), [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] enregistre la DLL dans le \< *lecteur*> : \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator pour SWIFT\bin\ Dossier de développement dans le dossier du projet.  
+ Lorsque le projet se compile dans un assembly (fichier DLL), [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] enregistre la DLL dans le \< *lecteur*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator pour Dossier SWIFT\bin\Development dans le dossier du projet.  
   
 ### <a name="to-build-and-deploy-the-project"></a>Pour créer et déployer le projet  
   
@@ -37,7 +37,7 @@ Dans cette leçon, vous générez et déployez le projet pour générer un assem
     > [!NOTE]
     >  Vérifiez que **génération a réussi** s’affiche dans le coin inférieur gauche de l’écran. Pendant le processus de compilation, vous pouvez voir certains messages d’état. Ces messages sont normaux lorsque vous traitez des schémas SWIFT. Si des erreurs s’affiche, cliquez sur Outils, puis cliquez sur Administration de BizTalk Server pour ouvrir la Console Administration de BizTalk Server. Utilisez la fonctionnalité de l’Observateur d’événements et l’intégrité et l’activité de suivi du fonctionnement (HAT) dans la Console Administration de BizTalk pour corriger les erreurs et la régénérer.  
   
-2.  À l’aide de [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorateur de solutions, cliquez sur Parcourir pour le  **\<* lecteur*> : \labs\SWIFTProject\SWIFTSchemas\bin\Development** dossier et vérifiez que le  **SWIFTSchemas.dll** fichier existe dans ce dossier.  
+2.  À l’aide de [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorateur de solutions, cliquez sur Parcourir pour le  **\<* lecteur*\>: \labs\SWIFTProject\SWIFTSchemas\bin\Development** dossier et vérifiez que le  **SWIFTSchemas.dll** fichier existe dans ce dossier.  
   
 3.  Dans l’Explorateur de solutions, cliquez sur **SWIFTSchemas**, puis cliquez sur **déployer**.  
   

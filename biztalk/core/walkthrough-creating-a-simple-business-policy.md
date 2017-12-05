@@ -12,11 +12,11 @@ caps.latest.revision: "25"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0c894ab80926d2fad66af540c492dd053570aaa4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1eb4f21cf9311399ef6092b95fa818547679a240
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="walkthrough-creating-a-simple-business-policy"></a>Procédure pas à pas : Création d’une stratégie commerciale Simple
 Cette procédure pas à pas fournit des instructions détaillées pour l’utilisation de l’éditeur des règles d’entreprise pour créer une stratégie commerciale simple intitulée **ProcessPurchaseOrder** contenant une règle nommée **ApprovedRule**. Le **ApprovedRule** règle attend l’utilisateur d’envoyer un document XML en tant que fait et définit la valeur de la **état** champ dans le document à **approuvé** si la valeur de la  **Quantité** champ est inférieure ou égale à **500**.  
@@ -106,7 +106,7 @@ Cette procédure pas à pas fournit des instructions détaillées pour l’utili
 8.  Dans la fenêtre Propriétés, modifiez la valeur de la **Type de Document** propriété à partir de **PO** à **RuleTest.PO**.  
   
     > [!NOTE]
-    >  Vous allez créer un projet BizTalk nommé **RuleTest** plus loin dans le [procédure pas à pas : appel de la stratégie à partir d’une Orchestration](../core/walkthrough-invoking-the-policy-from-an-orchestration.md) procédure pas à pas. Dans ce guide, vous allez ajouter le **PO.xsd** de fichiers au projet, créez une orchestration qui appelle le **ProcessPurchaseOrder** stratégie, puis testez la stratégie. Pour tester la stratégie à partir de l’orchestration, vous devez vous assurer que vous modifiez le **Type de Document** propriété  **\<nom du projet >.\< SchemaName >**, qui est **RuleTest.PO** dans ce cas.  
+    >  Vous allez créer un projet BizTalk nommé **RuleTest** plus loin dans le [procédure pas à pas : appel de la stratégie à partir d’une Orchestration](../core/walkthrough-invoking-the-policy-from-an-orchestration.md) procédure pas à pas. Dans ce guide, vous allez ajouter le **PO.xsd** de fichiers au projet, créez une orchestration qui appelle le **ProcessPurchaseOrder** stratégie, puis testez la stratégie. Pour tester la stratégie à partir de l’orchestration, vous devez vous assurer que vous modifiez le **Type de Document** propriété  **\<nom du projet\>.\< SchemaName\>**, qui est **RuleTest.PO** dans ce cas.  
   
      ![BRE &#45; Procédure pas à pas &#45; ChangeDocType](../core/media/e9a370fd-d9b2-48f0-ad0e-85a5428a9c21.gif "e9a370fd-d9b2-48f0-ad0e-85a5428a9c21")  
   
@@ -128,7 +128,7 @@ Cette procédure pas à pas fournit des instructions détaillées pour l’utili
   
      ![Éditeur des règles d’entreprise &#45; DragStatus](../core/media/3617251a-a192-4aec-9474-81f6290c0832.gif "3617251a-a192-4aec-9474-81f6290c0832")  
   
-14. Dans le volet THEN, cliquez sur  **\<entrer une valeur >** , puis tapez **approuvé**.  
+14. Dans le volet THEN, cliquez sur  **\<entrer une valeur\>**  , puis tapez **approuvé**.  
   
 15. Dans la fenêtre Explorateur de stratégies, cliquez sur **Version 1.0 (non enregistrée)**, puis cliquez sur **enregistrer**.  
   

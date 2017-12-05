@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 63a6a79a12949148f77363d7e4cffd2b2c321d00
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4e14fd3f433609da7748197a8b67112d815da153
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-validate-a-message-using-an-esb-on-ramp"></a>Comment : valider un Message à l’aide d’une architecture ESB rampe d’entrée
 ## <a name="goal"></a>Objectif  
@@ -58,7 +58,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  Dans le bloc-notes, ouvrez Invalid.xml.  
   
-4.  Modification  **\<ns0:requestType > 10\</ns0:requestType > à \<ns0:requestType > dix\</ns0:requestType >**.  
+4.  Modification  **\<ns0:requestType\>10\</ns0:requestType\> à \<ns0:requestType\>dix\</ns0:requestType\>** .  
   
 5.  Enregistrer Invalid.xml en UTF-8, puis fermez le bloc-notes.  
   
@@ -67,7 +67,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-an-esb-itinerary-dsl-model"></a>Pour créer un modèle DSL de la feuille de route ESB  
   
-1.  Dans [!INCLUDE[vs2010](../includes/vs2010-md.md)], ouvrez C:\HowTos\Patterns\Patterns.sln.  
+1.  Dans Visual Studio, ouvrez C:\HowTos\Patterns\Patterns.sln.  
   
 2.  Dans l’Explorateur de solutions, cliquez sur **ItineraryLibrary**, pointez sur **ajouter**, puis cliquez sur **nouvel itinéraire**.  
   
@@ -145,9 +145,9 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-and-configure-an-esb-on-ramp"></a>Pour créer et configurer un ESB rampe d’entrée  
   
-1.  Cliquez sur **Démarrer** dans la barre des tâches, pointez sur **tous les programmes**, pointez sur  **[!INCLUDE[prague](../includes/prague-md.md)]** , puis cliquez sur **Administration de BizTalk Server**.  
+1.  Cliquez sur **Démarrer** dans la barre des tâches, pointez sur **tous les programmes**, pointez sur **BizTalk Server**, puis cliquez sur **Administration de BizTalk Server**.  
   
-2.  Dans le [!INCLUDE[prague](../includes/prague-md.md)] Console d’Administration, développez **groupe BizTalk**, développez **Applications**, puis développez **Microsoft.Practices.ESB**.  
+2.  Dans la Console Administration de BizTalk Server, développez **groupe BizTalk**, développez **Applications**, puis développez **Microsoft.Practices.ESB**.  
   
 3.  Avec le bouton droit **emplacements de réception**, pointez sur **nouveau**, puis cliquez sur **emplacement de réception unidirectionnel**.  
   
@@ -188,7 +188,7 @@ ms.lasthandoff: 09/20/2017
   
 2.  Cliquez sur **OK** pour fermer la **propriétés de l’emplacement de réception** boîte de dialogue.  
   
-3.  Dans le [!INCLUDE[prague](../includes/prague-md.md)] Console d’Administration, avec le bouton droit le **OnRamp.Itinerary.HowTo** emplacement de réception, puis cliquez sur **activer**.  
+3.  Dans la Console Administration de BizTalk Server, cliquez sur le **OnRamp.Itinerary.HowTo** emplacement de réception, puis cliquez sur **activer**.  
   
 #### <a name="to-test-the-message-validation-and-itinerary-selection"></a>Pour tester la sélection de validation et de la feuille de route des messages  
   
@@ -216,20 +216,20 @@ ms.lasthandoff: 09/20/2017
   
 9. Dans l’Observateur d’événements, développez **journaux Windows**, puis cliquez sur **Application**.  
   
-10. Recherchez un événement récent où le **Source** est  **[!INCLUDE[prague](../includes/prague-md.md)]** et le **ID d’événement** est **5719**.  
+10. Recherchez un événement récent où le **Source** est **BizTalk Server**et le **ID d’événement** est **5719**.  
   
     > [!NOTE]
     >  La présentation et l’échec du message non valide a entraîné une entrée d’exception dans le journal des événements.  
   
-11. Dans le [!INCLUDE[prague](../includes/prague-md.md)] Console d’Administration, avec le bouton droit le **OnRamp.Itinerary.HowTo** emplacement de réception, puis cliquez sur **désactiver**.  
+11. Dans la Console Administration de BizTalk Server, cliquez sur le **OnRamp.Itinerary.HowTo** emplacement de réception, puis cliquez sur **désactiver**.  
   
 12. Après le **OnRamp.Itinerary.HowTo** recevoir d’emplacement est désactivée, faites un clic droit, puis cliquez sur **supprimer**. Dans le **emplacement de réception de confirmer la suppression** boîte de dialogue, cliquez sur **Oui**.  
   
 ## <a name="additional-resources"></a>Ressources supplémentaires  
  Pour plus d'informations, consultez les rubriques connexes suivantes :  
   
--   [Comment : sélectionner un itinéraire à l’aide d’une stratégie de règles d’entreprise](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
+-   [Guide pratique pour sélectionner un itinéraire à l’aide d’une stratégie de règles métier](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
   
 -   [Activités de développement](../esb-toolkit/development-activities.md)  
   
--   [Installer et exécuter l’exemple de résolution dynamique](../esb-toolkit/installing-and-running-the-dynamic-resolution-sample.md)
+-   [Installation et exécution de l’exemple de résolution dynamique](../esb-toolkit/installing-and-running-the-dynamic-resolution-sample.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: adfe1e552c0f129df67ec5ea790f8e685b214fe6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 78ae5f1c61f2a00359e88acd75c093e2b6c2fb91
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="overview-of-the-bam-development-process"></a>Vue d'ensemble du processus de développement BAM
 Cette rubrique décrit le processus de développement ainsi que la base de données et les tables où sont stockées les données BAM.  
@@ -34,7 +34,7 @@ Cette rubrique décrit le processus de développement ainsi que la base de donn�
   
     -   Utilisez le gestionnaire de configuration de BizTalk Server pour installer les outils BAM. Nous vous recommandons d'utiliser le gestionnaire de configuration car il inscrit dans le registre des entrées qui simplifient les mises à jour. Pour plus d’informations sur la configuration BAM, consultez [configuration BAM Tools Using the Configuration Manager](http://go.microsoft.com/fwlink/?LinkId=70561) (http://go.microsoft.com/fwlink/?LinkId=70561).  
   
-    -   Copiez le DLL à partir d'un ordinateur sur lequel il a déjà été installé. Le DLL se trouve dans Microsoft BizTalk Server \<version > \Tracking dossier.  
+    -   Copiez le DLL à partir d'un ordinateur sur lequel il a déjà été installé. Le DLL se trouve dans Microsoft BizTalk Server \<version\>dossier \Tracking.  
   
 ## <a name="bam-development-process"></a>Processus de développement BAM  
  L'illustration suivante décrit le flux de développement BAM.  
@@ -56,11 +56,11 @@ Cette rubrique décrit le processus de développement ainsi que la base de donn�
   
 4.  Exécutez l'application. À ce moment-là, le code va :  
   
-    -   Ajouter un enregistrement de l’espace réservé dans la table BAM_\<*nom de l’activité*> _Active table.  
+    -   Ajouter un enregistrement de l’espace réservé dans la table BAM_\<*nom de l’activité*\>_Active table.  
   
     -   Mettre à jour les éléments de données dans l'enregistrement.  
   
-    -   Terminer l’activité et déplacer l’enregistrement dans la table BAM_\<*activité nam*e > _terminée.  
+    -   Terminer l’activité et déplacer l’enregistrement dans la table BAM_\<*nom de l’activité**\>_terminée.  
   
 ## <a name="where-bam-data-is-stored"></a>Espace de stockage des données BAM  
  L'analyse BAM fournit l'espace de noms EventObservation qui contient les classes EventStream utilisées dans la gestion des événements BAM.  
@@ -69,11 +69,11 @@ Cette rubrique décrit le processus de développement ainsi que la base de donn�
   
 |Nom| Description|  
 |----------|-----------------|  
-|Table active|Nommée bam_\<*nom de l’activité*> _Active, cette table contient les activités de ce type qui n’ont pas encore terminée.|  
-|Table des relations actives|Nommée bam_\<*nom de l’activité*> _relationsactives, cette table contient les activités associées à l’activité qui n’ont pas encore terminée.|  
-|Table des continuations|Nommée bam_\<*nom de l’activité*> _continuations, ce tableau répertorie les activités de continuation pour l’activité.|  
-|Table terminée|Nommée bam_\<*nom de l’activité*> _completed.|  
-|Table des relations terminées|Nommée bam_\<*nom de l’activité*> _relationsterminées, cette table contient les activités terminées associées à l’activité.|  
+|Table active|Nommée bam_\<*nom de l’activité*\>_Active, cette table contient les activités de ce type qui n’ont pas encore terminée.|  
+|Table des relations actives|Nommée bam_\<*nom de l’activité*\>_relationsactives, cette table contient les activités associées à l’activité qui n’ont pas encore terminée.|  
+|Table des continuations|Nommée bam_\<*nom de l’activité*\>_continuations, ce tableau répertorie les activités de continuation pour l’activité.|  
+|Table terminée|Nommée bam_\<*nom de l’activité*\>_completed.|  
+|Table des relations terminées|Nommée bam_\<*nom de l’activité*\>_relationsterminées, cette table contient les activités terminées associées à l’activité.|  
   
  Vous pouvez capturer quatre types de données dans une activité BAM :  
   

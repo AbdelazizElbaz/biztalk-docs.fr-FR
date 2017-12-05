@@ -12,16 +12,16 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 068eddfdd2138fbc92ad4821b2eaf9491ad39000
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c6a85e8e98e7ea2874935656553b18abac7ca88a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="architecture-of-the-biztalk-esb-toolkit"></a>Architecture de BizTalk ESB Toolkit
 Le [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] se compose d’une série de l’interaction des composants qui prennent en charge et implémentent un environnement de messagerie faiblement couplé qui facilite la génération d’applications d’entreprise basée sur le message. Les services et les composants se répartissent naturellement sept catégories suivantes :  
   
--   **Services Web.** Celles-ci exposent les services internes telles que le traitement d’itinéraire, gestion des exceptions, la résolution de points de terminaison et des mappages, [!INCLUDE[prague](../includes/prague-md.md)] opérations, interopérabilité Universal Description, Discovery and Integration (UDDI) et la transformation du message contenu.  
+-   **Services Web.** Celles-ci exposent les services internes telles que de la feuille de route du traitement, gestion des exceptions, la résolution de points de terminaison et mappages, les opérations de BizTalk Server, interopérabilité Universal Description, Discovery and Integration (UDDI) et la transformation du contenu du message .  
   
 -   **Services d’itinéraire.** Notamment les services basés sur la messagerie et d’orchestration pour effectuer des transformations et le routage des messages. Vous pouvez créer des services personnalisés qui participent à dans le traitement de l’itinéraire. Notamment les services basés sur la messagerie et d’orchestration pour effectuer des transformations et le routage des messages. Vous pouvez créer des services personnalisés qui participent à dans le traitement de l’itinéraire.  
   
@@ -35,7 +35,7 @@ Le [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] se compose d’une séri
   
 -   **Portail de gestion ESB.** Cet exemple d’application fournit la configuration du Registre médiation d’exception, notification d’alerte et analytique.  
   
- La plupart de ces composants et services s’appuient sur les fonctionnalités implémentées par [!INCLUDE[prague](../includes/prague-md.md)], tels que les moteurs d’Orchestration, de Transformation et de règles d’entreprise et de la base de données de la boîte de Message. La figure 1 montre une vue schématique de catégories, les composants et les services qui se produisent généralement dans chaque catégorie, et les composants centraux du système BizTalk Server utilisé par le [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)].  
+ La plupart de ces composants et services s’appuient sur les fonctionnalités implémentées par BizTalk Server, tels que les moteurs d’Orchestration, de Transformation et de règles d’entreprise et de la base de données de la boîte de Message. La figure 1 montre une vue schématique de catégories, les composants et les services qui se produisent généralement dans chaque catégorie, et les composants centraux du système BizTalk Server utilisé par le [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)].  
   
  ![Architecture ESB](../esb-toolkit/media/esbarchitecture.gif "ESBArchitecture")  
   

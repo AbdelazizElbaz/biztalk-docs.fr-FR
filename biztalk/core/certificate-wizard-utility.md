@@ -12,16 +12,16 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8e3acbb1198034e76bb1e0f45c0f9755ec6ac95d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3b0341a11c45cd08f8476d48ea38cbf96bcc49c1
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="certificate-wizard-utility"></a>Utilitaire de l'Assistant Certificat
 L'utilitaire CertWizard permet d'importer un certificat d'un fichier .pfx ou .cer dans un magasin privé ou public pour l'utiliser avec Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
- Vous trouverez le code source pour l’Assistant de certificat dans le **C:\Program Files\Microsoft BizTalk Server \<version > \SDK\Utilities\Certificate Assistant** dossier. Avec un système d’exploitation 64 bits et une version de [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], doivent être dans le **(x86) de C:\Program Files \Microsoft BizTalk Server \<version > \SDK\Utilities\Certificate Assistant** dossier. Pour utiliser l'Assistant Certificat, vous devez commencer par le créer à l'aide de [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
+ Vous trouverez le code source pour l’Assistant de certificat dans le **C:\Program Files\Microsoft BizTalk Server \<version\>\SDK\Utilities\Certificate Assistant** dossier. Avec un système d’exploitation 64 bits et une version de BizTalk Server, il sera dans la **(x86) de C:\Program Files \Microsoft BizTalk Server \<version\>\SDK\Utilities\Certificate Assistant** dossier. Pour utiliser l’Assistant certificat, vous devez d’abord générer à l’aide de Visual Studio.  
   
  L'utilitaire CertWizard importe une clé privée d'un fichier .pfx dans le magasin personnel, et importe une clé publique d'un fichier .cer dans un magasin public. Lors de l'importation d'une clé privée, le certificat peut être un certificat de déchiffrement pour les messages entrants, ou un certificat de signature pour les messages sortants.  
   
@@ -78,4 +78,4 @@ CertWizard /Rootkey <filename>.cer [/Thumbprint <thumbprint>]
     >  Si vous n'entrez pas l'intégralité de la commande dans l'invite, CertWizard vous invite à fournir les valeurs requises.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilitaires dans le Kit de développement](../core/utilities-in-the-sdk.md)
+ [Utilitaires du SDK](../core/utilities-in-the-sdk.md)

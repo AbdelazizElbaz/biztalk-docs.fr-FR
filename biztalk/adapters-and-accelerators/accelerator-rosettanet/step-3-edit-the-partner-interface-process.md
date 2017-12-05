@@ -16,18 +16,18 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4b9640f542a55d028f3df8715c49df0e9e9ad370
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3b6300c12e7bc28de0dc81af9eae23699338ed3d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3-edit-the-partner-interface-process"></a>Étape 3 : Modifier le Partner Interface Process
 Dans cette étape, vous modifiez les paramètres de configuration de processus PIP (Partner Interface) pour désactiver le transport sécurisé si vous n’avez pas d’un certificat SSL Secure Sockets Layer () configuré dans [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® Internet Information Services (IIS). Étant donné que le scénario de bouclage ne prend pas en charge la signature des messages entrants et sortants, vous devez modifier les paramètres par défaut pour continuer le didacticiel. Vous modifiez le PIP STD_0C1_R01.02.  
   
 ### <a name="to-edit-the-std0c1r0102-pip"></a>Pour modifier le PIP STD_0C1_R01.02  
   
-1.  Dans le  **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]**  Management Console, développez **BizTalk \<version > Accelerator for RosettaNet**, cliquez sur **paramètres de Configuration de processus**, avec le bouton droit **STD_0C1_R01.02**, puis cliquez sur **propriétés**.  
+1.  Dans le  **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]**  Management Console, développez **BizTalk \<version\> Accelerator for RosettaNet**, cliquez sur **les paramètres de Configuration de processus** , avec le bouton droit **STD_0C1_R01.02**, puis cliquez sur **propriétés**.  
   
 2.  Dans la boîte de dialogue STD_0C1_R01.02Properties sur le **activité** onglet, définissez la **Transport est sécurisé requis** option `False`. Effectuez cette étape uniquement si vous n’avez pas d’un certificat SSL sur votre serveur Web IIS.  
   

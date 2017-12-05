@@ -19,11 +19,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 30e21f2f102761dbfb332179c2754ea7ddea2d11
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5b87f0d31010a8bf80e09c59f05f2f9302a510e2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="related-documents"></a>Documents associés
 La zone Documents associés des détails des résultats de requête affiche une liste de documents de référence associés à l'activité. Il peut s'agir de documents de tout type : image CAO, fichier .WAV ou bon de commande. Par exemple, une activité Bon de commande est généralement associée à un document de base de type Bon de commande. La liste contient un lien vers le bon de commande.  
@@ -35,7 +35,7 @@ La zone Documents associés des détails des résultats de requête affiche une 
   
 -   Votre développeur d'intégration remplit la liste à l'aide d'un programme en appelant votre application personnalisée.  
   
- Définition de la référence de document à l’aide de ces méthodes ajoute une ligne dans le \<nomactivité > _References table avec l’emplacement du document.  
+ Définition de la référence de document à l’aide de ces méthodes ajoute une ligne dans le \<activityname\>_References table avec l’emplacement du document.  
   
  Si aucune de ces tâches n’a été effectuée, le **Document associé** zone est vide.  
   

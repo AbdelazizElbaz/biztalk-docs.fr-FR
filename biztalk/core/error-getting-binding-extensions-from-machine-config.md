@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b8dfdedb58e4372caed38c7c272cbaaf65fefbcb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bbe53def02f42c59cf5e40380c898f47695c19da
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="error-getting-binding-extensions-from-machineconfig"></a>Erreur lors de l'obtention des extensions de liaison à partir de machine.config.
 ## <a name="details"></a>Détails  
@@ -58,6 +58,6 @@ ms.lasthandoff: 09/20/2017
         ```  
   
 > [!NOTE]
->  Le code ci-dessus peut également être ajouté à l’onglet Extensions WCF. Si l’extension doit être du côté réception, consultez le  **\<nom d’hôte > boîte de dialogue Propriétés, les Extensions WCF** onglet (WCF-Custom ou Gestionnaire de réception de l’adaptateur WCF-CustomIsolated) [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]. Si l’extension doit se trouver du côté envoi, consultez  **\<nom d’hôte > boîte de dialogue Propriétés, les Extensions WCF** onglet (Gestionnaire d’envoi WCF-Custom adaptateur) [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].  
+>  Le code ci-dessus peut également être ajouté à l’onglet Extensions WCF. Si l’extension doit être du côté réception, consultez le  **\<nom d’hôte\> boîte de dialogue Propriétés, les Extensions WCF** onglet (WCF-Custom ou Gestionnaire de réception de l’adaptateur WCF-CustomIsolated) [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]. Si l’extension doit se trouver du côté envoi, consultez  **\<nom d’hôte\> boîte de dialogue Propriétés, les Extensions WCF** onglet (Gestionnaire d’envoi WCF-Custom adaptateur) [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].  
   
  3. Fermez et rouvrez la console Administration. L'adaptateur WCF-Custom doit désormais inclure le comportement personnalisé. Une fois activé, le port ne doit pas être désactivé.

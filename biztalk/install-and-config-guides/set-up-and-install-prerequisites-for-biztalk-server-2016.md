@@ -5,7 +5,7 @@ author: MandiOhlinger
 manager: anneta
 ms.prod: biztalk-server
 ms.custom: 
-ms.date: 08/15/2017
+ms.date: 11/30/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -13,16 +13,16 @@ ms.topic: article
 ms.assetid: aa70b621-903a-4cfa-9cb0-c6a82ed8f733
 caps.latest.revision: "11"
 ms.author: mandia
-ms.openlocfilehash: bee25a841d7f434fd5366f483b0b5544462d29fd
-ms.sourcegitcommit: 5355a25d120d094778fb8f68ea14cab55c68d292
+ms.openlocfilehash: 2f03aaf7d33cc494320d1ef0944b48286bc1b24c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="set-up-and-install-prerequisites-for-biztalk-server-2016"></a>Installation et configuration des composants logiciels requis pour BizTalk Server 2016
 Configurez le serveur, puis installez et configurez les composants logiciels requis.
 
-## <a name="join-the-local-administrators-group"></a>Adhésion au groupe Administrateurs local
+## <a name="join-the-administrators-group"></a>Rejoindre le groupe d’administrateurs
 Pour installer et configurer BizTalk Server, connectez-vous au serveur à l’aide d’un compte d’administrateur sur l’ordinateur local. Ajoutez les comptes d’utilisateurs qui administrent le serveur BizTalk Server au groupe Administrateurs local :
 
 1.  Dans le menu Démarrer, ouvrez **Gestion de l’ordinateur**.
@@ -33,8 +33,8 @@ Pour installer et configurer BizTalk Server, connectez-vous au serveur à l’ai
 2.  Développez **Utilisateurs et groupes locaux** et sélectionnez **Groupes**.
 3.  Cliquez avec le bouton droit sur le groupe **Administrateurs** et sélectionnez **Ajouter au groupe**. **Ajoutez** vos comptes et sélectionnez **OK** pour enregistrer les modifications. 
 
-## <a name="change-the-computer-name-to-less-than-15-characters-optional"></a>Modification du nom de l’ordinateur pour le réduire à moins de 15 caractères (facultatif)
-Si le nom de votre ordinateur est supérieur à 15 caractères, la configuration de BizTalk Server échoue. Pour modifier le nom de l’ordinateur :
+## <a name="change-the-computer-name-optional"></a>Modifier le nom d’ordinateur (facultatif)
+Si le nom de votre ordinateur est supérieur à 15 caractères, la configuration de BizTalk Server échoue. Pour modifier le nom d’ordinateur en moins de 15 caractères :
 
 1.  Dans **Gestionnaire de serveur** > **Tableau de bord**, sélectionnez **Serveur local**. 
 2.  Dans **Propriétés**, sélectionnez la propriété Nom de l’ordinateur pour la modifier.
@@ -61,7 +61,7 @@ Si BizTalk et SQL Server sont installés sur des ordinateurs distincts, activez 
 
 Pour obtenir des paramètres supplémentaires qui peuvent être nécessaires, consultez [Résolution des problèmes liés à MSDTC](../core/troubleshooting-problems-with-msdtc.md).
 
-## <a name="configure-the-application-event-log-optional"></a>Configurer le journal des événements Application (facultatif)
+## <a name="configure-application-event-log-optional"></a>Configurer le journal des événements Application (facultatif)
 
 Le programme d'installation de BizTalk Server conserve un enregistrement des événements dans le journal des événements de l'application. Selon les fonctionnalités de BizTalk Server installées, il se peut que la limite d'espace requis dans le journal soit dépassée. L’installation échoue si le journal des événements de l’application ne dispose plus de suffisamment d’espace lors de l’installation. Le fait de modifier les paramètres du journal d'événements d'applications permet d'empêcher cet échec.
 
@@ -79,7 +79,7 @@ Le programme d'installation de BizTalk Server conserve un enregistrement des év
 
 4. Sélectionnez **OK**.
 
-## <a name="edge-cant-be-opened-using-the-built-in-administrator-account-optional"></a>Bord ne peut pas être ouvert en utilisant le compte administrateur intégré (facultatif)
+## <a name="edge-cant-be-opened-optional"></a>Bord ne peut pas être ouvert (facultatif)
 
 Lorsque vous utilisez Edge, le message suivant s’affiche :  
 `Microsoft Edge can't be opened using the Built-in Administrator account. Sign in with a different account and try again.`
@@ -98,7 +98,7 @@ Veillez à installer les dernières mises à jour critiques de Windows.
 1. Dans le menu Démarrer, ouvrez **Mises à jour Windows** et recherchez des mises à jour. Vous pouvez également ouvrir **Paramètres** et sélectionner **Mise à jour et sécurité**.
 2. Après avoir installé les mises à jour, vous devrez peut-être redémarrer l'ordinateur.
 
-## <a name="enable-internet-information-services-iis"></a>Activation des services Internet (IIS)
+## <a name="enable-iis"></a>Activer IIS
 BizTalk Server requiert IIS pour les composants suivants :
 
 - adaptateur HTTP
@@ -140,7 +140,7 @@ IIS est fourni avec le système d’exploitation comme **rôle** ou **fonctionna
 **VOIR AUSSI** : Installation d’IIS sur [Windows 8 ou Windows Server 2012](http://www.iis.net/learn/get-started/whats-new-in-iis-8/installing-iis-8-on-windows-server-2012).
 
 
-## <a name="running-the-bam-portal-in-a-64-bit-environment-optional"></a>Exécution du portail BAM dans un environnement 64 bits (facultatif)
+## <a name="run-64-bit-bam-portal-optional"></a>Exécution 64 bits du portail BAM (facultatif)
 Si vous n’utilisez pas le portail BAM, vous pouvez ignorer cette section. 
 
 Le portail BAM s’exécute en mode 32 bits. Si vous utilisez Internet Information Services (IIS) dans un environnement 64 bits, puis définissez le pool d’applications à s’exécuter en mode 32 bits. 
@@ -167,7 +167,7 @@ Windows Identity Foundation est inclus dans le système d’exploitation comme *
 2. Sélectionnez **Windows Identity Foundation 3.5** et poursuivez l’installation. 
 3. Redémarrez l’ordinateur, si vous y êtes invité.
 
-## <a name="install-and-configure-smtp-server-optional"></a>Installation et configuration d’un serveur SMTP (facultatif)
+## <a name="install--configure-smtp-server-optional"></a>Installer et configurer le serveur SMTP (facultatif)
 Si vous utilisez des alertes BAM, BizTalk Server requiert serveur SMTP. Si vous n’utilisez pas les alertes BAM, vous pouvez ignorer cette section.
 
 La fonctionnalité Messagerie de base de données SQL Server utilise un serveur SMTP pour envoyer les alertes BAM. Le serveur SMTP peut être installé localement sur le serveur BizTalk Server ou sur un autre serveur doté d’IIS. Le serveur SMTP n’est pas disponible sur les systèmes d’exploitation clients, tels que Windows 8.1 ou Windows 10. 
@@ -178,7 +178,7 @@ Le serveur SMTP est inclus avec les systèmes d’exploitation serveurs comme **
 2. Sélectionnez **Serveur SMTP** et poursuivez l’installation. 
 3. Redémarrez l’ordinateur, si vous y êtes invité.
 
-## <a name="install-microsoft-office-excel-2016-or-excel-2013-optional"></a>Installation de Microsoft Office Excel 2016 ou Excel 2013 (facultatif)
+## <a name="install-excel-2016-or-2013-optional"></a>Installez Excel 2016 ou 2013 (facultatif)
 Si vous utilisez analyse BAM (Business Activity), BizTalk Server requiert Excel. Si vous n’utilisez pas BAM, vous pouvez ignorer cette section.
 
 Le classeur BAM Office Excel définit les processus d'entreprise que vous souhaitez analyser. Vous utilisez également le classeur Excel BAM pour définir la manière dont les utilisateurs des activités visualisent les données collectées par l’analyse BAM.
@@ -317,7 +317,7 @@ Requis pour le moteur d’exécution BizTalk Server, les outils d’administrati
 
 Téléchargez et installez [SqlXml 4.0](https://www.microsoft.com/download/details.aspx?id=30403).
 
-## <a name="configure-sql-server-database-mail-optional"></a>Configuration de la messagerie de base de données SQL Server (facultatif)
+## <a name="configure-sql-database-mail-optional"></a>Configurer la messagerie de base de données SQL (facultatif)
 Si vous utilisez des alertes BAM, BizTalk Server requiert la messagerie de base de données SQL Server. Si vous n’utilisez pas les alertes BAM, ignorez cette section. 
 
 **VOIR AUSSI** : Informations complémentaires sur la [messagerie de base de données](https://docs.microsoft.com/sql/relational-databases/database-mail/database-mail).

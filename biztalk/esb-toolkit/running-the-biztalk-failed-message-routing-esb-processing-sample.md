@@ -12,16 +12,16 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a19f8c29c22638be97ae62dfea88d0d2feca6c55
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 81a2b225e5316d16e31d2ed2ca830387dc14048d
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="running-the-biztalk-failed-message-routing-esb-processing-sample"></a>Échec de l’exemple de traitement ESB du routage de Message BizTalk en cours d’exécution
-L’exemple Microsoft BizTalk Échec de routage ESB de traitement du Message montre comment vous pouvez utiliser la [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] Exception Management Framework comme mécanisme d’universel à gérer, de sérialiser et de restituer des exceptions qui se produisent dans toutes les conditions dans [!INCLUDE[prague](../includes/prague-md.md)]. Cela inclut les exceptions générées par BizTalk Échec de routage des messages mécanisme et erreur messages générés par l’infrastructure de gestion d’Exception à partir d’une orchestration.  
+L’exemple Microsoft BizTalk Échec de routage ESB de traitement du Message montre comment vous pouvez utiliser la [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] Exception Management Framework comme mécanisme d’universel à gérer, de sérialiser et de restituer des exceptions qui se produisent dans toutes les conditions dans BizTalk Server Serveur. Cela inclut les exceptions générées par BizTalk Échec de routage des messages mécanisme et erreur messages générés par l’infrastructure de gestion d’Exception à partir d’une orchestration.  
   
- Le mécanisme de routage des messages a échoué BizTalk est la facilité de gestion des erreurs de [!INCLUDE[prague](../includes/prague-md.md)], à l’aide, le concepteur peut désigner la gestion automatique des échecs de messagerie comme alternative à traditionnel (maintenant) par défaut de la mise en échec messages dans la file d’attente « Suspendu ». Cette gestion automatique achemine un message d’erreur à n’importe quelle destination de routage abonnée, comme un port d’envoi ou d’une orchestration. Le message d’erreur est un clone du message d’origine avec toutes les propriétés précédemment promues rétrogradées et avec les propriétés sélectionnées associées à l’échec de la messagerie promue dans le contexte du message.  
+ Le mécanisme de routage des messages a échoué BizTalk est la facilité de gestion des erreurs de BizTalk Server ; en l’utilisant, le concepteur peut désigner la gestion automatique des échecs de messagerie comme alternative à traditionnel (maintenant) par défaut de l’insertion d’échec de messages dans la file d’attente « Suspendu ». Cette gestion automatique achemine un message d’erreur à n’importe quelle destination de routage abonnée, comme un port d’envoi ou d’une orchestration. Le message d’erreur est un clone du message d’origine avec toutes les propriétés précédemment promues rétrogradées et avec les propriétés sélectionnées associées à l’échec de la messagerie promue dans le contexte du message.  
   
  Pour activer le mécanisme de routage des messages a échoué BizTalk sur un port de réception ou un port d’envoi, sélectionnez le **activer le routage pour les messages ayant échoué** case à cocher, comme indiqué dans la Figure 1.  
   

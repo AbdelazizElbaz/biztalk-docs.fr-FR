@@ -27,11 +27,11 @@ caps.latest.revision: "36"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9704dbdf2bcf3549e23f1875e85a49f0ee051b2f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a18548394980912796daf1100f700fd03e72f294
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-a-biztalk-host-as-a-cluster-resource"></a>Configuration d'un hôte BizTalk en tant que ressource de cluster
 Cette rubrique décrit les étapes à suivre pour configurer un hôte BizTalk en tant que ressource de cluster. Pour effectuer les opérations décrites dans la présente rubrique, vous devez avoir configuré au moins deux serveurs BizTalk dans un groupe BizTalk en tant que membres d'un cluster de serveurs Windows. Pour plus d'informations sur la configuration d'un cluster de serveurs Windows Server, consultez l'aide en ligne de Windows Server.  
@@ -92,7 +92,7 @@ Cette rubrique décrit les étapes à suivre pour configurer un hôte BizTalk en
   
 #### <a name="to-configure-a-biztalk-host-as-a-cluster-resource"></a>Pour configurer un hôte BizTalk en tant que ressource de cluster  
   
-1.  Dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] console d’Administration, développez **Administration de BizTalk Server**, cliquez pour développer **groupe BizTalk [\<nom_serveur > :\<base de données de gestion >]**, cliquez pour développer **paramètres de plateforme**, puis cliquez pour développer **hôtes**. La liste des hôtes apparaît sous le dossier.  
+1.  Dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] console d’Administration, développez **Administration de BizTalk Server**, cliquez pour développer **groupe BizTalk [\<nom_serveur\>:\<gestion base de données\>]**, cliquez pour développer **paramètres de plateforme**, puis cliquez pour développer **hôtes**. La liste des hôtes apparaît sous le dossier.  
   
 2.  Cliquez sur l’ordinateur hôte que vous souhaitez mettre en cluster et puis **Cluster**.  
   
@@ -106,7 +106,7 @@ Cette rubrique décrit les étapes à suivre pour configurer un hôte BizTalk en
   
 #### <a name="to-uncluster-a-clustered-biztalk-host"></a>Annulation d’un hôte BizTalk en cluster  
   
-1.  Dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] console d’Administration, développez **Administration de BizTalk Server**, cliquez pour développer **groupe BizTalk [\<nom_serveur > :\<base de données de gestion >]**, cliquez pour développer **paramètres de plateforme**, puis cliquez pour développer **hôtes**. La liste des hôtes apparaît sous le dossier.  
+1.  Dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] console d’Administration, développez **Administration de BizTalk Server**, cliquez pour développer **groupe BizTalk [\<nom_serveur\>:\<gestion base de données\>]**, cliquez pour développer **paramètres de plateforme**, puis cliquez pour développer **hôtes**. La liste des hôtes apparaît sous le dossier.  
   
 2.  Cliquez sur l’ordinateur hôte en cluster que vous souhaitez annuler, puis sélectionnez **Annuler**.  
   

@@ -18,11 +18,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3434dc46be2fa43885346ac8d146e9326ab1ea73
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: da57e32f2ba4d4d5feb60a6f44cc7d92195852c9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-construct-a-web-message-part-from-a-schema-type"></a>Création d'une partie de message Web à partir d'un type de schéma
 Vous créez une partie de message Web à partir d’un type de schéma en utilisant un **transformer** forme. Vous pouvez également utiliser une classe d'assistance .NET pour définir les parties. Pour plus d’informations sur la création de types de messages à l’aide d’une classe .NET, consultez [construction de Messages dans le Code utilisateur](../core/constructing-messages-in-user-code.md).  
@@ -34,7 +34,7 @@ Vous créez une partie de message Web à partir d’un type de schéma en utilis
 2.  Dans le Mappeur BizTalk, cliquez sur **ouvrir le schéma de Destination** dans les **schéma de Destination** volet de la carte et dans le **sélecteur de Type BizTalk** boîte de dialogue, développez le  **Schémas** nœud, sélectionnez le schéma de la référence Web ajoutée, puis cliquez sur **OK**.  
   
     > [!NOTE]
-    >  Le format du schéma de référence Web est  **\<espace de noms par défaut du projet >.\< Nom de la référence Web >. Référence**.  
+    >  Le format du schéma de référence Web est  **\<espace de noms par défaut du projet\>.\< Nom de la référence Web\>. Référence**.  
   
 3.  Dans le **nœud racine pour le schéma cible** boîte de dialogue, sélectionnez un nœud racine pour le schéma de destination, puis cliquez sur **OK**. Pour plus d’informations sur la façon de déterminer un nœud racine pour un type de partie de message Web, consultez [comment déterminer un Type de partie de Message Web](../core/how-to-determine-a-web-message-part-type.md).  
   
@@ -61,4 +61,4 @@ Vous créez une partie de message Web à partir d’un type de schéma en utilis
  Vous pouvez également utiliser cette procédure pour mapper l'instance de message de réponse de la méthode Web à une autre instance de message Web.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Construction de Messages Web](../core/constructing-web-messages.md)
+ [Construction de messages web](../core/constructing-web-messages.md)

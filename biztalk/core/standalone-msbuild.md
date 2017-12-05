@@ -12,14 +12,14 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 584d9d5fa8e0c0f6be64d3761fabe45cd08e5a26
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fcee1d06bf57eb2ea98c214501c2499f0ce83d95
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="standalone-msbuild"></a>MSBUILD autonome
-Le **génération de projet** composant de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] vous permet de générer [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] solutions sans [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]. Pour installer le **génération de projet** composant sur votre serveur, sélectionnez le **composant de création de projet** option dans le **catégorie logiciels supplémentaires** pendant l’installation. Vous devez désélectionner la **outils de développement et Kit de développement logiciel** lors de l’installation [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] sur un ordinateur sans [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].  
+Le **génération de projet** composant de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] vous permet de créer des solutions BizTalk Server sans [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]. Pour installer le **génération de projet** composant sur votre serveur, sélectionnez le **composant de création de projet** option dans le **catégorie logiciels supplémentaires** pendant l’installation. Vous devez désélectionner la **outils de développement et Kit de développement logiciel** lors de l’installation [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] sur un ordinateur sans [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].  
   
  Pour plus d’informations sur MSBUILD, consultez [http://go.microsoft.com/fwlink/?LinkId=193567](http://go.microsoft.com/fwlink/?LinkId=193567).  
   
@@ -36,4 +36,4 @@ Le **génération de projet** composant de [!INCLUDE[btsBizTalkServerNoVersion](
     ```  
   
     > [!TIP]
-    >  Vous pouvez définir la variable d’environnement PATH pour pointer vers le dossier dans lequel msbuild.exe réside (\<*répertoire d’installation windows*> \Microsoft.NET\Framework\v4).
+    >  Vous pouvez définir la variable d’environnement PATH pour pointer vers le dossier dans lequel msbuild.exe réside (\<*répertoire d’installation windows*\>\Microsoft.NET\Framework\v4).

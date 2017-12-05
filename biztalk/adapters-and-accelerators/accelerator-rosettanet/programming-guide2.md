@@ -15,14 +15,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 07c644115eb65200bd041889cf072597716e808f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 97e60195bb66e06aafc02e76b43fb251cb9860a7
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="programming-guide"></a>Guide de programmation
-Le [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Guide de programmation explique les concepts et les procédures pour les développeurs écrivant du code avec [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]. Utilisez ce guide avec [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] aide.  
+Le [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Guide de programmation explique les concepts et les procédures pour les développeurs écrivant du code avec [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]. Utilisez ce guide avec [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]à l’aide de BizTalk Server.  
   
 > [!NOTE]
 >  Avant de lire ce guide, vous devez être familiarisé avec [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsVCSharp](../../includes/btsvcsharp-md.md)]® développement, BizTalk Server et le [RosettaNet accelerator](learn-the-rosettanet-accelerator-and-the-biztalk-tools-available.md).
@@ -32,8 +32,8 @@ Le [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_Curre
   
 ## <a name="in-this-section"></a>Dans cette section  
   
--   [Personnalisation des processus privé](../../adapters-and-accelerators/accelerator-rosettanet/customizing-private-processes.md)  
+-   [Personnalisation des processus privés](../../adapters-and-accelerators/accelerator-rosettanet/customizing-private-processes.md)  
   
--   [Utilisation des adresses PIP](../../adapters-and-accelerators/accelerator-rosettanet/working-with-pips.md)  
+-   [Utilisation des processus PIP](../../adapters-and-accelerators/accelerator-rosettanet/working-with-pips.md)  
   
--   [Personnalisation d’envoyer et recevoir des composants](../../adapters-and-accelerators/accelerator-rosettanet/customizing-send-and-receive-components.md)
+-   [Personnalisation des composants d’envoi et de réception](../../adapters-and-accelerators/accelerator-rosettanet/customizing-send-and-receive-components.md)

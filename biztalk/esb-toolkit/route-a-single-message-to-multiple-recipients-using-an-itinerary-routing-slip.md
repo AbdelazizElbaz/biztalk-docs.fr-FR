@@ -12,15 +12,15 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2fa96603bc93c9d5d19ef102695a1189a50d00ac
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6c493b33081e540a4e18d6d20e4813cdddad894a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-route-a-single-message-to-multiple-recipients-using-an-itinerary-routing-slip"></a>Comment : router un Message unique à plusieurs destinataires à l’aide d’un bon d’itinéraire de routage
 ## <a name="goal"></a>Objectif  
- Cette section montre comment utiliser le langage spécifique à un domaine (DSL), concepteur pour créer un itinéraire qui route un message à trois destinataires distinctes à l’aide d’un programme de résolution statique et [!INCLUDE[prague](../includes/prague-md.md)] adaptateur FILE.  
+ Cette section montre comment utiliser le langage spécifique à un domaine (DSL), concepteur pour créer un itinéraire qui route un message à trois destinataires distinctes à l’aide d’un programme de résolution statique et l’adaptateur FILE BizTalk Server.  
   
  Dans cette rubrique, vous effectuerez les étapes suivantes :  
   
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-an-esb-itinerary-dsl-model"></a>Pour créer un modèle DSL de la feuille de route ESB  
   
-1.  Dans [!INCLUDE[vs2010](../includes/vs2010-md.md)], ouvrez C:\HowTos\Patterns\Patterns.sln.  
+1.  Dans Visual Studio, ouvrez C:\HowTos\Patterns\Patterns.sln.  
   
 2.  Dans l’Explorateur de solutions, cliquez sur **ItineraryLibrary**, pointez sur **ajouter**, puis cliquez sur **nouvel itinéraire**.  
   
@@ -178,6 +178,6 @@ ms.lasthandoff: 09/20/2017
   
 -   [Activités de développement](../esb-toolkit/development-activities.md)  
   
--   [Modèles de routage de messages](../esb-toolkit/message-routing-patterns.md)  
+-   [Modèles de routage des messages](../esb-toolkit/message-routing-patterns.md)  
   
--   [À l’aide de la résolution dynamique et le routage](../esb-toolkit/using-dynamic-resolution-and-routing.md)
+-   [Utilisation de la résolution et du routage dynamiques](../esb-toolkit/using-dynamic-resolution-and-routing.md)

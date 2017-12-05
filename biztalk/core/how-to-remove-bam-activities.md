@@ -17,11 +17,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 09e12e893df596a92377357b7e28b6e68f04b810
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 67320d4d7d96f037e8d16132e0274b43feee8003
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-remove-bam-activities"></a>Suppression d'activités BAM
 Les administrateurs utilisent la **remove-activity** commande pour supprimer l’activité spécifiée à partir de la base de données d’importation principale BAM.  
@@ -32,11 +32,11 @@ Les administrateurs utilisent la **remove-activity** commande pour supprimer l�
   
 2.  Accédez à [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)].  
   
-3.  Type **bm remove-activity-nom :\<nom de l’activité >**.  
+3.  Type **bm remove-activity-nom :\<nom de l’activité\>**.  
   
 4.  Appuyez sur **Entrée**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Gestion de l’Infrastructure dynamique BAM](../core/managing-the-bam-dynamic-infrastructure.md)   
  [Recommandations de sécurité BAM](../core/bam-security-recommendations.md)   
- [Utilitaire de gestion BAM](../core/bam-management-utility.md)
+ [Utilitaire de gestion de l’analyse BAM](../core/bam-management-utility.md)

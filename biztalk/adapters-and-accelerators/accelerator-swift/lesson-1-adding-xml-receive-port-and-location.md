@@ -17,11 +17,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 186cbb4e021a281ab834f04097f005c2597fbd37
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d01f9457404e135027f35f1402575efeec311e2e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="lesson-1-adding-xml-receive-port-and-location"></a>Leçon 1 : Ajout de Port et l’emplacement de réception XML
 un port de réception est un groupe logique d'emplacements de réception similaires. Un emplacement de réception définit une adresse spécifique (par exemple, un emplacement de fichier ou URL) pour un message entrant et le pipeline est utilisé pour traiter le message.  
@@ -51,9 +51,9 @@ un port de réception est un groupe logique d'emplacements de réception similai
   
 10. Cliquez sur le **configurer** bouton à droite de la liste déroulante Type.  
   
-11. Dans la boîte de dialogue Propriétés du Transport FILE, cliquez sur **Parcourir**. Déplacer vers le  **\<lecteur > : \Labs** dossier, puis cliquez sur **créer un nouveau dossier**.  
+11. Dans la boîte de dialogue Propriétés du Transport FILE, cliquez sur **Parcourir**. Déplacer vers le  **\<lecteur\>: \Labs** dossier, puis cliquez sur **créer un nouveau dossier**.  
   
-12. Dans la boîte de dialogue Rechercher un dossier, créez un **entrant** dossier  **\<lecteur > : \Labs**, puis créez une **XMLFile** dossier dans  **\<lecteur > : \Labs\Inbound**. Cliquez sur **OK**.  
+12. Dans la boîte de dialogue Rechercher un dossier, créez un **entrant** dossier  **\<lecteur\>: \Labs**, puis créez une **XMLFile** dossier  **\<lecteur\>: \Labs\Inbound**. Cliquez sur **OK**.  
   
 13. Dans la boîte de dialogue Propriétés du Transport FILE, vérifiez que  **\*.xml** est entré dans le **masque de fichier** zone, puis cliquez sur **OK**.  
   

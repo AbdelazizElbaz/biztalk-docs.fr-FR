@@ -16,11 +16,11 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6460091297e34609365989739f58ed1f04204c8e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9cf37bd2b4ceacfe38736cadd8343b4259db126e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="callorchestration-biztalk-server-sample"></a>CallOrchestration (exemple BizTalk Server)
 L'exemple CallOrchestration illustre l'appel d'une orchestration BizTalk à partir d'une autre orchestration.  
@@ -60,7 +60,7 @@ End If
 >  La différence entre l’utilisation de la **appeler Orchestration** forme et **démarrer Orchestration** forme est que lors de l’appel d’une orchestration, l’appelant attend que l’orchestration imbriquée avant continuer. Lors du démarrage d'une orchestration à partir d'une autre orchestration, après que l'appelant démarre l'action, il passe à l'étape suivante du flux de processus. L'orchestration invoquée par l'appelant est exécutée indépendamment jusqu'à ce que le flux de processus soit terminé. Pour plus d’informations, consultez [comment configurer la forme d’Orchestration appeler](../core/how-to-configure-the-call-orchestration-shape.md). Consultez également [comment configurer la forme de démarrer l’Orchestration](../core/how-to-configure-the-start-orchestration-shape.md).  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
- \<*Exemples de chemin d’accès*> \Orchestrations\CallOrchestration\  
+ \<*Exemples de chemin d’accès*\>\Orchestrations\CallOrchestration\  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -82,7 +82,7 @@ End If
   
 1.  Dans une fenêtre de commande, accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \Orchestrations\CallOrchestration\  
+     \<*Exemples de chemin d’accès*\>\Orchestrations\CallOrchestration\  
   
 2.  Exécutez le fichier Setup.bat, qui effectue les actions suivantes :  
   
@@ -103,7 +103,7 @@ End If
   
 1.  Placez une copie du fichier InputPO.xml dans le dossier In.  
   
-2.  Observez le fichier de bon de commande XML mis à jour créé dans le dossier Out. Il contient le message de bon de commande d'origine, modifié de manière à inclure le prix d'expédition calculé, comme expliqué plus haut. Le format du nom de ce fichier est \< *MessageID*> .xml, où  *\<MessageID >* est le GUID généré pour identifier de façon unique le message.  
+2.  Observez le fichier de bon de commande XML mis à jour créé dans le dossier Out. Il contient le message de bon de commande d'origine, modifié de manière à inclure le prix d'expédition calculé, comme expliqué plus haut. Le format du nom de ce fichier est \< *MessageID*\>.xml, où  *\<MessageID\>*  est le GUID généré pour identifier de façon unique le message .  
   
 ## <a name="uninstalling-this-sample"></a>Désinstallation de l'exemple  
   
@@ -111,7 +111,7 @@ End If
   
 1.  Dans une fenêtre de commande [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \Orchestrations\CallOrchestration\  
+     \<*Exemples de chemin d’accès*\>\Orchestrations\CallOrchestration\  
   
 2.  Exécutez Cleanup.bat.  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c8c9bf8691701aa9fba8060865fcd3cb5abfba06
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 089942c8b531575c157c0037777e85fe6d8608a7
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="design-of-the-esb-exception-management-framework"></a>Conception de l’infrastructure de gestion d’Exception ESB
 Cohérentes et réutilisables des modèles pour la gestion des exceptions sont un facteur important de noyaux d’un projet de développement ; ils aident à optimiser la facilité de maintenance et en faciliter la prise en charge de l’application après le déploiement.  
@@ -50,24 +50,24 @@ Cohérentes et réutilisables des modèles pour la gestion des exceptions sont u
   
 -   Indépendamment de détecter qu’une exception s’est produite.  
   
--   Enregistrer manuellement le message ayant échoué sur le disque à l’aide de la [!INCLUDE[prague](../includes/prague-md.md)] Console d’Administration.  
+-   Enregistrer manuellement le message ayant échoué sur le disque à l’aide de la Console Administration de BizTalk Server.  
   
 -   Manuellement, modifier et corriger le message et renvoyez-le au système. Dans certains cas, ce processus présente un risque de perdre des informations de contexte importantes.  
   
- Pour résoudre ces problèmes, [!INCLUDE[prague](../includes/prague-md.md)] fournit le mécanisme de routage des messages a échoué. Les développeurs et administrateurs cela utiliser pour créer des processus d’orchestration ou de messagerie des ports d’envoi configurés pour s’abonner à toutes les exceptions qui se produisent dans le sous-système de messagerie. Cela fournit une détection automatique des erreurs et le mécanisme de routage qui conserve l’état du message d’origine et qui résout le problème de détection d’exceptions.  
+ Pour résoudre ces problèmes, BizTalk Server fournit le mécanisme de routage des messages a échoué. Les développeurs et administrateurs cela utiliser pour créer des processus d’orchestration ou de messagerie des ports d’envoi configurés pour s’abonner à toutes les exceptions qui se produisent dans le sous-système de messagerie. Cela fournit une détection automatique des erreurs et le mécanisme de routage qui conserve l’état du message d’origine et qui résout le problème de détection d’exceptions.  
   
  Étant donné que le routage automatique des messages ayant échoué n’est fourni que pour les processus d’orchestration, le développeur doit tenir compte des erreurs en ajoutant des blocs de gestionnaire d’exception pour les formes d’orchestration étendue. Avec cette solution, chaque orchestration peut avoir sa propre gestion des exceptions, mais il n’existe aucun mécanisme de réutilisation des fonctionnalités sur plusieurs orchestrations de gestion des exceptions.  
   
  Cela signifie qu’il existe désormais deux manières très différentes, dans laquelle les exceptions de messagerie sont traitées et gérées dans un système BizTalk Server et une troisième méthode dans quelle orchestration exceptions sont traitées. Par conséquent, les développeurs doivent personnaliser mécanisme en fonction de leurs propres spécifications s’ils souhaitent mettre en œuvre d’un système qui correspond aux critères décrits précédemment dans cette section de la gestion des exceptions.  
   
 ## <a name="biztalk-server-administration-console"></a>Console Administration de BizTalk Server  
- Le [!INCLUDE[prague](../includes/prague-md.md)] Console d’Administration fournit un ensemble de pages de vue d’ensemble du groupe, appelé le Hub du groupe BizTalk. À l’aide de ces pages, les administrateurs peuvent interroger pour les messages suspendus et les exceptions groupées par application, nom du service, code d’erreur ou un URI, comme indiqué dans la Figure 1.  
+ La Console Administration de BizTalk Server fournit un ensemble de pages de vue d’ensemble du groupe, appelé le Hub du groupe BizTalk. À l’aide de ces pages, les administrateurs peuvent interroger pour les messages suspendus et les exceptions groupées par application, nom du service, code d’erreur ou un URI, comme indiqué dans la Figure 1.  
   
  ![Console d’administration](../esb-toolkit/media/ch4-adminconsole.gif "chapitre 4-AdminConsole")  
   
  **Figure 1**  
   
- **Le [!INCLUDE[prague](../includes/prague-md.md)] pages de vue d’ensemble du groupe Administration Console**  
+ **Les pages de vue d’ensemble du groupe de Console Administration BizTalk Server**  
   
  Bien que la fonctionnalité de vue d’ensemble du groupe fournit une interface utilisateur commune pour afficher les exceptions, les vues sont limitées à des instances de service « live ». Examiner l’état peut être une tâche fastidieuse, car les administrateurs doivent descendre dans l’arborescence à chaque élément. En outre, plusieurs autres facteurs limitent les fonctionnalités de la Console Administration de BizTalk Server comme outil de rapport d’exception d’application :  
   
@@ -79,6 +79,6 @@ Cohérentes et réutilisables des modèles pour la gestion des exceptions sont u
   
 -   La console affiche uniquement les exceptions (instances de service suspendues) non gérées. Si le développeur gère l’exception dans l’orchestration, l’orchestration à se terminer normalement, les informations sur les exceptions n’apparaîtront jamais dans la Console d’Administration.  
   
- Le [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] traite ces limitations par le biais du mécanisme d’ESB Échec de l’Orchestration Exception routage. Cela ressemble étroitement au mécanisme de routage des messages d’échec de [!INCLUDE[prague](../includes/prague-md.md)]. En outre, le [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] inclut un composant de pipeline dans un port d’envoi qui s’abonne aux messages générés à partir du mécanisme ESB Échec de l’Orchestration Exception routage et le mécanisme de routage des messages a échoué et normalise les.  
+ Le [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] traite ces limitations par le biais du mécanisme d’ESB Échec de l’Orchestration Exception routage. Cela s’apparente le mécanisme de routage des messages d’échec de BizTalk Server. En outre, le [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] inclut un composant de pipeline dans un port d’envoi qui s’abonne aux messages générés à partir du mécanisme ESB Échec de l’Orchestration Exception routage et le mécanisme de routage des messages a échoué et normalise les.  
   
  L’infrastructure de gestion d’Exception ESB tire parti d’autres fonctionnalités dans BizTalk Server, telles que le modèle d’abonnement et sur des événements d’analyse BAM (Business Activity). Cela signifie que l’infrastructure de gestion d’Exception ESB peut suivre les points de données d’exception avec BAM, puis les publier sur le portail BAM de BizTalk pour l’analyse.

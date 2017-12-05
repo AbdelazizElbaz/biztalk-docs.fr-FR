@@ -12,16 +12,16 @@ caps.latest.revision: "35"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cf7b49ad5b8a7a383538ecef5a1dbadbc0dac3af
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1c38d00cbaf5d34aa880f5efd1d9e9a59d59c4e0
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="adapter-registration-file"></a>Fichier d'inscription de l'adaptateur
 Une fois le code de l'adaptateur personnalisé correctement généré, il doit être inscrit auprès de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Pour ce faire, il convient de mettre à jour le Registre à l'aide des paramètres appropriés de l'adaptateur. Vous pouvez écrire manuellement un fichier de Registre, mais il y a un risque d'erreurs en raison de la précision et de la complexité des informations que vous devrez entrer. Il est conseillé d'exécuter l'Assistant Registre d'adaptateur. Cet Assistant vous propose les mêmes options que si vous génériez un fichier de Registre en partant de zéro et il réduit le risque d'erreurs dans le fichier. Pour plus d’informations sur cet Assistant, consultez [Assistant Registre d’adaptateur](../core/adapter-registry-wizard.md).  
   
- Le fichier StaticAdapterManagement.reg et DynamicAdapterManagement.reg sont trouvent dans  *\<lecteur >*: \Program Files\Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]\SDK\Samples\AdaptersDevelopment\File Adapter. Lorsque vous exécutez un de ces fichiers (vous pouvez double-cliquer dessus ou faites un clic droit et sélectionnez **fusion**), il inscrit l’exemple d’adaptateur file dans le Registre et installe l’assembly dans le global assembly cache. Pour enregistrer votre adaptateur personnalisé, la meilleure méthode consiste à créer un fichier de Registre en utilisant l'Assistant Registre d'adaptateur. Si votre adaptateur statique personnalisé est identique à l'adaptateur exemple, et que vous décidiez à la place de modifier le fichier de Registre existant, ouvrez le fichier StaticAdapterManagement.reg et modifiez les propriétés suivantes :  
+ Le fichier StaticAdapterManagement.reg et DynamicAdapterManagement.reg sont trouvent dans  *\<lecteur\>*: \Program Files\Microsoft Server\SDK\Samples\AdaptersDevelopment\File l’adaptateur BizTalk. Lorsque vous exécutez un de ces fichiers (vous pouvez double-cliquer dessus ou faites un clic droit et sélectionnez **fusion**), il inscrit l’exemple d’adaptateur file dans le Registre et installe l’assembly dans le global assembly cache. Pour enregistrer votre adaptateur personnalisé, la meilleure méthode consiste à créer un fichier de Registre en utilisant l'Assistant Registre d'adaptateur. Si votre adaptateur statique personnalisé est identique à l'adaptateur exemple, et que vous décidiez à la place de modifier le fichier de Registre existant, ouvrez le fichier StaticAdapterManagement.reg et modifiez les propriétés suivantes :  
   
 -   **Contraintes**  
   
@@ -99,7 +99,7 @@ Windows Registry Editor Version 5.00
   
 2.  Cliquez sur **Démarrer**, pointez sur **Tous les programmes**, puis sur **Accessoires**, puis cliquez sur **Explorateur Windows**.  
   
-3.  Accédez au lecteur d’installation pour [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], puis accédez à  **<**  `drive` **> : \Program Files\Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **\SDK\ L’adaptateur Samples\AdaptersUsage\File**.  
+3.  Accédez au lecteur d’installation de BizTalk Server, puis accédez à  **<**  `drive` **> : \Program Files\Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **\SDK\Samples L’adaptateur \AdaptersUsage\File**.  
   
 4.  Pour ajouter l’exemple d’adaptateur au Registre, double-cliquez sur **StaticAdapterManagement.reg**. (Si vous souhaitez ajouter l’adaptateur de fichier dynamique au Registre, exécutez **DynamicAdapterManagement.reg** à la place et utiliser ce fichier si nécessaire.)  
   

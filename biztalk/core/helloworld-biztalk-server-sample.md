@@ -16,11 +16,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5a5e8057837012d27a877117a169c2cd04fa3d8d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e70271967086f530ce5421348c118a74019dd366
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="helloworld-biztalk-server-sample"></a>HelloWorld (exemple BizTalk Server)
 L'exemple HelloWorld illustre l'utilisation des orchestrations BizTalk pour convertir un message XML (un bon de commande) en un type de message lié mais distinct (une facture).  
@@ -40,7 +40,7 @@ L'exemple HelloWorld illustre l'utilisation des orchestrations BizTalk pour conv
  Pour plus d’informations sur la **transformer** mettre en forme, consultez [comment configurer la forme transformer](../core/how-to-configure-the-transform-shape.md). Pour plus d’informations sur la création d’un mappage, consultez [création de mappages à l’aide du mappeur de BizTalk](../core/creating-maps-using-biztalk-mapper.md).  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
- \<*Exemples de chemin d’accès*> \Orchestrations\HelloWorld\  
+ \<*Exemples de chemin d’accès*\>\Orchestrations\HelloWorld\  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -61,13 +61,13 @@ L'exemple HelloWorld illustre l'utilisation des orchestrations BizTalk pour conv
   
 1.  Dans une fenêtre de commande, accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \Orchestrations\HelloWorld  
+     \<*Exemples de chemin d’accès*\>\Orchestrations\HelloWorld  
   
 2.  Exécutez le fichier Setup.bat, qui effectue les actions suivantes :  
   
     -   création des dossiers d'entrée (In) et de sortie (Out) de l'exemple dans le dossier suivant :  
   
-         \<*Exemples de chemin d’accès*> \Orchestrations\HelloWorld  
+         \<*Exemples de chemin d’accès*\>\Orchestrations\HelloWorld  
   
     -   compilation du projet [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] de l'exemple ;  
   
@@ -84,7 +84,7 @@ L'exemple HelloWorld illustre l'utilisation des orchestrations BizTalk pour conv
   
 1.  Collez une copie du fichier SamplePOInput.xml dans le **dans** dossier.  
   
-2.  Observez le fichier .xml créé dans le **hors** dossier. Ce fichier contient la facture XML construite à partir du fichier d’entrée SamplePOInput.xml. Le format du nom de ce fichier est \< *MessageID*> .xml, où  *\<MessageID >* est le GUID généré pour identifier de façon unique le message.  
+2.  Observez le fichier .xml créé dans le **hors** dossier. Ce fichier contient la facture XML construite à partir du fichier d’entrée SamplePOInput.xml. Le format du nom de ce fichier est \< *MessageID*\>.xml, où  *\<MessageID\>*  est le GUID généré pour identifier de façon unique le message .  
   
 ## <a name="uninstalling-this-sample"></a>Désinstallation de l'exemple  
   
@@ -92,7 +92,7 @@ L'exemple HelloWorld illustre l'utilisation des orchestrations BizTalk pour conv
   
 1.  Dans une fenêtre de commande, accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \Orchestrations\HelloWorld\  
+     \<*Exemples de chemin d’accès*\>\Orchestrations\HelloWorld\  
   
 2.  Exécutez Cleanup.bat.  
   

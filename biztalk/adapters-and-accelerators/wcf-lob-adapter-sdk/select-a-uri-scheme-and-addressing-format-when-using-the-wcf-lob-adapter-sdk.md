@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6df8145fac74761fee4aabd34ff01d708b646c12
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9990facf6a23f4abea37ee9ce9758a7333eaca61
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="select-a-uri-scheme-and-addressing-format-when-using-the-wcf-lob-adapter-sdk"></a>Sélectionnez un schéma d’URI et le format d’adressage lors de l’utilisation de WCF LOB Adapter SDK
 Un identificateur de ressource uniforme (URI) identifie de façon unique les ressources comme un service Web ou, dans le cas d’un adaptateur développées avec le [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)], le système pour vous connecter à, ainsi que l’action à effectuer. Cette section fournit une recommandation sur la façon de construire un URI pour décrivent de façon unique l’adresse de point de terminaison et l’action de votre adaptateur.  
@@ -44,11 +44,11 @@ Un identificateur de ressource uniforme (URI) identifie de façon unique les res
 ## <a name="connecting-to-the-target-system"></a>Connexion au système cible  
  Chaînes de connexion ont la syntaxe suivante :  
   
- **\<schéma > : //[userinfo « @ »]\<LOB de chaîne de connexion >**  
+ **\<schéma\>: //[userinfo « @ »]\<LOB de chaîne de connexion\>**  
   
  Par exemple, vous pouvez se connecter au catalogue contoso (une ligne de l’exemple d’application d’entreprise) de système de commande à l’aide de ce qui suit :  
   
- **Northwind.contoso.v1.0://\<nom_serveur > ? Catalogue = Contoso & Integrated Security = True**  
+ **Northwind.contoso.v1.0://\<nom_serveur\>? Catalogue = Contoso & Integrated Security = True**  
   
  Vous pouvez également fournir des informations de l’autorité facultatif dans l’URI, y compris le nom d’utilisateur et mot de passe et autres informations d’identification importantes. Toutefois, cela peut présenter un risque de sécurité.  
   

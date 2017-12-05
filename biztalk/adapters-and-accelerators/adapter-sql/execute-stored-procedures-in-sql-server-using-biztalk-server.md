@@ -12,11 +12,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1eb15c4993476f14c59294e7f5d291c4df503aa3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1311a29664ca42e1a1f1fc27cc27d80455f265da
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="execute-stored-procedures-in-sql-server-using-biztalk-server"></a>Exécuter des procédures stockées dans SQL Server à l’aide de BizTalk Server
 Le [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] met en évidence les procédures de base de données SQL Server en tant qu’opérations. Les clients de l’adaptateur peuvent appeler les procédures en utilisant le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] avec [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]. Pour plus d’informations sur la façon dont l’adaptateur prend en charge ces opérations, consultez [exécuter les procédures stockées de SQL Server à l’aide de l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/execute-stored-procedures-in-sql-server-using-the-sql-adapter.md). Pour plus d’informations sur la structure du message SOAP pour ces opérations, consultez [des schémas de Message pour les procédures et fonctions](../../adapters-and-accelerators/adapter-sql/message-schemas-for-procedures-and-functions.md).  
@@ -167,32 +167,32 @@ Le [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] met en évidence les 
  L’orchestration consomme le message et l’envoie à la base de données SQL Server. La réponse à partir de la base de données SQL Server est enregistrée dans l’autre emplacement de fichier définie dans le cadre de l’orchestration. Par exemple, la réponse à partir de la base de données SQL Server pour le précédent message de demande est la suivante :  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <ADD_EMP_DETAILSResponse xmlns="mssql://Microsoft.LobServices.Sql/2008/01/Procedures/dbo">  
   <ADD_EMP_DETAILSResult>  
     <DataSet xmlns="http://schemas.datacontract.org/2004/07/System.Data">  
-      \<xs:schema id="NewDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
-        \<xs:element msdata:IsDataSet="true" name="NewDataSet">  
-          \<xs:complexType>  
-            \<xs:sequence>  
-              \<xs:element minOccurs="0" maxOccurs="unbounded" name="NewTable">  
-                \<xs:complexType>  
-                  \<xs:sequence>  
-                    \<xs:element minOccurs="0" name="Employee_ID" type="xs:int" />   
-                  \</xs:sequence>  
-                \</xs:complexType>  
-              \</xs:element>  
-            \</xs:sequence>  
-          \</xs:complexType>  
-        \</xs:element>  
-      \</xs:schema>  
-      \<diffgr:diffgram xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">  
+      <xs:schema id="NewDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
+        <xs:element msdata:IsDataSet="true" name="NewDataSet">  
+          <xs:complexType>  
+            <xs:sequence>  
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="NewTable">  
+                <xs:complexType>  
+                  <xs:sequence>  
+                    <xs:element minOccurs="0" name="Employee_ID" type="xs:int" />   
+                  </xs:sequence>  
+                </xs:complexType>  
+              </xs:element>  
+            </xs:sequence>  
+          </xs:complexType>  
+        </xs:element>  
+      </xs:schema>  
+      <diffgr:diffgram xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">  
         <NewDataSet xmlns="">  
           <NewTable>  
             <Employee_ID>10001</Employee_ID>   
           </NewTable>  
         </NewDataSet>  
-      \</diffgr:diffgram>  
+      </diffgr:diffgram>  
     </DataSet>  
   </ADD_EMP_DETAILSResult>  
   <ReturnValue>0</ReturnValue>   
@@ -205,4 +205,4 @@ Le [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] met en évidence les 
  Après avoir déployé et configuré le projet BizTalk, vous pouvez exporter les paramètres de configuration dans un fichier XML appelé le fichier de liaison. Une fois que vous générez un fichier de liaison, vous pouvez importer les paramètres de configuration à partir du fichier, afin que vous n’avez pas besoin de créer des éléments tels que les ports d’envoi et ports de réception d’une même orchestration. Pour plus d’informations sur les fichiers de liaison, consultez [réutiliser les liaisons de l’adaptateur](../../adapters-and-accelerators/adapter-sql/reuse-sql-adapter-bindings.md).
   
 ## <a name="see-also"></a>Voir aussi  
-[Développer des applications BizTalk à l’aide de l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)
+[Développer des applications BizTalk avec l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e492b4c7092ec1561354fe772b11e16ea6c093ee
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ee3aeff19069de5a10d7303b8b38d32a3a4ed3b7
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="edifact-contrl-acknowledgment-error-codes"></a>Codes d'erreur d'accusé de réception EDIFACT CONTRL
 Cette rubrique répertorie les codes d'erreur utilisés dans les segments d'un accusé de réception EDIFACT CONTRL. Pour plus d’informations sur ces segments, consultez [accusé de réception EDIFACT CONTRL](../core/edifact-contrl-acknowledgment.md).  
@@ -25,7 +25,7 @@ Cette rubrique répertorie les codes d'erreur utilisés dans les segments d'un a
   
  **Codes d’erreur EDIFACT standard**  
   
- Le tableau suivant répertorie les codes d'erreur utilisés dans le champ UCI5 de l'accusé de réception EDIFACT CONTRL. Le tableau suivant indique les codes d'erreur définis par la spécification EDIFACT pris en charge et non pris en charge par les fonctionnalités EDI et AS2 de [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)].  
+ Le tableau suivant répertorie les codes d'erreur utilisés dans le champ UCI5 de l'accusé de réception EDIFACT CONTRL. Ce tableau indique les codes d’erreur spécifiés par la spécification EDIFACT sont pris en charge dans BizTalk Server EDI et AS2 et qui ne sont pas pris en charge.  
   
 |Code d'erreur|Condition|Cause|Pris en charge ?|  
 |----------------|---------------|-----------|----------------|  

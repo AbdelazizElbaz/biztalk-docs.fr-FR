@@ -12,11 +12,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 72c83998bbe16899055c839a73795d456a132381
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: c11ae1067fff276d8d24639d3e4d3cc6798c6ba5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="deploy-an-adapter-using-the-wcf-lob-adapter-sdk"></a>Déployer un adaptateur à l’aide de l’adaptateur LOB WCF SDK
 Pour déployer un adaptateur, vous devez installer l’assembly de l’adaptateur dans le global assembly cache (GAC) et puis inscrire l’adaptateur dans le fichier machine.config.  
@@ -39,7 +39,7 @@ Pour déployer un adaptateur, vous devez installer l’assembly de l’adaptateu
   
      Exemple : **sn /k EchoAdapter.snk**  
   
-     Un message de confirmation, **paire écrite dans la clé** \< *nom_fichier*>**.snk** `,` affiche sur la ligne de commande.  
+     Un message de confirmation, **paire écrite dans la clé** \< *nom_fichier*\>**.snk** `,` affiche sur la ligne de commande.  
   
 4.  Dans l’Explorateur de solutions Visual Studio, cliquez sur le projet, puis cliquez sur **propriétés**.  
   
@@ -76,18 +76,18 @@ Pour déployer un adaptateur, vous devez installer l’assembly de l’adaptateu
   
 3.  Tapez la commande suivante :  
   
-     **Gacutil.exe /if «\<**  *chemin d’accès du fichier d’assembly .dll* **> »**  
+     **Gacutil.exe /if «\<**  *chemin d’accès du fichier d’assembly .dll*  **\>»**  
   
 4.  Cette procédure installe l'assembly dans le GAC, en remplaçant tout autre assembly existant sous le même nom.  
   
 ## <a name="register-the-adapter-in-machineconfig"></a>Inscrire l’adaptateur dans Machine.config  
- Un adaptateur développées à l’aide du [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] est présenté comme une liaison WCF.  Pour plus d’informations, consultez Microsoft.ServiceModel.Channels.Common.AdapterBinding.  La liaison de l’adaptateur est inscrit avec WCF à l’aide de \<bindingExtensions > section \<système. ServiceModel > et l’élément de liaison de transport de l’adaptateur est enregistré avec WCF à l’aide de \<bindingElementExtensions > section \<système. ServiceModel >.  
+ Un adaptateur développées à l’aide du [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] est présenté comme une liaison WCF.  Pour plus d’informations, consultez Microsoft.ServiceModel.Channels.Common.AdapterBinding.  La liaison de l’adaptateur est inscrit avec WCF à l’aide de \<bindingExtensions\> section \<système. ServiceModel\> et l’élément de liaison de transport de l’adaptateur est enregistré avec WCF à l’aide de \<bindingElementExtensions\> section \<système. ServiceModel\>.  
   
  Vous pouvez modifier manuellement le fichier machine.config à l’aide d’un éditeur de texte.  
   
 #### <a name="manually-edit-the-machineconfig-file"></a>Modifier manuellement le fichier machine.config  
   
-1.  Modifiez le fichier machine.config situé dans le dossier de configuration Microsoft .NET. Pour ce faire, cliquez sur **Démarrer**, cliquez sur **exécuter**, tapez notepad \<Windows le chemin d’installation > \Microsoft.NET\Framework\\< version\>\CONFIG\machine.config, puis cliquez sur **OK**.  
+1.  Modifiez le fichier machine.config situé dans le dossier de configuration Microsoft .NET. Pour ce faire, cliquez sur **Démarrer**, cliquez sur **exécuter**, tapez notepad \<chemin d’installation de Windows\>\Microsoft.NET\Framework\\< version\>\CONFIG\ machine.config, puis cliquez sur **OK**.  
   
 2.  Mettre à jour le fichier machine.config. Si le fichier ne contient pas de section system.serviceModel, ajoutez la section suivante à la fin du fichier de configuration, mais avant la fermeture de balise racine.  
   
@@ -95,7 +95,7 @@ Pour déployer un adaptateur, vous devez installer l’assembly de l’adaptateu
     >  Remplacez « myAdapterBinding », version, culture et autres informations spécifiques à l’assembly avec les informations de votre carte.  
   
     ```  
-    \<system.serviceModel>  
+    <system.serviceModel>  
       <extensions>  
         <bindingExtensions>  
             <add name="myAdapterBinding" type="Microsoft.Adapters.Samples.Echo.EchoAdapterBindingCollectionElement,EchoAdapter, Version=0.0.0.0, Culture=neutral, PublicKeyToken= fafafafafafafafa" />  
@@ -103,7 +103,7 @@ Pour déployer un adaptateur, vous devez installer l’assembly de l’adaptateu
             <add name="echoAdapter" type="Microsoft.Adapters.Samples.Echo.EchoAdapterBindingElementExtension,EchoAdapter, Version=0.0.0.0, Culture=neutral, PublicKeyToken=37f23b4adb996dcf" />  
           </bindingElementExtensions>  
       </extensions>  
-    \</system.serviceModel>  
+    </system.serviceModel>  
     ```  
   
      - - OU -  

@@ -12,17 +12,17 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 561c40e791d82b28060a45ada51bebed4cd784c3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b41dd0e01aa1e28862a3e99cfc767b3dd6ddec3c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="monitoring-host-instances"></a>Surveillance des Instances d’hôte
 Cette rubrique décrit les instances d’hôte BizTalk analyses à l’aide de Microsoft System Center Operations Manager.  
   
 ## <a name="using-threshold-rules-to-monitor-health"></a>À l’aide des règles de seuil pour surveiller l’intégrité  
- Le [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] Pack d’administration comprend des règles de seuil de performance qui fournissent une vue complète de l’intégrité des hôtes BizTalk. Deux types de règles de seuil différents sont proposés :  
+ Le Pack d’administration de BizTalk Server intègre des règles de seuil de performance qui fournissent une vue complète de l’intégrité des hôtes BizTalk. Deux types de règles de seuil différents sont proposés :  
   
 -   Règles qui s’appliquent de façon générique (par exemple, pour tous les hôtes BizTalk et pour toutes les bases de données MessageBox).  
   
@@ -39,7 +39,7 @@ Cette rubrique décrit les instances d’hôte BizTalk analyses à l’aide de M
 -   Vous devez créer des règles spécifiques à l’hôte de BizTalk selon les règles de modèle et les seuils appropriés.  
   
 ## <a name="monitoring-biztalk-host-instances"></a>Surveillance des Instances d’hôte BizTalk  
- Les règles qui ciblent des hôtes BizTalk spécifiques sont plus flexibles du point de vue analyse. Seuil de toutes les règles d’analyse de l’hôte BizTalkServerApplication fournie dans le [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] Pack d’administration sont des règles de modèle. Pour pouvoir utiliser ces règles, vous devez utiliser la console Administrateur Operations Manager pour :  
+ Les règles qui ciblent des hôtes BizTalk spécifiques sont plus flexibles du point de vue analyse. Toutes les règles d’analyse de seuil pour l’hôte BizTalkServerApplication fournies dans le Pack d’administration de BizTalk Server sont des règles de modèle. Pour pouvoir utiliser ces règles, vous devez utiliser la console Administrateur Operations Manager pour :  
   
 -   créer une copie du modèle dans le groupe de règles [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] et la renommer ;  
   
@@ -52,4 +52,4 @@ Cette rubrique décrit les instances d’hôte BizTalk analyses à l’aide de M
  Si vous utilisez des règles d’analyse de seuil spécifique à l’ordinateur hôte, vous devez désactiver les règles de surveillance génériques. afin d'éviter les alertes redondantes.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Analyse de BizTalk Server avec System Center Operations Manager 2007](../technical-guides/monitoring-biztalk-server-with-system-center-operations-manager-2007.md)
+ [Surveillance de BizTalk Server avec System Center Operations Manager 2007](../technical-guides/monitoring-biztalk-server-with-system-center-operations-manager-2007.md)

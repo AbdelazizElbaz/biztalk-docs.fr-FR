@@ -12,14 +12,14 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 073a52a4e8d4746980c15d42ce52bb226efda9a0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f1d9b2862464da17a541733d1e5cff4a3ba29e36
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="troubleshooting-edi-and-as2-solutions"></a>Dépannage des solutions EDI et AS2
-Les rubriques de cette section décrivent les problèmes connus avec les solutions EDI et AS2 dans [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], ainsi que les procédures de dépannage courantes qui permettent d'identifier et de résoudre les problèmes pouvant survenir dans les solutions EDI et AS2.  
+Les rubriques de cette section décrivent les problèmes connus avec les solutions EDI et AS2 dans BizTalk Server et décrivent les étapes de dépannage courantes qui peuvent être utilisés pour identifier et résoudre les problèmes qui peuvent se produire dans les solutions EDI et AS2.  
   
 ## <a name="in-this-section"></a>Dans cette section  
   
@@ -27,14 +27,14 @@ Les rubriques de cette section décrivent les problèmes connus avec les solutio
   
 -   [Problèmes connus avec la sécurité AS2](../core/known-issues-with-as2-security.md)  
   
--   [Problèmes connus avec l’Installation, la Configuration et déploiement de Solutions EDI et AS2](../core/known-issues-with-install-configuration-deployment-of-edi-and-as2-solutions.md)  
+-   [Problèmes connus avec l’installation, la configuration et le déploiement des solutions EDI et AS2](../core/known-issues-with-install-configuration-deployment-of-edi-and-as2-solutions.md)  
   
 -   [Problèmes connus avec le traitement EDI](../core/known-issues-with-edi-processing.md)  
   
 -   [Problèmes connus avec le traitement AS2](../core/known-issues-with-as2-processing.md)  
   
--   [Problèmes connus avec EDI et AS2 le rapport d’état](../core/known-issues-with-edi-and-as2-status-reporting.md)  
+-   [Problèmes connus avec les rapports d’état EDI et AS2](../core/known-issues-with-edi-and-as2-status-reporting.md)  
   
--   [Problèmes connus avec la Migration EDI](../core/known-issues-with-edi-migration.md)  
+-   [Problèmes connus avec la migration EDI](../core/known-issues-with-edi-migration.md)  
   
 -   [Problèmes connus avec les performances EDI et AS2](../core/known-issues-with-edi-and-as2-performance.md)

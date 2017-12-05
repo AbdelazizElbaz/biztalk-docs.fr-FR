@@ -15,11 +15,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0a4c8cb8766080a715ba309f2aa2736957b6ff54
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 03f7c1fa75b6fe7bb4c78e18c97fccd1404f89c9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-delete-user-mappings"></a>Comment supprimer des mappages utilisateur
 Ces commandes permettent de supprimer un ou plusieurs mappages utilisateur, comme décrit dans le fichier XML. Voici un exemple de fichier XML.  
@@ -49,9 +49,9 @@ Ces commandes permettent de supprimer un ou plusieurs mappages utilisateur, comm
   
 1.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est \< *lecteur*> : \Program Files\Enterprise Single Sign-On.  
+2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est \< *lecteur*\>: \Program Files\Enterprise Single Sign-On.  
   
-3.  Type **ssomanage – deletemappings  *\<nom de fichier de mappage >***, où \< *nom de fichier de mappage*> est le nom du fichier qui contienne l’utilisateur ou les mappages que vous souhaitez supprimer.  
+3.  Type **ssomanage – deletemappings  *\<nom de fichier de mappage\>***, où \< *nom de fichier de mappage* \> est le nom du fichier qui contient les ou les mappages utilisateur que vous souhaitez supprimer.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -60,9 +60,9 @@ Ces commandes permettent de supprimer un ou plusieurs mappages utilisateur, comm
   
 1.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur*> : \Program Files\Enterprise Single Sign-On.  
+2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur*\>: \Program Files\Enterprise Single Sign-On.  
   
-3.  Type  **ssomanage-deletemapping  *\<domaine >*\\*\<nom d’utilisateur >*  *\< nom de l’application >***, où  *\<domaine >* correspond au domaine Windows pour le compte d’utilisateur,  *\<nom d’utilisateur >* est le nom d’utilisateur Windows et \<* nom de l’application*> est l’application spécifique pour lequel vous souhaitez supprimer le mappage utilisateur.  
+3.  Type  **ssomanage-deletemapping  *\<domaine\>*\\*\<nom d’utilisateur\>*   *\<nom de l’application\>***, où  *\<domaine\>*  correspond au domaine Windows pour le compte d’utilisateur,  *\<nom d’utilisateur\>*  est le nom d’utilisateur Windows et \<* nom de l’application* \> l’application spécifique pour lequel vous souhaitez supprimer le mappage utilisateur.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -71,9 +71,9 @@ Ces commandes permettent de supprimer un ou plusieurs mappages utilisateur, comm
   
 1.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur*> : \Program Files\Enterprise Single Sign-On.  
+2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur*\>: \Program Files\Enterprise Single Sign-On.  
   
-3.  Type **ssoclient – deletemapping  *\<nom de l’application >***, où  *\<nom de l’application >* est le nom de la filiale vous souhaitez supprimer le mappage de l’application.  
+3.  Type **ssoclient – deletemapping  *\<nom de l’application\>***, où  *\<nom de l’application\>*  est le nom de l’application associée que vous souhaitez supprimer le mappage utilisateur.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  

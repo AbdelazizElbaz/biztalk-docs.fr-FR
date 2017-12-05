@@ -22,11 +22,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6bd67be0bbe70794f6fe6f77d388b69660e2d1ef
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 966ad6ad752c36be36b4013743eaba3af5434d0a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="mapping-a-request-to-a-response-in-a-private-process"></a>Mappage d’une demande à une réponse dans un processus privé
 Cette rubrique décrit comment mapper un message de demande reçu par le processus de répondeur, à partir de la [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] processus répondeur public, un message de réponse qui peut être envoyé à la [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] processus de répondeur public.  
@@ -35,13 +35,13 @@ Cette rubrique décrit comment mapper un message de demande reçu par le process
   
  Le [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK contient les exemples suivants que vous pouvez utiliser lorsque vous ajoutez un mappage à un répondeur privé-processus :  
   
--   [Demande de 3A2 d’exemple de mappage de réponse 3A2](../../adapters-and-accelerators/accelerator-rosettanet/3a2-request-to-3a2-response-map-sample.md)  
+-   [Exemple de mappage d’une demande 3A2 à une réponse 3A2](../../adapters-and-accelerators/accelerator-rosettanet/3a2-request-to-3a2-response-map-sample.md)  
   
--   [Demande de 3 a 4 pour un exemple de mappage de réponse 3 a 4](../../adapters-and-accelerators/accelerator-rosettanet/3a4-request-to-3a4-response-map-sample.md)  
+-   [Exemple de mappage d’une demande 3A4 à une réponse 3A4](../../adapters-and-accelerators/accelerator-rosettanet/3a4-request-to-3a4-response-map-sample.md)  
   
--   [Orchestration Action PIPAutomation double](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md)  
+-   [Orchestration de PIPAutomation DoubleAction](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md)  
   
--   [Orchestration de répondeur de 3 a 4 à l’aide d’une règle d’entreprise](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)  
+-   [Orchestration de répondeur privé 3A4 avec une règle d’entreprise](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)  
   
 ### <a name="to-create-the-map"></a>Pour créer le mappage  
   
@@ -63,7 +63,7 @@ Cette rubrique décrit comment mapper un message de demande reçu par le process
   
 9. Dans la fenêtre de sélecteur de Type BizTalk, développez **références**, développez **Microsoft.Solutions.BTARN.Schemas.RNPIPs**, développez **schémas**, sélectionnez le schéma PIP pour le message de réponse auquel vous souhaitez mapper, puis cliquez sur **OK**.  
   
-10. Cliquez sur le \< *schéma*> nœud de schéma source, puis cliquez sur **développer le nœud d’arborescence**.  
+10. Cliquez sur le \< *schéma* \> nœud de schéma source, puis cliquez sur **développer le nœud d’arborescence**.  
   
 11. Répétez l’étape 10 pour le schéma de destination.  
   
@@ -71,7 +71,7 @@ Cette rubrique décrit comment mapper un message de demande reçu par le process
   
 13. Répétez l’étape 12 pour tous les champs que vous devez effectuer un mappage entre les deux schémas.  
   
-14. Validez et testez le mappage. Pour plus d’informations, consultez la rubrique « Compilation et test des cartes » dans [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] aide.  
+14. Validez et testez le mappage. Pour plus d’informations, consultez la rubrique « Compilation et test des cartes » dans l’aide de BizTalk Server.  
   
 ### <a name="to-add-the-map-to-the-orchestration"></a>Pour ajouter le mappage à l’orchestration  
   
@@ -83,7 +83,7 @@ Cette rubrique décrit comment mapper un message de demande reçu par le process
 2.  Dans la boîte à outils, cliquez sur le **transformer** mettre en forme et faites-le glisser vers le point dans l’orchestration à laquelle vous devez transformer le message de demande dans le message de réponse.  
   
     > [!NOTE]
-    >  Pour obtenir un exemple de l’emplacement de la **transformer** mettre en forme, consultez l’orchestration PIP3A4PrivateResponder.odx. Il se trouve dans \< *lecteur*> : \Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\SDK\PipAutomation\3A4\PR. Cet exemple place le **transformer** sous la forme immédiatement la **IsActivityDoubleAction** forme. Pour plus d’informations, consultez [3 a 4 privé répondeur Orchestration à l’aide une règle d’entreprise](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md).  
+    >  Pour obtenir un exemple de l’emplacement de la **transformer** mettre en forme, consultez l’orchestration PIP3A4PrivateResponder.odx. Il se trouve dans \< *lecteur*\>: \Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\PipAutomation\3A4\PR. Cet exemple place le **transformer** sous la forme immédiatement la **IsActivityDoubleAction** forme. Pour plus d’informations, consultez [3 a 4 privé répondeur Orchestration à l’aide une règle d’entreprise](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md).  
   
     > [!NOTE]
     >  Pour obtenir un exemple de comment vous pouvez incorporer plusieurs mappages pour plusieurs adresses PIP, consultez [Orchestration Double Action PIPAutomation](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md).  

@@ -13,11 +13,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 140022c6ebe197d1b0210d732b623d62d2903cd8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4f14a199e3422a45235727d2d16fc1464e2e4927
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="disassemble-inbound-batches"></a>Désassembler des lots entrants
 
@@ -133,8 +133,8 @@ $
     > [!NOTE]
     >  Ces propriétés de configuration sont valides uniquement lorsque la fragmentation est activée (**Fragmentation** la valeur **True**). Lorsque la fragmentation est désactivée, le désassembleur publie une copie exacte de l’ensemble du lot, format natif, la base de données MessageBox, donc les paramètres de conservation sont sans importance (*tout* est conservé).  
   
- Pour plus d’informations sur chaque propriété de configuration, ainsi que d’autres informations de configuration et de l’utilisation, consultez [propriétés de Configuration du désassembleur SWIFT](../../adapters-and-accelerators/accelerator-swift/swift-disassembler-configuration-properties.md). Pour plus d’informations sur la publication de base de données MessageBox et de messages à parties multiples, consultez [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] aide.  
+ Pour plus d’informations sur chaque propriété de configuration, ainsi que d’autres informations de configuration et de l’utilisation, consultez [propriétés de Configuration du désassembleur SWIFT](../../adapters-and-accelerators/accelerator-swift/swift-disassembler-configuration-properties.md). Pour plus d’informations sur la publication de base de données MessageBox et de messages à parties multiples, consultez l’aide de BizTalk Server.  
   
 ## <a name="next-step"></a>Étape suivante
   
-[Propriétés promues du lot](batch-related-promoted-properties.md)
+[Propriétés promues relatives aux lots](batch-related-promoted-properties.md)

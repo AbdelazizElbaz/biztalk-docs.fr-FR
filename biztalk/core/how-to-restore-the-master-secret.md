@@ -16,11 +16,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2550d8e1ea0ad45147b2f27daef7244f6c18770b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9241c8d9c5f6e41f47199211d0215c16526951d6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-restore-the-master-secret"></a>Comment restaurer le Secret principal
 Dans le cadre des procédures de récupération des données, vous devrez peut-être restaurer le secret principal afin de réutiliser les données existantes. À cette fin, vous devez ouvrir une session sur le serveur de secret principal à l'aide d'un compte à la fois Administrateur Windows et Administrateur SSO.  
@@ -39,9 +39,9 @@ Dans le cadre des procédures de récupération des données, vous devrez peut-�
   
 2.  Sélectionnez l’administrateur approprié, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur >*: \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur\>*: \Program Files\Enterprise Single Sign-On.  
   
-4.  Type **ssoconfig – restoreSecret \<restaurer le fichier >**, où  **\<restaurer le fichier >** est le chemin d’accès et le nom du fichier dans lequel le secret est stocké.  
+4.  Type **ssoconfig – restoreSecret \<restaurer le fichier\>**, où  **\<restaurer le fichier\>**  est le chemin d’accès et le nom du fichier où le secret principal stockées.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -50,4 +50,4 @@ Dans le cadre des procédures de récupération des données, vous devrez peut-�
  [Comment générer le Secret principal](../core/how-to-generate-the-master-secret.md)   
  [Comment sauvegarder le Secret principal](../core/how-to-back-up-the-master-secret.md)   
  [Serveur de secret principal](../core/master-secret-server.md)   
- [Gestion du Secret](../core/managing-the-master-secret.md)
+ [Gestion du secret principal](../core/managing-the-master-secret.md)

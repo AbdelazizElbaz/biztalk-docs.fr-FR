@@ -15,11 +15,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: efd3a6bf371312348d7ce54a24f34b3cb5e4206c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 86349adae1a3ae061cb07c6c770532cf92c74dc8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="basic-oracle-data-types"></a>Types de données Oracle de base
 Cette rubrique décrit comment les [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] met en évidence des types de données de base Oracle.  
@@ -59,7 +59,7 @@ Cette rubrique décrit comment les [!INCLUDE[adapteroracle](../../includes/adapt
 |Binaire Double **|XSD : double si prec < = 15<br />XSD : String si prec > 15|Double<br />Chaîne|-|  
 |Entier binaire **|xsd:integer|Int32|Prise en charge pour les procédures, fonctions et des packages.|  
 |Booléen|xsd:boolean|Valeur booléenne Nullable||  
-|XMLTYPE|xsd:string|Chaîne|Prise en charge pour les paramètres de la procédure de niveau supérieur.<br /><br /> Réservés de caractères XML tels que «**\<**','**>**' doivent être remplacées par leur représentation entité **(&lt;, &gt;)**lors du développement d’applications dans BizTalk Server, et lors de l’utilisation de WCF de modèle de canal. Cela n’est pas nécessaire dans le cas du modèle de Service WCF.|  
+|XMLTYPE|xsd:string|Chaîne|Prise en charge pour les paramètres de la procédure de niveau supérieur.<br /><br /> Réservés de caractères XML tels que «**\<**','**\>**' doivent être remplacées par leur représentation entité **(&lt;, &gt;)**lors du développement d’applications dans BizTalk Server, et lors de l’utilisation de WCF de modèle de canal. Cela n’est pas nécessaire dans le cas du modèle de Service WCF.|  
   
  \*La méthode dans laquelle ces types de données Oracle sont signalées est affectée par la **EnableSafeTyping** propriété de liaison.  
   

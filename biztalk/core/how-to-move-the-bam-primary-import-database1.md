@@ -15,11 +15,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6eca9ed37cf116d57888bae1343e383cc2d2a666
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6a63c556bfb95f4b22a3256540d3ecb336a17f7f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-move-the-bam-primary-import-database"></a>Déplacement de la base de données d'importation principale BAM
 Cette procédure vous permet de déplacer la base de données d'importation principale BAM vers un autre serveur.  
@@ -140,9 +140,9 @@ Cette procédure vous permet de déplacer la base de données d'importation prin
   
     6.  Modifiez les lignes suivantes de sorte qu'elles correspondent au nouveau serveur et à la nouvelle base de données :  
   
-         PrimaryImportServer = «*\<nom_serveur >*»  
+         PrimaryImportServer = «*\<nom_serveur\>*»  
   
-         PrimaryImportDatabase = «*\<DatabaseName >*»  
+         PrimaryImportDatabase = «*\<DatabaseName\>*»  
   
 17. Démarrez tous les services BizTalk Server. Pour plus d’informations, consultez [comment démarrer, arrêter, suspendre, reprendre ou redémarrer les Services BizTalk Server](../core/how-to-start-stop-pause-resume-or-restart-biztalk-server-services.md).  
   

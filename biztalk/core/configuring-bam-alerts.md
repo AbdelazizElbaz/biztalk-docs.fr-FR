@@ -18,11 +18,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 46ddba35a603217660df22668d548ca7c40eb5f2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8198b17d07288bff04b64b0a1ad05db0cde4fd91
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configuring-bam-alerts"></a>Configuration des alertes BAM
 Les administrateurs ont la possibilité de modifier certains éléments de l'infrastructure d'alertes BAM. Dans cette rubrique, vous trouverez une description des options de configuration auxquelles ils ont accès.  
@@ -31,7 +31,7 @@ Les administrateurs ont la possibilité de modifier certains éléments de l'inf
 >  Lorsque vous créez des alertes, sachez que les données temporelles sont stockées dans un format de fuseau horaire local dans les bases de données de type OLAP, schémas en étoile et services de notification. Cela sous-entend également que les trois bases de données respectent le même fuseau horaire. Dans la base de données d'importation principale, les informations sont stockées à l'heure UTC et peuvent utiliser des fuseaux horaires identiques ou différents.  
   
 ## <a name="changing-the-adf-configuration"></a>Modification de la configuration du fichier de définition d'application (ADF)  
- Lors du déploiement d’une vue de l’utilitaire de gestion BAM utilise la valeur CommandTimeout spécifiée dans le fichier bm.exe.config pour renseigner le fichier de définition d’application Notification Services \<EventRule >\\< ActionTimeout\> élément.  
+ Lors du déploiement d’une vue de l’utilitaire de gestion BAM utilise la valeur CommandTimeout spécifiée dans le fichier bm.exe.config pour renseigner le fichier de définition d’application Notification Services \<EventRule\>\\< ActionTimeout\> élément.  
   
  La modification de la valeur du paramètre CommandTimeout dans le fichier bm.exe.config n'entraîne pas de modification pour cette même valeur si, pour les vues déployées, elle a été définie avant la modification.  
   
@@ -43,15 +43,15 @@ Les administrateurs ont la possibilité de modifier certains éléments de l'inf
   
 1.  Ouvrez une invite de commandes comme suit : cliquez sur **Démarrer**, cliquez sur **exécuter**, type **cmd**, puis cliquez sur **OK**.  
   
-2.  Accédez au dossier des suivis en tapant à l’invite de commandes **cd « C:\Program Files\Microsoft BizTalk Server \<version > \Tracking »** ou **cd « C:\Program Files (x86) \Microsoft BizTalk Server \<version > \Tracking «** sur un ordinateur 64 bits. Appuyez sur **Entrée**.  
+2.  Accédez au dossier des suivis en tapant à l’invite de commandes **cd « C:\Program Files\Microsoft BizTalk Server \<version\>\Tracking »** ou **cd « C:\Program Files (x86) \Microsoft BizTalk Serveur \<version\>\Tracking »** sur un ordinateur 64 bits. Appuyez sur **Entrée**.  
   
-3.  Récupérez le fichier ADF. Type **cscript ProcessBamNSFiles.vbs-Get \<ConfigFilePath > \<Cheminfichieradf > \< Serveurpid > \< base de données PID >**. Remplacez les éléments CheminFichierConfig, CheminFichierADF, ServeurPID et BaseDonnéesPID par les valeurs appropriées à votre installation.  
+3.  Récupérez le fichier ADF. Type **cscript ProcessBamNSFiles.vbs-Get \<ConfigFilePath\> \<Cheminfichieradf\> \< Serveurpid\> \< base de données PID \>** . Remplacez les éléments CheminFichierConfig, CheminFichierADF, ServeurPID et BaseDonnéesPID par les valeurs appropriées à votre installation.  
   
 4.  Appuyez sur **Entrée**.  
   
-5.  Ouvrez le fichier ADF dans un éditeur et recherchez \<ActionTimeout > Veuillez noter que cette valeur est une durée XML et mettre à jour avec la valeur souhaitée.  
+5.  Ouvrez le fichier ADF dans un éditeur et recherchez \<ActionTimeout\>, mettre à jour avec la valeur de votre choix et notez que cette valeur est une durée XML.  
   
-6.  Enregistrez le fichier ADF. Type **cscript ProcessBamNSFiles.vbs-mise à jour \<ConfigFilePath > \<Cheminfichieradf > \< Serveurpid > \< base de données PID >**.  
+6.  Enregistrez le fichier ADF. Type **cscript ProcessBamNSFiles.vbs-mise à jour \<ConfigFilePath\> \<Cheminfichieradf\> \< Serveurpid\> \< base de données PID \>** .  
   
 7.  Appuyez sur **Entrée**.  
   
@@ -89,6 +89,6 @@ Les administrateurs ont la possibilité de modifier certains éléments de l'inf
   
  L'emplacement de dépôt du fichier se modifie en changeant la ligne suivante du fichier de configuration BAM et en utilisant la commande update-config de l'utilitaire de gestion de l'analyse BAM.  
   
- \<Nom de la propriété = « FileDropUNC » >\\\\< nom de l’ordinateur\>\alerts\<cette propriété >  
+ \<Nom de la propriété = « FileDropUNC »\>\\\\< nom de l’ordinateur\>\alerts\<cette propriété\>  
   
  Pour plus d’informations sur l’utilitaire de gestion de l’analyse BAM, consultez [utilitaire de gestion BAM](../core/bam-management-utility.md).

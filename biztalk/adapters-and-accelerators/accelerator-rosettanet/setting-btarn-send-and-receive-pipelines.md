@@ -17,16 +17,16 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 47f2f12629965c3b01df8cc2f2fd7b1a7ea58a47
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a6f5e996b7046e94c90df0269381391a3aed3084
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="setting-btarn-send-and-receive-pipelines"></a>Configuration de BTARN envoi et de Pipelines de réception
 Par défaut, [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] utilise la norme [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] pipeline d’envoi (Microsoft.Solutions.BTARN.Pipelines.Send) et la norme [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] (Microsoft.Solutions.BTARN.Pipelines.Receive) de pipeline de réception lorsque vous créez ports d’envoi partenaire. Toutefois, vous pouvez modifier le [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] configuration à utiliser un pipeline BizTalk existant ou un pipeline personnalisé que vous avez créés. Utiliser des accords de partenariat commercial, tous les partenaires et aux organisations de base, le même pipeline d’envoi et le même pipeline de réception.  
   
- Lorsque vous créez un partenaire, [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] crée deux ports d’envoi pour ce partenaire à utiliser une asynchrone et synchrone : \< *nom du partenaire*>. Port d’envoi asynchrone et \< *nom du partenaire*>. Port d’envoi de synchronisation. Ces par défaut des ports d’envoi à la norme [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] envoyer le pipeline et le port d’envoi de synchronisation reçoivent des valeurs par défaut du pipeline à la norme [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] pipeline de réception.  
+ Lorsque vous créez un partenaire, [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] crée deux ports d’envoi pour ce partenaire à utiliser une asynchrone et synchrone : \< *nom du partenaire*\>. Port d’envoi asynchrone et \< *nom du partenaire*\>. Port d’envoi de synchronisation. Ces par défaut des ports d’envoi à la norme [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] envoyer le pipeline et le port d’envoi de synchronisation reçoivent des valeurs par défaut du pipeline à la norme [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] pipeline de réception.  
   
 > [!NOTE]
 >  Modification de la [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] de pipeline dans le [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] Console de gestion peut réinitialiser les propriétés que vous avez modifiée directement dans l’Explorateur BizTalk.  
@@ -46,4 +46,4 @@ Par défaut, [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTA
   
 ## <a name="see-also"></a>Voir aussi  
  [Gérer la configuration, les certificats, les bases de données et la sécurité](manage-configuration-certificates-databases-security.md)   
- [L’activation de suivi BAM](../../adapters-and-accelerators/accelerator-rosettanet/enabling-bam-tracking.md)
+ [Activation du suivi BAM](../../adapters-and-accelerators/accelerator-rosettanet/enabling-bam-tracking.md)

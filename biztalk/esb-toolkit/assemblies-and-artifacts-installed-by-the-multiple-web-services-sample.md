@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7d667d960a21aa9851540b9762b6ea8086d67984
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1cbb1ccd6d015cfa07037f270b501023e5490fec
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="assemblies-and-artifacts-installed-by-the-multiple-web-services-sample"></a>Assemblys et des artefacts installés par l’exemple de Services Web multiples
 Le tableau suivant répertorie les assemblys et autres artefacts installés pour l’exemple de plusieurs Services Web.  
@@ -36,4 +36,4 @@ Le tableau suivant répertorie les assemblys et autres artefacts installés pour
 |||MessageEnrichment.Transforms.OrderDocAndGetOrderDetailsToInventoryOrder Version 1.0.0.0|  
 |Cache d’assembly global|Assemblys|ESB. MultipleWebServices.Maps Version 2.0.0.0|  
 |||ESB. MultipleWebServices.Orchestrations Version 2.0.0.0|  
-|%Program Files%\\[!INCLUDE[prague](../includes/prague-md.md)]\Pipeline composants|Composants de pipeline||
+|%Program Files%\\BizTalk Server\Pipeline composants|Composants de pipeline||

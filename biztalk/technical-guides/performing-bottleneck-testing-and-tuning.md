@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3d21b558f75824340718f7bd6efa3f10ae9926ae
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 27d2e0ed3c8298287471b60d87b199fcfc800e61
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="performing-bottleneck-testing-and-tuning"></a>Exécution de goulot d’étranglement de test et de réglage
 Vous devez effectuer les tests de performances pour déterminer les goulots d’étranglement dans le système et de régler le système en conséquence.  
@@ -33,7 +33,7 @@ Vous devez effectuer les tests de performances pour déterminer les goulots d’
 ## <a name="testing-the-end-to-end-system"></a>Test du système de bout en bout  
  Test des frais d’entrée et de sortie, comme décrit dans la précédente section d’est un moyen efficace pour isoler les performances du sous-système de l’application, bien qu’il ne décrit pas les performances de bout en bout. Vous devez également tester les performances de bout en bout, car certains d'entre eux ne peut pas être identifié, jusqu'à ce que plusieurs ressources en compétition pour la même ressource partagée (par exemple, la base de données MessageBox).  
   
- Pour générer une charge sur un [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environnement, envisagez d’utiliser l’outil Microsoft BizTalk LoadGen 2007. Pour plus d’informations sur l’outil LoadGen 2007, consultez [Microsoft BizTalk LoadGen 2007](http://go.microsoft.com/fwlink/?LinkID=59841) (http://go.microsoft.com/fwlink/?LinkID=59841).  
+ Pour générer une charge sur un [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environnement, envisagez d’utiliser l’outil Microsoft BizTalk LoadGen 2007. Télécharger [LoadGen](https://www.microsoft.com/download/details.aspx?id=14925).  
   
  Pour générer et analyser un rapport de performances pour un [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environnement, envisagez d’utiliser l’outil performances analyse des journaux (PAL). Pour plus d’informations sur l’outil de publication, consultez [à l’aide de l’outil performances analyse des journaux (PAL)](../technical-guides/using-the-performance-analysis-of-logs-pal-tool.md).  
   

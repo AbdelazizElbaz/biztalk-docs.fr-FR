@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9c38a58e376bbc8908ff0fe578aa54cbb009c58d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9d8489c484bdb88a292b998d31e7c6de90e0937c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3d-enabling-biztalk-server-to-send-and-receive-messages-from-salesforce"></a>Étape 3d : L’activation de BizTalk Server envoyer et recevoir des Messages de Salesforce
 Nous devons nous authentifier auprès de Salesforce lors l'envoi de messages à l'aide de l'interface REST. Les méthodes d'authentification pour les appels REST pris en charge par Salesforce ne sont pas immédiatement prêts à l'emploi avec l'adaptateur WCF-WebHtt, que nous allons utiliser pour appeler l'interface REST de Salesforce. Ainsi, nous allons créer un comportement de point de terminaison WCF personnalisé, puis l'attacher à l'adaptateur d'envoi WCF-WebHttp que nous allons configurer pour appeler l'interface REST de Salesforce.  
@@ -231,7 +231,7 @@ Nous devons nous authentifier auprès de Salesforce lors l'envoi de messages à 
   
     -   Créer une classe qui dérive de `BehaviorExtensionElement`  
   
-    -   Inscrire votre BehavaiorExtensionElement dans le \<extensions >\\< behaviorExtensions\> élément dans le fichier machine.config à l’aide d’un nom d’élément.  
+    -   Inscrire votre BehavaiorExtensionElement dans le \<extensions\>\\< behaviorExtensions\> élément dans le fichier machine.config à l’aide d’un nom d’élément.  
   
      Nous allons également ajouter des propriétés de configuration à cette classe afin qu'elles soient disponibles à partir de l'interface utilisateur de configuration de l'adaptateur WCF-WebHttp.  
   
@@ -320,4 +320,4 @@ Nous devons nous authentifier auprès de Salesforce lors l'envoi de messages à 
  Dans cette rubrique, vous avez ajouté un comportement personnalisé pour vous authentifier auprès de Salesforce et un pipeline personnalisé pour ajouter un espace de noms à la réponse de Salesforce. Nous allons utiliser ces composants personnalisés lors de la configuration de ports physiques dans la console d'administration [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
 ## <a name="see-also"></a>Voir aussi  
- [Étape 3 : Créer la Solution BizTalk Server dans Visual Studio](../core/step-3-create-the-biztalk-server-solution-in-visual-studio.md)
+ [Étape 3 : Créer la solution BizTalk Server dans Visual Studio](../core/step-3-create-the-biztalk-server-solution-in-visual-studio.md)

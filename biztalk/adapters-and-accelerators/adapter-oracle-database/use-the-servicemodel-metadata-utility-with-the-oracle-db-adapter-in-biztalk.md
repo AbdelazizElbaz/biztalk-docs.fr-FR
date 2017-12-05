@@ -13,11 +13,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 143fefc3a35f70e08a9e1288cc019fe6561c2bb1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9dfbdbd60333a2e5683b4f37a65edb928a451e46
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-the-servicemodel-metadata-utility-tool-with-the-biztalk-adapter-for-oracle-database"></a>À l’aide de l’outil Service Model Metadata Tool avec l’adaptateur BizTalk pour base de données Oracle
 Vous pouvez utiliser le service Model Metadata Utility Tool (svcutil.exe) pour générer une classe de client WCF ou un contrat de service WCF (interface) pour les opérations qui les [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] expose. Après avoir exécuté svcutil.exe pour générer une classe de client WCF ou d’un contrat de service WCF, vous pouvez inclure le fichier généré dans votre code et créer des instances de la classe générée ou implémenter un service WCF dans le contrat pour effectuer des opérations sur Oracle base de données.  
@@ -40,9 +40,9 @@ Vous pouvez utiliser le service Model Metadata Utility Tool (svcutil.exe) pour g
   
     ```  
     <configuration>  
-      \<system.serviceModel>  
+      <system.serviceModel>  
         <client>  
-          \<!-- the name should match the required scheme of the WS-Metadata Exchange endpoint   
+          <!-- the name should match the required scheme of the WS-Metadata Exchange endpoint   
           and the contract should be "IMetadataExchange" -->  
           <endpoint name="oracledb"  
                     binding="oracleDBBinding"  
@@ -55,7 +55,7 @@ Vous pouvez utiliser le service Model Metadata Utility Tool (svcutil.exe) pour g
             </oracleDBBinding>  
         </bindings>  
   
-      \</system.serviceModel>  
+      </system.serviceModel>  
   
     </configuration>  
     ```  
@@ -113,4 +113,4 @@ Vous pouvez utiliser le service Model Metadata Utility Tool (svcutil.exe) pour g
  Le [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] offre des avancées et fonctionnalités de recherche qui peuvent grandement simplifier la génération d’une classe de client WCF et d’un contrat de service WCF. Pour plus d’informations sur la [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)], consultez [génération d’un Client WCF ou un contrat de Service WCF pour les artefacts de Solution de base de données Oracle](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Messages et des schémas de Message pour l’adaptateur BizTalk pour base de données Oracle](../../adapters-and-accelerators/adapter-oracle-database/messages-and-message-schemas-for-biztalk-adapter-for-oracle-database.md)
+ [Messages et schémas de message pour l’adaptateur BizTalk pour Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/messages-and-message-schemas-for-biztalk-adapter-for-oracle-database.md)

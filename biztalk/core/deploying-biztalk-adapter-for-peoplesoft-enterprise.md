@@ -13,11 +13,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1dad4639c8432b5b9cc61935afadb0703a363045
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: ed076bd238eff5106bb0b2f08449144d922fed4d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="deploy-biztalk-adapter-for-peoplesoft-enterprise"></a>Déployez l’adaptateur BizTalk pour PeopleSoft Enterprise
 Cette section fournit des informations sur le déploiement de l'adaptaeur BizTalk pour PeopleSoft Enterprise.  
@@ -57,14 +57,14 @@ Pour nettoyer l’ordinateur cible pour le déploiement de la nouvelle applicati
   
 Si Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] n'est pas installé sur l'ordinateur cible, vous pouvez supprimer les ports en exécutant les scripts suivants :  
   
-**\<Microsoft BizTalk Server > \SDK\Samples\Admin\WMI\Remove envoyer Port\VBScript\RemoveSendPort.vbs**  
+**\<Microsoft BizTalk Server\>\SDK\Samples\Admin\WMI\Remove envoyer Port\VBScript\RemoveSendPort.vbs**  
   
-**\<Microsoft BizTalk Server > \SDK\Samples\Admin\WMI\Remove Port\VBScript\RemoveReceivePort.vbs de réception**  
+**\<Microsoft BizTalk Server\>\SDK\Samples\Admin\WMI\Remove Port\VBScript\RemoveReceivePort.vbs de réception**  
   
 Par exemple, à une invite de commandes, exécutez :  
   
 ```
-cscript RemoveSendPort.vbs \<Send port name>
+cscript RemoveSendPort.vbs \<Send port name\>
 ```
 
 ## <a name="limitations"></a>Limitations

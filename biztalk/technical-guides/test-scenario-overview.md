@@ -12,17 +12,17 @@ caps.latest.revision: "32"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 53e20b7d94e44006df1042c9ca202e296508a5d5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 86fd882f89caee27211c03a4e13e617fe12faef1
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="test-scenario-overview"></a>Vue d’ensemble du scénario de test
 Cette rubrique fournit une vue d’ensemble de l’application de test ; obtenir une description de la méthodologie utilisée de test et répertorie les indicateurs de performance clés (KPI) capturées pendant le test de charge.  
   
 ## <a name="test-application"></a>Application de test  
- Une application demande-réponse synchrone a été utilisée pour comparer les performances de [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] s’exécutant sur Hyper-V pour [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] en cours d’exécution sur un matériel physique. Cette application a été utilisée pour illustrer les performances d’un [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] solution qui a été optimisée pour une latence faible. Faible latence de messagerie est essentielle pour certains scénarios tels que des opérations bancaires en ligne dans laquelle un client envoie une demande et attend un message de réponse dans un intervalle très court (par exemple \< 3 secondes).  
+ Une application demande-réponse synchrone a été utilisée pour comparer les performances de BizTalk Server s’exécutant sur Hyper-V à BizTalk Server s’exécutant sur du matériel physique. Cette application a été utilisée pour illustrer les performances d’un [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] solution qui a été optimisée pour une latence faible. Il est essentielle pour certains scénarios tels que des opérations bancaires en ligne dans laquelle un client envoie une demande et attend un message de réponse dans un intervalle très court (par exemple < 3 secondes) de faible latence de messagerie.  
   
  La figure ci-dessous illustre l’architecture de haut niveau utilisée. Visual Studio Team System (VSTS) 2008 Test Load Agent appelée une classe de test personnalisée, qui permet de générer une charge sur le transport WCF [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] application dans ce scénario a été exposée via WCF-BasicHttp emplacement de réception requête-réponse. VSTS 2008 Test Load Agent a été utilisé en tant que le client de test en raison de la grande flexibilité qu’il fournit, y compris la possibilité de configurer le nombre de messages envoyés dans, nombre de threads simultanés et l’intervalle de veille entre les demandes envoyées.  
   
@@ -130,7 +130,7 @@ Orchestration de l'application test
   
 -   **Terminé orchestrations par seconde –** comme indiqué par le **\Orchestrations le Orchestrations XLANG/s (BizTalkServerApplication) réussies par seconde** compteur Analyseur de performances. Ce compteur fournit une bonne mesure du débit de la [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] solution.  
   
--   **% de Messages traités \< 3 secondes –** pour enregistrer le nombre total de messages traités au sein de 3 secondes pendant le test.  
+-   **% de Messages traités secondes de < 3 –** pour enregistrer le nombre total de messages traités au sein de 3 secondes pendant le test.  
   
  Test de charge VSTS 2008 a été utilisé pour générer une charge homogène dans l’ensemble de tous les tests. Le test suivant des paramètres d’exécution et le modèle de charge ont été modifiés au cours du test pour ajuster le profil de charge de chaque test :  
   
@@ -215,7 +215,7 @@ Tester des paramètres du modèle
   
  **Pour SQL Server :**  
   
--   [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]a été installé selon le guide d’installation disponible à l’adresse [http://go.microsoft.com/fwlink/?LinkId=141021](http://go.microsoft.com/fwlink/?LinkId=141021).  
+-   Installation de SQL Server selon le guide d’installation disponible à l’adresse [http://go.microsoft.com/fwlink/?LinkId=141021](http://go.microsoft.com/fwlink/?LinkId=141021).  
   
 -   [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]utilisé avait le LUN SAN configuré conformément à la table ci-dessous. Les base de données et les fichiers journaux ont été séparés pour sur les LUN comme suit pour réduire la contention d’e/s de disque possibles :  
   
@@ -245,7 +245,7 @@ Tester des paramètres du modèle
     |Logs_BizTalkDatabases|Autres fichiers journaux de base de données BizTalk|20|20|64 KO|  
     |Néant|Fichier journal MSDTC|5|5|Néant|  
   
--   [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]a été installé selon les guides d’installation disponibles à l’adresse [http://go.microsoft.com/fwlink/?LinkId=128383](http://go.microsoft.com/fwlink/?LinkId=128383).  
+-   BizTalk Server a été installé selon les guides d’installation disponibles à l’adresse [http://go.microsoft.com/fwlink/?LinkId=128383](http://go.microsoft.com/fwlink/?LinkId=128383).  
   
 -   Le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] outil de Best Practices Analyzer (BPA) a été utilisé pour effectuer la validation de plateforme une fois que le système a été configuré. Le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] BPA est disponible à l’adresse [http://go.microsoft.com/fwlink/?LinkId=67150](http://go.microsoft.com/fwlink/?LinkId=67150).  
   
@@ -259,9 +259,9 @@ Tester des paramètres du modèle
  Ce disque dur virtuel de base a été copié, puis utilisé comme base pour tous les ordinateurs virtuels Hyper-V qui ont été déployés dans l’environnement. Sysprep a été exécuté sur l’image de disque dur virtuel de base pour réinitialiser les identificateurs de sécurité système avant tout [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] ou [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] binaires ont été déployées sur le système.  
   
 > [!NOTE]  
->  L’exécution de Sysprep [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] a été installé et configuré sur le serveur peut être effectué via l’utilisation d’un fichier de réponses Sysprep et les scripts fournis avec [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]. Ces exemples de scripts sont conçus pour une utilisation avec [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] installé sur les versions 32 bits et 64 bits de [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] uniquement. Pour plus d’informations, consultez le [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] documentation en ligne.  
+>  Exécution de Sysprep une fois que BizTalk Server a été installé et configuré sur le serveur peut être effectuée via l’utilisation d’un fichier de réponses Sysprep et les scripts fournis avec BizTalk Server. Ces exemples de scripts sont conçus pour une utilisation avec BizTalk Server est installé sur les versions 32 bits et 64 bits de [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] uniquement. Pour plus d’informations, consultez la documentation en ligne de BizTalk Server.  
   
  La référence de l’installation Windows sans assistance est disponible à l’adresse [http://go.microsoft.com/fwlink/?LinkId=142364](http://go.microsoft.com/fwlink/?LinkId=142364).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Annexe c : prise en charge Hyper-V BizTalk Server et SQL Server](../technical-guides/appendix-c-biztalk-server-and-sql-server-hyper-v-supportability.md)
+ [Annexe C : Prise en charge de BizTalk Server et de SQL Server par Hyper-V](../technical-guides/appendix-c-biztalk-server-and-sql-server-hyper-v-supportability.md)

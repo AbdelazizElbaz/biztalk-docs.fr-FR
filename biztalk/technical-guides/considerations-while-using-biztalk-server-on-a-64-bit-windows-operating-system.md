@@ -12,14 +12,14 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 71287d29d13406d3f1159054e988ef0e2b98a648
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f4c6ac3b8a3104e1c96b2dc9ebd880489d3c9833
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="considerations-while-using-biztalk-server-on-a-64-bit-windows-operating-system"></a>Considérations lors de l’utilisation de BizTalk Server sur un système d’exploitation Windows 64 bits
-Lorsque vous utilisez [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] sur un système d’exploitation de Windows 64 bits, assurez-vous que vous tenez compte des problèmes décrits dans cette rubrique. Pour Forum aux questions liées à la prise en charge de 64 bits de Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], consultez [prise en charge BizTalk Server 64 bits](http://go.microsoft.com/fwlink/?LinkID=155306) (http://go.microsoft.com/fwlink/?LinkID=155306).  
+Lorsque vous utilisez [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] sur un système d’exploitation de Windows 64 bits, assurez-vous que vous tenez compte des problèmes décrits dans cette rubrique. Pour les questions fréquemment posées relatives à la prise en charge de 64 bits de Microsoft BizTalk Server, consultez [prise en charge BizTalk Server 64 bits](http://go.microsoft.com/fwlink/?LinkID=155306) (http://go.microsoft.com/fwlink/?LinkID=155306).  
   
 ## <a name="modify-the-process-memory-usage-throttling-threshold"></a>Modifier l’utilisation de mémoire de processus seuil de limitation  
  Par défaut, le **traiter l’utilisation de la mémoire** seuil de limitation de l’hôte est défini sur 25. Si cette valeur est dépassée et l’utilisation de mémoire de processus BizTalk est plus de 300 Mo, une condition de limitation peut se produire. Sur un serveur 64 bits, vous pouvez augmenter cette valeur à 100. Cela permet une plus grande consommation de mémoire par le processus BizTalk avant que la limitation se produit. Pour obtenir des instructions sur la modification de l’hôte de l’utilisation de mémoire de processus seuil de limitation, consultez [comment modifier les paramètres de limitation d’hôte par défaut](http://go.microsoft.com/fwlink/?LinkId=157210) (http://go.microsoft.com/fwlink/?LinkId=157210).  
@@ -37,4 +37,4 @@ Lorsque vous utilisez [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztal
  Assurez-vous que vous exécutez ces adaptateurs dans une instance d’hôte 32 bits.  
   
 ## <a name="configure-the-mimesmime-encoder-to-run-in-32-bit-mode"></a>Configurer l’encodeur MIME/SMIME pour s’exécuter en mode 32 bits  
- Dans [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], les matrices de composant de pipeline Encodeur MIME/SMIME ne disposant pas une prise en charge 64 bits native. Il doit donc être exécuté dans un processus d'émulation 32 bits (WOW64). Cela implique que l'instance de l'hôte où s'exécute ce composant de codage (ou le pipeline d’envoi dont il fait partie) s'exécute dans un mode d'émulation 32 bits. Tenez compte des implications de cette restriction, notamment concernant les performances, pour les autres éléments de BizTalk qui s'exécutent dans cette même instance de l'hôte.
+ Dans BizTalk Server, les matrices de composant de pipeline Encodeur MIME/SMIME n'ont pas une prise en charge 64 bits native. Il doit donc être exécuté dans un processus d'émulation 32 bits (WOW64). Cela implique que l'instance de l'hôte où s'exécute ce composant de codage (ou le pipeline d’envoi dont il fait partie) s'exécute dans un mode d'émulation 32 bits. Tenez compte des implications de cette restriction, notamment concernant les performances, pour les autres éléments de BizTalk qui s'exécutent dans cette même instance de l'hôte.

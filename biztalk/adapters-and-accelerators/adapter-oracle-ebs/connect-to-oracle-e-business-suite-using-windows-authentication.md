@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c3fef7c954b1384a31c2185d21b3dc4c529c561c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ed71a893ef029e6524b7e71f68626c32f207f91e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="connect-to-oracle-e-business-suite-using-windows-authentication"></a>Se connecter à Oracle E-Business Suite à l’aide de l’authentification Windows
 Le [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] permet aux clients de carte à utiliser l’authentification Windows pour établir une connexion avec Oracle E-Business Suite. Pour utiliser l’authentification Windows des clients de l’adaptateur doivent spécifier une « / » pour le nom d’utilisateur et laissez le mot de passe vide. Pour plus d’informations sur la connexion à Oracle E-Business Suite à l’aide de l’authentification Windows, consultez [se connecter à Oracle E-Business Suite dans Visual Studio](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-the-oracle-e-business-suite-in-visual-studio.md).  
@@ -42,13 +42,13 @@ Le [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinesssho
 3.  Créer l’utilisateur Windows en tant qu’un utilisateur externe dans la base de données Oracle. Notez que le nom d’utilisateur doit être en majuscules.  
   
     ```  
-    CREATE USER “OPS$<DOMAIN_NAME>\<USER_NAME>” IDENTIFIED EXTERNALLY;  
+    CREATE USER “OPS$<DOMAIN_NAME>\<USER_NAME\>” IDENTIFIED EXTERNALLY;  
     ```  
   
 4.  Accorder les privilèges nécessaires pour l’utilisateur.  
   
     ```  
-    GRANT CONNECT,RESOURCE TO “OPS$<DOMAIN_NAME>\<USER_NAME>”;  
+    GRANT CONNECT,RESOURCE TO “OPS$<DOMAIN_NAME>\<USER_NAME\>”;  
     ```  
   
 5.  Les artefacts d’Oracle E-Business Suite sont disponibles sous le schéma d’applications. Pour activer l’utilisateur nouvellement créé, la journalisation à l’aide de l’authentification Windows, pour accéder aux artefacts Oracle E-Business Suite, schéma de l’utilisateur doit être remplacé par le schéma d’applications. Vous pouvez ajouter la commande SQL suivante au script d’ouverture de session qui modifie le schéma par défaut de l’utilisateur aux applications lorsque l’utilisateur ouvre une session.  

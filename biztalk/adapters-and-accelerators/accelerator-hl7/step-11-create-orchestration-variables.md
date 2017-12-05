@@ -15,11 +15,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0c12a437371c5412cfafa4140e74733655962fd8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a640b938628ebe3dcd6757e3f6fdfd7b1108880d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-11-create-orchestration-variables"></a>Étape 11 : Créer des Variables d’Orchestration
 Dans cette étape, vous créez les variables d’orchestration pour les instances de message envoyés et reçus par l’orchestration.  
@@ -67,7 +67,7 @@ Dans cette étape, vous créez les variables d’orchestration pour les instance
     > [!NOTE]
     >  Une fois que vous avez créé et nommé les parties de message, ne pas les renommer. Si nécessaire, supprimez l’ancienne partie de corps et créer un nouveau corps avec un nouveau nom.  
   
-9. Dans le **Types** fenêtre, sous **Types Message à parties multiples**, développez **DoorbellFinalMessageType**, puis cliquez sur **MessagePart_1**. Dans le **propriétés** volet, entrez **MSHSegment** pour **identificateur**, puis appuyez sur **entrée**. Dans la liste déroulante pour **Type**, développez **Classes .NET**, puis cliquez sur \< **sélectionner à partir des assemblys référencés >**.  
+9. Dans le **Types** fenêtre, sous **Types Message à parties multiples**, développez **DoorbellFinalMessageType**, puis cliquez sur **MessagePart_1**. Dans le **propriétés** volet, entrez **MSHSegment** pour **identificateur**, puis appuyez sur **entrée**. Dans la liste déroulante pour **Type**, développez **Classes .NET**, puis cliquez sur \< **sélectionner à partir des assemblys référencés\>**.  
   
 10. Dans le **sélectionner le Type d’artefact** boîte de dialogue, dans le volet gauche, cliquez sur **System.Xml**. Dans le volet droit, cliquez sur **XmlDocument**, puis cliquez sur **OK**.  
   
@@ -90,7 +90,7 @@ Dans cette étape, vous créez les variables d’orchestration pour les instance
   
 18. Dans le **Vue Orchestration** fenêtre, avec le bouton droit **Variables**, puis cliquez sur **nouvelle Variable**.  
   
-19. Dans le **propriétés** volet, entrez **HeaderInfo** pour **identificateur**, puis appuyez sur **entrée**. Dans la liste déroulante pour **Type**, double-cliquez sur \< **classe .NET >**.  
+19. Dans le **propriétés** volet, entrez **HeaderInfo** pour **identificateur**, puis appuyez sur **entrée**. Dans la liste déroulante pour **Type**, double-cliquez sur \< **classe .NET\>**.  
   
 20. Dans le **sélectionner le Type d’artefact** , dans le volet gauche, cliquez sur **System.Xml**. Dans le volet droit, cliquez sur **XmlDocument**, puis cliquez sur **OK**.  
   
@@ -99,4 +99,4 @@ Dans cette étape, vous créez les variables d’orchestration pour les instance
  Passez à [étape 12 : configurer les formes d’Orchestration](../../adapters-and-accelerators/accelerator-hl7/step-12-configure-orchestration-shapes.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Didacticiel d’enrichissement de message](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)
+ [Didacticiel sur l’enrichissement des messages](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

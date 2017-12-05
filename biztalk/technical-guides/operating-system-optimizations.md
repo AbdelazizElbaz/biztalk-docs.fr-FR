@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2ede5ad9dd3affba3ce132ab4c4415e8dba4f3cb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 15ef1c8d5860b6e9bd3683551096c947de8c7a42
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="operating-system-optimizations"></a>Optimisations de système d’exploitation
 Cette rubrique fournit des recommandations pour optimiser les performances de la [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ordinateurs utilisés dans une production [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environnement. Ces optimisations sont appliquées après [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] a été installé et configuré.  
@@ -90,7 +90,7 @@ Cette rubrique fournit des recommandations pour optimiser les performances de la
   
  NTFS offre des gains de performance considérable sur les systèmes de fichiers FAT et FAT32 et doit être utilisé exclusivement sur les serveurs Windows. En outre, NTFS offre de nombreux avantages de sécurité, d’évolutivité, de stabilité et de récupération sur les FAT et FAT32.  
   
- Dans les versions antérieures de Windows, FAT et FAT32 ont souvent implémentées pour petits volumes (par exemple \<500 Mo), car il est souvent plus rapides dans ces situations. Avec relativement peu coûteux aujourd'hui le stockage sur disque et les systèmes d’exploitation et les applications en exécutant un push de capacité de disque à un maximum, il est peu probable que ces volumes de petite taille soit en cours d’utilisation. FAT32 évolue mieux que FAT sur des volumes de grande capacité mais n’est pas toujours un système de fichiers approprié pour les serveurs Windows.  
+ Dans les versions antérieures de Windows, FAT et FAT32 ont souvent implémentées pour petits volumes (par exemple < 500 Mo), car il est souvent plus rapides dans ces situations. Avec relativement peu coûteux aujourd'hui le stockage sur disque et les systèmes d’exploitation et les applications en exécutant un push de capacité de disque à un maximum, il est peu probable que ces volumes de petite taille soit en cours d’utilisation. FAT32 évolue mieux que FAT sur des volumes de grande capacité mais n’est pas toujours un système de fichiers approprié pour les serveurs Windows.  
   
  FAT et FAT32 ont souvent été implémentées dans le passé comme elles ont été considérés comme plus facilement récupérables et gérable à l’aide des outils natifs de déni de service en cas de problème avec un volume. Aujourd'hui, avec la récupération NTFS divers outils intégrés à la fois en mode natif dans le système d’exploitation et disponibles en tant que des utilitaires tiers disponibles, il ne doit plus être un argument valide pour ne pas utiliser NTFS pour les systèmes de fichiers.  
   

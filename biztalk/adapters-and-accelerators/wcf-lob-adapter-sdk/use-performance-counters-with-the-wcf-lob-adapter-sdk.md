@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ead07059cac11f251d35fae18f0e228c4488c07a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6bfff208920b25ee1a22aa2c3c74feeba42f4b43
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="use-performance-counters-with-the-wcf-lob-adapter-sdk"></a>Utiliser des compteurs de performance avec WCF LOB Adapter SDK
 Vous pouvez utiliser l’outil performances pour collecter automatiquement des données de performances à partir d’ordinateurs locaux ou distants qui exécutent le [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]. Vous pouvez définir démarrer et arrêter des heures pour la génération automatique des journaux, gérer plusieurs sessions de connexion à partir d’une fenêtre de console unique et définir une alerte sur un ordinateur qui permet l’envoi d’un message ou un journal doit être démarré lorsque vos critères. Cette rubrique décrit les compteurs de performances pour le [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)].  
@@ -24,7 +24,7 @@ Vous pouvez utiliser l’outil performances pour collecter automatiquement des d
 ## <a name="performance-objects-and-counters"></a>Les compteurs et les objets de performance  
  Lorsque vous installez le [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)], un objet de performance unique nommé « ServiceModel Adapters » est installé. L’objet de performance contient un nombre de compteurs de performance différents. Un objet de performance mesure l’activité pour une ressource donnée, une application ou un service. Objets de performance et les compteurs obtenir des données de performances à partir de la [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)], fonctionnalités et des services sur votre ordinateur lorsqu’ils sont utilisés. Ces données de performances sont généralement nommées pour le composant qui génère les données. Compteurs de performances sont utilisés pour la collecte des informations spécifiques ou des données pour un objet de performance donné.  
   
- Lorsque vous sélectionnez les compteurs à partir de l’objet de performance ServiceModel adaptateurs, vous pouvez choisir surveiller uniquement les instances d’adaptateur spécifique d’informations en sélectionnant l’instance à partir de la liste des Instances de sélectionner. Chaque instance d’adaptateur s’afficheront dans le format de \<ProcessId > @\<ConnectionString >. Par exemple, 115@echo:&#124;&#124;hôte&#124; temp ? echoprefix = pre indique l’instance d’adaptateur écho en cours d’exécution dans le processus 115.  
+ Lorsque vous sélectionnez les compteurs à partir de l’objet de performance ServiceModel adaptateurs, vous pouvez choisir surveiller uniquement les instances d’adaptateur spécifique d’informations en sélectionnant l’instance à partir de la liste des Instances de sélectionner. Chaque instance d’adaptateur s’afficheront dans le format de \<ProcessId\>@\<ConnectionString\>. Par exemple, 115@echo:&#124;&#124;hôte&#124; temp ? echoprefix = pre indique l’instance d’adaptateur écho en cours d’exécution dans le processus 115.  
   
  Pour plus d’informations sur les compteurs de performances dans WCF, consultez [compteurs de Performance WCF](https://msdn.microsoft.com/library/ms735098.aspx).
   

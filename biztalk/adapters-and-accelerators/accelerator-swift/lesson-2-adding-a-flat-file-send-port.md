@@ -17,11 +17,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1370b4877c2e32055e2ee0a0aca1f922bd8668a9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d438a6fa68136b05b358a81f4b026350d92a6af4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="lesson-2-adding-a-flat-file-send-port"></a>Leçon 2 : Ajout d’un Port d’envoi de fichier plat
 Dans cette leçon, vous configurez le port d’envoi et de l’emplacement d’envoi. Le port d’envoi vous permet de définir comment vous souhaitez que les messages envoyés. Vous créez également un emplacement de dossier de fichiers pour les messages envoyés.  
@@ -38,9 +38,9 @@ Dans cette leçon, vous configurez le port d’envoi et de l’emplacement d’e
   
 5.  Dans la boîte de dialogue Propriétés du Transport FILE, cliquez sur **Parcourir**.  
   
-6.  Dans la boîte de dialogue Rechercher un dossier, déplacer vers le  **\<lecteur > : \Labs** dossier, puis cliquez sur **créer un nouveau dossier**.  
+6.  Dans la boîte de dialogue Rechercher un dossier, déplacer vers le  **\<lecteur\>: \Labs** dossier, puis cliquez sur **créer un nouveau dossier**.  
   
-7.  Créer un **sortant** dossier  **\<lecteur > : \Labs**, puis cliquez sur **OK**.  
+7.  Créer un **sortant** dossier  **\<lecteur\>: \Labs**, puis cliquez sur **OK**.  
   
 8.  Dans le **nom de fichier** , tapez **%MessageID%.txt**, puis cliquez sur **OK**.  
   

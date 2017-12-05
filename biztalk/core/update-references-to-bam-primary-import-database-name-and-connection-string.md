@@ -23,11 +23,11 @@ caps.latest.revision: "25"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b56264155ed9f739669da1cb6f646adac0f9db55
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 23efa3df9c59732c8459018a886f7f499d268eff
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-update-references-to-the-bam-primary-import-database-name-and-connection-string"></a>Mise à jour des références au nom de la base de données d'importation principale BAM et à la chaîne de connexion
 Si vous avez sauvegardé votre base de données BAMPrimaryImport, vous pouvez, dans l'éventualité d'une défaillance de données ou du système, restaurer cette sauvegarde sur un ordinateur distinct et la renommer.  
@@ -61,31 +61,31 @@ Si vous avez sauvegardé votre base de données BAMPrimaryImport, vous pouvez, d
   
     -   [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]BAMPortal\BamManagementService\Web.Config.  
   
-         Remplacez le  *\<nom_serveur >* de chaîne avec le nouveau nom de serveur et  *\<DatabaseName >* avec le nouveau nom de base de données. Mettez à jour les chaînes de connexion suivantes :  
+         Remplacez le  *\<nom_serveur\>*  de chaîne avec le nouveau nom de serveur et  *\<DatabaseName\>*  avec le nouveau nom de base de données. Mettez à jour les chaînes de connexion suivantes :  
   
-         \<appSettings >  
+         \<appSettings\>  
   
-         < ajouter la clé = valeur de « BamServer » = «*\<nom_serveur >*"/\>  
+         < ajouter la clé = valeur de « BamServer » = «*\<nom_serveur\>*"/\>  
   
-         < Ajouter clé = valeur de « BamDatabase » = «*\<DatabaseName >*"/\>  
+         < Ajouter clé = valeur de « BamDatabase » = «*\<DatabaseName\>*"/\>  
   
-         \<ajouter la clé = valeur de « MaxResultRows » = « 2000 » / >  
+         \<ajouter la clé = valeur de « MaxResultRows » = « 2000 » /\>  
   
-         \</appSettings >  
+         \</appSettings\>  
   
     -   [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]BAMPortal\BamQueryService\Web.Config.  
   
-         Remplacez le  *\<nom_serveur >* de chaîne avec le nouveau nom de serveur et  *\<DatabaseName >* avec le nouveau nom de base de données. Mettez à jour les chaînes de connexion suivantes :  
+         Remplacez le  *\<nom_serveur\>*  de chaîne avec le nouveau nom de serveur et  *\<DatabaseName\>*  avec le nouveau nom de base de données. Mettez à jour les chaînes de connexion suivantes :  
   
-         \<appSettings >  
+         \<appSettings\>  
   
-         < ajouter la clé = valeur de « BamServer » = «*\<nom_serveur >*"/\>  
+         \<ajouter la clé = valeur de « BamServer » = «*\<nom_serveur\>*"/\>  
   
-         <add key="BamDatabase" value="*<DatabaseName>*" />  
+         \<ajouter la clé = valeur de « BamDatabase » = «*\<DatabaseName\>*"/\>  
   
-         <add key="MaxResultRows" value="2000" />  
+         \<ajouter la clé = valeur de « MaxResultRows » = « 2000 » /\>  
   
-         </appSettings>  
+         \</appSettings\>  
   
 5.  Cliquez sur **Démarrer**, puis sur **Exécuter**, tapez **cmd**, puis cliquez sur **OK**.  
   
@@ -146,4 +146,4 @@ Si vous avez sauvegardé votre base de données BAMPrimaryImport, vous pouvez, d
 14. Pour résoudre toutes les instances de suivi incomplètes, consultez [comment résoudre les Instances d’activité incomplètes](../core/how-to-resolve-incomplete-activity-instances.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Sauvegarde et restauration BAM](../core/backing-up-and-restoring-bam.md)
+ [Sauvegarde et restauration de l’analyse BAM](../core/backing-up-and-restoring-bam.md)

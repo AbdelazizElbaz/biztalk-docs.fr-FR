@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a3b84bf68e89478d4f3d82dfdaf47e38c0aef90b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9395cb3895675e586576088f3d257dbf4115948f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="data-stored-for-edi-status-reports"></a>Données stockées pour les rapports d'état EDI
 Deux niveaux de création de rapports sont disponibles dans le rapport d’état EDI : le premier si les **activer la création de rapports** propriété est sélectionnée pour un accord et le deuxième si la **magasin transaction/données utiles reporting** propriété est sélectionnée pour un accord. Ces propriétés sont disponibles dans le **propriétés générales** page de la **général** onglet dans le **propriétés de l’accord** boîte de dialogue.  
@@ -65,8 +65,8 @@ Deux niveaux de création de rapports sont disponibles dans le rapport d’état
 |||  
 |-|-|  
 |Informations|Champ ou Valeur|  
-|Application émettrice|(GS02 ou \<UNG2.1(UNG2.2) >|  
-|Application réceptrice|GS03 ou \<ung3.1 (ung3.2) >|  
+|Application émettrice|(GS02 ou \<UNG2.1(UNG2.2)\>|  
+|Application réceptrice|GS03 ou \<ung3.1 (ung3.2)\>|  
 |GroupDate|GS04 ou UNG2.4|  
 |GroupTime|GS05 ou UNG2.5|  
 |TransactionSetId|ST01 ou UNH2.1 (chaîne)|  

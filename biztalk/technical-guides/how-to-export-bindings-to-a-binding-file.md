@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 052f30e7e1fa2461d1332702dbd61b6aa76451b9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6d1d39bfa1bfd4cc837a77586d6c462c6b7d7f06
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-export-bindings-to-a-binding-file"></a>Comment exporter des liaisons vers un fichier de liaison
 Vous pouvez exporter les liaisons d’une application BizTalk dans une autre application BizTalk existante à l’aide d’un fichier de liaison. Vous pouvez également exporter toutes les liaisons dans un groupe ou la liaison d’un assembly. Par la suite, vous pouvez importer ces liaisons dans une application ou un groupe.  
@@ -51,7 +51,7 @@ Vous pouvez exporter les liaisons d’une application BizTalk dans une autre app
 -   Vous pouvez modifier les fichiers de liaison après leur génération s'il vous faut modifier leurs informations de liaison.  
   
 ## <a name="how-to-export-to-a-binding-file"></a>Comment exporter vers un fichier de liaison  
- Exporter des liaisons d’une application vers un fichier de liaison en exécutant la commande Exporter les liaisons pour l’application dans le [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] console d’Administration, ou à l’aide de la commande BTSTask ExportBindings sur la ligne de commande.  
+ Vous exportez les liaisons d’une application vers un fichier de liaison en exécutant la commande Exporter les liaisons de l’application dans la console Administration de BizTalk Server, ou à l’aide de la commande BTSTask ExportBindings sur la ligne de commande.  
   
  Pour des raisons de sécurité, lorsque vous exportez un fichier de liaison, BizTalk Server ne conserve pas les mots de passe des liaisons du fichier. Une fois les liaisons importées, vous devez reconfigurer les mots de passe des ports d'envoi et des emplacements de réception pour qu'ils fonctionnent. Vous configurez ces mots de passe dans la boîte de dialogue Propriétés du transport de la console Administration de BizTalk Server pour le port d'envoi ou l'emplacement de réception.  
   

@@ -12,17 +12,17 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b36340d241ac52fe4fb7f10025807f386c51a8ae
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1b7ee5ad712466df79a4e6961062ea56b73ad248
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="send-pipeline"></a>Pipeline d'envoi
 Cet exemple fournit un [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] pipeline d’envoi que vous pouvez personnaliser pour votre application.  
   
 ## <a name="demonstrates"></a>Montre  
- Cet exemple montre comment traiter un message XML sortant dans le message RNIF équivalent via le pipeline d’envoi BTARN (PipelineSend.btp). PipelineSend.btp se trouve dans  *\<lecteur >*: \Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\SDK\RNPipelines. Il comprend les étapes suivantes :  
+ Cet exemple montre comment traiter un message XML sortant dans le message RNIF équivalent via le pipeline d’envoi BTARN (PipelineSend.btp). PipelineSend.btp se trouve dans  *\<lecteur\>*: \Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\RNPipelines. Il comprend les étapes suivantes :  
   
 -   Assembleur XML  
   

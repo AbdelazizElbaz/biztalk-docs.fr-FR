@@ -15,11 +15,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6c6044cd77532c012ddd534bd2b70be8eaaffb09
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f2e4764071beb2aa94aac738e8f1cec2377dd1d8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="progress-dimension"></a>Dimension de la progression
 Utilisez une dimension de progression afin de regrouper des activités BAM en fonction des étapes majeures qu'elles ont atteintes. Un exemple permet de mieux comprendre le concept.  
@@ -69,7 +69,7 @@ Utilisez une dimension de progression afin de regrouper des activités BAM en fo
   
 6.  Dans le **étape majeure de progression** zone de la **nouvelle étape majeure de progression** boîte de dialogue, tapez le nom de l’étape majeure de progression au niveau supérieur de la hiérarchie que vous avez créée. Pour l’exemple en cours d’exécution, vous devez taper `Received`.  
   
-7.  Sélectionnez l’étape majeure commerciale qui correspond à l’étape majeure de progression, puis cliquez sur **OK**. Pour l’exemple en cours d’exécution, vous sélectionneriez **reçus (\<nom de l’activité >)**.  
+7.  Sélectionnez l’étape majeure commerciale qui correspond à l’étape majeure de progression, puis cliquez sur **OK**. Pour l’exemple en cours d’exécution, vous sélectionneriez **reçus (\<nom de l’activité\>)**.  
   
 8.  Dans le **nouvelle Dimension** boîte de dialogue, cliquez sur **nouvelle étape**.  
   
@@ -79,7 +79,7 @@ Utilisez une dimension de progression afin de regrouper des activités BAM en fo
   
 11. Dans le **étape majeure de progression** zone de la **nouvelle étape majeure de progression** boîte de dialogue, tapez le nom de l’une des étapes majeures de premier niveau. Pour l’exemple que nous utilisons, vous devez taper `Approved`.  
   
-12. Dans le **étape majeure commerciale** zone de liste déroulante, sélectionnez l’étape majeure commerciale qui correspond à l’étape majeure de progression, puis cliquez sur **OK**. Pour l’exemple en cours d’exécution, vous sélectionneriez **Approved (\<nom de l’activité >)**.  
+12. Dans le **étape majeure commerciale** zone de liste déroulante, sélectionnez l’étape majeure commerciale qui correspond à l’étape majeure de progression, puis cliquez sur **OK**. Pour l’exemple en cours d’exécution, vous sélectionneriez **Approved (\<nom de l’activité\>)**.  
   
 13. Répétez les trois étapes précédentes pour ajouter d'autres étapes majeures figurant dans le même niveau de progression.  
   
@@ -94,4 +94,4 @@ Utilisez une dimension de progression afin de regrouper des activités BAM en fo
  [Dimension données](../core/data-dimension.md)   
  [Dimension de temps](../core/time-dimension.md)   
  [Dimension de plage numérique](../core/numeric-range-dimension.md)   
- [Définition des Dimensions](../core/defining-dimensions.md)
+ [Définition des dimensions](../core/defining-dimensions.md)

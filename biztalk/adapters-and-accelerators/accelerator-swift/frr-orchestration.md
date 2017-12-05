@@ -32,11 +32,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 43dd7d6245546f8d35760bfe2ed2224482d9d4bd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f56b16f59b967ccd9e57d03d38f86e64795da477
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="frr-orchestration"></a>Orchestration de FRR
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]implémente FRR via l’orchestration FRR. L’orchestration détermine si le jeton de corrélation de la réponse FIN correspond à l’ID de message du message d’origine. Il traite le message en parallèle avec les fonctions d’envoi effectuées par le port d’envoi qui envoie le message à SAA et les fonctions de réception effectuées par l’emplacement de réception qui reçoit le message de SAA.  
@@ -77,7 +77,7 @@ ms.lasthandoff: 09/20/2017
   
 -   [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_FRRFailedReason à l’une des valeurs suivantes, si la réponse était un NAK :  
   
-    -   *\<Code d’erreur >* (à partir du champ 405 du message accusé de réception négatif MTS21_FIN_ACKNAK)  
+    -   *\<Code d’erreur\>*  (à partir du champ 405 du message accusé de réception négatif MTS21_FIN_ACKNAK)  
   
     -   TransportError (à partir d’un message MQ Series panoramique/NAN)  
   

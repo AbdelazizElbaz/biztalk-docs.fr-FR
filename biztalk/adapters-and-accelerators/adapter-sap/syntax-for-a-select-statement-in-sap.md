@@ -13,11 +13,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 331688f3c197fcc26f157346f2f78b74496fbd30
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5f57cac0673a6520de4b0d881527bbc7b670ca1b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="syntax-for-a-select-statement-in-sap"></a>Syntaxe pour une instruction SELECT dans SAP
 Les sections suivantes décrivent les spécifications de grammaire pour l’implémentation des requêtes SELECT sur la [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]. Notez que, dans certains cas, la syntaxe est différente de la syntaxe Transact-SQL de base.  
@@ -36,15 +36,15 @@ SELECT {TOP <const> }[0,1] <select_list>  {INTO FILE [‘file_name’ | “file_
   
 -   **< Condition_de_jointure >** = `[Alias_name.|table_name.]column_name <expr> [Alias_name.|table_name.]column_name`  
   
--   **\<prédicat >** = `[ predicate [AND|OR] predicate [between|not between] predicate |  NOT predicate |  ‘(‘ predicate ‘)’ | condition ]`  
+-   **\<prédicat\>** = `[ predicate [AND|OR] predicate [between|not between] predicate |  NOT predicate |  ‘(‘ predicate ‘)’ | condition ]`  
   
  Les conditions prises en charge et les expressions sont :  
   
--   **\<condition >** = `[ expr | expr [NOT | ] BETWEEN const AND const | expr [NOT | ] LIKE const ]`  
+-   **\<condition\>** = `[ expr | expr [NOT | ] BETWEEN const AND const | expr [NOT | ] LIKE const ]`  
   
--   **\<expr >** = `[ const | column_name [= | ! = | > | > = | ! > | < | < = | ! < ] const | column_name | - const  | const | column_name ]`  
+-   **\<expr\>** = `[ const | column_name [= | ! = | > | > = | ! > | < | < = | ! < ] const | column_name | - const  | const | column_name ]`  
   
- Où  **\<const >** = `integer | real | string | ? | NULL | xml_element`.  
+ Où  **\<const\>** = `integer | real | string | ? | NULL | xml_element`.  
   
  **Valeurs pour le mot clé d’OPTION**  
   
@@ -58,7 +58,7 @@ SELECT {TOP <const> }[0,1] <select_list>  {INTO FILE [‘file_name’ | “file_
   
     -   Lorsque le **no_conversion** option n’est pas utilisée, et si un champ a une conversion de sortie définie ensuite ces champs dans la table sont exposées en tant que chaîne .NET.  
   
--   Lorsque la valeur **batchsize \<taille >**, l’exécution de l’instruction SELECT entraîne plusieurs appels au système SAP et seulement chaque appel \<taille > nombre d’enregistrements est récupéré. Par exemple, si vous spécifiez « batchsize 100', la requête SELECT extrait 100 enregistrements uniquement dans chaque appel au système SAP. Si **batchsize \<taille >** n’est pas spécifié, la valeur par défaut de 10 000 est prise en compte pour la taille de lot. Notez que vous devez spécifier une valeur optimale pour la taille de lot en fonction de la mémoire physique de l’ordinateur et le nombre de lignes dans le système SAP. Échec lors de la spécification d’une valeur optimale pour la taille de lot peut entraîner des exceptions de mémoire insuffisante.  
+-   Lorsque la valeur **batchsize \<taille\>**, l’exécution de l’instruction SELECT entraîne plusieurs appels au système SAP et seulement chaque appel \<taille\> nombre d’enregistrements est récupérées. Par exemple, si vous spécifiez « batchsize 100', la requête SELECT extrait 100 enregistrements uniquement dans chaque appel au système SAP. Si **batchsize \<taille\>**  n’est pas spécifié, la valeur par défaut de 10 000 est prise en compte pour la taille de lot. Notez que vous devez spécifier une valeur optimale pour la taille de lot en fonction de la mémoire physique de l’ordinateur et le nombre de lignes dans le système SAP. Échec lors de la spécification d’une valeur optimale pour la taille de lot peut entraîner des exceptions de mémoire insuffisante.  
   
 -   Lorsque la valeur **disabledatavalidation**, le [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] ne valide pas les valeurs présentes dans les colonnes des fichiers DAT, Tim et NUMC, mais au lieu de cela les expose en tant que chaîne.  
   
@@ -280,4 +280,4 @@ Table | '['Table']'
     ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Sur le fournisseur de données .NET Framework pour mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/about-the-net-framework-data-provider-for-mysap-business-suite.md)
+ [À propos du fournisseur de données .NET Framework pour mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/about-the-net-framework-data-provider-for-mysap-business-suite.md)

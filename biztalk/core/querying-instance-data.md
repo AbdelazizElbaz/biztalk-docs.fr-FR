@@ -15,24 +15,24 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 762ad9dd241f65db700e452a2ac181442c863607
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e43310756cf12c0c2a48eb6716221afc5395ecb0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="querying-instance-data"></a>Interrogation de données d'instance
 Les données relatives à des instances d'activité individuelles sont disponibles pour d'éventuelles requêtes dans une vue SQL créée dynamiquement dans la base de données d'importation principale BAM.  
   
  Le nom de cette vue est  
   
- **bam_\<**  *ViewName* **> _\<**  *Nomactivité* **> _View**  
+ **bam_\<**  *ViewName*  **\>_\<**  *Nomactivité*  **\>_View**  
   
  Où  
   
- **\<***ViewName*  **>**  est l’attribut Name de l’élément d’affichage dans le fichier XML de définition BAM, qui est le même que le nom de vue entré dans les Assistants Microsoft Excel associés.  
+ **\<***ViewName*  **\>**  est l’attribut Name de l’élément d’affichage dans le fichier XML de définition BAM, qui est le même que le nom de vue entré dans les Assistants Microsoft Excel associés.  
   
- **\<***Nomactivité*  **>**  est l’attribut de nom de l’élément d’activité dans le fichier XML de définition BAM, qui est le même que le nom d’activité entré dans les Assistants Excel.  
+ **\<***Nomactivité*  **\>**  est l’attribut de nom de l’élément d’activité dans le fichier XML de définition BAM, qui est le même que le nom d’activité entré dans les Assistants Excel.  
   
  Il est important que vous teniez compte des points suivants quand vous interrogez des données d'instance :  
   

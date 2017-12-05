@@ -17,11 +17,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 77069c3690a73957936c786bc05c2690b9df7a10
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 61784be74d93753b8c3ca8ecf7302c6517a1d9c4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-enable-encryption-between-analysis-services-and-the-bam-primary-import-database"></a>Activation du chiffrement entre Analysis Services et la base de données d'importation principale BAM
 Durant l'installation ou la mise à niveau de l'analyse BAM, le chiffrement n'est pas activé par défaut. Pour activer le chiffrement, vous devez définir l'indicateur UseEncryption du fichier XML de configuration BAM sur la valeur 1.  
@@ -34,7 +34,7 @@ Durant l'installation ou la mise à niveau de l'analyse BAM, le chiffrement n'es
   
 2.  Accédez à [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)].  
   
-3.  Type **bm get-config - FileName :\<fichier de sortie >**.  
+3.  Type **bm get-config - FileName :\<fichier de sortie\>**.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -43,14 +43,14 @@ Durant l'installation ou la mise à niveau de l'analyse BAM, le chiffrement n'es
   
 5.  Ouvrez le fichier de configuration de fichier que vous avez exporté dans un éditeur de texte, puis définissez la valeur de l'indicateur de propriété UseEncryption sur 1.  
   
-    -   Paramètre par défaut : \<nom de la propriété = « UseEncryption » > 0\<cette propriété >  
+    -   Paramètre par défaut : \<nom de la propriété = « UseEncryption »\>0\<cette propriété\>  
   
-    -   Nouveau paramètre : \<nom de la propriété = « UseEncryption » > 1\<cette propriété >  
+    -   Nouveau paramètre : \<nom de la propriété = « UseEncryption »\>1\<cette propriété\>  
   
-6.  Mettre à jour la configuration BAM en tapant **bm update-config - FileName :\<le fichier de configuration >**.  
+6.  Mettre à jour la configuration BAM en tapant **bm update-config - FileName :\<le fichier de configuration\>**.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilitaire de gestion BAM](../core/bam-management-utility.md)
+ [Utilitaire de gestion de l’analyse BAM](../core/bam-management-utility.md)

@@ -15,11 +15,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 08337171897a4a78e605054e9126e8c8238d5fa5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 790cf5cb853da211d5e8928f398ecc1a2b3fe0ba
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="scheduling-batching"></a>Planification de traitement par lot
 Vous utilisez [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] Explorer de Configuration pour activer, de demande ou de mettre fin à un lot sortant. Activation d’un lot sortant comprend deux étapes : configuration temporels ou message compter les critères et avant de démarrer l’orchestration de traitement par lot sortante.  
@@ -32,7 +32,7 @@ Vous utilisez [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentv
   
 ### <a name="to-open-btahl7-configuration-explorer"></a>Pour ouvrir l’Explorateur de Configuration de BTAHL7  
   
--   Cliquez sur **Démarrer**, pointez sur **programmes**, pointez sur **Microsoft BizTalk \<version > Accelerator pour HL7**, puis cliquez sur **BTAHL7 L’Explorateur de configuration**.  
+-   Cliquez sur **Démarrer**, pointez sur **programmes**, pointez sur **Microsoft BizTalk \<version\> Accelerator pour HL7**, puis cliquez sur  **BTAHL7 L’Explorateur de Configuration**.  
   
 ### <a name="to-schedule-message-batching"></a>Pour planifier le traitement par lots du message  
   
@@ -47,4 +47,4 @@ Vous utilisez [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentv
     |**Contrôle de traitement par lots**|Sélectionnez l'une des options suivantes :<br /><br /> -   **Démarrer la planification**: sélectionnez cette option pour démarrer la planification par lot.<br />-   **Envoyer maintenant**: sélectionnez cette option pour démarrer le traitement est immédiatement traité.<br />-   **Arrêter planification**: sélectionnez cette option pour arrêter la planification du lot actuel.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Configuration des accusés de réception de traitement par lot](../../adapters-and-accelerators/accelerator-hl7/configuring-batching-acknowledgments.md)
+ [Configuration du traitement par lot des accusés de réception](../../adapters-and-accelerators/accelerator-hl7/configuring-batching-acknowledgments.md)

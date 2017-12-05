@@ -16,11 +16,11 @@ caps.latest.revision: "24"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0e16577e8bb7e9d624b6ba38211cf04b84a234be
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 410bfed33402d8d810434e7ff9287fa5c01462da
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-a-pop3-receive-location"></a>Pour configurer les emplacement de réception POP3
 Vous pouvez définir des variables d'adaptateur d'emplacement de réception POP3 dans la console Administration de BizTalk Server. Si les propriétés ne sont pas définies pour l'emplacement de réception, les valeurs par défaut du gestionnaire de réception définies dans la console Administration de BizTalk Server sont utilisées.  
@@ -47,7 +47,7 @@ Vous pouvez définir des variables d'adaptateur d'emplacement de réception POP3
     |**Index du corps**|Indiquer l'index du corps des messages électroniques entrants à envoyer à BizTalk Server. Consultez [quel est l’adaptateur POP3 ?](../core/what-is-the-pop3-adapter.md) pour plus d’informations.<br /><br /> Valeur par défaut : 0|  
     |**Serveur de messagerie**|Indiquer le serveur de messagerie POP3 sur lequel réside la boîte aux lettres qui sera interrogée par l'adaptateur POP3. **Remarque :** l’URI pour un envoi de port ou de réception emplacement ne peut pas dépasser 256 caractères.|  
     |**Port**|Indiquer le port du serveur POP3.<br /><br /> Valeurs valides : entre 1 et 65535 compris.<br /><br /> Valeur par défaut : 0 **Remarque :** la valeur 0 indique l’utilisation du port POP3 par défaut 110 si **utiliser SSL** est `False` ou port 995 si **utiliser SSL** est `True`.|  
-    |**Schéma d’authentification**|Indiquez le type d'authentification à utiliser avec le serveur de destination.<br /><br /> Les options admises sont les suivantes :<br /><br /> -   **Base**<br />-   **Digest**<br />-   **SPA** **Remarque :** lorsque vous utilisez l’authentification SPA est utilisée, le nom d’utilisateur doit être spécifié avec l’un des formats suivants : les comptes de domaine doivent être entrés avec la syntaxe : \<nom de domaine >\\< nom d’utilisateur\> les comptes locaux doivent être entrés avec la syntaxe : \<nom de l’ordinateur >\\< nom d’utilisateur\>|  
+    |**Schéma d’authentification**|Indiquez le type d'authentification à utiliser avec le serveur de destination.<br /><br /> Les options admises sont les suivantes :<br /><br /> -   **Base**<br />-   **Digest**<br />-   **SPA** **Remarque :** lorsque vous utilisez l’authentification SPA est utilisée, le nom d’utilisateur doit être spécifié avec l’un des formats suivants : les comptes de domaine doivent être entrés avec la syntaxe : \<nom de domaine\> \\< nom d’utilisateur\> les comptes locaux doivent être entrés avec la syntaxe : \<nom de l’ordinateur\>\\< nom d’utilisateur\>|  
     |**Mot de passe**|Indiquer le mot de passe utilisateur nécessaire à l'authentification sur le serveur POP3.|  
     |**Utiliser SSL**|Indiquez s'il faut utiliser une connexion SSL (Secure Sockets Layer) pour communiquer avec le serveur de destination.<br /><br /> Valeur par défaut :`False`|  
     |**Nom d'utilisateur**|Indiquer le nom d'utilisateur nécessaire à l'authentification sur le serveur POP3. Cette propriété exige une valeur. **Remarque :** le compte spécifié pour la propriété de nom d’utilisateur doit avoir la possibilité d’ouvrir une session sur le réseau. L'adaptateur POP3 se connecte à la boîte aux lettres associée au compte spécifié pour la propriété de nom d'utilisateur. C'est pourquoi, il est impossible d'utiliser l'adaptateur POP3 pour se connecter à une boîte aux lettres autre que celle affectée au compte spécifié. Par exemple, même si plusieurs comptes disposent d'autorisations de lecture pour la boîte aux lettres associée à un compte spécifique, seul le nom de compte réel peut être spécifié comme nom d'utilisateur.|  

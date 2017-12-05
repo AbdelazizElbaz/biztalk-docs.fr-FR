@@ -16,11 +16,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7dee6fff7de065c3663ab373f739f7fb465947c8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 344b25b83060143b339a6791ecae6f3ab7028055
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="replace-public-key-token-utility"></a>Utilitaire de remplacement d'un jeton de clé publique
 Cet utilitaire permet de remplacer un jeton de clé publique ou une variable d'un fichier par un jeton de clé publique dérivé d'un fichier de clé d'assembly de nom fort (.snk).  
@@ -64,13 +64,13 @@ Cet utilitaire permet de remplacer un jeton de clé publique ou une variable d'u
   
 3.  À partir d'une invite de commande, tapez la commande suivante :  
   
-4.  **ReplacePKT \<**  *fichier .snk*  **>  \<**  *ancien jeton de clé publique*  **>  \<**  *fichier à remplacer***>**  
+4.  **ReplacePKT \<**  *fichier .snk*  **\> \<**  *ancien jeton de clé publique*  **\> \<**  *fichier à remplacer***\>**  
   
     |Option| Description|  
     |------------|-----------------|  
-    |**\<***fichier .snk***>**|Chemin d'accès complet du fichier .snk contenant le jeton de clé publique que vous voulez substituer au jeton ou à l'espace réservé existant.|  
-    |**\<***ancien jeton de clé publique***>**|Jeton de clé publique ou espace réservé à remplacer.|  
-    |**\<***fichier à remplacer***>**|Chemin d'accès complet du fichier dans lequel vous voulez remplacer le jeton de clé publique ou l'espace réservé.|  
+    |**\<***fichier .snk***\>**|Chemin d'accès complet du fichier .snk contenant le jeton de clé publique que vous voulez substituer au jeton ou à l'espace réservé existant.|  
+    |**\<***ancien jeton de clé publique***\>**|Jeton de clé publique ou espace réservé à remplacer.|  
+    |**\<***fichier à remplacer***\>**|Chemin d'accès complet du fichier dans lequel vous voulez remplacer le jeton de clé publique ou l'espace réservé.|  
   
      Exemple :  
   
@@ -86,7 +86,7 @@ Cet utilitaire permet de remplacer un jeton de clé publique ou une variable d'u
     ReplacePKT <filename>.snk  
     ```  
   
-     Où \< *nom de fichier*> est le nom du fichier .snk à partir de laquelle dériver le jeton de clé publique.  
+     Où \< *nom de fichier* \> est le nom du fichier .snk à partir de laquelle dériver le jeton de clé publique.  
   
     ```  
     Example: ReplacePKT.bat MyToken.snk  
@@ -103,4 +103,4 @@ Cet utilitaire permet de remplacer un jeton de clé publique ou une variable d'u
 3.  Lorsque vous fournissez le fichier de script aux utilisateurs, incluez les trois fichiers composant l'utilitaire de remplacement d'un jeton de clé publique (ReplacePKT.bat, ReplacePKT.vbs, ReplacePKT.wsf). Veillez à ce que ces utilisateurs copient tous les fichiers dans un même dossier du système avant d'exécuter le script.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilitaires dans le Kit de développement](../core/utilities-in-the-sdk.md)
+ [Utilitaires du SDK](../core/utilities-in-the-sdk.md)

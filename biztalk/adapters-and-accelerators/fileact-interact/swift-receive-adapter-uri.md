@@ -12,14 +12,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 80d556994196af2412dc2719a2d576535b4ea113
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6988155f70bf197f9c468b3ee7eb48c8f2f5f53d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="swift-receive-adapter-uri"></a>URI d’adaptateur de réception SWIFT
-L’URI pour l’adaptateur de réception est construit selon les informations de point de terminaison Tuxedo (SWIFT : / /\<SwTuxSrv >) pour le lien SWIFTNet (SNL) et le partenaire de message (SWIFT : / /\<SagMessagePartner >) des informations pour le SWIFTAlliance passerelle reçoivent le déploiement de l’adaptateur (trous-RA).  
+L’URI pour l’adaptateur de réception est construit selon les informations de point de terminaison Tuxedo (SWIFT : / /\<SwTuxSrv\>) pour le lien SWIFTNet (SNL) et le partenaire de message (SWIFT : / /\<SagMessagePartner\>) informations pour la passerelle SWIFTAlliance reçoivent le déploiement de l’adaptateur (trous-RA).  
   
  Cela est représenté par le **nom de l’Application** propriété sur la page de propriétés de l’adaptateur de réception.  
   
@@ -28,4 +28,4 @@ L’URI pour l’adaptateur de réception est construit selon les informations d
  [Initialisation de l’adaptateur de réception SWIFT](../../adapters-and-accelerators/fileact-interact/swift-receive-adapter-initialization.md)   
  [Contexte de sécurité de l’adaptateur de réception SWIFT](../../adapters-and-accelerators/fileact-interact/swift-receive-adapter-security-context.md)   
  [Les Modes synchrone et différé de l’adaptateur de réception SWIFT](../../adapters-and-accelerators/fileact-interact/swift-receive-adapter-synchronous-and-deferred-modes.md)   
- [Magasin de l’adaptateur et le transfert de réception SWIFT](../../adapters-and-accelerators/fileact-interact/swift-receive-adapter-store-and-forward.md)
+ [Stockage et redirection de l’adaptateur de réception SWIFT](../../adapters-and-accelerators/fileact-interact/swift-receive-adapter-store-and-forward.md)

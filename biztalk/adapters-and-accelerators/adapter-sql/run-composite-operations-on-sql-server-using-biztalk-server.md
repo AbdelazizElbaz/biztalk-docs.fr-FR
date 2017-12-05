@@ -12,11 +12,11 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa84ee4a4c1964db090cc48b7229558c9ee86114
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0f6891f300a89684481184bf255f3cdd54d25845
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="run-composite-operations-on-sql-server-using-biztalk-server"></a>Exécuter des opérations composites sur SQL Server à l’aide de BizTalk Server
 Le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] permet aux clients d’adaptateur effectuer des opérations composites sur la base de données SQL Server. Une opération composite peut inclure :  
@@ -82,7 +82,7 @@ Le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] permet aux 
   
      Pour ajouter des références :  
   
-    1.  Avec le bouton droit de la racine  **\<schéma >** nœud dans le CompositeSchema.xsd, puis cliquez sur **propriétés**.  
+    1.  Avec le bouton droit de la racine  **\<schéma\>**  nœud dans le CompositeSchema.xsd, puis cliquez sur **propriétés**.  
   
     2.  Dans le **propriété** , cliquez sur le bouton de sélection **(...)**  contre le **importations** propriété.  
   
@@ -101,9 +101,9 @@ Le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] permet aux 
     > [!NOTE]
     >  Par défaut, un **racine** nœud est également ajouté à un fichier de schéma. Vous pouvez renommer la **racine** nœud **demande**. Pour renommer un nœud, cliquez sur le nom de nœud et cliquez sur **renommer**.  
   
-     Pour ajouter un nœud sous la  **\<schéma >** nœud :  
+     Pour ajouter un nœud sous la  **\<schéma\>**  nœud :  
   
-    1.  Avec le bouton droit le  **\<schéma >** nœud **insérer un nœud de schéma**, puis cliquez sur **enregistrement enfant**.  
+    1.  Avec le bouton droit le  **\<schéma\>**  nœud **insérer un nœud de schéma**, puis cliquez sur **enregistrement enfant**.  
   
     2.  Renommez le nouveau nœud **requête-réponse**.  
   
@@ -289,7 +289,7 @@ Le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] permet aux 
  L’orchestration consomme le message et l’envoie à la base de données SQL Server. La réponse à partir de la base de données SQL Server est enregistrée dans l’autre emplacement de fichier définie dans le cadre de l’orchestration. Par exemple, la réponse à partir de la base de données SQL Server pour le précédent message de demande est la suivante :  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <RequestResponse xmlns="http://CompositeTest.CompositeSchema">  
   <InsertResponse xmlns="http://schemas.microsoft.com/Sql/2008/05/TableOp/dbo/Employee">  
     <InsertResult>  
@@ -299,30 +299,30 @@ Le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] permet aux 
   <GET_LAST_EMP_DATAResponse xmlns="http://schemas.microsoft.com/Sql/2008/05/Procedures/dbo">  
     <GET_LAST_EMP_DATAResult>  
       <DataSet xmlns="http://schemas.datacontract.org/2004/07/System.Data">  
-        \<xs:schema id="NewDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
-          \<xs:element msdata:IsDataSet="true" name="NewDataSet">  
-            \<xs:complexType>  
-              \<xs:sequence>  
-                \<xs:element minOccurs="0" maxOccurs="unbounded" name="NewTable">  
-                  \<xs:complexType>  
-                    \<xs:sequence>  
-                      \<xs:element minOccurs="0" name="Employee_ID" type="xs:int" />   
-                      \<xs:element minOccurs="0" name="Name" type="xs:string" />   
-                      \<xs:element minOccurs="0" name="DOJ" type="xs:dateTime" />   
-                      \<xs:element minOccurs="0" name="Designation" type="xs:string" />   
-                      \<xs:element minOccurs="0" name="Job_Description" type="xs:string" />   
-                      \<xs:element minOccurs="0" name="Photo" type="xs:base64Binary" />   
-                      \<xs:element minOccurs="0" name="Rating" type="xs:string" />   
-                      \<xs:element minOccurs="0" name="Salary" type="xs:decimal" />   
-                      \<xs:element minOccurs="0" name="Last_Modified" type="xs:base64Binary" />   
-                    \</xs:sequence>  
-                  \</xs:complexType>  
-                \</xs:element>  
-              \</xs:sequence>  
-            \</xs:complexType>  
-          \</xs:element>  
-        \</xs:schema>  
-        \<diffgr:diffgram xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">  
+        <xs:schema id="NewDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
+          <xs:element msdata:IsDataSet="true" name="NewDataSet">  
+            <xs:complexType>  
+              <xs:sequence>  
+                <xs:element minOccurs="0" maxOccurs="unbounded" name="NewTable">  
+                  <xs:complexType>  
+                    <xs:sequence>  
+                      <xs:element minOccurs="0" name="Employee_ID" type="xs:int" />   
+                      <xs:element minOccurs="0" name="Name" type="xs:string" />   
+                      <xs:element minOccurs="0" name="DOJ" type="xs:dateTime" />   
+                      <xs:element minOccurs="0" name="Designation" type="xs:string" />   
+                      <xs:element minOccurs="0" name="Job_Description" type="xs:string" />   
+                      <xs:element minOccurs="0" name="Photo" type="xs:base64Binary" />   
+                      <xs:element minOccurs="0" name="Rating" type="xs:string" />   
+                      <xs:element minOccurs="0" name="Salary" type="xs:decimal" />   
+                      <xs:element minOccurs="0" name="Last_Modified" type="xs:base64Binary" />   
+                    </xs:sequence>  
+                  </xs:complexType>  
+                </xs:element>  
+              </xs:sequence>  
+            </xs:complexType>  
+          </xs:element>  
+        </xs:schema>  
+        <diffgr:diffgram xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">  
           <NewDataSet xmlns="">  
             <NewTable>  
               <Employee_ID>10080</Employee_ID>   
@@ -332,7 +332,7 @@ Le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] permet aux 
               <Last_Modified>AAAAAAAAF40=</Last_Modified>   
             </NewTable>  
           </NewDataSet>  
-        \</diffgr:diffgram>  
+        </diffgr:diffgram>  
       </DataSet>  
     </GET_LAST_EMP_DATAResult>  
     <ReturnValue>0</ReturnValue>   
@@ -349,4 +349,4 @@ Le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] permet aux 
  Après avoir déployé et configuré le projet BizTalk, vous pouvez exporter les paramètres de configuration dans un fichier XML appelé le fichier de liaison. Une fois que vous générez un fichier de liaison, vous pouvez importer les paramètres de configuration à partir du fichier, afin que vous n’avez pas besoin de créer des éléments tels que les ports d’envoi et ports de réception d’une même orchestration. Pour plus d’informations sur les fichiers de liaison, consultez [réutiliser les liaisons de l’adaptateur](../../adapters-and-accelerators/adapter-sql/reuse-sql-adapter-bindings.md).
   
 ## <a name="see-also"></a>Voir aussi  
-[Développer des applications BizTalk à l’aide de l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)
+[Développer des applications BizTalk avec l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)

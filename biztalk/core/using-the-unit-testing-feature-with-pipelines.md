@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5aca6e7be3c4fbeff2484f1d59454b09a4777cff
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ca19a58410014b9ea7c0c49df7420b439a544581
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-the-unit-testing-feature-with-pipelines"></a>Utilisation de la fonctionnalité de test unitaire avec les pipelines
 Cette rubrique décrit l'utilisation de la fonctionnalité de test unitaire en vue d'ajouter un test unitaire au pipeline dans l'exemple de pipeline FlatFileReceive. Test unitaire du pipeline est similaire à l’outil Pipeline.exe est documenté ici : [outils de Pipeline](../core/pipeline-tools.md). Lorsque vous activez les tests unitaires sur le **déploiement** onglet des propriétés du projet, la classe de pipeline dans votre projet est dérivée de **Microsoft.BizTalk.TestTools.Pipeline.TestableReceivePipeline**.  Cette classe définit certaines des fonctionnalités exposées par l'outil Pipeline.exe.  
@@ -119,7 +119,7 @@ Cette rubrique décrit l'utilisation de la fonctionnalité de test unitaire en v
   
 4.  Dans le répertoire TestResults, examinez le fichier *.out. Ce fichier doit contenir le nouveau message traité par le pipeline.  Il doit se trouver dans un répertoire semblable au suivant :  
   
-     C:\Program Files\Microsoft BizTalk Server \<version > \SDK\Samples\Pipelines\AssemblerDisassembler\FlatFileReceive\TestResults\Wes_BTS2009Svr 2009-02-04 09_01_04\Out  
+     C:\Program Files\Microsoft BizTalk Server \<version\>\SDK\Samples\Pipelines\AssemblerDisassembler\FlatFileReceive\TestResults\Wes_BTS2009Svr 2009-02-04 09_01_04\Out  
   
      Le message traité doit ressembler à ce qui suit :  
   
@@ -175,7 +175,7 @@ Cette rubrique décrit l'utilisation de la fonctionnalité de test unitaire en v
 |--------------------|-----------------|  
 |Documents|StringCollection contenant les messages que le pipeline doit traiter.|  
 |Éléments|StringCollection contenant les parties des messages.|  
-|Schémas|Mappage de dictionnaire utilisé pour mapper chaque type de message correspondant \*fichier de schéma .xsd. La clé doit être au format **espace_de_noms.type**. Notez l’espace de noms et le type utilisé à partir de la fenêtre Propriétés pour le \*fichier .xsd dans [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Consultez la capture d'écran ci-dessous.<br /><br /> ![](../core/media/namespaceandtypeforxsd.gif "NamespaceAndTypeForXSD")<br /><br /> **Namespace et type exposés dans la fenêtre Propriétés d’un fichier XSD.**|  
+|Schémas|Mappage de dictionnaire utilisé pour mapper chaque type de message correspondant \*fichier de schéma .xsd. La clé doit être au format **espace_de_noms.type**. Notez l’espace de noms et le type utilisé à partir de la fenêtre Propriétés pour le \*fichier .xsd dans Visual Studio. Consultez la capture d'écran ci-dessous.<br /><br /> ![](../core/media/namespaceandtypeforxsd.gif "NamespaceAndTypeForXSD")<br /><br /> **Namespace et type exposés dans la fenêtre Propriétés d’un fichier XSD.**|  
   
 ## <a name="see-also"></a>Voir aussi  
  [À l’aide de la fonctionnalité de schémas et mappages de test unitaire](../core/using-the-unit-testing-feature-with-schemas-and-maps.md)   

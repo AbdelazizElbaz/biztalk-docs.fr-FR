@@ -16,11 +16,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8a497b4b2d81ef2e6d0e62032b8c3939794451cd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 82fcdc400395d7bbfd6de8f9bc0fca85114a25dc
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="enumerate-receive-locations-biztalk-server-sample"></a>Énumérer les emplacements (exemple BizTalk Server) de réception
 L'exemple d'énumération des emplacements de réception décrit la récupération d'informations détaillées sur un ou plusieurs emplacements de réception.  
@@ -40,9 +40,9 @@ L'exemple d'énumération des emplacements de réception décrit la récupérati
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
  Les exemples se trouvent dans les emplacements du Kit de développement logiciel (SDK) suivants :  
   
--   Version VBScript : \< *exemples de chemin*> \Admin\WMI\Enumerate Receive Locations\VBScript\  
+-   Version VBScript : \< *exemples de chemin*\>\Admin\WMI\Enumerate Receive Locations\VBScript\  
   
--   Version Visual c# : \< *exemples de chemin*> \Admin\WMI\Enumerate Receive Locations\CSharp\  
+-   Version Visual c# : \< *exemples de chemin*\>\Admin\WMI\Enumerate Receive Locations\CSharp\  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -66,13 +66,13 @@ L'exemple d'énumération des emplacements de réception décrit la récupérati
   
 1.  Dans une fenêtre de commandes, accédez à l'un des dossiers suivants, selon que vous ayez choisi d'exécuter la version VBScript ou Visual C# de cet exemple, respectivement :  
   
-     \<*Exemples de chemin d’accès*> \Admin\WMI\Enumerate Locations\VBScript\ de réception  
+     \<*Exemples de chemin d’accès*\>\Admin\WMI\Enumerate Locations\VBScript\ de réception  
   
-     \<*Exemples de chemin d’accès*> \Admin\WMI\Enumerate Locations\CSharp\bin\Debug\ de réception  
+     \<*Exemples de chemin d’accès*\>\Admin\WMI\Enumerate Locations\CSharp\bin\Debug\ de réception  
   
 2.  En fonction de votre choix pour l'exécution de cet exemple (à savoir soit la version VBScript soit la version Visual C#), exécutez respectivement le fichier EnumRecLocs.vbs à l'aide du programme cscript ou le fichier EnumRl.exe. Pour la version Visual C#, exécutez l'un des deux arguments de ligne de commande suivants :  
   
-    -   **\<ReceiveLocationName >.** Correspond au nom de l'emplacement de réception pour lequel les détails seront affichés. Si le nom de l'emplacement de réception contient des espaces, placez-le entre guillemets.  
+    -   **\<ReceiveLocationName\>.** Correspond au nom de l'emplacement de réception pour lequel les détails seront affichés. Si le nom de l'emplacement de réception contient des espaces, placez-le entre guillemets.  
   
     -   **/?.** Affiche l’aide.  
   

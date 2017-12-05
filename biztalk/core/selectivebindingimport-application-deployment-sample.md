@@ -22,11 +22,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fff8a48a05f310db2d11eeddd5a0082132bbe193
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 88e6a2aa02decf1e4ed9c4a9838077be0c3b97b2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="selectivebindingimport-application-deployment-sample"></a>SelectiveBindingImport (exemple de déploiement d'application)
 Cette rubrique décrit l'utilisation de l'exemple SelectiveBindingImport. Cet exemple de script permet d'appliquer plusieurs liaisons à une application lorsque vous importez celle-ci dans différents environnement de destination. Vous pouvez utiliser cette approche pour importer les liaisons des fichiers de liaison stockés sur un partage réseau.  
@@ -44,7 +44,7 @@ Cette rubrique décrit l'utilisation de l'exemple SelectiveBindingImport. Cet ex
  Cet exemple illustre l'importation sélective de fichiers de liaison d'un partage réseau à l'aide d'un script de post-traitement contenu dans un fichier .msi d'application BizTalk.  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
- Vous pouvez rechercher les dossiers et les fichiers sous  *\<exemples de chemin >*\Application Deployment\SelectiveBindingImport :  
+ Vous pouvez rechercher les dossiers et les fichiers sous  *\<exemples de chemin\>*\Application Deployment\SelectiveBindingImport :  
   
 -   Develop (dossier)  
   
@@ -69,7 +69,7 @@ Cette rubrique décrit l'utilisation de l'exemple SelectiveBindingImport. Cet ex
   
 ### <a name="to-run-the-sample"></a>Pour exécuter l’exemple  
   
-1.  Exécutez **Build.Bat à partir de la  *\<exemples de chemin >*\Application Deployment\CreateApp** active. Cette opération crée les fichiers suivants dans le  *\<exemples de chemin >*\Application Deployment\CreateApp\Dlls dossier : Schemas.dll, Maps.dll et Orchestrations.dll.  
+1.  Exécutez **Build.Bat à partir de la  *\<exemples de chemin\>*\Application Deployment\CreateApp** active. Cette opération crée les fichiers suivants dans le  *\<exemples de chemin\>*\Application Deployment\CreateApp\Dlls dossier : Schemas.dll, Maps.dll et Orchestrations.dll.  
   
 2.  **Créer l’application.** Dans la console Administration de BizTalk Server, créez une application, comme décrit dans [la création d’une Application](../core/how-to-create-an-application.md).  
   
@@ -125,4 +125,4 @@ Cette rubrique décrit l'utilisation de l'exemple SelectiveBindingImport. Cet ex
   
 ## <a name="see-also"></a>Voir aussi  
  [Déploiement d’applications (dossier d’exemples BizTalk Server)](../core/application-deployment-biztalk-server-samples-folder.md)   
- [Déploiement d’Applications BizTalk](../core/deploying-biztalk-applications.md)
+ [Déploiement des applications BizTalk](../core/deploying-biztalk-applications.md)

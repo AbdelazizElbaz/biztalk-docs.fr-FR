@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b09cc02f8f43b589da821924cfdd38bec52160e0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: aa05cf28e267e84dd73ad1a3ffd753ee89febb71
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="operations-on-tables-and-views-with-user-defined-types-using-the-sql-adapter"></a>Opérations sur les tables et vues avec des types définis par l’utilisateur à l’aide de l’adaptateur SQL
 Vous pouvez utiliser la [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] pour effectuer des opérations sur des tables ou vues qui possèdent des colonnes de types définis par l’utilisateur (UDT). Vous pouvez utiliser les opérations de table standard (Insert, Update, Delete et Select) pour lire ou écrire des données dans des colonnes sur des types UDT. Vous pouvez également exécuter des fonctions et procédures stockées sur ces tables. Toutefois, vous devez effectuer certaines tâches avant de pouvoir utiliser l’adaptateur de fonctionner sur des tables avec colonnes UDT. Une fois que vous avez effectué ces tâches, vous pouvez utiliser l’adaptateur pour :  
@@ -46,7 +46,7 @@ Vous pouvez utiliser la [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshor
     |Type UDT|Emplacement des assemblys|  
     |--------------|----------------------------|  
     |Les UDT livré avec SQL Server, par exemple, Geography|-Vérifiez que Microsoft.SqlServer.Types.dll est ajouté au GAC.<br />-Vérifiez les SqlServerSpatial.dll vraiment est disponible dans le dossier System32.<br /><br /> Vous pouvez installer ces DLL sur l’ordinateur en exécutant le programme d’installation de SQL Server et en sélectionnant **outils de gestion – de base** et **outils de gestion – complet** dans la **sélection des fonctionnalités**page de l’Assistant.|  
-    |UDT définis par les utilisateurs, mais ne pas livré avec SQL Server|Assurez-vous que les assemblys respectives pour les UDT sont disponibles sous le [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] emplacement d’installation. Pour [!INCLUDE[prague](../../includes/prague-md.md)], il s’agit généralement \<lecteur d’installation > : \Program Files\Microsoft [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)].|  
+    |UDT définis par les utilisateurs, mais ne pas livré avec SQL Server|Assurez-vous que les assemblys respectives pour les UDT sont disponibles sous le [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] emplacement d’installation. Pour BizTalk Server, en général, il s’agit \<lecteur d’installation\>: \Program Files\Microsoft BizTalk Server.|  
   
 -   **Lors de l’exécution de l’opération en utilisant[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]**  
   

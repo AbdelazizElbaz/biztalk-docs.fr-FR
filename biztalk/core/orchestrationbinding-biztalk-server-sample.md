@@ -12,18 +12,18 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d539b4249e02422b4189d9c8daea5c19011c4722
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b361968ddb28d629244515281cc02147af533cd0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="orchestrationbinding-biztalk-server-sample"></a>OrchestrationBinding (exemple BizTalk Server)
 L'exemple de liaison d'orchestration illustre l'utilisation des objets d'administration de [Microsoft.BizTalk.ExplorerOM](http://msdn.microsoft.com/library/microsoft.biztalk.explorerom.aspx) pour configurer et gérer les orchestrations.  
   
 ## <a name="prerequisites"></a>Conditions préalables  
   
--   Cet exemple requiert que l’exemple HelloWorld soit déployé en exécutant le fichier setup.bat situé dans le \< *exemples de chemin*> \Orchestrations\HelloWorld active.  
+-   Cet exemple requiert que l’exemple HelloWorld soit déployé en exécutant le fichier setup.bat situé dans le \< *exemples de chemin*\>\Orchestrations\HelloWorld active.  
   
 -   Vous devez disposer des privilèges d'administrateur [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] pour utiliser les objets d'administration dans cet exemple.  
   
@@ -43,7 +43,7 @@ L'exemple de liaison d'orchestration illustre l'utilisation des objets d'adminis
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
  L'exemple se trouve dans l'emplacement SDK suivant :  
   
- \<*Exemples de chemin d’accès*> \Admin\ExplorerOM\OrchestrationBinding  
+ \<*Exemples de chemin d’accès*\>\Admin\ExplorerOM\OrchestrationBinding  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -66,7 +66,7 @@ L'exemple de liaison d'orchestration illustre l'utilisation des objets d'adminis
   
 1.  Ouvrez une fenêtre de commande, puis accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \Admin\ExplorerOM\OrchestrationBinding\bin\Debug  
+     \<*Exemples de chemin d’accès*\>\Admin\ExplorerOM\OrchestrationBinding\bin\Debug  
   
 2.  Exécutez le fichier OrchestrationBinding.exe et suivez les instructions de l'exemple.  
   

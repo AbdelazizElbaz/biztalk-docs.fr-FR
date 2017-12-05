@@ -17,11 +17,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b15a94bf916550d9a2eada9b8f354432b4c154ff
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4234614cc9f00809f8922999ae96e6f254989c6a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="manage-biztalk-server-sample"></a>Gérer (exemple BizTalk Server)
 L'exemple de gestion de l'authentification unique (Manage Single Sign-On) illustre la génération de fichiers .xml que vous pouvez utiliser avec l'utilitaire de ligne de commande ssomanage.exe pour effectuer les types d'opérations d'administration suivants :  
@@ -40,7 +40,7 @@ L'exemple de gestion de l'authentification unique (Manage Single Sign-On) illust
  Cet exemple inclut des paires de fichiers XSD et fichiers .xml d'exemple pour chacun des types d'opérations mentionnés plus haut. Les valeurs des fichiers .xml d'exemple ne sont pas valides. Vous devez les modifier sur des valeurs adaptées à vos besoins spécifiques.  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
- *\<Exemples de chemin d’accès >*\SSO\Manage\  
+ *\<Exemples de chemin d’accès\>*\SSO\Manage\  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   

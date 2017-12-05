@@ -13,18 +13,18 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ea6d86369b692a85102a4b267f857b41a0eafb21
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 746256a744a5d89f325ccaecb7d71185383f8efd
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3-creating-the-fabrikam-0c2-trading-partner-agreement"></a>Étape 3 : Création de l’accord de partenariat commercial 2 Fabrikam 0C
 Dans cette étape, vous créez un accord de partenariat commercial entre Contoso et Fabrikam à l’aide de la [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Console de gestion. Vous créez un accord de partenariat commercial pour le C 0 2 processus PIP (Partner Interface).  
   
 ### <a name="to-start-the-btarn-management-console"></a>Pour démarrer la console de gestion BTARN  
   
--   Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Microsoft BizTalk \<version > Accelerator for RosettaNet**, puis cliquez sur  **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]**  Console de gestion.  
+-   Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Microsoft BizTalk \<version\> Accelerator for RosettaNet**, puis cliquez sur  **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]**  Console de gestion.  
   
 ### <a name="to-create-the-0c2-trading-partner-agreement"></a>Pour créer le 0C accord de partenariat commercial de 2  
   
@@ -55,4 +55,4 @@ Dans cette étape, vous créez un accord de partenariat commercial entre Contoso
 5.  Cliquez sur le **Fabrikam_To_Contoso_0C2** accord, puis cliquez sur **activer**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Étape 4 : Création de l’accord de partenariat commercial 4 Fabrikam 0C](../../adapters-and-accelerators/accelerator-rosettanet/step-4-creating-the-fabrikam-0c4-trading-partner-agreement.md)
+ [Étape 4 : Création de l’accord de partenariat commercial Fabrikam 0C4](../../adapters-and-accelerators/accelerator-rosettanet/step-4-creating-the-fabrikam-0c4-trading-partner-agreement.md)

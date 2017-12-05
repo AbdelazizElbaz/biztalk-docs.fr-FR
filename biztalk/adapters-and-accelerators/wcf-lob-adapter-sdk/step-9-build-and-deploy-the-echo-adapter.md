@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cec35363cca2f20b38e8a2ecf8bdaf36306f6554
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3b9a4985629427e44b8ca85f324c89ab719cf249
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-9-build-and-deploy-the-echo-adapter"></a>Étape 9 : Créer et déployer l’adaptateur d’écho
 ![Étape 9 de 9](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-9of9.gif "Step_9of9")  
@@ -44,7 +44,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  Cliquez sur le **signer l’assembly** onglet.  
   
-4.  Choisissez  **\<nouveau... >** pour le fichier de nom fort. Lorsque vous y êtes invité pour un nom de fichier, tapez **EchoAdapter.snk**et la protéger mon fichier de clé avec une option de mot de passe, puis cliquez sur **OK**.  
+4.  Choisissez  **\<nouveau... \>**  pour le fichier de nom fort. Lorsque vous y êtes invité pour un nom de fichier, tapez **EchoAdapter.snk**et la protéger mon fichier de clé avec une option de mot de passe, puis cliquez sur **OK**.  
   
 5.  Cliquez sur le **Application** onglet.  
   
@@ -60,13 +60,13 @@ ms.lasthandoff: 09/20/2017
   
 3.  Tapez la commande suivante :  
   
-     **Gacutil.exe /if «\<**  *chemin d’accès au assembly\Microsoft.Adapters.Samples.EchoV2.dll* **> »**  
+     **Gacutil.exe /if «\<**  *chemin d’accès au assembly\Microsoft.Adapters.Samples.EchoV2.dll*  **\>»**  
   
      Cette procédure installe l'assembly dans le GAC, en remplaçant tout autre assembly existant sous le même nom.  
   
 ### <a name="to-register-the-echo-adapter-with-windows-communication-foundation"></a>Pour inscrire l’adaptateur de l’écho de Windows Communication Foundation  
   
-1.  Modifiez le fichier machine.config situé dans le dossier de configuration Microsoft .NET. Pour ce faire, cliquez sur **Démarrer**, cliquez sur **exécuter**, type **bloc-notes \<Windows le chemin d’installation > \Microsoft.NET\Framework\\< version\>\CONFIG \MACHINE.config**, puis cliquez sur **OK**.  
+1.  Modifiez le fichier machine.config situé dans le dossier de configuration Microsoft .NET. Pour ce faire, cliquez sur **Démarrer**, cliquez sur **exécuter**, type **bloc-notes \<chemin d’installation de Windows\>\Microsoft.NET\Framework\\< version\>\CONFIG\machine.config**, puis cliquez sur **OK**.  
   
 2.  Mettre à jour le fichier machine.config. Si votre fichier machine.config ne contient pas de section system.serviceModel, ajoutez la section suivante à la fin du fichier de configuration, mais avant la fermeture de balise racine.  
   
@@ -122,4 +122,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>Voir aussi  
  [Étape 8 : Implémenter le Gestionnaire d’entrée synchrone de l’adaptateur d’écho](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter.md)   
- [Didacticiel 2 : Utiliser l’adaptateur d’écho à partir de .NET](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-2-consume-the-echo-adapter-from-net.md)
+ [Didacticiel 2 : Utiliser l’adaptateur Echo à partir de .NET](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-2-consume-the-echo-adapter-from-net.md)

@@ -16,18 +16,18 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f7c3ce69e60517f90af4031bf76691a551afcbe2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a663dd593123e647f2f466b6d472d60bb32be1be
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-custom-tables-in-schemas"></a>Création de Tables personnalisées dans les schémas
-Vous pouvez créer une table personnalisée dans le tablevalues_\<*version*> schéma .xsd. Vous pouvez baser une table personnalisée sur un type de données existant, un type de base de données ou sur une énumération définie dans une table.  
+Vous pouvez créer une table personnalisée dans le tablevalues_\<*version*\>schéma .xsd. Vous pouvez baser une table personnalisée sur un type de données existant, un type de base de données ou sur une énumération définie dans une table.  
   
 ### <a name="to-create-a-z-table"></a>Pour créer une table Z  
   
-1.  Dans l’Explorateur de solutions, ouvrez le fichier de schéma de type de données commun  **tablevalues_\<*version*> .xsd **, puis cliquez sur **ouvrir**.  
+1.  Dans l’Explorateur de solutions, ouvrez le fichier de schéma de type de données commun  **tablevalues_\<*version*\>.xsd **, puis cliquez sur **ouvrir**.  
   
 2.  Avec le bouton droit dans l’Éditeur BizTalk, **HL7DefinedTables**, pointez sur **insérer un nœud de schéma**, puis cliquez sur **élément de champ enfant**.  
   
@@ -42,4 +42,4 @@ Vous pouvez créer une table personnalisée dans le tablevalues_\<*version*> sch
  [Création de Segments de Z déclaré](../../adapters-and-accelerators/accelerator-hl7/creating-declared-z-segments.md)   
  [Création de Types de données personnalisés dans les schémas](../../adapters-and-accelerators/accelerator-hl7/creating-custom-data-types-in-schemas.md)   
  [Extension des énumérations](../../adapters-and-accelerators/accelerator-hl7/extending-enumerations.md)   
- [La gestion des Segments de Z non déclaré](../../adapters-and-accelerators/accelerator-hl7/handling-undeclared-z-segments.md)
+ [Gestion des segments Z non déclarés](../../adapters-and-accelerators/accelerator-hl7/handling-undeclared-z-segments.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ac5f85187a49f3ab5248f12aceba74731ed7e915
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f1f4c8ddde24c32f93d003f778b9359d70e87170
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="configuring-identifiers-as2"></a>Configuration des identificateurs (AS2)
 Dans l'accord partenaire, vous devez spécifier les tiers expéditeur et récepteur. Ces valeurs sont également utilisées pour la résolution d'accord pour les messages entrants et sortants.  
@@ -44,9 +44,9 @@ Dans l'accord partenaire, vous devez spécifier les tiers expéditeur et récept
 5.  Sous le **supplémentaires de résolution d’accord** section, pour le **AS2To** propriété, entrez un alias supplémentaire pour le partenaire qui reçoit le message.  
   
     > [!NOTE]
-    >  Cette propriété est facultative. Elle est disponible à des fins de compatibilité descendante. Lorsqu'une définition de tiers est migrée de BizTalk Server 2006 R2 ou BizTalk Server 2009 vers [!INCLUDE[prague](../includes/prague-md.md)], le nom du tiers dans les versions précédentes de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] est inclus comme valeur pour cette propriété. Ceci garantit que la résolution de l'accord survient et que les applications et définitions de partenaire existantes peuvent être utilisées avec [!INCLUDE[prague](../includes/prague-md.md)].  
+    >  Cette propriété est facultative. Elle est disponible à des fins de compatibilité descendante. Lorsqu’une définition de tiers est migrée à partir de BizTalk Server 2006 R2 ou BizTalk Server 2009 à BizTalk Server, le nom du tiers dans les versions précédentes de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] est inclus en tant que valeur de cette propriété. Cela garantit que la résolution de l’accord se produit et les applications existantes et les définitions de partenaire peuvent être utilisées avec BizTalk Server.  
   
 6.  Cliquez sur **appliquer** pour accepter les modifications avant de poursuivre la configuration, ou cliquez sur **OK** pour valider les modifications, puis fermez la boîte de dialogue.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Configuration des propriétés d’accord AS2](../core/configuring-as2-agreement-properties.md)
+ [Configuration des propriétés de l’accord AS2](../core/configuring-as2-agreement-properties.md)

@@ -17,11 +17,11 @@ caps.latest.revision: "56"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2a73bd610f94e5b56dc5af5d27f90ec8bb4eb1d2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ffc3d1d6d8fdbfcc168446883e2b65a7d8ed0351
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-install-a-biztalk-application"></a>Installation d'une application BizTalk
 Cette rubrique décrit la procédure d'installation d'une application sur l'ordinateur local par double-clic sur le fichier Windows Installer (.msi) de l'application dans l'interface Windows ou par l'exécution du programme msiexec à partir de la ligne de commande. Vous pouvez également démarrer l’Assistant Installation de la dernière étape de l’Assistant Importation, comme décrit dans [comment importer une Application BizTalk](../core/how-to-import-a-biztalk-application.md).  
@@ -91,13 +91,13 @@ Cette rubrique décrit la procédure d'installation d'une application sur l'ordi
   
      Une fois le répertoire virtuel créé sur l'ordinateur cible, il pointe vers un des répertoires physiques suivants :  
   
-     \<*lecteur d’installation*> \Program Files\Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]\HttpReceive  
+     \<*lecteur d’installation*\>\Program Files\Microsoft BizTalk Server\HttpReceive  
   
      \-**ou** :  
   
-     \<*lecteur d’installation*> \Program Files (x86) \Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]\HttpReceive  
+     \<*lecteur d’installation*\>\Program fichiers (x86) \Microsoft BizTalk Server\HttpReceive  
   
-     Si le fichier BTSHTTPReceive.dll d'extension ISAPI de l'emplacement de réception HTTP BizTalk ne se trouve pas dans le répertoire spécifié ou si l'ordinateur cible exécute un système d'exploitation 64 bits, vous devez modifier la désignation du chemin d'accès local : du répertoire virtuel de sorte qu'il pointe vers le répertoire physique contenant le fichier d'extension ISAPI de l'emplacement de réception HTTP BizTalk. Par exemple, si l’ordinateur cible exécute la version 64 bits de Windows Vista, puis le chemin d’accès Local : du répertoire virtuel doit être modifiée en \<lecteur d’installation > \Program Files (x86) \Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]\HttpReceive64 .  
+     Si le fichier BTSHTTPReceive.dll d'extension ISAPI de l'emplacement de réception HTTP BizTalk ne se trouve pas dans le répertoire spécifié ou si l'ordinateur cible exécute un système d'exploitation 64 bits, vous devez modifier la désignation du chemin d'accès local : du répertoire virtuel de sorte qu'il pointe vers le répertoire physique contenant le fichier d'extension ISAPI de l'emplacement de réception HTTP BizTalk. Par exemple, si l’ordinateur cible exécute la version 64 bits de Windows Vista, puis le chemin d’accès Local : du répertoire virtuel doit être modifiée en \<lecteur d’installation\>\Program fichiers (x86) \Microsoft BizTalk Server\ HttpReceive64.  
   
 ## <a name="to-install-a-biztalk-application"></a>Pour installer une application BizTalk  
   

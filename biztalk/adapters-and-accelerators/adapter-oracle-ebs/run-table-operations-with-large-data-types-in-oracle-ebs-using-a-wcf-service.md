@@ -12,18 +12,18 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b671f8fc124875eb5eadf119188d0ffe4c1a2a3b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 720da748059d3fe3da376ea42495a2587577f5ee
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="complete-operations-on-tables-with-large-data-types-in-oracle-e-business-suite-using-the-wcf-service-model"></a>Effectuer des opérations sur les tables avec des types de données de grande taille dans Oracle E-Business Suite à l’aide du modèle de service WCF
 Le [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] permet aux clients d’adaptateur effectuer des opérations sur les tables de l’interface et de vues avec les types de données de grande taille telles que les objets BLOB, CLOB, NCLOB et BFILE.  
   
--   Pour les colonnes de type BLOB, CLOB et NCLOB, l’adaptateur permet aux clients de lire ainsi que de mettre à jour des données. L’adaptateur expose Read_\<*LOBColName*> et en attente_\<*LOBColName*> operations pour lire et mettre à jour les données respectivement, où \< *LOBColName*> est le nom de colonne avec le type de données de grande taille. S’il existe plusieurs colonnes avec le type de données de grande taille dans une table d’une interface unique, l’adaptateur expose la plupart lire et mettre à jour des opérations pour cette table d’interface.  
+-   Pour les colonnes de type BLOB, CLOB et NCLOB, l’adaptateur permet aux clients de lire ainsi que de mettre à jour des données. L’adaptateur expose Read_\<*LOBColName* \> et en attente_\<*LOBColName* \> operations pour lire et mettre à jour les données respectivement, où \< *LOBColName* \> est le nom de colonne avec le type de données de grande taille. S’il existe plusieurs colonnes avec le type de données de grande taille dans une table d’une interface unique, l’adaptateur expose la plupart lire et mettre à jour des opérations pour cette table d’interface.  
   
--   Pour les colonnes de type BFILE, les clients de l’adaptateur peuvent uniquement lire les données. L’adaptateur expose Read_\<*LOBColName*> opération lire les données des colonnes de type BFILE. S’il existe plusieurs colonnes avec le type de données de grande taille dans une table d’une interface unique, l’adaptateur expose plusieurs opérations de lecture pour la table d’interface.  
+-   Pour les colonnes de type BFILE, les clients de l’adaptateur peuvent uniquement lire les données. L’adaptateur expose Read_\<*LOBColName* \> opération lire les données des colonnes de type BFILE. S’il existe plusieurs colonnes avec le type de données de grande taille dans une table d’une interface unique, l’adaptateur expose plusieurs opérations de lecture pour la table d’interface.  
   
  Pour plus d’informations sur ces opérations, consultez [opérations sur les Tables d’Interface, les vues de l’Interface, les Tables et les vues que contiennent LOB des données](../../adapters-and-accelerators/adapter-oracle-ebs/read-and-update-on-interface-tables-and-views-with-large-object-data-types.md).  
   
@@ -53,8 +53,8 @@ Le [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinesssho
   
 |Opération|Signature de méthode|  
 |---------------|----------------------|  
-|En attente_\<*nom_colonne*>|public void en attente_\<*column_name*> (filtre, byte [] données de chaîne) ;|  
-|Read_\<*nom_colonne*>|public System.IO.Stream Read_\<*column_name*>(string FILTER) ;|  
+|En attente_\<*nom_colonne*\>|public void en attente_\<*column_name*\>(filtre, byte [] données de chaîne) ;|  
+|Read_\<*nom_colonne*\>|public System.IO.Stream Read_\<*column_name*\>(filtre de chaîne) ;|  
   
  Par exemple, le code suivant montre les signatures de méthode pour une classe de client WCF généré pour les opérations Update_PHOTO et Read_PHOTO sur la table de base de données client sous le schéma d’applications.  
   
@@ -70,12 +70,12 @@ public partial class Tables_APPS_CUSTOMERClient : System.ServiceModel.ClientBase
  Dans cet extrait de code, **Tables_APPS_CUSTOMERClient** est le nom de la classe WCF dans le OracleEBSBindingClient.cs généré par le [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]. Update_PHOTO et Read_PHOTO sont des méthodes qui peuvent être appelés pour mettre à jour et lire des colonnes de types de données de grande taille dans une table.  
   
 ### <a name="parameters-for-table-operations"></a>Paramètres pour les opérations de Table  
- Cette section fournit les paramètres requis par l’en attente_\<*column_name*> et Read_\<*column_name*> opération.  
+ Cette section fournit les paramètres requis par l’en attente_\<*column_name* \> et Read_\<*column_name* \> opération.  
   
 |Nom de l’opération|Paramètres|  
 |--------------------|----------------|  
-|En attente_\<*nom_colonne*>|Requiert les paramètres suivants :<br /><br /> -   `string FILTER`. Ce paramètre doit contenir where clause qui dénote l’enregistrement pour lequel des données est mise à jour. Par exemple, `"WHERE Name='Mindy Martin'"`.<br />-   `byte[] DATA`. Contient un tableau d’octets de données à la mise à jour dans une colonne de type de données de grande taille.|  
-|Read_\<*nom_colonne*>|Requiert les paramètres suivants :<br /><br /> -   `string FILTER`. Ce paramètre doit contenir where clause qui dénote l’enregistrement à partir de laquelle les données doit être lu. Par exemple, `"WHERE Name='Mindy Martin'"`.|  
+|En attente_\<*nom_colonne*\>|Requiert les paramètres suivants :<br /><br /> -   `string FILTER`. Ce paramètre doit contenir where clause qui dénote l’enregistrement pour lequel des données est mise à jour. Par exemple, `"WHERE Name='Mindy Martin'"`.<br />-   `byte[] DATA`. Contient un tableau d’octets de données à la mise à jour dans une colonne de type de données de grande taille.|  
+|Read_\<*nom_colonne*\>|Requiert les paramètres suivants :<br /><br /> -   `string FILTER`. Ce paramètre doit contenir where clause qui dénote l’enregistrement à partir de laquelle les données doit être lu. Par exemple, `"WHERE Name='Mindy Martin'"`.|  
   
 ## <a name="creating-a-wcf-client-to-invoke-operations-on-tables-with-columns-of-large-data-types"></a>Création d’un Client WCF pour appeler des opérations sur les Tables avec des colonnes de Types de données volumineuses  
  L’ensemble générique des actions requises pour effectuer une opération sur Oracle E-Business Suite à l’aide d’un client WCF implique un ensemble de tâches décrites dans [vue d’ensemble du modèle de service WCF avec l’adaptateur Oracle E-Business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/overview-of-the-wcf-service-model-with-the-oracle-e-business-suite-adapter.md). Cette section décrit comment créer un client WCF pour appeler des opérations Update_PHOTO et Read_PHOTO sur une table de base de données client.  
@@ -158,7 +158,7 @@ public partial class Tables_APPS_CUSTOMERClient : System.ServiceModel.ClientBase
             Console.WriteLine("Reading the photo");  
             int count = 0;  
             photo = new byte[fs.Length];  
-            while ((count += fs.Read(photo, count, (int)(((fs.Length - count) > 4096) ? 4096 : fs.Length - count))) \< fs.Length) ;  
+            while ((count += fs.Read(photo, count, (int)(((fs.Length - count) > 4096) ? 4096 : fs.Length - count))) < fs.Length) ;  
         }  
         catch(Exception ex)  
         {  

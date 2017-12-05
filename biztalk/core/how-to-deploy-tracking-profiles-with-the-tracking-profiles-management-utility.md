@@ -17,11 +17,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4a2c3c464e4b06e65ab15059da6ec3c36179ff25
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2dde3f351c583be9037127c060d02c98d12b2fcb
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-deploy-tracking-profiles-with-the-tracking-profiles-management-utility"></a>Déploiement de modèles de suivi à l'aide de l'utilitaire de gestion des modèles de suivi
 Un gestionnaire des activités demande à un développeur de solutions de créer un modèle de suivi ou d'en modifier un pour mieux gérer et contrôler un processus d'entreprise spécifique à votre entreprise.  
@@ -38,16 +38,16 @@ Un gestionnaire des activités demande à un développeur de solutions de créer
   
 ### <a name="to-deploy-the-tracking-profile-from-the-command-line-utility"></a>Pour déployer le modèle de suivi à partir de l'utilitaire de ligne de commande  
   
-1.  À partir d’une invite de commandes, accédez au répertoire \<chemin d’installation > \Program Files\Microsoft BizTalk Server \<version > \Tracking\\.  
+1.  À partir d’une invite de commandes, accédez au répertoire \<chemin d’installation\>\Program Files\Microsoft BizTalk Server \<version\>\Tracking\\.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
   
-2.  Type **bttdeploy.exe \<nom du profil > .btt**.  
+2.  Type **bttdeploy.exe \<nom du profil\>.btt**.  
   
 3.  Appuyez sur Entrée.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Gestion de l’Infrastructure dynamique BAM](../core/managing-the-bam-dynamic-infrastructure.md)   
  [Recommandations de sécurité BAM](../core/bam-security-recommendations.md)   
- [Business Activity Monitoring (BAM)](../core/business-activity-monitoring-bam.md)
+ [BAM (Business Activity Monitoring)](../core/business-activity-monitoring-bam.md)

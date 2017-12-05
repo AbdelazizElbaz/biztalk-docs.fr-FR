@@ -15,11 +15,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1898162b27956e4e527013ff765edf6aea440e9f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 32dc7b0f73955c080f875eada2705300800df452
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="exporting-certificates"></a>Exportation de certificats
 Cette rubrique explique comment exporter un certificat à l'aide de l'Assistant Exportation du certificat. Utilisez cet Assistant pour exporter un certificat public ou un certificat privé.  
@@ -43,7 +43,7 @@ Cette rubrique explique comment exporter un certificat à l'aide de l'Assistant 
   
 ### <a name="to-export-the-home-organization-certificate"></a>Pour exporter le certificat de l'organisation d'origine  
   
-1.  Cliquez sur **Démarrer**, cliquez sur **exécuter**, type **runas/user :\<héberger service > mmc**, où \< *hostservice* > est le nom du service que vous avez associé le service hôte lorsque vous avez installé [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)], puis cliquez sur **OK** pour exécuter le [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] Management Console (MMC) dans le contexte de la service de l’hôte.  
+1.  Cliquez sur **Démarrer**, cliquez sur **exécuter**, type **runas/user :\<héberger le service\> mmc**, où \< *hostservice*  \> est le nom du service que vous avez associé le service hôte lorsque vous avez installé [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)], puis cliquez sur **OK** pour exécuter le [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] gestion Console (MMC) dans le contexte du service hôte.  
   
     > [!NOTE]
     >  Vous exécutez la commande **runas** pour emprunter l'identité du service hôte, ce qui est indispensable pour accéder au certificat de l'organisation d'origine.  
@@ -70,4 +70,4 @@ Cette rubrique explique comment exporter un certificat à l'aide de l'Assistant 
 7.  Dans la page **Fichier à exporter** , cliquez sur **Parcourir**, recherchez l'emplacement de stockage du fichier, tapez le nom de ce dernier, cliquez sur **Suivant**, puis sur **Terminer**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [La gestion des certificats](../../adapters-and-accelerators/accelerator-rosettanet/managing-certificates1.md)
+ [Gestion des certificats](../../adapters-and-accelerators/accelerator-rosettanet/managing-certificates1.md)

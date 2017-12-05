@@ -12,11 +12,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a4bb40e943cc06f298db01142590e2a133c1ee05
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6816a432b7a1c1ba5163d922cd1754ebcb398389
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="configuring-general-party-properties"></a>Configuration des propriétés de tiers générales
 Un tiers ou un partenaire commercial représente une organisation participant à une relation commerciale. Les propriétés du tiers contiennent les informations suivantes :  
@@ -48,7 +48,7 @@ Un tiers ou un partenaire commercial représente une organisation participant à
 3.  Sur le **Ports d’envoi** page de la **propriétés de tiers** boîte de dialogue zone, procédez comme suit.  
   
     > [!NOTE]
-    >  Dans [!INCLUDE[prague](../includes/prague-md.md)], l'association de ports d'envoi est effectuée au niveau de l'accord. Le **Ports d’envoi** page est disponible dans le cadre des propriétés du tiers uniquement pour la compatibilité descendante. Chaque fois que vous associez un port d'envoi à un accord, le paramètre de port d'envoi est propagé au paramètre du tiers et l'association de ports d'envoi est visible dans cette page. L'inverse n'est toutefois pas vrai. Vous ne pouvez pas associer un port d'envoi à un tiers, puis rendre ce port d'envoi automatiquement disponible dans le cadre des paramètres de l'accord. Pour plus d’informations sur l’association de ports d’envoi à l’accord, consultez [configuration envoyer Association de ports (X12)](../core/configuring-send-port-association-x12.md) ou [configuration envoyer Port Association (EDIFACT)](../core/configuring-send-port-association-edifact.md).  
+    >  Dans BizTalk Server, l’association de ports d’envoi est effectuée au niveau de l’accord. Le **Ports d’envoi** page est disponible dans le cadre des propriétés du tiers uniquement pour la compatibilité descendante. Chaque fois que vous associez un port d'envoi à un accord, le paramètre de port d'envoi est propagé au paramètre du tiers et l'association de ports d'envoi est visible dans cette page. L'inverse n'est toutefois pas vrai. Vous ne pouvez pas associer un port d'envoi à un tiers, puis rendre ce port d'envoi automatiquement disponible dans le cadre des paramètres de l'accord. Pour plus d’informations sur l’association de ports d’envoi à l’accord, consultez [configuration envoyer Association de ports (X12)](../core/configuring-send-port-association-x12.md) ou [configuration envoyer Port Association (EDIFACT)](../core/configuring-send-port-association-edifact.md).  
   
     |Utiliser|Pour effectuer cette opération|  
     |--------------|----------------|  

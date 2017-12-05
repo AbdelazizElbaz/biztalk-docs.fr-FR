@@ -16,11 +16,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b7551972c14de0bcbd36532d76e3706a762cf48
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8e0884ff97e9981129f63c9bc425e86dfeaafc9a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="step-1-installing-the-base-platform"></a>Étape 1 : Installation de la plate-forme de Base
 Pour la plateforme de base, vous devez installer [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsWinSvr2k3](../../includes/btswinsvr2k3-md.md)] et [!INCLUDE[btsWinSvr2k3](../../includes/btswinsvr2k3-md.md)] Service Pack 2 sur chaque serveur en utilisant les options d’installation par défaut. Suivez ces recommandations :  
@@ -31,13 +31,13 @@ Pour la plateforme de base, vous devez installer [!INCLUDE[btsCoName](../../incl
   
 -   Assurez-vous que vous entrez les informations de licence appropriées (nombre maximal de connexions que vous avez achetées par serveur). Performances du système peuvent être affectées par le nombre de connexions disponibles.  
   
--   Assurez-vous que vous avez installé tous les logiciels requis pour un [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] installation. Pour plus d’informations, consultez les Instructions d’Installation de BizTalk Server à [http://go.microsoft.com/fwlink/?LinkId=81041](http://go.microsoft.com/fwlink/?LinkId=81041). [Guide d’installation de BizTalk 2013 R2 Accelerator pour SWIFT](http://msdn.microsoft.com/library/d2b4a9f3-baeb-4fbc-9fda-5e4178832cd1).  
+-   Assurez-vous que vous avez installé tous les logiciels requis pour une installation de BizTalk Server. Pour plus d’informations, consultez les Instructions d’Installation de BizTalk Server à [http://go.microsoft.com/fwlink/?LinkId=81041](http://go.microsoft.com/fwlink/?LinkId=81041). [Guide d’installation de BizTalk 2013 R2 Accelerator pour SWIFT](http://msdn.microsoft.com/library/d2b4a9f3-baeb-4fbc-9fda-5e4178832cd1).  
   
 -   Avant de les installer sur vos serveurs de production, testez toutes les mises à jour critiques dans un environnement hors connexion.  
   
 -   Assurez-vous que vous installez tous les correctifs applicables pour tous les produits que vous installez dans le cadre de votre déploiement. Pour plus d’informations, consultez les sources suivantes :  
   
-    -   [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] Aide en ligne  
+    -   [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]Aide en ligne de BizTalk Server  
   
     -   Instructions d’Installation de BizTalk Server à [http://go.microsoft.com/fwlink/?LinkId=81041](http://go.microsoft.com/fwlink/?LinkId=81041).  
   

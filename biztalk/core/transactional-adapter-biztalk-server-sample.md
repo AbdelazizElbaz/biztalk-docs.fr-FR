@@ -12,11 +12,11 @@ caps.latest.revision: "36"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dfad3a99d313a8007962cf56f403243c72f6a377
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f934857103952a035159cc08678c8ce8c8e51a56
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="transactional-adapter-biztalk-server-sample"></a>Adaptateur transactionnel (exemple BizTalk Server)
 L'exemple d'adaptateur transactionnel montre comment créer et utiliser une transaction Microsoft Distributed Transaction Coordinator (MSDTC) explicite sur une base de données lors du traitement d'un message [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
@@ -32,7 +32,7 @@ L'exemple d'adaptateur transactionnel montre comment créer et utiliser une tran
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
  L'exemple se trouve dans l'emplacement SDK suivant :  
   
- \<*Exemples de chemin d’accès*> \Samples\AdaptersDevelopment\TransactionalAdapter. Le projet administratif de configuration se trouve dans le dossier \Admin, et le projet d'exécution dans le dossier \Runtime.  
+ \<*Exemples de chemin d’accès*\>\Samples\AdaptersDevelopment\TransactionalAdapter. Le projet administratif de configuration se trouve dans le dossier \Admin, et le projet d'exécution dans le dossier \Runtime.  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -98,7 +98,7 @@ L'exemple d'adaptateur transactionnel montre comment créer et utiliser une tran
 2.  Pour ajouter les données de l’adaptateur transactionnel au Registre, double-cliquez sur **TransactionalAdmin.reg**.  
   
     > [!NOTE]
-    >  **TransactionalAdmin.reg** inclut des chemins codés en dur vers C:\Program Files\Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] \\. Si vous n'avez pas installé [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] dans l'emplacement par défaut ou si vous avez mis à niveau votre installation [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] à partir d'une version antérieure, vous devez modifier le fichier TransactionalAdmin.reg en y indiquant les chemins d'accès appropriés. Mettez à jour les chemins d'accès associés aux valeurs « InboundAssemblyPath », « OutboundAssemblyPath » et « AdapterMgmtAssemblyPath » afin qu'ils pointent vers l'emplacement correct des fichiers spécifiés.  
+    >  **TransactionalAdmin.reg** inclut des chemins codés en dur vers C:\Program Files\Microsoft BizTalk Server\\. Si vous n'avez pas installé [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] dans l'emplacement par défaut ou si vous avez mis à niveau votre installation [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] à partir d'une version antérieure, vous devez modifier le fichier TransactionalAdmin.reg en y indiquant les chemins d'accès appropriés. Mettez à jour les chemins d'accès associés aux valeurs « InboundAssemblyPath », « OutboundAssemblyPath » et « AdapterMgmtAssemblyPath » afin qu'ils pointent vers l'emplacement correct des fichiers spécifiés.  
   
     > [!IMPORTANT]
     >  Si vous installez BizTalk sur un ordinateur 64 bits, modifiez toutes les instances de l’entrée de Registre HKEY_CLASSES_ROOT\CLSID\ à HKEY_CLASSES_ROOT\Wow6432Node\CLSID\ dans le **TransactionalAdmin.reg** fichier de Registre.  

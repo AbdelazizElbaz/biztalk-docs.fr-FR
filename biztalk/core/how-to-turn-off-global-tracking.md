@@ -12,14 +12,14 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e98f793bb96ae8c74c8f375abda4dc87e580c63f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c143d19e6071ca4f9ce488ae936082db86dc84dc
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-turn-off-global-tracking"></a>Désactivation du suivi global
-Le suivi global est activé par défaut lorsque vous installez [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]. La taille de la base de données des suivis BizTalk (BizTalkDTADb) croît à mesure que [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] traite des données sur votre système. Si la taille de cette base de données affecte les performances du disque, vous pouvez en purger les données. Si vous rencontrez des problèmes de performances qui sont momentanément résolus par une purge de la base de données de suivi BizTalk, et que vous souhaitez configurer BizTalk de sorte que les informations de suivi ne soient plus collectées, vous pouvez envisager de désactiver le suivi global.  
+Par défaut, le suivi global est activé lorsque vous installez BizTalk Server. La taille de la base de données des suivis BizTalk (BizTalkDTADb) croît à mesure que [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] traite des données sur votre système. Si la taille de cette base de données affecte les performances du disque, vous pouvez en purger les données. Si vous rencontrez des problèmes de performances qui sont momentanément résolus par une purge de la base de données de suivi BizTalk, et que vous souhaitez configurer BizTalk de sorte que les informations de suivi ne soient plus collectées, vous pouvez envisager de désactiver le suivi global.  
   
  Il est important de comprendre que le fait de désactiver le suivi global entraîne également la désactivation des intercepteurs de suivi de l'ensemble du groupe [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Cela signifie que BizTalk ne suivra pas les événements dans les tables de suivi. Vous pouvez aussi désactiver le suivi des événements de manière individuelle.  
   
@@ -35,7 +35,7 @@ Le suivi global est activé par défaut lorsque vous installez [!INCLUDE[btsBizT
   
 2.  Dans le **se connecter au serveur** boîte de dialogue, vérifiez le nom du serveur et l’authentification, puis cliquez sur **connexion**.  
   
-3.  Dans Microsoft SQL Server Management Studio, dans **l’Explorateur d’objets**, développez \< *nom de l’ordinateur*>, développez **bases de données**, développez  **BizTalkMgmtDb**, développez **Tables**, avec le bouton droit **adm_Group**, puis cliquez sur **ouvrir la Table**.  
+3.  Dans Microsoft SQL Server Management Studio, dans **l’Explorateur d’objets**, développez \< *nom de l’ordinateur*\>, développez **bases de données**, développez  **BizTalkMgmtDb**, développez **Tables**, avec le bouton droit **adm_Group**, puis cliquez sur **ouvrir la Table**.  
   
 4.  Dans la visionneuse de table, faites défiler horizontalement jusqu'à ce que vous trouviez **GlobalTrackingOption**.  
   

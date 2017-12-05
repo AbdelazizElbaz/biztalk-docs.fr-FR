@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3ab7f1c75baf5a974fdbc10deb1651fcce1c7d51
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ab603f12e1f2c431f83af00dc79b57a9e416c251
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-configure-the-swift-adapter-for-the-interact-real-time-scenario"></a>Étape 1 : Configurer l’adaptateur SWIFT pour l’interaction du scénario en temps réel
 Les étapes suivantes expliquent comment configurer le Gestionnaire d’envoi pour l’adaptateur Interact. Avant de commencer la procédure, vous devez effectuer la configuration requise figurant dans [préparation à l’utilisation du didacticiel](../../adapters-and-accelerators/fileact-interact/preparing-to-use-the-tutorial1.md).  
@@ -33,7 +33,7 @@ Les étapes suivantes expliquent comment configurer le Gestionnaire d’envoi po
   
     |**Utilisez cette**|**Pour ce faire**|  
     |------------------|--------------------|  
-    |**Arguments**|Type de l’argument suivant : **SagMessagePartner**\<interagir de partenaire de Message Client créé dans les trous > **Remarque :** le client dans l’argument est le MessagePartner que vous avez configuré dans les trous.|  
+    |**Arguments**|Type de l’argument suivant : **SagMessagePartner**\<interagir de partenaire de Message Client créé dans les trous\> **Remarque :** le client dans l’argument est le MessagePartner vous configuré dans les trous.|  
     |**Mode de chiffrement**|Dans la liste déroulante, sélectionnez **avancé**.|  
     |**LogMessageBody**|Dans la liste déroulante, sélectionnez `FALSE`. **Remarque :** si vous définissez sur `TRUE`, il conserve le corps du message dans la base de données de suivi. Toutefois, pour des raisons de sécurité, le corps du message ne peut jamais affiché dans le portail BAM.|  
     |**LogMessages**|Dans la liste déroulante, sélectionnez `TRUE`. Ainsi, les événements de message capturées et de suivi dans le portail BAM.|  
@@ -52,4 +52,4 @@ Les étapes suivantes expliquent comment configurer le Gestionnaire d’envoi po
  [Étape 1 : Configurer l’adaptateur SWIFT pour l’interaction du scénario en temps réel](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-interact-real-time-scenario.md)   
  [Étape 2 : Ajouter SWIFTNet Configuration pour le Paramfile pour l’interaction du scénario en temps réel](../../adapters-and-accelerators/fileact-interact/step-2-add-swiftnet-configuration-to-paramfile-for-interact-real-time-scenario.md)   
  [Étape 3 : Créer l’envoi et Ports de réception l’interaction du scénario en temps réel](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-the-interact-real-time-scenario.md)   
- [Étape 4 : Tester l’interaction du scénario de bout en bout en temps réel](../../adapters-and-accelerators/fileact-interact/step-4-test-the-interact-real-time-end-to-end-scenario.md)
+ [Étape 4 : Tester le scénario en temps réel InterAct de bout en bout](../../adapters-and-accelerators/fileact-interact/step-4-test-the-interact-real-time-end-to-end-scenario.md)

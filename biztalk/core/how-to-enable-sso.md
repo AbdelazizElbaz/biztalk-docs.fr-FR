@@ -21,11 +21,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f51b07bc34779643124efd5b249373301f7e47b6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a843c0f6cdea32ba5218140069163058fcd42442
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-enable-sso"></a>Comment activer l’authentification unique
 Vous pouvez activer le système d'authentification unique à l'aide du composant logiciel enfichable MMC ou de la ligne de commande.  
@@ -46,7 +46,7 @@ Vous pouvez activer le système d'authentification unique à l'aide du composant
   
 1.  Cliquez sur **Démarrer**, **Exécuter**, puis entrez **cmd**.  
   
-2.  Dans l'invite de ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  **\<lecteur >**: \Program Files\Enterprise Single Sign-On.  
+2.  Dans l'invite de ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  **\<lecteur\>**: \Program Files\Enterprise Single Sign-On.  
   
 3.  Type **ssomanage – enablesso**.  
   
@@ -59,7 +59,7 @@ Vous pouvez activer le système d'authentification unique à l'aide du composant
   
 2.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-3.  Dans l'invite de ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur >*: \Program Files\Enterprise Single Sign-On.  
+3.  Dans l'invite de ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur\>*: \Program Files\Enterprise Single Sign-On.  
   
 4.  Type **ssomanage - enablesso** pour activer le service Enterprise Single Sign-On.  
   
@@ -68,7 +68,7 @@ Vous pouvez activer le système d'authentification unique à l'aide du composant
   
 5.  Connectez-vous en tant qu'administrateur d'applications associées à SSO.  
   
-6.  Type **ssomanage - createapps  *\<fichier de l’application >***  pour créer une application associée, où \<fichier de l’application > est le fichier XML qui contient les définitions les applications associées.  
+6.  Type **ssomanage - createapps  *\<fichier de l’application\>***  pour créer une application associée, où \<fichier de l’application\> est le fichier XML qui contient des définitions pour les applications associées.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -77,4 +77,4 @@ Vous pouvez activer le système d'authentification unique à l'aide du composant
  [Comment configurer le serveur d’authentification unique](../core/how-to-set-the-sso-server.md)   
  [Comment désactiver l’authentification unique](../core/how-to-disable-sso.md)   
  [Comment mettre à jour la base de données SSO](../core/how-to-update-the-sso-database.md)   
- [À l’aide de l’authentification unique](../core/using-sso.md)
+ [Utilisation de l’authentification unique](../core/using-sso.md)

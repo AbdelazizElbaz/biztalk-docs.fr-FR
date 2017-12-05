@@ -12,15 +12,15 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b450c74f7d2eda6d3b688c40d0f8e8cde5c66d3b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 88caf75d312179cd45bb1b3b421d6c2c7f25c2a8
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="generate-an-xsd-schema-for-json-message"></a>Générer un schéma XSD pour un message JSON
 > [!NOTE]
->  Ce didacticiel s'applique uniquement à [!INCLUDE[prague](../includes/prague-md.md)].  
+>  Ce didacticiel s’applique uniquement à BizTalk Server.  
   
  Dans cette solution, une application [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] reçoit un message JSON. Pour que l'application puisse traiter le message, celui-ci doit être converti en un schéma XSD. Pour cela, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] fournit un Assistant Schéma JSON qui créé un schéma XSD à partir d'un message JSON.  
   

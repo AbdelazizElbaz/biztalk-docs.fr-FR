@@ -13,11 +13,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9763e55c44fc3ea45ab93127ffae8c9c742f0dc9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e44d3a100cdaefe04cf9d3aedfa8cf969811fc5e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="introduction-to-the-biztalk-esb-toolkit"></a>Présentation de BizTalk ESB Toolkit
 Décrit l’architecture et le contenu de Microsoft [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]. La documentation montre également comment appliquer un modèle d’architecture de Bus de Service d’entreprise (ESB) pour développer des applications d’entreprise qui permettent de flexible et sécurisée, et les services réutilisables et organisation rapide des services existants dans la nouvelle de bout en bout processus d’entreprise.  
@@ -33,21 +33,24 @@ Décrit l’architecture et le contenu de Microsoft [!INCLUDE[esbToolkit](../inc
   
  **Une représentation sous forme de haut niveau de la connectivité fournie par l’architecture Enterprise Service Bus**  
 
-\<!---Ancien texte avec des liens ancien
-## <a name="the-industry-view-of-esb"></a>La vue de l’industrie de ESB  
- Il existe de nombreuses sources d’informations sur la conception ESB, architecture, infrastructure et d’implémentation disponibles auprès de fournisseurs de l’industrie, les intégrateurs système et sources indépendantes.  
+<!---  Old text with old links
+## The Industry View of ESB  
+ There are many sources of information about ESB design, architecture, infrastructure, and implementation available from industry suppliers, system integrators, and independent sources.  
 -->
-\<!---    
- IBM définit ESB en tant que système qui «.. .vous une entreprise pour rendre l’utilisation d’une gamme complète, flexible et une approche cohérente tout en réduisant la complexité des applications en cours d’intégration de l’intégration. En raison de la nature complexe et différents besoins professionnels, ESB est une évolution evolutional qui unifie orienté messages, pilotés par des événements et le service orienté approches permettant l’intégration des applications et le service. » IBM décrit les avantages en tant que «.. réutilisation .supérieures des ressources informatiques en séparant la logique d’application et les tâches d’intégration, afin de réduire le nombre, la taille et la complexité des interfaces d’intégration, « et la capacité de ».. .add ou modifier les services avec un minimum interruption de l’environnement informatique ; réduire le coût et des risques en tant que les modifications de l’entreprise et se présentent de nouvelles opportunités ». Pour plus d’informations, consultez [WebSphere logiciel](http://go.microsoft.com/fwlink/p/?LinkId=185958)([http://go.microsoft.com/fwlink/p/?LinkId=185958](http://go.microsoft.com/fwlink/p/?LinkId=185958)) sur le site Web d’IBM.  
+<!---    
+ IBM defines ESB as a system that "...enables a business to make use of a comprehensive, flexible, and consistent approach to integration while also reducing the complexity of the applications being integrated. Due to the complex and varying nature of business needs, ESB is an evolutional progression that unifies message oriented, event driven and service oriented approaches for integrating applications and service." IBM describes the advantages as "...greater reuse of IT assets by separating application logics and integration tasks, so you can reduce the number, size, and complexity of integration interfaces," and the ability to "...add or change services with minimal interruption to existing IT environment; reduce cost and risk involved as business changes and new opportunities arise." For more information, see [WebSphere software](http://go.microsoft.com/fwlink/p/?LinkId=185958)([http://go.microsoft.com/fwlink/p/?LinkId=185958](http://go.microsoft.com/fwlink/p/?LinkId=185958))on the IBM Web site.  
 -->
-\<!---Ancien texte avec des liens ancien Sonic proposent un examen minutieux de ESB, traitant les aspects de principe et de l’informatique et les avantages de l’entreprise. Ils décrivent la configuration requise pour ESB : « Pour intégrer les anciennes et nouvelles, architecture orientée services (SOA) a besoin une infrastructure qui peut se connecter à n’importe quelle ressource informatique, quelle que soit sa technologie ou partout où il est déployé. » Pour plus d’informations, consultez [Enterprise Service Bus (ESB)](http://go.microsoft.com/fwlink/p/?LinkId=185959)([http://go.microsoft.com/fwlink/p/?LinkId=185959](http://go.microsoft.com/fwlink/p/?LinkId=185959)) sur le site Web de Sonic Solutions.  
+<!---    Old text with old links
+ Sonic Solutions provide a comprehensive examination of ESB, discussing the principle aspects, and the IT and business benefits. They describe the requirement for ESB: "To integrate old and new, service-oriented architecture (SOA) needs an infrastructure that can connect any IT resource, whatever its technology or wherever it is deployed." For more information, see [Enterprise Service Bus (ESB)](http://go.microsoft.com/fwlink/p/?LinkId=185959)([http://go.microsoft.com/fwlink/p/?LinkId=185959](http://go.microsoft.com/fwlink/p/?LinkId=185959)) on the Sonic Solutions Web site.  
 -->
-\<!---Ancien texte avec des liens ancien TIBCO logiciel définir ESB en tant que «.. couche de communication basée sur des normes .a dans une architecture ciblée sur les services (SOA) qui permet aux services d’être utilisé sur plusieurs protocoles de communication [to] pour simplifier le déploiement de service et gestion et favorise la réutilisation de service dans un environnement hétérogène. » Ils indiquent, afin de fournir ces fonctionnalités, ESB «.. .support ouverts tous les deux normes et des technologies propriétaires, y compris les services Web et les registres de base UDDI pour découvrir et publier des services, Java Message Service (JMS) et autres largement déployé protocoles de messagerie, basée sur des normes (XML) des transformations et routage des messages de base. » Pour plus d’informations, consultez [Enterprise Service Bus (ESB)](http://go.microsoft.com/fwlink/p/?LinkId=185960)([http://go.microsoft.com/fwlink/?LinkId=185960](http://go.microsoft.com/fwlink/p/?LinkId=185960)) sur le site Web de TIBCO.  
+<!---    Old text with old links
+ TIBCO Software define ESB as "...a standards-based communication layer in a service- oriented architecture (SOA) that enables services to be used across multiple communication protocols [to] simplify service deployment and management, and promote service reuse in a heterogeneous environment." They suggest, in order to provide these capabilities, ESBs "...support both open standards and proprietary technologies, including Web services and UDDI-based registries to discover and publish services, Java Message Service (JMS) and other widely deployed messaging protocols, standards-based (XML) transformations, and basic message routing." For more information, see [Enterprise Service Bus (ESB)](http://go.microsoft.com/fwlink/p/?LinkId=185960)([http://go.microsoft.com/fwlink/?LinkId=185960](http://go.microsoft.com/fwlink/p/?LinkId=185960)) on the TIBCO Web site.  
 -->
-\<!---Ancien texte avec des liens ancien dans la description de son ouvrage, Enterprise Service Bus, auteur David Chappell indique que « plutôt qu’est conforme à l’architecture hub and spoke de produits d’intégration d’application entreprise traditionnel, ESB fournit une haute approche distribuée à l’intégration. » Il ajoute «.. with fonctionnalités uniques qui permettent à des départements ou des unités commerciales pour générer du délai d’attente leurs projets d’intégration en segments digestibles, incrémentiels, maintenir leur propre contrôle local et autonomie, tout en continuant à relier chaque projet d’intégration dans un plus grand, plus global l’infrastructure d’intégration ou grille. » Pour plus d’informations, consultez Enterprise Service Bus de David Chappell :  
+<!---    Old text with old links
+ In the description of his book, Enterprise Service Bus, author David Chappell states that "Rather than conform to the hub-and-spoke architecture of traditional enterprise application integration products, ESB provides a highly distributed approach to integration." He adds "...with unique capabilities that allow individual departments or business units to build out their integration projects in incremental, digestible chunks, maintaining their own local control and autonomy, while still being able to connect together each integration project into a larger, more global integration fabric, or grid." For more information, see Enterprise Service Bus by David Chappell:  
 -->
-\<!---Ancien texte avec des liens ancien
--   Chappell, David. Bus de Service d’entreprise. Sebastopol, CA : O ' Reilly Media, Inc. 2004.  
+<!---    Old text with old links
+-   Chappell, David. Enterprise Service Bus. Sebastopol, CA: O'Reilly Media, Inc. 2004.  
 -->
 
   
@@ -62,18 +65,18 @@ Décrit l’architecture et le contenu de Microsoft [!INCLUDE[esbToolkit](../inc
   
  Cette documentation comprend également les sections suivantes de la rubrique :  
   
--   [Prise en main de BizTalk ESB Toolkit](../esb-toolkit/getting-started-with-the-biztalk-esb-toolkit.md)  
+-   [Bien démarrer avec BizTalk ESB Toolkit](../esb-toolkit/getting-started-with-the-biztalk-esb-toolkit.md)  
   
--   [Les tâches de développement et les scénarios clés](../esb-toolkit/key-scenarios-and-development-tasks.md)  
+-   [Scénarios clés et tâches de développement](../esb-toolkit/key-scenarios-and-development-tasks.md)  
   
--   [Création d’itinéraires à l’aide du Concepteur d’itinéraire](../esb-toolkit/creating-itineraries-using-itinerary-designer.md)  
+-   [Création d’itinéraires à l’aide du concepteur d’itinéraire](../esb-toolkit/creating-itineraries-using-itinerary-designer.md)  
   
--   [BizTalk ESB Toolkit exemple Applications](../esb-toolkit/biztalk-esb-toolkit-sample-applications.md)  
+-   [Exemples d’applications BizTalk ESB Toolkit](../esb-toolkit/biztalk-esb-toolkit-sample-applications.md)  
   
 -   [Modification et l’extension de BizTalk ESB Toolkit](../esb-toolkit/modifying-and-extending-the-biztalk-esb-toolkit.md)  
   
--   [Administration de BizTalk ESB Toolkit](../esb-toolkit/administration-with-the-biztalk-esb-toolkit.md)  
+-   [Administration avec BizTalk ESB Toolkit](../esb-toolkit/administration-with-the-biztalk-esb-toolkit.md)  
   
--   [Intégration de gouvernance SOA](../esb-toolkit/soa-governance-integration.md)  
+-   [Intégration de la gouvernance SOA](../esb-toolkit/soa-governance-integration.md)  
   
 -   [Dépannage](../esb-toolkit/troubleshooting-the-biztalk-esb-toolkit.md)

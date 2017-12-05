@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b00e829ad569790b257e1d5f0c16290cca68d176
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1e5c4d7e20fc4d8e7c8bea724625dde770b4aca2
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="undeploy-other-tutorial-projects"></a>Annuler le déploiement d’autres projets de didacticiel
 Lorsque vous déployez un BizTalk Accelerator pour HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) didacticiels, [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] stocke les fichiers de l’assembly du didacticiel dans la base de données de Configuration (également appelée la base de données BizTalk Management) et le global assembly cache. Si vous avez exécuté une autre [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] didacticiel et déployé les assemblys que vous avez créé dans ce didacticiel, vous pouvez rencontrer les erreurs lorsque vous testez vos assemblys dans les trois parties du didacticiel de traitement par lot. Cela peut se produire, car vous ne pouvez déployer un schéma de message à la fois.  
@@ -33,7 +33,7 @@ Lorsque vous déployez un BizTalk Accelerator pour HL7 ([!INCLUDE[btaBTAHL71.3ab
   
 3.  Ouvrez l’Explorateur BizTalk, cliquez sur l’assembly que vous souhaitez annuler le déploiement, puis cliquez sur **annuler le déploiement**.  
   
- Pour plus d’informations sur l’annulation du déploiement d’un assembly, consultez « Annulation du déploiement un Assembly à l’aide de l’Explorateur BizTalk » dans [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] aide.  
+ Pour plus d’informations sur l’annulation du déploiement d’un assembly, consultez « Annulation du déploiement un Assembly à l’aide de l’Explorateur BizTalk » dans l’aide de BizTalk Server.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Préparation à l’utilisation du didacticiel de traitement par lot](../../adapters-and-accelerators/accelerator-hl7/preparing-to-use-the-batching-tutorial.md)
+ [Préparation à l’utilisation du didacticiel sur le traitement par lot](../../adapters-and-accelerators/accelerator-hl7/preparing-to-use-the-batching-tutorial.md)

@@ -13,11 +13,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f17b45afb28a497c0443f788a44d05307103c547
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 9fafde77ad1e6edcae71d2c33a722ac63ab8e75b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="tutorial-use-tibco-ems-message-descriptors"></a>Didacticiel : Descripteurs de message utilisation TIBCO EMS
 
@@ -38,7 +38,7 @@ Ce didacticiel présente l'utilisation des propriétés de contexte de BizTalk S
   
      Le **sélectionner le composant** boîte de dialogue s’affiche.  
   
-4.  Recherchez  **\<TIBCO EMS_Adapter_installation_directory > \bin**, puis sélectionnez **Microsoft.Adapters.TibcoEMSProperties.dll**.  
+4.  Recherchez  **\<TIBCO EMS_Adapter_installation_directory\>\bin**, puis sélectionnez **Microsoft.Adapters.TibcoEMSProperties.dll**.  
   
 5.  Cliquez sur **Ouvrir**.  
   

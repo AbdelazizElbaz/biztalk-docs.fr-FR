@@ -22,11 +22,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 80d7d5951b40b5c76b533e6425ee4d898b41c6cd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: db4bc69348cfb99b5e7cebb07c65e05a0513cd0e
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="btarn-receive-pipeline"></a>BTARN, pipeline de réception
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] effectue la réception des messages Framework RNIF (RosettaNet Implementation) avec le pipeline RNIFReceive (RNIFReceive.btp). Le pipeline de réception inclut les composants suivants :  
@@ -45,16 +45,16 @@ ms.lasthandoff: 09/20/2017
  Ce composant stocke le message reçu dans la table MessageStorageIn. Ce composant effectue le traitement de non répudiation requis par les normes RNIF.  
   
 ## <a name="rnmimedecoder"></a>RNMimeDecoder  
- Ce composant est basé sur natif [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] préprocesseur/décodeur MIME. RNMimeDecoder ajoute les fonctionnalités suivantes pour le traitement RNIF :  
+ Ce composant est basé sur le natif BizTalk Server préprocesseur/décodeur MIME. RNMimeDecoder ajoute les fonctionnalités suivantes pour le traitement RNIF :  
   
 -   Pour RNIF 2.01, déchiffre le contenu de service et les pièces jointes, s’ils sont présents.  
   
 -   Pour RNIF 1.1, gère l’en-tête de 8 octets et l’en-tête de signature détachée à la fin de la charge utile.  
   
- Pour plus d’informations sur natif [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] préprocesseur/décodeur, consultez « Composant de Pipeline décodeur MIME/SMIME » dans [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] aide.  
+ Pour plus d’informations sur natif [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] préprocesseur/décodeur, consultez « Composant de Pipeline décodeur MIME/SMIME » dans l’aide de BizTalk Server.  
   
 ## <a name="rndasm"></a>RNDAsm  
- Ce composant est basé sur natif [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] désassembleur XML. RNDAsm ajoute les fonctionnalités suivantes pour le traitement RNIF :  
+ Ce composant est basé sur le désassembleur de XML natif BizTalk Server. RNDAsm ajoute les fonctionnalités suivantes pour le traitement RNIF :  
   
 -   Si un document entrant comporte un en-tête de type de document, ce composant génère un espace de noms à partir de celui-ci et déplace tous les nœuds dans le document entrant pour cet espace de noms.  
   
@@ -64,16 +64,16 @@ ms.lasthandoff: 09/20/2017
   
 -   Promeut les propriétés de message.  
   
- Pour plus d’informations sur natif [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] désassembleur, consultez « Composant de Pipeline désassembleur XML » dans [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] aide.  
+ Pour plus d’informations sur natif [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] désassembleur, consultez « Composant de Pipeline désassembleur XML » dans l’aide de BizTalk Server.  
   
 ## <a name="rnpartyres"></a>RNPartyRes  
- Ce composant est basé sur natif [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] composant résolution du tiers. RNPartyRes ajoute les fonctionnalités suivantes pour le traitement RNIF :  
+ Ce composant est basé sur le composant résolution du tiers BizTalk Server natif. RNPartyRes ajoute les fonctionnalités suivantes pour le traitement RNIF :  
   
 -   Mappe le certificat de l’expéditeur si le message entrant est signé à un tiers BizTalk. Si le message entrant n’est pas signé, et permet l’accord de partenariat commercial, ce composant extrait le tiers expéditeur à partir de l’en-tête de remise pour RNIF 2.01 ou l’en-tête de Service pour RNIF 1.1.  
   
 -   Valide que l’expéditeur existe et que l’expéditeur a un accord de partenariat commercial avec l’organisation d’origine.  
   
- Pour plus d’informations sur natif [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] composant résolution de tiers, consultez « Composant de Pipeline résolution de tiers » dans [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] aide.  
+ Pour plus d’informations sur natif [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] composant résolution de tiers, consultez « Composant de Pipeline résolution tiers » dans l’aide de BizTalk Server.  
   
 ## <a name="messageupdater"></a>MessageUpdater  
  Ce composant ajoute les fonctionnalités suivantes pour le traitement RNIF :  
@@ -128,4 +128,4 @@ ms.lasthandoff: 09/20/2017
 21. [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]achemine les en-têtes, le contenu de service et les pièces jointes dans le processus public RosettaNet.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Traitement des messages dans BTARN](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)
+ [Traitement de messages dans BTARN](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)

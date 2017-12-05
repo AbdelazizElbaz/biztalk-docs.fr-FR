@@ -12,11 +12,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: df98f717c71198d4be6f8d13eaa539e5c1e16786
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 21003c4d3565158945e91371fa760cf97692b472
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="troubleshooting-biztalk-server-performance"></a>Dépannage des performances de BizTalk Server
 Cette section contient des instructions d'ordre général relatives au diagnostic et à la résolution des problèmes de performances liés au moteur de messagerie BizTalk.  
@@ -84,7 +84,7 @@ Cette section contient des instructions d'ordre général relatives au diagnosti
   
 -   Le Générateur de profils SQL Server permet de capturer les instructions Transact-SQL envoyées au serveur SQL Server et les ensembles de résultats du SQL Server provenant de ces instructions. BizTalk Server étant intégré à SQL Server, l'analyse de suivi du Générateur de profils SQL Server s'avère utile pour l'étude des problèmes susceptibles de survenir sur BizTalk Server lors de la lecture à partir des bases de données SQL Server et l'écriture dans ces dernières. Pour plus d'informations sur l'utilisation de SQL Server Profiler, reportez-vous à la documentation de SQL Server.  
   
--   L'éditeur de requêtes [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)] permettent d'exécuter des instructions SQL directement dans les bases de données SQL Server. Cette fonctionnalité s'avère utile pour l'interrogation des bases de données BizTalk Server ou pour la mise à jour des bases de données BizTalk Server dans certains cas. Pour plus d'informations sur l'éditeur de requête, consultez la documentation de [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)].  
+-   L’éditeur de requête de SQL Server peut être utilisé pour exécuter des instructions SQL directement dans les bases de données SQL Server. Cette fonctionnalité s'avère utile pour l'interrogation des bases de données BizTalk Server ou pour la mise à jour des bases de données BizTalk Server dans certains cas. Pour plus d’informations sur l’éditeur de requête, consultez la documentation de SQL Server.  
   
 -   Révision [dépannage de SQL Server](../core/troubleshooting-sql-server.md) pour plus d’informations.  
   

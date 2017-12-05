@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1cb314445fe489c50ff5c50364647895219c9907
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4248a81f918b674dcf72c930132b7743472241f3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="windows-powershell-scripts"></a>Scripts Windows PowerShell
 Cette rubrique contient des scripts Windows PowerShell qui peuvent être exécutées sur les ordinateurs dans un environnement BizTalk Server pour appliquer des paramètres de Registre décrits dans ce guide.  
@@ -179,7 +179,7 @@ SetProperty $path "NumTCPTablePartitions" 4 # NumTCPTablePartitions -> 2 per Pro
 SetProperty $path "SynAttackProtect" 0 # SynAttackProtect -> 0 (Only set this on systems with web exposure if other H/W or S/W is providing DOS attack protection)  
 #Dedicated Network (DATA)  
 #------------------------  
-#Interfaces\<adapter ID>\MTU -> 1450-1500, test for maximum value that will pass on each interface using PING -f -l <MTU Size> <Interface Gateway Address>, pick the value that works across all interfaces  
+#Interfaces\<adapter ID\>\MTU -> 1450-1500, test for maximum value that will pass on each interface using PING -f -l <MTU Size> <Interface Gateway Address>, pick the value that works across all interfaces  
 $RegistryEntries = Get-ItemProperty -path "HKLM:\system\currentcontrolset\services\tcpip\parameters\interfaces\*"  
 foreach ( $iface in $RegistryEntries ) {   
 $ip = $iface.DhcpIpAddress  

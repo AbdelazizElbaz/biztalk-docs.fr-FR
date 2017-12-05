@@ -23,11 +23,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 678977b23f377425718e483d87725ba191bbda86
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 04c7e6e28cc0deb83eaa7868c6c4ee17da8bc563
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="windows-accounts-for-a-secure-distributed-biztalk-server-deployment"></a>Comptes Windows pour un déploiement sécurisé de BizTalk Server
 Pour plus d’informations sur l’architecture système pour le déploiement de BizTalk Server, consultez [exemples d’architecture BizTalk Server](../core/sample-biztalk-server-architectures.md).  
@@ -83,7 +83,7 @@ Pour plus d’informations sur l’architecture système pour le déploiement de
 |Installation|Utilisateur|Administrateurs de l'authentification unique (uniquement pour la configuration du serveur de secret principal)<br /><br /> Administrateurs locaux<br /><br /> Rôle SQL Server sysadmin<br /><br /> Administrateur OLAP|  
 |Pool d’applications BAM|Service|IIS_WPG|  
 |Gestion de l'analyse BAM|Service|IIS_WPG|  
-|Notification BAM|Service|SQLServer2005NotificationServicesUser$\<**Nom_Ordinateur**>|  
+|Notification BAM|Service|SQLServer2005NotificationServicesUser$\<**Nom_Ordinateur**\>|  
   
  Le tableau suivant répertorie les comptes recommandés à l'administrateur de domaine pour créer le contrôleur de domaine dans le domaine d'entreprise.  
   
@@ -96,4 +96,4 @@ Pour plus d’informations sur l’architecture système pour le déploiement de
  [Architecture distribuée](../core/large-distributed-architecture.md)   
  [Autorisations de sécurité minimales](../core/minimum-security-user-rights.md)   
  [Groupes Windows et les comptes d’utilisateur dans BizTalk Server](../core/windows-groups-and-user-accounts-in-biztalk-server.md)   
- [Exemples d’architecture BizTalk Server](../core/sample-biztalk-server-architectures.md)
+ [Exemples d’architectures BizTalk Server](../core/sample-biztalk-server-architectures.md)

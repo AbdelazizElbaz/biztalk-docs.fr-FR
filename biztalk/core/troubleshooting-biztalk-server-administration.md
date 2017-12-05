@@ -12,11 +12,11 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d89f81bbaf15dfb0c87de91659888d70a2345a6c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 573e7a2509741748b0f95837f310e2e651b255c9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshooting-biztalk-server-administration"></a>Résolution des problèmes d’Administration de BizTalk Server
 Cette section centralise les informations sur les problèmes connus rencontrés lors de l'utilisation de la console Administration de BizTalk Server.  
@@ -71,13 +71,13 @@ Cette section centralise les informations sur les problèmes connus rencontrés 
 >  Ce problème se produit dans un environnement incluant plusieurs bases de données MessageBox.  
   
 ##### <a name="cause"></a>Cause  
- Ce problème peut se produire dans un environnement messagebox si le travail de l’agent SQL ' Operations_OperateOnInstances_OnMaster_\<*dbName*>' n'est pas exécuté sur les bases de données messagebox secondaire. Ce travail doit être exécuté pour propager les informations des bases de données MessageBox secondaires à la base de données MessageBox principale. L'exécution de ce travail échoue si celui-ci n'est pas activé ou si un échec de connexion se produit.  
+ Ce problème peut se produire dans un environnement messagebox si le travail de l’agent SQL ' Operations_OperateOnInstances_OnMaster_\<*dbName*\>' n'est pas exécuté sur les bases de données messagebox secondaire. Ce travail doit être exécuté pour propager les informations des bases de données MessageBox secondaires à la base de données MessageBox principale. L'exécution de ce travail échoue si celui-ci n'est pas activé ou si un échec de connexion se produit.  
   
 ##### <a name="solution"></a>Solution  
- Si vous utilisez la console Administration de BizTalk pour effectuer des opérations sur plusieurs instances de service simultanément et que votre environnement BizTalk Server est configuré avec plusieurs bases de données messagebox, vérifiez que le travail de l’Agent SQL Server nommé « Operations_ OperateOnInstances_OnMaster_\<*dbName*>' est activée sur toutes les bases de données messagebox (non-master) secondaire. En outre, le service SQL Server Agent sur l'ordinateur SQL Server qui héberge les bases de données MessageBox secondaires doit être exécuté comme compte inclus dans le rôle BTS_SQLAGENT_USER de la base de données MessageBox secondaire.  
+ Si vous utilisez la console Administration de BizTalk pour effectuer des opérations sur plusieurs instances de service simultanément et que votre environnement BizTalk Server est configuré avec plusieurs bases de données messagebox, vérifiez que le travail de l’Agent SQL Server nommé « Operations_ OperateOnInstances_OnMaster_\<*dbName*\>' est activée sur toutes les bases de données messagebox (non-master) secondaire. En outre, le service SQL Server Agent sur l'ordinateur SQL Server qui héberge les bases de données MessageBox secondaires doit être exécuté comme compte inclus dans le rôle BTS_SQLAGENT_USER de la base de données MessageBox secondaire.  
   
 > [!NOTE]
->  \<*dbname*> est un espace réservé pour le nom réel de la base de données messagebox de BizTalk.  
+>  \<*dbname* \> est un espace réservé pour le nom réel de la base de données messagebox de BizTalk.  
   
  Pour ajouter le compte de service SQL Server Agent au rôle BTS_SQLAGENT_USER de la base de données MessageBox secondaire, procédez comme suit :  
   

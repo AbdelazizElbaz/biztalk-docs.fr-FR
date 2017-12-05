@@ -16,11 +16,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5c8069ffb291b64d832a1d3ce483e7ab09be655f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d7096a9c77dda72bbf0aea3ec76423c759fa90df
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-disable-sso"></a>Comment désactiver l’authentification unique
 Vous pouvez désactiver le système d'authentification unique à l'aide du composant logiciel enfichable MMC ou de la ligne de commande.  
@@ -39,7 +39,7 @@ Vous pouvez désactiver le système d'authentification unique à l'aide du compo
   
 1.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-2.  Dans l'invite de ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur >*: \Program Files\Enterprise Single Sign-On.  
+2.  Dans l'invite de ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur\>*: \Program Files\Enterprise Single Sign-On.  
   
 3.  Type **ssomanage – disablesso**.  
   
@@ -48,4 +48,4 @@ Vous pouvez désactiver le système d'authentification unique à l'aide du compo
   
 ## <a name="see-also"></a>Voir aussi  
  [Comment activer l’authentification unique](../core/how-to-enable-sso.md)   
- [À l’aide de l’authentification unique](../core/using-sso.md)
+ [Utilisation de l’authentification unique](../core/using-sso.md)

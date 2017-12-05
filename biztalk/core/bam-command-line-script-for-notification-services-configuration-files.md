@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6950326994e99dcbc2ecff49a36f7441f3c219d4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b22607193ed7c345388a6435e2d58c16b8986370
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="bam-command-line-script-for-notification-services-configuration-files"></a>Script de ligne de commande BAM pour des fichiers de configuration des services de notification
 Les administrateurs utilisent le script ProcessBamNSFiles.vbs pour personnaliser le comportement de SQL Server Notification Services en matière d'alertes BAM. Vous pouvez utiliser ce script pour obtenir le fichier de définition d'application des services de notification ainsi que celui de configuration. Vous pouvez modifier ces fichiers, puis vous servir du script pour appliquer les modifications effectuées.  
@@ -26,7 +26,7 @@ Les administrateurs utilisent le script ProcessBamNSFiles.vbs pour personnaliser
 ## <a name="get-command"></a>Commande GET  
  **Utilisation**  
   
- **cscript ProcessBamNSFiles-Get \<chemin d’accès du fichier de configuration > \<cheminaccèsadf > \<serveur d’importation principale > \<base de données d’importation principale >**  
+ **cscript ProcessBamNSFiles-Get \<chemin d’accès du fichier de configuration\> \<cheminaccèsadf\>\<serveur d’importation principale\> \<base de données d’importation principale  \>**  
   
 |Paramètre| Description|  
 |---------------|-----------------|  
@@ -40,7 +40,7 @@ Les administrateurs utilisent le script ProcessBamNSFiles.vbs pour personnaliser
 ## <a name="update-command"></a>Commande UPDATE  
  **Utilisation**  
   
- **cscript ProcessBamNSFiles-mise à jour \<configfilepath > \<cheminfichieradf > \<cheminaccèsadf server > \<bdimportationprincipale >**  
+ **cscript ProcessBamNSFiles-mise à jour \<configfilepath\> \<cheminfichieradf\>\<cheminaccèsadf server\> \<bdimportationprincipale  \>**  
   
 |Paramètre| Description|  
 |---------------|-----------------|  
@@ -52,4 +52,4 @@ Les administrateurs utilisent le script ProcessBamNSFiles.vbs pour personnaliser
  Appelle les services de notification et met à jour les paramètres à l'aide des informations fournies par les fichiers spécifiés. Les fichiers de configuration et de définition d'application sont stockés dans la base de données d'importation principale BAM.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Outils de ligne de commande BAM](../core/bam-command-line-tools.md)
+ [Outils en ligne de commande BAM](../core/bam-command-line-tools.md)

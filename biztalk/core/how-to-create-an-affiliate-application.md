@@ -16,11 +16,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d36fa977c7da90c3f894dd1153799008459c1feb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d2f621faef7694a3dba7885bab5641e0baa58e8f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-create-an-affiliate-application"></a>Comment créer une Application associée
 Le composant logiciel enfichable MMC ou cette commande permet de créer une ou plusieurs applications, comme spécifié dans le fichier XML. Voici un exemple de fichier XML pour l'authentification unique initiée par Windows :  
@@ -72,9 +72,9 @@ Le composant logiciel enfichable MMC ou cette commande permet de créer une ou p
   
 1.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur >*: \Program Files\Enterprise Single Sign-On.  
+2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur\>*: \Program Files\Enterprise Single Sign-On.  
   
-3.  Type **ssomanage – createapps  *\<nom de fichier d’application >***, où  *\<nom de fichier d’application >* est le fichier XML.  
+3.  Type **ssomanage – createapps  *\<nom de fichier d’application\>***, où  *\<nom de fichier d’application\>*  est le fichier XML.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -84,4 +84,4 @@ Le composant logiciel enfichable MMC ou cette commande permet de créer une ou p
  [Comment activer une Application associée](../core/how-to-enable-an-affiliate-application.md)   
  [Comment supprimer une Application associée](../core/how-to-delete-an-affiliate-application.md)   
  [Gestion des mappages utilisateur](../core/managing-user-mappings.md)   
- [Gestion des Applications associées](../core/managing-affiliate-applications.md)
+ [Gestion des applications associées](../core/managing-affiliate-applications.md)

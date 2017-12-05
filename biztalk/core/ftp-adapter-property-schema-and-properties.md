@@ -30,11 +30,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 16c300229163805dcb750590414851eb6013c7a6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1cf72847fccd84a1435e436a4bf2b59d36e26179
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="ftp-adapter-property-schema-and-properties"></a>Propriétés et schéma de propriété de l'adaptateur FTP
 Le tableau suivant répertorie les propriétés du schéma de propriété de l'adaptateur FTP.  
@@ -52,7 +52,7 @@ Le tableau suivant répertorie les propriétés du schéma de propriété de l'a
 |**ReceivedFileName**|xs:string|Indique le nom complet du fichier à partir duquel l'adaptateur FTP lit le message.|  
 |**MaxConnections**|xs:unsignedInt|Indique le nombre maximal de connexions FTP simultanées pouvant être établies vers le serveur. La valeur 0 indique une absence de limite.|  
 |**CommandLogFileName**|xs:string|Indique l'emplacement auquel enregistrer une copie du fichier journal utilisé qui permet de diagnostiquer les conditions d'erreur lors de l'envoi ou de la réception de fichiers via FTP.|  
-|**AllocateStorage**|xs:boolean|L'option est supprimée dans [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] et l'utilisation de cette propriété est déconseillée.|  
+|**AllocateStorage**|xs:boolean|Cette option est déconseillée dans BizTalk Server et l’utilisation de cette propriété est déconseillée.|  
 |**PassiveMode**|xs:boolean|Indique le mode utilisé par l'adaptateur pour se connecter au serveur FTP.<br /><br /> En mode actif, le serveur FTP se connecte à un port ouvert par l'adaptateur FTP. En mode passif, l'adaptateur FTP se connecte à un port ouvert par le serveur FTP.<br /><br /> Si **PassiveMode** est false, l’adaptateur se connecte ensuite au serveur FTP en mode actif. La valeur par défaut pour cette propriété est False.|  
 |**SpoolingFolder**|xs:string|Indique l'emplacement d'un dossier temporaire sur le serveur FTP. Cette propriété permet la récupération après un échec de transfert.|  
 |**UseSsl**|xs:boolean|Indique si l'adaptateur FTP doit utiliser une connexion SSL pour communiquer avec le serveur FTPS.|  
@@ -63,6 +63,6 @@ Le tableau suivant répertorie les propriétés du schéma de propriété de l'a
 ## <a name="see-also"></a>Voir aussi  
  [Configuration de l’adaptateur FTP](../core/configuring-the-ftp-adapter.md)
  
- [Meilleures pratiques et recommandations pour l’adaptateur FTP](../core/best-practices-and-recommendations-for-the-ftp-adapter.md)
+ [Bonnes pratiques et recommandations pour l’adaptateur FTP](../core/best-practices-and-recommendations-for-the-ftp-adapter.md)
  
  [Adaptateur FTP](../core/ftp-adapter.md)

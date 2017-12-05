@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b73129d884fea81bdb64609de5e95570275a344
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f419e7a0019287383080c319961b8a3831d27bb4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="alert-management-commands"></a>Commandes de gestion des alertes
 Les commandes de gestion des alertes de l'utilitaire de gestion de l'analyse BAM vous permettent d'utiliser des alertes déployées.  
@@ -38,15 +38,15 @@ Les commandes de gestion des alertes de l'utilitaire de gestion de l'analyse BAM
 ## <a name="get-alerts-command"></a>Commande get-alerts  
  **Utilisation**  
   
- **BM.exe get-alerts [-View :\<nom de la vue >] [-Server :\<serveur >] [-base de données :\<base de données >]**  
+ **BM.exe get-alerts [-View :\<nom de la vue\> ] [-Server :\<server\> ] [-base de données :\<base de données\> ]**  
   
  **Paramètres**  
   
 |Paramètre| Description|  
 |---------------|-----------------|  
-|Affichage :\<nom de la vue >|Nom de la vue à partir de laquelle obtenir la liste des alertes.|  
-|Serveur :\<server >|Facultatif : Le nom du serveur sur lequel réside la vue. Le serveur doit se trouver dans le même domaine que l'ordinateur à partir duquel bm.exe est exécuté. Si le nom du serveur n'est pas spécifié, bm.exe utilise le nom par défaut de l'hôte local.|  
-|Base de données :\<base de données >|Facultatif : Le nom de la base de données sur lequel réside la vue. Si le nom n'est pas spécifié, bm.exe utilise le nom par défaut BamPrimaryImport.|  
+|Affichage :\<nom de la vue\>|Nom de la vue à partir de laquelle obtenir la liste des alertes.|  
+|Serveur :\<server\>|Facultatif : Le nom du serveur sur lequel réside la vue. Le serveur doit se trouver dans le même domaine que l'ordinateur à partir duquel bm.exe est exécuté. Si le nom du serveur n'est pas spécifié, bm.exe utilise le nom par défaut de l'hôte local.|  
+|Base de données :\<base de données\>|Facultatif : Le nom de la base de données sur lequel réside la vue. Si le nom n'est pas spécifié, bm.exe utilise le nom par défaut BamPrimaryImport.|  
   
  Répertorie les alertes définies sur l'ordinateur sur lequel la commande est exécutée.  
   
@@ -60,15 +60,15 @@ bm.exe get-alerts -Server:MyServer -Database:MyPrimaryImport
 ## <a name="remove-alerts-command"></a>Commande remove-alerts  
  **Utilisation**  
   
- **BM.exe remove-alerts-View :\<nom de la vue > [-Server :\<serveur >] [-base de données :\<base de données >]**  
+ **BM.exe remove-alerts-View :\<nom de la vue\>[-Server :\<server\> ] [-base de données :\<base de données\> ]**  
   
  **Paramètres**  
   
 |Paramètre| Description|  
 |---------------|-----------------|  
-|Affichage :\<nom de la vue >|Nom de la vue à partir de laquelle supprimer les alertes.|  
-|Serveur :\<server >|Facultatif : Le nom du serveur sur lequel réside la vue. Le serveur doit se trouver dans le même domaine que l'ordinateur à partir duquel bm.exe est exécuté. Si le nom du serveur n'est pas spécifié, bm.exe utilise le nom par défaut de l'hôte local.|  
-|Base de données :\<base de données >|Facultatif : Le nom de la base de données sur lequel réside la vue. Si le nom n'est pas spécifié, bm.exe utilise le nom par défaut BamPrimaryImport.|  
+|Affichage :\<nom de la vue\>|Nom de la vue à partir de laquelle supprimer les alertes.|  
+|Serveur :\<server\>|Facultatif : Le nom du serveur sur lequel réside la vue. Le serveur doit se trouver dans le même domaine que l'ordinateur à partir duquel bm.exe est exécuté. Si le nom du serveur n'est pas spécifié, bm.exe utilise le nom par défaut de l'hôte local.|  
+|Base de données :\<base de données\>|Facultatif : Le nom de la base de données sur lequel réside la vue. Si le nom n'est pas spécifié, bm.exe utilise le nom par défaut BamPrimaryImport.|  
   
  Supprime toutes les alertes sur la vue spécifiée.  
   
@@ -82,15 +82,15 @@ bm.exe remove-alerts -View:Shipments -Server:Ship1
 ## <a name="enable-alerts-command"></a>Commande enable-alerts   
  **Utilisation**  
   
- **BM.exe enable-alerts-View :\<nom de la vue > [-Server :\<serveur >] [-base de données :\<base de données >]**  
+ **BM.exe enable-alerts-View :\<nom de la vue\>[-Server :\<server\> ] [-base de données :\<base de données\> ]**  
   
  **Paramètres**  
   
 |Paramètre| Description|  
 |---------------|-----------------|  
-|Affichage :\<nom de la vue >|Nom de la vue sur laquelle activer les alertes.|  
-|Serveur :\<server >|Facultatif : Le nom du serveur sur lequel réside la vue. Le serveur doit se trouver dans le même domaine que l'ordinateur à partir duquel bm.exe est exécuté. Si le nom du serveur n'est pas spécifié, bm.exe utilise le nom par défaut de l'hôte local.|  
-|Base de données :\<base de données >|Facultatif : Le nom de la base de données sur lequel réside la vue. Si le nom n'est pas spécifié, bm.exe utilise le nom par défaut BamPrimaryImport.|  
+|Affichage :\<nom de la vue\>|Nom de la vue sur laquelle activer les alertes.|  
+|Serveur :\<server\>|Facultatif : Le nom du serveur sur lequel réside la vue. Le serveur doit se trouver dans le même domaine que l'ordinateur à partir duquel bm.exe est exécuté. Si le nom du serveur n'est pas spécifié, bm.exe utilise le nom par défaut de l'hôte local.|  
+|Base de données :\<base de données\>|Facultatif : Le nom de la base de données sur lequel réside la vue. Si le nom n'est pas spécifié, bm.exe utilise le nom par défaut BamPrimaryImport.|  
   
  Active les alertes sur la vue spécifiée.  
   
@@ -104,15 +104,15 @@ bm.exe enable-alerts -View:SalesManagerView -Server:s1 -Database:db2
 ## <a name="disable-alerts-command"></a>Commande disable-alerts  
  **Utilisation**  
   
- **BM.exe disable-alerts-View :\<nom de la vue > [-Server :\<serveur >] [-base de données :\<base de données >]**  
+ **BM.exe disable-alerts-View :\<nom de la vue\>[-Server :\<server\> ] [-base de données :\<base de données\> ]**  
   
  **Paramètres**  
   
 |Paramètre| Description|  
 |---------------|-----------------|  
-|Affichage :\<nom de la vue >|Nom de la vue sur laquelle désactiver les alertes.|  
-|Serveur :\<server >|Facultatif : Le nom du serveur sur lequel réside la vue. Le serveur doit se trouver dans le même domaine que l'ordinateur à partir duquel bm.exe est exécuté. Si le nom du serveur n'est pas spécifié, bm.exe utilise le nom par défaut de l'hôte local.|  
-|Base de données :\<base de données >|Facultatif : Le nom de la base de données sur lequel réside la vue. Si le nom n'est pas spécifié, bm.exe utilise le nom par défaut BamPrimaryImport.|  
+|Affichage :\<nom de la vue\>|Nom de la vue sur laquelle désactiver les alertes.|  
+|Serveur :\<server\>|Facultatif : Le nom du serveur sur lequel réside la vue. Le serveur doit se trouver dans le même domaine que l'ordinateur à partir duquel bm.exe est exécuté. Si le nom du serveur n'est pas spécifié, bm.exe utilise le nom par défaut de l'hôte local.|  
+|Base de données :\<base de données\>|Facultatif : Le nom de la base de données sur lequel réside la vue. Si le nom n'est pas spécifié, bm.exe utilise le nom par défaut BamPrimaryImport.|  
   
  Désactive les alertes sur la vue spécifiée.  
   
@@ -124,4 +124,4 @@ bm.exe disable-alerts -View:SalesManagerView -Server:s1 -Database:db2
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilitaire de gestion BAM](../core/bam-management-utility.md)
+ [Utilitaire de gestion de l’analyse BAM](../core/bam-management-utility.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dadf91973bdee181050f420ed611eb0c502fc988
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6a1f3eafdf423926dab4cf48efae8db3044aba9b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configure-a-client-binding-for-the-oracle-e-business-suite"></a>Configurer un client de liaison d’Oracle E-Business Suite
 Une fois que vous avez généré la classe de client WCF, vous pouvez créer un client WCF (instance) et appeler ses méthodes pour consommer le [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)].  
@@ -66,9 +66,9 @@ client.Open();
  Le code XML suivant montre le fichier de configuration créé pour le **Interface client** simultanées du programme par le [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]. Ce fichier contient la configuration du point de terminaison client référencée dans l’exemple précédent.  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <configuration xmlns="http://schemas.microsoft.com/.NetConfiguration/v2.0">  
-    \<system.serviceModel>  
+    <system.serviceModel>  
         <bindings>  
             <oracleEBSBinding>  
                 <binding openTimeout="00:05:00" name="OracleEBSBinding" closeTimeout="00:01:00"  
@@ -94,7 +94,7 @@ client.Open();
                 bindingConfiguration="OracleEBSBinding" contract="ConcurrentPrograms_AR"  
                 name="OracleEBSBinding_ConcurrentPrograms_AR" />  
         </client>  
-    \</system.serviceModel>  
+    </system.serviceModel>  
 </configuration>  
 ```  
   

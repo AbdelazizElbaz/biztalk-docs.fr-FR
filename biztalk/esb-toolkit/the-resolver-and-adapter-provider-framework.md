@@ -12,14 +12,14 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 717e7919b3f822ba582ea3c1e50f251eea18a06b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6b97eec38f868a6d1aa00684d92166bb2759a51d
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="the-resolver-and-adapter-provider-framework"></a>Le programme de résolution et l’infrastructure d’adaptateurs fournisseur
-Le programme de résolution et l’infrastructure d’adaptateurs fournisseur prend en charge la résolution de point de terminaison, de transformation et d’itinéraire et le routage. L’infrastructure peut résoudre les points de terminaison et définir les propriétés de l’adaptateur de sortie dynamiquement. Après un programme de résolution composant résout un point de terminaison (par exemple, à l’aide de Universal Description, Discovery and Integration [UDDI] pour rechercher un point de terminaison de service Web sortants), inscrit un adaptateur fournisseur composant définit des propriétés spécifiques de [!INCLUDE[prague](../includes/prague-md.md)] cartes. Par exemple, le fournisseur de l’adaptateur WCF-BasicHttp est chargé de définir les propriétés de contexte pour le point de terminaison URI qui utilisera l’adaptateur BizTalk spécifique ; le message spécifiques à BizTalk le fournisseur de l’adaptateur FTP est chargé de définir les propriétés spécifiques à l’adaptateur FTP.  
+Le programme de résolution et l’infrastructure d’adaptateurs fournisseur prend en charge la résolution de point de terminaison, de transformation et d’itinéraire et le routage. L’infrastructure peut résoudre les points de terminaison et définir les propriétés de l’adaptateur de sortie dynamiquement. Après un programme de résolution composant résout un point de terminaison (par exemple, à l’aide de Universal Description, Discovery and Integration [UDDI] pour rechercher un point de terminaison de service Web sortants), un composant du fournisseur d’adaptateur définit des propriétés spécifiques du serveur BizTalk inscrit cartes. Par exemple, le fournisseur de l’adaptateur WCF-BasicHttp est chargé de définir les propriétés de contexte pour le point de terminaison URI qui utilisera l’adaptateur BizTalk spécifique ; le message spécifiques à BizTalk le fournisseur de l’adaptateur FTP est chargé de définir les propriétés spécifiques à l’adaptateur FTP.  
   
  Un des objectifs de l’infrastructure de fournisseur de carte et de programme de résolution sont prise en charge de résolution et de routage au niveau messagerie, sans exiger l’utilisation des orchestrations BizTalk, ou au niveau de l’orchestration. Dans les deux cas, le framework enfichable fournit le développement, le déploiement et l’inscription de nouveaux programmes de résolution et les fournisseurs de carte. Tous les fournisseurs de carte et les programmes de résolution implémentent des interfaces bien définies et sont chargées à la demande à l’aide de l’inscription dans les fichiers de configuration.  
   

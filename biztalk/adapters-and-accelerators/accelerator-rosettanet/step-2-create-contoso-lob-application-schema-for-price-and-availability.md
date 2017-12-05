@@ -13,14 +13,14 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 71e3141e436bc50a629f495d8372b05d15e90b90
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 441bb90c8fa0f2edb271af384e2540a741150137
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="step-2-creating-the-contoso-lob-application-schemas-for-the-price-and-availability-project-using-biztalk-editor"></a>Étape 2 : Création de schémas Application LOB Contoso pour le prix et le projet de disponibilité à l’aide de l’Éditeur BizTalk
-Dans cette étape, vous générez le schéma à utiliser pour interroger le système ERP de Contoso pour le prix et la disponibilité d’un produit particulier. Vous générez ce schéma en utilisant la [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® l’adaptateur SQL pour [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)].  
+Dans cette étape, vous générez le schéma à utiliser pour interroger le système ERP de Contoso pour le prix et la disponibilité d’un produit particulier. Vous générez ce schéma en utilisant le [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® l’adaptateur SQL pour BizTalk Server.  
   
 ### <a name="to-update-the-sql-stored-procedure-for-schema-generation"></a>Pour mettre à jour l’instruction SQL de procédure stockée pour la génération de schéma  
   
@@ -70,7 +70,7 @@ Dans cette étape, vous générez le schéma à utiliser pour interroger le syst
   
 10. Sur le **informations de type d’instruction** page, sélectionnez **la procédure stockée**, puis cliquez sur **suivant**.  
   
-11. Sur le **instruction informations** page, pour  **\<sélectionner une procédure stockée >**, sélectionnez **SP_GetInventoryForProductID** dans la liste déroulante. Cliquez sur **générer**, puis cliquez sur **suivant**.  
+11. Sur le **instruction informations** page, pour  **\<sélectionner une procédure stockée\>**, sélectionnez **SP_GetInventoryForProductID** à partir de la liste déroulante. Cliquez sur **générer**, puis cliquez sur **suivant**.  
   
 12. Sur le **fin de l’Assistant génération de schéma de Transport SQL** , cliquez sur **Terminer** pour importer le schéma dans le projet ContosoPriceAndAvailability BizTalk.  
   
@@ -83,4 +83,4 @@ Dans cette étape, vous générez le schéma à utiliser pour interroger le syst
 16. Dans Microsoft SQL Server Management Studio, supprimez le `xmldata` prédicat et la virgule à partir de la `SP_GetInventoryForProductID` procédure stockée que vous avez ajouté à l’étape précédente, puis cliquez sur **Execute**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Étape 3 : Créer les mappages d’applications métier Contoso pour le prix et le projet de disponibilité à l’aide du Mappeur BizTalk](../../adapters-and-accelerators/accelerator-rosettanet/step-3-create-contoso-lob-application-map-for-price-and-availability-in-mapper.md)
+ [Étape 3 : Création de mappages d’application LOB Contoso pour le projet de prix et de disponibilité à l’aide du Mappeur BizTalk](../../adapters-and-accelerators/accelerator-rosettanet/step-3-create-contoso-lob-application-map-for-price-and-availability-in-mapper.md)

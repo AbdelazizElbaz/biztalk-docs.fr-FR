@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 78aa75762e40bfcdd033a057610cb34f38825dd8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 05524abd4cd57b8d804ab5995072905392fd3645
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-add-swiftnet-configuration-to-the-paramfile-for-the-interact-store-and-forward-scenario"></a>Étape 2 : Ajouter SWIFTNet Configuration pour le Paramfile pour le magasin d’interagir et le scénario avant
 Les partenaires message créés dans les trous doivent être spécifiés dans le paramfile SWIFTNet pour activer les récepteurs initialiser avec ces valeurs.  
@@ -44,7 +44,7 @@ Les partenaires message créés dans les trous doivent être spécifiés dans le
   
      subsystem_start :  
   
-     **Création d’un « snlreceiver - SagMessagePartner \<MessagePartnerName de serveur pour interagir MSNG > - AdapterMode interagir »**  
+     **Création d’un « snlreceiver - SagMessagePartner \<MessagePartnerName de serveur pour interagir MSNG\> - AdapterMode interagir »**  
   
      * FIN  
   
@@ -92,4 +92,4 @@ Les partenaires message créés dans les trous doivent être spécifiés dans le
  [Interagir Store et le scénario de transfert (Push)](../../adapters-and-accelerators/fileact-interact/interact-store-and-forward-push-scenario.md)   
  [Étape 1 : Configurer l’adaptateur SWIFT pour le magasin d’interagir et le scénario avant](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-interact-store-and-forward-scenario.md)   
  [Étape 3 : Créer des Ports d’envoi et Ports de réception pour le magasin d’interagir et d’un scénario avant](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-interact-store-and-forward-scenario.md)   
- [Étape 4 : Tester le magasin d’interagir et le scénario de bout en bout avant](../../adapters-and-accelerators/fileact-interact/step-4-test-the-interact-store-and-forward-end-to-end-scenario.md)
+ [Étape 4 : Tester le scénario de stockage et de redirection InterAct de bout en bout](../../adapters-and-accelerators/fileact-interact/step-4-test-the-interact-store-and-forward-end-to-end-scenario.md)

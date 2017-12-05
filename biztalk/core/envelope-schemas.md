@@ -12,18 +12,18 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 03c44f1a5d9797ec09cc164789148287c98b4399
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9008e77e388a93b1750c9b9ba34679ed519db459
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="envelope-schemas"></a>Schémas d’enveloppe
 
 ## <a name="overview"></a>Vue d'ensemble
 Vous pouvez créer un schéma d'enveloppe de la même façon que vous pouvez créer un schéma XML pour un document commercial. Vous pouvez créer un schéma à partir d'un message d'instance d'enveloppe XML bien formé ou à partir de représentations de définition de type de document (DTD) ou XDR (XML-Data Reduced) du schéma d'enveloppe. Vous pouvez également créer un schéma en association ou non avec d'autres schémas. Les schémas d'enveloppe étant généralement beaucoup plus petits et moins compliqués que la plupart des schémas de document commercial, la création de schémas d'enveloppe est une alternative viable dans la majorité des cas.  
   
- Pour définir un schéma en tant qu’un schéma d’enveloppe, vous devez définir le **enveloppe** propriété de la **schéma** nœud à la valeur **Oui**. Lorsque vous définissez un schéma d’enveloppe, vous devez faire de l’enveloppe **XPath de corps** au nœud parent qui contient uniquement le \<tout > élément enfant. Pour que l'assembleur XML utilise l'enveloppe, le nœud parent ne doit pas contenir d'autres éléments.  
+ Pour définir un schéma en tant qu’un schéma d’enveloppe, vous devez définir le **enveloppe** propriété de la **schéma** nœud à la valeur **Oui**. Lorsque vous définissez un schéma d’enveloppe, vous devez faire de l’enveloppe **XPath de corps** au nœud parent qui contient uniquement le \<tout\> élément enfant. Pour que l'assembleur XML utilise l'enveloppe, le nœud parent ne doit pas contenir d'autres éléments.  
   
  Lorsque vous définissez **enveloppe** propriété **Oui**, cela signifie que le contenu réel du message d’instance XML (appelé corps du message) est présent à l’intérieur de la racine **enregistrement**  nœud de ce schéma, tel que spécifié par le **XPath de corps** propriété de ce nœud. Par conséquent, vous devez également définir des propriétés supplémentaires sur la base de diverses conditions :  
   

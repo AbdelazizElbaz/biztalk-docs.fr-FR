@@ -15,11 +15,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cfbe186aee99616fa35e8f1e98f67c6ac75593c9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d1a7ee4f8ffe73a71e8c0b2e3d45c7a966669fd8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-generate-the-master-secret"></a>Comment générer le Secret principal
 Vous devez disposer de droits d'administrateur sur le serveur de secret principal pour effectuer cette tâche. Par ailleurs, vous devez effectuer cette tâche depuis le serveur de secret principal.  
@@ -44,9 +44,9 @@ Vous devez disposer de droits d'administrateur sur le serveur de secret principa
   
 1.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur >*: \Program Files\Enterprise Single Sign-On.  
+2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur\>*: \Program Files\Enterprise Single Sign-On.  
   
-3.  Type  **ssoconfig – generateSecret \<* fichier de sauvegarde*>**, où \<* le fichier de sauvegarde*> est le nom du fichier qui contient le secret principal.  
+3.  Type  **ssoconfig – generateSecret \<* fichier de sauvegarde*\>**, où \<* le fichier de sauvegarde* \> est le nom du fichier qui contient le secret principal.  
   
      Vous êtes ensuite invité à entrer un mot de passe pour protéger le fichier que vous venez de créer.  
   
@@ -56,4 +56,4 @@ Vous devez disposer de droits d'administrateur sur le serveur de secret principa
 ## <a name="see-also"></a>Voir aussi  
  [Comment sauvegarder le Secret principal](../core/how-to-back-up-the-master-secret.md)   
  [Serveur de secret principal](../core/master-secret-server.md)   
- [Gestion du Secret](../core/managing-the-master-secret.md)
+ [Gestion du secret principal](../core/managing-the-master-secret.md)

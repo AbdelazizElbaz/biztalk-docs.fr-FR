@@ -17,11 +17,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c33e49e82f9ebbf8856dd447989d7557558c0e4d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5c1900b0f775d918f7408ed581b35e6e143cd08d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configuration-parameters-for-send-and-receive-adapters"></a>Les paramètres de configuration pour l’envoi et les adaptateurs de réception
 Cette section fournit des paramètres de configuration pour envoyer et recevoir des cartes de protocole de couche inférieure minimale (MLLP). Ces paramètres se répartissent en deux types : bloquer les caractères et les paramètres de connexion réseau.  
@@ -31,13 +31,13 @@ Cette section fournit des paramètres de configuration pour envoyer et recevoir 
  Vous pouvez définir les paramètres de connexion réseau dans les propriétés de Transport MLLP pour soit un port d’envoi ou emplacement à l’aide du type de transport MLLP de réception. Pour ce faire, ouvrez la Console Administration de BizTalk Server, accédez au dossier des Ports d’envoi ou emplacements de réception, le cas échéant, cliquez sur le port d’envoi ou emplacement de réception, cliquez sur **propriétés**, puis cliquez sur  **Configurer**.  
   
 ## <a name="block-characters"></a>Caractères de bloc  
- Ces paramètres sont des caractères spéciaux qui doivent placer HL7 messages reçus ou envoyés par les cartes MLLP. Ces caractères forment un bloc au format suivant : \<SB >*DDD*\<EB >\<CR >, où *DDD* les données du message, l’acronyme \<SB > est le caractère de début de bloc, \<EB > est le caractère de fin de bloc, et \<CR > est le transport retour.  
+ Ces paramètres sont des caractères spéciaux qui doivent placer HL7 messages reçus ou envoyés par les cartes MLLP. Ces caractères forment un bloc au format suivant : \<SB\>*DDD*\<EB\>\<CR\>, où *DDD* signifie pour les données du message, \<SB\> est le caractère de début de bloc, \<EB\> est le caractère de fin de bloc, et \<CR\> retour chariot est.  
   
 |Paramètre|Utiliser|  
 |---------------|---------|  
-|**\<CR > retour chariot**|Valeur d’octet (au format hexadécimal) que vous utilisez pour le retour chariot (le deuxième wrapper octets après l’octet de fin). Ce paramètre est facultatif.|  
-|**\<EB > caractère du bloc de fin**|Valeur d’octet que vous utilisez pour l’octet de fin (wrapper du code de fin de message). ASCII \<FS >, par exemple, \<1C >.|  
-|**\<SB > caractère de début de bloc**|Valeur d’octet que vous utilisez pour l’octet de début (wrapper d’en-tête de message). ASCII \<VT >, par exemple, \<0 b >.|  
+|**\<CR\> retour chariot**|Valeur d’octet (au format hexadécimal) que vous utilisez pour le retour chariot (le deuxième wrapper octets après l’octet de fin). Ce paramètre est facultatif.|  
+|**\<EB\> caractère du bloc de fin**|Valeur d’octet que vous utilisez pour l’octet de fin (wrapper du code de fin de message). ASCII \<FS\>, par exemple, \<1C\>.|  
+|**\<Service bus\> caractère de début de bloc**|Valeur d’octet que vous utilisez pour l’octet de début (wrapper d’en-tête de message). ASCII \<VT\>, par exemple, \<0 b\>.|  
   
 ## <a name="deliverymode"></a>DeliveryMode  
  Vous utilisez le paramètre de mode de livraison pour contrôler si les fichiers de l’instance sont remis en séquence, ou hors séquence (dans l’ordre, en désordre). Chaque emplacement de réception a son propre remise pour l’instance de séquence de fichiers.  
@@ -65,4 +65,4 @@ Cette section fournit des paramètres de configuration pour envoyer et recevoir 
  [Le traitement des Messages encodés en MLLP](../../adapters-and-accelerators/accelerator-hl7/processing-mllp-encoded-messages.md)   
  [Traitement de l’adaptateur de réception de MLLP](../../adapters-and-accelerators/accelerator-hl7/mllp-receive-adapter-processing.md)   
  [Traitement d’adaptateur MLLP envoi](../../adapters-and-accelerators/accelerator-hl7/mllp-send-adapter-processing.md)   
- [Configuration d’un Port d’envoi pour recevoir des accusés de réception](../../adapters-and-accelerators/accelerator-hl7/setting-up-a-send-port-for-receiving-acks.md)
+ [Configuration d’un port d’envoi pour recevoir les accusés de réception](../../adapters-and-accelerators/accelerator-hl7/setting-up-a-send-port-for-receiving-acks.md)

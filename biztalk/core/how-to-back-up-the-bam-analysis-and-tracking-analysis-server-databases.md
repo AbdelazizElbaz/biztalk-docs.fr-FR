@@ -29,18 +29,18 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3e210fbe805e5a942605920e481faa2f1ca7cf2a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: effa2f5787f04493713ea6972562fe768081f4bc
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-back-up-the-bam-analysis-and-tracking-analysis-server-databases"></a>Sauvegarde des bases de données Analyse BAM et Analyse des suivis
 La base de données d'analyse BAM (Business Activity Monitoring) et la base de données des suivis du serveur d'analyse stockent le contenu dans des cubes SQL Server Analysis Services. Le travail de sauvegarde de BizTalk Server ne sauvegarde pas ces bases de données. C'est pourquoi, vous devez utiliser le gestionnaire d'analyse SQL Server.  
   
  Une fois ces bases de données sauvegardées, vous pouvez purger les cubes OLAP. Lors de la purge les cubes OLAP, vous devez également effectuer les opérations suivantes :  
   
-1.  Dans la base de données BAMStarSchema, tronquez la ou les tables de faits du cube OLAP à purger. La convention d’affectation de noms de table est « bam_*\<CubeName >*_Facts ».  
+1.  Dans la base de données BAMStarSchema, tronquez la ou les tables de faits du cube OLAP à purger. La convention d’affectation de noms de table est « bam_*\<CubeName\>*_Facts ».  
   
 2.  Une fois les cubes OLAP purgés, vous devez traiter entièrement les cubes actifs, terminés et virtuels.  
   

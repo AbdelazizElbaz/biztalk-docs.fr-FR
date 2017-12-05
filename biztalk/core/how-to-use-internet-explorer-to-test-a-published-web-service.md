@@ -1,5 +1,6 @@
 ---
-title: "Comment utiliser Internet Explorer pour tester un Service Web publié | Documents Microsoft"
+title: Tester le service web de BizTalk | Documents Microsoft
+description: "Configurer les emplacements de réception et web.config pour tester le service web BizTalk dans un navigateur web"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,31 +8,20 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- modifying, receive locations
-- Web services, Internet Explorer
-- testing, Web services
-- receive locations, modifying
-- Web services, modifying
-- modifying, Web.config file
-- Web.config file
-- Web services, Web.config file
-- HTTP-GET
-- Web services, testing
-- Web services, HTTP-GET
-- modifying, Web services
 ms.assetid: 4dc2171d-4abe-43db-b4bc-e484048c6430
 caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 687078a14d8cb2163c9795c68f65171e7b82467c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 48a35373735102bd75d1c388da29b06d4392ba18
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
-# <a name="how-to-use-internet-explorer-to-test-a-published-web-service"></a>Comment utiliser Internet Explorer pour tester un Service Web publié
+# <a name="test-a-biztalk-web-service"></a>Tester un Service Web BizTalk
+
+## <a name="overview"></a>Vue d'ensemble
 Vous pouvez tester votre service Web publié sans écrire d'application cliente Web. Vous pouvez utiliser un navigateur Web, tel qu'Internet Explorer, pour tester votre service Web publié. Bien que vous puissiez accéder à tout service Web publié à l'aide d'un navigateur Web, vous pouvez uniquement tester les services Web avec des méthodes Web contenant des paramètres de type simple. Pour tester votre méthode Web dans un navigateur Web, vos parties de message pour les messages de demande et de réponse qui sont utilisés dans le port de réception peuvent uniquement être un type simple, tel que **System.String** ou **System.Int32**. Si une partie de message utilise un schéma comme type de message, vous ne pouvez pas tester la méthode Web à l'aide d'un navigateur.  
   
  Si vous voulez tester vos services Web publiés à l'aide de HTTP-GET ou HTTP-POST, vous devez configurer votre emplacement de réception BizTalk pour l'adaptateur SOAP et modifier le fichier Web.config pour votre service Web publié.  
@@ -56,14 +46,14 @@ Vous pouvez tester votre service Web publié sans écrire d'application cliente 
   
  Par défaut, l'Assistant configure les services Web pour utiliser le protocole HTTP-SOAP. HTTP-GET et HTTP-POST sont explicitement désactivés. Pour tester un service Web à l'aide d'un navigateur Web, vous devez activer HTTP-GET.  
   
-### <a name="to-modify-the-webconfig-file-for-the-published-web-service"></a>Pour modifier le fichier Web.config pour le service Web publié  
+## <a name="update-the-webconfig"></a>Mettre à jour le fichier Web.config
   
 1.  Ouvrez le fichier Web.config pour le service Web publié.  
   
     > [!NOTE]
     >  Vous pouvez trouver le fichier Web.config dans le répertoire que vous avez configuré pour la racine virtuelle IIS contenant le service Web.  
   
-2.  Rechercher les \<protocoles > section :  
+2.  Rechercher les \<protocoles\> section :  
   
     ```  
     <webServices>  
@@ -76,11 +66,11 @@ Vous pouvez tester votre service Web publié sans écrire d'application cliente 
     </webServices>  
     ```  
   
-3.  Pour tester HTTP-GET, HTTP-POST ou HTTP-POST depuis l’ordinateur local, supprimez la ligne correspondante à partir de la \<protocoles > section.  
+3.  Pour tester HTTP-GET, HTTP-POST ou HTTP-POST depuis l’ordinateur local, supprimez la ligne correspondante à partir de la \<protocoles\> section.  
   
- Pour plus d’informations sur les options de configuration, consultez « Configuration Options pour les Services Web XML créés à l’aide de ASP.NET » dans la [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Collection d’aide à [http://go.microsoft.com/fwlink/?LinkId=62264](http://go.microsoft.com/fwlink/?LinkId=62264).  
+ Pour plus d’informations sur les options de configuration, consultez [Options de Configuration pour les Services Web XML créés à l’aide d’ASP.NET](https://msdn.microsoft.com/library/b2c0ew36.aspx). 
   
-#### <a name="to-access-a-web-service-with-internet-explorer"></a>Pour accéder à un service Web avec Internet Explorer  
+#### <a name="access-a-web-service-with-internet-explorer"></a>Accéder à un service Web avec Internet Explorer  
   
 -   Dans Internet Explorer, dans le **adresse** zone, tapez l’URL du service Web en utilisant le format  **http://*nom_serveur*/*apppath* / *webservicename*.asmx **.  
   
@@ -92,7 +82,7 @@ Vous pouvez tester votre service Web publié sans écrire d'application cliente 
   
  La description du service Web vous montre toutes les méthodes de service Web prises en charge par le service Web particulier. La page de description du service Web contient des liens pour chaque méthode Web disponible et la description du service Web.  
   
-#### <a name="to-test-a-web-service-with-internet-explorer-using-http-get"></a>Pour tester un service Web avec Internet Explorer à l'aide de HTTP-GET  
+#### <a name="test-a-web-service-with-internet-explorer-using-http-get"></a>Tester un service Web avec Internet Explorer à l’aide de HTTP-GET  
   
 1.  Après avoir accédé à la page de description du service Web, cliquez sur l'une des méthodes Web répertoriées dans cette page.  
   
@@ -105,7 +95,7 @@ Vous pouvez tester votre service Web publié sans écrire d'application cliente 
     <double>74.5</double>  
     ```  
   
-#### <a name="to-test-a-web-service-with-internet-explorer-using-http-get-alternate-method"></a>Pour tester un service Web avec Internet Explorer à l'aide de HTTP-GET (autre méthode)  
+#### <a name="test-a-web-service-with-internet-explorer-using-http-get-alternate-method"></a>Tester un service Web avec Internet Explorer à l’aide de HTTP-GET (autre méthode)  
   
 1.  Dans Internet Explorer, dans le **adresse** zone, tapez l’URL du service Web en utilisant le format ***http://servername/vdir/webservicename.asmx/Methodname?parameter=value***.  
   
@@ -123,7 +113,7 @@ Vous pouvez tester votre service Web publié sans écrire d'application cliente 
 2.  Appuyez sur Entrée. Le navigateur Web affiche une réponse XML à partir du serveur.  
   
     > [!NOTE]
-    >  Vous pouvez également utiliser HTTP-POST pour appeler le service Web. Pour plus d’informations et des exemples d’appel de services Web XML à partir d’un navigateur Web, consultez « Comment à : Access XML Web Services from a Browser » dans le [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Collection d’aide à [http://go.microsoft.com/fwlink/?LinkId=62265](http://go.microsoft.com/fwlink/?LinkId=62265).  
+    >  Vous pouvez également utiliser HTTP-POST pour appeler le service Web. Pour plus d’informations et des exemples d’appel de services Web XML à partir d’un navigateur Web, consultez [Access XML Web Services à partir d’un navigateur](https://msdn.microsoft.com/library/45fez2a8.aspx).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Test des Services Web publiés](../core/testing-published-web-services.md)
+ [Test des services web publiés](../core/testing-published-web-services.md)

@@ -13,11 +13,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bb1c9ba4d51b0c1b402c35c5f4763e4a934de085
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4b949ae0d6d5938493c78ed542a67d3c8bd09b48
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="receive-inbound-rfc-calls-from-sap-using-biztalk-server"></a>Recevoir des appels de RFC entrants à partir de SAP à l’aide de BizTalk Server
 Dans un scénario de serveur RFC, il existe trois entités :  
@@ -162,7 +162,7 @@ namespace RFCServerResponseCreator
         public static XmlDocument CreateRequest(int a, int b, string destination)  
         {  
             messageIn = new XmlDocument();  
-            messageIn.LoadXml(  "\<Z_RFC_ADD xmlns=\"http://Microsoft.LobServices.Sap/2007/03/Rfc/\">" +  
+            messageIn.LoadXml(  "<Z_RFC_ADD xmlns=\"http://Microsoft.LobServices.Sap/2007/03/Rfc/\">" +  
                                 "<DEST>" + destination + "</DEST>" +  
                                 "<X>" + a + "</X>" +  
                                 "<Y>" + b + "</Y>" +   
@@ -174,7 +174,7 @@ namespace RFCServerResponseCreator
         {  
             int c = a + b;  
             messageOut = new XmlDocument();  
-            messageOut.LoadXml( "\<Z_RFC_ADDResponse xmlns=\"http://Microsoft.LobServices.Sap/2007/03/Rfc/\">" +  
+            messageOut.LoadXml( "<Z_RFC_ADDResponse xmlns=\"http://Microsoft.LobServices.Sap/2007/03/Rfc/\">" +  
                                 "<RESULT>" + c + "</RESULT>" +   
                                 "</Z_RFC_ADDResponse>"  
                               );  

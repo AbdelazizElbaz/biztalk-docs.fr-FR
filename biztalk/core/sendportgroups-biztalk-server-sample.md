@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1fa513f0dfb9208abc3e9231f3b8eb23c0b561d9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c9bb4a3453539a4c1329e9b0a2de6b46785b53fd
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="sendportgroups-biztalk-server-sample"></a>SendPortGroups (exemple BizTalk Server)
 L’exemple SendPortGroups illustre comment énumérer et de gérer des groupes de ports d’envoi à l’aide de la **Microsoft.BizTalk.ExplorerOM** classes d’administration.  
@@ -51,7 +51,7 @@ L’exemple SendPortGroups illustre comment énumérer et de gérer des groupes 
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
  L'exemple se trouve dans l'emplacement SDK suivant :  
   
- \<*Exemples de chemin d’accès*> \Admin\ExplorerOM\SendPortGroups  
+ \<*Exemples de chemin d’accès*\>\Admin\ExplorerOM\SendPortGroups  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -88,7 +88,7 @@ L’exemple SendPortGroups illustre comment énumérer et de gérer des groupes 
   
 1.  Ouvrez une fenêtre de commande, puis accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \Admin\ExplorerOM\SendPortGroups\bin\Debug  
+     \<*Exemples de chemin d’accès*\>\Admin\ExplorerOM\SendPortGroups\bin\Debug  
   
 2.  Exécutez le fichier SendPortGroups.exe.  
   

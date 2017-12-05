@@ -12,11 +12,11 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 66d6d35ac668a324ed28f7c9519b32812e10cb3e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 632ca1c46a3df313e3aac4e144cad1647eb2360f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshooting-sql-server"></a>Dépannage de SQL Server
 La majeure partie des problèmes de Microsoft [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] qui affectent Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] se répartissent dans les catégories suivantes :  
@@ -100,13 +100,13 @@ La majeure partie des problèmes de Microsoft [!INCLUDE[btsSQLServerNoVersion](.
   
 ## <a name="permissions-related-problems"></a>Problèmes d'autorisations  
   
-#### <a name="biztalk-server-run-time-or-design-time-operations-fail-and-a-cannot-open-database-requested-in-login-database-error-is-written-to-the-application-log-of-the-biztalk-server-or-sql-server-computer"></a>BizTalk Server, les opérations d’exécution ou au moment du design échouent et un « Impossible d’ouvrir demandée dans la connexion de base de données \<base de données > » erreur est écrite dans le journal des applications de l’ordinateur BizTalk Server ou SQL Server  
+#### <a name="biztalk-server-run-time-or-design-time-operations-fail-and-a-cannot-open-database-requested-in-login-database-error-is-written-to-the-application-log-of-the-biztalk-server-or-sql-server-computer"></a>BizTalk Server, les opérations d’exécution ou au moment du design échouent et un « ne peut pas ouvrir de base de données demandée dans la connexion \<base de données\>« erreur est écrite dans le journal des applications de l’ordinateur BizTalk Server ou SQL Server  
   
 ##### <a name="problem"></a>Problème  
  Une opération d'exécution ou de conception a échoué et une erreur du type suivant est consignée dans le journal d'application de l'ordinateur [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ou [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] :  
   
- Impossible d’ouvrir de base de données demandée dans la connexion \< *base de données*>. La connexion échoue.   
-Échec de la connexion pour l’utilisateur \< *nom d’utilisateur*>.  
+ Impossible d’ouvrir de base de données demandée dans la connexion \< *base de données*\>. La connexion échoue.   
+Échec de la connexion pour l’utilisateur \< *nom d’utilisateur*\>.  
   
 ##### <a name="cause"></a>Cause  
  Cette erreur peut se produire si le compte spécifié ne fait pas partie du groupe Windows ou du rôle [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] approprié.  

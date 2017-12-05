@@ -13,11 +13,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e3d933b494e967184c8248d6f71ad9df113fb9b9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 02c5f239300140022b1d26f35664add744b630c2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="execute-stored-procedures-with-a-single-xml-parameter-in-sql-server-using-biztalk-server"></a>Exécuter des procédures stockées avec un seul paramètre XML dans SQL Server à l’aide de BizTalk Server
 L’exécution d’une procédure stockée qui accepte un seul paramètre est similaire à l’exécution d’une autre procédure stockée comme décrit dans [exécuter les procédures stockées de SQL Server à l’aide de BizTalk Server](execute-stored-procedures-in-sql-server-using-biztalk-server.md). Toutefois, pour l’approche décrite dans le lien précédent, vous devez générer des métadonnées pour la procédure stockée au moment du design et créer une orchestration pour appeler la procédure en cours d’exécution.  
@@ -104,7 +104,7 @@ L’exécution d’une procédure stockée qui accepte un seul paramètre est si
         ```  
         <ADD_LAST_EMP_XML_INFO xmlns="http://schemas.microsoft.com/Sql/2008/05/Procedures/dbo">  
         <xml_info>  
-        \<bts-msg-body xmlns="http://www.microsoft.com/schemas/bts2007" encoding="string"/>  
+        <bts-msg-body xmlns="http://www.microsoft.com/schemas/bts2007" encoding="string"/>  
         </xml_info>  
         </ADD_LAST_EMP_XML_INFO>  
         ```  
@@ -146,4 +146,4 @@ L’exécution d’une procédure stockée qui accepte un seul paramètre est si
  Démarrer tous les trois ports. Copie un fichier XML dans le dossier mappé au fichier emplacement de réception. Recherchez la réponse dans le dossier mappé au port d’envoi de fichier.  
   
 ## <a name="see-also"></a>Voir aussi  
-[Développer des applications BizTalk à l’aide de l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)
+[Développer des applications BizTalk avec l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)

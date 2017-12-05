@@ -12,14 +12,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 593937dca387d79a127117ee96005b3dc48fbdc2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e4d4d19caebb667e822b15b937d9045a26493a57
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="exception-management-framework"></a>Infrastructure de gestion des exceptions
-L’infrastructure de gestion d’Exception ESB fournit un mécanisme de génération des pannes orienté messages unifiée pour gérer toutes les exceptions qui peuvent se produire dans un [!INCLUDE[prague](../includes/prague-md.md)] environnement. L’infrastructure de gestion d’Exception ESB peut recevoir des messages d’exception publiées via le Service de publication (Exception), en plus des messages à partir du mécanisme de BizTalk Server Échec de routage des messages.  
+L’infrastructure de gestion d’Exception ESB fournit un mécanisme de génération des pannes orienté messages unifiée pour gérer toutes les exceptions qui peuvent se produire dans un environnement BizTalk Server. L’infrastructure de gestion d’Exception ESB peut recevoir des messages d’exception publiées via le Service de publication (Exception), en plus des messages à partir du mécanisme de BizTalk Server Échec de routage des messages.  
   
  Le framework fournit une API pour la création de messages d’erreur, de publication et de gestion des processus d’orchestration, la réplication de la fonctionnalité de routage du message ayant échoué BizTalk Server introduite avec BizTalk Server 2006. En outre, le framework fournit des fonctionnalités pour la normalisation de toutes les exceptions, l’enrichissement, application de suivi de l’analyse BAM (Business Activity) et la publication de la sortie finale à la base de données de gestion des exceptions pour l’affichage et la création de rapports dans l’architecture ESB Portail de gestion.  
   

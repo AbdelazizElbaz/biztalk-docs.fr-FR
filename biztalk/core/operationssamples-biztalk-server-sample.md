@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f3e190d06c084a6b1b3c9965856897e0df94daab
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2e42b17f19791eef9bd3f1b5d7d4554f61f08356
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="operationssamples-biztalk-server-sample"></a>OperationsSamples (exemple BizTalk Server)
 L'exemple OperationsSamples montre comment réaliser des activités opérationnelles à l'aide du modèle objet Opérations.  
@@ -76,7 +76,7 @@ foreach (BizTalkMessage msg in messages)
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
  L'exemple se trouve dans l'emplacement SDK suivant :  
   
- \<*Exemples de chemin d’accès*> \Admin\OperationsOM\OperationsSamples\  
+ \<*Exemples de chemin d’accès*\>\Admin\OperationsOM\OperationsSamples\  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -148,7 +148,7 @@ foreach (BizTalkMessage msg in messages)
   
      `<Samples Path>\Admin\OperationsOM\OperationSamples`  
   
-5.  Double-cliquez sur le **OperationsOM.sln** fichier projet pour le charger dans [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
+5.  Double-cliquez sur le **OperationsOM.sln** fichier de projet pour le charger dans Visual Studio.  
   
 6.  Appuyez sur la touche F5 pour exécuter l'exemple.  
   

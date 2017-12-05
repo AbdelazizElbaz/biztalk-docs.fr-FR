@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 31476c3a538427a8c582533fbb0d7ad0418e3a0f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ae1e7ad95aa8be661e283f5671d3443615c7033a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-disable-tracking"></a>Comment désactiver le suivi de
 Cette rubrique décrit comment désactiver le suivi à l’aide du [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] console d’Administration. Vous pouvez configurer diverses options de suivi pendant l’exécution des orchestrations, ports d’envoi, ports de réception et pipelines à l’aide de la [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] console d’Administration. Vous pouvez modifier ces options à tout moment, sans interrompre le processus d'entreprise.  
@@ -138,7 +138,7 @@ Cette rubrique décrit comment désactiver le suivi à l’aide du [!INCLUDE[bts
   
 3.  Procédez de l'une des manières suivantes :  
   
-    -   Pour désactiver le suivi pour l’une de la valeur par défaut des pipelines BizTalk, développez \<tous les artefacts >.  
+    -   Pour désactiver le suivi pour l’une de la valeur par défaut des pipelines BizTalk, développez \<tous les artefacts\>.  
   
     -   Pour désactiver le suivi d’un pipeline personnalisé qui a été déployé dans une application BizTalk, développez l’application contenant le pipeline.  
   
@@ -157,4 +157,4 @@ Cette rubrique décrit comment désactiver le suivi à l’aide du [!INCLUDE[bts
     |**Message après le traitement de pipeline**|Désactivez cette case à cocher pour désactiver l’enregistrement et de suivi des corps des messages envoyés par le pipeline, qui contient des métadonnées telles que les URL ou les propriétés promues. S'il s'agit d'un pipeline de réception, le corps du message correspond au message traité devant être transmis à la base de données MessageBox. Il peut s'agit d'un message XML, selon l'application. Lorsque vous utilisez un [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] mappage, s’il s’agit d’un pipeline d’envoi, le suivi a lieu avant le traitement du mappage sortant.<br /><br /> Cette case à cocher est disponible uniquement si **Message envoyer et recevoir des événements** est sélectionnée.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Maintien des performances](../technical-guides/maintaining-performance.md)
+ [Conservation des performances](../technical-guides/maintaining-performance.md)

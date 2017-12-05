@@ -16,11 +16,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b0e9be1934374d1aa8def379560f675493c590d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 339e80776dac32e25f96da5c62675f1a8d6075ee
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configuring-message-acknowledgments"></a>Configuration des accusés de réception de Message
 Vous utilisez la [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] Configuration Explorer **accusé de réception** onglet pour spécifier les propriétés de l’accusé de réception pour les accusés de réception entrants et générés.  
@@ -33,7 +33,7 @@ Vous utilisez la [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-curre
   
 ### <a name="to-open-btahl7-configuration-explorer"></a>Pour ouvrir l’Explorateur de Configuration de BTAHL7  
   
--   Cliquez sur **Démarrer**, pointez sur **programmes**, pointez sur **Microsoft BizTalk \<version > Accelerator pour HL7**, puis cliquez sur **BTAHL7 L’Explorateur de configuration**.  
+-   Cliquez sur **Démarrer**, pointez sur **programmes**, pointez sur **Microsoft BizTalk \<version\> Accelerator pour HL7**, puis cliquez sur  **BTAHL7 L’Explorateur de Configuration**.  
   
 ### <a name="to-configure-message-acknowledgments"></a>Pour configurer des accusés de réception de message  
   
@@ -60,4 +60,4 @@ Vous utilisez la [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-curre
 ## <a name="see-also"></a>Voir aussi  
  [Paramètres de Configuration de l’accusé de réception](../../adapters-and-accelerators/accelerator-hl7/ack-configuration-settings.md)   
  [Paramètres de l’accusé de réception](../../adapters-and-accelerators/accelerator-hl7/acknowledgment-settings.md)   
- [Création et le traitement des accusés de réception](../../adapters-and-accelerators/accelerator-hl7/creating-and-processing-acknowledgments.md)
+ [Création et traitement des accusés de réception](../../adapters-and-accelerators/accelerator-hl7/creating-and-processing-acknowledgments.md)

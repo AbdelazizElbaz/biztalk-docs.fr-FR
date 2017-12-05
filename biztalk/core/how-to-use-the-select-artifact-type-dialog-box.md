@@ -16,16 +16,16 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3027971059d99a921bd743ff28aca1617c5d628d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 88167cbeb5c8c6bb0a62030e64f4ed3d91a9d1aa
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-use-the-select-artifact-type-dialog-box"></a>Comment utiliser le Type de boîte de dialogue Sélectionnez artefact
 Un *élément* est utilisé pour configurer les éléments d’une orchestration dans le Concepteur d’Orchestration. Cet élément peut être un schéma, un mappage, un pipeline, un type de port ou un type de message à parties multiples. Lorsque vous développez une orchestration et les parties qui la constituent, telles que des formes Port, des formes Transformer et des messages, vous pouvez avoir besoin de faire référence à des éléments résidant en dehors de l'orchestration active, mais figurant dans le projet en cours ou dans un autre projet compilé dans un assembly BizTalk Server. Vous utilisez la **sélectionner le Type d’artefact** boîte de dialogue pour rechercher et spécifier ensuite les éléments lors de la configuration d’un élément dans une orchestration.  
   
- Le **sélectionner le Type d’artefact** boîte de dialogue est disponible à partir de plusieurs emplacements dans le Concepteur d’Orchestration. Vous pouvez sélectionner \<sélectionner dans l’assembly référencé > dans une liste déroulante qui affiche les options de configuration ; cliquez sur ce texte pour ouvrir le **sélectionner le Type d’artefact** boîte de dialogue.  
+ Le **sélectionner le Type d’artefact** boîte de dialogue est disponible à partir de plusieurs emplacements dans le Concepteur d’Orchestration. Vous pouvez sélectionner \<sélectionner dans l’assembly référencé\> dans une liste déroulante qui affiche les options de configuration ; cliquez sur ce texte pour ouvrir le **sélectionner le Type d’artefact** boîte de dialogue.  
   
  Avant de sélectionner un élément, vous devez choisir le composant à configurer.  
   

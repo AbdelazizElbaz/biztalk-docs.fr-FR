@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 23b835317d46dfeded65de310f8a813d4ac86749
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d4df85c965943f2f2c916fef6b558f98caf2175f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="upgrade-biztalk-accelerator-for-hl7"></a>Mise à niveau de BizTalk Accelerator pour HL7
 Vue d’ensemble de la [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)] mise à niveau. 
@@ -34,7 +34,7 @@ Vue d’ensemble de la [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonu
   
 -   Lorsque vous mettez à niveau, les clés de Registre et les bases de données sont automatiquement sauvegardés.  
   
--   Les fichiers dans le  *\<lecteur >*: \Program Files\Microsoft BizTalk \<version > Accelerator pour HL7 dossier sont mises à jour.  
+-   Les fichiers dans le  *\<lecteur\>*: \Program Files\Microsoft BizTalk \<version\> Accelerator pour HL7 dossier sont mises à jour.  
   
 > [!IMPORTANT]
 >  La mise à niveau ne crée pas un nouveau dossier pour les fichiers mis à niveau, et il modifie le nom du dossier existant.  
@@ -55,7 +55,7 @@ Vue d’ensemble de la [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonu
   
 2.  Sauvegardez le [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] bases de données et votre HL7 des schémas de message.  
   
-3.  Sauvegardez tous les fichiers sous le   ***\<lecteur >*: \Program Files\Microsoft BizTalk Accelerator pour HL7** dossier que vous avez modifiés. Par exemple, sauvegardez les fichiers dans le Kit de développement logiciel.  
+3.  Sauvegardez tous les fichiers sous le   ***\<lecteur\>*: \Program Files\Microsoft BizTalk Accelerator pour HL7** dossier que vous avez modifiés. Par exemple, sauvegardez les fichiers dans le Kit de développement logiciel.  
   
 4.  Installer la mise à jour appropriée pour votre version de [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]:  
   
@@ -70,7 +70,7 @@ Vue d’ensemble de la [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonu
   
 7.  Redéployer tous les autres assemblys.  
   
-8.  Regénérez les projets ou les assemblys qui contiennent une référence à un ou plusieurs assemblys [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]. À l’aide de **BTSTask.exe** dans \< *lecteur*> : \Program Files\Microsoft BizTalk Server \<version > manuellement redéployer ces projets.  
+8.  Regénérez les projets ou les assemblys qui contiennent une référence à un ou plusieurs assemblys [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]. À l’aide de **BTSTask.exe** dans \< *lecteur*\>: \Program Files\Microsoft BizTalk Server \<version\>manuellement redéployer ces projets.  
   
 9. Redémarrez le service [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] .  
   

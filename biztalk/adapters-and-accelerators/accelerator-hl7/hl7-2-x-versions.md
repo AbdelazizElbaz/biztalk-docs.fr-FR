@@ -15,11 +15,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d79829575acfb86a19e8bdd0ce91f5bd41a7749f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c163506e9a83afac29bea1615290a1840f3baf3e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="hl7-2x-versions"></a>Versions 2.X HL7
 Le tableau suivant répertorie les versions 2.X de la norme sept de niveau d’intégrité (HL7), l’approbation des dates à partir de l’organisation HL7 et répertorie les versions [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator pour HL7 ([!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]) prend en charge.  
@@ -36,7 +36,7 @@ Le tableau suivant répertorie les versions 2.X de la norme sept de niveau d’i
 > [!NOTE]
 >  Étant donné que les versions, 2.1, 2.2 et 2.3 sont obsolètes, il est recommandé d’utiliser la version 2.3.1 ou ultérieure de la norme 2.X.  
   
- Lorsque vous installez [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)], l’Assistant installation crée le  *\<lecteur >*: \ Fichiers programme\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version > Accelerator pour la structure de dossiers HL7\Templates\Schemas qui contient les modèles pour prendre en charge les événements HL7. Sous ce dossier, un V2. Dossier X comporte un sous-dossier pour chaque le HL7 versions 2.X : 2.1, 2.2, 2.3, 2.3.1, 2.4 et 2.5.  
+ Lorsque vous installez [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)], l’Assistant installation crée le  *\<lecteur\>*: \ Fichiers programme\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version\> Accelerator pour la structure de dossiers HL7\Templates\Schemas qui contient les modèles pour prendre en charge les événements HL7. Sous ce dossier, un V2. Dossier X comporte un sous-dossier pour chaque le HL7 versions 2.X : 2.1, 2.2, 2.3, 2.3.1, 2.4 et 2.5.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Les événements et les sous-dossiers 2.X HL7](../../adapters-and-accelerators/accelerator-hl7/hl7-2-x-subfolders-and-events.md)
+ [Sous-dossiers et événements HL7 2.X](../../adapters-and-accelerators/accelerator-hl7/hl7-2-x-subfolders-and-events.md)

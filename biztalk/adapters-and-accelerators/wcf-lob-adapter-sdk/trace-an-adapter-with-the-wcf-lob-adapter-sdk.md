@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 57471341bfe2179e977687de024c0e6f8ee6f90a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8ca4b68f23f791de3ecd68bc69b85c2908b6d7a0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="trace-an-adapter-with-the-wcf-lob-adapter-sdk"></a>Trace une carte avec WCF LOB Adapter SDK
 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]le suivi s’appuie sur Systems.Diagnostics. Vous utilisez la source de trace Microsoft.ServiceModel.Channels pour la [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] runtime.  Vous utilisez la source de trace Microsoft.ServiceModel.Channels.Tools.MetadataSearchBrowse pour [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] et [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]. Suivis WCF sont écrits dans la source nommée System.ServiceModel.  
@@ -55,7 +55,7 @@ public class EchoAdapterUtilities
  Vous pouvez activer le traçage fourni dans le [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] en ajoutant la section suivante dans le fichier app.config de l’application à l’aide de l’adaptateur.  
   
 ```  
-\<system.diagnostics>  
+<system.diagnostics>  
   <sources>  
     <source name="Microsoft.Adapters.Samples.Echo.EchoAdapter" switchValue="Verbose">  
       <listeners>  
@@ -74,7 +74,7 @@ public class EchoAdapterUtilities
     </add>  
   </sharedListeners>  
   <trace autoflush="true" />  
-\</system.diagnostics>  
+</system.diagnostics>  
 ```  
   
  Vous pouvez utiliser l’élément à ajouter pour spécifier le nom et le type de l’écouteur de trace que vous souhaitez utiliser. Dans notre exemple de configuration, nous avons nommé l’écouteur « xmlTrace » et ajouté l’écouteur de suivi standard .NET Framework (System.Diagnostics.XmlWriterTraceListener) comme type que nous souhaitons utiliser. Vous pouvez ajouter n’importe quel nombre d’écouteurs de suivi pour chaque source. Par exemple, dans les exemples suivants, il nous également d’ajouté un autre écouteur nommé « textTrace » qui utilise l’écouteur de suivi .NET Framework System.Diagnostics.TextWriterTraceListener. Si l’écouteur de suivi émet la trace dans un fichier, vous devez spécifier l’emplacement de fichier de sortie et le nom du fichier de configuration. Pour cela, en affectant le nom du fichier initializeData pour cet écouteur.  
@@ -83,7 +83,7 @@ public class EchoAdapterUtilities
  Vous pouvez activer le suivi pour ce plug-in en ajoutant la section suivante dans le fichier devenv.exe.config dans `\Program Files (x86)\Microsoft Visual Studio\Common7\IDE`.
   
 ```  
-\<system.diagnostics>  
+<system.diagnostics>  
    <sources>  
     <source name="Microsoft.ServiceModel.Channels.Tools.MetadataSearchBrowse" switchValue="Verbose, ActivityTracing">  
       <listeners>  
@@ -100,14 +100,14 @@ public class EchoAdapterUtilities
     </add>  
   </sharedListeners>  
   <trace autoflush="true" indentsize="4" />  
-\</system.diagnostics>  
+</system.diagnostics>  
 ```  
   
 ## <a name="enable-tracing-for-the-consume-adapter-service-add-in"></a>Activer le suivi pour le Consume Adapter Service Add-in  
  Vous pouvez activer le traçage pour ce module additionnel en ajoutant la section suivante dans le fichier BTSNTSVC.exe.config situé dans `\Program Files (x86)\Microsoft BizTalk Server`.  
   
 ```  
-\<system.diagnostics>  
+<system.diagnostics>  
    <sources>  
     <source name="Microsoft.ServiceModel.Channels.Tools.MetadataSearchBrowse" switchValue="Verbose, ActivityTracing">  
       <listeners>  
@@ -124,7 +124,7 @@ public class EchoAdapterUtilities
     </add>  
   </sharedListeners>  
   <trace autoflush="true" indentsize="4" />  
-\</system.diagnostics>  
+</system.diagnostics>  
 ```  
   
 ## <a name="see-also"></a>Voir aussi  

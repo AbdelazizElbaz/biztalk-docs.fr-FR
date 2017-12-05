@@ -17,11 +17,11 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 256731dbb6194aa1962d62ec9fdbe58a0fd60e03
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fd5f7bb392a6fbd4e1b4d64139fc38cc5a71aa38
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="mqssendpipelinecomponent-biztalk-server-sample"></a>MQSSendPipelineComponent (exemple BizTalk Server)
 Cet exemple montre comment écrire un composant de pipeline capable de lire un ensemble de valeurs de propriétés MQSeries à partir d'un fichier XML et de les appliquer à un message.  
@@ -31,9 +31,9 @@ Cet exemple montre comment écrire un composant de pipeline capable de lire un e
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
   
--   *\<Cheminaccèsexemples >*\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyComponent  
+-   *\<Cheminaccèsexemples\>*\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyComponent  
   
--   *\<Cheminaccèsexemples >*\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyPipeline  
+-   *\<Cheminaccèsexemples\>*\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\SetMQSeriesHeaderPropertyPipeline  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -109,7 +109,7 @@ Cet exemple montre comment écrire un composant de pipeline capable de lire un e
   
     1.  Ouvrez une invite de commandes [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].  
   
-    2.  Remplacez les répertoires par \<Cheminaccèsexemples > \AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent.  
+    2.  Remplacez les répertoires par \<Cheminaccèsexemples\>\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent.  
   
     3.  Tapez la commande suivante :  
   
@@ -125,7 +125,7 @@ Cet exemple montre comment écrire un composant de pipeline capable de lire un e
   
     3.  Cliquez sur la liste déroulante pour le **choisir un fichier de clé de nom fort** option, puis cliquez sur **Parcourir**.  
   
-    4.  Accédez à \<Cheminaccèsexemples > \AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\MQSSendPipelineComponent.snk, cliquez sur **ouvrir**.  
+    4.  Accédez à \<Cheminaccèsexemples\>\AdaptersUsage\MQSeriesAdapter\MQSSendPipelineComponent\MQSSendPipelineComponent.snk, cliquez sur **ouvrir**.  
   
 4.  Le composant de pipeline que vous avez créé précédemment est déjà ajouté à la **préassembler** stade de ce projet de pipeline. Si ce composant n'était pas déjà ajouté, vous devriez procéder comme suit :  
   
@@ -148,7 +148,7 @@ Cet exemple montre comment écrire un composant de pipeline capable de lire un e
   
     1.  Ouvrez la console Administration de BizTalk.  
   
-    2.  Cliquez pour développer **groupe BizTalk [\<nom_serveur > :\<base de données de gestion >]**, puis cliquez pour développer le **assemblys** dossier.  
+    2.  Cliquez pour développer **groupe BizTalk [\<nom_serveur\>:\<base de données de gestion\>]**, puis cliquez pour développer le **assemblys** dossier.  
   
          L’assembly de pipeline déployé doit être visible sous le **assemblys** dossier.  
   
@@ -186,7 +186,7 @@ Cet exemple montre comment écrire un composant de pipeline capable de lire un e
   
 1.  Cliquez sur **Démarrer**, pointez sur **programmes**, pointez sur **IBM WebSphere MQ**, puis cliquez sur **WebSphere MQ Explorer**.  
   
-2.  Double-cliquez sur **gestionnaires de file d’attente**, puis double-cliquez sur le Gestionnaire de file d’attente par défaut. Le Gestionnaire de file d’attente par défaut est généralement nommé **QM_**\<*Nom_Ordinateur*> où *Nom_Ordinateur* est le nom de votre ordinateur.  
+2.  Double-cliquez sur **gestionnaires de file d’attente**, puis double-cliquez sur le Gestionnaire de file d’attente par défaut. Le Gestionnaire de file d’attente par défaut est généralement nommé **QM_**\<*Nom_Ordinateur* \> où *Nom_Ordinateur* est le nom de votre ordinateur.  
   
 3.  Avec le bouton droit **les files d’attente**, pointez sur **nouveau**, puis cliquez sur **file d’attente locale**.  
   
@@ -261,4 +261,4 @@ Cet exemple montre comment écrire un composant de pipeline capable de lire un e
 3.  Les propriétés de contexte de message pour chaque message doivent être visibles dans le **Message Browser** boîte de dialogue.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Exemples d’adaptateur MQSeries](../core/mqseries-adapter-samples.md)
+ [Exemples d’adaptateurs MQSeries](../core/mqseries-adapter-samples.md)

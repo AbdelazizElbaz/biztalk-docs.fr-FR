@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1bb671d0d4425cd935efd7f13aba0e39fd400e17
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 991d3d37bab70e07eb21b21a040e3479fc2658df
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-configure-the-swift-adapter-for-the-fileact-real-time-scenario"></a>Étape 1 : Configurer l’adaptateur SWIFT pour le scénario en temps réel FileAct
 Avant de commencer cette étape, vous devez effectuer [préparation à l’utilisation du didacticiel](../../adapters-and-accelerators/fileact-interact/preparing-to-use-the-tutorial1.md).  
@@ -33,7 +33,7 @@ Avant de commencer cette étape, vous devez effectuer [préparation à l’utili
   
     |**Utilisez cette**|**Pour ce faire**|  
     |------------------|--------------------|  
-    |**Arguments**|Type de l’argument suivant : - SagMessagePartner \<Fileact Client Message partenaire créé dans les trous > **Remarque :** le client dans l’argument est le MessagePartner que vous avez configuré dans les trous.|  
+    |**Arguments**|Type de l’argument suivant : - SagMessagePartner \<Fileact Client Message partenaire créé dans les trous\> **Remarque :** le client dans l’argument est le MessagePartner que vous avez configuré dans les trous.|  
     |**Mode de chiffrement**|Dans la liste déroulante, sélectionnez **avancé**.|  
     |**FACryptoMode**|Dans la liste déroulante, sélectionnez **avancé**.|  
     |**LogMessages**|Dans la liste déroulante, sélectionnez **TRUE**. Ainsi, les événements de message capturées et de suivi dans le portail BAM.|  
@@ -54,4 +54,4 @@ Avant de commencer cette étape, vous devez effectuer [préparation à l’utili
  [Scénario en temps réel de FileAct](../../adapters-and-accelerators/fileact-interact/fileact-real-time-scenario.md)   
  [Étape 2 : Ajouter SWIFTNet Configuration pour le Paramfile pour le scénario en temps réel FileAct](../../adapters-and-accelerators/fileact-interact/step-2-add-swiftnet-configuration-to-paramfile-for-fileact-real-time-scenario.md)   
  [Étape 3 : Créer les Ports d’envoi et Ports de réception pour le scénario en temps réel FileAct](../../adapters-and-accelerators/fileact-interact/step-3-create-the-send-ports-and-receive-ports-for-fileact-real-time-scenario.md)   
- [Étape 4 : Tester le scénario de bout en bout FileAct en temps réel](../../adapters-and-accelerators/fileact-interact/step-4-test-fileact-real-time-end-to-end-scenario.md)
+ [Étape 4 : Tester le scénario en temps réel FileAct de bout en bout](../../adapters-and-accelerators/fileact-interact/step-4-test-fileact-real-time-end-to-end-scenario.md)

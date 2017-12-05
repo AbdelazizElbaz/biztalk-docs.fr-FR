@@ -28,11 +28,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6c64b61c1c96b0ad6f9185ccd511d00f6dae2251
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5c567ea50f151f0ee36505bd6d8a71af059eb67d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="pipeline-tools"></a>Outils de pipeline
 Les outils de pipeline fournis avec le Kit de développement logiciel (SDK) de Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] vous permettent de vérifier qu'un pipeline fonctionne correctement sans avoir à configurer l'environnement BizTalk Server et notamment des ports d'envoi/réception. Vous pouvez aussi utiliser les outils de pipeline pour :  
@@ -52,7 +52,7 @@ Les outils de pipeline fournis avec le Kit de développement logiciel (SDK) de M
 -   effectuer des mesures précises des performances du pipeline seul (plutôt que de l'ensemble du sous-système de messagerie).  
   
 ## <a name="location-in-sdk"></a>Emplacement dans le kit de développement logiciel (SDK)  
- \<*Chemin d’installation*> \SDK\Utilities\PipelineTools  
+ \<*Chemin d’installation*\>\SDK\Utilities\PipelineTools  
   
  Utilisez les outils de pipeline pour exécuter, déboguer et profiler les pipelines et les composants de pipeline (c'est-à-dire les composants de l'assembleur/désassembleur de fichier plat et XML).  
   
@@ -198,7 +198,7 @@ Pipeline.exe ReceivePipeline.btp –d file_in.xml –s MySchema.xsd:MyProject.My
   
 ```  
   
- \-Ou -  
+ \- Ou -  
   
 ```  
 Pipeline.exe ReceivePipeline.btp –d file_in.xml –s MySchema.xsd –proj MyProject.btproj -c  
@@ -292,4 +292,4 @@ XmlDasm.exe file_in.txt –ds myDocumentSchema.xsd –es myEnvelopeSchema1.xsd �
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilitaires dans le Kit de développement](../core/utilities-in-the-sdk.md)
+ [Utilitaires du SDK](../core/utilities-in-the-sdk.md)

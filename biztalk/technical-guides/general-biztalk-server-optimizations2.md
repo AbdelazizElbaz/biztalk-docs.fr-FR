@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3d4777545d7522a1f8ca61e9209669b489ebcb30
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 622844e282b9b0206f92979827406a324cd2f86f
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="general-biztalk-server-optimizations"></a>Optimisations générales de BizTalk Server
 Les recommandations suivantes peuvent être utilisées pour augmenter [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] performances. Les optimisations répertoriées dans cette rubrique sont appliquées après [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] a été installé et configuré.  
@@ -35,7 +35,7 @@ Les recommandations suivantes peuvent être utilisées pour augmenter [!INCLUDE[
 > [!NOTE]  
 >  Bien qu’il existe des avantages à la création des instances d’hôte supplémentaires, il existe également des inconvénients potentiels si trop d’instances d’hôte sont créées. Chaque instance d’hôte est un service Windows (BTSNTSvc.exe), qui génère une charge supplémentaire par rapport à la base de données MessageBox et consomme des ressources de l’ordinateur (par exemple, UC, mémoire, les threads).  
   
- Pour plus d’informations sur la modification des propriétés de l’hôte BizTalk Server, consultez « Modification des propriétés de hôte » dans le [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] à l’adresse [http://go.microsoft.com/fwlink/?LinkId=101588](http://go.microsoft.com/fwlink/?LinkId=101588).  
+ Pour plus d’informations sur la modification des propriétés de l’hôte BizTalk Server, consultez « Comment à modifier hôte propriétés » dans l’aide de BizTalk Server à [http://go.microsoft.com/fwlink/?LinkId=101588](http://go.microsoft.com/fwlink/?LinkId=101588).  
   
 ## <a name="configure-a-dedicated-tracking-host"></a>Configurer un hôte de suivi dédié  
  BizTalk Server est optimisé pour le débit, afin de l’orchestration principale et les moteurs de messagerie ne pas réellement déplacent les messages directement aux bases de données des suivis BizTalk ou BAM, comme ce serait transférer ces moteurs à partir de leur travail principal de l’exécution des processus d’entreprise. Au lieu de cela, BizTalk Server conserve les messages dans la base de données MessageBox et les marque comme nécessitant un déplacement vers la base de données des suivis BizTalk. Un processus en arrière-plan (l’hôte de suivi), puis se déplace les messages vers les bases de données des suivis BizTalk et l’analyse BAM. Étant donné que le suivi des modifications est une opération gourmande en ressources, un hôte distinct doit être créé qui est dédié au suivi, réduisant ainsi l’impact suivi sur les ordinateurs hôtes dédiés au traitement des messages.  
@@ -48,13 +48,13 @@ Les recommandations suivantes peuvent être utilisées pour augmenter [!INCLUDE[
   
 -   Étant donné que les données ne sont pas déplacées, il ne peut pas être supprimé à partir de la base de données Messagebox.  
   
--   Lorsque le service de décodage de données de suivi est arrêté, le suivi des intercepteurs toujours déclenche, écrire des données de suivi dans la base de données Messagebox. Si les données ne sont pas déplacées, cela entraîne la base de données Messagebox à être saturé, ce qui aura un impact sur les performances au fil du temps. Même si les propriétés personnalisées ne sont pas suivies ou les profils de l’analyse BAM ne sont pas définies, par défaut des données de suivi sont effectuées (telles que le pipeline de réception / envoyer des événements et des événements de l’orchestration). Si vous ne souhaitez pas exécuter le service de décodage de données de suivi, désactivez tous les suivi afin qu’aucun des intercepteurs d’enregistrement des données dans la base de données. Pour désactiver le suivi global, voir « Comment de désactivation du suivi Global » dans le [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] à l’adresse [http://go.microsoft.com/fwlink/?LinkId=101589](http://go.microsoft.com/fwlink/?LinkId=101589). La console Administration de BizTalk Server permet de désactiver le suivi des événements de manière sélective.  
+-   Lorsque le service de décodage de données de suivi est arrêté, le suivi des intercepteurs toujours déclenche, écrire des données de suivi dans la base de données Messagebox. Si les données ne sont pas déplacées, cela entraîne la base de données Messagebox à être saturé, ce qui aura un impact sur les performances au fil du temps. Même si les propriétés personnalisées ne sont pas suivies ou les profils de l’analyse BAM ne sont pas définies, par défaut des données de suivi sont effectuées (telles que le pipeline de réception / envoyer des événements et des événements de l’orchestration). Si vous ne souhaitez pas exécuter le service de décodage de données de suivi, désactivez tous les suivi afin qu’aucun des intercepteurs d’enregistrement des données dans la base de données. Pour désactiver le suivi global, consultez « Comment de désactivation du suivi Global » dans BizTalk Server à l’adresse [http://go.microsoft.com/fwlink/?LinkId=101589](http://go.microsoft.com/fwlink/?LinkId=101589). La console Administration de BizTalk Server permet de désactiver le suivi des événements de manière sélective.  
   
  L’hôte de suivi doit être exécuté sur au moins deux ordinateurs exécutant BizTalk Server (pour assurer la redondance dans les cas de défaillance d’un). Pour des performances optimales, vous devez avoir suivi au moins une instance de l’hôte par base de données Messagebox. Le nombre réel de suivi des instances d’hôte doit être (N + 1), où N = nombre de bases de données Messagebox. Le « + 1 » est pour la redondance, en cas de défaillance d’un des ordinateurs hébergeant le suivi.  
   
  Un suivi instance d’hôte déplace les données de suivi pour les bases de données Messagebox spécifiques, mais il y aura jamais l’hôte de suivi plus d’une instance de déplacer les données d’une base de données Messagebox spécifique. Par exemple, si vous avez trois bases de données Messagebox et que deux instances de l’hôte de suivi, une des instances de l’hôte doit déplacer les données de deux bases de données Messagebox. Ajout d’une troisième instance de l’hôte de suivi distribue le suivi des hôtes de travail vers un autre ordinateur exécutant BizTalk Server. Dans ce scénario, ajout d’une quatrième instance de l’hôte de suivi ne serait pas distribuer n’importe quel hôte de suivi plus de travail, mais cela permet de fournir un fichier extra suivi d’instance d’hôte pour la tolérance de panne.  
   
- Pour plus d’informations sur le service Bus d’événements BAM, consultez les rubriques suivantes dans le [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] aide :  
+ Pour plus d’informations sur le service Bus d’événements BAM, consultez les rubriques suivantes dans l’aide de BizTalk Server :  
   
 -   « Gestion de Service Bus d’événements BAM » au [http://go.microsoft.com/fwlink/?LinkId=101590](http://go.microsoft.com/fwlink/?LinkId=101590).  
   
@@ -187,12 +187,12 @@ Les recommandations suivantes peuvent être utilisées pour augmenter [!INCLUDE[
 6.  Redémarrez l’instance d’hôte BizTalk.  
   
 ## <a name="disable-tracking-for-orchestrations-send-ports-receive-ports-and-pipelines-when-tracking-is-not-required"></a>Désactiver le suivi des orchestrations, ports d’envoi, ports de réception et pipelines lorsque le suivi n’est pas obligatoire  
- Suivi entraîne des performances de traitement dans BizTalk Server donnée ne doit être écrite dans la base de données MessageBox et ensuite asynchrone vers la base de données des suivis BizTalk. Si le suivi n’est pas une exigence, puis désactivez le suivi pour réduire la surcharge et augmenter les performances. Pour plus d’informations sur la configuration de suivi, consultez « Configuration de suivi à l’aide de la Console Administration BizTalk Server » dans le [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] à l’adresse [http://go.microsoft.com/fwlink/?LinkID=106742](http://go.microsoft.com/fwlink/?LinkID=106742).  
+ Suivi entraîne des performances de traitement dans BizTalk Server donnée ne doit être écrite dans la base de données MessageBox et ensuite asynchrone vers la base de données des suivis BizTalk. Si le suivi n’est pas une exigence, puis désactivez le suivi pour réduire la surcharge et augmenter les performances. Pour plus d’informations sur la configuration de suivi, consultez « Configuration de suivi à l’aide de la Console Administration BizTalk Server » dans BizTalk Server à l’adresse [http://go.microsoft.com/fwlink/?LinkID=106742](http://go.microsoft.com/fwlink/?LinkID=106742).  
   
 ## <a name="decrease-the-purging-period-for-the-dta-purge-and-archive-job-from-7-days-to-2-days-in-high-throughput-scenarios"></a>Réduisez la période de purge de la tâche d’archivage de 7 jours à 2 jours dans les scénarios de débits élevés et DTA Purge  
  Par défaut, l’intervalle de vidage pour le suivi des données dans BizTalk Server est défini sur 7 jours. Dans un scénario d’un débit élevé, cela peut entraîner une accumulation excessive de données dans la base de données de suivi qui finalement affectera les performances de la MessageBox et à son tour négativement débit de traitement des messages impact.  
   
- Dans les scénarios de débits élevés, réduire les matériels et logiciels purge intervalle à partir de la valeur par défaut de 7 jours à 2 jours. Pour plus d’informations sur la configuration de l’intervalle de vidage, consultez « Comment pour configurer le DTA Purge et Archive la tâche » dans le [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] à l’adresse [http://go.microsoft.com/fwlink/?LinkID=104908](http://go.microsoft.com/fwlink/?LinkID=104908).  
+ Dans les scénarios de débits élevés, réduire les matériels et logiciels purge intervalle à partir de la valeur par défaut de 7 jours à 2 jours. Pour plus d’informations sur la configuration de l’intervalle de vidage, consultez « Comment pour configurer le DTA Purge et Archive Job » dans BizTalk Server à l’adresse [http://go.microsoft.com/fwlink/?LinkID=104908](http://go.microsoft.com/fwlink/?LinkID=104908).  
   
 ## <a name="install-the-latest-service-packs"></a>Installer les derniers service packs  
  Les derniers service packs pour BizTalk Server et le .NET Framework doivent être installés, car ils contiennent les correctifs qui peuvent corriger les problèmes de performances que vous pouvez rencontrer.  

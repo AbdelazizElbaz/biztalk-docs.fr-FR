@@ -12,11 +12,11 @@ caps.latest.revision: "45"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 43d7a54305443d35aba5b363983b17157780fe4b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8c4274362e5ec8441e203d0b2b97f27e95235fd9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="assembling-a-batched-edi-interchange"></a>Assemblage d'un échange EDI par lot
 Pour assembler des éléments de lot de document informatisé au sein d'un échange EDI, les fonctionnalités EDI et AS2 de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] effectuent les tâches suivantes :  
@@ -60,7 +60,7 @@ Pour assembler des éléments de lot de document informatisé au sein d'un écha
   
 8.  Une fois que l'orchestration de traitement par lot a terminé le traitement par lot d'un échange, elle promeut les propriétés suivantes sur cet échange : EDI.DestinationPartyName = %Nom_tiers%, EDI.BatchEncodingType = X12 ou EDIFACT et EDI.ToBeBatched = False.  
   
-9. Un port d’envoi récupère les documents informatisés traités par lot en fonction de l’EDI. DestinationPartyName = \<Nom_tiers >, EDI. BatchEncodingType = EDIFACT ou X12 et EDI. ToBeBatched = False.  
+9. Un port d’envoi récupère les documents informatisés traités par lot en fonction de l’EDI. DestinationPartyName = \<Nom_tiers\>, EDI. BatchEncodingType = EDIFACT ou X12 et EDI. ToBeBatched = False.  
   
 ## <a name="batching-orchestration-control-messages"></a>Messages de contrôle de l'orchestration de traitement par lot  
  L'orchestration de traitement par lot est activée, arrêtée ou remplacée par les messages de contrôle suivants :  
@@ -206,7 +206,7 @@ Pour assembler des éléments de lot de document informatisé au sein d'un écha
   
 -   `EDI.DestinationPartyId` existe ;  
   
- Lorsque l'orchestration reçoit un message, elle recherche une configuration de lot correspondante pour le message à l'aide du nom du tiers et du type de codage.  Le `EDI.DestinationPartyID` propriété est utilisée pour déterminer le nom du tiers, et l’orchestration recherche ensuite un nom qui correspond à \<Nom_tiers > +\<Type_codage > + Default.  Par exemple, si le nom du tiers est Contoso et la valeur de la propriété `EDI.EncodingType` est X12, l'orchestration recherche le lot ContosoX12Default.  
+ Lorsque l'orchestration reçoit un message, elle recherche une configuration de lot correspondante pour le message à l'aide du nom du tiers et du type de codage.  Le `EDI.DestinationPartyID` propriété est utilisée pour déterminer le nom du tiers, et l’orchestration recherche ensuite un nom qui correspond à \<Nom_tiers\>+\<Type_codage\>+ par défaut.  Par exemple, si le nom du tiers est Contoso et la valeur de la propriété `EDI.EncodingType` est X12, l'orchestration recherche le lot ContosoX12Default.  
   
  Si une configuration de lot correspondante est trouvée, le message est replacé dans la base de données MessageBox avec les propriétés suivantes :  
   
@@ -278,4 +278,4 @@ Pour assembler des éléments de lot de document informatisé au sein d'un écha
 -   Il remet le message via l'adaptateur associé.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Le traitement par lot des Messages EDI sortants](../core/batching-outgoing-edi-messages.md)
+ [Traitement par lot des messages EDI sortants](../core/batching-outgoing-edi-messages.md)

@@ -16,11 +16,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4c7928affeafd40197401fa75d44658e0e975507
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d5bb458af94d61ceb89a725f80606d8dda2af579
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="run-a-sqlexecute-operation-in-oracle-database-using-the-wcf-channel-model"></a>Exécuter une opération SQLEXECUTE dans la base de données Oracle à l’aide du modèle de canal WCF
 Cette section montre comment effectuer une opération SQLEXECUTE sur une base de données Oracle sur un canal. Vous devez spécifier un message et une action de message sur le message SOAP. Pour plus d’informations sur l’opération SQLEXECUTE, consultez [opération SQLEXECUTE de s’exécuter dans la base de données Oracle à l’aide du modèle de Service WCF](../../adapters-and-accelerators/adapter-oracle-database/run-sqlexecute-operation-in-oracle-database-using-the-wcf-service-model.md).  
@@ -29,8 +29,8 @@ Cette section montre comment effectuer une opération SQLEXECUTE sur une base de
  Le code XML suivant affiche un message SQLEXECUTE qui retourne la valeur suivante d’une séquence Oracle.  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>  
-\<!-- New Action: http://Microsoft.LobServices.OracleDB/2007/03/SQLEXECUTE -->  
+<?xml version="1.0" encoding="utf-8" ?>  
+<!-- New Action: http://Microsoft.LobServices.OracleDB/2007/03/SQLEXECUTE -->  
 <SQLEXECUTE xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SQLEXECUTE">  
     <SQLSTATEMENT>SELECT tid_seq.nextval id FROM dual</SQLSTATEMENT>  
 </SQLEXECUTE>  

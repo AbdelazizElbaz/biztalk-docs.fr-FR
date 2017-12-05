@@ -15,20 +15,20 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 527894b27c5720a1b006387f861922eb978069b9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2abb040d79f0c9312a8761289c0bf6252fef2f3a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="extending-enumerations"></a>Extension des énumérations
-Vous pouvez ajouter des valeurs pour les énumérations qui définissent les valeurs acceptées pour de nombreux types de champs, des segments et des données dans le corps du message HL7, accusé de réception et les schémas de corps du message. Cela implique la modification de l’ensemble de valeurs dans une table spécifique dans le fichier de schéma valeurs de table commune pour la version HL7 dans lequel vous travaillez (le **Tablevalues_\<***version* **> .xsd** fichier de schéma).  
+Vous pouvez ajouter des valeurs pour les énumérations qui définissent les valeurs acceptées pour de nombreux types de champs, des segments et des données dans le corps du message HL7, accusé de réception et les schémas de corps du message. Cela implique la modification de l’ensemble de valeurs dans une table spécifique dans le fichier de schéma valeurs de table commune pour la version HL7 dans lequel vous travaillez (le **Tablevalues_\<***version*  **\>.xsd** fichier de schéma).  
   
- Vous ajoutez à l’énumération d’une manière différente pour le schéma d’en-tête de message que vous effectuez dans d’autres schémas, tels que le schéma de corps de message. Pour le schéma d’en-tête de message, vous devez modifier la table dans le fichier MSH_25_GLO_DEF.xsd. Pour les autres schémas, vous modifiez la table dans le fichier de schéma de valeurs de table (tablevalues_\<version > .xsd).  
+ Vous ajoutez à l’énumération d’une manière différente pour le schéma d’en-tête de message que vous effectuez dans d’autres schémas, tels que le schéma de corps de message. Pour le schéma d’en-tête de message, vous devez modifier la table dans le fichier MSH_25_GLO_DEF.xsd. Pour les autres schémas, vous modifiez la table dans le fichier de schéma de valeurs de table (tablevalues_\<version\>.xsd).  
   
 ### <a name="to-add-an-enumeration-value-to-the-table-values-common-schema-file"></a>Pour ajouter une valeur d’énumération vers la table de valeurs courantes schéma  
   
-1.  Vous devez tout d’abord déterminer la table qui contient l’énumération que vous souhaitez ajouter à. Dans l’Explorateur de solutions de [!INCLUDE[vs2012](../../includes/vs2012-md.md)], ouvrez le fichier de schéma qui contient l’élément que vous souhaitez modifier. Dans l’Explorateur BizTalk, cliquez sur l’élément de champ que vous souhaitez ajouter une valeur à utiliser.  
+1.  Vous devez tout d’abord déterminer la table qui contient l’énumération que vous souhaitez ajouter à. Dans l’Explorateur de solutions de Visual Studio, ouvrez le fichier de schéma qui contient l’élément que vous souhaitez modifier. Dans l’Explorateur BizTalk, cliquez sur l’élément de champ que vous souhaitez ajouter une valeur à utiliser.  
   
     > [!NOTE]
     >  Lorsque vous modifiez une énumération dans le fichier de schéma table valeurs courantes, tous les objets qui font référence à cette énumération sont affectées.  
@@ -38,7 +38,7 @@ Vous pouvez ajouter des valeurs pour les énumérations qui définissent les val
     > [!NOTE]
     >  S’il existe aucune table ne répertoriés dans **Base Data Type** champ et le **Derived By** propriété n’est pas définie sur **Restricted**, puis le champ n’est pas une énumération associée .  
   
-3.  Dans l’Explorateur de solutions, ouvrez le **Tablevalues_\<***version***> .xsd**, puis cliquez sur **ouvrir**.  
+3.  Dans l’Explorateur de solutions, ouvrez le **Tablevalues_\<***version***\>.xsd**, puis cliquez sur **ouvrir**.  
   
     > [!NOTE]
     >  Vous devez effectuer cette procédure séparément pour chaque version du schéma HL7 que vous souhaitez modifier.  
@@ -71,4 +71,4 @@ Vous pouvez ajouter des valeurs pour les énumérations qui définissent les val
  [Création de Segments de Z déclaré](../../adapters-and-accelerators/accelerator-hl7/creating-declared-z-segments.md)   
  [Création de Types de données personnalisés dans les schémas](../../adapters-and-accelerators/accelerator-hl7/creating-custom-data-types-in-schemas.md)   
  [Création de Tables personnalisées dans les schémas](../../adapters-and-accelerators/accelerator-hl7/creating-custom-tables-in-schemas.md)   
- [La gestion des Segments de Z non déclaré](../../adapters-and-accelerators/accelerator-hl7/handling-undeclared-z-segments.md)
+ [Gestion des segments Z non déclarés](../../adapters-and-accelerators/accelerator-hl7/handling-undeclared-z-segments.md)

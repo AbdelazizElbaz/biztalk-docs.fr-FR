@@ -18,19 +18,19 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 751b05f28682ecc0a0230fc924cf706d0531784d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3e6cf33bf62f8ec7924b3f9ff2379f84b2b42775
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="working-with-the-tracking-activity-definition-file"></a>Utilisation avec le fichier de définition des activités de suivi
-Le fichier de définition d’activité contient des informations sur le suivi des activités de processus et le message dans [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]. [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]utilise ce fichier pour gérer les données de suivi dans BizTalk d’analyse BAM (Business Activity). Le fichier de définition est un fichier XML (Tracking.xml) qui [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] le programme d’installation installe dans le \< *lecteur*> : \Program Files\Microsoft BizTalk 2013 Accelerator pour RosettaNet \BAMTracking dossier. Les activités définies dans Tracking.xml peuvent suffire à vos besoins.  
+Le fichier de définition d’activité contient des informations sur le suivi des activités de processus et le message dans [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]. [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]utilise ce fichier pour gérer les données de suivi dans BizTalk d’analyse BAM (Business Activity). Le fichier de définition est un fichier XML (Tracking.xml) qui [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] le programme d’installation installe dans le \< *lecteur*\>: \Program Files\Microsoft BizTalk 2013 Accelerator pour RosettaNet \BAMTracking dossier. Les activités définies dans Tracking.xml peuvent suffire à vos besoins.  
   
- Pour plus d’informations sur le suivi des activités, des vues et tables, consultez [amélioré de suivi](../../adapters-and-accelerators/accelerator-rosettanet/enhanced-tracking.md). Pour plus d’informations sur BAM, consultez « analyse BAM (Business Activity) » dans [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] aide.  
+ Pour plus d’informations sur le suivi des activités, des vues et tables, consultez [amélioré de suivi](../../adapters-and-accelerators/accelerator-rosettanet/enhanced-tracking.md). Pour plus d’informations sur BAM, consultez « analyse BAM (Business Activity) » dans l’aide de BizTalk Server.  
   
 ## <a name="managing-tracking-views"></a>La gestion des vues de suivi  
- Vous n’utilisez pas l’éditeur de modèle de suivi BizTalk avec [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] de suivi. Les points de suivi ne sont pas personnalisables ; ne modifiez pas les définitions d’activité. Toutefois, vous pouvez gérer le déploiement et les vues BAM. Pour ce faire, vous modifiez un [!INCLUDE[btsExcel](../../includes/btsexcel-md.md)] feuille de calcul (Tracking.xls) qui [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] le programme d’installation installe dans le \< *lecteur*> : \Program Files\Microsoft BizTalk 2013 Accelerator pour RosettaNet\BAMTracking dossier. Pour plus d’informations, consultez « Gestion de suivi des vues » ci-dessous.  
+ Vous n’utilisez pas l’éditeur de modèle de suivi BizTalk avec [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] de suivi. Les points de suivi ne sont pas personnalisables ; ne modifiez pas les définitions d’activité. Toutefois, vous pouvez gérer le déploiement et les vues BAM. Pour ce faire, vous modifiez un [!INCLUDE[btsExcel](../../includes/btsexcel-md.md)] feuille de calcul (Tracking.xls) qui [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] le programme d’installation installe dans le \< *lecteur*\>: \Program Files\Microsoft BizTalk 2013 Accelerator pour RosettaNet\ BAMTracking dossier. Pour plus d’informations, consultez « Gestion de suivi des vues » ci-dessous.  
   
  Si les vues définies dans Tracking.xml ne suffisent pas à vos besoins, vous pouvez définir des vues différentes des informations de suivi de l’analyse BAM comme suit.  
   
@@ -40,12 +40,12 @@ Le fichier de définition d’activité contient des informations sur le suivi d
   
     ```  
     cd %ProgramFiles%\Microsoft BizTalk Server 2013\Tracking  
-    bm remove-all  -DefinitionFile:"%ProgramFiles%\Microsoft BizTalk 2013 Accelerator for RosettaNet\BAMTracking\<filename>.xml"  
+    bm remove-all  -DefinitionFile:"%ProgramFiles%\Microsoft BizTalk 2013 Accelerator for RosettaNet\BAMTracking\<filename\>.xml"  
     ```  
   
-2.  Dans [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorer, accédez à  *\<lecteur >*: \Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet \BAM de suivi. Double-cliquez sur Tracking.xls.  
+2.  Dans [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorer, accédez à  *\<lecteur\>*: \Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet \BAM de suivi. Double-cliquez sur Tracking.xls.  
   
-3.  Créer une nouvelle vue dans l’analyse BAM. Pour plus d’informations sur la marche à suivre, consultez « Gestion de l’analyse BAM » dans [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] aide.  
+3.  Créer une nouvelle vue dans l’analyse BAM. Pour plus d’informations sur la marche à suivre, consultez « Gestion de l’analyse BAM » dans l’aide de BizTalk Server.  
   
 4.  Cliquez sur **BAM**, puis cliquez sur **exporter XML**. Déplacer vers l’emplacement souhaité, entrez un nom de fichier (autres que Tracking.xml), puis cliquez sur **enregistrer**.  
   
@@ -56,12 +56,12 @@ Le fichier de définition d’activité contient des informations sur le suivi d
   
     ```  
     cd %ProgramFiles%\Microsoft BizTalk Server 2013\Tracking  
-    bm.exe deploy-all -DefinitionFile:"%ProgramFiles%\Microsoft BizTalk 2030 Accelerator for RosettaNet\BAMTracking\<filename>.xml"  
+    bm.exe deploy-all -DefinitionFile:"%ProgramFiles%\Microsoft BizTalk 2030 Accelerator for RosettaNet\BAMTracking\<filename\>.xml"  
     ```  
   
  Les informations de suivi dans BAM n’incluent pas le contenu du message, car qui est stocké dans un [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] base de données.  
   
- Vous pouvez gérer le déploiement de suivi à l’aide de l’entreprise activité analyse utilitaire de gestion BAM. Pour plus d’informations sur cet utilitaire, consultez « À l’aide de l’utilitaire de Business activité analyse gestion » dans [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] aide.  
+ Vous pouvez gérer le déploiement de suivi à l’aide de l’entreprise activité analyse utilitaire de gestion BAM. Pour plus d’informations sur cet utilitaire, consultez « À l’aide de l’entreprise activité analyse utilitaire de gestion » dans l’aide de BizTalk Server.  
   
 ## <a name="activity-fields"></a>Champs d’activité  
  Les champs de l’activité d’un message dans le fichier de définition d’activité sont les suivants :  

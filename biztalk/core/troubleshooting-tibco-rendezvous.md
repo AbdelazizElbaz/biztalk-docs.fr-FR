@@ -13,11 +13,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b860aa0d0253185f1c9ecc6f7a525776abfab5d6
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 18ae8d599b67a1a572021cae0ebc9bfc64992a9b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshoot-tibco-rendezvous"></a>Résoudre les problèmes de TIBCO Rendezvous
   
@@ -38,7 +38,7 @@ L'adaptateur Microsoft BizTalk pour TIBCO Rendezvous consigne des messages d'err
   
      Pour que l'application consommateur puisse lire les événements dans le fichier .etl, l'outil Suivi d'événements pour Windows doit les vider dans ce fichier. Généralement, cette opération est effectuée lorsque le contrôleur désactive le suivi.  
   
-     Pour utiliser l’application consommateur sans désactiver le suivi, le contrôleur doit activer le suivi avec l’option en temps réel, \<en temps réel > = -rt.  
+     Pour utiliser l’application consommateur sans désactiver le suivi, le contrôleur doit activer le suivi avec l’option en temps réel, \<en temps réel\> = -rt.  
   
 -   **Fournisseur**: fournit l’événement.  
   
@@ -46,15 +46,15 @@ L'adaptateur Microsoft BizTalk pour TIBCO Rendezvous consigne des messages d'err
   
  L'adaptateur BizTalk pour TIBCO Rendezvous inclut trois fournisseurs. Vous pouvez ainsi consigner différents types de messages :  
   
--   **Fournisseur de journalisation de récepteur**: le \<Trace element > commutateur est **-récepteur**.  
+-   **Fournisseur de journalisation de récepteur**: le \<élément Trace\> commutateur est **-récepteur**.  
   
 -   Utilisez **-récepteur** pour récupérer tous les messages du journal qui ont été reçus par l’adaptateur lors de l’exécution.  
   
--   **Fournisseur de journalisation de l’émetteur**: le \<Trace element > commutateur est **-émetteur**.  
+-   **Fournisseur de journalisation de l’émetteur**: le \<élément Trace\> commutateur est **-émetteur**.  
   
      Utilisez **-émetteur** pour récupérer tous les messages du journal qui ont été transmis par l’adaptateur au moment de l’exécution.  
   
--   **Fournisseur de journalisation de gestion —**le \<Trace element > commutateur est **-gestion**.  
+-   **Fournisseur de journalisation de gestion —**le \<élément Trace\> commutateur est **-gestion**.  
   
      Utilisez **-gestion**pour récupérer tous les messages du journal qui ont été générés pendant la navigation du système du serveur.  
   
@@ -67,7 +67,7 @@ BTATIBCORVTrace <Trace element> -start [-cir <MB>|
 BTATIBCORVTrace <Trace element> -stop  
 ```  
   
- Où :  **\<Trace element >** (obligatoire) est le type de fournisseur.  
+ Où :  **\<élément Trace\>**  (obligatoire) est le type de fournisseur.  
   
  Les options associées sont les suivantes :  
   
@@ -79,9 +79,9 @@ BTATIBCORVTrace <Trace element> -stop
   
 -   **-start, - stop**: activer ou désactiver le fournisseur.  
   
--   **-cir \<Mo >**: taille et type de fichier. **-cir** est un fichier circulaire. **\<Mo >**: taille en mégaoctets.  
+-   **-cir \<Mo\>**: taille et type de fichier. **-cir** est un fichier circulaire. **\<Mo\>**: taille en mégaoctets.  
   
--   **-seq \<Mo >**: taille et type de fichier. **-seq** est un fichier séquentiel. **\<Mo >**: taille en mégaoctets.  
+-   **-seq \<Mo\>**: taille et type de fichier. **-seq** est un fichier séquentiel. **\<Mo\>**: taille en mégaoctets.  
   
 -   **-rt**: définir le mode temps réel sur.  
   
@@ -94,6 +94,6 @@ BTATIBCORVTrace -transmitter -start -cir 10 -rt c:\log\mylog.etl
 BTATIBCORVTrace -transmitter -stop  
 ```  
 ## <a name="see-more"></a>Voir plus d’informations
-[Gestion des exceptions](../core/using-biztalk-server-exception-handling4.md)  
+[Gérer les exceptions](../core/using-biztalk-server-exception-handling4.md)  
 [Sécurité](../core/security-in-biztalk-adapter-for-tibco-rendezvous.md)  
 [Architecture](../core/architecture-of-biztalk-adapter-for-tibco-rendezvous.md)

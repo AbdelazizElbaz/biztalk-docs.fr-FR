@@ -16,11 +16,11 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a2fce9c39fad76ad0e621fb4773cc39efc3488cd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a6cf0243eccb6a38dc121cfe06a60e30fa0c26c7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="sendmail"></a>SendMail
 L'exemple SendMail montre comment utiliser l'adaptateur SMTP (Simple Mail Transfer Protocol) pour envoyer des messages électroniques à partir d'une orchestration Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Les informations dynamiques utilisées pour envoyer les messages électroniques sont extraites d'un message XML à l'aide de la fonctionnalité de promotion de propriétés.  
@@ -37,7 +37,7 @@ L'exemple SendMail montre comment utiliser l'adaptateur SMTP (Simple Mail Transf
 4.  L'orchestration [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] envoie le message électronique construit via l'adaptateur SMTP.  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
- \<*Exemples de chemin d’accès*> \AdaptersUsage\SendMail\  
+ \<*Exemples de chemin d’accès*\>\AdaptersUsage\SendMail\  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -54,13 +54,13 @@ L'exemple SendMail montre comment utiliser l'adaptateur SMTP (Simple Mail Transf
   
 1.  Dans une fenêtre de commande, accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \AdaptersUsage\SendMail  
+     \<*Exemples de chemin d’accès*\>\AdaptersUsage\SendMail  
   
 2.  Exécutez le fichier Setup.bat, qui effectue les actions suivantes :  
   
     -   Crée le dossier d'entrée suivant pour cet exemple :  
   
-         \<*Exemples de chemin d’accès*> \AdaptersUsage\SendMail\In  
+         \<*Exemples de chemin d’accès*\>\AdaptersUsage\SendMail\In  
   
     -   compilation du projet [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] de l'exemple ;  
   
@@ -105,4 +105,4 @@ L'exemple SendMail montre comment utiliser l'adaptateur SMTP (Simple Mail Transf
 2.  Observez l'arrivée d'un message électronique à l'adresse spécifiée au cours de la procédure précédente.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Exemples d’adaptateurs - utilisation](../core/adapter-samples-usage.md)
+ [Exemples d’adaptateurs- Utilisation](../core/adapter-samples-usage.md)

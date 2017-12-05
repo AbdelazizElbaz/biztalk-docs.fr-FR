@@ -16,11 +16,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c7b8b636534738dfc7445421ad79fd01e7b120b0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ad7eabf54dc410ebed143641602599438f376a30
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-get-a-list-of-indexes-on-an-aggregation"></a>Affichage des index d'une agrégation
 Les administrateurs utilisent la **get-index** commande pour obtenir une liste de tous les index sur l’activité spécifiée.  
@@ -31,7 +31,7 @@ Les administrateurs utilisent la **get-index** commande pour obtenir une liste d
   
 2.  Accédez à [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking.  
   
-3.  Type **bm get-index-activité :\<nom de l’activité >**.  
+3.  Type **bm get-index-activité :\<nom de l’activité\>**.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  

@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5507bbb21d1b5648a10be2230dd4476eacca1c78
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b21d2123b646a02669a9da65efc5069931e64c69
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="receive-query-notifications-from-sql-using-the-wcf-service-model"></a>Recevoir des Notifications de requête SQL à l’aide du modèle de Service WCF
 Cette rubrique montre comment configurer le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] pour recevoir des messages de notification de requête à partir d’une base de données SQL Server. Pour illustrer des notifications, considérez une table Employee, avec une colonne « État ». Lorsqu’un nouvel enregistrement est inséré à cette table, la valeur de la colonne d’état est définie sur 0. Vous pouvez configurer l’adaptateur pour recevoir des notifications par l’inscription aux notifications à l’aide d’une instruction SQL qui Récupère tous les enregistrements dont la colonne d’état en tant que « 0 ». Vous pouvez le faire en spécifiant l’instruction SQL pour le **NotificationStatement** propriété de liaison. Une fois que le client de l’adaptateur reçoit la notification, il peut contenir la logique pour effectuer les tâches suivantes sur la base de données SQL Server. Dans cet exemple, par souci de simplicité, le client de carte répertorie tous les enregistrements dans la table dont la colonne d’état en tant que « 0 ».  
@@ -30,7 +30,7 @@ Cette rubrique montre comment configurer le [!INCLUDE[adaptersqlshort](../../inc
 |Propriété de liaison| Description|  
 |----------------------|-----------------|  
 |**InboundOperationType**|Spécifie l’opération entrante que vous souhaitez effectuer. Pour recevoir des messages de notification, affectez la valeur **Notification**.|  
-|**NotificationStatement**|Spécifie l’instruction SQL (SELECT ou EXEC \< *procédure stockée*>) permet de s’inscrire aux notifications de requête. L’adaptateur reçoit un message de notification de SQL Server que lorsque le jeu de résultats pour que les modifications d’instruction SQL spécifiées.|  
+|**NotificationStatement**|Spécifie l’instruction SQL (SELECT ou EXEC \< *procédure stockée*\>) permet de s’inscrire aux notifications de requête. L’adaptateur reçoit un message de notification de SQL Server que lorsque le jeu de résultats pour que les modifications d’instruction SQL spécifiées.|  
 |**NotifyOnListenerStart**|Spécifie si l’adaptateur envoie une notification pour les clients de la carte au démarrage de l’écouteur.|  
   
  Pour obtenir une description plus complète de ces propriétés, consultez [en savoir plus sur l’adaptateur BizTalk pour les propriétés de liaison de l’adaptateur SQL Server](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md). Pour obtenir une description complète de l’utilisation de la [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] pour recevoir des notifications à partir de SQL Server, poursuivre la lecture.  
@@ -174,7 +174,7 @@ namespace SqlAdapterBindingNamespace {
   
                 Console.WriteLine("The details of the newly added employee are:");  
                 Console.WriteLine("********************************************");  
-                for (int i = 0; i \< selectRecords.Length; i++)  
+                for (int i = 0; i < selectRecords.Length; i++)  
                 {  
                     Console.WriteLine("Employee Name      : " + selectRecords[i].Name);  
                     Console.WriteLine("Employee Designation: " + selectRecords[i].Designation);  

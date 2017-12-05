@@ -17,14 +17,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 428d2987465ff1fe09f01979bbe9036def6350b8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1ba0c156e2ad6ab0fcbccb5ba7629f63b0aa490e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="about-the-sapdiscoveredobjectsxml-file-in-sap"></a>Sur le fichier SAPDiscoveredObjects.xml dans SAP
-Si vous avez choisi d’installer le [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] ([!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]) avec le [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] installation, le programme d’installation copie le fichier SAPDiscoveredObjects.xml en général au \<lecteur d’installation > : \Program Files\Microsoft Shared\Adapters\SAP. Le contenu du fichier, après une nouvelle installation de le [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)], similaire à la suivante.  
+Si vous avez choisi d’installer le [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] ([!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]) avec le [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] installation, le programme d’installation copie le fichier SAPDiscoveredObjects.xml en général au \<lecteur d’installation\>: \Program fichiers \Microsoft Shared\Adapters\SAP. Le contenu du fichier, après une nouvelle installation de le [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)], similaire à la suivante.  
   
 ```  
 <DiscoveredObjects>  
@@ -56,10 +56,10 @@ Si vous avez choisi d’installer le [!INCLUDE[adoprovidersaplong](../../include
   
  Le `name` propriétés de la < Server\> élément contient le nom du serveur auquel vous vous connectez à l’aide du plug-in DDEX. Le `user` et `client` propriétés de la < Server\> élément contiennent les numéros de client et le nom d’utilisateur, respectivement. Le `type` propriété contient le type de chaîne de connexion (A, B ou D) utilisé pour se connecter à un système SAP. Pour plus d’informations sur les types de chaînes de connexion, consultez [en savoir plus sur les types de fournisseur de données pour la chaîne de connexion SAP](../../adapters-and-accelerators/adapter-sap/read-about-data-provider-types-for-the-sap-connection-string.md).  
   
- Le \<Tables > élément contient le nom des tables que vous ajoutez à l’aide du plug-in. De même, le \<RFC > élément contient les documents RFC que vous ajoutez à l’aide du plug-in. Si vous vous connectez à plus d’un serveur SAP, une autre \<Server > élément est ajouté au fichier XML, et les tables correspondantes et RFC sont répertoriés sous la \<Table > et \<RFC > élément.  
+ Le \<Tables\> élément contient le nom des tables que vous ajoutez à l’aide du plug-in. De même, la \<RFC\> élément contient les documents RFC que vous ajoutez à l’aide du plug-in. Si vous vous connectez à plus d’un serveur SAP, une autre \<Server\> élément est ajouté au fichier XML, et les tables correspondantes et RFC sont répertoriés sous la \<Table\> et \<RFC\> élément.  
   
 > [!NOTE]
 >  Pour obtenir des instructions sur l’utilisation du plug-in Visual Studio DDEX, consultez [utiliser le fournisseur de données pour SAP avec le plug-in DDEX](../../adapters-and-accelerators/adapter-sap/use-the-data-provider-for-sap-with-the-ddex-plug-in.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Sur le fournisseur de données .NET Framework pour mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/about-the-net-framework-data-provider-for-mysap-business-suite.md)
+ [À propos du fournisseur de données .NET Framework pour mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/about-the-net-framework-data-provider-for-mysap-business-suite.md)

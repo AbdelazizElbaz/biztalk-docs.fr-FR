@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2afa0e2f06471d90326b0dd8e2b83b8d4c38a82b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 89ca7d02c756fdbdf819e1a15069a95d0784d764
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="adapter-configuration-schemas"></a>Schémas de configuration de l'adaptateur
 Différents types de schémas sont utilisés pour la configuration de la conception d'un adaptateur. En fonction de la visibilité et de l'étendue des valeurs de propriété, divers schémas sont modifiés et utilisés.  
@@ -35,7 +35,7 @@ Différents types de schémas sont utilisés pour la configuration de la concept
  ![](../core/media/ebiz-prog-custad-sh.gif "ebiz_prog_custad_sh")  
 Page de propriétés du gestionnaire d'envoi, créée par le fichier TransmitHandler.xsd  
   
- Notez l’utilisation de la \<baf : Designer >, \<baf : DisplayName >, et \<baf : description > balises dans le code TransmitHandler.xsd présenté ci-dessous. Il s'agit de décorations personnalisées fournies par l'infrastructure d'adaptateurs pour accélérer la génération des pages de propriétés.  
+ Notez l’utilisation de la \<Designer\>, \<baf : DisplayName\>, et \<baf : description\> balises dans le code TransmitHandler.xsd présenté ci-dessous. Il s'agit de décorations personnalisées fournies par l'infrastructure d'adaptateurs pour accélérer la génération des pages de propriétés.  
   
  Pour obtenir la liste de toutes les décorations disponibles pour une utilisation dans l’infrastructure d’adaptateurs, consultez [balises d’ornement adaptateur Framework Configuration schéma](../core/adapter-framework-configuration-schema-decoration-tags.md).  
   
@@ -106,7 +106,7 @@ number of threads per CPU to execute in the thread pool</baf:description>
  ![](../core/media/ebiz-prog-custad-sp.gif "ebiz_prog_custad_sp")  
 Illustration de la page de propriétés du port d'envoi de l'exemple d'adaptateur FILE.  
   
- Notez que, dans le fichier TransmitLocation.xsd ci-dessous que la configuration du port d’envoi contient le \<baf : Designer >, \<baf : DisplayName >, et \<baf : description > balises, tout comme le Gestionnaire d’envoi, il utilise également le \<baf : Category > balise. La balise « category » vous permet de regrouper les propriétés. Si vous avez plus d'une catégorie, chacune peut être développée ou réduite et apparaît sous la forme d'un en-tête gris au-dessus des propriétés qui lui correspondent. Pour plus d’informations, consultez [Extensions de schéma de Configuration Framework adaptateur](../core/adapter-framework-configuration-schema-extensions.md).  
+ Notez que, dans le fichier TransmitLocation.xsd ci-dessous que la configuration du port d’envoi contient le \<Designer\>, \<baf : DisplayName\>, et \<baf : description\> des balises, comme le Gestionnaire d’envoi, il utilise également le \<baf : category\> balise. La balise « category » vous permet de regrouper les propriétés. Si vous avez plus d'une catégorie, chacune peut être développée ou réduite et apparaît sous la forme d'un en-tête gris au-dessus des propriétés qui lui correspondent. Pour plus d’informations, consultez [Extensions de schéma de Configuration Framework adaptateur](../core/adapter-framework-configuration-schema-extensions.md).  
   
  Ce schéma contient également un champ URI. Il est renseigné dans la page qui apparaît une fois que vous avez entré toutes les informations de champ dans la page des propriétés du port d'envoi au cours du traitement de validation effectué par l'adaptateur.  
   

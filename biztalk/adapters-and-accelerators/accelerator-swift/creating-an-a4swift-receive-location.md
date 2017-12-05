@@ -15,11 +15,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e3f0835c6d83efc9db91f5c1d63e91f4c143399d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 11c77b7b28c65c4743998f7d4c54d9c7cd48437f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-an-a4swift-receive-location"></a>Emplacement de réception de création d’un A4SWIFT
 Vous devez créer un [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] emplacement de réception pour activer la réception des messages à partir du réseau rapide par [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)], comme indiqué dans l’illustration suivante. L’emplacement de réception reçoit les messages de fichier plat à partir d’un dossier de fichiers entrant.  
@@ -35,7 +35,7 @@ Vous devez créer un [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4
 |Port de réception|Port unidirectionnel|  
 |Type de transport |FILE|  
 |Adresse URI|Nom du dossier que vous souhaitez recevoir le message|  
-|Masque de fichier|\*.  *\<extension >*, où \< *extension*> est l’extension d’entrant message de fichier plat|  
+|Masque de fichier|\*.  *\<extension\>*, où \< *extension* \> est l’extension d’entrant message de fichier plat|  
 |Gestionnaire de réception|BizTalkServerApplication|  
 |Pipeline de réception|Le [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] pipeline de réception qui vous avez créé|  
   
@@ -69,7 +69,7 @@ Vous devez créer un [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4
     > [!NOTE]
     >  Si ce dossier n’existe pas, vous pouvez créer à l’aide de la **créer un nouveau dossier** commande.  
   
-12. Dans la boîte de dialogue Propriétés du Transport FILE, dans le **masque de fichier** , entrez  **\*.\<* extension*>**, où \<* extension*> est l’extension d’entrant message de fichier plat, par exemple **.txt**. Cliquez sur **OK**.  
+12. Dans la boîte de dialogue Propriétés du Transport FILE, dans le **masque de fichier** , entrez  **\*.\<* extension*\>**, où \<* extension* \> est l’extension de fichier plat entrant d’un message, par exemple en tant que **.txt**. Cliquez sur **OK**.  
   
 13. Dans la boîte de dialogue Propriétés de l’emplacement de réception, vérifiez que **BizTalkServerApplication** est entré pour le **Gestionnaire de réception** boîte.  
   

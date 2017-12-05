@@ -12,16 +12,16 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b2b5a0aadec9461d4ee951aa200246764e52f667
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dc5360cf5e76bfc6218f0fe54444b1651afdefae
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="working-with-the-configuration-framework"></a>Utilisation de Configuration Framework
 Configuration Framework permet de modifier de façon rapide et aisée la configuration de Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] à l'installation. Combiné à Microsoft Windows Installer (MSI), Configuration Framework lit et indique l'état de votre ordinateur et les tâches de configuration nécessitant une action.  
   
- Lorsque vous configurez BizTalk Server pour la première fois à l'aide de l'Assistant Configuration, Configuration Framework génère un fichier XML (instantané de la configuration) que vous pouvez modifier (modification des noms d'utilisateur, mots de passe, etc.) et exporter vers d'autres ordinateurs. L'instantané de votre configuration est enregistré dans la page Résumé de la configuration, qui fait partie de l'Assistant Configuration. Cet instantané permet de répliquer votre configuration dans le cadre d'une installation scriptée. Ce fichier se trouve dans \< *chemin d’Installation de BizTalk*> \ConfigMain.xml.  
+ Lorsque vous configurez BizTalk Server pour la première fois à l'aide de l'Assistant Configuration, Configuration Framework génère un fichier XML (instantané de la configuration) que vous pouvez modifier (modification des noms d'utilisateur, mots de passe, etc.) et exporter vers d'autres ordinateurs. L'instantané de votre configuration est enregistré dans la page Résumé de la configuration, qui fait partie de l'Assistant Configuration. Cet instantané permet de répliquer votre configuration dans le cadre d'une installation scriptée. Ce fichier se trouve dans \< *chemin d’Installation de BizTalk*\>\ConfigMain.xml.  
   
 > [!NOTE]
 >  Les mots de passe ne sont pas stockés dans le fichier XML. Vous devez entrer les mots de passe éventuels avant d’utiliser ce fichier.  

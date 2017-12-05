@@ -17,11 +17,11 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 63c3572658e78c7e32722adf38436133ee098e00
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 094a37d90db41e505adeaec3a31ece9128785e04
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-deploy-bam-definitions"></a>Déploiement de définitions BAM
 Les administrateurs utilisent la **déployer-all** commande d’utilitaire de gestion BAM pour déployer une définition BAM à partir du classeur Excel ou le fichier de définitions XML exporté à partir du classeur. Lorsque vous effectuez une installation complète de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], l'Assistant Configuration configure automatiquement le fichier XML de configuration BAM.  
@@ -36,7 +36,7 @@ Les administrateurs utilisent la **déployer-all** commande d’utilitaire de ge
 >  Il est recommandé de vérifier la sécurité des classeurs Excel (.xls) du composant BAM avant de les déployer. Pour cela, utilisez Excel sur l'ordinateur d'administration. Avant de déployer un classeur, ouvrez-le et garantir la sécurité des macros est définie sur élevé, et qu’il n’y a pas d’avertissements.  
   
 > [!IMPORTANT]
->  Dans les bases de données BAM, le « BAM_\<... > « convention d’affectation de noms est réservée pour toutes les entités SQL (tables, index, procédures stockées, rôles, etc....). *Ne le faites pas* cette convention d’affectation de noms permet de créer des entités SQL ; une telle utilisation peut entraîner un comportement non défini.  
+>  Dans les bases de données BAM, le « BAM_\<... \>« convention d’affectation de noms est réservée pour toutes les entités SQL (tables, index, procédures stockées, rôles, etc....). *Ne le faites pas* cette convention d’affectation de noms permet de créer des entités SQL ; une telle utilisation peut entraîner un comportement non défini.  
   
  Avant de déployer un fichier XML de définition BAM, vous devez vous assurer que les paramètres régionaux utilisés lors de sa création correspondent à ceux de l'ordinateur où vous le déployez. Par exemple, si vous créez le fichier sur un ordinateur exécutant une version japonaise de Microsoft Windows, les paramètres régionaux de l'ordinateur où vous effectuez le déploiement du fichier doivent également être définis sur Japonais. Si ces paramètres ne correspondent pas, vous devez modifier en conséquence les paramètres régionaux de l'ordinateur où vous exécutez l'utilitaire de gestion de l'analyse BAM, puis redémarrer l'ordinateur avant de lancer l'utilitaire.  
   
@@ -49,13 +49,13 @@ Les administrateurs utilisent la **déployer-all** commande d’utilitaire de ge
   
 1.  Ouvrez une invite de commandes comme suit : cliquez sur **Démarrer**, cliquez sur **exécuter**, type **cmd**, puis cliquez sur **OK**.  
   
-2.  Accédez au dossier des suivis en tapant **C:\Program Files\Microsoft BizTalk Server \<version > \Tracking** à l’invite de commandes. Appuyez sur **Entrée**.  
+2.  Accédez au dossier des suivis en tapant **C:\Program Files\Microsoft BizTalk Server \<version\>\Tracking** à l’invite de commandes. Appuyez sur **Entrée**.  
   
-3.  Type **bm déployer-all - DefinitionFile :\<fichier de définition BAM >**.  
+3.  Type **bm déployer-all - DefinitionFile :\<fichier de définition BAM\>**.  
   
 4.  Appuyez sur **Entrée**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Gestion de l’Infrastructure dynamique BAM](../core/managing-the-bam-dynamic-infrastructure.md)   
  [Utilitaire de gestion BAM](../core/bam-management-utility.md)   
- [Recommandations de sécurité BAM](../core/bam-security-recommendations.md)
+ [Recommandations de sécurité pour les services BAM](../core/bam-security-recommendations.md)

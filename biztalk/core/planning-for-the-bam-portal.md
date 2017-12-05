@@ -22,17 +22,17 @@ caps.latest.revision: "36"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 54cc5bb9bd123f68fbeb0013423c3f3cc07cd50a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 85f7291d56d662a8e3a9d46308d6b16ca2a1cafc
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="planning-for-the-bam-portal"></a>Planification du portail BAM
 Cette rubrique traite des étapes que vous devrez envisager lors de la planification du déploiement de votre portail BAM.  
   
 ## <a name="prerequisites"></a>Conditions préalables  
- **Configuration système requise**. en plus de la configuration requise pour [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], vous devez installer les logiciels suivants pour assurer l'installation du portail BAM :  
+ **Configuration système requise**. En plus de la configuration système requise pour BizTalk Server, vous devez installer les logiciels suivants afin d’installer le portail BAM :  
   
 -   Internet Information Services (IIS)  
   
@@ -86,7 +86,7 @@ Cette rubrique traite des étapes que vous devrez envisager lors de la planifica
 ## <a name="development-planning"></a>Planification du développement  
  **Chaînes de connexion pour des tableaux croisés dynamiques**. l'utilitaire de gestion de l'analyse BAM ne modifie pas toujours les chaînes de connexion pour les définitions du tableau croisé dynamique d'agrégation RTA durant le déploiement. C'est le cas quand le tableau croisé dynamique RTA possède des chaînes de connexion OLAP préexistantes qui ont été manuellement modifiées alors que la casse de la clé de valeur est incorrecte. Par exemple, dans cette ligne du fichier XML de définition BAM, la clé est RTARef et non pas la clé RtaRef attendue :  
   
- **\<PivotTableView CubeRef = RTARef de « POCube » = « POAmountByLocation » >**  
+ **\<PivotTableView CubeRef = RTARef de « POCube » = « POAmountByLocation »\>**  
   
  En conséquence, le tableau croisé dynamique est généré via le cube OLAP et non via le tableau croisé dynamique RTA.  
   
@@ -111,4 +111,4 @@ Cette rubrique traite des étapes que vous devrez envisager lors de la planifica
 -   Si des utilisateurs utilisent des portails BAM sur des serveurs distincts afin de consulter les vues déployées, des références doivent être activées symétriquement pour que les deux expériences de portail, exécutée chacune par rapport à sa base de données d'importation principale BAM locale, soient identiques.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Personnalisation de la Configuration du portail BAM](../core/customizing-the-bam-portal-configuration.md)
+ [Personnalisation de la configuration du portail BAM](../core/customizing-the-bam-portal-configuration.md)

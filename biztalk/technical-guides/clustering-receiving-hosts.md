@@ -12,17 +12,17 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 876cdb5f3740e5f06d00a536e1459c64ac886d89
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 488a87539228a90ac427339e260653a141eb7121
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="clustering-receiving-hosts"></a>Gestion de clusters hôtes de réception
-[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]Fournit des fonctionnalités qui vous permet de configurer un hôte BizTalk en tant que ressource en cluster dans un [!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] groupe de clusters. Prise en charge du cluster hôte est fourni pour prendre en charge une haute disponibilité intégrée BizTalk adaptateurs de réception qui ne doivent pas être exécutés dans plusieurs instances d’hôte simultanément, telles que le Gestionnaire de réception FTP ou, dans certaines circonstances, Gestionnaire de réception POP3. Cette prise en charge garantit également la cohérence transactionnelle des messages envoyés ou reçus via l'adaptateur MSMQ dans des scénarios exigeant une mise en cluster du service MSMQ.  
+BizTalk Server fournit des fonctionnalités qui vous permet de configurer un hôte BizTalk en tant que ressource en cluster dans un [!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] groupe de clusters. Prise en charge du cluster hôte est fourni pour prendre en charge une haute disponibilité intégrée BizTalk adaptateurs de réception qui ne doivent pas être exécutés dans plusieurs instances d’hôte simultanément, telles que le Gestionnaire de réception FTP ou, dans certaines circonstances, Gestionnaire de réception POP3. Cette prise en charge garantit également la cohérence transactionnelle des messages envoyés ou reçus via l'adaptateur MSMQ dans des scénarios exigeant une mise en cluster du service MSMQ.  
   
 > [!NOTE]  
->  Cluster hôte est disponible uniquement avec [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] Enterprise Edition.  
+>  Cluster hôte est disponible uniquement avec BizTalk Server Enterprise Edition.  
   
 > [!NOTE]  
 >  Avant de mettre en cluster un hôte BizTalk vous devez configurer au moins deux [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ordinateurs dans un groupe BizTalk en tant que membres d’un [!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] cluster. Pour plus d’informations sur la configuration d’un [!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] de cluster, consultez [les Documents de gestion de clusters Windows Server 2008, les livres blancs, les Webcasts, les groupes](http://go.microsoft.com/fwlink/?LinkId=156818) (http://go.microsoft.com/fwlink/?LinkId=156818).  

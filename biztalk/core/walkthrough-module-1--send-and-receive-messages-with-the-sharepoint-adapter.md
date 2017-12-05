@@ -23,11 +23,11 @@ caps.latest.revision: "41"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c66a54a50479a168715ccc66c116372f68f21698
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e8e83297233c4f8ac51ad90f488437a6c259691a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="walkthrough-module-1---sending-and-receiving-messages-with-the-windows-sharepoint-services-adapter"></a>Procédure pas à pas : Module 1 - envoi et réception de Messages avec l’adaptateur Windows SharePoint Services
 Cette procédure décrit la configuration de Windows SharePoint Services et de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] de manière à ce que vous puissiez envoyer et recevoir un message via l'adaptateur Windows SharePoint Services et le routage basé sur le contenu. Ce dernier dispense de l'inscription aux messages pour les messages liés à des ports spécifiques. Il offre également plus de souplesse aux utilisateurs souhaitant acheminer des messages en se basant sur les propriétés d'enveloppe ou simplement sur les propriétés de configuration des ports de réception. Pour une présentation de l’adaptateur Windows SharePoint Services, consultez [quel est l’adaptateur Windows SharePoint Services ?](../core/what-is-the-windows-sharepoint-services-adapter.md).  
@@ -35,7 +35,7 @@ Cette procédure décrit la configuration de Windows SharePoint Services et de [
 ## <a name="prerequisites"></a>Conditions préalables  
  La configuration suivante est requise pour exécuter les procédures décrites dans cette rubrique :  
   
--   Dans un déploiement mono-serveur, vous devez installer complètement [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] exécuté sous [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] ou [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)].  
+-   Vous devez disposer d’un déploiement de serveur unique avec une installation complète de BizTalk Server s’exécutant [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] ou [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)].  
   
  Pour plus d’informations sur l’utilisation de l’adaptateur Windows SharePoint Services dans un déploiement multiserveur, consultez [configuration et déploiement de l’adaptateur Windows SharePoint Services](../core/setting-up-and-deploying-the-windows-sharepoint-services-adapter.md).  
   
@@ -305,4 +305,4 @@ Cette procédure décrit la configuration de Windows SharePoint Services et de [
   
 ## <a name="see-also"></a>Voir aussi  
  [Nouveautés de l’adaptateur Windows SharePoint Services ?](../core/what-is-the-windows-sharepoint-services-adapter.md)   
- [Procédures pas à pas de carte de Windows SharePoint Services](../core/windows-sharepoint-services-adapter-walkthroughs.md)
+ [Procédures pas à pas relatives à l’adaptateur Windows SharePoint Services](../core/windows-sharepoint-services-adapter-walkthroughs.md)

@@ -15,11 +15,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9a7a5dc4aa7c3acca26705449108bb75541099c3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2525e0e87106e2eeb82fb05b52b3ec69d4be876d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-4-creating-the-headerhelper-project"></a>Étape 4 : Création du projet de HeaderHelper
 Dans cette étape, vous allez créer une [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] bibliothèque de classes. Lorsqu’une orchestration de processus privé reçoit un message entrant, la bibliothèque HeaderHelper détermine si la conversion d’un document est requise et si elle est nécessaire, effectue cette conversion. Cela permet à l’orchestration de travailler avec différentes versions des documents de Framework RNIF (RosettaNet Implementation). En outre, lorsqu’un message de réponse 3A2 est envoyé, la bibliothèque HeaderHelper effectue une conversion de documents supplémentaires avant de transmettre le message.  
@@ -112,7 +112,7 @@ Dans cette étape, vous allez créer une [!INCLUDE[btsDotNet](../../includes/bts
   
 3.  Dans le volet droit, cliquez sur **signer l’Assembly**.  
   
-4.  Cliquez sur le **choisir un fichier de clé de nom fort** zone de texte, puis sélectionnez  **\<Parcourir >** dans la liste déroulante.  
+4.  Cliquez sur le **choisir un fichier de clé de nom fort** zone de texte, puis sélectionnez  **\<Parcourir\>**  dans la liste déroulante.  
   
 5.  Dans la boîte de dialogue Sélectionner le fichier, accédez à l’emplacement de votre assembly de Contoso, double-cliquez sur **FabConPriceAvail.snk**.  
   
@@ -139,4 +139,4 @@ Dans cette étape, vous allez créer une [!INCLUDE[btsDotNet](../../includes/bts
 4.  À l’invite de commandes, tapez **gacutil /if HeaderHelper.dll** et appuyez sur **entrée** pour installer le **HeaderHelper** assembly dans le **Global Assembly Cache** .  
   
 ## <a name="see-also"></a>Voir aussi  
- [Étape 5 : Modification de l’Orchestration de processus de privé de Contoso](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md)
+ [Étape 5 : Modification de l’orchestration du processus privé de Contoso](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md)

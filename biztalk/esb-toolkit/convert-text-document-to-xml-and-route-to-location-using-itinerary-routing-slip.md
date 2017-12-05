@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0ba308473568c222559ccc799faf3233478ee490
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c8284c1623329133533fe03aab567b1281f07c1a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-convert-a-text-document-to-xml-and-route-to-a-file-location-using-an-itinerary-routing-slip"></a>Comment : convertir un Document texte XML et d’itinéraire vers un emplacement de fichier à l’aide d’un bon d’itinéraire de routage
 ## <a name="goal"></a>Objectif  
@@ -46,7 +46,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-deploy-the-dataformattransformation-itinerary"></a>Pour déployer l’itinéraire DataFormatTransformation  
   
-1.  Dans [!INCLUDE[vs2010](../includes/vs2010-md.md)], ouvrez C:\Projects\Microsoft.Practices.ESB\Source\Samples\DataFormatTransformation\DataFormatTransformation.sln.  
+1.  Dans Visual Studio, ouvrez C:\Projects\Microsoft.Practices.ESB\Source\Samples\DataFormatTransformation\DataFormatTransformation.sln.  
   
 2.  Dans l’Explorateur de solutions, dans le **Itinerary.Library** de projet, double-cliquez sur **DataFormatTransformation.itinerary** pour l’ouvrir dans le Concepteur d’itinéraire.  
   
@@ -121,9 +121,9 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-and-configure-an-esb-on-ramp"></a>Pour créer et configurer un ESB rampe d’entrée  
   
-1.  Cliquez sur **Démarrer** dans la barre des tâches, pointez sur **tous les programmes**, pointez sur  **[!INCLUDE[prague](../includes/prague-md.md)]** , puis cliquez sur **Administration de BizTalk Server**.  
+1.  Cliquez sur **Démarrer** dans la barre des tâches, pointez sur **tous les programmes**, pointez sur **BizTalk Server**, puis cliquez sur **Administration de BizTalk Server**.  
   
-2.  Dans le [!INCLUDE[prague](../includes/prague-md.md)] Console d’Administration, développez **groupe BizTalk**, développez **Applications**, puis cliquez sur **Microsoft.Practices.ESB**.  
+2.  Dans la Console Administration de BizTalk Server, développez **groupe BizTalk**, développez **Applications**, puis cliquez sur **Microsoft.Practices.ESB**.  
   
 3.  Avec le bouton droit **emplacements de réception**, pointez sur **nouveau**, puis cliquez sur **emplacement de réception unidirectionnel**.  
   
@@ -149,7 +149,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  Cliquez sur **OK** pour fermer la **propriétés de l’emplacement de réception** boîte de dialogue.  
   
-4.  Dans le [!INCLUDE[prague](../includes/prague-md.md)] Console d’Administration, avec le bouton droit le **OnRamp.Itinerary.FlatFile.FILE** emplacement de réception, puis cliquez sur **activer**.  
+4.  Dans la Console Administration de BizTalk Server, cliquez sur le **OnRamp.Itinerary.FlatFile.FILE** emplacement de réception, puis cliquez sur **activer**.  
   
 #### <a name="to-test-itinerary-based-routing-of-a-flat-file-message"></a>Pour tester le routage basé sur l’itinéraire d’un message de fichier plat  
   
@@ -159,17 +159,17 @@ ms.lasthandoff: 09/20/2017
   
 3.  Accédez à C:\HowTos\Out. Vérifiez que le message DFT%MessageID%.xml a été écrit dans le répertoire.  
   
-4.  Dans le [!INCLUDE[prague](../includes/prague-md.md)] Console d’Administration, avec le bouton droit le **OnRamp.Itinerary.FlatFile.FILE** emplacement de réception, puis cliquez sur **désactiver**.  
+4.  Dans la Console Administration de BizTalk Server, cliquez sur le **OnRamp.Itinerary.FlatFile.FILE** emplacement de réception, puis cliquez sur **désactiver**.  
   
 5.  Après le **OnRamp.Itinerary.FlatFile.FILE** recevoir d’emplacement est désactivée, faites un clic droit, puis cliquez sur **supprimer**. Dans le **emplacement de réception de confirmer la suppression** boîte de dialogue, cliquez sur **Oui**.  
   
 ## <a name="additional-resources"></a>Ressources supplémentaires  
  Pour plus d'informations, consultez les rubriques connexes suivantes :  
   
--   [Comment : transformer un Message et router le Message résultant à un emplacement de fichier à l’aide d’un bon d’itinéraire de routage](../esb-toolkit/transform-message-and-route-the-message-to-a-location-using-itinerary-routing.md)  
+-   [Guide pratique pour transformer un message et router le message résultant vers un emplacement de fichier à l’aide d’un bordereau de routage d’itinéraire](../esb-toolkit/transform-message-and-route-the-message-to-a-location-using-itinerary-routing.md)  
   
--   [Comment : router un Message unique à plusieurs destinataires à l’aide d’un bon d’itinéraire de routage](../esb-toolkit/route-a-single-message-to-multiple-recipients-using-an-itinerary-routing-slip.md)  
+-   [Guide pratique pour router un même message vers plusieurs destinataires à l’aide d’un bordereau de routage d’itinéraire](../esb-toolkit/route-a-single-message-to-multiple-recipients-using-an-itinerary-routing-slip.md)  
   
 -   [Activités de développement](../esb-toolkit/development-activities.md)  
   
--   [Modèles de Transformation de messages](../esb-toolkit/message-transformation-patterns.md)
+-   [Modèles de transformation des messages](../esb-toolkit/message-transformation-patterns.md)

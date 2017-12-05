@@ -16,11 +16,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7b5162d05f9daa591458acaf87aefd86478ef70d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3e04d2dfcd6d7f34b0a60a450b64e217b02390a6
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="tpe-menu-options"></a>Options de menu de l'Éditeur de modèle de suivi
 Cette rubrique décrit les options de menu de l'Éditeur de modèle de suivi. Les menu principal contient les options Fichier, Outils et Aide.  
@@ -91,7 +91,7 @@ Cette rubrique décrit les options de menu de l'Éditeur de modèle de suivi. Le
  Vous pouvez travailler en vous servant de plusieurs assemblys à la fois. Vous ne pouvez pas travailler avec ces assemblys simultanément mais plusieurs d'entre eux sont accessibles dans une seule session de modification relative à une définition d'activité BAM.  En d'autres termes, si vous importez une définition d'activité BAM et que vous sélectionnez ensuite trois assemblys dans lesquels récupérer des éléments suivis, le modèle que l'Éditeur de modèle de suivi crée est appliqué à plusieurs modèles associés aux orchestrations et aux ports utilisés dans le modèle de suivi. Le modèle de suivi contient toujours des informations sur tous les assemblys associés à une définition d'activité BAM donnée.  
   
 > [!CAUTION]
->  Dans [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], un seul modèle de suivi peut être déployé d'après une activité BAM. Par conséquent, si vous déployez un modèle dont l'activité correspondante est mappée à une orchestration et que vous déployez ensuite un autre modèle pour lequel la même activité est mappée à des orchestrations différentes, le premier modèle déployé est remplacé.  
+>  Dans BizTalk Server, chaque activité BAM ne peut avoir qu’un seul profil de suivi déployé sur celui-ci. Par conséquent, si vous déployez un modèle dont l'activité correspondante est mappée à une orchestration et que vous déployez ensuite un autre modèle pour lequel la même activité est mappée à des orchestrations différentes, le premier modèle déployé est remplacé.  
   
 ### <a name="remove-tracking-profile"></a>Suppression d'un modèle de suivi  
  Le **supprimer le modèle de suivi** option de menu supprime le modèle de suivi pour la définition d’activité chargée et ses orchestrations et ports correspondants. Vous êtes invité à confirmer cette action avant qu'elle ne soit terminée.  

@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d16a378c266b9243562e867c1041e009cabb9efc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9a2091482bfda8110fc36dc0431b80093b715695
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="exporting-agreement-properties-to-an-xml-file"></a>Exportation des propriétés d'un accord vers un fichier XML
 Cette section fournit des instructions sur l'exportation des propriétés d'un accord vers un fichier XML.  
@@ -26,7 +26,7 @@ Cette section fournit des instructions sur l'exportation des propriétés d'un a
   
 ### <a name="to-export-agreement-properties-to-an-xml-file"></a>Pour exporter les propriétés d'un accord vers un fichier XML  
   
-1.  Dans le [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] Console d’Administration, cliquez sur le **Parties** nœud sous la **Administration de BizTalk Server** et **groupe BizTalk** nœuds. Dans le **tiers et profils d’entreprise** , cliquez sur un tiers, puis sur le profil d’entreprise qui a l’accord que vous souhaitez exporter les paramètres à partir de.  
+1.  Dans la Console Administration de BizTalk Server, cliquez sur le **Parties** nœud sous la **Administration de BizTalk Server** et **groupe BizTalk** nœuds. Dans le **tiers et profils d’entreprise** , cliquez sur un tiers, puis sur le profil d’entreprise qui a l’accord que vous souhaitez exporter les paramètres à partir de.  
   
 2.  Sur le **tiers et profils d’entreprise** page, dans le **accords** section, avec le bouton droit de l’accord que vous voulez exporter les propriétés et cliquez sur **propriétés**.  
   
@@ -38,4 +38,4 @@ Cette section fournit des instructions sur l'exportation des propriétés d'un a
   
 ## <a name="see-also"></a>Voir aussi  
  [Réutilisation des propriétés d’un autre accord](../core/reusing-properties-from-another-agreement.md)   
- [L’importation des propriétés de l’accord d’un fichier XML](../core/importing-agreement-properties-from-an-xml-file.md)
+ [Importation des propriétés d’un accord à partir d’un fichier XML](../core/importing-agreement-properties-from-an-xml-file.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e31746fbbc34e24ab1638cb52c84f99e43a876b5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7c9aaefe0cff41365a587079d0c82629ddddc586
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-configure-the-ports"></a>Étape 2 : Configurer les Ports
 ![Étape 2 sur 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")  
@@ -61,7 +61,7 @@ ms.lasthandoff: 09/20/2017
 2.  Étant donné que vous effectuez deux opérations utilisant le même port d’envoi, vous devez utiliser mappage d’action dynamique pour spécifier l’action pour l’opération. Lors de la configuration du port, dans le **Action** , spécifiez le mappage d’action de la manière suivante :  
   
     ```  
-    \<BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
+    <BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
       <Operation Name="UpdateEmp" Action="TypedProcedure/dbo/UPDATE_EMPLOYEE" />  
       <Operation Name="InsertPO" Action="TableOp/Insert/dbo/Purchase_Order" />  
     </BtsActionMapping>  
@@ -96,4 +96,4 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>Voir aussi  
  [Étape 1 : Déployer l’Orchestration](../../adapters-and-accelerators/adapter-sql/step-1-deploy-the-orchestration.md)   
  [Étape 3 : Configurer et démarrer l’Application](../../adapters-and-accelerators/adapter-sql/step-3-configure-and-start-the-application.md)   
- [Leçon 5 : Déployer la Solution](../../adapters-and-accelerators/adapter-sql/lesson-5-deploy-the-solution.md)
+ [Leçon 5 : Déployer la solution](../../adapters-and-accelerators/adapter-sql/lesson-5-deploy-the-solution.md)

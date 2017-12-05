@@ -15,17 +15,17 @@ caps.latest.revision: "32"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a4f443bf0b60f0bb90a914824b3922110ee1b300
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f09615b8038170bfdc0f9d63492e40dc1b2a0eba
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="http-adapter-biztalk-server-sample"></a>Adaptateur HTTP (exemple BizTalk Server)
 L'exemple d'adaptateur HTTP illustre l'implémentation des paradigmes de communication de requête/réponse et de sollicitation/réponse utilisés dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
- *\<Exemples de chemin d’accès >*\AdaptersDevelopment\HttpAdapter\  
+ *\<Exemples de chemin d’accès\>*\AdaptersDevelopment\HttpAdapter\  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -49,7 +49,7 @@ L'exemple d'adaptateur HTTP illustre l'implémentation des paradigmes de communi
   
 1.  Dans une fenêtre de commande, accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \AdaptersDevelopment\HttpAdapter  
+     \<*Exemples de chemin d’accès*\>\AdaptersDevelopment\HttpAdapter  
   
 2.  Exécutez le fichier Setup.bat, qui effectue les actions suivantes :  
   
@@ -63,7 +63,7 @@ L'exemple d'adaptateur HTTP illustre l'implémentation des paradigmes de communi
   
 -   groupe IIS_WPG.  
   
--   Sous IIS 7.0, vous devez migrer l’application fonctionne avec le mode .NET intégré. Vous pouvez migrer la configuration d’application, y compris le contenu de la \<httpHandlers > section de configuration, à l’aide de ce qui suit à partir d’une fenêtre de ligne de commande (la fenêtre doit être en cours d’exécution en tant qu’administrateur) :  
+-   Sous IIS 7.0, vous devez migrer l’application fonctionne avec le mode .NET intégré. Vous pouvez migrer la configuration d’application, y compris le contenu de la \<httpHandlers\> section de configuration, à l’aide de ce qui suit à partir d’une fenêtre de ligne de commande (la fenêtre doit être en cours d’exécution en tant qu’administrateur) :  
   
     ```  
     %systemroot%\system32\inetsrv\APPCMD.EXE migrate config "Default Web Site/HttpReceive"  
@@ -84,7 +84,7 @@ L'exemple d'adaptateur HTTP illustre l'implémentation des paradigmes de communi
   
 #### <a name="to-register-the-http-adapter-sample"></a>Pour enregistrer l'exemple d'adaptateur HTTP  
   
-1.  Dans l’Explorateur Windows, accédez au lecteur d’installation pour [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], puis accédez à \<chemin d’accès des exemples > \AdaptersDevelopment\HTTPAdapter.  
+1.  Dans l’Explorateur Windows, accédez au lecteur d’installation pour [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], puis accédez à \<exemples de chemin\>\AdaptersDevelopment\HTTPAdapter.  
   
 2.  Pour ajouter l’exemple d’adaptateur au Registre, double-cliquez sur **HTTP.NET.reg**.  
   
@@ -137,7 +137,7 @@ L'exemple d'adaptateur HTTP illustre l'implémentation des paradigmes de communi
  L'adaptateur HTTP.NET peut maintenant être utilisé par votre application. Lors de la configuration de l’adaptateur, le format de la **répertoire virtuel** propriété du transport est au format : /httpreceive/httpreceive.aspx?optionalQueryString.  
   
 ## <a name="comments"></a>Commentaires  
- Le fait de l’adaptateur HTTP.NET utilisation des classes BaseAdapter fournie dans  *\<exemples de chemin >*\AdaptersDevelopment\BaseAdapter\v1.0... 2\\. Les classes fournies dans le projet BaseAdapter sont conçues pour accélérer le développement de l'adaptateur. Pour plus d'informations sur les classes fournies, consultez les commentaires du code BaseAdapter.  
+ Le fait de l’adaptateur HTTP.NET utilisation des classes BaseAdapter fournie dans  *\<exemples de chemin\>*\AdaptersDevelopment\BaseAdapter\v1.0... 2\\. Les classes fournies dans le projet BaseAdapter sont conçues pour accélérer le développement de l'adaptateur. Pour plus d'informations sur les classes fournies, consultez les commentaires du code BaseAdapter.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Inscription d’un adaptateur](../core/registering-an-adapter.md)   
@@ -149,4 +149,4 @@ L'exemple d'adaptateur HTTP illustre l'implémentation des paradigmes de communi
  [Développement d’un adaptateur d’envoi](../core/developing-a-send-adapter.md)   
  [Comment déployer un adaptateur personnalisé](../core/how-to-deploy-a-custom-adapter.md)   
  [Conseils pour la conception de votre adaptateur.](../core/tips-for-designing-your-adapter.md)   
- [Configuration de l’adaptateur au moment du Design](../core/adapter-design-time-configuration.md)
+ [Configuration de l’adaptateur au moment du design](../core/adapter-design-time-configuration.md)

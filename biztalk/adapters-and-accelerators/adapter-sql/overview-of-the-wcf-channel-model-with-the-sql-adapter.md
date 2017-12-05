@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fc154ed37569238b4a41940df0310ec9066e975f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ad124e7ce9fdf8c3dac6a1ac0ffda122127becb9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="overview-of-the-wcf-channel-model-with-the-sql-adapter"></a>Vue d’ensemble du modèle de canal WCF avec l’adaptateur SQL
 Pour appeler des opérations sur le [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)], votre code se comporte comme un client WCF et envoie les opérations sortantes à l’adaptateur. Dans le modèle de canal WCF, votre code appelle les opérations sur la carte en envoyant un message de demande sur un canal.  
@@ -44,11 +44,11 @@ Pour appeler des opérations sur le [!INCLUDE[adaptersql](../../includes/adapter
   
  Comme toute liaison WCF, le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] utilise un modèle de fabrique pour fournir des canaux pour le code d’application. Vous utilisez un **Microsoft.Adapters.SQLBinding** pour créer des instances d’objet :  
   
--   **System.ServiceModel.ChannelFactory\<IRequestChannel >** pour fournir **IRequestChannel** canaux, vous pouvez utiliser pour appeler des opérations de requête-réponse sur la carte.  
+-   **System.ServiceModel.ChannelFactory\<IRequestChannel\>**  pour fournir **IRequestChannel** canaux, vous pouvez utiliser pour appeler des opérations de requête-réponse sur la carte.  
   
--   **System.ServiceModel.ChannelFactory\<IOutputChannel >** pour fournir **IOutputChannel** canaux, vous pouvez utiliser pour appeler des opérations unidirectionnelles sur la carte.  
+-   **System.ServiceModel.ChannelFactory\<IOutputChannel\>**  pour fournir **IOutputChannel** canaux, vous pouvez utiliser pour appeler des opérations unidirectionnelles sur la carte.  
   
--   **System.ServiceModel.IChannelListener\<IInputChannel >** pour fournir **IInputChannel** vous pouvez utiliser pour recevoir des messages pour les opérations entrantes, telles que les canaux **d’interrogation** ou **Notification**, à partir de l’adaptateur.  
+-   **System.ServiceModel.IChannelListener\<IInputChannel\>**  pour fournir **IInputChannel** vous pouvez utiliser pour recevoir des messages pour les opérations entrantes, telles que les canaux  **L’interrogation** ou **Notification**, à partir de l’adaptateur.  
   
 ### <a name="creating-messages-for-the-sql-server-database-adapter-in-the-wcf-channel-model"></a>Création de Messages pour l’adaptateur de base de données SQL Server dans le modèle de canal WCF  
  Dans WCF le **System.ServiceModel.Channels.Message** classe fournit une mémoire en représentation sous forme d’un message SOAP. Vous créez un **Message** instance en appelant la méthode statique **Message.Create** (méthode).  
@@ -82,4 +82,4 @@ Message messageIn = Message.CreateMessage(MessageVersion.Default,
 >  Vous devez fournir une action de message dans votre **Message** instance. Cela est généralement le cas lorsque le **Message** instance est créée.  
   
 ## <a name="see-also"></a>Voir aussi  
-[Développer des applications à l’aide du modèle de canal WCF](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-channel-model.md)
+[Développer des applications en utilisant le modèle de canal WCF](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-channel-model.md)

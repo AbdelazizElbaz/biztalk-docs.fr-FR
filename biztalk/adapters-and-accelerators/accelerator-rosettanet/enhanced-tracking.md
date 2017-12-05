@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6660cf8f783a407c3ddead342effecfb4cdd0201
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0212caafb34ca76988e1a863899021b44ac416fb
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="enhanced-tracking"></a>Suivi amélioré
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] fournit une capacité améliorée pour effectuer le suivi des messages et processus. Les fonctionnalités natives d’analyse BAM (Business Activity) dans [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] consiste à effectuer le suivi des métadonnées uniquement. [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]assure le suivi de message contenu : contenu du service et les en-têtes.  
@@ -98,8 +98,8 @@ ms.lasthandoff: 09/20/2017
 ### <a name="activity-definition-file"></a>Fichier de définition d’activité  
  Le fichier de définition d’activité définit les champs que vous suivez dans l’analyse BAM, et comment les afficher. Pour plus d’informations sur ce fichier, consultez [fonctionne avec le fichier de définition de suivi des activités](../../adapters-and-accelerators/accelerator-rosettanet/working-with-the-tracking-activity-definition-file.md).  
   
- Pour plus d’informations sur BAM, consultez « analyse BAM (Business Activity) » dans [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] aide.  
+ Pour plus d’informations sur BAM, consultez « analyse BAM (Business Activity) » dans l’aide de BizTalk Server.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Utilisation avec le fichier de définition des activités de suivi](../../adapters-and-accelerators/accelerator-rosettanet/working-with-the-tracking-activity-definition-file.md)   
- [BizTalk Accelerator for RosettaNet ajoutée à BizTalk Server](../../adapters-and-accelerators/accelerator-rosettanet/what-biztalk-accelerator-for-rosettanet-adds-to-biztalk-server.md)
+ [Ce qu’apporte BizTalk Accelerator pour RosettaNet à BizTalk Server](../../adapters-and-accelerators/accelerator-rosettanet/what-biztalk-accelerator-for-rosettanet-adds-to-biztalk-server.md)

@@ -17,14 +17,14 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2db4b3d5ff34a724b8b37a08f0bf60807d31a2b2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 527b0d707d0f78672018f31e60ea54ac436e1db4
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="installing-and-configuring-biztalk-server-on-the-messaging-server"></a>Installation et configuration de BizTalk Server sur le serveur de messagerie
-Cette section décrit comment installer et configurer [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] à utiliser en tant que le serveur de messagerie pour la connexion au réseau rapide.  
+Cette section décrit comment installer et configurer BizTalk Server à utiliser en tant que le serveur de messagerie pour la connexion au réseau rapide.  
   
 ### <a name="to-install-and-configure-biztalk-server-on-the-messaging-server"></a>Pour installer et configurer BizTalk Server sur le serveur de messagerie  
   

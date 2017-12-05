@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 886dc607f0d133392b522a13ec15026a0f421f40
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5078cdc0a4b2d28e81daf2247cb0f1f35b3d6288
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="biztalk-server-2010-operations-guide"></a>Guide des opérations BizTalk Server 2010
 Bienvenue dans le Guide des opérations Microsoft® BizTalk® Server 2010. Nous avons créé ce guide pour être une ressource précieuse pour toute personne impliquée dans l’implémentation et l’administration d’une solution BizTalk, en particulier les professionnels de l’informatique.  
@@ -24,13 +24,13 @@ Bienvenue dans le Guide des opérations Microsoft® BizTalk® Server 2010. Nous 
  Pour télécharger une copie de ce guide sous forme de chm, pdf ou docx, accédez à [Guide des opérations Microsoft BizTalk Server 2010](http://go.microsoft.com/fwlink/?LinkId=212652) (http://go.microsoft.com/fwlink/?LinkId=212652).  
   
 ## <a name="which-versions-of-biztalk-server-does-the-guide-cover"></a>Les Versions de BizTalk Server couvre le Guide ?  
- Ce guide répond aux besoins [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] et fournit des informations de disponibilité opérationnelle pour vous aider à accélérer avec votre [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] le programme d’installation.  
+ Ce guide satisfait à BizTalk Server et fournit des informations de disponibilité opérationnelle pour vous aider à accélérer avec votre [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] le programme d’installation.  
   
 > [!NOTE]
 >  Pour voir le Guide des opérations de [!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)] ou [!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)], consultez [http://go.microsoft.com/fwlink/?LinkID=130458](http://go.microsoft.com/fwlink/?LinkID=130458).  
   
 ## <a name="where-do-i-start"></a>Où commencer ?  
- Nous organisées le guide selon les aspects fonctionnels de la planification, de déploiement et de gestion une [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] installation. Vous pouvez donc le lire en fonction de ces aspects fonctionnels. Toutefois, vous devez savoir que les listes de contrôle serait plus recherché après les informations contenues dans le [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] Operations Guide, nous avons classé les listes de contrôle dans le document dans le tableau suivant pour faciliter l’accessibilité.  
+ Nous organisées le guide selon les aspects fonctionnels de la planification, de déploiement et de gestion une [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] installation. Vous pouvez donc le lire en fonction de ces aspects fonctionnels. Toutefois, vous devez savoir que les listes de contrôle serait plus recherché après les informations contenues dans le Guide des opérations BizTalk Server, nous avons classé les listes de contrôle dans le document dans le tableau suivant pour faciliter l’accessibilité.  
   
 |||  
 |-|-|  
@@ -38,7 +38,7 @@ Bienvenue dans le Guide des opérations Microsoft® BizTalk® Server 2010. Nous 
 |-   [Liste de vérification : Mise en route avec BizTalk Server](http://msdn.microsoft.com/library/37d265cd-c393-46ac-ac21-129a1511359b)<br />-   [Liste de vérification : Configuration de Windows Server](~/technical-guides/checklist-configuring-windows-server.md)<br />-   [Liste de vérification : Configuration d’Internet Information Services](~/technical-guides/checklist-configuring-internet-information-services.md)<br />-   [Liste de vérification : Configuration de SQL Server](../technical-guides/checklist-configuring-sql-server.md)<br />-   [Liste de vérification : Configuration de BizTalk Server](~/technical-guides/checklist-configuring-biztalk-server.md)|-   [Liste de vérification : Offrant une haute disponibilité avec une tolérance de panne ou l’équilibrage de charge](~/technical-guides/checklist-providing-high-availability-with-fault-tolerance-or-load-balancing.md)<br />-   [Liste de vérification : Accroître la disponibilité avec la récupération d’urgence](~/technical-guides/checklist-increasing-availability-with-disaster-recovery.md)|  
 |**Surveillance, le test et résolution des problèmes**|**Performances et Maintenance**|  
 |-   [Liste de vérification : Analyse opérationnelle](~/technical-guides/checklist-monitoring-operational-readiness.md)<br />-   [Liste de vérification : Gestion et résolution des problèmes de bases de données BizTalk Server](../technical-guides/checklist-maintaining-and-troubleshooting-biztalk-server-databases.md)<br />-   [Liste de vérification : Test opérationnelle](~/technical-guides/checklist-testing-operational-readiness.md)<br />-   [Liste de vérification : Analyse de BizTalk Server avec Operations Manager 2007](~/technical-guides/checklist-monitoring-biztalk-server-with-operations-manager-2007.md)<br />-   [Liste de vérification : Analyse des serveurs SQL Server](~/technical-guides/checklist-monitoring-sql-servers.md)|Listes de contrôle liée à la maintenance :<br /><br /> -   [Liste de vérification : Effectuer des vérifications de Maintenance quotidienne](~/technical-guides/checklist-performing-daily-maintenance-checks.md)<br />-   [Liste de vérification : Effectuer des vérifications de Maintenance hebdomadaire](~/technical-guides/checklist-performing-weekly-maintenance-checks.md)<br />-   [Liste de vérification : Effectuer des vérifications de Maintenance mensuelle](~/technical-guides/checklist-performing-monthly-maintenance-checks.md)<br /><br /> Performances liées aux listes de vérification :<br /><br /> -   [Liste de vérification : Effectuer des vérifications de performances hebdomadaire](~/technical-guides/checklist-performing-weekly-performance-checks.md)<br />-   [Liste de vérification : Effectuer des vérifications de performances mensuel](~/technical-guides/checklist-performing-monthly-performance-checks.md)|  
-|**Listes de contrôle pour les autres tâches importantes**||  
+|**Listes de contrôle pour d’autres tâches importantes**||  
 |-   [Liste de vérification : Déploiement d’une Application](~/technical-guides/checklist-deploying-an-application.md)<br />-   [Liste de vérification : Exportation des liaisons à partir d’une Application vers un autre](~/technical-guides/checklist-exporting-bindings-from-one-application-to-another.md)<br />-   [Liste de vérification : Mise à jour d’un Assembly](~/technical-guides/checklist-updating-an-assembly.md)<br />-   [Liste de vérification : Mise à jour des artefacts dans une Application BizTalk](~/technical-guides/checklist-updating-artifacts-in-a-biztalk-application.md)|-   [Liste de vérification : Mise à jour d’une Application à l’aide du contrôle de version côte à côte](~/technical-guides/checklist-updating-an-application-using-side-by-side-versioning.md)<br />-   [Liste de vérification : Mise à jour d’une Orchestration à l’aide du contrôle de version côte à côte](~/technical-guides/checklist-updating-an-orchestration-using-side-by-side-versioning.md)<br />-   [Liste de vérification : Installation et configuration des certificats](../technical-guides/checklist-installing-and-configuring-certificates.md)<br />-   [Liste de vérification : Planification des opérations dans un environnement sécurisé](../technical-guides/checklist-planning-for-operations-in-a-secure-environment.md)|  
   
  Si vous effectuez les tâches suivantes, vous pouvez démarrer avec les rubriques connexes :  

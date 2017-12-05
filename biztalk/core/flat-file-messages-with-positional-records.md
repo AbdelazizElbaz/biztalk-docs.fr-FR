@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 26c9e4551abcbd0fba32b21fb8e4205bece6e82f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 42ad36873c5b252afb185f5e341de923942dea73
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="flat-file-messages-with-positional-records"></a>Messages de fichier plat avec des enregistrements positionnels
 Les enregistrements positionnels d'un message d'instance de fichier plat contiennent des champs individuels (éléments de données) qui ont chacun une longueur prédéfinie. Les champs sont analysés selon ces longueurs. Prenons l'exemple de l'enregistrement positionnel suivant, issu d'un message d'instance de fichier plat et qui contient une adresse de livraison (la première ligne indique le nombre de caractères réservés à chaque champ).  
@@ -65,7 +65,7 @@ US        Alice Smith         123 Maple Street    Mill Valley    CA 90952
   
 -   Enregistrements positionnels dotés de longueurs de champ spécifiées sous la forme d'un nombre spécifique d'octets et non d'un nombre spécifique de caractères. Pour plus d’informations, consultez [comptage des positions en octets](../core/position-counting-in-bytes.md).  
   
- Pour vous aider à mieux comprendre comment fonctionnent les fichiers plats positionnels, consultez les exemples dans les dossiers FlatFileReceive et FlatFileSend dans \Program Files\Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]\SDK\Samples\Pipelines\AssemblerDisassembler\\.  
+ Pour vous aider à mieux comprendre comment fonctionnent les fichiers plats positionnels, consultez les exemples dans les dossiers FlatFileReceive et FlatFileSend dans \Program Files\Microsoft BizTalk Server\SDK\Samples\Pipelines\AssemblerDisassembler\\.  
   
 > [!NOTE]
 >  Si votre fichier plat contient des enregistrements délimités et positionnels, vous devez définir le **Structure** propriété du nœud racine à **délimité** et **Structure** propriété de secondaire des nœuds d’enregistrement soit **délimité** ou **positionnel** selon le cas.  

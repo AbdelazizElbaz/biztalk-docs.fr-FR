@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d9cf7cddd25f3f01b6203c050a4391e16cedc989
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 084eaf8cd4ba1c251b1c196830f76ef9c6a8e33f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-enable-tracing-in-bam"></a>Activation du suivi dans BAM
 Vous pouvez activer le suivi dans BAM afin de faciliter la résolution des problèmes susceptibles de survenir dans les cinq composants BAM suivants :  
@@ -93,28 +93,28 @@ Vous pouvez activer le suivi dans BAM afin de faciliter la résolution des probl
   
 1.  Modifiez le fichier [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]BTSNTSvc.exe.config.  
   
-2.  Recherchez le \<system.diagnostics > et  \< /System.Diagnostics > balise. Si vous ne les trouvez pas dans le fichier, copiez le code indiqué plus haut et collez-le dans le fichier de configuration.  
+2.  Recherchez le \<system.diagnostics\> et \</System.Diagnostics\> balise. Si vous ne les trouvez pas dans le fichier, copiez le code indiqué plus haut et collez-le dans le fichier de configuration.  
   
-3.  Supprimez les marques de commentaires que les diagnostics système section en plaçant le délimiteur de commentaire de fin ('-->') d’après le \</System.Diagnostics > balise avant le \<system.diagnostics > balise.  
+3.  Supprimez les marques de commentaires que les diagnostics système section en plaçant le délimiteur de commentaire de fin ('-->') d’après le \</System.Diagnostics\> balise avant le \<system.diagnostics\> balise.  
   
 4.  Enregistrez le fichier.  
   
 ## <a name="enabling-tracing-for-the-bam-portal"></a>Activation du suivi pour le portail BAM  
  L'activation du suivi pour le portail BAM vous permet de résoudre les problèmes de connectivité.  
   
- Le portail BAM est une application ASP.NET qui suit le protocole standard de suivi. Dans le [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]bamportal\web.config, fichier, il existe une section intitulée \<trace > que vous pouvez activer.  
+ Le portail BAM est une application ASP.NET qui suit le protocole standard de suivi. Dans le [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]bamportal\web.config, fichier, il existe une section intitulée \<trace\> que vous pouvez activer.  
   
 #### <a name="to-enable-tracing-for-the-bam-portal"></a>Pour activer le suivi pour le portail BAM  
   
 1.  Modifiez le fichier [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]BAMPortal\web.config.  
   
-2.  Recherchez le \<system.diagnostics > et  \< /System.Diagnostics > balises.  
+2.  Recherchez le \<system.diagnostics\> et \</System.Diagnostics\> balises.  
   
-3.  Supprimez les commentaires de la section des diagnostics système par déplacement délimiteur de commentaire de fin ('-->') d’après le \</System.Diagnostics > balise avant le \<system.diagnostics > balise.  
+3.  Supprimez les commentaires de la section des diagnostics système par déplacement délimiteur de commentaire de fin ('-->') d’après le \</System.Diagnostics\> balise avant le \<system.diagnostics\> balise.  
   
 4.  Modifiez l'attribut initializeData afin d'indiquer l'emplacement d'écriture du journal des suivis.  
   
-5.  Recherchez \<system.web > balise.  
+5.  Recherchez \<system.web\> balise.  
   
 6.  Dans la section system.web, repérez la balise de suivi et supprimez les marques de commentaires de la commande trace en plaçant le délimiteur ('-->'), placé après la balise de suivi, devant la balise.  
   
@@ -226,4 +226,4 @@ Vous pouvez activer le suivi dans BAM afin de faciliter la résolution des probl
  Utilisez l'outil WCF Service Trace Viewer pour analyser le suivi WCF. Pour plus d’informations sur l’outil Service Trace Viewer, consultez [http://go.microsoft.com/fwlink/?LinkId=75218](http://go.microsoft.com/fwlink/?LinkId=75218).  
   
 ## <a name="see-also"></a>Voir aussi  
- [La gestion BAM](../core/managing-bam.md)
+ [Gestion de l’analyse BAM](../core/managing-bam.md)

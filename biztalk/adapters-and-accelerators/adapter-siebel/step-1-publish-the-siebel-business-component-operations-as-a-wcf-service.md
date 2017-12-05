@@ -12,11 +12,11 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1dc83a0531460f513d146e2d03d0ef7e0a7c529f
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: fe869b76a155acb326420c3d5c29850548d8b7ff
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-publish-the-siebel-business-component-operations-as-a-wcf-service"></a>Étape 1 : Publier les opérations de composant d’entreprise Siebel comme Service WCF
 ![Étape 1 sur 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
@@ -34,7 +34,7 @@ ms.lasthandoff: 10/17/2017
   
 -   Le client Siebel requis.  
   
- Pour plus d’informations sur ces conditions préalables, consultez le [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] guide d’installation. Le guide d’installation est généralement installé sur \<lecteur d’installation > : \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents.  
+ Pour plus d’informations sur ces conditions préalables, consultez le [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] guide d’installation. Le guide d’installation est généralement installé sur \<lecteur d’installation\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents.  
   
 ## <a name="publish-the-siebel-business-components-as-a-wcf-service"></a>Publier les composants d’entreprise Siebel sous la forme d’un Service WCF  
   
@@ -167,7 +167,7 @@ ms.lasthandoff: 10/17/2017
   
     1.  Démarrez la Console de gestion de Microsoft IIS. Cliquez sur **Démarrer**, pointez sur **outils d’administration**, puis cliquez sur **Internet Information Services**.  
   
-    2.  Accédez au nœud sur lequel vous avez publié le service. Pour le **Siebel_Account** de service, accédez à **Internet Information Services** > **\<nom de l’ordinateur >**  >   **Sites Web** > **Site Web par défaut** > **Siebel_Account**.  
+    2.  Accédez au nœud sur lequel vous avez publié le service. Pour le **Siebel_Account** de service, accédez à **Internet Information Services** > **\<nom de l’ordinateur\>**   >  **Sites Web** > **Site Web par défaut** > **Siebel_Account**.  
   
     3.  Dans le volet droit, cliquez sur le fichier BusinessObjects_Account_Account_Operation.svc, puis cliquez sur **Parcourir**.  
   

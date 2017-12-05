@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a3d4c573b864d16362c1b12b1e293e85f139cad4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b6a3597d0d68dbd79de6c23e7b6d4b222b9c8376
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-search-for-tracked-message-events"></a>Recherche des événements de message suivis
 Vous pouvez utiliser la **nouvelle requête** onglet dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] console d’Administration pour rechercher des événements des messages suivis.  Dans la console Administration de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], vous pouvez activer le suivi du corps et des propriétés de message. Le volet Résultats de la requête indique les informations relatives à l'événement de message, notamment les informations de schéma, le type d'événement, l'ID de l'instance de service et les propriétés promues du message généré.  
@@ -49,11 +49,11 @@ Vous pouvez utiliser la **nouvelle requête** onglet dans le [!INCLUDE[btsBizTal
     |**Nom du schéma**|Nom du schéma utilisé par le message.|  
     |**ID d’Instance de service**|ID de l'instance de service utilisée pour le message.|  
     |**URI**|URI utilisé pour le message.|  
-    |**\<Sélectionnez un nom de schéma pour les propriétés suivies >**|Lorsque vous sélectionnez un schéma, les propriétés promues dans ce schéma peuvent être utilisée dans la requête.|  
+    |**\<Sélectionnez un nom de schéma pour les propriétés suivies\>**|Lorsque vous sélectionnez un schéma, les propriétés promues dans ce schéma peuvent être utilisée dans la requête.|  
   
 6.  Terminer la **valeur** colonne en fonction de la sélection que vous avez effectuée dans le **nom de champ** colonne.  
   
 7.  Continuez à ajouter des lignes supplémentaires à la requête comme il convient en effectuant le **nom de champ**, **opérateur**, et **valeurs** colonnes, puis cliquez sur **exécuter Requête**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide de l’onglet requête de la Console Administration](../core/using-the-administration-console-query-tab.md)
+ [Utilisation de l’onglet Requête de la console Administration](../core/using-the-administration-console-query-tab.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aed2b50eab9612e5a2a610047e41560e1dc24576
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1c9ff6b37f2e18c03a364e3f584ea9f79b547f1e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-concurrent-programs-in-oracle-e-business-suite-using-the-wcf-service-model"></a>Appeler des programmes simultanés dans Oracle E-Business Suite à l’aide du modèle de service WCF
 Oracle E-Business Suite expose des programmes simultanés que vous pouvez exécuter pour effectuer des opérations spécifiques sur les applications Oracle. Chaque application Oracle a un ensemble de programmes simultanés standard (qui sont les mêmes pour toutes les opérations) et certains programmes simultanés qui sont spécifiques à une application Oracle. Le [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] expose tous les programmes simultanés en tant qu’opérations que les clients de l’adaptateur peuvent appeler. Pour plus d’informations sur la façon dont l’adaptateur prend en charge des programmes simultanés, consultez [opérations sur les programmes simultanés](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-concurrent-programs.md).  
@@ -41,7 +41,7 @@ Oracle E-Business Suite expose des programmes simultanés que vous pouvez exécu
   
 |Opération|Signature de méthode|  
 |---------------|----------------------|  
-|Simultanées du programme|public \<type de retour >< Concurrent_program_name > (param 1, param 2,...)|  
+|Simultanées du programme|public \<type de retour\> < Concurrent_program_name > (param 1, param 2,...)|  
   
  Par exemple, le code suivant illustre les signatures de méthode pour une classe de client WCF généré pour le **MS_SAMPLE_COPY_EMP_DATA** et **Get_Status** programmes simultanés.  
   

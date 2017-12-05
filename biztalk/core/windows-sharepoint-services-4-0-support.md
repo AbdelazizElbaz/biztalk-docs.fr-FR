@@ -12,26 +12,26 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 45f3fedbdc4217ef5379b5e890568346a565a235
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ff27ebd5804f3603aabf3bae24e469c2028234f2
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="windows-sharepoint-services-40-support"></a>Prise en charge de Windows SharePoint Services 4.0
-L'adaptateur Windows SharePoint Services pour [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] offre une parité fonction/fonctionnalité avec l'adaptateur Windows SharePoint Services pour [!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)]. L'adaptateur Windows SharePoint Services pour [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] prend également en charge les fonctionnalités suivantes disponibles avec Windows SharePoint Services 4.0 :  
+L’adaptateur Windows SharePoint Services pour BizTalk Server fournit une parité fonction/fonctionnalité avec l’adaptateur Windows SharePoint Services pour [!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)]. L’adaptateur Windows SharePoint Services pour BizTalk Server prend également en charge les fonctionnalités suivantes disponibles avec Windows SharePoint Services 4.0 :  
   
 -   Envoi de messages à un site blog Windows SharePoint Services 4.0.  
   
 -   Envoi de messages à et réception de messages d'un site Wiki Windows SharePoint Services 4.0.  
   
- L'adaptateur Windows SharePoint Services pour [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] ne prend pas en charge les fonctions suivantes disponibles dans Windows SharePoint Services 4.0 :  
+ L’adaptateur Windows SharePoint Services pour BizTalk Server ne prend pas en charge les fonctionnalités suivantes sont disponibles dans Windows SharePoint Services 4.0 :  
   
--   **La Corbeille**: l’adaptateur Windows SharePoint Services pour [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] carte ne prend pas en charge la réception, ou explicitement, l’envoi de messages de/à la Corbeille.  
+-   **La Corbeille**: l’adaptateur Windows SharePoint Services pour l’adaptateur BizTalk Server ne prend pas en charge la réception, ou explicitement, l’envoi de messages de/à la Corbeille.  
   
--   **Répertorie les dossiers**: l’adaptateur Windows SharePoint Services pour [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] peut envoyer des messages à des listes, mais il ne peut pas recevoir de messages de listes. Windows SharePoint Services 4.0 prend en charge les dossiers dans les listes mais l'adaptateur Windows SharePoint Services pour [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] ne prend pas en charge cette fonction. Par conséquent, l'adaptateur Windows SharePoint Services pour [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] ne peut pas créer d'éléments de liste dans un dossier de liste autre que le dossier racine.  
+-   **Répertorie les dossiers**: l’adaptateur Windows SharePoint Services pour BizTalk Server peut envoyer des messages à des listes, mais il ne peut pas recevoir de messages de listes. Windows SharePoint Services 4.0 prend en charge des dossiers dans les listes, mais l’adaptateur Windows SharePoint Services pour BizTalk Server ne prend pas en charge cette fonctionnalité. Par conséquent, l’adaptateur Windows SharePoint Services pour BizTalk Server ne peut pas créer des éléments de liste dans un dossier autre que le dossier racine de la liste.  
   
--   Les sections suivantes décrivent de manière plus détaillée l'utilisation de l'adaptateur Windows SharePoint Services pour [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] pour envoyer des messages à un site blog Windows SharePoint Services 4.0 et l'envoi et la réception de messages à/d'un site Wiki Windows SharePoint Services 4.0.  
+-   Les sections suivantes décrivent plus en détail comment utiliser l’adaptateur Windows SharePoint Services pour BizTalk Server pour envoyer des messages à un site blog Windows SharePoint Services 4.0 et comment envoyer des messages à et recevoir des messages à partir d’un serveur Windows SharePoint Services 4.0 site Wiki.  
   
 ## <a name="sending-to-a-windows-sharepoint-services-40-blog-site"></a>Envoi à un site blog Windows SharePoint Services 4.0  
  Dans un site blog Windows SharePoint Services 4.0, les messages sont stockés dans le **publie** liste et les catégories sont définies dans le **catégories** liste.  
@@ -41,7 +41,7 @@ L'adaptateur Windows SharePoint Services pour [!INCLUDE[btsBizTalkServer2006r3](
 |Propriété|Valeur|  
 |--------------|-----------|  
 |URL Dossier de destination|URL du dossier de destination de la liste Messages, relative au site SharePoint, par exemple « Listes/Messages ».|  
-|URL de site SharePoint|URL du site blog Windows SharePoint Services 4.0, par exemple http://*\<nom_serveur >*/sites/blog/où  *\<nom_serveur >* est un espace réservé pour le nom réel du serveur Web.|  
+|URL de site SharePoint|URL du site blog Windows SharePoint Services 4.0, par exemple http://*\<nom_serveur\>*/sites/blog/où  *\<nom_serveur\>*  est un espace réservé pour le nom réel du serveur Web.|  
   
  Puis définissez les valeurs pour le **catégorie**, **publié**, **titre**, et **corps** propriétés pour le blog de validation par le paramètre correspondant valeurs de WSS. Propriété de contexte ConfigPropertiesXml du message. Cela est possible avec un pipeline personnalisé ou dans une orchestration. Par exemple, l’expression suivante dans une orchestration définit des valeurs dans le fichier WSS. Propriété de contexte ConfigPropertiesXml du message Message_Out.  
   
@@ -86,7 +86,7 @@ Message_Out(WSS.ConfigPropertiesXml) = “<ConfigPropertiesXml>
 |Propriété|Valeur|  
 |--------------|-----------|  
 |URL Dossier de destination|URL de la page d'accueil du site Wiki, relative au site SharePoint, par exemple « wikiSP ».|  
-|URL de site SharePoint|URL du site Wiki Windows SharePoint Services 4.0, par exemple http://*\<nom_serveur >*/sites/wiki/où  *\<nom_serveur >* est un espace réservé pour le nom réel du serveur web.|  
+|URL de site SharePoint|URL du site Wiki Windows SharePoint Services 4.0, par exemple http://*\<nom_serveur\>*/sites/wiki/où  *\<nom_serveur\>*  est un espace réservé pour le nom réel du serveur web.|  
   
  La valeur pour le **contenu Wiki** propriété pour la page Wiki en définissant la valeur correspondante dans le fichier WSS. Propriété de contexte ConfigPropertiesXml du message. Cela est possible avec un pipeline personnalisé ou dans une orchestration. Par exemple, l'expression suivante dans une orchestration définit des valeurs dans la propriété de contexte WSS.ConfigPropertiesXml du message Message_Out.  
   
@@ -101,7 +101,7 @@ Message_Out(WSS.ConfigPropertiesXml) = “<ConfigPropertiesXml>
  Utilisez la variable str_Wiki dans cette expression la **System.String** type de données.  
   
 > [!IMPORTANT]
->  La bibliothèque de documents Wiki Windows SharePoint Services 4.0 prend en charge le contrôle de version, mais l'adaptateur Windows SharePoint Services pour BizTalk Server 2010 ne le prend pas en charge. Par conséquent, les pages Wiki mises à jour par l'adaptateur Windows SharePoint Services pour [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] perdent leurs versions précédentes. Du fait de cette limitation, une page Wiki reçue par l'adaptateur Windows SharePoint Services pour [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] et archivée dans une bibliothèque de documents Wiki différente conserve uniquement sa dernière version, toutes les autres versions étant supprimées.  
+>  La bibliothèque de documents Wiki Windows SharePoint Services 4.0 prend en charge le contrôle de version, mais l'adaptateur Windows SharePoint Services pour BizTalk Server 2010 ne le prend pas en charge. Par conséquent, les pages Wiki mises à jour par l’adaptateur Windows SharePoint Services pour BizTalk Server seront perdent leurs versions précédentes. En raison de cette limitation, une page Wiki qui est reçue par l’adaptateur Windows SharePoint Services pour BizTalk Server et archivée dans une bibliothèque de documents Wiki différente conserve uniquement sa dernière version, toutes les autres versions en cours de suppression.  
   
 ### <a name="receiving-from-a-windows-sharepoint-services-40-wiki-document-library"></a>Réception d'une bibliothèque de documents Wiki Windows SharePoint Services 4.0  
  Lors de la réception des messages à partir d’un site Wiki Windows SharePoint Services 4.0, le contenu de la page Wiki est stocké dans la propriété de contexte de l’adaptateur Windows SharePoint Services nommée **WSS. InPropertiesXml**.  

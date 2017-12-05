@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 02236b1d7ff76762fffd70ed809a2cee23746372
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 57af8140157b901d7e6265fc26249c7fbfef0c46
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="rnifreceive"></a>RNIFReceive
 Cet exemple fournit un [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] fichier RNIFReceive.aspx qui reçoit un message RNIF et le prépare pour le traitement par le [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] processus public. Vous pouvez personnaliser la page ASPX pour effectuer les opérations suivantes :  
@@ -27,7 +27,7 @@ Cet exemple fournit un [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [
   
 -   Ajouter la validation à la page  
   
- Cet exemple se trouve dans  *\<lecteur >*: \Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\SDK\WebApplication\RNIFReceiver.  
+ Cet exemple se trouve dans  *\<lecteur\>*: \Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\WebApplication\RNIFReceiver.  
   
 ## <a name="demonstrates"></a>Montre  
  Cet exemple montre comment préparer les messages entrants pour le processus public, notamment les opérations suivantes :  
@@ -44,4 +44,4 @@ Cet exemple fournit un [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [
   
 ## <a name="see-also"></a>Voir aussi  
  [Envoyer et recevoir des Pages ASPX](../../adapters-and-accelerators/accelerator-rosettanet/send-and-receive-aspx-pages.md)   
- [Exemples d’applications Web](../../adapters-and-accelerators/accelerator-rosettanet/web-application-samples.md)
+ [Exemples d’applications web](../../adapters-and-accelerators/accelerator-rosettanet/web-application-samples.md)

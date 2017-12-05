@@ -13,11 +13,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c0939ddaa11e409ec42989062e28314c14277549
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7076b9c076b263a54a436c553b519671760ca473
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="install-the-biztalk-adapter-pack-2016"></a>Installer BizTalk Adapter Pack 2016
 Installer le [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] des deux manières suivantes :  
@@ -236,7 +236,7 @@ Pour une liste complète des problèmes d’installation, consultez **dépannage
   
 **Le programme d’installation en cours d’exécution sur un ordinateur 64 bits peut lever une erreur lors de l’accès au fichier de schéma**  
   
-Le [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] le programme d’installation génère une erreur lors de l’accès à la Microsoft.Adapters. *\<AdapterName >*_schema.xml fichier, mais se poursuit avec l’installation de l’adaptateur.  
+Le [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] le programme d’installation génère une erreur lors de l’accès à la Microsoft.Adapters. *\<AdapterName\>*_schema.xml fichier, mais se poursuit avec l’installation de l’adaptateur.  
   
 **Cause**  
   
@@ -244,7 +244,7 @@ Si les versions 32 bits et 64 bits de la [!INCLUDE[adapterpacknoversion](../incl
   
 **Résolution**  
   
-Copiez manuellement le Microsoft.Adapters.  *\<AdapterName >*fichier _schema.xml *C:\Program Files\Microsoft BizTalk Pack (x64) \IIS schémas* à *C:\Windows\System32\inetsrv\config\schema* . 
+Copiez manuellement le Microsoft.Adapters.  *\<AdapterName\>*fichier _schema.xml *C:\Program Files\Microsoft BizTalk Pack (x64) \IIS schémas* à *C:\Windows\System32\inetsrv\ config\schema*. 
   
 ## <a name="next-step"></a>Étape suivante
 [Valider les étapes d’installation](../adapters-and-accelerators/post-installation-steps-for-biztalk-adapter-pack-2016.md)

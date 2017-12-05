@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 63d27a186cffc86a79f0a40f73cc6a0c1791c3b6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 71021bb0a9bbb71f17f0899e625ac184f9087429
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-create-the-request-message-for-insert-operation-on-purchaseorder-table"></a>Étape 1 : Créer le Message de demande pour l’opération d’insertion sur la Table de Purchase_Order
 ![Étape 1 sur 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
@@ -89,7 +89,7 @@ ms.lasthandoff: 09/20/2017
   
     3.  Dans le **signature** onglet, sélectionnez le **signer l’assembly** case à cocher.  
   
-    4.  À partir de la **choisir un fichier de clé de nom fort** , cliquez sur  **\<Parcourir >**.  
+    4.  À partir de la **choisir un fichier de clé de nom fort** , cliquez sur  **\<Parcourir\>**.  
   
     5.  Accédez au dossier où vous avez créé le fichier de clé de nom fort, puis cliquez sur **ouvrir**.  
   
@@ -125,4 +125,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>Voir aussi  
  [Étape 2 : Mapper le Message de réponse UPDATE_EMPLOYEE insérer le Message de demande d’opération](../../adapters-and-accelerators/adapter-sql/step-2-map-update_employee-response-to-insert-operation-request.md)   
- [Leçon 4 : Effectuer une opération d’insertion sur la Table de commande d’achat](../../adapters-and-accelerators/adapter-sql/lesson-4-perform-an-insert-operation-on-the-purchase-order-table.md)
+ [Leçon 4 : Effectuer une opération d’insertion sur la table des bons de commande](../../adapters-and-accelerators/adapter-sql/lesson-4-perform-an-insert-operation-on-the-purchase-order-table.md)

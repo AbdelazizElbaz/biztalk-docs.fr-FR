@@ -17,11 +17,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d2bb37ae93b45ac1721da582cc0092bda5d67999
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e8b82af2be42342d51429e42d1952816ee0dd07a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="remove-send-port-biztalk-server-sample"></a>Remove Send Port (exemple BizTalk Server)
 L'exemple de suppression d'un port d'envoi (Remove Send Port) illustre la désinscription et la suppression d'un ou plusieurs ports d'envoi.  
@@ -46,7 +46,7 @@ L'exemple de suppression d'un port d'envoi (Remove Send Port) illustre la désin
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
  L'exemple se trouve dans l'emplacement SDK suivant :  
   
- \<*Exemples de chemin d’accès*> \Admin\WMI\Remove envoyer LPT1\  
+ \<*Exemples de chemin d’accès*\>\Admin\WMI\Remove LPT1\ d’envoi  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -63,12 +63,11 @@ L'exemple de suppression d'un port d'envoi (Remove Send Port) illustre la désin
   
 1.  Dans une fenêtre de commande, accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \Admin\WMI\Remove Port\VBScript\ de réception  
+     \<*Exemples de chemin d’accès*\>\Admin\WMI\Remove Port\VBScript\ de réception  
   
 2.  Exécutez le fichier RemoveSendPort.vbs à l'aide du programme cscript en transmettant l'argument de ligne de commande suivant :  
   
-     **\<**   
-     ***SendPortName* >.** Nom du ou des ports d'envoi à supprimer. Si le nom du port d'envoi contient des espaces, placez-le entre guillemets.  
+     **\<** ***SendPortName* \>.** Nom du ou des ports d'envoi à supprimer. Si le nom du port d'envoi contient des espaces, placez-le entre guillemets.  
   
      Exemple :  
   

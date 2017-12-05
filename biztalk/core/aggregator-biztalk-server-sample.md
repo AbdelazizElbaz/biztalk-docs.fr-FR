@@ -19,11 +19,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7c200e6c7cf28b0f0e42976f203aaa16aef2871f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 493f4d28214a815aca88f214e5efb9cd883e7192
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="aggregator-biztalk-server-sample"></a>Agrégation (exemple BizTalk Server)
 La fonction de cet exemple est de générer une fonctionnalité d'agrégation de messages à l'aide des orchestrations et des pipelines. Plus précisément, l'orchestration que nous allons générer :  
@@ -35,7 +35,7 @@ La fonction de cet exemple est de générer une fonctionnalité d'agrégation de
 3.  Génère un message d'échange XML toutes les minutes ou dès qu'elle dispose d'un nombre de messages suffisant à agréger.  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
- *\<Exemples de chemin d’accès >*\Pipelines\Aggregator  
+ *\<Exemples de chemin d’accès\>*\Pipelines\Aggregator  
   
  Le tableau suivant répertorie les fichiers de cet exemple.  
   
@@ -62,13 +62,13 @@ La fonction de cet exemple est de générer une fonctionnalité d'agrégation de
   
 1.  Dans une fenêtre de commande, accédez au dossier suivant :  
   
-     \<Exemples de chemin d’accès > \Pipelines\Aggregator  
+     \<Exemples de chemin d’accès\>\Pipelines\Aggregator  
   
 2.  Exécutez le fichier Setup.bat, qui effectue les actions suivantes :  
   
     -   Création des dossiers d'entrée (In) et de sortie (Out) associés à cet exemple dans le dossier :  
   
-         \<Exemples de chemin d’accès > \Pipelines\Aggregator  
+         \<Exemples de chemin d’accès\>\Pipelines\Aggregator  
   
     -   Compilation des projets [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] de cet exemple.  
   

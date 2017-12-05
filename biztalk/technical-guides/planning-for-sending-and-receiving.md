@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cf635712e7cafa534f7b6441407e4ec31e8bf047
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ca2b87964266b77629f7fa1d1156ace3cd048e7f
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="planning-for-sending-and-receiving"></a>Planification pour envoyer et recevoir
 Presque chaque document traité par [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] est reçu par un [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] l’adaptateur de réception et envoyés à partir de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] à l’aide un [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] l’adaptateur d’envoi. Étant donné que [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] cartes figurant donc en évidence dans les [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environnement, il est important de planifier déterminer les cartes ou les accélérateurs, vous allez utiliser et la configuration de ces adaptateurs et/ou les accélérateurs.  
@@ -81,7 +81,7 @@ Presque chaque document traité par [!INCLUDE[btsBizTalkServerNoVersion](../incl
 |TIBCO Enterprise Message Service|Permet l'échange de messages au format de données XML et binaires entre BizTalk Server et un serveur TIBCO EMS et fournit une infrastructure d'applications étroitement intégrée et fiable.|4.2|  
 |WebSphere MQ|Permet l'échange de messages entre BizTalk Server et IBM WebSphere MQ.|5.3 with Fix Pack 10 ou version ultérieure et 6.0 with Fix Pack 1.1 ou version ultérieure|  
   
- Pour plus d’informations sur les adaptateurs LOB disponibles avec [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], consultez [adaptateurs inclus dans BizTalk Server 2010](http://go.microsoft.com/fwlink/?LinkId=152664) (http://go.microsoft.com/fwlink/?LinkId=152664).  
+ Pour plus d’informations sur les adaptateurs LOB disponibles avec BizTalk Server, consultez [adaptateurs inclus dans BizTalk Server 2010](http://go.microsoft.com/fwlink/?LinkId=152664) (http://go.microsoft.com/fwlink/?LinkId=152664).  
   
 ## <a name="biztalk-adapter-pack"></a>Module adaptateur de BizTalk  
  Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] contient les adaptateurs WCF pour fournir une connectivité aux applications métier telles que la base de données Oracle, Oracle E-Business Suite, SAP, Siebel et SQL Server. Pour obtenir la liste des adaptateurs disponibles avec [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)], consultez [BizTalk Adapter Pack](http://go.microsoft.com/fwlink/?LinkId=152665) (http://go.microsoft.com/fwlink/?LinkId=152665).  

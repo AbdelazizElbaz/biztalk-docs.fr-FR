@@ -12,14 +12,14 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c886bb4d32fa082c2c4c865a45b28133ce4a3aa0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e3b20589229b1e3868f23c3823d2a26decc56081
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="what-is-biztalk-server-log-shipping"></a>Quel est l’envoi de journaux de BizTalk Server ?
-[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]les procédures de récupération d’urgence sont construites autour BizTalk envoi de journaux. Journal BizTalk expédition simplifie la restauration de la base de données en cas de sinistre en appliquant en permanence des mises à jour du journal des transactions pour les bases de données du site de récupération d’urgence.  
+Procédures de récupération d’urgence de BizTalk Server sont construites autour BizTalk envoi de journaux. Journal BizTalk expédition simplifie la restauration de la base de données en cas de sinistre en appliquant en permanence des mises à jour du journal des transactions pour les bases de données du site de récupération d’urgence.  
   
  Alors que BizTalk d’envoi de journaux est basée sur des principes similaires en tant que [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] journaux de transaction, [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] d’envoi de journaux n’est pas pris en charge pour le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] bases de données sauvegardées dans le cadre du travail de l’Agent SQL de sauvegarde de BizTalk Server.  
   

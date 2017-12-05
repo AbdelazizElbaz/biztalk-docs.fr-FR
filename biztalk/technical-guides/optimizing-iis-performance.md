@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a5b8cae6700328c68c8b6113c8719cf14f76a22c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 93f1bca77aea5aa6c75521e46edc8fc4d01b2d73
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="optimizing-iis-performance"></a>Optimisation des performances d’IIS
 ## <a name="apply-iis-configuration-options-to-improve-iis-performance"></a>Appliquer les options de configuration d’IIS pour améliorer les performances d’IIS  
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/20/2017
   
 4.  Si nécessaire, cliquez sur **appliquer** dans les **Actions** volet.  
   
- Désactiver le débogage des Applications ASP.NET et les Services Web en spécifiant le \<débogage de compilation = « false » / > section dans le fichier web.config de l’application web.  
+ Désactiver le débogage des Applications ASP.NET et les Services Web en spécifiant le \<débogage de compilation = « false »\> section dans le fichier web.config de l’application web.  
   
 ### <a name="tune-the-value-of-the-asp-threads-per-processor-limit-property"></a>Régler la valeur de la propriété limite ASP de Threads par processeur  
  ASP **limite de Threads par processeur** propriété spécifie le nombre maximal de threads de travail par processeur créés par IIS. Augmentez la valeur de la limite de Threads par processeur jusqu'à ce que l’utilisation du processeur soit au moins 50 pour cent ou version ultérieure. Ce paramètre peut affecter fortement l’évolutivité de vos applications Web et les performances de votre serveur en général. Étant donné que cette propriété définit le nombre maximal de demandes ASP pouvant s’exécuter simultanément, ce paramètre doit conserver la valeur par défaut, sauf si vos applications ASP effectuent des appels de longue durée vers des composants externes. Dans ce cas, vous pouvez augmenter la valeur de limite de Threads par processeur. Ainsi, le serveur pour créer des threads supplémentaires pour gérer plus de demandes simultanées. La valeur par défaut de la limite de Threads par processeur est 25. La valeur maximale recommandée pour cette propriété est 100.  
@@ -55,7 +55,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  Cliquez pour développer **propriétés relatives aux limites** sous **comportement**, cliquez sur **limite de Threads par processeur**, entrez la valeur souhaitée pour **limite de Threads par processeur**  et cliquez sur **appliquer** dans les **Actions** volet.  
   
- Pour plus d’informations sur la façon de modifier les propriétés dans le \<limites > élément d’IIS 7.5/7.0 \<asp > élément, consultez [limites d’ASP. \<limites >](http://go.microsoft.com/fwlink/?LinkId=157483) (http://go.microsoft.com/fwlink/?LinkId=157483).  
+ Pour plus d’informations sur la façon de modifier les propriétés dans le \<limites\> élément d’IIS 7.5/7.0 \<asp\> élément, consultez [limites d’ASP. \<limites\> ](http://go.microsoft.com/fwlink/?LinkId=157483)(http://go.microsoft.com/fwlink/?LinkId=157483).  
   
 > [!NOTE]  
 >  Cette propriété peut uniquement être appliqué au niveau du serveur, la modification de cette propriété affecte tous les sites Web qui s’exécutent sur le serveur.  
@@ -71,7 +71,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  Cliquez pour développer **propriétés relatives aux limites** sous **comportement**, cliquez sur **longueur de file d’attente**, entrez la valeur souhaitée pour **longueur de file d’attente** , puis Cliquez sur **appliquer** dans les **Actions** volet.  
   
- Pour plus d’informations sur la façon de modifier les propriétés dans le \<limites > élément d’IIS 7.5/7.0 \<asp > élément, consultez [limites d’ASP. \<limites >](http://go.microsoft.com/fwlink/?LinkId=157483) (http://go.microsoft.com/fwlink/?LinkId=157483).  
+ Pour plus d’informations sur la façon de modifier les propriétés dans le \<limites\> élément d’IIS 7.5/7.0 \<asp\> élément, consultez [limites d’ASP. \<limites\> ](http://go.microsoft.com/fwlink/?LinkId=157483)(http://go.microsoft.com/fwlink/?LinkId=157483).  
   
 > [!NOTE]  
 >  Cette propriété peut uniquement être appliqué au niveau du serveur, la modification de cette propriété affecte tous les sites Web qui s’exécutent sur le serveur.  
@@ -96,7 +96,7 @@ ms.lasthandoff: 09/20/2017
  Pour plus d’informations sur la configuration de l’utilisation de Thread ASP.NET sur IIS 7.5, consultez [Blog de Thomas Marquardt sur l’utilisation de Thread ASP.NET sur IIS 7.0](http://go.microsoft.com/fwlink/?LinkId=157518) (http://go.microsoft.com/fwlink/?LinkId=157518).  
   
 ### <a name="configure-aspnet-4-maxconcurrentrequests-for-iis-7570-integrated-mode"></a>Configurez ASP.NET 4 MaxConcurrentRequests en mode intégré d’IIS 7.0/7.5  
- .NET Framework 4, le paramètre par défaut pour maxConcurrentRequestsPerCPU la valeur est de 5 000, ce qui constitue un très grand nombre et par conséquent permettra beaucoup de demandes asynchrones à s’exécuter simultanément. Pour plus d’informations, consultez [ \<applicationPool >, élément (paramètres Web)](http://go.microsoft.com/fwlink/?LinkID=205339) (http://go.microsoft.com/fwlink/?LinkID=205339).  
+ .NET Framework 4, le paramètre par défaut pour maxConcurrentRequestsPerCPU la valeur est de 5 000, ce qui constitue un très grand nombre et par conséquent permettra beaucoup de demandes asynchrones à s’exécuter simultanément. Pour plus d’informations, consultez [ \<applicationPool\> élément (paramètres Web)](http://go.microsoft.com/fwlink/?LinkID=205339) (http://go.microsoft.com/fwlink/?LinkID=205339).  
   
  Pour le mode intégré d’IIS 7.0/7.5, une valeur DWORD nommé MaxConcurrentRequestsPerCPU dans HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ASP.NET\4.0.30319.0 détermine le nombre de requêtes simultanées par UC. Par défaut, la clé de Registre n’existe pas et le nombre de demandes par UC est limité à 5000.  
   

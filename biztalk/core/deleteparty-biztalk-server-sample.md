@@ -19,11 +19,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4d07793400f0217ef2f3ddcc637265f186647a00
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 68016285a53a2655c56810028925a91c1f8d66b0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="deleteparty-biztalk-server-sample"></a>DeleteParty (exemple BizTalk Server)
 L'exemple DeleteParty décrit la suppression d'un tiers spécifique.  
@@ -52,7 +52,7 @@ L'exemple DeleteParty décrit la suppression d'un tiers spécifique.
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
  Cet exemple se trouve dans l’emplacement SDK suivant :  
   
- \<*Exemples de chemin d’accès*> \Admin\ExplorerOM\DeleteParty\  
+ \<*Exemples de chemin d’accès*\>\Admin\ExplorerOM\DeleteParty\  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -70,12 +70,11 @@ L'exemple DeleteParty décrit la suppression d'un tiers spécifique.
   
 1.  Dans une fenêtre de commande, accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \Admin\ExplorerOM\DeleteParty\bin\Debug\  
+     \<*Exemples de chemin d’accès*\>\Admin\ExplorerOM\DeleteParty\bin\Debug\  
   
 2.  Exécutez le fichier DeleteParty.exe, en passant l'un des deux arguments de ligne de commande suivants :  
   
-    -   **\<**   
-         ***Nom_tiers* >.** Nom du tiers à supprimer. Si le nom du tiers contient des espaces, placez-le entre guillemets.  
+    -   **\<** ***Nom_tiers* \>.** Nom du tiers à supprimer. Si le nom du tiers contient des espaces, placez-le entre guillemets.  
   
     -   **/?.** Affiche l’aide.  
   

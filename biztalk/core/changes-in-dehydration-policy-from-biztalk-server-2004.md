@@ -12,17 +12,17 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9daf93fd6c925e5412aef3f4e985dd966f576eee
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 167c53d953369d7b35138995b4f38ad8994c18cb
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="changes-in-dehydration-policy-from-biztalk-server-2004"></a>Modifications dans la stratégie de mise en attente de BizTalk Server 2004
-La stratégie de mise en attente de BizTalk Server a été modifiée entre [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] et [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]. L'explication de la différence entre [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] et [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] peut être résumée par la valeur booléenne suivante, qui détermine la mise en attente dans [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] (true = mettre en attente).  
+Stratégie de mise en attente de BizTalk Server a changé depuis [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] à BizTalk Server. L’explication de la différence entre [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] et BizTalk Server peut être résumée par l’expression booléenne suivante qui détermine la mise en attente dans [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] (true = mise en attente)  
   
 ```  
 Dehydrate = (WaitingHistory == -1 OR WaitingHistory > TestThreshold)  
 ```  
   
- Stratégie de mise en attente pour [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] a changé de cette façon secondaire. [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]met toujours à une réception attente ou d’écoute s’il existe une attente plue de 2 ***MaxThreshold**.
+ Stratégie de mise en attente pour BizTalk Server a changé de cette façon secondaire. BizTalk Server met toujours à une réception attente ou d’écoute s’il existe une attente plue de 2 ***MaxThreshold**.

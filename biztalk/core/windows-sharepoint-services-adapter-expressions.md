@@ -17,11 +17,11 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bf777931837f036f7228c4a359eef77faa9e97e7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 377859a1b2c28774342c6ff9dc5cc312c9fd82d9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="windows-sharepoint-services-adapter-expressions"></a>Expressions de l'adaptateur Windows SharePoint Services
 Cette rubrique décrit le format et la signification des chaînes qui peuvent être spécifiées en tant que valeurs pour le **fichier NameProperty Source** propriétés de l’adaptateur Windows SharePoint Services. Elle décrit également les propriétés de contexte associées **WSS. Nom de fichier** et **WSS. ConfigPropertiesXml**. Ces expressions permettent de définir aisément la valeur de nom de fichier ou la valeur de colonne Windows SharePoint Service personnalisée, à l'aide de littéraux et de valeurs extraites du message ou du système BizTalk.  
@@ -50,13 +50,13 @@ Cette rubrique décrit le format et la signification des chaînes qui peuvent ê
 |%MessageID%|ID de message BizTalk qui est un GUID unique.|  
 |%SendingOrchestrationID%|ID BizTalk de l'instance d'orchestration dont provient le message.|  
 |%SendingOrchestrationType%|Nom de type de l'orchestration dont provient le message.|  
-|% XPATH =\<xpath > %|Permet de spécifier une syntaxe XPATH à utiliser pour extraire la valeur du message. «\<xpath > » doit être remplacé par une expression XPATH valide. **Remarque :** l’alias d’espace de noms doit être défini en dehors de l’expression dans le 'Alias Namespace' ou WSS. Champ de ConfigNamespaceAliases.|  
+|% XPATH =\<xpath\>%|Permet de spécifier une syntaxe XPATH à utiliser pour extraire la valeur du message. «\<xpath\>» doit être remplacé par une expression XPATH valide. **Remarque :** l’alias d’espace de noms doit être défini en dehors de l’expression dans le 'Alias Namespace' ou WSS. Champ de ConfigNamespaceAliases.|  
 |%Filename%|Remplacé par la valeur de nom de fichier extraite de la propriété de contexte de message WSS.Filename. La valeur de la propriété de contexte WSS.Filename des messages reçus de SharePoint est définie sur le nom du fichier SharePoint. La valeur renvoyée est prétraitée à l'aide de la méthode Path.GetFilenameWithoutExtension. **Remarque :** cette macro ne peut pas être utilisée dans WSS. Configuration * Propriétés de contexte (à partir d’orchestration).|  
 |%Extension%|Remplacé par la valeur d'extension de fichier extraite de la propriété de contexte de message WSS.Filename. La valeur de la propriété de contexte WSS.Filename des messages reçus de SharePoint est définie sur le nom du fichier SharePoint. La valeur renvoyée est prétraitée à l'aide de la méthode Path.GetExtension. La valeur renvoyée ne contient pas le caractère « . ». **Remarque :** cette macro ne peut pas être utilisée dans WSS. Configuration * Propriétés de contexte (à partir d’orchestration).|  
   
  Les expressions valides prises en charge par la promotion de propriétés constituent des noms de fichier valides au moment de la conception. Les noms de fichier au moment de la conception sont développés lors de l'exécution en noms de fichier Windows SharePoint Services. Les limites applicables aux noms de fichier Windows SharePoint Services sont décrites ci-après.  
   
--   Un nom de fichier Windows valide peut contenir des caractères Unicode, à l'exception des caractères suivants : /  \  :  *  ?  \<> &#124;  « # {} % & ~ ou caractères de tabulation et points multiples.  
+-   Un nom de fichier Windows valide peut contenir des caractères Unicode, à l'exception des caractères suivants : /  \  :  *  ?  < > &#124;  « # {} % & ~ ou caractères de tabulation et points multiples.  
   
 -   Un nom de fichier peut inclure jusqu'à 256 caractères, de même que l'URL entière.  
   
@@ -67,4 +67,4 @@ Cette rubrique décrit le format et la signification des chaînes qui peuvent ê
  [Comment configurer un gestionnaire d’envoi Windows SharePoint Services](../core/how-to-configure-a-windows-sharepoint-services-send-handler.md)   
  [Comment configurer un Port d’envoi Windows SharePoint Services](../core/how-to-configure-a-windows-sharepoint-services-send-port.md)   
  [Référence des propriétés de l’adaptateur Windows SharePoint Services](../core/windows-sharepoint-services-adapter-properties-reference.md)   
- [Prise en charge des Types de colonnes Windows SharePoint Services](../core/supported-windows-sharepoint-services-column-types.md)
+ [Types de colonnes Windows SharePoint Services pris en charge](../core/supported-windows-sharepoint-services-column-types.md)

@@ -15,16 +15,16 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4d3f7bbe9440c737b803eb1e6ae04e96449bf4f1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5ec99a2e9f20b09c4daddad0336037c7f539782a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="installation-error-message"></a>Message d'erreur relatif à l'installation
 Après avoir installé l'adaptateur Microsoft BizTalk pour TIBCO Enterprise Message Service, la définition d'un emplacement d'envoi et de réception qui lui sont associés risque d'entraîner l'erreur suivante :  
   
- Le moteur de messagerie Impossible d’ajouter une URL de réception «\< envoi/réception > » à l’adaptateur « TIBCO EMS ». Raison : « assembly nom de fichier ou TIBCO. EMS, ou une de ses dépendances, est introuvable. »  
+ Le moteur de messagerie Impossible d’ajouter une URL de réception «\< envoi/réception\>» à l’adaptateur « TIBCO EMS ». Raison : « assembly nom de fichier ou TIBCO. EMS, ou une de ses dépendances, est introuvable. »  
   
 ## <a name="possible-causes"></a>Causes possibles  
  Cette erreur provient généralement d'une des causes suivantes.  
@@ -53,7 +53,7 @@ Après avoir installé l'adaptateur Microsoft BizTalk pour TIBCO Enterprise Mess
   
      Ce fichier est situé dans le répertoire [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] (l'emplacement d'installation par défaut est [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]).  
   
-2.  Ajoutez l’entrée suivante au fichier BTSNTSVC.exe.config, en tant qu’enfant de le \<assemblyBinding > élément :  
+2.  Ajoutez l’entrée suivante au fichier BTSNTSVC.exe.config, en tant qu’enfant de la \<assemblyBinding\> élément :  
   
 ```  
 <dependentAssembly>  
@@ -64,7 +64,7 @@ Après avoir installé l'adaptateur Microsoft BizTalk pour TIBCO Enterprise Mess
 </dependentAssembly>  
 ```  
   
- Si le fichier BTSNTSVC.exe.config n’a pas été préalablement modifié, le \<assemblyBinding > élément ne peut pas ressembler à ceci :  
+ Si le fichier BTSNTSVC.exe.config n’a pas été préalablement modifié, le \<assemblyBinding\> élément ne peut pas ressembler à ceci :  
   
 ```  
 <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  

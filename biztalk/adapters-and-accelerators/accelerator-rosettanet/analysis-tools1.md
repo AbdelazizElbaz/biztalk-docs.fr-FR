@@ -17,14 +17,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ebc04b4fd84af141907448d0c3b60b74ed2a4719
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 92e8fb1061092b378ca38d888ea6c34d89b0e787
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="analysis-tools"></a>Outils d’analyse
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] fournit un ensemble d’outils d’analyse pour les analystes d’entreprise et les travailleurs. Pour plus d’informations sur ces outils, consultez [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] aide.  
+[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server fournit un ensemble d’outils d’analyse pour les analystes d’entreprise et les travailleurs. Pour plus d’informations sur ces outils, consultez [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]à l’aide de BizTalk Server.  
   
 ## <a name="business-activity-monitoring"></a>Analyse BAM (Business Activity Monitoring)  
  BizTalk Business Activity Monitoring (BAM) fournit aux utilisateurs une vue en temps réel des processus d’entreprise hétérogènes. Il vous donne les données que vous pouvez souhaiter prendre des décisions professionnelles.  
@@ -33,4 +33,4 @@ ms.lasthandoff: 09/20/2017
  BizTalk Human Workflow Services (HWS) permet aux travailleurs à créer, modifier, participer et suivre la progression du processus de workflow humain à partir de leurs applications. Vous pouvez effectuer les activités de workflow, surveiller les opérations de participants du flux de travail en tant que partie d’un flux de travail quotidien et le suivi des activités de flux de travail, avec la visibilité sur l’état d’un processus d’entreprise.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Outils et fonctionnalités de BizTalk Server et de BTARN](../../adapters-and-accelerators/accelerator-rosettanet/tools-and-features-of-biztalk-server-and-btarn.md)
+ [Outils et fonctionnalités BizTalk Server et BTARN](../../adapters-and-accelerators/accelerator-rosettanet/tools-and-features-of-biztalk-server-and-btarn.md)

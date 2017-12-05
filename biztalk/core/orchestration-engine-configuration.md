@@ -17,11 +17,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fbf64565534a368f7bfe084c6901cde62405fb62
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3c5d2fae252d1b99f1a6393dc2f2ebbd45ed70a2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="orchestration-engine-configuration"></a>Configuration du moteur d’orchestration
 Le moteur d'orchestration se sert du fichier XML BTSNTSvc.exe.config pour déterminer certains comportements. Par exemple, les propriétés de mise en attente et leurs valeurs par défaut sont configurées au format XML dans le fichier BTSNTSvc.exe.config et sont lues lorsque toutes les instances d'hôte contenant une orchestration sont démarrées. Pour plus d’informations, consultez [mise en attente de l’Orchestration et la réactivation](../core/orchestration-dehydration-and-rehydration.md).  
@@ -228,7 +228,7 @@ A pattern assignment rule specifies a regular expression and an app domain name.
   
  Le fichier de configuration BTSNTSvc.exe contient plusieurs autres sections décrites dans les références générales de .NET Framework. Pour plus d’informations sur la modification de ces sections, consultez le **schéma de fichier de Configuration** de la référence générale du .NET Framework à [http://go.microsoft.com/FWLink/?LinkID=52964](http://go.microsoft.com/FWLink/?LinkID=52964).  
   
- Outre les informations de configuration spécifiques à BizTalk, le fichier BTSNTSvc.exe.config est également où les composants d’application .NET qui s’exécutent dans le contexte d’une orchestration, un adaptateur ou un pipeline obtiennent leurs informations de configuration au moment de l’exécution à l’aide du .NET standard  **\<appSettings >** balise sous le  **\<configuration >** balise. Étant donné que BizTalk fournit déjà un mécanisme pour les adaptateurs personnalisés et les composants de pipeline obtenir des informations de configuration, le  **\<appSettings >** balise dans le fichier BTSNTSvc.exe.config doit généralement être utilisé par les composants .NET personnalisés appelé à partir d’une orchestration. Exemple :  
+ Outre les informations de configuration spécifiques à BizTalk, le fichier BTSNTSvc.exe.config est également où les composants d’application .NET qui s’exécutent dans le contexte d’une orchestration, un adaptateur ou un pipeline obtiennent leurs informations de configuration au moment de l’exécution à l’aide du .NET standard  **\<appSettings\>**  balise sous le  **\<configuration\>**  balise. Étant donné que BizTalk fournit déjà un mécanisme pour les adaptateurs personnalisés et les composants de pipeline obtenir des informations de configuration, le  **\<appSettings\>**  balise dans le fichier BTSNTSvc.exe.config est en général être utilisée par les composants .NET personnalisés appelés à partir d’une orchestration. Exemple :  
   
 ```  
 <appSettings>  
@@ -255,4 +255,4 @@ A pattern assignment rule specifies a regular expression and an app domain name.
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage des Orchestrations](../core/debugging-orchestrations.md)   
- [Langage XLANG-s](../core/xlang-s-language.md)
+ [Langage XLANG/s](../core/xlang-s-language.md)

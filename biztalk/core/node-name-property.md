@@ -12,16 +12,16 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 155ad9ac5310b5084a94eb59a225e4d40e552bb9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c1d39c71a425e20c5a9228e418cfa86acb579fa5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="node-name-property"></a>Propriété Nom du nœud
 Lorsque vous utilisez l'Éditeur BizTalk pour insérer des nœuds dans l'arborescence de schéma, certains nœuds sont censés être renommés, d'autres non. Fondamentalement, vous pouvez et devez renommer **enregistrement** nœuds, **Fieldelement** nœuds, et **attribut de champ** nœuds. Les noms que vous donnez à ces nœuds deviendront les noms des éléments et des attributs XML du message que le schéma définit.  
   
- Dans l’arborescence du schéma, les nœuds que vous ne pouvez pas renommer sont affichés sous la forme de balises XML ; Autrement dit, à moins que (\<) et supérieur à (>) signes. Par exemple, le **schéma** nœud, **groupe choix** nœuds, **tout élément** nœuds, et **tout attribut** sont représentés dans le schéma arborescence avec les noms \<schéma >, \<choix >, \<n’importe quel >, et \<AnyAttribute >, respectivement. Le **nom de nœud** propriété pour ces nœuds est en lecture seule.  
+ Dans l’arborescence du schéma, les nœuds que vous ne pouvez pas renommer sont affichés sous la forme de balises XML ; Autrement dit, avec moins de (\<) et supérieur à (\>) se connecte. Par exemple, le **schéma** nœud, **groupe choix** nœuds, **tout élément** nœuds, et **tout attribut** sont représentés dans le schéma arborescence avec les noms \<schéma\>, \<choix\>, \<tout\>, et \<AnyAttribute\>, respectivement. Le **nom de nœud** propriété pour ces nœuds est en lecture seule.  
   
  Au sein d’une donnée **enregistrement** nœud, vous ne pouvez pas avoir deux **attribut de champ** nœuds portant le même nom. Toutefois, vous pouvez avoir plusieurs **Fieldelement** nœud ou **enregistrement** nœud portant le même nom en tant que nœuds enfants du même **enregistrement** nœud, tant qu’ils ont tous les mêmes données de type (comme spécifié par leur **Type de données** propriété **élément de champ** nœuds ou leurs **Data Structure Type** pour **enregistrement** nœuds).  
   
@@ -37,6 +37,6 @@ Lorsque vous utilisez l'Éditeur BizTalk pour insérer des nœuds dans l'arbores
   
 ## <a name="in-this-section"></a>Dans cette section  
   
--   [Les caractères de nom de nœud codés](../core/which-node-name-characters-get-encoded.md)  
+-   [Caractères de nom de nœud codés](../core/which-node-name-characters-get-encoded.md)  
   
--   [Comment les caractères de nom de nœud codés](../core/how-node-name-characters-get-encoded.md)
+-   [Mode de codage des caractères de nom de nœud](../core/how-node-name-characters-get-encoded.md)

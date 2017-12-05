@@ -20,11 +20,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 05fb4ae12e9ff22c82fed7d0c6e425b9e67ece43
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d8c86721091b9a0c9e8436b42a7489e228dbb7e0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-use-the-biztalk-web-services-publishing-wizard-to-publish-an-orchestration-as-a-web-service"></a>Comment utiliser l’Assistant Publication de Services Web BizTalk pour publier une Orchestration en tant que Service Web
 L'Assistant Publication de services Web BizTalk permet de publier une orchestration en tant que service Web.  
@@ -97,19 +97,19 @@ L'Assistant Publication de services Web BizTalk permet de publier une orchestrat
     > [!NOTE]
     >  La même combinaison espace de noms cible / nom de l'élément racine ne peut être ajoutée qu'une seule fois en tant qu'en-tête SOAP de requête et qu'une seule fois en tant qu'en-tête SOAP de réponse.  
   
-9. Sur le **projet de Service Web** page, dans le **nom du projet** texte, tapez le nom du projet. Vous pouvez accepter l’emplacement par défaut (http://localhost/\<*project_name*>), tapez un emplacement pour le projet dans le **emplacement du projet** zone de texte, ou cliquez sur **Parcourir** et sélectionnez un répertoire Web. Sélectionnez une des options suivantes :  
+9. Sur le **projet de Service Web** page, dans le **nom du projet** texte, tapez le nom du projet. Vous pouvez accepter l’emplacement par défaut (http://localhost/ <*project_name*>), tapez un emplacement pour le projet dans le **emplacement du projet** zone de texte, ou cliquez sur **Parcourir** et sélectionnez un répertoire Web. Sélectionnez une des options suivantes :  
   
     -   **Remplacer le projet existant.** cette option n'est disponible que si l'emplacement du projet existe déjà. Vous serez uniquement en mesure de publier vers le même emplacement si vous sélectionnez cette option. Sinon, vous devez indiquer un emplacement de projet différent.  
   
     -   **Autoriser l’accès anonyme au service web.** Cette option permet d'ajouter un accès anonyme au répertoire virtuel créé. Par défaut, celui-ci hérite des privilèges d'accès de son répertoire virtuel parent ou du site Web (s'il s'agit d'un répertoire virtuel de niveau supérieur).  
   
-    -   **BizTalk de créer des emplacements de réception.** cette option crée automatiquement les ports et emplacements de réception de l'adaptateur SOAP qui correspondent à chaque fichier .asmx généré. Si un emplacement de réception existe déjà, il n'est pas remplacé. Emplacements de réception de l’adaptateur SOAP sont résolus en utilisant le format /\<*nom de répertoire virtuel*>/\<*namespace_typename_portname d’orchestration* > .asmx. Après avoir sélectionné cette option, choisissez l'application où les ports et emplacements de réception sont générés.  
+    -   **BizTalk de créer des emplacements de réception.** cette option crée automatiquement les ports et emplacements de réception de l'adaptateur SOAP qui correspondent à chaque fichier .asmx généré. Si un emplacement de réception existe déjà, il n'est pas remplacé. Emplacements de réception de l’adaptateur SOAP sont résolus en utilisant le format /\<*nom de répertoire virtuel*\>/\<*namespace_typename_portname d’orchestration*  \>.asmx. Après avoir sélectionné cette option, choisissez l'application où les ports et emplacements de réception sont générés.  
   
         > [!NOTE]
-        >  L'emplacement du projet peut se trouver sur un serveur différent. Pour publier un service Web sur un autre serveur, tapez le nom du projet en tant que  **http://\<*nom_serveur*>/\<*project_name*> **.  
+        >  L'emplacement du projet peut se trouver sur un serveur différent. Pour publier un service Web sur un autre serveur, tapez le nom du projet en tant que  **http://&lt*nom_serveur*>/<*project_name*> **.  
   
         > [!NOTE]
-        >  L'emplacement du projet peut se trouver sur un site Web personnalisé. Lors de la publication sur un site Web personnalisé, ajoutez le numéro du port du site Web dans l'URL. Par exemple, http://localhost : 8080 /\<*project_name*>.  
+        >  L'emplacement du projet peut se trouver sur un site Web personnalisé. Lors de la publication sur un site Web personnalisé, ajoutez le numéro du port du site Web dans l'URL. Par exemple, http://localhost : 8080 / <*project_name*>.  
   
         > [!NOTE]
         >  Quand vous utilisez l'Assistant pour créer des emplacements de réception, il les crée avec les valeurs par défaut. La valeur par défaut pour le pipeline de réception est le **Microsoft.BizTalk.DefaultPipelines.PassThruReceive** pipeline. Si les messages reçus par le service Web publié requièrent un traitement spécial (par exemple, validation, corrélation / promotion de propriétés ou mappages entrant/sortant), vous devez définir le pipeline de réception sur  **Microsoft.BizTalk.DefaultPipelines.XMLReceive**, ou à un pipeline personnalisé.  
@@ -127,7 +127,7 @@ L'Assistant Publication de services Web BizTalk permet de publier une orchestrat
 12. Cliquez sur **Terminer** pour terminer l’Assistant de publication des Services Web BizTalk.  
   
 > [!NOTE]
->  Si vous souhaitez publier une orchestration en tant que service Web sous Windows Vista, vous devez mettre à jour le répertoire virtuel hébergeant le service. Pour ce faire, exécutez la commande suivante à partir de l’invite de commandes, en remplaçant \<vdir > par le nom du répertoire virtuel : **% systemroot%\system32\inetsrv\APPCMD. EXE migrer la configuration « Default Web Site /\<nom de répertoire virtuel > «**.  
+>  Si vous souhaitez publier une orchestration en tant que service Web sous Windows Vista, vous devez mettre à jour le répertoire virtuel hébergeant le service. Pour ce faire, exécutez la commande suivante à partir de l’invite de commandes, en remplaçant \<vdir\> avec le nom du répertoire virtuel : **% systemroot%\system32\inetsrv\APPCMD. EXE migrer la configuration « Site Web par défaut /\<nom de répertoire virtuel\>»**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Publication d’une Orchestration en tant que Service Web](../core/publishing-an-orchestration-as-a-web-service.md)   

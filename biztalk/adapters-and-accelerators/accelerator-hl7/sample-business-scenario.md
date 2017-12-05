@@ -17,11 +17,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8a74fafbac364469b1afdba5365c2af87cc4fa2d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 78229d903461fe2b84033b036ef02b2838832fc0
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="sample-business-scenario"></a>Exemple de scénario commercial
 Soins de santé des processus sont souvent complexes et impliquent de nombreux systèmes. Un exemple est le processus qui se produit lorsqu’un patient entre un hôpital et un médecin envoie le patient d’un laboratoire de test. Impliqués dans cette procédure sont cinq parties :  
@@ -65,7 +65,7 @@ Soins de santé des processus sont souvent complexes et impliquent de nombreux s
     3.  Le moteur de l’Interface envoie un message électronique au médecin, qui reçoit les résultats de laboratoire sur son PDA sans fil.  
   
 ## <a name="the-btahl7-solution"></a>La Solution BTAHL7  
- L’exemple de scénario d’entreprise présentée ci-dessus est un exemple d’un système de soins de santé besoins d’intégration. [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]avec [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator pour HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) fournit une solution pour ce scénario qui propose les fonctionnalités suivantes :  
+ L’exemple de scénario d’entreprise présentée ci-dessus est un exemple d’un système de soins de santé besoins d’intégration. [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server avec [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator pour HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) fournit une solution pour ce scénario qui propose les fonctionnalités suivantes :  
   
 1.  [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]s’intègre tous les systèmes impliqués dans une disposition « hub and spoke ». Chaque système communique directement avec [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]. Ils n’ont pas à communiquer directement entre eux.  
   
@@ -82,4 +82,4 @@ Soins de santé des processus sont souvent complexes et impliquent de nombreux s
 7.  Vous pouvez valider tous les messages dans le moteur et par rapport à la [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]des schémas X 2 publié par l’organisation HL7.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment BizTalk Server résout les besoins de l’entreprise](../../adapters-and-accelerators/accelerator-hl7/how-biztalk-server-solves-the-business-need2.md)
+ [Comment BizTalk Server répond aux besoins de l’entreprise](../../adapters-and-accelerators/accelerator-hl7/how-biztalk-server-solves-the-business-need2.md)

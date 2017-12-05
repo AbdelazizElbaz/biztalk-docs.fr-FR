@@ -18,11 +18,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 45d83e1a250850d372c2e12c7ffebc79f823c287
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d1e14234363ace4b953fa4766a97502753572e6f
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-biztalk-adapter-tracing"></a>Utilisation du suivi des adaptateurs BizTalk
 Cette rubrique décrit la procédure d'installation de l'outil Trace Log (Journal de suivi) et d'activation du suivi des adaptateurs BizTalk.  
@@ -60,7 +60,7 @@ Cette rubrique décrit la procédure d'installation de l'outil Trace Log (Journa
   
 #### <a name="to-enable-biztalk-adapter-tracing"></a>Pour activer le suivi des adaptateurs BizTalk  
   
-1.  À partir d'une invite de commande, accédez au répertoire d'installation de [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]. Par défaut, [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] est installé dans le [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] active.  Si vous utilisez une version 64 bits de Windows et [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], le chemin d'installation est [!INCLUDE[btsBizTalkServerPathx64](../includes/btsbiztalkserverpathx64-md.md)].  
+1.  À l’invite de commandes, accédez au répertoire en cours le répertoire d’installation de BizTalk Server. Par défaut, BizTalk Server est installé dans le [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] active.  Si vous utilisez une version 64 bits de Windows et BizTalk Server, le chemin d’installation est [!INCLUDE[btsBizTalkServerPathx64](../includes/btsbiztalkserverpathx64-md.md)].  
   
 2.  Tapez la commande suivante et appuyez sur ENTRÉE :  
   
@@ -85,7 +85,7 @@ Cette rubrique décrit la procédure d'installation de l'outil Trace Log (Journa
   
 #### <a name="to-capture-trace-output"></a>Pour capturer la sortie de traçage  
   
-1.  À partir d'une invite de commande, accédez au répertoire d'installation de [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)].  
+1.  À l’invite de commandes, accédez au répertoire en cours le répertoire d’installation de BizTalk Server.  
   
 2.  Au niveau d'une invite de commande, tapez la commande ci-après, puis appuyez sur la touche ENTRÉE :  
   

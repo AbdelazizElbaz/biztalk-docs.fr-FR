@@ -12,11 +12,11 @@ caps.latest.revision: "24"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5f44ebd8cb41f96260b48910410014da90bbed0c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8fb64a0548fefb816e1975e4c858934fc3dceb7c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="walkthrough-creating-and-using-a-vocabulary-in-the-policy"></a>Procédure pas à pas : Création et utilisation de vocabulaire dans la stratégie
 Cette procédure pas à pas fournit des procédures pas à pas pour créer un vocabulaire et à son utilisation dans les **ProcessPurchaseOrder** stratégie.  
@@ -119,7 +119,7 @@ Cette procédure pas à pas fournit des procédures pas à pas pour créer un vo
   
 7.  Faites glisser **état de la demande** à la **puis** volet.  
   
-8.  Cliquez sur  **\<une chaîne vide >** , puis tapez **approuvé**.  
+8.  Cliquez sur  **\<une chaîne vide\>**  , puis tapez **approuvé**.  
   
 9. Avec le bouton droit **Version 1.1 (non enregistrée)** dans la fenêtre Explorateur de stratégies, puis cliquez sur **enregistrer**.  
   

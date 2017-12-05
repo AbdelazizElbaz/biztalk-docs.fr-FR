@@ -15,11 +15,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2219b93bfcc767af4eec6d433074a013dba0cca2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a716056bdeb16900c23bdf748028e9d60e4316ab
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="run-operations-on-tables-with-bfile-data-types-in-oracle-database-using-biztalk-server"></a>Exécuter des opérations sur les Tables avec des Types de données BFILE dans la base de données Oracle à l’aide de BizTalk Server
 Le [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] prend en charge le type de données BFILE dans les tables et procédures stockées. Cette section fournit des informations sur la façon d’effectuer des opérations sur les tables qui possèdent une colonne BFILE du type de données. Pour plus d’informations sur la façon dont [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] prend en charge BFILE, consultez [opérations sur les Tables avec des Types de données BFILE dans la base de données Oracle](../../adapters-and-accelerators/adapter-oracle-database/operations-on-tables-with-bfile-data-types-in-oracle-database.md).  
@@ -201,7 +201,7 @@ Le [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] pre
  L’orchestration consomme le message et l’envoie à la base de données Oracle. La réponse à partir de la base de données Oracle est enregistrée dans l’autre emplacement de fichier définie dans le cadre de l’orchestration. Par exemple, la réponse à partir de la base de données Oracle pour le message de demande ci-dessus est la suivante :  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <CREATE_CUSTOMERDOCResponse xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG"></CREATE_CUSTOMERDOCResponse>  
 ```  
   

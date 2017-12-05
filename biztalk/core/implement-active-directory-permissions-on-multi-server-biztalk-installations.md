@@ -12,11 +12,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c0f6f5cb6403c752b18cbfb1c4370cbe3ca95e65
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6ff7b45e560278053cec99208fd06917d079d6b8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="guidelines-for-implementing-active-directory-permissions-on-multi-server-biztalk-installations"></a>Instructions pour l'implémentation des autorisations Active Directory sur des installations BizTalk multiserveur
 Cette rubrique décrit la procédure de création des unités d'organisation Active Directory, constituées des comptes d'utilisateur et des groupes d'utilisateurs à utiliser dans une installation Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
@@ -238,7 +238,7 @@ Cette rubrique décrit la procédure de création des unités d'organisation Act
 |Administrateurs BizTalk Server|Global ou universel|-BTUserAdmin<br />-BTUserInstall<br />-Utilisateurs de développement de BizTalk<br />-Les utilisateurs du déploiement de BizTalk|  
 |Utilisateurs de support BizTalk|Global ou universel|BTUserSupport (comptes locaux et de domaine d'utilisateurs du support)|  
 |Administrateurs SSO|Global ou universel|-SSOService<br />-BTUserInstall<br />-Administrateur local|  
-|Administrateurs d'applications associées à authentification unique|Global ou universel|-Utilisateurs de développement de BizTalk<br />-Les utilisateurs du déploiement de BizTalk<br />-BTServiceHostIso<br />-   \<utilisateur de la console >|  
+|Administrateurs d'applications associées à authentification unique|Global ou universel|-Utilisateurs de développement de BizTalk<br />-Les utilisateurs du déploiement de BizTalk<br />-BTServiceHostIso<br />-   \<utilisateur de la console\>|  
 |Administrateurs de Windows SharePoint Services|Global ou universel|-SPAdmin<br />-BTUserInstall<br />-BTUserDeploy<br />-Utilisateurs de développement de BizTalk<br />-Les utilisateurs du déploiement de BizTalk|  
   
  Recommandations et remarques sur les groupes de domaine :  
@@ -247,7 +247,7 @@ Cette rubrique décrit la procédure de création des unités d'organisation Act
   
 -   Les groupes de domaine peuvent être des groupes globaux ou universels.  
   
--   Utilisez  *\<nom_domaine >\\< nom d’utilisateur\>*  lors de la spécification des informations de compte de domaine dans l’Assistant Configuration.  
+-   Utilisez  *\<DomainName\>\\< nom d’utilisateur\>*  lors de la spécification des informations de compte de domaine dans l’Assistant Configuration.  
   
 -   Les comptes de groupes et d'utilisateurs/de service doivent appartenir au même domaine que l'ordinateur exécutant [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] (ce point est vérifié par l'Assistant Configuration qui n'affichera pas les comptes ou groupes contenant des comptes d'autres domaines).  
   
@@ -337,7 +337,7 @@ Cette rubrique décrit la procédure de création des unités d'organisation Act
 >  Ces recommandations concernent uniquement les environnements de développement et partagés. Elles n'empêchent ni ne conseillent tout particulièrement l'emploi de stratégies de mots de passe d'entreprise. Contactez votre administrateur réseau pour plus d'informations sur les exigences en matière de mots de passe.  
   
 > [!NOTE]
->  Si la stratégie de mots de passe de votre entreprise inclut des mots de passe générés, gardez à l'esprit que certains symboles et combinaisons de symboles constituent des caractères spéciaux pour XML. Une utilisation inappropriée de ces caractères peut empêcher l'ouverture des fichiers XML de configuration lors du processus de configuration. Ces symboles incluent « & », «\<», « > », simple et double guillemet, entre autres. Testez le fichier XML de configuration avant d'exécuter la configuration basée sur ces fichiers. Pour ce faire, ouvrez le document, avec les mots de passe générés, dans Internet Explorer (ou un éditeur XML).  
+>  Si la stratégie de mots de passe de votre entreprise inclut des mots de passe générés, gardez à l'esprit que certains symboles et combinaisons de symboles constituent des caractères spéciaux pour XML. Une utilisation inappropriée de ces caractères peut empêcher l'ouverture des fichiers XML de configuration lors du processus de configuration. Ces symboles incluent « & », «\<«, »\>», simple et double guillemet, entre autres. Testez le fichier XML de configuration avant d'exécuter la configuration basée sur ces fichiers. Pour ce faire, ouvrez le document, avec les mots de passe générés, dans Internet Explorer (ou un éditeur XML).  
   
  Pour plus d’informations sur le déploiement de mots de passe sécurisés dans les environnements parents (y compris la méthode pour tester un [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] fichier de configuration), consultez [vue d’ensemble de la Configuration de BizTalk Server 2013 et 2013 R2](http://msdn.microsoft.com/library/aa58c43f-8f0e-4a5c-89b9-db7b8a852a72).  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ee5958120e364cc0c2661ead6100bd2ba5502226
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b08209d3b3a1555bbc674e469ea9f8a4b1f81a9d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-update-the-bam-configuration-using-the-bam-management-utility"></a>Mise à jour de la configuration BAM à l'aide de l'utilitaire de gestion de l'analyse BAM
 Les administrateurs peuvent utiliser l'utilitaire de gestion de l'analyse BAM pour mettre à jour une installation BAM existante.  
@@ -30,7 +30,7 @@ Les administrateurs peuvent utiliser l'utilitaire de gestion de l'analyse BAM po
   
 2.  Accédez à [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking.  
   
-3.  Tapez la commande suivante à l’invite de ligne de commande : **bm update-config - FileName :\<le fichier de configuration >**, où \< *fichier de configuration*> est remplacé par le nom de votre analyse BAM fichier de configuration. Appuyez sur **Entrée**.  
+3.  Tapez la commande suivante à l’invite de ligne de commande : **bm update-config - FileName :\<le fichier de configuration\>**, où \< *fichier de configuration* \> est remplacé par le nom de votre fichier de configuration BAM. Appuyez sur **Entrée**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilitaire de gestion BAM](../core/bam-management-utility.md)
+ [Utilitaire de gestion de l’analyse BAM](../core/bam-management-utility.md)

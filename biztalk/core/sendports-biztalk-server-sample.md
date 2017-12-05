@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1f6bc29589f0546dda3841221fcce3ab91d704ad
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0bd7c03e4cfa586a0dddd2579931bd5f30d293fa
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="sendports-biztalk-server-sample"></a>SendPorts (exemple BizTalk Server)
 L’exemple SendPorts illustre l’énumération et la gestion des ports d’envoi à l’aide de la **Microsoft.BizTalk.ExplorerOM** classes d’administration.  
@@ -61,7 +61,7 @@ L’exemple SendPorts illustre l’énumération et la gestion des ports d’env
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
  L'exemple se trouve dans l'emplacement SDK suivant :  
   
- \<*Exemples de chemin d’accès*> \Admin\ExplorerOM\SendPorts  
+ \<*Exemples de chemin d’accès*\>\Admin\ExplorerOM\SendPorts  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -82,7 +82,7 @@ L’exemple SendPorts illustre l’énumération et la gestion des ports d’env
   
 1.  Ouvrez une fenêtre de commande, puis accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \Admin\ExplorerOM\SendPorts\bin\Debug  
+     \<*Exemples de chemin d’accès*\>\Admin\ExplorerOM\SendPorts\bin\Debug  
   
 2.  Exécutez le fichier SendPorts.exe.  
   

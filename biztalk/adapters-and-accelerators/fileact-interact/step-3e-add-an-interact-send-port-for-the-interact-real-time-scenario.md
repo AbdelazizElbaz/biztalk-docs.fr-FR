@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fcb78fd556e72e4ca19e1d5172826a813f23eb24
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ec380c088f27fe09f518c385990e3801b5c019dd
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3e-add-an-interact-send-port-for-the-interact-real-time-scenario"></a>Étape 3E : ajouter un Port d’envoi interagir pour l’interaction scénario en temps réel
 Complète [étape 3D : ajouter un Port d’envoi FILE pour capturer le Message Sw:HandleResponse pour le scénario en temps réel interagir](../../adapters-and-accelerators/fileact-interact/step-3d-add-file-send-port-to-get-sw-handleresponse-message-for-interact.md) avant de commencer cette étape.
@@ -42,11 +42,11 @@ Complète [étape 3D : ajouter un Port d’envoi FILE pour capturer le Message 
     |**Mode de l’adaptateur**|Dans la liste déroulante, sélectionnez **en temps réel**.|  
     |**Format de message**|**InteractMessage**.|  
     |**Indicateur de non répudiation**|**FALSE**.|  
-    |**Type de demande**|Tapez la commande appropriée \<RequestType > chaîne, en fonction de votre configuration avec SWIFT.|  
+    |**Type de demande**|Tapez la commande appropriée \<RequestType\> chaîne, en fonction de votre configuration avec SWIFT.|  
     |**ResponseCrypto**|**FALSE**.|  
-    |**Demandeur**|Affectez-lui la valeur approprié \<demandeur > chaîne, en fonction de votre configuration avec SWIFT.|  
-    |**Répondeur**|Affectez-lui la valeur approprié \<répondeur > chaîne, en fonction de votre configuration avec SWIFT.|  
-    |**Nom du service**|Affectez-lui la valeur approprié \<nom service >, en fonction de votre configuration avec SWIFT.|  
+    |**Demandeur**|Affectez-lui la valeur approprié \<demandeur\> chaîne, en fonction de votre configuration avec SWIFT.|  
+    |**Répondeur**|Affectez-lui la valeur approprié \<répondeur\> chaîne, en fonction de votre configuration avec SWIFT.|  
+    |**Nom du service**|Affectez-lui la valeur approprié \<nom du service\>, en fonction de votre configuration avec SWIFT.|  
     |**Accusé de réception**|Dans la liste déroulante, sélectionnez **FALSE**.|  
     |**File d’attente de notification**|Tapez le nom de la file d’attente appropriée, en fonction de votre configuration avec SWIFT.|  
   
@@ -79,4 +79,4 @@ Complète [étape 3D : ajouter un Port d’envoi FILE pour capturer le Message 
  [Étape 3 a : ajouter un fichier emplacement de réception pour l’interaction du scénario en temps réel](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-interact-real-time-scenario.md)   
  [Étape 3 b : ajouter un interagir emplacement de réception pour l’interaction scénario en temps réel](../../adapters-and-accelerators/fileact-interact/step-3b-add-an-interact-receive-location-for-the-interact-real-time-scenario.md)   
  [Étape 3c : ajouter un Port d’envoi FILE pour capturer le Message Sw:HandleRequest pour l’interaction du scénario en temps réel](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-interact-real-time-scenario.md)   
- [Étape 3D : ajouter un Port d’envoi FILE pour capturer le Message Sw:HandleResponse pour l’interaction du scénario en temps réel](../../adapters-and-accelerators/fileact-interact/step-3d-add-file-send-port-to-get-sw-handleresponse-message-for-interact.md)
+ [Étape 3D : Ajouter un port d’envoi FILE pour capturer le message Sw:HandleResponse pour le scénario en temps réel InterAct](../../adapters-and-accelerators/fileact-interact/step-3d-add-file-send-port-to-get-sw-handleresponse-message-for-interact.md)

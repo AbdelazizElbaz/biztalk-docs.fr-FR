@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: feb9efa5ad879e86f32ca1963313dadc7e6a9d7e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1f70855621f03011c92be7b04b844122d98be48f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-a-custom-adapter-provider"></a>Création d’un fournisseur de l’adaptateur personnalisé
 Après avoir exécuté un programme de résolution, comme décrit dans les sections précédentes, le service de résolution dynamique vérifie si le résultat est un point de terminaison (et pas une transformation). S’il s’agit d’un point de terminaison, le service instancie le Gestionnaire d’adaptateur, qui est une instance de la **AdapterMgr** classe.  
@@ -55,6 +55,6 @@ Après avoir exécuté un programme de résolution, comme décrit dans les secti
   
 1.  Créer un assembly qui dérive de la **BaseAdapterProvider** classe de base et contient un **SetEndPoint** méthode qui définit le point de terminaison des propriétés de contexte du message.  
   
-2.  Inscrire le fournisseur de l’adaptateur en l’ajoutant à Esb.config les fichiers de configuration à l’aide un  **\<adapterProvider >** élément avec un nom pour la carte en tant que le **nom** attribut, l’entièrement nom qualifié de la classe en tant que le **type** d’attribut, le moniker comme le **moniker** attribut (plusieurs valeurs doivent être séparés par une virgule) et éventuellement l’assembly de l’adaptateur réel comme le **adapterAssembly** attribut.  
+2.  Inscrire le fournisseur de l’adaptateur en l’ajoutant à des fichiers de configuration Esb.config via un  **\<adapterProvider\>**  élément avec un nom pour la carte en tant que le **nom** attribut, le nom qualifié complet de la classe en tant que le **type** d’attribut, le moniker comme le **moniker** attribut (plusieurs valeurs doivent être séparés par une virgule) et éventuellement l’assembly de la adaptateur réel en tant que le **adapterAssembly** attribut.  
   
 3.  Enregistrer le nouvel assembly dans le global assembly cache.

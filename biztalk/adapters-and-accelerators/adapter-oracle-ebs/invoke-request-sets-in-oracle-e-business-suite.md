@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 924bfbfc8e0d22ba5fb00099039b21a5b8180bcf
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9b00fd382bb46df9de740b2308ad87c28720165a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-request-sets-in-oracle-e-business-suite"></a>Appeler des ensembles de requêtes dans Oracle E-Business Suite
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]vous permet d’exécuter la demande définit dans Oracle E-Business Suite. Demander des jeux sont divisées en une ou plusieurs étapes, et chaque étape contient un ensemble de rapports et des programmes simultanés. Pour plus d’informations sur comment l’adaptateur prend en charge les ensembles de requêtes, consultez [opérations sur demande définit](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-request-sets.md). Pour plus d’informations sur la structure de SOAP des messages pour l’appel d’ensembles de requêtes, consultez [des schémas de Message de demande définit](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-request-sets.md).  
@@ -175,22 +175,22 @@ ms.lasthandoff: 09/20/2017
   
 ```  
 <FNDRSSUB43 xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/RequestSets/FND">  
-  <StartTime>\</ StartTime>  
+  <StartTime></ StartTime>  
   <All_x0020_Requests_x0020_in_x0020_the_x0020_Set_STAGE10>  
     <FNDMNNAV xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/RequestSetStage/FND/FNDRSSUB43">  
       <Responsibility xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/RequestSetConcurrentProgram/FND/FNDRSSUB43/STAGE10/FND">System Administrator</Responsibility>  
-      \<ns3:Application xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/RequestSetConcurrentProgram/FND/FNDRSSUB43/STAGE10/FND">\</ns3:Application>  
-    \</ns2:FNDMNNAV>  
-    \<ns2:FNDMNMNU xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/RequestSetStage/FND/FNDRSSUB43">  
-      \<ns3:Responsibility xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/RequestSetConcurrentProgram/FND/FNDRSSUB43/STAGE10/FND">System Administrator\</ns3:Responsibility>  
-      \<ns3:Application xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/RequestSetConcurrentProgram/FND/FNDRSSUB43/STAGE10/FND">\</ns3:Application>  
-    \</ns2:FNDMNMNU>  
-    \<ns2:FNDMNFUN xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/RequestSetStage/FND/FNDRSSUB43">  
-      \<ns3:Responsibility xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/RequestSetConcurrentProgram/FND/FNDRSSUB43/STAGE10/FND">System Administrator\</ns3:Responsibility>  
-      \<ns3:Application xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/RequestSetConcurrentProgram/FND/FNDRSSUB43/STAGE10/FND">\</ns3:Application>  
-    \</ns2:FNDMNFUN>  
-  \</ns0:All_x0020_Requests_x0020_in_x0020_the_x0020_Set_STAGE10>  
-\</ns0:FNDRSSUB43>  
+      <ns3:Application xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/RequestSetConcurrentProgram/FND/FNDRSSUB43/STAGE10/FND"></ns3:Application>  
+    </ns2:FNDMNNAV>  
+    <ns2:FNDMNMNU xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/RequestSetStage/FND/FNDRSSUB43">  
+      <ns3:Responsibility xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/RequestSetConcurrentProgram/FND/FNDRSSUB43/STAGE10/FND">System Administrator</ns3:Responsibility>  
+      <ns3:Application xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/RequestSetConcurrentProgram/FND/FNDRSSUB43/STAGE10/FND"></ns3:Application>  
+    </ns2:FNDMNMNU>  
+    <ns2:FNDMNFUN xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/RequestSetStage/FND/FNDRSSUB43">  
+      <ns3:Responsibility xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/RequestSetConcurrentProgram/FND/FNDRSSUB43/STAGE10/FND">System Administrator</ns3:Responsibility>  
+      <ns3:Application xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/RequestSetConcurrentProgram/FND/FNDRSSUB43/STAGE10/FND"></ns3:Application>  
+    </ns2:FNDMNFUN>  
+  </ns0:All_x0020_Requests_x0020_in_x0020_the_x0020_Set_STAGE10>  
+</ns0:FNDRSSUB43>  
 ```  
   
 > [!NOTE]
@@ -199,7 +199,7 @@ ms.lasthandoff: 09/20/2017
  L’orchestration consomme le message, le transmet à Oracle E-Business Suite et reçoit une réponse. Le message de réponse est enregistré dans l’autre emplacement de fichier spécifié en tant que partie de l’orchestration. La réponse pour le **FNDRSSUB43** demande ensemble ressemble à ceci :  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <FNDRSSUB43Response xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/RequestSets/FND">  
   <FNDRSSUB43Result>2543208</FNDRSSUB43Result>  
 </FNDRSSUB43Response>  

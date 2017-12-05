@@ -22,14 +22,14 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 203f02c3cf14ddf468419160187b5ef2a2f9d325
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6f259167112ab87da5af14ca73f735ae38d8789e
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="biztalk-design-time-tools"></a>Outils de conception BizTalk
-Les développeurs qui travaillent sur [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] pouvez utiliser le jeu d’outils au moment du design intégrés [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]. Ces outils sont intégrés dans [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]. Pour plus d’informations sur [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] outils, consultez [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] aide.  
+Les développeurs qui travaillent sur [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] pouvez utiliser le jeu d’outils de conception intégrée à BizTalk Server. Ces outils sont intégrés dans [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]. Pour plus d’informations sur [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] outils, consultez [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]à l’aide de BizTalk Server.  
   
 ## <a name="biztalk-editor"></a>Éditeur BizTalk  
  L’Éditeur BizTalk vous permet de gérer [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] schémas XSD qui sont basées sur les processus d’Interface RosettaNet partenaires (PIP). [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]Installe les schémas suivants pour le développement de votre solution :  
@@ -62,7 +62,7 @@ Les développeurs qui travaillent sur [!INCLUDE[btsCoName](../../includes/btscon
   
 -   3A4_MS_V02_02_PurchaseOrderRequest.xsd  
   
- Ces schémas sont disponibles à \< *lecteur*> : \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version > Accelerator for RosettaNet\SDK\Schemas.  
+ Ces schémas sont disponibles à \< *lecteur*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version\> Accelerator for RosettaNet\SDK\Schemas.  
   
  Vous pouvez ajouter d’autres schémas en téléchargeant le PIP sur le site Web de RosettaNet à [http://go.microsoft.com/fwlink/?linkid=33859](http://go.microsoft.com/fwlink/?linkid=33859). Pour plus d’informations, consultez [comprenant un nouveau Partner Interface Process](../../adapters-and-accelerators/accelerator-rosettanet/incorporating-a-new-partner-interface-process.md).  
   
@@ -84,4 +84,4 @@ Les développeurs qui travaillent sur [!INCLUDE[btsCoName](../../includes/btscon
  [Outils et fonctionnalités de BizTalk Server et de BTARN](../../adapters-and-accelerators/accelerator-rosettanet/tools-and-features-of-biztalk-server-and-btarn.md)   
  [Outils d’administration et exécution](../../adapters-and-accelerators/accelerator-rosettanet/administration-and-run-time-tools.md)   
  [Outils d’analyse](../../adapters-and-accelerators/accelerator-rosettanet/analysis-tools1.md)   
- [Vous incorporez un nouveau Partner Interface Process](../../adapters-and-accelerators/accelerator-rosettanet/incorporating-a-new-partner-interface-process.md)
+ [Incorporation d’un nouveau processus PIP](../../adapters-and-accelerators/accelerator-rosettanet/incorporating-a-new-partner-interface-process.md)

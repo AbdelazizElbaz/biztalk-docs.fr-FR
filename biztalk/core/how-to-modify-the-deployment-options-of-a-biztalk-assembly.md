@@ -18,11 +18,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 416fc38c8768e7391659d133877b2ae59e704463
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 58365383b1981ae40e87ee23891929bf05c8530e
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-modify-the-deployment-options-of-a-biztalk-assembly"></a>Modification des options de déploiement d'un assembly BizTalk
 Cette rubrique explique comment modifier les options de déploiement d'un assembly BizTalk à l'aide de la console Administration de BizTalk Server.  
@@ -44,7 +44,7 @@ Cette rubrique explique comment modifier les options de déploiement d'un assemb
   
 1.  Cliquez sur **Démarrer**, cliquez sur **programmes**, cliquez sur [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], puis cliquez sur **Administration de BizTalk Server**.  
   
-2.  Dans l'arborescence de la console, développez successivement Administration de [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], le groupe BizTalk contenant l'assembly BizTalk pour lequel modifier les options de déploiement, puis l'application contenant l'assembly BizTalk.  
+2.  Dans l’arborescence de la console, développez Administration de BizTalk Server, développez le groupe BizTalk contenant l’assembly BizTalk pour lequel modifier les options de déploiement, puis développez l’application contenant l’assembly BizTalk.  
   
 3.  Cliquez sur le **ressources** dossier, cliquez sur l’assembly BizTalk, puis cliquez sur **modifier**.  
   

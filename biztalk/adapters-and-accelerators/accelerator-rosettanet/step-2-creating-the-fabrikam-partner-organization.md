@@ -16,18 +16,18 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3133f5e2ae7b3a234bef276af67afda391c1f7cf
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: de00977edecb97420742a6510c3290cfe3c76ea5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-creating-the-fabrikam-partner-organization"></a>Étape 2 : Création de l’organisation partenaire Fabrikam
 Dans cette étape, vous utilisez la [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Console de gestion pour créer un nouveau partenaire commercial. Le partenaire commercial pour ce didacticiel est de l’organisation de Fabrikam.  
   
 ### <a name="to-start-the-btarn-management-console"></a>Pour démarrer la console de gestion BTARN  
   
--   Sur l’ordinateur Contoso, cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Microsoft BizTalk \<version > Accelerator for RosettaNet**, puis Cliquez sur  **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]**  Console de gestion.  
+-   Sur l’ordinateur Contoso, cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Microsoft BizTalk \<version\> Accelerator for RosettaNet**, puis cliquez sur  **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]**  Console de gestion.  
   
 ### <a name="to-create-fabrikam-as-a-trading-partner"></a>Pour créer le partenaire commercial Fabrikam  
   
@@ -56,4 +56,4 @@ Dans cette étape, vous utilisez la [!INCLUDE[btsCoName](../../includes/btsconam
 4.  Cliquez sur **OK**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Étape 3 : Création de l’accord de partenariat commercial 2 0C de Contoso](../../adapters-and-accelerators/accelerator-rosettanet/step-3-creating-the-contoso-0c2-trading-partner-agreement.md)
+ [Étape 3 : Création de l’accord de partenariat commercial Contoso 0C2](../../adapters-and-accelerators/accelerator-rosettanet/step-3-creating-the-contoso-0c2-trading-partner-agreement.md)

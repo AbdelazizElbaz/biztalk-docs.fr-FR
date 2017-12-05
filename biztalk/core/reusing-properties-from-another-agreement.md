@@ -12,14 +12,14 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7e2a4e1efbfb7a86c18fb3643a789312a3707a72
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d7db2118f372014a3e8f108c1ff2273bc5aad976
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="reusing-properties-from-another-agreement"></a>Réutilisation des propriétés d'un autre accord
-Vous pouvez réutiliser les propriétés entre les accords. Vous gagnez ainsi un temps précieux lorsque la plupart des propriétés d'un nouvel accord sont identiques à celles d'un accord existant. Dans [!INCLUDE[firstref_TPM](../includes/firstref-tpm-md.md)], l'interface utilisateur [!INCLUDE[prague](../includes/prague-md.md)] vous permet d'exporter un accord dans un fichier XML. Vous pouvez ensuite l'importer pour réutiliser les mêmes propriétés d'accord.  
+Vous pouvez réutiliser les propriétés entre les accords. Vous gagnez ainsi un temps précieux lorsque la plupart des propriétés d'un nouvel accord sont identiques à celles d'un accord existant. Le [!INCLUDE[firstref_TPM](../includes/firstref-tpm-md.md)] interface utilisateur de BizTalk Server vous permet d’exporter un accord dans un fichier de modèle XML. Vous pouvez ensuite l'importer pour réutiliser les mêmes propriétés d'accord.  
   
  L'exportation de l'accord dans un modèle XML permet de capturer la majorité, et non pas la totalité, des propriétés d'un accord. Les propriétés suivantes seront *pas* être exportées vers le fichier XML :  
   
@@ -50,9 +50,9 @@ Vous pouvez réutiliser les propriétés entre les accords. Vous gagnez ainsi un
   
 ## <a name="in-this-section"></a>Dans cette section  
   
--   [Exportation des propriétés de l’accord vers un fichier XML](../core/exporting-agreement-properties-to-an-xml-file.md)  
+-   [Exportation des propriétés d’un accord vers un fichier XML](../core/exporting-agreement-properties-to-an-xml-file.md)  
   
--   [L’importation des propriétés de l’accord d’un fichier XML](../core/importing-agreement-properties-from-an-xml-file.md)  
+-   [Importation des propriétés d’un accord à partir d’un fichier XML](../core/importing-agreement-properties-from-an-xml-file.md)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Configuration des propriétés EDI](../core/configuring-edi-properties.md)

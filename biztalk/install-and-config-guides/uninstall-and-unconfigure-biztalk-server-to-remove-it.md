@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ce643460d7c5256829624de5ba4c32d664c26ac3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 704c1f54a01ceb4c4b7b4cd80ad2df6fc34faa68
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="uninstall-and-unconfigure-biztalk-server-to-remove-it"></a>Désinstallation et annulation de la configuration de BizTalk Server pour le supprimer
 Désinstallez [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] et annulez sa configuration. 
@@ -98,7 +98,7 @@ Désinstallez [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservern
     -   TrackedMessages_Copy_BizTalkMsgBoxDb  
   
         > [!NOTE]
-        >  Si vous avez déployé BAM, vous devez également supprimer la table bam_\<*nom du Cube*> _\<*nom de la vue*> tâche.  
+        >  Si vous avez déployé BAM, vous devez également supprimer la table bam_\<*nom du Cube*\>_\<*nom de la vue* \> travail.  
   
 #### <a name="delete-biztalk-server-databases"></a>Suppression des bases de données BizTalk Server  
   
@@ -130,7 +130,7 @@ Désinstallez [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservern
   
 3.  Supprimez les packages avec les préfixes suivants (cliquez avec le bouton droit sur le package et sélectionnez **Supprimer**) :  
   
-    -   BAM_AN_\<*nom du Cube*>  
+    -   BAM_AN_\<*nom du Cube*\>  
   
-    -   BAM_DM_\<*afficher le nom*>  
+    -   BAM_DM_\<*afficher le nom*\>  
   

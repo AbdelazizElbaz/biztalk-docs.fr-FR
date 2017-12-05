@@ -16,11 +16,11 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d1e355f752241135d781c3425e05f017b0d86d93
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c4941cb95e180b7075b7e113fb89f7734a9abd82
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="submitdirect-biztalk-server-sample"></a>SubmitDirect (exemple BizTalk Server)
 L'exemple SubmitDirect présente l'envoi par programme des messages unidirectionnels et de type requête/réponse à Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] à partir d'applications basées sur .NET. L'exemple illustre l'utilisation des API [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] pour les adaptateurs. Il fournit également un adaptateur de réception, nommé Submit, qui peut être utilisé pour envoyer des messages à [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
@@ -46,7 +46,7 @@ L'exemple SubmitDirect présente l'envoi par programme des messages unidirection
 -   **Envoi du message de demande/réponse.** L’application console SubmitRequest.exe prend le fichier .xml spécifié sur sa ligne de commande et l’envoie à [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Le schéma de ce fichier .xml définit les éléments qui contiennent deux champs d'entier. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] récupère le fichier .xml et le traite avec une orchestration (avec un port de requête/réponse). Il utilise un mappage pour produire un message de réponse XML qui renvoie un entier, produit des deux entiers dans la requête. Lorsque la console reçoit la réponse, elle affiche le résultat.  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
- \<*Exemples de chemin d’accès*> \AdaptersDevelopment\SubmitDirect\  
+ \<*Exemples de chemin d’accès*\>\AdaptersDevelopment\SubmitDirect\  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -69,13 +69,13 @@ L'exemple SubmitDirect présente l'envoi par programme des messages unidirection
   
 1.  Dans une fenêtre de commande, accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \AdaptersDevelopment\SubmitDirect  
+     \<*Exemples de chemin d’accès*\>\AdaptersDevelopment\SubmitDirect  
   
 2.  Exécutez le fichier Setup.bat, qui effectue les actions suivantes :  
   
     -   Crée le dossier de sortie suivant pour la partie envoi de lot de cet exemple.  
   
-         \<*Exemples de chemin d’accès*> \AdaptersDevelopment\SubmitDirect\Out  
+         \<*Exemples de chemin d’accès*\>\AdaptersDevelopment\SubmitDirect\Out  
   
     -   Compile les divers projets [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] de cet exemple.  
   
@@ -110,7 +110,7 @@ L'exemple SubmitDirect présente l'envoi par programme des messages unidirection
   
 1.  Dans une fenêtre de commande, accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \AdaptersDevelopment\SubmitDirect\SubmitMessages\bin\Debug  
+     \<*Exemples de chemin d’accès*\>\AdaptersDevelopment\SubmitDirect\SubmitMessages\bin\Debug  
   
 2.  Exécutez le fichier SubmitMessages.exe, en transmettant plusieurs chaînes sur la ligne de commande.  
   
@@ -122,7 +122,7 @@ L'exemple SubmitDirect présente l'envoi par programme des messages unidirection
   
 1.  Dans une fenêtre de commande, accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \AdaptersDevelopment\SubmitDirect\SubmitRequest\bin\Debug  
+     \<*Exemples de chemin d’accès*\>\AdaptersDevelopment\SubmitDirect\SubmitRequest\bin\Debug  
   
 2.  Exécutez le fichier SubmitRequest.exe, en transmettant un nom de fichier .xml approprié sur la ligne de commande.  
   

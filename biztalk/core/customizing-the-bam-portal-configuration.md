@@ -7,42 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- BAM portal, alerts
-- BAM portal, timeout setting
-- queries [BAM], timeout setting
-- BAM portal, retry interval
-- alerts, configuration options
-- BAM portal, configuring
-- BAM portal, portal banner
-- clustering, NLB [BAM portal]
-- BAM portal, Web.config file
-- Kerberos protocol, BAM portal
-- BAM portal, culture setting
-- BAM portal, IIS
-- IIS, BAM portal
-- BAM portal, NLB cluster
-- Web.config file
-- BAM portal, 64-bit environments
-- BAM portal, Kerberos protocol
-- BAM portal, clustering
-- 64-bit environments, BAM portal
-- IIS, 64-bit support
-- NLB system, BAM portal
-- BAM portal, customizing
-- configuring, BAM portal banner
-- 64-bit support, IIS
-- BAM portal, distributed environment
 ms.assetid: 507bd5f0-b2a0-4d52-85f8-9d984138ca79
 caps.latest.revision: "47"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bad22e9bf2ecddcc50983078b21672f2c755c8a8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fd99c0746c09f88d71e3a44e625ae5c52458f2f3
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="customizing-the-bam-portal-configuration"></a>Personnalisation de la configuration du portail BAM
 Il est possible de configurer de nombreuses options dans le portail BAM. Les procédures suivantes décrivent la manière de modifier le portail BAM pour obtenir les meilleures conditions d'utilisation possibles.  
@@ -52,10 +26,10 @@ Il est possible de configurer de nombreuses options dans le portail BAM. Les pro
 >   
 >  Vous configurez le service Web ou le portail BAM avec un utilisateur non-administrateur empruntant une identité. Vous définissez ensuite des permissions de sorte que le groupe Tout le monde n'ait pas accès au portail. Vous créez un groupe local nommé PortalUsersGroup et affectez ce groupe en tant que groupe Utilisateurs du portail. Cela signifie que seuls les utilisateurs de ce groupe ont accès au portail. Une fois que vous avez configuré le portail BAM, ajoutez l'utilisateur en cours au groupe Utilisateurs du portail. Lorsque vous ouvrez le portail BAM, vous êtes invité à entrer vos informations d'identification. En revanche, si vous vous déconnectez et que vous vous reconnectez immédiatement, vous pouvez ouvrir le portail BAM sans être obligé d'entrer à nouveau vos informations d'identification.  
 >   
->  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]prend en charge les comptes d’utilisateur et de groupe locaux uniquement dans les configurations d’ordinateur unique. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]prend en charge les comptes d’utilisateur et de groupe de domaine unique et plusieurs configurations d’ordinateur.  
+>  BizTalk Server prend en charge les comptes d'utilisateur et de groupe locaux uniquement dans des configurations ne comprenant qu'un seul ordinateur. BizTalk Server prend en charge les comptes d'utilisateur et de groupe de domaine dans des configurations comprenant un ou plusieurs ordinateurs.  
   
 ## <a name="running-the-bam-portal-in-a-64-bit-environment"></a>Exécution du portail BAM dans un environnement 64 bits  
- Si vous utilisez IIS 6 dans un environnement 64 bits, vous devez configurer IIS en mode 32 bits pour pouvoir exécuter le portail BAM. Pour plus d’informations sur la définition du mode, consultez « Comment basculer entre les versions 32 bits d’ASP.NET 1.1 et la version 64 bits d’ASP.NET 2.0 sur une version 64 bits de Windows » à [http://go.microsoft.com/fwlink/?LinkId=61991](http://go.microsoft.com/fwlink/?LinkId=61991).  
+ Si vous utilisez Internet Information Services (IIS) dans un environnement 64 bits, vous devez configurer IIS en mode 32 bits pour exécuter le portail BAM. 
   
 > [!IMPORTANT]
 >  Il n'est pas utile de configurer IIS 7 en mode 32 bits.  
@@ -82,9 +56,9 @@ Il est possible de configurer de nombreuses options dans le portail BAM. Les pro
   
 1.  Modifiez le fichier Web.config du portail BAM. Pour ce faire, cliquez sur **Démarrer**, cliquez sur **exécuter**, tapez notepad [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]bamportal\web.config, puis cliquez sur **OK**.  
   
-2.  Le contenu principal de démarrage rapide est remplaçable en modifiant la ligne suivante : \<Ajouter clé = « MainPageContentUrl » value="~/MainPageContent.htm"/ >. Modification **MainPageContent.htm** dans le champ de valeur pour pointer vers votre propre fichier HTML. Ce fichier doit appartenir au même répertoire que le fichier Web.config.  
+2.  Le contenu principal de démarrage rapide est remplaçable en modifiant la ligne suivante : \<Ajouter clé = « MainPageContentUrl » value="~/MainPageContent.htm"/\>. Modification **MainPageContent.htm** dans le champ de valeur pour pointer vers votre propre fichier HTML. Ce fichier doit appartenir au même répertoire que le fichier Web.config.  
   
-3.  Modifiez la page de texte d’identification en ajoutant la ligne suivante au fichier web.config : \<Ajouter clé = « PortalTitle » value = « New Identifying text » / >. Insérez le texte permettant d'identifier le portail dans le champ de valeur approprié.  
+3.  Modifiez la page de texte d’identification en ajoutant la ligne suivante au fichier web.config : \<Ajouter clé = « PortalTitle » value = « New Identifying text » /\>. Insérez le texte permettant d'identifier le portail dans le champ de valeur approprié.  
   
 4.  Modifiez le fichier styles.css portail BAM. Cliquez sur **Démarrer**, cliquez sur **exécuter**, tapez notepad [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]bamportal\styles.CSS, puis cliquez sur **OK**.  
   
@@ -168,7 +142,7 @@ Il est possible de configurer de nombreuses options dans le portail BAM. Les pro
   
 1.  Ouvrez le fichier web.config à l'aide du Bloc-notes. Cliquez sur **Démarrer**, cliquez sur **exécuter**, tapez notepad [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]bamportal\web.config, puis cliquez sur **OK**.  
   
-2.  Modifiez le champ de valeur de la \<ajouter la clé = « AlertNotificationOptions » value = " » / > ligne du fichier web.config avec une liste délimitée par des virgules spécifiant les options de notification valide avec l’une des valeurs suivantes. Une valeur vide entraîne l'affichage de toutes les options de notification disponibles sur le serveur, dans l'ordre renvoyé par le serveur. Toute valeur non reconnue est équivalente à une valeur vide.  
+2.  Modifier le champ de valeur dans le \<ajouter la clé = « AlertNotificationOptions » value = "« /\> ligne du fichier web.config avec une liste délimitée par des virgules spécifiant les options de notification valide avec l’une des valeurs suivantes. Une valeur vide entraîne l'affichage de toutes les options de notification disponibles sur le serveur, dans l'ordre renvoyé par le serveur. Toute valeur non reconnue est équivalente à une valeur vide.  
   
     |Valeur| Description|  
     |-----------|-----------------|  
@@ -186,7 +160,7 @@ Il est possible de configurer de nombreuses options dans le portail BAM. Les pro
   
 1.  Ouvrez une invite de commandes.  
   
-2.  Exécutez **C:\Program Files\Microsoft SQL Server\90\Notification Services\9.0.242\Bin\nscontrol register - name bamalerts-server***\<nom du serveur >* remplacer  *\<nom du serveur >* avec le nom du serveur.  
+2.  Exécutez **C:\Program Files\Microsoft SQL Server\90\Notification Services\9.0.242\Bin\nscontrol register - name bamalerts-server***\<nom du serveur\>*  remplacer  *\<nom du serveur\>*  avec le nom du serveur.  
   
 3.  Appuyez sur F5 pour actualiser le navigateur.  
   
@@ -198,11 +172,11 @@ Il est possible de configurer de nombreuses options dans le portail BAM. Les pro
  Pour plus d’informations sur la modification des paramètres de sécurité IIS, consultez l’article de la Base de connaissances à [http://go.microsoft.com/fwlink/?LinkId=57922](http://go.microsoft.com/fwlink/?LinkId=57922).  
   
 ## <a name="viewing-aggregate-bam-data-in-the-bam-portal-in-sql-server-2008--deployments"></a>Affichage des données BAM agrégées dans le portail BAM dans les déploiements de SQL Server 2008  
- Pour afficher les données agrégées dans le portail BAM à partir d'un ordinateur client alors que l'environnement de déploiement est basé sur [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)], vous devez installer le fournisseur OLE DB pour Microsoft SQL Server 2008 Analysis Services 10.0 sur l'ordinateur client. Si analysis services ne sont pas installés les utilisateurs recevront un message d’erreur suivant :  
+ Pour afficher les données d’agrégation dans le portail BAM à partir d’un ordinateur client vers le portail BAM lors de l’environnement de déploiement utilise SQL Server 2008, vous devez installer Microsoft SQL Server 2008 Analysis Services 10.0 fournisseur OLE DB sur l’ordinateur client. Si analysis services ne sont pas installés les utilisateurs recevront un message d’erreur suivant :  
   
- Le serveur  *\<nom_serveur >* ne peut pas être contacté ou est trop occupé.  
+ Le serveur  *\<nom_serveur\>*  ne peut pas être contacté ou est trop occupé.  
   
- Pour installer le Feature Pack pour Microsoft SQL Server 2008, consultez [http://go.microsoft.com/fwlink/?LinkId=70728](http://go.microsoft.com/fwlink/?LinkId=70728).  
+
   
 ## <a name="see-also"></a>Voir aussi  
- [Planification pour le portail BAM](../core/planning-for-the-bam-portal.md)
+ [Planification du portail BAM](../core/planning-for-the-bam-portal.md)

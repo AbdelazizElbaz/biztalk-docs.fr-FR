@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0fa0c0b5435e235a07046f311a971a0036dc8346
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a87404e608789fa3dba003f3aba6155c5f049e8d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-recover-enterprise-single-sign-on"></a>Récupération de l'authentification unique de l'entreprise
 Avant de restaurer BizTalk Server, vous devez restaurer l'authentification unique de l'entreprise (SSO).  
@@ -60,9 +60,9 @@ Avant de restaurer BizTalk Server, vous devez restaurer l'authentification uniqu
   
 10. À l'invite de commandes, tapez :  
   
-     **ssoconfig - restoreSecret***\<backupfile >*   
+     **ssoconfig - restoreSecret***\<backupfile  \>*  
   
-     où  *\<backupfile >* est le nom du fichier de secret principal que vous avez sauvegardé.  
+     où  *\<backupfile\>*  est le nom du fichier de secret principal que vous avez sauvegardé.  
   
      Lorsque **ssoconfig** vous demande le mot de passe du fichier de sauvegarde, entrez le mot de passe qui a été spécifié lors de la configuration de l’authentification unique. Si le mot de passe est correct, **ssoconfig** affiche le message suivant :  
   

@@ -17,11 +17,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4d47fb5f072be8969df61b0e384c700b7b0ddffb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a8811f1dd056ca5a4ea4582d593af30e2ffc879f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="deploying-a4swift-envelope-schemas"></a>Déploiement des schémas d’enveloppe A4SWIFT
 Chaque fois que vous configurez Message Repair et New Submission, vous devez inclure les schémas d’enveloppe dans les projets de schéma. Un schéma d’enveloppe, tels que EnvelopeMT103.xsd, est requis pour écrire sur site MRSR.  
@@ -47,13 +47,13 @@ Chaque fois que vous configurez Message Repair et New Submission, vous devez inc
   
 3.  Dans la boîte de dialogue Ajouter une référence, cliquez sur le **Parcourir** balise.  
   
-4.  Dans la boîte de dialogue Sélectionner le composant, ouvrez le **Regarder dans** liste déroulante. Déplacer vers   ***\<lecteur >*: \Program Files\Microsoft BizTalk Accelerator pour SWIFT \<version > Message Pack\Assemblies**. Sélectionnez **Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas.dll** dans la liste des assemblys, puis cliquez sur **ajouter**.  
+4.  Dans la boîte de dialogue Sélectionner le composant, ouvrez le **Regarder dans** liste déroulante. Déplacer vers   ***\<lecteur\>*: \Program Files\Microsoft BizTalk Accelerator pour SWIFT \<version\> Message Pack\Assemblies**. Sélectionnez **Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas.dll** dans la liste des assemblys, puis cliquez sur **ajouter**.  
   
 5.  Dans le **ajouter une référence** boîte de dialogue, cliquez sur **OK**.  
   
 6.  Avec le bouton droit de votre projet, pointez sur **ajouter**, puis cliquez sur **ajouter un élément existant**.  
   
-7.  Dans la zone Ajouter un élément existant boîte de dialogue, dans le **Regarder dans** zone déroulante, accédez à  **\<lecteur > : \Program Files\ Microsoft BizTalk Accelerator pour SWIFT \<version > Messages Pack\SWIFT de Message \A4SWIFT-srg\<version > \Categoryn\MTxxx**. Sélectionnez le schéma d’enveloppe, par exemple, **EnvelopeMT103.xsd**, puis cliquez sur **ajouter**.  
+7.  Dans la zone Ajouter un élément existant boîte de dialogue, dans le **Regarder dans** zone déroulante, accédez à  **\<lecteur\>: \Program Files\ Microsoft BizTalk Accelerator pour SWIFT \<version\>Message Pack\SWIFT Messages\A4SWIFT-SRG\<version\>\Categoryn\MTxxx**. Sélectionnez le schéma d’enveloppe, par exemple, **EnvelopeMT103.xsd**, puis cliquez sur **ajouter**.  
   
      Dans la zone Ajouter un élément existant boîte de dialogue, dans le **Regarder dans** zone déroulante, accédez à. Sélectionnez le schéma d’enveloppe, par exemple, EnvelopeMT103.xsd et puis cliquez sur Ajouter.  
   
@@ -62,7 +62,7 @@ Chaque fois que vous configurez Message Repair et New Submission, vous devez inc
   
 8.  Dans l’Explorateur de solutions, cliquez sur votre projet, pointez sur **ajouter**, puis cliquez sur **ajouter un élément existant**.  
   
-9. Si vous utilisez la fonctionnalité de Message Repair et New Submission, dans la boîte de dialogue Ajouter un élément existant dans le **Regarder dans** zone déroulante, accédez à  **\<* lecteur*> : \ Microsoft BizTalk Accelerator pour SWIFT \<version > Message Pack\SWIFT Messages\A4SWIFT-SRG\<version > \Unparsed Message **. Sélectionnez **EnvelopeUnparsedMessage.xsd**, puis cliquez sur **ajouter**.  
+9. Si vous utilisez la fonctionnalité de Message Repair et New Submission, dans la boîte de dialogue Ajouter un élément existant dans le **Regarder dans** zone déroulante, accédez à  **\<* lecteur* \>: \Microsoft BizTalk Accelerator pour SWIFT \<version\> Message Pack\SWIFT Messages\A4SWIFT-SRG\<version\>\Unparsed Message **. Sélectionnez **EnvelopeUnparsedMessage.xsd**, puis cliquez sur **ajouter**.  
   
 10. Dans l'Explorateur de solutions, cliquez avec le bouton droit sur le nom du projet, puis cliquez sur **Générer**.  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 538e47f481f0817acfbd26477866a3d45a0d285b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e84fcd29af6b698713623fbca556d988e037d8c1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-bizunit-and-loadgen-to-automate-performance-and-stability-testing"></a>À l’aide de BizUnit et LoadGen pour automatiser le test de performances et stabilité
 Cette rubrique fournit des informations sur l’utilisation de l’outil Microsoft BizTalk LoadGen 2007 avec BizUnit pour automatiser le test de performances et stabilité d’une solution BizTalk Server.  
@@ -96,11 +96,11 @@ Cette rubrique fournit des informations sur l’utilisation de l’outil Microso
  Microsoft [outil BizTalk LoadGen 2007](http://go.microsoft.com/fwlink/?LinkId=59841) est disponible pour téléchargement à l’adresse [http://go.microsoft.com/fwlink/?LinkId=59841](http://go.microsoft.com/fwlink/?LinkId=59841) (http://go.microsoft.com/fwlink/?LinkId=59841).  
   
 ### <a name="sample-loadgen-configuration-file"></a>Exemple de fichier de configuration LoadGen  
- Toutes les informations de configuration de LoadGen sont stockées dans un fichier xml. Le fichier de configuration LoadGen contient un \<CommonSection > élément qui configure les paramètres par défaut pour toutes les tâches de LoadGen dans le scénario LoadGen. Le fichier de configuration LoadGen peut également contenir un ou plusieurs \<Section > éléments qui fournissent des paramètres de configuration pour une tâche LoadGen spécifique. Entrées dans un \<Section > élément remplacent les valeurs par défaut spécifiées dans le \<CommonSection > élément.  
+ Toutes les informations de configuration de LoadGen sont stockées dans un fichier xml. Le fichier de configuration LoadGen contient un \<CommonSection\> élément qui configure les paramètres par défaut pour toutes les tâches de LoadGen dans le scénario LoadGen. Le fichier de configuration LoadGen peut également contenir un ou plusieurs \<Section\> éléments qui fournissent des paramètres de configuration pour une tâche LoadGen spécifique. Entrées dans un \<Section\> élément remplacent les valeurs par défaut spécifiées dans le \<CommonSection\> élément.  
   
- L’exemple de fichier de configuration LoadGen qui suit est une version légèrement modifiée du fichier de configuration d’exemple FileToFileLG.xml qui est inclus dans le sous-répertoire \ConfigFiles\ConsoleConfigFiles du répertoire d’installation LoadGen. Ce test envoie des 25 messages \<LotSizePerInterval > toutes les 200 millisecondes \<SleepInterval >, 5 threads par le Générateur de charge \<NumThreadsperSection > et va s’arrêter le test de charge après les 5000 messages \<%NUMFILES > ont été envoyés.  
+ L’exemple de fichier de configuration LoadGen qui suit est une version légèrement modifiée du fichier de configuration d’exemple FileToFileLG.xml qui est inclus dans le sous-répertoire \ConfigFiles\ConsoleConfigFiles du répertoire d’installation LoadGen. Ce test envoie des 25 messages \<LotSizePerInterval\> toutes les 200 millisecondes \<SleepInterval\>, 5 threads par le Générateur de charge \<NumThreadsperSection\>et s’arrête à la charge tester après leur 5000 messages \<%NUMFILES\> ont été envoyés.  
   
- Le contrôleur de limitation de fichier est spécifié dans le \<ThrottleController > section. La valeur de \<ThresholdRange > a la valeur 1000 à 2000, ce qui signifie que si l’emplacement du fichier C:\Scenarios\FileToFile\Receive (paramètres) a moins de 1 000 ou plus de 2000 fichiers, le contrôleur de limitation accélèrera le Générateur de fichier et augmenter/diminuer la charge comme il convient. Le nombre de fichiers dans l’emplacement du fichier sera vérifiée toutes les 1000 millisecondes \<SleepInterval >. Le \<FileSection > élément définit les propriétés pour les messages envoyés par les générateurs de charge. Le fichier FileToFileLG.xml \<SrcFilePath > LoadGen seront copiés vers le filedrop C:\Scenarios\FileToFile\Receive \<DstFilePath >. Le transport de fichier est utilisé ici, car il s’agit du transport par défaut spécifié dans le \<Transport nom > élément dans le \<CommonSection > élément.  
+ Le contrôleur de limitation de fichier est spécifié dans le \<ThrottleController\> section. La valeur de \<ThresholdRange\> a la valeur 1000 à 2000, ce qui signifie que si l’emplacement du fichier C:\Scenarios\FileToFile\Receive (paramètres) a moins de 1 000 ou plus de 2000 fichiers, le contrôleur de limitation accélèrera le fichier Générateur et augmenter/diminuer la charge selon le cas. Le nombre de fichiers dans l’emplacement du fichier sera vérifiée toutes les 1000 millisecondes \<SleepInterval\>. Le \<FileSection\> élément définit les propriétés pour les messages envoyés par les générateurs de charge. Le fichier FileToFileLG.xml \<SrcFilePath\> LoadGen seront copiés vers le filedrop C:\Scenarios\FileToFile\Receive \<DstFilePath >. Le transport de fichier est utilisé ici, car il s’agit du transport par défaut spécifié dans le \<nom Transport\> élément dans le \<CommonSection\> élément.  
   
 ```  
 <LoadGenFramework>  
@@ -350,7 +350,7 @@ Cette rubrique fournit des informations sur l’utilisation de l’outil Microso
 </TestStep>  
 ```  
   
- À la fin du test, nous utilisons **BizUnit.DBExecuteNonQueryStep** pour mettre à jour la base de données des résultats de test. Issue de cette étape correspond à la fin de l’étape d’exécution du test, comme indiqué par la fermeture \</TestExecution > balise. Là encore, vous devez modifier le **ConnectionString** et **RawSQLQuery** paramètres devant correspondre à votre environnement.  
+ À la fin du test, nous utilisons **BizUnit.DBExecuteNonQueryStep** pour mettre à jour la base de données des résultats de test. Issue de cette étape correspond à la fin de l’étape d’exécution du test, comme indiqué par la fermeture \</TestExecution\> balise. Là encore, vous devez modifier le **ConnectionString** et **RawSQLQuery** paramètres devant correspondre à votre environnement.  
   
 ```  
    <!-- Step 11: Update test results DB with test stop time -->  
@@ -527,4 +527,4 @@ Cette rubrique fournit des informations sur l’utilisation de l’outil Microso
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Pour faciliter les tests automatisés à l’aide de BizUnit](../technical-guides/using-bizunit-to-facilitate-automated-testing.md)
+ [Utilisation de BizUnit pour faciliter les tests automatisés](../technical-guides/using-bizunit-to-facilitate-automated-testing.md)

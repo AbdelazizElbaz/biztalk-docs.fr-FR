@@ -16,11 +16,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b2bb8e89ed790fe9916efe69685ad667d9fe9403
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 038d59827a62c9f4e83879ec7cf2e0b47fd738f4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="value-mapping-functoid"></a>Fonctoid Mappage
 Le **mappage** fonctoid retourne la valeur de son deuxième paramètre si son premier paramètre a la valeur true. Un fonctoid sert souvent à modifier les attributs d'un champ en attributs d'un enregistrement. Pour mettre à plat une partie d’un message d’entrée en convertissant plusieurs enregistrements en un seul enregistrement, utilisez la [fonctoid Mappage des valeurs (mise à plat)](../core/value-mapping-flattening-functoid.md).  
@@ -62,7 +62,7 @@ Mappage du fonctoid Mappage des valeurs
  Pour supprimer des balises vides, utilisez le fonctoid Mappage des valeurs pour vérifier si une balise doit être créée ou non. Si la valeur de la condition est true, le champ de destination sera créé, sinon, il ne le sera pas. Dans un scénario de bouclage, utilisez un fonctoid logique et connectez-le à l'enregistrement ou au champ de destination. Si la condition a la valeur false, la balise ne sera pas créée. Pour obtenir un exemple, consultez [bouclage conditionnel](../core/conditional-looping.md).  
   
 ## <a name="forcing-the-creation-of-empty-tags"></a>Création forcée de balises vides  
- Pour forcer la création de balises vides, vous pouvez ajouter une valeur dans la propriété valeur du champ de destination ou de lien un **Concatenate** fonctoid pour le champ de destination.  Dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], il est possible de forcer la génération de balises vides en sélectionnant la «\<vide > « valeur de la propriété de la valeur du champ de destination. Dans ce cas, le champ sera créé avec la valeur vide.  
+ Pour forcer la création de balises vides, vous pouvez ajouter une valeur dans la propriété valeur du champ de destination ou de lien un **Concatenate** fonctoid pour le champ de destination.  Dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], il est possible de forcer la génération de balises vides en sélectionnant la «\<vide\>« valeur de la propriété de la valeur du champ de destination. Dans ce cas, le champ sera créé avec la valeur vide.  
   
 ## <a name="see-also"></a>Voir aussi  
  [(Mise à plat) fonctoid Mappage](../core/value-mapping-flattening-functoid.md)   

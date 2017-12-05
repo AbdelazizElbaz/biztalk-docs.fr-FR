@@ -12,14 +12,14 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d879e66873c3bfddc6a547757fd91067517fecb0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d291c17083200b26f632f7dee2f58bc75ccc38b2
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="hipaa-transaction-sets"></a>Documents informatisés HIPAA
-Cette rubrique décrit les documents informatisés et versions HIPAA pris en charge par [!INCLUDE[prague](../includes/prague-md.md)].  
+Cette rubrique décrit les documents informatisés HIPAA et les versions qui sont pris en charge par BizTalk Server.  
   
 ## <a name="hipaa-transaction-sets-and-versions"></a>Documents informatisés et versions HIPAA  
   

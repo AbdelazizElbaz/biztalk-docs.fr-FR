@@ -13,11 +13,11 @@ caps.latest.revision: "42"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aaf155bac387f613725023feb015f8f9a1894a2d
-ms.sourcegitcommit: 5355a25d120d094778fb8f68ea14cab55c68d292
+ms.openlocfilehash: c67e68c210566a4f0ba42fcfa0e10cd0260fb6b2
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="biztalk-server-64-bit-support"></a>Prise en charge 64 bits pour BizTalk Server
 Dans cette rubrique, vous trouverez les réponses à certaines questions fréquemment posées ayant trait à la prise en charge du mode d'exécution 64 bits de Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
@@ -27,7 +27,7 @@ Dans cette rubrique, vous trouverez les réponses à certaines questions fréque
  
   [Configurations logicielle et matérielle pour BizTalk Server 2016](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md)  
   
- [Configurations matérielle et logicielle requises pour BizTalk Server 2013 et 2013 R2](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2013-and-2013-r2.md)  
+ [Configuration matérielle et logicielle requise pour BizTalk Server 2013 et 2013 R2](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2013-and-2013-r2.md)  
   
 ## <a name="is-there-an-extra-cost-for-64-bit-support"></a>La prise en charge du mode 64 bits induit-elle des frais supplémentaires ?  
  Non. prise en charge 64 bits est incluse sans frais supplémentaires.  
@@ -132,7 +132,7 @@ Dans cette rubrique, vous trouverez les réponses à certaines questions fréque
  Non. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]composants d’exécution à l’aide des formats qui sont indépendants des runtimes 32 bits ou 64 bits est conservé. Cela inclut des orchestrations, des messages et des ports. Ce modèle de persistance permet à un administrateur de basculer la configuration hôte entre 32 bits et 64 bits sans créer d'incompatibilités au sein des données [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
 ## <a name="when-i-upgrade-to-biztalk-server-will-my-biztalk-hosts-run-as-64-bit-by-default"></a>Après une mise à niveau vers BizTalk Server, mes hôtes BizTalk s’exécuteront-ils par défaut en mode 64 bits ?  
- Non. Par défaut, la mise à niveau vers [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] marquer toutes les instances d’hôte BizTalk en tant que 32 bits uniquement. Un administrateur doit créer de nouvelles instances d'hôte sur des ordinateurs Windows 64 bits et configurer les applications devant les utiliser.  
+ Non. Par défaut, de mises à niveau vers BizTalk Server marquer toutes les instances d’hôte BizTalk en tant que 32 bits uniquement. Un administrateur doit créer de nouvelles instances d'hôte sur des ordinateurs Windows 64 bits et configurer les applications devant les utiliser.  
   
 ## <a name="can-i-have-a-mixed-biztalk-server-group-that-includes-both-32-bit-and-64-bit-biztalk-runtimes"></a>Puis-je disposer d’un groupe BizTalk Server « mixte » qui inclue des composants d’exécution 32 bits et 64 bits ?  
  Oui.  

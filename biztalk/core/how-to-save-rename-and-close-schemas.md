@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0a4ad59760d6efddcfe946c0ee13c26ee0f8ca1d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2a295bacf263e3ecad9a9aa081fb0d5d3be2f635
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-save-rename-and-close-schemas"></a>Enregistrement, renommage et fermeture des schémas
 Dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], les schémas sont des fichiers de langage XSD (XML Schema Definition). Ils résident sur le système de fichiers avec l'extension .xsd. Lorsque vous utilisez l'Éditeur BizTalk pour développer des schémas, vous devez systématiquement enregistrer et fermer les fichiers de schéma et devez parfois les renommer. Cette rubrique indique les étapes requises pour effectuer ces opérations de base.  
@@ -25,12 +25,12 @@ Dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-
   
 1.  Si nécessaire, activez l'Éditeur BizTalk pour le schéma à enregistrer en cliquant sur l'onglet approprié en haut de la fenêtre d'édition principale dans Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].  
   
-2.  Sur le **fichier** menu, cliquez sur **enregistrer  *\<nom de schéma >***.  
+2.  Sur le **fichier** menu, cliquez sur **enregistrer  *\<nom de schéma\>***.  
   
      Si le schéma comportait des modifications non enregistrées, son nom tel qu'il s'affiche dans l'onglet en haut de la fenêtre d'édition principale ne se terminera plus par un astérisque (*). L'astérisque est en effet utilisé pour attirer l'attention sur des modifications non enregistrées.  
   
 > [!NOTE]
->  Vous pouvez enregistrer le schéma sous un nouveau nom en cliquant sur **enregistrer  *\<nom de schéma >* en tant que** sur la **fichier** menu.  
+>  Vous pouvez enregistrer le schéma sous un nouveau nom en cliquant sur **enregistrer  *\<nom de schéma\>*  en tant que** sur la **fichier** menu.  
   
 > [!NOTE]
 >  Vous pouvez enregistrer le schéma en tant que partie de l’enregistrement de tous les éléments modifiés dans le projet en cliquant sur **Enregistrer tout** sur la **fichier** menu.  

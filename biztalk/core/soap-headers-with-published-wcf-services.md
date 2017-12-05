@@ -16,11 +16,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b62ebea1380e686a0afbf18dc63aedbfab190fac
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 78f36e778930a781ac797e18308240ecb4bef667
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="soap-headers-with-published-wcf-services"></a>En-têtes SOAP avec les services WCF publiés
 Adaptateurs de réception WCF peuvent copier toutes les valeurs d’en-tête SOAP dans les messages entrants vers le **InboundHeaders** propriété, ou ils peuvent écrire ou promouvoir les valeurs spécifiées dans le contexte de message BizTalk. Les adaptateurs peuvent utiliser les en-têtes SOAP personnalisés et les en-têtes SOAP standard utilisés par l'infrastructure WCF, tels que WS-Addressing, WS-Security et WS-AtomicTransaction. Le **InboundHeaders** propriété de contexte est dans l’espace de noms cible **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**et contient les représentations sous forme de chaîne de SOAP valeurs d’en-tête dans les messages entrants.  
@@ -45,11 +45,11 @@ Adaptateurs de réception WCF peuvent copier toutes les valeurs d’en-tête SOA
   
  Pour écrire ou promouvoir des valeurs d'en-tête SOAP dans le contexte du message BizTalk, vous devez placer un ensemble de paires de valeurs constituées d'un nom de propriété et d'un espace de noms dans le message WCF afin que les adaptateurs WCF reconnaissent que les valeurs d'en-tête doivent être écrites ou promues. Un adaptateur WCF attend les propriétés suivantes dans les messages WCF pour écrire ou promouvoir les valeurs d'en-tête SOAP dans le contexte du message BizTalk :  
   
--   Pour promouvoir les valeurs d’en-tête SOAP dans le contexte de message BizTalk, les adaptateurs WCF recherchent la paire de clé **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote** et la valeur **liste < KeyValuePair\<XmlQualifiedName, objet >>**.  
+-   Pour promouvoir les valeurs d’en-tête SOAP dans le contexte de message BizTalk, les adaptateurs WCF recherchent la paire de clé **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote** et la valeur **liste\< KeyValuePair\<XmlQualifiedName, objet\>\>**.  
   
      À l’aide de cette paire, les adaptateurs extraient l’espace de noms, le nom et la valeur de la **XmlQualifiedName** de l’objet et les utilisent pour promouvoir les valeurs d’en-tête.  
   
--   Pour écrire, mais pas la promotion des valeurs d’en-tête SOAP dans le contexte de message BizTalk, les adaptateurs WCF recherchent la paire de clé **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/WriteToContext** et la valeur  **Liste < KeyValuePair\<XmlQualifiedName, objet >>**.  
+-   Pour écrire, mais pas la promotion des valeurs d’en-tête SOAP dans le contexte de message BizTalk, les adaptateurs WCF recherchent la paire de clé **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/WriteToContext** et la valeur  **Liste\<KeyValuePair\<XmlQualifiedName, objet\>\>**.  
   
      À l'aide de cette paire, les adaptateurs WCF écrivent les valeurs dans le contexte du message.  
   
@@ -74,7 +74,7 @@ writeProps.Add(new KeyValuePair<XmlQualifiedName, object>(PropName2, "Property v
 wcfMessage.Properties[PropertiesToWriteKey]=writeProps;  
 ```  
   
- L'Assistant Publication de services WCF BizTalk n'inclut pas de définitions d'en-tête SOAP personnalisées dans les métadonnées générées. Pour publier des métadonnées pour les services WCF à l'aide d'en-têtes SOAP personnalisés, vous devez créer manuellement un fichier WSDL (Web Services Description Language). Vous pouvez utiliser la **externalMetadataLocation** attribut de la [ \<serviceMetadata >](http://go.microsoft.com/fwlink/?LinkId=89121) élément dans le fichier Web.config généré par l’Assistant pour spécifier l’emplacement du fichier WSDL. Ce dernier est renvoyé à l'utilisateur en réponse aux demandes WSDL et MEX (Metadata Exchange), au lieu du fichier WSDL généré automatiquement.  
+ L'Assistant Publication de services WCF BizTalk n'inclut pas de définitions d'en-tête SOAP personnalisées dans les métadonnées générées. Pour publier des métadonnées pour les services WCF à l'aide d'en-têtes SOAP personnalisés, vous devez créer manuellement un fichier WSDL (Web Services Description Language). Vous pouvez utiliser la **externalMetadataLocation** attribut de la [ \<serviceMetadata\> ](http://go.microsoft.com/fwlink/?LinkId=89121) élément dans le fichier Web.config généré par l’Assistant pour spécifier l’emplacement de la Fichier WSDL. Ce dernier est renvoyé à l'utilisateur en réponse aux demandes WSDL et MEX (Metadata Exchange), au lieu du fichier WSDL généré automatiquement.  
   
  Les données XML suivantes montrent un exemple de la partie du fichier WSDL qui définit les en-têtes SOAP personnalisés :  
   
@@ -94,10 +94,10 @@ wcfMessage.Properties[PropertiesToWriteKey]=writeProps;
   
 ## <a name="in-this-section"></a>Dans cette section  
   
--   [Accès aux en-têtes SOAP des Messages WCF avec les Orchestrations](../core/accessing-soap-headers-in-wcf-messages-with-orchestrations.md)  
+-   [Accès aux en-têtes SOAP dans les messages WCF avec des orchestrations](../core/accessing-soap-headers-in-wcf-messages-with-orchestrations.md)  
   
--   [Accès aux en-têtes SOAP des Messages WCF avec les composants de Pipeline](../core/accessing-soap-headers-in-wcf-messages-with-pipeline-components.md)  
+-   [Accès aux en-têtes SOAP dans les messages WCF avec des composants de pipeline](../core/accessing-soap-headers-in-wcf-messages-with-pipeline-components.md)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Propriétés et schéma de propriété des adaptateurs WCF](../core/wcf-adapters-property-schema-and-properties.md)   
- [En-têtes SOAP avec les Services WCF utilisés](../core/soap-headers-with-consumed-wcf-services.md)
+ [En-têtes SOAP avec les services WCF utilisés](../core/soap-headers-with-consumed-wcf-services.md)

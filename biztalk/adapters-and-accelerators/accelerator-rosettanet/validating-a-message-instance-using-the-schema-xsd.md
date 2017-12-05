@@ -17,11 +17,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 50a4e0b08e3bbe9e29b3417fd6e53475fd98483c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0eda0b76b3daff53290264169c5b2effe80a9e5c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="validating-a-message-instance-using-the-schema-xsd"></a>Validation d’une Instance de Message en utilisant le schéma XSD
 Cette rubrique décrit comment valider une instance de message à l’aide d’un des fichiers XSD de schéma que Microsoft® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] a intégré dans le fichier d’assembly RNPIPs.  
@@ -32,7 +32,7 @@ Cette rubrique décrit comment valider une instance de message à l’aide d’u
   
 2.  Sur le **fichier**, pointez sur **ouvrir**, puis cliquez sur **projet**.  
   
-3.  Recherchez  *\<lecteur >*\Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\SDK\Schemas, cliquez sur **RNPIPs.btproj**, puis cliquez sur **Ouvrir**.  
+3.  Recherchez  *\<lecteur\>*\Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\Schemas, cliquez sur **RNPIPs.btproj**, puis cliquez sur **ouvrir**.  
   
 4.  Dans l’Explorateur de solutions, développez **RNPIPs**, cliquez sur le schéma XSD que vous souhaitez utiliser pour valider une instance de message, puis cliquez sur **propriétés**.  
   
@@ -44,4 +44,4 @@ Cette rubrique décrit comment valider une instance de message à l’aide d’u
   
 ## <a name="see-also"></a>Voir aussi  
  [Modification d’un PIP existant dans RNPIPs](../../adapters-and-accelerators/accelerator-rosettanet/modifying-an-existing-pip-in-rnpips.md)   
- [Utilisation des adresses PIP](../../adapters-and-accelerators/accelerator-rosettanet/working-with-pips.md)
+ [Utilisation des processus PIP](../../adapters-and-accelerators/accelerator-rosettanet/working-with-pips.md)

@@ -15,11 +15,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 108f13dfbdc7b42027f57e70d913202b4d4e3100
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 574e4a27342680ef4a37f6b12059cbf97bd9584a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="validation-settings"></a>Paramètres de validation
 À l’aide de [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)], vous pouvez valider vos messages par rapport à la norme HL7. [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]garantit que les messages que vous envoyez ou recevez un segment de structure et le corps de message qui est conforme à la norme HL7. Vous pouvez également valider HL7 pris en charge les types de données personnalisés et autoriser les délimiteurs de fin. Vous utilisez la [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer **Validation** onglet pour configurer la validation.  
@@ -44,7 +44,7 @@ Onglet Validation de l’Explorateur de Configuration de BTAHL7
   
 #### <a name="to-open-btahl7-configuration-explorer"></a>Pour ouvrir l’Explorateur de Configuration de BTAHL7  
   
--   Cliquez sur **Démarrer**, cliquez sur **programmes**, cliquez sur **Microsoft BizTalk \<version > Accelerator pour HL7**, puis cliquez sur **BTAHL7 L’Explorateur de configuration**.  
+-   Cliquez sur **Démarrer**, cliquez sur **programmes**, cliquez sur **Microsoft BizTalk \<version\> Accelerator pour HL7**, puis cliquez sur  **BTAHL7 L’Explorateur de Configuration**.  
   
 #### <a name="to-configure-validation-settings"></a>Pour configurer les paramètres de validation  
   
@@ -62,4 +62,4 @@ Onglet Validation de l’Explorateur de Configuration de BTAHL7
 ## <a name="see-also"></a>Voir aussi  
  [Configuration de journalisation](../../adapters-and-accelerators/accelerator-hl7/logging-configuration.md)   
  [Paramètres de l’accusé de réception](../../adapters-and-accelerators/accelerator-hl7/acknowledgment-settings.md)   
-[Journalisation opérationnelle, le traitement par lot des messages, paramètres de validation et asknowledgment](../../adapters-and-accelerators/accelerator-hl7/operational-logging-message-batching-validation-and-asknowledgment-settings.md)
+[Journalisation des opérations, traitement par lot des messages, paramètres de la validation et des accusés de réception](../../adapters-and-accelerators/accelerator-hl7/operational-logging-message-batching-validation-and-asknowledgment-settings.md)

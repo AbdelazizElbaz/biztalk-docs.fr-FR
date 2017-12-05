@@ -15,11 +15,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 105d1b42848b73505d9a82df07693111708ce802
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a71431ee800c80c6972747f09b0e2420f961e33e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="bam-dts-packages"></a>Lots DTS BAM
 Un administrateur peut mettre à jour les paramètres des lots DTS BAM suivants :  
@@ -41,17 +41,15 @@ Un administrateur peut mettre à jour les paramètres des lots DTS BAM suivants�
   
 -   **CubeUpdate** de package DTS  
   
-     **bam_AN_\<**   
-     ***Nom du cube* >**, où NomCube est le nom du cube. Le classeur BAM génère le nom de cube à partir du nom de la vue. Si vous modifiez le nom du cube dans le document XML de configuration BAM, le nouveau nom en résultant est utilisé dans le nom du lot DTS.  
+     **bam_AN_\<**   ***CubeName* \>** , où NomCube est le nom du cube. Le classeur BAM génère le nom de cube à partir du nom de la vue. Si vous modifiez le nom du cube dans le document XML de configuration BAM, le nouveau nom en résultant est utilisé dans le nom du lot DTS.  
   
 -   **DataMaintenance** de package DTS  
   
-     **bam_DM_\<**   
-     ***ActivityName* >**, où Nomactivité est le nom de l’activité.  
+     **bam_DM_\<**   ***Nomactivité* \>** , où Nomactivité est le nom de l’activité.  
   
  Pour regrouper l'agrégation planifiée, vous devez exécuter le lot DTS CubeUpdate. Dans la section suivante, vous pouvez spécifier la fenêtre de temps destinée à l'agrégation en temps réel.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Schéma de Configuration BAM](../core/bam-configuration-schema.md)   
  [Recommandations de sécurité BAM](../core/bam-security-recommendations.md)   
- [La gestion BAM](../core/managing-bam.md)
+ [Gestion de l’analyse BAM](../core/managing-bam.md)

@@ -12,17 +12,17 @@ caps.latest.revision: "40"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 64899c184f8cbe405684387b8f1c2a6230204624
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 61ce04c572c95a1a4e2433d6b046028468eca805
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues-with-as2-processing"></a>Problèmes connus avec le traitement AS2
-Cette section contient des rubriques qui décrivent les problèmes connus avec les solutions AS2 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)].  
+Cette section contient des rubriques qui décrivent les problèmes connus avec les solutions AS2 BizTalk Server.  
   
 ## <a name="as2-processing-not-supported-on-64-bit-computers"></a>Le traitement AS2 n'est pas pris en charge sur les ordinateurs 64 bits  
- La solution AS2 [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] n'est pas prise en charge sur les ordinateurs 64 bits. Le traitement AS2 ne fonctionne que sur les ordinateurs 32 bits ou lorsqu'il est exécuté sous l'émulateur WOW64 sur des ordinateurs 64 bits.  
+ La solution AS2 BizTalk Server n’est pas pris en charge sur les ordinateurs 64 bits. Le traitement AS2 ne fonctionne que sur les ordinateurs 32 bits ou lorsqu'il est exécuté sous l'émulateur WOW64 sur des ordinateurs 64 bits.  
   
 ## <a name="the-as2-receive-pipelines-require-the-account-that-the-biztalk-isolated-host-instance-process-is-running-under-to-be-part-of-the-biztalk-application-users-group"></a>Les pipelines de réception AS2 requièrent que le compte sous lequel le processus d'instance de l'hôte BizTalk isolé est exécuté fasse partie du groupe Utilisateurs d'applications BizTalk  
  Si vous utilisez le pipeline AS2EdiReceive ou AS2Receive, vous devez ajouter le compte d'utilisateur que le processus d'instance de l'hôte BizTalk isolé exécute sous le groupe Utilisateurs d'applications BizTalk. Les pipelines AS2EdiReceive et AS2Receive sont exécutés dans le processus d'instance de l'hôte BizTalk isolé.  
@@ -35,7 +35,7 @@ Cette section contient des rubriques qui décrivent les problèmes connus avec l
 ## <a name="use-of-unfolded-and-folded-http-line-headers"></a>Utilisation des en-têtes de ligne HTTP déroulés et non déroulés  
  Pour garantir une interopérabilité maximale, vous devez utiliser des en-têtes de ligne HTTP déroulés pour les messages AS2. Information Services (IIS) 7.0 ne prend en charge que les en-têtes HTTP déroulés. IIS 6.0 prend en charge les en-têtes déroulés et non déroulés. En revanche, certains systèmes ne prennent pas en charge les en-têtes incluant plus de 80 caractères par ligne, de sorte que des lignes non déroulées doivent être utilisées.  
   
- Par défaut, AS2 dans [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] utilise des en-têtes de ligne HTTP déroulés.  
+ La valeur par défaut pour AS2 dans BizTalk Server est des en-têtes de ligne HTTP déroulés.  
   
 ## <a name="party-resolution-can-be-affected-by-a-localized-name"></a>La résolution du tiers peut être affectée par un nom localisé  
  Lorsque BizTalk Server effectue une résolution de tiers sur un message AS2 sortant, cette opération peut être affectée par une valeur localisée dans les en-têtes de message. Si la propriété de tiers AS2-To dans la page Tiers considéré comme récepteur des messages AS2 de la boîte de dialogue Propriétés est définie par défaut sur un nom de tiers anglais et que la valeur dans l'en-tête AS2-To du message AS2 est définie sur un nom non anglais, la correspondance n'est pas trouvée.  
@@ -80,4 +80,4 @@ Cette section contient des rubriques qui décrivent les problèmes connus avec l
 ## <a name="see-also"></a>Voir aussi  
  [Dépannage des Solutions EDI et AS2](../core/troubleshooting-edi-and-as2-solutions.md)   
  [AS2 Architecture de la Solution](../core/as2-solution-architecture.md)   
- [Développement et la configuration des Solutions AS2 BizTalk Server](../core/developing-and-configuring-biztalk-server-as2-solutions.md)
+ [Développement et configuration de solutions AS2 BizTalk Server](../core/developing-and-configuring-biztalk-server-as2-solutions.md)

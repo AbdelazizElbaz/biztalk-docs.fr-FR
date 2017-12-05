@@ -16,11 +16,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7c7614ae4f6470427a77815338767b04f07aaa73
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e98340654df792b8ec58014d4804394b5a6c6099
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-event-tracing-for-windows"></a>À l’aide d’événements de suivi pour Windows
 L'adaptateur Microsoft BizTalk pour JD Edwards EnterpriseOne consigne des messages d'erreur, d'avertissement et d'informations dans l'Observateur d'événements Windows. Vous pouvez visualiser des messages de suivi supplémentaires à l'aide de l'outil Suivi d'événements pour Windows (ETW). Lorsqu'il est activé, cet outil crée un fichier *.etl pour recevoir les messages. Ce fichier au format binaire doit être converti pour être lu. Pour ce faire, vous devez disposer d’une application consommateur capable d’interpréter le \*fichier .etl, par exemple, tracerpt.exe ou tracedmp.ex. L’application tracept.exe convertit le \*.etl dans deux fichiers texte : summary.txt et dumpfile.csv.  
@@ -37,17 +37,17 @@ L'adaptateur Microsoft BizTalk pour JD Edwards EnterpriseOne consigne des messag
   
 -   **Application consommateur**. lit les événements enregistrés. Pour que l'application consommateur puisse lire les événements dans le fichier .etl, l'outil Suivi d'événements pour Windows doit les vider dans ce fichier. Normalement, cette opération est effectuée lorsque le contrôleur désactive le suivi.  
   
-     Pour utiliser l’application consommateur sans désactiver le suivi, le contrôleur doit activer le suivi avec l’option en temps réel,  **\<en temps réel > = -rt**.  
+     Pour utiliser l’application consommateur sans désactiver le suivi, le contrôleur doit activer le suivi avec l’option en temps réel,  **\<en temps réel\> = -rt**.  
   
 -   **Fournisseur**. utilisé pour fournir l'événement. L'adaptateur BizTalk pour JD Edwards EnterpriseOne inclut trois fournisseurs distincts, Ceux-ci sont enregistrés dans WMI (Windows Management Instrumentation). Pour accéder aux fournisseurs enregistrés via le chemin d'accès root\WMI\EventTrace, vous pouvez utiliser des outils tels que WMI CIM Studio.  
   
  L'adaptateur BizTalk pour JD Edwards EnterpriseOne inclut trois fournisseurs, ce qui permet de consigner plusieurs types de messages :  
   
--   **Fournisseur de journalisation de récepteur**: le \<Trace element > commutateur est **-récepteur**. Utilisez **-récepteur** pour récupérer tous les messages du journal qui ont été reçus par l’adaptateur au moment de l’exécution.  
+-   **Fournisseur de journalisation de récepteur**: le \<élément Trace\> commutateur est **-récepteur**. Utilisez **-récepteur** pour récupérer tous les messages du journal qui ont été reçus par l’adaptateur au moment de l’exécution.  
   
--   **Fournisseur de journalisation de l’émetteur**: le \<Trace element > commutateur est **-émetteur**. Utilisez **-émetteur** pour récupérer tous les messages du journal qui ont été transmis par l’adaptateur au moment de l’exécution.  
+-   **Fournisseur de journalisation de l’émetteur**: le \<élément Trace\> commutateur est **-émetteur**. Utilisez **-émetteur** pour récupérer tous les messages du journal qui ont été transmis par l’adaptateur au moment de l’exécution.  
   
--   **Fournisseur de journalisation de gestion**: le \<Trace element > commutateur est **-gestion** utilisez **-gestion** pour récupérer tous les messages du journal qui ont été générés pendant la navigation du système du serveur.  
+-   **Fournisseur de journalisation de gestion**: le \<élément Trace\> commutateur est **-gestion** utilisez **-gestion** pour récupérer tous les messages du journal qui ont été générés au cours de l’exploration du système du serveur.  
   
 ### <a name="btajdeenterpriseonetrace-command"></a>Commande BTAJDEEnterpriseOneTrace  
  Pour utiliser ETW, exécutez l’adaptateur BizTalk pour JD Edwards EnterpriseOne commande, **BTAJDEEnterpriseOneTrace.cmd**. Utilisez-la comme suit :  
@@ -59,7 +59,7 @@ BTAJDEEnterpriseOneTrace <Trace element> -stop
   
 ```  
   
- Où :  **\<Trace element >** (obligatoire) est le type de fournisseur.  
+ Où :  **\<élément Trace\>**  (obligatoire) est le type de fournisseur.  
   
  Les options associées sont :  
   
@@ -71,9 +71,9 @@ BTAJDEEnterpriseOneTrace <Trace element> -stop
   
 -   **-start, - stop**: activer ou désactiver le fournisseur.  
   
--   **-cir \<Mo >**: taille et type de fichier. -cir signifie qu'il s'agit d'un fichier circulaire. \<Mo > : taille en mégaoctets.  
+-   **-cir \<Mo\>**: taille et type de fichier. -cir signifie qu'il s'agit d'un fichier circulaire. \<Mo\>: taille en mégaoctets.  
   
--   **-seq \<Mo >**: taille et type de fichier. -seq signifie qu'il s'agit d'un fichier séquentiel. \<Mo > : taille en mégaoctets.  
+-   **-seq \<Mo\>**: taille et type de fichier. -seq signifie qu'il s'agit d'un fichier séquentiel. \<Mo\>: taille en mégaoctets.  
   
 -   **-rt**: définir le mode temps réel sur.  
   

@@ -15,11 +15,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fe0a320f9f60f72975faf903c1355b8730840b26
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f8a63277ec58981f5f0f904aabe61957de66df08
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="installing-and-configuring-biztalk-accelerator-for-swift-on-http-front-end-servers"></a>Installation et configuration de BizTalk Accelerator pour SWIFT sur les serveurs frontaux HTTP
 Cette section décrit comment installer et configurer [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] sur les serveurs frontaux HTTP. Ces serveurs sont principalement utilisés pour communiquer avec le réseau SWIFT.  
@@ -33,4 +33,4 @@ Cette section décrit comment installer et configurer [!INCLUDE[A4SWIFT_CurrentV
   
 2.  Dans Microsoft [!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)] Configuration de la console, configurez **MCRR** et **WebService**.  
   
-3.  Après avoir terminé l’Assistant de Configuration sur les serveurs Web, ouvrez le fichier web.config dans le dossier \< *lecteur*> : \Program Files\Microsoft [!INCLUDE[btaA4SWIFTNoVersion](../../includes/btaa4swiftnoversion-md.md)]\Service\ dans le bloc-notes. Recherchez « Authorization ». Dans le **autorisation** section, définissez la valeur de rôles sur le nom du groupe d’utilisateurs A4SWIFT.
+3.  Après avoir terminé l’Assistant de Configuration sur les serveurs Web, ouvrez le fichier web.config dans le dossier \< *lecteur*\>: \Program Files\Microsoft [!INCLUDE[btaA4SWIFTNoVersion](../../includes/btaa4swiftnoversion-md.md)]\Service\ dans le bloc-notes. Recherchez « Authorization ». Dans le **autorisation** section, définissez la valeur de rôles sur le nom du groupe d’utilisateurs A4SWIFT.

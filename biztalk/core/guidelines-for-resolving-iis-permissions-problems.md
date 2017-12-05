@@ -13,11 +13,11 @@ caps.latest.revision: "30"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fdae0c97d0441ccb57320ec24908cca522ae2088
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: eb91509ec3ad1c329190c848c25a60434f93499e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="guidelines-for-resolving-iis-permissions-problems"></a>Instructions pour la résolution des problèmes d'autorisation IIS
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] exploite pleinement Microsoft Internet Information Services (IIS) pour la prise en charge des services Web et pour une utilisation avec les adaptateurs HTTP, SOAP et Windows SharePoint Services.  
@@ -40,7 +40,7 @@ ms.lasthandoff: 09/20/2017
   
 1.  Cliquez sur **Démarrer**, puis **tous les programmes**, puis cliquez sur **le Gestionnaire Internet Information Services (IIS) 7**.  
   
-2.  Dans le Gestionnaire des Services Internet (IIS), développez  *\<nom de l’ordinateur >***(compte d’utilisateur)** et cliquez sur **Pools d’applications**.  
+2.  Dans le Gestionnaire des Services Internet (IIS), développez  *\<nom de l’ordinateur\>***(compte d’utilisateur)** et cliquez sur **Pools d’applications**.  
   
 3.  Cliquez sur un pool d’applications, sur **afficher les Applications** pour voir les applications associées du pool d’applications.  
   
@@ -67,7 +67,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-set-user-access-rights-for-a-virtual-directory-in-iis-70"></a>Pour définir les droits d'accès utilisateur d'un répertoire virtuel dans IIS 7.0  
   
-1.  Dans le Gestionnaire Internet Information Services (IIS), développez  *\<nom de l’ordinateur >*, **Sites**, et **Site Web par défaut** dans le  **Connexions** volet.  
+1.  Dans le Gestionnaire Internet Information Services (IIS), développez  *\<nom de l’ordinateur\>*, **Sites**, et **Site Web par défaut** dans les **Connexions** volet.  
   
 2.  Sélectionnez le répertoire virtuel, puis cliquez sur le **affichage des fonctionnalités** en bas du volet espace de travail pour répertorier les fonctionnalités configurables du répertoire virtuel.  
   

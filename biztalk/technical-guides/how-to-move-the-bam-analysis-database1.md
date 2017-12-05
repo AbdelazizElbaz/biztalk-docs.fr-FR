@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 971a9c69e98bf894d41d5e23d0e852162c2ab139
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b21168c1955db8bbbae3e29019632807231b40a1
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-move-the-bam-analysis-database"></a>Déplacement de la base de données d'analyse BAM
 Cette procédure vous permet de déplacer la base de données d'analyse BAM vers un autre serveur.  À partir d’un point de vue du scénario de bout en bout, le déplacement de la base de données analyse BAM comprend deux étapes principales :  
@@ -66,7 +66,7 @@ Cette procédure vous permet de déplacer la base de données d'analyse BAM vers
   
     1.  Cliquez sur **Démarrer**, puis sur **Exécuter**, tapez **cmd**, puis cliquez sur **OK**.  
   
-    2.  Sur un ordinateur exécutant [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], accédez au dossier suivant :  
+    2.  Sur un ordinateur exécutant BizTalk Server, accédez au dossier suivant :  
   
         -   Si [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] est installé sur une version 64 bits de Windows Server :  
   
@@ -78,10 +78,10 @@ Cette procédure vous permet de déplacer la base de données d'analyse BAM vers
   
     3.  À l'invite de commandes, tapez :  
   
-         **BM.exe get-config –filename:BAMConfiguration.xml-server :\<nom_serveur >-base de données :\<base de données >**  
+         **BM.exe get-config –filename:BAMConfiguration.xml-server :\<nom_serveur\> -base de données :\<base de données\>**  
   
         > [!NOTE]  
-        >  Lorsque vous exécutez cette commande, remplacez le nom actuel du serveur à partir duquel obtenir les informations de configuration pour \<nom_serveur > et remplacez le nom actuel de la base de données à partir duquel obtenir les informations de configuration pour \<base de données >. Pour plus d’informations sur l’utilisation de l’utilitaire de gestion BAM (BM), consultez [Infrastructure de gestion des commandes](http://go.microsoft.com/fwlink/?LinkId=156516) (http://go.microsoft.com/fwlink/?LinkId=156516) dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] aide.  
+        >  Lorsque vous exécutez cette commande, remplacez le nom actuel du serveur à partir duquel obtenir les informations de configuration pour \<nom_serveur\> et remplacez-le par le nom réel de la base de données à partir duquel obtenir les informations de configuration \<base de données\>. Pour plus d’informations sur l’utilisation de l’utilitaire de gestion BAM (BM), consultez [Infrastructure de gestion des commandes](http://go.microsoft.com/fwlink/?LinkId=156516) (http://go.microsoft.com/fwlink/?LinkId=156516) dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] aide.  
   
 2.  Modifiez le fichier BAMConfiguration.xml et définissez la **nom_serveur** dans la `<DeploymentUnit Name="AnalysisDatabase">` section pour le nouveau nom du serveur.  
   
@@ -89,7 +89,7 @@ Cette procédure vous permet de déplacer la base de données d'analyse BAM vers
   
 4.  Cliquez sur **Démarrer**, puis sur **Exécuter**, tapez **cmd**, puis cliquez sur **OK**.  
   
-5.  Sur un ordinateur exécutant [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], accédez au dossier suivant :  
+5.  Sur un ordinateur exécutant BizTalk Server, accédez au dossier suivant :  
   
     -   Si [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] est installé sur une version 64 bits de Windows Server :  
   

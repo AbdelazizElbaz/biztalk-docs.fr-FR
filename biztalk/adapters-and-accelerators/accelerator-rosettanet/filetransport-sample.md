@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 495e4cfe4c9c9b9d7ae16ee58f7831ad5447d37b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 38c08be5cd58ed6c80af351715ff6257f533c6af
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="filetransport-sample"></a>Exemple de FileTransport
 L’exemple FileTransport montre comment configurer [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] d’utiliser des ports de fichier, au lieu des ports SQL. L’exemple FileTransport utilise le Transport FTP (File Protocol) pour envoyer et recevoir des messages, au lieu de HTTP.  
@@ -28,7 +28,7 @@ L’exemple FileTransport montre comment configurer [!INCLUDE[btsCoName](../../i
 >  Cet exemple ne prend pas en charge les pièces jointes de message.  
   
 ## <a name="filetransport-binding-files"></a>Fichiers de liaison FileTransport  
- L’exemple de FileTransport inclut deux fichiers de liaison. Vous pouvez utiliser chacun de ces fichiers de liaison à configurer des ports de fichier pour une utilisation avec une orchestration BTARN. Ces fichiers de liaison se trouvent dans  *\<lecteur >*: \Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet \SDK\FileTransport. Ouvrez chaque fichier de liaison dans un éditeur tel que le bloc-notes pour afficher les paramètres de l’orchestration, port d’envoi, port de réception et emplacement de réception, comme indiqué ci-dessous.  
+ L’exemple de FileTransport inclut deux fichiers de liaison. Vous pouvez utiliser chacun de ces fichiers de liaison à configurer des ports de fichier pour une utilisation avec une orchestration BTARN. Ces fichiers de liaison se trouvent dans  *\<lecteur\>*: \Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet \SDK\FileTransport. Ouvrez chaque fichier de liaison dans un éditeur tel que le bloc-notes pour afficher les paramètres de l’orchestration, port d’envoi, port de réception et emplacement de réception, comme indiqué ci-dessous.  
   
 -   PrivateInitiatorusingFileDrops.xml  
   
@@ -50,7 +50,7 @@ L’exemple FileTransport montre comment configurer [!INCLUDE[btsCoName](../../i
   
     -   Emplacement de réception : File_To_PrivateResponder  
   
- La procédure suivante décrit comment importer les liaisons à partir des fichiers de liaison à l’aide de la commande BTSTask. Pour plus d’informations, consultez la rubrique « Commande ImportBindings » dans [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] aide.  
+ La procédure suivante décrit comment importer les liaisons à partir des fichiers de liaison à l’aide de la commande BTSTask. Pour plus d’informations, consultez la rubrique « Commande ImportBindings » dans l’aide de BizTalk Server.  
   
 ## <a name="procedure"></a>Procédure  
   
@@ -66,7 +66,7 @@ L’exemple FileTransport montre comment configurer [!INCLUDE[btsCoName](../../i
   
 5.  Désinscrire Microsoft.Solutions.BTARN.PrivateInitiator.PrivateInitiatatorProcess.  
   
-6.  Créez un dossier \FileDrops sous le dossier BTARN de C:\Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet, puis créer la structure de dossiers suivante sous \FileDrops :  
+6.  Créez un dossier \FileDrops sous le dossier BTARN de C:\Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet, puis créer la structure de dossiers suivante sous \FileDrops :  
   
     -   \PrivateInitiator  
   

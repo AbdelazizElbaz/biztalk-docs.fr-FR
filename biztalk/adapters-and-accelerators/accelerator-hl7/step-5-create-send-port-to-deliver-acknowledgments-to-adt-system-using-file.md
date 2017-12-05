@@ -18,18 +18,18 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 926a13d443e7002a71e2b9f6509c3a377f0af0be
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d6e63590c8cc84a6c6c1a7e957900aa44cdcd61c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-5-create-a-send-port-to-deliver-acknowledgments-to-the-adt-system-using-the-file-adapter"></a>Étape 5 : Créer un Port d’envoi pour remettre les accusés de réception au système ADT à l’aide de l’adaptateur de fichier
 Dans cette étape, vous créez le port d’envoi pour générer des accusés de réception à l’aide de l’adaptateur File.  
   
 ### <a name="to-create-the-tutorialsendackadt-send-port"></a>Pour créer le port d’envoi Tutorial_sendAck_ADT  
   
-1.  À l’aide de [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorer, créer le \< *lecteur*: > \Program Files\Microsoft BizTalk \<version > Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_sendAck_ADT dossier.  
+1.  À l’aide de [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorer, créer le \< *lecteur*:\>\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_ sendAck_ADT dossier.  
   
 2.  Dans la Console Administration de BizTalk Server, cliquez sur **Ports d’envoi**, pointez sur **nouveau**, puis cliquez sur **Port d’envoi unidirectionnel statique**.  
   
@@ -45,7 +45,7 @@ Dans cette étape, vous créez le port d’envoi pour générer des accusés de 
   
     |Utiliser|Pour effectuer cette opération|  
     |--------------|----------------|  
-    |**Dossier de destination**|Accédez à  **\<**  *lecteur***: > \Program Files\Microsoft BizTalk \<version > Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_sendAck_ADT** .|  
+    |**Dossier de destination**|Accédez à  **\<**  *lecteur***:\>\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_sendAck_ADT**.|  
     |**Nom de fichier**|Type **%MessageID%.txt** (remplacez l’extension .xml avec l’extension .txt).|  
   
 5.  Dans la boîte de dialogue Propriétés de Port d’envoi pour **pipeline d’envoi**, sélectionnez **BTAHL72XPipelines.BTAHL72XSendPipeline**.  
@@ -72,7 +72,7 @@ Dans cette étape, vous créez le port d’envoi pour générer des accusés de 
     |**Valeur**|Type **Tutorial_ADTSystem**.|  
   
     > [!NOTE]
-    >  Pour le port d’envoi Tutorial_sendAck_ADT BTAHL7 supprime les accusés de réception à l’emplacement de dépôt du fichier \< *lecteur*> : programme FilesMicrosoft BizTalk <version> Accelerator for HL7SDKEnd en bout TutorialTutorial _sendAck_ADT.  
+    >  Pour le port d’envoi Tutorial_sendAck_ADT BTAHL7 supprime les accusés de réception à l’emplacement de dépôt du fichier \< *lecteur*\>: programme FilesMicrosoft BizTalk <version> Accelerator for HL7SDKEnd en bout TutorialTutorial_sendAck_ADT.  
   
 7.  Cliquez sur **appliquer**, puis cliquez sur **OK.**  
   

@@ -25,11 +25,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f87f210c4b0d2969edc9ddfa27b1d8494310eb6f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f4e4a07b88e832d99f586d10cdf8af4dbea3af3e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-use-multi-part-message-types"></a>Comment utiliser les Types de Message à parties multiples
 Chaque message possède un type de message à parties multiples (description de la structure du message qui est composée de zéro partie ou plus). Les parties sont déterminées par les schémas de langage XSD (XML Schema Definition) ou les classes .NET. Vous avez la possibilité de définir vos propres types de messages à parties multiples ou d'utiliser les classes .NET et schémas existants.  
@@ -52,7 +52,7 @@ Chaque message possède un type de message à parties multiples (description de 
   
 3.  Nommez ce type ainsi que la partie du message fournie.  
   
-     Si votre type de message à parties multiples nécessite plus d’une partie de message, vous pouvez ajouter des parties supplémentaires en affectant un nom pour le \<Nouveau > partie de message.  
+     Si votre type de message à parties multiples nécessite plus d’une partie de message, vous pouvez ajouter des parties supplémentaires en affectant un nom pour le \<nouveau\> partie de message.  
   
 4.  Associez chaque partie du message à un type, comme une classe .NET ou un schéma.  
   
@@ -101,4 +101,4 @@ Chaque message possède un type de message à parties multiples (description de 
  **Méthode IBaseMessage.AddPart (COM)**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]  
  [Ressources XSD sur le Web](../core/xsd-resources-on-the-web.md)   
  [À l’aide des champs distinctifs et les champs de propriété](../core/using-distinguished-fields-and-property-fields.md)   
- [À l’aide de Messages dans les Orchestrations](../core/using-messages-in-orchestrations.md)
+ [Utilisation de messages passant par des orchestrations](../core/using-messages-in-orchestrations.md)

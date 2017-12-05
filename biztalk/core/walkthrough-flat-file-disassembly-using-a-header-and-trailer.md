@@ -13,11 +13,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5e49014ac4c15f1fd303b2646c74f11b5242aed3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b7c1406367f047794c6d8931352104bb59e6ca5b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="walkthrough-flat-file-disassembly-using-a-header-and-trailer"></a>Procédure pas à pas : Désassemblage de fichier plat à l’aide d’un en-tête et un code de fin
 
@@ -128,7 +128,7 @@ Avant de générer des schémas, vous devez créer un fichier de test.
   
      Lorsque vous êtes satisfait, cliquez sur **Terminer** pour terminer l’Assistant.  
   
-10. Cliquez sur le  **\<schéma >** nœud dans le volet Schéma d’en-tête. Dans le volet Propriétés, modifiez **Element FormDefault** à **Qualified**. Vous indiquez ainsi que les éléments déclarés localement doivent être qualifiés par l'espace de noms cible dans un document d'instance.  
+10. Cliquez sur le  **\<schéma\>**  nœud dans le volet Schéma d’en-tête. Dans le volet Propriétés, modifiez **Element FormDefault** à **Qualified**. Vous indiquez ainsi que les éléments déclarés localement doivent être qualifiés par l'espace de noms cible dans un document d'instance.  
   
 ##### <a name="use-the-flat-file-schema-wizard-to-create-the-trailer-schema"></a>Utilisez l’Assistant schéma de fichier plat pour créer le schéma de code de fin  
   
@@ -165,7 +165,7 @@ Avant de générer des schémas, vous devez créer un fichier de test.
   
      Lorsque vous êtes satisfait, cliquez sur **Terminer** pour terminer l’Assistant.  
   
-10. Cliquez sur le  **\<schéma >** nœud dans le volet Schéma de code de fin. Dans le volet Propriétés, modifiez **elementFormDefault** à **Qualified**. Vous indiquez ainsi que les éléments déclarés localement doivent être qualifiés par l'espace de noms cible dans un document d'instance.  
+10. Cliquez sur le  **\<schéma\>**  nœud dans le volet Schéma de code de fin. Dans le volet Propriétés, modifiez **elementFormDefault** à **Qualified**. Vous indiquez ainsi que les éléments déclarés localement doivent être qualifiés par l'espace de noms cible dans un document d'instance.  
   
 ##### <a name="use-the-flat-file-schema-wizard-to-create-the-body-schema"></a>Utilisez l’Assistant schéma de fichier plat pour créer le schéma de corps  
   
@@ -216,9 +216,9 @@ Avant de générer des schémas, vous devez créer un fichier de test.
   
      Si vous avez apporté des erreurs, cliquez sur **nouveau** et apporter les corrections nécessaires. Lorsque vous êtes satisfait, cliquez sur **Terminer** pour terminer l’Assistant.  
   
-15. Cliquez sur le  **\<schéma >** nœud dans le volet Schéma de corps. Dans le volet Propriétés, modifiez **Element FormDefault** à **Qualified**. Vous indiquez ainsi que les éléments déclarés localement doivent être qualifiés par l'espace de noms cible dans un document d'instance.  
+15. Cliquez sur le  **\<schéma\>**  nœud dans le volet Schéma de corps. Dans le volet Propriétés, modifiez **Element FormDefault** à **Qualified**. Vous indiquez ainsi que les éléments déclarés localement doivent être qualifiés par l'espace de noms cible dans un document d'instance.  
   
-16. Cliquez sur le  **\<erreur >** nœud dans le volet Schéma de corps. Dans le volet Propriétés, modifiez **Max Occurs** à **1**. Le désassembleur de fichier plat fractionne alors chaque erreur dans son propre message.  
+16. Cliquez sur le  **\<erreur\>**  nœud dans le volet Schéma de corps. Dans le volet Propriétés, modifiez **Max Occurs** à **1**. Le désassembleur de fichier plat fractionne alors chaque erreur dans son propre message.  
   
 ##### <a name="test-the-schemas-using-ffdasm"></a>Tester les schémas à l’aide de FFDasm  
   

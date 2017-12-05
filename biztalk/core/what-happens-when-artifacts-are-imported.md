@@ -15,11 +15,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d87e814fd43545d18db0d6e4fd0c585279eb5261
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: aa252b520f985667820861403a46d39c8527ea07
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="what-happens-when-artifacts-are-imported"></a>Effets de l'importation d'artefacts
 Cette rubrique décrit les effets de l'importation d'artefacts. Vous pouvez importer des artefacts de trois manières :  
@@ -58,7 +58,7 @@ Cette rubrique décrit les effets de l'importation d'artefacts. Vous pouvez impo
  Après avoir importé une application, vous pouvez afficher, gérer et déployer les artefacts de l'application en tant qu'entité unique ou individuellement à l'aide de la console Administration ou de BTSTask. Pour plus d’informations, consultez [déploiement d’Application et les outils de gestion](../core/application-deployment-and-management-tools.md).  
   
 ## <a name="importing-a-policy"></a>Importation d'une stratégie  
- Lorsque vous importez une stratégie à partir d'un fichier .xml, elle est ajoutée à la base de données du moteur de règles. À la différence de l'importation d'une stratégie dans un fichier .msi BizTalk, la stratégie n'est associée à aucune application de la base de données de gestion BizTalk. La stratégie s’affiche dans le nœud Stratégies de la \<tous les artefacts > dossier dans la console Administration de BizTalk Server. Après avoir importé une stratégie, vous pouvez la publier afin qu'elle devienne accessible aux applications du groupe à utiliser. Pour plus d’informations, consultez [gestion des stratégies de](../core/managing-policies.md).  
+ Lorsque vous importez une stratégie à partir d'un fichier .xml, elle est ajoutée à la base de données du moteur de règles. À la différence de l'importation d'une stratégie dans un fichier .msi BizTalk, la stratégie n'est associée à aucune application de la base de données de gestion BizTalk. La stratégie s’affiche dans le nœud Stratégies de la \<tous les artefacts\> dossier dans la console Administration de BizTalk Server. Après avoir importé une stratégie, vous pouvez la publier afin qu'elle devienne accessible aux applications du groupe à utiliser. Pour plus d’informations, consultez [gestion des stratégies de](../core/managing-policies.md).  
   
 ## <a name="importing-a-binding-file"></a>Importation d'un fichier de liaison  
  Lorsque vous importez un fichier de liaison dans un groupe BizTalk, les liaisons qui existent déjà dans le groupe, dont le nom est le même que les liaisons du fichier, sont remplacées par les liaisons importées, et la configuration est appliquée.  
@@ -71,4 +71,4 @@ Cette rubrique décrit les effets de l'importation d'artefacts. Vous pouvez impo
 ## <a name="see-also"></a>Voir aussi  
  [Que se passe-t-il pour les artefacts au cours du déploiement](../core/what-happens-to-artifacts-during-application-deployment.md)   
  [L’importation de stratégies, les liaisons et les Applications BizTalk](../core/importing-biztalk-applications-bindings-and-policies.md)   
- [Déploiement d’applications et dépendances](../core/dependencies-and-application-deployment.md)
+ [Dépendances et déploiement des applications](../core/dependencies-and-application-deployment.md)

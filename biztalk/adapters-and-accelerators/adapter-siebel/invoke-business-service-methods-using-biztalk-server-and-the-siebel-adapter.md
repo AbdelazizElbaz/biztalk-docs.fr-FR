@@ -15,11 +15,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bb659182a16af541728cb45f7b2427f6e306cd2d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 79a11d3be19ca27bd27146ef728ce168c3285884
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-business-service-methods-using-biztalk-server-and-the-siebel-adapter"></a>Appeler des méthodes de Service Business à l’aide de BizTalk Server et l’adaptateur Siebel
 Un service d’entreprise Siebel est une collection de méthodes d’entreprise qui peuvent être appelées directement dans Siebel. Pour plus d’informations sur la façon dont [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] prend en charge l’appel de services d’entreprise dans un système Siebel, consultez [opérations sur les Services métier Siebel](../../adapters-and-accelerators/adapter-siebel/operations-on-business-services-in-siebel.md). Pour plus d’informations sur la structure de SOAP des messages pour effectuer des opérations de service d’entreprise, consultez [des schémas de Message pour des opérations de Service Business](../../adapters-and-accelerators/adapter-siebel/message-schemas-for-business-service-operations.md).  
@@ -165,7 +165,7 @@ Un service d’entreprise Siebel est une collection de méthodes d’entreprise 
  L’orchestration consomme le message de demande et les transmet au système Siebel. La réponse à partir du système Siebel est enregistrée à l’emplacement d’envoi de fichier. La réponse pour le message de demande ci-dessus est la suivante :  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <ExecuteResponse xmlns="http://Microsoft.LobServices.Siebel/2007/03/BusinessServices/TimeStamp/Operation">  
   <ExecuteResult>  
     <Time xmlns="http://Microsoft.LobServices.Siebel/2007/03/BusinessServices/TimeStamp">2007-11-25T20:42:11.0000000</Time>  

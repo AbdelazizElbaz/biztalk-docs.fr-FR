@@ -15,11 +15,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7c93f7c07f92c7517dbc84403747da869e0d4ceb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 44a9696f907928f31a740e4d8545567921a82df9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-7-creating-and-configuring-ports"></a>Étape 7 : Création et configuration des Ports
 Dans cette étape, vous créez et configurez les ports que vous utilisez pour communiquer avec les processus d’entreprise. Chaque port a un type, la direction et la propriété de liaison. Ces propriétés d’établir la direction et le modèle de communication, l’emplacement d’où le message est envoyé ou reçu, et comment la communication se produit.  
@@ -46,7 +46,7 @@ Dans cette étape, vous créez et configurez les ports que vous utilisez pour co
   
 1.  Dans la vue Orchestration, développez **Types**, développez **Types de ports**, développez **ContosoSQLReqResponsePortName**, développez **Operation_1**, puis sélectionnez **demande**.  
   
-2.  Dans la fenêtre Propriétés, sélectionnez le **Type de Message** propriétés, développez **schémas** puis cliquez sur  **\<sélectionner dans l’assembly référencé >**.  
+2.  Dans la fenêtre Propriétés, sélectionnez le **Type de Message** propriétés, développez **schémas** puis cliquez sur  **\<sélectionner dans l’assembly référencé\>**  .  
   
 3.  Dans la boîte de dialogue Sélectionner le Type d’artefact, cliquez sur **ContosoPriceAndAvailability**.  
   
@@ -54,7 +54,7 @@ Dans cette étape, vous créez et configurez les ports que vous utilisez pour co
   
 5.  Dans Vue Orchestration, sous **Operation_1**, sélectionnez **réponse** pour le **ContosoSQLReqResponsePortName** type de port.  
   
-6.  Dans la fenêtre Propriétés, sélectionnez le **Type de Message** propriétés, développez **schémas** puis cliquez sur \< **sélectionner dans l’assembly référencé >**.  
+6.  Dans la fenêtre Propriétés, sélectionnez le **Type de Message** propriétés, développez **schémas** puis cliquez sur \< **sélectionner dans l’assembly référencé\>**  .  
   
 7.  Dans le **sélectionner le Type d’artefact** boîte de dialogue, cliquez sur **ContosoPriceAndAvailability**.  
   
@@ -77,4 +77,4 @@ Dans cette étape, vous créez et configurez les ports que vous utilisez pour co
 7.  Dans le **fichier** Menu, cliquez sur **Enregistrer tout**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Étape 8 : Création et déploiement de l’Orchestration Contoso](../../adapters-and-accelerators/accelerator-rosettanet/step-8-building-and-deploying-the-contoso-orchestration.md)
+ [Étape 8 : Création et déploiement de l’orchestration Contoso](../../adapters-and-accelerators/accelerator-rosettanet/step-8-building-and-deploying-the-contoso-orchestration.md)

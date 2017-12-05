@@ -13,11 +13,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 51c30fa3b107113991a8b4893fa2626a53d67159
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bb0dd0b9d778f878df9a06efdfc0f41754403690
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="update-or-uninstall-the-biztalk-adapter-pack-2016"></a>Mettre à jour ou désinstaller le 2016 de pack d’adaptateur BizTalk
 Comment modifier ou désinstaller le [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)].
@@ -97,7 +97,7 @@ Avant d’exécuter l’Assistant Installation pour modifier le [!INCLUDE[adapte
 ## <a name="uninstall-or-remove-the-biztalk-adapter-pack"></a>Désinstaller ou supprimer le Pack d’adaptateurs BizTalk  
   
 > [!IMPORTANT]
->  Si vous avez créé des tables dans la base de données SQL Server pour travailler avec la fonctionnalité tRFC de la [!INCLUDE[adaptersap_short](../includes/adaptersap-short-md.md)], vous devez les supprimer manuellement avant de désinstaller le [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]. Le [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] d’installation copie un `SapAdapter-DbScript-Uninstall.sql` de fichiers en général au  *\<lecteur d’installation > : \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]* . Exécuter ce fichier pour supprimer les tables que vous avez créé.  
+>  Si vous avez créé des tables dans la base de données SQL Server pour travailler avec la fonctionnalité tRFC de la [!INCLUDE[adaptersap_short](../includes/adaptersap-short-md.md)], vous devez les supprimer manuellement avant de désinstaller le [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]. Le [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] d’installation copie un `SapAdapter-DbScript-Uninstall.sql` de fichiers en général au  *\<lecteur d’installation\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]* . Exécuter ce fichier pour supprimer les tables que vous avez créé.  
   
 Effectuez les étapes suivantes pour supprimer le [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] à partir de votre ordinateur. Assurez-vous que vous avez le [!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)] installé avant d’exécuter l’Assistant installation.  
   
@@ -137,7 +137,7 @@ Effectuez les étapes suivantes pour supprimer le [!INCLUDE[adapterpacknoversion
 ## <a name="remove-the-bindings"></a>Supprimer les liaisons  
  Effectuez ces étapes *uniquement* si l’Assistant installation ne parvient pas à supprimer les liaisons de l’adaptateur ou l’inscription du fournisseur de données .NET Framework à partir du fichier machine.config.  
   
-1.  Accédez au fichier machine.config sur l’ordinateur. Par exemple, sur une plateforme 32 bits, le fichier machine.config est disponible sous  *\<lecteur système > : \WINDOWS\Microsoft.NET\Framework\\< version\>\CONFIG*.  
+1.  Accédez au fichier machine.config sur l’ordinateur. Par exemple, sur une plateforme 32 bits, le fichier machine.config est disponible sous  *\<lecteur système\>: \WINDOWS\Microsoft.NET\Framework\\< version\>\CONFIG*.  
   
 2.  Ouvrez le fichier à l’aide d’un éditeur de texte.  
   

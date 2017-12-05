@@ -12,11 +12,11 @@ caps.latest.revision: "43"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 66f47db034e0c193d4dab6ee303c13dd8c360661
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4edf1353a9f06103205e1e6e4296c2aa77e74dc6
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-the-edi-disassembler-works"></a>Fonctionnement du Désassembleur EDI
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] effectue la plus grande partie du traitement des échanges EDI reçus dans le pipeline de réception EDI (`Microsoft.BizTalk.DefaultPipelines.EDIReceivePipeline`). Ce pipeline inclut le composant de pipeline Désassembleur EDI, qui effectue le traitement suivant :  
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
 -   Convertit l’ensemble de l’échange au format XML si le **entrants option de traitement par lots** est définie sur l’un des deux **préserver l’échange** valeurs. Cette propriété peut être définie à partir de la **paramètres d’hôte Local** page sous **paramètres de l’échange** de l’onglet d’accord bidirectionnel de la **propriétés de l’accord** boîte de dialogue. Le pipeline de réception promeut la propriété ReuseEnvelope pour identifier l'échange comme conservé.  
   
--   Génère un accusé de réception technique et/ou fonctionnel (si configuré). Cela peut inclure le traitement par lot des accusés de réception (si configuré). Promeut la propriété de contexte de BizTalk Server. MessageType, en lui affectant égale au schéma de contrôle dans le http://schemas.microsoft.com/EDI/\<X12 ou EDIFACT > espace de noms (par exemple, X12_997_Root pour un accusé de réception 997). Promeut également la propriété de contexte EDI.DestinationPartyName, ce qui garantit que l'accusé de réception est récupéré pour l'envoi. Pour plus d’informations, consultez [envoyer un accusé de réception EDI](../core/sending-an-edi-acknowledgment.md).  
+-   Génère un accusé de réception technique et/ou fonctionnel (si configuré). Cela peut inclure le traitement par lot des accusés de réception (si configuré). Promeut la propriété de contexte de BizTalk Server. MessageType, en lui affectant égale au schéma de contrôle dans le http://schemas.microsoft.com/EDI/\<X12 ou EDIFACT\> espace de noms (par exemple, X12_997_Root pour un accusé de réception 997). Promeut également la propriété de contexte EDI.DestinationPartyName, ce qui garantit que l'accusé de réception est récupéré pour l'envoi. Pour plus d’informations, consultez [envoyer un accusé de réception EDI](../core/sending-an-edi-acknowledgment.md).  
   
 -   Fractionne des documents HIPAA 276/277 (version 5010 uniquement) 834, 835 (version 4010 uniquement) et 837, le cas échéant.  
   
@@ -156,7 +156,7 @@ ms.lasthandoff: 09/20/2017
 |Jeu de caractères X12|X12 génération de l’enveloppe d’échange **Remarque :** ce paramètre est uniquement utilisé pour valider les valeurs entrées pour les propriétés de l’accord. Le jeu de caractères X12 utilisé pour le traitement au moment de l'exécution est sélectionné dans les propriétés de pipeline. Pour plus d’informations, consultez [jeux de caractères EDI](../core/edi-character-sets.md).|  
   
 ## <a name="using-hipaa-trigger-fields"></a>Utilisation des champs déclencheurs HIPAA  
- Les segments EDI contiennent souvent des valeurs du qualificateur qui modifient la signification d'un segment. Par exemple, un segment N1 peut contenir un élément de qualification « BT » signifiant « Nom de facturation (bill-to) » ou « ST » pour « Nom de livraison (ship-to) ». Normalement, il reste à la logique métier pour déterminer comment interpréter ces champs et le désassembleur fait correspondre toutes les instances du segment N1 avec le même nom de l’enregistrement XML ; Toutefois, les schémas HIPAA inclus avec [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] contiennent des annotations permettant au désassembleur EDI créer des enregistrements XML uniques en fonction de la présence d’une valeur de qualification (consultez [Annotations des champs déclencheurs HIPAA schéma](../core/hipaa-schema-trigger-field-annotations.md)).  
+ Les segments EDI contiennent souvent des valeurs du qualificateur qui modifient la signification d'un segment. Par exemple, un segment N1 peut contenir un élément de qualification « BT » signifiant « Nom de facturation (bill-to) » ou « ST » pour « Nom de livraison (ship-to) ». Normalement, il reste à la logique métier pour déterminer comment interpréter ces champs et le désassembleur fait correspondre toutes les instances du segment N1 avec le même nom de l’enregistrement XML ; Toutefois, les schémas HIPAA inclus dans BizTalk Server contient des annotations permettant au désassembleur EDI créer des enregistrements XML uniques en fonction de la présence d’une valeur de qualification (consultez [Annotations des champs déclencheurs HIPAA schéma](../core/hipaa-schema-trigger-field-annotations.md)).  
   
  Lors de la réception d'un document informatisé HIPAA, si le Désassembleur EDI rencontre un segment contenant un champ déclencheur, il utilise les informations du déclencheur pour générer un enregistrement XML spécifique à la combinaison segment/déclencheur.  
   
@@ -168,4 +168,4 @@ ms.lasthandoff: 09/20/2017
 |N1 * PE\*Fabrikam\*FI\*9999999 ~|`<TS835W1_1000B_Loop>   <N1_PayeeIdentification_TS835W1_1000B>    <N101__EntityIdentifierCode>PE</N101__EntityIdentifierCode>    <N102__PayeeName>Fabrikam</N102__PayeeName>    <N103__IdentificationCodeQualifier>FI</N103__IdentificationCodeQualifier>    <N104__PayeeIdentificationCode>9999999</N104__PayeeIdentificationCode>   </N1_PayeeIdentification_TS835W1_1000B>`|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Réception des Messages EDI dans BizTalk Server](../core/how-biztalk-server-receives-edi-messages.md)
+ [Réception des messages EDI par BizTalk Server](../core/how-biztalk-server-receives-edi-messages.md)

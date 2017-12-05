@@ -17,11 +17,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c2a134e41c8f94c875498db03866d16a45bb9bc2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f1d3e395223840dd4caa534130061fac33e89b78
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-remove-deployed-artifacts"></a>Suppression d'artefacts déployés
 Les administrateurs utilisent la **remove-all** commande pour supprimer les artefacts déployés dans la base de données d’importation principale BAM. La définition d'analyse BAM fournie est soit un fichier XML soit un classeur Excel contenant des informations sur les artefacts à supprimer.  
@@ -32,7 +32,7 @@ Les administrateurs utilisent la **remove-all** commande pour supprimer les arte
   
 2.  Accédez à [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking.  
   
-3.  Type **bm remove-all - DefinitionFile :\<fichier def >**.  
+3.  Type **bm remove-all - DefinitionFile :\<fichier def\>**.  
   
 4.  Appuyez sur **Entrée**.  
   
@@ -40,4 +40,4 @@ Les administrateurs utilisent la **remove-all** commande pour supprimer les arte
  [Comment ajouter un artefact BAM à une Application](../core/how-to-add-a-bam-artifact-to-an-application.md)   
  [Gestion de l’Infrastructure dynamique BAM](../core/managing-the-bam-dynamic-infrastructure.md)   
  [Recommandations de sécurité BAM](../core/bam-security-recommendations.md)   
- [Utilitaire de gestion BAM](../core/bam-management-utility.md)
+ [Utilitaire de gestion de l’analyse BAM](../core/bam-management-utility.md)

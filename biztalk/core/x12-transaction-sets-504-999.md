@@ -12,14 +12,14 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b9ab6de85a9468db75c2b1e71ff15ceb7fa5c935
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 40ae8c54dc49759f78f13e7f39cc5552adf5c52b
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="x12-transaction-sets-504-999"></a>X12 les documents informatisés 504-999
-Cette rubrique répertorie les versions et documents X12 pris en charge par [!INCLUDE[prague](../includes/prague-md.md)].  
+Cette rubrique répertorie les X12 documents et les versions prises en charge par BizTalk Server.  
 
 ##  <a name="trns504"></a>Documents informatisés 504-568  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d3757514839e29d1d9748ffdcf56e7cc97ea075b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 982f54878dc290871d7c82c4ebf124ec1f4ab903
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="browse-for-oracle-e-business-suite-operations-under-the-artifact-based-view"></a>Rechercher des opérations Oracle E-Business Suite dans la vue basée sur un artefact
 Vous pouvez utiliser la [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] ou [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] pour parcourir les opérations entrantes et sortantes qui peuvent être effectuées sur Oracle E-Business Suite à l’aide de la [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]. Cette rubrique fournit des informations sur la façon de rechercher des opérations sortantes et entrantes sous la vue basée sur l’artefact.  
@@ -53,14 +53,14 @@ Vous pouvez utiliser la [!INCLUDE[consumeadapterservshort](../../includes/consum
 5.  Développez le **Tables d’Interface** nœud pour afficher toutes les applications d’Oracle E-Business Suite. Développez une application de la suite Oracle E-Business pour répertorier toutes les tables d’interface appartenant à cette application. Cliquez sur un nom de table d’interface pour afficher les opérations disponibles pour la table dans le **catégories et opérations disponibles** boîte.  
   
     > [!NOTE]
-    >  Si une table de l’interface contient des colonnes de type BLOB, CLOB, NCLOB ou BFILE l’adaptateur expose également une opération spécifique pour lire des données à partir de ces colonnes. Le nom de ces opérations sont Read_\<LOBColName >. Par exemple, si la table d’interface possède une colonne, FILE_DATA, de type BLOB, l’adaptateur expose un **Read_FILE_DATA** opération. Si une table d’interface a plus d’une colonne de type BLOB, CLOB, NCLOB et BFILE l’adaptateur expose nombre autant de Read_\<LOBColName > opérations.  
+    >  Si une table de l’interface contient des colonnes de type BLOB, CLOB, NCLOB ou BFILE l’adaptateur expose également une opération spécifique pour lire des données à partir de ces colonnes. Le nom de ces opérations sont Read_\<LOBColName\>. Par exemple, si la table d’interface possède une colonne, FILE_DATA, de type BLOB, l’adaptateur expose un **Read_FILE_DATA** opération. Si une table d’interface a plus d’une colonne de type BLOB, CLOB, NCLOB et BFILE l’adaptateur expose nombre autant de Read_\<LOBColName\> operations.  
     >   
-    >  De même, si une table de l’interface contient des colonnes de type BLOB, CLOB ou NCLOB l’adaptateur expose également une opération spécifique pour mettre à jour des données dans ces colonnes. Le nom de ces opérations sont en attente_\<LOBColName >. Par exemple, si la table d’interface possède une colonne, FILE_DATA, de type BLOB, l’adaptateur expose un **Update_FILE_DATA** opération. Si une table d’interface a plus d’une colonne de type BLOB, CLOB et NCLOB l’adaptateur expose un nombre plus grand nombre d’en attente_\<LOBColName > opérations. Notez que l’opération de mise à jour n’est pas pris en charge sur les colonnes de type BFILE.  
+    >  De même, si une table de l’interface contient des colonnes de type BLOB, CLOB ou NCLOB l’adaptateur expose également une opération spécifique pour mettre à jour des données dans ces colonnes. Le nom de ces opérations sont en attente_\<LOBColName\>. Par exemple, si la table d’interface possède une colonne, FILE_DATA, de type BLOB, l’adaptateur expose un **Update_FILE_DATA** opération. Si une table d’interface a plus d’une colonne de type BLOB, CLOB et NCLOB l’adaptateur expose un nombre plus grand nombre d’en attente_\<LOBColName\> operations. Notez que l’opération de mise à jour n’est pas pris en charge sur les colonnes de type BFILE.  
   
 6.  Développez le **vues de l’Interface** nœud pour afficher toutes les applications d’Oracle E-Business Suite. Développez une application de la suite Oracle E-Business pour répertorier toutes les vues de l’interface appartenant à cette application. Cliquez sur un nom de vue d’interface pour afficher les opérations disponibles pour l’affichage dans le **catégories et opérations disponibles** boîte.  
   
     > [!NOTE]
-    >  Si une vue de l’interface contient des colonnes de type BLOB, CLOB, NCLOB ou BFILE l’adaptateur expose également une opération spécifique pour lire des données à partir de ces colonnes. Les noms de ces opérations sont Read_\<LOBColName >. Par exemple, si la vue de l’interface possède une colonne, FILE_CONTENT, de type BLOB, l’adaptateur expose un **Read_FILE_CONTENT** opération. Si une vue de l’interface possède plus d’une colonne de type BLOB, CLOB, NCLOB ou BFILE l’adaptateur exposera nombre autant de Read_\<LOBColName > opérations. Notez qu’en attente_\<LOBColName > opérations ne sont pas prises en charge sur les vues.  
+    >  Si une vue de l’interface contient des colonnes de type BLOB, CLOB, NCLOB ou BFILE l’adaptateur expose également une opération spécifique pour lire des données à partir de ces colonnes. Les noms de ces opérations sont Read_\<LOBColName\>. Par exemple, si la vue de l’interface possède une colonne, FILE_CONTENT, de type BLOB, l’adaptateur expose un **Read_FILE_CONTENT** opération. Si une vue de l’interface possède plus d’une colonne de type BLOB, CLOB, NCLOB ou BFILE l’adaptateur exposera nombre autant de Read_\<LOBColName\> operations. Notez qu’en attente_\<LOBColName\> opérations ne sont pas prises en charge sur les vues.  
   
 7.  Développez le **programmes simultanés** nœud pour afficher toutes les applications d’Oracle E-Business Suite. Cliquez sur une application de la suite Oracle E-Business pour répertorier tous les programmes simultanés appartenant à cette application dans le **catégories et opérations disponibles** boîte.  
   
@@ -72,7 +72,7 @@ Vous pouvez utiliser la [!INCLUDE[consumeadapterservshort](../../includes/consum
     > [!IMPORTANT]
     >  Le [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] (ou [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]) affiche les noms conviviaux des ensembles de requêtes. Toutefois, les métadonnées pour l’ensemble de la demande a le nom réel de l’ensemble de la demande. Par exemple, l’application de l’administrateur d’Applications contient un ensemble de la demande « DownloadPatches ». Toutefois, les métadonnées a le nom du jeu de requête en tant que FNDRSSUB1623, qui est le nom réel de l’ensemble de la demande.  
   
-9. Développez le **API PL-SQL** nœud pour afficher les nœuds de catégorie pour le schéma utilisateur actuel (à laquelle se connecter) et tous les autres schémas définis dans la base de données Oracle. Développez le **schéma actuel (\<nom de schéma >)** nœud pour afficher tous les packages définis pour ce schéma. Cliquez sur un nom de package pour afficher les fonctions et les procédures dans le package dans le **catégories et opérations disponibles** boîte.  
+9. Développez le **API PL-SQL** nœud pour afficher les nœuds de catégorie pour le schéma utilisateur actuel (à laquelle se connecter) et tous les autres schémas définis dans la base de données Oracle. Développez le **schéma actuel (\<nom de schéma\>)** nœud pour afficher tous les packages définis pour ce schéma. Cliquez sur un nom de package pour afficher les fonctions et les procédures dans le package dans le **catégories et opérations disponibles** boîte.  
   
      ![Rechercher les packages dans la base de données Oracle](../../adapters-and-accelerators/adapter-oracle-ebs/media/7a9dc061-db0b-4a8e-bfc6-3a003ad687d8.gif "7a9dc061-db0b-4a8e-bfc6-3a003ad687d8")  
   
@@ -80,7 +80,7 @@ Vous pouvez utiliser la [!INCLUDE[consumeadapterservshort](../../includes/consum
   
      ![Rechercher les packages dans la base de données Oracle pour tous les schémas](../../adapters-and-accelerators/adapter-oracle-ebs/media/09a4841b-b88f-490d-a49a-94e392b5493c.gif "09a4841b-b88f-490d-a49a-94e392b5493c")  
   
-10. Développez le **procédures** nœud pour afficher les nœuds de catégorie pour le schéma utilisateur actuel (à laquelle se connecter) et tous les autres schémas définis dans la base de données Oracle. Cliquez sur le **schéma actuel (\<nom de schéma >)** nœud pour afficher toutes les procédures définies pour ce schéma dans le **catégories et opérations disponibles** boîte.  
+10. Développez le **procédures** nœud pour afficher les nœuds de catégorie pour le schéma utilisateur actuel (à laquelle se connecter) et tous les autres schémas définis dans la base de données Oracle. Cliquez sur le **schéma actuel (\<nom de schéma\>)** nœud pour afficher toutes les procédures définies pour ce schéma dans le **catégories et opérations disponibles** boîte.  
   
      ![Parcourir les procédures dans la base de données Oracle pour un schéma](../../adapters-and-accelerators/adapter-oracle-ebs/media/6d78563a-53f7-45cc-8652-f40d4703bdf4.gif "6d78563a-53f7-45cc-8652-f40d4703bdf4")  
   
@@ -88,7 +88,7 @@ Vous pouvez utiliser la [!INCLUDE[consumeadapterservshort](../../includes/consum
   
      ![Parcourir les procédures dans la base de données Oracle pour les schémas](../../adapters-and-accelerators/adapter-oracle-ebs/media/a514d199-d6c1-44a0-bf6b-28ddf702081a.gif "a514d199-d6c1-44a0-bf6b-28ddf702081a")  
   
-11. Développez le **fonctions** nœud pour afficher les nœuds de catégorie pour le schéma utilisateur actuel (à laquelle se connecter) et tous les autres schémas définis dans la base de données Oracle. Cliquez sur le **schéma actuel (\<nom de schéma >)** nœud pour afficher toutes les fonctions définies pour ce schéma dans le **catégories et opérations disponibles** boîte.  
+11. Développez le **fonctions** nœud pour afficher les nœuds de catégorie pour le schéma utilisateur actuel (à laquelle se connecter) et tous les autres schémas définis dans la base de données Oracle. Cliquez sur le **schéma actuel (\<nom de schéma\>)** nœud pour afficher toutes les fonctions définies pour ce schéma dans le **catégories et opérations disponibles** boîte.  
   
      ![Parcourir les fonctions dans la base de données Oracle pour un schéma](../../adapters-and-accelerators/adapter-oracle-ebs/media/22c1cabf-9754-4ecd-be37-dbeeb7a6a8fd.gif "22c1cabf-9754-4ecd-be37-dbeeb7a6a8fd")  
   
@@ -96,7 +96,7 @@ Vous pouvez utiliser la [!INCLUDE[consumeadapterservshort](../../includes/consum
   
      ![Parcourir les fonctions dans la base de données Oracle pour tous les schémas](../../adapters-and-accelerators/adapter-oracle-ebs/media/b4d29036-3d37-4a50-82c2-3532adbe2875.gif "b4d29036-3d37-4a50-82c2-3532adbe2875")  
   
-12. Développez le **Tables** nœud pour afficher les nœuds de catégorie pour le schéma utilisateur actuel (à laquelle se connecter) et tous les autres schémas définis dans la base de données Oracle. Développez le **schéma actuel (\<nom de schéma >)** nœud pour afficher toutes les tables définies pour ce schéma. Cliquez sur un nom de table pour afficher les opérations prises en charge sur la table dans le **catégories et opérations disponibles** boîte.  
+12. Développez le **Tables** nœud pour afficher les nœuds de catégorie pour le schéma utilisateur actuel (à laquelle se connecter) et tous les autres schémas définis dans la base de données Oracle. Développez le **schéma actuel (\<nom de schéma\>)** nœud pour afficher toutes les tables définies pour ce schéma. Cliquez sur un nom de table pour afficher les opérations prises en charge sur la table dans le **catégories et opérations disponibles** boîte.  
   
      ![Parcourir les tables dans la base de données Oracle pour un schéma](../../adapters-and-accelerators/adapter-oracle-ebs/media/6ba7420f-9893-4b3e-91cb-10f29d725ad3.gif "6ba7420f-9893-4b3e-91cb-10f29d725ad3")  
   
@@ -105,11 +105,11 @@ Vous pouvez utiliser la [!INCLUDE[consumeadapterservshort](../../includes/consum
      ![Parcourir les tables de base de données Oracle pour tous les schémas](../../adapters-and-accelerators/adapter-oracle-ebs/media/d7c52ab4-ba27-404a-9db6-32b2a635ad2f.gif "d7c52ab4-ba27-404a-9db6-32b2a635ad2f")  
   
     > [!NOTE]
-    >  Si une table contient des colonnes de type BLOB, CLOB, NCLOB ou BFILE l’adaptateur expose également une opération spécifique pour lire des données à partir de ces colonnes. Le nom de ces opérations sont Read_\<LOBColName >. Par exemple, si la table possède une colonne, photos, de type BLOB, l’adaptateur expose un **Read_PHOTO** opération. Si une table possède plusieurs colonnes de type BLOB, CLOB, NCLOB et BFILE l’adaptateur expose nombre autant de Read_\<LOBColName > opérations.  
+    >  Si une table contient des colonnes de type BLOB, CLOB, NCLOB ou BFILE l’adaptateur expose également une opération spécifique pour lire des données à partir de ces colonnes. Le nom de ces opérations sont Read_\<LOBColName\>. Par exemple, si la table possède une colonne, photos, de type BLOB, l’adaptateur expose un **Read_PHOTO** opération. Si une table possède plusieurs colonnes de type BLOB, CLOB, NCLOB et BFILE l’adaptateur expose nombre autant de Read_\<LOBColName\> operations.  
     >   
-    >  De même, si une table contient des colonnes de type BLOB, CLOB ou NCLOB l’adaptateur expose également une opération spécifique pour mettre à jour des données dans ces colonnes. Le nom de ces opérations sont en attente_\<LOBColName >. Par exemple, si la table possède une colonne, photos, de type BLOB, l’adaptateur expose un **Update_PHOTO** opération. Si une table possède plusieurs colonnes de type BLOB, CLOB et NCLOB l’adaptateur expose un nombre plus grand nombre d’en attente_\<LOBColName > opérations. Notez que l’opération de mise à jour n’est pas pris en charge sur les colonnes de type BFILE.  
+    >  De même, si une table contient des colonnes de type BLOB, CLOB ou NCLOB l’adaptateur expose également une opération spécifique pour mettre à jour des données dans ces colonnes. Le nom de ces opérations sont en attente_\<LOBColName\>. Par exemple, si la table possède une colonne, photos, de type BLOB, l’adaptateur expose un **Update_PHOTO** opération. Si une table possède plusieurs colonnes de type BLOB, CLOB et NCLOB l’adaptateur expose un nombre plus grand nombre d’en attente_\<LOBColName\> operations. Notez que l’opération de mise à jour n’est pas pris en charge sur les colonnes de type BFILE.  
   
-13. Développez le **vues** nœud pour afficher les nœuds de catégorie pour le schéma utilisateur actuel (à laquelle se connecter) et tous les autres schémas définis dans la base de données Oracle. Développez le **schéma actuel (\<nom de schéma >)** pour voir toutes les vues définies pour ce nœud. Cliquez sur un nom de la vue pour voir les opérations prises en charge sur cette vue dans le **catégories et opérations disponibles** boîte.  
+13. Développez le **vues** nœud pour afficher les nœuds de catégorie pour le schéma utilisateur actuel (à laquelle se connecter) et tous les autres schémas définis dans la base de données Oracle. Développez le **schéma actuel (\<nom de schéma\>)** pour voir toutes les vues définies pour ce nœud. Cliquez sur un nom de la vue pour voir les opérations prises en charge sur cette vue dans le **catégories et opérations disponibles** boîte.  
   
      ![Parcourir les vues dans la base de données Oracle pour le schéma actuel](../../adapters-and-accelerators/adapter-oracle-ebs/media/2a38cfed-007d-431a-af60-c9c8be5369ab.gif "2a38cfed-007d-431a-af60-c9c8be5369ab")  
   
@@ -118,7 +118,7 @@ Vous pouvez utiliser la [!INCLUDE[consumeadapterservshort](../../includes/consum
      ![Parcourir les vues dans la base de données Oracle pour tous les schémas](../../adapters-and-accelerators/adapter-oracle-ebs/media/67ca336c-62ac-4374-87da-07cf331ea4ad.gif "67ca336c-62ac-4374-87da-07cf331ea4ad")  
   
     > [!NOTE]
-    >  Si une vue contient des colonnes de type BLOB, CLOB, NCLOB ou BFILE l’adaptateur expose également une opération spécifique pour lire des données à partir de ces colonnes. Le nom de ces opérations sont Read_\<LOBColName >. Par exemple, si la vue a une colonne, la règle, de type BLOB, l’adaptateur expose un **Read_RULE** opération. Si une vue a plus d’une colonne de type BLOB, CLOB, NCLOB ou BFILE l’adaptateur exposera nombre autant de Read_\<LOBColName > opérations. Notez qu’en attente_\<LOBColName > opérations ne sont pas prises en charge sur les vues.  
+    >  Si une vue contient des colonnes de type BLOB, CLOB, NCLOB ou BFILE l’adaptateur expose également une opération spécifique pour lire des données à partir de ces colonnes. Le nom de ces opérations sont Read_\<LOBColName\>. Par exemple, si la vue a une colonne, la règle, de type BLOB, l’adaptateur expose un **Read_RULE** opération. Si une vue a plus d’une colonne de type BLOB, CLOB, NCLOB ou BFILE l’adaptateur exposera nombre autant de Read_\<LOBColName\> operations. Notez qu’en attente_\<LOBColName\> opérations ne sont pas prises en charge sur les vues.  
   
 ## <a name="browsing-for-inbound-operations"></a>Navigation pour les opérations entrantes  
  Procédez comme suit pour parcourir les opérations entrantes sous la vue basée sur l’artefact.  
@@ -151,7 +151,7 @@ Vous pouvez utiliser la [!INCLUDE[consumeadapterservshort](../../includes/consum
   
      ![Opérations entrantes sur les vues de l’interface](../../adapters-and-accelerators/adapter-oracle-ebs/media/937f46f2-d142-413f-8744-2180c7116fd4.gif "937f46f2-d142-413f-8744-2180c7116fd4")  
   
-6.  Développez le **API PL-SQL** nœud pour afficher les nœuds de catégorie pour le schéma utilisateur actuel (à laquelle se connecter) et tous les autres schémas définis dans la base de données Oracle. Développez le **schéma actuel (\<nom de schéma >)** nœud pour afficher tous les packages définis pour ce schéma. Cliquez sur un nom de package pour afficher les fonctions et les procédures dans le package dans le **catégories et opérations disponibles** boîte. Des procédures et des fonctions répertoriées peuvent servir à interroger la base de données Oracle.  
+6.  Développez le **API PL-SQL** nœud pour afficher les nœuds de catégorie pour le schéma utilisateur actuel (à laquelle se connecter) et tous les autres schémas définis dans la base de données Oracle. Développez le **schéma actuel (\<nom de schéma\>)** nœud pour afficher tous les packages définis pour ce schéma. Cliquez sur un nom de package pour afficher les fonctions et les procédures dans le package dans le **catégories et opérations disponibles** boîte. Des procédures et des fonctions répertoriées peuvent servir à interroger la base de données Oracle.  
   
      ![Parcourir PL &#45; API SQL dans Oracle de base de données pour l’interrogation](../../adapters-and-accelerators/adapter-oracle-ebs/media/4b31ea85-9c5a-42b4-82b2-2cb6d3ead35a.gif "4b31ea85-9c5a-42b4-82b2-2cb6d3ead35a")  
   
@@ -159,7 +159,7 @@ Vous pouvez utiliser la [!INCLUDE[consumeadapterservshort](../../includes/consum
   
      ![Parcourir PL &#45; API SQL pour tous les schémas pour l’interrogation](../../adapters-and-accelerators/adapter-oracle-ebs/media/e28a803e-fcfb-4021-9225-924d54a484c0.gif "e28a803e-fcfb-4021-9225-924d54a484c0")  
   
-7.  Développez le **procédures** nœud pour afficher les nœuds de catégorie pour le schéma utilisateur actuel (à laquelle se connecter) et tous les autres schémas définis dans la base de données Oracle. Cliquez sur le **schéma actuel (\<nom de schéma >)** nœud pour afficher toutes les procédures définies pour ce schéma dans le **catégories et opérations disponibles** boîte. Chacune des procédures répertoriées peut être utilisé pour interroger la base de données Oracle.  
+7.  Développez le **procédures** nœud pour afficher les nœuds de catégorie pour le schéma utilisateur actuel (à laquelle se connecter) et tous les autres schémas définis dans la base de données Oracle. Cliquez sur le **schéma actuel (\<nom de schéma\>)** nœud pour afficher toutes les procédures définies pour ce schéma dans le **catégories et opérations disponibles** boîte. Chacune des procédures répertoriées peut être utilisé pour interroger la base de données Oracle.  
   
      ![Parcourir des procédures de tous les schémas pour l’interrogation](../../adapters-and-accelerators/adapter-oracle-ebs/media/5e78da80-d99a-44d3-8eac-f636828f8ceb.gif "5e78da80-d99a-44d3-8eac-f636828f8ceb")  
   
@@ -167,7 +167,7 @@ Vous pouvez utiliser la [!INCLUDE[consumeadapterservshort](../../includes/consum
   
      ![Parcourir les procédures dans la base de données Oracle pour l’interrogation](../../adapters-and-accelerators/adapter-oracle-ebs/media/22d8e866-ed19-49f4-a6eb-683343b16cf5.gif "22d8e866-ed19-49f4-a6eb-683343b16cf5")  
   
-8.  Développez le **fonctions** nœud pour afficher les nœuds de catégorie pour le schéma utilisateur actuel (à laquelle se connecter) et tous les autres schémas définis dans la base de données Oracle. Cliquez sur le **schéma actuel (\<nom de schéma >)** nœud pour afficher toutes les fonctions définies pour ce schéma dans le **catégories et opérations disponibles** boîte. Chacune des fonctions répertoriées permettre servir à interroger la base de données Oracle.  
+8.  Développez le **fonctions** nœud pour afficher les nœuds de catégorie pour le schéma utilisateur actuel (à laquelle se connecter) et tous les autres schémas définis dans la base de données Oracle. Cliquez sur le **schéma actuel (\<nom de schéma\>)** nœud pour afficher toutes les fonctions définies pour ce schéma dans le **catégories et opérations disponibles** boîte. Chacune des fonctions répertoriées permettre servir à interroger la base de données Oracle.  
   
      ![Parcourir les fonctions dans la base de données Oracle pour l’interrogation](../../adapters-and-accelerators/adapter-oracle-ebs/media/64c0a30d-a2d6-4dee-90cb-a7e7e2bf62cf.gif "64c0a30d-a2d6-4dee-90cb-a7e7e2bf62cf")  
   
@@ -175,7 +175,7 @@ Vous pouvez utiliser la [!INCLUDE[consumeadapterservshort](../../includes/consum
   
      ![Parcourir les fonctions dans la base de données Oracle pour l’interrogation](../../adapters-and-accelerators/adapter-oracle-ebs/media/1d22c3c8-8c24-4905-8144-bdb4840244f1.gif "1d22c3c8-8c24-4905-8144-bdb4840244f1")  
   
-9. Développez le **Tables** nœud pour afficher les nœuds de catégorie pour le schéma utilisateur actuel (à laquelle se connecter) et tous les autres schémas définis dans la base de données Oracle. Développez le **schéma actuel (\<nom de schéma >)** nœud pour afficher toutes les tables définies pour ce schéma. Cliquez sur un nom de table pour afficher la **interrogation** entrants opération prise en charge sur la table dans le **catégories et opérations disponibles** boîte.  
+9. Développez le **Tables** nœud pour afficher les nœuds de catégorie pour le schéma utilisateur actuel (à laquelle se connecter) et tous les autres schémas définis dans la base de données Oracle. Développez le **schéma actuel (\<nom de schéma\>)** nœud pour afficher toutes les tables définies pour ce schéma. Cliquez sur un nom de table pour afficher la **interrogation** entrants opération prise en charge sur la table dans le **catégories et opérations disponibles** boîte.  
   
      ![Parcourir les tables dans la base de données Oracle pour l’interrogation](../../adapters-and-accelerators/adapter-oracle-ebs/media/7c60dfbf-3836-4e72-abe8-5f32a0936807.gif "7c60dfbf-3836-4e72-abe8-5f32a0936807")  
   
@@ -183,7 +183,7 @@ Vous pouvez utiliser la [!INCLUDE[consumeadapterservshort](../../includes/consum
   
      ![Parcourir les tables dans la base de données Oracle pour l’interrogation](../../adapters-and-accelerators/adapter-oracle-ebs/media/c5fbaf59-2e79-4141-8a85-1e1b8eedcea7.gif "c5fbaf59-2e79-4141-8a85-1e1b8eedcea7")  
   
-10. Développez le **vues** nœud pour afficher les nœuds de catégorie pour le schéma utilisateur actuel (à laquelle se connecter) et tous les autres schémas définis dans la base de données Oracle. Développez le **schéma actuel (\<nom de schéma >)** pour voir toutes les vues définies pour ce nœud. Cliquez sur un nom d’affichage pour afficher le **interrogation** entrants opération prise en charge sur cette vue dans le **catégories et opérations disponibles** boîte.  
+10. Développez le **vues** nœud pour afficher les nœuds de catégorie pour le schéma utilisateur actuel (à laquelle se connecter) et tous les autres schémas définis dans la base de données Oracle. Développez le **schéma actuel (\<nom de schéma\>)** pour voir toutes les vues définies pour ce nœud. Cliquez sur un nom d’affichage pour afficher le **interrogation** entrants opération prise en charge sur cette vue dans le **catégories et opérations disponibles** boîte.  
   
      ![Parcourir les vues dans la base de données Oracle pour l’interrogation](../../adapters-and-accelerators/adapter-oracle-ebs/media/2299de79-9f50-433d-9e71-164f6d02bd78.gif "2299de79-9f50-433d-9e71-164f6d02bd78")  
   

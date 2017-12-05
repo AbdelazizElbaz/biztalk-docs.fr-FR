@@ -19,11 +19,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5d68a55ce0f6eba835313075e8ab3753ec825db2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3172759541f46ec6c3c8c2b3e684086747036f37
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="ops-adapter-implementation-details"></a>Détails de l'implémentation de l'adaptateur Ops
 La compréhension des aspects suivants de l'adaptateur Ops peut s'avérer utile lors de la modification de l'adaptateur ou de sa configuration par programme.  
@@ -50,9 +50,9 @@ La compréhension des aspects suivants de l'adaptateur Ops peut s'avérer utile 
 |**InitializationData**|**InitializationData**|  
 |**TransportLocationUri**|Non applicable.|  
   
- Toutes les propriétés renvoient des valeurs de chaîne. Vous construisez la valeur de la propriété TransportLocationUri à partir du nom de l'assembly et du nom de la classe. L’URI a la valeur OPS : / /\<DotNetAssemblyStrongName > /\<DotNetClassName > où les espaces réservés sont remplacés par les valeurs de la propriété personnalisée correspondante.  
+ Toutes les propriétés renvoient des valeurs de chaîne. Vous construisez la valeur de la propriété TransportLocationUri à partir du nom de l'assembly et du nom de la classe. L’URI a la valeur OPS : / /\<DotNetAssemblyStrongName\>/\<DotNetClassName\> où les espaces réservés sont remplacés par les valeurs de la propriété personnalisée correspondante.  
   
  Pour plus d’informations sur la création de ports à partir de code, consultez [comment créer des emplacements de réception MSMQ et les Ports d’envoi à partir de Code](../core/how-to-create-msmq-receive-locations-and-send-ports-from-code.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [L’adaptateur Ops](../core/the-ops-adapter.md)
+ [Adaptateur Ops](../core/the-ops-adapter.md)

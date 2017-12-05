@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8a0804aa58174912a29cec9039d55579e4e705a5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6b12eeae422f5da90c6874f70d2ffddbc19f75bd
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="operations-on-interface-tables-interface-views-tables-and-views-that-contain-lob-data"></a>Opérations sur les Tables d’Interface, les vues de l’Interface, les Tables et les vues qui contiennent des données LOB
 Le [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] prend en charge les types de données Oracle LOB (large object) :  
@@ -34,12 +34,12 @@ Le [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslo
 ## <a name="operations-for-tables-and-views"></a>Opérations pour les tables et vues  
  Le [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] met en évidence les opérations suivantes pour les tables d’interface, les vues de l’interface, les tables et les vues qui contiennent des colonnes LOB :  
   
--   **Read_\<LOBColName >**: le `Read_<LOBColName>` opération apparaissent pour les tables d’interface, les vues de l’interface, les tables et les vues qui contiennent des colonnes BLOB, CLOB, NCLOB et BFILE, où \<LOBColName > est le nom de la colonne de type objet BLOB, CLOB, NCLOB et BFILE. À l’aide de la Read_\<LOBColName > opération, les clients de l’adaptateur peuvent lire des valeurs dans une colonne LOB sous la forme d’un flux de données. Cette opération prend une chaîne de filtre en tant que paramètre.  
+-   **Read_\<LOBColName\>**: le `Read_<LOBColName>` opération apparaissent pour les tables d’interface, les vues de l’interface, les tables et les vues qui contiennent des colonnes BLOB, CLOB, NCLOB et BFILE, où \<LOBColName\> est le nom de la colonne de type objet BLOB, CLOB, NCLOB et BFILE. À l’aide de la Read_\<LOBColName\> opération, les clients de l’adaptateur peuvent lire des valeurs dans une colonne LOB sous la forme d’un flux de données. Cette opération prend une chaîne de filtre en tant que paramètre.  
   
     > [!NOTE]
     >  Le `Read_<LOBColName>` opération est conçue pour prendre en charge la diffusion en continu d’entrée des données LOB dans le modèle de service WCF. Vous devez utiliser une opération de sélection de table pour lire des données LOB à partir d’un modèle de canal WCF ou [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] solution.  
   
--   **En attente_\<LOBColName >**: le `Update_<LOBColName>` opération apparaissent pour les tables d’interface et les tables uniquement contient des colonnes BLOB, CLOB et NCLOB, où \<LOBColName > est le nom de la colonne de type BLOB, CLOB, et NCLOB. À l’aide de l’en attente_\<LOBColName > opération, les clients de l’adaptateur peuvent mettre à jour les valeurs dans une colonne LOB. Pour le type de données objet BLOB, cette opération prend des données de base64binary encodée comme paramètre, alors que pour les types de données CLOB et NCLOB, cette opération prend un filtre de chaîne comme paramètre.  
+-   **En attente_\<LOBColName\>**: le `Update_<LOBColName>` opération apparaissent pour les tables d’interface et les tables uniquement contient des colonnes BLOB, CLOB et NCLOB, où \<LOBColName\> est le nom de la colonne de type BLOB, CLOB et NCLOB. À l’aide de l’en attente_\<LOBColName\> opération, les clients de l’adaptateur peuvent mettre à jour les valeurs dans une colonne LOB. Pour le type de données objet BLOB, cette opération prend des données de base64binary encodée comme paramètre, alors que pour les types de données CLOB et NCLOB, cette opération prend un filtre de chaîne comme paramètre.  
   
     > [!NOTE]
     >  Le `Update_<LOBColName>` opération :  

@@ -16,11 +16,11 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b4e569352c5813272b483cc69b8c93a7f1b84d40
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7a1c7f0a73f811a6b339428e62a93916d9301edf
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-add-a-binding-file-to-an-application"></a>Ajout d'un fichier de liaison à une application
 Cette rubrique décrit comment ajouter un fichier de liaison à une application BizTalk à l'aide de la console Administration de BizTalk Server ou de la ligne de commande. Vous pouvez souhaiter procéder ainsi pour faciliter les déploiement d’application ou l’assembly, comme décrit dans [déploiement d’applications et des fichiers de liaison](../core/binding-files-and-application-deployment.md).  
@@ -56,7 +56,7 @@ Cette rubrique décrit comment ajouter un fichier de liaison à une application 
   
 1.  Cliquez sur **Démarrer**, cliquez sur **tous les programmes**, cliquez sur [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], puis cliquez sur **Administration de BizTalk Server**.  
   
-2.  Dans l'arborescence de la console, développez Administration de [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] et le groupe BizTalk contenant l'application à laquelle vous souhaitez ajouter le fichier de liaison.  
+2.  Dans l’arborescence de la console, développez Administration de BizTalk Server et le groupe BizTalk contenant l’application à laquelle vous souhaitez ajouter un fichier de liaison.  
   
 3.  Développez Applications et cliquez avec le bouton droit sur l'application à laquelle vous souhaitez ajouter le fichier de liaison.  
   
@@ -93,11 +93,11 @@ Cette rubrique décrit comment ajouter un fichier de liaison à une application 
     |**Type**|**System.BizTalk : biztalkbinding** (cette valeur ne respecte pas la casse).|  
     |**/ Remplacer**|Option permettant de mettre à jour un fichier de liaison existant. Si ce n’est pas spécifié, liaison et le fichier existe déjà dans l’application qui a le même nom que le fichier ajouté, l’opération AddResource échoue.|  
     |**/ Source**|Chemin d'accès complet du fichier de liaison, nom du fichier inclus. Si le chemin d'accès comprend des espaces, vous devez le placer entre guillemets doubles (").|  
-    |**/Property:TargetEnvironment =**|Chaîne indiquant l'environnement de déploiement cible. Vous pouvez la chaîne de votre choix (ex. : Production). Exemple : **/Property:TargetEnvironment = « Production »**<br /><br /> Si non spécifié, la valeur \<par défaut > est automatiquement appliquée. La valeur respecte la casse. Si elle comprend des espaces, vous devez la placer entre guillemets doubles ("). La longueur maximale de cette valeur ne doit pas dépasser 128 caractères.|  
+    |**/Property:TargetEnvironment =**|Chaîne indiquant l'environnement de déploiement cible. Vous pouvez la chaîne de votre choix (ex. : Production). Exemple : **/Property:TargetEnvironment = « Production »**<br /><br /> Si non spécifié, la valeur \<par défaut\> est appliqué automatiquement. La valeur respecte la casse. Si elle comprend des espaces, vous devez la placer entre guillemets doubles ("). La longueur maximale de cette valeur ne doit pas dépasser 128 caractères.|  
     |**/ Serveur**|Nom de l'instance SQL Server hébergeant la base de données de gestion BizTalk et indiqué sous la forme NomServeur\NomInstance,Port.<br /><br /> Le nom de l'instance est uniquement requis lorsqu'il est différent du nom du serveur. Le port est uniquement requis lorsque le serveur SQL Server utilise un numéro de port autre que celui par défaut (1433).<br /><br /> Exemples :<br /><br /> Server=MyServer<br /><br /> Server=MyServer\MySQLServer,1533<br /><br /> Si vous n'indiquez pas de nom pour l'instance SQL Server, le nom d'instance utilisé est celui de l'instance SQL Server exécutée sur l'ordinateur local.|  
     |**/ Base de données**|Nom de la base de données de gestion BizTalk. Si vous ne l'indiquez pas, la base de données utilisée est la base de données de gestion BizTalk s'exécutant au sein de l'instance locale de SQL Server.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [La gestion des assemblys .NET, certificats et autres ressources](../core/managing-net-assemblies-certificates-and-other-resources.md)   
  [Commande AddResource : Liaison de BizTalk](../core/addresource-command-biztalk-binding.md)   
- [Création et modification des Applications BizTalk](../core/creating-and-modifying-biztalk-applications.md)
+ [Création et modification des applications BizTalk](../core/creating-and-modifying-biztalk-applications.md)

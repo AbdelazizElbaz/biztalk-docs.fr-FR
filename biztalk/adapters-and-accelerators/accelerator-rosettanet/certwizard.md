@@ -16,17 +16,17 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b8d9daf4ea1ea996680088c7a7a1333e9d26906b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ea106299a734f79506823ca4a6951a3dad367553
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="certwizard"></a>CertWizard
 L’utilitaire CertWizard permet d’importer un certificat à partir d’un fichier .pfx ou .cer dans un magasin privé ou public pour une utilisation avec [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)].  
   
 ## <a name="location-in-sdk"></a>Emplacement dans le kit de développement logiciel (SDK)  
- \<*lecteur*> \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version > Accelerator for RosettaNet\SDK\  
+ \<*lecteur*\>\Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version\> Accelerator for RosettaNet\SDK\  
   
 ## <a name="running-certwizard"></a>CertWizard en cours d’exécution  
   
@@ -34,7 +34,7 @@ L’utilitaire CertWizard permet d’importer un certificat à partir d’un fic
   
 1.  Ouvrez une invite de commandes.  
   
-2.  Déplacer vers \< *lecteur*> \ Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version > Accelerator for RosettaNet\SDK\\.  
+2.  Déplacer vers \< *lecteur*\>\ Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version\> Accelerator for RosettaNet\SDK\\.  
   
 3.  À l’invite de commandes, tapez **CertWizard**, tapez les interrupteurs requis, puis appuyez sur ENTRÉE.  
   
@@ -82,4 +82,4 @@ CertWizard /Rootkey <filename>.cer [/Thumbprint <thumbprint>]
   
 ## <a name="see-also"></a>Voir aussi  
  [Utilitaires](../../adapters-and-accelerators/accelerator-rosettanet/utilities1.md)   
- [L’importation de certificats à l’aide de l’utilitaire CertWizard](../../adapters-and-accelerators/accelerator-rosettanet/importing-certificates-using-the-certwizard-utility.md)
+ [Importation de certificats à l’aide de l’utilitaire CertWizard](../../adapters-and-accelerators/accelerator-rosettanet/importing-certificates-using-the-certwizard-utility.md)

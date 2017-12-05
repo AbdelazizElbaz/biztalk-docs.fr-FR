@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d59965b4fe5a94ae29ac8459ef8b8d80999c1dc5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f5317099b1a576c9dd4e0b13593c16f4ef3a6831
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="overview-of-the-wcf-channel-model-with-the-oracle-e-business-suite-adapter"></a>Vue d’ensemble du modèle de canal WCF avec l’adaptateur Oracle E-Business Suite
 Pour appeler des opérations sur le [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)], votre code se comporte comme un client WCF et envoie les opérations sortantes à l’adaptateur. Dans le modèle de canal WCF, votre code appelle les opérations sur la carte en envoyant un message de demande sur un canal.  
@@ -44,11 +44,11 @@ Pour appeler des opérations sur le [!INCLUDE[adapteroracleebusinesslong](../../
   
  Comme toute liaison WCF, le [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] utilise un modèle de fabrique pour fournir des canaux pour le code d’application. Vous utilisez un **Microsoft.Adapters.OracleEBSBinding** pour créer des instances d’objet :  
   
--   **System.ServiceModel.ChannelFactory\<IRequestChannel >** pour fournir **IRequestChannel** canaux, vous pouvez utiliser pour appeler des opérations de requête-réponse sur la carte.  
+-   **System.ServiceModel.ChannelFactory\<IRequestChannel\>**  pour fournir **IRequestChannel** canaux, vous pouvez utiliser pour appeler des opérations de requête-réponse sur la carte.  
   
--   **System.ServiceModel.ChannelFactory\<IOutputChannel >** pour fournir **IOutputChannel** canaux, vous pouvez utiliser pour appeler des opérations unidirectionnelles sur la carte.  
+-   **System.ServiceModel.ChannelFactory\<IOutputChannel\>**  pour fournir **IOutputChannel** canaux, vous pouvez utiliser pour appeler des opérations unidirectionnelles sur la carte.  
   
--   **System.ServiceModel.IChannelListener\<IInputChannel >** pour fournir **IInputChannel** canaux, vous pouvez utiliser pour recevoir les messages entrants à partir de l’adaptateur.  
+-   **System.ServiceModel.IChannelListener\<IInputChannel\>**  pour fournir **IInputChannel** canaux, vous pouvez utiliser pour recevoir les messages entrants à partir de l’adaptateur.  
   
 ### <a name="creating-messages-for-the-oracle-enterprise-business-solution-in-the-wcf-channel-model"></a>Création de Messages pour la Solution d’entreprise Oracle Enterprise dans le modèle de canal WCF  
  Dans WCF le **System.ServiceModel.Channels.Message** classe fournit une mémoire en représentation sous forme d’un message SOAP. Vous créez un **Message** instance en appelant la méthode statique **Message.Create** (méthode).  

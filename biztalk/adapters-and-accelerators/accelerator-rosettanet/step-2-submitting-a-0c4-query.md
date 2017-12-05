@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f1db38d804cc5ada05a1457596fb7c694595359d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 88c621b6891b816f72603202bd6f2214882eb4b5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-submitting-a-0c4-query"></a>Étape 2 : Envoi d’un 0C de requête 4
 Au cours de cette étape, vous allez préparer une demande et l'envoyer à l'aide du processus d'interface entre partenaires (PIP) pour une requête de test synchrone 0C4. RosettaNet définit ce processus PIP pour vérifier qu'un canal de communication synchrone fonctionne correctement entre deux organisations différentes. Étant donné que ce processus PIP a un modèle de communication synchrone, [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] n’envoie pas d’accusés de réception. Ce processus PIP suit le même modèle que les autres processus PIP double action synchrones, comme le processus PIP 2A9 (requête d'informations techniques sur un produit).  
@@ -37,7 +37,7 @@ Au cours de cette étape, vous allez préparer une demande et l'envoyer à l'aid
     |**ID d’Instance PIP**|Tapez **0C4_Test**. **Important :** pour éviter les erreurs d’ID de message en double, vous devez vous assurer que le **PIP** est unique pour chaque message que vous envoyez. Si vous exécutez le test 0C4 ultérieurement, vous devrez modifier ce champ.|  
     |**Catégorie de message**|Tapez **Action**.|  
   
-3.  Utilisez le bloc-notes ou un autre éditeur de texte, ouvrez le fichier 0C4_Request.xml dans le  *\<lecteur >*: \Program Files\Microsoft BizTalk 2009 Accelerator pour RosettaNet\SDK\LOBApplication\SampleInstances, dossier, puis Copiez et collez le contenu dans le **Service contenu** champ LOBWebApplication.  
+3.  Utilisez le bloc-notes ou un autre éditeur de texte, ouvrez le fichier 0C4_Request.xml dans le  *\<lecteur\>*: \Program Files\Microsoft BizTalk 2009 Accelerator pour RosettaNet\SDK\LOBApplication\SampleInstances, dossier, puis copiez et collez le contenu dans le **Service contenu** champ LOBWebApplication.  
   
 4.  Cliquez sur **Envoyer** pour envoyer la requête 0C4 à l'ordinateur Contoso.  
   
@@ -59,7 +59,7 @@ Au cours de cette étape, vous allez préparer une demande et l'envoyer à l'aid
   
 3.  Dans Microsoft SQL Server Management Studio, cliquez sur **nouvelle requête**.  
   
-4.  Dans le \<table > zone de texte, sélectionnez **BTARNDATA** dans la liste.  
+4.  Dans le \<table\> zone de texte, sélectionnez **BTARNDATA** dans la liste.  
   
 5.  Dans la fenêtre SQL, tapez l'instruction SQL suivante :  
   
@@ -89,4 +89,4 @@ Au cours de cette étape, vous allez préparer une demande et l'envoyer à l'aid
   
 ## <a name="see-also"></a>Voir aussi  
  [Étape 3 : Envoi d’une demande de 3A2](../../adapters-and-accelerators/accelerator-rosettanet/step-3-submitting-a-3a2-request.md)   
- [Flux de messages de BTARN](../../adapters-and-accelerators/accelerator-rosettanet/message-flow-in-btarn.md)
+ [Flux de messages BTARN](../../adapters-and-accelerators/accelerator-rosettanet/message-flow-in-btarn.md)

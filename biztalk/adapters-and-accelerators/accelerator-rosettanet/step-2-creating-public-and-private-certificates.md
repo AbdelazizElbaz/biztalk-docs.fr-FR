@@ -18,11 +18,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3d9653f1ec72e56b225142d2d6c9fdff24198e7a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7c26765b19c868dbb78d3924069b60161827312c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-creating-public-and-private-certificates"></a>Étape 2 : Création publiques et privées des certificats
 Dans cette étape, vous utilisez l’autorité de Certification créé dans [étape 1 : création d’une autorité de Certification &#91; RN3 &#93; ](../../adapters-and-accelerators/accelerator-rosettanet/step-1-creating-a-certification-authority.md) pour générer les certificats publics et privés qui utilisent des organisations Contoso et Fabrikam.  
@@ -123,7 +123,7 @@ Dans cette étape, vous utilisez l’autorité de Certification créé dans [ét
   
 15. Sur le **fichier à exporter** , cliquez sur **Parcourir**.  
   
-16. Dans le **enregistrer en tant que** boîte de dialogue Enregistrer le certificat en utilisant le chemin d’accès du fichier  *\<lecteur >*: \Certs\Fabrikam privé Encryption.pfx.  
+16. Dans le **enregistrer en tant que** boîte de dialogue Enregistrer le certificat en utilisant le chemin d’accès du fichier  *\<lecteur\>*: \Certs\Fabrikam privé Encryption.pfx.  
   
 17. Sur le **fichier à exporter** , cliquez sur **suivant**.  
   
@@ -149,7 +149,7 @@ Dans cette étape, vous utilisez l’autorité de Certification créé dans [ét
   
 6.  Sur le **fichier à exporter** , cliquez sur **Parcourir**.  
   
-7.  Dans la boîte de dialogue Enregistrer sous, entrez  **\<lecteur > : \Certs** pour **enregistrer dans**, **Encryption.cer Public de Fabrikam** comme **nom de fichier**, et  **\*.cer** pour **enregistrer en tant que type**, puis cliquez sur **enregistrer**.  
+7.  Dans la boîte de dialogue Enregistrer sous, entrez  **\<lecteur\>: \Certs** pour **enregistrer dans**, **Encryption.cer Public de Fabrikam** comme **nom de fichier** , et  **\*.cer** pour **enregistrer en tant que type**, puis cliquez sur **enregistrer**.  
   
 8.  Sur le **fichier à exporter** , cliquez sur **suivant**.  
   
@@ -162,4 +162,4 @@ Dans cette étape, vous utilisez l’autorité de Certification créé dans [ét
 12. Répétez les étapes 1 à 9 pour les certificats de Signature de Contoso et le chiffrement Contoso en utilisant les noms de fichiers Signature.cer publics de Contoso et Encryption.cer publics de Contoso, respectivement.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Étape 3 : Importation publiques et privées des certificats](../../adapters-and-accelerators/accelerator-rosettanet/step-3-importing-public-and-private-certificates.md)
+ [Étape 3 : Importation de certificats publics et privés](../../adapters-and-accelerators/accelerator-rosettanet/step-3-importing-public-and-private-certificates.md)

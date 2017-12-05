@@ -12,11 +12,11 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 73bd5013cd2a09d240fa58b7cf5283c8d1903c69
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 20693f00d536414b44a7577277cf9acd3e5af530
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-the-bam-portal-to-work-on-an-nlb-cluster"></a>Configuration du portail BAM de sorte qu'il fonctionne dans un cluster NLB
 Le portail BAM peut être configuré pour fonctionner dans un cluster d'équilibrage de charge réseau.  
@@ -145,7 +145,7 @@ Le portail BAM peut être configuré pour fonctionner dans un cluster d'équilib
     > [!NOTE]
     >  L’objectif de cette commande doit accorder le Pool d’applications BAM utilisateur un accès en lecture à la clé de Registre SOFTWAREMicrosoftBizTalk Server3.0BAMWebServicesidentity. Cet exemple utilise le pool « Network Service » puisqu'il s'agit du pool utilisé par défaut par IIS. Si vous n'employez pas les paramètres IIS par défaut, vous devez vous servir de l'utilisateur du pool d'applications que votre déploiement utilise.  
   
-16. Tapez la commande suivante à l’invite de commandes : subinacl.exe /keyreg « HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\BizTalk Server\3. 0 » « / accorder =\<BAM WebService Account > »  
+16. Tapez la commande suivante à l’invite de commandes : subinacl.exe /keyreg « HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\BizTalk Server\3. 0 » « / accorder =\<BAM WebService Account\>»  
   
     > [!NOTE]
     >  L'objet de cette commande est d'accorder à l'utilisateur du service Web de gestion BAM un accès en lecture de la clé de Registre SOFTWARE\Microsoft\BizTalk Server\3.0\BAM\WebServices\Identity.  
@@ -154,7 +154,7 @@ Le portail BAM peut être configuré pour fonctionner dans un cluster d'équilib
   
 18. Utilisez l'outil d'administration de la console Gestion de l'ordinateur pour ajouter l'utilisateur du service Web de gestion BAM et le compte de l'utilisateur du pool d'applications BAM au groupe Internet Information Services Worker Process (IIS_WPG) et au groupe SharePoint Services (STS_WPG).  
   
-19. Définir les autorisations sur les dossiers temporaires ASP.NET pour le pool d’applications et les utilisateurs du service Web : c:\windows\system32\cacls « %windir%\Microsoft.NET\Framework\ v2.0. \<numéro de version > \Temporary ASP.NET Files » /T /E /G \<BAM WebService Account > : F  
+19. Définir les autorisations sur les dossiers temporaires ASP.NET pour le pool d’applications et les utilisateurs du service Web : c:\windows\system32\cacls « %windir%\Microsoft.NET\Framework\ v2.0. \<numéro de version\>\Temporary ASP.NET Files » /T /E /G \<BAM WebService Account\>: F  
   
     > [!NOTE]
     >  Vous devez accorder l'accès à la fois au compte d'utilisateur de service Web de gestion BAM et au compte d'utilisateur du pool d'applications BAM.  

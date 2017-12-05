@@ -15,11 +15,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 195b63948f79ed5403c130048aae86f7e7422c96
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5627731bd84a761ffb62b95646876c768e3298ea
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="deploying-bre-rules"></a>MOTEUR des règles de déploiement
 Vous devez déployer les règles BRE utilisées par [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] orchestrations pour traiter les messages SWIFT.  
@@ -28,15 +28,15 @@ Vous devez déployer les règles BRE utilisées par [!INCLUDE[btaA4SWIFT2.3abbre
   
  Publier les vocabulaires suivantes :  
   
--   Vocabulaires A4SWIFT_CodeLists.XML et A4SWIFT_Functions.xml. Ceux-ci sont situés dans  *\<lecteur >*: \Program Files\Microsoft BizTalk Accelerator pour SWIFT \<version > Message Pack\SWIFT Messages\A4SWIFT-SRG\<version > \Base Policies\ Vocabulaire. Publier et de les déployer à l’aide de l’utilitaire de déploiement du moteur BRE.  
+-   Vocabulaires A4SWIFT_CodeLists.XML et A4SWIFT_Functions.xml. Ceux-ci sont situés dans  *\<lecteur\>*: \Program Files\Microsoft BizTalk Accelerator pour SWIFT \<version\> Message Pack\SWIFT Messages\A4SWIFT-SRG\< version\>\Base Policies\Vocabulary. Publier et de les déployer à l’aide de l’utilitaire de déploiement du moteur BRE.  
   
  Publier et déployer des stratégies suivantes :  
   
--   Les stratégies de base SWIFT pour schéma de message, y compris SWIFT_Reference_Policy.xml, SWIFT_PartyIdentifier_Policy.xml et des stratégies de règle de réseau (SWIFT_NetworkRulexxx_Policy.xml) pour déployées schémas. Ceux-ci sont situés dans \<lecteur > : \Program Files\ Microsoft BizTalk Accelerator pour SWIFT \<version > Message Pack\SWIFT Messages\A4SWIFT-SRG\<version > \Base stratégies. Publier et de les déployer à l’aide de l’utilitaire de déploiement du moteur BRE.  
+-   Les stratégies de base SWIFT pour schéma de message, y compris SWIFT_Reference_Policy.xml, SWIFT_PartyIdentifier_Policy.xml et des stratégies de règle de réseau (SWIFT_NetworkRulexxx_Policy.xml) pour déployées schémas. Ceux-ci sont situés dans \<lecteur\>: \Program Files\ Microsoft BizTalk Accelerator pour SWIFT \<version\> Message Pack\SWIFT Messages\A4SWIFT-SRG\<version\>\Base stratégies. Publier et de les déployer à l’aide de l’utilitaire de déploiement du moteur BRE.  
   
--   Principale et la validation des stratégies associées à déploiement des schémas de message (MTxxx_Master_Policy.xml et MTxxx_Validation_Policy.xml). Ceux-ci sont situés dans \<lecteur > : \Program Files\ Microsoft BizTalk Accelerator pour SWIFT \<version > Message Pack\SWIFT Messages\A4SWIFT-SRG\<version > \Category 1\MTxxx. Publier et de les déployer à l’aide de l’utilitaire de déploiement du moteur BRE.  
+-   Principale et la validation des stratégies associées à déploiement des schémas de message (MTxxx_Master_Policy.xml et MTxxx_Validation_Policy.xml). Ceux-ci sont situés dans \<lecteur\>: \Program Files\ Microsoft BizTalk Accelerator pour SWIFT \<version\> Message Pack\SWIFT Messages\A4SWIFT-SRG\<version\>\Category 1\ MTxxx. Publier et de les déployer à l’aide de l’utilitaire de déploiement du moteur BRE.  
   
--   Principale et la validation de stratégies associées à validation BIC (BIC_Master_Policy.xml et BIC_Validation_Policy.xml), si la validation de BIC est requise. Ceux-ci sont situés dans \<lecteur > : \Program Files\ Microsoft BizTalk Accelerator pour SWIFT \<version > Message Pack\SWIFT Messages\A4SWIFT-SRG\<version > \Base stratégies. Avant la publication et le déploiement de ces stratégies, vous devez personnaliser BIC_Master_Policy.xml avec les noms de SQL Server, le nom de la base de données BIC et intégré de valeur de sécurité. Pour plus d’informations, consultez [l’activation de Validation d’identificateur de Codes de la banque](../../adapters-and-accelerators/accelerator-swift/enabling-validation-of-bank-identifier-codes.md). Publier et de les déployer à l’aide de l’Assistant Déploiement du moteur de règles.  
+-   Principale et la validation de stratégies associées à validation BIC (BIC_Master_Policy.xml et BIC_Validation_Policy.xml), si la validation de BIC est requise. Ceux-ci sont situés dans \<lecteur\>: \Program Files\ Microsoft BizTalk Accelerator pour SWIFT \<version\> Message Pack\SWIFT Messages\A4SWIFT-SRG\<version\>\Base stratégies. Avant la publication et le déploiement de ces stratégies, vous devez personnaliser BIC_Master_Policy.xml avec les noms de SQL Server, le nom de la base de données BIC et intégré de valeur de sécurité. Pour plus d’informations, consultez [l’activation de Validation d’identificateur de Codes de la banque](../../adapters-and-accelerators/accelerator-swift/enabling-validation-of-bank-identifier-codes.md). Publier et de les déployer à l’aide de l’Assistant Déploiement du moteur de règles.  
   
 ### <a name="to-deploy-bre-rules"></a>Pour déployer des règles BRE  
   
@@ -50,7 +50,7 @@ Vous devez déployer les règles BRE utilisées par [!INCLUDE[btaA4SWIFT2.3abbre
   
 2.  Personnaliser BIC_Master_Policy.xml avec les noms de SQL server, la valeur de sécurité intégrée et nom de base de données BIC. Pour plus d’informations, consultez [l’activation de Validation d’identificateur de Codes de la banque](../../adapters-and-accelerators/accelerator-swift/enabling-validation-of-bank-identifier-codes.md).  
   
-3.  Exécuter l’Assistant de déploiement du moteur de règles pour publier et déployer BIC_Master_Policy.xml et BIC_Validation_Policy.xml (dans \<lecteur > : \Program Files\ Microsoft BizTalk Accelerator pour SWIFT \<version > Pack\SWIFT de Message Messages\A4SWIFT-srg\<version > \Base stratégies). Pour plus d’informations, consultez « Déploiement BRE règles un à un temps » ci-dessous.  
+3.  Exécuter l’Assistant de déploiement du moteur de règles pour publier et déployer BIC_Master_Policy.xml et BIC_Validation_Policy.xml (dans \<lecteur\>: \Program Files\ Microsoft BizTalk Accelerator pour SWIFT \<version\> Message Pack\SWIFT Messages\A4SWIFT-SRG\<version\>\Base stratégies). Pour plus d’informations, consultez « Déploiement BRE règles un à un temps » ci-dessous.  
   
 ## <a name="tools-for-deploying-the-policies"></a>Outils pour déployer des stratégies  
  Il est le moyen le plus simple pour publier des vocabulaires et déployer les stratégies en utilisant l’utilitaire de déploiement du moteur de règles d’entreprise (BRE) dans le Kit de développement logiciel (SDK) A4SWIFT. Vous pouvez également le faire à l’aide de le [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Assistant Déploiement du moteur de règles qui effectue la même vocabulaire d’une tâche ou d’une stratégie à la fois.  
@@ -79,7 +79,7 @@ Vous devez déployer les règles BRE utilisées par [!INCLUDE[btaA4SWIFT2.3abbre
   
 5.  Fermez la boîte de dialogue Utilitaire de déploiement du moteur BRE.  
   
-6.  Ouvrez [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorer. Accédez à \< *lecteur*> : \Documents and Settings\All Users\Application données et vérifiez que le fichier journal BREDeploymentLog.txt apparaît dans ce lecteur.  
+6.  Ouvrez [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorer. Accédez à \< *lecteur*\>: \Documents and Settings\All Users\Application données et vérifiez que le fichier journal BREDeploymentLog.txt apparaît dans ce lecteur.  
   
 7.  Redémarrez le Service de mise à jour de moteur de règle. En cliquant sur **Démarrer**, puis sur **exécuter**, saisie **services.msc**, puis en cliquant sur **OK**. Dans le **Services (Local)** fenêtre, avec le bouton droit **Service de mise à jour du moteur de règles**, puis cliquez sur **redémarrer**.  
   
@@ -100,11 +100,11 @@ Vous devez déployer les règles BRE utilisées par [!INCLUDE[btaA4SWIFT2.3abbre
   
 6.  Sur la stratégie d’importation à partir de la page de fichier, dans le **Regarder dans** liste déroulante, accédez à un des dossiers suivants, en fonction de la stratégie ou de vocabulaire :  
   
-    -   \<lecteur > : \Program Files\ Microsoft BizTalk Accelerator pour SWIFT \<version > Message Pack\SWIFT Messages\A4SWIFT-SRG\<version > \Base Policies\Vocabulary pour A4SWIFT_CodeLists.xml et A4SWIFT_Functions.xml  
+    -   \<lecteur\>: \Program Files\ Microsoft BizTalk Accelerator pour SWIFT \<version\> Message Pack\SWIFT Messages\A4SWIFT-SRG\<version\>\Base Policies\Vocabulary pour A4SWIFT_ CodeLists.xml et A4SWIFT_Functions.xml  
   
-    -   \<lecteur > : \Program Files\ Microsoft BizTalk Accelerator pour SWIFT \<version > Message Pack\SWIFT Messages\A4SWIFT-SRG\<version > \Base stratégies pour SWIFT_Reference_Policy.xml, SWIFT_PartyIdentifier_Policy.xml, stratégies de règle de réseau, BIC_Master_Policy.xml et BIC_Validation_Policy.xml  
+    -   \<lecteur\>: \Program Files\ Microsoft BizTalk Accelerator pour SWIFT \<version\> Message Pack\SWIFT Messages\A4SWIFT-SRG\<version\>\Base SWIFT_Reference_Policy.xml, des stratégies SWIFT_PartyIdentifier_Policy.XML, les stratégies de règles de réseau, BIC_Master_Policy.xml et BIC_Validation_Policy.xml  
   
-    -   \<lecteur > : \Program Files\ Microsoft BizTalk Accelerator pour SWIFT \<version > Message Pack\SWIFT Messages\A4SWIFT-SRG\<version > \Category 1\MTxxx pour les stratégies de master et de validation associé au message déployé schémas  
+    -   \<lecteur\>: \Program Files\ Microsoft BizTalk Accelerator pour SWIFT \<version\> Message Pack\SWIFT Messages\A4SWIFT-SRG\<version\>\Category 1\MTxxx pour le masque et la validation stratégies associées aux schémas de message déployé  
   
 7.  Sélectionnez la stratégie que vous souhaitez déployer, puis cliquez sur **ouvrir**.  
   

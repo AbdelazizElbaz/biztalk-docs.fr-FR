@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 790530d79b06d399e032096d64d47e65bb1dd7a4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c2ffc9e84e8c31ed1e1feb4c768498e817ad474c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="partnermanagement-biztalk-server-sample"></a>PartnerManagement (exemple BizTalk Server)
 L’exemple PartnerManagement illustre comment gérer des parties dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environnement à l’aide de la **ExplorerOM** objets d’administration.  
@@ -41,7 +41,7 @@ L’exemple PartnerManagement illustre comment gérer des parties dans le [!INCL
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
  L'exemple se trouve dans l'emplacement SDK suivant :  
   
- \<*Exemples de chemin d’accès*> \Admin\ExplorerOM\PartnerManagement  
+ \<*Exemples de chemin d’accès*\>\Admin\ExplorerOM\PartnerManagement  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -51,7 +51,7 @@ L’exemple PartnerManagement illustre comment gérer des parties dans le [!INCL
 |PartnerManagement.sln et PartnerManagement.csproj|Fichiers de projet et de solution de l'exemple.|  
   
 ## <a name="building-and-running-this-sample"></a>Création et exécution de l'exemple  
- Avant de créer l'exemple, vous devez le personnaliser pour le serveur BizTalk en apportant quatre modifications au code. Cette opération est nécessaire car l'exemple utilise des noms arbitraires pour les ports d'envoi associés au tiers et un nom de rôle arbitraire pour l'inscription. C'est pourquoi, vous devez fournir des noms valides pour l'exemple. Pour illustrer ce, cette rubrique décrit tout d’abord générer l’exemple PartyResolution à partir du répertoire suivant : \< *exemples de chemin*> \Orchestrations\PartyResolution. Cette solution permet de s'assurer qu'un nom de rôle et des noms de ports d'envoi valides figurent sur le serveur BizTalk pour illustrer les procédures de l'exemple.  
+ Avant de créer l'exemple, vous devez le personnaliser pour le serveur BizTalk en apportant quatre modifications au code. Cette opération est nécessaire car l'exemple utilise des noms arbitraires pour les ports d'envoi associés au tiers et un nom de rôle arbitraire pour l'inscription. C'est pourquoi, vous devez fournir des noms valides pour l'exemple. Pour illustrer ce, cette rubrique décrit tout d’abord générer l’exemple PartyResolution à partir du répertoire suivant : \< *exemples de chemin*\>\Orchestrations\PartyResolution. Cette solution permet de s'assurer qu'un nom de rôle et des noms de ports d'envoi valides figurent sur le serveur BizTalk pour illustrer les procédures de l'exemple.  
   
 #### <a name="to-build-this-sample"></a>Pour créer l'exemple  
   
@@ -132,7 +132,7 @@ L’exemple PartnerManagement illustre comment gérer des parties dans le [!INCL
   
 1.  Ouvrez une fenêtre de commande, puis accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \Admin\ExplorerOM\PartnerManagement\bin\Debug  
+     \<*Exemples de chemin d’accès*\>\Admin\ExplorerOM\PartnerManagement\bin\Debug  
   
 2.  Exécutez le fichier PartnerManagement.exe.  
   

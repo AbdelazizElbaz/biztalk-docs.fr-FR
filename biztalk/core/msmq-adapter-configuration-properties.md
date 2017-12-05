@@ -19,11 +19,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2460f359e0a9a3954d9417fdf441e9bd01de58b0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 060d6fbfb75c97e4fa4bc6bbfc3f160972c437ff
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="msmq-adapter-configuration-properties"></a>Propriétés de configuration de l'adaptateur MSMQ
 Le tableau suivant répertorie les propriétés de configuration que vous pouvez définir pour l'emplacement de réception d'un adaptateur MSMQ :  
@@ -75,4 +75,4 @@ Le tableau suivant répertorie les propriétés de configuration que vous pouvez
 ```  
   
 > [!NOTE]
->  Lorsque vous spécifiez les données de configuration TransportTypeData pour un adaptateur qui est construit à l’aide de l’infrastructure d’adaptateurs, les paires nom/valeur utilisées doivent toutes être stockées dans le \<AdapterConfig > élément. Étant donné que le \<AdapterConfig > élément spécifie le VT_BSTR (vt = « 8 ») type de données, puis le \< > caractères dans les données doivent être échappés.
+>  Lorsque vous spécifiez les données de configuration TransportTypeData pour un adaptateur qui est construit à l’aide de l’infrastructure d’adaptateurs, les paires nom/valeur utilisées doivent toutes être stockées dans le \<AdapterConfig\> élément. Étant donné que le \<AdapterConfig\> élément spécifie le VT_BSTR (vt = « 8 ») type de données, puis le \< \> caractères dans les données doivent être échappés.

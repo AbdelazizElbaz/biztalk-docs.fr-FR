@@ -15,11 +15,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d65e2860e2140a16749ad434ead77bf8a4f49eb2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e5f8ed36b4a1ae8553e8df488e8fd5a606c0eabd
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-create-common-schemas-for-v231"></a>Étape 2 : Créer des schémas courants pour V2.3.1
 Les schémas V2.3.1 sont communément référencés schémas, ce qui vous permet de valider l’instance de message.  
@@ -47,9 +47,9 @@ Les schémas V2.3.1 sont communément référencés schémas, ce qui vous permet
   
 9. Sélectionnez le **signer l’assembly** case à cocher.  
   
-10. Dans **choisir un fichier de clé de nom fort**, sélectionnez  **\<Parcourir... >** .  
+10. Dans **choisir un fichier de clé de nom fort**, sélectionnez  **\<Parcourir... \>** .  
   
-11. Accédez à \<lecteur > : \Batching Tutorial, sélectionnez **key.snk**, puis cliquez sur **ouvrir**.  
+11. Accédez à \<lecteur\>: \Batching Tutorial, sélectionnez **key.snk**, puis cliquez sur **ouvrir**.  
   
 12. Dans l’Explorateur de solutions, cliquez sur **BTAHL7V231Common projet**, puis cliquez sur **déployer**. Assurez-vous de qu'un message de réussite s’affiche dans la fenêtre Sortie.  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d47932ffd9f7843d0b3d95073ca54bce987b8f75
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 92f13d938b0e0523ce6e20d6021bbca24595782f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshooting-bam"></a>Résolution des problèmes d’analyse BAM
 Cette rubrique fournit des informations permettant de faciliter la résolution des problèmes que vous pouvez rencontrer lors de l'utilisation de l'analyse BAM (Business Activity Monitoring).  
@@ -24,7 +24,7 @@ Cette rubrique fournit des informations permettant de faciliter la résolution d
 ## <a name="bam-deployment-failed"></a>Échec du déploiement de l'analyse BAM  
  Si vous tentez de déployer une définition BAM qui inclut une agrégation RTA lorsque SQL Server Analysis Services n'est pas disponible, la commande Bm.exe affiche le message suivant :  
   
- Erreur : Échec du déploiement de l’analyse BAM. Impossible d'établir une connexion. Vérifiez que le serveur fonctionne. Aucune connexion n’a pu être établie, car l’ordinateur cible l’a activement refusée  *\<adresse IP >*.  
+ Erreur : Échec du déploiement de l’analyse BAM. Impossible d'établir une connexion. Vérifiez que le serveur fonctionne. Aucune connexion n’a pu être établie, car l’ordinateur cible l’a activement refusée  *\<adresse IP\>*.  
   
  Cette erreur se produit car SQL Server Analysis Services doit avoir été installé et configuré, et doit être en cours d'exécution afin de déployer une définition BAM qui inclut une valeur RTA.  
   
@@ -67,7 +67,7 @@ Cette rubrique fournit des informations permettant de faciliter la résolution d
   
 2.  Dans le **contrôle de compte d’utilisateur** boîte de dialogue, cliquez sur **continuer**.  
   
-3.  Dans la barre d’adresses Internet Explorer, tapez `http://<server>/BAM`, où  *\<server >* est le nom de l’ordinateur qui exécute le portail BAM.  
+3.  Dans la barre d’adresses Internet Explorer, tapez `http://<server>/BAM`, où  *\<server\>*  est le nom de l’ordinateur qui exécute le portail BAM.  
   
 ## <a name="bam-portal-does-not-work-if-invalid-users-are-granted-permissions"></a>Le portail BAM ne fonctionne pas si des autorisations sont accordées à des utilisateurs non valides  
  Si un utilisateur Active Directory disposant des autorisations Vue BAM est retiré d'AD, le portail BAM ne se charge pas correctement pour tous les utilisateurs (à l'exception des DBO).  

@@ -15,18 +15,18 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a788b83614c809505d632848a5a789070948fed5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 60e6c9b3a6fadfcc0407c1b4fa206d0f966fa7dd
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configuring-batching-acknowledgments"></a>Configuration des accusés de réception de traitement par lot
 Vous utilisez [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] Explorer de Configuration pour spécifier les propriétés de l’accusé de réception pour les accusés de réception entrants et générés.  
   
 ### <a name="to-run-btahl7-configuration-explorer"></a>Pour exécuter l’Explorateur de Configuration de BTAHL7  
   
--   Cliquez sur **Démarrer**, pointez sur **programmes**, pointez sur **Microsoft BizTalk \<version > Accelerator pour HL7**, puis cliquez sur **BTAHL7 L’Explorateur de configuration**.  
+-   Cliquez sur **Démarrer**, pointez sur **programmes**, pointez sur **Microsoft BizTalk \<version\> Accelerator pour HL7**, puis cliquez sur  **BTAHL7 L’Explorateur de Configuration**.  
   
 ### <a name="to-configure-message-batching-acknowledgments"></a>Pour configurer le traitement par lot des accusés de réception de message  
   
@@ -51,4 +51,4 @@ Vous utilisez [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentv
     >  Accusés de réception générés pour un lot de messages avec la fragmentation mises hors tension contiendra MSH12.1 avec la valeur 2.4. Vous pouvez modifier manuellement le numéro de version en appliquant un mappage dans le pipeline d’envoi. Pour plus d’informations, consultez [création et traiter les accusés de réception](../../adapters-and-accelerators/accelerator-hl7/creating-and-processing-acknowledgments.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Configurer le traitement par lot](../../adapters-and-accelerators/accelerator-hl7/configuring-batching.md)
+ [Configuration du traitement par lot](../../adapters-and-accelerators/accelerator-hl7/configuring-batching.md)

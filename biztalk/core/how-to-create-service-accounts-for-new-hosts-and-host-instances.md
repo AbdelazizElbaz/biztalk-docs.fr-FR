@@ -22,11 +22,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3626f4349fa1e2cc9f739cf0375ab73e3adc7ae0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5d4887d78466340b12b95ed43d27523955ab0689
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-create-service-accounts-for-new-hosts-and-host-instances"></a>Création des comptes de service pour les nouveaux hôtes et instances d'hôte
 Le Gestionnaire de configuration configure les groupes Windows et les comptes d'utilisateur nécessaires lors de l'installation et de la configuration de BizTalk Server sur un seul ordinateur.  
@@ -49,13 +49,13 @@ Le Gestionnaire de configuration configure les groupes Windows et les comptes d'
 4.  Utilisez le groupe Windows et le compte de service lors de la création de l'hôte et des instances d'hôte.  
   
     > [!NOTE]
-    >  Ne spécifiez pas \< *nom de l’ordinateur*> \ en tant que le préfixe dans une configuration d’ordinateur unique avec des groupes locaux.  
+    >  Ne spécifiez pas \< *nom de l’ordinateur*\>\ en tant que le préfixe dans une configuration d’ordinateur unique avec des groupes locaux.  
   
     > [!NOTE]
-    >  Si vous utilisez un groupe de domaine, vous devez spécifier \< *nom de domaine NetBIOS*> \ en tant que le préfixe du nom d’hôte groupe Windows. Par exemple, CONTOSO\btssvc.  
+    >  Si vous utilisez un groupe de domaine, vous devez spécifier \< *nom de domaine NetBIOS*\>\ en tant que le préfixe du nom d’hôte groupe Windows. Par exemple, CONTOSO\btssvc.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Gestion des hôtes et des comptes de Service](../core/managing-hosts-and-service-accounts.md)   
  [Gestion de la sécurité de BizTalk Server](../core/managing-biztalk-server-security.md)   
  [Comment gérer le groupe d’administrateurs BizTalk Server](../core/how-to-manage-the-biztalk-server-administrators-group.md)   
- [Meilleures pratiques pour la gestion des comptes d’utilisateurs et groupes Windows](../core/best-practices-for-managing-windows-groups-and-user-accounts.md)
+ [Bonnes pratiques pour la gestion des groupes et comptes d’utilisateurs Windows](../core/best-practices-for-managing-windows-groups-and-user-accounts.md)

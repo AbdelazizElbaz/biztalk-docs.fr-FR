@@ -21,11 +21,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4d05d9d0d98a82c2ded297a6cd8bee9d7bcc9a6e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1621973fed0c7a87538e3ed18161f05c4c9cf9e6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="sso-affiliate-applications"></a>Applications associées SSO
 Les applications associées à l'authentification unique de l'entreprise (SSO) constituent des entités logiques représentant un système ou un sous-système tel qu'un hôte, un système principal ou une application sectorielle à laquelle vous êtes connecté via l'authentification unique de l'entreprise. Une application associée peut représenter un système principal, tel qu'un macroordinateur (grand système) ou un ordinateur fonctionnant sous UNIX. Elle peut également constituer une application SAP ou une sous-classe du système, telle que les sous-systèmes « Avantages » ou « Bulletin de paie ».  
@@ -101,7 +101,7 @@ Les applications associées à l'authentification unique de l'entreprise (SSO) c
   
 |Champs de l'application| Description| Description|  
 |------------------------|-----------------|-----------------|  
-|Champ [0]|\<*informations d’identification*> : / Unmasked masqués|Détermine le type d'informations d'identification (ID utilisateur, mot de passe, carte à puce) que les utilisateurs finaux doivent fournir pour se connecter à l'application associée, et si ces informations sont masquées (caractères saisis par l'utilisateur non affichés à l'écran) ou non.<br /><br /> Vous pouvez entrer autant de champs qu'il y a d'informations d'identification pour cette application associée. Cependant, le premier champ est obligatoirement l'ID utilisateur.<br /><br /> Une fois l'application créée, cette propriété ne peut plus être modifiée.|  
+|Champ [0]|\<*informations d’identification*\>: / Unmasked masqués|Détermine le type d'informations d'identification (ID utilisateur, mot de passe, carte à puce) que les utilisateurs finaux doivent fournir pour se connecter à l'application associée, et si ces informations sont masquées (caractères saisis par l'utilisateur non affichés à l'écran) ou non.<br /><br /> Vous pouvez entrer autant de champs qu'il y a d'informations d'identification pour cette application associée. Cependant, le premier champ est obligatoirement l'ID utilisateur.<br /><br /> Une fois l'application créée, cette propriété ne peut plus être modifiée.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Gestion des Applications associées](../core/managing-affiliate-applications.md)   

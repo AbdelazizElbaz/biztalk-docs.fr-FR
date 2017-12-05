@@ -20,11 +20,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 28d11e5e174808ca7718d5fef98b3ad079cffc18
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 09bad0bf41f5b509f9a64e9484cac84f66a84e4b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="correlation-sets"></a>Ensembles de corrélations
 Vous pouvez réaliser une sorte de corrélation de messages avec des instances d'orchestration en définissant des ensembles de corrélations. Un ensemble de corrélations est un ensemble de propriétés *avec des valeurs spécifiques*. Il ne s'agit pas d'un type de corrélation, qui correspond à une simple liste de propriétés. Si un message entrant ne dispose pas de l'ensemble de ces propriétés, avec des valeurs correspondantes pour chacune d'elles, la corrélation échoue et l'instance d'orchestration ne reçoit pas le message.  
@@ -35,17 +35,17 @@ Vous pouvez réaliser une sorte de corrélation de messages avec des instances d
   
 |Propriété d'un type de corrélation|Représentation XML possible|  
 |-------------------------------|---------------------------------|  
-|Social Security number|\<SSN >\</SSN >|  
-|Date of Birth|\<DOB >\</DOB >|  
-|Gender|\<Sexe > \< /sexe >|  
+|Social Security number|\<SSN\>\</SSN\>|  
+|Date of Birth|\<DOB\>\</DOB\>|  
+|Gender|\<Sexe\> \< /sexe\>|  
   
  Un ensemble de corrélations dérivé de ce type de corrélation pourrait se composer des propriétés et valeurs suivantes :  
   
 |Propriété/valeur de l'ensemble de corrélations|Représentation XML possible|  
 |-------------------------------------|---------------------------------|  
-|Social Security number = 222112222|\<SSN > 222112222\</SSN >|  
-|Date of Birth = “1/1/1995”|\<DOB > « 1/1/1995 »\</DOB >|  
-|Gender = Male|\<Sexe > M \< /sexe >|  
+|Social Security number = 222112222|\<SSN\>222112222\</SSN\>|  
+|Date of Birth = “1/1/1995”|\<DOB\>« 1/1/1995 »\</DOB\>|  
+|Gender = Male|\<Sexe\>M \< /sexe\>|  
   
 > [!NOTE]
 >  Chaque ensemble de corrélations prend en charge un maximum de trois paramètres.  

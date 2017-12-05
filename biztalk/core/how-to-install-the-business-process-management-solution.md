@@ -16,11 +16,11 @@ caps.latest.revision: "61"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 22b16e8c33dfdbf44b000cc9a048e86a5869d616
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 706bc1cec8afc796fa44e022243782a207fe1777
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-install-the-business-process-management-solution"></a>Installation de la solution de gestion des processus d'entreprise
 La procédure suivante décrit la préparation de votre ordinateur pour l'installation de la solution de gestion des processus d'entreprise, puis l'installation de la solution sur votre ordinateur.  
@@ -31,7 +31,7 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
   
 -   [Configurez l’ordinateur pour l’installation de la Solution gestion des processus d’entreprise](#step3)  
   
--   [Installer la Solution gestion des processus d’entreprise](#step5)  
+-   [Installer la solution de gestion des processus d’entreprise](#step5)  
   
 > [!NOTE]
 >  Vous devez exécuter des fichiers de commandes pour déployer la solution. Il est recommandé de rediriger la sortie des fichiers de commandes vers un fichier texte pour vérifier l'exécution correcte du script.  
@@ -262,8 +262,8 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
         |Nom de la propriété|Valeur|  
         |-------------------|-----------|  
         |**Server**|`localhost`|  
-        |**Nom d'utilisateur**|\<*Nom de compte de service BizTalk*>|  
-        |**Mot de passe**|\<*Mot de passe du compte de service BizTalk*>|  
+        |**Nom d'utilisateur**|\<*Nom de compte de service BizTalk*\>|  
+        |**Mot de passe**|\<*Mot de passe du compte de service BizTalk*\>|  
   
 6.  Exécutez la solution de gestion des processus d'entreprise. Pour plus d’informations sur l’exécution de la solution, consultez [l’exécution de la Solution de gestion des processus métier](../core/how-to-run-the-business-process-management-solution.md).  
   
@@ -272,4 +272,4 @@ La procédure suivante décrit la préparation de votre ordinateur pour l'instal
   
 ## <a name="see-also"></a>Voir aussi  
  [Avant d’installer la Solution gestion des processus d’entreprise](../core/before-installing-the-business-process-management-solution.md)   
- [Programme d’installation de développeur Machine pour la Solution gestion des processus d’entreprise](../core/developer-machine-setup-for-the-business-process-management-solution.md)
+ [Configuration de l’ordinateur de développement pour la solution de gestion des processus d’entreprise](../core/developer-machine-setup-for-the-business-process-management-solution.md)

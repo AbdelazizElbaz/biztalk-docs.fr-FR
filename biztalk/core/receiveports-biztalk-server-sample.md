@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cb14221ba11fe514ab076dd6bad8cc0aeb5b929e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3e34fcb08776d6be2c98e7c0e71d754caf9bdbb6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="receiveports-biztalk-server-sample"></a>ReceivePorts (exemple BizTalk Server)
 L’exemple ReceivePorts illustre comment créer un nouveau port de réception à l’aide de la **ExplorerOM** classes d’administration.  
@@ -41,7 +41,7 @@ L’exemple ReceivePorts illustre comment créer un nouveau port de réception �
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
  L'exemple se trouve dans l'emplacement SDK suivant :  
   
- \<*Exemples de chemin d’accès*> \Admin\ExplorerOM\ReceivePorts  
+ \<*Exemples de chemin d’accès*\>\Admin\ExplorerOM\ReceivePorts  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -62,7 +62,7 @@ L’exemple ReceivePorts illustre comment créer un nouveau port de réception �
   
 1.  Ouvrez une fenêtre de commande, puis accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \Admin\ExplorerOM\ReceivePorts\bin\Debug  
+     \<*Exemples de chemin d’accès*\>\Admin\ExplorerOM\ReceivePorts\bin\Debug  
   
 2.  Exécutez le fichier ReceivePorts.exe. Le nouveau port de réception doit avoir été créé et affiché dans l'énumération de port. Le port de réception est immédiatement supprimé après l'énumération.  
   

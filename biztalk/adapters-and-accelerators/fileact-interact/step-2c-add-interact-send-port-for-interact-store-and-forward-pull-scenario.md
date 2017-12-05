@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e2fe383d80c467376852067026a7c5a4fe4640ba
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fb46943b20676dbe98f79db8760043bb51606c56
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2c-add-an-interact-send-port-for-the-interact-store-and-forward-pull-scenario"></a>Étape 2c : ajouter un Port d’envoi interagissent pour le magasin d’interagir et le scénario de transfert (Pull)
 Avant de commencer cette étape, vous devez effectuer [étape 2 b : ajouter des Ports d’envoi FILE pour capturer le Message Sw:HandleRequest pour le magasin d’interagir et le scénario de (Pull) vers l’avant](../../adapters-and-accelerators/fileact-interact/step-2b-add-file-send-ports-to-get-sw-handlerequest-message-for-interact.md).  
@@ -41,11 +41,11 @@ Avant de commencer cette étape, vous devez effectuer [étape 2 b : ajouter des
     |**Nom d'utilisateur**|Définissez le nom d’utilisateur pour la connectivité des trous.|  
     |**Format de message**|**InteractMessage**|  
     |**Indicateur de non répudiation**|**FALSE**|  
-    |**Type de demande**|Tapez la commande appropriée \<RequestType > chaîne, en fonction de votre configuration avec SWIFT.|  
+    |**Type de demande**|Tapez la commande appropriée \<RequestType\> chaîne, en fonction de votre configuration avec SWIFT.|  
     |**ResponseCrypto**|**FALSE**|  
-    |**Demandeur**|Tapez la commande appropriée \<RequestorDN > chaîne, en fonction de votre configuration avec SWIFT.|  
-    |**Répondeur**|Tapez la commande appropriée \<ResponderDN > chaîne, en fonction de votre configuration avec SWIFT.|  
-    |**Nom du service**|Tapez la commande appropriée \<nom service >, en fonction de votre configuration avec SWIFT.|  
+    |**Demandeur**|Tapez la commande appropriée \<RequestorDN\> chaîne, en fonction de votre configuration avec SWIFT.|  
+    |**Répondeur**|Tapez la commande appropriée \<ResponderDN\> chaîne, en fonction de votre configuration avec SWIFT.|  
+    |**Nom du service**|Tapez la commande appropriée \<nom du service\>, en fonction de votre configuration avec SWIFT.|  
     |**Accusé de réception**|Dans la liste déroulante, sélectionnez **FALSE**.|  
     |**File d’attente de notification**|Tapez le nom de la file d’attente appropriée, en fonction de votre configuration avec SWIFT.|  
   
@@ -75,4 +75,4 @@ Avant de commencer cette étape, vous devez effectuer [étape 2 b : ajouter des
   
 ## <a name="see-also"></a>Voir aussi  
  [Étape 2 a : ajouter le fichier emplacements de réception pour le magasin d’interagir et le scénario de transfert (Pull)](../../adapters-and-accelerators/fileact-interact/step-2a-add-file-receive-locations-for-interact-store-and-forward-scenario.md)   
- [Étape 2 b : ajouter des Ports d’envoi FILE pour capturer le Message Sw:HandleRequest pour le magasin d’interagir et le scénario de transfert (Pull)](../../adapters-and-accelerators/fileact-interact/step-2b-add-file-send-ports-to-get-sw-handlerequest-message-for-interact.md)
+ [Étape 2B : Ajouter des ports d’envoi FILE pour capturer le message Sw:HandleRequest pour le scénario de stockage et de redirection (Pull) InterAct](../../adapters-and-accelerators/fileact-interact/step-2b-add-file-send-ports-to-get-sw-handlerequest-message-for-interact.md)

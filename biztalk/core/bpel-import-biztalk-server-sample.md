@@ -19,11 +19,11 @@ caps.latest.revision: "31"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b76cead956ade8d16c5cbd26c55f94eabe15e1fc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 13b0f446dab1d597e9dd2435e2bb5f40b3fd37ce
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="bpel-import-biztalk-server-sample"></a>Importation BPEL (exemple BizTalk Server)
 L'exemple Importation BPEL montre comment créer une orchestration à partir d'une description de processus Business Process Execution Language (BPEL) et des artefacts qui y sont associés.  
@@ -90,7 +90,7 @@ L'exemple Importation BPEL montre comment créer une orchestration à partir d'u
   
 6.  Sur le **sélectionnez fichiers BPEL, WSDL et XSD** , cliquez sur **Parcourir**.  
   
-7.  Sélectionnez tous les fichiers à partir de la \< *exemples de chemin*> \Orchestrations\BPELImport\BPELSource, dossier, cliquez sur **ouvrir**, puis cliquez sur **suivant**.  
+7.  Sélectionnez tous les fichiers à partir de la \< *exemples de chemin*\>\Orchestrations\BPELImport\BPELSource, dossier, cliquez sur **ouvrir**, puis cliquez sur **suivant**.  
   
     > [!NOTE]
     >  Au cours de cette étape, vous sélectionnez les fichiers BPEL et WSDL pour décrire le processus d'entreprise et les fichiers XSD pour représenter les schémas de document commercial.  
@@ -113,7 +113,7 @@ L'exemple Importation BPEL montre comment créer une orchestration à partir d'u
   
 15. Dans l’Explorateur de solutions, sélectionnez **ajouter une référence**, puis, dans le **projets** , cliquez sur **Parcourir**.  
   
-16. Sélectionnez **ShippingSchemas.dll** à partir de l’emplacement \< *exemples de chemin*> \Orchestrations\BPELImport\Solution\ShipperProcess\ShippingSchemas\bin\Development, puis cliquez sur  **OK**.  
+16. Sélectionnez **ShippingSchemas.dll** à partir de l’emplacement \< *exemples de chemin*\>\Orchestrations\BPELImport\Solution\ShipperProcess\ShippingSchemas\bin\Development, et puis cliquez sur **OK**.  
   
     > [!NOTE]
     >  La section « Pour créer et initialiser l'application ShipperProcess » contient des instructions sur la manière de procéder.  
@@ -156,7 +156,7 @@ L'exemple Importation BPEL montre comment créer une orchestration à partir d'u
   
 27. Dans l’Explorateur de solutions, cliquez sur le **BPELShipping** de projet, pointez sur **ajouter**, puis cliquez sur **élément existant**.  
   
-28. Sélectionnez tous les fichiers .btm à l’emplacement \< *exemples de chemin*> \Orchestrations\BPELImport\Solution\BPELShipping\BPELShipping.  
+28. Sélectionnez tous les fichiers .btm à l’emplacement \< *exemples de chemin*\>\Orchestrations\BPELImport\Solution\BPELShipping\BPELShipping.  
   
 29. Dans la fenêtre Vue Orchestration, localisez le **assignation du Message** forme nommée MessageAssignment_1 in ConstructMessage1 et supprimez-le.  
   
@@ -229,10 +229,10 @@ L'exemple Importation BPEL montre comment créer une orchestration à partir d'u
   
 50. déployer la solution ;  
   
-51. Accédez à l’emplacement \< *exemples de chemin*> \Orchestrations\BPELImport\Solution\BPELShipping, puis double-cliquez sur **BindAndStartOnly.bat** pour lier et démarrer l’orchestration.  
+51. Accédez à l’emplacement \< *exemples de chemin*\>\Orchestrations\BPELImport\Solution\BPELShipping, puis double-cliquez sur **BindAndStartOnly.bat** pour lier et démarrer le orchestration.  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
- *\<Exemples de chemin d’accès >*\Orchestrations\BPELImport  
+ *\<Exemples de chemin d’accès\>*\Orchestrations\BPELImport  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -277,7 +277,7 @@ olution\BPELShipping\BPELShipping\Invoice2Ack.btm|Facture pour mappage d'accusé
   
 2.  À partir de la [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] invite de commandes, accédez au répertoire (**cd**) dans le dossier suivant :  
   
-     *\<Exemples de chemin d’accès >*\Orchestrations\BPELImport\Solution\ShipperProcess  
+     *\<Exemples de chemin d’accès\>*\Orchestrations\BPELImport\Solution\ShipperProcess  
   
 3.  Exécutez le fichier Setup.bat, qui effectue les actions suivantes :  
   
@@ -312,7 +312,7 @@ The 'http://contoso.org/samples/Fragments:XXXX' element is not declared. An erro
   
      À partir de la [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] invite de commandes, accédez au répertoire (**cd**) dans le dossier suivant :  
   
-     *\<Exemples de chemin d’accès >*\Orchestrations\BPELImport\Solution\BPELShipping  
+     *\<Exemples de chemin d’accès\>*\Orchestrations\BPELImport\Solution\BPELShipping  
   
 2.  Exécutez le fichier Setup.bat, qui effectue les actions suivantes :  
   
@@ -330,19 +330,19 @@ The 'http://contoso.org/samples/Fragments:XXXX' element is not declared. An erro
   
 #### <a name="to-run-the-bpel-import-sample"></a>Pour exécuter l'exemple Importation BPEL  
   
-1.  Copie le **fichier** de fichiers à partir de la  *\<exemples de chemin >*dossier \Orchestrations\BPELImport\Solution à la \< *exemples de chemin >*\ Orchestrations\BPELImport\Solution\Ports\ReceiveOrder dossier.  
+1.  Copie le **fichier** de fichiers à partir de la  *\<exemples de chemin\>*dossier \Orchestrations\BPELImport\Solution à la \< *exemples de chemin\>* \Orchestrations\BPELImport\Solution\Ports\ReceiveOrder dossier.  
   
-2.  L’orchestration récupère ce fichier comme une commande à partir du système de traitement de commande client, de BPELShipping s’exécute via le processus d’expédition, et génère un fichier dans le \< *exemples de chemin*> \Orchestrations\ Dossier de BPELImport\Solution\Ports\SendOrder et \< *exemples de chemin*> \Orchestrations\BPELImport\Solution\Ports\FinalConfirmation dossier. Le format du nom de ces fichiers est \< *MessageID*> .xml, où  *\<MessageID >* est le GUID généré pour identifier de façon unique le message.  
+2.  L’orchestration récupère ce fichier comme une commande à partir du système de traitement de commande client, de BPELShipping s’exécute via le processus d’expédition, et génère un fichier dans le \< *exemples de chemin*\>\ Dossier de Orchestrations\BPELImport\Solution\Ports\SendOrder et \< *exemples de chemin*\>\Orchestrations\BPELImport\Solution\Ports\FinalConfirmation dossier. Le format du nom de ces fichiers est \< *MessageID*\>.xml, où  *\<MessageID\>*  est le GUID généré pour identifier de façon unique le Message.  
   
 ## <a name="uninstalling-this-sample"></a>Désinstallation de l'exemple  
   
 #### <a name="to-uninstall-the-bpel-import-sample"></a>Pour désinstaller l'exemple Importation BPEL  
   
-1.  À un [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] invite de commandes, accédez au répertoire (**cd**) à \< *exemples de chemin*> \Orchestrations\BPELImport\BPELShipping.  
+1.  À un [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] invite de commandes, accédez au répertoire (**cd**) à \< *exemples de chemin*\>\Orchestrations\BPELImport\BPELShipping.  
   
 2.  Exécutez Cleanup.bat.  
   
-3.  Accédez à \< *exemples de chemin d’accès*> \Orchestrations\BPELImport\ShipperProcess.  
+3.  Accédez à \< *exemples de chemin d’accès*\>\Orchestrations\BPELImport\ShipperProcess.  
   
 4.  Exécutez Cleanup.bat.  
   

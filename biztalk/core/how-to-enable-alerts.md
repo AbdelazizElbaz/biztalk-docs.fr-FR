@@ -16,11 +16,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 22bb3610d489f02aa535b562057b4bb09e208983
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9986bea177471a236cab888f20d915292d540e5b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-enable-alerts"></a>Activation des alertes
 Les administrateurs utilisent la **enable-alerts** commande pour activer toutes les alertes dans la vue spécifiée.  
@@ -31,7 +31,7 @@ Les administrateurs utilisent la **enable-alerts** commande pour activer toutes 
   
 2.  Accédez au dossier des suivis en tapant [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\Tracking lorsque vous y êtes invité. Appuyez sur **Entrée**.  
   
-3.  Type **bm enable-alerts-View :\<nom de la vue >**.  
+3.  Type **bm enable-alerts-View :\<nom de la vue\>**.  
   
     > [!NOTE]
     >  Si vous avez exporté une configuration BAM en tant que fichier XML, ne modifiez pas le fichier XML liés aux alertes. Si vous modifiez le fichier XML liés aux alertes et déployez les modifications, bm.exe détectera les modifications et activera les alertes BAM.  

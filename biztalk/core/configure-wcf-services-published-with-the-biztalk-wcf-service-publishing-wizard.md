@@ -17,11 +17,11 @@ caps.latest.revision: "26"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ca265c240f0e20534c5140d0810479152ad90914
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 19383ca97f979d6932698d06eabd507b4a00954f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-wcf-services-published-with-the-biztalk-wcf-service-publishing-wizard"></a>Configuration des services WCF publiés à l'aide de l'Assistant Publication de services WCF BizTalk
 Après la publication de services WCF avec l'Assistant Publication de services WCF BizTalk, vous devez les configurer correctement. Cette rubrique explique comment configurer les services WCF publiés.  
@@ -73,7 +73,7 @@ Après la publication de services WCF avec l'Assistant Publication de services W
   
 12. Ouvrez une invite de commandes, accédez au dossier dans lequel l’Assistant Publication de BizTalk Server WCF Service créé le service WCF dans %SystemDrive%\InetPub\\, puis ouvrez le fichier Web.config dans le bloc-notes.  
   
-13. Dans le bloc-notes, ajoutez la ligne suivante à l’intérieur de la  **\<system.web >** élément :  
+13. Dans le bloc-notes, ajoutez la ligne suivante à l’intérieur de la  **\<system.web\>**  élément :  
   
     ```  
     <trust level="Full" originUrl="" />  
@@ -94,7 +94,7 @@ Après la publication de services WCF avec l'Assistant Publication de services W
   
     1.  Dans le bloc-notes, ouvrez le fichier Web.config dans le dossier dans lequel l’Assistant Publication de BizTalk Server WCF Service créé le service WCF dans %SystemDrive%\InetPub\\.  
   
-    2.  Dans le bloc-notes, définissez le le **httpGetEnabled** d’attribut dans le  **\<serviceMetadata >** élément à la valeur false, car la ligne suivante :  
+    2.  Dans le bloc-notes, définissez le le **httpGetEnabled** d’attribut dans le  **\<serviceMetadata\>**  élément à la valeur false, car la ligne suivante :  
   
         ```  
         <serviceMetadata httpGetEnabled="false" httpsGetEnabled="false" />  

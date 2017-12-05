@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5520062cb6c9bbd937d5c131c41992a7013a9711
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cf2e8b2b3751f31401ef0353944be0bdad3cbb2b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-4-configure-biztalk-server-environment-for-load-testing"></a>Étape 4 : Configurer l’environnement BizTalk Server pour le test de charge
 Cette rubrique fournit des informations pour créer les emplacements de réception d’un serveur BizTalk, Ports de réception, et les Ports d’envoi requis pour exécuter l’exemple de code décrit dans les rubriques [étape 1 : créer un Test unitaire pour envoyer des Documents à BizTalk Server](~/technical-guides/step-1-create-a-unit-test-to-submit-documents-to-biztalk-server.md) et [étape 3 : créer un Test de charge pour exécuter plusieurs Tests unitaires simultanément](~/technical-guides/step-3-create-a-load-test-to-perform-multiple-unit-tests-simultaneously.md).  
@@ -24,7 +24,7 @@ Cette rubrique fournit des informations pour créer les emplacements de récepti
 ## <a name="configure-biztalk-server-environment-for-load-tests"></a>Configurer l’environnement BizTalk Server pour les Tests de charge  
  Comme décrit dans la rubrique [étape 3 : créer un Test de charge pour exécuter plusieurs Tests unitaires simultanément](~/technical-guides/step-3-create-a-load-test-to-perform-multiple-unit-tests-simultaneously.md), le test de charge **BTS_Messaging_Step** est configuré pour exécuter les tests unitaires  **BTSMessaging** et **BTSMessaging2**. À son tour, ces tests unitaires charger une copie du message C:\Projects\LoadTest\BTSLoad\TestMessages\TestXmlDocument.xml et l’envoyer aux points de terminaison **BTSMessagingEP** et **BTSMessagingEP2** tel que défini dans la section suivante du fichier de configuration (app.config) d’application du projet :  
   
- \<\!--BTSMessagingEP--> \<point de terminaison address="net.tcp://*ordinateur BizTalk Server*: 8123/btsloadtest « liaison = bindingConfiguration de « netTcpBinding » = « netTcpBinding » contrat = » Nom de System.ServiceModel.Channels.IRequestChannel » = « BTSMessagingEP » / > \<point de terminaison address="net.tcp://*ordinateur BizTalk Server*: 8123/btsloadtest « liaison = « netTcpBinding » bindingConfiguration = contract="System.ServiceModel.Channels.IRequestChannel de « netTcpBinding » « nom = « BTSMessagingEP2 » / >  
+ \<\!--BTSMessagingEP--\>\<point de terminaison address="net.tcp://*ordinateur BizTalk Server*: 8123/btsloadtest « liaison = bindingConfiguration de « netTcpBinding » = « netTcpBinding » contrat = » Nom de System.ServiceModel.Channels.IRequestChannel » = « BTSMessagingEP » /\>\<point de terminaison address="net.tcp://*ordinateur BizTalk Server*: 8123/btsloadtest « liaison = « netTcpBinding » bindingConfiguration = contract="System.ServiceModel.Channels.IRequestChannel de « netTcpBinding » « nom = « BTSMessagingEP2 » /                  \>  
   
 > [!NOTE]
 >  Comme indiqué précédemment, *ordinateur BizTalk Server* est un espace réservé pour les noms d’ordinateurs BizTalk Server réels ou, dans le cas que les ordinateurs BizTalk Server sont configurés en tant que membres d’un cluster d’équilibrage de charge réseau (NLB) ; *Ordinateur BizTalk Server* est un espace réservé pour le nom ou l’adresse du serveur virtuel NLB correspondant.  
@@ -42,7 +42,7 @@ Cette rubrique fournit des informations pour créer les emplacements de récepti
 |Approuvé(e) par authentification|Assurez-vous que cette case est décochée.|  
 |32 bits uniquement|Assurez-vous que cette case est décochée.|  
 |Transformer en hôte par défaut dans le groupe|Assurez-vous que cette case est décochée.|  
-|Groupe Windows|Le groupe Windows utilisé pour contrôler l’accès à cet ordinateur hôte et les instances d’hôte associées. Le groupe de fenêtre créé pour l’hôte in-process par défaut est nommé soit  *\<nom de l’ordinateur >*\BizTalk utilisateurs de l’Application (pour un serveur unique, installation de BizTalk Server) ou  *\<domaine Nom >*\BizTalk utilisateurs de l’Application (pour une installation de BizTalk Server, ce qui nécessite l’utilisation de groupes de domaine avec plusieurs serveurs). **Remarque :***\<nom de l’ordinateur >* et  *\<nom de domaine >* sont des espaces réservés pour le nom d’ordinateur ou le nom de domaine utilisé lors de la création du groupe.   <br /><br /> Si un nouveau groupe est créé pour cet hôte, il doit avoir les droits décrits dans la rubrique [groupes hôtes](http://go.microsoft.com/fwlink/?LinkId=208803) (http://go.microsoft.com/fwlink/?LinkId=208803) dans la documentation de BizTalk Server.|  
+|Groupe Windows|Le groupe Windows utilisé pour contrôler l’accès à cet ordinateur hôte et les instances d’hôte associées. Le groupe de fenêtre créé pour l’hôte in-process par défaut est nommé soit  *\<nom de l’ordinateur\>*\BizTalk utilisateurs de l’Application (pour un serveur unique, installation de BizTalk Server) ou  *\<Nom de domaine\>*\BizTalk utilisateurs de l’Application (pour une installation de BizTalk Server, ce qui nécessite l’utilisation de groupes de domaine avec plusieurs serveurs). **Remarque :***\<nom de l’ordinateur\>*  et  *\<nom de domaine\>*  sont des espaces réservés pour le nom de domaine ou le nom d’ordinateur utilisé lors de la création du groupe.   <br /><br /> Si un nouveau groupe est créé pour cet hôte, il doit avoir les droits décrits dans la rubrique [groupes hôtes](http://go.microsoft.com/fwlink/?LinkId=208803) (http://go.microsoft.com/fwlink/?LinkId=208803) dans la documentation de BizTalk Server.|  
   
  Répétez les étapes que vous avez suivi lors de la création de l’hôte « Envoi » pour créer un hôte « Réception ». Configurer l’ordinateur hôte « Réception » avec les valeurs de propriété suivantes :  
   
@@ -54,7 +54,7 @@ Cette rubrique fournit des informations pour créer les emplacements de récepti
 |Approuvé(e) par authentification|Assurez-vous que cette case est décochée.|  
 |32 bits uniquement|Assurez-vous que cette case est décochée.|  
 |Transformer en hôte par défaut dans le groupe|Assurez-vous que cette case est décochée.|  
-|Groupe Windows|Le groupe Windows utilisé pour contrôler l’accès à cet ordinateur hôte et les instances d’hôte associées. Le groupe de fenêtre créé pour l’hôte in-process par défaut est nommé soit  *\<nom de l’ordinateur >*\BizTalk utilisateurs de l’Application (pour un serveur unique, installation de BizTalk Server) ou  *\<domaine Nom >*\BizTalk utilisateurs de l’Application (pour une installation de BizTalk Server, ce qui nécessite l’utilisation de groupes de domaine avec plusieurs serveurs). **Remarque :***\<nom de l’ordinateur >* et  *\<nom de domaine >* sont des espaces réservés pour le nom d’ordinateur ou le nom de domaine utilisé lors de la création du groupe.   <br /><br /> Si un nouveau groupe est créé pour cet hôte, il doit avoir les droits décrits dans la rubrique [groupes hôtes](http://go.microsoft.com/fwlink/?LinkId=208803) (http://go.microsoft.com/fwlink/?LinkId=208803) dans la documentation de BizTalk Server.|  
+|Groupe Windows|Le groupe Windows utilisé pour contrôler l’accès à cet ordinateur hôte et les instances d’hôte associées. Le groupe de fenêtre créé pour l’hôte in-process par défaut est nommé soit  *\<nom de l’ordinateur\>*\BizTalk utilisateurs de l’Application (pour un serveur unique, installation de BizTalk Server) ou  *\<Nom de domaine\>*\BizTalk utilisateurs de l’Application (pour une installation de BizTalk Server, ce qui nécessite l’utilisation de groupes de domaine avec plusieurs serveurs). **Remarque :***\<nom de l’ordinateur\>*  et  *\<nom de domaine\>*  sont des espaces réservés pour le nom de domaine ou le nom d’ordinateur utilisé lors de la création du groupe.   <br /><br /> Si un nouveau groupe est créé pour cet hôte, il doit avoir les droits décrits dans la rubrique [groupes hôtes](http://go.microsoft.com/fwlink/?LinkId=208803) (http://go.microsoft.com/fwlink/?LinkId=208803) dans la documentation de BizTalk Server.|  
   
 ### <a name="create-instances-of-the-biztalk-server-send-and-receive-hosts"></a>Créer des Instances de l’envoi de BizTalk Server et des hôtes de réception  
  Suivez les étapes de la rubrique de la Documentation de BizTalk Server [l’ajout d’une Instance d’hôte](http://go.microsoft.com/fwlink/?LinkId=208596) (http://go.microsoft.com/fwlink/?LinkId=208596) pour créer et démarrer des instances de l’hôte « Envoi » de BizTalk Server. Configurer une instance de l’hôte « Envoi » pour exécuter sur chaque serveur BizTalk Server dans le groupe BizTalk Server et configurer chaque instance d’hôte avec les valeurs de propriété suivantes :  
@@ -139,7 +139,7 @@ Cette rubrique fournit des informations pour créer les emplacements de récepti
   
 |Propriété|Valeur|  
 |--------------|-----------|  
-|General\Address (URI)|NET.TCP://*\<nom de l’ordinateur >*: 2001/TCP1 **Important :***\<nom de l’ordinateur >* est un espace réservé pour le nom d’ordinateur pour héberger IndigoService.exe, qui est conçue pour consommer les messages envoyés via WCF.   IndigoService.exe nécessite très peu de ressources, il est souvent parfaitement acceptable pour exécuter IndigoService.exe sur l’ordinateur SQL Server utilisé pour les bases de données du groupe BizTalk Server. IndigoService.exe fait partie de l’Assistant de test d’évaluation de BizTalk, qui est disponible sur [Assistant test d’évaluation de BizTalk](http://go.microsoft.com/fwlink/?LinkID=186347) (http://go.microsoft.com/fwlink/?LinkID=186347).|  
+|General\Address (URI)|NET.TCP://*\<nom de l’ordinateur\>*: 2001/TCP1 **Important :***\<nom de l’ordinateur\>*  est un espace réservé pour le nom réel de l’ordinateur utilisé pour héberger le IndigoService.exe, qui est conçue pour consommer les messages envoyés via WCF.   IndigoService.exe nécessite très peu de ressources, il est souvent parfaitement acceptable pour exécuter IndigoService.exe sur l’ordinateur SQL Server utilisé pour les bases de données du groupe BizTalk Server. IndigoService.exe fait partie de l’Assistant de test d’évaluation de BizTalk, qui est disponible sur [Assistant test d’évaluation de BizTalk](http://go.microsoft.com/fwlink/?LinkID=186347) (http://go.microsoft.com/fwlink/?LinkID=186347).|  
 |Type de Binding\Binding|**customBinding**|  
   
  Comme avec la plupart des Types de liaison WCF-Custom, le **customBinding** type de liaison expose plusieurs propriétés, qui doivent être définies sur les valeurs suivantes :  
@@ -181,9 +181,9 @@ Cette rubrique fournit des informations pour créer les emplacements de récepti
   
  Ensuite, démarrez IndigoService.exe en double-cliquant sur StartIndigoService.bat. IndigoService.exe consomme des messages envoyés au point de terminaison spécifié dans le fichier IndigoService.exe.config :  
   
- \<adresse de point de terminaison = « NET.TCP://localhost : 2001/TCP1 « liaison = bindingConfiguration de « netTcpBinding » = nom de « Binding1 » = « endpoint1 » contract="IndigoService.IServiceTwoWaysVoidNonTransactional » / >  
+ \<adresse de point de terminaison = « NET.TCP://localhost : 2001/TCP1 « liaison = bindingConfiguration de « netTcpBinding » = nom de « Binding1 » = « endpoint1 » contract="IndigoService.IServiceTwoWaysVoidNonTransactional » /\>  
   
- C’est pourquoi l’adresse du Port d’envoi est configuré avec une adresse (URI) de net.tcp://*\<nom de l’ordinateur >*: 2001/TCP1  
+ C’est pourquoi l’adresse du Port d’envoi est configuré avec une adresse (URI) de net.tcp://*\<nom de l’ordinateur\>*: 2001/TCP1  
   
  IndigoService.exe nécessite très peu de ressources, il est souvent parfaitement acceptable pour exécuter IndigoService.exe sur l’ordinateur SQL Server utilisé pour les bases de données BizTalk Server.  
   

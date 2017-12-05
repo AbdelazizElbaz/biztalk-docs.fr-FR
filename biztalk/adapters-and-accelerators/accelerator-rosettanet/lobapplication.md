@@ -19,25 +19,25 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed2dc02911ad8ce78e3657c78ad1150d96b4f4f9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: af11e69c90c9d211e36e706710c1d1de44a72399
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="lobapplication"></a>LOBApplication
 Vous utilisez l’utilitaire LOBApplication pour envoyer un message d’action ou d’une réponse à un partenaire commercial, en simulant un programme de bureau de métier (LOB) réels.  
   
- [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] fournit des exemples de messages dans la \< *lecteur*> \Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\SDK\LOBApplication\SampleInstances dossier.  
+ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] fournit des exemples de messages dans la \< *lecteur*\>\Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\LOBApplication\ SampleInstances dossier.  
   
 ## <a name="location-in-sdk"></a>Emplacement dans le kit de développement logiciel (SDK)  
- \<*lecteur*> \Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\SDK\LOBApplication  
+ \<*lecteur*\>\Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\LOBApplication  
   
 ## <a name="running-lobapplication"></a>LOBApplication en cours d’exécution  
   
 #### <a name="to-run-lobapplication"></a>Pour exécuter LOBApplication  
   
-1.  Dans l’Explorateur Windows, accédez à \< *lecteur*> \Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\SDK\\.  
+1.  Dans l’Explorateur Windows, accédez à \< *lecteur*\>\Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\\.  
   
 2.  Double-cliquez sur **LOBApplication.exe**, puis appuyez sur ENTRÉE.  
   

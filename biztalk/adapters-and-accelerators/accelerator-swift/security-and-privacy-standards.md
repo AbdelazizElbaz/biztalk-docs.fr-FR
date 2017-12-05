@@ -19,11 +19,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e652ff10c4ebfaf00069f3a7197dfd739eb680e1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: be03cce0c0d482563ac12bbd3b60cead04b2ccfa
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="security-and-privacy-standards"></a>Normes de sécurité et confidentialité
 Les applications de Services financiers et des solutions d’intégration développement à l’aide [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] sont généralement sécurisées par natif [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] fonctionnalités de sécurité. [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]utilise les mécanismes de sécurité agressif tel que Internet de fait chiffré normes de messagerie et protocoles de transport, certificats de signature [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] l’authentification et Enterprise Single Sign-On pour sécuriser [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] applications, données, et Runtime.  
@@ -34,7 +34,7 @@ Les applications de Services financiers et des solutions d’intégration dével
   
  Il est important d’envisager des mesures pour la sécurisation de vos messages SWIFT et les informations qu’ils contiennent lorsqu’ils sont entrées ou modifiées par les utilisateurs finaux, en transit et lors de la [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] traite et stocke les.  
   
- Ensemble, [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] et A4SWIFT fournissent la plateforme, l’infrastructure et outils de conception, le développement et l’exécution de sécurisent SWIFT systèmes d’automatisation de la messagerie et de flux de travail.  
+ Ensemble, BizTalk Server et A4SWIFT fournissent la plateforme, l’infrastructure et les outils de conception, de développement et de l’exécution SWIFT sécurisée de messagerie et des systèmes d’automatisation de flux de travail.  
   
  Lors de l’implémentation de la sécurité, vous devez concevoir et développer de nombreux domaines. La liste suivante est une vue d’ensemble de ces domaines :  
   
@@ -62,12 +62,12 @@ Les applications de Services financiers et des solutions d’intégration dével
   
 -   [Fonctionnalités de sécurité A4SWIFT pour Message Repair et New Submission](../../adapters-and-accelerators/accelerator-swift/a4swift-security-features-for-message-repair-and-new-submission.md)  
   
--   [Sécurité d’InfoPath](../../adapters-and-accelerators/accelerator-swift/infopath-security.md)  
+-   [Sécurité InfoPath](../../adapters-and-accelerators/accelerator-swift/infopath-security.md)  
   
--   [Sécurité du Runtime serveur](../../adapters-and-accelerators/accelerator-swift/server-runtime-security.md)  
+-   [Sécurité du moteur d’exécution](../../adapters-and-accelerators/accelerator-swift/server-runtime-security.md)  
   
 -   [Sécurité de Windows SharePoint Services](../../adapters-and-accelerators/accelerator-swift/windows-sharepoint-services-security.md)  
   
--   [Sécurité du Service Web A4SWIFT](../../adapters-and-accelerators/accelerator-swift/a4swift-web-service-security.md)  
+-   [Sécurité du service web A4SWIFT](../../adapters-and-accelerators/accelerator-swift/a4swift-web-service-security.md)  
   
--   [Résumé de la sécurité](../../adapters-and-accelerators/accelerator-swift/security-summary.md)
+-   [Récapitulatif sur la sécurité](../../adapters-and-accelerators/accelerator-swift/security-summary.md)

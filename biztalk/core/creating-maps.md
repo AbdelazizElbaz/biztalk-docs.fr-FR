@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8831e0d76c2bb4483bc1012ed7345c760b87bdf9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 00121334b076ed4c705e7b440c75c1347e4208c9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-maps"></a>Création de mappages
 L’interface utilisateur principale du Mappeur BizTalk s’affiche sous un onglet dans le [!INCLUDE[btsCoName](../includes/btsconame-md.md)] [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] fenêtre d’édition. Cet affichage se compose de trois volets. Le volet gauche affiche le schéma source sous forme d'arborescence. Le volet droit affiche le schéma de destination sous forme d'arborescence. Le volet central affiche la grille, composée de plusieurs pages. Pour indiquer comment vous voulez mapper des données du schéma source vers le schéma de destination, vous tracez des lignes entre les enregistrements et les champs que vous voulez mapper. Ces lignes sont appelées *liens*, et ils sont la façon la plus simple pour spécifier le mappage de données. Pour plus d’informations sur la liaison d’enregistrements et champs, consultez [des liens dans les mappages](../core/links-in-maps.md).  
@@ -49,12 +49,12 @@ L’interface utilisateur principale du Mappeur BizTalk s’affiche sous un ongl
   
 ## <a name="in-this-section"></a>Dans cette section  
   
--   [La gestion des mappages dans des projets](../core/managing-maps-within-projects.md)  
+-   [Gestion de mappages dans des projets](../core/managing-maps-within-projects.md)  
   
--   [À l’aide de liens pour spécifier l’enregistrement et les mappages de champs](../core/using-links-to-specify-record-and-field-mappings.md)  
+-   [Utilisation de liens pour spécifier des mappages d’enregistrements et de champs](../core/using-links-to-specify-record-and-field-mappings.md)  
   
--   [À l’aide des fonctoids pour créer des mappages plus complexes](../core/using-functoids-to-create-more-complex-mappings.md)  
+-   [Utilisation de fonctoids pour créer des mappages plus complexes](../core/using-functoids-to-create-more-complex-mappings.md)  
   
 -   [Comment créer un mappage sans mappages](../core/how-to-create-a-map-without-maps.md)  
   
--   [Gérer le comportement du mappeur par défaut à l’aide \<mapsource >](../core/managing-default-mapper-behavior-using-mapsource.md)
+-   [Gérer le comportement du mappeur par défaut à l’aide \<mapsource\>](../core/managing-default-mapper-behavior-using-mapsource.md)

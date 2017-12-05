@@ -12,21 +12,21 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e4c8c18f394b800ffeee9994294b2d2dbf0cb3a1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f366eb2827859f8d720c74e670808aebfb0665b2
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="high-availability-for-the-master-secret-server"></a>Haute disponibilité pour le serveur de secret principal
-Même si vous n’utilisez pas la fonctionnalité Enterprise Single Sign-On (SSO) pour le mappage des informations d’identification et l’authentification unique, l’authentification unique est un élément essentiel de la Microsoft global [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] infrastructure, car [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] utilise l’authentification unique pour protéger les informations de port configuration. Les données de configuration de port sont chiffrées et stockées dans la base de données SSO. Chaque serveur BizTalk server est un service d’authentification unique (ENTSSO.exe) qui est utilisé pour chiffrer et déchiffrer les données de configuration du port.  
+Même si vous n’utilisez pas la fonctionnalité Enterprise Single Sign-On (SSO) pour le mappage des informations d’identification et l’authentification unique, l’authentification unique est un élément essentiel de l’infrastructure de Microsoft BizTalk Server globale, car [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] utilise l’authentification unique pour protéger les informations de port configuration. Les données de configuration de port sont chiffrées et stockées dans la base de données SSO. Chaque serveur BizTalk server est un service d’authentification unique (ENTSSO.exe) qui est utilisé pour chiffrer et déchiffrer les données de configuration du port.  
   
  Démarre un service d’authentification unique, il récupère la clé de chiffrement à partir du serveur de secret principal. Cette clé de chiffrement est appelée le secret principal. Le serveur de secret principal est un autre service d’authentification unique qui a un sous-service supplémentaire qui gère et distribue le secret principal. Après la récupération d’un secret, le service SSO met en cache. Toutes les 60 secondes, le service SSO synchronise le secret principal avec le serveur de secret principal.  
   
  Si le serveur de secret principal échoue et que le service SSO détecte la défaillance de l’une de ses intervalles d’actualisation, le service d’authentification unique et toutes les opérations d’exécution en cours d’exécution avant que le serveur a échoué, y compris le déchiffrement des informations d’identification, se poursuivent normalement. Toutefois, vous ne peut pas chiffrer les données de configuration de port ou de nouvelles informations d’identification. Par conséquent, le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environnement comporte une dépendance sur la disponibilité du serveur de secret principal.  
   
 ## <a name="making-the-master-secret-server-available"></a>Obtention d'un serveur de secret principal disponible  
- Pour la disponibilité du système SSO et donc du [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environnement, il est essentiel de sauvegarder le secret principal dès qu’il est généré. Sinon, vous perdez les données que le système d'authentification unique a chiffrées à l'aide de ce secret principal. Pour plus d’informations sur la sauvegarde du secret, consultez [comment revenir Up the Master Secret](http://go.microsoft.com/fwlink/?LinkID=151934) (http://go.microsoft.com/fwlink/?LinkID=151934) dans [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] aide.  
+ Pour la disponibilité du système SSO et donc du [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environnement, il est essentiel de sauvegarder le secret principal dès qu’il est généré. Sinon, vous perdez les données que le système d'authentification unique a chiffrées à l'aide de ce secret principal. Pour plus d’informations sur la sauvegarde du secret, consultez [comment revenir Up the Master Secret](http://go.microsoft.com/fwlink/?LinkID=151934) (http://go.microsoft.com/fwlink/?LinkID=151934) dans l’aide de BizTalk Server.  
   
  Vous pouvez rendre le secret principal disponible de deux manières :  
   
@@ -38,7 +38,7 @@ Même si vous n’utilisez pas la fonctionnalité Enterprise Single Sign-On (SSO
   
      ![Serveur de secret principal hautement disponible](../core/media/tdi-highava-msscluster.gif "TDI_HighAva_MSSCluster")  
   
-     Bien que cette configuration permette une disponibilité élevée, elle exige de disposer de ressources matérielles supplémentaires. Pour plus d’informations sur les options d’installation de haute disponibilité pour l’authentification unique, consultez [Options d’Installation de l’authentification unique de haute disponibilité](http://go.microsoft.com/fwlink/?LinkId=156838) (http://go.microsoft.com/fwlink/?LinkId=156838) dans [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] aide.  
+     Bien que cette configuration permette une disponibilité élevée, elle exige de disposer de ressources matérielles supplémentaires. Pour plus d’informations sur les options d’installation de haute disponibilité pour l’authentification unique, consultez [Options d’Installation de l’authentification unique de haute disponibilité](http://go.microsoft.com/fwlink/?LinkId=156838) (http://go.microsoft.com/fwlink/?LinkId=156838) dans l’aide de BizTalk Server.  
   
      Cette section comprend des informations détaillées sur la configuration du serveur de secret principal SSO en tant que ressource de cluster à haute disponibilité sur un [!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] cluster.  
   
@@ -47,9 +47,9 @@ Même si vous n’utilisez pas la fonctionnalité Enterprise Single Sign-On (SSO
   
 ## <a name="in-this-section"></a>Dans cette section  
   
--   [Clustering du serveur de secret principal](../technical-guides/clustering-the-master-secret-server.md)  
+-   [Mise en cluster du serveur de secret principal](../technical-guides/clustering-the-master-secret-server.md)  
   
--   [Désignation d’un nouveau serveur de secret principal manuellement](../technical-guides/designating-a-new-master-secret-server-manually.md)  
+-   [Désignation manuelle d’un nouveau serveur de secret principal](../technical-guides/designating-a-new-master-secret-server-manually.md)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Planification pour une haute disponibilité2](../technical-guides/planning-for-high-availability2.md)   

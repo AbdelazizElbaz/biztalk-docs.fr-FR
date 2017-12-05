@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7e876892b3eef9e5dd47c51c64997d84a0f0dc98
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5cff46f95062eff856653b6114f76f89ac17efd1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="custom-adapter-configuration-designer"></a>Concepteur de Configuration d’adaptateur personnalisé
 Les concepteurs personnalisés doivent être créés dans une bibliothèque de classes .NET. Vous pouvez les incorporer dans la DLL de l'adaptateur ou créer une DLL distincte. Une fois que vous avez créé un assembly de concepteur, vous devez le référencer par le biais de décorations, tout comme une description ou une catégorie. La référence inclut une spécification de l'assembly et un nom de classe complet.  
@@ -35,7 +35,7 @@ Les concepteurs personnalisés doivent être créés dans une bibliothèque de c
   
  Vous pouvez faire glisser l'assembly dans le Global Assembly Cache ou utiliser GACUTIL pour l'ajouter au GAC.  
   
- Pour utiliser ce concepteur, indiquez le nom de classe complet, une virgule et l'entrée de l'assembly dans le Global Assembly Cache (nom de l'assembly, version, culture et jeton de clé publique) en tant que valeur de la décoration. Utilisez \<éditeur > décorations pour **UITypeEditor** implémentations et \<convertisseur > décorations pour **TypeConverter** implémentations.  
+ Pour utiliser ce concepteur, indiquez le nom de classe complet, une virgule et l'entrée de l'assembly dans le Global Assembly Cache (nom de l'assembly, version, culture et jeton de clé publique) en tant que valeur de la décoration. Utilisez \<éditeur\> décorations pour **UITypeEditor** implémentations et \<convertisseur\> décorations pour **TypeConverter** implémentations .  
   
  Le code ci-dessous indique comment initialiser les concepteurs personnalisés dans un fichier XSD :  
   
@@ -75,4 +75,4 @@ Les concepteurs personnalisés doivent être créés dans une bibliothèque de c
  [Éditeur de liste déroulante personnalisé pour la Configuration de l’adaptateur](../core/custom-drop-down-editor-for-adapter-configuration.md)   
  [Éditeur de boîte de dialogue modales personnalisé pour la Configuration de l’adaptateur](../core/custom-modal-dialog-editor-for-adapter-configuration.md)   
  [Convertisseur de Type personnalisé pour la Configuration de l’adaptateur](../core/custom-type-converter-for-adapter-configuration.md)   
- [Composants de Configuration avancée pour les cartes](../core/advanced-configuration-components-for-adapters.md)
+ [Composants de configuration avancée pour les adaptateurs](../core/advanced-configuration-components-for-adapters.md)

@@ -22,11 +22,11 @@ caps.latest.revision: "15"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 512dc85fb1599bdaa77fe2550390ec2ce6954643
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 52eb574f9f6b55b784357ff03c05ccb23774fecb
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="working-in-orchestration-designer"></a>Utilisation du Concepteur d'orchestration
 Après avoir ouvert un projet BizTalk, vous pouvez créer de nouvelles orchestrations et ajouter des orchestrations existantes au projet. Les procédures suivantes vous expliquent comment créer et enregistrer une orchestration, ajouter une orchestration existante à un projet ou en supprimer une, modifier le nom d'une orchestration et définir les propriétés d'une orchestration.  
@@ -63,7 +63,7 @@ Après avoir ouvert un projet BizTalk, vous pouvez créer de nouvelles orchestra
   
 ### <a name="to-save-an-orchestration"></a>Pour enregistrer une orchestration  
   
--   Sur le **fichier** menu, cliquez sur **enregistrer \<nom de l’orchestration >**.  
+-   Sur le **fichier** menu, cliquez sur **enregistrer \<nom de l’orchestration\>**.  
   
     > [!NOTE]
     >  Fichiers d’orchestration sont enregistrées au format UTF-8.  Schémas, mappages et pipelines sont enregistrés au format UTF-16.  

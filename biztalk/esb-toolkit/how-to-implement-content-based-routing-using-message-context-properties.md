@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7e47235978960ac89f4ea276c4c4a60c8ddf16e1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: be099923fea9d5dbb22559203b297fadf5dd1fdc
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-implement-content-based-routing-using-message-context-properties"></a>Comment : implémenter le routage basé sur le contenu à l’aide des propriétés de contexte de Message
 ## <a name="goal"></a>Objectif  
@@ -38,7 +38,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-an-esb-itinerary-dsl-model"></a>Pour créer un modèle ESB itinéraire DSL  
   
-1.  Dans [!INCLUDE[vs2010](../includes/vs2010-md.md)], ouvrez C:\HowTos\Patterns\Patterns.sln.  
+1.  Dans Visual Studio, ouvrez C:\HowTos\Patterns\Patterns.sln.  
   
 2.  Dans l’Explorateur de solutions, cliquez sur **ItineraryLibrary**, pointez sur **ajouter**, puis cliquez sur **nouvel itinéraire**.  
   
@@ -264,10 +264,10 @@ ms.lasthandoff: 09/20/2017
 ## <a name="additional-resources"></a>Ressources supplémentaires  
  Pour plus d'informations, consultez les rubriques connexes suivantes :  
   
--   [Comment : sélectionner un itinéraire à l’aide d’une stratégie de règles d’entreprise](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
+-   [Guide pratique pour sélectionner un itinéraire à l’aide d’une stratégie de règles métier](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
   
--   [Comment : acheminer un Message basé sur le contexte du Message à l’aide d’une stratégie de règles d’entreprise](../esb-toolkit/dynamically-route-messages-based-on-message-context-using-business-rules-policy.md)  
+-   [Guide pratique pour router un message en fonction de son contexte à l’aide d’une stratégie de règles métier](../esb-toolkit/dynamically-route-messages-based-on-message-context-using-business-rules-policy.md)  
   
 -   [Activités de développement](../esb-toolkit/development-activities.md)  
   
--   [Modèles de routage de messages](../esb-toolkit/message-routing-patterns.md)
+-   [Modèles de routage des messages](../esb-toolkit/message-routing-patterns.md)

@@ -16,11 +16,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fe1a19ee34a98be4130be2ac72e9ad27e83b0c13
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 09efa7dd00f563b8b02469909d2105d443438e95
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-disable-an-affiliate-application"></a>Comment désactiver une Application associée
 Le composant logiciel enfichable MMC ou la ligne de commande permet de désactiver l'application associée spécifiée.  
@@ -37,9 +37,9 @@ Le composant logiciel enfichable MMC ou la ligne de commande permet de désactiv
   
 1.  Cliquez sur **Démarrer**, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est \< *lecteur*> : \Program Files\Enterprise Single Sign-On.  
+2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est \< *lecteur*\>: \Program Files\Enterprise Single Sign-On.  
   
-3.  Type **ssomanage-disableapp  *\<nom de l’application >***, où \< *nom de l’application*> est le nom de l’application associée vous souhaitez désactiver.  
+3.  Type **ssomanage-disableapp  *\<nom de l’application\>***, où \< *nom de l’application* \> est le nom de l’application associée que vous souhaitez désactiver.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -48,4 +48,4 @@ Le composant logiciel enfichable MMC ou la ligne de commande permet de désactiv
  [Applications associées SSO](../core/sso-affiliate-applications.md)   
  [Comment activer une Application associée](../core/how-to-enable-an-affiliate-application.md)   
  [Gestion des mappages utilisateur](../core/managing-user-mappings.md)   
- [Gestion des Applications associées](../core/managing-affiliate-applications.md)
+ [Gestion des applications associées](../core/managing-affiliate-applications.md)

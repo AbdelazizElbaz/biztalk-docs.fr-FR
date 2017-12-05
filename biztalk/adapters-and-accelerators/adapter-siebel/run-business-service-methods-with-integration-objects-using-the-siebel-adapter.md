@@ -16,11 +16,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1a9edb9a169d35a3f4709a8896ef3adfe404e775
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 132c269d347f67cbad3038bcbbb8e62d29112b6e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-business-service-methods-with-integration-objects-using-the-siebel-adapter"></a>Appeler des méthodes de Service d’entreprise avec des objets d’intégration à l’aide de l’adaptateur Siebel
 Le [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] permet aux clients d’adaptateur appeler des méthodes de service d’entreprise qui fonctionnent avec les objets d’intégration. Ces services professionnels ont généralement IN, OUT, ou dans les paramètres de données de « hiérarchie » de type pour envoyer ou recevoir des données d’objet intégration.  
@@ -59,7 +59,7 @@ Le [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] per
 -   **Créer un message XML conforme au schéma de l’objet d’intégration**. Un exemple de message XML généré pour l’objet d’intégration 'Exemple compte' ressemble à :  
   
     ```  
-    \<?xml version="1.0" encoding="UTF-16"?>  
+    <?xml version="1.0" encoding="UTF-16"?>  
     <SiebelMessage  MessageId="" IntObjectName="Sample Account" MessageType="Integration Object" IntObjectFormat="Siebel Hierarchical">  
       <ListOfSampleAccount>  
         <Account>  
@@ -78,7 +78,7 @@ Le [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] per
       <InsertRequestRecord />   
       <InsertInOutRecord>  
         <SiebelMessage xmlns="http://Microsoft.LobServices.Siebel/2007/03/BusinessServices/EAI_x0020_Siebel_x0020_Adapter">  
-          <![CDATA[ \<?xml version="1.0" encoding="UTF-16"?>  
+          <![CDATA[ <?xml version="1.0" encoding="UTF-16"?>  
             <SiebelMessage  MessageId="" IntObjectName="Sample Account" MessageType="Integration Object" IntObjectFormat="Siebel Hierarchical">  
               <ListOfSampleAccount>  
                 <Account>  
@@ -97,7 +97,7 @@ Le [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] per
      La réponse à partir de Siebel pour le message de demande ci-dessus ressemble à ceci :  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <InsertResponse xmlns="http://Microsoft.LobServices.Siebel/2007/03/BusinessServices/EAI_x0020_Siebel_x0020_Adapter/Operation">  
       <InsertResult>  
         <ErrorCode xmlns="http://Microsoft.LobServices.Siebel/2007/03/BusinessServices/EAI_x0020_Siebel_x0020_Adapter">0x0</ErrorCode>   
@@ -110,7 +110,7 @@ Le [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] per
       </InsertResult>  
       <InsertInOutRecord>  
         <SiebelMessage xmlns="http://Microsoft.LobServices.Siebel/2007/03/BusinessServices/EAI_x0020_Siebel_x0020_Adapter">  
-          <![CDATA[ \<?xml version="1.0" encoding="UTF-16"?>  
+          <![CDATA[ <?xml version="1.0" encoding="UTF-16"?>  
             <SiebelMessage  MessageId="" IntObjectName="Sample Account" MessageType="Integration Object" IntObjectFormat="Siebel Hierarchical">  
               <ListOfSampleAccount>  
                 <Account>  

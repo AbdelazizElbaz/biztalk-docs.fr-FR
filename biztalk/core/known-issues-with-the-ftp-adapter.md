@@ -12,11 +12,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4c12b6f1693fe475a1b123a6163a11b35fd96932
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e13ce12e8514eaa2b5843ba81eff4f505e65d9e1
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues-with-the-ftp-adapter"></a>Problèmes connus avec l'adaptateur FTP
 Cette section contient des informations qui peuvent vous permettre d'éviter certaines erreurs.  
@@ -45,7 +45,7 @@ Cette section contient des informations qui peuvent vous permettre d'éviter cer
 #### <a name="ftp-adapter-does-not-support-revocation-checks-on-the-server-certificates"></a>L'adaptateur FTP ne prend pas en charge les vérifications de révocation sur les certificats de serveur  
   
 ##### <a name="problem"></a>Problème  
- L'adaptateur FTP dans [!INCLUDE[prague](../includes/prague-md.md)] a été amélioré de manière à prendre en charge le transfert (envoi et réception) de fichiers sécurisé sur un serveur FTPS via SSL/TLS. La liste de révocation des certificats contient une liste des certificats qui ont été révoqués et ne sont plus valides. L'adaptateur FTP ne consulte pas cette liste pour authentifier le certificat de serveur.  
+ L’adaptateur FTP dans BizTalk Server a été amélioré pour prendre en charge le transfert de fichiers sécurisé vers et depuis un serveur FTPS via SSL/TLS. La liste de révocation des certificats contient une liste des certificats qui ont été révoqués et ne sont plus valides. L'adaptateur FTP ne consulte pas cette liste pour authentifier le certificat de serveur.  
   
 ##### <a name="cause"></a>Cause  
  Par défaut, l'adaptateur FTP ne consulte pas la liste de révocation des certificats avant d'accepter un certificat de serveur.  

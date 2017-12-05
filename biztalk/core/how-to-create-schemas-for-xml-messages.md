@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 83a06aa7ca1ee4e37c29083ac38f5285565b7325
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6396d4607e93298961e6691ded2ca8d4566d819c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-create-schemas-for-xml-messages"></a>Création de schémas pour les messages XML
 Il existe plusieurs manières de créer des schémas de message BizTalk. Cette rubrique contient des instructions détaillées concernant certaines d'entre elles.  
@@ -27,7 +27,7 @@ Il existe plusieurs manières de créer des schémas de message BizTalk. Cette r
   
 2.  Dans le menu **Projet** , cliquez sur **Ajouter un nouvel élément**.  
   
-3.  Dans le  **ajouter un nouvel élément - \<* BizTalk ProjectName*> ** boîte de dialogue le **modèles** , cliquez sur **schéma**.  
+3.  Dans le  **ajouter un nouvel élément - \<* BizTalk ProjectName*\>** boîte de dialogue le **modèles** , cliquez sur **schéma**.  
   
 4.  Dans le **nom** zone, tapez un nom pour le schéma, puis cliquez sur **ajouter**.  
   
@@ -45,7 +45,7 @@ Il existe plusieurs manières de créer des schémas de message BizTalk. Cette r
   
 1.  Dans **l’Explorateur de solutions**, avec le bouton droit à un projet BizTalk, pointez sur **ajouter**, puis cliquez sur **ajouter les éléments générés**.  
   
-2.  Dans le  **ajouter les éléments générés - \<* BizTalk ProjectName*> ** boîte de dialogue le **modèles** , cliquez sur **générer les schémas**, puis cliquez sur **ajouter**.  
+2.  Dans le  **ajouter les éléments générés - \<* BizTalk ProjectName*\>** boîte de dialogue le **modèles** , cliquez sur  **Générer des schémas**, puis cliquez sur **ajouter**.  
   
 3.  Dans le **générer les schémas** boîte de dialogue le **type de Document** la liste déroulante, sélectionnez **schéma XDR**, **DTD schéma**, ou **XML bien formé**.  
   

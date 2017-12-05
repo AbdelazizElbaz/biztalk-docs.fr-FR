@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 33726ebafc3ed6b3d1ad62bf97019e30493a895e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 17bd0a76cacb35563448f31f79c2275c79b92ab8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="post-installation-steps-for-biztalk-adapter-pack-2016"></a>Valider les étapes d’installation de BizTalk adaptateur Pack 2016
 Après avoir installé le [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)], quelques étapes consécutives à l’installation. Cette rubrique décrit ces étapes.   
@@ -70,7 +70,7 @@ Lorsque vous configurez un port à utiliser l’adaptateur WCF-OracleDB ou utili
 > - Le *newVersion* valeur doit être mis à jour en fonction de la version du fichier Oracle.DataAccess.dll installé sur l’ordinateur.  Oracle.DataAccess.dll est inclus avec le Client Oracle que vous installez à partir d’Oracle.  Vous devez installer uniquement une version de Client Oracle est [pris en charge par BizTalk Adapter Pack](http://social.technet.microsoft.com/wiki/contents/articles/17631.biztalk-server-supported-line-of-business-lob-and-enterprise-systems.aspx).  
   
 ## <a name="create-sql-server-database-objects-sap-adapter-only"></a>Créer des objets de base de données SQL Server (adaptateur SAP uniquement)  
- Pour appeler tRFCs dans un système SAP, exécutez le *SapAdapter-DbScript-Install.sql* script SQL. Ce script est installé avec le [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] installation et crée des objets de base de données dans SQL Server. Le script est généralement installé sur  *\<lecteur d’installation > : \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]* . Vous pouvez exécuter ce script sur toute base de données SQL Server, tant que vous entrez son nom de base de données lors de l’utilisation de l’adaptateur pour appeler tRFCs.
+ Pour appeler tRFCs dans un système SAP, exécutez le *SapAdapter-DbScript-Install.sql* script SQL. Ce script est installé avec le [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] installation et crée des objets de base de données dans SQL Server. Le script est généralement installé sur  *\<lecteur d’installation\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]* . Vous pouvez exécuter ce script sur toute base de données SQL Server, tant que vous entrez son nom de base de données lors de l’utilisation de l’adaptateur pour appeler tRFCs.
   
 ## <a name="register-the-adapter-bindings"></a>Inscrire des liaisons de l’adaptateur
 Lors de la [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] installation, l’Assistant installation peut échouer enregistrer des liaisons de l’adaptateur ou le fournisseur de données .NET Framework pour mySAP Business Suite. Et le programme d’installation poursuit l’installation de l’adaptateur. Cela peut être dû à l’installation de Windows Communication Foundation (WCF), le [!INCLUDE[afproductnamelong](../includes/afproductnamelong-md.md)] installation ou dans le fichier machine.config est endommagé.  
@@ -78,7 +78,7 @@ Lors de la [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.m
 > [!IMPORTANT]
 > Effectuez les étapes suivantes *uniquement* si l’Assistant installation ne parvient pas à inscrire des liaisons de l’adaptateur, les fournisseurs de données .NET Framework dans le fichier machine.config.  
   
-1.  Accédez au fichier machine.config sur l’ordinateur. Par exemple, sur une plateforme 32 bits, le fichier machine.config est disponible sous  *\<lecteur système > : \WINDOWS\Microsoft.NET\Framework\\< version\>\CONFIG*.  
+1.  Accédez au fichier machine.config sur l’ordinateur. Par exemple, sur une plateforme 32 bits, le fichier machine.config est disponible sous  *\<lecteur système\>: \WINDOWS\Microsoft.NET\Framework\\< version\>\CONFIG*.  
   
 2.  Ouvrez le fichier à l’aide d’un éditeur de texte.  
   

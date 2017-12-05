@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a42fb3ca8381faedbd2283b9f4d297738bbb040d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 01e445ef19a1d65cc97a3603492a1ad9ba0442e9
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues-with-updating-applications-and-artifacts"></a>Problèmes connus avec la mise à jour des Applications et des artefacts
 ## <a name="updating-an-application"></a>Mise à jour d’une Application  
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/20/2017
   
  **Fichiers de stratégie .NET ne sont pas pris en charge.**  
   
- L'utilisation des fichiers de stratégie .NET n'est pas prise en charge dans [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]. En effet, il arrive que les fichiers de stratégie ne fonctionnent pas comme prévu. Ils redirigent .NET vers une version de l’assembly spécifié dans le GAC, mais [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] accède souvent aux assemblys et les données des artefacts à partir d’un cache ou la base de données de gestion BizTalk. En fonction du type d'artefact, de la mise en cache et du redémarrage ou non des instances d'hôte, les fichiers de stratégie peuvent ne pas répondre correctement.  
+ L’utilisation de fichiers de stratégie .NET n’est pas pris en charge dans BizTalk Server. En effet, il arrive que les fichiers de stratégie ne fonctionnent pas comme prévu. Ils redirigent .NET vers une version de l’assembly spécifié dans le GAC, mais [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] accède souvent aux assemblys et les données des artefacts à partir d’un cache ou la base de données de gestion BizTalk. En fonction du type d'artefact, de la mise en cache et du redémarrage ou non des instances d'hôte, les fichiers de stratégie peuvent ne pas répondre correctement.  
   
 ## <a name="updating-an-assembly"></a>Mise à jour d’un Assembly  
  **Modifications apportées à un assembly ne prendront effet si l’hôte n’est pas arrêté.**  

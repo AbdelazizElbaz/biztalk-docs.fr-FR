@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5e996ea258b8f3ab1c7df2d30ed12aa0d0150b35
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bd9778d6fb37058cfb70d476590b5d32fe8936e1
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-configure-biztalk-server-to-receive-encrypted-mime-or-smime-messages"></a>Comment configurer BizTalk Server pour recevoir MIME chiffré ou Messages SMIME
 Cette rubrique explique comment configurer [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] pour utiliser des certificats pour recevoir des messages MIME/SMIME chiffrés. La procédure ci-dessous s’applique également à la configuration de la réception de messages chiffrés via le transport AS2.  
@@ -29,7 +29,7 @@ Cette rubrique explique comment configurer [!INCLUDE[btsBizTalkServerNoVersion](
 1.  Créer un pipeline afin de recevoir des messages chiffrés, comme suit :  
   
     > [!NOTE]
-    >  Cette étape n’est pas nécessaire lors de la configuration de transport AS2 pour la réception des messages chiffrés, car le AS2Receive et AS2EdiReceive de pipelines qui sont inclus dans [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] cette fonction.  
+    >  Cette étape n’est pas nécessaire lors de la configuration de transport AS2 pour la réception des messages chiffrés, car les pipelines AS2Receive et AS2EdiReceive qui sont inclus dans BizTalk Server répondre à cette fonction.  
   
     > [!NOTE]
     >  Le composant de pipeline Décodeur MIME/SMIME effectue à la fois le déchiffrement et la validation des signatures numériques (lorsqu'il est configuré pour exécuter ces deux fonctions). Par conséquent, si vous configurez [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] pour recevoir des messages chiffrés et signés, vous pouvez utiliser le même pipeline de réception. En d'autres termes, il est inutile de créer des pipelines distincts pour le chiffrement et la validation des signatures numériques.  

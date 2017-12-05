@@ -19,11 +19,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ea8de4f60907e465f37502b5b0227e31ddcd92b5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 75ac63fe0fee593f927e854ce425ff7f631f9475
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="mqscorrelationsetorchestration-biztalk-server-sample"></a>MQSCorrelationSetOrchestration (exemple BizTalk Server)
 L'exemple MQSCorrelationSetOrchestration illustre le mode d'utilisation de l'identificateur de corrélation MQSeries pour la corrélation de messages envoyés à une file d'attente MQSeries vers une orchestration en cours d'exécution. L’orchestration définit l’identificateur de corrélation MQSeries et le message à l’aide de valeurs d’identificateur de la **MQMD_CorrelId** et **MQMD_MsgID** propriétés. Le gestionnaire de file d'attente MQSeries copie la valeur MessageID dans la propriété CorrelationID du message.  
@@ -38,7 +38,7 @@ L'exemple MQSCorrelationSetOrchestration illustre le mode d'utilisation de l'ide
  Cet exemple illustre un scénario dans lequel un document en cours de traitement par une orchestration peut être envoyé à une file d'attente MQSeries (probablement en vue d'un traitement supplémentaire) et retourné à l'orchestration en cours d'exécution.  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
- *\<Exemples de chemin d’accès >*\AdaptersUsage\MQSeriesAdapter\MQSCorrelationSetOrchestration  
+ *\<Exemples de chemin d’accès\>*\AdaptersUsage\MQSeriesAdapter\MQSCorrelationSetOrchestration  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -240,7 +240,7 @@ L'exemple MQSCorrelationSetOrchestration illustre le mode d'utilisation de l'ide
   
 4.  Spécifiez un fichier de clé de nom fort pour signer l’assembly sur les propriétés du projet **signature** page et que vous générez le projet.  
   
-5.  Utilisez l’outil global assembly cache (gacutil.exe) pour charger l’assembly compilé dans le Global Assembly Cache (gacutil /i \< *nom de fichier .dll compilé*>).  
+5.  Utilisez l’outil global assembly cache (gacutil.exe) pour charger l’assembly compilé dans le Global Assembly Cache (gacutil /i \< *nom de fichier .dll compilé*\>).  
   
 6.  Ajoutez une référence à l'assembly GetId dans le projet BizTalk pour cet exemple.  
   
@@ -271,4 +271,4 @@ L'exemple MQSCorrelationSetOrchestration illustre le mode d'utilisation de l'ide
   
 ## <a name="see-also"></a>Voir aussi  
  [Mise en corrélation des Messages à l’aide de la demande-réponse](../core/correlating-messages-using-request-reply.md)   
- [Exemples d’adaptateur MQSeries](../core/mqseries-adapter-samples.md)
+ [Exemples d’adaptateurs MQSeries](../core/mqseries-adapter-samples.md)

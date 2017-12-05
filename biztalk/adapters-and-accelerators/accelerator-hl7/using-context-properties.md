@@ -17,18 +17,18 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bc82cc75df5d8b73e3780e451b1c380e08ef1cec
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3a3fad82b8d537fcc017dfed175c5348cc1529d3
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-context-properties"></a>À l’aide des propriétés de contexte
 BizTalk Accelerator pour HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) moteur de messagerie et de ses composants utilisent en interne les propriétés de contexte. Modification des valeurs définies par le moteur pour certaines propriétés de contexte est déconseillée, car elle peut affecter la logique d’exécution du moteur. Toutefois, vous pouvez modifier un grand nombre de propriétés non définies par le moteur. Vous pouvez utiliser les propriétés de contexte pour la création d’expressions de filtre sur les ports d’envoi (pour plus d’informations, consultez [définition d’Expressions de filtre sur les Ports d’envoi](../../adapters-and-accelerators/accelerator-hl7/setting-filter-expressions-on-send-ports.md)). Vous pouvez également utiliser des propriétés de contexte dans les expressions de filtre pour les orchestrations. Les propriétés sont disponibles pour les expressions de filtre tant qu’un projet a une référence aux schémas de propriétés globales (qui [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] crée lorsque vous utilisez un des modèles courants).  
   
  Le tableau suivant contient une liste de [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] que le moteur de messagerie utilise les propriétés de contexte de message. Le moteur utilise beaucoup de ces propriétés pour le routage. Le sérialiseur utilise d’autres personnes pour son traitement. Ces propriétés ont un préfixe de [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)].  
   
- Pour plus d’informations sur [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] des propriétés de contexte (celles identifié dans les expressions de filtre par un préfixe de BizTalk Server), consultez « Propriétés de contexte de Message » dans [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] aide. **BIZTALK SERVER. SchemaStrongName** et **BTS. MessageType** sont deux propriétés qui la [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] moteur utilise.  
+ Pour plus d’informations sur [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] des propriétés de contexte (celles identifié dans les expressions de filtre par un préfixe de BizTalk Server), consultez « Propriétés de contexte de Message » dans l’aide de BizTalk Server. **BIZTALK SERVER. SchemaStrongName** et **BTS. MessageType** sont deux propriétés qui la [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] moteur utilise.  
   
  Dans le tableau suivant, la promotion et est requis colonnes ont les effets suivants :  
   
@@ -66,4 +66,4 @@ BizTalk Accelerator pour HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includ
   
 ## <a name="in-this-section"></a>Dans cette section  
   
--   [Définition d’Expressions de filtre sur les Ports d’envoi](../../adapters-and-accelerators/accelerator-hl7/setting-filter-expressions-on-send-ports.md)
+-   [Définition d’expressions de filtre sur les ports d’envoi](../../adapters-and-accelerators/accelerator-hl7/setting-filter-expressions-on-send-ports.md)

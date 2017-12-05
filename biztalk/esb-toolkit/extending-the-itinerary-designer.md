@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fb44c851258cc623cf991a0b2be5c18d58e59770
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 78490c7b6447ddb097c0ca61154aab20c44086c3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="extending-the-itinerary-designer"></a>Étendre le Concepteur d’itinéraire
 Le Concepteur d’itinéraire est un langage spécifique à un domaine visuel (DSL) pour Microsoft Visual Studio qui permet la modélisation graphique des itinéraires pour une utilisation avec le [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]. Le concepteur expose plusieurs points d’extension pour laquelle les développeurs peuvent écrire des extensions personnalisées pour activer les nouvelles fonctionnalités et/ou de nouvelles options de configuration.  
@@ -54,7 +54,7 @@ Le Concepteur d’itinéraire est un langage spécifique à un domaine visuel (D
  Voici une instance de la référence d’un fichier manifeste de fournisseur d’adaptateur ; les fichiers manifeste personnalisés doivent être structurées de la même manière.  
   
 ```xml  
-\<?xml version="1.0" encoding="utf-8" ?>  
+<?xml version="1.0" encoding="utf-8" ?>  
 <adapterPropertyManifest adapterName="FTP">  
      <aliases>  
           <alias name="globalPropertySchemas" value="Microsoft.BizTalk.GlobalPropertySchemas, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />  
@@ -83,7 +83,7 @@ Le Concepteur d’itinéraire est un langage spécifique à un domaine visuel (D
  Le **ValidationEngine** classe effectue la validation d’élément de modèle à l’aide du bloc d’Application Enterprise Library Validation et consigne les erreurs de validation dans la fenêtre liste d’erreurs dans l’IDE de Microsoft Visual Studio. La validation doit être effectuée pour chaque type d’élément dans un modèle est définie dans le fichier de configuration Enterprise Library. Le fichier est nommé Ruleset.config et se trouve dans le dossier binaire dans lequel se trouvent tous les binaires de concepteur d’itinéraire. L’exemple suivant est un fragment du fichier de configuration et inclut les deux règles de validation (nommés validateurs) pour le **UddiResolver** extendeur, un pour le **ServerUrl** propriété et une pour le  **ServiceKey** propriété.  
   
 ```  
-\<!--   
+<!--   
 UddiResolver  
 -->  
 <type assemblyName="Microsoft.Practices.Services.Extenders.Resolvers.UDDI"  

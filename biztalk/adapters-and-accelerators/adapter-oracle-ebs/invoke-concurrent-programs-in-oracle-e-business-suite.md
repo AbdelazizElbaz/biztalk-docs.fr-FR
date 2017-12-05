@@ -12,11 +12,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c4ebfbed1a6be8d9a148a1e9bf470e6f85818b35
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2b0991ab2714ddb7acc22161ffcd29179ff7339c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-concurrent-programs-in-oracle-e-business-suite"></a>Appeler des programmes simultanés dans Oracle E-Business Suite
 Oracle E-Business Suite expose des programmes simultanés que vous pouvez exécuter pour effectuer des opérations spécifiques sur les applications Oracle. Chaque application Oracle a un ensemble de programmes simultanés standard (qui sont les mêmes pour toutes les opérations) et certains programmes simultanés qui sont spécifiques à une application Oracle. Le [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] expose tous les programmes simultanés en tant qu’opérations que les clients de l’adaptateur peuvent appeler. Pour plus d’informations sur la façon dont l’adaptateur prend en charge des programmes simultanés, consultez [opérations sur les programmes simultanés](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-concurrent-programs.md). Pour plus d’informations sur la structure de SOAP des messages pour l’appel des programmes simultanés, consultez [des schémas de Message pour les programmes simultanés](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-concurrent-programs.md).  
@@ -125,7 +125,7 @@ new System.TimeSpan(0,2,0)
   
 ```  
 XmlDoc = new System.Xml.XmlDocument();  
-XmlDoc.LoadXml("\<GetStatusForConcurrentProgram xmlns='http://schemas.microsoft.com/OracleEBS/2008/05/ConcurrentPrograms/AR'><RequestId /></GetStatusForConcurrentProgram>");  
+XmlDoc.LoadXml("<GetStatusForConcurrentProgram xmlns='http://schemas.microsoft.com/OracleEBS/2008/05/ConcurrentPrograms/AR'><RequestId /></GetStatusForConcurrentProgram>");  
 Get_StatusRequest = XmlDoc;  
 Get_StatusRequest.RequestId = xpath(Response,"string(/*[local-name()='RACUSTResponse']/*[local-name()='RACUSTResult']/text())");  
 ```  
@@ -229,7 +229,7 @@ Get_StatusRequest.RequestId = xpath(Response,"string(/*[local-name()='RACUSTResp
  L’orchestration consomme le message, le transmet à Oracle E-Business Suite et reçoit une réponse. Le message de réponse est enregistré dans l’autre emplacement de fichier spécifié en tant que partie de l’orchestration. La réponse pour le programme simultanée Interface client ressemble à ceci :  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <RACUSTResponse xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/ConcurrentPrograms/AR">  
   <RACUSTResult>2794708</RACUSTResult>  
 </RACUSTResponse>  
@@ -238,7 +238,7 @@ Get_StatusRequest.RequestId = xpath(Response,"string(/*[local-name()='RACUSTResp
  La réponse à partir d’Oracle E-Business Suite contient un ID de demande. Extrait l’ID de demande à partir du message de réponse de l’orchestration, construit un message à appeler le **Get_Status** simultanées du programme et le passe à Oracle E-Business Suite pour exécuter la **Get_Status** simultanées du programme. Une fois que la réponse est reçue pour th **Get_Status** simultanées du programme, il est copié vers le même emplacement de fichier en tant que la première réponse. La réponse pour le **Get_Status** simultanées du programme ressemble à ceci :  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <GetStatusForConcurrentProgramResponse xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/ConcurrentPrograms/AR">  
   <GetStatusForConcurrentProgramResult>true</GetStatusForConcurrentProgramResult>   
   <Phase>Pending</Phase>   

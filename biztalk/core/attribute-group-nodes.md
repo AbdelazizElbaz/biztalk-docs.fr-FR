@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 04db816f1209b7cd503b9a162cdd2a030ba86292
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 31814f9bd38bd07a75be0d4a2cc3e9d8b838720e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="attribute-group-nodes"></a>Nœuds Groupe Attribut
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 09/20/2017
 Dans l’Éditeur BizTalk, vous pouvez ajouter un **groupe d’attributs** nœud à un **enregistrement** nœud ou à un autre **groupe d’attributs** nœud destiné à contenir un groupe d’attributs que vous prévoyez d’utiliser plus plusieurs **enregistrement** nœud. Ajout d’un **groupe d’attributs** nœud vers un autre **groupe d’attributs** nœud réalise l’imbrication de groupes d’attributs. Cela vous permet de définir un groupe d’attributs dans un emplacement qui peut être utilisé dans plusieurs **enregistrement** ou **groupe d’attributs** nœuds. Les modifications apportées par la suite au groupe d'attributs se propageront vers tous les nœuds auxquels il est associé  et ce, quel que soit le contexte de nœud dans lequel les modifications sont effectuées.  
   
 > [!NOTE]
->  Dans l’Éditeur BizTalk, le **AttributeGroup** nœud est représenté par défaut par la chaîne \<AttribGroup:attribGroup*N*> dans l’arborescence du schéma, où *N*est un nombre croissant. Vous pouvez modifier la partie attribGroup*N* partie de son nom en tapant un nouveau nom unique dans son **référence du groupe** propriété.  
+>  Dans l’Éditeur BizTalk, le **AttributeGroup** nœud est représenté par défaut par la chaîne \<AttribGroup:attribGroup*N* \> dans l’arborescence du schéma, où  *N* est un nombre croissant. Vous pouvez modifier la partie attribGroup*N* partie de son nom en tapant un nouveau nom unique dans son **référence du groupe** propriété.  
   
  Lorsque vous créez initialement un **groupe d’attributs** nœud, vous simplement l’insérer dans un de la **enregistrement** ou **groupe d’attributs** nœuds dans lequel il sera utilisé et éventuellement modifier son nom dans sa **référence du groupe** propriété. Il existe deux façons d’utiliser le même groupe d’attributs dans un autre **enregistrement** ou **groupe d’attributs** nœud :  
   
@@ -66,5 +66,5 @@ Dans l’Éditeur BizTalk, vous pouvez ajouter un **groupe d’attributs** nœud
 -  [Propriétés de nœud](../core/node-properties.md)   
 -  **Propriétés d’un nœud groupe séquence**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]  
 -  [Comment définir les propriétés de nœud](../core/how-to-set-node-properties.md)   
--  [Nœuds attribut de champ](../core/field-attribute-nodes.md)   
--  [Nœuds tout attribut](../core/any-attribute-nodes.md)
+-  [Nœuds Attribut de champ](../core/field-attribute-nodes.md)   
+-  [Nœuds Tout attribut](../core/any-attribute-nodes.md)

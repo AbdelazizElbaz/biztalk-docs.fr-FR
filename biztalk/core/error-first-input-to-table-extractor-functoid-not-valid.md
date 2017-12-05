@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f2449f6c5572a3a29b620becdc4310f4152f2eac
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 86d501c18bf104a0f538ef90d10510e7d9ec0f02
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="error---first-input-to-table-extractor-functoid-not-valid"></a>Erreur - première entrée du fonctoid Extracteur de Table non valide
 **Code d’erreur**  
@@ -30,4 +30,4 @@ ms.lasthandoff: 09/20/2017
   
  **Action de l’utilisateur**  
   
- Créer un lien entre le **extracteur de Table** fonctoid et approprié **bouclage de Table** fonctoid en faisant glisser un d’eux à l’autre. Dans une page de grille de mappage, le premier doit toujours se trouver à droite du second. En outre, à l’aide de la **configurer \<fonctoid > fonctoid** boîte de dialogue zone, vérifiez que le nouveau lien est le premier paramètre d’entrée pour le fonctoid **extracteur de Table** fonctoid.
+ Créer un lien entre le **extracteur de Table** fonctoid et approprié **bouclage de Table** fonctoid en faisant glisser un d’eux à l’autre. Dans une page de grille de mappage, le premier doit toujours se trouver à droite du second. En outre, à l’aide de la **configurer \<fonctoid\> fonctoid** boîte de dialogue zone, vérifiez que le nouveau lien est le premier paramètre d’entrée pour le fonctoid **extracteur de Table** fonctoid.

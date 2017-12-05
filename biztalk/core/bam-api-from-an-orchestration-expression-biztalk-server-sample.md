@@ -17,11 +17,11 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 26b9cbc21eb93cad52a421b7df0912a37708978c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e3f78297b57dc2c9bc61d5996c49f7543ac64163
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="bam-api-from-an-orchestration-expression-biztalk-server-sample"></a>API BAM à partir d'une expression d'orchestration (exemple BizTalk Server)
 Cet exemple montre comment :  
@@ -33,7 +33,7 @@ Cet exemple montre comment :
 -   créer une relation entre les données BAM suivies à l'aide d'un modèle de suivi et les données BAM suivies à l'aide de l'API BAM.  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
- Vous pouvez trouver cet exemple à  *\<exemples de chemin >*\BAM\BamFromExpression.  
+ Vous pouvez trouver cet exemple à  *\<exemples de chemin\>*\BAM\BamFromExpression.  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -56,7 +56,7 @@ Cet exemple montre comment :
   
 #### <a name="to-create-the-tracking-profile"></a>Pour créer le modèle de suivi  
   
-1.  Ouvrez une invite de commandes et exécutez  *\<exemples de chemin >*\BAM\BAMFromExpression\Setup.bat. Si vous utilisez [!INCLUDE[btsWinVista](../includes/btswinvista-md.md)] ou [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)], ouvrez l'invite de commandes en tant qu'administrateur. Setup.bat initialise l'infrastructure BAM pour cet exemple et déploie l'activité BAM.  
+1.  Ouvrez une invite de commandes et exécutez  *\<exemples de chemin\>*\BAM\BAMFromExpression\Setup.bat. Si vous utilisez [!INCLUDE[btsWinVista](../includes/btswinvista-md.md)] ou [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)], ouvrez l'invite de commandes en tant qu'administrateur. Setup.bat initialise l'infrastructure BAM pour cet exemple et déploie l'activité BAM.  
   
 2.  Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], puis cliquez sur **éditeur**. Si vous utilisez [!INCLUDE[btsWinVista](../includes/btswinvista-md.md)] ou [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)], avec le bouton droit **éditeur** puis cliquez sur **exécuter en tant qu’administrateur**.  
   
@@ -72,7 +72,7 @@ Cet exemple montre comment :
   
 8.  Cliquez sur le **Receive_1** mettre en forme, puis cliquez sur **schéma de charge utile de Message**.  
   
-9. Développez  **\<schéma >**, développez **PurchaseOrder**, développez **de**, puis faites glisser **PoID** dans le volet droit pour  **ID d’activité** dans le volet gauche.  
+9. Développez  **\<schéma\>**, développez **PurchaseOrder**, développez **de**, puis faites glisser **PoID** à droite volet à **ActivityID** dans le volet gauche.  
   
 10. Faites glisser les éléments suivants à partir du volet droit et déposez-les sur les nœuds nommés dans le volet gauche :  
   
@@ -90,7 +90,7 @@ Cet exemple montre comment :
   
 13. Faites glisser le **Send_1** forme dans le volet droit pour **envoyer** dans le volet gauche.  
   
-14. Enregistrer le modèle de suivi à  *\<exemples de chemin >*\BAM\BamFromExpression\ BamFromExpression.btt.  
+14. Enregistrer le modèle de suivi à  *\<exemples de chemin\>*\BAM\BamFromExpression\ BamFromExpression.btt.  
   
 15. Sur le **outils** menu, cliquez sur **appliquer le modèle de suivi**.  
   
@@ -100,9 +100,9 @@ Cet exemple montre comment :
   
 #### <a name="to-run-this-sample"></a>Pour exécuter l'exemple  
   
--   Copiez le fichier  *\<exemples de chemin >*\BamFromExpression\InputMessage.xml à  *\<exemples de chemin >*\BamFromExpression\Input.  
+-   Copiez le fichier  *\<exemples de chemin\>*\BamFromExpression\InputMessage.xml à  *\<exemples de chemin\>*\BamFromExpression\Input.  
   
-     Environ 10 secondes, le message de sortie s’affiche dans  *\<exemples de chemin >*\BamFromExpression\Output.  
+     Environ 10 secondes, le message de sortie s’affiche dans  *\<exemples de chemin\>*\BamFromExpression\Output.  
   
 #### <a name="to-view-the-bam-data"></a>Pour afficher les données BAM  
   
@@ -110,23 +110,23 @@ Cet exemple montre comment :
   
 2.  Dans SQL Server Management Studio, développez le serveur, **bases de données**, développez **BAMPrimaryImport**, puis développez **Tables**.  
   
-3.  Avec le bouton droit **dbo.bam_FromExpressionPo_Completed**, puis cliquez sur **ouvrir la Table**. Si vous utilisez [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)], cliquez sur **sélectionner les 1000 lignes**.  
+3.  Avec le bouton droit **dbo.bam_FromExpressionPo_Completed**, puis cliquez sur **ouvrir la Table**. Si vous utilisez SQL Server, cliquez sur **sélectionner les 1000 lignes**.  
   
      Le contenu de la table bam_FromExpressionPo_Completed s'affiche dans le volet droit. La ligne dont l'ID d'activité est 123 représente le bon de commande d'une valeur de 345 $ que contenait le message entrant.  
   
-4.  Avec le bouton droit **dbo.bam_FromExpressionPoItem_Completed**, puis cliquez sur **ouvrir la Table**. Si vous utilisez [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)], cliquez sur **sélectionner les 1000 lignes**.  
+4.  Avec le bouton droit **dbo.bam_FromExpressionPoItem_Completed**, puis cliquez sur **ouvrir la Table**. Si vous utilisez SQL Server, cliquez sur **sélectionner les 1000 lignes**.  
   
      Le contenu de la table bam_FromExpressionPoItem_Completed s'affiche dans le volet droit. Les deux lignes ayant activité ID 123_0 et 123_1 représentent les éléments dans l’ordre d’achat : articles Flash MC et décodeur infrarouge.  
   
-5.  Avec le bouton droit **dbo.bam_FromExpressionPoItem_CompletedRelationships**, puis cliquez sur **ouvrir la Table**. Si vous utilisez [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)], cliquez sur **sélectionner les 1000 lignes**.  
+5.  Avec le bouton droit **dbo.bam_FromExpressionPoItem_CompletedRelationships**, puis cliquez sur **ouvrir la Table**. Si vous utilisez SQL Server, cliquez sur **sélectionner les 1000 lignes**.  
   
      Le contenu de la table bam_FromExpressionPoItem_CompletedRelationships s'affiche dans le volet droit. Chaque ligne de la table représente une relation entre une activité FromExpressionPoItem et une activité FromExpressionPo. La valeur de la **ActivityID** colonne fait référence à l’ID d’activité de l’activité FromExpressionPoItem. La valeur de la **ReferenceData** colonne fait référence à l’ID d’activité de l’activité FromExpressionPo. Dans ce cas, les deux enregistrements indiquent que les articles Flash MC et décodeur infrarouge sont associés au bon de commande d'une valeur de 345 $.  
   
 #### <a name="to-re-run-the-sample"></a>Pour réexécuter l'exemple  
   
-1.  Ouvrez une invite de commandes et exécutez  *\<exemples de chemin >*\BAM\BamFromExpression\Cleanup.bat pour supprimer le modèle de suivi et toute autre infrastructure BAM. Si vous utilisez [!INCLUDE[btsWinVista](../includes/btswinvista-md.md)] ou [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)], ouvrez l'invite de commandes en tant qu'administrateur.  
+1.  Ouvrez une invite de commandes et exécutez  *\<exemples de chemin\>*\BAM\BamFromExpression\Cleanup.bat pour supprimer le modèle de suivi et toute autre infrastructure BAM. Si vous utilisez [!INCLUDE[btsWinVista](../includes/btswinvista-md.md)] ou [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)], ouvrez l'invite de commandes en tant qu'administrateur.  
   
-2.  Exécutez  *\<exemples de chemin >*\BAM\BamFromExpression\Setup.bat pour compiler l’exemple et le déployer.  
+2.  Exécutez  *\<exemples de chemin\>*\BAM\BamFromExpression\Setup.bat pour compiler l’exemple et le déployer.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Business Activity Monitoring (dossier d’exemples BizTalk Server)](../core/business-activity-monitoring-biztalk-server-samples-folder.md)   

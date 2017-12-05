@@ -17,14 +17,14 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 78eacae899dada5dd2de659d1599ca60676814d9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e67044fbbf5809365475ecdc8e8b9a82d7a843bd
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="a-role-based-product"></a>Un produit en fonction du rôle
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] et [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] fournissent des fonctionnalités et outils de l’environnement approprié pour le rôle de l’utilisateur. Ces fonctionnalités et les outils permettent un développement rapide, déploiement, opérations, la gestion et utilisation de l’entreprise.  
+[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server et [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] fournissent des fonctionnalités et outils de l’environnement approprié pour le rôle de l’utilisateur. Ces fonctionnalités et les outils permettent un développement rapide, déploiement, opérations, la gestion et utilisation de l’entreprise.  
   
 ## <a name="features-and-tools"></a>Fonctionnalités et outils  
  Outils pour les développeurs sont intégrés dans [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]® [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]. Les développeurs peuvent gérer leurs solutions et les projets dans l’Explorateur de solutions et avoir un accès immédiat aux outils de conception BizTalk.  

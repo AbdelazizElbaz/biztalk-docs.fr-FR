@@ -21,11 +21,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2939fd0594c878e3a5f1416d0b1e871b78ba3858
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8ce76f2ca16cca44af1658983c49d11f6931e931
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-manage-password-synchronization"></a>Comment gérer la synchronisation de mot de passe
 Le composant logiciel enfichable MMC et l'utilitaire de ligne de commande SSOMANAGE permettent d'activer ou de désactiver les fonctionnalités d'authentification unique, ainsi que d'afficher les paramètres de la base de données SSO.  
@@ -42,7 +42,7 @@ Le composant logiciel enfichable MMC et l'utilitaire de ligne de commande SSOMA
   
 2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
 4.  Type **ssomanage-activer** et appuyez sur ENTRÉE.  
   
@@ -52,7 +52,7 @@ Le composant logiciel enfichable MMC et l'utilitaire de ligne de commande SSOMA
   
 2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
 4.  Type **ssomanage-désactiver** et appuyez sur ENTRÉE.  
   
@@ -62,7 +62,7 @@ Le composant logiciel enfichable MMC et l'utilitaire de ligne de commande SSOMA
   
 2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
 4.  Type **ssomanage - displaydb** et appuyez sur ENTRÉE.  
   

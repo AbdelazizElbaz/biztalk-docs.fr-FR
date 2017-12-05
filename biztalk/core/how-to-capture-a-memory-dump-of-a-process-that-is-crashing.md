@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fda8dd26908b241a9897bb4f1b2ba697b55f6532
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e87664180b7ad4d5fdcd121542974a08b8634d55
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-capture-a-memory-dump-of-a-process-that-is-crashing"></a>Capture de l'image mémoire d'un processus bloqué
 Le processus BizTalk BTSNTSvc.exe est défini en tant que **bloqué** lorsque le processus est arrêté inopinément par Windows. Un blocage est généralement le résultat d'une exception non gérée dans le processus, comme une violation d'accès ou un dépassement de capacité de pile. Dans ces situations, les fenêtres par défaut du débogueur, récupération d’urgence. Watson (drwtsn32.exe) intercepte l’exception et met fin au processus.  
@@ -41,7 +41,7 @@ Le processus BizTalk BTSNTSvc.exe est défini en tant que **bloqué** lorsque le
   
 8.  Dans le **règle terminée** boîte de dialogue cliquez **Terminer** pour accepter la valeur par défaut de **activer la règle maintenant**.  
   
-9. Par défaut, une image mémoire du processus sera enregistrée à la Files\IIS Resources\DebugDiag\Logs\\<*nom de règle de blocage*> répertoire de l’ordinateur local la prochaine fois qu’une non prise en charge une exception se produit dans le processus.  
+9. Par défaut, une image mémoire du processus sera enregistrée à la Files\IIS Resources\DebugDiag\Logs\\<*nom de la règle d’arrêt* \> répertoire de l’ordinateur local la prochaine fois qu’un exception non gérée se produit dans le processus.  
   
 ## <a name="see-also"></a>Voir aussi  
  [L’utilisation de diagnostic de débogage pour analyser un vidage de mémoire](../core/how-to-use-debug-diagnostics-to-analyze-a-memory-dump.md)

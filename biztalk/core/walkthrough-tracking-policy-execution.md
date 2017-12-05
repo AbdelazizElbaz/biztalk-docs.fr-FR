@@ -13,11 +13,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3f1baca3a561702546ca2fae10b1c567042cd387
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f20b35aca2c4fb35419153ccfb149aa34501b21a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="walkthrough-tracking-policy-execution"></a>Procédure pas à pas : Exécution de la stratégie de suivi
 Procédures pas à pas pour activer le suivi de la **ProcessPurchaseOrder** stratégie et pour afficher les informations de suivi après l’exécution de la stratégie.  
@@ -102,7 +102,7 @@ Terminer la [procédure pas à pas : modification de la stratégie](../core/wal
   
 -   Les informations de suivi de la stratégie sont similaires aux informations de suivi disponibles dans l'Éditeur des règles d'entreprise lorsque vous testez une stratégie.  
   
--   Bien que le nom de l'orchestration soit RuleTest.odx, il apparaît sous la forme Orchestration_1, car le nom du type de l'orchestration est défini sur Orchestration_1 même si le nom est changé. Le suivi affiche le nom de l’orchestration dans le format \<Namespace >.\< Tapez le nom >.  
+-   Bien que le nom de l'orchestration soit RuleTest.odx, il apparaît sous la forme Orchestration_1, car le nom du type de l'orchestration est défini sur Orchestration_1 même si le nom est changé. Le suivi affiche le nom de l’orchestration dans le format \<Namespace\>.\< Tapez le nom\>.  
   
 -   Si vous supprimez une stratégie d'une application BizTalk par le biais de la console Administration de BizTalk Server, cette stratégie est non seulement supprimée de l'application mais également de la base de données du moteur de règles. Elle n'apparaît donc plus dans l'Éditeur des règles d'entreprise (appuyez sur F5 pour actualiser l'affichage). Vous devez donc faire très attention lorsque vous supprimez une stratégie d'une application.  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ad184ce4b0ef619361f44f6eb1ee54a2354f5148
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 70afa4ffae47abf5cdd541846831b4054414eff8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-a-workflow-foundation-application-for-interception"></a>Configuration d'une application Foundation pour l'interception
 Avant de commencer à collecter les données d'activité BAM, vous devez installer le logiciel de l'intercepteur [!INCLUDE[firstref_btsWinWorkflowFoundation](../includes/firstref-btswinworkflowfoundation-md.md)] et configurer votre application afin d'utiliser le service de l'intercepteur BAM. Vous devez avoir correctement installé [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] et ses dépendances et avoir créé au moins un groupe BizTalk.  
@@ -31,7 +31,7 @@ Avant de commencer à collecter les données d'activité BAM, vous devez install
   
 -   Un fichier de configuration de l’intercepteur doit être créé et déployé à l’aide de l’outil en ligne de commande Gestionnaire BAM (bm.exe).  
   
--   L’utilisateur qui exécute l’application hôte doit être un membre de l’enregistreur d’événements d’activité BAM approprié (bam_\<activité > _EventWriter) les rôles SQL Server pour permettre à l’application lire des informations de configuration de l’intercepteur et écrire dans l’analyse BAM activités.  
+-   L’utilisateur qui exécute l’application hôte doit être un membre de l’enregistreur d’événements d’activité BAM approprié (bam_\<activité\>_EventWriter) les rôles SQL Server pour autoriser l’application à lire des informations de configuration de l’intercepteur et d’écriture pour les activités BAM.  
   
 -   Vous devez modifier le fichier App.config ou l'application pour charger le service de suivi BAM, puis redémarrer l'application.  
   
@@ -50,9 +50,9 @@ Avant de commencer à collecter les données d'activité BAM, vous devez install
   
 4.  Déployez le modèle d'observation à l'aide de bm.exe :  
   
-     [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking\BM.exe déployer-all - definitionfile :\<*definitionfile.xml*>  
+     [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking\BM.exe déployer-all - definitionfile :\<*definitionfile.xml*\>  
   
-     Veillez à remplacer \< *definitionfile.xml*> avec le nom du fichier d’observation à déployer. Pour plus d’options, consultez [les commandes de gestion de l’intercepteur](../core/interceptor-management-commands.md).  
+     Veillez à remplacer \< *definitionfile.xml* \> avec le nom du fichier d’observation à déployer. Pour plus d’options, consultez [les commandes de gestion de l’intercepteur](../core/interceptor-management-commands.md).  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -72,9 +72,9 @@ Avant de commencer à collecter les données d'activité BAM, vous devez install
   
 4.  Déployez le fichier de configuration d'intercepteur à l'aide de bm.exe :  
   
-     [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking\BM.exe déployer-intercepteur - filename :\<*icfile.xml*>  
+     [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking\BM.exe déployer-intercepteur - filename :\<*icfile.xml*\>  
   
-     Veillez à remplacer \< *icfile.xml*> par le nom du fichier de configuration de l’intercepteur à déployer.  
+     Veillez à remplacer \< *icfile.xml* \> avec le nom du fichier de configuration de l’intercepteur à déployer.  
   
     > [!NOTE]
     >  Vous pouvez utiliser la **-Force : True** indicateur pour remplacer les sources d’événements existantes avec le même nom que ceux figurant dans votre fichier de configuration de l’intercepteur. Si vous le faites, assurez-vous que vous sauvegardez la configuration existante à l’aide de la **get-interceptor** commande. L'utilisation de l'indicateur -Force:True pourrait supprimer des configurations d'intercepteur qui font référence aux sources d'événements remplacées.  

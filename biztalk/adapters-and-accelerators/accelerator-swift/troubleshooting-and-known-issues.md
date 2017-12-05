@@ -13,18 +13,18 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: af46891fe226ae09c1c2938b459d6e9acdabffcf
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7f2dc861f7f8e670fc0ae83b787ff108cef904b1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshooting-and-known-issues"></a>Problèmes connus et dépannage
 Cette section fournit un emplacement centralisé pour les informations relatives au dépannage [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)].  
 
 ## <a name="readme"></a>Fichier Lisez-moi
   
- Informations supplémentaires relatives aux problèmes découverts après la publication de cette documentation A4SWIFT est incluse dans le fichier Lisez-moi situé dans le \< *lecteur :*> \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator pour SWIFT\Documentation dossier.  
+ Informations supplémentaires relatives aux problèmes découverts après la publication de cette documentation A4SWIFT est incluse dans le fichier Lisez-moi situé dans le \< *lecteur :*\>\Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator pour SWIFT\Documentation dossier.  
 
 ## <a name="next-steps"></a>Étapes suivantes  
  Contenu de cette section :  

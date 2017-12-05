@@ -12,17 +12,17 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 81e9790c36d1af9d48942c5de7ccc8eab6d87a5c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5f470ed5268c445ab3b7175f1cba07ff1de52a27
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="creating-itinerary-subscribers"></a>Création d’abonnés d’itinéraire
-[!INCLUDE[prague](../includes/prague-md.md)]publie automatiquement les messages qui arrivent via un pipeline de réception pour la base de données de la boîte de Message ; Cela rend les messages attend par l’abonné approprié. Cette approche découplée est la meilleure façon de développer des solutions BizTalk, car elle fournit une flexibilité maximale, évolutif et utilise la publication-abonnement.  
+BizTalk Server publie automatiquement les messages qui arrivent via un pipeline de réception pour la base de données de la boîte de Message ; Cela rend les messages attend par l’abonné approprié. Cette approche découplée est la meilleure façon de développer des solutions BizTalk, car elle fournit une flexibilité maximale, évolutif et utilise la publication-abonnement.  
   
  Il existe deux façons de créer un abonné d’itinéraire de service :  
   
--   [À l’aide d’un Port d’envoi en tant qu’un abonné d’itinéraire de Service](../esb-toolkit/using-a-send-port-as-an-itinerary-service-subscriber.md)  
+-   [Utilisation d’un port d’envoi en tant qu’abonné au service d’itinéraire](../esb-toolkit/using-a-send-port-as-an-itinerary-service-subscriber.md)  
   
--   [À l’aide d’une Orchestration en tant qu’un abonné d’itinéraire de Service](../esb-toolkit/using-an-orchestration-as-an-itinerary-service-subscriber.md)
+-   [Utilisation d’une orchestration en tant qu’abonné au service d’itinéraire](../esb-toolkit/using-an-orchestration-as-an-itinerary-service-subscriber.md)

@@ -12,24 +12,24 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0d2e07078f630852fc14bf8081a4bd1453a0dc7b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d6622d201c6f7b7d94694a77198d0eb562482489
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="implementing-the-sample"></a>Implémentation de l’exemple
 Pour implémenter l’exemple, procédez comme suit :  
   
-1.  Créer un nouveau dossier pour SWIFT schémas (\<DocumentSchemaLocation > dans la syntaxe de l’utilitaire). Tous les schémas pour lesquels vous allez créer/modifier des formulaires InfoPath doivent se trouver dans ce dossier lorsque vous exécutez l’utilitaire.  
+1.  Créer un nouveau dossier pour SWIFT schémas (\<DocumentSchemaLocation\> dans la syntaxe de l’utilitaire). Tous les schémas pour lesquels vous allez créer/modifier des formulaires InfoPath doivent se trouver dans ce dossier lorsque vous exécutez l’utilitaire.  
   
-2.  Si vous générez des formulaires InfoPath pour les messages MT, copiez **SWIFT Base Types.xsd** et **Types.xsd de données courantes SWIFT** de  **\<lecteur : > \Program Files\Microsoft BizTalk Accelerator pour SWIFT \<Message Pack Version > Message Pack\SWIFT Messages\A4SWIFT-SRG\<Message Pack Version > \Base schémas** dans le dossier que vous avez créé pour les schémas SWIFT.  
+2.  Si vous générez des formulaires InfoPath pour les messages MT, copiez **SWIFT Base Types.xsd** et **Types.xsd de données courantes SWIFT** de  **\<lecteur :\> \Program Files\ Microsoft BizTalk Accelerator pour SWIFT \<Message Pack Version\> Message Pack\SWIFT Messages\A4SWIFT-SRG\<Message Pack Version\>\Base schémas** dans le dossier que vous avez créé pour les schémas SWIFT.  
   
 3.  Copie tous les schémas pour lesquels vous allez créer des formulaires InfoPath dans le dossier que vous avez créé pour les schémas SWIFT à l’étape 1.  
   
-4.  Créez ou désignez un dossier pour conserver le formulaire InfoPath créé les fichiers de solution de modèle (\<DestinationFolderPath > dans la syntaxe de l’utilitaire). Si vous ne créez pas le dossier de sortie, l’utilitaire créera le même chemin d’accès et le nom que vous passez sur la ligne de commande.  
+4.  Créez ou désignez un dossier pour conserver le formulaire InfoPath créé les fichiers de solution de modèle (\<DestinationFolderPath\> dans la syntaxe de l’utilitaire). Si vous ne créez pas le dossier de sortie, l’utilitaire créera le même chemin d’accès et le nom que vous passez sur la ligne de commande.  
   
-5.  [Facultatif]-Créez un fichier texte \<NameOfFileContainingSchemaList > qui répertorie les types de messages pour les messages pour lesquels le formulaire InfoPath doit être généré. Par exemple, Type de Message peut être MT103, etc. de MT102. Les noms de Message peuvent être transmis directement via la ligne de commande au lieu de créer ce fichier texte.  
+5.  [Facultatif]-Créez un fichier texte \<NameOfFileContainingSchemaList\> qui répertorie les types de messages pour les messages pour lesquels le formulaire InfoPath doit être généré. Par exemple, Type de Message peut être MT103, etc. de MT102. Les noms de Message peuvent être transmis directement via la ligne de commande au lieu de créer ce fichier texte.  
   
 ## <a name="syntax-of-command-usage-for-formgeneratorexe"></a>Syntaxe d’utilisation de la commande pour FormGenerator.exe  
   

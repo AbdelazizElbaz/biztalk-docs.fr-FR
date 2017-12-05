@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 16ab4286ba70a8bb14ae5ec726d17b3bde81d7fd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3d0d3cc9d02f9e68c171f950e7681e5f2ca2d787
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="phase-1-scoping-the-assessment"></a>La phase 1 : L’évaluation de l’étendue
 Cette rubrique décrit les aspects de la phase de l’étendue d’une évaluation de performances de BizTalk Server.  
@@ -27,7 +27,7 @@ Cette rubrique décrit les aspects de la phase de l’étendue d’une évaluati
  Les facteurs suivants doivent être envisagés avant tout autre travail est effectuée pour une évaluation des performances. Ces facteurs permettent de déterminer la direction générale de la phase de la portée et sont un bon point de départ pour une évaluation des performances.  
   
 ### <a name="message-load"></a>Charge de messages  
- Il est important de prendre en compte le droit dès le début de façon dont vous vous apprêtez à répliquer la charge de message qui va réellement via le système de production. Par exemple, si en production 20 pour cent des messages seront < 20 Ko, 50 pour cent sera \<100 Ko par la taille et les 30 % restants peut être jusqu'à 1 Mo dans la taille, il est important que ce soient répliquées dans le laboratoire.  
+ Il est important de prendre en compte le droit dès le début de façon dont vous vous apprêtez à répliquer la charge de message qui va réellement via le système de production. Par exemple, si en production 20 pour cent des messages seront < 20 Ko, 50 pour cent sera < 100 Ko par la taille et les 30 % restants peut être jusqu'à 1 Mo dans la taille, il est important que ce soient répliquées dans le laboratoire.  
   
 ### <a name="develop-a-brief-detail-of-the-scenarios-to-be-tested"></a>Développer un détail brève des scénarios à tester  
  Après avoir identifié les cas de test qui sera testées, il est important d’identifier les principaux composants impliqués dans les. Cela inclut les composants de BizTalk Server (par exemple, la messagerie et les orchestrations) et d’autres composants, y compris les technologies tierces telles que MQSeries ou SAP. Il est très important que vous de tous ces éléments dès le départ comme il vous aide à évaluer la complexité du laboratoire et vous permet de planifier les compétences techniques nécessaires lors de l’engagement.  
@@ -278,10 +278,10 @@ Cette rubrique décrit les aspects de la phase de l’étendue d’une évaluati
   
     |État|Débit|Latence moyenne|% < 2 secondes|nombre de séries de tests|nombre d’ordinateurs BizTalk Server|nombre de Messages|Taille moyenne des messages|Duration|  
     |------------|----------------|---------------------|-------------------|---------------------|------------------------------------|--------------------|--------------------------|--------------|  
-    |Montée en puissance parallèle|140 messages par seconde|0.777 secondes|99.3%|2|6|270,000|octets 609|30 minutes|  
+    |Scale out|140 messages par seconde|0.777 secondes|99.3%|2|6|270,000|octets 609|30 minutes|  
     |Les meilleures|50 messages/seconde|1.12 secondes|99.12%|17|2|360,000|octets 609|2 heures|  
     |Ligne de base|30 messages/seconde|secondes 1.52|92.9 %|4|2|36,000|octets 609|20 minutes|  
-    |Objectifs|5 messages/seconde|\<2 secondes|90 %|-|2|-|-|-|  
+    |Objectifs|5 messages/seconde|< 2 secondes|90 %|-|2|-|-|-|  
   
 ## <a name="define-all-deliverables-that-are-required-at-the-onset-of-the-performance-assessment"></a>Définir tous les résultats qui sont requis au début de l’évaluation des performances  
  Il est important de s’accorder sur les livrables qui doivent être en place avant de commencer une évaluation de performances de BizTalk Server. La section ci-dessous décrit les résultats doivent être en place au début de l’évaluation des performances.  
@@ -341,4 +341,4 @@ Cette rubrique décrit les aspects de la phase de l’étendue d’une évaluati
 -   **La planification d’automatisée de tests de charge et de génération de charge** -une fois le profil de données de test pour l’évaluation des performances est établi, il est important de réfléchir à effectuer dans l’environnement de test de charge. Pour le test de charge de BizTalk Server 2010, nous avons utilisé les tests de charge de Visual Studio 2010. Pour plus d’informations sur la façon de faciliter le test de charge à l’aide de Visual Studio 2010, consultez [à l’aide de Visual Studio pour faciliter les tests automatisés](../technical-guides/using-visual-studio-to-facilitate-automated-testing.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Phases d’une évaluation des performances](../technical-guides/phases-of-a-performance-assessment.md)
+ [Phases de l’évaluation des performances](../technical-guides/phases-of-a-performance-assessment.md)

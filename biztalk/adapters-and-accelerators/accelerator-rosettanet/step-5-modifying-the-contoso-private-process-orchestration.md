@@ -15,11 +15,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 42c93a10fd4751f32aadf2cbfa0a0bbbafc6c7bd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3a222ee518cf0555de60094411df73bf5a5d486a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-5-modifying-the-contoso-private-process-orchestration"></a>Étape 5 : Modification de l’Orchestration de processus de privé de Contoso
 Dans cette étape, vous modifiez l’orchestration de processus privé à intégrer avec le système de planification ERP (Enterprise Resource) pour Contoso. Le système ERP de Contoso utilise les schémas définies en interne pour la disponibilité et le prix du produit. En personnalisant le processus privé pour le 3A2 - prix et la disponibilité des processus PIP (Partner Interface), vous serez en mesure d’intégrer le système ERP à l’aide des informations de mappage de schéma.  
@@ -28,7 +28,7 @@ Dans cette étape, vous modifiez l’orchestration de processus privé à intég
   
 1.  Avec la solution Contoso est affichée dans l’Explorateur de solutions, cliquez sur le **PrivateResponder** de projet, puis cliquez sur **ajouter une référence**.  
   
-2.  Dans la boîte de dialogue Ajouter une référence, cliquez sur **Parcourir**. Déplacer vers  *\<lecteur >*: \Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\Bin dossier et sélectionnez les assemblys suivants**:**  
+2.  Dans la boîte de dialogue Ajouter une référence, cliquez sur **Parcourir**. Déplacer vers  *\<lecteur\>*: \Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\Bin dossier et sélectionnez les assemblys suivants**:**  
   
     -   Microsoft.Solutions.BTARN.CommonTypes.dll  
   
@@ -62,7 +62,7 @@ Dans cette étape, vous modifiez l’orchestration de processus privé à intég
   
 4.  Dans la fenêtre Propriétés, dans le **identificateur** , tapez **PIP3A2RequestMessage**.  
   
-5.  Dans le **Type de Message** , cliquez sur la flèche déroulante, développez **schémas**, puis sélectionnez  **\<sélectionner dans l’assembly référencé >**.  
+5.  Dans le **Type de Message** , cliquez sur la flèche déroulante, développez **schémas**, puis sélectionnez  **\<sélectionner dans l’assembly référencé\>**.  
   
 6.  Dans la zone Sélectionner le Typedialog artefact, sélectionnez **Microsoft.Solutions.BTARN.Schemas.RNPIPs** dans le volet gauche, sélectionnez **_3A2PriceAndAvailabilityQueryMessageGuideline_v1_3** dans le volet droit, et puis cliquez sur **OK**.  
   
@@ -82,7 +82,7 @@ Dans cette étape, vous modifiez l’orchestration de processus privé à intég
   
 2.  Dans la fenêtre Propriétés, dans le **identificateur** , tapez **contosoResponseXML**.  
   
-3.  Dans le **Type** boîte, sélectionnez  **\<classe .NET >** dans la liste déroulante.  
+3.  Dans le **Type** boîte, sélectionnez  **\<classe .NET\>**  dans la liste déroulante.  
   
 4.  Dans l’artefact sélectionnez Tapez boîte de dialogue, dans le volet gauche, sous la **projet actuel** et **références** nœuds, sélectionnez **System.Xml**, sélectionnez  **XmlDocument** à partir de la liste dans le volet droit, puis cliquez sur **OK**.  
   
@@ -90,7 +90,7 @@ Dans cette étape, vous modifiez l’orchestration de processus privé à intég
   
 6.  Dans la fenêtre Propriétés, dans le **identificateur** , tapez **submitMessage**.  
   
-7.  Dans le **Type** boîte, sélectionnez  **\<classe .NET >** dans la liste déroulante.  
+7.  Dans le **Type** boîte, sélectionnez  **\<classe .NET\>**  dans la liste déroulante.  
   
 8.  Dans la boîte de dialogue Sélectionner le Type d’artefact dans le volet gauche, développez **projet actuel** et **références** nœuds, sélectionnez **Microsoft.Solutions.BTARN.Shared**, sélectionnez  **SubmitRNIF** à partir de la liste dans le volet droit, puis cliquez sur **OK**.  
   
@@ -143,4 +143,4 @@ Dans cette étape, vous modifiez l’orchestration de processus privé à intég
 12. Dans [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], dans le **fichier**, cliquez sur **Enregistrer tout** pour enregistrer le projet.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Étape 6 : Configuration des formes d’Orchestration (Contoso)](../../adapters-and-accelerators/accelerator-rosettanet/step-6-configuring-orchestration-shapes-contoso.md)
+ [Étape 6 : Configuration des formes d’orchestration (Contoso)](../../adapters-and-accelerators/accelerator-rosettanet/step-6-configuring-orchestration-shapes-contoso.md)

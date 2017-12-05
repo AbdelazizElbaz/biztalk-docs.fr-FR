@@ -15,11 +15,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0bfab230d919c2cb7f8c05d58b87cdeea6033423
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c9ffa8ab8d80a8b2da172378349eb9761a728fb7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-create-and-deploy-header-and-acknowledgment-schemas"></a>Étape 1 : Créer et déployer des schémas d’en-tête et d’accusé de réception
 Vous utilisez le schéma d’en-tête pour valider l’en-tête (segment MSH) de l’instance de message. Le schéma d’accusé de réception vous permet de générer l’accusé de réception pour l’instance de message. Ce processus est commun à toutes les versions de schémas de [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 2.X.  
@@ -43,7 +43,7 @@ Vous utilisez le schéma d’en-tête pour valider l’en-tête (segment MSH) de
   
 1.  Démarrez une **invite de commandes Visual Studio 2012**.  
   
-2.  À la [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] invite de commandes, accédez à la \< *lecteur*> : \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version > Accelerator pour le dossier de didacticiel \SDK\End-to-End HL7.  
+2.  À la [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] invite de commandes, accédez à la \< *lecteur*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version\> Accelerator pour HL7 \SDK\ Dossier didacticiel de bout en bout.  
   
 3.  À l’invite de commandes, tapez **sn – k key.snk**, puis appuyez sur ENTRÉE. Vérifiez que le message suivant s’affiche dans la fenêtre Sortie, puis fermez la fenêtre de commande.  
   
@@ -58,7 +58,7 @@ Vous utilisez le schéma d’en-tête pour valider l’en-tête (segment MSH) de
   
 6.  Dans le volet droit, faites défiler jusqu'à la **nom fort** , cliquez sur le champ situé à droite de **fichier de clé d’Assembly**, puis cliquez sur le bouton de sélection (**...** ) bouton.  
   
-7.  Dans la boîte de dialogue de fichier de clé d’Assembly, accédez à \< *lecteur*> : \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version > Accelerator for HL7\SDK\End en bout didacticiel, sélectionnez **key.snk**, puis cliquez sur **ouvrir**.  
+7.  Dans la boîte de dialogue de fichier de clé d’Assembly, accédez à \< *lecteur*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version\> Accelerator for HL7\SDK\End en bout Didacticiel, sélectionnez **key.snk**, puis cliquez sur **ouvrir**.  
   
 8.  Dans la page de propriété du projet BTAHL7V2XCommon, cliquez sur **OK** pour enregistrer vos modifications.  
   

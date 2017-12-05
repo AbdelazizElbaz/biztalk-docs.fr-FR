@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1ce311461f4273b057c65913d3024f8092f87d1e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cd2eddf6cc88737375998237db97ca699a676170
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="bottlenecks-in-the-biztalk-server-tier"></a>Goulots d’étranglement au niveau de BizTalk Server
 Le niveau BizTalk peut être divisé en plusieurs zones fonctionnelles :  
@@ -121,7 +121,7 @@ Le niveau BizTalk peut être divisé en plusieurs zones fonctionnelles :
 ### <a name="other-system-resource-contention"></a>Autres contention des ressources système  
  Selon le type de transport, il peut être nécessaire de configurer les ressources système telles que IIS pour HTTP (par exemple, MaxIOThreads, MaxWorkerThreads).  
   
- Avec ASP.NET 2.0 et ASP.Net 4, le \<processModel autoConfig = « true » / > dans le fichier machine.config configure automatiquement les paramètres suivants pour optimiser les performances :  
+ Avec ASP.NET 2.0 et ASP.Net 4, le \<processModel autoConfig = « true »\> dans le fichier machine.config configure automatiquement les paramètres suivants pour optimiser les performances :  
   
 -   Maximum de Threads  
   
@@ -131,7 +131,7 @@ Le niveau BizTalk peut être divisé en plusieurs zones fonctionnelles :
   
 -   attribut minLocalRequestFreeThreads de l’élément httpRuntime  
   
--   attribut maxConnection de la \<connectionManagement > élément (paramètres réseau)  
+-   attribut maxConnection de la \<connectionManagement\> élément (paramètres réseau)  
   
  Pour plus d’informations sur la configuration des paramètres qui affectent les performances de l’adaptateur, consultez [les paramètres de Configuration ASP.NET pour l’élément processModel](http://go.microsoft.com/fwlink/?LinkId=158080) (http://go.microsoft.com/fwlink/?LinkId=158080).  
   

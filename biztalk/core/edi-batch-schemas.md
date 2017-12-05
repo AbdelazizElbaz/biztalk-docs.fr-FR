@@ -12,11 +12,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a9210e8ecc251cee06dafda3aeb3111074521be1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9e159734c7d6028eb7f54354140c40757cb212b3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="edi-batch-schemas"></a>Schémas de lot EDI
 Dans le cadre du traitement d'un échange conservé, BizTalk Server utilise au moins trois schémas :  
@@ -37,7 +37,7 @@ Dans le cadre du traitement d'un échange conservé, BizTalk Server utilise au m
 |X12_BatchSchema|X12InterchangeXML|http://schemas.microsoft.com/Edi/X12_BatchSchema|  
 |Edifact_BatchSchema|EdifactInterchangeXML|http://schemas.microsoft.com/Edi/Edifact|  
   
- Le type de document sur l’instance XML générée par le pipeline de réception est une constante (\<codage > _BatchSchema.xml) et référence ce schéma canonique. Cette instance peut être utilisée dans un mappage d'une orchestration. Avant de procéder ainsi, vous devez toutefois modifier le type de document et l'espace de noms pour effectuer le mappage sur le schéma actuel demandé.  
+ Le type de document sur l’instance XML générée par le pipeline de réception est une constante (\<codage\>_BatchSchema.xml) et référence ce schéma canonique. Cette instance peut être utilisée dans un mappage d'une orchestration. Avant de procéder ainsi, vous devez toutefois modifier le type de document et l'espace de noms pour effectuer le mappage sur le schéma actuel demandé.  
   
  Il n'est pas nécessaire de spécifier le schéma de lot lors de la conception du projet car il est déployé dans le fichier BaseArtifacts.dll.  
   

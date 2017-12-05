@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0303378f6e265d3b5d86a1aa9cd4fb1e88df86fc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7a04904f1170644498d49670104a842b4c8f9dd2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-scalar-functions-in-sql-server-by-using-the-wcf-service-model"></a>Appeler des fonctions scalaires dans SQL Server à l’aide du modèle de Service WCF
 Vous pouvez utiliser la [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] dans une application .NET à l’aide du modèle de service WCF pour appeler les fonctions scalaires dans SQL Server. L’adaptateur expose les fonctions scalaires en tant que méthodes pouvant être appelées directement sur le serveur SQL Server. Pour plus d’informations sur la façon dont l’adaptateur prend en charge les fonctions scalaires, consultez [exécuter les fonctions scalaires dans SQL Server à l’aide de l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/execute-scalar-functions-in-sql-server-using-the-sql-adapter.md).  
@@ -43,9 +43,9 @@ Vous pouvez utiliser la [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshor
 |---------------|----------------------|  
 |Nom de la fonction scalaire|public *< return_type >**< scalar_function_name >*(param1, param2,...)|  
   
- \<*retrun_type*> = type de retour définie dans la définition de fonction  
+ \<*retrun_type* \> = type de retour définie dans la définition de fonction  
   
- \<*scalar_function_name*> = nom de la fonction scalaire.  
+ \<*scalar_function_name* \> = nom de la fonction scalaire.  
   
  Par exemple, le code suivant illustre les signatures de méthode pour une classe de client WCF généré pour le **GET_EMP_ID** des fonctions scalaires, dans le schéma dbo, qui prend la désignation de l’employé en tant que paramètre et retourne un employé ID () (entier).  
   
@@ -133,4 +133,4 @@ public partial class ScalarFunctions_dboClient : System.ServiceModel.ClientBase<
 8.  Générez le projet et exécutez-le. L’application affiche l’ID de l’employé avec la désignation de « Manager ».  
   
 ## <a name="see-also"></a>Voir aussi  
-[Développer des applications à l’aide du modèle de Service WCF](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-service-model.md)
+[Développer des applications en utilisant le modèle de service WCF](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-service-model.md)

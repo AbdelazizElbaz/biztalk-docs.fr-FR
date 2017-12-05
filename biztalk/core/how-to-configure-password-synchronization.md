@@ -19,11 +19,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fb913c1719f4833ef36cf9f73f6a96432217f2af
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b2e8348cdf78db3e95ed75e5d83e6ea53bdffdee
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-password-synchronization"></a>Comment configurer la synchronisation de mot de passe
 L'utilitaire de ligne de commande SSOCONFIG permet de configurer les paramètres de synchronisation de mot de passe.  
@@ -34,9 +34,9 @@ L'utilitaire de ligne de commande SSOCONFIG permet de configurer les paramètres
   
 2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
-4.  Type **ssoconfig - replayfiles \<répertoire des fichiers de relecture > &#124; - par défaut** et appuyez sur ENTRÉE.  
+4.  Type **ssoconfig - replayfiles \<répertoire des fichiers de relecture\> &#124; - par défaut** et appuyez sur ENTRÉE.  
   
 > [!NOTE]
 >  Les fichiers de relecture ne sont pas supprimés quand vous modifiez le compte de service. Si vous modifiez celui-ci, vous devrez supprimer les fichiers de relecture manuellement.  
@@ -47,9 +47,9 @@ L'utilitaire de ligne de commande SSOCONFIG permet de configurer les paramètres
   
 2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
-4.  Type **ssoconfig - syncage \<durée de vie maximale en heures >** et appuyez sur ENTRÉE.  
+4.  Type **ssoconfig - syncage \<durée de vie maximale en heures\>**  et appuyez sur ENTRÉE.  
   
 > [!NOTE]
 >  L'utilitaire SSOCONFIG utilise l'heure de l'ordinateur SQL Server comme heure système. Prenez cet élément en compte lorsque vous utilisez une commande en relation avec l'heure.  

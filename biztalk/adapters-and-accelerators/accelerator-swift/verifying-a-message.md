@@ -15,11 +15,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e22d5c24b0c2d29c225fa2206d47b67e3d166a2c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0f2fdc186e93bd182b3021a3ef8fc258cee59923
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="verifying-a-message"></a>Vérification d’un Message
 Cette section décrit comment vérifier si un message a été réparé.  
@@ -30,7 +30,7 @@ Cette section décrit comment vérifier si un message a été réparé.
   
 2.  Dans la fenêtre d’accueil, cliquez sur **Documents**.  
   
-3.  Dans la fenêtre de Documents sous **bibliothèques de documents**, cliquez sur  **\<* nom du service informatique*> _Verifier **.  
+3.  Dans la fenêtre de Documents sous **bibliothèques de documents**, cliquez sur  **\<* nom du service informatique*\>_Verifier **.  
   
 4.  Dans la fenêtre de confirmation, cliquez sur **boîte de réception**.  
   
@@ -82,4 +82,4 @@ Cette section décrit comment vérifier si un message a été réparé.
   
 19. Fermer la [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] fenêtre.  
   
-20. Dans le site MRSR, cliquez sur **Documents et listes**. Si vous avez cliqué sur **accepter** pour accepter les modifications apportées à l’étape 13, vérifiez que le \<nom service > bibliothèque de documents _Approve contient le message qui a été modifié. Si vous avez déjà ouvert la fenêtre de Documents et listes, cliquez sur **Actualiser** sur la **vue** menu. Si vous avez cliqué sur **rejeter** pour rejeter les modifications apportées à l’étape 13, vérifiez que le  *\<nom de l’ordinateur >*bibliothèque de documents _Outbox contient le message qui a été modifié.
+20. Dans le site MRSR, cliquez sur **Documents et listes**. Si vous avez cliqué sur **accepter** pour accepter les modifications apportées à l’étape 13, vérifiez que le \<nom du service informatique\>bibliothèque de documents _Approve contient le message qui a été modifié. Si vous avez déjà ouvert la fenêtre de Documents et listes, cliquez sur **Actualiser** sur la **vue** menu. Si vous avez cliqué sur **rejeter** pour rejeter les modifications apportées à l’étape 13, vérifiez que le  *\<nom de l’ordinateur\>*bibliothèque de documents _Outbox contient le message qui a été modifié.

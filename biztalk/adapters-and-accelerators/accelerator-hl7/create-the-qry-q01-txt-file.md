@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 57380a36759d9cf0139f295779b8e1f2628c554f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6b3bc9de81259ba71547e3fb887e91872e9e549c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="create-the-qryq01txt-file"></a>Créer le fichier QRY^Q01.txt
 Utilisez la procédure suivante pour créer le fichier de message de requête patient QRY^Q01.txt. Vous utiliserez ce fichier ultérieurement pour vérifier le scénario du didacticiel.  
@@ -30,6 +30,6 @@ Utilisez la procédure suivante pour créer le fichier de message de requête pa
     QRD|200307231012|D|I|4387|||20^LI|12233|RES|ALL  
     ```  
   
-2.  Enregistrez le fichier sous **QRY^Q01.txt** dans les \< *lecteur*: > \Program Files\Microsoft BizTalk \<version > Accelerator pour le dossier du didacticiel de HL7\SDK\Interrogative, puis Fermez l’éditeur.  
+2.  Enregistrez le fichier sous **QRY^Q01.txt** dans les \< *lecteur*:\>\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\ Dossier Tutorial interrogative et fermez l’éditeur.  
   
  Passez à [créer le fichier DSR.txt](../../adapters-and-accelerators/accelerator-hl7/create-the-dsr-txt-file.md).

@@ -41,11 +41,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c668b3123483de1d53afa8ca74cf9d7d2376ecea
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f8dd0ebb22bcf6253604e4e8bf7fd858deb776b0
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="defining-a-business-rule-for-a-private-process-orchestration"></a>Définition d’une règle d’entreprise pour une Orchestration de processus de privé
 Vous pouvez définir une règle d’entreprise pour une utilisation dans un processus privé d’accusé de réception. Vous pouvez ainsi modifier la règle d’entreprise dynamiquement sans arrêter l’orchestration de processus privé. Ce processus utilise le [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] moteur des règles d’entreprise. Ce processus implique les étapes suivantes :  
@@ -56,11 +56,11 @@ Vous pouvez définir une règle d’entreprise pour une utilisation dans un proc
   
 3.  Appel de la règle d’entreprise à partir de l’orchestration de processus privé. Cela implique l’ajout d’un **appeler règles** forme à l’orchestration.  
   
- Le [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK comprend un exemple [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] stratégie commerciale, samplebtarnpolicy.xml, dans \< *lecteur*> : \Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\ SDK\PipAutomation\3A4. Pour plus d’informations, consultez [stratégie d’entreprise BTARN exemple](../../adapters-and-accelerators/accelerator-rosettanet/sample-btarn-business-policy.md).  
+ Le [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK comprend un exemple [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] stratégie commerciale, samplebtarnpolicy.xml, dans \< *lecteur*\>: \Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\PipAutomation\3A4. Pour plus d’informations, consultez [stratégie d’entreprise BTARN exemple](../../adapters-and-accelerators/accelerator-rosettanet/sample-btarn-business-policy.md).  
   
  L’orchestration PIP3A4PrivateResponder.odx est un exemple d’orchestration de processus privé qui montre comment implémenter un processus PIP (Partner Interface)-processus privé de répondeur spécifiques incorporant une règle d’entreprise. Pour plus d’informations sur cet exemple, consultez [3 a 4 privé répondeur Orchestration à l’aide une règle d’entreprise](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md).  
   
- Pour plus d’informations sur les vocabulaires et des stratégies, consultez la rubrique « Développement avec des règles d’entreprise » dans [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)].  
+ Pour plus d’informations sur les vocabulaires et des stratégies, consultez la rubrique « Développement avec des règles d’entreprise » dans BizTalk Server.  
   
 ### <a name="to-add-a-new-vocabulary"></a>Pour ajouter un nouveau vocabulaire  
   
@@ -170,11 +170,11 @@ Vous pouvez définir une règle d’entreprise pour une utilisation dans un proc
 11. Dans la fenêtre de conception de l’Orchestration, entrez toutes les formes supplémentaires requis pour le traitement de la stratégie d’entreprise, y compris l’ajout un **décision** sous la forme la **appeler règles** forme.  
   
     > [!NOTE]
-    >  Pour obtenir un exemple montrant comment utiliser un **appeler règles** forme dans une orchestration, reportez-vous à l’orchestration PIP3A4PrivateResponder.odx incluse dans le SDK de BTARN. Il se trouve à \< *lecteur*> : \Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\SDK\PipAutomation\3A4\PR. Pour plus d’informations, consultez [3 a 4 privé répondeur Orchestration à l’aide une règle d’entreprise](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md).  
+    >  Pour obtenir un exemple montrant comment utiliser un **appeler règles** forme dans une orchestration, reportez-vous à l’orchestration PIP3A4PrivateResponder.odx incluse dans le SDK de BTARN. Il se trouve à \< *lecteur*\>: \Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\PipAutomation\3A4\PR. Pour plus d’informations, consultez [3 a 4 privé répondeur Orchestration à l’aide une règle d’entreprise](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md).  
   
 12. Cliquez sur **OK**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide de programmation](../../adapters-and-accelerators/accelerator-rosettanet/programming-guide2.md)   
  [Stratégie d’entreprise BTARN exemple](../../adapters-and-accelerators/accelerator-rosettanet/sample-btarn-business-policy.md)   
- [Orchestration de répondeur de 3 a 4 à l’aide d’une règle d’entreprise](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)
+ [Orchestration de répondeur privé 3A4 avec une règle d’entreprise](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)

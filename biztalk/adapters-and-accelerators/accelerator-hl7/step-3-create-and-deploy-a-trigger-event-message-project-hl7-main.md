@@ -13,11 +13,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ff7abfcf363d26d068fab067378eb61d5bcf5c3c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5ba388eef1f5dbfb885e33c6263c4e0f8ef4be29
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3-create-and-deploy-a-trigger-event-message-projecthl7main"></a>Étape 3 : Créer et déployer un Project_hl7_main d’événement (Message) de déclencheur
 Dans cette étape, vous créez le schéma utilisé par un message d’événement déclencheur. Par exemple, le système décharge d’admission et de transfert (ADT) qui envoie un message à l’hôpital informations système (HIS). Ce schéma permet de définir le format de votre message.  
@@ -87,7 +87,7 @@ Dans cette étape, vous créez le schéma utilisé par un message d’événemen
   
 3.  Dans le volet droit, faites défiler jusqu'à la **nom fort** , cliquez sur le champ situé à droite de **fichier de clé d’Assembly**, puis cliquez sur le bouton de sélection (...).  
   
-4.  Dans le **fichier de clé d’Assembly** boîte de dialogue, accédez à \< *lecteur*> : \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version > Accelerator for HL7\SDK\ Cliquez (didacticiel), interrogative **key.snk**, puis cliquez sur **ouvrir**.  
+4.  Dans le **fichier de clé d’Assembly** boîte de dialogue, accédez à \< *lecteur*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version\>Accelerator for HL7\SDK\Interrogative didacticiel, cliquez sur **key.snk**, puis cliquez sur **ouvrir**.  
   
 5.  Dans le **Pages de propriétés BTAHL7V24Body** boîte de dialogue, cliquez sur **OK** pour enregistrer vos modifications.  
   

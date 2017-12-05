@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2436d33033163b32c4ead0fdab807b7db0b0158f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ff36b6181b167d70340a65913e1e85e7acfeeaf4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-4-submitting-a-3a4-request"></a>Étape 4 : Envoi d’une demande de 3 a 4
 Dans cette étape, vous préparez et soumettez une demande à l’aide du processus PIP (Partner Interface) pour un 3 a 4 - demande de bon de commande. Ce processus PIP permet à une organisation de l’acheteur soumettre une demande de bon de commande à un fournisseur. En règle générale, vous demandez le 3 a 4 - demande de bon de commande après l’exécution d’une requête de disponibilité de produit à l’aide de la 3A2 - demande de prix et disponibilité PIP. Le PIP 3 a 4 est une adresse PIP asynchrone qui envoie les accusés de réception.  
@@ -39,7 +39,7 @@ Dans cette étape, vous préparez et soumettez une demande à l’aide du proces
     |**ID d’Instance PIP**|Type **3A4_Test**. **Important :** pour éviter les erreurs d’ID de message en double, vous devez vous assurer que le **ID d’Instance Pip** est unique pour chaque message que vous envoyez. Si vous exécutez le test de 3 a 4 dans le futur, vous devrez modifier ce champ.|  
     |**Catégorie de message**|Tapez **Action**.|  
   
-3.  Utilisez le bloc-notes ou un autre éditeur de texte, ouvrez le fichier 3A4_Request.xml dans le \< *lecteur*> : \Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\SDK\LOBApplication\ SampleInstances dossier, puis copiez et collez le contenu dans le **Service contenu** champ LOBWebApplication.  
+3.  Utilisez le bloc-notes ou un autre éditeur de texte, ouvrez le fichier 3A4_Request.xml dans le \< *lecteur*\>: \Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\ LOBApplication\SampleInstances dossier, puis copiez et collez le contenu dans le **Service contenu** champ LOBWebApplication.  
   
 4.  Cliquez sur **Submit** pour envoyer la demande de 3 a 4 à l’ordinateur Contoso.  
   
@@ -58,7 +58,7 @@ Dans cette étape, vous préparez et soumettez une demande à l’aide du proces
   
 3.  Dans Microsoft SQL Server Management Studio, cliquez sur **nouvelle requête**.  
   
-4.  Dans le \<table > boîte de dialogue texte, sélectionnez **BTARNDATA** dans la liste.  
+4.  Dans le \<table\> boîte de dialogue texte, sélectionnez **BTARNDATA** dans la liste.  
   
 5.  Dans la fenêtre SQL, tapez l'instruction SQL suivante :  
   
@@ -88,4 +88,4 @@ Dans cette étape, vous préparez et soumettez une demande à l’aide du proces
   
 ## <a name="see-also"></a>Voir aussi  
  [Didacticiel double Action](../../adapters-and-accelerators/accelerator-rosettanet/double-action-tutorial.md)   
- [Flux de messages de BTARN](../../adapters-and-accelerators/accelerator-rosettanet/message-flow-in-btarn.md)
+ [Flux de messages BTARN](../../adapters-and-accelerators/accelerator-rosettanet/message-flow-in-btarn.md)

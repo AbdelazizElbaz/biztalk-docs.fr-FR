@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 92737ca115e95c5cd66fdf0e03cf05296ef16088
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: af6365c640cbc51053d02822141915cbd4cad828
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="programmatically-create-the-file-receive-location-or-send-port"></a>Créer par programme le fichier de l’emplacement de réception ou port d’envoi
 Comment créer un fichier de port de réception et le port d’envoi par programme. Pour utiliser le [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], accédez à [configurer l’adaptateur File](../core/configure-the-file-adapter.md).
@@ -50,8 +50,8 @@ Le **TransportTypeData** propriété de la **IReceiveLocation** interface n’a 
    <FileMask vt="8">*.xml</FileMask>  
    <FileNetFailRetryCount vt="19">5</FileNetFailRetryCount>  
    <FileNetFailRetryInterval vt="19">5</FileNetFailRetryInterval>  
-   \<Username vt=”8”>MyDomain\MyUsername</Username>  
-   \<Password vt=”8”>PASSWORD</Password>  
+   <Username vt=”8”>MyDomain\MyUsername</Username>  
+   <Password vt=”8”>PASSWORD</Password>  
 </CustomProps>  
   
 ```  

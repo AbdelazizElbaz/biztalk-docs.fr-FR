@@ -15,11 +15,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fc5947b13d9ffcc3721f460ccbcd5bd25701be07
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c4853499dbfd85cd5114212e37f4d22770d64a22
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-set-credentials-for-a-user-mapping"></a>Comment définir les informations d’identification d’un mappage utilisateur
 Cette commande permet de définir les informations d’identification pour un utilisateur d’accéder à une application spécifique.  
@@ -32,9 +32,9 @@ Cette commande permet de définir les informations d’identification pour un ut
   
 1.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  **\<lecteur >**: \Program Files\Enterprise Single Sign-On.  
+2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  **\<lecteur\>**: \Program Files\Enterprise Single Sign-On.  
   
-3.  Type **ssomanage – setcredentials \<domaine >\\< nom d’utilisateur\> \<applicationname >**, où  **\<domaine >** est domaine Windows pour le compte d’utilisateur,  **\<nom d’utilisateur >** est le nom d’utilisateur Windows et  **\<applicationname >** est l’application spécifique pour lequel vous souhaitez définir les informations d’identification.  
+3.  Type **ssomanage – setcredentials \<domaine\>\\< nom d’utilisateur\> \<applicationname\>**, où  **\< domaine\>**  correspond au domaine Windows pour le compte d’utilisateur,  **\<nom d’utilisateur\>**  est le nom d’utilisateur Windows et  **\<applicationname \>**  l’application spécifique pour lequel vous souhaitez définir les informations d’identification.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -47,9 +47,9 @@ Cette commande permet de définir les informations d’identification pour un ut
   
 1.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  **\<lecteur >**: \Program Files\Enterprise Single Sign-On.  
+2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  **\<lecteur\>**: \Program Files\Enterprise Single Sign-On.  
   
-3.  Type **ssoclient - setcredentials \<nom de l’application >**, où  **\<nom de l’application >** est le nom de l’application associée que vous souhaitez supprimer le mappage utilisateur .  
+3.  Type **ssoclient - setcredentials \<nom de l’application\>**, où  **\<nom de l’application\>**  est le nom de l’application associée vous vous souhaitez supprimer le mappage utilisateur.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  

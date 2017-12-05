@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 823bd5739ac58d8b63f79ee15102cf44f3d82c7a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 510ee984688d218e2c83b4e70dcdf737cd5566e2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="tutorial-using-the-biztalk-adapter-for-peoplesoft-enterprise-to-retrieve-data-from-peoplesoft-enterprise"></a>Didacticiel : extraction de données vers PeopleSoft Enterprise à l'aide de l'adaptateur BizTalk de PeopleSoft Enterprise
 L'adaptateur BizTalk pour PeopleSoft Enterprise permet d'exécuter une requête sur un système PeopleSoft et de renvoyer les résultats de la requête. Cette procédure pas à pas décrit un exemple de Kit de développement logiciel (SDK) qui illustre ces fonctionnalités.  
@@ -163,7 +163,7 @@ L'adaptateur BizTalk pour PeopleSoft Enterprise permet d'exécuter une requête 
   
 1.  Double-cliquez sur **LOCATIONService_1.xsd** dans l’Explorateur de solutions pour ouvrir le fichier dans l’éditeur de schéma.  
   
-2.  Avec le bouton droit le  **\<schéma >** nœud dans l’éditeur de schéma et cliquez sur **propriétés** pour afficher les propriétés du nœud.  
+2.  Avec le bouton droit le  **\<schéma\>**  nœud dans l’éditeur de schéma et cliquez sur **propriétés** pour afficher les propriétés du nœud.  
   
 3.  Sélectionnez **obtenir** dans la liste des nœuds disponibles dans le **référence de racine** zone de liste déroulante. Cela doit être fait afin que lorsque vous générez un exemple d’instance de document, il sera générée depuis le **obtenir** nœud du schéma.  
   
@@ -180,7 +180,7 @@ L'adaptateur BizTalk pour PeopleSoft Enterprise permet d'exécuter une requête 
   
 8.  Cliquez sur LOCATIONService_1.xsd dans l’Explorateur de solutions, puis cliquez sur **générer l’Instance** pour générer une instance de document à l’emplacement spécifié.  
   
-9. Avec le bouton droit le  **\<schéma >** nœud dans l’éditeur de schéma et cliquez sur **propriétés** pour afficher les propriétés du nœud.  
+9. Avec le bouton droit le  **\<schéma\>**  nœud dans l’éditeur de schéma et cliquez sur **propriétés** pour afficher les propriétés du nœud.  
   
 10. Sélectionnez (**par défaut)** dans la liste des nœuds disponibles dans le **référence de racine** zone de liste déroulante.  
   
@@ -267,4 +267,4 @@ L'adaptateur BizTalk pour PeopleSoft Enterprise permet d'exécuter une requête 
 10. L'adaptateur FILE écrit le message contenant l'ensemble des résultats dans le dossier de sortie désigné.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Didacticiels : À l’aide de l’adaptateur BizTalk pour PeopleSoft Enterprise](../core/tutorials-using-biztalk-adapter-for-peoplesoft-enterprise.md)
+ [Didacticiels : Utilisation de l’adaptateur BizTalk pour PeopleSoft Enterprise](../core/tutorials-using-biztalk-adapter-for-peoplesoft-enterprise.md)

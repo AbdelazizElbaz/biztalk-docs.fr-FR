@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2c717d23886860363ca9c94d1eec79195f873fff
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9357c172ff538bce73d3618739f3db4f98141814
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3b-add-a-fileact-receive-location-for-the-fileact-store-and-forward-scenario"></a>Étape 3 b : ajouter un FILEACT emplacement de réception pour et le scénario de transfert de FileAct
 Avant de commencer cette étape, vous devez effectuer [étape 3 a : ajouter un emplacement de réception de fichiers pour et le scénario de transfert de FileAct](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-fileact-store-and-forward-scenario.md).  
@@ -41,13 +41,13 @@ Avant de commencer cette étape, vous devez effectuer [étape 3 a : ajouter un 
     |------------------|--------------------|  
     |**Mot de passe**|Tapez le mot de passe que vous utilisez pour vous connecter à des trous. Pour plus d’informations, consultez l’aide d’anti-COULURE.|  
     |**Nom d'utilisateur**|Tapez le nom d’utilisateur que vous utilisez pour vous connecter à des trous.|  
-    |**Nom de l’application**|Le serveur de type \<Interface nom_application > pour les trous zone jeu de routage.|  
+    |**Nom de l’application**|Le serveur de type \<nom de l’Interface\> pour les trous zone jeu de routage.|  
     |**Mode de chiffrement**|Dans la liste déroulante, sélectionnez **avancé**.|  
     |**Mode FACrypto**|Dans la liste déroulante, sélectionnez **avancé**.|  
     |**LogMessages**|Dans la liste déroulante, sélectionnez **TRUE**. Ainsi, les événements de message capturées et de suivi dans le portail BAM.|  
     |**MemberRef**|Dans la liste déroulante, sélectionnez **ResponsePayload**.|  
     |**Indicateur de non répudiation**|Dans la liste déroulante, sélectionnez **FALSE**.|  
-    |**Répondeur**|Tapez la commande appropriée \<répondeur > chaîne, en fonction de votre configuration avec SWIFT.|  
+    |**Répondeur**|Tapez la commande appropriée \<répondeur\> chaîne, en fonction de votre configuration avec SWIFT.|  
     |**ResponseCrypto**|Dans la liste déroulante, sélectionnez **FALSE**.|  
     |**Indicateur d’accusé de réception**|Dans la liste déroulante, sélectionnez **ResponsePayload**.|  
     |**FileCompression**|Dans la liste déroulante, sélectionnez aucun.|  
@@ -80,4 +80,4 @@ Avant de commencer cette étape, vous devez effectuer [étape 3 a : ajouter un 
  [Étape 3 : Créer des Ports d’envoi et Ports de réception d’et le scénario de transfert de FileAct](../../adapters-and-accelerators/fileact-interact/step-3-create-send-ports-and-receive-ports-for-the-fileact-store-and-forward.md)   
  [Étape 3 a : ajouter un fichier emplacement de réception pour et le scénario de transfert de FileAct](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-fileact-store-and-forward-scenario.md)   
  [Étape 3c : ajouter un Port d’envoi FILE pour capturer les Messages Sw:HandleFileRequest et Sw:HandleSnFRequest pour et le scénario de transfert de FileAct](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlefilerequest-and-sw-handlesnfrequest.md)   
- [Étape 3D : ajouter un Port d’envoi FILEACT pour et le scénario de transfert de FileAct](../../adapters-and-accelerators/fileact-interact/step-3d-add-a-fileact-send-port-for-the-fileact-store-and-forward-scenario.md)
+ [Étape 3D : Ajouter un port d’envoi FILEACT pour le scénario de stockage et de redirection FileAct](../../adapters-and-accelerators/fileact-interact/step-3d-add-a-fileact-send-port-for-the-fileact-store-and-forward-scenario.md)

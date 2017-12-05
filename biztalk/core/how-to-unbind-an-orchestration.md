@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ce49c3e74846fac5943bda522d11218410f428ee
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 38b8adc77e5e8579339931e49abb501f9981e5fc
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="unbind-an-orchestration"></a>Annuler la liaison d’une Orchestration
 
@@ -37,11 +37,11 @@ Cette rubrique décrit comment supprimer des liaisons d'hôte, de port de récep
   
 3.  Cliquez sur **Orchestrations**, avec le bouton droit de l’orchestration, cliquez sur **propriétés**, puis cliquez sur **liaisons** dans le volet gauche.  
   
-4.  Pour supprimer les liaisons d’hôte, à partir de la **hôtes** liste, sélectionnez  **\<aucun >**.  
+4.  Pour supprimer les liaisons d’hôte, à partir de la **hôtes** liste, sélectionnez  **\<aucun\>**.  
   
-5.  Pour supprimer les liaisons de port de réception à partir de la liste déroulante sous **Ports de réception**, cliquez sur  **\<aucun >**.  
+5.  Pour supprimer les liaisons de port de réception à partir de la liste déroulante sous **Ports de réception**, cliquez sur  **\<aucun\>**.  
   
-6.  Pour supprimer les liaisons de port d’envoi, dans la liste déroulante sous **groupes de ports d’envoi d’envoi**, cliquez sur  **\<aucun >**.  
+6.  Pour supprimer les liaisons de port d’envoi, dans la liste déroulante sous **groupes de ports d’envoi d’envoi**, cliquez sur  **\<aucun\>**.  
   
 7.  Lorsque vous avez terminé de supprimer les liaisons, cliquez sur **OK**.  
   

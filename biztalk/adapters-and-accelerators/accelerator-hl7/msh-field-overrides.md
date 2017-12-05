@@ -17,11 +17,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 82603ded113fa25c839661fb7874d97f8b3bb074
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7303de4a8054cfe9f7140bd6eb548c228248777c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="msh-field-overrides"></a>Remplacements de champ de MSH
 Chaque message HL7 a un en-tête de message. À l’aide de [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)], vous pouvez remplacer toute valeur d’en-tête de message en fonction de vos besoins professionnels. Vous utilisez la [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer **MSH carte** onglet manuellement surcharger valeurs d’en-tête de message sans utiliser tout mappage ou une orchestration.  
@@ -37,7 +37,7 @@ Chaque message HL7 a un en-tête de message. À l’aide de [!INCLUDE[btaBTAHL7N
   
 #### <a name="to-open-btahl7-configuration-explorer"></a>Pour ouvrir l’Explorateur de Configuration de BTAHL7  
   
--   Cliquez sur **Démarrer**, cliquez sur **programmes**, cliquez sur **Microsoft BizTalk \<version > Accelerator pour HL7**, puis cliquez sur **BTAHL7 L’Explorateur de configuration**.  
+-   Cliquez sur **Démarrer**, cliquez sur **programmes**, cliquez sur **Microsoft BizTalk \<version\> Accelerator pour HL7**, puis cliquez sur  **BTAHL7 L’Explorateur de Configuration**.  
   
 #### <a name="to-configure-msh-field-overrides"></a>Pour configurer des remplacements de champ MSH  
   
@@ -63,4 +63,4 @@ Chaque message HL7 a un en-tête de message. À l’aide de [!INCLUDE[btaBTAHL7N
 ## <a name="see-also"></a>Voir aussi  
  [Configuration de journalisation](../../adapters-and-accelerators/accelerator-hl7/logging-configuration.md)   
  [Le traitement par lots du message](../../adapters-and-accelerators/accelerator-hl7/message-batching.md)   
-[Journalisation opérationnelle, le traitement par lot des messages, paramètres de validation et asknowledgment](../../adapters-and-accelerators/accelerator-hl7/operational-logging-message-batching-validation-and-asknowledgment-settings.md)
+[Journalisation des opérations, traitement par lot des messages, paramètres de la validation et des accusés de réception](../../adapters-and-accelerators/accelerator-hl7/operational-logging-message-batching-validation-and-asknowledgment-settings.md)

@@ -18,11 +18,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0c6731183fd4be4655d0365c1ce6277dd4052b6f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 89e46b8610114149e8618811361090d8644f82aa
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-remove-a-biztalk-assembly-from-an-application"></a>Suppression d'un assembly BizTalk d'une application
 Cette rubrique explique comment supprimer un assembly BizTalk d'une application BizTalk à l'aide de la console Administration de BizTalk Server ou de l'invite de commande. Lorsque vous effectuez cette opération, l'assembly et les artefacts qu'il contient, comme les orchestrations, schémas et pipelines, sont supprimés de la base de données de gestion BizTalk et de l'application.  
@@ -44,7 +44,7 @@ Cette rubrique explique comment supprimer un assembly BizTalk d'une application 
   
 1.  Cliquez sur **Démarrer**, cliquez sur **tous les programmes**, cliquez sur [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], puis cliquez sur **Administration de BizTalk Server**.  
   
-2.  Dans l'arborescence de la console, développez successivement Administration de [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], le groupe BizTalk contenant l'assembly BizTalk à supprimer, puis l'application le contenant.  
+2.  Dans l’arborescence de la console, développez Administration de BizTalk Server, développez le groupe BizTalk contenant l’assembly BizTalk à supprimer, puis développez l’application contenant l’assembly BizTalk.  
   
 3.  Cliquez sur le **ressources** dossier, cliquez sur l’assembly BizTalk, puis cliquez sur **supprimer**.  
   

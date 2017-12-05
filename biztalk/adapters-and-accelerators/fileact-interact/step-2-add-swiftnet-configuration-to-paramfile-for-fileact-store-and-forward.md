@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9b3048198747dd8d283ea9f7b329db27db615436
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 394e570ad9bd1c0e7532923dac9c2cc702f2f567
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-add-swiftnet-configuration-to-the-paramfile-for-the-fileact-store-and-forward-scenario"></a>Étape 2 : Ajouter SWIFTNet Configuration pour le Paramfile pour et le scénario de transfert de FileAct
 Les partenaires message créés dans les trous doivent être spécifiés dans le paramfile SWIFTNet pour activer les récepteurs initialiser avec ces valeurs.  
@@ -43,7 +43,7 @@ Complète [étape 1 : configurer l’adaptateur SWIFT pour et le scénario de t
   
      subsystem_start :  
   
-     **Création d’un « snlreceiver - SagMessagePartner \<MessagePartnerName de serveur pour fileact MSNG > - AdapterMode fileact »**  
+     **Création d’un « snlreceiver - SagMessagePartner \<MessagePartnerName de serveur pour fileact MSNG\> - AdapterMode fileact »**  
   
      * FIN  
   
@@ -92,4 +92,4 @@ Complète [étape 1 : configurer l’adaptateur SWIFT pour et le scénario de t
  [Scénario de transfert et de FileAct](../../adapters-and-accelerators/fileact-interact/fileact-store-and-forward-scenario.md)   
  [Étape 1 : Configurer l’adaptateur SWIFT pour et le scénario de transfert de FileAct](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-fileact-store-and-forward-scenario.md)   
  [Étape 3 : Créer des Ports d’envoi et Ports de réception d’et le scénario de transfert de FileAct](../../adapters-and-accelerators/fileact-interact/step-3-create-send-ports-and-receive-ports-for-the-fileact-store-and-forward.md)   
- [Étape 4 : Tester et de scénario de bout en bout avant de FileAct](../../adapters-and-accelerators/fileact-interact/step-4-test-fileact-store-and-forward-end-to-end-scenario.md)
+ [Étape 4 : Tester le scénario de stockage et de redirection FileAct de bout en bout](../../adapters-and-accelerators/fileact-interact/step-4-test-fileact-store-and-forward-end-to-end-scenario.md)

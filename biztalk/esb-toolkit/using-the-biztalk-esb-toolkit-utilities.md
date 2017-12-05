@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 36902e2c5e90ce1b02f40f6994f150fa4c421c7f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: db4a8ef2def05e0b77d272463d7a79f937623b1a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-the-biztalk-esb-toolkit-utilities"></a>À l’aide d’utilitaires BizTalk ESB Toolkit
 Cette section décrit les différents utilitaires inclus dans le cadre de la [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)].  
@@ -33,17 +33,17 @@ Cette section décrit les différents utilitaires inclus dans le cadre de la [!I
   
  Il peut accepter divers paramètres sont les suivants :  
   
- / ? : \<Présentent les paramètres qui aident à >  
+ / ? : \<Présentent les paramètres qui aident à\>  
   
- / f: \<chemin d’accès au fichier de feuille de route xml >  
+ / f: \<chemin de fichier xml de feuille de route\>  
   
- / c: \<publié &#124; déployé >  
+ / c: \<publié &#124; déployé\>  
   
- / n: \<nom de la feuille de route par défaut >  
+ / n: \<nom de la feuille de route par défaut\>  
   
- / v: \<version de feuille de route par défaut (format « major.minor ») >  
+ / v: \<version de feuille de route par défaut (format « major.minor »)\>  
   
- /o : \<remplacer en mode silencieux >  
+ /o : \<remplacer en mode silencieux\>  
   
  Voici quelques exemples d’utilisation de cet utilitaire.  
   

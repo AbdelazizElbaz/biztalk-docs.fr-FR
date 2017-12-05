@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2e47c269516ba73ab1e61664d200db207110e98e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4c1b69c522f01f2561ea8145c11dec3e36b5cd4e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="execute-stored-procedures-having-a-for-xml-clause-in-sql-server-using-biztalk-server"></a>Exécuter des procédures stockées ayant une clause FOR XML dans SQL Server à l’aide de BizTalk Server
 Une instruction SQL SELECT peut avoir une clause FOR XML qui retourne le résultat de requête au format XML au lieu d’un ensemble de lignes. Vous pouvez également avoir une procédure stockée qui a une instruction SELECT avec une clause FOR XML. [FOR XML (SQL Server)](https://msdn.microsoft.com/library/ms178107.aspx) contient des informations supplémentaires.
@@ -86,7 +86,7 @@ FROM [Adapt_Doc].[dbo].[Employee] for xml auto, xmlschema
   
          Pour cela, car vous avez déjà ajouté le schéma sqltypes.xsd à votre projet BizTalk.  
   
-    4.  Fournir un espace de noms cible du schéma. Cliquez sur le  **\<schéma >** nœud et dans le volet Propriétés, spécifiez un espace de noms dans le **cible Namespace** propriété. Pour cette rubrique, donnez à l’espace de noms `http://ForXmlStoredProcs/namespace`.  
+    4.  Fournir un espace de noms cible du schéma. Cliquez sur le  **\<schéma\>**  nœud et dans le volet Propriétés, spécifiez un espace de noms dans le **cible Namespace** propriété. Pour cette rubrique, donnez à l’espace de noms `http://ForXmlStoredProcs/namespace`.  
   
 ## <a name="generating-schema-for-the-request-message-to-invoke-the-stored-procedure"></a>Génération du schéma du Message de demande appeler la procédure stockée  
  Pour générer le schéma du message de requête que vous pouvez utiliser la [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] à partir d’un projet BizTalk dans [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]. Pour cette rubrique, générez le schéma pour la procédure stockée de GET_EMP_DETAILS_FOR_XML. Pour plus d’informations sur la façon de générer le schéma à l’aide de [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], consultez [récupérer des métadonnées pour les opérations de SQL Server dans Visual Studio à l’aide de l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/get-metadata-for-sql-server-operations-in-visual-studio-using-the-sql-adapter.md).  
@@ -227,9 +227,9 @@ FROM [Adapt_Doc].[dbo].[Employee] for xml auto, xmlschema
  L’orchestration consomme le message et l’envoie à la base de données SQL Server. La réponse à partir de la base de données SQL Server est enregistrée dans l’autre emplacement de fichier définie dans le cadre de l’orchestration. Par exemple, la réponse à partir de la base de données SQL Server pour le précédent message de demande est la suivante :  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <Root xmlns="http://ForXmlStoredProcs/namespace">  
-  \<Adapt_Doc.dbo.Employee Employee_ID="10765" Name="John" Designation="asdfaf" Salary="3434.00" Last_Modified="AAAAAAAANso=" Status="0" xmlns="" />  
+  <Adapt_Doc.dbo.Employee Employee_ID="10765" Name="John" Designation="asdfaf" Salary="3434.00" Last_Modified="AAAAAAAANso=" Status="0" xmlns="" />  
 </Root>  
 ```  
   
@@ -239,4 +239,4 @@ FROM [Adapt_Doc].[dbo].[Employee] for xml auto, xmlschema
  Après avoir déployé et configuré le projet BizTalk, vous pouvez exporter les paramètres de configuration dans un fichier XML appelé le fichier de liaison. Une fois que vous générez un fichier de liaison, vous pouvez importer les paramètres de configuration à partir du fichier, afin que vous n’avez pas besoin de créer des éléments tels que les ports d’envoi et ports de réception d’une même orchestration. Pour plus d’informations sur les fichiers de liaison, consultez [réutiliser les liaisons de l’adaptateur](../../adapters-and-accelerators/adapter-sql/reuse-sql-adapter-bindings.md).  
   
 ## <a name="see-also"></a>Voir aussi  
-[Développer des applications BizTalk à l’aide de l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)
+[Développer des applications BizTalk avec l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)

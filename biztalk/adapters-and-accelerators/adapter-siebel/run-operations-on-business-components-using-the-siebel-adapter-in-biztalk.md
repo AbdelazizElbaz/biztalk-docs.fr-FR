@@ -15,11 +15,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aa99f6ec1bbc5ff817fecae67c9ad558face581f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b3fc90d0798e3fca420e567d1a50c58607db4ae3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="run-operations-on-business-components-using-biztalk-server-and-the-siebel-adapter"></a>Exécuter des opérations sur les composants de métier à l’aide de BizTalk Server et de l’adaptateur Siebel
 Le [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] couvre les opérations qui peuvent être appelées sur un composant d’entreprise. Les opérations sur les composants d’entreprise peuvent être classées comme :  
@@ -190,7 +190,7 @@ Le [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] cou
  L’orchestration consomme le message de demande et les transmet au système Siebel. La réponse à partir du système Siebel est enregistrée dans l’autre emplacement de fichier définie dans le cadre de l’orchestration. Par exemple, la réponse du système Siebel pour le message de demande ci-dessus est :  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <InsertResponse xmlns="http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Operation">  
   <InsertResult>  
     <string xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">1-8ANYV</string>  

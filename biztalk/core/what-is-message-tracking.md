@@ -23,11 +23,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c898c2a30d883da4507957c62a0acb75e56a71b3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0d76a4bd4133906a7949fac9e63816168506f412
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="what-is-message-tracking"></a>Qu'est-ce que le suivi des messages ?
 Un message est une instance électronique de données, échangée, par exemple, entre deux processus d'entreprise ou applications en cours d'exécution. Une instance de message est constituée d'un corps de message, de propriétés de message et de métadonnées.  
@@ -38,7 +38,7 @@ Un message est une instance électronique de données, échangée, par exemple, 
  Le suivi des corps de message permet de conserver une trace des messages envoyés et reçus. Pour enregistrer des messages une fois le traitement des instances de service terminé, vous devez activer le suivi du corps des messages. Après avoir activé les options de suivi, vous devez parfois attendre plusieurs minutes avant de pouvoir afficher les messages.  
   
 > [!IMPORTANT]
->  Le service SQL Server Agent doit être en cours d'exécution sur toutes les bases de données MessageBox. Le TrackedMessages_Copy_\<Nommessagebox > au travail, les corps de message disponibles pour le suivi des requêtes et WMI. Pour une copie efficace des corps de message, ils restent dans la base de données MessageBox et sont régulièrement copiés à la base de données des suivis BizTalk (BizTalkDTADb) par le TrackedMessages_Copy_\<Nommessagebox > tâche. Pour que le processus d'archivage et de purge s'effectue correctement, le service SQL Server Agent doit également être en cours d'exécution.  
+>  Le service SQL Server Agent doit être en cours d'exécution sur toutes les bases de données MessageBox. Le TrackedMessages_Copy_\<Nommessagebox\> au travail, les corps de message disponibles pour le suivi des requêtes et WMI. Pour une copie efficace des corps de message, ils restent dans la base de données MessageBox et sont régulièrement copiés à la base de données des suivis BizTalk (BizTalkDTADb) par le TrackedMessages_Copy_\<Nommessagebox\> travail. Pour que le processus d'archivage et de purge s'effectue correctement, le service SQL Server Agent doit également être en cours d'exécution.  
   
  Vous pouvez utiliser les messages suivis pour fournir une confirmation de réception, activer le dépannage et autoriser l'exploration des données des transactions historiques. Vous pouvez effectuer le suivi des corps de message au niveau des entrées et des sorties des ports, des pipelines et des orchestrations. Vous pouvez récupérer ces messages à l'aide de la console Administration de BizTalk Server, du modèle OM (Operations object model) (recommandé) ou des API (interfaces de programmation d'application) WMI (Windows Management Instrumentation).  
   

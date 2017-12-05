@@ -16,11 +16,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 23525d3b2f72d59e2b0f44257c707f22e6bc2bab
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ce8a5cf43cd1d6e455492a74985edb91f2cb0a94
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-create-affiliate-applications-for-host-initiated-sso"></a>Comment créer des Applications associées pour l’authentification unique initiée par l’hôte
 Vous pouvez définir deux types d'applications :  
@@ -45,9 +45,9 @@ Vous pouvez définir deux types d'applications :
   
 2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
-4.  Type **ssomanage – createapps \<AffApp.xml >**, où AffApp.xml est le nom du fichier xml.  
+4.  Type **ssomanage – createapps \<AffApp.xml\>**, où AffApp.xml est le nom du fichier xml.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -76,9 +76,9 @@ Vous pouvez définir deux types d'applications :
   
 2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
-4.  Type **ssomanage – createapps \<AffApp.xml >**, où AffApp.xml est le nom du fichier xml.  
+4.  Type **ssomanage – createapps \<AffApp.xml\>**, où AffApp.xml est le nom du fichier xml.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -107,9 +107,9 @@ Vous pouvez définir deux types d'applications :
   
 2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
-4.  Type **ssomanage – createapps \<AffApp.xml >**, où AffApp.xml est le nom du fichier xml.  
+4.  Type **ssomanage – createapps \<AffApp.xml\>**, où AffApp.xml est le nom du fichier xml.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -133,4 +133,4 @@ Vous pouvez définir deux types d'applications :
     ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [L’authentification unique initiée par l’hôte](../core/host-initiated-sso.md)
+ [Authentification unique initiée par l’hôte](../core/host-initiated-sso.md)

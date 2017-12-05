@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 322a97aba4ec5e02cf754106df30b0c9f0088e1b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f8561156091c992e9329ef7d9627589eff9e0ed6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-detect-configuration-issues-for-a-functoid"></a>Détection des problèmes de configuration d'un fonctoid
 Vous pouvez rencontrer des problèmes de configuration d'un fonctoid et/ou d'un lien dans le cadre de l'utilisation des mappages. Le Mappeur BizTalk utilise un mécanisme de visualisation facilitant l'identification rapide des problèmes associés à la configuration d'un fonctoid. Cette indication visuelle est rendu sous la forme d’une annotation d’avertissement sur l’icône du fonctoid (pour par exemple, ![Functoid IntelliSense](../core/media/mapper-functoidintellisense.gif "Mapper_FunctoidIntelliSense")) dans la vue de relation. Cette rubrique fournit des informations sur la détection des problèmes de configuration d'un fonctoid.  
@@ -38,11 +38,11 @@ Vous pouvez rencontrer des problèmes de configuration d'un fonctoid et/ou d'un 
   
          ![Détection d’erreur dans la configuration du fonctoid](../core/media/errordetectionfunctoid.gif "ErrorDetectionFunctoid")  
   
-    -   double-cliquer sur le fonctoid. Le **configurer \<fonctoid > fonctoid** boîte de dialogue affiche des icônes d’avertissement sur les paramètres d’entrée. Ceci indique que les paramètres d'entrée du fonctoid sélectionné ne sont pas configurés.  
+    -   double-cliquer sur le fonctoid. Le **configurer \<fonctoid\> fonctoid** boîte de dialogue affiche des icônes d’avertissement sur les paramètres d’entrée. Ceci indique que les paramètres d'entrée du fonctoid sélectionné ne sont pas configurés.  
   
          La figure suivante affiche des informations d'erreur sur les paramètres d'entrée du fonctoid « Addition ».  
   
          ![Avertissement affiché lorsque le fonctoid n’est pas configuré](../core/media/configure-input-parameters-warningicon.gif "Configure_input_parameters_WarningIcon")  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide des fonctionnalités améliorées dans le Mappeur BizTalk](../core/using-enhanced-features-in-biztalk-mapper.md)
+ [Utilisation de fonctionnalités améliorées dans le Mappeur BizTalk](../core/using-enhanced-features-in-biztalk-mapper.md)

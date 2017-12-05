@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2bead22f33bbe38cb8deac3a201121438d344c09
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 67c937ae0edb1698991ad111622a582ebfc64d76
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="monitoring-applications"></a>Analyse des Applications
 Configuration de Microsoft System Center Operations Manager pour surveiller BizTalk applications généralement peuvent être réparties dans un processus en quatre étapes progressif comme suit :  
@@ -51,9 +51,9 @@ Configuration de Microsoft System Center Operations Manager pour surveiller BizT
   
 4.  **Utilisez les règles de seuil pour automatiser des tâches manuelles**  
   
-     L’étape suivante de traitement consiste à déplacer au-delà de la génération d’alertes réactive et d’utiliser des règles de seuil. Le [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] Pack d’administration ne contient pas toutes les règles de seuil par défaut. Il s’agit, car ces règles sont généralement spécifiques à l’application personnalisée et sont différents pour chaque application. Un seuil représente une règle d’entreprise concernant l’application personnalisée et fournit un moyen proactive de surveillance d’un système. Vous pouvez utiliser le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] fournis avec l’outil performances analyse des journaux (PAL) pour définir des règles de modèles de seuil.  
+     L’étape suivante de traitement consiste à déplacer au-delà de la génération d’alertes réactive et d’utiliser des règles de seuil. Le Pack d’administration de BizTalk Server ne contient pas toutes les règles de seuil par défaut. Il s’agit, car ces règles sont généralement spécifiques à l’application personnalisée et sont différents pour chaque application. Un seuil représente une règle d’entreprise concernant l’application personnalisée et fournit un moyen proactive de surveillance d’un système. Vous pouvez utiliser le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] fournis avec l’outil performances analyse des journaux (PAL) pour définir des règles de modèles de seuil.  
   
      Un exemple d’une règle de seuil de ce type consiste à mesurer les lorsque les processeurs sur un serveur exécuté constamment supérieure à 75 % pour une période spécifique. Cela peut indiquer que vous devez faire évoluer le système. Encore un autre exemple est lorsque vous créez une règle de seuil qui analyse un ensemble unique de compteurs. Cette règle peut ensuite appeler le code pour initialiser les instances d’hôte BizTalk sur un serveur de sauvegarde précédemment configuré pendant les périodes de forte demande.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Analyse de BizTalk Server avec System Center Operations Manager 2007](../technical-guides/monitoring-biztalk-server-with-system-center-operations-manager-2007.md)
+ [Surveillance de BizTalk Server avec System Center Operations Manager 2007](../technical-guides/monitoring-biztalk-server-with-system-center-operations-manager-2007.md)

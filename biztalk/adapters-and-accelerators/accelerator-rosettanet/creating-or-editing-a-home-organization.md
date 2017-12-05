@@ -19,11 +19,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4bc8a298686772d354c934d76fbcb7dbbb8146f8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1027e30e847c4f35b9270083ad56074967072467
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-or-editing-a-home-organization"></a>Création ou modification d’une organisation d’origine
 Cette rubrique décrit comment créer ou modifier une organisation d’origine. La configuration de l’organisation d’origine décrit classifie l’organisation, définit la non répudiation de la période d’origine et fournit des informations de contact.  
@@ -68,10 +68,10 @@ Cette rubrique décrit comment créer ou modifier une organisation d’origine. 
   
 4.  Avec le bouton droit de l’organisation d’origine vous souhaitez modifier, puis cliquez sur **propriétés**.  
   
-5.  Dans le  *\<organisation d’accueil >* boîte de dialogue des propriétés du **général** et **propriétés Contact** onglets, modifier les paramètres en fonction des besoins. Pour plus d'informations sur ces paramètres, consultez le tableau précédent.  
+5.  Dans le  *\<organisation d’accueil\>*  boîte de dialogue des propriétés du **général** et **propriétés Contact** onglets, modifier les paramètres en fonction des besoins. Pour plus d'informations sur ces paramètres, consultez le tableau précédent.  
   
 6.  Cliquez sur **OK**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Gérer la configuration, les certificats, les bases de données et la sécurité](manage-configuration-certificates-databases-security.md)   
- [Administration de la Configuration de BTARN](../../adapters-and-accelerators/accelerator-rosettanet/administering-the-btarn-configuration.md)
+ [Administration de la configuration de BTARN](../../adapters-and-accelerators/accelerator-rosettanet/administering-the-btarn-configuration.md)

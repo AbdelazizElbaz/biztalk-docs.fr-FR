@@ -19,11 +19,11 @@ caps.latest.revision: "28"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7d9770a2d9e4977ec23c8ff4013d5415c75087d3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: af87c78ef632ea9794d725cb70440d62371c349e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="multiserver-deployment"></a>Déploiement multiserveur
 Cette rubrique décrit les considérations relatives à la configuration et au déploiement multiserveur de l'adaptateur [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] pour Windows SharePoint Services.  
@@ -115,7 +115,7 @@ Cette rubrique décrit les considérations relatives à la configuration et au d
   
 -   Sous [!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)], l'identité sous laquelle le service Web Adaptateur SharePoint est exécuté nécessite les autorisations suivantes :  
   
-     **Lecture** autorisations sur le **Program Files\Microsoft BizTalk Server \<version > \Business Activity Services\BTSharePointV3AdapterWS** dossier. Si vous utilisez une version 64 bits de Windows et [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], les autorisations doivent être définies sur le **Program Files (x86) \Microsoft BizTalk Server \<version > \Business Activity Services\BTSharePointV3AdapterWS**  
+     **Lecture** autorisations sur le **Program Files\Microsoft BizTalk Server \<version\>\Business Activity Services\BTSharePointV3AdapterWS** dossier. Si vous utilisez une version 64 bits de Windows et [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], les autorisations doivent être définies sur le **Program Files (x86) \Microsoft BizTalk Server \<version\>\Business Activity Services\BTSharePointV3AdapterWS**  
   
      **Lecture** autorisation sur la clé de Registre suivante : **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\Web Server\Extensions\12.0\Secure\ConfigDB**.  
   
@@ -153,4 +153,4 @@ Cette rubrique décrit les considérations relatives à la configuration et au d
   
 ## <a name="see-also"></a>Voir aussi  
  [Adaptateur Windows SharePoint Services](../core/windows-sharepoint-services-adapter.md)   
- [Déploiement de serveur unique](../core/single-server-deployment.md)
+ [Déploiement monoserveur](../core/single-server-deployment.md)

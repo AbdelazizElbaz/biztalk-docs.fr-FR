@@ -15,11 +15,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e00514515b31e79655fe457e1aa8682edf002183
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ebb2003cc6091e3f14bd863902e03649d9005722
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-use-the-trace-utility-in-host-initiated-sso"></a>L’authentification initiée par l’utilisation de l’utilitaire de suivi dans l’hôte
 La principale méthode de résolution des problèmes est le suivi.  
@@ -30,7 +30,7 @@ La principale méthode de résolution des problèmes est le suivi.
 > [!NOTE]
 >  Pour que la commande de suivi fonctionne, le fichier tracelog.exe doivent être dans le répertoire suivant :  
 >   
->  \<*lecteur*> : \Program Files\Enterprise Single Sign-On  
+>  \<*lecteur*\>: \Program Files\Enterprise Single Sign-On  
   
 > [!NOTE]
 >  Vous pouvez télécharger ce fichier à partir de l’emplacement suivant : [http://go.microsoft.com/fwlink/?LinkId=59534](http://go.microsoft.com/fwlink/?LinkId=59534)  
@@ -41,7 +41,7 @@ La principale méthode de résolution des problèmes est le suivi.
   
 2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
 4.  Type **Trace – start – high** pour définir le niveau de suivi élevé et lancer le suivi.  
   
@@ -50,4 +50,4 @@ La principale méthode de résolution des problèmes est le suivi.
 6.  Type **Trace – stop** à la fin de la trace. Un fichier .bin est généré dans le répertoire ci-dessus, que vous pouvez envoyer à Microsoft à des fins d'analyse.  
   
 ## <a name="see-also"></a>Voir aussi  
- [L’authentification unique initiée par l’hôte](../core/host-initiated-sso.md)
+ [Authentification unique initiée par l’hôte](../core/host-initiated-sso.md)

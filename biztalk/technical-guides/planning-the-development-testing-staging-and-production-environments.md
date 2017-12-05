@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e5572ab96215d07570a39f53009eae3038792db8
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: c52fc2ae61d4e261a729de702a2fbffbde3fd1bd
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="planning-the-development-testing-staging-and-production-environments"></a>Planification du développement, test, intermédiaire et les environnements de Production
 Cette rubrique décrit les environnements utilisées dans le processus de gestion de version d’une solution BizTalk. Comme avec toute solution de logiciels d’entreprise, vous devez suivre les instructions de gestion de version logicielle établie lorsque vous développez et libérer une solution BizTalk. Ce processus doit inclure les étapes distinctes suivantes :  
@@ -43,7 +43,7 @@ Cette rubrique décrit les environnements utilisées dans le processus de gestio
 >  Pour obtenir des recommandations sur l’utilisation de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] dans un environnement virtuel, consultez [Guide BizTalk Server 2009 Hyper-V](http://go.microsoft.com/fwlink/?LinkId=151834) (http://go.microsoft.com/fwlink/?LinkId=151834).  
   
 > [!NOTE]  
->  [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]est entièrement pris en charge sur un système d’exploitation pris en charge qui s’exécute sur le logiciel de virtualisation répertoriées dans le 842301 de l’Article de Base de connaissances Microsoft [prise en charge de Microsoft BizTalk Server sur un ordinateur virtuel](https://support.microsoft.com/kb/842301). Toutefois, [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] ne s’avèrent pas comme prévu si installé sur un système d’exploitation pris en charge qui s’exécute dans un logiciel de virtualisation différent de ceux mentionnés dans l’article.  
+>  BizTalk Server est entièrement pris en charge sur un système d’exploitation pris en charge qui s’exécute sur le logiciel de virtualisation répertoriées dans le 842301 de l’Article de Base de connaissances Microsoft [prise en charge de Microsoft BizTalk Server sur un ordinateur virtuel](https://support.microsoft.com/kb/842301). Toutefois, BizTalk Server ne peut pas effectuer comme prévu si installé sur un système d’exploitation pris en charge qui s’exécute dans un logiciel de virtualisation différent de ceux mentionnés dans l’article.  
   
 ## <a name="development-environment"></a>Environnement de développement  
  Les projets BizTalk qui sont utilisées pour la solution BizTalk sont créés dans l’environnement de développement. Vous devez installer les logiciels suivants sur les ordinateurs utilisés dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environnement de développement :  

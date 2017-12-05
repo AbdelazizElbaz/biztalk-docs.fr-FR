@@ -16,11 +16,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a64c4764459eecd0d1a4fceedf7a7e8e61159503
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4d5e9604e950710911d4324d5b329173d184617b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-publish-a-policy"></a>Publication d'une stratégie
 Cette rubrique décrit comment publier une stratégie dans un groupe BizTalk à l'aide de la console Administration de BizTalk Server. Une stratégie de publication rend disponibles à ajouter à une application BizTalk, comme décrit dans [comment ajouter une stratégie à une Application](../core/how-to-add-a-policy-to-an-application.md).  
@@ -43,7 +43,7 @@ Cette rubrique décrit comment publier une stratégie dans un groupe BizTalk à 
   
 1.  Cliquez sur **Démarrer**, cliquez sur **tous les programmes**, cliquez sur [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], puis cliquez sur **Administration de BizTalk Server**.  
   
-2.  Dans l’arborescence de la console, développez [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], développez le groupe BizTalk contenant la stratégie à publier, **Applications**, puis développez  **\<tous les artefacts >**.  
+2.  Dans l’arborescence de la console, développez [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], développez le groupe BizTalk contenant la stratégie à publier, **Applications**, puis développez  **\<tous les artefacts\>**.  
   
 3.  Cliquez sur **stratégies**, avec le bouton droit de la stratégie, puis cliquez sur **publier**.  
   

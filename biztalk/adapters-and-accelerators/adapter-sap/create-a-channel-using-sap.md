@@ -17,11 +17,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1f69fbeb86cf63485591f048ef75cdcfd3d5056d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 22a0d6e48d1a33e4d7c0aec8a1231346a671c1ef
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="create-a-channel-using-sap"></a>Créer un canal à l’aide de SAP
 Dans le modèle de canal WCF, vous pouvez appeler des opérations sur le système SAP ou recevoir des messages à partir du système SAP en échangeant des messages SOAP avec le [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] sur un canal WCF.  
@@ -99,9 +99,9 @@ channel.Open();
  Le code suivant illustre les paramètres de configuration utilisés pour l’exemple précédent. Le contrat pour le point de terminaison client doit être « System.ServiceModel.Channels.IRequestChannel » ou « System.ServiceModel.Channels.IRequestChannel » en fonction du type de la forme de canal que vous souhaitez créer.  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <configuration xmlns="http://schemas.microsoft.com/.NetConfiguration/v2.0">  
-    \<system.serviceModel>  
+    <system.serviceModel>  
         <bindings>  
             <sapBinding>  
                 <binding name="SAPBinding" closeTimeout="00:01:00" openTimeout="00:01:00"  
@@ -119,7 +119,7 @@ channel.Open();
                 binding="sapBinding" bindingConfiguration="SAPBinding" contract="System.ServiceModel.Channels.IRequestChannel"  
                 name="MyRequestChannel" />  
         </client>  
-    \</system.serviceModel>  
+    </system.serviceModel>  
 </configuration>  
 ```  
   
@@ -134,7 +134,7 @@ channel.Open();
   
 3.  Créer un **BindingParameterCollection** et ajoutez un **InboundActionCollection** qui contient les actions des opérations que vous souhaitez recevoir. L’adaptateur renvoie une exception au système SAP pour toutes les autres opérations. Cette étape est facultative. Pour plus d’informations, consultez [recevoir des opérations de trafic entrant à partir du système SAP à l’aide du modèle de canal WCF](../../adapters-and-accelerators/adapter-sap/receive-inbound-operations-from-the-sap-system-using-the-wcf-channel-model.md).  
   
-4.  Créer un écouteur de canal en appelant **BuildChannelListener\<IReplyChannel >** méthode sur le **SAPBinding**. Vous spécifiez l’URI de connexion SAP comme l’un des paramètres pour cette méthode. L’URI de connexion doit contenir des paramètres pour une Destination RFC sur le système SAP. Pour plus d’informations sur l’URI de connexion SAP, consultez le [créer l’URI de connexion du système SAP](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md). Si vous avez créé un **BindingParameterCollection** à l’étape 3, vous également spécifiez cela lorsque vous créez l’écouteur de canal.  
+4.  Créer un écouteur de canal en appelant **BuildChannelListener\<IReplyChannel\>**  méthode sur le **SAPBinding**. Vous spécifiez l’URI de connexion SAP comme l’un des paramètres pour cette méthode. L’URI de connexion doit contenir des paramètres pour une Destination RFC sur le système SAP. Pour plus d’informations sur l’URI de connexion SAP, consultez le [créer l’URI de connexion du système SAP](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md). Si vous avez créé un **BindingParameterCollection** à l’étape 3, vous également spécifiez cela lorsque vous créez l’écouteur de canal.  
   
 5.  Ouvrez le port d’écoute.  
   
@@ -176,4 +176,4 @@ channel.Open();
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
-[Développer des applications à l’aide du modèle de canal WCF](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)
+[Développer des applications en utilisant le modèle de canal WCF](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)

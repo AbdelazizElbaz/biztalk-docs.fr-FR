@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8b65596e59820258df01a5655ea30adafe439674
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9787c5ac1371f6743285a151e5666d12b592a300
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-enable-notifications-services-on-additional-computers-in-a-group"></a>Activation des services de notification sur les autres ordinateurs d'un groupe
 Lorsque vous exécutez l'analyse BAM dans un environnement multiserveur, vous devez activer les services Notification Services sur tous les ordinateurs sur lesquels vous envisagez d'exécuter l'utilitaire de gestion de l'analyse BAM afin de déployer une activité.  
@@ -53,8 +53,8 @@ Lorsque vous exécutez l'analyse BAM dans un environnement multiserveur, vous de
   
 1.  Sur l’ordinateur du groupe supplémentaire, cliquez sur **Démarrer**, pointez sur **tous les programmes**, cliquez sur **Microsoft SQL Server 2005**, cliquez sur **outils de Configuration**, puis cliquez sur **invite de commandes de Notification Services**.  
   
-2.  À l’invite de commandes, tapez : **nscontrol register - nom \<NS du préfixe de nom choisie au config >-server \<serveur ns db sql >**. Cette commande permet à Notification Services de se connecter à la base de données appropriée (ces informations sont conservées par nscontrol dans le registre de l'ordinateur du service).  
+2.  À l’invite de commandes, tapez : **nscontrol register - nom \<NS du préfixe de nom choisie au config\> -server \<serveur ns db sql\>**. Cette commande permet à Notification Services de se connecter à la base de données appropriée (ces informations sont conservées par nscontrol dans le registre de l'ordinateur du service).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Modification des paramètres d’exécution BAM](../core/changing-bam-runtime-settings.md)   
- [Utilitaire de gestion BAM](../core/bam-management-utility.md)
+ [Utilitaire de gestion de l’analyse BAM](../core/bam-management-utility.md)

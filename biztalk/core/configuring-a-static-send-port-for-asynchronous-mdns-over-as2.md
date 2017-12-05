@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6ccae5741ada6db57538289911a97e2ad3d9dfce
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3e023dc6f2165e9427fa57e109715dda6cdb258f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configuring-a-static-send-port-for-asynchronous-mdns-over-as2"></a>Configuration d'un port d'envoi statique pour les MDN asynchrones via AS2
 Cette rubrique décrit la configuration de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] de manière à envoyer un message EDIINT/AS2 de façon asynchrone via un port d'envoi statique. Cette configuration inclut la création du port d'envoi statique et, le cas échéant, la configuration du certificat de chiffrement utilisé par le port d'envoi.  
@@ -32,7 +32,7 @@ Cette rubrique décrit la configuration de [!INCLUDE[btsBizTalkServerNoVersion](
 |**Propriétés du Port d’envoi : général**|Type de transport|HTTP **Remarque :** uniquement l’adaptateur HTTP peut être utilisé pour transporter les messages codés EDIINT/AS2. Ce transport ne fonctionne pas avec les autres types d'adaptateurs.|  
 |**Propriétés du Port d’envoi : général**|Gestionnaire d'envoi|BizTalkServerApplication|  
 |**Propriétés du Port d’envoi : général**|Pipeline d’envoi|AS2Send|  
-|**Propriétés du Transport HTTP**|URL de destination|\<Chaîne d’URL de destination >|  
+|**Propriétés du Transport HTTP**|URL de destination|\<Chaîne d’URL de destination\>|  
 |**Propriétés du Transport HTTP**|Activer le codage mémorisé en bloc|Désactivé|  
 |**Propriétés du Port d’envoi : filtres**|Propriété|EdiIntAS.IsAS2AsynchronousMdn **Remarque :** vous devez également spécifier des expressions de filtre supplémentaires pour vous assurer que seuls les messages MDN destinés à l’adresse spécifiée dans ce port d’envoi sont récupérées par ce filtre d’abonnement.|  
 |**Propriétés du Port d’envoi : filtres**|Opérateur|==|  
@@ -51,4 +51,4 @@ Cette rubrique décrit la configuration de [!INCLUDE[btsBizTalkServerNoVersion](
 -   acheminement du MDN vers l'adresse définie dans le port d'envoi.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Configuration des Ports pour une Solution AS2](../core/configuring-ports-for-an-as2-solution.md)
+ [Configuration des ports pour une solution AS2](../core/configuring-ports-for-an-as2-solution.md)

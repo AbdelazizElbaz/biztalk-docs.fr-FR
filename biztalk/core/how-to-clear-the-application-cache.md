@@ -16,11 +16,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eacb7a786ad2729dbbea365e70c3aba8fabed5d1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 184569a3eed693a7b699b2ad14cfb8461cc496e8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-clear-the-application-cache"></a>Comment faire pour effacer le Cache d’Application
 Le composant logiciel enfichable MMC ou l'outil de ligne de commande permet de supprimer le contenu du cache des informations d'identification (c'est-à-dire toutes les informations relatives à l'application qui leur est associée) pour une application spécifique et sur tous les serveurs d'authentification unique.  
@@ -39,13 +39,13 @@ Le composant logiciel enfichable MMC ou l'outil de ligne de commande permet de s
   
 1.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est \< *lecteur*> : \Program Files\Enterprise Single Sign-On.  
+2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est \< *lecteur*\>: \Program Files\Enterprise Single Sign-On.  
   
-3.  Type **ssomanage – purgecache  *\<nom de l’application >***, où \< *nom de l’application*> est le nom de l’application associée vous souhaitez purger le cache.  
+3.  Type **ssomanage – purgecache  *\<nom de l’application\>***, où \< *nom de l’application* \> est le nom de l’application associée que vous souhaitez purger le cache.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Applications associées SSO](../core/sso-affiliate-applications.md)   
- [Gestion des Applications associées](../core/managing-affiliate-applications.md)
+ [Gestion des applications associées](../core/managing-affiliate-applications.md)

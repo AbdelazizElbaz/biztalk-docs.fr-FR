@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e4071fd04b89681f9f7d6948798dd665b96a0c1e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4489e463257f811fe2c71efea49880940751c66a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="repairing-a-message"></a>La réparation d’un Message
 Cette section décrit comment réparer un message d’échec de la validation.  
@@ -28,9 +28,9 @@ Cette section décrit comment réparer un message d’échec de la validation.
   
 2.  Dans la fenêtre d’accueil, cliquez sur **Documents**.  
   
-3.  Dans la fenêtre de Documents sous **bibliothèques de documents**, cliquez sur  **\<* nom du service informatique*>**_** Réparateur **.  
+3.  Dans la fenêtre de Documents sous **bibliothèques de documents**, cliquez sur  **\<* nom du service informatique*\>**_** Réparateur **.  
   
-4.  Dans le \< *nom du service informatique*> _Repair fenêtre, cliquez sur **boîte de réception**.  
+4.  Dans le \< *nom du service informatique*\>_Repair fenêtre, cliquez sur **boîte de réception**.  
   
 5.  Dans la fenêtre de la boîte de réception, pointez sur le titre du message, cliquez sur la flèche à droite du titre du message, puis cliquez sur **modifier dans Microsoft Office InfoPath**.  
   
@@ -74,4 +74,4 @@ Cette section décrit comment réparer un message d’échec de la validation.
   
 16. Fermer la [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] fenêtre.  
   
-17. Dans le site MRSR, cliquez sur **Documents**. Si vous avez cliqué sur **accepter** pour accepter les modifications apportées à l’étape 11, vérifiez que le  *\<nom service >*bibliothèque de documents _ReKeyVerify contient le message que vous venez de réparer. Si vous avez cliqué sur **rejeter** pour rejeter les modifications apportées à l’étape 11, vérifiez que la bibliothèque de documents A4SWIFT_Outbox contient le message qui a été modifié.
+17. Dans le site MRSR, cliquez sur **Documents**. Si vous avez cliqué sur **accepter** pour accepter les modifications apportées à l’étape 11, vérifiez que le  *\<nom du service informatique\>*bibliothèque de documents _ReKeyVerify contient le message que vous venez de réparer. Si vous avez cliqué sur **rejeter** pour rejeter les modifications apportées à l’étape 11, vérifiez que la bibliothèque de documents A4SWIFT_Outbox contient le message qui a été modifié.

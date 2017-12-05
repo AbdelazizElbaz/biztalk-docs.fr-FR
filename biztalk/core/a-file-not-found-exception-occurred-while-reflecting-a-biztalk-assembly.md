@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9f13e4539fca9a14e7827afcb092af76e03f8acc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 00000896eb4cb97e44ed51602675fc65495552be
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="a-file-not-found-exception-occurred-while-reflecting-a-biztalk-assembly"></a>Une exception de fichier introuvable a été générée lors de la mise en correspondance de l'assembly BizTalk
 ## <a name="details"></a>Détails  
@@ -37,8 +37,8 @@ ms.lasthandoff: 09/20/2017
 ## <a name="user-action"></a>Action de l'utilisateur  
  Outre les actions spécifiées dans le message d'erreur, déplacez l'assembly de référence dans le Global Assembly Cache ou copiez-le dans le même emplacement que l'assembly BizTalk  
   
-1.  Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur  **[!INCLUDE[vs2010](../includes/vs2010-md.md)]** , puis cliquez sur  **[!INCLUDE[vs2010](../includes/vs2010-md.md)]** .  
+1.  Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Visual Studio**, puis cliquez sur **Visual Studio**.  
   
 2.  Ouvrez une invite de commandes.  
   
-3.  Accédez à l’emplacement de l’assembly, puis entrez **gacutil /I /\<***nom de l’assembly***> .dll**
+3.  Accédez à l’emplacement de l’assembly, puis entrez **gacutil /I /\<***nom de l’assembly***\>.dll**

@@ -12,11 +12,11 @@ caps.latest.revision: "25"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 00c603a3a0c52d735441858af6a2f602c30d1f51
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0d235fa0f6882ecd9e180aabd26999b1d7f73390
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="walkthrough-deploying-the-policy"></a>Procédure pas à pas : Déploiement de la stratégie
 Cette procédure pas à pas fournit des instructions détaillées pour déployer le **ProcessPurchaseOrder** stratégie de trois manières suivantes :  
@@ -268,7 +268,7 @@ Cette procédure pas à pas fournit des instructions détaillées pour déployer
   
 3.  Recherchez et double-cliquez sur le fichier XML (**C:\BRE-Walkthroughs\ProcessPOFromAdmin.xml**) que vous avez créé dans la première procédure.  
   
-4.  Développez  **\<tous les artefacts >** sous **Applications**.  
+4.  Développez  **\<tous les artefacts\>**  sous **Applications**.  
   
 5.  Cliquez sur **stratégies**, et vous devez voir la version 1.3 de la **ProcessPurchaseOrder** stratégie dans la liste.  
   
@@ -413,7 +413,7 @@ Cette procédure pas à pas fournit des instructions détaillées pour déployer
   
     2.  Copiez l'intégralité du fichier XML depuis le fichier BRL file contenant le vocabulaire.  
   
-    3.  Copiez le bloc de ruleset (commence par la \<ruleset > balise et se termine par le \</ruleset > balise) à partir de la deuxième fichier BRL.  
+    3.  Copiez le bloc de ruleset (commence par la \<ruleset\> balise et se termine par le \</ruleset\> balise) à partir de la deuxième fichier BRL.  
   
     4.  Enregistrez le nouveau fichier. Vous pouvez importer ce fichier XML unique pour créer le **POVocabulary** vocabulaire et **ProcessPurchaseOrder** stratégie.  
   

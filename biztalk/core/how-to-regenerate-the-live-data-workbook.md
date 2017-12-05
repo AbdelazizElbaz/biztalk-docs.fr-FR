@@ -12,14 +12,14 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8fcabebb1429fae8531753a8a3aede5595bb148f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e3e98ac5f02363c02ff422f44397fbf1f0e3b4c0
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-regenerate-the-live-data-workbook"></a>Régénération du classeur des données actives
-En cas de perte ou d'altération du classeur BAM de données actives, l'utilitaire de gestion de l'analyse BAM permet de regénérer ce classeur. Ceci est également utile lorsque vous voulez effectuer une mise à niveau de [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] à [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], car les classeurs de données actives [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] ne sont pas compatibles avec [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)].  
+En cas de perte ou d'altération du classeur BAM de données actives, l'utilitaire de gestion de l'analyse BAM permet de regénérer ce classeur. Ce processus est également utile lorsque vous mettez à niveau à partir de [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] à BizTalk Server, depuis les classeurs de données actives [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] ne sont pas compatibles avec BizTalk Server.  
   
  Les étapes générales sont les suivantes :  
   
@@ -27,7 +27,7 @@ En cas de perte ou d'altération du classeur BAM de données actives, l'utilitai
   
 -   Recréez les rapports de tableau croisé dynamique. Comme l'extraction XML effectuée avec la commande get-defxml ne contient que les activités et les vues actives, vous devez recréer les rapports de tableau croisé dynamique à l'aide du complément BAM pour Excel.  
   
--   Renommez les rapports de tableau croisé dynamique. Cette étape est nécessaire si vous effectuez une mise à niveau de [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] vers [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]. Cela est nécessaire puisque dans [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)], BAM stocke deux ensembles de noms pour les classeurs BAM : un nom complet et un nom interne. Lorsque vous extrayez une définition d'analyse BAM, le conteneur XML contient le nom interne du classeur. Vous devez renommer les rapports de tableau croisé dynamique pour vous assurer que le classeur de données actives comporte la connexion qui convient à la base de données.  
+-   Renommez les rapports de tableau croisé dynamique. Cette étape est nécessaire si vous mettez à niveau à partir de [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] à BizTalk Server. Cela est nécessaire puisque dans [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)], BAM stocke deux ensembles de noms pour les classeurs BAM : un nom complet et un nom interne. Lorsque vous extrayez une définition d'analyse BAM, le conteneur XML contient le nom interne du classeur. Vous devez renommer les rapports de tableau croisé dynamique pour vous assurer que le classeur de données actives comporte la connexion qui convient à la base de données.  
   
 -   Régénérez le classeur de données actives à l'aide de l'utilitaire de gestion de l'analyse BAM.  
   
@@ -61,12 +61,12 @@ En cas de perte ou d'altération du classeur BAM de données actives, l'utilitai
   
 1.  Ouvrez le fichier abc.xml que vous avez créé lorsque vous avez extrait les définitions BAM à l’aide du bloc-notes en cliquant sur **Démarrer**, puis sur **exécuter**, tapez notepad [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]tracking\abc.XML, puis en cliquant sur  **OK**.  
   
-2.  Recherchez le \<Caption > sous la balise \<BAMDefinition >\\< Extension\>\\< OWC\>\\< PivotTableView\>\\< Tableau croisé dynamique\>\\< PivotView\>\\< étiquette\>. Le contenu de cette balise est le nom interne de l'un des rapports de tableau croisé dynamique. Vous pouvez trouver le nom interne pour les autres rapports de tableau croisé dynamique en recherchant la prochaine \<légende > balise. Ouvrez **monnouveauclasseur.xls** et utilisez les noms que vous avez trouvés pour renommer vos rapports de tableau croisé dynamique.  
+2.  Recherchez le \<légende\> sous la balise \<BAMDefinition\>\\< Extension\>\\< OWC\>\\< PivotTableView\> \\< tableau croisé dynamique\>\\< PivotView\>\\< étiquette\>. Le contenu de cette balise est le nom interne de l'un des rapports de tableau croisé dynamique. Vous pouvez trouver le nom interne pour les autres rapports de tableau croisé dynamique en recherchant la prochaine \<légende\> balise. Ouvrez **monnouveauclasseur.xls** et utilisez les noms que vous avez trouvés pour renommer vos rapports de tableau croisé dynamique.  
   
 3.  Enregistrez le classeur mis à jour.  
   
     > [!NOTE]
-    >  Effectuez la procédure suivante uniquement si vous procédez à une mise à niveau de [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] vers [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)].  
+    >  Vous devez suivre cette procédure uniquement si vous mettez à niveau à partir de [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] à BizTalk Server.  
   
 ### <a name="to-regenerate-the-bam-live-data-workbook"></a>Pour régénérer le classeur de données actives d'analyse BAM  
   

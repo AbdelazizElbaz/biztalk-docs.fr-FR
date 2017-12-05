@@ -17,11 +17,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d5af783a5f2315aa39fc3ab49f727583b1bbf7d7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 65eb19845bf4e103b4abe2466e58fb09a96c23c9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-operations-on-the-oracle-database-using-the-wcf-channel-model"></a>Appeler des opérations sur la base de données Oracle à l’aide du modèle de canal WCF
 Vous pouvez appeler des opérations sur le [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] en utilisant un **IRequestChannel** ou **IOutputChannel** forme pour envoyer des messages à l’adaptateur. Le modèle de base consiste à créer une fabrication de canal pour la forme de canal requis à l’aide d’une liaison (**OracleDBBinding**) et un point de terminaison créé à partir d’un URI de connexion. Vous créez ensuite un **Message** instance qui représente un message SOAP qui est conforme au schéma de message pour votre opération de cible. Vous pouvez alors envoyer ce **Message** à la [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] à l’aide d’un canal créé à partir de la fabrication de canal. Si vous utilisez un **IRequestChannel**, vous recevez une réponse. S’il existe un problème d’exécution de l’opération sur la base de données Oracle, le [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] lève une **Microsoft.ServiceModel.Channels.Common.TargetSystemException**.  
@@ -71,7 +71,7 @@ Vous pouvez appeler des opérations sur le [!INCLUDE[adapteroracle_short](../../
   
 #### <a name="how-to-invoke-an-operation-by-using-an-instance-of-irequestchannel"></a>L’appel d’une opération à l’aide d’une instance de IRequestChannel  
   
-1.  Générer une fabrique de canal (**ChannelFactory\<IRequestChannel >**). Pour ce faire, vous devez spécifier une liaison (**OracleDBBinding**) et une adresse de point de terminaison. Vous pouvez spécifier l’adresse de liaison et le point de terminaison soit impérativement dans votre code ou de façon déclarative dans la configuration. Pour plus d’informations sur la façon de spécifier la liaison et l’adresse de point de terminaison dans la configuration, consultez [créer un canal à l’aide de la base de données Oracle](../../adapters-and-accelerators/adapter-oracle-database/create-a-channel-using-oracle-database.md).  
+1.  Générer une fabrique de canal (**ChannelFactory\<IRequestChannel\>**). Pour ce faire, vous devez spécifier une liaison (**OracleDBBinding**) et une adresse de point de terminaison. Vous pouvez spécifier l’adresse de liaison et le point de terminaison soit impérativement dans votre code ou de façon déclarative dans la configuration. Pour plus d’informations sur la façon de spécifier la liaison et l’adresse de point de terminaison dans la configuration, consultez [créer un canal à l’aide de la base de données Oracle](../../adapters-and-accelerators/adapter-oracle-database/create-a-channel-using-oracle-database.md).  
   
     ```  
     // Create a binding  
@@ -147,7 +147,7 @@ Vous pouvez appeler des opérations sur le [!INCLUDE[adapteroracle_short](../../
   
  Vous suivez les mêmes étapes pour envoyer un message à l’aide de la **IOutputChannel** mettre en forme, à l’exception :  
   
--   Vous créez un **ChannelFactory\<IOutputChannel >** dans l’étape 1.  
+-   Vous créez un **ChannelFactory\<IOutputChannel\>**  à l’étape 1.  
   
 -   Vous appelez le **envoyer** méthode sur le canal à l’étape 6. `channel.Send(messageIn);`.  
   
@@ -177,7 +177,7 @@ namespace RequestChanneSample
         {  
             // The Select operation request message  
             const string selectRequestString =  
-                "\<Select xmlns=\"http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/ACCOUNTACTIVITY\">" +  
+                "\<Select xmlns=\"http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/ACCOUNTACTIVITY\"\>" +  
                     "<COLUMN_NAMES>*</COLUMN_NAMES>" +  
                     "<FILTER>ACCOUNT = 100002</FILTER>" +  
                 "</Select>";  

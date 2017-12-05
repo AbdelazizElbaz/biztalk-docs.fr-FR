@@ -21,11 +21,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6267689c46c66cc2ab791313d55cb46884190473
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 75b2b339c99dcf1b64368c73381d1dbe81e0fb39
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-event-tracing-for-windows"></a>À l’aide d’événements de suivi pour Windows
 L'adaptateur Microsoft BizTalk pour TIBCO Enterprise Message Service consigne des messages d'erreur, d'avertissement et d'informations dans l'Observateur d'événements Windows. Vous pouvez visualiser des messages de suivi supplémentaires à l'aide de l'outil Suivi d’événements pour Windows (ETW). Lorsqu'il est activé, cet outil crée un fichier *.etl pour recevoir les messages. Ce fichier au format binaire doit être converti pour être lu. Pour ce faire, vous devez disposer d’une application consommateur capable d’interpréter le \*fichier .etl, par exemple, tracerpt.exe ou tracedmp.exe. Par exemple, l’application tracerpt.exe convertit le \*fichier .etl dans deux fichiers texte : summary.txt et dumpfile.csv.  
@@ -44,7 +44,7 @@ L'adaptateur Microsoft BizTalk pour TIBCO Enterprise Message Service consigne de
   
      Pour que l'application consommateur puisse lire les événements dans le fichier .etl, l'outil Suivi d'événements pour Windows doit les vider dans ce fichier. Généralement, cette opération est effectuée lorsque le contrôleur désactive le suivi.  
   
-     Pour utiliser l’application consommateur sans désactiver le suivi, le contrôleur doit activer le suivi avec l’option en temps réel, \<en temps réel > = -rt.  
+     Pour utiliser l’application consommateur sans désactiver le suivi, le contrôleur doit activer le suivi avec l’option en temps réel, \<en temps réel\> = -rt.  
   
 -   **Fournisseur**: fournit l’événement.  
   
@@ -52,11 +52,11 @@ L'adaptateur Microsoft BizTalk pour TIBCO Enterprise Message Service consigne de
   
  L'adaptateur BizTalk pour TIBCO Enterprise Message Service inclut des fournisseurs qui permettent de consigner plusieurs types de messages :  
   
--   **Fournisseur de journalisation de récepteur**: le \<Trace element > commutateur est **-récepteur**.  
+-   **Fournisseur de journalisation de récepteur**: le \<élément Trace\> commutateur est **-récepteur**.  
   
      Utilisez **-récepteur** pour obtenir tous les messages du journal qui ont été reçus par l’adaptateur au moment de l’exécution.  
   
--   **Fournisseur de journalisation de l’émetteur**: le \<Trace element > commutateur est **-émetteur**.  
+-   **Fournisseur de journalisation de l’émetteur**: le \<élément Trace\> commutateur est **-émetteur**.  
   
      Utilisez **-émetteur**pour obtenir tous les messages du journal qui ont été transmis par l’adaptateur au moment de l’exécution.  
   
@@ -71,7 +71,7 @@ BTA TIBCOEMSTrace <Trace element> -stop
   
  Où :  
   
--   **\<Élément trace >** (obligatoire) est le type de fournisseur.  
+-   **\<Élément trace\>**  (obligatoire) est le type de fournisseur.  
   
  Les options associées sont les suivantes :  
   
@@ -81,9 +81,9 @@ BTA TIBCOEMSTrace <Trace element> -stop
   
 -   **-start, - stop**: activer ou désactiver le fournisseur.  
   
--   **-cir \<Mo >**: taille et type de fichier. **-cir** est un fichier circulaire. **\<Mo >**: taille en mégaoctets.  
+-   **-cir \<Mo\>**: taille et type de fichier. **-cir** est un fichier circulaire. **\<Mo\>**: taille en mégaoctets.  
   
--   **-seq \<Mo >**: taille et type de fichier. **-seq** est un fichier séquentiel. **\<Mo >**: taille en mégaoctets.  
+-   **-seq \<Mo\>**: taille et type de fichier. **-seq** est un fichier séquentiel. **\<Mo\>**: taille en mégaoctets.  
   
 -   **-rt**: définir le mode temps réel sur.  
   

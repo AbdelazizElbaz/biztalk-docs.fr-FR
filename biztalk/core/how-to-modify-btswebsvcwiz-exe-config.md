@@ -15,18 +15,18 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1686932099baa98f36af9ef8a2ca384f7f27a0ce
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4862e347fd74c1431f253a1cccedbd844c97c63c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-modify-btswebsvcwizexeconfig"></a>Modification du fichier BTSWebSvcWiz.exe.config
-Vous pouvez activer le suivi pour déboguer l’Assistant de publication des Services Web BizTalk en supprimant commentaires le \<Ajouter > nœud dans le fichier BTSWebSvcWiz.exe.config. Si le nœud d’écouteur de trace est sans commentaire et *initializeData* paramètre reste inchangé, BizTalk Server écrit la sortie de fichier de trace dans le répertoire actif. Vous pouvez également définir la trace au niveau de **ApplicationTraceSwitch** et définir le nom de chemin d’accès du fichier de trace.  
+Vous pouvez activer le suivi pour déboguer l’Assistant de publication des Services Web BizTalk en supprimant commentaires le \<ajouter\> nœud dans le fichier BTSWebSvcWiz.exe.config. Si le nœud d’écouteur de trace est sans commentaire et *initializeData* paramètre reste inchangé, BizTalk Server écrit la sortie de fichier de trace dans le répertoire actif. Vous pouvez également définir la trace au niveau de **ApplicationTraceSwitch** et définir le nom de chemin d’accès du fichier de trace.  
   
  BTSWebSvcWiz.exe.config est situé dans le même répertoire que le fichier BTSWebSvcWiz.exe (généralement, [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]).  
   
- Voici un exemple d’un sans commentaire \<Ajouter > nœud dans le fichier BTSWebSvcWiz.exe.config :  
+ Voici un exemple d’un sans commentaire \<ajouter\> nœud dans le fichier BTSWebSvcWiz.exe.config :  
   
 ```  
 <system.diagnostics>  
@@ -49,4 +49,4 @@ Vous pouvez activer le suivi pour déboguer l’Assistant de publication des Ser
  Pour plus d’informations sur **TextWriterTraceListener**, consultez la section « TextWriterTraceListener » dans le [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Collection d’aide à [http://go.microsoft.com/fwlink/?LinkId=62267](http://go.microsoft.com/fwlink/?LinkId=62267).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Débogage de Services Web publiés](../core/debugging-published-web-services.md)
+ [Débogage des services web publiés](../core/debugging-published-web-services.md)

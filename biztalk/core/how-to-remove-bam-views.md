@@ -16,11 +16,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 04d8930fb4e3f2014945b743b15da4dbdfff3451
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bc49038c30cc6016c79f8e0d309f93217994327f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-remove-bam-views"></a>Suppression des vues BAM
 Les administrateurs utilisent la **remove-view** commande pour supprimer une vue à partir de la base de données d’importation principale BAM.  
@@ -34,7 +34,7 @@ Les administrateurs utilisent la **remove-view** commande pour supprimer une vue
   
 2.  Accédez au dossier des suivis en tapant **C:\Program Files\Microsoft BizTalk Server 2009\Tracking** à l’invite de commandes. Appuyez sur **Entrée**.  
   
-3.  Type **bm remove-view-nom :\<nom de la vue >**.  
+3.  Type **bm remove-view-nom :\<nom de la vue\>**.  
   
 4.  Appuyez sur **Entrée**.  
   

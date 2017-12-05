@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dd720f30232a981a1b9c963c93c2288572a6a391
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 42b92e3b55cd4de181103e28526abf3ecde29412
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-8a-configure-party-information-for-the-adt-system"></a>Étape 8 : configurer les informations de tiers pour le système ADT
 Dans cette étape, vous configurez les informations de tiers pour le système ADT.  
@@ -31,7 +31,7 @@ Dans cette étape, vous configurez les informations de tiers pour le système AD
   
 4.  Dans le volet Ports d’envoi, cliquez sur le champ vide dans le **nom** colonne, sélectionnez **Tutorial_sendAck_ADT**, puis cliquez sur **OK**.  
   
-5.  Cliquez sur **Démarrer**, pointez sur **programmes**, pointez sur **Microsoft BizTalk \<version > Accelerator pour HL7**, puis cliquez sur **BTAHL7 L’Explorateur de configuration**.  
+5.  Cliquez sur **Démarrer**, pointez sur **programmes**, pointez sur **Microsoft BizTalk \<version\> Accelerator pour HL7**, puis cliquez sur  **BTAHL7 L’Explorateur de Configuration**.  
   
 6.  Dans l’Explorateur de Configuration BTAHL7, sélectionnez le **accusé de réception** onglet. Pour **type d’accusé de réception**, sélectionnez **EnhancedMode**.  
   

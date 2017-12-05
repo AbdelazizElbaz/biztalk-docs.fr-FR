@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 18c2fd1fc45823aed0c61981251523776f886dcb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cf1e7bf6f0dbfcaec97b9cc988a46d012e4ae18f
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="double-action-pipautomation-orchestration"></a>Orchestration Action PIPAutomation double
 L’exemple DoubleAction.odx montre comment implémenter une orchestration pour générer automatiquement des réponses pour les processus d’Interface double action partenaires (PIP) 0, C 2, 0c4, 3A2 et 3 a 4. Vous pouvez étendre cet exemple de projet pour prendre en charge des PIP double action supplémentaires.  
@@ -27,7 +27,7 @@ L’exemple DoubleAction.odx montre comment implémenter une orchestration pour 
 > [!NOTE]
 >  Vous devez étendre cet exemple de projet pour prendre en charge des PIP double action PIP uniquement, pas action unique. Cette orchestration retournera une erreur si vous étendez pour traiter un PIP action unique. Pour vous assurer que cette orchestration ne traitera pas PIP d’action unique, consultez la section de filtrage des Messages d’Action unique ci-dessous.  
   
- Par défaut, le [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] programme d’installation installe à cet exemple dans \< *lecteur*> : \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] 2013 de Microsoft BizTalk Accelerator pour RosettaNet\SDK\ PIPAutomation\DoubleAction.  
+ Par défaut, le [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] programme d’installation installe à cet exemple dans \< *lecteur*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] 2013 de Microsoft BizTalk Accelerator pour RosettaNet\SDK\PIPAutomation\DoubleAction.  
   
  Cet exemple de projet inclut :  
   
@@ -39,7 +39,7 @@ L’exemple DoubleAction.odx montre comment implémenter une orchestration pour 
   
 -   Un fichier de liaison (DoubleActionBinding.xml) utilisée par le fichier Setup.bat pour créer le MessagesToLOB_Receive_Port pour une utilisation avec l’orchestration DoubleAction.  
   
--   Un fichier d’installation pour créer et initialiser l’exemple. Si votre [!INCLUDE[bts2010R2](../../includes/bts2010r2-md.md)] installation est en cours d’exécution sur un ordinateur 32 bits, exécutez le fichier setup.bat le \<lecteur > : \Program Files\Microsoft 2013 de Microsoft BizTalk Accelerator pour RosettaNet \SDK\PIPAutomation\DoubleAction dossier. Si votre installation de [!INCLUDE[bts2010R2](../../includes/bts2010r2-md.md)] s'exécute sur un ordinateur 64 bits, exécutez setupx64.bat dans le même dossier.  
+-   Un fichier d’installation pour créer et initialiser l’exemple. Si BizTalk Server est en cours d’exécution sur un ordinateur 32 bits, exécutez le fichier setup.bat le \<lecteur\>: \Program Files\Microsoft 2013 de Microsoft BizTalk Accelerator pour RosettaNet \SDK\PIPAutomation\DoubleAction dossier. Si BizTalk Server est en cours d’exécution sur un ordinateur 64 bits, exécutez setupx64.bat dans le même dossier.  
   
  L’orchestration reçoit des messages à l’aide de la procédure PipAutomationGetAction stockée dans la base de données BTARNData (le fichier source est DoubleAction.sql dans le répertoire DoubleAction). Cette procédure stockée récupère les messages à partir de la table MessagesToLOB.  
   
@@ -47,12 +47,12 @@ L’exemple DoubleAction.odx montre comment implémenter une orchestration pour 
   
 ### <a name="to-build-and-initialize-this-sample"></a>Pour créer et initialiser l'exemple  
   
-1.  À l’invite de commandes, recherchez le  *\<lecteur >*: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator pour RosettaNet 2013 \SDK\PIPAutomation\DoubleAction dossier.  
+1.  À l’invite de commandes, recherchez le  *\<lecteur\>*: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator pour RosettaNet 2013 \SDK\PIPAutomation\DoubleAction dossier.  
   
     > [!NOTE]
     >  Avant d’exécuter le programme d’installation, ouvrez le fichier DoubleAction.sql (situé dans le dossier ci-dessus) dans le bloc-notes. Dans le menu **Fichier** , cliquez sur **Enregistrer sous**. Dans le **codage** liste, sélectionnez **ANSI**, puis cliquez sur **enregistrer**. Sélectionnez **Oui** pour remplacer les fichiers existants.  
   
-2.  Si votre [!INCLUDE[bts2010R2](../../includes/bts2010r2-md.md)] installation est en cours d’exécution sur un ordinateur 32 bits, exécutez le fichier setup.bat le \<lecteur > : \Program Files\Microsoft BizTalk Accelerator pour RosettaNet 2013 \SDK\PIPAutomation\DoubleAction dossier. Si votre installation de BizTalk Server 2013 est en cours d’exécution sur un ordinateur 64 bits, exécutez setupx64.bat dans le même dossier. Le fichier de commandes effectuera les actions suivantes :  
+2.  Si votre serveur BizTalk Server est en cours d’exécution sur un ordinateur 32 bits, exécutez le fichier setup.bat le \<lecteur\>: \Program Files\Microsoft BizTalk Accelerator pour RosettaNet 2013 \SDK\PIPAutomation\DoubleAction dossier. Si votre installation de BizTalk Server 2013 est en cours d’exécution sur un ordinateur 64 bits, exécutez setupx64.bat dans le même dossier. Le fichier de commandes effectuera les actions suivantes :  
   
     -   Crée une procédure stockée SQL (`PipAutomationGetAction`) dans la base de données BTARNDATA pour récupérer le message d'action à partir de la table MessagesToLOB. Cela garantit également que les enregistrements récupérés ne seront pas lue à nouveau.  
   
@@ -70,7 +70,7 @@ L’exemple DoubleAction.odx montre comment implémenter une orchestration pour 
         >  L'exemple affiche des avertissements pendant la compilation. Vous pouvez ignorer ces avertissements.  
   
         > [!NOTE]
-        >  L’exemple utilise le nom d’hôte par défaut **BizTalkServerApplication** lors du déploiement du projet. Si vous souhaitez exécuter l’exemple sous un autre ordinateur hôte, vous devez modifier les noms d’hôte par défaut trouvés dans DoubleActionBinding.xml sous \<SDK > \PIPAutomation\DoubleAction dossier.  
+        >  L’exemple utilise le nom d’hôte par défaut **BizTalkServerApplication** lors du déploiement du projet. Si vous souhaitez exécuter l’exemple sous un autre ordinateur hôte, vous devez modifier les noms d’hôte par défaut trouvés dans DoubleActionBinding.xml sous \<SDK\>\PIPAutomation\DoubleAction dossier.  
   
 ### <a name="to-run-the-double-action-pipautomation-sample"></a>Pour exécuter l’exemple Double Action PIPAutomation  
   
@@ -78,16 +78,13 @@ L’exemple DoubleAction.odx montre comment implémenter une orchestration pour 
   
 2.  À l’aide de l’utilitaire de mise en miroir de contrat de bouclage, de créer un miroir pour le PIP 3 a 4 créé à l’étape 1.  
   
-3.  À l’aide de l’utilitaire LOBApplication.exe SDK, envoyer un message de demande d’adresse PIP 3 a 4. Le [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK inclut un exemple d’entrée dans le dossier \< *répertoire d’Installation*> \SDK\LOBApplication\SampleInstances\3A4_Request.xml.  
+3.  À l’aide de l’utilitaire LOBApplication.exe SDK, envoyer un message de demande d’adresse PIP 3 a 4. Le [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK inclut un exemple d’entrée dans le dossier \< *répertoire d’Installation*\>\SDK\LOBApplication\SampleInstances\3A4_Request.xml.  
   
-4.  DANS l’Analyseur de requêtes SQL, exécutez la requête suivante sur la base de données BTARNDATA :  
+4.  Exécutez la requête suivante sur la base de données BTARNDATA :  
   
     ```  
     Select * from MessagesToLOB  
     ```  
-  
-    > [!NOTE]
-    >  Si vous utilisez [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsSQLServer2008](../../includes/btssqlserver2008-md.md)] R2/2008 SP1, utilisez le [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] **Management Studio** pour exécuter la requête SQL.  
   
 5.  Après quelques secondes, quatre nouveaux messages s’affichent dans cette table. Deux d'entre eux sont des signaux d’accusé de réception. Un signal est le Message de demande Async 3 a 4. Un signal est le Message de réponse 3 a 4 Async.  
   

@@ -27,19 +27,19 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 346ed59bbf1666861a6a899c7cf7e4ca8646810a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 23c2f18d8422440f9a40645642787723642f3ee6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="loopback"></a>Bouclage
 Vous utilisez l’utilitaire de bouclage pour générer automatiquement un accord de bouclage qui est une copie miroir d’un contrat d’origine à un partenaire. Vous pouvez ainsi effectuer des échanges de messages d'une organisation d'origine à un partenaire et d'un partenaire à une organisation d'origine sur un seul ordinateur. Vous pouvez utiliser cet utilitaire pour un scénario avec des messages de 0 a 1 ou dans un scénario sans les messages 0 a 1. Vous pouvez créer un accord de bouclage pour un contrat de message d’action (non-0 a 1) ou d’un accord 0 a 1.  
   
- Vous pouvez également utiliser l’utilitaire pour inscrire ou désinscrire une organisation d’origine pour un rôle expéditeur. Lorsque vous utilisez l’utilitaire pour activer une organisation d’origine, il crée deux ports d’envoi, \<Accueil >. Async et \<Accueil >. Synchronisation, que l’organisation utilise pour communiquer avec leurs partenaires.  
+ Vous pouvez également utiliser l’utilitaire pour inscrire ou désinscrire une organisation d’origine pour un rôle expéditeur. Lorsque vous utilisez l’utilitaire pour activer une organisation d’origine, il crée deux ports d’envoi, \<domestique\>. Async et \<accueil\>. Synchronisation, que l’organisation utilise pour communiquer avec leurs partenaires.  
   
 ## <a name="location-in-sdk"></a>Emplacement dans le kit de développement logiciel (SDK)  
- \<*lecteur*> \ programme Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\SDK\  
+ \<*lecteur*\>\ programme Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\  
   
 ## <a name="running-loopback"></a>En cours d’exécution en boucle  
   
@@ -47,7 +47,7 @@ Vous utilisez l’utilitaire de bouclage pour générer automatiquement un accor
   
 1.  Ouvrez une invite de commandes.  
   
-2.  Déplacer vers \< *lecteur*> \ programme Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\SDK\\.  
+2.  Déplacer vers \< *lecteur*\>\ programme Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\\.  
   
 3.  À l’invite de commandes, tapez **bouclage**, tapez les interrupteurs requis, puis appuyez sur ENTRÉE.  
   
@@ -63,13 +63,13 @@ Loopback [/enable|/disable <home_organization>] [/mirror|/unmirror <agreement_na
   
 |**Syntaxe**|**Description**|  
 |----------------|---------------------|  
-|**Activer**|Inscrit l’organisation désignée dans < home_organization > pour un rôle expéditeur. Il crée deux ports d’envoi, \<Accueil >. Async et \<Accueil >. Synchronisation, que le partenaire utilise pour communiquer avec l’organisation d’origine.|  
+|**Activer**|Inscrit l’organisation désignée dans < home_organization > pour un rôle expéditeur. Il crée deux ports d’envoi, \<accueil\>. Async et \<accueil\>. Synchronisation, que le partenaire utilise pour communiquer avec l’organisation d’origine.|  
 |**désactiver**|Désinscrit l’organisation d’origine pour un rôle expéditeur.|  
 |**home_organization**|Le partenaire à être inscrit ou désinscrit pour un rôle expéditeur.|  
-|**mise en miroir**|Crée un accord de bouclage en fonction de l’accord désigné dans \< **agreement_name**>.|  
-|**mettre fin au miroir**|Supprime l’accord de bouclage en fonction de l’accord désigné dans \< **agreement_name >**.|  
+|**mise en miroir**|Crée un accord de bouclage en fonction de l’accord désigné dans \< **agreement_name**\>.|  
+|**mettre fin au miroir**|Supprime l’accord de bouclage en fonction de l’accord désigné dans \< **agreement_name\>**.|  
 |**agreement_name**|L’accord en miroir ou de mettre fin au miroir dans le scénario de bouclage.|  
-|**N**|Définit le **0 a 1 accord** propriété du contrat de message d’action mise en miroir par l’utilitaire de bouclage \<0A1_agreement >. A **/nde** commutateur ne peut être ajouté à une commande de bouclage qui contient également un **/miroir** basculer.|  
+|**N**|Définit le **0 a 1 accord** propriété du contrat de message d’action mise en miroir par l’utilitaire de bouclage \<0A1_agreement\>. A **/nde** commutateur ne peut être ajouté à une commande de bouclage qui contient également un **/miroir** basculer.|  
 |**0A1_agreement**|Un accord 0 a 1 à utiliser par l’accord de mise en miroir du agreement_name. Ce contrat est généré par un accord de 0 a 1 répondeur de mise en miroir.|  
   
 ## <a name="remarks"></a>Notes  
@@ -142,12 +142,12 @@ Loopback [/enable|/disable <home_organization>] [/mirror|/unmirror <agreement_na
   
 4.  À l’aide de [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] set de la Console de gestion, le **0 a 1 accord** propriété pour demande message d’action accord l’organisation d’accueil au nom de l’initiateur 0 a 1 accord pour l’organisation d’origine.  
   
-5.  À l’aide de l’utilitaire de bouclage, créez un accord pour le message de 0 a 1 initiateur être envoyés par l’organisation partenaire. Cela en mettant en miroir le répondeur accord 0 a 1 pour l’organisation d’origine. Cela crée un nouveau contrat 0 a 1 portant le nom **bouclage :\<nom de l’accord 0 a 1 >**. Le `My organization` est définie sur le serveur partenaire, le `Partner organization` est définie sur l’organisation d’origine et le `Home role` propriété est **PIP échec notifiant (initiateur)**.  
+5.  À l’aide de l’utilitaire de bouclage, créez un accord pour le message de 0 a 1 initiateur être envoyés par l’organisation partenaire. Cela en mettant en miroir le répondeur accord 0 a 1 pour l’organisation d’origine. Cela crée un nouveau contrat 0 a 1 portant le nom **bouclage :\<nom de l’accord 0 a 1\>**. Le `My organization` est définie sur le serveur partenaire, le `Partner organization` est définie sur l’organisation d’origine et le `Home role` propriété est **PIP échec notifiant (initiateur)**.  
   
-6.  À l’aide de l’utilitaire de bouclage, créez un accord pour le message de 0 a 1 répondeur pour l’organisation partenaire. Pour cela, vous la mise en miroir de l’accord d’initiateur 0 a 1 pour l’organisation d’origine. Cela crée un nouveau contrat 0 a 1 portant le nom **bouclage :\<nom de l’accord 0 a 1 >**. Le `My organization` est définie sur le serveur partenaire, le `Partner organization` est définie sur l’organisation d’origine et le `Home role` propriété est **administrateur de rapports de défaillance (récepteur)**.  
+6.  À l’aide de l’utilitaire de bouclage, créez un accord pour le message de 0 a 1 répondeur pour l’organisation partenaire. Pour cela, vous la mise en miroir de l’accord d’initiateur 0 a 1 pour l’organisation d’origine. Cela crée un nouveau contrat 0 a 1 portant le nom **bouclage :\<nom de l’accord 0 a 1\>**. Le `My organization` est définie sur le serveur partenaire, le `Partner organization` est définie sur l’organisation d’origine et le `Home role` propriété est **administrateur de rapports de défaillance (récepteur)**.  
   
-7.  À l’aide de l’utilitaire de bouclage, créez un accord pour le message d’action de réponse pour l’organisation partenaire. Dans la même commande, vous devez définir les propriétés de l’accord 0 a 1 de l’accord de 0 a 1 répondeur pour le partenaire. Pour cela, le contrat de message d’action de demande pour l’organisation d’origine de la mise en miroir, utilisez le **/nde** passer par le nom de contrat de 0 a 1 répondeur du partenaire. Cette opération crée un nouveau contrat de message d’action de réponse avec le nom **bouclage :\<nom de l’accord >**. Le `My organization` est définie sur le partenaire et la propriété d’accord de 0 a 1 est définie pour le contrat du partenaire répondeur 0 a 1.  
+7.  À l’aide de l’utilitaire de bouclage, créez un accord pour le message d’action de réponse pour l’organisation partenaire. Dans la même commande, vous devez définir les propriétés de l’accord 0 a 1 de l’accord de 0 a 1 répondeur pour le partenaire. Pour cela, le contrat de message d’action de demande pour l’organisation d’origine de la mise en miroir, utilisez le **/nde** passer par le nom de contrat de 0 a 1 répondeur du partenaire. Cette opération crée un nouveau contrat de message d’action de réponse avec le nom **bouclage :\<nom de l’accord\>**. Le `My organization` est définie sur le partenaire et la propriété d’accord de 0 a 1 est définie pour le contrat du partenaire répondeur 0 a 1.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Utilitaires](../../adapters-and-accelerators/accelerator-rosettanet/utilities1.md)   
- [Didacticiel de bouclage](../../adapters-and-accelerators/accelerator-rosettanet/loopback-tutorial.md)
+ [Didacticiel sur le bouclage](../../adapters-and-accelerators/accelerator-rosettanet/loopback-tutorial.md)

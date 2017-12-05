@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 167d18f0eba624d62b03b3b0a5386fcac04e5b18
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 38320cc6877815ccbf7b078190a3c2be1c6f74b0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="run-a-predefined-itinerary-on-ramp-sample"></a>Exécuter un exemple de rampe d’entrée d’itinéraire prédéfini
 La [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] inclut 20 cas d’usage itinéraire prédéfinis que vous pouvez exécuter. Pour obtenir la liste de ces cas d’usage, consultez [les exemples de scénarios de feuille de route](../esb-toolkit/the-sample-itinerary-scenarios.md).  
@@ -55,7 +55,7 @@ La [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] inclut 20 cas d’usage 
     position="0" serviceInstanceId="" />  
 ```  
   
- Le service d’orchestration dans ce  **\<Service >** élément spécifie l’orchestration à liaison directe qui a les propriétés de filtre indiquées dans la Figure 2. Notez que l’orchestration s’abonne uniquement aux messages qui ont la valeur **Microsoft.Practices.ESB.Services.Transform** pour le **ServiceName** propriété de contexte, la valeur  **En attente** pour le **ServiceState** propriété de contexte et la valeur d’Orchestration pour les **ServiceType** propriété de contexte.  
+ Le service d’orchestration dans ce  **\<Service\>**  élément spécifie l’orchestration à liaison directe qui a les propriétés de filtre indiquées dans la Figure 2. Notez que l’orchestration s’abonne uniquement aux messages qui ont la valeur **Microsoft.Practices.ESB.Services.Transform** pour le **ServiceName** propriété de contexte, la valeur  **En attente** pour le **ServiceState** propriété de contexte et la valeur d’Orchestration pour les **ServiceType** propriété de contexte.  
   
  ![Expression de filtre](../esb-toolkit/media/ch6-filterexpression.gif "§ 6-FilterExpression")  
   

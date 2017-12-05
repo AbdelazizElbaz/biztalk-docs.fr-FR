@@ -15,11 +15,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c9c46af9724d12609f599c790a7f0a52b2d5d0b5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7be81166f4f66ed79bbb0b00b5e226c9e3c2be7b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-use-the-biztalk-wcf-service-publishing-wizard-to-publish-service-metadata-for-a-wcf-receive-location-for-content-based-routing"></a>Procédure pour l'utilisation de l'Assistant Publication de services WCF BizTalk pour publier des métadonnées de service pour les emplacements de réception WCF pour le routage basé sur le contenu.
 L'Assistant Publication de services WCF BizTalk permet de créer un service WCF à des fins de publication des métadonnées de service pour les emplacements de réception WCF existants pour le routage basé sur le contenu.  
@@ -76,7 +76,7 @@ L'Assistant Publication de services WCF BizTalk permet de créer un service WC
   
      ![Page de propriétés du Service WCF](../core/media/07518c78-bcae-4274-bb14-aeef107ee4c6.gif "07518c78-bcae-4274-bb14-aeef107ee4c6")  
   
-9. Sur le **l’emplacement du Service WCF** page, dans le **emplacement** texte, tapez le nom du répertoire Web où les services WCF sont générés. Vous pouvez accepter l’emplacement par défaut (http://localhost/\<*description du service Web*>), tapez un emplacement pour les services WCF dans le **emplacement** zone de texte, ou cliquez sur  **Parcourir** et sélectionnez un répertoire Web. Sélectionnez une des options suivantes :  
+9. Sur le **l’emplacement du Service WCF** page, dans le **emplacement** texte, tapez le nom du répertoire Web où les services WCF sont générés. Vous pouvez accepter l’emplacement par défaut (http://localhost/ <*description du service Web*>), tapez un emplacement pour les services WCF dans le **emplacement** zone de texte, ou cliquez sur **Parcourir** et sélectionnez un répertoire Web. Sélectionnez une des options suivantes :  
   
     -   **Remplacer le projet existant.** Cette option est disponible uniquement si le répertoire Web existe déjà. Vous pourrez publier dans le même emplacement uniquement si vous sélectionnez cette option. Sinon, vous devez indiquer un emplacement de projet différent.  
   
@@ -87,10 +87,10 @@ L'Assistant Publication de services WCF BizTalk permet de créer un service WC
      ![Page emplacement de Service WCF](../core/media/76285470-1520-4d77-a5b6-c58cbe8fc575.gif "76285470-1520-4d77-a5b6-c58cbe8fc575")  
   
     > [!NOTE]
-    >  L'emplacement du projet peut se trouver sur un serveur différent. Pour publier les services WCF sur un autre serveur, tapez le nom du projet en tant que http://\<*nom_serveur*>/\<*l’emplacement du service WCF*>.  
+    >  L'emplacement du projet peut se trouver sur un serveur différent. Pour publier les services WCF sur un autre serveur, tapez le nom du projet en tant que http://&lt*nom_serveur*>/<*l’emplacement du service WCF*>.  
   
     > [!NOTE]
-    >  L'emplacement du projet peut se trouver sur un site Web personnalisé. Lors de la publication sur un site Web personnalisé, ajoutez le numéro du port du site Web dans l'URL. Par exemple, http://\<*nom_serveur*> : 8080 /\<*l’emplacement du service WCF*>.  
+    >  L'emplacement du projet peut se trouver sur un site Web personnalisé. Lors de la publication sur un site Web personnalisé, ajoutez le numéro du port du site Web dans l'URL. Par exemple, http://&lt*nom_serveur*> : 8080 / <*l’emplacement du service WCF*>.  
   
     > [!NOTE]
     >  Le fichier BindingInfo.xml créé par l'Assistant dans le répertoire \App_Data\Temp de l'application Web utilise les valeurs par défaut des pipelines. La valeur par défaut pour le pipeline de réception est le **Microsoft.BizTalk.DefaultPipelines.XMLReceive** valeur de pipeline et la valeur par défaut pour le pipeline d’envoi est le  **Microsoft.BizTalk.DefaultPipelines.PassThruTransmit** pipeline.  
@@ -110,7 +110,7 @@ L'Assistant Publication de services WCF BizTalk permet de créer un service WC
   
 2.  Ouvrez une invite de commandes, accédez au dossier où l’Assistant de publication des services WCF BizTalk a créé les services WCF dans %SystemDrive%\InetPub\\, puis ouvrez le fichier Web.config dans le bloc-notes.  
   
-3.  Dans le bloc-notes, ajoutez la ligne suivante à l’intérieur de la  **\<system.web >** élément :  
+3.  Dans le bloc-notes, ajoutez la ligne suivante à l’intérieur de la  **\<system.web\>**  élément :  
   
     ```  
     <trust level="Full" originUrl="" />  
@@ -131,7 +131,7 @@ L'Assistant Publication de services WCF BizTalk permet de créer un service WC
   
     1.  Dans le bloc-notes, ouvrez le fichier Web.config dans le dossier dans lequel l’Assistant de publication des services WCF BizTalk a créé le service WCF dans %SystemDrive%\InetPub\\.  
   
-    2.  Dans le bloc-notes, définissez le le **httpGetEnabled** d’attribut dans le  **\<serviceMetadata >** élément à la valeur false, car la ligne suivante :  
+    2.  Dans le bloc-notes, définissez le le **httpGetEnabled** d’attribut dans le  **\<serviceMetadata\>**  élément à la valeur false, car la ligne suivante :  
   
         ```  
         <serviceMetadata httpGetEnabled="false" httpsGetEnabled="false" />  
@@ -139,4 +139,4 @@ L'Assistant Publication de services WCF BizTalk permet de créer un service WC
   
 ## <a name="see-also"></a>Voir aussi  
  [Comment utiliser l’Assistant Publication de services WCF BizTalk pour publier des schémas en tant que Services WCF](../core/publish-schemas-as-wcf-services--use-the-biztalk-wcf-service-publishing-wizard.md)   
- [Procédure pas à pas : Publication de Services WCF avec l’adaptateur WCF-NetMsmq](../core/walkthrough-publishing-wcf-services-with-the-wcf-netmsmq-adapter.md)
+ [Procédure pas à pas : Publication des services WCF avec l’adaptateur WCF-NetMsmq](../core/walkthrough-publishing-wcf-services-with-the-wcf-netmsmq-adapter.md)

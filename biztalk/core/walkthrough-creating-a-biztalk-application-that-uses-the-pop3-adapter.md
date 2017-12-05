@@ -19,11 +19,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a1af0d60eab23a3cbfff67a8b4b11dc73fb49afe
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e677a4fb68ad4f6991585c191c8065a60b3fc337
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="walkthrough-creating-a-biztalk-application-that-uses-the-pop3-adapter"></a>Procédure pas à pas : Création d’une Application BizTalk qui utilise l’adaptateur POP3
 Cette section vous guide tout au long de la création d'une simple application Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] à l'aide de l'adaptateur POP3.  
@@ -45,7 +45,7 @@ Cette section vous guide tout au long de la création d'une simple application M
   
 1.  Cliquez sur **Démarrer**, pointez sur **programmes**, pointez sur **outils d’administration**, puis cliquez sur **Service POP3**.  
   
-2.  Développez  *\<nom_serveur >* et cliquez sur le domaine dans lequel vous souhaitez créer une boîte aux lettres.  
+2.  Développez  *\<nom_serveur\>*  et cliquez sur le domaine dans lequel vous souhaitez créer une boîte aux lettres.  
   
 3.  Dans le **Service POP3** boîte de dialogue, dans le volet droit, cliquez sur le **ajouter une boîte aux lettres** option.  
   
@@ -60,7 +60,7 @@ Cette section vous guide tout au long de la création d'une simple application M
 ## <a name="create-the-receive-location"></a>Pour créer un emplacement de réception  
  Suivez ces étapes pour créer l'emplacement de réception :  
   
-1.  Dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] console d’Administration double-cliquez sur la base de données par défaut  **\<**  *Nom_Ordinateur***>. BizTalkMgmtDb.dbo**, où *Nom_Ordinateur* est le nom de votre ordinateur. Cliquez sur **Applications**, puis cliquez sur **BizTalk.Application.1**.  
+1.  Dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] console d’Administration double-cliquez sur la base de données par défaut  **\<**  *Nom_Ordinateur***\>. BizTalkMgmtDb.dbo**, où *Nom_Ordinateur* est le nom de votre ordinateur. Cliquez sur **Applications**, puis cliquez sur **BizTalk.Application.1**.  
   
 2.  Avec le bouton droit **Ports de réception**, cliquez sur **nouveau**, cliquez sur **unidirectionnel port de réception**.  
   
@@ -161,4 +161,4 @@ Cette section vous guide tout au long de la création d'une simple application M
 2.  Double-cliquez sur le document dans le dossier pour afficher le contenu du document dans le Bloc-notes.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Nouveautés de l’adaptateur POP3 ?](../core/what-is-the-pop3-adapter.md)
+ [Présentation de l’adaptateur POP3](../core/what-is-the-pop3-adapter.md)

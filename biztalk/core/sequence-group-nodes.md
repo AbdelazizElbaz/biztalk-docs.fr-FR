@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2465ad10e6598a4b9e1afa88190de4c1711c1f86
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b92c2165a84e5d539eac434ab140389c145b24b4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="sequence-group-nodes"></a>Nœuds Groupe Séquence
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 09/20/2017
 Dans l’Éditeur BizTalk, vous pouvez insérer un **groupe séquence** nœud destiné à contenir d’autres nœuds qui doivent apparaître dans un message d’instance dans le même ordre que celui dans lequel ils apparaissent dans le **groupe séquence** nœud. Les nœuds contenus doivent correspondre à des éléments XML, et non à des attributs XML.  
   
 > [!NOTE]
->  Dans l’Éditeur BizTalk, le **groupe séquence** nœud est représenté par défaut par la chaîne \<séquence > dans l’arborescence de schéma. Si vous définissez une référence à un **groupe séquence** nœud, tel que x, elle est représentée en tant que \<Group : x > dans l’arborescence de schéma.  
+>  Dans l’Éditeur BizTalk, le **groupe séquence** nœud est représenté par défaut par la chaîne \<séquence\> dans l’arborescence de schéma. Si vous définissez une référence à un **groupe séquence** nœud, tel que x, elle est représentée en tant que \<Group : x\> dans l’arborescence de schéma.  
   
  Il pouvez que vous souhaitez ajouter un **groupe séquence** pour déclarer un groupe de l’élément global.  
   

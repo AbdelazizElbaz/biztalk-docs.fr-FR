@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a957bd18fd6defad40d6b04e91bc3028802da1c0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c8688e84f7913dbc32a0629d21f29ed2578c43b1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="preparing-to-use-the-tutorial"></a>Préparation à l’utilisation du didacticiel
 Avant d’utiliser le didacticiel, vous devez créer un fichier ADT^A03.txt.  
@@ -42,6 +42,6 @@ Avant d’utiliser le didacticiel, vous devez créer un fichier ADT^A03.txt.
     > [!NOTE]
     >  Il doit y avoir cinq lignes dans le .txt un fichier, chacune commençant par « MSH », « EVN », « Ci », « PD1 » et « PV1 ». Vous devez supprimer les espaces dans la ligne « Ci » et la ligne « PD1 ». Si nécessaire, désactivez le retour automatique à la ligne dans le bloc-notes.  
   
-2.  Enregistrez le fichier sous **ADT^A03.txt** dans les \< *lecteur*> : \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version > Accelerator for HL7\SDK\End en bout Dossier Tutorial, puis fermez le bloc-notes.  
+2.  Enregistrez le fichier sous **ADT^A03.txt** dans les \< *lecteur*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version\> Accelerator pour le dossier Tutorial de bout en HL7\SDK\End, puis fermez le bloc-notes.  
   
  Passez à [étape 1 : créer et déployer des schémas d’en-tête et d’accusé de réception](../../adapters-and-accelerators/accelerator-hl7/step-1-create-and-deploy-header-and-acknowledgment-schemas.md).

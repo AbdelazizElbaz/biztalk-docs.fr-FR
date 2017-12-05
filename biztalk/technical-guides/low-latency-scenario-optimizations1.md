@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a2957888253826845ea9a941ad7fce8fd7a2ed7f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 12f16f67f1c161f74e6a9179db8c85f48b5b3e14
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="low-latency-scenario-optimizations"></a>Optimisations de scénario de faible latence
 Par défaut, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] est optimisé pour le débit plutôt que de faible latence. Les optimisations suivantes ont été appliquées à [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] pour le scénario de test utilisé dans ce guide.  
@@ -25,7 +25,7 @@ Par défaut, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkserverno
 >  Ces optimisations améliorent les temps de latence, mais peuvent le faire à un coût pour le débit global.  
   
 ## <a name="increase-the-biztalk-server-host-internal-message-queue-size"></a>Augmenter la taille de file d’attente de messages interne hôte BizTalk Server  
- Chaque hôte de BizTalk possède sa propre file d’attente en mémoire interne. Augmenter la taille de cette file d’attente à partir de la valeur par défaut de 100 à 1000 pour améliorer les performances d’un scénario à faible latence. Pour plus d’informations sur la modification de la valeur de la taille de file d’attente de messages interne, consultez « Comment pour modifier les paramètres par défaut hôte limitation » dans le [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] à l’adresse [http://go.microsoft.com/fwlink/?LinkID=120225](http://go.microsoft.com/fwlink/?LinkID=120225).  
+ Chaque hôte de BizTalk possède sa propre file d’attente en mémoire interne. Augmenter la taille de cette file d’attente à partir de la valeur par défaut de 100 à 1000 pour améliorer les performances d’un scénario à faible latence. Pour plus d’informations sur la modification de la valeur de la taille de file d’attente de messages interne, consultez « Comment pour modifier les paramètres par défaut hôte limitation » dans l’aide de BizTalk Server à [http://go.microsoft.com/fwlink/?LinkID=120225](http://go.microsoft.com/fwlink/?LinkID=120225).  
   
 ## <a name="reduce-the-maxreceiveinterval-value-in-the-admserviceclass-table-of-the-biztalk-server-management-database"></a>Réduisez la valeur MaxReceiveInterval dans la table adm_ServiceClass de la base de données de gestion BizTalk Server  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]utilise un mécanisme d’interrogation pour recevoir des messages à partir de ses files d’attente de l’ordinateur hôte dans la Messagebox. Le **MaxReceiveInterval** valeur dans la table adm_ServiceClass de la base de données de gestion BizTalk (BizTalkMgmtDb) est la valeur maximale, en millisecondes que chaque instance d’hôte BizTalk doit attendre jusqu'à ce qu’il interroge la MessageBox. La table adm_ServiceClass contient un enregistrement pour les types de service suivants :  

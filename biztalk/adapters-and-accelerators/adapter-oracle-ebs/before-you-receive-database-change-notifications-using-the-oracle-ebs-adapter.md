@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cd374a6edcc8b097c2fc05e236a2a3ca0800229b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f3157b8ab7a706203d3b9475de890fb2a8f8dd3a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="considerations-for-receiving-database-change-notifications-using-the-oracle-e-business-suite-adapter"></a>Considérations relatives à la base de données réceptrice modifier des notifications à l’aide de l’adaptateur Oracle E-Business Suite
 Cette rubrique fournit quelques considérations et les meilleures pratiques que vous devez garder à l’esprit lors de l’utilisation du [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] pour recevoir des notifications de la base de données à partir d’une base de données Oracle.  
@@ -28,10 +28,10 @@ Cette rubrique fournit quelques considérations et les meilleures pratiques que 
   
 -   Le message de notification pour une opération n’est pas affecté par le nombre d’enregistrements concernés par cette opération. Par exemple, quel que soit le nombre d’enregistrements insérés dans une table de base de données Oracle, les clients de l’adaptateur de réception qu’un seul message de notification.  
   
--   Nous recommandons que l’application cliente de carte contiennent la logique pour interpréter le type de notification reçue à partir de la base de données Oracle. Les applications clientes d’adaptateur peuvent se faire en extrayant les informations contenues dans le  **\<Info >** élément du message de notification a été reçue. Voici un exemple d’un message de notification reçu pour une opération d’insertion.  
+-   Nous recommandons que l’application cliente de carte contiennent la logique pour interpréter le type de notification reçue à partir de la base de données Oracle. Les applications clientes d’adaptateur peuvent se faire en extrayant les informations contenues dans le  **\<Info\>**  élément du message de notification a été reçue. Voici un exemple d’un message de notification reçu pour une opération d’insertion.  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <Notification xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/Notification/">  
       <Details>  
         <NotificationDetails>  
@@ -49,7 +49,7 @@ Cette rubrique fournit quelques considérations et les meilleures pratiques que 
     </Notification>  
     ```  
   
-     Notez la valeur dans la  **\<Info >** élément. Cette valeur fournit des informations sur l’opération pour laquelle le message de notification a été reçu. Votre application doit avoir les fonctionnalités pour extraire la valeur dans la  **\<Info >** élément, puis en fonction de la valeur, effectuez les tâches suivantes. La rubrique [traiter les Messages de Notification pour effectuer des tâches spécifiques dans Oracle E-Business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/process-notification-messages-to-complete-specific-tasks-in-oracle-ebs.md) contient des instructions sur la façon d’extraire la valeur dans la  **\<Info >** élément.  
+     Notez la valeur dans la  **\<Info\>**  élément. Cette valeur fournit des informations sur l’opération pour laquelle le message de notification a été reçu. Votre application doit avoir les fonctionnalités pour extraire la valeur dans la  **\<Info\>**  élément, puis en fonction de la valeur, effectuez les tâches suivantes. La rubrique [traiter les Messages de Notification pour effectuer des tâches spécifiques dans Oracle E-Business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/process-notification-messages-to-complete-specific-tasks-in-oracle-ebs.md) contient des instructions sur la façon d’extraire la valeur dans la  **\<Info\>**  élément .  
   
 -   Dans l’idéal, une fois que l’application cliente reçoit une notification, elle doit mettre à jour l’enregistrement pour lequel la notification est déjà reçue afin que les notifications suivantes ne sont pas pour un même enregistrement. Par exemple, considérez un **ACCOUNTACTIVITY** table qui a un **traités** colonne. Pour tous les nouveaux enregistrements insérés dans le **ACCOUNTACTIVITY** table, la valeur de la **traités** colonne est toujours n '. Par exemple, après une opération d’insertion, les enregistrements dans la **ACCOUNTACTIVITY** table doit ressembler à ce qui suit :  
   

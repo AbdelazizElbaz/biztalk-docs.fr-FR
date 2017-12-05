@@ -17,18 +17,18 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: acc6b57a78d51d9c132115f387296c48c2e924c9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1246f56615381d2627db3058dc821ba85bf8b74d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-7-create-a-sample-lob-message"></a>Étape 7 : Créer un exemple de Message LOB
 Dans cette étape, vous utilisez l’utilitaire de l’Application métier pour créer un exemple de message de métier (LOB).  
   
 ### <a name="to-create-a-sample-message-using-the-lob-application-utility"></a>Pour créer un exemple de message à l’aide de l’utilitaire d’Application métier  
   
-1.  Dans [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorer, accédez à \< *lecteur*> : \Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\SDK dossier, puis double-cliquez sur  **LOBApplication.exe**.  
+1.  Dans [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorer, accédez à \< *lecteur*\>: \Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK dossier, puis double-cliquez sur  **LOBApplication.exe**.  
   
 2.  Dans le **Application métier** boîte de dialogue zone, procédez comme suit :  
   
@@ -38,7 +38,7 @@ Dans cette étape, vous utilisez l’utilitaire de l’Application métier pour 
     |**Nom du partenaire commercial**|Type **partenaire**.|  
     |**Nom du PIP**|Type **0c1**.|  
     |**Version PIP**|Tapez **R01.02**.|  
-    |**Nom de fichier**|Cliquez sur le bouton de sélection (**...** ) et les déplacer vers \< *lecteur*: > \Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\SDK\LOBApplication\SampleInstances. Sélectionnez **0C1_Request.xml** dans la liste des fichiers, puis cliquez sur **ouvrir**.|  
+    |**Nom de fichier**|Cliquez sur le bouton de sélection (**...** ) et les déplacer vers \< *lecteur*:\>\Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\LOBApplication\SampleInstances. Sélectionnez **0C1_Request.xml** dans la liste des fichiers, puis cliquez sur **ouvrir**.|  
     |**Catégorie de message**|Sélectionnez **Action** dans la liste déroulante.|  
   
 3.  Dans le **Application métier** boîte de dialogue, cliquez sur **envoyer un Message**.  
@@ -49,4 +49,4 @@ Dans cette étape, vous utilisez l’utilitaire de l’Application métier pour 
 >  Les exemples de messages supposent que les identificateurs entreprise Global (GBI) pour « HOME » et « Partenaire » 123456789 et 987654321, respectivement. Pour utiliser un autre GBI, vous devez modifier le contenu de ces fichiers.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Étape 8 : Afficher les Messages dans les bases de données BTARN](../../adapters-and-accelerators/accelerator-rosettanet/step-8-view-messages-in-the-btarn-databases.md)
+ [Étape 8 : Afficher les messages dans les bases de données BTARN](../../adapters-and-accelerators/accelerator-rosettanet/step-8-view-messages-in-the-btarn-databases.md)

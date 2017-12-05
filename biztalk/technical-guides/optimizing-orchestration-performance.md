@@ -12,11 +12,11 @@ caps.latest.revision: "25"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cbd45901afb229cf884390c2a5120deac0daa90d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b4f8a3b0bcc58fbed428152bb9f55c34d867258a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="optimizing-orchestration-performance"></a>Optimisation des performances de l’Orchestration
 Cette rubrique décrit les meilleures pratiques pour l’utilisation d’orchestrations dans les solutions BizTalk Server. Cela inclut des recommandations pour :  
@@ -220,7 +220,7 @@ public static XmlDocument FromMsg(XLANGMessage old)
 }  
 ```  
   
- Est une autre méthode pour créer une classe .NET basée sur le schéma. Cette opération prend moins de mémoire que le chargement du document dans un **XmlDocument** objet, ainsi que de fournir un accès facile aux éléments du schéma pour les développeurs .NET. Pour générer une classe basée sur un schéma BizTalk, vous pouvez utiliser l’outil xsd.exe fourni avec Visual Studio. Par exemple, en cours d’exécution **xsd.exe \<schema.xsd >/classes** par rapport à un schéma simple contenant des champs nommés ItemA, ItemB, ItemC, génère la classe suivante.  
+ Est une autre méthode pour créer une classe .NET basée sur le schéma. Cette opération prend moins de mémoire que le chargement du document dans un **XmlDocument** objet, ainsi que de fournir un accès facile aux éléments du schéma pour les développeurs .NET. Pour générer une classe basée sur un schéma BizTalk, vous pouvez utiliser l’outil xsd.exe fourni avec Visual Studio. Par exemple, en cours d’exécution **xsd.exe \<schema.xsd\> /classes** par rapport à un schéma simple contenant des champs nommés ItemA, ItemB, ItemC, génère la classe suivante.  
   
 ```csharp  
 //------------------------------------------------------------------------------  
@@ -349,7 +349,7 @@ public static Root SetValues(Microsoft.XLANGs.BaseTypes.XLANGMessage msg)
 -   [Blog de Charles Young, BizTalk Server 2006 : Le modèle de Compensation](http://go.microsoft.com/fwlink/?LinkId=158017) (http://go.microsoft.com/fwlink/?LinkId=158017).  
   
     > [!NOTE]  
-    >  Pendant ce billet de blog a été écrit avec [!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)] à l’esprit les principes décrits dans le blog s’appliquent également aux [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)].  
+    >  Pendant ce billet de blog a été écrit avec [!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)] à l’esprit les principes décrits dans le blog s’appliquent également à BizTalk Server.  
   
 ## <a name="considerations-when-using-maps-in-orchestrations"></a>Considérations sur l’utilisation de mappages dans les orchestrations  
  Les considérations suivantes s’appliquent lors de l’utilisation de mappages dans les orchestrations :  

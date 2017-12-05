@@ -12,11 +12,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6f1a024769b0728873d6cf217e3028d2c5532055
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 324d8a7faf3ce21630502f219d033fb797aa3fc6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configuring-a-receive-port-for-messages-over-as2"></a>Configuration d'un port de réception pour les messages via AS2
 Pour recevoir un message AS2 avec une charge EDI ou non-EDI, créez un port de réception HTTP pour recevoir le message et renvoyer une réponse au tiers.  
@@ -37,7 +37,7 @@ Pour recevoir un message AS2 avec une charge EDI ou non-EDI, créez un port de r
 |**Propriétés de l’emplacement de réception : général**|Gestionnaire de réception|BizTalkServerIsolatedHost|  
 |**Propriétés de l’emplacement de réception : général**|Pipeline de réception|-AS2EdiReceive (si la charge utile est codée au format EDI)<br />-AS2Receive (si la charge utile n’est pas codée au format EDI) **Remarque :** lorsque vous utilisez le pipeline AS2EdiReceive, vous devez ajouter le compte d’utilisateur qui exécute le processus de l’Instance d’hôte BizTalk isolé sous au groupe utilisateurs d’applications BizTalk. Le pipeline AS2EdiReceive s'exécute dans le processus d'instance de l'hôte BizTalk isolé. Le pipeline AS2EdiReceive accède au magasin SSO, qui requiert que l'utilisateur figure dans le groupe Utilisateurs d'applications [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].|  
 |**Propriétés de l’emplacement de réception : général**|Pipeline d’envoi|AS2Send|  
-|**Propriétés du Transport HTTP**|Répertoire virtuel assorti de l'extension ISAPI|/\<nom du répertoire virtuel >/BTSHTTPReceive.dll|  
+|**Propriétés du Transport HTTP**|Répertoire virtuel assorti de l'extension ISAPI|/\<nom du répertoire virtuel \> /BTSHTTPReceive.dll|  
 |**Propriétés du Transport HTTP**|Type de contenu requête-réponse renvoyé|text/xml|  
   
 ## <a name="functionality-of-the-receive-location-in-synchronous-and-asynchronous-modes"></a>Fonctionnalités de l'emplacement de réception dans les modes synchrone et asynchrone  
@@ -81,4 +81,4 @@ Pour recevoir un message AS2 avec une charge EDI ou non-EDI, créez un port de r
  [Configuration des Ports pour une Solution AS2](../core/configuring-ports-for-an-as2-solution.md)   
  [Le traitement d’un Message AS2 entrant](../core/processing-an-incoming-as2-message.md)   
  [Générer un MDN sortant](../core/generating-an-outgoing-mdn.md)   
- [Envoi d’un MDN sortant](../core/sending-an-outgoing-mdn.md)
+ [Envoi d’une notification de réception du message sortante](../core/sending-an-outgoing-mdn.md)

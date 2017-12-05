@@ -17,11 +17,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 331a21c64aa0130b3e110f1da6ca776f0b2c6a49
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bc89b26d0eee970268d5e9084cd0827d3100fd7b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="deploying-a4swift-schemas"></a>Déploiement de schémas d’A4SWIFT
 Vous devez déployer les schémas des messages SWIFT à échanger.  
@@ -53,7 +53,7 @@ Vous devez déployer les schémas des messages SWIFT à échanger.
   
 7.  Démarrez l’invite de commandes de Visual Studio.  
   
-8.  À l’invite de commandes Visual Studio, accédez à  **\<* lecteur*> : \Program Files\Microsoft BizTalk Accelerator pour SWIFT **.  
+8.  À l’invite de commandes Visual Studio, accédez à  **\<* lecteur*\>: \Program Files\Microsoft BizTalk Accelerator pour SWIFT **.  
   
 9. À l’invite de commandes, tapez **sn – k key.snk**, puis appuyez sur ENTRÉE. Vérifiez qu’un message s’affiche dans la fenêtre d’invite de commandes qui indique qu’une paire de clés a été écrite dans key.snk.  
   
@@ -63,7 +63,7 @@ Vous devez déployer les schémas des messages SWIFT à échanger.
   
 12. Dans le volet droit de la **Pages de propriétés** boîte de dialogue, faites défiler jusqu'à la **nom fort** , cliquez sur le champ situé à droite de **fichier de clé d’Assembly**, puis cliquez sur le points de suspension ().  
   
-13. Dans le **fichier de clé d’Assembly** boîte de dialogue, accédez à  **\<* lecteur*> : \Program Files\Microsoft**[!INCLUDE[btaA4SWIFTNoVersionui](../../includes/btaa4swiftnoversionui-md.md)], cliquez sur **key.snk** , puis cliquez sur **ouvrir**.  
+13. Dans le **fichier de clé d’Assembly** boîte de dialogue, accédez à  **\<* lecteur*\>: \Program Files\Microsoft**[!INCLUDE[btaA4SWIFTNoVersionui](../../includes/btaa4swiftnoversionui-md.md)], cliquez sur **key.snk**, puis cliquez sur **ouvrir**.  
   
 14. Dans le **Pages de propriétés** boîte de dialogue, cliquez sur **OK** pour enregistrer vos modifications.  
   
@@ -73,11 +73,11 @@ Vous devez déployer les schémas des messages SWIFT à échanger.
   
 2.  Avec le bouton droit de votre projet, pointez sur **ajouter**, puis cliquez sur **élément existant**.  
   
-3.  Dans le **ajouter un élément existant** boîte de dialogue du :\\**programme Files\Microsoft BizTalk Accelerator pour SWIFT \<version > Message Pack\SWIFT Messages\A4SWIFT-SRG\< version > \Base schémas**. Sélectionnez le **SWIFT Base Types.xsd** et **Types.xsd de données courantes SWIFT** schémas, puis cliquez sur **ajouter**.  
+3.  Dans le **ajouter un élément existant** boîte de dialogue du :\\**programme Files\Microsoft BizTalk Accelerator pour SWIFT \<version\> Pack\SWIFT Messages\A4SWIFT-SRGMessage\<version\>\Base schémas**. Sélectionnez le **SWIFT Base Types.xsd** et **Types.xsd de données courantes SWIFT** schémas, puis cliquez sur **ajouter**.  
   
 4.  Avec le bouton droit de votre projet, pointez sur **ajouter**, puis cliquez sur **ajouter un élément existant**.  
   
-5.  Dans le **ajouter un élément existant** boîte de dialogue le **Regarder dans** zone déroulante, accédez à  **\<lecteur > : \Program Files\Microsoft BizTalk Accelerator pour SWIFT \< version > Message Pack\SWIFT Messages\A4SWIFT-SRG\<version > \Category n\MTxxx**. Sélectionnez un schéma pour un type de message, par exemple **MT103.xsd**, puis cliquez sur **ajouter**.  
+5.  Dans le **ajouter un élément existant** boîte de dialogue le **Regarder dans** zone déroulante, accédez à  **\<lecteur\>: \Program Files\Microsoft BizTalk Accelerator pour SWIFT \<version\> Message Pack\SWIFT Messages\A4SWIFT-SRG\<version\>\Category n\MTxxx**. Sélectionnez un schéma pour un type de message, par exemple **MT103.xsd**, puis cliquez sur **ajouter**.  
   
     > [!NOTE]
     >  A4SWIFT ajoute le schéma pour votre projet, comme indiqué dans l’Explorateur de solutions.  

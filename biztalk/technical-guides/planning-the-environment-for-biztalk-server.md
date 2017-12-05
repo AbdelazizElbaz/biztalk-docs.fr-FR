@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 135d514b4272246a4c8b0c256670566795ae774d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 66cd358f3d8a4fbda2c4ed43432f1ad8b2f6979e
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="planning-the-environment-for-biztalk-server"></a>Planification de l’environnement pour BizTalk Server
 La section du guide des opérations de planification décrit les rôles et responsabilités associées à un [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environnement. Elle inclut la planification des recommandations pour les couches application et données d’un [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environnement et il fournit des recommandations de planification pour la mise à jour des étapes de gestion d’une solution BizTalk.  
@@ -39,11 +39,11 @@ La section du guide des opérations de planification décrit les rôles et respo
 |**Scénario**|**Produit à utiliser**|  
 |------------------|------------------------|  
 |Configuration de l’utilisateur|**Microsoft Identity Lifecycle Manager 2010**<br /><br /> Pour plus d’informations sur Microsoft Identity Lifecycle Manager 2010, consultez [Microsoft Identity Lifecycle Manager 2010 FP1](http://go.microsoft.com/fwlink/?LinkId=204577) (http://go.microsoft.com/fwlink/?LinkId=204577).|  
-|Réplication des données entre les systèmes|**Réplication SQL Server**<br /><br /> Pour plus d’informations sur [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)] la réplication, consultez [la réplication SQL Server 2008 R2](http://go.microsoft.com/fwlink/?LinkID=69978) (http://go.microsoft.com/fwlink/?LinkID=69978).|  
-|Extraction de données, de transformation et chargement (ETL)|**SQL Server Integration Services (SSIS)**<br /><br /> Pour plus d’informations sur [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)] Integration Services, consultez [SQL Server 2008 R2 Integration Services](http://go.microsoft.com/fwlink/?LinkId=152044) (http://go.microsoft.com/fwlink/?LinkId=152044).|  
+|Réplication des données entre les systèmes|**Réplication SQL Server**<br /><br /> Pour plus d’informations sur la réplication SQL Server, consultez [la réplication SQL Server 2008 R2](http://go.microsoft.com/fwlink/?LinkID=69978) (http://go.microsoft.com/fwlink/?LinkID=69978).|  
+|Extraction de données, de transformation et chargement (ETL)|**SQL Server Integration Services (SSIS)**<br /><br /> Pour plus d’informations sur SQL Server Integration Services, consultez [SQL Server 2008 R2 Integration Services](http://go.microsoft.com/fwlink/?LinkId=152044) (http://go.microsoft.com/fwlink/?LinkId=152044).|  
   
 ## <a name="deciding-which-edition-of-biztalk-server-is-right-for-the-job"></a>Décider quelle édition de BizTalk Server est à droite de la tâche  
- Il existe quatre éditions différentes de [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], chacun d’eux est destiné à des scénarios spécifiques. Les quatre éditions de [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] incluent :  
+ Il existe quatre différentes éditions de BizTalk Server, chacune d’elles est destiné à des scénarios spécifiques. Les quatre éditions de BizTalk Server sont les suivantes :  
   
 -   **Enterprise** - conçue pour les clients avec les exigences de niveau entreprise pour un volume élevé, la fiabilité et la disponibilité.  
   
@@ -51,11 +51,11 @@ La section du guide des opérations de planification décrit les rôles et respo
   
 -   **Branche** -version spécialisée de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] conçu pour le hub et spoke des scénarios de déploiement, y compris de RFID.  
   
--   **Développeur** - fournit toutes les fonctionnalités de l’édition entreprise pour le développement et à des fins de tests et est disponible en tant que le [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] édition d’évaluation sans frais à des fins d’évaluation. Lors de l’installation en tant que l’édition d’évaluation, [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] fonctionnera pendant 120 jours.  
+-   **Développeur** : fournit toutes les fonctionnalités de l’édition entreprise pour le développement et à des fins de tests et est disponible en tant que BizTalk Server d’évaluation édition sans frais à des fins d’évaluation. Lors de l’installation en tant que l’édition d’évaluation, BizTalk Server fonctionnera pendant 120 jours.  
   
 -   **RFID Enterprise** - conçue pour fournir une plateforme évolutive et extensible de développement, de déploiement et de gestion des solutions RFID et capteurs, comprend BizTalk RFID Server et BizTalk RFID Mobile.  
   
- Pour plus d’informations sur les différentes éditions de [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], consultez [éditions de Microsoft BizTalk Server](http://go.microsoft.com/fwlink/?LinkId=108051) (http://go.microsoft.com/fwlink/?LinkId=108051).  
+ Pour plus d’informations sur les différentes éditions de BizTalk Server, consultez [éditions de Microsoft BizTalk Server](http://go.microsoft.com/fwlink/?LinkId=108051) (http://go.microsoft.com/fwlink/?LinkId=108051).  
   
 ## <a name="planning-for-message-load"></a>Planification de la charge de Message  
  Une fois que vous avez déterminé que [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] répond à l’intégration de votre entreprise a besoin, la prochaine chose que vous devez déterminer la charge de message à la solution BizTalk doit traiter. Ceci est une décision importante car différentes éditions de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ont des fonctions différentes de montée en puissance parallèle et de montée en puissance parallèle.  
@@ -67,10 +67,10 @@ La section du guide des opérations de planification décrit les rôles et respo
   
 ## <a name="in-this-section"></a>Dans cette section  
   
--   [Responsabilités et rôles de BizTalk Server](../technical-guides/biztalk-server-roles-and-responsibilities.md)  
+-   [Rôles et responsabilités de BizTalk Server](../technical-guides/biztalk-server-roles-and-responsibilities.md)  
   
 -   [Planification du niveau BizTalk Server](../technical-guides/planning-the-biztalk-server-tier.md)  
   
--   [Planification de la couche de base de données](../technical-guides/planning-the-database-tier.md)  
+-   [Planification de la couche base de données](../technical-guides/planning-the-database-tier.md)  
   
--   [Planification du développement, test, intermédiaire et les environnements de Production](../technical-guides/planning-the-development-testing-staging-and-production-environments.md)
+-   [Planification des environnements de test, de préproduction et de production](../technical-guides/planning-the-development-testing-staging-and-production-environments.md)

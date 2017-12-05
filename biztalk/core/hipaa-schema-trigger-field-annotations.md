@@ -12,14 +12,14 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9d3bf6d53ec95ebfc57cff646ce5658fc6b1f4a2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f8c50db43b14899439877fde8ce0ee476feb5095
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="hipaa-schema-trigger-field-annotations"></a>Annotations des champs déclencheurs de schéma HIPAA
-Les segments EDI contiennent souvent des valeurs du qualificateur qui modifient la signification d'un segment. Par exemple, un segment N1 peut contenir un élément de qualification « BT » signifiant « Nom de facturation (bill-to) » ou « ST » pour « Nom de livraison (ship-to) ». Généralement, l'interprétation de ces champs est dictée par la logique d'entreprise et le Désassembleur fait correspondre toutes les instances du segment N1 avec le même enregistrement XML ; toutefois, les schémas HIPAA inclus dans [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] contiennent des annotations permettant au Désassembleur EDI de créer des enregistrements XML uniques sur la base de la présence d'un élément de qualification.  
+Les segments EDI contiennent souvent des valeurs du qualificateur qui modifient la signification d'un segment. Par exemple, un segment N1 peut contenir un élément de qualification « BT » signifiant « Nom de facturation (bill-to) » ou « ST » pour « Nom de livraison (ship-to) ». Normalement, il reste à la logique métier pour déterminer comment interpréter ces champs et le désassembleur fait correspondre toutes les instances du segment N1 avec le même nom de l’enregistrement XML ; Toutefois, les schémas HIPAA inclus dans BizTalk Server contiennent des annotations permettant au désassembleur EDI créer des enregistrements XML uniques en fonction de la présence d’un élément de qualification.  
   
  **Implémentation du champ déclencheur**  
   
@@ -59,7 +59,7 @@ N4*N401__PayeeCityName*N4*N403__PayeePost**N4*N406~
   
  **Champs déclencheurs et Segments par défaut**  
   
- Le tableau suivant contient des informations sur les segments et les champs déclencheurs par défaut utilisés dans les documents HIPAA inclus dans [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)].  
+ Le tableau suivant contient des informations sur les segments de valeur par défaut et les champs de déclencheur utilisés dans les documents HIPAA inclus en tant que partie de BizTalk Server :  
   
 > [!NOTE]
 >  Les valeurs de déclencheur individuelles utilisées avec les champs déclencheurs peuvent varier selon les schémas.  

@@ -17,11 +17,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 97af99271a4d63046d2a95a47caed7f145eaef24
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: f00c5f75062ffd084cd19f23bfa66768d3d67ca5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-the-virtual-directory"></a>Comment configurer le répertoire virtuel
 Cette rubrique décrit les procédures de configuration du répertoire virtuel et de vérification de l'application pour un utilisateur.  
@@ -32,7 +32,7 @@ Cette rubrique décrit les procédures de configuration du répertoire virtuel e
   
 2.  Cliquez sur **Démarrer**, pointez sur **programmes**, cliquez sur **outils d’administration**, puis cliquez sur **Gestionnaire des Services Internet (IIS)**.  
   
-3.  Développez  **\<nom du serveur >** , puis **Sites**.  
+3.  Développez  **\<nom du serveur\>**  , puis **Sites**.  
   
 4.  Avec le bouton droit **Site Web par défaut** et cliquez sur **ajouter un répertoire virtuel**.  
   

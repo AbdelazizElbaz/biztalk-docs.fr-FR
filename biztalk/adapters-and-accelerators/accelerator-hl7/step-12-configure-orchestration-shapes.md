@@ -16,11 +16,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f7375912c49c431c67c7ff55025cd2821374b87b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f21c373aacc949b95588c66f1243936b15ea9e89
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="step-12-configure-orchestration-shapes"></a>Étape 12 : Configurer les formes d’Orchestration
 Dans cette étape, vous terminez la configuration des formes d’orchestration afin de supprimer les balises actives de configuration insuffisante. Vous désignez **DoorbellOutputMessage** en tant que la sortie du premier processus de transformation, la désignation **DoorbellMap.btm** en tant que le mappage utilisé dans ce processus. Vous désignez puis **DoorbellFinalMessage** en tant que la sortie du deuxième transformer les processus et ajoutez l’expression qui enrichit le message avec les données des champs supplémentaires.  
@@ -29,7 +29,7 @@ Dans cette étape, vous terminez la configuration des formes d’orchestration a
   
 ### <a name="to-configure-orchestration-shapes"></a>Pour configurer les formes d’orchestration  
   
-1.  Sur la surface de conception d’orchestration [!INCLUDE[vs2012](../../includes/vs2012-md.md)], cliquez sur le **ConstructMessage_1** forme.  
+1.  Sur la surface en mode Design d’orchestration de Visual Studio, cliquez sur le **ConstructMessage_1** forme.  
   
 2.  Dans le **propriétés** fenêtre, cliquez sur le **Messages construits** propriété, sélectionnez **DoorbellOutputMessage** dans la liste déroulante, puis appuyez sur  **Entrez**.  
   
@@ -96,4 +96,4 @@ Dans cette étape, vous terminez la configuration des formes d’orchestration a
  Passez à [étape 13 : créer et configurer des Ports](../../adapters-and-accelerators/accelerator-hl7/step-13-create-and-configure-ports.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Didacticiel d’enrichissement de message](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)
+ [Didacticiel sur l’enrichissement des messages](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

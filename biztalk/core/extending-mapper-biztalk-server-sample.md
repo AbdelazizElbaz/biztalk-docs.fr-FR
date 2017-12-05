@@ -18,11 +18,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f24f7f55e752e25ed06ec68c8eca40d2e7509683
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1b2b4538d8bff60330de24f00b6565ed43a9c079
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="extending-mapper-biztalk-server-sample"></a>Extension du Mappeur (exemple BizTalk Server)
 L'exemple Extending Mapper présente l'utilisation et l'extension du Mappeur BizTalk. L'exemple inclut plusieurs fichiers de mappage (.btm) [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], chacun illustrant des aspects différents du Mappeur BizTalk.  
@@ -31,7 +31,7 @@ L'exemple Extending Mapper présente l'utilisation et l'extension du Mappeur Biz
  L'exemple Extending Mapper s'appuie sur le routage basé sur le contenu et n'utilise pas d'orchestration. En spécifiant un filtre sur l'exemple de port d'envoi, il est connecté directement à l'exemple de port de réception. Un mappage est spécifié sur le port d'envoi à appliquer au document traité.  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
- *\<Exemples de chemin d’accès >*\XmlTools\ExtendingMapper  
+ *\<Exemples de chemin d’accès\>*\XmlTools\ExtendingMapper  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -63,7 +63,7 @@ L'exemple Extending Mapper présente l'utilisation et l'extension du Mappeur Biz
   
 1.  Dans une fenêtre de commande, accédez au répertoire (**cd**) dans le dossier suivant :  
   
-     *\<Exemples de chemin d’accès >*\XmlTools\ExtendingMapper  
+     *\<Exemples de chemin d’accès\>*\XmlTools\ExtendingMapper  
   
 2.  Exécutez le fichier Setup.bat, qui effectue les actions suivantes :  
   
@@ -97,13 +97,13 @@ L'exemple Extending Mapper présente l'utilisation et l'extension du Mappeur Biz
     > [!IMPORTANT]
     >  Si vous voulez utiliser Scriptor_InlineXsltCallingExternalAssembly.btm, vous devez modifier le fichier ExternalAssembly.xml. ExternalAssembly.xml est utilisé par BizTalk pour mapper un espace de noms enregistré comme objet d'extension de mappeur à un assembly .NET. Comme l'assembly dépendant est référencé avec son nom complet (y compris son jeton de clé publique automatiquement généré), vous devez mettre à jour cette valeur. Si vous ne voulez pas utiliser Scriptor_InlineXsltCallingExternalAssembly.btm, vous ne devez pas effectuer les étapes a à e.  
   
-4.  Dans l’Explorateur Windows, accédez à \<dossier Windows > \assembly\\.  
+4.  Dans l’Explorateur Windows, accédez à \<dossier Windows\>\assembly\\.  
   
     1.  Avec le bouton droit **Microsoft.Samples.BizTalk.ExtendingMapper.MapperClassLibrary** et sélectionnez **propriétés**.  
   
     2.  Copiez la valeur du jeton de clé publique.  
   
-    3.  Dans un éditeur de texte, ouvrez  *\<exemples de chemin >*\XML Tools\ExtendingMapper\ExternalAssembly.xml.  
+    3.  Dans un éditeur de texte, ouvrez  *\<exemples de chemin\>*\XML Tools\ExtendingMapper\ExternalAssembly.xml.  
   
     4.  Sélectionnez le **Microsoft.Samples.BizTalk.extendingmapper.mapperclasslibrary, Version = 1.0.0.0, Culture = neutral, PublicKeyToken = 68496d20c737d84b »**d’attribut, puis remplacez le  **PublicKeyToken** valeur avec le jeton de clé publique valeur que vous avez copiée à l’étape c.  
   
@@ -116,7 +116,7 @@ L'exemple Extending Mapper présente l'utilisation et l'extension du Mappeur Biz
   
 1.  Cliquez sur **Démarrer**, sélectionnez **tous les programmes**, sélectionnez **Microsoft BizTalk Server**, puis sélectionnez **Administration de BizTalk Server**.  
   
-2.  Dans la console Administration de BizTalk Server, cliquez pour développer **Administration de BizTalk Server**, cliquez pour développer **groupe BizTalk [\<nom_serveur > :\<base de données de gestion >]**et développez **Applications**.  
+2.  Dans la console Administration de BizTalk Server, cliquez pour développer **Administration de BizTalk Server**, cliquez pour développer **groupe BizTalk [\<nom_serveur\>:\<base de données de gestion \>]**et développez **Applications**.  
   
 3.  Cliquez pour développer **ExtendingMapperApplication**, puis cliquez sur **Ports d’envoi**.  
   
@@ -141,9 +141,9 @@ L'exemple Extending Mapper présente l'utilisation et l'extension du Mappeur Biz
   
 #### <a name="to-run-this-sample"></a>Pour exécuter l'exemple  
   
-1.  Copie l’entrée de fichier ExtendingMapper.xml dans le dossier d’entrée à  *\<exemples de chemin >*\XmlTools\ExtendingMapper\In.  
+1.  Copie l’entrée de fichier ExtendingMapper.xml dans le dossier d’entrée à  *\<exemples de chemin\>*\XmlTools\ExtendingMapper\In.  
   
-2.  Remarquez que le fichier est transformé et acheminé vers le  *\<exemples de chemin >*dossier \XmlTools\ExtendingMapper\Out. La transformation qui se produit est basée sur le mappage que vous avez appliqué.  
+2.  Remarquez que le fichier est transformé et acheminé vers le  *\<exemples de chemin\>*dossier \XmlTools\ExtendingMapper\Out. La transformation qui se produit est basée sur le mappage que vous avez appliqué.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Outils XML (dossier d’exemples BizTalk Server)](../core/xml-tools-biztalk-server-samples-folder.md)

@@ -17,11 +17,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 96631531cc28ac1bed4ea2b2b56b4b8f9b80c281
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c7dab9df7b5444b437f12737c37036b592a70aad
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-set-the-sso-server"></a>Comment configurer le serveur d’authentification unique
 Chaque fois que vous utilisez ssomanage, vous devez commencer par pointer l'utilisateur sur le serveur d'authentification unique auquel vous voulez vous connecter.  
@@ -48,9 +48,9 @@ Chaque fois que vous utilisez ssomanage, vous devez commencer par pointer l'util
   
 1.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-2.  Dans l'invite de ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  **\<lecteur >**: \Program Files\Enterprise Single Sign-On.  
+2.  Dans l'invite de ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  **\<lecteur\>**: \Program Files\Enterprise Single Sign-On.  
   
-3.  Type **ssomanage – server \<nom du serveur SSO >**, où  **\<nom du serveur SSO >** est le nom d’ordinateur unique l’authentification du serveur de l’utilisateur souhaite se connecter à.  
+3.  Type **ssomanage – server \<nom du serveur SSO\>**, où  **\<nom du serveur SSO\>**  est le nom d’ordinateur du serveur d’authentification unique de l’utilisateur veut se connecter.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -59,9 +59,9 @@ Chaque fois que vous utilisez ssomanage, vous devez commencer par pointer l'util
   
 1.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-2.  Dans l'invite de ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  **\<lecteur >**: \Program Files\Enterprise Single Sign-On.  
+2.  Dans l'invite de ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  **\<lecteur\>**: \Program Files\Enterprise Single Sign-On.  
   
-3.  Type **ssomanage – serverall \<nom du serveur SSO >**, où  **\<nom du serveur SSO >** est le nom d’ordinateur du serveur d’authentification unique de tous les membres, les utilisateurs de l’authentification unique compte est pointé.  
+3.  Type **ssomanage – serverall \<nom du serveur SSO\>**, où  **\<nom du serveur SSO\>**  est le nom de l’unique serveur d’authentification toutes les les membres du compte utilisateurs d’authentification unique seront pointés.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -70,7 +70,7 @@ Chaque fois que vous utilisez ssomanage, vous devez commencer par pointer l'util
   
 1.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-2.  Dans l'invite de ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  **\<lecteur >**: \Program Files\Enterprise Single Sign-On.  
+2.  Dans l'invite de ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  **\<lecteur\>**: \Program Files\Enterprise Single Sign-On.  
   
 3.  Type **ssomanage – showserver**.  
   
@@ -84,4 +84,4 @@ Chaque fois que vous utilisez ssomanage, vous devez commencer par pointer l'util
  [Comment activer l’authentification unique](../core/how-to-enable-sso.md)   
  [Comment désactiver l’authentification unique](../core/how-to-disable-sso.md)   
  [Comment afficher les informations de base de données SSO](../core/how-to-display-the-sso-database-information.md)   
- [À l’aide de l’authentification unique](../core/using-sso.md)
+ [Utilisation de l’authentification unique](../core/using-sso.md)

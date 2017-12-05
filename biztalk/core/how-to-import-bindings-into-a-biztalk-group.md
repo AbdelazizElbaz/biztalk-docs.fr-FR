@@ -17,11 +17,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1cfc20fea950c737d59e6b325744a02ee67bb63f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a64bac6c64a9aadc772bfe8445b23f87b469471d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-import-bindings-into-a-biztalk-group"></a>Importation des liaisons dans un groupe BizTalk
 Cette rubrique décrit comment importer des liaisons dans un groupe BizTalk à partir d'un fichier .xml à l'aide de la console Administration de BizTalk Server ou de l'invite de commandes. Pour obtenir des instructions sur l’exportation des liaisons dans un fichier .xml que vous pouvez importer à partir d’un groupe BizTalk, consultez [comment exporter les liaisons pour un groupe BizTalk](../core/how-to-export-bindings-for-a-biztalk-group.md).  
@@ -43,7 +43,7 @@ Cette rubrique décrit comment importer des liaisons dans un groupe BizTalk à p
   
 4.  Cliquez sur le fichier de liaison et cliquez sur **ouvrir**.  
   
-     Les artefacts du fichier de liaison sont écrits dans le groupe. Elles s’affichent dans les dossiers appropriés de le \<tous les artefacts > nœud.  
+     Les artefacts du fichier de liaison sont écrits dans le groupe. Elles s’affichent dans les dossiers appropriés de le \<tous les artefacts\> nœud.  
   
 #### <a name="using-the-command-line"></a>À l’aide de la ligne de commande  
   

@@ -18,11 +18,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0654bcf011648bcc40c092cb45e529b89cec1924
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0139e76512eb9ca60089cb3c5f1e71b4f5524690
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="activity-data-storage"></a>Stockage des données d'activité
 Cette rubrique décrit le stockage des données d'activité, les problèmes de performances engendrés par l'augmentation progressive de la taille des tables de l'activité et la manière dont le composant BAM permet de résoudre ces difficultés en séparant les tables des activités en cours de celles des activités terminées. Cette rubrique traite également des fenêtres en ligne permettant d'interroger les données et de l'utilisation du partitionnement dans les analyses BAM pour augmenter les performances.  
@@ -37,14 +37,14 @@ Cette rubrique décrit le stockage des données d'activité, les problèmes de p
 |124|8 h 30|Seattle|234|8:45 am|1:20 pm|  
 |125|8:35 am|Redmond|87|9:05 am|2 h 30|  
 |126|8:45 am|Seattle|450|9 h 20|3:10 pm|  
-|127|8:55:00|Redmond|200|9 h 30|\<NULL >|  
+|127|8:55:00|Redmond|200|9 h 30|\<NULL\>|  
 |128|8:57 am|Seattle|340|9 h 20|15:05:00|  
-|129|9 h 12|Seattle|120|9 h 45|\<NULL >|  
-|130|9 h 30|Redmond|25|10:15:00|\<NULL >|  
-|131|9:45|Seattle|250|10:35:00|\<NULL >|  
-|132|10:00 am|Redmond|100|\<NULL >|\<NULL >|  
-|133|10:15:00|Seattle|230|\<NULL >|\<NULL >|  
-|134|10:25:00|Redmond|45|\<NULL >|\<NULL >|  
+|129|9 h 12|Seattle|120|9 h 45|\<NULL\>|  
+|130|9 h 30|Redmond|25|10:15:00|\<NULL\>|  
+|131|9:45|Seattle|250|10:35:00|\<NULL\>|  
+|132|10:00 am|Redmond|100|\<NULL\>|\<NULL\>|  
+|133|10:15:00|Seattle|230|\<NULL\>|\<NULL\>|  
+|134|10:25:00|Redmond|45|\<NULL\>|\<NULL\>|  
   
  Dans cette table, lorsque le composant BAM reçoit un nouveau bon de commande, une nouvelle ligne est insérée et des valeurs autres que « null » sont attribuées à certaines colonnes (heure de réception, ville, quantité, etc.). Ensuite, une fois que vous avez validé l'expédition du bon de commande, l'analyse BAM définit une valeur non « null » dans la colonne correspondant à l'heure d'expédition. Enfin, lorsque la commande a été livrée, l'analyse BAM attribue une valeur autre que « null » pour l'heure de livraison.  
   
@@ -88,13 +88,13 @@ UNION ALL
   
  Notez les remarques suivantes concernant le partitionnement de l'analyse BAM :  
   
--   Le nom de la vue partitionnée est **bam_\<Nomactivité > _AllInstances**. Cette vue n'est pas destinée à des interrogations directes mais peut être utile lors du dépannage des outils BAM. Pour effectuer des requêtes sur les données provenant des vues que vous avez créées pour chaque catégorie d'utilisateurs d'activités, utilisez une nouvelle vue. Pour plus d’informations, consultez [Querying Instance Data](../core/querying-instance-data.md).  
+-   Le nom de la vue partitionnée est **bam_\<Nomactivité\>_AllInstances**. Cette vue n'est pas destinée à des interrogations directes mais peut être utile lors du dépannage des outils BAM. Pour effectuer des requêtes sur les données provenant des vues que vous avez créées pour chaque catégorie d'utilisateurs d'activités, utilisez une nouvelle vue. Pour plus d’informations, consultez [Querying Instance Data](../core/querying-instance-data.md).  
   
 -   Vous définissez la fenêtre en ligne en modifiant les valeurs de **OnlineWindowTimeUnit** et **OnlineWindowLength** dans l’enregistrement de l’activité actuelle dans la table **bam_Metadata_Activities** dans la base de données d’importation principale.  
   
--   Le package DTS, **BAM_DM_\<Nomactivité >**, effectue le partitionnement et l’archivage/purge. À chaque exécution, ce lot tronque une nouvelle partition et archive et supprime toutes les partitions se trouvant en dehors de la fenêtre en ligne spécifiée.  
+-   Le package DTS, **BAM_DM_\<Nomactivité\>**, effectue le partitionnement et l’archivage/purge. À chaque exécution, ce lot tronque une nouvelle partition et archive et supprime toutes les partitions se trouvant en dehors de la fenêtre en ligne spécifiée.  
   
 -   Si vous n'avez pas configuré de base de données pour archiver les partitions, le composant BAM supprime les anciennes données d'activité sans les archiver au préalable.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Infrastructure dynamique BAM](../core/bam-dynamic-infrastructure.md)
+ [Infrastructure dynamique de l’analyse BAM](../core/bam-dynamic-infrastructure.md)

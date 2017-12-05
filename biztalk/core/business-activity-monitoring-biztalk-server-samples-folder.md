@@ -16,14 +16,14 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3a416836c816cc1952300b667dd679944b7925d3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9cb13e92f7c4954de540d65f161afab359fe9ce8
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="business-activity-monitoring-biztalk-server-samples-folder"></a>Business Activity Monitoring (dossier d’exemples BizTalk Server)
-Le Kit de développement logiciel (SDK) de Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] inclut plusieurs exemples BAM (Business Activity Monitoring). Cette section fournit des informations détaillées sur les fonctionnalités présentées dans les exemples BAM, des instructions sur la création et l'exécution des exemples et les résultats attendus.  
+Microsoft BizTalk Server inclut plusieurs exemples d’analyse BAM (Business Activity) dans le kit de développement logiciel (SDK). Cette section fournit des informations détaillées sur les fonctionnalités présentées dans les exemples BAM, des instructions sur la création et l'exécution des exemples et les résultats attendus.  
   
 ## <a name="in-this-section"></a>Dans cette section  
   

@@ -12,14 +12,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0cd96da053bad370d635c804df41badf10a7c154
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c23fa8aca6def654b594d8b4fccf5d584e12fed4
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="esb-resolver-and-adapter-provider-framework"></a>Programme de résolution ESB et d’infrastructure d’adaptateurs fournisseur
-Le programme de résolution et l’infrastructure d’adaptateurs fournisseur fournit une architecture enfichable complète pour la résolution dynamiquement les informations de point de terminaison et [!INCLUDE[prague](../includes/prague-md.md)] mapper les types. Il utilise des composants extensibles, qui permettent aux développeurs de modifier le comportement pour leurs propres besoins et étendre le mécanisme pour prendre en charge la résolution de l’autre et les méthodes de routage.  
+Le programme de résolution et l’infrastructure d’adaptateurs fournisseur fournit une architecture enfichable complète pour la résolution dynamiquement les informations de point de terminaison et les types de mappage de BizTalk Server. Il utilise des composants extensibles, qui permettent aux développeurs de modifier le comportement pour leurs propres besoins et étendre le mécanisme pour prendre en charge la résolution de l’autre et les méthodes de routage.  
   
  Le programme de résolution et l’infrastructure d’adaptateurs fournisseur prend en charge Universal Description, Discovery et intégration UDDI (), du moteur de règles d’entreprise (BRE) et XML Path Language (XPath). Il expose également les interfaces de programmation (**IResolveProvider** et **IAdapterProvider**) pour permettre la création de composants de programme de résolution et de l’adaptateur personnalisés. Voici les trois principaux composants de l’infrastructure de fournisseur de carte et de programme de résolution :  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "50"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: be7c36900c39f46f636077c5c9d0cb630265cc80
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5374ba63ba8eb4193c3ef4990e8c169646a3528b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="bam-management-utility"></a>Utilitaire de gestion de l'analyse BAM
 Les administrateurs des définitions BAM utilisent l'utilitaire de gestion de l'analyse BAM pour gérer et conserver tous les aspects de l'infrastructure BAM.  
@@ -38,7 +38,7 @@ Les administrateurs des définitions BAM utilisent l'utilitaire de gestion de l'
 > [!NOTE]
 >  Pour que les commandes fonctionnent correctement, les paramètres régionaux de l'ordinateur exécutant l'utilitaire de gestion BAM doivent être identiques à ceux utilisés pour créer la définition BAM déployée. Par exemple, si vous exécutez le **get-views** commande sur un ordinateur configuré avec les paramètres régionaux anglais paramètre par rapport à une base de données sur un ordinateur avec les paramètres régionaux Français pas sera en mesure d’utiliser le nom de vue renvoyé, sauf si vous réinitialisez votre ordinateur paramètres régionaux à Français.  
   
- Vous pouvez utiliser l'utilitaire de gestion de l'analyse BAM pour générer et déployer votre configuration de suivi sur un serveur. L’utilitaire de gestion de l’analyse BAM est un outil de ligne de commande situé dans \< *chemin d’installation*> \Program Files\Microsoft BizTalk Server \<version > \Tracking\BM.exe.  
+ Vous pouvez utiliser l'utilitaire de gestion de l'analyse BAM pour générer et déployer votre configuration de suivi sur un serveur. L’utilitaire de gestion de l’analyse BAM est un outil de ligne de commande situé dans \< *chemin d’installation*\>\Program Files\Microsoft BizTalk Server \<version\>\Tracking\BM.exe.  
   
 > [!IMPORTANT]
 >  Pour exécuter l’utilitaire de gestion BAM, vous devez être membre de la **db_owner** rôle de base de données SQL Server dans les bases de données d’importation principale BAM, schémas en étoile BAM et archives BAM. Vous devez également disposer des autorisations sysadmin sur les bases de données d'alertes BAM si vous effectuez des mises à jour associées aux alertes BAM.  
@@ -65,28 +65,28 @@ Les administrateurs des définitions BAM utilisent l'utilitaire de gestion de l'
   
 -   [Commandes de base de données](../core/database-commands.md)  
   
--   [Déploiement des commandes de définition (modèle d’Observation) BAM](../core/deployment-of-bam-definition-observation-model-commands.md)  
+-   [Commandes de déploiement de définitions BAM (modèle d’observation)](../core/deployment-of-bam-definition-observation-model-commands.md)  
   
 -   [Commandes de gestion d’infrastructure](../core/infrastructure-management-commands.md)  
   
 -   [Commandes de gestion des activités](../core/activity-management-commands.md)  
   
--   [Afficher les commandes de gestion](../core/view-management-commands.md)  
+-   [Commandes de gestion des vues](../core/view-management-commands.md)  
   
 -   [Commandes de gestion des alertes](../core/alert-management-commands.md)  
   
--   [Commandes de gestion d’utilisateur](../core/user-management-commands.md)  
+-   [Commandes de gestion des utilisateurs](../core/user-management-commands.md)  
   
--   [Commandes de gestion des abonnements aux alertes](../core/alert-subscription-management-commands.md)  
+-   [Commandes de gestion des abonnements relatifs aux alertes](../core/alert-subscription-management-commands.md)  
   
--   [Commandes de gestion de l’intercepteur](../core/interceptor-management-commands.md)  
+-   [Commandes de gestion des intercepteurs](../core/interceptor-management-commands.md)  
   
 ## <a name="displaying-the-bam-management-utility-help"></a>Affichage de l'Aide de l'utilitaire de gestion de l'analyse BAM  
  Vous utilisez la **/ ?** ou le **aide utilitaire BAM Management** commande afin d’afficher le fichier d’aide de l’utilitaire de gestion BAM.  
   
 #### <a name="to-display-the-help-file-for-the-bam-management-utility"></a>Affichage du fichier d'aide de l'utilitaire de gestion de l'analyse BAM  
   
-1.  À partir d’une invite de commandes, accédez au répertoire suivant : C:\Program Files\Microsoft BizTalk Server \<version > \Tracking\\.  
+1.  À partir d’une invite de commandes, accédez au répertoire suivant : C:\Program Files\Microsoft BizTalk Server \<version\>\Tracking\\.  
   
 2.  Type **bm** ou **aide de bm**.  
   

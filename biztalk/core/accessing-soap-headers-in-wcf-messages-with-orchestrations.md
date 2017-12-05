@@ -17,16 +17,16 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3efc51b35b6ac522574c7adb66e27e56ab5f5bb3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3bfd1dd4e09071c3d7bcccf28878f19e13acad8a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="accessing-soap-headers-in-wcf-messages-with-orchestrations"></a>Accès aux en-têtes SOAP des messages WCF à l'aide des orchestrations
 Pour accéder aux valeurs d’en-tête SOAP des messages WCF entrants dans les orchestrations, vous utilisez la propriété de contexte **WCF. InboundHeaders**. Les adaptateurs WCF copient les en-têtes SOAP personnalisés et des en-têtes SOAP standard utilisés dans les messages entrants vers le **WCF. InboundHeaders** propriété. Ils permettent également de sélectionner les propriétés que vous souhaitez promouvoir ou écrire vers les propriétés de contexte par programme. Consultez [les en-têtes SOAP avec les Services WCF publiés](../core/soap-headers-with-published-wcf-services.md) pour plus d’informations.  
   
- La valeur contenue dans la propriété de contexte est une chaîne contenant des données XML avec le \< **en-têtes**> élément racine et les en-têtes SOAP entrants sont copiés comme éléments enfants de la \< **en-têtes** > élément. Pour accéder à ces données le plus simple consiste à utiliser l’éditeur d’Expression BizTalk dans un **assignation du Message** ou **Expression** mettre en forme, de charger la chaîne dans un **XmlDocument**et utiliser Requêtes XPath pour accéder aux champs spécifiques. Pour plus d’informations sur la création de documents XML dans l’éditeur d’Expression BizTalk, consultez [langage XLANG-s](../core/xlang-s-language.md).  
+ La valeur contenue dans la propriété de contexte est une chaîne contenant des données XML avec le \< **en-têtes** \> élément racine et les en-têtes SOAP entrants sont copiés comme éléments enfants de la \< **en-têtes** \> élément. Pour accéder à ces données le plus simple consiste à utiliser l’éditeur d’Expression BizTalk dans un **assignation du Message** ou **Expression** mettre en forme, de charger la chaîne dans un **XmlDocument**et utiliser Requêtes XPath pour accéder aux champs spécifiques. Pour plus d’informations sur la création de documents XML dans l’éditeur d’Expression BizTalk, consultez [langage XLANG-s](../core/xlang-s-language.md).  
   
  L’exemple de code suivant obtient l’en-tête SOAP de demande dans un **assignation du Message** ou **Expression** pour mettre en forme le **WCF. InboundHeaders** propriété :  
   
@@ -47,4 +47,4 @@ outboundMessageInstance(WCF.OutbounCustomHeaders) = "<headers><Origination xmlns
 ## <a name="see-also"></a>Voir aussi  
  [Accès aux en-têtes SOAP des Messages WCF avec les composants de Pipeline](../core/accessing-soap-headers-in-wcf-messages-with-pipeline-components.md)   
  [Propriétés et schéma de propriété des adaptateurs WCF](../core/wcf-adapters-property-schema-and-properties.md)   
- [En-têtes SOAP avec les Services WCF utilisés](../core/soap-headers-with-consumed-wcf-services.md)
+ [En-têtes SOAP avec les services WCF utilisés](../core/soap-headers-with-consumed-wcf-services.md)

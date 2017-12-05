@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 278ab244ab48d2e11a84e99f0af2e02948ff961a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f98d5113c63e29f3f4b85834b7ca1aa0836d0a5d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-data-is-stored-for-outbound-edi-messages"></a>Stockage des données pour les messages EDI sortants
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] effectue les opérations suivantes pour générer une entrée de rapport d'état pour un échange sortant :  
@@ -69,7 +69,7 @@ ms.lasthandoff: 09/20/2017
   
 -   ID de contrôle de l'échange = données mises à jour (requises à des fins de corrélation)  
   
--   État de l’accusé de réception de l’échange = généré ou non Applicable \<Note de référence 0 >-mettre à jour des données  
+-   État de l’accusé de réception de l’échange = généré ou non Applicable \<Note de référence 0\> -mettre à jour des données  
   
 -   ID de contrôle de l'accusé de réception de l'échange = Non évalué - sera appliqué par le côté envoi  
   
@@ -77,9 +77,9 @@ ms.lasthandoff: 09/20/2017
   
 -   Heure de l'accusé de réception de l'échange = Non évalué - sera appliqué par le côté envoi  
   
--   L’accusé de réception/Code d’Action = données mises à jour \<note de référence 1 > (à partir de X12-TA104 ou EDIFACT-UCI4) *  
+-   L’accusé de réception/Code d’Action = données mises à jour \<note de référence 1\> (à partir de X12-TA104 ou EDIFACT-UCI4) *  
   
--   Code de Note de l’accusé de réception = données mises à jour \<Note de référence 2 > (à partir de X12-TA105, non applicable pour EDIFACT) *  
+-   Code de Note de l’accusé de réception = données mises à jour \<Note de référence 2\> (à partir de X12-TA105, non applicable pour EDIFACT) *  
   
  Les accusés de réception/codes d'action suivants sont utilisés :  
   
@@ -163,9 +163,9 @@ ms.lasthandoff: 09/20/2017
   
 -   Heure de l'accusé de réception de l'échange = données mises à jour  
   
--   L’accusé de réception/Code d’Action = données mises à jour (à partir de X12-TA104 ou EDIFACT-UCI4) * \<Note de référence 1 >  
+-   L’accusé de réception/Code d’Action = données mises à jour (à partir de X12-TA104 ou EDIFACT-UCI4) * \<Note de référence 1\>  
   
--   Code de Note de l’accusé de réception 2 = données mises à jour (à partir de X12-TA105, non évalué pour EDIFACT) * \<Note de référence 2 >  
+-   Code de Note de l’accusé de réception 2 = données mises à jour (à partir de X12-TA105, non évalué pour EDIFACT) * \<Note de référence 2\>  
   
  Les données de ACK X12:TA1-104 ou EDIFACT UCI4 doivent être mappées comme suit :  
   
@@ -222,7 +222,7 @@ ms.lasthandoff: 09/20/2017
   
 -   Direction de l'accusé de réception fonctionnel = Envoyer  
   
--   État de l’accusé de réception fonctionnel = \<généré ou non Applicable, note de référence 1 >  
+-   État de l’accusé de réception fonctionnel = \<généré ou non Applicable, note de référence 1\>  
   
 -   Récepteur de l'échange = données mises à jour (requises à des fins de corrélation)  
   
@@ -248,7 +248,7 @@ ms.lasthandoff: 09/20/2017
   
 -   Nombre de documents informatisés acceptés = Données de mise à jour (X12-AK904 et calculé par le moteur pour le moteur EDIFACT)  
   
--   L’accusé de réception/Code d’Action = données mises à jour \<note de référence 2 > (à partir de X12-AK901 ou EDIFACT-UCI4) *  
+-   L’accusé de réception/Code d’Action = données mises à jour \<note de référence 2\> (à partir de X12-AK901 ou EDIFACT-UCI4) *  
   
 -   Erreur/Code d'erreur de syntaxe = Données de mise à jour (X12-AK905, EDIFACT UCI5) Note 3  
   
@@ -465,4 +465,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>Voir aussi  
  [Stockage des données pour les rapports d’état AS2 et EDI](../core/how-data-is-stored-for-edi-and-as2-status-reports.md)   
- [Stockage des données des Messages EDI entrants](../core/how-data-is-stored-for-inbound-edi-messages.md)
+ [Mode de stockage des données pour les messages EDI entrants](../core/how-data-is-stored-for-inbound-edi-messages.md)

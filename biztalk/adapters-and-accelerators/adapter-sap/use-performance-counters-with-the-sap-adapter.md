@@ -15,11 +15,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5da387377f6201b518d3c5fdf37dabb872bcf600
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dbc7ed347bc81a8a00ff7faa826bd48203c47e63
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="use-performance-counters-with-the-sap-adapter"></a>Utiliser des compteurs de Performance avec l’adaptateur SAP
 Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] les clients peuvent utiliser des compteurs de performance pour évaluer les performances des adaptateurs. Le [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] programme d’installation crée la catégorie de compteur de performances «[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]» le long de l’installation de le [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)].  
@@ -35,23 +35,23 @@ Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md
   
 -   Pour les appels à partir de l’adaptateur au système SAP (sortie)  
   
-    -   A,\<hôte d’application serveur >,\<numéro système >  
+    -   A,\<hôte d’application serveur\>,\<numéro du système\>  
   
-    -   B,\<hôte du serveur >,\<R3NAME >  
+    -   B,\<hôte du serveur message\>,\<R3NAME\>  
   
-    -   D,\<destination >  
+    -   D,\<destination\>  
   
 -   Pour les appels du système SAP à l’adaptateur (entrant)  
   
-    -   I,\<hôte de passerelle >,\<serveur de passerelle >  
+    -   I,\<hôte de passerelle\>,\<serveur de passerelle\>  
   
-    -   ID,\<destination >  
+    -   ID,\<destination\>  
   
  L’ID d’action peut être :  
   
--   \<Nom de la RFC > (pour un appel de la RFC)  
+-   \<Nom de la RFC\> (pour un appel de la RFC)  
   
--   T,\<nom de la RFC > (pour un appel tRFC)  
+-   T,\<nom de la RFC\> (pour un appel tRFC)  
   
  Le compteur de performance est initialisé uniquement après que l’adaptateur effectue le premier appel au système SAP. En outre, le [InstanceLifetime a](https://msdn.microsoft.com/library/system.diagnostics.performancecounter.instancelifetime.aspx) du compteur de performance est définie sur « Processus », ce qui signifie que le compteur de performances cesse d’exister dès que le programme qui crée le compteur se termine.
   

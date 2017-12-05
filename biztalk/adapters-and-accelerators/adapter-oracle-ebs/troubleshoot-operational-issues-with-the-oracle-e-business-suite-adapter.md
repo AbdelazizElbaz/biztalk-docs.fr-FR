@@ -13,11 +13,11 @@ caps.latest.revision: "24"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 92f888c185a7c7bea800986615da04ce57c80db0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4654e228a4ca86c9d89686f826d57777f2353efd
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="troubleshoot-operational-issues-with-the-oracle-e-business-suite-adapter"></a>Résoudre les problèmes opérationnels avec l’adaptateur Oracle E-Business Suite
 Cette section présente l’utilisation de techniques de dépannage pour résoudre les erreurs de fonctionnement que vous pouvez rencontrer lorsque vous utilisez [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)].  
@@ -50,7 +50,7 @@ ConfigurationErrorsException: Exception has been thrown by the target of an invo
   
  **Résolution**  
   
--   Assurez-vous que les versions de client LOB requis sont installées sur l’ordinateur où vous avez installé le [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]. Pour plus d’informations sur les versions de client pris en charge, consultez le guide d’installation disponible à l’adresse \<lecteur d’installation > : \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)].  
+-   Assurez-vous que les versions de client LOB requis sont installées sur l’ordinateur où vous avez installé le [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]. Pour plus d’informations sur les versions de client pris en charge, consultez le guide d’installation disponible à l’adresse \<lecteur d’installation\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)].  
   
 -   Assurez-vous que vous effectuez une installation personnalisée des adaptateurs pour installer uniquement la carte que vous avez besoin.  
   
@@ -72,7 +72,7 @@ ConfigurationErrorsException: Exception has been thrown by the target of an invo
   
  L’adaptateur renvoie l’erreur suivante lors de l’exécution de toute opération sur le Oracle E-Business Suite à l’aide [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].  
   
--   **Pour[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]**  
+-   **Pour BizTalk Server**  
   
     ```  
     System.ArgumentNullException: Value cannot be null.  

@@ -12,20 +12,20 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 313bfb773a94914ed9bebd3930dfd0033ecf4ac3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fbe03b1a8df67581ce73db31cd5ed4b80b7a109c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="publishing-from-the-biztalk-server-administration-console"></a>Publication à partir de la Console Administration de BizTalk Server
-Si vous souhaitez gérer la publication de point de terminaison via la [!INCLUDE[prague](../includes/prague-md.md)] Console d’Administration au lieu du portail de gestion ESB, vous pouvez le faire en entrant un moniker Universal Description, Discovery and Integration (UDDI) dans le champ de description de la points de terminaison à la publication dans UDDI. Voici un moniker de l’exemple.  
+Si vous souhaitez gérer le point de terminaison de publication via la Console Administration de BizTalk Server au lieu du portail de gestion ESB, vous pouvez le faire en entrant un moniker Universal Description, Discovery and Integration (UDDI) dans le champ de description des points de terminaison Pour publier dans UDDI. Voici un moniker de l’exemple.  
   
 ```  
 uddi://TransportType=other;Status=Published.  
 ```  
   
- Vous pouvez définir les propriétés suivantes de UDDI à l’aide de la **Description** champ dans le [!INCLUDE[prague](../includes/prague-md.md)] Console d’Administration :  
+ Vous pouvez définir les propriétés suivantes de UDDI à l’aide de la **Description** champ dans la Console Administration de BizTalk Server :  
   
 -   **ModifiedBy**. Cette propriété facultative comporte le nom du compte d’utilisateur qui a modifié le point de terminaison ; par exemple, MyDomainName\MyUserName.  
   

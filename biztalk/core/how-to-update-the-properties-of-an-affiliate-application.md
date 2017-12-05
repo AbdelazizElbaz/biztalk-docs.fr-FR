@@ -15,11 +15,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 577ded3a225acd8b3f95372075103ab37dfba854
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0ef4a2fb99d423f7c7ccb08cec58c3c49928e1ed
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-update-the-properties-of-an-affiliate-application"></a>Comment mettre à jour les propriétés d’une Application associée
 Le composant logiciel enfichable MMC ou cette commande permet de mettre à jour une ou plusieurs propriétés d'application, comme spécifié dans le fichier XML. Pour exécuter cette tâche, vous devez être Administrateur d'applications associées. Voici un exemple de fichier XML qui répertorie les champs que vous pouvez mettre à jour.  
@@ -71,9 +71,9 @@ Le composant logiciel enfichable MMC ou cette commande permet de mettre à jour 
   
 1.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  **\<lecteur >**: \Program Files\Enterprise Single Sign-On.  
+2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  **\<lecteur\>**: \Program Files\Enterprise Single Sign-On.  
   
-3.  Type **ssomanage – updateapps \<nom de fichier d’application >**, où le nom de fichier d’application est le fichier XML.  
+3.  Type **ssomanage – updateapps \<nom de fichier d’application\>**, où le nom de fichier d’application est le fichier XML.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -82,4 +82,4 @@ Le composant logiciel enfichable MMC ou cette commande permet de mettre à jour 
  [Applications associées SSO](../core/sso-affiliate-applications.md)   
  [Comment activer une Application associée](../core/how-to-enable-an-affiliate-application.md)   
  [Gestion des mappages utilisateur](../core/managing-user-mappings.md)   
- [Gestion des Applications associées](../core/managing-affiliate-applications.md)
+ [Gestion des applications associées](../core/managing-affiliate-applications.md)

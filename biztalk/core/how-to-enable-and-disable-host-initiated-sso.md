@@ -17,11 +17,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e6e7440742c5bb8efb8d867ecc96447390336b84
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c1e5783893bbc9091d0a5f1fb3f116b17413bc5d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-enable-and-disable-host-initiated-sso"></a>Activer et de désactivation de l’authentification unique initiée par
 Par défaut, l'authentification unique initiée par l'hôte n'est pas activée dans le système d'authentification unique et doit l'être par l'administrateur de cette authentification.  
@@ -44,7 +44,7 @@ Par défaut, l'authentification unique initiée par l'hôte n'est pas activée d
   
 2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
 4.  Type **ssomanage-activer hisso**.  
   
@@ -71,7 +71,7 @@ Par défaut, l'authentification unique initiée par l'hôte n'est pas activée d
   
 2.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
 4.  Type **ssomanage-désactiver hisso** selon le cas.  
   
@@ -79,4 +79,4 @@ Par défaut, l'authentification unique initiée par l'hôte n'est pas activée d
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
   
 ## <a name="see-also"></a>Voir aussi  
- [L’authentification unique initiée par l’hôte](../core/host-initiated-sso.md)
+ [Authentification unique initiée par l’hôte](../core/host-initiated-sso.md)

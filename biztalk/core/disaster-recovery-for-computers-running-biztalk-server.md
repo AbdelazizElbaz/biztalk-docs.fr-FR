@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ac655c10aaa443f9971fc40f7301a9e608e0e7eb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b0ca86ef9a412514fdf3f30f0a38cbac710e0f59
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="disaster-recovery-for-computers-running-biztalk-server"></a>Récupération d'urgence pour les ordinateurs exécutant BizTalk Server
 Si l'ordinateur exécutant BizTalk Server dans votre organisation rencontre une défaillance matérielle irrécupérable, vous devez le remplacer par un ordinateur identique. Cela suppose que les bases de données BizTalk Server soient intactes, et que la défaillance affecte l'un des ordinateurs exécutant BizTalk Server.  
@@ -25,9 +25,9 @@ Si l'ordinateur exécutant BizTalk Server dans votre organisation rencontre une 
 ## <a name="recovering-different-editions-of-biztalk-server"></a>Récupération des différentes éditions de BizTalk Server  
  L'approche de récupération diffère selon l'édition de BizTalk Server exécutée sur l'ordinateur.  
   
- Pour [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] Édition Développeur et [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] Édition Entreprise, l'exécution de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] par plusieurs ordinateurs est autorisée. En cas de défaillance d'un des ordinateurs exécutant BizTalk Server, vous pouvez préparer un ordinateur de remplacement à joindre au groupe BizTalk existant. Cet ordinateur peut être doté du même nom ou d'un autre nom.  
+ Pour BizTalk Server Édition développeur et BizTalk Server Enterprise Edition, plusieurs ordinateurs exécutant [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] sont autorisées. En cas de défaillance d'un des ordinateurs exécutant BizTalk Server, vous pouvez préparer un ordinateur de remplacement à joindre au groupe BizTalk existant. Cet ordinateur peut être doté du même nom ou d'un autre nom.  
   
- Pour [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] Édition Standard, vous ne pouvez pas joindre d'ordinateur à un groupe BizTalk. Cette approche n'est donc pas adaptée. À la place, vous devez définir un nouvel ordinateur et restaurer les paramètres de configuration de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] afin d'utiliser cet ordinateur en remplacement. Pour plus d’informations, consultez [comment récupérer le groupe BizTalk](../core/how-to-recover-the-biztalk-group.md).  
+ Pour BizTalk Server Standard Edition, vous ne peut pas joindre l’ordinateur à un groupe BizTalk, l’approche ci-dessus n’est pas approprié. À la place, vous devez définir un nouvel ordinateur et restaurer les paramètres de configuration de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] afin d'utiliser cet ordinateur en remplacement. Pour plus d’informations, consultez [comment récupérer le groupe BizTalk](../core/how-to-recover-the-biztalk-group.md).  
   
 ## <a name="recovery-phases"></a>Étapes de Récupération  
  La récupération d'un ordinateur exécutant BizTalk Server comprend trois étapes :  

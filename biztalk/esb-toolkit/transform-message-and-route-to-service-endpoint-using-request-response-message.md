@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5dfc7c7d572f3370e87df2f03d392a993116b74d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 071227182eb9b5550b23e23463800cc7dd5a22c4
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-transform-a-message-and-route-to-a-service-endpoint-using-a-request-response-message-exchange-pattern"></a>Comment : transformer un Message et un itinéraire vers un point de terminaison de Service à l’aide d’un modèle d’échange de Message demande-réponse
 ## <a name="goal"></a>Objectif  
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-an-esb-itinerary-dsl-model"></a>Pour créer un modèle DSL de la feuille de route ESB  
   
-1.  Dans [!INCLUDE[vs2010](../includes/vs2010-md.md)], ouvrez C:\HowTos\Patterns\Patterns.sln.  
+1.  Dans Visual Studio, ouvrez C:\HowTos\Patterns\Patterns.sln.  
   
 2.  Dans l’Explorateur de solutions, cliquez sur le **ItineraryLibrary** de projet, pointez sur **ajouter**, puis cliquez sur **nouvel itinéraire**.  
   
@@ -188,10 +188,10 @@ ms.lasthandoff: 09/20/2017
 ## <a name="additional-resources"></a>Ressources supplémentaires  
  Pour plus d'informations, consultez les rubriques connexes suivantes :  
   
--   [Comment : transformer un Message et router le Message résultant à un emplacement de fichier à l’aide d’un bon d’itinéraire de routage](../esb-toolkit/transform-message-and-route-the-message-to-a-location-using-itinerary-routing.md)  
+-   [Guide pratique pour transformer un message et router le message résultant vers un emplacement de fichier à l’aide d’un bordereau de routage d’itinéraire](../esb-toolkit/transform-message-and-route-the-message-to-a-location-using-itinerary-routing.md)  
   
 -   [Activités de développement](../esb-toolkit/development-activities.md)  
   
--   [Modèles de routage de messages](../esb-toolkit/message-routing-patterns.md)  
+-   [Modèles de routage des messages](../esb-toolkit/message-routing-patterns.md)  
   
--   [Installer et exécuter l’exemple de Services Web multiples](../esb-toolkit/installing-and-running-the-multiple-web-services-sample.md)
+-   [Installation et exécution de l’exemple de services web multiples](../esb-toolkit/installing-and-running-the-multiple-web-services-sample.md)

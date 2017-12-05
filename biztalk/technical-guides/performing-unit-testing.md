@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b594aa02cbecb21a20180d1143f2f8835788a958
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1a2084e2e46e3e984af2c5466c52862956dc8414
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="performing-unit-testing"></a>Exécution de tests unitaires
 Test unitaire se concentre au niveau du composant et est essentiellement un test de réussite/échec qui vérifie si des composants individuels de la solution BizTalk fonctionnent comme prévu. Vous avez plusieurs options pour votre solution BizTalk de tests unitaires.  
@@ -24,10 +24,10 @@ Test unitaire se concentre au niveau du composant et est essentiellement un test
 ## <a name="using-visual-studio"></a>Utilisation de Visual Studio  
  Les fonctionnalités de test unitaire sont disponible avec Visual Studio 2008 et versions ultérieures. Pour plus d’informations sur la fonctionnalité de test qui est disponible dans Visual Studio, consultez [test de l’Application](http://go.microsoft.com/fwlink/?LinkId=159595) (http://go.microsoft.com/fwlink/?LinkId=159595).  
   
- [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]fournit également un fonctionnalité de test unitaire pour permettre aux utilisateurs de créer des tests unitaires pour les schémas, mappages et pipelines. Pour plus d’informations sur cette fonctionnalité, consultez [tests unitaires avec les projets BizTalk Server](http://go.microsoft.com/fwlink/?LinkId=158270) (http://go.microsoft.com/fwlink/?LinkId=158270).  
+ BizTalk Server fournit également un fonctionnalité de test unitaire pour permettre aux utilisateurs de créer des tests unitaires pour les schémas, mappages et pipelines. Pour plus d’informations sur cette fonctionnalité, consultez [tests unitaires avec les projets BizTalk Server](http://go.microsoft.com/fwlink/?LinkId=158270) (http://go.microsoft.com/fwlink/?LinkId=158270).  
   
 > [!NOTE]  
->  Visual Studio est très utile pour les artefacts de BizTalk, tels que des orchestrations, schémas, pipelines et les composants de pipeline de tests unitaires. [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]Fournit des classes de test que vous pouvez utiliser avec Visual Studio Team System pour tester des artefacts BizTalk.  
+>  Visual Studio est très utile pour les artefacts de BizTalk, tels que des orchestrations, schémas, pipelines et les composants de pipeline de tests unitaires. BizTalk Server fournit des classes de test que vous pouvez utiliser avec Visual Studio Team System pour tester des artefacts BizTalk.  
   
 ## <a name="using-non-microsoft-tools"></a>À l’aide des outils Non - Microsoft  
  Deux autres outils utilisés pour les solutions BizTalk de tests unitaires sont **BizUnit** et **NUnit**. **BizUnit** fonctionne de façon transparente avec Visual Studio Team System Test Edition. De même, **NUnit** tests peuvent être modifiés facilement afin qu’ils peuvent s’exécuter en tant que-est dans Visual Studio Team System Test Edition. Pour plus d’informations sur ces outils, consultez [outils de test](~/technical-guides/tools-for-testing.md).  
@@ -51,4 +51,4 @@ Test unitaire se concentre au niveau du composant et est essentiellement un test
  Pour plus d’informations sur les utilitaires disponibles dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] SDK, consultez [utilitaires dans le Kit de développement logiciel](http://go.microsoft.com/fwlink/?LinkId=154387) (http://go.microsoft.com/fwlink/?LinkId=154387).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Outils de test](~/technical-guides/tools-for-testing.md)
+ [Outils pour les tests](~/technical-guides/tools-for-testing.md)

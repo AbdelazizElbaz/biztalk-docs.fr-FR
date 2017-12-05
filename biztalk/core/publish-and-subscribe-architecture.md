@@ -30,11 +30,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 24ab84990a83345ea2fd5e78ca84755f2bb67b28
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b11ed175fc047eee59761547d8d13ab798ac860c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="publish-and-subscribe-architecture"></a>Architecture « publication-abonnement »
 Dans une conception publication/abonnement, trois composants entrent en jeu :  
@@ -76,7 +76,7 @@ Dans une conception publication/abonnement, trois composants entrent en jeu :
   
 -   NotEqualsPredicates  
   
- Tout ceci s’effectue en appelant le Bts_CreateSubscription_\<nom de l’application > et Bts_InsertPredicate_\<nom de l’application > où la base de données des procédures stockées dans la MessageBox \<nom de l’application > est le nom de l’hôte BizTalk qui crée l’abonnement.  
+ Tout ceci s’effectue en appelant le Bts_CreateSubscription_\<nom de l’application\> et Bts_InsertPredicate_\<nom de l’application\> des procédures stockées dans la MessageBox où la base de données \< nom de l’application\> est le nom de l’hôte BizTalk qui crée l’abonnement.  
   
  Quand un port d'envoi est inscrit, le port crée au minimum un abonnement pour tout message avec l'ID de transport de ce port d'envoi dans le contexte. Cela permet au port d'envoi de toujours recevoir des messages qui lui sont spécifiquement destinés. Lorsqu'un port d'orchestration est lié à un port d'envoi particulier, les informations relatives à cette liaison sont stockées dans la base de données de gestion BizTalk. Lorsque des messages sont envoyés de l'orchestration via le port lié au port d'envoi physique, l'ID de transport est inclus dans le contexte de sorte que le message soit acheminé vers ce port d'envoi. Il est cependant important de noter que ce port d'envoi n'est pas le seul port susceptible de recevoir des messages envoyés depuis l'orchestration. Lorsqu'une orchestration envoie un message, le message est publié dans la base de données MessageBox avec toutes les propriétés promues appropriées. Le port d'envoi lié est assuré de recevoir une copie du message, car l'ID de transport figure dans le contexte. Cependant, tout autre port d'envoi, ou orchestration, peut être associé à un abonnement qui correspond également aux propriétés du message. Il est très important de comprendre que chaque fois qu'un message est publié directement dans la base de données MessageBox, tous les abonnés dont les abonnements correspondent recevront une copie du message.  
   
@@ -103,7 +103,7 @@ Dans une conception publication/abonnement, trois composants entrent en jeu :
   
  Ces références empêchent que les messages et les parties ne soient supprimés par des tâches de nettoyage qui s'exécutent régulièrement pour supprimer de la base de données MessageBox les messages qui n'existent plus dans le système. Deux tables sont utilisées pour limiter les problèmes de conflit et de verrouillage.  
   
- Le message étant désormais acheminé vers la file d'attente appropriée, stocké dans les tables de files d'attente et des parties, puis référencé dans les files d'attente propres à l'application, il doit être retiré des files d'attente par les instances de l'application. Chaque instance d'hôte possède des threads chargés de retirer les messages de la file d'attente. Ces threads interrogent en permanence la base de données à des intervalles configurés dans la table adm_ServiceClass de la base de données de gestion BizTalk. Cette même table comporte une colonne qui indique le nombre de threads chargés du retrait des messages. Chaque thread appelle dans la base de données MessageBox et appelle le bts_DequeueMessages_\<nom de l’application > procédure appropriée pour l’application hôte est stockée. Cette procédure stockée utilise la sémantique de verrouillage pour vous assurer que seule une instance et un thread de retrait sont en mesure de fonctionner sur un message dans la file d’attente à un moment donné. L'instance de l'hôte qui obtient le verrou obtient le message. Il est ensuite chargé de la remise du message au sous-service auquel le message est destiné.  
+ Le message étant désormais acheminé vers la file d'attente appropriée, stocké dans les tables de files d'attente et des parties, puis référencé dans les files d'attente propres à l'application, il doit être retiré des files d'attente par les instances de l'application. Chaque instance d'hôte possède des threads chargés de retirer les messages de la file d'attente. Ces threads interrogent en permanence la base de données à des intervalles configurés dans la table adm_ServiceClass de la base de données de gestion BizTalk. Cette même table comporte une colonne qui indique le nombre de threads chargés du retrait des messages. Chaque thread appelle dans la base de données MessageBox et appelle le bts_DequeueMessages_\<nom de l’application\> procédure appropriée pour l’application hôte est stockée. Cette procédure stockée utilise la sémantique de verrouillage pour vous assurer que seule une instance et un thread de retrait sont en mesure de fonctionner sur un message dans la file d’attente à un moment donné. L'instance de l'hôte qui obtient le verrou obtient le message. Il est ensuite chargé de la remise du message au sous-service auquel le message est destiné.  
   
  Si le service qui reçoit le message est le gestionnaire des points de terminaison, le port d'envoi est alors appelé (ou la partie de réponse d'un port de réception requête-réponse). S'il s'agit du sous-service XLANG/s, une orchestration est créée ou recherchée en vue de traiter l'abonnement, selon qu'un ID d'instance figure ou non dans l'abonnement. Le service libère la référence au message et à sa partie de sorte que si aucun autre service ne comporte des références, les données du message peuvent être supprimées.  
   

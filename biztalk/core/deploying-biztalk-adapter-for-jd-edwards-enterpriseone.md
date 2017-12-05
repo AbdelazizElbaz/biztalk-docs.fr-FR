@@ -13,11 +13,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8e1af9a8486414830011e522fef7da088dd00909
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 55374c87192c993e26cc11cb496d89074d527868
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="import-the-jd-edwards-enterpriseone-application"></a>Importez l’application JD Edwards EnterpriseOne
   
@@ -58,7 +58,7 @@ Avant d’importer, supprimer les ports d’envoi et emplacements de réception 
 Par exemple, à l'invite de commandes, exécutez :  
   
 ```
-cscript RemoveSendPort.vbs \<Send port name>
+cscript RemoveSendPort.vbs \<Send port name\>
 ```
 ## <a name="limitations"></a>Limitations
 Le mot de passe d’adaptateur de Transport est stocké en tant qu’étoile (*) dans le fichier de liaison exporté par le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], et transmis au composant de gestion dans le même format. Modifiez le fichier de liaison avant l'importation en remplaçant les étoiles par des valeurs aléatoires (c'est-à-dire, un mot de passe erroné).  

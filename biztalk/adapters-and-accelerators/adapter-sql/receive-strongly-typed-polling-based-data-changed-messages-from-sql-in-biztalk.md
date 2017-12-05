@@ -12,11 +12,11 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 451987a9b6461064047041ee6afa348d32929b51
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8b12450e87e730e3713a89350fc2a16440e4d911
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="receive-strongly-typed-polling-based-data-changed-messages-from-sql-server-using-biztalk-server"></a>Recevoir des fortement typée d’interrogation de modification de données de messages à partir de SQL Server à l’aide de BizTalk Server
 Vous pouvez configurer le [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] pour recevoir des messages de l’interrogation fortement typée à partir de SQL Server. Vous pouvez spécifier une instruction d’interrogation de l’adaptateur s’exécute pour interroger la base de données. L’instruction d’interrogation peut être une instruction SELECT ou une procédure stockée qui retourne un jeu de résultats.  
@@ -54,18 +54,18 @@ SELECT * FROM Employee;EXEC MOVE_EMP_DATA;EXEC ADD_EMP_DETAILS John, Tester, 100
  Dans le cadre d’un projet BizTalk, vous ajoutez un autre fichier de schéma, par exemple EmployeeDetails.xsd. Le schéma pour EmployeeDetails.xsd ressemble à ceci :  
   
 ```  
-\<?xml version="1.0" encoding="utf-16" ?>   
-\<xs:schema xmlns:b="http://schemas.microsoft.com/BizTalk/2003" xmlns="http://Typed_Polling.EmployeeDetails" elementFormDefault="qualified" targetNamespace="http://Typed_Polling.EmployeeDetails" xmlns:xs="http://www.w3.org/2001/XMLSchema">  
-  \<xs:element name="EmployeeDetails">  
-    \<xs:complexType>  
-      \<xs:sequence>  
-        \<xs:element name="Employee_Info" type="xs:string" />   
-        \<xs:element name="Employee_Profile" type="xs:string" />   
-        \<xs:element name="Employee_Performance" type="xs:string" />   
-      \</xs:sequence>  
-    \</xs:complexType>  
-  \</xs:element>  
-\</xs:schema>  
+<?xml version="1.0" encoding="utf-16" ?>   
+<xs:schema xmlns:b="http://schemas.microsoft.com/BizTalk/2003" xmlns="http://Typed_Polling.EmployeeDetails" elementFormDefault="qualified" targetNamespace="http://Typed_Polling.EmployeeDetails" xmlns:xs="http://www.w3.org/2001/XMLSchema">  
+  <xs:element name="EmployeeDetails">  
+    <xs:complexType>  
+      <xs:sequence>  
+        <xs:element name="Employee_Info" type="xs:string" />   
+        <xs:element name="Employee_Profile" type="xs:string" />   
+        <xs:element name="Employee_Performance" type="xs:string" />   
+      </xs:sequence>  
+    </xs:complexType>  
+  </xs:element>  
+</xs:schema>  
 ```  
   
  Vous montre également comment ajouter un Mappeur BizTalk pour le projet pour mapper les éléments de la table Employee (reçus en tant que message de sondage) pour les éléments dans le schéma EmployeeDetails.xsd. Dans le cadre de la carte, vous combinez un ou plusieurs éléments à partir du message d’interrogation et le mapper à un élément unique dans le schéma EmployeeDetails. Vous pouvez le faire à l’aide de la **concaténation de chaînes** fonctoid.  
@@ -307,7 +307,7 @@ SELECT * FROM Employee;EXEC MOVE_EMP_DATA;EXEC ADD_EMP_DETAILS John, Tester, 100
      Après exécution de l’instruction d’interrogation et le message est reçu, le message d’interrogation obtient envoi au port d’envoi de fichier. Ici, le mappage sortant (**MapSchema**) configuré sur les mappages de port d’envoi, le message d’interrogation au schéma EmployeeDetails et dépose le message vers un emplacement de fichier. Le message ressemble à ceci :  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <EmployeeDetails xmlns="http://Typed_Polling.EmployeeDetails">  
       <Employee_Info>10751John</Employee_Info>   
       <Employee_Profile>TesterManagesTesting</Employee_Profile>   

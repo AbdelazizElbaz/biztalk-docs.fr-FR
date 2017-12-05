@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 089ad320f9363e1a3284af863512c89bcb67167d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f05aa5200bd1df6207a962849cd776a03fe71805
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-submitting-a-0c2-request"></a>Étape 1 : Envoi d’un 0C la demande 2
 Dans cette étape, vous préparez et soumettez une demande à l’aide du processus PIP (Partner Interface) pour un C 0 2 - asynchrone demande de Test. Ce processus PIP garantit qu’un canal de communication asynchrone fonctionne correctement entre les deux organisations différentes. Ce processus PIP suit le même modèle que les autres processus PIP action double asynchrones, telles que les 3 a 4 - demande de bon ordre PIP.  
@@ -37,7 +37,7 @@ Dans cette étape, vous préparez et soumettez une demande à l’aide du proces
     |**ID d’Instance PIP**|Type **0C2_Test**. **Important :** vous devez vous assurer que le **PIP** est unique pour chaque message que vous envoyez pour éviter les erreurs d’ID de message en double. Si vous exécutez le 0 C 2 de test à l’avenir, vous devrez modifier ce champ.|  
     |**Catégorie de message**|Tapez **Action**.|  
   
-3.  Utilisez le bloc-notes ou un autre éditeur de texte, ouvrez le fichier 0C2_Request.xml dans le \< *lecteur*> : \Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\SDK\LOBApplication\ SampleInstances dossier, puis copiez et collez le contenu dans le **Service contenu** champ LOBWebApplication.  
+3.  Utilisez le bloc-notes ou un autre éditeur de texte, ouvrez le fichier 0C2_Request.xml dans le \< *lecteur*\>: \Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\ LOBApplication\SampleInstances dossier, puis copiez et collez le contenu dans le **Service contenu** champ LOBWebApplication.  
   
     > [!NOTE]
     >  Pour supprimer le texte existant dans le champ contenu du Service sous la forme d’envoyer un Message, placez le curseur au début du texte, maintenez la **MAJ** et **Ctrl** boutons, cliquez sur **fin** , puis cliquez sur **supprimer**.  
@@ -62,7 +62,7 @@ Dans cette étape, vous préparez et soumettez une demande à l’aide du proces
   
 3.  Dans Microsoft SQL Server Management Studio, cliquez sur **nouvelle requête**.  
   
-4.  Dans le \<table > boîte de dialogue texte, sélectionnez **BTARNDATA** dans la liste, puis cliquez sur **OK**.  
+4.  Dans le \<table\> boîte de dialogue texte, sélectionnez **BTARNDATA** dans la liste, puis cliquez sur **OK**.  
   
 5.  Dans la fenêtre SQL, tapez l'instruction SQL suivante :  
   
@@ -92,4 +92,4 @@ Dans cette étape, vous préparez et soumettez une demande à l’aide du proces
   
 ## <a name="see-also"></a>Voir aussi  
  [Étape 2 : Envoi d’un 0C de requête 4](../../adapters-and-accelerators/accelerator-rosettanet/step-2-submitting-a-0c4-query.md)   
- [Flux de messages de BTARN](../../adapters-and-accelerators/accelerator-rosettanet/message-flow-in-btarn.md)
+ [Flux de messages BTARN](../../adapters-and-accelerators/accelerator-rosettanet/message-flow-in-btarn.md)

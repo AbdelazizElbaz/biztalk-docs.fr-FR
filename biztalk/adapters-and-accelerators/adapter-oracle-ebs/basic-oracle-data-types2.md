@@ -13,11 +13,11 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0fbda4edfc42f4a1cf82b9223494d7346eef7a3f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9012e2ef6adaf94f55b87bbccfc24b7fb889fbf3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="basic-oracle-data-types"></a>Types de données Oracle de base
 Cette rubrique décrit comment les [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] met en évidence des types de données de base Oracle.  
@@ -57,7 +57,7 @@ Cette rubrique décrit comment les [!INCLUDE[adapteroracleebusinesslong](../../i
 |Binaire Double **|XSD : double si prec < = 15<br /><br /> XSD : String si prec > 15|Double<br /><br /> Chaîne|-|  
 |Entier binaire **|xsd:integer|Int32||  
 |Booléen|xsd:boolean|Valeur booléenne Nullable||  
-|XMLTYPE|xsd:string|Chaîne|Prise en charge pour les paramètres de la procédure de niveau supérieur.<br /><br /> Réservés de caractères XML tels que «**\<**','**>**' doivent être remplacées par leur représentation entité **(&lt;, &gt;)**lors du développement d’applications dans BizTalk Server, et lors de l’utilisation de WCF de modèle de canal. Cela n’est pas nécessaire dans le cas du modèle de Service WCF.|  
+|XMLTYPE|xsd:string|Chaîne|Prise en charge pour les paramètres de la procédure de niveau supérieur.<br /><br /> Réservés de caractères XML tels que «**\<**','**\>**' doivent être remplacées par leur représentation entité **(&lt;, &gt;)**lors du développement d’applications dans BizTalk Server, et lors de l’utilisation de WCF de modèle de canal. Cela n’est pas nécessaire dans le cas du modèle de Service WCF.|  
   
  \*La méthode dans laquelle ces types de données Oracle sont signalées est affectée par la **EnableSafeTyping** propriété de liaison.  
   
@@ -89,4 +89,4 @@ Cette rubrique décrit comment les [!INCLUDE[adapteroracleebusinesslong](../../i
 -   Par ODP.NET pour certains types de données.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Messages et des schémas de Message pour l’adaptateur BizTalk pour Oracle E-Business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/messages-and-message-schemas-for-biztalk-adapter-for-oracle-e-business-suite.md)
+ [Messages et schémas de message pour l’adaptateur BizTalk pour Oracle E-Business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/messages-and-message-schemas-for-biztalk-adapter-for-oracle-e-business-suite.md)

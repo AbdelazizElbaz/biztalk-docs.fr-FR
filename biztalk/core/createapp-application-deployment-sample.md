@@ -18,11 +18,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 010c574c1c9c799d6235b9d10e3378b46c3d1548
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 842683d2eec04d77bad2b7726af0d687fae12884
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="createapp-application-deployment-sample"></a>CreateApp (exemple de déploiement d'application)
 Cette rubrique explique l'utilisation de l'exemple CreateApp qui illustre l'utilisation de l'outil de ligne de commande BTSTask pour déployer et annuler le déploiement d'une application BizTalk. Vous pouvez utiliser des scripts, tels que ceux inclus dans cet exemple, pour automatiser votre processus de génération nocturne pour déployer et annuler le déploiement d'applications BizTalk.  
@@ -76,7 +76,7 @@ Cette rubrique explique l'utilisation de l'exemple CreateApp qui illustre l'util
          C:\ScriptLog.txt  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
- Vous trouverez des exemples de fichiers dans les dossiers suivants sous  *\<exemples de chemin >*\Application déploiement\\:  
+ Vous trouverez des exemples de fichiers dans les dossiers suivants sous  *\<exemples de chemin\>*\Application déploiement\\:  
   
 -   CreateApp (dossier)  
   
@@ -167,4 +167,4 @@ Cette rubrique explique l'utilisation de l'exemple CreateApp qui illustre l'util
   
 ## <a name="see-also"></a>Voir aussi  
  [Déploiement d’applications (dossier d’exemples BizTalk Server)](../core/application-deployment-biztalk-server-samples-folder.md)   
- [Déploiement d’Applications BizTalk](../core/deploying-biztalk-applications.md)
+ [Déploiement des applications BizTalk](../core/deploying-biztalk-applications.md)

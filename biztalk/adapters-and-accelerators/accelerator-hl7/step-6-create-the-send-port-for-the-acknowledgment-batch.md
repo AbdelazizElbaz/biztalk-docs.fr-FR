@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d88607133c4ffde7baeb9742755c9393bd73196c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 958746634776e9b01c32ff2425122312bc7a841c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-6-create-the-send-port-for-the-acknowledgment-batch"></a>Étape 6 : Créer le Port d’envoi pour le traitement de l’accusé de réception
 Dans cette étape, vous créez un port d’envoi pour fournir le traitement de l’accusé de réception que vous créez à la partie de la source. Il s’agit d’un port statique unidirectionnel avec un type d’adaptateur FILE. Vous désignez un dossier de fichiers pour la source (\Tutorial_BatchACKDrop), où [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] supprimera le fichier de commandes d’accusé de réception. Vous définissez un filtre pour le port qui indique le type de lots d’accusé de réception envoie les ports. Le filtre spécifie la source de Tutorial_BatchSource et le type de message de OutboundBatch.  
@@ -37,7 +37,7 @@ Dans cette étape, vous créez un port d’envoi pour fournir le traitement de l
   
     |Utiliser|Pour effectuer cette opération|  
     |--------------|----------------|  
-    |**Dossier de destination**|Accédez à  **\<* lecteur*: > \Program Files\Microsoft BizTalk \<version > Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_BatchACKDrop **. Il s’agit du chemin d’accès à l’emplacement sur le système de fichiers ou le partage public auquel [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] réécrit le fichier contenant le lot d’accusé de réception.|  
+    |**Dossier de destination**|Accédez à  **\<* lecteur*:\>\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_ BatchACKDrop **. Il s’agit du chemin d’accès à l’emplacement sur le système de fichiers ou le partage public auquel [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] réécrit le fichier contenant le lot d’accusé de réception.|  
     |**Nom de fichier**|Type **%MessageID%.txt** (remplacez l’extension .xml avec l’extension .txt).|  
     |**Mode de copie**|Sélectionnez **créer de nouveaux**.|  
   

@@ -19,11 +19,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6030b711e0fd48d2632ff84428e1cb9ffc6e0402
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 466917e0656dfa39467a00dfa91285b3cb7cf1a1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="importing-certificates-using-mmc"></a>L’importation de certificats à l’aide de MMC
 Cette rubrique décrit comment importer un numérique de certificat qui [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] utilise pour authentifier un partenaire commercial, déchiffrer un message entrant, ou chiffrer ou signer un message sortant.  
@@ -54,12 +54,12 @@ Cette rubrique décrit comment importer un numérique de certificat qui [!INCLUD
   
 1.  Certificat de clé privée (.pfx) copie les fichiers vers un emplacement sur le disque dur du serveur sur lequel vous copiez des certificats.  
   
-2.  Cliquez sur **Démarrer**, cliquez sur **exécuter**, type **d’identification/User :\<hôte de service > mmc**, puis cliquez sur **OK**.  
+2.  Cliquez sur **Démarrer**, cliquez sur **exécuter**, type **d’identification/User :\<héberger le service\> mmc**, puis cliquez sur **OK**.  
   
     > [!NOTE]
-    >  Pour \< *héberger le service*>, tapez le nom du service qui a été automatiquement sélectionné pour le service hôte lors de l’installation [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)].  
+    >  Pour \< *héberger le service*\>, tapez le nom du service qui a été automatiquement sélectionné pour le service hôte lors de l’installation [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)].  
   
-3.  Tapez le mot de passe \< *héberger le service*>, puis appuyez sur **entrée**.  
+3.  Tapez le mot de passe \< *héberger le service*\>, puis appuyez sur **entrée**.  
   
 4.  Dans [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] gestion de la Console, sous le **fichier** menu, cliquez sur **ajouter/supprimer un composant logiciel enfichable**.  
   

@@ -23,11 +23,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bb8ea12087b5884370edce13f3ddc6fd6853c7d5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bdd4d6335723d068333403b4c9d811d96db058e9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="wcf-receive-adapter"></a>Adaptateur de réception WCF
 L'adaptateur de réception WCF permet de recevoir des demandes de service WCF.  
@@ -68,9 +68,9 @@ L'adaptateur de réception WCF permet de recevoir des demandes de service WCF.
 |Sequence/Identifier|SequenceId|Oui|  
 |Sequence/MessageNumber|SequenceNumber|Oui|  
 |Sequence/LastMessage|SequenceLastMessage|Oui|  
-|\<SOAP : Header >|InboundHeaders|Non|  
+|\<SOAP : Header\>|InboundHeaders|Non|  
   
 ## <a name="see-also"></a>Voir aussi  
  [En spécifiant le corps du Message pour les adaptateurs WCF](../core/specifying-the-message-body-for-the-wcf-adapters.md)   
  [Adaptateur d’envoi WCF](../core/wcf-send-adapter.md)   
- [Quelles sont les adaptateurs WCF ?](../core/what-are-the-wcf-adapters.md)
+ [Présentation des adaptateurs WCF](../core/what-are-the-wcf-adapters.md)

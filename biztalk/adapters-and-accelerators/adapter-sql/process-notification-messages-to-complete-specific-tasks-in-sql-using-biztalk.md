@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: efed30f3e65c4f58a060f67539672c95b3d6df59
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 36d3c923593fe9a9402a14012e93fccb274ecdb6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="process-notification-messages-to-complete-specific-tasks-in-sql-using-biztalk-server"></a>Traiter les messages de notification pour effectuer des tâches spécifiques dans SQL à l’aide de BizTalk Server
 Vous pouvez utiliser la [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] pour recevoir des notifications de modifications apportées aux tables de base de données SQL Server. Toutefois, l’adaptateur seulement vous envoie une notification que certains enregistrements ont été insérées, mises à jour ou supprimées dans une table de base de données donnée. Tout traitement sur ces enregistrements doit être gérée par les applications clientes eux-mêmes. Cette rubrique présente une description de scénario basé sur la façon de traiter les enregistrements dans la table en fonction du type de notification reçue à partir de la base de données SQL Server.  
@@ -61,7 +61,7 @@ Vous pouvez utiliser la [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshor
 |Propriété de liaison| Description|  
 |----------------------|-----------------|  
 |**InboundOperationType**|Spécifie l’opération entrante que vous souhaitez effectuer. Pour recevoir des messages de notification, affectez la valeur **Notification**.|  
-|**NotificationStatement**|Spécifie l’instruction SQL (SELECT ou EXEC \<procédure stockée >) permet de s’inscrire aux notifications de requête. L’adaptateur reçoit un message de notification de SQL Server que lorsque le jeu de résultats pour que les modifications d’instruction SQL spécifiées.|  
+|**NotificationStatement**|Spécifie l’instruction SQL (SELECT ou EXEC \<procédure stockée\>) permet de s’inscrire aux notifications de requête. L’adaptateur reçoit un message de notification de SQL Server que lorsque le jeu de résultats pour que les modifications d’instruction SQL spécifiées.|  
 |**NotifyOnListenerStart**|Spécifie si l’adaptateur envoie une notification pour les clients de la carte au démarrage de l’écouteur.|  
   
  Pour obtenir une description plus complète de ces propriétés, consultez [en savoir plus sur l’adaptateur BizTalk pour les propriétés de liaison de l’adaptateur SQL Server](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md). Pour obtenir une description complète de l’utilisation de la [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] pour recevoir des notifications à partir de SQL Server, poursuivre la lecture.  
@@ -166,7 +166,7 @@ Vous pouvez utiliser la [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshor
   
      Pour cette rubrique, nom de la variable en tant que **NotificationType**.  
   
--   Créer une requête xpath pour extraire la valeur de la \<Info > balise. La requête xpath ressemble à ceci :  
+-   Créer une requête xpath pour extraire la valeur de la \<Info\> balise. La requête xpath ressemble à ceci :  
   
     ```  
     NotificationType = xpath(NotifyReceive,"string(/*[local-name()='Notification']/*[local-name()='Info']/text())");  
@@ -261,7 +261,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
 -   Étant donné que la **NotifyOnListenerStart** liaison de la propriété est définie sur **True**, le message d’erreur suivant :  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>  
+    <?xml version="1.0" encoding="utf-8" ?>  
     <Notification xmlns="http://schemas.microsoft.com/Sql/2008/05/Notification/">  
       <Info>ListenerStarted</Info>   
       <Source>SqlBinding</Source>   
@@ -274,7 +274,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
 -   Insérer un enregistrement dans la table Employee. Vous recevez un message de notification qui ressemble à la suivante :  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <Notification xmlns="http://schemas.microsoft.com/Sql/2008/05/Notification/">  
       <Info>Insert</Info>   
       <Source>Data</Source>   
@@ -287,7 +287,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
 -   Mettre à jour un enregistrement dans la table Employee. Vous recevez un message de notification qui ressemble à la suivante :  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>  
+    <?xml version="1.0" encoding="utf-8" ?>  
     <Notification xmlns="http://schemas.microsoft.com/Sql/2008/05/Notification/">  
       <Info>Update</Info>   
       <Source>Data</Source>   
@@ -300,7 +300,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
 -   Supprimer un enregistrement de la table Employee. Vous recevez un message de notification qui ressemble à la suivante :  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>  
+    <?xml version="1.0" encoding="utf-8" ?>  
     <Notification xmlns="http://schemas.microsoft.com/Sql/2008/05/Notification/">  
       <Info>Delete</Info>   
       <Source>Data</Source>   

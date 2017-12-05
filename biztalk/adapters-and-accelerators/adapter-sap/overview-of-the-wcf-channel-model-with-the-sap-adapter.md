@@ -15,11 +15,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8083f7dc691010f4128b3ddb99729b0b2b1ebd1f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 51b5469681f7acce2ebb0b55fe63e285d25192e0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="overview-of-the-wcf-channel-model-with-the-sap-adapter"></a>Vue d’ensemble du modèle de canal WCF avec l’adaptateur SAP
 Pour appeler les RFC ou BAPI tRFCs sur un système SAP, ou pour envoyer des IDOC à un système SAP, votre code agit comme un client WCF et envoie les opérations sortantes à l’adaptateur. Dans le modèle de canal WCF, votre code appelle les opérations sur la carte en envoyant un message de demande sur un canal.  
@@ -44,11 +44,11 @@ Pour appeler les RFC ou BAPI tRFCs sur un système SAP, ou pour envoyer des IDOC
   
  Comme toute liaison WCF, le [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] utilise un modèle de fabrique pour fournir des canaux pour le code d’application. Vous utilisez un **Microsoft.Adapters.SAPBinding** pour créer des instances d’objet :  
   
--   **System.ServiceModel.ChannelFactory\<IRequestChannel >** pour fournir **IRequestChannel** canaux, vous pouvez utiliser pour appeler des opérations de requête-réponse sur la carte.  
+-   **System.ServiceModel.ChannelFactory\<IRequestChannel\>**  pour fournir **IRequestChannel** canaux, vous pouvez utiliser pour appeler des opérations de requête-réponse sur la carte.  
   
--   **System.ServiceModel.ChannelFactory\<IOutputChannel >** pour fournir **IOutputChannel** canaux, vous pouvez utiliser pour appeler des opérations unidirectionnelles sur la carte.  
+-   **System.ServiceModel.ChannelFactory\<IOutputChannel\>**  pour fournir **IOutputChannel** canaux, vous pouvez utiliser pour appeler des opérations unidirectionnelles sur la carte.  
   
--   **System.ServiceModel.IChannelListener\<IReplyChannel >** pour fournir **IReplyChannel** canaux, vous pouvez utiliser pour recevoir des opérations de demande-réponse à partir de l’adaptateur.  
+-   **System.ServiceModel.IChannelListener\<IReplyChannel\>**  pour fournir **IReplyChannel** canaux, vous pouvez utiliser pour recevoir des opérations de demande-réponse à partir de l’adaptateur.  
   
 ## <a name="creating-messages-for-the-sap-adapter-in-the-wcf-channel-model"></a>Création de Messages pour l’adaptateur SAP dans le modèle de canal WCF  
  Dans WCF le **System.ServiceModel.Channels.Message** classe fournit une mémoire en représentation sous forme d’un message SOAP. Vous créez un **Message** instance en appelant la méthode statique **Message.Create** (méthode).  
@@ -71,7 +71,7 @@ Pour appeler les RFC ou BAPI tRFCs sur un système SAP, ou pour envoyer des IDOC
 //create an XML message to send to the SAP system  
 //We are invoking the SD_RFC_CUSTOMER_GET RFC.  
 //The XML below specifies that we want to search for customers with names starting with "AB"  
-string inputXml = "\<SD_RFC_CUSTOMER_GET xmlns=\"http://Microsoft.LobServices.Sap/2007/03/Rfc/\"> \<KUNNR i:nil=\"true\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\"> </KUNNR> <NAME1>AB*</NAME1> <CUSTOMER_T> </CUSTOMER_T> </SD_RFC_CUSTOMER_GET>";  
+string inputXml = "<SD_RFC_CUSTOMER_GET xmlns=\"http://Microsoft.LobServices.Sap/2007/03/Rfc/\"> <KUNNR i:nil=\"true\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\"> </KUNNR> <NAME1>AB*</NAME1> <CUSTOMER_T> </CUSTOMER_T> </SD_RFC_CUSTOMER_GET>";  
   
 //create an XML reader from the input XML  
 XmlReader reader = XmlReader.Create(new MemoryStream(Encoding.Default.GetBytes(inputXml)));  
@@ -96,7 +96,7 @@ Message inputMessge = Message.CreateMessage(MessageVersion.Soap11, "http://Micro
 -   Consommer un message entrant à l’aide un **XmlReader**. Vous obtenez le lecteur en appelant le **GetReaderAtBodyContents** méthode entrant **Message**.  
   
 ### <a name="node-value-streaming"></a>Valeur du nœud de diffusion en continu  
- Étant donné que les opérations SendIdoc et ReceiveIdoc contiennent des données IDOC d’une chaîne sous un nœud XML unique (\<idocData >), la carte prend en charge-valeur du nœud sur ces opérations de diffusion en continu.  
+ Étant donné que les opérations SendIdoc et ReceiveIdoc contiennent des données IDOC d’une chaîne sous un nœud XML unique (\<idocData\>), la carte prend en charge-valeur du nœud sur ces opérations de diffusion en continu.  
   
  Pour effectuer la valeur du nœud de diffusion en continu pour ces opérations, vous pouvez :  
   
@@ -107,4 +107,4 @@ Message inputMessge = Message.CreateMessage(MessageVersion.Soap11, "http://Micro
  Pour plus d’informations sur la diffusion en continu des IDOC de fichier plat (chaîne) à l’aide du modèle de canal WCF, consultez [de diffusion en continu de fichier plat IDOC dans SAP à l’aide du modèle de canal WCF](../../adapters-and-accelerators/adapter-sap/stream-flat-file-idocs-in-sap-using-the-wcf-channel-model.md).  
   
 ## <a name="see-also"></a>Voir aussi  
-[Développer des applications à l’aide du modèle de canal WCF](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)
+[Développer des applications en utilisant le modèle de canal WCF](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)

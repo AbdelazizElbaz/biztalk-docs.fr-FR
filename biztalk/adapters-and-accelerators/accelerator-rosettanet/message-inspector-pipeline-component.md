@@ -18,11 +18,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d146dbeaa94d47799794de7fa6f9e6b9082f9fa5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fc9e1a520153220bcc86d844ca94203ff2b78548
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="message-inspector-pipeline-component"></a>Message Inspector Pipeline Component
 Ce composant de pipeline vous permet d'examiner les différentes parties et le contexte d'un message à parties multiples pour déterminer si un problème existe au niveau du message. Ce composant est utilisé à des fins de dépannage.  
@@ -32,17 +32,17 @@ Ce composant de pipeline vous permet d'examiner les différentes parties et le c
  Ce composant est généré dans un pipeline personnalisé et attaché à un port d'envoi. Vous créez un filtre dans le port d'envoi pour vous abonner aux messages à surveiller. Cette procédure de dépannage vient compléter le traitement qui standard [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] exécute déjà.  
   
 ## <a name="building-a-custom-pipeline-using-the-message-inspector-pipeline-component"></a>Génération d'un pipeline personnalisé à l'aide de Message Inspector Pipeline Component  
- Pour utiliser Message Inspector Pipeline Component, vous devez générer et déployer un pipeline personnalisé qui inclut le composant. Pour plus d’informations, consultez « Création de Pipelines avec le Concepteur de Pipeline » dans [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] aide.  
+ Pour utiliser Message Inspector Pipeline Component, vous devez générer et déployer un pipeline personnalisé qui inclut le composant. Pour plus d’informations, consultez « Création de Pipelines avec le Concepteur de Pipeline » dans l’aide de BizTalk Server.  
   
 #### <a name="to-deploy-the-message-inspector-pipeline-component"></a>Pour déployer le composant de pipeline Message Inspector  
   
-1.  Démarrez [!INCLUDE[vs2012](../../includes/vs2012-md.md)].  
+1.  Démarrez Visual Studio.  
   
 2.  Dans le menu **Fichier** , pointez sur **Ouvrir**, puis cliquez sur **Projet**.  
   
 3.  Passez à C:\Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet\SDK\Message Inspector Pipeline Component, sélectionnez **MessageInspector.csproj**, puis cliquez sur **Ouvrir**.  
   
-4.  Ouvrez le [!INCLUDE[vs2012](../../includes/vs2012-md.md)] invite de commandes.  
+4.  Ouvrez l’invite de commandes Visual Studio.  
   
 5.  À l'invite de commandes, passez à C:\Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet\SDK\Message Inspector Pipeline Component\obj\debug.  
   

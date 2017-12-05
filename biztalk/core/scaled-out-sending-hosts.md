@@ -28,11 +28,11 @@ caps.latest.revision: "25"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a1fb8ac3fe3752702ed3e1aa2795e521d7173618
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 50659e267731caafe4bad6dabe89944cb16c0c98
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="scaled-out-sending-hosts"></a>Mise à l'échelle des hôtes d'envoi
 Un hôte d'envoi mis à l'échelle garantit que la fonctionnalité d'envoi de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] est hautement disponible. Si vous ajoutez plusieurs ordinateurs à un hôte afin d'envoyer des messages, vous pouvez exécuter plusieurs instances de l'hôte d'envoi et ainsi obtenir une redondance et une disponibilité élevée.  
@@ -50,8 +50,8 @@ Un hôte d'envoi mis à l'échelle garantit que la fonctionnalité d'envoi de [!
  Pour obtenir un adaptateur d'envoi MSMQ haute disponibilité, mettez les services MSMQ et un hôte BizTalk en cluster dans le même groupe, puis configurez le gestionnaire d'envoi afin qu'il s'exécute dans ce cluster. Cette opération doit être effectuée afin de garantir la cohérence des envois transactionnels lancés par l'adaptateur MSMQ. Pour plus d’informations, consultez [considérations pour les gestionnaires d’adaptateur en cours d’exécution au sein d’un ordinateur hôte en cluster](../core/considerations-for-running-adapter-handlers-within-a-clustered-host1.md).  
   
 ### <a name="high-availability-for-the-windows-sharepoint-services-send-adapter"></a>Configuration de la haute disponibilité pour l'adaptateur d'envoi Windows SharePoint Services  
- Pour assurer la haute disponibilité à l'adaptateur d'envoi Windows SharePoint Services, ajoutez plusieurs ordinateurs à l'hôte d'envoi et assurez-vous que le port d'envoi de chaque ordinateur fait référence à la même bibliothèque de documents. L’adaptateur Windows SharePoint Services envoie des messages à SharePoint en appelant le service web de Windows SharePoint Services installé par BizTalk Server sur l’ordinateur SharePoint. [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]Fournit une haute disponibilité pour l’adaptateur d’envoi SharePoint en vous permettant de procéder à l’envoi du même ports sur plusieurs instances d’hôte transmettre des messages à la même URL HTTP pointant vers une installation SharePoint NLB.  
+ Pour assurer la haute disponibilité à l'adaptateur d'envoi Windows SharePoint Services, ajoutez plusieurs ordinateurs à l'hôte d'envoi et assurez-vous que le port d'envoi de chaque ordinateur fait référence à la même bibliothèque de documents. L’adaptateur Windows SharePoint Services envoie des messages à SharePoint en appelant le service web de Windows SharePoint Services installé par BizTalk Server sur l’ordinateur SharePoint. BizTalk Server offre une haute disponibilité pour l’adaptateur d’envoi SharePoint en vous permettant de procéder à l’envoi du même ports sur plusieurs instances d’hôte transmettre des messages à la même URL HTTP pointant vers une installation SharePoint NLB.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Offrant une haute disponibilité pour les hôtes BizTalk](../core/providing-high-availability-for-biztalk-hosts.md)   
- [Considérations pour l’exécution des gestionnaires d’adaptateur au sein d’un hôte en cluster](../core/considerations-for-running-adapter-handlers-within-a-clustered-host1.md)
+ [Éléments à prendre en compte pour l’exécution des gestionnaires d’adaptateur au sein d’un hôte en cluster](../core/considerations-for-running-adapter-handlers-within-a-clustered-host1.md)

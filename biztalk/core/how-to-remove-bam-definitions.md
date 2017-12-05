@@ -17,11 +17,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bce5454528b3dc1cf0feb54a52eae2008e607811
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: aa02b24ed7d0c7ac09162f486df629bf027d13b9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-remove-bam-definitions"></a>Suppression de définitions BAM
 Les administrateurs utilisent la **remove-all** commande de l’utilitaire de gestion BAM pour supprimer toutes les vues et tables d’activité sous-jacentes d’un fichier de définition BAM spécifique.  
@@ -32,10 +32,10 @@ Les administrateurs utilisent la **remove-all** commande de l’utilitaire de ge
   
 2.  Accédez à [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking.  
   
-3.  Type **bm remove-all DefinitionFile :\<fichier def >**.  
+3.  Type **bm remove-all DefinitionFile :\<fichier def\>**.  
   
 4.  Appuyez sur Entrée.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Gestion de l’Infrastructure dynamique BAM](../core/managing-the-bam-dynamic-infrastructure.md)   
- [Utilitaire de gestion BAM](../core/bam-management-utility.md)
+ [Utilitaire de gestion de l’analyse BAM](../core/bam-management-utility.md)

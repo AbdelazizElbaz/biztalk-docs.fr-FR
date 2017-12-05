@@ -13,11 +13,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fccdeefa35f9abb5a0c3158dba518d524811c611
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5720402e548992044eda26366c8b7b50bb95746a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-label-and-comment-a-functoid"></a>Attribution d'une étiquette et ajout de commentaires à un fonctoid
 L'utilité des étiquettes et des commentaires est de renseigner sur la finalité d'un fonctoid ou d'un lien dans un mappage. Vous pouvez utiliser la **étiquette** propriété afin de fournir un nom d’un fonctoid. Le **commentaires** propriété vous permet de fournir plus d’informations sur le fonctoid, des informations pertinentes en général sur l’opération en cours par celui-ci.  
@@ -30,7 +30,7 @@ L'utilité des étiquettes et des commentaires est de renseigner sur la finalit�
   
  Vous pouvez attribuer une étiquette à un fonctoid et lui ajouter des commentaires de l'une des manières suivantes :  
   
--   À l’aide de la **configurer \<fonctoid > fonctoid** boîte de dialogue.  
+-   À l’aide de la **configurer \<fonctoid\> fonctoid** boîte de dialogue.  
   
 -   À l’aide de la **propriétés** fenêtre.  
   
@@ -41,7 +41,7 @@ L'utilité des étiquettes et des commentaires est de renseigner sur la finalit�
   
 1.  Cliquez sur le fonctoid que vous souhaitez attribuer une étiquette et commentaire, puis cliquez sur **configurer les entrées de fonctoid**.  
   
-2.  Dans le **configurer \<fonctoid > fonctoid** boîte de dialogue, cliquez sur le **étiquette et commentaires** onglet.  
+2.  Dans le **configurer \<fonctoid\> fonctoid** boîte de dialogue, cliquez sur le **étiquette et commentaires** onglet.  
   
 3.  Entrez les informations suivantes, puis cliquez sur **OK**.  
   
@@ -72,4 +72,4 @@ L'utilité des étiquettes et des commentaires est de renseigner sur la finalit�
         >  Le nombre maximal de caractères autorisé est 1024. Si une chaîne comportant plus de 1 024 caractères est spécifiée, les 1024 premiers caractères sont acceptés et le reste est ignoré.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Modification des propriétés des fonctoids et des paramètres d’entrée](../core/editing-functoid-properties-and-input-parameters.md)
+ [Modification des propriétés et paramètres d’entrée de fonctoid](../core/editing-functoid-properties-and-input-parameters.md)

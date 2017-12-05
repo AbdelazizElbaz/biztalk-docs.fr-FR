@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e8a7636734501be742f492a0fc4d42ebcac16540
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6c7aff0b2421a19f5fe84ee914c4f9d2bd7ef04e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="interact-adapter-store-and-forward"></a>Interagir de magasin de l’adaptateur et le transfert
 Dans le magasin et le mode de transfert (msng), les messages sont remis à une file d’attente au moment de l’envoi et sont récupérées à partir de la file d’attente par la destination. Lorsque vous utilisez MSNG, la réponse provient de SWIFTNet SnF lui-même et ne contient-elle pas les commentaires de répondeur.  
@@ -42,7 +42,7 @@ Dans le magasin et le mode de transfert (msng), les messages sont remis à une f
 ## <a name="sessions"></a>Sessions  
  Lors de l’acquisition d’une file d’attente, une session est démarrée. Le Sw:SnFSessionId est retournée pour chaque message est remis par SWIFTNet SnF. Le Sw:SnFSessionId contient le nom de la file d’attente, le mode de session : par émission de données et un numéro de la session. Le numéro de la session est incrémenté pour chaque session. Est un exemple :  
   
- **\<SW:SnFSessionId > bankwxyz_applicq1:p:000458\</Sw:SnFSessionId >**  
+ **\<SW:SnFSessionId\>bankwxyz_applicq1:p:000458\</Sw:SnFSessionId\>**  
   
  Le « p » indique une session de distribution. Une session peut également être considérée comme une réservation de la file d’attente par un agent d’autorisation. Les messages suivants doivent être acceptées par l’agent d’autorisation même.  
   
@@ -72,4 +72,4 @@ Dans le magasin et le mode de transfert (msng), les messages sont remis à une f
  [Interagir l’Architecture de sécurité de carte](../../adapters-and-accelerators/fileact-interact/interact-adapter-security-architecture.md)   
  [Interagir remise fiable de bout en bout pour l’adaptateur](../../adapters-and-accelerators/fileact-interact/interact-adapter-end-to-end-reliable-delivery.md)   
  [Interagir l’état de la carte d’analyse](../../adapters-and-accelerators/fileact-interact/interact-adapter-status-monitoring.md)   
- [Interagir carte de non-répudiation](../../adapters-and-accelerators/fileact-interact/interact-adapter-non-repudiation.md)
+ [Non-répudiation de l’adaptateur InterAct](../../adapters-and-accelerators/fileact-interact/interact-adapter-non-repudiation.md)

@@ -16,11 +16,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e7da5d51407bed1cca257e14cc4f548e8c991cf9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4a6326ae6e82e819d3cdf76ecc4d81e2a377ea65
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-the-frr-send-ports-for-sending-to-the-custom-handlers"></a>Création de Ports d’envoi pour envoyer aux gestionnaires personnalisés FRR
 Pour effectuer le rapprochement de réponse de FIN, vous devez créer une série de ports d’envoi, chacun d’eux envoie un message (message d’origine ou réponse) à partir de [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] aux gestionnaires personnalisés qui traitent les messages corrélés.  
@@ -73,7 +73,7 @@ Pour effectuer le rapprochement de réponse de FIN, vous devez créer une série
     |**Propriété**|Sélectionnez **Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_SendingServiceType**.|  
     |**Opérateur**|Sélectionnez  **==** .|  
     |**Valeur**|Type **A4SWIFT_FrrService**.|  
-    |**Grouper**|**Et**|  
+    |**Grouper**|**And**|  
     |**Propriété**|Sélectionnez **BTS. Opération**.|  
     |**Opérateur**|Sélectionnez  **==** .|  
     |**Valeur**|Tapez le BTS. Valeurs d’opération dans le tableau ci-dessous.|  
@@ -102,18 +102,18 @@ Pour effectuer le rapprochement de réponse de FIN, vous devez créer une série
     |**Propriété**|Sélectionnez **Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_SendingServiceType**.|  
     |**Opérateur**|Sélectionnez  **==** .|  
     |**Valeur**|Type **A4SWIFT_FrrService**.|  
-    |**Grouper**|**Et**|  
+    |**Grouper**|**And**|  
     |**Propriété**|Sélectionnez **Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FrrFailed**.|  
     |**Opérateur**|Sélectionnez  **==** .|  
     |**Valeur**|Type **True**.|  
-    |**Grouper**|**Et**|  
+    |**Grouper**|**And**|  
     |**Propriété**|Sélectionnez **BTS. Opération**.|  
     |**Opérateur**|Sélectionnez  **==** .|  
     |**Valeur**|Type **A4SWIFT_FrrSendMTMsg**.|  
-    |**Grouper**|**Et**|  
+    |**Grouper**|**And**|  
     |**Propriété**|Sélectionnez **Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**.|  
     |**Opérateur**|Sélectionnez  **==** .|  
-    |**Valeur**|Type  *\<NAKErrorCode >*, tels que « Y01 ».|  
+    |**Valeur**|Type  *\<NAKErrorCode\>*, tels que « Y01 ».|  
     |**Grouper**|**Or**|  
     |**Propriété**|Sélectionnez **Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**.|  
     |**Opérateur**|Sélectionnez  **==** .|  

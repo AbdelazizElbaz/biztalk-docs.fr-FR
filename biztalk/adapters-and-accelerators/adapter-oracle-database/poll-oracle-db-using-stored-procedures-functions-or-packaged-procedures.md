@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0646f1c447cfc4949edafe94d634a6c651083307
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 72147ffe0f29fbb8456e4d652877b66e7ce0543c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="poll-oracle-database-using-stored-procedures-functions-or-packaged-procedures-and-functions"></a>Base de données Oracle interrogation à l’aide de procédures stockées, fonctions, ou les procédures et fonctions
 Vous pouvez configurer le [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] pour recevoir des messages de modification de données périodiques à l’aide de procédures stockées, fonctions, ou les procédures et fonctions interrogent régulièrement la base de données Oracle. Vous pouvez spécifier une procédure stockée, fonction ou procédure empaquetée et fonctionner comme une instruction d’interrogation de l’adaptateur s’exécute périodiquement pour interroger la base de données Oracle.  
@@ -111,7 +111,7 @@ Vous pouvez configurer le [!INCLUDE[adapteroracle_short](../../includes/adaptero
     |Utiliser|Pour effectuer cette opération|  
     |--------------|----------------|  
     |Identificateur|Type **réception**.|  
-    |Type de message|Dans la liste déroulante, développez **schémas**, puis sélectionnez *Polling.OracleEBSBindingSchema*, où *d’interrogation* est le nom de votre projet BizTalk. *OracleEBSBindingSchema* est le schéma de réponse généré pour le **GET_ACTIVITYS** procédure stockée.<br /><br /> **Important :** , car l’interrogation est une opération unidirectionnelle, le schéma généré par l’adaptateur ne contient pas un nœud de la réponse, et il n'est qu’un seul nœud racine dans le schéma. Si vous utilisez ce type de schéma pour un type de message, vous devez identifier le schéma par le nom de fichier du schéma généré.<br /><br /> Par exemple, si vous créez le schéma pour une opération bidirectionnelle, les nœuds dans le schéma de fichier avec un nom `OracleEBSBindingSchema` peut ressembler à « Requête » et « Réponse ». Si vous souhaitez créer un message dans l’orchestration qui mappe au schéma de requête, vous pouvez identifier le schéma dans la liste en recherchant `OracleEBSBindingSchema.Request`. Toutefois, dans le cas d’opération d’interrogation, car le seul nœud est « Interrogation », il n’est pas facile d’identifier le schéma que vous voulez mapper à, car les schémas avec des nœuds individuels ne sont pas répertoriées en tant que \<schemafilename >.\< rootnodename >. Au lieu de cela, ces schémas sont répertoriées par uniquement le nom de fichier. Dans ce cas, la seule façon d’identifier le schéma est par le nom de fichier de schéma, par exemple, OracleEBSBindingSchema.|  
+    |Type de message|Dans la liste déroulante, développez **schémas**, puis sélectionnez *Polling.OracleEBSBindingSchema*, où *d’interrogation* est le nom de votre projet BizTalk. *OracleEBSBindingSchema* est le schéma de réponse généré pour le **GET_ACTIVITYS** procédure stockée.<br /><br /> **Important :** , car l’interrogation est une opération unidirectionnelle, le schéma généré par l’adaptateur ne contient pas un nœud de la réponse, et il n'est qu’un seul nœud racine dans le schéma. Si vous utilisez ce type de schéma pour un type de message, vous devez identifier le schéma par le nom de fichier du schéma généré.<br /><br /> Par exemple, si vous créez le schéma pour une opération bidirectionnelle, les nœuds dans le schéma de fichier avec un nom `OracleEBSBindingSchema` peut ressembler à « Requête » et « Réponse ». Si vous souhaitez créer un message dans l’orchestration qui mappe au schéma de requête, vous pouvez identifier le schéma dans la liste en recherchant `OracleEBSBindingSchema.Request`. Toutefois, dans le cas d’opération d’interrogation, car le seul nœud est « Interrogation », il n’est pas facile d’identifier le schéma que vous voulez mapper à, car les schémas avec des nœuds individuels ne sont pas répertoriées en tant que \<schemafilename\>.\< rootnodename\>. Au lieu de cela, ces schémas sont répertoriées par uniquement le nom de fichier. Dans ce cas, la seule façon d’identifier le schéma est par le nom de fichier de schéma, par exemple, OracleEBSBindingSchema.|  
   
      Le [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] génère le schéma pour les opérations entrantes et sortantes pour le GET_ACTIVITYS de procédure stockée. Vous devez utiliser le schéma d’opération entrante :  
   
@@ -210,7 +210,7 @@ Vous pouvez configurer le [!INCLUDE[adapteroracle_short](../../includes/adaptero
 -   L’adaptateur exécute la procédure stockée de GET_ACTIVITYS spécifiée pour le **PollingStatement** liaison de propriété et retourne toutes les lignes dans la table ACCOUNTACTIVITY. La réponse à partir de la base de données Oracle ressemble à ceci :  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <GET_ACTIVITYS xmlns=" http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/PollingPackage/ACCOUNT_PKG">  
       <OUTRECS>  
         <OUTRECSRecord xmlns=" http://Microsoft.LobServices.OracleDB/2007/03/ReferencedRecordTypes/SCOTT/ACCOUNT_PKG/GET_ACTIVITYS/SCOTT/GET_ACTIVITYS">  

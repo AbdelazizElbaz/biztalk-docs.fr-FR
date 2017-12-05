@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 84e497579b2f3b8465f7a30677dae6920e2750c4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 14d4c077cce861e94f6c2cdc0bfc6f4a14669340
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="as2-over-file-biztalk-server-sample"></a>AS2 via FILE (exemple BizTalk Server)
 L'exemple AS2 via FILE présente la réception d'un message AS2 via un emplacement de réception FILE. Cela vous permet d'utiliser un adaptateur FILE pour recevoir le message AS2, plutôt qu'un adaptateur HTTP normalement utilisé. Pour ce faire, cette solution écrit les en-têtes HTTP du message AS2 dans la propriété de contexte InboundHTTPHeaders, comme requis par le Décodeur AS2.  
@@ -139,11 +139,11 @@ L'exemple AS2 via FILE présente la réception d'un message AS2 via un emplaceme
   
 2.  Vérifiez qu'un message XML de sortie est déposé dans le dossier de sortie \AS2 Over File\Out.  
   
-3.  Ouvrez le message d’entrée SampleMessage.txt dans un éditeur de texte et ouvrez le message de sortie \<GUID > .xml dans un éditeur de texte. Vérifiez que le message d'entrée SampleMessage.txt a des en-têtes HTTP (et AS2) et que le message de sortie n'a pas d'en-têtes HTTP.  
+3.  Ouvrez le message d’entrée SampleMessage.txt dans un éditeur de texte et ouvrez le message de sortie \<GUID\>.xml dans un éditeur de texte. Vérifiez que le message d'entrée SampleMessage.txt a des en-têtes HTTP (et AS2) et que le message de sortie n'a pas d'en-têtes HTTP.  
   
 ## <a name="classes-or-methods-used-in-this-sample"></a>Classes ou méthodes utilisées dans l'exemple  
  Aucune  
   
 ## <a name="see-also"></a>Voir aussi  
  [EDI et AS2 (dossier d’exemples BizTalk Server)](../core/edi-and-as2-biztalk-server-samples-folder.md)   
- [Envoyer un Message AS2 via un Port d’envoi de fichier](../core/sending-an-as2-message-over-a-file-send-port.md)
+ [Envoi d’un message AS2 via un port d’envoi FILE](../core/sending-an-as2-message-over-a-file-send-port.md)

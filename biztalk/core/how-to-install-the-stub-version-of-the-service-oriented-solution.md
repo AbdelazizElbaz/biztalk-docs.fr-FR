@@ -28,11 +28,11 @@ caps.latest.revision: "53"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c000c733097bffa58f652801b459c429df149e56
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: adaf5cb0117e0d571e0be0ddd42350ce3af2ba80
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-install-the-stub-version-of-the-service-oriented-solution"></a>Installation de la version stub du service orienté solutions
 La procédure suivante décrit la préparation de votre ordinateur avant l'installation de la version stub de la solution orientée services, puis l'installation de la solution sur votre ordinateur.  
@@ -49,7 +49,7 @@ La procédure suivante décrit la préparation de votre ordinateur avant l'insta
   
 -   [Déployer la définition BAM pour la Solution orientée services](#step11)  
   
--   [Déployer la Solution orientée services](#step13)  
+-   [Déployer la solution orientée services](#step13)  
   
 ##  <a name="step1"></a>Préparer l’ordinateur pour l’installation de la version stub de la Solution orientée services  
   
@@ -109,7 +109,7 @@ La procédure suivante décrit la préparation de votre ordinateur avant l'insta
   
 3.  Ajoutez les classes WebSphere MQ pour l'assembly .NET au Global Assembly Cache (GAC).  
   
-    1.  À la [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] invite de commandes, accédez au répertoire \<répertoire d’Installation IBM MQSeries > \bin.  
+    1.  À la [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] invite de commandes, accédez au répertoire \<répertoire d’Installation IBM MQSeries\>\bin.  
   
     2.  Exécutez la commande suivante (vérifiez que gacutil.exe est inclus dans l'environnement PATH) :  
   
@@ -146,7 +146,7 @@ La procédure suivante décrit la préparation de votre ordinateur avant l'insta
   
          Alias = Microsoft.Samples.BizTalk.WoodgroveBank.OrchProxy.Stub  
   
-         Chemin d’accès = \<répertoire d’installation de BizTalk > \SDK\Scenarios\SO\BTSSoln\OrchProxy\Stub  
+         Chemin d’accès = \<répertoire d’installation de BizTalk\>\SDK\Scenarios\SO\BTSSoln\OrchProxy\Stub  
   
          Access Permissions = Read, Run scripts  
   
@@ -154,7 +154,7 @@ La procédure suivante décrit la préparation de votre ordinateur avant l'insta
   
          Alias = Microsoft.Samples.BizTalk.WoodgroveBank.StubSAP  
   
-         Chemin d’accès = \<répertoire d’installation de BizTalk > \SDK\Scenarios\SO\BTSSoln\StubWebServices\SAP  
+         Chemin d’accès = \<répertoire d’installation de BizTalk\>\SDK\Scenarios\SO\BTSSoln\StubWebServices\SAP  
   
          Access Permissions = Read, Run scripts  
   
@@ -162,7 +162,7 @@ La procédure suivante décrit la préparation de votre ordinateur avant l'insta
   
          Alias = Microsoft.Samples.BizTalk.WoodgroveBank.StubPendingTransactions  
   
-         Chemin d’accès = \<répertoire d’installation de BizTalk > \SDK\Scenarios\SO\BTSSoln\StubWebServices\PendingTrans  
+         Chemin d’accès = \<répertoire d’installation de BizTalk\>\SDK\Scenarios\SO\BTSSoln\StubWebServices\PendingTrans  
   
          Access Permissions = Read, Run scripts  
   
@@ -170,7 +170,7 @@ La procédure suivante décrit la préparation de votre ordinateur avant l'insta
   
          Alias = Microsoft.Samples.BizTalk.WoodgroveBank.StubPaymentTracker  
   
-         Chemin d’accès = \<répertoire d’installation de BizTalk > \SDK\Scenarios\SO\BTSSoln\StubWebServices\PaymentTrack  
+         Chemin d’accès = \<répertoire d’installation de BizTalk\>\SDK\Scenarios\SO\BTSSoln\StubWebServices\PaymentTrack  
   
          Access Permissions = Read, Run scripts  
   
@@ -255,7 +255,7 @@ La procédure suivante décrit la préparation de votre ordinateur avant l'insta
   
 1.  À l’invite de commandes, tapez la commande suivante et appuyez sur ENTRÉE. Cela permet de définir le chemin d'accès de l'utilitaire BAM :  
   
-    -   SET PATH=%PATH%;%programfiles%\Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]\Tracking  
+    -   JEU PATH=%PATH%;%programfiles%\Microsoft BizTalk Server\Tracking  
   
 2.  À l’invite de commandes, accédez au répertoire du dossier %BTSSolutionsPath%\SO\BTSSoln\BAM et tapez la commande suivante, puis appuyez sur ENTRÉE :  
   
@@ -286,4 +286,4 @@ La procédure suivante décrit la préparation de votre ordinateur avant l'insta
 ## <a name="see-also"></a>Voir aussi  
  [Avant d’installer la Solution orientée services](../core/before-installing-the-service-oriented-solution.md)   
  [Pour installer le Inline et les Versions du Service d’adaptateur Solution orientée services](../core/how-to-install-the-inline-and-adapter-versions-of-the-service-oriented-solution.md)   
- [Installation d’ordinateur de développeur pour le Service orienté solutions](../core/developer-machine-setup-for-the-service-oriented-solution.md)
+ [Configuration de l’ordinateur de développement pour la solution orientée services](../core/developer-machine-setup-for-the-service-oriented-solution.md)

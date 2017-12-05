@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 55db4fcd1a6a65ac9058a69f9c315de593181a65
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 803a8c671081afd3ba18b81d4770b80b26205eaf
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2c-add-a-fileact-send-port-for-the-fileact-store-and-forward-pull-scenario"></a>Étape 2c : ajouter un Port d’envoi FILEACT pour et le scénario de transfert (Pull) de FileAct
 Avant de commencer cette étape, vous devez effectuer [étape 2 b : ajouter des Ports d’envoi FILE pour capturer le Sw:HandleFileRequest et les Messages Sw:HandleSnFRequest et le scénario de (extraits) avant de FileAct](../../adapters-and-accelerators/fileact-interact/step-2b-add-file-send-ports--get-sw-handlefilerequest-and-sw-handlesnfrequest.md).  
@@ -41,11 +41,11 @@ Avant de commencer cette étape, vous devez effectuer [étape 2 b : ajouter des
     |**Nom d'utilisateur**|Définissez le nom d’utilisateur pour la connectivité des trous.|  
     |**Mode de l’adaptateur**|Dans la liste déroulante, sélectionnez **stocker et transférer**.|  
     |**Indicateur de non répudiation**|Dans la liste déroulante, sélectionnez **FALSE**.|  
-    |**Type de demande**|A la valeur approprié \<RequestType > chaîne, en fonction de votre configuration avec SWIFT.|  
+    |**Type de demande**|A la valeur approprié \<RequestType\> chaîne, en fonction de votre configuration avec SWIFT.|  
     |**RequestCrypto**|Dans la liste déroulante, sélectionnez **FALSE**.|  
-    |**Demandeur**|A la valeur approprié \<demandeur > chaîne, en fonction de votre configuration avec SWIFT.|  
-    |**Répondeur**|A la valeur approprié \<répondeur > chaîne.|  
-    |**Nom du service**|A la valeur approprié  **\<nom service >**.|  
+    |**Demandeur**|A la valeur approprié \<demandeur\> chaîne, en fonction de votre configuration avec SWIFT.|  
+    |**Répondeur**|A la valeur approprié \<répondeur\> chaîne.|  
+    |**Nom du service**|A la valeur approprié  **\<nom du service\>**.|  
     |**Indicateur d’accusé de réception**|Dans la liste déroulante, sélectionnez **FALSE**.|  
     |**Fin de l’événement**|Dans la liste déroulante, sélectionnez **FALSE**.|  
     |**Compression de fichiers**|Dans la liste déroulante, sélectionnez **aucun**.|  
@@ -81,4 +81,4 @@ Avant de commencer cette étape, vous devez effectuer [étape 2 b : ajouter des
   
 ## <a name="see-also"></a>Voir aussi  
  [Étape 2 a : ajouter le fichier emplacements de réception pour le magasin de FileAct et d’un scénario de transfert (extraction de données)](../../adapters-and-accelerators/fileact-interact/step-2a-add-file-receive-locations-for-fileact-store-and-forward-scenario.md)   
- [Étape 2 b : ajouter des Ports d’envoi FILE pour capturer le Sw:HandleFileRequest et scénario Sw:HandleSnFRequest des Messages pour le magasin de FileAct et le transfert (Pull)](../../adapters-and-accelerators/fileact-interact/step-2b-add-file-send-ports--get-sw-handlefilerequest-and-sw-handlesnfrequest.md)
+ [Étape 2B : Ajouter des ports d’envoi FILE pour capturer les messages Sw:HandleFileRequest et Sw:HandleSnFRequest pour le scénario de stockage et de redirection (Pull) FileAct](../../adapters-and-accelerators/fileact-interact/step-2b-add-file-send-ports--get-sw-handlefilerequest-and-sw-handlesnfrequest.md)

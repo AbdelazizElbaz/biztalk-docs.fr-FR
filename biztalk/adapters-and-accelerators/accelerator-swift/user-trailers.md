@@ -15,11 +15,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4dc2d7f2a3dd21d35bb33fa625f59aa27c04e656
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ff907e262088acd188028282fe2e03441071358a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="user-trailers"></a>Codes de l’utilisateur
 Codes de fin utilisateur, à l’exception du code de fin CHK, sont facultatifs et lorsqu’il est présent, se produisent dans l’ordre suivant :  
@@ -41,7 +41,7 @@ Codes de fin utilisateur, à l’exception du code de fin CHK, sont facultatifs 
     where <authentication-result> = 8!h  
     ```  
   
--   **Code de fin du Code (PAC) d’authentification propriétaire.** Le code de fin PAC est utilisé dans le service de FIN uniquement lorsque vous utilisez l’option d’authentification double. Messages d’utilisateur à 5 de bloc de FIN incluent le code de fin PAC immédiatement après le code de fin MAC, le cas échéant. Ce résultat est calculé sur les champs extraits du bloc 4 du message, la valeur du champ 115, le cas échéant et le \<résultat de l’authentification > du code de fin MAC pour les Services de la copie avec l’authentification double.  
+-   **Code de fin du Code (PAC) d’authentification propriétaire.** Le code de fin PAC est utilisé dans le service de FIN uniquement lorsque vous utilisez l’option d’authentification double. Messages d’utilisateur à 5 de bloc de FIN incluent le code de fin PAC immédiatement après le code de fin MAC, le cas échéant. Ce résultat est calculé sur les champs extraits du bloc 4 du message, la valeur du champ 115, le cas échéant et le \<résultat de l’authentification\> du code de fin MAC pour les Services de la copie avec l’authentification double.  
   
      Par conséquent, l’indicateur de fin de bloc (CrLf-) est inclus dans le calcul PAC et les champs sont définis comme suit :  
   
@@ -71,4 +71,4 @@ Codes de fin utilisateur, à l’exception du code de fin CHK, sont facultatifs 
     ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilisation de schémas](../../adapters-and-accelerators/accelerator-swift/working-with-schemas.md)
+ [Utilisation des schémas](../../adapters-and-accelerators/accelerator-swift/working-with-schemas.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d1762c30d6524a777a862492701ff0b8a8731a68
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 73cf8a832e495944ce7c891421645ae2566e3575
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="rnifsend"></a>RNIFSend
 Cet exemple fournit un [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] fichier fichier RNIFSend.aspx prépare un message pour le traitement RNIF et envoie le message à la page RNIFReceive.aspx au répondeur. Vous pouvez personnaliser la page ASPX pour effectuer les opérations suivantes :  
@@ -27,7 +27,7 @@ Cet exemple fournit un [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [
   
 -   Ajouter la validation à la page  
   
- Cet exemple se trouve dans  *\<lecteur >*: \Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\SDK\WebApplication\RNIFSender.  
+ Cet exemple se trouve dans  *\<lecteur\>*: \Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\WebApplication\RNIFSender.  
   
 ## <a name="demonstrates"></a>Montre  
  Cet exemple montre comment préparer les messages sortants pour RNIF du traitement, y compris les suivantes :  
@@ -42,4 +42,4 @@ Cet exemple fournit un [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [
   
 ## <a name="see-also"></a>Voir aussi  
  [Envoyer et recevoir des Pages ASPX](../../adapters-and-accelerators/accelerator-rosettanet/send-and-receive-aspx-pages.md)   
- [Exemples d’applications Web](../../adapters-and-accelerators/accelerator-rosettanet/web-application-samples.md)
+ [Exemples d’applications web](../../adapters-and-accelerators/accelerator-rosettanet/web-application-samples.md)

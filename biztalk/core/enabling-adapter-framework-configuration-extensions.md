@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 346bbc3d4d136ad7116a68b3c57a47566f258a68
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e111a271654b40a01032805bbfdb8eb54bc31ead
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="enabling-adapter-framework-configuration-extensions"></a>L’activation des Extensions Configuration infrastructure d’adaptateurs
 L'infrastructure d'adaptateurs BizTalk fournit plusieurs extensions permettant d'améliorer l'utilisation. Pour utiliser ces extensions, importez le schéma de l’infrastructure, BiztalkAdapterFramework.xsd. Importation du schéma vous permet à des décorations et types spécifiques et de les utiliser dans le schéma de configuration de l’adaptateur, comme décrit ci-dessous. Le code suivant montre comment importer le schéma :  
@@ -33,9 +33,9 @@ L'infrastructure d'adaptateurs BizTalk fournit plusieurs extensions permettant d
 ```  
   
 ## <a name="importing-the-biztalk-adapter-framework-extensions-schema-xsd"></a>Importation du schéma XSD des Extensions de l'infrastructure d'adaptateurs BizTalk  
- En important le schéma XSD des extensions infrastructure d’adaptateurs, vous pouvez utiliser des décorations telles que \<baf : filename > comme type d’élément, qui indique le nom de fichier contextuelle lors de la modification de l’élément.  
+ En important le schéma XSD des extensions infrastructure d’adaptateurs, vous pouvez utiliser des décorations telles que \<baf : filename\> en tant que type d’un élément, qui affiche le nom de fichier contextuelle lors de la modification de l’élément.  
   
- D'autres décorations contrôlent l'affichage de la propriété dans l'interface. Le \<baf : description > décoration, ajoute, par exemple, le texte d’aide à l’élément. Le \<baf : description > affiche le texte en bas de la page de propriétés. Le \<baf : browsable > décoration masque un élément de l’interface. Le code suivant montre comment utiliser ces éléments dans un schéma de configuration :  
+ D'autres décorations contrôlent l'affichage de la propriété dans l'interface. Le \<baf : description\> décoration, ajoute, par exemple, le texte d’aide à l’élément. Le \<baf : description\> décoration affiche le texte en bas de la page de propriétés. Le \<baf : browsable\> décoration masque un élément de l’interface. Le code suivant montre comment utiliser ces éléments dans un schéma de configuration :  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?><xs:schema   targetNamespace="http://tempuri.org/XMLSchema.xsd"   
@@ -93,4 +93,4 @@ L'infrastructure d'adaptateurs BizTalk fournit plusieurs extensions permettant d
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Extensions de schéma de Configuration Framework adaptateur](../core/adapter-framework-configuration-schema-extensions.md)
+ [Extensions de schémas de configuration de l’infrastructure d’adaptateurs](../core/adapter-framework-configuration-schema-extensions.md)

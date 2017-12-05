@@ -12,17 +12,17 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1ea474e3717ec69dfe04261ba144a46350223856
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4c2e4adac7c7d1503a49f68208e45e09f86b67ac
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="processing-json-messages-using-biztalk-server"></a>Traitement des messages JSON à l'aide de BizTalk Server
 > [!NOTE]
->  Ce didacticiel s'applique uniquement à [!INCLUDE[prague](../includes/prague-md.md)].  
+>  Ce didacticiel s’applique uniquement à BizTalk Server.  
   
- Ce didacticiel explique comment traiter les messages JSON à l'aide de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Le didacticiel utilise les composants de pipeline personnalisé maintenant disponibles avec [!INCLUDE[prague](../includes/prague-md.md)]. Ces composants de pipeline convertissent le message JSON en XML lors de la réception du message dans l'orchestration [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], et convertit le message du format XML au format JSON lors de l'envoi du message.  
+ Ce didacticiel explique comment traiter les messages JSON à l'aide de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Le didacticiel utilise des composants de pipeline personnalisé maintenant disponibles avec BizTalk Server. Ces composants de pipeline convertissent le message JSON en XML lors de la réception du message dans l'orchestration [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], et convertit le message du format XML au format JSON lors de l'envoi du message.  
   
 ## <a name="what-does-this-tutorial-do"></a>À quoi sert ce didacticiel ?  
  Pour illustrer le traitement JSON, nous créons une [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] qui effectue ce qui suit, dans l'ordre indiqué :  
@@ -49,4 +49,4 @@ ms.lasthandoff: 09/20/2017
 -   [Déployer et tester l’application](../core/deploy-and-test-the-application.md)  
   
 ## <a name="see-also"></a>Voir aussi  
- [Didacticiels de BizTalk Server](../core/biztalk-server-tutorials.md)
+ [Didacticiels BizTalk Server](../core/biztalk-server-tutorials.md)

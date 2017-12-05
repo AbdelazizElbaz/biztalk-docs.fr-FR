@@ -16,14 +16,14 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 40ac6defd3b0cf99d2f0e53b3173b32e09efa0c8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 33f06c896b58b2ba57c8c1bcee598d23f81b7700
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-messages-flow-through-btahl7"></a>Le flux des Messages via BTAHL7
-Lorsque vous installez [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator pour HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) sur [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)], vous ajoutez [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] composants à la [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] architecture. La figure suivante illustre le système combiné, qui fournit une présentation de l’architecture de [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)].  
+Lorsque vous installez [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator pour HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) sur [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server, vous ajoutez [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] composants à la [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] architecture. La figure suivante illustre le système combiné, qui fournit une présentation de l’architecture de [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)].  
   
  ![](../../adapters-and-accelerators/accelerator-hl7/media/bcd-hl7-sys-archc.gif "bcd_hl7_sys_archc")  
   
@@ -77,4 +77,4 @@ Lorsque vous installez [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] Biz
     >  Vous pouvez transporter les messages 2.X et des messages XML 2. sur un nombre de cartes ; Toutefois, la plupart des systèmes de transport 2.X via un adaptateur MLLP 2 XML des messages et via un adaptateur HTTP.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment BTAHL7 route les Messages](../../adapters-and-accelerators/accelerator-hl7/how-btahl7-routes-messages.md)
+ [Comment BTAHL7 route les messages](../../adapters-and-accelerators/accelerator-hl7/how-btahl7-routes-messages.md)

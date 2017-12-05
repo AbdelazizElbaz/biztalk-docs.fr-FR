@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7f7e220ae4b3fbc12c81ee08280330245e57525f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f38b7ea3c811912e40a5ed3dc0b47df5b8aa884f
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="support-for-oracle-user-defined-types"></a>Prise en charge pour les Types définis par l’utilisateur Oracle
 Le [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] prend en charge l’exécution d’opérations sur les artefacts dans Oracle E-Business Suite et de la base de données sous-jacente qui contiennent des Types de Oracle User-Defined (UDT). Les UDT peuvent être présents dans les artefacts suivants :  
@@ -75,7 +75,7 @@ Le [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslo
   
  **Dans BizTalk Server**  
   
--   Ajouter manuellement l’assembly UDT d’Oracle créé à l’étape 4 dans le « Temps de conception » pour le Global Assembly Cache (GAC) sur votre ordinateur. Ou bien, vous pouvez copier manuellement l’assembly UDT d’Oracle sous l’emplacement d’installation de BizTalk Server. Pour [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)], il s’agit généralement \<lecteur d’installation > : \Program Files\Microsoft [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)].  
+-   Ajouter manuellement l’assembly UDT d’Oracle créé à l’étape 4 dans le « Temps de conception » pour le Global Assembly Cache (GAC) sur votre ordinateur. Ou bien, vous pouvez copier manuellement l’assembly UDT d’Oracle sous l’emplacement d’installation de BizTalk Server. Pour BizTalk Server, en général, il s’agit \<lecteur d’installation\>: \Program Files\Microsoft BizTalk Server.  
   
 -   Lors de la configuration du [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] WCF-Custom ou WCF-OracleEBS port, dans le **liaison** onglet, spécifiez l’emplacement de l’assembly UDT d’Oracle pour le **UserAssembliesLoadPath** propriété de liaison. Pour plus d’informations sur cette propriété de liaison, consultez [en savoir plus sur l’adaptateur BizTalk pour Oracle E-Business Suite liaison propriétés](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md).  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 65f1786b37194db25f0e38db7491538857f3406b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 57bdaa8f2a13b650019fa02b096ca05971389570
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="deploying-bicbeicountrycurrency-validation-rules"></a>Déploiement de règles de Validation de BIC/BEI/pays/devise
 **Pour déployer des règles de Validation de BIC/BEI/pays/devise :**  
@@ -39,4 +39,4 @@ ms.lasthandoff: 09/20/2017
   
 3.  Une fois les stratégies maîtres ont été modifiés, publication, toutes les stratégies à l’aide de l’Assistant Déploiement moteur de règles d’entreprise. Utilisez l’option suivante : importer le fichier de stratégie/le vocabulaire vers la base de données.  
   
-4.  Cliquez sur Programmes, cliquez sur le serveur BizTalk \<version >, sur l’éditeur des règles d’entreprise et déployez-le sur les six publiés des stratégies.
+4.  Cliquez sur Programmes, cliquez sur BizTalk Server \<version\>et cliquez sur Éditeur des règles d’entreprise, puis déployer les six publiés des stratégies.

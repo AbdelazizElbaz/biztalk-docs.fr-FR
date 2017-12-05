@@ -17,11 +17,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8374e2069660998a46265986125b6b0159ea1961
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1879cb4d748e974454f929bde2018c24b5d276f2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="xslt-transform-component-biztalk-server-sample"></a>Composant Transformation XSLT (exemple BizTalk Server)
 L'exemple de composant Transformation XSLT décrit l'écriture d'un composant de pipeline personnalisé permettant de transformer un message XML à l'aide de XSLT.  
@@ -34,7 +34,7 @@ L'exemple de composant Transformation XSLT décrit l'écriture d'un composant de
 2.  Le pipeline transforme le document XML en un corps de message électronique HTML à l'aide de Transform.xsl.  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
- *\<Exemples de chemin d’accès >*\Pipelines\XslTransformComponent\  
+ *\<Exemples de chemin d’accès\>*\Pipelines\XslTransformComponent\  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -60,7 +60,7 @@ L'exemple de composant Transformation XSLT décrit l'écriture d'un composant de
   
 1.  Dans une fenêtre de commande, accédez au répertoire (**cd)** dans le dossier suivant :  
   
-     *\<Exemples de chemin d’accès >*\Pipelines\XslTransformComponent  
+     *\<Exemples de chemin d’accès\>*\Pipelines\XslTransformComponent  
   
 2.  Exécutez le fichier Setup.bat, qui effectue les actions suivantes :  
   
@@ -70,7 +70,7 @@ L'exemple de composant Transformation XSLT décrit l'écriture d'un composant de
   
     -   Création et déploiement du pipeline de composant Transformation XSLT ;  
   
-    -   Copie le composant de pipeline créé à le \<chemin d’Installation > dossier \Pipeline Components.  
+    -   Copie le composant de pipeline créé à le \<chemin d’Installation\>dossier \Pipeline Components.  
   
     -   crée les ports d'envoi et de réception ;  
   

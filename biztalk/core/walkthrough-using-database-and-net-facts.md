@@ -12,11 +12,11 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9ca754e84d07718a3656aa9a6f27d3a54f831c25
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b18b9b3188ce3d9fb478c3f2d4390d167e5566a9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="walkthrough-using-database-and-net-facts"></a>Procédure pas à pas : Utilisation de base de données et de faits .NET
 Cette procédure décrit en détail l'utilisation de l'Éditeur des règles d'entreprise afin de créer une stratégie utilisant la base de données et les faits .NET.  
@@ -177,7 +177,7 @@ Cette procédure décrit en détail l'utilisation de l'Éditeur des règles d'en
   
 20. Faites glisser le **état** nœud à partir de la fenêtre de l’Explorateur de faits vers le volet THEN en bas à droite de l’éditeur des règles d’entreprise.  
   
-21. Dans le volet THEN, cliquez sur  **\<entrer une valeur >** , puis tapez **approuvé**.  
+21. Dans le volet THEN, cliquez sur  **\<entrer une valeur\>**  , puis tapez **approuvé**.  
   
 22. Dans la fenêtre Explorateur de faits, cliquez sur **Version 1.0** dans **ProcessPurchaseOrderDbNet**, puis cliquez sur **AddNewRule**.  
   
@@ -197,7 +197,7 @@ Cette procédure décrit en détail l'utilisation de l'Éditeur des règles d'en
   
 30. Faites glisser le **état** nœud à partir de la fenêtre de l’Explorateur de faits vers le volet THEN en bas à droite de l’éditeur des règles d’entreprise.  
   
-31. Dans le volet THEN, cliquez sur  **\<entrer une valeur >** , puis tapez **refusé**.  
+31. Dans le volet THEN, cliquez sur  **\<entrer une valeur\>**  , puis tapez **refusé**.  
   
 32. Dans la fenêtre Explorateur de stratégies, cliquez sur **Version 1.0 (non enregistrée)**, puis cliquez sur **enregistrer**.  
   

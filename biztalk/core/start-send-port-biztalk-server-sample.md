@@ -16,11 +16,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cfb9db99f06e05877939631e4306be396c47ebda
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f293d00848c32f6b519349543c8a39824d9bca8c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="start-send-port-biztalk-server-sample"></a>Port d’envoi de début (exemple BizTalk Server)
 L'exemple de démarrage d'un port d'envoi (Start Send Port) décrit le démarrage d'un port d'envoi et la définition éventuelle de l'adresse de transport principal lorsque l'adaptateur FILE est utilisé.  
@@ -43,7 +43,7 @@ L'exemple de démarrage d'un port d'envoi (Start Send Port) décrit le démarrag
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
  Les fichiers de l'exemple se trouvent dans l'emplacement SDK suivant :  
   
- \<*Exemples de chemin d’accès*> \Admin\WMI\Start envoyer LPT1\  
+ \<*Exemples de chemin d’accès*\>\Admin\WMI\Start LPT1\ d’envoi  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -60,15 +60,13 @@ L'exemple de démarrage d'un port d'envoi (Start Send Port) décrit le démarrag
   
 1.  Dans une fenêtre de commande, accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \Admin\WMI\Start envoyer Port\VBScript\  
+     \<*Exemples de chemin d’accès*\>\Admin\WMI\Start Port\VBScript\ d’envoi  
   
 2.  Exécutez le fichier StartSendPort.vbs à l'aide du programme cscript en transmettant les arguments de ligne de commande suivants (le second argument est facultatif) :  
   
-    -   **\<**   
-         ***SendPortName* >.** Nom du port d'envoi à démarrer. Si le nom du port d'envoi contient des espaces, placez-le entre guillemets.  
+    -   **\<** ***SendPortName* \>.** Nom du port d'envoi à démarrer. Si le nom du port d'envoi contient des espaces, placez-le entre guillemets.  
   
-    -   **\<**   
-         ***PrimaryTransportAddress* >.** Adresse de transport principal, relative à l'emplacement d'installation du produit, que vous pouvez modifier en spécifiant cet argument. Si l'adresse de l'adaptateur principal contient des espaces, placez-la entre guillemets.  
+    -   **\<** ***PrimaryTransportAddress* \>.** Adresse de transport principal, relative à l'emplacement d'installation du produit, que vous pouvez modifier en spécifiant cet argument. Si l'adresse de l'adaptateur principal contient des espaces, placez-la entre guillemets.  
   
          Exemple :  
   

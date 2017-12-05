@@ -15,11 +15,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a1bfd5b9f7b974b00d63831484ecbaa44e2568fa
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3aeef8ac3defc17f4c9bf0fbddedf6d389a1263e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="build-errors-in-the-task-list"></a>Erreurs de génération dans la liste des tâches
 Lorsque vous générez votre projet ou solution, les résultats s'affichent dans la fenêtre Sortie tandis que les erreurs individuelles et avertissements apparaissent dans la liste des tâches.  
@@ -89,7 +89,7 @@ POAckMsg = XMLDOM;
 ## <a name="you-receive-a-use-of-unconstructed-message-error-when-building-your-project"></a>L'erreur « utilisation du message non construit » s'affiche lors de la génération du projet  
   
 ### <a name="problem"></a>Problème  
- Lorsque vous compilez votre projet BizTalk, vous recevez l’erreur « utilisation du message non construit '\<message >' ».  
+ Lorsque vous compilez votre projet BizTalk, vous recevez l’erreur « utilisation du message non construit '\<message\>' ».  
   
 ### <a name="cause"></a>Cause  
  Cette erreur se produit lorsqu’un message non construit est utilisé dans un **envoyer** forme.  
@@ -121,10 +121,10 @@ POAckMsg = XMLDOM;
 ### <a name="resolution"></a>Résolution  
  Si votre orchestration n’est pas appelée par une autre orchestration, vous devez configurer un de le **réception** formes soit active. Pour plus d’informations sur la configuration de la **réception** forme, y compris des liens vers la corrélation, consultez [comment configurer la forme réception](../core/how-to-configure-the-receive-shape.md).  
   
-## <a name="you-receive-the-error-assembly-generation-failed----referenced-assembly-assembly-does-not-have-a-strong-name-when-building-your-solution"></a>Vous recevez l’erreur « Échec de la génération de l’Assembly--l’assembly référencé '\<assembly >' n’a pas un nom fort » lors de la génération de votre solution  
+## <a name="you-receive-the-error-assembly-generation-failed----referenced-assembly-assembly-does-not-have-a-strong-name-when-building-your-solution"></a>Vous recevez l’erreur « Échec de la génération de l’Assembly--l’assembly référencé '\<assembly\>' n’a pas un nom fort » lors de la génération de votre solution  
   
 ### <a name="problem"></a>Problème  
- Vous recevez l’erreur « Échec de la génération de l’Assembly--l’assembly référencé '\<assembly >' n’a pas un nom fort » lorsque la génération de votre solution qui a une orchestration.  
+ Vous recevez l’erreur « Échec de la génération de l’Assembly--l’assembly référencé '\<assembly\>' n’a pas un nom fort » lorsque la génération de votre solution qui a une orchestration.  
   
 ### <a name="cause"></a>Cause  
  Ce problème se produit lorsqu'un type issu d'un assembly référencé non signé est utilisé dans une orchestration.  

@@ -20,11 +20,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 98214ac6d44ea4290d0adcfe6f077d4590b34d8e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b4c82ecf945e85c8e4c9b5f365c808598fcbbf3a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="browse-search-and-get-metadata-for-idoc-operations-in-sap"></a>Parcourir, rechercher et d’obtenir des métadonnées pour des opérations IDOC dans SAP
 Cette section fournit des instructions sur la façon de parcourir, rechercher et récupérer les métadonnées à partir de SAP pour à l’aide des opérations IDOC [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)], [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)], ou [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]. La plupart des instructions est les même pour toute l’interface utilisateur de trois. Là où les procédures d’applicables, distinctes sont fournies pour l’interface utilisateur approprié.  
@@ -148,7 +148,7 @@ Cette section fournit des instructions sur la façon de parcourir, rechercher et
 5.  Cliquez sur **OK**. Le fichier de schéma est enregistré avec une extension .xsd dans le même emplacement que le projet IDOC.  
   
     > [!NOTE]
-    >  Si vous utilisez [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], par défaut, les fichiers sont créés avec la convention d’affectation de noms « SAPBinding\<n > .xsd », où « n » peut être de 1, 2, etc. selon le nombre de fichiers de schéma créés. Ou bien, vous pouvez fournir un nom personnalisé pour les fichiers de schéma en entrant un nom dans la **préfixe de nom de fichier** zone de texte. Le [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] maintenant crée des fichiers de schéma avec la convention d’affectation de noms \<préfixe de nom de fichier >\<n > .xsd.  
+    >  Si vous utilisez [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], par défaut, les fichiers sont créés avec la convention d’affectation de noms « SAPBinding\<n\>.xsd », où « n » peut être de 1, 2, etc. selon le nombre de fichiers de schéma créés. Ou bien, vous pouvez fournir un nom personnalisé pour les fichiers de schéma en entrant un nom dans la **préfixe de nom de fichier** zone de texte. Le [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] maintenant crée des fichiers de schéma avec la convention d’affectation de noms \<préfixe de nom de fichier\>\<n\>.xsd.  
   
     > [!NOTE]
     >  Le [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] crée également un fichier de liaison (un fichier XML) qui contient les propriétés de liaison que vous avez spécifié lors de la génération du schéma pour une opération et l’action SOAP pour appeler l’opération. Vous pouvez importer ce fichier de liaison dans la console Administration de BizTalk Server pour créer un port personnalisé WCF avec l’URI, les propriétés de liaison de connexion et l’action SOAP définie. Pour plus d’informations, consultez [configurer une liaison de port physique à l’aide d’un fichier de liaison de port à SAP](../../adapters-and-accelerators/adapter-sap/configure-a-physical-port-binding-using-a-port-binding-file-to-sap.md).  
@@ -186,4 +186,4 @@ Cette section fournit des instructions sur la façon de parcourir, rechercher et
 5.  Cliquez sur **OK**. Le [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] enregistre la classe de client WCF (ou l’interface de service WCF) et le code d’assistance pour les opérations et les catégories que vous avez sélectionnées dans votre répertoire de projet. Par défaut, un fichier de configuration est également enregistré. Légèrement différents fichiers sont générés pour les opérations entrantes et sortantes ; Pour plus d’informations, consultez [générer un client WCF ou un contrat de service WCF pour les artefacts de solution SAP](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Obtenir les métadonnées pour les opérations de SAP dans Visual Studio](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md)
+ [Obtenir les métadonnées pour les opérations SAP dans Visual Studio](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md)

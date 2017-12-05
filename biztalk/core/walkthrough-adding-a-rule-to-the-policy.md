@@ -12,11 +12,11 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 343dc2e9c7965ffb27a806d18944da99777dd3ed
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b08fc197c16f04f3eb738468421db340060b9613
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="walkthrough-adding-a-rule-to-the-policy"></a>Procédure pas à pas : Ajout d’une règle à la stratégie
 Cette procédure pas à pas fournit des instructions détaillées pour l’ajout d’une règle nommée **DeniedRule** à la **ProcessPurchaseOrder** stratégie.  
@@ -58,7 +58,7 @@ Cette procédure pas à pas fournit des instructions détaillées pour l’ajout
   
 10. Faites glisser **état de la demande** vers le volet THEN.  
   
-11. Cliquez sur  **\<une chaîne vide >** , puis tapez **refusé**.  
+11. Cliquez sur  **\<une chaîne vide\>**  , puis tapez **refusé**.  
   
 12. Avec le bouton droit **Version 1.2 (non enregistrée)**, puis cliquez sur **enregistrer**.  
   

@@ -17,11 +17,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8f4f00c3071bfc67a888c3550edbf9c946bd4524
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a83dd69e7c66c8ce8ff1af78662392dd0aa66ff2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-publish-the-sap-artifacts-as-a-wcf-service"></a>Étape 1 : Publier les artefacts SAP comme Service WCF
 ![Étape 1 sur 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
   
 -   Les bibliothèques de client SAP requis.  
   
- Pour plus d’informations sur ces conditions préalables, consultez le [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] guide d’installation. Le guide d’installation est généralement installé sur \<lecteur d’installation > : \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents.  
+ Pour plus d’informations sur ces conditions préalables, consultez le [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] guide d’installation. Le guide d’installation est généralement installé sur \<lecteur d’installation\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents.  
   
 ### <a name="to-publish-the-sap-artifacts-as-a-wcf-service"></a>Pour publier les artefacts SAP comme service WCF  
   
@@ -184,7 +184,7 @@ ms.lasthandoff: 09/20/2017
   
     1.  Démarrez la Console de gestion de Microsoft IIS. Cliquez sur **Démarrer**, pointez sur **outils d’administration**, puis cliquez sur **Gestionnaire des Services Internet (IIS)**.  
   
-    2.  Accédez au nœud sur lequel vous avez publié le service. Pour le **Customer_Order** de service, accédez à **Internet Information Services** > **\<nom de l’ordinateur >**  >   **Sites Web** > **Site Web par défaut** > **Customer_Order**.  
+    2.  Accédez au nœud sur lequel vous avez publié le service. Pour le **Customer_Order** de service, accédez à **Internet Information Services** > **\<nom de l’ordinateur\>**   >  **Sites Web** > **Site Web par défaut** > **Customer_Order**.  
   
     3.  Dans le volet droit, cliquez sur le fichier Rfc.svc, puis cliquez sur **Parcourir**.  
   
@@ -199,4 +199,4 @@ ms.lasthandoff: 09/20/2017
  Pour créer un fichier de définition d’application pour les artefacts SAP, utilisez l’éditeur de définition de catalogue de données métier. Consultez [étape 2 : créer un fichier de définition d’Application pour les artefacts SAP](../../adapters-and-accelerators/adapter-sap/step-2-create-an-application-definition-file-for-the-sap-artifacts.md) pour obtenir des instructions. Le fichier de définition d’application identifie où sont stockées les données LOB et le format dans lequel il est stocké.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Didacticiel 1 : Présentation des données à partir d’un système SAP sur un Site SharePoint](../../adapters-and-accelerators/adapter-sap/tutorial-1-presenting-data-from-an-sap-system-on-a-sharepoint-site.md)
+ [Didacticiel 1 : Présentation de données provenant d’un système SAP sur un site SharePoint](../../adapters-and-accelerators/adapter-sap/tutorial-1-presenting-data-from-an-sap-system-on-a-sharepoint-site.md)

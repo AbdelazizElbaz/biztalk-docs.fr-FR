@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: daf1fce43d967f28dab0d323afbda6b612f5cbef
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e62dd1701284fec27084bbdaf5aab19d6dca64a4
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="assemblies-and-artifacts-installed-by-the-scatter-gather-sample"></a>Assemblys et des artefacts installés par l’exemple de ventilation-regroupement
 Le tableau suivant répertorie les assemblys et autres artefacts installés pour l’exemple ESB ventilation-regroupement.  
@@ -39,4 +39,4 @@ Le tableau suivant répertorie les assemblys et autres artefacts installés pour
 |Application BizTalk GlobalBank.ESB|Cartes||  
 |Cache d’assembly global|Assemblys|GlobalBank.ESB.ScatterGather.Processes Version 2.0.0.0|  
 |||GlobalBank.ESB.ScatterGather.Schemas Version 2.0.0.0|  
-|%Program Files%\\[!INCLUDE[prague](../includes/prague-md.md)]\Pipeline composants|Composants de pipeline||
+|%Program Files%\\BizTalk Server\Pipeline composants|Composants de pipeline||

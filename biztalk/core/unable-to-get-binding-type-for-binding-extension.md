@@ -12,11 +12,11 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 453a579daae80a202df1ed4d3c72ae9c13f47d9b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 79b649f69b7503f345f212aa5f014ce7b256148d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="unable-to-get-binding-type-for-binding-extension"></a>Impossible d'obtenir le type de liaison pour l'extension de liaison
 ## <a name="details"></a>Détails  
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="user-action"></a>Action de l'utilisateur  
  Pour résoudre cette erreur, effectuez l'une des opérations suivantes :  
   
--   Vérifiez le **fichier machine.config** dans **%WinDir%\Microsoft.NET\Framework\v4.0.30319\Config** a le \< **bindingExtensions**> élément configuré correctement.  
+-   Vérifiez le **fichier machine.config** dans **%WinDir%\Microsoft.NET\Framework\v4.0.30319\Config** a le \< **bindingExtensions** \> élément configuré correctement.  
   
 -   Dans l’Explorateur Windows, accédez à **%WinDir%\Assembly**et assurez-vous que l’implémentation de l’extension de liaison personnalisée sont correctement installés.  
   

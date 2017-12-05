@@ -12,14 +12,14 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ffb23914964d4fd1c114818d6a616c2d57fae434
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ebb7ab3abb9a4bc547d920614e1a1839a85c593b
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="edi-standards-support"></a>Prise en charge des normes
-[!INCLUDE[prague](../includes/prague-md.md)] offre une prise en charge de la conception et de l'exécution de quatre normes de codage. Le tableau suivant répertorie les normes de codage et des liens permettant d'obtenir plus d'informations.  
+BizTalk Server fournit pour la prise en charge de la conception et exécution de quatre normes de codage. Le tableau suivant répertorie les normes de codage et des liens permettant d'obtenir plus d'informations.  
   
 |Norme de codage|Secteur d'activité|Références|  
 |-----------------------|----------------------|----------------|  
@@ -53,14 +53,14 @@ ms.lasthandoff: 09/20/2017
   
 -   La norme X12 préconise le codage ASCII, tandis que la norme EDIFACT recommande le codage UTF8.  
   
- [!INCLUDE[prague](../includes/prague-md.md)] prend en charge la norme KEDIFACT (Korea EDIFACT). Elle respecte le Guide de mise en œuvre des messages UN/EDIFACT ; par conséquent, elle s'inspire profondément de la norme EDIFACT. Toutefois, il existe des différences entre les normes KEDIFACT et X12/EDIFACT. KEDIFACT fait appel à plusieurs schémas EDI spécifiques à KEDIFACT et exploite la page de codes KECA.  
+ BizTalk Server prend en charge la norme KEDIFACT (Korea EDIFACT). Elle respecte le Guide de mise en œuvre des messages UN/EDIFACT ; par conséquent, elle s'inspire profondément de la norme EDIFACT. Toutefois, il existe des différences entre les normes KEDIFACT et X12/EDIFACT. KEDIFACT fait appel à plusieurs schémas EDI spécifiques à KEDIFACT et exploite la page de codes KECA.  
   
 ## <a name="hipaa"></a>HIPAA  
- [!INCLUDE[prague](../includes/prague-md.md)] prend en charge le traitement X12, et, étant donné que le traitement HIPAA est dérivé de celui-ci, [!INCLUDE[prague](../includes/prague-md.md)] prend en charge le traitement de la norme HIPAA. Les références à la prise en charge de la norme X12 que vous rencontrerez dans ce document s'appliquent donc également au traitement de la norme HIPAA.  
+ BizTalk Server prend en charge le traitement de X12, et le traitement HIPAA étant un dérivé de X12 traitement, BizTalk Server prend en charge le traitement HIPAA. Les références à la prise en charge de la norme X12 que vous rencontrerez dans ce document s'appliquent donc également au traitement de la norme HIPAA.  
   
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] offre la prise en charge complémentaire spécifique à la norme HIPAA, à savoir :  
   
--   Un ensemble de schémas de document HIPAA de version 4010A1. Pour plus d’informations sur les schémas de document EDI et HIPAA dans [!INCLUDE[prague](../includes/prague-md.md)], consultez [des schémas de Document EDI](../core/edi-document-schemas.md).  
+-   Un ensemble de schémas de document HIPAA de version 4010A1. Pour plus d’informations sur les schémas de document EDI et HIPAA dans BizTalk Server, consultez [des schémas de Document EDI](../core/edi-document-schemas.md).  
   
 -   Un ensemble de schémas de document HIPAA de version 5010. Pour plus d’informations, consultez [5010 de Version de schéma de Document HIPAA](../core/hipaa-document-schema-version-5010.md).  
   
@@ -68,15 +68,15 @@ ms.lasthandoff: 09/20/2017
   
 -   Prise en charge pour les deux premiers niveaux de test WEDI SNIP : X12 intégrité de la syntaxe et les exigences de la [Guide d’implémentation HIPAA](http://go.microsoft.com/fwlink/?LinkId=77541).  
   
- [!INCLUDE[prague](../includes/prague-md.md)] offre la prise en charge de la norme HIPAA via la fonctionnalité EDI BizTalk Server native. Pour plus d’informations, consultez [prise en charge EDI dans BizTalk Server](../core/edi-support-in-biztalk-server2.md).  
+ BizTalk Server fournit la prise en charge HIPAA dans le cadre de la fonctionnalité EDI de BizTalk Server native. Pour plus d’informations, consultez [prise en charge EDI dans BizTalk Server](../core/edi-support-in-biztalk-server2.md).  
   
 ## <a name="eancom"></a>EANCOM  
- [!INCLUDE[prague](../includes/prague-md.md)] prend en charge le traitement EDIFACT, et, sachant que le traitement EANCOM est dérivé de celui-ci, [!INCLUDE[prague](../includes/prague-md.md)] prend donc en charge le traitement de la norme EANCOM. Les références à la prise en charge de la norme EDIFACT que vous rencontrerez dans ce document s'appliquent donc également au traitement de la norme EANCOM.  
+ BizTalk Server prend en charge le traitement d’EDIFACT, et le traitement EANCOM étant un dérivé de traitement d’EDIFACT, BizTalk Server prend en charge le traitement EANCOM. Les références à la prise en charge de la norme EDIFACT que vous rencontrerez dans ce document s'appliquent donc également au traitement de la norme EANCOM.  
   
- [!INCLUDE[prague](../includes/prague-md.md)] offre la prise en charge complémentaire spécifique à la norme EANCOM, à savoir :  
+ BizTalk Server fournit la prise en charge EANCOM spécifiques supplémentaire :  
   
--   Un ensemble de schémas de document EANCOM de versions EAN94, EAN97 et EAN02. Pour plus d’informations sur les schémas de document EDI et EANCOM dans [!INCLUDE[prague](../includes/prague-md.md)], consultez [des schémas de Document EDI](../core/edi-document-schemas.md).  
+-   Un ensemble de schémas de document EANCOM de versions EAN94, EAN97 et EAN02. Pour plus d’informations sur les schémas de document EDI et EANCOM dans BizTalk Server, consultez [des schémas de Document EDI](../core/edi-document-schemas.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Structure des messages EDI](../core/edi-message-structure.md)   
- [Schémas de Document EDI](../core/edi-document-schemas.md)
+ [Schémas de document EDI](../core/edi-document-schemas.md)

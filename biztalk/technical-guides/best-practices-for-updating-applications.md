@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f17fd3ce03ab4c974bff1b5198d27385d311ed70
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d01cf54454866eadbd70de7ef30439a0e7068cb1
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="best-practices-for-updating-applications"></a>Meilleures pratiques pour la mise à jour des Applications
 Cette rubrique décrit les meilleures pratiques que vous devez envisager d’utiliser lors de la mise à jour des applications et artefacts BizTalk.  
@@ -34,7 +34,7 @@ Cette rubrique décrit les meilleures pratiques que vous devez envisager d’uti
   
 -   Le **outil Vérificateur d’Assembly BizTalk et à distance GAC** (BTSAssemblyChecker.exe) vérifie les versions des assemblys déployés dans la base de données de gestion BizTalk et vérifie qu’ils sont inscrits correctement dans le GAC sur tous les BizTalk Ordinateurs serveur. Vous pouvez utiliser cet outil pour vérifier que tous les assemblys contenant les artefacts d’une certaine application BizTalk sont installés sur tous les nœuds de BizTalk. L’outil est particulièrement utile en conjonction avec une stratégie de contrôle de version solide pour vérifier que la version correcte d’un jeu d’assemblys est installée sur chaque ordinateur BizTalk, en particulier lorsque l’approche de déploiement de côte à côte est utilisé.  
   
--   L’outil est disponible avec le [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] Support\Tools\x86\BTSAssemblyChecker.exe support d’installation.  
+-   L’outil est disponible avec le support d’installation de BizTalk Server à Support\Tools\x86\BTSAssemblyChecker.exe.  
   
  **Utilisez un produit de contrôle de version**  
   

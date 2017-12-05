@@ -16,11 +16,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 19a4f5b5252691ca772e234b2f9a75c4059aa128
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a2a1dd348b6d897e147d6add49499e9716a67aeb
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="use-the-data-provider-for-sap-with-the-ddex-plug-in"></a>Utiliser le fournisseur de données pour SAP avec le plug-in DDEX
 Si vous avez choisi d’installer le [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] avec la [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] l’installation, le programme d’installation installe un [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] plug-in DDEX. Vous pouvez utiliser ce plug-in pour rechercher des objets SAP à l’aide de [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]. Cette section fournit des informations sur l’utilisation du plug-in DDEX.  
@@ -38,7 +38,7 @@ Si vous avez choisi d’installer le [!INCLUDE[adoprovidersaplong](../../include
   
 3.  Dans le **l’Explorateur de serveurs**, avec le bouton droit **des connexions de données**, puis sélectionnez **ajouter une connexion**.  
   
-4.  Dans le **modifier la Source de données** boîte de dialogue, à partir de la **source de données** boîte, sélectionnez  **\<autres >**.  
+4.  Dans le **modifier la Source de données** boîte de dialogue, à partir de la **source de données** boîte, sélectionnez  **\<autres\>**.  
   
 5.  À partir de la **fournisseur de données** la liste déroulante, sélectionnez **fournisseur de données .NET Framework pour mySAP Business Suite** et cliquez sur **OK**. Le **ajouter une connexion** boîte de dialogue s’ouvre.  
   

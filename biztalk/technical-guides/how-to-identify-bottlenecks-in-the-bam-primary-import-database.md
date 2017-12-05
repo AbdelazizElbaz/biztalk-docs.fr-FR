@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: decf27009eea6aff0ff5ed9088ae49ef2014b1cb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5780c8fcc893126997b37f687f010c5eb62e74c9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-identify-bottlenecks-in-the-bam-primary-import-database"></a>Comment identifier les goulots d’étranglement dans la base de données importation principale BAM
 Pour identifier les goulots d’étranglement dans la base de données analyse BAM (Business Activity), procédez comme suit :  
@@ -25,9 +25,9 @@ Pour identifier les goulots d’étranglement dans la base de données analyse B
   
 2.  Vérifiez que le service de l'Agent SQL est exécuté.  
   
-3.  Si l’analyse OLAP est configurée, vérifiez que le BAM_AN_\<activityname > tâche est exécutée à intervalles réguliers.  
+3.  Si l’analyse OLAP est configurée, vérifiez que le BAM_AN_\<activityname\> travail s’exécute à intervalles réguliers.  
   
-4.  Assurez-vous que BAM_DM_\<activityname > (Maintenance des données) est planifiée à intervalles réguliers.  
+4.  Assurez-vous que BAM_DM_\<activityname\> (Maintenance des données) est planifiée à intervalles réguliers.  
   
     > [!NOTE]  
     >  Activité de base de données BAM intensive scénarios permettre avoir un impact sur les performances des autres bases de données BizTalk Server, ce qui affecte les performances globales de BizTalk Server. Dans ce cas, envisagez effectuant les opérations suivantes :  
@@ -44,4 +44,4 @@ Pour identifier les goulots d’étranglement dans la base de données analyse B
 8.  Vérifier la réactivité du disque (disque secondes par le compteur de performances en lecture/écriture) sur le disque qui héberge la base de données des suivis BizTalk.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Goulots d’étranglement au niveau de la base de données](../technical-guides/bottlenecks-in-the-database-tier.md)
+ [Goulots d’étranglement dans le niveau base de données](../technical-guides/bottlenecks-in-the-database-tier.md)

@@ -13,11 +13,11 @@ caps.latest.revision: "68"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 29af2ae479f1927665ddbb3171a64cd5b6ccfe3d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 742b695338d7038f830b823af720bd3048399473
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="glossary"></a>Glossaire
 Les termes et les définitions suivants sont utilisés dans l'aide de Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
@@ -207,8 +207,8 @@ Les termes et les définitions suivants sont utilisés dans l'aide de Microsoft 
 |----------|----------------|  
 |Routage|Voir Échange de données informatisé (EDI, Electronic Data Interchange)|  
 |EDIFACT|Voir Échange de données informatisé pour l'administration, le commerce et le transport (EDIFACT, Electronic Data Interchange for Administrative Commerce and Transport)|  
-|syntaxe UNOA EDIFACT|Seuls des caractères de syntaxe EDIFACT qui autorise les éléments suivants : lettres majuscules, chiffres, vide, le point d’exclamation ( !), guillemet («), signe pourcentage (%), esperluette (&), d’ouverture et de parenthèses fermantes (« ( » et «) »), astérisque (*), virgule, tiret (-), transférer les virgule décimale (.), barre oblique (/), point-virgule ( ;), moins-signe (\<) et supérieur-signe > (supérieur).|  
-|syntaxe UNOB EDIFACT|Seuls des caractères de syntaxe EDIFACT qui autorise les éléments suivants : lettres majuscules et minuscules, des chiffres tous les vide, le point d’exclamation ( !), guillemet («), signe de pourcentage (%), esperluette (&), guillemet simple ('), parenthèses ((« » et «) »), astérisque (*), signe plus (+), virgule, tiret (-), le point décimal (.), transférer la barre oblique (/), deux-points ( :), point-virgule ( ;), moins-signe (\<), signe égal (=), supérieur-que le signe > (supérieur à) et de point d’interrogation ( ?).|  
+|syntaxe UNOA EDIFACT|Seuls des caractères de syntaxe EDIFACT qui autorise les éléments suivants : lettres majuscules, chiffres, vide, le point d’exclamation ( !), guillemet («), signe pourcentage (%), esperluette (&), d’ouverture et de parenthèses fermantes (« ( » et «) »), astérisque (*), virgule, tiret (-), transférer les virgule décimale (.), barre oblique (/), point-virgule ( ;), moins-signe (\<) et supérieur-signe (\>).|  
+|syntaxe UNOB EDIFACT|Seuls des caractères de syntaxe EDIFACT qui autorise les éléments suivants : lettres majuscules et minuscules, des chiffres tous les vide, le point d’exclamation ( !), guillemet («), signe de pourcentage (%), esperluette (&), guillemet simple ('), parenthèses ((« » et «) »), astérisque (*), signe plus (+), virgule, tiret (-), le point décimal (.), transférer la barre oblique (/), deux-points ( :), point-virgule ( ;), moins-signe (\<), signe égal (=), supérieur-signe (\>) et le point d’interrogation ( ?).|  
 |EIF|Voir Fichier d'entrée du moteur (EIF, Engine Input File).|  
 |EIP|Voir Plateforme d'intégration d'entreprise (EIP, Enterprise Integration Platform).|  
 |échange de données informatisé (EDI, Electronic Data Interchange)|Échange électronique de documents structurés et normalisés entre deux applications logicielles à l'aide d'un ensemble de normes permettant de surveiller le transfert de documents, tels que des bons de commande ou des factures, entre les ordinateurs.|  

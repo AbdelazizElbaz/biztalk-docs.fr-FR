@@ -13,11 +13,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5d49f0343c324900bf10c2efcce46cd57682ed04
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6dd482c2f7a226a15fe730d2b75b470a54ff27e9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="manage-policies"></a>Gérer les stratégies
 
@@ -27,7 +27,7 @@ Les rubriques de cette section fournissent des instructions sur l'utilisation de
 ## <a name="import-publish-deploy-and-remove-policies"></a>Importer, publier, déployer et supprimer des stratégies
  Les développeurs de solutions peuvent créer et afficher des stratégies à l’aide de l’éditeur des règles d’entreprise, comme décrit dans [création des règles d’entreprise à l’aide de l’éditeur des règles d’entreprise](../core/creating-business-rules-using-the-business-rule-composer.md). Les développeurs et administrateurs informatiques peuvent ensuite effectuer les tâches suivantes, décrites dans les rubriques de cette section, pour déployer et gérer des stratégies dans une application et un groupe BizTalk :  
   
--   **Importer la stratégie dans un groupe BizTalk.** Dans ce cas, la stratégie est ajoutée à la base de données du moteur de règles pour le groupe et affiche dans la console Administration de BizTalk Server dans le \<tous les artefacts > nœud pour le groupe BizTalk. Cela n'applique pas la stratégie à une application particulière. Vous devez d’abord publier la stratégie, l’ajouter à une application, puis la déployer, conformément à la description figurant dans les autres rubriques de cette section. La base de données du moteur de règles est une base de données qui contient toutes les stratégies d'un groupe BizTalk ?  
+-   **Importer la stratégie dans un groupe BizTalk.** Dans ce cas, la stratégie est ajoutée à la base de données du moteur de règles pour le groupe et affiche dans la console Administration de BizTalk Server dans le \<tous les artefacts\> nœud pour le groupe BizTalk. Cela n'applique pas la stratégie à une application particulière. Vous devez d’abord publier la stratégie, l’ajouter à une application, puis la déployer, conformément à la description figurant dans les autres rubriques de cette section. La base de données du moteur de règles est une base de données qui contient toutes les stratégies d'un groupe BizTalk ?  
   
 -   **Publier une stratégie.** C’est ce qui permet à une stratégie d’être utilisé dans une application BizTalk.  
   
@@ -54,12 +54,12 @@ Les rubriques de cette section fournissent des instructions sur l'utilisation de
   
 -   [Publier une stratégie](../core/how-to-publish-a-policy.md)  
   
--   [Ajouter une stratégie à une Application](../core/how-to-add-a-policy-to-an-application.md)  
+-   [Ajouter une stratégie à une application](../core/how-to-add-a-policy-to-an-application.md)  
   
--   [Déployer ou annuler le déploiement d’une stratégie](../core/how-to-deploy-or-undeploy-a-policy.md)  
+-   [Déployer une stratégie ou annuler son déploiement](../core/how-to-deploy-or-undeploy-a-policy.md)  
   
 -   [Configurer le suivi d’une stratégie](../core/how-to-configure-tracking-for-a-policy.md)  
   
--   [Supprimer une stratégie d’une Application et le groupe BizTalk](../core/how-to-remove-a-policy-from-an-application-and-the-biztalk-group.md)  
+-   [Supprimer une stratégie d’une application et du groupe BizTalk](../core/how-to-remove-a-policy-from-an-application-and-the-biztalk-group.md)  
   
 -   [Exporter une stratégie](../core/how-to-export-a-policy.md)

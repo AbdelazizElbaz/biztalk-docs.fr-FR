@@ -15,11 +15,11 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 33c8921e037b9f9628c0e0ee97a915f62ab634ec
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 70cba6055c51371ddaaf99775bd5e7a60e7f3929
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="medical-claims-processing-and-testing-policies-biztalk-server-sample"></a>Soins médicaux revendications le traitement et le tests de stratégies (exemple BizTalk Server)
 L'exemple Stratégies de test et de traitement des demandes de remboursement de soins médicaux illustre la création d'un ensemble de règles qui examinent des faits dérivés d'une table de base de données et du document entrant et qui utilisent les objets .NET pour enregistrer les résultats du traitement des demandes de remboursement.  
@@ -45,7 +45,7 @@ L'exemple Stratégies de test et de traitement des demandes de remboursement de 
 6.  Dans le cas contraire, approuve la demande de remboursement.  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
- \<*Exemples de chemin d’accès*> \Business Rules\Medical les revendications de traitement et de test Policies\  
+ \<*Exemples de chemin d’accès*\>\Business Rules\Medical les revendications de traitement et de test Policies\  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -67,11 +67,11 @@ L'exemple Stratégies de test et de traitement des demandes de remboursement de 
 1.  Vérifiez que vous disposez de la base de données Northwind sur votre ordinateur.  
   
     > [!IMPORTANT]
-    >  Pour exécuter cet exemple, vous devez disposer d'une base de données nommée Northwind. [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)]et [!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)] ne sont pas fournis avec la base de données Northwind. Pour créer la base de données Northwind, téléchargez le fichier d’installation [http://go.microsoft.com/fwlink/?LinkId=196020](http://go.microsoft.com/fwlink/?LinkId=196020), suivez les instructions.  
+    >  Pour exécuter cet exemple, vous devez disposer de la base de données Northwind SQL Server. [Télécharger](https://www.microsoft.com/download/details.aspx?id=23654)et l’installer. 
   
 2.  Dans une fenêtre de commande, accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \Business Rules\Medical les revendications de traitement et de test Policies\  
+     \<*Exemples de chemin d’accès*\>\Business Rules\Medical les revendications de traitement et de test Policies\  
   
 3.  Exécutez le fichier Setup.bat, qui effectue les actions suivantes :  
   
@@ -100,7 +100,7 @@ L'exemple Stratégies de test et de traitement des demandes de remboursement de 
   
 1.  Dans une fenêtre de commande, accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \Business Rules\Medical les revendications de traitement et de test Policies\RulesForMedicalClaims\bin\Debug\  
+     \<*Exemples de chemin d’accès*\>\Business Rules\Medical les revendications de traitement et de test Policies\RulesForMedicalClaims\bin\Debug\  
   
 2.  Exécutez le fichier RulesForMedicalClaims.exe sur la ligne de commande.  
   

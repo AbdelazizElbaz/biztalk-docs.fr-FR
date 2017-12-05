@@ -16,11 +16,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ea316e8f2c78ff718d6821b3f5d063bd86621dd1
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: beeeef2a18c32ed0779e5631ac316240e709702e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="running-sso-projects"></a>Exécution de projets SSO
 Vous pouvez exécuter l'exemple sous Internet Explorer.  
@@ -39,7 +39,7 @@ Vous pouvez exécuter l'exemple sous Internet Explorer.
   
      Exemple :  
   
-     http://localhost/SSODemo/BTSHTTPReceive.dll?\<ns0:method_list_method%20xmlns:ns0=«http://microsoft.com/exposed/object/object1»>\<ns0:method_list_method>\<ns1:method_list%20xmlns:ns1=«http://microsoft.com/exposed/object»>\<ns1:comp_code>\</ns1:comp_code>\<ns1:comp_name>\</ns1:comp_name>\</ns1:object_1>\</ns0:method_list>\</ns0:method_list_method>  
+     http://localhost/SSODemo/BTSHTTPReceive.dll?<ns0:method_list_method % 20xmlns : ns0 = « http://microsoft.com/exposed/object/object1 » >< ns0:method_list_method >< ns1:method_list % 20xmlns : ns1 = http://microsoft.com/exposed/ » objet » >< ns1:comp_code >< / ns1:comp_code >< ns1:comp_name >< / ns1:comp_name >< / ns1:object_1 >< / ns0:method_list >< / ns0:method_list_method >  
   
      Dans ce cas, il n'est pas nécessaire de fournir des informations d'identification.  
   

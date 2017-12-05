@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b68a924fba60d4f0162e80dde0ab06b515765558
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 63a719299ef6678b9fd38a936d84ba9b1f57a85b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="database-functoids"></a>Fonctoids de base de données
 **Base de données** fonctoids extraient des données à partir d’une base de données pour une utilisation dans un message d’instance de sortie. 
@@ -75,7 +75,7 @@ Voici une liste de la **base de données** fonctoids et comment vous pouvez les 
   
  Dans cette figure, le schéma source représente un bon de commande entrant, le schéma de destination un avis d'expédition avancée. Le **recherche de base de données** fonctoid Recherche l’enregistrement approprié dans la table de base de données appropriée. Le **extracteur de valeur** fonctoids extraient la colonne appropriée à partir de l’enregistrement de recherche. Le **retour d’erreur** fonctoid génère une chaîne contenant des informations sur l’erreur s’il existe des erreurs (telles que les échecs de connexion) en cours d’exécution.  
   
- Dans l’exemple précédent, le premier paramètre d’entrée est issu de la **StoreID** champ d’entrant bons de commande et les autres trois paramètres d’entrée sont des constantes configurées dans le **configurer \< Fonctoid > fonctoid** boîte de dialogue pour le **recherche de base de données** fonctoid. Il est possible de créer des liens à partir du schéma source afin de fournir des valeurs pour les quatre paramètres d'entrée.  
+ Dans l’exemple précédent, le premier paramètre d’entrée est issu de la **StoreID** champ d’entrant bons de commande et les autres trois paramètres d’entrée sont des constantes configurées dans le **configurer \< Fonctoid\> fonctoid** boîte de dialogue pour le **recherche de base de données** fonctoid. Il est possible de créer des liens à partir du schéma source afin de fournir des valeurs pour les quatre paramètres d'entrée.  
   
 > [!NOTE]
 >  * Vous ne pouvez pas utiliser certains types de données Microsoft SQL Server, tels que **texte**, **ntext**, et **image**, en tant que valeurs de recherche pour le **recherche de base de données** fonctoid. Le fonctoid requiert des types de données pouvant être représentés par une chaîne de texte.  

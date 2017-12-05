@@ -12,11 +12,11 @@ caps.latest.revision: "35"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 090c53b91ad30f522bc5522fbeb457d7de868456
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d718450dfd4db1fd6d695c1a3ecc21f9f1fd8deb
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="known-issues-with-the-wcf-lob-adapter-sdk"></a>Problèmes connus avec WCF LOB Adapter SDK
 Cette rubrique décrit les problèmes connus associés à le [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]. Il propose également des solutions pour certains de ces problèmes.  
@@ -80,7 +80,7 @@ echoAdapterProxy.Open();
  **Résolution**: sélectionner des opérations individuelles, au lieu de sélectionner l’ensemble de la catégorie.  
   
 ### <a name="error-with-add-adapter-service-reference-visual-studio-plug-in"></a>Erreur avec ajouter l’adaptateur Service Reference Visual Studio plug-in  
- **Problème**: projet dans un BizTalk dans Visual Studio, si un proxy a déjà été généré à l’aide de la [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)], génération d’un autre proxy à partir de la même carte génère cette erreur : « l’espace de noms '\<espace de noms global >' contient déjà une définition pour '{nom de contrat}' lorsque la compilation du projet. »  
+ **Problème**: projet dans un BizTalk dans Visual Studio, si un proxy a déjà été généré à l’aide de la [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)], génération d’un autre proxy à partir de la même carte génère cette erreur : « l’espace de noms '\<espace de noms global\>' contient déjà une définition pour '{nom de contrat}' lorsque la compilation du projet. »  
   
  Cette version n’autorise pas la modification du proxy.  
   
@@ -92,7 +92,7 @@ echoAdapterProxy.Open();
  **Résolution**: supprimer les fichiers de schéma XML superflus dans le projet BizTalk, utilisez la référence Consume Adapter Service pour rechercher ou parcourir les métadonnées requises et régénérer les nouveaux fichiers de schéma XML.  
   
 ### <a name="error-with-rootnode-typename-in-biztalk-projects"></a>Erreur avec RootNode TypeName dans les projets BizTalk  
- **Problème**: projet dans un BizTalk dans Visual Studio, si les schémas générés à partir de la [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] contiennent des caractères non valides ou des mots réservés pour le **RootNode TypeName** propriété, l’erreur suivante se produit à moment de la compilation : « nœud \<référence de nœud >-spécifiez un nom de type .NET valide pour ce nœud racine.  Le nom de type .NET actuel de ce nœud racine n’est pas valide (elle est un mot clé BizTalk réservé ou un identificateur c# non valide).  
+ **Problème**: projet dans un BizTalk dans Visual Studio, si les schémas générés à partir de la [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] contiennent des caractères non valides ou des mots réservés pour le **RootNode TypeName** propriété, l’erreur suivante se produit à moment de la compilation : « nœud \<référence de nœud\> -spécifiez un nom de type .NET valide pour ce nœud racine.  Le nom de type .NET actuel de ce nœud racine n’est pas valide (elle est un mot clé BizTalk réservé ou un identificateur c# non valide).  
   
  **Résolution**: sélectionnez le nœud racine référencé dans l’erreur et, dans Propriétés, supprimez tous les caractères non autorisés ou mots réservés à partir de la **RootNode TypeName** propriété.  
   

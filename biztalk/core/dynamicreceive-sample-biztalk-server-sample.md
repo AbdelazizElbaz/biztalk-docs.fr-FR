@@ -12,11 +12,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e87fe8076e236fd775dcd2cb697aecaf2d6b1790
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9e0dc620d2d12933d34df0dce9eb02b697871bdc
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="dynamicreceive-sample-biztalk-server-sample"></a>Exemple DynamicReceive (exemple BizTalk Server)
 L'exemple DynamicReceive illustre la réception de messages [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] d'une file d'attente MQSeries lorsque l'URI de la file d'attente MQSeries est spécifié de façon dynamique.  
@@ -46,7 +46,7 @@ L'exemple DynamicReceive illustre la réception de messages [!INCLUDE[btsBizTalk
  L'utilisation de la fonctionnalité de réponse dynamique offre davantage de souplesse car aucun emplacement de réception fixe n'est requis. Il peut arriver que vous ne connaissiez l'URI qu'au moment de l'exécution. La fonctionnalité de réception dynamique permet de déterminer de façon dynamique l'emplacement à partir duquel récupérer des messages. Cela signifie également qu'il n'est pas nécessaire d'implémenter un accord de mise en file d'attente au sein de l'orchestration.  Vous pouvez attendre de recevoir les messages à l'aide d'un URI spécifié de façon dynamique depuis la file d'attente MQSeries sur la base des critères de correspondance définis.  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
- \<*Exemples de chemin d’accès*> \Samples\AdaptersUsage\MQSeriesAdapter\DynamicReceive  
+ \<*Exemples de chemin d’accès*\>\Samples\AdaptersUsage\MQSeriesAdapter\DynamicReceive  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -84,7 +84,7 @@ L'exemple DynamicReceive illustre la réception de messages [!INCLUDE[btsBizTalk
   
 7.  Vous pouvez créer et déployer le projet de l'une des manières suivantes :  
   
-    -   Ouvrez la solution, cliquez avec le bouton droit sur le projet dans l’Explorateur de solutions et cliquez sur **propriétés** pour afficher les propriétés du projet. Sur l’onglet signature, cliquez sur  **\<nouveau... >** dans les **choisir un fichier de clé de nom fort** zone déroulante. Renseignez le nom du fichier de clé, puis déployez le projet.  
+    -   Ouvrez la solution, cliquez avec le bouton droit sur le projet dans l’Explorateur de solutions et cliquez sur **propriétés** pour afficher les propriétés du projet. Sous l’onglet signature, cliquez sur  **\<nouveau... \>**  dans les **choisir un fichier de clé de nom fort** zone déroulante. Renseignez le nom du fichier de clé, puis déployez le projet.  
   
     -   Vous pouvez également exécuter le fichier setup.bat pour créer le fichier de clé, puis créer et déployer le projet.  
   

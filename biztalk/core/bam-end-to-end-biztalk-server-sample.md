@@ -13,11 +13,11 @@ caps.latest.revision: "35"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 21cf3bcfae53d3204a1b4de23c1476591be2b453
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 117541cdeded0ff6204797f12e6d8cca1afce38b
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="bam-end-to-end-biztalk-server-sample"></a>Analyse BAM de bout en bout (exemple BizTalk Server)
 L'exemple de bout en bout décrit la corrélation des événements issus de plusieurs composants (dans ce cas, trois orchestrations et un pipeline) à l'aide de l'analyse BAM.  
@@ -44,7 +44,7 @@ L'exemple de bout en bout décrit la corrélation des événements issus de plus
 
 L'exemple fonctionne comme suit :  
   
-1.  Un message d’entrée est récupéré à partir de la  *\<exemples de chemin >*dossier \BamEndToEnd\Input.  
+1.  Un message d’entrée est récupéré à partir de la  *\<exemples de chemin\>*dossier \BamEndToEnd\Input.  
   
 2.  Le composant de pipeline affecte un DocumentID unique au message, et utilise l'API BAM pour commencer une nouvelle activité BAM. Le DocumentID est joint en tant qu'élément distinct du message d'entrée afin qu'il devienne accessible aux orchestrations.  
   
@@ -54,12 +54,12 @@ L'exemple fonctionne comme suit :
   
 5.  Orchestration2 modifie le message d'entrée et l'envoie vers la base de données MessageBox, qui active Orchestration3.  
   
-6.  Orchestration3 modifie le message et l’écrit dans le dossier  *\<exemples de chemin >*\BamEndToEnd\Output.  
+6.  Orchestration3 modifie le message et l’écrit dans le dossier  *\<exemples de chemin\>*\BamEndToEnd\Output.  
   
 7.  Chaque orchestration met à jour les éléments d'activité dans l'activité BAM.  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
- Vous pouvez trouver cet exemple à  *\<exemples de chemin >*\BAM\BamEndToEnd.  
+ Vous pouvez trouver cet exemple à  *\<exemples de chemin\>*\BAM\BamEndToEnd.  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -101,11 +101,11 @@ Services\Schema3.xsd|Schéma du message.|
   
 ##  <a name="To_Build_Sample"></a>Créer et initialiser l’exemple  
   
-1.  Ouvrez une invite de commandes en tant qu’administrateur et exécutez  *\<exemples de chemin >*\BAM\BAMEndToEnd\Setup.bat. Setup.bat crée et initialise l'infrastructure BAM pour cet exemple. Maintenez l'invite de commandes ouverte.  
+1.  Ouvrez une invite de commandes en tant qu’administrateur et exécutez  *\<exemples de chemin\>*\BAM\BAMEndToEnd\Setup.bat. Setup.bat crée et initialise l'infrastructure BAM pour cet exemple. Maintenez l'invite de commandes ouverte.  
   
 2.  Créez un modèle de suivi pour mapper Orchestration1, Orchestration2 et Orchestration3 vers l'activité BAM. (Étant donné que la création du profil de suivi est un processus complexe, les instructions détaillées sont dans une procédure séparée appelée **pour créer un modèle de suivi**. Cette procédure est traitée ultérieurement dans ce document.)  
   
-3.  Déployez le modèle de suivi BamEndToEnd.btt que vous venez de créer au cours de l'étape précédente.  Dans l’invite de commandes, remplacez par le  *\<exemples de chemin >*répertoire \BAM\BamEndToEnd. Pour déployer le modèle de suivi, tapez la ligne suivante, puis appuyez sur **entrée**:  
+3.  Déployez le modèle de suivi BamEndToEnd.btt que vous venez de créer au cours de l'étape précédente.  Dans l’invite de commandes, remplacez par le  *\<exemples de chemin\>*répertoire \BAM\BamEndToEnd. Pour déployer le modèle de suivi, tapez la ligne suivante, puis appuyez sur **entrée**:  
   
     `“<BizTalkInstallationPath>\Tracking\bttdeploy” BamEndToEnd.btt`
   
@@ -116,7 +116,7 @@ Services\Schema3.xsd|Schéma du message.|
   
 ##  <a name="To_Run_Sample"></a>Exécuter cet exemple  
   
-Copiez le fichier  *\<exemples de chemin >*\BamEndToEnd\InputMessage.xml dans le dossier  *\<exemples de chemin >*\BamEndToEnd\Input. Après quelques secondes, le message disparaît du dossier d’entrée et un message de sortie s’affiche dans le  *\<exemples de chemin >*dossier \BamEndToEnd\Output.  
+Copiez le fichier  *\<exemples de chemin\>*\BamEndToEnd\InputMessage.xml dans le dossier  *\<exemples de chemin\>*\BamEndToEnd\Input. Après quelques secondes, le message disparaît du dossier d’entrée et un message de sortie s’affiche dans le  *\<exemples de chemin\>*dossier \BamEndToEnd\Output.  
   
 ##  <a name="To_View_Data"></a>Afficher les données BAM  
   
@@ -124,20 +124,20 @@ Copiez le fichier  *\<exemples de chemin >*\BamEndToEnd\InputMessage.xml dans le
   
 2.  Dans SQL Server Management Studio, développez le serveur, **bases de données**, développez **BAMPrimaryImport**, puis développez **Tables**.  
   
-3.  Avec le bouton droit **dbo.bam_EndToEndActivity_Completed**, puis cliquez sur **ouvrir la Table**. Si vous utilisez [!INCLUDE[btsSQLServer2008](../includes/btssqlserver2008-md.md)], cliquez sur **sélectionner les 1000 lignes**.  
+3.  Avec le bouton droit **dbo.bam_EndToEndActivity_Completed**, puis cliquez sur **ouvrir la Table**. Si vous utilisez SQL Server, cliquez sur **sélectionner les 1000 lignes**.  
   
      Le contenu de la table bam_EndToEndActivity_Completed s'affiche dans le volet droit. Chaque ligne de la table représente une activité EndToEndActivity terminée.  
   
 #### <a name="rerun-this-sample"></a>Exécutez à nouveau cet exemple  
   
-1.  Ouvrez une invite de commandes en tant qu’administrateur et remplacez le  *\<exemples de chemin >*répertoire \BAM\BamEndToEnd. Tapez la ligne suivante :  
+1.  Ouvrez une invite de commandes en tant qu’administrateur et remplacez le  *\<exemples de chemin\>*répertoire \BAM\BamEndToEnd. Tapez la ligne suivante :  
   
     `“C:\Program Files\Microsoft BizTalk Server <version>\Tracking\bttdeploy” BamEndToEnd.btt /remove`  
   
     > [!NOTE]
     >  Si vous n’avez pas installé [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] sur le lecteur C, remplacez « C » par la lettre de lecteur où vous avez installé [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
-2.  Exécutez  *\<exemples de chemin d’accès >*\BAM\BAMEndToEnd\Cleanup.bat. Cleanup.bat supprime l'infrastructure BAM pour cet exemple.  
+2.  Exécutez  *\<exemples de chemin d’accès\>*\BAM\BAMEndToEnd\Cleanup.bat. Cleanup.bat supprime l'infrastructure BAM pour cet exemple.  
   
 3.  Effectuez les étapes dans **pour créer et initialiser l’exemple** dans cette rubrique.  
   
@@ -163,7 +163,7 @@ Copiez le fichier  *\<exemples de chemin >*\BamEndToEnd\InputMessage.xml dans le
   
 10. Faites défiler jusqu'à la fin de la **nom de propriété de contexte** liste, puis double-cliquez sur **BAMEndToEnd.Services.PropertySchema.DocumentID**.  
   
-11. Développez  **\<schéma >**, puis faites glisser **DocumentID** dans le volet droit pour **Orch1_** dans le volet gauche.  
+11. Développez  **\<schéma\>**, puis faites glisser **DocumentID** dans le volet droit pour **Orch1_** dans le volet gauche.  
   
 12. Cliquez sur l’icône de dossier avec la flèche (![bouton avec dossier et flèche haut](../core/media/abccd08b-2b01-49c6-80ed-a032bbbd10d4.gif "abccd08b-2b01-49c6-80ed-a032bbbd10d4")) à deux reprises pour afficher l’orchestration.  
   
@@ -183,7 +183,7 @@ Copiez le fichier  *\<exemples de chemin >*\BamEndToEnd\InputMessage.xml dans le
   
 19. Faites défiler jusqu'à la fin de la **nom de propriété de contexte** liste, puis double-cliquez sur **BAMEndToEnd.Services.PropertySchema.DocumentID**.  
   
-20. Développez  **\<schéma >**, puis faites glisser **DocumentID** à la **Orch2_** continuation dans le volet gauche.  
+20. Développez  **\<schéma\>**, puis faites glisser **DocumentID** à la **Orch2_** continuation dans le volet gauche.  
   
     > [!NOTE]
     >  Ne confondez pas la continuation Orch2_ et le continuationID Orch2_. L’icône représentant un Continuationid contient une clé (![icône d’un Continuationid](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea")), alors que l’icône représentant une continuation ne contient-elle pas de clé () ![icône pour une continuation](../core/media/test.gif "test")).  
@@ -256,10 +256,10 @@ Copiez le fichier  *\<exemples de chemin >*\BamEndToEnd\InputMessage.xml dans le
   
 48. Dans le **sélectionner des Ports** section de la **sélectionner des Ports** boîte de dialogue, cliquez sur **BamEndToEnd_ReceivePort**, cliquez sur la plus grande-signe ( **>** ), puis cliquez sur **OK**.  
   
-49. Enregistrer le modèle de suivi à  *\<exemples de chemin >*\BAM\BamEndToEnd\BamEndToEnd.btt.  
+49. Enregistrer le modèle de suivi à  *\<exemples de chemin\>*\BAM\BamEndToEnd\BamEndToEnd.btt.  
   
 ## <a name="important-details"></a>Obtenir des informations importantes  
  Les modèles de suivi ne sont pas pris en charge pour les pipelines. Toutefois, l’appel à **BeginActivity** dans le pipeline de composant est identique à l’aide d’ActivityID dans une orchestration. L’appel à **EnableContinuation** est identique à l’aide d’une continuation dans une orchestration.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Business Activity Monitoring (dossier d’exemples BizTalk Server)](../core/business-activity-monitoring-biztalk-server-samples-folder.md)
+ [Analyse BAM (dossier d’exemples BizTalk Server)](../core/business-activity-monitoring-biztalk-server-samples-folder.md)

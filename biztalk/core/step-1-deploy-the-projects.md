@@ -12,11 +12,11 @@ caps.latest.revision: "44"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 65576724a92cc60d2f4d59b2a868cd4861b5eff5
-ms.sourcegitcommit: 30189176c44873e3de42cc5f2b8951da51ffd251
+ms.openlocfilehash: ad4424327f6cd24624abe6b4a850f3c24153e6a4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-deploy-the-projects"></a>Étape 1 : déployer les projets
 ![Étape 1 sur 3](../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")  
@@ -60,7 +60,7 @@ ms.lasthandoff: 11/07/2017
   
 2.  Cliquez sur le **signature** onglet, sélectionnez **signer l’assembly**.  
   
-3.  Dans la liste déroulante de la **choisir un fichier de clé de nom fort** boîte, sélectionnez  **\<Parcourir... >**.  
+3.  Dans la liste déroulante de la **choisir un fichier de clé de nom fort** boîte, sélectionnez  **\<Parcourir... \>**.  
   
 4.  Dans le **sélectionner le fichier** boîte de dialogue, accédez à **C:\BTStutorials**, cliquez sur **btsTutorials.snk**, puis cliquez sur **ouvrir**. 
   

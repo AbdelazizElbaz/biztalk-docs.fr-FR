@@ -15,17 +15,17 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: beb792fe66e5806a186b0ffb946aa99f86a6a10c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 14245a185adcccdfb1f2ea2ed9382820fb84177e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="swift-schema-naming-conventions"></a>Conventions d’affectation de noms de schéma SWIFT
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] inclut des schémas pour la société pour les messages FIN de télécommunication financières Interbank (SWIFT) dans le monde entier ont été créés à l’aide de l’Éditeur BizTalk. Ces schémas sont conformes aux conventions suivantes dans l’ensemble de :  
   
 > [!NOTE]
->  Tous les schémas sont gérées. Pour afficher la version, ouvrez [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], cliquez sur le schéma dans l’Explorateur de solutions. Avec la \<schéma > nœud sélectionné dans l’Éditeur BizTalk, dans le volet Propriétés défiler la propriété Version Standard.  
+>  Tous les schémas sont gérées. Pour afficher la version, ouvrez [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], cliquez sur le schéma dans l’Explorateur de solutions. Avec la \<schéma\> nœud sélectionné dans l’Éditeur BizTalk, dans le volet Propriétés défiler la propriété Version Standard.  
   
 -   Le nom de chaque fichier de schéma d’échange est  **MT*xxx*.xsd **, où *xxx* est le type de message FIN.  
   
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
 -   Les étiquettes de numérotées SWIFT champs inclure un titre descriptif, suivi de la séquence (le cas échéant), suivi par le code numérique et le format de lettre facultative (par exemple, **Reference_A_20C**).  
   
--   S’il existe un choix de plusieurs formats pour un champ, l’étiquette du nœud est  **\<* choix*> **, puis chaque option est un champ numéroté (par exemple, **Date_A_98A** et **DateTime_A_98C**).  
+-   S’il existe un choix de plusieurs formats pour un champ, l’étiquette du nœud est  **\<* choix*\>**, puis chaque option est un champ numéroté (par exemple,  **Date_A_98A** et **DateTime_A_98C**).  
   
 -   Le nom de la définition d’élément de niveau le plus bas d’un champ se compose du nom du champ secondaire suivi **Type** (par exemple, **accountType** compte).  
   
@@ -58,4 +58,4 @@ ms.lasthandoff: 09/20/2017
  Chaque schéma de message fait référence directement le type de base et des schémas de type de données courants.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilisation de schémas](../../adapters-and-accelerators/accelerator-swift/working-with-schemas.md)
+ [Utilisation des schémas](../../adapters-and-accelerators/accelerator-swift/working-with-schemas.md)

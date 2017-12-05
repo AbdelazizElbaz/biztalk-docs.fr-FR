@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ec68ad7e60033c0830eaf9977e1edf8ab45847d8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 89a3722d6d8e1d4b730341dfaf16d60af1686f21
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-9-test-the-solution"></a>Étape 9 : Tester la Solution
 Cette rubrique vous invite à tester l’application hybride via l’envoi d’un message de commande client X12 840 vers le point de terminaison HTTP où est déployé l’accord EDI. L’exemple de message de commande client ressemble à ce qui suit :  
@@ -74,7 +74,7 @@ IEA*1*000000025~
 4.  Utilisez **MessageSender** pour envoyer un autre message, mais cette fois la valeur de la quantité commandée dans le message à *99*. Vous remarquerez qu’à présent aucun enregistrement n’est inséré dans le **SalesOrder** table. Au lieu de cela, le message est copié vers l’emplacement de fichier spécifié pour la réception des messages par quantité commandée inférieure à 100. Le message reçu ressemble à ceci :  
   
     ```  
-    \<ns1:SalesOrder xmlns:ns0="http://schemas.microsoft.com/BizTalk/EDI/X12/2006" xmlns:ns1="http://ECommerceSalesOrder.Inbound">  
+    <ns1:SalesOrder xmlns:ns0="http://schemas.microsoft.com/BizTalk/EDI/X12/2006" xmlns:ns1="http://ECommerceSalesOrder.Inbound">  
       <CompanyCode>co</CompanyCode>  
       <PartID>1</PartID>  
       <Quantity>99</Quantity>  
@@ -94,7 +94,7 @@ IEA*1*000000025~
       </Contact>  
       <Comments>Order from Partnerco</Comments>  
       <DateNow>2012-06-19</DateNow>  
-    \</ns1:SalesOrder>  
+    </ns1:SalesOrder>  
   
     ```  
   

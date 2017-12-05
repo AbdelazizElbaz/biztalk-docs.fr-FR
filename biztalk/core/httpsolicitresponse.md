@@ -15,11 +15,11 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 59f5c2821af02fb87727a4096f4b6e586bfd5b4f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 500ec05df9a3a365a350571e8b3e66f5d584f92d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="httpsolicitresponse"></a>HTTPSolicitResponse
 L'exemple HTTPSolicitResponse montre comment créer une orchestration Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] qui se sert d'une application ASP.NET pour faciliter le traitement des données d'orchestration. Dans cet exemple, l'orchestration utilise un port de requête/réponse pour envoyer un message à l'application ASP.NET et pour récupérer la réponse. L'intégration entre l'orchestration BizTalk Server et l'application ASP.NET est effectuée à l'aide de l'adaptateur HTTP. Pour plus d’informations, consultez [adaptateur HTTP](../core/http-adapter.md).  
@@ -36,7 +36,7 @@ L'exemple HTTPSolicitResponse montre comment créer une orchestration Microsoft 
 4.  L'orchestration reçoit le résultat sous forme de XML dans une réponse XML et écrit ce résultat dans un fichier .xml dans un dossier spécifique.  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
- \<*Exemples de chemin d’accès*> \AdaptersUsage\HTTPSolicitResponse  
+ \<*Exemples de chemin d’accès*\>\AdaptersUsage\HTTPSolicitResponse  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -61,15 +61,15 @@ L'exemple HTTPSolicitResponse montre comment créer une orchestration Microsoft 
   
 1.  Dans une fenêtre de commande, accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \AdaptersUsage\HTTPSolicitResponse  
+     \<*Exemples de chemin d’accès*\>\AdaptersUsage\HTTPSolicitResponse  
   
 2.  Exécutez le fichier Setup.bat, qui effectue les actions suivantes :  
   
     -   Création des dossiers d'entrée et de sortie pour cet exemple :  
   
-         \<*Exemples de chemin d’accès*> \AdaptersUsage\HttpSolicitResponse\HttpSolicitResponseInput  
+         \<*Exemples de chemin d’accès*\>\AdaptersUsage\HttpSolicitResponse\HttpSolicitResponseInput  
   
-         \<*Exemples de chemin d’accès*> \AdaptersUsage\HttpSolicitResponse\HttpSolicitResponseOutput  
+         \<*Exemples de chemin d’accès*\>\AdaptersUsage\HttpSolicitResponse\HttpSolicitResponseOutput  
   
     -   Compilation et configuration l'application ASP.NET de multiplication utilisée par cet exemple.  
   
@@ -121,4 +121,4 @@ L'exemple HTTPSolicitResponse montre comment créer une orchestration Microsoft 
  Les fichiers MultiplyRequest.xsd et MultiplyResponse.xsd sont les schémas XML qui définissent le format des données d'entrée et de sortie de l'application ASP.NET de multiplication. L'orchestration utilise ces fichiers pour définir les types de message requête et réponse.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Exemples d’adaptateur HTTP](../core/http-adapter-samples.md)
+ [Exemples d’adaptateurs HTTP](../core/http-adapter-samples.md)

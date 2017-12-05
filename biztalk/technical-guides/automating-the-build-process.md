@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c0e09e298694a3affd979eacc35ec43a1f92fab5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d62380146f0bfba188843ed0e022340d88fcaceb
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="automating-the-build-process"></a>Automatiser le processus de génération
 Un processus de génération automatisé compile, déploie et exécute alors des tests de vérification de build (BVT) sur le dernier code source pour un projet à intervalles réguliers, prédéterminés. Puis un « rapport build » qui détaille la réussite ou l’échec du processus de génération, est transmis aux parties prenantes du projet. Le rapport de build est analysé pour déterminer les domaines du projet nécessitant une attention et si le projet doit être restauré à une version antérieure et.  
@@ -108,7 +108,7 @@ Un processus de génération automatisé compile, déploie et exécute alors des
  Il est important de réduire l’effort de développement pour écrire chaque test fonctionnel. Généralement plus coûteux est pour produire un élément (en termes de temps de développement), les cas de test moins vous êtes susceptible de vous retrouver avec. Cela signifie que vous ont un niveau inférieur de la couverture de test sur votre code. En utilisant une infrastructure de test, vous pouvez développer des cas de test plus rapides et plus faciles et, par conséquent, rendre plus facile d’obtenir la couverture du code complet. La plupart des infrastructures de test bon utiliser une approche déclarative à la définition des tests. (Autrement dit, la configuration d’un test est stockée dans un fichier de configuration, qui est généralement un fichier XML). À l’aide d’un bon test framework vous permet de développer un fonctionnelle complète suite de tests de manière fiable et agile et évite d’avoir à « réinventer la roue », pour ainsi dire.  
   
 ## <a name="msbuild-support-for-biztalk-server-projects"></a>Prise en charge MSBUILD pour les projets BizTalk Server  
- [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]Fournit la prise en charge pour la plateforme Microsoft Build Engine (MSBUILD), qui prend en charge la génération des projets managés dans des environnements lab de génération où Visual Studio n’est pas installé. MSBUILD gère la génération de projets à partir d’une ligne de commande et des fonctionnalités avancées, notamment la journalisation et le traitement par lots de MSBUILD. Pour plus d’informations sur MSBUILD, consultez [vue d’ensemble de MSBuild](http://go.microsoft.com/fwlink/?LinkId=131739) (http://go.microsoft.com/fwlink/?LinkId=131739).  
+ BizTalk Server prend en charge pour la plateforme Microsoft Build Engine (MSBUILD), qui prend en charge la génération des projets managés dans des environnements lab de génération où Visual Studio n’est pas installé. MSBUILD gère la génération de projets à partir d’une ligne de commande et des fonctionnalités avancées, notamment la journalisation et le traitement par lots de MSBUILD. Pour plus d’informations sur MSBUILD, consultez [vue d’ensemble de MSBuild](http://go.microsoft.com/fwlink/?LinkId=131739) (http://go.microsoft.com/fwlink/?LinkId=131739).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Implémentation d’un test automatisé](../technical-guides/implementing-automated-testing.md)
+ [Implémentation de tests automatisés](../technical-guides/implementing-automated-testing.md)

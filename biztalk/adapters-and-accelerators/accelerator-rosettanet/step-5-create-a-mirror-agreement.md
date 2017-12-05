@@ -16,11 +16,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e0ddb7c7dcad8bb278b318cdc599640b479baafa
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 00697f159e2363611248000616610cacd03b9f4f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-5-create-a-mirror-agreement"></a>Étape 5 : Créer un accord de mise en miroir
 Dans cette étape, vous utilisez l’utilitaire de bouclage pour créer un accord de mise en miroir en simulant le partenaire commercial sur le même ordinateur que celui sur lequel vous avez configuré l’organisation d’origine. L’utilitaire de bouclage est un outil de ligne de commande.  
@@ -29,7 +29,7 @@ Dans cette étape, vous utilisez l’utilitaire de bouclage pour créer un accor
   
 1.  Cliquez sur **Démarrer**, puis sur **Exécuter**, tapez **cmd**, puis cliquez sur **OK**.  
   
-2.  À l’invite de commandes, accédez au \< *lecteur*> : \Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\SDK. Tapez la commande suivante et appuyez sur **entrée**:  
+2.  À l’invite de commandes, accédez au \< *lecteur*\>: \Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK. Tapez la commande suivante et appuyez sur **entrée**:  
   
     ```  
     Loopback /enable HOME  
@@ -47,4 +47,4 @@ Dans cette étape, vous utilisez l’utilitaire de bouclage pour créer un accor
 >  L’accord commercial doit remettre en miroir chaque fois que vous mettez à jour l’accord commercial d’origine.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Étape 6 : Démarrer des Orchestrations](../../adapters-and-accelerators/accelerator-rosettanet/step-6-start-orchestrations.md)
+ [Étape 6 : Démarrer les orchestrations](../../adapters-and-accelerators/accelerator-rosettanet/step-6-start-orchestrations.md)

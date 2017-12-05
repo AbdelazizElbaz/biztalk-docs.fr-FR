@@ -15,11 +15,11 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 59aea2c772f1906ca779187f22a094e3f6cb4ceb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 017184e5f530096dc0ca166fdaaa9810a3372cfa
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="removing-usage-rule-validation"></a>Utilisation de la Validation de la règle de suppression
 Règles d’utilisation sont définies dans les normes SWIFT et appliquées par [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] les stratégies d’entreprise spécifiques à chaque type de message. Ces règles d’utilisation des instructions que vous pouvez utiliser pour fournir la validation supplémentaire pour un champ. Contrairement aux règles de validation de réseau, qui sont obligatoires, vous pouvez choisir ne pas pour les règles d’utilisation pour un type de message. Si tel est le cas, vous pouvez effectuer l’une des opérations suivantes :  
@@ -33,7 +33,7 @@ Règles d’utilisation sont définies dans les normes SWIFT et appliquées par 
   
 ### <a name="to-remove-a-rule-from-a-policy"></a>Pour supprimer une règle d’une stratégie  
   
-1.  Dans un éditeur de texte, tel que le bloc-notes, ouvrez la stratégie de validation que vous souhaitez modifier, par exemple, MT103_Validation_Policy dans  *\<lecteur >*: \Program Files\ Microsoft BizTalk Accelerator pour SWIFT \< version > Message Pack\SWIFT Messages\A4SWIFT-SRG\<version > \Category 1\MT103.  
+1.  Dans un éditeur de texte, tel que le bloc-notes, ouvrez la stratégie de validation que vous souhaitez modifier, par exemple, MT103_Validation_Policy dans  *\<lecteur\>*: \Program Files\ Microsoft BizTalk Accelerator pour SWIFT \<version\> Message Pack\SWIFT Messages\A4SWIFT-SRG\<version\>\Category 1\MT103.  
   
 2.  Supprimez le nœud de règle que vous ne pas souhaitez, puis enregistrez la stratégie.  
   

@@ -17,11 +17,11 @@ caps.latest.revision: "47"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3c9fc06d9c735a59fe59499bf9ed0ac62aab0408
-ms.sourcegitcommit: 5355a25d120d094778fb8f68ea14cab55c68d292
+ms.openlocfilehash: 9740bb1c73dd5f416dda3c2f29bb15fbc7241a51
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-cluster-the-master-secret-server"></a>Mise en Cluster du serveur de secret principal
 Il est recommandé de suivre les instructions dans cette section pour mettre en cluster le service d'authentification unique de l'entreprise sur le serveur de secret principal.  
@@ -67,7 +67,7 @@ Il est recommandé de suivre les instructions dans cette section pour mettre en 
   
     6.  Entrez le groupe Administrateurs d'applications associées à authentification unique du domaine créé précédemment comme groupe associé au rôle Administrateur(s) d'applications associées à authentification unique.  
   
-8.  Sélectionnez le **sauvegarde du Secret Enterprise SSO** option dans le volet gauche et fournissez les paramètres appropriés pour sauvegarder le secret de l’authentification unique de l’entreprise. Par défaut, le secret de l’authentification unique de l’entreprise est sauvegardé sur  *\<lecteur >*: \Program Files\Enterprise Single Sign-On\\*SSOxxxx*.bak.  
+8.  Sélectionnez le **sauvegarde du Secret Enterprise SSO** option dans le volet gauche et fournissez les paramètres appropriés pour sauvegarder le secret de l’authentification unique de l’entreprise. Par défaut, le secret de l’authentification unique de l’entreprise est sauvegardé sur  *\<lecteur\>*: \Program Files\Enterprise Single Sign-On\\*SSOxxxx*.bak.  
   
 9. Cliquez sur le **appliquer la Configuration** et passez en revue le résumé.  
   
@@ -133,7 +133,7 @@ Il est recommandé de suivre les instructions dans cette section pour mettre en 
   
     2.  Enregistrez le fichier au format .xml. Par exemple, enregistrez le fichier sous SSOCLUSTER.xml.  
   
-    3.  À l'invite de commandes, accédez au dossier d'installation des services d'authentification unique de l'entreprise. Par défaut, le dossier d’installation est  *\<lecteur >*: \Program Files\Enterprise Single Sign-On.  
+    3.  À l'invite de commandes, accédez au dossier d'installation des services d'authentification unique de l'entreprise. Par défaut, le dossier d’installation est  *\<lecteur\>*: \Program Files\Enterprise Single Sign-On.  
   
     4.  Tapez la commande suivante à l'invite de commandes pour mettre à jour le nom du serveur de secret principal dans la base de données :  
   
@@ -191,7 +191,7 @@ Il est recommandé de suivre les instructions dans cette section pour mettre en 
     > [!NOTE]
     >  Si cette étape n'est pas achevée, les tentatives de restauration du secret principal risquent d'échouer.  
   
-4.  Copiez le fichier de sauvegarde du secret principal du premier nœud dans le dossier d'installation \Enterprise Single Sign-On sur le second nœud. Par défaut, le dossier d’installation est  *\<lecteur >*: \Program Files\Enterprise Single Sign-On.  
+4.  Copiez le fichier de sauvegarde du secret principal du premier nœud dans le dossier d'installation \Enterprise Single Sign-On sur le second nœud. Par défaut, le dossier d’installation est  *\<lecteur\>*: \Program Files\Enterprise Single Sign-On.  
   
 5.  Ouvrez une session sur le second nœud, ouvrez une invite de commandes, puis accédez au dossier d'installation des services d'authentification unique de l'entreprise.  
   

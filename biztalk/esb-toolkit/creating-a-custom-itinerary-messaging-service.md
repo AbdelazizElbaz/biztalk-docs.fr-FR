@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bcf96e8f76a9d2a6ad51bac462c2da101812911d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5f08168e69e26d56cb39fb5c05cc53c3cbb51202
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-a-custom-itinerary-messaging-service"></a>Création d’un Service de messagerie d’itinéraire personnalisé
 L’infrastructure d’itinéraire qui fait partie de la [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] prend en charge l’exécution des étapes d’itinéraire à l’aide des classes implémentant le **IMessagingService** interface qui s’exécutent les services de messagerie d’itinéraire. Vous pouvez implémenter un service de messagerie personnalisé lorsque vous souhaitez que le service doit être chargé pour les éléments suivants :  
@@ -78,6 +78,6 @@ public IBaseMessage ExecuteRoute(IPipelineContext context, IBaseMessage msg, str
   
 1.  Créer un assembly avec une classe qui dérive de **IMessagingService ;** dans les **Execute** méthode, inclure toute la logique nécessaire pour apporter des modifications au message ou le contexte du message (le cas échéant).  
   
-2.  Ajouter une entrée dans le **itineraryServices** section du fichier Esb.config pour votre service en ajoutant une  **\<itineraryService >** élément avec un GUID en tant que le **id**d’attribut, le nom du service en tant que le **nom** d’attribut, le nom qualifié complet de la classe en tant que le **type** attribut, **messagerie** comme le **étendue** attribut et l’étape autorisée (par exemple, **OnRampReceive**, **OnRampSend**, **OffRampSend**, **OffRampReceive**, **AllSend**, **AllReceive**, ou **tous les**) en tant que le **étape** attribut.  
+2.  Ajouter une entrée dans le **itineraryServices** section du fichier Esb.config pour votre service en ajoutant une  **\<itineraryService\>**  élément avec un GUID en tant que le **id**  d’attribut, le nom du service en tant que le **nom** d’attribut, le nom qualifié complet de la classe en tant que le **type** attribut, **messagerie**en tant que le **étendue** attribut et l’étape autorisée (par exemple, **OnRampReceive**, **OnRampSend**, **OffRampSend**, **OffRampReceive**, **AllSend**, **AllReceive**, ou **tous les**) en tant que le **étape**attribut.  
   
 3.  Enregistrer le nouvel assembly dans le global assembly cache.

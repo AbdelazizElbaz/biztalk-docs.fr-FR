@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e9451ecb9cbeaf2077712f6e6b55a36dab7988c2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 55894eca1baa8ca6616c67f623a87e8015a2f32f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-viewing-and-deleting-fault-message-alerts"></a>Création, affichage et suppression d’alertes de Message d’erreur
 Le portail de gestion ESB peut générer des alertes lors de l’arrivent de messages d’erreur sur le portail, basée sur une comparaison de valeurs dans le message avec les critères spécifiés pour l’alerte. Le portail peut également conserver une liste des notifications d’alertes liées aux différents utilisateurs, et il informe ces utilisateurs lors de façon proactive, il déclenche des alertes.  
@@ -29,7 +29,7 @@ Le portail de gestion ESB peut générer des alertes lors de l’arrivent de mes
   
 3.  Dans le **entrer le nom alerte** zone de texte, tapez un nom pour la nouvelle alerte.  
   
-4.  Dans le **Conditions** section de la page Ajouter une alerte, sélectionnez un champ (tel que **Application**, **Type d’erreur**, ou **gravité d’erreur**) dans le **Critères** liste déroulante ; Sélectionnez un type de comparaison (tels que +, =, ! =, > =, \<=, ou **comme**) dans le **opérateur** type et liste déroulante ; ou sélectionnez une valeur dans la troisième liste ou zone de texte (nommées **valeur**). Lorsque vous sélectionnez un **critères** valeur, les modifications de la page pour afficher une zone de texte ou d’une liste déroulante pour la valeur correspondante. Toutes les conditions sont combinées à l’aide de la **AND** opérateur.  
+4.  Dans le **Conditions** section de la page Ajouter une alerte, sélectionnez un champ (tel que **Application**, **Type d’erreur**, ou **gravité d’erreur**) dans le **Critères** liste déroulante ; Sélectionnez un type de comparaison (tels que +, =, ! =, > =, < =, ou **comme**) dans le **opérateur** liste déroulante ; et tapez ou sélectionnez un valeur de la troisième liste ou zone de texte (nommées **valeur**). Lorsque vous sélectionnez un **critères** valeur, les modifications de la page pour afficher une zone de texte ou d’une liste déroulante pour la valeur correspondante. Toutes les conditions sont combinées à l’aide de la **AND** opérateur.  
   
 5.  Cliquez sur le **ajouter** ce lien pour ajouter cette condition à la liste, puis répétez l’étape précédente pour ajouter d’autres conditions si nécessaire.  
   

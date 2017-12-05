@@ -17,11 +17,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: efdcfe1ac8feee5b4ffa07d3a276ce86c352fe21
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 413f62a679c0510be34289900b92188554e622c8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="create-a-channel-using-oracle-database"></a>Créer un canal à l’aide de la base de données Oracle
 Dans le modèle de canal WCF, vous appeler des opérations sur la base de données Oracle et recevoir les résultats d’une requête d’interrogation en échangeant des messages SOAP avec le [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] sur un canal WCF.  
@@ -99,9 +99,9 @@ channel.Open();
  Le code suivant illustre les paramètres de configuration utilisés pour l’exemple précédent. Le contrat pour le point de terminaison client doit être « System.ServiceModel.Channels.IRequestChannel » ou « System.ServiceModel.Channels.IRequestChannel » en fonction du type de la forme de canal que vous souhaitez créer.  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <configuration xmlns="http://schemas.microsoft.com/.NetConfiguration/v2.0">  
-    \<system.serviceModel>  
+    <system.serviceModel>  
         <bindings>  
             <oracleDBBinding>  
                 <binding name="OracleDBBinding" closeTimeout="00:01:00" openTimeout="00:01:00"  
@@ -122,7 +122,7 @@ channel.Open();
                 bindingConfiguration="OracleDBBinding" contract="System.ServiceModel.Channels.IRequestChannel"  
                 name="MyRequestChannel" />  
         </client>  
-    \</system.serviceModel>  
+    </system.serviceModel>  
 </configuration>  
 ```  
   
@@ -137,7 +137,7 @@ channel.Open();
   
 3.  Créer une collection de paramètres de liaison à l’aide du **BindingParameterCollection** puis définissez les informations d’identification.  
   
-4.  Créer un écouteur de canal en appelant **BuildChannelListener\<IInputChannel >** méthode sur le **OracleDBBinding**. Vous spécifiez l’URI de connexion Oracle en tant qu’un des paramètres à cette méthode. Pour plus d’informations sur l’URI de connexion Oracle, consultez [créer l’URI de connexion de base de données Oracle](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md).  
+4.  Créer un écouteur de canal en appelant **BuildChannelListener\<IInputChannel\>**  méthode sur le **OracleDBBinding**. Vous spécifiez l’URI de connexion Oracle en tant qu’un des paramètres à cette méthode. Pour plus d’informations sur l’URI de connexion Oracle, consultez [créer l’URI de connexion de base de données Oracle](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md).  
   
 5.  Ouvrez le port d’écoute.  
   

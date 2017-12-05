@@ -21,11 +21,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8e6e26d51914211c5c51dfa232be4383d54f5e3c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dbb08d32ad85be68922a2ddf0b6fe4ac0d8c915e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="windows-sharepoint-services-adapter-configuration-properties"></a>Propriétés de configuration de l'adaptateur Windows SharePoint Services
 Le tableau suivant répertorie les propriétés de configuration que vous pouvez définir pour l'emplacement de réception de l'adaptateur Windows Sharepoint Services :  
@@ -83,4 +83,4 @@ Le tableau suivant répertorie les propriétés de configuration que vous pouvez
 ```  
   
 > [!NOTE]
->  Lorsque vous spécifiez les données de configuration TransportTypeData pour un adaptateur qui est construit à l’aide de l’infrastructure d’adaptateurs, les paires nom/valeur utilisées doivent toutes être stockées dans le \<AdapterConfig > élément. Étant donné que le \<AdapterConfig > élément spécifie le VT_BSTR (vt = « 8 ») type de données, puis le \< > caractères dans les données doivent être échappés.
+>  Lorsque vous spécifiez les données de configuration TransportTypeData pour un adaptateur qui est construit à l’aide de l’infrastructure d’adaptateurs, les paires nom/valeur utilisées doivent toutes être stockées dans le \<AdapterConfig\> élément. Étant donné que le \<AdapterConfig\> élément spécifie le VT_BSTR (vt = « 8 ») type de données, puis le \< \> caractères dans les données doivent être échappés.

@@ -16,22 +16,22 @@ caps.latest.revision: "20"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8b35fae6551a95c1c2009ac9786aa791d189f338
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4158b59e3cce9664ca7c8c7d8ea4c5e3221b04b9
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-move-the-master-secret-server"></a>Déplacement du serveur de secret principal
 La présente rubrique décrit les procédures que vous pouvez suivre pour déplacer le secret principal d'un serveur vers un autre et pour déplacer le secret principal d'un serveur vers un cluster Windows Server.  
   
 ### <a name="to-move-the-master-secret-from-one-server-to-another-server"></a>Pour déplacer le secret principal d'un serveur vers un autre  
   
-1.  Installez le Serveur d'authentification unique de l'entreprise Microsoft sur le nouveau serveur de secret principal s'il n'est pas encore installé. Exécutez le programme d'installation du Serveur d'authentification unique de l'entreprise Microsoft à partir du dossier \Platform\SSO\setup.exe du CD [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)].  
+1.  Installez le Serveur d'authentification unique de l'entreprise Microsoft sur le nouveau serveur de secret principal s'il n'est pas encore installé. Lancez le programme d’installation de Microsoft Enterprise unique serveur d’authentification à partir de \Platform\SSO\setup.exe sur le CD-ROM de BizTalk Server.  
   
 2.  Configurez l'authentification unique de l'entreprise sur le nouveau serveur de secret principal si ce n'est déjà fait. Pour configurer l'authentification unique de l'entreprise, procédez comme suit :  
   
-    1.  Ouvrez l'outil de configuration. Par défaut, l’outil de configuration se trouve dans \<lecteur > : \Program Files\Enterprise unique signe-On\Configuration.exe.  
+    1.  Ouvrez l'outil de configuration. Par défaut, l’outil de configuration se trouve dans \<lecteur\>: \Program Files\Enterprise unique signe-On\Configuration.exe.  
   
     2.  Cliquez pour sélectionner **Enterprise SSO** dans le volet gauche.  
   
@@ -66,7 +66,7 @@ La présente rubrique décrit les procédures que vous pouvez suivre pour dépla
   
     2.  Enregistrez le fichier en tant que fichier .xml. Par exemple, enregistrez le fichier sous **NewMSSServer.xml**.  
   
-    3.  À l'invite de commandes, accédez au dossier d'installation des services d'authentification unique de l'entreprise. Par défaut, le dossier d’installation est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+    3.  À l'invite de commandes, accédez au dossier d'installation des services d'authentification unique de l'entreprise. Par défaut, le dossier d’installation est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
     4.  Type **ssomanage - updatedb** *XMLFile* pour mettre à jour le nom du serveur de secret principal dans la base de données.  
   
@@ -121,4 +121,4 @@ La présente rubrique décrit les procédures que vous pouvez suivre pour dépla
 7.  Restaurez le serveur principal sauvegardé sur chaque nœud du cluster Windows hébergeant le serveur de secret principal en cluster. Suivez les étapes de [comment restaurer le Secret principal](../core/how-to-restore-the-master-secret.md) sur chaque nœud du cluster Windows hébergeant le serveur de secret principal en cluster.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Gestion du Secret](../core/managing-the-master-secret.md)
+ [Gestion du secret principal](../core/managing-the-master-secret.md)

@@ -32,11 +32,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f89959b1900ce03717f2bb28efda7651c5008e7c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a78dabdaefc430fe88e0a5e39d533ee34f0d3db1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-an-infopath-form-to-repair-a-message-or-submit-a-new-message"></a>À l’aide d’un formulaire InfoPath à réparer un Message ou envoyez un nouveau Message
 Pour réparer, vérifier, approuver ou créer un message, vous travaillez dans un [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] formulaire que vous ouvrez depuis le [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] site Web de MRSR. Le site MRSR contient un [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] formulaire pour chaque type de message et un [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] formulaire pour les messages non analysées. Message Repair et New Submission envoie des messages ayant besoin de réparation, la vérification ou une approbation à la bibliothèque de documents MRSR appropriée, où vous pouvez l’ouvrir.  
@@ -53,7 +53,7 @@ Pour réparer, vérifier, approuver ou créer un message, vous travaillez dans u
  Pour effectuer une opération sur un message dans le site MRSR, vous devez déployer le formulaire InfoPath pour ce type de message. Cette opération charge le formulaire InfoPath requis pour le message dans la bibliothèque de documents modèles.  
   
 ## <a name="verifying-a-message"></a>Vérification d’un Message  
- Un flux de travail de réparation peut inclure une étape de vérification. Dans cette étape, après qu’un réparateur a réparé un message, un vérificateur vérifie que les réparations dans le message sont correctes. Pour ce faire, vous ouvrez le message dans une [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] écran à partir de la \<nom service > _RekeyVerify et bibliothèque de documents de votre site MRSR, vérifiez que les réparations effectuées dans le message sont correctes. Vous devez également recomposition des données dans certains champs nécessitant une nouvelle clé. Toutes les étapes de vérification nécessitent la régénération des clés, vous pouvez personnaliser les champs (le cas échéant) ont besoin d’être régénérée. Pour plus d’informations sur la vérification de changement de clé, consultez [un traitement spécial dans le Message Repair et New Submission](../../adapters-and-accelerators/accelerator-swift/special-processing-in-message-repair-and-new-submission.md).  
+ Un flux de travail de réparation peut inclure une étape de vérification. Dans cette étape, après qu’un réparateur a réparé un message, un vérificateur vérifie que les réparations dans le message sont correctes. Pour ce faire, vous ouvrez le message dans une [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] écran à partir de la \<nom du service informatique\>_RekeyVerify et bibliothèque de documents de votre site MRSR, vérifiez que les réparations effectuées dans le message sont correctes. Vous devez également recomposition des données dans certains champs nécessitant une nouvelle clé. Toutes les étapes de vérification nécessitent la régénération des clés, vous pouvez personnaliser les champs (le cas échéant) ont besoin d’être régénérée. Pour plus d’informations sur la vérification de changement de clé, consultez [un traitement spécial dans le Message Repair et New Submission](../../adapters-and-accelerators/accelerator-swift/special-processing-in-message-repair-and-new-submission.md).  
   
  Un workflow composé de toutes les phases possibles inclut une ou plusieurs étapes de vérification. Toutefois, un flux de travail n’a pas besoin d’inclure une étape de vérification.  
   

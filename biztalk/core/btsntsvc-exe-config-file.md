@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 303924e2aaf8304388a18d2ffe70d99fdc69acd3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a7fae2fc49487597380e6c5d04a946b1078daeeb
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="btsntsvcexeconfig-file"></a>Fichier BTSNTSvc.exe.config
 Les propriétés de mise en file d’attente et leur valeur par défaut peuvent être configurées dans le [!INCLUDE[btsSettingsDashboard](../includes/btssettingsdashboard-md.md)] ou dans le code XML du fichier de configuration de BizTalk (BTSNTSvc.exe.config ou BTSNTSvc64.exe.config). Les valeurs contenues dans le fichier de configuration de BizTalk sont appliquées en premier. Les paramètres du [!INCLUDE[btsSettingsDashboard](../includes/btssettingsdashboard-md.md)] sont ensuite appliqués. Les propriétés de mise en attente sont lues lorsque toutes les instances de l’hôte contenant une orchestration démarrent.  
@@ -25,7 +25,7 @@ Les propriétés de mise en file d’attente et leur valeur par défaut peuvent 
   
  Pour modifier les valeurs par défaut, vous devez les ajouter explicitement dans le fichier de configuration. Pour plus d’informations sur la façon de modifier le comportement de mise en attente par défaut, consultez [comment modifier les paramètres de limitation d’Orchestration](../core/how-to-modify-orchestration-throttling-settings.md). Pour plus d’informations sur la limitation de mémoire d’orchestration, consultez [comment modifier les paramètres de limitation de la mémoire de Orchestration](../core/how-to-modify-orchestration-memory-throttling-settings.md).  
   
- Le contenu du fichier BTSNTSvc.exe.config est présenté ci-dessous. Ce fichier se trouve toujours dans le même répertoire que le fichier BTSNTSvc.exe, qui figure généralement à l'emplacement C:\Program Files\Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)].  
+ Le contenu du fichier BTSNTSvc.exe.config est présenté ci-dessous. Ce fichier se trouve toujours dans le même répertoire que le fichier BTSNTSvc.exe, qui est généralement de C:\Program Files\Microsoft BizTalk Server.  
   
 ```  
 <?xml version="1.0" ?>  
@@ -51,4 +51,4 @@ Les propriétés de mise en file d’attente et leur valeur par défaut peuvent 
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide du Panneau de configuration de BizTalk Server réglage des performances](../core/using-settings-dashboard-for-biztalk-server-performance-tuning.md)
+ [Utilisation du panneau de configuration pour le réglage des performances de BizTalk Server](../core/using-settings-dashboard-for-biztalk-server-performance-tuning.md)

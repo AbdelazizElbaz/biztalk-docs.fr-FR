@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 61f201f8b20d5824b1b037cc61edaa1d64729135
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0fa94183f0eb83dc51fc0add22ba50484f7282fb
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="step-2-modify-or-create-the-send-and-receive-ports"></a>Étape 2 : Modifier ou créer l’envoi et Ports de réception
 Vous avez besoin d’envoi de fichiers et les ports de réception pour le lot dans / Out didacticiel du lot. Si vous avez cliqué sur le **lancer le didacticiel** bouton à la fin de l’installation de l’édition Enterprise de [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] créé ces ports : un port d’envoi nommé Tutorial_BTAHL7Drop et un port de réception nommé Tutorial_BTAHL7PickUp. Si vous disposez de ces ports, vous devez modifier le port d’envoi Tutorial_BTAHL7Drop.  
@@ -68,7 +68,7 @@ Vous avez besoin d’envoi de fichiers et les ports de réception pour le lot da
   
     |Utiliser|Pour effectuer cette opération|  
     |--------------|----------------|  
-    |**Dossier de réception**|Accédez à  **\<**  *lecteur***> : \Program Files\Microsoft BizTalk \<version > Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_BTAHL7PickUp** . **Remarque :** il s’agit du chemin d’accès à l’emplacement sur le système de fichiers ou le partage public où [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] prennent en charge le fichier.|  
+    |**Dossier de réception**|Accédez à  **\<**  *lecteur***\>: \Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_BTAHL7PickUp**. **Remarque :** il s’agit du chemin d’accès à l’emplacement sur le système de fichiers ou le partage public où [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] prennent en charge le fichier.|  
     |**Masque de fichier**|Type  **\*.txt**.|  
   
 12. Cliquez sur **OK**.  
@@ -86,7 +86,7 @@ Vous avez besoin d’envoi de fichiers et les ports de réception pour le lot da
   
 ### <a name="to-create-the-tutorialbtahl7drop-send-port"></a>Pour créer le port d’envoi Tutorial_BTAHL7Drop  
   
-1.  Dans le [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] Console d’Administration, avec le bouton droit **Ports d’envoi**, pointez sur **nouveau**, puis cliquez sur **Port d’envoi unidirectionnel statique**.  
+1.  Dans la Console Administration de BizTalk Server, cliquez sur **Ports d’envoi**, pointez sur **nouveau**, puis cliquez sur **Port d’envoi unidirectionnel statique**.  
   
 2.  Dans la boîte de dialogue Propriétés de Port d’envoi, procédez comme suit :  
   
@@ -100,7 +100,7 @@ Vous avez besoin d’envoi de fichiers et les ports de réception pour le lot da
   
     |Utiliser|Pour effectuer cette opération|  
     |--------------|----------------|  
-    |**Dossier de destination**|Accédez à  **\<**  *lecteur***: > \Program Files\Microsoft BizTalk \<version > Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_BTAHL7Drop** . **Remarque :** le chemin d’accès à l’emplacement sur le système de fichiers ou le partage public auquel [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] réécrit le fichier.|  
+    |**Dossier de destination**|Accédez à  **\<**  *lecteur***:\>\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_BTAHL7Drop**. **Remarque :** le chemin d’accès à l’emplacement sur le système de fichiers ou le partage public auquel [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] réécrit le fichier.|  
     |**Nom de fichier**|Type **%MessageID%.txt** (Notez que l’extension est txt, xml pas).|  
   
 4.  Cliquez sur **OK**.  

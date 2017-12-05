@@ -13,14 +13,14 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2f3bd77d048df1cb97b5b87676fc5d9e6fa6413e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 14e294282169018282c0468ff16f0223e8f24c90
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="a-role-based-product"></a>Un produit en fonction du rôle
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] et [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator pour HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) fournissent des fonctionnalités et outils de l’environnement approprié pour le rôle de l’utilisateur, comme décrit dans l’exemple suivant :  
+[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server et [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator pour HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) fournissent des fonctionnalités et outils de l’environnement approprié pour le rôle de l’utilisateur, comme décrit dans l’exemple suivant :  
   
 -   Outils pour les développeurs sont intégrés dans [!INCLUDE[btsVStudio2008](../../includes/btsvstudio2008-md.md)]. Les développeurs peuvent gérer leurs solutions et les projets dans l’Explorateur de solutions et avoir un accès immédiat pour les outils de conception BizTalk.  
   

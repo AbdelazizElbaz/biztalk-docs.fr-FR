@@ -15,11 +15,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7231fd0d2aba7298127534eb43f1bf3c8c453b61
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ebe9f04fc8dac06676d7f29bf5dd2ecd01e7a06c
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="business-rules-hello-world1-biztalk-server-sample"></a>Hello World1 de règles d’entreprise (exemple BizTalk Server)
 L'exemple de règles d'entreprise « Hello World1 » montre comment créer un ensemble de règles BizTalk, l'enregistrer dans un fichier (SampleRuleSet.xml), le charger et l'exécuter sur la base d'un exemple d'ensemble de faits. L'exemple d'ensemble de règles contient une seule règle impliquant un élément XML, ainsi que des objets .NET (propriétés et membres) en tant que termes dans la définition de règle.  
@@ -42,7 +42,7 @@ L'exemple de règles d'entreprise « Hello World1 » montre comment créer un 
 7.  Effectue un nettoyage en supprimant le fichier de l'ensemble de règles pour préparer les exécutions suivantes de l'exemple.  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
- \<*Exemples de chemin d’accès*> \Business Rules\Business règles Hello World1\  
+ \<*Exemples de chemin d’accès*\>\Business Rules\Business règles Hello World1\  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -64,7 +64,7 @@ L'exemple de règles d'entreprise « Hello World1 » montre comment créer un 
   
 1.  Dans une fenêtre de commande, accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \Business Rules\Business règles Hello World1\  
+     \<*Exemples de chemin d’accès*\>\Business Rules\Business règles Hello World1\  
   
 2.  Exécutez le fichier Setup.bat, qui effectue les actions suivantes :  
   
@@ -86,7 +86,7 @@ L'exemple de règles d'entreprise « Hello World1 » montre comment créer un 
   
 1.  Dans une fenêtre de commande, accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \Business Rules\Business règles Hello World1\bin\Debug\  
+     \<*Exemples de chemin d’accès*\>\Business Rules\Business règles Hello World1\bin\Debug\  
   
 2.  Dans la fenêtre Commande, tapez le nom du fichier exécutable pour cet exemple, (BusinessRulesHelloWorld1.exe), puis appuyez sur ENTREE.  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2e4e833b05609d3889c30eac39a9285b09c63b68
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: df5f6e797e59e79ed275fb94217d94425e456e85
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="operations-on-synonyms"></a>Opérations sur les synonymes
 Le [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] permet d’effectuer des opérations sur les synonymes. Un synonyme est un alias ou un nom convivial pour les objets de base de données (par exemple, les tables, vues, procédures stockées, fonctions et packages). Pour plus d’informations sur les synonymes dans Oracle, consultez [http://go.microsoft.com/fwlink/?LinkId=138058](http://go.microsoft.com/fwlink/?LinkId=138058).  
@@ -49,7 +49,7 @@ Le [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinesssho
   
  Les synonymes de chacun de ces artefacts sont exposés en même temps que l’objet sous-jacent respectif dans le [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)], et [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]. Par exemple, le **Tables** nœud sous la **basée sur un schéma de vue** affiche tous les synonymes pour les tables, ainsi que les tables de base de données dans un schéma, le **vues** nœud sous le **Basée sur un schéma de vue** s’afficher tous les synonymes pour les vues, ainsi que les vues de base de données dans un schéma et ainsi de suite.  
   
--   Les synonymes créés sur les tables et les vues, les mêmes opérations sont exposées comme pour les tables sous-jacentes et les vues respectivement. Par exemple, si les tables et les vues sous-jacentes contiennent des colonnes LOB, les synonymes pour les tables et les vues seront également exposer le Read_\<LOBColName > et en attente_\<LOBColName > opérations pour les synonymes de la table et la Read_\<LOBColName > opération pour les synonymes de la vue.  
+-   Les synonymes créés sur les tables et les vues, les mêmes opérations sont exposées comme pour les tables sous-jacentes et les vues respectivement. Par exemple, si les tables et les vues sous-jacentes contiennent des colonnes LOB, les synonymes pour les tables et les vues seront également exposer le Read_\<LOBColName\> et en attente_\<LOBColName\> opérations les synonymes de la table et le Read_\<LOBColName\> opération pour les synonymes de la vue.  
   
 -   Les synonymes créés sur les packages, des fonctions et des procédures stockées, les synonymes sont exposés en tant qu’opérations en même temps que les procédures stockées sous-jacentes, les fonctions et les packages dans un schéma.  
   

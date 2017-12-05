@@ -12,17 +12,17 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aa3542c2703dfba986d158b40e54982f92b8543c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 82490a114149e3d4f71e3598900be5599c8a36e2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="any-attribute-nodes"></a>Nœuds Tout Attribut
 Dans l’Éditeur BizTalk, vous pouvez utiliser un **tout attribut** nœud pour indiquer un élément (connu) au sein d’un message d’instance qui peuvent contenir zéro ou plusieurs attributs inconnus. C'est une parade aux situations dans lesquelles vous savez qu'un élément particulier sera présent à un emplacement particulier d'un message d'instance sans connaître exactement quels attributs cet élément est susceptible de comporter. Si vous placez un **tout attribut** nœud dans le **enregistrement** nœud associé à l’élément approprié, BizTalk peut traiter ce, à la seule condition est que tous les attributs associés sont corriger syntaxe (attributeName = « attributeValue »).  
   
 > [!NOTE]
->  Dans l’Éditeur BizTalk, le **tout attribut** nœud est représenté par la chaîne \<AnyAttribute > dans l’arborescence de schéma.  
+>  Dans l’Éditeur BizTalk, le **tout attribut** nœud est représenté par la chaîne \<AnyAttribute\> dans l’arborescence de schéma.  
   
 > [!NOTE]
 >  Vous pouvez contrôler le degré auquel la portion inconnue du message est validée en tant que XML bien formé à l’aide de la **Process Contents** propriété. Dans de nombreux cas, vous devrez définir le **Process Contents** propriété **ignorer** pour le contenu d’un message d’instance à l’emplacement de la **tout attribut** nœud à traiter . En conservant la valeur par défaut **Strict** pour le **Process Contents** propriété empêchera la validation de message d’instance à partir de la transmission.  
@@ -51,4 +51,4 @@ Dans l’Éditeur BizTalk, vous pouvez utiliser un **tout attribut** nœud pour 
  [Représentation BizTalk de schémas](../core/biztalk-representation-of-schemas.md)   
  [Propriétés de nœud](../core/node-properties.md)   
  [Comment définir les propriétés de nœud](../core/how-to-set-node-properties.md)   
- [Nœuds tout élément](../core/any-element-nodes.md)
+ [Nœuds Tout élément](../core/any-element-nodes.md)

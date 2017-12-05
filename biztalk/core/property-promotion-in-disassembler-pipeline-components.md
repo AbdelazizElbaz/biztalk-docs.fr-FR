@@ -19,11 +19,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b9770b0e66b85dcc41400002e2e0c1780bc51c3a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d6c95c58dafe1f7f875232c5b65962e731334f16
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="property-promotion-in-disassembler-pipeline-components"></a>Promotion des propriétés dans les composants de Pipeline désassembleur
 La promotion de propriétés est un processus par lequel une valeur de propriété est extraite d'un document XML à l'aide d'une expression XPath et placée dans le contexte du message afin de pouvoir être utilisée pour le routage des messages.  
@@ -32,7 +32,7 @@ La promotion de propriétés est un processus par lequel une valeur de propriét
   
  Un composant de pipeline personnalisé peut promouvoir des propriétés à valeurs multiples. Les messages qui contiennent des propriétés à valeurs multiples ne sont pris en charge que dans les scénarios de routage basé sur le contenu ; ils ne peuvent pas être acheminés vers des orchestrations ni être utilisés aux fins de suivi.  
   
- Le Désassembleur XML ne promeut pas de valeurs par défaut ou fixes pour un élément vide qui possède une balise de fermeture. Par exemple, \<field1 > n’est pas promue dans le code XML suivant.  
+ Le Désassembleur XML ne promeut pas de valeurs par défaut ou fixes pour un élément vide qui possède une balise de fermeture. Par exemple, \<field1\> n’est pas promue dans le code XML suivant.  
   
 ```  
 <document>  

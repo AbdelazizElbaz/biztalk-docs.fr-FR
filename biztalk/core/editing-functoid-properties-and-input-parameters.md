@@ -12,16 +12,16 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1f7839807244ecebadeb93640703886c12ce646a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a3d87396713b7fa8f7874b921e6ee9097399d1c6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="editing-functoid-properties-and-input-parameters"></a>Modification des propriétés et paramètres d'entrée d'un fonctoid
 Les propriétés de fonctoids peuvent être réparties dans les catégories suivantes :  
   
--   **Étiquette** et **paramètres d’entrée**. ces deux propriétés sont accessibles en lecture et en écriture et sont disponibles pour tous les fonctoids. Le **étiquette** propriété fournit un mécanisme qui fournit un nom descriptif pour une instance particulière d’un fonctoid, qui peut aider à la gestion des mappages. Le **paramètres d’entrée** propriété fournit l’accès à la **configurer \<fonctoid > fonctoid** boîte de dialogue, qui joue un rôle central dans la configuration du fonctoid.  
+-   **Étiquette** et **paramètres d’entrée**. ces deux propriétés sont accessibles en lecture et en écriture et sont disponibles pour tous les fonctoids. Le **étiquette** propriété fournit un mécanisme qui fournit un nom descriptif pour une instance particulière d’un fonctoid, qui peut aider à la gestion des mappages. Le **paramètres d’entrée** propriété fournit l’accès à la **configurer \<fonctoid\> fonctoid** boîte de dialogue, qui joue un rôle central dans la configuration du fonctoid.  
   
 -   **Script** et **grille Bouclage de Table**. Ces deux propriétés donnent accès aux boîtes de dialogue qui ne sont applicables à la **script** et **bouclage de Table** fonctoids, respectivement. Ces boîtes de dialogue sont les **configurer le fonctoid script** boîte de dialogue et les **configurer le fonctoid Bouclage de Table** boîte de dialogue.  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 870a3333ce638200c92125f08a4f048150584b51
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 543c982a68d2a940b4800711d757f4fb159611de
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="soap-adapter-performance-counters"></a>Compteurs de performances de l'adaptateur SOAP
 Les compteurs de performance permettent d'analyser des aspects spécifiques du travail effectué sur le site ou le système par un service. Ils peuvent vous aider à identifier et à résoudre des problèmes de performances de serveur.  
@@ -41,7 +41,7 @@ Les compteurs de performance permettent d'analyser des aspects spécifiques du t
   
 3.  Dans le **ajouter des compteurs** boîte de dialogue, à partir de la **compteurs disponibles** liste, développez le **SOAP** objet compteur de performance et sélectionnez les compteurs à surveiller  
   
-4.  Dans le **Instances de l’objet sélectionné** , sélectionnez les instances spécifiques à surveiller pour les compteurs sélectionnés, puis cliquez sur **ajouter**. Pour sélectionner toutes les instances de compteur disponibles, sélectionnez \< **toutes les instances**>.  
+4.  Dans le **Instances de l’objet sélectionné** , sélectionnez les instances spécifiques à surveiller pour les compteurs sélectionnés, puis cliquez sur **ajouter**. Pour sélectionner toutes les instances de compteur disponibles, sélectionnez \< **toutes les instances**\>.  
   
 5.  Après avoir ajouté les compteurs, cliquez sur **OK**.  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 88a71a44c305e1eabbcdb9aede32b44439f6b03c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a989c58f59581795f641601938fe76bb7b1671f6
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="edi-type-data-element-validation"></a>Validation de type EDI (élément de données)
 Le pipeline de réception EDI et le pipeline d'envoi EDI exécutent la validation EDI sur les éléments de données de document informatisé. Cette validation est configurée pour tous les messages depuis ou vers un tiers spécifiques via les propriétés de l’accord de ce tiers sur la **Validation** page (sous la **paramètres des documents informatisés** section soit X12 ou accords EDIFACT). Si le **Validation de Type EDI** propriété n’est pas sélectionnée dans le **Validation** page, les données validations décrites dans cette rubrique ne seront pas effectuées.  
@@ -99,7 +99,7 @@ Le pipeline de réception EDI et le pipeline d'envoi EDI exécutent la validatio
 |-|-|  
 |Données inattendues|Action|  
 |Document informatisé inattendu/non défini|Le pipeline de réception ou d'envoi EDI accepte un document informatisé même si le schéma correspondant n'a pas été déployé.|  
-|Segment/enregistrement inattendu|Le pipeline de réception génère une balise avec le préfixe approprié : \<UnexpectedSegment_ % SegmentID % >.<br /><br /> Le pipeline d'envoi utilise le premier des trois caractères du nom de balise XML comme nom de segment.|  
+|Segment/enregistrement inattendu|Le pipeline de réception génère une balise avec le préfixe approprié : \<UnexpectedSegment_ % SegmentID %\>.<br /><br /> Le pipeline d'envoi utilise le premier des trois caractères du nom de balise XML comme nom de segment.|  
 |Élément de données simples inattendu|Le pipeline de réception génère une balise XML avec un préfixe, un identificateur de segment et un index indiquant la position de l'élément de données dans le segment : <UnexpectedDataElement_%FieldName%.|  
 |Élément de données composites inattendu|Le pipeline de réception génère une balise XML avec un préfixe, un identificateur de segment et un index indiquant la position de l'élément de données dans le segment : <UnexpectedCompositeDataElement_%FieldName%.|  
 |Données requises manquantes|Le pipeline traite les données comme étant facultatives.|  

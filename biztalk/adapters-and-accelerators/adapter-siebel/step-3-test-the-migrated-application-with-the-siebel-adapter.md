@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9d47d4e1e63cee106c3e00053ff6718ea0606516
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d72799af5221319db2f5f3243e09d984e13399c7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3-test-the-migrated-application-with-the-siebel-adapter"></a>Étape 3 : Tester l’Application migrée avec l’adaptateur Siebel
 ![Étape 3 sur 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")  
@@ -56,12 +56,12 @@ ms.lasthandoff: 09/20/2017
 3.  L’orchestration consomme le message de demande et l’envoie au système Siebel. La réponse à partir du système Siebel est reçue dans le schéma qui est conforme avec le schéma de la station de travail WCF [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]. À l’aide du mappage entrant, WCF-Custom envoyer port convertit le schéma pour l’adaptateur Siebel vPrev. La réponse à partir du système Siebel est enregistrée à l’autre emplacement de fichier définie dans le cadre de l’orchestration. La réponse pour le précédent message de demande est la suivante :  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8"?>  
-    \<ns0:InsertResponse xmlns:ns0="http://schemas.microsoft.com/[Siebel://Business Objects/Account/Account]" xmlns:exposed="http://schemas.microsoft.com" xmlns:Business_Objects="http://schemas.microsoft.com/Business_Objects">  
-      \<ns0:RowIDList>  
-        \<exposed:String>1-8EWWZ\</exposed:String>  
-      \</ns0:RowIDList>  
-    \</ns0:InsertResponse>  
+    <?xml version="1.0" encoding="utf-8"?>  
+    <ns0:InsertResponse xmlns:ns0="http://schemas.microsoft.com/[Siebel://Business Objects/Account/Account]" xmlns:exposed="http://schemas.microsoft.com" xmlns:Business_Objects="http://schemas.microsoft.com/Business_Objects">  
+      <ns0:RowIDList>  
+        <exposed:String>1-8EWWZ</exposed:String>  
+      </ns0:RowIDList>  
+    </ns0:InsertResponse>  
     ```  
   
 ## <a name="see-also"></a>Voir aussi  

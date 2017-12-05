@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dee662cb9cb6e86b85a7760daf45af832a447b5f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dd892e825194afea880d3bde153f472051ce9102
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="schema-node"></a>Nœud de schéma
 
@@ -24,14 +24,14 @@ ms.lasthandoff: 09/20/2017
 Dans l’Éditeur BizTalk, le haut de la hiérarchie de schéma est toujours le **schéma** nœud, qui ne peut pas être renommé. Le **schéma** nœud correspond à la **schéma** élément dans la représentation de langage de schéma XML (XSD) de la définition du schéma.  
   
 > [!NOTE]
->  Dans l’Éditeur BizTalk, le **schéma** nœud est représenté par la chaîne \<schéma > dans l’arborescence de schéma.  
+>  Dans l’Éditeur BizTalk, le **schéma** nœud est représenté par la chaîne \<schéma\> dans l’arborescence de schéma.  
   
  En général, les propriétés de la **schéma** nœud correspondent aux attributs de la **schéma** élément dans la représentation XSD du schéma. Pour obtenir des informations générales sur les propriétés d’un nœud, consultez [propriétés d’un nœud](../core/node-properties.md). Pour plus d’informations de référence sur les propriétés de la **schéma** nœud, consultez la **propriétés de nœud de schéma** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
   
  Lorsque vous créez un schéma XML dans l’Éditeur BizTalk, le **schéma** nœud et l’autre **racine** nœud sont créées automatiquement.  
   
 ## <a name="xsd-representation"></a>Représentation XSD  
- L’exemple suivant, en caractères gras, les lignes dans la représentation XSD du schéma qui correspondent à la  **\<schéma >** nœud dans l’arborescence du schéma.  
+ L’exemple suivant, en caractères gras, les lignes dans la représentation XSD du schéma qui correspondent à la  **\<schéma\>**  nœud dans l’arborescence du schéma.  
   
 ```  
 <?xml version="1.0" encoding="utf-16" ?>  

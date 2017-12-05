@@ -12,28 +12,28 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eec20b86b3e921fba8d1636a0aab7803ec1615d5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d84c34eb3019f83ecd28f30425a93708affcecb2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3-test-the-batch-inbatch-out-scenario"></a>Étape 3 : Tester le lot dans / lots scénario
 Dans cette étape, vous testez le lot dans / hors lot didacticiel par la suppression du lot dans une instance de test / message du lot dans un dossier. Le port d’envoi que vous avez configurée envoie le message, il recevra le port de réception et le pipeline de réception traite et la placer dans le dossier de destination.  
   
 ### <a name="to-test-the-batch-inbatch-out-scenario"></a>Pour tester le traitement par lots dans / lots scénario  
   
-1.  À l’aide de [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorateur de solutions, cliquez sur Parcourir pour le  **\<* lecteur*> : \Batching Tutorial\Instances** dossier.  
+1.  À l’aide de [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorateur de solutions, cliquez sur Parcourir pour le  **\<* lecteur*\>: \Batching Tutorial\Instances** dossier.  
   
 2.  Bouton droit sur **BatchInBatchOut.txt**, puis cliquez sur **copie**.  
   
-3.  Accédez à la  **\<* lecteur*> : \Program Files\Microsoft BizTalk \<version > Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_BTAHL7PickUp ** dossier.  
+3.  Accédez à la  **\<* lecteur*\>: \Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_ BTAHL7PickUp ** dossier.  
   
 4.  Cliquez avec le bouton droit, puis cliquez sur **coller**.  
   
 ### <a name="to-verify-the-results-of-the-batch-inbatch-out-tutorial"></a>Pour vérifier les résultats du lot dans / Out didacticiel du lot  
   
--   À l’aide de [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorateur de solutions, cliquez sur Parcourir pour le  **\<* lecteur*> : \Program Files\Microsoft BizTalk \<version > Accelerator for HL7\SDK\End en bout Tutorial\ Tutorial_BTAHL7Drop ** dossier. Après une courte période, vous devez voir l’instance traitée du message de lot et un accusé de réception, apparaissent dans le dossier. Si elles n’apparaissent pas, vérifiez le [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Observateur d’événements pour un message d’erreur. Chaque fichier doit avoir un nom différent dans le formulaire \< *Guid*> .txt.  
+-   À l’aide de [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorateur de solutions, cliquez sur Parcourir pour le  **\<* lecteur*\>: \Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\ Dossier Tutorial\Tutorial_BTAHL7Drop ** de SDK\End en bout. Après une courte période, vous devez voir l’instance traitée du message de lot et un accusé de réception, apparaissent dans le dossier. Si elles n’apparaissent pas, vérifiez le [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Observateur d’événements pour un message d’erreur. Chaque fichier doit avoir un nom différent dans le formulaire \< *Guid*\>.txt.  
   
      Le premier message doit être le lot composé de deux messages. BizTalk Accelerator pour HL7 (BTAHL7) a inclus dans le fichier .txt les ces deux messages de manière séquentielle. Ce lot ne contient pas de FHS/recherche en texte intégral et les balises BHS/BTS. Un lot doit contenir soit toutes les balises FHS/FTS et BHS/BTS, like ou ce message de lot, aucun FHS/FTS et aucune balise BHS/BTS.  
   
@@ -50,4 +50,4 @@ Dans cette étape, vous testez le lot dans / hors lot didacticiel par la suppres
   
 ## <a name="see-also"></a>Voir aussi  
  [Partie 1 : Scénario de lot entrant fragmenté](../../adapters-and-accelerators/accelerator-hl7/part-1-fragmented-inbound-batch-scenario.md)   
- [Partie 3 : Scénario de traitement par lots Créer](../../adapters-and-accelerators/accelerator-hl7/part-3-create-batch-scenario.md)
+ [Partie 3 : Scénario de création de lot](../../adapters-and-accelerators/accelerator-hl7/part-3-create-batch-scenario.md)

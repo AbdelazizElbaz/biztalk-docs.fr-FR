@@ -19,11 +19,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1f056b05c492e0ca4151c5a70652ee74ea46a464
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 41956d9e10cba87e0e1a1f44d49dd8ec8b6039bc
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="httpsso-biztalk-server-sample"></a>HTTPSSO (exemple BizTalk Server)
 L'exemple HTTPSSO montre comment utiliser la fonction d'authentification unique de l'entreprise (SSO) avec l'adaptateur HTTP Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
@@ -65,7 +65,7 @@ L'exemple HTTPSSO montre comment utiliser la fonction d'authentification unique 
  Pour voir un exemple qui montre comment utiliser l’utilitaire de ligne de commande ssomanage.exe pour configurer l’authentification unique, telles que la création d’applications associées et des mappages utilisateur, [gérer (exemple BizTalk Server)](../core/manage-biztalk-server-sample.md).  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
- \<*Exemples de chemin d’accès*> \SSO\HTTPSSO\  
+ \<*Exemples de chemin d’accès*\>\SSO\HTTPSSO\  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -101,11 +101,11 @@ L'exemple HTTPSSO montre comment utiliser la fonction d'authentification unique 
   
     -   **Microsoft.BizTalk.ExplorerOM**. Par défaut, le fichier Microsoft.BizTalk.ExplorerOM.dll se trouve dans le dossier [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]outils de développement\\.  
   
-    -   **Microsoft.BizTalk.SSOClient.Interop**. Par défaut, le fichier Microsoft.BizTalk.Interop.SSOClient.dll se trouve dans le dossier \< *ProgramFiles*> \Common Files\Enterprise Single Sign-On\\.  
+    -   **Microsoft.BizTalk.SSOClient.Interop**. Par défaut, le fichier Microsoft.BizTalk.Interop.SSOClient.dll se trouve dans le dossier \< *ProgramFiles*\>\Common Files\Enterprise Single Sign-On\\.  
   
      Cette opération génère le fichier exécutable SsoSample.exe dans le dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \SSO\HTTPSSO\bin\Debug\  
+     \<*Exemples de chemin d’accès*\>\SSO\HTTPSSO\bin\Debug\  
   
 ## <a name="running-this-sample"></a>Cet exemple en cours d’exécution  
   
@@ -116,7 +116,7 @@ L'exemple HTTPSSO montre comment utiliser la fonction d'authentification unique 
   
 1.  Exécutez le fichier exécutable SsoSample.exe, qui se trouve dans le dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \SSO\HTTPSSO\bin\Debug\  
+     \<*Exemples de chemin d’accès*\>\SSO\HTTPSSO\bin\Debug\  
   
      L'Assistant pour cet exemple s'ouvre.  
   
@@ -142,7 +142,7 @@ L'exemple HTTPSSO montre comment utiliser la fonction d'authentification unique 
   
 8.  Consultez les messages d'état correspondant à la configuration IIS, SSO et BizTalk en cours d'exécution. Vous pouvez trouver le code exécuté durant cette phase dans le **IisConfigurator**, **SsoConfigurator**, et **BtsConfigurator** classes définies dans le fichier SsoSample.cs. Une fois la configuration terminée, cliquez sur **suivant**.  
   
-9. Dans la dernière page de l’Assistant, acceptez les paramètres par défaut **démarrer le navigateur à** (case à cocher et une zone de texte avec l’URL http://localhost/SsoSampleBizTalkHttpReceive/BTSHttpReceive.dll?\<message/>), puis cliquez sur **Terminer**.  
+9. Dans la dernière page de l’Assistant, acceptez les paramètres par défaut **démarrer le navigateur à** (case à cocher et une zone de texte avec l’URL http://localhost/SsoSampleBizTalkHttpReceive/BTSHttpReceive.dll?<message/>), puis cliquez sur **Terminer**.  
   
      Une instance d'Internet Explorer s'ouvre et affiche les exemples de données employé que vous avez ajoutés à la table Employés de la base de données SQL Northwind.  
   
@@ -159,11 +159,11 @@ L'exemple HTTPSSO montre comment utiliser la fonction d'authentification unique 
   
 -   Le premier répertoire virtuel est configuré avec l'authentification intégrée Windows et correspond à l'extension ISAPI de l'emplacement de réception HTTP BizTalk. Il doit être associé au fichier .dll BTSHTTPReceive.dll situé dans le dossier suivant :  
   
-     \<*Le chemin d’installation*> \HttpReceive  
+     \<*Le chemin d’installation*\>\HttpReceive  
   
 -   Le second répertoire virtuel est configuré avec l'authentification de base et simule un système principal qui accepte un ID et mot de passe utilisateur pour authentifier l'utilisateur. Il doit être associé à l'un ou l'autre des fichiers ASPX, ValidateUser.aspx ou EmployeeData.aspx, situés dans le dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \SSO\HTTPSSO\Scripts  
+     \<*Exemples de chemin d’accès*\>\SSO\HTTPSSO\Scripts  
   
  Vous pouvez utiliser l'Assistant SsoSample.exe configurer une ou plusieurs applications associées. Pour chacune de ces applications associées, vous pouvez créer un ou plusieurs mappages utilisateur. Chacun de ces mappages utilisateur mappe un compte d'utilisateur Windows à un compte que vous utilisez pour accéder à un système principal spécifique. Dans cet exemple, ce compte est un compte Windows local que vous utilisez pour l'authentification avec le second répertoire virtuel IIS qui simule un système principal original.  
   
@@ -171,7 +171,7 @@ L'exemple HTTPSSO montre comment utiliser la fonction d'authentification unique 
   
 -   Accédez directement à l'URL suivante dans Internet Explorer :  
   
-     http://localhost/SsoSampleBizTalkHttpReceive/BTSHttpReceive.dll?\<message/>  
+     http://localhost/SsoSampleBizTalkHttpReceive/BTSHttpReceive.dll?<message/>  
   
 -   Exécutez de nouveau l'Assistant mais désactivez toutes les cases à cocher de configuration dans la première page.  
   

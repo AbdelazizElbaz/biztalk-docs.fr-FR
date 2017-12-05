@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1567f0b4bceb756381c4033f3243ac7a58fda366
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e7e7a310c222cead89efd23e3f8202ade9eb47ab
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="getendpointname"></a>GetEndpointName
 Transmet le nom du point de terminaison d'interception en cours sur la pile.  
@@ -39,9 +39,9 @@ Transmet le nom du point de terminaison d'interception en cours sur la pile.
   
  Pour les applications clientes, le nom du point de terminaison extrait par l'opération GetEndPointName est au format suivant : nom de liaison, suivi d'un trait de soulignement et du nom du contrat.  
   
- Par exemple, si la propriété nom de ServiceEndpoint n’est pas définie, mais la liaison est définie, le nom défini \< *liaison*> _\<*contrat*>.  
+ Par exemple, si la propriété nom de ServiceEndpoint n’est pas définie, mais la liaison est définie, le nom défini \< *liaison*\>_\<*contrat* \>.  
   
- Si le nom et la liaison ne sont pas définies, la propriété Name est fixée \< *contrat*>.  
+ Si le nom et la liaison ne sont pas définies, la propriété Name est fixée \< *contrat*\>.  
   
  Pour le service, le nom extrait correspond au nom du point de terminaison spécifié dans le fichier App.config.  
   

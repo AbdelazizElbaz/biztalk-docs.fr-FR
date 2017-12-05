@@ -12,16 +12,16 @@ caps.latest.revision: "24"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2a09ff5969cc0c47da6a9e885118e227cc27c4ac
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 83bbeec3430f479d28502e818b9ead402278f9b1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="read-the-installation-and-configuration-known-issues"></a>Lecture de l’installation et la configuration des problèmes connus
   
 ## <a name="installing-over-terminal-server-creates-log-files-in-a-different-folder"></a>L’installation sur le serveur Terminal Server crée des fichiers journaux dans un dossier différent  
- Lorsque vous installez A4SWIFT via une connexion de Terminal Server, le programme d’installation d’A4SWIFT crée les fichiers journaux d’installation et de configuration dans le  *\<lecteur >*: \Documents and Settings\\  *\<nom d’utilisateur >*dossier de \Local Settings. Normalement, le programme d’installation crée ces fichiers dans le  *\<lecteur >*: \Documents and Settings\\*\<nom d’utilisateur >*\Local dossier. Vous pouvez examiner ces fichiers journaux pour vous assurer que vos ordinateurs sont définis et configurés correctement.  
+ Lorsque vous installez A4SWIFT via une connexion de Terminal Server, le programme d’installation d’A4SWIFT crée les fichiers journaux d’installation et de configuration dans le  *\<lecteur\>*: \Documents and Settings\\  *\<nom d’utilisateur\>*dossier de \Local Settings. Normalement, le programme d’installation crée ces fichiers dans le  *\<lecteur\>*: \Documents and Settings\\*\<nom d’utilisateur\>*\Local Dossier de Settings\Temp. Vous pouvez examiner ces fichiers journaux pour vous assurer que vos ordinateurs sont définis et configurés correctement.  
   
 ## <a name="silent-installation-is-not-recommended"></a>Installation sans assistance n’est pas recommandée.  
  Une installation sans assistance est pris en charge par le programme d’installation d’A4SWIFT, mais n’est pas recommandée en raison de la complexité des étapes de configuration supplémentaires sont nécessaires.  
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/20/2017
  Une base de données A4SWIFT s’affichera dans le **les composants Web pour Message Repair et New Submission** volet de la boîte de dialogue de Configuration d’A4SWIFT, même si cette base de données n’existe pas. Un avertissement est affiché pour le A4SWIFT dans les données de base de données stocke volet, mais qu’avertissement n’empêche pas le processus de configuration à partir de la procédure.  
   
 ## <a name="upgrade-process-does-not-create-a-new-root-folder"></a>Mise à niveau ne crée pas un dossier racine  
- Le processus de mise à niveau met à jour les fichiers A4SWIFT existants  *\<lecteur >*: \Program Files\Microsoft BizTalk Accelerator pour dossier A4SWIFT 2.3/3.0. Il ne crée pas un nouveau dossier pour les fichiers mis à niveau, et il modifie le nom du dossier existant à  *\<lecteur >*: \Program Files\Microsoft BizTalk Accelerator pour SWIFT.  
+ Le processus de mise à niveau met à jour les fichiers A4SWIFT existants  *\<lecteur\>*: \Program Files\Microsoft BizTalk Accelerator pour dossier A4SWIFT 2.3/3.0. Il ne crée pas un nouveau dossier pour les fichiers mis à niveau, et il modifie le nom du dossier existant à  *\<lecteur\>*: \Program Files\Microsoft BizTalk Accelerator pour SWIFT.  
   
 ## <a name="canceling-setup-during-an-upgrade-for-a4swift-may-leave-your-system-in-an-unknown-state"></a>Annulation de l’installation pendant une mise à niveau pour A4SWIFT peut laisser votre système dans un état inconnu.  
  Dans certains scénarios, en cliquant sur le **Annuler** bouton pendant une mise à niveau peut laisser les fichiers, les assemblys, les artefacts de BizTalk Server et les clés de Registre intact une fois que le programme d’installation a terminé sa restauration.  
@@ -49,7 +49,7 @@ ms.lasthandoff: 09/20/2017
  Vous pouvez supprimer manuellement tous les éléments sans aucun problème.  
   
 ## <a name="download-the-a4swift-setup-exe-file-from-the-web-into-a-temp-folder"></a>Téléchargez le fichier exe du programme d’installation A4SWIFT à partir du Web dans un dossier temporaire  
- Si vous souhaitez installer A4SWIFT à partir d’un fichier exécutable à extraction automatique que vous téléchargez à partir du Web, veillez à télécharger ce fichier dans un dossier temporaire. Ne pas télécharger le fichier dans le dossier racine de BizTalk Server (BizTalk Server de \Program Files\Microsoft \< *votre version*>).  
+ Si vous souhaitez installer A4SWIFT à partir d’un fichier exécutable à extraction automatique que vous téléchargez à partir du Web, veillez à télécharger ce fichier dans un dossier temporaire. Ne pas télécharger le fichier dans le dossier racine de BizTalk Server (BizTalk Server de \Program Files\Microsoft \< *votre version*\>).  
   
  Si vous exécutez le fichier exe à partir du dossier racine de BizTalk Server, il s’exécute le serveur BizTalk Server Assistant installation, pas l’Assistant d’installation A4SWIFT.  
   

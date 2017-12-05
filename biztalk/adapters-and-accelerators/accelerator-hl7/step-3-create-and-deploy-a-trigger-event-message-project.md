@@ -15,11 +15,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cf96bdc546223b68677b642944265c22d2ce4b14
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 49fd078f64cbd4163eef648f7a0d58fe6e8db6b2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3-create-and-deploy-a-trigger-event-message-project"></a>Étape 3 : Créer et déployer un projet déclencheur d’événement (Message)
 Dans cette étape, vous créez le schéma pour le message d’événement déclencheur. Par exemple, vous pouvez être le système (ADT) décharge d’admission et de transfert qui envoie un message à l’hôpital informations système (HIS). Vous avez besoin de ce schéma pour définir le format de votre message.  
@@ -69,7 +69,7 @@ Dans cette étape, vous créez le schéma pour le message d’événement décle
   
 3.  Dans le volet droit, faites défiler jusqu'à la **nom fort** , cliquez sur le champ situé à droite de **fichier de clé d’Assembly**, puis cliquez sur le bouton de sélection (**...** ) bouton.  
   
-4.  Dans la boîte de dialogue de fichier de clé d’Assembly, accédez à \< *lecteur*> : \Program Files\Microsoft BizTalk \<version > Accelerator for HL7\SDK\End en bout didacticiel, cliquez sur **key.snk**, puis cliquez sur **ouvrir**.  
+4.  Dans la boîte de dialogue de fichier de clé d’Assembly, accédez à \< *lecteur*\>: \Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End en bout didacticiel, cliquez sur **key.snk**, puis cliquez sur **ouvrir**.  
   
 5.  Dans la boîte de dialogue Pages de propriétés de projet, cliquez sur **OK** pour enregistrer vos modifications.  
   

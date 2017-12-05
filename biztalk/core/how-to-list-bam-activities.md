@@ -16,11 +16,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 29b9b6c8b84111e227ad2cd2b26bac4d33c2b200
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a3fd2447c9e3b5313bfac7b36b7373acd8f227b4
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-list-bam-activities"></a>Affichage de la liste des activités BAM
 Les administrateurs utilisent la **get-activities** commande de l’utilitaire de gestion BAM pour répertorier les activités dans la base de données d’importation principale BAM locale.  
@@ -29,7 +29,7 @@ Les administrateurs utilisent la **get-activities** commande de l’utilitaire d
   
 1.  Ouvrez une invite de commandes comme suit : cliquez sur **Démarrer**, cliquez sur **exécuter**, type **cmd**, puis cliquez sur **OK**.  
   
-2.  Accédez au dossier des suivis en tapant **C:\Program Files\Microsoft BizTalk Server \<version > \Tracking** à l’invite de commandes. Appuyez sur **Entrée**.  
+2.  Accédez au dossier des suivis en tapant **C:\Program Files\Microsoft BizTalk Server \<version\>\Tracking** à l’invite de commandes. Appuyez sur **Entrée**.  
   
 3.  Type **bm get-activities**.  
   
@@ -38,4 +38,4 @@ Les administrateurs utilisent la **get-activities** commande de l’utilitaire d
 ## <a name="see-also"></a>Voir aussi  
  [Gestion de l’Infrastructure dynamique BAM](../core/managing-the-bam-dynamic-infrastructure.md)   
  [Recommandations de sécurité BAM](../core/bam-security-recommendations.md)   
- [Utilitaire de gestion BAM](../core/bam-management-utility.md)
+ [Utilitaire de gestion de l’analyse BAM](../core/bam-management-utility.md)

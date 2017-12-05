@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3953baf4a60e2863f986ec54fe9c12663b2b587d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 207c50c8f2dc61c0e7e86f865fec470dae4d2e84
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-resolve-a-service-endpoint-using-a-uddi-category-search"></a>Comment : résoudre un point de terminaison de Service à l’aide d’une recherche de catégorie UDDI
 ## <a name="goal"></a>Objectif  
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-an-itinerary-model"></a>Pour créer un modèle d’itinéraire  
   
-1.  Dans [!INCLUDE[vs2010](../includes/vs2010-md.md)], ouvrez C:\HowTos\Patterns\Patterns.sln.  
+1.  Dans Visual Studio, ouvrez C:\HowTos\Patterns\Patterns.sln.  
   
 2.  Dans l’Explorateur de solutions, cliquez sur le **ItineraryLibrary** de projet, pointez sur **ajouter**, puis cliquez sur **nouvel itinéraire**.  
   
@@ -169,8 +169,8 @@ ms.lasthandoff: 09/20/2017
 ## <a name="additional-resources"></a>Ressources supplémentaires  
  Pour plus d'informations, consultez les rubriques connexes suivantes :  
   
--   [Comment : résoudre un point de terminaison de Service à l’aide d’une recherche de clé de liaison de UDDI](../esb-toolkit/how-to-resolve-a-service-endpoint-using-a-uddi-binding-key-search.md)  
+-   [Guide pratique pour résoudre un point de terminaison de service à l’aide d’une recherche de clé de liaison UDDI](../esb-toolkit/how-to-resolve-a-service-endpoint-using-a-uddi-binding-key-search.md)  
   
 -   [Activités de développement](../esb-toolkit/development-activities.md)  
   
--   [À l’aide de la résolution dynamique et le routage](../esb-toolkit/using-dynamic-resolution-and-routing.md)
+-   [Utilisation de la résolution et du routage dynamiques](../esb-toolkit/using-dynamic-resolution-and-routing.md)

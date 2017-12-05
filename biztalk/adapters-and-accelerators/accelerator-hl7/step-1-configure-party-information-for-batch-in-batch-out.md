@@ -12,18 +12,18 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 982b17fe3826a0e5c5ee2a42030ba020b755ab70
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4cb67fb2e1a232894a0e936bc7827270ca79e6f8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-configure-party-information-for-batch-inbatch-out"></a>Étape 1 : Configurer des informations sur le tiers pour le traitement par lots dans / hors du lot
 Dans cette étape, vous désactivez la fragmentation du traitement par lot pour le tiers, l’activation du lot dans / scénario du lot. Puis redémarrez [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] pour activer la modification de configuration prennent effet.  
   
 ### <a name="to-turn-off-fragmentation-of-batching-for-the-party"></a>Pour désactiver la fragmentation du traitement par lot pour le tiers  
   
-1.  Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Microsoft BizTalk \<version > Accelerator pour HL7**, puis cliquez sur **BTAHL7 L’Explorateur de configuration**.  
+1.  Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Microsoft BizTalk \<version\> Accelerator pour HL7**, puis cliquez sur **BTAHL7 Configuration Explorer**.  
   
 2.  Dans l’Explorateur de Configuration de BTAHL7, sur le **Parties** dans le volet gauche, cliquez sur **Tutorial_BatchSource**.  
   

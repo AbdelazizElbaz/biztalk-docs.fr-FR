@@ -13,14 +13,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b3d9641f894a493aa5c2c298a71b1b5a49ffb55a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c8de850022a03a3be0310da3022a2cf496c94f30
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="stream-flat-file-idocs-in-sap-using-the-wcf-channel-model"></a>Flux de fichier plat les IDOC dans SAP à l’aide du modèle de canal WCF
-Le [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] prend en charge la diffusion en continu pour les opérations SendIdoc et ReceiveIdoc-valeur du nœud. Ces opérations sont utilisées pour envoyer et recevoir (string) IDOC vers et à partir de l’adaptateur de fichier plat. Dans ces deux opérations, les données pour l’IDOC entière sont contenues dans une chaîne sous un seul nœud (\<idocData >). Des IDOC volumineux, la diffusion en continu les données IDOC entre l’adaptateur et votre code peut enregistrer les ressources de mémoire importante.  
+Le [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] prend en charge la diffusion en continu pour les opérations SendIdoc et ReceiveIdoc-valeur du nœud. Ces opérations sont utilisées pour envoyer et recevoir (string) IDOC vers et à partir de l’adaptateur de fichier plat. Dans ces deux opérations, les données pour l’IDOC entière sont contenues dans une chaîne sous un seul nœud (\<idocData\>). Des IDOC volumineux, la diffusion en continu les données IDOC entre l’adaptateur et votre code peut enregistrer les ressources de mémoire importante.  
   
  Pour plus d’informations générales sur la façon dont l’adaptateur prend en charge la diffusion en continu, consultez [l’adaptateur SAP et diffusion en continu](../../adapters-and-accelerators/adapter-sap/streaming-and-the-sap-adapter.md). Vous devez lire cette rubrique avant de continuer.  
   
@@ -291,4 +291,4 @@ fileXmlWriter.Close();
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
-[Développer des applications à l’aide du modèle de canal WCF](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)
+[Développer des applications en utilisant le modèle de canal WCF](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)

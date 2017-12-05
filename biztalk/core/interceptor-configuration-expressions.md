@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a28af058ac4750426f66dc6e290bc6a02bf2efd6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 927afa60dc65fb014f0d44305db5e7f6e78b803b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="interceptor-configuration-expressions"></a>Expressions de configuration d'intercepteur
 Le fichier de configuration de l'intercepteur BAM utilise des expressions de filtre pour identifier une activité et des expressions de données pour créer un élément de données pour le stockage, l'utilisation comme ID de corrélation ou jeton de continuation, ou autre. Quelle que soit la finalité, les expressions individuelles sont identifiées dans le fichier de configuration de l'intercepteur par l'élément `expression` et contiennent une ou plusieurs opérations à l'aide de la notation polonaise inverse, également connue sous le nom de notation post-fixée.  
@@ -115,7 +115,7 @@ Le fichier de configuration de l'intercepteur BAM utilise des expressions de fi
 ### <a name="data-expressions"></a>Expressions de données  
  Les expressions de données permettent de définir une valeur de données de chaîne unique. Une expression de données est une expression qui n'est pas incluse par un élément `Filter`. Les expressions de données sont utilisées par les éléments `OnEvent`, `CorrelationID`, `ContinuationToken`, `Reference` et `Update`.  
   
- Il est courant de devoir mettre à jour la base de données des activités BAM avec un horodatage étiqueté. Par exemple, vous pourriez capturer l’heure de début d’un événement avec une chaîne sous la forme « Démarrer : \<EventTime > ». Pour ce faire, vous devez utiliser une expression semblable à celle qui suit (où + représente une concaténation) :  
+ Il est courant de devoir mettre à jour la base de données des activités BAM avec un horodatage étiqueté. Par exemple, vous pourriez capturer l’heure de début d’un événement avec une chaîne sous la forme « Démarrer : \<EventTime\>». Pour ce faire, vous devez utiliser une expression semblable à celle qui suit (où + représente une concaténation) :  
   
  `"Start: " + GetContextProperty(EventTime)`  
   
@@ -153,7 +153,7 @@ Le fichier de configuration de l'intercepteur BAM utilise des expressions de fi
 >  N'utilisez pas les opérations de comparaison « And » ou « Égal à » dans les expressions de données. Sinon, vous obtenez une erreur lors du déploiement de votre fichier de configuration de l'intercepteur.  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [Opérations de l’intercepteur](../core/interceptor-operations.md)  
+ [Opérations d’intercepteur](../core/interceptor-operations.md)  
   
 ## <a name="see-also"></a>Voir aussi  
- [Structure d’un fichier de Configuration de l’intercepteur](../core/structure-of-an-interceptor-configuration-file.md)
+ [Structure d’un fichier de configuration d’intercepteur](../core/structure-of-an-interceptor-configuration-file.md)

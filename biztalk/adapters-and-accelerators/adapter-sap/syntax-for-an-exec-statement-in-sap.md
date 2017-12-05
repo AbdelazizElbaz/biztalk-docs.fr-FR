@@ -13,11 +13,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e9b2299407986ef2fca53304b536c5ce89625941
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 362aa1f81158c9d9f1135c9bff25c64d7d745953
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="syntax-for-an-exec-statement-in-sap"></a>Syntaxe pour une instruction EXEC dans SAP
 La section suivante décrit les spécifications de grammaire pour l’implémentation des instructions EXEC contre le [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]. Notez que, dans certains cas, la syntaxe est différente de la syntaxe Transact-SQL.  
@@ -30,11 +30,11 @@ EXEC rfc_name {<argument_element>} [ , …n ]  {;}[0,1] [ OPTION <disabledataval
   
 -   **rfc_name** Spécifie le nom de l’appel de fonction à exécuter.  
   
--   **< argument_element >** :: = @param_name = [0,1] \<const > {[entrée &#124; SORTIE]} [0,1]  
+-   **< argument_element >** :: = @param_name = [0,1] \<const\> {[entrée &#124; SORTIE]} [0,1]  
   
     -   **param_Name** Spécifie le nom du paramètre défini dans l’interface de la fonction.  
   
-    -   **\<const >** :: = entier &#124; réel &#124; chaîne &#124; ? &#124; NULL &#124; xml_element  
+    -   **\<const\>**  :: = entier &#124; réel &#124; chaîne &#124; ? &#124; NULL &#124; xml_element  
   
 -   **OPTION** fournit l’option sur la façon dont vous souhaitez présenter les données. Options disponibles :  
   
@@ -59,7 +59,7 @@ EXEC rfc_name {<argument_element>} [ , …n ]  {;}[0,1] [ OPTION <disabledataval
     <FIELDNAME_2 xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">value</FIELDNAME_2>  
     ...  
     ...  
-\</ PARAM_NAME>  
+</ PARAM_NAME>  
 ```  
   
  Le xml_element pour la table ressemble à ceci :  
@@ -74,7 +74,7 @@ EXEC rfc_name {<argument_element>} [ , …n ]  {;}[0,1] [ OPTION <disabledataval
     <STRUCT_NAME/>  
     ...  
     ...  
-\</ PARAM_NAME>  
+</ PARAM_NAME>  
 ```  
   
  Par exemple, l’élément XML pour un type de structure ressemble à ceci :  
@@ -158,4 +158,4 @@ EXEC rfc_name {<argument_element>} [ , …n ]  {;}[0,1] [ OPTION <disabledataval
     >  Pour une instruction SELECT, la [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] retourne `TIMS` valeurs de champ en tant que .NET `System.TimeSpan` objets. Pour plus d’informations sur l’instruction SELECT, consultez [syntaxe pour une instruction SELECT dans SAP](../../adapters-and-accelerators/adapter-sap/syntax-for-a-select-statement-in-sap.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Sur le fournisseur de données .NET Framework pour mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/about-the-net-framework-data-provider-for-mysap-business-suite.md)
+ [À propos du fournisseur de données .NET Framework pour mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/about-the-net-framework-data-provider-for-mysap-business-suite.md)

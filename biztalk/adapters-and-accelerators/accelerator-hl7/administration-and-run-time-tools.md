@@ -23,14 +23,14 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: af9663c5b199c8f0b77da5a0207f370a515ad030
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 479532d41259ebb7f50877ea75bdd79051160bb3
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="administration-and-run-time-tools"></a>Outils d’administration et moment de l’exécution
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] et [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)] ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) fournit un ensemble d’outils pour effectuer des tâches telles que le déploiement, de gestion de la configuration, d’administration, de gestion des règles d’entreprise, les temps d’administration et d’exécution et la surveillance. Pour plus d’informations sur [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] outils, consultez [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] aide.  
+[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server et [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)] ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) fournit un ensemble d’outils pour effectuer des tâches telles que le déploiement, de gestion de la configuration, d’administration, de gestion des règles d’entreprise, les temps d’administration et d’exécution et la surveillance. Pour plus d’informations sur [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] outils, consultez [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]à l’aide de BizTalk Server.  
   
 ## <a name="biztalk-explorer"></a>Explorateur BizTalk  
  Vous utilisez l’Explorateur BizTalk pour configurer et gérer des projets, les tiers et les orchestrations. L’Explorateur BizTalk affiche le contenu de la base de données de Configuration (également appelée la base de gestion BizTalk), afficher des éléments tels que les assemblys, les ports et les parties (dans une arborescence hiérarchique).  

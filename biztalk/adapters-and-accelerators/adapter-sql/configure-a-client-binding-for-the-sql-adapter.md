@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: af27363e5156ca88f2c6b3e06a67d0609bf52afe
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 947666ce63160425896564b20e91bd1fd70c95a9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configure-a-client-binding-for-the-sql-adapter"></a>Configurer une liaison de Client de l’adaptateur SQL
 Une fois que vous avez généré la classe de client WCF, vous pouvez créer un client WCF (instance) et appeler ses méthodes pour consommer le [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]. Pour plus d’informations sur la génération de la classe d’assistance et de code de client WCF pour les opérations qui les [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] expose, consultez [générer un Client WCF ou le contrat de Service WCF pour les artefacts de SQL Server](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md).  
@@ -55,9 +55,9 @@ client.Open();
  Le code XML suivant montre le fichier de configuration créé pour la table Customer par le [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]. Ce fichier contient la configuration du point de terminaison client référencée dans l’exemple précédent.  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <configuration xmlns="http://schemas.microsoft.com/.NetConfiguration/v2.0">  
-    \<system.serviceModel>  
+    <system.serviceModel>  
         <bindings>  
             <sqlBinding>  
                 <binding name="SqlAdapterBinding" closeTimeout="00:01:00" openTimeout="00:01:00"  
@@ -76,7 +76,7 @@ client.Open();
                 bindingConfiguration="SqlAdapterBinding" contract="TableOp_dbo_Customer"  
                 name="SqlAdapterBinding_TableOp_dbo_Customer" />  
         </client>  
-    \</system.serviceModel>  
+    </system.serviceModel>  
 </configuration>  
 ```  
   

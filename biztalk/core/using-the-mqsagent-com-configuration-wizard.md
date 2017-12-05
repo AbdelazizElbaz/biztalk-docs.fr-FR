@@ -17,11 +17,11 @@ caps.latest.revision: "23"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6262b87f304a27b36ed1d7bc6a15b5e681331be3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0f6e8b625bcc3accbefda193c52459616691c265
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-the-mqsagent-com-configuration-wizard"></a>À l’aide de l’Assistant Configuration de l’application MQSAgent COM +
 L'Assistant Configuration de l'application MQSAgent COM+ configure MQSAgent, la partie de l'adaptateur de l'application COM+ (composant MQSeries). L'assistant définit l'identité de l'application du composant, ainsi que le nom de rôle et les utilisateurs qui font partie de ce rôle. Le nom du composant MQSAgent COM + créé avec l’Assistant de Configuration de MQSAgent COM + est **MQSAgent2**.  
@@ -30,7 +30,7 @@ L'Assistant Configuration de l'application MQSAgent COM+ configure MQSAgent, la 
 >  L’application MQSAgent COM+ est prise en charge sur une version 64 bits de Windows Server. Elle est exécutée en tant que processus 32 bits sous WOW64. Un ordinateur sur lequel [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] est installé et qui exécute une version 64 bits de Windows Server peut communiquer avec un ordinateur distant 32 bits sur lequel MQSAgent est installé.  
   
 > [!NOTE]
->  MQSeries Agent et l’exécutable de l’Assistant Configuration MQSAgent COM + **MQSConfigWiz.exe** ne sont pas installés si vous mettez à niveau à partir de BizTalk Server 2009 vers [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]. Après la mise à niveau vers [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] de BizTalk Server 2009 à exécuter à nouveau le programme d’installation, sélectionnez le **modifier** option et sélectionnez MQSeries Agent sous logiciels supplémentaires pour installer ces composants.  
+>  MQSeries Agent et l’exécutable de l’Assistant Configuration MQSAgent COM + **MQSConfigWiz.exe** ne sont pas installés si vous mettez à niveau à partir de BizTalk Server 2009 à BizTalk Server. Après la mise à niveau vers BizTalk Server à partir de BizTalk Server 2009 et réexécutez le programme d’installation, sélectionnez le **modifier** option et sélectionnez MQSeries Agent sous logiciels supplémentaires pour installer ces composants.  
   
 ## <a name="to-set-the-application-identity"></a>Pour définir l'identité de l'application  
   
@@ -60,7 +60,7 @@ L'Assistant Configuration de l'application MQSAgent COM+ configure MQSAgent, la 
 >  Ajoutez au rôle uniquement les comptes qui nécessitent un accès à l'adaptateur.  
   
 ## <a name="to-set-the-msdtc-security-configuration-on-the-windows-server-2008-computer-to-no-authentication-required"></a>Définition de la configuration de la sécurité MSDTC de l'ordinateur Windows Server 2008 sur Aucune authentification requise  
- Si l’application MQSAgent COM + est installée sur un [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] ordinateur et l’adaptateur MQSeries (qui est installé avec [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]) est installé sur un [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] ou [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] ordinateur, la configuration de sécurité MSDTC sur le [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] ou [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] ordinateur doit être définie sur **aucune authentification requise**. Pour définir la configuration de la sécurité MSDTC sur Aucune authentification requise, procédez comme suit :  
+ Si l’application MQSAgent COM + est installée sur un [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] ordinateur et l’adaptateur MQSeries (qui est installé avec BizTalk Server) est installé sur un [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] ou [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] ordinateur, la configuration de sécurité MSDTC sur le [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] ou [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] ordinateur doit être définie sur **aucune authentification requise**. Pour définir la configuration de la sécurité MSDTC sur Aucune authentification requise, procédez comme suit :  
   
 1.  Cliquez sur **Démarrer** puis cliquez sur **le panneau de configuration**.  
   

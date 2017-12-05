@@ -19,17 +19,17 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4440d80568ee49bf589c78758f490d8caefbb256
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7264d2eaa5c3ce249bc1077f7754d93eecdd786a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="creating-and-configuring-biztalk-ports-for-contoso"></a>Création et configuration des Ports BizTalk pour Contoso
-Dans cette section, vous intégrez votre solution actuelle dans [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]. Avant cela, vous installez votre assembly dans le Global Assembly Cache (GAC), puis le configurer dans la base de données de Configuration. Vous créez et configurez les ports d’envoi à l’aide d’un adaptateur SQL et un adaptateur HTTP.  
+Dans cette section, vous intégrez votre solution actuelle dans [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server. Avant cela, vous installez votre assembly dans le Global Assembly Cache (GAC), puis le configurer dans la base de données de Configuration. Vous créez et configurez les ports d’envoi à l’aide d’un adaptateur SQL et un adaptateur HTTP.  
   
 ## <a name="in-this-section"></a>Dans cette section  
   
--   [Étape 1 : Attribution d’un nom fort à l’Assembly Contoso](../../adapters-and-accelerators/accelerator-rosettanet/step-1-assigning-a-strong-name-to-the-contoso-assembly.md)  
+-   [Étape 1 : Affectation d’un nom fort à l’assembly Contoso](../../adapters-and-accelerators/accelerator-rosettanet/step-1-assigning-a-strong-name-to-the-contoso-assembly.md)  
   
 -   [Étape 2 : Création de Ports pour le prix 3A2 de Contoso et le scénario de requête/réponse de disponibilité](step-2-create-ports-for-contoso-3a2-price-and-availability-query.md)

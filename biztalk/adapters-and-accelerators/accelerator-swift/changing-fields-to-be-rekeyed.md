@@ -16,18 +16,18 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fc47d080b43b7679e76b9c6f8a0d8de1216daeaf
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 04693bf4c4d441487a3ce38f886bc680b1db368b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="changing-fields-to-be-rekeyed"></a>Modification des champs à être régénérée
-Dans l’étape de vérification d’un flux de travail de réparation message, [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] supprime les données à partir d’un nombre de champs afin que le vérificateur d’entrer à nouveau ou recomposition, ces données. Vous pouvez personnaliser les champs dans le RekeyVerify [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] formulaire doit être régénérée. Faire dans le fichier MrsrXpathConfig.xml, qui se trouve dans le \< *lecteur*> : \Program Files\Microsoft BizTalk Accelerator pour le dossier SWIFT\MRSR.  
+Dans l’étape de vérification d’un flux de travail de réparation message, [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] supprime les données à partir d’un nombre de champs afin que le vérificateur d’entrer à nouveau ou recomposition, ces données. Vous pouvez personnaliser les champs dans le RekeyVerify [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] formulaire doit être régénérée. Faire dans le fichier MrsrXpathConfig.xml, qui se trouve dans le \< *lecteur*\>: \Program Files\Microsoft BizTalk Accelerator pour le dossier SWIFT\MRSR.  
   
- Le fichier MrsrXpathConfig.xml contient une série de nœuds pour le type de message traité. Chaque nœud de type de message contient une série de nœuds de champ, un pour chaque champ. Vous pouvez modifier les champs à être régénérée en ouvrant MrsrXpathConfig.xml dans un éditeur de texte, tel que le bloc-notes et en ajoutant ou en supprimant un \<chemin d’accès > nœud pour le champ.  
+ Le fichier MrsrXpathConfig.xml contient une série de nœuds pour le type de message traité. Chaque nœud de type de message contient une série de nœuds de champ, un pour chaque champ. Vous pouvez modifier les champs à être régénérée en ouvrant MrsrXpathConfig.xml dans un éditeur de texte, tel que le bloc-notes et en ajoutant ou en supprimant un \<chemin d’accès\> nœud pour le champ.  
   
- Le \<chemin d’accès > nœud contient les chemins d’accès pour le type de message et le champ. Par exemple, l’entrée pour le chemin d’accès de Destination dans le bloc d’en-tête Application d’entrée d’un message MT103 est le suivant :  
+ Le \<chemin d’accès\> nœud contient les chemins d’accès pour le type de message et le champ. Par exemple, l’entrée pour le chemin d’accès de Destination dans le bloc d’en-tête Application d’entrée d’un message MT103 est le suivant :  
   
 ```  
 <path>/*[local-name()='SWIFT_CATEGORY1_MT103_Interchange' and namespace-uri()'http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/Category1/MT103']/*[local-name()='SWIFTHeader' and namespace-uri=']'']/*[local-name()='ApplicationHeaderBlock_Input' and namespace-uri90='']/*[local-name()='DestinationAddress' and namespace-uri()='']</path>  

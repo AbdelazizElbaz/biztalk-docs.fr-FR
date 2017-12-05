@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b01765cc47b0d8eafffcf30160ce9ee6c840003d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ec243c1d1ed1093241e4dc6120c3703fbf2e4542
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-request-sets-in-oracle-e-business-suite-using-the-wcf-service-model"></a>Appeler des ensembles de requêtes dans Oracle E-Business Suite à l’aide du modèle de service WCF
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]vous permet d’exécuter la demande définit dans Oracle E-Business Suite. Demander des jeux sont divisées en une ou plusieurs étapes, et chaque étape contient un ensemble de rapports et des programmes simultanés. Pour plus d’informations sur comment l’adaptateur prend en charge les ensembles de requêtes, consultez [opérations sur demande définit](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-request-sets.md).  
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
   
 |Opération|Signature de méthode|  
 |---------------|----------------------|  
-|Ensemble de la demande|public \<type de retour > \<demande nommez > (param 1, param 2,...)|  
+|Ensemble de la demande|public \<type de retour\> \<demande nommez\>(param 1, param 2,...)|  
   
  Par exemple, le code suivant illustre les signatures de méthode pour une classe de client WCF généré pour le **reqset_singlestage** demander ensemble.  
   

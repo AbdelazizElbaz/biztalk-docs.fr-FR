@@ -15,11 +15,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 194306da3b021e7460b88a3d8e76801a2eeaebba
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 90929015e2d1d0567af0ccc5c51c6aae450d49c8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-use-the-throwdetailederror-switch"></a>L’utilisation du commutateur ThrowDetailedError
 Si une erreur se produit, le client Web reçoit un générique **SoapException**.  
@@ -28,7 +28,7 @@ Si une erreur se produit, le client Web reçoit un générique **SoapException**
   
  Le fichier Web.config contient un commutateur de paramètre d’application, **ThrowDetailedError**. **False** est la valeur par défaut **ThrowDetailedError**. Si vous modifiez le paramètre pour **True**, le serveur proxy retourne des informations sur l’exception interne au client Web, ce qui vous permet de déboguer le service Web publié.  
   
- Le code XML suivant montre la **ThrowDetailedError** commutateur qui apparaît dans le fichier Web.config sous le \<appSettings > nœud :  
+ Le code XML suivant montre la **ThrowDetailedError** commutateur qui apparaît dans le fichier Web.config sous le \<appSettings\> nœud :  
   
 ```  
 <appSettings>  
@@ -40,4 +40,4 @@ Si une erreur se produit, le client Web reçoit un générique **SoapException**
 >  Par défaut, BizTalk Server ne renvoie pas d'informations sur l'exception interne au client Web car celles-ci peuvent contenir des informations personnelles, telles que les piles d'appels de l'application. Après le débogage, vous devez définir le **ThrowDetailedError** à **False**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Débogage de Services Web publiés](../core/debugging-published-web-services.md)
+ [Débogage des services web publiés](../core/debugging-published-web-services.md)

@@ -21,11 +21,11 @@ caps.latest.revision: "27"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0380804039d45efbe3db06b6fc072a3afb8b6b48
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0b199ac25fea412e9912e7989ff1f16e6e0e8d9d
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-configure-an-http-receive-handler"></a>Pour configurer les Gestionnaire de réception HTTP
 La procédure suivante permet de configurer les propriétés d'un gestionnaire de réception HTTP.  
@@ -53,7 +53,7 @@ La procédure suivante permet de configurer les propriétés d'un gestionnaire d
   
 6.  Cliquez sur **OK**.  
   
- [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] est conçu pour traiter efficacement les lots de messages, pas pour traiter un message unique très rapidement. Aussi, si ce gestionnaire de réception doit être utilisé par des emplacements de réception de requête-réponse/bidirectionnels, vous pouvez réduire la latence en procédant comme suit :  
+ BizTalk Server est conçu pour traiter efficacement des lots de messages et ne pas à traiter un message unique très rapidement. Aussi, si ce gestionnaire de réception doit être utilisé par des emplacements de réception de requête-réponse/bidirectionnels, vous pouvez réduire la latence en procédant comme suit :  
   
 -   Définir le **taille du lot** propriété à une valeur de 1.  
   

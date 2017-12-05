@@ -17,27 +17,27 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 56d22e5ff6003dad9767c57eecac626a6c16e243
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9f5877fe04a87a8387340c8e4b004300f41e609e
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="message-editor-pipeline-component"></a>Composant de pipeline Message Editor
 Ce composant vous permet de modifier automatiquement une partie d'un message en plusieurs parties dans un pipeline d'envoi ou de réception. Vous ajoutez ce composant à un pipeline existant pour configurer le remplacement dans le cadre du traitement par défaut.  
   
 ## <a name="building-the-message-editor-pipeline-component-into-an-existing-pipeline"></a>Génération du composant de pipeline Message Editor dans un pipeline existant  
- Pour utiliser le composant de pipeline Message Editor, vous devez l'ajouter à un pipeline existant. Pour plus d’informations, consultez « Création de Pipelines avec le Concepteur de Pipeline » dans [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] aide.  
+ Pour utiliser le composant de pipeline Message Editor, vous devez l'ajouter à un pipeline existant. Pour plus d’informations, consultez « Création de Pipelines avec le Concepteur de Pipeline » dans l’aide de BizTalk Server.  
   
 #### <a name="to-add-the-message-editor-pipeline-component-to-an-existing-pipeline"></a>Pour ajouter le composant de pipeline Message Editor à un pipeline existant  
   
-1.  Démarrez [!INCLUDE[vs2012](../../includes/vs2012-md.md)].  
+1.  Démarrez Visual Studio.  
   
 2.  Dans le menu **Fichier** , pointez sur **Ouvrir**, puis cliquez sur **Projet**.  
   
 3.  Accédez à C:\Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet\SDK\Message Editor Pipeline Component, sélectionnez **MessageEditor.csproj**, puis cliquez sur **Ouvrir**.  
   
-4.  Démarrer [!INCLUDE[vs2012](../../includes/vs2012-md.md)] invite de commandes.  
+4.  Démarrez l’invite de commandes de Visual Studio.  
   
 5.  À l'invite de commandes, accédez à C:\Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet\SDK\Message Editor Pipeline Component\obj\debug.  
   

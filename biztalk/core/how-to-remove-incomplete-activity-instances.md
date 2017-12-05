@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 99c2f77b6883b7ffba997551c4121013a4379267
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2809fd4fcc1d94a96b158ffa46c3e217084a905d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-remove-incomplete-activity-instances"></a>Suppression d'instances d'activités incomplètes
 Lorsqu'un fichier de définition d'analyse BAM est déployé, cinq tables sont créées dans la base de données d'importation principale BAM pour chaque activité définie dans ce fichier. Ces tables sont les suivantes :  
@@ -75,7 +75,7 @@ Lorsqu'un fichier de définition d'analyse BAM est déployé, cinq tables sont c
 |@ActivityName nvarchar(128)|Spécifie le nom de l'instance d'activité incomplète à supprimer.|  
 |@ActivityId nvarchar(128)|(Facultatif) Spécifie que la procédure stockée doit supprimer uniquement l'instance en suspens portant l'identificateur d'instance indiqué.|  
 |@DateThresholddate/heure|(Facultatif) Spécifie que les instances de tous les actifs de la table active antérieures (non égal à et plus anciennes et plus que des anciennes) à la date donnée sont supprimés.|  
-|@NewTableExtensionnvarchar (30)|(Facultatif) Spécifie que la procédure stockée crée de nouvelles tables en concaténant l'extension fournie et le nom des tables d'activités existantes.<br /><br /> Les tables résultantes seront les suivantes :<br /><br /> bam_ActivityName_Active_\<Extension ><br /><br /> bam_ActivityName_ActiveRelationships_\<Extension ><br /><br /> bam_ActivityName_Continuations_\<Extension ><br /><br /> Les instances incomplètes sont déplacées vers les nouvelles tables au lieu d'être purgées de la base de données.<br /><br /> Si les tables existent déjà, la procédure stockée les réutilise ; sinon, elles sont créées. **Important :** si les tables existent déjà, la procédure stockée suppose que leurs schémas correspondent à ceux qui serait utilisé si elles ont été créées. Si un schéma ne correspond pas, la procédure stockée ne pourra pas insérer les enregistrements et l'opération de suppression échouera.|  
+|@NewTableExtensionnvarchar (30)|(Facultatif) Spécifie que la procédure stockée crée de nouvelles tables en concaténant l'extension fournie et le nom des tables d'activités existantes.<br /><br /> Les tables résultantes seront les suivantes :<br /><br /> bam_ActivityName_Active_\<Extension\><br /><br /> bam_ActivityName_ActiveRelationships_\<Extension\><br /><br /> bam_ActivityName_Continuations_\<Extension\><br /><br /> Les instances incomplètes sont déplacées vers les nouvelles tables au lieu d'être purgées de la base de données.<br /><br /> Si les tables existent déjà, la procédure stockée les réutilise ; sinon, elles sont créées. **Important :** si les tables existent déjà, la procédure stockée suppose que leurs schémas correspondent à ceux qui serait utilisé si elles ont été créées. Si un schéma ne correspond pas, la procédure stockée ne pourra pas insérer les enregistrements et l'opération de suppression échouera.|  
   
  `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder'`  
   

@@ -21,11 +21,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8bd102c58f85fd38c2f769f6e4aca2b5fd0d7919
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f566b37cc43f8aca2f0a36143d10d809c008d5cd
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="btarn-send-pipeline"></a>Pipeline d’envoi BTARN
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] prépare un message Framework RNIF (RosettaNet Implementation) pour la transmission du pipeline RNIFSend (RNIFSend.btp). Le pipeline d’envoi inclut les éléments suivants :  
@@ -40,12 +40,12 @@ ms.lasthandoff: 09/20/2017
  Le préprocesseur XML ajoute un en-tête de type de document au message. L’en-tête identifie le schéma DTD (définition) de type de document associé au message. La spécification RNIF nécessite la présence d’un en-tête de type de document pour la transmission de RNIF.  
   
 ## <a name="xml-assembler"></a>Assembleur XML  
- L’assembleur XML est basé sur le [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] assembleur XML. Il transfère les propriétés à partir du contexte de message dans les documents et les enveloppes. Il assemble le message à partir de ses parties XML et les pièces jointes. Il n’effectue pas de validation de message.  
+ L’assembleur XML est basé sur l’assembleur XML de BizTalk Server. Il transfère les propriétés à partir du contexte de message dans les documents et les enveloppes. Il assemble le message à partir de ses parties XML et les pièces jointes. Il n’effectue pas de validation de message.  
   
- Pour plus d’informations sur natif [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] assembleur XML, consultez « Composant de Pipeline assembleur XML » dans [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] aide.  
+ Pour plus d’informations sur natif [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] assembleur XML, consultez « Composant de Pipeline assembleur XML » dans l’aide de BizTalk Server.  
   
 ## <a name="mimesmime-encoder"></a>Encodeur MIME/SMIME  
- L’encodeur MIME/SMIME est basé sur le [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] encodeur MIME/SMIME. Selon les paramètres de protocole dans l’accord de partenariat commercial et les paramètres de la [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] encodeur MIME/SMIME, le [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] encodeur exécute les actions suivantes :  
+ L’encodeur MIME/SMIME est basée sur l’encodeur MIME/SMIME du serveur BizTalk. Selon les paramètres de protocole dans l’accord de partenariat commercial et les paramètres de l’encodeur MIME/SMIME du serveur BizTalk, le [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] encodeur exécute les actions suivantes :  
   
 -   Ajoute un en-tête binaire de 8 octets pour le message, tel que requis pour les messages RNIF 1.1.  
   
@@ -53,7 +53,7 @@ ms.lasthandoff: 09/20/2017
   
 -   Chiffre la charge utile (contenu du service et les pièces jointes), ou le conteneur de charge utile (contenu du service plus en-tête service ainsi que les pièces jointes). Si vous avez défini le **Encoder tous les ports** définition sur le **protocole** onglet de l’accord de partenariat commercial à `False`, l’encodeur chiffre uniquement la charge utile. Si vous avez défini le **Encoder tous les ports** à `True`, l’encodeur chiffrera le conteneur de charge utile.  
   
- Pour plus d’informations sur natif [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] encodeur MIME/SMIME, voir « Composant de Pipeline encodeur MIME/SMIME » dans [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] aide.  
+ Pour plus d’informations sur natif [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] encodeur MIME/SMIME, voir « Composant de Pipeline encodeur MIME/SMIME » dans l’aide de BizTalk Server.  
   
 ## <a name="message-flow"></a>Flux de messages  
  Le flux de messages via le [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] envoyer le pipeline est comme suit :  
@@ -87,4 +87,4 @@ ms.lasthandoff: 09/20/2017
 6.  Pour RNIF 2.01, l’encodeur de calculer le digest sur la première partie du corps du message MIME et conserver le résumé. Elle calcule le digest à l’aide de la méthode définie dans le `Digest` propriété de méthode dans l’accord de partenariat commercial (SHA-1 ou MD5).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Traitement des messages dans BTARN](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)
+ [Traitement de messages dans BTARN](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)

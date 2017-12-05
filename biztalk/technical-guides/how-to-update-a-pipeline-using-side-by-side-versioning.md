@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9c4e8803128f2232905229de3b5de49994e039ff
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8a5b977d8f0d1964df33c2b2f549bd420d0d3179
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-update-a-pipeline-using-side-by-side-versioning"></a>Comment mettre à jour d’un Pipeline à l’aide de la gestion des versions côte à côte
 Pour utiliser un pipeline ajouté par le contrôle de version côte à côte, la simple consiste à sélectionner la version de pipeline qui vient d’être déployé dans le port d’envoi ou emplacement de réception. Cela remplace le pipeline ancien par le nouveau. Toutefois, si vous avez besoin des fonctionnalités côte-à-côte true pour la compatibilité descendante, puis vous devez créer nouveaux ports d’envoi et emplacements de réception et les lier à la nouvelle version de pipeline spécifiée.  
@@ -28,7 +28,7 @@ Pour utiliser un pipeline ajouté par le contrôle de version côte à côte, la
   
 1.  Dans Visual Studio, créez une nouvelle version du composant de pipeline, et signer l’assembly.  
   
-2.  Ajouter le composant de pipeline dans le **composants de Pipeline** dossier (\<*dossier d’installation*> \Pipeline Components).  
+2.  Ajouter le composant de pipeline dans le **composants de Pipeline** dossier (\<*dossier d’installation*\>\Pipeline Components).  
   
 3.  Ajouter le composant de pipeline à votre pipeline.  
   
@@ -36,7 +36,7 @@ Pour utiliser un pipeline ajouté par le contrôle de version côte à côte, la
   
 5.  Ajouter le composant de pipeline dans le global assembly cache (GAC).  
   
- Une fois que vous avez effectué ces étapes, l’assembly de pipeline compilé fait référence à la version correcte du composant de pipeline, et le domaine d’application utilisés par [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] trouverez la nouvelle version du composant de pipeline dans le GAC, au lieu de recherche précédent version du composant de pipeline dans le dossier composants de Pipeline.  
+ Une fois que vous aurez effectué ces étapes, l’assembly de pipeline compilé fait référence à la version correcte du composant de pipeline, et que le domaine d’application utilisé par BizTalk Server trouvera la nouvelle version du composant de pipeline dans le GAC, au lieu de recherche précédent version du composant de pipeline dans le dossier composants de Pipeline.  
   
 ## <a name="see-also"></a>Voir aussi  
- [La mise à jour à l’aide du contrôle de version côte à côte](../technical-guides/updating-using-side-by-side-versioning.md)
+ [Mise à jour en utilisant la gestion des versions côte à côte](../technical-guides/updating-using-side-by-side-versioning.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4f3b2888b21c2c59b01ddaf920d55ccadb79e326
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: e403121b02ecbfee4880328747aaba3fc175a322
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-use-a-custom-web-part-with-oracle-e-business-suite"></a>L’utilisation d’un composant WebPart personnalisé avec Oracle E-Business Suite
 Cette section fournit des informations sur l’utilisation d’un composant WebPart personnalisé avec Microsoft Office SharePoint Server. Pour utiliser un composant WebPart personnalisé, vous devez procédez comme suit :  
@@ -46,19 +46,19 @@ Cette section fournit des informations sur l’utilisation d’un composant WebP
   
 5.  Ajoutez le code requis en fonction de votre problème dans le projet. Pour l’exemple de code qui s’applique à un problème de certain, consultez « Problèmes qui impliquent des composants WebPart personnalisés » dans [considérations relatives à l’utilisation de l’adaptateur Oracle-Business Suite avec SharePoint](../../adapters-and-accelerators/adapter-oracle-ebs/considerations-using-the-oracle-business-suite-adapter-with-sharepoint.md).  
   
-6.  créer le projet ; Build réussie du projet, un fichier .dll, CustomWebPart.dll, est généré dans le \<dossier du projet >/bin/Debug dossier.  
+6.  créer le projet ; Build réussie du projet, un fichier .dll, CustomWebPart.dll, est généré dans le \<dossier du projet \> /bin/Debug dossier.  
   
 7.  **Uniquement pour un ordinateur 64 bits**: signer le fichier CustomWebPart.dll avec un nom fort avant d’effectuer les étapes suivantes. Dans le cas contraire, vous ne serez pas en mesure d’importer et utilisent donc le CustomWebPart.dll dans le portail SharePoint dans « étape 3 : configurer le portail SharePoint pour utiliser le composant WebPart personnalisé. » Pour plus d’informations sur la façon de signer un assembly avec un nom fort, consultez [Comment : signer un Assembly avec un nom fort](https://msdn.microsoft.com/library/xc31ft41.aspx).
   
 ## <a name="step-2-deploy-the-custom-web-part-to-a-sharepoint-portal"></a>Étape 2 : Déployer le composant WebPart personnalisé à un portail SharePoint  
  Vous devez effectuer les opérations suivantes pour rendre le fichier CustomWebPart.dll (composant WebPart personnalisé) qui est créé dans « étape 1 : créer un composant WebPart personnalisée » de cette rubrique utilisable sur le portail SharePoint :  
   
--   **Copiez le fichier CustomWebPart.dll dans le dossier bin du portail SharePoint**: Microsoft Office SharePoint Server crée des portails sous la \<racine du lecteur > : \Inetpub\wwwroot\wss\VirtualDirectories dossier. Un dossier est créé pour chaque portail et peut être identifié avec le numéro de port. Vous devez copier le fichier CustomWebPart.dll créé dans « étape 1 : créer un composant WebPart personnalisée » de cette rubrique pour le \<racine du lecteur > : \Inetpub\wwwroot\wss\VirtualDirectories\\dossier \bin de < numéro_port >. Par exemple, si le numéro de port de votre portail SharePoint est 13614, vous devez copier le fichier CustomWebPart.dll à la \<racine du lecteur > : \Inetpub\wwwroot\wss\VirtualDirectories\13614\bin dossier.  
+-   **Copiez le fichier CustomWebPart.dll dans le dossier bin du portail SharePoint**: Microsoft Office SharePoint Server crée des portails sous la \<racine du lecteur\>: \Inetpub\wwwroot\wss\VirtualDirectories dossier. Un dossier est créé pour chaque portail et peut être identifié avec le numéro de port. Vous devez copier le fichier CustomWebPart.dll créé dans « étape 1 : créer un composant WebPart personnalisée » de cette rubrique pour le \<racine du lecteur\>: \Inetpub\wwwroot\wss\VirtualDirectories\\< numéro_port\>dossier \bin. Par exemple, si le numéro de port de votre portail SharePoint est 13614, vous devez copier le fichier CustomWebPart.dll à la \<racine du lecteur\>: \Inetpub\wwwroot\wss\VirtualDirectories\13614\bin dossier.  
   
     > [!TIP]
     >  Une autre consiste à trouver l’emplacement du dossier de votre portail SharePoint à l’aide de la **Gestionnaire des Services Internet (IIS)** fenêtre (**Démarrer** > **exécuter**  >  **inetmgr**). Recherchez votre portail SharePoint dans le **Gestionnaire des Services Internet (IIS)** fenêtre ([nom_ordinateur] > Sites Web > [nom-portail]), avec le bouton droit, puis cliquez sur **propriétés** dans le menu contextuel. Dans la boîte de dialogue Propriétés du portail SharePoint, cliquez sur le **répertoire de base** onglet, puis sélectionnez le **chemin d’accès Local** boîte.  
   
--   **Ajoutez l’entrée de contrôle sécurisé dans le fichier web.config**: étant donné que le fichier CustomWebPart.dll sera utilisé sur des ordinateurs différents et par plusieurs utilisateurs, vous devez déclarer le fichier en tant que « safe ». Pour ce faire, ouvrez le fichier web.config situé dans le dossier portail SharePoint à \<racine du lecteur > : \Inetpub\wwwroot\wss\VirtualDirectories\\< numéro_port >. Sous le `<SafeControls>` section du fichier web.config, ajoutez l’entrée de contrôle sécurisé suivante :  
+-   **Ajoutez l’entrée de contrôle sécurisé dans le fichier web.config**: étant donné que le fichier CustomWebPart.dll sera utilisé sur des ordinateurs différents et par plusieurs utilisateurs, vous devez déclarer le fichier en tant que « safe ». Pour ce faire, ouvrez le fichier web.config situé dans le dossier portail SharePoint à \<racine du lecteur\>: \Inetpub\wwwroot\wss\VirtualDirectories\\< numéro_port\>. Sous le `<SafeControls>` section du fichier web.config, ajoutez l’entrée de contrôle sécurisé suivante :  
   
     -   **Sur un ordinateur 32 bits :**  
   

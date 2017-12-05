@@ -12,11 +12,11 @@ caps.latest.revision: "19"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 217a34ad256886b945bb0db43edb8fdcbe875ccc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e21bbb02c7952f1735896ede6de6f0cf85ed22f2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="receive-oracle-e-business-suite-change-notifications-incrementally-using-biztalk-server"></a>Recevoir des notifications de modification d’Oracle E-Business Suite incrémentielle à l’aide de BizTalk Server
 > [!IMPORTANT]
@@ -306,7 +306,7 @@ Procedure(WCF.Action) = "PackageApis/SCOTT/ACCOUNT_PKG/PROCESS_RECORDS";
 -   L’adaptateur reçoit un message de notification qui ressemble à ceci :  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <Notification xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/Notification/">  
       <Info>ListenerStarted</Info>   
       <Source>OracleEBSBinding</Source>   
@@ -319,27 +319,27 @@ Procedure(WCF.Action) = "PackageApis/SCOTT/ACCOUNT_PKG/PROCESS_RECORDS";
 -   L’adaptateur exécute la procédure PROCESS_RECORDS. La réponse suivante à partir d’Oracle E-Business Suite est pour la procédure.  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <PROCESS_RECORDSResponse xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/PackageApis/SCOTT/ACCOUNT_PKG">  
       <TABLE_DATA>  
-        \<xs:schema id="NewDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
-          \<xs:element msdata:IsDataSet="true" name="NewDataSet">  
-            \<xs:complexType>  
-              \<xs:sequence>  
-                \<xs:element minOccurs="0" maxOccurs="unbounded" name="NewTable">  
-                  \<xs:complexType>  
-                    \<xs:sequence>  
-                      \<xs:element minOccurs="0" name="TID" type="xs:decimal" />   
-                      \<xs:element minOccurs="0" name="ACCOUNT" type="xs:decimal" />   
-                      \<xs:element minOccurs="0" name="PROCESSED" type="xs:string" />   
-                    \</xs:sequence>  
-                  \</xs:complexType>  
-                \</xs:element>  
-              \</xs:sequence>  
-            \</xs:complexType>  
-          \</xs:element>  
-        \</xs:schema>  
-        \<diffgr:diffgram xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">  
+        <xs:schema id="NewDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
+          <xs:element msdata:IsDataSet="true" name="NewDataSet">  
+            <xs:complexType>  
+              <xs:sequence>  
+                <xs:element minOccurs="0" maxOccurs="unbounded" name="NewTable">  
+                  <xs:complexType>  
+                    <xs:sequence>  
+                      <xs:element minOccurs="0" name="TID" type="xs:decimal" />   
+                      <xs:element minOccurs="0" name="ACCOUNT" type="xs:decimal" />   
+                      <xs:element minOccurs="0" name="PROCESSED" type="xs:string" />   
+                    </xs:sequence>  
+                  </xs:complexType>  
+                </xs:element>  
+              </xs:sequence>  
+            </xs:complexType>  
+          </xs:element>  
+        </xs:schema>  
+        <diffgr:diffgram xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">  
         <NewDataSet xmlns="">  
           <NewTable>  
             <TID>1</TID>   
@@ -353,7 +353,7 @@ Procedure(WCF.Action) = "PackageApis/SCOTT/ACCOUNT_PKG/PROCESS_RECORDS";
           ......  
           ......  
         </NewDataSet>  
-        \</diffgr:diffgram>  
+        </diffgr:diffgram>  
       </TABLE_DATA>  
     </PROCESS_RECORDSResponse>  
     ```  
@@ -363,7 +363,7 @@ Procedure(WCF.Action) = "PackageApis/SCOTT/ACCOUNT_PKG/PROCESS_RECORDS";
 -   La procédure PROCESS_RECORDS met également à jour les lignes pour définir traités à 'y'. Par conséquent, l’adaptateur reçoit une autre notification pour l’opération de mise à jour.  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>  
+    <?xml version="1.0" encoding="utf-8" ?>  
     <Notification xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/Notification/">  
       <Details>  
         <NotificationDetails>  
@@ -386,29 +386,29 @@ Procedure(WCF.Action) = "PackageApis/SCOTT/ACCOUNT_PKG/PROCESS_RECORDS";
 -   Après la deuxième notification, l’adaptateur exécute à nouveau la procédure PROCESS_RECORDS. Toutefois, maintenant, car il n’existe aucun enregistrement où traités colonne est définie sur n », la procédure retourne une réponse vide qui ressemble à ce qui suit.  
   
     ```  
-    \<?xml version="1.0" encoding="utf-8" ?>   
+    <?xml version="1.0" encoding="utf-8" ?>   
     <PROCESS_RECORDSResponse xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/PackageApis/SCOTT/ACCOUNT_PKG">  
       <TABLE_DATA>  
-        \<xs:schema id="NewDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
-          \<xs:element msdata:IsDataSet="true" name="NewDataSet">  
-            \<xs:complexType>  
-              \<xs:sequence>  
-                \<xs:element minOccurs="0" maxOccurs="unbounded" name="NewTable">  
-                  \<xs:complexType>  
-                    \<xs:sequence>  
-                      \<xs:element minOccurs="0" name="TID" type="xs:decimal" />   
-                      \<xs:element minOccurs="0" name="ACCOUNT" type="xs:decimal" />   
-                      \<xs:element minOccurs="0" name="PROCESSED" type="xs:string" />   
-                    \</xs:sequence>  
-                  \</xs:complexType>  
-                \</xs:element>  
-              \</xs:sequence>  
-            \</xs:complexType>  
-          \</xs:element>  
-        \</xs:schema>  
-        \<diffgr:diffgram xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">  
+        <xs:schema id="NewDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
+          <xs:element msdata:IsDataSet="true" name="NewDataSet">  
+            <xs:complexType>  
+              <xs:sequence>  
+                <xs:element minOccurs="0" maxOccurs="unbounded" name="NewTable">  
+                  <xs:complexType>  
+                    <xs:sequence>  
+                      <xs:element minOccurs="0" name="TID" type="xs:decimal" />   
+                      <xs:element minOccurs="0" name="ACCOUNT" type="xs:decimal" />   
+                      <xs:element minOccurs="0" name="PROCESSED" type="xs:string" />   
+                    </xs:sequence>  
+                  </xs:complexType>  
+                </xs:element>  
+              </xs:sequence>  
+            </xs:complexType>  
+          </xs:element>  
+        </xs:schema>  
+        <diffgr:diffgram xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">  
           <NewDataSet xmlns="" />   
-        \</diffgr:diffgram>  
+        </diffgr:diffgram>  
       </TABLE_DATA>  
     </PROCESS_RECORDSResponse>  
     ```  

@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b5fb871bed9f6a4f54261db7e54587c65244344
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f79778801b1ca70d4e8356a24886c792fe447e33
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="step-1-add-header-and-acknowledgment-schemas"></a>Étape 1 : Ajouter des schémas d’en-tête et d’accusé de réception
 Dans cette étape, vous créez un projet basé sur le modèle de projet de BTAHL72XCommon. Ce modèle contient les trois schémas courants pour les en-têtes de message (MSH_25_GLO_DEF.xsd) et les accusés de réception (ACK_24_GLO_DEF.xsd) et (ACK_25_GLO_DEF.xsd). Vous devez inclure ces schémas dans un projet, ainsi que de BizTalk Accelerator pour HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) génère et/ou valide correctement les en-têtes de message et les accusés de réception. Ce processus est commun à toutes les versions de schéma de [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 2.X.  
@@ -33,7 +33,7 @@ Dans cette étape, vous créez un projet basé sur le modèle de projet de BTAHL
   
 4.  Dans le **nom** , tapez **BTAHL7V2XCommon** comme nom du projet.  
   
-5.  Dans le **emplacement** , naviguez jusqu’au  **\<**  *lecteur***: > \Batching didacticiel**.  
+5.  Dans le **emplacement** , naviguez jusqu’au  **\<**  *lecteur***:\>\Batching didacticiel**.  
   
 6.  Cliquez sur **OK**.  
   
@@ -42,9 +42,9 @@ Dans cette étape, vous créez un projet basé sur le modèle de projet de BTAHL
   
 ### <a name="to-assign-a-strong-key-to-the-assembly-and-deploy"></a>Pour attribuer une clé forte à l’assembly et le déployer  
   
-1.  Ouvrez  **[!INCLUDE[vs2012](../../includes/vs2012-md.md)] invite de commandes**.  
+1.  Ouvrez **invite de commandes Visual Studio**.  
   
-2.  Sur le [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] invite de commandes, accédez à la  **\<**  *lecteur***> : \Batching didacticiel** dossier.  
+2.  Sur le [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] invite de commandes, accédez à la  **\<**  *lecteur***\>: \Batching didacticiel** dossier.  
   
 3.  À l’invite de commandes, tapez **sn – k key.snk**, puis appuyez sur ENTRÉE. Vérifiez qu’un message de réussite s’affiche dans la fenêtre Sortie.  
   
@@ -57,9 +57,9 @@ Dans cette étape, vous créez un projet basé sur le modèle de projet de BTAHL
   
 6.  Vérifiez **signer l’assembly** case à cocher.  
   
-7.  Dans **choisir un nom fort** déroulante de fichier de clé de liste, sélectionnez  **\<Parcourir... >**.  
+7.  Dans **choisir un nom fort** déroulante de fichier de clé de liste, sélectionnez  **\<Parcourir... \>**.  
   
-8.  Accédez à \< *lecteur*> : \Batching Tutorial, sélectionnez **key.snk**, puis cliquez sur **ouvrir**.  
+8.  Accédez à \< *lecteur*\>: \Batching Tutorial, sélectionnez **key.snk**, puis cliquez sur **ouvrir**.  
   
 9. Dans la fenêtre de Pages de propriétés du projet BTAHL7V2XCommon, cliquez sur **OK** pour enregistrer vos modifications.  
   

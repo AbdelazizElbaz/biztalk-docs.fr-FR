@@ -12,14 +12,14 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f500deb38df3f8145a2cba582164f14c87ac33d6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 29636a63f7847017b233275ee3dd7c2c389c43be
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="high-availability-for-biztalk-hosts"></a>Haute disponibilité pour les hôtes BizTalk
-[!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]offre une grande souplesse en matière de haute disponibilité, car vous pouvez stratégiquement dédier des hôtes logiques pour exécuter des zones spécifiques de fonctionnalités, telles que recevoir et envoyer des messages ou le traitement des orchestrations, qui peuvent être déployées physiquement sur plusieurs serveurs.  
+BizTalk Server offre une grande souplesse en matière de haute disponibilité, car vous pouvez stratégiquement dédier des hôtes logiques pour exécuter des zones spécifiques de fonctionnalités, telles que recevoir et envoyer des messages ou le traitement des orchestrations, qui peuvent être physiquement déployé sur plusieurs serveurs.  
   
  Un hôte BizTalk est un conteneur logique dans un [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] groupe peut héberger [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] éléments tels que l’adaptateur (y compris des pipelines) des gestionnaires d’envoi, emplacements de réception et orchestrations. En général, il faut regrouper dans un hôte particulier des éléments aux propriétés de mise à l'échelle similaires.  
   
@@ -44,7 +44,7 @@ ms.lasthandoff: 09/20/2017
 |In-process|-Orchestrations<br />-Gestionnaires d’envoi de l’adaptateur<br />-Gestionnaires de réception adaptateur in-process|  
 |Isolé|-Gestionnaires de réception HTTP, SOAP<br />-Gestionnaires de réception n’importe quel autre adaptateur isolé|  
   
- Pour plus d’informations sur la gestion des hôtes BizTalk et les instances d’hôte, consultez [gestion d’hôtes BizTalk et les Instances d’hôte](http://go.microsoft.com/fwlink/?LinkID=154191) (http://go.microsoft.com/fwlink/?LinkID=154191) dans [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] aide.  
+ Pour plus d’informations sur la gestion des hôtes BizTalk et les instances d’hôte, consultez [gestion d’hôtes BizTalk et les Instances d’hôte](http://go.microsoft.com/fwlink/?LinkID=154191) (http://go.microsoft.com/fwlink/?LinkID=154191) dans l’aide de BizTalk Server.  
   
  Pour fournir une haute disponibilité pour les hôtes BizTalk, vous devez disposer des deux ou plusieurs instances d’hôte pour chaque ordinateur hôte (sur deux ordinateurs ou plus) dans votre environnement. En ayant plus d’une instance d’hôte pour chaque ordinateur hôte pour vous assurer que si une instance d’hôte devenue indisponible, les instances d’hôtes sur d’autres ordinateurs qui exécutent des instances du même hôte peut reprendre les fonctions de l’instance d’hôte problématique ou ayant échoué, et que l’ensemble du système continue de fonctionner avec une perturbation minimale.  
   
@@ -59,11 +59,11 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="in-this-section"></a>Dans cette section  
   
--   [Montée en puissance parallèle de l’hôte de réception](../technical-guides/scaling-out-receiving-hosts.md)  
+-   [Montée en charge des hôtes de réception](../technical-guides/scaling-out-receiving-hosts.md)  
   
--   [Gestion de clusters hôtes de réception](../technical-guides/clustering-receiving-hosts.md)  
+-   [Mise en cluster des hôtes de réception](../technical-guides/clustering-receiving-hosts.md)  
   
--   [Mise à l’échelle des hôtes de traitement](../technical-guides/scaling-out-processing-hosts.md)  
+-   [Montée en charge des hôtes de traitement](../technical-guides/scaling-out-processing-hosts.md)  
   
 -   [Montée en charge des hôtes d’envoi](../technical-guides/scaling-out-sending-hosts.md)  
   

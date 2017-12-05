@@ -12,16 +12,16 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 55d33b164033cdd3b966ed1f0e77dd551cd56076
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 853b77e24359d6a833d526fc07166384ea946887
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="privateinitiator-sample"></a>Exemple de PrivateInitiator
-L’exemple PrivateInitiator.odx contient le code pour le processus privé initiateur installé par [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]. Il s’agit d’un processus de privée générique qui envoie et reçoit des messages de contenu de service RNIF à partir de la valeur par défaut SQL basé sur un adaptateur d’envoi et ports de réception.  
+L’exemple PrivateInitiator.odx contient le code pour le processus privé initiateur installé par [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server. Il s’agit d’un processus de privée générique qui envoie et reçoit des messages de contenu de service RNIF à partir de la valeur par défaut SQL basé sur un adaptateur d’envoi et ports de réception.  
   
- Par défaut, le [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] programme d’installation installe l’exemple dans \< *lecteur*> : \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version > Accelerator for RosettaNet\SDK\ PrivateInitiator.  
+ Par défaut, le [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] programme d’installation installe l’exemple dans \< *lecteur*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version\> Accelerator for RosettaNet\SDK\PrivateInitiator.  
   
 ## <a name="sample-contents"></a>Exemple de contenu  
  Le processus privé initiateur est le processus d’entreprise interne à l’initiateur. Le processus privé fournit l’intégration de back-end entre le processus public initiateur et le programme line-of-business back-end. Le processus privé initiateur communique avec le processus public pour initier des messages.  

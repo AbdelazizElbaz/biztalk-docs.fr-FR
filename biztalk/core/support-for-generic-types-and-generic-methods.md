@@ -12,14 +12,14 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a3601be46358a2f751bc44931043731d4e4b6351
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 65d8a17a9ac1f055312f0f1cdf3bc1231319842d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="support-for-generic-types-and-generic-methods"></a>Prise en charge des types génériques et des méthodes génériques
-Le moteur de règles prend en charge l'utilisation de types et méthodes génériques spécialisés dans une règle. En revanche, il ne prend pas en charge l'utilisation des types et méthodes génériques eux-mêmes dans une règle. Par exemple, dans une règle d’entreprise, vous pouvez utiliser **liste**\<*int*>, mais pas **liste**\<T > (à partir de la  **System.Collections.Generic** espace de noms dans la bibliothèque de classes .NET). À l'heure actuelle, l'outil Éditeur des règles d'entreprise ne prend pas en charge la création de règles à l'aide de types et de méthodes génériques spécialisés. Pour bénéficier de cette fonctionnalité, vous devez créer les règles par programme en utilisant le modèle d'objet du moteur de règles. L’exemple de code suivant montre comment utiliser le **liste** classe générique dans une règle d’entreprise :  
+Le moteur de règles prend en charge l'utilisation de types et méthodes génériques spécialisés dans une règle. En revanche, il ne prend pas en charge l'utilisation des types et méthodes génériques eux-mêmes dans une règle. Par exemple, dans une règle d’entreprise, vous pouvez utiliser **liste**\<*int*\>, mais pas **liste**\<T\> (à partir de la  **System.Collections.Generic** espace de noms dans la bibliothèque de classes .NET). À l'heure actuelle, l'outil Éditeur des règles d'entreprise ne prend pas en charge la création de règles à l'aide de types et de méthodes génériques spécialisés. Pour bénéficier de cette fonctionnalité, vous devez créer les règles par programme en utilisant le modèle d'objet du moteur de règles. L’exemple de code suivant montre comment utiliser le **liste** classe générique dans une règle d’entreprise :  
   
 ```  
   

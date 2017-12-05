@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c7cac65ac29af9983ec3024677bc8eedc86c924b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c99c14f16df3f6b98555a4006706eb7804f24a34
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="checklist-planning-for-operations-in-a-secure-environment"></a>Liste de vérification : Planification des opérations dans un environnement sécurisé
 En cours d’exécution [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] dans un environnement sécurisé nécessite des étapes supplémentaires pour le déploiement et la configuration. Alors que les installations du système d’exploitation par défaut ne sont pas en compte, mais les scénarios où les stratégies de sécurité restrictives ont été appliqués, prenez en compte les informations de cette section. Le niveau de restriction appliquée aux serveurs peut-être varier, mais les informations ci-dessous doivent couvrir la plupart des cas et qu’il seraient un un bon point de départ.  
@@ -86,7 +86,7 @@ En cours d’exécution [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbizt
 |Ajuster les quotas de mémoire pour un processus|Compte de Service SQL Server Agent, compte de Service SQL Server|Requis pour exécuter [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]. Pour plus d’informations, consultez [configuration des comptes de Service Windows](http://go.microsoft.com/fwlink/?LinkId=157415) (http://go.microsoft.com/fwlink/?LinkId=157415).|  
 |Outrepasser le contrôle de parcours|Compte de Service SQL Server Agent, compte de Service SQL Server|Requis pour exécuter [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]. Pour plus d’informations, consultez [configuration des comptes de Service Windows](http://go.microsoft.com/fwlink/?LinkId=157415) (http://go.microsoft.com/fwlink/?LinkId=157415).|  
 |Créer des objets globaux|Compte de service SQL Server|Requis par le service SSIS. Pour plus d’informations, consultez [configuration des comptes de Service Windows](http://go.microsoft.com/fwlink/?LinkId=157415) (http://go.microsoft.com/fwlink/?LinkId=157415).|  
-|Permettre aux comptes d’utilisateur et d’ordinateur d’être approuvés pour la délégation|Nom du Cluster de serveurs SQL Server Service compte, les serveurs SQL Server, BizTalk Server, SQL Server|Requis par BizTalk Server. Nom du serveur est dans l’écran \<nom_serveur >$. Pour plus d’informations, consultez [Comment : activer l’authentification Kerberos sur un Cluster de basculement SQL Server](http://go.microsoft.com/fwlink/?LinkId=157417) (http://go.microsoft.com/fwlink/?LinkId=157417).|  
+|Permettre aux comptes d’utilisateur et d’ordinateur d’être approuvés pour la délégation|Nom du Cluster de serveurs SQL Server Service compte, les serveurs SQL Server, BizTalk Server, SQL Server|Requis par BizTalk Server. Nom du serveur est dans l’écran \<nom_serveur\>$. Pour plus d’informations, consultez [Comment : activer l’authentification Kerberos sur un Cluster de basculement SQL Server](http://go.microsoft.com/fwlink/?LinkId=157417) (http://go.microsoft.com/fwlink/?LinkId=157417).|  
 |Ouvrir une session en tant que service|Compte de Service SQL Server Agent, compte de Service SQL Server|Requis pour exécuter [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]. Pour plus d’informations, consultez [configuration des comptes de Service Windows](http://go.microsoft.com/fwlink/?LinkId=157415) (http://go.microsoft.com/fwlink/?LinkId=157415).|  
 |Ouvrir une session en tant que service|Compte de Service d’authentification unique|Requis pour exécuter le Service d’authentification unique de l’entreprise. Pour plus d’informations sur les différents comptes d’utilisateurs, consultez [groupes Windows et les comptes d’utilisateur de BizTalk Server](http://go.microsoft.com/fwlink/?LinkID=155755) (http://go.microsoft.com/fwlink/?LinkID=155755).|  
 |Ouvrez une session en tant que traitement par lots|Compte de Service SQL Server Agent, compte de Service SQL Server|Requis pour exécuter [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]. Pour plus d’informations, consultez [configuration des comptes de Service Windows](http://go.microsoft.com/fwlink/?LinkId=157415) (http://go.microsoft.com/fwlink/?LinkId=157415).|  
@@ -137,4 +137,4 @@ En cours d’exécution [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbizt
 |Groupe utilisateurs d’applications BizTalk|L’autorisation GRANT Execute sur **sp_help_jobhistory** dans **msdb** base de données|Requis par[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Listes de contrôle pour les autres tâches importantes](~/technical-guides/checklists-for-other-important-tasks.md)
+ [Listes de contrôle pour d’autres tâches importantes](~/technical-guides/checklists-for-other-important-tasks.md)

@@ -18,16 +18,16 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ec579716f9ab02389ce9f2d5ae5ec02ef0b30730
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f84cd2de6d5f79062592dbf71947587b6d7a6ff0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="customizing-a-private-process-to-work-with-a-specific-pip"></a>Personnalisation d’un processus privé pour travailler avec une adresse PIP spécifique
 Vous pouvez créer une expression de filtre qui provoque un répondeur orchestration de processus privé pour traiter ou pas les instances de processus de des processus PIP (Partner Interface). Cela vous donne la souplesse de création d’un processus personnalisé privé pour recevoir et traiter certaines instances PIP et d’utilisation des processus privé par défaut toutes les autres instances PIP.  
   
- Pour créer un processus personnalisé privé pour travailler avec un spécifique PIP ou plusieurs PIP spécifique, vous créez une expression de filtre pour la forme réception de l’orchestration de processus privé. Par exemple, l’orchestration PIP3A4PrivateResponder.odx dans les [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Kit de développement logiciel. Il se trouve à \< *lecteur*> : \Program Files\BizTalk \<version > Accelerator for RosettaNet\SDK\PIP3A4Process à l’aide de Business Rules\PIP3A4PrivateResponder.  
+ Pour créer un processus personnalisé privé pour travailler avec un spécifique PIP ou plusieurs PIP spécifique, vous créez une expression de filtre pour la forme réception de l’orchestration de processus privé. Par exemple, l’orchestration PIP3A4PrivateResponder.odx dans les [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Kit de développement logiciel. Il se trouve à \< *lecteur*\>: \Program Files\BizTalk \<version\> Accelerator for RosettaNet\SDK\PIP3A4Process à l’aide de Business Rules\PIP3A4PrivateResponder.  
   
  En plus de créer un processus privé qui traitent uniquement des instances d’un PIP spécifique, vous devez personnaliser le processus privé de BTARN par défaut afin qu’il ne traitera pas les instances pour ce PIP.  
   
@@ -36,7 +36,7 @@ Vous pouvez créer une expression de filtre qui provoque un répondeur orchestra
 1.  Dans [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], créez une orchestration de processus privé répondeur personnalisés pour travailler avec une adresse PIP spécifique. Vous pouvez baser l’orchestration sur l’orchestration de processus privé par défaut BTARN répondeur.  
   
     > [!NOTE]
-    >  Vous pouvez trouver la valeur par défaut orchestration de processus privé de répondeur, nommée PrivateResponder.odx, dans le SDK de BTARN. Il se trouve à  *\<lecteur >*: \Program Files\BizTalk \<version > Accelerator for RosettaNet\SDK\PrivateResponder.  
+    >  Vous pouvez trouver la valeur par défaut orchestration de processus privé de répondeur, nommée PrivateResponder.odx, dans le SDK de BTARN. Il se trouve à  *\<lecteur\>*: \Program Files\BizTalk \<version\> Accelerator for RosettaNet\SDK\PrivateResponder.  
   
 2.  Ajouter une orchestration personnalisée à votre projet BizTalk. Assurez-vous que votre projet contient une référence au fichier Microsoft.Solutions.BTARN.GlobalSchemas.dll.  
   
@@ -67,7 +67,7 @@ Vous pouvez créer une expression de filtre qui provoque un répondeur orchestra
   
 14. Dans le menu **Fichier** , pointez sur **Ouvrir**, puis cliquez sur **Projet**.  
   
-15. Déplacer vers \< *lecteur*> : \Program Files\BizTalk \<version > Accelerator for RosettaNet\SDK\PrivateResponder, sélectionnez **PrivateResponder.odx**, puis cliquez sur  **OK**.  
+15. Déplacer vers \< *lecteur*\>: \Program Files\BizTalk \<version\> Accelerator for RosettaNet\SDK\PrivateResponder, sélectionnez **PrivateResponder.odx**, puis cliquez sur **OK**.  
   
 16. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet, puis cliquez sur **Générer**.  
   

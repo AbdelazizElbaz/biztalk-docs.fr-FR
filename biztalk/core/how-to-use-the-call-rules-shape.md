@@ -17,11 +17,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a634c2e0a97e627925390610bf4c3039c8afc85c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c85badfaf22ff4fb6aebd9ed19c757faaa1f303c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-use-the-call-rules-shape"></a>Utilisation de la forme Appeler règles
 Dans le Concepteur d’Orchestration, vous pouvez utiliser la **appeler règles** forme pour appeler une stratégie d’entreprise.  
@@ -35,7 +35,7 @@ Dans le Concepteur d’Orchestration, vous pouvez utiliser la **appeler règles*
      Avec le bouton droit de la ligne de connexion ou l’espace réservé où vous souhaitez ajouter la forme, pointez sur **insérer une forme** dans le menu contextuel, puis cliquez sur **appeler règles**.  
   
     > [!NOTE]
-    >  Dans [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], vous n’avez pas besoin d’avoir une étendue atomique pour insérer un **appeler règles** forme. Vous pouvez faire glisser un **appeler règles** mettre en forme dans l’aire de conception d’Orchestration à partir de la boîte à outils. Toutefois, dans [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], le **appeler règles** élément de menu est désactivé dans le menu contextuel si vous essayez d’insérer un **appeler règles** forme à l’intérieur d’une orchestration qui ne dispose pas d’une étendue atomique. Il s'agit d'une restriction liée au produit [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+    >  Dans BizTalk Server, vous n’avez pas besoin d’avoir une étendue atomique pour insérer un **appeler règles** forme. Vous pouvez faire glisser un **appeler règles** mettre en forme dans l’aire de conception d’Orchestration à partir de la boîte à outils. Toutefois, dans BizTalk Server, le **appeler règles** élément de menu est désactivé dans le menu contextuel si vous essayez d’insérer un **appeler règles** forme à l’intérieur d’une orchestration qui ne dispose pas d’une étendue atomique. Il s'agit d'une restriction liée au produit [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
 2.  Dans le Concepteur d’Orchestration, sélectionnez la **appeler règles** forme.  
   

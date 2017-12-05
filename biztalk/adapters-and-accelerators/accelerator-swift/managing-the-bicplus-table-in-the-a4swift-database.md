@@ -16,11 +16,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 730998918beb464b00b871f8ab04060a7cd59af6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1a58396a9dd6627f2913da8e3845a99b17cf7698
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="managing-the-bicplus-table-in-the-a4swift-database"></a>La gestion de la Table Bicplus dans la base de données A4SWIFT
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]utilise une table d’entrées BIC pour effectuer la validation BIC. Cette table peut être la table de Bicplus dans les [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] base de données ou une table dans une base de données personnalisée.  
@@ -67,11 +67,11 @@ ms.lasthandoff: 09/20/2017
 ## <a name="importing-sql-views-from-the-a4swift-database-into-a-custom-database"></a>L’importation des vues SQL à partir de la base de données A4SWIFT dans une base de données personnalisé  
  Le [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] programme d’installation installe les deux vues SQL dans le [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] base de données. Une vue est de huit caractères BICs et l’autre est de 11 caractères BICs.  
   
- Si vous utilisez une base de données personnalisée au lieu du [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] base de données, vous devez l’importation de ces vues SQL dans la base de données personnalisé. Pour faire en exécutant le script CreateBICViews.sql dans l’Analyseur de requêtes. Ce script se trouve dans \< *lecteur*> : \Program Files\Microsoft BizTalk Accelerator pour SWIFT/Scripts.  
+ Si vous utilisez une base de données personnalisée au lieu du [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] base de données, vous devez l’importation de ces vues SQL dans la base de données personnalisé. Pour faire en exécutant le script CreateBICViews.sql dans l’Analyseur de requêtes. Ce script se trouve dans \< *lecteur*\>: \Program Files\Microsoft BizTalk Accelerator pour SWIFT/Scripts.  
   
 #### <a name="to-import-sql-views-from-the-a4swift-database-into-a-custom-database"></a>Pour importer des vues SQL à partir de la base de données A4SWIFT dans une base de données personnalisée  
   
-1.  Dans l’Explorateur Windows, accédez à \< *lecteur*> : \Program Files\Microsoft BizTalk Accelerator pour SWIFT\Scripts. Double-cliquez sur **CreateBICViews.sql**.  
+1.  Dans l’Explorateur Windows, accédez à \< *lecteur*\>: \Program Files\Microsoft BizTalk Accelerator pour SWIFT\Scripts. Double-cliquez sur **CreateBICViews.sql**.  
   
 2.  Dans la connexion de la boîte de dialogue, cliquez sur **connexion**.  
   
@@ -84,4 +84,4 @@ ms.lasthandoff: 09/20/2017
 6.  Cliquez sur **Exécuter**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Activer la Validation des Codes d’identificateur de banque](../../adapters-and-accelerators/accelerator-swift/enabling-validation-of-bank-identifier-codes.md)
+ [Activation de la validation des codes BIC](../../adapters-and-accelerators/accelerator-swift/enabling-validation-of-bank-identifier-codes.md)

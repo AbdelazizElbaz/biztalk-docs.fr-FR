@@ -16,11 +16,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d5bd6cdecda9ca2456a770d4cf885fcd420fc18e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 185f3ea674015e02cac2bdaa785c2ee06e67db65
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-back-up-the-master-secret"></a>Comment sauvegarder le Secret principal
 Vous pouvez sauvegarder le secret principal du serveur de secret principal dans un système de fichiers NTFS ou sur un média amovible, tel qu'une disquette.  
@@ -44,9 +44,9 @@ Vous pouvez sauvegarder le secret principal du serveur de secret principal dans 
   
 2.  Sélectionnez l’administrateur approprié, puis cliquez sur **OK**.  
   
-3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur >*: \Program Files\Enterprise Single Sign-On.  
+3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur\>*: \Program Files\Enterprise Single Sign-On.  
   
-4.  Type **ssoconfig – backupSecret  *\<fichier de sauvegarde >***, où  *\<fichier de sauvegarde >* est le chemin d’accès et le nom du fichier où le maître clé secrète est sauvegardé. Par exemple, A:\ssobackup.bak  
+4.  Type **ssoconfig – backupSecret  *\<fichier de sauvegarde\>***, où  *\<fichier de sauvegarde\>*  est le chemin d’accès et le nom de le fichier où le secret principal sera sauvegardé. Par exemple, A:\ssobackup.bak  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -60,4 +60,4 @@ Vous pouvez sauvegarder le secret principal du serveur de secret principal dans 
  [Comment générer le Secret principal](../core/how-to-generate-the-master-secret.md)   
  [Comment restaurer le Secret principal](../core/how-to-restore-the-master-secret.md)   
  [Serveur de secret principal](../core/master-secret-server.md)   
- [Gestion du Secret](../core/managing-the-master-secret.md)
+ [Gestion du secret principal](../core/managing-the-master-secret.md)

@@ -17,17 +17,17 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9221e530266091795260bc7d4fd7e8788e066335
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 78ab62a86e97bf70e07629052a850b5aea2cee27
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="btarnconfig"></a>BtarnConfig
 Vous utilisez l’utilitaire BtarnConfig pour importer des données de configuration dans, ou exporter des données de configuration à partir, un [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] environnement. Ces données de configuration sont les données que vous définissez à l’aide de la Console de gestion BTARN, y compris les paramètres de configuration de processus, des organisations de base, des partenaires et des accords.  
   
 ## <a name="location-in-sdk"></a>Emplacement dans le kit de développement logiciel (SDK)  
- \<*lecteur*> \ Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version > Accelerator for RosettaNet\SDK  
+ \<*lecteur*\>\ Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version\> Accelerator for RosettaNet\SDK  
   
 ## <a name="running-btarnconfig"></a>BtarnConfig en cours d’exécution  
   
@@ -35,7 +35,7 @@ Vous utilisez l’utilitaire BtarnConfig pour importer des données de configura
   
 1.  Ouvrez une invite de commandes.  
   
-2.  Déplacer vers \< *lecteur*> \ Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version > Accelerator for RosettaNet\SDK\\.  
+2.  Déplacer vers \< *lecteur*\>\ Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version\> Accelerator for RosettaNet\SDK\\.  
   
 3.  À l’invite de commandes, tapez **BtarnConfig**, tapez les commutateurs appropriés, puis appuyez sur ENTRÉE.  
   
@@ -62,9 +62,9 @@ BTARNCONFIG /EXPORT <filename>.xml [/H] [/P] [/R] [/A]
   
 |Syntaxe| Description|  
 |------------|-----------------|  
-|\<*nom de fichier*.xml >|Chemin d’accès complet du fichier à importer ou exporter à partir de. Si vous ne fournissez pas un chemin d’accès, BTARN suppose que le chemin d’accès est \< *lecteur*> \ Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version > Accelerator for RosettaNet\SDK.|  
-|**/ IMPORTATION**|Importe les données XML à partir de \< *nom de fichier*.xml > dans la configuration de BTARN.|  
-|**/ EXPORT**|Exporte la configuration de BTARN en tant que données XML dans \< *nom de fichier*.xml >.|  
+|\<*nom de fichier*.xml\>|Chemin d’accès complet du fichier à importer ou exporter à partir de. Si vous ne fournissez pas un chemin d’accès, BTARN suppose que le chemin d’accès est \< *lecteur*\>\ Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version\> Accelerator pour RosettaNet \SDK.|  
+|**/ IMPORTATION**|Importe les données XML à partir de \< *nom de fichier*.xml\> dans la configuration de BTARN.|  
+|**/ EXPORT**|Exporte la configuration de BTARN en tant que données XML dans \< *nom de fichier*.xml\>.|  
 |**/H**|Importe ou exporte les données de configuration de l’organisation d’origine.|  
 |**/P**|Importe ou exporte les données de configuration de serveur partenaire.|  
 |**/R**|Importe ou exporte les données de configuration de processus.|  

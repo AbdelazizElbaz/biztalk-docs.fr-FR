@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b3651d91f9c4b28fae30182ed6ddd18cde1bb3f2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b91a4b65c6e9a9b293e967385b8f0ac4eece1aa4
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="configuring-a-dedicated-tracking-host"></a>Configuration d’un hôte de suivi dédié
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]est optimisé pour le débit, afin de l’orchestration principale et les moteurs de messagerie ne pas réellement déplacent événements ou des messages directement aux bases de données de suivi BizTalk (DTA) ou l’analyse BAM (Business Activity), car cela aurait transférer ces moteurs leur principal tâche d’exécution de processus d’entreprise. Au lieu de cela, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] laisse les événements et les messages dans la base de données MessageBox et les marque comme nécessitant un déplacement vers les bases de données des suivis BizTalk ou d’analyse BAM. Un processus en arrière-plan (l’hôte de suivi), puis déplace les événements pour les bases de données des suivis BizTalk et l’analyse BAM, tout en un SQL Server Agent travail copie les messages suivis à la base de données des suivis BizTalk.  
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
   
  Un suivi instance d’hôte déplace les données de suivi pour les bases de données MessageBox spécifiques, mais il y aura jamais l’hôte de suivi plus d’une instance de déplacer les données d’une base de données MessageBox spécifique. Par exemple, si vous avez trois bases de données MessageBox et que deux instances de l’hôte de suivi, une des instances de l’hôte doit déplacer les données de deux bases de données MessageBox. Ajout d’une troisième instance de l’hôte de suivi distribue le suivi des hôtes de travail à un autre ordinateur exécutant [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Dans ce scénario, ajout d’une quatrième instance de l’hôte de suivi ne serait pas distribuer n’importe quel hôte de suivi plus de travail, mais cela permet de fournir un fichier extra suivi d’instance d’hôte pour la tolérance de panne.  
   
- Pour plus d’informations sur le service Bus d’événements BAM, consultez les rubriques suivantes dans [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] aider à :  
+ Pour plus d’informations sur le service Bus d’événements BAM, consultez les rubriques suivantes dans l’aide de BizTalk Server :  
   
 -   [La gestion de Service Bus d’événements BAM](http://go.microsoft.com/fwlink/?LinkId=154194) (http://go.microsoft.com/fwlink/?LinkId=154194)  
   
@@ -71,4 +71,4 @@ ms.lasthandoff: 09/20/2017
      Si vous désactivez cette case, l'hôte disposera uniquement d'un accès en écriture aux tables de suivi de la base de données MessageBox et n'aura pas accès à la base de données des suivis BizTalk.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Liste de vérification : Configuration de BizTalk Server](../technical-guides/checklist-configuring-biztalk-server.md)
+ [Liste de contrôle : Configuration de BizTalk Server](../technical-guides/checklist-configuring-biztalk-server.md)

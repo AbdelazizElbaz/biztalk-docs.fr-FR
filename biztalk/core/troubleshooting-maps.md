@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fbb5800ba076184f09f0159f030a44e169ac742b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7bb7b3dc8356172989c215dc13e5fd82e46f4689
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="troubleshooting-maps"></a>Dépannage de problèmes liés aux cartes
 Cette rubrique présente des stratégies de dépannage et des informations permettant de résoudre les problèmes liés aux mappages.  
@@ -56,7 +56,7 @@ Cette rubrique présente des stratégies de dépannage et des informations perme
   
  Si vous décidez de personnaliser manuellement votre mappage, vous pouvez modifier la version générée par le compilateur de mappage. Les modifications ne seront pas répercutées par le mappeur et seront perdues la prochaine fois que vous construirez votre solution.  
   
-### <a name="tune-your-map-for-specific-scenarios-using-mapsource"></a>Paramétrage du mappage pour des scénarios spécifiques à l’aide de \<mapsource >  
+### <a name="tune-your-map-for-specific-scenarios-using-mapsource"></a>Paramétrage du mappage pour des scénarios spécifiques à l’aide de \<mapsource\>  
  Vous pouvez modifier certains comportements par défaut du Mappeur en modifiant les attributs de la **mapsource** élément directement dans un fichier source (.btm) de mappage. Vous pouvez ainsi modifier trois comportements :  
   
 -   **Optimiser la génération du code de fonctoid Mappage des valeurs**. vous pouvez modifier le comportement qui gère l'utilisation d'une variable avec les instructions `if`.  
@@ -65,8 +65,8 @@ Cette rubrique présente des stratégies de dépannage et des informations perme
   
 -   **Gérer la syntaxe for-each avec les fonctoids bouclage, conditionnel et mappage des valeurs**. vous pouvez contrôler l'utilisation de l'instruction `xsl:for-each` dans le schéma de destination.  
   
- Pour plus d’informations sur la modification **mapsource**, consultez [la gestion par défaut du Mappeur comportement à l’aide de \<mapsource >](../core/managing-default-mapper-behavior-using-mapsource.md).  
+ Pour plus d’informations sur la modification **mapsource**, consultez [la gestion par défaut du Mappeur comportement à l’aide de \<mapsource\>](../core/managing-default-mapper-behavior-using-mapsource.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Résolution des problèmes de Questions et réponses de général](../core/general-troubleshooting-questions-and-answers.md)   
- [Erreurs courantes](../core/common-errors.md)
+ [Erreurs fréquentes](../core/common-errors.md)

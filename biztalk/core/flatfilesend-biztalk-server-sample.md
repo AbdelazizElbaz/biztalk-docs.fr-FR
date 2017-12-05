@@ -12,11 +12,11 @@ caps.latest.revision: "18"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9bdbc0d4e06e5d6980ec984c8c701f4ee7ded7ff
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5a9e967a8127a07b561e950b084bf799b0e2a4ee
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="flatfilesend-biztalk-server-sample"></a>FlatFileSend (exemple BizTalk Server)
 L'exemple FlatFileSend illustre la manière dont vous pouvez utiliser [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] pour traiter un fichier XML en un fichier plat équivalent.  
@@ -45,7 +45,7 @@ L'exemple FlatFileSend illustre la manière dont vous pouvez utiliser [!INCLUDE[
  Ces éléments sont combinés afin de générer une solution qui accepte les messages de bon de commande au format XML dans l'emplacement de réception et qui les convertisse en bon de commande de fichier plat dans l'emplacement d'envoi.  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
- *\<Exemples de chemin d’accès >*\Pipelines\AssemblerDisassembler\FlatFileSend  
+ *\<Exemples de chemin d’accès\>*\Pipelines\AssemblerDisassembler\FlatFileSend  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -66,13 +66,13 @@ L'exemple FlatFileSend illustre la manière dont vous pouvez utiliser [!INCLUDE[
   
 1.  Dans une fenêtre de commande, accédez au dossier suivant :  
   
-     *\<Exemples de chemin d’accès >*\Pipelines\AssemblerDisassembler\FlatFileSend  
+     *\<Exemples de chemin d’accès\>*\Pipelines\AssemblerDisassembler\FlatFileSend  
   
 2.  Exécutez le fichier Setup.bat, qui effectue les actions suivantes :  
   
     -   Création des dossiers d'entrée (FFInput) et de sortie (FFOutput) associés à cet exemple dans le dossier :  
   
-         *\<Exemples de chemin d’accès >*\Pipelines\AssemblerDisassembler\FlatFileSend  
+         *\<Exemples de chemin d’accès\>*\Pipelines\AssemblerDisassembler\FlatFileSend  
   
     -   compilation du projet [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] de l'exemple ;  
   
@@ -116,7 +116,7 @@ L'exemple FlatFileSend illustre la manière dont vous pouvez utiliser [!INCLUDE[
 ## <a name="see-also"></a>Voir aussi  
 -  [Schémas de fichier plat](../core/flat-file-schemas.md)   
 -  [Pipelines par défaut](../core/default-pipelines.md)   
--  [Pipelines-AssemblerDisassembler (dossier d’exemples BizTalk Server)](../core/pipelines-assemblerdisassembler-biztalk-server-samples-folder.md)   
+-  [Pipelines\AssemblerDisassembler (dossier d’exemples BizTalk Server)](../core/pipelines-assemblerdisassembler-biztalk-server-samples-folder.md)   
 -  **Exemples de scripts WMI**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
--  [Référence de ligne de commande BTSTask](../core/btstask-command-line-reference.md)   
+-  [Référence de la ligne de commande BTSTask](../core/btstask-command-line-reference.md)   
 -  [FlatFileReceive (exemple BizTalk Server)](../core/flatfilereceive-biztalk-server-sample.md)

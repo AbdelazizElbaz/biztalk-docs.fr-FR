@@ -12,11 +12,11 @@ caps.latest.revision: "49"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 17f181933daac5170c517a23f809eb97b54f2900
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5e29a9d3f1256fc24cf0a8f57b8ce0b7b1ba707d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-define-the-business-process"></a>Étape 2 : Définir le processus d'entreprise
 ![Étape 2 sur 4](../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")  
@@ -67,7 +67,7 @@ ms.lasthandoff: 09/20/2017
     |Utiliser|Pour effectuer cette opération|  
     |--------------|----------------|  
     |**Identificateur**|Type **RequestMessage**.|  
-    |**Type de message**|Cliquez sur **schémas**, puis cliquez sur  **\<sélectionner à partir de l’assembly référencé... >**. Dans la fenêtre Sélectionner le Type d’artefact, cliquez sur **EAISchemas**, puis cliquez sur **demande**. Cliquez sur **OK**|  
+    |**Type de message**|Cliquez sur **schémas**, puis cliquez sur  **\<sélectionner dans l’assembly référencé... \>**. Dans la fenêtre Sélectionner le Type d’artefact, cliquez sur **EAISchemas**, puis cliquez sur **demande**. Cliquez sur **OK**|  
   
 4.  À partir de la vue Orchestration, cliquez sur **Messages**, puis cliquez sur **nouveau Message**.  
   
@@ -76,7 +76,7 @@ ms.lasthandoff: 09/20/2017
     |Utiliser|Pour effectuer cette opération|  
     |--------------|----------------|  
     |**Identificateur**|Type **RequestDeclineMessage**.|  
-    |**Type de message**|Cliquez sur **schémas**, puis cliquez sur  **\<sélectionner à partir de l’assembly référencé... >**. Dans la fenêtre Sélectionner le Type d’artefact, cliquez sur **EAISchemas**, puis cliquez sur **RequestDecline**. Cliquez sur **OK**|  
+    |**Type de message**|Cliquez sur **schémas**, puis cliquez sur  **\<sélectionner dans l’assembly référencé... \>**. Dans la fenêtre Sélectionner le Type d’artefact, cliquez sur **EAISchemas**, puis cliquez sur **RequestDecline**. Cliquez sur **OK**|  
   
 #### <a name="to-configure-the-properties-of-the-shapes"></a>Pour configurer les propriétés des formes  
   
@@ -129,7 +129,7 @@ ms.lasthandoff: 09/20/2017
     |Utiliser|Pour effectuer cette opération|  
     |--------------|----------------|  
     |**Nom**|Type **TransformRequestToRequestDeclineMessage**.|  
-    |**Nom de mappage**|Cliquez sur **...** . Dans Configuration de la forme Transformer, procédez comme suit :<br /><br /> Entrez les informations de configuration :<br /><br /> -Cliquez sur **mappage existant**.<br /><br /> Nom de mappage complet :<br /><br /> -Sélectionnez  **\<sélectionner dans l’assembly référencé >**.  Dans le volet gauche, sélectionnez **EAISchemas**.  Dans le volet de droite, sélectionnez EAISchemas.MapToReqDecline.  Cliquez sur **OK**.<br /><br /> Source<br /><br /> -RequestMessage<br /><br /> Destination<br /><br /> -RequestDeclineMessage|  
+    |**Nom de mappage**|Cliquez sur **...** . Dans Configuration de la forme Transformer, procédez comme suit :<br /><br /> Entrez les informations de configuration :<br /><br /> -Cliquez sur **mappage existant**.<br /><br /> Nom de mappage complet :<br /><br /> -Sélectionnez  **\<sélectionner dans l’assembly référencé\>**.  Dans le volet gauche, sélectionnez **EAISchemas**.  Dans le volet de droite, sélectionnez EAISchemas.MapToReqDecline.  Cliquez sur **OK**.<br /><br /> Source<br /><br /> -RequestMessage<br /><br /> Destination<br /><br /> -RequestDeclineMessage|  
   
 11. Dans l’aire de conception, cliquez sur le **Send_1** forme.  
   
@@ -158,4 +158,4 @@ ms.lasthandoff: 09/20/2017
 ## <a name="see-also"></a>Voir aussi  
  [Étape 1 : Ajouter un projet EAIOrchestration à la Solution](../core/step-1-add-eaiorchestration-project-to-the-solution.md)   
  [Étape 3 : Ajouter des Ports à l’Orchestration](../core/step-3-add-ports-to-the-orchestration.md)   
- [Étape 4 : Création du projet EAIOrchestration](../core/step-4-build-the-eaiorchestration-project.md)
+ [Étape 4 : Créer le projet EAIOrchestration](../core/step-4-build-the-eaiorchestration-project.md)

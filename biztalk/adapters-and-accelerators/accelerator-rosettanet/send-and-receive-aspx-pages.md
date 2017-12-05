@@ -31,11 +31,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e6e7f5f215ec2fc3dc85f88ed54ab22280a81fd0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0782c421dfe771cd024b5ce4df893e2aaa45721d
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="send-and-receive-aspx-pages"></a>Envoyer et recevoir des Pages ASPX
 Le [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] les pages ASPX sont les interfaces directes entre [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] et Internet. Les deux pages ASPX sont la page de réception (RNIFReceive.aspx) et de la page d’envoi (fichier RNIFSend.aspx). Chaque page ASPX est une extension correspondant [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] pipeline. Le pipeline nécessite la page ASPX pour gérer les en-têtes de Framework RNIF (RosettaNet Implementation). Le pipeline exécute la plupart du HTTP traitement ; Toutefois, chaque page ASPX effectue le traitement des en-têtes de RNIF HTTP. Les pages de compléter les fonctionnalités dans le [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] adaptateur HTTP.  
@@ -53,7 +53,7 @@ http://localhost:<port number>/RNIFSend.aspx?<query string>
   
  La chaîne de requête inclut les données suivantes qui a besoin de la page d’envoi pour envoyer le message au partenaire et les données que le partenaire doit avoir pour traiter le message :  
   
--   L’URL de partenariat commercial : http://www. \< *adresse*>.com/RNIFReceive.aspx  
+-   L’URL de partenariat commercial : http://www. \< *adresse*\>.com/RNIFReceive.aspx  
   
 -   Le type de réponse : synchronisation ou async  
   

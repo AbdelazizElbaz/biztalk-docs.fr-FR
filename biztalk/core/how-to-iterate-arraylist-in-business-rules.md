@@ -16,11 +16,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 95896b63e5bb982a4778b05970900c989ebc66b1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9010907cfe9fb6d79a8d9fcead533376b014640e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-iterate-arraylist-in-business-rules"></a>Comment effectuer une itération d’ArrayList dans les règles d’entreprise
 Cette section fournit un exemple d’itération sur les membres d’un **ArrayList** dans les règles d’entreprise.  
@@ -46,6 +46,6 @@ Cette section fournit un exemple d’itération sur les membres d’un **ArrayLi
 ## <a name="rule-c"></a>Règle C  
  IF MyClass.MyProperty==2  
   
- PUIS \<faire quelque chose... >  
+ PUIS \<faire quelque chose...\>  
   
  Cette règle exécute une ou des actions lorsque la valeur de propriété de l'objet a une correspondance dans la condition.

@@ -12,11 +12,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b3b81a8c9c605f646a8ac0b6df2045af05eb58e5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: df751526661ddef455be45c4258c331c940fdd47
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="outboundcustomheaders-does-not-have-correct-format"></a>OutboundCustomHeaders n’a pas le format correct
 ## <a name="details"></a>Détails  
@@ -32,11 +32,11 @@ ms.lasthandoff: 09/20/2017
 |Texte du message|OutboundCustomHeaders n'a pas le format correct|  
   
 ## <a name="explanation"></a>Explication  
- La valeur de WCF. InboundHeaders ou WCF. OutboundCustomHeaders n’est pas dans le format suivant : \<en-têtes >...\</headers >.  
+ La valeur de WCF. InboundHeaders ou WCF. OutboundCustomHeaders n’est pas dans le format suivant : \<en-têtes\>...\</headers\>.  
   
 ## <a name="user-action"></a>Action de l'utilisateur  
- Retour à la ligne avec les valeurs de propriété \<en-têtes > élément.  
+ Retour à la ligne avec les valeurs de propriété \<en-têtes\> élément.  
   
  Pour plus d'informations, consultez la ressource suivante dans l'aide de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] :  
   
--   [Utilisation des en-têtes SOAP des Messages WCF avec les composants de Pipeline](../core/using-soap-headers-in-wcf-messages-with-pipeline-components.md)
+-   [Utilisation des en-têtes SOAP dans les messages WCF avec des composants de pipeline](../core/using-soap-headers-in-wcf-messages-with-pipeline-components.md)

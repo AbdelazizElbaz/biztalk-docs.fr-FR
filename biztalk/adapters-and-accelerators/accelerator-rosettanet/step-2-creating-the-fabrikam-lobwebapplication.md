@@ -15,11 +15,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed64aac8ea0cf4073f3085f4491f607373d721b6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0732322d663e51c27bbaab957caa5474cc685326
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-2-creating-the-fabrikam-lobwebapplication"></a>Étape 2 : Création de Fabrikam LOBWebApplication
 Dans cette étape, vous créez l’application métier utilisée par Fabrikam pour envoyer une demande PIP 3A2 à Contoso. Le projet LOBWebApplication est installé dans le [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Kit de développement logiciel. Pour exécuter l’application Web, vous devez créer un [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] répertoire virtuel de Internet Information Services (IIS) et générer le projet LOBWebApplication.  
@@ -42,7 +42,7 @@ Dans cette étape, vous créez l’application métier utilisée par Fabrikam po
   
 5.  Dans la page **Alias du répertoire virtuel** , dans la zone **Alias** , tapez **LOBWebApplication**, puis cliquez sur **Suivant**.  
   
-6.  Sur le **répertoire de contenu du Site Web** , cliquez sur **Parcourir**, sélectionnez le  **\<lecteur > : \Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\SDK\LOBWebApplication** dossier, puis cliquez sur **OK**. Cliquez sur **Suivant**.  
+6.  Sur le **répertoire de contenu du Site Web** , cliquez sur **Parcourir**, sélectionnez le  **\<lecteur\>: \Program Files\Microsoft BizTalk \<version\> Accelerator pour RosettaNet\SDK\LOBWebApplication** dossier, puis cliquez sur **OK**. Cliquez sur **Suivant**.  
   
 7.  Sur le **autorisations d’accès de répertoire virtuel** , cliquez sur **suivant**.  
   
@@ -71,11 +71,11 @@ Dans cette étape, vous créez l’application métier utilisée par Fabrikam po
   
 2.  À partir de la **fichier** menu, pointez sur **ouvrir**, puis cliquez sur **Project\Solution**.  
   
-3.  Dans la boîte de dialogue Ouvrir un projet dans **Regarder dans**, atteindre  **\<lecteur > : \Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\ SDK\LOBWebApplication** , sélectionnez le **LOBWebApplication.sln** solution, puis cliquez sur **ouvrir**.  
+3.  Dans la boîte de dialogue Ouvrir un projet dans **Regarder dans**, atteindre  **\<lecteur\>: \Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\ SDK\ LOBWebApplication**, sélectionnez le **LOBWebApplication.sln** solution, puis cliquez sur **ouvrir**.  
   
 4.  Dans l’Explorateur de solutions, cliquez sur le nœud supérieur (http://localhost/LOBWebApplication), puis cliquez sur **ajouter une référence**.  
   
-5.  Dans la boîte de dialogue Ajouter une référence, cliquez sur **Parcourir** et déplacer vers  **\<lecteur > : \Program Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\bin**.  
+5.  Dans la boîte de dialogue Ajouter une référence, cliquez sur **Parcourir** et déplacer vers  **\<lecteur\>: \Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\bin** .  
   
 6.  **Sélectionnez le Microsoft.Solutions.BTARN.ConfigurationManager.dll et Microsoft.Solutions.BTARN.Shared.dll** assemblys **puis cliquez sur OK.**  
   
@@ -88,4 +88,4 @@ Dans cette étape, vous créez l’application métier utilisée par Fabrikam po
 2.  Sur le **déboguer** menu, cliquez sur **démarrer sans débogage**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Test de la Solution](../../adapters-and-accelerators/accelerator-rosettanet/testing-the-solution.md)
+ [Test de la solution](../../adapters-and-accelerators/accelerator-rosettanet/testing-the-solution.md)

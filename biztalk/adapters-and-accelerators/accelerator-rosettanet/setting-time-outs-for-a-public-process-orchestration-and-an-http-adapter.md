@@ -20,11 +20,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a8f7f15d01759704af6b6b3134c9d36f0e64f8e7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 339f4eb5fa11b23602d05f8cd75c30ca3aa16279
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="setting-time-outs-for-a-public-process-orchestration-and-an-http-adapter"></a>Définition de délais d’expiration pour une Orchestration de processus publics et d’un adaptateur HTTP
 Lorsque vous utilisez une orchestration de processus publics avec un adaptateur HTTP dans un scénario synchrone, vous devez définir correctement les délais d’expiration pour chacun. Le paramètre de délai d’attente pour l’orchestration (durée des) doit être plus petit que le délai d’attente de l’adaptateur HTTP (délai de demande). Il s’agit, car si le paramètre de l’adaptateur HTTP est inférieure, l’adaptateur peut expirer avant de l’orchestration. Ainsi, le contrôle de l’adaptateur du processus. L’orchestration doit être dans le contrôle du processus ; Par conséquent, sa valeur de délai d’attente doit être plus petite.  
@@ -41,7 +41,7 @@ Lorsque vous utilisez une orchestration de processus publics avec un adaptateur 
   
 ### <a name="to-set-the-time-out-setting-for-the-public-process-orchestration"></a>Pour définir le paramètre de délai d’attente pour l’orchestration de processus publics  
   
-1.  Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Microsoft BizTalk \<version > Accelerator for RosettaNet**, puis cliquez sur  **BizTalk Accelerator for RosettaNet Management Console**.  
+1.  Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Microsoft BizTalk \<version\> Accelerator for RosettaNet**, puis cliquez sur  **BizTalk Accelerator for RosettaNet Management Console**.  
   
 2.  Développez [!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)], puis cliquez sur **les paramètres de Configuration de processus**.  
   

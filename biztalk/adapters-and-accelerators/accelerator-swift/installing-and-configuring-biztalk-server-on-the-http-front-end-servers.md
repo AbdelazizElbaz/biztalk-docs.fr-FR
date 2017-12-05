@@ -15,14 +15,14 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 772c240ef95c294e5e884d94b361d4cd0b102b07
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 045a44c05789015d73bc797da14568d2cc3732f8
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="installing-and-configuring-biztalk-server-on-the-http-front-end-servers"></a>Installation et configuration de BizTalk Server sur les serveurs frontaux HTTP
-Cette section décrit comment installer et configurer [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] à utiliser en tant que le serveur frontal HTTP pour l’hébergement du site MRSR et le [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] formulaires de modèle.  
+Cette section décrit comment installer et configurer BizTalk Server à utiliser en tant que le serveur frontal HTTP pour l’hébergement du site MRSR et le [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] formulaires de modèle.  
   
 ### <a name="to-install-and-configure-biztalk-server-on-the-biztalk-http-front-end-servers"></a>Pour installer et configurer BizTalk Server sur les serveurs frontaux HTTP BizTalk  
   

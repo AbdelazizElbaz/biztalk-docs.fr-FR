@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5119b9b896b3b37b24b9b3151c5e11664dda8774
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ec4ed8e39a05f81984dca21794eca3d829ba8f42
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="unexpected-root-element"></a>Élément racine inattendu
 ## <a name="details"></a>Détails  
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/20/2017
 |Texte du message|Élément racine inattendu|  
   
 ## <a name="explanation"></a>Explication  
- Propriété d’en-tête ne figure pas dans \<en-têtes >...\</headers > format. Cette situation s'applique généralement à InboundHeaders et OutboundCustomHeaders.  
+ Propriété d’en-tête ne figure pas dans \<en-têtes\>...\</headers\> format. Cette situation s'applique généralement à InboundHeaders et OutboundCustomHeaders.  
   
 ## <a name="user-action"></a>Action de l'utilisateur  
- Assurez-vous que la propriété d’en-tête est au format \<en-têtes >... \</headers >.
+ Assurez-vous que la propriété d’en-tête est au format \<en-têtes\>... \</headers\>.

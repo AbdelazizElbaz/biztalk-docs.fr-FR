@@ -12,16 +12,16 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e00b31230760d1bb811b987c3b1a926bad803b6d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7d3d9946db7ea9ec1e9d035aa34081c1a11c113e
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="handle-transactions-with-the-oracle-e-business-suite-adapter"></a>Gérer des transactions avec l’adaptateur Oracle E-Business Suite
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]ne lance pas une transaction lors d’une opération dans Oracle E-Business Suite. Au lieu de cela, l’adaptateur effectue les opérations à l’aide du contexte de transaction fourni par les clients de la carte. Afin d’effectuer des opérations dans une transaction à l’aide de la [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)], vous devez :  
   
--   Activer les transactions dans les clients de la carte. Par exemple, pour activer les transactions dans [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)], vous devez sélectionner le **utiliser une Transaction** case à cocher dans la **Transactions** zone de la **Messages** onglet pour un Port WCF-Custom ou WCF-OracleEBS.  
+-   Activer les transactions dans les clients de la carte. Par exemple, pour activer les transactions dans BizTalk Server, vous devez sélectionner le **utiliser une Transaction** case à cocher dans la **Transactions** zone de la **Messages** onglet pour WCF-Custom ou WCF-OracleEBS port.  
   
 -   Définir la valeur de la **UseAmbientTransaction** liaison de propriété **True** dans l’adaptateur. Pour plus d’informations sur la propriété de liaison, consultez [en savoir plus sur l’adaptateur BizTalk pour Oracle E-Business Suite liaison propriétés](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md).  
   
@@ -41,4 +41,4 @@ ms.lasthandoff: 09/20/2017
  Pour plus d’informations sur les opérations entrantes exposés par le [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)], consultez [en quoi les métadonnées de l’adaptateur Surface Oracle E-Business Suite ?](https://msdn.microsoft.com/library/dd788431.aspx).  
   
 ## <a name="see-also"></a>Voir aussi  
-[Comprendre l’adaptateur BizTalk pour Oracle E-Business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/understand-biztalk-adapter-for-oracle-e-business-suite.md)
+[Présentation de l’adaptateur BizTalk pour Oracle E-Business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/understand-biztalk-adapter-for-oracle-e-business-suite.md)

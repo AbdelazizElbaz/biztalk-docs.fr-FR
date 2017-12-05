@@ -13,11 +13,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3dd9b981791b12c0cf94be1b2a2c590f84617566
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c810b8507a98b91c0b906131e127f189f0a4fd0f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configuring-edi-pipeline-properties"></a>Configuration des propriétés du pipeline EDI
 Les propriétés de pipeline permettent de traiter les échanges EDI entrants et sortants lorsque [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ne parvient pas à déterminer l'accord correspondant aux échanges. Dans certains cas, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] utilise la propriété de pipeline pour traiter les échanges. Dans d'autres cas, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] utilise l'accord de secours. Pour plus d’informations, consultez [la Validation d’un EDI de l’échange est configuré](../core/how-validation-of-an-edi-interchange-is-configured.md).  
@@ -43,7 +43,7 @@ Les propriétés de pipeline permettent de traiter les échanges EDI entrants e
 |DetectMID|Permet au Désassembleur EDI d'analyser plusieurs échanges dans un seul message.|True (valeur par défaut)<br /><br /> False|EdiReceive - désassembler<br /><br /> AS2EdiReceive - désassembler|  
 |EdiDataValidation|Active la validation de type EDI (éléments de données) pour les échanges EDI sortants, mais aussi la validation de la longueur de champ, le caractère facultatif et le nombre de répétitions.|True (valeur par défaut)<br /><br /> False|EdiReceive - désassembler<br /><br /> AS2EdiReceive - désassembler<br /><br /> EdiSend - Assembler<br /><br /> AS2EdiSend - Assembler|  
 |EfactDelimiters|Indique les délimiteurs à utiliser dans le cadre du traitement d'un échange entrant. Cette propriété est utilisée si un échange entrant n'a pas de segment UNA.<br /><br /> Les délimiteurs sont les suivants :<br /><br /> -UNA1 (séparateur d’éléments de données composant)<br />-UNA2 (séparateur d’éléments de données)<br />-UNA3 (notation décimale)<br />-UNA4 (indicateur de version)<br />-UNA5 (séparateur de répétition)<br />-UNA6 (terminateur de Segment) **Remarque :** cette propriété est utilisée pour EDIFACT, le traitement uniquement, pas pour X12.|0x3A, 0x2B, 0x2C, 0x3F, 0x20, 0x27 (valeurs par défaut)|EdiReceive - désassembler<br /><br /> AS2EdiReceive - désassembler|  
-IgnoreMessageEncoding|Spécifie que le composant BatchMarker ne définira pas EDI. Propriété de contexte Type_codage \<X12 > ou \<EDIFACT >. Cette propriété s'applique aux pipelines personnalisés utilisés dans le cadre du traitement des messages non-EDI.|False (valeur par défaut)<br /><br /> True|EdiReceive - RésoudreTiers<br /><br /> AS2EdiReceive - RésoudreTiers|  
+IgnoreMessageEncoding|Spécifie que le composant BatchMarker ne définira pas EDI. Propriété de contexte Type_codage \<X12\> ou \<EDIFACT\>. Cette propriété s'applique aux pipelines personnalisés utilisés dans le cadre du traitement des messages non-EDI.|False (valeur par défaut)<br /><br /> True|EdiReceive - RésoudreTiers<br /><br /> AS2EdiReceive - RésoudreTiers|  
 |MaskSecurityInformation|Masque les informations de sécurité d'autorisation/de mot de passe dans la propriété de contexte d'un échange EDI entrant afin d'empêcher toute divulgation d'informations. Cette propriété s'applique aux champs ISA1, ISA2, ISA3 et ISA4 pour les échanges X12, et aux champs UNB6 pour les échanges EDIFACT.|True (valeur par défaut)<br /><br /> False|EdiReceive - désassembler<br /><br /> AS2EdiReceive - désassembler|  
 |PreserveInterchange|Spécifie qu'un lot reçu sera traité sous forme d'unité globale.|False (valeur par défaut)<br /><br /> True|EdiReceive - désassembler<br /><br /> AS2EdiReceive - désassembler|  
 |RouteAckOn2WayPort|Renvoie un accusé de réception EDI via la connexion ouverte d'un port de réception bidirectionnel de requête-réponse.|True (valeur par défaut)<br /><br /> False|EdiReceive - désassembler<br /><br /> AS2EdiReceive - désassembler|  
@@ -60,4 +60,4 @@ IgnoreMessageEncoding|Spécifie que le composant BatchMarker ne définira pas ED
 3.  Dans le **configurer le Pipeline** boîte de dialogue, entrez la valeur de la propriété, puis cliquez sur **OK**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Configuration de la Validation d’un échange EDI](../core/how-validation-of-an-edi-interchange-is-configured.md)
+ [Configuration de la validation d’un échange EDI](../core/how-validation-of-an-edi-interchange-is-configured.md)

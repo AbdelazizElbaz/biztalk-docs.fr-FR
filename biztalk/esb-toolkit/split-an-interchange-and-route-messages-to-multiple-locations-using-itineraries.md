@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4c752c4b98f6a68e0a86ba4a418eab0705a7c513
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 538432f548b1403fd9c0cd566b82eb8cb113f737
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-split-an-interchange-and-route-the-resulting-messages-to-multiple-file-locations-using-distinct-itineraries"></a>Comment : fractionner un échange et de router les Messages résultants vers plusieurs emplacements de fichier à l’aide d’itinéraires distinctes
 ## <a name="goal"></a>Objectif  
@@ -137,7 +137,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-add-a-schemas-project-to-the-patterns-solution"></a>Pour ajouter un projet de schémas à la solution de modèles  
   
-1.  Dans [!INCLUDE[vs2010](../includes/vs2010-md.md)], ouvrez C:\HowTos\Patterns\Patterns.sln.  
+1.  Dans Visual Studio, ouvrez C:\HowTos\Patterns\Patterns.sln.  
   
 2.  Dans l’Explorateur de solutions, cliquez sur **Solution « Modèles »**, pointez sur **ajouter**, puis cliquez sur **nouveau projet**.  
   
@@ -151,7 +151,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  Dans la fenêtre Propriétés, sur le **signature** onglet, sélectionnez le **signer l’assembly** case à cocher.  
   
-6.  Dans le **choisir un fichier de clé de nom fort** la liste déroulante, cliquez sur  **\<nouveau... >**.  
+6.  Dans le **choisir un fichier de clé de nom fort** la liste déroulante, cliquez sur  **\<nouveau... \>**.  
   
 7.  Dans le **créer une clé de nom fort** boîte de dialogue zone, configurez les propriétés suivantes :  
   
@@ -182,7 +182,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-a-business-rules-engine-bre-policy-to-select-an-itinerary-using-custom-message-properties"></a>Pour créer une stratégie du moteur de règles d’entreprise (BRE) pour sélectionner un itinéraire à l’aide des propriétés de message personnalisées  
   
-1.  Cliquez sur **Démarrer** dans la barre des tâches, pointez sur **tous les programmes**, pointez sur  **[!INCLUDE[prague](../includes/prague-md.md)]** , puis cliquez sur **Éditeur des règles d’entreprise**.  
+1.  Cliquez sur **Démarrer** dans la barre des tâches, pointez sur **tous les programmes**, pointez sur **BizTalk Server**, puis cliquez sur **Éditeur des règles d’entreprise**.  
   
 2.  Dans l’Explorateur de stratégies, cliquez sur **stratégies**, puis cliquez sur **ajouter une nouvelle stratégie**. Nom de la stratégie **ResolveItineraryBasedOnCustomer**.  
   
@@ -212,7 +212,7 @@ ms.lasthandoff: 09/20/2017
   
 9. Dans l’Explorateur de faits, cliquez sur le **vocabulaires** onglet. Développez le **ESB. Feuille de route** vocabulaire, développez **Version 1.1**, puis faites glisser le **définir un nom de feuille de route** définition **Actions**.  
   
-10. Cliquez sur  **\<une chaîne vide >** , puis tapez **GlobalBankWestItinerary**.  
+10. Cliquez sur  **\<une chaîne vide\>**  , puis tapez **GlobalBankWestItinerary**.  
   
     > [!NOTE]
     >  Plus loin dans cette rubrique, vous allez créer cette feuille de route pour traiter les messages de GlobalBank West.  
@@ -233,7 +233,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  Dans le **Actions** section, cliquez sur **GlobalBankWestItinerary**, puis cliquez sur **réinitialiser l’argument**.  
   
-8.  Cliquez sur  **\<une chaîne vide >** , puis tapez **GlobalBankEastItinerary.**  
+8.  Cliquez sur  **\<une chaîne vide\>**  , puis tapez **GlobalBankEastItinerary.**  
   
     > [!NOTE]
     >  Plus loin dans cette rubrique, vous allez créer cette feuille de route pour traiter les messages à partir de GlobalBank est.  
@@ -246,7 +246,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-an-esb-itinerary-dsl-model-for-globalbank-west-messages"></a>Pour créer un modèle DSL ESB d’itinéraire pour les messages GlobalBank West  
   
-1.  Dans  **[!INCLUDE[vs2010](../includes/vs2010-md.md)]** , ouvrez C:\HowTos\Patterns\Patterns.sln.  
+1.  Dans **Visual Studio**, ouvrez C:\HowTos\Patterns\Patterns.sln.  
   
 2.  Dans l’Explorateur de solutions, cliquez sur le **ItineraryLibrary** de projet, pointez sur **ajouter**, puis cliquez sur **nouvel itinéraire**.  
   
@@ -324,7 +324,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-an-esb-itinerary-dsl-model-for-globalbank-east-message"></a>Pour créer un modèle DSL ESB d’itinéraire pour le message de GlobalBank est  
   
-1.  Dans  **[!INCLUDE[vs2010](../includes/vs2010-md.md)]** , ouvrez C:\HowTos\Patterns.sln.  
+1.  Dans **Visual Studio**, ouvrez C:\HowTos\Patterns.sln.  
   
 2.  Dans l’Explorateur de solutions, cliquez sur le **ItineraryLibrary** de projet, pointez sur **ajouter**, puis cliquez sur **nouvel itinéraire**.  
   
@@ -404,9 +404,9 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-and-configure-an-esb-on-ramp"></a>Pour créer et configurer un ESB rampe d’entrée  
   
-1.  Cliquez sur **Démarrer** dans la barre des tâches, pointez sur **tous les programmes**, pointez sur  **[!INCLUDE[prague](../includes/prague-md.md)]** , puis cliquez sur **Administration de BizTalk Server**.  
+1.  Cliquez sur **Démarrer** dans la barre des tâches, pointez sur **tous les programmes**, pointez sur **BizTalk Server**, puis cliquez sur **Administration de BizTalk Server**.  
   
-2.  Dans le [!INCLUDE[prague](../includes/prague-md.md)] Console d’Administration, développez **groupe BizTalk**, développez **Applications**, puis développez **Microsoft.Practices.ESB**.  
+2.  Dans la Console Administration de BizTalk Server, développez **groupe BizTalk**, développez **Applications**, puis développez **Microsoft.Practices.ESB**.  
   
 3.  Avec le bouton droit **emplacements de réception**, pointez sur **nouveau**, puis cliquez sur **emplacement de réception unidirectionnel**.  
   
@@ -435,7 +435,7 @@ ms.lasthandoff: 09/20/2017
   
 3.  Cliquez sur **OK** pour fermer la **propriétés de l’emplacement de réception** boîte de dialogue.  
   
-4.  Dans le [!INCLUDE[prague](../includes/prague-md.md)] Console d’Administration, avec le bouton droit le **OnRamp.Itinerary.HowTo** emplacement de réception, puis cliquez sur **activer**.  
+4.  Dans la Console Administration de BizTalk Server, cliquez sur le **OnRamp.Itinerary.HowTo** emplacement de réception, puis cliquez sur **activer**.  
   
 #### <a name="to-test-the-itinerary-selector-and-business-rules"></a>Pour tester le sélecteur d’itinéraire et les règles d’entreprise  
   
@@ -448,19 +448,19 @@ ms.lasthandoff: 09/20/2017
     > [!NOTE]
     >  Bien que les messages sont identiques à l’exception de la valeur de l’élément client, ils ont été traités à l’aide d’itinéraires différents, selon la résolution du composant de pipeline sélecteur d’itinéraire.  
   
-4.  Dans la [!INCLUDE[prague](../includes/prague-md.md)] Console d’Administration, avec le bouton droit le OnRamp.Itinerary.HowTo emplacement de réception, puis cliquez sur Désactiver.  
+4.  Dans la Console Administration de BizTalk Server, avec le bouton droit le OnRamp.Itinerary.HowTo l’emplacement de réception, puis cliquez sur Désactiver.  
   
 5.  Après le **OnRamp.Itinerary.HowTo** recevoir d’emplacement est désactivée, faites un clic droit, puis cliquez sur **supprimer**. Dans le **emplacement de réception de confirmer la suppression** boîte de dialogue, cliquez sur **Oui**.  
   
 ## <a name="additional-resources"></a>Ressources supplémentaires  
  Pour plus d'informations, consultez les rubriques connexes suivantes :  
   
--   [Comment : sélectionner un itinéraire à l’aide d’une stratégie de règles d’entreprise](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
+-   [Guide pratique pour sélectionner un itinéraire à l’aide d’une stratégie de règles métier](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
   
 -   [Activités de développement](../esb-toolkit/development-activities.md)  
   
--   [Installer et exécuter l’exemple de résolution dynamique](../esb-toolkit/installing-and-running-the-dynamic-resolution-sample.md)  
+-   [Installation et exécution de l’exemple de résolution dynamique](../esb-toolkit/installing-and-running-the-dynamic-resolution-sample.md)  
   
--   [À l’aide de la résolution dynamique et le routage](../esb-toolkit/using-dynamic-resolution-and-routing.md)  
+-   [Utilisation de la résolution et du routage dynamiques](../esb-toolkit/using-dynamic-resolution-and-routing.md)  
   
--   [Modèles de routage de messages](../esb-toolkit/message-routing-patterns.md)
+-   [Modèles de routage des messages](../esb-toolkit/message-routing-patterns.md)

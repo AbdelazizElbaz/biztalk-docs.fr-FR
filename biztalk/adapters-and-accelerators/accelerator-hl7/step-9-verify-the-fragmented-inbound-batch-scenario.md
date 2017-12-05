@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a7e57d55be3d72ebe98f685733335db81503384a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 47d5ec8ffa7a7875af7073e60d6578149d532a7a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-9-verify-the-fragmented-inbound-batch-scenario"></a>Étape 9 : Vérifier que le scénario par lot entrant fragmentés
 Dans cette étape, vous vérifiez le scénario fragmenté un lot de trafic entrant.  
@@ -33,9 +33,9 @@ Dans cette étape, vous vérifiez le scénario fragmenté un lot de trafic entra
   
 1.  Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Accessoires**, puis cliquez sur **invite de commandes**.  
   
-2.  À l’invite de commandes, accédez au  **\<* lecteur*> : \Program Files\Microsoft BizTalk \<version > Accelerator HL7\SDK\MLLP utilitaires **.  
+2.  À l’invite de commandes, accédez au  **\<* lecteur*\>: \Program Files\Microsoft BizTalk \<version\> Accelerator HL7\SDK\MLLP utilitaires * *.  
   
-3.  À l’invite de commandes, tapez  **mllpreceive /p 41000/SB 11 /eb 28 /cr 13 /hl7ack «\<*lecteur*> : \Program Files\Microsoft BizTalk \<version > Accelerator for HL7\ Samples\Sample Application accepter ACK.txt**, puis appuyez sur **entrée**. La fenêtre d’invite de commande passe à un état d’attente jusqu'à ce que vous exécutez l’étape 5 et le système reçoit l’entrée.  
+3.  À l’invite de commandes, tapez  **mllpreceive /p 41000/SB 11 /eb 28 /cr 13 /hl7ack «\<*lecteur*\>: \Program Files\Microsoft BizTalk \<version\>Accelerator for HL7\Samples\Sample Application accepter ACK.txt**, puis appuyez sur **entrée**. La fenêtre d’invite de commande passe à un état d’attente jusqu'à ce que vous exécutez l’étape 5 et le système reçoit l’entrée.  
   
     > [!NOTE]
     >  La commande à l’étape 3 s’exécute l’application du récepteur MLLP qui écoute le port 41000. Ce port est associé au port d’envoi qui remet des messages (tel que créé dans [étape 5 : créer un Port d’envoi pour remettre les Messages](../../adapters-and-accelerators/accelerator-hl7/step-5-create-a-send-port-to-deliver-messages.md)). L’outil MllpReceive agit comme l’application métier-qui reçoit les messages et renvoie l’accusé de réception (ACK) à BTAHL7 (tel qu’il est contenu dans l’exemple de fichier exemple Application accepter ACK.txt). L’outil affiche les messages qui lui a été retournés dans la fenêtre d’invite de commandes. La commande à l’étape 3 spécifie les caractères EB, service bus et CR par défaut du message MLLP.  
@@ -45,7 +45,7 @@ Dans cette étape, vous vérifiez le scénario fragmenté un lot de trafic entra
     > [!NOTE]
     >  La commande à l’étape 4 s’exécute l’application du récepteur MLLP écoute le port 41002. Ce port est associé au port d’envoi qui remet les accusés de réception à la source du message de lot (tel que créé dans [étape 6 : créer un Port d’envoi pour remettre les accusés de réception](../../adapters-and-accelerators/accelerator-hl7/step-6-create-a-send-port-to-deliver-acknowledgments.md)). L’outil MllpReceive agit comme l’application line-of-business qui a envoyé le lot d’origine. L’outil affiche les accusés de réception qui lui a été retournés dans la fenêtre d’invite de commandes. La commande à l’étape 4 spécifie les caractères EB, service bus et CR par défaut du message MLLP.  
   
-5.  Répétez les étapes 1 et 2 pour ouvrir une autre fenêtre d’invite de commandes et accédez au répertoire MLLP utilitaires. À l’invite de commandes, tapez  **mllpsend /twoway/SB 11 /eb 28 /cr 13 /f «\<*lecteur*> : \Batching Tutorial\Instances\FragmentedInboundBatch.txt « /p 21000 **, où \<* lecteur*> est la lettre de lecteur de votre installation, puis appuyez sur **entrée**.  
+5.  Répétez les étapes 1 et 2 pour ouvrir une autre fenêtre d’invite de commandes et accédez au répertoire MLLP utilitaires. À l’invite de commandes, tapez  **mllpsend /twoway/SB 11 /eb 28 /cr 13 /f «\<*lecteur*\>: \Batching Tutorial\Instances\FragmentedInboundBatch.txt « /p 21000 **, où \<* lecteur* \> est la lettre de lecteur de votre installation, puis appuyez sur **entrée**.  
   
     > [!NOTE]
     >  La commande à l’étape 5 simule l’envoi du message de lot d’origine au port de réception. La console devrait afficher « les messages envoyés : 1 », indiquant que l’outil MllpSend envoyé le message de lot unique. Si elle n’affiche pas « les messages envoyés : 1 », consultez l’Observateur d’événements. Vérifiez que le texte de la commande entré à l’étape 5, puis résoudre les problèmes de la configuration de l’envoi et ports de réception et l’état de [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] et BTAHL7.  
@@ -68,4 +68,4 @@ Dans cette étape, vous vérifiez le scénario fragmenté un lot de trafic entra
   
 ## <a name="see-also"></a>Voir aussi  
  [Partie 2 : Traitement par lots de dans / lots scénario](../../adapters-and-accelerators/accelerator-hl7/part-2-batch-in-batch-out-scenario.md)   
- [Partie 3 : Scénario de traitement par lots Créer](../../adapters-and-accelerators/accelerator-hl7/part-3-create-batch-scenario.md)
+ [Partie 3 : Scénario de création de lot](../../adapters-and-accelerators/accelerator-hl7/part-3-create-batch-scenario.md)

@@ -12,14 +12,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 06ebfbc9f895525b44174c0e947f5700d54b324f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bdaa0f0639bc640e87ff59e3cee0c229319de4ff
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="monitoring-biztalk-server-with-system-center-operations-manager-2007"></a>Analyse de BizTalk Server avec System Center Operations Manager 2007
-L’analyse de vos applications BizTalk et votre infrastructure avec Microsoft System Center Operations Manager (Operations Manager) est la meilleure approche d’analyse. Microsoft [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)] packs d’administration pour Operations Manager fournissent une analyse proactive et réactive des ordinateurs qui exécutent [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Ces packs d’administration fournissant des dizaines de règles intégrées et personnalisables pour permettre une analyse complète et automatisée de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+L’analyse de vos applications BizTalk et votre infrastructure avec Microsoft System Center Operations Manager (Operations Manager) est la meilleure approche d’analyse. Les packs d’administration de Microsoft BizTalk Server pour Operations Manager fournissent une analyse proactive et réactive des ordinateurs qui exécutent [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Ces packs d’administration fournissant des dizaines de règles intégrées et personnalisables pour permettre une analyse complète et automatisée de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
  Le Pack d’administration de BizTalk Server suivant est disponible pour une utilisation avec Operations Manager :  
   
@@ -29,10 +29,10 @@ L’analyse de vos applications BizTalk et votre infrastructure avec Microsoft S
   
 ## <a name="in-this-section"></a>Dans cette section  
   
--   [Meilleures pratiques pour l’analyse d’Operations Manager 2007](../technical-guides/best-practices-for-monitoring-with-operations-manager-2007.md)  
+-   [Bonnes pratiques pour la surveillance avec Operations Manager 2007](../technical-guides/best-practices-for-monitoring-with-operations-manager-2007.md)  
   
--   [Analyse de la limitation à l’aide de règles de seuil de performances](../technical-guides/monitoring-throttling-using-performance-threshold-rules.md)  
+-   [Surveillance des limitations à l’aide de règles de seuil de performances](../technical-guides/monitoring-throttling-using-performance-threshold-rules.md)  
   
--   [Analyse des serveurs SQL](../technical-guides/monitoring-sql-servers.md)  
+-   [Surveillance des serveurs SQL Server](../technical-guides/monitoring-sql-servers.md)  
   
--   [Surveillance des Applications et des Instances d’hôte](../technical-guides/monitoring-applications-and-host-instances.md)
+-   [Surveillance des applications et des instances d’hôte](../technical-guides/monitoring-applications-and-host-instances.md)

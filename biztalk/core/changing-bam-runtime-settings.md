@@ -15,22 +15,22 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 97d8b9f443c01496b4f435a8e69d53ad3afc9abd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3bc90f401a562ed34e51035ddb8b86d8e9021b4c
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="changing-bam-runtime-settings"></a>Modification des paramètres d'exécution BAM
-En général, vous configurez les composants d'exécution BAM lorsque vous installez Microsoft® [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)]. Vous pouvez modifier les paramètres d'exécution BAM, par exemple lorsque vous souhaitez faire évoluer votre système par unité ou si vous utilisez une stratégie d'expiration du mot de passe.  
+En général, vous configurez les composants d’exécution de l’analyse BAM lorsque vous installez Microsoft® BizTalk Server. Vous pouvez modifier les paramètres d'exécution BAM, par exemple lorsque vous souhaitez faire évoluer votre système par unité ou si vous utilisez une stratégie d'expiration du mot de passe.  
   
 ## <a name="in-this-section"></a>Dans cette section  
   
--   [Schéma de Configuration BAM](../core/bam-configuration-schema.md)  
+-   [Schéma de configuration BAM](../core/bam-configuration-schema.md)  
   
--   [Définition de la fenêtre de temps et les propriétés de tranche de temps](../core/defining-the-time-window-and-time-slice-properties.md)  
+-   [Définition des propriétés de fenêtre de temps et de tranche horaire](../core/defining-the-time-window-and-time-slice-properties.md)  
   
--   [La modification du schéma de Configuration BAM](../core/modifying-the-bam-configuration-schema.md)  
+-   [Modification du schéma de configuration BAM](../core/modifying-the-bam-configuration-schema.md)  
   
 -   [Comment activer le chiffrement entre Analysis Services et la base de données importation principale BAM](../core/enable-encryption-between-analysis-services-and-bam-primary-import-database.md)  
   

@@ -31,11 +31,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f9f8a004c1883a05c3fcf60324f428144591cff4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 20b14539edc6b9b1026ca048feb881ce0d8a6d1e
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-requirements-for-host-initiated-sso"></a>Configuration des conditions requises pour l'authentification unique initiée par l'hôte
 L'authentification unique de l'entreprise et l'authentification unique initiée par l'hôte ont plusieurs aspects en commun. Toutefois, certaines conditions requises concernant la plateforme et Active Directory restent uniques à l'authentification unique initiée par l'hôte. Cette rubrique présente la configuration requise et répertorie les étapes permettant de la créer ou de la vérifier sur votre système.  
@@ -66,7 +66,7 @@ L'authentification unique de l'entreprise et l'authentification unique initiée 
   
 3.  Dans le **exécuter** boîte de dialogue, tapez **cmd**, puis cliquez sur **OK**.  
   
-4.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur > : \Program Files\Enterprise Single Sign-On.  
+4.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. La valeur par défaut est \<lecteur\>: \Program Files\Enterprise Single Sign-On.  
   
 5.  Type **setpsn-hipsvc\computername.domain.com domain\hissvc**  
   
@@ -81,4 +81,4 @@ L'authentification unique de l'entreprise et l'authentification unique initiée 
      Pour plus d’informations sur Kerberos Protocol Transition and Constrained Delegation, accédez à [http://go.microsoft.com/fwlink/?LinkId=195484](http://go.microsoft.com/fwlink/?LinkId=195484).  
   
 ## <a name="see-also"></a>Voir aussi  
- [L’authentification unique initiée par l’hôte](../core/host-initiated-sso.md)
+ [Authentification unique initiée par l’hôte](../core/host-initiated-sso.md)

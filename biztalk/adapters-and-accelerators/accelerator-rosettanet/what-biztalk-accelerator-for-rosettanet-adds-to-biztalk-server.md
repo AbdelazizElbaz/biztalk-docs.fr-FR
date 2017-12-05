@@ -15,14 +15,14 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 96ae60b2731f48d8bef3488ceb8ce4bafa29bdc1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8f9593a00ed9a3429192bcf9f0187fae62511cf6
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="what-biztalk-accelerator-for-rosettanet-adds-to-biztalk-server"></a>BizTalk Accelerator for RosettaNet ajoutée à BizTalk Server
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] génère une [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] système d’intégration dans un système d’intégration compatible avec RosettaNet. Il ajoute tous les éléments que nécessaires pour implémenter une solution compatible avec RosettaNet.  
+[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] génère un [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]système d’intégration de BizTalk Server dans un système d’intégration compatible avec RosettaNet. Il ajoute tous les éléments que nécessaires pour implémenter une solution compatible avec RosettaNet.  
   
  Vous installez [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] sur BizTalk Server. [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]Ajoute des fonctionnalités dans le noyau du moteur de BizTalk Server. Il ajoute des fonctionnalités, outils et utilitaires à ceux fournis par BizTalk Server. Il ajoute également des interfaces de programmation d’application (API) à ce que fournit le kit de développement de logiciel (SDK) BizTalk Server.  
   
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/20/2017
   
 -   [Traitement des messages RNIF](../../adapters-and-accelerators/accelerator-rosettanet/rnif-message-processing.md)  
   
--   [Implémentation d’un PIP](../../adapters-and-accelerators/accelerator-rosettanet/pip-implementation.md)  
+-   [Implémentation PIP](../../adapters-and-accelerators/accelerator-rosettanet/pip-implementation.md)  
   
 -   [Prise en charge CIDX](../../adapters-and-accelerators/accelerator-rosettanet/cidx-support.md)  
   
@@ -40,4 +40,4 @@ ms.lasthandoff: 09/20/2017
   
 -   [Suivi amélioré](../../adapters-and-accelerators/accelerator-rosettanet/enhanced-tracking.md)  
   
--   [Kit de développement logiciel](../../adapters-and-accelerators/accelerator-rosettanet/software-development-kit.md)
+-   [Kit de développement logiciel (SDK)](../../adapters-and-accelerators/accelerator-rosettanet/software-development-kit.md)

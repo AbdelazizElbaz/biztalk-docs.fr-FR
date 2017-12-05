@@ -19,11 +19,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c6a70e6bc4062a6c2865c9adb8f76d68a078e965
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cebc9e3fb8382fecf7791d14d52a21ac96f77cde
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="operations-on-idocs-in-sap"></a>Opérations sur IDOC dans SAP
 IDOC sont des documents de type EDI standardisés qui prend en charge par SAP pour la communication asynchrone avec SAP et les systèmes non-SAP. IDOC sont utilisés pour envoyer et recevoir des documents telles que les commandes, par exemple, « business » ou un système SAP d’un partenaire commercial ou un programme externe.  
@@ -109,7 +109,7 @@ Segment header (DOCNUM is one of the fields here)  |  Segment data
     > [!NOTE]
     >  À l’aide de la **réception** opération, vous pouvez également recevoir des IDOC plusieurs.  
   
--   **ReceiveIdoc**. Cette opération permet de recevoir un IDOC à partir du système SAP à l’aide d’un schéma faiblement typée. Le schéma pour cette opération expose IDOC sous la forme d’un champ de chaîne unique composé de l’enregistrement de contrôle et l’enregistrement de données. Cette opération reçoit IDOC sous forme de chaîne dans un message XML sous la \<idocData > balise.  
+-   **ReceiveIdoc**. Cette opération permet de recevoir un IDOC à partir du système SAP à l’aide d’un schéma faiblement typée. Le schéma pour cette opération expose IDOC sous la forme d’un champ de chaîne unique composé de l’enregistrement de contrôle et l’enregistrement de données. Cette opération reçoit IDOC sous forme de chaîne dans un message XML sous la \<idocData\> balise.  
   
      Cela indique une opération visible pour tous les IDOC exposées par le système SAP et est disponible sous la racine **IDOC** nœud dans le [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] ou [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)].  
   
@@ -117,7 +117,7 @@ Segment header (DOCNUM is one of the fields here)  |  Segment data
   
 -   Si la valeur « Typé », le schéma XML est fortement typé pour l’IDOC spécifique en cours de réception. (Le schéma pour ce message peut être consulté dans les opérations de réception. Notez que le schéma est différent des IDOC différents). Il en résulte un IDOC XML.  
   
--   Si la valeur « Chaîne », les données IDOC entrantes sont retournées en tant que valeur de chaîne. (Le schéma pour ce message peut être consulté à partir de l’opération ReceiveIdoc). Il en résulte un message XML avec le \<idocData > balise.  
+-   Si la valeur « Chaîne », les données IDOC entrantes sont retournées en tant que valeur de chaîne. (Le schéma pour ce message peut être consulté à partir de l’opération ReceiveIdoc). Il en résulte un message XML avec le \<idocData\> balise.  
   
 -   Si la valeur « Rfc », le schéma de message correspond au schéma RFC (ou tRFC) pour les opérations de RFC IDOC_INBOUND_ASYNCHRONOUS ou INBOUND_IDOC_PROCESS, selon la version IDOC entrante. Si vous spécifiez cette propriété de liaison, vous devez utiliser le IDOC_INBOUND_ASYNCHRONOUS ou INBOUND_IDOC_PROCESS RFC pour recevoir l’IDOC. Dans les deux premières options, l’adaptateur utilise en interne cette RFC. Dans cette option, vous utilisez explicitement cette RFC pour recevoir un IDOC.  
   

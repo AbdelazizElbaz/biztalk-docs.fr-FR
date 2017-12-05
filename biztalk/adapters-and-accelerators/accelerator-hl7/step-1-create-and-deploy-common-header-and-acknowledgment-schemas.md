@@ -13,11 +13,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a134071ee1973961e0fb4ed9b4da73ad87d8dbb1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 222f78232afd988e5bb47b2aa12bb75eb4635ce5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-create-and-deploy-common-header-and-acknowledgment-schemas"></a>Étape 1 : Créer et déployer des en-tête commun et schémas d’accusé de réception
 Vous utilisez le schéma d’en-tête pour valider l’en-tête (segment MSH) de l’instance de message. Le schéma d’accusé de réception vous permet de générer l’accusé de réception pour l’instance de message. Ce processus est commun à toutes les versions de schéma HL7.  
@@ -45,7 +45,7 @@ Vous utilisez le schéma d’en-tête pour valider l’en-tête (segment MSH) de
   
 1.  Démarrez une **invite de commandes Visual Studio 2012**.  
   
-2.  À la [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] invite de commandes, remplacez votre répertoire à la \< *lecteur*> : \Program Files\Microsoft BizTalk \<version > Accelerator pour le dossier du didacticiel de HL7\SDK\Interrogative.  
+2.  À la [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] invite de commandes, remplacez votre répertoire à la \< *lecteur*\>: \Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\Interrogative Dossier Tutorial.  
   
 3.  À l’invite de commandes, tapez **sn – k key.snk**, puis appuyez sur **entrée**. Vérifiez qu’un message de réussite s’affiche dans la fenêtre Sortie.  
   
@@ -58,7 +58,7 @@ Vous utilisez le schéma d’en-tête pour valider l’en-tête (segment MSH) de
   
 6.  Dans le volet droit, faites défiler jusqu'à la **nom fort** , cliquez sur le champ situé à droite de **fichier de clé d’Assembly**, puis cliquez sur le bouton de sélection (...).  
   
-7.  Dans la boîte de dialogue de fichier de clé d’Assembly, accédez à \< *lecteur*> : \Program Files\Microsoft BizTalk \<version > Accelerator for HL7\SDK\Interrogative didacticiel, cliquez sur **key.snk**, puis cliquez sur **ouvrir**.  
+7.  Dans la boîte de dialogue de fichier de clé d’Assembly, accédez à \< *lecteur*\>: \Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\Interrogative didacticiel, cliquez sur **key.snk**, puis cliquez sur **ouvrir**.  
   
 8.  Dans la boîte de dialogue Pages de propriétés Interrogative_2XSchemas, cliquez sur **OK** pour enregistrer vos modifications.  
   

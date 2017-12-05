@@ -18,14 +18,14 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: af660403bb45b25a3ceb31163ecc8a442f0ce7de
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ad5f8d9c9436f9d32f6adbb30de9ac0efc9948f8
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="administration-and-run-time-tools"></a>Outils d’administration et exécution
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] et [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] fournissent un ensemble d’outils pour exécuter des tâches d’administration et d’exécution, telles que le déploiement, de gestion de la configuration, d’administration, de gestion des règles d’entreprise et l’analyse. Pour plus d’informations sur [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] outils, consultez [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)] aide.  
+[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server et [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] fournissent un ensemble d’outils pour exécuter des tâches d’administration et d’exécution, telles que le déploiement, de gestion de la configuration, d’administration, de gestion des règles d’entreprise et l’analyse. Pour plus d’informations sur [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] outils, consultez [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]à l’aide de BizTalk Server.  
   
 ## <a name="biztalk-explorer"></a>Explorateur BizTalk  
  Vous utilisez l’Explorateur BizTalk pour configurer et gérer des projets, les tiers et les orchestrations. L’Explorateur BizTalk affiche le contenu de la base de données de Configuration, des éléments tels que les assemblys, les ports et les parties.  
@@ -53,4 +53,4 @@ ms.lasthandoff: 09/20/2017
  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]prend en charge de [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] des analyses de performances pour l’état de la connexion et le débit.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Outils et fonctionnalités de BizTalk Server et de BTARN](../../adapters-and-accelerators/accelerator-rosettanet/tools-and-features-of-biztalk-server-and-btarn.md)
+ [Outils et fonctionnalités BizTalk Server et BTARN](../../adapters-and-accelerators/accelerator-rosettanet/tools-and-features-of-biztalk-server-and-btarn.md)

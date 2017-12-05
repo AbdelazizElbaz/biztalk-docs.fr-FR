@@ -16,11 +16,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4f6000c95b94570b5f058073537fa926fd1651c4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 42adf8f614f124c9b17597a44cdaaba9d7ed4f93
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="creating-a-partitioned-view-in-the-archiving-database"></a>Création d'une vue partitionnée dans la base de données d'archivage
 Lorsque vous exécutez le lot de gestion de données BAM (BAM_DM_`<activity name>`NomActivité>), l'analyse BAM copie chaque partition de la base de données d'importation principale BAM dans une table distincte de la base de données des archives BAM. Si vous détachez la base de données des archives et la rattachez à des fins de requête, il sera difficile de localiser les données pour votre requête.  
@@ -40,7 +40,7 @@ Lorsque vous exécutez le lot de gestion de données BAM (BAM_DM_`<activity name
   
 3.  Sur le **requête** menu, pointez sur **résultats** puis cliquez sur **résultats dans du texte**.  
   
-4.  Copiez le script SQL suivant dans le volet de requête. Remplacez \<nom de l’activité > avec votre nom de l’activité, puis remplacez `<view type>` avec l’option **Instances** afficher pour l’instance ou **relations** pour une vue de relation.  
+4.  Copiez le script SQL suivant dans le volet de requête. Remplacez \<nom de l’activité\> avec votre nom de l’activité, puis remplacez `<view type>` avec l’option **Instances** afficher pour l’instance ou **relations** pour une vue de relation.  
   
     ```  
     set nocount on  

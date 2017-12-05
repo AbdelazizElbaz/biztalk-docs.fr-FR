@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 62313528ce406347b1a7f11abf9aa3db1dd5f8e6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d03c969dc056e251d8109ce5bc0a29c16f8ffeda
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="resubmission-notes-and-restrictions"></a>Nouvelle soumission Remarques et Restrictions
 Les notes et les restrictions suivantes s’appliquent au processus renvoyés :  
@@ -25,7 +25,7 @@ Les notes et les restrictions suivantes s’appliquent au processus renvoyés :
   
 -   L’URL par défaut de WCF rampe est http://localhost/ESB.ItineraryServices.WCF/ProcessItinerary.svc.  
   
--   Le fichier Web.config du portail définit les détails de point de terminaison pour le WCF rampe d’entrée dans le  **\<Client >** nœud de la  **\<System.ServiceModel >** section. Voici la valeur par défaut.  
+-   Le fichier Web.config du portail définit les détails de point de terminaison pour le WCF rampe d’entrée dans le  **\<Client\>**  nœud de la  **\<System.ServiceModel\>**  section. Voici la valeur par défaut.  
   
     ```  
     <endpoint  
@@ -41,7 +41,7 @@ Les notes et les restrictions suivantes s’appliquent au processus renvoyés :
   
 -   L’URL par défaut pour le SOAP (ASMX) rampe d’entrée est http://localhost/ESB.ItineraryServices/ProcessItinerary.asmx.  
   
--   Le fichier Web.config du portail définit la configuration pour le SOAP (ASMX) rampe d’entrée dans le  **\<applicationSettings >** section. Voici la valeur par défaut.  
+-   Le fichier Web.config du portail définit la configuration pour le SOAP (ASMX) rampe d’entrée dans le  **\<applicationSettings\>**  section. Voici la valeur par défaut.  
   
     ```  
     <setting   

@@ -17,18 +17,18 @@ caps.latest.revision: "29"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bae0b72eb323e75a8ecf9563b4fa0e0bc1b725d8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ac21ad1348dbc934c81d87f3c477977eeecd2ccf
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-import-a-policy"></a>Comment importer une stratégie
 Cette rubrique explique comment importer une stratégie dans un groupe BizTalk ou dans une application BizTalk à l'aide respectivement de la console Administration de BizTalk Server ou de l'outil de ligne de commande BTSTask.  
   
  Vous pouvez créer une stratégie à l’aide de l’éditeur des règles d’entreprise, comme décrit dans [création des règles d’entreprise à l’aide de l’éditeur des règles d’entreprise](../core/creating-business-rules-using-the-business-rule-composer.md), puis l’importez directement, ou vous pouvez exporter une stratégie à partir d’un autre groupe BizTalk, comme décrit dans [Comment exporter une stratégie](../core/how-to-export-a-policy.md) , puis l’importer.  
   
- L'importation d'une stratégie l'enregistre dans la base de données du moteur de règles du groupe BizTalk. Une fois la stratégie importée, vous pouvez l'afficher dans la console Administration de BizTalk Server. Si vous utilisez la console Administration de BizTalk Server pour importer une stratégie, elle s’affichera dans le \<tous les artefacts > nœud pour le groupe BizTalk. Vous pouvez ensuite le publier pour le rendre disponible pour l’ajouter à une application BizTalk, comme décrit dans [comment publier une stratégie](../core/how-to-publish-a-policy.md). Si vous utilisez l'outil de ligne de commande BTSTask pour importer une stratégie, celle-ci sera automatiquement publiée et s'affichera dans le dossier Stratégies de l'application dans laquelle vous l'avez importée.  
+ L'importation d'une stratégie l'enregistre dans la base de données du moteur de règles du groupe BizTalk. Une fois la stratégie importée, vous pouvez l'afficher dans la console Administration de BizTalk Server. Si vous utilisez la console Administration de BizTalk Server pour importer une stratégie, elle s’affichera dans le \<tous les artefacts\> nœud pour le groupe BizTalk. Vous pouvez ensuite le publier pour le rendre disponible pour l’ajouter à une application BizTalk, comme décrit dans [comment publier une stratégie](../core/how-to-publish-a-policy.md). Si vous utilisez l'outil de ligne de commande BTSTask pour importer une stratégie, celle-ci sera automatiquement publiée et s'affichera dans le dossier Stratégies de l'application dans laquelle vous l'avez importée.  
   
  Lorsque vous importez une stratégie, gardez les points importants suivants à l'esprit :  
   
@@ -60,13 +60,13 @@ Cette rubrique explique comment importer une stratégie dans un groupe BizTalk o
   
 1.  Cliquez sur **Démarrer**, cliquez sur **tous les programmes**, cliquez sur [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], puis cliquez sur **Administration de BizTalk Server**.  
   
-2.  Dans l’arborescence de la console, développez [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], développez le groupe BizTalk dans lequel vous souhaitez importer la stratégie, développez **Applications**, puis développez  **\<tous les artefacts >**.  
+2.  Dans l’arborescence de la console, développez [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], développez le groupe BizTalk dans lequel vous souhaitez importer la stratégie, développez **Applications**, puis développez  **\<tous les artefacts\>** .  
   
 3.  Avec le bouton droit **stratégies**, puis cliquez sur **importation**.  
   
 4.  Recherchez le fichier .xml contenant la stratégie et cliquez sur **ouvrir**.  
   
-     La stratégie est importée dans le groupe et s’affiche dans le **stratégies** dossier de  **\<tous les artefacts >**.  
+     La stratégie est importée dans le groupe et s’affiche dans le **stratégies** dossier de  **\<tous les artefacts\>**.  
   
 #### <a name="using-the-command-line"></a>À l’aide de la ligne de commande  
   

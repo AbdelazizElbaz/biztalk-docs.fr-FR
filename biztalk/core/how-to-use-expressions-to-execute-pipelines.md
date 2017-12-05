@@ -31,11 +31,11 @@ caps.latest.revision: "26"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e5a6090e0d7322a0e5b10d13016c073b73074392
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 08f5933d3592d391087196f31185e279c40c4836
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-use-expressions-to-execute-pipelines"></a>Utilisation d'expressions pour exécuter des pipelines
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] permet d'appeler de manière synchrone un pipeline à partir d'une orchestration. Cela permet aux orchestrations d'exploiter le traitement des messages encapsulés au sein d’un pipeline (envoi ou réception) contre un ensemble de données sans avoir à envoyer ces données via l'infrastructure de messagerie.  
@@ -152,9 +152,9 @@ ms.lasthandoff: 09/20/2017
   
  Le **Message** propriété de la **XLANGPipelineManagerException** classe contient les détails de l’erreur d’exécution du pipeline. Ces détails se présentent au format suivant.  
   
--   Échec de l’exécution du pipeline \<type de pipeline >.  Détails de l’erreur \<mis en forme le message d’erreur >.  
+-   Échec de l’exécution du pipeline \<type de pipeline\>.  Détails de l’erreur \<mise en forme du message d’erreur\>.  
   
- Dans ce message, \<type de pipeline > est le nom de la classe de pipeline et \<mis en forme le message d’erreur > est une description de l’erreur spécifique qui s’est produite lors de l’exécution du pipeline.  
+ Dans ce message, \<type de pipeline\> est le nom de la classe de pipeline et \<mise en forme du message d’erreur\> est une description de l’erreur spécifique qui s’est produite lors de l’exécution du pipeline.  
   
  Par exemple, si une orchestration appelle un pipeline de réception et que l’exécution du pipeline échoue, car aucun des composants du pipeline reconnaît le message, les valeurs de la **XLANGPipelineManagerException**de propriétés sont être :  
   
@@ -167,5 +167,5 @@ ms.lasthandoff: 09/20/2017
   
 |Propriété XLANGPipelineManagerException|Valeur|  
 |--------------------------------------------|-----------|  
-|Message|Il s'est produit une erreur lors de l'exécution du pipeline d’envoi "MyPipelines.SendPipeline".  Détails de l’erreur : « Impossible de valider le document : « le \<nom d’élément > élément n’est pas valide - la valeur \<valeur de l’élément > n’est pas valide selon son type de données 'String' - échouée de la contrainte Pattern. » »|  
+|Message|Il s'est produit une erreur lors de l'exécution du pipeline d’envoi "MyPipelines.SendPipeline".  Détails de l’erreur : « Impossible de valider le document : « le \<nom de l’élément\> élément n’est pas valide - la valeur \<valeur de l’élément\> n’est pas valide selon son type de données 'String' - échouée de la contrainte Pattern. » »|  
 |Composant|“Microsoft.BizTalk.Component.XmlValidator”|

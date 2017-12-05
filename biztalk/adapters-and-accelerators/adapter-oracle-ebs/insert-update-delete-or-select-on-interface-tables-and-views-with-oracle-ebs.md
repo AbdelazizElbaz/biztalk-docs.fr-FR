@@ -12,11 +12,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ef4765909b181a9074ffa6e52c81cdab01c1e522
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: adc837fb72c0e18370d28450bf40f162f9849230
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="insert-update-delete-or-select-on-interface-tables-and-interface-views-with-oracle-e-business-suite"></a>Insérer, mettre à jour, supprimer ou sélectionnez des tables d’interface et les vues de l’interface avec Oracle E-Business Suite
 Le [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]surfaces un ensemble d’opérations standard, telles que Insert, Update, Delete, Select interface tables et vues. Cette rubrique fournit des instructions sur la façon d’effectuer ces opérations à l’aide de l’adaptateur. Pour plus d’informations sur la façon dont l’adaptateur prend en charge ces opérations, consultez [opérations sur les Tables d’Interface et les vues de l’Interface](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-interface-tables-and-interface-views.md). Pour plus d’informations sur la structure du message SOAP pour ces opérations, consultez [des schémas de Message pour Insert, Update, Delete et sélectionnez les opérations](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-insert-update-delete-and-select-operations.md).  
@@ -205,7 +205,7 @@ Le [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinesssho
  L’orchestration consomme le message et l’envoie à Oracle E-Business Suite. La réponse à partir d’Oracle E-Business Suite est enregistrée dans l’autre emplacement de fichier définie dans le cadre de l’orchestration. Par exemple, la réponse à partir d’Oracle E-Business Suite pour le précédent message de demande est la suivante :  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <InsertResponse xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/InterfaceTables/AR/AR/AR_ARCHIVE_PURGE_INTERIM">  
   <InsertResult>1</InsertResult>   
 </InsertResponse>  

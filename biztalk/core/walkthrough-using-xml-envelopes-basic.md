@@ -18,11 +18,11 @@ caps.latest.revision: "17"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1555abddd218d28c360ee5364fa30fabaed47aa0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9090c4ee7d576bb7ab610cd81637680d837b2cae
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="walkthrough-using-xml-envelopes-basic"></a>Procédure pas à pas : Utilisation d’enveloppes XML (Basic)
 Cet exemple illustre le désassemblage de base d'enveloppes XML par l'implémentation en partie d'un système de suivi des erreurs fictif. Cet exemple remplit les conditions suivantes :  
@@ -105,7 +105,7 @@ Cet exemple illustre le désassemblage de base d'enveloppes XML par l'implément
   
 3.  Modifiez le nom du nœud racine de « Root » en « Envelope ».  
   
-4.  Marquez le schéma en tant que schéma d'enveloppe. Cliquez sur le  **\<schéma >** nœud. Dans le volet Propriétés, définissez la propriété de référence du schéma **enveloppe** à `OK`.  
+4.  Marquez le schéma en tant que schéma d'enveloppe. Cliquez sur le  **\<schéma\>**  nœud. Dans le volet Propriétés, définissez la propriété de référence du schéma **enveloppe** à `OK`.  
   
 5.  Définir le **XPath de corps** propriété. Pour ce faire, cliquez sur le **enveloppe** nœud. Dans la fenêtre Propriétés, cliquez sur le bouton de sélection (**...** ) situé dans le **XPath de corps** propriété, sélectionnez **enveloppe**, puis cliquez sur **OK**.  
   

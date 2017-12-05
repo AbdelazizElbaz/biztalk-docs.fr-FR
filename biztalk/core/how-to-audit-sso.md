@@ -17,11 +17,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: abea3028c2ec9fd2131b8fd17247476b6fdfa6f0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 27528cf6da53c69db4b2bc6c9e1d296472b24186
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-audit-sso"></a>Comment auditer l’authentification unique
 Le composant logiciel enfichable MMC ou la ligne de commande permet de définir les niveaux d'audit positif et négatif. Les résultats de l'audit sont stockés dans les journaux des événements et des audits de la base de données.  
@@ -67,9 +67,9 @@ Le composant logiciel enfichable MMC ou la ligne de commande permet de définir 
   
 1.  Sur le **Démarrer** menu, cliquez sur **exécuter**, puis tapez **cmd**.  
   
-2.  Dans l'invite de ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  **\<lecteur >**: \Program Files\Enterprise Single Sign-On.  
+2.  Dans l'invite de ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  **\<lecteur\>**: \Program Files\Enterprise Single Sign-On.  
   
-3.  Type **ssoconfig-auditlevel \<positive >\<négatif >**, où  **\<positive >** est le niveau de l’audit lorsque actions réussissent et  **\<négatif >** est le niveau de cas d’échouent des actions d’audit.  
+3.  Type **ssoconfig-auditlevel \<positif\>\<négatif\>**, où  **\<positif\>**  est le niveau de l’audit lorsque actions réussissent, et  **\<négatif\>**  est le niveau de cas d’échouent des actions d’audit.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -78,13 +78,13 @@ Le composant logiciel enfichable MMC ou la ligne de commande permet de définir 
   
 1.  Cliquez sur **Démarrer**, **Exécuter**, puis entrez **cmd**.  
   
-2.  Dans l'invite de ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  **\<lecteur >**: \Program Files\Enterprise Single Sign-On.  
+2.  Dans l'invite de ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  **\<lecteur\>**: \Program Files\Enterprise Single Sign-On.  
   
-3.  Type **ssomanage-updatedb \<mise à jour de fichier >**, où  **\<mise à jour de fichier >**est le chemin d’accès et le nom du fichier.  
+3.  Type **ssomanage-updatedb \<fichier de mise à jour\>**, où  **\<fichier de mise à jour\>**est le chemin d’accès et le nom du fichier.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Comment mettre à jour la base de données SSO](../core/how-to-update-the-sso-database.md)   
- [À l’aide de l’authentification unique](../core/using-sso.md)
+ [Utilisation de l’authentification unique](../core/using-sso.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 88c0a1cf8d82ee5cd4e48e176b5b7f633101d8c8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4ab210f5ab728134b406b5c4bdaf25a1ec6db1c2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-configure-navigation-between-distributed-activities"></a>Configuration de la navigation entre les activités distribuées
 La navigation distribuée permet aux utilisateurs d'afficher les activités qui existent dans des déploiements BAM distants. Lorsque vous activez la navigation distribuée, les personnes qui utilisent le portail BAM sur un ordinateur peuvent afficher les activités sur le portail BAM dans un autre déploiement de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
@@ -35,9 +35,9 @@ La navigation distribuée permet aux utilisateurs d'afficher les activités qui 
   
 ### <a name="how-to-set-up-distributed-navigation-for-remote-activities"></a>Configuration de la navigation distribuée pour les activités distantes  
   
-1.  L’administrateur de l’ordinateur 1 accorde les activités utilisateur l’accès à la vue myBusinessView sur l’ordinateur 1. Vous utilisez la commande bm.exe, comme suit : **ajouter-account - AccountName :\<nom du compte >-affichage :** myBusinessView  
+1.  L’administrateur de l’ordinateur 1 accorde les activités utilisateur l’accès à la vue myBusinessView sur l’ordinateur 1. Vous utilisez la commande bm.exe, comme suit : **ajouter-account - AccountName :\<nom de compte\> -View :** myBusinessView  
   
-2.  L’administrateur de l’ordinateur 1 active la navigation distribuée en exécutant la commande enable-reference, comme suit : **bm.exe enable-reference - TargetServer :** Ordinateur2 **- TargetDatabase :\<cible base de données >**  
+2.  L’administrateur de l’ordinateur 1 active la navigation distribuée en exécutant la commande enable-reference, comme suit : **bm.exe enable-reference - TargetServer :** Ordinateur2 **- TargetDatabase :\<cible base de données\>**  
   
     > [!NOTE]
     >  En général, le compte utilisé entre les services pour l'accès aux services Web BAM diffère selon l'ordinateur. Par conséquent, dans ce scénario, l’administrateur de l’ordinateur 1 doit ajouter le compte d’emprunt d’identité de services Web de l’ordinateur 1 au rôle BAM_ManagementWS de la base de données d’importation principale BAM pour l’ordinateur 2. Pour plus d’informations, consultez « Affichage et modification des appartenances au rôle » à [http://go.microsoft.com/fwlink/?LinkId=66990](http://go.microsoft.com/fwlink/?LinkId=66990).  

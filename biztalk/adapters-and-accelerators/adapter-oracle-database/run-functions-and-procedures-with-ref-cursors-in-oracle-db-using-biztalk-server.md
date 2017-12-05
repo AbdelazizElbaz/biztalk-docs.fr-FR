@@ -17,11 +17,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d1d96f19aadd37e48a238ea28054641bd4eafbaf
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f9072f3df5c85ed09c5efbdc5e690a8eccc97b2f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="invoke-functions-and-procedures-with-ref-cursors-in-oracle-database-using-biztalk-server"></a>Appeler des fonctions et procédures avec des REF CURSOR dans la base de données Oracle à l’aide de BizTalk Server
 Un REF CURSOR est un type de données PL/SQL qui représente un pointeur vers un jeu de résultats côté serveur généré en exécutant une requête. Un type REF CURSOR permet d’entrée et de sortie de diffusion en continu de données et est idéal pour le transfert de grandes quantités de données vers et à partir d’un code de PL/SQL. Le [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] fortement typée et faiblement typé (SYS_REFCURSOR) REF CURSOR qui peuvent être passés aux procédures PL/SQL et aux fonctions, OUT ou IN des paramètres est prise en charge. Pour plus d’informations sur la façon dont [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] prend en charge REF CURSOR, consultez [opérations sur les fonctions et procédures avec des paramètres REF CURSOR](../../adapters-and-accelerators/adapter-oracle-database/ref-cursor-parameters-in-oracle-database-adapter.md). Pour plus d’informations sur la structure XML pour REF CURSOR, consultez [des schémas de Message pour REF CURSOR](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-ref-cursors.md).  
@@ -176,7 +176,7 @@ Un REF CURSOR est un type de données PL/SQL qui représente un pointeur vers un
  La réponse pour le message de demande ci-dessus est la suivante :  
   
 ```  
-\<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>   
 <GET_ACTIVITYResponse xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG">  
   <STATUS>5</STATUS>   
   <INOUTRECS>  

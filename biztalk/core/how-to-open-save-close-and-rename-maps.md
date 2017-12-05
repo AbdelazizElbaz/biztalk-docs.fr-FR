@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2bad04c72e4c3f0caf1af8e223d3f17e4687b736
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9383dd3751f9ccdd7790b0215e596eba95dc4a45
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-open-save-close-and-rename-maps"></a>Ouverture, enregistrement, fermeture et renommage des mappages
 Dans Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], les mappages sont des fichiers du système de fichiers dotés de l'extension .btm. Toutefois, il est beaucoup plus courant de travailler avec les mappages en tant qu'éléments d'un projet BizTalk à partir desquels vous effectuez des opérations comme ouvrir, enregistrer et fermer des mappages.  
@@ -36,13 +36,13 @@ Dans Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkserver
   
 1.  Dans l'Explorateur de solutions, sélectionnez le mappage que vous souhaitez enregistrer.  
   
-2.  Sur le **fichier** menu, cliquez sur **enregistrer  *\<nom de la carte >***.  
+2.  Sur le **fichier** menu, cliquez sur **enregistrer  *\<nom de mappage\>***.  
   
 ### <a name="to-save-a-map-to-a-new-location"></a>Pour enregistrer un mappage à un nouvel emplacement  
   
 1.  Dans l'Explorateur de solutions, sélectionnez le mappage que vous souhaitez enregistrer à un nouvel emplacement.  
   
-2.  Sur le **fichier** menu, cliquez sur **enregistrer  *\<nom de la carte >* comme**.  
+2.  Sur le **fichier** menu, cliquez sur **enregistrer  *\<nom de mappage\>*  comme**.  
   
 3.  Dans le **enregistrer le fichier sous** boîte de dialogue, accédez à l’emplacement du dossier où vous souhaitez enregistrer la carte.  
   
@@ -70,4 +70,4 @@ Dans Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkserver
     >  Vous pouvez également cliquer sur l’icône de fermeture ([**x**]) dans le coin supérieur droit de Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] fenêtre d’édition.  
   
 ## <a name="see-also"></a>Voir aussi  
- [La gestion des mappages dans des projets](../core/managing-maps-within-projects.md)
+ [Gestion de mappages dans des projets](../core/managing-maps-within-projects.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8e3dea968a12470498012f7dae4fb3093fc05e59
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4b9dedc20103787f449cc8c5ac475ef2ed2e0f82
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="browse-for-oracle-e-business-suite-operations-under-the-schema-based-view"></a>Rechercher des opérations Oracle E-Business Suite dans la vue de schéma
 Vous pouvez utiliser la [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] ou [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] pour parcourir les opérations entrantes et sortantes qui peuvent être effectuées sur Oracle E-Business Suite à l’aide de la [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]. Cette rubrique fournit des informations sur la façon de rechercher des opérations sortantes et entrantes sous la vue de schéma.  
@@ -67,16 +67,16 @@ Vous pouvez utiliser la [!INCLUDE[consumeadapterservshort](../../includes/consum
      ![Rechercher les tables dans la base de données Oracle](../../adapters-and-accelerators/adapter-oracle-ebs/media/94dd4642-1178-4d88-986b-f0ad409c414c.gif "94dd4642-1178-4d88-986b-f0ad409c414c")  
   
     > [!NOTE]
-    >  Si une table contient des colonnes de type BLOB, CLOB, NCLOB ou BFILE l’adaptateur expose également une opération spécifique pour lire des données à partir de ces colonnes. Le nom de ces opérations sont Read_\<LOBColName >. Par exemple, si la table possède une colonne, photos, de type BLOB, l’adaptateur expose un **Read_PHOTO** opération. Si une table possède plusieurs colonnes de type BLOB, CLOB, NCLOB et BFILE l’adaptateur expose nombre autant de Read_\<LOBColName > opérations.  
+    >  Si une table contient des colonnes de type BLOB, CLOB, NCLOB ou BFILE l’adaptateur expose également une opération spécifique pour lire des données à partir de ces colonnes. Le nom de ces opérations sont Read_\<LOBColName\>. Par exemple, si la table possède une colonne, photos, de type BLOB, l’adaptateur expose un **Read_PHOTO** opération. Si une table possède plusieurs colonnes de type BLOB, CLOB, NCLOB et BFILE l’adaptateur expose nombre autant de Read_\<LOBColName\> operations.  
     >   
-    >  De même, si une table contient des colonnes de type BLOB, CLOB ou NCLOB l’adaptateur expose également une opération spécifique pour mettre à jour des données dans ces colonnes. Le nom de ces opérations sont en attente_\<LOBColName >. Par exemple, si la table possède une colonne, photos, de type BLOB, l’adaptateur expose un **Update_PHOTO** opération. Si une table possède plusieurs colonnes de type BLOB, CLOB et NCLOB l’adaptateur expose un nombre plus grand nombre d’en attente_\<LOBColName > opérations. Notez que l’opération de mise à jour n’est pas pris en charge sur les colonnes de type BFILE.  
+    >  De même, si une table contient des colonnes de type BLOB, CLOB ou NCLOB l’adaptateur expose également une opération spécifique pour mettre à jour des données dans ces colonnes. Le nom de ces opérations sont en attente_\<LOBColName\>. Par exemple, si la table possède une colonne, photos, de type BLOB, l’adaptateur expose un **Update_PHOTO** opération. Si une table possède plusieurs colonnes de type BLOB, CLOB et NCLOB l’adaptateur expose un nombre plus grand nombre d’en attente_\<LOBColName\> operations. Notez que l’opération de mise à jour n’est pas pris en charge sur les colonnes de type BFILE.  
   
 9. Développez le **vues** nœud pour afficher la liste des vues pour un schéma particulier. Cliquez sur un nom de la vue pour voir les opérations prises en charge sur la vue dans le **catégories et opérations disponibles** boîte.  
   
      ![Rechercher les vues dans la base de données Oracle](../../adapters-and-accelerators/adapter-oracle-ebs/media/e1893e48-065c-4642-b076-192758d103db.gif "e1893e48-065c-4642-b076-192758d103db")  
   
     > [!NOTE]
-    >  Si une vue contient des colonnes de type BLOB, CLOB, NCLOB ou BFILE l’adaptateur expose également une opération spécifique pour lire des données à partir de ces colonnes. Le nom de ces opérations sont Read_\<LOBColName >. Par exemple, si la vue a une colonne, la règle, de type BLOB, l’adaptateur expose un **Read_RULE** opération. Si une vue a plus d’une colonne de type BLOB, CLOB, NCLOB ou BFILE l’adaptateur exposera nombre autant de Read_\<LOBColName > opérations. Notez qu’en attente_\<LOBColName > opérations ne sont pas prises en charge sur les vues.  
+    >  Si une vue contient des colonnes de type BLOB, CLOB, NCLOB ou BFILE l’adaptateur expose également une opération spécifique pour lire des données à partir de ces colonnes. Le nom de ces opérations sont Read_\<LOBColName\>. Par exemple, si la vue a une colonne, la règle, de type BLOB, l’adaptateur expose un **Read_RULE** opération. Si une vue a plus d’une colonne de type BLOB, CLOB, NCLOB ou BFILE l’adaptateur exposera nombre autant de Read_\<LOBColName\> operations. Notez qu’en attente_\<LOBColName\> opérations ne sont pas prises en charge sur les vues.  
   
 ## <a name="browsing-for-inbound-operations"></a>Navigation pour les opérations entrantes  
  Procédez comme suit pour parcourir les opérations entrantes sous la vue de schéma.  

@@ -15,11 +15,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aa0f969be7dfdd7cca991be134c9a25329f559a7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 18b5d5ee3b29c068b3a37d248b9fb20f07bdfbb2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="using-distinguished-fields-and-property-fields"></a>À l’aide des champs distinctifs et les champs de propriété
 les champs distinctifs constituent des données de message d'un intérêt particulier, que vous utilisez essentiellement pour prendre des décisions ou pour manipuler des données dans l'orchestration.  
@@ -50,7 +50,7 @@ MyMessage(Invoice.PropertySchema.InvoiceID)
 ```  
   
 > [!NOTE]
->  Lorsque vous utilisez un mot clé réservé comme nom d’un champ dans un schéma et promouvoir le champ en sélectionnant Promotion rapide, le nom de propriété du champ est modifié en __\<mot clé réservé >. (Un double trait de soulignement est ajouté devant le nom de la propriété.) Cependant, si vous utilisez ce nom de propriété dans une expression d'orchestration, vous recevrez une erreur du compilateur lors de la création de l'orchestration.  Pour éviter cette erreur, vous devez ajouter manuellement @ devant le double trait de soulignement. Par exemple :  
+>  Lorsque vous utilisez un mot clé réservé comme nom d’un champ dans un schéma et promouvoir le champ en sélectionnant Promotion rapide, le nom de propriété du champ est modifié en __\<mot clé réservé\>. (Un double trait de soulignement est ajouté devant le nom de la propriété.) Cependant, si vous utilisez ce nom de propriété dans une expression d'orchestration, vous recevrez une erreur du compilateur lors de la création de l'orchestration.  Pour éviter cette erreur, vous devez ajouter manuellement @ devant le double trait de soulignement. Par exemple :  
 >   
 >  `MyMessage(Invoice.PropertySchema.@__Name) = "Product Name";`  
   
@@ -67,4 +67,4 @@ MyMessage2(*)=MyMessage1(*);
  [Promotion des propriétés](../core/promoting-properties.md)   
  [Utilisation des filtres avec la forme d’un Message de réception](../core/using-filters-with-the-receive-message-shape.md)   
  [À l’aide de Messages dans les Orchestrations](../core/using-messages-in-orchestrations.md)   
- [À propos des propriétés de contexte de Message BizTalk](../core/about-biztalk-message-context-properties.md)
+ [À propos des propriétés de contexte de message BizTalk](../core/about-biztalk-message-context-properties.md)

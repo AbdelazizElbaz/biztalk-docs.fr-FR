@@ -12,11 +12,11 @@ caps.latest.revision: "35"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 41994da40d6471688193f7aca915535fcd52bfbe
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: 008e6c2d775fc5d46977ca4672b6d3376349b3f0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="large-message-to-msmq"></a>Message volumineux vers MSMQ
 Le Message volumineux vers MSMQ sample montre comment envoyer un document .xml supérieure à 4 mégaoctets (Mo) à partir de Message Queuing (également appelé MSMQ) pour l’adaptateur MSMQ BizTalk à l’aide de la **MQSendLargeMessage** API implémentée par MQRTLarge.dll.  
@@ -37,10 +37,10 @@ Le Message volumineux vers MSMQ sample montre comment envoyer un document .xml s
  Dans le cadre de cet exemple, il est important que le code spécifie un type de transaction dans l’appel à **MQSendLargeMessage** qui soit cohérent avec la prise en charge de la transaction spécifiée pour la file d’attente à laquelle le message est envoyé. Si ce n'est pas le cas et si aucune file d'administration n'est spécifiée (comme dans cet exemple), l'API MSMQ écarte le message envoyé sans le signaler (aucun code d'erreur n'est renvoyé à l'application, aucun diagnostic n'est écrit dans le journal des événements, etc.).  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
- \<Exemples de chemin d’accès > \AdaptersUsage\MSMQLarge  
+ \<Exemples de chemin d’accès\>\AdaptersUsage\MSMQLarge  
   
 > [!NOTE]
->  Si vous utilisez une version 64 bits de Windows et BizTalk Server, l’exemple est installé dans le **(x86) de C:\Program Files \Microsoft BizTalk Server \<version > \SDK\Samples\AdaptersUsage\MSMQLarge** dossier.  Notez cette modification pour toutes les autres instructions dans ce document à l’aide de la **C:\Program Files** dossier.  
+>  Si vous utilisez une version 64 bits de Windows et BizTalk Server, l’exemple est installé dans le **(x86) de C:\Program Files \Microsoft BizTalk Server \<version\>\SDK\Samples\AdaptersUsage\MSMQLarge** dossier.  Notez cette modification pour toutes les autres instructions dans ce document à l’aide de la **C:\Program Files** dossier.  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -56,7 +56,7 @@ Le Message volumineux vers MSMQ sample montre comment envoyer un document .xml s
   
 #### <a name="to-configure-biztalk-server"></a>Pour configurer BizTalk Server  
   
-1.  Dans Visual Studio, ouvrez le **C:\Program Files\Microsoft BizTalk Server \<version > \SDK\Samples\AdaptersUsage\MSMQLarge\LargeMessages.sln** fichier solution.  Générez l'exemple.  
+1.  Dans Visual Studio, ouvrez le **C:\Program Files\Microsoft BizTalk Server \<version\>\SDK\Samples\AdaptersUsage\MSMQLarge\LargeMessages.sln** fichier solution.  Générez l'exemple.  
   
 2.  Créer un **C:\Demo** répertoire dans lequel BizTalk Server placent les messages de MSMQ.  
   
@@ -149,7 +149,7 @@ Le Message volumineux vers MSMQ sample montre comment envoyer un document .xml s
   
 #### <a name="to-create-a-large-test-file"></a>Pour créer un fichier de test volumineux  
   
-1.  Dans Visual Studio, ouvrez la solution **C:\Program Files\Microsoft BizTalk Server \<version > \SDK\Samples\AdaptersUsage\MSMQLarge\XMLCreator\XMLCreator.sln**.  
+1.  Dans Visual Studio, ouvrez la solution **C:\Program Files\Microsoft BizTalk Server \<version\>\SDK\Samples\AdaptersUsage\MSMQLarge\XMLCreator\XMLCreator.sln**.  
   
 2.  Générez et exécutez le projet.  
   
@@ -163,7 +163,7 @@ Le Message volumineux vers MSMQ sample montre comment envoyer un document .xml s
   
 #### <a name="to-run-the-sample"></a>Pour exécuter l’exemple  
   
-1.  Ouvrez une invite de commandes et accédez au répertoire **C:\Program Files\Microsoft BizTalk Server \<version > \SDK\Samples\AdaptersUsage\MSMQLarge\SendLargeMessage\bin\debug**.  
+1.  Ouvrez une invite de commandes et accédez au répertoire **C:\Program Files\Microsoft BizTalk Server \<version\>\SDK\Samples\AdaptersUsage\MSMQLarge\SendLargeMessage\bin\debug**.  
   
 2.  À l’invite de commandes, exécutez **SendLargeMessage.exe**. L’exécutable SendLargeMessage accepte deux variables. La première correspond à l’emplacement de la file d’attente MSMQ et la seconde à l’emplacement du fichier .xml à envoyer :  
   

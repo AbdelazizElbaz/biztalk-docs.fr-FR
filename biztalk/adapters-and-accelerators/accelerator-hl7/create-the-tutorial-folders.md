@@ -12,22 +12,22 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6720ab38e42b30928208d758a9083d3286df883d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 49058f6e3519833fc90a86661f1d02fd40019113
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="create-the-tutorial-folders"></a>Créer les dossiers du didacticiels
 Créez les dossiers suivants à l’aide de [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorer :  
   
--   \<*lecteur*: > \Batching didacticiel  
+-   \<*lecteur*:\>\Batching didacticiel  
   
--   \<*lecteur*: > \Batching Tutorial\Instances  
+-   \<*lecteur*:\>\Batching Tutorial\Instances  
   
--   \<*lecteur*: > \Program Files\Microsoft BizTalk \<version > Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_BatchACKDrop  
+-   \<*lecteur*:\>\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_BatchACKDrop  
   
--   \<*lecteur*: > \Program Files\Microsoft BizTalk \<version > Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_BatchMsgDrop  
+-   \<*lecteur*:\>\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_BatchMsgDrop  
   
 ## <a name="see-also"></a>Voir aussi  
- [Préparation à l’utilisation du didacticiel de traitement par lot](../../adapters-and-accelerators/accelerator-hl7/preparing-to-use-the-batching-tutorial.md)
+ [Préparation à l’utilisation du didacticiel sur le traitement par lot](../../adapters-and-accelerators/accelerator-hl7/preparing-to-use-the-batching-tutorial.md)

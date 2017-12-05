@@ -21,11 +21,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 394a002fedaffbb9c67fa4b0ae0229215e6d8efa
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c27f1ecaf07c3f953372a9e5733d62c8376a288f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-update-references-to-the-bam-notification-services-databases"></a>Mise à jour des références aux bases de données des services de notification BAM
 Après avoir effectué les étapes nécessaires pour restaurer les bases de données des services de notification BAM (Business Activity Monitoring) sur le système de destination, vous devez réenregistrer les services de notification sur tous les ordinateurs du groupe [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] qui exécutent des services de notification (NSservice.exe). Cela permet aux services de notification de se connecter aux bases de données dans leur nouvel emplacement.  
@@ -59,7 +59,7 @@ Après avoir effectué les étapes nécessaires pour restaurer les bases de donn
   
 4.  Ouvrez le fichier xml créé à l'étape 2 pour obtenir la liste des ordinateurs sur lesquels vous devez réenregistrer les services de notification.  
   
-     Les noms d’ordinateur sont répertoriés dans le  **\<nom de la propriété\= >**  paramètres dans le  **\<DeploymentUnit nom = « Alerte » >** section du code xml fichier :  
+     Les noms d’ordinateur sont répertoriés dans le  **\<nom de la propriété\= \>**  paramètres dans le  **\<DeploymentUnit nom = « Alerte »\>**  section du fichier xml :  
   
     ```  
     -<DeploymentUnit Name="Alert">  
@@ -85,7 +85,7 @@ Après avoir effectué les étapes nécessaires pour restaurer les bases de donn
   
     1.  Cliquez sur **Démarrer**, cliquez sur **programmes**, cliquez sur **Microsoft SQL Server 2008 R2**, cliquez sur **outils de Configuration**, puis cliquez sur **Invite de commandes des Services de notification**.  
   
-    2.  À l’invite de commandes, tapez : **nscontrol register - name BamAlerts-server**  *\<nom_serveur >***-service - serviceusername «**  *\<ServiceUserName >***« - servicepassword »***\<ServicePassword >***»**  
+    2.  À l’invite de commandes, tapez : **nscontrol register - name BamAlerts-server**  *\<nom_serveur\>***-service - serviceusername «**  *\<ServiceUserName\>***« - servicepassword »***\<ServicePassword\>***»**  
   
          Cette commande permet à Notification Services de se connecter à la base de données appropriée (ces informations sont conservées par nscontrol dans le registre de l'ordinateur du service).  
   
@@ -104,7 +104,7 @@ Après avoir effectué les étapes nécessaires pour restaurer les bases de donn
   
 10. À l'invite de commandes, tapez :  
   
-     **NSControl register - nom***\<BamAlerts >***-server**  *\<NotificationServicesDatabaseServer >*   
+     **NSControl register - nom***\<BamAlerts\>***-server**  *\<NotificationServicesDatabaseServer    \>*  
   
 11. À l’invite de commandes, tapez : **net start NS$ BamAlerts**.  
   
@@ -120,4 +120,4 @@ Après avoir effectué les étapes nécessaires pour restaurer les bases de donn
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Sauvegarde et restauration BAM](../core/backing-up-and-restoring-bam.md)
+ [Sauvegarde et restauration de l’analyse BAM](../core/backing-up-and-restoring-bam.md)

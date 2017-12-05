@@ -12,18 +12,18 @@ caps.latest.revision: "21"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3563fe263a3921979c7a0c143112b1bbe9d73790
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e04bbce8870e4f0e8c0edb278511f2a6791d62d8
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="install-biztalk-server-2013-and-2013-r2"></a>Installation de BizTalk Server 2013 et 2013 R2
 Énumère les étapes pour installer [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
 ## <a name="before-you-get-started"></a>Avant de commencer
 
--   **Noms de comptes** – Dans la mesure du possible, utilisez les noms de comptes par défaut. Le programme d'installation [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] entre automatiquement les comptes par défaut. Si le domaine contient plusieurs groupes [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], changez les noms des comptes afin d'éviter les conflits. Si vous modifiez les noms, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] prend uniquement en charge \< *nom de domaine NetBIOS*>\\<*utilisateur*> pour les comptes de service et de Windows groupes.  
+-   **Noms de comptes** – Dans la mesure du possible, utilisez les noms de comptes par défaut. Le programme d'installation [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] entre automatiquement les comptes par défaut. Si le domaine contient plusieurs groupes [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], changez les noms des comptes afin d'éviter les conflits. Si vous modifiez les noms, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] prend uniquement en charge \< *nom de domaine NetBIOS*\>\\<*utilisateur* \> pour le service les comptes et groupes Windows.  
   
 -   **Noms de comptes avec le service Web de gestion BAM** – [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ne prend pas en charge les comptes intégrés ni les comptes sans mot de passe pour l’utilisateur de service Web de gestion BAM. Le service Web accède à la base de données [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] et ces comptes peuvent suggérer une menace sur la sécurité.  
   

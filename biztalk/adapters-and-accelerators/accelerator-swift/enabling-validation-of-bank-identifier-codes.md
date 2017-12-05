@@ -13,11 +13,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8a9869bdeaeed638c2cc8c3bf3ace869a0124f73
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c3868906d4f61242b1344a02147e4e71307d67d3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="enabling-validation-of-bank-identifier-codes"></a>Activer la Validation des Codes d’identificateur de banque
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] schémas vous assurer que les Codes d’identificateur de banque (BICs) spécifiée dans le document d’échange SWIFT respectent le format de données définis par le SWIFT de BIC. A4SWIFT prend également en charge la validation des BICs par rapport à une liste BIC spécifié par le client dans une base de données.  
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
   
 ### <a name="to-customize-the-bic-master-policy"></a>Pour personnaliser la stratégie BIC principale  
   
-1.  Ouvrez un éditeur XML (tel que bloc-notes) et accédez à  **<* lecteur*programme Files\Microsoft Microsoft BizTalk Accelerator pour SWIFT \<version > Message Pack\SWIFT Messages\ A4SWIFT-SRG\<version > \Base stratégies **.  
+1.  Ouvrez un éditeur XML (tel que bloc-notes) et accédez à  **<* lecteur*programme Files\Microsoft Microsoft BizTalk Accelerator pour SWIFT \<version\> Pack\SWIFT de Message Messages\A4SWIFT-SRG\<version\>\Base stratégies **.  
   
 2.  Ouvrez **BIC_Master_Policy.xml**. Remplacez les chaînes d’existants suivants avec les nouvelles valeurs.  
   
@@ -65,7 +65,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  Dans la page magasin de stratégies, dans **nom SQL Server**, sélectionnez le [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] qui contient vos bases de données BizTalk. Dans **base de données de Configuration sur le serveur sélectionné**, sélectionnez **BizTalkRuleEngineDb**, puis cliquez sur **suivant**.  
   
-8.  Dans la page de fichier du moteur de règles d’importation stratégie/vocabulaire, accédez à  **<* lecteur*\Program Files\ Microsoft BizTalk Accelerator pour SWIFT \<version > Pack\SWIFT de Message Messages\A4SWIFT-SRG\<version > \Base ** de stratégies, cliquez sur **BIC_Master_Policy.xml**, cliquez sur **ouvrir**, puis cliquez sur **suivant**.  
+8.  Dans la page de fichier du moteur de règles d’importation stratégie/vocabulaire, accédez à  **<* lecteur*\Program Files\ Microsoft BizTalk Accelerator pour SWIFT \<version\> Message Pack\SWIFT Messages\A4SWIFT-SRG\<version\>\Base ** de stratégies, cliquez sur **BIC_Master_Policy.xml**, cliquez sur **ouvrez**, puis cliquez sur **Suivant**.  
   
 9. Dans la page prêt, vérifier les données, puis cliquez sur **suivant**.  
   
@@ -103,4 +103,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>Voir aussi  
  [Utilisation des stratégies BRE](../../adapters-and-accelerators/accelerator-swift/working-with-bre-policies.md)   
- [La gestion de la Table Bicplus dans la base de données A4SWIFT](../../adapters-and-accelerators/accelerator-swift/managing-the-bicplus-table-in-the-a4swift-database.md)
+ [Gestion de la table Bicplus dans la base de données A4SWIFT](../../adapters-and-accelerators/accelerator-swift/managing-the-bicplus-table-in-the-a4swift-database.md)

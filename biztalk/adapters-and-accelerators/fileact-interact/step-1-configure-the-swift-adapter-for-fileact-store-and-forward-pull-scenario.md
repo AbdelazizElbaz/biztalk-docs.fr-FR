@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c9103caf451bb74a6ba23a7a6cf30ebe17896dfa
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 41e57df0f77718e3e36b5d0d68896def6a768be7
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-1-configure-the-swift-adapter-for-fileact-store-and-forward-pull-scenario"></a>Étape 1 : Configurer l’adaptateur SWIFT pour le scénario d’extraction avant d’et de FileAct
 Complète [préparation à l’utilisation du didacticiel](../../adapters-and-accelerators/fileact-interact/preparing-to-use-the-tutorial1.md) avant de commencer cette étape.
@@ -33,7 +33,7 @@ Complète [préparation à l’utilisation du didacticiel](../../adapters-and-ac
   
     |**Utilisez cette**|**Pour ce faire**|  
     |------------------|--------------------|  
-    |**Arguments**|Type de l’argument suivant : - SagMessagePartner \<Fileact Client Message partenaire créé dans les trous > **Remarque :** le client dans l’argument est le MessagePartner que vous avez configuré dans les trous.|  
+    |**Arguments**|Type de l’argument suivant : - SagMessagePartner \<Fileact Client Message partenaire créé dans les trous\> **Remarque :** le client dans l’argument est le MessagePartner que vous avez configuré dans les trous.|  
     |**Mode de chiffrement**|Dans la liste déroulante, sélectionnez **avancé**.|  
     |**FACryptoMode**|Dans la liste déroulante, sélectionnez **avancé**.|  
     |**LogMessages**|Dans la liste déroulante, sélectionnez **TRUE**. Ainsi, les événements de message capturées et de suivi dans le portail BAM.|  
@@ -58,7 +58,7 @@ Complète [préparation à l’utilisation du didacticiel](../../adapters-and-ac
   
     |**Utilisez cette**|**Pour ce faire**|  
     |------------------|--------------------|  
-    |**Arguments**|Type de l’argument suivant : – SagMessagePartner \<Fileact Client Message partenaire créé dans les trous > **Remarque :** le client dans l’argument est le MessagePartner que vous avez configuré dans les trous.|  
+    |**Arguments**|Type de l’argument suivant : – SagMessagePartner \<Fileact Client Message partenaire créé dans les trous\> **Remarque :** le client dans l’argument est le MessagePartner que vous avez configuré dans les trous.|  
     |**Mode de chiffrement**|Dans la liste déroulante, sélectionnez **avancé**.|  
     |**LogMessageBody**|Dans la liste déroulante, sélectionnez **TRUE**. Ainsi, les événements de message capturées et de suivi dans le portail BAM. **Remarque :** si vous affectez la valeur TRUE, il conserve le corps du message dans la base de données des suivis BizTalk. Toutefois, pour des raisons de sécurité, le corps du message ne peut jamais affiché dans le portail BAM.|  
     |**LogMessages**|Dans la liste déroulante, sélectionnez **TRUE**. Ainsi, les événements de message capturées et de suivi dans le portail BAM.|  
@@ -80,4 +80,4 @@ Complète [préparation à l’utilisation du didacticiel](../../adapters-and-ac
 ## <a name="see-also"></a>Voir aussi  
  [Étape 2 : Créer des Ports d’envoi et réception des Ports pour le magasin de FileAct et d’un scénario de transfert (extraction de données)](../../adapters-and-accelerators/fileact-interact/step-2-create-send-and-receive-ports-for-fileact-store-and-forward-scenario.md)   
  [Étape 3 : Créer et lier une orchestration avec un port d’envoi dynamique pour le magasin de fichiers Act et le scénario de (Pull) vers l’avant](../../adapters-and-accelerators/fileact-interact/step-3-create-and-bind-an-orchestration-with-dynamic-send-port-for-file-act.md)   
- [Étape 4 : Tester et de FileAct le scénario de bout en bout avant (extraction de données)](../../adapters-and-accelerators/fileact-interact/step-4-test-fileact-store-and-forward-pull-end-to-end-scenario.md)
+ [Étape 4 : Tester le scénario de stockage et de redirection (Pull) FileAct de bout en bout](../../adapters-and-accelerators/fileact-interact/step-4-test-fileact-store-and-forward-pull-end-to-end-scenario.md)

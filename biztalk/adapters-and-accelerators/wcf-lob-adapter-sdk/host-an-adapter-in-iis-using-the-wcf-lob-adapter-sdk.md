@@ -12,11 +12,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 77750a3ae6232b842961b83d3b672d2bbb084a73
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 326dc5f3102354c8f2aa6fa785b145b72014f3d3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="host-an-adapter-in-iis-using-the-wcf-lob-adapter-sdk"></a>Héberger un adaptateur dans IIS à l’aide de WCF LOB Adapter SDK
 Cette section contient des informations sur l’hébergement d’un adaptateur créé à l’aide de la [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)] dans Internet Information Services (IIS). Pour plus d’informations sur les autres options d’hébergement, consultez [Services d’hébergement](https://msdn.microsoft.com/library/ms730158.aspx).
@@ -80,22 +80,22 @@ Utilisez le [!INCLUDE[afsvcdevwizlong](../../includes/afsvcdevwizlong-md.md)] po
   
         |Propriété| Description|  
         |--------------|-----------------|  
-        |**EnableMetadataExchange**|La valeur **True** permet aux services de publication des métadonnées aux demandes du client. Cela peut également être définie en modifiant \< **serviceMetadata httpGetEnabled = » «**> dans le fichier web.config. Valeur par défaut est **False**|  
-        |**IncludeExceptionDetailsinFault**|La valeur **True** entraîne des informations d’exception gérées retourné au client dans les erreurs SOAP. Cela peut également être définie en modifiant \< **serviceDebug usingincludeExceptionDetailInFaults = » «**> dans le fichier web.config. Valeur par défaut est **False**.|  
+        |**EnableMetadataExchange**|La valeur **True** permet aux services de publication des métadonnées aux demandes du client. Cela peut également être définie en modifiant \< **serviceMetadata httpGetEnabled = » «** \> dans le fichier web.config. Valeur par défaut est **False**|  
+        |**IncludeExceptionDetailsinFault**|La valeur **True** entraîne des informations d’exception gérées retourné au client dans les erreurs SOAP. Cela peut également être définie en modifiant \< **serviceDebug usingincludeExceptionDetailInFaults = » «** \> dans le fichier web.config. Valeur par défaut est **False**.|  
         |**Nom**|Nom de la configuration de comportement de service.|  
         |**UseServiceCertificate**|Cette valeur détermine si le service utilise un certificat X.509 pour s’authentifier auprès du processus client. Valeur par défaut est **True**.|  
-        |**FindValue**|Cette valeur est utilisée pour rechercher un certificat X.509 spécifique dans le magasin de certificats. Cela peut également être définie en modifiant \< **serviceCredentials findValue = » «**> dans le fichier web.config **Remarque :** spécifier une valeur pour cette propriété uniquement si **UseServiceCertificate** est définie sur **True**.|  
-        |**StoreLocation**|Cette valeur spécifie l’emplacement du magasin système pour rechercher le certificat spécifié. Cela peut également être définie en modifiant \< **serviceCredentials storeLocation = » «**> dans le fichier web.config. **Remarque :** spécifier une valeur pour cette propriété uniquement si **UseServiceCertificate** a la valeur **True**.|  
-        |**StoreName**|Cette valeur spécifie le magasin système spécifique pour rechercher le certificat spécifié. Cela peut également être définie en modifiant \< **serviceCredentials storeName = » «**> dans le fichier web.config **Remarque :** spécifier une valeur pour cette propriété uniquement si **UseServiceCertificate** est définie sur **True**.|  
-        |**X509FindType**|Le type de recherche à utiliser avec le FindValue spécifié précédemment afin de trouver le certificat spécifique à utiliser. Cela peut également être définie en modifiant \< **serviceCredentials x509FindType = » «**> dans le fichier web.config **Remarque :** spécifier une valeur pour cette propriété uniquement si **UseServiceCertificate**  a la valeur **True**.|  
+        |**FindValue**|Cette valeur est utilisée pour rechercher un certificat X.509 spécifique dans le magasin de certificats. Cela peut également être définie en modifiant \< **serviceCredentials findValue = » «** \> dans le fichier web.config **Remarque :** spécifier une valeur pour cette propriété uniquement si  **UseServiceCertificate** a la valeur **True**.|  
+        |**StoreLocation**|Cette valeur spécifie l’emplacement du magasin système pour rechercher le certificat spécifié. Cela peut également être définie en modifiant \< **serviceCredentials storeLocation = » «** \> dans le fichier web.config. **Remarque :** spécifier une valeur pour cette propriété uniquement si **UseServiceCertificate** a la valeur **True**.|  
+        |**StoreName**|Cette valeur spécifie le magasin système spécifique pour rechercher le certificat spécifié. Cela peut également être définie en modifiant \< **serviceCredentials storeName = » «** \> dans le fichier web.config **Remarque :** spécifier une valeur pour cette propriété uniquement si  **UseServiceCertificate** a la valeur **True**.|  
+        |**X509FindType**|Le type de recherche à utiliser avec le FindValue spécifié précédemment afin de trouver le certificat spécifique à utiliser. Cela peut également être définie en modifiant \< **serviceCredentials x509FindType = » «** \> dans le fichier web.config **Remarque :** spécifier une valeur pour cette propriété uniquement si  **UseServiceCertificate** a la valeur **True**.|  
   
     2.  Le **Configuration de comportement de point de terminaison** section contrôle le comportement de point de terminaison.  
   
         |Propriété| Description|  
         |--------------|-----------------|  
         |**Nom**|Le nom du comportement de point de terminaison|  
-        |**AuthenticationType**|Cette valeur indique à la carte où obtenir le client les informations d’identification du document entrant. Pour activer les clients à spécifier un certificat client pour s’authentifier auprès du service, affectez la valeur **ClientCredentialUsernamePassword**. Pour activer les clients à spécifier le nom d’utilisateur et un mot de passe dans le cadre de l’en-tête HTTP, affectez la valeur **HTTPUsernamePassword**. Pour activer les clients à spécifier les informations d’identification via l’interface ClientCredential, affectez la valeur **automatique**. En cas d’échec, les clients peuvent passer des informations d’identification dans le cadre de l’en-tête HTTP.<br /><br /> Cette valeur peut également être définie en modifiant \< **endpointBehavior adapterSecurityBridgeType**> dans le fichier web.config. Valeur par défaut est **automatique**.|  
-        |**UsernameHeader**|Spécifie le nom de l’en-tête qui sera utilisé pour transmettre le nom d’utilisateur pour le service. Pour plus d’informations sur les en-têtes HTTP, consultez « Prise en charge pour les en-têtes personnalisés HTTP et SOAP » à [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)<br /><br /> Cette valeur peut également être définie en modifiant \< **endpointBehavior usernameHttpHeader**> dans le fichier web.config. **Remarque :** vous devez spécifier une valeur pour cette propriété si le **AuthenticationType** a la valeur **HTTPUserNamePassword**.  Si la valeur **automatique**, cette propriété est facultative.|  
+        |**AuthenticationType**|Cette valeur indique à la carte où obtenir le client les informations d’identification du document entrant. Pour activer les clients à spécifier un certificat client pour s’authentifier auprès du service, affectez la valeur **ClientCredentialUsernamePassword**. Pour activer les clients à spécifier le nom d’utilisateur et un mot de passe dans le cadre de l’en-tête HTTP, affectez la valeur **HTTPUsernamePassword**. Pour activer les clients à spécifier les informations d’identification via l’interface ClientCredential, affectez la valeur **automatique**. En cas d’échec, les clients peuvent passer des informations d’identification dans le cadre de l’en-tête HTTP.<br /><br /> Cette valeur peut également être définie en modifiant \< **endpointBehavior adapterSecurityBridgeType** \> dans le fichier web.config. Valeur par défaut est **automatique**.|  
+        |**UsernameHeader**|Spécifie le nom de l’en-tête qui sera utilisé pour transmettre le nom d’utilisateur pour le service. Pour plus d’informations sur les en-têtes HTTP, consultez « Prise en charge pour les en-têtes personnalisés HTTP et SOAP » à [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)<br /><br /> Cette valeur peut également être définie en modifiant \< **endpointBehavior usernameHttpHeader** \> dans le fichier web.config. **Remarque :** vous devez spécifier une valeur pour cette propriété si le **AuthenticationType** a la valeur **HTTPUserNamePassword**.  Si la valeur **automatique**, cette propriété est facultative.|  
         |**PasswordHeader**|Spécifie le nom de l’en-tête qui sera utilisé pour passer le mot de passe pour le service. Pour plus d’informations sur les en-têtes HTTP, consultez « Prise en charge pour HTTP et SOAP en-têtes personnalisés » à [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)<br /><br /> Cette valeur peut également être définie en modifiant <**endpointBehavior passwordHttpHeader**< dans le fichier web.config. **Remarque :** vous devez spécifier une valeur pour cette propriété si le **AuthenticationType** a la valeur **HTTPUserNamePassword**. Si la valeur **automatique**, cette propriété est facultative.|  
   
     3.  Après avoir défini le comportement souhaité, cliquez sur **suivant** pour continuer.  
@@ -118,7 +118,7 @@ Utilisez le [!INCLUDE[afsvcdevwizlong](../../includes/afsvcdevwizlong-md.md)] po
     |----------|-----------------|  
     |.svc|Fichier de service qui fait référence au proxy WCF.|  
     |.cs|Implémente le proxy WCF.|  
-    |web.config|Contient \< **point de terminaison**>, \< **liaisons**>, et \< **comportements**> éléments pour \< **système. ServiceModel**>|  
+    |web.config|Contient \< **point de terminaison** \, \< **liaisons**\>, et \< **comportements** \>éléments pour \< **système. ServiceModel**\>|  
   
 12. Publiez le projet de service WCF.  
   

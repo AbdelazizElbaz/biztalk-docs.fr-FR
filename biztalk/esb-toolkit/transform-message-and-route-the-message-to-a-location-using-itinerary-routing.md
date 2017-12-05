@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 18caef7d7c60fa7aa129baa787c746b3b797c808
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 01a20c7c4a58a12f242cbd412c23e2d2fa9fe24f
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-transform-a-message-and-route-the-resulting-message-to-a-file-location-using-an-itinerary-routing-slip"></a>Comment : transformer un Message et router le Message résultant à un emplacement de fichier à l’aide d’un bon d’itinéraire de routage
 ## <a name="goal"></a>Objectif  
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-an-esb-itinerary-dsl-model"></a>Pour créer un modèle DSL de la feuille de route ESB  
   
-1.  Dans [!INCLUDE[vs2010](../includes/vs2010-md.md)], ouvrez C:\HowTos\Patterns\Patterns.sln.  
+1.  Dans Visual Studio, ouvrez C:\HowTos\Patterns\Patterns.sln.  
   
 2.  Dans l’Explorateur de solutions, cliquez sur le **ItineraryLibrary** de projet, pointez sur **ajouter**, puis cliquez sur **nouvel itinéraire**.  
   
@@ -160,8 +160,8 @@ ms.lasthandoff: 09/20/2017
 ## <a name="additional-resources"></a>Ressources supplémentaires  
  Pour plus d’informations, consultez que ces rubriques connexes :  
   
-1.  [Comment : fractionner un échange et de router les Messages résultants vers plusieurs emplacements de fichier à l’aide d’itinéraires distinctes](../esb-toolkit/split-an-interchange-and-route-messages-to-multiple-locations-using-itineraries.md)  
+1.  [Guide pratique pour fractionner un échange et router les messages résultants vers plusieurs emplacements de fichier à l’aide d’itinéraires distincts](../esb-toolkit/split-an-interchange-and-route-messages-to-multiple-locations-using-itineraries.md)  
   
 2.  [Activités de développement](../esb-toolkit/development-activities.md)  
   
-3.  [Modèles de Transformation de messages](../esb-toolkit/message-transformation-patterns.md)
+3.  [Modèles de transformation des messages](../esb-toolkit/message-transformation-patterns.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "2"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 108153e362480c272d1f772ea4e97c66c6894358
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4082174428f177905527d0c648b4d7ad000dde36
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="publishing-the-mx-message-instance-file-creating-new-messages"></a>Publication du fichier d’Instance MX Message (création de Messages)
 **Pour publier le fichier d’instance de message MX :**  
@@ -29,8 +29,8 @@ ms.lasthandoff: 09/20/2017
   
 4.  Dans la fenêtre de télécharger un Document, cliquez sur **Parcourir**.  
   
-5.  Dans la boîte de dialogue Choisir, déplacer vers le dossier de sortie du formulaire InfoPath généré à l’étape précédente **... \\< MessageType\>modèle de formulaire \TemplateDS\InfoPath**. Sélectionnez le \<MessageType > .xml de fichiers tels que pacs.004.001.01.xml, puis cliquez sur **ouvrir**.  
+5.  Dans la boîte de dialogue Choisir, déplacer vers le dossier de sortie du formulaire InfoPath généré à l’étape précédente **... \\< MessageType\>modèle de formulaire \TemplateDS\InfoPath**. Sélectionnez le \<MessageType\>.xml de fichiers tels que pacs.004.001.01.xml, puis cliquez sur **ouvrir**.  
   
 6.  Dans la fenêtre de télécharger un Document, cliquez sur **OK**.  
   
-7.  Dans les Messages de nouveau MX SWIFT : \<MessageType > fenêtre, dans la zone de Namespace, tapez **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMX _\<MessageType >**, et puis cliquez sur **OK**.
+7.  Dans les Messages de nouveau MX SWIFT : \<MessageType\> fenêtre, dans la zone de Namespace, tapez **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMX _\<MessageType\>** , puis cliquez sur **OK**.

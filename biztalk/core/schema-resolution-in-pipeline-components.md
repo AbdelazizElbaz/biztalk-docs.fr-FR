@@ -16,11 +16,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ec002d19064032dcc663cf4da06b916eeda64d23
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 897c25ecb64a3038a6992b9c4caf927ba3e2d805
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="schema-resolution-in-pipeline-components"></a>Résolution de schéma dans les composants de Pipeline
 Les composants de pipeline Désassembleur et Assembleur utilisent des schémas XSD pour traiter les messages. Les schémas contiennent des informations telles que la liste des propriétés promues, des champs distinctifs, des annotations pour les messages de fichier plat et des annotations pour les enveloppes XML.  
@@ -35,7 +35,7 @@ Les composants de pipeline Désassembleur et Assembleur utilisent des schémas X
 </ns0:MyDocument>  
 ```  
   
- Si un schéma n’a pas un espace de noms défini pour ce dernier, le type de message est «\<**rootNode**> ». Par exemple, si l’exemple XML précédent n’était associé à aucun espace de noms, le type de message serait « MyDocument ».  
+ Si un schéma n’a pas un espace de noms défini pour ce dernier, le type de message est «\<**rootNode**\>». Par exemple, si l’exemple XML précédent n’était associé à aucun espace de noms, le type de message serait « MyDocument ».  
   
  Les composants de pipeline standard utilisent le type de message pour récupérer le schéma approprié de la base de données. Les pipelines de réception et d'envoi XML par défaut déterminent toujours quels schémas charger à l'aide du type de message dynamiquement détecté au moment de l'exécution à partir du contenu XML du message (sauf si le composant de pipeline a été configuré de façon à accepter les messages non reconnus). Le désassembleur XML peut supprimer l’enveloppe du message en utilisant ce mécanisme ; toutefois, l'assembleur XML ne peut pas créer d’enveloppe pour un message sortant sans connaître le schéma d’enveloppe à utiliser.  
   

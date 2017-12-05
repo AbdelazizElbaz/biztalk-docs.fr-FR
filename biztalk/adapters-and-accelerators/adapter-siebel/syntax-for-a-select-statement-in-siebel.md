@@ -16,19 +16,19 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d2a5ee569ff05acf9a14293503ee1238e311bcf1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e3eeb0a6d4a1fceebe7e16b3f71566f848e4a20f
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="syntax-for-a-select-statement-in-siebel"></a>Syntaxe pour une instruction SELECT dans Siebel
 À l’aide de la [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)], les clients ADO.NET peuvent effectuer une requête SELECT sur les composants d’entreprise Siebel en spécifiant une clause WHERE qui représente une spécification de recherche Siebel valide. La syntaxe de l’instruction SELECT est la suivante :  
   
 ```  
 SELECT  
-\<column name 1> AS \<column alias 1>,  
-\<column name 2> AS \<column alias 2>,  
+<column name 1> AS <column alias 1>,  
+<column name 2> AS <column alias 2>,  
 …  
 FROM  
 <Business object name>.<Business component name> AS <table alias>  
@@ -54,7 +54,7 @@ OPTION
   
  Les règles pour la spécification de la recherche sont :  
   
--   Opérateurs de comparaison standard doivent être utilisés pour comparer un champ à une constante ou un champ à un autre champ. Ceux-ci incluent =, ! =, >, \<, > =, et < =.  
+-   Opérateurs de comparaison standard doivent être utilisés pour comparer un champ à une constante ou un champ à un autre champ. Ceux-ci incluent =, ! =, >, <>, =, et < =.  
   
     ```  
     Example: [Revenue] > 5000  

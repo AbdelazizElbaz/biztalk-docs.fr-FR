@@ -15,11 +15,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a3ce40931caaf8f247afeacdae48721f31a7d99b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3f2f59ce48a3d46ebf33889e31a55f9aa452fd17
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="arbitrary-xpath-property-handler-biztalk-server-sample"></a>Gestionnaire de propriété XPath arbitraire (exemple BizTalk Server)
 Le gestionnaire de propriété XPath arbitraire (exemple [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]) illustre l'écriture d'un composant de pipeline personnalisé pour promouvoir des propriétés spécifiques sur un document XML envoyé à [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Vous pouvez utiliser la fonctionnalité contenue dans l'exemple pour créer des composants Standard, Assembleur et Désassembleur personnalisés pour évaluer des expressions XPath.  
@@ -29,7 +29,7 @@ Le gestionnaire de propriété XPath arbitraire (exemple [!INCLUDE[btsBizTalkSer
   
 1.  DocInstance.xml est récupéré par un port de réception [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] et traité par un composant de pipeline personnalisé nommé gestionnaire de propriété XPath arbitraire.  
   
-2.  Le composant Gestionnaire de propriété XPath arbitraire promeut tous \<Price > et \<quantité > éléments avec une expression XPath arbitraire comme défini dans le schéma de bon de commande. L'expression XPath contient également la position construct à utiliser avec des éléments enfants ambigus de l'élément racine du document de bon de commande.  
+2.  Le composant Gestionnaire de propriété XPath arbitraire promeut tous \<prix\> et \<quantité\> éléments avec une expression XPath arbitraire comme défini dans le schéma de bon de commande. L'expression XPath contient également la position construct à utiliser avec des éléments enfants ambigus de l'élément racine du document de bon de commande.  
   
 3.  Le composant Gestionnaire de propriété XPath arbitraire détermine le type de message et le promeut dans le contexte du message.  
   
@@ -42,7 +42,7 @@ Le gestionnaire de propriété XPath arbitraire (exemple [!INCLUDE[btsBizTalkSer
 7.  Le nouveau document de bon de commande est écrit dans un fichier du répertoire \Output.  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
- *\<Exemples de chemin d’accès >*\Pipelines\ArbitraryXPathPropertyHandler  
+ *\<Exemples de chemin d’accès\>*\Pipelines\ArbitraryXPathPropertyHandler  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -68,7 +68,7 @@ Le gestionnaire de propriété XPath arbitraire (exemple [!INCLUDE[btsBizTalkSer
  Cet exemple est conçu pour s'exécuter dans un environnement [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] avec [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] s'exécutant sur le même ordinateur. Si votre environnement ne correspond pas à cette configuration, vous devez modifier le gestionnaire de propriété XPath arbitraire (exemple [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]) pour qu'il pointe sur l'ordinateur SQL Server correct.  
   
 > [!IMPORTANT]
->  Setup.bat suppose que votre répertoire d'installation de Microsoft Windows est C:\Windows. Si votre installation Windows se trouve dans un autre répertoire, vous devez modifier le fichier ArbitraryXPathPropertyHandler.csproj pour refléter l'emplacement de l'assembly Microsoft.BizTalk.Component.Utilities dans le GAC. Dans l’élément de référence, modifiez \<SYSTEMROOT > à l’emplacement où Windows est installé (par exemple, C:\WINNT\\).  
+>  Setup.bat suppose que votre répertoire d'installation de Microsoft Windows est C:\Windows. Si votre installation Windows se trouve dans un autre répertoire, vous devez modifier le fichier ArbitraryXPathPropertyHandler.csproj pour refléter l'emplacement de l'assembly Microsoft.BizTalk.Component.Utilities dans le GAC. Dans l’élément de référence, modifiez \<SYSTEMROOT\> à l’emplacement où Windows est installé (par exemple, C:\WINNT\\).  
   
 ```  
 <Reference  
@@ -84,13 +84,13 @@ Le gestionnaire de propriété XPath arbitraire (exemple [!INCLUDE[btsBizTalkSer
   
 1.  Dans une fenêtre de commande, remplacez les répertoires (**cd**) dans le dossier suivant :  
   
-     *\<Exemples de chemin d’accès >*\Pipelines\ArbitraryXPathPropertyHandler  
+     *\<Exemples de chemin d’accès\>*\Pipelines\ArbitraryXPathPropertyHandler  
   
 2.  Exécutez le fichier Setup.bat, qui effectue les actions suivantes :  
   
     -   crée le composant de pipeline Gestionnaire de propriété XPath arbitraire ;  
   
-    -   Composant de pipeline copies générés le  *\<chemin d’Installation >*répertoire \Pipeline Components.  
+    -   Composant de pipeline copies générés le  *\<chemin d’Installation\>*\Pipeline Components directory.  
   
     -   crée les ports d'envoi et de réception ;  
   
@@ -115,7 +115,7 @@ Le gestionnaire de propriété XPath arbitraire (exemple [!INCLUDE[btsBizTalkSer
   
 1.  Copiez le fichier de bon de commande DocInstance.xml dans le répertoire \Input. Le fichier de bon de commande est récupéré par un port de réception qui envoie les données XML au composant de pipeline Gestionnaire de propriété XPath arbitraire.  
   
-2.  Affichez le contenu dans le répertoire \Output. Notez la création d'un fichier contenant toutes les informations du fichier DocInstance.xml qui vous avez copié dans le répertoire \Input. La différence dans le fichier qui est désormais le \<TotalAmount > élément a été rempli avec le montant total pour le bon de commande.  
+2.  Affichez le contenu dans le répertoire \Output. Notez la création d'un fichier contenant toutes les informations du fichier DocInstance.xml qui vous avez copié dans le répertoire \Input. La différence dans le fichier qui est désormais le \<TotalAmount\> élément a été rempli avec le montant total pour le bon de commande.  
   
 ## <a name="comments"></a>Commentaires  
  Les expressions XPath canoniques sont des expressions simples tels que «/*[local-name()='element-name' and namespaceURI()='http://MyUri.org']/\*[local-name()='element-name']/@\*[local-name='attribute name']».  

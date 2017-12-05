@@ -23,11 +23,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5a2d6ef6752965c1f20c695dacb06ff348089054
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 47496b875297e6c16141780979fda933f3968c6b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="running-orchestrations"></a>Orchestrations en cours d’exécution
 Les procédures suivantes expliquent comment construire, déployer, lier et démarrer une orchestration.  
@@ -42,7 +42,7 @@ Les procédures suivantes expliquent comment construire, déployer, lier et dém
   
      Exemple :  
   
-     **\<lecteur > : \Adapter_Install\biztalk\my_project**  
+     **\<lecteur\>: \Adapter_Install\biztalk\my_project**  
   
 3.  Tapez ce qui suit à l'invite de commandes, puis appuyez sur ENTRÉE :  
   

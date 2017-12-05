@@ -15,11 +15,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b1a27fa8b09addc7874e6056f0b467c7f874a41e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e77219fb74b7af377953a3761c4d9f241b3a8bd0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="read-about-data-provider-types-for-the-sap-connection-string"></a>En savoir plus sur les types de fournisseur de données pour la chaîne de connexion SAP
 Pour établir la connexion à un système SAP, ADO.NET clients doivent spécifier les propriétés de connexion SAP sous la forme d’une chaîne de connexion. Le format de la chaîne de connexion SAP ressemble à :  
@@ -52,7 +52,7 @@ Pour établir la connexion à un système SAP, ADO.NET clients doivent spécifie
 |Numéro du système (SYSNR)|Un|Le numéro du système SAP|  
 |Nom de groupe serveur d’applications (groupe)|B|Nom du groupe de serveurs SAP. Il s’agit d’un groupe facultatif de serveurs d’applications dans une connexion d’équilibrage de charge.|  
 |Hôte du serveur de message (MSHOST)|B|Nom de l’hôte de serveur de message SAP|  
-|Service de serveur de message (MSSERV)|B|Nom du service de serveur de message SAP comme spécifié dans le \<lecteur système > : \WINDOWS\system32\drivers\etc\services fichier. Si vous ne spécifiez pas une valeur, le [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] suppose que ce soit « sapms\<nom du système r/3 > ». Par exemple, si le nom du système r/3 est DV1, l’adaptateur suppose que le nom de service de serveur de message pour être « sapmsDV1 ».<br /><br /> Toutefois, si l’entrée dans le fichier de services est différente, vous devez spécifier cette valeur.|  
+|Service de serveur de message (MSSERV)|B|Nom du service de serveur de message SAP comme spécifié dans le \<lecteur système\>: \WINDOWS\system32\drivers\etc\services fichier. Si vous ne spécifiez pas une valeur, le [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] suppose que ce soit « sapms\<nom du système r/3\>». Par exemple, si le nom du système r/3 est DV1, l’adaptateur suppose que le nom de service de serveur de message pour être « sapmsDV1 ».<br /><br /> Toutefois, si l’entrée dans le fichier de services est différente, vous devez spécifier cette valeur.|  
 |Nom du système r/3 (R3NAME)|B|Le nom SAP r/3.|  
 |Destination (destination)|D|Récupère les paramètres de connexion à partir du fichier saprfc.ini.|  
 |Client (CLIENT)|A, B, D|Le numéro de client SAP|  

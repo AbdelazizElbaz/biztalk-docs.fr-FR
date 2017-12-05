@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 923bc73e6ee778cbf960300902c7f631dc5d9f5b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6e95e61fa4152cdd7485175240b6481f3d28cfc7
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="edifact-contrl-message-as-functional-acknowledgment"></a>Message CONTRL EDIFACT comme accusé de réception fonctionnel
 Si vous avez choisi de générer une notification de transactions opérationnelles dans les paramètres du profil d'entreprise ou dans l'accord de partenariat commercial (ou dans l'accord de secours si aucun accord n'a été défini entre les deux profils d'entreprise), ou si le champ UNB9 du message est défini sur « 1 », un message CONTRL est généré en tant que notification de transactions opérationnelles. Celle-ci signale les résultats de la vérification de la syntaxe effectuée sur l'échange.  
@@ -45,7 +45,7 @@ Si vous avez choisi de générer une notification de transactions opérationnell
 >  Le message CONTRL contient plusieurs éléments de données obligatoires qui sont copiés à partir de l'échange reçu. Lorsqu'un élément de données de l'échange est manquant ou syntaxiquement non valide, un message CONTRL valide au niveau de la syntaxe ne peut pas être généré. L'erreur doit alors être signalée autrement que par le biais d'un message CONTRL.  
   
 > [!NOTE]
->  Dans [!INCLUDE[btsBizTalkServer2006r3](../includes/btsbiztalkserver2006r3-md.md)], un message CONTRL (accusé de réception, acceptation ou rejet) est envoyé en réponse à un échange reçu contenant un seul ou plusieurs messages CONTRL. En revanche, dans [!INCLUDE[bts2010R2](../includes/bts2010r2-md.md)], aucun message CONTRL (accusé de réception, acceptation ou rejet) n’est envoyé en réponse à un échange reçu contenant un seul ou plusieurs messages CONTRL. Les erreurs rencontrées dans les messages CONTRL reçus doivent être signalées autrement que par l'intermédiaire d'un message CONTRL. Lorsqu'un échange contient un ou plusieurs messages CONTRL conjointement avec des messages de données, un message CONTRL généré en réponse à cet échange est créé comme si aucun message CONTRL n'avait été inclus dans l'échange reçu.  
+>  Dans BizTalk Server, un message CONTRL (accusé de réception, acceptation ou rejet) est envoyé en réponse à un échange reçu contenant uniquement un ou plusieurs messages CONTRL. En revanche, dans [!INCLUDE[bts2010R2](../includes/bts2010r2-md.md)], aucun message CONTRL (accusé de réception, acceptation ou rejet) n’est envoyé en réponse à un échange reçu contenant un seul ou plusieurs messages CONTRL. Les erreurs rencontrées dans les messages CONTRL reçus doivent être signalées autrement que par l'intermédiaire d'un message CONTRL. Lorsqu'un échange contient un ou plusieurs messages CONTRL conjointement avec des messages de données, un message CONTRL généré en réponse à cet échange est créé comme si aucun message CONTRL n'avait été inclus dans l'échange reçu.  
   
  **Boucles SG**  
   

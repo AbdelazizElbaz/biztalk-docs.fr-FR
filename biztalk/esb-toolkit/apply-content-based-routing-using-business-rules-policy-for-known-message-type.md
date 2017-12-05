@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b384c63b26f98a866390a001c7d7c2ec6f3f7cb2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 878a6e180aaf7e5f37c5cf98ca0a67790917859a
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-implement-content-based-routing-using-a-business-rules-policy-for-a-known-message-type"></a>Comment : implémenter en fonction du contenu routage à l’aide d’une entreprise règles de stratégie pour un Type connu
 ## <a name="goal"></a>Objectif  
@@ -67,7 +67,7 @@ ms.lasthandoff: 09/20/2017
 #### <a name="to-create-a-bre-policy-to-route-using-custom-message-properties"></a>Pour créer une stratégie BRE pour router à l’aide des propriétés de message personnalisées  
  Cette règle utilisera le nom du client à définir dynamiquement le point de terminaison utilisé pour router le message.  
   
-1.  Cliquez sur **Démarrer** dans la barre des tâches, pointez sur **tous les programmes**, pointez sur  **[!INCLUDE[prague](../includes/prague-md.md)]** , puis cliquez sur **Éditeur des règles d’entreprise**.  
+1.  Cliquez sur **Démarrer** dans la barre des tâches, pointez sur **tous les programmes**, pointez sur **BizTalk Server**, puis cliquez sur **Éditeur des règles d’entreprise**.  
   
 2.  Dans l’Explorateur de stratégies, cliquez sur **stratégies**, puis cliquez sur **ajouter une nouvelle stratégie**. Nom de la stratégie **RouteBasedOnCustomerKnownType**.  
   
@@ -102,11 +102,11 @@ ms.lasthandoff: 09/20/2017
   
 10. Dans l’Explorateur de faits, faites glisser le **définir l’emplacement du Transport Point de terminaison sortants** définition **Actions**.  
   
-11. Cliquez sur  **\<une chaîne vide >** , puis tapez **C:\HowTos\Out\West%MessageID%.xml**.  
+11. Cliquez sur  **\<une chaîne vide\>**  , puis tapez **C:\HowTos\Out\West%MessageID%.xml**.  
   
 12. Dans l’Explorateur de faits, faites glisser le **définir le Type de Transport Point de terminaison sortants** définition **Actions**.  
   
-13. Dans l’Explorateur de faits, développez **ESB. TransportTypes**, développez **Version 1.0**, puis faites glisser le **adaptateur fournisseurs** définition  **\<une chaîne vide >**.  
+13. Dans l’Explorateur de faits, développez **ESB. TransportTypes**, développez **Version 1.0**, puis faites glisser le **adaptateur fournisseurs** définition  **\<une chaîne vide\>** .  
   
 14. Dans le **Actions** volet, développez le **adaptateur fournisseurs** liste déroulante, puis cliquez sur **fichier**.  
   
@@ -126,7 +126,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  Dans le **Actions** section, cliquez sur **C:\HowTos\Out\West%MessageID%.xml**, puis cliquez sur **réinitialiser l’argument**.  
   
-8.  Cliquez sur  **\<une chaîne vide >**, puis tapez **C:\HowTos\Out\East%MessageID%.xml**.  
+8.  Cliquez sur  **\<une chaîne vide\>**, puis tapez **C:\HowTos\Out\East%MessageID%.xml**.  
   
 #### <a name="to-add-a-routing-rule-for-unknown-customers"></a>Pour ajouter une règle de routage pour les clients inconnus  
   
@@ -152,11 +152,11 @@ ms.lasthandoff: 09/20/2017
   
 11. À partir de l’Explorateur de faits, faites glisser la définition de l’emplacement de Transport sortant Point de terminaison défini pour les Actions.  
   
-12. Cliquez sur \<une chaîne vide >, puis tapez C:\HowTos\Out\CustomerUnknown%MessageID%.xml.  
+12. Cliquez sur \<une chaîne vide\>, puis tapez C:\HowTos\Out\CustomerUnknown%MessageID%.xml.  
   
 13. À partir de l’Explorateur de faits, faites glisser la définition du Type de Transport sortant Point de terminaison défini pour les Actions.  
   
-14. Dans l’Explorateur de faits, développez ESB. TransportTypes, puis Version 1.0, puis faites glisser la définition de fournisseurs de carte à \<une chaîne vide >.  
+14. Dans l’Explorateur de faits, développez ESB. TransportTypes, puis Version 1.0, puis faites glisser la définition de fournisseurs de carte à \<une chaîne vide\>.  
   
 15. Dans le volet Actions, développez la liste déroulante des fournisseurs de carte, puis cliquez sur fichier.  
   
@@ -168,7 +168,7 @@ ms.lasthandoff: 09/20/2017
   
 #### <a name="to-create-an-esb-itinerary-dsl-model"></a>Pour créer un modèle DSL de la feuille de route ESB  
   
-1.  Dans [!INCLUDE[vs2010](../includes/vs2010-md.md)], ouvrez C:\HowTos\Patterns\Patterns.sln.  
+1.  Dans Visual Studio, ouvrez C:\HowTos\Patterns\Patterns.sln.  
   
 2.  Dans l’Explorateur de solutions, cliquez sur le **ItineraryLibrary** de projet, pointez sur **ajouter**, puis cliquez sur **nouvel itinéraire**.  
   
@@ -278,10 +278,10 @@ ms.lasthandoff: 09/20/2017
 ## <a name="additional-resources"></a>Ressources supplémentaires  
  Pour plus d'informations, consultez les rubriques connexes suivantes :  
   
--   [Comment : sélectionner un itinéraire à l’aide d’une stratégie de règles d’entreprise](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
+-   [Guide pratique pour sélectionner un itinéraire à l’aide d’une stratégie de règles métier](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
   
--   [Comment : acheminer un Message basé sur le contexte du Message à l’aide d’une stratégie de règles d’entreprise](../esb-toolkit/dynamically-route-messages-based-on-message-context-using-business-rules-policy.md)  
+-   [Guide pratique pour router un message en fonction de son contexte à l’aide d’une stratégie de règles métier](../esb-toolkit/dynamically-route-messages-based-on-message-context-using-business-rules-policy.md)  
   
 -   [Activités de développement](../esb-toolkit/development-activities.md)  
   
--   [Modèles de routage de messages](../esb-toolkit/message-routing-patterns.md)
+-   [Modèles de routage des messages](../esb-toolkit/message-routing-patterns.md)

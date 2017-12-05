@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3c4d261069b83741413e255a3f8bacd6dd9260d2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 672879df2c1c5217d8a9710dad000609dd95d0c2
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="tracking-profile-deployment-utility"></a>Utilitaire de déploiement de profil de suivi
 Les développeurs utilisent l'utilitaire bttdeploy pour appliquer des modèles de suivi à l'infrastructure BAM et les supprimer. En pratique, l'utilisation de l'utilitaire bttdeploy revient à cliquer sur l'option de menu Appliquer le modèle de suivi de l'Éditeur de modèle de suivi (TPE).  
@@ -31,7 +31,7 @@ Les développeurs utilisent l'utilitaire bttdeploy pour appliquer des modèles d
 |Option| Description|  
 |------------|-----------------|  
 |/h ou /?|Facultatif : Affiche la syntaxe pour bttdeploy.|  
-|/mgdb \<nom du serveur [, port] >\\< nom de la base de données\>|Facultatif : Spécifie que le serveur d’administration, le port et le nom de la base de données à laquelle appliquer le profil. **Remarque :** lorsque vous utilisez ce paramètre, le port est facultatif.|  
+|/mgdb \<nom du serveur [, port]\>\\< nom de la base de données\>|Facultatif : Spécifie que le serveur d’administration, le port et le nom de la base de données à laquelle appliquer le profil. **Remarque :** lorsque vous utilisez ce paramètre, le port est facultatif.|  
 |/remove|Facultatif : Spécifie que le modèle de suivi à supprimer de la base de données BAM.|  
 |filename|Nom du fichier de modèle de suivi à appliquer ou à supprimer.|  
   

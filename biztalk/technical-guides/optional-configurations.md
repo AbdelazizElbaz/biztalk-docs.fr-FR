@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e5e938112b5c49b789b76889a45172d5fc0579a1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7b19646c9c83eff4a3171b4d25763a6b581d45b1
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="optional-configurations"></a>Configurations facultatives
 Après avoir importé le Pack d’administration de BizTalk Server, le volet de navigation du volet surveillance affiche les types d’objets qui sont détectés automatiquement. Pour obtenir la liste des types d’objets, consultez [objets du Pack d’administration détecte](../technical-guides/objects-the-management-pack-discovers.md) section. Vous pouvez modifier la configuration de la détection par défaut des objets découverts par le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Pack d’administration. La fonctionnalité de remplacements d’Operations Manager 2007 R2/2012 vous permet de modifier les paramètres de configuration.  
@@ -31,7 +31,7 @@ Après avoir importé le Pack d’administration de BizTalk Server, le volet de 
   
 3.  Dans le volet de détails, cliquez sur le type d’objet que vous souhaitez modifier le paramétrage.  
   
-4.  Dans la barre d’outils Operations Manager, cliquez sur **substitue**, cliquez sur **remplacer la détection d’objets**, puis cliquez sur **pour tous les objets de type :** \<  *nom du type d’objet*>, **pour un groupe, pour un objet spécifique de type :** \< *nom du type d’objet*>, ou **pour tous les objets d’un autre type** .  
+4.  Dans la barre d’outils Operations Manager, cliquez sur **substitue**, cliquez sur **remplacer la détection d’objets**, puis cliquez sur **pour tous les objets de type :** \<  *nom du type d’objet*\>, **pour un groupe, pour un objet spécifique de type :** \< *nom du type d’objet*\>, ou  **Pour tous les objets d’un autre type**.  
   
 5.  Dans le **propriétés du remplacement** boîte de dialogue, cliquez sur le **remplacer** zone pour le **activé** paramètre que vous souhaitez modifier.  
   

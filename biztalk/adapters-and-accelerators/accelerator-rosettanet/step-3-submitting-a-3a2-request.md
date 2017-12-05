@@ -13,11 +13,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e32122b2c77ee0e69f7890b5a681954ba986e220
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 312e5980636d211f1e023331826e016eb141eb4b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="step-3-submitting-a-3a2-request"></a>Étape 3 : Envoi d’une demande de 3A2
 Dans cette étape, vous préparez et soumettez une demande à l’aide du processus PIP (Partner Interface) pour un 3A2 - demande de prix et disponibilité. Ce processus PIP permet à une organisation de l’acheteur obtenir des informations sur un produit donné, telles que le prix et le nombre d’unités disponibles. L’acheteur peut ensuite traiter ces informations via des règles d’entreprise pour déterminer si vous devez acheter le produit du fournisseur.  
@@ -37,7 +37,7 @@ Dans cette étape, vous préparez et soumettez une demande à l’aide du proces
     |**ID d’Instance PIP**|Type **3A2_Test**.|  
     |**Catégorie de message**|Tapez **Action**.|  
   
-3.  Utilisez le bloc-notes ou un autre éditeur de texte, ouvrez le fichier 3A2_Request.xml dans le  *\<lecteur >*: \ Programme Files\Microsoft BizTalk \<version > Accelerator for RosettaNet\SDK\LOBApplication\SampleInstances, dossier, puis copiez et collez le contenu dans le **Service contenu** champ LOBWebApplication.  
+3.  Utilisez le bloc-notes ou un autre éditeur de texte, ouvrez le fichier 3A2_Request.xml dans le  *\<lecteur\>*: \ Programme Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\LOBApplication\SampleInstances, dossier, puis copiez et collez le contenu dans le **Service contenu** champ LOBWebApplication.  
   
 4.  Cliquez sur **Submit** pour envoyer la demande 3A2 à l’ordinateur Contoso.  
   
@@ -56,7 +56,7 @@ Dans cette étape, vous préparez et soumettez une demande à l’aide du proces
   
 3.  Dans Microsoft SQL Server Management Studio, cliquez sur **nouvelle requête**.  
   
-4.  Dans le \<table > zone de texte, sélectionnez **BTARNDATA** dans la liste.  
+4.  Dans le \<table\> zone de texte, sélectionnez **BTARNDATA** dans la liste.  
   
 5.  Dans la fenêtre SQL, tapez l'instruction SQL suivante :  
   
@@ -86,4 +86,4 @@ Dans cette étape, vous préparez et soumettez une demande à l’aide du proces
   
 ## <a name="see-also"></a>Voir aussi  
  [Étape 4 : Envoi d’une demande de 3 a 4](../../adapters-and-accelerators/accelerator-rosettanet/step-4-submitting-a-3a4-request.md)   
- [Flux de messages de BTARN](../../adapters-and-accelerators/accelerator-rosettanet/message-flow-in-btarn.md)
+ [Flux de messages BTARN](../../adapters-and-accelerators/accelerator-rosettanet/message-flow-in-btarn.md)

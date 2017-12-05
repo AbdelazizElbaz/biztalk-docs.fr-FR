@@ -13,11 +13,11 @@ caps.latest.revision: "22"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b823326a0cc486dcf3f95dc70a6249d4d719d133
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2ca80f44b9f1244a340e9a9892593ae42ba4b4e9
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="host-throttling-performance-counters"></a>Compteurs de performances des limitations des hôtes
 Cette section décrit les compteurs de performance qui mesurent les paramètres système ayant un impact sur les limitations des hôtes. Les compteurs de performances suivants sont accessibles pour chaque instance d’hôte sous le **BizTalk : Agent** catégorie d’objet de performances :  
@@ -74,7 +74,7 @@ Cette section décrit les compteurs de performance qui mesurent les paramètres 
   
 3.  Dans le **ajouter des compteurs** boîte de dialogue, à partir de la **compteurs disponibles** liste, développez le **BizTalk : Agent** objet compteur de performances et sélectionnez les compteurs à être analysé.  
   
-4.  Dans le **Instances de l’objet sélectionné** , sélectionnez les instances spécifiques à surveiller pour les compteurs sélectionnés, puis cliquez sur **ajouter**.  Pour sélectionner toutes les instances de compteur disponibles, sélectionnez \< **toutes les instances**>.  
+4.  Dans le **Instances de l’objet sélectionné** , sélectionnez les instances spécifiques à surveiller pour les compteurs sélectionnés, puis cliquez sur **ajouter**.  Pour sélectionner toutes les instances de compteur disponibles, sélectionnez \< **toutes les instances**\>.  
   
 5.  Après avoir ajouté les compteurs, cliquez sur **OK**.  
   
@@ -83,4 +83,4 @@ Cette section décrit les compteurs de performance qui mesurent les paramètres 
 ## <a name="see-also"></a>Voir aussi  
  [Limitation des recommandations sur la conception](../core/throttling-design-recommendations.md)   
  [Comment BizTalk Server implémente la limitation de l’hôte](../core/how-biztalk-server-implements-host-throttling.md)   
- [À l’aide du Panneau de configuration de BizTalk Server réglage des performances](../core/using-settings-dashboard-for-biztalk-server-performance-tuning.md)
+ [Utilisation du panneau de configuration pour le réglage des performances de BizTalk Server](../core/using-settings-dashboard-for-biztalk-server-performance-tuning.md)

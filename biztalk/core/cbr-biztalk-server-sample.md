@@ -12,18 +12,18 @@ caps.latest.revision: "11"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f8694e0525eae82c6df4e6187d6182fbfae3f43e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 30811b4f0dba463d518bdd9cd8f6d227e0e79aac
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="cbr-biztalk-server-sample"></a>CBR (exemple BizTalk Server)
 L’exemple de routage montre comment utiliser le **ExplorerOM** des objets d’administration pour ajouter et configurer de nouveaux ports d’envoi pour le routage basé sur le contenu des messages BizTalk.  
   
 ## <a name="prerequisites"></a>Conditions préalables  
   
--   Cet exemple requiert que l’exemple CBRSample être déployé en exécutant le fichier setup.bat situé dans le \< *exemples de chemin*> \Messaging\CBRSample active.  
+-   Cet exemple requiert que l’exemple CBRSample être déployé en exécutant le fichier setup.bat situé dans le \< *exemples de chemin*\>\Messaging\CBRSample active.  
   
 -   Vous devez disposer des privilèges d'administrateur [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] pour utiliser les objets d'administration dans cet exemple.  
   
@@ -47,7 +47,7 @@ L’exemple de routage montre comment utiliser le **ExplorerOM** des objets d’
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
  L'exemple se trouve dans l'emplacement SDK suivant :  
   
- \<*Exemples de chemin d’accès*> \Admin\ExplorerOM\CBR  
+ \<*Exemples de chemin d’accès*\>\Admin\ExplorerOM\CBR  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -74,7 +74,7 @@ L’exemple de routage montre comment utiliser le **ExplorerOM** des objets d’
   
 3.  Ouvrez une fenêtre de commande, puis accédez au dossier suivant :  
   
-     \<*Exemples de chemin d’accès*> \Admin\ExplorerOM\CBR\bin\Debug  
+     \<*Exemples de chemin d’accès*\>\Admin\ExplorerOM\CBR\bin\Debug  
   
 4.  Exécutez le fichier CBR.exe.  
   

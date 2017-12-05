@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c7942e2e092b8d4407924cbce4f5e26193f3c3f1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: edc76a74aaa054496fc7a831549c8b81edcc50fe
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="assemblies-and-artifacts-installed-by-the-transformation-service-sample"></a>Assemblys et des artefacts installés par l’exemple de Service de Transformation
 Le tableau suivant répertorie les assemblys et les artefacts installés par le [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] exemple de Service de Transformation.  
@@ -38,4 +38,4 @@ Le tableau suivant répertorie les assemblys et les artefacts installés par le 
 |||GlobalBank.ESB.TransformServices.Maps.RetailOrder_To_CanonicalOrder Version 2.0.0.0|  
 |Cache d’assembly global|Assemblys|GlobalBank.ESB.TransformServices.Maps Version 2.0.0.0|  
 |||GlobalBank.ESB.TransformServices.Schemas Version 2.0.0.0|  
-|%Program Files%\\[!INCLUDE[prague](../includes/prague-md.md)]\Pipeline composants|Composants de pipeline|(aucun)|
+|%Program Files%\\BizTalk Server\Pipeline composants|Composants de pipeline|(aucun)|

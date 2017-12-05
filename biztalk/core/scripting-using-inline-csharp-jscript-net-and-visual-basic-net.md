@@ -18,11 +18,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 68fe19b4616e23066603995b6403654fa3960789
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fe2002bd92342a953406a21e076b801d3e90b938
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="scripting-using-inline-c-jscript-net-and-visual-basic-net"></a>Scripts utilisant Inline C#, Jscript .NET et Visual Basic .NET
 Les scripts Inline peuvent s’avérer pratiques pour le code personnalisé que vous risquez de ne pas réutiliser dans votre application.  
@@ -40,7 +40,7 @@ Les scripts Inline peuvent s’avérer pratiques pour le code personnalisé que 
 |System.Xml.Xpath|Les classes XPath.|  
 |Microsoft.VisualBasic|Les classes de script Visual Basic.|  
   
- Pour plus d’informations sur les espaces de noms et types de données, effectuez une recherche sur « à l’aide de XSLT Stylesheet Scripting \<msxsl : script > » et « System.Xml.Xsl.XslCompiledTransform » dans la collection du .NET Framework.  
+ Pour plus d’informations sur les espaces de noms et types de données, effectuez une recherche sur « à l’aide de XSLT Stylesheet Scripting \<msxsl : script\>» et « System.Xml.Xsl.XslCompiledTransform » dans la collection du .NET Framework.  
   
 > [!CAUTION]
 >  Veillez à ne pas utiliser la même signature de méthode plusieurs fois. Lorsque plusieurs fonctoids Script ont la même signature de méthode, BizTalk sélectionne la première implémentation et ignore les autres.  

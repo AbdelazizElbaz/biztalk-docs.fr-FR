@@ -17,11 +17,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e81b33982273088e498e719fc074db5c454b0e59
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: df0988a9edc2af81970237aad363315a778f821b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="setting-up-a-send-port-for-receiving-acks"></a>Configuration d’un Port d’envoi pour recevoir des accusés de réception
 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator pour HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) peut recevoir des accusés de réception (ACK) sur un port d’envoi unidirectionnel. Lorsque vous configurez un port d’envoi unidirectionnel pour recevoir les accusés de réception sur la même connexion, vous devez associer cet envoi port de réception du port unidirectionnel.  
@@ -58,7 +58,7 @@ ms.lasthandoff: 09/20/2017
     >  Lorsque vous laissez **soumettre un emplacement de réception** vide, BTAHL7 entre l’URI pour la valeur par défaut **TwoWayAckReceiveLocation**. Vous pouvez vérifier qu’après un clic sur **OK** à l’étape 6, en cliquant sur **Configuration** à nouveau. L’URI de **TwoWayAckReceiveLocation** (127.0.0.1:65535) devra être entré dans **envoyer recevoir emplacement (URI) de l’accusé de réception**.  
   
     > [!NOTE]
-    >  Vous devez créer un port d’envoi pour vous abonner à l’accusé de réception reçu, ou l’accusé de réception s’affichent dans un état suspendu, car aucun abonnement ont été trouvées. Pour vous abonner à l’accusé de réception reçu par le port d’envoi, utilisez des filtres, par exemple,  **BTS. MessageType == \<* MessageType*> ** et  **BTS. ReceivePortName == \<* ReceivePort*> **. Pour les accusés de réception statiques, le type de message est **StaticAck**.  
+    >  Vous devez créer un port d’envoi pour vous abonner à l’accusé de réception reçu, ou l’accusé de réception s’affichent dans un état suspendu, car aucun abonnement ont été trouvées. Pour vous abonner à l’accusé de réception reçu par le port d’envoi, utilisez des filtres, par exemple,  **BTS. MessageType == \<* MessageType*\>** et  **BTS. ReceivePortName == \<* ReceivePort*\>**. Pour les accusés de réception statiques, le type de message est **StaticAck**.  
   
 7.  Cliquez sur **OK**.  
   
@@ -66,4 +66,4 @@ ms.lasthandoff: 09/20/2017
  [Création et le traitement des accusés de réception](../../adapters-and-accelerators/accelerator-hl7/creating-and-processing-acknowledgments.md)   
  [Types de schémas de Message de l’accusé de réception](../../adapters-and-accelerators/accelerator-hl7/ack-message-schema-types.md)   
  [Segment de message d’accusé de réception](../../adapters-and-accelerators/accelerator-hl7/message-acknowledgment-segment.md)   
- [Conditions d’erreur d’accusé de réception](../../adapters-and-accelerators/accelerator-hl7/acknowledgment-error-conditions.md)
+ [Conditions d’erreur des accusés de réception](../../adapters-and-accelerators/accelerator-hl7/acknowledgment-error-conditions.md)

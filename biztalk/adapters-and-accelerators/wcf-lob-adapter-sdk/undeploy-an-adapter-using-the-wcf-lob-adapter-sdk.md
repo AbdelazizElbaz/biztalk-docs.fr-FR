@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 90208dd99a6b4ccdc8f3f55d2ad019baabe635ad
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 1332e41593ede5f7075ec7f5ede1293d79d65594
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="undeploy-an-adapter-using-the-wcf-lob-adapter-sdk"></a>Annuler le déploiement d’un adaptateur à l’aide de l’adaptateur LOB WCF SDK
 Pour annuler le déploiement d’une carte à partir d’un ordinateur, l’utilisateur doit effectuer les deux tâches suivantes :  
@@ -41,7 +41,7 @@ Pour annuler le déploiement d’une carte à partir d’un ordinateur, l’util
   
 2.  À l'invite de commandes, tapez la commande suivante :  
   
-     **gacutil /u** \< *complet**nom de l’assembly*>  
+     **gacutil /u** \< *complet**nom de l’assembly*\>  
   
      Dans cette commande, le nom de l’assembly est le nom de l’assembly à désinstaller à partir du GAC.  
   
@@ -54,7 +54,7 @@ Pour annuler le déploiement d’une carte à partir d’un ordinateur, l’util
   
 #### <a name="manually-edit-the-machineconfig-file"></a>Modifier manuellement le fichier machine.config  
   
-1.  Modifiez le fichier machine.config situé dans le dossier de configuration Microsoft .NET. Pour ce faire, cliquez sur **Démarrer**, cliquez sur **exécuter**, type **bloc-notes \<Windows le chemin d’installation > \Microsoft.NET\Framework\\< version\>\CONFIG \MACHINE.config**, puis cliquez sur **OK**.  
+1.  Modifiez le fichier machine.config situé dans le dossier de configuration Microsoft .NET. Pour ce faire, cliquez sur **Démarrer**, cliquez sur **exécuter**, type **bloc-notes \<chemin d’installation de Windows\>\Microsoft.NET\Framework\\< version\>\CONFIG\machine.config**, puis cliquez sur **OK**.  
   
     > [!NOTE]
     >  Effectuez une sauvegarde du fichier machine.config avant d’apporter des modifications pour vous prémunir contre les erreurs de modification.  

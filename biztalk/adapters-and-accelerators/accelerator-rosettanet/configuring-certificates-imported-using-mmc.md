@@ -19,11 +19,11 @@ caps.latest.revision: "9"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f60811a8b6875c8cbcf4a8037501855a08fe0be6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5d8896691557f48a8e85e67e09e35d20e1d606d0
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="configuring-certificates-imported-using-mmc"></a>Configuration des certificats importés à l’aide de MMC
 Après avoir importé des certificats à l’aide du composant logiciel enfichable Certificats pour le [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] Management Console (MMC), vous devez configurer leur utilisation. Cela nécessite la configuration du groupe BizTalk, les comptes de service d’hôte BizTalk et l’hôte isolé, PIP (PIP), commercial des accords de partenariat et partenaires. Vous devez effectuer les étapes suivantes :  
@@ -44,12 +44,12 @@ Après avoir importé des certificats à l’aide du composant logiciel enfichab
   
 ### <a name="to-configure-the-signing-certificate-for-a-biztalk-group-or-the-decryption-certificate-for-a-biztalk-host"></a>Pour configurer le certificat de signature pour un groupe BizTalk ou le certificat de déchiffrement d’un hôte BizTalk  
   
-1.  Cliquez sur **Démarrer**, cliquez sur **exécuter**, type **runas/user :\<héberger service > mmc**, puis cliquez sur **OK**.  
+1.  Cliquez sur **Démarrer**, cliquez sur **exécuter**, type **runas/user :\<héberger le service\> mmc**, puis cliquez sur **OK**.  
   
     > [!NOTE]
-    >  Pour \< *héberger le service*>, tapez le nom du service que vous avez associé le service hôte lors de l’installation [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)].  
+    >  Pour \< *héberger le service*\>, tapez le nom du service que vous avez associé le service hôte lors de l’installation [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)].  
   
-2.  Tapez le mot de passe \< *héberger le service*>, puis appuyez sur ENTRÉE.  
+2.  Tapez le mot de passe \< *héberger le service*\>, puis appuyez sur ENTRÉE.  
   
 3.  Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur [!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)], puis cliquez sur [!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)] **Console de gestion**.  
   
@@ -71,4 +71,4 @@ Après avoir importé des certificats à l’aide du composant logiciel enfichab
     >  Vous devez configurer les certificats de déchiffrement sur l’hôte BizTalk (BizTalkServerApplication) et l’hôte BizTalk isolé (BizTalkServerIsolatedHost).  
   
 ## <a name="see-also"></a>Voir aussi  
- [La gestion des certificats](../../adapters-and-accelerators/accelerator-rosettanet/managing-certificates1.md)
+ [Gestion des certificats](../../adapters-and-accelerators/accelerator-rosettanet/managing-certificates1.md)

@@ -16,11 +16,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 45dc38a939e71a8f4eb3d3afe87736fc548f8570
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cb03368a9d046eacf31f8b7bbed5c0a7f090c3d3
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="receive-idocs-from-sap-using-biztalk-server"></a>Recevoir des IDOC SAP à l’aide de BizTalk Server
 Réception d’un IDOC implique la [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] d’agir en tant que RFC serveur pour recevoir un appel RFC spécial à partir de SAP. L’adaptateur SAP peut recevoir des IDOC agissant comme un serveur de RFC ou tRFC. Pour plus d’informations sur la réception d’un IDOC avec l’adaptateur se comporte comme un serveur tRFC, consultez [recevoir des IDOC de SAP dans un contexte transactionnel à l’aide de BizTalk Server](../../adapters-and-accelerators/adapter-sap/receive-idocs-from-sap-in-a-transactional-context-using-biztalk-server.md).  
@@ -29,13 +29,13 @@ Réception d’un IDOC implique la [!INCLUDE[adaptersap_short](../../includes/ad
   
 -   **Réception** opération permet de recevoir des IDOC ayant un schéma fortement typée de l’adaptateur.  
   
--   **ReceiveIdoc** opération permet de recevoir des IDOC ayant un schéma faiblement typée de l’adaptateur. Cette opération reçoit IDOC sous forme de chaîne dans un message XML sous la \<idocData > balise.  
+-   **ReceiveIdoc** opération permet de recevoir des IDOC ayant un schéma faiblement typée de l’adaptateur. Cette opération reçoit IDOC sous forme de chaîne dans un message XML sous la \<idocData\> balise.  
   
  Sur le côté de la carte, vous pouvez spécifier une valeur pour le **ReceiveIDocFormat** propriété pour spécifier le format de l’adaptateur doivent recevoir des IDOC de liaison.  
   
 -   **Typé** Spécifie l’adaptateur recevra IDOC avec un schéma fortement typé. Il en résulte un IDOC XML.  
   
--   **Chaîne** Spécifie l’adaptateur recevra IDOC avec faiblement typée un schéma. Il en résulte un message XML avec le \<idocData > balise.  
+-   **Chaîne** Spécifie l’adaptateur recevra IDOC avec faiblement typée un schéma. Il en résulte un message XML avec le \<idocData\> balise.  
   
 -   **RFC** Spécifie l’adaptateur recevra IDOC dans n’importe quel format.  
   
@@ -50,8 +50,8 @@ Réception d’un IDOC implique la [!INCLUDE[adaptersap_short](../../includes/ad
 |-------------------------------|------------------------|------------|  
 |IDOC (via l’interface de tRFC)|**Heure de création de métadonnées**<br /><br /> 1.  Définissez la propriété binding GenerateFlatFileCompatibleIdocSchema à **True**.<br />2.  Générer le schéma pour le **réception** opération un IDOC spécifique à l’aide [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)].<br />3.  Définissez la propriété binding ReceiveIdocFormat à **typé**.<br /><br /> **Moment de la conception d’orchestration**<br /><br /> 1.  Recevoir des IDOC de XML.<br />2.  Utilisez l’assembleur de fichier plat pour convertir XML IDOC de fichier plat.|Format de fichier plat IDOC|  
 |IDOC (via l’interface de tRFC)|**Heure de création de métadonnées**<br /><br /> 1.  Définissez la propriété binding GenerateFlatFileCompatibleIdocSchema à **True**.<br />2.  Générer le schéma pour le **réception** opération un IDOC spécifique à l’aide [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)].<br />3.  Définissez la propriété binding ReceiveIdocFormat à **typé**.<br /><br /> **Orchestration au moment du Design**<br /><br /> -Réception IDOC de XML.|XML IDOC|  
-|IDOC (via l’interface de tRFC)|**Heure de création de métadonnées**<br /><br /> 1.  Définissez la propriété binding GenerateFlatFileCompatibleIdocSchema à **True**.<br />2.  Générer le schéma pour le **réception** opération un IDOC spécifique à l’aide [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)].<br />3.  Définissez la propriété binding ReceiveIdocFormat à **chaîne**.<br /><br /> **Moment de la conception d’orchestration**<br /><br /> 1.  Réception de message XML avec IDOC de fichier plat dans \<idocData > balise.<br />2.  Utilisez la prise en charge de l’adaptateur WCF XPath dans la configuration de port de réception pour extraire l’IDoc de fichier plat à partir du message XML. Exemple :<br />     `/*[local-name()='ReceiveIdoc']/*[local-name()='idocData']`<br />3.  Utilisez le désassembleur de fichier plat pour convertir des IDOC de fichier plat en XML IDOC.<br /><br /> **Important** cette approche peut être utilisée pour recevoir des IDOC à l’aide de la nouvelle basé sur WCF [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] et de les appliquer directement dans un projet BizTalk existant écrit pour recevoir des IDOC à partir de l’adaptateur BizTalk SAP existante. Il s’agit également l’approche recommandée pour recevoir des IDOC avec le numéro de version inférieur au nombre de version (SYSREL).|XML IDOC|  
-|IDOC (via l’interface de tRFC)|**Heure de création de métadonnées**<br /><br /> 1.  Générer le schéma pour le **ReceiveIdoc** opération à partir du nœud IDOC avec [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)].<br />2.  Définissez la propriété binding ReceiveIdocFormat à **chaîne**.<br /><br /> **Moment de la conception d’orchestration**<br /><br /> -Recevoir le message XML avec l’IDOC représenté sous forme de chaîne dans le \<idocData > balise.|IDOC de fichier plat dans le message XML|  
+|IDOC (via l’interface de tRFC)|**Heure de création de métadonnées**<br /><br /> 1.  Définissez la propriété binding GenerateFlatFileCompatibleIdocSchema à **True**.<br />2.  Générer le schéma pour le **réception** opération un IDOC spécifique à l’aide [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)].<br />3.  Définissez la propriété binding ReceiveIdocFormat à **chaîne**.<br /><br /> **Moment de la conception d’orchestration**<br /><br /> 1.  Réception de message XML avec IDOC de fichier plat dans \<idocData\> balise.<br />2.  Utilisez la prise en charge de l’adaptateur WCF XPath dans la configuration de port de réception pour extraire l’IDoc de fichier plat à partir du message XML. Exemple :<br />     `/*[local-name()='ReceiveIdoc']/*[local-name()='idocData']`<br />3.  Utilisez le désassembleur de fichier plat pour convertir des IDOC de fichier plat en XML IDOC.<br /><br /> **Important** cette approche peut être utilisée pour recevoir des IDOC à l’aide de la nouvelle basé sur WCF [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] et de les appliquer directement dans un projet BizTalk existant écrit pour recevoir des IDOC à partir de l’adaptateur BizTalk SAP existante. Il s’agit également l’approche recommandée pour recevoir des IDOC avec le numéro de version inférieur au nombre de version (SYSREL).|XML IDOC|  
+|IDOC (via l’interface de tRFC)|**Heure de création de métadonnées**<br /><br /> 1.  Générer le schéma pour le **ReceiveIdoc** opération à partir du nœud IDOC avec [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)].<br />2.  Définissez la propriété binding ReceiveIdocFormat à **chaîne**.<br /><br /> **Moment de la conception d’orchestration**<br /><br /> -Recevoir le message XML avec l’IDOC représenté sous forme de chaîne dans le \<idocData\> balise.|IDOC de fichier plat dans le message XML|  
   
 ## <a name="how-to-receive-an-idoc-from-an-sap-system"></a>La réception d’un IDOC à partir d’un système SAP ?  
  Une opération sur un système SAP à l’aide [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] implique les tâches de procédures décrites dans [blocs de construction pour créer des applications SAP](../../adapters-and-accelerators/adapter-sap/building-blocks-to-create-sap-applications.md). Pour recevoir un IDOC à partir d’un système SAP, ces tâches sont :  
@@ -76,9 +76,9 @@ Réception d’un IDOC implique la [!INCLUDE[adaptersap_short](../../includes/ad
 ## <a name="generating-schema"></a>Génération du schéma  
  Vous devez générer le schéma pour le *réception* opération de le *ORDERS03. V3.620* IDOC sous le */IDOC/ORDERS/ORDERS03* nœud. Consultez [Parcourir, rechercher et obtenir de métadonnées pour des opérations IDOC dans SAP](../../adapters-and-accelerators/adapter-sap/browse-search-and-get-metadata-for-idoc-operations-in-sap.md) pour obtenir des instructions sur la génération de schéma pour un IDOC particulier. Lors de la génération du schéma, vous pouvez souhaiter définir les propriétés suivantes :  
   
--   *GenerateFlatFileCompatibleIDoc* – génère \<appinfo > balises afin que l’Analyseur de fichier plat BizTalk peut être utilisée dans les scénarios de BizTalk pour prendre en charge le format de fichier plat IDOC.  
+-   *GenerateFlatFileCompatibleIDoc* – génère \<appinfo\> balises afin que l’Analyseur de fichier plat BizTalk peut être utilisée dans les scénarios de BizTalk pour prendre en charge le format de fichier plat IDOC.  
   
--   *FlatFileSegmentIndicator* – indique si le schéma IDOC \<appinfo > balises doivent contenir les noms de définition des segments ou des noms de type de segment. Cela s’applique lorsqu’un veut utilisé pour envoyer/recevoir un fichier plat IDOC de SAP. Si le *GenerateFlatFileCompatibleIDoc* est définie sur false, puis *FlatFileSegmentIndicator* liaison de la propriété est ignorée.  
+-   *FlatFileSegmentIndicator* – indique si le schéma IDOC \<appinfo\> balises doivent contenir les noms de définition des segments ou des noms de type de segment. Cela s’applique lorsqu’un veut utilisé pour envoyer/recevoir un fichier plat IDOC de SAP. Si le *GenerateFlatFileCompatibleIDoc* est définie sur false, puis *FlatFileSegmentIndicator* liaison de la propriété est ignorée.  
   
 > [!IMPORTANT]
 >  Étant donné que vous générez le schéma d’un appel d’IDOC entrant, veillez à sélectionner **Service (opération entrante)** à partir de la **sélectionner type de contrat** liste déroulante dans le [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)].  

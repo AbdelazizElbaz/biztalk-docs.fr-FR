@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0f564d2faceca0753d37bd9c045e403f5f016734
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ee337b56c6e0901de6b02b28df69101ad3aaf3ff
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="assemblies-and-artifacts-installed-by-the-dynamic-resolution-sample"></a>Assemblys et des artefacts installés par l’exemple de résolution dynamique
 Le tableau suivant répertorie les assemblys et les artefacts installés par le [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] exemple de résolution dynamique.  
@@ -54,4 +54,4 @@ Le tableau suivant répertorie les assemblys et les artefacts installés par le 
 |Cache d’assembly global|Assemblys|GlobalBank.ESB.DynamicResolution.Pipelines Version 2.0.0.0|  
 |||GlobalBank.ESB.DynamicResolution.Schemas Version 2.0.0.0|  
 |||GlobalBank.ESB.DynamicResolution.Transforms Version 2.0.0.0|  
-|%Program Files%\\[!INCLUDE[prague](../includes/prague-md.md)]\Pipeline composants|Composants de pipeline|(aucun)|
+|%Program Files%\\BizTalk Server\Pipeline composants|Composants de pipeline|(aucun)|

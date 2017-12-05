@@ -16,11 +16,11 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a1265a2b7205e372ba9f3769fcc95ea9ac3aeff9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5b76ae42cf0ffc26b818e35d83f59e64158b923a
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="receive-inbound-operations-from-the-sap-system-using-the-wcf-channel-model"></a>Opérations entrantes de réception à partir du système SAP à l’aide du modèle de canal WCF
 Pour agir comme un serveur RFC et recevoir des opérations appelé par le système SAP (par exemple, envoyer un IDOC ou l’appel d’une demande de changement), vous devez créer un écouteur de canal peut écouter les messages à partir d’un ID de programme SAP sur un  **System.ServiceModel.Channels.IReplyChannel** forme de canal.  
@@ -363,7 +363,7 @@ namespace SapRfcServerCM
   
                         Console.WriteLine("RESULT =\t" + result_out.ToString());  
   
-                        string out_xml = "\<Z_RFC_MKD_DIVResponse xmlns=\"http://Microsoft.LobServices.Sap/2007/03/Rfc/\"><RESULT>" + result_out + "</RESULT></Z_RFC_MKD_DIVResponse>";  
+                        string out_xml = "<Z_RFC_MKD_DIVResponse xmlns=\"http://Microsoft.LobServices.Sap/2007/03/Rfc/\"><RESULT>" + result_out + "</RESULT></Z_RFC_MKD_DIVResponse>";  
                         StringReader sr = new StringReader(out_xml);  
                         reader = XmlReader.Create(sr);  
   
@@ -444,4 +444,4 @@ namespace SapRfcServerCM
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
-[Développer des applications à l’aide du modèle de canal WCF](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)
+[Développer des applications en utilisant le modèle de canal WCF](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)

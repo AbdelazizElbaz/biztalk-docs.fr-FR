@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eef9f107b01c8e86d466cb1fb0a202e1aa5b0b54
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 69520639040893aad7f46b29760343afa68073fc
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="create-the-dsrtxt-file"></a>Créer le fichier DSR.txt
 Utilisez la procédure suivante pour créer le fichier de message de réponse DSR.txt. Vous utiliserez ce fichier ultérieurement pour vérifier le scénario du didacticiel.  
@@ -39,6 +39,6 @@ Utilisez la procédure suivante pour créer le fichier de message de réponse DS
     DSP|||CO2 25 [20-30] MEQ/L STAT|LB  
     ```  
   
-2.  Enregistrez le fichier sous **DSR.txt** dans les \< *lecteur*: > \Program Files\Microsoft BizTalk \<version > Accelerator pour le dossier du didacticiel de HL7\SDK\Interrogative et fermez l’éditeur.  
+2.  Enregistrez le fichier sous **DSR.txt** dans les \< *lecteur*:\>\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\Interrogative Dossier Tutorial, puis fermez l’éditeur.  
   
  Passez à [étape 1 : créer et déployer en-tête commun et schémas d’accusé de réception](../../adapters-and-accelerators/accelerator-hl7/step-1-create-and-deploy-common-header-and-acknowledgment-schemas.md).
