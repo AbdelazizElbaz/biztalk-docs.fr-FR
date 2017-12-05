@@ -1314,7 +1314,7 @@
 ####### [Utiliser le commutateur ThrowDetailedError](how-to-use-the-throwdetailederror-switch.md)
 ###### [Test des services web publiés](testing-published-web-services.md)
 ####### [Création d’une application .NET pour tester un service web publié](creating-a-net-application-to-test-a-published-web-service.md)
-####### [Utiliser Internet Explorer pour tester un service web publié](how-to-use-internet-explorer-to-test-a-published-web-service.md)
+####### [Tester un service web](how-to-use-internet-explorer-to-test-a-published-web-service.md)
 ###### [Déploiement de services web publiés sur un ordinateur n’exécutant pas Visual Studio](deploying-published-web-services-on-a-non-visual-studio-computer.md)
 ####### [Créer un package d’installation web pour votre service web publié](how-to-create-a-web-setup-for-your-published-web-service.md)
 ####### [Distribuer le package d’installation web](how-to-distribute-the-web-setup-package.md)
