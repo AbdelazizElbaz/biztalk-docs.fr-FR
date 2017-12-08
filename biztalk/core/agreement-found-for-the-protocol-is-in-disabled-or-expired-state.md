@@ -18,8 +18,8 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# L'accord trouvé pour le protocole est désactivé ou expiré.
-## Détails  
+# <a name="agreement-found-for-the-protocol-is-in-disabled-or-expired-state"></a>L'accord trouvé pour le protocole est désactivé ou expiré.
+## <a name="details"></a>Détails  
   
 |||  
 |-|-|  
@@ -31,8 +31,8 @@ ms.lasthandoff: 09/20/2017
 |Nom symbolique|AgreementResolutionAgreementDiasbledOrExpired|  
 |Texte du message|Accord trouvé pour le protocole de {0} est désactivé ou expiré état.|  
   
-## Explication  
+## <a name="explanation"></a>Explication  
  Cet événement d'erreur/d'avertissement/d'informations indique que BizTalk Server a pu trouver un accord mais que celui-ci est défini sur l'état Désactivé ou Expiré.  
   
-## Action de l'utilisateur  
+## <a name="user-action"></a>Action de l'utilisateur  
  Pour résoudre cette erreur, activez l'accord.

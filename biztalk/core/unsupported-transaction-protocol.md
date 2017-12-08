@@ -18,8 +18,8 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# Protocole de transaction non pris en charge
-## Détails  
+# <a name="unsupported-transaction-protocol"></a>Protocole de transaction non pris en charge
+## <a name="details"></a>Détails  
   
 |||  
 |-|-|  
@@ -31,10 +31,10 @@ ms.lasthandoff: 09/20/2017
 |Nom symbolique|0|  
 |Texte du message|Non pris en charge de protocole de transaction : {0}|  
   
-## Explication  
+## <a name="explanation"></a>Explication  
  Cette erreur se produit lorsque la propriété de protocole de transaction d'un emplacement de réception ou d'un port d'envoi est définie sur une valeur erronée.  
   
-## Action de l'utilisateur  
+## <a name="user-action"></a>Action de l'utilisateur  
  Pour résoudre cette erreur, procédez de l'une des manières suivantes :  
   
 1.  Cliquez sur **Démarrer**, cliquez sur **tous les programmes**, cliquez sur [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], puis cliquez sur **Administration de BizTalk Server**.  

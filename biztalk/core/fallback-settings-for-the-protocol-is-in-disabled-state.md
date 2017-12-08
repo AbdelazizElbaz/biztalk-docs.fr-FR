@@ -18,8 +18,8 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# Les paramètres de secours du protocole sont désactivés
-## Détails  
+# <a name="fallback-settings-for-the-protocol-is-in-disabled-state"></a>Les paramètres de secours du protocole sont désactivés
+## <a name="details"></a>Détails  
   
 |||  
 |-|-|  
@@ -31,8 +31,8 @@ ms.lasthandoff: 09/20/2017
 |Nom symbolique|AgreementResolutionFallbackSettingsDisabled|  
 |Texte du message|Les paramètres de secours du protocole {0} sont désactivés.|  
   
-## Explication  
+## <a name="explanation"></a>Explication  
  Cet événement d'erreur/d'avertissement/d'informations indique que BizTalk Server a réussi à trouver une correspondance pour un accord et a été redirigé vers les paramètres de secours, mais que ceux-ci ont été désactivés pour le protocole spécifié.  
   
-## Action de l'utilisateur  
+## <a name="user-action"></a>Action de l'utilisateur  
  Pour résoudre cette erreur, activez les paramètres de secours pour le protocole spécifié.
