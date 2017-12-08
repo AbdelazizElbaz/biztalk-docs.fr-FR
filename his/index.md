@@ -1,1 +1,1 @@
-# <a name="welcome-to-his"></a>Bienvenue !
+# <a name="welcome-to-his"></a><span data-ttu-id="89ff2-101">Bienvenue !</span><span class="sxs-lookup"><span data-stu-id="89ff2-101">Welcome to his!</span></span>
