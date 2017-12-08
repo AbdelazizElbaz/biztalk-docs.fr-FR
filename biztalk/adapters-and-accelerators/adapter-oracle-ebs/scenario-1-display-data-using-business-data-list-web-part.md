@@ -26,7 +26,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="creating-a-web-part-page"></a><span data-ttu-id="ee6ec-109">Création d’une Page de composants WebPart</span><span class="sxs-lookup"><span data-stu-id="ee6ec-109">Creating a Web Part Page</span></span>  
  <span data-ttu-id="ee6ec-110">Cette section fournit des instructions pour créer une page WebPart.</span><span class="sxs-lookup"><span data-stu-id="ee6ec-110">This section provides instructions to create a Web Part page.</span></span>  
   
-###  <span data-ttu-id="ee6ec-111"><a name="WebPart"></a>Pour créer une page Web</span><span class="sxs-lookup"><span data-stu-id="ee6ec-111"><a name="WebPart"></a> To create a Web Part page</span></span>  
+###  <a name="WebPart"></a><span data-ttu-id="ee6ec-111">Pour créer une page Web</span><span class="sxs-lookup"><span data-stu-id="ee6ec-111">To create a Web Part page</span></span>  
   
 1.  <span data-ttu-id="ee6ec-112">Démarrez l’Administration centrale de SharePoint 3.0.</span><span class="sxs-lookup"><span data-stu-id="ee6ec-112">Start SharePoint 3.0 Central Administration.</span></span> <span data-ttu-id="ee6ec-113">Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Microsoft Office Server**, puis cliquez sur **Administration centrale de SharePoint 3.0**.</span><span class="sxs-lookup"><span data-stu-id="ee6ec-113">Click **Start**, point to **All Programs**, point to **Microsoft Office Server**, and click **SharePoint 3.0 Central Administration**.</span></span>  
   

@@ -63,7 +63,7 @@ ms.lasthandoff: 09/20/2017
 <span data-ttu-id="95a61-145">**contrat**</span><span class="sxs-lookup"><span data-stu-id="95a61-145">**contract**</span></span>  
 <span data-ttu-id="95a61-146">Spécifie la collection et la structure des messages requis pour accéder aux opérations offertes par le service.</span><span class="sxs-lookup"><span data-stu-id="95a61-146">Specifies the collection and structure of messages required to access the operations offered by the service.</span></span>
   
-####  <span data-ttu-id="95a61-147"><a name="D"></a>D</span><span class="sxs-lookup"><span data-stu-id="95a61-147"><a name="D"></a> D</span></span>  
+####  <a name="D"></a><span data-ttu-id="95a61-147">D</span><span class="sxs-lookup"><span data-stu-id="95a61-147">D</span></span>  
   
 <span data-ttu-id="95a61-148">**expérience de conception**</span><span class="sxs-lookup"><span data-stu-id="95a61-148">**design-time experience**</span></span>  
 <span data-ttu-id="95a61-149">Les procédures et les opérations qu’un développeur effectue au moment du design ; par exemple, à l’aide de la macro complémentaire projet BizTalk Service d’adaptateur d’utiliser pour récupérer des schémas de message.</span><span class="sxs-lookup"><span data-stu-id="95a61-149">Procedures and operations that a developer performs during design time; for example, using the Consume Adapter Service BizTalk Project Add-in to retrieve message schemas.</span></span>  

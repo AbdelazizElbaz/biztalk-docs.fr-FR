@@ -228,7 +228,7 @@ public partial class InterfaceTables_FND_APPS_MS_SAMPLE_EMPLOYEEClient : System.
   
 11. <span data-ttu-id="1f6f6-195">Générez le projet et exécutez-le.</span><span class="sxs-lookup"><span data-stu-id="1f6f6-195">Build the project and then run it.</span></span> <span data-ttu-id="1f6f6-196">L’application insère un enregistrement dans la table MS_SAMPLE_EMPLOYEE.</span><span class="sxs-lookup"><span data-stu-id="1f6f6-196">The application inserts a record in the MS_SAMPLE_EMPLOYEE table.</span></span>  
   
-###  <span data-ttu-id="1f6f6-197"><a name="BKMK_Select"></a>Sélectionnez l’opération</span><span class="sxs-lookup"><span data-stu-id="1f6f6-197"><a name="BKMK_Select"></a> Select Operation</span></span>  
+###  <a name="BKMK_Select"></a><span data-ttu-id="1f6f6-197">Sélectionnez l’opération</span><span class="sxs-lookup"><span data-stu-id="1f6f6-197">Select Operation</span></span>  
  <span data-ttu-id="1f6f6-198">Le code suivant illustre une opération de sélection qui cible la table d’interface MS_SAMPLE_EMPLOYEE.</span><span class="sxs-lookup"><span data-stu-id="1f6f6-198">The following code shows a Select operation that targets the MS_SAMPLE_EMPLOYEE interface table.</span></span> <span data-ttu-id="1f6f6-199">L’opération Select sélectionne le dernier enregistrement inséré dans la table.</span><span class="sxs-lookup"><span data-stu-id="1f6f6-199">The Select operation selects the last record inserted into the table.</span></span> <span data-ttu-id="1f6f6-200">L’enregistrement retourné est écrit dans la console.</span><span class="sxs-lookup"><span data-stu-id="1f6f6-200">The returned record is written to the console.</span></span>  
   
 ```  
@@ -259,7 +259,7 @@ Console.WriteLine("Press any key to continue ...");
 Console.ReadLine();  
 ```  
   
-###  <span data-ttu-id="1f6f6-201"><a name="BKMK_Update"></a>Opération de mise à jour</span><span class="sxs-lookup"><span data-stu-id="1f6f6-201"><a name="BKMK_Update"></a> Update Operation</span></span>  
+###  <a name="BKMK_Update"></a><span data-ttu-id="1f6f6-201">Opération de mise à jour</span><span class="sxs-lookup"><span data-stu-id="1f6f6-201">Update Operation</span></span>  
  <span data-ttu-id="1f6f6-202">Le code suivant montre une opération de mise à jour qui cible la table d’interface MS_SAMPLE_EMPLOYEE.</span><span class="sxs-lookup"><span data-stu-id="1f6f6-202">The following code shows an Update operation that targets the MS_SAMPLE_EMPLOYEE interface table.</span></span>  
   
 ```  
@@ -284,7 +284,7 @@ Console.WriteLine("Press any key to continue...");
 Console.ReadLine();  
 ```  
   
-###  <span data-ttu-id="1f6f6-203"><a name="BKMK_Delete"></a>L’opération de suppression</span><span class="sxs-lookup"><span data-stu-id="1f6f6-203"><a name="BKMK_Delete"></a> Delete Operation</span></span>  
+###  <a name="BKMK_Delete"></a><span data-ttu-id="1f6f6-203">L’opération de suppression</span><span class="sxs-lookup"><span data-stu-id="1f6f6-203">Delete Operation</span></span>  
  <span data-ttu-id="1f6f6-204">Le code suivant montre une opération de suppression qui cible la table d’interface MS_SAMPLE_EMPLOYEE.</span><span class="sxs-lookup"><span data-stu-id="1f6f6-204">The following code shows a Delete operation that targets the MS_SAMPLE_EMPLOYEE interface table.</span></span>  
   
 ```  

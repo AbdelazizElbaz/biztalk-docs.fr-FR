@@ -23,7 +23,7 @@ ms.lasthandoff: 09/20/2017
   
  
   
-##  <span data-ttu-id="de0a0-105"><a name="Define"></a>Définir la Source de contenu</span><span class="sxs-lookup"><span data-stu-id="de0a0-105"><a name="Define"></a> Define the Content Source</span></span>  
+##  <a name="Define"></a><span data-ttu-id="de0a0-105">Définir la Source de contenu</span><span class="sxs-lookup"><span data-stu-id="de0a0-105">Define the Content Source</span></span>  
  <span data-ttu-id="de0a0-106">Cette section présente sur la définition d’une source de contenu à partir de sur lequel Microsoft Office SharePoint Server peut analyser les données.</span><span class="sxs-lookup"><span data-stu-id="de0a0-106">This section talks about defining a content source from where Microsoft Office SharePoint Server can crawl the data.</span></span> <span data-ttu-id="de0a0-107">Cela implique le mappage du contenu à l’énumérateur d’Id instance de méthode créé dans [étape 2 : créer un fichier de définition d’application pour les artefacts d’Oracle E-Business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/step-2-create-an-application-definition-file-for-the-oracle-ebs-artifacts.md).</span><span class="sxs-lookup"><span data-stu-id="de0a0-107">This involves mapping the content to the Id Enumerator method instance created in [Step 2: Create an application definition file for the Oracle E-Business Suite artifacts](../../adapters-and-accelerators/adapter-oracle-ebs/step-2-create-an-application-definition-file-for-the-oracle-ebs-artifacts.md).</span></span>  
   
 #### <a name="to-define-a-content-source"></a><span data-ttu-id="de0a0-108">Pour définir une source de contenu</span><span class="sxs-lookup"><span data-stu-id="de0a0-108">To define a content source</span></span>  
@@ -60,7 +60,7 @@ ms.lasthandoff: 09/20/2017
   
 11. <span data-ttu-id="de0a0-128">Dans le volet gauche sous **analyse**, cliquez sur **journal d’analyse**, puis vérifiez le fichier journal pour vous assurer que l’analyse a réussi.</span><span class="sxs-lookup"><span data-stu-id="de0a0-128">In the left pane under **Crawling**, click **Crawl Log**, and then verify the log file to ensure that the crawling is successful.</span></span>  
   
-##  <span data-ttu-id="de0a0-129"><a name="Scope"></a>Définir une étendue pour le contenu analysé</span><span class="sxs-lookup"><span data-stu-id="de0a0-129"><a name="Scope"></a> Define a Scope for the Crawled Content</span></span>  
+##  <a name="Scope"></a><span data-ttu-id="de0a0-129">Définir une étendue pour le contenu analysé</span><span class="sxs-lookup"><span data-stu-id="de0a0-129">Define a Scope for the Crawled Content</span></span>  
   
 1.  <span data-ttu-id="de0a0-130">Démarrez l’Administration centrale de SharePoint 3.0.</span><span class="sxs-lookup"><span data-stu-id="de0a0-130">Start SharePoint 3.0 Central Administration.</span></span> <span data-ttu-id="de0a0-131">Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Microsoft Office Server**, puis cliquez sur **Administration centrale de SharePoint 3.0**.</span><span class="sxs-lookup"><span data-stu-id="de0a0-131">Click **Start**, point to **All Programs**, point to **Microsoft Office Server**, and then click **SharePoint 3.0 Central Administration**.</span></span>  
   
@@ -92,7 +92,7 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="de0a0-147">Le **état de mise à jour de l’étendue** ligne affiche l’état de la mise à jour de l’étendue.</span><span class="sxs-lookup"><span data-stu-id="de0a0-147">The **Scope update status** row will display the status of the scope update.</span></span> <span data-ttu-id="de0a0-148">Attendez que la mise à jour est terminée.</span><span class="sxs-lookup"><span data-stu-id="de0a0-148">Wait until the update is complete.</span></span> <span data-ttu-id="de0a0-149">Une fois la mise à jour est terminée, l’étendue est prête à être utilisée.</span><span class="sxs-lookup"><span data-stu-id="de0a0-149">After the updated is completed, the scope is ready to be used.</span></span>  
   
-##  <span data-ttu-id="de0a0-150"><a name="AddScope"></a>Ajout de l’étendue à la liste déroulante de recherche</span><span class="sxs-lookup"><span data-stu-id="de0a0-150"><a name="AddScope"></a> Add the Scope to the Search Dropdown</span></span>  
+##  <a name="AddScope"></a><span data-ttu-id="de0a0-150">Ajout de l’étendue à la liste déroulante de recherche</span><span class="sxs-lookup"><span data-stu-id="de0a0-150">Add the Scope to the Search Dropdown</span></span>  
  <span data-ttu-id="de0a0-151">Après avoir créé l’étendue de recherche, vous devez ajouter l’étendue à la liste déroulante de recherche dans Microsoft Office SharePoint Server afin qu’il peut être utilisé.</span><span class="sxs-lookup"><span data-stu-id="de0a0-151">After you have created the search scope, you must add the scope to the search dropdown in Microsoft Office SharePoint Server so that it can be used.</span></span>  
   
 #### <a name="to-add-the-scope-to-the-search-dropdown"></a><span data-ttu-id="de0a0-152">Pour ajouter l’étendue à la liste déroulante de recherche</span><span class="sxs-lookup"><span data-stu-id="de0a0-152">To add the scope to the search dropdown</span></span>  
@@ -119,7 +119,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  <span data-ttu-id="de0a0-164">Vous revenez à la page Afficher les étendues avec l’étendue MS_SAMPLE_EMPLOYEE_Search ajouté dans le groupe d’affichage de liste déroulante de recherche.</span><span class="sxs-lookup"><span data-stu-id="de0a0-164">You will return to the View Scopes page with the MS_SAMPLE_EMPLOYEE_Search scope added in the Search Dropdown display group.</span></span>  
   
-##  <span data-ttu-id="de0a0-165"><a name="SearchWebPart"></a>Ajouter le composant WebPart zone de recherche</span><span class="sxs-lookup"><span data-stu-id="de0a0-165"><a name="SearchWebPart"></a> Add the Search Box Web Part</span></span>  
+##  <a name="SearchWebPart"></a><span data-ttu-id="de0a0-165">Ajouter le composant WebPart zone de recherche</span><span class="sxs-lookup"><span data-stu-id="de0a0-165">Add the Search Box Web Part</span></span>  
  <span data-ttu-id="de0a0-166">Pour permettre aux utilisateurs d’effectuer une recherche en texte intégral sur la table d’interface MS_SAMPLE_EMPLOYEE dans Oracle E-Business Suite, vous devez maintenant créer une page de composants WebPart et ajouter un composant WebPart zone de recherche à celui-ci.</span><span class="sxs-lookup"><span data-stu-id="de0a0-166">To enable the users to perform a full-text search on the MS_SAMPLE_EMPLOYEE interface table in Oracle E-Business Suite, you must now create a Web part page, and add a Search Box Web Part to it.</span></span>  
   
 #### <a name="to-add-the-search-box-web-part"></a><span data-ttu-id="de0a0-167">Pour ajouter le composant WebPart zone de recherche</span><span class="sxs-lookup"><span data-stu-id="de0a0-167">To add the Search Box Web Part</span></span>  
