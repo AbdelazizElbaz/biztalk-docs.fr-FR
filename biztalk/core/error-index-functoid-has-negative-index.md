@@ -19,11 +19,11 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/20/2017
 ---
-# <a name="error---index-functoid-has-negative-index"></a>Erreur : fonctoid Index avec Index négatif
-**Code d’erreur**  
+# <a name="error---index-functoid-has-negative-index"></a><span data-ttu-id="7648a-102">Erreur : fonctoid Index avec Index négatif</span><span class="sxs-lookup"><span data-stu-id="7648a-102">Error - Index Functoid Has Negative Index</span></span>
+<span data-ttu-id="7648a-103">**Code d’erreur**</span><span class="sxs-lookup"><span data-stu-id="7648a-103">**Error Code**</span></span>  
   
- btm1017  
+ <span data-ttu-id="7648a-104">btm1017</span><span class="sxs-lookup"><span data-stu-id="7648a-104">btm1017</span></span>  
   
- **Explication**  
+ <span data-ttu-id="7648a-105">**Explication**</span><span class="sxs-lookup"><span data-stu-id="7648a-105">**Explanation**</span></span>  
   
- Un ou plusieurs des index de paramètres associés au fonctoid d’entrée **Index** fonctoid n’est pas valide. Les paramètres d'entrée d'index doivent être des entiers positifs.
+ <span data-ttu-id="7648a-106">Un ou plusieurs des index de paramètres associés au fonctoid d’entrée **Index** fonctoid n’est pas valide.</span><span class="sxs-lookup"><span data-stu-id="7648a-106">One or more of the index input parameters provided for the indicated **Index** functoid is not valid.</span></span> <span data-ttu-id="7648a-107">Les paramètres d'entrée d'index doivent être des entiers positifs.</span><span class="sxs-lookup"><span data-stu-id="7648a-107">Index input parameters must be positive integers.</span></span>

@@ -58,7 +58,7 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="652b1-161">Si le mappage génère une erreur de validation, le document informatisé XML ou le fichier XML d'échange est interrompu et une erreur appropriée s'affiche dans l'observateur d'événements, telle qu'une longueur, un type de données ou un code d'agence de contrôle invalide.</span><span class="sxs-lookup"><span data-stu-id="652b1-161">If mapping causes a validation error, the XML transaction set or interchange XML is suspended with an appropriate error in the event viewer, such as invalid length or data type, or invalid Control Agency Code.</span></span>  
   
-####  <span data-ttu-id="652b1-162"><a name="BKMK_X12"></a>X12 en-tête du document informatisé et les Segments de code de fin</span><span class="sxs-lookup"><span data-stu-id="652b1-162"><a name="BKMK_X12"></a> X12 Transaction Set Header and Trailer Segments</span></span>  
+####  <a name="BKMK_X12"></a><span data-ttu-id="652b1-162">X12 en-tête du document informatisé et les Segments de code de fin</span><span class="sxs-lookup"><span data-stu-id="652b1-162">X12 Transaction Set Header and Trailer Segments</span></span>  
  <span data-ttu-id="652b1-163">Pour les documents informatisés X12 sans segments d'en-tête et de code de fin, l'Assembleur EDI définit les segments ST et SE comme suit :</span><span class="sxs-lookup"><span data-stu-id="652b1-163">For X12-encoded transaction sets that do not have header and trailer segments, the EDI Assembler will set ST and SE segments to the following:</span></span>  
   
 |<span data-ttu-id="652b1-164">Segment d'en-tête / de code de fin</span><span class="sxs-lookup"><span data-stu-id="652b1-164">Header/Footer Segment</span></span>|<span data-ttu-id="652b1-165">Valeur</span><span class="sxs-lookup"><span data-stu-id="652b1-165">Value</span></span>|  
@@ -71,7 +71,7 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="652b1-182">Les autres éléments de données dans l'en-tête du document informatisé, tels que ST03, sont facultatifs et n'ont donc pas de valeur dans les segments générés.</span><span class="sxs-lookup"><span data-stu-id="652b1-182">Other data elements in the transaction set header, such as ST03, are optional and so are not valued in the generated segments.</span></span>  
   
-####  <span data-ttu-id="652b1-183"><a name="BKMK_EDIFACT"></a>En-tête du document informatisé EDIFACT et Segments de code de fin</span><span class="sxs-lookup"><span data-stu-id="652b1-183"><a name="BKMK_EDIFACT"></a> EDIFACT Transaction Set Header and Trailer Segments</span></span>  
+####  <a name="BKMK_EDIFACT"></a><span data-ttu-id="652b1-183">En-tête du document informatisé EDIFACT et Segments de code de fin</span><span class="sxs-lookup"><span data-stu-id="652b1-183">EDIFACT Transaction Set Header and Trailer Segments</span></span>  
  <span data-ttu-id="652b1-184">Pour les documents informatisés EDIFACT sans segments d'en-tête et de code de fin, l'Assembleur EDI définit les segments UNH et UNT comme suit :</span><span class="sxs-lookup"><span data-stu-id="652b1-184">For EDIFACT-encoded transaction sets that do not have header and trailer segments, the EDI Assembler will set UNH and UNT segments to the following:</span></span>  
   
 |<span data-ttu-id="652b1-185">Segment d'en-tête / de code de fin</span><span class="sxs-lookup"><span data-stu-id="652b1-185">Header/Footer Segment</span></span>|<span data-ttu-id="652b1-186">Valeur</span><span class="sxs-lookup"><span data-stu-id="652b1-186">Value</span></span>|  

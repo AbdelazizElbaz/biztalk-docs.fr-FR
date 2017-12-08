@@ -33,7 +33,7 @@ ms.lasthandoff: 09/20/2017
 ## <a name="prerequisites"></a><span data-ttu-id="af157-106">Conditions préalables</span><span class="sxs-lookup"><span data-stu-id="af157-106">Prerequisites</span></span>  
  <span data-ttu-id="af157-107">Avant d’exécuter la solution de gestion des processus métiers, vous devez effectuer les étapes de [l’installation de la Solution de gestion des processus métier](../core/how-to-install-the-business-process-management-solution.md).</span><span class="sxs-lookup"><span data-stu-id="af157-107">Before running the BPM solution, you must perform the steps in [How to Install the Business Process Management Solution](../core/how-to-install-the-business-process-management-solution.md).</span></span>  
   
-##  <span data-ttu-id="af157-108"><a name="step1"></a>Démarrer la Solution gestion des processus d’entreprise</span><span class="sxs-lookup"><span data-stu-id="af157-108"><a name="step1"></a> Start the Business Process Management Solution</span></span>  
+##  <a name="step1"></a><span data-ttu-id="af157-108">Démarrer la Solution gestion des processus d’entreprise</span><span class="sxs-lookup"><span data-stu-id="af157-108">Start the Business Process Management Solution</span></span>  
   
 #### <a name="to-start-the-business-process-management-solution"></a><span data-ttu-id="af157-109">Pour démarrer la solution de gestion des processus d'entreprise</span><span class="sxs-lookup"><span data-stu-id="af157-109">To start the Business Process Management Solution</span></span>  
   
@@ -81,7 +81,7 @@ ms.lasthandoff: 09/20/2017
   
     2.  <span data-ttu-id="af157-146">Type `BTSScnBPMProvisioning.exe 8880`, puis appuyez sur ENTRÉE.</span><span class="sxs-lookup"><span data-stu-id="af157-146">Type `BTSScnBPMProvisioning.exe 8880`, and then press ENTER.</span></span> <span data-ttu-id="af157-147">Puis, maintenez l'exécution du système d'approvisionnement en câble.</span><span class="sxs-lookup"><span data-stu-id="af157-147">Then, keep the Cable Provisioning System running.</span></span> <span data-ttu-id="af157-148">Le système d'approvisionnement en câble écoute sur le port TCP, 8880.</span><span class="sxs-lookup"><span data-stu-id="af157-148">The Cable Provisioning System listens on the TCP port, 8880.</span></span> <span data-ttu-id="af157-149">Cette application simule un système de commande principal, puis affiche les commandes finales.</span><span class="sxs-lookup"><span data-stu-id="af157-149">This application simulates a back-end order system, and displays the final orders.</span></span>  
   
-##  <span data-ttu-id="af157-150"><a name="step3"></a>Exécution et la validation de la Solution gestion des processus d’entreprise</span><span class="sxs-lookup"><span data-stu-id="af157-150"><a name="step3"></a> Run and validate the Business Process Management Solution</span></span>  
+##  <a name="step3"></a><span data-ttu-id="af157-150">Exécution et la validation de la Solution gestion des processus d’entreprise</span><span class="sxs-lookup"><span data-stu-id="af157-150">Run and validate the Business Process Management Solution</span></span>  
   
 #### <a name="to-submit-a-new-order-and-validate-the-solution"></a><span data-ttu-id="af157-151">Pour envoyer une nouvelle commande et valider la solution</span><span class="sxs-lookup"><span data-stu-id="af157-151">To submit a new order and validate the solution</span></span>  
   
