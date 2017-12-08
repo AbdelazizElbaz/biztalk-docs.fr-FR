@@ -29,7 +29,7 @@ ms.lasthandoff: 09/20/2017
 > [!IMPORTANT]
 >  <span data-ttu-id="bf999-106">Effectuez ces tâches dans l’ordre indiqué.</span><span class="sxs-lookup"><span data-stu-id="bf999-106">Complete these tasks in the order listed.</span></span>  
   
-##  <span data-ttu-id="bf999-107"><a name="BKMK_InstUpdates"></a> Installation des mises à jour Windows</span><span class="sxs-lookup"><span data-stu-id="bf999-107"><a name="BKMK_InstUpdates"></a> Install Windows Updates</span></span>  
+##  <a name="BKMK_InstUpdates"></a> <span data-ttu-id="bf999-107">Installation des mises à jour Windows</span><span class="sxs-lookup"><span data-stu-id="bf999-107">Install Windows Updates</span></span>  
   
 -   <span data-ttu-id="bf999-108">**Windows 7** : Cliquez sur Démarrer.</span><span class="sxs-lookup"><span data-stu-id="bf999-108">**Windows 7**: Click Start.</span></span> <span data-ttu-id="bf999-109">Dans la zone de texte **Rechercher**, tapez **Windows Update**.</span><span class="sxs-lookup"><span data-stu-id="bf999-109">In the **Search** text box, type **Windows Update**.</span></span>  
   
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="bf999-112">Après avoir installé les mises à jour, vous devrez peut-être redémarrer l'ordinateur.</span><span class="sxs-lookup"><span data-stu-id="bf999-112">After installing updates, you may need to restart the computer.</span></span>  
   
-##  <span data-ttu-id="bf999-113"><a name="BKMK_IIS"></a> Activation d’Internet Information Services</span><span class="sxs-lookup"><span data-stu-id="bf999-113"><a name="BKMK_IIS"></a> Enable Internet Information Services</span></span>  
+##  <a name="BKMK_IIS"></a> <span data-ttu-id="bf999-113">Activation d’Internet Information Services</span><span class="sxs-lookup"><span data-stu-id="bf999-113">Enable Internet Information Services</span></span>  
  <span data-ttu-id="bf999-114">Microsoft Internet Information Services (IIS) offre une infrastructure d'applications Web pour de nombreuses fonctionnalités de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], notamment :</span><span class="sxs-lookup"><span data-stu-id="bf999-114">Microsoft Internet Information Services (IIS) provides a Web application infrastructure for many [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] features, including:</span></span>  
   
 -   <span data-ttu-id="bf999-115">adaptateur HTTP</span><span class="sxs-lookup"><span data-stu-id="bf999-115">HTTP adapter</span></span>  
@@ -162,7 +162,7 @@ ms.lasthandoff: 09/20/2017
   
  <span data-ttu-id="bf999-191">L’article [http://go.microsoft.com/fwlink/p/?LinkID=291297](http://go.microsoft.com/fwlink/p/?LinkID=291297) présente aussi les étapes permettant d’activer IIS sur [!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)].</span><span class="sxs-lookup"><span data-stu-id="bf999-191">[http://go.microsoft.com/fwlink/p/?LinkID=291297](http://go.microsoft.com/fwlink/p/?LinkID=291297) also lists the steps to enable IIS on [!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)].</span></span>  
   
-##  <span data-ttu-id="bf999-192"><a name="BKMK_XLS"></a> Installation de Microsoft Office Excel</span><span class="sxs-lookup"><span data-stu-id="bf999-192"><a name="BKMK_XLS"></a> Install Microsoft Office Excel</span></span>  
+##  <a name="BKMK_XLS"></a> <span data-ttu-id="bf999-192">Installation de Microsoft Office Excel</span><span class="sxs-lookup"><span data-stu-id="bf999-192">Install Microsoft Office Excel</span></span>  
   
 1.  <span data-ttu-id="bf999-193">Exécutez le programme d'installation de Microsoft Office.</span><span class="sxs-lookup"><span data-stu-id="bf999-193">Run the Microsoft Office setup.</span></span>  
   
@@ -182,7 +182,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="bf999-203">Pour charger correctement le fichier BAM.xla dans Excel, installez **Visual Basic pour Applications** sous **Composants partagés d’Office**.</span><span class="sxs-lookup"><span data-stu-id="bf999-203">To successfully load BAM.xla into Excel, install **Visual Basic for Applications** under **Office Shared Features**.</span></span> <span data-ttu-id="bf999-204">Dans le cas contraire, vous risquez de recevoir l’erreur « Ce classeur a perdu son projet VBA, ses contrôles ActiveX et d’autres fonctionnalités liées à la programmabilité ».</span><span class="sxs-lookup"><span data-stu-id="bf999-204">Otherwise, you may get error “This workbook has lost its VBA project, ActiveX controls and any other programmability-related features.”</span></span>  
   
-##  <span data-ttu-id="bf999-205"><a name="BKMK_VS"></a> Installation de Visual Studio</span><span class="sxs-lookup"><span data-stu-id="bf999-205"><a name="BKMK_VS"></a> Install Visual Studio</span></span>  
+##  <a name="BKMK_VS"></a> <span data-ttu-id="bf999-205">Installation de Visual Studio</span><span class="sxs-lookup"><span data-stu-id="bf999-205">Install Visual Studio</span></span>  
   
 1.  <span data-ttu-id="bf999-206">Exécutez l'installation de Visual Studio en tant qu'administrateur.</span><span class="sxs-lookup"><span data-stu-id="bf999-206">Run the Visual Studio setup as Administrator.</span></span>  
   
@@ -204,7 +204,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="bf999-218">Le composant d'exécution [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] exige [!INCLUDE[dotnet45](../includes/dotnet45-md.md)].</span><span class="sxs-lookup"><span data-stu-id="bf999-218">The [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] runtime requires [!INCLUDE[dotnet45](../includes/dotnet45-md.md)].</span></span> <span data-ttu-id="bf999-219">.NET Framework 3.0 est indispensable si l’adaptateur ou l’intercepteur WCF (Windows Communication Foundation) est installé.</span><span class="sxs-lookup"><span data-stu-id="bf999-219">The .NET Framework 3.0 is required if the Windows Communication Foundation (WCF) adapter or WCF Interceptor is installed.</span></span>  
   
-##  <span data-ttu-id="bf999-220"><a name="BKMK_SQL"></a> Installation de SQL Server</span><span class="sxs-lookup"><span data-stu-id="bf999-220"><a name="BKMK_SQL"></a> Install SQL Server</span></span>  
+##  <a name="BKMK_SQL"></a> <span data-ttu-id="bf999-220">Installation de SQL Server</span><span class="sxs-lookup"><span data-stu-id="bf999-220">Install SQL Server</span></span>  
  <span data-ttu-id="bf999-221">Installation de [SQL Server 2008 R2](http://msdn.microsoft.com/library/bb500395\(v=sql.105\).aspx)</span><span class="sxs-lookup"><span data-stu-id="bf999-221">Install [SQL Server 2008 R2](http://msdn.microsoft.com/library/bb500395\(v=sql.105\).aspx)</span></span>  
   
  <span data-ttu-id="bf999-222">Installation de [SQL Server 2012](http://msdn.microsoft.com/library/bb500469\(v=sql.110\).aspx)</span><span class="sxs-lookup"><span data-stu-id="bf999-222">Install [SQL Server 2012](http://msdn.microsoft.com/library/bb500469\(v=sql.110\).aspx)</span></span>  
@@ -247,7 +247,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="bf999-243">Lorsque [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] et [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] sont installés sur des ordinateurs distincts, MS DTC (Microsoft Distributed Transaction Coordinator) gère les transactions entre les ordinateurs.</span><span class="sxs-lookup"><span data-stu-id="bf999-243">When [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] are on separate computers, Distributed Transaction Coordinator (MS DTC) handles the transactions between the computers.</span></span> <span data-ttu-id="bf999-244">La fonctionnalité [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] AlwaysOn ne prend pas en charge les transactions MSDTC.</span><span class="sxs-lookup"><span data-stu-id="bf999-244">The [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] AlwaysOn feature does not support MSDTC transactions.</span></span> <span data-ttu-id="bf999-245">La fonctionnalité AlwaysOn [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] n'est pas prise en charge.</span><span class="sxs-lookup"><span data-stu-id="bf999-245">The [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] AlwaysOn feature is not supported.</span></span>  
   
-##  <span data-ttu-id="bf999-246"><a name="BKMK_MQSeries"></a> Installation des composants requis pour MQSeries</span><span class="sxs-lookup"><span data-stu-id="bf999-246"><a name="BKMK_MQSeries"></a> Install MQSeries Prerequisites</span></span>  
+##  <a name="BKMK_MQSeries"></a> <span data-ttu-id="bf999-246">Installation des composants requis pour MQSeries</span><span class="sxs-lookup"><span data-stu-id="bf999-246">Install MQSeries Prerequisites</span></span>  
  <span data-ttu-id="bf999-247">**Adaptateur MQSeries** : Installé automatiquement avec l’installation de BizTalk Server.</span><span class="sxs-lookup"><span data-stu-id="bf999-247">**MQSeries adapter**: Automatically installed with the BizTalk Server installation.</span></span>  
   
  <span data-ttu-id="bf999-248">**Adaptateur MQSeries Client (MQSC)** :</span><span class="sxs-lookup"><span data-stu-id="bf999-248">**MQSeries Client (MQSC) adapter**:</span></span>  
@@ -289,10 +289,10 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="bf999-269">IBM WebSphere n'est pas un produit Microsoft et n'est pas pris en charge par Microsoft.</span><span class="sxs-lookup"><span data-stu-id="bf999-269">IBM WebSphere is not a Microsoft product and is not supported by Microsoft.</span></span> <span data-ttu-id="bf999-270">Microsoft ne donne aucune garantie quant à la pertinence de ce programme.</span><span class="sxs-lookup"><span data-stu-id="bf999-270">Microsoft makes no guarantees about the suitability of this program.</span></span> <span data-ttu-id="bf999-271">Pour plus d'informations sur IBM WebSphere MQ, y compris les instructions de téléchargement, consultez www.ibm.com.</span><span class="sxs-lookup"><span data-stu-id="bf999-271">For more information about IBM WebSphere MQ, including download instructions, see www.ibm.com.</span></span>  
   
-##  <span data-ttu-id="bf999-272"><a name="BKMK_BAMAlerts"></a> Alertes BAM</span><span class="sxs-lookup"><span data-stu-id="bf999-272"><a name="BKMK_BAMAlerts"></a> BAM Alerts</span></span>  
+##  <a name="BKMK_BAMAlerts"></a> <span data-ttu-id="bf999-272">Alertes BAM</span><span class="sxs-lookup"><span data-stu-id="bf999-272">BAM Alerts</span></span>  
  <span data-ttu-id="bf999-273">Les alertes BAM avec [!INCLUDE[sqlserver2014](../includes/sqlserver2014-md.md)] ou [!INCLUDE[sqlserver2012](../includes/sqlserver2012-md.md)] utilisent la fonctionnalité Messagerie de base de données dans [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)].</span><span class="sxs-lookup"><span data-stu-id="bf999-273">BAM Alerts with [!INCLUDE[sqlserver2014](../includes/sqlserver2014-md.md)] or [!INCLUDE[sqlserver2012](../includes/sqlserver2012-md.md)] uses Database Mail in [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)].</span></span> <span data-ttu-id="bf999-274">Alertes BAM avec [!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)] utilise SQL Notification Services.</span><span class="sxs-lookup"><span data-stu-id="bf999-274">BAM Alerts with [!INCLUDE[btsSQLServer2008R2](../includes/btssqlserver2008r2-md.md)] uses SQL Notification Services.</span></span> <span data-ttu-id="bf999-275">Avant d'installer ou de configurer les alertes BAM, vous devez configurer les services de notification Services ou la messagerie de base de données dans [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)].</span><span class="sxs-lookup"><span data-stu-id="bf999-275">Before installing or configuring BAM Alerts, you must configure the Notification Services or Database Mail in [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)].</span></span>  
   
-###  <span data-ttu-id="bf999-276"><a name="BKMK_DBMail"></a> Alertes BAM utilisant SQL Server 2012/2014</span><span class="sxs-lookup"><span data-stu-id="bf999-276"><a name="BKMK_DBMail"></a> BAM Alerts using SQL Server 2012/2014</span></span>  
+###  <a name="BKMK_DBMail"></a> <span data-ttu-id="bf999-276">Alertes BAM utilisant SQL Server 2012/2014</span><span class="sxs-lookup"><span data-stu-id="bf999-276">BAM Alerts using SQL Server 2012/2014</span></span>  
  <span data-ttu-id="bf999-277">Configurez la [messagerie de base de données SQL Server 2012](http://msdn.microsoft.com/library/hh245116\(v=sql.110\).aspx).</span><span class="sxs-lookup"><span data-stu-id="bf999-277">Configure [SQL Server 2012 Database Mail](http://msdn.microsoft.com/library/hh245116\(v=sql.110\).aspx).</span></span>  
   
  <span data-ttu-id="bf999-278">Configurez la [messagerie de base de données SQL Server 2014](http://msdn.microsoft.com/library/hh245116\(v=sql.120\).aspx).</span><span class="sxs-lookup"><span data-stu-id="bf999-278">Configure [SQL Server 2014 Database Mail](http://msdn.microsoft.com/library/hh245116\(v=sql.120\).aspx).</span></span>  
@@ -301,7 +301,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="bf999-280">La fonctionnalité Messagerie de base de données utilise un serveur SMTP pour envoyer les alertes BAM.</span><span class="sxs-lookup"><span data-stu-id="bf999-280">Database Mail uses an SMTP server to send the BAM Alerts.</span></span> <span data-ttu-id="bf999-281">Le serveur SMTP peut être installé localement sur [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ou un autre serveur IIS.</span><span class="sxs-lookup"><span data-stu-id="bf999-281">SMTP Server can be installed locally on the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] or on another IIS server.</span></span> <span data-ttu-id="bf999-282">L’[annexe D : Création du serveur SMTP](../install-and-config-guides/appendix-d-create-the-smtp-server.md) répertorie les étapes de l’installation et de la configuration d’un serveur SMTP.</span><span class="sxs-lookup"><span data-stu-id="bf999-282">[Appendix D: Create the SMTP Server](../install-and-config-guides/appendix-d-create-the-smtp-server.md) lists the steps to install and configure a SMTP Server.</span></span>  
   
-###  <span data-ttu-id="bf999-283"><a name="BKMK_SSNS"></a> Alertes BAM utilisant SQL Server 2008 R2 – Installation de SQL Server 2005 Notification Services</span><span class="sxs-lookup"><span data-stu-id="bf999-283"><a name="BKMK_SSNS"></a> BAM Alerts using SQL Server 2008 R2 – Install SQL Server 2005 Notification Services</span></span>  
+###  <a name="BKMK_SSNS"></a> <span data-ttu-id="bf999-283">Alertes BAM utilisant SQL Server 2008 R2 – Installation de SQL Server 2005 Notification Services</span><span class="sxs-lookup"><span data-stu-id="bf999-283">BAM Alerts using SQL Server 2008 R2 – Install SQL Server 2005 Notification Services</span></span>  
   
 1.  <span data-ttu-id="bf999-284">Consultez [Feature Pack pour Microsoft SQL Server 2005 SP4](http://go.microsoft.com/fwlink/p/?LinkId=286285).</span><span class="sxs-lookup"><span data-stu-id="bf999-284">Go to [Feature Pack for Microsoft SQL Server 2005 SP4](http://go.microsoft.com/fwlink/p/?LinkId=286285).</span></span>  
   
@@ -329,7 +329,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="bf999-296">Il n'est pas nécessaire de configurer SQL Notification Services ; installez-le seulement sur [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span><span class="sxs-lookup"><span data-stu-id="bf999-296">SQL Notification Services does not need to be configured; only installed on the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
   
-##  <span data-ttu-id="bf999-297"><a name="BKMK_WIF"></a> Windows Identity Foundation</span><span class="sxs-lookup"><span data-stu-id="bf999-297"><a name="BKMK_WIF"></a> Windows Identity Foundation</span></span>  
+##  <a name="BKMK_WIF"></a> <span data-ttu-id="bf999-297">Windows Identity Foundation</span><span class="sxs-lookup"><span data-stu-id="bf999-297">Windows Identity Foundation</span></span>  
   
 |||  
 |-|-|  
@@ -349,7 +349,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="bf999-315">L’[annexe B : Installation de l’adaptateur Microsoft SharePoint](../install-and-config-guides/appendix-b-install-the-microsoft-sharepoint-adapter.md) fournit des informations spécifiques sur les options d’installation de [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)].</span><span class="sxs-lookup"><span data-stu-id="bf999-315">[Appendix B: Install the Microsoft SharePoint Adapter](../install-and-config-guides/appendix-b-install-the-microsoft-sharepoint-adapter.md) provides specific information on the [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] installation options.</span></span>  
   
-##  <span data-ttu-id="bf999-316"><a name="BKMK_WSS"></a> Installation et configuration de Microsoft SharePoint</span><span class="sxs-lookup"><span data-stu-id="bf999-316"><a name="BKMK_WSS"></a> Install and Configure Microsoft SharePoint</span></span>  
+##  <a name="BKMK_WSS"></a> <span data-ttu-id="bf999-316">Installation et configuration de Microsoft SharePoint</span><span class="sxs-lookup"><span data-stu-id="bf999-316">Install and Configure Microsoft SharePoint</span></span>  
  <span data-ttu-id="bf999-317">Installation de [SharePoint 2013](http://technet.microsoft.com/library/cc303424.aspx)</span><span class="sxs-lookup"><span data-stu-id="bf999-317">Install [SharePoint 2013](http://technet.microsoft.com/library/cc303424.aspx)</span></span>  
   
  <span data-ttu-id="bf999-318">Installation de [SharePoint Online Service](http://technet.microsoft.com/library/jj819267.aspx)</span><span class="sxs-lookup"><span data-stu-id="bf999-318">Install [SharePoint Online Service](http://technet.microsoft.com/library/jj819267.aspx)</span></span>  
@@ -374,7 +374,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="bf999-328">Lorsque vous utilisez l’adaptateur SharePoint, il est recommandé d’installer la nouvelle option CSOM à la place du service web SharePoint Service, qui est décrite dans l’[annexe B : Installation de l’adaptateur Microsoft SharePoint](../install-and-config-guides/appendix-b-install-the-microsoft-sharepoint-adapter.md).</span><span class="sxs-lookup"><span data-stu-id="bf999-328">When using the SharePoint adapter, it is recommended to install the new CSOM option instead of the SharePoint Service Web Service; described at [Appendix B: Install the Microsoft SharePoint Adapter](../install-and-config-guides/appendix-b-install-the-microsoft-sharepoint-adapter.md).</span></span>  
   
-##  <span data-ttu-id="bf999-329"><a name="BKMK_SharedMem"></a> Désactivation du protocole de mémoire partagée</span><span class="sxs-lookup"><span data-stu-id="bf999-329"><a name="BKMK_SharedMem"></a> Disable the Shared Memory Protocol</span></span>  
+##  <a name="BKMK_SharedMem"></a> <span data-ttu-id="bf999-329">Désactivation du protocole de mémoire partagée</span><span class="sxs-lookup"><span data-stu-id="bf999-329">Disable the Shared Memory Protocol</span></span>  
   
 1.  <span data-ttu-id="bf999-330">Ouvrez le **Gestionnaire de configuration SQL Server**.</span><span class="sxs-lookup"><span data-stu-id="bf999-330">Open **SQL Server Configuration Manager**.</span></span>  
   
@@ -392,7 +392,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="bf999-339">ReplaceThisText</span><span class="sxs-lookup"><span data-stu-id="bf999-339">ReplaceThisText</span></span>  
   
-##  <span data-ttu-id="bf999-340"><a name="BKMK_LocalAdmin"></a> Adhésion au groupe Administrateurs local</span><span class="sxs-lookup"><span data-stu-id="bf999-340"><a name="BKMK_LocalAdmin"></a> Join the Local Administrators Group</span></span>  
+##  <a name="BKMK_LocalAdmin"></a> <span data-ttu-id="bf999-340">Adhésion au groupe Administrateurs local</span><span class="sxs-lookup"><span data-stu-id="bf999-340">Join the Local Administrators Group</span></span>  
  <span data-ttu-id="bf999-341">**[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]** : [Windows Server 2012 : Guide pratique pour ajouter un compte dans un groupe Administrateurs local](http://social.technet.microsoft.com/wiki/contents/articles/13436.windows-server-2012-how-to-add-an-account-to-a-local-administrator-group.aspx)</span><span class="sxs-lookup"><span data-stu-id="bf999-341">**[!INCLUDE[btsWinSrv2k12](../includes/btswinsrv2k12-md.md)]** : [Windows Server 2012: How to Add an Account to a Local Administrator Group](http://social.technet.microsoft.com/wiki/contents/articles/13436.windows-server-2012-how-to-add-an-account-to-a-local-administrator-group.aspx)</span></span>  
   
  <span data-ttu-id="bf999-342">**Windows 8.1** : Pour ouvrir Utilisateurs et groupes locaux sur Windows 8.1, appuyez sur le bouton Windows du clavier et tapez **groupes**.</span><span class="sxs-lookup"><span data-stu-id="bf999-342">**Windows 8.1**: To open Local Users and Groups on Windows 8, click the Windows button on the keyboard and type **groups**.</span></span> <span data-ttu-id="bf999-343">Dans la fenêtre de recherche, cliquez sur **Paramètres**.</span><span class="sxs-lookup"><span data-stu-id="bf999-343">In the Search window, click **Settings**.</span></span> <span data-ttu-id="bf999-344">Dans la fenêtre des résultats, cliquez sur **Modifier les utilisateurs et les groupes locaux**.</span><span class="sxs-lookup"><span data-stu-id="bf999-344">In the Results window, click **Edit local users and groups**.</span></span> <span data-ttu-id="bf999-345">Cliquez sur **Groupes**, puis double-cliquez sur Administrateurs pour ajouter un compte.</span><span class="sxs-lookup"><span data-stu-id="bf999-345">Click **Groups** and then double-click Administrators to add an account.</span></span>  
@@ -403,7 +403,7 @@ ms.lasthandoff: 09/20/2017
   
 -   <span data-ttu-id="bf999-350">Vous devez être connecté en tant que membre du groupe Administrateurs pour installer et configurer [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span><span class="sxs-lookup"><span data-stu-id="bf999-350">You must be a member of the local Administrators group to install and configure [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
   
-##  <span data-ttu-id="bf999-351"><a name="BKMK_AppLog"></a> Configuration du journal des événements de l’application</span><span class="sxs-lookup"><span data-stu-id="bf999-351"><a name="BKMK_AppLog"></a> Configure the Application Event Log</span></span>  
+##  <a name="BKMK_AppLog"></a> <span data-ttu-id="bf999-351">Configuration du journal des événements de l’application</span><span class="sxs-lookup"><span data-stu-id="bf999-351">Configure the Application Event Log</span></span>  
   
 1.  <span data-ttu-id="bf999-352">Cliquez sur **Observateur d’événements** :</span><span class="sxs-lookup"><span data-stu-id="bf999-352">Open **Event Viewer**:</span></span>  
   

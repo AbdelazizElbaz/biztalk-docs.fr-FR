@@ -20,7 +20,7 @@ ms.lasthandoff: 09/20/2017
 ---
 # <a name="post-installation-steps-for-biztalk-server-2013-and-2013-r2"></a><span data-ttu-id="2f2a9-102">Étapes de post-installation pour BizTalk Server 2013 et 2013 R2</span><span class="sxs-lookup"><span data-stu-id="2f2a9-102">Post-installation Steps for BizTalk Server 2013 and 2013 R2</span></span>
   
-##  <span data-ttu-id="2f2a9-103"><a name="BKMK_NamedPipes"></a> Activation du protocole TCP/IP et des canaux nommés</span><span class="sxs-lookup"><span data-stu-id="2f2a9-103"><a name="BKMK_NamedPipes"></a> Enable TCP/IP and Named Pipes</span></span>  
+##  <a name="BKMK_NamedPipes"></a> <span data-ttu-id="2f2a9-103">Activation du protocole TCP/IP et des canaux nommés</span><span class="sxs-lookup"><span data-stu-id="2f2a9-103">Enable TCP/IP and Named Pipes</span></span>  
   
 1.  <span data-ttu-id="2f2a9-104">Ouvrez le **Gestionnaire de configuration SQL Server**.</span><span class="sxs-lookup"><span data-stu-id="2f2a9-104">Open **SQL Server Configuration Manager**.</span></span>  
   
@@ -45,7 +45,7 @@ ms.lasthandoff: 09/20/2017
   
 5.  <span data-ttu-id="2f2a9-116">Fermez le **Gestionnaire de configuration**.</span><span class="sxs-lookup"><span data-stu-id="2f2a9-116">Close the **Configuration Manager**.</span></span>  
   
-##  <span data-ttu-id="2f2a9-117"><a name="BKMK_DTC"></a> Activation de DTC (Distributed Transaction Coordinator) sur le serveur hôte local</span><span class="sxs-lookup"><span data-stu-id="2f2a9-117"><a name="BKMK_DTC"></a> Enable DTC on the Local Host Server</span></span>  
+##  <a name="BKMK_DTC"></a> <span data-ttu-id="2f2a9-117">Activation de DTC (Distributed Transaction Coordinator) sur le serveur hôte local</span><span class="sxs-lookup"><span data-stu-id="2f2a9-117">Enable DTC on the Local Host Server</span></span>  
   
 1.  <span data-ttu-id="2f2a9-118">Ouvrez Services de composants :</span><span class="sxs-lookup"><span data-stu-id="2f2a9-118">Open Component Services:</span></span>  
   
@@ -77,7 +77,7 @@ ms.lasthandoff: 09/20/2017
   
 7.  <span data-ttu-id="2f2a9-138">Fermez **Services de composants**.</span><span class="sxs-lookup"><span data-stu-id="2f2a9-138">Close **Component Services**.</span></span>  
   
-##  <span data-ttu-id="2f2a9-139"><a name="BKMK_Firewall"></a> Configuration du Pare-feu Windows pour activer DTC</span><span class="sxs-lookup"><span data-stu-id="2f2a9-139"><a name="BKMK_Firewall"></a> Configure Windows Firewall to Enable DTC</span></span>  
+##  <a name="BKMK_Firewall"></a> <span data-ttu-id="2f2a9-139">Configuration du Pare-feu Windows pour activer DTC</span><span class="sxs-lookup"><span data-stu-id="2f2a9-139">Configure Windows Firewall to Enable DTC</span></span>  
   
 1.  <span data-ttu-id="2f2a9-140">Ouvrez le **Pare-feu Windows** :</span><span class="sxs-lookup"><span data-stu-id="2f2a9-140">Open **Windows Firewall**:</span></span>  
   
@@ -107,7 +107,7 @@ ms.lasthandoff: 09/20/2017
   
 11. <span data-ttu-id="2f2a9-157">Fermez la page **Services (local)**, puis la page **Outils d’administration**.</span><span class="sxs-lookup"><span data-stu-id="2f2a9-157">Close **Services (Local)**, and then close **Administrative Tools**.</span></span>  
   
-##  <span data-ttu-id="2f2a9-158"><a name="BKMK_SQLAgent"></a> Configuration des travaux de l’Agent SQL</span><span class="sxs-lookup"><span data-stu-id="2f2a9-158"><a name="BKMK_SQLAgent"></a> Configure SQL Agent Jobs</span></span>  
+##  <a name="BKMK_SQLAgent"></a> <span data-ttu-id="2f2a9-158">Configuration des travaux de l’Agent SQL</span><span class="sxs-lookup"><span data-stu-id="2f2a9-158">Configure SQL Agent Jobs</span></span>  
   
 |<span data-ttu-id="2f2a9-159">Travail</span><span class="sxs-lookup"><span data-stu-id="2f2a9-159">Job</span></span>|<span data-ttu-id="2f2a9-160">Description</span><span class="sxs-lookup"><span data-stu-id="2f2a9-160">Description</span></span>|<span data-ttu-id="2f2a9-161">Raisons</span><span class="sxs-lookup"><span data-stu-id="2f2a9-161">Why configure</span></span>|  
 |---------|-----------------|-------------------|  
@@ -122,7 +122,7 @@ ms.lasthandoff: 09/20/2017
   
      <span data-ttu-id="2f2a9-184">[Structure et travaux de base de données](http://msdn.microsoft.com/library/aa561960\(v=bts.80\).aspx)</span><span class="sxs-lookup"><span data-stu-id="2f2a9-184">[Database Structure and Jobs](http://msdn.microsoft.com/library/aa561960\(v=bts.80\).aspx)</span></span>  
   
-##  <span data-ttu-id="2f2a9-185"><a name="BKMK_InstallCU"></a> Installation des mises à jour cumulatives</span><span class="sxs-lookup"><span data-stu-id="2f2a9-185"><a name="BKMK_InstallCU"></a> Install Cumulative Updates</span></span>  
+##  <a name="BKMK_InstallCU"></a> <span data-ttu-id="2f2a9-185">Installation des mises à jour cumulatives</span><span class="sxs-lookup"><span data-stu-id="2f2a9-185">Install Cumulative Updates</span></span>  
  <span data-ttu-id="2f2a9-186">Après avoir installé [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], installez les éventuelles mises à jour cumulatives de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] répertoriées dans Windows Update.</span><span class="sxs-lookup"><span data-stu-id="2f2a9-186">After you install [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], install any [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] cumulative updates listed in Windows Update.</span></span> <span data-ttu-id="2f2a9-187">L’[article 2555976 de la Base de connaissances](http://support.microsoft.com/kb/2555976) répertorie les Services Pack et les mises à jour cumulatives disponibles.</span><span class="sxs-lookup"><span data-stu-id="2f2a9-187">[KB article 2555976](http://support.microsoft.com/kb/2555976) lists available service packs and cumulative updates.</span></span>  
   
 ## <a name="next"></a><span data-ttu-id="2f2a9-188">Suivant</span><span class="sxs-lookup"><span data-stu-id="2f2a9-188">Next</span></span>  
