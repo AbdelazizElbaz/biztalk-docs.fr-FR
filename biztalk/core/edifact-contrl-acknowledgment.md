@@ -12,18 +12,18 @@ caps.latest.revision: "7"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: baaca02ac076c79be004ed7b3d2c0f4fffce6ff9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ddbc35fecd2412632f0c4a81750a3662e6e7bf11
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="edifact-contrl-acknowledgment"></a>Accusé de réception EDIFACT CONTRL
 L'accusé de réception CONTRL (ACK) sert de notification de transactions techniques et de notification de transactions opérationnelles pour les messages EDIFACT. En tant que notification de transactions techniques, le message CONTRL indique la réception d'un échange. En tant que notification de transactions opérationnelles, le message CONTRL indique l'acceptation ou le rejet de l'échange, du groupe ou du message reçu, et répertorie les erreurs ou fonctionnalités non prises en charge.  
   
- Le message CONTRL complet sert de notification de transactions opérationnelles. Les sections de la notification de transactions opérationnelles sont réutilisées pour la notification de transactions techniques. Si vous avez sélectionné des accusés de réception techniques et opérationnelles dans les propriétés du tiers pour le tiers expéditeur ou dans les propriétés globales, BizTalk Server génère deux messages CONTRL : un ACK CONTRL technique et un CONTRL ACK..  
+ Le message CONTRL complet sert de notification de transactions opérationnelles. Les sections de la notification de transactions opérationnelles sont réutilisées pour la notification de transactions techniques. Si vous avez sélectionné des accusés de réception techniques et opérationnelles dans les propriétés du tiers pour le tiers expéditeur ou dans les propriétés globales, BizTalk Server génère deux messages CONTRL : un ACK CONTRL technique et un CONTRL ACK.  
   
- L’ACK CONTRL est conforme à la EFACT_\<numéro de Version > _CONTRL.xsd schéma.  
+ L’ACK CONTRL est conforme à la EFACT_\<numéro de Version\>_CONTRL.xsd schéma.  
   
 ## <a name="technical-acknowledgement"></a>Notification de transactions techniques  
  Une notification de transactions techniques implique que le destinataire de l'échange :  
@@ -59,9 +59,9 @@ L'accusé de réception CONTRL (ACK) sert de notification de transactions techni
   
 ## <a name="in-this-section"></a>Dans cette section  
   
--   [Message CONTRL EDIFACT comme accusé de réception technique](../core/edifact-contrl-message-as-technical-acknowledgment.md)  
+-   [Message EDIFACT CONTRL comme accusé de réception technique](../core/edifact-contrl-message-as-technical-acknowledgment.md)  
   
--   [Message CONTRL EDIFACT comme accusé de réception fonctionnel](../core/edifact-contrl-message-as-functional-acknowledgment.md)  
+-   [Message EDIFACT CONTRL comme accusé de réception fonctionnel](../core/edifact-contrl-message-as-functional-acknowledgment.md)  
   
 ## <a name="see-also"></a>Voir aussi  
- [Structure d’accusé de réception EDI](../core/edi-acknowledgment-structure.md)
+ [Structure des accusés de réception EDI](../core/edi-acknowledgment-structure.md)

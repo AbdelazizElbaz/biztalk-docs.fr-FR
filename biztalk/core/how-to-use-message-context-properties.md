@@ -15,11 +15,11 @@ caps.latest.revision: "16"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0f5e222567c60596f572412bdcae9aadf6025ee0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 084eae49777b62b190e8e090c0b1045d301d420b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="how-to-use-message-context-properties"></a>Utilisation des propriétés du contexte de message
 Les propriétés système sont essentiellement utilisées en interne par le moteur de messagerie de BizTalk Server et ses composants. En général, la modification des valeurs définies par le moteur pour ces propriétés n'est pas conseillée car elle peut affecter la logique d'exécution du moteur. Toutefois, un certain nombre de propriétés peuvent être modifiées.  
@@ -51,11 +51,11 @@ MySubject= MyMessage(POP3.Subject);
 |BTS.CorrelationToken|Si cette propriété est définie dans le contexte du message, elle est promue par le moteur de messagerie. Cette propriété est définie implicitement sur un contexte lorsque l'adaptateur de requête-réponse ou une orchestration soumet un message de requête dans la base de données MessageBox.|xs:string|Permet le routage de la réponse vers les ports de requête-réponse.|  
 |BTS.EpmRRCorrelationToken|Promue par le moteur de messagerie lors de l'exécution du message de requête-réponse. Cette propriété est promue avant que les messages ne soient soumis dans la base de données MessageBox.|xs:int|Utilisée en interne par le moteur de messagerie. Spécifie le nom du serveur, l'ID du processus et un GUID unique pour un flux de requête-réponse de messages.|  
 |BTS.InboundTransportLocation|Promue par le moteur de messagerie après la réception d'un message en provenance d'un adaptateur de réception et avant sa publication dans la base de données MessageBox.|xs:string|Spécifie l'emplacement (URI) sur lequel le message a été reçu par le gestionnaire.|  
-|BTS.InboundTransportType|Promue par le moteur de messagerie après la réception d'un message en provenance d'un adaptateur de réception et avant sa publication dans la base de données MessageBox.|xs:string|Spécifie le type d’adaptateur qui a reçu ce message et l’a soumis le serveur : fichier, HTTP, etc..|  
+|BTS.InboundTransportType|Promue par le moteur de messagerie après la réception d'un message en provenance d'un adaptateur de réception et avant sa publication dans la base de données MessageBox.|xs:string|Spécifie le type d’adaptateur qui a reçu ce message et l’a soumis le serveur : fichier, HTTP, etc.|  
 |BTS.InterchangeSequenceNumber|Promue par le moteur de messagerie après la réception d'un message en provenance de l'adaptateur de réception et avant sa publication dans la base de données MessageBox.|xs:int|Indique le numéro de séquence du document dans l'échange. Si le document n’est pas partie d’un échange qui a été désassemblé en plusieurs documents, cette valeur sera 1. La propriété peut être lue dans une orchestration, un pipeline d’envoi et de l’adaptateur d’envoi.|  
 |BTS.IsDynamicSend|Cette propriété peut être définie dans le contexte de message. Elle ne sera pas promue et ne s'applique qu'aux opérations d'envoi.|xs:boolean|Elle est écrite dans le contexte de message par le moteur de messagerie avec une valeur true lorsque l'opération d'envoi se fait sur un port d'envoi dynamique. Pour définir de manière dynamique des propriétés pour les ports d'envoi statiques des pipelines d'envoi, vous devez définir cette valeur sur true.|  
 |BTS.MessageDestination|Cette propriété peut être définie dans le pipeline de réception par un composant de pipeline Désassembleur lorsqu'il retourne un message en provenance de GetNext().|xs:string|Utilisée essentiellement pour prendre en charge le traitement des échanges récupérables dans les désassembleurs, cette propriété détermine si un message est publié dans la boîte de message ou suspendu dans la file d'attente des messages interrompus. Si un pipeline rencontre un message défectueux dans un échange et qu'il souhaite le suspendre et continuer le traitement, il peut le faire en définissant MessageDestination = SuspendQueue et en retournant le message lorsque le moteur appelle GetNext() sur le désassembleur.<br /><br /> Valeurs valides :<br /><br /> -Valeur par défaut. Si la propriété n'existe pas, le message est supposé correct et est publié dans la boîte de message.<br />-SuspendQueue. Indique au moteur de messagerie de suspendre le message. **Remarque :** le message suspendu sera le message post-mappage/post-pipeline et non le message envoyé par l’adaptateur (c'est-à-dire le message réseau).|  
-|BTS.MessageType|Promue par les composants du pipeline Désassembleur lors de l'analyse du message.|xs:string|Indique le type du message. Le type de message est défini comme une concaténation de l’espace de noms de schéma document et le nœud racine du document : http://\<*MyNamespace*>#\<*MaRacine*>.|  
+|BTS.MessageType|Promue par les composants du pipeline Désassembleur lors de l'analyse du message.|xs:string|Indique le type du message. Le type de message est défini comme une concaténation de l’espace de noms de schéma document et le nœud racine du document : http://&lt*MyNamespace*>#<*MaRacine*>.|  
 |BTS.OutboundTransportLocation|Si cette propriété est définie dans le contexte du message, elle est promue par le moteur de messagerie. Cette propriété est définie implicitement dans un contexte de message lorsqu'une orchestration envoie un message à un port d'envoi. Elle peut également être définie explicitement à partir d'un pipeline ou d'une orchestration.|xs:string|Indique l'URI de l'emplacement de destination auquel le message est envoyé. L’URI peut contenir le préfixe d’adaptateur, tel que **http://**. Le préfixe d'adaptateur est utilisé par le moteur de messagerie pour déterminer le type d'adaptateur à utiliser lors de l'envoi du message. Si les deux le préfixe d’adaptateur et le **BTS. OutboundTransportType** sont définies, le type de carte de **BTS. OutboundTransportType** est toujours prioritaire sur le type d’adaptateur déterminé par le préfixe.<br /><br /> Valeurs valides :<br /><br /> Message Queuing BizTalk : **DIRECT =**, **privé =**, et **PUBLIC =**<br /><br /> FICHIER : **file://**<br /><br /> FTP : **FTP : / /**<br /><br /> HTTP : **http://** et **https://**<br /><br /> SMTP : **mailto :**<br /><br /> SOAP : **SOAP : / /**<br /><br /> SQL : **SQL : / /**|  
 |BTS.OutboundTransportType|Si cette propriété est définie dans le contexte du message, elle est promue par le moteur de messagerie. Cette propriété est définie implicitement dans un contexte lorsqu'une orchestration envoie un message à un port d'envoi. Cette propriété peut également être définie explicitement dans une orchestration ou un pipeline.|xs:string|Spécifie le type de l'adaptateur utilisé pour envoyer le message. Les types d’adaptateur disponibles sont **fichier**, **FTP**, **HTTP**, **SMTP**, **SOAP**et **SQL**.<br /><br /> Les valeurs indiquées pour cette propriété, de même que les préfixes d'adaptateur spécifiés dans l'adresse ne respectent pas la casse.|  
 |BTS.PropertiesToUpdate|Un adaptateur définit cette propriété lorsqu'il a besoin de préserver certaines valeurs de propriété d'un message ayant échoué qui est soumis à nouveau ou suspendu.<br /><br /> Cela signifie que lorsque le message sera à nouveau soumis ou repris, il sera doté des propriétés définies sur le contexte.|xs:string|Contient une chaîne XML avec des éléments qui représentent les valeurs, les espaces de noms et les noms de propriété.|  
@@ -91,19 +91,19 @@ MySubject= MyMessage(POP3.Subject);
   
 -   [Propriétés et schéma de propriété de l’adaptateur HTTP](../core/http-adapter-property-schema-and-properties.md)  
   
--   [Propriétés et schéma de propriété d’adaptateur MSMQ](../core/msmq-adapter-property-schema-and-properties.md)  
+-   [Propriétés et schéma de propriété de l’adaptateur MSMQ](../core/msmq-adapter-property-schema-and-properties.md)  
   
 -   [Propriétés et schéma de propriété de l’adaptateur SMTP](../core/smtp-adapter-property-schema-and-properties.md)  
   
 -   [Propriétés et schéma de propriété de l’adaptateur SOAP](../core/soap-adapter-property-schema-and-properties.md)  
   
--   [Propriétés et schéma BizTalk Framework](../core/biztalk-framework-schema-and-properties.md)  
+-   [Schéma et propriétés BizTalk Framework](../core/biztalk-framework-schema-and-properties.md)  
   
 -   [Propriétés de l’adaptateur MQSeries](../core/mqseries-adapter-properties.md)  
   
--   [POP3 Propriétés et le schéma de propriété de l’adaptateur](../core/pop3-adapter-property-schema-and-properties.md)  
+-   [Propriétés et schéma de propriété de l’adaptateur POP3](../core/pop3-adapter-property-schema-and-properties.md)  
   
--   [Référence des propriétés de l’adaptateur Windows SharePoint Services](../core/windows-sharepoint-services-adapter-properties-reference.md)  
+-   [Référence aux propriétés de l’adaptateur Windows SharePoint Services](../core/windows-sharepoint-services-adapter-properties-reference.md)  
   
 -   [Propriétés et schéma de propriété MIME/SMIME](../core/mime-smime-property-schema-and-properties.md)  
   

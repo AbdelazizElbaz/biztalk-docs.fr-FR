@@ -13,11 +13,11 @@ caps.latest.revision: "25"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1de0198d26f804ee8d1974d5dd542387408ea53a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8ac926a378224e09dce36a52b52c171fb27911b0
+ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="troubleshoot-operational-issues-with-the-oracle-database-adapter"></a>Résoudre les problèmes opérationnels avec l’adaptateur de base de données Oracle
 Résolution des problèmes techniques pour résoudre les erreurs opérationnels que vous pouvez rencontrer à l’aide de [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)].  
@@ -103,9 +103,9 @@ Change the object graph or increase the MaxItemsInObjectGraph quota.
  Un fichier app.config exemple ressemble à ceci.  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
-  \<system.serviceModel>  
+  <system.serviceModel>  
     <behaviors>  
       <endpointBehaviors>  
         <behavior name="NewBehavior">  
@@ -117,7 +117,7 @@ Change the object graph or increase the MaxItemsInObjectGraph quota.
       <endpoint   behaviorConfiguration="NewBehavior" binding="oracleDBBinding"  
        contract="IOutboundContract" name="oracle_ICalculator" />  
     </client>  
-  \</system.serviceModel>  
+  </system.serviceModel>  
 </configuration>  
 ```  
   
@@ -126,7 +126,7 @@ Change the object graph or increase the MaxItemsInObjectGraph quota.
   
  L’adaptateur renvoie l’erreur suivante lors de l’exécution de toute opération sur la base de données Oracle à l’aide [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].  
   
--   **Pour[!INCLUDE[btsBizTalkServer2006r3](../../includes/btsbiztalkserver2006r3-md.md)]**  
+-   **Pour BizTalk Server**  
   
     ```  
     System.ArgumentNullException: Value cannot be null.  
@@ -147,7 +147,7 @@ Change the object graph or increase the MaxItemsInObjectGraph quota.
   
 ```  
 Microsoft.ServiceModel.Channels.Common.XmlReaderParsingException: Invalid argument:  
-\<BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
+<BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
   <Operation Name="<operation_name>" Action="<action>" />  
 </BtsActionMapping>  
 ```  
@@ -221,35 +221,35 @@ Microsoft.ServiceModel.Channels.Common.TargetSystemException: ORA-01001: invalid
 1.  Le fichier WSDL qui contient le nœud StreamBody ressemble à ceci.  
   
     ```  
-    \<xs:element name="ReadLOBResponse">  
-        \<xs:annotation>  
-          \<xs:documentation>  
-            \<doc:action xmlns:doc="http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation">http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/TBL_ALL_DATATYPES/ReadLOB/response\</doc:action>  
-          \</xs:documentation>  
-        \</xs:annotation>  
-        \<xs:complexType>  
-          \<xs:sequence>  
-            \<xs:element minOccurs="1" maxOccurs="1" name="ReadLOBResult" nillable="true" type="ns3:StreamBody" />  
-          \</xs:sequence>  
-        \</xs:complexType>  
-      \</xs:element>  
+    <xs:element name="ReadLOBResponse">  
+        <xs:annotation>  
+          <xs:documentation>  
+            <doc:action xmlns:doc="http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation">http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/TBL_ALL_DATATYPES/ReadLOB/response\</doc:action>  
+          </xs:documentation>  
+        </xs:annotation>  
+        <xs:complexType>  
+          <xs:sequence>  
+            <xs:element minOccurs="1" maxOccurs="1" name="ReadLOBResult" nillable="true" type="ns3:StreamBody" />  
+          </xs:sequence>  
+        </xs:complexType>  
+      </xs:element>  
     ```  
   
      Remplacez l’exemple précédent avec les éléments suivants.  
   
     ```  
-    \<xs:element name="ReadLOBResponse">  
-     \<xs:annotation>  
-     \<xs:documentation>  
-      \<doc:action xmlns:doc="http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation">http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/TBL_ALL_DATATYPES/ReadLOB/response\</doc:action>   
-      \</xs:documentation>  
-      \</xs:annotation>  
-     \<xs:complexType>  
-     \<xs:sequence>  
-      \<xs:element minOccurs="1" maxOccurs="1" name="ReadLOBResult" type="xs:base64Binary" />   
-      \</xs:sequence>  
-      \</xs:complexType>  
-      \</xs:element>  
+    <xs:element name="ReadLOBResponse">  
+     <xs:annotation>  
+     <xs:documentation>  
+      <doc:action xmlns:doc="http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation">http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/TBL_ALL_DATATYPES/ReadLOB/response\</doc:action>   
+      </xs:documentation>  
+      </xs:annotation>  
+     <xs:complexType>  
+     <xs:sequence>  
+      <xs:element minOccurs="1" maxOccurs="1" name="ReadLOBResult" type="xs:base64Binary" />   
+      </xs:sequence>  
+      </xs:complexType>  
+      </xs:element>  
     ```  
   
      Dans cette étape, vous avez supprimé la référence au type = « ns3:StreamBody » dans le schéma XSD d’origine et l’a remplacé avec type = « xs : base64Binary ». En outre, vous avez supprimé la valeur « true » = « nillable » à partir du XSD d’origine.  
@@ -257,18 +257,18 @@ Microsoft.ServiceModel.Channels.Common.TargetSystemException: ORA-01001: invalid
 2.  Supprimer les éléments suivants à partir de WSDL.  
   
     ```  
-    \<xs:complexType name="StreamBody">  
-        \<xs:sequence>  
-          \<xs:element minOccurs="1" maxOccurs="1" name="Stream">  
-            \<xs:simpleType>  
-              \<xs:restriction base="xs:base64Binary">  
-                \<xs:minLength value="0" />  
-              \</xs:restriction>  
-            \</xs:simpleType>  
-          \</xs:element>  
-        \</xs:sequence>  
-      \</xs:complexType>  
-      \<xs:element name="StreamBody" nillable="true" type="ns3:StreamBody" />  
+    <xs:complexType name="StreamBody">  
+        <xs:sequence>  
+          <xs:element minOccurs="1" maxOccurs="1" name="Stream">  
+            <xs:simpleType>  
+              <xs:restriction base="xs:base64Binary">  
+                <xs:minLength value="0" />  
+              </xs:restriction>  
+            </xs:simpleType>  
+          </xs:element>  
+        </xs:sequence>  
+      </xs:complexType>  
+      <xs:element name="StreamBody" nillable="true" type="ns3:StreamBody" />  
     ```  
   
     > [!NOTE]
@@ -290,7 +290,7 @@ Microsoft.ServiceModel.Channels.Common.TargetSystemException: ORA-01001: invalid
 ###  <a name="BKMK_OraDBUnreasonConv"></a>Erreur 'Conversion déraisonnable demandée' lors de l’exécution de procédures stockées avec des Types d’enregistrements en tant que paramètres  
  **Cause**  
   
- Envisagez un scénario où Oracle stockées procédure prend un Type d’enregistrement en tant que paramètre. Supposons que le Type d’enregistrement est déclaré comme \<nom de table > % ROWTYPE, où la table contient une colonne de type de données de type LONG. Lorsque le [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] rencontre le LONG type de données, il définit la taille du type de données égal à la valeur spécifiée pour le **LongDatatypeColumnSize** propriété de liaison. Toutefois, la base de données Oracle ne définit pas une taille pour le type de données de type LONG. Par conséquent, lorsque l’adaptateur appelle la procédure stockée, il génère une erreur « Conversion déraisonnable demandée ».  
+ Envisagez un scénario où Oracle stockées procédure prend un Type d’enregistrement en tant que paramètre. Supposons que le Type d’enregistrement est déclaré comme \<nom de la table\>% ROWTYPE, où la table contient une colonne de type de données de type LONG. Lorsque le [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] rencontre le LONG type de données, il définit la taille du type de données égal à la valeur spécifiée pour le **LongDatatypeColumnSize** propriété de liaison. Toutefois, la base de données Oracle ne définit pas une taille pour le type de données de type LONG. Par conséquent, lorsque l’adaptateur appelle la procédure stockée, il génère une erreur « Conversion déraisonnable demandée ».  
   
  **Résolution**  
   
@@ -303,14 +303,14 @@ Microsoft.ServiceModel.Channels.Common.TargetSystemException: ORA-01001: invalid
   
 ```  
 Microsoft.ServiceModel.Channels.Common.UnsupportedOperationException: Incorrect Action   
-\<BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
+<BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
   <Operation Name="<op_name>" Action="<action>" />  
 </BtsActionMapping>. Correct the specified Action, or refer to the documentation on the allowed formats for the Actions.  
 ```  
   
  **Cause**  
   
- Lorsque vous créez des ports logiques dans une orchestration BizTalk, vous spécifiez certains noms pour les opérations sur ces ports ou vous utilisez simplement les noms par défaut comme Operation_1, Operation_2, etc.. Toutefois, dans le fichier de liaison généré par le [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], le nom de l’opération est identique au nom de l’opération de base de données Oracle pour lequel générer des métadonnées. Par exemple, si vous générez des métadonnées pour une opération Select sur la table ACCOUNTACTIVITY dans la base de données Oracle, l’action est fixée à ce qui suit :  
+ Lorsque vous créez des ports logiques dans une orchestration BizTalk, vous spécifiez certains noms pour les opérations sur ces ports ou vous utilisez simplement les noms par défaut comme Operation_1, Operation_2, etc. Toutefois, dans le fichier de liaison généré par le [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], le nom de l’opération est identique au nom de l’opération de base de données Oracle pour lequel générer des métadonnées. Par exemple, si vous générez des métadonnées pour une opération Select sur la table ACCOUNTACTIVITY dans la base de données Oracle, l’action est fixée à ce qui suit :  
   
 ```  
 <Operation Name="Select" Action="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/ACCOUNTACTIVITY/Select" />  

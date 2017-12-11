@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 14ff75bff7d5b22efdafb7aa3327683fbe805514
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1b882c44e69489114a2dd8084df71d6414df0cb5
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="common-errors"></a>Erreurs fréquentes
 Cette rubrique répertorie les messages d'erreur courants que vous pouvez rencontrer lors de la création de mappages à l'aide du Mappeur BizTalk.  
@@ -83,7 +83,7 @@ Cette rubrique répertorie les messages d'erreur courants que vous pouvez rencon
 -   « Le nom du type 'XLANs' n'existe pas... »  
   
 ### <a name="cause"></a>Cause  
- Le **nom de Type** dans les **propriétés** grille ne devrait pas les espaces de noms .NET réservé, tel que **système**, **Microsoft**, etc..  
+ Le **nom de Type** dans les **propriétés** grille ne devrait pas les espaces de noms .NET réservé, tel que **système**, **Microsoft**, etc.  
   
 ### <a name="resolution"></a>Résolution  
  Pour résoudre ce problème, suivez l'une des solutions suivantes :  
@@ -99,16 +99,16 @@ Cette rubrique répertorie les messages d'erreur courants que vous pouvez rencon
 ### <a name="problem"></a>Problème  
  Lors de la création d'un projet BizTalk, le Mappeur BizTalk génère une erreur similaire à ce qui suit :  
   
--   « Le fichier \<filename > contient des valeurs dupliquées pour les propriétés du nom de type et espace de noms. »  
+-   « Le fichier \<nom de fichier\> a des valeurs en double pour les propriétés du nom de type et espace de noms. »  
   
--   « L’espace de noms \<nom > contient déjà une définition pour '_'. »  
+-   « L’espace de noms \<nom\> contient déjà une définition pour '_'. »  
   
 ### <a name="cause"></a>Cause  
  Dans le projet BizTalk, vérifiez les éléments suivants :  
   
 -   Plusieurs artefacts possèdent le même nom de fichier. Pour, par exemple, **Map1.xsd** et**Map1.btm**.  
   
--   Le nom de fichier comprend uniquement des caractères spéciaux (**~**, **!**,  **@** , etc..).  
+-   Le nom de fichier comprend uniquement des caractères spéciaux (**~**, **!**,  **@** , etc.).  
   
 ### <a name="resolution"></a>Résolution  
  Pour résoudre ce problème, suivez l'une des solutions suivantes :  

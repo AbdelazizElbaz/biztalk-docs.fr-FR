@@ -12,11 +12,11 @@ caps.latest.revision: "14"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8f1eb41d07ef6a6ac3577bf0ef6d3f5bffb874f3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5198335cfa1a7d2036ca05759edc7d04e28cc20b
+ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="syntax-for-an-execquery-statement-in-sap"></a>Syntaxe pour une instruction EXECQUERY dans SAP
 Vous pouvez utiliser l’interface utilisateur graphique SAP pour créer des requêtes en sélectionnant graphiquement les tables que vous souhaitez interroger, les colonnes et l’ordre que vous souhaitez inclure dans le jeu de résultats, etc. de tri. Le [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] permet aux utilisateurs d’exécuter ces requêtes à partir d’une application ADO.NET en fournissant une opération EXECQUERY qui permettent aux utilisateurs d’exécuter une requête définie dans le système SAP.  
@@ -30,16 +30,16 @@ Vous pouvez utiliser l’interface utilisateur graphique SAP pour créer des req
   
 ```  
 EXECQUERY <QueryName> @USERGROUP='usergroup' [, @WORKSPACE='X'] [, @VARIANT='variant']   
-[, @P1='\<value 1>’] [, @P2='\<value 2>'] ... [, @Pn = '<value n>'] [, @P1!='\<value 3>'] [, @P1 > '\<value 4>'] [, @P1 <= '\<value 2>']   
-[, NOT @P1 = '\<value 2>'] [, NOT @P1 != '\<value 2>'] [, NOT @P1 > '\<value 2>']   
-[, @P1 BETWEEN '\<value 1>' AND '\<value 2>'] [, NOT @P1 BETWEEN '\<value 1>' AND '<value2>’]  
+[, @P1='<value 1>’] [, @P2='<value 2>'] ... [, @Pn = '<value n>'] [, @P1!='<value 3>'] [, @P1 > '<value 4>'] [, @P1 <= '<value 2>']   
+[, NOT @P1 = '<value 2>'] [, NOT @P1 != '<value 2>'] [, NOT @P1 > '<value 2>']   
+[, @P1 BETWEEN '<value 1>' AND '<value 2>'] [, NOT @P1 BETWEEN '<value 1>' AND '<value2>’]  
 [OPTION 'USEORIGINALCOLUMNNAMES']  
   
 ```  
   
  où :  
   
--   **\<Nom_requête >** est le nom de la requête définie dans le système SAP.  
+-   **\<Nom_requête\>**  est le nom de la requête définie dans le système SAP.  
   
 -   **Groupe d’utilisateurs** fait référence au groupe d’utilisateurs dans lequel la requête est définie. Il s'agit d'un paramètre obligatoire.  
   
@@ -67,7 +67,7 @@ EXECQUERY <QueryName> @USERGROUP='usergroup' [, @WORKSPACE='X'] [, @VARIANT='var
   
 -   Les valeurs retournées par l’opération EXECQUERY sont de type chaîne.  
   
--   Mots clés pour les noms de requêtes, groupe d’utilisateurs, espace de travail et les variantes ne respectent pas la casse. Toutefois, les noms de paramètre doivent toujours être dans caseP supérieur comme @P1, @P2, etc.. Exemple :  
+-   Mots clés pour les noms de requêtes, groupe d’utilisateurs, espace de travail et les variantes ne respectent pas la casse. Toutefois, les noms de paramètre doivent toujours être dans caseP supérieur comme @P1, @P2, etc. Exemple :  
   
     ```  
     EXECQUERY xyz USERGROUP=’mygrp’, NOT @P1= 'somevalue'  
@@ -79,7 +79,7 @@ EXECQUERY <QueryName> @USERGROUP='usergroup' [, @WORKSPACE='X'] [, @VARIANT='var
     EXECQUERY xyz uSERgROUP=’mygrp’, NOT @P1= 'somevalue'  
     ```  
   
--   Les opérateurs pris en charge par le EXECQUERY sont >, \<, > =, < =, ! =, NOT et BETWEEN.  
+-   Les opérateurs pris en charge par le EXECQUERY sont >, <>, =, < =, ! =, NOT et BETWEEN.  
   
 -   Les caractères génériques ne sont pas pris en charge par l’opération EXECQUERY. Par exemple, l’instruction suivante donne le résultat attendu :  
   
