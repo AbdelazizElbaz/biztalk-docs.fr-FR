@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: db9b066b6d1f2334e14e4829d61ec6b84830c4c1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 52579934be36d4bb42fa4b299f54b66fd6af3894
+ms.sourcegitcommit: 654a9586d1232ac332a1675b8a4fae832a0d559a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/10/2017
 ---
 # <a name="high-availability-using-sql-server-always-on-availability-groups"></a>Haute disponibilité à l’aide de SQL Server groupes de disponibilité AlwaysOn
 Configurer la haute disponibilité à l’aide de groupes de disponibilité AlwaysOn de SQL Server.
@@ -69,7 +69,7 @@ Nous recommandons que les bases de données BizTalk Server sont regroupés dans 
 |1 |Authentification |SSODB|
 |2 |Gestion |BizTalkMgmtDb| 
 |3 |Runtime |BizTalkMsgBoxDb<br/> BizTalkRulesEngineDb<br/> BAMPrimaryImport<br/>BAMStarSchema <br/>BAMAlertsApplication |
-|4 |Suivi |BizTalkDTADb| 
+|4 |Suivi |BizTalkDTADb<br/>EsbItineraryDb<br/>EsbExceptionDb | 
  
 Dans un scénario de MessageBox à grande échelle (il s’agit d’une configuration avec plusieurs MessageBox), il existe plusieurs bases de données MessageBox, et chaque base de données MessageBox doit se trouver sur sa propre instance de SQL Server. 
 
@@ -241,7 +241,7 @@ Si vous ajoutez d’autres bases de données BizTalk à l’opération de sauveg
  
 * [Offrant une haute disponibilité pour les bases de données BizTalk Server](../core/providing-high-availability-for-biztalk-server-databases.md)  
 * [Prise en charge du logiciel Microsoft server pour les machines virtuelles Microsoft Azure](https://support.microsoft.com/kb/2721672)  
-* [Base de données SQL Server mise en miroir, le service VSS et AlwaysOn](../core/sql-server-database-mirroring-volume-shadow-copy-service-and-alwayson.md)  
+* [Mise en miroir de bases de données SQL Server, service VSS et AlwaysOn](../core/sql-server-database-mirroring-volume-shadow-copy-service-and-alwayson.md)  
 * [Vue d’ensemble des groupes de disponibilité AlwaysOn (SQL Server)](https://msdn.microsoft.com/library/ff877884.aspx)  
 * [Prise en charge des Transactions de bases de données croisées pour la mise en miroir de base de données ou de groupes de disponibilité AlwaysOn (SQL Server)](https://msdn.microsoft.com/library/ms366279.aspx)  
 * [Reenlist ne peut pas être appelée lorsque SQL Server reçoit le résultat de la transaction à partir de MSDTC dans Windows Server 2012 R2](https://support.microsoft.com/kb/3090973)  

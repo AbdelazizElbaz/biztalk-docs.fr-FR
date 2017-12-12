@@ -12,16 +12,16 @@ caps.latest.revision: "8"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1195e153eb94215bf8861b4856e4d2135b24443e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e0b5a5c60d42892479feacc93aedb3802b11308c
+ms.sourcegitcommit: d572ae5c887898adedcb3dfc5f83841beedd3434
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="delimiter-preservation-and-suppression"></a>Suppression et la préservation de délimiteur
 
 ## <a name="overview"></a>Vue d'ensemble
-Il existe deux propriétés qui s’appliquent aux enregistrements délimités : **préserver le délimiteur pour les données vides** et **[Supprimer les délimiteurs de**. Ces propriétés permettent de contrôler la façon dont l’assembleur de fichier plat gère les délimiteurs associés aux données inexistantes et des délimiteurs de fin. Lorsque vous définissez la **préserver le délimiteur pour les données vides** propriété **Oui** (qui est le paramètre par défaut), les délimiteurs sont inclus dans le message de fichier plat converti pour :  
+Il existe deux propriétés qui s’appliquent aux enregistrements délimités : **préserver le délimiteur pour les données vides** et **supprimer les délimiteurs de**. Ces propriétés permettent de contrôler la façon dont l’assembleur de fichier plat gère les délimiteurs associés aux données inexistantes et des délimiteurs de fin. Lorsque vous définissez la **préserver le délimiteur pour les données vides** propriété **Oui** (qui est le paramètre par défaut), les délimiteurs sont inclus dans le message de fichier plat converti pour :  
   
 -   les champs sans données ;  
   
