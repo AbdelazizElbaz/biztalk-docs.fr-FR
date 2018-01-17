@@ -18,10 +18,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 3ca5a539fdaea9026a7c18cae6f076e72df9efe2
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="lesson-4-building-and-deploying-the-assembly"></a>Leçon 4 : Création et déploiement de l’Assembly
 Dans cette leçon, vous générez et déployez le projet pour générer un assembly qui contient les schémas que vous avez créé dans les leçons précédentes. Cette tâche s’assure aucune erreur de compilation dans le travail que vous avez créé jusqu'à présent.  
@@ -37,7 +37,7 @@ Dans cette leçon, vous générez et déployez le projet pour générer un assem
     > [!NOTE]
     >  Vérifiez que **génération a réussi** s’affiche dans le coin inférieur gauche de l’écran. Pendant le processus de compilation, vous pouvez voir certains messages d’état. Ces messages sont normaux lorsque vous traitez des schémas SWIFT. Si des erreurs s’affiche, cliquez sur Outils, puis cliquez sur Administration de BizTalk Server pour ouvrir la Console Administration de BizTalk Server. Utilisez la fonctionnalité de l’Observateur d’événements et l’intégrité et l’activité de suivi du fonctionnement (HAT) dans la Console Administration de BizTalk pour corriger les erreurs et la régénérer.  
   
-2.  À l’aide de [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorateur de solutions, cliquez sur Parcourir pour le  **\<* lecteur*\>: \labs\SWIFTProject\SWIFTSchemas\bin\Development** dossier et vérifiez que le  **SWIFTSchemas.dll** fichier existe dans ce dossier.  
+2.  À l’aide de [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorateur de solutions, cliquez sur Parcourir pour le  **\< *lecteur*\>: \labs\SWIFTProject\SWIFTSchemas\bin\Development** dossier et vérifiez que le  **SWIFTSchemas.dll** fichier existe dans ce dossier.  
   
 3.  Dans l’Explorateur de solutions, cliquez sur **SWIFTSchemas**, puis cliquez sur **déployer**.  
   

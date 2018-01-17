@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 958746634776e9b01c32ff2425122312bc7a841c
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="step-6-create-the-send-port-for-the-acknowledgment-batch"></a>Étape 6 : Créer le Port d’envoi pour le traitement de l’accusé de réception
 Dans cette étape, vous créez un port d’envoi pour fournir le traitement de l’accusé de réception que vous créez à la partie de la source. Il s’agit d’un port statique unidirectionnel avec un type d’adaptateur FILE. Vous désignez un dossier de fichiers pour la source (\Tutorial_BatchACKDrop), où [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] supprimera le fichier de commandes d’accusé de réception. Vous définissez un filtre pour le port qui indique le type de lots d’accusé de réception envoie les ports. Le filtre spécifie la source de Tutorial_BatchSource et le type de message de OutboundBatch.  
@@ -37,7 +37,7 @@ Dans cette étape, vous créez un port d’envoi pour fournir le traitement de l
   
     |Utiliser|Pour effectuer cette opération|  
     |--------------|----------------|  
-    |**Dossier de destination**|Accédez à  **\<* lecteur*:\>\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_ BatchACKDrop **. Il s’agit du chemin d’accès à l’emplacement sur le système de fichiers ou le partage public auquel [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] réécrit le fichier contenant le lot d’accusé de réception.|  
+    |**Dossier de destination**|Accédez à  **\< *lecteur*:\>\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_BatchACKDrop**. Il s’agit du chemin d’accès à l’emplacement sur le système de fichiers ou le partage public auquel [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] réécrit le fichier contenant le lot d’accusé de réception.|  
     |**Nom de fichier**|Type **%MessageID%.txt** (remplacez l’extension .xml avec l’extension .txt).|  
     |**Mode de copie**|Sélectionnez **créer de nouveaux**.|  
   
@@ -51,11 +51,11 @@ Dans cette étape, vous créez un port d’envoi pour fournir le traitement de l
     |--------------|----------------|  
     |**Propriété**|Cliquez sur le champ sous **propriété**, puis sélectionnez **Microsoft.Solutions.BTAHL7.BatchOrchestration.Party** dans la liste déroulante.|  
     |**Opérateur**|Laissez  **==**  comme l’opérateur.|  
-    |**Valeur**|Type **Tutorial_BatchSource**.|  
+    |**Value**|Type **Tutorial_BatchSource**.|  
     |**Regrouper par**|Sélectionnez **et** dans la liste déroulante.|  
-    |**Propriété**|Sélectionnez **BTAHL7Schemas.BTAHL7MessageType**.|  
+    |**Propriété**|Select **BTAHL7Schemas.BTAHL7MessageType**.|  
     |**Opérateur**|Laissez  **==**  comme l’opérateur.|  
-    |**Valeur**|Type **OutboundBatch**.|  
+    |**Value**|Type **OutboundBatch**.|  
   
 7.  Appuyez sur **Entrée**. Dans le volet du bas de la boîte de dialogue, vérifiez que vous avez correctement entré l’expression de filtre, puis cliquez sur **OK**.  
   

@@ -17,10 +17,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: fd36081bd92c3bfae13916ed7d984fcd5de9763f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="receive-polling-based-data-changed-messages-in-oracle-database-using-the-wcf-service-model"></a>Recevoir des Messages d’interrogation de données modifiées dans la base de données Oracle à l’aide du modèle de Service WCF
 Vous pouvez configurer le [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] réception reposant sur l’interrogation des données modifiées messages par rapport à une table Oracle ou une vue. Pour recevoir des messages de données modifiées, l’adaptateur exécute régulièrement une requête SQL sur une table Oracle ou d’une vue, suivi d’un bloc de code PL/SQL facultatif. Les résultats de la requête SQL sont ensuite retournées par le [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] à votre application comme fortement typée jeu de résultats en une opération POLLINGSTMT entrante. Pour plus d’informations sur le mécanisme utilisé pour configurer et effectuer d’interrogation sur Oracle de base de données à l’aide de la [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)], consultez [recevoir des messages d’interrogation de données modifiées dans la carte de base de données Oracle](../../adapters-and-accelerators/adapter-oracle-database/receive-polling-based-data-changed-messages-in-oracle-database-adapter.md). Nous vous recommandons fortement de lire cette rubrique avant de continuer.  

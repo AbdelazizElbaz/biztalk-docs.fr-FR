@@ -17,13 +17,13 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 0e7d693cdf70f7d29a79aa8999dde49f408b8815
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="data-types-common-schemas"></a>Types de données des schémas courants
-Le  **datatypes_*\<version\>*le fichier de schéma .xsd ** (où  *\<version\>*  est le numéro de version HL7 ) contient la définition de tous les types de données élémentaires et composite HL7 pour la version correspondante de HL7. Le segments_*\<version\>*fichier .xsd utilise ce fichier pour correspondre à la version correspondante de HL7. La table de base de données Access de DataStructures génère le DataTypes_*\<version\>*fichier de schéma .xsd. L’exemple suivant est une entrée pour le type de données élémentaire HL7 **ST**:  
+Le **datatypes_*\<version\>*.xsd** fichier de schéma (où  *\<version\>*  est le numéro de version HL7) contient la définition de tous les types de données élémentaires et composite HL7 pour la version correspondante de HL7. Le segments_*\<version\>*fichier .xsd utilise ce fichier pour correspondre à la version correspondante de HL7. La table de base de données Access de DataStructures génère le DataTypes_*\<version\>*fichier de schéma .xsd. L’exemple suivant est une entrée pour le type de données élémentaire HL7 **ST**:  
   
 ```  
 <xsd:simpleType name="ST">  

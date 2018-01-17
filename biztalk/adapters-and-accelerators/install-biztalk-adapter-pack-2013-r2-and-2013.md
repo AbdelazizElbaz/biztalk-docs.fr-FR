@@ -14,10 +14,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: c8bc1ebbdaf2973f4749da6c0832d49204588b6c
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="install-biztalk-adapter-pack-2013-r2-and-2013"></a>Installer 2013 et BizTalk adaptateur Pack 2013 R2
 Ce document répertorie la configuration logicielle requise et les étapes pour installer l’agent Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] (LOB) fournis avec BizTalk Server 2013 ou [!INCLUDE[bts2013r2](../includes/bts2013r2-md.md)].  
@@ -660,7 +660,7 @@ Pour les étapes et les instructions pour installer les systèmes métier entrep
   
      À l’aide des valeurs différentes pour le `REMOVE` et `ADDLOCAL` propriétés, vous pouvez ajouter ou supprimer des composants spécifiques. Reportez-vous au tableau dans [l’installation de BizTalk Adapter Pack en Mode silencieux](#BKMK_SilentInst) (dans cette rubrique) pour plus d’informations sur les valeurs que vous pouvez utiliser pour ces propriétés.  
   
-     Vous pourrez également effectuer une réparation en mode silencieux à l’aide de l’option /f dans le cadre de la commande msiexec. Exemple :  
+     Vous pourrez également effectuer une réparation en mode silencieux à l’aide de l’option /f dans le cadre de la commande msiexec. Par exemple :  
   
     ```  
     msiexec /i AdaptersSetup.msi /qn /f  
@@ -845,7 +845,7 @@ Effectuez cette étape pour supprimer les RFC personnalisés que vous avez insta
   
 -   **Le programme d’installation en cours d’exécution sur un ordinateur 64 bits peut lever une erreur lors de l’accès au fichier de schéma**  
   
-     Le [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] le programme d’installation génère une erreur lors de l’accès à la  **Microsoft.Adapters.* \<AdapterName\>*_schema.xml** fichier, mais se poursuit avec l’installation de l’adaptateur.  
+     Le [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] le programme d’installation génère une erreur lors de l’accès à la **Microsoft.Adapters. *\<AdapterName\>*_schema.xml** fichier, mais se poursuit avec l’installation de l’adaptateur.  
   
      **Cause**  
   
@@ -853,4 +853,4 @@ Effectuez cette étape pour supprimer les RFC personnalisés que vous avez insta
   
      **Résolution**  
   
-     Copiez manuellement le  **Microsoft.Adapters.* \<AdapterName\>*fichier _schema.xml** `C:\Program Files\Microsoft BizTalk Adapter Pack(x64)\IIS Schemas`» à `C:\Windows\System32\inetsrv\config\schema`.  
+     Copiez manuellement le **Microsoft.Adapters. *\<AdapterName\>*_schema.xml** à partir du fichier `C:\Program Files\Microsoft BizTalk Adapter Pack(x64)\IIS Schemas`» à `C:\Windows\System32\inetsrv\config\schema`.  

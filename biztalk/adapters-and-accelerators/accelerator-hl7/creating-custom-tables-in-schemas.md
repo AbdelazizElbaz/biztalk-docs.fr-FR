@@ -17,17 +17,17 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: a663dd593123e647f2f466b6d472d60bb32be1be
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="creating-custom-tables-in-schemas"></a>Création de Tables personnalisées dans les schémas
 Vous pouvez créer une table personnalisée dans le tablevalues_\<*version*\>schéma .xsd. Vous pouvez baser une table personnalisée sur un type de données existant, un type de base de données ou sur une énumération définie dans une table.  
   
 ### <a name="to-create-a-z-table"></a>Pour créer une table Z  
   
-1.  Dans l’Explorateur de solutions, ouvrez le fichier de schéma de type de données commun  **tablevalues_\<*version*\>.xsd **, puis cliquez sur **ouvrir**.  
+1.  Dans l’Explorateur de solutions, ouvrez le fichier de schéma de type de données commun **tablevalues_\<*version*\>.xsd**, puis cliquez sur **ouvrir**.  
   
 2.  Avec le bouton droit dans l’Éditeur BizTalk, **HL7DefinedTables**, pointez sur **insérer un nœud de schéma**, puis cliquez sur **élément de champ enfant**.  
   

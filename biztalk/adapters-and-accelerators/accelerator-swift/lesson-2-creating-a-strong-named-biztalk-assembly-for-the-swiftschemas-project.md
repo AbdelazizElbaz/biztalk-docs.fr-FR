@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: a8ff979c7b6915f53ebc7144cf0774ab1ffb779a
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="lesson-2-creating-a-strong-named-biztalk-assembly-for-the-swiftschemas-project"></a>Leçon 2 : Création d’un Assembly BizTalk avec nom fort pour le projet SWIFTSchemas
 Dans cette leçon, vous créez un nom fort sur lequel les assemblys BizTalk sont compilés et déployés. Un assembly avec nom fort présente plusieurs avantages de sécurité :  
@@ -49,7 +49,7 @@ Dans cette leçon, vous créez un nom fort sur lequel les assemblys BizTalk sont
   
 6.  Défilement vers le bas les propriétés de l’assembly dans le volet droit et dans le **nom fort** , cliquez sur la zone à droite de **fichier de clé d’Assembly**. Cliquez sur le bouton de sélection.  
   
-7.  Dans la boîte de dialogue de fichier de clé d’Assembly, accédez à  **\<* lecteur*:\>\labs**.  
+7.  Dans la boîte de dialogue de fichier de clé d’Assembly, accédez à  **\< *lecteur*:\>\labs**.  
   
 8.  Sélectionnez le **swift.snk** de fichiers en tant que le fichier de clé, puis cliquez sur **ouvrir**.  
   

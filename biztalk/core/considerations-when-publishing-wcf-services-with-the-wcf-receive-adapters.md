@@ -19,10 +19,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 30175e7966d565306c45820f1a6c2e22e4611876
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="considerations-when-publishing-wcf-services-with-the-wcf-receive-adapters"></a>Considérations relatives à la publication de services WCF à l'aide des adaptateurs de réception WCF
 Cette rubrique fournit des informations à prendre en compte lors de la publication des services WCF à l'aide des adaptateurs de réception WCF.  La publication d'un service à l'aide d'un adaptateur WCF permet son appel par un client WCF comme s'il s'agissait d'un service WCF classique.  
@@ -116,15 +116,15 @@ Cette rubrique fournit des informations à prendre en compte lors de la publicat
   
 |Élément de schéma XML|Utilisation de services WCF publiés à l'aide de l'Assistant Publication de services WCF BizTalk|Utilisation de services WCF hébergés par des applications .NET|  
 |------------------------|-------------------------------------------------------------------------------------|--------------------------------------------------------|  
-|\<importation\>|Prise en charge par l'Assistant Consommation de service WCF BizTalk et Svcutil.exe|Prise en charge par l'Assistant Consommation de service WCF BizTalk et Svcutil.exe|  
-|\<inclure\>|Prise en charge avec l’Assistant consommation de Service WCF de BizTalk et Svcutil.exe **Remarque :** Svcutil.exe peut générer un message d’avertissement lors de la création de la classe proxy.|Prise en charge avec l’Assistant consommation de Service WCF de BizTalk et Svcutil.exe **Remarque :** Svcutil.exe peut générer un message d’avertissement lors de la création de la classe proxy.|  
-|\<redéfinir\>|-Prise en charge avec l’Assistant consommation de Service WCF BizTalk<br />-Limitée de prise en charge par Svcutil.exe **Remarque :** Svcutil.exe connaît la même restriction pour le **redéfinir** a de l’élément en tant que XSD.exe.|Prise en charge avec l’Assistant consommation de Service WCF de BizTalk et Svcutil.exe **Remarque :** Svcutil.exe peut générer un message d’avertissement lors de la création de la classe proxy.|  
+|\<import\>|Prise en charge par l'Assistant Consommation de service WCF BizTalk et Svcutil.exe|Prise en charge par l'Assistant Consommation de service WCF BizTalk et Svcutil.exe|  
+|\<include\>|Prise en charge avec l’Assistant consommation de Service WCF de BizTalk et Svcutil.exe **Remarque :** Svcutil.exe peut générer un message d’avertissement lors de la création de la classe proxy.|Prise en charge avec l’Assistant consommation de Service WCF de BizTalk et Svcutil.exe **Remarque :** Svcutil.exe peut générer un message d’avertissement lors de la création de la classe proxy.|  
+|\<redefine\>|-Prise en charge avec l’Assistant consommation de Service WCF BizTalk<br />-Limitée de prise en charge par Svcutil.exe **Remarque :** Svcutil.exe connaît la même restriction pour le **redéfinir** a de l’élément en tant que XSD.exe.|Prise en charge avec l’Assistant consommation de Service WCF de BizTalk et Svcutil.exe **Remarque :** Svcutil.exe peut générer un message d’avertissement lors de la création de la classe proxy.|  
   
 > [!NOTE]
 >  SvcUtil.exe peut générer un message d’avertissement lors de la création de la classe proxy sur le service WCF BizTalk publié avec les schémas à l’aide de la **incluent** et **redéfinir** éléments. Par exemple, « L'élément global a déjà été déclaré ».  
   
 ## <a name="ensure-that-an-in-process-wcf-receive-location-is-not-disabled-after-you-change-the-computer-name-part-in-its-service-endpoint-address"></a>Vérification qu'un emplacement de réception WCF in-process n'est pas désactivé après la modification du nom de l'ordinateur indiqué dans l'adresse de point de terminaison de son service  
- Si vous modifiez la partie nom d’ordinateur dans le **adresse (URI)** emplacement de réception de zone de texte d’un processus en cours d’exécution de WCF, nous vous recommandons d’utiliser la console Administration de BizTalk pour vérifier si l’emplacement de réception est en cours d’exécution. Par exemple, si vous modifiez une adresse de point de terminaison de service à l’aide de WCF-NetTcp adaptateur de réception, **net.tcp://\<***nom de votre ordinateur***\>/samplepath**, **net.tcp://localhost/samplepath**, l’emplacement de réception peut être désactivé avec un **Service.InvalidOperationException**. Si vous modifiez uniquement le nom de l'ordinateur indiqué dans l'adresse de point de terminaison de service sans changer le chemin d'accès, assurez-vous que l'emplacement de réception n'est pas désactivé et activez-le si nécessaire.  
+ Si vous modifiez la partie nom d’ordinateur dans le **adresse (URI)** emplacement de réception de zone de texte d’un processus en cours d’exécution de WCF, nous vous recommandons d’utiliser la console Administration de BizTalk pour vérifier si l’emplacement de réception est en cours d’exécution. Par exemple, si vous modifiez une adresse de point de terminaison de service à l’aide de WCF-NetTcp adaptateur de réception, **net.tcp://\<***nom de votre ordinateur***\>/samplepath**à  **NET.TCP://localhost/samplepath**, l’emplacement de réception peut être désactivé avec un **Service.InvalidOperationException**. Si vous modifiez uniquement le nom de l'ordinateur indiqué dans l'adresse de point de terminaison de service sans changer le chemin d'accès, assurez-vous que l'emplacement de réception n'est pas désactivé et activez-le si nécessaire.  
   
 ## <a name="set-the-appropriate-msdtc-security-configuration-options-on-client-computers-communicating-with-remote-wcf-receive-locations-through-a-transaction-protocol"></a>Définition des options de configuration de la sécurité MSDTC appropriées sur les ordinateurs clients communiquant avec des emplacements de réception WCF distants via un protocole de transaction  
  Adaptateurs de réception WCF-NetTcp, WCF-WSHttp et WCF-NetNamedPipe peut participer au processus de coordination transactionnelle clients WCF gèrent à la **WS-AtomicTransaction** et **OleTransaction**protocoles de transaction. Les messages peuvent être transmis aux emplacements de réception de destination et supprimés de la base de données MessageBox, dans un contexte transactionnel, à l'aide des protocoles de transaction.  

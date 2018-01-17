@@ -17,10 +17,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 57368dbbb2d8ecaa6621707ea7b989bf7f5b005d
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="step-3-assign-a-strong-name-to-the-assembly"></a>Étape 3 : Assigner un nom fort à l’Assembly
 Dans cette étape, vous créez et attribuez un nom fort pour le [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] assembly. Un assembly avec nom fort présente plusieurs avantages de sécurité et est nécessaire pour déployer votre projet dans le global assembly cache (GAC). Un nom fort garantit l’unicité de l’assembly en assignant une signature numérique et une paire de clés unique. Cela protège également l’enregistrement en ligne de l’assembly en veillant à ce que personne ne peut générer une version ultérieure de l’assembly. Enfin, un nom fort fournit un contrôle d’intégrité fort pour garantir que le contenu de l’assembly n’a pas modifié, car vous les avez générées.  
@@ -32,7 +32,7 @@ Dans cette étape, vous créez et attribuez un nom fort pour le [!INCLUDE[btsBiz
     > [!NOTE]
     >  Si vous avez déjà créé une clé de nom fort, vous pouvez la réutiliser.  
   
-2.  À l’invite de commandes, accédez au**\<*lecteur*\>: \Tutorial\BTAHL7V22Common** (où \< *lecteur* \> est la lettre de lecteur de votre installation), puis appuyez sur **entrée**.  
+2.  À l’invite de commandes, accédez au**\<*lecteur*\>: \Tutorial\BTAHL7V22Common** (où \< *lecteur* \> est lettre de lecteur de votre installation), puis appuyez sur **entrée**.  
   
 3.  À l’invite de commandes, tapez **sn – k key.snk**, puis appuyez sur **entrée**. Un message s’affiche indiquant que [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] écriture de la paire de clés dans le fichier de clé key.snk.  
   
@@ -42,7 +42,7 @@ Dans cette étape, vous créez et attribuez un nom fort pour le [!INCLUDE[btsBiz
   
 6.  Dans le volet droit, faites défiler jusqu'à la **nom fort** , cliquez sur le champ situé à droite de **fichier de clé d’Assembly**, puis cliquez sur le bouton de sélection (...).  
   
-7.  Dans la boîte de dialogue de fichier de clé d’Assembly, accédez à  **\<* lecteur*\>: \Tutorial\BTAHL7V22Common\key.snk**, cliquez sur **ouvrez**, puis cliquez sur **OK**.  
+7.  Dans la boîte de dialogue de fichier de clé d’Assembly, accédez à  **\< *lecteur*\>: \Tutorial\BTAHL7V22Common\key.snk**, cliquez sur **ouvrez**, puis cliquez sur **OK**.  
   
 8.  Dans l’Explorateur de solutions, cliquez sur **BTAHL7V22Common**, puis cliquez sur **déployer**. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]Crée un assembly que vous pouvez référencer à partir de votre prochain projet.  
   

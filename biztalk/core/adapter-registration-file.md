@@ -13,17 +13,17 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 1c38d00cbaf5d34aa880f5efd1d9e9a59d59c4e0
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="adapter-registration-file"></a>Fichier d'inscription de l'adaptateur
 Une fois le code de l'adaptateur personnalisé correctement généré, il doit être inscrit auprès de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Pour ce faire, il convient de mettre à jour le Registre à l'aide des paramètres appropriés de l'adaptateur. Vous pouvez écrire manuellement un fichier de Registre, mais il y a un risque d'erreurs en raison de la précision et de la complexité des informations que vous devrez entrer. Il est conseillé d'exécuter l'Assistant Registre d'adaptateur. Cet Assistant vous propose les mêmes options que si vous génériez un fichier de Registre en partant de zéro et il réduit le risque d'erreurs dans le fichier. Pour plus d’informations sur cet Assistant, consultez [Assistant Registre d’adaptateur](../core/adapter-registry-wizard.md).  
   
  Le fichier StaticAdapterManagement.reg et DynamicAdapterManagement.reg sont trouvent dans  *\<lecteur\>*: \Program Files\Microsoft Server\SDK\Samples\AdaptersDevelopment\File l’adaptateur BizTalk. Lorsque vous exécutez un de ces fichiers (vous pouvez double-cliquer dessus ou faites un clic droit et sélectionnez **fusion**), il inscrit l’exemple d’adaptateur file dans le Registre et installe l’assembly dans le global assembly cache. Pour enregistrer votre adaptateur personnalisé, la meilleure méthode consiste à créer un fichier de Registre en utilisant l'Assistant Registre d'adaptateur. Si votre adaptateur statique personnalisé est identique à l'adaptateur exemple, et que vous décidiez à la place de modifier le fichier de Registre existant, ouvrez le fichier StaticAdapterManagement.reg et modifiez les propriétés suivantes :  
   
--   **Contraintes**  
+-   **Constraints**  
   
 -   **InboundTypeName**  
   
@@ -52,13 +52,13 @@ Une fois le code de l'adaptateur personnalisé correctement généré, il doit �
   
 -   **Implémentation des catégories\\{7F46FC3E-3C2C-405B-A47F-8D17942BA8F9}**  
   
--   **« InboundProtocol_PageProv » = « {2DE93EE6-CB01-4007-93E9-C3D71689A281} »**  
+-   **"InboundProtocol_PageProv"="{2DE93EE6-CB01-4007-93E9-C3D71689A281}"**  
   
--   **« OutboundProtocol_PageProv » = « {2DE93EE6-CB01-4007-93E9-C3D71689A283} »**  
+-   **"OutboundProtocol_PageProv"="{2DE93EE6-CB01-4007-93E9-C3D71689A283}"**  
   
--   **« ReceiveLocation_PageProv » = « {2DE93EE6-CB01-4007-93E9-C3D71689A280} »**  
+-   **"ReceiveLocation_PageProv"="{2DE93EE6-CB01-4007-93E9-C3D71689A280}"**  
   
--   **« TransmitLocation_PageProv » = « {2DE93EE6-CB01-4007-93E9-C3D71689A282} »**  
+-   **"TransmitLocation_PageProv"="{2DE93EE6-CB01-4007-93E9-C3D71689A282}"**  
   
  Les adaptateurs basés sur la structure d'adaptateur doivent utiliser ces GUID spécifiques pour le gestionnaire d'envoi et de réception et les pages de propriétés de l'emplacement. Notez que si un adaptateur est un adaptateur d’envoi uniquement il a juste besoin le **OutboundProtocol_PageProv**et **TransmitLocation_PageProv**GUID. De même qu’un adaptateur de réception uniquement nécessite simplement la **InboundProtocol_PageProv** et **ReceiveLocation_PageProv** GUID.  
   

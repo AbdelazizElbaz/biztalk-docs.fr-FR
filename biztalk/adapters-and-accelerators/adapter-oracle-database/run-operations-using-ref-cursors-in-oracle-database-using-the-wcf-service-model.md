@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: cb527a4451388475ce69a5321d0d05616fc8afde
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="run-operations-using-ref-cursors-in-oracle-database-using-the-wcf-service-model"></a>Exécuter des opérations à l’aide de REF CURSOR dans la base de données Oracle à l’aide du modèle de Service WCF
 Un REF CURSOR est un type de données Oracle PL/SQL qui représente un pointeur vers un jeu de résultats dans la base de données Oracle. Le [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] prend en charge les paramètres REF CURSOR dans des procédures, fonctions et des packages. Paramètres REF CURSOR peuvent être fortement typés ou faiblement typée en fonction de la façon dont ils sont déclarés dans la procédure ou fonction. Pour une explication détaillée de la façon dont les paramètres REF CURSOR sont représentées par le [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)], consultez [des schémas de Message pour REF CURSOR](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-ref-cursors.md). Le tableau suivant récapitule la manière dont les paramètres REF CURSOR sont représentées dans le modèle de service WCF.  

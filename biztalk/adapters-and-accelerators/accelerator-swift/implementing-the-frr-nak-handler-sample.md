@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: a91c0303c9abdf6b1d8c434869445f3c84348935
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="implementing-the-frr-nak-handler-sample"></a>Implémentation de l’exemple de gestionnaire FRR NAK
 Pour implémenter l’exemple de gestionnaire personnalisé FRR NAK, ajoutez l’exemple de projet à votre solution, générer et déployer le projet, lier et démarrer l’orchestration et puis arrêtez et redémarrez [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].  
@@ -31,7 +31,7 @@ Pour implémenter l’exemple de gestionnaire personnalisé FRR NAK, ajoutez l�
   
 4.  Générez et déployez le projet RepairSWIFTRejectedMessage.btproj.  
   
-5.  Dans l’Explorateur BizTalk, développez **bases de données de Configuration BizTalk**,  **\<* nom du serveur*\>, BizTalkMgmtDb.dbo** et **Orchestrations**, avec le bouton droit **RepairSWIFTRejectedMessage.Orchestration_1**, puis cliquez sur **lier**.  
+5.  Dans l’Explorateur BizTalk, développez **bases de données de Configuration BizTalk**,  **\< *nom du serveur*\>, BizTalkMgmtDb.dbo**, et  **Orchestrations**, avec le bouton droit **RepairSWIFTRejectedMessage.Orchestration_1**, puis cliquez sur **lier**.  
   
 6.  Dans le **propriétés de liaison de Port** boîte de dialogue, sélectionnez votre hôte, telles que BizTalkServerApplication, puis **OK**.  
   

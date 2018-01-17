@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 56aa8490bd9e72677c9c8eefa73e7f6bd8438dfd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="field-padding"></a>Remplissage des champs
 
@@ -38,4 +38,4 @@ Plus d’informations sur ces propriétés [!INCLUDE[ui-guidance-developers-refe
 ## <a name="see-also"></a>Voir aussi  
  [Considérations relatives aux champs](../core/field-considerations.md)   
  [Justification des champs](../core/field-justification.md)   
- [Spécification des Positions de champ dans les enregistrements positionnels](../core/specification-of-field-positions-within-positional-records.md)  
+ [Spécification de positions de champ dans les enregistrements positionnels](../core/specification-of-field-positions-within-positional-records.md)  

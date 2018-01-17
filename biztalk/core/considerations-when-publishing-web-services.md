@@ -18,10 +18,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 825a16555f0b0c82282ae4d85592567d2a19c073
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="considerations-when-publishing-web-services"></a>Considérations à prendre en compte lors de la publication de services Web
 Cette rubrique fournit des informations que vous devez prendre en compte avant de publier vos services Web.  
@@ -84,4 +84,4 @@ Cette rubrique fournit des informations que vous devez prendre en compte avant d
 -   Réduire le délai d’expiration de script de serveur à une valeur inférieure au délai de demande client en réduisant la valeur pour le **HttpServerUtility.ScriptTimeout** propriété sur le serveur.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Publication de Services Web](../core/publishing-web-services.md)
+ [Publication de services web](../core/publishing-web-services.md)

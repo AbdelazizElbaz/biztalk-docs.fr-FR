@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: d1a7ee4f8ffe73a71e8c0b2e3d45c7a966669fd8
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="how-to-generate-the-master-secret"></a>Comment générer le Secret principal
 Vous devez disposer de droits d'administrateur sur le serveur de secret principal pour effectuer cette tâche. Par ailleurs, vous devez effectuer cette tâche depuis le serveur de secret principal.  
@@ -46,7 +46,7 @@ Vous devez disposer de droits d'administrateur sur le serveur de secret principa
   
 2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur\>*: \Program Files\Enterprise Single Sign-On.  
   
-3.  Type  **ssoconfig – generateSecret \<* fichier de sauvegarde*\>**, où \<* le fichier de sauvegarde* \> est le nom du fichier qui contient le secret principal.  
+3.  Type **ssoconfig – generateSecret \< *fichier de sauvegarde*\>**, où \< *fichier de sauvegarde* \> est le nom de la fichier qui contient le secret principal.  
   
      Vous êtes ensuite invité à entrer un mot de passe pour protéger le fichier que vous venez de créer.  
   

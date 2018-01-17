@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: e5b4fa1dba322e830114a76a0ca69134edbb1d06
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="update-repair-or-uninstall-biztalk-accelerator-for-hl7"></a>Mettre à jour, réparer ou désinstaller BizTalk Accelerator pour HL7
 
@@ -25,7 +25,7 @@ Modifier, réparer ou désinstaller le [!INCLUDE[btaBTAHL7NoNumber](../../includ
 > [!IMPORTANT]
 >  Veillez à désinstaller [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)] avant de désinstaller [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]. [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]ne peut pas être désinstallé si [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] n’est plus installé.  
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 * Connectez-vous à l’aide d’un compte qui est membre de la [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] groupe Administrateurs.  
 
 * Ce compte d’utilisateur doit également être membre du groupe Administrateurs sur le [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] qui stocke le BizTalk Accelerator pour HL7 données.  

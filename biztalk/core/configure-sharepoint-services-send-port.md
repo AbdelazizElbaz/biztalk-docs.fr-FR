@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: f424d3ad1b38316802585aefca0a49bf2f67f0a2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="configure-sharepoint-services-send-port"></a>Configuration du port d'envoi SharePoint Services
 Cette rubrique compare un port d'envoi statique à un port d'envoi dynamique, et présente également les étapes à suivre afin de créer un port d'envoi [!INCLUDE[btsWinSharePointSvcsNoVersion](../includes/btswinsharepointsvcsnoversion-md.md)]. Plus précisément :  
@@ -31,18 +31,18 @@ Cette rubrique compare un port d'envoi statique à un port d'envoi dynamique, et
   
 ||Port d'envoi statique|Port d'envoi dynamique|  
 |-|----------------------|-----------------------|  
-|Vous devez utiliser un port d'envoi unique avec différents adaptateurs.|Non<br /><br /> Lors de la création d'un port d'envoi statique, vous devez indiquer le type de transport.|Oui<br /><br /> En règle générale, un port d'envoi dynamique est ajouté à une orchestration. Le type de transport est configuré dans la logique d'orchestration.|  
-|Vous devez utiliser un port d'envoi unique avec différentes propriétés de port d'envoi, telles qu’une URL.|Non<br /><br /> Lors de la création d'un port d'envoi statique, vous devez configurer certaines propriétés de l'adaptateur, telles qu’une URL.|Oui<br /><br /> En règle générale, un port d'envoi dynamique est ajouté à une orchestration. Les propriétés sont configurées dans la logique d'orchestration.|  
-|Vous devez utiliser le gestionnaire d'envoi par défaut.|Non<br /><br /> Le gestionnaire d'envoi peut être configuré lors de la création d'un port d'envoi.|Non<br /><br /> Le gestionnaire d'envoi peut être configuré lors de la création d'un port d'envoi.|  
-|À utiliser lorsque vous ne savez pas où le message doit être acheminé.|Non<br /><br /> Lors de la création d'un port d'envoi statique, vous devez spécifier le type de transport et l'emplacement final.|Oui<br /><br /> L'emplacement final peut être configuré dans une orchestration ou dans un scénario de routage basé sur le contenu. Les règles permettent également de filtrer l'emplacement de destination du message.|  
-|Vous devez utiliser un port d'envoi unique pour envoyer des messages à plusieurs partenaires.|Non<br /><br /> Lors de la création d'un port d'envoi statique, vous devez spécifier le type de transport et l'emplacement final.|Oui<br /><br /> En règle générale, un port d'envoi dynamique est ajouté à une orchestration. Les propriétés sont configurées dans la logique d'orchestration et sont basées sur des règles que vous spécifiez ; les messages peuvent être envoyés à plusieurs partenaires.|  
+|Vous devez utiliser un port d'envoi unique avec différents adaptateurs.|non<br /><br /> Lors de la création d'un port d'envoi statique, vous devez indiquer le type de transport.|Oui<br /><br /> En règle générale, un port d'envoi dynamique est ajouté à une orchestration. Le type de transport est configuré dans la logique d'orchestration.|  
+|Vous devez utiliser un port d'envoi unique avec différentes propriétés de port d'envoi, telles qu’une URL.|non<br /><br /> Lors de la création d'un port d'envoi statique, vous devez configurer certaines propriétés de l'adaptateur, telles qu’une URL.|Oui<br /><br /> En règle générale, un port d'envoi dynamique est ajouté à une orchestration. Les propriétés sont configurées dans la logique d'orchestration.|  
+|Vous devez utiliser le gestionnaire d'envoi par défaut.|non<br /><br /> Le gestionnaire d'envoi peut être configuré lors de la création d'un port d'envoi.|non<br /><br /> Le gestionnaire d'envoi peut être configuré lors de la création d'un port d'envoi.|  
+|À utiliser lorsque vous ne savez pas où le message doit être acheminé.|non<br /><br /> Lors de la création d'un port d'envoi statique, vous devez spécifier le type de transport et l'emplacement final.|Oui<br /><br /> L'emplacement final peut être configuré dans une orchestration ou dans un scénario de routage basé sur le contenu. Les règles permettent également de filtrer l'emplacement de destination du message.|  
+|Vous devez utiliser un port d'envoi unique pour envoyer des messages à plusieurs partenaires.|non<br /><br /> Lors de la création d'un port d'envoi statique, vous devez spécifier le type de transport et l'emplacement final.|Oui<br /><br /> En règle générale, un port d'envoi dynamique est ajouté à une orchestration. Les propriétés sont configurées dans la logique d'orchestration et sont basées sur des règles que vous spécifiez ; les messages peuvent être envoyés à plusieurs partenaires.|  
   
 ##  <a name="BKMK_StaticSend"></a>Créer un Port d’envoi statique  
  Lors de la création d'un port d'envoi statique, le port d'envoi fait appel au gestionnaire d'envoi par défaut associé au type de transport. Lorsque vous utilisez la [!INCLUDE[btsWinSharePointSvcsNoVersion](../includes/btswinsharepointsvcsnoversion-md.md)] carte, la valeur par défaut est de gestionnaire d’envoi **BizTalkServerApplication**. Pour savoir comment ajouter un nouveau gestionnaire d’envoi, accédez à [comment créer un gestionnaire d’adaptateur](http://go.microsoft.com/fwlink/p/?LinkId=263646).  
   
  Pour créer le port d'envoi statique :  
   
-1.  Dans le **Administration de BizTalk Server** de la console, développez  **groupe BizTalk [*GroupName*] **, développez **Applications**, puis développez l’application pour contenir le port d’envoi.  
+1.  Dans le **Administration de BizTalk Server** de la console, développez **groupe BizTalk [*GroupName*]**, développez **Applications**, puis développez l’application pour contenir le port d’envoi.  
   
 2.  Avec le bouton droit **Ports d’envoi**, cliquez sur **nouveau**, puis cliquez sur **Port d’envoi unidirectionnel statique**.  
   
@@ -65,7 +65,7 @@ Cette rubrique compare un port d'envoi statique à un port d'envoi dynamique, et
     |URL de site SharePoint|**Requise**. Il s'agit de l'URL complète du site Web [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)], Par exemple, http://*SharePointServer*  /sites/TestSite. **Remarque :** un port d’envoi ou emplacement de réception URI ne peut pas dépasser 256 caractères.|  
     |Intégration de Microsoft Office|**Requise**. Pour les messages binaires, vous devez utiliser **non** ou **facultatif**.<br /><br /> Valeur par défaut est **facultatif**. Les options sont les suivantes :<br /><br /> <ul><li>**Ne**: enregistre le document **comme-est**. Vous pouvez utiliser cette option pour les messages binaires.</li><li>**Facultatif**: modifie le document de sorte qu’il s’ouvre automatiquement dans une application Office, comme InfoPath. Si les instructions de traitement sont introuvables, le document est traité **comme-est**. Vous pouvez utiliser cette option pour les messages binaires.</li><li>**Orchestration**: utilise la valeur définie dans l’orchestration.</li><li>**Oui**: modifie le document de sorte qu’il s’ouvre automatiquement dans une application Office, comme InfoPath. Si les instructions de traitement sont introuvables, le message est interrompu.<br /><br />     Lorsque la valeur **Oui**, au moins une des paires propriété suivante est requise :<br /><br /> <ul><li>*Bibliothèque de documents modèles* et *colonne Namespace de modèles*</li><li>*Bibliothèque de modèles de documents de secours* et *colonne Namespace modèles de secours*</li></ul></li><li>**Oui (bibliothèque de formulaires InfoPath)**: si une solution InfoPath réside dans la bibliothèque de formulaires, le document est modifié de sorte qu’il s’ouvre automatiquement dans une application Office, comme InfoPath. Si la bibliothèque de formulaires n’est associée à aucune solution, le message est interrompu.</li></ul>|  
     |Bibliothèque de documents Modèles|**Requis *uniquement* lorsque *modèles Namespace colonne* est rempli**. Il s'agit de la bibliothèque de documents SharePoint qui stocke les solutions InfoPath, Par exemple, **mes Solutions**. L’adaptateur recherche les *bibliothèque de documents modèles* pour une solution InfoPath correspondante. Si aucune solution n’est pas trouvée, l’adaptateur recherche les *bibliothèque de documents modèles de secours*. **Remarque :** le *bibliothèque de documents modèles* requiert au moins une colonne SharePoint de « Une seule ligne de texte » qui est remplie avec les éléments suivants : <ul><li>le nom de l'espace de noms et le nœud racine des documents XML pouvant être ouverts avec la solution InfoPath ;</li><li>OU, le nœud racine du document XML.</li></ul> Pour plus d’informations, consultez [procédure pas à pas : Module 2 - intégration d’Office avec l’adaptateur Windows SharePoint Services](../core/walkthrough-module-2--integrate-office-with-the-sharepoint-adapter-in-biztalk.md).|  
-    |Bibliothèque de documents Modèles de secours|**Requis *uniquement* lorsque *colonne modèles de secours Namespace* est rempli**. Il s'agit de la bibliothèque de documents SharePoint qui stocke les solutions InfoPath, Par exemple, **modèles**.<br /><br /> Si aucune solution n’est pas trouvée dans le *bibliothèque de documents modèles*, l’adaptateur recherche *bibliothèque de documents modèles de secours* une solution InfoPath correspondante. Le *bibliothèque de documents modèles de secours* et *bibliothèque de documents modèles* champs peuvent être utilisés avec deux ensembles de solutions InfoPath. Il existe des solutions InfoPath génériques à usage universel et des solutions InfoPath spécialisées qui sont utilisées uniquement pour un partenaire spécifique. Le *bibliothèque de documents modèles de secours* champ doit pointer vers les solutions génériques et le *bibliothèque de documents modèles* doit pointer vers les solutions spécialisées pour ce partenaire spécifique. **Remarque :***bibliothèque de documents modèles de secours* requiert au moins une colonne SharePoint de « Une seule ligne de texte » qui est remplie avec les éléments suivants :   <ul><li>le nom de l'espace de noms et le nœud racine des documents XML pouvant être ouverts avec la solution InfoPath ;</li><li>OU, le nœud racine du document XML.</li></ul> Pour plus d’informations, consultez [procédure pas à pas : Module 2 - intégration d’Office avec l’adaptateur Windows SharePoint Services](../core/walkthrough-module-2--integrate-office-with-the-sharepoint-adapter-in-biztalk.md).|  
+    |Bibliothèque de documents Modèles de secours|**Requis *uniquement* lorsque *colonne modèles de secours Namespace* est rempli**. Il s'agit de la bibliothèque de documents SharePoint qui stocke les solutions InfoPath, Par exemple, **modèles**.<br /><br /> Si aucune solution n’est pas trouvée dans le *bibliothèque de documents modèles*, l’adaptateur recherche *bibliothèque de documents modèles de secours* une solution InfoPath correspondante. Le *bibliothèque de documents modèles de secours* et *bibliothèque de documents modèles* champs peuvent être utilisés avec deux ensembles de solutions InfoPath. Il existe des solutions InfoPath génériques à usage universel et des solutions InfoPath spécialisées qui sont utilisées uniquement pour un partenaire spécifique. Le *bibliothèque de documents modèles de secours* champ doit pointer vers les solutions génériques et le *bibliothèque de documents modèles* doit pointer vers les solutions spécialisées pour ce partenaire spécifique. **Remarque :***bibliothèque de documents modèles de secours* requiert au moins une colonne SharePoint de « Une seule ligne de texte » qui est remplie avec les éléments suivants : <ul><li>le nom de l'espace de noms et le nœud racine des documents XML pouvant être ouverts avec la solution InfoPath ;</li><li>OU, le nœud racine du document XML.</li></ul> Pour plus d’informations, consultez [procédure pas à pas : Module 2 - intégration d’Office avec l’adaptateur Windows SharePoint Services](../core/walkthrough-module-2--integrate-office-with-the-sharepoint-adapter-in-biztalk.md).|  
     |Colonne espaces de noms Modèles de secours|**Requis *uniquement* lorsque *bibliothèque de documents modèles de secours* est rempli**. Il s'agit de la bibliothèque de documents SharePoint qui stocke l'espace de noms des solutions InfoPath, Par exemple, **myNamespace**. **Remarque :** ce champ respecte la casse.|  
     |Colonne d'espace de noms des modèles|**Requis *uniquement* lorsque *bibliothèque de documents modèles* est rempli**. SharePoint *bibliothèque de documents modèles* colonne qui stocke l’espace de noms de la solution InfoPath. Par exemple, **myNamespace**. **Remarque :** ce champ respecte la casse.|  
     |Mot de passe SharePoint Online|**Facultatif**. Il s'agit du mot de passe associé au compte SharePoint Online.|  
@@ -92,7 +92,7 @@ Cette rubrique compare un port d'envoi statique à un port d'envoi dynamique, et
 ##  <a name="BKMK_DynamicSend"></a>Créer un Port d’envoi dynamique  
  Lors de la création d'un port d'envoi dynamique, le gestionnaire d'envoi peut être configuré pour chaque adaptateur. Un port d'envoi dynamique unique peut être utilisé par plusieurs adaptateurs. Consultez [Gestionnaire du Port d’envoi dynamique est Configurable](../core/dynamic-send-port-handler-is-configurable.md) pour connaître les étapes configurer le Gestionnaire de Port d’envoi dynamique.  
   
-1.  Dans le **Administration de BizTalk Server** de la console, développez  **groupe BizTalk [*GroupName*] **, développez **Applications**, puis développez l’application pour contenir le port d’envoi.  
+1.  Dans le **Administration de BizTalk Server** de la console, développez **groupe BizTalk [*GroupName*]**, développez **Applications**, puis développez l’application pour contenir le port d’envoi.  
   
 2.  Avec le bouton droit **Ports d’envoi**, cliquez sur **nouveau**, puis choisissez **Port d’envoi unidirectionnel dynamique** ou **Port d’envoi dynamique avec sollicitation-réponse**  
   
@@ -106,7 +106,7 @@ Cette rubrique compare un port d'envoi statique à un port d'envoi dynamique, et
   
     -   **Exigences 32 bits**: certaines cartes nécessitent un hôte 32 bits, tels que les adaptateurs FTP et POP3. Vous pouvez regrouper tous les adaptateurs ou chaque adaptateur 32 bits dans leur propre hôte.  
   
-         [Prise en charge 64 bits de BizTalk Server](../core/biztalk-server-64-bit-support2.md)  
+         [Prise en charge du fonctionnement en 64 bits pour BizTalk Server](../core/biztalk-server-64-bit-support2.md)  
   
     -   **Hôte par fonction**: créer un ordinateur hôte pour l’envoi, un hôte de réception, un ordinateur hôte pour le traitement des orchestrations et un ordinateur hôte pour le suivi.  
   
@@ -138,11 +138,11 @@ Cette rubrique compare un port d'envoi statique à un port d'envoi dynamique, et
   
  Autres rubriques relatives aux ports d'envoi :  
   
- [Création et configuration des Ports d’envoi](../core/creating-and-configuring-send-ports.md)  
+ [Création et configuration des ports d’envoi](../core/creating-and-configuring-send-ports.md)  
   
  [Création et configuration des groupes de ports d’envoi](../core/creating-and-configuring-send-port-groups.md)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Résolution des problèmes de l’adaptateur SharePoint Services](../core/troubleshooting-sharepoint-services-adapter.md)   
  [Configurer SharePoint Services emplacement de réception](../core/configure-sharepoint-services-receive-location.md)   
- [CSOM : L’adaptateur SharePoint Services](../core/csom-sharepoint-services-adapter.md)
+ [Modèle CSOM : Adaptateur SharePoint Services](../core/csom-sharepoint-services-adapter.md)

@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 9a7123d908f25e6575eaaba4f9a92608f17c88be
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="walkthrough-custom-message-processing-with-the-wcf-nettcp-adapter"></a>Procédure pas à pas : Personnalisé traitement du Message avec l’adaptateur WCF-NetTcp
 Dans cette procédure pas à pas, un client [!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)] soumet un message [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] contenant des données d'image JPEG binaires imbriquées à un emplacement de réception BizTalk à l'aide de l'adaptateur WCF-NetTcp. L’image JPEG codée en binaire est extraite à l’aide d’une instruction XPath (avec codage de nœud Base64) via le **corps du Message entrant** paramètres de configuration de l’adaptateur. Un traitement XPath diffère de la méthode par défaut que [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] utilise pour gérer les messages entrants. Dans la méthode par défaut, l’adaptateur obtient le contenu entier de la **corps** élément de la [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] de message, puis l’envoie à la base de données MessageBox de BizTalk. Le traitement de message XPath extrait des éléments spécifiques d'un message [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] entrant pour créer un message BizTalk personnalisé. Dans cet exemple, le traitement XPath localise un élément XML nommé **SendPicture** en entrant [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] message (qui est au format XML). Après avoir trouvé cet élément, XPath en extrait la valeur sous forme d'objet Base64 codé en binaire, puis place cette valeur binaire dans un message BizTalk. Le message est publié dans la base de données MessageBox, puis transféré vers un port d'envoi FILE à l'aide d'un abonnement de filtre de port d'envoi. Cet exemple n'utilise aucune orchestration. Tout le traitement est effectué via la messagerie BizTalk à l'aide de XPath.  
@@ -32,7 +32,7 @@ Dans cette procédure pas à pas, un client [!INCLUDE[firstref_btsWinCommFoundat
 > [!NOTE]
 >  Le **hosttrusted** élément spécifie si l’hôte associé au Gestionnaire de réception est approuvé. Dans le fichier bindings.xml, il est défini sur son paramètre par défaut, `false`, parce que, dans cet exemple, nous ne nous préoccupons pas du service d''authentification unique de l'entreprise (SSO) de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Ce dernier permet la transmission d'informations d'identification utilisateur par le biais de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] pour l'intégration d'applications de tierce partie avec [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Un paramètre `false` empêche le transit d'un message BizTalk via le service BizTalk dans le cadre du traitement d'authentification unique.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Configuration requise  
  Pour exécuter la procédure décrite dans cet exemple, assurez-vous que votre environnement installe les composants requis suivants :  
   
 -   L’ordinateur qui génère les assemblys et exécute le processus de déploiement et l’ordinateur qui exécute l’exemple, requièrent Microsoft [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)], Microsoft [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]et Microsoft BizTalk Server.  
@@ -73,7 +73,7 @@ Dans cette procédure pas à pas, un client [!INCLUDE[firstref_btsWinCommFoundat
   
     4.  Sur le **sécurité** onglet, définissez la **mode de sécurité** à **None.**  
   
-    5.  Sur le **Message** onglet, sélectionnez le **chemin d’accès** est définie sur le **le corps du message BizTalk entrant**et entrez `/*[local-name()="SendPicture" and namespace-uri()='http://tempuri.org/']/*[local-name()="stream"]` pour l’expression de chemin de corps. Sélectionnez **Base64** comme le **codage de nœud**. Le **chemin d’accès** option est définie sur la valeur, car le corps de la [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] message [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] reçoit est au format suivant :   **\<SendPicture xmlns = « http:// tempuri.org/ «\>\<flux\>*réel base 64 encodé des données image binaires*\</stream\>\</SendPicture\>**  
+    5.  Sur le **Message** onglet, sélectionnez le **chemin d’accès** est définie sur le **le corps du message BizTalk entrant**et entrez `/*[local-name()="SendPicture" and namespace-uri()='http://tempuri.org/']/*[local-name()="stream"]` pour l’expression de chemin de corps. Sélectionnez **Base64** comme le **codage de nœud**. Le **chemin d’accès** option est définie sur la valeur, car le corps de la [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] message [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] reçoit est au format suivant :  **\<SendPicture xmlns = « http://tempuri.org/ »\> \<flux\>*réel base 64 encodé des données image binaires*\</stream\>\</SendPicture\>**  
   
     6.  Dans le **propriétés de l’emplacement de réception** boîte de dialogue, cliquez sur **OK**.  
   

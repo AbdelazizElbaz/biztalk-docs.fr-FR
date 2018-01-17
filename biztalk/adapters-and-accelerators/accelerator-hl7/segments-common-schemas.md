@@ -17,13 +17,13 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 50bdcacfe1459ba4a236c3701b786d97217db8ef
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="segments-common-schemas"></a>Les segments de schémas courants
-Le  **segments_\<*version*\>datatypes_ le fichier .xsd ** inclut\<*version*\>.xsd et contient la définition de tous les segments liées à la version HL7. Chaque schéma de message utilise segments_\<*version*\>.xsd. Message HL7 définitions sont dans chaque sous-dossier et comprennent segments_\<*version*\>.xsd. Les tables de base de données SegmentDataElements et DataElements accès génèrent le segments_\<*version*\>le fichier .xsd, qui inclut un pointeur vers le fichier de schéma Fields.xsd pour tous les types de données. Le format de nom de fichier de schéma est la suivante :  
+Le **segments_\<*version*\>.xsd** fichier inclut datatypes_\<*version*\>.xsd et contient le définition de tous les segments liées à la version HL7. Chaque schéma de message utilise segments_\<*version*\>.xsd. Message HL7 définitions sont dans chaque sous-dossier et comprennent segments_\<*version*\>.xsd. Les tables de base de données SegmentDataElements et DataElements accès génèrent le segments_\<*version*\>le fichier .xsd, qui inclut un pointeur vers le fichier de schéma Fields.xsd pour tous les types de données. Le format de nom de fichier de schéma est la suivante :  
   
 ```  
   

@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: a5749166c8a9b34d5e5a04849c4179ac4427201c
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="step-5-create-the-send-port-for-the-message-batch"></a>Étape 5 : Créer le Port d’envoi pour le lot de messages
 Dans cette étape, vous créez un port d’envoi pour remettre le lot de messages que vous créez au tiers de destination. Il s’agit d’un port statique unidirectionnel avec un type d’adaptateur FILE. Vous désignez un dossier de fichiers pour la destination (\Tutorial_BatchMsgDrop) où [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] supprimera le fichier de commandes de message. Vous définissez un filtre pour le port qui indique le type de lots de messages envoie les ports. Le filtre spécifie la destination des Tutorial_BatchDest et le type de message de OutboundBatch.  
@@ -40,7 +40,7 @@ Dans cette étape, vous créez un port d’envoi pour remettre le lot de message
   
     |Utiliser|Pour effectuer cette opération|  
     |--------------|----------------|  
-    |**Dossier de destination**|Accédez à  **\<* lecteur*:\>\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_ BatchMsgDrop **. Il s’agit du chemin d’accès à l’emplacement sur le système de fichiers ou le partage public auquel [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] réécrit le fichier contenant le lot de messages.|  
+    |**Dossier de destination**|Accédez à  **\< *lecteur*:\>\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_BatchMsgDrop**. Il s’agit du chemin d’accès à l’emplacement sur le système de fichiers ou le partage public auquel [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] réécrit le fichier contenant le lot de messages.|  
     |**Nom de fichier**|Type **%MessageID%.txt** (remplacez l’extension .xml avec l’extension .txt).|  
     |**Mode de copie**|Sélectionnez **créer de nouveaux**.|  
   
@@ -54,11 +54,11 @@ Dans cette étape, vous créez un port d’envoi pour remettre le lot de message
     |--------------|----------------|  
     |**Propriété**|Cliquez sur le champ sous **propriété**, puis sélectionnez **Microsoft.Solutions.BTAHL7.BatchOrchestration.Party** dans la liste déroulante.|  
     |**Opérateur**|Laissez  **==**  comme l’opérateur.|  
-    |**Valeur**|Type **Tutorial_BatchDest**.|  
+    |**Value**|Type **Tutorial_BatchDest**.|  
     |**Regrouper par**|Sélectionnez **et** dans la liste déroulante.|  
-    |**Propriété**|Sélectionnez **BTAHL7Schemas.BTAHL7MessageType**.|  
+    |**Propriété**|Select **BTAHL7Schemas.BTAHL7MessageType**.|  
     |**Opérateur**|Laissez  **==**  comme l’opérateur.|  
-    |**Valeur**|Type **OutboundBatch**.|  
+    |**Value**|Type **OutboundBatch**.|  
   
 7.  Appuyez sur **Entrée**. Dans le volet du bas de la boîte de dialogue, vérifiez que vous avez correctement entré l’expression de filtre, puis cliquez sur **OK**.  
   

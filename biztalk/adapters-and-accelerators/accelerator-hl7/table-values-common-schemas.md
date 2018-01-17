@@ -17,17 +17,17 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: a55491f0a44bec6a5cd5eaf4fe120f693b3996c5
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="table-values-common-schemas"></a>Table les valeurs des schémas courants
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator pour HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) génère le  **tablevalues_*\<version\>*.xsd ** de fichier pour chaque version HL7 et recherche le fichier à la racine de la Dossier spécifique à la version de HL7. Le fichier de schéma commune du type de données référence le fichier de schéma table les valeurs courantes.  
+[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator pour HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) génère le **tablevalues_*\<version\>*.xsd** du fichier pour chaque version HL7 et recherche le fichier à la racine de la HL7 dossier de version spécifique. Le fichier de schéma commune du type de données référence le fichier de schéma table les valeurs courantes.  
   
  Les valeurs dans ces tables sont sous la forme d’énumérations. Chaque énumération définit les valeurs qui sont acceptables dans un ou plusieurs champs des schémas de message. Vous pouvez voir la table qui s’applique à un nœud d’un schéma de message en ouvrant le schéma dans l’Éditeur BizTalk, en cliquant sur un nœud et en examinant le **Base Data Type** propriété dans le volet Propriétés.  
   
- Vous ne serez pas en mesure de voir quels sont les valeurs acceptables pour ce nœud, toutefois, en affichant l’énumération dans le volet Propriétés pour le nœud de schéma de message. Il s’agit, car le fichier de schéma commune table valeurs définit l’énumération. Pour afficher les énumérations, cliquez sur  **tablevalues_*\<version\>*.xsd ** dans le schéma de l’arborescence dans l’Éditeur BizTalk, puis cliquez sur le bouton de sélection (**...** ) bouton sur la ligne de l’énumération dans le volet Propriétés.  
+ Vous ne serez pas en mesure de voir quels sont les valeurs acceptables pour ce nœud, toutefois, en affichant l’énumération dans le volet Propriétés pour le nœud de schéma de message. Il s’agit, car le fichier de schéma commune table valeurs définit l’énumération. Pour afficher les énumérations, cliquez sur **tablevalues_*\<version\>*.xsd** dans le schéma de l’arborescence dans l’Éditeur BizTalk, puis cliquez sur le bouton de sélection (**...** ) bouton sur la ligne de l’énumération dans le volet Propriétés.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Fichiers de schéma HL7 2.X communs](../../adapters-and-accelerators/accelerator-hl7/hl7-2-x-common-schema-files.md)   

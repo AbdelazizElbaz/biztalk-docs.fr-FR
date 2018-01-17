@@ -20,10 +20,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 8c742d21dd2f2e1d95f697beea3d5d5dfa0461d2
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="step-14-publish-the-orchestration-as-a-web-service"></a>Étape 14 : Publier l’Orchestration en tant que Service Web
 Dans cette étape, vous utilisez l’Assistant de publication des Services Web BizTalk pour publier une orchestration en tant que service Web.  
@@ -44,7 +44,7 @@ Dans cette étape, vous utilisez l’Assistant de publication des Services Web B
   
 3.  Sur le **créer un Service Web** page, sélectionnez **publier des orchestrations BizTalk en tant que services web**, puis cliquez sur **suivant**.  
   
-4.  Sur le **BizTalk Assembly** page, dans le **fichier d’assembly BizTalk (\*.dll)** champ, tapez ou recherchez  **\<* lecteur* \>: \Tutorial\BTAHL7V22Common\BTAHL7 Project\bin\development**, cliquez sur **BTAHL7 Project.dll**, cliquez sur **ouvrir**, puis cliquez sur **suivant**.  
+4.  Sur le **BizTalk Assembly** page, dans le **fichier d’assembly BizTalk (\*.dll)** champ, tapez ou recherchez  **\< *lecteur* \>: \Tutorial\BTAHL7V22Common\BTAHL7 Project\bin\development**, cliquez sur **BTAHL7 Project.dll**, cliquez sur **ouvrir**, puis cliquez sur **suivant**.  
   
 5.  Sur le **Orchestrations et Ports** , vérifiez que tous les nœuds sont sélectionnés, puis cliquez sur **suivant**.  
   

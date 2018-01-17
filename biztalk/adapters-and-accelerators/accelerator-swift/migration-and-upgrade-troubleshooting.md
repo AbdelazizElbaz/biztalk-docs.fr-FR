@@ -18,10 +18,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 5c0e2a18b1cdba47c999150b5bc52c0b016aec61
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="migration-and-upgrade-troubleshooting"></a>Migration et la résolution des problèmes de mise à niveau
 ## <a name="assemblies-need-to-be-undeployed-before-an-upgrade"></a>Les assemblys doivent être annulé avant une mise à niveau  
@@ -68,12 +68,12 @@ ms.lasthandoff: 11/28/2017
   
 1.  Cliquez sur le dossier du Service, cliquez sur **propriétés**, puis cliquez sur le **sécurité** onglet.  
   
-2.  Dans le volet de noms utilisateur ou de groupe, de la boîte de dialogue Propriétés du Service, cliquez sur **ajouter**, entrez   ***\<nom du serveur\>*\A4SWIFT administrateurs**, puis cliquez sur **OK**.  
+2.  Dans le volet de noms utilisateur ou de groupe, de la boîte de dialogue Propriétés du Service, cliquez sur **ajouter**, entrez ***\<nom du serveur\>* \A4SWIFT administrateurs**, puis cliquez sur **OK** .  
   
     > [!NOTE]
-    >  Si le groupe d’administrateurs d’A4SWIFT est un groupe de domaine, entrez   ***\<nom de domaine\>*\A4SWIFT administrateurs**.  
+    >  Si le groupe d’administrateurs d’A4SWIFT est un groupe de domaine, entrez ***\<nom de domaine\>* \A4SWIFT administrateurs**.  
   
-3.  Répétez l’étape 2 pour   ***\<nom du serveur\>*\A4SWIFT utilisateurs**, ou  **\<* nom de domaine* \>\A4SWIFT utilisateurs ** si le groupe utilisateurs d’A4SWIFT est un groupe de domaine.  
+3.  Répétez l’étape 2 pour ***\<nom du serveur\>* \A4SWIFT utilisateurs**, ou  **\< *nom de domaine*\>\A4SWIFT utilisateurs** si le Groupe d’utilisateurs d’A4SWIFT est un groupe de domaine.  
   
 4.  Dans le volet noms d’utilisateur ou de groupe, sélectionnez **A4SWIFT administrateurs**. Dans le volet d’autorisations, sélectionnez **autoriser** pour **contrôle total**.  
   

@@ -13,15 +13,15 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 6d463823a7038e1ead7e2de323da97eda372db76
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="how-to-update-a-map-using-side-by-side-versioning"></a>Comment mettre à jour un mappage à l’aide de la gestion des versions côte à côte
 Certains artefacts BizTalk, tels que des cartes, sont choisis par nom fort qualifié complet (FQSN), dans ce cas les liaisons incluent la version utilisée. Cela permet à deux ou plusieurs mappages de coexister côte à côte dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] console d’Administration. Par conséquent, vous pouvez sélectionner un des mappages pour le mappage dans les propriétés d’emplacement de réception entrant ou sortant dans les propriétés de port d’envoi.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Configuration requise  
  Pour effectuer les procédures décrites dans cette rubrique, vous devez être connecté avec un compte qui est membre du groupe Administrateurs de BizTalk Server.  
   
 ### <a name="to-add-a-second-map-side-by-side-to-an-existing-map"></a>Pour ajouter une deuxième carte côte à côte pour un mappage existant  

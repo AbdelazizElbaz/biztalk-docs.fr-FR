@@ -14,10 +14,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 48a35373735102bd75d1c388da29b06d4392ba18
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="test-a-biztalk-web-service"></a>Tester un Service Web BizTalk
 
@@ -72,13 +72,13 @@ Vous pouvez tester votre service Web publié sans écrire d'application cliente 
   
 #### <a name="access-a-web-service-with-internet-explorer"></a>Accéder à un service Web avec Internet Explorer  
   
--   Dans Internet Explorer, dans le **adresse** zone, tapez l’URL du service Web en utilisant le format  **http://*nom_serveur*/*apppath* / *webservicename*.asmx **.  
+-   Dans Internet Explorer, dans le **adresse** zone, tapez l’URL du service Web en utilisant le format **http://*nom_serveur*/*apppath* / *webservicename*.asmx**.  
   
     |Paramètre|Valeur|  
     |---------------|-----------|  
-    |***nom du serveur***|Nom du serveur sur lequel vous avez déployé le service Web XML.|  
-    |***Chemin d’application***|Nom du répertoire virtuel et chemin d'accès à l'application Web|  
-    |***WebServiceName.asmx***|Nom du fichier .asmx de service Web XML|  
+    |***servername***|Nom du serveur sur lequel vous avez déployé le service Web XML.|  
+    |***Apppath***|Nom du répertoire virtuel et chemin d'accès à l'application Web|  
+    |***webservicename.asmx***|Nom du fichier .asmx de service Web XML|  
   
  La description du service Web vous montre toutes les méthodes de service Web prises en charge par le service Web particulier. La page de description du service Web contient des liens pour chaque méthode Web disponible et la description du service Web.  
   
@@ -101,11 +101,11 @@ Vous pouvez tester votre service Web publié sans écrire d'application cliente 
   
     |Paramètre|Valeur|  
     |---------------|-----------|  
-    |***nom du serveur***|Nom du serveur sur lequel vous avez déployé le service Web XML.|  
-    |***Chemin d’application***|Nom du répertoire virtuel et chemin d'accès à l'application Web|  
-    |***WebServiceName.asmx***|Nom du fichier .asmx de service Web XML|  
+    |***servername***|Nom du serveur sur lequel vous avez déployé le service Web XML.|  
+    |***Apppath***|Nom du répertoire virtuel et chemin d'accès à l'application Web|  
+    |***webservicename.asmx***|Nom du fichier .asmx de service Web XML|  
     |***MethodName***|Nom d'une méthode publique que le service Web XML expose. Si vous n'indiquez rien, la page de description du service Web XML apparaît, répertoriant chaque méthode publique disponible dans le fichier .asmx. (Facultatif)|  
-    |***paramètre***|Nom du paramètre approprié et valeur des paramètres requis par votre méthode. Si vous n'indiquez rien, la page de description du service Web XML apparaît, répertoriant chaque méthode publique disponible dans le fichier .asmx. (Facultatif)|  
+    |***parameter***|Nom du paramètre approprié et valeur des paramètres requis par votre méthode. Si vous n'indiquez rien, la page de description du service Web XML apparaît, répertoriant chaque méthode publique disponible dans le fichier .asmx. (Facultatif)|  
   
     > [!NOTE]
     >  Dans cette syntaxe, le nom de la méthode de service Web XML est sensible à la casse, contrairement aux noms du serveur, du projet et du service Web XML.  

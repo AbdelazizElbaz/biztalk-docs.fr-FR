@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 163b06706652b1f65b9a76e3feea8911a2ca4c88
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="how-to-update-an-assembly"></a>Comment mettre à jour un Assembly
 Cette rubrique décrit comment mettre à jour la version d’un assembly et l’application qu’un assembly est déployé à l’aide de Visual Studio 2010.  
@@ -24,7 +24,7 @@ Cette rubrique décrit comment mettre à jour la version d’un assembly et l’
 > [!NOTE]  
 >  Si vous mettez à jour un assembly avec une version plus récente, il n'est pas nécessaire de redémarrer l'application.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Configuration requise  
  Pour effectuer les procédures décrites dans cette rubrique, vous devez être connecté avec un compte qui est membre du groupe Administrateurs de BizTalk Server.  
   
 ## <a name="updating-an-assembly"></a>Mise à jour d’un Assembly  

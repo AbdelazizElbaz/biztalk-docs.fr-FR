@@ -17,10 +17,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: d2f2de6a4c4cae93db90f0fb2cfc79321bfc7b3e
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="configure-the-file-adapter"></a>Configurer l’adaptateur de fichier
 Comment configurer l’adaptateur de fichier, de lire les recommandations de sécurité et d’afficher les autorisations requises.
@@ -70,13 +70,13 @@ Le compte d’utilisateur instance hôte utilisé par le gestionnaire requiert l
 > [!NOTE]
 >  Avant d’exécuter la procédure suivante, vous devez avoir déjà ajouté un unidirectionnel port de réception. Consultez [la création d’un Port de réception](../core/how-to-create-a-receive-port.md).  
   
-1.  Dans la console Administration de BizTalk Server, développez [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], développez **groupe BizTalk**, développez **Applications**, puis développez l’application sous laquelle créer un emplacement de réception.  
+1.  Dans la console Administration de BizTalk Server, développez successivement [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], **Groupe BizTalk**, **Applications**, puis l’application sous laquelle créer un emplacement de réception.  
   
 2.  Dans le volet gauche, cliquez sur le **Ports de réception** nœud. Dans le volet droit, cliquez avec le bouton droit sur le port de réception associé à un emplacement de réception existant ou auquel associer un nouvel emplacement, puis cliquez sur **Propriétés**.  
   
-3.  Dans le volet gauche de la **propriétés du Port de réception** boîte de dialogue, sélectionnez **emplacements de réception**et sur le volet droit, double-cliquez sur un existant emplacement de réception ou cliquez sur **nouveau** à créer un nouvel emplacement de réception.  
+3.  Dans le volet gauche de la **propriétés du Port de réception** boîte de dialogue, sélectionnez **emplacements de réception**et sur le volet droit, double-cliquez sur un existant emplacement de réception ou cliquez sur **nouveau** pour créer un nouvel emplacement de réception.  
   
-4.  Dans le **propriétés de l’emplacement de réception** boîte de dialogue le **Transport** section, sélectionnez **fichier** dans la liste déroulante, puis tapez **configurer**  pour configurer les propriétés de transport pour l’emplacement de réception.  
+4.  Dans le **propriétés de l’emplacement de réception** boîte de dialogue le **Transport** section, sélectionnez **fichier** dans la liste déroulante, puis tapez **configurer** pour configurer les propriétés de transport pour l’emplacement de réception.  
   
 5.  Dans le **général** onglet, procédez comme suit :  
   
@@ -122,7 +122,7 @@ Le compte d’utilisateur instance hôte utilisé par le gestionnaire requiert l
     |**Emplacement de destination**|Obligatoire. Entrez le chemin d’accès à l’emplacement sur le système de fichiers, partage public ou le partage de fichiers Azure pour écrire les messages de sortie. Vous pouvez entrer le chemin d’accès directement dans le **l’emplacement de Destination**, ou sélectionnez-le dans le système de fichiers à l’aide de la **Parcourir** bouton. Lorsque vous parcourez le dossier dans le **rechercher un dossier** boîte de dialogue, vous pouvez également créer un nouveau dossier en cliquant sur **créer un nouveau dossier**.<br /><br /> Si vous utilisez un partage de stockage de fichiers Azure, entrez `\\yourfilestoragename.file.core.windows.net\yourfilesharename`.<br /><br /> **Type :** chaîne <br /><br />**Remarque :** l’URI pour un envoi de port ou de réception emplacement ne peut pas dépasser 256 caractères.|  
     |**Nom de fichier**|Indique le nom du fichier dans lequel le gestionnaire d'envoi FILE écrit le message.<br /><br /> Pour connaître les restrictions sur cette propriété, y compris l’utilisation des macros dans le nom de fichier, consultez [Restrictions relatives à la configuration de l’adaptateur de fichier](../core/restrictions-when-configuring-the-file-adapter.md).|  
     |**Mode de copie**|Définir le mode de copie à utiliser lors de l’écriture d’un message dans un fichier. Les valeurs valides sont :<br /><br /> **Ajouter.** le gestionnaire d'envoi FILE ouvre un fichier s'il existe et ajoute un message à la fin du fichier. Si le fichier n'existe pas, il le crée.<br /><br /> **Remplacer**. le gestionnaire d'envoi FILE ouvre un fichier s'il existe et remplace son contenu. Si le fichier n'existe pas, il le crée.<br /><br /> **Créer de nouveaux**. si aucun fichier n'existe, le gestionnaire d'envoi FILE en crée un et y enregistre des éléments. si le fichier existe déjà, il signale une erreur et applique la procédure logique commune pour les nouvelles tentatives sur l'adaptateur pour les ports d'envoi. Il s'agit d'un mode de copie par défaut pour le gestionnaire d'envoi FILE.|  
-    |**Autoriser le Cache lors de l’écriture**|Précise si la mise en cache du système de fichiers doit être appliquée lors de l'écriture d'un message dans un fichier.<br /><br /> Les options admises sont les suivantes :<br /><br /> **False** n’utilisez pas le cache du système de fichiers.<br /><br /> **True** utiliser le cache du système de fichiers.<br /><br /> **Valeur par défaut :** False **Important :** définissant cette propriété sur **True** peut augmenter les performances de l’adaptateur File au risque de perdre des données lors d’une perte d’alimentation et non toutes les données sont écrites sur le disque.|  
+    |**Autoriser le Cache lors de l’écriture**|Précise si la mise en cache du système de fichiers doit être appliquée lors de l'écriture d'un message dans un fichier.<br /><br /> Les options admises sont les suivantes :<br /><br /> **False** n’utilisez pas le cache du système de fichiers.<br /><br /> **True** utiliser le cache du système de fichiers.<br /><br /> **Valeur par défaut :** False **Important :** définissant cette propriété sur **True** peut augmenter les performances de l’adaptateur File au risque de perdre des données lorsqu’il existe une perte d’alimentation et de toutes les données sont écrites sur le disque.|  
     |**Utiliser un fichier temporaire lors de l’écriture**|Définit si le fichier de sortie doit d'abord être écrit dans un fichier temporaire, puis renommé une fois l'opération d'écriture terminée. Si cette option est activée, le fichier temporaire doit être créé avec l’extension **BTS-WIP**.<br /><br /> Les options valides sont<br /><br /> **True** l’adaptateur File crée un fichier temporaire lors de l’écriture dans le dossier cible.<br /><br /> **False** l’adaptateur File ne crée pas un fichier temporaire lors de l’écriture dans le dossier cible.<br /><br /> **Valeur par défaut :** False **Remarque :** cette option est disponible uniquement lorsque le **CopyMode** est définie sur une valeur de **créer un nouveau**|  
   
 4.  Sur le **authentification** onglet, procédez comme suit :  
@@ -157,7 +157,7 @@ Le compte d’utilisateur instance hôte utilisé par le gestionnaire requiert l
   
 ## <a name="configure-the-receive-or-send-handler"></a>Configurer la réception ou le Gestionnaire d’envoi
   
-1.  Dans la console Administration de BizTalk Server, développez **Administration de BizTalk Server**, développez **groupe BizTalk**, développez **paramètres de plateforme**, puis cliquez sur  **Adaptateurs**.  
+1.  Dans la console Administration de BizTalk Server, développez **Administration de BizTalk Server**, développez **groupe BizTalk**, développez **paramètres de plateforme**, puis cliquez sur **cartes**.  
   
 2.  Dans la liste développée des adaptateurs, cliquez sur **fichier**, dans le volet droit, cliquez sur la réception ou envoi gestionnaire que vous souhaitez configurer. Sélectionnez **propriétés**.  
   
@@ -176,4 +176,4 @@ Le compte d’utilisateur instance hôte utilisé par le gestionnaire requiert l
 ## <a name="see-also"></a>Voir aussi
 
  [Ports pour les serveurs de l’envoi et la réception](../core/ports-for-the-receive-and-send-servers.md)   
- [Autorisations de sécurité minimales](../core/minimum-security-user-rights.md)
+ [Droits d’utilisateur de sécurité minimales](../core/minimum-security-user-rights.md)

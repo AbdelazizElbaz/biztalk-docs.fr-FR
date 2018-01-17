@@ -18,10 +18,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: dae9148547f527d29238b6080cd499be8da7b7e6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="creating-declared-z-segments"></a>Création de Segments de Z déclaré
 Vous pouvez créer des segments Z déclarés à tout niveau d’un schéma (contrairement à non déclaré Z des segments, qui doit être la dernière partie d’un message multipartie, suivant le corps).  
@@ -52,4 +52,4 @@ Vous pouvez créer des segments Z déclarés à tout niveau d’un schéma (cont
  [Création de Types de données personnalisés dans les schémas](../../adapters-and-accelerators/accelerator-hl7/creating-custom-data-types-in-schemas.md)   
  [Création de Tables personnalisées dans les schémas](../../adapters-and-accelerators/accelerator-hl7/creating-custom-tables-in-schemas.md)   
  [Extension des énumérations](../../adapters-and-accelerators/accelerator-hl7/extending-enumerations.md)   
- [La gestion des Segments de Z non déclaré](../../adapters-and-accelerators/accelerator-hl7/handling-undeclared-z-segments.md)
+ [Gestion des segments Z non déclarés](../../adapters-and-accelerators/accelerator-hl7/handling-undeclared-z-segments.md)

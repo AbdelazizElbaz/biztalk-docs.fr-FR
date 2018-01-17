@@ -17,10 +17,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 54eff7c2a455d9f1129bb40d83c002bac92841bd
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="step-17-create-the-wsclient-application"></a>Étape 17 : Créer l’Application WSClient
 WSClient.exe (client de service Web) est une application console écrite en [!INCLUDE[btsVCSharp](../../includes/btsvcsharp-md.md)] qui montre comment envoyer des données à l’orchestration que vous avez publiée en tant qu’un service Web dans les étapes précédentes. L’application WSClient accepte quatre paramètres dans l’ordre d’entrée : patient prénom, deuxième prénom, nom et dernier numéro de sécurité sociale, respectivement. Pour envoyer des informations sur les patients à votre service Web, utilisez la syntaxe de ligne de commande suivante :  
@@ -35,7 +35,7 @@ wsclient john henry smith 123456789
   
 2.  Dans le **ajouter un nouveau projet** boîte de dialogue le **Types de projets** volet, cliquez sur **Visual C#** et dans le **modèles** volet, cliquez sur **Application console**.  
   
-3.  Dans le **nom** , tapez **WSClient**. Dans le **emplacement** champ, accédez à  **\<* lecteur*\>: \Tutorial**, puis cliquez sur **OK**. L’Explorateur de solutions ajoute WSClient à l’arborescence, et le fichier Program.cs s’affiche.  
+3.  Dans le **nom** , tapez **WSClient**. Dans le **emplacement** champ, accédez à  **\< *lecteur*\>: \Tutorial**, puis cliquez sur **OK**. L’Explorateur de solutions ajoute WSClient à l’arborescence, et le fichier Program.cs s’affiche.  
   
 4.  Dans l’Explorateur de solutions, cliquez sur **WSClient**, puis cliquez sur **ajouter une référence Web**.  
   

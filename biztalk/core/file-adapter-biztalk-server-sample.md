@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: de68c57c6b435f85edf630a7b224c5d58ffd0cd6
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="file-adapter-biztalk-server-sample"></a>Adaptateur file (exemple BizTalk Server)
 L’exemple d’adaptateur de fichier est écrit en Microsoft Visual c# .NET pour fonctionner avec Microsoft BizTalk Server. Il fournit un code pour créer un adaptateur dynamique ou un adaptateur statique.  La procédure suivante ne présente cependant que l'adaptateur statique. Un adaptateur statique est un adaptateur comprenant un jeu statique de schémas et aucune interface utilisateur personnalisée. Un adaptateur dynamique possède une interface utilisateur personnalisée et, potentiellement, un jeu dynamique de schémas. Les adaptateurs statiques et dynamiques utilisent tous deux l'assistant Ajout d'adaptateur pour ajouter leurs schémas à un projet BizTalk.  
@@ -150,7 +150,7 @@ L’exemple d’adaptateur de fichier est écrit en Microsoft Visual c# .NET pou
     |--------------|----------------|  
     |**Nom**|Type **statique**.|  
     |**Adaptateur**|Sélectionnez **Static DotNetFile** dans la liste déroulante.|  
-    |**Commentaire**|Type **exemple d’adaptateur**.|  
+    |**Commentaireaire**|Type **exemple d’adaptateur**.|  
   
 5.  Cliquez sur **OK**.  
   
@@ -172,11 +172,11 @@ L’exemple d’adaptateur de fichier est écrit en Microsoft Visual c# .NET pou
   
 2.  Créez les dossiers suivants sur le lecteur d’installation de BizTalk Server :  
   
-    -   *\<lecteur\>*:**\Temp**  
+    -   *\<drive\>*:**\Temp**  
   
-    -   *\<lecteur\>*:**\Temp\Send**  
+    -   *\<drive\>*:**\Temp\Send**  
   
-    -   *\<lecteur\>*:**\Temp\Receive**  
+    -   *\<drive\>*:**\Temp\Receive**  
   
 3.  Pour fermer l’Explorateur Windows, dans le **fichier** menu, cliquez sur **fermer**.  
   
@@ -196,7 +196,7 @@ L’exemple d’adaptateur de fichier est écrit en Microsoft Visual c# .NET pou
   
 7.  Cliquez sur **OK**.  
   
-8.  Développez le  **groupe BizTalk [*nom du serveur*] ** nœud dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration de la console, développez le **Applications** nœud, développez le  **BizTalk Application 1** nœud.  
+8.  Développez le **groupe BizTalk [*nom du serveur*]** nœud dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration de la console, développez le **Applications** nœud, développez le  **BizTalk Application 1** nœud.  
   
 9. Avec le bouton droit le **Ports d’envoi** nœud, puis cliquez sur **nouveau**, sélectionnez **Port d’envoi unidirectionnel statique**, puis cliquez sur **OK**.  
   
@@ -205,7 +205,7 @@ L’exemple d’adaptateur de fichier est écrit en Microsoft Visual c# .NET pou
     |Utiliser|Pour effectuer cette opération|  
     |--------------|----------------|  
     |**Nom**|Type **AdapterSend**.|  
-    |**Type de transport**|Sélectionnez **statique** dans la liste déroulante, cliquez sur **configurer**.<br /><br /> -Dans le **active** , tapez   ***\<lecteur\>*: \Temp\Send**.<br />-Dans le **Mode fichier** boîte, sélectionnez **CreateNew**.<br />-Dans le **nom de fichier** , tapez **%MessageID%.xml**.<br />-Cliquez sur **OK**.<br />-La **URI** champ doit afficher   ***\<lecteur\>*: \Temp\Send\\%MessageID%.xml**.|  
+    |**Type de transport**|Sélectionnez **statique** dans la liste déroulante, cliquez sur **configurer**.<br /><br /> -Dans le **active** , tapez ***\<lecteur\>*:\Temp\Send**.<br />-Dans le **Mode fichier** boîte, sélectionnez **CreateNew**.<br />-Dans le **nom de fichier** , tapez **%MessageID%.xml**.<br />-Cliquez sur **OK**.<br />-La **URI** champ doit afficher ***\<lecteur\>*:\Temp\Send\\%MessageID%.xml**.|  
     |**Pipeline d’envoi**|Sélectionnez **PassThruTransmit (Microsoft.BizTalk.DefaultPipelines.PassThruTransmit)**, puis cliquez sur **OK**.|  
   
 11. Sous le **BizTalk Application 1** cliquez sur le nœud **Ports de réception**, puis sélectionnez **Port de réception unidirectionnel / nouveau**.  
@@ -224,7 +224,7 @@ L’exemple d’adaptateur de fichier est écrit en Microsoft Visual c# .NET pou
     |--------------|----------------|  
     |**Nom**|Type **AdapterReceiveLocation**|  
     |**Type de transport**|Sélectionnez **statique** à partir de la liste déroulante et appuyez sur **configurer** pour accéder à ces propriétés restantes.|  
-    |**URI**|-Cliquez sur le bouton de sélection (**...** ).<br />-Dans le **nombre de fichiers dans le lot** , tapez **20**.<br />-Dans le **active** , tapez   ***\<lecteur\>*: \Temp\Receive**.<br />-Vérifiez les **masque de fichier** est définie sur  **\*.xml**.<br />-Dans le **fréquence d’interrogation** , tapez **5**, puis cliquez sur **OK**.<br />-Vérifiez les **URI** étiquette contienne   ***\<lecteur\>*: \Temp\Receive\\\*.xml**.|  
+    |**URI**|-Cliquez sur le bouton de sélection (**...** ).<br />-Dans le **nombre de fichiers dans le lot** , tapez **20**.<br />-Dans le **active** , tapez ***\<lecteur\>*:\Temp\Receive**.<br />-Vérifiez les **masque de fichier** est définie sur  **\*.xml**.<br />-Dans le **fréquence d’interrogation** , tapez **5**, puis cliquez sur **OK**.<br />-Vérifiez les **URI** étiquette contienne ***\<lecteur\>*:\Temp\Receive\\\*.xml**.|  
     |**Gestionnaire de réception**|Sélectionnez **BizTalkServerApplication** dans la liste déroulante.|  
     |**Pipeline de réception**|Sélectionnez **XMLReceive** dans la liste déroulante.|  
   

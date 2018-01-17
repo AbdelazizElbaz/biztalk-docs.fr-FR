@@ -18,10 +18,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: a8811f1dd056ca5a4ea4582d593af30e2ffc879f
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="deploying-a4swift-envelope-schemas"></a>Déploiement des schémas d’enveloppe A4SWIFT
 Chaque fois que vous configurez Message Repair et New Submission, vous devez inclure les schémas d’enveloppe dans les projets de schéma. Un schéma d’enveloppe, tels que EnvelopeMT103.xsd, est requis pour écrire sur site MRSR.  
@@ -47,7 +47,7 @@ Chaque fois que vous configurez Message Repair et New Submission, vous devez inc
   
 3.  Dans la boîte de dialogue Ajouter une référence, cliquez sur le **Parcourir** balise.  
   
-4.  Dans la boîte de dialogue Sélectionner le composant, ouvrez le **Regarder dans** liste déroulante. Déplacer vers   ***\<lecteur\>*: \Program Files\Microsoft BizTalk Accelerator pour SWIFT \<version\> Message Pack\Assemblies**. Sélectionnez **Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas.dll** dans la liste des assemblys, puis cliquez sur **ajouter**.  
+4.  Dans la boîte de dialogue Sélectionner le composant, ouvrez le **Regarder dans** liste déroulante. Déplacer vers ***\<lecteur\>*:\Program Files\Microsoft BizTalk Accelerator pour SWIFT \<version\> Message Pack\Assemblies**. Sélectionnez **Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas.dll** dans la liste des assemblys, puis cliquez sur **ajouter**.  
   
 5.  Dans le **ajouter une référence** boîte de dialogue, cliquez sur **OK**.  
   
@@ -62,7 +62,7 @@ Chaque fois que vous configurez Message Repair et New Submission, vous devez inc
   
 8.  Dans l’Explorateur de solutions, cliquez sur votre projet, pointez sur **ajouter**, puis cliquez sur **ajouter un élément existant**.  
   
-9. Si vous utilisez la fonctionnalité de Message Repair et New Submission, dans la boîte de dialogue Ajouter un élément existant dans le **Regarder dans** zone déroulante, accédez à  **\<* lecteur* \>: \Microsoft BizTalk Accelerator pour SWIFT \<version\> Message Pack\SWIFT Messages\A4SWIFT-SRG\<version\>\Unparsed Message **. Sélectionnez **EnvelopeUnparsedMessage.xsd**, puis cliquez sur **ajouter**.  
+9. Si vous utilisez la fonctionnalité de Message Repair et New Submission, dans la boîte de dialogue Ajouter un élément existant dans le **Regarder dans** zone déroulante, accédez à  **\< *lecteur*\>: \ Microsoft BizTalk Accelerator pour SWIFT \<version\> Message Pack\SWIFT Messages\A4SWIFT-SRG\<version\>\Unparsed Message**. Sélectionnez **EnvelopeUnparsedMessage.xsd**, puis cliquez sur **ajouter**.  
   
 10. Dans l'Explorateur de solutions, cliquez avec le bouton droit sur le nom du projet, puis cliquez sur **Générer**.  
   

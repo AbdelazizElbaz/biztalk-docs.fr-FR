@@ -14,10 +14,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: d135960143fed33d1ce4847c681f5b1134489b65
-ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="configure-automatic-deployment-with-visual-studio-team-services-in-biztalk-server"></a>Configurer le déploiement automatique avec Visual Studio Team Services dans BizTalk Server
 
@@ -49,7 +49,7 @@ Nous vous montrons comment le programme d’installation de VSTS avec [!INCLUDE[
 * Avec Feature Pack 1, le déploiement automatique avec VSTS est effectué sur une [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] dans le groupe. Assurez-vous que l’ordinateur dispose de Visual Studio et le [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] outils de développement et Kit de développement SDK. Consultez le [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] [matérielle et logicielle requise](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md).
 * Avec Feature Pack 2, le déploiement automatique avec VSTS peut être effectué à l’aide [groupes de déploiement](https://docs.microsoft.com/vsts/build-release/concepts/definitions/release/deployment-groups/howto-deployment-groups). À l’aide de groupes de déploiement, vous pouvez déployer vos applications à plusieurs serveurs BizTalk Server dans le groupe de déploiement.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 
 * Installer [Feature Pack 2](https://aka.ms/bts2016fp2) sur votre[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
 * Certains expérience et la base de connaissances avec la création et l’utilisation avec les définitions de VSTS. Si vous êtes débutant VSTS, il peut s’agir de bonnes ressources : 

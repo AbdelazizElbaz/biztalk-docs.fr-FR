@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: b00fc7d49024cec6f9c300444646da82069e16cc
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="lesson-2-adding-project-references"></a>Leçon 2 : Ajout de références de projet
 Vous ajoutez des références de projet pour vos pipelines peuvent accéder aux schémas runtime par défaut situés dans le fichier Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas.dll. Ce fichier d’assembly contient le schéma d’en-tête avec les propriétés promues requises pour la résolution de type de message.  
@@ -32,7 +32,7 @@ Vous ajoutez des références de projet pour vos pipelines peuvent accéder aux 
   
 2.  Dans la boîte de dialogue Ajouter une référence, cliquez sur le **Parcourir** onglet.  
   
-3.  Accédez à  **\<* lecteur*\>: \Program Files\Microsoft BizTalk Accelerator pour SWIFT\Assemblies **.  
+3.  Accédez à  **\< *lecteur*\>: \Program Files\Microsoft BizTalk Accelerator pour SWIFT\Assemblies**.  
   
 4.  Sélectionnez le **Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas.dll** fichier.  
   

@@ -13,16 +13,16 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: ca2bc3aa739bf6914ea9943d84d58d44b1506323
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="configure-the-fileact-and-interact-adapter"></a>Configurer l’Adaptateurs FileAct et interagir de carte
 Configurer les différents artefacts utilisés par le [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)] runtime. 
 
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Configuration requise  
    
 -   Installer le[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]
   

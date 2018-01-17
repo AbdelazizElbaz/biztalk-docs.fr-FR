@@ -18,10 +18,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 62cb7d6181c7be44f7095a6c1d1149132df4e21e
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="installation-and-configuration-troubleshooting"></a>Installation et la résolution des problèmes de Configuration
 ## <a name="setup-is-unable-to-deploy-the-runtimeschemas-assembly"></a>Le programme d’installation ne parvient pas à déployer l’assembly RuntimeSchemas  
@@ -95,12 +95,12 @@ ms.lasthandoff: 11/28/2017
   
 1.  Cliquez sur le dossier du Service, cliquez sur **propriétés**, puis cliquez sur le **sécurité** onglet.  
   
-2.  Dans le volet de noms utilisateur ou de groupe, de la boîte de dialogue Propriétés du Service, cliquez sur **ajouter**, entrez   ***\<nom du serveur\>*\A4SWIFT administrateurs**, puis cliquez sur **OK**.  
+2.  Dans le volet de noms utilisateur ou de groupe, de la boîte de dialogue Propriétés du Service, cliquez sur **ajouter**, entrez ***\<nom du serveur\>* \A4SWIFT administrateurs**, puis cliquez sur **OK** .  
   
     > [!NOTE]
-    >  Si le groupe d’administrateurs d’A4SWIFT est un groupe de domaine, entrez   ***\<nom de domaine\>*\A4SWIFT administrateurs**.  
+    >  Si le groupe d’administrateurs d’A4SWIFT est un groupe de domaine, entrez ***\<nom de domaine\>* \A4SWIFT administrateurs**.  
   
-3.  Répétez l’étape 2 pour   ***\<nom du serveur\>*\A4SWIFT utilisateurs**, ou  **\<* nom de domaine* \>\A4SWIFT utilisateurs ** si le groupe utilisateurs d’A4SWIFT est un groupe de domaine.  
+3.  Répétez l’étape 2 pour ***\<nom du serveur\>* \A4SWIFT utilisateurs**, ou  **\< *nom de domaine*\>\A4SWIFT utilisateurs** si le Groupe d’utilisateurs d’A4SWIFT est un groupe de domaine.  
   
 4.  Dans le volet noms d’utilisateur ou de groupe, sélectionnez **A4SWIFT administrateurs**. Dans le volet d’autorisations, sélectionnez **autoriser** pour **contrôle total**.  
   
@@ -207,7 +207,7 @@ ms.lasthandoff: 11/28/2017
   
     -   Type : **In-Process**  
   
-    -   Groupe Windows :  **\<* domaine*\>\BizTalk Application utilisateurs ** (ou le compte que vous avez configurée lors de la configuration de BizTalk Server pour l’exécution de BizTalk In-Process applications)  
+    -   Groupe Windows :  **\< *domaine*\>\BizTalk utilisateurs d’applications** (ou le compte que vous avez configurée lors de la configuration de BizTalk Server pour l’exécution de BizTalk In-Process applications)  
   
     -   Dans la section Options, sélectionnez à la fois **autoriser le suivi de hôte** et **transformer en hôte par défaut dans le groupe**.  
   
@@ -215,7 +215,7 @@ ms.lasthandoff: 11/28/2017
   
 6.  Cliquez sur **Démarrer** puis cliquez sur Exécuter. Type **cmd** puis cliquez sur **OK**.  
   
-7.  À l’invite de commandes, accédez au *% ProgramFiles%***\Microsoft BizTalk Accelerator pour SWIFT\SDK\Tools**.  
+7.  À l’invite de commandes, accédez au * % programfiles % ***\Microsoft BizTalk Accelerator pour SWIFT\SDK\Tools**.  
   
 8.  Type **RepairBAS.exe** , puis appuyez sur **entrée**.  
   

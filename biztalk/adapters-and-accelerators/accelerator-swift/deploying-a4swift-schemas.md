@@ -18,10 +18,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: bc89b26d0eee970268d5e9084cd0827d3100fd7b
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="deploying-a4swift-schemas"></a>Déploiement de schémas d’A4SWIFT
 Vous devez déployer les schémas des messages SWIFT à échanger.  
@@ -53,7 +53,7 @@ Vous devez déployer les schémas des messages SWIFT à échanger.
   
 7.  Démarrez l’invite de commandes de Visual Studio.  
   
-8.  À l’invite de commandes Visual Studio, accédez à  **\<* lecteur*\>: \Program Files\Microsoft BizTalk Accelerator pour SWIFT **.  
+8.  À l’invite de commandes Visual Studio, accédez à  **\< *lecteur*\>: \Program Files\Microsoft BizTalk Accelerator pour SWIFT**.  
   
 9. À l’invite de commandes, tapez **sn – k key.snk**, puis appuyez sur ENTRÉE. Vérifiez qu’un message s’affiche dans la fenêtre d’invite de commandes qui indique qu’une paire de clés a été écrite dans key.snk.  
   
@@ -63,7 +63,7 @@ Vous devez déployer les schémas des messages SWIFT à échanger.
   
 12. Dans le volet droit de la **Pages de propriétés** boîte de dialogue, faites défiler jusqu'à la **nom fort** , cliquez sur le champ situé à droite de **fichier de clé d’Assembly**, puis cliquez sur le points de suspension ().  
   
-13. Dans le **fichier de clé d’Assembly** boîte de dialogue, accédez à  **\<* lecteur*\>: \Program Files\Microsoft**[!INCLUDE[btaA4SWIFTNoVersionui](../../includes/btaa4swiftnoversionui-md.md)], cliquez sur **key.snk**, puis cliquez sur **ouvrir**.  
+13. Dans le **fichier de clé d’Assembly** boîte de dialogue, accédez à  **\< *lecteur*\>: \Program Files\Microsoft**[!INCLUDE[btaA4SWIFTNoVersionui](../../includes/btaa4swiftnoversionui-md.md)], cliquez sur **key.snk**, puis cliquez sur **ouvrir**.  
   
 14. Dans le **Pages de propriétés** boîte de dialogue, cliquez sur **OK** pour enregistrer vos modifications.  
   

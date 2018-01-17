@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 2e9e799822c63cb78eda1b989cb157c71fd357d8
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="general-biztalk-server-optimizations"></a>Optimisations générales de BizTalk Server
 Les recommandations suivantes peuvent être utilisées pour augmenter les performances de BizTalk Server. Les optimisations répertoriées dans cette rubrique sont appliquées après que BizTalk Server a été installé et configuré.  
@@ -98,9 +98,9 @@ Les recommandations suivantes peuvent être utilisées pour augmenter les perfor
   
  Lorsque vous définissez la propriété maxconnection, HTTP, HTTPS, l’adresse IP du site web et le numéro de port peuvent être spécifiés. Autres exemples :  
   
- **\<Ajouter une adresse = « https://www.contoso.com » maxconnection = « 24 » /\>**   
+ **\<add address="https://www.contoso.com" maxconnection="24" /\>**   
 **\<Ajouter une adresse = « http://www.contoso.com : 8080 » maxconnection = « 24 » /\>**   
-**\<Ajouter une adresse = « http://*IPAddress*« maxconnection = « 24 » /\>** pour plus d’informations sur le réglage des paramètres IIS et ASP.NET pour les services Web, consultez les « paramètres ASP.NET pouvant affecter les performances de l’adaptateur HTTP » section de [les paramètres de Configuration qui affectent les performances de l’adaptateur](http://go.microsoft.com/fwlink/?LinkID=154200) (http://go.microsoft.com/fwlink/?LinkID=154200) dans l’aide de BizTalk Server 2010.  
+**\<Ajouter une adresse = « http://*IPAddress*« maxconnection = « 24 » /\>**  pour plus d’informations sur le réglage des paramètres IIS et ASP.NET pour les services Web, consultez les paramètres ASP.NET » qui peuvent avoir un impact sur l’adaptateur HTTP section de performances » de [les paramètres de Configuration qui affectent les performances carte](http://go.microsoft.com/fwlink/?LinkID=154200) (http://go.microsoft.com/fwlink/?LinkID=154200) dans l’aide de BizTalk Server 2010.  
   
 ## <a name="manage-aspnet-thread-usage-or-concurrently-executing-requests-for-web-applications-that-can-host--isolated-received-locations-back-end-web-services-and-wcf-services"></a>Gérer l’utilisation de thread ASP.NET ou de demandes pour les applications Web qui peuvent héberger de manière simultanée isolé des emplacements de réception, les services Web principaux et les services WCF  
  Le nombre de processus de travail et les threads d’e/s (IIS 7.5 et IIS 7.0 en mode classique) ou le nombre de demandes (IIS 7.5 et 7.0 mode intégré) pour une application Web ASP.NET que les hôtes isolés les emplacements de réception, les services Web principaux et les services WCF de manière simultanée doit être modifié dans les conditions suivantes :  

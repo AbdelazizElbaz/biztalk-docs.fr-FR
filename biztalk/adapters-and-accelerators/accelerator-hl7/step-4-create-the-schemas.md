@@ -17,10 +17,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 3ce9ea850632327e257909e1c7d4b60117865e46
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="step-4-create-the-schemas"></a>Étape 4 : Créer les schémas
 Dans cette étape, vous créez un nouveau projet (**BTAHL7 projet**) qui contient les artefacts de ce projet : les schémas, mappage et orchestration. Vous créez ensuite un schéma (**Doorbell.xsd**) pour le message entrant de codée au format XML, puis sélectionnez un schéma existant (**ADT_A04_22_GLO_DEF.xsd**) pour le message sortant encodé HL7. Ces schémas vous permet de définir la structure des messages qui vous exchange au sein de l’orchestration.  
@@ -37,7 +37,7 @@ Dans cette étape, vous créez un nouveau projet (**BTAHL7 projet**) qui contien
   
 5.  Dans le **Solution** champ, sélectionnez **ajouter à la Solution**.  
   
-6.  Dans le **emplacement** champ, vérifiez que  **\<* lecteur*\>: \Tutorial\BTAHL7V22Common** est le chemin d’accès.  
+6.  Dans le **emplacement** champ, vérifiez que  **\< *lecteur*\>: \Tutorial\BTAHL7V22Common** est le chemin d’accès.  
   
 7.  Cliquez sur **OK** pour ouvrir le nouveau projet.  
   

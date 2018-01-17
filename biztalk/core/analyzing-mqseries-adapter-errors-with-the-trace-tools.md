@@ -23,10 +23,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: b53d1d2c0bbe19c54804b553041f8dc9ae4db20c
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="analyzing-mqseries-adapter-errors-with-the-trace-tools"></a>Analyse des erreurs de l’adaptateur MQSeries avec les outils de Trace
 Les outils de suivi permettent d'analyser les échecs relatifs à la messagerie lors de l'exécution d'une application. Avec l'adaptateur MQSeries, vous devez utiliser deux outils : trace.cmd pour l'adaptateur et l'application BizTalk application, et MQSTrace.cmd pour MQSAgent. Les deux outils utilisent tracelog.exe. Vous devez installer tracelog.exe si vous ne l’avez pas déjà.  
@@ -59,13 +59,13 @@ Les outils de suivi permettent d'analyser les échecs relatifs à la messagerie 
   
 2.  Tapez la commande suivante, en remplaçant le répertoire contenant le fichier tracelog.exe sur votre ordinateur par le répertoire entre guillemets, puis appuyez sur ENTRÉE :  
   
-     **trace - tools « c:\Program Files\Microsoft SDK\Bin »**  
+     **trace -tools "c:\Program Files\Microsoft SDK\Bin"**  
   
 3.  Accédez au répertoire contenant MQSTrace.cmd.  
   
 4.  Tapez la commande suivante, en remplaçant le répertoire contenant le fichier tracelog.exe sur votre ordinateur par le répertoire entre guillemets, puis appuyez sur ENTRÉE :  
   
-     **MQSTrace-« c:\Program Files\Microsoft SDK\Bin » des outils**  
+     **MQSTrace -tools "c:\Program Files\Microsoft SDK\Bin"**  
   
 ## <a name="run-the-trace-utility"></a>Exécution de l'utilitaire de suivi  
  Pour exécuter l'utilitaire de suivi de l'adaptateur BizTalk, procédez comme suit :  

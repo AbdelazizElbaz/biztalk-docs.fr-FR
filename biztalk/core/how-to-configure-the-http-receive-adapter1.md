@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 2c18cdcad8deaa9cd76930b91e94860c99749f78
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="how-to-configure-the-http-receive-adapter"></a>Comment faire pour configurer l’adaptateur de réception HTTP
 L'adaptateur de réception HTTP permet d'envoyer des messages à [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Cet adaptateur est une extension ISAPI IIS (Internet Information Services) hébergée dans le processus IIS.  
@@ -28,13 +28,13 @@ L'adaptateur de réception HTTP permet d'envoyer des messages à [!INCLUDE[btsBi
   
 1.  Copiez la réception HTTP (BTSHTTPReceive.dll) de l’adaptateur à partir de  **\<BizTalk\>\HttpReceive\>**  dans le dossier qui contient votre projet Single Sign-On (SSO), par exemple :  
   
-     **< Adapter_install > \biztalk\SSO\mySSODemo**  
+     **<Adapter_install>\biztalk\SSO\mySSODemo**  
   
     1.  Ajoutez une nouvelle extension de service Web mySSODemo.  
   
     2.  Localisez et copiez **< BizTalk_install > \HttpReceive** dans le dossier qui contient votre projet d’authentification unique, par exemple :  
   
-         **< Adapter_install > \biztalk\SSO\mySSODemo\BTSHTTPReceive.dll.**  
+         **<Adapter_install>\biztalk\SSO\mySSODemo\BTSHTTPReceive.dll.**  
   
     3.  Définir l’état de l’extension du service Web mySSODemo à **autorisées**.  
   

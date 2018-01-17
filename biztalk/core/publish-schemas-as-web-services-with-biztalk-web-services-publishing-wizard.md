@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: ba7f93eae8866212546f5daa3b9ed1a5b653c983
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="how-to-use-the-biztalk-web-services-publishing-wizard-to-publish-schemas-as-a-web-service"></a>Comment utiliser l’Assistant Publication de Services Web BizTalk pour publier des schémas en tant qu’un Service Web
 Vous utilisez l'Assistant Publication de services Web BizTalk pour publier des schémas en tant que services Web.  
@@ -59,10 +59,10 @@ Vous utilisez l'Assistant Publication de services Web BizTalk pour publier des s
   
     |Option|Valeur| Description|  
     |------------|-----------|-----------------|  
-    |Style de paramètre SOAP|Valeur par défaut|Cette option spécifie la façon dont les paramètres sont formatés dans un message SOAP. Pour plus d’informations, consultez SoapParameterStyle, énumération au [http://go.microsoft.com/fwlink/?LinkId=62259](http://go.microsoft.com/fwlink/?LinkId=62259).|  
+    |Style de paramètre SOAP|Par défaut|Cette option spécifie la façon dont les paramètres sont formatés dans un message SOAP. Pour plus d’informations, consultez SoapParameterStyle, énumération au [http://go.microsoft.com/fwlink/?LinkId=62259](http://go.microsoft.com/fwlink/?LinkId=62259).|  
     |Style de paramètre SOAP|Bare|Cette option spécifie la façon dont les paramètres sont formatés dans un message SOAP. Pour plus d’informations, consultez SoapParameterStyle, énumération au [http://go.microsoft.com/fwlink/?LinkId=62259](http://go.microsoft.com/fwlink/?LinkId=62259).|  
     |Style de paramètre SOAP|Wrapped|Cette option spécifie la façon dont les paramètres sont formatés dans un message SOAP. Pour plus d’informations, consultez SoapParameterStyle, énumération au [http://go.microsoft.com/fwlink/?LinkId=62259](http://go.microsoft.com/fwlink/?LinkId=62259).|  
-    |Demandes de conformité|Aucune|Cette option indique la spécification d'interopérabilité des services Web (WSI) à laquelle les demandes de liaison doivent se conformer. Pour plus d’informations, consultez la propriété WebServiceBindingAttribute.ConformsTo à [http://go.microsoft.com/fwlink/?LinkId=193064](http://go.microsoft.com/fwlink/?LinkId=193064).|  
+    |Demandes de conformité|Aucun|Cette option indique la spécification d'interopérabilité des services Web (WSI) à laquelle les demandes de liaison doivent se conformer. Pour plus d’informations, consultez la propriété WebServiceBindingAttribute.ConformsTo à [http://go.microsoft.com/fwlink/?LinkId=193064](http://go.microsoft.com/fwlink/?LinkId=193064).|  
     |Demandes de conformité|WS-I Basic Profile 1.1|Cette option indique la spécification d'interopérabilité des services Web (WSI) à laquelle les demandes de liaison doivent se conformer. Pour plus d’informations, consultez la propriété WebServiceBindingAttribute.ConformsTo à [http://go.microsoft.com/fwlink/?LinkId=193064](http://go.microsoft.com/fwlink/?LinkId=193064).|  
     |Forcer requête-réponse|[Par défaut]|Cette option indique si des opérations BizTalk unidirectionnelles doivent être exposées en tant que méthodes Web de requête-réponse. La valeur par défaut est de ne pas forcer l'indicateur unidirectionnel.|  
   
@@ -97,7 +97,7 @@ Vous utilisez l'Assistant Publication de services Web BizTalk pour publier des s
     -   **BizTalk de créer des emplacements de réception.** cette option crée automatiquement les ports et emplacements de réception de l'adaptateur SOAP qui correspondent à chaque fichier .asmx généré. Si un autre emplacement de réception existe déjà, l'emplacement de réception n'est pas remplacé. Emplacements de réception de l’adaptateur SOAP sont résolus en utilisant le format « /\<*nom de répertoire virtuel*\>/\<*namespace_typename_portname d’orchestration*  \>.asmx ». Après avoir sélectionné cette option, choisissez l'application où les ports et emplacements de réception sont générés.  
   
         > [!NOTE]
-        >  L'emplacement du projet peut se trouver sur un serveur différent. Pour publier un service Web sur un autre serveur, tapez le nom du projet en tant que  **http://&lt*nom_serveur*>/<*project_name*> **.  
+        >  L'emplacement du projet peut se trouver sur un serveur différent. Pour publier un service Web sur un autre serveur, tapez le nom du projet en tant que **http://&lt*nom_serveur*>/<*project_name*>**.  
   
         > [!NOTE]
         >  L'emplacement du projet peut se trouver sur un site Web personnalisé. Lorsque vous publiez sur un site Web de celle par défaut, incluez le numéro de port du site Web dans l’URL : http://localhost : 8080 / <*project_name*>.  

@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: b6ba8f76bd0f306c23ce270217ac3b2aca8b9ccc
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="how-to-add-existing-schemas"></a>Comment ajouter des schémas existants
 Vous souhaiterez parfois ajouter un schéma existant à un projet BizTalk existant. Cette rubrique décrit les étapes requises par cette opération.  
@@ -27,7 +27,7 @@ Vous souhaiterez parfois ajouter un schéma existant à un projet BizTalk exista
   
 2.  Dans le menu **Projet** , cliquez sur **Ajouter un élément existant**.  
   
-3.  Dans le  **ajouter un élément existant - \<* BizTalk ProjectName*\>** boîte de dialogue, accédez à l’emplacement du schéma, sélectionnez le schéma, puis cliquez sur **ouvrir**.  
+3.  Dans le **ajouter un élément existant - \< *BizTalk ProjectName* \>**  boîte de dialogue, accédez à l’emplacement du schéma, sélectionnez le schéma, puis cliquez sur **ouvrir**.  
   
      Le schéma existant s'ajoute au projet BizTalk, mais ne s'ouvre pas automatiquement dans l'Éditeur BizTalk.  
   

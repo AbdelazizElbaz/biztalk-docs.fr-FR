@@ -17,10 +17,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: f62a37da291bdc148369a28149cdfe29ed7fe446
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="step-7-sign-and-build-the-projects"></a>Étape 7 : Signer et générer des projets
 Dans cette étape, vous affectez un nom fort et générez le projet pour générer un assembly qui contient les ressources (le schéma) que vous avez créé dans [étape 6 : valider les schémas](../../adapters-and-accelerators/accelerator-hl7/step-6-validate-the-schemas.md). Cela garantit également qu’il n’y a aucune erreur de compilation dans le travail que vous avez terminé jusqu'à présent.  
@@ -33,7 +33,7 @@ Dans cette étape, vous affectez un nom fort et générez le projet pour génér
   
 3.  Dans le volet droit, faites défiler jusqu'à la **nom fort** , cliquez sur le champ situé à droite de **fichier de clé d’Assembly**, puis cliquez sur le bouton de sélection (...).  
   
-4.  Dans la boîte de dialogue de fichier de clé d’Assembly, accédez à  **\<* lecteur*\>: \Tutorial\BTAHL7V22Common\key.snk** (tel que créé dans [étape 3 : assigner un nom fort à le Assembly](../../adapters-and-accelerators/accelerator-hl7/step-3-assign-a-strong-name-to-the-assembly.md)), puis cliquez sur **ouvrir**.  
+4.  Dans la boîte de dialogue de fichier de clé d’Assembly, accédez à  **\< *lecteur*\>: \Tutorial\BTAHL7V22Common\key.snk** (tel que créé dans [étape 3 : assigner un nom fort à le Assembly](../../adapters-and-accelerators/accelerator-hl7/step-3-assign-a-strong-name-to-the-assembly.md)), puis cliquez sur **ouvrir**.  
   
 5.  Cliquez sur **OK** pour enregistrer les modifications.  
   

@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 11dffbe28d44d7665bc86ff0842c17ea01f7b3d3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="dynamic-send-port-handler-is-configurable"></a>Le Gestionnaire du Port d’envoi dynamique est Configurable
 Lors de la création d’un port d’envoi dynamique, un gestionnaire d’envoi d’adaptateur peut être configuré pour *chaque* adaptateur installé. Examinez le cas suivant :  
@@ -32,7 +32,7 @@ Lors de la création d’un port d’envoi dynamique, un gestionnaire d’envoi 
 ## <a name="select-a-send-handler"></a>Sélection d'un gestionnaire d'envoi  
  Lors de la création d'un port d'envoi unidirectionnel dynamique ou d'un port d'envoi dynamique avec sollicitation-réponse, le gestionnaire d'envoi peut être configuré pour chaque adaptateur installé. Étapes :  
   
-1.  Dans le **Administration de BizTalk Server** de la console, développez  **groupe BizTalk [*GroupName*] **, développez **Applications**, puis développez l’application pour contenir le port d’envoi.  
+1.  Dans le **Administration de BizTalk Server** de la console, développez **groupe BizTalk [*GroupName*]**, développez **Applications**, puis développez l’application pour contenir le port d’envoi.  
   
 2.  Avec le bouton droit **Ports d’envoi**, cliquez sur **nouveau**, puis cliquez sur **Port d’envoi unidirectionnel dynamique** ou **Port d’envoi dynamique avec sollicitation-réponse**.  
   

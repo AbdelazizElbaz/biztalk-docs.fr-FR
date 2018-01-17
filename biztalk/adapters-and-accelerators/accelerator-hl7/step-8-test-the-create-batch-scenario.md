@@ -13,27 +13,27 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 865717858e27509a9f9e4af611b39ba10be212a5
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="step-8-test-the-create-batch-scenario"></a>Étape 8 : Tester le scénario de traitement par lots Créer
 Dans cette étape, vous testez le scénario de traitement par lots de créer en supprimant des instances de test des messages que vous voulez traiter par lot dans le dossier source du Tutorial_BTAHL7Pickup. Récupère le message à partir du dossier source que vous définissez le port d’envoi et l’envoie ; le port de réception reçoit et le pipeline de réception traite et le dépose dans le dossier de destination Tutorial_BTAHL7Drop.  
   
 ### <a name="to-test-the-create-batch-scenario"></a>Pour tester le scénario de traitement par lots de créer  
   
-1.  À l’aide de [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorateur de solutions, cliquez sur Parcourir pour le  **\<* lecteur*\>: \Batching Tutorial\Instances** dossier.  
+1.  À l’aide de [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorateur de solutions, cliquez sur Parcourir pour le  **\< *lecteur*\>: \Batching Tutorial\Instances** dossier.  
   
 2.  Sélectionnez **CreateBatchMessage1.txt**, et **CreateBatchMessage2.txt**, effectuez un clic droit, puis cliquez sur **copie**.  
   
-3.  À l’aide de [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorateur de solutions, cliquez sur Parcourir pour le  **\<* lecteur*\>: \Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\ Dossier Tutorial\Tutorial_BTAHL7Pickup ** de SDK\End en bout.  
+3.  À l’aide de [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorateur de solutions, cliquez sur Parcourir pour le  **\< *lecteur*\>: \Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_BTAHL7Pickup** dossier.  
   
 4.  Cliquez avec le bouton droit, puis cliquez sur **coller**.  
   
 ### <a name="to-verify-the-results-of-the-create-batch-scenario"></a>Pour vérifier les résultats du scénario de traitement par lots de créer  
   
-1.  À l’aide de [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorateur de solutions, cliquez sur Parcourir pour le  **\<* lecteur*\>: \Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\ Dossier Tutorial\Tutorial_BatchACKDrop ** de SDK\End en bout. Après une courte période, vous devez voir l’instance traitée du lot d’accusé de réception s’affichent dans le dossier. Si elle n’apparaît pas, vérifiez le [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Observateur d’événements des messages d’erreur. Le fichier doit avoir le nom \< *Guid*\>.txt. Ce lot doit contenir deux types de notifications générées lorsqu’il reçoit les deux messages qui ont été envoyés à l’origine. Ce lot doit avoir les champs suivants :  
+1.  À l’aide de [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorateur de solutions, cliquez sur Parcourir pour le  **\< *lecteur*\>: \Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_BatchACKDrop** dossier. Après une courte période, vous devez voir l’instance traitée du lot d’accusé de réception s’affichent dans le dossier. Si elle n’apparaît pas, vérifiez le [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Observateur d’événements des messages d’erreur. Le fichier doit avoir le nom \< *Guid*\>.txt. Ce lot doit contenir deux types de notifications générées lorsqu’il reçoit les deux messages qui ont été envoyés à l’origine. Ce lot doit avoir les champs suivants :  
   
     |FHS.5|BHS.5|BTS.1|FTS.1|  
     |-----------|-----------|-----------|-----------|  
@@ -43,10 +43,10 @@ Dans cette étape, vous testez le scénario de traitement par lots de créer en 
   
     |MSH.9|MSA.2|MSA.1|MSH.3|MSH.5|  
     |-----------|-----------|-----------|-----------|-----------|  
-    |L’ACCUSÉ DE RÉCEPTION ^ A03 ^ L’ACCUSÉ DE RÉCEPTION|Msg01|AA|Tutorial_BatchDest|Tutorial_BatchSource|  
-    |L’ACCUSÉ DE RÉCEPTION ^ A03 ^ L’ACCUSÉ DE RÉCEPTION|Msg02|AA|Tutorial_BatchDest|Tutorial_BatchSource|  
+    |ACK^A03^ACK|Msg01|AA|Tutorial_BatchDest|Tutorial_BatchSource|  
+    |ACK^A03^ACK|Msg02|AA|Tutorial_BatchDest|Tutorial_BatchSource|  
   
-2.  À l’aide de [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorateur de solutions, cliquez sur Parcourir pour le  **\<* lecteur*\>: \Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\ Dossier Tutorial\Tutorial_BatchMsgDrop ** de SDK\End en bout. Après une heure, vous devez voir l’instance traitée du lot à apparaissent dans le dossier. Si elle n’apparaît pas, vérifiez le [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Observateur d’événements des messages d’erreur. Le fichier doit avoir le nom \< *Guid*\>.txt. Ce lot doit contenir les deux messages qui ont été envoyés à l’origine. Ce lot doit avoir les champs suivants :  
+2.  À l’aide de [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorateur de solutions, cliquez sur Parcourir pour le  **\< *lecteur*\>: \Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_BatchMsgDrop** dossier. Après une heure, vous devez voir l’instance traitée du lot à apparaissent dans le dossier. Si elle n’apparaît pas, vérifiez le [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Observateur d’événements des messages d’erreur. Le fichier doit avoir le nom \< *Guid*\>.txt. Ce lot doit contenir les deux messages qui ont été envoyés à l’origine. Ce lot doit avoir les champs suivants :  
   
     |FHS.5|BHS.5|BTS.1|FTS.1|  
     |-----------|-----------|-----------|-----------|  
@@ -56,8 +56,8 @@ Dans cette étape, vous testez le scénario de traitement par lots de créer en 
   
     |MSH.9|MSH.10|MSH.3|MSH.5|  
     |-----------|------------|-----------|-----------|  
-    |ADT ^ A03|Msg01|Tutorial_BatchSource|Tutorial_BatchDest|  
-    |ADT ^ A03|Msg02|Tutorial_BatchSource|Tutorial_BatchDest|  
+    |ADT^A03|Msg01|Tutorial_BatchSource|Tutorial_BatchDest|  
+    |ADT^A03|Msg02|Tutorial_BatchSource|Tutorial_BatchDest|  
   
      Le lot est encapsulé dans deux ensembles d’en-têtes et codes de fin spécifique pour les lots :  
   

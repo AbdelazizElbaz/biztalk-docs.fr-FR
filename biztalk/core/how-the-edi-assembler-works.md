@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 6f11fa41cabb6d5199953c2df005aa79965216f9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="how-the-edi-assembler-works"></a>Fonctionnement de l'Assembleur EDI
 Le plus souvent, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] traite les échanges EDI à envoyer dans le pipeline d'envoi EDI (`Microsoft.BizTalk.DefaultPipelines.EDISendPipeline`). Ce pipeline inclut le composant de pipeline Assembleur EDI, qui effectue le traitement suivant :  
@@ -153,4 +153,4 @@ Le plus souvent, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkserv
  Par exemple, les éléments <N1_PayerIdentification_TS835W1_1000A> et <N1_PayeeIdentification_TS835W1_1000B> deviennent des segments N1.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Envoi des Messages EDI dans BizTalk Server](../core/how-biztalk-server-sends-edi-messages.md)
+ [Envoi des messages EDI par BizTalk Server](../core/how-biztalk-server-sends-edi-messages.md)

@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: ca2b87964266b77629f7fa1d1156ace3cd048e7f
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="planning-for-sending-and-receiving"></a>Planification pour envoyer et recevoir
 Presque chaque document traité par [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] est reçu par un [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] l’adaptateur de réception et envoyés à partir de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] à l’aide un [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] l’adaptateur d’envoi. Étant donné que [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] cartes figurant donc en évidence dans les [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environnement, il est important de planifier déterminer les cartes ou les accélérateurs, vous allez utiliser et la configuration de ces adaptateurs et/ou les accélérateurs.  
@@ -43,23 +43,23 @@ Presque chaque document traité par [!INCLUDE[btsBizTalkServerNoVersion](../incl
   
 |Adaptateur|Le principal avantage|Prise en charge des transactions|Prise en charge de la Communication bidirectionnelle|Dans l’ordre de réception prise en charge|Authentification unique activée|  
 |-------------|---------------------|-------------------------|------------------------------------|-------------------------------|-----------------|  
-|Fichier|Facile à utiliser|Non|Non|Non|Non|  
-|FTP|Est largement utilisé pour les communications de l’entreprise-entreprise|Non|Non|Non|Oui|  
-|HTTP (s)|Est largement utilisé pour les communications de l’entreprise-entreprise|Non|Requête/réponse et sollicitation/réponse|Non|Oui|  
-|SOAP|Prend en charge l’utilisation de services Web|Non|Requête/réponse et sollicitation/réponse|Non|Oui|  
-|MSMQ|Prend en charge garantie de remise unique des messages entre BizTalk Server et Microsoft Message Queuing|Oui|Non|Oui|Non|  
+|Fichier|Facile à utiliser|non|Non|Non|non|  
+|FTP|Est largement utilisé pour les communications de l’entreprise-entreprise|non|Non|Non|Oui|  
+|HTTP(s)|Est largement utilisé pour les communications de l’entreprise-entreprise|non|Requête/réponse et sollicitation/réponse|non|Oui|  
+|SOAP|Prend en charge l’utilisation de services Web|non|Requête/réponse et sollicitation/réponse|non|Oui|  
+|MSMQ|Prend en charge garantie de remise unique des messages entre BizTalk Server et Microsoft Message Queuing|Oui|Non|Oui|non|  
 |MQSeries|Prend en charge garantie de remise unique des messages entre BizTalk Server et IBM WebSphere MQ pour les plateformes Windows|Oui|Non|Oui|Oui|  
-|SQL|Prend en charge une communication directe entre les bases de données BizTalk Server et SQL Server|Oui|Sollicitation-réponse uniquement|Non|Non|  
-|Windows SharePoint Services|Permet l’échange de messages XML et binaires entre BizTalk Server et les bibliothèques de documents SharePoint|Non|Non|Non|Non|  
-|POP3|Prend en charge la réception de documents par courrier électronique|Non|Non|Non|Non|  
-|SMTP|Prend en charge l’envoi de documents par courrier électronique|Non|Non|Non|Non|  
-|Routage|Traitement prend en charge des documents commerciaux qui se conforment à la norme EDI|Non|Non|Non|Non|  
+|SQL|Prend en charge une communication directe entre les bases de données BizTalk Server et SQL Server|Oui|Sollicitation-réponse uniquement|non|non|  
+|Windows SharePoint Services|Permet l’échange de messages XML et binaires entre BizTalk Server et les bibliothèques de documents SharePoint|non|Non|Non|non|  
+|POP3|Prend en charge la réception de documents par courrier électronique|non|Non|Non|non|  
+|SMTP|Prend en charge l’envoi de documents par courrier électronique|non|Non|Non|non|  
+|Routage|Traitement prend en charge des documents commerciaux qui se conforment à la norme EDI|non|Non|Non|non|  
 |Custom|Prend en charge de votre système hérité|Oui, requiert du code personnalisé.|Oui, requiert du code personnalisé.|Oui, requiert du code personnalisé.|Oui, requiert du code personnalisé.|  
-|WCF-WSHttp|Prend en charge WS-* normes via le transport HTTP|Oui, les transactions sont prises en charge sur WsHTTP (WS-transactions uniquement)|Requête/réponse et sollicitation/réponse|Non|Oui|  
-|WCF-BasicHttp|Communique avec les services Web basés sur ASMX et les clients et autres services conformes à WS-I Basic Profile 1.1 à l’aide de HTTP ou HTTPS|Non|Requête/réponse et sollicitation/réponse|Non|Oui|  
-|WCF-NetTcp|Prend en charge WS-* normes via le transport TCP|Oui|Requête/réponse et sollicitation/réponse|Non|Oui|  
+|WCF-WSHttp|Prend en charge WS-* normes via le transport HTTP|Oui, les transactions sont prises en charge sur WsHTTP (WS-transactions uniquement)|Requête/réponse et sollicitation/réponse|non|Oui|  
+|WCF-BasicHttp|Communique avec les services Web basés sur ASMX et les clients et autres services conformes à WS-I Basic Profile 1.1 à l’aide de HTTP ou HTTPS|non|Requête/réponse et sollicitation/réponse|non|Oui|  
+|WCF-NetTcp|Prend en charge WS-* normes via le transport TCP|Oui|Requête/réponse et sollicitation/réponse|non|Oui|  
 |WCF-NetMsmq|Prend en charge queuing en utilisant Microsoft Message Queuing (MSMQ) comme transport|Oui|Non|Oui|Oui|  
-|WCF-NetNamedPipe|Fournit un transport rapide pour la communication interprocessus sur le même ordinateur (uniquement pour les applications WCF)|Oui|Requête/réponse et sollicitation/réponse|Non|Oui|  
+|WCF-NetNamedPipe|Fournit un transport rapide pour la communication interprocessus sur le même ordinateur (uniquement pour les applications WCF)|Oui|Requête/réponse et sollicitation/réponse|non|Oui|  
 |WCF-Custom|Permet d’utiliser des fonctionnalités d’extensibilité WCF|Oui.|Oui.|Oui, dès lors que la liaison prend en charge cette fonctionnalité.|Oui.|  
 |WCF-CustomIsolated|Permet d’utiliser des fonctionnalités d’extensibilité WCF via le transport HTTP|Oui.|Oui.|Non.|Oui.|  
   

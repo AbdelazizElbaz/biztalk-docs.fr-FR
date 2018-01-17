@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: b45fb5e3ebc47bcaa27226be28618269f9da2e55
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="lesson-1-adding-a-pipelines-project-to-the-solution"></a>Leçon 1 : Ajout d’un projet de Pipelines à la Solution
 Dans cette leçon, vous ajoutez qu'un nouveau projet BizTalk pour SWIFT de pipelines à la solution pour vous permettre de personnaliser votre envoi et de pipelines de réception.  
@@ -34,7 +34,7 @@ Dans cette leçon, vous ajoutez qu'un nouveau projet BizTalk pour SWIFT de pipel
   
 4.  Dans le **nom** , tapez **SWIFTPipelines** comme nom du projet.  
   
-5.  Dans le **Solution** boîte, sélectionnez **ajouter à la Solution**. Dans le **emplacement** zone, cliquez sur Parcourir pour sélectionner  **\<* lecteur*:\>\labs\SWIFTProject** est sélectionnée.  
+5.  Dans le **Solution** boîte, sélectionnez **ajouter à la Solution**. Dans le **emplacement** zone, cliquez sur Parcourir pour sélectionner  **\< *lecteur*:\>\labs\SWIFTProject** est sélectionnée.  
   
 6.  Cliquez sur **OK** pour ouvrir le nouveau projet.  
   
