@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 3f2f59ce48a3d46ebf33889e31a55f9aa452fd17
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="arbitrary-xpath-property-handler-biztalk-server-sample"></a>Gestionnaire de propriété XPath arbitraire (exemple BizTalk Server)
 Le gestionnaire de propriété XPath arbitraire (exemple [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]) illustre l'écriture d'un composant de pipeline personnalisé pour promouvoir des propriétés spécifiques sur un document XML envoyé à [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Vous pouvez utiliser la fonctionnalité contenue dans l'exemple pour créer des composants Standard, Assembleur et Désassembleur personnalisés pour évaluer des expressions XPath.  
@@ -42,7 +42,7 @@ Le gestionnaire de propriété XPath arbitraire (exemple [!INCLUDE[btsBizTalkSer
 7.  Le nouveau document de bon de commande est écrit dans un fichier du répertoire \Output.  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
- *\<Exemples de chemin d’accès\>*\Pipelines\ArbitraryXPathPropertyHandler  
+ *\<Samples Path\>*\Pipelines\ArbitraryXPathPropertyHandler  
   
  Le tableau suivant présente les fichiers de cet exemple et décrit leur fonction.  
   
@@ -84,7 +84,7 @@ Le gestionnaire de propriété XPath arbitraire (exemple [!INCLUDE[btsBizTalkSer
   
 1.  Dans une fenêtre de commande, remplacez les répertoires (**cd**) dans le dossier suivant :  
   
-     *\<Exemples de chemin d’accès\>*\Pipelines\ArbitraryXPathPropertyHandler  
+     *\<Samples Path\>*\Pipelines\ArbitraryXPathPropertyHandler  
   
 2.  Exécutez le fichier Setup.bat, qui effectue les actions suivantes :  
   
