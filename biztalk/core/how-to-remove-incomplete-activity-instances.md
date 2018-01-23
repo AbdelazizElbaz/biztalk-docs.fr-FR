@@ -1,7 +1,8 @@
 ---
-title: "Comment supprimer des Instances d’activité incomplètes | Documents Microsoft"
+title: "Supprimer des Instances d’activité incomplètes | Documents Microsoft"
+description: "Exécutez le script RemoveDanglingInstances SQL personnalisé pour supprimer des instances incomplètes à partir de la base de données d’importation principale BAM dans BizTalk Server"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 01/18/2018
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
@@ -12,13 +13,13 @@ caps.latest.revision: "13"
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2809fd4fcc1d94a96b158ffa46c3e217084a905d
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 542d92b838b1638a2d018c6325d4c40467545c42
+ms.sourcegitcommit: 9e7a7dc5544d30d4523c0b3cdaa59f4890e7a4e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="how-to-remove-incomplete-activity-instances"></a>Suppression d'instances d'activités incomplètes
+# <a name="remove-incomplete-activity-instances"></a>Supprimer des Instances d’activité incomplètes
 Lorsqu'un fichier de définition d'analyse BAM est déployé, cinq tables sont créées dans la base de données d'importation principale BAM pour chaque activité définie dans ce fichier. Ces tables sont les suivantes :  
   
 -   bam_`ActivityName`_Active  
@@ -39,33 +40,29 @@ Lorsqu'un fichier de définition d'analyse BAM est déployé, cinq tables sont c
   
  Pour créer la procédure stockée, copiez le script et exécutez-le sur la base de données d'importation principale BAM en utilisant SQL Server Management. Le script va générer une procédure stockée nommée **RemoveDanglingInstances** dans la base de données.  
   
-### <a name="to-create-the-removedanglinginstances-stored-procedure"></a>Pour créer la procédure stockée RemoveDanglingInstances  
+## <a name="create-the-removedanglinginstances-stored-procedure"></a>Créer la procédure stockée de RemoveDanglingInstances  
   
-1.  Cliquez sur **Démarrer**, cliquez sur **tous les programmes**, cliquez sur **Microsoft SQL Server 2008 SP1** ou **Microsoft SQL Server 2008 R2**, puis cliquez sur  **SQL Server Management Studio**.  
+1.  Ouvrez **SQL Server Management Studio**et vous connecter à SQL server.
   
-2.  Dans le **se connecter au serveur** boîte de dialogue, sélectionnez le serveur SQL server et la méthode d’authentification appropriée, puis cliquez sur **connexion**.  
+2.  Développez le nom du serveur, **bases de données**, puis sélectionnez la base de données d’importation principale BAM.  
   
-3.  Développez le nom du serveur, **bases de données**, puis sélectionnez la base de données d’importation principale BAM.  
+3.  Cliquez sur **Nouvelle requête**.  
   
-4.  Cliquez sur **Nouvelle requête**.  
+4.  Copiez le script de création de procédure stockée et collez-le dans le volet de requête.  
   
-5.  Copiez le script de création de la procédure stockée et collez-le dans le volet droit.  
+5.  **Exécutez** le script. La procédure stockée résultante peut être affichée dans la liste des procédures stockées en tant que dbo. RemoveDanglingInstances.  
   
-6.  Cliquez sur **Execute** pour exécuter le script. La procédure stockée résultante peut être affichée dans la liste des procédures stockées en tant que dbo. RemoveDanglingInstances.  
+## <a name="remove-incomplete-activity-instances"></a>Supprimer des instances d’activité incomplètes  
   
-### <a name="to-remove-incomplete-activity-instances"></a>Pour supprimer les instances d'activité incomplètes  
+1.  Ouvrez **SQL Server Management Studio**et vous connecter à SQL server.
   
-1.  Cliquez sur **Démarrer**, cliquez sur **tous les programmes**, cliquez sur **Microsoft SQL Server 2008 SP1** ou **Microsoft SQL Server 2008 R2**, puis cliquez sur  **SQL Server Management Studio**.  
+2.  Développez le nom du serveur, **bases de données**, puis sélectionnez la base de données d’importation principale BAM.  
   
-2.  Dans le **se connecter au serveur** boîte de dialogue, sélectionnez le serveur SQL server et la méthode d’authentification appropriée, puis cliquez sur **connexion**.  
+3.  Cliquez sur **Nouvelle requête**.  
   
-3.  Développez le nom du serveur, **bases de données**, puis sélectionnez la base de données d’importation principale BAM.  
+4.  Dans le volet requête, tapez `exec RemoveDanglingInstances` et les paramètres appropriés pour l’opération de suppression que vous effectuez. Par exemple, pour supprimer toutes les instances incomplètes de l’activité de bon de commande, tapez `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder'`.  
   
-4.  Cliquez sur **Nouvelle requête**.  
-  
-5.  Dans le volet droit, tapez `exec RemoveDanglingInstances` et les paramètres appropriés pour l’opération de suppression que vous effectuez. Par exemple, pour supprimer toutes les instances incomplètes de l’activité de bon de commande, tapez `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder'`.  
-  
-6.  Cliquez sur **Execute** pour exécuter le script.  
+5.  **Exécutez** le script.  
   
 ## <a name="removedanglinginstances-usage-examples"></a>Exemples d'utilisation de RemoveDanglingInstances  
  La procédure stockée peut recevoir quatre paramètres :  
@@ -235,6 +232,9 @@ AS
     COMMIT TRAN      
 GO  
 ```  
-  
+
+## <a name="another-method-of-resolving-incomplete-instances"></a>Une autre méthode de résolution des instances incomplètes
+Vous pouvez également résoudre des instances d’activité incomplètes à partir de la base de données à l’aide d’une requête SQL. Consultez [résoudre des instances d’activité incomplètes](how-to-resolve-incomplete-activity-instances.md).
+
 ## <a name="see-also"></a>Voir aussi  
  [Gestion des bases de données BAM](../core/managing-bam-databases.md)
