@@ -1,35 +1,24 @@
 ---
-title: "Comment mettre à jour les références au nom de base de données d’importation principale BAM et de la chaîne de connexion | Documents Microsoft"
+title: "Mettre à jour la chaîne de nom et une connexion de base de données importation principale BAM | Documents Microsoft"
 ms.custom: 
-ms.date: 06/08/2017
+ms.date: 02/01/2018
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- restoring [BAM], connection strings
-- Primary Import database [BAM], updating references
-- connection strings, restoring
-- connection strings, BAM
-- restoring, BAM
-- restoring [BAM], Primary Import database
-- restoring [BAM], updating references
-- Primary Import database [BAM], restoring
-- BAM, restoring
-- restoring, connection strings
 ms.assetid: e3c58db0-f14f-429a-813c-bae29f6950d3
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 23efa3df9c59732c8459018a886f7f499d268eff
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 91792b66fa82be633123501f651d9a34784915ce
+ms.sourcegitcommit: c670558deccec266f90ae7ed042dba1105b15596
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 02/03/2018
 ---
-# <a name="how-to-update-references-to-the-bam-primary-import-database-name-and-connection-string"></a>Mise à jour des références au nom de la base de données d'importation principale BAM et à la chaîne de connexion
+# <a name="update-references-to-the-bam-primary-import-database-name-and-connection-string"></a>Mettre à jour les références au nom de base de données d’importation principale BAM et de la chaîne de connexion
 Si vous avez sauvegardé votre base de données BAMPrimaryImport, vous pouvez, dans l'éventualité d'une défaillance de données ou du système, restaurer cette sauvegarde sur un ordinateur distinct et la renommer.  
   
  Le service Bus d'événements BAM déplace les données d'événements de la base de données MessageBox vers la base de données BAMPrimaryImport. Le service Bus d'événements BAM inclut la logique de tolérance de pannes qui lui permet de récupérer et de redémarrer à partir d'une erreur inattendue sans perdre de données. Pour plus d’informations sur le service Bus d’événements BAM, consultez [gestion Service Bus d’événements BAM](../core/managing-the-bam-event-bus-service.md).  
@@ -42,60 +31,57 @@ Si vous avez sauvegardé votre base de données BAMPrimaryImport, vous pouvez, d
   
 -   Mettez à jour la référence à la base de données BAMPrimaryImport dans tous les fichiers Microsoft Excel de données actives BAM.  
   
-## <a name="prerequisites"></a>Conditions préalables  
- Pour exécuter cette procédure, vous devez ouvrir une session en tant que membre du groupe Administrateurs de BizTalk Server.  
+## <a name="prerequisites"></a>Configuration requise  
+Connectez-vous en tant que membre du groupe Administrateurs de BizTalk Server.  
   
-### <a name="to-update-references-to-the-bamprimaryimport-database-name-and-connection-string"></a>Pour mettre à jour les références au nom et à la chaîne de connexion de la base de données BAMPrimaryImport  
+## <a name="update-the-references"></a>Mettre à jour les références  
   
 1.  Arrêtez toute mise à jour du cube d'analyse BAM et tout lot DTS (Data Transformation Services), ou empêchez leur exécution jusqu'à ce que vous ayez restauré la base de données BAMPrimaryImport.  
   
 2.  Arrêtez le service de l'application BizTalk (y compris le service Bus d'événements BAM) de sorte qu'il ne tente pas d'importer davantage de données dans la base de données.  
   
-    1.  Cliquez sur **Démarrer**, cliquez sur **exécuter**, puis tapez **services.msc**.  
+    1.  À partir de la **Démarrer** menu, tapez **services.msc**, puis ouvrez **Services**.  
   
-    2.  Cliquez sur le **groupe BizTalk des services BizTalk : BizTalkServerApplication** de service, puis cliquez sur **arrêter**.  
+    2.  Avec le bouton droit le **groupe BizTalk des services BizTalk : BizTalkServerApplication** service, puis **arrêter**.  
   
-3.  Restaurer la base de données, effectuez les opérations dans [comment restaurer vos bases de données](../core/how-to-restore-your-databases.md).  
+3.  Restaurer la base de données (les étapes [comment restaurer vos bases de données](../core/how-to-restore-your-databases.md)).  
   
 4.  Mettez à jour les fichiers Web.Config suivants :  
   
-    -   [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]BAMPortal\BamManagementService\Web.Config.  
+    -   [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\BAMPortal\BamManagementService\Web.Config.  
+  
+         Remplacez le  *\<nom_serveur\>*  avec le nouveau nom de serveur, de chaîne et  *\<DatabaseName\>*  avec le nouveau nom de base de données. Mettez à jour les chaînes de connexion suivantes :  
+  
+         \<appSettings\>  
+  
+         <add key="BamServer" value="*\<ServerName\>*" /\>  
+  
+         <add key="BamDatabase" value="*\<DatabaseName\>*" /\>  
+  
+         \<add key="MaxResultRows" value="2000" /\>  
+  
+         \</appSettings\>  
+  
+    -   [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\BAMPortal\BamQueryService\Web.Config.  
   
          Remplacez le  *\<nom_serveur\>*  de chaîne avec le nouveau nom de serveur et  *\<DatabaseName\>*  avec le nouveau nom de base de données. Mettez à jour les chaînes de connexion suivantes :  
   
          \<appSettings\>  
   
-         < ajouter la clé = valeur de « BamServer » = «*\<nom_serveur\>*"/\>  
+         \<add key="BamServer" value="*\<ServerName\>*" /\>  
   
-         < Ajouter clé = valeur de « BamDatabase » = «*\<DatabaseName\>*"/\>  
+         \<add key="BamDatabase" value="*\<DatabaseName\>*" /\>  
   
-         \<ajouter la clé = valeur de « MaxResultRows » = « 2000 » /\>  
-  
-         \</appSettings\>  
-  
-    -   [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]BAMPortal\BamQueryService\Web.Config.  
-  
-         Remplacez le  *\<nom_serveur\>*  de chaîne avec le nouveau nom de serveur et  *\<DatabaseName\>*  avec le nouveau nom de base de données. Mettez à jour les chaînes de connexion suivantes :  
-  
-         \<appSettings\>  
-  
-         \<ajouter la clé = valeur de « BamServer » = «*\<nom_serveur\>*"/\>  
-  
-         \<ajouter la clé = valeur de « BamDatabase » = «*\<DatabaseName\>*"/\>  
-  
-         \<ajouter la clé = valeur de « MaxResultRows » = « 2000 » /\>  
+         \<add key="MaxResultRows" value="2000" /\>  
   
          \</appSettings\>  
   
-5.  Cliquez sur **Démarrer**, puis sur **Exécuter**, tapez **cmd**, puis cliquez sur **OK**.  
+5.  Ouvrez une invite de commandes (menu Démarrer > invite de commandes), puis accédez au répertoire suivant : [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\Schema\Restore.  
   
-6.  Accédez au répertoire suivant : [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Schema\Restore.  
+6.  Avec le bouton droit **SampleUpdateInfo.xml**, et **modifier**.  
   
-7.  Avec le bouton droit **SampleUpdateInfo.xml**, puis cliquez sur **modifier**.  
-  
-    1.  Ajoutez des marques de commentaire à toutes les sections de la base de données, à l'exception de BizTalkMgmtDb, OldPrimaryImportDatabase, PrimaryImportDatabase, ArchivingDatabase, AnalysisDatabase, StarSchemaDatabase et Alert.  
-  
-    2.  Pour le BizTalkMgmtDb, OldPrimaryImportDatabase, PrimaryImportDatabase, ArchivingDatabase, AnalysisDatabase, StarSchemaDatabase et les alertes sections, définissez la **« SourceServer »** et **« Serveur de Destination »**  au nom du serveur où se trouvent les bases de données.  
+    1.  Commentez toutes les sections de la base de données à l’exception de la OldPrimaryImportDatabase, PrimaryImportDatabase, ArchivingDatabase, AnalysisDatabase, StarSchemaDatabase et Alert. 
+    2.  Pour OldPrimaryImportDatabase, PrimaryImportDatabase, ArchivingDatabase, AnalysisDatabase, StarSchemaDatabase et Alert sections, définissez la **SourceServer** et **serveur de Destination** à la nom du serveur où se trouvent les bases de données.  
   
     3.  Pour PrimaryImportDatabase, définissez le **« SourceServer »** au nom du serveur où vous avez déplacé la base de données d’importation principale BAM.  
   
@@ -103,27 +89,26 @@ Si vous avez sauvegardé votre base de données BAMPrimaryImport, vous pouvez, d
         >  Utilisez des guillemets doubles pour encadrer le nom du système source et du système de destination.  
   
         > [!NOTE]
-        >  Si vous avez renommé les bases de données BizTalk Server, vous devez également mettre à jour comme il se doit les noms des bases de données.  
+        >  Si vous avez renommé une des bases de données BizTalk Server, veillez à mettre à jour les noms de base de données.  
   
-    4.  Lorsque vous avez terminé la modification du fichier, enregistrez-le et fermez-le.  
+    4.  Lorsque vous avez fini de modifier le fichier, enregistrez-le et fermez-le.  
   
-8.  À l'invite de commandes, tapez :  
+7.  À l'invite de commandes, tapez :  
   
      **cscript UpdateDatabase.vbs SampleUpdateInfo.xml**  
   
     > [!NOTE]
-    >  Vous devez exécuter UpdateDatabase.vbs une seule fois.  
+    >  Uniquement exécuter UpdateDatabase.vbs une seule fois.  
+    > 
+    >  Sur les ordinateurs 64 bits, exécutez UpdateDatabase.vbs à partir d’une invite de commandes 64 bits.  
   
-    > [!NOTE]
-    >  Sur les ordinateurs 64 bits, vous devez exécuter UpdateDatabase.vbs à partir d'une invite de commandes 64 bits.  
+8. À l'invite de commandes, accédez au répertoire suivant :  
   
-9. À l'invite de commandes, accédez au répertoire suivant :  
+     [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\Tracking  
   
-     [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking  
+9. À l'invite de commandes, modifiez bm.exe.config, remplacez la valeur de key="DefaultServer" par le nouveau nom du serveur, puis enregistrez le fichier.  
   
-10. À l'invite de commandes, modifiez bm.exe.config, remplacez la valeur de key="DefaultServer" par le nouveau nom du serveur, puis enregistrez le fichier.  
-  
-11. Mettez à jour la référence à la base de données BAMPrimaryImport dans tous les fichiers Microsoft Excel de données actives BAM. Pour chaque fichier :  
+10. Mettez à jour la référence à la base de données BAMPrimaryImport dans tous les fichiers Microsoft Excel de données actives BAM. Pour chaque fichier :  
   
     1.  Ouvrez le fichier Excel de données actives. Le nom de fichier se termine par _LiveData.xls.  
   
@@ -135,15 +120,15 @@ Si vous avez sauvegardé votre base de données BAMPrimaryImport, vous pouvez, d
   
     5.  Dans le menu **Fichier** , cliquez sur **Enregistrer**.  
   
-12. Redémarrez le service de l'application BizTalk.  
+11. Redémarrez le service de l'application BizTalk.  
   
-    1.  Cliquez sur **Démarrer**, cliquez sur **exécuter**, puis tapez **services.msc**.  
+    1.  Ouvrez **services.msc**.  
   
-    2.  Cliquez sur le **groupe BizTalk des services BizTalk : BizTalkServerApplication** de service, puis cliquez sur **Démarrer**.  
+    2.  Avec le bouton droit le **groupe BizTalk des services BizTalk : BizTalkServerApplication** service, puis **Démarrer**.  
   
-13. Activez les mises à jour du cube d'analyse BAM et les lots DTS de gestion des données.  
+12. Activez les mises à jour du cube d'analyse BAM et les lots DTS de gestion des données.  
   
-14. Pour résoudre toutes les instances de suivi incomplètes, consultez [comment résoudre les Instances d’activité incomplètes](../core/how-to-resolve-incomplete-activity-instances.md).  
+13. Pour résoudre toutes les instances de suivi incomplètes, consultez [résoudre les Instances d’activité incomplètes](../core/how-to-resolve-incomplete-activity-instances.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Sauvegarde et restauration de l’analyse BAM](../core/backing-up-and-restoring-bam.md)
