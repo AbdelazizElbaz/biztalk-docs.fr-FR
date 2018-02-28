@@ -1,0 +1,5 @@
+# [Présentation de HIS](what-is-his.md)
+# [Nouveautés, installation et configuration](install-and-config-guides\TOC.md)
+# [Éléments principaux](core\TOC.md)
+# [Authentification unique de l’entreprise](esso\TOC.md)
+# [DB2 OLE DB](db2oledbv\TOC.md)
