@@ -1,38 +1,24 @@
 ---
-title: "Migration à partir de l’adaptateur MSMQT vers l’adaptateur MSMQ | Documents Microsoft"
+title: "Migrer à partir de l’adaptateur MSMQT vers l’adaptateur MSMQ | Documents Microsoft"
 ms.custom: 
-ms.date: 2015-12-07
+ms.date: 12/07/2017
 ms.prod: biztalk-server
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- performance, MSMQT adapters
-- scaling, MSMQT adapters
-- reliability, MSMQT adapters
-- MSMQT adapters, transactional consistency
-- migrating, MSMQT adapters
-- MSMQT adapters, ordered delivery
-- MSMQT adapters, migrating to MSMQ adapters
-- MSMQT adapters, scaling
-- MSMQT adapters, reliability
-- MSMQ adapters, migrating MSMQT adapters
-- high availability, MSMQT adapters
-- MSMQT adapters, performance
-- MSMQT adapters, availability
 ms.assetid: 97126f70-0be5-4a2f-bcba-173fd932b6de
-caps.latest.revision: "30"
+caps.latest.revision: 
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b1fce448788a8c6c5721403dbb7e4e58609a31a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1696e732bdbd005b01f16834a075fe69460602f9
+ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 02/28/2018
 ---
-# <a name="migrating-from-the-msmqt-adapter-to-the-msmq-adapter"></a>Migration de l'adaptateur MSMQT vers l'adaptateur MSMQ
+# <a name="migrate-from-the-msmqt-adapter-to-the-msmq-adapter"></a>Migrer à partir de l’adaptateur MSMQT vers l’adaptateur MSMQ
 Cette rubrique décrit les aspects à prendre en compte en relation avec la livraison chronologique de bout en bout des messages, la cohérence transactionnelle, la haute disponibilité et l'évolutivité avant de procéder à la migration des solutions de l'adaptateur BizTalk Message Queuing (MSMQT) vers l'adaptateur Message Queuing (MSMQ). Dans le cadre de cette rubrique, la livraison chronologique des messages, la cohérence transactionnelle, la haute disponibilité et l'évolutivité sont définies comme suit :  
   
 -   **Livraison chronologique des messages.** Garantie que les messages sont envoyés depuis BizTalk Server dans l'ordre dans lequel ils ont été reçus.  
@@ -58,15 +44,15 @@ Cette rubrique décrit les aspects à prendre en compte en relation avec la livr
   
 5.  La base de données MessageBox achemine les messages et, si ceux-ci sont acheminés à la même instance d'une orchestration ou d'un port d'envoi, vérifie qu'ils sont remis à cette instance dans le même ordre : 1, 2, 3.  
   
- Dans [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)], MSMQT est le seul adaptateur capable d'assurer la livraison chronologique de bout en bout des messages. Tous les autres adaptateurs BizTalk intégrés peuvent modifier l'ordre des messages au cours des étapes 3 à 5 indiquées ci-dessus. La plupart des autres adaptateurs intégrés effectuent l'étape 3 à l'aide d'un composant appelé Gestionnaire de points de terminaison. Celui-ci étant multithread par nature, il ne conserve pas l'ordre des messages. L'adaptateur MSMQ pour [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] peut utiliser la fonctionnalité « Traitement en série » qui permet de conserver l'ordre au cours de l'étape 3. Toutefois, il ne demande pas au composant MessageAgent de conserver l'ordre ensuite, de sorte que les messages peuvent être acheminés à une orchestration ou un port d'envoi dans le désordre.  
+ Dans BizTalk Server 2004, MSMQT a été le seul adaptateur capable d’assurer de bout en fin de livraison chronologique des messages. Tous les autres adaptateurs BizTalk intégrés peuvent modifier l'ordre des messages au cours des étapes 3 à 5 indiquées ci-dessus. La plupart des autres adaptateurs intégrés effectuent l'étape 3 à l'aide d'un composant appelé Gestionnaire de points de terminaison. Celui-ci étant multithread par nature, il ne conserve pas l'ordre des messages. L’adaptateur BizTalk Server 2004 MSMQ utilisé une fonctionnalité « Traitement en série » qui conserve l’ordre de l’étape 3, mais il ne demande pas puis au composant MessageAgent préserver l’ordre à l’avenir, afin que les messages peuvent être acheminés à une orchestration ou port d’envoi de manière désordonnée.  
   
  **Livraison chronologique des messages avec l’adaptateur MSMQ de bout en bout**  
   
  Pour obtenir une livraison chronologique des messages avec l’adaptateur MSMQ de bout en bout, procédez comme suit :  
   
-1.  Activer la **livraison chronologique des messages** propriété sur la réception de l’orchestration d’abonnement de port ou le port d’envoi. Dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ports de réception dans les orchestrations et ports d’envoi doivent une **livraison chronologique des messages** option de configuration. Lorsque celle-ci est activée, le port de réception de l'orchestration ou le port d'envoi demande à la base de données MessageBox de lui remettre les messages dans l'ordre dans lequel ils ont été envoyés à la base de données MessageBox.  
+1.  Activer la **livraison chronologique des messages** propriété sur la réception de l’orchestration d’abonnement de port ou le port d’envoi. Dans BizTalk Server, les ports dans les orchestrations et ports d’envoi doivent une **livraison chronologique des messages** option de configuration. Lorsque celle-ci est activée, le port de réception de l'orchestration ou le port d'envoi demande à la base de données MessageBox de lui remettre les messages dans l'ordre dans lequel ils ont été envoyés à la base de données MessageBox.  
   
-2.  Définir le **traitement chronologique** propriété pour l’emplacement de réception qui est lié à l’adaptateur MSMQ sur `True`. Dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], les emplacements de réception qui utilisent le transport MSMQ peuvent être configurés pour utiliser le traitement chronologique. Lorsqu'elle est activée, cette fonctionnalité garantit que les messages sont envoyés à la base de données MessageBox dans l'ordre dans lequel ils ont été reçus.  
+2.  Définir le **traitement chronologique** propriété pour l’emplacement de réception qui est lié à l’adaptateur MSMQ sur `True`. Dans BizTalk Server, les emplacements que l’utilisation du transport MSMQ peut être configurée pour utiliser le traitement chronologique, qui, s’il est activé, permet de s’assurer que les messages sont envoyés vers la MessageBox dans le même ordre qu’ils ont été reçus de réception.  
   
 3.  Définir le **transactionnel** propriété pour l’emplacement de réception qui est lié à l’adaptateur MSMQ sur `True`.  
   
@@ -98,7 +84,7 @@ Cette rubrique décrit les aspects à prendre en compte en relation avec la livr
  Pour implémenter la livraison chronologique des messages avec cette architecture, suivez les étapes présentées précédemment sous « De bout en bout livraison chronologique des messages avec l’adaptateur MSMQ. »  
   
 ## <a name="high-availability-nontransactional-not-in-order"></a>Haute disponibilité (non transactionnelle, non chronologique)  
- Pour implémenter la haute disponibilité sans le traitement transactionnel à l'aide de l'adaptateur MSMQ, vous devez implémenter l'équilibrage de la charge réseau et exécuter les instances d'un hôte configuré avec les gestionnaires d'envoi et de réception MSMQ sur plusieurs serveurs BizTalk derrière l'équilibrage de la charge réseau. Lors de l’implémentation d’équilibrage de charge réseau avec MSMQ vous devez suivre les meilleures pratiques décrites dans la Base de connaissances Microsoft l’article 899611, « comment Message Queuing peut fonctionner sur réseau Load Balancing (NLB) » disponible à l’adresse [http://go.microsoft.com/fwlink/? LinkId = 57510](http://go.microsoft.com/fwlink/?LinkId=57510). Dans ce scénario, l'échec d'un des serveurs BizTalk provoque l'indisponibilité des messages exécutés dans l'instance d'hôte sur ce serveur jusqu'à la récupération du serveur BizTalk. Dans cette configuration, la haute disponibilité est assurée comme suit : si l'un des serveurs BizTalk n'est pas disponible, l'équilibrage de la charge réseau achemine les demandes vers l'autre serveur BizTalk.  
+ Pour implémenter la haute disponibilité sans le traitement transactionnel à l'aide de l'adaptateur MSMQ, vous devez implémenter l'équilibrage de la charge réseau et exécuter les instances d'un hôte configuré avec les gestionnaires d'envoi et de réception MSMQ sur plusieurs serveurs BizTalk derrière l'équilibrage de la charge réseau. Lors de l’implémentation d’équilibrage de charge réseau avec MSMQ vous devez suivre les meilleures pratiques décrites dans l’article de la Base de connaissances Microsoft [899611 : comment Message Queuing peut fonctionner sur l’équilibrage de charge réseau (NLB)](https://support.microsoft.com/help/899611/how-message-queuing-can-function-over-network-load-balancing-nlb). Dans ce scénario, l'échec d'un des serveurs BizTalk provoque l'indisponibilité des messages exécutés dans l'instance d'hôte sur ce serveur jusqu'à la récupération du serveur BizTalk. Dans cette configuration, la haute disponibilité est assurée comme suit : si l'un des serveurs BizTalk n'est pas disponible, l'équilibrage de la charge réseau achemine les demandes vers l'autre serveur BizTalk.  
   
 ## <a name="scalability-nontransactional-not-in-order"></a>Évolutivité (non transactionnelle, non chronologique)  
  Pour implémenter l'évolutivité, suivez les directives relatives à la haute disponibilité (non transactionnelle) et ajoutez des instances d'hôte supplémentaires. Cette architecture favorise la livraison rapide et l'évolutivité, mais n'assure pas la livraison chronologique des messages.  
@@ -121,12 +107,12 @@ Cette rubrique décrit les aspects à prendre en compte en relation avec la livr
 ## <a name="summary"></a>Résumé  
  Le tableau suivant récapitule les architectures que vous pouvez implémenter pour prendre en charge les fonctionnalités spécifiques.  
   
-|**Fonctionnalités**|**Équilibrage de charge réseau, ni cluster**|**ÉQUILIBRAGE DE CHARGE RÉSEAU**|**Cluster**|**Équilibrage de charge réseau et le cluster**|  
+|**Fonctionnalités**|**Équilibrage de charge réseau, ni cluster**|**NLB**|**Cluster**|**Équilibrage de charge réseau et le cluster**|  
 |-----------------------|---------------------------------|-------------|-----------------|-------------------------|  
 |Livraison chronologique des messages de bout en bout|Oui|Non|Oui|Possible avec une configuration manuelle|  
-|Cohérence transactionnelle|Non (les messages peuvent être perdus ou dupliqués en cas de défaillance du service)|Non|Oui|Oui|  
-|Haute disponibilité|Non|Oui|Oui|Oui|  
-|Évolutivité|Non|Oui|Non|Oui|  
+|Cohérence transactionnelle|Non (les messages peuvent être perdus ou dupliqués en cas de défaillance du service)|non|Oui|Oui|  
+|Haute disponibilité|non|Oui|Oui|Oui|  
+|Évolutivité|non|Oui|Non|Oui|  
   
 ## <a name="see-also"></a>Voir aussi  
  [À l’aide de Cluster Windows Server pour fournir une haute disponibilité pour BizTalk Server Hosts2](../core/use-windows-cluster-to-provide-high-availability-for-biztalk-hosts.md)

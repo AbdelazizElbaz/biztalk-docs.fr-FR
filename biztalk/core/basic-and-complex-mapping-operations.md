@@ -7,48 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Max Occurs property
-- maps, operation types
-- source schemas, code sample
-- BizTalk Mapper, mapping
-- complex maps
-- Table Looping functoids
-- source schemas, maps
-- maps, complex maps
-- output instances
-- destination schemas, code sample
-- BizTalk Mapper, complex mapping
-- destination schemas, maps
-- maps, source schemas
-- SrcLoopingRecord node
-- functoid types, Looping
-- DstLoopingRecord node
-- Table Extractor functoids
-- maps, basic maps
-- BizTalk Mapper, basic mapping
-- functoid types, Table Extractor
-- messages, examples
-- functoid types, Table Looping
-- code samples, destination schemas
-- Looping functoids
-- input instances, code sample
-- code samples, output instances
-- basic maps
-- code samples, input instances
-- maps, map types
-- code samples, source schemas
-- maps, destination schemas
 ms.assetid: da864b48-6255-4847-9a6f-13e489e8658d
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0d0fe41a85f23cdce3c4a070893cf54cb1b44a73
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 82876310cfa497f8002e7df680281122e90884af
+ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="basic-and-complex-mapping-operations"></a>Opérations de mappage simples et complexes
 Le Mappeur BizTalk propose des solutions pour divers scénarios de mappage, des opérations simples de type arborescence des relations parent-enfant jusqu'aux opérations détaillées et complexes impliquant des hiérarchies et des enregistrements de boucle. La complexité d’un scénario de mappage dépend de vos préférences et des besoins de l’entreprise ; le langage XSD (XML Schema Definition) vous offre une grande flexibilité pour la définition des formats structurés. Presque tous les scénarios de mappage se répartissent en deux catégories : mappage simple et mappage complexe.  
@@ -137,8 +105,8 @@ Le Mappeur BizTalk propose des solutions pour divers scénarios de mappage, des 
   
  Le Mappeur BizTalk ne prend pas en charge le type de mappage présentant plusieurs chemins de bouclage. Ce type de mappage implique des champs de deux enregistrements de boucle ou plus dans le schéma source qui est mappé sur les champs d’un seul enregistrement de boucle dans le schéma de destination. Cela pose un problème dans la mesure où il n’y a pas de moyen efficace permettant de déterminer le nombre d’éléments à produire dans le message d’instance de sortie. La présence de plusieurs chemins de bouclage donne lieu à un avertissement de compilation de mappage indiquant que le nœud de destination comporte plusieurs chemins de bouclage source. Il ne s’agit, toutefois, que d’un avertissement, et le nombre d’itérations dans le premier chemin de bouclage source est utilisé pour déterminer le nombre d’éléments produits dans le message d’instance de sortie. Vous pouvez contrôler explicitement comportement de bouclage à l’aide de la **bouclage** fonctoid.  
   
- Microsoft [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] a présenté un nouveau type de bouclage appelé bouclage piloté par la table. Le bouclage piloté par la table est utile lorsque le message d’instance de sortie doit être basé sur des données du message d’instance d’entrée en combinaison avec une ou plusieurs constantes, des liens du schéma source ou avec des fonctoids. Dans ces cas de figure, le message d'instance de sortie peut disposer de plusieurs enregistrements basés sur des données d'un seul enregistrement dans le message d’instance d’entrée combinées avec différentes constantes, ou basés sur des données issues de plusieurs enregistrements dans le message d’instance d’entrée. Pour plus d’informations sur piloté par table de bouclage à l’aide de la **bouclage de Table** et **extracteur de Table** fonctoids, consultez [bouclage de Table et de fonctoids Extracteur de Table](../core/table-looping-and-table-extractor-functoids.md).  
+ Microsoft BizTalk Server a introduit un nouveau type de bouclage appelé bouclage piloté par table. Le bouclage piloté par la table est utile lorsque le message d’instance de sortie doit être basé sur des données du message d’instance d’entrée en combinaison avec une ou plusieurs constantes, des liens du schéma source ou avec des fonctoids. Dans ces cas de figure, le message d'instance de sortie peut disposer de plusieurs enregistrements basés sur des données d'un seul enregistrement dans le message d’instance d’entrée combinées avec différentes constantes, ou basés sur des données issues de plusieurs enregistrements dans le message d’instance d’entrée. Pour plus d’informations sur piloté par table de bouclage à l’aide de la **bouclage de Table** et **extracteur de Table** fonctoids, consultez [bouclage de Table et de fonctoids Extracteur de Table](../core/table-looping-and-table-extractor-functoids.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Mappages](../core/maps.md)   
+ [Maps](../core/maps.md)   
  [Création de mappages à l’aide du Mappeur BizTalk](../core/creating-maps-using-biztalk-mapper.md)

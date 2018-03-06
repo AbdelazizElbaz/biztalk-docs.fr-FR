@@ -8,28 +8,28 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 87b6b9a0-a470-43f7-b076-36075477cc34
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9e6282b6f5a5784b80d58a1a1737389ee23e01e2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 613c0a28d9aaf3f8a07b34b65345979d69223668
+ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="appendix-b-hyper-v-architecture-and-feature-overview"></a>Annexe b : Architecture Hyper-V et la vue d’ensemble de la fonctionnalité
 Cette rubrique fournit une vue d’ensemble de l’architecture de Hyper-V, décrit les avantages et inconvénients de Hyper-V.  
   
 ## <a name="hyper-v-architecture"></a>Architecture Hyper-V  
   
- Hyper-V est une plateforme de virtualisation basée sur un hyperviseur et une technologie pour l’une des [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]de fonctionnalités de sélection, la Migration dynamique. Avec Hyper-V version 1.0, Windows Server 2008 était en mesure de la Migration rapide, qui peut déplacer des ordinateurs virtuels entre les hôtes physiques que quelques secondes de temps d’arrêt. Avec la Migration en direct, se déplace entre les cibles physiques se produire dans milliseconde, ce qui signifie que les opérations de migration sont invisibles pour les utilisateurs connectés. Pour découvrir les nouvelles fonctionnalités et améliorations dans [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] Hyper-V, consultez [Nouveautés de Hyper-V dans Windows Server 2008 R2](http://go.microsoft.com/fwlink/?LinkID=202427).  
+ Hyper-V est une plateforme de virtualisation basée sur un hyperviseur et une technologie pour l’une des fonctionnalités de sélection du serveur Windows, la Migration dynamique. Avec Hyper-V, Windows Server est capable de Migration rapide, qui peut déplacer des ordinateurs virtuels entre les hôtes physiques que quelques secondes de temps d’arrêt. Avec la Migration en direct, se déplace entre les cibles physiques se produire dans milliseconde, ce qui signifie que les opérations de migration sont invisibles pour les utilisateurs connectés. Consultez [Nouveautés de Hyper-V sur Windows Server](https://docs.microsoft.com/windows-server/virtualization/hyper-v/what-s-new-in-hyper-v-on-windows).
   
  L’hyperviseur est la plateforme de virtualisation de processeur spécifique qui peut héberger plusieurs machines virtuelles (VM) qui sont isolés les uns des autres, mais partagent les ressources matérielles sous-jacentes à la virtualisation les processeurs, la mémoire et les périphériques d’e/s.  
   
- Les systèmes d’exploitation invités s’exécutant dans un ordinateur virtuel Hyper-V fournissent des performances approche les performances du système d’exploitation en cours d’exécution sur un matériel physique *si* les pilotes de clients (VSC) de serveur virtuel nécessaires et les services sont installés sur le système d’exploitation invité. Code de client (VSC) de serveur virtuel Hyper-V, également appelé Hyper-V compatibles avec des e/s, permet un accès direct à la « Bus de l’ordinateur virtuel » de Hyper-V et est disponible avec l’installation des services d’intégration Hyper-V. Les deux [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] et [!INCLUDE[btsWinVista](../includes/btswinvista-md.md)] prise en charge Hyper-V compatibles avec des e/s avec les services d’intégration Hyper-V. Services d’intégration Hyper-V qui fournissent des pilotes VSC sont également disponibles pour les autres systèmes d’exploitation.  
+ Les systèmes d’exploitation invités s’exécutant dans un ordinateur virtuel Hyper-V fournissent des performances approche les performances du système d’exploitation en cours d’exécution sur un matériel physique *si* les pilotes de clients (VSC) de serveur virtuel nécessaires et les services sont installés sur le système d’exploitation invité. Code de client (VSC) de serveur virtuel Hyper-V, également appelé Hyper-V compatibles avec des e/s, permet un accès direct à la « Bus de l’ordinateur virtuel » de Hyper-V et est disponible avec l’installation des services d’intégration Hyper-V. Services d’intégration Hyper-V qui fournissent des pilotes VSC sont également disponibles pour les autres systèmes d’exploitation.  
   
- Hyper-V prend en charge d’isolation en termes d’une partition. Une partition est une unité logique d’isolation, pris en charge par l’hyperviseur, dans laquelle s’exécutent les systèmes d’exploitation. L’hyperviseur Microsoft doit avoir au moins une partition parente ou racine, en cours d’exécution [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]. La pile de virtualisation s’exécute dans la partition parente et a un accès direct aux périphériques matériels. La partition racine puis crée les enfants des partitions qui hébergent les systèmes d’exploitation invités. Une partition racine crée des partitions enfants à l’aide de l’interface de programmation d’application (API) hypercall.  
+ Hyper-V prend en charge d’isolation en termes d’une partition. Une partition est une unité logique d’isolation, pris en charge par l’hyperviseur, dans laquelle s’exécutent les systèmes d’exploitation. L’hyperviseur Microsoft doit avoir au moins un parent, ou racine, partition, exécutant Windows Server. La pile de virtualisation s’exécute dans la partition parente et a un accès direct aux périphériques matériels. La partition racine puis crée les enfants des partitions qui hébergent les systèmes d’exploitation invités. Une partition racine crée des partitions enfants à l’aide de l’interface de programmation d’application (API) hypercall.  
   
  Partitions n’ont pas accès au processeur physique, ni qu’ils gèrent les interruptions processeur. Au lieu de cela, ils ont une vue virtuelle sur le processeur et s’exécuter dans une région de l’adresse mémoire virtuelle qui est privée pour chaque partition de l’invité. L’hyperviseur gère les interruptions au processeur et les redirige vers la partition respectif. Hyper-V peut également matériel accélérer la traduction d’adresses entre les différents espaces d’adressage virtuels invités à l’aide d’une entrée sortie mémoire gestion unité (IOMMU) qui est indépendante du matériel de gestion de mémoire utilisé par le processeur. Un IOMMU est utilisée pour remapper les adresses de mémoire physique pour les adresses qui sont utilisées par la partition enfant.  
   
@@ -37,10 +37,10 @@ Cette rubrique fournit une vue d’ensemble de l’architecture de Hyper-V, déc
   
  Périphériques virtuels peuvent également tirer parti d’une fonctionnalité de virtualisation de Windows Server, nommée compatibles avec une e/s de stockage, mise en réseau, des graphiques et des sous-systèmes d’entrée. E/s compatibles est une implémentation de virtualisation prenant en charge spécialisée haut niveau de protocoles de communication (par exemple, SCSI) qui utilisent le VMBus directement, en ignorant toutes les couches d’émulation de périphérique. Cela rend la communication plus efficace mais nécessite un invité compatible hyperviseur et VMBus prenant en charge. Hyper-V compatibles avec des e/s et un noyau de hyperviseur prenant en charge est fourni via l’installation des services d’intégration Hyper-V. Composants d’intégration, y compris des pilotes de clients (VSC) de serveur virtuel, sont également disponibles pour les autres systèmes d’exploitation. Hyper-V nécessite un processeur qui comprend la virtualisation d’assistance matérielle, tels qu’est fourni avec Intel VT ou la technologie de virtualisation d’AMD-V (AMD).  
   
- Le diagramme suivant fournit une vue d’ensemble de l’architecture d’un environnement Hyper-V s’exécutant sur Windows Server 2008.  
+ Le diagramme suivant fournit une vue d’ensemble de l’architecture d’un environnement Hyper-V sur Windows Server.  
   
  ![Hyper &#45; Présentation de l’architecture V](../technical-guides/media/eadd2a84-3936-4b48-a0e2-05b94882d848.gif "eadd2a84-3936-4b48-a0e2-05b94882d848")  
-Vue d’ensemble de l’architecture Hyper-V  
+
   
  Les acronymes et termes utilisés dans le diagramme ci-dessus sont décrits ci-dessous :  
   
@@ -66,7 +66,7 @@ Vue d’ensemble de l’architecture Hyper-V
   
 -   **VMMS** – Service de gestion d’ordinateurs virtuels. Responsable de la gestion de l’état de tous les ordinateurs virtuels dans les partitions enfants.  
   
--   **VMWP** – processus de travail de Machine virtuelle. Un composant de mode utilisateur de la pile de virtualisation. Le processus de travail fournit des services de gestion de machine virtuelle à partir de la [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] instance dans la partition parente pour les systèmes d’exploitation invités dans les partitions enfants. Le Service de gestion d’ordinateurs virtuels génère un processus de travail distinct pour chaque ordinateur virtuel en cours d’exécution.  
+-   **VMWP** – processus de travail de Machine virtuelle. Un composant de mode utilisateur de la pile de virtualisation. Le processus de travail fournit des services de gestion d’ordinateur virtuel à partir de l’instance de Windows Server dans la partition parente pour les systèmes d’exploitation invités dans les partitions enfants. Le Service de gestion d’ordinateurs virtuels génère un processus de travail distinct pour chaque ordinateur virtuel en cours d’exécution.  
   
 -   **VSC** – Client du Service de virtualisation. Une instance de périphérique synthétique qui réside dans une partition enfant. VSC utilisent les ressources matérielles qui sont fournis par les fournisseurs de services de virtualisation (vsp) dans la partition parente. Ils communiquent avec le vsp correspondante dans la partition parente sur le VMBus pour satisfaire que les demandes d’e/s des partitions enfant.  
   
@@ -76,15 +76,15 @@ Vue d’ensemble de l’architecture Hyper-V
   
 -   **WMI** : le Service de gestion d’ordinateur virtuel expose un ensemble d’API basées sur Windows Management Instrumentation WMI pour gérer et contrôler les ordinateurs virtuels.  
   
- La plupart de ces termes sont définis dans le [Glossary8](../technical-guides/glossary8.md).  
+ La plupart de ces termes sont définis dans le [glossaire](../technical-guides/glossary8.md).  
   
 > [!NOTE]  
->  Pour plus d’informations sur [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] Hyper-V, consultez [http://go.microsoft.com/fwlink/?LinkID=121187](http://go.microsoft.com/fwlink/?LinkID=121187).  
+>  [Vue d’ensemble de la technologie Hyper-V](https://docs.microsoft.com/windows-server/virtualization/hyper-v/hyper-v-technology-overview) constitue une bonne ressource. 
   
-## <a name="advantages-of-hyper-v"></a>Avantages d’Hyper-V  
+## <a name="advantages"></a>Avantages
  Les avantages de l’exécution des solutions au niveau de l’entreprise dans un environnement virtualisé Hyper-V sont les suivants :  
   
-1.  **Consolidation des ressources matérielles** -plusieurs serveurs physiques peuvent être facilement consolidées dans relativement moins de serveurs par l’implémentation de la virtualisation avec Hyper-V. Consolidation prend en charge pleinement parti des ressources matérielles déployé. Hyper-V dans Windows Server 2008 R2 peut désormais accéder jusqu'à 64 processeurs logiques sur les ordinateurs hôtes. Cette fonctionnalité ne prend pas uniquement parti des nouveaux systèmes multicœurs, cela signifie également que les ratios de consolidation de machine virtuelle plus élevés chaque hôte physique.  
+1.  **Consolidation des ressources matérielles** -plusieurs serveurs physiques peuvent être facilement consolidées dans relativement moins de serveurs par l’implémentation de la virtualisation avec Hyper-V. Consolidation prend en charge pleinement parti des ressources matérielles déployé. Hyper-V dans Windows Server peut accéder jusqu'à 64 processeurs logiques sur les ordinateurs hôtes. Cette fonctionnalité ne prend pas uniquement parti des nouveaux systèmes multicœurs, cela signifie également que les ratios de consolidation de machine virtuelle plus élevés chaque hôte physique.  
   
 2.  **Facilité d’administration**:  
   
@@ -96,23 +96,23 @@ Vue d’ensemble de l’architecture Hyper-V
   
     -   Les coûts du matériel sont considérablement réduits, car plusieurs machines virtuelles qui s’exécute sur un seul ordinateur physique, par conséquent, un ordinateur physique distinct n’est pas requis pour chaque ordinateur.  
   
-    -   Les coûts de licence Hyper-V sont inclus dans le coût de licence de [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]. Hyper-V peut également être acheté pour une utilisation en tant que produit autonome qui peut être installé sur [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] Server Core.  
+    -   Les coûts de licence Hyper-V peuvent être inclus dans le coût de licence de Windows Server et peuvent également être achetés en tant que produit autonome.
   
     -   Alimentation peut être réduite considérablement par la consolidation des applications existantes sur un environnement Hyper-V virtualisé en raison du matériel physique réduit « empreinte » qui est requis.  
   
-4.  **Prise en charge de la tolérance de panne via la gestion de clusters Hyper-V d’erreur** – étant donné que Hyper-V est une application prenant en charge de cluster [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] fournit hôte natif clustering prise en charge des ordinateurs virtuels créés dans un environnement virtualisé Hyper-V.  
+4.  **Prise en charge de la tolérance de panne via la gestion de clusters Hyper-V d’erreur** – étant donné que Hyper-V est une application prenant en charge de cluster, Windows Server fournit l’hôte natif clustering prise en charge des ordinateurs virtuels créés dans un environnement virtualisé Hyper-V.  
   
 5.  **Facilité de déploiement et de gestion**:  
   
     -   Consolidation des serveurs existants en moins de serveurs physiques simplifie le déploiement.  
   
-    -   Une solution complète de gestion Hyper-V est disponible avec System Center Virtual Machine Manager. Pour plus d’informations sur System Center Virtual Machine Manager, consultez [http://go.microsoft.com/fwlink/?LinkID=111303](http://go.microsoft.com/fwlink/?LinkID=111303).  
+    -   Une solution complète de gestion Hyper-V est disponible avec System Center Virtual Machine Manager. [Quelles sont les nouveautés dans VMM dans System Center](https://docs.microsoft.com/system-center/vmm/whats-new?view=sc-vmm-2016) fournit quelques conseils.
   
 6.  **Caractéristiques de performance clé Hyper-V**:  
   
-    -   **Architecture de partage de matériel améliorées** - Hyper-V fournit un accès amélioré et l’utilisation des ressources de base, tels que des disques, le réseau, et des systèmes d’exploitation vidéo lorsqu’il est en cours d’exécution invité avec un noyau hyperviseur prenant en charge et qui sont équipés de code de client (VSC) requise du serveur virtuel (également appelé Hyper-V compatibles avec des e/s). Enlightments sont les améliorations apportées au système d’exploitation afin de réduire le coût de certaines fonctions du système d’exploitation tels que la gestion de la mémoire. Actuellement, les deux [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] et [!INCLUDE[btsWinVista](../includes/btswinvista-md.md)] prise en charge Hyper-V compatibles avec e/s et un noyau de hyperviseur prenant en charge via l’installation des services d’intégration Hyper-V. Composants d’intégration, y compris les pilotes VSC, sont également disponibles pour les autres systèmes d’exploitation.  
+    -   **Architecture de partage de matériel améliorées** - Hyper-V fournit un accès amélioré et l’utilisation des ressources de base, tels que des disques, le réseau, et des systèmes d’exploitation vidéo lorsqu’il est en cours d’exécution invité avec un noyau hyperviseur prenant en charge et qui sont équipés de code de client (VSC) requise du serveur virtuel (également appelé Hyper-V compatibles avec des e/s). Enlightments sont les améliorations apportées au système d’exploitation afin de réduire le coût de certaines fonctions du système d’exploitation tels que la gestion de la mémoire. Composants d’intégration, y compris les pilotes VSC, sont également disponibles pour les autres systèmes d’exploitation.  
   
-         Performances du disque sont critiques pour les applications d’entreprise gourmandes en e/s disque telles que Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] et en plus de Hyper-V compatibles avec les e/s Hyper-V fournit la prise en charge de disque « Relais » qui fournit des performances du disque similaire à des performances de disques physiques. Notez que prise en charge du disque de « Relais » fournit des performances améliorées à un petit coût pour des raisons de commodité. Les disques de « Relais » sont essentiellement des disques/LUN physiques qui sont attachés à un ordinateur virtuel et ne prennent pas en charge certaines fonctionnalités de disques virtuels, tels que des captures instantanées d’ordinateur virtuel.  
+         Performances du disque sont essentiel pour les applications d’entreprise intensif d’e/s disque telles que Microsoft BizTalk Server et en plus de Hyper-V compatibles avec les e/s Hyper-V fournit la prise en charge de disque « Relais » qui fournit des performances du disque similaire à des performances de disques physiques. Notez que prise en charge du disque de « Relais » fournit des performances améliorées à un petit coût pour des raisons de commodité. Les disques de « Relais » sont essentiellement des disques/LUN physiques qui sont attachés à un ordinateur virtuel et ne prennent pas en charge certaines fonctionnalités de disques virtuels, tels que des captures instantanées d’ordinateur virtuel.  
   
     -   **Prise en charge de la virtualisation à assistance matérielle processeur** – Hyper-V tire pleinement parti de processeur assisté matérielle virtualisation prise en charge est disponible avec la technologie de processeur récent.  
   
@@ -120,17 +120,15 @@ Vue d’ensemble de l’architecture Hyper-V
   
     -   **Invités 32 bits et 64 bits d’exploitation prise en charge système** – Hyper-V prend en charge l’exécution simultanée de différents types de systèmes d’exploitation, y compris les systèmes 32 bits et 64 bits sur des plates-formes de serveur différentes, telles que des fenêtres, Linux® et autres.  
   
-7.  **Preuve d’enregistrement de suivi des** -clé les sites Web Microsoft MSDN ([http://msdn.microsoft.com](http://go.microsoft.com/fwlink/?LinkId=122019)) et TechNet ([http://technet.microsoft.com](http://go.microsoft.com/fwlink/?LinkID=64380)) sont hébergés dans les environnements Hyper-V.  
-  
 8.  **Prise en charge complète de produits** – étant donné que les applications d’entreprise Microsoft (par exemple, Exchange Server et SQL Server) sont entièrement testées en cours d’exécution dans Hyper-V, Microsoft prend en charge de correctif de code pour ces applications lorsque déployé et exécuté dans Hyper-V environnement.  
   
 9. **Évolutivité** : plus la capacité de stockage, de la bande passante réseau et de puissance de traitement faire rapidement et facilement, répartition des ressources supplémentaires disponibles à partir de l’ordinateur hôte pour les ordinateurs virtuels invités. Cette opération peut nécessiter que l’ordinateur hôte est mis à niveau ou que les ordinateurs virtuels invités sont déplacés vers un ordinateur hôte plus performante.  
   
- Pour plus d’informations sur les avantages de l’utilisation de la technologie de virtualisation fournie avec Hyper-V, consultez [les avantages de la virtualisation](http://go.microsoft.com/fwlink/?LinkID=202419) de [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)].  
+ Pour plus d’informations sur les avantages de l’utilisation de la technologie de virtualisation fournie avec Hyper-V, consultez le [vue d’ensemble de la technologie Hyper-V](https://docs.microsoft.com/windows-server/virtualization/hyper-v/hyper-v-technology-overview). 
   
-## <a name="disadvantages-of-hyper-v"></a>Inconvénients de Hyper-V  
+## <a name="disadvantages"></a>Inconvénients
  Certains inconvénients de l’exécution des solutions au niveau de l’entreprise dans un environnement virtualisé Hyper-V peuvent inclure :  
   
--   **Configuration matérielle requise –** en raison d’exigences de consolidation de serveurs, ordinateurs virtuels Hyper-V ont tendance à consommer plus d’UC et mémoire et nécessitent la bande passante d’e/s de disque que les serveurs physiques avec des charges de calcul comparables. Étant donné que le rôle de serveur Hyper-V est disponible seulement pour 64 bits et toutes les éditions de Windows Server 2008 R2 64 bits ne sont, le matériel physique doit prendre en charge la virtualisation d’assistance matérielle. Cela signifie que le processeur doit être compatible avec Intel VT ou la technologie de virtualisation d’AMD-V (AMD), le BIOS doit prendre en charge la prévention de l’exécution des données (PED) et la fonctionnalité doit être activée.  
+-   **Configuration matérielle requise –** en raison d’exigences de consolidation de serveurs, ordinateurs virtuels Hyper-V ont tendance à consommer plus d’UC et mémoire et nécessitent la bande passante d’e/s de disque que les serveurs physiques avec des charges de calcul comparables. Étant donné que le rôle de serveur Hyper-V est disponible seulement pour 64 bits et toutes les éditions de Windows Server 64 bits ne sont, le matériel physique doit prendre en charge la virtualisation d’assistance matérielle. Cela signifie que le processeur doit être compatible avec Intel VT ou la technologie de virtualisation d’AMD-V (AMD), le BIOS doit prendre en charge la prévention de l’exécution des données (PED) et la fonctionnalité doit être activée.  
   
--   **Configuration logicielle requise –** alors que la plupart des logiciels de Microsoft est prise en charge en cours d’exécution sur des ordinateurs virtuels Hyper-V, certains logiciels de Microsoft est toujours en cours en cours de test pour garantir la compatibilité avec un environnement virtualisé Hyper-V. Par exemple, la plupart des applications de niveau entreprise Microsoft prend en charge l’exécution sur Hyper-V ou sont dans le processus qui est testé pour la prise en charge sur Hyper-V. Toutes les versions de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] depuis [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] sont pris en charge sur Hyper-V. Pour plus d’informations sur la prise en charge de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] et [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] sur Hyper-V, consultez [annexe c : BizTalk Server et la prise en charge de SQL Server Hyper-V](../technical-guides/appendix-c-biztalk-server-and-sql-server-hyper-v-supportability.md).
+-   **Configuration logicielle requise –** alors que la plupart des logiciels de Microsoft est prise en charge en cours d’exécution sur des ordinateurs virtuels Hyper-V, certains logiciels de Microsoft est toujours en cours en cours de test pour garantir la compatibilité avec un environnement virtualisé Hyper-V. Par exemple, la plupart des applications de niveau entreprise Microsoft prend en charge l’exécution sur Hyper-V ou sont dans le processus qui est testé pour la prise en charge sur Hyper-V. Pour plus d’informations sur la prise en charge de BizTalk Server et SQL Server sur Hyper-V, consultez [annexe c : BizTalk Server et la prise en charge de SQL Server Hyper-V](../technical-guides/appendix-c-biztalk-server-and-sql-server-hyper-v-supportability.md).

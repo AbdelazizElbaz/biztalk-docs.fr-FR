@@ -8,15 +8,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 57d7c0bf-a707-4ebd-afab-e75dd80c3c34
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 23ec36d960173c9ce912bb89a38b1df9590f84e5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f7cee568cda6c869ede94e28bce441462c0c7cdc
+ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="orchestration-dehydration-and-rehydration"></a>Mise en attente et réactivation des orchestrations
 Lorsque plusieurs processus d'entreprise à long terme sont exécutés en même temps, la mémoire et les performances constituent des problèmes potentiels. Le moteur d'orchestration résout ces problèmes en « mettant en attente » et en « réalimentant » les instances d'orchestration.  
@@ -41,9 +41,7 @@ Lorsque plusieurs processus d'entreprise à long terme sont exécutés en même 
   
  Il est possible de configurer une orchestration pour qu'elle s'exécute sur plusieurs serveurs. Après sa mise en attente, une instance d'orchestration peut être réalimentée sur n'importe lequel de ces serveurs. Si un serveur tombe en panne, le moteur continue d’exécuter l’orchestration sur un autre serveur, à partir de son état précédent. Cette fonctionnalité permet également au moteur d'implémenter l'équilibrage des charges sur les serveurs.  
   
-## <a name="in-this-section"></a>Dans cette section  
-  
--   [Modifications des stratégies de mise en attente de BizTalk Server 2004](../core/changes-in-dehydration-policy-from-biztalk-server-2004.md)  
+## <a name="next-steps"></a>Étapes suivantes
   
 -   [Propriétés par défaut de mise en attente](../core/dehydration-default-properties.md)  
   
@@ -51,8 +49,8 @@ Lorsque plusieurs processus d'entreprise à long terme sont exécutés en même 
   
 -   [Exemple de calcul de mise en attente](../core/sample-dehydration-calculation.md)  
   
--   [Compteurs de performances de mise en attente d’orchestration](../core/orchestration-dehydration-performance-counters.md)  
+-   [Compteurs de performances de la mise en attente des orchestrations](../core/orchestration-dehydration-performance-counters.md)  
   
 -   [Fichier BTSNTSvc.exe.config](../core/btsntsvc-exe-config-file.md)  
   
--   [Autres activités qui peuvent affecter le comportement de mise en attente](../core/other-activities-that-can-affect-dehydration-behavior.md)
+-   [Autres activités susceptibles d’affecter le comportement de mise en attente](../core/other-activities-that-can-affect-dehydration-behavior.md)

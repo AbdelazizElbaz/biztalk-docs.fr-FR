@@ -7,21 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Administration Console [BizTalk Server], how to
-- Administration Console [BizTalk Server], about Administration Console
-- artifacts, list
-- groups, Hub
 ms.assetid: af00d9de-0f94-407b-b6f4-4da63a0867a0
-caps.latest.revision: "42"
+caps.latest.revision: 
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: de8b806c8a6f39608608a3eabc975cf606410abc
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 52cc7b687dc081b84dbdd8079c314468580ad4b6
+ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="using-the-biztalk-server-administration-console"></a>À l’aide de la Console Administration de BizTalk Server
 La console Administration de BizTalk Server est une console MMC (Microsoft Management Console) que vous pouvez utiliser pour gérer et surveiller BizTalk Server, mais aussi pour déployer et gérer vos applications BizTalk Server.  
@@ -121,10 +116,8 @@ En commençant par [!INCLUDE[bts2016_md](../includes/bts2016-md.md)], vous pouve
 3. Sélectionnez **exécuter la requête**. Dans les résultats de la requête, utilisez les touches CTRL ou MAJ pour sélectionner plusieurs instances suspendues simultanément. Avec le bouton droit, puis sélectionnez **sécurisé au fichier**. 
 4. Choisissez le dossier pour enregistrer les fichiers. Une fois enregistré, un fichier XML est créé pour chaque message.
 
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="next-steps"></a>Étapes suivantes
   
--   [Comment ouvrir la Console Administration de BizTalk Server](../core/how-to-open-the-biztalk-server-administration-console.md)  
+-   [Ouvrir la console Administration de BizTalk Server](../core/how-to-open-the-biztalk-server-administration-console.md)  
   
--   [Configuration du suivi à l’aide de la Console Administration de BizTalk Server](http://msdn.microsoft.com/en-us/49b7f9d3-60b5-41bd-ba8b-029253926bef)  
-  
--   [Utilisation de la page Hub du groupe](../core/using-the-group-hub-page.md)
+-   [À l’aide de la Page Hub du groupe](../core/using-the-group-hub-page.md)

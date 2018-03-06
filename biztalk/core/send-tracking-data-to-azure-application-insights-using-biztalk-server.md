@@ -9,15 +9,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: b3ff6cb9-44d0-46cd-9b4f-a346365afb7b
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: tordgladnordahl
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7a6fe0c50527f51b599bca5f51c7b8ed8fb7313e
-ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
+ms.openlocfilehash: f5ddd60f72955c7196edfc8bf2310b73226d2abe
+ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="send-biztalk-tracking-data-to-azure-application-insights-or-event-hubs"></a>Envoyer des données de suivi pour Azure Application Insights ou concentrateurs d’événements de BizTalk
 
@@ -30,10 +30,10 @@ ms.lasthandoff: 11/21/2017
 
 Utilisez ces services Azure pour effectuer le suivi de vos instances à partir des orchestrations, ports d’envoi et ports de réception.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 * Créer une nouvelle instance de [Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-create-new-resource). BizTalk Server utilise le **clé d’Instrumentation** pour s’authentifier.
 * Créer un [hub d’espace de noms et événements Azure Event Hubs](https://docs.microsoft.com/azure/event-hubs/event-hubs-create). BizTalk Server utilise le SAS (espace de noms de niveau) ou la stratégie au niveau du concentrateur d’événements pour l’authentification.
-* Installer [Feature Pack 2](https://aka.ms/bts2016fp2) sur votre[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
+* Installer [Feature Pack 2](https://aka.ms/bts2016fp2) sur votre [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
 
 ## <a name="enable-analytics-for-your-environment"></a>Activer analytique pour votre environnement
 
@@ -80,12 +80,12 @@ Une fois que les données sont envoyées à Application Insights, vous pouvez ut
 2. Ouvrez votre ressource Application Insights, puis sélectionnez **Metrics Explorer**.
 3. Peuvent afficher des graphiques vides. Dans un graphique, sélectionnez **modifier**. Sous **métriques**, sélectionnez **personnalisé** pour afficher les propriétés de suivi disponibles. Sélectionnez parmi les différentes options pour voir les modifications sur votre graphique : 
 
-    ![Analytique Azure](../core/media/azure-stream-metrics-custom.png)
+    ![Azure Analytics](../core/media/azure-stream-metrics-custom.png)
 
 4. Revenez à votre ressource Application Insights, puis sélectionnez **Analytique**. Dans **utilisation**, sélectionnez **exécuter**. Un exemple de requête est exécutée, et les résultats sont affichés dans un graphique.  
 
 > [!TIP]
-> Azure Application Insights est un outil puissant. Il existe des ressources pour vous aider à écrire des requêtes dans Application Insights à [Analytique dans Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-analytics)et même de commencer à utiliser [Nouveautés d’Application Insights ?](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-overview).
+> Azure Application Insights est un outil puissant. Il existe des ressources pour vous aider à écrire des requêtes dans Application Insights à [Analytique dans Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-analytics)et même de commencer à utiliser [Nouveautés d’Application Insights ?](https://docs.microsoft.com/azure/application-insights/app-insights-overview).
 
 #### <a name="use-event-hubs"></a>Utiliser des concentrateurs d’événements
 Une fois que les données sont envoyées à des concentrateurs d’événements, il existe deux manières d’afficher les données. De nombreux utilisateurs de concentrateurs d’événements sont à l’aide de capturer des concentrateurs d’événements pour charger des données de diffusion en continu dans Azure. Le but est pour vous concentrer sur le traitement des données, plutôt que sur la capture de données. [Capturer des concentrateurs d’événements](https://docs.microsoft.com/azure/event-hubs/event-hubs-capture-overview) explique comment il fonctionne et comment la configurer.

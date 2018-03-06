@@ -7,33 +7,24 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- high availability, managing
-- service management functions (SMFs)
-- service continuity management
-- jobs, scheduling
-- MOF, high availability
-- change management
-- MOF, process model
-- high availability, MOF
 ms.assetid: 54d8bae3-b241-4371-b8fc-a9cbdca6b495
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b8361875cf34f14118fb93818c78a6ca7d12a86f
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 1a06bdadb026617dc55ed40d03e0344584111a0c
+ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="high-availability-and-the-microsoft-operations-framework"></a>Haute disponibilité et structure Microsoft Operations Framework (MOF)
-L'utilisation du modèle de processus de la structure MOF pour planifier et implémenter une solution Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] hautement disponible permet de vous assurer que les processus utilisés à chaque étape du cycle de vie de la solution sont appropriés. En faisant vos prévisions pour chaque étape du cycle de vie où la question de la haute disponibilité se pose, il vous est possible de vous faciliter les procédures d'installation, de maintenance et de dépannage touchant à la disponibilité dans votre environnement.  
+Appliquer le modèle de processus Microsoft Operations Framework (MOF) à la planification et l’implémentation d’une solution Microsoft BizTalk Server hautement disponible, vous pouvez vous assurer que vous disposez des processus appropriés à chaque étape du cycle de vie. En faisant vos prévisions pour chaque étape du cycle de vie où la question de la haute disponibilité se pose, il vous est possible de vous faciliter les procédures d'installation, de maintenance et de dépannage touchant à la disponibilité dans votre environnement.  
   
  Cette section contient des informations sur les processus MOF pour lesquels vous devez tenir compte des tâches relatives à la haute disponibilité.  
   
 ## <a name="microsoft-operations-framework-process-model"></a>Modèle de processus MOF  
- La structure MOF (Microsoft Operations Framework) fournit les informations nécessaires pour atteindre le niveau de fiabilité, de disponibilité, de prise en charge et de facilité de gestion propre aux technologies et aux produits Microsoft et essentiel au bon fonctionnement des systèmes. L'aide technique apportée par la structure MOF se présente sous forme de livres blancs, de guides d'utilisation, d'outils d'évaluation, de conseils, d'études de cas, de modèles, d'outils de prise en charge ainsi que d'autres services. Cette aide traite des problèmes concernant les personnels, les processus, les technologies et la gestion dans des environnements informatiques complexes, distribués et hétérogènes. Pour plus d’informations sur Microsoft Operations Framework, consultez [http://go.microsoft.com/fwlink/?LinkId=31988](http://go.microsoft.com/fwlink/?LinkId=31988).  
+ Le [Microsoft Operations Framework (MOF)](https://technet.microsoft.com/solutionaccelerators/dd320379.aspx) fournit des conseils qui permet aux organisations d’assurer la fiabilité du système critiques, la disponibilité, la prise en charge et la gestion des produits et technologies Microsoft . L'aide technique apportée par la structure MOF se présente sous forme de livres blancs, de guides d'utilisation, d'outils d'évaluation, de conseils, d'études de cas, de modèles, d'outils de prise en charge ainsi que d'autres services. Cette aide traite des problèmes concernant les personnels, les processus, les technologies et la gestion dans des environnements informatiques complexes, distribués et hétérogènes. 
   
  Grâce au modèle de processus de la structure MOF, les améliorations suivantes sont possibles au sein des entreprises :  
   
@@ -59,8 +50,6 @@ L'utilisation du modèle de processus de la structure MOF pour planifier et impl
   
 -   Vous pouvez déterminer un niveau de capacité particulier en matière de disponibilité, de temps de fonctionnement et de traitement de la charge en fonction de l'accord de niveau de service passé avec les partenaires ou les clients.  
   
--   Si vous mettez à niveau à partir de [!INCLUDE[btsBizTalkServer2000](../includes/btsbiztalkserver2000-md.md)] ou [!INCLUDE[btsBizTalkServer2002](../includes/btsbiztalkserver2002-md.md)] à BizTalk Server, vous devez déterminer si votre matériel existant satisfait la configuration matérielle minimale requise pour BizTalk Server et la configuration requise à partir de l’accord de niveau de service.  
-  
 -   Il vous est possible de définir la configuration de cluster la mieux adaptée aux bases de données de BizTalk Server et répondant le mieux à vos besoins. Les processus d'exécution écrivent dans la base de données de gestion BizTalk, les bases de données MessageBox, la base de données du composant d'analyse des suivis, celle des schémas en étoile BAM, la base de données d'importation principale BAM et celle des archives BAM. Ces bases de données sont donc particulièrement importantes en cas de sinistre et sont prioritaires lorsqu'il s'agit de déterminer les bases de données à mettre en cluster. Seuls les utilisateurs ou les outils écrivent dans les autres bases de données. Pour les bases de données MessageBox, vous pouvez envisager la constitution d'un cluster de quatre serveurs sur un modèle de type actif/actif/actif/passif afin de réduire le plus possible les besoins en matériel.  
   
 -   Selon le scénario choisi, vous pouvez décider de mettre en cluster le serveur de secret principal ou de le restaurer manuellement sur un autre serveur d'authentification unique de l'entreprise. Cette solution est possible mais ne permet pas une disponibilité élevée.  
@@ -72,7 +61,7 @@ L'utilisation du modèle de processus de la structure MOF pour planifier et impl
 ### <a name="configuration-management"></a>Gestion de la configuration  
  La gestion de la configuration permet d'identifier, de contrôler et d'effectuer le suivi de toutes les versions des logiciels, du matériel, des documentations, des processus, des procédures et de l'ensemble des autres composants de l'environnement informatique se trouvant sous le contrôle de la gestion des modifications.  
   
- Durant le processus de gestion de configuration, vous devez créer un plan détaillé de la procédure d'implémentation que vous allez suivre pour la solution hautement disponible à mettre en place sous [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Vous devez également décrire la méthode suivie pour créer la solution. Au niveau le plus haut, la procédure est la suivante :  
+ Pendant le processus de gestion de configuration, vous devez créer un plan détaillé de la façon dont vous vous apprêtez à implémenter votre solution à haute disponibilité pour BizTalk Server. Vous devez également décrire la méthode suivie pour créer la solution. Au niveau le plus haut, la procédure est la suivante :  
   
 -   Le contrôleur de domaine crée les groupes et les comptes du domaine à utiliser dans l'environnement BizTalk Server.  
   
@@ -82,7 +71,7 @@ L'utilisation du modèle de processus de la structure MOF pour planifier et impl
   
 -   L'administrateur BizTalk Server configure le cluster du serveur de secret principal.  
   
--   L'administrateur BizTalk Server installe et configure [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] sur les serveurs de traitement, de réception et d'envoi.  
+-   L’administrateur de BizTalk Server installe et configure de BizTalk Server lors du traitement, réception et l’envoi des serveurs.  
   
 -   L'administrateur BizTalk Server crée les hôtes et installe les instances de ces derniers sur les serveurs adéquats afin de fournir une disponibilité élevée et/ou d'augmenter les capacités.  
   

@@ -1,44 +1,33 @@
 ---
-title: "À l’aide de l’adaptateur MQSeries avec une Version antérieure de l’adaptateur | Documents Microsoft"
-ms.custom: 
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: MQSeries adapters, compatibility
-ms.assetid: 278a13ff-8e46-4af4-a76e-b6d4aad5b768
-caps.latest.revision: "22"
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: ba635b9bc4569f17418fc925c54c64d0fdc67461
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+redirect_url: /biztalk/core/mqseries-adapter-deployment-options
+redirect_document_id: 
+ROBOTS: NOINDEX
+ms.openlocfilehash: 2aa74be2d86bcb8f32661fdcf06727eb6391861d
+ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="using-mqseries-adapter-with-an-earlier-version-of-the-adapter"></a>À l’aide de l’adaptateur MQSeries avec une Version antérieure de l’adaptateur
-Sous Windows, les versions [!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)], [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)] et [!INCLUDE[btsBizTalkServer2002](../includes/btsbiztalkserver2002-md.md)] de l'adaptateur MQSeries sont toutes compatibles avec le même serveur distant WebSphere MQ. Ceci est dû au fait que les versions suivantes des applications COM+ utilisées par l'adaptateur MQSeries peuvent coexister sur le même ordinateur MQSeries WebSphere :  
+Les différentes versions de BizTalk Server de l’adaptateur MQSeries peuvent fonctionner avec le même serveur distant WebSphere MQ sur Windows. Ceci est dû au fait que les versions suivantes des applications COM+ utilisées par l'adaptateur MQSeries peuvent coexister sur le même ordinateur MQSeries WebSphere :  
   
--   **L’application MQSAgent (MQSAgent2) COM +** utilisé avec l’adaptateur MQSeries pour [!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)].  
+-   **L’application MQSAgent (MQSAgent2) COM +** utilisé avec l’adaptateur MQSeries (BizTalk Server 2006) 
   
--   **Application MQSAgent COM +** utilisé avec l’adaptateur MQSeries pour [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)].  
+-   **Application MQSAgent COM +** utilisé avec l’adaptateur MQSeries (BizTalk Server 2004)  
   
--   **Application MQHelper COM +** utilisé avec l’adaptateur MQSeries pour [!INCLUDE[btsBizTalkServer2002](../includes/btsbiztalkserver2002-md.md)].  
+-   **Application MQHelper COM +** utilisé avec l’adaptateur MQSeries (BizTalk Server 2002) 
   
 > [!NOTE]
 >  Lors de la configuration d'une installation côte à côte de ces applications COM+, assurez-vous qu'aucune d'entre elles ne soit configurée de manière à utiliser les mêmes files d'attente MQSeries.  
   
 > [!IMPORTANT]
->  Une installation côte à côte de la version [!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)] de l'application COM+ de l'adaptateur MQSeries avec une version antérieure est uniquement prise en charge si une version antérieure de BizTalk Server n'est pas installée sur l'ordinateur MQSeries WebSphere.  
+>  Installation côte à côte de la version de BizTalk Server 2006 de l’application COM + adaptateur MQSeries avec une version antérieure de l’application COM + MQSeries Adapter n’est possible que si une version antérieure de BizTalk Server n’est pas installée sur le WebSphere Ordinateur MQSeries.  
   
 ### <a name="to-install-the-biztalk-server-2006-version-of-the-mqseries-adapter-com-application-on-a-websphere-mqseries-computer-that-is-running-an-earlier-version-of-the-mqseries-adapter-com-application"></a>Pour installer la version BizTalk Server 2006 de l'application COM+ de l'adaptateur MQSeries sur un ordinateur MQSeries WebSphere exécutant une version antérieure de cette application  
   
-1.  Exécutez le fichier Bootstrap.msi se trouvant dans le répertoire \Platform\BootStrap\ du CD [!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)] afin de copier les fichiers de dépendances MSVCR80.dll et MSVCP80.dll sur l'ordinateur MQSeries WebSphere.  
+1.  Exécutez le bootstrap.msi dans le répertoire \Platform\BootStrap\ du CD BizTalk Server 2006 pour copier les fichiers de dépendances MSVCR80.dll et MSVCP80.dll sur l’ordinateur WebSphere MQSeries.  
   
-2.  Copiez le fichier MQSAgent.dll situé dans le répertoire \Msi\Program Files\ du CD [!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)] sur l'ordinateur MQSeries WebSphere.  
+2.  Copiez le fichier MQSAgent.dll à partir du répertoire \Msi\Program Files\ sur le CD-ROM de BizTalk Server 2006 à l’ordinateur WebSphere MQSeries.  
   
     > [!NOTE]
     >  Si vous envisagez d'utiliser l'utilitaire de suivi MQSAgent, copiez également le fichier MQSTrace.cmd situé dans le même répertoire vers l'ordinateur MQSeries WebSphere. Pour plus d’informations sur l’application MQSAgent utilitaire de suivi consultez [analyse des erreurs de l’adaptateur MQSeries avec les outils de suivi](../core/analyzing-mqseries-adapter-errors-with-the-trace-tools.md).  
@@ -82,4 +71,4 @@ Sous Windows, les versions [!INCLUDE[btsBizTalkServer2006](../includes/btsbiztal
     -   Cliquez sur **Suivant**, puis sur **Terminer**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide de l’adaptateur MQSeries](../core/using-the-mqseries-adapter.md)
+ [Utilisation de l’adaptateur MQSeries](../core/using-the-mqseries-adapter.md)

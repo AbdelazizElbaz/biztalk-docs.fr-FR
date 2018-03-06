@@ -1,5 +1,5 @@
 ---
-title: "Résolution des problèmes d’analyse BAM | Documents Microsoft"
+title: "Résoudre les problèmes d’analyse BAM | Documents Microsoft"
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -8,15 +8,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: e63299a8-5c74-4337-ba20-3213e0c6ea1f
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 92f13d938b0e0523ce6e20d6021bbca24595782f
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 12cd08ae9bee686946c8db14039504411506035f
+ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="troubleshooting-bam"></a>Résolution des problèmes d’analyse BAM
 Cette rubrique fournit des informations permettant de faciliter la résolution des problèmes que vous pouvez rencontrer lors de l'utilisation de l'analyse BAM (Business Activity Monitoring).  
@@ -35,7 +35,7 @@ Cette rubrique fournit des informations permettant de faciliter la résolution d
   
  Cette erreur se produit car le complément BAM n'a pas été ajouté à Excel.  
   
-#### <a name="to-add-the-bam-add-in-to-excel"></a>Pour ajouter le complément BAM à Excel  
+#### <a name="add-the-bam-add-in-to-excel"></a>Ajouter le complément BAM pour Excel  
   
 1.  Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **Microsoft Office**, puis cliquez sur **Microsoft Office Excel**.  
   
@@ -59,9 +59,9 @@ Cette rubrique fournit des informations permettant de faciliter la résolution d
 -   C:\Documents and Settings\\< nom d’utilisateur\>\AppData\Local\Temp\VBE  
   
 ## <a name="bam-portal-cannot-connect"></a>Le portail BAM ne parvient pas à se connecter  
- Dans [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] ou [!INCLUDE[btsWinVista](../includes/btswinvista-md.md)], vous devez exécuter le portail BAM en tant qu'administrateur.  
+Exécuter le portail BAM en tant qu’administrateur.  
   
-#### <a name="to-run-the-bam-portal-on-windows-server-2008-r2-or-windows-7"></a>Pour exécuter le portail BAM sur Windows Server 2008 R2 ou Windows 7  
+#### <a name="run-the-bam-portal"></a>Exécuter le portail BAM
   
 1.  Cliquez sur **Démarrer**, pointez sur **tous les programmes**, avec le bouton droit **Internet Explorer**, puis cliquez sur **exécuter en tant qu’administrateur**.  
   
@@ -82,9 +82,9 @@ Cette rubrique fournit des informations permettant de faciliter la résolution d
  L'exportation d'une définition BAM vers localhost n'est pas prise en charge. De même, l'importation d'une définition BAM à partir de localhost n'est pas prise en charge.  
   
 ## <a name="alerts-do-not-work-after-upgrading-sql-server-editions"></a>Les alertes ne fonctionnent plus après la mise à niveau des différentes éditions de SQL Server  
- Si vous avez mis à niveau une édition de [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] vers une autre (par exemple, une édition Standard vers une édition Entreprise), les alertes BAM ne démarreront plus. Pour résoudre ce problème, supprimez les alertes BAM, puis recréez-les ou mettez à niveau [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Notification Service.  
+ Si vous avez mis à niveau une édition de SQL Server vers une autre édition (par exemple, à partir de l’Édition Standard à l’édition Enterprise), les alertes BAM ne redémarre pas. Pour résoudre ce problème, supprimez les alertes BAM et leur recréation ou mettre à niveau le Service de Notification de SQL Server.  
   
-#### <a name="to-upgrade-the-sql-server-notification-service"></a>Pour mettre à niveau SQL Server Notification Service  
+#### <a name="upgrade-the-sql-server-notification-service"></a>Mettre à niveau le Service de Notification de SQL Server  
   
 1.  Cliquez sur **Démarrer**, cliquez sur **tous les programmes**, cliquez sur **Microsoft SQL Server 2005**, puis cliquez sur **invite de commandes de Service de Notification**.  
   
@@ -93,8 +93,9 @@ Cette rubrique fournit des informations permettant de faciliter la résolution d
      `nscontrol.exe upgrade -name <instanceName>`  
   
 ## <a name="objectdisposedexception-exception"></a>ObjectDisposedException Exception  
- Si votre application utilise l’intercepteur WF BAM 3.5, vous pouvez recevoir le message d’erreur suivant : **System.ObjectDisposedException : Impossible d’accéder à un objet supprimé**. Pour plus d’informations sur ce message d’erreur, consultez [ObjectDisposedException Exception](http://go.microsoft.com/fwlink/?LinkID=195338) (http://go.microsoft.com/fwlink/?LinkID=195338).   
-Pour résoudre ce problème, installez le correctif 960754 disponible à l’adresse [http://go.microsoft.com/fwlink/?LinkID=195339](http://go.microsoft.com/fwlink/?LinkID=195339).  
+ Si votre application utilise l’intercepteur WF BAM 3.5, vous pouvez recevoir le message d’erreur suivant : **System.ObjectDisposedException : Impossible d’accéder à un objet supprimé**. Pour plus d’informations sur ce message d’erreur, consultez [ObjectDisposedException Exception](https://support.microsoft.com/help/960754). 
+
+Pour résoudre ce problème, installez le [correctif 960754](https://support.microsoft.com/help/960754). 
   
 ## <a name="workbook-has-lost-its-vba-project-activex-controls-and-other-programmability-related-features"></a>Un classeur a perdu son projet VBA, ses contrôles ActiveX ainsi que d'autres fonctionnalités de programmabilité  
  Lorsque vous tentez d’utiliser BAM.xla dans Microsoft Excel, vous pouvez recevoir l’erreur suivante :  

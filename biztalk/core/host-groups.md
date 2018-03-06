@@ -7,24 +7,20 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- host groups, privileges
-- Windows groups, host groups
-- host groups, Windows groups
-- host groups, about host groups
-- host groups
 ms.assetid: 0d92478b-b3a2-4c5a-925e-5495ee481e82
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 98e3798e42442e1a6533e4f286d194c8e2474be6
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 4b3132b4084ed0d153895e252c5c64419ce0ac72
+ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="host-groups"></a>Groupes d'hôtes
+
+## <a name="overview"></a>Vue d'ensemble
 Le groupe d'hôtes est le groupe Windows (appelé groupe Utilisateurs d'applications BizTalk par défaut) que vous utilisez pour vos comptes avec accès aux hôtes BizTalk In-process (processus hôtes dans BizTalk Server). Il est conseillé d'utiliser un groupe d'hôtes pour chaque hôte In-process de votre environnement.  
   
  Vous ne pouvez associer un ordinateur hôte à un groupe Windows (appelé un *groupe hôte*). Ce groupe d'hôtes doit avoir une connexion et des privilèges SQL Server dans toutes les bases de données BizTalk Server appropriées. Lorsque vous associez un hôte au groupe d'hôtes, vous accordez à cet hôte les privilèges du groupe.  
@@ -39,12 +35,13 @@ Le groupe d'hôtes est le groupe Windows (appelé groupe Utilisateurs d'applicat
   
 > [!NOTE]
 >  Si vous voulez créer un groupe d'hôtes local, vous pouvez définir un groupe Windows local et assigner un utilisateur du domaine comme membre du groupe. Si vous voulez spécifier un groupe Windows local pour l'hôte, vous pouvez utiliser le membre du groupe Windows, qu'il s'agisse d'un utilisateur du domaine ou d'un utilisateur local, comme utilisateur de connexion de l'instance d'hôte.  
-  
+
+## <a name="required-permissions"></a>Autorisations requises  
  Le groupe d'hôtes requiert les privilèges suivants :  
   
 -   Il doit être membre du rôle SQL Server BTS_HOST_USERS dans les bases de données suivantes :  
   
-    -   Base de données de gestion BizTalk (également appelée Base de données de configuration dans [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)])  
+    -   Administration de BizTalk 
   
     -   MessageBox  
   
@@ -59,7 +56,7 @@ Le groupe d'hôtes est le groupe Windows (appelé groupe Utilisateurs d'applicat
 -   Il doit être membre du rôle SQL Server BAM_EVENT_WRITER dans la base de données d'importation principale BAM.  
   
 > [!NOTE]
->  Si vous désignez un hôte comme hôte de suivi, l'Administration de BizTalk Server supprime automatiquement le groupe d'hôtes BizTalk des rôles SQL Server pour la base de données des suivis BizTalk. Vous devez supprimer manuellement le groupe d'hôtes BizTalk dans les rôles SQL Server pour la base de données de gestion BizTalk et la base de données MessageBox. Pour plus d’informations sur la désignation d’un ordinateur hôte comme hôte de suivi, consultez [comment modifier les propriétés de l’hôte](../core/how-to-modify-host-properties.md).  
+>  Si vous désignez un hôte comme hôte de suivi, l'Administration de BizTalk Server supprime automatiquement le groupe d'hôtes BizTalk des rôles SQL Server pour la base de données des suivis BizTalk. Vous devez supprimer manuellement le groupe d'hôtes BizTalk dans les rôles SQL Server pour la base de données de gestion BizTalk et la base de données MessageBox. Pour plus d’informations sur la désignation d’un ordinateur hôte comme hôte de suivi, consultez [modifier les propriétés de l’hôte](../core/how-to-modify-host-properties.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Entités](../core/entities.md)

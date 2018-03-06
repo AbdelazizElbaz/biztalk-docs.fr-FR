@@ -1,5 +1,5 @@
 ---
-title: "L’API BAM (exemple BizTalk Server) | Documents Microsoft"
+title: Exemple API BAM | Documents Microsoft
 ms.custom: 
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -7,21 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- BAM, APIs
-- examples, BAM
-- BAM, examples
-- APIs, BAM
 ms.assetid: 32a925f2-c7f4-4111-9c59-8865f15c6a89
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f65b98871f054d96caa278e48de19ad669157b1f
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 7e181af5766231ed9a7d828b49e2d840a47f216c
+ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="bam-api-biztalk-server-sample"></a>API BAM (exemple BizTalk Server)
 L'exemple API BAM montre comment incorporer des appels à l'API BAM dans une application pour enregistrer des informations clés que vous pouvez surveiller.  
@@ -94,7 +89,7 @@ L'exemple API BAM montre comment incorporer des appels à l'API BAM dans une app
   
  Le **Global** classe définit des constantes qui sont utilisées par l’exemple d’application, telles que le nombre de threads pour créer et le pourcentage de bons de commande à rejeter.  
   
- Outre la solution [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], l'exemple contient également un fichier Microsoft [!INCLUDE[btsExcel](../includes/btsexcel-md.md)] qui définit les activités.  
+ En plus de la solution Visual Studio, l’exemple contient également un fichier Microsoft Excel qui définit les activités.  
   
 ## <a name="where-to-find-this-sample"></a>Accès à l'exemple  
  Vous pouvez trouver cet exemple à  *\<exemples de chemin\>*\BAM\BamApiSample.  
@@ -119,14 +114,11 @@ L'exemple API BAM montre comment incorporer des appels à l'API BAM dans une app
 |Shipment_config.xml|Configuration de l'intercepteur d'expédition.|  
 |Shipment_interceptor.bin|Intercepteur d'expédition sérialisé.|  
   
-## <a name="how-to-use-this-sample"></a>L’utilisation de cet exemple  
- Utilisez la procédure suivante pour exécuter l'exemple API BAM et afficher les résultats.  
+## <a name="run-the-bam-api-sample"></a>Exécuter l’exemple API BAM  
   
-#### <a name="to-run-the-bam-api-sample"></a>Pour exécuter l'exemple API BAM  
+1.  Ouvrez une invite de commandes en tant qu’administrateur et exécutez  *\<exemples de chemin\>*\BAM\ BamApiSample\setup.bat.  
   
-1.  Ouvrez une invite de commandes et exécutez  *\<exemples de chemin\>*\BAM\ BamApiSample\setup.bat. Si vous utilisez [!INCLUDE[btsWinVista](../includes/btswinvista-md.md)] ou [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)], ouvrez l'invite de commandes en tant qu'administrateur.  
-  
-2.  Démarrer [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], puis ouvrez le  *\<exemples de chemin\>*\BAM\ BamApiSample\BamApiSample.sln solution. Si vous utilisez [!INCLUDE[btsWinVista](../includes/btswinvista-md.md)] ou [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)], démarrez [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] en tant qu'administrateur.  
+2.  Démarrez Visual Studio en tant qu’administrateur, puis ouvrez le  *\<exemples de chemin\>*\BAM\ BamApiSample\BamApiSample.sln solution. 
   
     > [!IMPORTANT]
     >  La ligne `//#define Interceptor` dans le fichier BamApiSample.cs doit être commentée. Ne supprimez pas le « // » de cette ligne. L'exemple API BAM utilise uniquement le code ne se trouvant pas à l'intérieur d'une directive de préprocesseur `#if Interceptor`.  
@@ -157,7 +149,7 @@ L'exemple API BAM montre comment incorporer des appels à l'API BAM dans une app
   
 5.  Après une minute environ, appuyez sur CTRL+C ou fermez la fenêtre de l'invite de commandes pour arrêter le programme BamApiSample.  
   
-#### <a name="to-view-the-results-of-running-the-bam-api-sample"></a>Pour afficher les résultats de l'exécution de l'exemple API BAM  
+## <a name="view-the-results"></a>Afficher les résultats
   
 1.  Ouvrez SQL Server Management Studio.  
   

@@ -7,34 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- certificates, HTTP adapters
-- HTTP adapters, client certificates
-- HTTP adapters, POST requests
-- HTTP adapters, GET requests
-- HTTP adapters, batching
-- HTTP adapters, suspending failed requests
-- HTTP adapters, chunked encoding
-- messages, batching
-- HTTP GET requests, about HTTP GET requests
-- HTTP GET requests, process flow
-- batching, messages
-- HTTP adapters, process flow
-- HTTP POST requests
-- HTTP adapters, status codes
-- chuncked encoding, receive adapters
-- HTTP GET requests
-- batching, HTTP adapters
 ms.assetid: 9008833c-5a02-4fb4-a43e-09ca28a21eff
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9ed0c24184d35a836435db3a09202551b7b50ddd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9f2f309a129c66d11d019b28b8ffc2b51d68e93d
+ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="http-receive-adapter"></a>Adaptateur de réception HTTP
 L'emplacement de réception défini pour l'adaptateur de réception HTTP est une URL distincte configurée via la console Administration de BizTalk Server.  
@@ -110,11 +92,11 @@ L'emplacement de réception défini pour l'adaptateur de réception HTTP est une
  L'adaptateur de réception HTTP envoie des messages au serveur par lots. La taille du lot utilisé pour envoyer les messages au serveur peut être configurée dans le gestionnaire de réception de l'adaptateur HTTP.  
   
 ## <a name="http-receive-adapter-support-for-suspending-failed-requests"></a>Prise en charge de l'adaptateur de réception HTTP pour la suspension des demandes ayant échoué  
- Le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] adaptateur de réception HTTP a un paramètre de configuration, **suspendre les requêtes ayant échoué**pour contrôler ce qui se passe avec une requête HTTP en cas d’échec du traitement entrant en raison d’une erreur de pipeline de réception, une erreur de mappage, ou un Échec de routage. Il peut prendre deux valeurs :  
+ L’adaptateur de réception HTTP BizTalk Server dispose d’un paramètre de configuration, **suspendre les requêtes ayant échoué**pour contrôler ce qui se passe avec une requête HTTP en cas d’échec du traitement entrant en raison d’une erreur de pipeline de réception, une erreur de mappage, ou un Échec de routage. Il peut prendre deux valeurs :  
   
--   **La valeur est false.** Il s'agit du paramètre par défaut. L'adaptateur de réception HTTP ignore les messages dont le traitement entrant a échoué en raison d'un échec de pipeline de réception, d'une erreur de mappage ou d'un échec de routage. Un code d'état d'erreur 401 ou 500 est également envoyé au client. Ce comportement est semblable à celui de l'adaptateur de réception HTTP dans [!INCLUDE[btsBizTalkServer2004](../includes/btsbiztalkserver2004-md.md)].  
+-   **La valeur est false.** Il s'agit du paramètre par défaut. L'adaptateur de réception HTTP ignore les messages dont le traitement entrant a échoué en raison d'un échec de pipeline de réception, d'une erreur de mappage ou d'un échec de routage. Un code d'état d'erreur 401 ou 500 est également envoyé au client. 
   
--   **La valeur est true.** L'adaptateur de réception HTTP suspend les messages dont le traitement entrant a échoué en raison d'un échec de pipeline de réception, d'une erreur de mappage ou d'un échec de routage. Pour unidirectionnel ports de réception un **accepté** code d’état 202 est envoyé au client. Pour bidirectionnelle des ports de réception un **erreur** code d’état 500 est envoyé au client.  
+-   **True.** L'adaptateur de réception HTTP suspend les messages dont le traitement entrant a échoué en raison d'un échec de pipeline de réception, d'une erreur de mappage ou d'un échec de routage. Pour unidirectionnel ports de réception un **accepté** code d’état 202 est envoyé au client. Pour bidirectionnelle des ports de réception un **erreur** code d’état 500 est envoyé au client.  
   
 ## <a name="chunked-encoding-support-for-the-http-receive-adapter"></a>Prise en charge du codage mémorisé en bloc pour l'adaptateur de réception HTTP  
  L'adaptateur de réception HTTP accepte les requêtes HTTP avec les messages à corps codé mémorisé en bloc. L'adaptateur de réception utilise le codage mémorisé en bloc pour envoyer des messages de réponse lorsque la taille du corps est supérieure à 4 Ko. Le codage mémorisé en bloc peut être désactivé en définissant l’entrée de Registre DWORD décrite dans [des paramètres de réglage et de Configuration de l’adaptateur HTTP](../core/http-adapter-configuration-and-tuning-parameters.md)  
