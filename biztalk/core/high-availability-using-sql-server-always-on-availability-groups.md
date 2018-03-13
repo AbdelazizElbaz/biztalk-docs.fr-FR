@@ -8,15 +8,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 4511a578-77d2-49ee-99bd-f0406ad625d0
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 52579934be36d4bb42fa4b299f54b66fd6af3894
-ms.sourcegitcommit: 654a9586d1232ac332a1675b8a4fae832a0d559a
+ms.openlocfilehash: d065013cb4975e6d37e2ab50211c5207852ece64
+ms.sourcegitcommit: 6fe505d37e81dc2da43f89548e8977b60a6f5dbd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="high-availability-using-sql-server-always-on-availability-groups"></a>Haute disponibilité à l’aide de SQL Server groupes de disponibilité AlwaysOn
 Configurer la haute disponibilité à l’aide de groupes de disponibilité AlwaysOn de SQL Server.
@@ -103,7 +103,9 @@ Les travaux d'Agent SQL Server suivants sont associés à BizTalk Server. Les tr
     - Monitor BizTalk Server (BizTalkMgmtDb) 
 - Travaux de BizTalkMsgBoxDb : 
     - MessageBox_DeadProcesses_Cleanup_BizTalkMsgBoxDb 
-    - MessageBox_Message_Cleanup_BizTalkMsgBoxDb MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb MessageBox_Parts_Cleanup_BizTalkMsgBoxDb 
+    - MessageBox_Message_Cleanup_BizTalkMsgBoxDb
+    - MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb
+    - MessageBox_Parts_Cleanup_BizTalkMsgBoxDb 
     - MessageBox_UpdateStats_BizTalkMsgBoxDb 
     - Operations_OperateOnInstances_OnMaster_BizTalkMsgBoxDb 
     - PurgeSubscriptionsJob_BizTalkMsgBoxDb 
@@ -157,9 +159,9 @@ Cette configuration peut également être effectuée à l’aide des Instances d
     1. Arrêtez tous les services BizTalk et SSO de l’entreprise sur le serveur BizTalk. Arrêter le Service SQL Agent sur SQL Server. 
     2. Sur BizTalk Server, modifiez SampleUpdateInfo.xml dans le dossier suivant : 
  
-        ordinateur 32 bits :`%SystemRoot%\Program Files\Microsoft BizTalk Server 20xx\Schema\Restore`
+        ordinateur 32 bits : `%SystemRoot%\Program Files\Microsoft BizTalk Server 20xx\Schema\Restore`
  
-        ordinateur 64 bits :`%SystemRoot%\Program Files (x86)\Microsoft BizTalk Server 20xx\Bins32\Schema\Restore`
+        ordinateur 64 bits : `%SystemRoot%\Program Files (x86)\Microsoft BizTalk Server 20xx\Bins32\Schema\Restore`
  
             1. Replace "SourceServer" with the source server name (old SQL Server hosting old databases).  
             2. Replace "DestinationServer" with the name of the destination server, which should be the availability group listener name.  
@@ -167,9 +169,9 @@ Cette configuration peut également être effectuée à l’aide des Instances d
 
     3. Ouvrez une invite de commandes et accédez à : 
  
-        ordinateur 32 bits :`%SystemRoot%\Program Files\Microsoft BizTalk Server 20xx\Schema\Restore` 
+        ordinateur 32 bits : `%SystemRoot%\Program Files\Microsoft BizTalk Server 20xx\Schema\Restore` 
  
-        ordinateur 64 bits :`%SystemRoot%\Program Files (x86)\Microsoft BizTalk Server 20xx\Bins32\Schema\Restore` 
+        ordinateur 64 bits : `%SystemRoot%\Program Files (x86)\Microsoft BizTalk Server 20xx\Bins32\Schema\Restore` 
  
         À l’invite de commandes, exécutez :  
     `cscript UpdateDatabase.vbs SampleUpdateInfo.xml`  
@@ -178,15 +180,15 @@ Cette configuration peut également être effectuée à l’aide des Instances d
 
     4. Copiez le fichier SampleUpdateInfo.xml modifié dans le dossier suivant sur chaque ordinateur BizTalk Server dans ce groupe BizTalk : 
  
-        ordinateur 32 bits :`%SystemRoot%\Program Files\Microsoft BizTalk Server 20xx\Schema\Restore` 
+        ordinateur 32 bits : `%SystemRoot%\Program Files\Microsoft BizTalk Server 20xx\Schema\Restore` 
  
-        ordinateur 64 bits :`%SystemRoot%\Program Files (x86)\Microsoft BizTalk Server 20xx\Bins32\Schema\Restore` 
+        ordinateur 64 bits : `%SystemRoot%\Program Files (x86)\Microsoft BizTalk Server 20xx\Bins32\Schema\Restore` 
  
     5. Sur chaque ordinateur dans le groupe BizTalk Server, ouvrez une invite de commandes et accédez à : 
  
-        ordinateur 32 bits :`%SystemRoot%\Program Files\Microsoft BizTalk Server 20xx\Schema\Restore`
+        ordinateur 32 bits : `%SystemRoot%\Program Files\Microsoft BizTalk Server 20xx\Schema\Restore`
  
-        ordinateur 64 bits :`%SystemRoot%\Program Files (x86)\Microsoft BizTalk Server 20xx\Bins32\Schema\Restore` 
+        ordinateur 64 bits : `%SystemRoot%\Program Files (x86)\Microsoft BizTalk Server 20xx\Bins32\Schema\Restore` 
  
         À l’invite de commandes, exécutez :  
     `cscript UpdateRegistry.vbs SampleUpdateInfo.xml` 
@@ -201,7 +203,7 @@ Cette configuration peut également être effectuée à l’aide des Instances d
 ## <a name="requirements"></a>Spécifications 
 * BizTalk Server Enterprise 2016
 * SQL Server 2016 Enterprise
-* Windows Server 2012 R2
+* Windows Server 2012 R2
 * Windows Server 2016 
 
 ### <a name="availability-group-listener-configured-with-non-default-port-1433"></a>Écouteur de groupe de disponibilité configuré sans valeur par défaut du port (1433) 
