@@ -1,27 +1,27 @@
 ---
-title: "Procédure pas à pas (X12) : Réception d’échanges EDI et envoi d’un accusé de réception | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas (X12) : Réception d’échanges EDI et envoi d’un accusé de réception | Documents Microsoft'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 25d2b5f3-6bd1-413c-aace-e4dd71f80403
-caps.latest.revision: "45"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 79eb16ac77f2f1573735c36b19fa6aa68c001c76
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="walkthrough-x12-receiving-edi-interchanges-and-sending-back-an-acknowledgement"></a>Procédure pas à pas (X12) : réception des échanges EDI et envoi d'un accusé de réception
 Cette procédure pas à pas fournit des instructions détaillées sur la création d'une solution de réception d'échanges EDI à l'aide de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Dans cette solution, un échange EDI est envoyé par un partenaire commercial, Fabrikam, à un autre partenaire commercial, Contoso.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Configuration requise  
  Vous devez être connecté en tant que membre du groupe d'administrateurs [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ou du groupe Opérateurs B2B de  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
 ## <a name="how-the-solution-receives-edi-interchanges"></a>Réception des échanges EDI par la solution  
@@ -156,7 +156,7 @@ Cette procédure pas à pas fournit des instructions détaillées sur la créati
   
 7.  Dans **pipeline d’envoi**, sélectionnez **EdiSend**.  
   
-8.  Dans l’arborescence de la console, sélectionnez **filtres**. Spécifiez un filtre pour vous abonner à l'échange EDI. Par exemple, pour **propriété**, entrez **BTS. MessageType**; pour **opérateur**, entrez  **==** ; et pour **valeur** Entrez le schéma de l’échange, par exemple, http:// schemas.microsoft.com/BizTalk/Edi/X12/2006#X12_00401_850.  
+8.  Dans l’arborescence de la console, sélectionnez **filtres**. Spécifiez un filtre pour vous abonner à l'échange EDI. Par exemple, pour **propriété**, entrez **BTS. MessageType**; pour **opérateur**, entrez **==**; et pour **valeur** Entrez le schéma de l’échange, par exemple, http://schemas.microsoft.com/BizTalk/Edi/X12/2006#X12_00401_850.  
   
     > [!NOTE]
     >  Le paramètre spécifié ci-dessus garantit que les échanges, et non les accusés de réception, seront envoyés vers le dossier associé au port d'envoi.  
@@ -181,7 +181,7 @@ Cette procédure pas à pas fournit des instructions détaillées sur la créati
   
 7.  Dans **pipeline d’envoi**, sélectionnez **EdiSend**.  
   
-8.  Dans l’arborescence de la console, sélectionnez **filtres**. Spécifiez un filtre pour vous abonner aux accusés de réception 997. Par exemple, pour **propriété**, entrez **BTS. MessageType**; pour **opérateur**, entrez  **==** ; et pour **valeur** Entrez le schéma pour l’accusé de réception, par exemple, `http://schemas.microsoft.com/Edi/X12#X12_997_Root`.  
+8.  Dans l’arborescence de la console, sélectionnez **filtres**. Spécifiez un filtre pour vous abonner aux accusés de réception 997. Par exemple, pour **propriété**, entrez **BTS. MessageType**; pour **opérateur**, entrez **==**; et pour **valeur** Entrez le schéma pour l’accusé de réception, par exemple, `http://schemas.microsoft.com/Edi/X12#X12_997_Root`.  
   
 9. Cliquez sur **OK**.  
   
@@ -203,7 +203,7 @@ Cette procédure pas à pas fournit des instructions détaillées sur la créati
   
 7.  Dans **pipeline d’envoi**, sélectionnez **EdiSend**.  
   
-8.  Dans l’arborescence de la console, sélectionnez **filtres**. Spécifiez un filtre pour vous abonner aux accusés de réception TA1. Par exemple, pour **propriété**, entrez **BTS. MessageType**; pour **opérateur**, entrez  **==** ; et pour **valeur** Entrez le schéma de l’accusé de réception, par exemple, http:// schemas.microsoft.com/Edi/X12#X12_TA1_Root.  
+8.  Dans l’arborescence de la console, sélectionnez **filtres**. Spécifiez un filtre pour vous abonner aux accusés de réception TA1. Par exemple, pour **propriété**, entrez **BTS. MessageType**; pour **opérateur**, entrez **==**; et pour **valeur** Entrez le schéma pour l’accusé de réception, par exemple, http://schemas.microsoft.com/Edi/X12#X12_TA1_Root.  
   
 9. Cliquez sur **OK**.  
   
@@ -262,7 +262,7 @@ Cette procédure pas à pas fournit des instructions détaillées sur la créati
     1.  Sur le **identificateurs** page sous le **paramètres de l’échange** section, entrez des valeurs pour les champs de qualificateur et identificateur (**ISA5**, **ISA6**, **ISA7**, et **ISA8**) qui correspondent aux valeurs de ces champs d’en-tête dans le message de test.  
   
         > [!NOTE]
-        >  Les champs de qualificateur et d'identificateur pour l'expéditeur et le récepteur permettent à [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] de résoudre l'accord. Il compare les valeurs de **ISA5**, **ISA6**, **ISA7**, et **ISA8** dans l’en-tête d’échange à celles dans les propriétés d’un accord. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]sera également l’accord en comparant le qualificateur de l’expéditeur et l’identificateur (sans le qualificateur du récepteur et l’identificateur). Si [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ne peut pas résoudre l'accord, il utilise les propriétés d'accord de secours.  
+        >  Les champs de qualificateur et d'identificateur pour l'expéditeur et le récepteur permettent à [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] de résoudre l'accord. Il compare les valeurs de **ISA5**, **ISA6**, **ISA7**, et **ISA8** dans l’en-tête d’échange à celles dans les propriétés d’un accord. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] sera également l’accord en comparant le qualificateur de l’expéditeur et l’identificateur (sans le qualificateur du récepteur et l’identificateur). Si [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ne peut pas résoudre l'accord, il utilise les propriétés d'accord de secours.  
   
         > [!NOTE]
         >  Si vous utilisez le fichier SamplePO.txt à partir de « EDI Interface Developer Tutorial » comme message test, définissez **ISA5** à **ZZ**, **ISA6** à **THEM**, **ISA7** à **ZZ**, et **ISA8** à **US**.  
@@ -291,7 +291,7 @@ Cette procédure pas à pas fournit des instructions détaillées sur la créati
   
         |Utiliser|Pour effectuer cette opération|  
         |--------------|----------------|  
-        |**Default**|Sélectionnez **par défaut**. **Remarque :** lorsque vous sélectionnez cette ligne en tant que la valeur par défaut, les valeurs de **GS1**, **GS2**, **GS3**, **GS7**et **GS8** sont utilisées même si les valeurs de **Type de Transaction**, **Version/publication**, et **espace de noms cible** ne sont pas une correspondance pour le Message.|  
+        |**Par défaut**|Sélectionnez **par défaut**. **Remarque :** lorsque vous sélectionnez cette ligne en tant que la valeur par défaut, les valeurs de **GS1**, **GS2**, **GS3**, **GS7**, et  **GS8** sont utilisées même si les valeurs de **Type de Transaction**, **Version/publication**, et **espace de noms cible** ne sont pas une correspondance pour le message.|  
         |**Type de transaction**|Sélectionnez le type de message de votre message test, **850 - bon de commande**.|  
         |**Version/publication**|Entrez la version EDI, **00401**.|  
         |**Espace de noms cible**|Sélectionnez **http://schemas.microsoft.com/Edi/X12**.|  
@@ -304,7 +304,7 @@ Cette procédure pas à pas fournit des instructions détaillées sur la créati
         |**GS8**|Vérifiez que la version EDI a été entrée, **00401**.|  
   
         > [!NOTE]
-        >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]effet de définir les valeurs de GS01, GS02, GS03, GS04, GS05, GS07 et GS08 des accusés de réception sortants selon les valeurs entrées pour **Type de Transaction**, **Version/publication**, et **cible espace de noms**. Le pipeline d'envoi tente de faire correspondre le type de transaction, la version X12 et l'espace de noms cible avec les valeurs correspondantes dans l'en-tête du message. Si réussie, elle utilise les valeurs GS associées le **Type de Transaction**, **Version/publication**, et **espace de noms cible** valeurs.  
+        >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] effet de définir les valeurs de GS01, GS02, GS03, GS04, GS05, GS07 et GS08 des accusés de réception sortants selon les valeurs entrées pour **Type de Transaction**, **Version/publication**, et **cible espace de noms**. Le pipeline d'envoi tente de faire correspondre le type de transaction, la version X12 et l'espace de noms cible avec les valeurs correspondantes dans l'en-tête du message. Si réussie, elle utilise les valeurs GS associées le **Type de Transaction**, **Version/publication**, et **espace de noms cible** valeurs.  
   
 8.  Effectuer les tâches suivantes sur le **Contoso -> Fabrikam** onglet.  
   
@@ -342,4 +342,4 @@ Cette procédure pas à pas fournit des instructions détaillées sur la créati
 4.  Ouvrez le dossier que vous avez associé au port d'envoi de l'accusé de réception TA1, puis vérifiez qu'il contient bien un accusé de réception TA1.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Développement et la configuration des Solutions EDI BizTalk Server](../core/developing-and-configuring-biztalk-server-edi-solutions.md)
+ [Développement et configuration de solutions EDI BizTalk Server](../core/developing-and-configuring-biztalk-server-edi-solutions.md)

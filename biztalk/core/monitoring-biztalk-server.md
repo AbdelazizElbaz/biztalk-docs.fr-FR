@@ -1,23 +1,23 @@
 ---
-title: "Surveiller l’intégrité et les performances à l’aide des outils intégrés | Documents Microsoft"
-description: "Disponibilité, intégrité et performances, analyse des tâches dans BizTalk Server et l’analyse de l’Agent SQL"
-ms.custom: 
+title: Surveiller l’intégrité et les performances à l’aide des outils intégrés | Documents Microsoft
+description: Disponibilité, intégrité et performances, analyse des tâches dans BizTalk Server et l’analyse de l’Agent SQL
+ms.custom: ''
 ms.date: 01/14/2016
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 96e244dc-b826-4a9f-a4e1-6dabc41eb144
-caps.latest.revision: "20"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: e6652c962d8ef522128dfb4c9febeca55ce42669
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="monitoring-biztalk-server"></a>Analyse de BizTalk Server
 L'analyse régulière de votre infrastructure et de vos applications BizTalk Server ainsi que la résolution des problèmes détectés vous permettent d'assurer la disponibilité de vos applications BizTalk Server auprès de vos utilisateurs. L'objectif de cette analyse est de réduire au minimum la durée pendant laquelle une exception n'est pas détectée et, par conséquent, non résolue. Par ailleurs, cette analyse vous permet également de détecter des situations susceptibles de provoquer une exception.  
@@ -107,12 +107,12 @@ L'analyse régulière de votre infrastructure et de vos applications BizTalk Ser
   
 ## <a name="more-good-stuff"></a>Autre contenu intéressant  
   
--   [À l’aide de la Console Administration de BizTalk Server](../core/using-the-biztalk-server-administration-console.md)  
+-   [Utilisation de la console Administration de BizTalk Server](../core/using-the-biztalk-server-administration-console.md)  
   
 -   [Affichage des messages suivis et les données d’Instance](../core/viewing-tracked-message-and-instance-data.md)  
   
--   [Surveillance des Solutions EDI et AS2](../core/monitoring-edi-and-as2-solutions.md)  
+-   [Surveillance des solutions EDI et AS2](../core/monitoring-edi-and-as2-solutions.md)  
   
--   [Suivi des dépendances entre les artefacts dans une Application BizTalk Server](../core/tracking-dependencies-between-artifacts-in-a-biztalk-server-application.md)
+-   [Suivi des dépendances entre les artefacts dans une application BizTalk Server](../core/tracking-dependencies-between-artifacts-in-a-biztalk-server-application.md)
 
 - [Compteurs de performance](performance-counters.md)

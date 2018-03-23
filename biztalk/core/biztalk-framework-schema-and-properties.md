@@ -1,22 +1,22 @@
 ---
-title: "Propriétés et schéma de l’infrastructure de BizTalk | Documents Microsoft"
-ms.custom: 
+title: Propriétés et schéma de l’infrastructure de BizTalk | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8986e4a7-0c0a-415f-8a74-4fca71d3f1b5
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 992f0fb9c66ee00cf425609db4231a57bf5782c4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="biztalk-framework-schema-and-properties"></a>Schéma et propriétés BizTalk Framework
 Le **http://schemas.microsoft.com/BizTalk/2003/btf2-properties** espace de noms contient les propriétés que vous pouvez utiliser pour définir les propriétés de contexte de message et de partie pour le composant de pipeline Désassembleur BizTalk Framework. Le composant de pipeline Désassembleur BizTalk Framework utilise ces propriétés pour générer les en-têtes appropriés dans le message qui est créé. Le tableau suivant décrit les propriétés BizTalk Framework.  
@@ -49,5 +49,5 @@ Le **http://schemas.microsoft.com/BizTalk/2003/btf2-properties** espace de noms 
 |**commitmentRct_commitmentCode**|xs:QName|Spécifie le nom complet (dans XSD) qui spécifie un état plus spécifique concernant la décision de traitement.|  
   
 ## <a name="see-also"></a>Voir aussi  
--  **Les propriétés de contexte du message**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]   
--  [Configuration des composants de Pipeline natifs](../core/configuring-native-pipeline-components.md)
+-  **Propriétés de contexte de message** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]   
+-  [Configuration des composants de pipeline natifs](../core/configuring-native-pipeline-components.md)

@@ -1,22 +1,22 @@
 ---
-title: "Étape 1 : Tester le gestionnaire sortant de l’adaptateur d’écho | Documents Microsoft"
-ms.custom: 
+title: 'Étape 1 : Tester le gestionnaire sortant de l’adaptateur d’écho | Documents Microsoft'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ad4a8164-a584-436f-b20b-4c884f6e2b37
-caps.latest.revision: "21"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: ba2b1d6586588d17c58c0ca9a74cb11a7a9bd9f2
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="step-1-test-outbound-handler-of-the-echo-adapter"></a>Étape 1 : Tester le gestionnaire sortant de l’adaptateur d’écho
 ![Étape 1 sur 2](../../adapters-and-accelerators/adapter-sql/media/step-1of2.gif "Step_1of2")  
@@ -25,7 +25,7 @@ ms.lasthandoff: 10/17/2017
   
  Dans cette étape, vous allez tester les trois opérations sortantes fournies par l’adaptateur de l’écho. Vous effectuerez les opérations à l’aide de Visual Studio, l’ajouter adaptateur Service référence Visual Studio plug-in et le code personnalisé.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Configuration requise  
  Pour effectuer cette étape, vous devez avoir terminé [didacticiel 1 : développer l’adaptateur Echo](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md).  
   
 ## <a name="create-a-visual-studio-project"></a>Créer un projet Visual Studio  

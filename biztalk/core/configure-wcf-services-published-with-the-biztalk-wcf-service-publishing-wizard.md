@@ -1,11 +1,11 @@
 ---
-title: "Comment configurer des Services WCF publiés à l’Assistant Publication de services WCF BizTalk | Documents Microsoft"
-ms.custom: 
+title: Comment configurer des Services WCF publiés à l’Assistant Publication de services WCF BizTalk | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF services, WCF Service Publishing Wizard
@@ -13,15 +13,15 @@ helpviewer_keywords:
 - configuring, WCF services
 - WCF Service Publishing Wizard
 ms.assetid: f51b86c0-8c19-453d-a66d-3f373e9f096e
-caps.latest.revision: "26"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 19383ca97f979d6932698d06eabd507b4a00954f
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="how-to-configure-wcf-services-published-with-the-biztalk-wcf-service-publishing-wizard"></a>Configuration des services WCF publiés à l'aide de l'Assistant Publication de services WCF BizTalk
 Après la publication de services WCF avec l'Assistant Publication de services WCF BizTalk, vous devez les configurer correctement. Cette rubrique explique comment configurer les services WCF publiés.  
@@ -48,7 +48,7 @@ Après la publication de services WCF avec l'Assistant Publication de services W
   
 6.  Si l’emplacement de réception héberge l’adaptateur WCF-BasicHttp ou WCF-WSHttp, dans le **propriétés du Transport** boîte de dialogue, cliquez sur le **sécurité** onglet, puis configurez les propriétés de sécurité sur l’onglet. Si l’emplacement de réception héberge l’adaptateur WCF-CustomIsolated, dans le **propriétés du Transport** boîte de dialogue, cliquez sur le **liaison** onglet, puis configurez les informations de liaison dans l’onglet.  
   
-     ![L’onglet sécurité de WCF &#45; Adaptateur BasicHttp](../core/media/585ecdad-bdee-40c0-b2f1-7ace74d503e5.gif "585ecdad-bdee-40c0-b2f1-7ace74d503e5")  
+     ![L’onglet sécurité de WCF&#45;adaptateur BasicHttp](../core/media/585ecdad-bdee-40c0-b2f1-7ace74d503e5.gif "585ecdad-bdee-40c0-b2f1-7ace74d503e5")  
   
     > [!NOTE]
     >  La propriété Type d'informations d'identification du client du transport pour l'adaptateur WCF isolé doit correspondre au schéma d'authentification du répertoire virtuel Internet Information Services (IIS) hébergeant cet emplacement de réception. Par exemple, si la propriété est définie **Windows**, vous devez également activer **l’authentification Windows intégrée** pour le répertoire virtuel qui héberge cet emplacement de réception. De même, si la propriété est définie sur **Aucun**, vous devez autoriser l'accès anonyme au répertoire virtuel qui héberge cet emplacement de réception. Pour plus d’informations sur la façon de configurer les propriétés de sécurité pour les adaptateurs WCF-BasicHttp et WCF-WSHttp, consultez [comment configurer un emplacement de réception WCF-BasicHttp](http://msdn.microsoft.com/library/43f18e5d-ba28-453c-b8ce-5bcdc6f27fdd), et [comment configurer une réception WCF-WSHttp Emplacement](../core/how-to-configure-a-wcf-wshttp-receive-location.md). Pour plus d’informations sur la façon de configurer les informations de liaison, consultez [comment configurer un emplacement de réception WCF-CustomIsolated](../core/how-to-configure-a-wcf-customisolated-receive-location.md).  
@@ -58,7 +58,7 @@ Après la publication de services WCF avec l'Assistant Publication de services W
     > [!NOTE]
     >  Le **adresse** propriété doit commencer par une barre oblique (« / ») et se terminer par « .svc ». Le **adresse** propriété ne doit pas contenir un schéma de protocole, le nom d’ordinateur ou le numéro de port tel que http://Host. Seul le chemin d'accès du répertoire virtuel peut être utilisé pour la propriété. Le fichier de balisage du service WCF doit avoir une extension .svc.  
   
-     ![L’onglet Général de WCF &#45; Adaptateur BasicHttp](../core/media/1126fa6a-e3e9-44ad-aeb0-90c78226aeeb.gif "1126fa6a-e3e9-44ad-aeb0-90c78226aeeb")  
+     ![L’onglet Général de WCF&#45;adaptateur BasicHttp](../core/media/1126fa6a-e3e9-44ad-aeb0-90c78226aeeb.gif "1126fa6a-e3e9-44ad-aeb0-90c78226aeeb")  
   
 8.  Si vous avez sélectionné **Transport** ou **TransportWithMessageCredential** dans les **mode de sécurité** liste déroulante sur le **sécurité** pour l’onglet les adaptateurs WCF-BasicHttp et WCF-WSHttp, vous devez définir des couche SSL (Secure Sockets) dans IIS. Si vous définissez la **Transport** ou **TransportWithMessageCredential** mode de sécurité dans les informations de liaison pour l’adaptateur WCF-CustomIsolated, vous devez également configurer SSL dans IIS.  
   
@@ -73,7 +73,7 @@ Après la publication de services WCF avec l'Assistant Publication de services W
   
 12. Ouvrez une invite de commandes, accédez au dossier dans lequel l’Assistant Publication de BizTalk Server WCF Service créé le service WCF dans %SystemDrive%\InetPub\\, puis ouvrez le fichier Web.config dans le bloc-notes.  
   
-13. Dans le bloc-notes, ajoutez la ligne suivante à l’intérieur de la  **\<system.web\>**  élément :  
+13. Dans le bloc-notes, ajoutez la ligne suivante à l’intérieur de la **\<system.web\>** élément :  
   
     ```  
     <trust level="Full" originUrl="" />  
@@ -86,15 +86,15 @@ Après la publication de services WCF avec l'Assistant Publication de services W
   
     |Paramètre|Valeur|  
     |---------------|-----------|  
-    |*hôte [ : port]*|Nom de l'ordinateur sur lequel vous avez déployé votre service WCF. Le nom du serveur peut être suivi de deux points et du numéro du port.|  
-    |*chemin d’application*|Nom du répertoire virtuel et chemin d'accès à l'application Web|  
-    |*nomservicewcf.svc*|Nom du fichier .svc du service WCF.|  
+    |*host[:port]*|Nom de l'ordinateur sur lequel vous avez déployé votre service WCF. Le nom du serveur peut être suivi de deux points et du numéro du port.|  
+    |*apppath*|Nom du répertoire virtuel et chemin d'accès à l'application Web|  
+    |*wcfservicename.svc*|Nom du fichier .svc du service WCF.|  
   
 15. Pour empêcher toute divulgation non intentionnelle de métadonnées de service potentiellement sensibles, il est recommandé de désactiver ce comportement dans un environnement de production en procédant comme suit :  
   
     1.  Dans le bloc-notes, ouvrez le fichier Web.config dans le dossier dans lequel l’Assistant Publication de BizTalk Server WCF Service créé le service WCF dans %SystemDrive%\InetPub\\.  
   
-    2.  Dans le bloc-notes, définissez le le **httpGetEnabled** d’attribut dans le  **\<serviceMetadata\>**  élément à la valeur false, car la ligne suivante :  
+    2.  Dans le bloc-notes, définissez le le **httpGetEnabled** d’attribut dans le **\<serviceMetadata\>** élément à la valeur false, car la ligne suivante :  
   
         ```  
         <serviceMetadata httpGetEnabled="false" httpsGetEnabled="false" />  

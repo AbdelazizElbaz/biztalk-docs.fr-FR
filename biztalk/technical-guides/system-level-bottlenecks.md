@@ -1,22 +1,22 @@
 ---
-title: "Les goulots d’étranglement au niveau du système | Documents Microsoft"
-ms.custom: 
+title: Les goulots d’étranglement au niveau du système | Documents Microsoft
+ms.custom: ''
 ms.date: 06/29/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0bdff435-76eb-495f-9fb6-1f1acef3921e
-caps.latest.revision: "11"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 058fd60e1c38a3045197b4a36bdcc81250ab5be5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="system-level-bottlenecks"></a>Goulots d’étranglement au niveau du système
 Cette rubrique décrit comment adresser courantes goulots d’étranglement au niveau du système qui peuvent affecter les performances d’une solution BizTalk Server.  
@@ -203,7 +203,7 @@ Cette rubrique décrit comment adresser courantes goulots d’étranglement au n
   
     -   Importance : Ce compteur indique la durée, en secondes, de transfert sur le disque. Cela peut indiquer une grande quantité de fragmentation du disque, des disques lents ou des défaillances de disque. Multiplier les valeurs de la **physique\Moy. Disque s/transfert** et **Mémoire\Pages/s** compteurs. Si le produit de ces compteurs dépasse 0,1, la pagination prend plus de 10 % de temps d’accès de disque, vous avez besoin de davantage de mémoire physique disponible.  
   
--   **Disque physique\Lectures disque/s**  
+-   **PhysicalDisk\Disk Writes/sec**  
   
     -   Seuil : Dépend du fabricant.  
   
@@ -291,7 +291,7 @@ Cette rubrique décrit comment adresser courantes goulots d’étranglement au n
   
          Si l’UC est très occupé (90 pour cent ou une utilisation plus importante) et la moyenne PQL est constamment supérieure à 2 par processeur, vous pouvez avoir un goulot d’étranglement de processeur qui peut tirer parti de l’ajout de processeurs. Ou bien, vous pouvez réduire le nombre de threads et de file d’attente plus au niveau de l’application. Cela provoquera moins de changements de contexte et moins de changements de contexte est valable pour réduire la charge de l’UC. Une raison courante de valeur PQL 2 ou version ultérieure avec utilisation faible du processeur est que pour le temps processeur, les demandes arrivent au hasard et threads demande irrégulières quantités de temps du processeur. Cela signifie que le processeur n’est pas un goulet d’étranglement, mais que l’application de thread doit être améliorée.  
   
--   **Système\Changements de contexte/s**  
+-   **System\Context Switches/sec**  
   
     -   Seuil : En règle générale, un changement de contexte du taux de moins de 5 000 par seconde par le processeur n’est pas utile soucier. Si le taux de changement de contexte dépassent 15 000 par seconde par le processeur, ce phénomène peut alors un goulot d’étranglement.  
   
@@ -333,7 +333,7 @@ Cette rubrique décrit comment adresser courantes goulots d’étranglement au n
   
     -   Importance : Cela indique la quantité de mémoire physique disponible pour les processus en cours d’exécution sur l’ordinateur. Notez que ce compteur affiche la dernière valeur observée. Il n’est pas une moyenne.  
   
--   **Mémoire\Lectures de pages/s**  
+-   **Memory\Page Reads/sec**  
   
     -   Seuil : Des valeurs soutenues de plus de cinq indiquent un grand nombre de défauts de page pour les demandes de lecture.  
   
@@ -341,7 +341,7 @@ Cette rubrique décrit comment adresser courantes goulots d’étranglement au n
   
          Si un faible taux d’opérations de lecture de page coïncide avec des valeurs pour **disque physique\\% temps du disque** et **physique\Moy. Longueur de file d’attente du disque**, un condition de goulot d’étranglement d’e/s disque peut-être exister. Si une augmentation de la longueur de file d’attente n’est pas accompagnée d’une diminution du taux de lectures de pages, il existe un goulot d’étranglement de la mémoire en raison d’une insuffisance de mémoire physique.  
   
--   **Mémoire\Pages/s**  
+-   **Memory\Pages/sec**  
   
     -   Seuil : Une valeur soutenue de plus de cinq indique un goulot d’étranglement.  
   
@@ -371,13 +371,13 @@ Cette rubrique décrit comment adresser courantes goulots d’étranglement au n
   
     -   Importance : Il s’agit du nombre maximal d’octets dans la réserve non paginée que le serveur a réservé pour une utilisation à un point quelconque. Il indique la quantité de mémoire physique l’ordinateur doit avoir. Étant donné que la réserve non paginée doit résider dans la mémoire physique et, car il doit être certains de la mémoire pour d’autres opérations, comme le principe de l’ordinateur doit être installée de mémoire physique qui est de 4 fois la valeur indiquée pour ce compteur.  
   
--   **Mémoire\octets**  
+-   **Memory\Cache Bytes**  
   
     -   Seuil : Aucune valeur spécifique.  
   
     -   Importance : Contrôle la taille du cache dans des conditions de charge différents. Cette valeur de ce compteur de performance indique la taille du cache de fichiers statiques. Par défaut, ce compteur utilise environ 50 % de mémoire disponible, mais diminue si la mémoire disponible est réduit, ce qui affecte les performances du système.  
   
--   **Memory\Cache erreurs/s**  
+-   **Memory\Cache Faults/sec**  
   
     -   Seuil : Aucune valeur spécifique.  
   
@@ -428,19 +428,19 @@ Cette rubrique décrit comment adresser courantes goulots d’étranglement au n
   
     -   Importance : Ce compteur indique le taux auquel les octets sont envoyés et reçus via chaque carte réseau. Ce compteur permet de déterminer si une carte réseau est saturée, et si vous devez ajouter une ou plusieurs cartes réseau pour augmenter la bande passante réseau disponible.  
   
--   **Interface réseau\Octets reçus/s**  
+-   **Network Interface\Bytes Received/sec**  
   
     -   Seuil : Aucune valeur spécifique.  
   
     -   Importance : Ce compteur indique le taux auquel les octets sont reçus via chaque carte réseau. Utilisez la valeur de ce compteur pour calculer le taux de données entrantes sous forme de pourcentage de bande passante disponible totale. Cela permet de déterminer si la bande passante réseau doit être augmentée sur les client envoie des données BizTalk Server ou si la bande passante réseau doit être augmentée sur l’ordinateur BizTalk Server lui-même.  
   
--   **Interface réseau\Octets envoyés/s**  
+-   **Network Interface\Bytes Sent/sec**  
   
     -   Seuil : Aucune valeur spécifique.  
   
     -   Importance : Ce compteur indique la vitesse à laquelle les octets sont envoyés via chaque carte réseau. Utilisez la valeur de ce compteur pour calculer le taux de données sortantes sous forme de pourcentage de bande passante disponible totale. Cela permet de déterminer si la bande passante réseau doit être augmentée sur les données d’envoi BizTalk Server à un client ou si la bande passante réseau doit être augmentée sur le client ordinateur réception de données à partir de BizTalk Server.  
   
--   **Nntp\total des octets/s**  
+-   **Server\Bytes Total/sec**  
   
     -   Seuil : Valeur soutenue de plus de 50 % de la capacité du réseau.  
   

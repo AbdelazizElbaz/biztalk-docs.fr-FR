@@ -1,22 +1,22 @@
 ---
 title: Utiliser un adaptateur WCF LOB Adapter SDK dans un projet BizTalk Server | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 041f14cc-d00f-450d-b1e9-40a3e423c510
-caps.latest.revision: "15"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 84f81d23b56c2631879f366e6fe502840408a0d7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="consume-a-wcf-lob-adapter-sdk-adapter-in-a-biztalk-server-project"></a>Utiliser un adaptateur WCF LOB Adapter SDK dans un projet BizTalk Server
 Cette rubrique décrit comment utiliser un adaptateur créé à l’aide de la [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)] de [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] à l’aide de la [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)].  
@@ -30,7 +30,7 @@ Cette rubrique décrit comment utiliser un adaptateur créé à l’aide de la [
   
 1.  Ouvrez votre application .NET dans [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)].  
   
-2.  Dans [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], dans le **projet** volet, avec le bouton droit votre [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] de projet, puis choisissez **ajouter**&#124; **Ajouter les éléments générés** &#124; **Consume Adapter Service**.  
+2.  Dans [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], dans le **projet** volet, avec le bouton droit votre [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] de projet, puis choisissez **ajouter**&#124;**ajouter les éléments générés** &#124;  **Consume Adapter Service**.  
   
 3.  Dans la [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] , sélectionnez une liaison de la carte.  
   

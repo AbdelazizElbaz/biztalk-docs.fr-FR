@@ -1,26 +1,26 @@
 ---
-title: "À l’aide de l’utilitaire de métadonnées ServiceModel avec l’adaptateur BizTalk pour mySAP Business Suite | Documents Microsoft"
-description: "Utiliser svcutil.exe pour une liaison non définis par défaut, ou pour créer une classe de Client WCF ou le contrat de Service WCF avec l’adaptateur SAP - Pack de l’adaptateur BizTalk (LOB)"
-ms.custom: 
+title: À l’aide de l’utilitaire de métadonnées ServiceModel avec l’adaptateur BizTalk pour mySAP Business Suite | Documents Microsoft
+description: Utiliser svcutil.exe pour une liaison non définis par défaut, ou pour créer une classe de Client WCF ou le contrat de Service WCF avec l’adaptateur SAP - Pack de l’adaptateur BizTalk (LOB)
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ServiceModel Metadata Utility Tool, creating a WCF Client Class or a WCF service contract with the tool
 - ServiceModel Metadata Utility Tool, configuring the tool for the adapter
 ms.assetid: 7ac08012-bb12-4983-9402-be84fe3997d8
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 15c4612db6e3cde4e46385b1c5d1810fbb00eb70
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="using-the-servicemodel-metadata-utility-tool-with-the-biztalk-adapter-for-mysap-business-suite"></a>À l’aide de l’utilitaire de métadonnées ServiceModel avec l’adaptateur BizTalk pour mySAP Business Suite
 Vous pouvez utiliser le service Model Metadata Utility Tool (svcutil.exe) pour générer une classe de client WCF ou un contrat de service WCF (interface) pour les opérations qui les [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] expose. Après avoir exécuté svcutil.exe pour générer une classe de client WCF ou d’un contrat de service WCF, vous pouvez inclure le fichier généré dans votre code et créer des instances de la classe générée ou implémenter un service WCF à partir de l’interface générée pour effectuer des opérations sur SAP système.  
@@ -29,7 +29,7 @@ Vous pouvez utiliser le service Model Metadata Utility Tool (svcutil.exe) pour g
   
  Les sections suivantes vous montrent comment configurer svcutil.exe et comment utiliser svcutil.exe pour générer le code du client WCF ou un contrat de service WCF avec les [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].  
   
-##  <a name="BKMK_ConfigureSvcutil"></a>Configuration de svcutil.exe pour l’adaptateur SAP  
+##  <a name="BKMK_ConfigureSvcutil"></a> Configuration de svcutil.exe pour l’adaptateur SAP  
  Pour configurer svcutil.exe pour utiliser une liaison non définis par défaut, vous devez créer une copie locale de svcutil.exe et ensuite créer ou modifier une copie locale du fichier de configuration svcutil.exe.config.  
   
 1.  Créez un dossier et copier svcutil.exe dans le nouveau dossier. Vous pouvez généralement trouver svcutil.exe à l’emplacement d’installation du SDK Windows, en particulier, C:\Program Files\Microsoft SDKs\Windows\v6.0\Bin.  
@@ -91,15 +91,15 @@ Vous pouvez utiliser le service Model Metadata Utility Tool (svcutil.exe) pour g
   
  Cet exemple crée une classe de client WCF pour RFC_CALCULATE_TAXES.  
   
- **.\svcutil «sap://User=YourUserName;MotDePasse=votreMotdePasse;Client=800;Lang=FR;@a/YourSAPHost/00?wsdl&op=http://Microsoft.LobServices.Sap/2007/03/Rfc/RFC_CALCULATE_TAXES»**  
+ **.\svcutil "sap://User=YourUserName;Passwd=YourPassword;Client=800;Lang=EN;@a/YourSAPHost/00?wsdl&op=http://Microsoft.LobServices.Sap/2007/03/Rfc/RFC_CALCULATE_TAXES"**  
   
  Cet exemple crée une classe de client WCF pour les SALESORDER_CREATEFROMDAT201 et SALESORDER_CREATEFROMDAT202 IDOC.  
   
- **.\svcutil «sap://User=YourUserName;Motdepasse=votreMotdePasse;Client=800;Lang=fr;@a/YourSAPHost/00?wsdl&op=http://Microsoft.LobServices.Sap/2007/03/Idoc/3/SALESORDER_CREATEFROMDAT201//620/Send&op=http://Microsoft.LobServices.Sap/2007/03/Idoc/3/SALESORDER_CREATEFROMDAT202//620/Send»**  
+ **.\svcutil "sap://User=YourUserName;Passwd=YourPassword;Client=800;Lang=EN;@a/YourSAPHost/00?wsdl&op=http://Microsoft.LobServices.Sap/2007/03/Idoc/3/SALESORDER_CREATEFROMDAT201//620/Send&op=http://Microsoft.LobServices.Sap/2007/03/Idoc/3/SALESORDER_CREATEFROMDAT202//620/Send"**  
   
  Cet exemple crée un contrat de service WCF pour recevoir l’IDOC SALESORDER_CREATEFROMDAT201 à partir du système SAP. L’ID de nœud spécifie une opération de réception. Cet exemple porte sur la récupération des métadonnées, il n’est pas nécessaire de spécifier les paramètres de l’écouteur dans query_string de l’URI de connexion.  
   
- **.\svcutil «sap://User=YourUserName;Motdepasse=votreMotdePasse;Client=800;Lang=fr;@a/YourSAPHost/00?wsdl&op=http://Microsoft.LobServices.Sap/2007/03/Idoc/3/SALESORDER_CREATEFROMDAT201//620/Receive»**  
+ **.\svcutil "sap://User=YourUserName;Passwd=YourPassword;Client=800;Lang=EN;@a/YourSAPHost/00?wsdl&op=http://Microsoft.LobServices.Sap/2007/03/Idoc/3/SALESORDER_CREATEFROMDAT201//620/Receive"**  
   
 > [!IMPORTANT]
 >  Vous devez placer l’URI de connexion dans des guillemets sur la ligne de commande. Sinon, svcutil.exe essaie de récupérer les métadonnées pour les opérations qui les [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] ne prend pas en charge. Les résultats d’une tentative de ce type ne sont pas définis.  

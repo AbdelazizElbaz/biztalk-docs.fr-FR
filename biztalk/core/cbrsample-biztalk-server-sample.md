@@ -1,11 +1,11 @@
 ---
 title: CBRSample (exemple BizTalk Server) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, routing
@@ -17,15 +17,15 @@ helpviewer_keywords:
 - examples, filters
 - messages, examples
 ms.assetid: 8fba494c-9257-4eed-8b6a-867056147c2c
-caps.latest.revision: "26"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: b772bc44d4a745d5bfa330e7df7fcadcf2c020db
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="cbrsample-biztalk-server-sample"></a>CBRSample (exemple BizTalk Server)
 L'exemple CBRSample présente l'application de filtres et d'un mappage sortant pour transformer et acheminer des messages d'instance sur la base de leur contenu.  
@@ -79,7 +79,7 @@ L'exemple CBRSample présente l'application de filtres et d'un mappage sortant p
   
 1.  Dans une fenêtre de commande, accédez au dossier suivant :  
   
-     `<Samples Path>`**\Messaging\CBRSample**  
+     `<Samples Path>` **\Messaging\CBRSample**  
   
 2.  Exécutez **Setup.bat**, qui effectue les actions suivantes :  
   
@@ -116,17 +116,17 @@ L'exemple CBRSample présente l'application de filtres et d'un mappage sortant p
   
 1.  Dans la console Administration de BizTalk Server, développez **Ports d’envoi**, avec le bouton droit **CBRUSSendPort**, puis cliquez sur **modifier**.  
   
-2.  Dans le **statique propriétés du Port d’envoi unidirectionnel** boîte de dialogue, dans l’arborescence des dossiers à gauche de la boîte de dialogue, sélectionnez **filtres & mappage &#124; Filtres**, puis ajoutez une nouvelle ligne en définissant **propriété** à **CBRSample.CountryCode**, laissant le **opérateur** colonne définie sur  **==** et en définissant le **valeur** colonne **100**.  
+2.  Dans le **statique propriétés du Port d’envoi unidirectionnel** boîte de dialogue, dans l’arborescence des dossiers à gauche de la boîte de dialogue, sélectionnez **filtres & mappage &#124; filtres**, puis ajoutez une nouvelle ligne en définissant  **Propriété** à **CBRSample.CountryCode**, laissant le **opérateur** colonne définie sur **==**et en définissant le **Valeur** colonne **100**.  
   
-3.  Dans l’arborescence de dossiers à gauche de la boîte de dialogue, sélectionnez **filtres & mappage &#124; Mappages sortants**, définissez le **mappage à appliquer** propriété **CBRSample.CBRInput2USMap**, puis cliquez sur **OK**. Vous devrez peut-être cliquer sur le bouton de défilement pour afficher le mappage.  
+3.  Dans l’arborescence de dossiers à gauche de la boîte de dialogue, sélectionnez **filtres & mappage &#124; mappages sortants**, définissez le **mappage à appliquer** propriété **CBRSample.CBRInput2USMap**, puis cliquez sur **OK**. Vous devrez peut-être cliquer sur le bouton de défilement pour afficher le mappage.  
   
 #### <a name="to-configure-enlist-and-start-the-canadian-send-port"></a>Pour configurer, inscrire et démarrer le port d'envoi canadien  
   
 1.  Dans la console Administration de BizTalk Server, développez **Ports d’envoi**, avec le bouton droit **CBRCANSendPort**, puis cliquez sur **modifier**.  
   
-2.  Dans le **statique propriétés du Port d’envoi unidirectionnel** boîte de dialogue, dans l’arborescence des dossiers à gauche de la boîte de dialogue, sélectionnez **filtres & mappage &#124; Filtres**, puis ajoutez une nouvelle ligne en définissant **propriété** à **CBRSample.CountryCode**, laissant le **opérateur** colonne définie sur  **==** et en définissant le **valeur** colonne **200**.  
+2.  Dans le **statique propriétés du Port d’envoi unidirectionnel** boîte de dialogue, dans l’arborescence des dossiers à gauche de la boîte de dialogue, sélectionnez **filtres & mappage &#124; filtres**, puis ajoutez une nouvelle ligne en définissant  **Propriété** à **CBRSample.CountryCode**, laissant le **opérateur** colonne définie sur **==**et en définissant le **Valeur** colonne **200**.  
   
-3.  Dans l’arborescence de dossiers à gauche de la boîte de dialogue, sélectionnez **filtres & mappage &#124; Mappages sortants**, définissez le **mappage à appliquer** propriété **CBRSample.CBRInput2CANMap**, puis cliquez sur **OK**.  
+3.  Dans l’arborescence de dossiers à gauche de la boîte de dialogue, sélectionnez **filtres & mappage &#124; mappages sortants**, définissez le **mappage à appliquer** propriété **CBRSample.CBRInput2CANMap** , puis cliquez sur **OK**.  
   
  Ces étapes connectent le port d'envoi au port de réception. L'exemple utilise les propriétés promues pour acheminer les documents.  
   
@@ -139,17 +139,17 @@ L'exemple CBRSample présente l'application de filtres et d'un mappage sortant p
   
 1.  Copiez les fichiers d’entrée, **CBRDataCAN.xml** et **CBRDataUS.xml**, dans le dossier d’entrée suivant :  
   
-     `<Samples Path>`**\Messaging\CBRSample\In**  
+     `<Samples Path>` **\Messaging\CBRSample\In**  
   
 2.  Observez la façon dont chacun de ces fichiers est transformé et acheminé vers une de ces deux sortie dossiers en fonction de la valeur de leur **CountryCode** élément (100 ou 200) :  
   
-    -   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]transforme et achemine le fichier d’entrée **CBRDataCAN.xml** dans le dossier :  
+    -   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] transforme et achemine le fichier d’entrée **CBRDataCAN.xml** dans le dossier :  
   
-         `<Samples Path>`**\Messaging\CBRSample\CAN**  
+         `<Samples Path>` **\Messaging\CBRSample\CAN**  
   
     -   BizTalk Server transforme et achemine le fichier d’entrée **CBRDataUS.xml** dans le dossier :  
   
-         `<Samples Path>`**\Messaging\CBRSample\US**  
+         `<Samples Path>` **\Messaging\CBRSample\US**  
   
 ## <a name="classes-or-methods-used-in-this-sample"></a>Classes ou méthodes utilisées dans l'exemple  
  Aucun.  

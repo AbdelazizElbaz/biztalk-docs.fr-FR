@@ -1,22 +1,22 @@
 ---
-title: "Fonctionne du désassembleur EDI | Documents Microsoft"
-ms.custom: 
+title: Fonctionne du désassembleur EDI | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8da91ba4-e1c9-4e6b-bbd1-fe71ea880118
-caps.latest.revision: "43"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 4edf1353a9f06103205e1e6e4296c2aa77e74dc6
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="how-the-edi-disassembler-works"></a>Fonctionnement du Désassembleur EDI
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] effectue la plus grande partie du traitement des échanges EDI reçus dans le pipeline de réception EDI (`Microsoft.BizTalk.DefaultPipelines.EDIReceivePipeline`). Ce pipeline inclut le composant de pipeline Désassembleur EDI, qui effectue le traitement suivant :  
@@ -37,7 +37,7 @@ ms.lasthandoff: 01/17/2018
   
 -   Convertit l’ensemble de l’échange au format XML si le **entrants option de traitement par lots** est définie sur l’un des deux **préserver l’échange** valeurs. Cette propriété peut être définie à partir de la **paramètres d’hôte Local** page sous **paramètres de l’échange** de l’onglet d’accord bidirectionnel de la **propriétés de l’accord** boîte de dialogue. Le pipeline de réception promeut la propriété ReuseEnvelope pour identifier l'échange comme conservé.  
   
--   Génère un accusé de réception technique et/ou fonctionnel (si configuré). Cela peut inclure le traitement par lot des accusés de réception (si configuré). Promeut la propriété de contexte de BizTalk Server. MessageType, en lui affectant égale au schéma de contrôle dans le http://schemas.microsoft.com/EDI/\<X12 ou EDIFACT\> espace de noms (par exemple, X12_997_Root pour un accusé de réception 997). Promeut également la propriété de contexte EDI.DestinationPartyName, ce qui garantit que l'accusé de réception est récupéré pour l'envoi. Pour plus d’informations, consultez [envoyer un accusé de réception EDI](../core/sending-an-edi-acknowledgment.md).  
+-   Génère un accusé de réception technique et/ou fonctionnel (si configuré). Cela peut inclure le traitement par lot des accusés de réception (si configuré). Promeut la propriété de contexte de BizTalk Server. MessageType, en lui affectant égale au schéma de contrôle dans le http://schemas.microsoft.com/EDI/ \<X12 ou EDIFACT\> espace de noms (par exemple, X12_997_Root pour un accusé de réception 997). Promeut également la propriété de contexte EDI.DestinationPartyName, ce qui garantit que l'accusé de réception est récupéré pour l'envoi. Pour plus d’informations, consultez [envoyer un accusé de réception EDI](../core/sending-an-edi-acknowledgment.md).  
   
 -   Fractionne des documents HIPAA 276/277 (version 5010 uniquement) 834, 835 (version 4010 uniquement) et 837, le cas échéant.  
   

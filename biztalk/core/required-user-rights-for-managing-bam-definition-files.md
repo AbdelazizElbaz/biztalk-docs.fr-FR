@@ -1,22 +1,22 @@
 ---
-title: "Droits d’utilisateur requis pour la gestion des fichiers de définition BAM | Documents Microsoft"
-ms.custom: 
+title: Droits d’utilisateur requis pour la gestion des fichiers de définition BAM | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fb4fb73f-b783-4a04-9bd6-a135b3dd2655
-caps.latest.revision: "8"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: d5e39c86eec0cf198a5b879cbc98d29321de71dc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="required-user-rights-for-managing-bam-definition-files"></a>Droits d'utilisateur requis pour gérer les fichiers de définition BAM
 Les fichiers de définition BAM peuvent être créés, gérés et consultés par les utilisateurs de n'importe quel rôle. La gestion des fichiers de définition BAM implique leur déploiement et leur suppression ainsi que la gestion des activités, des vues, des alertes et des artefacts qui leur sont associés.  

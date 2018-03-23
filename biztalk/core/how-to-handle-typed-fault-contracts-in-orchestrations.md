@@ -1,11 +1,11 @@
 ---
-title: "Comment gérer les erreurs typées contrats dans les Orchestrations | Documents Microsoft"
-ms.custom: 
+title: Comment gérer les erreurs typées contrats dans les Orchestrations | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - typed fault contracts [orchestrations]
@@ -13,15 +13,15 @@ helpviewer_keywords:
 - orchestrations, typed fault contracts
 - orchestrations, WCF services
 ms.assetid: 5a1a7d22-b0ff-4d09-bebf-4995229784b0
-caps.latest.revision: "11"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 0a7643c4a39785018368572d721eed3ef6545c6b
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="how-to-handle-typed-fault-contracts-in-orchestrations"></a>Gestion des contrats d'erreurs typés dans des orchestrations
 Cette rubrique décrit la gestion de contrats d'erreurs typées lors de l'utilisation des services WCF dans les orchestrations. Pour gérer les exceptions d’erreur typées dans les orchestrations, les services WCF que vous utilisez doivent avoir le **FaultContractAttribute** appliqué aux opérations de service ; par conséquent, les erreurs peuvent être levées à l’aide de  **FaultException**\<T\> où T peut être n’importe quel contrat de données valide ou d’un type sérialisable à partir des services WCF.  
@@ -32,7 +32,7 @@ Cette rubrique décrit la gestion de contrats d'erreurs typées lors de l'utilis
   
 1.  Dans votre Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] projet BizTalk, dans l’Explorateur de solutions, cliquez sur votre projet, cliquez sur **ajouter**, puis cliquez sur **ajouter les éléments générés**.  
   
-2.  Dans le **ajouter les éléments générés - \<**  *nom du projet*  **\>**  boîte de dialogue le **modèles** section, Sélectionnez **utiliser le Service WCF**, puis cliquez sur **ajouter**.  
+2.  Dans le **ajouter les éléments générés - \< ***nom du projet*** \>**  boîte de dialogue le **modèles** section, sélectionnez **consommer de WCF Service**, puis cliquez sur **ajouter**.  
   
 3.  Sur le **Bienvenue dans l’Assistant de consommation de Service WCF BizTalk** , cliquez sur **suivant**.  
   

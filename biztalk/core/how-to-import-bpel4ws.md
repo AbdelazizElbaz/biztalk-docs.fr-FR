@@ -1,11 +1,11 @@
 ---
 title: Comment importer BPEL4WS | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BPEL4WS, restrictions
@@ -13,15 +13,15 @@ helpviewer_keywords:
 - BPEL4WS, orchestrations
 - orchestrations, BPEL4WS
 ms.assetid: 3626fcb9-8e7d-4812-a0c9-bde6e7954ec8
-caps.latest.revision: "8"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 7b32a0044321ce6ac57d7bd49c14b40ba17430db
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="how-to-import-bpel4ws"></a>Comment importer BPEL4WS
 Vous pouvez importer un BPEL4WS existant pour créer une orchestration.  
@@ -69,7 +69,7 @@ Vous pouvez importer un BPEL4WS existant pour créer une orchestration.
     </element>  
     ```  
   
-     XPath : / * [local-name () = « Root » et namespace-uri() = 'http://BizTalk_Server_Project3.Schema1'] /\*[local-name () = 'promotedField' et namespace-uri() ='']  
+     XPath - /*[local-name()='Root' and namespace-uri()='http://BizTalk_Server_Project3.Schema1']/\*[local-name()='promotedField' and namespace-uri()='']  
   
     |XPath canonique|XPath non canonique|  
     |---------------------|--------------------------|  
@@ -77,4 +77,4 @@ Vous pouvez importer un BPEL4WS existant pour créer une orchestration.
   
 ## <a name="see-also"></a>Voir aussi  
  [Comment exporter BPEL4WS](../core/how-to-export-bpel4ws.md)   
- [XLANG-s pour les Conversions de Type BPEL4WS](../core/xlang-s-to-bpel4ws-type-conversions.md)
+ [Conversions de types XLANG/s en BPEL4WS](../core/xlang-s-to-bpel4ws-type-conversions.md)

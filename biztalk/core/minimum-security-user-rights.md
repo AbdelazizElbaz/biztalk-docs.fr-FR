@@ -1,11 +1,11 @@
 ---
-title: "Droits d’utilisateur de sécurité minimales | Documents Microsoft"
-ms.custom: 
+title: Droits d’utilisateur de sécurité minimales | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security, user accounts
@@ -18,15 +18,15 @@ helpviewer_keywords:
 - user accounts, access control
 - security, permissions
 ms.assetid: 44b6e7da-8e6c-40c0-a250-52ab422c0adf
-caps.latest.revision: "25"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 4ad405afd1f69b4499b8c4650586411957a2ca3c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="minimum-security-user-rights"></a>Droits d’utilisateur de sécurité minimales
 Les groupes et les comptes utilisés par BizTalk Server possèdent les droits d'utilisateur minimaux dont ils ont besoin pour effectuer la plupart des tâches. Aussi, certaines tâches peuvent nécessiter d'autres droits d'utilisateur en plus de ceux accordés automatiquement à votre groupe par BizTalk Server. Dans cette rubrique :  
@@ -37,12 +37,12 @@ Les groupes et les comptes utilisés par BizTalk Server possèdent les droits d'
   
  [Ajout de la Communauté – liste des tâches](../core/minimum-security-user-rights.md#BKMK_Community)  
   
-##  <a name="BKMK_GroupRole"></a>Groupe et l’appartenance au rôle  
+##  <a name="BKMK_GroupRole"></a> Groupe et l’appartenance au rôle  
  Le tableau suivant décrit les autorisations de sécurité minimales dont vous avez besoin pour effectuer des tâches dans BizTalk Server :  
   
 |Tâche|Groupes ou rôles|  
 |----------|---------------------|  
-|**Programme d’installation**||  
+|**Setup**||  
 |Installation|-Administrateurs local|  
 |Configuration|Les administrateurs BizTalk Server<br />-Administrateurs local<br />-sysadmin rôle SQL Server<br />-Les administrateurs SSO<br />-Administrateur OLAP|  
 |Ajout à un groupe BizTalk Server|-Administrateurs local<br />Les administrateurs BizTalk Server|  
@@ -90,7 +90,7 @@ Les groupes et les comptes utilisés par BizTalk Server possèdent les droits d'
 |**Moteur de règles (règles de publication)**||  
 |Déploiement/annulation du déploiement de stratégies, manipulation d'artefacts liés à la sécurité|-Rôle de base de données RE_ADMIN_USERS SQL Server dans la base de données du moteur de règles|  
   
-##  <a name="BKMK_UserRights"></a>Droits d’utilisateur pour effectuer des tâches d’administration  
+##  <a name="BKMK_UserRights"></a> Droits d’utilisateur pour effectuer des tâches d’administration  
  Le compte utilisé pour exécuter des tâches d'administration à l'aide de la console Administration de BizTalk Server ou de Windows Management Instrumentation (WMI) requiert différents niveaux de droits d'utilisateur selon la tâche à effectuer.  
   
  Le tableau suivant décrit les droits d'utilisateur dont le compte à besoin pour effectuer les tâches, des plus faibles (niveau 1) aux plus élevés (niveau 4).  
@@ -103,8 +103,8 @@ Les groupes et les comptes utilisés par BizTalk Server possèdent les droits d'
 |3|-Utilisateur aux droits accordés au niveau 2<br />-Locales administrateurs sur tous les ordinateurs d’exécution BizTalk Server|-Permet de créer et supprimer des instances d’hôte|  
 |4|-Utilisateur aux droits accordés au niveau 3<br />-le rôle sysadmin SQL Server sur tous les serveurs SQL qui ont des bases de données MessageBox de BizTalk|-Créer des bases de données MessageBox|  
   
-##  <a name="BKMK_Community"></a>Ajout de la Communauté – liste des tâches  
- [Droits de sécurité minimales pour BizTalk Server 2013 R2](http://social.technet.microsoft.com/wiki/contents/articles/24590.minimum-security-rights-for-biztalk-server-2013-r2.aspx) (http://social.technet.microsoft.com/wiki/contents/articles/24590.minimum-security-rights-for-biztalk-server-2013-r2.aspx)  
+##  <a name="BKMK_Community"></a> Ajout de la Communauté – liste des tâches  
+ [Droits de sécurité minimales pour BizTalk Server 2013 R2](http://social.technet.microsoft.com/wiki/contents/articles/24590.minimum-security-rights-for-biztalk-server-2013-r2.aspx) ()http://social.technet.microsoft.com/wiki/contents/articles/24590.minimum-security-rights-for-biztalk-server-2013-r2.aspx)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Contrôle d’accès et sécurité des données](../core/access-control-and-data-security.md)   

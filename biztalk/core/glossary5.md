@@ -1,23 +1,23 @@
 ---
-title: "Termes et définitions de Common | Documents Microsoft"
+title: Termes et définitions de Common | Documents Microsoft
 description: Glossaire des termes et et leurs significations pour BizTalk Server
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ac9c7c7d-a97e-425a-9666-02ca6edd8be6
-caps.latest.revision: "68"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 742b695338d7038f830b823af720bd3048399473
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="glossary"></a>Glossaire
 Les termes et les définitions suivants sont utilisés dans l'aide de Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
@@ -293,7 +293,7 @@ Les termes et les définitions suivants sont utilisés dans l'aide de Microsoft 
 |Importer/Exporter|Dans le Panneau de configuration de BizTalk, importation/exportation de paramètres et de liaisons. Les paramètres actuels de BizTalk pour le groupe, l'hôte et l'instance de l'hôte, sont exportés et enregistrés dans un fichier XML. Les administrateurs BizTalk importent ces paramètres pour les appliquer à un autre environnement BizTalk.|  
 |Assistant Importation|Assistant que vous démarrez dans la console Administration de BizTalk pour importer des ressources d'un fichier MSI dans une application BizTalk. Si l'application spécifiée n'existe pas, l'Assistant Importation la crée automatiquement.|  
 |composition indépendante|Suite de deux actions : la seconde action n'attend pas que la première lui envoie un message de synchronisation pour pouvoir commencer à traiter la logique d'entreprise. La seconde action s'exécute sans délai.|  
-|info-bulle|Info-bulle utilisée pour donner une description des commandes du bureau, de la fenêtre et du menu Démarrer en mode Web, et dans la colonne Commentaire de l'Explorateur Windows en mode Détails.|  
+|infotip|Info-bulle utilisée pour donner une description des commandes du bureau, de la fenêtre et du menu Démarrer en mode Web, et dans la colonne Commentaire de l'Explorateur Windows en mode Détails.|  
 |héritage|Dans le cadre du service Web de gestion des partenaires commerciaux, un profil de membre hérite de toutes les préférences de son groupe parent. Lorsqu'il s'agit d'un groupe sans héritage, le profil du membre n'hérite d'aucune des préférences du groupe parent. Un tel groupe peut devenir un groupe héritier, mais le contraire n'est pas possible.|  
 |orchestration interruptible|Orchestration pouvant être interrompue en cours de traitement, à des points bien définis.|  
 |hôte In-process|Type d'hôte s'exécutant dans l'espace de processus BizTalk Server. Une orchestration peut faire l'objet d'une inscription auprès d'un hôte In-process, et un gestionnaire d'envoi peut se trouver sur cet hôte. Les hôtes In-process ne peuvent héberger que les gestionnaires de réception des hôtes In-process (adaptateur FILE).|  
@@ -496,7 +496,7 @@ Les termes et les définitions suivants sont utilisés dans l'aide de Microsoft 
 |adaptateur de sollicitation-réponse|Adaptateur d'envoi bidirectionnel. Un adaptateur de réception de type sollicitation-réponse envoie un message de requête de BizTalk Server vers un destinataire, attend la réponse du destinataire, puis renvoie le message de réponse à BizTalk Server.|  
 |schéma source|Schéma utilisé dans un mappage BizTalk Server qui représente la structure des messages de l'instance sortants.|  
 |Adaptateur SQL|Adaptateur qui échange des informations entre une base de données SQL Server et BizTalk Server.|  
-|AUTHENTIFICATION UNIQUE|Voir Système de l'authentification unique de l'entreprise.|  
+|SSO|Voir Système de l'authentification unique de l'entreprise.|  
 |étape|Phase d'un pipeline destinée à accomplir une certaine catégorie de travail. Les composants de pipeline de chaque étape se chargent d'effectuer les tâches actives.|  
 |base de données intermédiaire|Base de données utilisée par un testeur pour déployer l'assembly et ses liaisons vers la base de données intermédiaire ou de test.|  
 |adaptateur statique|Adaptateur reposant sur l'interface utilisateur fournie par l'infrastructure d'adaptateurs.|  

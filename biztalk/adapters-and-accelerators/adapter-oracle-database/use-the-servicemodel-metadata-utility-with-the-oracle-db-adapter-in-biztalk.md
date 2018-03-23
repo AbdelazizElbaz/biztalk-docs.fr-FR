@@ -1,23 +1,23 @@
 ---
-title: "À l’aide de l’outil Service Model Metadata Tool avec l’adaptateur BizTalk pour base de données Oracle dans BizTalk Server | Documents Microsoft"
-description: "Utiliser svcutil.exe pour une liaison non définis par défaut, ou pour créer une classe de Client WCF ou le contrat de Service WCF avec l’adaptateur de base de données Oracle - Pack de l’adaptateur BizTalk (LOB)"
-ms.custom: 
+title: À l’aide de l’outil Service Model Metadata Tool avec l’adaptateur BizTalk pour base de données Oracle dans BizTalk Server | Documents Microsoft
+description: Utiliser svcutil.exe pour une liaison non définis par défaut, ou pour créer une classe de Client WCF ou le contrat de Service WCF avec l’adaptateur de base de données Oracle - Pack de l’adaptateur BizTalk (LOB)
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f8660014-da04-4692-89e8-f14fcb419496
-caps.latest.revision: "3"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 9dfbdbd60333a2e5683b4f37a65edb928a451e46
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="using-the-servicemodel-metadata-utility-tool-with-the-biztalk-adapter-for-oracle-database"></a>À l’aide de l’outil Service Model Metadata Tool avec l’adaptateur BizTalk pour base de données Oracle
 Vous pouvez utiliser le service Model Metadata Utility Tool (svcutil.exe) pour générer une classe de client WCF ou un contrat de service WCF (interface) pour les opérations qui les [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] expose. Après avoir exécuté svcutil.exe pour générer une classe de client WCF ou d’un contrat de service WCF, vous pouvez inclure le fichier généré dans votre code et créer des instances de la classe générée ou implémenter un service WCF dans le contrat pour effectuer des opérations sur Oracle base de données.  
@@ -26,7 +26,7 @@ Vous pouvez utiliser le service Model Metadata Utility Tool (svcutil.exe) pour g
   
  Les sections suivantes vous montrent comment configurer svcutil.exe et comment utiliser svcutil.exe pour générer le code du client WCF ou un contrat de service WCF avec les [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].  
   
-##  <a name="BKMK_ConfigureSvcutil"></a>Configuration de svcutil.exe pour une liaison non définis par défaut   
+##  <a name="BKMK_ConfigureSvcutil"></a> Configuration de svcutil.exe pour une liaison non définis par défaut   
  Pour configurer svcutil.exe pour utiliser une liaison non définis par défaut, vous devez créer une copie locale de svcutil.exe et ensuite créer ou modifier une copie locale du fichier de configuration svcutil.exe.config.  
   
 1.  Créez un dossier et copier svcutil.exe dans le nouveau dossier. Vous pouvez généralement trouver svcutil.exe à l’emplacement d’installation du SDK Windows, en particulier, C:\Program Files\Microsoft SDKs\Windows\v6.0\Bin.  
@@ -63,7 +63,7 @@ Vous pouvez utiliser le service Model Metadata Utility Tool (svcutil.exe) pour g
 > [!NOTE]
 >  Vous pouvez définir les propriétés de liaison de la [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] dans la configuration de liaison.  
   
- Pour plus d’informations sur la configuration d’une liaison par défaut de svcutil.exe, consultez la rubrique « Custom sécuriser les métadonnées Endpoint » dans la documentation WCF à [http://go.microsoft.com/fwlink/?LinkId=96077](http://go.microsoft.com/fwlink/?LinkId=96077).  
+ Pour plus d’informations sur la configuration d’une liaison par défaut de svcutil.exe, consultez la rubrique « Custom sécuriser les métadonnées Endpoint » dans la documentation WCF à [ http://go.microsoft.com/fwlink/?LinkId=96077 ](http://go.microsoft.com/fwlink/?LinkId=96077).  
   
 ### <a name="configure-a-non-default-binding-for-the-pollingstmt-operation"></a>Configurer un Non-liaison par défaut pour l’opération POLLINGSTMT  
  Pour créer un contrat de service WCF pour l’opération POLLINGSTMT à l’aide de svcutil.exe, vous devez configurer la liaison par défaut pour inclure les **pollingStatement** propriété, en plus de **acceptCredentialsInUri**. Le **pollingStatement** doit contenir l’instruction SELECT qui cible la table. Le [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] utilise cette propriété pour générer la classe qui représente le résultat fortement typée la valeur que l’opération POLLINGSTMT retourne. L’exemple suivant montre une configuration de liaison qui est utilisée pour générer un contrat de service WCF pour une opération POLLINGSTMT qui cible la table /SCOTT/EMP.  
@@ -93,20 +93,20 @@ Vous pouvez utiliser le service Model Metadata Utility Tool (svcutil.exe) pour g
   
  Cet exemple crée une classe de client WCF pour une opération d’insertion sur la table /SCOTT/EMP.  
   
- **. \svcutil oracledb://User=SCOTT; » Mot de passe =TIGER@ADAPTER? wsdl & op = http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Insert »**  
+ **.\svcutil "oracledb://User=SCOTT;Password=TIGER@ADAPTER?wsdl&op=http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Insert"**  
   
  Cet exemple crée une classe de client WCF pour l’insertion et les opérations de suppression sur la table /SCOTT/EMP.  
   
- **. \svcutil oracledb://User=SCOTT; » Mot de passe =TIGER@ADAPTER? wsdl & op = http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Insert & op = http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Delete »**  
+ **.\svcutil "oracledb://User=SCOTT;Password=TIGER@ADAPTER?wsdl&op=http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Insert&op=http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Delete"**  
   
  Cet exemple crée un contrat de service WCF pour l’opération POLLLINGSTMT. (Pour utiliser svcutil.exe pour générer un contrat de service WCF pour l’opération POLLINGSTMT, vous devez configurer une liaison par défaut de svcutil.exe, qui inclut une instruction d’interrogation).  
   
- **. \svcutil oracledb://User=SCOTT; » Mot de passe =TIGER@ADAPTER? wsdl & op = http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMT »**  
+ **.\svcutil "oracledb://User=SCOTT;Password=TIGER@ADAPTER?wsdl&op=http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMT"**  
   
 > [!IMPORTANT]
 >  Vous devez placer l’URI de connexion dans des guillemets sur la ligne de commande. Sinon, svcutil.exe essaie de récupérer les métadonnées pour les opérations qui les [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] ne prend pas en charge. Les résultats d’une tentative de ce type ne sont pas définis.  
   
- Par défaut, svcutil.exe place le code généré dans le fichier output.cs ; Toutefois, vous pouvez modifier le nom du fichier de sortie et de nombreuses autres options svcutil.exe utilise en définissant des commutateurs de ligne de commande. Pour plus d’informations sur les options que svcutil.exe prend en charge, consultez la rubrique « Utilitaire les Metadata de ServiceModel-Tool (Svcutil.exe) » dans la documentation WCF à [http://go.microsoft.com/fwlink/?LinkId=72777](http://go.microsoft.com/fwlink/?LinkId=72777).  
+ Par défaut, svcutil.exe place le code généré dans le fichier output.cs ; Toutefois, vous pouvez modifier le nom du fichier de sortie et de nombreuses autres options svcutil.exe utilise en définissant des commutateurs de ligne de commande. Pour plus d’informations sur les options que svcutil.exe prend en charge, consultez la rubrique « Utilitaire les Metadata de ServiceModel-Tool (Svcutil.exe) » dans la documentation WCF à [ http://go.microsoft.com/fwlink/?LinkId=72777 ](http://go.microsoft.com/fwlink/?LinkId=72777).  
   
  SvcUtil.exe ne fournit pas la fonction de recherche pour les opérations (par exemple, en utilisant des caractères génériques). Vous devez spécifier explicitement les ID de nœud pour les opérations spécifiques que vous souhaitez cibler. Vous ne pouvez pas spécifier les ID font référence uniquement aux catégories de nœud. Pour plus d’informations sur l’ID du nœud qui le [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] surfaces, consultez [ID de nœud de métadonnées](../../adapters-and-accelerators/adapter-oracle-database/metadata-node-ids3.md).  
   

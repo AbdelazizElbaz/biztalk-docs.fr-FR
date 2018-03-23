@@ -1,11 +1,11 @@
 ---
 title: Envoyer et recevoir des Pages ASPX | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - BTARN, ASPX pages
@@ -27,22 +27,22 @@ helpviewer_keywords:
 - RNIFReceive.aspx
 - synchronous connections
 ms.assetid: 21e52390-35d8-44b1-a5cd-1cd60cfe6e61
-caps.latest.revision: "4"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 0782c421dfe771cd024b5ce4df893e2aaa45721d
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="send-and-receive-aspx-pages"></a>Envoyer et recevoir des Pages ASPX
 Le [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] les pages ASPX sont les interfaces directes entre [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] et Internet. Les deux pages ASPX sont la page de réception (RNIFReceive.aspx) et de la page d’envoi (fichier RNIFSend.aspx). Chaque page ASPX est une extension correspondant [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] pipeline. Le pipeline nécessite la page ASPX pour gérer les en-têtes de Framework RNIF (RosettaNet Implementation). Le pipeline exécute la plupart du HTTP traitement ; Toutefois, chaque page ASPX effectue le traitement des en-têtes de RNIF HTTP. Les pages de compléter les fonctionnalités dans le [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] adaptateur HTTP.  
   
  Chaque page ASPX est une page ASP[!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] application sans interface utilisateur Web. Utiliser des pages ASP[!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] Web sécurité pour garantir une connexion sécurisée avec des tiers externes. Ils fournissent une couche dans laquelle vous pouvez implémenter la tolérance de panne, d’évolutivité et de services hautement disponibles.  
   
- [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]le programme d’installation installe une page de fichier RNIFSend.aspx et d’une page de fichier RNIFReceive.aspx sur chaque déploiement de [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]. Lorsque l’initiateur ou répondeur échange des messages avec le partenaire commercial, [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] utilise les pages ASPX pour envoyer des messages ou recevoir des messages à partir de l’URL du partenaire. Si l’initiateur et le répondeur utilisent [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)], les deux pages ASPX sur l’initiateur échangent des messages avec les deux pages ASPX sur le répondeur. Pour plus d’informations, voir le « comment initiateur et répondeur ASPX Pages interagissent » de la sous-section ci-dessous.  
+ [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] le programme d’installation installe une page de fichier RNIFSend.aspx et d’une page de fichier RNIFReceive.aspx sur chaque déploiement de [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]. Lorsque l’initiateur ou répondeur échange des messages avec le partenaire commercial, [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] utilise les pages ASPX pour envoyer des messages ou recevoir des messages à partir de l’URL du partenaire. Si l’initiateur et le répondeur utilisent [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)], les deux pages ASPX sur l’initiateur échangent des messages avec les deux pages ASPX sur le répondeur. Pour plus d’informations, voir le « comment initiateur et répondeur ASPX Pages interagissent » de la sous-section ci-dessous.  
   
 ## <a name="send-aspx-page"></a>Envoyer la Page ASPX  
  La page du fichier RNIFSend.aspx reçoit un message à partir de l’adaptateur HTTP BizTalk. Il crée et ajoute des en-têtes RNIF au message et envoie ensuite le message au partenaire via Internet. L’adaptateur HTTP appelle fichier RNIFSend.aspx avec la commande suivante :  

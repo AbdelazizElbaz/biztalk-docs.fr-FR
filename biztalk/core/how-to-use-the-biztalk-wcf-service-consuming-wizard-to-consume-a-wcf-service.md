@@ -1,11 +1,11 @@
 ---
-title: "Comment utiliser l’Assistant consommation de Service WCF BizTalk pour utiliser un Service WCF | Documents Microsoft"
-ms.custom: 
+title: Comment utiliser l’Assistant consommation de Service WCF BizTalk pour utiliser un Service WCF | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF services, WCF Service Consuming Wizard
@@ -13,15 +13,15 @@ helpviewer_keywords:
 - tools, WCF Service Consuming Wizard
 - consuming, WCF Service Consuming Wizard
 ms.assetid: d5fad2ac-4d98-4720-8026-88ebab78b120
-caps.latest.revision: "23"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 12fb3eca6db9ceafeeab9b0b276bfd6f3cb23b16
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="how-to-use-the-biztalk-wcf-service-consuming-wizard-to-consume-a-wcf-service"></a>Utilisation de l'Assistant Consommation de service WCF BizTalk pour utiliser un service WCF
 L'infrastructure d'adaptateurs BizTalk offre un moyen d'ajouter des schémas d'adaptateur et des types BizTalk aux projets BizTalk. L'Assistant Consommation de service WCF BizTalk vous permet d'ajouter des adaptateurs d'envoi WCF à un projet BizTalk. Pour les adaptateurs d'envoi WCF, vous devez sélectionner un point de terminaison MEX (Metadata Exchange) existant pour les ports d'envoi. Vous devez ensuite entrer les informations utilisées pour générer les schémas et les types. Une fois que l'Assistant est fermé, les schémas et types nécessaires à l'utilisation de services WCF sont ajoutés au projet BizTalk.  
@@ -30,7 +30,7 @@ L'infrastructure d'adaptateurs BizTalk offre un moyen d'ajouter des schémas d'a
   
 1.  Dans votre Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] projet BizTalk, dans l’Explorateur de solutions, cliquez sur votre projet, cliquez sur **ajouter**, puis cliquez sur **ajouter les éléments générés**.  
   
-2.  Dans le **ajouter les éléments générés - \<**  *nom du projet*  **\>**  boîte de dialogue le **modèles** section, Sélectionnez **utiliser le Service WCF**, puis cliquez sur **ajouter**.  
+2.  Dans le **ajouter les éléments générés - \< ***nom du projet*** \>**  boîte de dialogue le **modèles** section, sélectionnez **consommer de WCF Service**, puis cliquez sur **ajouter**.  
   
 3.  Sur le **Bienvenue dans l’Assistant de consommation de Service WCF BizTalk** , cliquez sur **suivant**.  
   
@@ -59,7 +59,7 @@ L'infrastructure d'adaptateurs BizTalk offre un moyen d'ajouter des schémas d'a
   
      Dans le **ajouter des fichiers de métadonnées** boîte de dialogue, sélectionnez un ensemble complet de WSDL et XSD fichiers à utiliser pour les métadonnées. Vous pouvez générer ces fichiers de métadonnées en tapant la commande suivante à l'invite de commandes :  
   
-     **SvcUtil.exe /t:metadata http://localhost/service.svc/mex**  
+     **svcutil.exe /t:metadata http://localhost/service.svc/mex**  
   
      Cliquez sur **supprimer** pour supprimer les fichiers de métadonnées sélectionnés dans le **des fichiers de métadonnées** vue.  
   
@@ -79,7 +79,7 @@ L'infrastructure d'adaptateurs BizTalk offre un moyen d'ajouter des schémas d'a
   
      Lorsque vous importez le fichier de liaison généré, il remplit la **WCF. Action** propriété dans le format de mappage d’action. Pour voir comment cette propriété est configurée, examinez le **Action** zone de texte sur le **général** onglet dans la boîte de dialogue WCF send port transport propriétés dans la console Administration de BizTalk.  
   
-     Vous pouvez spécifier le **WCF. Action** propriété de deux manières différentes : le format d’action unique et le format de mappage d’action. Si vous définissez cette propriété dans le format d’action unique, par exemple, http://contoso.com/Svc/Op1 - le **SOAPAction** en-tête pour les messages sortants sont toujours défini sur la valeur spécifiée dans cette propriété. Si vous définissez cette propriété dans le format de mappage d’action, sortant **SOAPAction** en-tête est déterminé par le **BTS. Opération** propriété de contexte. Par exemple, si cette propriété est définie au format XML suivant et le **BTS. Opération** est définie sur **Op1**, l’adaptateur d’envoi WCF utilise http://contoso.com/Svc/Op1 pour sortant **SOAPAction** en-tête.  
+     Vous pouvez spécifier le **WCF. Action** propriété de deux manières différentes : le format d’action unique et le format de mappage d’action. Si vous définissez cette propriété dans le format d’action unique, par exemple, http://contoso.com/Svc/Op1 - le **SOAPAction** en-tête pour les messages sortants sont toujours défini sur la valeur spécifiée dans cette propriété. Si vous définissez cette propriété dans le format de mappage d’action, sortant **SOAPAction** en-tête est déterminé par le **BTS. Opération** propriété de contexte. Par exemple, si cette propriété est définie au format XML suivant et le **BTS. Opération** est définie sur **Op1**, WCF adaptateur d’envoi utilise http://contoso.com/Svc/Op1 pour sortant **SOAPAction** en-tête.  
   
      `<BtsActionMapping>`  
   
@@ -89,7 +89,7 @@ L'infrastructure d'adaptateurs BizTalk offre un moyen d'ajouter des schémas d'a
   
      `</BtsActionMapping>`  
   
-     Si les messages sortants proviennent d’un port d’orchestration, les instances d’orchestration définir dynamiquement le **BTS. Opération** propriété avec le nom de l’opération du port. Si les messages sortants sont acheminés avec le routage basé sur le contenu, vous pouvez définir le **BTS. Opération** propriété dans les composants de pipeline. Les ports générés par l’Assistant consommation de WCF BizTalk ont des opérations avec des noms qui correspondent à la **nom** les attributs dans le  **<BtsActionMapping>**  élément. Vous n’êtes pas obligé de définir explicitement la **BTS. Opération** propriété dans les orchestrations lorsque vous envoyez des messages via les ports qui ont été générées par l’Assistant.  
+     Si les messages sortants proviennent d’un port d’orchestration, les instances d’orchestration définir dynamiquement le **BTS. Opération** propriété avec le nom de l’opération du port. Si les messages sortants sont acheminés avec le routage basé sur le contenu, vous pouvez définir le **BTS. Opération** propriété dans les composants de pipeline. Les ports générés par l’Assistant consommation de WCF BizTalk ont des opérations avec des noms qui correspondent à la **nom** les attributs dans le **<BtsActionMapping>** élément. Vous n’êtes pas obligé de définir explicitement la **BTS. Opération** propriété dans les orchestrations lorsque vous envoyez des messages via les ports qui ont été générées par l’Assistant.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Comment utiliser l’Assistant Publication de services WCF BizTalk pour publier des Orchestrations en tant que Services WCF](../core/publish-orchestrations-as-wcf-services--biztalk-wcf-service-publishing-wizard.md)   

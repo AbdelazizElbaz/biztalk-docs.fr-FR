@@ -1,22 +1,22 @@
 ---
-title: "FAQ sur les adaptateurs WCF : Utilisation des Services WCF | Documents Microsoft"
-ms.custom: 
+title: 'FAQ sur les adaptateurs WCF : Utilisation des Services WCF | Documents Microsoft'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: befa2268-8a65-465f-8086-70a66808845e
-caps.latest.revision: "5"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 41d02fe0b7be1f53edaac4c18cfd7717a25c3a71
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="wcf-adapter-faq-using-wcf-services"></a>FAQ sur les adaptateurs WCF : utilisation des services WCF
 ## <a name="how-does-biztalk-server-use-its-wcf-adapters-to-access-wcf-services"></a>Comment BizTalk Server utilise-t-il les adaptateurs WCF pour accéder aux services WCF ?  
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/28/2017
   
  L'adaptateur WCF BizTalk personnalisé permet de déployer une nouvelle liaison à partir des éléments BindingElements, ainsi que de configurer directement une nouvelle liaison. Il permet également de configurer les comportements sur les liaisons standard. Ceci est particulièrement utile car l'écriture de comportements personnalisés est bien plus facile que l'écriture de nouveaux objets BindingElements.  
   
- Création d’un élément BindingElement est un exercice de développement impliquées et la meilleure source d’informations de référence pour qu’il est exemples WCF sur le lien hypertexte « http://go.microsoft.com/fwlink/?LinkId=142449 » \t « _blank » http://go.microsoft.com/fwlink/?LinkId=142449. Pour créer un élément BindingElement personnalisé, vous créez une classe dérivant de BindingElement. Un nouvel élément BindingElement doit se trouver dans un nouvel assembly. Celui-ci doit être installé dans le GAC de l'ordinateur d'administration dans lequel sont configurés l'hôte, le port d'envoi et l'emplacement de réception BizTalk. Pour associer une liaison personnalisée avec un port d’envoi ou emplacement de réception, vous devez d’abord ajouter à la \<bindingElementExtensions\> section du fichier machine.config sur le même ordinateur.  
+ Création d’un élément BindingElement est un exercice de développement impliquées et la meilleure source d’informations de référence pour qu’il est exemples WCF sur le lien hypertexte «http://go.microsoft.com/fwlink/?LinkId=142449"\t « _blank » http://go.microsoft.com/fwlink/?LinkId=142449. Pour créer un élément BindingElement personnalisé, vous créez une classe dérivant de BindingElement. Un nouvel élément BindingElement doit se trouver dans un nouvel assembly. Celui-ci doit être installé dans le GAC de l'ordinateur d'administration dans lequel sont configurés l'hôte, le port d'envoi et l'emplacement de réception BizTalk. Pour associer une liaison personnalisée avec un port d’envoi ou emplacement de réception, vous devez d’abord ajouter à la \<bindingElementExtensions\> section du fichier machine.config sur le même ordinateur.  
   
  Après avoir apporté cette modification, vous pouvez afficher le **Configuration des propriétés de Transport** boîte de dialogue pour configurer la liaison.  
   
@@ -43,7 +43,7 @@ ms.lasthandoff: 11/28/2017
   
 3.  Sélectionnez l'élément de liaison que vous avez spécifié dans le fichier machine.config, puis configurez la liaison selon vos besoins. La liaison peut à présent utiliser la transmission ou la réception de messages.  
   
- BizTalk utilise une validation très limitée pour une liaison personnalisée lorsque celle-ci a été ajoutée de cette manière. Toutefois, il est important de vérifier que les éléments de liaison sont répertoriés dans le bon ordre. L'élément de liaison qui doit être invoqué en premier au moment de l'exécution doit être en bas de l'arborescence des liaisons CustomBindingElement dans la boîte de dialogue. La liste des éléments BindingElements doit contenir un transport, qui doit être en bas de la liste. L'ensemble d'éléments BindingElements doit également contenir un encodeur. Pour plus d’informations, consultez la documentation WCF sur la liaison d’éléments à [http://go.microsoft.com/fwlink/?LinkId=142449](http://go.microsoft.com/fwlink/?LinkId=142449).  
+ BizTalk utilise une validation très limitée pour une liaison personnalisée lorsque celle-ci a été ajoutée de cette manière. Toutefois, il est important de vérifier que les éléments de liaison sont répertoriés dans le bon ordre. L'élément de liaison qui doit être invoqué en premier au moment de l'exécution doit être en bas de l'arborescence des liaisons CustomBindingElement dans la boîte de dialogue. La liste des éléments BindingElements doit contenir un transport, qui doit être en bas de la liste. L'ensemble d'éléments BindingElements doit également contenir un encodeur. Pour plus d’informations, consultez la documentation WCF sur la liaison d’éléments à [ http://go.microsoft.com/fwlink/?LinkId=142449 ](http://go.microsoft.com/fwlink/?LinkId=142449).  
   
 ## <a name="what-is-a-wcf-custom-behavior-and-how-do-i-use-one-with-biztalk-server"></a>Définition d'un comportement WCF personnalisé et utilisation de celui-ci avec BizTalk Server  
  L'un des avantages d'utiliser WCF en tant que mécanisme de communication par message est la possibilité d'étendre les fonctionnalités de ses services à l'aide d'un code personnalisé. Les extensions de comportement personnalisé sont l'une des fonctionnalités qui différencie WCF des autres technologies de services Web sur le marché.  

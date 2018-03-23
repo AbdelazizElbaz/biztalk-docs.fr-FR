@@ -1,25 +1,25 @@
 ---
-title: "Utilisation des filtres avec la forme d’un Message de réception | Documents Microsoft"
-ms.custom: 
+title: Utilisation des filtres avec la forme d’un Message de réception | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - filters, receive messages
 - messages, filters
 ms.assetid: 5310039b-6719-4971-933a-2da0573fb5e7
-caps.latest.revision: "9"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 1434e9704e073cfef1503ef550409e6d6414bb7c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="using-filters-with-the-receive-message-shape"></a>Utilisation des filtres avec la forme d’un Message de réception
 Une expression de filtre est un paramètre facultatif qu'il est possible d'appliquer à une forme de réception d'une orchestration spécifiant la valeur True pour la propriété Activer. Si vous définissez une expression de filtre, l'orchestration ne sera activée que si un message entrant remplit les conditions spécifiées dans l'expression de filtre. En l'absence d'expression de filtre, tout message entrant auquel est abonnée l'orchestration pourra activer cette dernière.  

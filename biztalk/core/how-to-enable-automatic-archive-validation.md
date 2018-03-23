@@ -1,25 +1,25 @@
 ---
-title: "Comment activer la Validation de l’archivage automatique | Documents Microsoft"
-ms.custom: 
+title: Comment activer la Validation de l’archivage automatique | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - validating, archives [Tracking database]
 - archiving [Tracking database], validating archive
 ms.assetid: 406ca54a-6b1f-4bdb-9bad-bea5ea0f6e66
-caps.latest.revision: "30"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: e654d22a08a7b07210ded9c319953c288065927a
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="how-to-enable-automatic-archive-validation"></a>Activation de la validation automatique de l'archivage
 La validation d'archivage permet de valider les archives lors de leur création. Avant de pouvoir activer la validation d'archivage automatique, vous devez configurer un serveur de base de données secondaire, également appelé « serveur de validation ». Le processus d'archivage consistant en une simple sauvegarde, l'image réelle stockée sur le disque peut être altérée suite à une défaillance matérielle.  
@@ -30,7 +30,7 @@ La validation d'archivage permet de valider les archives lors de leur création.
   
  Si la restauration ne s'effectue pas correctement, le serveur de validation communique cette information à la base de données des suivis BizTalk (BizTalkDTADb). Le travail de purge crée une autre archive et attend la validation de la nouvelle archive. Ceci vous évite toute perte de données de suivi due à une archive endommagée.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Configuration requise  
  Pour exécuter cette procédure, vous devez ouvrir une session à l'aide d'un compte membre du rôle serveur fixe sysadmin [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)].  
   
 ### <a name="to-enable-automatic-archive-validation"></a>Activation de la validation de l'archivage automatique  
@@ -87,9 +87,9 @@ La validation d'archivage permet de valider les archives lors de leur création.
   
 12. Dans le **liste des étapes du travail**, cliquez sur **valider**, puis cliquez sur **modifier**.  
   
-13. Sur le **général** page, dans le **commande** zone, dans la commande, **exec dtasp_ValidateArchive null null**, remplacez null, null avec le nom du serveur hébergeant le BizTalk Suivi de base de données, entouré de guillemets, suivis du nom de la base de données des suivis BizTalk, entouré de guillemets, simples, puis cliquez sur **OK**. Exemple :  
+13. Sur le **général** page, dans le **commande** zone, dans la commande, **exec dtasp_ValidateArchive null null**, remplacez null, null avec le nom du serveur hébergeant le BizTalk Suivi de base de données, entouré de guillemets, suivis du nom de la base de données des suivis BizTalk, entouré de guillemets, simples, puis cliquez sur **OK**. Par exemple :  
   
-     **EXEC dtasp_ValidateArchive '**  *\<TrackingServerName\>*  **','**  *\<TrackingDatabaseName\>*  **'**  
+     **EXEC dtasp_ValidateArchive '** *\<TrackingServerName\>* **','** *\<TrackingDatabaseName\>* **'**  
   
 > [!NOTE]
 >  Le travail ValidateArchive ne comporte pas de planification et vous ne devez pas configurer de planification pour ce travail. Le travail de purge et d'archivage de la base de données des suivis (BizTalkDTADb) démarre ce travail automatiquement lors de la création d'une archive.  

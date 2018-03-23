@@ -1,22 +1,22 @@
 ---
-title: "Le programme de résolution et l’infrastructure d’adaptateurs fournisseur | Documents Microsoft"
-ms.custom: 
+title: Le programme de résolution et l’infrastructure d’adaptateurs fournisseur | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fb7ea42e-b32c-40a8-b36b-c349f56f6edd
-caps.latest.revision: "4"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 6b97eec38f868a6d1aa00684d92166bb2759a51d
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="the-resolver-and-adapter-provider-framework"></a>Le programme de résolution et l’infrastructure d’adaptateurs fournisseur
 Le programme de résolution et l’infrastructure d’adaptateurs fournisseur prend en charge la résolution de point de terminaison, de transformation et d’itinéraire et le routage. L’infrastructure peut résoudre les points de terminaison et définir les propriétés de l’adaptateur de sortie dynamiquement. Après un programme de résolution composant résout un point de terminaison (par exemple, à l’aide de Universal Description, Discovery and Integration [UDDI] pour rechercher un point de terminaison de service Web sortants), un composant du fournisseur d’adaptateur définit des propriétés spécifiques du serveur BizTalk inscrit cartes. Par exemple, le fournisseur de l’adaptateur WCF-BasicHttp est chargé de définir les propriétés de contexte pour le point de terminaison URI qui utilisera l’adaptateur BizTalk spécifique ; le message spécifiques à BizTalk le fournisseur de l’adaptateur FTP est chargé de définir les propriétés spécifiques à l’adaptateur FTP.  
@@ -36,115 +36,115 @@ Le programme de résolution et l’infrastructure d’adaptateurs fournisseur pr
   
  Voici quelques exemples de chaînes de connexion :  
   
--   **STATIQUE**  
+-   **STATIC**  
   
-     STATIQUE :\\\TransportType= ;  
+     STATIC:\\\TransportType=;  
   
-     TransportLocation = http://localhost/ESB.CanadianServices/SubmitPOService.asmx;  
+     TransportLocation=http://localhost/ESB.CanadianServices/SubmitPOService.asmx;  
   
-     Action = ;  
+     Action=;  
   
-     EndPointConfig = ;  
+     EndPointConfig=;  
   
-     JaxRpcResponse = false ;  
+     JaxRpcResponse=false;  
   
-     MessageExchangePattern = ;  
+     MessageExchangePattern=;  
   
-     TargetNamespace = http://globalbank.esb.dynamicresolution.com/canadianservices/;  
+     TargetNamespace=http://globalbank.esb.dynamicresolution.com/canadianservices/;  
   
-     TransformType = ;  
+     TransformType=;  
   
 -   **UDDI**  
   
-     UDDI :\\\serverUrl= http://localhost : 9901/rmengine ;  
+     UDDI:\\\serverUrl=http://localhost:9901/rmengine;  
   
-     serviceName = OrderPurchaseWebService ;  
+     serviceName=OrderPurchaseWebService;  
   
-     serviceProvider = ESB pratiques de Microsoft  
+     serviceProvider=Microsoft Practices ESB  
   
 -   **XPATH**  
   
-     \\\TransportType= ;  
+     \\\TransportType=;  
   
-     TransportLocation = /*[local-name () = 'OrderDoc' et namespace-uri() = 'http://globalbank.esb.dynamicresolution.com/northamericanservices/'] /*[local-name () = 'ID' et namespace-uri() = 'http://globalbank.esb.dynamicresolution.com/northamericanservices/'] ;  
+     TransportLocation = /*[local-name () = 'OrderDoc' et namespace-uri() ='http://globalbank.esb.dynamicresolution.com/northamericanservices/'] /*[local-name () = 'ID' et namespace-uri() ='http://globalbank.esb.dynamicresolution.com/northamericanservices/'] ;  
   
-     Action = ;  
+     Action=;  
   
-     EndPointConfig = ;  
+     EndPointConfig=;  
   
-     JaxRpcResponse = ;  
+     JaxRpcResponse=;  
   
-     MessageExchangePattern = ;  
+     MessageExchangePattern=;  
   
-     TargetNamespace = /*[local-name () = 'OrderDoc' et namespace-uri() = 'http://globalbank.esb.dynamicresolution.com/northamericanservices/'] /*[local-name () = 'customerName' and namespace-uri () ='http : / / globalbank.ESB.dynamicresolution.com/northamericanservices/'] ;  
+     TargetNamespace = /*[local-name () = 'OrderDoc' et namespace-uri() ='http://globalbank.esb.dynamicresolution.com/northamericanservices/'] /*[local-name () = 'customerName' et namespace-uri() ='http://globalbank.esb.dynamicresolution.com/northamericanservices/'] ;  
   
-     TransformType = ;  
+     TransformType=;  
   
 -   **BRE**  
   
-     BRE :\\\policy=GetCanadaEndPoint ;  
+     BRE:\\\policy=GetCanadaEndPoint;  
   
-     version = ;  
+     version=;  
   
-     useMsg = ;  
+     useMsg=;  
   
 -   **BRI**  
   
-     BRI :\\\policy=ResolveItinerary ;  
+     BRI:\\\policy=ResolveItinerary;  
   
-     version = ;  
+     version=;  
   
-     useMsg = ;  
+     useMsg=;  
   
 -   **FEUILLE DE ROUTE**  
   
      ITINÉRAIRE :\\\name=TwoWayTestItinerary ;  
   
-     version = ;  
+     version=;  
   
 -   **ITINÉRAIRE STATIQUE**  
   
      ITINÉRAIRE statique :\\\name=TwoWayTestItinerary ;  
   
-     version = ;  
+     version=;  
   
 -   **LDAP**  
   
-     LDAP :\\\TransportType=SMTP ;  
+     LDAP:\\\TransportType=SMTP;  
   
-     TransportLocation = {message}  
+     TransportLocation={mail}  
   
-     Filtre = (&amp;(objectClass = User) (&#124; (userPrincipalName =yourname@domain.com))) ;  
+     Filter=(&amp;(objectClass=User)(&#124;(userPrincipalName=yourname@domain.com)));  
   
-     SearchRoot = ;  
+     SearchRoot=;  
   
-     SearchScope = sous-arborescence ;  
+     SearchScope=Subtree;  
   
      EndpointConfig = Subject = Message de Test d’itinéraire à la messagerie de {}&amp;  
   
-     SMTPAuthenticate = 0&amp;  
+     SMTPAuthenticate=0&amp;  
   
-     SMTPHost = 127.0.0.1&amp;  
+     SMTPHost=127.0.0.1&amp;  
   
-     FROM =test@globalbank.com&amp;  
+     From=test@globalbank.com&amp;  
   
-     DeliveryReceipt = false&amp;  
+     DeliveryReceipt=false&amp;  
   
-     MessagePartsAttachments = 0&amp;  
+     MessagePartsAttachments=0&amp;  
   
-     ReadReceipt = false ;  
+     ReadReceipt=false;  
   
-     ThrowErrorIfNotFound = false ;  
+     ThrowErrorIfNotFound=false;  
   
-     Action = ;  
+     Action=;  
   
-     JaxRpcResponse = false ;  
+     JaxRpcResponse=false;  
   
-     MessageExchangePattern = ;  
+     MessageExchangePattern=;  
   
-     TargetNamespace = ;  
+     TargetNamespace=;  
   
-     TransformType = ;  
+     TransformType=;  
   
  Pas de tous les attributs dans la chaîne de connexion sont obligatoires. En outre, **EndPointConfig** est un attribut spécial qui n’importe quel programme de résolution peut remplir et retourner. Si vous le souhaitez, le programme de résolution peut stocker les paires nom/valeur qui correspondent aux propriétés de contexte de l’adaptateur BizTalk spécifiques, lequel il peut, à son tour, écrire dans le contexte du message BizTalk.  
   

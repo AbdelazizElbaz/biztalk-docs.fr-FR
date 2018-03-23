@@ -1,11 +1,11 @@
 ---
 title: Sources et les magasins de certificats | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - certificates, certificate storage
@@ -13,15 +13,15 @@ helpviewer_keywords:
 - certificates, certificate sources
 - certificates, importing
 ms.assetid: 3e98fb56-4368-46f3-9329-c44fed11f4fb
-caps.latest.revision: "4"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: f3ade897bb51850b4ef9dd6b530f5fc04c6b2601
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="certificate-sources-and-stores"></a>Sources de certificat et de magasins
 Cette rubrique décrit où importer des certificats à partir d’et où stocker les certificats.  
@@ -49,4 +49,4 @@ Cette rubrique décrit où importer des certificats à partir d’et où stocker
 ## <a name="see-also"></a>Voir aussi  
  [L’importation de certificats à l’aide de l’utilitaire CertWizard](../../adapters-and-accelerators/accelerator-rosettanet/importing-certificates-using-the-certwizard-utility.md)   
  [L’importation de certificats à l’aide de MMC](../../adapters-and-accelerators/accelerator-rosettanet/importing-certificates-using-mmc.md)   
- [L’importation de certificats &#91; RN3 &#93;](../../adapters-and-accelerators/accelerator-rosettanet/certificate-sources-and-stores.md)
+ [L’importation de certificats &#91;RN3&#93;](../../adapters-and-accelerators/accelerator-rosettanet/certificate-sources-and-stores.md)

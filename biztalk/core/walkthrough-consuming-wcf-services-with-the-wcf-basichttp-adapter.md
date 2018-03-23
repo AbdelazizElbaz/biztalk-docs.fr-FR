@@ -1,22 +1,22 @@
 ---
-title: "Procédure pas à pas : Utilisation des Services WCF avec l’adaptateur WCF-BasicHttp | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Utilisation des Services WCF avec l’adaptateur WCF-BasicHttp | Documents Microsoft'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2d280198-ba55-4937-91c9-19d6d0ed3194
-caps.latest.revision: "49"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: f3c85d550e7a1429e18035629517017c90b44c9e
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="walkthrough-consuming-wcf-services-with-the-wcf-basichttp-adapter"></a>Procédure pas à pas : Utilisation des Services WCF avec l’adaptateur WCF-BasicHttp
   
@@ -41,7 +41,7 @@ ms.lasthandoff: 12/01/2017
   
 -   Dans le Gestionnaire des services Internet, configurez l'application Web hébergeant le service [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] pour exposer ses métadonnées. Une fois qu’il est activé, le **Assistant consommation de Service WCF de BizTalk** peut obtenir ces métadonnées pour générer des types et des schémas pour accéder à la [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] service.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Configuration requise  
  Pour exécuter la procédure décrite dans cet exemple, assurez-vous que votre environnement est conforme à la configuration requise décrite ci-dessous :  
   
 -   L’ordinateur qui génère les assemblys et exécute le processus de déploiement et l’ordinateur qui exécute l’exemple, requièrent Microsoft [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)], Microsoft [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]et Microsoft BizTalk Server.  
@@ -52,7 +52,7 @@ ms.lasthandoff: 12/01/2017
   
 -   Sur les ordinateurs utilisés pour effectuer des tâches d'administration, vous devez exécuter un compte d'utilisateur membre du groupe Administrateurs [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] pour configurer les paramètres d'application de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] à l'intérieur de la console Administration de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Ce compte d'utilisateur doit également être membre du groupe Administrateurs local pour le déploiement d'application, la gestion d'instances de l'hôte et d'autres tâches éventuellement requises.  
   
--   Sur n’importe quel ordinateur qui nécessite [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] fonctionnalité, effectuez la procédure d’installation unique pour le [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] exemples [http://go.microsoft.com/fwlink/?LinkId=135510](http://go.microsoft.com/fwlink/?LinkId=135510).  
+-   Sur n’importe quel ordinateur qui nécessite [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] fonctionnalité, effectuez la procédure d’installation unique pour le [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] exemples [ http://go.microsoft.com/fwlink/?LinkId=135510 ](http://go.microsoft.com/fwlink/?LinkId=135510).  
   
 -   Sur l'ordinateur qui exécute l'exemple et importe une liaison ou un fichier .msi dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], assurez-vous que l'hôte n'est pas un hôte approuvé, sans quoi l'importation échoue.  
   
@@ -66,7 +66,7 @@ ms.lasthandoff: 12/01/2017
   
 3.  Dans l’Explorateur de solutions, développez le **BasicHttpWCFServiceConsuming** projet. Ce projet est le service [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] qui sera appelé par le port d'envoi. Il sera hébergé dans un environnement d'hôte géré à l'aide des services Internet. Dans les services Internet, l'hébergement utilise une activation basée sur les messages pour gérer l'activation et la durée du service. Développez **App_Code**, puis ouvrez **OrderProcess.cs** pour passer en revue. Cela [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] service reçoit des messages de demande de commande via le **OrderRequest** (méthode). Le fichier OrderProcess.cs contient la définition et l'implémentation de l'interface du service [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]. Il renvoie simplement ordre des messages de réponse via la **OrderResponse** (méthode).  
   
-4.  Examinez le fichier OrderProcess.svc. Il contient une seule ligne utilisée pour indiquer aux services Internet d'activer le service pour une application cliente. Le  **@ServiceHost**  attribut utilisé pour héberger le service est un point d’extensibilité dans le [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] modèle de programmation. Un modèle de fabrique utilise **ServiceHostFactory** pour créer une instance de **ServiceHost** avec une instance de la [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] service pour gérer les demandes entrantes. L’instanciation de cette instance est basée sur le **ServiceBehaviorAttribute.ConcurrencyMode** propriété qui détermine si un service prend en charge un seul thread, plusieurs threads ou des appels réentrants. L’instanciation est également déterminée par le **ServiceBehavior.InstanceMode** propriété qui détermine si une seule instance servira tous les appelants (singleton), si une instance sera créée par appel (sans état), ou si une seule instance va être créée pour chaque session (stateful).  
+4.  Examinez le fichier OrderProcess.svc. Il contient une seule ligne utilisée pour indiquer aux services Internet d'activer le service pour une application cliente. Le **@ServiceHost** attribut utilisé pour héberger le service est un point d’extensibilité dans le [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] modèle de programmation. Un modèle de fabrique utilise **ServiceHostFactory** pour créer une instance de **ServiceHost** avec une instance de la [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] service pour gérer les demandes entrantes. L’instanciation de cette instance est basée sur le **ServiceBehaviorAttribute.ConcurrencyMode** propriété qui détermine si un service prend en charge un seul thread, plusieurs threads ou des appels réentrants. L’instanciation est également déterminée par le **ServiceBehavior.InstanceMode** propriété qui détermine si une seule instance servira tous les appelants (singleton), si une instance sera créée par appel (sans état), ou si une seule instance va être créée pour chaque session (stateful).  
   
     ```  
     <%@ServiceHost language=c# Debug="true" Service="Microsoft.Samples.BizTalk.WCF.BasicHttpSendAdapter.BasicHttpWcfServiceConsuming.OrderProcessServiceType" %>  
@@ -241,7 +241,7 @@ ms.lasthandoff: 12/01/2017
   
 4.  Ouvrez une invite de commandes, taper **iisreset** à recycler IIS et ses services dépendants, puis appuyez sur ENTRÉE.  
   
-5.  À l’invite de commandes, copiez **C:\WCFBasicHttpSendAdapter\TestData\WCFBasicSendAdapter.OrderRequest.Sample.xml** à la **C:\WCFBasicHttpSendAdapter\OrderRequestIn** dossier. Ce message est routé vers bidirectionnel **WcfSendPort_OrderProcessServiceType_ServiceEndpoint** port d’envoi statique avec sollicitation-réponse.  L’envoi de ce bidirectionnelle envoyer des appels de port **Submit** méthode sur la [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] service hébergé dans IIS. Le résultat est retourné pour le port de réponse de la **WcfSendPort_OrderProcessServiceType_ServiceEndpoint** port d’envoi.  Le **WCFBasicSendAdapter.SendPurchaseOrder.FILE** port d’envoi comporte un abonnement qui est déclenché lorsque le type du message est **http:// Microsoft.Samples.BizTalk.WCF.BasicHttpSendAdapter.BasicHttpWCFServiceConsuming#OrderResponse**. Il sera le message traité avec succès et écrire dans le **C:\WCFBasicHttpSendAdapter\OrderResponseOut** dossier.  
+5.  À l’invite de commandes, copiez **C:\WCFBasicHttpSendAdapter\TestData\WCFBasicSendAdapter.OrderRequest.Sample.xml** à la **C:\WCFBasicHttpSendAdapter\OrderRequestIn** dossier. Ce message est routé vers bidirectionnel **WcfSendPort_OrderProcessServiceType_ServiceEndpoint** port d’envoi statique avec sollicitation-réponse.  L’envoi de ce bidirectionnelle envoyer des appels de port **Submit** méthode sur la [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] service hébergé dans IIS. Le résultat est retourné pour le port de réponse de la **WcfSendPort_OrderProcessServiceType_ServiceEndpoint** port d’envoi.  Le **WCFBasicSendAdapter.SendPurchaseOrder.FILE** port d’envoi comporte un abonnement qui est déclenché lorsque le type du message est **http://Microsoft.Samples.BizTalk.WCF.BasicHttpSendAdapter.BasicHttpWCFServiceConsuming#OrderResponse**. Il sera le message traité avec succès et écrire dans le **C:\WCFBasicHttpSendAdapter\OrderResponseOut** dossier.  
   
 6.  Vérifiez le **C:\WCFBasicHttpSendAdapter\OrderResponseOut** dossier pour un message de réponse de le [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] service.  
   

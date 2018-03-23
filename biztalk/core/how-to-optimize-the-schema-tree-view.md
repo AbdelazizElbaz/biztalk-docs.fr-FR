@@ -1,22 +1,22 @@
 ---
-title: "L’optimisation de l’arborescence du schéma | Documents Microsoft"
-ms.custom: 
+title: L’optimisation de l’arborescence du schéma | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ab4ad6b5-5bbd-443b-9041-6cddf9d64735
-caps.latest.revision: "9"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: aeeddd0893b80c1c7b37b2d0ee5f9f6cd68849d6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="how-to-optimize-the-schema-tree-view"></a>Optimisation de la vue de l'arborescence de schéma
 Vous pouvez utiliser la **vue pertinence** dans le Mappeur BizTalk pour optimiser la source et/ou cible des arborescences de schéma. Cette rubrique fournit des instructions sur l'exécution de l'opération.  
@@ -38,7 +38,7 @@ Vous pouvez utiliser la **vue pertinence** dans le Mappeur BizTalk pour optimise
     > [!NOTE]
     >  Pour plus d’informations sur l’info-bulle, consultez [l’info-bulle de l’affichage et l’info-bulle](../core/how-to-view-infotip-and-tooltip.md).  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Configuration requise  
  Cette opération nécessite l'exécution du Mappeur BizTalk.  
   
 ## <a name="to-optimize-the-schema-tree-view"></a>Pour optimiser l'affichage de l'arborescence du schéma  

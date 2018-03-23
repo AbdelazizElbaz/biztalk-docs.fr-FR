@@ -1,21 +1,21 @@
 ---
-title: "Étape 3 : créer les définitions de build et de version | Documents Microsoft"
-description: "Dans VSTS, créez une définition de build pour générer les projets de votre git ou le référentiel TFS, puis créer une définition de mise en production pour déployer l’application BizTalk Server"
-ms.custom: 
+title: 'Étape 3 : créer les définitions de build et de version | Documents Microsoft'
+description: Dans VSTS, créez une définition de build pour générer les projets de votre git ou le référentiel TFS, puis créer une définition de mise en production pour déployer l’application BizTalk Server
+ms.custom: ''
 ms.date: 11/20/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 5ce84071fbc105fd9faddd794792273aae2e76b9
-ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="step-3-create-the-build-and-release-definition"></a>Étape 3 : Créer la version et définition de version
 

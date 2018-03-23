@@ -1,27 +1,27 @@
 ---
-title: "Procédure pas à pas : Test de la stratégie | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Test de la stratégie | Documents Microsoft'
+ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 53ed915d-0f3a-48ea-bfd5-a1f89b9b689c
-caps.latest.revision: "23"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 6a6f879111a28d5cbf9b2a75c7b3f3b3b865fb38
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="walkthrough-testing-the-policy"></a>Procédure pas à pas : Test de la stratégie
 Cette procédure pas à pas fournit des procédures pas à pas pour tester la stratégie que vous avez créé dans le [procédure pas à pas : création d’une stratégie commerciale Simple](../core/walkthrough-creating-a-simple-business-policy.md) procédure pas à pas.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Configuration requise  
  Vous devez effectuer la [procédure pas à pas : création d’une stratégie commerciale Simple](../core/walkthrough-creating-a-simple-business-policy.md) avant d’effectuer cette procédure pas à pas dans la procédure pas à pas.  
   
 ## <a name="overview-of-this-walkthrough"></a>Vue d’ensemble de cette procédure pas à pas  
@@ -101,7 +101,7 @@ Cette procédure pas à pas fournit des procédures pas à pas pour tester la st
   
 3.  Dans le **XmlDocument** nœud, sélectionnez **RuleTest.PO**, puis cliquez sur **ajouter une Instance**.  
   
-     ![Éditeur des règles d’entreprise &#45; TestPolicySelectFacts](../core/media/7115f0d4-0c12-4292-81a5-eb78d62c5543.gif "7115f0d4-0c12-4292-81a5-eb78d62c5543")  
+     ![Business Rule Composer&#45;TestPolicySelectFacts](../core/media/7115f0d4-0c12-4292-81a5-eb78d62c5543.gif "7115f0d4-0c12-4292-81a5-eb78d62c5543")  
   
 4.  Sélectionnez le **SamplePO.xml** de fichiers que vous avez créé précédemment, puis cliquez sur **ouvrir**.  
   

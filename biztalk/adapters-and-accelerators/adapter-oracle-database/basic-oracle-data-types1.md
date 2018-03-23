@@ -1,25 +1,25 @@
 ---
-title: "Oracle base données Types1 | Documents Microsoft"
-ms.custom: 
+title: Oracle base données Types1 | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - data types, supported
 - data types, unsupported
 ms.assetid: 491230b9-b946-4681-a048-5da46102c370
-caps.latest.revision: "11"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 86349adae1a3ae061cb07c6c770532cf92c74dc8
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="basic-oracle-data-types"></a>Types de données Oracle de base
 Cette rubrique décrit comment les [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] met en évidence des types de données de base Oracle.  
@@ -35,10 +35,10 @@ Cette rubrique décrit comment les [!INCLUDE[adapteroracle](../../includes/adapt
 |Type de données Oracle|Type XSD|Type .NET|Commentaires|  
 |----------------------|--------------|---------------|--------------|  
 |BFile|d’entrée : xsd : String<br />sortie : xsd : base64Binary|Chaîne<br />Byte[]|Type de données BFile n’est pas pris en charge dans les types complexes (par exemple, RecordType TableType, UDT et VArray).|  
-|Objet BLOB|xsd:base64Binary|Byte[]|Prise en charge des procédures et des opérations de table.|  
+|Blob|xsd:base64Binary|Byte[]|Prise en charge des procédures et des opérations de table.|  
 |Char|xsd:string|Chaîne|Prise en charge des procédures et des opérations de table.|  
-|CLOB|xsd:string|Chaîne|Prise en charge des procédures et des opérations de table.|  
-|Date *<br /><br /> (Non-safe si en tapant à l’intérieur d’un UDT)|xsd:dateTime|DateTime|Les valeurs de date ne peut pas contenir les informations de fuseau horaire (décalages UTC ou l’heure UTC) :<br /><br /> -les valeurs de xsd : DateTime ne doivent pas contenir UTC ou l’heure UTC offsets<br />-   **DateTime.Kind** doit être **DateTimeKind.Unspecified**<br /><br /> Si les informations de fuseau horaire sont spécifiées, l’adaptateur génère un **XmlReaderParsingException** exception avec un message qui indique le champ.|  
+|Clob|xsd:string|Chaîne|Prise en charge des procédures et des opérations de table.|  
+|Date*<br /><br /> (Non-safe si en tapant à l’intérieur d’un UDT)|xsd:dateTime|DateTime|Les valeurs de date ne peut pas contenir les informations de fuseau horaire (décalages UTC ou l’heure UTC) :<br /><br /> -les valeurs de xsd : DateTime ne doivent pas contenir UTC ou l’heure UTC offsets<br />-   **DateTime.Kind** doit être **DateTimeKind.Unspecified**<br /><br /> Si les informations de fuseau horaire sont spécifiées, l’adaptateur génère un **XmlReaderParsingException** exception avec un message qui indique le champ.|  
 |Float **|type xsd : float si prec < = 7<br />XSD : double si prec > 7 et < = 15<br />XSD : String si prec > 15|Float<br />Double<br />Chaîne|-|  
 |IntervalYM|xsd:string<br /><br /> XSD : long si à l’intérieur d’un UDT|Chaîne<br /><br /> If long à l’intérieur d’un UDT|La valeur doit être exprimée dans le format natif Oracle : année-mois ; Par exemple, « 1-2 » (1 année et 2 mois).|  
 |IntervalDS|xsd:string<br /><br /> XSD:Duration si à l’intérieur d’un UDT|Chaîne<br /><br /> Intervalle de temps si à l’intérieur d’un UDT|La valeur doit être exprimée dans le format natif Oracle : jour HH:MI:SSxFF ; par exemple, « 5 15:30:12.99 »|  
@@ -49,12 +49,12 @@ Cette rubrique décrit comment les [!INCLUDE[adapteroracle](../../includes/adapt
 |Nombre **|XSD : decimal si prec < = 28<br />XSD : String si prec > 28|Décimal<br />Chaîne|-|  
 |NVarchar2|xsd:string|Chaîne|-|  
 |Brut|xsd:base64Binary|Byte[]|Prise en charge des procédures et des opérations de table.|  
-|ID de ligne|xsd:string|Chaîne|-|  
-|Horodatage *<br /><br /> (Non-safe si en tapant à l’intérieur d’un UDT)|XSD : DateTime si prec < = 7<br />XSD : String si prec > 7|DateTime<br />Chaîne|Les valeurs d’horodatage ne peut pas contenir les informations de fuseau horaire (décalages UTC ou l’heure UTC) :<br /><br /> -les valeurs de xsd : DateTime ne doivent pas contenir UTC ou l’heure UTC offsets<br />-   **DateTime.Kind** doit être **DateTimeKind.Unspecified**<br /><br /> Si les informations de fuseau horaire sont spécifiées, l’adaptateur génère un **XmlReaderParsingException** exception avec un message qui indique le champ.|  
+|RowID|xsd:string|Chaîne|-|  
+|TimeStamp*<br /><br /> (Non-safe si en tapant à l’intérieur d’un UDT)|XSD : DateTime si prec < = 7<br />XSD : String si prec > 7|DateTime<br />Chaîne|Les valeurs d’horodatage ne peut pas contenir les informations de fuseau horaire (décalages UTC ou l’heure UTC) :<br /><br /> -les valeurs de xsd : DateTime ne doivent pas contenir UTC ou l’heure UTC offsets<br />-   **DateTime.Kind** doit être **DateTimeKind.Unspecified**<br /><br /> Si les informations de fuseau horaire sont spécifiées, l’adaptateur génère un **XmlReaderParsingException** exception avec un message qui indique le champ.|  
 |TimeStampLTZ|xsd:string|Chaîne|TimeStampLTZ n’est pas pris en charge dans les types UDT.<br /><br /> **En dehors d’un UDT**: la valeur doit être exprimée en NLS_TIMESTAMP_TZ_FORMAT.|  
 |TimeStampTZ|xsd:string<br /><br /> XSD : DateTime si à l’intérieur d’un UDT|Chaîne<br /><br /> DateTime si à l’intérieur d’un UDT|**En dehors d’un UDT**: la valeur doit être exprimée en NLS_TIMESTAMP_TZ_FORMAT.|  
 |Decimal **|XSD : decimal si prec < = 28<br />XSD : String si prec > 28|Décimal<br />Chaîne|-|  
-|VARCHAR2|xsd:string|Chaîne|-|  
+|Varchar2|xsd:string|Chaîne|-|  
 |Binaire Float **|type xsd : float si prec < = 7<br />XSD : String si prec > 7|Float<br />Chaîne|Vous devez spécifier la valeur dans un formulaire cohérent avec vos paramètres régionaux (**System.Globalization.CultureInfo.CurrentCulture**). Par exemple, utilisez une virgule pour les paramètres régionaux anglais ('. ') pour spécifier la virgule décimale ; pour des paramètres régionaux Français, utilisez une virgule («, »).|  
 |Binaire Double **|XSD : double si prec < = 15<br />XSD : String si prec > 15|Double<br />Chaîne|-|  
 |Entier binaire **|xsd:integer|Int32|Prise en charge pour les procédures, fonctions et des packages.|  

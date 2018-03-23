@@ -1,23 +1,24 @@
 ---
 title: Syntaxe pour une instruction SELECT dans SAP | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: SELECT statement, syntax for
+helpviewer_keywords:
+- SELECT statement, syntax for
 ms.assetid: 47120d74-bf41-4622-a6bc-7b8ddc959305
-caps.latest.revision: "8"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 5f57cac0673a6520de4b0d881527bbc7b670ca1b
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="syntax-for-a-select-statement-in-sap"></a>Syntaxe pour une instruction SELECT dans SAP
 Les sections suivantes décrivent les spécifications de grammaire pour l’implémentation des requêtes SELECT sur la [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]. Notez que, dans certains cas, la syntaxe est différente de la syntaxe Transact-SQL de base.  
@@ -32,11 +33,11 @@ SELECT {TOP <const> }[0,1] <select_list>  {INTO FILE [‘file_name’ | “file_
   
  Où :  
   
--   **< select_list >** = `[ {table_name.}[0,1]column_name { AS alias_name } [0,1] } [ 1, …n ]`  
+-   **<select_list>** = `[ {table_name.}[0,1]column_name { AS alias_name } [0,1] } [ 1, …n ]`  
   
--   **< Condition_de_jointure >** = `[Alias_name.|table_name.]column_name <expr> [Alias_name.|table_name.]column_name`  
+-   **<Join_Condition>** = `[Alias_name.|table_name.]column_name <expr> [Alias_name.|table_name.]column_name`  
   
--   **\<prédicat\>** = `[ predicate [AND|OR] predicate [between|not between] predicate |  NOT predicate |  ‘(‘ predicate ‘)’ | condition ]`  
+-   **\<predicate\>** = `[ predicate [AND|OR] predicate [between|not between] predicate |  NOT predicate |  ‘(‘ predicate ‘)’ | condition ]`  
   
  Les conditions prises en charge et les expressions sont :  
   
@@ -48,7 +49,7 @@ SELECT {TOP <const> }[0,1] <select_list>  {INTO FILE [‘file_name’ | “file_
   
  **Valeurs pour le mot clé d’OPTION**  
   
- Vous pouvez spécifier les options comme `OPTION '<option>'`, où`<option> = 'no_conversion' | 'batchsize <size>' | 'disabledatavalidation'`  
+ Vous pouvez spécifier les options comme `OPTION '<option>'`, où `<option> = 'no_conversion' | 'batchsize <size>' | 'disabledatavalidation'`  
   
 -   Le **no_conversion** option :  
   
@@ -165,13 +166,13 @@ Table | '['Table']'
   
      `SELECT BUKRS from T001`  
   
--   [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]ne prend pas en charge les noms d’alias en double dans une instruction SELECT. Par conséquent, l’instruction SELECT suivante génère une erreur :  
+-   [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] ne prend pas en charge les noms d’alias en double dans une instruction SELECT. Par conséquent, l’instruction SELECT suivante génère une erreur :  
   
     ```  
     SELECT KUNNR AS [MYKNA1], JMJAH AS MYKNA1 from KNA1 where KUNNR LIKE 'T-S62A08' AND JMJAH=1995  
     ```  
   
--   [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]ne prend pas en charge une instruction SELECT avec des noms de colonnes dupliqués. Par conséquent, l’instruction SELECT suivante génère une erreur :  
+-   [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] ne prend pas en charge une instruction SELECT avec des noms de colonnes dupliqués. Par conséquent, l’instruction SELECT suivante génère une erreur :  
   
     ```  
     SELECT KUNNR AS [MYKNA1], KUNNR AS MYKNA2 from KNA1 where MYKNA2='T-S62A08'  
@@ -183,13 +184,13 @@ Table | '['Table']'
     SELECT NAME1, PSTLZ  from KNA1 where CITY IS NULL AND NAME1 LIKE '%MODE%'  
     ```  
   
--   [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]ne prend pas en charge une clause ORDER BY dans une instruction SELECT. Par conséquent, l’instruction SELECT suivante génère une erreur :  
+-   [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] ne prend pas en charge une clause ORDER BY dans une instruction SELECT. Par conséquent, l’instruction SELECT suivante génère une erreur :  
   
     ```  
     SELECT NAME1  AS [MYNAME],  LAND1, KUNNR  from KNA1 where NAME1 LIKE '%MODE%'  ORDER BY NAME1  ASC  
     ```  
   
--   [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]ne prend pas en charge un astérisque (*) pour sélectionner tous les champs dans une table SAP. Par conséquent, l’instruction SELECT suivante génère une erreur :  
+-   [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] ne prend pas en charge un astérisque (*) pour sélectionner tous les champs dans une table SAP. Par conséquent, l’instruction SELECT suivante génère une erreur :  
   
     ```  
     SELECT spfli.* from spfli inner join sflight on spfli.carrid = sflight.carrid  
@@ -197,7 +198,7 @@ Table | '['Table']'
   
      Pour sélectionner tous les champs, vous devez spécifier les noms des champs individuellement.  
   
--   Dans le cadre de l’instruction SELECT, vous pouvez spécifier un fichier dans lequel la sortie de l’instruction SELECT doit être écrite. Toutefois, si le fichier de sortie se trouve sur un partage réseau, assurez-vous que le compte de service SAP sous lequel le service SAP s’exécute dispose des autorisations d’écriture sur le partage réseau. Exemple :  
+-   Dans le cadre de l’instruction SELECT, vous pouvez spécifier un fichier dans lequel la sortie de l’instruction SELECT doit être écrite. Toutefois, si le fichier de sortie se trouve sur un partage réseau, assurez-vous que le compte de service SAP sous lequel le service SAP s’exécute dispose des autorisations d’écriture sur le partage réseau. Par exemple :  
   
     ```  
     SELECT * into file '\\share\output.txt' from spfli inner join sflight on spfli.carrid = sflight.carrid  
@@ -265,7 +266,7 @@ Table | '['Table']'
     select A.x, B.y from A inner join B on B.n = A.m  
     ```  
   
--   Une instruction SELECT peut uniquement contenir une condition « égal à » dans une clause de jointure. Exemple :  
+-   Une instruction SELECT peut uniquement contenir une condition « égal à » dans une clause de jointure. Par exemple :  
   
     ```  
     select * from spfli inner join sflight on spfli.carrid = sflight.carrid  
@@ -273,7 +274,7 @@ Table | '['Table']'
   
 -   Une instruction SELECT ne récupère pas de colonnes de type chaîne à partir du système SAP.  
   
--   Une instruction SELECT doit contenir uniquement une jointure unique. Exemple :  
+-   Une instruction SELECT doit contenir uniquement une jointure unique. Par exemple :  
   
     ```  
     select * from spfli inner join sflight on spfli.carrid = sflight.carrid  

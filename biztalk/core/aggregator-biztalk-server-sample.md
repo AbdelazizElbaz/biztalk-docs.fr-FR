@@ -1,11 +1,11 @@
 ---
-title: "Agrégation (exemple BizTalk Server) | Documents Microsoft"
-ms.custom: 
+title: Agrégation (exemple BizTalk Server) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - orchestrations, examples
@@ -15,15 +15,15 @@ helpviewer_keywords:
 - examples, pipelines
 - messages, correlating to orchestrations
 ms.assetid: eb8121df-4f5b-4f36-8228-4b5ad1abfb4e
-caps.latest.revision: "20"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 493f4d28214a815aca88f214e5efb9cd883e7192
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="aggregator-biztalk-server-sample"></a>Agrégation (exemple BizTalk Server)
 La fonction de cet exemple est de générer une fonctionnalité d'agrégation de messages à l'aide des orchestrations et des pipelines. Plus précisément, l'orchestration que nous allons générer :  
@@ -49,7 +49,7 @@ La fonction de cet exemple est de générer une fonctionnalité d'agrégation de
 |Dans le dossier Aggregator :<br /><br /> Aggregate.odx|Orchestration qui collecte et regroupe les messages corrélés, puis qui exécute le pipeline d'envoi afin de les assembler en un seul échange.|  
 |Dans le dossier Aggregate :<br /><br /> SuspendMessage.odx|Orchestration permettant d'interrompre les messages qui ne peuvent pas être traités au sein de l'agrégation d'orchestration.|  
 |Dans le dossier PipelinesAndSchemas :<br /><br /> FFReceivePipeline.btp|Pipeline de réception avec Désassembleur de fichier plat.|  
-|Dans le dossier PipelinesAndSchemas :<br /><br /> Instance1.txt, Instance2.txt, Instance3.txt, Instance4.txt|Instances de document pour l'exemple. Instance1.txt et Instance2.txt, doivent être ajoutés à un échange partenaire de destination [http://www.contoso.com](http://www.contoso.com/) tandis que Instance3.txt et Instance4.txt doivent être ajoutés à un échange partenaire de destination [ http://www.Northwind.com](http://www.northwind.com/).|  
+|Dans le dossier PipelinesAndSchemas :<br /><br /> Instance1.txt, Instance2.txt, Instance3.txt, Instance4.txt|Instances de document pour l'exemple. Instance1.txt et Instance2.txt, doivent être ajoutés à un échange partenaire de destination [ http://www.contoso.com ](http://www.contoso.com/) tandis que Instance3.txt et Instance4.txt doivent être ajoutés à un échange partenaire de destination [ http://www.northwind.com ](http://www.northwind.com/).|  
 |Dans le dossier PipelinesAndSchemas :<br /><br /> Invoice.xsd, InvoiceEnvelope.xsd|Schémas du document et de l'enveloppe pour l'échange de sortie.|  
 |Dans le dossier PipelinesAndSchemas :<br /><br /> PipelinesAndSchemas.btproj|Projet BizTalk pour les schémas et les pipelines.|  
 |Dans le dossier PipelinesAndSchemas :<br /><br /> PropertySchema.xsd|Schéma de propriété pour l'exemple.|  
@@ -93,7 +93,7 @@ La fonction de cet exemple est de générer une fonctionnalité d'agrégation de
   
      Notez que dans les deux fichiers de l’élément DestinationPartnerURI contient la valeur http://www.contoso.com. Cette valeur permet de corréler les deux messages entre eux afin qu’ils peuvent être ajoutés à un échange.  
   
-     De même, l'élément DestinationPatnerURI est défini sur http://www.northwind.com dans les fichiers Instance3.txt et Instance4.txt.  
+     De même les fichiers Instance3.txt et Instance4.txt ont élément destinationpatneruri est défini à http://www.northwind.com.  
   
      Ces deux messages seront ajoutés ensemble dans un autre échange.  
   

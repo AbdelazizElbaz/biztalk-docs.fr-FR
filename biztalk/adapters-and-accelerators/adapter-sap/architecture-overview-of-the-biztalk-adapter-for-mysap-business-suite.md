@@ -1,32 +1,32 @@
 ---
-title: "Présentation de l’architecture de l’adaptateur BizTalk pour mySAP Business Suite | Documents Microsoft"
-ms.custom: 
+title: Présentation de l’architecture de l’adaptateur BizTalk pour mySAP Business Suite | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - architecture of SAP adapter
 - adapters, architecture
 ms.assetid: 1b45edb0-2476-427b-b6cd-41e38ed815e0
-caps.latest.revision: "9"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: d571cdd3beea2bc9a57ec7ad15f865e7ef51e53a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="architecture-overview-of-the-biztalk-adapter-for-mysap-business-suite"></a>Présentation de l’architecture de l’adaptateur BizTalk pour mySAP Business Suite
 Le [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] implémente un [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] liaison personnalisée, qui contient un élément de liaison de transport personnalisé unique qui permet la communication avec un système SAP. Le [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] est encapsulée par la [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)] runtime et est exposé à des applications via le [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] architecture de canal. Le [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] communique avec le système SAP via la version 64 bits ou 32 bits du SDK RFC Unicode SAP (librfc32u.dll). 
 
 La figure suivante illustre l’architecture de bout en bout pour les solutions sont développées à l’aide de la [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].  
   
- ![Fin SAP &#45; à &#45; Architecture de fin](../../adapters-and-accelerators/adapter-sap/media/9ba0c31f-90df-444d-8192-42743c893d51.gif "9ba0c31f-90df-444d-8192-42743c893d51")  
+ ![Fin SAP&#45;à&#45;fin Architecture](../../adapters-and-accelerators/adapter-sap/media/9ba0c31f-90df-444d-8192-42743c893d51.gif "9ba0c31f-90df-444d-8192-42743c893d51")  
   
 ## <a name="consuming-the-adapter"></a>Utilisation de l’adaptateur  
  Le [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] expose le système SAP comme un [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] service pour les applications clientes. Les applications clientes échangent des messages SOAP avec le [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] via [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] canaux pour effectuer des opérations et accéder aux données sur le système SAP. L’illustration précédente montre quatre façons dans lequel le [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] peuvent être utilisés.  
@@ -44,7 +44,7 @@ La figure suivante illustre l’architecture de bout en bout pour les solutions 
  Le [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] et la bibliothèque SAP RFC se trouvent toujours in-process avec l’application ou le service qui utilise l’adaptateur.  
   
 ## <a name="sap-adapter-and-wcf"></a>WCF et l’adaptateur SAP  
- [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]présente un modèle de programmation basé sur l’échange de messages SOAP sur les canaux entre les clients et services. Ces messages sont envoyés entre les points de terminaison exposés par un client et un service de communication.  
+ [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] présente un modèle de programmation basé sur l’échange de messages SOAP sur les canaux entre les clients et services. Ces messages sont envoyés entre les points de terminaison exposés par un client et un service de communication.  
   
  Un point de terminaison se compose d’un *adresse de point de terminaison* qui spécifie l’emplacement de réception des messages, un *liaison* qui spécifie les protocoles de communication utilisés pour échanger des messages et un *contrat* qui spécifie les types d’opérations et les données exposées par le point de terminaison. Une liaison se compose d’un ou plusieurs éléments de liaison s’empilent autres pour définir la manière dont les messages sont échangés avec le point de terminaison.  
   
@@ -83,4 +83,4 @@ Le [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] implémente un ensemb
  Pour plus d’informations sur la façon dont [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] se connecte à un système SAP, consultez [créer une connexion au système SAP](../../adapters-and-accelerators/adapter-sap/create-a-connection-to-the-sap-system.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comprendre l’adaptateur BizTalk pour mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/understand-biztalk-adapter-for-mysap-business-suite.md)
+ [Présentation de l’adaptateur BizTalk pour mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/understand-biztalk-adapter-for-mysap-business-suite.md)

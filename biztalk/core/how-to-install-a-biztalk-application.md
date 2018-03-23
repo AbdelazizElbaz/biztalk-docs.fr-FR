@@ -1,11 +1,11 @@
 ---
 title: Comment installer une Application BizTalk | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - installing, requirements
@@ -13,15 +13,15 @@ helpviewer_keywords:
 - installing, warnings
 - applications, installing
 ms.assetid: 99ee0b1a-d46a-4fb6-802b-6827dc740418
-caps.latest.revision: "56"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: ffc3d1d6d8fdbfcc168446883e2b65a7d8ed0351
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="how-to-install-a-biztalk-application"></a>Installation d'une application BizTalk
 Cette rubrique décrit la procédure d'installation d'une application sur l'ordinateur local par double-clic sur le fichier Windows Installer (.msi) de l'application dans l'interface Windows ou par l'exécution du programme msiexec à partir de la ligne de commande. Vous pouvez également démarrer l’Assistant Installation de la dernière étape de l’Assistant Importation, comme décrit dans [comment importer une Application BizTalk](../core/how-to-import-a-biztalk-application.md).  
@@ -41,7 +41,7 @@ Cette rubrique décrit la procédure d'installation d'une application sur l'ordi
   
  Pour plus d’informations, consultez [que se passe-t-il pour les artefacts lors de l’Installation et la désinstallation](../core/what-happens-to-artifacts-during-installation-and-uninstallation.md).  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Configuration requise  
  Pour exécuter les procédures décrites dans cette rubrique, vous devez être connecté avec un compte disposant d'autorisations en écriture sur le système de fichiers local. Selon les éléments contenus dans l'application, vous pouvez avoir également besoin d'autorisations en écriture sur le Registre Windows, le GAC, le magasin de certificats et les services IIS. Le compte des administrateurs de l'ordinateur local dispose de ces autorisations. Pour plus d’informations sur les autorisations, consultez [autorisations requises pour déployer et gérer une Application BizTalk](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md).  
   
 ## <a name="considerations-for-installing-an-application"></a>Considérations relatives à l'installation d'une application  
@@ -93,7 +93,7 @@ Cette rubrique décrit la procédure d'installation d'une application sur l'ordi
   
      \<*lecteur d’installation*\>\Program Files\Microsoft BizTalk Server\HttpReceive  
   
-     \-**ou** :  
+     \- **ou** :  
   
      \<*lecteur d’installation*\>\Program fichiers (x86) \Microsoft BizTalk Server\HttpReceive  
   
@@ -130,7 +130,7 @@ Cette rubrique décrit la procédure d'installation d'une application sur l'ordi
     > [!IMPORTANT]
     >  Seuls les paramètres de msiexec affichés dans le tableau suivant sont pris en charge.  
   
-     **msiexec** [**/i**] *Package* [**/qn**] **TARGETDIR = «***valeur* **"**]  
+     **msiexec** [**/i**] *Package* [**/qn**] **TARGETDIR="***value***"**]  
   
      Exemple : **msiexec /i MyApplication.msi**  
   
@@ -139,7 +139,7 @@ Cette rubrique décrit la procédure d'installation d'une application sur l'ordi
     |**/i**|Installe l'application.|  
     |*Package*|Nom du fichier Windows Installer (.msi).|  
     |**/qn**|Effectue l'installation sans afficher d'interface utilisateur.|  
-    |**TARGETDIR = «** *valeur* **»**|Spécifie l'emplacement du dossier d'installation de l'application. Cette valeur est également définie dans la variable d'environnement %BTAD_InstallDir%.<br /><br /> Exemple : TARGETDIR="C:\Programs\BizTalk Applications\My Application"|  
+    |**TARGETDIR="** *value* **"**|Spécifie l'emplacement du dossier d'installation de l'application. Cette valeur est également définie dans la variable d'environnement %BTAD_InstallDir%.<br /><br /> Exemple : TARGETDIR="C:\Programs\BizTalk Applications\My Application"|  
   
 5.  Si plusieurs ordinateurs doivent exécuter l'application, répétez ces étapes pour chacun d'eux.  
   

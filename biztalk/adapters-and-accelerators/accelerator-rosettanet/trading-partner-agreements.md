@@ -1,28 +1,28 @@
 ---
 title: Accords de partenariat commercial | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - trading partners, agreements
 - agreements, trading partners
 ms.assetid: 846466d2-db39-42ba-8be1-ecca83a55a02
-caps.latest.revision: "4"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 26c8ac38e9b3dd0c32b496f3f7750fa0dcd982a1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="trading-partner-agreements"></a>Accords de partenariat commercial
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] traite de l’échange de messages avec un partenaire à un accord de partenariat commercial (TPA). Le TPA définit les caractéristiques de traitement des messages et la validation entre les deux partenaires. Il définit comment les partenaires implémentent le pertinentes processus PIP (Partner Interface), qui spécifie le contenu du message pour toutes les implémentations d’un type de message spécifique. Le TPA définit également les caractéristiques de la manière dont les partenaires échangent des messages via Internet.  
+[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] traite l’échange de messages avec un partenaire à un accord de partenariat commercial (TPA). Le TPA définit les caractéristiques de traitement des messages et la validation entre les deux partenaires. Il définit comment les partenaires implémentent le pertinentes processus PIP (Partner Interface), qui spécifie le contenu du message pour toutes les implémentations d’un type de message spécifique. Le TPA définit également les caractéristiques de la manière dont les partenaires échangent des messages via Internet.  
   
 ## <a name="trading-partner-agreement-contents"></a>Contenu d’accord partenaire commercial  
  Chaque accord de partenariat commercial comprend les informations suivantes :  
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/20/2017
   
 -   Propriétés personnalisées  
   
- Pour créer un accord de partenariat commercial, vous devez utiliser le [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] Console de gestion pour créer une configuration de processus. En général de la base cette configuration sur un PIP RosettaNet, mais vous pouvez également la baser sur un schéma personnalisé. Vous devez également utiliser la console pour créer une organisation d’origine et d’un partenaire. [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]ne prend pas en charge l’échange de messages entre des parties inconnues. Après avoir créé la configuration et l’organisation, vous pouvez ensuite utiliser la Console de gestion pour créer un accord de partenariat.  
+ Pour créer un accord de partenariat commercial, vous devez utiliser le [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] Console de gestion pour créer une configuration de processus. En général de la base cette configuration sur un PIP RosettaNet, mais vous pouvez également la baser sur un schéma personnalisé. Vous devez également utiliser la console pour créer une organisation d’origine et d’un partenaire. [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] ne prend pas en charge l’échange de messages entre des parties inconnues. Après avoir créé la configuration et l’organisation, vous pouvez ensuite utiliser la Console de gestion pour créer un accord de partenariat.  
   
 ### <a name="process-configuration"></a>Configuration du processus  
  Ces paramètres déterminent comment [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] traite les messages contenu. Ils spécifient le PIP RosettaNet et indiquent comment [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] implémentera le PIP. Pour ce faire, ils fournissent des valeurs spécifiques pour les paramètres de comportement que le PIP Spécifie, par exemple, les valeurs de délai d’attente, puis réessayez. Par conséquent, deux ensembles de partenaires différents, ou le même jeu de partenaires, peut implémenter même PIP de deux manières différentes.  
@@ -52,7 +52,7 @@ ms.lasthandoff: 09/20/2017
  Ces paramètres définissent l’organisation d’origine qui exécutera les messages. Les paramètres incluent une Global Business identificateur GBI (), qui est le numéro DUNS est l’identificateur unique de l’entreprise, et les informations qui sont nécessaire pour certaines opérations de contact. Pour plus d’informations sur la définition de ces propriétés, consultez [création ou modification d’une organisation d’origine](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-home-organization.md).  
   
 ### <a name="partner-organization"></a>Organisation partenaire  
- Ces paramètres définissent le partenaire qui recevra et répondre aux messages. [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]valide que chaque message RNIF entrant provenance d’une partie valide disposant d’un accord avec l’organisation d’origine. Si ce n’est pas le cas, [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] ne pourront pas s’authentifier et pas traiter le message. Pour plus d’informations sur la définition de ces propriétés, consultez [création ou modification d’un partenaire](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-partner.md).  
+ Ces paramètres définissent le partenaire qui recevra et répondre aux messages. [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] valide que chaque message RNIF entrant provenance d’une partie valide disposant d’un accord avec l’organisation d’origine. Si ce n’est pas le cas, [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] ne pourront pas s’authentifier et pas traiter le message. Pour plus d’informations sur la définition de ces propriétés, consultez [création ou modification d’un partenaire](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-partner.md).  
   
 ### <a name="agreements-trading-partner-agreement-variables"></a>Contrats (commercial partenaire accord Variables)  
  Le contrat spécifie tous les aspects de la relation de partenaire commercial. Il spécifie le code de l’affichage des paramètres de configuration de processus, tel que défini dans le [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] Console de gestion. Il spécifie également la version RNIF, URL de port, les paramètres de protocole (encodage et chiffrement) et d’autres variables. Pour plus d’informations sur la définition de ces propriétés, consultez [création ou modification d’un accord](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md).  

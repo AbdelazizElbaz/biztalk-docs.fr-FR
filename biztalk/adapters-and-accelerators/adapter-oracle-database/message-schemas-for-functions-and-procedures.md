@@ -1,25 +1,25 @@
 ---
-title: "Schémas de message pour les fonctions et procédures | Documents Microsoft"
-ms.custom: 
+title: Schémas de message pour les fonctions et procédures | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - functions and procedures, message structure of
 - functions and procedures, message actions of
 ms.assetid: 90b77b15-a4c6-487d-a09e-a078ceddfd1e
-caps.latest.revision: "4"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 6fc8c09499914dd075fe6a46fbc230a4bed104e0
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="message-schemas-for-functions-and-procedures"></a>Schémas de message pour les fonctions et procédures
 Le [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] surfaces Oracle de la base de données des fonctions et procédures stockées en tant qu’opérations. Cette section décrit la structure des messages et les actions utilisées pour appeler des fonctions et des procédures.  
@@ -67,18 +67,18 @@ Stored Procedure Overload 2:
 ## <a name="message-actions-of-functions-and-procedures"></a>Actions de message des fonctions et procédures  
  Le [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] utilise les actions de message suivantes pour les opérations de fonction et de procédure stockées.  
   
-|Message|Action|Exemple|  
+|Boîte de|Action|Exemple|  
 |-------------|------------|-------------|  
-|Demande de procédure stockée|http://Microsoft.LobServices.OracleDB/2007/03/ [schéma] /Procedure/ [SP_NAME]|http://Microsoft.LobServices.OracleDB/2007/03/Scott/Procedure/SP_INSERT|  
-|Réponse de la procédure stockée|http://Microsoft.LobServices.OracleDB/2007/03/ [schéma] /Procedure/ [SP_NAME] / réponse|http://Microsoft.LobServices.OracleDB/2007/03/Scott/Procedure/SP_INSERT/Response|  
-|Demande de la fonction|http://Microsoft.LobServices.OracleDB/2007/03/ [schéma] /Function/ [FN_NAME]|http://Microsoft.LobServices.OracleDB/2007/03/Scott/Function/FN_GETID|  
-|Réponse de la fonction|http://Microsoft.LobServices.OracleDB/2007/03/ [schéma] /Function/ [FN_NAME] / réponse|http://Microsoft.LobServices.OracleDB/2007/03/Scott/Function/FN_GETID/Response|  
-|Demande de la procédure stockée empaquetées|http://Microsoft.LobServices.OracleDB/2007/03/ [schéma] /Package/ [PACKAGE_NAME] / [SP_NAME]|http://Microsoft.LobServices.OracleDB/2007/03/Scott/package/Customer/SP_INSERT|  
-|Empaqueté de réponse de la procédure stockée|http://Microsoft.LobServices.OracleDB/2007/03/ [schéma] /Package/ [PACKAGE_NAME] / [SP_NAME] / réponse|http://Microsoft.LobServices.OracleDB/2007/03/Scott/package/Customer/SP_INSERT/Response|  
-|Fonction packagée demande|http://Microsoft.LobServices.OracleDB/2007/03/ [schéma] /Package/ [PACKAGE_NAME] / [FN_NAME]|http://Microsoft.LobServices.OracleDB/2007/03/Scott/package/Customer/FN_GETID|  
-|Réponse de la fonction packagée|http://Microsoft.LobServices.OracleDB/2007/03/ [schéma] /Package/ [PACKAGE_NAME] / [FN_NAME] / réponse|http://Microsoft.LobServices.OracleDB/2007/03/Scott/package/Customer/FN_GETID/Response|  
-|Demande de la procédure stockée surchargée|http://Microsoft.LobServices.OracleDB/2007/03/ [schéma] /Procedure/ [SP_NAME] / [surcharge]|http://Microsoft.LobServices.OracleDB/2007/03/Scott/Procedure/SP_INSERT/overload1|  
-|Surchargée de réponse de la procédure stockée|http://Microsoft.LobServices.OracleDB/2007/03/ [schéma] /Procedure/ [SP_NAME] / [surcharge] / réponse|http://Microsoft.LobServices.OracleDB/2007/03/Scott/Procedure/SP_INSERT/overload1/Response|  
+|Demande de procédure stockée|http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Procedure/[SP_NAME]|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Procedure/SP_INSERT|  
+|Réponse de la procédure stockée|http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Procedure/[SP_NAME]/response|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Procedure/SP_INSERT/response|  
+|Demande de la fonction|http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Function/[FN_NAME]|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Function/FN_GETID|  
+|Réponse de la fonction|http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Function/[FN_NAME]/response|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Function/FN_GETID/response|  
+|Demande de la procédure stockée empaquetées|http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Package/[PACKAGE_NAME]/[SP_NAME]|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/CUSTOMER/SP_INSERT|  
+|Empaqueté de réponse de la procédure stockée|http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Package/[PACKAGE_NAME]/[SP_NAME]/response|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/CUSTOMER/SP_INSERT/response|  
+|Fonction packagée demande|http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Package/[PACKAGE_NAME]/[FN_NAME]|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/CUSTOMER/FN_GETID|  
+|Réponse de la fonction packagée|http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Package/[PACKAGE_NAME]/[FN_NAME]/response|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/CUSTOMER/FN_GETID/response|  
+|Demande de la procédure stockée surchargée|http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Procedure/[SP_NAME]/[OVERLOAD]|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Procedure/SP_INSERT/overload1|  
+|Surchargée de réponse de la procédure stockée|http://Microsoft.LobServices.OracleDB/2007/03/[SCHEMA]/Procedure/[SP_NAME]/[OVERLOAD]/response|http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Procedure/SP_INSERT/overload1/response|  
   
  [Schéma] = des artefacts de la Collection d’Oracle ; par exemple, SCOTT.  
   

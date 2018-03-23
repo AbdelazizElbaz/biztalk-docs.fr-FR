@@ -1,11 +1,11 @@
 ---
-title: "Pour créer une Configuration de processus à l’aide de la spécification PIP | Documents Microsoft"
-ms.custom: 
+title: Pour créer une Configuration de processus à l’aide de la spécification PIP | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - PIPs, PIP settings
@@ -13,15 +13,15 @@ helpviewer_keywords:
 - process configuration, PIPs
 - PIPs, process configuration
 ms.assetid: 64f0f5fb-f880-4ef1-95d7-2575b8d0bcff
-caps.latest.revision: "4"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 777f32e5a9e035f6009f5450eb48ae8286159f05
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="using-the-pip-specification-to-create-a-process-configuration"></a>Pour créer une Configuration de processus à l’aide de la spécification PIP
 Après avoir téléchargé un processus PIP (Partner Interface) de l’organisation RosettaNet (RosettaNet.org), le package de téléchargement inclut un document de spécification PIP. Ce document contient des conseils sur les paramètres à utiliser lorsque vous créez une configuration de processus dans le [!INCLUDE[btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)] Console de gestion.  
@@ -55,4 +55,4 @@ Après avoir téléchargé un processus PIP (Partner Interface) de l’organisat
 |Classification du service.|Spécification de composant de réseau de tableau 4-1 :|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment créer ou modifier une Configuration de processus](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)
+ [Guide pratique pour créer ou modifier une configuration de processus](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)

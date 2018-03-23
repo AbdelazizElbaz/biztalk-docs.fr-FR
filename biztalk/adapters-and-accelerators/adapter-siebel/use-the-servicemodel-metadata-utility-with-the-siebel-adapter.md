@@ -1,23 +1,23 @@
 ---
-title: "À l’aide de l’utilitaire de métadonnées ServiceModel avec l’adaptateur BizTalk pour Siebel eBusiness Applications | Documents Microsoft"
-description: "Utiliser svcutil.exe pour une liaison non définis par défaut, ou pour créer une classe de Client WCF ou le contrat de Service WCF avec l’adaptateur Siebel - Pack de l’adaptateur BizTalk (LOB)"
-ms.custom: 
+title: À l’aide de l’utilitaire de métadonnées ServiceModel avec l’adaptateur BizTalk pour Siebel eBusiness Applications | Documents Microsoft
+description: Utiliser svcutil.exe pour une liaison non définis par défaut, ou pour créer une classe de Client WCF ou le contrat de Service WCF avec l’adaptateur Siebel - Pack de l’adaptateur BizTalk (LOB)
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 03d16481-cc8b-4e28-a33c-92e48a9a7e8f
-caps.latest.revision: "5"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: a0bcf80d4a1ea9fc6b54403faa14084816e413be
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="using-the-servicemodel-metadata-utility-tool-with-the-biztalk-adapter-for-siebel-ebusiness-applications"></a>À l’aide de l’utilitaire de métadonnées ServiceModel avec l’adaptateur BizTalk pour Siebel eBusiness Applications
 Vous pouvez utiliser le service Model Metadata Utility Tool (svcutil.exe) pour générer une classe de client WCF pour les opérations qui les [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)] expose. Après avoir exécuté svcutil.exe pour générer une classe de client WCF, vous pouvez inclure le fichier généré dans votre code et créer des instances de la classe de client WCF pour effectuer des opérations sur le système Siebel.  
@@ -65,7 +65,7 @@ Vous pouvez utiliser le service Model Metadata Utility Tool (svcutil.exe) pour g
 > [!NOTE]
 >  Vous pouvez définir les propriétés de liaison de la [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] dans la configuration de liaison.  
   
- Pour plus d’informations sur la configuration d’une liaison par défaut de svcutil.exe, consultez la rubrique « Custom sécuriser les métadonnées Endpoint » dans la documentation WCF à [http://go.microsoft.com/fwlink/?LinkId=96077](http://go.microsoft.com/fwlink/?LinkId=96077).  
+ Pour plus d’informations sur la configuration d’une liaison par défaut de svcutil.exe, consultez la rubrique « Custom sécuriser les métadonnées Endpoint » dans la documentation WCF à [ http://go.microsoft.com/fwlink/?LinkId=96077 ](http://go.microsoft.com/fwlink/?LinkId=96077).  
   
 ## <a name="creating-a-wcf-client-class-with-svcutilexe"></a>Création d’une classe de Client WCF avec svcutil.exe  
  Pour utiliser svcutil.exe pour générer le code du client WCF pour le [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)], vous devez fournir une connexion URI qui spécifie un **IMetadataExchange** (mex) au point de terminaison et l’ou les opérations pour lequel vous voulez svcutil.exe pour générer code. Vous devez également spécifier des informations d’identification de connexion pour le système Siebel dans l’URI de connexion.  
@@ -83,11 +83,11 @@ Vous pouvez utiliser le service Model Metadata Utility Tool (svcutil.exe) pour g
   
  Cet exemple crée une classe de client WCF pour une opération d’insertion dans l’objet métier ACCOUNT\ACCOUNT.  
   
- **. \svcutil siebel://Username=YourUserName; » Mot de passe =YourPassword@Siebel_server:1234? SiebelEnterpriseServer = ent_server & SiebelObjectManager = obj_mgr & Language = fra & wsdl & op = http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert »**  
+ **.\svcutil "siebel://Username=YourUserName;Password=YourPassword@Siebel_server:1234?SiebelEnterpriseServer=ent_server&SiebelObjectManager=obj_mgr&Language=enu&wsdl&op=http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert"**  
   
  Cet exemple crée une classe de client WCF pour une opération d’insertion et une opération de suppression sur l’objet métier ACCOUNT\ACCOUNT.  
   
- **. \svcutil siebel://Username=YourUserName; » Mot de passe =YourPassword@Siebel_server:1234? SiebelEnterpriseServer = ent_server & SiebelObjectManager = obj_mgr & Language = fra & wsdl & op = http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert & op = http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Delete »**  
+ **.\svcutil " siebel://Username=YourUserName;Password=YourPassword@Siebel_server:1234?SiebelEnterpriseServer=ent_server&SiebelObjectManager=obj_mgr&Language=enu&wsdl&op=http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert&op=http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Delete"**  
   
 > [!IMPORTANT]
 >  Vous devez placer l’URI de connexion dans des guillemets sur la ligne de commande. Sinon, svcutil.exe essaie de récupérer les métadonnées pour les opérations qui les [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] ne prend pas en charge. Les résultats d’une tentative de ce type ne sont pas définis.  

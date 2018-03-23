@@ -1,11 +1,11 @@
 ---
-title: "Composants de Pipeline désassembleur les champs distinctifs | Documents Microsoft"
-ms.custom: 
+title: Composants de Pipeline désassembleur les champs distinctifs | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipeline components, distinquished fields
@@ -13,22 +13,22 @@ helpviewer_keywords:
 - BizTalk Framework Disassembler [pipeline component], distinquished fields
 - XML Disassembler [pipeline component], distinquished fields
 ms.assetid: 7e51d2fe-0004-4a7b-9055-bd41e8a4b7ab
-caps.latest.revision: "7"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 64e4c8f15d167f5343089c11b92b0f373aa45576
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="distinguished-fields-in-disassembler-pipeline-components"></a>Composants de Pipeline désassembleur les champs distinctifs
 Les champs distinctifs définis dans un schéma sont consignés selon le format suivant dans le contexte de message par les composants de pipeline Désassembleur XML, Désassembleur BizTalk Framework ou Désassembleur de fichier plat :  
   
  *nom utilisé* est le champ distinctif dans XPath  
   
- *URI de l’espace de noms* est « http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields »  
+ *URI de l’espace de noms* est «http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields»  
   
  La valeur de la propriété est la **System.String** valeur extraite du document XML à l’aide de XPath spécifié.  
   
@@ -67,7 +67,7 @@ Les champs distinctifs définis dans un schéma sont consignés selon le format 
   
  le Désassembleur XML consigne un champ distinctif dans un contexte de message de la façon suivante :  
   
- Nom de la propriété du contexte : «/*[local-name()='PO'et namespace-uri()='http://SendHtmlMessage.PO']/\*[local-name()=«Price»et namespace-uri()='']»  
+ Nom de la propriété du contexte : « / * [local-name () = 'PO' et namespace-uri() ='http://SendHtmlMessage.PO'] /\*[local-name () = « Price » et namespace-uri() =''] »  
   
  Namespace de la propriété : http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields  
   

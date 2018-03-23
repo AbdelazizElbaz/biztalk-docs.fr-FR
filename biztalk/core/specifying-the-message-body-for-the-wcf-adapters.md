@@ -1,11 +1,11 @@
 ---
-title: "En spécifiant le corps du Message pour les adaptateurs WCF | Documents Microsoft"
-ms.custom: 
+title: En spécifiant le corps du Message pour les adaptateurs WCF | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF adapters, SOAP messages
@@ -13,15 +13,15 @@ helpviewer_keywords:
 - WCF adapters, message bodies
 - SOAP messages, WCF adapters
 ms.assetid: b20364b7-0365-4636-b4d6-bde9c69b8dcb
-caps.latest.revision: "21"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 109ad486baa542aff3cd1c4a44804ff2fd79aac5
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="specifying-the-message-body-for-the-wcf-adapters"></a>Spécification du corps de message pour les adaptateurs WCF
 Vous pouvez utiliser la **Messages** onglet dans les adaptateurs WCF pour spécifier la manière dont le corps du message BizTalk est extrait à partir d’un message SOAP entrant, et comment les corps du message BizTalk est placé dans un message SOAP sortant.  
@@ -47,9 +47,9 @@ Vous pouvez utiliser la **Messages** onglet dans les adaptateurs WCF pour spéci
  Lorsque le **chemin--contenu localisé par le chemin du corps** option est sélectionnée, le **codage de nœud** propriété peut être configurée pour spécifier le type de codage attendu pour le nœud spécifié par l’expression de chemin de corps dans le **expression de chemin de corps** zone de texte. Si l'expression du chemin du corps correspond à plusieurs éléments, seul le premier élément correspondant est utilisé.  
   
 > [!NOTE]
->  Pour le **expression de chemin de corps** propriété, uniquement le XPath expressions appropriées pour le traitement de type avant uniquement de XML sont pris en charge. Pour plus d’informations sur les expressions XPath disponibles pour cette propriété, consultez « La meilleure de tous deux mondes : combinant XPath with the XmlReader » à [http://go.microsoft.com/fwlink/?LinkID=75701](http://go.microsoft.com/fwlink/?LinkID=75701).  
+>  Pour le **expression de chemin de corps** propriété, uniquement le XPath expressions appropriées pour le traitement de type avant uniquement de XML sont pris en charge. Pour plus d’informations sur les expressions XPath disponibles pour cette propriété, consultez « La meilleure de tous deux mondes : combinant XPath with the XmlReader » à [ http://go.microsoft.com/fwlink/?LinkID=75701 ](http://go.microsoft.com/fwlink/?LinkID=75701).  
   
- Si le **chemin--contenu localisé par le chemin du corps** option est sélectionnée et la **codage de nœud** est définie sur **chaîne**, les adaptateurs WCF attendent que le nœud correspondant a UTF-8 données de caractères encodés. Si les messages entrants incluent les caractères spéciaux XML des données caractère échappé tel que \< et \>, les adaptateurs WCF rétablissent les données de caractères d’échappement lors de la création du corps du message BizTalk. Par exemple, si le nœud correspondant a échappement des données de type caractère tel que  **&lt;FirstName&gt;CONTOSO&lt;/prénom&gt;**  les adaptateurs WCF créent  **\< FirstName\>CONTOSO\</prénom\>**  corps du message dans BizTalk entrant.  
+ Si le **chemin--contenu localisé par le chemin du corps** option est sélectionnée et la **codage de nœud** est définie sur **chaîne**, les adaptateurs WCF attendent que le nœud correspondant a UTF-8 données de caractères encodés. Si les messages entrants incluent les caractères spéciaux XML des données caractère échappé tel que \< et \>, les adaptateurs WCF rétablissent les données de caractères d’échappement lors de la création du corps du message BizTalk. Par exemple, si le nœud correspondant a échappement des données de type caractère tel que **&lt;FirstName&gt;CONTOSO&lt;/prénom&gt;** les adaptateurs WCF créent **\< FirstName\>CONTOSO\</prénom\>** corps du message dans BizTalk entrant.  
   
  Si le **chemin--contenu localisé par le chemin du corps** option est sélectionnée et la **codage de nœud** est définie sur **Hex** ou **Base64**, le nœud correspondant peut avoir une valide **au format BinHex** ou **Base64** séquence. Si le nœud correspondant a une séquence non valide, le client WCF reçoit **FaultException**, un message d’erreur est consigné dans le journal des événements sur votre ordinateur BizTalk Server et aucun message n’est suspendu.  
   
@@ -96,7 +96,7 @@ Vous pouvez utiliser la **Messages** onglet dans les adaptateurs WCF pour spéci
   
 |Corps de message BizTalk entrant|Expression du chemin du corps|Codage de nœud|  
 |----------------------------------|--------------------------|-------------------|  
-|**Chemin--contenu localisé par le chemin du corps**|/ * [local-name () = 'Order'] /\*[local-name () = 'OrderDetail'] /\*[local-name () = « CustomerID »]|**Chaîne**|  
+|**Chemin--contenu localisé par le chemin du corps**|/*[local-name()='Order']/\*[local-name()='OrderDetail']/\*[local-name()='CustomerID']|**String**|  
   
  Pour le précédent message SOAP entrant, les adaptateurs WCF utilisent les données de caractères, **CONTOSO**, de la **CustomerID** élément pour créer le corps du message BizTalk entrant.  
   
@@ -107,13 +107,13 @@ Vous pouvez utiliser la **Messages** onglet dans les adaptateurs WCF pour spéci
   
 |Corps de message BizTalk entrant|Expression du chemin du corps|Codage de nœud|  
 |----------------------------------|--------------------------|-------------------|  
-|**Chemin--contenu localisé par le chemin du corps**|/ * [local-name () = 'Order'] /\*[local-name () = 'OrderDetail'] /\*[local-name () = « CustomerID »]|**Hex** ou **en Base64**|  
+|**Chemin--contenu localisé par le chemin du corps**|/*[local-name()='Order']/\*[local-name()='OrderDetail']/\*[local-name()='CustomerID']|**Hex** ou **en Base64**|  
   
  Si vous configurez le **corps du message BizTalk** section comme indiqué dans le tableau suivant, les adaptateurs WCF créent le corps du message BizTalk entrant pour le précédent message SOAP entrant comme indiqué dans le code après le tableau.  
   
 |Corps de message BizTalk entrant|Expression du chemin du corps|Codage de nœud|  
 |----------------------------------|--------------------------|-------------------|  
-|**Chemin--contenu localisé par le chemin du corps**|/ * [local-name () = 'Order'] /\*[local-name () = 'OrderDetail'] /\*[local-name () = « CustomerID »]|**XML**|  
+|**Chemin--contenu localisé par le chemin du corps**|/*[local-name()='Order']/\*[local-name()='OrderDetail']/\*[local-name()='CustomerID']|**XML**|  
   
 ```  
 <CustomerID xmlns="http://Microsoft.Samples.BizTalk.NetNamedPipe/OrderProcess">CONTOSO</CustomerID>   
@@ -182,7 +182,7 @@ Vous pouvez utiliser la **Messages** onglet dans les adaptateurs WCF pour spéci
   
 |Corps de message WCF sortant|XML|  
 |-------------------------------|---------|  
-|**Corps : Corps du message de réponse de BizTalk**|\<Livre\><br /><br /> \<**BTS-msg-body** xmlns = « http://www.microsoft.com/schemas/bts2010 » encoding = »**chaîne**« /\><br /><br /> \</ Book\>|  
+|**Corps : Corps du message de réponse de BizTalk**|\<Book\><br /><br /> \<**bts-msg-body** xmlns="http://www.microsoft.com/schemas/bts2010" encoding="**string**"/\><br /><br /> \</Book\>|  
   
 ```  
 <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">  
@@ -205,7 +205,7 @@ Vous pouvez utiliser la **Messages** onglet dans les adaptateurs WCF pour spéci
   
 |Corps de message WCF sortant|XML|  
 |-------------------------------|---------|  
-|**Corps : Corps du message de réponse de BizTalk**|\<Livre\><br /><br /> \<**BTS-msg-body** xmlns = « http://www.microsoft.com/schemas/bts2010 » encoding = »**base64**» /\><br /><br /> \</ Book\>|  
+|**Corps : Corps du message de réponse de BizTalk**|\<Book\><br /><br /> \<**bts-msg-body** xmlns="http://www.microsoft.com/schemas/bts2010" encoding="**base64**"/\><br /><br /> \</Book\>|  
   
 ```  
 <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://ww  
@@ -234,7 +234,7 @@ FBMmM8L25zMDpPcmRlcklEPg0KICA8L25zMDpPcmRlckRldGFpbD4NCjwvbnMwOk9yZGVyPg==</Book
   
 |Corps de message WCF sortant|XML|  
 |-------------------------------|---------|  
-|**Corps : Corps du message de réponse de BizTalk**|\<Livre\><br /><br /> \<**BTS-msg-body** xmlns = « http://www.microsoft.com/schemas/bts2010 » encoding = »**xml**» /\><br /><br /> \</ Book\>|  
+|**Corps : Corps du message de réponse de BizTalk**|\<Book\><br /><br /> \<**bts-msg-body** xmlns="http://www.microsoft.com/schemas/bts2010" encoding="**xml**"/\><br /><br /> \</Book\>|  
   
 ```  
 <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">  

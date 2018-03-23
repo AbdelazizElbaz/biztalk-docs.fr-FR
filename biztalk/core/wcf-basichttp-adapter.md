@@ -1,26 +1,27 @@
 ---
 title: Adaptateur WCF-BasicHttp | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: WCF-BasicHttp adapters
+helpviewer_keywords:
+- WCF-BasicHttp adapters
 ms.assetid: 51bc56be-3c78-4bf9-87b6-8fb1435d8cde
-caps.latest.revision: "10"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 27d0e731fd63ce01e9cc1c2604eb8f83141e024e
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="wcf-basichttp-adapter"></a>Adaptateur WCF-BasicHttp
-[!INCLUDE[btsCoName](../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] utilise l’adaptateur WCF-BasicHttp pour recevoir et envoyer des demandes de service WCF via le [BasicHttpBinding classe](https://msdn.microsoft.com/library/system.servicemodel.basichttpbinding.aspx). L’adaptateur WCF-BasicHttp vous permet de publier des orchestrations et schémas en tant que services WCF et d’utiliser les services WCF externes avec le **BasicHttpBinding**.  
+[!INCLUDE[btsCoName](../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] utilise l’adaptateur WCF-BasicHttp pour recevoir et envoyer des demandes de service WCF via le [BasicHttpBinding classe](https://msdn.microsoft.com/library/system.servicemodel.basichttpbinding.aspx). L’adaptateur WCF-BasicHttp vous permet de publier des orchestrations et schémas en tant que services WCF et d’utiliser les services WCF externes avec le **BasicHttpBinding**.  
   
 Vous pouvez utiliser l'adaptateur WCF-BasicHttp lors d'une communication entre ordinateurs avec des clients et services Web basés sur des fichiers ASMX conformes à WS-I Basic Profile 1.1, en utilisant le transport HTTP ou HTTPS avec codage de texte. Vous ne pourrez toutefois pas tirer parti des fonctionnalités prises en charge par les protocoles WS-*.  
   
@@ -34,8 +35,8 @@ Vous pouvez utiliser l'adaptateur WCF-BasicHttp lors d'une communication entre o
 |Protocole de transport|HTTP ou HTTPS|  
 |Mode de sécurité|None, Message, Transport, TransportWithMessageCredential et TransportCredentialOnly|  
 |Mécanisme d'authentification du client|Sécurité du transport et sécurité des messages|  
-|Prise en charge de WS-ReliableMessaging|Non|  
-|Prise en charge de WS-AtomicTransaction|Non|  
+|Prise en charge de WS-ReliableMessaging|non|  
+|Prise en charge de WS-AtomicTransaction|non|  
 |Prise en charge de la messagerie unidirectionnelle|Oui|  
 |Prise en charge de la messagerie bidirectionnelle|Oui|  
 |Type d'hôte pour l'adaptateur de réception|Isolé|  
@@ -116,14 +117,14 @@ Cet emplacement de réception peut être configuré en tant qu’unidirectionnel
     |-----------------------|------------------------------------------|----------------------------------------|  
     |**Transport**|**Basic**|Néant|  
     |**Transport**|**Digest**|Néant|  
-    |**Transport**|**NTLM**|Néant|  
+    |**Transport**|**Ntlm**|Néant|  
     |**Transport**|**Windows**|Néant|  
     |**Transport**|**Certificat**|Néant|  
-    |**Message**|Néant|**UserName**|  
+    |**Boîte de**|Néant|**UserName**|  
     |**TransportWithMessageCredential**|Néant|**UserName**|  
     |**TransportCredentialOnly**|**Basic**|Néant|  
     |**TransportCredentialOnly**|**Digest**|Néant|  
-    |**TransportCredentialOnly**|**NTLM**|Néant|  
+    |**TransportCredentialOnly**|**Ntlm**|Néant|  
     |**TransportCredentialOnly**|**Windows**|Néant|  
     |**TransportCredentialOnly**|**Certificat**|Néant|  
   
@@ -138,7 +139,7 @@ Cet emplacement de réception peut être configuré en tant qu’unidirectionnel
     |**Codage de nœud**|Spécifiez le type de codage WCF-BasicHttp adaptateur de réception pour décoder le nœud identifié par l’expression de chemin d’accès au corps de la **expression de chemin de corps** zone de texte.<br /><br /> Cette propriété est requise si l'option **Chemin -- contenu localisé par le chemin du corps** est sélectionnée. Les valeurs valides sont les suivantes :<br /><br /> -   **Base64**: codage Base64.<br />-   **Hex**: codage hexadécimal.<br />-   **Chaîne**: codage de texte - UTF-8<br />-   **XML**: les adaptateurs WCF créent le corps du message BizTalk avec le XML externe du nœud sélectionné par l’expression de chemin d’accès au corps de la **expression de chemin de corps** zone de texte.<br /><br /> La valeur par défaut est **XML**.|  
     |**Corps : Corps du message de réponse de BizTalk**|Utiliser le corps du message BizTalk pour créer le contenu de l'élément SOAP **Body** d'un message de réponse sortant. Cette propriété est valide uniquement pour des emplacements de réception de type requête-réponse.<br /><br /> Il s'agit du paramètre par défaut.|  
     |**Modèle--contenu spécifié par le modèle**|Utiliser le modèle fourni dans la zone de texte **XML** pour créer le contenu de l'élément SOAP **Body** d'un message sortant. Cette propriété est valide uniquement pour des emplacements de réception de type requête-réponse.<br /><br /> Par défaut, cette case à cocher est désactivée.|  
-    |**XML**|Indiquer le modèle XML du contenu de l'élément SOAP **Body** d'un message sortant. Cette propriété est requise si l'option **Corps -- corps du message de réponse BizTalk** est activée. Cette propriété est valide uniquement pour des emplacements de réception de type requête-réponse.<br /><br /> Type : Chaîne<br /><br /> Longueur minimale : 0<br /><br /> Longueur maximale : 32767<br /><br /> La valeur par défaut est  **\<bts-msg-body xmlns = « http://www.microsoft.com/schemas/bts2007 » encoding = « xml »\>**.|  
+    |**XML**|Indiquer le modèle XML du contenu de l'élément SOAP **Body** d'un message sortant. Cette propriété est requise si l'option **Corps -- corps du message de réponse BizTalk** est activée. Cette propriété est valide uniquement pour des emplacements de réception de type requête-réponse.<br /><br /> Type : Chaîne<br /><br /> Longueur minimale : 0<br /><br /> Longueur maximale : 32767<br /><br /> La valeur par défaut est  **\<bts-msg-body xmlns = »http://www.microsoft.com/schemas/bts2007» codage = « xml »\>**.|  
     |**Suspendre le message de demande en cas d’échec**|Spécifier s'il faut interrompre le message de requête dont le traitement entrant a échoué en raison d'une erreur de pipeline de réception ou d'un échec de routage.<br /><br /> Par défaut, cette case à cocher est désactivée.|  
     |**Inclure les détails de l’exception dans les erreurs**|Spécifier s'il faut retourner des messages d'erreur SOAP en cas d'échec afin de faciliter le débogage.<br /><br /> Par défaut, cette case à cocher est désactivée.|   
  
@@ -161,7 +162,7 @@ Cet emplacement de réception peut être configuré en tant qu’unidirectionnel
     |--------------|----------------|  
     |**Adresse (URI)**|Obligatoire. Indiquer l'adresse URI complète de ce port d'envoi. Utilisez le **https** ou **http** schéma selon la configuration de sécurité.<br /><br /> Longueur maximale : 255<br /><br /> Valeur par défaut : http://localhost/|  
     |**Identité du point de terminaison**|Ce paramètre est facultatif. Spécifiez l'identité du service attendu par ce port d'envoi. Ces paramètres permettent au port d'envoi d'authentifier le service. Lors du processus d'établissement de liaison entre le client et le service, l'infrastructure WCF (Windows Communication Foundation) garantit que l'identité du service attendu correspond aux valeurs de cet élément. Les valeurs qui peuvent être spécifiés pour le **identité** propriété diffèrent en fonction de la configuration de sécurité.<br /><br /> Par défaut, cette case à cocher est désactivée.| 
-    |**Action**|Spécifiez le **SOAPAction** champ d’en-tête HTTP pour les messages sortants. Cette propriété peut également être définie via la propriété de contexte de message **WCF. Action** dans un pipeline ou une orchestration. Vous pouvez spécifier cette valeur de deux manières différentes : le format d’action unique et le format de mappage d’action. Si vous définissez cette propriété dans le format d’action unique, par exemple, http://contoso.com/Svc/Op1-le **SOAPAction** en-tête pour les messages sortants sont toujours défini sur la valeur spécifiée dans cette propriété.<br /><br /> Si vous définissez cette propriété dans le format de mappage d’action, sortant **SOAPAction** en-tête est déterminé par le **BTS. Opération** propriété de contexte. Par exemple, si cette propriété est définie au format XML suivant et le **BTS. Opération** est définie sur Op1, l’adaptateur d’envoi WCF utilise http://contoso.com/Svc/Op1 pour sortant **SOAPAction** en-tête.<br /><br /> \<BtsActionMapping\><br /><br /> \<Nom de l’opération = Action de « Op1 » = « http://contoso.com/Svc/Op1 »\><br /><br /> \<Nom de l’opération = Action de « Op2 » = « http://contoso.com/Svc/Op2 »\><br /><br /> \</ BtsActionMapping\><br /><br /> Si les messages sortants proviennent d’un port d’orchestration, les instances d’orchestration définir dynamiquement le **BTS. Opération** propriété avec le nom de l’opération du port. Si les messages sortants sont acheminés avec le routage basé sur le contenu, vous pouvez définir le **BTS. Opération** propriété dans les composants de pipeline.<br /><br /> Longueur minimale : 0<br /><br /> Longueur maximale : 32767<br /><br /> La valeur par défaut est une chaîne vide.|
+    |**Action**|Spécifiez le **SOAPAction** champ d’en-tête HTTP pour les messages sortants. Cette propriété peut également être définie via la propriété de contexte de message **WCF. Action** dans un pipeline ou une orchestration. Vous pouvez spécifier cette valeur de deux manières différentes : le format d’action unique et le format de mappage d’action. Si vous définissez cette propriété dans le format d’action unique, par exemple, http://contoso.com/Svc/Op1- le **SOAPAction** en-tête pour les messages sortants sont toujours défini sur la valeur spécifiée dans cette propriété.<br /><br /> Si vous définissez cette propriété dans le format de mappage d’action, sortant **SOAPAction** en-tête est déterminé par le **BTS. Opération** propriété de contexte. Par exemple, si cette propriété est définie au format XML suivant et le **BTS. Opération** est définie sur Op1, l’adaptateur d’envoi WCF utilise http://contoso.com/Svc/Op1 pour sortant **SOAPAction** en-tête.<br /><br /> \<BtsActionMapping\><br /><br /> \<Operation Name="Op1" Action="http://contoso.com/Svc/Op1" \><br /><br /> \<Operation Name="Op2" Action="http://contoso.com/Svc/Op2" \><br /><br /> \</BtsActionMapping\><br /><br /> Si les messages sortants proviennent d’un port d’orchestration, les instances d’orchestration définir dynamiquement le **BTS. Opération** propriété avec le nom de l’opération du port. Si les messages sortants sont acheminés avec le routage basé sur le contenu, vous pouvez définir le **BTS. Opération** propriété dans les composants de pipeline.<br /><br /> Longueur minimale : 0<br /><br /> Longueur maximale : 32767<br /><br /> La valeur par défaut est une chaîne vide.|
  
 4.  Dans **propriétés du Transport WCF-BasicHttp**, dans le **liaison** onglet, configurez le délai d’expiration et les propriétés de codage : 
 
@@ -196,7 +197,7 @@ Cet emplacement de réception peut être configuré en tant qu’unidirectionnel
     |**Transport**|**Digest**|Néant|  
     |**TransportCredentialOnly**|**Basic**|Néant|  
     |**TransportCredentialOnly**|**Digest**|Néant|  
-    |**Message**|Néant|**UserName**|  
+    |**Boîte de**|Néant|**UserName**|  
     |**TransportWithMessageCredential**|Néant|**UserName**|   
  
  

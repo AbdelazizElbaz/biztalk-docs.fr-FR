@@ -1,23 +1,23 @@
 ---
-title: "Schémas de message pour des opérations IDOC dans le mon adaptateur SAP dans BizTalk | Documents Microsoft"
-description: "Les opérations de message, des structures et des actions pour envoyer et recevoir des IDOC à l’aide de l’adaptateur mySAP - Pack de l’adaptateur BizTalk (LOB)"
-ms.custom: 
+title: Schémas de message pour des opérations IDOC dans le mon adaptateur SAP dans BizTalk | Documents Microsoft
+description: Les opérations de message, des structures et des actions pour envoyer et recevoir des IDOC à l’aide de l’adaptateur mySAP - Pack de l’adaptateur BizTalk (LOB)
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 601aa9f9-e42f-47aa-b020-7a1eed4f0780
-caps.latest.revision: "7"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 53da14ff55d427e3507273af4c991072cff26bec
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="message-schemas-for-idoc-operations"></a>Schémas de message pour des opérations IDOC
 Documents intermédiaires (IDoc) sont des documents EDI de type standardisés pris en charge par SAP pour la communication asynchrone avec SAP et les systèmes non-SAP. IDOC sont utilisés pour envoyer et recevoir des documents professionnels tels que les commandes vers ou depuis le système SAP d’un partenaire commercial ou un programme externe.  
@@ -93,10 +93,10 @@ Documents intermédiaires (IDoc) sont des documents EDI de type standardisés pr
   
 |Opération|Action|Exemple|  
 |---------------|------------|-------------|  
-|Send|[MESSAGE_VERSION] /Idoc/ [VERSION] / [IDOCTYP] / [CIMTYP] / [RELNO] / envoi|http://Microsoft.LobServices.SAP/2007/03/IDOC/3/ORDERS05//620/Send|  
-|Envoyer une réponse|[MESSAGE_VERSION] /Idoc/ [VERSION] / [IDOCTYP] / [CIMTYP] / / envoi/réponse de [RELNO]|http://Microsoft.LobServices.SAP/2007/03/IDOC/3/ORDERS05//620/Send/Response|  
-|SendIdoc|[MESSAGE_VERSION] / Idoc/SendIdoc|http://Microsoft.LobServices.SAP/2007/03/IDOC/SendIdoc|  
-|Réponse de SendIdoc|[MESSAGE_VERSION] / Idoc/SendIdoc/réponse|http://Microsoft.LobServices.SAP/2007/03/IDOC/SendIdoc/Response|  
+|Send|[MESSAGE_VERSION]/Idoc/[VERSION] /[IDOCTYP]/[CIMTYP]/[RELNO]/Send|http://Microsoft.LobServices.Sap/2007/03/Idoc/3/ORDERS05//620/Send|  
+|Envoyer une réponse|[MESSAGE_VERSION]/Idoc/[VERSION] /[IDOCTYP]/[CIMTYP]/[RELNO]/Send/response|http://Microsoft.LobServices.Sap/2007/03/Idoc/3/ORDERS05//620/Send/response|  
+|SendIdoc|[MESSAGE_VERSION]/Idoc/SendIdoc|http://Microsoft.LobServices.Sap/2007/03/Idoc/SendIdoc|  
+|Réponse de SendIdoc|[MESSAGE_VERSION]/Idoc/SendIdoc/response|http://Microsoft.LobServices.Sap/2007/03/Idoc/SendIdoc/response|  
   
  [MESSAGE_VERSION] = la chaîne de version de message ; par exemple, http://Microsoft.LobServices.Sap/2007/03.  
   
@@ -183,8 +183,8 @@ Documents intermédiaires (IDoc) sont des documents EDI de type standardisés pr
   
 |Opération|Action|Exemple|  
 |---------------|------------|-------------|  
-|Recevoir|[MESSAGE_VERSION] /Idoc/ [VERSION] / [IDOCTYP] / [CIMTYP] / [RELNO] / de réception|http://Microsoft.LobServices.SAP/2007/03/IDOC/3/ORDERS05//620/Receive|  
-|Recevoir la réponse|[MESSAGE_VERSION] /Idoc/ [VERSION] / [IDOCTYP] / [CIMTYP] / / réception/réponse de [RELNO]|http://Microsoft.LobServices.SAP/2007/03/IDOC/3/ORDERS05//620/Receive/Response|  
-|ReceiveIdoc|[MESSAGE_VERSION] / Idoc/ReceiveIdoc|http://Microsoft.LobServices.SAP/2007/03/IDOC/ReceiveIdoc|  
-|Réponse de ReceiveIdoc|[MESSAGE_VERSION] / Idoc/ReceiveIdoc/réponse|http://Microsoft.LobServices.SAP/2007/03/IDOC/ReceiveIdoc/Response|  
+|Recevoir|[MESSAGE_VERSION]/Idoc/[VERSION] /[IDOCTYP]/[CIMTYP]/[RELNO]/Receive|http://Microsoft.LobServices.Sap/2007/03/Idoc/3/ORDERS05//620/Receive|  
+|Recevoir la réponse|[MESSAGE_VERSION]/Idoc/[VERSION] /[IDOCTYP]/[CIMTYP]/[RELNO]/Receive/response|http://Microsoft.LobServices.Sap/2007/03/Idoc/3/ORDERS05//620/Receive/response|  
+|ReceiveIdoc|[MESSAGE_VERSION]/Idoc/ReceiveIdoc|http://Microsoft.LobServices.Sap/2007/03/Idoc/ReceiveIdoc|  
+|Réponse de ReceiveIdoc|[MESSAGE_VERSION]/Idoc/ReceiveIdoc/response|http://Microsoft.LobServices.Sap/2007/03/Idoc/ReceiveIdoc/response|  
   

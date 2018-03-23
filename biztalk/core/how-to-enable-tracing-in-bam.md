@@ -1,22 +1,22 @@
 ---
-title: "Comment activer le suivi de l’analyse BAM | Documents Microsoft"
-ms.custom: 
+title: Comment activer le suivi de l’analyse BAM | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4da99e74-a41d-4ab1-a07d-e3bee6187216
-caps.latest.revision: "10"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 084eaf8cd4ba1c251b1c196830f76ef9c6a8e33f
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="how-to-enable-tracing-in-bam"></a>Activation du suivi dans BAM
 Vous pouvez activer le suivi dans BAM afin de faciliter la résolution des problèmes susceptibles de survenir dans les cinq composants BAM suivants :  
@@ -35,11 +35,11 @@ Vous pouvez activer le suivi dans BAM afin de faciliter la résolution des probl
  En activant le suivi de cet utilitaire, vous pouvez récupérer des informations sur les échecs de déploiement. Pour cela, de deux manières. activer le suivi depuis la ligne de commande pour certaines commandes BM.exe, ou modifier le fichier de configuration de l'utilitaire de gestion de l'analyse BAM afin d'activer le suivi, pour toutes les commandes BM.exe.  
   
 ### <a name="using-the-command-line"></a>Utilisation de la ligne de commande  
- Le suivi de ligne de commande BM.exe est activé à l’aide de la **-Trace : sur &#124; off** basculer. L'utilisation de l'option Trace remplace les paramètres du fichier de configuration.  
+ Le suivi de ligne de commande BM.exe est activé à l’aide de la **-Trace : sur&#124;hors** basculer. L'utilisation de l'option Trace remplace les paramètres du fichier de configuration.  
   
  L'option est utilisée conjointement avec toute commande BM.exe classique.  
   
- Exemple :  
+ Par exemple :  
   
  **BM.exe déployer-all - DefinitionFile:PO.xml – Trace : sur**  
   
@@ -183,7 +183,7 @@ Vous pouvez activer le suivi dans BAM afin de faciliter la résolution des probl
 ## <a name="bam-alerting"></a>Alertes BAM  
  L'activation du suivi pour les alertes BAM vous permet de résoudre les erreurs de notification d'alertes.  
   
- La fonction d'alertes BAM repose sur l'infrastructure des services de notification de [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]. Pour activer le suivi des alertes BAM, consultez Résolution des problèmes de rubriques sur les Services de Notification [http://go.microsoft.com/fwlink/?LinkId=79416](http://go.microsoft.com/fwlink/?LinkId=79416).  
+ La fonction d'alertes BAM repose sur l'infrastructure des services de notification de [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]. Pour activer le suivi des alertes BAM, consultez Résolution des problèmes de rubriques sur les Services de Notification [ http://go.microsoft.com/fwlink/?LinkId=79416 ](http://go.microsoft.com/fwlink/?LinkId=79416).  
   
 ## <a name="bam-interceptors"></a>Intercepteurs BAM  
  Pour activer le suivi de bout en bout des intercepteurs BAM, modifiez le fichier de configuration de l'application : le fichier Web.config pour les applications hébergées sur le Web, ou le fichier Appname.config pour les applications auto-hébergées. L'exemple suivant illustre la modification du fichier :  
@@ -223,7 +223,7 @@ Vous pouvez activer le suivi dans BAM afin de faciliter la résolution des probl
 >  Le suivi peut nuire aux performances. Ne l'activez donc que dans le cadre de résolution de problèmes.  
   
 ### <a name="viewing-the-wcf-trace-file"></a>Affichage du fichier de suivi WCF  
- Utilisez l'outil WCF Service Trace Viewer pour analyser le suivi WCF. Pour plus d’informations sur l’outil Service Trace Viewer, consultez [http://go.microsoft.com/fwlink/?LinkId=75218](http://go.microsoft.com/fwlink/?LinkId=75218).  
+ Utilisez l'outil WCF Service Trace Viewer pour analyser le suivi WCF. Pour plus d’informations sur l’outil Service Trace Viewer, consultez [ http://go.microsoft.com/fwlink/?LinkId=75218 ](http://go.microsoft.com/fwlink/?LinkId=75218).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Gestion de l’analyse BAM](../core/managing-bam.md)
+ [La gestion BAM](../core/managing-bam.md)

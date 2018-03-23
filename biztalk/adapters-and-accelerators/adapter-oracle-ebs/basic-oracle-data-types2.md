@@ -1,23 +1,23 @@
 ---
-title: "Les Types de données Oracle base dans l’adaptateur Oracle eBusiness Suite dans BizTalk | Documents Microsoft"
-description: "Données et XSD types, la saisie sécurisée et la validation dans Oracle e-Business Suite dans le Pack de l’adaptateur BizTalk (LOB)"
-ms.custom: 
+title: Les Types de données Oracle base dans l’adaptateur Oracle eBusiness Suite dans BizTalk | Documents Microsoft
+description: Données et XSD types, la saisie sécurisée et la validation dans Oracle e-Business Suite dans le Pack de l’adaptateur BizTalk (LOB)
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 008bf621-8b4e-450d-b354-ee26b91592f2
-caps.latest.revision: "21"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 9012e2ef6adaf94f55b87bbccfc24b7fb889fbf3
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="basic-oracle-data-types"></a>Types de données Oracle de base
 Cette rubrique décrit comment les [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] met en évidence des types de données de base Oracle.  
@@ -33,10 +33,10 @@ Cette rubrique décrit comment les [!INCLUDE[adapteroracleebusinesslong](../../i
 |Type de données Oracle|Type XSD|Type .NET|Commentaires|  
 |----------------------|--------------|---------------|--------------|  
 |BFile|d’entrée : xsd : String<br /><br /> sortie : xsd : base64Binary|Chaîne<br /><br /> Byte[]|Type de données BFile n’est pas pris en charge dans les types complexes (par exemple, RecordType TableType, UDT et VArray).|  
-|Objet BLOB|xsd:base64Binary|Byte[]|-|  
+|Blob|xsd:base64Binary|Byte[]|-|  
 |Char|xsd:string|Chaîne|-|  
-|CLOB|xsd:string|Chaîne|-|  
-|Date *<br /><br /> (Non-safe si en tapant à l’intérieur d’un UDT)|xsd:dateTime|DateTime|Les valeurs de date ne peut pas contenir les informations de fuseau horaire (décalages UTC ou l’heure UTC) :<br /><br /> -les valeurs de xsd : DateTime ne doivent pas contenir UTC ou l’heure UTC offsets<br />-   **DateTime.Kind** doit être **DateTimeKind.Unspecified**<br /><br /> Si les informations de fuseau horaire sont spécifiées, l’adaptateur génère un **XmlReaderParsingException** exception avec un message qui indique le champ. **Remarque :** le [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] expose le type de données Oracle Date comme xsd : DateTime au lieu de xsd : date, car : <ul><li>Type de données Date Oracle peut également contenir la valeur d’heure.</li><li>Il n’existe aucun .NET équivalent pour XSD : date.</li></ul>|  
+|Clob|xsd:string|Chaîne|-|  
+|Date*<br /><br /> (Non-safe si en tapant à l’intérieur d’un UDT)|xsd:dateTime|DateTime|Les valeurs de date ne peut pas contenir les informations de fuseau horaire (décalages UTC ou l’heure UTC) :<br /><br /> -les valeurs de xsd : DateTime ne doivent pas contenir UTC ou l’heure UTC offsets<br />-   **DateTime.Kind** doit être **DateTimeKind.Unspecified**<br /><br /> Si les informations de fuseau horaire sont spécifiées, l’adaptateur génère un **XmlReaderParsingException** exception avec un message qui indique le champ. **Remarque :** le [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] expose le type de données Oracle Date comme xsd : DateTime au lieu de xsd : date, car : <ul><li>Type de données Date Oracle peut également contenir la valeur d’heure.</li><li>Il n’existe aucun .NET équivalent pour XSD : date.</li></ul>|  
 |Float **|type xsd : float si prec < = 7<br /><br /> XSD : double si prec > 7 et < = 15<br /><br /> XSD : String si prec > 15|Float<br /><br /> Double<br /><br /> Chaîne|Vous devez spécifier la valeur cohérente avec le format spécifié pour le caractère décimal et le séparateur de groupes dans le **NumericCharacters** liaison de la propriété sous la **MlsSettings** propriété de liaison. Si aucune valeur n’est spécifiée pour le **NumericCharacters** propriété de liaison, l’adaptateur utilise les paramètres MLS pour le client ODP.NET sur le même ordinateur où est installé l’adaptateur.|  
 |IntervalDS|xsd:string<br /><br /> XSD:Duration si à l’intérieur d’un UDT|Chaîne<br /><br /> Intervalle de temps si à l’intérieur d’un UDT|L’adaptateur retourne les données IntervalDS sous forme de chaîne à l’aide de la méthode OracleIntervalDS.ToString.<br /><br /> La valeur doit être exprimée dans le format natif Oracle : jour HH:MI:SSxFF (par exemple, « 5 15:30:12.99 »).|  
 |IntervalYM|xsd:string<br /><br /> XSD : long si à l’intérieur d’un UDT|Chaîne<br /><br /> If long à l’intérieur d’un UDT|L’adaptateur retourne les données IntervalYM sous forme de chaîne à l’aide de la méthode OracleIntervalYM.ToString.<br /><br /> La valeur doit être exprimée dans le format natif Oracle : année-mois ; par exemple, « 1-2 » (1 année et 2 mois).|  
@@ -47,12 +47,12 @@ Cette rubrique décrit comment les [!INCLUDE[adapteroracleebusinesslong](../../i
 |Nombre **|XSD : decimal si prec < = 28<br /><br /> XSD : String si prec > 28|Décimal<br />Chaîne|-|  
 |NVarchar2|xsd:string|Chaîne|-|  
 |Brut|xsd:base64Binary|Byte[]||  
-|ID de ligne|xsd:string|Chaîne|-|  
-|Horodatage *<br /><br /> (Non-safe si en tapant à l’intérieur d’un UDT)|XSD : DateTime si prec < = 7<br /><br /> XSD : String si prec > 7|DateTime<br /><br /> Chaîne|Lorsqu’elle est exposée en tant que chaîne (prec > 7), la valeur doit être exprimée dans Oracle NLS_TIMESTAMP_FORMAT. Vous pouvez spécifier le format de chaîne pour les types de données TimeStamp dans la **TimeStampFormat** liaison de la propriété sous la **MlsSettings** propriété de liaison. Si aucune valeur n’est spécifiée pour le **TimeStampFormat** propriété de liaison, l’adaptateur utilise les paramètres MLS pour le client ODP.NET sur le même ordinateur où est installé l’adaptateur.<br /><br /> Les valeurs d’horodatage ne peut pas contenir les informations de fuseau horaire (décalages UTC ou l’heure UTC) :<br /><br /> -les valeurs de xsd : DateTime ne doivent pas contenir UTC ou l’heure UTC offsets<br />-   **DateTime.Kind** doit être **DateTimeKind.Unspecified**<br /><br /> Si les informations de fuseau horaire sont spécifiées, l’adaptateur génère un **XmlReaderParsingException** exception avec un message qui indique le champ.|  
+|RowID|xsd:string|Chaîne|-|  
+|TimeStamp*<br /><br /> (Non-safe si en tapant à l’intérieur d’un UDT)|XSD : DateTime si prec < = 7<br /><br /> XSD : String si prec > 7|DateTime<br /><br /> Chaîne|Lorsqu’elle est exposée en tant que chaîne (prec > 7), la valeur doit être exprimée dans Oracle NLS_TIMESTAMP_FORMAT. Vous pouvez spécifier le format de chaîne pour les types de données TimeStamp dans la **TimeStampFormat** liaison de la propriété sous la **MlsSettings** propriété de liaison. Si aucune valeur n’est spécifiée pour le **TimeStampFormat** propriété de liaison, l’adaptateur utilise les paramètres MLS pour le client ODP.NET sur le même ordinateur où est installé l’adaptateur.<br /><br /> Les valeurs d’horodatage ne peut pas contenir les informations de fuseau horaire (décalages UTC ou l’heure UTC) :<br /><br /> -les valeurs de xsd : DateTime ne doivent pas contenir UTC ou l’heure UTC offsets<br />-   **DateTime.Kind** doit être **DateTimeKind.Unspecified**<br /><br /> Si les informations de fuseau horaire sont spécifiées, l’adaptateur génère un **XmlReaderParsingException** exception avec un message qui indique le champ.|  
 |TimeStampLTZ|xsd:string|Chaîne|TimeStampLTZ n’est pas pris en charge dans les types UDT.<br /><br /> **En dehors d’un UDT**: la valeur doit être exprimée dans Oracle NLS_TIMESTAMP_TZ_FORMAT. Vous pouvez spécifier le format de chaîne pour les types de données TimeStampLTZ dans les **TimeStampTZFormat** liaison de la propriété sous la **MlsSettings** propriété de liaison. Si aucune valeur n’est spécifiée pour le **TimeStampTZFormat** propriété de liaison, l’adaptateur utilise les paramètres MLS pour le client ODP.NET sur le même ordinateur où est installé l’adaptateur.|  
 |TimeStampTZ|xsd:string<br /><br /> XSD : DateTime si à l’intérieur d’un UDT|Chaîne<br /><br /> DateTime si à l’intérieur d’un UDT|**En dehors d’un UDT**: la valeur doit être exprimée dans Oracle NLS_TIMESTAMP_TZ_FORMAT. Vous pouvez spécifier le format de chaîne pour les types de données TimeStampTZ dans les **TimeStampTZFormat** liaison de la propriété sous la **MlsSettings** propriété de liaison. Si aucune valeur n’est spécifiée pour le **TimeStampTZFormat** propriété de liaison, l’adaptateur utilise les paramètres MLS pour le client ODP.NET sur le même ordinateur où est installé l’adaptateur.|  
 |Decimal **|XSD : decimal si prec < = 28<br /><br /> XSD : String si prec > 28|Décimal<br /><br /> Chaîne|-|  
-|VARCHAR2|xsd:string|Chaîne|-|  
+|Varchar2|xsd:string|Chaîne|-|  
 |Binaire Float **|type xsd : float si prec < = 7<br /><br /> XSD : String si prec > 7|Float<br /><br /> Chaîne|Vous devez spécifier la valeur cohérente avec le format spécifié pour le caractère décimal et le séparateur de groupes dans le **NumericCharacters** liaison de la propriété sous la **MlsSettings** propriété de liaison. Si aucune valeur n’est spécifiée pour le **NumericCharacters** propriété de liaison, l’adaptateur utilise les paramètres MLS pour le client ODP.NET sur le même ordinateur où est installé l’adaptateur.|  
 |Binaire Double **|XSD : double si prec < = 15<br /><br /> XSD : String si prec > 15|Double<br /><br /> Chaîne|-|  
 |Entier binaire **|xsd:integer|Int32||  

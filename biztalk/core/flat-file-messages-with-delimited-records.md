@@ -1,22 +1,22 @@
 ---
-title: "Messages de fichier plat avec des enregistrements délimités | Documents Microsoft"
-ms.custom: 
+title: Messages de fichier plat avec des enregistrements délimités | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7ad7119b-4e39-43df-9dba-a04382eb6db2
-caps.latest.revision: "11"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: a5dc9eb0253e2bfe8824f6395e1c619c23f0e551
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="flat-file-messages-with-delimited-records"></a>Messages de fichier plat avec des enregistrements délimités
 Les enregistrements délimités d'un message d'instance de fichier plat contiennent des enregistrements imbriqués et/ou des champs individuels (éléments de données) séparés par un caractère ou un ensemble de caractères prédéfinis. Les champs sont analysés selon ces délimiteurs de séparation. Prenons l'exemple des enregistrements délimités suivants issus d'un message d'instance de fichier plat et contenant deux lignes d'un bon de commande hypothétique :  
@@ -31,7 +31,7 @@ ITEMS,ITEM872-AA|Lawnmower|1|148.95|Electric-120vac,ITEM926-AA|Baby Monitor|1|39
   
 -   Des éléments nommés d'un enregistrement délimité avec un délimiteur enfant (,), un préfixe de classement enfant et la balise ITEMS (en gras)  
   
-    -   A délimité, enregistrement répété nommée item avec le délimiteur enfant &#124; valeur infix de classement enfant et la balise d’élément.  
+    -   Élément avec un délimiteur enfant nommé d’enregistrement répété A délimités, &#124;, valeur infix de classement enfant et la balise d’élément.  
   
     -   Un élément « partNum ».  
   

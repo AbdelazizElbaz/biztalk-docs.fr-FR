@@ -1,22 +1,22 @@
 ---
-title: "Étape 3 : Implémenter la connexion de l’adaptateur d’écho | Documents Microsoft"
-ms.custom: 
+title: 'Étape 3 : Implémenter la connexion de l’adaptateur d’écho | Documents Microsoft'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: dc223901-3ad3-4e71-8672-fea6bb4efe65
-caps.latest.revision: "22"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 0a735654fd03f5efb39fe73eb845f4db3632d283
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="step-3-implement-the-connection-for-the-echo-adapter"></a>Étape 3 : Implémenter la connexion de l’adaptateur d’écho
 ![Étape 3 de 9](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-3of9.gif "Step_3of9")  
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/20/2017
   
  Dans la section suivante, vous mettez à jour ces trois classes pour mieux comprendre comment gérer une connexion, ce qui est la structure de l’URI et comment récupérer par programme des différents éléments de l’URI, puis utilisez ces éléments au sein de la carte.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Configuration requise  
  Avant de commencer cette étape, vous devez avoir terminé avec succès [étape 2 : classer l’adaptateur et les propriétés de connexion](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-categorize-the-adapter-and-connection-properties.md). Et vous devez avoir une vision claire de la `Microsoft.ServiceModel.Channels.Common.IConnection`, `Microsoft.ServiceModel.Channels.Common.IConnectionFactory`, et `Microsoft.ServiceModel.Channels.Common.ConnectionUri` classes.  
   
 ## <a name="connection-related-classes"></a>Classes liées à la connexion  
@@ -64,17 +64,17 @@ ms.lasthandoff: 09/20/2017
 |**Méthode**|**Description**|  
 |----------------|---------------------|  
 |substitution public Uri Uri|Obtient et définit l’Uri. Obtient générer la chaîne d’Uri et définit pour analyser la chaîne d’Uri.|  
-|EchoAdapterConnectionUri() public|Initialise une nouvelle instance de la classe ConnectionUri.|  
-|chaîne de substitution public SampleUriString|Retourne EchoAdapter.SCHEME + » : //{hostname}/{application}?enableAuthentication={True &#124; False} ».<br /><br /> Cette chaîne de retour affiche en tant que le **exemple** dans les [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] d’outils, comme indiqué dans l’illustration suivante.|  
+|public EchoAdapterConnectionUri()|Initialise une nouvelle instance de la classe ConnectionUri.|  
+|chaîne de substitution public SampleUriString|Retourne EchoAdapter.SCHEME + » : //{hostname}/{application}?enableAuthentication={True&#124;False} ».<br /><br /> Cette chaîne de retour affiche en tant que le **exemple** dans les [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] d’outils, comme indiqué dans l’illustration suivante.|  
   
  ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/e4b9d0b8-f07f-4342-815f-9ef1507b0980.gif "e4b9d0b8-f07f-4342-815f-9ef1507b0980")  
   
 ## <a name="echo-adapter-connection-uri"></a>URI de connexion de l’adaptateur d’écho  
- L’exemple de connexion de l’adaptateur Echo URI se présente comme suit : EchoAapter.SCHEME://{hostname}/{application}?enableAuthentication={true &#124; false}  
+ L’exemple de connexion de l’adaptateur Echo URI se présente comme suit : EchoAapter.SCHEME://{hostname}/{application}?enableAuthentication={true&#124;false}  
   
  Le EchoAapter.SCHEME étant echov2, la connexion est :  
   
- echo2 : / lobhostname/lobapplication ? enableAuthentication = {true &#124; false}  
+ echo2://lobhostname/lobapplication?enableAuthentication={true&#124;false}  
   
  Vous pouvez lire l’URI de connexion précédente lorsque enableAuthentication = false comme suit :  
   
@@ -88,19 +88,19 @@ ms.lasthandoff: 09/20/2017
   
  Dans le code suivant, l’adaptateur Echo construit l’URI de deux façons pour vous expliquent comment l’adaptateur peut utiliser différents éléments de l’URI pour modifier la fonctionnalité de l’adaptateur.  
   
- echo2 : / lobhostname/lobapplication ? enableAuthentication = [true &#124; false]  
+ echo2://lobhostname/lobapplication?enableAuthentication=[true&#124;false]  
   
- echo2 : / lobhostname/lobapplication ? enableAuthentication = [true &#124; false] & echoInUpperCase = true  
+ echo2://lobhostname/lobapplication?enableAuthentication=[true&#124;false]&echoInUpperCase=true  
   
 ### <a name="retrieving-the-uri-element"></a>La récupération de l’élément URI  
  Vous pouvez analyser chaque élément d’URI dans l’adaptateur d’écho URI echo2 : / lobhostname/lobapplication ? enableAuthentication = false & echoInUpperCase = false.  Les valeurs d’élément URI et les méthodes associées sont répertoriées dans le tableau suivant :  
   
 |**Valeur de l’élément URI**|**Méthode**|  
 |---------------------------|----------------|  
-|lobhostname|`System.Uri.Host%2A`pour récupérer le nom d’hôte|  
-|Lobapplication|`System.Uri.AbsolutePath%2A`pour récupérer le nom de l’application cible|  
-|enableAuthentation = false|GetQueryStringValue("enableAuthentication")<br /><br /> Utilisez cet élément URI pour valider les informations d’identification utilisateur **Remarque :** GetQueryStringValue est une méthode statique définie dans le`Microsoft.ServiceModel.Channels.Common.ConnectionUri`|  
-|echoInUpperValue = false|GetQueryStringValue("echoInUpperValue")<br /><br /> Utilisez cet élément de l’URI à convertir la chaîne entrante en majuscules.|  
+|lobhostname|`System.Uri.Host%2A` pour récupérer le nom d’hôte|  
+|Lobapplication|`System.Uri.AbsolutePath%2A` pour récupérer le nom de l’application cible|  
+|enableAuthentation=false|GetQueryStringValue("enableAuthentication")<br /><br /> Utilisez cet élément URI pour valider les informations d’identification utilisateur **Remarque :** GetQueryStringValue est une méthode statique définie dans le `Microsoft.ServiceModel.Channels.Common.ConnectionUri`|  
+|echoInUpperValue=false|GetQueryStringValue("echoInUpperValue")<br /><br /> Utilisez cet élément de l’URI à convertir la chaîne entrante en majuscules.|  
   
 ### <a name="enableauthentication-uri-element"></a>Élément EnableAuthentication URI  
  Votre système cible souvent vous oblige à fournir des informations d’identification du client pour établir une connexion au système cible. Comme indiqué, l’adaptateur Echo n’implique pas de n’importe quel système cible. Bien que sous forme d’exemple, il montre comment utiliser un élément URI personnalisé appelé enableAuthentication pour fournir les informations d’identification.  
@@ -334,4 +334,4 @@ ms.lasthandoff: 09/20/2017
   
 ## <a name="see-also"></a>Voir aussi  
  [Étape 4 : Implémenter le Gestionnaire de recherche de métadonnées de l’adaptateur d’écho](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-implement-the-metadata-browse-handler-for-the-echo-adapter.md)   
- [Didacticiel 1 : Développer l’adaptateur d’écho](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)
+ [Didacticiel 1 : Développer l’adaptateur Echo](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)

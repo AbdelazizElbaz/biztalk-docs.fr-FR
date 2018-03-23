@@ -1,25 +1,25 @@
 ---
 title: Adaptateur WCF-WebHttp | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 67a353e7-1ba3-427a-8e99-c9b8d83061cb
-caps.latest.revision: "4"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 891f636a5380eda7db676559194618915213dc37
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="wcf-webhttp-adapter"></a>Adaptateur WCF-WebHttp
-[!INCLUDE[btsCoName](../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] utilise le **WCF-WebHttp** adaptateur pour envoyer des messages aux services RESTful. Le **WCF-WebHttp** envoyer l’adaptateur envoie des messages HTTP à un service à partir d’un message BizTalk. L’emplacement de réception reçoit des messages en provenance d’un service RESTful. Pour les requêtes GET et DELETE, l’adaptateur n’utilise aucune charge. Pour les requêtes POST et PUT, l’adaptateur utilise le corps du message BizTalk dans le contenu et la charge HTTP.  
+[!INCLUDE[btsCoName](../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] utilise le **WCF-WebHttp** adaptateur pour envoyer des messages aux services RESTful. Le **WCF-WebHttp** envoyer l’adaptateur envoie des messages HTTP à un service à partir d’un message BizTalk. L’emplacement de réception reçoit des messages en provenance d’un service RESTful. Pour les requêtes GET et DELETE, l’adaptateur n’utilise aucune charge. Pour les requêtes POST et PUT, l’adaptateur utilise le corps du message BizTalk dans le contenu et la charge HTTP.  
 
 Cette rubrique montre comment créer l’emplacement de réception et envoi du port à l’aide de la console Administration de BizTalk.
 
@@ -28,7 +28,7 @@ Cette rubrique montre comment créer l’emplacement de réception et envoi du p
 > [!NOTE]
 >  Avant d’exécuter la procédure suivante, vous devez avoir déjà ajouté un unidirectionnel port de réception. Consultez [la création d’un Port de réception](../core/how-to-create-a-receive-port.md).  
   
-1.  Dans la console Administration de BizTalk Server, développez [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], développez **groupe BizTalk**, développez **Applications**, puis développez l’application sous laquelle créer un emplacement de réception.  
+1.  Dans la console Administration de BizTalk Server, développez successivement [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], **Groupe BizTalk**, **Applications**, puis l’application sous laquelle créer un emplacement de réception.  
   
 2.  Dans le volet gauche, cliquez sur le nœud **Ports de réception** . Dans le volet droit, cliquez avec le bouton droit sur le port de réception auquel vous souhaitez associer le nouvel emplacement de réception, puis cliquez sur **Propriétés**.  
   

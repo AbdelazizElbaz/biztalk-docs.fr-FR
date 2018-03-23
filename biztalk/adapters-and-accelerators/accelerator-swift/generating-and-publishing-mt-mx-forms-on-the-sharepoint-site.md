@@ -1,22 +1,22 @@
 ---
-title: "Génération et publication de formulaires MT-MX sur le Site SharePoint | Documents Microsoft"
-ms.custom: 
+title: Génération et publication de formulaires MT-MX sur le Site SharePoint | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4adf7117-11ad-4a8e-8d6a-fd78c5e496a3
-caps.latest.revision: "3"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 1c8bd8248a916d1e98571551a8561119b6377329
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="generating-and-publishing-mtmx-forms-on-the-sharepoint-site"></a>Génération et publication de formulaires MT/MX sur le Site SharePoint
 **Pour générer et publier des formulaires MT/MX sur un site SharePoint :**  
@@ -50,7 +50,7 @@ ms.lasthandoff: 11/28/2017
   
 12. Dans la fenêtre de l’Assistant Publication, sélectionnez **vers un emplacement réseau** et cliquez sur **suivant**.  
   
-13. Dans le formulaire modèle chemin d’accès et le fichier de zone de texte Nom, tapez **http://localhost/sites/BASSite/Templates/\<MessageType\>.xsn** et type  **\<MessageType\>**  nom de zone de texte dans le modèle de formulaire et cliquez sur **suivant**.  
+13. Dans le formulaire modèle chemin d’accès et le fichier de zone de texte Nom, tapez **http://localhost/sites/BASSite/Templates/\<MessageType\>.xsn** et type **\<MessageType\>** nom de zone de texte dans le modèle de formulaire et cliquez sur **suivant**.  
   
 14. Cliquez sur **Suivant**.  
   
@@ -64,7 +64,7 @@ ms.lasthandoff: 11/28/2017
   
     -   Si vous générez des formulaires InfoPath de MT, tapez : **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMTxxx**  
   
-    -   Si vous générez des formulaires InfoPath de MX, tapez : **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMX _\<MessageName\>**  
+    -   Si vous générez des formulaires InfoPath de MX, tapez :  **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMX_ \<MessageName\>**  
   
          Cela permet d’identifier l’instance de message par le modèle correspondant.  
   

@@ -1,22 +1,22 @@
 ---
-title: "Insérer, mettre à jour, supprimer ou sélectionner des opérations dans SQL à l’aide du modèle de service WCF | Documents Microsoft"
-ms.custom: 
+title: Insérer, mettre à jour, supprimer ou sélectionner des opérations dans SQL à l’aide du modèle de service WCF | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 340048ad-ce28-4acf-ae4e-f18bdb3b6f47
-caps.latest.revision: "14"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: d2bc522a1b0b60a9ba0b8407228dd1db65c4e6f0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="insert-update-delete-or-select-operations-in-sql-using-the-wcf-service-model"></a>Insérer, mettre à jour, supprimer ou sélectionner des opérations dans SQL à l’aide du modèle de service WCF
 Le [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] détecte un ensemble d’opérations de base sur les tables de base de données SQL Server et les vues Insert, Select, Update et Delete. À l’aide de ces opérations, vous pouvez effectuer simple SQL Insert, Select, Update et supprimer les instructions qualifiées par Where clause sur une table ou vue cible. Cette rubrique fournit des instructions sur la façon d’effectuer ces opérations à l’aide du modèle de service WCF.  
@@ -34,8 +34,8 @@ Le [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] détecte un ensemble 
   
 |Objet de base de données SQL Server|Nom de Client WCF|  
 |----------------------------------|---------------------|  
-|Table|TableOp_ [schéma] _ [nom_table] Client|  
-|Affichage|ViewOp_ [schéma] _ [VIEW_NAME] Client|  
+|Table|TableOp_[Schema]_[TABLE_NAME]Client|  
+|Affichage|ViewOp_[Schema]_[VIEW_NAME]Client|  
   
  [Schéma] = des artefacts de la Collection de SQL Server ; par exemple, dbo.  
   
@@ -48,10 +48,10 @@ Le [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] détecte un ensemble 
   
 |Opération|Signature de méthode|  
 |---------------|----------------------|  
-|Insert|[] long Insert ([TABLE_NS]. [ Lignes [] nom_table]) ;|  
+|Insert|long[] Insert([TABLE_NS].[TABLE_NAME][] Rows);|  
 |Select|[TABLE_NS]. [NOM_TABLE] [] Sélectionnez (chaîne, chaîne de requête les colonnes) ;|  
-|Update|int mise à jour ([TABLE_NS]. [ NOM_TABLE]. Lignes [] RowPair) ;|  
-|DELETE|int Delete ([TABLE_NS]. [ Lignes [] nom_table]) ;|  
+|Update|int Update([TABLE_NS].[TABLE_NAME].RowPair[] Rows);|  
+|Supprimer|int Delete([TABLE_NS].[TABLE_NAME][] Rows);|  
   
  [TABLE_NS] = le nom de l’espace de noms de table ; par exemple, schemas.microsoft.com.Sql._2008._05.Types.Tables.dbo.Employee.  
   
@@ -86,7 +86,7 @@ public partial class TableOp_dbo_EmployeeClient : System.ServiceModel.ClientBase
   
  **Sélectionnez l’opération**  
   
-|NOMS DE COLONNE|QUERY|  
+|COLUMN_NAMES|QUERY|  
 |-------------------|-----------|  
 |Une liste délimitée par des virgules de noms de colonnes dans la cible. par exemple, « Employee_ID, désignation ». La liste de colonnes spécifie les colonnes de la cible doit être retournée dans le jeu de résultats. Colonnes non spécifiées dans la liste des colonnes seront fixés à leurs valeurs par défaut de .NET dans le jeu d’enregistrements retourné. Pour les colonnes « nillable », cette valeur est **null**.|Le contenu d’une clause SQL WHERE qui spécifie les lignes de la cible de la requête. par exemple, « désignation = 'Manager' ». Vous pouvez définir ce paramètre **null** renvoie toutes les lignes de la cible.|  
   
@@ -130,7 +130,7 @@ public partial class TableOp_dbo_EmployeeClient : System.ServiceModel.ClientBase
     client.ClientCredentials.UserName.Password = "<Enter password here>";  
     ```  
   
-     Dans cet extrait de code, `TableOp_dbo_EmployeeClient` est le client WCF défini dans SqlAdapterBindingClient.cs. Ce fichier est généré par le [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]. `SqlAdapterBinding_TableOp_dbo_Employee`est le nom de la configuration de point de terminaison de client et est défini dans le fichier app.config. Ce fichier est également généré par le [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] et contient les propriétés de liaison et d’autres paramètres de configuration.  
+     Dans cet extrait de code, `TableOp_dbo_EmployeeClient` est le client WCF défini dans SqlAdapterBindingClient.cs. Ce fichier est généré par le [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]. `SqlAdapterBinding_TableOp_dbo_Employee` est le nom de la configuration de point de terminaison de client et est défini dans le fichier app.config. Ce fichier est également généré par le [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] et contient les propriétés de liaison et d’autres paramètres de configuration.  
   
     > [!NOTE]
     >  Dans cet extrait de code, vous utilisez la liaison et l’adresse de point de terminaison à partir du fichier de configuration. Vous pouvez également spécifier explicitement ces valeurs dans votre code. Pour plus d’informations sur les différentes façons de spécifier la liaison du client, consultez [configurer une liaison de Client de l’adaptateur SQL](../../adapters-and-accelerators/adapter-sql/configure-a-client-binding-for-the-sql-adapter.md).  
@@ -296,4 +296,4 @@ catch (Exception ex)
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
-[Développer des applications à l’aide du modèle de Service WCF](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-service-model.md)
+[Développer des applications en utilisant le modèle de service WCF](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-service-model.md)
