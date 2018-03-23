@@ -1,1 +1,1 @@
-<span data-ttu-id="f29a2-101">Fournisseur de données .NET Framework pour mySAP Business Suite</span><span class="sxs-lookup"><span data-stu-id="f29a2-101">.NET Framework Data Provider for mySAP Business Suite</span></span>
+<span data-ttu-id="7d847-101">Fournisseur de données .NET Framework pour mySAP Business Suite</span><span class="sxs-lookup"><span data-stu-id="7d847-101">.NET Framework Data Provider for mySAP Business Suite</span></span>

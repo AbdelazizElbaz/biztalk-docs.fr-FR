@@ -1,1 +1,1 @@
-<span data-ttu-id="1bdfb-101">Adaptateur SAP</span><span class="sxs-lookup"><span data-stu-id="1bdfb-101">SAP adapter</span></span>
+<span data-ttu-id="c3029-101">Adaptateur SAP</span><span class="sxs-lookup"><span data-stu-id="c3029-101">SAP adapter</span></span>

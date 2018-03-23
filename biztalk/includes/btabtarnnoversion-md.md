@@ -1,1 +1,1 @@
-<span data-ttu-id="64c7b-101">BizTalk Accelerator pour RosettaNet</span><span class="sxs-lookup"><span data-stu-id="64c7b-101">BizTalk Accelerator for RosettaNet</span></span>
+<span data-ttu-id="4f936-101">BizTalk Accelerator pour RosettaNet</span><span class="sxs-lookup"><span data-stu-id="4f936-101">BizTalk Accelerator for RosettaNet</span></span>

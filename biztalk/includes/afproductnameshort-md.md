@@ -1,1 +1,1 @@
-<span data-ttu-id="f64ae-101">Kit de développement logiciel (SDK) de l’adaptateur WCF LOB</span><span class="sxs-lookup"><span data-stu-id="f64ae-101">WCF LOB Adapter SDK</span></span>
+<span data-ttu-id="3f6f4-101">Kit de développement logiciel (SDK) de l’adaptateur WCF LOB</span><span class="sxs-lookup"><span data-stu-id="3f6f4-101">WCF LOB Adapter SDK</span></span>
