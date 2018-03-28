@@ -1,22 +1,22 @@
 ---
 title: Adaptateur transactionnel (exemple BizTalk Server) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 31a13377-cc89-4763-ad1b-508a16fc9708
-caps.latest.revision: "36"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: f934857103952a035159cc08678c8ce8c8e51a56
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="transactional-adapter-biztalk-server-sample"></a>Adaptateur transactionnel (exemple BizTalk Server)
 L'exemple d'adaptateur transactionnel montre comment créer et utiliser une transaction Microsoft Distributed Transaction Coordinator (MSDTC) explicite sur une base de données lors du traitement d'un message [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  

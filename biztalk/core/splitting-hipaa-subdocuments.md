@@ -1,22 +1,22 @@
 ---
 title: Fractionnement de sous-documents HIPAA | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 66d9badd-00c6-43a3-807e-0ad313983adc
-caps.latest.revision: "21"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 799cb5813b3c13339a0c477bf142a467a91b2c94
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="splitting-hipaa-subdocuments"></a>Fractionnement de sous-documents HIPAA
 Les échanges EDI pour HIPAA ont généralement plusieurs documents enfants ou sous-documents dans un document informatisé unique, liés par les en-têtes ST/SE. Le pipeline de réception EDI prend en charge la création de sous-documents HIPAA distincts d'un tel document informatisé. Cela diffère des échanges EDI non HIPAA dans lesquels un document informatisé unique est traité comme un message unique.  

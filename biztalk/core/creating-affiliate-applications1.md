@@ -1,22 +1,22 @@
 ---
-title: "Création d’applications associées à des Applications pour TIBCO Rendezvous | Documents Microsoft"
-ms.custom: 
+title: Création d’applications associées à des Applications pour TIBCO Rendezvous | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f3603fcb-3594-460b-b74a-618e22d9c4e0
-caps.latest.revision: "11"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: a286a80ef2c867dd196fcdce414f2d0ff3c8255c
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="creating-affiliate-applications"></a>Création d’Applications associées
 Les procédures suivantes décrivent comment travailler avec des applications associées et de l'authentification unique (SSO). Pour obtenir des informations exhaustives sur l'utilisation de l'authentification unique de l'entreprise, consultez la documentation de Microsoft.  
@@ -28,9 +28,9 @@ Les procédures suivantes décrivent comment travailler avec des applications as
   
 1.  Dans le panneau de configuration, ouvrez **Services**et vérifiez que le service Enterprise Single Sign-On est en cours d’exécution.  
   
-2.  Dans une invite de commandes, accédez au dossier Enterprise Single Sign-On. Exemple :  
+2.  Dans une invite de commandes, accédez au dossier Enterprise Single Sign-On. Par exemple :  
   
-     **C:\Program Files\Common Files\Enterprise Single Sign-On >**  
+     **C:\Program Files\Common Files\Enterprise Single Sign-On>**  
   
 3.  Utilisez les commandes du service de l'authentification unique de l'entreprise Pour obtenir la liste de commandes, utilisez la **-aide** basculer.  
   
@@ -44,7 +44,7 @@ Les procédures suivantes décrivent comment travailler avec des applications as
   
      AffiliateApplication.xml est l’application XML que vous avez créé et qui contient les informations d’authentification.  
   
-     Exemple :  
+     Par exemple :  
   
     ```  
     <?xml version="1.0"?>  

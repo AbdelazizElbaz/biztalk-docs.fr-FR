@@ -1,22 +1,22 @@
 ---
-title: "Les coûts des ressources système sur Hyper-V | Documents Microsoft"
-ms.custom: 
+title: Les coûts des ressources système sur Hyper-V | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9f25a76c-1c41-41c0-b28d-d7473dbe1cd1
-caps.latest.revision: "8"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 491c71a446829ddddfc4d7c55053b94dcf7fc9d1
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="system-resource-costs-on-hyper-v"></a>Coûts des ressources système sur Hyper-V
 ## <a name="system-resource-costs-associated-with-running-a-guest-operating-system-on-hyper-v"></a>Coûts des ressources système associées à l’exécution d’un système d’exploitation invité sur Hyper-V  
@@ -44,7 +44,7 @@ ms.lasthandoff: 12/01/2017
  Configurer les disques pour les volumes de données à l’aide du contrôleur SCSI. Cela garantit que les services d’intégration sont installés, car le contrôleur SCSI ne peut être installé que si les services d’intégration Hyper-V sont installés alors que le contrôleur IDE émulé est disponible sans avoir à installer les services d’intégration Hyper-V. E/s de disque effectuées à l’aide du contrôleur SCSI, soit le pilote du filtre IDE fourni avec les services d’intégration est considérablement plus performants que les performances d’e/s fourni avec le contrôleur IDE émulé sur disque. Par conséquent, pour vous assurer de disque optimiser les performances d’e/s pour les fichiers de données dans un environnement virtualisé Hyper-V, installez les services d’intégration sur les système d’exploitation hôte et invité et configurer les disques pour les volumes de données avec le contrôleur SCSI synthétique. Pour les charges d’e/s de stockage très importantes qui s’étendent sur plusieurs lecteurs de données, chaque disque dur virtuel doit être attaché à un contrôleur SCSI synthétique distinct pour meilleures performances globales. En outre, chaque disque dur virtuel doit être stockée sur des disques physiques distincts ou des numéros d’unités logiques.  
   
 #### <a name="measuring-passthrough-disk-performance"></a>Mesurer les performances de disque direct  
- Pendant un exercice de consolidation, il est important de veiller à une utilisation maximale des ressources disponibles. Comme indiqué précédemment, le stockage d’e/s sur les volumes de données SQL joue un rôle significatif dans les performances globales d’une solution BizTalk Server. Par conséquent, dans le cadre de ce guide, les performances relatives d’un disque physique sur les performances d’un disque direct dans Hyper-V a été testé. Les performances relatives de données MessageBox de lecteur dans Physical_SQL01 et Virtual_SQL01 a été mesuré à l’aide de la IOMeter outil open source initialement développé par Intel Corporation et maintenant gérés par l’open Source Development Lab (OSDL). Pour plus d’informations sur IOMeter, consultez [http://go.microsoft.com/fwlink/?LinkId=122412](http://go.microsoft.com/fwlink/?LinkId=122412).  
+ Pendant un exercice de consolidation, il est important de veiller à une utilisation maximale des ressources disponibles. Comme indiqué précédemment, le stockage d’e/s sur les volumes de données SQL joue un rôle significatif dans les performances globales d’une solution BizTalk Server. Par conséquent, dans le cadre de ce guide, les performances relatives d’un disque physique sur les performances d’un disque direct dans Hyper-V a été testé. Les performances relatives de données MessageBox de lecteur dans Physical_SQL01 et Virtual_SQL01 a été mesuré à l’aide de la IOMeter outil open source initialement développé par Intel Corporation et maintenant gérés par l’open Source Development Lab (OSDL). Pour plus d’informations sur IOMeter, consultez [ http://go.microsoft.com/fwlink/?LinkId=122412 ](http://go.microsoft.com/fwlink/?LinkId=122412).  
   
  Les tableaux suivants décrivent la configuration de matériel physique et virtuel utilisée dans l’environnement de test, les options de configuration IOMeter qui ont été utilisées, une description du test qui a été exécuté et un résumé des résultats.  
   
@@ -55,7 +55,7 @@ ms.lasthandoff: 12/01/2017
 |||  
 |-|-|  
 |**Modèle**|HP DL580|  
-|**Processeur**|Processeur quadruple, cœurs Intel Xeon 2,4 Ghz|  
+|**Processor**|Processeur quadruple, cœurs Intel Xeon 2,4 Ghz|  
 |**Mémoire**|8 GO|  
 |**Mise en réseau**|Carte HP NC3T3i multifonction Gigabit Server|  
 |**Configuration du réseau SAN**|SAN stockage en attachement direct (voir tableau ci-dessous)|  
@@ -77,7 +77,7 @@ ms.lasthandoff: 12/01/2017
 |||  
 |-|-|  
 |**Modèle**|HP DL580|  
-|**Processeur**|Processeur quadruple, cœurs Intel Xeon 2,4 Ghz|  
+|**Processor**|Processeur quadruple, cœurs Intel Xeon 2,4 Ghz|  
 |**Mémoire**|32 Go|  
 |**Mise en réseau**|Broadcom BCM5708C NetXtreme II GigEHP DL380 G5|  
   
@@ -135,7 +135,7 @@ ms.lasthandoff: 12/01/2017
   
  Les résultats indiquent qu’un disque direct à l’aide du contrôleur SCSI compatible peut fournir plus 90 % des performances d’un disque physique connecté directement. Performances du sous-système d’e/s sont essentielle pour le bon fonctionnement de BizTalk Server, en fournissant une excellente heures de débit et de réponse Hyper-V est un excellent candidat pour la consolidation d’un environnement BizTalk Server. Le tableau ci-dessous fournit qu'un résumé des résultats du test de disque observées lors de la comparaison des performances d’un disque de transfert direct vers un disque physique :  
   
-|Mesure|Physical_SQL01 (disque physique)|Virtual_SQL01 (relais)|Performances relatives de disques directs vers les disques physiques|  
+|Mesure|Physical_SQL01 (Physical Disk)|Virtual_SQL01 (passthrough)|Performances relatives de disques directs vers les disques physiques|  
 |-----------------|---------------------------------------|------------------------------------|-----------------------------------------------------------------|  
 |Total e/s par seconde|269.73|250.47|92.86%|  
 |E/s de lecture par seconde|180.73|167.60|92.74%|  

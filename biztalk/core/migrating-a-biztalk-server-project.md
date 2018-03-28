@@ -1,30 +1,30 @@
 ---
-title: "Migration d’un projet BizTalk Server | Documents Microsoft"
-ms.custom: 
+title: Migration d’un projet BizTalk Server | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5a4dde72-6555-4bf6-b90e-676aa65312ff
-caps.latest.revision: "23"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: d2752203b0498a6cd5a4a8b6df6bc558c444e355
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="migrating-a-biztalk-server-project"></a>Migration d'un projet BizTalk Server
-[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]les projets développés pour [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] peuvent être migrés vers les environnements plus récente à l’aide de [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] conversion. Pour obtenir la liste des versions de migration pris en charge, consultez [pris en charge les chemins de mise à niveau et les Guides d’Installation](http://social.technet.microsoft.com/wiki/contents/articles/28554.biztalk-server-supported-upgrade-paths-and-installation-guides.aspx).  
+[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] les projets développés pour [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] peuvent être migrés vers les environnements plus récente à l’aide de [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] conversion. Pour obtenir la liste des versions de migration pris en charge, consultez [pris en charge les chemins de mise à niveau et les Guides d’Installation](http://social.technet.microsoft.com/wiki/contents/articles/28554.biztalk-server-supported-upgrade-paths-and-installation-guides.aspx).  
   
 ## <a name="biztalk-project-changes-after-running-the-conversion-wizard"></a>Modifications apportées à un projet BizTalk après l'exécution de l'Assistant Conversion  
  Le tableau suivant montre comment [!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)] modification de noms de configuration de projet, et où déplacement de certaines propriétés de configuration spécifiques après le projet est converti en une version [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] projet. La plupart de la [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]-paramètres de projet associés se trouvent sur le **déploiement** onglet du Concepteur de projet.  
   
-|[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]projet|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]projet|  
+|[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)] Projet|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Projet|  
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|  
 |**Incorporer les informations de suivi** propriété de configuration de sortie|**Définir la constante TRACE** option de conception la **générer** onglet du Concepteur de projet|  
 |**Générer des informations de débogage** propriété de configuration de sortie|**Définir la constante DEBUG** option de conception la **générer** onglet du Concepteur de projet|  
@@ -40,7 +40,7 @@ ms.lasthandoff: 01/17/2018
 >  Les personnalisations apportées aux éléments générés automatiquement, comme les fichiers XSD ou ODX, seront perdues lors de la conversion. Cela s'applique également aux fichiers XSD générés lorsqu'une référence Web est ajoutée à un projet BizTalk.  
   
 ## <a name="project-migration-and-delay-signing"></a>Migration de projet et temporisation de la signature  
- [!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]les projets qui utilisent [signature différée](http://go.microsoft.com/fwlink/p/?LinkId=140992) peut échouer pendant le processus de génération après avoir été convertis pour [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Cela peut se produire si **générer l’assembly de sérialisation** paramètre de génération pour la configuration de projet migré n’est pas définie sur **hors**.  
+ [!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)] les projets qui utilisent [signature différée](http://go.microsoft.com/fwlink/p/?LinkId=140992) peut échouer pendant le processus de génération après avoir été convertis pour [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Cela peut se produire si **générer l’assembly de sérialisation** paramètre de génération pour la configuration de projet migré n’est pas définie sur **hors**.  
   
 ## <a name="project-migration-and-msmqt"></a>Migration de projet et MSMQT  
  MSMQT ne fait désormais plus partie de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Pour plus d’informations sur la manière dont cela peut affecter la migration d’un projet, consultez la rubrique [suppression de MSMQT](../core/msmqt-deprecation.md).  

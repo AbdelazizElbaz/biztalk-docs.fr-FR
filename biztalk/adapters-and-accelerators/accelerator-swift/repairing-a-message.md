@@ -1,34 +1,35 @@
 ---
-title: "La réparation d’un Message | Documents Microsoft"
-ms.custom: 
+title: La réparation d’un Message | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: repairing messages
+helpviewer_keywords:
+- repairing messages
 ms.assetid: 3a61b73b-5433-4249-b580-6194ccb4aebc
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 4489e463257f811fe2c71efea49880940751c66a
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="repairing-a-message"></a>La réparation d’un Message
 Cette section décrit comment réparer un message d’échec de la validation.  
   
 ### <a name="to-repair-a-message"></a>Pour réparer un message  
   
-1.  Dans Internet Explorer, ouvrez votre site MRSR http://localhost/sites/bassite.  
+1.  Dans Internet Explorer, ouvrez votre site MRSR à http://localhost/sites/bassite.  
   
 2.  Dans la fenêtre d’accueil, cliquez sur **Documents**.  
   
-3.  Dans la fenêtre de Documents sous **bibliothèques de documents**, cliquez sur  **\<* nom du service informatique*\>**_** Réparateur **.  
+3.  Dans la fenêtre de Documents sous **bibliothèques de documents**, cliquez sur  **\< *nom du service informatique*\>**_**réparateur**.  
   
 4.  Dans le \< *nom du service informatique*\>_Repair fenêtre, cliquez sur **boîte de réception**.  
   

@@ -1,11 +1,11 @@
 ---
-title: "À l’aide du suivi d’événements pour Windows5 | Documents Microsoft"
-ms.custom: 
+title: À l’aide du suivi d’événements pour Windows5 | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ETW
@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Event Tracing for Windows, components
 - BTAPeopleSoftTrace command
 ms.assetid: 330ef84b-5e2a-4b79-85a9-72271eb489d2
-caps.latest.revision: "10"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 60a317dabd31bc1a6f37645c6b3fb2ce25d6de43
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="using-event-tracing-for-windows"></a>À l’aide d’événements de suivi pour Windows
 L'adaptateur BizTalk pour PeopleSoft Enterprise consigne les erreurs, avertissements et messages d'information dans l'Observateur d'événements Windows. Vous pouvez visualiser des messages de suivi supplémentaires à l'aide de l'outil Suivi d’événements pour Windows (ETW). Lorsqu'ETW est activé, l'outil crée un fichier *.etl pour recevoir les messages. Le fichier est au format binaire et doit être converti pour être lu. Pour cela, vous devez disposer d’une application consommateur capable d’interpréter le \*fichier .etl, par exemple, tracerpt.exe ou tracedmp.exe.  
@@ -80,13 +80,13 @@ BTAPeopleSoftTrace <Trace element> -stop
   
     -   **-castDetailsTransmit**  
   
-    -   **-émetteur**  
+    -   **-transmitter**  
   
     -   **-castDetailsReceive**  
   
-    -   **-récepteur**  
+    -   **-receiver**  
   
-    -   **-gestion**  
+    -   **-management**  
   
     -   **-start, - stop**: activer ou désactiver le fournisseur.  
   
@@ -98,7 +98,7 @@ BTAPeopleSoftTrace <Trace element> -stop
   
 -   **Fichier journal**: nom du fichier journal (la valeur par défaut s’agit de C:\rtlog.etl).  
   
- Exemple :  
+ Par exemple :  
   
 ```  
 BTAPeopleSoftTrace -transmitter -start -cir 10 -rt C:\log\mylog.etl  

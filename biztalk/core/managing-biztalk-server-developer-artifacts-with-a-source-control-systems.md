@@ -1,22 +1,22 @@
 ---
-title: "Systèmes de contrôle de la gestion des artefacts de développement de BizTalk Server avec une Source | Documents Microsoft"
-ms.custom: 
+title: Systèmes de contrôle de la gestion des artefacts de développement de BizTalk Server avec une Source | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ce25b112-38c9-40c8-9a5f-a2855572aabb
-caps.latest.revision: "12"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 829749911bd4f3ca6aee1da42578a1aac28db7ae
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="managing-biztalk-server-developer-artifacts-with-a-source-control-systems"></a>Gestion des artefacts de développement BizTalk Server avec un système de contrôle de code source
 L'une des priorités essentielles est de protéger votre projet BizTalk de pannes systèmes inattendues. Pour ce faire, l'une des méthodes de protection des fichiers d'un projet consiste à utiliser un système de contrôle de code source, tel que Team Foundation Server Source Control et Microsoft Visual SourceSafe. Cette rubrique décrit certaines stratégies élémentaires concernant l'organisation des projets pour qu'ils fonctionnent au mieux avec tout système de contrôle de code source, et présente des suggestions d'utilisation de Visual SourceSafe.  
@@ -104,7 +104,7 @@ L'une des priorités essentielles est de protéger votre projet BizTalk de panne
   
 5.  Ajoutez les éléments suivants à la fin de la liste des fichiers binaires. Vérifiez que des points-virgules se trouvent bien entre chaque type de fichier.  
   
-     *.btm ; \*.btp ; \*.xsd ; \*.odx  
+     *.btm;\*.btp;\*.xsd;\*.odx  
   
 6.  Cliquez sur **OK**.  
   
@@ -127,7 +127,7 @@ L'une des priorités essentielles est de protéger votre projet BizTalk de panne
 ### <a name="checking-in-intermediate-versions"></a>Archivage des versions intermédiaires  
  L'autre méthode d'archivage des fichiers est l'archivage des versions « intermédiaires ». Dans cette approche, une version intermédiaire n’a pas encore été atteint les tests fonctionnels et peut être considérée comme « entre les builds ». Cela n’est généralement pas une approche recommandée, car il s’arrête au principe général de toujours disposer d’une version pouvant être générée dans le système de contrôle de code source. En revanche, certaines équipes préfèrent cette approche car elle permet aux développeurs d'utiliser le système de contrôle du code source afin d'archiver et de restaurer des versions sans avoir besoin de répondre aux critères d'archivage d'une génération formelle.  
   
- Si l'archivage des versions intermédiaires est requis, vous ne devez pas supposer que le système de contrôle du code source contient une version pouvant être générée, mais plutôt faire la distinction entre les versions intermédiaires et les versions de génération. Visual SourceSafe vous permet d'effectuer cet archivage soit automatiquement soit à partir du processus. Exemple :  
+ Si l'archivage des versions intermédiaires est requis, vous ne devez pas supposer que le système de contrôle du code source contient une version pouvant être générée, mais plutôt faire la distinction entre les versions intermédiaires et les versions de génération. Visual SourceSafe vous permet d'effectuer cet archivage soit automatiquement soit à partir du processus. Par exemple :  
   
 -   Les développeurs signalent au gestionnaire de génération lorsqu'une version pouvant être générée est ajoutée à Visual SourceSafe.  
   

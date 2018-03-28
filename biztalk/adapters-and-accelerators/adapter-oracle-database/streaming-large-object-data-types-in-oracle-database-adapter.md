@@ -1,11 +1,11 @@
 ---
-title: "Types de données dans la carte de base de données Oracle de diffusion en continu | Documents Microsoft"
-ms.custom: 
+title: Types de données dans la carte de base de données Oracle de diffusion en continu | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - streaming, support in the WCF service model
@@ -13,15 +13,15 @@ helpviewer_keywords:
 - streaming, support in BizTalk Server
 - streaming, support in the WCF channel model
 ms.assetid: c6cbe870-6794-4bf1-90c1-db65a242e8fe
-caps.latest.revision: "4"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: fda4d99eb381321139e4ed493f119f9eaf21623e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="streaming-large-object-data-types-in-oracle-database-adapter"></a>Diffusion en continu des types de données dans la carte de base de données Oracle
 Le [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] prend en charge la diffusion en continu pour les types de données Oracle LOB (large object). Avec la [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] opérations sont appelées et les réponses sont retournées en échangeant des messages SOAP. Un corps de message SOAP est composé de nœuds XML.  
@@ -54,7 +54,7 @@ Le [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] prend en charge
   
 -   Un message WCF est créé à l’aide de la méthode statique **créer** méthode **System.ServiceModel.Channels.Message**. Cette méthode a plusieurs surcharges qui prennent en charge de différentes façons de passer le corps du message. Un message WCF peut être créé en passant le corps de message à l’aide de :  
   
-    -   A **System.Xml.XmlReader**, ou  
+    -   A **System.Xml.XmlReader**, or  
   
     -   A **System.ServiceModel.Channels.BodyWriter**.  
   
@@ -127,4 +127,4 @@ Le [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] prend en charge
 |Opération de POLLINGSTMT|Pris en charge|Pris en charge|L’adaptateur WCF-Custom utilise un **XmlDictionaryWriter** pour consommer le message de demande (entrant), afin de bout en bout-valeur de nœud de diffusion en continu pour les types de données LOB est pris en charge.|  
   
 ## <a name="see-also"></a>Voir aussi  
-[Développer vos applications de base de données Oracle](../../adapters-and-accelerators/adapter-oracle-database/develop-your-oracle-database-applications.md)
+[Développer votre application Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/develop-your-oracle-database-applications.md)

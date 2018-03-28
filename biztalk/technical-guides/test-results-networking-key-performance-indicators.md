@@ -1,22 +1,22 @@
 ---
-title: "Résultats des tests : Indicateurs de Performance clés de la mise en réseau | Documents Microsoft"
-ms.custom: 
+title: 'Résultats des tests : Indicateurs de Performance clés de la mise en réseau | Documents Microsoft'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9bdbc2df-9d19-4ae8-b540-ec1b9a7cdbe9
-caps.latest.revision: "9"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 3eb4e10c739178e6cd923f65b51f982e05ab7f56
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="test-results-networking-key-performance-indicators"></a>Résultats des tests : Indicateurs de Performance clés de la mise en réseau
 Cette rubrique résume réseau performances indicateurs clés (KPI) observé sur les scénarios de test. Ces tests évaluer les performances du réseau telle que mesurée par le **\Network Interface (\*) \Bytes/s** compteur et par mesure de l’Analyseur de performances le **SQL Network Interface\Bytes Total/s (Moy.)**  retournée par le contrôleur de Test de charge VSTS 2008.  

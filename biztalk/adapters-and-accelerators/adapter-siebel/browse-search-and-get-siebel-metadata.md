@@ -1,11 +1,11 @@
 ---
-title: "Parcourir, rechercher et obtenir des métadonnées Siebel | Documents Microsoft"
-ms.custom: 
+title: Parcourir, rechercher et obtenir des métadonnées Siebel | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - metadata, retrieving
@@ -16,15 +16,15 @@ helpviewer_keywords:
 - metadata, searching
 - searching, metadata
 ms.assetid: 48fc3bb1-b949-4b8d-ab62-a41cd8c2f0a0
-caps.latest.revision: "5"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: ef1ed7d74b4e69f56c53beda8273533bb6891a55
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="browse-search-and-get-siebel-metadata"></a>Parcourir, rechercher et obtenir des métadonnées Siebel
 Le [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] surfaces des métadonnées à partir du système Siebel qui décrit la structure du message pour la communication avec un système Siebel à l’aide de l’adaptateur. Le [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] prend en charge deux interfaces de récupération des métadonnées.  
@@ -57,7 +57,7 @@ Le [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] sur
   
  Le tableau suivant répertorie les caractères spéciaux qui peuvent être utilisés pour la recherche et de leur interprétation par le [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].  
   
-|Caractère spécial|Interprétation|  
+|Caractère spécial|Interpretation|  
 |-----------------------|--------------------|  
 |? (point d’interrogation)|Correspond à exactement un caractère.<br /><br /> Par exemple, un ? correspond à AB, CA, Active Directory|  
 |* (astérisque)|Correspond à zéro ou plusieurs caractères.<br /><br /> Par exemple, A * correspond à un, AB, ABC.|  

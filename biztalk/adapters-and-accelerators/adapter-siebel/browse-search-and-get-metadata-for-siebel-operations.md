@@ -1,11 +1,11 @@
 ---
-title: "Parcourir, rechercher et obtenir des métadonnées pour les opérations Siebel | Documents Microsoft"
-ms.custom: 
+title: Parcourir, rechercher et obtenir des métadonnées pour les opérations Siebel | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - metadata, retrieving
@@ -18,15 +18,15 @@ helpviewer_keywords:
 - how to, seach metadata
 - searching, metadata
 ms.assetid: 7e474d8e-b030-47ea-b1b6-8048cddbba8a
-caps.latest.revision: "13"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 68e7d8dc1b067096f118eb1145554edf0b11f605
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="browse-search-and-get-metadata-for-siebel-operations"></a>Parcourir, rechercher et obtenir des métadonnées pour les opérations Siebel
 Cette section fournit des informations sur l’utilisation de la [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)], le [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]et le [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]. À l’aide de ces [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] composants, vous pouvez :  
@@ -42,7 +42,7 @@ Cette section fournit des informations sur l’utilisation de la [!INCLUDE[consu
 > [!NOTE]
 >  Le [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], le [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]et le [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] présentes essentiellement la même interface lors de la navigation et de la recherche pour les opérations, afin des trois composants sont traités dans les rubriques mêmes.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Configuration requise  
  Vous devez vous connecter à un système Siebel avant de pouvoir parcourir, rechercher ou récupérer les métadonnées pour les opérations de la cible. Pour plus d’informations sur la façon de se connecter à un système Siebel lorsque vous utilisez la [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], le [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)], ou [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)], consultez [se connecter au système Siebel dans Visual Studio](../../adapters-and-accelerators/adapter-siebel/connect-to-the-siebel-system-in-visual-studio.md).  
   
 ## <a name="browsing-metadata"></a>Exploration des métadonnées  
@@ -95,7 +95,7 @@ Cette section fournit des informations sur l’utilisation de la [!INCLUDE[consu
   
  Le tableau suivant répertorie les caractères spéciaux qui peuvent être utilisés pour la recherche et de leur interprétation par le [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].  
   
-|Caractère spécial|Interprétation|  
+|Caractère spécial|Interpretation|  
 |-----------------------|--------------------|  
 |? (point d’interrogation)|Correspond à exactement un caractère<br /><br /> Par exemple, un ? correspond à AB, CA, Active Directory.|  
 |* (astérisque)|Correspond à zéro ou plusieurs caractères.<br /><br /> Par exemple, A * correspond à un, AB, ABC.|  

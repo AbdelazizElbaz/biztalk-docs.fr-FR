@@ -1,11 +1,11 @@
 ---
 title: Conversions de Type XLANG-s en BPEL4WS | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - XLANG/s
@@ -13,15 +13,15 @@ helpviewer_keywords:
 - XLANG/s, BPEL4WS
 - XLANG/s, converting
 ms.assetid: a35d4dba-9344-43c8-86e6-a373a4452579
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 02412b86b8649b73cadb4715793f085682a1de74
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="xlang-s-to-bpel4ws-type-conversions"></a>XLANG-s pour les Conversions de Type BPEL4WS
 Les tableaux suivants présentent les conversions entre diverses constructions XLANG/s et BPEL4WS.  
@@ -60,7 +60,7 @@ Les tableaux suivants présentent les conversions entre diverses constructions X
 |Unaire +|Ignoré|  
 |Opérateur unaire -|Moins unaire XPath|  
 |Unaire !|Fonction XPath not()|  
-|Binaire & &, &#124; &#124;|Opérateurs XPath 'and', 'or'|  
+|Binaire & &,&#124;&#124;|Opérateurs XPath 'and', 'or'|  
 |Binaire ==, !=, <=, <, >=, >|XPath '=', '! =', ' < =', ' <', ' > =', ' >' opérateurs|  
 |Binaire +, -, *, % avec les deux opérandes de type intégral|Opérateurs XPath '+', '-', '*', 'mod'|  
   
@@ -86,7 +86,7 @@ Les tableaux suivants présentent les conversions entre diverses constructions X
   
 -   Binaire <=, <, >=, > avec opérandes de type non chaîne  
   
--   Opérateurs de bits &, ^, &#124;  
+-   Opérateurs de bits &, ^,&#124;  
   
 -   Opérateurs de décalage <<, >>  
   

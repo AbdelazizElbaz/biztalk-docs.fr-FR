@@ -1,11 +1,11 @@
 ---
 title: Comment rechercher des abonnements | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Query tab [Administration Console], subscriptions
@@ -13,20 +13,20 @@ helpviewer_keywords:
 - subscriptions, viewing
 - subscriptions, searching
 ms.assetid: 95f8fd20-2750-412b-a67b-18976e7706e2
-caps.latest.revision: "15"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 2f1830a4c1dddfa3dcfc2a1177b69410dd8ee0ac
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-search-for-subscriptions"></a>Recherche d'abonnements
 Vous pouvez utiliser la **requête** onglet dans la Console Administration de BizTalk Server pour rechercher des abonnements. Cela peut s'avérer utile pour vérifier tous les abonnements définis dans le système. Lors du dépannage des échecs de routage, vous pouvez vérifier les abonnements pour identifier ceux qui seraient mal configurés et causeraient l'échec du routage.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Configuration requise  
  Pour exécuter cette procédure, vous devez être connecté en tant que membre du groupe des opérateurs de BizTalk Server.  
   
 ### <a name="to-search-for-subscriptions"></a>Pour rechercher des abonnements  
@@ -53,4 +53,4 @@ Vous pouvez utiliser la **requête** onglet dans la Console Administration de Bi
 7.  Continuez à ajouter des lignes supplémentaires à la requête si nécessaire, en effectuant le **nom de champ**, **opérateur**, et **valeurs** colonnes, puis cliquez sur **exécuter Requête**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide de l’onglet requête de la Console Administration](../core/using-the-administration-console-query-tab.md)
+ [Utilisation de l’onglet Requête de la console Administration](../core/using-the-administration-console-query-tab.md)

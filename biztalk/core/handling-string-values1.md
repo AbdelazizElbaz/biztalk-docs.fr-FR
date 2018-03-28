@@ -1,11 +1,11 @@
 ---
-title: "La gestion des chaînes Values1 | Documents Microsoft"
-ms.custom: 
+title: La gestion des chaînes Values1 | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - jdearglist.txt, configuring strings
@@ -13,15 +13,15 @@ helpviewer_keywords:
 - strings, configuring
 - strings, right-justified
 ms.assetid: a180b818-1009-45f5-a503-d10ed7dd27fc
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 6f32b29b9a8688fe8402730c1db8f12e42a67bab
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="handling-string-values"></a>Gestion des valeurs de chaîne
 Cette rubrique décrit la configuration de certains arguments de chaîne comme alignés à droite (et remplis à gauche).  
@@ -70,13 +70,13 @@ Cette rubrique décrit la configuration de certains arguments de chaîne comme a
 <SourceModule>.<BusinessFunction>.<Argument>  
 ```  
   
- Exemple :  
+ Par exemple :  
   
 ```  
 B4200310.F4211FSBeginDoc.szBusinessUnit  
 ```  
   
- Pour un ensemble de fonctions commerciales appartenant au même module commercial, des arguments de nom similaire (du même type) sont partagés entre plusieurs ou toutes les fonctions commerciales. Vous pouvez utiliser le caractère générique astérisque (*) au lieu du nom de fonction commerciale. Exemple :  
+ Pour un ensemble de fonctions commerciales appartenant au même module commercial, des arguments de nom similaire (du même type) sont partagés entre plusieurs ou toutes les fonctions commerciales. Vous pouvez utiliser le caractère générique astérisque (*) au lieu du nom de fonction commerciale. Par exemple :  
   
 ```  
 B4200310.*.szBusinessUnit  
@@ -87,4 +87,4 @@ B4200310.*.szBusinessUnit
   
 ## <a name="see-also"></a>Voir aussi  
  [Paramètre Justification des chaînes dans Jdearglist](../core/setting-string-justification-in-jdearglist.md)   
- [Annexe a : les Types de données](../core/appendix-a-data-types.md)
+ [Annexe A : Types de données](../core/appendix-a-data-types.md)

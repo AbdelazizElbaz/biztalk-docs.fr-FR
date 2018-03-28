@@ -1,22 +1,22 @@
 ---
 title: AS2 via File (exemple BizTalk Server) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1fed2344-8181-4c85-a2ef-a421fc40dce1
-caps.latest.revision: "14"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 14d4c077cce861e94f6c2cdc0bfc6f4a14669340
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="as2-over-file-biztalk-server-sample"></a>AS2 via FILE (exemple BizTalk Server)
 L'exemple AS2 via FILE présente la réception d'un message AS2 via un emplacement de réception FILE. Cela vous permet d'utiliser un adaptateur FILE pour recevoir le message AS2, plutôt qu'un adaptateur HTTP normalement utilisé. Pour ce faire, cette solution écrit les en-têtes HTTP du message AS2 dans la propriété de contexte InboundHTTPHeaders, comme requis par le Décodeur AS2.  
@@ -122,7 +122,7 @@ L'exemple AS2 via FILE présente la réception d'un message AS2 via un emplaceme
     |Dossier de réception|[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\AS2\AS2 Over File\Out|  
     |Masque de fichier|%IDmessage%.xml|  
     |Pipeline d’envoi|PassThrough|  
-    |Filtrer|BTS.REceivePortName == AS2OverFile_Receive|  
+    |Filtre|BTS.REceivePortName == AS2OverFile_Receive|  
   
 5.  Dans le nœud Ports d’envoi, cliquez sur le port d’envoi AS2OverFile_Send, puis cliquez sur **Démarrer**.  
   
@@ -142,7 +142,7 @@ L'exemple AS2 via FILE présente la réception d'un message AS2 via un emplaceme
 3.  Ouvrez le message d’entrée SampleMessage.txt dans un éditeur de texte et ouvrez le message de sortie \<GUID\>.xml dans un éditeur de texte. Vérifiez que le message d'entrée SampleMessage.txt a des en-têtes HTTP (et AS2) et que le message de sortie n'a pas d'en-têtes HTTP.  
   
 ## <a name="classes-or-methods-used-in-this-sample"></a>Classes ou méthodes utilisées dans l'exemple  
- Aucune  
+ Aucun  
   
 ## <a name="see-also"></a>Voir aussi  
  [EDI et AS2 (dossier d’exemples BizTalk Server)](../core/edi-and-as2-biztalk-server-samples-folder.md)   

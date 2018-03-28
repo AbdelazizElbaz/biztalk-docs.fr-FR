@@ -1,25 +1,25 @@
 ---
-title: "Fichier d’adaptateur (exemple BizTalk Server) | Documents Microsoft"
-ms.custom: 
+title: Fichier d’adaptateur (exemple BizTalk Server) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - examples, File adapters
 - File adapters, examples
 ms.assetid: d59cecb4-6353-44d5-b8d6-316446758536
-caps.latest.revision: "46"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: de68c57c6b435f85edf630a7b224c5d58ffd0cd6
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="file-adapter-biztalk-server-sample"></a>Adaptateur file (exemple BizTalk Server)
 L’exemple d’adaptateur de fichier est écrit en Microsoft Visual c# .NET pour fonctionner avec Microsoft BizTalk Server. Il fournit un code pour créer un adaptateur dynamique ou un adaptateur statique.  La procédure suivante ne présente cependant que l'adaptateur statique. Un adaptateur statique est un adaptateur comprenant un jeu statique de schémas et aucune interface utilisateur personnalisée. Un adaptateur dynamique possède une interface utilisateur personnalisée et, potentiellement, un jeu dynamique de schémas. Les adaptateurs statiques et dynamiques utilisent tous deux l'assistant Ajout d'adaptateur pour ajouter leurs schémas à un projet BizTalk.  
@@ -314,7 +314,7 @@ L’exemple d’adaptateur de fichier est écrit en Microsoft Visual c# .NET pou
   
 2.  Accédez à  *\<lecteur\>*:**\Temp\Receive** et collez le fichier Instance.xml dans le dossier.  
   
-     Si la transmission et de réception adaptateurs fonctionnent, le fichier doit se déplacer le  *\<lecteur\>*:**\Temp\Receive** dossier pour le  *\<lecteur \>* :**\Temp\Send** dossier.  
+     Si la transmission et de réception adaptateurs fonctionnent, le fichier doit se déplacer le  *\<lecteur\>*:**\Temp\Receive** dossier pour le *\<lecteur \>*:**\Temp\Send** dossier.  
   
 ##### <a name="to-test-the-sample-add-adapter-wizard-functionality-for-the-sample-static-adapter"></a>Pour tester l'exemple de fonctionnalité d'assistant Ajout d'adaptateur pour l'exemple d'adaptateur statique  
   

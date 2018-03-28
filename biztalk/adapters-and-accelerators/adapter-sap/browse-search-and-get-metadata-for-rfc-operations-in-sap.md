@@ -1,11 +1,11 @@
 ---
-title: "Parcourir, rechercher et obtenir des métadonnées pour les opérations de RFC dans SAP | Documents Microsoft"
-ms.custom: 
+title: Parcourir, rechercher et obtenir des métadonnées pour les opérations de RFC dans SAP | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - browsing, RFCs
@@ -16,15 +16,15 @@ helpviewer_keywords:
 - searching, RFCs
 - WCF client, generating a
 ms.assetid: 68d9e7b2-b8ab-47f5-afda-2811f68e834b
-caps.latest.revision: "13"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 3aae3cb0963b4ccbc5c3e891af70706587f8e4b9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="browse-search-and-get-metadata-for-rfc-operations-in-sap"></a>Parcourir, rechercher et obtenir des métadonnées pour les opérations de RFC dans SAP
 Cette section fournit des instructions sur la façon de parcourir, rechercher et récupérer les métadonnées à partir de SAP pour les opérations de RFC à l’aide de [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)], [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)], ou [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]. La plupart des instructions est les même pour toute l’interface utilisateur de trois. Là où les procédures d’applicables, distinctes sont fournies pour l’interface utilisateur approprié.  
@@ -74,7 +74,7 @@ Cette section fournit des instructions sur la façon de parcourir, rechercher et
   
  Le tableau suivant répertorie les caractères spéciaux qui peuvent être utilisés pour la recherche et de leur interprétation par le [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].  
   
-|Caractère spécial|Interprétation|  
+|Caractère spécial|Interpretation|  
 |-----------------------|--------------------|  
 |+ (plus)|Correspond à exactement un caractère.<br /><br /> Par exemple, A + correspond à AB, CA, Active Directory|  
 |* (astérisque)|Correspond à zéro ou plusieurs caractères.<br /><br /> Par exemple, A * correspond à un, AB, ABC.|  
@@ -167,4 +167,4 @@ Cette section fournit des instructions sur la façon de parcourir, rechercher et
 5.  Cliquez sur **OK**. Le [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] enregistre la classe de client WCF (ou l’interface de service WCF) et le code d’assistance pour les opérations et les catégories que vous avez sélectionnées dans votre répertoire de projet. Par défaut, un fichier de configuration est également enregistré. Légèrement différents fichiers sont générés pour les opérations entrantes et sortantes ; Pour plus d’informations, consultez [générer un client WCF ou un contrat de service WCF pour les artefacts de solution SAP](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Obtenir les métadonnées pour les opérations de SAP dans Visual Studio](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md)
+ [Obtenir les métadonnées pour les opérations SAP dans Visual Studio](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md)

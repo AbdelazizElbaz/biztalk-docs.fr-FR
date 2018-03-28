@@ -1,23 +1,23 @@
 ---
-title: "Exemples d’instruction EXEC dans l’adaptateur dans BizTalk mySAP | Documents Microsoft"
-description: "Exemples EXEC et les exemples à l’aide de l’adaptateur mySAP dans le Pack de l’adaptateur BizTalk (LOB)"
-ms.custom: 
+title: Exemples d’instruction EXEC dans l’adaptateur dans BizTalk mySAP | Documents Microsoft
+description: Exemples EXEC et les exemples à l’aide de l’adaptateur mySAP dans le Pack de l’adaptateur BizTalk (LOB)
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ad2691f4-34bb-423c-9b3e-4abe2d55ddac
-caps.latest.revision: "5"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 6eaae930d7d94d24bac9d484957ccf02718af60f
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="examples-for-exec-statement"></a>Exemples de l’instruction EXEC
 Cette rubrique montre un exemple de syntaxe pour les différentes instructions EXEC.
@@ -86,7 +86,7 @@ Cette rubrique montre un exemple de syntaxe pour les différentes instructions E
 ## <a name="support-for-complex-parameter-types"></a>Prise en charge des Types de paramètres complexes  
  Il existe deux façons pour prendre en charge des paramètres complexes RFC (tables et des structures) lorsque vous utilisez le [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]:  
   
--   Indiquez la valeur XML inline pour le type complexe. Cet exemple montre comment passer de XML pour le type de paramètre complexe *champs*. Dans l’exemple suivant,  *@fields*  est un paramètre table.  
+-   Indiquez la valeur XML inline pour le type complexe. Cet exemple montre comment passer de XML pour le type de paramètre complexe *champs*. Dans l’exemple suivant, *@fields* est un paramètre table.  
   
     ```  
     exec rfc_read_table @query_table='BNKA', @fields='<FIELDS xmlns='http://Microsoft.LobServices.Sap/2007/03/Rfc/'>  

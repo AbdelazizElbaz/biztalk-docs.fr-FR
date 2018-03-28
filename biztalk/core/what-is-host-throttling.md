@@ -1,26 +1,26 @@
 ---
-title: "Qu'est-ce que la limitation des hôtes ? | Microsoft Docs"
-ms.custom: 
+title: Qu'est-ce que la limitation des hôtes ? | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - host throttling, outbound
 - host throttling, inbound
 - host throttling, about host throttling
 ms.assetid: 36d1818b-c8a2-4f23-bfb3-c034ee242f69
-caps.latest.revision: "29"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: c4730a93b6491f53fc06004ca8bb0dcb0d970cc7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="what-is-host-throttling"></a>Qu'est-ce que la limitation des hôtes ?
 La plupart du traitement qui se déroule sur un serveur BizTalk se produit dans une entité logique appelée instance de l'hôte BizTalk Server, qui est un processus exécuté en tant que service Windows ou que processus hôte isolé sur le serveur BizTalk. Pour gérer l'utilisation des ressources par un processus de l'instance de l'hôte, BizTalk Server utilise un mécanisme de limitation réglable qui régit le flux et le traitement de messages sur une instance de l'hôte.  

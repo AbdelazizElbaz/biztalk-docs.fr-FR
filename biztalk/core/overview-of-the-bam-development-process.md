@@ -1,22 +1,22 @@
 ---
-title: "Vue d’ensemble du processus de développement BAM | Documents Microsoft"
-ms.custom: 
+title: Vue d’ensemble du processus de développement BAM | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 098db3f6-2a61-4cc8-88c7-2299c2e2a55e
-caps.latest.revision: "14"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 78ae5f1c61f2a00359e88acd75c093e2b6c2fb91
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="overview-of-the-bam-development-process"></a>Vue d'ensemble du processus de développement BAM
 Cette rubrique décrit le processus de développement ainsi que la base de données et les tables où sont stockées les données BAM.  
@@ -48,7 +48,7 @@ Cette rubrique décrit le processus de développement ainsi que la base de donn�
 1.  Créez un modèle d'observation à l'aide du complément BAM pour Excel.  
   
     > [!NOTE]
-    >  Exemples des étapes de cette procédure sont accessibles dans l’API BAM (exemple BizTalk Server) à [http://go.microsoft.com/fwlink/?LinkId=69968](http://go.microsoft.com/fwlink/?LinkId=69968).  
+    >  Exemples des étapes de cette procédure sont accessibles dans l’API BAM (exemple BizTalk Server) à [ http://go.microsoft.com/fwlink/?LinkId=69968 ](http://go.microsoft.com/fwlink/?LinkId=69968).  
   
 2.  Utilisez l'utilitaire de gestion de l'analyse BAM pour déployer l'activité dans la PID.  
   
@@ -60,7 +60,7 @@ Cette rubrique décrit le processus de développement ainsi que la base de donn�
   
     -   Mettre à jour les éléments de données dans l'enregistrement.  
   
-    -   Terminer l’activité et déplacer l’enregistrement dans la table BAM_\<*nom de l’activité**\>_terminée.  
+    -   Terminer l’activité et déplacer l’enregistrement dans la table BAM_\<* nom d’activité **\>_terminée.  
   
 ## <a name="where-bam-data-is-stored"></a>Espace de stockage des données BAM  
  L'analyse BAM fournit l'espace de noms EventObservation qui contient les classes EventStream utilisées dans la gestion des événements BAM.  

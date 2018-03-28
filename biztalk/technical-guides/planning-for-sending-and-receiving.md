@@ -1,22 +1,22 @@
 ---
 title: Planification pour envoyer et recevoir | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3d67e5f7-5127-4c1d-be20-8d8dbb538286
-caps.latest.revision: "2"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: ca2b87964266b77629f7fa1d1156ace3cd048e7f
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="planning-for-sending-and-receiving"></a>Planification pour envoyer et recevoir
 Presque chaque document traité par [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] est reçu par un [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] l’adaptateur de réception et envoyés à partir de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] à l’aide un [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] l’adaptateur d’envoi. Étant donné que [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] cartes figurant donc en évidence dans les [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environnement, il est important de planifier déterminer les cartes ou les accélérateurs, vous allez utiliser et la configuration de ces adaptateurs et/ou les accélérateurs.  
@@ -92,7 +92,7 @@ Presque chaque document traité par [!INCLUDE[btsBizTalkServerNoVersion](../incl
 ## <a name="biztalk-accelerators"></a>Accélérateurs BizTalk  
  Alors que les adaptateurs BizTalk adapter envoyer et recevoir des documents avec un protocole spécifique, les accélérateurs BizTalk sont conçus pour prendre en charge l’échange de documents conformément à une norme industrielle particulière. Pour obtenir la liste les accélérateurs BizTalk disponibles, consultez [accélérateurs de Microsoft BizTalk Server](http://go.microsoft.com/fwlink/?LinkId=103609) (http://go.microsoft.com/fwlink/?LinkId=103609).  
   
-##  <a name="BKMK_InternetTrans"></a>Configuration de votre domaine lors de l’exposition des Transports à Internet  
+##  <a name="BKMK_InternetTrans"></a> Configuration de votre domaine lors de l’exposition des Transports à Internet  
  Afin de faciliter l’envoi et la réception de documents entre votre organisation et les partenaires externes, il peut être nécessaire d’exposer des transports sur un site exposés au public qui est accessible à partir d’Internet. Dans ces circonstances, la configuration de domaine suivante est recommandée :  
   
 -   **Utiliser un domaine de réseau de périmètre, (également appelé zone démilitarisée (DMZ) ou sous-réseau filtré), aux serveurs de maison pour fournir d’Internet services pour votre organisation associés**  

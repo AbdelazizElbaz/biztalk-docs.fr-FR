@@ -16,7 +16,7 @@ ms.openlocfilehash: 41d02fe0b7be1f53edaac4c18cfd7717a25c3a71
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="wcf-adapter-faq-using-wcf-services"></a>FAQ sur les adaptateurs WCF : utilisation des services WCF
 ## <a name="how-does-biztalk-server-use-its-wcf-adapters-to-access-wcf-services"></a>Comment BizTalk Server utilise-t-il les adaptateurs WCF pour accéder aux services WCF ?  

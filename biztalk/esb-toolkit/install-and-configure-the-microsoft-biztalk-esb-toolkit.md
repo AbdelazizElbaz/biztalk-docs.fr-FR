@@ -1,23 +1,23 @@
 ---
 title: Installer et configurer Microsoft BizTalk ESB Toolkit | Documents Microsoft
-description: "Par étapes des instructions pour installer et configurer la boîte à outils ESB dans BizTalk Server"
-caps.latest.revision: "8"
+description: Par étapes des instructions pour installer et configurer la boîte à outils ESB dans BizTalk Server
+caps.latest.revision: ''
 author: MandiOhlinger
 manager: anneta
-ms.custom: 
+ms.custom: ''
 ms.date: 08/10/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 698843f7-8361-4d02-9278-0e66f2a9f472
 ms.author: mandia
 ms.openlocfilehash: 33805fe58298e4f4729161a62742d3b204996b00
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="install-and-configure-the-microsoft-biztalk-esb-toolkit"></a>Installer et configurer Microsoft BizTalk ESB Toolkit
 En commençant par BizTalk Server 2013 et les versions plus récentes, [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] est intégré à la [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] le programme d’installation. Cette rubrique vous montre comment installer et configurer [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]et inclut également un lien écrit par la Communauté pour mettre à niveau ESB Toolkit.  
@@ -25,7 +25,7 @@ En commençant par BizTalk Server 2013 et les versions plus récentes, [!INCLUDE
 > [!IMPORTANT]
 >  Vous devez avoir installé BizTalk Server avant de commencer à installer [!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)].  
   
-## <a name="install"></a>Install 
+## <a name="install"></a>Installation 
   
 1.  Exécutez le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] du fichier setup.exe en tant qu’administrateur. Dans le programme d’installation, sélectionnez **installer [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]** .  
   
@@ -100,7 +100,7 @@ Un fichier journal d’installation est créé, semblable à « C:\Users\yourUs
     -   Sélectionnez **appliquer la Configuration** pour créer les applications que vous avez sélectionné. Vérifiez que les applications sont créées dans la console Administration de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
 ## <a name="upgrade-esb-toolkit--community-addition"></a>Mise à niveau d’ESB Toolkit : ajout de la Communauté  
- [Mise à niveau sur place d’ESB Toolkit 2.1 vers 2.2](http://www.brianloesgen.com/blog/2013/10/10/in-place-upgrade-of-esb-toolkit-21-to-22.html) (http://www.brianloesgen.com/blog/2013/10/10/in-place-upgrade-of-esb-toolkit-21-to-22.html)
+ [Mise à niveau d’ESB Toolkit 2.1 vers 2.2 place](http://www.brianloesgen.com/blog/2013/10/10/in-place-upgrade-of-esb-toolkit-21-to-22.html) ()http://www.brianloesgen.com/blog/2013/10/10/in-place-upgrade-of-esb-toolkit-21-to-22.html)
 
 ## <a name="see-also"></a>Voir aussi
 [Dépanner des problèmes d’installation et courantes erreurs & résolutions](troubleshooting-the-biztalk-esb-toolkit.md)

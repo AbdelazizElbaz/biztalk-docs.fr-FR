@@ -1,11 +1,11 @@
 ---
-title: "Comment rechercher des Instances de Service en cours d’exécution | Documents Microsoft"
-ms.custom: 
+title: Comment rechercher des Instances de Service en cours d’exécution | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - service instances, viewing
@@ -15,20 +15,20 @@ helpviewer_keywords:
 - service instances, searching
 - service instances, running
 ms.assetid: fc65bf33-c013-4e6a-b9fd-b4536811e7b4
-caps.latest.revision: "16"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 8873747b39d6fa178b813d361b72ccf24f44b54a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-search-for-running-service-instances"></a>Recherche des instances de service en cours d'exécution
 Vous pouvez utiliser la **requête** onglet dans la Console Administration de BizTalk Server pour rechercher une mise en attente, active, dans le point d’arrêt, planifié et une nouvelle tentative de l’instance de service.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Configuration requise  
  Pour exécuter cette procédure, vous devez être connecté en tant que membre du groupe des opérateurs de BizTalk Server.  
   
 ### <a name="to-search-for-running-service-instances"></a>Pour rechercher les instances de service en cours d'exécution  
@@ -61,4 +61,4 @@ Vous pouvez utiliser la **requête** onglet dans la Console Administration de Bi
 7.  Continuez à ajouter des lignes supplémentaires à la requête si nécessaire, en effectuant le **nom de champ**, **opérateur**, et **valeurs** colonnes, puis cliquez sur **exécuter Requête**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide de l’onglet requête de la Console Administration](../core/using-the-administration-console-query-tab.md)
+ [Utilisation de l’onglet Requête de la console Administration](../core/using-the-administration-console-query-tab.md)

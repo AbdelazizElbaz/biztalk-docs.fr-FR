@@ -1,11 +1,11 @@
 ---
-title: "Comment arrêter les Instances d’Orchestration suspendues | Documents Microsoft"
-ms.custom: 
+title: Comment arrêter les Instances d’Orchestration suspendues | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipelines, terminating [HAT]
@@ -15,15 +15,15 @@ helpviewer_keywords:
 - HAT, terminiating orchestrations
 - orchestrations, terminating [HAT]
 ms.assetid: b5d44cce-b05c-47f9-9015-5b10c2312bf1
-caps.latest.revision: "17"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 5dc0160be5aeeef43b9595953893b4ea1af82c62
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-terminate-suspended-orchestration-instances"></a>Arrêt des instances de l'orchestration suspendues
 Vous pouvez terminer des instances d'orchestration suspendues ou des ports à partir des résultats de la requête ou du volet de visualisation dans la console Administration de BizTalk Server.  
@@ -31,7 +31,7 @@ Vous pouvez terminer des instances d'orchestration suspendues ou des ports à pa
 > [!NOTE]
 >  Chaque instance d’un livraison chronologique des messages un port d’envoi peut avoir plusieurs messages sont associés. Afin d'éviter une perte des données ou un arrêt accidentel, vérifiez l'ensemble de ces associations avant de mettre fin à une instance.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Configuration requise  
  Vous devez être connecté en tant que membre du groupe opérateurs BizTalk Server pour effectuer cette procédure.  
   
 ### <a name="to-terminate-suspended-orchestration-instances"></a>Pour terminer les instances de l'orchestration suspendues  
@@ -55,4 +55,4 @@ Vous pouvez terminer des instances d'orchestration suspendues ou des ports à pa
 7.  Dans la liste de résultats de requête, cliquez sur l’instance d’orchestration ou le groupe d’instances que vous souhaitez terminer, puis cliquez sur **arrêter l’Instance** ou **arrêter les Instances**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Enquête sur les échecs de messages, de Port et d’Orchestration](../core/investigating-orchestration-port-and-message-failures.md)
+ [Examen des échecs relatifs aux orchestrations, aux ports et aux messages](../core/investigating-orchestration-port-and-message-failures.md)

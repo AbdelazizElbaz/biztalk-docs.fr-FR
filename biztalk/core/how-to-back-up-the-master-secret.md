@@ -1,26 +1,26 @@
 ---
 title: Comment sauvegarder le Secret principal | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managing [Master Secret server], backing up
 - backing up, Master Secret server
 - Master Secret server, backing up
 ms.assetid: 22c23f66-b7df-4379-8a9f-065406ba8aa8
-caps.latest.revision: "14"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 185f3ea674015e02cac2bdaa785c2ee06e67db65
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-back-up-the-master-secret"></a>Comment sauvegarder le Secret principal
 Vous pouvez sauvegarder le secret principal du serveur de secret principal dans un système de fichiers NTFS ou sur un média amovible, tel qu'une disquette.  
@@ -46,7 +46,7 @@ Vous pouvez sauvegarder le secret principal du serveur de secret principal dans 
   
 3.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur\>*: \Program Files\Enterprise Single Sign-On.  
   
-4.  Type **ssoconfig – backupSecret  *\<fichier de sauvegarde\>***, où  *\<fichier de sauvegarde\>*  est le chemin d’accès et le nom de le fichier où le secret principal sera sauvegardé. Par exemple, A:\ssobackup.bak  
+4.  Type ** ssoconfig – backupSecret *\<fichier de sauvegarde\>***, où *\<fichier de sauvegarde\>* est le chemin d’accès et le nom du fichier où le secret principal sera sauvegardé. Par exemple, A:\ssobackup.bak  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  

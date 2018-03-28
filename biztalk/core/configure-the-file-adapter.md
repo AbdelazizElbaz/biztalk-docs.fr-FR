@@ -1,26 +1,26 @@
 ---
-title: "Configurer l’adaptateur File | Documents Microsoft"
-ms.custom: 
+title: Configurer l’adaptateur File | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - File adapters, configuring
 - configuring [File adapters], about configuring File adapters
 - configuring [File adapters]
 ms.assetid: 1e0c7e20-80f8-469b-b423-34a2b90f9ec3
-caps.latest.revision: "13"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: d2f2de6a4c4cae93db90f0fb2cfc79321bfc7b3e
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configure-the-file-adapter"></a>Configurer l’adaptateur de fichier
 Comment configurer l’adaptateur de fichier, de lire les recommandations de sécurité et d’afficher les autorisations requises.

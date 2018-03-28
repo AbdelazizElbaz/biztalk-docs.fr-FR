@@ -1,22 +1,22 @@
 ---
-title: "Didacticiel 1 : Développer l’adaptateur Echo | Documents Microsoft"
-ms.custom: 
+title: 'Didacticiel 1 : Développer l’adaptateur Echo | Documents Microsoft'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ffb0df3c-cd07-4bcf-af69-971065081fd6
-caps.latest.revision: "24"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 484452dc4ee624f4fa41e9387098f6f792c1de28
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="tutorial-1-develop-the-echo-adapter"></a>Didacticiel 1 : Développer l’adaptateur d’écho
 Dans ce didacticiel, vous allez développer un adaptateur fonctionnel à l’aide du [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]. L’adaptateur permet de simuler les opérations d’un système métier-fictive pour illustrer la plupart des fonctionnalités clés de la WCF LOB Adapter SDK, notamment :  
@@ -73,7 +73,7 @@ EchoMainCategory
 |--------------|------------------|-------------------|---------------------|  
 |Compter|Divers|System.Int32|Utilisé pour l’entrée du nombre de fois spécifié au client appelant d’écho.<br /><br /> Par défaut = 5|  
 |EnableConnectionPooling|Divers|System.Boolean|Utilisé pour activer ou désactiver le regroupement de connexions pour la carte.<br /><br /> Par défaut = true, ce qui signifie que que le regroupement de connexions est activé dans le moteur d’exécution de la [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)].|  
-|InboundFileFilter|Trafic entrant|System.String|Utilisé pour le scénario de trafic entrant et utilisé par le FileSystemWatcher pour analyser les fichiers de l’extension.<br /><br /> Par défaut = * .txt|  
+|InboundFileFilter|Trafic entrant|System.String|Utilisé pour le scénario de trafic entrant et utilisé par le FileSystemWatcher pour analyser les fichiers de l’extension.<br /><br /> Default=*.txt|  
 |InboundFileSystemWatcherFolder|Trafic entrant|System.String|Utilisé pour définir le dossier où les fichiers sont supprimés pour FileSystemWatcher déclencher la notification à l’adaptateur.<br /><br /> Par défaut = c:\inbound\watcher.|  
   
 ## <a name="connection-properties"></a>Propriétés de connexion  
@@ -88,7 +88,7 @@ EchoMainCategory
 ## <a name="interface-implementation"></a>Implémentation de l’interface  
  Le [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] définit une collection de classes et interfaces qui doivent être implémentées pour prendre en charge des fonctionnalités spécifiques de la carte. Le tableau suivant décrit ces classes et interfaces, leurs descriptions et indique quand les implémenter.  
   
-|**Classe/Interface**|**Quand mettre en œuvre**|**Description**|  
+|**Class/Interface**|**Quand mettre en œuvre**|**Description**|  
 |--------------------------|---------------------------|---------------------|  
 |Microsoft.ServiceModel.Channels.Common.IConnection|Si vous avez besoin définir la connexion au système cible.|Définit la connexion au système cible.|  
 |Microsoft.ServiceModel.Channels.Common.IConnectionFactory|Si vous avez besoin créer une connexion au système cible.|Crée la connexion au système cible.|  
@@ -107,7 +107,7 @@ EchoMainCategory
   
 -   {Projectname} BindingElementExtensionElement.cs  
   
--   {Projectname} ConnectionUri.cs  
+-   {Projectname}ConnectionUri.cs  
   
  Pour plus d’informations sur la marche à suivre, consultez [étape 2 : classer l’adaptateur et les propriétés de connexion](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-categorize-the-adapter-and-connection-properties.md).  
   

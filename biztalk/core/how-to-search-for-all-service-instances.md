@@ -1,11 +1,11 @@
 ---
 title: Recherche de toutes les Instances de Service | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - service instances, Query tab [Administration Console]
@@ -14,15 +14,15 @@ helpviewer_keywords:
 - service instances, searching
 - instances, services
 ms.assetid: 48cb885c-aaf1-44e8-9810-2e70cf63db81
-caps.latest.revision: "18"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: e96622fad23c28c0d4147f64a11cc540e88e7f97
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-search-for-all-service-instances"></a>Recherche de toutes les instances de service
 Vous pouvez utiliser la **requête** onglet dans la Console Administration de BizTalk Server pour rechercher toutes les instances de service. Vous ne pouvez pas désinscrire un type de service spécifique si certaines instances sont en cours d'exécution ou suspendues. Ainsi, avant de désinscrire un type de service, vous pouvez rechercher toutes les instances de service pour vous assurer qu'aucune de ces instances n'est en cours d'exécution ou suspendue.  
@@ -30,7 +30,7 @@ Vous pouvez utiliser la **requête** onglet dans la Console Administration de Bi
 > [!NOTE]
 >  En cas de regroupement et de filtrage par URI, seuls les ports d'envoi et de réception sont affichés dans les résultats. Ce type de regroupement et de filtrage ne peut pas être appliqué aux orchestrations, qui ne sont pas incluses dans les résultats.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Configuration requise  
  Pour exécuter cette procédure, vous devez être connecté en tant que membre du groupe des opérateurs de BizTalk Server.  
   
 ### <a name="to-search-for-all-service-instances"></a>Pour rechercher toutes les instances de service  
@@ -63,4 +63,4 @@ Vous pouvez utiliser la **requête** onglet dans la Console Administration de Bi
 7.  Continuez à ajouter des lignes supplémentaires à la requête si nécessaire, en effectuant le **nom de champ**, **opérateur**, et **valeurs** colonnes, puis cliquez sur **exécuter Requête**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide de l’onglet requête de la Console Administration](../core/using-the-administration-console-query-tab.md)
+ [Utilisation de l’onglet Requête de la console Administration](../core/using-the-administration-console-query-tab.md)

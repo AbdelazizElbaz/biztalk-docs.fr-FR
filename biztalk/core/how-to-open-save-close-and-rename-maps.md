@@ -1,22 +1,22 @@
 ---
-title: "Procédure d’ouverture, enregistrement, fermeture et renommage des mappages | Documents Microsoft"
-ms.custom: 
+title: Procédure d’ouverture, enregistrement, fermeture et renommage des mappages | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9aa88ca7-a731-4295-8692-6dd36fdf0872
-caps.latest.revision: "8"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 9383dd3751f9ccdd7790b0215e596eba95dc4a45
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-open-save-close-and-rename-maps"></a>Ouverture, enregistrement, fermeture et renommage des mappages
 Dans Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], les mappages sont des fichiers du système de fichiers dotés de l'extension .btm. Toutefois, il est beaucoup plus courant de travailler avec les mappages en tant qu'éléments d'un projet BizTalk à partir desquels vous effectuez des opérations comme ouvrir, enregistrer et fermer des mappages.  
@@ -36,13 +36,13 @@ Dans Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkserver
   
 1.  Dans l'Explorateur de solutions, sélectionnez le mappage que vous souhaitez enregistrer.  
   
-2.  Sur le **fichier** menu, cliquez sur **enregistrer  *\<nom de mappage\>***.  
+2.  Sur le **fichier** menu, cliquez sur ** Enregistrer *\<nom de mappage\>***.  
   
 ### <a name="to-save-a-map-to-a-new-location"></a>Pour enregistrer un mappage à un nouvel emplacement  
   
 1.  Dans l'Explorateur de solutions, sélectionnez le mappage que vous souhaitez enregistrer à un nouvel emplacement.  
   
-2.  Sur le **fichier** menu, cliquez sur **enregistrer  *\<nom de mappage\>*  comme**.  
+2.  Sur le **fichier** menu, cliquez sur **enregistrer *\<nom de mappage\>* comme**.  
   
 3.  Dans le **enregistrer le fichier sous** boîte de dialogue, accédez à l’emplacement du dossier où vous souhaitez enregistrer la carte.  
   

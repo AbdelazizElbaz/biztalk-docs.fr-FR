@@ -16,7 +16,7 @@ ms.openlocfilehash: 6a6f879111a28d5cbf9b2a75c7b3f3b3b865fb38
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="walkthrough-testing-the-policy"></a>Procédure pas à pas : Test de la stratégie
 Cette procédure pas à pas fournit des procédures pas à pas pour tester la stratégie que vous avez créé dans le [procédure pas à pas : création d’une stratégie commerciale Simple](../core/walkthrough-creating-a-simple-business-policy.md) procédure pas à pas.  
@@ -184,8 +184,8 @@ Cette procédure pas à pas fournit des procédures pas à pas pour tester la st
   
 |Nom du champ|Sélecteur XPath|Champ XPath|Sélecteur XPath (forme simplifiée)|Champ XPath<br /><br /> (forme simplifiée)|  
 |----------------|--------------------|-----------------|----------------------------------------|-----------------------------------------|  
-|Quantité|/ * [local-name () = 'PurchaseOrder' et namespace-uri() = 'http://EAISolution.PurchaseOrder'] /\*[local-name () = 'Item' et namespace-uri() ='']|*[local-name()='Quantity' and namespace-uri()='']|/PurchaseOrder/Item|Quantité|  
-|État|/*[local-name()='PurchaseOrder' and namespace-uri()='http://EAISolution.PurchaseOrder']|*[local-name()='Status' and namespace-uri()='']|/PurchaseOrder|État|  
+|Quantité|/ * [local-name () = 'PurchaseOrder' et namespace-uri() ='http://EAISolution.PurchaseOrder'] /\*[local-name () = 'Item' et namespace-uri() ='']|*[local-name()='Quantity' and namespace-uri()='']|/PurchaseOrder/Item|Quantité|  
+|État|/ * [local-name () = 'PurchaseOrder' et namespace-uri() ='http://EAISolution.PurchaseOrder']|*[local-name()='Status' and namespace-uri()='']|/PurchaseOrder|État|  
   
 #### <a name="to-view-the-xpath-selector-and-xpath-field-bindings-for-the-quantity-and-status-fields"></a>Pour afficher les liaisons du sélecteur et du champ Xpath pour les champs Quantity et Status  
   

@@ -1,33 +1,33 @@
 ---
-title: "Utiliser le fournisseur de données pour SAP avec le plug-in DDEX | Documents Microsoft"
-ms.custom: 
+title: Utiliser le fournisseur de données pour SAP avec le plug-in DDEX | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - DDEX plug-in
 - DDEX plug-in, Data Provider for SAP
 - Data Provider for SAP, using with DDEX plug-in
 ms.assetid: b16c8634-172a-4630-87ed-2073a75afdec
-caps.latest.revision: "5"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: a2a1dd348b6d897e147d6add49499e9716a67aeb
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="use-the-data-provider-for-sap-with-the-ddex-plug-in"></a>Utiliser le fournisseur de données pour SAP avec le plug-in DDEX
 Si vous avez choisi d’installer le [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] avec la [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] l’installation, le programme d’installation installe un [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] plug-in DDEX. Vous pouvez utiliser ce plug-in pour rechercher des objets SAP à l’aide de [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]. Cette section fournit des informations sur l’utilisation du plug-in DDEX.  
   
  Vous pouvez utiliser le plug-in pour établir la connexion avec le système SAP, ajouter des tables à partir du système SAP et ajouter des modules de fonction à partir du système SAP. Après avoir ajouté les tables et les modules de fonction à l’aide de plug-in Visual Studio, les tables récemment ajoutées et les modules de fonction sont répercutées dans le fichier SAPDiscoveredObjects.xml. Pour plus d’informations sur ce fichier, consultez [sur le fichier SAPDiscoveredObjects.xml dans SAP](../../adapters-and-accelerators/adapter-sap/about-the-sapdiscoveredobjects-xml-file-in-sap.md).  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Configuration requise  
  Assurez-vous que vous avez choisi d’installer le [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] avec la [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] installation.  
   
 ### <a name="to-connect-to-an-sap-system-using-the-ddex-plug-in"></a>Pour vous connecter à un système SAP à l’aide du plug-in DDEX  
@@ -66,7 +66,7 @@ Si vous avez choisi d’installer le [!INCLUDE[adoprovidersaplong](../../include
   
      L’illustration suivante montre l’Explorateur de serveurs une fois que la connexion est établie.  
   
-     ![DDEX plug &#45; dans pour le fournisseur SAP ADO.NET](../../adapters-and-accelerators/adapter-sap/media/158afc11-9c90-4333-bc62-5901f8d0c794.gif "158afc11-9c90-4333-bc62-5901f8d0c794")  
+     ![Les plug DDEX&#45;dans pour le fournisseur SAP ADO.NET](../../adapters-and-accelerators/adapter-sap/media/158afc11-9c90-4333-bc62-5901f8d0c794.gif "158afc11-9c90-4333-bc62-5901f8d0c794")  
   
 ### <a name="to-add-tables-from-an-sap-system-using-the-ddex-plug-in"></a>Pour ajouter des tables à partir d’un système SAP à l’aide du plug-in DDEX  
   
@@ -79,7 +79,7 @@ Si vous avez choisi d’installer le [!INCLUDE[adoprovidersaplong](../../include
   
 3.  Le **résultats de la recherche** zone répertorie les noms de table qui satisfont les critères de recherche.  
   
-     ![DDEX plug &#45; dans la boîte de dialogue nom rechercher et ajouter des Tables](../../adapters-and-accelerators/adapter-sap/media/737fc9c3-5258-4693-a2f3-5b5b8d2483e9.gif "737fc9c3-5258-4693-a2f3-5b5b8d2483e9")  
+     ![Les plug DDEX&#45;dans la boîte de dialogue nom rechercher et ajouter des Tables](../../adapters-and-accelerators/adapter-sap/media/737fc9c3-5258-4693-a2f3-5b5b8d2483e9.gif "737fc9c3-5258-4693-a2f3-5b5b8d2483e9")  
   
 4.  Activez la case à cocher correspondant aux tables que vous souhaitez ajouter, cliquez sur **ajouter**. Pour sélectionner toutes les tables, cliquez sur **sélectionner tout**. Pour effacer toutes les sélections, cliquez sur **Effacer tout**.  
   
@@ -100,7 +100,7 @@ Si vous avez choisi d’installer le [!INCLUDE[adoprovidersaplong](../../include
   
 3.  Le **résultats de la recherche** zone répertorie les modules de fonction qui répondent aux critères de recherche.  
   
-     ![DDEX plug &#45; dans la boîte de dialogue Rechercher et ajouter des Modules](../../adapters-and-accelerators/adapter-sap/media/8c7f9081-80aa-4bfe-8f06-2c751758ddd0.gif "8c7f9081-80aa-4bfe-8f06-2c751758ddd0")  
+     ![Les plug DDEX&#45;dans la boîte de dialogue Rechercher et ajouter des Modules](../../adapters-and-accelerators/adapter-sap/media/8c7f9081-80aa-4bfe-8f06-2c751758ddd0.gif "8c7f9081-80aa-4bfe-8f06-2c751758ddd0")  
   
 4.  Sélectionnez la case à cocher correspondant aux modules (fonction) que vous souhaitez ajouter, cliquez sur **ajouter**. Pour sélectionner tous les modules, cliquez sur **sélectionner tout**. Pour effacer toutes les sélections, cliquez sur **Effacer tout**.  
   

@@ -1,11 +1,11 @@
 ---
-title: "À l’aide du suivi d’événements pour Windows3 | Documents Microsoft"
-ms.custom: 
+title: À l’aide du suivi d’événements pour Windows3 | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ETW
@@ -17,15 +17,15 @@ helpviewer_keywords:
 - BTATIBCOEMSTrace command
 - Event Tracing for Windows
 ms.assetid: 71954431-2015-4d50-b69e-500c883b1e04
-caps.latest.revision: "8"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 75b2b339c99dcf1b64368c73381d1dbe81e0fb39
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="using-event-tracing-for-windows"></a>À l’aide d’événements de suivi pour Windows
 L'adaptateur Microsoft BizTalk pour TIBCO Enterprise Message Service consigne des messages d'erreur, d'avertissement et d'informations dans l'Observateur d'événements Windows. Vous pouvez visualiser des messages de suivi supplémentaires à l'aide de l'outil Suivi d’événements pour Windows (ETW). Lorsqu'il est activé, cet outil crée un fichier *.etl pour recevoir les messages. Ce fichier au format binaire doit être converti pour être lu. Pour ce faire, vous devez disposer d’une application consommateur capable d’interpréter le \*fichier .etl, par exemple, tracerpt.exe ou tracedmp.exe. Par exemple, l’application tracerpt.exe convertit le \*fichier .etl dans deux fichiers texte : summary.txt et dumpfile.csv.  
@@ -75,9 +75,9 @@ BTA TIBCOEMSTrace <Trace element> -stop
   
  Les options associées sont les suivantes :  
   
--   **-émetteur**  
+-   **-transmitter**  
   
--   **-récepteur**  
+-   **-receiver**  
   
 -   **-start, - stop**: activer ou désactiver le fournisseur.  
   
@@ -89,7 +89,7 @@ BTA TIBCOEMSTrace <Trace element> -stop
   
 -   **Fichier journal**: nom du fichier journal (la valeur par défaut s’agit de c:\rtlog.etl).  
   
- Exemple :  
+ Par exemple :  
   
 ```  
 BTATIBCOEMSTrace -transmitter -start -cir 10 -rt c:\log\mylog.etl  

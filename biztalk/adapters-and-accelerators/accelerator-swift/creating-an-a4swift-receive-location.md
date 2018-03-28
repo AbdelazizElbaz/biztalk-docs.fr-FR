@@ -1,25 +1,25 @@
 ---
-title: "Emplacement de réception de création d’un A4SWIFT | Documents Microsoft"
-ms.custom: 
+title: Emplacement de réception de création d’un A4SWIFT | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - receive locations, creating
 - creating, receive locations
 ms.assetid: 712cf42f-8d71-47e9-b2bf-3da158b74fe4
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 11c77b7b28c65c4743998f7d4c54d9c7cd48437f
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="creating-an-a4swift-receive-location"></a>Emplacement de réception de création d’un A4SWIFT
 Vous devez créer un [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] emplacement de réception pour activer la réception des messages à partir du réseau rapide par [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)], comme indiqué dans l’illustration suivante. L’emplacement de réception reçoit les messages de fichier plat à partir d’un dossier de fichiers entrant.  
@@ -69,7 +69,7 @@ Vous devez créer un [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4
     > [!NOTE]
     >  Si ce dossier n’existe pas, vous pouvez créer à l’aide de la **créer un nouveau dossier** commande.  
   
-12. Dans la boîte de dialogue Propriétés du Transport FILE, dans le **masque de fichier** , entrez  **\*.\<* extension*\>**, où \<* extension* \> est l’extension de fichier plat entrant d’un message, par exemple en tant que **.txt**. Cliquez sur **OK**.  
+12. Dans la boîte de dialogue Propriétés du Transport FILE, dans le **masque de fichier** , entrez  **\*.\< *extension*\>**, où \< *extension* \> est l’extension d’entrant message de fichier plat, par exemple **.txt**. Cliquez sur **OK**.  
   
 13. Dans la boîte de dialogue Propriétés de l’emplacement de réception, vérifiez que **BizTalkServerApplication** est entré pour le **Gestionnaire de réception** boîte.  
   

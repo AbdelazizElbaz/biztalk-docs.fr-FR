@@ -15,7 +15,7 @@ ms.openlocfilehash: 8fa1a09f3d9fa531cee51ecd0e94b99ab972ba13
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="install-and-configure-the-microsoft-biztalk-adapters-for-enterprise-applications"></a>Installer et configurer les adaptateurs Microsoft BizTalk pour les Applications d’entreprise 
   

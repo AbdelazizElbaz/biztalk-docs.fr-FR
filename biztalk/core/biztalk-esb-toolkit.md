@@ -1,22 +1,22 @@
 ---
 title: BizTalk ESB Toolkit | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 08035518-17ad-44d2-ab06-90d725c95ced
-caps.latest.revision: "7"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 535fd99ee5c1b9f9c25dd49e2a2441acb855c78a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="biztalk-esb-toolkit"></a>BizTalk ESB Toolkit
 Microsoft BizTalk ESB Toolkit utilise Microsoft BizTalk Server pour prendre en charge une architecture de messagerie faiblement couplée. BizTalk Server inclut un mécanisme de publication/d'abonnement puissant pour les applications de messagerie qui crée et définit des abonnements, et offre une plateforme hautement efficace et évolutive pour les applications à l'architecture orientée services. BizTalk ESB Toolkit étend les fonctionnalités de BizTalk Server pour fournir de nouvelles capacités dédiées à la création d'applications orientées services connectées et robustes, qui appellent les services sur la base de l'itinéraire. Une telle approche présente divers avantages : composition légère des services, résolution dynamique des points de terminaison et des mappages, intégration des services Web et WS-*, gestion des erreurs et création de rapports, et intégration à des solutions de gouvernance SOA tierces.  
@@ -46,4 +46,4 @@ Cette approche fournit un couplage faible entre les services ; Cela signifie qu
 ## <a name="see-also"></a>Voir aussi  
  [Guide du Service BizTalk Enterprise](http://go.microsoft.com/fwlink/?LinkId=193577)   
  [Solution orientée services](../core/service-oriented-solution.md)   
- [Utilisation des Services Web](../core/using-web-services.md)
+ [Utilisation des services web](../core/using-web-services.md)

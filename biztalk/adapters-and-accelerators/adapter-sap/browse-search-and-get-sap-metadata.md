@@ -1,11 +1,11 @@
 ---
-title: "Parcourir, rechercher et obtenir les métadonnées SAP | Documents Microsoft"
-ms.custom: 
+title: Parcourir, rechercher et obtenir les métadonnées SAP | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - metadata
@@ -17,15 +17,15 @@ helpviewer_keywords:
 - BAPI
 - IDOC
 ms.assetid: 5f0d7c1f-d6e1-4c56-8d8e-1f5d537aa3ce
-caps.latest.revision: "9"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 40cc1bd6592b38dbda9c9bff3ad01d6cdaf8a707
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="browse-search-and-get-sap-metadata"></a>Parcourir, rechercher et obtenir les métadonnées SAP
 Le [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] surfaces des métadonnées à partir du système SAP. Ces métadonnées décrivent la structure du message pour la communication avec un système SAP à l’aide de l’adaptateur. Le [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] prend en charge deux interfaces de récupération des métadonnées.  
@@ -70,14 +70,14 @@ Le [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] surfaces 
   
 |Artefact|Recherches sous le nœud dans l’interface graphique utilisateur|  
 |--------------|------------------------------------|  
-|RFC|-/RFC<br />-/RFC/ [application groupe]|  
-|tRFC|-/TRFC<br />-/TRFC/ [application groupe]|  
-|BAPI|-/BAPI|  
-|IDOC|-/IDOC|  
+|RFC|-   /RFC<br />-   /RFC/[Application Group]|  
+|tRFC|-   /TRFC<br />-   /TRFC/[Application Group]|  
+|BAPI|-   /BAPI|  
+|IDOC|-   /IDOC|  
   
  Le tableau suivant répertorie les caractères spéciaux qui peuvent être utilisés pour la recherche et de leur interprétation par le [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].  
   
-|Caractère spécial|Interprétation|  
+|Caractère spécial|Interpretation|  
 |-----------------------|--------------------|  
 |+ (plus)|Correspond à exactement un caractère.<br /><br /> Par exemple, A + correspond à AB, CA, Active Directory|  
 |* (astérisque)|Correspond à zéro ou plusieurs caractères.<br /><br /> Par exemple, A * correspond à un, AB, ABC.|  

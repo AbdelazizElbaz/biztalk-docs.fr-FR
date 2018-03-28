@@ -1,11 +1,11 @@
 ---
-title: "Parcourir, rechercher et d’obtenir des métadonnées pour des opérations IDOC dans SAP | Documents Microsoft"
-ms.custom: 
+title: Parcourir, rechercher et d’obtenir des métadonnées pour des opérations IDOC dans SAP | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - WCF client, generating for IDOC operations
@@ -16,15 +16,15 @@ helpviewer_keywords:
 - IDOC operations, generating schema for
 - IDOC operations
 ms.assetid: 44d05129-ce06-4a10-bf28-9d3519a02a7a
-caps.latest.revision: "13"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: b4c82ecf945e85c8e4c9b5f365c808598fcbbf3a
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="browse-search-and-get-metadata-for-idoc-operations-in-sap"></a>Parcourir, rechercher et d’obtenir des métadonnées pour des opérations IDOC dans SAP
 Cette section fournit des instructions sur la façon de parcourir, rechercher et récupérer les métadonnées à partir de SAP pour à l’aide des opérations IDOC [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)], [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)], ou [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]. La plupart des instructions est les même pour toute l’interface utilisateur de trois. Là où les procédures d’applicables, distinctes sont fournies pour l’interface utilisateur approprié.  
@@ -39,7 +39,7 @@ Cette section fournit des instructions sur la façon de parcourir, rechercher et
   
     -   ReceiveIdocFormat  
   
-    -   flatFileSegmentIndicator  
+    -   FlatFileSegmentIndicator  
   
      Ces propriétés déterminent la façon dont les métadonnées pour l’IDOC sont récupérées à partir d’un système SAP. Pour plus d’informations sur ces propriétés, consultez [en savoir plus sur l’adaptateur BizTalk pour les propriétés de liaison mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md). Pour obtenir des instructions sur la façon de définir les propriétés de liaison, consultez [configurer les propriétés de liaison de l’adaptateur SAP](../../adapters-and-accelerators/adapter-sap/configure-the-binding-properties-for-the-sap-adapter.md).  
   
@@ -91,7 +91,7 @@ Cette section fournit des instructions sur la façon de parcourir, rechercher et
   
  Le tableau suivant répertorie les caractères spéciaux qui peuvent être utilisés pour la recherche et de leur interprétation par le [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].  
   
-|Caractère spécial|Interprétation|  
+|Caractère spécial|Interpretation|  
 |-----------------------|--------------------|  
 |+ (plus)|Correspond à exactement un caractère.<br /><br /> Par exemple, A + correspond à AB, CA, Active Directory|  
 |* (astérisque)|Correspond à zéro ou plusieurs caractères.<br /><br /> Par exemple, A * correspond à un, AB, ABC.|  

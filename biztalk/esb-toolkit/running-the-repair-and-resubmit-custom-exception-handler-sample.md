@@ -1,22 +1,22 @@
 ---
-title: "Exécution de l’exemple de gestionnaire d’Exception personnalisé réparation et soumettez à nouveau | Documents Microsoft"
-ms.custom: 
+title: Exécution de l’exemple de gestionnaire d’Exception personnalisé réparation et soumettez à nouveau | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7363c440-44aa-4d08-8290-72787d17ac60
-caps.latest.revision: "2"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: b8b33765cbe3ca1c8c0c7c3e7679e543678325af
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="running-the-repair-and-resubmit-custom-exception-handler-sample"></a>L’exemple de gestionnaire d’exceptions personnalisée réparation et soumettez à nouveau en cours d’exécution
 L’exemple de réparation et soumettez à nouveau gestionnaire d’exceptions personnalisé montre une technique extrêmement efficace permettant d’intégrer une intervention humaine dans ESB et Microsoft application basée sur BizTalk traite et implémente un modèle de conception utiles. L’exemple de code s’intègre en toute transparence dans le système de gestion d’exception ESB.  

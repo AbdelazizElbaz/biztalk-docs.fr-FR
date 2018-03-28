@@ -1,22 +1,22 @@
 ---
-title: "Instructions générales pour améliorer les performances du système d’exploitation | Documents Microsoft"
-ms.custom: 
+title: Instructions générales pour améliorer les performances du système d’exploitation | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bc9ca38e-1feb-4f34-a64b-d04566e85db9
-caps.latest.revision: "11"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: e7be3f8060bba20bc0ba127443095c228f954bba
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="general-guidelines-for-improving-operating-system-performance"></a>Instructions générales pour améliorer les performances du système d’exploitation
 Les directives générales suivantes doivent être suivies pour améliorer les performances du système d’exploitation :  
@@ -133,21 +133,21 @@ Les directives générales suivantes doivent être suivies pour améliorer les p
   
 -   [Ports requis pour BizTalk Server](http://go.microsoft.com/fwlink/?LinkID=153238) (http://go.microsoft.com/fwlink/?LinkID=153238).  
   
--   Pour configurer l’allocation de port dynamique RPC avec un pare-feu, consultez l’article de la Base de connaissances 929851, [« la plage de ports dynamiques par défaut pour le protocole TCP/IP a changé dans Windows Vista et Windows Server 2008 »](http://go.microsoft.com/fwlink/?LinkID=204568) (lien hypertexte « http:// go.Microsoft.com/fwlink/ ? LinkID = 204568" http://go.microsoft.com/fwlink/? LinkID = 204568). Pour plus d’informations sur la façon de configurer le pare-feu Windows pour prendre en charge les ports nécessaires, consultez [le pare-feu Windows et Guide pas à pas de déploiement de stratégie IPsec](http://go.microsoft.com/fwlink/?LinkID=204569) (http://go.microsoft.com/fwlink/?LinkID=204569).  
+-   Pour configurer l’allocation de port dynamique RPC avec un pare-feu, consultez l’article de la Base de connaissances 929851, [« la plage de ports dynamiques par défaut pour le protocole TCP/IP a changé dans Windows Vista et Windows Server 2008 »](http://go.microsoft.com/fwlink/?LinkID=204568) (lien hypertexte «http://go.microsoft.com/fwlink/?LinkID=204568» http://go.microsoft.com/fwlink/?LinkID=204568). Pour plus d’informations sur la façon de configurer le pare-feu Windows pour prendre en charge les ports nécessaires, consultez [le pare-feu Windows et Guide pas à pas de déploiement de stratégie IPsec](http://go.microsoft.com/fwlink/?LinkID=204569) (http://go.microsoft.com/fwlink/?LinkID=204569).  
   
 ## <a name="install-appropriate-com-and-msdtc-hotfix-rollup-packages"></a>Installer approprié MSDTC et COM + correctifs cumulatifs  
  Passez en revue les informations suivantes pour installer les packages MS DTC et COM + correctif cumulatif appropriés :  
   
 -   Le correctif logiciel MS DTC sont accessibles dans la Base de connaissances Microsoft article978476 [« Le problème de MS DTC est résolu dans Windows Server 2008 R2 MS DTC Package de correctifs cumulatifs 1 »](http://go.microsoft.com/fwlink/?LinkID=204109) (http://go.microsoft.com/fwlink/?LinkID=204109).  
   
--   Article le plus récent DTC correctif cumulatif Ko de package peut être recherché en [http://support.microsoft.com](http://go.microsoft.com/fwlink/?LinkID=96185) (http://go.microsoft.com/fwlink/?LinkID=96185) pour l’expression (y compris les guillemets) :  
+-   Article le plus récent DTC correctif cumulatif Ko de package peut être recherché en [ http://support.microsoft.com ](http://go.microsoft.com/fwlink/?LinkID=96185) (http://go.microsoft.com/fwlink/?LinkID=96185) pour l’expression (y compris les guillemets) :  
   
     ```  
     "MS DTC Hotfix Rollup Package"  
     ```  
   
      La requête suivante effectue cette recherche pour vous. Choisir la plus récente :   
-    [http://support.Microsoft.com/search/default.aspx?Query= « MS + DTC + + Package correctif cumulatif + »](http://support.microsoft.com/search/default.aspx?query="MS+DTC+Hotfix+Rollup+Package")  
+    [http://support.microsoft.com/search/default.aspx?query="MS+DTC+Hotfix+Rollup+Package"](http://support.microsoft.com/search/default.aspx?query="MS+DTC+Hotfix+Rollup+Package")  
   
 ## <a name="use-the-interrupt-affinity-policy-tool-to-bind-network-adapter-interrupts-to-specific-processors-on-multiprocessor-computers"></a>Utiliser l’outil Stratégie Interrupt Affinity pour lier des interruptions de carte réseau sur des processeurs spécifiques sur les ordinateurs multiprocesseurs  
  La stratégie Interrupt Affinity (IntPolicy) est un outil qui vous permet de « lier » ou de modifier l’affinité du processeur d’interruptions pour un périphérique donné (par exemple, une carte réseau) permet à un processeur spécifique ou de processeurs sur un ordinateur multiprocesseur. Cette liaison est également appelée le partitionnement. La liaison des interruptions à partir d’une carte réseau spécifique sur des processeurs spécifiques sur un ordinateur multiprocesseur applique en cours d’exécution des appels de procédure différés (DPC) et les routines de service d’interruption (ISR) pour la carte réseau sur les processeurs désignés. Notez qu’une affinité ne peut pas être configurée sur les ordinateurs à processeur unique.  
@@ -155,7 +155,7 @@ Les directives générales suivantes doivent être suivies pour améliorer les p
 > [!NOTE]  
 >  Un DPC est défini comme un appel en file d’attente à une fonction en mode noyau qui est généralement exécutée ultérieurement. Une ISR est défini comme une routine qui vise à un périphérique de service lorsqu’il génère une interruption. Pour plus d’informations sur les appels de procédure différés et les routines ISR, consultez le [documentation de Windows Driver Kit](http://go.microsoft.com/fwlink/?LinkId=84418) (http://go.microsoft.com/fwlink/?LinkId=84418).  
   
- ![Interruption &#45; Outil de stratégie d’affinité](../technical-guides/media/interrupt-affinitypolicytool.gif "AffinityPolicyTool de l’interruption")  
+ ![Interruption&#45;outil de stratégie d’affinité](../technical-guides/media/interrupt-affinitypolicytool.gif "AffinityPolicyTool de l’interruption")  
 Outil Stratégie Interrupt Affinity  
   
  Sur Windows Server 2008 en fonction des ordinateurs multiprocesseurs, le comportement par défaut du contrôleur d’interruption est pour affecter des interruptions de l’appareil à n’importe quel processeur disponible. Lorsque les connexions réseau et les sessions de serveur de fichiers pour une carte réseau donnée sont liés aux/partitionnée pour s’exécuter sur un ensemble spécifique de processeurs, plutôt que n’importe quel processeur disponible, les performances et l’évolutivité du traitement du réseau associée est améliorée. Grandes solutions BizTalk Server utilisent souvent l’utilisation de plusieurs processeurs des ordinateurs de SQL Server avec plusieurs cartes réseau pour lesquels la liaison d’interruption peut être particulièrement utile.   
@@ -275,13 +275,13 @@ Pour désactiver les services de Windows Server 2008 qui ne sont pas requis pour
 ## <a name="manually-load-microsoft-certificate-revocation-lists"></a>Charger manuellement les listes de révocation de certificats Microsoft  
  Lorsque vous démarrez une application .NET, le .NET Framework tente de télécharger la liste de révocation de certificats (CRL) pour tous les assemblys signés. Si votre système ne dispose pas d’un accès direct à Internet, ou accéder au domaine Microsoft.com, cela peut retarder le démarrage de BizTalk Server. Pour éviter ce délai au démarrage de l’application, vous pouvez utiliser les étapes suivantes pour télécharger et installer le code de signature de listes de révocation de certificat sur votre système manuellement.  
   
-1.  Télécharger les dernières mises à jour de la liste CRL à partir de [http://crl.microsoft.com/pki/crl/products/CodeSignPCA.crl](http://go.microsoft.com/fwlink/?LinkID=117794) (http://go.Microsoft.com/fwlink/?) LinkID = 117794) et [http://crl.microsoft.com/pki/crl/products/CodeSignPCA2.crl](http://go.microsoft.com/fwlink/?LinkId=117795) (http://go.Microsoft.com/fwlink/?) LinkId = 117795).  
+1.  Télécharger les dernières mises à jour de la liste CRL à partir de [ http://crl.microsoft.com/pki/crl/products/CodeSignPCA.crl ](http://go.microsoft.com/fwlink/?LinkID=117794) (http://go.microsoft.com/fwlink/?LinkID=117794) et [ http://crl.microsoft.com/pki/crl/products/CodeSignPCA2.crl ](http://go.microsoft.com/fwlink/?LinkId=117795) (http://go.microsoft.com/fwlink/?LinkId=117795).  
   
 2.  Déplacer les fichiers CodeSignPCA.crl et CodeSignPCA2.crl vers le système isolé.  
   
 3.  À partir d’une invite de commandes, entrez la commande suivante pour utiliser l’utilitaire certutil pour mettre à jour le magasin de certificats avec la liste de révocation téléchargé à l’étape 1 :  
   
-     certutil-addstore autorité de certification c:\CodeSignPCA.crl  
+     certutil –addstore CA c:\CodeSignPCA.crl  
   
  Les fichiers de la révocation de certificats sont mis à jour régulièrement, afin que vous envisagez de définir une tâche récurrence de téléchargement et installation de la liste de révocation des mises à jour. Pour afficher la prochaine mise à jour, double-cliquez sur le fichier .crl et la valeur de la **mettre à jour suivant** champ.  
   

@@ -1,29 +1,29 @@
 ---
 title: Importer des applications PeopleSoft | Documents Microsoft
-description: "Utiliser un fichier de liaison XML à importer vos applications de l’adaptateur PeopleSoft dans BizTalk Server et lire toutes les restrictions lors de l’importation"
-ms.custom: 
+description: Utiliser un fichier de liaison XML à importer vos applications de l’adaptateur PeopleSoft dans BizTalk Server et lire toutes les restrictions lors de l’importation
+ms.custom: ''
 ms.date: 10/19/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2f53d1b4-e1df-41ff-b554-1bb1d20b9111
-caps.latest.revision: "7"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: ed076bd238eff5106bb0b2f08449144d922fed4d
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="deploy-biztalk-adapter-for-peoplesoft-enterprise"></a>Déployez l’adaptateur BizTalk pour PeopleSoft Enterprise
 Cette section fournit des informations sur le déploiement de l'adaptaeur BizTalk pour PeopleSoft Enterprise.  
 
 ## <a name="overview"></a>Vue d'ensemble
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] permet de dupliquer des ports et des assemblys sur un ordinateur cible. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Exporte la configuration des emplacements de réception/ports envoi dans un fichier XML.  
+[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] permet de dupliquer des ports et des assemblys sur un ordinateur cible. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Exporte la configuration des emplacements de réception/ports envoi dans un fichier XML.  
   
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] permet d'effectuer les tâches suivantes :  
   
@@ -57,9 +57,9 @@ Pour nettoyer l’ordinateur cible pour le déploiement de la nouvelle applicati
   
 Si Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] n'est pas installé sur l'ordinateur cible, vous pouvez supprimer les ports en exécutant les scripts suivants :  
   
-**\<Microsoft BizTalk Server\>\SDK\Samples\Admin\WMI\Remove envoyer Port\VBScript\RemoveSendPort.vbs**  
+**\<Microsoft BizTalk Server\>\SDK\Samples\Admin\WMI\Remove Send Port\VBScript\RemoveSendPort.vbs**  
   
-**\<Microsoft BizTalk Server\>\SDK\Samples\Admin\WMI\Remove Port\VBScript\RemoveReceivePort.vbs de réception**  
+**\<Microsoft BizTalk Server\>\SDK\Samples\Admin\WMI\Remove Receive Port\VBScript\RemoveReceivePort.vbs**  
   
 Par exemple, à une invite de commandes, exécutez :  
   

@@ -1,22 +1,22 @@
 ---
-title: "Configuration de la Validation d’un échange EDI | Documents Microsoft"
-ms.custom: 
+title: Configuration de la Validation d’un échange EDI | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6e698b21-e234-4d7d-b101-742eff68155c
-caps.latest.revision: "9"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 06485274a0053846c361d1aaab6707a073c16958
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-validation-of-an-edi-interchange-is-configured"></a>Configuration de la validation d'un échange EDI
 Si le processus de recherche d'un accord identifie l'accord auquel un message entrant ou sortant correspond, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] utilise les propriétés d'accord (et non les propriétés de pipeline) pour déterminer la méthode de validation. Si aucun accord ne correspond à un échange, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] utilise les propriétés d'accord de secours et certaines propriétés de pipeline dans le cadre de la validation.  
@@ -27,9 +27,9 @@ Si le processus de recherche d'un accord identifie l'accord auquel un message en
   
 |Validation|Configurée par le partenaire commercial|Configurée par le Pipeline<sup>*</sup>|Configurée par l'accord|Configurée par les paramètres de l'accord de secours|  
 |----------------|-----------------------------------|----------------------------------------|-----------------------------|-----------------------------------------------|  
-|Associations du port d'envoi|Oui|Non|Oui|Non|  
-|Certificats|Oui|Non|Non|Non|  
-|rapport d'état.|Non|Non|Oui|Oui|  
+|Associations du port d'envoi|Oui|Non|Oui|non|  
+|Certificats|Oui|Non|Non|non|  
+|rapport d'état.|non|Non|Oui|Oui|  
   
 > [!NOTE]
 >  Il est déconseillé de définir les propriétés sur le pipeline, bien qu'elles soient disponibles via celui-ci.  
@@ -46,7 +46,7 @@ Si le processus de recherche d'un accord identifie l'accord auquel un message en
 |----------------|-----------------------------|----------------------------------------|-----------------------------------------------|  
 |Authentification/sécurité|Oui|Disponible au niveau de l'accord uniquement|Disponible au niveau de l'accord uniquement|  
 |ID de l'expéditeur|Oui|Disponible au niveau de l'accord uniquement|Disponible au niveau de l'accord uniquement|  
-|Séparateur de répétition /<br />ISA11|Oui|Oui|Non|  
+|RepSeparator/<br />ISA11|Oui|Oui|non|  
 |Doublon/validité dans ISA|Oui|Non|Oui|  
 |Doublon/validité dans GS|Oui|Non|Oui|  
 |Doublon/validité dans ST|Oui|Non|Oui|  
@@ -64,13 +64,13 @@ Si le processus de recherche d'un accord identifie l'accord auquel un message en
 |Doublon/validité dans UNB|Oui|Non|Oui|  
 |Doublon/validité dans UNG|Oui|Non|Oui|  
 |Doublon/validité dans UNH|Oui|Non|Oui|  
-|Délimiteurs UNA|Non|Oui|Non|  
+|Délimiteurs UNA|non|Oui|non|  
   
  **Propriétés de l’accusé de réception générales**  
   
 |Validation|Configurée par l'accord|Configurée par le Pipeline<sup>*</sup>|Configurée par les paramètres de l'accord de secours|  
 |----------------|-----------------------------|----------------------------------------|-----------------------------------------------|  
-|Accusé de réception bidirectionnel|Oui|Oui|Non|  
+|Accusé de réception bidirectionnel|Oui|Oui|non|  
 |Génération d'un accusé de réception fonctionnel|Oui|Non|Oui|  
 |Accusé de réception de l'échange par lot|Oui|Disponible au niveau de l'accord uniquement|Disponible au niveau de l'accord uniquement|  
 |Contrôle de l'accusé de réception personnalisé|Oui|Non|Oui|  
@@ -83,14 +83,14 @@ Si le processus de recherche d'un accord identifie l'accord auquel un message en
   
 |Validation|Configurée par l'accord|Configurée par le Pipeline<sup>*</sup>|Configurée par les paramètres de l'accord de secours|  
 |----------------|-----------------------------|----------------------------------------|-----------------------------------------------|  
-|Routage|Oui|Oui|Non|  
-|Étendue|Oui|Oui|Non|  
-|Séparateurs de fin|Oui|Oui|Non|  
-|Génération de balises pour les séparateurs de fin|Oui|Oui|Non|  
-|Masquage de la sécurité/du mot de passe|Oui|Oui|Non|  
-|Conversion décimale|Oui|Oui|Non|  
+|Routage|Oui|Oui|non|  
+|Étendue|Oui|Oui|non|  
+|Séparateurs de fin|Oui|Oui|non|  
+|Génération de balises pour les séparateurs de fin|Oui|Oui|non|  
+|Masquage de la sécurité/du mot de passe|Oui|Oui|non|  
+|Conversion décimale|Oui|Oui|non|  
 |Traitement par lot|-|-|-|  
-|Conserver l'échange|Oui|Oui|Non|  
+|Conserver l'échange|Oui|Oui|non|  
   
 > [!NOTE]
 >  Il est déconseillé de définir les propriétés sur le pipeline, bien qu'elles soient disponibles via celui-ci.  
@@ -119,9 +119,9 @@ Si le processus de recherche d'un accord identifie l'accord auquel un message en
   
 |Validation|Configurée par l'accord|Configurée par le Pipeline<sup>*</sup>|Configurée par les paramètres de l'accord de secours|  
 |----------------|-----------------------------|----------------------------------------|-----------------------------------------------|  
-|Routage|Oui|Oui|Non|  
-|Étendue|Oui|Oui|Non|  
-|Génération de séparateurs de fin|Oui|Oui|Non|  
+|Routage|Oui|Oui|non|  
+|Étendue|Oui|Oui|non|  
+|Génération de séparateurs de fin|Oui|Oui|non|  
   
  **Création du lot**  
   

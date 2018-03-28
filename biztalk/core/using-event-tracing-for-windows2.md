@@ -1,25 +1,25 @@
 ---
-title: "À l’aide du suivi d’événements pour Windows2 | Documents Microsoft"
-ms.custom: 
+title: À l’aide du suivi d’événements pour Windows2 | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ETW
 - Event Tracing for Windows
 ms.assetid: 88b91b74-2b2e-40e0-a3e9-1ebd6367abe8
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 3c5f610d75048b250fc90aba7f723cee39c4f2e1
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="using-event-tracing-for-windows"></a>À l’aide d’événements de suivi pour Windows
 L'adaptateur Microsoft BizTalk pour JD Edwards OneWorld consigne les erreurs, avertissements et messages d'information dans l'Observateur d'événements Windows. Vous pouvez visualiser des messages de suivi supplémentaires à l'aide de l'outil Suivi d'événements pour Windows (ETW). Lorsqu'il est activé, cet outil crée un fichier *.etl pour recevoir les messages. Ce fichier au format binaire doit être converti pour être lu. Pour ce faire, vous devez disposer d’une application consommateur capable d’interpréter le \*fichier .etl : par exemple, tracerpt.exe ou tracedmp.exe.  
@@ -74,13 +74,13 @@ BTAJDEOneWorldTrace <Trace element> -stop
   
     -   **-castDetailsTransmit**  
   
-    -   **-émetteur**  
+    -   **-transmitter**  
   
     -   **-castDetailsReceive**  
   
-    -   **-récepteur**  
+    -   **-receiver**  
   
-    -   **-gestion**  
+    -   **-management**  
   
     -   **-start, - stop**: activer ou désactiver le fournisseur.  
   
@@ -92,7 +92,7 @@ BTAJDEOneWorldTrace <Trace element> -stop
   
     -   **Fichier journal**: nom du fichier journal (la valeur par défaut s’agit de c:\rtlog.etl).  
   
- Exemple :  
+ Par exemple :  
   
 ```  
 BTAJDEOneWorldTrace -transmitter -start -cir 10 -rt c:\log\mylog.etl  

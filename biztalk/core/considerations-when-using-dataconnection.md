@@ -1,11 +1,11 @@
 ---
-title: "Considérations sur l’utilisation de DataConnection | Documents Microsoft"
-ms.custom: 
+title: Considérations sur l’utilisation de DataConnection | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Retract function [Business Rules Engine], DataConnection
@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Assert function [Business Rules Engine], DataConnection
 - Update function [Business Rules Engine], DataConnection
 ms.assetid: 1b4c8aa5-053f-43d7-9f5f-050383405fed
-caps.latest.revision: "10"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 1f99110daafa74cb16b6cc5b98e1382049bbb158
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="considerations-when-using-dataconnection"></a>Considérations sur l'utilisation de DataConnection
 Prenez en compte les éléments suivants lorsque vous utilisez DataConnection avec le moteur des règles d'entreprise.  
@@ -102,4 +102,4 @@ THEN DC.z = 10
 -   Si un ou plusieurs arguments d'une fonction ne peuvent pas être traduits, l'appel de fonction devient aussi intraduisible ; par exemple, Add(c1.M(dc.Column1), 5).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Accès aux données dans le moteur de règles d’entreprise](../core/data-access-in-the-business-rule-engine.md)
+ [Accès aux données dans le moteur des règles d’entreprise](../core/data-access-in-the-business-rule-engine.md)

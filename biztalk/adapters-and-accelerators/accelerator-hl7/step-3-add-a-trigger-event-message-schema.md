@@ -1,29 +1,29 @@
 ---
-title: "Étape 3 : Ajouter un schéma d’événement (Message) de déclencheur | Documents Microsoft"
-ms.custom: 
+title: 'Étape 3 : Ajouter un schéma d’événement (Message) de déclencheur | Documents Microsoft'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fc4a67d9-9582-4f2b-9bc9-18fbff823d29
-caps.latest.revision: "4"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 439caac8f1da151a9f203a1372039aaeedbfe83c
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-3-add-a-trigger-event-message-schema"></a>Étape 3 : Ajouter un schéma d’événement (Message) de déclencheur
 Dans cette étape, vous créez un projet basé sur l’Empty [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] modèle de projet. À ce projet, vous ajoutez le schéma qui [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] utilise pour valider les messages dans le traitement par lots entrant (ADT ^ A03). Vous ajoutez une référence au projet contenant les schémas courants v2.3.1, attribuez le nom fort au projet, puis déployez le projet.  
   
 ### <a name="to-add-the-project-containing-the-message-schema"></a>Pour ajouter le projet contenant le schéma de message  
   
-1.  Dans [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], dans le **fichier** menu, pointez sur **nouveau**, puis cliquez sur **projet**.  
+1.  Dans [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], dans le menu **Fichier** , pointez sur **Nouveau**, puis cliquez sur **Projet**.  
   
 2.  Dans la boîte de dialogue Nouveau projet, dans le **Types de projets** , développez **projets BizTalk**, puis sélectionnez **BTAHL7Projects**.  
   
@@ -66,7 +66,7 @@ Dans cette étape, vous créez un projet basé sur l’Empty [!INCLUDE[btaBTAHL7
   
 4.  Dans **choisir un fichier de clé de nom fort** dérouler la liste, sélectionnez  **\<Parcourir... \>.**  
   
-5.  Accédez à  **\<* lecteur*\>: \Batching didacticiel **, sélectionnez **key.snk**, puis cliquez sur **ouvrir**.  
+5.  Accédez à  **\< *lecteur*\>: \Batching didacticiel**, sélectionnez **key.snk**, puis cliquez sur **ouvrir**.  
   
 6.  Dans l’Explorateur de solutions, cliquez sur **BTAHL7V231Body**, puis cliquez sur **déployer**. Vérifiez qu’un message de réussite s’affiche dans la fenêtre Sortie.  
   

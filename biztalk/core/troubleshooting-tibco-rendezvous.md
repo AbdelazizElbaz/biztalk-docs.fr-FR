@@ -1,23 +1,23 @@
 ---
-title: "Résoudre les problèmes de TIBCO Rendezvous | Documents Microsoft"
-description: "Utiliser le suivi d’événements Windows pour troubl = esdhoot l’adaptateur Microsoft BizTalk pour TIBCO Rendezvous dans BizTalk Server"
-ms.custom: 
+title: Résoudre les problèmes de TIBCO Rendezvous | Documents Microsoft
+description: Utiliser le suivi d’événements Windows pour troubl = esdhoot l’adaptateur Microsoft BizTalk pour TIBCO Rendezvous dans BizTalk Server
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5b7bc3ab-16fa-4e91-8730-9431473b2fb4
-caps.latest.revision: "5"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 18ae8d599b67a1a572021cae0ebc9bfc64992a9b
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="troubleshoot-tibco-rendezvous"></a>Résoudre les problèmes de TIBCO Rendezvous
   
@@ -67,15 +67,15 @@ BTATIBCORVTrace <Trace element> -start [-cir <MB>|
 BTATIBCORVTrace <Trace element> -stop  
 ```  
   
- Où :  **\<élément Trace\>**  (obligatoire) est le type de fournisseur.  
+ Où : **\<élément Trace\>** (obligatoire) est le type de fournisseur.  
   
  Les options associées sont les suivantes :  
   
--   **-émetteur**  
+-   **-transmitter**  
   
--   **-récepteur**  
+-   **-receiver**  
   
--   **-gestion**  
+-   **-management**  
   
 -   **-start, - stop**: activer ou désactiver le fournisseur.  
   
@@ -87,7 +87,7 @@ BTATIBCORVTrace <Trace element> -stop
   
 -   **Fichier journal**: nom du fichier journal (la valeur par défaut s’agit de c:\rtlog.etl).  
   
- Exemple :  
+ Par exemple :  
   
 ```  
 BTATIBCORVTrace -transmitter -start -cir 10 -rt c:\log\mylog.etl  

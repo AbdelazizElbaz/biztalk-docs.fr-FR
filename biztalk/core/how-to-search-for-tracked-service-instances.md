@@ -1,27 +1,27 @@
 ---
 title: Comment rechercher des Instances de Service suivies | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b6337df9-8c2e-4d4a-a64b-cc040f83bd91
-caps.latest.revision: "5"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 08e5a7fa563e175d6a1d784e546bd399e20d3c21
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-search-for-tracked-service-instances"></a>Recherche d'instances de service suivies
 Vous pouvez utiliser la **requête** onglet dans le [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] la console Administration pour rechercher toutes les instances de service suivies. Pour localiser les instances de service, vous pouvez effectuer une recherche sur le nom et la version de l'assembly, les heures de début et de fin de sa durée de vie, le nom ou l'ID d'instance de la classe de service, le nom de l'hôte, le code d'erreur et l'état de l'instance de service.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Configuration requise  
  Pour exécuter cette procédure, vous devez ouvrir une session en tant que membre du groupe Opérateurs [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
 ### <a name="to-search-for-tracked-service-instances"></a>Pour rechercher les instances de service suivies  
@@ -55,4 +55,4 @@ Vous pouvez utiliser la **requête** onglet dans le [!INCLUDE[btsBizTalkServerNo
 7.  Continuez à ajouter des lignes supplémentaires à la requête comme il convient en effectuant le **nom de champ**, **opérateur**, et **valeurs** colonnes, puis cliquez sur **exécuter Requête**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide de l’onglet requête de la Console Administration](../core/using-the-administration-console-query-tab.md)
+ [Utilisation de l’onglet Requête de la console Administration](../core/using-the-administration-console-query-tab.md)

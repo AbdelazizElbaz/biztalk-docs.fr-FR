@@ -1,23 +1,23 @@
 ---
-title: "Les Types de données SAP base dans l’adaptateur mySAP dans BizTalk | Documents Microsoft"
-description: "Prise en charge ABAP et la base de données les types de données pour l’adaptateur mySAP dans le Pack de l’adaptateur BizTalk (LOB)"
-ms.custom: 
+title: Les Types de données SAP base dans l’adaptateur mySAP dans BizTalk | Documents Microsoft
+description: Prise en charge ABAP et la base de données les types de données pour l’adaptateur mySAP dans le Pack de l’adaptateur BizTalk (LOB)
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 296b4813-f175-4a02-8fd3-227ae301bc3d
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: f40e7dc6f98e1de2ff0388a8e7e52fdabafc7681
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="basic-sap-data-types"></a>Types de données SAP de base
 Les types de paramètre qui le [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] prend en charge est régies par la :  
@@ -67,13 +67,13 @@ Les types de paramètre qui le [!INCLUDE[adaptersap](../../includes/adaptersap-m
 ### <a name="support-for-date-and-time-fields"></a>Prise en charge pour les champs Date et heure  
  Lors de la saisie sécurisée n’est pas activée, les types de Date ABAP (D) et d’heure (T) sont exposés en tant que XSD : DateTime ; Toutefois, la facette de modèle visible pour les types de Date et d’heure est différente.  
   
--   La facette de modèle pour la Date est la suivante :`(\d\d\d\d-\d\d-\d\d)T(00:00:00)(.*)`  
+-   La facette de modèle pour la Date est la suivante : `(\d\d\d\d-\d\d-\d\d)T(00:00:00)(.*)`  
   
      Par exemple, 7 juillet 2007 (2007-07-07) est représenté en tant que :  
   
      `(2007-07-07)T(00:00:00)`.  
   
--   La facette de modèle pour le moment est la suivante :`(0001-01-01)T(\d\d:\d\d:\d\d)(.*)`  
+-   La facette de modèle pour le moment est la suivante : `(0001-01-01)T(\d\d:\d\d:\d\d)(.*)`  
   
      Par exemple, 18:30:30 (6 h 30 et 30 secondes) est représenté en tant que :  
   
@@ -102,12 +102,12 @@ Les types de paramètre qui le [!INCLUDE[adaptersap](../../includes/adaptersap-m
 |INT4|RFC_INT|xsd:int|Int32|  
 |LANG (clé de langue)|RFC_CHAR|xsd:string|Chaîne|  
 |LCHR|RFC_STRING|xsd:string|Chaîne|  
-|LRAW (seq octets de long)|RFC_BYTE|XSD : base64Binary|Byte[]|  
-|NUMC *|RFC_NUM|xsd:int<br />xsd:long<br />xsd:string|Int32 si longueur < = 9<br />Int64 Si longueur > 9 et < = 19<br />Chaîne si longueur > 19|  
+|LRAW (seq octets de long)|RFC_BYTE|xsd:base64binary|Byte[]|  
+|NUMC*|RFC_NUM|xsd:int<br />xsd:long<br />xsd:string|Int32 si longueur < = 9<br />Int64 Si longueur > 9 et < = 19<br />Chaîne si longueur > 19|  
 |PREC (précision)|RFC_INT2|xsd:short|Int16|  
 |QUAN (quantité)|RFC_BCD|XSD : decimal **Remarque :** le [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] arrondit les valeurs décimales basés sur la définition du paramètre décimal. Par exemple, si un paramètre décimal peut accepter jusqu'à cinq chiffres après la virgule décimale, une valeur telle que 4,000028 est arrondie à 4.00003.|Décimal|  
-|RAW (séquence d’octets)|RFC_BYTE|XSD : base64Binary|Byte[]|  
-|RAWSTRING (de longueur variable)|RFC_BYTE|XSD : base64Binary|Byte[]|  
+|RAW (séquence d’octets)|RFC_BYTE|xsd:base64binary|Byte[]|  
+|RAWSTRING (de longueur variable)|RFC_BYTE|xsd:base64binary|Byte[]|  
 |STRING (longueur variable)|RFC_STRING|xsd:string|Chaîne|  
 |TIM (champ d’heure) *|RFC_TIME|xsd:datetime<br /><br /> En interne, l’adaptateur désérialise la valeur dans un **DateTime** objet. Il appelle ensuite la **DateTime.ToUniversalTime** méthode pour convertir la valeur de cet objet au format UTC. Enfin le composant d’heure (**DateTime.Time**) est utilisé pour créer la valeur qui est envoyée au système SAP. Le système SAP traite cette valeur d’heure en heure locale.<br /><br /> Vous devez spécifier des valeurs d’heure en heure UTC pour éviter la conversion. Le modèle suivant est recommandé de : » (0001-01-01) T (\d\d:\d\d:\d\d)(.*) Z ».<br /><br /> Par exemple, si votre heure locale est 9 h 15, la formulation en tant que « (001-01-01) T (09 : 15:00) Z »|DateTime<br /><br /> Vous devez spécifier des valeurs d’heure en heure UTC (DateTime.Kind = DateTimeKind.Utc) pour éviter la conversion.|  
 |(Unité pour Qty)|RFC_CHAR|xsd:string|Chaîne|  
@@ -132,10 +132,10 @@ Les types de paramètre qui le [!INCLUDE[adaptersap](../../includes/adaptersap-m
   
 |Type RFC|Facette XSD (**EnableSafeTyping** = false)|Facette XSD (**EnableSafeTyping** = true)|  
 |--------------|-------------------------------------------------|------------------------------------------------|  
-|RFC_BCD|**Facette de modèle XSD**<br /><br /> **Nombre de décimales de zéro :**`"([\\-]{0,1})(([0-9]{1,"`  `+ digitsBeforeDecimal +`  `"}))"`<br /><br /> **Nombre de décimales :**`"([\\-]{0,1})(([0-9]{0,"` + `digitsBeforeDecimal +``"}\\.[0-9]{0,"``+ digitsAfterDecimal +``"})&#124;([0-9]{1,"``+ digitsBeforeDecimal +``"}))"`|Même|  
+|RFC_BCD|**Facette de modèle XSD**<br /><br /> **Décimale :** `"([\\-]{0,1})(([0-9]{1,"`  `+ digitsBeforeDecimal +`  `"}))"`<br /><br /> **Un ou plusieurs décimales :** `"([\\-]{0,1})(([0-9]{0,"` + `digitsBeforeDecimal +``"}\\.[0-9]{0,"``+ digitsAfterDecimal +``"})&#124;([0-9]{1,"``+ digitsBeforeDecimal +``"}))"`|Même|  
 |RFC_NUM|**Facette de totalDigits XSD** Si longueur < = 19<br /><br /> **Facette de modèle XSD** Si longueur > 19|**Facette maxLength XSD (dépend de la longueur de la valeur sur SAP)**|  
-|RFC_DATE|**Facette de modèle XSD**<br /><br /> `"(\d\d\d\d-\d\d-\d\d)T(00:00:00)(.*)"`<br /><br /> Modèle contient l’heure 00:00:00 pour être compatible avec`xsd:datetime`|**Facette maxLength XSD = 8**|  
-|RFC_TIME|**Facette de modèle XSD**<br /><br /> `"(0001-01-01)T(\d\d:\d\d:\d\d)(.*)"`<br /><br /> Modèle contient date à 0001-01-01 pour être compatible avec`xsd:datetime`|**Facette maxLength XSD = 6**|  
+|RFC_DATE|**Facette de modèle XSD**<br /><br /> `"(\d\d\d\d-\d\d-\d\d)T(00:00:00)(.*)"`<br /><br /> Modèle contient l’heure 00:00:00 pour être compatible avec `xsd:datetime`|**Facette maxLength XSD = 8**|  
+|RFC_TIME|**Facette de modèle XSD**<br /><br /> `"(0001-01-01)T(\d\d:\d\d:\d\d)(.*)"`<br /><br /> Modèle contient date à 0001-01-01 pour être compatible avec `xsd:datetime`|**Facette maxLength XSD = 6**|  
 |RFC_CHAR|**Facette maxLength XSD**|Même|  
   
 ## <a name="unsupported-data-types"></a>Types de données non pris en charge  

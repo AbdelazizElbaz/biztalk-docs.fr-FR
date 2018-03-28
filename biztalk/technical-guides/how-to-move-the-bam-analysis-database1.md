@@ -1,22 +1,22 @@
 ---
-title: "Comment déplacer la Database1 d’analyse BAM | Documents Microsoft"
-ms.custom: 
+title: Comment déplacer la Database1 d’analyse BAM | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d8094153-072b-427a-b3a0-7310a37cf584
-caps.latest.revision: "2"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: b21168c1955db8bbbae3e29019632807231b40a1
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-move-the-bam-analysis-database"></a>Déplacement de la base de données d'analyse BAM
 Cette procédure vous permet de déplacer la base de données d'analyse BAM vers un autre serveur.  À partir d’un point de vue du scénario de bout en bout, le déplacement de la base de données analyse BAM comprend deux étapes principales :  
@@ -25,10 +25,10 @@ Cette procédure vous permet de déplacer la base de données d'analyse BAM vers
   
 -   [Mise à jour des références à la nouvelle base de données analyse BAM](../technical-guides/how-to-move-the-bam-analysis-database1.md#BKMK_AnalyUpdate)  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Configuration requise  
  Pour exécuter cette procédure, vous devez ouvrir une session à l'aide d'un compte membre du rôle serveur fixe sysadmin [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)].  
   
-##  <a name="BKMK_AnalyMoveDB"></a>Déplacement de la base de données analyse BAM  
+##  <a name="BKMK_AnalyMoveDB"></a> Déplacement de la base de données analyse BAM  
  Effectuez les opérations dans la procédure suivante pour déplacer la base de données analyse BAM.  
   
 #### <a name="to-move-the-bam-analysis-database"></a>Pour déplacer la base de données d'analyse BAM  
@@ -53,14 +53,14 @@ Cette procédure vous permet de déplacer la base de données d'analyse BAM vers
   
 7.  Restaurez la base de données analyse BAM sur le nouveau serveur. Pour obtenir des instructions sur la restauration de la base de données, suivez les instructions à [Comment : restaurer une sauvegarde de base de données (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=156511) (http://go.microsoft.com/fwlink/?LinkId=156511) dans [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] la documentation en ligne sur la façon de restaurer une base de données.  
   
-##  <a name="BKMK_AnalyUpdate"></a>Mise à jour des références à la nouvelle base de données analyse BAM  
+##  <a name="BKMK_AnalyUpdate"></a> Mise à jour des références à la nouvelle base de données analyse BAM  
  Une fois que vous avez déplacé la base de données, vous devez mettre à jour toutes les références à la nouvelle base de données analyse BAM. Les références suivantes doivent être mises à jour :  
   
 -   Mettre à jour la configuration BAM avec les nouveaux noms de base de données et le serveur. Consultez [pour mettre à jour la configuration BAM](../technical-guides/how-to-move-the-bam-analysis-database1.md#BKMK_AnalyUpdateBAMConfig).  
   
 -   Mettre à jour les nouveaux noms de serveur et de base de données dans tous les packages SSIS d’analyse BAM. Consultez [pour mettre à jour les noms de serveur et base de données dans tous les packages BAM SSIS](../technical-guides/how-to-move-the-bam-analysis-database1.md#BKMK_AnalyUpdateSSIS).  
   
-###  <a name="BKMK_AnalyUpdateBAMConfig"></a>Pour mettre à jour la configuration BAM  
+###  <a name="BKMK_AnalyUpdateBAMConfig"></a> Pour mettre à jour la configuration BAM  
   
 1.  Obtenez une copie du fichier .xml utilisé pour restaurer BAM :  
   
@@ -103,7 +103,7 @@ Cette procédure vous permet de déplacer la base de données d'analyse BAM vers
   
      **BM.exe update-config-FileName:BAMConfiguration.xml**  
   
-###  <a name="BKMK_AnalyUpdateSSIS"></a>Pour mettre à jour les noms de serveur et base de données dans tous les packages BAM SSIS  
+###  <a name="BKMK_AnalyUpdateSSIS"></a> Pour mettre à jour les noms de serveur et base de données dans tous les packages BAM SSIS  
   
 1.  Mettre à jour les noms de serveur et de base de données dans tous les lots analyse BAM SSIS qui portent le préfixe « BAM_AN_ ». Pour ce faire, cliquez sur **Démarrer**, cliquez sur **tous les programmes**, cliquez sur **Microsoft SQL Server 2008 R2** ou **Microsoft SQL Server 2008 SP1**, puis cliquez sur **SQL Server Business Intelligence Development Studio**.  
   

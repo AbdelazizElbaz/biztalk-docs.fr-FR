@@ -1,22 +1,22 @@
 ---
-title: "Définir le contexte application | Documents Microsoft"
-ms.custom: 
+title: Définir le contexte application | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e9697155-70c0-4173-80d2-d02d103c397b
-caps.latest.revision: "25"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 88db982be92123a13084892bfc396cb1d89c46ac
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="set-application-context"></a>Définir le contexte application
 Dans [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)], contexte d’application de paramètre est obligatoire pour certains artefacts d’Oracle E-Business Suite (interface tables, vues de l’interface, des programmes simultanés et demande définit) avant de pouvoir effectuer des opérations sur les. Le [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] ne vous permet pas d’effectuer des opérations sur ces artefacts jusqu'à ce que vous avez défini le contexte d’application. Toutefois, pour les artefacts dans la base de données Oracle, c’est à l’utilisateur s’il souhaite définir le contexte d’application ou non.  
@@ -37,7 +37,7 @@ Dans [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusiness
   
 -   **Propriétés de liaison**: le [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] expose les propriétés de liaison suivantes pour définir le contexte de l’application : **OracleEBSOrganizationId**, **OracleUserName**,  **OraclePassword**, **OracleEBSResponsibilityKey**, **OracleEBSResponsibilityName**, et **ApplicationShortName**. Vous n’avez pas besoin de spécifier des valeurs pour toutes ces propriétés de liaison définir le contexte d’application pour les divers artefacts. Pour plus d’informations sur les propriétés de liaison requis pour le contexte d’application de paramètre pour un artefact, voir [propriétés de liaison de paramètre de contexte pour différents artefacts de l’Application](#Binding) plus loin dans cette rubrique.  
   
--   **Les propriétés de contexte du message**: le [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] expose les propriétés de contexte de message suivantes pour définir le contexte de l’application : **ApplicationShortName**, **OrganizationID**, **ResponsibilityKey**, et **ResponsibilityName**. Pour spécifier le nom d’utilisateur et un mot de passe, vous devez utiliser les propriétés de liaison. Pour plus d’informations sur la façon de définir le contexte de l’application à l’aide des propriétés de contexte de message, consultez [configurer les propriétés de contexte de Message à l’aide de Application contexte](../../adapters-and-accelerators/adapter-oracle-ebs/configure-application-context-using-message-context-properties-in-oracle-ebs.md).  
+-   **Les propriétés de contexte du message**: le [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] expose les propriétés de contexte de message suivantes pour définir le contexte de l’application : **ApplicationShortName**, **OrganizationID** , **ResponsibilityKey**, et **ResponsibilityName**. Pour spécifier le nom d’utilisateur et un mot de passe, vous devez utiliser les propriétés de liaison. Pour plus d’informations sur la façon de définir le contexte de l’application à l’aide des propriétés de contexte de message, consultez [configurer les propriétés de contexte de Message à l’aide de Application contexte](../../adapters-and-accelerators/adapter-oracle-ebs/configure-application-context-using-message-context-properties-in-oracle-ebs.md).  
   
 > [!IMPORTANT]
 >  La valeur spécifiée pour le **OracleEBSResponsibilityKey** propriété de liaison remplace la valeur de la **OracleEBSResponsibilityName** propriété de liaison. De même, la valeur spécifiée pour le **ResponsibilityKey** propriété de contexte de message remplace la valeur spécifiée pour le **ResponsibilityName** propriété de contexte de message.  
@@ -105,7 +105,7 @@ Dans [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusiness
   
  La valeur spécifiée pour le **langage** propriété de contexte de message remplace la valeur de la **langage** liaison de la propriété sous la **MlsSettings** propriété de liaison. Pour plus d’informations sur la **MlsSettings** liaison de propriété, consultez [en savoir plus sur l’adaptateur BizTalk pour Oracle E-Business Suite liaison propriétés](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md).  
   
-##  <a name="Binding"></a>Propriétés de liaison pour définir le contexte de l’Application pour les divers artefacts  
+##  <a name="Binding"></a> Propriétés de liaison pour définir le contexte de l’Application pour les divers artefacts  
  Le tableau suivant fournit des informations sur les propriétés de liaison pour laquelle vous devez spécifier les valeurs appropriées pour définir le contexte d’application pour les divers artefacts :  
   
 |Artefacts|OracleEBSOrganizationId|OracleUserName|OraclePassword|OracleEBSResponsibilityKey<br />ou<br />OracleEBSResponsibilityName|ApplicationShortName|  

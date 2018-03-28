@@ -1,26 +1,26 @@
 ---
 title: Syntaxe pour une instruction SELECT dans Siebel | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Data Provider for Siebel, searching and sorting data using
 - Data Provider for Siebel, SELECT statement
 - SELECT statement, syntax for
 ms.assetid: 8528b115-d6f3-420d-8617-0e56dc8922bf
-caps.latest.revision: "4"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: e3eeb0a6d4a1fceebe7e16b3f71566f848e4a20f
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="syntax-for-a-select-statement-in-siebel"></a>Syntaxe pour une instruction SELECT dans Siebel
 À l’aide de la [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)], les clients ADO.NET peuvent effectuer une requête SELECT sur les composants d’entreprise Siebel en spécifiant une clause WHERE qui représente une spécification de recherche Siebel valide. La syntaxe de l’instruction SELECT est la suivante :  

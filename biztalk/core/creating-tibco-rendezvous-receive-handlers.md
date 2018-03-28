@@ -1,23 +1,23 @@
 ---
-title: "Créer TIBCO Rendezvous adaptateur de réception artefacts | Documents Microsoft"
-description: "Créer un port d’envoi, configurez les propriétés de transport pour recevoir des messages à partir de l’adaptateur BizTalk pour TIBCO Rendezvous dans BizTalk Server"
-ms.custom: 
+title: Créer TIBCO Rendezvous adaptateur de réception artefacts | Documents Microsoft
+description: Créer un port d’envoi, configurez les propriétés de transport pour recevoir des messages à partir de l’adaptateur BizTalk pour TIBCO Rendezvous dans BizTalk Server
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2d617a97-c165-46bb-b5a7-b66f0c1ff9f2
-caps.latest.revision: "7"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: ed400a06f07d61f78f62f2633a80deeee293f618
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="create-tibco-rendezvous-receive-artifacts"></a>Créer des artefacts de réception TIBCO Rendezvous
 La création des notifications ou événements est semblable à la création des autres appels dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Cette section décrit la création d'un emplacement de réception pour écouter les messages TIBCO Rendezvous.  
@@ -126,7 +126,7 @@ Lorsque vous configurez l'adaptateur Microsoft BizTalk pour TIBCO Rendezvous pou
     |**Numéro de Page de codes**|Identifie la page de code utilisée par l'expéditeur du message pour coder les chaînes contenues dans les messages entrants. Valeur par défaut est 65001. (L'adaptateur ne peut pas avoir les mêmes objets de message générés à partir de deux environnements de page de code différents.)|  
     |**Substitution de caractères génériques d’élément**|Spécifiez un texte de substitution génériques différents les noms d’objet qu’un emplacement de réception écoute sont utilisés pour générer l’espace de noms cible XML dans les messages obtenus. Par défaut, l'adaptateur remplace tout caractère générique « * » par le texte STARWILDCARD dans les messages générés. Vous pouvez spécifier un caractère générique différent dans ce champ.|  
     |**Nom de file d’attente d’événement**|Spécifiez un nom à utiliser lors de la création de l'objet File d'attente Rendezvous. Il est fourni pour des raisons de commodité car les messages du journal associés affichent le nom de cette file d'attente. Valeur par défaut est vide.|  
-    |**Filter**|Lorsque vous spécifiez des caractères génériques dans les noms d'objet à écouter, l'orchestration cible risque de ne s'intéresser qu'à un sous-ensemble de l'ensemble potentiellement très large d'objets qu'elle pourrait concerner. Pour réduire l'impact sur BizTalk Server et l'accès associé aux bases de données, vous pouvez continuer à spécifier les messages à envoyer à BizTalk Server. Cette entrée contient une liste séparée par un point-virgule des noms d'objet (sans caractère générique autorisé). Tout message correspondant à un nom d'objet spécifié avec un caractère générique mais dont le nom d'objet ne figure pas dans cette liste est filtré (non envoyé à BizTalk Server). La logique du filtre peut être inversée en ajoutant un caractère « ! » au début de la valeur de filtre. Par défaut, aucune valeur n'est spécifiée (aucun filtre).|  
+    |**Filtre**|Lorsque vous spécifiez des caractères génériques dans les noms d'objet à écouter, l'orchestration cible risque de ne s'intéresser qu'à un sous-ensemble de l'ensemble potentiellement très large d'objets qu'elle pourrait concerner. Pour réduire l'impact sur BizTalk Server et l'accès associé aux bases de données, vous pouvez continuer à spécifier les messages à envoyer à BizTalk Server. Cette entrée contient une liste séparée par un point-virgule des noms d'objet (sans caractère générique autorisé). Tout message correspondant à un nom d'objet spécifié avec un caractère générique mais dont le nom d'objet ne figure pas dans cette liste est filtré (non envoyé à BizTalk Server). La logique du filtre peut être inversée en ajoutant un caractère « ! » au début de la valeur de filtre. Par défaut, aucune valeur n'est spécifiée (aucun filtre).|  
     |**Mapper les types non pris en charge à la chaîne**|Les types non pris en charge génèrent une erreur ou sont mappés à la chaîne. Utilisable si l'adaptateur est utilisé avec une version plus récente de TIBCO Rendezvous où de nouveaux types auraient été ajoutés.|  
     |**Membre du groupe BizTalk**|Si défini sur True, les paramètres de file d'attente distribuée (qui font référence au nœud Paramètres de file d'attente distribuée) et les paramètres d'écouteur certifié (qui font référence au nœud Paramètres de l'écouteur certifié) doivent être définis. La valeur par défaut est FALSE.|  
     |**Chemin d'accès**|Défini pour pointer sur les binaires TIBCO Rendezvous si cette information n'est pas déjà dans la variable d'environnement PATH.|  
@@ -142,9 +142,9 @@ Lorsque vous configurez l'adaptateur Microsoft BizTalk pour TIBCO Rendezvous pou
   
     |Paramètre| Description|  
     |---------------|-----------------|  
-    |**Démon**|Tapez l'identificateur numérique du paramètre Démon du transport Rendezvous.|  
-    |**Réseau**|Tapez le nom du paramètre Réseau Rendezvous.|  
-    |**Nom de service**`e`|Tapez le nom du service du transport Rendezvous.|  
+    |**Daemon**|Tapez l'identificateur numérique du paramètre Démon du transport Rendezvous.|  
+    |**Network**|Tapez le nom du paramètre Réseau Rendezvous.|  
+    |**Nom du servic** `e`|Tapez le nom du service du transport Rendezvous.|  
   
 6.  Indiquez les informations d'identification à l'aide de l'authentification unique (SSO).  
   
@@ -170,10 +170,10 @@ Lorsque vous configurez l'adaptateur Microsoft BizTalk pour TIBCO Rendezvous pou
    
 ## <a name="next-steps"></a>Étapes suivantes
   
--   [Recevoir des schémas et traiter les événements](../core/using-tibco-rendezvous-receive-ports-from-biztalk-server.md) 
+-   [Recevoir des schémas et des événements des traitements de données](../core/using-tibco-rendezvous-receive-ports-from-biztalk-server.md) 
   
 -   [Mappage des messages](../core/message-mapping-in-tibco-rendezvous.md)  
   
--   [Mappage de Type de données](../core/data-type-mapping-for-receive-handlers-in-tibco-rendezvous.md)  
+-   [Mappage de types de données](../core/data-type-mapping-for-receive-handlers-in-tibco-rendezvous.md)  
   
 -   [Propriétés de contexte du message (gestionnaires de réception)](../core/biztalk-server-message-context-properties-receive-handlers.md)

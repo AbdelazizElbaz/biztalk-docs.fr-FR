@@ -1,11 +1,11 @@
 ---
 title: Comment rechercher des Instances de Service suspendues | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - service instances, viewing
@@ -16,15 +16,15 @@ helpviewer_keywords:
 - instances, suspended
 - instances, services
 ms.assetid: f91b1151-d879-4aa7-afc8-4cf13d928158
-caps.latest.revision: "19"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 52c0d3ad192ad2cc8f4429f78cfa38ddc97ac837
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-search-for-suspended-service-instances"></a>Recherche des instances de service interrompues
 Vous pouvez utiliser la **requête** onglet dans la Console Administration de BizTalk Server pour rechercher des instances de service suspendues. Vous avez la possibilité de rechercher un sous-ensemble spécifique de messages afin de localiser un message particulier associé à un nom de service, un type, un hôte, etc.  
@@ -35,7 +35,7 @@ Vous pouvez utiliser la **requête** onglet dans la Console Administration de Bi
 > [!NOTE]
 >  En cas de regroupement et de filtrage par URI ou par nom d'adaptateur de l'erreur, seuls les ports d'envoi et de réception sont affichés dans les résultats. Ce type de regroupement et de filtrage ne peut pas être appliqué aux orchestrations, qui ne sont pas incluses dans les résultats.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Configuration requise  
  Pour exécuter cette procédure, vous devez être connecté en tant que membre du groupe des opérateurs de BizTalk Server.  
   
 ### <a name="to-search-for-suspended-service-instances"></a>Pour rechercher les instances de service interrompues  
@@ -72,4 +72,4 @@ Vous pouvez utiliser la **requête** onglet dans la Console Administration de Bi
 7.  Continuez à ajouter des lignes supplémentaires à la requête si nécessaire, en effectuant le **nom de champ**, **opérateur**, et **valeurs** colonnes, puis cliquez sur **exécuter Requête**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide de l’onglet requête de la Console Administration](../core/using-the-administration-console-query-tab.md)
+ [Utilisation de l’onglet Requête de la console Administration](../core/using-the-administration-console-query-tab.md)

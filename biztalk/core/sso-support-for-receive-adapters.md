@@ -1,22 +1,22 @@
 ---
-title: "Prise en charge de l’authentification unique pour les adaptateurs de réception | Documents Microsoft"
-ms.custom: 
+title: Prise en charge de l’authentification unique pour les adaptateurs de réception | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4767387c-f24b-4986-aaed-6724c5d6b347
-caps.latest.revision: "7"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 8e3c992f47ad46b4a9d5ee095ad650f6cc492179
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="sso-support-for-receive-adapters"></a>Prise en charge de l'authentification unique pour les adaptateurs de réception
 L'authentification unique (SSO) de l'entreprise inclut des services permettant de stocker et de transmettre, sous forme chiffrée, des informations d'identification de l'utilisateur au niveau local et réseau, y compris au niveau des domaines. Enregistreurs d’adaptateur de transport peuvent tirer parti des API de l’authentification unique pour gérer les informations d’identification utilisateur à un adaptateur de transport utilise pour accéder aux applications principales.  

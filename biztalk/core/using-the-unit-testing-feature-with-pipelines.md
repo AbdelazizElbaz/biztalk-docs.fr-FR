@@ -1,27 +1,27 @@
 ---
-title: "À l’aide de la fonctionnalité avec des Pipelines de test unitaire | Documents Microsoft"
-ms.custom: 
+title: À l’aide de la fonctionnalité avec des Pipelines de test unitaire | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2d58bfa4-322b-455f-a062-5bd44d368f57
-caps.latest.revision: "11"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: ca19a58410014b9ea7c0c49df7420b439a544581
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="using-the-unit-testing-feature-with-pipelines"></a>Utilisation de la fonctionnalité de test unitaire avec les pipelines
 Cette rubrique décrit l'utilisation de la fonctionnalité de test unitaire en vue d'ajouter un test unitaire au pipeline dans l'exemple de pipeline FlatFileReceive. Test unitaire du pipeline est similaire à l’outil Pipeline.exe est documenté ici : [outils de Pipeline](../core/pipeline-tools.md). Lorsque vous activez les tests unitaires sur le **déploiement** onglet des propriétés du projet, la classe de pipeline dans votre projet est dérivée de **Microsoft.BizTalk.TestTools.Pipeline.TestableReceivePipeline**.  Cette classe définit certaines des fonctionnalités exposées par l'outil Pipeline.exe.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Configuration requise  
  Vous devez commencer par suivre les étapes de création de l'exemple FlatFileReceive et vous familiariser avec cet exemple. La documentation qui inclut les étapes de création de l’exemple FlatFileReceive se trouve ici : [FlatFileReceive (exemple BizTalk Server)](../core/flatfilereceive-biztalk-server-sample.md).  
   
 ## <a name="adding-a-unit-test-project-to-the-flatfilereceive-sample"></a>Ajout d'un projet de test unitaire à l'exemple FlatFileReceive  

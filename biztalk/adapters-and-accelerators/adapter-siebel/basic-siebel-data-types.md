@@ -1,23 +1,24 @@
 ---
-title: "Types de données de base Siebel | Documents Microsoft"
-ms.custom: 
+title: Types de données de base Siebel | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: Siebel data types, supported
+helpviewer_keywords:
+- Siebel data types, supported
 ms.assetid: bf86f639-6c45-49db-9e58-79c3ad2c9978
-caps.latest.revision: "4"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 0266f445c2fd8a7cba9a0e2089b9542813230580
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="basic-siebel-data-types"></a>Types de données de base Siebel
 Cette section décrit comment les types de données Siebel sont prises en charge sur le [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)].  
@@ -29,16 +30,16 @@ Cette section décrit comment les types de données Siebel sont prises en charge
 |---------------|--------------|---------------|-----------------|  
 |DTYPE_BOOL|xsd:boolean|Booléen|-|  
 |DTYPE_CURRENCY|xsd:decimal|Décimal|-|  
-|DTYPE_DATE|XSD:DateTime*|DateTime|La valeur ne doit pas être temps universel coordonné (UTC).<br /><br /> -Pour XSD : DateTime, les valeurs sont attendues pour suivre ce modèle : « (\d\d\d\d-\d\d-\d\d)T(00:00:00) (.\*) ».<br />-Pour **DateTime** objets,**DateTime.Kind** doit être **DateTimeKind.Unspecified**.<br /><br /> Le composant heure sera ignoré par l’adaptateur.<br /><br /> Pour les messages sortants, l’adaptateur effectue une validation d’exécution pour vous assurer que la valeur spécifiée n’est pas UTC (z ou au décalage UTC). Si cette validation échoue, l’adaptateur lève une exception.<br /><br /> Lorsque ce type est exposé en tant que XSD : String (selon les règles expliqués ci-dessous) :<br /><br /> -Le format est déterminé par la base de données sous-jacente.<br />-Aucune exécution de validation de la valeur.|  
-|DTYPE_DATETIME|XSD:DateTime*|DateTime|La valeur peut contenir des composants de date et heure et ne doit pas être UTC.<br /><br /> -Pour **DateTime** objets, **DateTime.Kind** doit être **DateTimeKind.Unspecified**.<br /><br /> Pour les messages sortants, l’adaptateur effectue une validation de l’exécution pour vous assurer que ces conditions sont remplies ; Si la validation échoue, l’adaptateur lève une exception.<br /><br /> Lorsque ce type est exposé en tant que XSD : String (selon les règles expliqués ci-dessous) :<br /><br /> -Le format est déterminé par la base de données sous-jacente.<br />-Aucune exécution de validation de la valeur.|  
+|DTYPE_DATE|xsd:dateTime*|DateTime|La valeur ne doit pas être temps universel coordonné (UTC).<br /><br /> -Pour XSD : DateTime, les valeurs sont attendues pour suivre ce modèle : « (\d\d\d\d-\d\d-\d\d)T(00:00:00) (.\*) ».<br />-Pour **DateTime** objets,**DateTime.Kind** doit être **DateTimeKind.Unspecified**.<br /><br /> Le composant heure sera ignoré par l’adaptateur.<br /><br /> Pour les messages sortants, l’adaptateur effectue une validation d’exécution pour vous assurer que la valeur spécifiée n’est pas UTC (z ou au décalage UTC). Si cette validation échoue, l’adaptateur lève une exception.<br /><br /> Lorsque ce type est exposé en tant que XSD : String (selon les règles expliqués ci-dessous) :<br /><br /> -Le format est déterminé par la base de données sous-jacente.<br />-Aucune exécution de validation de la valeur.|  
+|DTYPE_DATETIME|xsd:dateTime*|DateTime|La valeur peut contenir des composants de date et heure et ne doit pas être UTC.<br /><br /> -Pour **DateTime** objets, **DateTime.Kind** doit être **DateTimeKind.Unspecified**.<br /><br /> Pour les messages sortants, l’adaptateur effectue une validation de l’exécution pour vous assurer que ces conditions sont remplies ; Si la validation échoue, l’adaptateur lève une exception.<br /><br /> Lorsque ce type est exposé en tant que XSD : String (selon les règles expliqués ci-dessous) :<br /><br /> -Le format est déterminé par la base de données sous-jacente.<br />-Aucune exécution de validation de la valeur.|  
 |DTYPE_ID|xsd:string|Chaîne|-|  
 |DTYPE_INTEGER|xsd:int|Int32|-|  
 |DTYPE_NOTE|xsd:string|Chaîne|-|  
 |DTYPE_NUMBER|xsd:decimal|Décimal|-|  
 |DTYPE_PHONE|xsd:string|Chaîne|-|  
 |DTYPE_TEXT|xsd:string|Chaîne|-|  
-|DTYPE_TIME|XSD:DateTime*|DateTime|La valeur ne doit pas être UTC.<br /><br /> -Pour XSD : DateTime, les valeurs sont attendues pour suivre ce modèle : (1753-01-01)T(\d\d:\d\d:\d\d) (.\*) ».<br />-Pour **DateTime** objets**, DateTime.Kind** doit être **DateTimeKind.Unspecified**.<br /><br /> Pour les messages sortants, l’adaptateur effectue une validation d’exécution pour vous assurer que la valeur spécifiée n’est pas UTC (z ou au décalage UTC). Si cette validation échoue, l’adaptateur lève une exception.<br /><br /> Lorsque ce type est exposé en tant que XSD : String (basé sur les règles expliqués ci-dessous) :<br /><br /> -Le format est déterminé par la base de données sous-jacente.<br />-Aucune exécution de validation de la valeur.|  
-|DTYPE_UTCDATETIME|XSD:DateTime*|DateTime|La valeur peut contenir des composants de date et heure et doit être l’heure UTC.<br /><br /> -Pour XSD : DateTime, la valeur doit être exprimée en heure UTC (la notation 'Z' ou au décalage UTC).<br />-Pour **DateTime** objets **DateTime.Kind** doit être **DateTimeKind.Utc**.<br /><br /> Pour les messages sortants, l’adaptateur effectue une validation de l’exécution pour vous assurer que ces conditions sont remplies ; Si la validation échoue, l’adaptateur lève une exception.<br /><br /> Lorsque ce type est exposé en tant que XSD : String (selon les règles expliqués ci-dessous) :<br /><br /> -Le format est déterminé par la base de données sous-jacente.<br />-Aucune exécution de validation de la valeur.|  
+|DTYPE_TIME|xsd:dateTime*|DateTime|La valeur ne doit pas être UTC.<br /><br /> -Pour XSD : DateTime, les valeurs sont attendues pour suivre ce modèle : (1753-01-01)T(\d\d:\d\d:\d\d) (.\*) ».<br />-Pour **DateTime** objets**, DateTime.Kind** doit être **DateTimeKind.Unspecified**.<br /><br /> Pour les messages sortants, l’adaptateur effectue une validation d’exécution pour vous assurer que la valeur spécifiée n’est pas UTC (z ou au décalage UTC). Si cette validation échoue, l’adaptateur lève une exception.<br /><br /> Lorsque ce type est exposé en tant que XSD : String (basé sur les règles expliqués ci-dessous) :<br /><br /> -Le format est déterminé par la base de données sous-jacente.<br />-Aucune exécution de validation de la valeur.|  
+|DTYPE_UTCDATETIME|xsd:dateTime*|DateTime|La valeur peut contenir des composants de date et heure et doit être l’heure UTC.<br /><br /> -Pour XSD : DateTime, la valeur doit être exprimée en heure UTC (la notation 'Z' ou au décalage UTC).<br />-Pour **DateTime** objets **DateTime.Kind** doit être **DateTimeKind.Utc**.<br /><br /> Pour les messages sortants, l’adaptateur effectue une validation de l’exécution pour vous assurer que ces conditions sont remplies ; Si la validation échoue, l’adaptateur lève une exception.<br /><br /> Lorsque ce type est exposé en tant que XSD : String (selon les règles expliqués ci-dessous) :<br /><br /> -Le format est déterminé par la base de données sous-jacente.<br />-Aucune exécution de validation de la valeur.|  
   
  Voici les types d’arguments de méthode Service métier :  
   
@@ -68,18 +69,18 @@ Cette section décrit comment les types de données Siebel sont prises en charge
   
 |Type de Siebel|Facette|  
 |-----------------|-----------|  
-|DTYPE_BOOL|Aucune|  
+|DTYPE_BOOL|Aucun|  
 |DTYPE_CURRENCY|Précision (22), mise à l’échelle|  
-|DTYPE_DATE|(\d\d\d\d-\d\d-\d\d) T(00:00:00)(.*)|  
-|DTYPE_DATETIME|Aucune|  
+|DTYPE_DATE|(\d\d\d\d-\d\d-\d\d)T(00:00:00)(.*)|  
+|DTYPE_DATETIME|Aucun|  
 |DTYPE_ID|MaxLength (15)|  
 |DTYPE_INTEGER|Précision (22)|  
 |DTYPE_NOTE|MaxLength (16384)|  
 |DTYPE_NUMBER|Précision (22), mise à l’échelle|  
 |DTYPE_PHONE|MaxLength (40)|  
 |DTYPE_TEXT|MaxLength (2048)|  
-|DTYPE_TIME|(1753-01-01) T(\d\d:\d\d:\d\d)(.*)|  
-|DTYPE_UTCDATETIME|Aucune|  
+|DTYPE_TIME|(1753-01-01)T(\d\d:\d\d:\d\d)(.*)|  
+|DTYPE_UTCDATETIME|Aucun|  
   
  Les éléments suivants sont des règles qui déterminent quand et comment les facettes et leurs valeurs, sont publiés :  
   

@@ -1,23 +1,23 @@
 ---
-title: "Ajouter l’adaptateur BizTalk pour JD Edwards EnterpriseOne | Documents Microsoft"
-description: "Ajouter JD Edwards EnterpriseOne sur l’Administration de BizTalk, créer le port d’envoi, configurez les propriétés de transport et utiliser les pipelines XMLReceive et XMLTransmit lors de l’utilisation de l’adaptateur JD Edwards EnterpriseOne dans BizTalk Server"
-ms.custom: 
+title: Ajouter l’adaptateur BizTalk pour JD Edwards EnterpriseOne | Documents Microsoft
+description: Ajouter JD Edwards EnterpriseOne sur l’Administration de BizTalk, créer le port d’envoi, configurez les propriétés de transport et utiliser les pipelines XMLReceive et XMLTransmit lors de l’utilisation de l’adaptateur JD Edwards EnterpriseOne dans BizTalk Server
+ms.custom: ''
 ms.date: 10/18/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: baecebcd-c324-40aa-bacf-876f45b6c37f
-caps.latest.revision: "9"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 46496172a1f436a302e5131f5ff55ede66c2a751
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configure-jd-edwards-enterpriseone-artifacts-in-biztalk-administration"></a>Configurer les artefacts de JD Edwards EnterpriseOne dans Administration de BizTalk
 L'adaptateur Microsoft BizTalk pour J.D.Edwards EnterpriseOne contient les dossiers des gestionnaires de réception et d'envoi. Les dossiers incluent BizTalkServerApplication. L'adaptateur BizTalk pour J.D.Edwards EnterpriseOne peut être créé. Il est exécuté de façon In-process avec BizTalk Server et n'est pas exécuté dans un processus d'hôte isolé.  
@@ -78,10 +78,10 @@ Les propriétés de transport de JD Edwards EnterpriseOne sont utilisées au mo
     |Utilisez cette|Pour ce faire|  
     |--------------|----------------|  
     |**Propriétés obligatoires de l’adaptateur**||  
-    |Hôte|Tapez le nom de l'ordinateur du serveur hôte (par exemple :<br /><br /> `actsvr1`)<br /><br /> --ou--<br /><br /> Tapez l'adresse IP de l'ordinateur (par exemple,<br /><br /> `123.456.0.789`)|  
+    |Hôte|Tapez le nom de l'ordinateur du serveur hôte (par exemple :<br /><br /> `actsvr1`)<br /><br /> --or--<br /><br /> Tapez l'adresse IP de l'ordinateur (par exemple,<br /><br /> `123.456.0.789`)|  
     |JAVA_HOME|Tapez le chemin d'accès complet à votre installation JDK (par exemple,<br /><br /> `C:\jdk1sdk1.4.2_07`)|  
     |Environnement JDEdwards|Tapez le nom d’un environnement de JD Edwards EnterpriseOne (par exemple, `DV7333`).<br /><br /> DV7333 correspond à un nom commun d'environnement de développement, PY7333 au nom commun de l'environnement de prototype et PD7333 au nom commun de l'environnement de production.|  
-    |Fichiers JAR JDEdwards|Entrez le nom complet du fichier et du chemin d'accès pour chaque fichier JAR :<br /><br /> -C:\JDEOWJars\Connector.jar<br />-C:\JDEOWJars\Kernel.jar<br />-Program Files\Microsoft BizTalk Adapters for applications\j.d d’entreprise. Edwards EnterpriseOne(r)\Classes\JDEDynAccess.jar<br /><br /> Chaque fichier JAR doit être séparé par un point-virgule (;) et ne doit comporter aucun espace (par exemple :<br /><br /> `<c:>\Connector.jar;<c:>\Kernel.jar;`)|  
+    |Fichiers JAR JDEdwards|Entrez le nom complet du fichier et du chemin d'accès pour chaque fichier JAR :<br /><br /> -   C:\JDEOWJars\Connector.jar<br />-   C:\JDEOWJars\Kernel.jar<br />-Program Files\Microsoft BizTalk Adapters for applications\j.d d’entreprise. Edwards EnterpriseOne(r)\Classes\JDEDynAccess.jar<br /><br /> Chaque fichier JAR doit être séparé par un point-virgule (;) et ne doit comporter aucun espace (par exemple :<br /><br /> `<c:>\Connector.jar;<c:>\Kernel.jar;`)|  
     |Mot de passe|Tapez un mot de passe utilisateur. Si vous n'utilisez pas l'authentification unique (SSO), vous devez alors définir des paramètres d'informations d'identification pour l'adaptateur BizTalk pour JD Edwards EnterpriseOne afin d'accéder au système du serveur. Le mot de passe correspond au nom d'utilisateur et détermine les autorisations qui vous sont octroyées lors de l'accès à la base de données.|  
     |Port|Tapez l’identificateur numérique de l’envoi ou de port de réception (par exemple, `6009`).|  
     |Nom d'utilisateur|Tapez le nom de l’utilisateur, puis cliquez sur **OK**.|  
@@ -90,7 +90,7 @@ Les propriétés de transport de JD Edwards EnterpriseOne sont utilisées au mo
     |Propriétaire de la base de données|Tapez le nom du propriétaire de la base de données.|  
     |Nom du serveur de base de données|Tapez le nom du serveur de base de données.|  
     |Port du serveur de base de données|Tapez le numéro d'identification du port du serveur de base de données|  
-    |Type de base de données|Tapez un seul caractère pour le type de base de données. Exemple :<br /><br /> **Je** -iSeries<br /><br /> **O** -Oracle<br /><br /> **S** -SQL Server<br /><br /> **L** -SQL Server OLEDB<br /><br /> **W** -UDB|  
+    |Type de base de données|Tapez un seul caractère pour le type de base de données. Par exemple :<br /><br /> **Je** -iSeries<br /><br /> **O** -Oracle<br /><br /> **S** -SQL Server<br /><br /> **L** -SQL Server OLEDB<br /><br /> **W** - UDB|  
     |Nom de la base de données physique|Tapez le nom de la base de données physique. Ce nom est obligatoire pour tous les types de bases de données.|  
     |**Contrôle de l’accès concurrentiel**||  
     |Nombre maximal d'appels simultanés|Tapez une valeur numérique pour le **nombre maximal d’appels simultanés**. Ce nombre représente le nombre maximal d’appels simultanés, par exemple, `10`.<br /><br /> La valeur par défaut de ce champ est 5.|  

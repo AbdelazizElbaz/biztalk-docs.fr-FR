@@ -1,22 +1,22 @@
 ---
-title: "Propriétés par défaut de mise en attente | Documents Microsoft"
-ms.custom: 
+title: Propriétés par défaut de mise en attente | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 68c59def-d73b-4880-9884-ccbe5d982f4b
-caps.latest.revision: "7"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: ff78b1e096f1a73675ffc02550794f5a300f5614
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="dehydration-default-properties"></a>Propriétés par défaut de mise en attente
 Vous trouverez ci-après les noms des propriétés de mise en attente et leurs valeurs par défaut. Ces propriétés peuvent être configurées dans le [!INCLUDE[btsSettingsDashboard](../includes/btssettingsdashboard-md.md)] ou dans le code XML du fichier de configuration de BizTalk (BTSNTSvc.exe.config ou BTSNTSvc64.exe.config). Les valeurs contenues dans le fichier de configuration de BizTalk sont appliquées en premier. Les paramètres du [!INCLUDE[btsSettingsDashboard](../includes/btssettingsdashboard-md.md)] sont ensuite appliqués. Les propriétés de mise en attente sont lues lorsque toutes les instances de l’hôte contenant une orchestration démarrent.  
@@ -34,7 +34,7 @@ Vous trouverez ci-après les noms des propriétés de mise en attente et leurs v
   
 -   **ConstantThreshold** = -1  
   
- **Pour VirtualMemoryThrottlingCriteria**  
+ **VirtualMemoryThrottlingCriteria**  
   
 -   **OptimalUsage** = 900  
   
@@ -42,7 +42,7 @@ Vous trouverez ci-après les noms des propriétés de mise en attente et leurs v
   
 -   **IsActive** = true  
   
- **Pour PrivateMemoryThrottlingCriteria**  
+ **PrivateMemoryThrottlingCriteria**  
   
 -   **OptimalUsage** = 50  
   
@@ -50,7 +50,7 @@ Vous trouverez ci-après les noms des propriétés de mise en attente et leurs v
   
 -   **IsActive** = true  
   
- **Pour PhysicalMemoryThrottlingCriteria**  
+ **PhysicalMemoryThrottlingCriteria**  
   
 -   **OptimalUsage** = 90  
   

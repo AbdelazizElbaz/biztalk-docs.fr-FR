@@ -1,11 +1,11 @@
 ---
-title: "Installation et la résolution des problèmes de Configuration | Documents Microsoft"
-ms.custom: 
+title: Installation et la résolution des problèmes de Configuration | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - installing, troubleshooting
@@ -13,15 +13,15 @@ helpviewer_keywords:
 - troubleshooting, configuring
 - troubleshooting, installing
 ms.assetid: 25a2f6c5-c049-4042-8e38-4f7a2556e066
-caps.latest.revision: "13"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 62cb7d6181c7be44f7095a6c1d1149132df4e21e
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="installation-and-configuration-troubleshooting"></a>Installation et la résolution des problèmes de Configuration
 ## <a name="setup-is-unable-to-deploy-the-runtimeschemas-assembly"></a>Le programme d’installation ne parvient pas à déployer l’assembly RuntimeSchemas  
@@ -34,7 +34,7 @@ ms.lasthandoff: 01/17/2018
   
 -   L’assembly de schémas d’exécution a déjà été déployé lorsque vous avez essayé d’effectuer une installation initiale d’A4SWIFT.  
   
--   [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] n’a pas démarré sur l’ordinateur sur lequel vous avez essayé d’installer A4SWIFT.  
+-   [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] n’a pas démarré sur l’ordinateur sur lequel vous avez essayé d’installer A4SWIFT.  
   
 -   L’assembly de schémas d’exécution a déjà été déployé lorsque vous a tenté de mettre à niveau A4SWIFT et a été référencé par un autre assembly. Cet a empêché l’annulation du déploiement de l’assembly de schémas d’exécution par le A4SWIFT mettre à niveau le programme.  
   

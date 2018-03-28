@@ -16,7 +16,7 @@ ms.openlocfilehash: 4edf1353a9f06103205e1e6e4296c2aa77e74dc6
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-the-edi-disassembler-works"></a>Fonctionnement du Désassembleur EDI
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] effectue la plus grande partie du traitement des échanges EDI reçus dans le pipeline de réception EDI (`Microsoft.BizTalk.DefaultPipelines.EDIReceivePipeline`). Ce pipeline inclut le composant de pipeline Désassembleur EDI, qui effectue le traitement suivant :  

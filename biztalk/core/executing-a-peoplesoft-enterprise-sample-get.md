@@ -1,29 +1,29 @@
 ---
-title: "L’exécution d’un exemple d’opération Get PeopleSoft Enterprise | Documents Microsoft"
-ms.custom: 
+title: L’exécution d’un exemple d’opération Get PeopleSoft Enterprise | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eb54f14c-3fce-44d6-91bb-cb1ca38a20da
-caps.latest.revision: "27"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 29cf6bba03e6a43bb3fdedf0742741e48ac22dd6
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="execute-a-peoplesoft-enterprise-sample-get"></a>Exécuter un exemple d’opération Get PeopleSoft Enterprise
 Le système PeopleSoft est accessible à partir de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] à l'aide de l'adaptateur PeopleSoft. Cette carte est incluse avec [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].
   
  Il s'agit de la deuxième partie de l'atelier PeopleSoft. Au cours de la première partie (Atelier 1), vous avez consulté et modifié les données du système PeopleSoft sans utiliser [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ou d'autres technologies Microsoft. Dans la deuxième partie (Atelier 2), vous allez créer une orchestration BizTalk au sein d'un projet BizTalk [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]. Vous allez configurer les ports de cette orchestration de manière à ce qu'ils utilisent l'adaptateur PeopleSoft pour extraire des données du système PeopleSoft.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Configuration requise  
   
 -   Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]
   
@@ -80,7 +80,7 @@ Le système PeopleSoft est accessible à partir de [!INCLUDE[btsBizTalkServerNoV
   
     1.  **Nom :**  `PeopleSoftSamplePort`  
   
-    2.  **Type :**  `PeopleSoft`  
+    2.  **Type:**  `PeopleSoft`  
   
     3.  **Gestionnaire d’envoi :**  `BizTalkServerApplication`  
   
@@ -148,7 +148,7 @@ Le système PeopleSoft est accessible à partir de [!INCLUDE[btsBizTalkServerNoV
   
 3.  Dans la page **Sélectionner un type de port** , sélectionnez **Créer un type de port**, puis entrez ou sélectionnez les valeurs de propriété suivantes :  
   
-     **Nom du Type de port**:`FileInPort`  
+     **Nom du Type de port**: `FileInPort`  
   
      **Modèle de communication**: **Unidirectionnel**  
   
@@ -172,7 +172,7 @@ Le système PeopleSoft est accessible à partir de [!INCLUDE[btsBizTalkServerNoV
   
 3.  Dans la page **Sélectionner un type de port** , sélectionnez **Créer un type de port**, puis entrez ou sélectionnez les valeurs de propriété suivantes :  
   
-     **Nom du Type de port**:`FileOutPort`  
+     **Nom du Type de port**: `FileOutPort`  
   
      **Modèle de communication**: **Unidirectionnel**  
   
@@ -196,7 +196,7 @@ Le système PeopleSoft est accessible à partir de [!INCLUDE[btsBizTalkServerNoV
   
 3.  Dans la page **Sélectionner un type de port** , sélectionnez **Utiliser un type de port existant**. Sous **Types de ports disponibles**, sélectionnez **PS_Test.LOCATION**, puis cliquez sur **Suivant**.  
   
-     ![](../core/media/d8b443ec-294d-4124-a29d-aeb42bbb107e.gif "d8b443ec-294d-4124-A29D-aeb42bbb107e")  
+     ![](../core/media/d8b443ec-294d-4124-a29d-aeb42bbb107e.gif "d8b443ec-294d-4124-a29d-aeb42bbb107e")  
   
 4.  Cliquez sur **Suivant** pour accéder à la page **Liaison de port** , puis sélectionnez les valeurs de propriété suivantes :  
   
@@ -240,7 +240,7 @@ Le système PeopleSoft est accessible à partir de [!INCLUDE[btsBizTalkServerNoV
   
      ![](../core/media/5ec92b81-4a55-4d44-a360-78a6aaa64255.gif "5ec92b81-4a55-4d44-a360-78a6aaa64255")  
   
-     ![](../core/media/04b31c26-73a6-40a6-8d50-39c7c929d6a1.gif "04b31c26-73a6-40A6-8d50-39c7c929d6a1")  
+     ![](../core/media/04b31c26-73a6-40a6-8d50-39c7c929d6a1.gif "04b31c26-73a6-40a6-8d50-39c7c929d6a1")  
   
 6.  Sélectionnez la forme Envoi **To_PS** et définissez la propriété **Message** associée sur **PS_Msg**.  
   
@@ -250,7 +250,7 @@ Le système PeopleSoft est accessible à partir de [!INCLUDE[btsBizTalkServerNoV
   
 9. Connectez la forme Envoi **From_PS** à la section **Response** de la méthode **Get** sur le port **PeopleSoft_Port** .  
   
-     ![](../core/media/d16e02bc-954c-4aa2-99d6-3fee1222c730.gif "d16e02bc-954c-4aa2-99D6-3fee1222c730")  
+     ![](../core/media/d16e02bc-954c-4aa2-99d6-3fee1222c730.gif "d16e02bc-954c-4aa2-99d6-3fee1222c730")  
   
 ## <a name="step-4-build-and-deploy-the-project"></a>Étape 4 : Créer et déployer le projet  
  Le projet BizTalk étant à présent terminé, vous pouvez le créer et le déployer dans [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].  
@@ -288,7 +288,7 @@ Le système PeopleSoft est accessible à partir de [!INCLUDE[btsBizTalkServerNoV
   
      `C:\LABS\PS_TEST\SAMPLEQUERY.XML`  
   
-3.  Cliquez sur **OK.** Dans la fenêtre Propriétés, sélectionnez  **\<schéma\>**  et **référence de racine : obtenir**.  
+3.  Cliquez sur **OK.** Dans la fenêtre Propriétés, sélectionnez **\<schéma\>** et **référence de racine : obtenir**.  
   
 4.  Cliquez avec le bouton droit sur **LOCATIONService_LOCATION_x5d.xsd** , puis cliquez sur **Générer l'instance**. Cette opération génère le fichier **SampleQuery.xml** . Ce fichier sera transmis à l'emplacement de réception en tant qu'entrée de l'adaptateur pour démarrer le processus d'orchestration.  
   
@@ -320,13 +320,13 @@ Le système PeopleSoft est accessible à partir de [!INCLUDE[btsBizTalkServerNoV
   
      **Pipeline de réception**: **XMLReceive**  
   
-     ![](../core/media/613a5dbc-effe-4827-a72b-d16eef8d0e8a.gif "613a5dbc-EFFE-4827-a72b-d16eef8d0e8a")  
+     ![](../core/media/613a5dbc-effe-4827-a72b-d16eef8d0e8a.gif "613a5dbc-effe-4827-a72b-d16eef8d0e8a")  
   
 7.  Cliquez sur **Configurer** , tapez `C:\LABS\PS_TEST\FILEIN` sur **Dossier de réception**, puis cliquez sur **OK** à trois reprises.  
   
      ![](../core/media/513eebb0-58ca-4aaa-a33b-31700f9cf7a8.gif "513eebb0-58ca-4aaa-a33b-31700f9cf7a8")  
   
-8.  Cliquez sur  **\<aucun\>**  pour **PeopleSoft_Port** dans la liste déroulante.  
+8.  Cliquez sur **\<aucun\>** pour **PeopleSoft_Port** dans la liste déroulante.  
   
 9. Sélectionnez **Nouveau port d'envoi** , puis sélectionnez ou tapez les valeurs de propriété suivantes.  
   
@@ -356,7 +356,7 @@ Le système PeopleSoft est accessible à partir de [!INCLUDE[btsBizTalkServerNoV
   
 11. Cliquez sur **OK** à deux reprises pour fermer les boîtes de dialogue.  
   
-12. Dans la Applicationwindow configurer, cliquez sur  **\<aucun\>**  pour **FileOut** dans la liste déroulante.  
+12. Dans la Applicationwindow configurer, cliquez sur **\<aucun\>** pour **FileOut** dans la liste déroulante.  
   
 13. Sélectionnez **Nouveau port d'envoi** , puis sélectionnez ou tapez les valeurs de propriété suivantes :  
   
@@ -395,9 +395,9 @@ Le système PeopleSoft est accessible à partir de [!INCLUDE[btsBizTalkServerNoV
   
 3.  Après quelques secondes, un fichier XML doit apparaître dans le dossier **C:\Labs\PS_Test\FileOut** . Il doit contenir les données de l'enregistrement dans lequel l'emplacement est défini sur AUS01.  
   
-     ![](../core/media/1320ea3c-b2bc-4717-b200-c3c550079ccb.gif "1320ea3c-b2bc-4717-B200-c3c550079ccb")  
+     ![](../core/media/1320ea3c-b2bc-4717-b200-c3c550079ccb.gif "1320ea3c-b2bc-4717-b200-c3c550079ccb")  
   
-     Ces données d'enregistrement retournées doivent correspondre à ce qui a été retourné par la requête sur le système PeopleSoft dans l'Atelier pratique 1 PeopleSoft. En comparant les valeurs obtenu à l’atelier 1, en particulier le **Address1** et **Address2** lignes, ce qui est présenté ici dans le  **\<emplacement : ADDRESS1\>**  et  **\<emplacement : ADDRESS2\>**  champs, vous pouvez vérifier que le **obtenir** a fonctionné correctement.  
+     Ces données d'enregistrement retournées doivent correspondre à ce qui a été retourné par la requête sur le système PeopleSoft dans l'Atelier pratique 1 PeopleSoft. En comparant les valeurs obtenu à l’atelier 1, en particulier le **Address1** et **Address2** lignes, ce qui est présenté ici dans le **\<emplacement : ADDRESS1\>** et **\<emplacement : ADDRESS2\>** champs, vous pouvez vérifier que le **obtenir** a fonctionné correctement.  
   
 ## <a name="summary"></a>Résumé  
  Au cours de cet atelier, vous avez vérifié que tous les composants permettant d'accéder au système PeopleSoft étaient correctement installés. Puis vous avez utilisé [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] pour créer un projet BizTalk contenant une orchestration. Vous avez configuré l'orchestration BizTalk de manière à ce qu'elle utilise l'adaptateur PeopleSoft pour extraire des données du système PeopleSoft. Pour configurer l'orchestration, vous avez créé des ports d'envoi, des ports de réception et des ports d'envoi/réception. Vous avez lié ces ports à l'adaptateur PeopleSoft, puis affecté des messages aux ports appropriés.  

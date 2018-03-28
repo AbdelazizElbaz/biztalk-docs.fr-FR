@@ -1,11 +1,11 @@
 ---
-title: "Faits typés | Documents Microsoft"
-ms.custom: 
+title: Faits typés | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - RuleEngine library
@@ -17,18 +17,18 @@ helpviewer_keywords:
 - TypedDataRow class
 - TypedXmlDocument class
 ms.assetid: 8207bfd5-ebd2-45ac-8992-795acdf3ba4c
-caps.latest.revision: "7"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: a6041a64fcc4b3496c319a25a2ce758ed7f52a71
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="typed-facts"></a>Faits typés
-*Faits typés* sont des classes qui implémentent la **ITypedFact** interface : **TypedXmlDocument**, **DataConnection**,  **TypedDataTable**, et **TypedDataRow**.  
+*Faits typés* sont des classes qui implémentent la **ITypedFact** interface : **TypedXmlDocument**, **DataConnection**, **TypedDataTable** , et **TypedDataRow**.  
   
 ## <a name="typedxmldocument"></a>TypedXmlDocument  
  Le **TypedXmlDocument** classe représente le type de document XML dans l’infrastructure de règles d’entreprise. Lorsque vous utilisez un nœud d’un document XML en tant qu’argument dans une règle, les deux expressions XPath sont créées : les liaisons sélecteur et champ.  
@@ -51,7 +51,7 @@ Case.xsd
 |Propriété|Valeur|  
 |--------------|-----------|  
 |**Champ XPath**|*[local-name()='Name' and namespace-uri()='']|  
-|**Sélecteur XPath**|/*[local-name()='Root' and namespace-uri()='http://LoansProcessor.Case']|  
+|**Sélecteur XPath**|/ * [local-name () = « Root » et namespace-uri() ='http://LoansProcessor.Case']|  
   
  Vous pouvez modifier les expressions XPath par défaut pour les nœuds XML avant de faire glisser le nœud vers un argument de règle, auquel cas les nouvelles informations de liaison sont placées dans la stratégie. Notez toutefois que toute modification apportée aux expressions XPath doit être entrée à nouveau dans l'Éditeur des règles d'entreprise quand le schéma est rechargé.  
   

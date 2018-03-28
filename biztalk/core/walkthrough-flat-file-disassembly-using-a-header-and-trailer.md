@@ -1,23 +1,23 @@
 ---
-title: "Procédure pas à pas : Désassemblage de fichier plat à l’aide d’un en-tête et un code de fin | Documents Microsoft"
-description: "Utilisez l’Assistant schéma de fichier plat pour créer un schéma d’en-tête, le schéma de code de fin et le schéma de corps, puis désassembler un fichier plat dans BizTalk Server"
-ms.custom: 
+title: 'Procédure pas à pas : Désassemblage de fichier plat à l’aide d’un en-tête et un code de fin | Documents Microsoft'
+description: Utilisez l’Assistant schéma de fichier plat pour créer un schéma d’en-tête, le schéma de code de fin et le schéma de corps, puis désassembler un fichier plat dans BizTalk Server
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 715af9cc-d718-483d-b593-64462aa5a58b
-caps.latest.revision: "16"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: b7c1406367f047794c6d8931352104bb59e6ca5b
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="walkthrough-flat-file-disassembly-using-a-header-and-trailer"></a>Procédure pas à pas : Désassemblage de fichier plat à l’aide d’un en-tête et un code de fin
 
@@ -32,7 +32,7 @@ Cette procédure pas à pas illustre l'utilisation de schémas créés par l'Ass
   
  Au terme de la procédure pas à pas, vous disposez d'une application BizTalk Server qui traite les fichiers plats et les convertit au format XML en vue de leur traitement par un système principal.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Configuration requise  
  Cet exemple nécessite que vous soyez familiarisé avec la création de projets BizTalk, la signature d'un assembly et l'utilisation de la console Administration de BizTalk Server pour afficher les applications et les ports. Vous devez également être familiarisé avec les concepts présentés dans [procédure pas à pas : déploiement d’une Application BizTalk base](../core/walkthrough-deploying-a-basic-biztalk-application.md). Les notions de base de l'Assistant Schéma de fichier plat sont également utiles mais pas nécessaires.  
   
 ## <a name="what-this-example-does"></a>Ce que fait cet exemple  
@@ -64,7 +64,7 @@ Avant de générer des schémas, vous devez créer un fichier de test.
     BatchID  
     ```  
   
-    L’enregistrement ERROR est marqué avec le texte « Erreur » et délimité avec le « &#124; « caractère (et non pas positionnel). Les données qu'il contient sont décrites dans le tableau suivant.  
+    L’enregistrement ERROR est marqué avec le texte « Erreur » et délimité avec le «&#124;» caractères (et non pas positionnel). Les données qu'il contient sont décrites dans le tableau suivant.  
   
     |Élément|Type de données| Description|  
     |---|---|---|  
@@ -128,7 +128,7 @@ Avant de générer des schémas, vous devez créer un fichier de test.
   
      Lorsque vous êtes satisfait, cliquez sur **Terminer** pour terminer l’Assistant.  
   
-10. Cliquez sur le  **\<schéma\>**  nœud dans le volet Schéma d’en-tête. Dans le volet Propriétés, modifiez **Element FormDefault** à **Qualified**. Vous indiquez ainsi que les éléments déclarés localement doivent être qualifiés par l'espace de noms cible dans un document d'instance.  
+10. Cliquez sur le **\<schéma\>** nœud dans le volet Schéma d’en-tête. Dans le volet Propriétés, modifiez **Element FormDefault** à **Qualified**. Vous indiquez ainsi que les éléments déclarés localement doivent être qualifiés par l'espace de noms cible dans un document d'instance.  
   
 ##### <a name="use-the-flat-file-schema-wizard-to-create-the-trailer-schema"></a>Utilisez l’Assistant schéma de fichier plat pour créer le schéma de code de fin  
   
@@ -165,7 +165,7 @@ Avant de générer des schémas, vous devez créer un fichier de test.
   
      Lorsque vous êtes satisfait, cliquez sur **Terminer** pour terminer l’Assistant.  
   
-10. Cliquez sur le  **\<schéma\>**  nœud dans le volet Schéma de code de fin. Dans le volet Propriétés, modifiez **elementFormDefault** à **Qualified**. Vous indiquez ainsi que les éléments déclarés localement doivent être qualifiés par l'espace de noms cible dans un document d'instance.  
+10. Cliquez sur le **\<schéma\>** nœud dans le volet Schéma de code de fin. Dans le volet Propriétés, modifiez **elementFormDefault** à **Qualified**. Vous indiquez ainsi que les éléments déclarés localement doivent être qualifiés par l'espace de noms cible dans un document d'instance.  
   
 ##### <a name="use-the-flat-file-schema-wizard-to-create-the-body-schema"></a>Utilisez l’Assistant schéma de fichier plat pour créer le schéma de corps  
   
@@ -216,9 +216,9 @@ Avant de générer des schémas, vous devez créer un fichier de test.
   
      Si vous avez apporté des erreurs, cliquez sur **nouveau** et apporter les corrections nécessaires. Lorsque vous êtes satisfait, cliquez sur **Terminer** pour terminer l’Assistant.  
   
-15. Cliquez sur le  **\<schéma\>**  nœud dans le volet Schéma de corps. Dans le volet Propriétés, modifiez **Element FormDefault** à **Qualified**. Vous indiquez ainsi que les éléments déclarés localement doivent être qualifiés par l'espace de noms cible dans un document d'instance.  
+15. Cliquez sur le **\<schéma\>** nœud dans le volet Schéma de corps. Dans le volet Propriétés, modifiez **Element FormDefault** à **Qualified**. Vous indiquez ainsi que les éléments déclarés localement doivent être qualifiés par l'espace de noms cible dans un document d'instance.  
   
-16. Cliquez sur le  **\<erreur\>**  nœud dans le volet Schéma de corps. Dans le volet Propriétés, modifiez **Max Occurs** à **1**. Le désassembleur de fichier plat fractionne alors chaque erreur dans son propre message.  
+16. Cliquez sur le **\<erreur\>** nœud dans le volet Schéma de corps. Dans le volet Propriétés, modifiez **Max Occurs** à **1**. Le désassembleur de fichier plat fractionne alors chaque erreur dans son propre message.  
   
 ##### <a name="test-the-schemas-using-ffdasm"></a>Tester les schémas à l’aide de FFDasm  
   
@@ -281,7 +281,7 @@ Avant de générer des schémas, vous devez créer un fichier de test.
   
 1.  Utilisez l’Explorateur Windows pour créer un répertoire nommé « Send » sous le **FFDisassemblerWalkthrough** répertoire du projet.  
   
-2.  Dans la console Administration de BizTalk Server, développez le **FlatFileExample** application, avec le bouton droit **Ports d’envoi**, pointez sur **nouveau**, puis cliquez sur  **Port d’envoi unidirectionnel statique...** .  
+2.  Dans la console Administration de BizTalk Server, développez le **FlatFileExample** application, avec le bouton droit **Ports d’envoi**, pointez sur **nouveau**, puis cliquez sur **Port d’envoi unidirectionnel statique...**.  
   
 3.  Dans le **propriétés de Port d’envoi** boîte de dialogue, définissez le nom du port sur « Send ».  
   
@@ -289,7 +289,7 @@ Avant de générer des schémas, vous devez créer un fichier de test.
   
 5.  Configurez à présent le filtre. Cliquez sur **filtres** et ajouter une expression :  
   
-    -   BIZTALK SERVER. MessageType == **http://FFDisassemblerWalkthrough.Body#Body**  
+    -   BTS.MessageType == **http://FFDisassemblerWalkthrough.Body#Body**  
   
 6.  Cliquez sur **OK** pour terminer la configuration de port d’envoi. Votre port d'envoi devrait à présent être configuré.  
   

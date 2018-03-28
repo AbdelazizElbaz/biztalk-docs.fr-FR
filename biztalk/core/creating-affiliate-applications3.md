@@ -1,11 +1,11 @@
 ---
-title: "Création d’applications associées à des Applications3 | Documents Microsoft"
-ms.custom: 
+title: Création d’applications associées à des Applications3 | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - affiliate applications
@@ -14,15 +14,15 @@ helpviewer_keywords:
 - affiliate applications, creating
 - SSO tickets
 ms.assetid: 800644fd-2286-4e59-894b-260f584dd29f
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 857ee7edd623332e72176ac09082f0ec9fc460f4
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="creating-affiliate-applications"></a>Création d’Applications associées
 Les procédures suivantes décrivent l'utilisation des applications associées à l'aide de l'authentification unique (SSO).  
@@ -38,9 +38,9 @@ Les procédures suivantes décrivent l'utilisation des applications associées �
   
 2.  Dans une invite de commandes, accédez au dossier Enterprise Single Sign-On.  
   
-     Exemple :  
+     Par exemple :  
   
-     **C:\Program Files\Common Files\Enterprise Single Sign-On >**  
+     **C:\Program Files\Common Files\Enterprise Single Sign-On>**  
   
 3.  Utilisez les commandes du service de l'authentification unique de l'entreprise Pour obtenir la liste des commandes, utilisez le commutateur -help.  
   
@@ -48,7 +48,7 @@ Les procédures suivantes décrivent l'utilisation des applications associées �
   
 4.  Pour créer l’application associée à l’aide la *. XML en tant qu’un début, tapez la commande suivante :  
   
-     **ssomanage.exe - createapps C:\SSOtest\AffiliateApplication.xml**  
+     **ssomanage.exe -createapps C:\SSOtest\AffiliateApplication.xml**  
   
      où :  
   
@@ -56,7 +56,7 @@ Les procédures suivantes décrivent l'utilisation des applications associées �
   
      AffiliateApplication.xml est l’application XML que vous avez créé contenant les informations de connexion.  
   
-     Exemple :  
+     Par exemple :  
   
     ```  
     <?xml version="1.0"?>  

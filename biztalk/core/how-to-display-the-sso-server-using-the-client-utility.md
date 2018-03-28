@@ -1,26 +1,26 @@
 ---
-title: "Comment afficher le serveur d’authentification unique à l’aide de l’utilitaire Client | Documents Microsoft"
-ms.custom: 
+title: Comment afficher le serveur d’authentification unique à l’aide de l’utilitaire Client | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - applications [SSO], viewing servers
 - managing [SSO applications], viewing servers
 - SSOClient [SSO], viewing servers
 ms.assetid: af79ad96-6d94-48e0-9c80-6f0e38a3b8ac
-caps.latest.revision: "8"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 1fa4394d3a45c7d0c273d82446b1a5e11d500348
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-display-the-sso-server-using-the-client-utility"></a>Comment afficher le serveur d’authentification unique à l’aide de l’utilitaire Client
 Cette commande permet d'afficher le serveur d'authentification unique sur lequel l'utilisateur pointe actuellement.  

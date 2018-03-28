@@ -21,7 +21,7 @@ ms.openlocfilehash: 64e4c8f15d167f5343089c11b92b0f373aa45576
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="distinguished-fields-in-disassembler-pipeline-components"></a>Composants de Pipeline désassembleur les champs distinctifs
 Les champs distinctifs définis dans un schéma sont consignés selon le format suivant dans le contexte de message par les composants de pipeline Désassembleur XML, Désassembleur BizTalk Framework ou Désassembleur de fichier plat :  

@@ -1,22 +1,22 @@
 ---
-title: "Étape 2 : Modifier ou créer l’envoi et Ports de réception | Documents Microsoft"
-ms.custom: 
+title: 'Étape 2 : Modifier ou créer l’envoi et Ports de réception | Documents Microsoft'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8d96d02c-b75d-4d18-a127-37002c5ff138
-caps.latest.revision: "12"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 0fa94183f0eb83dc51fc0add22ba50484f7282fb
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-2-modify-or-create-the-send-and-receive-ports"></a>Étape 2 : Modifier ou créer l’envoi et Ports de réception
 Vous avez besoin d’envoi de fichiers et les ports de réception pour le lot dans / Out didacticiel du lot. Si vous avez cliqué sur le **lancer le didacticiel** bouton à la fin de l’installation de l’édition Enterprise de [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] créé ces ports : un port d’envoi nommé Tutorial_BTAHL7Drop et un port de réception nommé Tutorial_BTAHL7PickUp. Si vous disposez de ces ports, vous devez modifier le port d’envoi Tutorial_BTAHL7Drop.  
@@ -33,7 +33,7 @@ Vous avez besoin d’envoi de fichiers et les ports de réception pour le lot da
   
 4.  Dans l’arborescence de la console, cliquez sur **filtres**.  
   
-5.  Dans le **filtres** volet, dans la deuxième ligne, sélectionnez **BTAHL7Schemas.MessageClass** pour **propriétés**, sélectionnez  **==**  pour **Opérateur**et le type **MessageClass2X** pour **valeur**. Cliquez sur **Entrée**.  
+5.  Dans le **filtres** volet, dans la deuxième ligne, sélectionnez **BTAHL7Schemas.MessageClass** pour **propriétés**, sélectionnez **==** pour **Opérateur**et le type **MessageClass2X** pour **valeur**. Cliquez sur **Entrée**.  
   
 6.  Définissez **regrouper par** sur la **BTS. ReceivePortName** à la ligne **ou**, puis cliquez sur **OK**.  
   
@@ -68,7 +68,7 @@ Vous avez besoin d’envoi de fichiers et les ports de réception pour le lot da
   
     |Utiliser|Pour effectuer cette opération|  
     |--------------|----------------|  
-    |**Dossier de réception**|Accédez à  **\<**  *lecteur***\>: \Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_BTAHL7PickUp**. **Remarque :** il s’agit du chemin d’accès à l’emplacement sur le système de fichiers ou le partage public où [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] prennent en charge le fichier.|  
+    |**Dossier de réception**|Accédez à  **\< ***lecteur***\>: \Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_BTAHL7PickUp**. **Remarque :** il s’agit du chemin d’accès à l’emplacement sur le système de fichiers ou le partage public où [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] prennent en charge le fichier.|  
     |**Masque de fichier**|Type  **\*.txt**.|  
   
 12. Cliquez sur **OK**.  
@@ -78,7 +78,7 @@ Vous avez besoin d’envoi de fichiers et les ports de réception pour le lot da
     |Utiliser|Pour effectuer cette opération|  
     |--------------|----------------|  
     |**Gestionnaire de réception**|Conserver **BizTalkServerApplication** comme étant sélectionnée.|  
-    |**Pipeline de réception**|Sélectionnez **BTAHL72XPipelines.BTAHL72XReceivePipeline**.|  
+    |**Pipeline de réception**|Select **BTAHL72XPipelines.BTAHL72XReceivePipeline**.|  
   
 14. Cliquez sur **OK**.  
   
@@ -100,7 +100,7 @@ Vous avez besoin d’envoi de fichiers et les ports de réception pour le lot da
   
     |Utiliser|Pour effectuer cette opération|  
     |--------------|----------------|  
-    |**Dossier de destination**|Accédez à  **\<**  *lecteur***:\>\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_BTAHL7Drop**. **Remarque :** le chemin d’accès à l’emplacement sur le système de fichiers ou le partage public auquel [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] réécrit le fichier.|  
+    |**Dossier de destination**|Accédez à  **\< ***lecteur***:\>\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End en bout Tutorial\Tutorial_BTAHL7Drop**. **Remarque :** le chemin d’accès à l’emplacement sur le système de fichiers ou le partage public auquel [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] réécrit le fichier.|  
     |**Nom de fichier**|Type **%MessageID%.txt** (Notez que l’extension est txt, xml pas).|  
   
 4.  Cliquez sur **OK**.  
@@ -112,12 +112,12 @@ Vous avez besoin d’envoi de fichiers et les ports de réception pour le lot da
     |Utiliser|Pour effectuer cette opération|  
     |--------------|----------------|  
     |**Propriété**|Sélectionnez **BTS. ReceivePortName** dans la liste déroulante.|  
-    |**Opérateur**|Laissez  **==**  comme l’opérateur.|  
-    |**Valeur**|Type **Tutorial_BTAHL7PickUp**.|  
+    |**Opérateur**|Laissez **==** comme l’opérateur.|  
+    |**Value**|Type **Tutorial_BTAHL7PickUp**.|  
     |**Regrouper par**|Sélectionnez **ou** dans la liste déroulante.|  
     |**Propriété**|Sélectionnez **BTAHL7Schemas.MessageClass**.|  
-    |**Opérateur**|Laissez  **==**  comme l’opérateur.|  
-    |**Valeur**|Type **MessageClass2X**.|  
+    |**Opérateur**|Laissez **==** comme l’opérateur.|  
+    |**Value**|Type **MessageClass2X**.|  
   
 7.  Cliquez sur **Entrée**. Dans le volet du bas de la boîte de dialogue, vérifiez que l’expression de filtre est correcte.  
   

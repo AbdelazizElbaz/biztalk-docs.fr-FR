@@ -1,22 +1,22 @@
 ---
-title: "Procédure pas à pas : Appel de la stratégie à partir d’une Orchestration | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Appel de la stratégie à partir d’une Orchestration | Documents Microsoft'
+ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cb2d2974-8a36-4d36-905c-799e4236ef99
-caps.latest.revision: "30"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 36de942d34a4235b689b464192a460451e7c921a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="walkthrough-invoking-the-policy-from-an-orchestration"></a>Procédure pas à pas : Appel de la stratégie à partir d’une Orchestration
 Vous pouvez appeler une stratégie à partir d'une orchestration à l'aide de l'une des méthodes suivantes :  
@@ -27,7 +27,7 @@ Vous pouvez appeler une stratégie à partir d'une orchestration à l'aide de l'
   
  À l’aide de la **appeler règles** forme est la façon la plus courante et recommandée pour appeler une stratégie à partir d’une orchestration. Cette procédure pas à pas fournit des instructions détaillées pour l’utilisation de la **appeler règles** forme pour appeler le **ProcessPurchaseOrder** stratégie.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Configuration requise  
  Vous devez effectuer la [procédure pas à pas : test de la stratégie](../core/walkthrough-testing-the-policy.md) procédure pas à pas avant d’effectuer cette procédure pas à pas.  
   
 ## <a name="overview-of-this-walkthrough"></a>Vue d’ensemble de cette procédure pas à pas  
@@ -47,7 +47,7 @@ Vous pouvez appeler une stratégie à partir d'une orchestration à l'aide de l'
   
 1.  Démarrer **Microsoft Visual Studio**.  
   
-2.  Dans [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], dans le **fichier** menu, pointez sur **nouveau**, puis cliquez sur **projet**.  
+2.  Dans [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], dans le menu **Fichier** , pointez sur **Nouveau**, puis cliquez sur **Projet**.  
   
 3.  Dans le **nouveau projet** boîte de dialogue zone, procédez comme suit :  
   
@@ -90,13 +90,13 @@ Vous pouvez appeler une stratégie à partir d'une orchestration à l'aide de l'
   
 15. Dans la fenêtre Propriétés, remplacez le nom de la **envoyer** à mettre en forme **SendPO**. L'orchestration doit présenter l'aspect suivant :  
   
-     ![BRE &#45; Procédure pas à pas &#45; UnconfiguredOrch](../core/media/1f3502ac-82a9-40bf-ae31-6e8356a283e2.gif "1f3502ac-82a9-40bf-ae31-6e8356a283e2")  
+     ![BRE&#45;Walkthrough&#45;UnconfiguredOrch](../core/media/1f3502ac-82a9-40bf-ae31-6e8356a283e2.gif "1f3502ac-82a9-40bf-ae31-6e8356a283e2")  
   
 ### <a name="to-create-message-variables"></a>Pour créer des variables de message  
   
 1.  Dans la fenêtre Vue Orchestration, cliquez sur **Messages**, puis cliquez sur **nouveau Message**. Si vous ne voyez pas la fenêtre Vue Orchestration, cliquez sur le **vue** menu, pointez sur **autres fenêtres**, puis cliquez sur **Vue Orchestration**. Normalement, la fenêtre Vue Orchestration correspond à l'onglet situé à côté de celui de la fenêtre Explorateur de solutions. Par défaut, le nouveau message nommé **Message_1**.  
   
-     ![BRE &#45; Procédure pas à pas &#45; OrchViewNewMsg](../core/media/a0b7fee3-af90-4c01-9464-146f0ca449e5.gif "a0b7fee3-af90-4c01-9464-146f0ca449e5")  
+     ![BRE&#45;Walkthrough&#45;OrchViewNewMsg](../core/media/a0b7fee3-af90-4c01-9464-146f0ca449e5.gif "a0b7fee3-af90-4c01-9464-146f0ca449e5")  
   
 2.  Dans la fenêtre Vue Orchestration, cliquez sur **Message_1**.  
   
@@ -107,7 +107,7 @@ Vous pouvez appeler une stratégie à partir d'une orchestration à l'aide de l'
     |**Identificateur**|Type **POInst**, puis appuyez sur ENTRÉE.|  
     |**Type de message**|Dans la liste déroulante, développez **schémas**, puis sélectionnez **RuleTest.PO**.|  
   
-     ![BRE &#45; Procédure pas à pas &#45; MsgProps](../core/media/c82cfb67-63f6-4133-95bf-daadac0e213a.gif "c82cfb67-63f6-4133-95bf-daadac0e213a")  
+     ![BRE&#45;Walkthrough&#45;MsgProps](../core/media/c82cfb67-63f6-4133-95bf-daadac0e213a.gif "c82cfb67-63f6-4133-95bf-daadac0e213a")  
   
 ### <a name="to-configure-shapes"></a>Pour configurer des formes  
   
@@ -119,9 +119,9 @@ Vous pouvez appeler une stratégie à partir d'une orchestration à l'aide de l'
   
 4.  Dans le **configuration de la stratégie appeler règles** boîte de dialogue, sélectionnez **ProcessPurchaseOrder** pour la stratégie.  
   
-5.  Cliquez sur Suivant pour  **\*** ci-dessous **nom de paramètre**, puis sélectionnez **POInst** en tant que paramètre à la stratégie.  
+5.  Cliquez sur Suivant pour **\***ci-dessous **nom de paramètre**, puis sélectionnez **POInst** en tant que paramètre à la stratégie.  
   
-     ![BRE &#45; Procédure pas à pas &#45; ConfigureCallRules](../core/media/0e7dab04-41db-433b-bbf5-b13901033b41.gif "0e7dab04-41db-433b-bbf5-b13901033b41")  
+     ![BRE&#45;Walkthrough&#45;ConfigureCallRules](../core/media/0e7dab04-41db-433b-bbf5-b13901033b41.gif "0e7dab04-41db-433b-bbf5-b13901033b41")  
   
 6.  Cliquez sur **OK**.  
   
@@ -163,11 +163,11 @@ Vous pouvez appeler une stratégie à partir d'une orchestration à l'aide de l'
   
 1.  Connecter le **ReceivePOPrt** port pour le **ReceivePO** forme. (dans la surface du port, faites glisser la flèche à droite du port ReceivePort vers la boîte de la forme ReceivePO).  
   
-     ![BRE &#45; Procédure pas à pas &#45; ConnectRP](../core/media/75bdf79e-ca98-43bb-8ff6-5f46005a6490.gif "75bdf79e-ca98-43bb-8ff6-5f46005a6490")  
+     ![BRE&#45;Walkthrough&#45;ConnectRP](../core/media/75bdf79e-ca98-43bb-8ff6-5f46005a6490.gif "75bdf79e-ca98-43bb-8ff6-5f46005a6490")  
   
 2.  Connecter le **SendPO** à mettre en forme le **SendPOPrt** port.  
   
-     ![BRE &#45; Procédure pas à pas &#45; ConnectSP](../core/media/7513f52b-2782-4357-b8eb-1874dec33869.gif "7513f52b-2782-4357-b8eb-1874dec33869")  
+     ![BRE&#45;Walkthrough&#45;ConnectSP](../core/media/7513f52b-2782-4357-b8eb-1874dec33869.gif "7513f52b-2782-4357-b8eb-1874dec33869")  
   
 ### <a name="to-build-and-deploy-the-solution"></a>Pour créer et déployer la solution  
   
@@ -183,7 +183,7 @@ Vous pouvez appeler une stratégie à partir d'une orchestration à l'aide de l'
   
 6.  Spécifiez **RuleTestApp** comme nom d’application.  
   
-     ![BRE &#45; Procédure pas à pas &#45; RuleTestApp](../core/media/b153e5b0-ca46-4d27-bfa1-9ad4e58e9787.gif "b153e5b0-ca46-4d27-bfa1-9ad4e58e9787")  
+     ![BRE&#45;Walkthrough&#45;RuleTestApp](../core/media/b153e5b0-ca46-4d27-bfa1-9ad4e58e9787.gif "b153e5b0-ca46-4d27-bfa1-9ad4e58e9787")  
   
 7.  Cliquez sur **OK**.  
   
@@ -205,7 +205,7 @@ Vous pouvez appeler une stratégie à partir d'une orchestration à l'aide de l'
   
 6.  Cliquez sur **Orchestration_1**et spécifiez **BizTalkServerApplication** en tant que l’ordinateur hôte.  
   
-     ![BRE &#45; Procédure pas à pas &#45; AppHost](../core/media/ba348a98-661f-4e71-8b9b-b8c5fadf035a.gif "ba348a98-661f-4e71-8b9b-b8c5fadf035a")  
+     ![BRE&#45;Walkthrough&#45;AppHost](../core/media/ba348a98-661f-4e71-8b9b-b8c5fadf035a.gif "ba348a98-661f-4e71-8b9b-b8c5fadf035a")  
   
 7.  Cliquez sur **OK**.  
   
@@ -241,4 +241,4 @@ Vous pouvez appeler une stratégie à partir d'une orchestration à l'aide de l'
 ## <a name="see-also"></a>Voir aussi  
  [Évaluation de la condition et exécution d’Action](../core/condition-evaluation-and-action-execution.md)   
  [Agenda et priorité](../core/agenda-and-priority.md)   
- [Appel des règles d’entreprise dans les Orchestrations](../core/invoking-business-rules-in-orchestrations.md)
+ [Appel des règles d’entreprise dans les orchestrations](../core/invoking-business-rules-in-orchestrations.md)

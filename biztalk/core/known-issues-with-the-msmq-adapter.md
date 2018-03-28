@@ -1,22 +1,22 @@
 ---
-title: "Problèmes connus avec l’adaptateur MSMQ | Documents Microsoft"
-ms.custom: 
+title: Problèmes connus avec l’adaptateur MSMQ | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ce77cdac-79c1-4529-8f09-0fb1f87ca037
-caps.latest.revision: "11"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 67f210d0e480a311aed0bed5d50f6a827bd6ea4e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="known-issues-with-the-msmq-adapter"></a>Problèmes connus avec l'adaptateur MSMQ
 Cette section contient des informations qui peuvent vous permettre d'éviter certaines erreurs.  
@@ -79,7 +79,7 @@ Cette section contient des informations qui peuvent vous permettre d'éviter cer
   
  **ID d’événement : 7011**  
   
- **Description :**  
+ **Description:**  
   
  **Délai d’attente (30 000 millisecondes) attend une réponse de transaction à partir du service BTSSvc$ BizTalkServerApplication.**  
   

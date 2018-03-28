@@ -1,28 +1,28 @@
 ---
 title: Importer des liaisons pour TIBCO EMS | Documents Microsoft
-description: "Déployer votre adaptateur BizTalk pour les applications de TIBCO Enterprise Message Service à l’aide de la fonctionnalité d’importation des liaisons dans BizTalk Server"
-ms.custom: 
+description: Déployer votre adaptateur BizTalk pour les applications de TIBCO Enterprise Message Service à l’aide de la fonctionnalité d’importation des liaisons dans BizTalk Server
+ms.custom: ''
 ms.date: 10/23/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 69dae448-4ec6-4a56-a628-bb447bc21b62
-caps.latest.revision: "7"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 79f7f3ec0478746b8c2c6762fe212229f9c7b11d
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="deploy-tibco-ems-ports-and-assemblies"></a>Déployer des assemblys et des ports de TIBCO EMS
 
 ## <a name="overview"></a>Vue d'ensemble
-Avec [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], vous pouvez dupliquer des ports et des assemblys sur un ordinateur cible. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]configuration de l’emplacement de réception/ports d’envoi exporte dans un fichier XML.  
+Avec [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], vous pouvez dupliquer des ports et des assemblys sur un ordinateur cible. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] configuration de l’emplacement de réception/ports d’envoi exporte dans un fichier XML.  
   
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] permet d'exécuter les tâches suivantes :  
   

@@ -1,20 +1,20 @@
 ---
-title: "Résoudre les problèmes et les problèmes connus avec l’accélérateur BizTalk du RosettaNet (BTARN) installé sur BizTalk Server | Documents Microsoft »"
-description: "Recommandations pour l’installation de SQL, le compte de service pour les instances d’hôte et les erreurs connues avec l’installation de BTARN dans BizTalk Server"
+title: Résoudre les problèmes et les problèmes connus avec l’accélérateur BizTalk du RosettaNet (BTARN) installé sur BizTalk Server | Documents Microsoft »
+description: Recommandations pour l’installation de SQL, le compte de service pour les instances d’hôte et les erreurs connues avec l’installation de BTARN dans BizTalk Server
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-ms.assetid: 
+ms.assetid: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: cdca89c1a7a4ed3834103776f9f28c8631c5de0a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="troubleshoot-the-installation-and-see-the-known-install-issues"></a>Résoudre les problèmes de l’installation et de voir les problèmes d’installation connus
 
@@ -103,7 +103,7 @@ Supprimer les références au filtre ISAPI du proxy RPC et redémarrer les servi
   
 3.  Redémarrez IIS.  
   
-4.  Après avoir redémarré IIS, essayez d'accéder à http://localhost. Vous devrez recevoir le message 400 du navigateur Internet.  
+4.  Après avoir redémarré IIS, essayez d’accéder à http://localhost. Vous devrez recevoir le message 400 du navigateur Internet.  
   
 ### <a name="sql-server-mixed-mode-not-supported"></a>SQL Server en Mode mixte non pris en charge.  
 BTARN ne prend pas en charge SQL Server en mode mixte.  

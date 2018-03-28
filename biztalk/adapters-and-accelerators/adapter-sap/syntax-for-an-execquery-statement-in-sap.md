@@ -1,22 +1,22 @@
 ---
 title: Syntaxe pour une instruction EXECQUERY dans SAP | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 99bd7fbb-64f2-4327-a8ae-ccb574e56150
-caps.latest.revision: "14"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 5198335cfa1a7d2036ca05759edc7d04e28cc20b
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="syntax-for-an-execquery-statement-in-sap"></a>Syntaxe pour une instruction EXECQUERY dans SAP
 Vous pouvez utiliser l’interface utilisateur graphique SAP pour créer des requêtes en sélectionnant graphiquement les tables que vous souhaitez interroger, les colonnes et l’ordre que vous souhaitez inclure dans le jeu de résultats, etc. de tri. Le [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] permet aux utilisateurs d’exécuter ces requêtes à partir d’une application ADO.NET en fournissant une opération EXECQUERY qui permettent aux utilisateurs d’exécuter une requête définie dans le système SAP.  
@@ -47,7 +47,7 @@ EXECQUERY <QueryName> @USERGROUP='usergroup' [, @WORKSPACE='X'] [, @VARIANT='var
   
 -   **VARIANT** fait référence à un jeu de critères de sélection que vous pouvez spécifier lors de l’exécution d’une requête SAP enregistré. Par exemple, vous pouvez utiliser les variantes pour spécifier les valeurs par défaut pour les requêtes.  
   
--   **@Pn**fait référence à n<sup>th</sup> champ de sélection dans la définition de requête SAP.  
+-   **@Pn** fait référence à n<sup>th</sup> champ de sélection dans la définition de requête SAP.  
   
 -   **USEORIGINALCOLUMNNAMES** Spécifie si le fournisseur utilise les noms de colonne d’origine dans le jeu de données, tels qu’ils existent dans le système SAP. Par défaut, le fournisseur utilise les noms conviviaux définis dans la requête SAP. Toutefois, si les noms conviviaux dans la requête ne sont pas uniques, le client ADO.NET génère une erreur lors de la lecture des données à partir du DataSet. Dans de tels scénarios, vous devez spécifier l’option USEORIGINALCOLUMNNAMES, en indiquant que le fournisseur utilise les noms de colonne d’origine dans le jeu de données.  
   
@@ -67,7 +67,7 @@ EXECQUERY <QueryName> @USERGROUP='usergroup' [, @WORKSPACE='X'] [, @VARIANT='var
   
 -   Les valeurs retournées par l’opération EXECQUERY sont de type chaîne.  
   
--   Mots clés pour les noms de requêtes, groupe d’utilisateurs, espace de travail et les variantes ne respectent pas la casse. Toutefois, les noms de paramètre doivent toujours être dans caseP supérieur comme @P1, @P2, etc. Exemple :  
+-   Mots clés pour les noms de requêtes, groupe d’utilisateurs, espace de travail et les variantes ne respectent pas la casse. Toutefois, les noms de paramètre doivent toujours être dans caseP supérieur comme @P1, @P2, etc. Par exemple :  
   
     ```  
     EXECQUERY xyz USERGROUP=’mygrp’, NOT @P1= 'somevalue'  
@@ -87,7 +87,7 @@ EXECQUERY <QueryName> @USERGROUP='usergroup' [, @WORKSPACE='X'] [, @VARIANT='var
     EXECQUERY ZTEST3 @USERGROUP='SYSTQV000024',  @P1 = '0000003262',@P2 = 'La Quinta Hotel & Towers'  
     ```  
   
-     Toutefois, la même requête lors de l’exécution avec un caractère générique génère une erreur. Notez l’utilisation de caractères génériques pour  **@P2** .  
+     Toutefois, la même requête lors de l’exécution avec un caractère générique génère une erreur. Notez l’utilisation de caractères génériques pour **@P2**.  
   
     ```  
     EXECQUERY ZTEST3 @USERGROUP='SYSTQV000024',  @P1 = '0000003262',@P2 = '*&*'  
@@ -97,7 +97,7 @@ EXECQUERY <QueryName> @USERGROUP='usergroup' [, @WORKSPACE='X'] [, @VARIANT='var
   
 -   Vous devez toujours spécifier une valeur de date au format AAAAMMJJ.  
   
--   Si vous exécutez une requête qui est une variante définie dans le système SAP, vous pouvez spécifier le nom de la variante en tant que partie de la commande. Exemple :  
+-   Si vous exécutez une requête qui est une variante définie dans le système SAP, vous pouvez spécifier le nom de la variante en tant que partie de la commande. Par exemple :  
   
     ```  
     EXECQUERY myquery @usergroup='mygroup',@variant = 'variant1'  

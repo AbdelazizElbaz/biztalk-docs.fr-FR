@@ -1,23 +1,23 @@
 ---
-title: "ID de nœud de métadonnées de l’adaptateur mySAP dans le Pack d’adaptateurs BizTalk | Documents Microsoft"
-description: "Métadonnées, search, les types de nœuds de récupération et les identificateurs utilisés dans les composants SAP qui sont exposées dans l’adaptateur mySAP - Pack de l’adaptateur BizTalk (LOB)"
-ms.custom: 
+title: ID de nœud de métadonnées de l’adaptateur mySAP dans le Pack d’adaptateurs BizTalk | Documents Microsoft
+description: Métadonnées, search, les types de nœuds de récupération et les identificateurs utilisés dans les composants SAP qui sont exposées dans l’adaptateur mySAP - Pack de l’adaptateur BizTalk (LOB)
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 46385060-f56a-4e06-9122-b75808776716
-caps.latest.revision: "4"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 138e46b198df48348dcef35662589f6a3c2e317a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="node-types-and-ids-for-the-sap-adapter"></a>Types de nœuds et ID de l’adaptateur SAP
 
@@ -26,26 +26,26 @@ Le tableau suivant répertorie le type de nœud et l’ID de nœud pour les arte
   
 |Nom complet de l’objet|Type de nœud|ID de nœud|  
 |---------------------------|---------------|-------------|  
-|RFC|CATÉGORIE|[VERSION] / RFCSECTION|  
-|[RFC_APPL_GROUP_NAME]|CATÉGORIE|[VERSION] /RFCGROUP/ [RFC_APPL_GROUP_ID]|  
-|[RFC_NAME]|OPERATION|[VERSION] /Rfc/ [RFC_NAME]|  
-|RfcGetAttributes|OPERATION|[VERSION] / RfcApi/RfcGetAttributes|  
-|TRFC|CATÉGORIE|[VERSION] / TRFCSECTION|  
-|[TRFC_APPL_GROUP_NAME]|CATÉGORIE|[VERSION] /TRFCGROUP/ [TRFC_APPL_GROUP_ID]|  
-|[TRFC_NAME]|OPERATION|[VERSION] /TRfc/ [TRFC_NAME]|  
-|RfcConfirmTransID|OPERATION|[VERSION] / RfcApi/RfcConfirmTransID|  
-|BAPI|CATÉGORIE|[VERSION] / BAPISECTION/000001|  
-|[BAPI_APPL_GROUP_NAME]|CATÉGORIE|[VERSION] /BAPISECTION/ [BAPI_APPL_GROUP_NODE_ID]|  
-|[BUSINESS_OBJECT_NAME]|CATÉGORIE|[VERSION] /BAPIOBJ/ [BUSOBJ_TYPE]|  
-|[BUSINESS_OBJECT_METHOD]|OPERATION|[VERSION] /BAPIOBJ/ [BUSOBJ_TYPE] / [BUSOBJ_METHOD] / [FUNCTION_MODULE]|  
-|IDOC|CATÉGORIE|[VERSION] / IDOCSECTION|  
-|[IDOC_MSG_TYPE_NAME]|CATÉGORIE|[VERSION] /IDOCMESTYP/ [IDOC_MSG_TYPE_NAME]|  
-|([IDOC_TYPE_NAME]) ([IDOC_CIMTYPE])|CATÉGORIE|[VERSION] /IDOCCIMTYP/ [IDOC_TYPE_NAME] / [IDOC_CIMTYPE] / [FIRST_IDOC_REL_NO]|  
-|([IDOC_TYPE_NAME]. V[IDOC_VERSION]) ([IDOC_CIMTYPE]) ([IDOC_REL_NO])|CATÉGORIE|[VERSION] /IDOCCIMVER/ [IDOC_VERSION] / [IDOC_TYPE_NAME] / [IDOC_CIMTYPE] / [IDOC_REL_NO]|  
-|Send|OPERATION|[VERSION] /Idoc/ [IDOC_VERSION] / [IDOC_TYPE_NAME] / [IDOC_CIMTYPE] / [IDOC_REL_NO] / envoi|  
-|SendIdoc|OPERATION|[VERSION] / Idoc/SendIdoc|  
-|Recevoir|OPERATION|[VERSION] /Idoc/ [IDOC_VERSION] / [IDOC_TYPE_NAME] / [IDOC_CIMTYPE] / [IDOC_REL_NO] / de réception|  
-|ReceiveIdoc|OPERATION|[VERSION] / Idoc/ReceiveIdoc|  
+|RFC|CATÉGORIE|[VERSION]/RFCSECTION|  
+|[RFC_APPL_GROUP_NAME]|CATÉGORIE|[VERSION]/RFCGROUP/[RFC_APPL_GROUP_ID]|  
+|[RFC_NAME]|OPERATION|[VERSION]/Rfc/[RFC_NAME]|  
+|RfcGetAttributes|OPERATION|[VERSION]/RfcApi/RfcGetAttributes|  
+|TRFC|CATÉGORIE|[VERSION]/TRFCSECTION|  
+|[TRFC_APPL_GROUP_NAME]|CATÉGORIE|[VERSION]/TRFCGROUP/[TRFC_APPL_GROUP_ID]|  
+|[TRFC_NAME]|OPERATION|[VERSION]/TRfc/[TRFC_NAME]|  
+|RfcConfirmTransID|OPERATION|[VERSION]/RfcApi/RfcConfirmTransID|  
+|BAPI|CATÉGORIE|[VERSION]/BAPISECTION/000001|  
+|[BAPI_APPL_GROUP_NAME]|CATÉGORIE|[VERSION]/BAPISECTION/[ BAPI_APPL_GROUP_NODE_ID]|  
+|[BUSINESS_OBJECT_NAME]|CATÉGORIE|[VERSION]/BAPIOBJ/[BUSOBJ_TYPE]|  
+|[BUSINESS_OBJECT_METHOD]|OPERATION|[VERSION]/BAPIOBJ/[BUSOBJ_TYPE]/[BUSOBJ_METHOD]/[FUNCTION_MODULE]|  
+|IDOC|CATÉGORIE|[VERSION]/IDOCSECTION|  
+|[IDOC_MSG_TYPE_NAME]|CATÉGORIE|[VERSION]/IDOCMESTYP/[IDOC_MSG_TYPE_NAME]|  
+|([IDOC_TYPE_NAME]) ([IDOC_CIMTYPE])|CATÉGORIE|[VERSION]/IDOCCIMTYP/[IDOC_TYPE_NAME]/[IDOC_CIMTYPE]/[FIRST_IDOC_REL_NO]|  
+|([IDOC_TYPE_NAME].V[IDOC_VERSION]) ([IDOC_CIMTYPE]) ([IDOC_REL_NO])|CATÉGORIE|[VERSION]/IDOCCIMVER/[IDOC_VERSION]/[IDOC_TYPE_NAME]/[IDOC_CIMTYPE]/[IDOC_REL_NO]|  
+|Send|OPERATION|[VERSION]/Idoc/[IDOC_VERSION]/[IDOC_TYPE_NAME]/[IDOC_CIMTYPE]/[IDOC_REL_NO]/Send|  
+|SendIdoc|OPERATION|[VERSION]/Idoc/SendIdoc|  
+|Recevoir|OPERATION|[VERSION]/Idoc/[IDOC_VERSION]/[IDOC_TYPE_NAME]/[IDOC_CIMTYPE]/[IDOC_REL_NO]/Receive|  
+|ReceiveIdoc|OPERATION|[VERSION]/Idoc/ReceiveIdoc|  
   
  [VERSION] = la chaîne de version ; par exemple, http://Microsoft.LobServices.Sap/2007/03.  
   
@@ -90,16 +90,16 @@ Le tableau suivant répertorie le type de nœud et l’ID de nœud pour les arte
   
 |Nom complet de l’objet|ID de nœud| Description|  
 |---------------------------|-------------|-----------------|  
-|/ RFC|[VERSION] / RFCSECTION|Retourne toutes les opérations de RFC qui correspondent à l’expression de recherche.|  
-|/RFC/ [RFC_APPL_GROUP_NAME]|[VERSION] /RFCGROUP/ [RFC_APPL_GROUP_NAME]|Retourner les opérations de RFC dans le groupe d’applications qui correspondent à l’expression de recherche.|  
-|/ TRFC|[VERSION] / TRFCSECTION|Retourne toutes les opérations de RFC qui correspondent à l’expression de recherche.|  
-|/TRFC/ [TRFC_APPL_GROUP_NAME]|[VERSION] /TRFCGROUP/ [TRFC_APPL_GROUP_NAME]|Retourner les opérations de RFC dans le groupe d’applications qui correspondent à l’expression de recherche.|  
-|/ BAPI|[VERSION] / BAPISECTION|Retourne toutes les interfaces BAPI qui correspondent à l’expression de recherche.|  
-|/ IDOC|[VERSION] / IDOCSECTION|Retourner tous les IDOC qui correspondent à l’expression de recherche.|  
+|/RFC|[VERSION]/RFCSECTION|Retourne toutes les opérations de RFC qui correspondent à l’expression de recherche.|  
+|/RFC/[RFC_APPL_GROUP_NAME]|[VERSION]/RFCGROUP/[RFC_APPL_GROUP_NAME]|Retourner les opérations de RFC dans le groupe d’applications qui correspondent à l’expression de recherche.|  
+|/TRFC|[VERSION]/TRFCSECTION|Retourne toutes les opérations de RFC qui correspondent à l’expression de recherche.|  
+|/TRFC/[TRFC_APPL_GROUP_NAME]|[VERSION]/TRFCGROUP/[TRFC_APPL_GROUP_NAME]|Retourner les opérations de RFC dans le groupe d’applications qui correspondent à l’expression de recherche.|  
+|/BAPI|[VERSION]/BAPISECTION|Retourne toutes les interfaces BAPI qui correspondent à l’expression de recherche.|  
+|/IDOC|[VERSION]/IDOCSECTION|Retourner tous les IDOC qui correspondent à l’expression de recherche.|  
   
  Le tableau suivant répertorie les caractères génériques caractères qui le [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] prend en charge dans les expressions de recherche.  
   
-|Caractère spécial|Interprétation|  
+|Caractère spécial|Interpretation|  
 |-----------------------|--------------------|  
 |signe plus (+)|Correspond à exactement un caractère.<br /><br /> Par exemple, A + correspond à AB, CA, AD, et ainsi de suite.|  
 |astérisque (*)|Correspond à zéro ou plusieurs caractères ; par exemple, « A * » correspond à « A », « AB », « ABC » et ainsi de suite.|  

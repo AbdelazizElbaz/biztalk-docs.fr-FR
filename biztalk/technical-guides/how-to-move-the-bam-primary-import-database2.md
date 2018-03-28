@@ -1,22 +1,22 @@
 ---
-title: "Comment déplacer la Database2 d’importation principale BAM | Documents Microsoft"
-ms.custom: 
+title: Comment déplacer la Database2 d’importation principale BAM | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bc4f2656-2faa-4503-9551-05e1b6eceb1a
-caps.latest.revision: "2"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: fd6abeeb04521e95b32b4d6007dcc7f1f532bdbb
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-move-the-bam-primary-import-database"></a>Déplacement de la base de données d'importation principale BAM
 Cette procédure vous permet de déplacer la base de données d'importation principale BAM vers un autre serveur. À partir d’un point de vue du scénario de bout en bout, le déplacement de la base de données d’importation principale BAM implique deux étapes principales :  
@@ -25,10 +25,10 @@ Cette procédure vous permet de déplacer la base de données d'importation prin
   
 -   [Mise à jour des références à la nouvelle base de données importation principale BAM](../technical-guides/how-to-move-the-bam-primary-import-database2.md#BKMK_BAMPIRef)  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Configuration requise  
  Pour exécuter cette procédure, vous devez ouvrir une session à l'aide d'un compte membre du rôle serveur fixe sysadmin [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)].  
   
-##  <a name="BKMK_MovingBAMPI"></a>Déplacement de la base de données importation principale BAM  
+##  <a name="BKMK_MovingBAMPI"></a> Déplacement de la base de données importation principale BAM  
  Les étapes de la procédure suivante pour déplacer la base de données d’importation principale BAM.  
   
 #### <a name="to-move-the-bam-primary-import-database"></a>Pour déplacer la base de données d'importation principale BAM  
@@ -56,7 +56,7 @@ Cette procédure vous permet de déplacer la base de données d'importation prin
     > [!NOTE]  
     >  Si vous restaurez la base de données d'importation principale BAM à partir d'une sauvegarde, vous devez également restaurer les bases de données des archives BAM, de schémas en étoile BAM et d'analyse BAM à l'aide d'une sauvegarde antérieure à la sauvegarde principale BAM.  
   
-##  <a name="BKMK_BAMPIRef"></a>Mise à jour des références à la nouvelle base de données importation principale BAM  
+##  <a name="BKMK_BAMPIRef"></a> Mise à jour des références à la nouvelle base de données importation principale BAM  
  Une fois que vous avez déplacé la base de données, vous devez mettre à jour toutes les références à la nouvelle base importation principale BAM. Les références suivantes doivent être mises à jour :  
   
 -   Mettre à jour toutes les bases de données BizTalk avec le nouveau nom de serveur. Vous pouvez le faire en utilisant le script UpdateDatabase.vbs. Consultez [pour mettre à jour des bases de données BizTalk avec le nouveau nom de serveur](../technical-guides/how-to-move-the-bam-primary-import-database2.md#BKMK_UpdateDB).  
@@ -69,13 +69,13 @@ Cette procédure vous permet de déplacer la base de données d'importation prin
   
 -   Mettre à jour les nouveaux noms de serveur et de base de données dans des sources de données pour tous les cubes OLAP. Consultez [pour mettre à jour les noms de serveur et base de données dans des sources de données pour tous les cubes OLAP](../technical-guides/how-to-move-the-bam-primary-import-database2.md#BKMK_UpdateDSOLAP).  
   
-###  <a name="BKMK_UpdateDB"></a>Pour mettre à jour des bases de données BizTalk avec le nouveau nom de serveur  
+###  <a name="BKMK_UpdateDB"></a> Pour mettre à jour des bases de données BizTalk avec le nouveau nom de serveur  
   
 1.  Sur un ordinateur exécutant BizTalk Server, accédez au dossier suivant :  
   
     -   Si [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] est installé sur une version 64 bits de Windows Server :  
   
-         **% ProgramFiles% (x86) %\Microsoft BizTalk Server 2010\bins32\Schema\Restore**  
+         **%ProgramFiles(x86)%\Microsoft BizTalk Server 2010\bins32\Schema\Restore**  
   
     -   Si [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] est installé sur une version 32 bits de Windows Server :  
   
@@ -105,7 +105,7 @@ Cette procédure vous permet de déplacer la base de données d'importation prin
   
     -   Si [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] est installé sur une version 64 bits de Windows Server :  
   
-         **% ProgramFiles% (x86) %\Microsoft BizTalk Server 2010\Schema\Restore**  
+         **%ProgramFiles(x86)%\Microsoft BizTalk Server 2010\Schema\Restore**  
   
     -   Si [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] est installé sur une version 32 bits de Windows Server :  
   
@@ -115,7 +115,7 @@ Cette procédure vous permet de déplacer la base de données d'importation prin
   
      **cscript UpdateDatabase.vbs SampleUpdateInfo.xml**  
   
-###  <a name="BKMK_Config"></a>Pour mettre à jour le fichier Web.config pour le portail BAM  
+###  <a name="BKMK_Config"></a> Pour mettre à jour le fichier Web.config pour le portail BAM  
   
 1.  Sur un ordinateur exécutant BizTalk Server, la mise à jour les fichiers Web.config sous  **\<lecteur\>: \Program Files\Microsoft BizTalk Server 2010\BAMPortal\BAMManagementService\Web.Config**. Mettre à jour les noms de serveur et de base de données dans la section suivante dans le fichier Web.config :  
   
@@ -138,7 +138,7 @@ Cette procédure vous permet de déplacer la base de données d'importation prin
   
 3.  Enregistrez et fermez les fichiers.  
   
-###  <a name="BKMK_UpdateExcel"></a>Pour mettre à jour la référence dans les fichiers de données actives d’analyse BAM, Microsoft Excel  
+###  <a name="BKMK_UpdateExcel"></a> Pour mettre à jour la référence dans les fichiers de données actives d’analyse BAM, Microsoft Excel  
   
 1.  Ouvrez le fichier Excel de données actives. Le nom de fichier se termine par _LiveData.xls.  
   
@@ -150,7 +150,7 @@ Cette procédure vous permet de déplacer la base de données d'importation prin
   
 5.  Dans le menu **Fichier** , cliquez sur **Enregistrer**.  
   
-###  <a name="BKMK_UpdatePckg"></a>Pour mettre à jour les noms de serveur et base de données dans tous les packages BAM SSIS  
+###  <a name="BKMK_UpdatePckg"></a> Pour mettre à jour les noms de serveur et base de données dans tous les packages BAM SSIS  
   
 1.  Mettre à jour les noms de serveur et de base de données dans tous les lots analyse BAM SSIS qui sont précédés de « BAM_AN_ » ou « BAM_DM_ ». Pour ce faire, cliquez sur **Démarrer**, cliquez sur **tous les programmes**, cliquez sur **Microsoft SQL Server 2008 R2** ou **Microsoft SQL Server 2008 SP1**, puis cliquez sur **SQL Server Business Intelligence Development Studio**.  
   
@@ -202,7 +202,7 @@ Cette procédure vous permet de déplacer la base de données d'importation prin
   
 21. Activez les mises à jour du cube d'analyse BAM et les lots SSIS de gestion des données.  
   
-###  <a name="BKMK_UpdateDSOLAP"></a>Pour mettre à jour les noms de serveur et base de données dans des sources de données pour tous les cubes OLAP  
+###  <a name="BKMK_UpdateDSOLAP"></a> Pour mettre à jour les noms de serveur et base de données dans des sources de données pour tous les cubes OLAP  
   
 1.  Mettre à jour les noms de serveur et de base de données dans des sources de données pour tous les cubes OLAP. Pour ce faire, cliquez sur **Démarrer**, cliquez sur **tous les programmes**, cliquez sur **Microsoft SQL Server 2008 R2** ou **Microsoft SQL Server 2008 SP1**, puis cliquez sur **SQL Server Management Studio**.  
   

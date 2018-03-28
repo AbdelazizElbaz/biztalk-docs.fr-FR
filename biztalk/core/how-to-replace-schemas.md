@@ -1,22 +1,22 @@
 ---
-title: "Comment remplacer les schémas | Documents Microsoft"
-ms.custom: 
+title: Comment remplacer les schémas | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 104e60d3-1303-4e56-b13a-c10ab14ba383
-caps.latest.revision: "12"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: df444b8169d75408fe6e412135029ae2b051a6d2
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-replace-schemas"></a>Remplacement de schémas
 Il peut arriver que vous souhaitiez remplacer le schéma source ou le schéma de destination dans un mappage existant, par exemple lorsqu'un partenaire commercial vous envoie un schéma mis à jour.  
@@ -40,7 +40,7 @@ Il peut arriver que vous souhaitiez remplacer le schéma source ou le schéma de
       
      Si seule une racine unique existe dans le schéma de remplacement, ou un nœud racine a été établi pour le schéma de remplacement à l’aide de la **référence de racine** propriété de la **schéma** ouvre de nœud, le schéma de remplacement dans le volet correspondant, et vous ne devrez pas effectuer l’étape 3.  
   
-3.  Si plusieurs nœuds racine dans le schéma de destination, et aucun nœud racine n’a été établie pour le schéma de destination à l’aide du **référence de racine** propriété de la **schéma** nœud, dans le  **Nœud racine pour \<* Source/cible* \> schéma ** boîte de dialogue, sélectionnez le nœud racine approprié, puis **OK**.  
+3.  Si plusieurs nœuds racine dans le schéma de destination, et aucun nœud racine n’a été établie pour le schéma de destination à l’aide du **référence de racine** propriété de la **schéma** nœud, dans le **racine Nœud de \< *Source/cible* \> schéma** boîte de dialogue, sélectionnez le nœud racine approprié, puis **OK**.  
   
      Le schéma de remplacement s'ouvre dans le volet correspondant.  
   

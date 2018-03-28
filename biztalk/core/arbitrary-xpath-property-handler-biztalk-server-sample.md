@@ -1,25 +1,25 @@
 ---
-title: "Le Gestionnaire de propriété XPath arbitraire (exemple BizTalk Server) | Documents Microsoft"
-ms.custom: 
+title: Le Gestionnaire de propriété XPath arbitraire (exemple BizTalk Server) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pipeline components [custom], examples
 - examples, pipeline components [custom]
 ms.assetid: 4eb26c38-5ece-42b0-a28e-73214df1dc41
-caps.latest.revision: "14"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 3f2f59ce48a3d46ebf33889e31a55f9aa452fd17
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="arbitrary-xpath-property-handler-biztalk-server-sample"></a>Gestionnaire de propriété XPath arbitraire (exemple BizTalk Server)
 Le gestionnaire de propriété XPath arbitraire (exemple [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]) illustre l'écriture d'un composant de pipeline personnalisé pour promouvoir des propriétés spécifiques sur un document XML envoyé à [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Vous pouvez utiliser la fonctionnalité contenue dans l'exemple pour créer des composants Standard, Assembleur et Désassembleur personnalisés pour évaluer des expressions XPath.  
@@ -118,7 +118,7 @@ Le gestionnaire de propriété XPath arbitraire (exemple [!INCLUDE[btsBizTalkSer
 2.  Affichez le contenu dans le répertoire \Output. Notez la création d'un fichier contenant toutes les informations du fichier DocInstance.xml qui vous avez copié dans le répertoire \Input. La différence dans le fichier qui est désormais le \<TotalAmount\> élément a été rempli avec le montant total pour le bon de commande.  
   
 ## <a name="comments"></a>Commentaires  
- Les expressions XPath canoniques sont des expressions simples tels que «/*[local-name()='element-name' and namespaceURI()='http://MyUri.org']/\*[local-name()='element-name']/@\*[local-name='attribute name']».  
+ Les expressions XPath canoniques sont des expressions simples tels que « / * [local-name () = 'element-name' and namespaceURI() ='http://MyUri.org'] /\*[local-name () = 'element-name'] / @\*[local-name = 'attribute name'] ».  
   
  Une expression XPath arbitraire peut être complexe, par exemple « //element-name//*[local-name()='element-name' and position()=2] ». En fait, vous obtenez une erreur d'exécution indiquant que les expressions XPath non canoniques ne sont pas prises en charge par [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] si votre schéma a un XPath non canonique utilisé dans le corps XPath ou une propriété XPath. Une solution pour la prise en charge des expressions XPath arbitraires consiste à créer des composants Désassembleur et Assembleur personnalisés prenant en charge un corps XPath arbitraire ainsi que des expressions de propriété XPath arbitraire.  
   

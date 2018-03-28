@@ -1,11 +1,11 @@
 ---
-title: "Comment activer l’authentification unique | Documents Microsoft"
-ms.custom: 
+title: Comment activer l’authentification unique | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - applications [SSO], creating
@@ -17,15 +17,15 @@ helpviewer_keywords:
 - creating, applications [SSO]
 - managing [SSO], creating affiliate applications
 ms.assetid: dda89d15-6b70-4c40-b658-2f6cbdd545c8
-caps.latest.revision: "13"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: a843c0f6cdea32ba5218140069163058fcd42442
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-enable-sso"></a>Comment activer l’authentification unique
 Vous pouvez activer le système d'authentification unique à l'aide du composant logiciel enfichable MMC ou de la ligne de commande.  
@@ -68,7 +68,7 @@ Vous pouvez activer le système d'authentification unique à l'aide du composant
   
 5.  Connectez-vous en tant qu'administrateur d'applications associées à SSO.  
   
-6.  Type **ssomanage - createapps  *\<fichier de l’application\>***  pour créer une application associée, où \<fichier de l’application\> est le fichier XML qui contient des définitions pour les applications associées.  
+6.  Type **ssomanage - createapps *\<fichier de l’application\>***  pour créer une application associée, où \<fichier de l’application\> est le fichier XML qui contient des définitions pour les applications associées.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  

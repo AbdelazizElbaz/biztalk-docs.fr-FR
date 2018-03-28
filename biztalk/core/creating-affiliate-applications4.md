@@ -1,11 +1,11 @@
 ---
-title: "Création d’applications associées à des Applications4 | Documents Microsoft"
-ms.custom: 
+title: Création d’applications associées à des Applications4 | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tickets, Single Sign-On
@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Single Sign-On, creating tickets
 - SSO tickets
 ms.assetid: 790fbe21-8081-4d57-803f-23014c8a3135
-caps.latest.revision: "7"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 87aa9be716e437e80c0e85bd9e462713e48090ad
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="creating-affiliate-applications"></a>Création d’Applications associées
 Les étapes suivantes décrivent la mise en route des applications associées à l'aide de l'authentification unique (SSO).  
@@ -36,9 +36,9 @@ Les étapes suivantes décrivent la mise en route des applications associées à
   
 2.  Ouvrez une invite de commandes, puis accédez au dossier de l'authentification unique de l'entreprise.  
   
-     Exemple :  
+     Par exemple :  
   
-     **C:\Program Files\Common Files\Enterprise Single Sign-On >**  
+     **C:\Program Files\Common Files\Enterprise Single Sign-On>**  
   
 3.  Utilisez les commandes du service de l'authentification unique de l'entreprise Pour obtenir la liste de commandes, utilisez la **-aide** basculer.  
   
@@ -52,7 +52,7 @@ Les étapes suivantes décrivent la mise en route des applications associées à
   
     -   AffiliateApplication.xml est l’application XML que vous avez créé et qui contient les informations d’authentification.  
   
-     Exemple :  
+     Par exemple :  
   
     ```  
     <?xml version="1.0"?>  
@@ -111,9 +111,9 @@ Les étapes suivantes décrivent la mise en route des applications associées à
   
     -   ID d’utilisateur : **utilisateur**  
   
-    -   Mot de passe :`******`  
+    -   Mot de passe : `******`  
   
-    -   Confirmer ? Mot de passe :`******`  
+    -   Confirmer ? Mot de passe : `******`  
   
      L’application associée apparaît dans l’adaptateur BizTalk pour JD Edwards EnterpriseOne **propriétés du Transport** boîte de dialogue.  
   

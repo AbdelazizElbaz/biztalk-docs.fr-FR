@@ -1,11 +1,11 @@
 ---
-title: "Exemple de bouclage piloté par les table | Documents Microsoft"
-ms.custom: 
+title: Exemple de bouclage piloté par les table | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Table Extractor functoids, code sample
@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Table Looping functoids, code sample
 - code samples, Table Extractor functoids
 ms.assetid: d890bdb1-12a6-4001-9748-737b1f2bab79
-caps.latest.revision: "13"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: e6989ac7e64cf28784d08f26aaf9e7af3a166a28
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="table-driven-looping-example"></a>Exemple de bouclage piloté par la table
 Cette section décrit brièvement un mappage à l’aide de la **bouclage de Table** et **extracteur de Table** fonctoids. Pour plus d’informations sur la sélection, la disposition, liaison et la configuration des fonctoids, voir [comment ajouter le bouclage de Table et de fonctoids Extracteur de Table à une carte](../core/how-to-add-table-looping-and-table-extractor-functoids-to-a-map.md).  

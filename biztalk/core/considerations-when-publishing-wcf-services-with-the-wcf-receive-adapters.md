@@ -1,11 +1,11 @@
 ---
-title: "Considérations relatives à la publication de Services WCF avec WCF des adaptateurs de réception | Documents Microsoft"
-ms.custom: 
+title: Considérations relatives à la publication de Services WCF avec WCF des adaptateurs de réception | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - publishing, WCF services
@@ -14,15 +14,15 @@ helpviewer_keywords:
 - WCF services, publishing
 - best practices, WCF adapters
 ms.assetid: 797b7ffd-534c-4f09-9738-fb17b208bc96
-caps.latest.revision: "34"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 30175e7966d565306c45820f1a6c2e22e4611876
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="considerations-when-publishing-wcf-services-with-the-wcf-receive-adapters"></a>Considérations relatives à la publication de services WCF à l'aide des adaptateurs de réception WCF
 Cette rubrique fournit des informations à prendre en compte lors de la publication des services WCF à l'aide des adaptateurs de réception WCF.  La publication d'un service à l'aide d'un adaptateur WCF permet son appel par un client WCF comme s'il s'agissait d'un service WCF classique.  
@@ -71,7 +71,7 @@ Cette rubrique fournit des informations à prendre en compte lors de la publicat
  Les adaptateurs WCF avec **corps--corps du message de réponse BizTalk** (la valeur par défaut) option n’autorisent pas l’envoi de messages non-XML tels que des images bitmap et des données de caractères. Vous pouvez utiliser la **modèle--contenu spécifié par le modèle** option pour les adaptateurs WCF envoyer des messages non XML. Pour plus d’informations sur la façon d’utiliser le modèle, consultez [spécifiant le corps du Message pour les adaptateurs WCF](../core/specifying-the-message-body-for-the-wcf-adapters.md).  
   
 ## <a name="setting-up-the-permissions-for-a-wcf-service-published-with-the-wcf-service-publishing-wizard"></a>Configuration des autorisations pour un service WCF publié à l'aide de l'Assistant Publication de services WCF  
- Lors de l'utilisation d'applications ASP.NET créées à l'aide de l'Assistant Publication de services WCF sur la plateforme [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] ou [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)], des erreurs relatives à l'accès aux DLL lors de l'appel du service WCF peuvent se produire. Ces erreurs sont généralement associées aux problèmes liés à la sécurité par défaut sous [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] et [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]. Pour plus d’informations sur ces erreurs, consultez l’article Microsoft Help and Support intitulé « You Receive a « System.IO.FileNotFoundException » erreur lorsque le Client Application appelle un Service Web » sur le site Web aide et Support [http:// go.Microsoft.com/fwlink/ ? LinkId = 43659](http://go.microsoft.com/fwlink/?LinkId=43659).  
+ Lors de l'utilisation d'applications ASP.NET créées à l'aide de l'Assistant Publication de services WCF sur la plateforme [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] ou [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)], des erreurs relatives à l'accès aux DLL lors de l'appel du service WCF peuvent se produire. Ces erreurs sont généralement associées aux problèmes liés à la sécurité par défaut sous [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] et [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]. Pour plus d’informations sur ces erreurs, consultez l’article Microsoft Help and Support intitulé « You Receive a « System.IO.FileNotFoundException » erreur lorsque le Client Application appelle un Service Web » sur le site Web aide et Support [ http://go.microsoft.com/fwlink/?LinkId=43659 ](http://go.microsoft.com/fwlink/?LinkId=43659).  
   
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] requiert que le processus exécutant le service WCF dispose des autorisations appropriées si un hôte in-process ou un hôte isolé exécute le service. Sous [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] et [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)], le groupe Windows par défaut pour les hôtes isolés est le Groupe d'utilisateurs d'hôtes isolés. Ainsi, l'ajout des autorisations au Groupe d'utilisateurs d'hôtes isolés devrait résoudre ce problème.  
   
@@ -105,12 +105,12 @@ Cette rubrique fournit des informations à prendre en compte lors de la publicat
  Si vous sélectionnez le **enveloppe** ou **corps** option, l’adaptateur ne peut pas créer le message BizTalk à partir du précédent message entrant. Le message n'est pas interrompu car les messages échouant au cours du traitement de marshaling SOAP entrant ne sont pas interrompus. Pour plus d’informations sur l’utilisation de l’expression de chemin de corps sur le **Message** , consultez la rubrique [spécifiant le corps du Message pour les adaptateurs WCF](../core/specifying-the-message-body-for-the-wcf-adapters.md).  
   
 > [!NOTE]
->  Vous pouvez utiliser l'outil TraceViewer (SvcTraceViewer.exe) du Kit de développement Windows SDK en configurant le fichier BTSNTSvc.exe.config. Pour plus d’informations sur le Kit de développement logiciel Windows, consultez « Nouveautés dans le Kit de développement logiciel Windows » à [http://go.microsoft.com/fwlink/?LinkId=75219](http://go.microsoft.com/fwlink/?LinkId=75219). Pour plus d’informations sur l’outil TraceViewer, consultez « TraceViewer Tool (SvcTraceViewer.exe) » à [http://go.microsoft.com/fwlink/?LinkId=75218](http://go.microsoft.com/fwlink/?LinkId=75218).  
+>  Vous pouvez utiliser l'outil TraceViewer (SvcTraceViewer.exe) du Kit de développement Windows SDK en configurant le fichier BTSNTSvc.exe.config. Pour plus d’informations sur le Kit de développement logiciel Windows, consultez « Nouveautés dans le Kit de développement logiciel Windows » à [ http://go.microsoft.com/fwlink/?LinkId=75219 ](http://go.microsoft.com/fwlink/?LinkId=75219). Pour plus d’informations sur l’outil TraceViewer, consultez « TraceViewer Tool (SvcTraceViewer.exe) » à [ http://go.microsoft.com/fwlink/?LinkId=75218 ](http://go.microsoft.com/fwlink/?LinkId=75218).  
   
 ## <a name="using-schemas-that-reference-other-schemas"></a>Utilisation des schémas faisant référence à d'autres schémas  
  Vous pouvez utiliser la **redéfinir**, **incluent**, et **importer** éléments lorsque vos schémas gagnent en taille et complexes, ou lorsque les schémas représentant vos différents types de messages d’instance comportent plusieurs portions en commun. Il peut être utile de combiner des schémas plus petits en des schémas qui définiront la structure finale des messages d'instance que vous prévoyez d'échanger avec des partenaires commerciaux. Vous pouvez publier ces schémas sous la forme de services WCF à l'aide de l'Assistant Publication de services WCF BizTalk.  
   
- Vous devez utiliser l'Assistant Consommation de service WCF BizTalk pour créer les artefacts de BizTalk nécessaires à l'utilisation des services WCF à partir d'un projet BizTalk. Si vous voulez utiliser les services WCF à partir d'une application .NET, vous devez utiliser l'outil Service Model Metadata Utility (Svcutil.exe) pour créer la classe proxy pour les services WCF. Pour plus d’informations sur la façon d’utiliser des schémas qui référencent d’autres schémas, consultez [schémas qui utilisent d’autres schémas](../core/schemas-that-use-other-schemas.md) et [comment créer des schémas qui utilisent d’autres schémas](../core/how-to-create-schemas-that-use-other-schemas.md). Pour plus d’informations sur Svcutil.exe, consultez « Service Model Metadata utilitaire Tool (Svcutil.exe) » à [http://go.microsoft.com/fwlink/?LinkID=74696](http://go.microsoft.com/fwlink/?LinkID=74696).  
+ Vous devez utiliser l'Assistant Consommation de service WCF BizTalk pour créer les artefacts de BizTalk nécessaires à l'utilisation des services WCF à partir d'un projet BizTalk. Si vous voulez utiliser les services WCF à partir d'une application .NET, vous devez utiliser l'outil Service Model Metadata Utility (Svcutil.exe) pour créer la classe proxy pour les services WCF. Pour plus d’informations sur la façon d’utiliser des schémas qui référencent d’autres schémas, consultez [schémas qui utilisent d’autres schémas](../core/schemas-that-use-other-schemas.md) et [comment créer des schémas qui utilisent d’autres schémas](../core/how-to-create-schemas-that-use-other-schemas.md). Pour plus d’informations sur Svcutil.exe, consultez « Service Model Metadata utilitaire Tool (Svcutil.exe) » à [ http://go.microsoft.com/fwlink/?LinkID=74696 ](http://go.microsoft.com/fwlink/?LinkID=74696).  
   
  Le tableau suivant montre les restrictions et considérations à prendre en compte lors de l'utilisation de services WCF publiés à l'aide de schémas utilisant d'autres schémas.  
   

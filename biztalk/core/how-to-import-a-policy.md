@@ -1,11 +1,11 @@
 ---
-title: "Comment importer une stratégie | Documents Microsoft"
-ms.custom: 
+title: Comment importer une stratégie | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - policies, requirements
@@ -13,15 +13,15 @@ helpviewer_keywords:
 - policies, importing
 - managing [policies], importing
 ms.assetid: 92f6ef18-279f-416d-b13e-8b9642539d27
-caps.latest.revision: "29"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: ac21ad1348dbc934c81d87f3c477977eeecd2ccf
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-import-a-policy"></a>Comment importer une stratégie
 Cette rubrique explique comment importer une stratégie dans un groupe BizTalk ou dans une application BizTalk à l'aide respectivement de la console Administration de BizTalk Server ou de l'outil de ligne de commande BTSTask.  
@@ -43,7 +43,7 @@ Cette rubrique explique comment importer une stratégie dans un groupe BizTalk o
 > [!NOTE]
 >  Le développeur de solutions peut créer des stratégies, puis les importer dans la base de données du moteur de règles pour le groupe d’à l’aide de l’Assistant Déploiement du moteur de règles, comme décrit dans [comment déployer et annuler le déploiement de stratégies et vocabulaires](../core/how-to-deploy-and-undeploy-policies-and-vocabularies.md).  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Configuration requise  
  La configuration suivante est requise pour exécuter les procédures décrites dans cette rubrique :  
   
 -   Vous devez être connecté avec un compte membre du groupe d'administrateurs BizTalk Server. Pour plus d’informations sur les autorisations, consultez [autorisations requises pour déployer et gérer une Application BizTalk](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md).  
@@ -60,7 +60,7 @@ Cette rubrique explique comment importer une stratégie dans un groupe BizTalk o
   
 1.  Cliquez sur **Démarrer**, cliquez sur **tous les programmes**, cliquez sur [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], puis cliquez sur **Administration de BizTalk Server**.  
   
-2.  Dans l’arborescence de la console, développez [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], développez le groupe BizTalk dans lequel vous souhaitez importer la stratégie, développez **Applications**, puis développez  **\<tous les artefacts\>** .  
+2.  Dans l’arborescence de la console, développez [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], développez le groupe BizTalk dans lequel vous souhaitez importer la stratégie, développez **Applications**, puis développez **\<tous les artefacts\>**.  
   
 3.  Avec le bouton droit **stratégies**, puis cliquez sur **importation**.  
   
@@ -74,19 +74,19 @@ Cette rubrique explique comment importer une stratégie dans un groupe BizTalk o
   
 2.  Tapez la commande suivante en utilisant les valeurs appropriées, comme décrit dans le tableau suivant :  
   
-     **ImportApp /Package de BTSTask :** *valeur* [**« ApplicationName » :***valeur*] [**/overwrite**] [ **/ Server :***valeur*] [**/Database :***valeur*]  
+     **ImportApp /Package de BTSTask :** *valeur* [**« ApplicationName » : ***valeur*] [**/overwrite**] [**/Server : ***valeur *] [** / Database :***valeur *]  
   
      Exemple :  
   
-     **/Package ImportApp de BTSTask : « C:\MSI Files\MyApplication.msi » /Environment:Test /ApplicationName:MyApplication de remplacement**  
+     **BTSTask ImportApp /Package:"C:\MSI Files\MyApplication.msi"  /Environment:Test /ApplicationName:MyApplication /Overwrite**  
   
     |Paramètre|Valeur|  
     |---------------|-----------|  
-    |**/ Package**|Chemin d'accès complet au fichier .msi contenant la stratégie à importer. Si le chemin d’accès comprend des espaces, vous devez le placer entre guillemets («).|  
-    |**/ ApplicationName**|Nom de l'application BizTalk dans laquelle importer la stratégie. Si ce nom n'est pas spécifié, le nom d'application spécifié lors de l'exportation du fichier .msi est utilisé. Si l’application spécifiée n’existe pas, il sera créé. Les noms d'application incluant des espaces doivent être placés entre guillemets doubles (").|  
-    |**/ Remplacer**|Option permettant de remplacer les stratégies de l'application par les artefacts du fichier .msi ayant le même nom et numéro de version. Si cette option n'est pas spécifiée et qu'une ou plusieurs stratégies de l'application ont le même nom et numéro de version que les celles du fichier .msi, l'importation échoue. Vous pouvez afficher le nom et numéro de version des stratégies dans une application à l’aide de la [commande ListApp](../core/listapp-command.md).|  
-    |**/ Serveur**|Nom de l'instance SQL Server hébergeant la base de données de gestion BizTalk et indiqué sous la forme NomServeur\NomInstance,Port.<br /><br /> Le nom de l'instance est uniquement requis lorsqu'il est différent du nom du serveur. Le port est uniquement requis lorsque le serveur SQL Server utilise un numéro de port autre que celui par défaut (1433).<br /><br /> Exemples :<br /><br /> Server=MyServer<br /><br /> Server=MyServer\MySQLServer,1533<br /><br /> Si vous n'indiquez pas de nom pour l'instance SQL Server, le nom d'instance utilisé est celui de l'instance SQL Server exécutée sur l'ordinateur local.|  
-    |**/ Base de données**|Nom de la base de données de gestion BizTalk. Si vous ne l'indiquez pas, la base de données utilisée est la base de données de gestion BizTalk s'exécutant au sein de l'instance locale de SQL Server.|  
+    |**/Package**|Chemin d'accès complet au fichier .msi contenant la stratégie à importer. Si le chemin d’accès comprend des espaces, vous devez le placer entre guillemets («).|  
+    |**/ApplicationName**|Nom de l'application BizTalk dans laquelle importer la stratégie. Si ce nom n'est pas spécifié, le nom d'application spécifié lors de l'exportation du fichier .msi est utilisé. Si l’application spécifiée n’existe pas, il sera créé. Les noms d'application incluant des espaces doivent être placés entre guillemets doubles (").|  
+    |**/Overwrite**|Option permettant de remplacer les stratégies de l'application par les artefacts du fichier .msi ayant le même nom et numéro de version. Si cette option n'est pas spécifiée et qu'une ou plusieurs stratégies de l'application ont le même nom et numéro de version que les celles du fichier .msi, l'importation échoue. Vous pouvez afficher le nom et numéro de version des stratégies dans une application à l’aide de la [commande ListApp](../core/listapp-command.md).|  
+    |**/Server**|Nom de l'instance SQL Server hébergeant la base de données de gestion BizTalk et indiqué sous la forme NomServeur\NomInstance,Port.<br /><br /> Le nom de l'instance est uniquement requis lorsqu'il est différent du nom du serveur. Le port est uniquement requis lorsque le serveur SQL Server utilise un numéro de port autre que celui par défaut (1433).<br /><br /> Exemples :<br /><br /> Server=MyServer<br /><br /> Server=MyServer\MySQLServer,1533<br /><br /> Si vous n'indiquez pas de nom pour l'instance SQL Server, le nom d'instance utilisé est celui de l'instance SQL Server exécutée sur l'ordinateur local.|  
+    |**/Database**|Nom de la base de données de gestion BizTalk. Si vous ne l'indiquez pas, la base de données utilisée est la base de données de gestion BizTalk s'exécutant au sein de l'instance locale de SQL Server.|  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur. Pour ce faire, cliquez sur l’application, puis **exécuter en tant qu’administrateur**.  

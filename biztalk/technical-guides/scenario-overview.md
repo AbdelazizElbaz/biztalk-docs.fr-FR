@@ -1,22 +1,22 @@
 ---
-title: "Vue d’ensemble du scénario | Documents Microsoft"
-ms.custom: 
+title: Vue d’ensemble du scénario | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ac14328d-c373-49da-a899-4b3ca7d6dc0a
-caps.latest.revision: "22"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: ab36aa51d2dd28651895818caa781c49bf366f50
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="scenario-overview"></a>Vue d’ensemble du scénario
 Cette rubrique fournit une vue d’ensemble de tests de charge terminée par le serveur BizTalk groupe produit afin d’évaluer l’évolutivité de BizTalk Server lors de l’exécution sur du matériel d’entreprise modernes.  
@@ -48,7 +48,7 @@ Cette rubrique fournit une vue d’ensemble de tests de charge terminée par le 
 ## <a name="test-measurements-used"></a>Mesures de test utilisées  
 Performances de BizTalk Server a été mesuré à l’aide des critères suivants :  
   
-1.  **Le débit global** – mesuré avec le  **BizTalk : messagerie (*nom d’hôte*) \Documents reçus / s ** et  **BizTalk : messagerie (*nom d’hôte*) \Documents traitées / s ** compteurs de performances du serveur BizTalk de réception et le traitement des ordinateurs hôtes.  
+1.  **Le débit global** – mesuré avec le **BizTalk : messagerie (*nom d’hôte*) \Documents reçus/s** et **BizTalk : messagerie (*nom d’hôte*) \Documents traitées par seconde** recevoir des compteurs de performances du serveur BizTalk et le traitement des ordinateurs hôtes.  
   
 2.  **L’utilisation du processeur** – mesuré avec le **\Processor(_Total)\\% temps processeur** compteurs de performance sur le serveur BizTalk Server] et les ordinateurs SQL Server. Tous les résultats des tests ont été examinés plus en détail et les goulots d’étranglement de performances sont décrits dans [Observations et recommandations](../technical-guides/observations-and-recommendations.md).  
   
@@ -184,13 +184,13 @@ Pour mesurer la capacité d’entrée/sortie de la configuration de réseau SAN 
   
 -   **Emplacement physique des fichiers tests**:  
   
-    -   H:\testfile.dat 2 25000 de 0 x 0  
+    -   H:\testfile.dat 2 0x0 25000  
   
-    -   I:\testfile.dat 2 25000 de 0 x 0  
+    -   I:\testfile.dat 2 0x0 25000  
   
-    -   J:\testfile.dat 2 25000 de 0 x 0  
+    -   J:\testfile.dat 2 0x0 25000  
   
-    -   K:\testfile.dat 2 25000 de 0 x 0  
+    -   K:\testfile.dat 2 0x0 25000  
   
  Le tableau suivant répertorie les résultats des tests :  
   

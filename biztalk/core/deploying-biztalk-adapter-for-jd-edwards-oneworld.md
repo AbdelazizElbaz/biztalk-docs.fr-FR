@@ -1,23 +1,23 @@
 ---
-title: "Importer l’adaptateur BizTalk pour JD Edwards OneWorld | Documents Microsoft"
-description: "Importez le fichier de liaison d’application et passer en revue les limitations de l’adaptateur JD Edwards OneWorld dans BizTalk Server"
-ms.custom: 
+title: Importer l’adaptateur BizTalk pour JD Edwards OneWorld | Documents Microsoft
+description: Importez le fichier de liaison d’application et passer en revue les limitations de l’adaptateur JD Edwards OneWorld dans BizTalk Server
+ms.custom: ''
 ms.date: 10/18/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f308d2fe-39dd-4008-94ed-292c4c26fe06
-caps.latest.revision: "5"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: d4a452d61b3bdb5f5d0fee9e0916811645938d70
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="import-the-jd-edwards-enterpriseone-application"></a>Importez l’application JD Edwards EnterpriseOne
   
@@ -74,7 +74,7 @@ Le mot de passe d’adaptateur de Transport est stocké sous forme d’astérisq
  Lorsque vous exportez les informations de liaison, le fichier de liaison qui en résulte ne contient pas les mots de passe utilisés par les adaptateurs de transport dans les emplacements de réception/ports d'envoi. Ceci empêche l'affichage des informations de mot de passe en texte clair. La prochaine fois que le fichier vous permet d’importer les informations de liaison, vous devez entrer les mots de passe en utilisant l’interface utilisateur des pages propriété transport. Vous pouvez également modifier temporairement le fichier de liaison avant l'importation en y tapant les mots de passe. Dans ce cas, vous devez supprimer les mots de passe du fichier de liaison une fois l'opération d'importation terminée.  
   
 > [!NOTE]
->  Lors de l’importation d’un fichier .msi dans un [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] application contenant des informations de liaison pour un adaptateur d’entreprise, vous pouvez recevoir un message d’erreur d’importation. Un correctif est disponible auprès de Microsoft, ainsi qu’une description complète de l’erreur à [http://support.microsoft.com/kb/923733/en-us](http://support.microsoft.com/kb/923733/en-us).  
+>  Lors de l’importation d’un fichier .msi dans un [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] application contenant des informations de liaison pour un adaptateur d’entreprise, vous pouvez recevoir un message d’erreur d’importation. Un correctif est disponible auprès de Microsoft, ainsi qu’une description complète de l’erreur à [ http://support.microsoft.com/kb/923733/en-us ](http://support.microsoft.com/kb/923733/en-us).  
   
 ### <a name="work-around-the-password-limitation"></a>Contourner la limitation de mot de passe  
 

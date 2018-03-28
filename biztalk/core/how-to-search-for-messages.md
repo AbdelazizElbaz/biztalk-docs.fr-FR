@@ -1,11 +1,11 @@
 ---
 title: Comment rechercher des Messages | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - messages, viewing
@@ -13,20 +13,20 @@ helpviewer_keywords:
 - Query tab [Administration Console], searching
 - Query tab [Administration Console], messages
 ms.assetid: c751d23f-913a-4325-81da-a36d61c07e8b
-caps.latest.revision: "16"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: a5443cc021bd5f97621f44d295432c99834bdaed
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-search-for-messages"></a>Recherche de messages
 Vous pouvez utiliser la **requête** onglet dans la Console Administration de BizTalk Server pour rechercher une classe spécifique de messages.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Configuration requise  
  Pour exécuter cette procédure, vous devez être connecté en tant que membre du groupe des opérateurs de BizTalk Server.  
   
 ### <a name="to-search-for-messages"></a>Pour rechercher des messages  
@@ -64,4 +64,4 @@ Vous pouvez utiliser la **requête** onglet dans la Console Administration de Bi
 7.  Continuez à ajouter des lignes supplémentaires à la requête si nécessaire, en effectuant le **nom de champ**, **opérateur**, et **valeurs** colonnes, puis cliquez sur **exécuter Requête**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide de l’onglet requête de la Console Administration](../core/using-the-administration-console-query-tab.md)
+ [Utilisation de l’onglet Requête de la console Administration](../core/using-the-administration-console-query-tab.md)

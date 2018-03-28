@@ -1,22 +1,22 @@
 ---
-title: "À l’aide de Ports d’envoi TIBCO Rendezvous à partir de BizTalk Server | Documents Microsoft"
-ms.custom: 
+title: À l’aide de Ports d’envoi TIBCO Rendezvous à partir de BizTalk Server | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 34e3edf7-cfc5-4c89-8069-63e8784bc9f9
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 950c4c367fe053195ba14029405f5015381fc6be
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="using-tibco-rendezvous-send-ports"></a>À l’aide de Ports d’envoi TIBCO Rendezvous
 Un port de transmission peut envoyer tout type de message. Lorsque BizTalk Server envoie un message via l'adaptateur Microsoft BizTalk pour TIBCO Rendezvous, l'adaptateur génère le message d'après les valeurs des propriétés de contexte du message ou sur la base des valeurs par défaut, puis il l'envoie vers l'objet spécifié.  

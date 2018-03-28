@@ -1,26 +1,26 @@
 ---
-title: "Installez les RFC personnalisés pour le fournisseur de données pour SAP | Documents Microsoft"
-ms.custom: 
+title: Installez les RFC personnalisés pour le fournisseur de données pour SAP | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - installation, custom RFCs for the Data Provider for SAP
 - installing, custom RFCs for the Data Provider for SAP
 - installing custom RFCs, how to
 ms.assetid: 7a99db70-fa5a-4c04-9dc7-b71613d4364e
-caps.latest.revision: "11"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 0aff501e5bf59d6ae22d9ad2a00e0e5ff5ad4605
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="install-custom-rfcs-for-the-data-provider-for-sap"></a>Installez les RFC personnalisés pour le fournisseur de données pour SAP
 Installez les RFC personnalisés si vous souhaitez utiliser le fournisseur de données .NET Framework pour mySAP Business Suite pour accéder au système SAP.

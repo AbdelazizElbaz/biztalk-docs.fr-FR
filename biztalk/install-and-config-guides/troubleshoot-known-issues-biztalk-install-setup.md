@@ -1,23 +1,23 @@
 ---
-title: "Problèmes d’installation connus | Documents Microsoft"
-description: "Problèmes connus et les problèmes courants et solutions lors de l’installation et la configuration de BizTalk Server"
-ms.custom: 
+title: Problèmes d’installation connus | Documents Microsoft
+description: Problèmes connus et les problèmes courants et solutions lors de l’installation et la configuration de BizTalk Server
+ms.custom: ''
 ms.date: 11/30/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e4d0e707-6b9e-49e1-9f17-19b3bac1229e
-caps.latest.revision: "27"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 90217a4e80df6f017b451dd7c40f6a1dfe3898ac
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="troubleshoot-biztalk-server-setup"></a>Résoudre les problèmes d’installation de BizTalk Server
 
@@ -38,7 +38,7 @@ Passez en revue les deux listes de vérification ci-dessous, que vous pouvez ég
 
     1. Installer BizTalk Server : [BizTalk 2016](install-biztalk-server-2016.md) , [BizTalk 2013 R2 / 2013](install-biztalk-server-2013-and-2013-r2.md)  
     2. [Configurer](configure-biztalk-server.md) BizTalk Server
-    3. [Étapes à la configuration](post-configuration-steps-to-optimize-your-environment.md)
+    3. [Étapes post-configuration](post-configuration-steps-to-optimize-your-environment.md)
   
 ## <a name="some-edias2-artifacts-are-still-active-after-unconfiguring"></a>Certains artefacts EDI/AS2 sont toujours actifs après annulation de la configuration  
   
@@ -125,7 +125,7 @@ Function: FieldInfoCreate
 **Cause**    
  Si BizTalk Server et SQL Server sont installés sur des ordinateurs différents, puis les opérations de configuration sont effectuées dans le contexte d’une transaction Microsoft Distributed Transaction Coordinator (MSDTC) et la fonctionnalité MSDTC doit être disponible sur le réseau entre ces ordinateurs. Si la fonctionnalité MSDTC n’est pas disponible sur le réseau entre les ordinateurs exécutant BizTalk Server et SQL Server, cette erreur peut se produire.  
   
-**Résolution**    
+**Resolution**    
 Utilisez [Troubleshooting Problems with MSDTC](https://support.microsoft.com/help/306843/how-to-troubleshoot-ms-dtc-firewall-issues) pour vérifier la fonctionnalité MSDTC sur le réseau entre les ordinateurs exécutant BizTalk Server et SQL Server.  
   
 ### <a name="antivirus-software-interferes-with-configuration-and-causes-configuration-failures"></a>Le logiciel antivirus interfère avec la configuration et provoque des échecs de configuration  
@@ -454,7 +454,7 @@ SSO_ERROR_SECRETS_NOT_LOADED
 |RBKRegsvcsSQLAdapter|Exécute regsvcs.exe sur un fichier binaire donné.|  
 |RestoreBTSCounters|Restaure la propriété avec le nom de fichier .ini du compteur de performance.|  
 |RollbackBTSCounters|Exécute la commande unlodctr BTSSvc.3.0.|  
-|RollbackRegsvcsApplicationDeployment|Configure [FrameworkPath] &#124; [INSTALLDIR] Microsoft.BizTalk.ApplicationDeployment.Engine.dll pour les scénarios d’échec de l’installation.|  
+|RollbackRegsvcsApplicationDeployment|Configure [FrameworkPath]&#124;[INSTALLDIR]Microsoft.BizTalk.ApplicationDeployment.Engine.dll pour les scénarios d’échec de l’installation.|  
 |RollbackRegsvcsDeployment|Appelle regsvcs.exe durant les scénarios de désinstallation/restauration.|  
 |WMI_Restore_MSBTS_Silent|Appelle mofcomp pour inscrire les schémas WMI.|  
 |WMI_Rollback_MSBTS|Supprime l'espace de noms BizTalk Server du service WMI.|  

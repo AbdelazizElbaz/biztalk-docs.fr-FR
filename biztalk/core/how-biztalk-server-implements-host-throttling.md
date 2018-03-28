@@ -1,11 +1,11 @@
 ---
-title: "Comment BizTalk Server implémente la limitation des hôtes | Documents Microsoft"
-ms.custom: 
+title: Comment BizTalk Server implémente la limitation des hôtes | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - host throttling, rate based throttling
@@ -17,18 +17,18 @@ helpviewer_keywords:
 - host throttling, user controlled throttling
 - host throttling, strategies
 ms.assetid: 46d3c3de-66b9-4c8a-8369-e68563fc9c40
-caps.latest.revision: "27"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 1944b61f9710b02f4e6db18a38972849847c532e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-biztalk-server-implements-host-throttling"></a>Implémentation de la limitation des hôtes par BizTalk Server
-Le mécanisme de limitation des hôtes de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] recherche en permanence la présence d'une condition de limitation, calcule la gravité de la condition de limitation et applique la limitation progressivement en fonction de la gravité calculée. Le mécanisme de limitation est autoréglable et les options de configuration par défaut sont adaptées à la majorité des [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] des scénarios de traitement. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]limitation de l’hôte expose plusieurs options configurables qui peuvent être utilisées pour régler la limitation pour des scénarios spécifiques. Pour plus d’informations sur la modification de ces options de configuration, consultez [comment modifier les paramètres de l’hôte](../core/how-to-modify-host-settings.md).  
+Le mécanisme de limitation des hôtes de [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] recherche en permanence la présence d'une condition de limitation, calcule la gravité de la condition de limitation et applique la limitation progressivement en fonction de la gravité calculée. Le mécanisme de limitation est autoréglable et les options de configuration par défaut sont adaptées à la majorité des [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] des scénarios de traitement. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] limitation de l’hôte expose plusieurs options configurables qui peuvent être utilisées pour régler la limitation pour des scénarios spécifiques. Pour plus d’informations sur la modification de ces options de configuration, consultez [comment modifier les paramètres de l’hôte](../core/how-to-modify-host-settings.md).  
   
 ## <a name="components-of-the-host-throttling-algorithm"></a>Composants de l'algorithme de limitation des hôtes  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] applique la limitation des hôtes à l'aide de l'algorithme suivant :  
@@ -53,7 +53,7 @@ Le mécanisme de limitation des hôtes de [!INCLUDE[btsBizTalkServerNoVersion](.
   
     -   Le nombre de messages en cours de traitement dépasse le seuil.  
   
-    -   Le nombre de threads en cours d'utilisation dépasse le seuil..  
+    -   Le nombre de threads en cours d'utilisation dépasse le seuil.  
   
     -   La taille de la base de données dépasse le seuil.  
   
@@ -116,6 +116,6 @@ Le mécanisme de limitation des hôtes de [!INCLUDE[btsBizTalkServerNoVersion](.
 |-------------------------------------------|--------------------------------------|------------------------------|-------------------------|------------------------|-------------------------|  
 |1|**Vitesse de remise de messages entrant** de l’hôte instance dépasse le **vitesse de sortie de remise de messages \***  spécifié **facteur de dépassement de vitesse (en pourcentage)** valeur<br /><br /> Ceci peut être dû à la grande complexité des processus, à des adaptateurs de sortie lents ou à des ressources système momentanément faibles.|Bloquer le thread de remise pour une période calculée de façon dynamique jusqu'à ce que la remise de messages vitesse d’entrée est équivalente à la **vitesse de sortie de remise de messages \***  spécifié **(de facteur de dépassement de vitesse pour cent)** valeur.|Utilisez des compteurs de performance pour déterminer la vitesse d'entrée et de sortie de remise des messages. Considérez la fonction appropriée sur un facteur de lecteur pour votre environnement.<br /><br /> Vérifiez que les valeurs fournies pour le **durée de fenêtre d’échantillonnage** et **nombre minimal d’exemples** paramètres sont appropriés pour votre scénario.<br /><br /> Pour plus d’informations sur ces paramètres, consultez [comment modifier les taux de limitation paramètres](../core/how-to-modify-rate-based-throttling-settings.md).|BizTalk:MessageAgent|Vitesse d'entrée de remise de messages<br /><br /> Vitesse de sortie de publication de messages|  
 |4|La mémoire de processus dépasse le seuil spécifié.<br /><br /> Ceci peut se produire dans des scénarios qui utilisent beaucoup de mémoire, lors du traitement de messages volumineux ou lorsque les adaptateurs d'envoi essaient de traiter simultanément un grand nombre de messages.|Ralentissez la remise des messages vers les adaptateurs ou XLANG.<br /><br /> Réduisez la consommation de mémoire en mettant en attente des instances de service et en réduisant la taille du cache, le cas échéant.<br /><br /> Réduisez la taille des réserves de threads utilisées par le Gestionnaire des points de terminaison et/ou l'agent des messages.<br /><br /> Effectuez un nettoyage forcé de la mémoire .NET.|Si le système ne devient pas inactif en raison d’une limitation basée sur la mémoire de processus, il se peut qu’aucune action ne soit nécessaire.<br /><br /> Si le **nombre de messages In-process** compteur est élevé et l’utilisation du processeur n’est pas excessif même quand il est limitation, aucune action supplémentaire ne peut être nécessaire.<br /><br /> Si le système semble être une limitation trop forte, envisagez d’augmenter la valeur associée à la **virtuelle de processus** seuil pour l’hôte et vérifiez que l’instance d’hôte ne génère pas d’une erreur « mémoire insuffisante ». Si une erreur « mémoire insuffisante » est déclenchée en augmentant la **virtuelle de processus** seuil, pensez à réduire les valeurs pour le **taille de file d’attente de messages internes** et **demessagesIn-process** seuils. Cette stratégie est particulièrement adaptée aux scénarios traitant de nombreux messages.<br /><br /> Pour plus d’informations sur ces paramètres, consultez [comment modifier les ressources de limitation paramètres](../core/how-to-modify-resource-based-throttling-settings.md).|BizTalk:MessageAgent|Mémoire de processus élevée<br /><br /> Mémoire de processus usage(MB)<br /><br /> Seuil d'utilisation de la mémoire de processus (Mo)<br /><br /> Nombre de messages en cours de traitement<br /><br /> Nombre d'instances actives|  
-|3|Le nombre de messages en cours de remise à une classe de service dépasse le seuil spécifié.<br /><br /> Ceci peut être dû à la grande complexité des processus, à des adaptateurs de sortie lents ou à des ressources système momentanément faibles.|Ralentissez la remise des messages vers les adaptateurs ou XLANG.<br /><br /> Réduisez la taille de la réserve de threads utilisée par l'agent des messages..|En cas de limitation trop forte, envisagez d’augmenter la valeur associée à la **messages In-process** seuil.<br /><br /> Pour plus d’informations sur ce paramètre, consultez [comment modifier les ressources de limitation paramètres](../core/how-to-modify-resource-based-throttling-settings.md) **Remarque :** l’augmentation de cette valeur peut avoir une influence négative impact sur les performances de l’adaptateur d’envoi et/ou augmenter la mémoire utilisation du processus.|BizTalk:MessageAgent|Nombre de messages en cours de traitement<br /><br /> Seuil du nombre de messages en cours de traitement|  
+|3|Le nombre de messages en cours de remise à une classe de service dépasse le seuil spécifié.<br /><br /> Ceci peut être dû à la grande complexité des processus, à des adaptateurs de sortie lents ou à des ressources système momentanément faibles.|Ralentissez la remise des messages vers les adaptateurs ou XLANG.<br /><br /> Réduisez la taille de la réserve de threads utilisée par l'agent des messages.|En cas de limitation trop forte, envisagez d’augmenter la valeur associée à la **messages In-process** seuil.<br /><br /> Pour plus d’informations sur ce paramètre, consultez [comment modifier les ressources de limitation paramètres](../core/how-to-modify-resource-based-throttling-settings.md) **Remarque :** l’augmentation de cette valeur peut avoir une influence négative impact sur les performances de l’adaptateur d’envoi et/ou augmenter la mémoire utilisation du processus.|BizTalk:MessageAgent|Nombre de messages en cours de traitement<br /><br /> Seuil du nombre de messages en cours de traitement|  
 |9|Le nombre de threads de processus dépasse le seuil spécifié.|Réduire la taille des pools de threads utilisés par la terminaison et/ou l’Agent des messages|Envisagez d'ajuster les différentes tailles de réserves de threads pour que le système ne puisse pas créer un grand nombre de threads.<br /><br /> Pour plus d’informations sur la modification des tailles de pool de threads, consultez [comment modifier les paramètres généraux](../core/how-to-modify-general-settings.md) et [comment modifier les ressources de limitation paramètres](../core/how-to-modify-resource-based-throttling-settings.md).|BizTalk:MessageAgent|Nombre de threads<br /><br /> Seuil de nombre de threads|  
 |5|La mémoire système dépasse un seuil.|Ralentissez la remise des messages vers les adaptateurs ou XLANG.<br /><br /> Réduisez la consommation de mémoire en mettant en attente des instances de service et en réduisant la taille du cache, le cas échéant.<br /><br /> Réduisez la taille des réserves de threads utilisées par le Gestionnaire des points de terminaison et/ou l'agent des messages.|Envisagez de réduire la charge en réduisant la taille par défaut de la réserve de threads du Gestionnaire des points de terminaison et/ou la taille des lots de l'adaptateur.<br /><br /> Si le processus ne consomme pas trop de mémoire, envisagez d’augmenter la **physique globale** seuil pour l’hôte.<br /><br /> Pour plus d’informations sur la modification de la **physique globale** seuil, consultez [comment modifier les ressources de limitation paramètres](../core/how-to-modify-resource-based-throttling-settings.md).|BizTalk:MessageAgent|Utilisation de la mémoire physique (Mo)|

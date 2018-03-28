@@ -1,22 +1,22 @@
 ---
-title: "Étape 8 (en local) : Configurer l’Application BizTalk Server | Documents Microsoft"
-ms.custom: 
+title: 'Étape 8 (en local) : Configurer l’Application BizTalk Server | Documents Microsoft'
+ms.custom: ''
 ms.date: 2015-12-08
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5109fb54-8453-444f-bc9c-070a65053397
-caps.latest.revision: "4"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: fa411b7ca828a45aa0d5e58212bb48195c48180f
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-8-on-premises-configure-the-biztalk-server-application"></a>Étape 8 (en local) : Configurer l’Application BizTalk Server
 Lors de l’étape précédente, vous avez créé une orchestration [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Dans cette étape, vous allez générer, déployer et configurer l’application.  
@@ -49,7 +49,7 @@ Lors de l’étape précédente, vous avez créé une orchestration [!INCLUDE[bt
   
 ## <a name="configure-the-application"></a>Configurez l'application  
   
-1.  Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur  **[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]** , puis cliquez sur [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)].  
+1.  Cliquez sur **Démarrer**, pointez sur **tous les programmes**, pointez sur **[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]**, puis cliquez sur [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)].  
   
 2.  Dans l’arborescence de la console, dans le volet gauche, développez [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], avec le bouton droit **groupe BizTalk**, puis cliquez sur **Actualiser**.  
   
@@ -57,7 +57,7 @@ Lors de l’étape précédente, vous avez créé une orchestration [!INCLUDE[bt
   
 4.  Dans l’orchestration, vous avez créé un port logique (**ReceiveSO**) pour recevoir des messages à partir de la file d’attente du Bus de Service. Dans cette étape, vous allez créer un port de réception physique à mapper vers le port logique.  
   
-    1.  À partir de la [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration de la Console, sous le **OrderProcessingDemo** nœud, avec le bouton droit **Ports de réception**, pointez sur **nouveau**, puis cliquez sur **Unidirectionnel Port de réception**.  
+    1.  À partir de la [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration de la Console, sous le **OrderProcessingDemo** nœud, avec le bouton droit **Ports de réception**, pointez sur **nouveau**, puis cliquez sur **Port de réception unidirectionnel**.  
   
     2.  Sous l'onglet **Général** , effectuez les paramétrages suivants :  
   
@@ -79,7 +79,7 @@ Lors de l’étape précédente, vous avez créé une orchestration [!INCLUDE[bt
   
     5.  Cliquez sur **configurer**.  
   
-    6.  À partir de la boîte de dialogue Propriétés du Transport SB-Messaging, sur le **général** onglet, pour **file d’attente ou abonnement URL**, entrez **sb://mynamespace.servicebus.appfabriclabs.com/queueordersedi** . Ici, *mynamespace* est l’espace de noms Service Bus et *file_attente_commandes_edi* est la file d’attente du Bus de Service que vous avez créé dans [étape 3 (pour Azure) : créer une file d’attente du Bus de Service](../core/step-3-for-azure-create-a-service-bus-queue.md).  
+    6.  À partir de la boîte de dialogue Propriétés du Transport SB-Messaging, sur le **général** onglet, pour **file d’attente ou abonnement URL**, entrez **sb://mynamespace.servicebus.appfabriclabs.com/queueordersedi**. Ici, *mynamespace* est l’espace de noms Service Bus et *file_attente_commandes_edi* est la file d’attente du Bus de Service que vous avez créé dans [étape 3 (pour Azure) : créer une file d’attente du Bus de Service](../core/step-3-for-azure-create-a-service-bus-queue.md).  
   
     7.  À partir de la boîte de dialogue Propriétés du Transport SB-Messaging, sur le **authentification** onglet, spécifiez les valeurs suivantes :  
   
@@ -116,7 +116,7 @@ Lors de l’étape précédente, vous avez créé une orchestration [!INCLUDE[bt
         |**Adresse (URI)**|Type **MSSQL://Nom_Ordinateur/nom_instance_base_de_donn ées/nom_base_de_données**. Par exemple, pour se connecter à un **DemoDB** de la base de données sur l’ordinateur local en cours d’exécution sous l’instance de base de données par défaut, entrez`mssql://.//DemoDB`<br /><br /> Pour plus d’informations, consultez [créer l’URI de connexion SQL Server](../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md).|  
         |**Action**|Type **TableOp/Insert/dbo/SalesOrder**.|  
   
-    5.  À partir des propriétés du Transport WCF-SQL, sur le **informations d’identification** onglet, sélectionnez **n’utilisez pas l’authentification unique sur**et spécifiez les informations d’identification (respecte la casse) pour se connecter à SQL Server de base de données spécifiée dans la chaîne de connexion. Si vous souhaitez vous connecter à l’aide de l’authentification Windows, ne renseignez pas les informations d’identification.  
+    5.  À partir des propriétés du Transport WCF-SQL, sur le **informations d’identification** onglet, sélectionnez **n’utilisez pas l’authentification unique sur**et spécifiez les informations d’identification (respecte la casse) pour se connecter à la base de données SQL Server que vous avez spécifié dans la chaîne de connexion. Si vous souhaitez vous connecter à l’aide de l’authentification Windows, ne renseignez pas les informations d’identification.  
   
     6.  Cliquez sur **OK** jusqu'à ce que vous quittiez toutes les boîtes de dialogue.  
   

@@ -1,26 +1,26 @@
 ---
-title: "À l’aide du suivi d’événements pour Windows4 | Documents Microsoft"
-ms.custom: 
+title: À l’aide du suivi d’événements pour Windows4 | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ETW
 - BTAJDEEnterpriseOneTrace command
 - Event Tracing for Windows
 ms.assetid: 5f07d317-5ae2-4d1e-a343-941f3079dc4b
-caps.latest.revision: "8"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: e98340654df792b8ec58014d4804394b5a6c6099
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="using-event-tracing-for-windows"></a>À l’aide d’événements de suivi pour Windows
 L'adaptateur Microsoft BizTalk pour JD Edwards EnterpriseOne consigne des messages d'erreur, d'avertissement et d'informations dans l'Observateur d'événements Windows. Vous pouvez visualiser des messages de suivi supplémentaires à l'aide de l'outil Suivi d'événements pour Windows (ETW). Lorsqu'il est activé, cet outil crée un fichier *.etl pour recevoir les messages. Ce fichier au format binaire doit être converti pour être lu. Pour ce faire, vous devez disposer d’une application consommateur capable d’interpréter le \*fichier .etl, par exemple, tracerpt.exe ou tracedmp.ex. L’application tracept.exe convertit le \*.etl dans deux fichiers texte : summary.txt et dumpfile.csv.  
@@ -59,15 +59,15 @@ BTAJDEEnterpriseOneTrace <Trace element> -stop
   
 ```  
   
- Où :  **\<élément Trace\>**  (obligatoire) est le type de fournisseur.  
+ Où : **\<élément Trace\>** (obligatoire) est le type de fournisseur.  
   
  Les options associées sont :  
   
--   **-émetteur**  
+-   **-transmitter**  
   
--   **-récepteur**  
+-   **-receiver**  
   
--   **-gestion**  
+-   **-management**  
   
 -   **-start, - stop**: activer ou désactiver le fournisseur.  
   
@@ -79,7 +79,7 @@ BTAJDEEnterpriseOneTrace <Trace element> -stop
   
 -   **Fichier journal**: nom du fichier journal (la valeur par défaut s’agit de c:\rtlog.etl).  
   
- Exemple :  
+ Par exemple :  
   
 ```  
 BTAJDEEnterpriseOneTrace -transmitter -start -cir 10 -rt c:\log\mylog.etl  

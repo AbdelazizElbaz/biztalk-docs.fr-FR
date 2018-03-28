@@ -1,23 +1,23 @@
 ---
-title: "Créer des artefacts d’envoi PeopleSoft adaptateur | Documents Microsoft"
-description: "Créer le port d’envoi, envoyer les propriétés de transport et mettre à jour le nombre maximal d’appels simultanés pour envoyer des messages à PeopleSoft à l’aide de l’adaptateur PeopleSoft Enterprise dans BizTalk Server"
-ms.custom: 
+title: Créer des artefacts d’envoi PeopleSoft adaptateur | Documents Microsoft
+description: Créer le port d’envoi, envoyer les propriétés de transport et mettre à jour le nombre maximal d’appels simultanés pour envoyer des messages à PeopleSoft à l’aide de l’adaptateur PeopleSoft Enterprise dans BizTalk Server
+ms.custom: ''
 ms.date: 10/19/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ce67da59-26a6-44a2-929c-ed3acb21d407
-caps.latest.revision: "10"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 2bc559f4e3c25560540a171b3f47ff25e6f34e89
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="create-peoplesoft-send-artifacts"></a>Créer des artefacts d’envoi PeopleSoft
 L'adaptateur Microsoft BizTalk pour PeopleSoft Enterprise accède à PeopleSoft et explore les composants disponibles ou traite les requêtes SOAP. Cette rubrique vous montre comment créer les artefacts de l’envoi d’Administration de BizTalk Server pour utiliser l’adaptateur PeopleSoft.

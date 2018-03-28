@@ -18,7 +18,7 @@ ms.openlocfilehash: 5f57cac0673a6520de4b0d881527bbc7b670ca1b
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="syntax-for-a-select-statement-in-sap"></a>Syntaxe pour une instruction SELECT dans SAP
 Les sections suivantes décrivent les spécifications de grammaire pour l’implémentation des requêtes SELECT sur la [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]. Notez que, dans certains cas, la syntaxe est différente de la syntaxe Transact-SQL de base.  

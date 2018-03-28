@@ -1,11 +1,11 @@
 ---
-title: "Comment utiliser le site Web de BizTalk Services Assistant pour publier une Orchestration en tant qu’un Service Web de publication | Documents Microsoft"
-ms.custom: 
+title: Comment utiliser le site Web de BizTalk Services Assistant pour publier une Orchestration en tant qu’un Service Web de publication | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Web services, publishing
@@ -16,15 +16,15 @@ helpviewer_keywords:
 - BizTalk Web Services Publishing Wizard, about BizTalk Web Services Publishing Wizard
 - orchestrations, publishing
 ms.assetid: d990f8e4-88ce-4718-8a94-63796b8d92dc
-caps.latest.revision: "20"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: d8c86721091b9a0c9e8436b42a7489e228dbb7e0
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-use-the-biztalk-web-services-publishing-wizard-to-publish-an-orchestration-as-a-web-service"></a>Comment utiliser l’Assistant Publication de Services Web BizTalk pour publier une Orchestration en tant que Service Web
 L'Assistant Publication de services Web BizTalk permet de publier une orchestration en tant que service Web.  
@@ -66,13 +66,13 @@ L'Assistant Publication de services Web BizTalk permet de publier une orchestrat
   
     |Option|Valeur| Description|  
     |------------|-----------|-----------------|  
-    |Style de paramètre SOAP|Valeur par défaut|Cette option spécifie la façon dont les paramètres sont formatés dans un message SOAP. Pour plus d’informations, consultez SoapParameterStyle, énumération au [http://go.microsoft.com/fwlink/?LinkId=62259](http://go.microsoft.com/fwlink/?LinkId=62259).|  
-    |Style de paramètre SOAP|Bare|Cette option spécifie la façon dont les paramètres sont formatés dans un message SOAP. Pour plus d’informations, consultez SoapParameterStyle, énumération au [http://go.microsoft.com/fwlink/?LinkId=62259](http://go.microsoft.com/fwlink/?LinkId=62259).|  
-    |Style de paramètre SOAP|Wrapped|Cette option spécifie la façon dont les paramètres sont formatés dans un message SOAP. Pour plus d’informations, consultez SoapParameterStyle, énumération au [http://go.microsoft.com/fwlink/?LinkId=62259](http://go.microsoft.com/fwlink/?LinkId=62259).|  
-    |Demandes de conformité|Aucune|Cette option indique la spécification d'interopérabilité des services Web (WSI) à laquelle les demandes de liaison doivent se conformer. Pour plus d’informations, consultez la propriété WebServiceBindingAttribute.ConformsTo à [http://go.microsoft.com/fwlink/?LinkId=193064](http://go.microsoft.com/fwlink/?LinkId=193064).|  
-    |Demandes de conformité|WS-I Basic Profile 1.1|Cette option indique la spécification d'interopérabilité des services Web (WSI) à laquelle les demandes de liaison doivent se conformer. Pour plus d’informations, consultez la propriété WebServiceBindingAttribute.ConformsTo à [http://go.microsoft.com/fwlink/?LinkId=193064](http://go.microsoft.com/fwlink/?LinkId=193064).|  
+    |Style de paramètre SOAP|Par défaut|Cette option spécifie la façon dont les paramètres sont formatés dans un message SOAP. Pour plus d’informations, consultez SoapParameterStyle, énumération au [ http://go.microsoft.com/fwlink/?LinkId=62259 ](http://go.microsoft.com/fwlink/?LinkId=62259).|  
+    |Style de paramètre SOAP|Bare|Cette option spécifie la façon dont les paramètres sont formatés dans un message SOAP. Pour plus d’informations, consultez SoapParameterStyle, énumération au [ http://go.microsoft.com/fwlink/?LinkId=62259 ](http://go.microsoft.com/fwlink/?LinkId=62259).|  
+    |Style de paramètre SOAP|Wrapped|Cette option spécifie la façon dont les paramètres sont formatés dans un message SOAP. Pour plus d’informations, consultez SoapParameterStyle, énumération au [ http://go.microsoft.com/fwlink/?LinkId=62259 ](http://go.microsoft.com/fwlink/?LinkId=62259).|  
+    |Demandes de conformité|Aucun|Cette option indique la spécification d'interopérabilité des services Web (WSI) à laquelle les demandes de liaison doivent se conformer. Pour plus d’informations, consultez la propriété WebServiceBindingAttribute.ConformsTo à [ http://go.microsoft.com/fwlink/?LinkId=193064 ](http://go.microsoft.com/fwlink/?LinkId=193064).|  
+    |Demandes de conformité|WS-I Basic Profile 1.1|Cette option indique la spécification d'interopérabilité des services Web (WSI) à laquelle les demandes de liaison doivent se conformer. Pour plus d’informations, consultez la propriété WebServiceBindingAttribute.ConformsTo à [ http://go.microsoft.com/fwlink/?LinkId=193064 ](http://go.microsoft.com/fwlink/?LinkId=193064).|  
     |Forcer requête-réponse|[Par défaut]|Cette option indique si des opérations BizTalk unidirectionnelles doivent être exposées en tant que méthodes Web de requête-réponse. La valeur par défaut est de ne pas forcer l'indicateur unidirectionnel.|  
-    |Forcer requête-réponse|Non|Cette option indique si des opérations BizTalk unidirectionnelles doivent être exposées en tant que méthodes Web de requête-réponse. La valeur par défaut est de ne pas forcer l'indicateur unidirectionnel.|  
+    |Forcer requête-réponse|non|Cette option indique si des opérations BizTalk unidirectionnelles doivent être exposées en tant que méthodes Web de requête-réponse. La valeur par défaut est de ne pas forcer l'indicateur unidirectionnel.|  
     |Forcer requête-réponse|Oui|Cette option indique si des opérations BizTalk unidirectionnelles doivent être exposées en tant que méthodes Web de requête-réponse. La valeur par défaut est de ne pas forcer l'indicateur unidirectionnel.|  
   
 7.  Sur le **propriétés du Service Web** , cliquez sur **suivant**.  
@@ -97,7 +97,7 @@ L'Assistant Publication de services Web BizTalk permet de publier une orchestrat
     > [!NOTE]
     >  La même combinaison espace de noms cible / nom de l'élément racine ne peut être ajoutée qu'une seule fois en tant qu'en-tête SOAP de requête et qu'une seule fois en tant qu'en-tête SOAP de réponse.  
   
-9. Sur le **projet de Service Web** page, dans le **nom du projet** texte, tapez le nom du projet. Vous pouvez accepter l’emplacement par défaut (http://localhost/ <*project_name*>), tapez un emplacement pour le projet dans le **emplacement du projet** zone de texte, ou cliquez sur **Parcourir** et sélectionnez un répertoire Web. Sélectionnez une des options suivantes :  
+9. Sur le **projet de Service Web** page, dans le **nom du projet** texte, tapez le nom du projet. Vous pouvez accepter l’emplacement par défaut (http://localhost/<*project_name*>), tapez un emplacement pour le projet dans le **emplacement du projet** zone de texte, ou cliquez sur **Parcourir** et Sélectionnez un répertoire Web. Sélectionnez une des options suivantes :  
   
     -   **Remplacer le projet existant.** cette option n'est disponible que si l'emplacement du projet existe déjà. Vous serez uniquement en mesure de publier vers le même emplacement si vous sélectionnez cette option. Sinon, vous devez indiquer un emplacement de projet différent.  
   
@@ -106,10 +106,10 @@ L'Assistant Publication de services Web BizTalk permet de publier une orchestrat
     -   **BizTalk de créer des emplacements de réception.** cette option crée automatiquement les ports et emplacements de réception de l'adaptateur SOAP qui correspondent à chaque fichier .asmx généré. Si un emplacement de réception existe déjà, il n'est pas remplacé. Emplacements de réception de l’adaptateur SOAP sont résolus en utilisant le format /\<*nom de répertoire virtuel*\>/\<*namespace_typename_portname d’orchestration*  \>.asmx. Après avoir sélectionné cette option, choisissez l'application où les ports et emplacements de réception sont générés.  
   
         > [!NOTE]
-        >  L'emplacement du projet peut se trouver sur un serveur différent. Pour publier un service Web sur un autre serveur, tapez le nom du projet en tant que  **http://&lt*nom_serveur*>/<*project_name*> **.  
+        >  L'emplacement du projet peut se trouver sur un serveur différent. Pour publier un service Web sur un autre serveur, tapez le nom du projet en tant que **http://&lt*nom_serveur*>/<*project_name*>**.  
   
         > [!NOTE]
-        >  L'emplacement du projet peut se trouver sur un site Web personnalisé. Lors de la publication sur un site Web personnalisé, ajoutez le numéro du port du site Web dans l'URL. Par exemple, http://localhost : 8080 / <*project_name*>.  
+        >  L'emplacement du projet peut se trouver sur un site Web personnalisé. Lors de la publication sur un site Web personnalisé, ajoutez le numéro du port du site Web dans l'URL. Par exemple, http://localhost:8080/< *project_name*>.  
   
         > [!NOTE]
         >  Quand vous utilisez l'Assistant pour créer des emplacements de réception, il les crée avec les valeurs par défaut. La valeur par défaut pour le pipeline de réception est le **Microsoft.BizTalk.DefaultPipelines.PassThruReceive** pipeline. Si les messages reçus par le service Web publié requièrent un traitement spécial (par exemple, validation, corrélation / promotion de propriétés ou mappages entrant/sortant), vous devez définir le pipeline de réception sur  **Microsoft.BizTalk.DefaultPipelines.XMLReceive**, ou à un pipeline personnalisé.  

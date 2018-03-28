@@ -1,25 +1,25 @@
 ---
 title: Comment supprimer des mappages utilisateur | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - maps [SSO], deleting
 - managing [SSO maps], deleting user maps
 ms.assetid: de511113-b0b0-4920-91dc-4c9e380fda58
-caps.latest.revision: "10"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 03f7c1fa75b6fe7bb4c78e18c97fccd1404f89c9
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-delete-user-mappings"></a>Comment supprimer des mappages utilisateur
 Ces commandes permettent de supprimer un ou plusieurs mappages utilisateur, comme décrit dans le fichier XML. Voici un exemple de fichier XML.  
@@ -51,7 +51,7 @@ Ces commandes permettent de supprimer un ou plusieurs mappages utilisateur, comm
   
 2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est \< *lecteur*\>: \Program Files\Enterprise Single Sign-On.  
   
-3.  Type **ssomanage – deletemappings  *\<nom de fichier de mappage\>***, où \<* nom de fichier de mappage* \> est le nom du fichier qui contienne le ou les mappages qu’utilisateur à supprimer.  
+3.  Type **ssomanage – deletemappings *\<nom de fichier de mappage\>***, où \<*nom de fichier de mappage* \> est le nom du fichier qui contienne le ou les mappages qu’utilisateur à supprimer.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -62,7 +62,7 @@ Ces commandes permettent de supprimer un ou plusieurs mappages utilisateur, comm
   
 2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur*\>: \Program Files\Enterprise Single Sign-On.  
   
-3.  Type  **ssomanage-deletemapping  *\<domaine\>*\\*\<nom d’utilisateur\> *   *\<nom de l’application\>***, où  *\<domaine\>*  correspond au domaine Windows pour le compte d’utilisateur,  *\<nom d’utilisateur\>*  est le nom d’utilisateur Windows et \<* nom de l’application* \> l’application spécifique pour lequel vous souhaitez supprimer le mappage utilisateur.  
+3.  Type  **ssomanage-deletemapping  *\<domaine\>*\\*\<nom d’utilisateur\> *  *\<nom de l’application\>***, où *\<domaine\>* correspond au domaine Windows pour le compte d’utilisateur, *\<nom d’utilisateur\>* est le nom d’utilisateur Windows et \<*nom de l’application* \> l’application spécifique pour lequel vous souhaitez supprimer le mappage utilisateur.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  
@@ -73,7 +73,7 @@ Ces commandes permettent de supprimer un ou plusieurs mappages utilisateur, comm
   
 2.  Dans la ligne de commande, accédez au répertoire d'installation de l'authentification unique de l'entreprise. Le répertoire d’installation par défaut est  *\<lecteur*\>: \Program Files\Enterprise Single Sign-On.  
   
-3.  Type ** ssoclient – deletemapping *\<nom de l’application\>***, où  *\<nom de l’application\>*  est le nom de l’application associée que vous souhaitez supprimer le mappage utilisateur.  
+3.  Type ** ssoclient – deletemapping *\<nom de l’application\>***, où *\<nom de l’application\>* est le nom de l’application associée que vous souhaitez supprimer le mappage utilisateur.  
   
     > [!NOTE]
     >  Sur les systèmes qui prennent en charge le contrôle de compte d'utilisateur, vous devrez peut-être exécuter l'outil avec des privilèges d'administrateur.  

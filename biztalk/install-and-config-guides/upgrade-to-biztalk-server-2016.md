@@ -1,22 +1,22 @@
 ---
-title: "Mise à niveau vers BizTalk Server 2016 | Documents Microsoft"
-ms.custom: 
+title: Mise à niveau vers BizTalk Server 2016 | Documents Microsoft
+ms.custom: ''
 ms.prod: biztalk-server
 ms.date: 06/08/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 975ec82b-ed27-4545-8e4a-0e567507c9ba
-caps.latest.revision: "2"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 39b5b6b6da7d97d3c763e5f45f215aa03d13c77c
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="upgrade-to-biztalk-server-2016"></a>Mise à niveau vers BizTalk Server 2016
 Mise à niveau vers [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] à partir de [!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)] ou de BizTalk Server 2013.
@@ -47,11 +47,11 @@ Le tableau suivant répertorie les systèmes d'exploitation pris en charge pouva
 
 | Systèmes d'exploitation | BizTalk Server 2013 R2 |BizTalk Server 2013 |
 | --- | --- | --- |
-| Windows Server 2012 R2 | Oui | Non |
-| Windows Server 2012 | Non | Non |
-| Windows 8.1 | Oui | Non |
-| Windows 8 | Non | Non
-| Windows 7 SP1 | Non | Non |
+| Windows Server 2012 R2 | Oui | non |
+| Windows Server 2012 | non | non |
+| Windows 8.1 | Oui | non |
+| Windows 8 | non | non
+| Windows 7 SP1 | non | non |
 
 Le tableau suivant répertorie les versions de SQL Server prises en charge pouvant être mises à niveau vers [!INCLUDE[bts2016_md](../includes/bts2016-md.md)]. Le serveur SQL Server héberge les bases de données utilisées par BizTalk Server. « Oui » signifie que BizTalk Server utilisant cette version de SQL Server peut être mis à niveau. « Non » signifie que BizTalk Server utilisant cette version de SQL Server ne peut pas être mis à niveau. En cas de « Non », l’environnement BizTalk doit être recréé sur une version de SQL Server prise en charge. La rubrique [Configurations logicielle et matérielle pour BizTalk Server 2016](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md) répertorie les versions de SQL Server prises en charge. 
 
@@ -60,21 +60,21 @@ Le tableau suivant répertorie les versions de SQL Server prises en charge pouva
 
 | SQL Server | BizTalk Server 2013 R2 |BizTalk Server 2013 |
 | --- | --- | --- |
-| SQL Server 2014 | Oui | Non |
-| SQL Server 2012 SP1| Non | Non |
-| SQL Server 2012 | Non | Non |
-| SQL Server 2008 R2 SP1 | Non | Non |
+| SQL Server 2014 | Oui | non |
+| SQL Server 2012 SP1| non | non |
+| SQL Server 2012 | non | non |
+| SQL Server 2008 R2 SP1 | non | non |
 
 
 Le tableau suivant répertorie le chemin de mise à niveau de l’édition prise en charge à partir de [!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)]/2013 vers [!INCLUDE[bts2016_md](../includes/bts2016-md.md)]. « Oui » signifie que l’édition [!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)]/2013 peut être mise à niveau vers l’édition en question. « Non » signifie que l’édition [!INCLUDE[bts2013r2_md](../includes/bts2013r2-md.md)]/2013 ne peut pas être mise à niveau vers l’édition en question. En cas de « Non », l'environnement BizTalk doit être recréé.
 
 | BizTalk Server 2013 R2/2013 | BizTalk Server 2016 Version d’évaluation | BizTalk Server 2016 Édition Agence | BizTalk Server 2016 Édition Développeur | BizTalk Server 2016 Édition Standard | BizTalk Server 2016 Édition Entreprise |
 | --- | --- | --- | --- | --- | --- |
-| Evaluation | Non | Non | Non | Non | Oui | 
-| Agence | Non | Oui | Non | Non | Oui | 
-| Développeur | Non | Non | Oui | Non | Oui | 
-| Standard | Non | Non | Non | Oui | Oui | 
-| Enterprise | Non | Non | Non | Non | Oui | 
+| Evaluation | non | Non | Non | Non | Oui | 
+| Agence | non | Oui | Non | Non | Oui | 
+| Développeur | non | Non | Oui | Non | Oui | 
+| Standard | non | Non | Non | Oui | Oui | 
+| Enterprise | non | Non | Non | Non | Oui | 
 
 ## <a name="before-the-upgrade--what-you-need-to-know"></a>Avant la mise à niveau – ce que vous devez savoir
 
@@ -147,7 +147,8 @@ La fonctionnalité Messagerie de base de données SQL Server est nécessaire pou
 
 - **Espace disque** : L’espace disque disponible doit correspondre au minimum à la taille des bases de données BAM existantes.
 
-- **Agrégations en temps réel** : Si vous utilisez les agrégations BAM en temps réel dans votre version actuelle de BizTalk Server et que vous effectuez une mise à niveau vers SQL Server, procédez à une installation ou à une mise à niveau vers SQL Server Enterprise Edition. Faute de quoi, la mise à niveau échoue.
+- 
+  **Agrégations en temps réel** : Si vous utilisez les agrégations BAM en temps réel dans votre version actuelle de BizTalk Server et que vous effectuez une mise à niveau vers SQL Server, procédez à une installation ou à une mise à niveau vers SQL Server Entreprise Edition. Faute de quoi, la mise à niveau échoue.
 
 - **Valeur maxTimeout** : Si votre base de données BAM est volumineuse, mettez à jour la valeur `maxTimeout` des transactions distribuées dans le fichier machine.config en spécifiant :  
 
@@ -233,7 +234,7 @@ Le panneau de configuration vous permet de modifier complètement les paramètre
 ## <a name="do-the-upgrade"></a>Réalisation de la mise à niveau
 
 > [!IMPORTANT]
-> Lorsque vous avez installé SQL Server, le programme d’installation a accordé à votre compte de connexion des droits d’administrateur système. Des droits d’administrateur système sont également requis pour installer BizTalk Server. Procédez de l'une des manières suivantes :
+> Lorsque vous avez installé SQL Server, le programme d’installation a accordé à votre compte de connexion des droits d’administrateur système. Des droits d’administrateur système sont également requis pour installer BizTalk Server. Procédez de l'une des manières suivantes :
 > 
 > - Utilisez le même compte que pour l’installation de SQL Server  
 > **OU**  
@@ -248,7 +249,7 @@ Le panneau de configuration vous permet de modifier complètement les paramètre
 5. Acceptez le contrat de licence, puis sélectionnez **Suivant**.
 6. Dans Programme d’amélioration du produit, entrez votre préférence. Consultez **Annexe A** (dans cette rubrique) pour plus d’informations.
 7. Dans **Installation des composants**, passez en revue les composants disponibles et sélectionnez **Suivant**.
-8. S’il manque un composant requis sur votre ordinateur, le programme d’installation peut installer les composants redistribuables requis. Vous pouvez effectuer l'une des opérations suivantes :
+8. S’il manque un composant requis sur votre ordinateur, le programme d’installation peut installer les composants redistribuables requis. Vous pouvez effectuer l'une des opérations suivantes :
 
     - Sélectionnez Installer automatiquement la configuration requise redistribuable à partir du Web  
   

@@ -1,22 +1,22 @@
 ---
 title: Utiliser des fichiers de liaison pour importer ou exporter | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f9a2a82a-f8d4-4ec2-b8c1-be6cda3f993a
-caps.latest.revision: "2"
+caps.latest.revision: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: e3707726eb9e8e77e0536f36700fe098d83ad414
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="use-binding-files-to-import-or-export"></a>Utiliser des fichiers de liaison pour importer ou exporter
 
@@ -39,14 +39,14 @@ Voici quelques-unes des fonctionnalités d’importation et d’exportation :
 * L’Assistant Liaison importer l’application vous permet de choisir d’importer les paramètres de suivi ou exclure les parties.
 * BTSTask inclut la `ImportParties` et `ExportParties` commandes 
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 
 * Vous devez être connecté avec un compte qui est membre de la ** groupe Administrateurs de BizTalk Server **. Consultez [autorisations requises pour déployer et gérer une Application BizTalk](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md).  
 
 * Vous devez avoir ajouté une référence à la **Application EDI BizTalk** à partir d’une application BizTalk qui sera utilisée comme une application EDI. Consultez [post-configuration étapes](../install-and-config-guides/post-configuration-steps-to-optimize-your-environment.md).
 
 ## <a name="import-or-export-all-the-trading-partners"></a>Importer ou exporter tous les partenaires commerciaux
-1. Ouvrez  **[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]** , développez le groupe BizTalk.
+1. Ouvrez **[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]**, développez le groupe BizTalk.
 2. Avec le bouton droit **Parties**, puis sélectionnez **exporter**. 
 
     Lorsque vous exportez à la **parties**-niveau, vous exportez tous les partenaires commerciaux. Cette opération exporte également tous les éléments utilisés par les partenaires commerciaux, y compris les profils d’entreprise et des accords dans un fichier XML. 
@@ -63,7 +63,7 @@ Consultez [ImportParties commande](../core/importparties-command.md).
 
     
 ## <a name="export-individual-partners"></a>Exporter des partenaires
-1. Dans  **[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]** , sélectionnez **Parties**.
+1. Dans **[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]**, sélectionnez **Parties**.
 2. Dans le **tiers et profils d’entreprise** volet, avec le bouton droit à un tiers, puis sélectionnez **exporter**.
 
     Lorsque vous exportez un tiers spécifique, vous êtes proposé pour exporter toutes les parties et tous les contrats utilisés par ce tiers. Vous pouvez désactiver **exporter tiers sélectionnés et tous les contrats dans les parties sélectionnées** pour exporter uniquement la partie que vous sélectionnez.
@@ -84,7 +84,7 @@ Consultez [ExportParties commande](../core/exportparties-command.md).
 
 Au niveau de l’application, vous pouvez importer un fichier de liaison avec des tiers EDI et AS2. 
 
-1. Dans  **[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]** , développez **Applications**
+1. Dans **[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]**, développez **Applications**
 2. Avec le bouton droit de votre application, puis sélectionnez **importation**.
 3. **Importer des paramètres de suivi** et **exclure les Parties** options sont disponibles. À l’aide de ces options, vous pouvez choisir Importer les paramètres de suivi existants ou exclure des parties EDI/AS2 dans le fichier de liaison.
 

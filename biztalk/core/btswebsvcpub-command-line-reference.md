@@ -16,7 +16,7 @@ ms.openlocfilehash: 9c9993092c0d798ae2d47f614a24da21c3a2df62
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="btswebsvcpub-command-line-reference"></a>Référence de la ligne de commande BTSWebSvcPub
 Cette rubrique contient des informations de référence relatives à l'outil de ligne de commande BTSWebSvcPub inclus dans [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Vous pouvez utiliser BTSWebSvcPub pour créer des services Web (.asmx) et publier des orchestrations via les services Web comme suit :  
@@ -37,7 +37,7 @@ Cette rubrique contient des informations de référence relatives à l'outil de 
 |Paramètre|Requis| Description|  
 |---------------|--------------|-----------------|  
 |**Chemin d’accès**|Oui|Chemin d’accès et nom de fichier d’assembly BizTalk (*.dll) ou la description du service web (\*.xml) fichier.|  
-|**-Location**|non|Emplacement de publication. (Syntaxe : « http://host[:port]/path »)|  
+|**-Location**|non|Emplacement de publication. (Syntaxe : «http://host[ : port] / chemin d’accès »)|  
 |**-Overwrite**|non|Remplacer l'emplacement spécifié.|  
 |**-Anonymous**|non|Autoriser l'accès anonyme au service Web.|  
 |**-Name**|non|Nom de la solution et de l'assembly (fichiers .sln et .dll) qui contiendront le service Web.|  

@@ -15,7 +15,7 @@ ms.openlocfilehash: 5ce84071fbc105fd9faddd794792273aae2e76b9
 ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-3-create-the-build-and-release-definition"></a>Étape 3 : Créer la version et définition de version
 
