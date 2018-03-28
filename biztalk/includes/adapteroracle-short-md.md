@@ -1,1 +1,1 @@
-<span data-ttu-id="cfc7b-101">Adaptateur de base de données Oracle</span><span class="sxs-lookup"><span data-stu-id="cfc7b-101">Oracle Database adapter</span></span>
+<span data-ttu-id="4af25-101">Adaptateur de base de données Oracle</span><span class="sxs-lookup"><span data-stu-id="4af25-101">Oracle Database adapter</span></span>

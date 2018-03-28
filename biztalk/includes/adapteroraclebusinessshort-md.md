@@ -1,1 +1,1 @@
-<span data-ttu-id="0b3b6-101">Adaptateur Oracle E-Business</span><span class="sxs-lookup"><span data-stu-id="0b3b6-101">Oracle E-Business adapter</span></span>
+<span data-ttu-id="82261-101">Adaptateur Oracle E-Business</span><span class="sxs-lookup"><span data-stu-id="82261-101">Oracle E-Business adapter</span></span>

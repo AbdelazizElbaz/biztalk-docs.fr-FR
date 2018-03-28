@@ -1,1 +1,1 @@
-<span data-ttu-id="4fc72-101">Module adaptateur de BizTalk</span><span class="sxs-lookup"><span data-stu-id="4fc72-101">BizTalk Adapter Pack</span></span>
+<span data-ttu-id="bd06e-101">Module adaptateur de BizTalk</span><span class="sxs-lookup"><span data-stu-id="bd06e-101">BizTalk Adapter Pack</span></span>

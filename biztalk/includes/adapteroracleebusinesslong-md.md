@@ -1,1 +1,1 @@
-<span data-ttu-id="f56c6-101">Microsoft BizTalk Adapter pour Oracle E-Business Suite</span><span class="sxs-lookup"><span data-stu-id="f56c6-101">Microsoft BizTalk Adapter for Oracle E-Business Suite</span></span>
+<span data-ttu-id="1830a-101">Microsoft BizTalk Adapter pour Oracle E-Business Suite</span><span class="sxs-lookup"><span data-stu-id="1830a-101">Microsoft BizTalk Adapter for Oracle E-Business Suite</span></span>

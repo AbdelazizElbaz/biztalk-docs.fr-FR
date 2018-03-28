@@ -1,1 +1,1 @@
-<span data-ttu-id="b402c-101">dans les instructions de l’interface utilisateur et de la référence du développeur</span><span class="sxs-lookup"><span data-stu-id="b402c-101">in the UI guidance and Developers reference</span></span>
+<span data-ttu-id="f90b1-101">dans les instructions de l’interface utilisateur et de la référence du développeur</span><span class="sxs-lookup"><span data-stu-id="f90b1-101">in the UI guidance and Developers reference</span></span>

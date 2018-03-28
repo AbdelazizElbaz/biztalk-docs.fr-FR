@@ -1,1 +1,1 @@
-<span data-ttu-id="4a95d-101">Fournisseur de données pour SAP</span><span class="sxs-lookup"><span data-stu-id="4a95d-101">Data Provider for SAP</span></span>
+<span data-ttu-id="e7724-101">Fournisseur de données pour SAP</span><span class="sxs-lookup"><span data-stu-id="e7724-101">Data Provider for SAP</span></span>
