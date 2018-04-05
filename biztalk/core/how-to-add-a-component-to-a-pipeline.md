@@ -1,15 +1,16 @@
 ---
 title: Comment ajouter un composant de pipeline | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: pipelines, components
+helpviewer_keywords:
+- pipelines, components
 ms.assetid: 6b1dbeab-6acc-46d7-8ddd-79b79da3591c
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

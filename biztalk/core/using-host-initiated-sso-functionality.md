@@ -1,15 +1,16 @@
 ---
-title: "Utilisation de l’hôte initiée par fonctionnalité SSO | Documents Microsoft"
-ms.custom: 
+title: Utilisation de l’hôte initiée par fonctionnalité SSO | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: SSO, host initiated
+helpviewer_keywords:
+- SSO, host initiated
 ms.assetid: d559b64d-2a79-44c6-b072-797107d0ab70
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

@@ -1,15 +1,16 @@
 ---
-title: "Étape 1 : Envoi d’un 0C 2 demande | Documents Microsoft"
-ms.custom: 
+title: 'Étape 1 : Envoi d’un 0C 2 demande | Documents Microsoft'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: double action tutorial, submitting requests
+helpviewer_keywords:
+- double action tutorial, submitting requests
 ms.assetid: 698c4a43-20b9-46b7-ab66-1dfa24232024
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

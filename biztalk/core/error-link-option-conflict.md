@@ -1,15 +1,16 @@
 ---
-title: "Erreur : conflit d’options de lien | Documents Microsoft"
-ms.custom: 
+title: 'Erreur : conflit d’options de lien | Documents Microsoft'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.map.error.linkOptionConflict
+f1_keywords:
+- bts10.map.error.linkOptionConflict
 ms.assetid: dbad5c00-500b-4931-a54c-8b311fbfda53
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

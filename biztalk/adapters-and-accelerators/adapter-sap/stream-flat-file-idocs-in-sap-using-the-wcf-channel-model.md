@@ -1,15 +1,16 @@
 ---
-title: "Flux de fichier plat les IDOC dans SAP à l’aide du modèle de canal WCF | Documents Microsoft"
-ms.custom: 
+title: Flux de fichier plat les IDOC dans SAP à l’aide du modèle de canal WCF | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: WCF channel model, streaming flat-file IDOCs
+helpviewer_keywords:
+- WCF channel model, streaming flat-file IDOCs
 ms.assetid: 5010e215-d8d0-47c8-93a6-20cfdeff2951
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

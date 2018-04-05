@@ -1,17 +1,18 @@
 ---
 title: Prise en main de BizTalk Accelerator pour RosettaNet | Documents Microsoft
-description: "Consultez les didacticiels disponibles pour aider à en savoir plus et prise en main l’accélérateur RosettaNet (BTARN) dans BizTalk Server"
-caps.latest.revision: "7"
+description: Consultez les didacticiels disponibles pour aider à en savoir plus et prise en main l’accélérateur RosettaNet (BTARN) dans BizTalk Server
+caps.latest.revision: 7
 author: MandiOhlinger
 manager: anneta
-ms.custom: 
+ms.custom: ''
 ms.date: 08/09/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: btarn.configuration.introduction
+f1_keywords:
+- btarn.configuration.introduction
 ms.assetid: 28a8942c-b461-4b2f-bc1f-1fc22cd08882
 ms.author: mandia
 ms.openlocfilehash: 156153010a4ee9caa5cb02535d516e05e49a21fa

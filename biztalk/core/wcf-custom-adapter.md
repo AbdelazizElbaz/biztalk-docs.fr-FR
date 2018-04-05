@@ -1,15 +1,16 @@
 ---
 title: Adaptateur WCF-Custom | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: WCF-Custom adapters
+helpviewer_keywords:
+- WCF-Custom adapters
 ms.assetid: bfe2f12d-3b8b-48ca-af05-e916c6902c55
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

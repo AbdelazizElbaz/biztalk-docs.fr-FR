@@ -1,15 +1,16 @@
 ---
-title: "Erreur : aucun Type de Script pour le fonctoid script | Documents Microsoft"
-ms.custom: 
+title: 'Erreur : aucun Type de Script pour le fonctoid script | Documents Microsoft'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.map.error.noScriptTypeForScriptingFunctoid
+f1_keywords:
+- bts10.map.error.noScriptTypeForScriptingFunctoid
 ms.assetid: dc2e9973-56d9-463b-8e25-c8d82916a6a0
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

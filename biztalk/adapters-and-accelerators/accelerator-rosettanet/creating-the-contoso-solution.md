@@ -1,15 +1,16 @@
 ---
-title: "Création de la Solution Contoso | Documents Microsoft"
-ms.custom: 
+title: Création de la Solution Contoso | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: private process tutorial, creating solutions
+helpviewer_keywords:
+- private process tutorial, creating solutions
 ms.assetid: 02f5326a-68bd-418a-af81-684a73056e2c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

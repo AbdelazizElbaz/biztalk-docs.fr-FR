@@ -1,15 +1,16 @@
 ---
-title: "Leçon 2 : Définir le processus d’entreprise | Documents Microsoft"
-ms.custom: 
+title: 'Leçon 2 : Définir le processus d’entreprise | Documents Microsoft'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: enterprise application integration tutorial, defining business processes
+helpviewer_keywords:
+- enterprise application integration tutorial, defining business processes
 ms.assetid: 644aa049-4dd7-4392-b97f-31b1f29e12bd
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

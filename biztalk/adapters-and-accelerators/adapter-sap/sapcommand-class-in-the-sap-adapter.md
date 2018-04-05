@@ -1,15 +1,16 @@
 ---
-title: "Classe SAPCommand dans l’adaptateur SAP | Documents Microsoft"
-ms.custom: 
+title: Classe SAPCommand dans l’adaptateur SAP | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: SAPCommand, supported methods, classes, and constructors
+helpviewer_keywords:
+- SAPCommand, supported methods, classes, and constructors
 ms.assetid: 55ad334e-1cc3-47c1-8764-be0f4e93f8b5
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

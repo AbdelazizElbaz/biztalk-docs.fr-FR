@@ -1,15 +1,16 @@
 ---
-title: "Erreur : sérialisation Native générique | Documents Microsoft"
-ms.custom: 
+title: 'Erreur : sérialisation Native générique | Documents Microsoft'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.map.error.genericNativeSerialize
+f1_keywords:
+- bts10.map.error.genericNativeSerialize
 ms.assetid: 3728727d-7d99-432d-844e-c956cc4635e4
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

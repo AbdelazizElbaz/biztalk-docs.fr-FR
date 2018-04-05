@@ -1,15 +1,16 @@
 ---
-title: "Annexe a : exemples de fichiers | Documents Microsoft"
-ms.custom: 
+title: 'Annexe a : exemples de fichiers | Documents Microsoft'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: examples
+helpviewer_keywords:
+- examples
 ms.assetid: 8d61ea92-a51b-4414-8b51-9b89714bd799
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

@@ -1,15 +1,16 @@
 ---
-title: "Étape 2 : Création de Ports pour le prix de 3A2 de Contoso et le scénario de requête-réponse de disponibilité à l’aide de l’Explorateur BizTalk | Documents Microsoft"
-ms.custom: 
+title: 'Étape 2 : Création de Ports pour le prix de 3A2 de Contoso et le scénario de requête-réponse de disponibilité à l’aide de l’Explorateur BizTalk | Documents Microsoft'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: private process tutorial, creating ports
+helpviewer_keywords:
+- private process tutorial, creating ports
 ms.assetid: e0b12a96-e799-47ac-8293-7de10662bdf0
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

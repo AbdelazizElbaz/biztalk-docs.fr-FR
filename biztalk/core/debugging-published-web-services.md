@@ -1,15 +1,16 @@
 ---
-title: "Débogage des Services Web publiés | Documents Microsoft"
-ms.custom: 
+title: Débogage des Services Web publiés | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: Web services, debugging
+helpviewer_keywords:
+- Web services, debugging
 ms.assetid: 65d663f3-081f-4952-8c36-afef9165dfb2
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

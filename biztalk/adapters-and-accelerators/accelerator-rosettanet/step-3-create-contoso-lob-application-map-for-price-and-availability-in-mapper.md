@@ -1,15 +1,16 @@
 ---
-title: "Étape 3 : Création d’une Application métier Contoso est mappé pour le prix et la disponibilité du projet à l’aide du mappeur de BizTalk | Documents Microsoft"
-ms.custom: 
+title: 'Étape 3 : Création d’une Application métier Contoso est mappé pour le prix et la disponibilité du projet à l’aide du mappeur de BizTalk | Documents Microsoft'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: private process tutorial, creating LOB maps
+helpviewer_keywords:
+- private process tutorial, creating LOB maps
 ms.assetid: a947e0ac-f0cb-4be9-85a8-09daf3675b1a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

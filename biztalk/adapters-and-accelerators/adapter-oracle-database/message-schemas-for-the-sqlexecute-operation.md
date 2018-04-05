@@ -1,15 +1,16 @@
 ---
-title: "Schémas de message pour l’opération SQLEXECUTE | Documents Microsoft"
-ms.custom: 
+title: Schémas de message pour l’opération SQLEXECUTE | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: SQLEXECUTE operations, message schemas for
+helpviewer_keywords:
+- SQLEXECUTE operations, message schemas for
 ms.assetid: 744645f4-0674-44e0-bf8d-8df70086b0f1
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -52,7 +53,7 @@ ms.lasthandoff: 11/28/2017
 </SQLEXECUTE>  
 ```  
   
- <span data-ttu-id="aa0cf-118">[Instruction] = l’instruction SQL à exécuter ; par exemple, « sélectionnez * de la table emp WHERE matemp = : emp_no ».</span><span class="sxs-lookup"><span data-stu-id="aa0cf-118">[STATEMENT] = The SQL statement to execute; for example, "SELECT * from emp WHERE empno=:emp_no".</span></span>  
+ <span data-ttu-id="aa0cf-118">[Instruction] = l’instruction SQL à exécuter ; par exemple, « sélectionnez \* de la table emp WHERE matemp = : emp_no ».</span><span class="sxs-lookup"><span data-stu-id="aa0cf-118">[STATEMENT] = The SQL statement to execute; for example, "SELECT \* from emp WHERE empno=:emp_no".</span></span>  
   
  <span data-ttu-id="aa0cf-119">[PARAM_SPEC] = la liste des paramètres IN dans l’instruction SQL et leurs types de données ; par exemple, « emp_no nombre ».</span><span class="sxs-lookup"><span data-stu-id="aa0cf-119">[PARAM_SPEC] = The list of the IN parameters in the SQL statement and their data types; for example, "emp_no NUMBER".</span></span>  
   

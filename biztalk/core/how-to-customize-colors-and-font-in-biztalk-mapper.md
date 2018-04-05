@@ -1,15 +1,16 @@
 ---
 title: Comment personnaliser les couleurs et polices dans le Mappeur BizTalk | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.mapper.options.colors
+f1_keywords:
+- bts10.mapper.options.colors
 ms.assetid: 494e4d70-8159-4721-9378-85bfc3c3d6f2
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

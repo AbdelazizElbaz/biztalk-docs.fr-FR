@@ -1,15 +1,16 @@
 ---
-title: "Gestion des profils d’entreprise | Documents Microsoft"
-ms.custom: 
+title: Gestion des profils d’entreprise | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.admin.resultsobject.businessprofile
+f1_keywords:
+- bts10.admin.resultsobject.businessprofile
 ms.assetid: cf98c5a4-71bb-440b-8172-717ed0eb8373
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

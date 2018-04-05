@@ -1,15 +1,16 @@
 ---
-title: "Étape 4 : Créer le Port de réception pour accepter les Messages de requête ADT | Documents Microsoft"
-ms.custom: 
+title: 'Étape 4 : Créer le Port de réception pour accepter les Messages de requête ADT | Documents Microsoft'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: interrogative tutorial, receive ports
+helpviewer_keywords:
+- interrogative tutorial, receive ports
 ms.assetid: 8bef032f-5f43-4d36-b88f-ed81f27bb803
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

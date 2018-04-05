@@ -1,15 +1,16 @@
 ---
 title: Type de transport | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: TransportType node [binding file]
+helpviewer_keywords:
+- TransportType node [binding file]
 ms.assetid: 64eb00be-47c9-473f-aec6-03cb7f948e3b
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

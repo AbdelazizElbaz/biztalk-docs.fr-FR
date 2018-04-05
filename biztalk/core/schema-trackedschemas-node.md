@@ -1,15 +1,16 @@
 ---
-title: "Schéma (nœud TrackedSchemas) | Documents Microsoft"
-ms.custom: 
+title: Schéma (nœud TrackedSchemas) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: Schema node
+helpviewer_keywords:
+- Schema node
 ms.assetid: a503aad6-07f8-4650-a214-4d2f6650cb80
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

@@ -1,15 +1,16 @@
 ---
-title: "Vue d’ensemble du modèle de canal WCF avec l’adaptateur de base de données Oracle | Documents Microsoft"
-ms.custom: 
+title: Vue d’ensemble du modèle de canal WCF avec l’adaptateur de base de données Oracle | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: WCF channel model, overview
+helpviewer_keywords:
+- WCF channel model, overview
 ms.assetid: 4712ba62-8360-475c-b2e4-422e499eca21
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
@@ -58,7 +59,7 @@ ms.lasthandoff: 11/28/2017
   
 -   <span data-ttu-id="25c31-143">L’action du message est une chaîne qui fait partie de l’en-tête du message SOAP.</span><span class="sxs-lookup"><span data-stu-id="25c31-143">The message action is a string that is part of the SOAP message header.</span></span> <span data-ttu-id="25c31-144">L’action du message identifie l’opération qui doit être appelée sur la base de données Oracle.</span><span class="sxs-lookup"><span data-stu-id="25c31-144">The message action identifies the operation that should be invoked on the Oracle database.</span></span> <span data-ttu-id="25c31-145">L’exemple suivant montre l’action du message spécifiée pour appeler l’opération Select sur la table/SCOTT/EMP : `http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Select`.</span><span class="sxs-lookup"><span data-stu-id="25c31-145">The following shows the message action specified to invoke the Select operation on the /SCOTT/EMP table: `http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Select`.</span></span>  
   
--   <span data-ttu-id="25c31-146">Le corps du message contient les données de paramètre pour l’opération.</span><span class="sxs-lookup"><span data-stu-id="25c31-146">The message body contains the parameter data for the operation.</span></span> <span data-ttu-id="25c31-147">Le corps du message est composé de code XML bien formé qui correspond au schéma de message attendu par le [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] pour l’opération demandée.</span><span class="sxs-lookup"><span data-stu-id="25c31-147">The message body is composed of well-formed XML that corresponds to the message schema expected by the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] for the requested operation.</span></span> <span data-ttu-id="25c31-148">Le corps du message suivant spécifie une opération Select sur SCOTT. Table EMP (sélectionnez * à partir de EMP).</span><span class="sxs-lookup"><span data-stu-id="25c31-148">The following message body specifies a Select operation on the SCOTT.EMP table (SELECT * FROM EMP).</span></span>  
+-   <span data-ttu-id="25c31-146">Le corps du message contient les données de paramètre pour l’opération.</span><span class="sxs-lookup"><span data-stu-id="25c31-146">The message body contains the parameter data for the operation.</span></span> <span data-ttu-id="25c31-147">Le corps du message est composé de code XML bien formé qui correspond au schéma de message attendu par le [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] pour l’opération demandée.</span><span class="sxs-lookup"><span data-stu-id="25c31-147">The message body is composed of well-formed XML that corresponds to the message schema expected by the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] for the requested operation.</span></span> <span data-ttu-id="25c31-148">Le corps du message suivant spécifie une opération Select sur SCOTT. Table EMP (sélectionnez \* à partir de EMP).</span><span class="sxs-lookup"><span data-stu-id="25c31-148">The following message body specifies a Select operation on the SCOTT.EMP table (SELECT \* FROM EMP).</span></span>  
   
     ```  
     <?xml version="1.0" encoding="utf-8" ?>  

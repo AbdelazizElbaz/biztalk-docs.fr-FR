@@ -1,15 +1,16 @@
 ---
-title: "Opérations sur les fonctions et procédures avec des Types d’enregistrements de base de données Oracle | Documents Microsoft"
-ms.custom: 
+title: Opérations sur les fonctions et procédures avec des Types d’enregistrements de base de données Oracle | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: RECORD type
+helpviewer_keywords:
+- RECORD type
 ms.assetid: 28ecb76c-de82-43df-83cc-917c482417b3
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

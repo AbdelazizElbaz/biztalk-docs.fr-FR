@@ -1,15 +1,16 @@
 ---
-title: "Étape 6 : Création d’échanges de 3 a 4 Fabrikam accord de partenariat | Documents Microsoft"
-ms.custom: 
+title: 'Étape 6 : Création d’échanges de 3 a 4 Fabrikam accord de partenariat | Documents Microsoft'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: double action tutorial, creating agreements
+helpviewer_keywords:
+- double action tutorial, creating agreements
 ms.assetid: 6ccd2414-a1d4-460e-9529-65b2d30cfca6
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

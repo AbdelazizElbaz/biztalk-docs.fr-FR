@@ -1,15 +1,16 @@
 ---
-title: "Prise en charge sécurisée des Sockets Layer (SSL) | Documents Microsoft"
-ms.custom: 
+title: Prise en charge sécurisée des Sockets Layer (SSL) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: SSL
+helpviewer_keywords:
+- SSL
 ms.assetid: 012a5be0-bab8-4a60-9d63-b9684b91e4a7
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

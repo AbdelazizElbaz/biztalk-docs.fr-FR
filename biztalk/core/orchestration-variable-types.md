@@ -1,15 +1,16 @@
 ---
-title: "Types de variables d’orchestration | Documents Microsoft"
-ms.custom: 
+title: Types de variables d’orchestration | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: orchestrations, variables
+helpviewer_keywords:
+- orchestrations, variables
 ms.assetid: 34990be2-35b6-40ec-b107-42a1c7b45aca
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

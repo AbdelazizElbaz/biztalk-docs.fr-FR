@@ -1,15 +1,16 @@
 ---
-title: "Étape 5 : Créer le Port de réception pour l’acceptation de ses Messages | Documents Microsoft"
-ms.custom: 
+title: 'Étape 5 : Créer le Port de réception pour l’acceptation de ses Messages | Documents Microsoft'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: interrogative tutorial, receive ports
+helpviewer_keywords:
+- interrogative tutorial, receive ports
 ms.assetid: c0b311d8-541c-4c21-a514-c93092c36fe2
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

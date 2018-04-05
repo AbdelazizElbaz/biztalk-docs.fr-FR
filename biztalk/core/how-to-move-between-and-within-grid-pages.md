@@ -1,15 +1,16 @@
 ---
-title: "Comment déplacer entre les Pages de grille | Documents Microsoft"
-ms.custom: 
+title: Comment déplacer entre les Pages de grille | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.mapper.gridpreview
+f1_keywords:
+- bts10.mapper.gridpreview
 ms.assetid: 9553d9ad-1c57-4e73-bb77-0eaaa172090c
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

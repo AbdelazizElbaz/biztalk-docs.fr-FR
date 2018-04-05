@@ -1,15 +1,16 @@
 ---
-title: "Préparation à l’utilisation de la Tutorial2 | Documents Microsoft"
-ms.custom: 
+title: Préparation à l’utilisation de la Tutorial2 | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: end-to-end tutorial, pre-requisites
+helpviewer_keywords:
+- end-to-end tutorial, pre-requisites
 ms.assetid: 88e6c0b5-5f7d-4fee-a4de-7922cfba917f
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

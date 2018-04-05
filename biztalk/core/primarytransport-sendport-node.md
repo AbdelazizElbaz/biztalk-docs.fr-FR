@@ -1,15 +1,16 @@
 ---
-title: "PrimaryTransport (nœud SendPort) | Documents Microsoft"
-ms.custom: 
+title: PrimaryTransport (nœud SendPort) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: PrimaryTransport node [binding file]
+helpviewer_keywords:
+- PrimaryTransport node [binding file]
 ms.assetid: 22b68d27-f280-4272-84b8-8a50f230228a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

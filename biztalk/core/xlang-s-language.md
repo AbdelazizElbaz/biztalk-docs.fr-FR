@@ -1,15 +1,16 @@
 ---
 title: Langage XLANG-s | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: orchestrations, properties
+helpviewer_keywords:
+- orchestrations, properties
 ms.assetid: 97b62f17-5a8d-4d87-8563-1f6d941f027f
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

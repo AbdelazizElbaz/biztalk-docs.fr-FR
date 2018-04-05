@@ -1,15 +1,16 @@
 ---
 title: Prise en charge des Messages | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: SWIFT messages, supported message types
+helpviewer_keywords:
+- SWIFT messages, supported message types
 ms.assetid: 9e059f86-05b1-4c6b-afa8-0ca969874a97
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

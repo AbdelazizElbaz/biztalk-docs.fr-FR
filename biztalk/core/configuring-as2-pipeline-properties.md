@@ -1,15 +1,16 @@
 ---
-title: "Configuration des propriétés de Pipeline AS2 | Documents Microsoft"
-ms.custom: 
+title: Configuration des propriétés de Pipeline AS2 | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.edir2.AS2.pipeline.properties
+f1_keywords:
+- bts10.edir2.AS2.pipeline.properties
 ms.assetid: 7faf6b05-710a-4d00-8c77-590ce9d9f962
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

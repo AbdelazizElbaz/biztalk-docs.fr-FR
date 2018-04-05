@@ -1,19 +1,20 @@
 ---
-title: "Comment créer un Port de réception | Documents Microsoft"
-ms.custom: 
+title: Comment créer un Port de réception | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.admin.procedure.createreceiveport
+f1_keywords:
+- bts10.admin.procedure.createreceiveport
 helpviewer_keywords:
 - receive ports, creating
 - managing [receive ports], creating
 - creating, receive ports
 ms.assetid: 23fae441-be80-4759-b3d6-74787a40e65b
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

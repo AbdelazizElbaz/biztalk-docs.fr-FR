@@ -1,15 +1,16 @@
 ---
-title: "Mappages (nœud tiers inscrit) | Documents Microsoft"
-ms.custom: 
+title: Mappages (nœud tiers inscrit) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: Mappings node [binding file]
+helpviewer_keywords:
+- Mappings node [binding file]
 ms.assetid: f082d2bb-082b-42ad-8832-17e15c134af9
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

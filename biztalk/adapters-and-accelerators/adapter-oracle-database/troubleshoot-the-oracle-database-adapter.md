@@ -1,15 +1,16 @@
 ---
-title: "Dépanner l’adaptateur de base de données Oracle | Documents Microsoft"
-ms.custom: 
+title: Dépanner l’adaptateur de base de données Oracle | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: troubleshooting
+helpviewer_keywords:
+- troubleshooting
 ms.assetid: 2a3da42b-413b-479a-90d2-02f262abff41
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

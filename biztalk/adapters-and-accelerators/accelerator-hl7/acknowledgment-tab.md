@@ -1,19 +1,20 @@
 ---
-title: "Onglet d’accusé de réception | Documents Microsoft"
-ms.custom: 
+title: Onglet d’accusé de réception | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: btahl7.configurationexplorer.tab.acknowledgement
+f1_keywords:
+- btahl7.configurationexplorer.tab.acknowledgement
 helpviewer_keywords:
 - acknowledgements, configuring
 - Acknowledgement tab [Configuration Explorer]
 - configuring, acknowledgements
 ms.assetid: f00d698c-1a33-4885-853f-c6b58d49d937
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
