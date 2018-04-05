@@ -1,15 +1,16 @@
 ---
-title: "Transformation (nœud SendPort-transformations) | Documents Microsoft"
-ms.custom: 
+title: Transformation (nœud SendPort-transformations) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: Transform node [binding file]
+helpviewer_keywords:
+- Transform node [binding file]
 ms.assetid: db9a82b2-9bc1-4bd8-8d98-a708a8d25b35
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

@@ -1,18 +1,19 @@
 ---
-title: "Configurer l’authentification dans les informations d’identification pour la base de données Oracle | Documents Microsoft"
-ms.custom: 
+title: Configurer l’authentification dans les informations d’identification pour la base de données Oracle | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: Enter the credentials
+f1_keywords:
+- Enter the credentials
 helpviewer_keywords:
 - credentials, specifying at run time
 - credentials, specifying at design time
 ms.assetid: d8f62829-ce77-4d82-a411-2eeefb6fe75a
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

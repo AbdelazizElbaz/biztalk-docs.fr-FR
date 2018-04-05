@@ -1,15 +1,16 @@
 ---
-title: "Qu'est-ce que l'adaptateur WCF-Custom ? | Microsoft Docs"
-ms.custom: 
+title: Qu'est-ce que l'adaptateur WCF-Custom ? | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: WCF-Custom adapters, about WCF-Custom adapters
+helpviewer_keywords:
+- WCF-Custom adapters, about WCF-Custom adapters
 ms.assetid: 7b2178dd-f737-4784-9bcb-e2b3979bfb0d
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

@@ -1,15 +1,16 @@
 ---
-title: "Affichage des données historiques et suivies | Documents Microsoft"
-ms.custom: 
+title: Affichage des données historiques et suivies | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: HAT, about HAT tool
+helpviewer_keywords:
+- HAT, about HAT tool
 ms.assetid: 07ab8211-254a-41f0-a745-6c8ac3a78a3f
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

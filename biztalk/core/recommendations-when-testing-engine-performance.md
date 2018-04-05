@@ -1,15 +1,16 @@
 ---
 title: Des performances du moteur de recommandations pour le test | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: maximum sustainable throughput (MST), best practices
+helpviewer_keywords:
+- maximum sustainable throughput (MST), best practices
 ms.assetid: 0aa9d833-0e7d-4347-a6ca-8d658749b4f2
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

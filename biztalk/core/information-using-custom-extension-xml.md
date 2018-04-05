@@ -1,15 +1,16 @@
 ---
-title: "Informations - à l’aide de XML avec extensions personnalisées | Documents Microsoft"
-ms.custom: 
+title: Informations - à l’aide de XML avec extensions personnalisées | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.map.info.customExtensionXML
+f1_keywords:
+- bts10.map.info.customExtensionXML
 ms.assetid: 414ee36b-2418-4cf7-af64-ef2cb5c9a4f6
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

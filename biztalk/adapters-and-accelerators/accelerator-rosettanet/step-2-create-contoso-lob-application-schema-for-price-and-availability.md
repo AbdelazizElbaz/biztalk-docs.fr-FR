@@ -1,15 +1,16 @@
 ---
-title: "Étape 2 : Création de schémas Application LOB Contoso pour le prix et la disponibilité de projets à l’aide de l’Éditeur BizTalk | Documents Microsoft"
-ms.custom: 
+title: 'Étape 2 : Création de schémas Application LOB Contoso pour le prix et la disponibilité de projets à l’aide de l’Éditeur BizTalk | Documents Microsoft'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: private process tutorial, creating LOB schemas
+helpviewer_keywords:
+- private process tutorial, creating LOB schemas
 ms.assetid: 70e26dc9-4299-4d30-8f8b-5cc3469a2025
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

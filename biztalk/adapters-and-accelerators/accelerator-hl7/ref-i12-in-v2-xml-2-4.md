@@ -1,15 +1,16 @@
 ---
 title: REF_I12 dans V2. XML 2.4 | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: REF_I12 schema
+helpviewer_keywords:
+- REF_I12 schema
 ms.assetid: 95f40b75-a176-4fc6-b9ad-65721d456ea4
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

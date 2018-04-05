@@ -1,15 +1,16 @@
 ---
-title: "DistributionList (nœud DistributionListCollection) | Documents Microsoft"
-ms.custom: 
+title: DistributionList (nœud DistributionListCollection) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: DistributionList node [binding file]
+helpviewer_keywords:
+- DistributionList node [binding file]
 ms.assetid: 51864a5c-1697-4804-ac18-8211494f3ff0
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

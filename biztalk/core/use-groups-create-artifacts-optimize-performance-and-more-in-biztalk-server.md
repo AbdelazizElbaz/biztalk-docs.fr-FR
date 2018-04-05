@@ -1,16 +1,17 @@
 ---
-title: "Utiliser des groupes, créer des artefacts, optimiser les performances et bien plus encore dans BizTalk Server | Documents Microsoft"
-description: "Liens rapides pour utiliser la console Administration de BizTalk, créer des groupes, déployer des applications, modifier les paramètres de performances et redémarrez les services BizTalk dans BizTalk Server"
-ms.custom: 
+title: Utiliser des groupes, créer des artefacts, optimiser les performances et bien plus encore dans BizTalk Server | Documents Microsoft
+description: Liens rapides pour utiliser la console Administration de BizTalk, créer des groupes, déployer des applications, modifier les paramètres de performances et redémarrez les services BizTalk dans BizTalk Server
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.ops.appandsrv
+f1_keywords:
+- bts10.ops.appandsrv
 ms.assetid: d4d38eca-05b8-49b3-aad2-5b32a012a5cc
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

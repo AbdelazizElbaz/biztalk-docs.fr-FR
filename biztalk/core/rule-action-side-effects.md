@@ -1,15 +1,16 @@
 ---
-title: "Effets d’Action de règle | Documents Microsoft"
-ms.custom: 
+title: Effets d’Action de règle | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: Business Rules Engine, side effects
+helpviewer_keywords:
+- Business Rules Engine, side effects
 ms.assetid: 1ef65014-9c0a-40d3-b941-2a67c20b54d3
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

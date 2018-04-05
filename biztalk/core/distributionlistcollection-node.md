@@ -1,15 +1,16 @@
 ---
-title: "Nœud DistributionListCollection | Documents Microsoft"
-ms.custom: 
+title: Nœud DistributionListCollection | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: DistributionListCollection node [binding file]
+helpviewer_keywords:
+- DistributionListCollection node [binding file]
 ms.assetid: cb024016-a7f8-4d36-aa5d-274bd579565b
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

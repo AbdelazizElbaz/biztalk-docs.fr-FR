@@ -1,15 +1,16 @@
 ---
-title: "Développer des applications SAP à l’aide du modèle de Service WCF | Documents Microsoft"
-ms.custom: 
+title: Développer des applications SAP à l’aide du modèle de Service WCF | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: WCF service model, developing applications
+helpviewer_keywords:
+- WCF service model, developing applications
 ms.assetid: 5387d063-31d3-49b3-9771-354802542f8f
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

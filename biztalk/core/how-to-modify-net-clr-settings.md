@@ -1,15 +1,16 @@
 ---
-title: "Comment modifier les paramètres de CLR .NET | Documents Microsoft"
-ms.custom: 
+title: Comment modifier les paramètres de CLR .NET | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: Bts10.settings.HostInstanceCLR
+f1_keywords:
+- Bts10.settings.HostInstanceCLR
 ms.assetid: 085743d8-27a6-4d8b-98c7-bb5b5c75848c
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

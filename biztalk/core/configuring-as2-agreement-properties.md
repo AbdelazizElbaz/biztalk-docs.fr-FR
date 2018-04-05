@@ -1,15 +1,16 @@
 ---
-title: "Configuration des propriétés d’accord AS2 | Documents Microsoft"
-ms.custom: 
+title: Configuration des propriétés d’accord AS2 | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.admin.as2agreement.properties
+f1_keywords:
+- bts10.admin.as2agreement.properties
 ms.assetid: a62d8d2a-0b8d-4179-a48f-92f135b5787d
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

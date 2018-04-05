@@ -1,15 +1,16 @@
 ---
-title: "Schémas de message pour l’opération SQLEXECUTE | Documents Microsoft"
-ms.custom: 
+title: Schémas de message pour l’opération SQLEXECUTE | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: SQLEXECUTE operations, message schemas for
+helpviewer_keywords:
+- SQLEXECUTE operations, message schemas for
 ms.assetid: 744645f4-0674-44e0-bf8d-8df70086b0f1
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

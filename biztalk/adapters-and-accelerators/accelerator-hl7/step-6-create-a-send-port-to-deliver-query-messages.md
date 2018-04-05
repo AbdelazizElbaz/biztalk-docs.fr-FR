@@ -1,15 +1,16 @@
 ---
-title: "Étape 6 : Créer un Port d’envoi pour remettre des Messages de requête | Documents Microsoft"
-ms.custom: 
+title: 'Étape 6 : Créer un Port d’envoi pour remettre des Messages de requête | Documents Microsoft'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: interrogative tutorial, send ports
+helpviewer_keywords:
+- interrogative tutorial, send ports
 ms.assetid: a3cfa2aa-888d-4a82-9eb3-2e9cc29ee582
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

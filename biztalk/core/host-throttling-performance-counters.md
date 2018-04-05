@@ -1,15 +1,16 @@
 ---
-title: "Limitation des compteurs de performances de l’hôte | Documents Microsoft"
-ms.custom: 
+title: Limitation des compteurs de performances de l’hôte | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: host throttling, performance counters
+helpviewer_keywords:
+- host throttling, performance counters
 ms.assetid: b9090d1c-86be-40db-b814-cc116a426d95
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

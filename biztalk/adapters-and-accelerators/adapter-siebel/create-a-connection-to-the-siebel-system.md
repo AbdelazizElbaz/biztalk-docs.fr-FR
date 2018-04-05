@@ -1,15 +1,16 @@
 ---
-title: "Créer une connexion au système Siebel | Documents Microsoft"
-ms.custom: 
+title: Créer une connexion au système Siebel | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: connecting, to the Siebel system
+helpviewer_keywords:
+- connecting, to the Siebel system
 ms.assetid: 5810eeb1-6e26-4620-a731-fb352eebea2e
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

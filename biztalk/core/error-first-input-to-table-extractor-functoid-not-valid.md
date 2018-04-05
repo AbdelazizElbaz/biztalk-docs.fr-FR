@@ -1,15 +1,16 @@
 ---
-title: "Erreur - première entrée du fonctoid Extracteur de Table non valide | Documents Microsoft"
-ms.custom: 
+title: Erreur - première entrée du fonctoid Extracteur de Table non valide | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.map.error.firstInputToTableExtractorNotValid
+f1_keywords:
+- bts10.map.error.firstInputToTableExtractorNotValid
 ms.assetid: 5b197531-9bf4-49c6-ad3a-b3ba92d37701
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

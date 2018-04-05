@@ -1,15 +1,16 @@
 ---
-title: "Erreur : schéma de Destination non référencé | Documents Microsoft"
-ms.custom: 
+title: 'Erreur : schéma de Destination non référencé | Documents Microsoft'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.map.error.unrefdDestinationSchema
+f1_keywords:
+- bts10.map.error.unrefdDestinationSchema
 ms.assetid: 445dc14a-1530-45c5-aa87-496052a26a61
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

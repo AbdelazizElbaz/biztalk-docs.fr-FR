@@ -1,15 +1,16 @@
 ---
-title: "Prise en main l’adaptateur BizTalk pour Siebel eBusiness Applications | Documents Microsoft"
-ms.custom: 
+title: Prise en main l’adaptateur BizTalk pour Siebel eBusiness Applications | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: adapters, about
+helpviewer_keywords:
+- adapters, about
 ms.assetid: 0867f95f-977f-48bf-8c46-70fd6e4df56b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

@@ -1,16 +1,18 @@
 ---
-title: "Boîte de dialogue Propriétés de JD Edwards OneWorld Transport | Documents Microsoft"
-ms.custom: 
+title: Boîte de dialogue Propriétés de JD Edwards OneWorld Transport | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: JDEOneWorld
-helpviewer_keywords: Transport Properties dialog box [JD Edwards OneWorld adapters]
+f1_keywords:
+- JDEOneWorld
+helpviewer_keywords:
+- Transport Properties dialog box [JD Edwards OneWorld adapters]
 ms.assetid: 34d6b5d0-4bd9-4522-a540-8415d3143762
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

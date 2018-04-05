@@ -1,15 +1,16 @@
 ---
-title: "Comment modifier la fréquence en fonction de paramètres de limitation | Documents Microsoft"
-ms.custom: 
+title: Comment modifier la fréquence en fonction de paramètres de limitation | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: Bts10.settings.HostRate
+f1_keywords:
+- Bts10.settings.HostRate
 ms.assetid: a99dfb29-dee6-4a43-8d34-45179d9d0b5e
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

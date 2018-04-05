@@ -1,15 +1,16 @@
 ---
-title: "Erreur : référence de racine du schéma vide | Documents Microsoft"
-ms.custom: 
+title: 'Erreur : référence de racine du schéma vide | Documents Microsoft'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.edit.error.rootRefEmpty
+f1_keywords:
+- bts10.edit.error.rootRefEmpty
 ms.assetid: 172e6ad8-6118-40db-9451-92808a3a2051
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

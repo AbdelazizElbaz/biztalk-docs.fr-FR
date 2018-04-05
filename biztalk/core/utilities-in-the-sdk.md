@@ -1,15 +1,16 @@
 ---
-title: "Utilitaires dans le Kit de développement | Documents Microsoft"
-ms.custom: 
+title: Utilitaires dans le Kit de développement | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: utilities
+helpviewer_keywords:
+- utilities
 ms.assetid: d1f01164-dca4-47e3-99bf-15eb99ca98a1
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

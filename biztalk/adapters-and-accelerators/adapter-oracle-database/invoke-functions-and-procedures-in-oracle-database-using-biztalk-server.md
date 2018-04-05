@@ -1,15 +1,16 @@
 ---
-title: "Appeler des fonctions et les procédures de base de données Oracle à l’aide de BizTalk Server | Documents Microsoft"
-ms.custom: 
+title: Appeler des fonctions et les procédures de base de données Oracle à l’aide de BizTalk Server | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: functions and procedures, invoking by using BizTalk Server
+helpviewer_keywords:
+- functions and procedures, invoking by using BizTalk Server
 ms.assetid: 35f2c40e-1151-4941-9030-16464fc1caf8
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

@@ -1,15 +1,16 @@
 ---
-title: "Erreur : fichier d’Instance d’entrée non valide | Documents Microsoft"
-ms.custom: 
+title: 'Erreur : fichier d’Instance d’entrée non valide | Documents Microsoft'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.edit.error.inputInstanceFileNotValid
+f1_keywords:
+- bts10.edit.error.inputInstanceFileNotValid
 ms.assetid: 2edad16e-413c-49a4-8337-5b0a5619cece
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

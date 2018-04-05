@@ -1,15 +1,16 @@
 ---
-title: "EncryptionCert (nœud SendPort) | Documents Microsoft"
-ms.custom: 
+title: EncryptionCert (nœud SendPort) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: EncryptionCert node [binding file]
+helpviewer_keywords:
+- EncryptionCert node [binding file]
 ms.assetid: 83dff67e-1b3c-4c3d-91a2-d826a498635f
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

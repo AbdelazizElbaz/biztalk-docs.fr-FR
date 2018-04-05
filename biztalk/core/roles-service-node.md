@@ -1,15 +1,16 @@
 ---
-title: "Rôles (nœud de Service) | Documents Microsoft"
-ms.custom: 
+title: Rôles (nœud de Service) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: Roles node [binding file]
+helpviewer_keywords:
+- Roles node [binding file]
 ms.assetid: 847755c9-1697-41a0-b870-f9e795a1a2a6
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

@@ -1,15 +1,16 @@
 ---
-title: "Comment déplacer une relation entre les Pages de grille | Documents Microsoft"
-ms.custom: 
+title: Comment déplacer une relation entre les Pages de grille | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.mapper.movetopage
+f1_keywords:
+- bts10.mapper.movetopage
 ms.assetid: 185add4d-c876-44b6-b6e0-71c15a9b7c26
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

@@ -1,15 +1,16 @@
 ---
-title: "Comment ajouter des paramètres aux Orchestrations | Documents Microsoft"
-ms.custom: 
+title: Comment ajouter des paramètres aux Orchestrations | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: orchestrations, parameters
+helpviewer_keywords:
+- orchestrations, parameters
 ms.assetid: 35c731ed-6327-4de7-8d2e-4d14024bda77
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

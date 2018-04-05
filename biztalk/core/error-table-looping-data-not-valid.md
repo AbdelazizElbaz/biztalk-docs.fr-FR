@@ -1,15 +1,16 @@
 ---
-title: "Erreur : données non valides de bouclage de Table | Documents Microsoft"
-ms.custom: 
+title: 'Erreur : données non valides de bouclage de Table | Documents Microsoft'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.map.error.tableLoopingDataNotValid
+f1_keywords:
+- bts10.map.error.tableLoopingDataNotValid
 ms.assetid: 19c38e79-bab0-4899-ae24-e1485327e891
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

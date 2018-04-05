@@ -1,15 +1,16 @@
 ---
-title: "Configurer une liaison de port physique à l’aide d’un fichier de liaison de port pour la base de données Oracle | Documents Microsoft"
-ms.custom: 
+title: Configurer une liaison de port physique à l’aide d’un fichier de liaison de port pour la base de données Oracle | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: physical port binding, configuring by using a port binding file
+helpviewer_keywords:
+- physical port binding, configuring by using a port binding file
 ms.assetid: 154d219e-c6f3-4f70-9ac5-d9345f5260e9
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

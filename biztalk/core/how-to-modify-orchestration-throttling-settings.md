@@ -1,15 +1,16 @@
 ---
-title: "Comment modifier les paramètres de limitation d’Orchestration | Documents Microsoft"
-ms.custom: 
+title: Comment modifier les paramètres de limitation d’Orchestration | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: Bts10.settings.HostOrchestration
+f1_keywords:
+- Bts10.settings.HostOrchestration
 ms.assetid: 30086994-cb55-4ff7-9940-df197e5e35ce
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

@@ -1,15 +1,16 @@
 ---
-title: "Schémas de message pour les opérations de Service d’entreprise | Documents Microsoft"
-ms.custom: 
+title: Schémas de message pour les opérations de Service d’entreprise | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: message schemas, for business service methods
+helpviewer_keywords:
+- message schemas, for business service methods
 ms.assetid: ba23248b-5d73-4de0-9f7c-987cd88a4b63
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

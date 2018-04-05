@@ -1,15 +1,16 @@
 ---
-title: "Comment modifier les paramètres de limitation des orchestrations | Documents Microsoft"
-ms.custom: 
+title: Comment modifier les paramètres de limitation des orchestrations | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: Bts10.settings.HostInstanceOrchestration
+f1_keywords:
+- Bts10.settings.HostInstanceOrchestration
 ms.assetid: f6953c68-7809-4518-87ec-e75c98884af3
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

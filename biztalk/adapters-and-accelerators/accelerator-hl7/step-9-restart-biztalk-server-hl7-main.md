@@ -1,15 +1,16 @@
 ---
-title: "Étape 9 : Redémarrer BizTalk Server_hl7_main | Documents Microsoft"
-ms.custom: 
+title: 'Étape 9 : Redémarrer BizTalk Server_hl7_main | Documents Microsoft'
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: interrogative tutorial, BizTalk Server
+helpviewer_keywords:
+- interrogative tutorial, BizTalk Server
 ms.assetid: da11b811-e4d2-462a-b80d-beb90de5f98c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

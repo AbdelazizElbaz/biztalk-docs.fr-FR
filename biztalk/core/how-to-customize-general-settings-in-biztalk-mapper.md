@@ -1,15 +1,16 @@
 ---
-title: "Comment personnaliser les paramètres généraux dans le Mappeur BizTalk | Documents Microsoft"
-ms.custom: 
+title: Comment personnaliser les paramètres généraux dans le Mappeur BizTalk | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: bts10.mapper.options.general
+f1_keywords:
+- bts10.mapper.options.general
 ms.assetid: 461acefb-8620-46fa-bdf1-de96f819e382
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta

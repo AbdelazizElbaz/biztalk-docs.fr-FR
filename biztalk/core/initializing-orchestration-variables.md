@@ -1,15 +1,16 @@
 ---
-title: "L’initialisation des Variables d’Orchestration | Documents Microsoft"
-ms.custom: 
+title: L’initialisation des Variables d’Orchestration | Documents Microsoft
+ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: orchestrations, variables
+helpviewer_keywords:
+- orchestrations, variables
 ms.assetid: 770e4e55-1fb9-4b43-854c-63aec5a3c5ba
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
